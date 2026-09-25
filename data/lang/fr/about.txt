@@ -1,0 +1,16 @@
+ZBox
+Par Harith Alhamdani
+
+ZBox est un client de messagerie portable, réactif, sécurisé et entièrement accessible. Gratuit pour un usage personnel et léger en ressources système. Il a été créé pour offrir aux utilisateurs aveugles et malvoyants une véritable alternative, riche en fonctionnalités, aux options lourdes et lentes habituellement disponibles. Sous le capot, ZBox s'appuie sur le robuste client de messagerie Himalaya CLI.
+
+Confidentialité et sécurité
+ZBox intègre un bloqueur de traqueurs et de publicités (activé par défaut), ainsi que des règles facultatives contre le courrier indésirable et un vérificateur de liens d'hameçonnage. Pour une portabilité sécurisée, il utilise une protection par mot de passe principal : si le dossier de l'application est copié sur un autre ordinateur sans ce mot de passe, l'accès à vos comptes liés est bloqué. Si vous prévoyez de déplacer ZBox vers une nouvelle machine, définissez d'abord un mot de passe principal ici. Il prend aussi en charge les clés d'accès Windows Hello (empreinte digitale, code PIN ou reconnaissance faciale) et les clés de sécurité matérielles modernes.
+
+Une prise en main familière
+Pour rendre la transition depuis d'autres clients de messagerie aussi simple que possible, ZBox propose des raccourcis clavier pratiques et flexibles. Plusieurs raccourcis effectuent souvent la même action ; par exemple, Alt+S et Ctrl+Enter envoient tous deux un message. La liste complète se trouve dans Aide, Raccourcis clavier.
+
+Configuration des comptes
+La connexion native OAuth2 de Google et Microsoft sera ajoutée dans de futures mises à jour. Pour l'instant, vous pouvez lier votre compte Gmail en générant un mot de passe d'application au lieu d'utiliser votre mot de passe habituel (voir le bouton ci-dessous pour les instructions).
+
+Licences et remerciements
+Appuyez sur Afficher la licence ci-dessous pour lire la licence de ZBox et voir les composants tiers qui le rendent possible. Parmi eux : Himalaya, les listes de blocage StevenBlack hosts et EasyPrivacy, la liste Phishing.Database et (dans une version compilée) Python, wxPython, imapclient, pywin32, keyring et accessible_output2 avec ses bibliothèques clientes de lecteurs d'écran.

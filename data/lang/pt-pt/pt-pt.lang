@@ -1,0 +1,1436 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Português (Portugal)
+code = pt-pt
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Mensagem enviada.
+draft_saved = Rascunho guardado.
+signature_inserted = Assinatura inserida.
+signature_none = Esta conta não tem assinatura.
+signature_saved = Assinatura guardada.
+signature_not_saved = Assinatura não guardada.
+pasted_as_quotation = Colado como citação.
+clipboard_empty = Não há nada na área de transferência.
+word_count = {words} palavras, {characters} carateres.
+report_copied = Relatório copiado.
+compose_tab_needed = Esse comando precisa de um separador de composição.
+attach_file_instead = Os ficheiros largados aqui não são colocados no texto da mensagem. Utilize Anexar Ficheiro para enviar um.
+
+# Formatting in the message body
+formatting_here = Formatação aqui: {formatting}.
+no_formatting_here = Sem formatação aqui, texto simples.
+
+# Spelling
+nothing_to_check = Não há nada para verificar.
+no_misspellings = Nenhum erro ortográfico.
+spelling_dictionary_unavailable = O dicionário ortográfico não está disponível.
+next_misspelling_first = Utilize primeiro Erro Ortográfico Seguinte.
+word_added = {word} adicionada ao dicionário.
+word_not_added = Não foi possível adicionar {word}.
+corrections_applied_one = 1 correção aplicada.
+corrections_applied_many = {count} correções aplicadas.
+corrections_applied_partly = {applied} de {total} correções aplicadas. As restantes foram recusadas; consulte o registo.
+occurrences_replaced_one = 1 ocorrência substituída.
+occurrences_replaced_many = {count} ocorrências substituídas.
+
+# Reading mail
+message_did_not_open = A mensagem não abriu. O servidor não respondeu. Prima Enter para tentar novamente.
+thread_open = {messages} nesta conversa. Prima novamente para fechar.
+no_thread_selected = Nenhuma conversa selecionada.
+thread_watched = Conversa a ser acompanhada.
+thread_not_watched = A conversa já não é acompanhada.
+thread_ignored = Conversa ignorada.
+thread_not_ignored = A conversa já não é ignorada.
+none_found = Nada encontrado.
+refreshing_this_folder = A atualizar esta pasta.
+refreshing_all_accounts = A atualizar todas as contas.
+message_view_html = Vista da mensagem: HTML (processado).
+message_view_text = Vista da mensagem: Texto.
+remote_content_blocked = Conteúdo remoto bloqueado.
+remote_content_unblocked = Conteúdo remoto desbloqueado.
+remote_content_already_showing = O conteúdo remoto já está a ser mostrado nesta mensagem.
+archived = Arquivada.
+copied_to_folder = Copiada para {to_folder}.
+deleted_one = Mensagem eliminada permanentemente.
+deleted_many = {count} mensagens eliminadas permanentemente.
+trashed_one = Mensagem movida para a Reciclagem.
+trashed_many = {count} mensagens movidas para a Reciclagem.
+
+# Accounts and new mail
+no_account_yet = Ainda não há nenhuma conta para onde ir.
+inbox_landed = Caixa de entrada de {name}.
+account_enabled = {name} ativada.
+account_disabled = {name} desativada.
+new_mail_one = 1 mensagem nova para {name}.
+new_mail_many = {count} mensagens novas para {name}.
+refresh_all_done_one = 1 conta atualizada.
+refresh_all_done_many = {count} contas atualizadas.
+refresh_all_done_failures = {count} contas atualizadas, {failed} não puderam ser atualizadas.
+refresh_all_done_failures_one = {count} conta atualizada, {failed} não pôde ser atualizada.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Endereço copiado.
+sender_no_address = {sender}. Nenhum endereço para copiar.
+clipboard_not_opened = {sender}. Não foi possível abrir a área de transferência.
+
+# The signature editor
+signature_page_formatted = Formatada. É isto que será guardado.
+signature_page_html = Código HTML. É isto que será guardado.
+signature_page_html_still_wins = Formatada. O código HTML continua a ser o que será guardado.
+
+# Background work
+phishing_list_updating = A lista de phishing está a ser atualizada em segundo plano.
+cache_cleared = {files} ficheiro(s) em cache limpo(s), {size} MB.
+hotkeys_diagnostic_on = Diagnóstico de teclas de atalho ativado, marcado
+hotkeys_diagnostic_off = Diagnóstico de teclas de atalho desativado, desmarcado
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arquivar
+action_delete = Eliminar
+action_delete_permanently = Eliminar Permanentemente
+action_mark_as_junk = Marcar como Lixo Eletrónico
+action_mark_as_not_junk = Marcar como Não Lixo Eletrónico
+action_move_to = Mover Para
+action_copy_to = Copiar Para
+action_mark_message = Marcar Mensagem
+action_undo = Anular
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Anulado: {action}.
+undo_done_many = Anulado: {action}, em {count} mensagens.
+junk_marked_one = Marcada como lixo eletrónico.
+junk_marked_many = {count} mensagens marcadas como lixo eletrónico.
+junk_no_new_sender = Nenhum remetente novo bloqueado: já bloqueado, uma lista de correio ou um dos seus próprios endereços.
+not_junk_marked_one = Marcada como não lixo eletrónico.
+not_junk_marked_many = {count} mensagens marcadas como não lixo eletrónico.
+moved_to_one = Movida para {to_folder}.
+moved_to_many = {count} mensagens movidas para {to_folder}.
+copied_to_many = {count} mensagens copiadas para {to_folder}.
+marked_read = Marcada como lida.
+marked_unread = Marcada como não lida.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Cancelado após {completed} de {total}. {succeeded} com êxito, {failed} falharam.
+bulk_failed_one = {done} {failed} de 1 mensagem falhou.
+bulk_failed_many = {done} {failed} de {total} mensagens falharam.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Negrito
+format_word_italic = Itálico
+format_word_strike = Rasurado
+format_word_href = Ligação
+format_word_bullet = Lista com marcas
+format_word_number = Lista numerada
+format_word_quote = Citação
+format_word_code = Código
+format_word_heading1 = Título
+format_applied = {formatting} aplicado.
+format_inserted = {formatting} inserido.
+format_not_available = {formatting} não está disponível no corpo de mensagem simples.
+format_on = {formatting} ativado
+format_off = {formatting} desativado
+link_applied = Ligação aplicada.
+link_applied_to_selection = Ligação aplicada à seleção.
+plain_body_formatting = O corpo de mensagem simples mostra a formatação como etiquetas.
+
+# Reaching either end of a thread
+thread_edge_first = Primeira mensagem desta conversa. Prima novamente para fechar.
+thread_edge_last = Última mensagem desta conversa. Prima novamente para fechar.
+auto_check_paused = Verificação automática em pausa para {account}.
+auto_check_resumed = Verificação automática ativada para {account}.
+html_view_still_loading = A mensagem ainda está a carregar. Esc fecha-a.
+jump_unified_inbox = Caixa de entrada unificada.
+message_still_opening = A abrir a mensagem. O servidor está lento.
+remote_none = Nenhum conteúdo remoto nesta mensagem.
+sender_none = Esta mensagem não tem remetente.
+sender_name_no_address = %s, sem endereço
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Escreva algo acima e prima Enter ou selecione Pesquisar.
+search_no_account = Adicione primeiro uma conta.
+search_no_term = Escreva algo para pesquisar.
+search_running = A pesquisar...
+search_none = Nenhum resultado para "{term}".
+search_found_one = 1 resultado para "{term}".
+search_found_many = {count} resultados para "{term}".
+search_failed = A pesquisa falhou.
+
+# The related messages tab
+related_running = A pesquisar...
+related_none = Nenhuma mensagem relacionada encontrada.
+related_found_one = 1 mensagem relacionada encontrada.
+related_found_many = {count} mensagens relacionadas encontradas.
+related_failed = Não foi possível pesquisar mensagens relacionadas.
+
+# Writing and sending
+sending_via = A enviar através de {sender}...
+send_failed = O envio falhou. Consulte os registos para mais detalhes.
+draft_autosaved = Rascunho guardado automaticamente.
+draft_autosave_failed = A gravação automática do rascunho falhou. Consulte os registos para mais detalhes.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = O conteúdo remoto passa a ser carregado nas mensagens de {sender}.
+downloading_attachment = A transferir {filename}...
+downloading_attachments_one = A transferir 1 anexo...
+downloading_attachments_many = A transferir {count} anexos...
+saved_to = Guardado em {folder}
+attachment_download_failed = A transferência do anexo falhou.
+
+# Getting mail onto the screen
+loading_folder = A carregar {folder} de {account}...
+messages_in_folder = {count} mensagem(ns) em {folder}.
+messages_in_folder_cached = {count} mensagem(ns) em {folder} (última cópia sincronizada, a atualizar...)
+no_offline_copy = Ainda não há cópia offline de {folder}.
+refresh_failed_cached = Não foi possível atualizar {folder}: a mostrar a última cópia sincronizada.
+no_such_folder = Esta conta não tem a pasta {folder}.
+load_failed = Falha ao carregar as mensagens. Consulte os registos para mais detalhes.
+no_more_to_load = Não há mais mensagens para carregar nesta pasta.
+loading_more = A carregar mais mensagens em {folder}...
+more_loaded = Mais {count} mensagem(ns) carregada(s).
+no_more_messages = Não há mais mensagens nesta pasta.
+load_more_failed = Não foi possível carregar mais mensagens: {error}
+loading_unified = A carregar {folder} unificada...
+messages_in_unified = {count} mensagem(ns) de todas as contas em {folder} unificada.
+messages_in_unified_cached = {count} mensagem(ns) em {folder} unificada (última cópia sincronizada, a atualizar...)
+auto_purge_done = A limpeza automática removeu {count} mensagem(ns) antiga(s) da Reciclagem/Lixo Eletrónico.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Pronto.
+opening_message = A abrir a mensagem...
+opening_message_already = A abrir a mensagem... (já está a carregar)
+could_not_open_message = Não foi possível abrir a mensagem.
+could_not_open_that_message = Não foi possível abrir essa mensagem.
+could_not_load_message = Não foi possível carregar esta mensagem.
+message_still_loading = Essa mensagem ainda está a carregar.
+folder_still_loading = Esta pasta ainda está a carregar -- tente novamente daqui a pouco.
+not_in_thread = Esta mensagem não faz parte de uma conversa.
+no_longer_in_thread = Esta mensagem já não está na conversa.
+thread_position = Mensagem {position} de {total} nesta conversa.
+thread_finished_one = Conversa terminada (1 mensagem).
+thread_finished_many = Conversa terminada ({count} mensagens).
+select_message_first = Selecione primeiro uma mensagem.
+conversation_failed = Não foi possível abrir esta conversa.
+select_message_for_related = Selecione primeiro a mensagem cujas relacionadas pretende ver.
+looking_for_related = A procurar mensagens relacionadas...
+no_threading_headers = Esta mensagem não tem Message-ID nem cabeçalhos de conversa para pesquisar.
+reply_one_at_a_time = Responder funciona com uma mensagem de cada vez. Selecione uma única mensagem.
+select_message_to_reply = Selecione primeiro uma mensagem para responder.
+preparing_reply = A preparar a resposta...
+reply_load_failed = Não foi possível carregar a mensagem original para responder.
+select_message_to_forward = Selecione primeiro uma mensagem para reencaminhar.
+preparing_forward = A preparar a mensagem para reencaminhar...
+forward_load_failed = Não foi possível carregar a mensagem para reencaminhar.
+compose_tab_needed_hint = Esse comando precisa de um separador de composição. Prima Ctrl+N para escrever uma mensagem.
+open_message_first_view = Abra primeiro uma mensagem e depois prima Ctrl+B para alternar a vista.
+open_message_first_remote = Abra primeiro uma mensagem e depois prima Ctrl+Shift+I para carregar o conteúdo remoto.
+
+# Acting on messages
+copying_message = A copiar a mensagem...
+copy_failed = A cópia falhou.
+delete_failed = A eliminação falhou.
+already_in_archive = Já está no Arquivo.
+archiving = A arquivar...
+archive_failed = O arquivo falhou.
+action_failed = {action} falhou.
+nothing_to_undo = Nada para anular.
+undo_failed = Não foi possível anular {action}.
+
+# Views and folders
+folder_pane_all = Painel de pastas: Todas as Pastas.
+folder_pane_unified = Painel de pastas: Pastas Unificadas.
+sorted_ascending = Ordenado por {field}, ascendente.
+sorted_descending = Ordenado por {field}, descendente.
+unified_folders_updated = Pastas unificadas atualizadas.
+zoom_reset = Tamanho do tipo de letra da mensagem reposto para o predefinido.
+folder_creating = A criar a pasta "{folder}"...
+folder_created = Pasta "{folder}" criada.
+folder_create_failed = Não foi possível criar a pasta.
+folder_renaming = A mudar o nome de "{folder}" para "{new_name}"...
+folder_renamed = Nome da pasta mudado para "{new_name}".
+folder_rename_failed = Não foi possível mudar o nome da pasta.
+folder_deleting = A eliminar a pasta "{folder}"...
+folder_deleted = Pasta eliminada.
+folder_delete_failed = Não foi possível eliminar a pasta.
+folder_subscribing = A subscrever "{folder}"...
+folder_unsubscribing = A cancelar a subscrição de "{folder}"...
+folder_subscribed = Subscrita.
+folder_unsubscribed = Subscrição cancelada.
+folder_subscribe_failed = Não foi possível subscrever a pasta.
+folder_unsubscribe_failed = Não foi possível cancelar a subscrição da pasta.
+
+# Accounts
+account_not_added = Conta não adicionada.
+account_added = Conta adicionada: {account}
+account_settings_not_saved = Definições da conta não guardadas.
+account_updated = Conta atualizada: {account}
+account_not_removed = Conta não removida.
+account_removed = Conta removida.
+account_removed_with_files = Conta removida. {count} ficheiro(s) local(is) eliminado(s).
+default_account_failed = Não foi possível definir a conta predefinida.
+default_account_set = {account} é agora a conta predefinida.
+mute_not_saved = Definição de silenciar não guardada.
+account_muted = {account} silenciada.
+account_unmuted = {account} com som reativado.
+export_done = {count} conta(s) e definições exportadas para {path}.
+import_done = {count} conta(s) importada(s) de {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filtros não guardados.
+filters_saved = Filtros guardados para {account}.
+filters_checking = A verificar {folder} com os seus filtros...
+filters_none_matched = Executar Agora: nenhuma mensagem em {folder} correspondeu a uma regra ativada.
+filters_run_failed = Não foi possível executar os filtros.
+filters_moving = A mover {count} mensagem(ns) filtrada(s)...
+filters_move_failures = Filtros: {count} mensagem(ns) não puderam ser movidas.
+filters_moved = Os filtros moveram {count} mensagem(ns) de {folder}.
+filters_move_failed = Não foi possível mover as mensagens filtradas.
+cache_not_cleared = Cache não limpa.
+auto_cache_cleanup = Limpeza automática da cache: mensagens com mais de {age}.
+phishing_update_failed = Não foi possível atualizar a lista de phishing: {error}
+blocklist_update_failed = Não foi possível atualizar a lista de bloqueio: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Abra primeiro uma mensagem e depois utilize Guardar Como.
+saving_message = A guardar a mensagem...
+save_file_failed = Não foi possível guardar o ficheiro.
+save_fetch_failed = Não foi possível obter a mensagem para guardar.
+open_message_first_print = Abra primeiro uma mensagem e depois utilize Imprimir.
+open_message_first_preview = Abra primeiro uma mensagem e depois utilize Pré-visualizar Impressão.
+refreshing_accounts = A atualizar {count} conta(s)...
+emptying_trash = A esvaziar a Reciclagem de {account}...
+trash_already_empty = A Reciclagem já estava vazia.
+trash_emptied = Reciclagem esvaziada: {count} mensagem(ns) eliminada(s).
+empty_trash_failed = Não foi possível esvaziar a Reciclagem.
+emptying_junk = A esvaziar o Lixo Eletrónico de {account}...
+junk_already_empty = O Lixo Eletrónico já estava vazio.
+junk_emptied = Lixo Eletrónico esvaziado: {count} mensagem(ns) eliminada(s).
+junk_emptied_prefix = Lixo Eletrónico esvaziado:
+junk_part_purged = {count} eliminada(s)
+junk_part_in_trash = {count} movida(s) para a Reciclagem, mas sem confirmação de remoção, verifique a Reciclagem
+junk_part_not_moved = {count} não movida(s) para a Reciclagem, ainda no Lixo Eletrónico
+empty_junk_failed = Não foi possível esvaziar o Lixo Eletrónico.
+working_offline = A trabalhar offline: a mostrar a última cópia sincronizada de Caixa de Entrada/Enviados/Rascunhos.
+back_online = Novamente online.
+offline_sync_running = A sincronizar {account} para utilização offline...
+offline_sync_done = {count} mensagem(ns) sincronizada(s) em Caixa de Entrada, Enviados e Rascunhos para utilização offline.
+offline_sync_failed = A sincronização offline falhou: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Selecione ou abra primeiro uma mensagem.
+select_or_open_message_ctrl_u = Selecione ou abra primeiro uma mensagem e depois prima Ctrl+U.
+no_sender_address = Esta mensagem não tem endereço de remetente para adicionar.
+contact_added = {contact} adicionado ao seu livro de endereços.
+contact_already_there = {contact} já está no seu livro de endereços.
+privacy_saved = Definições de privacidade guardadas. Abra novamente a mensagem para as aplicar.
+message_font_size = Tamanho do tipo de letra da mensagem: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = A eliminar a mensagem permanentemente
+deleting_many = A eliminar {count} mensagens permanentemente
+trashing_one = A mover a mensagem para a Reciclagem
+trashing_many = A mover {count} mensagens para a Reciclagem
+undo_partly_restored = {action} anulado, mas {count} não puderam ser repostas -- podem ter sido movidas, eliminadas ou expirado novamente entretanto.
+moves_report = {action}: {moved} de {total} mensagem(ns) movida(s).
+moves_report_failed = Não movidas, ainda na pasta original: {count}.
+
+tray_tooltip_one = ZBox — 1 mensagem não lida
+tray_tooltip_many = ZBox — {count} mensagens não lidas
+account_unreachable = Não foi possível contactar {account}. As verificações automáticas ficam em pausa durante {minutes} minuto(s).
+auto_check_not_saved = A definição de verificação automática não foi guardada.
+bulk_copy_failed = Não foi possível copiar a(s) mensagem(ns).
+bulk_copy_failed_status = Falha ao copiar.
+bulk_loading_archive = Mensagem(ns) ainda a carregar -- tente arquivar de novo daqui a pouco.
+bulk_loading_delete = Mensagem(ns) ainda a carregar -- tente eliminar de novo daqui a pouco.
+bulk_loading_flag = Mensagem(ns) ainda a carregar -- tente sinalizar de novo daqui a pouco.
+bulk_loading_generic = Mensagem(ns) ainda a carregar -- tente de novo daqui a pouco.
+bulk_none = Nenhuma mensagem selecionada.
+bulk_none_archive = Nenhuma mensagem selecionada para arquivar.
+bulk_none_delete = Nenhuma mensagem selecionada para eliminar.
+bulk_none_junk = Nenhuma mensagem selecionada para marcar como correio indesejado.
+bulk_none_not_junk = Nenhuma mensagem selecionada para marcar como não indesejado.
+delete_refused_still = O servidor recusou a eliminação; ainda está em {folder}.
+delete_refused_trash = Está no Lixo, mas o servidor recusou a eliminação permanente.
+delete_resume_failed = Não foi possível eliminar {count} mensagem(ns) de uma eliminação anterior.
+done_perm_delete_one = Mensagem eliminada permanentemente.
+done_trash_one = Mensagem movida para o Lixo.
+filters_applied = Filtros aplicados a {count} mensagem(ns) em {folder}.
+filters_failed = Não foi possível executar os filtros.
+filters_running = A executar filtros em {folder}
+flag_failed = Não foi possível atualizar o(s) sinalizador(es).
+flag_updated = Sinalizador(es) atualizado(s).
+folder_verb_subscribing = A subscrever
+folder_verb_unsubscribing = A cancelar subscrição de
+mark_read_failed = Não foi possível marcar a(s) mensagem(ns) como lida(s).
+mark_unread_failed = Não foi possível marcar a(s) mensagem(ns) como não lida(s).
+notify_new_mail_body = {count} {noun} nova(s) para {name}.
+notify_new_mail_title = Novo correio
+notify_noun_many = mensagens
+notify_noun_one = mensagem
+report_done = {verb} {done} de {count} mensagem(ns).
+report_verb_deleted = Eliminadas
+report_verb_permanent = Eliminadas permanentemente
+running_copy_many = A copiar {count} mensagens
+running_copy_one = A copiar mensagem
+running_junk_many = A marcar {count} mensagens como correio indesejado
+running_junk_one = A marcar como correio indesejado
+running_move_many = A mover {count} mensagens
+running_move_one = A mover
+running_not_junk_many = A marcar {count} mensagens como não indesejadas
+running_not_junk_one = A marcar como não indesejado
+running_perm_delete_one = A eliminar a mensagem permanentemente...
+running_read_many = A marcar {count} mensagens como lidas
+running_read_one = A marcar como lida
+running_trash_one = A mover a mensagem para o Lixo...
+running_unread_many = A marcar {count} mensagens como não lidas
+running_unread_one = A marcar como não lida
+settings_saved_no_startup = Definições guardadas. Não foi possível atualizar a entrada de arranque do Windows.
+settings_saved_status = Definições guardadas.
+spam_blocked_sender = Remetente bloqueado
+spam_possible_phishing = Possível phishing
+undo_running_many = A anular {action} ({count} mensagens)
+undo_running_one = A anular {action}
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = Ficheiro
+bar_edit = Editar
+bar_view = Ver
+bar_message = Mensagem
+bar_compose = Escrever
+bar_tools = Ferramentas
+bar_help = Ajuda
+
+# File
+file_new = Novo
+file_new_message = Mensagem
+file_new_account = Conta de Correio Eletrónico...
+file_open_saved_message = Abrir Mensagem Guardada...
+file_close = Fechar
+file_save_message_as = Guardar Mensagem Como...
+file_get_new_for = Obter Novas Mensagens de
+file_get_new_all = Todas as Contas
+file_get_new_current = Conta Atual
+file_offline = Offline
+file_work_offline = Trabalhar Offline
+file_sync_now = Sincronizar Agora
+file_print = Imprimir...
+file_print_preview = Pré-visualizar Impressão...
+file_exit = Sair
+
+# Edit
+edit_undo = Anular
+edit_select_all = Selecionar Tudo
+edit_find_messages = Localizar Mensagens...
+
+# Message
+message_reply = Responder
+message_reply_all = Responder a Todos
+message_forward = Reencaminhar
+message_archive = Arquivar
+message_delete = Eliminar
+message_delete_permanently = Eliminar Permanentemente
+message_mark = Marcar
+mark_read = Lida
+mark_unread = Não Lida
+mark_flagged = Sinalizada
+mark_junk = Lixo Eletrónico
+mark_not_junk = Não é Lixo Eletrónico
+message_watch_thread = Acompanhar Conversa
+message_ignore_thread = Ignorar Conversa
+message_open_conversation = Abrir Mensagem na Conversa
+message_show_related = Mostrar Mensagens Relacionadas
+message_add_sender_to_address_book = Adicionar Remetente ao Livro de Endereços
+message_announce_sender = Anunciar Remetente
+message_announce_copy_sender = Anunciar Remetente e Copiar Endereço
+
+# View
+view_folders = Pastas
+folders_all = Todas
+folders_unified = Unificadas
+folders_jump_inbox = Ir para a Lista de Mensagens da Caixa de Entrada
+folders_configure_unified = Configurar Pastas Unificadas...
+view_sort_by = Ordenar Por
+sort_date = Data
+sort_subject = Assunto
+sort_from = De
+sort_descending = Descendente (mais recentes primeiro)
+sort_ascending = Ascendente (mais antigas primeiro)
+view_threads = Conversas
+threads_all = Todas
+threads_watched = Conversas Acompanhadas
+threads_ignored = Conversas Ignoradas
+threads_expand_all = Expandir Todas as Conversas
+threads_collapse_all = Fechar Todas as Conversas
+view_load_more = Carregar Mais Mensagens
+view_toggle_message_view = Alternar Entre Vista de Texto e HTML
+view_show_remote_content = Mostrar Conteúdo Remoto Nesta Mensagem
+view_message_zoom = Zoom da Mensagem
+zoom_increase = Aumentar Tipo de Letra da Mensagem
+zoom_decrease = Diminuir Tipo de Letra da Mensagem
+zoom_reset = Repor Tipo de Letra da Mensagem
+
+# Compose
+compose_send = Enviar
+compose_save_draft = Guardar Rascunho
+compose_attach = Anexar Ficheiro...
+compose_fmt_bold = Negrito
+compose_fmt_italic = Itálico
+compose_fmt_strike = Rasurado
+compose_fmt_bullet = Lista com Marcas
+compose_fmt_number = Lista Numerada
+compose_fmt_quote = Citação
+compose_fmt_code = Código
+compose_fmt_heading1 = Título
+compose_link = Inserir Ligação...
+compose_formatting = Formatação Aqui
+compose_spellcheck = Verificar Ortografia...
+compose_spellcheck_next = Erro Ortográfico Seguinte
+compose_spellcheck_add = Adicionar Palavra ao Dicionário
+compose_insert_signature = Inserir Assinatura
+compose_paste_quotation = Colar como Citação
+compose_word_count = Contar Palavras
+compose_preview = Pré-visualizar...
+compose_diagnostics = Diagnóstico do Editor...
+compose_edit_signature = Editar Assinatura...
+compose_hotkeys_diagnostic = Diagnóstico de Teclas de Atalho
+
+# Tools
+tools_account_settings = Definições da Conta...
+tools_mute_account = Silenciar Conta
+tools_disable_account = Desativar Conta
+tools_remove_account = Remover Conta...
+tools_address_book = Livro de Endereços...
+tools_message_filters = Filtros de Mensagens...
+tools_import = Importar Contas e Definições...
+tools_export = Exportar Contas e Definições...
+tools_cache_cleanup = Configuração da Limpeza da Cache...
+tools_privacy = Privacidade e Bloqueio de Conteúdo...
+tools_settings = Definições...
+
+# Help
+help_shortcuts = Atalhos de Teclado...
+help_about = Acerca do ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Nova Conta...
+tree_account_settings = Definições da Conta...
+tree_mute_account = Silenciar Conta
+tree_enable_account = Ativar Conta
+tree_disable_account = Desativar Conta
+tree_set_default_account = Definir como Conta Predefinida
+tree_remove_account = Remover Conta...
+tree_refresh = Atualizar
+tree_new_folder = Nova Pasta...
+tree_empty_trash = Esvaziar Reciclagem
+tree_empty_junk = Esvaziar Lixo Eletrónico
+tree_rename_folder = Mudar o Nome da Pasta...
+tree_delete_folder = Eliminar Pasta...
+tree_subscribe_folder = Subscrever Pasta
+tree_unsubscribe_folder = Cancelar Subscrição da Pasta
+
+# The message list menu, opened the same two ways
+list_select_all = Selecionar Tudo
+list_reply = Responder
+list_reply_all = Responder a Todos
+list_forward = Reencaminhar
+list_mark = Marcar
+list_archive = Arquivar
+list_delete_to_trash = Eliminar (Mover para a Reciclagem)
+list_delete_permanently = Eliminar Permanentemente
+list_move_to = Mover Para
+list_copy_to = Copiar Para
+
+# The notification area icon
+tray_open = Abrir o ZBox
+tray_unread_one = 1 mensagem não lida
+tray_unread_many = {count} mensagens não lidas
+tray_no_unread = Nenhuma mensagem não lida
+tray_settings = Definições...
+tray_quit = Sair do ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = Negrito
+format_italic = Itálico
+format_strike = Rasurado
+format_bullet = Lista com marcas
+format_number = Lista numerada
+format_quote = Citação
+format_code = Código
+format_heading1 = Título
+format_insert_link = Inserir ligação...
+format_formatting_here = Formatação aqui
+tools_enable_account = Ativar conta
+tools_pause_auto_check = Pausar verificação automática
+tree_pause_auto_check = Pausar verificação automática
+edit_undo_action = Anular {action}
+
+[dialogs]
+set_theme_restart_confirm = Reiniciar o ZBox para aplicar a alteração de tema?
+set_ui_theme_label = Tema da interface:
+set_ui_theme_note = Cores dos menus, listas, caixas de diálogo e da vista de texto das mensagens. Seguir o sistema utiliza o modo de aplicação claro ou escuro do Windows. Azul meia-noite, Escuro quente e Contraste suave são temas escuros com cores mais suaves. As mensagens HTML mantêm as suas próprias cores, e o Alto Contraste do Windows tem sempre prioridade. Entra em vigor da próxima vez que o ZBox for iniciado.
+set_theme_system = Seguir o sistema
+set_theme_light = Claro
+set_theme_dark = Escuro
+set_theme_midnight = Azul meia-noite
+set_theme_warm = Escuro quente
+set_theme_soft = Contraste suave
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Contactar Harith
+title_identity = Identidade
+title_show_password = Mostrar Palavra-passe
+title_missing_information = Informação em falta
+title_unsupported_provider = Fornecedor não suportado
+title_test_connection = Testar Ligação
+title_new_contact = Novo Contacto
+title_edit_contact = Editar Contacto
+title_delete_contact = Eliminar Contacto
+title_import_contacts = Importar Contactos
+title_export_contacts = Exportar Contactos
+title_rename_group = Mudar o Nome do Grupo
+title_delete_group = Eliminar Grupo
+title_send = Enviar
+title_send_failed = Falha no Envio
+title_attach_file = Anexar Ficheiro
+title_save_draft = Guardar Rascunho
+title_documentation = Documentação do ZBox
+title_open_link = Abrir Ligação
+title_filter_rule = Regra de Filtro
+title_master_password = Palavra-passe Mestra
+title_attachment_saved = Anexo Guardado
+title_attachments_saved = Anexos Guardados
+title_download_failed = Falha na Transferência
+title_print = Imprimir
+title_print_preview = Pré-visualizar Impressão
+title_related_messages = Mensagens Relacionadas
+title_search = Pesquisar
+title_unlock = Desbloquear
+title_unlock_methods = Métodos de Desbloqueio
+title_desktop_shortcut = Atalho no Ambiente de Trabalho
+title_spell_check = Verificação Ortográfica
+title_plain_text_password = Palavra-passe em Texto Simples Encontrada
+title_startup_error = Erro de Arranque do ZBox
+
+identity_email_required = Introduza um endereço de correio eletrónico.
+
+wizard_password_not_shown = A palavra-passe não pode ser mostrada neste sistema. Continua a ser escrita e guardada normalmente.
+wizard_email_required = Introduza um endereço de correio eletrónico válido antes de continuar.
+wizard_test_needs_server = Introduza um endereço de início de sessão e um servidor de receção antes de testar.
+wizard_test_succeeded = Ligação bem-sucedida. {count} mensagem(ns) encontrada(s) na Caixa de Entrada.
+
+contact_email_required = É obrigatório um endereço de correio eletrónico.
+contact_select_to_edit = Selecione um contacto para editar.
+contact_select_to_delete = Selecione um contacto para eliminar.
+contact_delete_confirm = Eliminar {label} do livro de endereços?
+contacts_import_choose_file = Escolha um ficheiro .vcf (vCard) ou .csv para importar.
+contacts_imported = {count} contacto(s) importado(s).
+contacts_import_empty = Não foram encontrados contactos nesse ficheiro.
+contacts_none_to_export = Não há contactos para exportar.
+contacts_exported = {count} contacto(s) exportado(s) para:\n{path}
+group_name_exists = Já existe um grupo chamado "{name}".
+group_delete_confirm = Eliminar o grupo "{name}"? Os respetivos contactos não são eliminados.
+
+send_no_account = Adicione uma conta antes de enviar ou selecione uma em De.
+send_no_recipient = Introduza pelo menos um destinatário em Para.
+draft_no_account = Adicione uma conta antes de guardar um rascunho ou selecione uma em De.
+attached_file = Anexado: {name}\n\n{count} ficheiro(s) serão anexados quando enviar.
+
+documentation_copied = A documentação completa do ZBox foi copiada para a área de transferência.
+
+filter_rule_needs_name = Dê um nome a esta regra.
+filter_rule_needs_condition = Defina pelo menos uma condição (De, Para ou Assunto).
+filter_rule_needs_action = Escolha pelo menos uma ação: marcar como lida, sinalizar ou mover para uma pasta.
+
+master_password_set = Palavra-passe mestra definida. Guarde-a num local seguro: o ZBox pede-a uma vez em cada computador novo e não pode ser recuperada se for perdida.
+master_password_offer = Sem uma palavra-passe mestra, as palavras-passe das contas guardadas só podem ser lidas neste computador e nesta conta do Windows. Copie o ZBox para qualquer outro lado e será necessário iniciar sessão novamente em cada conta.\n\nDefinir uma agora?
+
+attachment_saved = Anexo guardado em:\n{path}
+attachments_saved = {count} anexos guardados em:\n{path}
+
+shortcut_created_settings = Atalho criado:\n{path}\n\nInicia o ZBox a partir de:\n{base}
+
+spellcheck_no_dictionary = O dicionário ortográfico está em falta, por isso a verificação ortográfica não está disponível nesta cópia do ZBox.
+spellcheck_none_found = Não foram encontrados erros ortográficos.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Configurar uma chave de acesso neste computador e esquecer a que foi guardada noutro computador?\n\nO Windows vai pedir-lhe que confirme com o Hello. A chave de acesso antiga deixada no outro computador não é alterada lá e continuará a funcionar se levar esta pasta de volta para ele, mas terá de ser configurada novamente.
+unlock_replace_passkey_many = Configurar uma chave de acesso neste computador e esquecer as {count} guardadas noutros computadores?\n\nO Windows vai pedir-lhe que confirme com o Hello. As chaves de acesso antigas deixadas no outro computador não são alteradas lá e continuarão a funcionar se levar esta pasta de volta para ele, mas terão de ser configuradas novamente.
+unlock_method_works = Esse método funciona.
+
+plain_text_password_found = data\config\himalaya.toml ainda contém uma palavra-passe em texto simples (auth.raw) de uma configuração de conta mais antiga.\n\nRemova essa conta e adicione-a novamente, ou elimine data\config\himalaya.toml, para que seja recriado com o armazenamento seguro de credenciais.
+
+# main_frame's titles.
+title_account_list_unavailable = Lista de contas indisponível
+title_open_message = Abrir Mensagem
+title_run_filters = Executar Filtros
+title_clear_cache = Limpar Cache de Mensagens Offline
+title_remove_account = Remover Conta
+title_new_folder = Nova Pasta
+title_rename_folder = Mudar o Nome da Pasta
+title_delete_folder = Eliminar Pasta
+title_subscribe = Subscrever
+title_unsubscribe = Cancelar Subscrição
+title_open_saved_message = Abrir Mensagem Guardada
+title_save_message_as = Guardar Mensagem Como
+title_empty_trash = Esvaziar Reciclagem
+title_empty_junk = Esvaziar Lixo Eletrónico
+title_synchronize_offline = Sincronizar para Utilização Offline
+title_export_accounts = Exportar Contas e Definições
+title_import_accounts = Importar Contas e Definições
+title_show_related = Mostrar Mensagens Relacionadas
+title_reply = Responder
+title_forward = Reencaminhar
+title_undo = Anular
+title_delete_permanently = Eliminar Permanentemente
+title_delete = Eliminar
+title_copy_to = Copiar Para
+title_archive = Arquivar
+title_accounts_locked = Contas Bloqueadas
+
+select_account_first = Selecione primeiro uma conta na árvore.
+select_account_or_folder = Selecione primeiro uma conta ou pasta.
+filters_left_behind = {count} mensagem(ns) corresponderam a um filtro, mas ainda estão em {folder}.
+cache_clear_confirm = Limpar a cache de mensagens offline de todas as contas?\n\nIsto elimina apenas as cópias locais do ZBox. Nada é removido de nenhum servidor de correio, e as mensagens são transferidas novamente à medida que precisar delas.
+account_remove_confirm = Remover {name} ({address})?\n\nO correio no servidor não é eliminado.\nAs cópias transferidas para este computador são eliminadas.\nA palavra-passe guardada é eliminada.
+folder_delete_confirm = Eliminar permanentemente a pasta "{folder}" e tudo o que contém em {address}?\n\nIsto não pode ser anulado.
+empty_trash_confirm = Eliminar permanentemente todas as mensagens da Reciclagem de {address}?\n\nIsto não pode ser anulado.
+empty_junk_confirm = Eliminar permanentemente todas as mensagens do Lixo Eletrónico de {address}?\n\nIsto não pode ser anulado.
+sync_select_account = Selecione uma conta (não uma pasta Unificada) para sincronizar para utilização offline.
+accounts_imported = {count} conta(s) importada(s):\n\n{names}\n\nAs palavras-passe nunca são exportadas, e o armazenamento encriptado de palavras-passe é específico desta conta de utilizador do Windows, por isso cada conta importada precisa que a palavra-passe seja introduzida uma vez em Contas > Definições da Conta antes de se poder ligar.
+accounts_import_none = Não foram encontradas contas neste ficheiro. As definições foram importadas na mesma, se o ficheiro tinha alguma.
+delete_permanently_confirm_one = Eliminar esta mensagem permanentemente? Isto ignora a pasta Reciclagem e não pode ser anulado.
+accounts_locked = As palavras-passe das contas guardadas foram escritas noutro computador, por isso não podem ser lidas aqui.\n\nSerá necessário iniciar sessão novamente no servidor de correio de cada conta. Para evitar isto da próxima vez, defina uma palavra-passe mestra em Definições, Segurança da Aplicação e dos Dados, no computador onde as contas já funcionam.
+master_password_remove_confirm = Remover a palavra-passe mestra? As palavras-passe das contas guardadas passarão a ser legíveis apenas neste computador e nesta conta do Windows. Copie depois o ZBox para qualquer outro lado e será necessário iniciar sessão novamente em cada conta.\n\nRemover agora?
+shortcut_offer = Colocar um atalho do ZBox no Ambiente de Trabalho?\n\nVai iniciar esta pasta do ZBox:\n{path}\n\nUm atalho regista esse local exato. Se mover a pasta do ZBox mais tarde, abra Definições, Área de notificação e janela, e escolha novamente Criar atalho no ambiente de trabalho para o apontar para o novo local.
+shortcut_created = Atalho criado:\n{path}
+set_language_restart_confirm = Reiniciar o ZBox para aplicar a alteração de idioma?
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Nome a apresentar
+form_email_address = Endereço de correio eletrónico
+form_your_name = O seu nome
+form_login_email = Endereço de início de sessão
+form_password = Palavra-passe
+srv_imap_host = Servidor de receção (IMAP)
+srv_imap_port = Porta de receção
+srv_imap_encryption = Encriptação de receção
+srv_smtp_host = Servidor de envio (SMTP)
+srv_smtp_port = Porta de envio
+srv_smtp_encryption = Encriptação de envio
+
+acct_login_email_label = Endereço de início de sessão (usado para iniciar sessão)
+acct_new_password_label = Nova palavra-passe (deixe em branco para manter a atual)
+acct_new_password_name = Nova palavra-passe
+acct_identity_email_label = Endereço de correio eletrónico (usado para enviar e receber)
+acct_identities_label = Identidades adicionais (alternativas)
+acct_identities_name = Identidades adicionais
+acct_add_identity = Adicionar Identidade...
+acct_edit_identity = Editar Identidade...
+acct_remove_identity = Remover Identidade
+acct_signature = Assinatura
+acct_edit_signature = Editar Assinatura...
+acct_junk_folder = Pasta de lixo eletrónico
+acct_account_status = Estado da conta
+acct_disable_account = Desativar esta conta
+acct_default_account = Conta predefinida
+acct_set_default = Definir como conta predefinida
+acct_notifications = Notificações de correio novo
+acct_mute_notifications = Silenciar notificações desta conta
+acct_server_settings = Definições do servidor
+
+wiz_before_you_start = Antes de começar
+wiz_notice_name = Aviso importante
+wiz_google_instructions = Abrir as instruções de palavras-passe de aplicação da Google
+wiz_intro = O seu nome e endereço de correio eletrónico
+wiz_login_same = O endereço de início de sessão é igual ao endereço de correio eletrónico acima
+wiz_show_password = Mostrar palavra-passe
+wiz_preset_applied = Predefinição aplicada para {name}.
+wiz_summary_name = Resumo da conta
+wiz_review = Reveja e clique em Concluir para guardar esta conta.
+wiz_test_connection = Testar Ligação
+wiz_testing = A testar a ligação...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Ativar registo de depuração guardado em: data\logs)
+set_language_label = Idioma da interface:
+set_language_label_only_english = Idioma da interface: (apenas inglês)
+set_headers_checkbox = Mostrar os cabeçalhos da mensagem acima de uma mensagem aberta
+set_zoom_label = Tipo de letra e zoom da mensagem:
+set_font_override = Substituir o tamanho predefinido do tipo de letra da mensagem
+set_font_size_name = Tamanho do tipo de letra da mensagem (pontos)
+set_reading_font_name = Tipo de letra de leitura
+set_reading_font_label = Tipo de letra de leitura (em branco para o predefinido):
+set_view_label = Vista do corpo ao abrir uma mensagem:
+set_view_text = Texto
+set_view_html = HTML (processado)
+set_engine_label = Motor de processamento HTML:
+set_engine_edge = Edge / WebView2 (processamento moderno)
+set_engine_ie = MSHTML antigo (melhor suporte a leitores de ecrã)
+set_runtime_label = Runtime do WebView2:
+set_runtime_auto = Automático — utilizar o runtime incluído, se existir (recomendado)
+set_runtime_fixed = Apenas a versão fixa incluída
+set_runtime_evergreen = Runtime do sistema (atualizado pelo Windows)
+set_sr_box = Controlo dos anúncios do leitor de ecrã
+set_silence_label = Retenção de silêncio do leitor de ecrã em HTML:
+set_silence_name = Retenção de silêncio do leitor de ecrã em HTML, em milissegundos
+set_focus_delay_label = Atraso do foco de acessibilidade do WebView:
+set_focus_delay_name = Atraso do foco de acessibilidade do WebView, nível 1 a 10
+set_announce_label = Duração do anúncio:
+set_announce_name = Duração do anúncio em milissegundos
+set_announce_actions = Anunciar ações nas mensagens
+set_attachment_dir_label = Pasta para guardar anexos:
+set_attachment_dir_name = Pasta para guardar anexos
+set_browse = Procurar…
+set_autosave_label = Intervalo de gravação automática de rascunhos:
+set_autosave_name = Intervalo de gravação automática de rascunhos em segundos
+set_auto_purge_label = Limpeza automática da Reciclagem e do Lixo Eletrónico antigos:
+set_auto_purge_name = Limpar automaticamente a Reciclagem e o Lixo Eletrónico após este número de dias
+set_bare_keys = Ativar os atalhos de tecla única S (sinalizar), A (arquivar), J (marcar como lixo eletrónico)/Shift+J (marcar como não lixo eletrónico), W (acompanhar conversa) e K (ignorar conversa) na lista de mensagens
+set_sound_label = Sons e Notificações:
+set_sounds_enabled = Reproduzir sons de notificação
+set_desktop_notifications = Mostrar notificações no ambiente de trabalho para correio novo
+set_theme_label = Alterar o tema de sons:
+set_theme_label_only_default = Alterar o tema de sons: (apenas o tema predefinido)
+set_security_box = Segurança da Aplicação e dos Dados
+set_lock_on_quit = Bloquear o ZBox quando for totalmente fechado
+set_unlock_methods_button = Métodos de desbloqueio…
+set_master_password_button = Palavra-passe mestra…
+set_tray_label = Área de notificação e janela:
+set_minimize_to_tray = Minimizar para a área de notificação
+set_close_to_tray = Fechar para a área de notificação
+set_stay_maximized = Manter o ZBox sempre maximizado
+set_run_at_startup = Executar o ZBox quando o Windows arrancar
+set_desktop_shortcut_button = Criar atalho no ambiente de trabalho
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = O registo de depuração ajuda a diagnosticar problemas se algo correr mal. Desativá-lo impede que sejam escritas novas entradas; os ficheiros de registo existentes não são eliminados. Tem efeito da próxima vez que o ZBox arrancar.
+set_language_note = Tem efeito da próxima vez que o ZBox arrancar. Os ficheiros de idioma são ficheiros de texto simples na pasta lang do ZBox, ao lado da pasta sounds. Para adicionar um, copie a pasta en, mude o nome da cópia e do ficheiro .lang que está dentro dela para o código do seu idioma e traduza o texto à direita de cada sinal de igual. O que ainda não estiver traduzido é dito em inglês em vez de ficar em silêncio, por isso um ficheiro incompleto é seguro de usar.
+set_headers_note = De, Para, Cc, Data e Assunto, mostrados acima do corpo da mensagem nas vistas de Texto e HTML. Sem isto, não há forma de saber quem enviou uma mensagem a partir de dentro dela sem fechar o separador e voltar à lista. O foco continua a ir para o corpo da mensagem; o bloco de cabeçalhos está a um Shift+Tab de distância. Tem efeito da próxima vez que uma mensagem for aberta.
+set_zoom_note = Aumenta ou diminui o texto da própria mensagem aberta, independentemente do resto do ZBox e da escala de apresentação do próprio Windows. Aplica-se às vistas de Texto e HTML. “Tipo de letra de leitura” força opcionalmente um tipo de letra específico (por exemplo, Consolas, OpenDyslexic) no corpo da mensagem; deixe em branco para manter o tipo de letra normal. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 no menu Ver aumentam, diminuem ou repõem apenas o tamanho do tipo de letra sem abrir esta caixa de diálogo, e aplicam-se de imediato a todas as mensagens abertas. As alterações feitas aqui também se aplicam de imediato ao clicar em OK.
+set_view_note = HTML é a predefinição. Mostra a mensagem tal como foi enviada e é lido pelo NVDA e pelo JAWS: quando abre uma página HTML, o ZBox silencia o anúncio do próprio navegador, coloca o cursor de leitura na primeira linha da mensagem e mantém os atalhos do próprio ZBox a funcionar dentro da página, incluindo F6 para tirar o foco dela. Texto mostra a mesma mensagem como texto simples, sem formatação, num controlo de edição normal -- sem imagens, sem esquema e nada que dependa de um motor de navegador instalado. Prima Ctrl+B dentro de uma mensagem aberta para alternar entre os dois.
+set_engine_note = O Edge processa CSS moderno, mas executa a página num processo separado e só entrega o conteúdo a um leitor de ecrã através de uma interface que o wxPython não consegue alcançar -- por isso a mensagem pode abrir sem nada legível. O MSHTML antigo é o motor que o Outlook Express e o Windows Mail utilizavam: funciona no mesmo processo e publica uma árvore de documento normal, por isso o NVDA e o JAWS leem-no em modo de navegação como qualquer página web. Tem efeito da próxima vez que uma mensagem for aberta.
+set_runtime_note = O runtime do sistema é mantido pelo Windows Update, por isso o motor que lê o seu correio pode mudar sem aviso — é assim que uma vista de mensagem HTML que funcionava pode deixar de funcionar numa máquina onde nada no ZBox mudou. Uma cópia incluída na pasta deps fixa a versão exata com que o ZBox foi testado. Execute tools\get_webview2.bat para instalar uma. Se não houver cópia incluída, o ZBox usa o runtime do sistema de qualquer forma, por isso arranca sempre. Tem efeito da próxima vez que o ZBox arrancar.
+set_sr_intro = Quanto o ZBox deixa o seu leitor de ecrã falar enquanto uma mensagem abre, e durante quanto tempo os anúncios falados do próprio ZBox ficam visíveis.
+set_silence_note = Quando abre uma mensagem HTML, o ZBox pode manter premida uma tecla Ctrl sintética até 2 segundos para silenciar o anúncio do navegador feito pelo leitor de ecrã. O assunto da mensagem já é usado como título da página, o que impede que o URL base64 seja lido em voz alta, mas o leitor continua a anunciar o controlo e o tipo de documento por cima do início da mensagem, por isso isto está ativado por predefinição. Reduza para 0 para desativar, ou aumente se ainda escapar algum ruído.
+set_focus_delay_note = Quando uma mensagem HTML acaba de carregar, o ZBox espera este tempo antes de lhe dar realmente o foco. O WebView2 comunicar que uma página carregou e o Windows terminar a árvore de acessibilidade dessa página não são o mesmo momento; dar o foco cedo demais é o que faz o NVDA/JAWS anunciar uma “página de conteúdo Web” genérica em vez da mensagem, ou dar a mensagem como indisponível durante algum tempo depois de abrir. O nível 1 é 100 ms, o nível 10 é um segundo inteiro. Aumente se ainda notar isto; diminua quando a abertura parecer estável, para abrir mais depressa.
+set_announce_note = Ctrl+U e Ctrl+Shift+U indicam o remetente numa pequena caixa de diálogo que se fecha sozinha, porque a barra de estado só é lida se o seu leitor de ecrã tiver a leitura da barra de estado ativada. Este é o tempo que essa caixa fica aberta. Ajuste-o à sua velocidade de fala: curto demais e fecha a meio da frase, o que anula o objetivo. Qualquer tecla a fecha mais cedo; as setas mantêm-na aberta para poder reler. 0 significa que espera por uma tecla e nunca se fecha sozinha.
+set_attachment_dir_note = Onde “Guardar Todos” escreve os anexos quando uma mensagem tem mais do que um. É criada automaticamente se não existir. Uma mensagem com um único anexo continua a perguntar onde o guardar, como antes. Deixe em branco para a predefinição:\n{path}
+set_autosave_note = Com que frequência um separador de composição aberto se guarda em Rascunhos enquanto escreve. Guardar Rascunho (Ctrl+S) continua a guardar quando pedir, e fechar um separador com texto por guardar oferece sempre guardá-lo. 0 desativa a gravação automática. Menos de 15 segundos não é oferecido -- seria uma ida e volta ao servidor a competir com a sua escrita.
+set_auto_purge_note = Remove permanentemente as mensagens da Reciclagem e do Lixo Eletrónico depois de lá estarem este número de dias -- a mesma remoção permanente que Esvaziar Reciclagem e Esvaziar Lixo Eletrónico fazem quando pedido, executada automaticamente uma vez por dia enquanto o ZBox está aberto. Ativada por predefinição com 30 dias. 0 desativa. Isto não pode ser anulado depois de uma mensagem ser removida.
+set_bare_keys_note = Quando ativado, premir S, A, J, W ou K sozinho na lista de mensagens alterna a sinalização, arquiva, marca as mensagens selecionadas como lixo eletrónico (Shift+J marca-as como não lixo eletrónico), ou acompanha/ignora a conversa a que a seleção pertence, de imediato -- Arquivar e Marcar como Lixo Eletrónico não têm confirmação nem anulação. Desativar isto faz com que S, A, J, W e K voltem à navegação normal pela primeira letra na lista. Ctrl+S e Ctrl+Shift+A continuam a funcionar de qualquer forma. Tem efeito imediato.
+set_sounds_note = Sons curtos para progresso, mensagens novas, ações de enviar, responder ou reencaminhar, eliminações e resultados de pesquisa. Desativado, desliga todos os sons da aplicação; os anúncios do leitor de ecrã e da barra de estado não são afetados.
+set_desktop_notifications_note = Uma notificação do Windows para cada lote de correio novo, separada do som acima. Desativado, desliga para todas as contas; uma conta específica também pode ser silenciada sozinha em Definições da Conta.
+set_theme_note = Os temas personalizados são pastas colocadas dentro da pasta sounds do ZBox, cada uma com os seus próprios progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav e none_found.wav. Um ficheiro de tema em falta volta ao som predefinido.
+set_theme_note_only_default = Os temas personalizados são pastas colocadas dentro da pasta sounds do ZBox, cada uma com os seus próprios progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav e none_found.wav. Um ficheiro de tema em falta volta ao som predefinido. Só “default” está disponível até adicionar outra pasta de tema.
+set_lock_note = Ao arrancar, o ZBox pede um dos seus métodos de desbloqueio antes de abrir qualquer conta. Qualquer um basta: uma chave de acesso, uma chave de segurança ou a palavra-passe mestra. Fechar para a área de notificação não é sair e não volta a bloquear; Ficheiro > Sair e o item Sair do ícone da área de notificação são. Se nada estiver registado e não houver palavra-passe mestra definida, o bloqueio é ignorado em vez de o deixar fora do seu próprio correio.
+set_security_note = A palavra-passe mestra é a única das três que encripta alguma coisa: é ela que permite a esta pasta abrir as palavras-passe das contas guardadas noutro computador. Uma chave de acesso ou chave de segurança desbloqueia a aplicação neste computador. Nenhuma delas substitui a palavra-passe mestra num computador onde o ZBox nunca foi usado.
+set_minimize_note = Minimizar o ZBox oculta o botão da barra de tarefas e deixa-o a funcionar atrás do ícone da área de notificação. Clique com o botão esquerdo no ícone da área de notificação (ou Enter/Espaço quando este tiver o foco do teclado) para trazer a janela de volta.
+set_close_note = O botão Fechar da janela, Alt+F4 e Ctrl+W premido no separador Correio escondem o ZBox na área de notificação em vez de sair. Ficheiro > Sair (Ctrl+Shift+Q) e o próprio item Sair do ícone da área de notificação saem sempre realmente do ZBox, por isso há sempre um caminho pelo teclado para sair sem tocar na área de notificação.
+set_stay_maximized_note = O ZBox abre maximizado e volta a ficar maximizado se o restaurar. A barra de menus, a barra de título e o limite da janela não são afetados -- isto não é um modo de ecrã inteiro sem limites, por isso todos os atalhos de menu com Alt continuam a funcionar.
+set_run_at_startup_note = Inicia o ZBox automaticamente quando inicia sessão no Windows, aberto diretamente na área de notificação em vez de mostrar a janela. Tem efeito imediato, não apenas no próximo arranque.
+set_desktop_shortcut_note = Coloca um atalho do ZBox no seu Ambiente de Trabalho, substituindo um que já lá esteja. Um atalho guarda o local exato desta pasta do ZBox, por isso se mover ou copiar o ZBox para outro lado, prima isto novamente na nova cópia para apontar o atalho do Ambiente de Trabalho para ela. Tem efeito imediato e não espera pelo OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Nome
+ab_phone = Telefone
+ab_notes = Notas
+ab_heading = Livro de Endereços
+ab_contacts = Contactos
+ab_new = Novo...
+ab_edit = Editar...
+ab_delete = Eliminar
+ab_import = Importar...
+ab_export = Exportar...
+ab_groups_label = Grupos (listas de correio)
+ab_groups_name = Grupos
+ab_new_group = Novo Grupo...
+ab_rename_group = Mudar o Nome do Grupo...
+ab_delete_group = Eliminar Grupo
+ab_manage_members = Gerir Membros...
+ab_all_contacts = Todos os contactos
+ab_add_member = Adicionar >>
+ab_remove_member = << Remover
+ab_members_of = Membros de {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = Não está no dicionário:
+sp_not_in_dictionary_name = Não está no dicionário
+sp_in_this_line_label = Nesta linha:
+sp_in_this_line_name = Nesta linha
+sp_suggestions_label = Sugestões:
+sp_suggestions_name = Sugestões
+sp_replace_with_label = Substituir por:
+sp_replace_with_name = Substituir por
+sp_replace = Substituir
+sp_replace_all = Substituir Todas
+sp_ignore = Ignorar
+sp_ignore_all = Ignorar Todas
+sp_add_to_dictionary = Adicionar ao Dicionário
+btn_close = Fechar
+
+# Privacy and Content Blocking.
+priv_remote_label = Conteúdo remoto nas mensagens:
+priv_block_remote = Bloquear o conteúdo remoto até eu o pedir (recomendado)
+priv_blocklist_label = Lista de bloqueio de anúncios e rastreadores:
+priv_block_known = Bloquear domínios conhecidos de anúncios e rastreadores
+priv_update_daily = Atualizar a lista diariamente em segundo plano
+priv_update_now = Atualizar Agora
+priv_junk_label = Regras de lixo eletrónico:
+priv_check_inbox = Verificar o correio novo da Caixa de Entrada contra remetentes bloqueados e ligações de phishing conhecidas
+priv_move_blocked = Mover automaticamente o correio de remetentes bloqueados para o Lixo Eletrónico
+priv_update_phishing = Atualizar Lista de Phishing Agora
+priv_blocked_label = Remetentes bloqueados:
+priv_blocked_name = Remetentes bloqueados
+priv_remove_blocked = Remover Remetente Bloqueado
+priv_never_junk_label = Remetentes nunca tratados como lixo eletrónico:
+priv_never_junk_name = Remetentes nunca tratados como lixo eletrónico
+priv_remove_never_junk = Remover Remetente de Confiança
+priv_allowed_label = Remetentes autorizados a carregar conteúdo remoto:
+priv_allowed_name = Remetentes autorizados
+priv_remove_selected = Remover Remetente Selecionado
+
+# Message Filters.
+filt_rule_name = Nome da regra
+filt_enabled = Ativada
+filt_match_label = Correspondência:
+filt_match_all = Corresponder a todas as condições seguintes (E)
+filt_match_any = Corresponder a qualquer das condições seguintes (OU)
+filt_conditions_label = Condições (deixe um valor em branco para o ignorar):
+filt_condition_field = Campo da condição {number}
+filt_condition_contains = Condição {number} contém
+filt_actions_label = Ações:
+filt_mark_read = Marcar como lida
+filt_flag = Sinalizar a mensagem
+filt_move_label = Mover para a pasta:
+filt_move_name = Mover para a pasta
+filt_rules_name = Regras de filtro
+filt_new = Nova Regra...
+filt_edit = Editar Regra...
+filt_delete = Eliminar Regra
+filt_up = Mover para Cima
+filt_down = Mover para Baixo
+filt_run_label = Executar Agora na pasta:
+filt_run_name = Pasta do Executar Agora
+filt_run_now = Executar Agora
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = Desbloquear com chave de acesso (Windows Hello)
+unl_security_key = Desbloquear com chave de segurança
+unl_master_password_label = Palavra-passe mestra:
+unl_master_password_name = Palavra-passe mestra
+unl_unlock = Desbloquear
+unl_exit = Sair do ZBox
+unl_methods_label = Métodos registados:
+unl_methods_name = Métodos de desbloqueio registados
+unl_add_passkey = Adicionar chave de acesso…
+unl_add_key = Adicionar chave de segurança…
+unl_reassign = Reatribuir a chave de acesso a este computador…
+unl_test = Testar…
+unl_remove = Remover
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = De
+comp_to = Para
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Assunto
+comp_attach_button = Anexar Ficheiro...
+comp_sending = A enviar...
+comp_report_label = Relatório:
+comp_report_name = Relatório
+comp_refresh = Atualizar
+comp_copy = Copiar
+comp_preview_read = Tal como o destinatário a lê
+comp_preview_source = O HTML que será enviado
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Corpo da mensagem
+mv_blocked_notice = Aviso de conteúdo bloqueado
+mv_show_remote = Mostrar conteúdo remoto
+mv_always_allow = Permitir sempre este remetente
+mv_message_headers = Cabeçalhos da mensagem
+mv_attachments = Anexos
+mv_attachments_count = Anexos ({count})
+mv_save_attachment = Guardar: {filename}
+mv_save_all = Guardar Todos
+mv_html_view = Vista HTML da mensagem
+mv_saved_message = Mensagem guardada
+mv_show_remote_tip = Recarregar esta mensagem com as imagens e estilos remotos. Os rastreadores conhecidos continuam bloqueados.
+mv_always_allow_tip = Carregar conteúdo remoto em todas as mensagens de {sender}.
+
+# The search tab.
+srch_account = Conta
+srch_folder = Pasta
+srch_for = Pesquisar por
+
+# The signature editor.
+sig_editors = Editores de assinatura
+sig_formatted = Assinatura, formatada
+sig_source = Assinatura, código HTML
+sig_plain_label = Alternativa em texto simples (enviada juntamente com o HTML)
+sig_plain_name = Alternativa em texto simples
+
+# About ZBox.
+about_text_name = Texto Acerca do ZBox
+about_view_license = Ver Licença...
+about_google = Palavras-passe de Aplicação da Google...
+about_support = Apoie o ZBox -- Desenvolvimento e Manutenção por Uma Só Pessoa
+about_repos = Repositórios de Aplicações do Harith no GitHub
+about_contact = Contactar Harith
+btn_close_plain = Fechar
+btn_cancel_plain = Cancelar
+
+# The license window.
+eula_heading = Licença do ZBox
+eula_text_name = Texto da licença do ZBox
+eula_third_party = Páginas de licença de componentes de terceiros:
+eula_agree = Aceito os termos acima
+eula_agree_name = Li e aceito os termos da licença do ZBox
+eula_disagree = Não Aceito
+eula_next = Seguinte
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Texto da documentação do ZBox
+doc_copy = Copiar para a Área de Transferência
+shortcuts_heading = Atalhos de Teclado
+shortcuts_text_name = Texto dos atalhos de teclado
+
+# The main window's own panes.
+mf_toolbar = Barra de ferramentas principal
+mf_tabs = Separadores do ZBox
+tree_heading = Contas e Pastas
+tree_name = Árvore de contas e pastas
+envlist_heading = Mensagens
+envlist_name = Lista de mensagens
+rdr_heading = Mensagem
+rdr_name = Leitor de mensagens
+conv_heading_one = Conversa: 1 mensagem
+conv_heading_many = Conversa: {count} mensagens
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} de {total} concluídas.
+bulk_cancelling = A cancelar -- a terminar a mensagem atual...
+cache_clear_now = Limpar Cache de Mensagens Offline Agora... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, protegido
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = O nome a apresentar é opcional -- deixe em branco para enviar com o próprio nome desta conta.
+acct_note_identity = O endereço de correio eletrónico pode ser diferente do endereço de início de sessão se o seu fornecedor tiver um domínio personalizado associado a esta caixa de correio. O correio será enviado e recebido com o endereço acima, enquanto o início de sessão continua a usar o endereço de início de sessão. Deixe o campo da palavra-passe em branco para manter a palavra-passe já guardada desta conta -- por exemplo, depois de renovar uma palavra-passe de aplicação do Gmail, escreva a nova aqui; caso contrário, deixe em branco.
+acct_note_identities = Outros endereços com que esta conta pode enviar e responder. Responder a uma mensagem enviada para um deles define De para esse endereço por predefinição, em vez do endereço acima.
+acct_note_signature = Acrescentada a cada mensagem nova, resposta e reencaminhamento enviados desta conta, abaixo de uma linha "-- ". Deixe em branco para nenhuma. Editar Assinatura abre o editor formatado, onde negrito, listas e ligações estão disponíveis; a caixa acima passa então a guardar a versão em texto simples que segue juntamente.
+acct_note_junk = Para que pasta real Marcar como Lixo Eletrónico move as mensagens. "{automatic}" usa a mesma estimativa baseada no fornecedor que Arquivar e Reciclagem já usam; defina isto apenas se essa estimativa estiver errada ou se a sua pasta de lixo eletrónico tiver um nome personalizado.
+acct_note_disable = Uma conta desativada nunca é contactada -- sem IDLE, sem atualização periódica, nada -- até ser reativada. Continua a aparecer na árvore, marcada como (desativada), e o correio já transferido continua disponível offline. É a mesma opção de Contas > Desativar Conta ou do menu de contexto da própria conta; este é apenas outro local para a alcançar.
+acct_note_default = As pastas desta conta aparecem primeiro na árvore, e uma nova mensagem é enviada a partir dela por predefinição, salvo alteração manual no editor. Não afeta o endereço que uma resposta ou reencaminhamento usa -- isso já segue a mensagem a que se responde (consulte Identidades adicionais acima). Há sempre exatamente uma conta predefinida, por isso desmarcar isto na predefinida atual sem marcar noutra deixa-a inalterada -- marque antes a caixa de outra conta para lhe passar a predefinição.
+acct_note_mute = Silenciar bloqueia o som de correio novo, o anúncio falado e a notificação do Windows desta conta, independentemente de como estejam configurados. Não afeta outras contas e continua sujeito aos interruptores gerais em Definições > Sons e Notificações (sons e notificações no ambiente de trabalho em geral).
+wiz_note_app_password = Se já tem uma palavra-passe de aplicação criada para o ZBox, prima Seguinte para continuar.
+wiz_note_login = Credenciais de início de sessão.\nSe o seu endereço de início de sessão for diferente do endereço acima, por exemplo, a sua conta no fornecedor é login@example.net mas pretende enviar e receber como you@example.org, introduza aqui o endereço de início de sessão. Pode definir o endereço de envio personalizado depois em Definições da Conta.
+wiz_note_servers = Definições do servidor, preenchidas previamente quando o domínio é reconhecido. Edite o que precisar de ser diferente.
+wiz_preset_none = Não foi encontrada nenhuma predefinição para este domínio. Introduza manualmente as definições do servidor do seu fornecedor; as páginas de ajuda do fornecedor indicam-nas.
+ab_note_groups = Escreva o nome de um grupo no campo Para, Cc ou Bcc de uma janela de composição para preencher todos os seus membros de uma só vez.
+cache_note_intro = Isto remove apenas as cópias locais do ZBox. Nada é eliminado de nenhum servidor de correio, e uma mensagem removida é transferida novamente da próxima vez que a abrir.
+cache_note_age = A limpeza automática é executada uma vez por dia, quando o ZBox esteve dez minutos sem atividade do teclado e nenhuma mensagem está aberta. Baseia-se na data de cada mensagem, incluindo mensagens que ainda estão na sua conta.
+filt_note_intro = As regras são executadas por ordem, de cima para baixo, testando De, Para e Assunto. Aplicadas automaticamente ao correio novo quando chega à Caixa de Entrada desta conta; utilize Executar Agora abaixo para as aplicar às mensagens que já estão numa pasta.
+filt_note_run_now = Aplica cada regra ativada acima, por ordem, a cada mensagem que já está na pasta escolhida -- guarda primeiro as suas alterações, tal como OK.
+mp_note_intro = Estas contas foram configuradas noutro computador. Introduza a palavra-passe mestra para desbloquear aqui as palavras-passe guardadas delas. Só lhe será pedida uma vez neste computador.\n\nSem ela, será necessário iniciar sessão novamente no servidor de correio de cada conta.
+priv_note_remote = Imagens, folhas de estilo e tipos de letra que uma mensagem carrega da internet dizem ao remetente o momento em que a abriu, e de onde. Com isto ativado, nada disso é carregado: aparece um aviso acima da mensagem a indicar o que foi bloqueado, e Ctrl+Shift+I carrega-o apenas para essa mensagem. As imagens anexadas à própria mensagem aparecem sempre. Os scripts e as molduras incorporadas são removidos de qualquer forma e nunca são carregados.
+priv_note_blocklist = Esta é a segunda camada. Importa quando carrega o conteúdo remoto de uma mensagem ou autoriza um remetente: as imagens carregam, mas nada que venha de um domínio conhecido de rastreio ou publicidade é carregado. A lista é transferida de listas públicas de anúncios e rastreadores e combinada; a atualização demora um ou dois segundos e é executada em segundo plano.
+priv_note_junk = Sem adivinhas. Marcar como Lixo Eletrónico adiciona o remetente à lista de bloqueados abaixo, a não ser que a mensagem tenha vindo através de uma lista de correio. Marcar como Não Lixo Eletrónico adiciona o remetente à lista de nunca lixo eletrónico e essa mensagem nunca mais é verificada. Uma nova mensagem de um remetente bloqueado é marcada como Remetente Bloqueado na lista; uma que tenha uma ligação para um site conhecido de phishing ou malware é marcada como Possível Phishing. A filtragem de spam do seu fornecedor de correio continua a funcionar como antes.
+priv_status_phishing_updating = Lista de phishing: a atualizar em segundo plano. Abra novamente esta caixa de diálogo para ver o resultado.
+priv_status_updating = A atualizar em segundo plano. Abra novamente esta caixa de diálogo para ver o resultado.
+rel_note_intro = Mensagens relacionadas com "{subject}" através dos cabeçalhos Message-ID/References, em todas as pastas desta conta.
+srch_note_intro = Pesquise em De, Assunto e Corpo o texto que introduzir abaixo. Pesquisa em todas as contas e pastas, a não ser que restrinja abaixo.
+sig_note_plain = Deixe a alternativa em texto simples em branco e será gerada a partir da assinatura formatada quando premir OK.
+unified_note_intro = Escolha que pastas combinar entre todas as contas. Cada uma marcada torna-se uma única entrada na árvore que combina essa pasta de todas as suas contas.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Acerca do ZBox
+title_account_settings = Definições da Conta: {name}
+title_new_account = Nova Conta
+title_address_book = Livro de Endereços
+title_members = Membros: {name}
+ab_group_name_prompt = Nome do grupo:
+title_new_group = Novo Grupo
+title_cache_cleanup = Configuração da Limpeza da Cache
+cache_age_prompt = Remover automaticamente mensagens em cache com mais de:
+title_automatic_cleanup = Limpeza Automática
+comp_link_prompt = Endereço da ligação:
+title_insert_link = Inserir Ligação
+title_composer_diagnostics = Diagnóstico do Editor
+title_formatted_preview = Pré-visualização Formatada
+title_license_agreement = Contrato de Licença do ZBox
+title_message_filters = Filtros de Mensagens: {account}
+title_master_password_required = Palavra-passe Mestra Necessária
+title_privacy_dialog = Privacidade e Bloqueio de Conteúdo
+title_privacy = Privacidade
+title_settings = Definições
+title_unified_folders = Pastas Unificadas
+title_zbox_locked = O ZBox Está Bloqueado
+title_message_view = Vista da Mensagem
+title_remote_content = Conteúdo Remoto
+title_refresh = Atualizar
+title_refresh_all = Atualizar Tudo
+mv_choose_folder = Escolha uma pasta para guardar o anexo
+title_thread = Conversa
+title_inbox = Caixa de Entrada
+title_compose = Escrever
+title_watch_thread = Acompanhar Conversa
+title_ignore_thread = Ignorar Conversa
+title_edit_signature = Editar Assinatura
+title_account = Conta
+mf_folder_name_prompt = Nome da pasta:
+mf_new_name_prompt = Novo nome:
+title_refresh_all_accounts = Atualizar Todas as Contas
+title_sender = Remetente
+title_new_mail = Correio Novo
+mf_export_dialog_title = Exportar as {count} Conta(s) e as Definições
+mf_related_tab = Relacionadas: {subject}
+title_hotkeys_diagnostic = Diagnóstico de Teclas de Atalho
+set_choose_attachment_dir = Escolha a pasta para guardar anexos
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = O ZBox está bloqueado. Utilize qualquer um dos métodos abaixo para o desbloquear. Cancelar fecha o ZBox sem abrir nenhuma conta.
+unl_note_foreign_passkey = A chave de acesso guardada com esta pasta pertence a outro computador, por isso não pode ser usada aqui. Desbloqueie com a sua chave de segurança ou palavra-passe mestra e depois utilize Definições, Privacidade e Segurança, Métodos de desbloqueio para configurar uma chave de acesso neste computador.
+unl_note_methods = Qualquer um destes desbloqueia o ZBox quando o bloqueio da aplicação está ativado, além da palavra-passe mestra. Uma chave de acesso usa o Windows Hello neste computador; uma chave de segurança é uma chave FIDO2 por USB ou NFC e funciona em qualquer computador onde a ligar.
+unl_note_not_encryption = Estes desbloqueiam a aplicação. Não encriptam nada: a palavra-passe mestra continua a ser a única coisa que pode abrir as palavras-passe das contas guardadas num computador onde esta pasta ainda não foi usada. Tem de ser definida primeiro, e nenhum destes pode ser adicionado até que o seja.
+unl_add_passkey_unavailable = Adicionar chave de acesso (indisponível)
+unl_add_key_unavailable = Adicionar chave de segurança (indisponível)
+unl_reassign_unavailable = Reatribuir a chave de acesso a este computador (indisponível)
+unl_status_cancelled_passkey = A chave de acesso foi cancelada. O ZBox continua bloqueado.
+unl_status_cancelled_key = A chave de segurança foi cancelada. O ZBox continua bloqueado.
+unl_status_enter_password = Introduza a palavra-passe mestra.
+unl_status_no_master = Não está definida nenhuma palavra-passe mestra, por isso ainda não é possível adicionar uma chave de acesso ou chave de segurança. Defina uma com o botão Palavra-passe mestra em Definições, Privacidade e Segurança, e depois volte aqui. A palavra-passe mestra é o que abre as palavras-passe das suas contas guardadas noutro computador; uma chave de acesso só desbloqueia a aplicação neste, por isso não pode funcionar sozinha.
+unl_status_unsupported = O Windows deste computador não suporta chaves de acesso nem chaves de segurança, por isso aqui só a palavra-passe mestra pode desbloquear o ZBox.
+unl_status_foreign_one = 1 chave de acesso pertence a outro computador e não pode desbloquear o ZBox aqui. Reatribuir substitui-a por uma criada neste computador.
+unl_status_foreign_many = {count} chaves de acesso pertencem a outro computador e não podem desbloquear o ZBox aqui. Reatribuir substitui-as por uma criada neste computador.
+unl_status_foreign_one_no_hello = 1 chave de acesso pertence a outro computador e não pode desbloquear o ZBox aqui. O Windows Hello não está configurado aqui, por isso não pode ser substituída neste computador; Remover esquece-a.
+unl_status_foreign_many_no_hello = {count} chaves de acesso pertencem a outro computador e não podem desbloquear o ZBox aqui. O Windows Hello não está configurado aqui, por isso não podem ser substituídas neste computador; Remover esquece-as.
+unl_status_no_hello = O Windows Hello não está configurado neste computador, por isso não é possível adicionar aqui uma chave de acesso. Uma chave de segurança ainda pode ser adicionada.
+unl_status_none_registered = Ainda não há métodos de desbloqueio registados.
+unl_status_add_cancelled_passkey = A adição de uma chave de acesso foi cancelada.
+unl_status_add_cancelled_key = A adição de uma chave de segurança foi cancelada.
+unl_status_added = Adicionado: {name}.
+unl_status_reassign_cancelled = A reatribuição foi cancelada. Nada foi alterado.
+unl_status_reassigned = {name} adicionado e {count} de outros computadores esquecido(s).
+unl_status_test_cancelled = O teste foi cancelado.
+unl_status_removed = Removido.
+unl_remove_warning_last = Remover {name}?\n\nÉ o único método de desbloqueio registado e não está definida nenhuma palavra-passe mestra, por isso, com o bloqueio da aplicação ativado, não sobraria nada para desbloquear o ZBox. O bloqueio é ignorado em vez de o deixar de fora, mas o ZBox abriria então desbloqueado.
+unl_remove_warning = Remover {name}? O ZBox deixará de o aceitar.
+ab_col_email = E-mail
+ab_col_name = Nome
+ab_col_phone = Telefone
+ab_no_contacts = Ainda não há contactos.
+acct_auto_check = Verificar novas mensagens automaticamente
+acct_note_auto_check = Desativado: o ZBox nunca contacta esta conta por iniciativa própria -- sem vigilância de novo correio, sem atualização periódica, sem transferências em segundo plano --, para que um servidor pouco fiável não torne as outras contas lentas. O correio já transferido continua a abrir, e Atualizar (F5), enviar e eliminar continuam a chegar ao servidor. É o mesmo que Pausar verificação automática no menu Ferramentas ou no menu de contexto da conta.
+bl_day_ago = há 1 dia
+bl_days_ago = há {days} dias
+bl_label_blocklists = Lista de bloqueio
+bl_label_phishing = Lista de phishing
+bl_last_failed = A última tentativa falhou: %s
+bl_not_downloaded = Ainda não transferida.
+bl_save_failed = %s transferida, mas não foi possível guardar: %s
+bl_seed_only = %s domínios da lista incorporada. Ainda não atualizada pela internet.
+bl_some_failed = Algumas fontes falharam: %s
+bl_some_unreachable = Não foi possível aceder a algumas fontes: %s
+bl_status_line = %s domínios. Última atualização %s.
+bl_up_to_date = %s já está atualizada.
+bl_update_failed = Não foi possível atualizar %s: %s
+bl_updated = %s atualizada: %s domínios.
+cc_age_choice = Toda a cache de mensagens com %s
+cc_auto_button = Limpeza automática: mensagens em cache com mais de %s...
+comp_btn_discard = Descartar
+comp_btn_keep_editing = Continuar a editar
+comp_btn_save_draft = Guardar rascunho
+comp_no_account = Nenhuma conta configurada
+comp_saving_draft = A guardar rascunho…
+comp_this_message = esta mensagem
+comp_unsent_save_q = Guardar %s como rascunho antes de fechar?
+comp_unsent_tray_q = Guardar %s como rascunho antes de o ZBox passar para a área de notificação?
+doc_unreadable = Não foi possível ler o ficheiro de documentação:
+envlist_all_disabled = Todas as contas estão desativadas.
+envlist_col_date = Data
+envlist_col_from = De
+envlist_col_status = Estado
+envlist_col_subject = Assunto
+envlist_collapsed = Recolhida (%d)
+envlist_empty = Nenhuma mensagem nesta pasta.
+envlist_loading = A carregar mensagens...
+envlist_no_accounts = Ainda não há contas configuradas.
+envlist_no_ignored = Nenhuma conversa ignorada nesta pasta.
+envlist_no_watched = Nenhuma conversa seguida nesta pasta.
+envlist_select_folder = Selecione uma conta ou pasta para carregar mensagens.
+eula_link_0 = Abrir a página de licença do Himalaya no navegador
+eula_link_1 = Abrir a página de licença do StevenBlack hosts no navegador
+eula_link_2 = Abrir a página de licença do EasyList/EasyPrivacy no navegador
+eula_link_3 = Abrir a página de licença do Phishing.Database no navegador
+eula_read_note = Leia a licença abaixo, incluindo as secções de terceiros. Tem de assinalar Concordo antes de Seguinte ficar disponível. Não concordo fecha o ZBox sem o iniciar e remove o que esta execução criou até agora.
+eula_unreadable = Não foi possível ler o ficheiro de licença:\n%s
+filters_title = Executar filtros
+flag_title = Sinalizar mensagem
+folder_type_archive = Arquivo
+folder_type_drafts = Rascunhos
+folder_type_inbox = Caixa de entrada
+folder_type_junk = Correio indesejado
+folder_type_sent = Enviados
+folder_type_trash = Lixo
+mime_application_json = Ficheiro JSON
+mime_application_msword = Documento do Word
+mime_application_octet_stream = Ficheiro binário
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Folha de cálculo do Excel
+mime_application_vnd_ms_powerpoint = Apresentação do PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Apresentação do PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Folha de cálculo do Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Documento do Word
+mime_application_xml = Ficheiro XML
+mime_application_zip = Arquivo ZIP
+mime_audio_mpeg = Áudio MP3
+mime_audio_ogg = Áudio OGG
+mime_audio_wav = Áudio WAV
+mime_image_bmp = Imagem BMP
+mime_image_gif = Imagem GIF
+mime_image_jpeg = Imagem JPEG
+mime_image_png = Imagem PNG
+mime_image_svg_xml = Imagem SVG
+mime_image_webp = Imagem WebP
+mime_text_csv = Ficheiro CSV
+mime_text_html = Ficheiro HTML
+mime_text_plain = Ficheiro de texto
+mime_video_mp4 = Vídeo MP4
+mime_video_x_msvideo = Vídeo AVI
+move_title_junk = Marcar como correio indesejado
+move_title_move_to = Mover para
+move_title_not_junk = Marcar como não indesejado
+mp_explain_set = Está definida uma palavra-passe mestra. É ela que permite a esta pasta do ZBox abrir as palavras-passe das contas guardadas noutro computador.\n\nDeixe as duas caixas de nova palavra-passe vazias e prima OK para a remover. Removê-la não afeta este computador, mas a pasta deixa de funcionar em qualquer outro sem voltar a iniciar sessão em cada conta.
+mp_explain_unset = Não está definida nenhuma palavra-passe mestra, por isso as palavras-passe das contas guardadas só podem ser lidas neste computador e nesta conta do Windows. Se copiar a pasta para outro lado, terá de voltar a iniciar sessão no servidor de correio de cada conta.\n\nDefina uma e o ZBox vai pedi-la uma vez em cada computador novo, desbloqueando normalmente a partir daí. Este computador não voltará a pedi-la.\n\nEscreva-a e guarde-a num local seguro. Não fica armazenada em lado nenhum e não pode ser recuperada: se a esquecer, terá de voltar a iniciar sessão no servidor de correio de cada conta.
+mp_label_confirm = Confirmar a nova palavra-passe mestra:
+mp_label_current = Palavra-passe mestra atual:
+mp_label_master = Palavra-passe mestra:
+mp_label_new = Nova palavra-passe mestra:
+mp_name_confirm = Confirmar a nova palavra-passe mestra
+mp_name_current = Palavra-passe mestra atual
+mp_name_master = Palavra-passe mestra
+mp_name_new = Nova palavra-passe mestra
+mp_prompt_existing = As palavras-passe das contas guardadas só estão protegidas neste computador. Defina uma palavra-passe mestra para que também possam ser abertas se mudar o ZBox para outro.
+mp_prompt_first_run = O ZBox vai guardar as palavras-passe das suas contas. Defina agora uma palavra-passe mestra para que ainda possam ser abertas se mudar o ZBox para outro computador.
+mp_prompt_new_account = O ZBox vai guardar a palavra-passe desta conta. Defina primeiro uma palavra-passe mestra para que a conta ainda possa ser aberta se mudar o ZBox para outro computador.
+mp_removed_done = Palavra-passe mestra removida. As palavras-passe guardadas agora só funcionam neste computador e nesta conta do Windows.
+mp_set_done = Palavra-passe mestra definida. O ZBox vai pedi-la uma vez em cada computador novo em que esta pasta for aberta e depois desbloqueia normalmente.
+mv_body_title = Corpo da mensagem
+mv_col_format = Formato
+mv_col_name = Nome
+mv_col_size = Tamanho
+mv_format_unknown = Desconhecido
+mv_size_unknown = Tamanho desconhecido
+na_account_settings = Definições da conta
+na_disable_account = Desativar conta
+na_edit_signature = Editar assinatura
+na_message_filters = Filtros de mensagens
+na_mute_account = Silenciar conta
+na_pause_auto_check = Pausar verificação automática
+na_remove_account = Remover conta
+na_set_default = Definir como conta predefinida
+no_offline_copy = Não há cópia offline de %s. Abra-a com ligação ou use Ficheiro, Offline, Sincronizar agora.
+perm_delete_confirm = {msg} Isto ignora o Lixo e não pode ser anulado.
+perm_delete_many = Eliminar {count} mensagens permanentemente?
+perm_delete_one = Eliminar {count} mensagem permanentemente?
+preset_note_apple = A Apple exige uma palavra-passe específica da aplicação.
+preset_note_fastmail = O Fastmail exige uma palavra-passe de aplicação.
+preset_note_google = O Google exige uma palavra-passe de aplicação ou OAuth2, não a sua palavra-passe normal.
+preset_note_microsoft = A Microsoft retirou o início de sessão por palavra-passe para contas Outlook.com/Office 365 -- só o OAuth2 funciona, e o ZBox ainda não o suporta. Esta conta não conseguirá iniciar sessão.
+preset_note_proton = O ProtonMail exige a aplicação ProtonMail Bridge a correr localmente.
+preset_note_yahoo = O Yahoo exige uma palavra-passe de aplicação.
+priv_phishing_not_loaded = Lista de phishing: ainda não carregada. É transferida na primeira vez em que estas regras estiverem ativas e o ZBox tiver ligação.
+priv_phishing_prefix = Lista de phishing:
+priv_status_unavailable = O estado da lista de bloqueio não está disponível.
+rdr_load_failed = Não foi possível carregar a mensagem.\n\n{message}
+rdr_loading = A carregar mensagem...
+rdr_select_message = Selecione uma mensagem para a ler aqui.
+set_autosave_off = Desativado — use Guardar rascunho (Ctrl+S) para guardar manualmente
+set_autosave_seconds = A cada {seconds} segundos
+set_no_unlock = Nenhuma chave de acesso ou chave de segurança utilizável aqui
+set_purge_days = Após {days} dias
+set_purge_off = Desativado — o Lixo e o correio indesejado nunca são esvaziados automaticamente
+set_purge_one_day = Após 1 dia
+set_rt_bundled_installed = Runtime incluído: instalado.
+set_rt_bundled_many = Runtime incluído: %s instalado.
+set_rt_bundled_none = Runtime incluído: nenhum instalado, por isso o ZBox usa o do sistema.
+set_rt_bundled_unknown = Runtime incluído: não foi possível determinar.
+set_rt_bundled_ver = Runtime incluído: versão %s instalada.
+set_rt_system_unknown = Runtime do sistema: não foi possível determinar a versão.
+set_rt_system_ver = Runtime do sistema: versão %s.
+set_unlock_many = %d métodos de desbloqueio utilizáveis aqui
+set_unlock_unreadable = Não foi possível ler os métodos de desbloqueio
+sig_tab_formatted = Formatado
+sig_tab_source = Código HTML
+srch_all_accounts = Todas as contas
+srch_all_folders = Todas as pastas
+tab_mail = Correio
+tab_new_message = Nova mensagem
+tab_saved_message = Mensagem guardada
+title_copy_to_err = Copiar para
+title_mark_message = Marcar mensagem
+title_unsent_message = Mensagem não enviada
+tree_unified_root = Pastas unificadas
+unlock_kind_passkey = Chave de acesso (Windows Hello)
+unlock_kind_security_key = Chave de segurança
+unlock_prompt_message = O Windows está a pedir a sua confirmação. Responda ao pedido com o Windows Hello, o seu PIN ou a sua chave de segurança. Esta janela fecha-se sozinha quando o Windows terminar.
+unlock_prompt_title = Segurança do Windows
+unlock_registering = Registar este método de desbloqueio
+unlock_the_passkey = A chave de acesso
+unlock_the_security_key = A chave de segurança
+wildcard_eml = Ficheiros de e-mail (*.eml)|*.eml|Todos os ficheiros (*.*)|*.*
+wildcard_export = Exportação do ZBox (*.json)|*.json
+wiz_not_supported = NÃO SUPORTADO: {name}. {note} Esta conta não pode ser adicionada no ZBox.
+wiz_oauth_notice = O ZBox ainda não suporta o início de sessão com OAuth2. As contas que exigem OAuth2 não podem ser adicionadas. As contas que aceitam uma palavra-passe, ou uma palavra-passe de aplicação, podem.\n\nGmail. A sua palavra-passe normal do Google será recusada, mas uma palavra-passe de aplicação funciona. A verificação em dois passos tem de estar ativada primeiro. O botão abaixo abre as instruções do Google.\n\nOutlook.com, Hotmail, Live e Microsoft 365. Ainda não suportados. Exigem OAuth2 e serão adicionados numa versão futura.\n\nOutros fornecedores. Uma palavra-passe normal ou de aplicação costuma funcionar, e as páginas de ajuda do seu fornecedor indicam as definições do servidor.\n\nEsta página será removida quando o suporte a OAuth2 chegar.
+stock_apply = Aplicar
+stock_cancel = Cancelar
+stock_close = Fechar
+stock_help = Ajuda
+stock_no = Não
+stock_ok = OK
+stock_yes = Sim
+
+[errors]
+language_restart_failed = O ZBox não conseguiu reiniciar-se:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Não foi possível abrir um programa de correio para {address}.
+
+wizard_no_oauth2 = Este fornecedor não permite iniciar sessão sem OAuth2, que o ZBox ainda não suporta -- não existe nenhuma opção de palavra-passe ou palavra-passe de aplicação que funcione aqui. Esta conta não pode ser adicionada. Volte atrás e use outro endereço de correio eletrónico, ou cancele e aguarde pelo suporte a OAuth2.
+wizard_test_failed = A ligação falhou:\n\n{error}
+
+contacts_import_unreadable = Não foi possível ler esse ficheiro.\n\n{error}
+contacts_export_unwritable = Não foi possível escrever esse ficheiro.\n\n{error}
+
+attach_unreadable = Não foi possível ler o anexo {path}:\n{error}
+send_failed = Não foi possível enviar a mensagem.\n\n{error}
+draft_attach_unreadable = Não foi possível ler o anexo {path}:\n{error}\n\nRascunho não guardado.
+draft_save_failed = Não foi possível guardar o rascunho.\n\n{error}
+
+clipboard_unavailable = Não foi possível abrir a área de transferência.
+open_link_failed = Não foi possível abrir o navegador para:\n{url}
+
+master_password_mismatch = As duas caixas da nova palavra-passe mestra não coincidem.
+master_password_required = Introduza uma palavra-passe mestra ou prima Cancelar.
+master_password_not_set = Não foi possível definir a palavra-passe mestra: {error}
+master_password_not_here = A palavra-passe mestra não pode ser alterada aqui.
+
+attachment_save_failed = Não foi possível guardar o anexo.\n\n{error}
+attachments_save_failed = Não foi possível guardar os anexos.\n\n{error}
+print_failed = Não foi possível imprimir a mensagem. Verifique se há uma impressora configurada.
+print_preview_failed = Não foi possível abrir a pré-visualização de impressão. Verifique se há uma impressora configurada.
+
+related_search_failed = Não foi possível pesquisar mensagens relacionadas.\n\n{error}
+search_failed = A pesquisa falhou.\n\n{error}
+
+unlock_methods_no_config_folder = O ZBox não encontrou a sua pasta de configuração, por isso os métodos de desbloqueio não podem ser geridos aqui.
+shortcut_no_folder = O ZBox não conseguiu determinar a sua própria pasta, por isso não é possível criar um atalho a partir daqui.
+shortcut_failed_settings = Não foi possível criar o atalho no ambiente de trabalho:\n\n{error}
+
+unlock_method_failed = {what} não funcionou.\n\n{error}
+unlock_check_failed = Não foi possível verificar a palavra-passe mestra.\n\n{error}
+unlock_password_wrong = Essa palavra-passe mestra não está correta.
+unlock_add_failed = Não foi possível adicionar {what}.\n\n{error}
+unlock_passkey_setup_failed = Não foi possível configurar a chave de acesso neste computador, por isso nada foi alterado.\n\n{error}
+unlock_method_test_failed = Esse método não funcionou.\n\n{error}
+
+account_list_unreadable = O ZBox não conseguiu abrir a sua lista de contas.\n\n{error}\n\nNenhuma conta foi carregada e o ficheiro não foi alterado, por isso nada se perdeu. Adicionar, editar e remover contas fica recusado até que possa ser lido.
+account_list_no_accounts = O ZBox não conseguiu abrir a sua lista de contas nesta sessão ({error}), por isso não há contas para selecionar. Nada se perdeu e nada foi alterado. Feche o ZBox, abra-o novamente e introduza a sua palavra-passe mestra quando lhe for pedida.
+open_message_failed = Não foi possível abrir a mensagem.\n\n{error}
+filters_list_failed = Não foi possível listar as mensagens em {folder}.\n\n{error}
+filters_move_failed = Não foi possível mover as mensagens filtradas.\n\n{error}
+cache_clear_failed = Não foi possível limpar a cache.\n\n{error}
+folder_create_failed = Não foi possível criar a pasta.\n\n{error}
+folder_rename_failed = Não foi possível mudar o nome da pasta.\n\n{error}
+folder_delete_failed = Não foi possível eliminar a pasta.\n\n{error}
+folder_subscribe_failed = Não foi possível subscrever a pasta.\n\n{error}
+folder_unsubscribe_failed = Não foi possível cancelar a subscrição da pasta.\n\n{error}
+saved_open_failed = Não foi possível abrir o ficheiro.\n\n{error}
+saved_parse_failed = Não foi possível interpretar este ficheiro como uma mensagem de correio eletrónico.\n\n{error}
+save_file_failed = Não foi possível guardar o ficheiro.\n\n{error}
+save_fetch_failed = Não foi possível obter a mensagem para guardar.\n\n{error}
+empty_trash_failed = Não foi possível esvaziar a Reciclagem.\n\n{error}
+empty_junk_failed = Não foi possível esvaziar o Lixo Eletrónico.\n\n{error}
+export_write_failed = Não foi possível escrever o ficheiro de exportação.\n\n{error}
+import_read_failed = Não foi possível ler este ficheiro como uma exportação do ZBox.\n\n{error}
+import_not_export = Este ficheiro não parece ser uma exportação do ZBox.\n\n{error}
+search_open_failed = Não foi possível abrir esta mensagem.
+related_load_failed = Não foi possível carregar esta mensagem.\n\n{error}
+reply_load_failed = Não foi possível carregar a mensagem a responder.\n\n{error}
+forward_load_failed = Não foi possível carregar a mensagem a reencaminhar.\n\n{error}
+action_failed = Não foi possível concluir esta ação.\n\n{error}
+undo_failed = Não foi possível anular {label}.\n\n{error}
+copy_failed = Não foi possível copiar a mensagem.\n\n{error}
+delete_failed = Não foi possível eliminar a mensagem.\n\n{error}
+archive_failed = Não foi possível arquivar a mensagem.\n\n{error}
+master_password_not_changed = Não foi possível alterar a palavra-passe mestra: {error}
+shortcut_failed_startup = Não foi possível criar o atalho no ambiente de trabalho:\n\n{error}\n\nO ZBox vai continuar a arrancar. Pode tentar novamente mais tarde a partir das Definições.
+account_locked_action = O ZBox não pode %s. Não foi possível abrir a lista de contas nesta sessão (%s) e nada foi alterado. Feche o ZBox, volte a iniciá-lo e introduza a sua palavra-passe mestra se lhe for pedida.
+
+[help]

@@ -1,0 +1,16 @@
+ZBox
+Por Harith Alhamdani
+
+O ZBox é um cliente de e-mail portátil, ágil, seguro e totalmente acessível. Gratuito para uso pessoal e leve nos recursos do sistema. Foi criado para oferecer a pessoas cegas e com baixa visão uma alternativa real e completa às opções pesadas e lentas que costumam estar disponíveis. Por baixo, o ZBox funciona com o robusto cliente de e-mail Himalaya CLI.
+
+Privacidade e segurança
+O ZBox vem com um bloqueador de rastreadores e anúncios (ativado por padrão), além de regras opcionais de lixo eletrônico e um verificador de links de phishing. Para uma portabilidade segura, ele usa proteção por senha mestra: se a pasta do aplicativo for copiada para outro computador sem essa senha, o acesso às suas contas vinculadas fica bloqueado. Se você pretende levar o ZBox para uma máquina nova, defina primeiro uma senha mestra aqui. Ele também oferece suporte a chaves de acesso do Windows Hello (impressão digital, PIN ou reconhecimento facial) e a chaves de segurança de hardware modernas.
+
+Uso familiar
+Para tornar a mudança de outros clientes de e-mail tranquila, o ZBox oferece atalhos de teclado práticos e flexíveis. Muitas vezes vários atalhos fazem a mesma ação; por exemplo, tanto Alt+S quanto Ctrl+Enter enviam uma mensagem. Você pode ver a lista completa em Ajuda, Atalhos de teclado.
+
+Configuração de contas
+O login nativo com OAuth2 do Google e da Microsoft será adicionado em atualizações futuras. Por enquanto, você pode vincular sua conta do Gmail gerando uma senha de app em vez de usar sua senha normal (veja o botão abaixo para as instruções).
+
+Licenças e créditos
+Pressione Ver licença abaixo para ler a licença do ZBox e ver os componentes de terceiros que o tornam possível. Entre eles estão o Himalaya, as listas de bloqueio StevenBlack hosts e EasyPrivacy, a lista Phishing.Database e (em uma cópia compilada) Python, wxPython, imapclient, pywin32, keyring e accessible_output2 com suas bibliotecas cliente de leitores de tela.

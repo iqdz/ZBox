@@ -1,0 +1,16 @@
+ZBox
+Von Harith Alhamdani
+
+ZBox ist ein portabler, flotter, sicherer und vollständig barrierefreier E-Mail-Client. Kostenlos für den privaten Gebrauch und sparsam mit Systemressourcen. Er wurde geschaffen, um blinden und sehbehinderten Menschen eine echte, funktionsreiche Alternative zu den aufgeblähten und trägen Programmen zu bieten, die sonst meist verfügbar sind. Unter der Haube arbeitet ZBox mit dem robusten E-Mail-Client Himalaya CLI.
+
+Datenschutz und Sicherheit
+ZBox bringt einen Tracker- und Werbeblocker mit (standardmäßig aktiviert), dazu optionale Junk-Mail-Regeln und eine Prüfung auf Phishing-Links. Für sichere Portabilität nutzt es den Schutz durch ein Master-Kennwort: Wird der App-Ordner ohne dieses Kennwort auf einen anderen Computer kopiert, ist der Zugriff auf Ihre verknüpften Konten gesperrt. Wenn Sie ZBox auf ein neues Gerät umziehen möchten, legen Sie hier zuerst ein Master-Kennwort fest. Außerdem unterstützt es Windows Hello-Passkeys (Fingerabdruck, PIN oder Gesichtserkennung) und moderne Hardware-Sicherheitsschlüssel.
+
+Vertraute Bedienung
+Damit der Umstieg von anderen E-Mail-Programmen reibungslos gelingt, bietet ZBox freundliche, flexible Tastenkürzel. Oft lösen mehrere Kürzel dieselbe Aktion aus; zum Beispiel senden sowohl Alt+S als auch Ctrl+Enter eine Nachricht. Die vollständige Liste finden Sie unter Hilfe, Tastenkürzel.
+
+Kontoeinrichtung
+Die native OAuth2-Anmeldung von Google und Microsoft wird in künftigen Updates ergänzt. Bis dahin können Sie Ihr Gmail-Konto verknüpfen, indem Sie ein App-Passwort erstellen, statt Ihr normales Kennwort zu verwenden (Anleitung über die Schaltfläche unten).
+
+Lizenzen und Danksagungen
+Drücken Sie unten auf Lizenz anzeigen, um die Lizenz von ZBox zu lesen und die Komponenten von Drittanbietern zu sehen, die es möglich machen. Dazu gehören Himalaya, die Sperrlisten StevenBlack hosts und EasyPrivacy, die Liste Phishing.Database sowie (in einer erstellten Version) Python, wxPython, imapclient, pywin32, keyring und accessible_output2 mit seinen Client-Bibliotheken für Bildschirmleser.

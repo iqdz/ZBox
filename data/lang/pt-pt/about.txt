@@ -1,0 +1,16 @@
+ZBox
+Por Harith Alhamdani
+
+O ZBox é um cliente de correio eletrónico portátil, rápido, seguro e totalmente acessível. Gratuito para uso pessoal e leve nos recursos do sistema. Foi criado para dar às pessoas cegas e com baixa visão uma alternativa real e completa às opções pesadas e lentas que costumam existir. Por dentro, o ZBox funciona com o robusto cliente de correio Himalaya CLI.
+
+Privacidade e segurança
+O ZBox inclui um bloqueador de rastreadores e anúncios (ativado por predefinição), a par de regras opcionais de correio não solicitado e de um verificador de ligações de phishing. Para uma portabilidade segura, usa proteção por palavra-passe mestra: se a pasta da aplicação for copiada para outro computador sem esta palavra-passe, o acesso às suas contas associadas fica bloqueado. Se pretende mudar o ZBox para um computador novo, defina primeiro aqui uma palavra-passe mestra. Também suporta chaves de acesso do Windows Hello (impressão digital, PIN ou reconhecimento facial) e chaves de segurança de hardware modernas.
+
+Utilização familiar
+Para tornar a mudança a partir de outros clientes de correio simples, o ZBox oferece atalhos de teclado práticos e flexíveis. Muitas vezes vários atalhos fazem a mesma ação; por exemplo, tanto Alt+S como Ctrl+Enter enviam uma mensagem. Pode ver a lista completa em Ajuda, Atalhos de teclado.
+
+Configuração de contas
+O início de sessão nativo com OAuth2 da Google e da Microsoft será acrescentado em atualizações futuras. Por agora, pode associar a sua conta do Gmail gerando uma palavra-passe de aplicação em vez de usar a sua palavra-passe habitual (veja o botão abaixo para as instruções).
+
+Licenças e créditos
+Prima Ver licença abaixo para ler a licença do ZBox e ver os componentes de terceiros que o tornam possível. Entre eles estão o Himalaya, as listas de bloqueio StevenBlack hosts e EasyPrivacy, a lista Phishing.Database e (numa cópia compilada) Python, wxPython, imapclient, pywin32, keyring e accessible_output2 com as suas bibliotecas cliente de leitores de ecrã.

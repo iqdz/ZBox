@@ -1,0 +1,96 @@
+General
+F6: Mover el foco entre los paneles
+Ctrl+Tab: Pestaña siguiente
+Ctrl+Shift+Tab: Pestaña anterior
+Ctrl+W o Ctrl+F4: Cerrar la pestaña actual
+Escape: Contrae una conversación expandida si la lista de mensajes tiene el foco y hay una expandida; si no, cierra la pestaña actual (mensaje, mensaje guardado o un mensaje sin enviar en redacción -- pregunta antes si hay cambios sin guardar)
+Tecla de aplicaciones o Shift+F10: Abrir el menú contextual del elemento de lista o árbol que tiene el foco
+F1: Atajos de teclado, esta página
+Ctrl+Shift+Q: Salir -- siempre cierra ZBox de verdad, incluso cuando «Cerrar en la bandeja del sistema» está activado en Configuración (el botón Cerrar de la ventana, Alt+F4 y Ctrl+W en la pestaña Correo ocultan en la bandeja en lugar de salir cuando esa opción está activada; el elemento Salir del icono de la bandeja también sale siempre de verdad)
+Ctrl+Shift+Delete: Vaciar la caché de mensajes sin conexión -- solo las copias locales de ZBox, nada en ningún servidor (también un botón en Herramientas > Configuración de limpieza de caché)
+
+Correo
+Ctrl+N: Mensaje nuevo
+Ctrl+Shift+N: Cuenta de correo nueva
+F5: Recibir correo nuevo de la cuenta actual
+Shift+F5: Recibir correo nuevo de todas las cuentas
+Ctrl+Shift+J: Ir a las carpetas unificadas
+Ctrl+Shift+B: Libreta de direcciones
+Ctrl+Shift+F: Buscar mensajes
+Ctrl+Shift+T: Mostrar mensajes relacionados
+
+La lista de mensajes
+Delete, Shift+Delete, Archivar, Marcar/Desmarcar, Marcar como no deseado/deseado, Mover a y Copiar a se aplican a todos los mensajes de una conversación cuando se usan sobre una fila de conversación CONTRAÍDA -- expanda primero la conversación (flecha derecha o Enter/Space) para actuar sobre un solo mensaje de ella
+Ctrl+A: Seleccionar todos los mensajes
+Ctrl+Shift+L: Cargar más mensajes
+Delete: Mover los mensajes a la papelera
+Shift+Delete: Eliminar los mensajes definitivamente
+Ctrl+Z: Deshacer la última eliminación, archivado, marca como no deseado o marca como deseado
+S: Marcar/desmarcar los mensajes seleccionados
+A: Archivar los mensajes seleccionados
+J: Marcar los mensajes seleccionados como no deseados
+Shift+J: Marcar los mensajes seleccionados como deseados
+W: Seguir conversación -- activa o desactiva el seguimiento de la conversación a la que pertenece la selección (también en el menú Mensaje y con el clic derecho)
+K: Ignorar conversación -- activa o desactiva que esa conversación se ignore (también en el menú Mensaje y con el clic derecho)
+S, A, J, W y K de arriba están activadas de forma predeterminada y pueden desactivarse en Configuración (de lo contrario tienen prioridad sobre la navegación por primera letra de la propia lista de mensajes)
+Enter o Space sobre una conversación contraída: abre el mensaje no leído más reciente de esa conversación (el más reciente si toda la conversación está leída) como mensaje único, en una sola pestaña -- después Ctrl+Shift+Page Down y Ctrl+Shift+Page Up recorren el resto de la conversación sin abrir nunca un segundo mensaje. Sobre un mensaje normal, lo abre como siempre
+Flecha derecha sobre una conversación contraída: muestra sus mensajes como lista, sin abrir ninguno -- ábralos de uno en uno desde ahí con su propio Enter o Space
+Ctrl+Shift+O: Abrir mensaje en conversación -- toda la conversación en una pestaña, como lista de sus mensajes con el cuerpo del seleccionado debajo. Recorra la lista con las flechas para leerlos uno a uno; Enter sobre una fila abre ese mensaje solo en su propia pestaña completa. Mismo nombre y tecla que el comando de Thunderbird
+Flecha izquierda: contraer la conversación en la que está la selección
+*: Expandir todas las conversaciones (también Ver > Conversaciones); \: Contraer todas las conversaciones (también Ver > Conversaciones)
+Ver > Conversaciones > Todas / Conversaciones seguidas / Conversaciones ignoradas filtra qué conversaciones se muestran -- volver a Todas siempre devuelve todos los mensajes; esto nunca quita nada de la carpeta
+
+Un mensaje abierto
+Alt+A: Archivar este mensaje -- solo mientras su cuerpo (Texto o HTML) tiene realmente el foco del teclado; en cualquier otro sitio Alt+A mantiene su función normal de abrir el menú Cuentas
+Ctrl+R: Responder
+Ctrl+Shift+R: Responder a todos
+Ctrl+L: Reenviar
+Ctrl+Shift+Page Down: Mensaje siguiente de esta conversación; Ctrl+Shift+Page Up: anterior. Sustituye la pestaña actual en lugar de abrir otra, así que solo hay un mensaje abierto. En el último mensaje (o el primero, al subir) lo anuncia y pregunta; pulsar la misma tecla otra vez cierra el mensaje y termina la conversación, volviendo a la lista de mensajes. (Ctrl+Page Up/Down no se tocan -- cambian de pestaña)
+Ctrl+B: Alternar la vista del mensaje (Texto/HTML)
+Ctrl+P: Imprimir
+Ctrl+Shift+P: Vista previa de impresión
+Ctrl+S: Guardar mensaje como
+Ctrl+U: Anunciar el nombre y la dirección del remitente
+Ctrl+Shift+U: Anunciar el remitente y copiar la dirección
+Ctrl+Shift+I: Mostrar el contenido remoto de este mensaje
+Ctrl+Shift+=: Aumentar el tamaño de letra del mensaje
+Ctrl+Shift+-: Reducir el tamaño de letra del mensaje
+Ctrl+Shift+0: Restablecer el tamaño de letra del mensaje
+
+Redactar un mensaje
+Ctrl+Enter o Alt+S: Enviar
+Ctrl+S: Guardar borrador
+Ctrl+Shift+A: Adjuntar archivo
+Ctrl+Shift+S: Insertar la firma de la cuenta indicada en De
+Ctrl+Shift+V: Pegar como cita
+Ctrl+Shift+W: Recuento de palabras
+Ctrl+Shift+P: Vista previa del mensaje tal como se enviará
+Escape, Ctrl+W o Ctrl+F4: Cerrar la pestaña de redacción -- pregunta antes si hay algo sin guardar, ofreciendo Guardar borrador, Descartar o Seguir editando
+Todos los comandos de abajo están también en el menú Redactar, que Alt+C abre incluso con el foco dentro del cuerpo del mensaje
+
+Formato, al redactar
+Ctrl+B: Negrita
+Ctrl+I: Cursiva
+Ctrl+Shift+X: Tachado
+Ctrl+Shift+8: Lista con viñetas
+Ctrl+Shift+7: Lista numerada
+Ctrl+Shift+9: Cita
+Ctrl+Shift+6: Código
+Ctrl+Alt+1: Encabezado
+Ctrl+K: Insertar enlace
+Ctrl+Shift+K: Decir qué formato está activo donde está el cursor
+Ctrl+Shift+M: Abrir el menú Formato esté donde esté el foco, incluido el cuerpo del mensaje
+
+Ortografía, al redactar
+Ctrl+Shift+F7: Revisar la ortografía
+Ctrl+Shift+F9: Ir al siguiente error ortográfico
+Ctrl+Shift+F8: Añadir al diccionario la palabra en la que se detuvo
+
+La misma tecla en dos lugares
+Ctrl+S: Guardar borrador al redactar, Guardar mensaje como en un mensaje abierto
+Ctrl+B: Negrita al redactar, alternar entre Texto y HTML en un mensaje abierto
+Ctrl+Shift+P: Vista previa al redactar, Vista previa de impresión en un mensaje abierto
+Alt+A: Archivar, pero solo mientras el cuerpo de un mensaje tiene el foco del teclado; en cualquier otro sitio abre el menú Cuentas
+
+Diagnóstico
+Ctrl+Shift+F12: Diagnóstico de atajos -- escribe una línea en el registro de depuración por cada combinación pulsada en una pestaña de redacción, para poder demostrar a qué llegó realmente una tecla. Desactivado de forma predeterminada, y la misma tecla lo vuelve a desactivar; el estado se anuncia en ambos casos

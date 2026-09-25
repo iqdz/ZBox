@@ -1,0 +1,1437 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = اردو
+code = ur
+direction = rtl
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = پیغام بھیج دیا گیا۔
+draft_saved = مسودہ محفوظ ہو گیا۔
+signature_inserted = دستخط شامل کر دیے گئے۔
+signature_none = اس اکاؤنٹ کے کوئی دستخط نہیں ہیں۔
+signature_saved = دستخط محفوظ ہو گئے۔
+signature_not_saved = دستخط محفوظ نہیں ہوئے۔
+pasted_as_quotation = اقتباس کے طور پر چسپاں کیا گیا۔
+clipboard_empty = کلپ بورڈ پر کچھ نہیں ہے۔
+word_count = {words} الفاظ، {characters} حروف۔
+report_copied = رپورٹ کاپی ہو گئی۔
+compose_tab_needed = اس کمانڈ کے لیے تحریر کا ٹیب درکار ہے۔
+attach_file_instead = یہاں چھوڑی گئی فائلیں پیغام کے متن میں شامل نہیں ہوتیں۔ فائل بھیجنے کے لیے فائل منسلک کریں استعمال کریں۔
+
+# Formatting in the message body
+formatting_here = یہاں فارمیٹنگ: {formatting}۔
+no_formatting_here = یہاں کوئی فارمیٹنگ نہیں، سادہ متن۔
+
+# Spelling
+nothing_to_check = جانچنے کے لیے کچھ نہیں ہے۔
+no_misspellings = املا کی کوئی غلطی نہیں۔
+spelling_dictionary_unavailable = املا کی لغت دستیاب نہیں ہے۔
+next_misspelling_first = پہلے اگلی املا کی غلطی استعمال کریں۔
+word_added = {word} لغت میں شامل کر دیا گیا۔
+word_not_added = {word} شامل نہیں کیا جا سکا۔
+corrections_applied_one = 1 تصحیح لاگو کی گئی۔
+corrections_applied_many = {count} تصحیحات لاگو کی گئیں۔
+corrections_applied_partly = {total} میں سے {applied} تصحیحات لاگو کی گئیں۔ باقی مسترد ہو گئیں؛ لاگ دیکھیں۔
+occurrences_replaced_one = 1 مقام پر تبدیل کیا گیا۔
+occurrences_replaced_many = {count} مقامات پر تبدیل کیا گیا۔
+
+# Reading mail
+message_did_not_open = پیغام نہیں کھلا۔ سرور نے جواب نہیں دیا۔ دوبارہ کوشش کے لیے Enter دبائیں۔
+thread_open = اس تھریڈ میں {messages}۔ بند کرنے کے لیے دوبارہ دبائیں۔
+no_thread_selected = کوئی تھریڈ منتخب نہیں۔
+thread_watched = تھریڈ زیرِ نگرانی ہے۔
+thread_not_watched = تھریڈ اب زیرِ نگرانی نہیں۔
+thread_ignored = تھریڈ نظر انداز کر دیا گیا۔
+thread_not_ignored = تھریڈ اب نظر انداز نہیں۔
+none_found = کچھ نہیں ملا۔
+refreshing_this_folder = یہ فولڈر تازہ کیا جا رہا ہے۔
+refreshing_all_accounts = تمام اکاؤنٹس تازہ کیے جا رہے ہیں۔
+message_view_html = پیغام کا منظر: HTML (رینڈر شدہ)۔
+message_view_text = پیغام کا منظر: متن۔
+remote_content_blocked = بیرونی مواد مسدود کر دیا گیا۔
+remote_content_unblocked = بیرونی مواد غیر مسدود کر دیا گیا۔
+remote_content_already_showing = اس پیغام میں بیرونی مواد پہلے ہی دکھایا جا رہا ہے۔
+archived = آرکائیو کر دیا گیا۔
+copied_to_folder = {to_folder} میں کاپی کر دیا گیا۔
+deleted_one = پیغام مستقل طور پر حذف کر دیا گیا۔
+deleted_many = {count} پیغامات مستقل طور پر حذف کر دیے گئے۔
+trashed_one = پیغام ردی کی ٹوکری میں منتقل کر دیا گیا۔
+trashed_many = {count} پیغامات ردی کی ٹوکری میں منتقل کر دیے گئے۔
+
+# Accounts and new mail
+no_account_yet = ابھی جانے کے لیے کوئی اکاؤنٹ نہیں ہے۔
+inbox_landed = {name} ان باکس۔
+account_enabled = {name} فعال کر دیا گیا۔
+account_disabled = {name} غیر فعال کر دیا گیا۔
+new_mail_one = {name} کے لیے 1 نیا پیغام۔
+new_mail_many = {name} کے لیے {count} نئے پیغامات۔
+refresh_all_done_one = 1 اکاؤنٹ تازہ کیا گیا۔
+refresh_all_done_many = {count} اکاؤنٹس تازہ کیے گئے۔
+refresh_all_done_failures = {count} اکاؤنٹس تازہ کیے گئے، {failed} تازہ نہیں ہو سکے۔
+refresh_all_done_failures_one = {count} اکاؤنٹ تازہ کیا گیا، {failed} تازہ نہیں ہو سکا۔
+
+# The sender of the message in view
+sender_address_copied = {sender}۔ پتہ کاپی ہو گیا۔
+sender_no_address = {sender}۔ کاپی کرنے کے لیے کوئی پتہ نہیں۔
+clipboard_not_opened = {sender}۔ کلپ بورڈ نہیں کھل سکا۔
+
+# The signature editor
+signature_page_formatted = فارمیٹ شدہ۔ یہی محفوظ کیا جائے گا۔
+signature_page_html = HTML ماخذ۔ یہی محفوظ کیا جائے گا۔
+signature_page_html_still_wins = فارمیٹ شدہ۔ محفوظ اب بھی HTML ماخذ ہی ہو گا۔
+
+# Background work
+phishing_list_updating = فشنگ کی فہرست پس منظر میں اپ ڈیٹ ہو رہی ہے۔
+cache_cleared = {files} کیش فائلیں صاف کی گئیں، {size} MB۔
+hotkeys_diagnostic_on = ہاٹ کیز کی جانچ آن، نشان زدہ
+hotkeys_diagnostic_off = ہاٹ کیز کی جانچ آف، غیر نشان زدہ
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = آرکائیو کریں
+action_delete = حذف کریں
+action_delete_permanently = مستقل طور پر حذف کریں
+action_mark_as_junk = جنک کے طور پر نشان زد کریں
+action_mark_as_not_junk = جنک نہیں کے طور پر نشان زد کریں
+action_move_to = منتقل کریں
+action_copy_to = کاپی کریں
+action_mark_message = پیغام نشان زد کریں
+action_undo = کالعدم کریں
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = کالعدم کیا گیا: {action}۔
+undo_done_many = {count} پیغامات کے لیے کالعدم کیا گیا: {action}۔
+junk_marked_one = جنک کے طور پر نشان زد کیا گیا۔
+junk_marked_many = {count} پیغامات جنک کے طور پر نشان زد کیے گئے۔
+junk_no_new_sender = کوئی نیا بھیجنے والا مسدود نہیں ہوا: پہلے سے مسدود، میلنگ لسٹ، یا آپ کا اپنا کوئی پتہ۔
+not_junk_marked_one = جنک نہیں کے طور پر نشان زد کیا گیا۔
+not_junk_marked_many = {count} پیغامات جنک نہیں کے طور پر نشان زد کیے گئے۔
+moved_to_one = {to_folder} میں منتقل کر دیا گیا۔
+moved_to_many = {count} پیغامات {to_folder} میں منتقل کر دیے گئے۔
+copied_to_many = {count} پیغامات {to_folder} میں کاپی کر دیے گئے۔
+marked_read = پڑھا ہوا نشان زد کیا گیا۔
+marked_unread = نہ پڑھا ہوا نشان زد کیا گیا۔
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} میں سے {completed} کے بعد منسوخ کر دیا گیا۔ {succeeded} کامیاب، {failed} ناکام۔
+bulk_failed_one = {done} 1 پیغام میں سے {failed} ناکام رہا۔
+bulk_failed_many = {done} {total} پیغامات میں سے {failed} ناکام رہے۔
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = جلی
+format_word_italic = ترچھا
+format_word_strike = کٹا ہوا
+format_word_href = لنک
+format_word_bullet = بلٹ فہرست
+format_word_number = نمبر وار فہرست
+format_word_quote = اقتباس
+format_word_code = کوڈ
+format_word_heading1 = سرخی
+format_applied = {formatting} لاگو کیا گیا۔
+format_inserted = {formatting} داخل کیا گیا۔
+format_not_available = {formatting} سادہ پیغام کے متن میں دستیاب نہیں ہے۔
+format_on = {formatting} آن
+format_off = {formatting} آف
+link_applied = لنک لاگو کیا گیا۔
+link_applied_to_selection = لنک انتخاب پر لاگو کیا گیا۔
+plain_body_formatting = سادہ پیغام کا متن اپنی فارمیٹنگ ٹیگز کی صورت میں دکھاتا ہے۔
+
+# Reaching either end of a thread
+thread_edge_first = اس تھریڈ کا پہلا پیغام۔ بند کرنے کے لیے دوبارہ دبائیں۔
+thread_edge_last = اس تھریڈ کا آخری پیغام۔ بند کرنے کے لیے دوبارہ دبائیں۔
+auto_check_paused = {account} کے لیے خودکار جانچ روک دی گئی۔
+auto_check_resumed = {account} کے لیے خودکار جانچ آن ہے۔
+html_view_still_loading = پیغام ابھی لوڈ ہو رہا ہے۔ Escape اسے بند کرتا ہے۔
+jump_unified_inbox = یکجا ان باکس۔
+message_still_opening = پیغام کھل رہا ہے۔ سرور سست ہے۔
+remote_none = اس پیغام میں کوئی ریموٹ مواد نہیں۔
+sender_none = اس پیغام کا کوئی بھیجنے والا نہیں۔
+sender_name_no_address = %s، کوئی پتہ نہیں
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = اوپر کچھ لکھیں اور Enter دبائیں یا تلاش منتخب کریں۔
+search_no_account = پہلے ایک اکاؤنٹ شامل کریں۔
+search_no_term = تلاش کے لیے کچھ لکھیں۔
+search_running = تلاش جاری ہے...
+search_none = "{term}" کے لیے کوئی نتیجہ نہیں۔
+search_found_one = "{term}" کے لیے 1 نتیجہ۔
+search_found_many = "{term}" کے لیے {count} نتائج۔
+search_failed = تلاش ناکام ہو گئی۔
+
+# The related messages tab
+related_running = تلاش جاری ہے...
+related_none = کوئی متعلقہ پیغام نہیں ملا۔
+related_found_one = 1 متعلقہ پیغام ملا۔
+related_found_many = {count} متعلقہ پیغامات ملے۔
+related_failed = متعلقہ پیغامات تلاش نہیں کیے جا سکے۔
+
+# Writing and sending
+sending_via = {sender} کے ذریعے بھیجا جا رہا ہے...
+send_failed = بھیجنا ناکام ہو گیا۔ تفصیلات کے لیے لاگز دیکھیں۔
+draft_autosaved = مسودہ خود بخود محفوظ ہو گیا۔
+draft_autosave_failed = مسودہ خود بخود محفوظ نہیں ہو سکا۔ تفصیلات کے لیے لاگز دیکھیں۔
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = اب {sender} کے پیغامات میں بیرونی مواد لوڈ ہو گا۔
+downloading_attachment = {filename} ڈاؤن لوڈ ہو رہی ہے...
+downloading_attachments_one = 1 منسلکہ ڈاؤن لوڈ ہو رہا ہے...
+downloading_attachments_many = {count} منسلکات ڈاؤن لوڈ ہو رہے ہیں...
+saved_to = {folder} میں محفوظ کیا گیا
+attachment_download_failed = منسلکہ ڈاؤن لوڈ نہیں ہو سکا۔
+
+# Getting mail onto the screen
+loading_folder = {account} کے لیے {folder} لوڈ ہو رہا ہے...
+messages_in_folder = {folder} میں {count} پیغام۔
+messages_in_folder_cached = {folder} میں {count} پیغام (آخری ہم آہنگ نقل، اپ ڈیٹ ہو رہی ہے...)
+no_offline_copy = {folder} کی ابھی کوئی آف لائن نقل نہیں ہے۔
+refresh_failed_cached = {folder} تازہ نہیں ہو سکا: آخری ہم آہنگ نقل دکھائی جا رہی ہے۔
+no_such_folder = اس اکاؤنٹ میں {folder} فولڈر نہیں ہے۔
+load_failed = پیغامات لوڈ نہیں ہو سکے۔ تفصیلات کے لیے لاگز دیکھیں۔
+no_more_to_load = اس فولڈر میں لوڈ کرنے کے لیے مزید پیغامات نہیں ہیں۔
+loading_more = {folder} میں مزید پیغامات لوڈ ہو رہے ہیں...
+more_loaded = {count} مزید پیغام لوڈ ہوئے۔
+no_more_messages = اس فولڈر میں مزید پیغامات نہیں ہیں۔
+load_more_failed = مزید پیغامات لوڈ نہیں ہو سکے: {error}
+loading_unified = متحد {folder} لوڈ ہو رہا ہے...
+messages_in_unified = متحد {folder} میں تمام اکاؤنٹس سے {count} پیغام۔
+messages_in_unified_cached = متحد {folder} میں {count} پیغام (آخری ہم آہنگ نقل، اپ ڈیٹ ہو رہی ہے...)
+auto_purge_done = خودکار صفائی نے ردی کی ٹوکری/جنک سے {count} پرانے پیغامات ہٹا دیے۔
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = تیار۔
+opening_message = پیغام کھولا جا رہا ہے...
+opening_message_already = پیغام کھولا جا رہا ہے... (پہلے سے لوڈ ہو رہا ہے)
+could_not_open_message = پیغام نہیں کھل سکا۔
+could_not_open_that_message = وہ پیغام نہیں کھل سکا۔
+could_not_load_message = یہ پیغام لوڈ نہیں ہو سکا۔
+message_still_loading = وہ پیغام ابھی لوڈ ہو رہا ہے۔
+folder_still_loading = یہ فولڈر ابھی لوڈ ہو رہا ہے -- ذرا دیر بعد دوبارہ کوشش کریں۔
+not_in_thread = یہ پیغام کسی تھریڈ کا حصہ نہیں ہے۔
+no_longer_in_thread = یہ پیغام اب تھریڈ میں نہیں ہے۔
+thread_position = اس تھریڈ میں {total} میں سے پیغام {position}۔
+thread_finished_one = یہ تھریڈ مکمل ہو گیا (1 پیغام)۔
+thread_finished_many = یہ تھریڈ مکمل ہو گیا ({count} پیغامات)۔
+select_message_first = پہلے ایک پیغام منتخب کریں۔
+conversation_failed = یہ گفتگو نہیں کھل سکی۔
+select_message_for_related = پہلے وہ پیغام منتخب کریں جس کے متعلقہ پیغامات دیکھنے ہیں۔
+looking_for_related = متعلقہ پیغامات تلاش کیے جا رہے ہیں...
+no_threading_headers = اس پیغام میں تلاش کے لیے کوئی Message-ID یا تھریڈ ہیڈر نہیں ہے۔
+reply_one_at_a_time = جواب ایک وقت میں ایک ہی پیغام پر کام کرتا ہے۔ براہ کرم ایک پیغام منتخب کریں۔
+select_message_to_reply = پہلے جواب دینے کے لیے ایک پیغام منتخب کریں۔
+preparing_reply = جواب تیار کیا جا رہا ہے...
+reply_load_failed = جواب کے لیے اصل پیغام لوڈ نہیں ہو سکا۔
+select_message_to_forward = پہلے آگے بھیجنے کے لیے ایک پیغام منتخب کریں۔
+preparing_forward = آگے بھیجنے کے لیے پیغام تیار کیا جا رہا ہے...
+forward_load_failed = آگے بھیجنے کے لیے پیغام لوڈ نہیں ہو سکا۔
+compose_tab_needed_hint = اس کمانڈ کے لیے تحریر کا ٹیب درکار ہے۔ پیغام لکھنے کے لیے Ctrl+N دبائیں۔
+open_message_first_view = پہلے ایک پیغام کھولیں، پھر اس کا منظر بدلنے کے لیے Ctrl+B دبائیں۔
+open_message_first_remote = پہلے ایک پیغام کھولیں، پھر اس کا بیرونی مواد لوڈ کرنے کے لیے Ctrl+Shift+I دبائیں۔
+
+# Acting on messages
+copying_message = پیغام کاپی ہو رہا ہے...
+copy_failed = کاپی ناکام ہو گئی۔
+delete_failed = حذف کرنا ناکام ہو گیا۔
+already_in_archive = پہلے سے آرکائیو میں ہے۔
+archiving = آرکائیو ہو رہا ہے...
+archive_failed = آرکائیو ناکام ہو گیا۔
+action_failed = {action} ناکام ہو گیا۔
+nothing_to_undo = کالعدم کرنے کے لیے کچھ نہیں۔
+undo_failed = {action} کالعدم نہیں ہو سکا۔
+
+# Views and folders
+folder_pane_all = فولڈر پین: تمام فولڈرز۔
+folder_pane_unified = فولڈر پین: متحد فولڈرز۔
+sorted_ascending = {field} کے لحاظ سے، صعودی ترتیب۔
+sorted_descending = {field} کے لحاظ سے، نزولی ترتیب۔
+unified_folders_updated = متحد فولڈرز اپ ڈیٹ ہو گئے۔
+zoom_reset = پیغام کے فونٹ کا سائز پہلے سے طے شدہ پر بحال کر دیا گیا۔
+folder_creating = فولڈر "{folder}" بنایا جا رہا ہے...
+folder_created = فولڈر "{folder}" بن گیا۔
+folder_create_failed = فولڈر نہیں بن سکا۔
+folder_renaming = "{folder}" کا نام بدل کر "{new_name}" کیا جا رہا ہے...
+folder_renamed = فولڈر کا نام بدل کر "{new_name}" کر دیا گیا۔
+folder_rename_failed = فولڈر کا نام نہیں بدلا جا سکا۔
+folder_deleting = فولڈر "{folder}" حذف ہو رہا ہے...
+folder_deleted = فولڈر حذف ہو گیا۔
+folder_delete_failed = فولڈر حذف نہیں ہو سکا۔
+folder_subscribing = "{folder}" کو سبسکرائب کیا جا رہا ہے...
+folder_unsubscribing = "{folder}" سے ان سبسکرائب کیا جا رہا ہے...
+folder_subscribed = سبسکرائب ہو گیا۔
+folder_unsubscribed = ان سبسکرائب ہو گیا۔
+folder_subscribe_failed = فولڈر کو سبسکرائب نہیں کیا جا سکا۔
+folder_unsubscribe_failed = فولڈر سے ان سبسکرائب نہیں کیا جا سکا۔
+
+# Accounts
+account_not_added = اکاؤنٹ شامل نہیں ہوا۔
+account_added = اکاؤنٹ شامل ہو گیا: {account}
+account_settings_not_saved = اکاؤنٹ کی ترتیبات محفوظ نہیں ہوئیں۔
+account_updated = اکاؤنٹ اپ ڈیٹ ہو گیا: {account}
+account_not_removed = اکاؤنٹ نہیں ہٹایا گیا۔
+account_removed = اکاؤنٹ ہٹا دیا گیا۔
+account_removed_with_files = اکاؤنٹ ہٹا دیا گیا۔ {count} مقامی فائلیں حذف کی گئیں۔
+default_account_failed = پہلے سے طے شدہ اکاؤنٹ مقرر نہیں ہو سکا۔
+default_account_set = {account} اب پہلے سے طے شدہ اکاؤنٹ ہے۔
+mute_not_saved = خاموش کرنے کی ترتیب محفوظ نہیں ہوئی۔
+account_muted = {account} خاموش کر دیا گیا۔
+account_unmuted = {account} کی آواز بحال کر دی گئی۔
+export_done = {count} اکاؤنٹس اور ترتیبات {path} میں برآمد کی گئیں۔
+import_done = {path} سے {count} اکاؤنٹس درآمد کیے گئے۔
+
+# Filters, cache and the background lists
+filters_not_saved = فلٹرز محفوظ نہیں ہوئے۔
+filters_saved = {account} کے لیے فلٹرز محفوظ ہو گئے۔
+filters_checking = {folder} کو آپ کے فلٹرز سے جانچا جا رہا ہے...
+filters_none_matched = ابھی چلائیں: {folder} میں کوئی پیغام کسی فعال اصول سے مطابقت نہیں رکھتا۔
+filters_run_failed = فلٹرز نہیں چل سکے۔
+filters_moving = {count} فلٹر شدہ پیغامات منتقل ہو رہے ہیں...
+filters_move_failures = فلٹرز: {count} پیغامات منتقل نہیں ہو سکے۔
+filters_moved = فلٹرز نے {folder} سے {count} پیغامات منتقل کیے۔
+filters_move_failed = فلٹر شدہ پیغامات منتقل نہیں ہو سکے۔
+cache_not_cleared = کیش صاف نہیں ہوا۔
+auto_cache_cleanup = خودکار کیش صفائی: {age} سے پرانے پیغامات۔
+phishing_update_failed = فشنگ کی فہرست اپ ڈیٹ نہیں ہو سکی: {error}
+blocklist_update_failed = بلاک لسٹ اپ ڈیٹ نہیں ہو سکی: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = پہلے ایک پیغام کھولیں، پھر اس طرح محفوظ کریں استعمال کریں۔
+saving_message = پیغام محفوظ ہو رہا ہے...
+save_file_failed = فائل محفوظ نہیں ہو سکی۔
+save_fetch_failed = محفوظ کرنے کے لیے پیغام حاصل نہیں ہو سکا۔
+open_message_first_print = پہلے ایک پیغام کھولیں، پھر پرنٹ استعمال کریں۔
+open_message_first_preview = پہلے ایک پیغام کھولیں، پھر پرنٹ کا پیش منظر استعمال کریں۔
+refreshing_accounts = {count} اکاؤنٹس تازہ کیے جا رہے ہیں...
+emptying_trash = {account} کی ردی کی ٹوکری خالی کی جا رہی ہے...
+trash_already_empty = ردی کی ٹوکری پہلے سے خالی تھی۔
+trash_emptied = ردی کی ٹوکری خالی کر دی گئی: {count} پیغامات مٹا دیے گئے۔
+empty_trash_failed = ردی کی ٹوکری خالی نہیں ہو سکی۔
+emptying_junk = {account} کا جنک خالی کیا جا رہا ہے...
+junk_already_empty = جنک پہلے سے خالی تھا۔
+junk_emptied = جنک خالی کر دیا گیا: {count} پیغامات مٹا دیے گئے۔
+junk_emptied_prefix = جنک خالی کر دیا گیا:
+junk_part_purged = {count} مٹا دیے گئے
+junk_part_in_trash = {count} ردی کی ٹوکری میں منتقل ہوئے مگر ہٹائے جانے کی تصدیق نہیں ہوئی، ردی کی ٹوکری دیکھیں
+junk_part_not_moved = {count} ردی کی ٹوکری میں منتقل نہیں ہوئے، ابھی جنک میں ہیں
+empty_junk_failed = جنک خالی نہیں ہو سکا۔
+working_offline = آف لائن کام ہو رہا ہے: ان باکس/بھیجے گئے/مسودات کی آخری ہم آہنگ نقل دکھائی جا رہی ہے۔
+back_online = دوبارہ آن لائن۔
+offline_sync_running = {account} کو آف لائن استعمال کے لیے ہم آہنگ کیا جا رہا ہے...
+offline_sync_done = ان باکس، بھیجے گئے اور مسودات میں {count} پیغامات آف لائن استعمال کے لیے ہم آہنگ کیے گئے۔
+offline_sync_failed = آف لائن ہم آہنگی ناکام ہو گئی: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = پہلے ایک پیغام منتخب کریں یا کھولیں۔
+select_or_open_message_ctrl_u = پہلے ایک پیغام منتخب کریں یا کھولیں، پھر Ctrl+U دبائیں۔
+no_sender_address = اس پیغام میں شامل کرنے کے لیے بھیجنے والے کا کوئی پتہ نہیں ہے۔
+contact_added = {contact} آپ کی ایڈریس بک میں شامل کر دیا گیا۔
+contact_already_there = {contact} پہلے سے آپ کی ایڈریس بک میں ہے۔
+privacy_saved = رازداری کی ترتیبات محفوظ ہو گئیں۔ انہیں لاگو کرنے کے لیے پیغام دوبارہ کھولیں۔
+message_font_size = پیغام کے فونٹ کا سائز: {size} پوائنٹ۔
+
+# Deleting and moving several messages
+deleting_one = پیغام مستقل طور پر حذف ہو رہا ہے
+deleting_many = {count} پیغامات مستقل طور پر حذف ہو رہے ہیں
+trashing_one = پیغام ردی کی ٹوکری میں منتقل ہو رہا ہے
+trashing_many = {count} پیغامات ردی کی ٹوکری میں منتقل ہو رہے ہیں
+undo_partly_restored = {action} کالعدم کیا گیا، لیکن {count} بحال نہیں ہو سکے -- ہو سکتا ہے اس دوران وہ دوبارہ منتقل، حذف یا ختم ہو گئے ہوں۔
+moves_report = {action}: {total} میں سے {moved} پیغامات منتقل ہوئے۔
+moves_report_failed = منتقل نہیں ہوئے، ابھی اصل فولڈر میں ہیں: {count}۔
+
+tray_tooltip_one = ZBox — 1 نہ پڑھا ہوا پیغام
+tray_tooltip_many = ZBox — {count} نہ پڑھے ہوئے پیغامات
+account_unreachable = {account} تک رسائی نہیں ہو سکی۔ اس کی خودکار جانچ {minutes} منٹ کے لیے رکی ہے۔
+auto_check_not_saved = خودکار جانچ کی ترتیب محفوظ نہیں ہوئی۔
+bulk_copy_failed = پیغامات کاپی نہیں ہو سکے۔
+bulk_copy_failed_status = کاپی ناکام رہی۔
+bulk_loading_archive = پیغامات ابھی لوڈ ہو رہے ہیں؛ تھوڑی دیر میں دوبارہ آرکائیو کریں۔
+bulk_loading_delete = پیغامات ابھی لوڈ ہو رہے ہیں؛ تھوڑی دیر میں دوبارہ حذف کریں۔
+bulk_loading_flag = پیغامات ابھی لوڈ ہو رہے ہیں؛ تھوڑی دیر میں دوبارہ جھنڈا لگائیں۔
+bulk_loading_generic = پیغامات ابھی لوڈ ہو رہے ہیں؛ تھوڑی دیر میں دوبارہ کوشش کریں۔
+bulk_none = کوئی پیغام منتخب نہیں۔
+bulk_none_archive = آرکائیو کرنے کے لیے کوئی پیغام منتخب نہیں۔
+bulk_none_delete = حذف کرنے کے لیے کوئی پیغام منتخب نہیں۔
+bulk_none_junk = جنک کے طور پر نشان زد کرنے کے لیے کوئی پیغام منتخب نہیں۔
+bulk_none_not_junk = جنک نہیں کے طور پر نشان زد کرنے کے لیے کوئی پیغام منتخب نہیں۔
+delete_refused_still = سرور نے حذف کرنے سے انکار کیا؛ یہ اب بھی {folder} میں ہے۔
+delete_refused_trash = یہ ردی کی ٹوکری میں ہے، لیکن سرور نے اسے مستقل حذف کرنے سے انکار کیا۔
+delete_resume_failed = پچھلے حذف سے {count} پیغامات حذف نہیں ہو سکے۔
+done_perm_delete_one = پیغام مستقل طور پر حذف ہو گیا۔
+done_trash_one = پیغام ردی کی ٹوکری میں منتقل ہو گیا۔
+filters_applied = {folder} میں {count} پیغامات پر فلٹرز لگ گئے۔
+filters_failed = فلٹرز نہیں چل سکے۔
+filters_running = {folder} پر فلٹرز چل رہے ہیں
+flag_failed = جھنڈے اپ ڈیٹ نہیں ہو سکے۔
+flag_updated = جھنڈے اپ ڈیٹ ہو گئے۔
+folder_verb_subscribing = سبسکرائب ہو رہا ہے:
+folder_verb_unsubscribing = ان سبسکرائب ہو رہا ہے:
+mark_read_failed = پیغامات پڑھے ہوئے نشان زد نہیں ہو سکے۔
+mark_unread_failed = پیغامات غیر پڑھے نشان زد نہیں ہو سکے۔
+notify_new_mail_body = {name} کے لیے {count} نئے {noun}۔
+notify_new_mail_title = نئی ڈاک
+notify_noun_many = پیغامات
+notify_noun_one = پیغام
+report_done = {verb}: {count} میں سے {done} پیغامات۔
+report_verb_deleted = حذف شدہ
+report_verb_permanent = مستقل طور پر حذف
+running_copy_many = {count} پیغامات کاپی ہو رہے ہیں
+running_copy_one = پیغام کاپی ہو رہا ہے
+running_junk_many = {count} پیغامات جنک کے طور پر نشان زد ہو رہے ہیں
+running_junk_one = جنک کے طور پر نشان زد ہو رہا ہے
+running_move_many = {count} پیغامات منتقل ہو رہے ہیں
+running_move_one = منتقل ہو رہا ہے
+running_not_junk_many = {count} پیغامات جنک نہیں کے طور پر نشان زد ہو رہے ہیں
+running_not_junk_one = جنک نہیں کے طور پر نشان زد ہو رہا ہے
+running_perm_delete_one = پیغام مستقل طور پر حذف ہو رہا ہے...
+running_read_many = {count} پیغامات پڑھے ہوئے نشان زد ہو رہے ہیں
+running_read_one = پڑھا ہوا نشان زد ہو رہا ہے
+running_trash_one = پیغام ردی کی ٹوکری میں منتقل ہو رہا ہے...
+running_unread_many = {count} پیغامات غیر پڑھے نشان زد ہو رہے ہیں
+running_unread_one = غیر پڑھا نشان زد ہو رہا ہے
+settings_saved_no_startup = ترتیبات محفوظ ہو گئیں۔ Windows اسٹارٹ اپ اندراج اپ ڈیٹ نہیں ہو سکا۔
+settings_saved_status = ترتیبات محفوظ ہو گئیں۔
+spam_blocked_sender = مسدود بھیجنے والا
+spam_possible_phishing = ممکنہ فشنگ
+undo_running_many = {action} واپس ہو رہا ہے ({count} پیغامات)
+undo_running_one = {action} واپس ہو رہا ہے
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = فائل
+bar_edit = ترمیم
+bar_view = منظر
+bar_message = پیغام
+bar_compose = تحریر
+bar_tools = اوزار
+bar_help = مدد
+
+# File
+file_new = نیا
+file_new_message = پیغام
+file_new_account = ای میل اکاؤنٹ...
+file_open_saved_message = محفوظ شدہ پیغام کھولیں...
+file_close = بند کریں
+file_save_message_as = پیغام اس طرح محفوظ کریں...
+file_get_new_for = نئے پیغامات حاصل کریں
+file_get_new_all = تمام اکاؤنٹس
+file_get_new_current = موجودہ اکاؤنٹ
+file_offline = آف لائن
+file_work_offline = آف لائن کام کریں
+file_sync_now = ابھی ہم آہنگ کریں
+file_print = پرنٹ...
+file_print_preview = پرنٹ کا پیش منظر...
+file_exit = باہر نکلیں
+
+# Edit
+edit_undo = کالعدم کریں
+edit_select_all = سب منتخب کریں
+edit_find_messages = پیغامات تلاش کریں...
+
+# Message
+message_reply = جواب دیں
+message_reply_all = سب کو جواب دیں
+message_forward = آگے بھیجیں
+message_archive = آرکائیو کریں
+message_delete = حذف کریں
+message_delete_permanently = مستقل طور پر حذف کریں
+message_mark = نشان زد کریں
+mark_read = پڑھا ہوا
+mark_unread = نہ پڑھا ہوا
+mark_flagged = جھنڈا لگا ہوا
+mark_junk = جنک
+mark_not_junk = جنک نہیں
+message_watch_thread = تھریڈ کی نگرانی کریں
+message_ignore_thread = تھریڈ نظر انداز کریں
+message_open_conversation = پیغام گفتگو میں کھولیں
+message_show_related = متعلقہ پیغامات دکھائیں
+message_add_sender_to_address_book = بھیجنے والے کو ایڈریس بک میں شامل کریں
+message_announce_sender = بھیجنے والے کا اعلان کریں
+message_announce_copy_sender = بھیجنے والے کا اعلان کریں اور پتہ کاپی کریں
+
+# View
+view_folders = فولڈرز
+folders_all = تمام
+folders_unified = متحد
+folders_jump_inbox = ان باکس کی پیغامات کی فہرست پر جائیں
+folders_configure_unified = متحد فولڈرز ترتیب دیں...
+view_sort_by = ترتیب بلحاظ
+sort_date = تاریخ
+sort_subject = موضوع
+sort_from = بھیجنے والا
+sort_descending = نزولی (نئے پہلے)
+sort_ascending = صعودی (پرانے پہلے)
+view_threads = تھریڈز
+threads_all = تمام
+threads_watched = زیرِ نگرانی تھریڈز
+threads_ignored = نظر انداز تھریڈز
+threads_expand_all = تمام تھریڈز پھیلائیں
+threads_collapse_all = تمام تھریڈز سمیٹیں
+view_load_more = مزید پیغامات لوڈ کریں
+view_toggle_message_view = متن اور HTML منظر کے درمیان تبدیل کریں
+view_show_remote_content = اس پیغام میں بیرونی مواد دکھائیں
+view_message_zoom = پیغام زوم
+zoom_increase = پیغام کے فونٹ کا سائز بڑھائیں
+zoom_decrease = پیغام کے فونٹ کا سائز گھٹائیں
+zoom_reset = پیغام کے فونٹ کا سائز بحال کریں
+
+# Compose
+compose_send = بھیجیں
+compose_save_draft = مسودہ محفوظ کریں
+compose_attach = فائل منسلک کریں...
+compose_fmt_bold = جلی
+compose_fmt_italic = ترچھا
+compose_fmt_strike = کٹا ہوا
+compose_fmt_bullet = بلٹ فہرست
+compose_fmt_number = نمبر وار فہرست
+compose_fmt_quote = اقتباس
+compose_fmt_code = کوڈ
+compose_fmt_heading1 = سرخی
+compose_link = لنک داخل کریں...
+compose_formatting = یہاں کی فارمیٹنگ
+compose_spellcheck = املا جانچیں...
+compose_spellcheck_next = اگلی املا کی غلطی
+compose_spellcheck_add = لفظ لغت میں شامل کریں
+compose_insert_signature = دستخط داخل کریں
+compose_paste_quotation = اقتباس کے طور پر چسپاں کریں
+compose_word_count = الفاظ کی گنتی
+compose_preview = پیش منظر...
+compose_diagnostics = تحریری ایڈیٹر کی جانچ...
+compose_edit_signature = دستخط میں ترمیم کریں...
+compose_hotkeys_diagnostic = ہاٹ کیز کی جانچ
+
+# Tools
+tools_account_settings = اکاؤنٹ کی ترتیبات...
+tools_mute_account = اکاؤنٹ خاموش کریں
+tools_disable_account = اکاؤنٹ غیر فعال کریں
+tools_remove_account = اکاؤنٹ ہٹائیں...
+tools_address_book = ایڈریس بک...
+tools_message_filters = پیغام فلٹرز...
+tools_import = اکاؤنٹس اور ترتیبات درآمد کریں...
+tools_export = اکاؤنٹس اور ترتیبات برآمد کریں...
+tools_cache_cleanup = کیش صفائی کی ترتیب...
+tools_privacy = رازداری اور مواد کی بندش...
+tools_settings = ترتیبات...
+
+# Help
+help_shortcuts = کی بورڈ شارٹ کٹس...
+help_about = ZBox کے بارے میں...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = نیا اکاؤنٹ...
+tree_account_settings = اکاؤنٹ کی ترتیبات...
+tree_mute_account = اکاؤنٹ خاموش کریں
+tree_enable_account = اکاؤنٹ فعال کریں
+tree_disable_account = اکاؤنٹ غیر فعال کریں
+tree_set_default_account = پہلے سے طے شدہ اکاؤنٹ بنائیں
+tree_remove_account = اکاؤنٹ ہٹائیں...
+tree_refresh = تازہ کریں
+tree_new_folder = نیا فولڈر...
+tree_empty_trash = ردی کی ٹوکری خالی کریں
+tree_empty_junk = جنک خالی کریں
+tree_rename_folder = فولڈر کا نام بدلیں...
+tree_delete_folder = فولڈر حذف کریں...
+tree_subscribe_folder = فولڈر سبسکرائب کریں
+tree_unsubscribe_folder = فولڈر سے ان سبسکرائب کریں
+
+# The message list menu, opened the same two ways
+list_select_all = سب منتخب کریں
+list_reply = جواب دیں
+list_reply_all = سب کو جواب دیں
+list_forward = آگے بھیجیں
+list_mark = نشان زد کریں
+list_archive = آرکائیو کریں
+list_delete_to_trash = حذف کریں (ردی کی ٹوکری میں منتقل کریں)
+list_delete_permanently = مستقل طور پر حذف کریں
+list_move_to = منتقل کریں
+list_copy_to = کاپی کریں
+
+# The notification area icon
+tray_open = ZBox کھولیں
+tray_unread_one = 1 نہ پڑھا ہوا پیغام
+tray_unread_many = {count} نہ پڑھے ہوئے پیغامات
+tray_no_unread = کوئی نہ پڑھا ہوا پیغام نہیں
+tray_settings = ترتیبات...
+tray_quit = ZBox بند کریں
+
+# The formatting menu inside a message you are writing
+format_bold = جلی
+format_italic = ترچھا
+format_strike = کٹا ہوا
+format_bullet = بلٹ فہرست
+format_number = نمبر وار فہرست
+format_quote = اقتباس
+format_code = کوڈ
+format_heading1 = سرخی
+format_insert_link = لنک داخل کریں...
+format_formatting_here = یہاں کی فارمیٹنگ
+tools_enable_account = اکاؤنٹ فعال کریں
+tools_pause_auto_check = خودکار جانچ روکیں
+tree_pause_auto_check = خودکار جانچ روکیں
+edit_undo_action = {action} واپس کریں
+
+[dialogs]
+set_theme_restart_confirm = تھیم کی تبدیلی لاگو کرنے کے لیے ZBox دوبارہ شروع کریں؟
+set_ui_theme_label = انٹرفیس تھیم:
+set_ui_theme_note = مینیو، فہرستوں، ڈائیلاگ اور پیغامات کے متن والے منظر کے رنگ۔ "سسٹم کے مطابق" Windows کا روشن یا گہرا ایپ موڈ استعمال کرتا ہے۔ آدھی رات کا نیلا، گرم گہرا اور نرم کنٹراسٹ ہلکے رنگوں والے گہرے تھیم ہیں۔ HTML پیغامات اپنے رنگ برقرار رکھتے ہیں، اور Windows ہائی کنٹراسٹ کو ہمیشہ ترجیح حاصل ہے۔ اگلی بار ZBox شروع ہونے پر لاگو ہوگا۔
+set_theme_system = سسٹم کے مطابق
+set_theme_light = روشن
+set_theme_dark = گہرا
+set_theme_midnight = آدھی رات کا نیلا
+set_theme_warm = گرم گہرا
+set_theme_soft = نرم کنٹراسٹ
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith سے رابطہ
+title_identity = شناخت
+title_show_password = پاس ورڈ دکھائیں
+title_missing_information = معلومات نامکمل
+title_unsupported_provider = غیر معاون فراہم کنندہ
+title_test_connection = کنکشن جانچیں
+title_new_contact = نیا رابطہ
+title_edit_contact = رابطے میں ترمیم
+title_delete_contact = رابطہ حذف کریں
+title_import_contacts = رابطے درآمد کریں
+title_export_contacts = رابطے برآمد کریں
+title_rename_group = گروپ کا نام بدلیں
+title_delete_group = گروپ حذف کریں
+title_send = بھیجیں
+title_send_failed = بھیجنا ناکام
+title_attach_file = فائل منسلک کریں
+title_save_draft = مسودہ محفوظ کریں
+title_documentation = ZBox دستاویزات
+title_open_link = لنک کھولیں
+title_filter_rule = فلٹر کا اصول
+title_master_password = ماسٹر پاس ورڈ
+title_attachment_saved = منسلکہ محفوظ ہو گیا
+title_attachments_saved = منسلکات محفوظ ہو گئے
+title_download_failed = ڈاؤن لوڈ ناکام
+title_print = پرنٹ
+title_print_preview = پرنٹ کا پیش منظر
+title_related_messages = متعلقہ پیغامات
+title_search = تلاش
+title_unlock = لاک کھولیں
+title_unlock_methods = لاک کھولنے کے طریقے
+title_desktop_shortcut = ڈیسک ٹاپ شارٹ کٹ
+title_spell_check = املا کی جانچ
+title_plain_text_password = سادہ متن پاس ورڈ ملا
+title_startup_error = ZBox شروع کرنے میں خرابی
+
+identity_email_required = ای میل پتہ درج کریں۔
+
+wizard_password_not_shown = اس سسٹم پر پاس ورڈ دکھایا نہیں جا سکتا۔ یہ پھر بھی معمول کے مطابق ٹائپ اور محفوظ ہوتا ہے۔
+wizard_email_required = آگے بڑھنے سے پہلے درست ای میل پتہ درج کریں۔
+wizard_test_needs_server = جانچنے سے پہلے لاگ ان ای میل اور آنے والا سرور درج کریں۔
+wizard_test_succeeded = کنکشن کامیاب۔ ان باکس میں {count} پیغام ملے۔
+
+contact_email_required = ای میل پتہ لازمی ہے۔
+contact_select_to_edit = ترمیم کے لیے ایک رابطہ منتخب کریں۔
+contact_select_to_delete = حذف کرنے کے لیے ایک رابطہ منتخب کریں۔
+contact_delete_confirm = {label} کو ایڈریس بک سے حذف کریں؟
+contacts_import_choose_file = درآمد کے لیے ‎.vcf (vCard) یا ‎.csv فائل منتخب کریں۔
+contacts_imported = {count} رابطے درآمد کیے گئے۔
+contacts_import_empty = اس فائل میں کوئی رابطہ نہیں ملا۔
+contacts_none_to_export = برآمد کرنے کے لیے کوئی رابطہ نہیں ہے۔
+contacts_exported = {count} رابطے یہاں برآمد کیے گئے:\n{path}
+group_name_exists = "{name}" نام کا گروپ پہلے سے موجود ہے۔
+group_delete_confirm = گروپ "{name}" حذف کریں؟ اس کے رابطے حذف نہیں ہوں گے۔
+
+send_no_account = بھیجنے سے پہلے اکاؤنٹ شامل کریں، یا بھیجنے والا میں ایک منتخب کریں۔
+send_no_recipient = بنام میں کم از کم ایک وصول کنندہ درج کریں۔
+draft_no_account = مسودہ محفوظ کرنے سے پہلے اکاؤنٹ شامل کریں، یا بھیجنے والا میں ایک منتخب کریں۔
+attached_file = منسلک: {name}\n\nبھیجتے وقت {count} فائلیں منسلک ہوں گی۔
+
+documentation_copied = ZBox کی مکمل دستاویزات کلپ بورڈ پر کاپی کر دی گئیں۔
+
+filter_rule_needs_name = اس اصول کو ایک نام دیں۔
+filter_rule_needs_condition = کم از کم ایک شرط مقرر کریں (بھیجنے والا، بنام یا موضوع)۔
+filter_rule_needs_action = کم از کم ایک عمل منتخب کریں: پڑھا ہوا نشان زد کریں، جھنڈا لگائیں، یا کسی فولڈر میں منتقل کریں۔
+
+master_password_set = ماسٹر پاس ورڈ مقرر ہو گیا۔ اسے کسی محفوظ جگہ رکھیں: ZBox ہر نئے کمپیوٹر پر ایک بار اسے مانگتا ہے، اور کھو جانے پر اسے بحال نہیں کیا جا سکتا۔
+master_password_offer = ماسٹر پاس ورڈ کے بغیر، محفوظ شدہ اکاؤنٹ پاس ورڈز صرف اسی کمپیوٹر اور اسی Windows اکاؤنٹ پر پڑھے جا سکتے ہیں۔ ZBox کو کہیں اور کاپی کریں تو ہر اکاؤنٹ میں دوبارہ سائن ان کرنا ہو گا۔\n\nابھی ایک مقرر کریں؟
+
+attachment_saved = منسلکہ یہاں محفوظ ہوا:\n{path}
+attachments_saved = {count} منسلکات یہاں محفوظ ہوئے:\n{path}
+
+shortcut_created_settings = شارٹ کٹ بن گیا:\n{path}\n\nیہ ZBox کو یہاں سے شروع کرتا ہے:\n{base}
+
+spellcheck_no_dictionary = املا کی لغت موجود نہیں، اس لیے ZBox کی اس نقل میں املا کی جانچ دستیاب نہیں ہے۔
+spellcheck_none_found = املا کی کوئی غلطی نہیں ملی۔
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = اس کمپیوٹر پر ایک پاس کی ترتیب دیں اور دوسرے کمپیوٹر سے محفوظ شدہ کو بھول جائیں؟\n\nWindows آپ سے Hello کے ذریعے تصدیق کرنے کو کہے گا۔ دوسرے کمپیوٹر پر رہ جانے والی پرانی پاس کی وہاں جوں کی توں رہے گی اور اگر آپ یہ فولڈر وہاں واپس لے جائیں تو کام کرتی رہے گی، لیکن اسے دوبارہ ترتیب دینا ہو گا۔
+unlock_replace_passkey_many = اس کمپیوٹر پر ایک پاس کی ترتیب دیں اور دوسرے کمپیوٹرز سے محفوظ شدہ {count} کو بھول جائیں؟\n\nWindows آپ سے Hello کے ذریعے تصدیق کرنے کو کہے گا۔ دوسرے کمپیوٹر پر رہ جانے والی پرانی پاس کیز وہاں جوں کی توں رہیں گی اور اگر آپ یہ فولڈر وہاں واپس لے جائیں تو کام کرتی رہیں گی، لیکن انہیں دوبارہ ترتیب دینا ہو گا۔
+unlock_method_works = یہ طریقہ کام کرتا ہے۔
+
+plain_text_password_found = data\config\himalaya.toml میں ابھی بھی ایک پرانی اکاؤنٹ ترتیب سے سادہ متن پاس ورڈ (auth.raw) موجود ہے۔\n\nوہ اکاؤنٹ ہٹا کر دوبارہ شامل کریں، یا data\config\himalaya.toml حذف کریں، تاکہ یہ محفوظ اسناد کے ذخیرے کے ساتھ دوبارہ بن جائے۔
+
+# main_frame's titles.
+title_account_list_unavailable = اکاؤنٹس کی فہرست دستیاب نہیں
+title_open_message = پیغام کھولیں
+title_run_filters = فلٹرز چلائیں
+title_clear_cache = آف لائن پیغامات کا کیش صاف کریں
+title_remove_account = اکاؤنٹ ہٹائیں
+title_new_folder = نیا فولڈر
+title_rename_folder = فولڈر کا نام بدلیں
+title_delete_folder = فولڈر حذف کریں
+title_subscribe = سبسکرائب
+title_unsubscribe = ان سبسکرائب
+title_open_saved_message = محفوظ شدہ پیغام کھولیں
+title_save_message_as = پیغام اس طرح محفوظ کریں
+title_empty_trash = ردی کی ٹوکری خالی کریں
+title_empty_junk = جنک خالی کریں
+title_synchronize_offline = آف لائن کے لیے ہم آہنگ کریں
+title_export_accounts = اکاؤنٹس اور ترتیبات برآمد کریں
+title_import_accounts = اکاؤنٹس اور ترتیبات درآمد کریں
+title_show_related = متعلقہ پیغامات دکھائیں
+title_reply = جواب دیں
+title_forward = آگے بھیجیں
+title_undo = کالعدم کریں
+title_delete_permanently = مستقل طور پر حذف کریں
+title_delete = حذف کریں
+title_copy_to = کاپی کریں
+title_archive = آرکائیو کریں
+title_accounts_locked = اکاؤنٹس مقفل ہیں
+
+select_account_first = پہلے درخت میں ایک اکاؤنٹ منتخب کریں۔
+select_account_or_folder = پہلے ایک اکاؤنٹ یا فولڈر منتخب کریں۔
+filters_left_behind = {count} پیغامات کسی فلٹر سے مطابقت رکھتے ہیں لیکن ابھی {folder} میں ہیں۔
+cache_clear_confirm = تمام اکاؤنٹس کے لیے آف لائن پیغامات کا کیش صاف کریں؟\n\nاس سے صرف ZBox کی مقامی نقلیں حذف ہوتی ہیں۔ کسی میل سرور سے کچھ نہیں ہٹایا جاتا، اور ضرورت پڑنے پر پیغامات دوبارہ ڈاؤن لوڈ ہو جاتے ہیں۔
+account_remove_confirm = {name} ({address}) ہٹائیں؟\n\nسرور پر موجود میل حذف نہیں ہوتی۔\nاس کمپیوٹر پر ڈاؤن لوڈ کی گئی نقلیں حذف ہو جاتی ہیں۔\nمحفوظ شدہ پاس ورڈ حذف ہو جاتا ہے۔
+folder_delete_confirm = {address} کے لیے فولڈر "{folder}" اور اس میں موجود سب کچھ مستقل طور پر حذف کریں؟\n\nاسے کالعدم نہیں کیا جا سکتا۔
+empty_trash_confirm = {address} کی ردی کی ٹوکری کے تمام پیغامات مستقل طور پر حذف کریں؟\n\nاسے کالعدم نہیں کیا جا سکتا۔
+empty_junk_confirm = {address} کے جنک کے تمام پیغامات مستقل طور پر حذف کریں؟\n\nاسے کالعدم نہیں کیا جا سکتا۔
+sync_select_account = آف لائن استعمال کے لیے ہم آہنگ کرنے کو ایک اکاؤنٹ منتخب کریں (متحد فولڈر نہیں)۔
+accounts_imported = {count} اکاؤنٹس درآمد کیے گئے:\n\n{names}\n\nپاس ورڈز کبھی برآمد نہیں ہوتے، اور خفیہ کردہ پاس ورڈ کا ذخیرہ اسی Windows صارف اکاؤنٹ سے مخصوص ہے، اس لیے ہر درآمد شدہ اکاؤنٹ کے جڑنے سے پہلے اس کا پاس ورڈ ایک بار اکاؤنٹس > اکاؤنٹ کی ترتیبات میں درج کرنا ہو گا۔
+accounts_import_none = اس فائل میں کوئی اکاؤنٹ نہیں ملا۔ اگر فائل میں ترتیبات تھیں تو وہ پھر بھی درآمد کر لی گئیں۔
+delete_permanently_confirm_one = یہ پیغام مستقل طور پر حذف کریں؟ یہ ردی کی ٹوکری کو چھوڑ دیتا ہے اور اسے کالعدم نہیں کیا جا سکتا۔
+accounts_locked = محفوظ شدہ اکاؤنٹ پاس ورڈز کسی دوسرے کمپیوٹر پر لکھے گئے تھے، اس لیے یہاں پڑھے نہیں جا سکتے۔\n\nہر اکاؤنٹ کو اپنے میل سرور پر دوبارہ سائن ان کرنا ہو گا۔ اگلی بار اس سے بچنے کے لیے، جس کمپیوٹر پر اکاؤنٹس پہلے سے کام کر رہے ہیں وہاں ترتیبات، ایپ اور ڈیٹا کی حفاظت سے ماسٹر پاس ورڈ مقرر کریں۔
+master_password_remove_confirm = ماسٹر پاس ورڈ ہٹائیں؟ پھر محفوظ شدہ اکاؤنٹ پاس ورڈز صرف اسی کمپیوٹر اور اسی Windows اکاؤنٹ پر پڑھے جا سکیں گے۔ اس کے بعد ZBox کو کہیں اور کاپی کریں تو ہر اکاؤنٹ میں دوبارہ سائن ان کرنا ہو گا۔\n\nابھی ہٹائیں؟
+shortcut_offer = ڈیسک ٹاپ پر ZBox کا شارٹ کٹ رکھیں؟\n\nیہ اس ZBox فولڈر کو شروع کرے گا:\n{path}\n\nشارٹ کٹ یہی مقام محفوظ کرتا ہے۔ اگر آپ بعد میں ZBox فولڈر منتقل کریں تو ترتیبات، سسٹم ٹرے اور ونڈو کھولیں، اور نئی جگہ کی طرف اشارہ کرنے کے لیے ڈیسک ٹاپ شارٹ کٹ بنائیں دوبارہ منتخب کریں۔
+shortcut_created = شارٹ کٹ بن گیا:\n{path}
+set_language_restart_confirm = زبان کی تبدیلی لاگو کرنے کے لیے ZBox دوبارہ شروع کریں؟
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = ظاہری نام
+form_email_address = ای میل پتہ
+form_your_name = آپ کا نام
+form_login_email = لاگ ان ای میل
+form_password = پاس ورڈ
+srv_imap_host = آنے والا (IMAP) سرور
+srv_imap_port = آنے والی پورٹ
+srv_imap_encryption = آنے والی خفیہ کاری
+srv_smtp_host = جانے والا (SMTP) سرور
+srv_smtp_port = جانے والی پورٹ
+srv_smtp_encryption = جانے والی خفیہ کاری
+
+acct_login_email_label = لاگ ان ای میل (سائن ان کے لیے استعمال ہوتی ہے)
+acct_new_password_label = نیا پاس ورڈ (موجودہ رکھنے کے لیے خالی چھوڑیں)
+acct_new_password_name = نیا پاس ورڈ
+acct_identity_email_label = ای میل پتہ (بھیجنے اور وصول کرنے کے لیے استعمال ہوتا ہے)
+acct_identities_label = اضافی شناختیں (متبادل نام)
+acct_identities_name = اضافی شناختیں
+acct_add_identity = شناخت شامل کریں...
+acct_edit_identity = شناخت میں ترمیم کریں...
+acct_remove_identity = شناخت ہٹائیں
+acct_signature = دستخط
+acct_edit_signature = دستخط میں ترمیم کریں...
+acct_junk_folder = جنک فولڈر
+acct_account_status = اکاؤنٹ کی حالت
+acct_disable_account = یہ اکاؤنٹ غیر فعال کریں
+acct_default_account = پہلے سے طے شدہ اکاؤنٹ
+acct_set_default = پہلے سے طے شدہ اکاؤنٹ بنائیں
+acct_notifications = نئی میل کی اطلاعات
+acct_mute_notifications = اس اکاؤنٹ کی اطلاعات خاموش کریں
+acct_server_settings = سرور کی ترتیبات
+
+wiz_before_you_start = شروع کرنے سے پہلے
+wiz_notice_name = اہم اطلاع
+wiz_google_instructions = Google ایپ پاس ورڈ کی ہدایات کھولیں
+wiz_intro = آپ کا نام اور ای میل پتہ
+wiz_login_same = لاگ ان ای میل اوپر والے ای میل پتے جیسی ہی ہے
+wiz_show_password = پاس ورڈ دکھائیں
+wiz_preset_applied = {name} کے لیے پہلے سے طے شدہ ترتیب لاگو کی گئی۔
+wiz_summary_name = اکاؤنٹ کا خلاصہ
+wiz_review = جائزہ لیں، پھر یہ اکاؤنٹ محفوظ کرنے کے لیے ختم پر کلک کریں۔
+wiz_test_connection = کنکشن جانچیں
+wiz_testing = کنکشن جانچا جا رہا ہے...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (ڈیبگ لاگنگ فعال کریں، محفوظ ہوتی ہے: data\logs)
+set_language_label = انٹرفیس کی زبان:
+set_language_label_only_english = انٹرفیس کی زبان: (صرف انگریزی)
+set_headers_checkbox = کھلے پیغام کے اوپر پیغام کے ہیڈرز دکھائیں
+set_zoom_label = پیغام کا فونٹ اور زوم:
+set_font_override = پیغام کے فونٹ کا پہلے سے طے شدہ سائز بدلیں
+set_font_size_name = پیغام کے فونٹ کا سائز (پوائنٹس)
+set_reading_font_name = پڑھنے کا فونٹ
+set_reading_font_label = پڑھنے کا فونٹ (پہلے سے طے شدہ کے لیے خالی):
+set_view_label = پیغام کھولتے وقت متن کا منظر:
+set_view_text = متن
+set_view_html = HTML (رینڈر شدہ)
+set_engine_label = HTML رینڈرنگ انجن:
+set_engine_edge = Edge / WebView2 (جدید رینڈرنگ)
+set_engine_ie = پرانا MSHTML (اسکرین ریڈر کی بہترین معاونت)
+set_runtime_label = WebView2 رن ٹائم:
+set_runtime_auto = خودکار — اگر موجود ہو تو شامل رن ٹائم استعمال کریں (تجویز کردہ)
+set_runtime_fixed = صرف شامل مقررہ ورژن
+set_runtime_evergreen = سسٹم کا رن ٹائم (Windows اپ ڈیٹ کرتا ہے)
+set_sr_box = اسکرین ریڈر کے اعلانات کا کنٹرول
+set_silence_label = HTML میں اسکرین ریڈر کی خاموشی کا وقفہ:
+set_silence_name = HTML میں اسکرین ریڈر کی خاموشی کا وقفہ، ملی سیکنڈز میں
+set_focus_delay_label = WebView رسائی فوکس کی تاخیر:
+set_focus_delay_name = WebView رسائی فوکس کی تاخیر، درجہ 1 سے 10
+set_announce_label = اعلان کا دورانیہ:
+set_announce_name = اعلان کا دورانیہ ملی سیکنڈز میں
+set_announce_actions = پیغام کے اعمال کا اعلان کریں
+set_attachment_dir_label = منسلکات محفوظ کرنے کا فولڈر:
+set_attachment_dir_name = منسلکات محفوظ کرنے کا فولڈر
+set_browse = براؤز…
+set_autosave_label = مسودے کی خودکار محفوظ کاری کا وقفہ:
+set_autosave_name = مسودے کی خودکار محفوظ کاری کا وقفہ سیکنڈز میں
+set_auto_purge_label = پرانی ردی کی ٹوکری اور جنک کی خودکار صفائی:
+set_auto_purge_name = اتنے دنوں بعد ردی کی ٹوکری اور جنک خود بخود صاف کریں
+set_bare_keys = پیغامات کی فہرست میں ایک کلید والے شارٹ کٹس S (جھنڈا)، A (آرکائیو)، J (جنک نشان زد)/Shift+J (جنک نہیں نشان زد)، W (تھریڈ کی نگرانی) اور K (تھریڈ نظر انداز) فعال کریں
+set_sound_label = آواز اور اطلاعات:
+set_sounds_enabled = اطلاع کی آوازیں چلائیں
+set_desktop_notifications = نئی میل کے لیے ڈیسک ٹاپ اطلاعات دکھائیں
+set_theme_label = آوازوں کا تھیم بدلیں:
+set_theme_label_only_default = آوازوں کا تھیم بدلیں: (صرف پہلے سے طے شدہ تھیم)
+set_security_box = ایپ اور ڈیٹا کی حفاظت
+set_lock_on_quit = ZBox مکمل بند ہونے پر اسے مقفل کریں
+set_unlock_methods_button = لاک کھولنے کے طریقے…
+set_master_password_button = ماسٹر پاس ورڈ…
+set_tray_label = سسٹم ٹرے اور ونڈو:
+set_minimize_to_tray = سسٹم ٹرے میں چھوٹا کریں
+set_close_to_tray = سسٹم ٹرے میں بند کریں
+set_stay_maximized = ZBox کو ہمیشہ بڑا رکھیں
+set_run_at_startup = Windows شروع ہونے پر ZBox چلائیں
+set_desktop_shortcut_button = ڈیسک ٹاپ شارٹ کٹ بنائیں
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = اگر کچھ غلط ہو جائے تو ڈیبگ لاگنگ مسائل کی تشخیص میں مدد کرتی ہے۔ اسے بند کرنے سے نئے اندراجات لکھے جانا بند ہو جاتے ہیں؛ موجودہ لاگ فائلیں حذف نہیں ہوتیں۔ ZBox اگلی بار شروع ہونے پر لاگو ہوتا ہے۔
+set_language_note = ZBox اگلی بار شروع ہونے پر لاگو ہوتا ہے۔ زبان کی فائلیں ZBox کے lang فولڈر میں، sounds فولڈر کے ساتھ، سادہ متن فائلیں ہیں۔ نئی زبان شامل کرنے کے لیے en فولڈر کاپی کریں، کاپی اور اس کے اندر کی ‎.lang فائل کا نام اپنی زبان کے کوڈ پر رکھیں، اور ہر برابر کے نشان کے دائیں طرف کا متن ترجمہ کریں۔ جو ابھی ترجمہ نہیں ہوا وہ خاموش رہنے کے بجائے انگریزی میں بولا جاتا ہے، اس لیے ادھوری فائل استعمال کرنا محفوظ ہے۔
+set_headers_note = بھیجنے والا، بنام، Cc، تاریخ اور موضوع، متن اور HTML دونوں مناظر میں پیغام کے متن کے اوپر دکھائے جاتے ہیں۔ اس کے بغیر ٹیب بند کر کے فہرست پر واپس گئے بغیر پیغام کے اندر سے یہ جاننے کا کوئی طریقہ نہیں کہ اسے کس نے بھیجا۔ فوکس پھر بھی پیغام کے متن پر آتا ہے؛ ہیڈرز کا حصہ ایک Shift+Tab کے فاصلے پر ہے۔ اگلی بار پیغام کھلنے پر لاگو ہوتا ہے۔
+set_zoom_note = کھلے پیغام کے اپنے متن کو، باقی ZBox اور Windows کے اپنے ڈسپلے اسکیلنگ سے الگ، بڑا یا چھوٹا کرتا ہے۔ متن اور HTML دونوں مناظر پر لاگو ہوتا ہے۔ “پڑھنے کا فونٹ” اختیاری طور پر پیغام کے متن کے لیے کوئی خاص فونٹ (مثلاً Consolas، OpenDyslexic) نافذ کرتا ہے؛ عام فونٹ رکھنے کے لیے خالی چھوڑیں۔ منظر مینو میں Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 یہ ڈائیلاگ کھولے بغیر صرف فونٹ کا سائز بڑھاتے، گھٹاتے یا بحال کرتے ہیں، اور ہر کھلے پیغام پر فوراً لاگو ہوتے ہیں۔ یہاں کی گئی تبدیلیاں بھی OK دبانے پر فوراً لاگو ہوتی ہیں۔
+set_view_note = HTML پہلے سے طے شدہ ہے۔ یہ پیغام کو ویسا ہی دکھاتا ہے جیسا بھیجا گیا تھا، اور NVDA اور JAWS اسے پڑھتے ہیں: جب کوئی HTML صفحہ کھلتا ہے تو ZBox براؤزر کا اپنا اعلان خاموش کرتا ہے، پڑھنے کا کرسر پیغام کی پہلی سطر پر رکھتا ہے، اور ZBox کے اپنے شارٹ کٹس صفحے کے اندر کام کرتے رکھتا ہے، بشمول F6 جو فوکس کو اس سے باہر لے جاتا ہے۔ متن وہی پیغام ایک عام ترمیمی کنٹرول میں سادہ، بغیر فارمیٹنگ کے متن کے طور پر دکھاتا ہے -- نہ تصاویر، نہ ترتیب، اور نصب شدہ براؤزر انجن پر کوئی انحصار نہیں۔ کھلے پیغام کے اندر دونوں میں تبدیل کرنے کے لیے Ctrl+B دبائیں۔
+set_engine_note = Edge جدید CSS رینڈر کرتا ہے لیکن صفحہ الگ پروسیس میں چلاتا ہے، اور اپنا مواد اسکرین ریڈر کو صرف ایسے انٹرفیس کے ذریعے دیتا ہے جس تک wxPython نہیں پہنچ سکتا -- اس لیے پیغام ایسے کھل سکتا ہے کہ اس میں پڑھنے کے قابل کچھ نہ ہو۔ پرانا MSHTML وہ انجن ہے جو Outlook Express اور Windows Mail استعمال کرتے تھے: یہ اسی پروسیس میں چلتا ہے اور عام دستاویزی درخت شائع کرتا ہے، اس لیے NVDA اور JAWS اسے کسی بھی ویب صفحے کی طرح براؤز موڈ میں پڑھتے ہیں۔ اگلی بار پیغام کھلنے پر لاگو ہوتا ہے۔
+set_runtime_note = سسٹم کا رن ٹائم Windows Update کے ذریعے برقرار رکھا جاتا ہے، اس لیے آپ کی میل پڑھنے والا انجن بغیر اطلاع بدل سکتا ہے — یوں ایک کام کرتا ہوا HTML پیغام منظر ایسی مشین پر خراب ہو سکتا ہے جہاں ZBox میں کچھ نہیں بدلا۔ deps فولڈر میں شامل نقل بالکل وہی ورژن مقرر کرتی ہے جس پر ZBox کی جانچ کی گئی تھی۔ اسے نصب کرنے کے لیے tools\get_webview2.bat چلائیں۔ اگر کوئی شامل نقل موجود نہ ہو تو ZBox بہرحال سسٹم کا رن ٹائم استعمال کرتا ہے، اس لیے یہ ہمیشہ شروع ہوتا ہے۔ ZBox اگلی بار شروع ہونے پر لاگو ہوتا ہے۔
+set_sr_intro = پیغام کھلتے وقت ZBox آپ کے اسکرین ریڈر کو کتنا بولنے دیتا ہے، اور ZBox کے اپنے بولے گئے اعلانات کتنی دیر نظر آتے ہیں۔
+set_silence_note = جب کوئی HTML پیغام کھلتا ہے تو ZBox اسکرین ریڈر کے براؤزر اعلان کو خاموش کرنے کے لیے 2 سیکنڈ تک ایک مصنوعی Ctrl دبائے رکھ سکتا ہے۔ پیغام کا موضوع پہلے ہی صفحے کے عنوان کے طور پر استعمال ہوتا ہے، جو base64 URL کو بلند آواز میں پڑھے جانے سے روکتا ہے، لیکن ریڈر پھر بھی پیغام کے آغاز پر کنٹرول اور دستاویز کی قسم کا اعلان کرتا ہے، اس لیے یہ پہلے سے آن ہے۔ بند کرنے کے لیے 0 کریں، یا اگر فالتو گفتگو اب بھی آئے تو بڑھائیں۔
+set_focus_delay_note = جب کوئی HTML پیغام لوڈ ہو جاتا ہے تو ZBox اسے واقعی فوکس دینے سے پہلے اتنی دیر انتظار کرتا ہے۔ WebView2 کا صفحہ لوڈ ہونے کی اطلاع دینا اور Windows کا اس صفحے کا رسائی درخت مکمل کرنا ایک ہی لمحہ نہیں؛ بہت جلدی فوکس دینے سے NVDA/JAWS پیغام کے بجائے ایک عمومی “ویب مواد کا صفحہ” اعلان کرتے ہیں، یا کھلنے کے بعد کچھ دیر پیغام کو غیر دستیاب بتاتے ہیں۔ درجہ 1 سو ملی سیکنڈ ہے، درجہ 10 پورا ایک سیکنڈ۔ اگر یہ اب بھی نظر آئے تو بڑھائیں؛ جب کھلنا مستحکم لگے تو تیز تر کھلنے کے لیے گھٹائیں۔
+set_announce_note = Ctrl+U اور Ctrl+Shift+U بھیجنے والے کو ایک چھوٹے ڈائیلاگ میں بتاتے ہیں جو خود بند ہو جاتا ہے، کیونکہ اسٹیٹس بار صرف تبھی بولا جاتا ہے جب آپ کے اسکرین ریڈر میں اسٹیٹس بار پڑھنا فعال ہو۔ یہ اس ڈائیلاگ کے کھلا رہنے کا دورانیہ ہے۔ اسے اپنی بولنے کی رفتار کے مطابق رکھیں: بہت کم ہو تو یہ جملے کے بیچ میں بند ہو جاتا ہے، جس سے مقصد فوت ہو جاتا ہے۔ کوئی بھی کلید اسے جلد بند کر دیتی ہے؛ تیر والی کلیدیں اسے کھلا رکھتی ہیں تاکہ آپ دوبارہ پڑھ سکیں۔ 0 کا مطلب ہے کہ یہ کلید کا انتظار کرتا ہے اور کبھی خود بند نہیں ہوتا۔
+set_attachment_dir_note = جب پیغام میں ایک سے زیادہ منسلکات ہوں تو “سب محفوظ کریں” انہیں یہاں لکھتا ہے۔ اگر موجود نہ ہو تو خود بخود بن جاتا ہے۔ ایک منسلکہ والا پیغام پہلے کی طرح پوچھتا ہے کہ اسے کہاں محفوظ کیا جائے۔ پہلے سے طے شدہ کے لیے خالی چھوڑیں:\n{path}
+set_autosave_note = آپ کے لکھتے وقت کھلا تحریری ٹیب کتنی بار خود کو مسودات میں محفوظ کرتا ہے۔ مسودہ محفوظ کریں (Ctrl+S) بہرحال مانگنے پر محفوظ کرتا ہے، اور غیر محفوظ تحریر والا ٹیب بند کرنے پر ہمیشہ اسے محفوظ کرنے کی پیشکش ہوتی ہے۔ 0 خودکار محفوظ کاری بند کرتا ہے۔ 15 سیکنڈ سے کم کی پیشکش نہیں کی جاتی -- یہ آپ کی ٹائپنگ سے مقابلہ کرتا سرور کا چکر ہو گا۔
+set_auto_purge_note = ردی کی ٹوکری اور جنک میں اتنے دن پڑے رہنے کے بعد پیغامات کو مستقل طور پر ہٹا دیتا ہے -- وہی مستقل ہٹانا جو ردی کی ٹوکری خالی کریں اور جنک خالی کریں مانگنے پر کرتے ہیں، ZBox کھلا ہونے پر روزانہ ایک بار خود بخود۔ پہلے سے 30 دن کے ساتھ آن ہے۔ 0 اسے بند کرتا ہے۔ پیغام ہٹ جانے کے بعد اسے کالعدم نہیں کیا جا سکتا۔
+set_bare_keys_note = آن ہونے پر، پیغامات کی فہرست میں صرف S، A، J، W یا K دبانے سے فوراً جھنڈا بدلتا ہے، آرکائیو ہوتا ہے، منتخب پیغامات جنک نشان زد ہوتے ہیں (Shift+J انہیں جنک نہیں نشان زد کرتا ہے)، یا انتخاب جس تھریڈ کا حصہ ہے اس کی نگرانی/نظر اندازی ہوتی ہے -- آرکائیو اور جنک نشان زد کرنے کی نہ کوئی تصدیق ہے نہ کالعدم۔ اسے بند کرنے سے S، A، J، W اور K فہرست میں پہلے حرف سے عام نیویگیشن پر واپس آ جاتے ہیں۔ Ctrl+S اور Ctrl+Shift+A بہرحال کام کرتے رہتے ہیں۔ فوراً لاگو ہوتا ہے۔
+set_sounds_note = پیش رفت، نئے پیغامات، بھیجنے، جواب دینے یا آگے بھیجنے کے اعمال، حذف کرنے اور تلاش کے نتائج کے لیے مختصر آوازیں۔ بند ہونے پر ایپ کی تمام آوازیں بند ہو جاتی ہیں؛ اسکرین ریڈر اور اسٹیٹس بار کے اعلانات بہرحال متاثر نہیں ہوتے۔
+set_desktop_notifications_note = نئی میل کی ہر کھیپ کے لیے ایک Windows اطلاع، اوپر والی آواز سے الگ۔ بند ہونے پر تمام اکاؤنٹس کے لیے بند ہو جاتی ہے؛ کسی ایک اکاؤنٹ کو اکاؤنٹ کی ترتیبات میں الگ سے بھی خاموش کیا جا سکتا ہے۔
+set_theme_note = حسبِ منشا تھیمز ZBox کے sounds فولڈر کے اندر رکھے گئے فولڈرز ہیں، ہر ایک کی اپنی progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav اور none_found.wav فائلیں ہوتی ہیں۔ تھیم کی کوئی فائل غائب ہو تو پہلے سے طے شدہ آواز استعمال ہوتی ہے۔
+set_theme_note_only_default = حسبِ منشا تھیمز ZBox کے sounds فولڈر کے اندر رکھے گئے فولڈرز ہیں، ہر ایک کی اپنی progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav اور none_found.wav فائلیں ہوتی ہیں۔ تھیم کی کوئی فائل غائب ہو تو پہلے سے طے شدہ آواز استعمال ہوتی ہے۔ جب تک آپ کوئی اور تھیم فولڈر شامل نہ کریں، صرف “default” دستیاب ہے۔
+set_lock_note = ZBox شروع ہونے پر کوئی بھی اکاؤنٹ کھولنے سے پہلے آپ کے لاک کھولنے کے طریقوں میں سے ایک مانگتا ہے۔ کوئی بھی ایک کافی ہے: پاس کی، سکیورٹی کی، یا ماسٹر پاس ورڈ۔ ٹرے میں بند کرنا باہر نکلنا نہیں اور دوبارہ مقفل نہیں کرتا؛ فائل > باہر نکلیں اور ٹرے آئیکن کا بند کریں باہر نکلنا ہیں۔ اگر کچھ رجسٹرڈ نہ ہو اور کوئی ماسٹر پاس ورڈ مقرر نہ ہو تو آپ کو اپنی ہی میل سے باہر رکھنے کے بجائے لاک چھوڑ دیا جاتا ہے۔
+set_security_note = تینوں میں سے صرف ماسٹر پاس ورڈ ہی کچھ خفیہ کرتا ہے: یہی اس فولڈر کو کسی دوسرے کمپیوٹر پر محفوظ شدہ اکاؤنٹ پاس ورڈز کھولنے دیتا ہے۔ پاس کی یا سکیورٹی کی اس کمپیوٹر پر ایپ کا لاک کھولتی ہے۔ ان میں سے کوئی بھی ایسے کمپیوٹر پر ماسٹر پاس ورڈ کی جگہ نہیں لیتی جہاں ZBox پہلے استعمال نہ ہوا ہو۔
+set_minimize_note = ZBox کو چھوٹا کرنے سے اس کا ٹاسک بار بٹن چھپ جاتا ہے اور یہ ٹرے آئیکن کے پیچھے چلتا رہتا ہے۔ ونڈو واپس لانے کے لیے ٹرے آئیکن پر بایاں کلک کریں (یا جب اس پر کی بورڈ فوکس ہو تو Enter/Space دبائیں)۔
+set_close_note = ونڈو کا بند کریں بٹن، Alt+F4، اور میل ٹیب پر دبایا گیا Ctrl+W، ZBox کو بند کرنے کے بجائے ٹرے میں چھپا دیتے ہیں۔ فائل > باہر نکلیں (Ctrl+Shift+Q) اور ٹرے آئیکن کا اپنا بند کریں آئٹم بہرحال ZBox کو واقعی بند کرتے ہیں، اس لیے ٹرے کو چھوئے بغیر باہر نکلنے کا کی بورڈ کا ایک راستہ ہمیشہ موجود رہتا ہے۔
+set_stay_maximized_note = ZBox بڑا ہو کر کھلتا ہے اور اگر آپ اسے چھوٹا کریں تو دوبارہ بڑا ہو جاتا ہے۔ مینو بار، ٹائٹل بار اور ونڈو کا کنارہ متاثر نہیں ہوتے -- یہ بغیر کنارے والا فل اسکرین موڈ نہیں، اس لیے Alt والے تمام مینو شارٹ کٹس کام کرتے رہتے ہیں۔
+set_run_at_startup_note = Windows میں سائن ان کرنے پر ZBox خود بخود شروع ہوتا ہے، اپنی ونڈو دکھانے کے بجائے سیدھا ٹرے میں کھلتا ہے۔ فوراً لاگو ہوتا ہے، صرف اگلی بار شروع ہونے پر نہیں۔
+set_desktop_shortcut_note = آپ کے ڈیسک ٹاپ پر ZBox کا شارٹ کٹ رکھتا ہے، پہلے سے موجود کی جگہ۔ شارٹ کٹ اس ZBox فولڈر کا بالکل مقام محفوظ کرتا ہے، اس لیے اگر آپ ZBox کو کہیں اور منتقل یا کاپی کریں تو ڈیسک ٹاپ شارٹ کٹ کو اس کی طرف کرنے کے لیے نئی نقل میں اسے دوبارہ دبائیں۔ فوراً لاگو ہوتا ہے اور OK کا انتظار نہیں کرتا۔
+
+# The Address Book, its contact form and its groups.
+ab_name = نام
+ab_phone = فون
+ab_notes = نوٹس
+ab_heading = ایڈریس بک
+ab_contacts = رابطے
+ab_new = نیا...
+ab_edit = ترمیم...
+ab_delete = حذف کریں
+ab_import = درآمد...
+ab_export = برآمد...
+ab_groups_label = گروپس (میلنگ لسٹس)
+ab_groups_name = گروپس
+ab_new_group = نیا گروپ...
+ab_rename_group = گروپ کا نام بدلیں...
+ab_delete_group = گروپ حذف کریں
+ab_manage_members = اراکین کا انتظام...
+ab_all_contacts = تمام رابطے
+ab_add_member = شامل کریں >>
+ab_remove_member = << ہٹائیں
+ab_members_of = {name} کے اراکین
+
+# The spell check dialog.
+sp_not_in_dictionary_label = لغت میں نہیں:
+sp_not_in_dictionary_name = لغت میں نہیں
+sp_in_this_line_label = اس سطر میں:
+sp_in_this_line_name = اس سطر میں
+sp_suggestions_label = تجاویز:
+sp_suggestions_name = تجاویز
+sp_replace_with_label = اس سے بدلیں:
+sp_replace_with_name = اس سے بدلیں
+sp_replace = بدلیں
+sp_replace_all = سب بدلیں
+sp_ignore = نظر انداز کریں
+sp_ignore_all = سب نظر انداز کریں
+sp_add_to_dictionary = لغت میں شامل کریں
+btn_close = بند کریں
+
+# Privacy and Content Blocking.
+priv_remote_label = پیغامات میں بیرونی مواد:
+priv_block_remote = بیرونی مواد میرے کہنے تک مسدود رکھیں (تجویز کردہ)
+priv_blocklist_label = اشتہارات اور ٹریکرز کی بلاک لسٹ:
+priv_block_known = معروف اشتہاری اور ٹریکر ڈومینز مسدود کریں
+priv_update_daily = فہرست روزانہ پس منظر میں اپ ڈیٹ کریں
+priv_update_now = ابھی اپ ڈیٹ کریں
+priv_junk_label = جنک میل کے اصول:
+priv_check_inbox = نئی ان باکس میل کو مسدود بھیجنے والوں اور معروف فشنگ لنکس سے جانچیں
+priv_move_blocked = مسدود بھیجنے والوں کی میل خود بخود جنک میں منتقل کریں
+priv_update_phishing = فشنگ کی فہرست ابھی اپ ڈیٹ کریں
+priv_blocked_label = مسدود بھیجنے والے:
+priv_blocked_name = مسدود بھیجنے والے
+priv_remove_blocked = مسدود بھیجنے والا ہٹائیں
+priv_never_junk_label = بھیجنے والے جنہیں کبھی جنک نہیں سمجھا جاتا:
+priv_never_junk_name = بھیجنے والے جنہیں کبھی جنک نہیں سمجھا جاتا
+priv_remove_never_junk = قابلِ اعتماد بھیجنے والا ہٹائیں
+priv_allowed_label = بیرونی مواد لوڈ کرنے کی اجازت والے بھیجنے والے:
+priv_allowed_name = اجازت یافتہ بھیجنے والے
+priv_remove_selected = منتخب بھیجنے والا ہٹائیں
+
+# Message Filters.
+filt_rule_name = اصول کا نام
+filt_enabled = فعال
+filt_match_label = مطابقت:
+filt_match_all = درج ذیل سب سے مطابقت (اور)
+filt_match_any = درج ذیل میں سے کسی سے مطابقت (یا)
+filt_conditions_label = شرائط (چھوڑنے کے لیے قدر خالی رکھیں):
+filt_condition_field = شرط {number} کا خانہ
+filt_condition_contains = شرط {number} میں شامل ہے
+filt_actions_label = اعمال:
+filt_mark_read = پڑھا ہوا نشان زد کریں
+filt_flag = پیغام پر جھنڈا لگائیں
+filt_move_label = فولڈر میں منتقل کریں:
+filt_move_name = فولڈر میں منتقل کریں
+filt_rules_name = فلٹر کے اصول
+filt_new = نیا اصول...
+filt_edit = اصول میں ترمیم...
+filt_delete = اصول حذف کریں
+filt_up = اوپر لے جائیں
+filt_down = نیچے لے جائیں
+filt_run_label = اس فولڈر پر ابھی چلائیں:
+filt_run_name = ابھی چلائیں کا فولڈر
+filt_run_now = ابھی چلائیں
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = پاس کی سے لاک کھولیں (Windows Hello)
+unl_security_key = سکیورٹی کی سے لاک کھولیں
+unl_master_password_label = ماسٹر پاس ورڈ:
+unl_master_password_name = ماسٹر پاس ورڈ
+unl_unlock = لاک کھولیں
+unl_exit = ZBox بند کریں
+unl_methods_label = رجسٹرڈ طریقے:
+unl_methods_name = لاک کھولنے کے رجسٹرڈ طریقے
+unl_add_passkey = پاس کی شامل کریں…
+unl_add_key = سکیورٹی کی شامل کریں…
+unl_reassign = پاس کی اس کمپیوٹر کو دوبارہ تفویض کریں…
+unl_test = جانچیں…
+unl_remove = ہٹائیں
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = بھیجنے والا
+comp_to = بنام
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = موضوع
+comp_attach_button = فائل منسلک کریں...
+comp_sending = بھیجا جا رہا ہے...
+comp_report_label = رپورٹ:
+comp_report_name = رپورٹ
+comp_refresh = تازہ کریں
+comp_copy = کاپی کریں
+comp_preview_read = جیسا وصول کنندہ پڑھے گا
+comp_preview_source = وہ HTML جو بھیجا جائے گا
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = پیغام کا متن
+mv_blocked_notice = مسدود مواد کی اطلاع
+mv_show_remote = بیرونی مواد دکھائیں
+mv_always_allow = اس بھیجنے والے کو ہمیشہ اجازت دیں
+mv_message_headers = پیغام کے ہیڈرز
+mv_attachments = منسلکات
+mv_attachments_count = منسلکات ({count})
+mv_save_attachment = محفوظ کریں: {filename}
+mv_save_all = سب محفوظ کریں
+mv_html_view = پیغام کا HTML منظر
+mv_saved_message = محفوظ شدہ پیغام
+mv_show_remote_tip = یہ پیغام اس کی بیرونی تصاویر اور اسٹائلز کے ساتھ دوبارہ لوڈ کریں۔ معروف ٹریکرز مسدود ہی رہتے ہیں۔
+mv_always_allow_tip = {sender} کے ہر پیغام میں بیرونی مواد لوڈ کریں۔
+
+# The search tab.
+srch_account = اکاؤنٹ
+srch_folder = فولڈر
+srch_for = تلاش کریں
+
+# The signature editor.
+sig_editors = دستخط کے ایڈیٹرز
+sig_formatted = دستخط، فارمیٹ شدہ
+sig_source = دستخط، HTML ماخذ
+sig_plain_label = سادہ متن متبادل (HTML کے ساتھ بھیجا جاتا ہے)
+sig_plain_name = سادہ متن متبادل
+
+# About ZBox.
+about_text_name = ZBox کے بارے میں متن
+about_view_license = لائسنس دیکھیں...
+about_google = Google ایپ پاس ورڈز...
+about_support = ZBox کی مدد کریں -- ایک فرد کی تیاری اور دیکھ بھال
+about_repos = GitHub پر Harith کی ایپس کے ذخیرے
+about_contact = Harith سے رابطہ کریں
+btn_close_plain = بند کریں
+btn_cancel_plain = منسوخ کریں
+
+# The license window.
+eula_heading = ZBox لائسنس
+eula_text_name = ZBox لائسنس کا متن
+eula_third_party = تیسرے فریق کے اجزاء کے لائسنس صفحات:
+eula_agree = میں اوپر دی گئی شرائط سے متفق ہوں
+eula_agree_name = میں نے ZBox لائسنس کی شرائط پڑھ لی ہیں اور ان سے متفق ہوں
+eula_disagree = میں متفق نہیں ہوں
+eula_next = اگلا
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox دستاویزات کا متن
+doc_copy = کلپ بورڈ پر کاپی کریں
+shortcuts_heading = کی بورڈ شارٹ کٹس
+shortcuts_text_name = کی بورڈ شارٹ کٹس کا متن
+
+# The main window's own panes.
+mf_toolbar = مرکزی ٹول بار
+mf_tabs = ZBox ٹیبز
+tree_heading = اکاؤنٹس اور فولڈرز
+tree_name = اکاؤنٹس اور فولڈرز کا درخت
+envlist_heading = پیغامات
+envlist_name = پیغامات کی فہرست
+rdr_heading = پیغام
+rdr_name = پیغام ریڈر
+conv_heading_one = گفتگو: 1 پیغام
+conv_heading_many = گفتگو: {count} پیغامات
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} میں سے {completed} مکمل۔
+bulk_cancelling = منسوخ کیا جا رہا ہے -- موجودہ پیغام مکمل کیا جا رہا ہے...
+cache_clear_now = آف لائن پیغامات کا کیش ابھی صاف کریں... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}، محفوظ
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = ظاہری نام اختیاری ہے -- اس اکاؤنٹ کے اپنے نام سے بھیجنے کے لیے خالی چھوڑیں۔
+acct_note_identity = اگر آپ کے فراہم کنندہ نے اس میل باکس سے کوئی حسبِ منشا ڈومین جوڑ رکھا ہو تو ای میل پتہ لاگ ان ای میل سے مختلف ہو سکتا ہے۔ میل اوپر والے پتے سے بھیجی اور وصول کی جائے گی، جبکہ سائن ان اب بھی لاگ ان ای میل سے ہو گا۔ اس اکاؤنٹ کا پہلے سے محفوظ پاس ورڈ رکھنے کے لیے پاس ورڈ کا خانہ خالی چھوڑیں -- مثلاً Gmail ایپ پاس ورڈ بدلنے کے بعد نیا یہاں لکھیں؛ ورنہ خالی چھوڑیں۔
+acct_note_identities = دوسرے پتے جن سے یہ اکاؤنٹ بھیج اور جواب دے سکتا ہے۔ ان میں سے کسی پر بھیجے گئے پیغام کا جواب دینے سے بھیجنے والا خود بخود اوپر والے پتے کے بجائے وہی پتہ ہو جاتا ہے۔
+acct_note_signature = اس اکاؤنٹ سے بھیجے گئے ہر نئے پیغام، جواب اور آگے بھیجے گئے پیغام کے آخر میں "-- " والی سطر کے نیچے شامل ہوتے ہیں۔ دستخط نہ چاہیں تو خالی چھوڑیں۔ دستخط میں ترمیم کریں فارمیٹ شدہ ایڈیٹر کھولتا ہے، جہاں جلی، فہرستیں اور لنکس دستیاب ہیں؛ پھر اوپر والا خانہ اس کے ساتھ جانے والا سادہ متن ورژن رکھتا ہے۔
+acct_note_junk = جنک نشان زد کریں پیغامات کو کس اصل فولڈر میں منتقل کرتا ہے۔ "{automatic}" وہی فراہم کنندہ پر مبنی اندازہ استعمال کرتا ہے جو آرکائیو اور ردی کی ٹوکری پہلے سے استعمال کرتے ہیں؛ اسے صرف تب مقرر کریں جب وہ اندازہ غلط ہو یا آپ کے جنک فولڈر کا حسبِ منشا نام ہو۔
+acct_note_disable = غیر فعال اکاؤنٹ سے دوبارہ فعال ہونے تک کبھی رابطہ نہیں کیا جاتا -- نہ IDLE، نہ وقفے وقفے سے تازہ کاری، کچھ بھی نہیں۔ یہ درخت میں (غیر فعال) کے نشان کے ساتھ دکھائی دیتا رہتا ہے، اور اس کی پہلے سے ڈاؤن لوڈ شدہ میل آف لائن دستیاب رہتی ہے۔ یہ وہی سوئچ ہے جو اکاؤنٹس > اکاؤنٹ غیر فعال کریں یا اکاؤنٹ کے اپنے سیاقی مینو میں ہے؛ یہ اس تک پہنچنے کی بس ایک اور جگہ ہے۔
+acct_note_default = اس اکاؤنٹ کے فولڈرز درخت میں پہلے آتے ہیں، اور نیا پیغام خود بخود اسی سے بھیجا جاتا ہے جب تک ایڈیٹر میں دستی طور پر نہ بدلا جائے۔ اس پر اثر نہیں پڑتا کہ جواب یا آگے بھیجا گیا پیغام کون سا پتہ استعمال کرتا ہے -- وہ پہلے ہی جواب دیے جانے والے پیغام کی پیروی کرتا ہے (اوپر اضافی شناختیں دیکھیں)۔ ہمیشہ بالکل ایک پہلے سے طے شدہ اکاؤنٹ ہوتا ہے، اس لیے موجودہ پر یہ نشان ہٹانا، کسی دوسرے پر لگائے بغیر، اسے نہیں بدلتا -- پہلے سے طے شدہ کسی اور اکاؤنٹ کو دینے کے لیے اس کا خانہ نشان زد کریں۔
+acct_note_mute = خاموش کرنا اس اکاؤنٹ کی نئی میل کی آواز، بولا گیا اعلان اور Windows اطلاع روک دیتا ہے، چاہے وہ کسی بھی طرح ترتیب دیے گئے ہوں۔ دوسرے اکاؤنٹس متاثر نہیں ہوتے، اور یہ اب بھی ترتیبات > آواز اور اطلاعات کے مرکزی سوئچز (مجموعی طور پر آوازیں اور ڈیسک ٹاپ اطلاعات) کے تابع ہے۔
+wiz_note_app_password = اگر آپ پہلے ہی ZBox کے لیے ایپ پاس ورڈ بنا چکے ہیں تو آگے بڑھنے کے لیے اگلا دبائیں۔
+wiz_note_login = لاگ ان کی اسناد۔\nاگر آپ کی لاگ ان ای میل اوپر والے پتے سے مختلف ہے، مثلاً آپ کا فراہم کنندہ اکاؤنٹ login@example.net ہے مگر آپ you@example.org کے طور پر بھیجنا اور وصول کرنا چاہتے ہیں، تو یہاں لاگ ان ای میل درج کریں۔ حسبِ منشا بھیجنے کا پتہ آپ بعد میں اکاؤنٹ کی ترتیبات میں مقرر کر سکتے ہیں۔
+wiz_note_servers = سرور کی ترتیبات، ڈومین پہچانے جانے پر پہلے سے بھری ہوئی۔ جو کچھ مختلف ہونا چاہیے اس میں ترمیم کریں۔
+wiz_preset_none = اس ڈومین کے لیے کوئی پہلے سے طے شدہ ترتیب نہیں ملی۔ اپنے فراہم کنندہ کی سرور ترتیبات دستی طور پر درج کریں؛ آپ کے فراہم کنندہ کے مدد کے صفحات ان کی فہرست دیتے ہیں۔
+ab_note_groups = کسی گروپ کے تمام اراکین ایک ساتھ بھرنے کے لیے تحریر کی ونڈو کے بنام، Cc یا Bcc خانے میں اس گروپ کا نام لکھیں۔
+cache_note_intro = یہ صرف ZBox کی مقامی نقلیں ہٹاتے ہیں۔ کسی میل سرور سے کچھ حذف نہیں ہوتا، اور ہٹایا گیا پیغام اگلی بار کھولنے پر دوبارہ ڈاؤن لوڈ ہو جاتا ہے۔
+cache_note_age = خودکار صفائی دن میں ایک بار چلتی ہے، جب ZBox میں دس منٹ تک کی بورڈ کی کوئی سرگرمی نہ ہو اور کوئی پیغام کھلا نہ ہو۔ یہ ہر پیغام کی اپنی تاریخ کے حساب سے چلتی ہے، ان پیغامات سمیت جو ابھی آپ کے اکاؤنٹ میں ہیں۔
+filt_note_intro = اصول ترتیب سے، اوپر سے نیچے، بھیجنے والا، بنام اور موضوع جانچتے ہوئے چلتے ہیں۔ اس اکاؤنٹ کے ان باکس میں آنے والی نئی میل پر خود بخود لاگو ہوتے ہیں؛ کسی فولڈر میں پہلے سے موجود پیغامات پر لاگو کرنے کے لیے نیچے ابھی چلائیں استعمال کریں۔
+filt_note_run_now = اوپر کا ہر فعال اصول، ترتیب سے، منتخب فولڈر میں پہلے سے موجود ہر پیغام پر لاگو کرتا ہے -- OK کی طرح پہلے آپ کی تبدیلیاں محفوظ کرتا ہے۔
+mp_note_intro = یہ اکاؤنٹس کسی دوسرے کمپیوٹر پر ترتیب دیے گئے تھے۔ یہاں ان کے محفوظ شدہ پاس ورڈز کھولنے کے لیے ماسٹر پاس ورڈ درج کریں۔ اس کمپیوٹر پر آپ سے صرف ایک بار پوچھا جائے گا۔\n\nاس کے بغیر ہر اکاؤنٹ کو اپنے میل سرور پر دوبارہ سائن ان کرنا ہو گا۔
+priv_note_remote = کوئی پیغام انٹرنیٹ سے جو تصاویر، اسٹائل شیٹس اور فونٹس لوڈ کرتا ہے وہ بھیجنے والے کو بتا دیتے ہیں کہ آپ نے اسے کب اور کہاں سے کھولا۔ اس کے آن ہونے پر ان میں سے کچھ لوڈ نہیں ہوتا: پیغام کے اوپر ایک اطلاع بتاتی ہے کہ کیا مسدود ہوا، اور Ctrl+Shift+I اسے صرف اسی پیغام کے لیے لوڈ کرتا ہے۔ خود پیغام سے منسلک تصاویر ہمیشہ دکھائی دیتی ہیں۔ اسکرپٹس اور سرایت شدہ فریمز بہرحال ہٹا دیے جاتے ہیں اور کبھی لوڈ نہیں ہوتے۔
+priv_note_blocklist = یہ دوسری تہہ ہے۔ یہ تب اہم ہے جب آپ کسی پیغام کا بیرونی مواد لوڈ کریں یا کسی بھیجنے والے کو اجازت دیں: تصاویر لوڈ ہوتی ہیں، مگر کسی معروف ٹریکنگ یا اشتہاری ڈومین سے آنے والی کوئی چیز پھر بھی لوڈ نہیں ہوتی۔ فہرست عوامی اشتہاری اور ٹریکر فہرستوں سے ڈاؤن لوڈ کر کے یکجا کی جاتی ہے؛ اپ ڈیٹ میں ایک دو سیکنڈ لگتے ہیں اور یہ پس منظر میں چلتی ہے۔
+priv_note_junk = کوئی اندازہ نہیں۔ جنک نشان زد کریں بھیجنے والے کو نیچے کی مسدود فہرست میں شامل کرتا ہے، الا یہ کہ پیغام کسی میلنگ لسٹ کے ذریعے آیا ہو۔ جنک نہیں نشان زد کریں بھیجنے والے کو کبھی جنک نہیں والی فہرست میں شامل کرتا ہے اور وہ پیغام پھر کبھی نہیں جانچا جاتا۔ کسی مسدود بھیجنے والے کا نیا پیغام فہرست میں مسدود بھیجنے والا کے طور پر نشان زد ہوتا ہے؛ کسی معروف فشنگ یا میلویئر سائٹ کا لنک رکھنے والا پیغام ممکنہ فشنگ کے طور پر نشان زد ہوتا ہے۔ آپ کے میل فراہم کنندہ کی اپنی اسپیم فلٹرنگ پہلے کی طرح چلتی رہتی ہے۔
+priv_status_phishing_updating = فشنگ کی فہرست: پس منظر میں اپ ڈیٹ ہو رہی ہے۔ نتیجہ دیکھنے کے لیے یہ ڈائیلاگ دوبارہ کھولیں۔
+priv_status_updating = پس منظر میں اپ ڈیٹ ہو رہی ہے۔ نتیجہ دیکھنے کے لیے یہ ڈائیلاگ دوبارہ کھولیں۔
+rel_note_intro = اس اکاؤنٹ کے ہر فولڈر میں، Message-ID/References ہیڈرز کے ذریعے "{subject}" سے متعلقہ پیغامات۔
+srch_note_intro = نیچے درج کیے گئے متن کو بھیجنے والا، موضوع اور متن میں تلاش کریں۔ جب تک آپ نیچے محدود نہ کریں، ہر اکاؤنٹ اور فولڈر میں تلاش ہوتی ہے۔
+sig_note_plain = سادہ متن متبادل خالی چھوڑ دیں تو OK دبانے پر یہ فارمیٹ شدہ دستخط سے لکھ دیا جاتا ہے۔
+unified_note_intro = منتخب کریں کہ تمام اکاؤنٹس میں کون سے فولڈرز یکجا کیے جائیں۔ ہر نشان زد فولڈر درخت میں ایک ایسا واحد اندراج بن جاتا ہے جو آپ کے تمام اکاؤنٹس سے وہ فولڈر یکجا کرتا ہے۔
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox کے بارے میں
+title_account_settings = اکاؤنٹ کی ترتیبات: {name}
+title_new_account = نیا اکاؤنٹ
+title_address_book = ایڈریس بک
+title_members = اراکین: {name}
+ab_group_name_prompt = گروپ کا نام:
+title_new_group = نیا گروپ
+title_cache_cleanup = کیش صفائی کی ترتیب
+cache_age_prompt = اس سے پرانے کیش شدہ پیغامات خود بخود ہٹائیں:
+title_automatic_cleanup = خودکار صفائی
+comp_link_prompt = لنک کا پتہ:
+title_insert_link = لنک داخل کریں
+title_composer_diagnostics = تحریری ایڈیٹر کی جانچ
+title_formatted_preview = فارمیٹ شدہ پیش منظر
+title_license_agreement = ZBox لائسنس معاہدہ
+title_message_filters = پیغام فلٹرز: {account}
+title_master_password_required = ماسٹر پاس ورڈ درکار ہے
+title_privacy_dialog = رازداری اور مواد کی بندش
+title_privacy = رازداری
+title_settings = ترتیبات
+title_unified_folders = متحد فولڈرز
+title_zbox_locked = ZBox مقفل ہے
+title_message_view = پیغام کا منظر
+title_remote_content = بیرونی مواد
+title_refresh = تازہ کریں
+title_refresh_all = سب تازہ کریں
+mv_choose_folder = منسلکہ محفوظ کرنے کے لیے فولڈر منتخب کریں
+title_thread = تھریڈ
+title_inbox = ان باکس
+title_compose = تحریر
+title_watch_thread = تھریڈ کی نگرانی کریں
+title_ignore_thread = تھریڈ نظر انداز کریں
+title_edit_signature = دستخط میں ترمیم کریں
+title_account = اکاؤنٹ
+mf_folder_name_prompt = فولڈر کا نام:
+mf_new_name_prompt = نیا نام:
+title_refresh_all_accounts = تمام اکاؤنٹس تازہ کریں
+title_sender = بھیجنے والا
+title_new_mail = نئی میل
+mf_export_dialog_title = تمام {count} اکاؤنٹس اور ترتیبات برآمد کریں
+mf_related_tab = متعلقہ: {subject}
+title_hotkeys_diagnostic = ہاٹ کیز کی جانچ
+set_choose_attachment_dir = منسلکات محفوظ کرنے کا فولڈر منتخب کریں
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox مقفل ہے۔ اسے کھولنے کے لیے نیچے دیے گئے طریقوں میں سے کوئی ایک استعمال کریں۔ منسوخ کرنے سے ZBox کوئی اکاؤنٹ کھولے بغیر بند ہو جاتا ہے۔
+unl_note_foreign_passkey = اس فولڈر کے ساتھ محفوظ پاس کی کسی دوسرے کمپیوٹر کی ہے، اس لیے یہاں استعمال نہیں ہو سکتی۔ اپنی سکیورٹی کی یا ماسٹر پاس ورڈ سے لاک کھولیں، پھر اس کمپیوٹر پر پاس کی ترتیب دینے کے لیے ترتیبات، رازداری اور حفاظت، لاک کھولنے کے طریقے استعمال کریں۔
+unl_note_methods = ایپ لاک آن ہونے پر، ماسٹر پاس ورڈ کے ساتھ ساتھ ان میں سے کوئی بھی ZBox کا لاک کھولتا ہے۔ پاس کی اس کمپیوٹر پر Windows Hello استعمال کرتی ہے؛ سکیورٹی کی USB یا NFC پر FIDO2 کلید ہے اور جس کمپیوٹر میں بھی لگائیں وہاں کام کرتی ہے۔
+unl_note_not_encryption = یہ ایپ کا لاک کھولتے ہیں۔ یہ کچھ خفیہ نہیں کرتے: ایسے کمپیوٹر پر جہاں یہ فولڈر پہلے استعمال نہ ہوا ہو، محفوظ شدہ اکاؤنٹ پاس ورڈز کھولنے والی واحد چیز اب بھی ماسٹر پاس ورڈ ہے۔ اسے پہلے مقرر کرنا ہو گا، اور جب تک یہ مقرر نہ ہو ان میں سے کوئی شامل نہیں کیا جا سکتا۔
+unl_add_passkey_unavailable = پاس کی شامل کریں (دستیاب نہیں)
+unl_add_key_unavailable = سکیورٹی کی شامل کریں (دستیاب نہیں)
+unl_reassign_unavailable = پاس کی اس کمپیوٹر کو دوبارہ تفویض کریں (دستیاب نہیں)
+unl_status_cancelled_passkey = پاس کی منسوخ کر دی گئی۔ ZBox اب بھی مقفل ہے۔
+unl_status_cancelled_key = سکیورٹی کی منسوخ کر دی گئی۔ ZBox اب بھی مقفل ہے۔
+unl_status_enter_password = ماسٹر پاس ورڈ درج کریں۔
+unl_status_no_master = کوئی ماسٹر پاس ورڈ مقرر نہیں، اس لیے ابھی پاس کی یا سکیورٹی کی شامل نہیں کی جا سکتی۔ ترتیبات، رازداری اور حفاظت میں ماسٹر پاس ورڈ بٹن سے ایک مقرر کریں، پھر یہاں واپس آئیں۔ ماسٹر پاس ورڈ ہی کسی دوسرے کمپیوٹر پر آپ کے محفوظ شدہ اکاؤنٹ پاس ورڈز کھولتا ہے؛ پاس کی صرف اس کمپیوٹر پر ایپ کا لاک کھولتی ہے، اس لیے یہ اکیلی کافی نہیں۔
+unl_status_unsupported = اس کمپیوٹر کا Windows پاس کیز یا سکیورٹی کیز کی معاونت نہیں کرتا، اس لیے یہاں صرف ماسٹر پاس ورڈ ZBox کا لاک کھول سکتا ہے۔
+unl_status_foreign_one = 1 پاس کی کسی دوسرے کمپیوٹر کی ہے اور یہاں ZBox کا لاک نہیں کھول سکتی۔ دوبارہ تفویض اسے اس کمپیوٹر پر بنائی گئی ایک پاس کی سے بدل دیتا ہے۔
+unl_status_foreign_many = {count} پاس کیز کسی دوسرے کمپیوٹر کی ہیں اور یہاں ZBox کا لاک نہیں کھول سکتیں۔ دوبارہ تفویض انہیں اس کمپیوٹر پر بنائی گئی ایک پاس کی سے بدل دیتا ہے۔
+unl_status_foreign_one_no_hello = 1 پاس کی کسی دوسرے کمپیوٹر کی ہے اور یہاں ZBox کا لاک نہیں کھول سکتی۔ یہاں Windows Hello ترتیب نہیں دیا گیا، اس لیے اسے اس کمپیوٹر پر بدلا نہیں جا سکتا؛ ہٹائیں اسے بھلا دیتا ہے۔
+unl_status_foreign_many_no_hello = {count} پاس کیز کسی دوسرے کمپیوٹر کی ہیں اور یہاں ZBox کا لاک نہیں کھول سکتیں۔ یہاں Windows Hello ترتیب نہیں دیا گیا، اس لیے انہیں اس کمپیوٹر پر بدلا نہیں جا سکتا؛ ہٹائیں انہیں بھلا دیتا ہے۔
+unl_status_no_hello = اس کمپیوٹر پر Windows Hello ترتیب نہیں دیا گیا، اس لیے یہاں پاس کی شامل نہیں کی جا سکتی۔ سکیورٹی کی پھر بھی شامل کی جا سکتی ہے۔
+unl_status_none_registered = ابھی تک لاک کھولنے کا کوئی طریقہ رجسٹرڈ نہیں۔
+unl_status_add_cancelled_passkey = پاس کی شامل کرنا منسوخ کر دیا گیا۔
+unl_status_add_cancelled_key = سکیورٹی کی شامل کرنا منسوخ کر دیا گیا۔
+unl_status_added = شامل کیا گیا: {name}۔
+unl_status_reassign_cancelled = دوبارہ تفویض منسوخ کر دی گئی۔ کچھ نہیں بدلا۔
+unl_status_reassigned = {name} شامل کیا گیا اور دوسرے کمپیوٹرز کی {count} بھلا دی گئیں۔
+unl_status_test_cancelled = جانچ منسوخ کر دی گئی۔
+unl_status_removed = ہٹا دیا گیا۔
+unl_remove_warning_last = {name} ہٹائیں؟\n\nیہ لاک کھولنے کا واحد رجسٹرڈ طریقہ ہے اور کوئی ماسٹر پاس ورڈ مقرر نہیں، اس لیے ایپ لاک آن ہونے پر ZBox کا لاک کھولنے کے لیے کچھ باقی نہیں رہے گا۔ آپ کو باہر رکھنے کے بجائے لاک چھوڑ دیا جاتا ہے، لیکن پھر ZBox بغیر لاک کے کھلے گا۔
+unl_remove_warning = {name} ہٹائیں؟ ZBox اسے مزید قبول نہیں کرے گا۔
+ab_col_email = ای میل
+ab_col_name = نام
+ab_col_phone = فون
+ab_no_contacts = ابھی کوئی رابطہ نہیں۔
+acct_auto_check = نئے پیغامات خودکار طور پر چیک کریں
+acct_note_auto_check = آف: ZBox اس اکاؤنٹ سے خود کبھی رابطہ نہیں کرتا، نہ نئی ڈاک کی نگرانی، نہ وقت پر ریفریش، نہ پس منظر میں ڈاؤن لوڈ، تاکہ ناقابلِ اعتماد سرور دوسرے اکاؤنٹس کو سست نہ کرے۔ ڈاؤن لوڈ شدہ ڈاک اب بھی کھلتی ہے، اور ریفریش (F5)، بھیجنا اور حذف کرنا اب بھی سرور تک پہنچتے ہیں۔ یہ ٹولز مینو یا اکاؤنٹ کے سیاق مینو میں خودکار جانچ روکیں جیسا ہی ہے۔
+bl_day_ago = 1 دن پہلے
+bl_days_ago = {days} دن پہلے
+bl_label_blocklists = بلاک لسٹ
+bl_label_phishing = فشنگ فہرست
+bl_last_failed = آخری کوشش ناکام: %s
+bl_not_downloaded = ابھی ڈاؤن لوڈ نہیں ہوا۔
+bl_save_failed = %s ڈاؤن لوڈ ہو گئی مگر محفوظ نہیں ہو سکی: %s
+bl_seed_only = بلٹ اِن فہرست سے %s ڈومینز۔ ابھی انٹرنیٹ سے اپ ڈیٹ نہیں ہوئی۔
+bl_some_failed = کچھ ذرائع ناکام رہے: %s
+bl_some_unreachable = کچھ ذرائع تک رسائی نہیں ہوئی: %s
+bl_status_line = %s ڈومینز۔ آخری اپ ڈیٹ %s۔
+bl_up_to_date = %s پہلے سے اپ ٹو ڈیٹ ہے۔
+bl_update_failed = %s اپ ڈیٹ نہیں ہو سکی: %s
+bl_updated = %s اپ ڈیٹ ہو گئی: %s ڈومینز۔
+cc_age_choice = %s پرانا ہر پیغام کیش
+cc_auto_button = خودکار صفائی: %s سے پرانے کیش شدہ پیغامات...
+comp_btn_discard = رد کریں
+comp_btn_keep_editing = ترمیم جاری رکھیں
+comp_btn_save_draft = مسودہ محفوظ کریں
+comp_no_account = کوئی اکاؤنٹ ترتیب نہیں دیا گیا
+comp_saving_draft = مسودہ محفوظ ہو رہا ہے…
+comp_this_message = یہ پیغام
+comp_unsent_save_q = بند کرنے سے پہلے %s کو مسودے کے طور پر محفوظ کریں؟
+comp_unsent_tray_q = ZBox کے ٹرے میں جانے سے پہلے %s کو مسودے کے طور پر محفوظ کریں؟
+doc_unreadable = دستاویز کی فائل پڑھی نہیں جا سکی:
+envlist_all_disabled = تمام اکاؤنٹس غیر فعال ہیں۔
+envlist_col_date = تاریخ
+envlist_col_from = بھیجنے والا
+envlist_col_status = حالت
+envlist_col_subject = موضوع
+envlist_collapsed = سمٹا ہوا (%d)
+envlist_empty = اس فولڈر میں کوئی پیغام نہیں۔
+envlist_loading = پیغامات لوڈ ہو رہے ہیں...
+envlist_no_accounts = ابھی کوئی اکاؤنٹ ترتیب نہیں دیا گیا۔
+envlist_no_ignored = اس فولڈر میں کوئی نظرانداز گفتگو نہیں۔
+envlist_no_watched = اس فولڈر میں کوئی زیرِ نگرانی گفتگو نہیں۔
+envlist_select_folder = پیغامات لوڈ کرنے کے لیے اکاؤنٹ یا فولڈر منتخب کریں۔
+eula_link_0 = Himalaya کا لائسنس صفحہ براؤزر میں کھولیں
+eula_link_1 = StevenBlack hosts کا لائسنس صفحہ براؤزر میں کھولیں
+eula_link_2 = EasyList/EasyPrivacy کا لائسنس صفحہ براؤزر میں کھولیں
+eula_link_3 = Phishing.Database کا لائسنس صفحہ براؤزر میں کھولیں
+eula_read_note = نیچے دیا گیا لائسنس، بشمول تیسرے فریق کے حصوں، پڑھیں۔ اگلا دستیاب ہونے سے پہلے آپ کو میں متفق ہوں پر نشان لگانا ہوگا۔ میں متفق نہیں ZBox کو شروع کیے بغیر بند کر دیتا ہے اور اس رن میں اب تک بنی چیزیں ہٹا دیتا ہے۔
+eula_unreadable = لائسنس فائل پڑھی نہیں جا سکی:\n%s
+filters_title = فلٹرز چلائیں
+flag_title = پیغام پر جھنڈا لگائیں
+folder_type_archive = آرکائیو
+folder_type_drafts = مسودے
+folder_type_inbox = ان باکس
+folder_type_junk = جنک
+folder_type_sent = بھیجے گئے
+folder_type_trash = ردی کی ٹوکری
+mime_application_json = JSON فائل
+mime_application_msword = Word دستاویز
+mime_application_octet_stream = بائنری فائل
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel اسپریڈ شیٹ
+mime_application_vnd_ms_powerpoint = PowerPoint پریزنٹیشن
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint پریزنٹیشن
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel اسپریڈ شیٹ
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word دستاویز
+mime_application_xml = XML فائل
+mime_application_zip = ZIP آرکائیو
+mime_audio_mpeg = MP3 آڈیو
+mime_audio_ogg = OGG آڈیو
+mime_audio_wav = WAV آڈیو
+mime_image_bmp = BMP تصویر
+mime_image_gif = GIF تصویر
+mime_image_jpeg = JPEG تصویر
+mime_image_png = PNG تصویر
+mime_image_svg_xml = SVG تصویر
+mime_image_webp = WebP تصویر
+mime_text_csv = CSV فائل
+mime_text_html = HTML فائل
+mime_text_plain = ٹیکسٹ فائل
+mime_video_mp4 = MP4 ویڈیو
+mime_video_x_msvideo = AVI ویڈیو
+move_title_junk = جنک کے طور پر نشان زد کریں
+move_title_move_to = منتقل کریں
+move_title_not_junk = جنک نہیں کے طور پر نشان زد کریں
+mp_explain_set = ایک ماسٹر پاس ورڈ مقرر ہے۔ یہی اس ZBox فولڈر کو دوسرے کمپیوٹر پر محفوظ اکاؤنٹ پاس ورڈ کھولنے دیتا ہے۔\n\nاسے ہٹانے کے لیے دونوں نئے پاس ورڈ خانے خالی چھوڑیں اور OK دبائیں۔ ہٹانے سے یہ کمپیوٹر متاثر نہیں ہوتا، لیکن ہر اکاؤنٹ میں دوبارہ سائن ان کیے بغیر فولڈر کسی اور کمپیوٹر پر کام نہیں کرے گا۔
+mp_explain_unset = کوئی ماسٹر پاس ورڈ مقرر نہیں، اس لیے محفوظ اکاؤنٹ پاس ورڈ صرف اس کمپیوٹر اور اس Windows اکاؤنٹ پر پڑھے جا سکتے ہیں۔ فولڈر کہیں اور کاپی کریں تو ہر اکاؤنٹ کو اپنے میل سرور پر دوبارہ سائن ان کرنا ہوگا۔\n\nایک مقرر کریں تو ZBox ہر نئے کمپیوٹر پر ایک بار پوچھے گا، پھر وہاں معمول کے مطابق کھلے گا۔ یہ کمپیوٹر دوبارہ نہیں پوچھے گا۔\n\nاسے لکھ لیں اور محفوظ جگہ رکھیں۔ یہ کہیں ذخیرہ نہیں ہوتا اور بحال نہیں ہو سکتا: بھول جائیں تو ہر اکاؤنٹ کو اپنے میل سرور پر دوبارہ سائن ان کرنا ہوگا۔
+mp_label_confirm = نئے ماسٹر پاس ورڈ کی تصدیق کریں:
+mp_label_current = موجودہ ماسٹر پاس ورڈ:
+mp_label_master = ماسٹر پاس ورڈ:
+mp_label_new = نیا ماسٹر پاس ورڈ:
+mp_name_confirm = نئے ماسٹر پاس ورڈ کی تصدیق
+mp_name_current = موجودہ ماسٹر پاس ورڈ
+mp_name_master = ماسٹر پاس ورڈ
+mp_name_new = نیا ماسٹر پاس ورڈ
+mp_prompt_existing = آپ کے محفوظ اکاؤنٹ پاس ورڈ صرف اس کمپیوٹر پر محفوظ ہیں۔ ماسٹر پاس ورڈ مقرر کریں تاکہ ZBox دوسرے کمپیوٹر پر لے جانے پر بھی کھل سکیں۔
+mp_prompt_first_run = ZBox آپ کے اکاؤنٹ پاس ورڈ محفوظ کرنے والا ہے۔ ابھی ماسٹر پاس ورڈ مقرر کریں تاکہ ZBox دوسرے کمپیوٹر پر لے جانے پر بھی کھل سکیں۔
+mp_prompt_new_account = ZBox اس اکاؤنٹ کا پاس ورڈ محفوظ کرنے والا ہے۔ پہلے ماسٹر پاس ورڈ مقرر کریں تاکہ ZBox دوسرے کمپیوٹر پر لے جانے پر بھی اکاؤنٹ کھل سکے۔
+mp_removed_done = ماسٹر پاس ورڈ ہٹا دیا گیا۔ محفوظ پاس ورڈ اب صرف اس کمپیوٹر اور اس Windows اکاؤنٹ پر کام کرتے ہیں۔
+mp_set_done = ماسٹر پاس ورڈ مقرر ہو گیا۔ ZBox ہر نئے کمپیوٹر پر جہاں یہ فولڈر کھلے، ایک بار پوچھے گا، پھر وہاں معمول کے مطابق کھلے گا۔
+mv_body_title = پیغام کا متن
+mv_col_format = فارمیٹ
+mv_col_name = نام
+mv_col_size = سائز
+mv_format_unknown = نامعلوم
+mv_size_unknown = نامعلوم سائز
+na_account_settings = اکاؤنٹ کی ترتیبات
+na_disable_account = اکاؤنٹ غیر فعال کریں
+na_edit_signature = دستخط میں ترمیم
+na_message_filters = پیغام فلٹرز
+na_mute_account = اکاؤنٹ خاموش کریں
+na_pause_auto_check = خودکار جانچ روکیں
+na_remove_account = اکاؤنٹ ہٹائیں
+na_set_default = بطور ڈیفالٹ اکاؤنٹ مقرر کریں
+no_offline_copy = %s کی آف لائن کاپی نہیں۔ آن لائن ہوتے ہوئے کھولیں، یا فائل، آف لائن، ابھی ہم آہنگ کریں استعمال کریں۔
+perm_delete_confirm = {msg} یہ ردی کی ٹوکری کو چھوڑ دیتا ہے اور واپس نہیں ہو سکتا۔
+perm_delete_many = {count} پیغامات مستقل طور پر حذف کریں؟
+perm_delete_one = {count} پیغام مستقل طور پر حذف کریں؟
+preset_note_apple = Apple کو ایپ مخصوص پاس ورڈ درکار ہے۔
+preset_note_fastmail = Fastmail کو ایپ پاس ورڈ درکار ہے۔
+preset_note_google = Google کو عام پاس ورڈ نہیں، ایپ پاس ورڈ یا OAuth2 درکار ہے۔
+preset_note_microsoft = Microsoft نے Outlook.com/Office 365 اکاؤنٹس کے لیے پاس ورڈ سائن ان ختم کر دیا ہے، صرف OAuth2 کام کرتا ہے جسے ZBox ابھی سپورٹ نہیں کرتا۔ یہ اکاؤنٹ سائن ان نہیں کر سکے گا۔
+preset_note_proton = ProtonMail کے لیے ProtonMail Bridge ایپ کا مقامی طور پر چلنا ضروری ہے۔
+preset_note_yahoo = Yahoo کو ایپ پاس ورڈ درکار ہے۔
+priv_phishing_not_loaded = فشنگ فہرست: ابھی لوڈ نہیں ہوئی۔ یہ پہلی بار تب ڈاؤن لوڈ ہوتی ہے جب یہ قواعد آن ہوں اور ZBox آن لائن ہو۔
+priv_phishing_prefix = فشنگ فہرست:
+priv_status_unavailable = بلاک لسٹ کی حالت دستیاب نہیں۔
+rdr_load_failed = پیغام لوڈ نہیں ہو سکا۔\n\n{message}
+rdr_loading = پیغام لوڈ ہو رہا ہے...
+rdr_select_message = یہاں پڑھنے کے لیے پیغام منتخب کریں۔
+set_autosave_off = آف — دستی محفوظ کرنے کے لیے مسودہ محفوظ کریں (Ctrl+S) استعمال کریں
+set_autosave_seconds = ہر {seconds} سیکنڈ
+set_no_unlock = یہاں کوئی پاس کی یا سیکیورٹی کی قابلِ استعمال نہیں
+set_purge_days = {days} دن بعد
+set_purge_off = آف — ردی کی ٹوکری اور جنک کبھی خودکار صاف نہیں ہوتے
+set_purge_one_day = 1 دن بعد
+set_rt_bundled_installed = ساتھ آنے والا رن ٹائم: انسٹال ہے۔
+set_rt_bundled_many = ساتھ آنے والا رن ٹائم: %s انسٹال ہے۔
+set_rt_bundled_none = ساتھ آنے والا رن ٹائم: انسٹال نہیں، اس لیے ZBox سسٹم وائیڈ والا استعمال کرتا ہے۔
+set_rt_bundled_unknown = ساتھ آنے والا رن ٹائم: معلوم نہیں ہو سکا۔
+set_rt_bundled_ver = ساتھ آنے والا رن ٹائم: ورژن %s انسٹال ہے۔
+set_rt_system_unknown = سسٹم وائیڈ رن ٹائم: ورژن معلوم نہیں ہو سکا۔
+set_rt_system_ver = سسٹم وائیڈ رن ٹائم: ورژن %s۔
+set_unlock_many = یہاں قابلِ استعمال %d ان لاک طریقے
+set_unlock_unreadable = ان لاک طریقے پڑھے نہیں جا سکے
+sig_tab_formatted = فارمیٹ شدہ
+sig_tab_source = HTML سورس
+srch_all_accounts = تمام اکاؤنٹس
+srch_all_folders = تمام فولڈرز
+tab_mail = ڈاک
+tab_new_message = نیا پیغام
+tab_saved_message = محفوظ پیغام
+title_copy_to_err = کاپی کریں
+title_mark_message = پیغام نشان زد کریں
+title_unsent_message = نہ بھیجا گیا پیغام
+tree_unified_root = یکجا فولڈرز
+unlock_kind_passkey = پاس کی (Windows Hello)
+unlock_kind_security_key = سیکیورٹی کی
+unlock_prompt_message = Windows آپ سے تصدیق مانگ رہا ہے۔ Windows Hello، اپنے PIN یا سیکیورٹی کی سے جواب دیں۔ Windows کے مکمل ہونے پر یہ ونڈو خود بند ہو جاتی ہے۔
+unlock_prompt_title = Windows سیکیورٹی
+unlock_registering = یہ ان لاک طریقہ رجسٹر کرنا
+unlock_the_passkey = پاس کی
+unlock_the_security_key = سیکیورٹی کی
+wildcard_eml = ای میل فائلیں (*.eml)|*.eml|تمام فائلیں (*.*)|*.*
+wildcard_export = ZBox ایکسپورٹ (*.json)|*.json
+wiz_not_supported = سپورٹ نہیں: {name}۔ {note} یہ اکاؤنٹ ZBox میں شامل نہیں ہو سکتا۔
+wiz_oauth_notice = ZBox ابھی OAuth2 سائن ان کی سہولت نہیں دیتا۔ جن اکاؤنٹس کو OAuth2 درکار ہو وہ شامل نہیں ہو سکتے۔ جو اکاؤنٹس پاس ورڈ یا ایپ پاس ورڈ قبول کرتے ہیں، وہ شامل ہو سکتے ہیں۔\n\nGmail۔ آپ کا عام Google پاس ورڈ رد ہو جائے گا، لیکن ایپ پاس ورڈ کام کرتا ہے۔ پہلے دو مرحلہ تصدیق آن ہونی چاہیے۔ نیچے والا بٹن Google کی ہدایات کھولتا ہے۔\n\nOutlook.com، Hotmail، Live اور Microsoft 365۔ ابھی سپورٹ نہیں۔ انہیں OAuth2 درکار ہے اور یہ آئندہ ورژن میں شامل ہوں گے۔\n\nدیگر فراہم کنندگان۔ عام پاس ورڈ یا ایپ پاس ورڈ عموماً کام کرتا ہے، اور آپ کے فراہم کنندہ کے مدد کے صفحات سرور کی ترتیبات بتاتے ہیں۔\n\nOAuth2 سپورٹ آنے پر یہ صفحہ ہٹا دیا جائے گا۔
+stock_apply = لاگو کریں
+stock_cancel = منسوخ کریں
+stock_close = بند کریں
+stock_help = مدد
+stock_no = نہیں
+stock_ok = ٹھیک ہے
+stock_yes = ہاں
+
+[errors]
+language_restart_failed = ZBox خود کو دوبارہ شروع نہیں کر سکا:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} کے لیے کوئی میل پروگرام نہیں کھل سکا۔
+
+wizard_no_oauth2 = یہ فراہم کنندہ OAuth2 کے بغیر سائن ان کی اجازت نہیں دیتا، جس کی ZBox ابھی معاونت نہیں کرتا -- یہاں کوئی پاس ورڈ یا ایپ پاس ورڈ کام نہیں کرے گا۔ یہ اکاؤنٹ شامل نہیں کیا جا سکتا۔ واپس جا کر کوئی اور ای میل پتہ استعمال کریں، یا منسوخ کر کے OAuth2 کی معاونت کا انتظار کریں۔
+wizard_test_failed = کنکشن ناکام:\n\n{error}
+
+contacts_import_unreadable = وہ فائل پڑھی نہیں جا سکی۔\n\n{error}
+contacts_export_unwritable = وہ فائل لکھی نہیں جا سکی۔\n\n{error}
+
+attach_unreadable = منسلکہ {path} پڑھا نہیں جا سکا:\n{error}
+send_failed = پیغام بھیجا نہیں جا سکا۔\n\n{error}
+draft_attach_unreadable = منسلکہ {path} پڑھا نہیں جا سکا:\n{error}\n\nمسودہ محفوظ نہیں ہوا۔
+draft_save_failed = مسودہ محفوظ نہیں ہو سکا۔\n\n{error}
+
+clipboard_unavailable = کلپ بورڈ نہیں کھل سکا۔
+open_link_failed = اس کے لیے آپ کا براؤزر نہیں کھل سکا:\n{url}
+
+master_password_mismatch = نئے ماسٹر پاس ورڈ کے دونوں خانے مطابقت نہیں رکھتے۔
+master_password_required = ماسٹر پاس ورڈ درج کریں، یا منسوخ کریں دبائیں۔
+master_password_not_set = ماسٹر پاس ورڈ مقرر نہیں ہو سکا: {error}
+master_password_not_here = ماسٹر پاس ورڈ یہاں سے تبدیل نہیں کیا جا سکتا۔
+
+attachment_save_failed = منسلکہ محفوظ نہیں ہو سکا۔\n\n{error}
+attachments_save_failed = منسلکات محفوظ نہیں ہو سکے۔\n\n{error}
+print_failed = پیغام پرنٹ نہیں ہو سکا۔ جانچیں کہ کوئی پرنٹر ترتیب دیا گیا ہے۔
+print_preview_failed = پرنٹ کا پیش منظر نہیں کھل سکا۔ جانچیں کہ کوئی پرنٹر ترتیب دیا گیا ہے۔
+
+related_search_failed = متعلقہ پیغامات تلاش نہیں کیے جا سکے۔\n\n{error}
+search_failed = تلاش ناکام ہو گئی۔\n\n{error}
+
+unlock_methods_no_config_folder = ZBox کو اپنا کنفیگریشن فولڈر نہیں ملا، اس لیے لاک کھولنے کے طریقوں کا یہاں انتظام نہیں ہو سکتا۔
+shortcut_no_folder = ZBox اپنا فولڈر معلوم نہیں کر سکا، اس لیے یہاں سے شارٹ کٹ نہیں بنایا جا سکتا۔
+shortcut_failed_settings = ڈیسک ٹاپ شارٹ کٹ نہیں بن سکا:\n\n{error}
+
+unlock_method_failed = {what} نے کام نہیں کیا۔\n\n{error}
+unlock_check_failed = ماسٹر پاس ورڈ کی جانچ نہیں ہو سکی۔\n\n{error}
+unlock_password_wrong = وہ ماسٹر پاس ورڈ درست نہیں ہے۔
+unlock_add_failed = {what} شامل نہیں ہو سکا۔\n\n{error}
+unlock_passkey_setup_failed = اس کمپیوٹر پر پاس کی ترتیب نہیں دی جا سکی، اس لیے کچھ نہیں بدلا۔\n\n{error}
+unlock_method_test_failed = اس طریقے نے کام نہیں کیا۔\n\n{error}
+
+account_list_unreadable = ZBox آپ کے اکاؤنٹس کی فہرست نہیں کھول سکا۔\n\n{error}\n\nکوئی اکاؤنٹ لوڈ نہیں ہوا، اور فائل تبدیل نہیں کی گئی، اس لیے کچھ ضائع نہیں ہوا۔ جب تک اسے پڑھا نہ جا سکے، اکاؤنٹس شامل کرنا، ترمیم کرنا اور ہٹانا ممنوع ہے۔
+account_list_no_accounts = ZBox اس سیشن میں آپ کے اکاؤنٹس کی فہرست نہیں کھول سکا ({error})، اس لیے منتخب کرنے کو کوئی اکاؤنٹ نہیں۔ کچھ ضائع نہیں ہوا اور کچھ تبدیل نہیں ہوا۔ ZBox بند کر کے دوبارہ شروع کریں، اور پوچھے جانے پر اپنا ماسٹر پاس ورڈ درج کریں۔
+open_message_failed = پیغام نہیں کھل سکا۔\n\n{error}
+filters_list_failed = {folder} کے پیغامات کی فہرست نہیں بن سکی۔\n\n{error}
+filters_move_failed = فلٹر شدہ پیغامات منتقل نہیں ہو سکے۔\n\n{error}
+cache_clear_failed = کیش صاف نہیں ہو سکا۔\n\n{error}
+folder_create_failed = فولڈر نہیں بن سکا۔\n\n{error}
+folder_rename_failed = فولڈر کا نام نہیں بدلا جا سکا۔\n\n{error}
+folder_delete_failed = فولڈر حذف نہیں ہو سکا۔\n\n{error}
+folder_subscribe_failed = فولڈر سبسکرائب نہیں ہو سکا۔\n\n{error}
+folder_unsubscribe_failed = فولڈر سے ان سبسکرائب نہیں ہو سکا۔\n\n{error}
+saved_open_failed = فائل نہیں کھل سکی۔\n\n{error}
+saved_parse_failed = اس فائل کو ای میل پیغام کے طور پر پڑھا نہیں جا سکا۔\n\n{error}
+save_file_failed = فائل محفوظ نہیں ہو سکی۔\n\n{error}
+save_fetch_failed = محفوظ کرنے کے لیے پیغام حاصل نہیں ہو سکا۔\n\n{error}
+empty_trash_failed = ردی کی ٹوکری خالی نہیں ہو سکی۔\n\n{error}
+empty_junk_failed = جنک خالی نہیں ہو سکا۔\n\n{error}
+export_write_failed = برآمد کی فائل لکھی نہیں جا سکی۔\n\n{error}
+import_read_failed = اس فائل کو ZBox برآمد کے طور پر پڑھا نہیں جا سکا۔\n\n{error}
+import_not_export = یہ فائل ZBox برآمد جیسی نہیں لگتی۔\n\n{error}
+search_open_failed = یہ پیغام نہیں کھل سکا۔
+related_load_failed = یہ پیغام لوڈ نہیں ہو سکا۔\n\n{error}
+reply_load_failed = جواب دینے کے لیے پیغام لوڈ نہیں ہو سکا۔\n\n{error}
+forward_load_failed = آگے بھیجنے کے لیے پیغام لوڈ نہیں ہو سکا۔\n\n{error}
+action_failed = یہ عمل مکمل نہیں ہو سکا۔\n\n{error}
+undo_failed = {label} کالعدم نہیں ہو سکا۔\n\n{error}
+copy_failed = پیغام کاپی نہیں ہو سکا۔\n\n{error}
+delete_failed = پیغام حذف نہیں ہو سکا۔\n\n{error}
+archive_failed = پیغام آرکائیو نہیں ہو سکا۔\n\n{error}
+master_password_not_changed = ماسٹر پاس ورڈ تبدیل نہیں ہو سکا: {error}
+shortcut_failed_startup = ڈیسک ٹاپ شارٹ کٹ نہیں بن سکا:\n\n{error}\n\nZBox شروع ہوتا رہے گا۔ آپ بعد میں ترتیبات سے دوبارہ کوشش کر سکتے ہیں۔
+account_locked_action = ZBox %s نہیں کر سکتا۔ اس سیشن میں اکاؤنٹس کی فہرست نہیں کھل سکی (%s)، اور کچھ تبدیل نہیں ہوا۔ ZBox بند کر کے دوبارہ شروع کریں، اور پوچھا جائے تو ماسٹر پاس ورڈ درج کریں۔
+
+[help]

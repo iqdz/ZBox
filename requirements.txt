@@ -1,0 +1,40 @@
+# ZBox dependencies.
+#
+# Split by what actually happens without each one, because "pip
+# install -r" hides the difference and the audit found both .bat
+# files checking for the wrong package as a result.
+
+# --- Required. ZBox does not start without these. ---
+
+wxPython>=4.2.0,<4.4
+
+# Windows DPAPI, used by dpapi_secret_store to encrypt account
+# passwords into config/secrets.dat. Without it no account can
+# authenticate.
+pywin32>=306; sys_platform == "win32"
+
+# --- Optional. ZBox runs without these, with less. ---
+
+# IMAP IDLE (imap_idle_watcher): real-time new-mail notification,
+# and the pooled body fetch (imap_body_fetch), which reads message
+# bodies over a held-open connection instead of a fresh himalaya
+# subprocess. Without it ZBox falls back to its 20-second poll and
+# to the subprocess fetch -- both correct, both slower. Both
+# imports are guarded.
+imapclient>=4.0.0,<5
+
+# Spoken announcements (announce.speak): hands text straight to
+# whichever screen reader is running -- NVDA, JAWS, Dolphin, System
+# Access, PC Talker, ZDSR -- with Microsoft SAPI as the last resort,
+# and no window and no focus change involved. MIT licensed, and it
+# carries the readers' own client DLLs inside the package, so there
+# is nothing to download separately. Without it ZBox falls back to a
+# short self-dismissing dialog, which every reader speaks but which
+# takes focus. The import is guarded.
+accessible-output2>=0.17
+
+# Migration only (legacy_keyring_store). Reads a password saved by a
+# ZBox install from before passwords moved to DPAPI, so it can be
+# migrated on first use. Nothing is ever written to it. A fresh
+# install never needs it, and the import is guarded.
+keyring>=24.0.0

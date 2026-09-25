@@ -1,0 +1,16 @@
+ZBox
+Por Harith Alhamdani
+
+ZBox es un cliente de correo electrónico portátil, ágil, seguro y totalmente accesible. Gratuito para uso personal y ligero en recursos del sistema. Se creó para ofrecer a las personas ciegas y con baja visión una alternativa real y completa a las opciones pesadas y lentas que suelen estar disponibles. Por dentro, ZBox funciona con el robusto cliente de correo Himalaya CLI.
+
+Privacidad y seguridad
+ZBox incluye un bloqueador de rastreadores y anuncios (activado de forma predeterminada), junto con reglas opcionales de correo no deseado y un comprobador de enlaces de phishing. Para una portabilidad segura, usa la protección con contraseña maestra: si la carpeta de la aplicación se copia a otro equipo sin esta contraseña, se bloquea el acceso a sus cuentas vinculadas. Si piensa trasladar ZBox a un equipo nuevo, asegúrese de establecer primero aquí una contraseña maestra. También admite llaves de acceso de Windows Hello (huella digital, PIN o reconocimiento facial) y llaves de seguridad de hardware modernas.
+
+Uso familiar
+Para que el cambio desde otros clientes de correo sea sencillo, ZBox ofrece atajos de teclado cómodos y flexibles. A menudo varios atajos realizan la misma acción; por ejemplo, tanto Alt+S como Ctrl+Enter envían un mensaje. Puede ver la lista completa en Ayuda, Atajos de teclado.
+
+Configuración de cuentas
+El inicio de sesión nativo con OAuth2 de Google y Microsoft se añadirá en futuras actualizaciones. Por ahora, puede vincular su cuenta de Gmail generando una contraseña de aplicación en lugar de usar su contraseña habitual (consulte el botón de abajo para ver las instrucciones).
+
+Licencias y créditos
+Pulse Ver licencia más abajo para leer la licencia de ZBox y ver los componentes de terceros que lo hacen posible. Entre ellos están Himalaya, las listas de bloqueo StevenBlack hosts y EasyPrivacy, la lista Phishing.Database y (en una copia compilada) Python, wxPython, imapclient, pywin32, keyring y accessible_output2 con sus bibliotecas cliente para lectores de pantalla.

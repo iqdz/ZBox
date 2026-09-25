@@ -1,0 +1,503 @@
+ZBOX DOCUMENTATION
+==================
+
+ZBox as it is today, in the order you meet it: first start, adding an
+account, reading, writing, organising, and everything around them.
+Every keyboard shortcut is listed in Help > Keyboard Shortcuts (F1),
+which is kept in step with the app, so this document names only the
+keys it needs.
+
+
+1. WHAT ZBOX IS
+---------------
+ZBox is a portable email client for Windows, built for screen reader
+users and tested with NVDA and JAWS. There is no decorative chrome,
+every control has a name, and every important state is also given as
+text, never by colour or bold alone.
+
+ZBox has no speech of its own. Everything it announces is handed to
+the screen reader you already run, in your own voice, rate and
+settings.
+
+Mail is read over IMAP and sent over SMTP through the Himalaya
+command-line mail client, which ships inside the ZBox folder.
+
+The whole folder is the app. There is no installer, nothing is added
+to the registry, and nothing is written outside the folder. Put it on
+a USB stick, an external drive or your desktop.
+
+This is a testing beta. Things will break, and reporting them is what
+this build is for (see section 17).
+
+
+2. FIRST START, STEP BY STEP
+----------------------------
+1. Unzip the ZBox folder anywhere and run ZBox.exe.
+2. The licence appears first. Read it, including the third-party
+   sections, check I Agree and press Next. I Disagree closes ZBox and
+   removes what that run had created, so nothing is left behind.
+3. ZBox asks you to set a master password. Set one, and write it down
+   somewhere safe. It is never stored, so it cannot be recovered. See
+   section 12 for what it protects.
+4. The New Account wizard opens. Section 3 walks through it.
+
+ZBox also offers to put a shortcut on your Desktop. A shortcut
+records the exact folder, so if you move ZBox later, create it again
+from Settings, System tray and window.
+
+A folder moved from another computer, with accounts already set up,
+skips these steps and asks for the master password instead.
+
+
+3. ADDING AN ACCOUNT
+--------------------
+File > New > Email Account (Ctrl+Shift+N) opens the wizard.
+
+1. The first page says which providers work. Read it and press Next.
+2. Type your name and your email address.
+3. Type the login email and the password. The login email is usually
+   the same as the address; if your provider signs you in with a
+   different one, enter that here. A different sending address can be
+   set later in Account Settings.
+4. The server page is filled in for providers ZBox knows. Every field
+   stays editable. For any other provider, its help pages list the
+   IMAP and SMTP servers, ports and encryption.
+5. Press Test Connection. It checks the settings without saving the
+   account, and says how many messages it found in Inbox.
+6. Review the summary and press Finish.
+
+Gmail
+Gmail refuses your normal Google password in a mail program. Use a
+Google app password:
+1. Open https://myaccount.google.com/security and turn on 2-Step
+   Verification. App passwords are not offered until it is on.
+2. Open https://myaccount.google.com/apppasswords and sign in if asked.
+3. Create an app password named ZBox. Google shows it once, as 16
+   letters in groups of four. Copy it.
+4. Remove the empty spaces from it, so it is 16 letters with no spaces.
+5. Paste it where the wizard asks for the password.
+If the page says app passwords are not available, 2-Step Verification
+is still off, or the account is a work, school or Advanced Protection
+account that does not allow them. Changing your Google password
+cancels every app password: create a new one and enter it in Tools >
+Account Settings, in the New password field. Help > About ZBox has a
+button that opens Google's own instructions.
+
+Outlook.com, Hotmail, Live and Microsoft 365
+Not supported yet. Microsoft has switched off password and app
+password sign-in for mail programs on these accounts; they accept
+only OAuth2, and ZBox does not support OAuth2 yet. The wizard
+recognises these addresses, says so, and does not add the account.
+
+Other providers
+Anything with plain IMAP and SMTP should work with its normal password
+or an app password: Yahoo, Fastmail and Apple (each needs an app
+password), your own server, or a work account that allows it. Proton
+Mail needs the Proton Mail Bridge app running on the same computer.
+
+
+4. THE MAIN WINDOW
+------------------
+The Mail tab is always first and cannot be closed. It has three
+panes, and F6 moves between them.
+
+1. Accounts and Folders, a tree. Unified Folders come first if you
+   have set any up, then one branch per account with its Inbox, Sent,
+   Drafts, Trash, Junk, Archive and any other folders on the server.
+2. Messages, the list, with Status, From, Subject and Date columns.
+   Status says Unread in words. Conversations are grouped into
+   threads, collapsed by default and showing how many messages they
+   hold.
+3. Message, a reader that previews the selected message without
+   marking it read.
+
+Opening a message, writing one, searching, or opening a conversation
+each adds a tab. Ctrl+Tab and Ctrl+Shift+Tab move between tabs, and
+Ctrl+W, Ctrl+F4 or Escape closes the current one and returns to the
+list. The status bar reports loading, counts and results.
+
+The Menu key, Shift+F10 or a right click opens a context menu on the
+tree or the list. On an account it offers Account Settings, Mute,
+Pause Automatic Checking, Enable or Disable, Set as Default Account,
+Remove, Refresh, and New Folder. On a folder it adds Rename, Delete,
+Subscribe or Unsubscribe, and Empty Trash or Empty Junk where they
+apply.
+
+
+5. READING MAIL
+---------------
+1. Arrow through the list. The reader pane previews each message
+   without marking it read.
+2. Press Enter or Space to open a message in its own tab. It opens
+   with focus in the message body and is marked read.
+3. On a collapsed thread, Enter opens its newest unread message, and
+   Ctrl+Shift+Page Down and Ctrl+Shift+Page Up then move through the
+   rest of the thread in the same tab. Right arrow shows the thread's
+   messages as rows without opening any; Left arrow collapses it.
+4. Ctrl+Shift+O opens the whole thread in one tab as a conversation:
+   a list of its messages with the selected one's body underneath.
+5. Ctrl+Shift+T shows messages related to the selected one across
+   every folder of that account, found by their threading headers.
+
+Headers
+From, To, Cc, Date and Subject sit above the body, outside it, so the
+sender's styling cannot hide them. Focus lands in the body; the
+headers are one Shift+Tab away. They can be turned off in Settings.
+Ctrl+U announces the sender's name and address, and Ctrl+Shift+U also
+copies the address. Both use a short dialog that closes by itself,
+because the status bar is only spoken if your screen reader reports
+it.
+
+HTML and Text view
+HTML is the default. It shows the message as sent, through Microsoft
+Edge WebView2, prepared so the screen reader reads the message and
+nothing else: the page is named by the subject, the reading cursor
+starts at the top of the message, and ZBox's own keys, F6 included,
+keep working inside the page. Ctrl+B switches the open message to
+Text view, plain text in an ordinary read-only field, and back.
+Settings can make Text the default, or switch HTML to the legacy
+MSHTML engine, which some screen readers read more predictably.
+
+Remote content
+Images, styles and fonts that a message would fetch from the internet
+are blocked, because they tell the sender when and where you opened
+it. A notice above the message says what was blocked. Its buttons
+show the remote content for this message (also Ctrl+Shift+I), or
+always allow this sender. Pictures attached to the message always
+show. See section 11.
+
+Attachments
+An open message lists its attachments with name, format and size.
+Save one, or Save All into the attachments folder chosen in Settings.
+
+Zoom
+Ctrl+Shift+= and Ctrl+Shift+- change the message font size, and
+Ctrl+Shift+0 resets it. Settings can also set a reading font.
+
+Saved messages and printing
+File > Save Message As (Ctrl+S) saves the open message as an .eml
+file. File > Open Saved Message opens an .eml file read-only. Print
+(Ctrl+P) and Print Preview (Ctrl+Shift+P) use the standard Windows
+dialogs.
+
+
+6. WRITING MAIL
+---------------
+1. Ctrl+N opens a new message in its own tab. Reply (Ctrl+R), Reply
+   All (Ctrl+Shift+R) and Forward (Ctrl+L) open one filled in from the
+   message. Reply goes to the message's Reply-To address when it has
+   one, and replies stay in the same conversation for the recipient.
+2. Choose the From account, fill in To, Cc, Bcc and Subject. Typing a
+   contact or a group name completes it from the address book.
+3. Write the body. Formatting is on the Compose and Format menus and
+   on keys such as Ctrl+B bold, Ctrl+I italic and Ctrl+K link.
+   Ctrl+Shift+K says what formatting is at the caret.
+4. Check spelling with Ctrl+Shift+F7. The Spell Check dialog offers
+   suggestions, Replace, Replace All, Ignore and Add to Dictionary.
+5. Attach files with Ctrl+Shift+A. Files are sent with their real
+   type, so images and PDFs preview for the recipient.
+6. Preview (Ctrl+Shift+P) shows the message as the recipient will
+   read it, and the HTML that will be sent.
+7. Send with Ctrl+Enter or Alt+S.
+
+Drafts save themselves on a timer while you write (Settings, Draft
+autosave interval), and Ctrl+S saves one at any time. Closing a tab
+with unsaved writing asks whether to save a draft, discard it, or
+keep editing. A reply you never typed into closes without asking.
+
+Each account can have a signature, written in a formatted editor
+(Compose > Edit Signature, or Account Settings), with a plain text
+version sent alongside it. It is added to new messages, replies and
+forwards, and Ctrl+Shift+S inserts it by hand.
+
+
+7. ORGANISING MAIL
+------------------
+Every action below works on all selected messages at once
+(Shift+Up and Down, or Ctrl+A for all), and on a whole thread when
+used on a collapsed thread row. ZBox says how many were done, and
+only shows a dialog when something did not work.
+
+- Delete moves messages to Trash. Shift+Delete deletes them
+  permanently after a confirmation.
+- Archive moves them to the account's archive folder (on Gmail, All
+  Mail).
+- Move To and Copy To, in the list's context menu, list the account's
+  own folders.
+- Mark Read, Unread, Flagged, Junk or Not Junk, from Message > Mark.
+- Watch Thread and Ignore Thread, and View > Threads to show all,
+  watched or ignored threads.
+- Undo (Ctrl+Z) takes back the last Delete, Archive, Mark as Junk,
+  Mark as Not Junk or move.
+
+In the message list, the single keys S (flag), A (archive), J (junk),
+Shift+J (not junk), W (watch) and K (ignore) act at once. They are on
+by default and can be turned off in Settings.
+
+Folders can be created, renamed, deleted, subscribed and unsubscribed
+from the tree's context menu. File > Empty Trash and the folder menu's
+Empty Junk delete everything in them after a confirmation. By default
+anything that has sat in Trash or Junk for 30 days is removed once a
+day (Settings, Auto-purge).
+
+Message Filters (Tools > Message Filters) are rules per account that
+test From, To and Subject, then mark read, flag, or move to a folder.
+They run on new Inbox mail as it arrives, and Run Now applies them to
+a folder's existing messages.
+
+
+8. CHECKING FOR NEW MAIL
+------------------------
+1. Each account keeps its own connection open and is told by the
+   server the moment new mail arrives. The folder on screen is also
+   checked regularly in the background.
+2. F5 checks the current account now, and Shift+F5 all accounts.
+3. New mail plays a sound and shows a Windows notification. Both can
+   be turned off in Settings, and Tools > Mute Account silences one
+   account.
+4. If an account cannot be reached, ZBox says so and pauses its
+   automatic checks for a few minutes, longer each time, so one
+   unreliable server cannot slow the others.
+5. Tools > Pause Automatic Checking stops ZBox contacting an account on
+   its own. Its downloaded mail still opens, and F5, sending and
+   deleting still reach the server.
+6. Tools > Disable Account stops all contact until it is enabled
+   again. The account stays in the tree, marked disabled.
+
+Offline
+File > Offline > Work Offline shows the last synced copy instead of
+the server. Any folder opened while online keeps a local copy.
+Synchronize Now downloads the most recent messages of Inbox, Sent and
+Drafts for the selected account. Tools > Cache Clean Up Configuration
+removes old local copies, by hand or automatically; nothing is ever
+deleted from the server.
+
+System tray
+ZBox shows an icon in the notification area with the unread count.
+Settings can minimize or close ZBox to the tray, keep it maximized,
+and start it with Windows. File > Exit (Ctrl+Shift+Q) and the tray
+icon's Quit always really quit.
+
+
+9. SEARCH
+---------
+Edit > Find Messages (Ctrl+Shift+F) opens a search tab. Type the text,
+optionally narrow it to one account and one folder, and press Enter.
+It searches From, Subject and body, and the results open like any
+message.
+
+
+10. ADDRESS BOOK
+----------------
+Tools > Address Book (Ctrl+Shift+B) holds contacts with name, email,
+phone and notes. Import and export use vCard (.vcf) or CSV. Groups
+work as mailing lists: typing a group's name in To, Cc or Bcc fills in
+all its members. Message > Add Sender to Address Book adds the sender
+of the selected message.
+
+
+11. PRIVACY, CONTENT BLOCKING AND JUNK RULES
+--------------------------------------------
+All of this is in Tools > Privacy and Content Blocking.
+
+Remote content blocking is on by default (section 5). Scripts, frames
+and embedded objects are removed from every message, always.
+
+The ad and tracker blocklist is the second layer. When you do load a
+message's remote content, or allow a sender, anything from a known
+advertising or tracking domain still stays blocked. The list is
+merged from public sources (StevenBlack hosts and EasyPrivacy),
+updated daily in the background, and has an Update Now button.
+
+Junk mail rules are off by default, and nothing in them guesses.
+- Mark as Junk puts the sender on a blocked list, except mailing list
+  mail and mail from your own addresses.
+- Mark as Not Junk returns the message to where it came from, and puts
+  the sender on a never-junk list, which always wins.
+- With the rules on, new Inbox mail from a blocked sender shows
+  Blocked Sender in the Status column, or moves to Junk if you choose.
+- Links in new Inbox mail are checked against a public list of known
+  phishing domains (Phishing.Database). A match shows Possible
+  Phishing and is never moved.
+Each list has a Remove button. Your provider's own spam filtering
+still runs as before.
+
+
+12. SECURITY, AND MOVING ZBOX TO ANOTHER COMPUTER
+-------------------------------------------------
+Account passwords are encrypted on disk. On the computer you set ZBox
+up on, Windows itself holds the key, which is why ZBox opens without
+asking. That key does not travel with the folder.
+
+The master password is what lets the folder open its saved passwords
+on another computer. So:
+1. Set a master password (Settings, App and Data Security, Master
+   password) before you move the folder.
+2. On the new computer ZBox asks for it once, then opens normally
+   there from then on.
+3. Without one, every account has to be signed in to its server again
+   on the new computer.
+The master password is never stored and cannot be recovered. Write it
+down.
+
+ZBox also recognises each computer, and locks and asks for the master
+password on one it has not seen before, even if Windows would have let
+it through.
+
+App lock
+Settings, App and Data Security, Lock ZBox when it is fully quit,
+makes ZBox ask for an unlock method at every start. Unlock methods can
+be a passkey through Windows Hello, a FIDO2 security key, or the
+master password. A passkey or security key only unlocks the app; the
+master password is still the only thing that opens the saved passwords
+on another computer.
+
+Import and export
+Tools > Export Accounts and Settings writes a file you can import on
+another copy of ZBox. Passwords are never exported, so each imported
+account needs its password entered once in Account Settings.
+
+
+13. SETTINGS
+------------
+Tools > Settings, in groups:
+- Language and theme: interface language, and interface theme (Follow
+  system, Light, Dark, Midnight blue, Warm dark, Soft contrast). Both
+  take effect after a restart, which ZBox offers to do.
+- Reading: message headers on or off, font size and reading font,
+  default view (HTML or Text), HTML engine, and WebView2 runtime.
+- Screen reader: how long ZBox quiets the screen reader while an HTML
+  message opens, how long it waits before focusing the page, how long
+  its own announcements stay up, and whether actions are announced.
+- Writing and folders: attachments folder, draft autosave interval,
+  Trash and Junk auto-purge, and the single-key list shortcuts.
+- Sound and notifications: sounds on or off, desktop notifications,
+  and the sound theme. A sound theme is a folder of .wav files in
+  data\sounds; any file it lacks falls back to the default sound.
+- App and Data Security: app lock, unlock methods, master password.
+- System tray and window: minimize or close to the tray, stay
+  maximized, run when Windows starts, and create a desktop shortcut.
+- Debug logging, which writes one log per launch in data\logs.
+
+Account Settings (Tools > Account Settings) holds each account's name,
+addresses and extra identities, a new password, signature, junk
+folder, server settings, and whether it is muted, checked
+automatically, disabled or the default. Remove Account removes it from
+ZBox and deletes its local copies and saved password; mail on the
+server is not touched.
+
+
+14. MENUS
+---------
+File: New (Message, Email Account), Open Saved Message, Close, Save
+Message As, Get New Messages for (All Accounts, Current Account),
+Offline (Work Offline, Synchronize Now), Print, Print Preview, Exit.
+
+Edit: Undo, Select All, Find Messages.
+
+View: Folders (All, Unified, Jump to Inbox Messages List, Configure
+Unified Folders), Sort By (Date, Subject, From, Descending, Ascending),
+Threads (All, Watched, Ignored, Expand All, Collapse All), Load More
+Messages, Switch Between Text and HTML View, Show Remote Content in
+This Message, Message Zoom.
+
+Message: Reply, Reply All, Forward, Archive, Delete, Delete
+Permanently, Mark (Read, Unread, Flagged, Junk, Not Junk), Watch
+Thread, Ignore Thread, Open Message in Conversation, Show Related
+Messages, Add Sender to Address Book, Announce Sender, Announce Sender
+and Copy Address.
+
+Compose (in a compose tab): Send, Save Draft, Attach File, the
+formatting commands, Insert Link, Formatting Here, Check Spelling,
+Next Misspelling, Add Word to Dictionary, Insert Signature, Paste as
+Quotation, Word Count, Preview, Edit Signature, and two diagnostics.
+
+Tools: Account Settings, Mute Account, Pause Automatic Checking,
+Disable Account, Remove Account, Address Book, Message Filters, Import
+Accounts and Settings, Export Accounts and Settings, Cache Clean Up
+Configuration, Privacy and Content Blocking, Settings.
+
+Help: Keyboard Shortcuts (F1), About ZBox.
+
+Unified Folders combine one folder type, such as Inbox, from every
+account into a single list. Choose them in View > Folders > Configure
+Unified Folders. Ctrl+Shift+J jumps to the inbox list.
+
+
+15. LANGUAGES
+-------------
+ZBox's interface is available in English and 14 translations:
+Arabic (العربية), Bengali (বাংলা), Chinese Simplified (简体中文),
+French (Français), German (Deutsch), Hindi (हिन्दी), Indonesian (Bahasa
+Indonesia), Persian (فارسی), Portuguese Brazil (Português (Brasil)),
+Portuguese Portugal (Português (Portugal)), Russian (Русский),
+Spanish (Español), Turkish (Türkçe) and Urdu (اردو). Arabic, Persian
+and Urdu are laid out right to left.
+
+Choose one in Settings, Interface language. ZBox restarts to apply it.
+Plain Windows message box buttons such as OK and Cancel follow
+Windows' own language.
+
+About the translations
+The current translations were made mainly with generative
+translation, not by native translators. They will have mistakes,
+wording that sounds unnatural, and terms your own screen reader or
+other programs say differently. If you speak one of these languages,
+fixes are very welcome: propose better wording, or report anything
+wrong or unclear, by email to harith@gvoice.org. Say which language,
+where in ZBox the text appears, what it says now, and what it should
+say.
+
+More languages
+More languages will be added in future versions. You can also make
+one yourself. Each language is a folder in data\lang holding a plain
+text .lang file:
+1. Copy the en folder, and rename the copy and the en.lang file inside
+   it to your language code, for example it and it.lang.
+2. Change only the text to the right of each equals sign. The notes at
+   the top of the file explain the rest.
+3. Anything not yet translated is spoken in English rather than left
+   silent, so a part-finished file is safe to use.
+4. Send the finished file to harith@gvoice.org to have it included in
+   ZBox for everyone.
+
+
+16. FILES AND FOLDERS
+---------------------
+ZBox.exe                 the app
+apps_files\              the libraries ZBox needs
+apps_files\webview2\     an optional bundled WebView2 runtime, installed
+                         with tools\get_webview2.bat
+himalaya\himalaya.exe    the Himalaya mail client
+docs\                    this document and the licence
+data\                    everything that is yours. Back this folder up
+                         and you have backed up ZBox.
+data\config\             the account list, settings, and the encrypted
+                         passwords (secrets.dat)
+data\userdata\           per-account data, contacts, junk rules and the
+                         block lists
+data\cache\              offline copies of messages, downloaded again
+                         whenever needed
+data\lang\               interface languages, one folder each
+data\sounds\             sound themes, one folder each
+data\logs\               debug logs, one per launch
+
+Debug logs are written so they can be sent safely. Message bodies,
+subjects, names, addresses and message ids are left out, and addresses
+appear only by domain. You can read a log before sending it.
+
+
+17. NOT YET SUPPORTED, AND REPORTING PROBLEMS
+---------------------------------------------
+Not yet supported:
+- OAuth2 sign-in, so Outlook.com, Hotmail, Live and Microsoft 365
+  accounts cannot be added. OAuth2 for Microsoft and Google is planned.
+- PGP encryption, deferred unless users ask for it.
+
+Reporting a problem: email harith@gvoice.org. GitHub issues are not
+used. Please include:
+1. What you did, what you expected, and what happened instead.
+2. Your screen reader and its version, and your Windows version.
+3. Whether it happens every time or only once.
+If a debug log is asked for, turn on Settings, Debug logging, repeat
+the problem, and attach the newest file from data\logs.

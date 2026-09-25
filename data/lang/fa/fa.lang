@@ -1,0 +1,1437 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = فارسی
+code = fa
+translator = ZBox
+app_version = 2026.09
+direction = rtl
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = پیام ارسال شد.
+draft_saved = پیش‌نویس ذخیره شد.
+signature_inserted = امضا درج شد.
+signature_none = این حساب امضا ندارد.
+signature_saved = امضا ذخیره شد.
+signature_not_saved = امضا ذخیره نشد.
+pasted_as_quotation = به‌صورت نقل‌قول جای‌گذاری شد.
+clipboard_empty = چیزی در بریده‌دان نیست.
+word_count = {words} واژه، {characters} نویسه.
+report_copied = گزارش رونوشت شد.
+compose_tab_needed = این دستور به یک زبانهٔ نگارش نیاز دارد.
+attach_file_instead = فایل‌های رها‌شده در متن پیام قرار نمی‌گیرند. برای ارسال یکی از پیوست فایل استفاده کنید.
+
+# Formatting in the message body
+formatting_here = قالب‌بندی اینجا: {formatting}.
+no_formatting_here = بدون قالب‌بندی، متن ساده.
+
+# Spelling
+nothing_to_check = چیزی برای بررسی نیست.
+no_misspellings = غلط املایی یافت نشد.
+spelling_dictionary_unavailable = فرهنگ لغت املایی در دسترس نیست.
+next_misspelling_first = ابتدا از غلط املایی بعدی استفاده کنید.
+word_added = {word} به فرهنگ لغت افزوده شد.
+word_not_added = {word} افزوده نشد.
+corrections_applied_one = ۱ اصلاح اعمال شد.
+corrections_applied_many = {count} اصلاح اعمال شد.
+corrections_applied_partly = {applied} از {total} اصلاح اعمال شد. بقیه رد شدند؛ به گزارش نگاه کنید.
+occurrences_replaced_one = ۱ مورد جایگزین شد.
+occurrences_replaced_many = {count} مورد جایگزین شد.
+
+# Reading mail
+message_did_not_open = پیام باز نشد. سرور پاسخ نداد. برای تلاش دوباره کلید Enter را بزنید.
+thread_open = {messages} در این رشته. برای بستن دوباره بزنید.
+no_thread_selected = هیچ رشته‌ای انتخاب نشده است.
+thread_watched = رشته زیرنظر گرفته شد.
+thread_not_watched = رشته دیگر زیرنظر نیست.
+thread_ignored = رشته نادیده گرفته شد.
+thread_not_ignored = رشته دیگر نادیده گرفته نمی‌شود.
+none_found = چیزی یافت نشد.
+refreshing_this_folder = این پوشه در حال به‌روزرسانی است.
+refreshing_all_accounts = همهٔ حساب‌ها در حال به‌روزرسانی هستند.
+message_view_html = نمای پیام: HTML (رندرشده).
+message_view_text = نمای پیام: متن.
+remote_content_blocked = محتوای راه‌دور مسدود شد.
+remote_content_unblocked = محتوای راه‌دور رفع مسدودی شد.
+remote_content_already_showing = محتوای راه‌دور این پیام از قبل نمایش داده می‌شود.
+archived = بایگانی شد.
+copied_to_folder = به {to_folder} رونوشت شد.
+deleted_one = پیام برای همیشه حذف شد.
+deleted_many = {count} پیام برای همیشه حذف شد.
+trashed_one = پیام به زباله‌دان منتقل شد.
+trashed_many = {count} پیام به زباله‌دان منتقل شد.
+
+# Accounts and new mail
+no_account_yet = هنوز حسابی برای پرش وجود ندارد.
+inbox_landed = صندوق ورودی {name}.
+account_enabled = {name} فعال شد.
+account_disabled = {name} غیرفعال شد.
+new_mail_one = ۱ پیام جدید برای {name}.
+new_mail_many = {count} پیام جدید برای {name}.
+refresh_all_done_one = ۱ حساب به‌روزرسانی شد.
+refresh_all_done_many = {count} حساب به‌روزرسانی شد.
+refresh_all_done_failures = {count} حساب به‌روزرسانی شد، {failed} حساب به‌روزرسانی نشد.
+refresh_all_done_failures_one = {count} حساب به‌روزرسانی شد، {failed} حساب به‌روزرسانی نشد.
+
+# The sender of the message in view
+sender_address_copied = {sender}. نشانی رونوشت شد.
+sender_no_address = {sender}. نشانی‌ای برای رونوشت نیست.
+clipboard_not_opened = {sender}. بریده‌دان باز نشد.
+
+# The signature editor
+signature_page_formatted = قالب‌بندی‌شده. این چیزی است که ذخیره خواهد شد.
+signature_page_html = منبع HTML. این چیزی است که ذخیره خواهد شد.
+signature_page_html_still_wins = قالب‌بندی‌شده. منبع HTML همچنان چیزی است که ذخیره خواهد شد.
+
+# Background work
+phishing_list_updating = فهرست فیشینگ در پس‌زمینه به‌روزرسانی می‌شود.
+cache_cleared = {files} فایل انباشته پاک شد، {size} مگابایت.
+hotkeys_diagnostic_on = عیب‌یاب کلیدهای میانبر روشن، علامت‌دار
+hotkeys_diagnostic_off = عیب‌یاب کلیدهای میانبر خاموش، بدون علامت
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = بایگانی
+action_delete = حذف
+action_delete_permanently = حذف برای همیشه
+action_mark_as_junk = علامت‌گذاری به‌عنوان هرزنامه
+action_mark_as_not_junk = علامت‌گذاری به‌عنوان غیرهرزنامه
+action_move_to = انتقال به
+action_copy_to = رونوشت به
+action_mark_message = علامت‌گذاری پیام
+action_undo = واگرد
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} واگرد شد.
+undo_done_many = {action} برای {count} پیام واگرد شد.
+junk_marked_one = به‌عنوان هرزنامه علامت خورد.
+junk_marked_many = {count} پیام به‌عنوان هرزنامه علامت خورد.
+junk_no_new_sender = هیچ فرستندهٔ جدیدی مسدود نشد: از قبل مسدود بوده، فهرست پستی است، یا یکی از نشانی‌های خودتان است.
+not_junk_marked_one = به‌عنوان غیرهرزنامه علامت خورد.
+not_junk_marked_many = {count} پیام به‌عنوان غیرهرزنامه علامت خورد.
+moved_to_one = به {to_folder} منتقل شد.
+moved_to_many = {count} پیام به {to_folder} منتقل شد.
+copied_to_many = {count} پیام به {to_folder} رونوشت شد.
+marked_read = به‌عنوان خوانده‌شده علامت خورد.
+marked_unread = به‌عنوان خوانده‌نشده علامت خورد.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = پس از {completed} از {total} لغو شد. {succeeded} موفق، {failed} ناموفق.
+bulk_failed_one = {done} {failed} از ۱ پیام ناموفق بود.
+bulk_failed_many = {done} {failed} از {total} پیام ناموفق بود.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = پررنگ
+format_word_italic = کج
+format_word_strike = خط‌خورده
+format_word_href = پیوند
+format_word_bullet = فهرست نقطه‌ای
+format_word_number = فهرست شماره‌دار
+format_word_quote = نقل‌قول
+format_word_code = کد
+format_word_heading1 = سرتیتر
+format_applied = {formatting} اعمال شد.
+format_inserted = {formatting} درج شد.
+format_not_available = {formatting} در بدنهٔ پیام ساده در دسترس نیست.
+format_on = {formatting} روشن
+format_off = {formatting} خاموش
+link_applied = پیوند اعمال شد.
+link_applied_to_selection = پیوند به گزیده اعمال شد.
+plain_body_formatting = بدنهٔ پیام ساده قالب‌بندی خود را به‌صورت برچسب نشان می‌دهد.
+
+# Reaching either end of a thread
+thread_edge_first = اولین پیام در این رشته. برای بستن دوباره بزنید.
+thread_edge_last = آخرین پیام در این رشته. برای بستن دوباره بزنید.
+auto_check_paused = بررسی خودکار برای {account} متوقف شد.
+auto_check_resumed = بررسی خودکار برای {account} روشن است.
+html_view_still_loading = پیام هنوز در حال بارگیری است. Escape آن را می‌بندد.
+jump_unified_inbox = صندوق ورودی یکپارچه.
+message_still_opening = در حال باز کردن پیام. سرور کند است.
+remote_none = این پیام محتوای راه دور ندارد.
+sender_none = این پیام فرستنده ندارد.
+sender_name_no_address = %s، بدون نشانی
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = چیزی در بالا تایپ کنید و Enter یا گزینهٔ جستجو را انتخاب کنید.
+search_no_account = ابتدا یک حساب اضافه کنید.
+search_no_term = چیزی برای جستجو تایپ کنید.
+search_running = در حال جستجو...
+search_none = هیچ نتیجه‌ای برای «{term}» نیست.
+search_found_one = ۱ نتیجه برای «{term}».
+search_found_many = {count} نتیجه برای «{term}».
+search_failed = جستجو ناموفق بود.
+
+# The related messages tab
+related_running = در حال جستجو...
+related_none = هیچ پیام مرتبطی یافت نشد.
+related_found_one = ۱ پیام مرتبط یافت شد.
+related_found_many = {count} پیام مرتبط یافت شد.
+related_failed = جستجوی پیام‌های مرتبط ممکن نشد.
+
+# Writing and sending
+sending_via = در حال ارسال از طریق {sender}...
+send_failed = ارسال ناموفق بود. برای جزئیات به گزارش‌ها نگاه کنید.
+draft_autosaved = پیش‌نویس به‌طور خودکار ذخیره شد.
+draft_autosave_failed = ذخیرهٔ خودکار پیش‌نویس ناموفق بود. برای جزئیات به گزارش‌ها نگاه کنید.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = از این پس محتوای راه‌دور برای پیام‌های {sender} بارگذاری خواهد شد.
+downloading_attachment = در حال بارگیری {filename}...
+downloading_attachments_one = در حال بارگیری ۱ پیوست...
+downloading_attachments_many = در حال بارگیری {count} پیوست...
+saved_to = در {folder} ذخیره شد
+attachment_download_failed = بارگیری پیوست ناموفق بود.
+
+# Getting mail onto the screen
+loading_folder = در حال بارگذاری {folder} برای {account}...
+messages_in_folder = {count} پیام در {folder}.
+messages_in_folder_cached = {count} پیام در {folder} (آخرین نسخهٔ همگام‌سازی‌شده، در حال به‌روزرسانی...)
+no_offline_copy = هنوز نسخهٔ آفلاینی از {folder} نیست.
+refresh_failed_cached = {folder} به‌روزرسانی نشد: آخرین نسخهٔ همگام‌سازی‌شده نمایش داده می‌شود.
+no_such_folder = پوشهٔ {folder} برای این حساب وجود ندارد.
+load_failed = بارگذاری پیام‌ها ناموفق بود. برای جزئیات به گزارش‌ها نگاه کنید.
+no_more_to_load = پیام بیشتری برای بارگذاری در این پوشه نیست.
+loading_more = در حال بارگذاری پیام‌های بیشتر در {folder}...
+more_loaded = {count} پیام دیگر بارگذاری شد.
+no_more_messages = پیام دیگری در این پوشه نیست.
+load_more_failed = بارگذاری پیام‌های بیشتر ممکن نشد: {error}
+loading_unified = در حال بارگذاری {folder} یکپارچه...
+messages_in_unified = {count} پیام در سراسر حساب‌ها در {folder} یکپارچه.
+messages_in_unified_cached = {count} پیام در {folder} یکپارچه (آخرین نسخهٔ همگام‌سازی‌شده، در حال به‌روزرسانی...)
+auto_purge_done = پاک‌سازی خودکار {count} پیام قدیمی را از زباله‌دان/هرزنامه حذف کرد.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = آماده.
+opening_message = در حال باز کردن پیام...
+opening_message_already = در حال باز کردن پیام... (از قبل در حال بارگذاری)
+could_not_open_message = پیام باز نشد.
+could_not_open_that_message = آن پیام باز نشد.
+could_not_load_message = این پیام بارگذاری نشد.
+message_still_loading = آن پیام هنوز در حال بارگذاری است.
+folder_still_loading = این پوشه هنوز در حال بارگذاری است -- کمی بعد دوباره تلاش کنید.
+not_in_thread = این پیام بخشی از یک رشته نیست.
+no_longer_in_thread = این پیام دیگر در رشته نیست.
+thread_position = پیام {position} از {total} در این رشته.
+thread_finished_one = این رشته تمام شد (۱ پیام).
+thread_finished_many = این رشته تمام شد ({count} پیام).
+select_message_first = ابتدا یک پیام انتخاب کنید.
+conversation_failed = این گفتگو باز نشد.
+select_message_for_related = ابتدا یک پیام برای دیدن پیام‌های مرتبط انتخاب کنید.
+looking_for_related = در حال جستجوی پیام‌های مرتبط...
+no_threading_headers = این پیام سرایند Message-ID یا سرایند رشته‌سازی برای جستجو ندارد.
+reply_one_at_a_time = پاسخ روی یک پیام در هر بار کار می‌کند. لطفاً یک پیام را انتخاب کنید.
+select_message_to_reply = ابتدا یک پیام برای پاسخ انتخاب کنید.
+preparing_reply = در حال آماده‌سازی پاسخ...
+reply_load_failed = بارگذاری پیام اصلی برای پاسخ ممکن نشد.
+select_message_to_forward = ابتدا یک پیام برای ارسال به‌عنوان دیگری انتخاب کنید.
+preparing_forward = در حال آماده‌سازی پیام برای ارسال به‌عنوان دیگری...
+forward_load_failed = بارگذاری پیام برای ارسال به‌عنوان دیگری ممکن نشد.
+compose_tab_needed_hint = این دستور به یک زبانهٔ نگارش نیاز دارد. برای نوشتن پیام Ctrl+N را بزنید.
+open_message_first_view = ابتدا یک پیام را باز کنید، سپس Ctrl+B را برای تغییر نمای آن بزنید.
+open_message_first_remote = ابتدا یک پیام را باز کنید، سپس Ctrl+Shift+I را برای بارگذاری محتوای راه‌دور آن بزنید.
+
+# Acting on messages
+copying_message = در حال رونوشت پیام...
+copy_failed = رونوشت ناموفق بود.
+delete_failed = حذف ناموفق بود.
+already_in_archive = از قبل در بایگانی است.
+archiving = در حال بایگانی...
+archive_failed = بایگانی ناموفق بود.
+action_failed = {action} ناموفق بود.
+nothing_to_undo = چیزی برای واگرد نیست.
+undo_failed = واگرد {action} ممکن نشد.
+
+# Views and folders
+folder_pane_all = قاب پوشه‌ها: همهٔ پوشه‌ها.
+folder_pane_unified = قاب پوشه‌ها: پوشه‌های یکپارچه.
+sorted_ascending = مرتب‌شده بر اساس {field}، صعودی.
+sorted_descending = مرتب‌شده بر اساس {field}، نزولی.
+unified_folders_updated = پوشه‌های یکپارچه به‌روزرسانی شد.
+zoom_reset = اندازهٔ قلم پیام به پیش‌فرض بازنشانی شد.
+folder_creating = در حال ایجاد پوشهٔ «{folder}»...
+folder_created = پوشهٔ «{folder}» ایجاد شد.
+folder_create_failed = ایجاد پوشه ممکن نشد.
+folder_renaming = در حال تغییر نام «{folder}» به «{new_name}»...
+folder_renamed = نام پوشه به «{new_name}» تغییر یافت.
+folder_rename_failed = تغییر نام پوشه ممکن نشد.
+folder_deleting = در حال حذف پوشهٔ «{folder}»...
+folder_deleted = پوشه حذف شد.
+folder_delete_failed = حذف پوشه ممکن نشد.
+folder_subscribing = در حال اشتراک در «{folder}»...
+folder_unsubscribing = در حال لغو اشتراک از «{folder}»...
+folder_subscribed = اشتراک انجام شد.
+folder_unsubscribed = لغو اشتراک انجام شد.
+folder_subscribe_failed = اشتراک در پوشه ممکن نشد.
+folder_unsubscribe_failed = لغو اشتراک از پوشه ممکن نشد.
+
+# Accounts
+account_not_added = حساب اضافه نشد.
+account_added = حساب اضافه شد: {account}
+account_settings_not_saved = تنظیمات حساب ذخیره نشد.
+account_updated = حساب به‌روزرسانی شد: {account}
+account_not_removed = حساب حذف نشد.
+account_removed = حساب حذف شد.
+account_removed_with_files = حساب حذف شد. {count} فایل محلی حذف شد.
+default_account_failed = تنظیم حساب پیش‌فرض ممکن نشد.
+default_account_set = {account} اکنون حساب پیش‌فرض است.
+mute_not_saved = تنظیم خاموشی ذخیره نشد.
+account_muted = {account} خاموش شد.
+account_unmuted = {account} از خاموشی خارج شد.
+export_done = {count} حساب و تنظیمات به {path} برون‌بری شد.
+import_done = {count} حساب از {path} درون‌بری شد.
+
+# Filters, cache and the background lists
+filters_not_saved = فیلترها ذخیره نشد.
+filters_saved = فیلترها برای {account} ذخیره شد.
+filters_checking = در حال بررسی {folder} با فیلترهای شما...
+filters_none_matched = اجرای فوری: هیچ پیامی در {folder} با هیچ قانون فعالی مطابقت نداشت.
+filters_run_failed = اجرای فیلترها ممکن نشد.
+filters_moving = در حال انتقال {count} پیام فیلترشده...
+filters_move_failures = فیلترها: {count} پیام منتقل نشد.
+filters_moved = فیلترها {count} پیام را از {folder} منتقل کردند.
+filters_move_failed = انتقال پیام‌های فیلترشده ممکن نشد.
+cache_not_cleared = انباشته پاک نشد.
+auto_cache_cleanup = پاک‌سازی خودکار انباشته: پیام‌های قدیمی‌تر از {age}.
+phishing_update_failed = به‌روزرسانی فهرست فیشینگ ممکن نشد: {error}
+blocklist_update_failed = به‌روزرسانی فهرست مسدود ممکن نشد: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = ابتدا یک پیام را باز کنید، سپس از ذخیره به‌عنوان استفاده کنید.
+saving_message = در حال ذخیرهٔ پیام...
+save_file_failed = ذخیرهٔ فایل ممکن نشد.
+save_fetch_failed = دریافت پیام برای ذخیره ممکن نشد.
+open_message_first_print = ابتدا یک پیام را باز کنید، سپس از چاپ استفاده کنید.
+open_message_first_preview = ابتدا یک پیام را باز کنید، سپس از پیش‌نمایش چاپ استفاده کنید.
+refreshing_accounts = در حال به‌روزرسانی {count} حساب...
+emptying_trash = در حال خالی کردن زباله‌دان برای {account}...
+trash_already_empty = زباله‌دان از قبل خالی بود.
+trash_emptied = زباله‌دان خالی شد: {count} پیام حذف شد.
+empty_trash_failed = خالی کردن زباله‌دان ممکن نشد.
+emptying_junk = در حال خالی کردن هرزنامه برای {account}...
+junk_already_empty = هرزنامه از قبل خالی بود.
+junk_emptied = هرزنامه خالی شد: {count} پیام حذف شد.
+junk_emptied_prefix = هرزنامه خالی شد:
+junk_part_purged = {count} حذف شد
+junk_part_in_trash = {count} به زباله‌دان منتقل شد اما حذف آن تأیید نشد، زباله‌دان را بررسی کنید
+junk_part_not_moved = {count} به زباله‌دان منتقل نشد، هنوز در هرزنامه است
+empty_junk_failed = خالی کردن هرزنامه ممکن نشد.
+working_offline = کار آفلاین: نمایش آخرین نسخهٔ همگام‌سازی‌شدهٔ صندوق ورودی/ارسالی/پیش‌نویس‌ها.
+back_online = بازگشت به آنلاین.
+offline_sync_running = در حال همگام‌سازی {account} برای استفادهٔ آفلاین...
+offline_sync_done = {count} پیام در صندوق ورودی، ارسالی و پیش‌نویس‌ها برای استفادهٔ آفلاین همگام‌سازی شد.
+offline_sync_failed = همگام‌سازی آفلاین ناموفق بود: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = ابتدا یک پیام را انتخاب یا باز کنید.
+select_or_open_message_ctrl_u = ابتدا یک پیام را انتخاب یا باز کنید، سپس Ctrl+U را بزنید.
+no_sender_address = این پیام نشانی فرستنده‌ای برای افزودن ندارد.
+contact_added = {contact} به دفترچهٔ نشانی شما افزوده شد.
+contact_already_there = {contact} از قبل در دفترچهٔ نشانی شماست.
+privacy_saved = تنظیمات حریم خصوصی ذخیره شد. برای اعمال آن‌ها پیام را دوباره باز کنید.
+message_font_size = اندازهٔ قلم پیام: {size} پوینت.
+
+# Deleting and moving several messages
+deleting_one = در حال حذف همیشگی پیام
+deleting_many = در حال حذف همیشگی {count} پیام
+trashing_one = در حال انتقال پیام به زباله‌دان
+trashing_many = در حال انتقال {count} پیام به زباله‌دان
+undo_partly_restored = {action} واگرد شد، اما {count} مورد بازیابی نشد -- ممکن است از آن زمان دوباره منتقل، حذف یا منقضی شده باشند.
+moves_report = {action}: {moved} از {total} پیام منتقل شد.
+moves_report_failed = منتقل نشد، هنوز در پوشهٔ اصلی: {count}.
+
+tray_tooltip_one = ZBox — ۱ پیام خوانده‌نشده
+tray_tooltip_many = ZBox — {count} پیام خوانده‌نشده
+account_unreachable = دسترسی به {account} ممکن نبود. بررسی خودکار آن به مدت {minutes} دقیقه متوقف می‌شود.
+auto_check_not_saved = تنظیم بررسی خودکار ذخیره نشد.
+bulk_copy_failed = رونوشت پیام‌ها ممکن نبود.
+bulk_copy_failed_status = رونوشت ناموفق بود.
+bulk_loading_archive = پیام‌ها هنوز در حال بارگیری‌اند؛ کمی بعد دوباره برای بایگانی تلاش کنید.
+bulk_loading_delete = پیام‌ها هنوز در حال بارگیری‌اند؛ کمی بعد دوباره برای حذف تلاش کنید.
+bulk_loading_flag = پیام‌ها هنوز در حال بارگیری‌اند؛ کمی بعد دوباره برای پرچم‌گذاری تلاش کنید.
+bulk_loading_generic = پیام‌ها هنوز در حال بارگیری‌اند؛ کمی بعد دوباره تلاش کنید.
+bulk_none = پیامی انتخاب نشده.
+bulk_none_archive = پیامی برای بایگانی انتخاب نشده.
+bulk_none_delete = پیامی برای حذف انتخاب نشده.
+bulk_none_junk = پیامی برای علامت‌گذاری به‌عنوان هرزنامه انتخاب نشده.
+bulk_none_not_junk = پیامی برای علامت‌گذاری به‌عنوان غیرهرزنامه انتخاب نشده.
+delete_refused_still = سرور از حذف آن خودداری کرد؛ هنوز در {folder} است.
+delete_refused_trash = در زباله‌دان است، اما سرور از حذف همیشگی آن خودداری کرد.
+delete_resume_failed = {count} پیام از یک حذف قبلی حذف نشد.
+done_perm_delete_one = پیام برای همیشه حذف شد.
+done_trash_one = پیام به زباله‌دان منتقل شد.
+filters_applied = فیلترها روی {count} پیام در {folder} اعمال شد.
+filters_failed = اجرای فیلترها ممکن نبود.
+filters_running = در حال اجرای فیلترها روی {folder}
+flag_failed = به‌روزرسانی پرچم‌ها ممکن نبود.
+flag_updated = پرچم‌ها به‌روز شد.
+folder_verb_subscribing = در حال اشتراک در
+folder_verb_unsubscribing = در حال لغو اشتراک از
+mark_read_failed = علامت‌گذاری پیام‌ها به‌عنوان خوانده‌شده ممکن نبود.
+mark_unread_failed = علامت‌گذاری پیام‌ها به‌عنوان خوانده‌نشده ممکن نبود.
+notify_new_mail_body = {count} {noun} جدید برای {name}.
+notify_new_mail_title = نامه جدید
+notify_noun_many = پیام
+notify_noun_one = پیام
+report_done = {verb}: {done} از {count} پیام.
+report_verb_deleted = حذف شد
+report_verb_permanent = برای همیشه حذف شد
+running_copy_many = در حال رونوشت {count} پیام
+running_copy_one = در حال رونوشت پیام
+running_junk_many = در حال علامت‌گذاری {count} پیام به‌عنوان هرزنامه
+running_junk_one = در حال علامت‌گذاری به‌عنوان هرزنامه
+running_move_many = در حال انتقال {count} پیام
+running_move_one = در حال انتقال
+running_not_junk_many = در حال علامت‌گذاری {count} پیام به‌عنوان غیرهرزنامه
+running_not_junk_one = در حال علامت‌گذاری به‌عنوان غیرهرزنامه
+running_perm_delete_one = در حال حذف همیشگی پیام...
+running_read_many = در حال علامت‌گذاری {count} پیام به‌عنوان خوانده‌شده
+running_read_one = در حال علامت‌گذاری به‌عنوان خوانده‌شده
+running_trash_one = در حال انتقال پیام به زباله‌دان...
+running_unread_many = در حال علامت‌گذاری {count} پیام به‌عنوان خوانده‌نشده
+running_unread_one = در حال علامت‌گذاری به‌عنوان خوانده‌نشده
+settings_saved_no_startup = تنظیمات ذخیره شد. ورودی راه‌اندازی Windows به‌روز نشد.
+settings_saved_status = تنظیمات ذخیره شد.
+spam_blocked_sender = فرستنده مسدود
+spam_possible_phishing = فیشینگ احتمالی
+undo_running_many = در حال واگرد {action} ({count} پیام)
+undo_running_one = در حال واگرد {action}
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = فایل
+bar_edit = ویرایش
+bar_view = نما
+bar_message = پیام
+bar_compose = نگارش
+bar_tools = ابزارها
+bar_help = راهنما
+
+# File
+file_new = جدید
+file_new_message = پیام
+file_new_account = حساب ایمیل...
+file_open_saved_message = باز کردن پیام ذخیره‌شده...
+file_close = بستن
+file_save_message_as = ذخیرهٔ پیام به‌عنوان...
+file_get_new_for = دریافت پیام‌های جدید برای
+file_get_new_all = همهٔ حساب‌ها
+file_get_new_current = حساب فعلی
+file_offline = آفلاین
+file_work_offline = کار آفلاین
+file_sync_now = همگام‌سازی اکنون
+file_print = چاپ...
+file_print_preview = پیش‌نمایش چاپ...
+file_exit = خروج
+
+# Edit
+edit_undo = واگرد
+edit_select_all = انتخاب همه
+edit_find_messages = یافتن پیام‌ها...
+
+# Message
+message_reply = پاسخ
+message_reply_all = پاسخ به همه
+message_forward = ارسال به‌عنوان دیگری
+message_archive = بایگانی
+message_delete = حذف
+message_delete_permanently = حذف برای همیشه
+message_mark = علامت‌گذاری
+mark_read = خوانده‌شده
+mark_unread = خوانده‌نشده
+mark_flagged = پرچم‌دار
+mark_junk = هرزنامه
+mark_not_junk = غیرهرزنامه
+message_watch_thread = زیرنظر گرفتن رشته
+message_ignore_thread = نادیده گرفتن رشته
+message_open_conversation = باز کردن پیام در گفتگو
+message_show_related = نمایش پیام‌های مرتبط
+message_add_sender_to_address_book = افزودن فرستنده به دفترچهٔ نشانی
+message_announce_sender = اعلام فرستنده
+message_announce_copy_sender = اعلام فرستنده و رونوشت نشانی
+
+# View
+view_folders = پوشه‌ها
+folders_all = همه
+folders_unified = یکپارچه
+folders_jump_inbox = پرش به فهرست پیام‌های صندوق ورودی
+folders_configure_unified = پیکربندی پوشه‌های یکپارچه...
+view_sort_by = مرتب‌سازی بر اساس
+sort_date = تاریخ
+sort_subject = موضوع
+sort_from = فرستنده
+sort_descending = نزولی (جدیدترین ابتدا)
+sort_ascending = صعودی (قدیمی‌ترین ابتدا)
+view_threads = رشته‌ها
+threads_all = همه
+threads_watched = رشته‌های زیرنظرگرفته‌شده
+threads_ignored = رشته‌های نادیده‌گرفته‌شده
+threads_expand_all = گسترش همهٔ رشته‌ها
+threads_collapse_all = جمع کردن همهٔ رشته‌ها
+view_load_more = بارگذاری پیام‌های بیشتر
+view_toggle_message_view = جابه‌جایی بین نمای متن و HTML
+view_show_remote_content = نمایش محتوای راه‌دور در این پیام
+view_message_zoom = بزرگ‌نمایی پیام
+zoom_increase = افزایش اندازهٔ قلم پیام
+zoom_decrease = کاهش اندازهٔ قلم پیام
+zoom_reset = بازنشانی اندازهٔ قلم پیام
+
+# Compose
+compose_send = ارسال
+compose_save_draft = ذخیرهٔ پیش‌نویس
+compose_attach = پیوست فایل...
+compose_fmt_bold = پررنگ
+compose_fmt_italic = کج
+compose_fmt_strike = خط‌خورده
+compose_fmt_bullet = فهرست نقطه‌ای
+compose_fmt_number = فهرست شماره‌دار
+compose_fmt_quote = نقل‌قول
+compose_fmt_code = کد
+compose_fmt_heading1 = سرتیتر
+compose_link = درج پیوند...
+compose_formatting = قالب‌بندی اینجا
+compose_spellcheck = بررسی املا...
+compose_spellcheck_next = غلط املایی بعدی
+compose_spellcheck_add = افزودن واژه به فرهنگ لغت
+compose_insert_signature = درج امضا
+compose_paste_quotation = جای‌گذاری به‌عنوان نقل‌قول
+compose_word_count = شمار واژه‌ها
+compose_preview = پیش‌نمایش...
+compose_diagnostics = عیب‌یابی نگارشگر...
+compose_edit_signature = ویرایش امضا...
+compose_hotkeys_diagnostic = عیب‌یاب کلیدهای میانبر
+
+# Tools
+tools_account_settings = تنظیمات حساب...
+tools_mute_account = خاموش کردن حساب
+tools_disable_account = غیرفعال کردن حساب
+tools_remove_account = حذف حساب...
+tools_address_book = دفترچهٔ نشانی...
+tools_message_filters = فیلترهای پیام...
+tools_import = درون‌بری حساب‌ها و تنظیمات...
+tools_export = برون‌بری حساب‌ها و تنظیمات...
+tools_cache_cleanup = پیکربندی پاک‌سازی انباشته...
+tools_privacy = حریم خصوصی و مسدودسازی محتوا...
+tools_settings = تنظیمات...
+
+# Help
+help_shortcuts = کلیدهای میانبر...
+help_about = دربارهٔ ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = حساب جدید...
+tree_account_settings = تنظیمات حساب...
+tree_mute_account = خاموش کردن حساب
+tree_enable_account = فعال کردن حساب
+tree_disable_account = غیرفعال کردن حساب
+tree_set_default_account = تنظیم به‌عنوان حساب پیش‌فرض
+tree_remove_account = حذف حساب...
+tree_refresh = به‌روزرسانی
+tree_new_folder = پوشهٔ جدید...
+tree_empty_trash = خالی کردن زباله‌دان
+tree_empty_junk = خالی کردن هرزنامه
+tree_rename_folder = تغییر نام پوشه...
+tree_delete_folder = حذف پوشه...
+tree_subscribe_folder = اشتراک در پوشه
+tree_unsubscribe_folder = لغو اشتراک از پوشه
+
+# The message list menu, opened the same two ways
+list_select_all = انتخاب همه
+list_reply = پاسخ
+list_reply_all = پاسخ به همه
+list_forward = ارسال به‌عنوان دیگری
+list_mark = علامت‌گذاری
+list_archive = بایگانی
+list_delete_to_trash = حذف (انتقال به زباله‌دان)
+list_delete_permanently = حذف برای همیشه
+list_move_to = انتقال به
+list_copy_to = رونوشت به
+
+# The notification area icon
+tray_open = باز کردن ZBox
+tray_unread_one = ۱ پیام خوانده‌نشده
+tray_unread_many = {count} پیام خوانده‌نشده
+tray_no_unread = پیام خوانده‌نشده‌ای نیست
+tray_settings = تنظیمات...
+tray_quit = خروج از ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = پررنگ
+format_italic = کج
+format_strike = خط‌خورده
+format_bullet = فهرست نقطه‌ای
+format_number = فهرست شماره‌دار
+format_quote = نقل‌قول
+format_code = کد
+format_heading1 = سرتیتر
+format_insert_link = درج پیوند...
+format_formatting_here = قالب‌بندی اینجا
+tools_enable_account = فعال کردن حساب
+tools_pause_auto_check = توقف بررسی خودکار
+tree_pause_auto_check = توقف بررسی خودکار
+edit_undo_action = واگرد {action}
+
+[dialogs]
+set_theme_restart_confirm = ZBox برای اعمال تغییر پوسته دوباره راه‌اندازی شود؟
+set_ui_theme_label = پوستهٔ رابط:
+set_ui_theme_note = رنگ‌های منوها، فهرست‌ها، کادرهای گفتگو و نمای متنی پیام‌ها. «پیروی از سیستم» از حالت روشن یا تیرهٔ برنامه‌های Windows استفاده می‌کند. آبی نیمه‌شب، تیرهٔ گرم و کنتراست ملایم پوسته‌های تیره با رنگ‌های ملایم‌تر هستند. پیام‌های HTML رنگ‌های خودشان را نگه می‌دارند و کنتراست بالای Windows همیشه اولویت دارد. از دفعهٔ بعد که ZBox اجرا شود اعمال می‌شود.
+set_theme_system = پیروی از سیستم
+set_theme_light = روشن
+set_theme_dark = تیره
+set_theme_midnight = آبی نیمه‌شب
+set_theme_warm = تیرهٔ گرم
+set_theme_soft = کنتراست ملایم
+set_language_restart_confirm = برای اعمال تغییر زبان، ZBox دوباره راه‌اندازی شود؟
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = تماس با حارث
+title_identity = هویت
+title_show_password = نمایش گذرواژه
+title_missing_information = اطلاعات ناقص
+title_unsupported_provider = ارائه‌دهندهٔ پشتیبانی‌نشده
+title_test_connection = آزمایش اتصال
+title_new_contact = مخاطب جدید
+title_edit_contact = ویرایش مخاطب
+title_delete_contact = حذف مخاطب
+title_import_contacts = درون‌بری مخاطبین
+title_export_contacts = برون‌بری مخاطبین
+title_rename_group = تغییر نام گروه
+title_delete_group = حذف گروه
+title_send = ارسال
+title_send_failed = ارسال ناموفق
+title_attach_file = پیوست فایل
+title_save_draft = ذخیرهٔ پیش‌نویس
+title_documentation = مستندات ZBox
+title_open_link = باز کردن پیوند
+title_filter_rule = قانون فیلتر
+title_master_password = گذرواژهٔ اصلی
+title_attachment_saved = پیوست ذخیره شد
+title_attachments_saved = پیوست‌ها ذخیره شد
+title_download_failed = بارگیری ناموفق
+title_print = چاپ
+title_print_preview = پیش‌نمایش چاپ
+title_related_messages = پیام‌های مرتبط
+title_search = جستجو
+title_unlock = باز کردن قفل
+title_unlock_methods = روش‌های باز کردن قفل
+title_desktop_shortcut = میان‌بر رومیزی
+title_spell_check = بررسی املا
+title_plain_text_password = گذرواژهٔ متن‌سادهٔ یافت‌شده
+title_startup_error = خطای راه‌اندازی ZBox
+
+identity_email_required = یک نشانی ایمیل وارد کنید.
+
+wizard_password_not_shown = گذرواژه در این سامانه قابل نمایش نیست. همچنان به‌طور عادی تایپ و ذخیره می‌شود.
+wizard_email_required = پیش از ادامه یک نشانی ایمیل معتبر وارد کنید.
+wizard_test_needs_server = پیش از آزمایش، یک ایمیل ورود و سرور دریافتی وارد کنید.
+wizard_test_succeeded = اتصال موفق بود. {count} پیام در صندوق ورودی یافت شد.
+
+contact_email_required = نشانی ایمیل الزامی است.
+contact_select_to_edit = برای ویرایش یک مخاطب را انتخاب کنید.
+contact_select_to_delete = برای حذف یک مخاطب را انتخاب کنید.
+contact_delete_confirm = {label} از دفترچهٔ نشانی حذف شود؟
+contacts_import_choose_file = یک فایل .vcf (کارت مجازی) یا .csv برای درون‌بری انتخاب کنید.
+contacts_imported = {count} مخاطب درون‌بری شد.
+contacts_import_empty = مخاطبی در آن فایل یافت نشد.
+contacts_none_to_export = مخاطبی برای برون‌بری وجود ندارد.
+contacts_exported = {count} مخاطب به این مسیر برون‌بری شد:\n{path}
+group_name_exists = گروهی با نام «{name}» از قبل وجود دارد.
+group_delete_confirm = گروه «{name}» حذف شود؟ مخاطبین آن حذف نمی‌شوند.
+
+send_no_account = پیش از ارسال یک حساب اضافه کنید، یا یکی را در فرستنده انتخاب کنید.
+send_no_recipient = دست‌کم یک گیرنده در گزینهٔ به وارد کنید.
+draft_no_account = پیش از ذخیرهٔ پیش‌نویس یک حساب اضافه کنید، یا یکی را در فرستنده انتخاب کنید.
+attached_file = پیوست شد: {name}\n\n{count} فایل هنگام ارسال پیوست خواهد شد.
+
+documentation_copied = مستندات کامل ZBox در بریده‌دان رونوشت شد.
+
+filter_rule_needs_name = برای این قانون نامی انتخاب کنید.
+filter_rule_needs_condition = دست‌کم یک شرط تنظیم کنید (فرستنده، به یا موضوع).
+filter_rule_needs_action = دست‌کم یک کنش انتخاب کنید: علامت‌گذاری به‌عنوان خوانده‌شده، پرچم‌گذاری، یا انتقال به پوشه.
+
+master_password_set = گذرواژهٔ اصلی تنظیم شد. آن را جایی امن نگه دارید: ZBox یک‌بار در هر کامپیوتر جدید آن را می‌پرسد، و در صورت گم شدن قابل بازیابی نیست.
+master_password_offer = بدون گذرواژهٔ اصلی، گذرواژه‌های ذخیره‌شدهٔ حساب فقط روی همین کامپیوتر و همین حساب ویندوز قابل خواندن هستند. اگر ZBox را جای دیگری رونوشت کنید، هر حساب باید دوباره وارد شود.\n\nاکنون یکی تنظیم شود؟
+
+attachment_saved = پیوست در این مسیر ذخیره شد:\n{path}
+attachments_saved = {count} پیوست در این مسیر ذخیره شد:\n{path}
+
+shortcut_created_settings = میان‌بر ایجاد شد:\n{path}\n\nآن ZBox را از این مسیر آغاز می‌کند:\n{base}
+
+spellcheck_no_dictionary = فرهنگ لغت املایی موجود نیست، بنابراین بررسی املا در این نسخهٔ ZBox در دسترس نیست.
+spellcheck_none_found = غلط املایی یافت نشد.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = یک کلید ورود روی این کامپیوتر تنظیم و کلید ذخیره‌شده از کامپیوتر دیگر فراموش شود؟\n\nویندوز از شما با Hello تأیید می‌خواهد. کلید ورود قدیمی روی کامپیوتر دیگر دست‌نخورده باقی می‌ماند و اگر این پوشه را به آنجا برگردانید همچنان کار می‌کند، اما باید دوباره تنظیم شود.
+unlock_replace_passkey_many = یک کلید ورود روی این کامپیوتر تنظیم و {count} کلید ذخیره‌شده از کامپیوترهای دیگر فراموش شود؟\n\nویندوز از شما با Hello تأیید می‌خواهد. کلیدهای ورود قدیمی روی کامپیوترهای دیگر دست‌نخورده باقی می‌مانند و اگر این پوشه را به آنجا برگردانید همچنان کار می‌کنند، اما باید دوباره تنظیم شوند.
+unlock_method_works = آن روش کار می‌کند.
+
+plain_text_password_found = data\config\himalaya.toml هنوز یک گذرواژهٔ متن‌ساده (auth.raw) از تنظیم حساب قدیمی‌تری دارد.\n\nآن حساب را حذف و دوباره اضافه کنید، یا data\config\himalaya.toml را حذف کنید، تا به‌جای آن با انبار اعتبارنامهٔ امن بازسازی شود.
+
+# main_frame's titles.
+title_account_list_unavailable = فهرست حساب‌ها در دسترس نیست
+title_open_message = باز کردن پیام
+title_run_filters = اجرای فیلترها
+title_clear_cache = پاک کردن انباشتهٔ پیام آفلاین
+title_remove_account = حذف حساب
+title_new_folder = پوشهٔ جدید
+title_rename_folder = تغییر نام پوشه
+title_delete_folder = حذف پوشه
+title_subscribe = اشتراک
+title_unsubscribe = لغو اشتراک
+title_open_saved_message = باز کردن پیام ذخیره‌شده
+title_save_message_as = ذخیرهٔ پیام به‌عنوان
+title_empty_trash = خالی کردن زباله‌دان
+title_empty_junk = خالی کردن هرزنامه
+title_synchronize_offline = همگام‌سازی برای آفلاین
+title_export_accounts = برون‌بری حساب‌ها و تنظیمات
+title_import_accounts = درون‌بری حساب‌ها و تنظیمات
+title_show_related = نمایش پیام‌های مرتبط
+title_reply = پاسخ
+title_forward = ارسال به‌عنوان دیگری
+title_undo = واگرد
+title_delete_permanently = حذف برای همیشه
+title_delete = حذف
+title_copy_to = رونوشت به
+title_archive = بایگانی
+title_accounts_locked = حساب‌ها قفل هستند
+
+select_account_first = ابتدا یک حساب را در درخت انتخاب کنید.
+select_account_or_folder = ابتدا یک حساب یا پوشه انتخاب کنید.
+filters_left_behind = {count} پیام با یک فیلتر مطابقت داشت اما هنوز در {folder} است.
+cache_clear_confirm = انباشتهٔ پیام آفلاین برای همهٔ حساب‌ها پاک شود؟\n\nاین فقط نسخه‌های محلی ZBox را حذف می‌کند. چیزی از هیچ سرور ایمیلی حذف نمی‌شود، و پیام‌ها هرگاه نیاز باشد دوباره بارگیری می‌شوند.
+account_remove_confirm = {name} ({address}) حذف شود؟\n\nنامه‌های روی سرور حذف نمی‌شوند.\nنسخه‌های بارگیری‌شده روی این کامپیوتر حذف می‌شوند.\nگذرواژهٔ ذخیره‌شده حذف می‌شود.
+folder_delete_confirm = پوشهٔ «{folder}» و هر چیز درون آن برای {address} برای همیشه حذف شود؟\n\nاین قابل واگرد نیست.
+empty_trash_confirm = همهٔ پیام‌های زباله‌دان برای {address} برای همیشه حذف شود؟\n\nاین قابل واگرد نیست.
+empty_junk_confirm = همهٔ پیام‌های هرزنامه برای {address} برای همیشه حذف شود؟\n\nاین قابل واگرد نیست.
+sync_select_account = یک حساب (نه یک پوشهٔ یکپارچه) برای همگام‌سازی جهت استفادهٔ آفلاین انتخاب کنید.
+accounts_imported = {count} حساب درون‌بری شد:\n\n{names}\n\nگذرواژه‌ها هرگز برون‌بری نمی‌شوند، و انبار گذرواژهٔ رمزگذاری‌شده مخصوص همین حساب کاربری ویندوز است، بنابراین هر حساب درون‌بری‌شده باید یک‌بار از طریق حساب‌ها > تنظیمات حساب گذرواژهٔ خود را وارد کند تا بتواند متصل شود.
+accounts_import_none = هیچ حسابی در این فایل یافت نشد. تنظیمات همچنان درون‌بری شد، اگر فایل هرگونه تنظیماتی داشت.
+delete_permanently_confirm_one = این پیام برای همیشه حذف شود؟ این کار از زباله‌دان صرف‌نظر می‌کند و قابل واگرد نیست.
+accounts_locked = گذرواژه‌های ذخیره‌شدهٔ حساب روی کامپیوتر دیگری نوشته شده‌اند، بنابراین اینجا قابل خواندن نیستند.\n\nهر حساب باید دوباره وارد سرور ایمیل خود شود. برای جلوگیری از این در آینده، یک گذرواژهٔ اصلی از تنظیمات، امنیت برنامه و داده روی کامپیوتری که حساب‌ها از قبل کار می‌کنند تنظیم کنید.
+master_password_remove_confirm = گذرواژهٔ اصلی حذف شود؟ گذرواژه‌های ذخیره‌شدهٔ حساب پس از آن فقط روی همین کامپیوتر و همین حساب ویندوز قابل خواندن خواهند بود. اگر پس از آن ZBox را جای دیگری رونوشت کنید، هر حساب باید دوباره وارد شود.\n\nاکنون حذف شود؟
+shortcut_offer = یک میان‌بر ZBox روی رومیزی قرار داده شود؟\n\nاین همین پوشهٔ ZBox را آغاز خواهد کرد:\n{path}\n\nیک میان‌بر همان مسیر دقیق را ثبت می‌کند. اگر بعداً پوشهٔ ZBox را جابه‌جا کردید، تنظیمات، سینی سیستم و پنجره را باز کنید و ایجاد میان‌بر رومیزی را دوباره انتخاب کنید تا به مکان جدید اشاره کند.
+shortcut_created = میان‌بر ایجاد شد:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = نام نمایشی
+form_email_address = نشانی ایمیل
+form_your_name = نام شما
+form_login_email = ایمیل ورود
+form_password = گذرواژه
+srv_imap_host = سرور دریافتی (IMAP)
+srv_imap_port = درگاه دریافتی
+srv_imap_encryption = رمزگذاری دریافتی
+srv_smtp_host = سرور ارسالی (SMTP)
+srv_smtp_port = درگاه ارسالی
+srv_smtp_encryption = رمزگذاری ارسالی
+
+acct_login_email_label = ایمیل ورود (برای ورود به سیستم استفاده می‌شود)
+acct_new_password_label = گذرواژهٔ جدید (برای نگه داشتن گذرواژهٔ فعلی خالی بگذارید)
+acct_new_password_name = گذرواژهٔ جدید
+acct_identity_email_label = نشانی ایمیل (برای ارسال و دریافت استفاده می‌شود)
+acct_identities_label = هویت‌های اضافی (نام‌های مستعار)
+acct_identities_name = هویت‌های اضافی
+acct_add_identity = افزودن هویت...
+acct_edit_identity = ویرایش هویت...
+acct_remove_identity = حذف هویت
+acct_signature = امضا
+acct_edit_signature = ویرایش امضا...
+acct_junk_folder = پوشهٔ هرزنامه
+acct_account_status = وضعیت حساب
+acct_disable_account = غیرفعال کردن این حساب
+acct_default_account = حساب پیش‌فرض
+acct_set_default = تنظیم به‌عنوان حساب پیش‌فرض
+acct_notifications = اعلان‌های نامهٔ جدید
+acct_mute_notifications = خاموش کردن اعلان‌ها برای این حساب
+acct_server_settings = تنظیمات سرور
+
+wiz_before_you_start = پیش از شروع
+wiz_notice_name = اطلاعیهٔ مهم
+wiz_google_instructions = باز کردن راهنمای گذرواژهٔ برنامهٔ Google
+wiz_intro = نام و نشانی ایمیل شما
+wiz_login_same = ایمیل ورود همان نشانی ایمیل بالاست
+wiz_show_password = نمایش گذرواژه
+wiz_preset_applied = پیش‌تنظیم برای {name} اعمال شد.
+wiz_summary_name = خلاصهٔ حساب
+wiz_review = بازبینی کنید، سپس برای ذخیرهٔ این حساب روی پایان کلیک کنید.
+wiz_test_connection = آزمایش اتصال
+wiz_testing = در حال آزمایش اتصال...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (فعال کردن ثبت رخداد عیب‌یابی، ذخیره‌شده در: data\logs)
+set_language_label = زبان رابط کاربری:
+set_language_label_only_english = زبان رابط کاربری: (فقط انگلیسی)
+set_headers_checkbox = نمایش سرایندهای پیام بالای یک پیام باز
+set_zoom_label = قلم و بزرگ‌نمایی پیام:
+set_font_override = لغو اندازهٔ پیش‌فرض قلم پیام
+set_font_size_name = اندازهٔ قلم پیام (پوینت)
+set_reading_font_name = قلم خواندن
+set_reading_font_label = قلم خواندن (برای پیش‌فرض خالی بگذارید):
+set_view_label = نمای بدنهٔ پیام هنگام باز کردن یک پیام:
+set_view_text = متن
+set_view_html = HTML (رندرشده)
+set_engine_label = موتور رندر HTML:
+set_engine_edge = Edge / WebView2 (رندر مدرن)
+set_engine_ie = MSHTML قدیمی (بهترین پشتیبانی صفحه‌خوان)
+set_runtime_label = زمان اجرای WebView2:
+set_runtime_auto = خودکار — استفاده از زمان اجرای همراه در صورت وجود (توصیه‌شده)
+set_runtime_fixed = فقط نسخهٔ ثابت همراه
+set_runtime_evergreen = زمان اجرای سراسر سیستم (توسط ویندوز به‌روزرسانی می‌شود)
+set_sr_box = کنترل اعلان‌های صفحه‌خوان
+set_silence_label = مدت سکوت صفحه‌خوان برای HTML:
+set_silence_name = مدت سکوت صفحه‌خوان برای HTML به میلی‌ثانیه
+set_focus_delay_label = تأخیر فوکوس دسترس‌پذیری WebView:
+set_focus_delay_name = تأخیر فوکوس دسترس‌پذیری WebView، سطح ۱ تا ۱۰
+set_announce_label = مدت اعلان:
+set_announce_name = مدت اعلان به میلی‌ثانیه
+set_announce_actions = اعلام کنش‌های پیام
+set_attachment_dir_label = پوشهٔ ذخیرهٔ پیوست‌ها:
+set_attachment_dir_name = پوشهٔ ذخیرهٔ پیوست‌ها
+set_browse = مرور…
+set_autosave_label = بازهٔ ذخیرهٔ خودکار پیش‌نویس:
+set_autosave_name = بازهٔ ذخیرهٔ خودکار پیش‌نویس به ثانیه
+set_auto_purge_label = پاک‌سازی خودکار زباله‌دان و هرزنامهٔ قدیمی:
+set_auto_purge_name = پاک‌سازی خودکار زباله‌دان و هرزنامه پس از این تعداد روز
+set_bare_keys = فعال کردن کلیدهای میان‌بر تک‌کلیدی S (پرچم)، A (بایگانی)، J (علامت‌گذاری هرزنامه)/Shift+J (علامت‌گذاری غیرهرزنامه)، W (زیرنظر گرفتن رشته) و K (نادیده گرفتن رشته) در فهرست پیام‌ها
+set_sound_label = صدا و اعلان‌ها:
+set_sounds_enabled = پخش صداهای اعلان
+set_desktop_notifications = نمایش اعلان‌های رومیزی برای نامهٔ جدید
+set_theme_label = تغییر پوستهٔ صداها:
+set_theme_label_only_default = تغییر پوستهٔ صداها: (فقط پوستهٔ پیش‌فرض)
+set_security_box = امنیت برنامه و داده
+set_lock_on_quit = قفل کردن ZBox هنگام خروج کامل
+set_unlock_methods_button = روش‌های باز کردن قفل…
+set_master_password_button = گذرواژهٔ اصلی…
+set_tray_label = سینی سیستم و پنجره:
+set_minimize_to_tray = کوچک کردن به سینی سیستم
+set_close_to_tray = بستن به سینی سیستم
+set_stay_maximized = همیشه ZBox را بیشینه نگه دار
+set_run_at_startup = اجرای ZBox هنگام شروع ویندوز
+set_desktop_shortcut_button = ایجاد میان‌بر رومیزی
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = ثبت رخداد عیب‌یابی در تشخیص مشکلات در صورت بروز خطا کمک می‌کند. خاموش کردن آن نوشتن سطرهای جدید را متوقف می‌کند؛ فایل‌های گزارش موجود حذف نمی‌شوند. با راه‌اندازی بعدی ZBox اعمال می‌شود.
+set_language_note = با راه‌اندازی بعدی ZBox اعمال می‌شود. فایل‌های زبان فایل‌های متن ساده در پوشهٔ lang در کنار پوشهٔ sounds هستند. برای افزودن یکی، پوشهٔ en را رونوشت کنید، رونوشت و فایل .lang درون آن را به کد زبان خود تغییر نام دهید، و متن سمت راست هر علامت مساوی را ترجمه کنید. هر چیزی که هنوز ترجمه نشده به انگلیسی خوانده می‌شود نه اینکه ساکت بماند، بنابراین یک فایل نیمه‌تمام برای استفاده امن است.
+set_headers_note = فرستنده، به، رونوشت، تاریخ و موضوع، بالای بدنهٔ پیام هم در نمای متن و هم HTML نشان داده می‌شوند. بدون آن راهی نیست تا از داخل پیام بدانید چه کسی آن را فرستاده، بدون بستن زبانه و بازگشت به فهرست. فوکوس همچنان در بدنهٔ پیام قرار می‌گیرد؛ بلوک سرایند یک Shift+Tab فاصله دارد. با باز شدن پیام بعدی اعمال می‌شود.
+set_zoom_note = متن پیام باز را بزرگ‌تر یا کوچک‌تر می‌کند، مستقل از باقی ZBox و از مقیاس‌بندی نمایش خود ویندوز. برای هر دو نمای متن و HTML اعمال می‌شود. «قلم خواندن» به‌طور اختیاری یک قلم مشخص (مثلاً Consolas، OpenDyslexic) را برای بدنهٔ پیام اجباری می‌کند؛ برای نگه داشتن قلم عادی آن را خالی بگذارید. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 در منوی نما اندازهٔ قلم را بدون باز کردن این پنجره افزایش، کاهش یا بازنشانی می‌کنند، و بلافاصله روی هر پیام باز اعمال می‌شوند. تغییرات اینجا نیز بلافاصله با تأیید اعمال می‌شوند.
+set_view_note = HTML پیش‌فرض است. پیام را همان‌طور که فرستاده شده نشان می‌دهد، و توسط NVDA و JAWS خوانده می‌شود: هنگام باز شدن یک صفحهٔ HTML، ZBox اعلان خود مرورگر را ساکت می‌کند، نشانگر خواندن را روی اولین سطر پیام می‌گذارد، و میان‌برهای خود ZBox را درون صفحه فعال نگه می‌دارد، از جمله F6 برای بازگرداندن فوکوس از آن به بیرون. متن همان پیام را به‌صورت متن سادهٔ بدون قالب در یک کنترل ویرایش معمولی نشان می‌دهد -- بدون تصویر، بدون چیدمان، و بدون هیچ چیزی که به نصب بودن یک موتور مرورگر وابسته باشد. برای جابه‌جایی بین این دو، درون یک پیام باز Ctrl+B را بزنید.
+set_engine_note = Edge سی‌اس‌اس مدرن را رندر می‌کند اما صفحه را در یک فرایند جدا اجرا می‌کند، و محتوای خود را فقط از طریق یک رابط که wxPython به آن دسترسی ندارد به صفحه‌خوان تحویل می‌دهد -- بنابراین ممکن است پیام بدون هیچ چیز قابل خواندنی باز شود. MSHTML قدیمی همان موتوری است که Outlook Express و Windows Mail استفاده می‌کردند: درون‌فرایندی اجرا می‌شود و یک درخت سند معمولی منتشر می‌کند، بنابراین NVDA و JAWS آن را در حالت مرور مانند هر صفحهٔ وب می‌خوانند. با باز شدن پیام بعدی اعمال می‌شود.
+set_runtime_note = زمان اجرای سراسر سیستم توسط ویندوز آپدیت سرویس می‌شود، بنابراین موتوری که نامهٔ شما را می‌خواند می‌تواند بدون اطلاع تغییر کند -- به همین شکل نمای پیام HTML که کار می‌کرد می‌تواند روی ماشینی که چیزی دربارهٔ ZBox تغییر نکرده خراب شود. یک نسخهٔ همراه در پوشهٔ deps نسخهٔ دقیقی که ZBox در برابر آن آزموده شده را ثابت نگه می‌دارد. tools\get_webview2.bat را برای نصب یکی اجرا کنید. اگر نسخهٔ همراهی موجود نباشد ZBox به هر حال از زمان اجرای سراسر سیستم استفاده می‌کند، بنابراین همیشه آغاز می‌شود. با راه‌اندازی بعدی ZBox اعمال می‌شود.
+set_sr_intro = اینکه ZBox چقدر اجازه می‌دهد صفحه‌خوان شما هنگام باز شدن یک پیام صحبت کند، و اعلان‌های گفتاری خودش چقدر باقی می‌مانند.
+set_silence_note = هنگام باز شدن یک پیام HTML، ZBox می‌تواند یک فشردن مصنوعی Ctrl را تا ۲ ثانیه نگه دارد تا اعلان مرورگر صفحه‌خوان را ساکت کند. موضوع پیام از قبل به‌عنوان عنوان صفحه استفاده می‌شود، که مانع خوانده شدن آدرس base64 می‌شود، اما صفحه‌خوان همچنان کنترل و نوع سند را روی آغاز پیام اعلام می‌کند، بنابراین این به‌طور پیش‌فرض روشن است. برای خاموش کردن آن را به ۰ کاهش دهید، یا اگر هنوز صدایی نشت می‌کند آن را افزایش دهید.
+set_focus_delay_note = وقتی یک پیام HTML بارگذاری آن تمام می‌شود، ZBox این مدت را قبل از فوکوس دادن واقعی به آن منتظر می‌ماند. اعلام بارگذاری صفحه توسط WebView2 و پایان یافتن درخت دسترس‌پذیری آن صفحه توسط ویندوز یک لحظه نیستند؛ فوکوس دادن خیلی زود چیزی است که باعث می‌شود NVDA/JAWS به‌جای پیام یک «صفحهٔ محتوای وب» عمومی اعلام کند، یا پیام را برای مدتی پس از باز شدن در دسترس‌نبودنی گزارش کند. سطح ۱ برابر ۱۰۰ میلی‌ثانیه است، سطح ۱۰ برابر یک ثانیهٔ کامل. اگر هنوز این را می‌بینید آن را افزایش دهید؛ وقتی باز شدن پایدار به نظر رسید برای بازکردن سریع‌تر آن را کاهش دهید.
+set_announce_note = Ctrl+U و Ctrl+Shift+U فرستنده را در یک پنجرهٔ کوچک گزارش می‌دهند که خودش بسته می‌شود، زیرا نوار وضعیت فقط زمانی گفته می‌شود که گزارش نوار وضعیت صفحه‌خوان شما روشن باشد. این مدتی است که آن پنجره باز می‌ماند. آن را متناسب با سرعت گفتار خود تنظیم کنید: خیلی کوتاه و در میانهٔ جمله بسته می‌شود، که هدف را از بین می‌برد. هر کلیدی زودتر آن را می‌بندد؛ کلیدهای جهت‌نما آن را باز نگه می‌دارند تا دوباره بخوانید. ۰ یعنی منتظر یک کلید می‌ماند و هرگز خودش بسته نمی‌شود.
+set_attachment_dir_note = جایی که «ذخیرهٔ همه» پیوست‌ها را می‌نویسد وقتی یک پیام بیش از یک پیوست دارد. اگر وجود نداشته باشد به‌طور خودکار ایجاد می‌شود. پیامی با یک پیوست تنها همچنان مانند قبل می‌پرسد کجا ذخیره شود. برای پیش‌فرض خالی بگذارید:\n{path}
+set_autosave_note = هر چند وقت یک زبانهٔ نگارش باز خودش را در پیش‌نویس‌ها ذخیره می‌کند هنگام نوشتن. ذخیرهٔ پیش‌نویس (Ctrl+S) همچنان در هر صورت به تقاضا ذخیره می‌کند، و بستن یک زبانه با نوشتهٔ ذخیره‌نشده همیشه پیشنهاد ذخیره می‌دهد. ۰ ذخیرهٔ خودکار را خاموش می‌کند. زیر ۱۵ ثانیه ارائه نمی‌شود -- آن یک رفت‌وبرگشت سرور در رقابت با تایپ شما خواهد بود.
+set_auto_purge_note = پیام‌ها را برای همیشه از زباله‌دان و هرزنامه پس از این تعداد روز که آنجا مانده‌اند حذف می‌کند -- همان حذف همیشگی که خالی کردن زباله‌دان و خالی کردن هرزنامه به تقاضا انجام می‌دهند، به‌طور خودکار یک‌بار در روز حین باز بودن ZBox اجرا می‌شود. به‌طور پیش‌فرض روی ۳۰ روز روشن است. ۰ آن را خاموش می‌کند. این پس از حذف یک پیام قابل واگرد نیست.
+set_bare_keys_note = وقتی روشن باشد، فشردن تنهای S، A، J، W یا K در فهرست پیام بلافاصله پرچم را تغییر می‌دهد، بایگانی می‌کند، پیام(های) انتخاب‌شده را به‌عنوان هرزنامه علامت می‌زند (Shift+J آن‌ها را غیرهرزنامه علامت می‌زند)، یا رشته‌ای که گزیده بخشی از آن است را زیرنظر می‌گیرد/نادیده می‌گیرد -- بایگانی و علامت‌گذاری به‌عنوان هرزنامه تأیید یا واگردی ندارند. خاموش کردن این S، A، J، W و K را به ناوبری عادی فهرست با حرف اول بازمی‌گرداند. Ctrl+S و Ctrl+Shift+A در هر صورت کار می‌کنند. بلافاصله اعمال می‌شود.
+set_sounds_note = صداهای کوتاه برای پیشرفت، پیام‌های جدید، کنش‌های ارسال، پاسخ یا ارسال به‌عنوان دیگری، حذف‌ها، و نتایج جستجو. خاموش کردن هر صدایی در برنامه را غیرفعال می‌کند؛ اعلان‌های صفحه‌خوان و نوار وضعیت در هر صورت تحت تأثیر قرار نمی‌گیرند.
+set_desktop_notifications_note = یک اعلان ویندوز برای هر دستهٔ نامهٔ جدید، جدا از صدای بالا. خاموش کردن آن را برای هر حساب غیرفعال می‌کند؛ یک حساب تکی نیز می‌تواند جداگانه در تنظیمات حساب خاموش شود.
+set_theme_note = پوسته‌های سفارشی پوشه‌هایی هستند که درون پوشهٔ sounds ZBox قرار می‌گیرند، هر کدام progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav و none_found.wav خود را تأمین می‌کنند. یک فایل پوسته که موجود نباشد به صدای پیش‌فرض بازمی‌گردد.
+set_theme_note_only_default = پوسته‌های سفارشی پوشه‌هایی هستند که درون پوشهٔ sounds ZBox قرار می‌گیرند، هر کدام progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav و none_found.wav خود را تأمین می‌کنند. یک فایل پوسته که موجود نباشد به صدای پیش‌فرض بازمی‌گردد. تا وقتی پوشهٔ پوستهٔ دیگری اضافه نکنید فقط «پیش‌فرض» در دسترس است.
+set_lock_note = راه‌اندازی ZBox سپس پیش از باز شدن هر حسابی یکی از روش‌های باز کردن قفل شما را می‌پرسد. هر کدام از آن‌ها کافی است: یک کلید ورود، یک کلید امنیتی، یا گذرواژهٔ اصلی. بستن به سینی خروج نیست و قفل را دوباره نمی‌کند؛ فایل > خروج و گزینهٔ خروج نماد سینی این کار را می‌کنند. اگر چیزی ثبت نشده باشد و گذرواژهٔ اصلی تنظیم نشده باشد، قفل نادیده گرفته می‌شود به‌جای اینکه شما را از نامهٔ خودتان بیرون نگه دارد.
+set_security_note = گذرواژهٔ اصلی تنها موردی از این سه است که چیزی را رمزگذاری می‌کند: همان چیزی است که به این پوشه اجازه می‌دهد گذرواژه‌های ذخیره‌شدهٔ حساب خود را روی کامپیوتر دیگری باز کند. یک کلید ورود یا کلید امنیتی برنامه را روی همین یکی باز می‌کند. هیچ‌کدام جایگزین گذرواژهٔ اصلی روی کامپیوتری که ZBox پیش‌تر روی آن استفاده نشده نمی‌شوند.
+set_minimize_note = کوچک کردن ZBox دکمهٔ نوار وظیفهٔ آن را پنهان می‌کند و آن را پشت نماد سینی در حال اجرا نگه می‌دارد. کلیک چپ روی نماد سینی (یا Enter/Space وقتی فوکوس صفحه‌کلید دارد) پنجره را بازمی‌گرداند.
+set_close_note = دکمهٔ بستن پنجره، Alt+F4، و Ctrl+W فشرده‌شده در زبانهٔ نامه، ZBox را به‌جای خروج به سینی پنهان می‌کنند. فایل > خروج (Ctrl+Shift+Q) و گزینهٔ خروج خود نماد سینی در هر صورت واقعاً از ZBox خارج می‌شوند، بنابراین همیشه یک مسیر صفحه‌کلیدی برای خروج بدون لمس سینی هست.
+set_stay_maximized_note = ZBox بیشینه راه‌اندازی می‌شود و اگر آن را از بیشینه خارج کنید دوباره بیشینه می‌شود. نوار منو، نوار عنوان و لبهٔ پنجره تحت تأثیر قرار نمی‌گیرند -- این یک حالت تمام‌صفحهٔ بدون‌حاشیه نیست، بنابراین هر میان‌بر منوی Alt همچنان کار می‌کند.
+set_run_at_startup_note = ZBox را به‌طور خودکار هنگام ورود به ویندوز آغاز می‌کند، مستقیم به سینی باز می‌شود نه اینکه پنجره‌اش را نشان دهد. بلافاصله اعمال می‌شود، نه فقط در راه‌اندازی بعدی.
+set_desktop_shortcut_note = یک میان‌بر ZBox روی رومیزی شما می‌گذارد، و یکی که از قبل آنجاست را جایگزین می‌کند. یک میان‌بر مسیر دقیق این پوشهٔ ZBox را ذخیره می‌کند، بنابراین اگر ZBox را جای دیگری جابه‌جا یا رونوشت کنید، این را دوباره روی نسخهٔ جدید فشار دهید تا میان‌بر رومیزی به آن اشاره کند. بلافاصله اعمال می‌شود و منتظر تأیید نمی‌ماند.
+
+# The Address Book, its contact form and its groups.
+ab_name = نام
+ab_phone = تلفن
+ab_notes = یادداشت‌ها
+ab_heading = دفترچهٔ نشانی
+ab_contacts = مخاطبین
+ab_new = جدید...
+ab_edit = ویرایش...
+ab_delete = حذف
+ab_import = درون‌بری...
+ab_export = برون‌بری...
+ab_groups_label = گروه‌ها (فهرست‌های پستی)
+ab_groups_name = گروه‌ها
+ab_new_group = گروه جدید...
+ab_rename_group = تغییر نام گروه...
+ab_delete_group = حذف گروه
+ab_manage_members = مدیریت اعضا...
+ab_all_contacts = همهٔ مخاطبین
+ab_add_member = افزودن >>
+ab_remove_member = << حذف
+ab_members_of = اعضای {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = در فرهنگ لغت نیست:
+sp_not_in_dictionary_name = در فرهنگ لغت نیست
+sp_in_this_line_label = در این سطر:
+sp_in_this_line_name = در این سطر
+sp_suggestions_label = پیشنهادها:
+sp_suggestions_name = پیشنهادها
+sp_replace_with_label = جایگزینی با:
+sp_replace_with_name = جایگزینی با
+sp_replace = جایگزینی
+sp_replace_all = جایگزینی همه
+sp_ignore = نادیده گرفتن
+sp_ignore_all = نادیده گرفتن همه
+sp_add_to_dictionary = افزودن به فرهنگ لغت
+btn_close = بستن
+
+# Privacy and Content Blocking.
+priv_remote_label = محتوای راه‌دور در پیام‌ها:
+priv_block_remote = مسدود کردن محتوای راه‌دور تا زمانی که درخواست کنم (توصیه‌شده)
+priv_blocklist_label = فهرست مسدود تبلیغات و ردیاب:
+priv_block_known = مسدود کردن دامنه‌های شناخته‌شدهٔ تبلیغات و ردیاب
+priv_update_daily = به‌روزرسانی روزانهٔ فهرست در پس‌زمینه
+priv_update_now = به‌روزرسانی اکنون
+priv_junk_label = قوانین نامهٔ هرزنامه:
+priv_check_inbox = بررسی نامهٔ جدید صندوق ورودی در برابر فرستندگان مسدود و پیوندهای فیشینگ شناخته‌شده
+priv_move_blocked = انتقال خودکار نامه از فرستندگان مسدود به هرزنامه
+priv_update_phishing = به‌روزرسانی فهرست فیشینگ اکنون
+priv_blocked_label = فرستندگان مسدود:
+priv_blocked_name = فرستندگان مسدود
+priv_remove_blocked = حذف فرستندهٔ مسدود
+priv_never_junk_label = فرستندگانی که هرگز هرزنامه در نظر گرفته نمی‌شوند:
+priv_never_junk_name = فرستندگانی که هرگز هرزنامه در نظر گرفته نمی‌شوند
+priv_remove_never_junk = حذف فرستندهٔ هرگز-هرزنامه
+priv_allowed_label = فرستندگانی که اجازهٔ بارگذاری محتوای راه‌دور دارند:
+priv_allowed_name = فرستندگان مجاز
+priv_remove_selected = حذف فرستندهٔ انتخاب‌شده
+
+# Message Filters.
+filt_rule_name = نام قانون
+filt_enabled = فعال
+filt_match_label = مطابقت:
+filt_match_all = مطابقت با همهٔ موارد زیر (AND)
+filt_match_any = مطابقت با هر یک از موارد زیر (OR)
+filt_conditions_label = شرایط (برای رد شدن از یک مقدار، آن را خالی بگذارید):
+filt_condition_field = فیلد شرط {number}
+filt_condition_contains = شرط {number} شامل
+filt_actions_label = کنش‌ها:
+filt_mark_read = علامت‌گذاری به‌عنوان خوانده‌شده
+filt_flag = پرچم‌گذاری پیام
+filt_move_label = انتقال به پوشه:
+filt_move_name = انتقال به پوشه
+filt_rules_name = قوانین فیلتر
+filt_new = قانون جدید...
+filt_edit = ویرایش قانون...
+filt_delete = حذف قانون
+filt_up = انتقال به بالا
+filt_down = انتقال به پایین
+filt_run_label = اجرای فوری روی پوشه:
+filt_run_name = پوشهٔ اجرای فوری
+filt_run_now = اجرای فوری
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = باز کردن قفل با کلید ورود (Windows Hello)
+unl_security_key = باز کردن قفل با کلید امنیتی
+unl_master_password_label = گذرواژهٔ اصلی:
+unl_master_password_name = گذرواژهٔ اصلی
+unl_unlock = باز کردن قفل
+unl_exit = خروج از ZBox
+unl_methods_label = روش‌های ثبت‌شده:
+unl_methods_name = روش‌های باز کردن قفل ثبت‌شده
+unl_add_passkey = افزودن کلید ورود…
+unl_add_key = افزودن کلید امنیتی…
+unl_reassign = تخصیص دوبارهٔ کلید ورود به این کامپیوتر…
+unl_test = آزمایش…
+unl_remove = حذف
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = فرستنده
+comp_to = به
+comp_cc = رونوشت
+comp_bcc = رونوشت پنهان
+comp_subject = موضوع
+comp_attach_button = پیوست فایل...
+comp_sending = در حال ارسال...
+comp_report_label = گزارش:
+comp_report_name = گزارش
+comp_refresh = به‌روزرسانی
+comp_copy = رونوشت
+comp_preview_read = همان‌طور که گیرنده آن را می‌خواند
+comp_preview_source = HTML‌ای که ارسال خواهد شد
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = بدنهٔ پیام
+mv_blocked_notice = اعلان محتوای مسدود
+mv_show_remote = نمایش محتوای راه‌دور
+mv_always_allow = همیشه اجازه به این فرستنده
+mv_message_headers = سرایندهای پیام
+mv_attachments = پیوست‌ها
+mv_attachments_count = پیوست‌ها ({count})
+mv_save_attachment = ذخیره: {filename}
+mv_save_all = ذخیرهٔ همه
+mv_html_view = نمای HTML پیام
+mv_saved_message = پیام ذخیره‌شده
+mv_show_remote_tip = این پیام را با تصاویر و سبک‌های راه‌دورش دوباره بارگذاری کنید. ردیاب‌های شناخته‌شده همچنان مسدود می‌مانند.
+mv_always_allow_tip = بارگذاری محتوای راه‌دور در هر پیام از {sender}.
+
+# The search tab.
+srch_account = حساب
+srch_folder = پوشه
+srch_for = جستجو برای
+
+# The signature editor.
+sig_editors = ویرایشگرهای امضا
+sig_formatted = امضا، قالب‌بندی‌شده
+sig_source = امضا، منبع HTML
+sig_plain_label = جایگزین متن ساده (همراه با HTML ارسال می‌شود)
+sig_plain_name = جایگزین متن ساده
+
+# About ZBox.
+about_text_name = متن دربارهٔ ZBox
+about_view_license = مشاهدهٔ پروانه...
+about_google = گذرواژه‌های برنامهٔ Google...
+about_support = پشتیبانی از ZBox -- توسعه و نگهداری تک‌نفره
+about_repos = مخازن برنامه‌های حارث در GitHub
+about_contact = تماس با حارث
+btn_close_plain = بستن
+btn_cancel_plain = لغو
+
+# The license window.
+eula_heading = پروانهٔ ZBox
+eula_text_name = متن پروانهٔ ZBox
+eula_third_party = صفحات پروانهٔ اجزای شخص ثالث:
+eula_agree = من با شرایط بالا موافقم
+eula_agree_name = شرایط پروانهٔ ZBox را خوانده و پذیرفته‌ام
+eula_disagree = مخالفم
+eula_next = بعدی
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = متن مستندات ZBox
+doc_copy = رونوشت به بریده‌دان
+shortcuts_heading = کلیدهای میانبر
+shortcuts_text_name = متن کلیدهای میانبر
+
+# The main window's own panes.
+mf_toolbar = نوار ابزار اصلی
+mf_tabs = زبانه‌های ZBox
+tree_heading = حساب‌ها و پوشه‌ها
+tree_name = درخت حساب و پوشه
+envlist_heading = پیام‌ها
+envlist_name = فهرست پیام‌ها
+rdr_heading = پیام
+rdr_name = خوانندهٔ پیام
+conv_heading_one = گفتگو: ۱ پیام
+conv_heading_many = گفتگو: {count} پیام
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} از {total} انجام شد.
+bulk_cancelling = در حال لغو -- پایان دادن به پیام فعلی...
+cache_clear_now = پاک کردن انباشتهٔ پیام آفلاین اکنون... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}، محافظت‌شده
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = نام نمایشی اختیاری است -- برای ارسال با نام خود این حساب آن را خالی بگذارید.
+acct_note_identity = نشانی ایمیل می‌تواند با ایمیل ورود متفاوت باشد اگر ارائه‌دهندهٔ شما یک دامنهٔ سفارشی متصل به این صندوق داشته باشد. نامه با نشانی بالا ارسال و دریافت خواهد شد، درحالی‌که ورود همچنان از ایمیل ورود استفاده می‌کند. فیلد گذرواژه را برای نگه داشتن گذرواژهٔ فعلاً ذخیره‌شده برای این حساب خالی بگذارید -- برای مثال پس از چرخش یک گذرواژهٔ برنامهٔ Gmail، گذرواژهٔ جدید را اینجا تایپ کنید؛ در غیر این صورت آن را خالی بگذارید.
+acct_note_identities = نشانی‌های دیگری که این حساب می‌تواند با آن‌ها ارسال و پاسخ دهد. پاسخ دادن به پیامی که به یکی از این‌ها فرستاده شده به‌جای نشانی بالا فرستنده را به آن نشانی تنظیم می‌کند.
+acct_note_signature = به هر پیام جدید، پاسخ و ارسال به‌عنوان دیگری ارسال‌شده از این حساب، زیر یک سطر «-- »، افزوده می‌شود. برای هیچ‌کدام خالی بگذارید. ویرایش امضا ویرایشگر قالب‌بندی‌شده را باز می‌کند، جایی که پررنگ، فهرست و پیوند در دسترس هستند؛ کادر بالا سپس نسخهٔ متن سادهٔ همراه آن را نگه می‌دارد که همراه آن ارسال می‌شود.
+acct_note_junk = علامت‌گذاری به‌عنوان هرزنامه پیام‌ها را به کدام پوشهٔ واقعی منتقل می‌کند. «{automatic}» همان حدس آگاه از ارائه‌دهنده‌ای که بایگانی و زباله‌دان از قبل استفاده می‌کنند را به کار می‌برد؛ این را فقط در صورتی تنظیم کنید که آن حدس اشتباه باشد یا پوشهٔ هرزنامهٔ شما نام سفارشی داشته باشد.
+acct_note_disable = یک حساب غیرفعال هرگز تماس گرفته نمی‌شود -- بدون IDLE، بدون به‌روزرسانی دوره‌ای، هیچ‌چیز -- تا وقتی دوباره فعال شود. همچنان در درخت نشان داده می‌شود، با علامت (غیرفعال)، و نامه‌های از قبل بارگیری‌شده‌اش به‌صورت آفلاین در دسترس می‌مانند. همان کلید حساب‌ها > غیرفعال کردن حساب یا فهرست زمینه‌ای خود حساب؛ این فقط یک محل دیگر برای دسترسی به آن است.
+acct_note_default = پوشه‌های این حساب اول در درخت ظاهر می‌شوند، و یک پیام جدید به‌طور پیش‌فرض از آن ارسال می‌شود مگر اینکه در نگارشگر به‌صورت دستی تغییر کند. تأثیری روی اینکه یک پاسخ یا ارسال به‌عنوان دیگری کدام نشانی را استفاده می‌کند ندارد -- آن از قبل از پیامی که پاسخ داده می‌شود پیروی می‌کند (به هویت‌های اضافی بالا نگاه کنید). همیشه دقیقاً یک حساب پیش‌فرض وجود دارد، بنابراین برداشتن علامت این روی پیش‌فرض فعلی بدون گذاشتن علامت روی یکی دیگر آن را بدون تغییر می‌گذارد -- به‌جای آن کادر حساب دیگری را علامت بزنید تا پیش‌فرض به آن منتقل شود.
+acct_note_mute = خاموش کردن صدای نامهٔ جدید این حساب، اعلان گفتاری و اعلان ویندوز را مسدود می‌کند، صرف‌نظر از اینکه آن‌ها در غیر این صورت چگونه پیکربندی شده‌اند. روی حساب‌های دیگر تأثیر نمی‌گذارد، و همچنان تابع کلیدهای اصلی در تنظیمات > صدا و اعلان‌ها (صداها و اعلان‌های رومیزی به‌طور کلی) است.
+wiz_note_app_password = اگر از قبل یک گذرواژهٔ برنامه برای ZBox ایجاد کرده‌اید، برای ادامه بعدی را فشار دهید.
+wiz_note_login = اعتبارنامهٔ ورود.\nاگر ایمیل ورود شما با نشانی بالا متفاوت است، برای مثال حساب ارائه‌دهندهٔ شما login@example.net است اما می‌خواهید به‌عنوان you@example.org ارسال و دریافت کنید، ایمیل ورود را اینجا وارد کنید. می‌توانید نشانی ارسال سفارشی را بعداً در تنظیمات حساب تنظیم کنید.
+wiz_note_servers = تنظیمات سرور، از پیش پر شده جایی که دامنه شناخته‌شده باشد. هر چیزی که نیاز به تغییر دارد را ویرایش کنید.
+wiz_preset_none = پیش‌تنظیمی برای این دامنه یافت نشد. تنظیمات سرور ارائه‌دهندهٔ خود را دستی وارد کنید؛ صفحات راهنمای ارائه‌دهندهٔ شما آن‌ها را فهرست می‌کنند.
+ab_note_groups = نام یک گروه را در فیلد به، رونوشت یا رونوشت پنهان یک پنجرهٔ نگارش تایپ کنید تا همهٔ اعضای آن یکجا پر شوند.
+cache_note_intro = این‌ها فقط نسخه‌های محلی ZBox را حذف می‌کنند. چیزی از هیچ سرور ایمیلی حذف نمی‌شود، و یک پیام حذف‌شده دفعهٔ بعد که آن را باز می‌کنید دوباره بارگیری می‌شود.
+cache_note_age = پاک‌سازی خودکار یک‌بار در روز اجرا می‌شود، وقتی ZBox ده دقیقه فعالیت صفحه‌کلیدی نداشته و پیامی باز نباشد. بر اساس تاریخ خود هر پیام عمل می‌کند، از جمله پیام‌هایی که هنوز در حساب شما هستند.
+filt_note_intro = قوانین به ترتیب، از بالا به پایین اجرا می‌شوند، فرستنده، به و موضوع را آزمایش می‌کنند. به‌طور خودکار روی نامهٔ جدید هنگام رسیدن به صندوق ورودی این حساب اعمال می‌شود؛ از اجرای فوری زیر برای اعمال آن‌ها روی پیام‌های از قبل موجود در یک پوشه استفاده کنید.
+filt_note_run_now = هر قانون فعال بالا را به ترتیب روی هر پیام از قبل موجود در پوشهٔ انتخاب‌شده اعمال می‌کند -- ابتدا تغییرات شما را ذخیره می‌کند، مانند تأیید.
+mp_note_intro = این حساب‌ها روی کامپیوتر دیگری تنظیم شده‌اند. گذرواژهٔ اصلی را وارد کنید تا گذرواژه‌های ذخیره‌شدهٔ آن‌ها اینجا باز شود. فقط یک‌بار روی این کامپیوتر از شما پرسیده خواهد شد.\n\nبدون آن، هر حساب باید دوباره وارد سرور ایمیل خود شود.
+priv_note_remote = تصاویر، برگه‌های سبک و قلم‌هایی که یک پیام از اینترنت بارگذاری می‌کند، به فرستنده در همان لحظه که آن را باز کردید و از کجا می‌گویند. با روشن بودن این، هیچ‌کدام بارگذاری نمی‌شوند: یک اعلان بالای پیام نشان می‌دهد چه چیزی مسدود شد، و Ctrl+Shift+I آن را برای همان یک پیام بارگذاری می‌کند. تصاویر پیوست‌شده به خود پیام همیشه نشان داده می‌شوند. اسکریپت‌ها و قاب‌های تعبیه‌شده در هر صورت حذف می‌شوند و هرگز بارگذاری نمی‌شوند.
+priv_note_blocklist = این لایهٔ دوم است. وقتی محتوای راه‌دور یک پیام را بارگذاری می‌کنید، یا یک فرستنده را اجازه می‌دهید اهمیت پیدا می‌کند: تصاویر بارگذاری می‌شوند، اما هر چیزی که از یک دامنهٔ ردیابی یا تبلیغاتی شناخته‌شده ارائه می‌شود همچنان بارگذاری نمی‌شود. فهرست از فهرست‌های عمومی تبلیغات و ردیاب بارگیری و ادغام می‌شود؛ به‌روزرسانی یک یا دو ثانیه طول می‌کشد و در پس‌زمینه اجرا می‌شود.
+priv_note_junk = بدون حدس. علامت‌گذاری به‌عنوان هرزنامه فرستنده را به فهرست مسدود زیر اضافه می‌کند، مگر اینکه پیام از طریق یک فهرست پستی رسیده باشد. علامت‌گذاری به‌عنوان غیرهرزنامه فرستنده را به فهرست هرگز-هرزنامه اضافه می‌کند و آن پیام دیگر هرگز بررسی نمی‌شود. یک پیام جدید از یک فرستندهٔ مسدود در فهرست فرستندهٔ مسدود علامت می‌خورد؛ یکی که به یک سایت فیشینگ یا بدافزار شناخته‌شده پیوند می‌دهد فیشینگ احتمالی علامت می‌خورد. فیلترینگ هرزنامهٔ ارائه‌دهندهٔ ایمیل شما همچنان مانند قبل اجرا می‌شود.
+priv_status_phishing_updating = فهرست فیشینگ: در حال به‌روزرسانی در پس‌زمینه. برای دیدن نتیجه این پنجره را دوباره باز کنید.
+priv_status_updating = در حال به‌روزرسانی در پس‌زمینه. برای دیدن نتیجه این پنجره را دوباره باز کنید.
+rel_note_intro = پیام‌های مرتبط با «{subject}» بر اساس سرایندهای Message-ID/References آن‌ها، در سراسر هر پوشه در این حساب.
+srch_note_intro = فرستنده، موضوع و بدنه را برای متنی که در زیر وارد می‌کنید جستجو کنید. مگر اینکه در زیر محدودش کنید، هر حساب و پوشه جستجو می‌شود.
+sig_note_plain = جایگزین متن ساده را خالی بگذارید و با فشردن تأیید از امضای قالب‌بندی‌شده نوشته خواهد شد.
+unified_note_intro = انتخاب کنید کدام پوشه‌ها در سراسر هر حساب ترکیب شوند. هر کدام علامت‌خورده یک مدخل تکی در درخت می‌شود که آن پوشه را از همهٔ حساب‌های شما ترکیب می‌کند.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = دربارهٔ ZBox
+title_account_settings = تنظیمات حساب: {name}
+title_new_account = حساب جدید
+title_address_book = دفترچهٔ نشانی
+title_members = اعضا: {name}
+ab_group_name_prompt = نام گروه:
+title_new_group = گروه جدید
+title_cache_cleanup = پیکربندی پاک‌سازی انباشته
+cache_age_prompt = پاک‌سازی خودکار پیام‌های انباشته‌شدهٔ قدیمی‌تر از:
+title_automatic_cleanup = پاک‌سازی خودکار
+comp_link_prompt = نشانی پیوند:
+title_insert_link = درج پیوند
+title_composer_diagnostics = عیب‌یابی نگارشگر
+title_formatted_preview = پیش‌نمایش قالب‌بندی‌شده
+title_license_agreement = توافق‌نامهٔ پروانهٔ ZBox
+title_message_filters = فیلترهای پیام: {account}
+title_master_password_required = گذرواژهٔ اصلی لازم است
+title_privacy_dialog = حریم خصوصی و مسدودسازی محتوا
+title_privacy = حریم خصوصی
+title_settings = تنظیمات
+title_unified_folders = پوشه‌های یکپارچه
+title_zbox_locked = ZBox قفل است
+title_message_view = نمای پیام
+title_remote_content = محتوای راه‌دور
+title_refresh = به‌روزرسانی
+title_refresh_all = به‌روزرسانی همه
+mv_choose_folder = پوشه‌ای برای ذخیرهٔ پیوست انتخاب کنید
+title_thread = رشته
+title_inbox = صندوق ورودی
+title_compose = نگارش
+title_watch_thread = زیرنظر گرفتن رشته
+title_ignore_thread = نادیده گرفتن رشته
+title_edit_signature = ویرایش امضا
+title_account = حساب
+mf_folder_name_prompt = نام پوشه:
+mf_new_name_prompt = نام جدید:
+title_refresh_all_accounts = به‌روزرسانی همهٔ حساب‌ها
+title_sender = فرستنده
+title_new_mail = نامهٔ جدید
+mf_export_dialog_title = برون‌بری هر {count} حساب و تنظیمات
+mf_related_tab = مرتبط: {subject}
+title_hotkeys_diagnostic = عیب‌یاب کلیدهای میانبر
+set_choose_attachment_dir = پوشهٔ ذخیرهٔ پیوست را انتخاب کنید
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox قفل است. برای باز کردن قفل آن از هر یک از روش‌های زیر استفاده کنید. لغو، ZBox را بدون باز کردن هیچ حسابی می‌بندد.
+unl_note_foreign_passkey = کلید ورود ذخیره‌شده با این پوشه متعلق به کامپیوتر دیگری است، بنابراین اینجا قابل استفاده نیست. با کلید امنیتی یا گذرواژهٔ اصلی خود قفل را باز کنید، سپس از تنظیمات، حریم خصوصی و امنیت، روش‌های باز کردن قفل برای تنظیم یک کلید ورود روی این کامپیوتر استفاده کنید.
+unl_note_methods = هر کدام از این‌ها، در کنار گذرواژهٔ اصلی، وقتی قفل برنامه روشن است ZBox را باز می‌کند. یک کلید ورود از Windows Hello روی این کامپیوتر استفاده می‌کند؛ یک کلید امنیتی یک کلید FIDO2 روی USB یا NFC است و روی هر کامپیوتری که آن را وصل کنید کار می‌کند.
+unl_note_not_encryption = این‌ها برنامه را باز می‌کنند. چیزی را رمزگذاری نمی‌کنند: گذرواژهٔ اصلی همچنان تنها چیزی است که می‌تواند گذرواژه‌های ذخیره‌شدهٔ حساب را روی کامپیوتری که این پوشه پیش‌تر روی آن استفاده نشده باز کند. باید ابتدا تنظیم شود، و هیچ‌کدام از این‌ها تا آن زمان قابل افزودن نیستند.
+unl_add_passkey_unavailable = افزودن کلید ورود (در دسترس نیست)
+unl_add_key_unavailable = افزودن کلید امنیتی (در دسترس نیست)
+unl_reassign_unavailable = تخصیص دوبارهٔ کلید ورود به این کامپیوتر (در دسترس نیست)
+unl_status_cancelled_passkey = کلید ورود لغو شد. ZBox همچنان قفل است.
+unl_status_cancelled_key = کلید امنیتی لغو شد. ZBox همچنان قفل است.
+unl_status_enter_password = گذرواژهٔ اصلی را وارد کنید.
+unl_status_no_master = گذرواژهٔ اصلی‌ای تنظیم نشده، بنابراین یک کلید ورود یا کلید امنیتی هنوز قابل افزودن نیست. یکی را با دکمهٔ گذرواژهٔ اصلی در تنظیمات، حریم خصوصی و امنیت تنظیم کنید، سپس به اینجا برگردید. گذرواژهٔ اصلی چیزی است که گذرواژه‌های ذخیره‌شدهٔ حساب شما را روی کامپیوتر دیگری باز می‌کند؛ یک کلید ورود فقط برنامه را روی همین یکی باز می‌کند، بنابراین نمی‌تواند به‌تنهایی بایستد.
+unl_status_unsupported = ویندوز این کامپیوتر از کلید ورود یا کلید امنیتی پشتیبانی نمی‌کند، بنابراین فقط گذرواژهٔ اصلی می‌تواند اینجا ZBox را باز کند.
+unl_status_foreign_one = ۱ کلید ورود متعلق به کامپیوتر دیگری است و نمی‌تواند اینجا ZBox را باز کند. تخصیص دوباره آن‌ها را با یکی که روی این کامپیوتر ساخته شده جایگزین می‌کند.
+unl_status_foreign_many = {count} کلید ورود متعلق به کامپیوتر دیگری هستند و نمی‌توانند اینجا ZBox را باز کنند. تخصیص دوباره آن‌ها را با یکی که روی این کامپیوتر ساخته شده جایگزین می‌کند.
+unl_status_foreign_one_no_hello = ۱ کلید ورود متعلق به کامپیوتر دیگری است و نمی‌تواند اینجا ZBox را باز کند. Windows Hello اینجا تنظیم نشده، بنابراین نمی‌توان آن‌ها را روی این کامپیوتر جایگزین کرد؛ حذف آن‌ها را فراموش می‌کند.
+unl_status_foreign_many_no_hello = {count} کلید ورود متعلق به کامپیوتر دیگری هستند و نمی‌توانند اینجا ZBox را باز کنند. Windows Hello اینجا تنظیم نشده، بنابراین نمی‌توان آن‌ها را روی این کامپیوتر جایگزین کرد؛ حذف آن‌ها را فراموش می‌کند.
+unl_status_no_hello = Windows Hello روی این کامپیوتر تنظیم نشده، بنابراین یک کلید ورود اینجا قابل افزودن نیست. یک کلید امنیتی همچنان می‌تواند.
+unl_status_none_registered = هنوز روش باز کردن قفلی ثبت نشده است.
+unl_status_add_cancelled_passkey = افزودن یک کلید ورود لغو شد.
+unl_status_add_cancelled_key = افزودن یک کلید امنیتی لغو شد.
+unl_status_added = افزوده شد: {name}.
+unl_status_reassign_cancelled = تخصیص دوباره لغو شد. چیزی تغییر نکرد.
+unl_status_reassigned = {name} افزوده شد و {count} از کامپیوترهای دیگر فراموش شد.
+unl_status_test_cancelled = آزمایش لغو شد.
+unl_status_removed = حذف شد.
+unl_remove_warning_last = {name} حذف شود؟\n\nاین تنها روش باز کردن قفل ثبت‌شده است و گذرواژهٔ اصلی‌ای تنظیم نشده، بنابراین با روشن بودن قفل برنامه چیزی برای باز کردن ZBox باقی نمی‌ماند. قفل نادیده گرفته می‌شود به‌جای اینکه شما را بیرون نگه دارد، اما ZBox سپس باز باقی خواهد ماند.
+unl_remove_warning = {name} حذف شود؟ ZBox دیگر آن را نمی‌پذیرد.
+ab_col_email = ایمیل
+ab_col_name = نام
+ab_col_phone = تلفن
+ab_no_contacts = هنوز مخاطبی نیست.
+acct_auto_check = بررسی خودکار پیام‌های جدید
+acct_note_auto_check = خاموش: ZBox هرگز خودبه‌خود با این حساب تماس نمی‌گیرد؛ نه پایش نامه‌های جدید، نه تازه‌سازی زمان‌بندی‌شده و نه بارگیری در پس‌زمینه، تا سرور ناپایدار حساب‌های دیگر را کند نکند. نامه‌های بارگیری‌شده همچنان باز می‌شوند و تازه‌سازی (F5)، ارسال و حذف همچنان به سرور می‌رسند. همانند توقف بررسی خودکار در منوی ابزارها یا منوی زمینه حساب است.
+bl_day_ago = ۱ روز پیش
+bl_days_ago = {days} روز پیش
+bl_label_blocklists = فهرست مسدودسازی
+bl_label_phishing = فهرست فیشینگ
+bl_last_failed = آخرین تلاش ناموفق بود: %s
+bl_not_downloaded = هنوز بارگیری نشده.
+bl_save_failed = %s بارگیری شد اما ذخیره نشد: %s
+bl_seed_only = %s دامنه از فهرست داخلی. هنوز از اینترنت به‌روز نشده.
+bl_some_failed = برخی منابع ناموفق بودند: %s
+bl_some_unreachable = به برخی منابع دسترسی نبود: %s
+bl_status_line = %s دامنه. آخرین به‌روزرسانی %s.
+bl_up_to_date = %s از قبل به‌روز است.
+bl_update_failed = به‌روزرسانی %s ممکن نبود: %s
+bl_updated = %s به‌روز شد: %s دامنه.
+cc_age_choice = هر حافظه پیام با قدمت %s
+cc_auto_button = پاک‌سازی خودکار: پیام‌های ذخیره‌شده قدیمی‌تر از %s...
+comp_btn_discard = دور انداختن
+comp_btn_keep_editing = ادامه ویرایش
+comp_btn_save_draft = ذخیره پیش‌نویس
+comp_no_account = حسابی تنظیم نشده
+comp_saving_draft = در حال ذخیره پیش‌نویس…
+comp_this_message = این پیام
+comp_unsent_save_q = %s پیش از بستن به‌عنوان پیش‌نویس ذخیره شود؟
+comp_unsent_tray_q = %s پیش از رفتن ZBox به سینی سیستم به‌عنوان پیش‌نویس ذخیره شود؟
+doc_unreadable = فایل راهنما خوانده نشد:
+envlist_all_disabled = همه حساب‌ها غیرفعال‌اند.
+envlist_col_date = تاریخ
+envlist_col_from = از
+envlist_col_status = وضعیت
+envlist_col_subject = موضوع
+envlist_collapsed = جمع‌شده (%d)
+envlist_empty = در این پوشه پیامی نیست.
+envlist_loading = در حال بارگیری پیام‌ها...
+envlist_no_accounts = هنوز حسابی تنظیم نشده.
+envlist_no_ignored = در این پوشه رشته گفتگوی نادیده‌گرفته‌شده‌ای نیست.
+envlist_no_watched = در این پوشه رشته گفتگوی پایش‌شده‌ای نیست.
+envlist_select_folder = برای بارگیری پیام‌ها یک حساب یا پوشه انتخاب کنید.
+eula_link_0 = باز کردن صفحه مجوز Himalaya در مرورگر
+eula_link_1 = باز کردن صفحه مجوز StevenBlack hosts در مرورگر
+eula_link_2 = باز کردن صفحه مجوز EasyList/EasyPrivacy در مرورگر
+eula_link_3 = باز کردن صفحه مجوز Phishing.Database در مرورگر
+eula_read_note = مجوز زیر را، همراه با بخش‌های اشخاص ثالث، بخوانید. پیش از فعال شدن بعدی باید موافقم را علامت بزنید. موافق نیستم ZBox را بدون اجرا می‌بندد و آنچه این اجرا تاکنون ساخته را حذف می‌کند.
+eula_unreadable = فایل مجوز خوانده نشد:\n%s
+filters_title = اجرای فیلترها
+flag_title = پرچم‌گذاری پیام
+folder_type_archive = بایگانی
+folder_type_drafts = پیش‌نویس‌ها
+folder_type_inbox = صندوق ورودی
+folder_type_junk = هرزنامه
+folder_type_sent = ارسال‌شده
+folder_type_trash = زباله‌دان
+mime_application_json = فایل JSON
+mime_application_msword = سند Word
+mime_application_octet_stream = فایل دودویی
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = صفحه‌گسترده Excel
+mime_application_vnd_ms_powerpoint = ارائه PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = ارائه PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = صفحه‌گسترده Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = سند Word
+mime_application_xml = فایل XML
+mime_application_zip = بایگانی ZIP
+mime_audio_mpeg = صدای MP3
+mime_audio_ogg = صدای OGG
+mime_audio_wav = صدای WAV
+mime_image_bmp = تصویر BMP
+mime_image_gif = تصویر GIF
+mime_image_jpeg = تصویر JPEG
+mime_image_png = تصویر PNG
+mime_image_svg_xml = تصویر SVG
+mime_image_webp = تصویر WebP
+mime_text_csv = فایل CSV
+mime_text_html = فایل HTML
+mime_text_plain = فایل متنی
+mime_video_mp4 = ویدیوی MP4
+mime_video_x_msvideo = ویدیوی AVI
+move_title_junk = علامت‌گذاری به‌عنوان هرزنامه
+move_title_move_to = انتقال به
+move_title_not_junk = علامت‌گذاری به‌عنوان غیرهرزنامه
+mp_explain_set = یک گذرواژه اصلی تعیین شده است. همین گذرواژه به این پوشه ZBox اجازه می‌دهد گذرواژه‌های ذخیره‌شده حساب‌ها را روی رایانه دیگری باز کند.\n\nبرای حذف آن، هر دو کادر گذرواژه جدید را خالی بگذارید و تأیید را بزنید. حذف آن روی این رایانه اثری ندارد، اما پوشه بدون ورود دوباره به همه حساب‌ها روی هیچ رایانه دیگری کار نخواهد کرد.
+mp_explain_unset = گذرواژه اصلی تعیین نشده است، بنابراین گذرواژه‌های ذخیره‌شده حساب‌ها فقط روی این رایانه و این حساب Windows خوانده می‌شوند. اگر پوشه را جای دیگری کپی کنید، باید دوباره به سرور نامه هر حساب وارد شوید.\n\nاگر یکی تعیین کنید، ZBox در هر رایانه جدید یک بار آن را می‌پرسد و پس از آن به‌طور عادی باز می‌شود. این رایانه دیگر نمی‌پرسد.\n\nآن را یادداشت کنید و در جای امنی نگه دارید. در هیچ جا ذخیره نمی‌شود و بازیابی‌پذیر نیست: اگر فراموشش کنید، باید دوباره به سرور نامه هر حساب وارد شوید.
+mp_label_confirm = تأیید گذرواژه اصلی جدید:
+mp_label_current = گذرواژه اصلی فعلی:
+mp_label_master = گذرواژه اصلی:
+mp_label_new = گذرواژه اصلی جدید:
+mp_name_confirm = تأیید گذرواژه اصلی جدید
+mp_name_current = گذرواژه اصلی فعلی
+mp_name_master = گذرواژه اصلی
+mp_name_new = گذرواژه اصلی جدید
+mp_prompt_existing = گذرواژه‌های ذخیره‌شده حساب‌ها فقط روی این رایانه محافظت می‌شوند. یک گذرواژه اصلی تعیین کنید تا اگر ZBox را به رایانه دیگری بردید هم باز شوند.
+mp_prompt_first_run = ZBox در حال ذخیره گذرواژه‌های حساب‌های شماست. اکنون یک گذرواژه اصلی تعیین کنید تا اگر ZBox را به رایانه دیگری بردید همچنان باز شوند.
+mp_prompt_new_account = ZBox در حال ذخیره گذرواژه این حساب است. ابتدا یک گذرواژه اصلی تعیین کنید تا اگر ZBox را به رایانه دیگری بردید، حساب همچنان باز شود.
+mp_removed_done = گذرواژه اصلی حذف شد. اکنون گذرواژه‌های ذخیره‌شده فقط روی این رایانه و این حساب Windows کار می‌کنند.
+mp_set_done = گذرواژه اصلی تعیین شد. ZBox در هر رایانه جدیدی که این پوشه روی آن باز شود یک بار آن را می‌پرسد و پس از آن به‌طور عادی باز می‌شود.
+mv_body_title = متن پیام
+mv_col_format = قالب
+mv_col_name = نام
+mv_col_size = اندازه
+mv_format_unknown = ناشناخته
+mv_size_unknown = اندازه نامعلوم
+na_account_settings = تنظیمات حساب
+na_disable_account = غیرفعال کردن حساب
+na_edit_signature = ویرایش امضا
+na_message_filters = فیلترهای پیام
+na_mute_account = بی‌صدا کردن حساب
+na_pause_auto_check = توقف بررسی خودکار
+na_remove_account = حذف حساب
+na_set_default = تنظیم به‌عنوان حساب پیش‌فرض
+no_offline_copy = نسخه آفلاین %s وجود ندارد. آن را در حالت آنلاین باز کنید یا از پرونده، آفلاین، همگام‌سازی اکنون استفاده کنید.
+perm_delete_confirm = {msg} این کار از پوشه زباله‌دان می‌گذرد و برگشت‌پذیر نیست.
+perm_delete_many = {count} پیام برای همیشه حذف شوند؟
+perm_delete_one = {count} پیام برای همیشه حذف شود؟
+preset_note_apple = Apple گذرواژه مخصوص برنامه می‌خواهد.
+preset_note_fastmail = Fastmail گذرواژه برنامه می‌خواهد.
+preset_note_google = Google گذرواژه برنامه یا OAuth2 می‌خواهد، نه گذرواژه معمولی شما را.
+preset_note_microsoft = Microsoft ورود با گذرواژه را برای حساب‌های Outlook.com/Office 365 برداشته است؛ فقط OAuth2 کار می‌کند و ZBox هنوز از آن پشتیبانی نمی‌کند. این حساب نمی‌تواند وارد شود.
+preset_note_proton = ProtonMail به اجرای محلی برنامه ProtonMail Bridge نیاز دارد.
+preset_note_yahoo = Yahoo گذرواژه برنامه می‌خواهد.
+priv_phishing_not_loaded = فهرست فیشینگ: هنوز بارگیری نشده. نخستین باری که این قواعد روشن باشند و ZBox آنلاین باشد بارگیری می‌شود.
+priv_phishing_prefix = فهرست فیشینگ:
+priv_status_unavailable = وضعیت فهرست مسدودسازی در دسترس نیست.
+rdr_load_failed = بارگیری پیام ممکن نبود.\n\n{message}
+rdr_loading = در حال بارگیری پیام...
+rdr_select_message = برای خواندن پیام در اینجا آن را انتخاب کنید.
+set_autosave_off = خاموش — برای ذخیره دستی از ذخیره پیش‌نویس (Ctrl+S) استفاده کنید
+set_autosave_seconds = هر {seconds} ثانیه
+set_no_unlock = هیچ گذرکلید یا کلید امنیتی در اینجا قابل استفاده نیست
+set_purge_days = پس از {days} روز
+set_purge_off = خاموش — زباله‌دان و هرزنامه هرگز خودکار پاک نمی‌شوند
+set_purge_one_day = پس از ۱ روز
+set_rt_bundled_installed = زمان اجرای همراه: نصب است.
+set_rt_bundled_many = زمان اجرای همراه: %s نصب است.
+set_rt_bundled_none = زمان اجرای همراه: نصب نیست، بنابراین ZBox از نسخه سراسری سیستم استفاده می‌کند.
+set_rt_bundled_unknown = زمان اجرای همراه: مشخص نشد.
+set_rt_bundled_ver = زمان اجرای همراه: نسخه %s نصب است.
+set_rt_system_unknown = زمان اجرای سراسری سیستم: نسخه مشخص نشد.
+set_rt_system_ver = زمان اجرای سراسری سیستم: نسخه %s.
+set_unlock_many = %d روش بازگشایی در اینجا قابل استفاده است
+set_unlock_unreadable = روش‌های بازگشایی خوانده نشد
+sig_tab_formatted = قالب‌بندی‌شده
+sig_tab_source = کد منبع HTML
+srch_all_accounts = همه حساب‌ها
+srch_all_folders = همه پوشه‌ها
+tab_mail = نامه
+tab_new_message = پیام جدید
+tab_saved_message = پیام ذخیره‌شده
+title_copy_to_err = رونوشت به
+title_mark_message = علامت‌گذاری پیام
+title_unsent_message = پیام ارسال‌نشده
+tree_unified_root = پوشه‌های یکپارچه
+unlock_kind_passkey = گذرکلید (Windows Hello)
+unlock_kind_security_key = کلید امنیتی
+unlock_prompt_message = Windows از شما تأیید می‌خواهد. با Windows Hello، پین یا کلید امنیتی خود به درخواست آن پاسخ دهید. این پنجره پس از پایان کار Windows خودبه‌خود بسته می‌شود.
+unlock_prompt_title = امنیت Windows
+unlock_registering = ثبت این روش بازگشایی
+unlock_the_passkey = گذرکلید
+unlock_the_security_key = کلید امنیتی
+wildcard_eml = فایل‌های ایمیل (*.eml)|*.eml|همه فایل‌ها (*.*)|*.*
+wildcard_export = خروجی ZBox (*.json)|*.json
+wiz_not_supported = پشتیبانی نمی‌شود: {name}. {note} این حساب در ZBox اضافه نمی‌شود.
+wiz_oauth_notice = ZBox هنوز از ورود با OAuth2 پشتیبانی نمی‌کند. حساب‌هایی که OAuth2 لازم دارند اضافه نمی‌شوند. حساب‌هایی که گذرواژه یا گذرواژه برنامه می‌پذیرند اضافه می‌شوند.\n\nGmail. گذرواژه معمولی Google شما رد می‌شود، اما گذرواژه برنامه کار می‌کند. ابتدا باید تأیید دومرحله‌ای روشن باشد. دکمه زیر راهنمای Google را باز می‌کند.\n\nOutlook.com، Hotmail، Live و Microsoft 365. هنوز پشتیبانی نمی‌شوند. این‌ها OAuth2 لازم دارند و در نسخه‌ای آینده اضافه می‌شوند.\n\nارائه‌دهندگان دیگر. معمولاً گذرواژه معمولی یا گذرواژه برنامه کار می‌کند و صفحه‌های راهنمای ارائه‌دهنده شما تنظیمات سرور را فهرست می‌کنند.\n\nاین صفحه پس از آمدن پشتیبانی OAuth2 حذف می‌شود.
+stock_apply = اعمال
+stock_cancel = لغو
+stock_close = بستن
+stock_help = راهنما
+stock_no = خیر
+stock_ok = تأیید
+stock_yes = بله
+
+[errors]
+language_restart_failed = ZBox نتوانست خود را دوباره راه‌اندازی کند:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = باز کردن یک برنامهٔ نامه برای {address} ممکن نشد.
+
+wizard_no_oauth2 = این ارائه‌دهنده نمی‌تواند بدون OAuth2 وارد شود، که ZBox هنوز پشتیبانی نمی‌کند -- هیچ گزینهٔ گذرواژه یا گذرواژهٔ برنامه‌ای وجود ندارد که اینجا کار کند. این حساب قابل افزودن نیست. برگردید و از یک نشانی ایمیل دیگر استفاده کنید، یا لغو کنید و منتظر پشتیبانی OAuth2 بمانید.
+wizard_test_failed = اتصال ناموفق بود:\n\n{error}
+
+contacts_import_unreadable = آن فایل خوانده نشد.\n\n{error}
+contacts_export_unwritable = آن فایل نوشته نشد.\n\n{error}
+
+attach_unreadable = پیوست {path} خوانده نشد:\n{error}
+send_failed = ارسال پیام ممکن نشد.\n\n{error}
+draft_attach_unreadable = پیوست {path} خوانده نشد:\n{error}\n\nپیش‌نویس ذخیره نشد.
+draft_save_failed = ذخیرهٔ پیش‌نویس ممکن نشد.\n\n{error}
+
+clipboard_unavailable = بریده‌دان باز نشد.
+open_link_failed = باز کردن مرورگر شما برای این نشد:\n{url}
+
+master_password_mismatch = دو کادر گذرواژهٔ اصلی جدید یکسان نیستند.
+master_password_required = یک گذرواژهٔ اصلی وارد کنید، یا لغو را بزنید.
+master_password_not_set = گذرواژهٔ اصلی تنظیم نشد: {error}
+master_password_not_here = گذرواژهٔ اصلی از اینجا قابل تغییر نیست.
+
+attachment_save_failed = ذخیرهٔ پیوست ممکن نشد.\n\n{error}
+attachments_save_failed = ذخیرهٔ پیوست‌ها ممکن نشد.\n\n{error}
+print_failed = چاپ پیام ممکن نشد. بررسی کنید چاپگری پیکربندی شده باشد.
+print_preview_failed = باز کردن پیش‌نمایش چاپ ممکن نشد. بررسی کنید چاپگری پیکربندی شده باشد.
+
+related_search_failed = جستجوی پیام‌های مرتبط ممکن نشد.\n\n{error}
+search_failed = جستجو ناموفق بود.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox پوشهٔ پیکربندی خود را نیافت، بنابراین روش‌های باز کردن قفل اینجا قابل مدیریت نیستند.
+shortcut_no_folder = ZBox پوشهٔ خودش را نیافت، بنابراین یک میان‌بر اینجا قابل ایجاد نیست.
+shortcut_failed_settings = میان‌بر رومیزی ایجاد نشد:\n\n{error}
+
+unlock_method_failed = {what} کار نکرد.\n\n{error}
+unlock_check_failed = گذرواژهٔ اصلی قابل بررسی نبود.\n\n{error}
+unlock_password_wrong = آن گذرواژهٔ اصلی درست نیست.
+unlock_add_failed = {what} افزوده نشد.\n\n{error}
+unlock_passkey_setup_failed = کلید ورود روی این کامپیوتر تنظیم نشد، بنابراین چیزی تغییر نکرد.\n\n{error}
+unlock_method_test_failed = آن روش کار نکرد.\n\n{error}
+
+account_list_unreadable = ZBox فهرست حساب شما را باز نکرد.\n\n{error}\n\nهیچ حسابی بارگذاری نشده، و فایل تغییر نکرده، بنابراین چیزی از دست نرفته است. افزودن، ویرایش و حذف حساب‌ها تا زمانی که قابل خواندن شود رد می‌شود.
+account_list_no_accounts = ZBox فهرست حساب شما را در این نشست باز نکرد ({error})، بنابراین حسابی برای انتخاب نیست. چیزی از دست نرفته و چیزی تغییر نکرده است. ZBox را ببندید و دوباره آغاز کنید، و وقتی خواسته شد گذرواژهٔ اصلی خود را وارد کنید.
+open_message_failed = باز کردن پیام ممکن نشد.\n\n{error}
+filters_list_failed = فهرست کردن پیام‌ها در {folder} ممکن نشد.\n\n{error}
+filters_move_failed = انتقال پیام‌های فیلترشده ممکن نشد.\n\n{error}
+cache_clear_failed = پاک کردن انباشته ممکن نشد.\n\n{error}
+folder_create_failed = ایجاد پوشه ممکن نشد.\n\n{error}
+folder_rename_failed = تغییر نام پوشه ممکن نشد.\n\n{error}
+folder_delete_failed = حذف پوشه ممکن نشد.\n\n{error}
+folder_subscribe_failed = اشتراک پوشه ممکن نشد.\n\n{error}
+folder_unsubscribe_failed = لغو اشتراک پوشه ممکن نشد.\n\n{error}
+saved_open_failed = باز کردن فایل ممکن نشد.\n\n{error}
+saved_parse_failed = تجزیهٔ این فایل به‌عنوان یک پیام ایمیل ممکن نشد.\n\n{error}
+save_file_failed = ذخیرهٔ فایل ممکن نشد.\n\n{error}
+save_fetch_failed = دریافت پیام برای ذخیره ممکن نشد.\n\n{error}
+empty_trash_failed = خالی کردن زباله‌دان ممکن نشد.\n\n{error}
+empty_junk_failed = خالی کردن هرزنامه ممکن نشد.\n\n{error}
+export_write_failed = نوشتن فایل برون‌بری ممکن نشد.\n\n{error}
+import_read_failed = خواندن این فایل به‌عنوان یک برون‌بری ZBox ممکن نشد.\n\n{error}
+import_not_export = این فایل شبیه یک برون‌بری ZBox نیست.\n\n{error}
+search_open_failed = باز کردن این پیام ممکن نشد.
+related_load_failed = بارگذاری این پیام ممکن نشد.\n\n{error}
+reply_load_failed = بارگذاری پیام برای پاسخ ممکن نشد.\n\n{error}
+forward_load_failed = بارگذاری پیام برای ارسال به‌عنوان دیگری ممکن نشد.\n\n{error}
+action_failed = این کنش کامل نشد.\n\n{error}
+undo_failed = واگرد {label} ممکن نشد.\n\n{error}
+copy_failed = رونوشت پیام ممکن نشد.\n\n{error}
+delete_failed = حذف پیام ممکن نشد.\n\n{error}
+archive_failed = بایگانی پیام ممکن نشد.\n\n{error}
+master_password_not_changed = گذرواژهٔ اصلی تغییر نکرد: {error}
+shortcut_failed_startup = میان‌بر رومیزی ایجاد نشد:\n\n{error}\n\nZBox به راه‌اندازی ادامه خواهد داد. می‌توانید بعداً از تنظیمات دوباره تلاش کنید.
+account_locked_action = ZBox نمی‌تواند %s. فهرست حساب‌ها در این نشست باز نشد (%s) و چیزی تغییر نکرد. ZBox را ببندید و دوباره اجرا کنید و اگر گذرواژه اصلی خواسته شد آن را وارد کنید.
+
+[help]

@@ -1,0 +1,1436 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = English
+code = en
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Message sent.
+draft_saved = Draft saved.
+signature_inserted = Signature inserted.
+signature_none = This account has no signature.
+signature_saved = Signature saved.
+signature_not_saved = Signature not saved.
+pasted_as_quotation = Pasted as a quotation.
+clipboard_empty = There is nothing on the clipboard.
+word_count = {words} words, {characters} characters.
+report_copied = Report copied.
+compose_tab_needed = That command needs a compose tab.
+attach_file_instead = Dropped files are not put in the message text. Use Attach File to send one.
+
+# Formatting in the message body
+formatting_here = Formatting here: {formatting}.
+no_formatting_here = No formatting here, plain text.
+
+# Spelling
+nothing_to_check = There is nothing to check.
+no_misspellings = No misspellings.
+spelling_dictionary_unavailable = The spelling dictionary is not available.
+next_misspelling_first = Use next misspelling first.
+word_added = {word} added to the dictionary.
+word_not_added = {word} could not be added.
+corrections_applied_one = 1 correction applied.
+corrections_applied_many = {count} corrections applied.
+corrections_applied_partly = {applied} of {total} corrections applied. The rest were refused; see the log.
+occurrences_replaced_one = 1 occurrence replaced.
+occurrences_replaced_many = {count} occurrences replaced.
+
+# Reading mail
+message_did_not_open = The message did not open. The server did not respond. Press Enter to try again.
+thread_open = {messages} in this thread. Press again to close.
+no_thread_selected = No thread selected.
+thread_watched = Thread watched.
+thread_not_watched = Thread no longer watched.
+thread_ignored = Thread ignored.
+thread_not_ignored = Thread no longer ignored.
+none_found = None found.
+refreshing_this_folder = Refreshing this folder.
+refreshing_all_accounts = Refreshing all accounts.
+message_view_html = Message view: HTML (rendered).
+message_view_text = Message view: Text.
+html_view_still_loading = The message is still loading. Escape closes it.
+message_still_opening = Opening message. The server is slow.
+remote_content_blocked = Remote content blocked.
+remote_content_unblocked = Remote content unblocked.
+remote_content_already_showing = Remote content is already showing in this message.
+archived = Archived.
+copied_to_folder = Copied to {to_folder}.
+deleted_one = Message permanently deleted.
+deleted_many = Permanently deleted {count} messages.
+trashed_one = Message moved to Trash.
+trashed_many = Moved {count} messages to Trash.
+
+# Accounts and new mail
+no_account_yet = There is no account to jump to yet.
+inbox_landed = {name} inbox.
+account_enabled = {name} enabled.
+auto_check_paused = Automatic checking paused for {account}.
+auto_check_resumed = Automatic checking on for {account}.
+account_disabled = {name} disabled.
+new_mail_one = 1 new message for {name}.
+new_mail_many = {count} new messages for {name}.
+refresh_all_done_one = Refreshed 1 account.
+refresh_all_done_many = Refreshed {count} accounts.
+refresh_all_done_failures = Refreshed {count} accounts, {failed} could not be refreshed.
+refresh_all_done_failures_one = Refreshed {count} account, {failed} could not be refreshed.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Address copied.
+sender_no_address = {sender}. No address to copy.
+clipboard_not_opened = {sender}. The clipboard could not be opened.
+
+# The signature editor
+signature_page_formatted = Formatted. This is what will be saved.
+signature_page_html = HTML source. This is what will be saved.
+signature_page_html_still_wins = Formatted. The HTML source is still what will be saved.
+
+# Background work
+phishing_list_updating = Phishing list updating in the background.
+cache_cleared = Cleared {files} cached file(s), {size} MB.
+hotkeys_diagnostic_on = Hotkeys diagnostic on, checked
+hotkeys_diagnostic_off = Hotkeys diagnostic off, unchecked
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Archive
+action_delete = Delete
+action_delete_permanently = Delete Permanently
+action_mark_as_junk = Mark as Junk
+action_mark_as_not_junk = Mark as Not Junk
+action_move_to = Move To
+action_copy_to = Copy To
+action_mark_message = Mark Message
+action_undo = Undo
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Undid {action}.
+undo_done_many = Undid {action} for {count} messages.
+junk_marked_one = Marked as junk.
+junk_marked_many = Marked {count} messages as junk.
+junk_no_new_sender = No new sender blocked: already blocked, a mailing list, or one of your own addresses.
+not_junk_marked_one = Marked as not junk.
+not_junk_marked_many = Marked {count} messages as not junk.
+moved_to_one = Moved to {to_folder}.
+moved_to_many = Moved {count} messages to {to_folder}.
+copied_to_many = Copied {count} messages to {to_folder}.
+marked_read = Marked as read.
+marked_unread = Marked as unread.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Cancelled after {completed} of {total}. {succeeded} succeeded, {failed} failed.
+bulk_failed_one = {done} {failed} of 1 message failed.
+bulk_failed_many = {done} {failed} of {total} messages failed.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Bold
+format_word_italic = Italic
+format_word_strike = Strikethrough
+format_word_href = Link
+format_word_bullet = Bulleted list
+format_word_number = Numbered list
+format_word_quote = Quote
+format_word_code = Code
+format_word_heading1 = Heading
+format_applied = {formatting} applied.
+format_inserted = {formatting} inserted.
+format_not_available = {formatting} is not available in the plain message body.
+format_on = {formatting} on
+format_off = {formatting} off
+link_applied = Link applied.
+link_applied_to_selection = Link applied to the selection.
+plain_body_formatting = The plain message body shows its formatting as tags.
+
+# Reaching either end of a thread
+thread_edge_first = First message in this thread. Press again to close.
+thread_edge_last = Last message in this thread. Press again to close.
+jump_unified_inbox = Unified inbox.
+remote_none = No remote content in this message.
+sender_none = No sender on this message.
+sender_name_no_address = %s, no address
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Type something above and press Enter or select Search.
+search_no_account = Add an account first.
+search_no_term = Type something to search for.
+search_running = Searching...
+search_none = No matches for "{term}".
+search_found_one = 1 match for "{term}".
+search_found_many = {count} matches for "{term}".
+search_failed = Search failed.
+
+# The related messages tab
+related_running = Searching...
+related_none = No related messages found.
+related_found_one = 1 related message found.
+related_found_many = {count} related messages found.
+related_failed = Could not search for related messages.
+
+# Writing and sending
+sending_via = Sending via {sender}...
+send_failed = Send failed. See logs for details.
+draft_autosaved = Draft autosaved.
+draft_autosave_failed = Draft autosave failed. See logs for details.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Remote content will now load for messages from {sender}.
+downloading_attachment = Downloading {filename}...
+downloading_attachments_one = Downloading 1 attachment...
+downloading_attachments_many = Downloading {count} attachments...
+saved_to = Saved to {folder}
+attachment_download_failed = Attachment download failed.
+
+# Getting mail onto the screen
+loading_folder = Loading {folder} for {account}...
+messages_in_folder = {count} message(s) in {folder}.
+messages_in_folder_cached = {count} message(s) in {folder} (last synced copy, updating...)
+no_offline_copy = No offline copy of {folder} yet.
+refresh_failed_cached = Could not refresh {folder}: showing last synced copy.
+no_such_folder = No {folder} folder for this account.
+load_failed = Failed to load messages. See logs for details.
+no_more_to_load = No more messages to load in this folder.
+loading_more = Loading more messages in {folder}...
+more_loaded = {count} more message(s) loaded.
+no_more_messages = No more messages in this folder.
+load_more_failed = Could not load more messages: {error}
+loading_unified = Loading unified {folder}...
+messages_in_unified = {count} message(s) across accounts in unified {folder}.
+messages_in_unified_cached = {count} message(s) in unified {folder} (last synced copy, updating...)
+auto_purge_done = Auto-purge removed {count} old message(s) from Trash/Junk.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Ready.
+opening_message = Opening message...
+opening_message_already = Opening message... (already loading)
+could_not_open_message = Could not open message.
+could_not_open_that_message = Could not open that message.
+could_not_load_message = Could not load this message.
+message_still_loading = That message is still loading.
+folder_still_loading = Still loading this folder -- try again in a moment.
+not_in_thread = This message is not part of a thread.
+no_longer_in_thread = This message is no longer in the thread.
+thread_position = Message {position} of {total} in this thread.
+thread_finished_one = Finished this thread (1 message).
+thread_finished_many = Finished this thread ({count} messages).
+select_message_first = Select a message first.
+conversation_failed = Could not open this conversation.
+select_message_for_related = Select a message to see related messages for first.
+looking_for_related = Looking for related messages...
+no_threading_headers = This message has no Message-ID or threading headers to search on.
+reply_one_at_a_time = Reply works on one message at a time. Please select a single message.
+select_message_to_reply = Select a message to reply to first.
+preparing_reply = Preparing reply...
+reply_load_failed = Could not load the original message for reply.
+select_message_to_forward = Select a message to forward first.
+preparing_forward = Preparing message to forward...
+forward_load_failed = Could not load the message to forward.
+compose_tab_needed_hint = That command needs a compose tab. Press Ctrl+N to write a message.
+open_message_first_view = Open a message first, then press Ctrl+B to switch its view.
+open_message_first_remote = Open a message first, then press Ctrl+Shift+I to load its remote content.
+
+# Acting on messages
+copying_message = Copying message...
+copy_failed = Copy failed.
+delete_failed = Delete failed.
+already_in_archive = Already in Archive.
+archiving = Archiving...
+archive_failed = Archive failed.
+action_failed = {action} failed.
+nothing_to_undo = Nothing to undo.
+undo_failed = Could not undo {action}.
+
+# Views and folders
+folder_pane_all = Folder pane: All Folders.
+folder_pane_unified = Folder pane: Unified Folders.
+sorted_ascending = Sorted by {field}, ascending.
+sorted_descending = Sorted by {field}, descending.
+unified_folders_updated = Unified folders updated.
+zoom_reset = Message font size reset to default.
+folder_creating = Creating folder "{folder}"...
+folder_created = Folder "{folder}" created.
+folder_create_failed = Could not create folder.
+folder_renaming = Renaming "{folder}" to "{new_name}"...
+folder_renamed = Folder renamed to "{new_name}".
+folder_rename_failed = Could not rename folder.
+folder_deleting = Deleting folder "{folder}"...
+folder_deleted = Folder deleted.
+folder_delete_failed = Could not delete folder.
+folder_subscribing = Subscribing to "{folder}"...
+folder_unsubscribing = Unsubscribing from "{folder}"...
+folder_subscribed = Subscribed.
+folder_unsubscribed = Unsubscribed.
+folder_subscribe_failed = Could not subscribe to folder.
+folder_unsubscribe_failed = Could not unsubscribe from folder.
+
+# Accounts
+account_not_added = Account not added.
+account_added = Account added: {account}
+account_settings_not_saved = Account settings not saved.
+account_updated = Account updated: {account}
+account_not_removed = Account not removed.
+account_removed = Account removed.
+account_removed_with_files = Account removed. {count} local file(s) deleted.
+default_account_failed = Could not set the default account.
+default_account_set = {account} is now the default account.
+auto_check_not_saved = Automatic checking setting not saved.
+mute_not_saved = Mute setting not saved.
+account_muted = {account} muted.
+account_unmuted = {account} unmuted.
+export_done = Exported {count} account(s) and settings to {path}.
+import_done = Imported {count} account(s) from {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filters not saved.
+filters_saved = Filters saved for {account}.
+filters_checking = Checking {folder} against your filters...
+filters_none_matched = Run Now: no messages in {folder} matched any enabled rule.
+filters_run_failed = Could not run filters.
+filters_moving = Moving {count} filtered message(s)...
+filters_move_failures = Filters: {count} message(s) could not be moved.
+filters_moved = Filters moved {count} message(s) from {folder}.
+filters_move_failed = Could not move filtered messages.
+cache_not_cleared = Cache not cleared.
+auto_cache_cleanup = Automatic cache clean up: messages older than {age}.
+phishing_update_failed = Could not update the phishing list: {error}
+blocklist_update_failed = Could not update the blocklist: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Open a message first, then use Save As.
+saving_message = Saving message...
+save_file_failed = Could not save the file.
+save_fetch_failed = Could not fetch the message to save.
+open_message_first_print = Open a message first, then use Print.
+open_message_first_preview = Open a message first, then use Print Preview.
+refreshing_accounts = Refreshing {count} account(s)...
+emptying_trash = Emptying Trash for {account}...
+trash_already_empty = Trash was already empty.
+trash_emptied = Emptied Trash: {count} message(s) purged.
+empty_trash_failed = Could not empty Trash.
+emptying_junk = Emptying Junk for {account}...
+junk_already_empty = Junk was already empty.
+junk_emptied = Emptied Junk: {count} message(s) purged.
+junk_emptied_prefix = Emptied Junk:
+junk_part_purged = {count} purged
+junk_part_in_trash = {count} moved to Trash but not confirmed removed, check Trash
+junk_part_not_moved = {count} not moved to Trash, still in Junk
+empty_junk_failed = Could not empty Junk.
+working_offline = Working offline: showing the last synced copy of Inbox/Sent/Drafts.
+back_online = Back online.
+offline_sync_running = Synchronizing {account} for offline use...
+offline_sync_done = Synchronized {count} message(s) across Inbox, Sent and Drafts for offline use.
+offline_sync_failed = Offline sync failed: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Select or open a message first.
+select_or_open_message_ctrl_u = Select or open a message first, then press Ctrl+U.
+no_sender_address = This message has no sender address to add.
+contact_added = Added {contact} to your address book.
+contact_already_there = {contact} is already in your address book.
+privacy_saved = Privacy settings saved. Open a message again to apply them.
+message_font_size = Message font size: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Permanently deleting message
+deleting_many = Permanently deleting {count} messages
+trashing_one = Moving message to Trash
+trashing_many = Moving {count} messages to Trash
+undo_partly_restored = Undid {action}, but {count} could not be restored -- they may have been moved, deleted or expired again since.
+moves_report = {action}: moved {moved} of {total} message(s).
+moves_report_failed = Not moved, still in the original folder: {count}.
+
+tray_tooltip_one = ZBox — 1 unread message
+tray_tooltip_many = ZBox — {count} unread messages
+account_unreachable = {account} could not be reached. Automatic checks for it pause for {minutes} minute(s).
+bulk_copy_failed = Could not copy message(s).
+bulk_copy_failed_status = Copy failed.
+bulk_loading_archive = Still loading message(s) -- try archiving again in a moment.
+bulk_loading_delete = Still loading message(s) -- try deleting again in a moment.
+bulk_loading_flag = Still loading message(s) -- try flagging again in a moment.
+bulk_loading_generic = Still loading message(s) -- try again in a moment.
+bulk_none = No message selected.
+bulk_none_archive = No message selected to archive.
+bulk_none_delete = No message selected to delete.
+bulk_none_junk = No message selected to mark as junk.
+bulk_none_not_junk = No message selected to mark as not junk.
+delete_refused_still = The server refused to delete it; it is still in {folder}.
+delete_refused_trash = It is in Trash, but the server refused to delete it permanently.
+delete_resume_failed = {count} message(s) from an earlier delete could not be deleted.
+done_perm_delete_one = Message permanently deleted.
+done_trash_one = Message moved to Trash.
+filters_applied = Filters applied to {count} message(s) in {folder}.
+filters_failed = Could not run filters.
+filters_running = Running filters on {folder}
+flag_failed = Could not update flag(s).
+flag_updated = Flag(s) updated.
+folder_verb_subscribing = Subscribing to
+folder_verb_unsubscribing = Unsubscribing from
+mark_read_failed = Could not mark message(s) as read.
+mark_unread_failed = Could not mark message(s) as unread.
+notify_new_mail_body = {count} new {noun} for {name}.
+notify_new_mail_title = New Mail
+notify_noun_many = messages
+notify_noun_one = message
+report_done = {verb} {done} of {count} message(s).
+report_verb_deleted = Deleted
+report_verb_permanent = Permanently deleted
+running_copy_many = Copying {count} messages
+running_copy_one = Copying message
+running_junk_many = Marking {count} messages as junk
+running_junk_one = Marking as junk
+running_move_many = Moving {count} messages
+running_move_one = Moving
+running_not_junk_many = Marking {count} messages as not junk
+running_not_junk_one = Marking as not junk
+running_perm_delete_one = Permanently deleting message...
+running_read_many = Marking {count} messages as read
+running_read_one = Marking as read
+running_trash_one = Moving message to Trash...
+running_unread_many = Marking {count} messages as unread
+running_unread_one = Marking as unread
+settings_saved_no_startup = Settings saved. Could not update the Windows startup entry.
+settings_saved_status = Settings saved.
+spam_blocked_sender = Blocked Sender
+spam_possible_phishing = Possible Phishing
+undo_running_many = Undoing {action} ({count} messages)
+undo_running_one = Undoing {action}
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &File
+bar_edit = &Edit
+bar_view = &View
+bar_message = &Message
+bar_compose = &Compose
+bar_tools = &Tools
+bar_help = &Help
+
+# File
+file_new = New
+file_new_message = Message
+file_new_account = Email Account...
+file_open_saved_message = Open Saved Message...
+file_close = Close
+file_save_message_as = Save Message As...
+file_get_new_for = Get New Messages for
+file_get_new_all = All Accounts
+file_get_new_current = Current Account
+file_offline = Offline
+file_work_offline = Work Offline
+file_sync_now = Synchronize Now
+file_print = Print...
+file_print_preview = Print Preview...
+file_exit = Exit
+
+# Edit
+edit_undo = Undo
+edit_select_all = Select All
+edit_find_messages = Find Messages...
+
+# Message
+message_reply = Reply
+message_reply_all = Reply All
+message_forward = Forward
+message_archive = Archive
+message_delete = Delete
+message_delete_permanently = Delete Permanently
+message_mark = Mark
+mark_read = Read
+mark_unread = Unread
+mark_flagged = Flagged
+mark_junk = Junk
+mark_not_junk = Not Junk
+message_watch_thread = Watch Thread
+message_ignore_thread = Ignore Thread
+message_open_conversation = Open Message in Conversation
+message_show_related = Show Related Messages
+message_add_sender_to_address_book = Add Sender to Address Book
+message_announce_sender = Announce Sender
+message_announce_copy_sender = Announce Sender and Copy Address
+
+# View
+view_folders = Folders
+folders_all = All
+folders_unified = Unified
+folders_jump_inbox = Jump to Inbox Messages List
+folders_configure_unified = Configure Unified Folders...
+view_sort_by = Sort By
+sort_date = Date
+sort_subject = Subject
+sort_from = From
+sort_descending = Descending (newest first)
+sort_ascending = Ascending (oldest first)
+view_threads = Threads
+threads_all = All
+threads_watched = Watched Threads
+threads_ignored = Ignored Threads
+threads_expand_all = Expand All Threads
+threads_collapse_all = Collapse All Threads
+view_load_more = Load More Messages
+view_toggle_message_view = Switch Between Text and HTML View
+view_show_remote_content = Show Remote Content in This Message
+view_message_zoom = Message Zoom
+zoom_increase = Increase Message Font Size
+zoom_decrease = Decrease Message Font Size
+zoom_reset = Reset Message Font Size
+
+# Compose
+compose_send = &Send
+compose_save_draft = Save &Draft
+compose_attach = &Attach File...
+compose_fmt_bold = &Bold
+compose_fmt_italic = &Italic
+compose_fmt_strike = Strike&through
+compose_fmt_bullet = B&ulleted List
+compose_fmt_number = &Numbered List
+compose_fmt_quote = &Quote
+compose_fmt_code = C&ode
+compose_fmt_heading1 = &Heading
+compose_link = Insert &Link...
+compose_formatting = &Formatting Here
+compose_spellcheck = Check &Spelling...
+compose_spellcheck_next = Next &Misspelling
+compose_spellcheck_add = Add &Word to Dictionary
+compose_insert_signature = Insert Si&gnature
+compose_paste_quotation = Paste as Quotatio&n
+compose_word_count = Word Cou&nt
+compose_preview = &Preview...
+compose_diagnostics = Composer Dia&gnostics...
+compose_edit_signature = Edit Si&gnature...
+compose_hotkeys_diagnostic = &Hotkeys Diagnostic
+
+# Tools
+tools_account_settings = Account Settings...
+tools_mute_account = Mute Account
+tools_pause_auto_check = Pause Automatic Checking
+tools_disable_account = Disable Account
+tools_remove_account = Remove Account...
+tools_address_book = Address Book...
+tools_message_filters = Message Filters...
+tools_import = Import Accounts and Settings...
+tools_export = Export Accounts and Settings...
+tools_cache_cleanup = Cache Clean Up Configuration...
+tools_privacy = Privacy and Content Blocking...
+tools_settings = Settings...
+
+# Help
+help_shortcuts = Keyboard Shortcuts...
+help_about = About ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = New Account...
+tree_account_settings = Account Settings...
+tree_mute_account = Mute Account
+tree_pause_auto_check = Pause Automatic Checking
+tree_enable_account = Enable Account
+tree_disable_account = Disable Account
+tree_set_default_account = Set as Default Account
+tree_remove_account = Remove Account...
+tree_refresh = Refresh
+tree_new_folder = New Folder...
+tree_empty_trash = Empty Trash
+tree_empty_junk = Empty Junk
+tree_rename_folder = Rename Folder...
+tree_delete_folder = Delete Folder...
+tree_subscribe_folder = Subscribe to Folder
+tree_unsubscribe_folder = Unsubscribe from Folder
+
+# The message list menu, opened the same two ways
+list_select_all = Select All
+list_reply = Reply
+list_reply_all = Reply All
+list_forward = Forward
+list_mark = Mark
+list_archive = Archive
+list_delete_to_trash = Delete (Move to Trash)
+list_delete_permanently = Delete Permanently
+list_move_to = Move To
+list_copy_to = Copy To
+
+# The notification area icon
+tray_open = &Open ZBox
+tray_unread_one = 1 unread message
+tray_unread_many = {count} unread messages
+tray_no_unread = No unread messages
+tray_settings = &Settings...
+tray_quit = &Quit ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Bold
+format_italic = &Italic
+format_strike = Stri&kethrough
+format_bullet = Bulleted &list
+format_number = &Numbered list
+format_quote = &Quote
+format_code = C&ode
+format_heading1 = &Heading
+format_insert_link = Insert &link...
+format_formatting_here = Formatting &here
+tools_enable_account = Enable Account
+edit_undo_action = Undo {action}
+
+[dialogs]
+set_theme_restart_confirm = Restart ZBox to apply the theme change?
+set_ui_theme_label = Interface &theme:
+set_ui_theme_note = Colours for menus, lists, dialogs and the Text message view. Follow system uses Windows' own light or dark app mode. Midnight blue, Warm dark and Soft contrast are dark themes with gentler colours. HTML messages keep their own colours, and Windows High Contrast always takes priority. Takes effect the next time ZBox starts.
+set_theme_system = Follow system
+set_theme_light = Light
+set_theme_dark = Dark
+set_theme_midnight = Midnight blue
+set_theme_warm = Warm dark
+set_theme_soft = Soft contrast
+set_language_restart_confirm = Restart ZBox to apply language change?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Contact Harith
+title_identity = Identity
+title_show_password = Show Password
+title_missing_information = Missing information
+title_unsupported_provider = Unsupported provider
+title_test_connection = Test Connection
+title_new_contact = New Contact
+title_edit_contact = Edit Contact
+title_delete_contact = Delete Contact
+title_import_contacts = Import Contacts
+title_export_contacts = Export Contacts
+title_rename_group = Rename Group
+title_delete_group = Delete Group
+title_send = Send
+title_send_failed = Send Failed
+title_attach_file = Attach File
+title_save_draft = Save Draft
+title_documentation = ZBox Documentation
+title_open_link = Open Link
+title_filter_rule = Filter Rule
+title_master_password = Master Password
+title_attachment_saved = Attachment Saved
+title_attachments_saved = Attachments Saved
+title_download_failed = Download Failed
+title_print = Print
+title_print_preview = Print Preview
+title_related_messages = Related Messages
+title_search = Search
+title_unlock = Unlock
+title_unlock_methods = Unlock Methods
+title_desktop_shortcut = Desktop Shortcut
+title_spell_check = Spell Check
+title_plain_text_password = Plain Text Password Found
+title_startup_error = ZBox Startup Error
+
+identity_email_required = Enter an email address.
+
+wizard_password_not_shown = The password cannot be shown on this system. It is still typed and saved normally.
+wizard_email_required = Enter a valid email address before continuing.
+wizard_test_needs_server = Enter a login email and incoming server before testing.
+wizard_test_succeeded = Connection succeeded. {count} message(s) found in Inbox.
+
+contact_email_required = An email address is required.
+contact_select_to_edit = Select a contact to edit.
+contact_select_to_delete = Select a contact to delete.
+contact_delete_confirm = Delete {label} from the address book?
+contacts_import_choose_file = Choose a .vcf (vCard) or .csv file to import.
+contacts_imported = Imported {count} contact(s).
+contacts_import_empty = No contacts were found in that file.
+contacts_none_to_export = There are no contacts to export.
+contacts_exported = Exported {count} contact(s) to:\n{path}
+group_name_exists = A group named "{name}" already exists.
+group_delete_confirm = Delete the group "{name}"? Its contacts are not deleted.
+
+send_no_account = Add an account before sending, or select one in From.
+send_no_recipient = Enter at least one recipient in To.
+draft_no_account = Add an account before saving a draft, or select one in From.
+attached_file = Attached: {name}\n\n{count} file(s) will be attached when you send.
+
+documentation_copied = The full ZBox documentation was copied to the clipboard.
+
+filter_rule_needs_name = Give this rule a name.
+filter_rule_needs_condition = Set at least one condition (From, To or Subject).
+filter_rule_needs_action = Choose at least one action: mark as read, flag, or move to a folder.
+
+master_password_set = Master password set. Keep it somewhere safe: ZBox asks for it once on each new computer, and it cannot be recovered if it is lost.
+master_password_offer = Without a master password, the saved account passwords can only be read on this computer and this Windows account. Copy ZBox anywhere else and every account has to be signed in again.\n\nSet one now?
+
+attachment_saved = Attachment saved to:\n{path}
+attachments_saved = {count} attachments saved to:\n{path}
+
+shortcut_created_settings = Shortcut created:\n{path}\n\nIt starts ZBox from:\n{base}
+
+spellcheck_no_dictionary = The spelling dictionary is missing, so spell check is not available in this copy of ZBox.
+spellcheck_none_found = No misspellings found.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Set up a passkey on this computer and forget the one saved from another computer?\n\nWindows will ask you to confirm with Hello. The old passkey left on the other computer is untouched there and will keep working if you take this folder back to it, but it will have to be set up again.
+unlock_replace_passkey_many = Set up a passkey on this computer and forget the {count} saved from other computers?\n\nWindows will ask you to confirm with Hello. The old passkeys left on the other computer are untouched there and will keep working if you take this folder back to it, but they will have to be set up again.
+unlock_method_works = That method works.
+
+plain_text_password_found = data\config\himalaya.toml still contains a plain text password (auth.raw) from an older account setup.\n\nRemove that account and re-add it, or delete data\config\himalaya.toml, so it regenerates using the secure credential store instead.
+
+# main_frame's titles.
+title_account_list_unavailable = Account list unavailable
+title_open_message = Open Message
+title_run_filters = Run Filters
+title_clear_cache = Clear Offline Message Cache
+title_remove_account = Remove Account
+title_new_folder = New Folder
+title_rename_folder = Rename Folder
+title_delete_folder = Delete Folder
+title_subscribe = Subscribe
+title_unsubscribe = Unsubscribe
+title_open_saved_message = Open Saved Message
+title_save_message_as = Save Message As
+title_empty_trash = Empty Trash
+title_empty_junk = Empty Junk
+title_synchronize_offline = Synchronize for Offline
+title_export_accounts = Export Accounts and Settings
+title_import_accounts = Import Accounts and Settings
+title_show_related = Show Related Messages
+title_reply = Reply
+title_forward = Forward
+title_undo = Undo
+title_delete_permanently = Delete Permanently
+title_delete = Delete
+title_copy_to = Copy To
+title_archive = Archive
+title_accounts_locked = Accounts Locked
+
+select_account_first = Select an account in the tree first.
+select_account_or_folder = Select an account or folder first.
+filters_left_behind = {count} message(s) matched a filter but are still in {folder}.
+cache_clear_confirm = Clear the offline message cache for every account?\n\nThis deletes ZBox's local copies only. Nothing is removed from any mail server, and messages are downloaded again as you need them.
+account_remove_confirm = Remove {name} ({address})?\n\nMail on the server is not deleted.\nThe copies downloaded to this computer are deleted.\nThe saved password is deleted.
+folder_delete_confirm = Permanently delete the folder "{folder}" and everything in it for {address}?\n\nThis cannot be undone.
+empty_trash_confirm = Permanently delete all messages in Trash for {address}?\n\nThis cannot be undone.
+empty_junk_confirm = Permanently delete all messages in Junk for {address}?\n\nThis cannot be undone.
+sync_select_account = Select an account (not a Unified folder) to synchronize for offline use.
+accounts_imported = Imported {count} account(s):\n\n{names}\n\nPasswords are never exported, and the encrypted password store is specific to this Windows user account, so each imported account needs its password entered once via Accounts > Account Settings before it can connect.
+accounts_import_none = No accounts were found in this file. Settings were still imported, if the file had any.
+delete_permanently_confirm_one = Permanently delete this message? This skips the Trash folder and cannot be undone.
+accounts_locked = The saved account passwords were written on another computer, so they cannot be read here.\n\nEach account will need signing in to its mail server again. To avoid that next time, set a master password from Settings, App and Data Security on the computer where the accounts already work.
+master_password_remove_confirm = Remove the master password? The saved account passwords will then only be readable on this computer and this Windows account. Copy ZBox anywhere else afterward and every account will need to be signed in again.\n\nRemove it now?
+shortcut_offer = Put a ZBox shortcut on the Desktop?\n\nIt will start this ZBox folder:\n{path}\n\nA shortcut records that exact location. If you move the ZBox folder later, open Settings, System tray and window, and choose Create desktop shortcut again to point it at the new place.
+shortcut_created = Shortcut created:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Display name
+form_email_address = Email address
+form_your_name = Your name
+form_login_email = Login email
+form_password = Password
+srv_imap_host = Incoming (IMAP) server
+srv_imap_port = Incoming port
+srv_imap_encryption = Incoming encryption
+srv_smtp_host = Outgoing (SMTP) server
+srv_smtp_port = Outgoing port
+srv_smtp_encryption = Outgoing encryption
+
+acct_login_email_label = Login email (used to sign in)
+acct_new_password_label = New password (leave blank to keep current)
+acct_new_password_name = New password
+acct_identity_email_label = Email address (used to send and receive)
+acct_identities_label = Additional identities (aliases)
+acct_identities_name = Additional identities
+acct_add_identity = &Add Identity...
+acct_edit_identity = &Edit Identity...
+acct_remove_identity = &Remove Identity
+acct_signature = Signature
+acct_edit_signature = Edit Si&gnature...
+acct_junk_folder = Junk folder
+acct_account_status = Account status
+acct_disable_account = Disable this account
+acct_default_account = Default account
+acct_set_default = Set as default account
+acct_notifications = New mail notifications
+acct_mute_notifications = Mute notifications for this account
+acct_server_settings = Server settings
+
+wiz_before_you_start = Before you start
+wiz_notice_name = Important notice
+wiz_google_instructions = Open &Google app password instructions
+wiz_intro = Your name and email address
+wiz_login_same = Login email is the same as the email address above
+wiz_show_password = &Show password
+wiz_preset_applied = Preset applied for {name}.
+wiz_summary_name = Account summary
+wiz_review = Review, then click Finish to save this account.
+wiz_test_connection = Test &Connection
+wiz_testing = Testing connection...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Enable debug logging saved to: data\logs)
+set_language_label = Interface &language:
+set_language_label_only_english = Interface &language: (English only)
+set_headers_checkbox = Show &message headers above an open message
+set_zoom_label = Message font and zoom:
+set_font_override = &Override the default message font size
+set_font_size_name = Message font size (points)
+set_reading_font_name = Reading font
+set_reading_font_label = Reading font (blank for default):
+set_view_label = Message body view when opening a message:
+set_view_text = Text
+set_view_html = HTML (rendered)
+set_engine_label = HTML rendering engine:
+set_engine_edge = Edge / WebView2 (modern rendering)
+set_engine_ie = Legacy MSHTML (best screen-reader support)
+set_runtime_label = WebView2 runtime:
+set_runtime_auto = Automatic — use the bundled runtime if present (recommended)
+set_runtime_fixed = Bundled fixed version only
+set_runtime_evergreen = System-wide runtime (updated by Windows)
+set_sr_box = Screen reader announcements control
+set_silence_label = HTML screen-reader silence hold:
+set_silence_name = HTML screen-reader silence hold in milliseconds
+set_focus_delay_label = WebView accessibility focus delay:
+set_focus_delay_name = WebView accessibility focus delay, level 1 to 10
+set_announce_label = Announcement hold:
+set_announce_name = Announcement hold in milliseconds
+set_announce_actions = Announce message &actions
+set_attachment_dir_label = Attachments saving folder:
+set_attachment_dir_name = Attachments saving folder
+set_browse = &Browse…
+set_autosave_label = Draft autosave interval:
+set_autosave_name = Draft autosave interval in seconds
+set_auto_purge_label = Auto-purge old Trash and Junk:
+set_auto_purge_name = Auto-purge Trash and Junk after this many days
+set_bare_keys = Enable single-key &S (flag), A (archive), J (mark junk)/Shift+J (mark not junk), W (watch thread) and K (ignore thread) shortcuts in the message list
+set_sound_label = Sound && Notifications:
+set_sounds_enabled = &Play notification sounds
+set_desktop_notifications = Show &desktop notifications for new mail
+set_theme_label = Change sounds theme:
+set_theme_label_only_default = Change sounds theme: (default theme only)
+set_security_box = App and Data Security
+set_lock_on_quit = &Lock ZBox when it is fully quit
+set_unlock_methods_button = &Unlock methods…
+set_master_password_button = Master pass&word…
+set_tray_label = System tray && window:
+set_minimize_to_tray = &Minimize to the system tray
+set_close_to_tray = &Close to the system tray
+set_stay_maximized = Always keep ZBox &maximized
+set_run_at_startup = &Run ZBox when Windows starts
+set_desktop_shortcut_button = Create des&ktop shortcut
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Debug logging helps diagnose problems if something goes wrong. Turning it off stops new entries from being written; existing log files are not deleted. Takes effect the next time ZBox starts.
+set_language_note = Takes effect the next time ZBox starts. Language files are plain text files in ZBox's lang folder, beside the sounds folder. To add one, copy the en folder, rename the copy and the .lang file inside it to your language code, and translate the text to the right of each equals sign. Anything not yet translated is spoken in English rather than left silent, so a part-finished file is safe to use.
+set_headers_note = From, To, Cc, Date and Subject, shown above the message body in both Text and HTML view. Without it there is no way to tell who sent a message from inside it without closing the tab and going back to the list. Focus still lands in the message body; the header block is one Shift+Tab away. Takes effect the next time a message is opened.
+set_zoom_note = Makes the open message's own text bigger or smaller, independent of the rest of ZBox and of Windows' own display scaling. Applies to both the Text and HTML views. “Reading font” optionally forces a specific font face (e.g. Consolas, OpenDyslexic) for the message body; leave it blank to keep the normal font. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 in the View menu raise, lower or reset just the font size without opening this dialog, and apply immediately to every open message. Changes made here also apply immediately on OK.
+set_view_note = HTML is the default. It shows the message as it was sent, and it is read by NVDA and JAWS: when an HTML page opens, ZBox silences the browser's own announcement, puts the reading cursor on the first line of the message, and keeps ZBox's own shortcuts working inside the page, including F6 to move focus back out of it. Text shows the same message as plain, unformatted text in an ordinary edit control -- no images, no layout, and nothing that depends on a browser engine being installed. Press Ctrl+B inside an open message to switch either way.
+set_engine_note = Edge renders modern CSS but runs the page in a separate process, and it will only hand its content to a screen reader through an interface wxPython cannot reach -- so the message can open with nothing readable in it. Legacy MSHTML is the engine Outlook Express and Windows Mail used: it runs in-process and publishes a normal document tree, so NVDA and JAWS read it in browse mode like any web page. Takes effect the next time a message is opened.
+set_runtime_note = The system-wide runtime is serviced by Windows Update, so the engine reading your mail can change without notice — which is how a working HTML message view can break on a machine where nothing about ZBox changed. A copy bundled in the deps folder pins the exact version ZBox was tested against. Run tools\get_webview2.bat to install one. If no bundled copy is present ZBox uses the system-wide runtime either way, so it always starts. Takes effect the next time ZBox starts.
+set_sr_intro = How much ZBox lets your screen reader say while a message opens, and how long its own spoken announcements stay up.
+set_silence_note = When an HTML message opens, ZBox can hold a synthetic Ctrl press for up to 2 seconds to silence the screen reader's browser announcement. The message's subject is already used as the page title, which stops the base64 URL from being read aloud, but the reader still announces the control and the document type over the start of the message, so this is on by default. Lower it to 0 to turn it off, or raise it if chatter still slips through.
+set_focus_delay_note = When an HTML message finishes loading, ZBox waits this long before actually focusing it. WebView2 reporting a page loaded and Windows finishing that page's accessibility tree are not the same moment; focusing too early is what makes NVDA/JAWS announce a generic “Web content page” instead of the message, or report the message unavailable for a stretch after opening. Level 1 is 100 ms, level 10 is a full second. Raise it if you still see this; lower it once opening feels solid, for a snappier open.
+set_announce_note = Ctrl+U and Ctrl+Shift+U report the sender in a small dialog that dismisses itself, because the status bar is only spoken if your screen reader has status-bar reporting switched on. This is how long that dialog stays up. Set it to match your speech rate: too short and it closes mid-sentence, which defeats the point. Any key dismisses it early; the arrow keys keep it open so you can re-read. 0 means it waits for a key and never closes on its own.
+set_attachment_dir_note = Where “Save All” writes attachments when a message has more than one. Created automatically if it doesn't exist. A message with a single attachment still asks where to save it, as before. Leave blank for the default:\n{path}
+set_autosave_note = How often an open compose tab saves itself to Drafts while you're writing. Save Draft (Ctrl+S) still saves on demand either way, and closing a tab with unsaved writing always offers to save it. 0 turns autosave off. Below 15 seconds is not offered -- that would be a server round trip competing with your typing.
+set_auto_purge_note = Permanently removes messages from Trash and Junk once they have sat there this many days -- the same permanent removal Empty Trash and Empty Junk perform on demand, run automatically once a day while ZBox is open. On by default at 30 days. 0 turns it off. This cannot be undone once a message is removed.
+set_bare_keys_note = When on, pressing S, A, J, W or K alone in the message list toggles the flag, archives, marks the selected message(s) as junk (Shift+J marks them not junk), or watches/ignores the thread the selection is part of, immediately -- Archive and Mark as Junk have no confirmation and no undo. Turning this off returns S, A, J, W and K to normal first-letter list navigation. Ctrl+S and Ctrl+Shift+A keep working either way. Takes effect immediately.
+set_sounds_note = Short tones for progress, new messages, sent, replied or forwarded actions, deletions, and search results. Off disables every sound in the app; screen reader and status bar announcements are unaffected either way.
+set_desktop_notifications_note = A Windows notification for each new-mail batch, separate from the sound above. Off disables it for every account; an individual account can also be muted on its own in Account Settings.
+set_theme_note = Custom themes are folders placed inside ZBox's sounds folder, each supplying its own progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav and none_found.wav. A theme file that's missing falls back to the default sound.
+set_theme_note_only_default = Custom themes are folders placed inside ZBox's sounds folder, each supplying its own progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav and none_found.wav. A theme file that's missing falls back to the default sound. Only “default” is available until you add another theme folder.
+set_lock_note = Starting ZBox then asks for one of your unlock methods before any account is opened. Any one of them is enough: a passkey, a security key, or the master password. Closing to the tray is not a quit and does not re-lock; File > Exit and the tray icon's Quit are. If nothing is registered and no master password is set, the lock is skipped rather than shutting you out of your own mail.
+set_security_note = The master password is the only one of the three that encrypts anything: it is what lets this folder open its saved account passwords on another computer. A passkey or security key unlocks the app on this one. Neither replaces the master password on a computer ZBox has not been used on before.
+set_minimize_note = Minimizing ZBox hides its taskbar button and leaves it running behind the tray icon instead. Left-click the tray icon (or Enter/Space when it has keyboard focus) to bring the window back.
+set_close_note = The window's Close button, Alt+F4, and Ctrl+W pressed on the Mail tab hide ZBox to the tray instead of quitting. File > Exit (Ctrl+Shift+Q) and the tray icon's own Quit item always actually quit ZBox either way, so there is always one keyboard path to exit without touching the tray.
+set_stay_maximized_note = ZBox launches maximized and is put back to maximized if you un-maximize it. The menu bar, title bar and window border are unaffected -- this is not a borderless full-screen mode, so every Alt-key menu shortcut keeps working.
+set_run_at_startup_note = Starts ZBox automatically when you sign in to Windows, opened straight to the tray rather than showing its window. Takes effect immediately, not only on the next launch.
+set_desktop_shortcut_note = Puts a ZBox shortcut on your Desktop, replacing one that is already there. A shortcut stores the exact location of this ZBox folder, so if you move or copy ZBox somewhere else, press this again on the new copy to point the Desktop shortcut at it. Takes effect immediately and does not wait for OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Name
+ab_phone = Phone
+ab_notes = Notes
+ab_heading = Address Book
+ab_contacts = Contacts
+ab_new = &New...
+ab_edit = &Edit...
+ab_delete = &Delete
+ab_import = &Import...
+ab_export = Ex&port...
+ab_groups_label = Groups (mailing lists)
+ab_groups_name = Groups
+ab_new_group = New &Group...
+ab_rename_group = Rena&me Group...
+ab_delete_group = Delete Gro&up
+ab_manage_members = &Manage Members...
+ab_all_contacts = All contacts
+ab_add_member = Add >>
+ab_remove_member = << Remove
+ab_members_of = Members of {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Not in dictionary:
+sp_not_in_dictionary_name = Not in dictionary
+sp_in_this_line_label = In this line:
+sp_in_this_line_name = In this line
+sp_suggestions_label = &Suggestions:
+sp_suggestions_name = Suggestions
+sp_replace_with_label = Replace &with:
+sp_replace_with_name = Replace with
+sp_replace = &Replace
+sp_replace_all = Replace &All
+sp_ignore = &Ignore
+sp_ignore_all = Ignore A&ll
+sp_add_to_dictionary = Add to &Dictionary
+btn_close = &Close
+
+# Privacy and Content Blocking.
+priv_remote_label = Remote content in messages:
+priv_block_remote = &Block remote content until I ask for it (recommended)
+priv_blocklist_label = Ad and tracker blocklist:
+priv_block_known = Block &known ad and tracker domains
+priv_update_daily = &Update the list daily in the background
+priv_update_now = Update &Now
+priv_junk_label = Junk mail rules:
+priv_check_inbox = &Check new Inbox mail against blocked senders and known phishing links
+priv_move_blocked = Automatically &move mail from blocked senders to Junk
+priv_update_phishing = Update &Phishing List Now
+priv_blocked_label = Blocked senders:
+priv_blocked_name = Blocked senders
+priv_remove_blocked = R&emove Blocked Sender
+priv_never_junk_label = Senders never treated as junk:
+priv_never_junk_name = Senders never treated as junk
+priv_remove_never_junk = Remove Never-Junk &Sender
+priv_allowed_label = Senders allowed to load remote content:
+priv_allowed_name = Allowed senders
+priv_remove_selected = &Remove Selected Sender
+
+# Message Filters.
+filt_rule_name = Rule name
+filt_enabled = &Enabled
+filt_match_label = Match:
+filt_match_all = Match &all of the following (AND)
+filt_match_any = Match an&y of the following (OR)
+filt_conditions_label = Conditions (leave a value blank to skip it):
+filt_condition_field = Condition {number} field
+filt_condition_contains = Condition {number} contains
+filt_actions_label = Actions:
+filt_mark_read = Mark as &read
+filt_flag = &Flag the message
+filt_move_label = Move to folder:
+filt_move_name = Move to folder
+filt_rules_name = Filter rules
+filt_new = &New Rule...
+filt_edit = &Edit Rule...
+filt_delete = &Delete Rule
+filt_up = Move &Up
+filt_down = Move Do&wn
+filt_run_label = Run Now on folder:
+filt_run_name = Run Now folder
+filt_run_now = &Run Now
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = Unlock with &passkey (Windows Hello)
+unl_security_key = Unlock with &security key
+unl_master_password_label = &Master password:
+unl_master_password_name = Master password
+unl_unlock = &Unlock
+unl_exit = E&xit ZBox
+unl_methods_label = &Registered methods:
+unl_methods_name = Registered unlock methods
+unl_add_passkey = Add &passkey…
+unl_add_key = Add security &key…
+unl_reassign = Re-&assign passkey to this computer…
+unl_test = &Test…
+unl_remove = &Remove
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = From
+comp_to = To
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Subject
+comp_attach_button = Attach File...
+comp_sending = Sending...
+comp_report_label = &Report:
+comp_report_name = Report
+comp_refresh = Re&fresh
+comp_copy = C&opy
+comp_preview_read = As the recipient reads it
+comp_preview_source = The HTML that will be sent
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Message body
+mv_blocked_notice = Blocked content notice
+mv_show_remote = &Show remote content
+mv_always_allow = Always &allow this sender
+mv_message_headers = Message headers
+mv_attachments = Attachments
+mv_attachments_count = Attachments ({count})
+mv_save_attachment = Save: {filename}
+mv_save_all = Save All
+mv_html_view = Message HTML view
+mv_saved_message = Saved message
+mv_show_remote_tip = Reload this message with its remote images and styles. Known trackers stay blocked.
+mv_always_allow_tip = Load remote content in every message from {sender}.
+
+# The search tab.
+srch_account = Account
+srch_folder = Folder
+srch_for = Search for
+
+# The signature editor.
+sig_editors = Signature editors
+sig_formatted = Signature, formatted
+sig_source = Signature, HTML source
+sig_plain_label = Plain text alternative (sent alongside the HTML)
+sig_plain_name = Plain text alternative
+
+# About ZBox.
+about_text_name = About ZBox text
+about_view_license = View &License...
+about_google = &Google App Passwords...
+about_support = &Support ZBox -- One-Person Development and Maintenance
+about_repos = Harith's &Apps Repositories on GitHub
+about_contact = &Contact Harith
+btn_close_plain = Close
+btn_cancel_plain = Cancel
+
+# The license window.
+eula_heading = ZBox License
+eula_text_name = ZBox license text
+eula_third_party = Third-party component license pages:
+eula_agree = &I Agree to the terms above
+eula_agree_name = I have read and agree to the ZBox license terms
+eula_disagree = I &Disagree
+eula_next = &Next
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox documentation text
+doc_copy = Copy to Clipboard
+shortcuts_heading = Keyboard Shortcuts
+shortcuts_text_name = Keyboard shortcuts text
+
+# The main window's own panes.
+mf_toolbar = Main toolbar
+mf_tabs = ZBox tabs
+tree_heading = Accounts and Folders
+tree_name = Account and folder tree
+envlist_heading = Messages
+envlist_name = Message list
+rdr_heading = Message
+rdr_name = Message reader
+conv_heading_one = Conversation: 1 message
+conv_heading_many = Conversation: {count} messages
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} of {total} done.
+bulk_cancelling = Cancelling -- finishing the current message...
+cache_clear_now = Clear Offline Message Cache Now... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, protected
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Display name is optional -- leave it blank to send as this account's own name.
+acct_note_identity = The email address can differ from the login email if your provider has a custom domain linked to this mailbox. Mail will be sent and received under the address above, while sign-in still uses the login email. Leave the password field blank to keep the password already stored for this account -- for example after rotating a Gmail app password, type the new one here; otherwise leave it blank.
+acct_note_identities = Other addresses this account can send and reply as. Replying to a message that was sent to one of these defaults From to that address instead of the one above.
+acct_note_signature = Appended to every new message, reply and forward sent from this account, below a "-- " line. Leave blank for none. Edit Signature opens the formatted editor, where bold, lists and links are available; the box above then holds the plain text version that goes out alongside it.
+acct_note_junk = Which real folder Mark as Junk moves messages to. "{automatic}" uses the same provider-aware guess Archive and Trash already use; set this only if that guess is wrong or your junk folder has a custom name.
+acct_note_disable = A disabled account is never contacted -- no IDLE, no periodic refresh, nothing -- until re-enabled. It still shows in the tree, marked (disabled), and its already-downloaded mail stays available offline. Same toggle as Accounts > Disable Account or the account's own context menu; this is just another place to reach it.
+acct_note_default = This account's folders appear first in the tree, and a new message defaults to sending from it unless changed manually in the composer. Does not affect which address a reply or forward uses -- that already follows the message being answered (see Additional Identities above). There is always exactly one default account, so unchecking this on the current default without checking it on another one leaves it unchanged -- check another account's box instead to hand the default to it.
+acct_note_mute = Muting blocks this account's new-mail sound, spoken announcement and Windows notification, regardless of how those are otherwise configured. It does not affect other accounts, and it's still subject to the master switches in Settings > Sound & Notifications (sounds and desktop notifications overall).
+wiz_note_app_password = If you already have an app password created for ZBox, press Next to continue.
+wiz_note_login = Login credentials.\nIf your login email is different from the address above, for example your provider account is login@example.net but you want to send and receive as you@example.org, enter the login email here. You can set the custom send address afterward in Account Settings.
+wiz_note_servers = Server settings, pre-filled where the domain is recognized. Edit anything that needs to be different.
+wiz_preset_none = No preset found for this domain. Enter your provider's server settings manually; your provider's help pages will list them.
+ab_note_groups = Type a group's name in a compose window's To, Cc or Bcc field to fill in every one of its members at once.
+cache_note_intro = These remove ZBox's local copies only. Nothing is deleted from any mail server, and a removed message is downloaded again the next time you open it.
+cache_note_age = Automatic clean up runs once a day, when ZBox has had no keyboard activity for ten minutes and no message is open. It goes by each message's own date, including messages that are still in your account.
+filt_note_intro = Rules run in order, top to bottom, testing From, To and Subject. Applied automatically to new mail as it arrives in this account's Inbox; use Run Now below to apply them to messages already sitting in a folder.
+filt_note_run_now = Applies every enabled rule above, in order, to every message already in the chosen folder -- saves your changes first, the same as OK.
+mp_note_intro = These accounts were set up on another computer. Enter the master password to unlock their saved passwords here. You will only be asked once on this computer.\n\nWithout it, each account has to be signed in to its mail server again.
+priv_note_remote = Images, stylesheets and fonts that a message loads from the internet tell the sender the moment you opened it, and from where. With this on, none of them load: a notice appears above the message saying what was blocked, and Ctrl+Shift+I loads it for that one message. Pictures attached to the message itself always show. Scripts and embedded frames are removed either way and are never loaded.
+priv_note_blocklist = This is the second layer. It matters once you load a message's remote content, or allow a sender: the pictures load, but anything served from a known tracking or advertising domain still does not. The list is downloaded from public ad and tracker lists and merged; updating takes a second or two and runs in the background.
+priv_note_junk = No guessing. Mark as Junk adds the sender to the blocked list below, unless the message came through a mailing list. Mark as Not Junk adds the sender to the never-junk list and that message is never checked again. A new message from a blocked sender is marked Blocked Sender in the list; one that links to a known phishing or malware site is marked Possible Phishing. Your mail provider's own spam filtering still runs as before.
+priv_status_phishing_updating = Phishing list: updating in the background. Reopen this dialog to see the result.
+priv_status_updating = Updating in the background. Reopen this dialog to see the result.
+rel_note_intro = Messages related to "{subject}" by their Message-ID/References headers, across every folder in this account.
+srch_note_intro = Search From, Subject and Body for text you enter below. Searches every account and folder unless you narrow it below.
+sig_note_plain = Leave the plain text alternative blank and it is written from the formatted signature when you press OK.
+unified_note_intro = Choose which folders to combine across every account. Each one checked becomes a single entry in the tree that combines that folder from all your accounts.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = About ZBox
+title_account_settings = Account Settings: {name}
+title_new_account = New Account
+title_address_book = Address Book
+title_members = Members: {name}
+ab_group_name_prompt = Group name:
+title_new_group = New Group
+title_cache_cleanup = Cache Clean Up Configuration
+cache_age_prompt = Automatically remove cached messages older than:
+title_automatic_cleanup = Automatic Clean Up
+comp_link_prompt = Link address:
+title_insert_link = Insert Link
+title_composer_diagnostics = Composer Diagnostics
+title_formatted_preview = Formatted Preview
+title_license_agreement = ZBox License Agreement
+title_message_filters = Message Filters: {account}
+title_master_password_required = Master Password Required
+title_privacy_dialog = Privacy and Content Blocking
+title_privacy = Privacy
+title_settings = Settings
+title_unified_folders = Unified Folders
+title_zbox_locked = ZBox is Locked
+title_message_view = Message View
+title_remote_content = Remote Content
+title_refresh = Refresh
+title_refresh_all = Refresh All
+mv_choose_folder = Choose a folder to save the attachment
+title_thread = Thread
+title_inbox = Inbox
+title_compose = Compose
+title_watch_thread = Watch Thread
+title_ignore_thread = Ignore Thread
+title_edit_signature = Edit Signature
+title_account = Account
+mf_folder_name_prompt = Folder name:
+mf_new_name_prompt = New name:
+title_refresh_all_accounts = Refresh All Accounts
+title_sender = Sender
+title_new_mail = New Mail
+mf_export_dialog_title = Export All {count} Account(s) and Settings
+mf_related_tab = Related: {subject}
+title_hotkeys_diagnostic = Hotkeys Diagnostic
+set_choose_attachment_dir = Choose the attachment save folder
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox is locked. Use any one of the methods below to unlock it. Cancelling closes ZBox without opening any account.
+unl_note_foreign_passkey = The passkey saved with this folder belongs to another computer, so it cannot be used here. Unlock with your security key or master password, then use Settings, Privacy and Security, Unlock methods to set up a passkey on this computer.
+unl_note_methods = Any one of these unlocks ZBox when the app lock is on, alongside the master password. A passkey uses Windows Hello on this computer; a security key is a FIDO2 key on USB or NFC and works on any computer you plug it into.
+unl_note_not_encryption = These unlock the app. They do not encrypt anything: the master password is still the only thing that can open the saved account passwords on a computer this folder has not been used on before. It has to be set first, and neither of these can be added until it is.
+unl_add_passkey_unavailable = Add &passkey (unavailable)
+unl_add_key_unavailable = Add security &key (unavailable)
+unl_reassign_unavailable = Re-&assign passkey to this computer (unavailable)
+unl_status_cancelled_passkey = The passkey was cancelled. ZBox is still locked.
+unl_status_cancelled_key = The security key was cancelled. ZBox is still locked.
+unl_status_enter_password = Enter the master password.
+unl_status_no_master = No master password is set, so a passkey or security key cannot be added yet. Set one with the Master password button in Settings, Privacy and Security, then come back here. The master password is what opens your saved account passwords on another computer; a passkey only unlocks the app on this one, so it cannot stand alone.
+unl_status_unsupported = This computer's Windows does not support passkeys or security keys, so only the master password can unlock ZBox here.
+unl_status_foreign_one = 1 passkey belongs to another computer and cannot unlock ZBox here. Re-assign replaces them with one made on this computer.
+unl_status_foreign_many = {count} passkeys belong to another computer and cannot unlock ZBox here. Re-assign replaces them with one made on this computer.
+unl_status_foreign_one_no_hello = 1 passkey belongs to another computer and cannot unlock ZBox here. Windows Hello is not set up here, so they cannot be replaced on this computer; Remove forgets them.
+unl_status_foreign_many_no_hello = {count} passkeys belong to another computer and cannot unlock ZBox here. Windows Hello is not set up here, so they cannot be replaced on this computer; Remove forgets them.
+unl_status_no_hello = Windows Hello is not set up on this computer, so a passkey cannot be added here. A security key still can.
+unl_status_none_registered = No unlock methods are registered yet.
+unl_status_add_cancelled_passkey = Adding a passkey was cancelled.
+unl_status_add_cancelled_key = Adding a security key was cancelled.
+unl_status_added = Added: {name}.
+unl_status_reassign_cancelled = Re-assigning was cancelled. Nothing was changed.
+unl_status_reassigned = Added {name} and forgot {count} from other computers.
+unl_status_test_cancelled = The test was cancelled.
+unl_status_removed = Removed.
+unl_remove_warning_last = Remove {name}?\n\nIt is the only unlock method registered and no master password is set, so with the app lock on there would be nothing left to unlock ZBox with. The lock is skipped rather than locking you out, but ZBox would then open unlocked.
+unl_remove_warning = Remove {name}? ZBox will no longer accept it.
+ab_col_email = Email
+ab_col_name = Name
+ab_col_phone = Phone
+ab_no_contacts = No contacts yet.
+acct_auto_check = Check for new messages automatically
+acct_note_auto_check = Off: ZBox never contacts this account on its own -- no new-mail watching, no timed refresh, no background downloads -- so an unreliable server cannot slow the other accounts. Its downloaded mail still opens, and Refresh (F5), sending and deleting still reach the server. Same as Pause Automatic Checking in the Tools menu or the account's context menu.
+bl_day_ago = 1 day ago
+bl_days_ago = {days} days ago
+bl_label_blocklists = Blocklist
+bl_label_phishing = Phishing list
+bl_last_failed = Last attempt failed: %s
+bl_not_downloaded = Not downloaded yet.
+bl_save_failed = Downloaded the %s but could not save it: %s
+bl_seed_only = %s domains from the built-in list. Never updated from the internet yet.
+bl_some_failed = Some sources failed: %s
+bl_some_unreachable = Some sources could not be reached: %s
+bl_status_line = %s domains. Last updated %s.
+bl_up_to_date = %s is already up to date.
+bl_update_failed = Could not update the %s: %s
+bl_updated = %s updated: %s domains.
+cc_age_choice = Every message cache %s old
+cc_auto_button = Automatic clean up: cached messages older than %s...
+comp_btn_discard = &Discard
+comp_btn_keep_editing = &Keep editing
+comp_btn_save_draft = &Save Draft
+comp_no_account = No account configured
+comp_saving_draft = Saving draft…
+comp_this_message = this message
+comp_unsent_save_q = Save %s as a draft before closing?
+comp_unsent_tray_q = Save %s as a draft before ZBox goes to the tray?
+doc_unreadable = The documentation file could not be read:
+envlist_all_disabled = Every account is disabled.
+envlist_col_date = Date
+envlist_col_from = From
+envlist_col_status = Status
+envlist_col_subject = Subject
+envlist_collapsed = Collapsed (%d)
+envlist_empty = No messages in this folder.
+envlist_loading = Loading messages...
+envlist_no_accounts = No accounts configured yet.
+envlist_no_ignored = No ignored threads in this folder.
+envlist_no_watched = No watched threads in this folder.
+envlist_select_folder = Select an account or folder to load messages.
+eula_link_0 = Open Himalaya's license page in your browser
+eula_link_1 = Open StevenBlack hosts' license page in your browser
+eula_link_2 = Open EasyList/EasyPrivacy's license page in your browser
+eula_link_3 = Open Phishing.Database's license page in your browser
+eula_read_note = Read the license below, including the third-party sections. You must check I Agree before Next becomes available. I Disagree closes ZBox without starting it, and removes what this run has created so far.
+eula_unreadable = The license file could not be read:\n%s
+filters_title = Run Filters
+flag_title = Flag Message
+folder_type_archive = Archive
+folder_type_drafts = Drafts
+folder_type_inbox = Inbox
+folder_type_junk = Junk
+folder_type_sent = Sent
+folder_type_trash = Trash
+mime_application_json = JSON file
+mime_application_msword = Word document
+mime_application_octet_stream = Binary file
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel spreadsheet
+mime_application_vnd_ms_powerpoint = PowerPoint presentation
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint presentation
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel spreadsheet
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word document
+mime_application_xml = XML file
+mime_application_zip = ZIP archive
+mime_audio_mpeg = MP3 audio
+mime_audio_ogg = OGG audio
+mime_audio_wav = WAV audio
+mime_image_bmp = BMP image
+mime_image_gif = GIF image
+mime_image_jpeg = JPEG image
+mime_image_png = PNG image
+mime_image_svg_xml = SVG image
+mime_image_webp = WebP image
+mime_text_csv = CSV file
+mime_text_html = HTML file
+mime_text_plain = Text file
+mime_video_mp4 = MP4 video
+mime_video_x_msvideo = AVI video
+move_title_junk = Mark as Junk
+move_title_move_to = Move To
+move_title_not_junk = Mark as Not Junk
+mp_explain_set = A master password is set. It is what lets this ZBox folder open its saved account passwords on a different computer.\n\nLeave both new password boxes empty and press OK to remove it. Removing it does not affect this computer, but the folder will no longer work on any other one without signing every account in again.
+mp_explain_unset = No master password is set, so the saved account passwords can only be read on this computer and this Windows account. Copy the folder elsewhere and every account has to be signed in to its mail server again.\n\nSet one and ZBox will ask for it once on each new computer, then unlock normally there from then on. This computer will not ask again.\n\nWrite it down and keep it somewhere safe. It is not stored anywhere and cannot be recovered: if you forget it, every account has to be signed in to its mail server again.
+mp_label_confirm = &Confirm new master password:
+mp_label_current = C&urrent master password:
+mp_label_master = &Master password:
+mp_label_new = &New master password:
+mp_name_confirm = Confirm new master password
+mp_name_current = Current master password
+mp_name_master = Master password
+mp_name_new = New master password
+mp_prompt_existing = Your saved account passwords are protected on this computer only. Set a master password so they can also be opened if you move ZBox to another one.
+mp_prompt_first_run = ZBox is about to save your account passwords. Set a master password now so they can still be opened if you move ZBox to another computer.
+mp_prompt_new_account = ZBox is about to save this account's password. Set a master password first so the account can still be opened if you move ZBox to another computer.
+mp_removed_done = Master password removed. The saved passwords now work only on this computer and this Windows account.
+mp_set_done = Master password set. ZBox will ask for it once on each new computer this folder is opened on, and unlock normally there afterwards.
+mv_body_title = Message Body
+mv_col_format = Format
+mv_col_name = Name
+mv_col_size = Size
+mv_format_unknown = Unknown
+mv_size_unknown = Unknown size
+na_account_settings = Account Settings
+na_disable_account = Disable Account
+na_edit_signature = Edit Signature
+na_message_filters = Message Filters
+na_mute_account = Mute Account
+na_pause_auto_check = Pause Automatic Checking
+na_remove_account = Remove Account
+na_set_default = Set as Default Account
+no_offline_copy = No offline copy of %s. Open it while online, or use File, Offline, Synchronize Now.
+perm_delete_confirm = {msg} This skips the Trash folder and cannot be undone.
+perm_delete_many = Permanently delete {count} messages?
+perm_delete_one = Permanently delete {count} message?
+preset_note_apple = Apple requires an app-specific password.
+preset_note_fastmail = Fastmail requires an app password.
+preset_note_google = Google requires an app password or OAuth2, not your normal password.
+preset_note_microsoft = Microsoft has withdrawn password sign-in for Outlook.com/Office 365 accounts -- only OAuth2 works, and ZBox does not support OAuth2 yet. This account will not be able to sign in.
+preset_note_proton = ProtonMail requires the ProtonMail Bridge app running locally.
+preset_note_yahoo = Yahoo requires an app password.
+priv_phishing_not_loaded = Phishing list: not loaded yet. It downloads the first time these rules are on and ZBox is online.
+priv_phishing_prefix = Phishing list:
+priv_status_unavailable = Blocklist status is unavailable.
+rdr_load_failed = Could not load message.\n\n{message}
+rdr_loading = Loading message...
+rdr_select_message = Select a message to read it here.
+set_autosave_off = Off — use Save Draft (Ctrl+S) to save manually
+set_autosave_seconds = Every {seconds} seconds
+set_no_unlock = No passkey or security key usable here
+set_purge_days = After {days} days
+set_purge_off = Off — Trash and Junk are never auto-purged
+set_purge_one_day = After 1 day
+set_rt_bundled_installed = Bundled runtime: installed.
+set_rt_bundled_many = Bundled runtime: %s installed.
+set_rt_bundled_none = Bundled runtime: none installed, so ZBox uses the system-wide one.
+set_rt_bundled_unknown = Bundled runtime: could not be determined.
+set_rt_bundled_ver = Bundled runtime: version %s installed.
+set_rt_system_unknown = System-wide runtime: version could not be determined.
+set_rt_system_ver = System-wide runtime: version %s.
+set_unlock_many = %d unlock methods usable here
+set_unlock_unreadable = Unlock methods could not be read
+sig_tab_formatted = Formatted
+sig_tab_source = HTML source
+srch_all_accounts = All Accounts
+srch_all_folders = All Folders
+tab_mail = Mail
+tab_new_message = New Message
+tab_saved_message = Saved Message
+title_copy_to_err = Copy To
+title_mark_message = Mark Message
+title_unsent_message = Unsent Message
+tree_unified_root = Unified Folders
+unlock_kind_passkey = Passkey (Windows Hello)
+unlock_kind_security_key = Security key
+unlock_prompt_message = Windows is asking you to confirm. Answer its prompt with Windows Hello, your PIN, or your security key. This window closes by itself when Windows is finished.
+unlock_prompt_title = Windows Security
+unlock_registering = Registering this unlock method
+unlock_the_passkey = The passkey
+unlock_the_security_key = The security key
+wildcard_eml = Email files (*.eml)|*.eml|All files (*.*)|*.*
+wildcard_export = ZBox export (*.json)|*.json
+wiz_not_supported = NOT SUPPORTED: {name}. {note} This account cannot be added in ZBox.
+wiz_oauth_notice = ZBox does not support OAuth2 sign-in yet. Accounts that require OAuth2 cannot be added. Accounts that accept a password, or an app password, can.\n\nGmail. Your normal Google password will be refused, but an app password works. Two-step verification has to be on first. The button below opens Google's instructions.\n\nOutlook.com, Hotmail, Live and Microsoft 365. Not supported yet. These require OAuth2 and will be added in a future version.\n\nOther providers. A normal password or an app password usually works, and your provider's help pages list the server settings.\n\nThis page will be removed once OAuth2 support lands.
+stock_apply = &Apply
+stock_cancel = Cancel
+stock_close = &Close
+stock_help = &Help
+stock_no = &No
+stock_ok = OK
+stock_yes = &Yes
+
+[errors]
+language_restart_failed = ZBox could not restart itself:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Could not open a mail client for {address}.
+
+wizard_no_oauth2 = This provider cannot sign in without OAuth2, which ZBox does not support yet -- there is no password or app-password option that will work here. This account cannot be added. Go back and use a different email address, or cancel and wait for OAuth2 support.
+wizard_test_failed = Connection failed:\n\n{error}
+
+contacts_import_unreadable = Could not read that file.\n\n{error}
+contacts_export_unwritable = Could not write that file.\n\n{error}
+
+attach_unreadable = Could not read attachment {path}:\n{error}
+send_failed = Could not send message.\n\n{error}
+draft_attach_unreadable = Could not read attachment {path}:\n{error}\n\nDraft not saved.
+draft_save_failed = Could not save draft.\n\n{error}
+
+clipboard_unavailable = The clipboard could not be opened.
+open_link_failed = Could not open your browser for:\n{url}
+
+master_password_mismatch = The two new master password boxes do not match.
+master_password_required = Enter a master password, or press Cancel.
+master_password_not_set = The master password could not be set: {error}
+master_password_not_here = The master password cannot be changed from here.
+
+attachment_save_failed = Could not save attachment.\n\n{error}
+attachments_save_failed = Could not save attachments.\n\n{error}
+print_failed = Could not print the message. Check that a printer is configured.
+print_preview_failed = Could not open print preview. Check that a printer is configured.
+
+related_search_failed = Could not search for related messages.\n\n{error}
+search_failed = Search failed.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox could not find its configuration folder, so unlock methods cannot be managed here.
+shortcut_no_folder = ZBox could not work out its own folder, so a shortcut cannot be created from here.
+shortcut_failed_settings = The desktop shortcut could not be created:\n\n{error}
+
+unlock_method_failed = {what} did not work.\n\n{error}
+unlock_check_failed = The master password could not be checked.\n\n{error}
+unlock_password_wrong = That master password is not correct.
+unlock_add_failed = {what} could not be added.\n\n{error}
+unlock_passkey_setup_failed = The passkey could not be set up on this computer, so nothing was changed.\n\n{error}
+unlock_method_test_failed = That method did not work.\n\n{error}
+
+account_list_unreadable = ZBox could not open your account list.\n\n{error}\n\nNo accounts have been loaded, and the file has not been changed, so nothing has been lost. Adding, editing and removing accounts is refused until it can be read.
+account_list_no_accounts = ZBox could not open your account list this session ({error}), so there are no accounts to select. Nothing has been lost and nothing has been changed. Close ZBox and start it again, and enter your master password when you are asked for it.
+open_message_failed = Could not open message.\n\n{error}
+filters_list_failed = Could not list messages in {folder}.\n\n{error}
+filters_move_failed = Could not move filtered messages.\n\n{error}
+cache_clear_failed = Could not clear the cache.\n\n{error}
+folder_create_failed = Could not create folder.\n\n{error}
+folder_rename_failed = Could not rename folder.\n\n{error}
+folder_delete_failed = Could not delete folder.\n\n{error}
+folder_subscribe_failed = Could not subscribe folder.\n\n{error}
+folder_unsubscribe_failed = Could not unsubscribe folder.\n\n{error}
+saved_open_failed = Could not open the file.\n\n{error}
+saved_parse_failed = Could not parse this file as an email message.\n\n{error}
+save_file_failed = Could not save the file.\n\n{error}
+save_fetch_failed = Could not fetch the message to save.\n\n{error}
+empty_trash_failed = Could not empty Trash.\n\n{error}
+empty_junk_failed = Could not empty Junk.\n\n{error}
+export_write_failed = Could not write the export file.\n\n{error}
+import_read_failed = Could not read this file as a ZBox export.\n\n{error}
+import_not_export = This file does not look like a ZBox export.\n\n{error}
+search_open_failed = Could not open this message.
+related_load_failed = Could not load this message.\n\n{error}
+reply_load_failed = Could not load the message to reply to.\n\n{error}
+forward_load_failed = Could not load the message to forward.\n\n{error}
+action_failed = Could not complete this action.\n\n{error}
+undo_failed = Could not undo {label}.\n\n{error}
+copy_failed = Could not copy message.\n\n{error}
+delete_failed = Could not delete message.\n\n{error}
+archive_failed = Could not archive message.\n\n{error}
+master_password_not_changed = The master password could not be changed: {error}
+shortcut_failed_startup = The desktop shortcut could not be created:\n\n{error}\n\nZBox will carry on starting. You can try again later from Settings.
+account_locked_action = ZBox cannot %s. The account list could not be opened this session (%s), and nothing has been changed. Close ZBox and start it again, and enter your master password if you are asked for it.
+
+[help]
