@@ -45,6 +45,7 @@ Alt+A: Bu iletiyi arşivle -- yalnızca metni (Metin veya HTML) gerçekten klavy
 Ctrl+R: Yanıtla
 Ctrl+Shift+R: Tümünü yanıtla
 Ctrl+L: İlet
+Ctrl+Delete veya Ctrl+D: Bu iletiyi Çöp Kutusu'na taşı. Bir HTML iletisi odaktayken tek başına Delete tuşunu çoğu zaman ekran okuyucu alır; Shift+Delete kalıcı olarak siler
 Ctrl+Shift+Page Down: Bu konudaki sonraki ileti; Ctrl+Shift+Page Up: önceki. Başka bir sekme açmak yerine geçerli sekmenin yerini alır, böylece hep tek bir ileti açık kalır. Son iletide (yukarı giderken ilkinde) bunu söyler ve sorar; aynı tuşa yeniden basmak iletiyi kapatır ve konuyu bitirerek ileti listesine döner. (Ctrl+Page Up/Down olduğu gibi bırakılır -- bunlar sekme değiştirir)
 Ctrl+B: İleti görünümünü değiştir (Metin/HTML)
 Ctrl+P: Yazdır

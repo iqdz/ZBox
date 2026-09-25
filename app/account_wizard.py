@@ -556,10 +556,28 @@ class AccountWizard:
     def _on_page_changed(self, event):
         """Puts focus on the notice whenever the gateway page is
         shown, so a screen reader reads the text rather than landing
-        on the Next button with the page unread."""
+        on the Next button with the page unread.
+
+        Also relabels the wizard's own Back and Next/Finish buttons
+        from the language file. wxWidgets writes its English "< Back",
+        "Next >" and "Finish" onto them on every page change, just
+        before this event, and never reads ZBox's language files, so
+        a translation only sticks if it is put back here each time."""
         if event.GetPage() is self.welcome_page:
             self.welcome_page.notice.SetFocus()
+        self._localize_wizard_buttons(event.GetPage())
         event.Skip()
+
+    def _localize_wizard_buttons(self, page):
+        back = self.wizard.FindWindowById(wx.ID_BACKWARD)
+        if back is not None:
+            back.SetLabel(lang.control_label("wiz_btn_back", "< &Back"))
+        forward = self.wizard.FindWindowById(wx.ID_FORWARD)
+        if forward is not None:
+            if page is not None and page.GetNext() is None:
+                forward.SetLabel(lang.control_label("wiz_btn_finish", "&Finish"))
+            else:
+                forward.SetLabel(lang.control_label("wiz_btn_next", "&Next >"))
 
     def _on_page_changing(self, event):
         page = event.GetPage()

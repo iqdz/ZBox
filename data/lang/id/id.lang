@@ -1354,6 +1354,9 @@ stock_help = &Bantuan
 stock_no = &Tidak
 stock_ok = OK
 stock_yes = &Ya
+wiz_btn_back = < Kembali
+wiz_btn_finish = Selesai
+wiz_btn_next = Berikutnya >
 
 [errors]
 language_restart_failed = ZBox tidak dapat memulai ulang dirinya:\n\n{error}

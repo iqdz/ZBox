@@ -192,15 +192,35 @@ def preset_is_unsupported(preset):
     return bool(preset and preset.get("unsupported"))
 
 
+# Other domains served by the same servers as a preset domain, from
+# Thunderbird's own ISPDB entry for yahoo.com
+# (autoconfig.thunderbird.net/v1.1/yahoo.com). cox.net is in that
+# entry too but is left out: it is not a Yahoo address to the person
+# typing it. yahoo.co.jp is a separate service and not listed there.
+DOMAIN_ALIASES = {
+    domain: "yahoo.com"
+    for domain in (
+        "yahoo.ca", "yahoo.de", "yahoo.it", "yahoo.fr", "yahoo.es",
+        "yahoo.se", "yahoo.co.in", "yahoo.co.uk", "yahoo.co.nz",
+        "yahoo.com.au", "yahoo.com.ar", "yahoo.com.br", "yahoo.com.mx",
+        "ymail.com", "myyahoo.com", "rocketmail.com",
+    )
+}
+
+
 def preset_for_domain(email_address):
     """
     Returns the preset dict for the domain in email_address, or None
-    if the domain isn't in the bundled list.
+    if the domain isn't in the bundled list. A domain in
+    DOMAIN_ALIASES gets the preset of the domain it is served by.
     """
     if "@" not in email_address:
         return None
     domain = email_address.rsplit("@", 1)[1].strip().lower()
-    return PROVIDER_PRESETS.get(domain)
+    preset = PROVIDER_PRESETS.get(domain)
+    if preset is None and domain in DOMAIN_ALIASES:
+        preset = PROVIDER_PRESETS.get(DOMAIN_ALIASES[domain])
+    return preset
 
 
 # Real IMAP folder names for ZBox's generic display folders, keyed by

@@ -1357,6 +1357,9 @@ stock_help = Справка
 stock_no = Нет
 stock_ok = ОК
 stock_yes = Да
+wiz_btn_back = < Назад
+wiz_btn_finish = Готово
+wiz_btn_next = Далее >
 
 [errors]
 language_restart_failed = ZBox не удалось перезапуститься:\n\n{error}

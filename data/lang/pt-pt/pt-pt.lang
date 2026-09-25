@@ -1353,6 +1353,9 @@ stock_help = Ajuda
 stock_no = Não
 stock_ok = OK
 stock_yes = Sim
+wiz_btn_back = < Anterior
+wiz_btn_finish = Concluir
+wiz_btn_next = Seguinte >
 
 [errors]
 language_restart_failed = O ZBox não conseguiu reiniciar-se:\n\n{error}

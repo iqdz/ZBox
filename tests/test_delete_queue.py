@@ -34,6 +34,10 @@ class FakeServer:
         self.next_uid = 1000
         self.uidplus = uidplus
         self.refuse_move = False
+        self.ignore_move = False
+        # Message-IDs the server's SEARCH never finds, as Gmail's did
+        # for some listed Inbox messages on 25 September 2026.
+        self.unsearchable = set()
         self.network_failures = 0
         self.moves = []
 
@@ -45,6 +49,8 @@ class FakeServer:
     def find_uids(self, paths, account, folder, header):
         self._network()
         wanted = _canon(header)
+        if wanted in {_canon(h) for h in self.unsearchable}:
+            return []
         return sorted(uid for uid, h in self.folders.get(folder, {}).items() if _canon(h) == wanted)
 
     def folder_uids(self, paths, account, folder):
@@ -56,6 +62,8 @@ class FakeServer:
         if self.refuse_move:
             raise imap_body_fetch.ImapRefused("NO [CANNOT] move refused")
         self.moves.append((list(uids), folder, to_folder))
+        if self.ignore_move:
+            return
         source = self.folders.setdefault(folder, {})
         target = self.folders.setdefault(to_folder, {})
         for uid in uids:
@@ -170,6 +178,37 @@ class ProcessBatchTests(QueueTestBase):
         self.patch_server(server)
         _moved, unresolved = self.run_batch([("5", "INBOX", "<a@x>")], permanent=True, trash="Trash")
         self.assertEqual(unresolved, [("5", "INBOX", "flagged_only")])
+
+    def test_gmail_permanent_delete_when_the_search_misses_uses_the_uid(self):
+        server = FakeServer({"INBOX": {5: "<a@x>", 6: "<b@x>"}, "[Gmail]/Trash": {9: "<old@x>"}})
+        server.unsearchable = {"<a@x>"}
+        self.patch_server(server)
+        moved, unresolved = self.run_batch(
+            [("5", "INBOX", "<a@x>")], permanent=True, trash="[Gmail]/Trash",
+        )
+        self.assertEqual((moved, unresolved), ([], []))
+        self.assertEqual(server.folders["INBOX"], {6: "<b@x>"})
+        self.assertEqual(server.folders["[Gmail]/Trash"], {9: "<old@x>"})
+
+    def test_delete_to_trash_when_the_search_misses_still_moves_by_uid(self):
+        server = FakeServer({"INBOX": {5: "<a@x>", 6: "<b@x>"}, "Trash": {}})
+        server.unsearchable = {"<a@x>"}
+        self.patch_server(server)
+        moved, unresolved = self.run_batch([("5", "INBOX", "<a@x>")], permanent=False, trash="Trash")
+        self.assertEqual(unresolved, [])
+        self.assertEqual(len(moved), 1)
+        self.assertEqual(list(server.folders["INBOX"]), [6])
+
+    def test_a_move_that_did_nothing_is_reported_not_hidden(self):
+        server = FakeServer({"INBOX": {5: "<a@x>"}, "[Gmail]/Trash": {}})
+        server.unsearchable = {"<a@x>"}
+        server.ignore_move = True
+        self.patch_server(server)
+        _moved, unresolved = self.run_batch(
+            [("5", "INBOX", "<a@x>")], permanent=True, trash="[Gmail]/Trash",
+        )
+        self.assertEqual(unresolved, [("5", "INBOX", "move_failed")])
+        self.assertEqual(server.folders["INBOX"], {5: "<a@x>"})
 
     def test_network_failure_raises_for_a_retry(self):
         server = FakeServer({"INBOX": {5: "<a@x>"}, "Trash": {}})

@@ -1353,6 +1353,9 @@ stock_help = &Help
 stock_no = &No
 stock_ok = OK
 stock_yes = &Yes
+wiz_btn_back = < &Back
+wiz_btn_finish = &Finish
+wiz_btn_next = &Next >
 
 [errors]
 language_restart_failed = ZBox could not restart itself:\n\n{error}

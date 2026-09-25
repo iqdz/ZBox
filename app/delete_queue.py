@@ -85,23 +85,45 @@ class _Locator:
         self._account = account
         self._folder = folder
         self._uids = None
+        # Items found only by their UID because the Message-ID search
+        # missed them. Kept across reset(): the Gmail Trash step needs
+        # to know which moved items it cannot search for there either.
+        self.by_uid = set()
 
     def reset(self):
         self._uids = None
 
+    def _listed(self, uid):
+        if self._uids is None:
+            self._uids = set(imap_body_fetch.folder_uids(self._paths, self._account, self._folder))
+        return uid in self._uids
+
     def find(self, item):
         """The item's UIDs in the folder; [] when it is not there;
         None when it cannot be looked for at all (no Message-ID and
-        no UID)."""
+        no UID).
+
+        A Message-ID search that finds nothing is not taken as proof
+        the message is gone. Live 25 September 2026, Gmail's search
+        missed eleven Inbox messages that were plainly listed: nothing
+        was moved, every check agreed they were gone, and each
+        Shift+Delete hid them only until the next refresh. When the
+        row carries its own UID, that UID is checked against the
+        folder's listing before the message counts as not there."""
         header = item[2] if len(item) > 2 else None
-        if imap_body_fetch.canonical_message_id(header):
-            return imap_body_fetch.find_uids(self._paths, self._account, self._folder, header)
         uid = _as_uid(item[0])
+        if imap_body_fetch.canonical_message_id(header):
+            found = imap_body_fetch.find_uids(self._paths, self._account, self._folder, header)
+            if found or uid is None:
+                return found
+            if self._listed(uid):
+                logger.debug("Message-ID search missed a listed message in %s; using its UID.", self._folder)
+                self.by_uid.add(tuple(item))
+                return [uid]
+            return []
         if uid is None:
             return None
-        if self._uids is None:
-            self._uids = set(imap_body_fetch.folder_uids(self._paths, self._account, self._folder))
-        return [uid] if uid in self._uids else []
+        return [uid] if self._listed(uid) else []
 
 
 def _gone_after(locator, items, pause):
@@ -117,8 +139,16 @@ def _gone_after(locator, items, pause):
     return gone, still
 
 
+def _highest_uid(paths, account, folder):
+    """The folder's highest UID, 0 when it is empty."""
+    uids = imap_body_fetch.folder_uids(paths, account, folder)
+    return max(uids) if uids else 0
+
+
 def _move_out(paths, account, folder, group, trash_folder, pause):
-    """Moves a folder's items to Trash. Returns (gone, failed)."""
+    """Moves a folder's items to Trash. Returns (gone, failed,
+    by_uid): by_uid is the moved items that were found only by their
+    UID (see _Locator.find)."""
     locator = _Locator(paths, account, folder)
     located = []
     failed = []
@@ -132,7 +162,8 @@ def _move_out(paths, account, folder, group, trash_folder, pause):
     if uids:
         imap_body_fetch.move_uids(paths, account, uids, folder, trash_folder)
     gone, still = _gone_after(locator, [item for item, _found in located], pause)
-    return gone, failed + still
+    by_uid = [item for item in gone if item in locator.by_uid]
+    return gone, failed + still, by_uid
 
 
 def _delete_in_place(paths, account, folder, group, pause):
@@ -157,9 +188,19 @@ def _delete_in_place(paths, account, folder, group, pause):
     return unresolved
 
 
-def _purge_from_trash(paths, account, trash_folder, items, pause):
+def _purge_from_trash(paths, account, trash_folder, items, pause, by_uid=(), mark=None):
     """Gmail's second step: expunges from Trash the items just moved
-    there. Returns the unresolved entries, all of them in Trash."""
+    there. Returns the unresolved entries, all of them in Trash.
+
+    Items in by_uid could not be found by Message-ID in their own
+    folder, so they are not searched for in Trash either. Their Trash
+    copies are the UIDs above mark (Trash's highest UID read before
+    the move) that no searched item accounts for; they are expunged
+    only when their number matches exactly, and otherwise reported as
+    left in Trash rather than as gone."""
+    by_uid = set(by_uid)
+    uid_items = [item for item in items if item in by_uid]
+    items = [item for item in items if item not in by_uid]
     unresolved = []
     targets = []
     for item in items:
@@ -179,7 +220,30 @@ def _purge_from_trash(paths, account, trash_folder, items, pause):
         else:
             # Not in the source folder and not in Trash: already gone.
             logger.info("A permanently deleted message never showed up in %s; treating it as gone.", trash_folder)
-    uids = sorted({uid for _item, found in targets for uid in found})
+    header_uids = {uid for _item, found in targets for uid in found}
+    uid_targets = []
+    if uid_items:
+        fresh = []
+        if mark is not None:
+            for lookup in range(TRASH_LOOKUPS):
+                fresh = [
+                    uid for uid in imap_body_fetch.folder_uids(paths, account, trash_folder)
+                    if uid > mark and uid not in header_uids
+                ]
+                if len(fresh) >= len(uid_items):
+                    break
+                if lookup < TRASH_LOOKUPS - 1:
+                    pause(PAUSE_SECONDS)
+        if len(fresh) == len(uid_items):
+            uid_targets = fresh
+        else:
+            logger.info(
+                "Could not tell which copies in %s were just moved there; %d left in Trash.",
+                trash_folder, len(uid_items),
+            )
+            unresolved.extend((item[0], trash_folder, "purge_failed") for item in uid_items)
+            uid_items = []
+    uids = sorted(header_uids | set(uid_targets))
     status = "expunged"
     if uids:
         status = imap_body_fetch.delete_uids(paths, account, trash_folder, uids)
@@ -187,6 +251,10 @@ def _purge_from_trash(paths, account, trash_folder, items, pause):
     for item, _found in targets:
         if imap_body_fetch.find_uids(paths, account, trash_folder, item[2]):
             unresolved.append((item[0], trash_folder, reason))
+    if uid_targets:
+        left = set(imap_body_fetch.folder_uids(paths, account, trash_folder)) & set(uid_targets)
+        if left:
+            unresolved.extend((item[0], trash_folder, reason) for item in uid_items)
     return unresolved
 
 
@@ -217,10 +285,13 @@ def process_batch(paths, account, batch, pause=time.sleep):
             if in_place:
                 unresolved.extend(_delete_in_place(paths, account, folder, group, pause))
             else:
-                gone, failed = _move_out(paths, account, folder, group, trash_folder, pause)
+                mark = _highest_uid(paths, account, trash_folder) if permanent else None
+                gone, failed, by_uid = _move_out(paths, account, folder, group, trash_folder, pause)
                 unresolved.extend((item[0], folder, "move_failed") for item in failed)
                 if permanent:
-                    unresolved.extend(_purge_from_trash(paths, account, trash_folder, gone, pause))
+                    unresolved.extend(_purge_from_trash(
+                        paths, account, trash_folder, gone, pause, by_uid=by_uid, mark=mark,
+                    ))
                 else:
                     moved.extend(gone)
         except imap_body_fetch.ImapRefused as exc:

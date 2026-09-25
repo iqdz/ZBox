@@ -45,6 +45,7 @@ Alt+A: Arsipkan pesan ini -- hanya saat isinya (Teks atau HTML) benar-benar mend
 Ctrl+R: Balas
 Ctrl+Shift+R: Balas Semua
 Ctrl+L: Teruskan
+Ctrl+Delete atau Ctrl+D: Pindahkan pesan ini ke Sampah. Delete saja sering diambil oleh pembaca layar saat pesan HTML memiliki fokus; Shift+Delete menghapus secara permanen
 Ctrl+Shift+Page Down: Pesan berikutnya dalam utas ini; Ctrl+Shift+Page Up: sebelumnya. Menggantikan tab saat ini alih-alih membuka yang lain, jadi hanya satu pesan yang pernah terbuka. Pada pesan terakhir (atau pertama, saat naik) ZBox memberitahukannya dan bertanya; menekan tombol yang sama lagi menutup pesan dan mengakhiri utas, kembali ke daftar pesan. (Ctrl+Page Up/Down tidak diubah -- keduanya berpindah tab)
 Ctrl+B: Beralih tampilan pesan (Teks/HTML)
 Ctrl+P: Cetak

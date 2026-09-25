@@ -45,6 +45,7 @@ Alt+A: Arquivar esta mensagem -- somente enquanto o corpo dela (Texto ou HTML) t
 Ctrl+R: Responder
 Ctrl+Shift+R: Responder a todos
 Ctrl+L: Encaminhar
+Ctrl+Delete ou Ctrl+D: Mover esta mensagem para a Lixeira. O Delete sozinho costuma ser capturado pelo leitor de tela quando uma mensagem HTML está em foco; Shift+Delete exclui permanentemente
 Ctrl+Shift+Page Down: Próxima mensagem desta conversa; Ctrl+Shift+Page Up: anterior. Substitui a aba atual em vez de abrir outra, de modo que só uma mensagem fica aberta. Na última mensagem (ou na primeira, subindo) ele avisa e pergunta; pressionar a mesma tecla de novo fecha a mensagem e encerra a conversa, voltando à lista de mensagens. (Ctrl+Page Up/Down não são alterados -- eles trocam de aba)
 Ctrl+B: Alternar a exibição da mensagem (Texto/HTML)
 Ctrl+P: Imprimir

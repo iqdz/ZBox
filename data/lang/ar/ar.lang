@@ -1354,6 +1354,9 @@ stock_help = مساعدة
 stock_no = لا
 stock_ok = موافق
 stock_yes = نعم
+wiz_btn_back = السابق
+wiz_btn_finish = إنهاء
+wiz_btn_next = التالي
 
 [errors]
 language_restart_failed = تعذّر على ZBox إعادة تشغيل نفسه:\n\n{error}

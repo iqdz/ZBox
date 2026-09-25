@@ -1354,6 +1354,9 @@ stock_help = &সহায়তা
 stock_no = &না
 stock_ok = ঠিক আছে
 stock_yes = &হ্যাঁ
+wiz_btn_back = < পূর্ববর্তী
+wiz_btn_finish = সমাপ্ত
+wiz_btn_next = পরবর্তী >
 
 [errors]
 language_restart_failed = ZBox নিজেকে আবার চালু করতে পারেনি:\n\n{error}

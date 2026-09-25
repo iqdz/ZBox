@@ -491,6 +491,20 @@ class EnvelopeListPanel(wx.Panel):
         root, not only ones that would otherwise get an info object.
         """
         roots = thread_grouping.group_into_threads(envelopes)
+        # Sorted by date, a thread sits where its NEWEST message
+        # would, so a thread that gets a reply moves to the top
+        # (descending) or bottom (ascending), as in Thunderbird. The
+        # sort is stable, so threads with the same newest date keep
+        # their order. Other sort keys keep the root's own position.
+        # Read through getattr because the tests' _Panel stand-in
+        # borrows this method without running __init__.
+        if getattr(self, "_sort_key", None) == "date":
+            roots.sort(
+                key=lambda root: max(
+                    _parse_envelope_date(e) for e in root.all_envelopes()
+                ),
+                reverse=not getattr(self, "_sort_ascending", False),
+            )
         rows = []
         # Rebuilt from scratch every call, same as _row_thread_info
         # below -- a stale entry from a folder switch would otherwise

@@ -1353,6 +1353,9 @@ stock_help = Yardım
 stock_no = Hayır
 stock_ok = Tamam
 stock_yes = Evet
+wiz_btn_back = < Geri
+wiz_btn_finish = Son
+wiz_btn_next = İleri >
 
 [errors]
 language_restart_failed = ZBox kendini yeniden başlatamadı:\n\n{error}

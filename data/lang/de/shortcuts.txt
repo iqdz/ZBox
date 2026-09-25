@@ -45,6 +45,7 @@ Alt+A: Diese Nachricht archivieren -- nur solange ihr Text (Text oder HTML) wirk
 Ctrl+R: Antworten
 Ctrl+Shift+R: Allen antworten
 Ctrl+L: Weiterleiten
+Ctrl+Delete oder Ctrl+D: Diese Nachricht in den Papierkorb verschieben. Delete allein wird oft vom Screenreader abgefangen, solange eine HTML-Nachricht den Fokus hat; Shift+Delete löscht endgültig
 Ctrl+Shift+Page Down: Nächste Nachricht in diesem Thread; Ctrl+Shift+Page Up: vorherige. Ersetzt den aktuellen Tab, statt einen weiteren zu öffnen, sodass immer nur eine Nachricht offen ist. Bei der letzten Nachricht (oder der ersten, nach oben) wird das angesagt und nachgefragt; erneutes Drücken derselben Taste schließt die Nachricht und beendet den Thread, zurück in der Nachrichtenliste. (Ctrl+Page Up/Down bleiben unberührt -- sie wechseln die Tabs)
 Ctrl+B: Nachrichtenansicht umschalten (Text/HTML)
 Ctrl+P: Drucken

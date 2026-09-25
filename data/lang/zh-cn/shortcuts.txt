@@ -45,6 +45,7 @@ Alt+A：归档这封邮件——仅当其正文（文本或 HTML）确实拥有�
 Ctrl+R：回复
 Ctrl+Shift+R：全部回复
 Ctrl+L：转发
+Ctrl+Delete 或 Ctrl+D：将此邮件移到回收站。HTML 邮件获得焦点时，单独的 Delete 键常被读屏软件截获；Shift+Delete 为永久删除
 Ctrl+Shift+Page Down：此会话中的下一封邮件；Ctrl+Shift+Page Up：上一封。它会替换当前标签页而不是再打开一个，因此始终只打开一封邮件。到达最后一封（向上时为第一封）时会告知你并询问；再次按同一个键会关闭邮件并结束该会话，回到邮件列表。（Ctrl+Page Up/Down 不受影响——它们用于切换标签页）
 Ctrl+B：切换邮件视图（文本/HTML）
 Ctrl+P：打印

@@ -39,6 +39,20 @@ class UnsupportedPresetsAreMarked(unittest.TestCase):
         self.assertTrue(preset["unsupported"])
 
 
+class YahooCountryDomains(unittest.TestCase):
+    def test_country_and_alias_domains_get_the_yahoo_servers(self):
+        for domain in ("yahoo.it", "yahoo.co.uk", "YAHOO.FR", "ymail.com", "rocketmail.com"):
+            with self.subTest(domain=domain):
+                preset = preset_for_domain("someone@" + domain)
+                self.assertIs(preset, PROVIDER_PRESETS["yahoo.com"])
+                self.assertEqual(preset["imap_host"], "imap.mail.yahoo.com")
+
+    def test_unrelated_domains_are_not_given_yahoo(self):
+        for domain in ("cox.net", "yahoo.co.jp", "example.net"):
+            with self.subTest(domain=domain):
+                self.assertIsNone(preset_for_domain("someone@" + domain))
+
+
 class PresetIsUnsupportedHelper(unittest.TestCase):
     def test_unsupported_preset_is_flagged(self):
         self.assertTrue(preset_is_unsupported(preset_for_domain("someone@hotmail.com")))

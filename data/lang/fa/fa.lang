@@ -1354,6 +1354,9 @@ stock_help = راهنما
 stock_no = خیر
 stock_ok = تأیید
 stock_yes = بله
+wiz_btn_back = قبلی
+wiz_btn_finish = پایان
+wiz_btn_next = بعدی
 
 [errors]
 language_restart_failed = ZBox نتوانست خود را دوباره راه‌اندازی کند:\n\n{error}

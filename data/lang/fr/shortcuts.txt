@@ -45,6 +45,7 @@ Alt+A : Archiver ce message -- seulement quand son corps (Texte ou HTML) a réel
 Ctrl+R : Répondre
 Ctrl+Shift+R : Répondre à tous
 Ctrl+L : Transférer
+Ctrl+Delete ou Ctrl+D : Mettre ce message à la corbeille. Delete seul est souvent pris par le lecteur d'écran quand un message HTML a le focus ; Shift+Delete supprime définitivement
 Ctrl+Shift+Page Down : Message suivant de ce fil ; Ctrl+Shift+Page Up : précédent. Remplace l'onglet actif au lieu d'en ouvrir un autre, de sorte qu'un seul message est ouvert à la fois. Au dernier message (ou au premier en remontant), il l'annonce et demande ; appuyer de nouveau sur la même touche ferme le message et termine le fil, en revenant à la liste des messages. (Ctrl+Page Up/Down ne sont pas touchés -- ils changent d'onglet)
 Ctrl+B : Basculer l'affichage du message (Texte/HTML)
 Ctrl+P : Imprimer

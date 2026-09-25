@@ -221,7 +221,9 @@ used on a collapsed thread row. ZBox says how many were done, and
 only shows a dialog when something did not work.
 
 - Delete moves messages to Trash. Shift+Delete deletes them
-  permanently after a confirmation.
+  permanently after a confirmation. In an open HTML message the
+  screen reader usually keeps plain Delete for itself; Ctrl+Delete or
+  Ctrl+D moves the message to Trash there instead.
 - Archive moves them to the account's archive folder (on Gmail, All
   Mail).
 - Move To and Copy To, in the list's context menu, list the account's
@@ -428,13 +430,13 @@ Unified Folders. Ctrl+Shift+J jumps to the inbox list.
 
 15. LANGUAGES
 -------------
-ZBox's interface is available in English and 14 translations:
+ZBox's interface is available in English and 15 translations:
 Arabic (العربية), Bengali (বাংলা), Chinese Simplified (简体中文),
 French (Français), German (Deutsch), Hindi (हिन्दी), Indonesian (Bahasa
-Indonesia), Persian (فارسی), Portuguese Brazil (Português (Brasil)),
-Portuguese Portugal (Português (Portugal)), Russian (Русский),
-Spanish (Español), Turkish (Türkçe) and Urdu (اردو). Arabic, Persian
-and Urdu are laid out right to left.
+Indonesia), Italian (Italiano), Persian (فارسی), Portuguese Brazil
+(Português (Brasil)), Portuguese Portugal (Português (Portugal)),
+Russian (Русский), Spanish (Español), Turkish (Türkçe) and Urdu
+(اردو). Arabic, Persian and Urdu are laid out right to left.
 
 Choose one in Settings, Interface language. ZBox restarts to apply it.
 Plain Windows message box buttons such as OK and Cancel follow
@@ -455,7 +457,7 @@ More languages will be added in future versions. You can also make
 one yourself. Each language is a folder in data\lang holding a plain
 text .lang file:
 1. Copy the en folder, and rename the copy and the en.lang file inside
-   it to your language code, for example it and it.lang.
+   it to your language code, for example nl and nl.lang.
 2. Change only the text to the right of each equals sign. The notes at
    the top of the file explain the rest.
 3. Anything not yet translated is spoken in English rather than left

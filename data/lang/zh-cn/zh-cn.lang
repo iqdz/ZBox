@@ -1263,6 +1263,9 @@ stock_help = 帮助
 stock_no = 否
 stock_ok = 确定
 stock_yes = 是
+wiz_btn_back = < 上一步
+wiz_btn_finish = 完成
+wiz_btn_next = 下一步 >
 
 [errors]
 language_restart_failed = ZBox 无法自行重新启动：\n\n{error}
