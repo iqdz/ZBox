@@ -67,6 +67,7 @@ GOOGLE_APP_PASSWORDS_URL = "https://myaccount.google.com/apppasswords"
 SUPPORT_ZBOX_URL = "https://ko-fi.com/happs#"
 HARITH_GITHUB_URL = "https://github.com/iqdz?tab=repositories"
 CONTACT_HARITH_ADDRESS = "harith@gvoice.org"
+ZBOX_REPO_URL = "https://github.com/iqdz/ZBox"
 
 
 def read_version(license_path):
@@ -88,13 +89,15 @@ def read_version(license_path):
 
 
 def with_version(text, version):
-    """Puts the version after ZBox on the About text's first line."""
-    if not version:
-        return text
+    """The About text's first line as ZBox plus the version, when there
+    is one, and ZBox's repository address on its own line under it.
+    The address is only a name and a link, so it needs no translation
+    and is added the same way in every language."""
+    title = ("ZBox " + version) if version else "ZBox"
     first, sep, rest = text.partition("\n")
     if first.strip() == "ZBox":
-        return "ZBox " + version + sep + rest
-    return "ZBox " + version + "\n" + text
+        return title + "\n" + ZBOX_REPO_URL + sep + rest
+    return title + "\n" + ZBOX_REPO_URL + "\n" + text
 
 
 class AboutZBoxDialog(wx.Dialog):

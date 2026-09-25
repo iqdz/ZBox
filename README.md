@@ -20,6 +20,8 @@ voice, rate and settings.
 Download the zip from the [Releases](../../releases) page, unzip it
 anywhere you like, and run `ZBox.exe`.
 
+Source code and releases: https://github.com/iqdz/ZBox
+
 There is no installer. The whole folder is the app: put it on a USB
 stick, an external drive or your desktop, and it writes nothing
 outside itself. Nothing is added to the registry, nothing is left

@@ -29,6 +29,8 @@ a USB stick, an external drive or your desktop.
 This is a testing beta. Things will break, and reporting them is what
 this build is for (see section 17).
 
+Source code and releases: https://github.com/iqdz/ZBox
+
 
 2. FIRST START, STEP BY STEP
 ----------------------------
