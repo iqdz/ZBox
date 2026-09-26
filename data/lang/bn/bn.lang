@@ -182,6 +182,11 @@ jump_unified_inbox = একীভূত ইনবক্স।
 remote_none = এই বার্তায় কোনো রিমোট কনটেন্ট নেই।
 sender_none = এই বার্তার কোনো প্রেরক নেই।
 sender_name_no_address = %s, কোনো ঠিকানা নেই
+signature_not_switched = স্বাক্ষর পরিবর্তন হয়নি। এই অ্যাকাউন্টের স্বাক্ষর যোগ করতে Ctrl+Shift+S চাপুন।
+signature_removed_no_signature = স্বাক্ষর সরানো হয়েছে। এই অ্যাকাউন্টের কোনো স্বাক্ষর নেই।
+signature_switched = স্বাক্ষর এই অ্যাকাউন্টের স্বাক্ষরে পরিবর্তন করা হয়েছে।
+spell_not_replaced = শব্দটি প্রতিস্থাপন করা যায়নি।
+spell_replaced_with = {word} দিয়ে প্রতিস্থাপন করা হয়েছে।
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = ফিশিং তালিকা: পটভূ
 priv_status_updating = পটভূমিতে হালনাগাদ হচ্ছে। ফলাফল দেখতে এই ডায়ালগ আবার খুলুন।
 rel_note_intro = "{subject}"-এর সাথে Message-ID/References হেডার দিয়ে সম্পর্কিত বার্তা, এই অ্যাকাউন্টের প্রতিটি ফোল্ডারে।
 srch_note_intro = নিচে লেখা লেখার জন্য প্রেরক, বিষয় ও মূল অংশে খুঁজুন। নিচে সীমিত না করলে প্রতিটি অ্যাকাউন্ট ও ফোল্ডারে খোঁজা হয়।
-sig_note_plain = সাধারণ লেখার বিকল্প ফাঁকা রাখুন, ঠিক আছে চাপলে এটি ফরম্যাট করা স্বাক্ষর থেকে লেখা হবে।
+sig_note_plain = সাধারণ টেক্সট বিকল্পটি ফাঁকা রাখুন, সংরক্ষণ করুন চাপলে এটি ফরম্যাট করা স্বাক্ষর থেকে লেখা হবে।
 unified_note_intro = প্রতিটি অ্যাকাউন্ট জুড়ে কোন ফোল্ডারগুলো একসাথে মেলাবেন তা বেছে নিন। প্রতিটি চেক করা ফোল্ডার ট্রিতে একটি এন্ট্রি হয় যা আপনার সব অ্যাকাউন্টের ওই ফোল্ডার একসাথে মেলায়।
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = &হ্যাঁ
 wiz_btn_back = < পূর্ববর্তী
 wiz_btn_finish = সমাপ্ত
 wiz_btn_next = পরবর্তী >
+acct_unsaved_q = এই অ্যাকাউন্টের পরিবর্তনগুলো সংরক্ষণ করবেন?
+btn_save = সংরক্ষণ করুন
+spell_add_to_dictionary = অভিধানে যোগ করুন
+spell_no_suggestions = কোনো পরামর্শ নেই
+title_signature_for = স্বাক্ষর: {account}
 
 [errors]
 language_restart_failed = ZBox নিজেকে আবার চালু করতে পারেনি:\n\n{error}

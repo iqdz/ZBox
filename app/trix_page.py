@@ -100,13 +100,14 @@ PAGE_STYLE = """
   @media (forced-colors: active) {
     trix-editor { border: 1px solid CanvasText; }
   }
+  zbox-miss { text-decoration: underline wavy red; }
 """
 
 BODY = """
 <label for="trix" id="body-label">Message body</label>
 <trix-toolbar id="body-toolbar"></trix-toolbar>
 <input id="trix-input" type="hidden" name="content">
-<trix-editor id="trix" toolbar="body-toolbar" input="trix-input"
+<trix-editor id="trix" toolbar="body-toolbar" input="trix-input" spellcheck="false"
              aria-labelledby="body-label" aria-label="Message body"></trix-editor>
 """
 
@@ -237,6 +238,25 @@ window.addEventListener('error', function(e){
 SETUP = """
 (function(){
   var el = document.getElementById('trix');
+
+  // Spelling marks, made by ZBox rather than by Chromium. Chromium's
+  // own spell check in this editor stops once a second WebView exists
+  // in the process (session av), so the editor has spellcheck off and
+  // Python marks unknown words as a Trix text attribute instead. The
+  // attribute is drawn as a small custom tag that tells a screen
+  // reader the text is a spelling error. trix_html drops the tag, so
+  // it never leaves ZBox in a message, a draft or a signature.
+  try{
+    if (!customElements.get('zbox-miss')) {
+      customElements.define('zbox-miss', class extends HTMLElement {
+        connectedCallback(){ this.setAttribute('aria-invalid', 'spelling'); }
+      });
+    }
+    Trix.config.textAttributes.misspelled = {tagName: 'zbox-miss', inheritable: false};
+  }catch(err){
+    window.zbox_last_error = 'spelling marks: ' + err;
+  }
+
   var watched = ['bold','italic','strike','href','bullet','number',
                  'quote','code','heading1'];
 
@@ -295,12 +315,17 @@ SETUP = """
   // the latest copy. That is what lets the unsaved-changes check and
   // the autosave tick stay as cheap as they were against an edit
   // box. Debounced, because Trix fires this per keystroke.
-  window.zbox_mirror = function(){
+  // The document string rides along: it is what Trix counts positions
+  // against, and what the spelling marks are computed from.
+  window.zbox_mirror = function(reason){
+    var doc = '';
+    try { doc = el.editor.getDocument().toString(); } catch (err) { }
     window.zbox_send({
       kind: 'content',
-      reason: 'mirror',
+      reason: reason || 'mirror',
       html: document.getElementById('trix-input').value,
-      text: el.innerText
+      text: el.innerText,
+      document: doc
     });
   };
   var mirrorTimer = null;
@@ -316,6 +341,31 @@ SETUP = """
     e.preventDefault();
     window.zbox_send({kind:'file_rejected'});
   });
+
+  // The Applications key, Shift+F10 or a right click on a word ZBox
+  // marked as misspelled opens ZBox's own suggestions instead of
+  // Chromium's menu, whose spell check is off here and so offers none.
+  // Decided from the ranges the last marking run applied, and only
+  // while the document is still the one they were computed for. On
+  // any other word the normal menu opens untouched. Off unless the
+  // host has a menu to show (window.zbox_spell_menu_on).
+  el.addEventListener('contextmenu', function(e){
+    try{
+      var m = window.zbox_miss;
+      if (!window.zbox_spell_menu_on || !m) { return; }
+      if (el.editor.getDocument().toString() !== m.doc) { return; }
+      var s = el.editor.getSelectedRange();
+      for (var i = 0; i < m.ranges.length; i++){
+        var r = m.ranges[i];
+        if (s[0] >= r[0] && s[0] <= r[1] && s[1] <= r[1]){
+          e.preventDefault();
+          e.stopPropagation();
+          window.zbox_send({kind:'spell_menu', start:r[0], end:r[1]});
+          return;
+        }
+      }
+    }catch(err){ }
+  }, true);
 
   window.zbox_send({
     kind: 'ready',
@@ -463,14 +513,43 @@ REPLACE_RANGE = (
 # loadHTML and insertHTML, broke the script, and so dropped every
 # reply's quoted original (set_html ok=False, 25 September 2026).
 HTML_ARG = "__ZBOX_HTML__"
+#
+# The mirror goes out as 'loaded', not 'mirror': it is what the body
+# held before anyone typed, which is how the composer knows the body is
+# untouched and may be rebuilt when From changes.
 SET_HTML = (
     "(function(){var el=document.getElementById('trix');"
     "el.editor.loadHTML(__ZBOX_HTML__);"
     "el.editor.setSelectedRange([0, 0]);"
-    "if (window.zbox_mirror) { window.zbox_mirror(); }})();"
+    "if (window.zbox_mirror) { window.zbox_mirror('loaded'); }})();"
+)
+
+# Replaces every spelling mark in one step: clears them all, then marks
+# the given ranges. Only when the document is still exactly the text
+# the ranges were computed from; otherwise the writer typed in the
+# meantime, nothing is touched, and the next pause redoes it. The
+# selection is not moved: the new document is swapped in underneath
+# it.
+MARK_EXPECTED = "__ZBOX_EXPECTED__"
+MARK_RANGES = "__ZBOX_RANGES__"
+MARK_APPLY = (
+    "(function(){try{var el=document.getElementById('trix');"
+    "if(!el||!el.editor){return 'no editor';}"
+    "var c=el.editor.composition;var d=c.document;"
+    "if(d.toString()!==__ZBOX_EXPECTED__){return 'stale';}"
+    "var n=d.removeAttributeAtRange('misspelled',[0,d.toString().length]);"
+    "var r=__ZBOX_RANGES__;"
+    "window.zbox_miss={doc:d.toString(),ranges:r};"
+    "for(var i=0;i<r.length;i++){n=n.addAttributeAtRange('misspelled',true,r[i]);}"
+    "if(n.isEqualTo(d)){return 'unchanged';}"
+    "c.setDocument(n);return 'marked';"
+    "}catch(err){return 'error '+err;}})();"
 )
 
 FOCUS = "(function(){var el=document.getElementById('trix'); if(el){el.focus();}})();"
+
+# Lets the page hand misspelled words to ZBox's suggestions menu.
+SPELL_MENU_ON = "(function(){window.zbox_spell_menu_on=true;return 'on';})();"
 
 # What a formatting change is called out loud. Nothing announces bold
 # to a screen reader on its own: a sighted writer sees the text

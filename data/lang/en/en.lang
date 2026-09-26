@@ -181,6 +181,11 @@ jump_unified_inbox = Unified inbox.
 remote_none = No remote content in this message.
 sender_none = No sender on this message.
 sender_name_no_address = %s, no address
+signature_not_switched = Signature not changed. Press Ctrl+Shift+S to insert this account's signature.
+signature_removed_no_signature = Signature removed. This account has none.
+signature_switched = Signature changed to this account's.
+spell_not_replaced = The word could not be replaced.
+spell_replaced_with = Replaced with {word}.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Phishing list: updating in the background. Reope
 priv_status_updating = Updating in the background. Reopen this dialog to see the result.
 rel_note_intro = Messages related to "{subject}" by their Message-ID/References headers, across every folder in this account.
 srch_note_intro = Search From, Subject and Body for text you enter below. Searches every account and folder unless you narrow it below.
-sig_note_plain = Leave the plain text alternative blank and it is written from the formatted signature when you press OK.
+sig_note_plain = Leave the plain text alternative blank and it is written from the formatted signature when you press Save.
 unified_note_intro = Choose which folders to combine across every account. Each one checked becomes a single entry in the tree that combines that folder from all your accounts.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = &Yes
 wiz_btn_back = < &Back
 wiz_btn_finish = &Finish
 wiz_btn_next = &Next >
+acct_unsaved_q = Save the changes to this account?
+btn_save = &Save
+spell_add_to_dictionary = &Add to dictionary
+spell_no_suggestions = No suggestions
+title_signature_for = Signature: {account}
 
 [errors]
 language_restart_failed = ZBox could not restart itself:\n\n{error}

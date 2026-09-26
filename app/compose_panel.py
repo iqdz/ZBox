@@ -274,6 +274,7 @@ class ComposePanel(wx.Panel):
 
         for field in (self.to_field, self.cc_field, self.bcc_field):
             field.AutoComplete(_ContactCompleter(lambda: self.main_frame.contacts))
+        self.from_choice.Bind(wx.EVT_CHOICE, self._on_from_changed)
 
         subject_label = wx.StaticText(
             self, label=lang.t("dialogs", "comp_subject", default="Subject")
@@ -304,18 +305,23 @@ class ComposePanel(wx.Panel):
         #
         # Signature (audit finding 41) is taken from whichever account
         # is initially selected in From above, put in once here.
-        # Switching From later in this same tab does not swap it --
-        # the same scope limit already accepted for drafts (see
-        # _save_draft's docstring) for the same reason: reliably
-        # finding and replacing just the signature portion of a body
-        # the reader may have since edited around is not worth the
-        # risk this feature's spec asks for.
+        # Switching From later rebuilds the body with the new account's
+        # signature, but only while the body is untouched: finding and
+        # replacing just the signature inside a body the writer has
+        # edited around is not worth the risk. Once they have typed,
+        # changing From says so and points at Insert Signature. See
+        # _on_from_changed.
         signature_account = self._selected_account()
+        self._opening_body = body
+        self._signature_account_id = (
+            signature_account.account_id if signature_account else None
+        )
         self.body = compose_body.make_body(
             self,
             on_command=self._run_chord,
             on_announce=self._say,
             on_link=self._open_link,
+            on_spell_menu=self._on_spell_menu,
             initial_html=_initial_body_html(
                 body,
                 signature_account.signature if signature_account else "",
@@ -792,6 +798,52 @@ class ComposePanel(wx.Panel):
         if spoken:
             self._say(spoken)
 
+    def _on_from_changed(self, event):
+        """From now names another account: its signature should be the
+        one in the message. Rebuilt while the body is untouched; said
+        out loud either way, because a signature changing, or not
+        changing, is invisible to a screen reader user until the
+        message has gone."""
+        event.Skip()
+        account = self._selected_account()
+        if account is None or account.account_id == self._signature_account_id:
+            return
+        previous = None
+        for candidate in self.main_frame.account_manager.accounts:
+            if candidate.account_id == self._signature_account_id:
+                previous = candidate
+                break
+        old = (
+            (previous.signature, previous.signature_html) if previous else ("", "")
+        )
+        new = (account.signature, account.signature_html)
+        if old == new:
+            self._signature_account_id = account.account_id
+            return
+        if self.body.is_pristine():
+            self.body.set_html(
+                _initial_body_html(
+                    self._opening_body, account.signature, account.signature_html,
+                )
+            )
+            self._signature_account_id = account.account_id
+            if account.signature or account.signature_html:
+                self._say(lang.t(
+                    "actions_announcements", "signature_switched",
+                    default="Signature changed to this account's.",
+                ))
+            else:
+                self._say(lang.t(
+                    "actions_announcements", "signature_removed_no_signature",
+                    default="Signature removed. This account has none.",
+                ))
+            return
+        self._say(lang.t(
+            "actions_announcements", "signature_not_switched",
+            default="Signature not changed. Press Ctrl+Shift+S to insert "
+                    "this account's signature.",
+        ))
+
     def cmd_insert_signature(self):
         account = self._selected_account()
         signature = account.signature if account else ""
@@ -961,6 +1013,7 @@ class ComposePanel(wx.Panel):
             spellcheck.personal_path_for(self.main_frame.paths.userdata)
         )
         if dictionary.add_personal(self._spell_word):
+            self.body.refresh_marks()
             self._say(lang.t(
                 "actions_announcements", "word_added",
                 default="{word} added to the dictionary.",
@@ -973,6 +1026,90 @@ class ComposePanel(wx.Panel):
                 word=self._spell_word,
             ))
         self._spell_word = ""
+
+    def _on_spell_menu(self, start, end):
+        """The Applications key, Shift+F10 or a right click on a
+        marked word. Reads the document afresh first, so the range is
+        checked against what is really there."""
+        self.body.request_document(lambda: self._show_spell_menu(start, end))
+
+    def _show_spell_menu(self, start, end):
+        """ZBox's own suggestions for one misspelled word, in a native
+        menu: up to seven suggestions, then Add to dictionary. Chromium's
+        menu used to supply these; its spell check is off in the editor
+        now, so it has none to give."""
+        text = self.body.document_text
+        word = text[start:end] if 0 <= start < end <= len(text) else ""
+        if not word.strip():
+            return
+        dictionary = spellcheck.get_dictionary(
+            spellcheck.personal_path_for(self.main_frame.paths.userdata)
+        )
+        if not dictionary.loaded or dictionary.is_known(word):
+            self.body.refresh_marks()
+            return
+        menu = wx.Menu()
+        suggestions = dictionary.suggest(word)
+        for suggestion in suggestions:
+            item = menu.Append(wx.ID_ANY, suggestion)
+            self.Bind(
+                wx.EVT_MENU,
+                lambda _e, s=suggestion: self._replace_misspelling(start, end, s),
+                item,
+            )
+        if not suggestions:
+            empty = menu.Append(
+                wx.ID_ANY,
+                lang.t("dialogs", "spell_no_suggestions", default="No suggestions"),
+            )
+            empty.Enable(False)
+        menu.AppendSeparator()
+        add_item = menu.Append(
+            wx.ID_ANY,
+            lang.t(
+                "dialogs", "spell_add_to_dictionary",
+                default="&Add to dictionary",
+            ),
+        )
+        self.Bind(
+            wx.EVT_MENU, lambda _e: self._add_misspelling(word), add_item,
+        )
+        try:
+            position = self.body.control.GetPosition()
+        except (AttributeError, RuntimeError):
+            position = wx.DefaultPosition
+        self.PopupMenu(menu, position)
+        menu.Destroy()
+        self.body.focus()
+
+    def _replace_misspelling(self, start, end, replacement):
+        applied = self.body.replace_ranges([(start, end, replacement)])
+        if applied:
+            self._say(lang.t(
+                "actions_announcements", "spell_replaced_with",
+                default="Replaced with {word}.", word=replacement,
+            ))
+        else:
+            self._say(lang.t(
+                "actions_announcements", "spell_not_replaced",
+                default="The word could not be replaced.",
+            ))
+
+    def _add_misspelling(self, word):
+        dictionary = spellcheck.get_dictionary(
+            spellcheck.personal_path_for(self.main_frame.paths.userdata)
+        )
+        if dictionary.add_personal(word):
+            self.body.refresh_marks()
+            self._say(lang.t(
+                "actions_announcements", "word_added",
+                default="{word} added to the dictionary.", word=word,
+            ))
+        else:
+            self._say(lang.t(
+                "actions_announcements", "word_not_added",
+                default="{word} could not be added.", word=word,
+            ))
 
     def _maybe_auto_diagnose(self):
         """Dump the composer diagnostics to a file, unattended.

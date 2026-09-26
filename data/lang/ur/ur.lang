@@ -182,6 +182,11 @@ message_still_opening = پیغام کھل رہا ہے۔ سرور سست ہے۔
 remote_none = اس پیغام میں کوئی ریموٹ مواد نہیں۔
 sender_none = اس پیغام کا کوئی بھیجنے والا نہیں۔
 sender_name_no_address = %s، کوئی پتہ نہیں
+signature_not_switched = دستخط تبدیل نہیں ہوا۔ اس اکاؤنٹ کا دستخط داخل کرنے کے لیے Ctrl+Shift+S دبائیں۔
+signature_removed_no_signature = دستخط ہٹا دیا گیا۔ اس اکاؤنٹ کا کوئی دستخط نہیں ہے۔
+signature_switched = دستخط اس اکاؤنٹ کے دستخط میں بدل دیا گیا۔
+spell_not_replaced = لفظ تبدیل نہیں کیا جا سکا۔
+spell_replaced_with = {word} سے تبدیل کر دیا گیا۔
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = فشنگ کی فہرست: پس منظر میں �
 priv_status_updating = پس منظر میں اپ ڈیٹ ہو رہی ہے۔ نتیجہ دیکھنے کے لیے یہ ڈائیلاگ دوبارہ کھولیں۔
 rel_note_intro = اس اکاؤنٹ کے ہر فولڈر میں، Message-ID/References ہیڈرز کے ذریعے "{subject}" سے متعلقہ پیغامات۔
 srch_note_intro = نیچے درج کیے گئے متن کو بھیجنے والا، موضوع اور متن میں تلاش کریں۔ جب تک آپ نیچے محدود نہ کریں، ہر اکاؤنٹ اور فولڈر میں تلاش ہوتی ہے۔
-sig_note_plain = سادہ متن متبادل خالی چھوڑ دیں تو OK دبانے پر یہ فارمیٹ شدہ دستخط سے لکھ دیا جاتا ہے۔
+sig_note_plain = سادہ متن کا متبادل خالی چھوڑ دیں، محفوظ کریں دبانے پر یہ فارمیٹ شدہ دستخط سے لکھ دیا جائے گا۔
 unified_note_intro = منتخب کریں کہ تمام اکاؤنٹس میں کون سے فولڈرز یکجا کیے جائیں۔ ہر نشان زد فولڈر درخت میں ایک ایسا واحد اندراج بن جاتا ہے جو آپ کے تمام اکاؤنٹس سے وہ فولڈر یکجا کرتا ہے۔
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = ہاں
 wiz_btn_back = پچھلا
 wiz_btn_finish = ختم
 wiz_btn_next = اگلا
+acct_unsaved_q = کیا اس اکاؤنٹ کی تبدیلیاں محفوظ کی جائیں؟
+btn_save = محفوظ کریں
+spell_add_to_dictionary = لغت میں شامل کریں
+spell_no_suggestions = کوئی تجویز نہیں
+title_signature_for = دستخط: {account}
 
 [errors]
 language_restart_failed = ZBox خود کو دوبارہ شروع نہیں کر سکا:\n\n{error}

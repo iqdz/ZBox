@@ -181,6 +181,11 @@ message_still_opening = Nachricht wird geöffnet. Der Server ist langsam.
 remote_none = Kein externer Inhalt in dieser Nachricht.
 sender_none = Diese Nachricht hat keinen Absender.
 sender_name_no_address = %s, keine Adresse
+signature_not_switched = Signatur nicht geändert. Drücken Sie Ctrl+Shift+S, um die Signatur dieses Kontos einzufügen.
+signature_removed_no_signature = Signatur entfernt. Dieses Konto hat keine.
+signature_switched = Signatur auf die dieses Kontos geändert.
+spell_not_replaced = Das Wort konnte nicht ersetzt werden.
+spell_replaced_with = Ersetzt durch {word}.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Phishing-Liste: wird im Hintergrund aktualisiert
 priv_status_updating = Wird im Hintergrund aktualisiert. Öffnen Sie diesen Dialog erneut, um das Ergebnis zu sehen.
 rel_note_intro = Nachrichten, die mit „{subject}“ anhand ihrer Message-ID/References-Kopfzeilen verwandt sind, über alle Ordner dieses Kontos hinweg.
 srch_note_intro = Durchsuchen Sie Von, Betreff und Text nach dem Text, den Sie unten eingeben. Es wird in allen Konten und Ordnern gesucht, sofern Sie es unten nicht einschränken.
-sig_note_plain = Lassen Sie die Klartext-Alternative leer, und sie wird beim Drücken von OK aus der formatierten Signatur geschrieben.
+sig_note_plain = Lassen Sie die Nur-Text-Alternative leer, dann wird sie beim Drücken von Speichern aus der formatierten Signatur erstellt.
 unified_note_intro = Wählen Sie, welche Ordner über alle Konten hinweg kombiniert werden. Jeder markierte wird zu einem einzigen Eintrag im Baum, der diesen Ordner aus all Ihren Konten kombiniert.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = Ja
 wiz_btn_back = < Zurück
 wiz_btn_finish = Fertig stellen
 wiz_btn_next = Weiter >
+acct_unsaved_q = Änderungen an diesem Konto speichern?
+btn_save = Speichern
+spell_add_to_dictionary = Zum Wörterbuch hinzufügen
+spell_no_suggestions = Keine Vorschläge
+title_signature_for = Signatur: {account}
 
 [errors]
 language_restart_failed = ZBox konnte sich nicht neu starten:\n\n{error}

@@ -182,6 +182,11 @@ jump_unified_inbox = एकीकृत इनबॉक्स।
 remote_none = इस संदेश में कोई रिमोट सामग्री नहीं।
 sender_none = इस संदेश का कोई प्रेषक नहीं।
 sender_name_no_address = %s, कोई पता नहीं
+signature_not_switched = हस्ताक्षर नहीं बदला। इस खाते का हस्ताक्षर डालने के लिए Ctrl+Shift+S दबाएँ।
+signature_removed_no_signature = हस्ताक्षर हटाया गया। इस खाते का कोई हस्ताक्षर नहीं है।
+signature_switched = हस्ताक्षर इस खाते के हस्ताक्षर में बदल दिया गया।
+spell_not_replaced = शब्द बदला नहीं जा सका।
+spell_replaced_with = {word} से बदला गया।
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = फ़िशिंग सूची: पृष्
 priv_status_updating = पृष्ठभूमि में अपडेट हो रहा है। परिणाम देखने के लिए यह संवाद फिर से खोलें।
 rel_note_intro = "{subject}" से उनके Message-ID/References हेडरों द्वारा संबंधित संदेश, इस खाते के हर फ़ोल्डर में।
 srch_note_intro = नीचे दर्ज पाठ के लिए प्रेषक, विषय और मुख्य भाग खोजें। जब तक आप नीचे सीमित न करें, हर खाता और फ़ोल्डर खोजा जाता है।
-sig_note_plain = सादा पाठ विकल्प खाली छोड़ें और ठीक दबाने पर वह फ़ॉर्मेट किए हुए हस्ताक्षर से लिखा जाएगा।
+sig_note_plain = सादा टेक्स्ट विकल्प खाली छोड़ दें, सहेजें दबाने पर यह फ़ॉर्मेट किए गए हस्ताक्षर से लिखा जाएगा।
 unified_note_intro = चुनें कि हर खाते में से कौन से फ़ोल्डर मिलाने हैं। हर चेक किया गया फ़ोल्डर ट्री में एक प्रविष्टि बनता है जो आपके सभी खातों से उस फ़ोल्डर को मिलाती है।
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = &हाँ
 wiz_btn_back = < पीछे
 wiz_btn_finish = समाप्त
 wiz_btn_next = आगे >
+acct_unsaved_q = इस खाते में किए गए बदलाव सहेजें?
+btn_save = सहेजें
+spell_add_to_dictionary = शब्दकोश में जोड़ें
+spell_no_suggestions = कोई सुझाव नहीं
+title_signature_for = हस्ताक्षर: {account}
 
 [errors]
 language_restart_failed = ZBox अपने आप फिर से शुरू नहीं हो सका:\n\n{error}

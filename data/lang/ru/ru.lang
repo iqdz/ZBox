@@ -185,6 +185,11 @@ message_still_opening = Открытие сообщения. Сервер отв
 remote_none = В этом сообщении нет внешнего содержимого.
 sender_none = У этого сообщения нет отправителя.
 sender_name_no_address = %s, без адреса
+signature_not_switched = Подпись не изменена. Нажмите Ctrl+Shift+S, чтобы вставить подпись этой учётной записи.
+signature_removed_no_signature = Подпись удалена. У этой учётной записи её нет.
+signature_switched = Подпись заменена на подпись этой учётной записи.
+spell_not_replaced = Не удалось заменить слово.
+spell_replaced_with = Заменено на {word}.
 
 [main_ui]
 
@@ -1105,7 +1110,7 @@ priv_status_phishing_updating = Список фишинга: обновляет�
 priv_status_updating = Обновляется в фоновом режиме. Откройте этот диалог снова, чтобы увидеть результат.
 rel_note_intro = Сообщения, связанные с «{subject}» по заголовкам Message-ID/References, во всех папках этой учётной записи.
 srch_note_intro = Поиск введённого ниже текста в полях «От», «Тема» и в тексте сообщения. Поиск идёт по всем учётным записям и папкам, если не сузить его ниже.
-sig_note_plain = Если оставить текстовый вариант пустым, он будет создан из подписи с форматированием при нажатии OK.
+sig_note_plain = Оставьте простой текстовый вариант пустым, и он будет создан из форматированной подписи при нажатии «Сохранить».
 unified_note_intro = Выберите, какие папки объединять во всех учётных записях. Каждая отмеченная папка становится одним пунктом в дереве, объединяющим эту папку из всех ваших учётных записей.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1360,6 +1365,11 @@ stock_yes = Да
 wiz_btn_back = < Назад
 wiz_btn_finish = Готово
 wiz_btn_next = Далее >
+acct_unsaved_q = Сохранить изменения этой учётной записи?
+btn_save = Сохранить
+spell_add_to_dictionary = Добавить в словарь
+spell_no_suggestions = Нет вариантов
+title_signature_for = Подпись: {account}
 
 [errors]
 language_restart_failed = ZBox не удалось перезапуститься:\n\n{error}

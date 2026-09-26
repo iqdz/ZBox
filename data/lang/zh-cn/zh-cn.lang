@@ -162,6 +162,11 @@ message_still_opening = 正在打开邮件。服务器响应较慢。
 remote_none = 此邮件没有远程内容。
 sender_none = 此邮件没有发件人。
 sender_name_no_address = %s，无地址
+signature_not_switched = 签名未更改。按 Ctrl+Shift+S 插入此账户的签名。
+signature_removed_no_signature = 签名已移除。此账户没有签名。
+signature_switched = 签名已更改为此账户的签名。
+spell_not_replaced = 无法替换该单词。
+spell_replaced_with = 已替换为 {word}。
 
 [main_ui]
 
@@ -1015,7 +1020,7 @@ priv_status_phishing_updating = 钓鱼网址列表：正在后台更新。重新
 priv_status_updating = 正在后台更新。重新打开此对话框可查看结果。
 rel_note_intro = 根据 Message-ID/References 邮件头，与“{subject}”相关的邮件，涵盖此账户的所有文件夹。
 srch_note_intro = 在发件人、主题和正文中搜索你在下面输入的文本。除非在下面缩小范围，否则会搜索所有账户和文件夹。
-sig_note_plain = 纯文本替代版本留空时，单击“确定”后会根据格式化签名自动生成。
+sig_note_plain = 将纯文本备选内容留空，按“保存”时会根据带格式的签名自动生成。
 unified_note_intro = 选择要跨所有账户合并的文件夹。每个勾选的文件夹都会在树中成为一个条目，合并所有账户中的该文件夹。
 
 title_about = 关于 ZBox
@@ -1266,6 +1271,11 @@ stock_yes = 是
 wiz_btn_back = < 上一步
 wiz_btn_finish = 完成
 wiz_btn_next = 下一步 >
+acct_unsaved_q = 保存对此账户的更改吗？
+btn_save = 保存
+spell_add_to_dictionary = 添加到词典
+spell_no_suggestions = 无建议
+title_signature_for = 签名：{account}
 
 [errors]
 language_restart_failed = ZBox 无法自行重新启动：\n\n{error}

@@ -181,6 +181,11 @@ message_still_opening = İleti açılıyor. Sunucu yavaş.
 remote_none = Bu iletide uzak içerik yok.
 sender_none = Bu iletinin göndereni yok.
 sender_name_no_address = %s, adres yok
+signature_not_switched = İmza değiştirilmedi. Bu hesabın imzasını eklemek için Ctrl+Shift+S tuşlarına basın.
+signature_removed_no_signature = İmza kaldırıldı. Bu hesabın imzası yok.
+signature_switched = İmza bu hesabın imzasıyla değiştirildi.
+spell_not_replaced = Sözcük değiştirilemedi.
+spell_replaced_with = {word} ile değiştirildi.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Kimlik avı listesi: arka planda güncelleniyor.
 priv_status_updating = Arka planda güncelleniyor. Sonucu görmek için bu iletişim kutusunu yeniden açın.
 rel_note_intro = Message-ID/References üstbilgilerine göre "{subject}" ile ilgili iletiler, bu hesabın tüm klasörlerinde.
 srch_note_intro = Aşağıya girdiğiniz metni Kimden, Konu ve Gövde'de arayın. Aşağıda daraltmadıkça tüm hesaplarda ve klasörlerde arar.
-sig_note_plain = Düz metin alternatifini boş bırakırsanız Tamam'a bastığınızda biçimlendirilmiş imzadan yazılır.
+sig_note_plain = Düz metin alternatifini boş bırakırsanız, Kaydet'e bastığınızda biçimli imzadan oluşturulur.
 unified_note_intro = Tüm hesaplar genelinde hangi klasörlerin birleştirileceğini seçin. İşaretlenen her biri, o klasörü tüm hesaplarınızdan birleştiren tek bir ağaç öğesine dönüşür.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = Evet
 wiz_btn_back = < Geri
 wiz_btn_finish = Son
 wiz_btn_next = İleri >
+acct_unsaved_q = Bu hesaptaki değişiklikler kaydedilsin mi?
+btn_save = Kaydet
+spell_add_to_dictionary = Sözlüğe ekle
+spell_no_suggestions = Öneri yok
+title_signature_for = İmza: {account}
 
 [errors]
 language_restart_failed = ZBox kendini yeniden başlatamadı:\n\n{error}

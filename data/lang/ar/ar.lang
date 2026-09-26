@@ -182,6 +182,11 @@ message_still_opening = جارٍ فتح الرسالة. الخادم بطيء.
 remote_none = لا يوجد محتوى بعيد في هذه الرسالة.
 sender_none = لا يوجد مرسل لهذه الرسالة.
 sender_name_no_address = %s، بلا عنوان
+signature_not_switched = لم يتغير التوقيع. اضغط Ctrl+Shift+S لإدراج توقيع هذا الحساب.
+signature_removed_no_signature = تمت إزالة التوقيع. لا يوجد توقيع لهذا الحساب.
+signature_switched = تم تغيير التوقيع إلى توقيع هذا الحساب.
+spell_not_replaced = تعذر استبدال الكلمة.
+spell_replaced_with = تم الاستبدال بـ {word}.
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = قائمة التصيّد: جارٍ التحدي
 priv_status_updating = جارٍ التحديث في الخلفية. أعد فتح هذا الحوار لرؤية النتيجة.
 rel_note_intro = الرسائل ذات الصلة بـ"{subject}" حسب ترويسات معرّف الرسالة/المراجع، عبر كل مجلد في هذا الحساب.
 srch_note_intro = البحث في من والموضوع والنص عن النص الذي تُدخله أدناه. يبحث في كل حساب ومجلد ما لم تضيّقه أدناه.
-sig_note_plain = اترك البديل النصي العادي فارغاً وسيُكتب من التوقيع المنسّق عند الضغط على موافق.
+sig_note_plain = اترك البديل النصي العادي فارغًا ليُكتب من التوقيع المنسق عند الضغط على حفظ.
 unified_note_intro = اختر المجلدات التي تريد دمجها عبر كل حساب. يصبح كل واحد محدد إدخالاً واحداً في الشجرة يدمج ذلك المجلد من جميع حساباتك.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = نعم
 wiz_btn_back = السابق
 wiz_btn_finish = إنهاء
 wiz_btn_next = التالي
+acct_unsaved_q = هل تريد حفظ التغييرات على هذا الحساب؟
+btn_save = حفظ
+spell_add_to_dictionary = إضافة إلى القاموس
+spell_no_suggestions = لا توجد اقتراحات
+title_signature_for = التوقيع: {account}
 
 [errors]
 language_restart_failed = تعذّر على ZBox إعادة تشغيل نفسه:\n\n{error}

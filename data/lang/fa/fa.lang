@@ -182,6 +182,11 @@ message_still_opening = در حال باز کردن پیام. سرور کند ا
 remote_none = این پیام محتوای راه دور ندارد.
 sender_none = این پیام فرستنده ندارد.
 sender_name_no_address = %s، بدون نشانی
+signature_not_switched = امضا تغییر نکرد. برای درج امضای این حساب، Ctrl+Shift+S را فشار دهید.
+signature_removed_no_signature = امضا حذف شد. این حساب امضایی ندارد.
+signature_switched = امضا به امضای این حساب تغییر کرد.
+spell_not_replaced = جایگزینی واژه ممکن نشد.
+spell_replaced_with = با {word} جایگزین شد.
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = فهرست فیشینگ: در حال به‌رو
 priv_status_updating = در حال به‌روزرسانی در پس‌زمینه. برای دیدن نتیجه این پنجره را دوباره باز کنید.
 rel_note_intro = پیام‌های مرتبط با «{subject}» بر اساس سرایندهای Message-ID/References آن‌ها، در سراسر هر پوشه در این حساب.
 srch_note_intro = فرستنده، موضوع و بدنه را برای متنی که در زیر وارد می‌کنید جستجو کنید. مگر اینکه در زیر محدودش کنید، هر حساب و پوشه جستجو می‌شود.
-sig_note_plain = جایگزین متن ساده را خالی بگذارید و با فشردن تأیید از امضای قالب‌بندی‌شده نوشته خواهد شد.
+sig_note_plain = جایگزین متن ساده را خالی بگذارید تا هنگام فشردن ذخیره از امضای قالب‌بندی‌شده نوشته شود.
 unified_note_intro = انتخاب کنید کدام پوشه‌ها در سراسر هر حساب ترکیب شوند. هر کدام علامت‌خورده یک مدخل تکی در درخت می‌شود که آن پوشه را از همهٔ حساب‌های شما ترکیب می‌کند.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = بله
 wiz_btn_back = قبلی
 wiz_btn_finish = پایان
 wiz_btn_next = بعدی
+acct_unsaved_q = تغییرات این حساب ذخیره شود؟
+btn_save = ذخیره
+spell_add_to_dictionary = افزودن به واژه‌نامه
+spell_no_suggestions = پیشنهادی وجود ندارد
+title_signature_for = امضا: {account}
 
 [errors]
 language_restart_failed = ZBox نتوانست خود را دوباره راه‌اندازی کند:\n\n{error}

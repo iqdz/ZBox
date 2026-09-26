@@ -276,6 +276,12 @@ class AccountSettingsDialog(wx.Dialog):
         # than typed here. Held on the dialog until OK, the same
         # discard-on-Cancel guarantee every other field has.
         self.signature_html = account.signature_html
+        # The plain text the formatted version above was last in step
+        # with. When the box is edited by hand past this, the formatted
+        # version is stale and is dropped on Save, so the composer uses
+        # what was typed; see apply_to_account. Read back from the box
+        # itself, so line endings compare like with like.
+        self._plain_synced = self.signature_field.GetValue()
         self.edit_signature_button = wx.Button(
             self,
             label=lang.control_label("acct_edit_signature", "Edit Si&gnature..."),
@@ -578,9 +584,18 @@ class AccountSettingsDialog(wx.Dialog):
 
         button_sizer = self.CreateButtonSizer(wx.OK | wx.CANCEL)
         sizer.Add(button_sizer, 0, wx.ALIGN_RIGHT | wx.ALL, 10)
+        # Save, not OK: this button is what stores every change made
+        # here, the signature included, and should say so.
+        save_button = self.FindWindowById(wx.ID_OK, self)
+        if save_button is not None:
+            save_button.SetLabel(lang.control_label("btn_save", "&Save"))
+        # Cancel, Escape and closing the window all arrive here as the
+        # Cancel button, so one handler guards all three.
+        self.Bind(wx.EVT_BUTTON, self._on_cancel, id=wx.ID_CANCEL)
 
         fit_dialog(self, sizer)
         self._refresh_identities_list()
+        self._opened_state = self._state()
 
     def _refresh_identities_list(self):
         previous = self.identities_list.GetSelection()
@@ -598,12 +613,73 @@ class AccountSettingsDialog(wx.Dialog):
         self.edit_identity_button.Enable(has_selection)
         self.remove_identity_button.Enable(has_selection)
 
+    def _state(self):
+        """Everything this dialog can change, for telling whether
+        anything has been. The password counts: typing one is a
+        change even though the field starts empty."""
+        return (
+            self.name_field.GetValue(),
+            self.login_field.GetValue(),
+            self.password_field.GetValue(),
+            self.identity_field.GetValue(),
+            tuple(
+                (entry["display_name"], entry["email"])
+                for entry in self.identities
+            ),
+            self.signature_field.GetValue(),
+            self.signature_html,
+            self.junk_folder_field.GetValue(),
+            self.disable_account_checkbox.GetValue(),
+            self.auto_check_checkbox.GetValue(),
+            self.default_account_checkbox.GetValue(),
+            self.mute_account_checkbox.GetValue(),
+            self.imap_host_field.GetValue(),
+            self.imap_port_field.GetValue(),
+            self.imap_encryption_choice.GetStringSelection(),
+            self.smtp_host_field.GetValue(),
+            self.smtp_port_field.GetValue(),
+            self.smtp_encryption_choice.GetStringSelection(),
+        )
+
+    def _on_cancel(self, event):
+        """Leaving with unsaved changes asks first. The signature
+        editor's own Save only hands the signature back to this dialog,
+        so without this question an edited signature could be thrown
+        away by one Escape with nothing said."""
+        if self._state() == self._opened_state:
+            event.Skip()
+            return
+        dialog = wx.MessageDialog(
+            self,
+            lang.t(
+                "dialogs", "acct_unsaved_q",
+                default="Save the changes to this account?",
+            ),
+            self.GetTitle(),
+            wx.YES_NO | wx.CANCEL | wx.ICON_WARNING,
+        )
+        dialog.SetYesNoCancelLabels(
+            lang.control_label("btn_save", "&Save"),
+            lang.control_label("comp_btn_discard", "&Discard"),
+            lang.control_label("comp_btn_keep_editing", "&Keep editing"),
+        )
+        try:
+            choice = dialog.ShowModal()
+        finally:
+            dialog.Destroy()
+        if choice == wx.ID_YES:
+            self.EndModal(wx.ID_OK)
+        elif choice == wx.ID_NO:
+            self.EndModal(wx.ID_CANCEL)
+        # Keep editing: the dialog stays open.
+
     def _on_edit_signature(self, event):
         """Opens the formatted signature editor. What comes back is
         held on this dialog, not written to the account: Cancel here
-        still discards it, like every other field."""
+        still discards it, like every other field, after asking."""
         dialog = SignatureEditDialog(
-            self, self.signature_html, self.signature_field.GetValue()
+            self, self.signature_html, self.signature_field.GetValue(),
+            account_label=self.account.identity_email,
         )
         try:
             if dialog.ShowModal() == wx.ID_OK:
@@ -611,6 +687,7 @@ class AccountSettingsDialog(wx.Dialog):
                 # The plain box always shows the text alternative, so
                 # the two can never drift apart without being seen.
                 self.signature_field.SetValue(dialog.signature_text)
+                self._plain_synced = self.signature_field.GetValue()
         finally:
             dialog.Destroy()
 
@@ -690,7 +767,15 @@ class AccountSettingsDialog(wx.Dialog):
         self.account.smtp_host = self.smtp_host_field.GetValue().strip()
         self.account.smtp_port = self.smtp_port_field.GetValue()
         self.account.smtp_encryption = self.smtp_encryption_choice.GetStringSelection()
-        self.account.signature = self.signature_field.GetValue()
+        plain = self.signature_field.GetValue()
+        if plain != self._plain_synced:
+            # Typed into by hand since the formatted version was last
+            # in step with it: that version is stale, and the composer
+            # would prefer it over what was typed. Dropped, so the
+            # plain text is what goes out. An emptied box means no
+            # signature at all.
+            self.signature_html = ""
+        self.account.signature = plain
         self.account.signature_html = self.signature_html
         junk_value = self.junk_folder_field.GetValue().strip()
         self.account.junk_folder = "" if junk_value in ("", AUTOMATIC_JUNK_LABEL) else junk_value

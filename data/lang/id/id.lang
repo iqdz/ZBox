@@ -182,6 +182,11 @@ jump_unified_inbox = Kotak Masuk terpadu.
 remote_none = Tidak ada konten jarak jauh dalam pesan ini.
 sender_none = Pesan ini tidak memiliki pengirim.
 sender_name_no_address = %s, tanpa alamat
+signature_not_switched = Tanda tangan tidak diubah. Tekan Ctrl+Shift+S untuk menyisipkan tanda tangan akun ini.
+signature_removed_no_signature = Tanda tangan dihapus. Akun ini tidak memilikinya.
+signature_switched = Tanda tangan diganti dengan milik akun ini.
+spell_not_replaced = Kata tidak dapat diganti.
+spell_replaced_with = Diganti dengan {word}.
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = Daftar phishing: sedang diperbarui di latar bela
 priv_status_updating = Sedang diperbarui di latar belakang. Buka kembali dialog ini untuk melihat hasilnya.
 rel_note_intro = Pesan yang terkait dengan "{subject}" melalui header Message-ID/References-nya, di setiap folder akun ini.
 srch_note_intro = Cari Dari, Subjek, dan isi untuk teks yang dimasukkan di bawah. Setiap akun dan folder dicari kecuali Anda mempersempitnya di bawah.
-sig_note_plain = Kosongkan alternatif teks biasa dan alternatif itu akan ditulis dari tanda tangan terformat saat Anda menekan OK.
+sig_note_plain = Biarkan alternatif teks biasa kosong, maka akan dibuat dari tanda tangan berformat saat Anda menekan Simpan.
 unified_note_intro = Pilih folder mana yang digabungkan di setiap akun. Setiap folder yang dicentang menjadi satu entri di pohon yang menggabungkan folder itu dari semua akun Anda.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = &Ya
 wiz_btn_back = < Kembali
 wiz_btn_finish = Selesai
 wiz_btn_next = Berikutnya >
+acct_unsaved_q = Simpan perubahan pada akun ini?
+btn_save = Simpan
+spell_add_to_dictionary = Tambahkan ke kamus
+spell_no_suggestions = Tidak ada saran
+title_signature_for = Tanda tangan: {account}
 
 [errors]
 language_restart_failed = ZBox tidak dapat memulai ulang dirinya:\n\n{error}

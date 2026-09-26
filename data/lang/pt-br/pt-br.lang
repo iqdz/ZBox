@@ -181,6 +181,11 @@ message_still_opening = Abrindo a mensagem. O servidor está lento.
 remote_none = Nenhum conteúdo remoto nesta mensagem.
 sender_none = Esta mensagem não tem remetente.
 sender_name_no_address = %s, sem endereço
+signature_not_switched = Assinatura não alterada. Pressione Ctrl+Shift+S para inserir a assinatura desta conta.
+signature_removed_no_signature = Assinatura removida. Esta conta não tem nenhuma.
+signature_switched = Assinatura alterada para a desta conta.
+spell_not_replaced = Não foi possível substituir a palavra.
+spell_replaced_with = Substituída por {word}.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Lista de phishing: atualizando em segundo plano.
 priv_status_updating = Atualizando em segundo plano. Abra esta caixa de diálogo de novo para ver o resultado.
 rel_note_intro = Mensagens relacionadas a "{subject}" pelos cabeçalhos Message-ID/References, em todas as pastas desta conta.
 srch_note_intro = Pesquise em De, Assunto e Corpo o texto que você digitar abaixo. Pesquisa em todas as contas e pastas, a menos que você restrinja abaixo.
-sig_note_plain = Deixe a alternativa em texto simples em branco e ela será gerada a partir da assinatura formatada quando você pressionar OK.
+sig_note_plain = Deixe a alternativa em texto simples em branco e ela será gerada a partir da assinatura formatada quando você pressionar Salvar.
 unified_note_intro = Escolha quais pastas combinar entre todas as contas. Cada uma marcada vira uma única entrada na árvore que combina essa pasta de todas as suas contas.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = Sim
 wiz_btn_back = < Voltar
 wiz_btn_finish = Concluir
 wiz_btn_next = Avançar >
+acct_unsaved_q = Salvar as alterações nesta conta?
+btn_save = Salvar
+spell_add_to_dictionary = Adicionar ao dicionário
+spell_no_suggestions = Nenhuma sugestão
+title_signature_for = Assinatura: {account}
 
 [errors]
 language_restart_failed = O ZBox não conseguiu se reiniciar:\n\n{error}

@@ -181,6 +181,11 @@ message_still_opening = Abriendo el mensaje. El servidor va lento.
 remote_none = Este mensaje no tiene contenido remoto.
 sender_none = Este mensaje no tiene remitente.
 sender_name_no_address = %s, sin dirección
+signature_not_switched = La firma no ha cambiado. Pulse Ctrl+Shift+S para insertar la firma de esta cuenta.
+signature_removed_no_signature = Firma quitada. Esta cuenta no tiene ninguna.
+signature_switched = La firma se cambió a la de esta cuenta.
+spell_not_replaced = No se pudo reemplazar la palabra.
+spell_replaced_with = Reemplazada por {word}.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Lista de phishing: actualizándose en segundo pl
 priv_status_updating = Actualizándose en segundo plano. Vuelva a abrir este diálogo para ver el resultado.
 rel_note_intro = Mensajes relacionados con "{subject}" por sus encabezados Message-ID/References, en todas las carpetas de esta cuenta.
 srch_note_intro = Busque en De, Asunto y Cuerpo el texto que introduzca abajo. Se busca en todas las cuentas y carpetas a menos que lo restrinja abajo.
-sig_note_plain = Deje la alternativa en texto plano en blanco y se escribirá a partir de la firma formateada al presionar Aceptar.
+sig_note_plain = Deje en blanco la alternativa de texto sin formato y se generará a partir de la firma con formato al pulsar Guardar.
 unified_note_intro = Elija qué carpetas combinar en todas las cuentas. Cada una marcada se convierte en una sola entrada en el árbol que combina esa carpeta de todas sus cuentas.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = Sí
 wiz_btn_back = < Atrás
 wiz_btn_finish = Finalizar
 wiz_btn_next = Siguiente >
+acct_unsaved_q = ¿Guardar los cambios de esta cuenta?
+btn_save = Guardar
+spell_add_to_dictionary = Añadir al diccionario
+spell_no_suggestions = Sin sugerencias
+title_signature_for = Firma: {account}
 
 [errors]
 language_restart_failed = ZBox no pudo reiniciarse:\n\n{error}

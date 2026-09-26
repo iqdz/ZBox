@@ -182,6 +182,11 @@ jump_unified_inbox = Posta in arrivo unificata.
 remote_none = Nessun contenuto remoto in questo messaggio.
 sender_none = Nessun mittente in questo messaggio.
 sender_name_no_address = %s, nessun indirizzo
+signature_not_switched = Firma non modificata. Premere Ctrl+Shift+S per inserire la firma di questo account.
+signature_removed_no_signature = Firma rimossa. Questo account non ne ha.
+signature_switched = Firma sostituita con quella di questo account.
+spell_not_replaced = Impossibile sostituire la parola.
+spell_replaced_with = Sostituita con {word}.
 
 [main_ui]
 
@@ -1102,7 +1107,7 @@ priv_status_phishing_updating = Elenco antiphishing: aggiornamento in background
 priv_status_updating = Aggiornamento in background. Riaprire questa finestra per vedere il risultato.
 rel_note_intro = Messaggi correlati a “{subject}” tramite le intestazioni Message-ID/References, in tutte le cartelle di questo account.
 srch_note_intro = Cerca in Da, Oggetto e Corpo il testo inserito qui sotto. Cerca in tutti gli account e le cartelle, a meno che la ricerca non venga ristretta qui sotto.
-sig_note_plain = Se l’alternativa in testo semplice viene lasciata vuota, viene ricavata dalla firma formattata premendo OK.
+sig_note_plain = Lasciare vuota l'alternativa in testo semplice: verrà creata dalla firma formattata quando si preme Salva.
 unified_note_intro = Scegliere quali cartelle unire tra tutti gli account. Ogni cartella selezionata diventa una sola voce nell’albero che unisce quella cartella di tutti gli account.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1357,6 +1362,11 @@ stock_yes = &Sì
 wiz_btn_back = < Indietro
 wiz_btn_finish = Fine
 wiz_btn_next = Avanti >
+acct_unsaved_q = Salvare le modifiche a questo account?
+btn_save = Salva
+spell_add_to_dictionary = Aggiungi al dizionario
+spell_no_suggestions = Nessun suggerimento
+title_signature_for = Firma: {account}
 
 [errors]
 language_restart_failed = ZBox non è riuscito a riavviarsi:\n\n{error}

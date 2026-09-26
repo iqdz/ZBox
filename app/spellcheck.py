@@ -297,6 +297,10 @@ class Dictionary:
 _DICTIONARY = None
 _WARMING = None
 _LOAD_LOCK = threading.Lock()
+# The personal dictionary's path, remembered from the first caller that
+# knows it. The body's spelling marks do not know it themselves, and a
+# load started without it would mark the writer's own words.
+_PERSONAL_HINT = None
 
 
 def warm(personal_path=None):
@@ -304,7 +308,9 @@ def warm(personal_path=None):
     so the first F7 does not pay for it. Nothing here touches wx, so a
     plain thread is safe, and get_dictionary waits on the same lock if
     the keystroke arrives first."""
-    global _WARMING
+    global _WARMING, _PERSONAL_HINT
+    if personal_path:
+        _PERSONAL_HINT = personal_path
     if _DICTIONARY is not None or _WARMING is not None:
         return
     _WARMING = threading.Thread(
@@ -314,8 +320,23 @@ def warm(personal_path=None):
     _WARMING.start()
 
 
+def loaded_dictionary():
+    """The dictionary if it has finished loading, else None. Never
+    waits: the body's spelling marks run on the UI thread and simply
+    try again at the next pause. Picks up the personal dictionary if
+    the load started before its path was known."""
+    dictionary = _DICTIONARY
+    if dictionary is None or not dictionary.loaded:
+        return None
+    if _PERSONAL_HINT and not dictionary.personal_path:
+        dictionary.personal_path = _PERSONAL_HINT
+        dictionary._load_personal()
+    return dictionary
+
+
 def get_dictionary(personal_path=None):
     global _DICTIONARY
+    personal_path = personal_path or _PERSONAL_HINT
     with _LOAD_LOCK:
         if _DICTIONARY is None:
             dictionary = Dictionary()

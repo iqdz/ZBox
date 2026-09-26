@@ -181,6 +181,11 @@ message_still_opening = Ouverture du message. Le serveur est lent.
 remote_none = Aucun contenu distant dans ce message.
 sender_none = Ce message n'a pas d'expéditeur.
 sender_name_no_address = %s, sans adresse
+signature_not_switched = Signature inchangée. Appuyez sur Ctrl+Shift+S pour insérer la signature de ce compte.
+signature_removed_no_signature = Signature supprimée. Ce compte n'en a aucune.
+signature_switched = Signature remplacée par celle de ce compte.
+spell_not_replaced = Le mot n'a pas pu être remplacé.
+spell_replaced_with = Remplacé par {word}.
 
 [main_ui]
 
@@ -1101,7 +1106,7 @@ priv_status_phishing_updating = Liste d'hameçonnage : mise à jour en arrière-
 priv_status_updating = Mise à jour en arrière-plan. Rouvrez cette boîte de dialogue pour voir le résultat.
 rel_note_intro = Messages associés à « {subject} » par leurs en-têtes Message-ID/References, dans tous les dossiers de ce compte.
 srch_note_intro = Recherche De, Objet et Corps le texte que vous entrez ci-dessous. Recherche dans tous les comptes et dossiers sauf si vous restreignez ci-dessous.
-sig_note_plain = Laissez l'alternative en texte brut vide et elle sera écrite à partir de la signature mise en forme quand vous appuierez sur OK.
+sig_note_plain = Laissez l'alternative en texte brut vide et elle sera créée à partir de la signature mise en forme lorsque vous appuyez sur Enregistrer.
 unified_note_intro = Choisissez quels dossiers combiner entre tous les comptes. Chacun coché devient une seule entrée dans l'arborescence qui combine ce dossier depuis tous vos comptes.
 
 # Window titles, the caption on a spoken announcement, and the prompt
@@ -1356,6 +1361,11 @@ stock_yes = Oui
 wiz_btn_back = < Précédent
 wiz_btn_finish = Terminer
 wiz_btn_next = Suivant >
+acct_unsaved_q = Enregistrer les modifications de ce compte ?
+btn_save = Enregistrer
+spell_add_to_dictionary = Ajouter au dictionnaire
+spell_no_suggestions = Aucune suggestion
+title_signature_for = Signature : {account}
 
 [errors]
 language_restart_failed = ZBox n'a pas pu redémarrer :\n\n{error}

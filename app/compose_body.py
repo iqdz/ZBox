@@ -28,11 +28,20 @@ import wx
 
 import body_html
 import lang
+import spellcheck
 import trix_html
 import trix_page
 from body_webview import BodyWebView
 
 logger = logging.getLogger("zbox.composebody")
+
+# How long after the last change the spelling marks are redone. Long
+# enough not to run between keystrokes, short enough that a finished
+# word is marked before the writer moves on.
+MARK_DELAY_MS = 700
+# How many pauses the marks wait for the dictionary to finish loading
+# before giving up for this body.
+MARK_WAIT_LIMIT = 30
 
 # How long a flush waits for the page before giving up and answering
 # from the mirror. A send that silently never happens is far worse
@@ -95,18 +104,23 @@ def read_vendor_asset(name):
 
 
 def make_body(parent, on_command=None, on_announce=None, on_link=None,
-              initial_html=""):
+              initial_html="", on_spell_menu=None):
     """
     Builds the message body. Trix when a WebView can be created and
     the vendored Trix is actually on disk, the markup engine
     otherwise. Never raises: a composer that will not open is worse
     than one whose body is plainer than intended.
+
+    on_spell_menu(start, end), when given, is called for the
+    Applications key on a marked word, with the word's range in the
+    editor's document string.
     """
     trix_js = read_vendor_asset("trix.umd.min.js")
     if trix_js:
         body = TrixBody(
             parent, on_command=on_command, on_announce=on_announce,
             on_link=on_link, initial_html=initial_html, trix_js=trix_js,
+            on_spell_menu=on_spell_menu,
         )
         if body.using_webview:
             return body
@@ -139,10 +153,21 @@ class MarkupBody:
         if initial_html:
             self.control.SetValue(body_html.html_to_text(initial_html))
             self.control.SetInsertionPoint(0)
+        self._loaded_value = self.get_text()
 
     @property
     def using_webview(self):
         return False
+
+    @property
+    def ready(self):
+        """An edit box can always be read."""
+        return True
+
+    def is_pristine(self):
+        """Whether the body still holds exactly what it was opened or
+        last loaded with."""
+        return self.get_text() == self._loaded_value
 
     def get_text(self):
         try:
@@ -165,6 +190,7 @@ class MarkupBody:
     def set_html(self, html):
         self.control.SetValue(body_html.html_to_text(html))
         self.control.SetInsertionPoint(0)
+        self._loaded_value = self.get_text()
 
     def insert_html(self, html):
         self.control.WriteText(body_html.html_to_text(html))
@@ -254,6 +280,9 @@ class MarkupBody:
     def flush(self, callback):
         callback()
 
+    def refresh_marks(self):
+        """No marks in an edit box."""
+
     def focus(self):
         try:
             self.control.SetFocus()
@@ -281,9 +310,10 @@ class TrixBody:
     rich = True
 
     def __init__(self, parent, on_command=None, on_announce=None, on_link=None,
-                 initial_html="", trix_js=""):
+                 initial_html="", trix_js="", on_spell_menu=None):
         self._on_command = on_command
         self._on_announce = on_announce
+        self._on_spell_menu = on_spell_menu
         self._ready = False
         self._html = ""
         self._text = ""
@@ -294,6 +324,14 @@ class TrixBody:
         self._pending_html = initial_html or ""
         self._want_focus = False
         self._hotkeys = False
+        # What the body held right after the last set_html, before any
+        # typing. None until a set_html has landed.
+        self._loaded_text = None
+        # The document the spelling marks were last computed for, and
+        # the pending timer that redoes them after a pause.
+        self._marked_document = None
+        self._mark_timer = None
+        self._mark_waits = 0
 
         self.web = BodyWebView(
             parent,
@@ -313,6 +351,20 @@ class TrixBody:
     @property
     def using_webview(self):
         return self.web.using_webview
+
+    @property
+    def ready(self):
+        """Whether the page has loaded. Until then the mirror is empty
+        and reading the body means reading nothing."""
+        return self._ready
+
+    def is_pristine(self):
+        """Whether the body still holds exactly what it was opened
+        with: nothing typed, nothing inserted. A body that never had
+        anything loaded into it is pristine while it is empty."""
+        if self._loaded_text is None:
+            return not (self._text or "").strip()
+        return self._text == self._loaded_text
 
     # --- what the composer asks it ------------------------------------
 
@@ -566,6 +618,7 @@ class TrixBody:
     def teardown(self):
         self._flush_waiting = []
         self._flush_timer = None
+        self._mark_timer = None
         self._ready = False
         self.web.teardown()
 
@@ -575,6 +628,8 @@ class TrixBody:
         if self._ready:
             return
         self._ready = True
+        if self._on_spell_menu is not None:
+            self.web.run_script_result(trix_page.SPELL_MENU_ON, "spell_menu_on")
         if self._hotkeys:
             self.set_hotkey_logging(True)
         if self._pending_html:
@@ -593,6 +648,16 @@ class TrixBody:
                 self._on_command(payload.get("name", ""))
         elif kind == "attrs":
             self._attrs_arrived(payload)
+        elif kind == "spell_menu":
+            # Scheduled, never run here: the menu is modal, and this is
+            # the WebView's own message event.
+            if self._on_spell_menu is not None:
+                try:
+                    start = int(payload.get("start"))
+                    end = int(payload.get("end"))
+                except (TypeError, ValueError):
+                    return
+                wx.CallAfter(self._on_spell_menu, start, end)
         elif kind == "file_rejected":
             self._say(lang.t(
                 "actions_announcements", "attach_file_instead",
@@ -613,6 +678,13 @@ class TrixBody:
     def _content_arrived(self, payload):
         self._html = payload.get("html") or ""
         self._text = payload.get("text") or ""
+        document = payload.get("document")
+        if document is not None:
+            self._document = document
+            if document != self._marked_document:
+                self._schedule_marks()
+        if payload.get("reason") == "loaded":
+            self._loaded_text = self._text
         if payload.get("reason") != "flush":
             return
         waiting, self._flush_waiting = self._flush_waiting, []
@@ -624,6 +696,65 @@ class TrixBody:
             self._flush_timer = None
         for callback in waiting:
             callback()
+
+    # --- spelling marks -------------------------------------------------
+
+    def refresh_marks(self):
+        """Redo the marks at the next pause even though the text has
+        not changed, because the dictionary has: a word was added."""
+        self._marked_document = None
+        if self._ready and self.web.using_webview:
+            self._schedule_marks()
+
+    def _schedule_marks(self):
+        """Restarts the pause timer. Called from the page's own message
+        event, so the marking itself always runs later, never inside
+        a WebView2 event handler."""
+        if self._mark_timer is not None:
+            try:
+                self._mark_timer.Stop()
+            except RuntimeError:
+                pass
+        self._mark_timer = self.web.later(MARK_DELAY_MS, self._apply_marks)
+
+    def _apply_marks(self):
+        """Marks every unknown word in the body in one script, from
+        ZBox's own dictionary. Does nothing until the dictionary has
+        loaded; the next pause tries again."""
+        self._mark_timer = None
+        if not self._ready or not self.web.using_webview:
+            return
+        text = self._document
+        if text == self._marked_document:
+            return
+        dictionary = spellcheck.loaded_dictionary()
+        if dictionary is None:
+            # Waits for a load in progress, but not for ever: a machine
+            # with no dictionary gets no marks rather than a timer that
+            # never stops.
+            self._mark_waits += 1
+            if self._mark_waits <= MARK_WAIT_LIMIT:
+                spellcheck.warm()
+                self._mark_timer = self.web.later(MARK_DELAY_MS, self._apply_marks)
+            return
+        ranges = [
+            [start, end] for start, end, _word in
+            spellcheck.misspellings(text, dictionary)
+        ]
+        script = (
+            trix_page.MARK_APPLY
+            .replace(trix_page.MARK_RANGES, json.dumps(ranges))
+            .replace(trix_page.MARK_EXPECTED, json.dumps(text))
+        )
+        ok, result = self.web.run_script_result(script, "spelling_marks")
+        if isinstance(result, str):
+            result = result.strip('"')
+        if ok and result in ("marked", "unchanged"):
+            self._marked_document = text
+        elif ok and result == "stale":
+            pass
+        else:
+            logger.debug("Spelling marks: %r (ok=%r)", result, ok)
 
     def _flush_timed_out(self):
         logger.warning(

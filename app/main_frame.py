@@ -3979,7 +3979,10 @@ class ZBoxMainFrame(MailFetchMixin, wx.Frame):
             self._no_account_message(lang.t('dialogs', 'na_edit_signature', default="Edit Signature"))
             return
 
-        dialog = SignatureEditDialog(self, account.signature_html, account.signature)
+        dialog = SignatureEditDialog(
+            self, account.signature_html, account.signature,
+            account_label=account.identity_email,
+        )
         try:
             if dialog.ShowModal() != wx.ID_OK:
                 return

@@ -28,12 +28,23 @@ class SignatureEditDialog(wx.Dialog):
     Edits one account's signature. After ShowModal() returns
     wx.ID_OK, read signature_html and signature_text off the dialog;
     they are what the account should be given.
+
+    account_label names the account in the title, so it is never a
+    guess whose signature is open.
     """
 
-    def __init__(self, parent, signature_html="", signature_text=""):
+    def __init__(self, parent, signature_html="", signature_text="",
+                 account_label=""):
+        if account_label:
+            title = lang.t(
+                "dialogs", "title_signature_for",
+                default="Signature: {account}", account=account_label,
+            )
+        else:
+            title = lang.t("dialogs", "acct_signature", default="Signature")
         super().__init__(
             parent,
-            title=lang.t("dialogs", "acct_signature", default="Signature"),
+            title=title,
             style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER,
         )
         if lang.is_rtl():
@@ -126,7 +137,7 @@ class SignatureEditDialog(wx.Dialog):
                 "dialogs", "sig_note_plain",
                 default=(
                     "Leave the plain text alternative blank and it is written "
-                    "from the formatted signature when you press OK."
+                    "from the formatted signature when you press Save."
                 ),
             ),
         )
@@ -140,6 +151,11 @@ class SignatureEditDialog(wx.Dialog):
             self.CreateButtonSizer(wx.OK | wx.CANCEL), 0,
             wx.ALIGN_RIGHT | wx.ALL, 10,
         )
+        # Save, not OK: this button stores the signature, and should
+        # say so.
+        save_button = self.FindWindowById(wx.ID_OK, self)
+        if save_button is not None:
+            save_button.SetLabel(lang.control_label("btn_save", "&Save"))
 
         self.notebook.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self._on_page_changed)
         self.Bind(wx.EVT_BUTTON, self._on_ok, id=wx.ID_OK)
@@ -210,8 +226,11 @@ class SignatureEditDialog(wx.Dialog):
     def _finish(self):
         if self._html_edited:
             self.signature_html = self.source_field.GetValue().strip()
-        else:
+        elif self.body.ready:
             self.signature_html = (self.body.get_html() or "").strip()
+        # Otherwise the formatted editor had not loaded yet, so it holds
+        # nothing: reading it would save an empty signature over the
+        # stored one. The stored one is kept.
         text = self.text_field.GetValue().strip()
         if not text:
             text = body_html.html_to_text(self.signature_html).strip()
