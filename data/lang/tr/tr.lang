@@ -1435,5 +1435,6 @@ archive_failed = İleti arşivlenemedi.\n\n{error}
 master_password_not_changed = Ana parola değiştirilemedi: {error}
 shortcut_failed_startup = Masaüstü kısayolu oluşturulamadı:\n\n{error}\n\nZBox başlamaya devam edecek. Daha sonra Ayarlar'dan yeniden deneyebilirsiniz.
 account_locked_action = ZBox şunu yapamıyor: %s. Hesap listesi bu oturumda açılamadı (%s) ve hiçbir şey değiştirilmedi. ZBox'ı kapatıp yeniden başlatın ve istenirse ana parolanızı girin.
+send_tls_mismatch = İleti gönderilemedi. Giden sunucu şifrelemesiz yanıt verdi; yani giden şifreleme bağlantı noktasıyla uyuşmuyor. Araçlar, Hesap Ayarları'nda 587 numaralı bağlantı noktası için STARTTLS, 465 için SSL/TLS kullanın ve yeniden gönderin.\n\n{error}
 
 [help]

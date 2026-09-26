@@ -1436,5 +1436,6 @@ archive_failed = Impossibile archiviare il messaggio.\n\n{error}
 master_password_not_changed = Impossibile cambiare la password principale: {error}
 shortcut_failed_startup = Impossibile creare il collegamento sul desktop:\n\n{error}\n\nZBox continuerà l’avvio. È possibile riprovare in seguito da Impostazioni.
 account_locked_action = ZBox non può %s. Non è stato possibile aprire l’elenco degli account in questa sessione (%s), e non è stato modificato nulla. Chiudere ZBox e riavviarlo, e inserire la password principale se viene richiesta.
+send_tls_mismatch = Impossibile inviare il messaggio. Il server in uscita ha risposto senza crittografia, quindi la crittografia in uscita non corrisponde alla porta. In Strumenti, Impostazioni account, usare STARTTLS per la porta 587 o SSL/TLS per la porta 465, poi inviare di nuovo.\n\n{error}
 
 [help]

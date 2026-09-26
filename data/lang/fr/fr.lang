@@ -1435,5 +1435,6 @@ archive_failed = Impossible d'archiver le message.\n\n{error}
 master_password_not_changed = Le mot de passe principal n'a pas pu être modifié : {error}
 shortcut_failed_startup = Le raccourci sur le bureau n'a pas pu être créé :\n\n{error}\n\nZBox continuera à démarrer. Vous pouvez réessayer plus tard depuis Paramètres.
 account_locked_action = ZBox ne peut pas %s. La liste des comptes n'a pas pu être ouverte dans cette session (%s) et rien n'a été modifié. Fermez ZBox, relancez-le et saisissez votre mot de passe principal s'il vous est demandé.
+send_tls_mismatch = Impossible d'envoyer le message. Le serveur sortant a répondu sans chiffrement : le chiffrement sortant ne correspond donc pas au port. Dans Outils, Paramètres du compte, utilisez STARTTLS pour le port 587 ou SSL/TLS pour le port 465, puis renvoyez le message.\n\n{error}
 
 [help]

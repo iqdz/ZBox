@@ -1435,5 +1435,6 @@ archive_failed = Não foi possível arquivar a mensagem.\n\n{error}
 master_password_not_changed = Não foi possível alterar a senha mestra: {error}
 shortcut_failed_startup = Não foi possível criar o atalho na área de trabalho:\n\n{error}\n\nO ZBox vai continuar iniciando. Você pode tentar de novo mais tarde em Configurações.
 account_locked_action = O ZBox não pode %s. Não foi possível abrir a lista de contas nesta sessão (%s) e nada foi alterado. Feche o ZBox, abra-o novamente e digite sua senha mestra se ela for solicitada.
+send_tls_mismatch = Não foi possível enviar a mensagem. O servidor de saída respondeu sem criptografia, portanto a criptografia de saída não corresponde à porta. Em Ferramentas, Configurações da conta, use STARTTLS para a porta 587 ou SSL/TLS para a porta 465 e envie novamente.\n\n{error}
 
 [help]

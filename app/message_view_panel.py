@@ -1024,7 +1024,24 @@ class MessageViewPanel(wx.Panel):
         message content. Delegating to focus_view() makes landing
         here after a close behave exactly like opening the message
         fresh.
+
+        In HTML view with the page already loaded, it goes one step
+        further and uses the opening path itself: wait the WebView
+        focus delay from Settings, then _focus_loaded_webview. A
+        straight focus_view() here focused the WebView at once, and
+        live on 25 September 2026, after sending a reply, the screen
+        reader stayed outside the document until Tab was pressed --
+        the same thing the delay exists to prevent on open.
         """
+        if (
+            self._view_mode == "html"
+            and self.webview is not None
+            and getattr(self, "_webview_loaded", False)
+            and not self._webview_closing
+        ):
+            logger.debug("focus_default: HTML view, focusing after the focus delay")
+            wx.CallLater(self._webview_focus_delay_ms(), self._focus_loaded_webview)
+            return
         self.focus_view()
 
     def focus_view(self):

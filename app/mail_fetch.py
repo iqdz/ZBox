@@ -199,15 +199,14 @@ class MailFetchMixin:
                         return
                     changed = self.mail_panel.envelope_panel.populate_if_changed(envelopes)
                     if changed:
+                        # No status line: this is a background check,
+                        # and a screen reader that reads status bar
+                        # changes spoke it every 20 seconds. Only what
+                        # the user starts writes the status bar.
                         logging.getLogger("zbox.main").info(
                             "List updated for %s/%s, %.1fs after the check returned.",
                             account.account_id, folder, time.monotonic() - started,
                         )
-                        self.GetStatusBar().SetStatusText(lang.t(
-                            "main_ui", "messages_in_folder",
-                            default=f"{len(envelopes)} message(s) in {folder}.",
-                            count=len(envelopes), folder=folder,
-                        ))
 
                 self._when_list_quiet(repaint)
             elif not envelopes and self.work_offline and not self._has_offline_copy(account, folder):
@@ -1068,13 +1067,9 @@ class MailFetchMixin:
                     and target.get("folder") == folder
                 )
                 if is_current:
+                    # A server push, not something the user started,
+                    # so the list updates without a status line.
                     changed = self.mail_panel.envelope_panel.populate_if_changed(envelopes)
-                    if changed:
-                        self.GetStatusBar().SetStatusText(lang.t(
-                            "main_ui", "messages_in_folder",
-                            default=f"{len(envelopes)} message(s) in {folder}.",
-                            count=len(envelopes), folder=folder,
-                        ))
                 elif (
                     target
                     and "unified" in target
@@ -1393,16 +1388,13 @@ class MailFetchMixin:
             return purged_total
 
         def on_success(purged_total):
+            # Scheduled, so logged only: no status line for a screen
+            # reader to speak unasked.
             if purged_total:
                 logging.getLogger("zbox.main").info(
                     "Auto-purge removed %d message(s) older than %d day(s) "
                     "from Trash/Junk.", purged_total, days,
                 )
-                self.GetStatusBar().SetStatusText(lang.t(
-                    "main_ui", "auto_purge_done",
-                    default=f"Auto-purge removed {purged_total} old message(s) from Trash/Junk.",
-                    count=purged_total,
-                ))
 
         def on_error(exc):
             logging.getLogger("zbox.main").warning("Auto-purge failed: %s", exc)

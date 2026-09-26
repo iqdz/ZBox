@@ -364,7 +364,7 @@ GET_CONTENT = (
 
 INSERT_HTML = (
     "(function(){var el=document.getElementById('trix');"
-    "el.editor.insertHTML(HTML);el.focus();})();"
+    "el.editor.insertHTML(__ZBOX_HTML__);el.focus();})();"
 )
 
 INSERT_TEXT = (
@@ -457,9 +457,15 @@ REPLACE_RANGE = (
 # a tab opens with. The caret goes to the start afterwards, which is
 # where a reply is written, and the mirror is refreshed at once so
 # the unsaved-changes check starts from what is actually there.
+#
+# The content goes in at HTML_ARG, not at a bare HTML: the caller
+# substitutes with str.replace, which also hit the HTML inside
+# loadHTML and insertHTML, broke the script, and so dropped every
+# reply's quoted original (set_html ok=False, 25 September 2026).
+HTML_ARG = "__ZBOX_HTML__"
 SET_HTML = (
     "(function(){var el=document.getElementById('trix');"
-    "el.editor.loadHTML(HTML);"
+    "el.editor.loadHTML(__ZBOX_HTML__);"
     "el.editor.setSelectedRange([0, 0]);"
     "if (window.zbox_mirror) { window.zbox_mirror(); }})();"
 )

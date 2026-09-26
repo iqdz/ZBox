@@ -1436,5 +1436,6 @@ archive_failed = Tidak dapat mengarsipkan pesan.\n\n{error}
 master_password_not_changed = Tidak dapat mengubah kata sandi utama: {error}
 shortcut_failed_startup = Pintasan desktop tidak dapat dibuat:\n\n{error}\n\nZBox akan tetap dimulai. Anda dapat mencoba lagi nanti dari Pengaturan.
 account_locked_action = ZBox tidak dapat %s. Daftar akun tidak dapat dibuka di sesi ini (%s), dan tidak ada yang diubah. Tutup ZBox dan mulai lagi, lalu masukkan kata sandi utama Anda jika diminta.
+send_tls_mismatch = Tidak dapat mengirim pesan. Server keluar menjawab tanpa enkripsi, jadi enkripsi keluar tidak cocok dengan port. Di Alat, Pengaturan Akun, gunakan STARTTLS untuk port 587, atau SSL/TLS untuk port 465, lalu kirim lagi.\n\n{error}
 
 [help]

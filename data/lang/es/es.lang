@@ -1435,5 +1435,6 @@ archive_failed = No se pudo archivar el mensaje.\n\n{error}
 master_password_not_changed = No se pudo cambiar la contraseña maestra: {error}
 shortcut_failed_startup = No se pudo crear el acceso directo de escritorio:\n\n{error}\n\nZBox continuará iniciándose. Puede intentarlo de nuevo más tarde desde Configuración.
 account_locked_action = ZBox no puede %s. No se pudo abrir la lista de cuentas en esta sesión (%s) y no se ha cambiado nada. Cierre ZBox, vuelva a iniciarlo e introduzca su contraseña maestra si se le pide.
+send_tls_mismatch = No se pudo enviar el mensaje. El servidor de salida respondió sin cifrado, así que el cifrado de salida no coincide con el puerto. En Herramientas, Configuración de la cuenta, use STARTTLS para el puerto 587 o SSL/TLS para el puerto 465 y vuelva a enviar.\n\n{error}
 
 [help]

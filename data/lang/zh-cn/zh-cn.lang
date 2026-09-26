@@ -1342,5 +1342,6 @@ archive_failed = 无法归档邮件。\n\n{error}
 master_password_not_changed = 无法更改主密码：{error}
 shortcut_failed_startup = 无法创建桌面快捷方式：\n\n{error}\n\nZBox 将继续启动。你可以稍后在“设置”中重试。
 account_locked_action = ZBox 无法%s。本次会话无法打开账户列表 (%s)，未做任何更改。请关闭 ZBox 后重新启动，如有提示请输入主密码。
+send_tls_mismatch = 无法发送邮件。发件服务器以未加密方式应答，说明发件加密方式与端口不匹配。请在“工具”>“账户设置”中，端口 587 使用 STARTTLS，端口 465 使用 SSL/TLS，然后重新发送。\n\n{error}
 
 [help]

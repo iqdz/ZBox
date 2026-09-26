@@ -332,11 +332,13 @@ class TrixBody:
         if not self._ready:
             self._pending_html = html or ""
             return
-        self._run(trix_page.SET_HTML.replace("HTML", json.dumps(html or "")), "set_html")
+        self._run(
+            trix_page.SET_HTML.replace(trix_page.HTML_ARG, json.dumps(html or "")), "set_html"
+        )
 
     def insert_html(self, html):
         self._run(
-            trix_page.INSERT_HTML.replace("HTML", json.dumps(html or "")), "insert_html"
+            trix_page.INSERT_HTML.replace(trix_page.HTML_ARG, json.dumps(html or "")), "insert_html"
         )
 
     def insert_text(self, text):

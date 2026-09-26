@@ -1435,5 +1435,6 @@ archive_failed = Die Nachricht konnte nicht archiviert werden.\n\n{error}
 master_password_not_changed = Das Master-Kennwort konnte nicht geändert werden: {error}
 shortcut_failed_startup = Die Desktop-Verknüpfung konnte nicht erstellt werden:\n\n{error}\n\nZBox wird den Start fortsetzen. Sie können es später über Einstellungen erneut versuchen.
 account_locked_action = ZBox kann nicht %s. Die Kontenliste konnte in dieser Sitzung nicht geöffnet werden (%s), und nichts wurde geändert. Schließen Sie ZBox, starten Sie es neu und geben Sie Ihr Master-Passwort ein, wenn Sie danach gefragt werden.
+send_tls_mismatch = Die Nachricht konnte nicht gesendet werden. Der Postausgangsserver hat unverschlüsselt geantwortet, die Verschlüsselung für ausgehende Mails passt also nicht zum Port. Unter Extras, Kontoeinstellungen für Port 587 STARTTLS oder für Port 465 SSL/TLS verwenden und erneut senden.\n\n{error}
 
 [help]

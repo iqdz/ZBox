@@ -78,6 +78,15 @@ def _initial_body_html(body, signature, formatted=""):
     generated from it at send time, rather than the other way round."""
     parts = []
     if body:
+        # An empty first line above the quoted original or the
+        # forwarded message, with the caret on it (SET_HTML puts the
+        # caret at the start), so a reply is written on top. Reply and
+        # forward bodies are the ones that start with blank lines;
+        # text_to_html drops those, so the empty line is put in here
+        # as its own block. Any other body (a mailto: body) is left
+        # as it was given.
+        if body.startswith("\n"):
+            parts.append("<div><br></div>")
         parts.append(body_html.text_to_html(body))
     if signature or formatted:
         parts.append(body_html.text_to_html(SIGNATURE_SEPARATOR))
@@ -1555,11 +1564,30 @@ class ComposePanel(wx.Panel):
                 "main_ui", "send_failed",
                 default="Send failed. See logs for details.",
             ))
-            wx.MessageBox(
-                lang.t(
+            # A TLS library error, not a mail one: ZBox opened an
+            # encrypted connection and the outgoing server answered in
+            # plain text, so encryption and port do not match (587
+            # wants STARTTLS, 465 wants SSL/TLS). The raw text says
+            # none of that, so it gets a plain explanation, with the
+            # original kept below it for reference.
+            if "InvalidContentType" in str(exc):
+                text = lang.t(
+                    "errors", "send_tls_mismatch",
+                    default=(
+                        "Could not send the message. The outgoing server answered "
+                        "without encryption, so the outgoing encryption does not "
+                        "match the port. In Tools, Account Settings, use STARTTLS "
+                        f"for port 587, or SSL/TLS for port 465, then send again.\n\n{exc}"
+                    ),
+                    error=exc,
+                )
+            else:
+                text = lang.t(
                     "errors", "send_failed",
                     default=f"Could not send message.\n\n{exc}", error=exc,
-                ),
+                )
+            wx.MessageBox(
+                text,
                 lang.t("dialogs", "title_send_failed", default="Send Failed"),
                 wx.OK | wx.ICON_ERROR,
             )
@@ -1737,19 +1765,20 @@ class ComposePanel(wx.Panel):
                 self._last_saved_state = self._current_state()
             except RuntimeError:
                 pass  # tab closed while the save was in flight
-            try:
-                self.main_frame.GetStatusBar().SetStatusText(
-                    lang.t(
-                        "main_ui", "draft_autosaved", default="Draft autosaved."
+            if not silent:
+                # Autosave runs on a timer, so it writes no status line
+                # at all: a screen reader reading status bar changes
+                # spoke "Draft autosaved." every interval. A failed
+                # autosave still says so (on_error below).
+                try:
+                    self.main_frame.GetStatusBar().SetStatusText(
+                        lang.t(
+                            "actions_announcements", "draft_saved",
+                            default="Draft saved.",
+                        )
                     )
-                    if silent
-                    else lang.t(
-                        "actions_announcements", "draft_saved",
-                        default="Draft saved.",
-                    )
-                )
-            except RuntimeError:
-                pass
+                except RuntimeError:
+                    pass
             if not silent:
                 # The status bar alone is never spoken (announce.py),
                 # which is why neither Ctrl+S, the Save Draft button

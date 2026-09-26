@@ -2584,8 +2584,9 @@ class ZBoxMainFrame(MailFetchMixin, wx.Frame):
             changed, message = result
             if changed:
                 logging.getLogger("zbox.main").info("%s", message)
-                self.GetStatusBar().SetStatusText(message)
-            elif force:
+            # The daily update is scheduled, so it is logged only; the
+            # status line is for Update Now, which the user started.
+            if force:
                 self.GetStatusBar().SetStatusText(message)
 
         def on_error(exc):
@@ -5484,9 +5485,15 @@ class ZBoxMainFrame(MailFetchMixin, wx.Frame):
         spoken, address = _envelope_sender_spoken(envelope)
 
         if not copy_address:
-            self.announce(
-                spoken, title=lang.t("dialogs", "title_sender", default="Sender")
-            )
+            # 150 ms later, not at once. Ctrl+U spoke at the instant the
+            # key went down, while the screen reader was still handling
+            # the key press, and the reader's own Ctrl ("stop talking")
+            # swallowed it -- live on 25 September 2026, never heard.
+            # Ctrl+Shift+U always was: copying the address first delays
+            # its speech by about that much.
+            text = spoken
+            title = lang.t("dialogs", "title_sender", default="Sender")
+            wx.CallLater(150, self.announce, text, title=title)
             return
 
         if not address:
@@ -7242,8 +7249,11 @@ class ZBoxMainFrame(MailFetchMixin, wx.Frame):
         self._settle_pending_removals(account, items, list(unresolved))
         self._refresh_after_removal()
         if unresolved:
-            self.GetStatusBar().SetStatusText(
-                lang.t('main_ui', 'delete_resume_failed', default='{count} message(s) from an earlier delete could not be deleted.', count=len(unresolved))
+            # Resumed on its own from an earlier run, not started now,
+            # so it is logged rather than put on the status bar.
+            logging.getLogger("zbox.main").info(
+                "%d message(s) from an earlier delete could not be deleted.",
+                len(unresolved),
             )
 
     def _resume_pending_deletes(self):
