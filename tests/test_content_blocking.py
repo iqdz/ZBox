@@ -191,6 +191,29 @@ class ScriptsAndModesTests(unittest.TestCase):
     def filter(self, html, **kwargs):
         return filter_message_html(html, **kwargs)
 
+    def test_newsletter_layout_tables_do_not_hide_a_nested_data_table(self):
+        html = (
+            '<table><tr><td>Digest intro '
+            '<a href="https://example.com/topic">Topic</a>'
+            '<table><tr><td>Layout cell</td></tr></table>'
+            '<table><tr><th>Topic</th><th>Author</th></tr>'
+            '<tr><td>NVDA</td><td>Ada</td></tr></table>'
+            '</td></tr></table>'
+        )
+        out, _ = self.filter(html)
+        self.assertEqual(out.count('<table role="presentation">'), 2)
+        self.assertEqual(out.count('<table>'), 1)
+        self.assertIn('<th>Topic</th>', out)
+        self.assertIn('href="https://example.com/topic"', out)
+        self.assertIn('Digest intro', out)
+
+    def test_explicitly_named_table_keeps_its_semantics(self):
+        out, _ = self.filter(
+            '<table aria-label="Prices"><tr><td>Item</td><td>$6</td></tr></table>'
+        )
+        self.assertIn('<table aria-label="Prices">', out)
+        self.assertNotIn('role="presentation"', out)
+
     def test_scripts_are_removed_with_their_contents(self):
         out, report = self.filter('<p>Hi</p><script>alert(1)</script>')
         self.assertNotIn("alert", out)

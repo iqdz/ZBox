@@ -172,6 +172,14 @@ class _RemoteContentFilter(HTMLParser):
         self.report = BlockReport()
         self._skip_stack = []
         self._style_depth = 0
+        self._tables = []
+
+    def _finish_table(self):
+        index, attrs, has_data_semantics = self._tables.pop()
+        if not has_data_semantics:
+            self.out[index] = self._render_tag(
+                "table", attrs + [("role", "presentation")]
+            )
 
     # -- decisions ----------------------------------------------------
 
@@ -337,6 +345,15 @@ class _RemoteContentFilter(HTMLParser):
         kept, drop = self._filter_attrs(tag, attrs)
         if drop:
             return
+        if tag == "table":
+            semantic_attrs = {"role", "aria-label", "aria-labelledby", "summary"}
+            self._tables.append([
+                len(self.out), kept,
+                any(name in semantic_attrs for name, _ in kept),
+            ])
+        elif self._tables and (tag in ("th", "caption") or
+                               (tag == "td" and any(name in ("headers", "scope") for name, _ in kept))):
+            self._tables[-1][2] = True
         if tag in CSS_ELEMENTS:
             self._style_depth += 1
         self.out.append(self._render_tag(tag, kept))
@@ -369,6 +386,8 @@ class _RemoteContentFilter(HTMLParser):
             return
         if tag in CSS_ELEMENTS and self._style_depth:
             self._style_depth -= 1
+        if tag == "table" and self._tables:
+            self._finish_table()
         self.out.append("</%s>" % tag)
 
     def handle_data(self, data):
@@ -407,6 +426,8 @@ class _RemoteContentFilter(HTMLParser):
         return
 
     def result(self):
+        while self._tables:
+            self._finish_table()
         return "".join(self.out)
 
 
