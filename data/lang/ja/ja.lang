@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = 日本語
+code = ja
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = メッセージを送信しました。
+draft_saved = 下書きを保存しました。
+signature_inserted = 署名を挿入しました。
+signature_none = このアカウントには署名がありません。
+signature_saved = 署名を保存しました。
+signature_not_saved = 署名は保存されませんでした。
+pasted_as_quotation = 引用として貼り付けました。
+clipboard_empty = クリップボードには何もありません。
+word_count = {words} 語、{characters} 文字。
+report_copied = レポートをコピーしました。
+compose_tab_needed = このコマンドには作成タブが必要です。
+attach_file_instead = ドロップしたファイルは本文には入りません。送るにはファイルを添付を使ってください。
+
+# Formatting in the message body
+formatting_here = ここの書式: {formatting}。
+no_formatting_here = ここに書式はありません。プレーンテキストです。
+
+# Spelling
+nothing_to_check = チェックするものがありません。
+no_misspellings = スペルミスはありません。
+spelling_dictionary_unavailable = スペルチェック辞書を利用できません。
+next_misspelling_first = 先に「次のスペルミス」を使ってください。
+word_added = {word} を辞書に追加しました。
+word_not_added = {word} を追加できませんでした。
+corrections_applied_one = 1 件の修正を適用しました。
+corrections_applied_many = {count} 件の修正を適用しました。
+corrections_applied_partly = {total} 件中 {applied} 件の修正を適用しました。残りは拒否されました。ログを参照してください。
+occurrences_replaced_one = 1 か所を置換しました。
+occurrences_replaced_many = {count} か所を置換しました。
+
+# Reading mail
+message_did_not_open = メッセージを開けませんでした。サーバーが応答しませんでした。Enter キーを押すと再試行します。
+thread_open = このスレッドには {messages}。もう一度押すと閉じます。
+no_thread_selected = スレッドが選択されていません。
+thread_watched = スレッドを監視します。
+thread_not_watched = スレッドの監視をやめました。
+thread_ignored = スレッドを無視します。
+thread_not_ignored = スレッドの無視をやめました。
+none_found = 見つかりませんでした。
+refreshing_this_folder = このフォルダーを更新しています。
+refreshing_all_accounts = すべてのアカウントを更新しています。
+message_view_html = メッセージ表示: HTML (レンダリング)。
+message_view_text = メッセージ表示: テキスト。
+html_view_still_loading = メッセージはまだ読み込み中です。Esc キーで閉じます。
+message_still_opening = メッセージを開いています。サーバーの応答が遅くなっています。
+remote_content_blocked = リモートコンテンツをブロックしました。
+remote_content_unblocked = リモートコンテンツのブロックを解除しました。
+remote_content_already_showing = このメッセージのリモートコンテンツはすでに表示されています。
+archived = アーカイブしました。
+copied_to_folder = {to_folder} にコピーしました。
+deleted_one = メッセージを完全に削除しました。
+deleted_many = {count} 通のメッセージを完全に削除しました。
+trashed_one = メッセージをごみ箱に移動しました。
+trashed_many = {count} 通のメッセージをごみ箱に移動しました。
+
+# Accounts and new mail
+no_account_yet = 移動先のアカウントがまだありません。
+inbox_landed = {name} の受信トレイ。
+account_enabled = {name} を有効にしました。
+auto_check_paused = {account} の自動チェックを一時停止しました。
+auto_check_resumed = {account} の自動チェックをオンにしました。
+account_disabled = {name} を無効にしました。
+new_mail_one = {name} に新着メッセージが 1 通あります。
+new_mail_many = {name} に新着メッセージが {count} 通あります。
+refresh_all_done_one = 1 個のアカウントを更新しました。
+refresh_all_done_many = {count} 個のアカウントを更新しました。
+refresh_all_done_failures = {count} 個のアカウントを更新しました。{failed} 個は更新できませんでした。
+refresh_all_done_failures_one = {count} 個のアカウントを更新しました。{failed} 個は更新できませんでした。
+
+# The sender of the message in view
+sender_address_copied = {sender}。アドレスをコピーしました。
+sender_no_address = {sender}。コピーするアドレスがありません。
+clipboard_not_opened = {sender}。クリップボードを開けませんでした。
+
+# The signature editor
+signature_page_formatted = 書式付き。これが保存されます。
+signature_page_html = HTML ソース。これが保存されます。
+signature_page_html_still_wins = 書式付き。保存されるのは引き続き HTML ソースです。
+
+# Background work
+phishing_list_updating = フィッシングリストをバックグラウンドで更新しています。
+cache_cleared = キャッシュファイル {files} 個 ({size} MB) を削除しました。
+hotkeys_diagnostic_on = ホットキー診断オン、チェックあり
+hotkeys_diagnostic_off = ホットキー診断オフ、チェックなし
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = アーカイブ
+action_delete = 削除
+action_delete_permanently = 完全に削除
+action_mark_as_junk = 迷惑メールとしてマーク
+action_mark_as_not_junk = 迷惑メールではないとマーク
+action_move_to = 移動
+action_copy_to = コピー
+action_mark_message = メッセージにマーク
+action_undo = 元に戻す
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} を元に戻しました。
+undo_done_many = {count} 通のメッセージの {action} を元に戻しました。
+junk_marked_one = 迷惑メールとしてマークしました。
+junk_marked_many = {count} 通のメッセージを迷惑メールとしてマークしました。
+junk_no_new_sender = 新たにブロックした差出人はありません: すでにブロック済み、メーリングリスト、またはご自身のアドレスです。
+not_junk_marked_one = 迷惑メールではないとマークしました。
+not_junk_marked_many = {count} 通のメッセージを迷惑メールではないとマークしました。
+moved_to_one = {to_folder} に移動しました。
+moved_to_many = {count} 通のメッセージを {to_folder} に移動しました。
+copied_to_many = {count} 通のメッセージを {to_folder} にコピーしました。
+marked_read = 既読にしました。
+marked_unread = 未読にしました。
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} 件中 {completed} 件で取り消しました。成功 {succeeded} 件、失敗 {failed} 件。
+bulk_failed_one = {done} 1 通中 {failed} 通が失敗しました。
+bulk_failed_many = {done} {total} 通中 {failed} 通が失敗しました。
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = 太字
+format_word_italic = 斜体
+format_word_strike = 取り消し線
+format_word_href = リンク
+format_word_bullet = 箇条書き
+format_word_number = 番号付きリスト
+format_word_quote = 引用
+format_word_code = コード
+format_word_heading1 = 見出し
+format_applied = {formatting} を適用しました。
+format_inserted = {formatting} を挿入しました。
+format_not_available = {formatting} はプレーンテキストの本文では使えません。
+format_on = {formatting} オン
+format_off = {formatting} オフ
+link_applied = リンクを適用しました。
+link_applied_to_selection = 選択範囲にリンクを適用しました。
+plain_body_formatting = プレーンテキストの本文では、書式はタグとして表示されます。
+
+# Reaching either end of a thread
+thread_edge_first = このスレッドの最初のメッセージです。もう一度押すと閉じます。
+thread_edge_last = このスレッドの最後のメッセージです。もう一度押すと閉じます。
+jump_unified_inbox = 統合受信トレイ。
+remote_none = このメッセージにはリモートコンテンツがありません。
+sender_none = このメッセージには差出人がありません。
+sender_name_no_address = %s、アドレスなし
+signature_not_switched = 署名は変更されていません。このアカウントの署名を挿入するには Ctrl+Shift+S を押してください。
+signature_removed_no_signature = 署名を削除しました。このアカウントには署名がありません。
+signature_switched = 署名をこのアカウントのものに変更しました。
+spell_not_replaced = 単語を置換できませんでした。
+spell_replaced_with = {word} に置換しました。
+folder_marked_read = {count} 通のメッセージを既読にしました。
+folder_no_unread = 未読メッセージはありません。
+threads_all_collapsed = すべてのスレッドを折りたたみました。
+threads_all_expanded = すべてのスレッドを展開しました。
+upd_percent = {percent} パーセント
+upd_download_done = ダウンロードが完了しました。更新を準備しています...
+upd_updated_to = ZBox を {version} に更新しました。
+header_copied = コピーしました。
+headers_copied = すべてのヘッダーをコピーしました。
+identity_copies_updated = この差出人情報の Cc と Bcc を更新しました。
+signature_switched_identity = 署名をこの差出人情報のものに変更しました。
+signature_removed_identity = 署名を削除しました。この差出人情報には署名がありません。
+signature_not_switched_identity = 署名は変更されていません。この差出人情報の署名を挿入するには Ctrl+Shift+S を押してください。
+signature_none_identity = この差出人情報には署名がありません。
+move_keys_no_selection = 先にメッセージを選択してください。
+move_keys_no_folders = 選択できるフォルダーがまだありません。少し待ってからもう一度お試しください。
+block_sender_done_one = {sender} をブロックしました。新しいメッセージはごみ箱に移動されます。
+block_sender_done_many = {count} 件の差出人をブロックしました。新しいメッセージはごみ箱に移動されます。
+block_sender_already = {sender} はすでにブロックされています。
+block_sender_own = ブロックしませんでした: ご自身のアドレスです。
+block_sender_list_unknown = ブロックしませんでした: このメッセージはメーリングリスト経由で届き、送信者が示されていません。リストのアドレスをブロックすると、全員がブロックされます。
+block_sender_moved = 差出人をブロックしました。{count} 件のメッセージをごみ箱に移動しました。
+block_senders_moved = {senders} 件の差出人をブロックしました。{count} 件のメッセージをごみ箱に移動しました。
+unblock_sender_moved = 差出人のブロックを解除しました。{count} 件のメッセージを受信トレイに移動しました。
+unblock_senders_moved = {senders} 件の差出人のブロックを解除しました。{count} 件のメッセージを受信トレイに移動しました。
+unblock_sender_done = {sender} のブロックを解除しました。
+unblock_sender_not_blocked = {sender} はブロックされていません。
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = 上に入力して Enter キーを押すか、検索を選択してください。
+search_no_account = 先にアカウントを追加してください。
+search_no_term = 検索する語句を入力してください。
+search_running = 検索しています...
+search_none = 「{term}」に一致するものはありません。
+search_found_one = 「{term}」に 1 件一致しました。
+search_found_many = 「{term}」に {count} 件一致しました。
+search_failed = 検索に失敗しました。
+
+# The related messages tab
+related_running = 検索しています...
+related_none = 関連メッセージは見つかりませんでした。
+related_found_one = 関連メッセージが 1 通見つかりました。
+related_found_many = 関連メッセージが {count} 通見つかりました。
+related_failed = 関連メッセージを検索できませんでした。
+
+# Writing and sending
+sending_via = {sender} 経由で送信しています...
+send_failed = 送信に失敗しました。詳しくはログを参照してください。
+draft_autosaved = 下書きを自動保存しました。
+draft_autosave_failed = 下書きの自動保存に失敗しました。詳しくはログを参照してください。
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = {sender} からのメッセージではリモートコンテンツを読み込むようになりました。
+downloading_attachment = {filename} をダウンロードしています...
+downloading_attachments_one = 添付ファイル 1 個をダウンロードしています...
+downloading_attachments_many = 添付ファイル {count} 個をダウンロードしています...
+saved_to = {folder} に保存しました
+attachment_download_failed = 添付ファイルのダウンロードに失敗しました。
+
+# Getting mail onto the screen
+loading_folder = {account} の {folder} を読み込んでいます...
+messages_in_folder = {folder} に {count} 通のメッセージがあります。
+messages_in_folder_cached = {folder} に {count} 通のメッセージがあります (最後に同期したコピー、更新中...)
+no_offline_copy = {folder} のオフラインコピーはまだありません。
+refresh_failed_cached = {folder} を更新できませんでした: 最後に同期したコピーを表示しています。
+no_such_folder = このアカウントには {folder} フォルダーがありません。
+load_failed = メッセージを読み込めませんでした。詳しくはログを参照してください。
+no_more_to_load = このフォルダーにはこれ以上読み込むメッセージがありません。
+loading_more = {folder} のメッセージをさらに読み込んでいます...
+more_loaded = さらに {count} 通のメッセージを読み込みました。
+no_more_messages = このフォルダーにはこれ以上メッセージがありません。
+load_more_failed = メッセージをさらに読み込めませんでした: {error}
+loading_unified = 統合 {folder} を読み込んでいます...
+messages_in_unified = 統合 {folder} に、アカウント全体で {count} 通のメッセージがあります。
+messages_in_unified_cached = 統合 {folder} に {count} 通のメッセージがあります (最後に同期したコピー、更新中...)
+auto_purge_done = 自動削除により、ごみ箱/迷惑メールから古いメッセージ {count} 通を削除しました。
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = 準備完了。
+opening_message = メッセージを開いています...
+opening_message_already = メッセージを開いています... (読み込み中)
+could_not_open_message = メッセージを開けませんでした。
+could_not_open_that_message = そのメッセージを開けませんでした。
+could_not_load_message = このメッセージを読み込めませんでした。
+message_still_loading = そのメッセージはまだ読み込み中です。
+folder_still_loading = このフォルダーはまだ読み込み中です。少ししてからもう一度お試しください。
+not_in_thread = このメッセージはスレッドの一部ではありません。
+no_longer_in_thread = このメッセージはもうスレッドにありません。
+thread_position = このスレッドの {total} 通中 {position} 通目。
+thread_finished_one = このスレッドを読み終えました (1 通)。
+thread_finished_many = このスレッドを読み終えました ({count} 通)。
+select_message_first = 先にメッセージを選択してください。
+conversation_failed = この会話を開けませんでした。
+select_message_for_related = 先に、関連メッセージを表示するメッセージを選択してください。
+looking_for_related = 関連メッセージを探しています...
+no_threading_headers = このメッセージには検索に使える Message-ID やスレッドのヘッダーがありません。
+reply_one_at_a_time = 返信は一度に 1 通のメッセージにしか使えません。メッセージを 1 通だけ選択してください。
+select_message_to_reply = 先に返信するメッセージを選択してください。
+preparing_reply = 返信を準備しています...
+reply_load_failed = 返信する元のメッセージを読み込めませんでした。
+select_message_to_forward = 先に転送するメッセージを選択してください。
+preparing_forward = 転送するメッセージを準備しています...
+forward_load_failed = 転送するメッセージを読み込めませんでした。
+compose_tab_needed_hint = このコマンドには作成タブが必要です。メッセージを書くには Ctrl+N を押してください。
+open_message_first_view = 先にメッセージを開いてから、Ctrl+B で表示を切り替えてください。
+open_message_first_remote = 先にメッセージを開いてから、Ctrl+Shift+I でリモートコンテンツを読み込んでください。
+
+# Acting on messages
+copying_message = メッセージをコピーしています...
+copy_failed = コピーに失敗しました。
+delete_failed = 削除に失敗しました。
+already_in_archive = すでにアーカイブにあります。
+archiving = アーカイブしています...
+archive_failed = アーカイブに失敗しました。
+action_failed = {action} に失敗しました。
+nothing_to_undo = 元に戻す操作はありません。
+undo_failed = {action} を元に戻せませんでした。
+
+# Views and folders
+folder_pane_all = フォルダーペイン: すべてのフォルダー。
+folder_pane_unified = フォルダーペイン: 統合フォルダー。
+sorted_ascending = {field} の昇順で並べ替えました。
+sorted_descending = {field} の降順で並べ替えました。
+unified_folders_updated = 統合フォルダーを更新しました。
+zoom_reset = メッセージのフォントサイズを既定に戻しました。
+folder_creating = フォルダー「{folder}」を作成しています...
+folder_created = フォルダー「{folder}」を作成しました。
+folder_create_failed = フォルダーを作成できませんでした。
+folder_renaming = 「{folder}」の名前を「{new_name}」に変更しています...
+folder_renamed = フォルダー名を「{new_name}」に変更しました。
+folder_rename_failed = フォルダー名を変更できませんでした。
+folder_deleting = フォルダー「{folder}」を削除しています...
+folder_deleted = フォルダーを削除しました。
+folder_delete_failed = フォルダーを削除できませんでした。
+folder_subscribing = 「{folder}」を購読しています...
+folder_unsubscribing = 「{folder}」の購読を解除しています...
+folder_subscribed = 購読しました。
+folder_unsubscribed = 購読を解除しました。
+folder_subscribe_failed = フォルダーを購読できませんでした。
+folder_unsubscribe_failed = フォルダーの購読を解除できませんでした。
+
+# Accounts
+account_not_added = アカウントは追加されませんでした。
+account_added = アカウントを追加しました: {account}
+account_settings_not_saved = アカウント設定は保存されませんでした。
+account_updated = アカウントを更新しました: {account}
+account_not_removed = アカウントは削除されませんでした。
+account_removed = アカウントを削除しました。
+account_removed_with_files = アカウントを削除しました。ローカルファイル {count} 個を削除しました。
+default_account_failed = 既定のアカウントを設定できませんでした。
+default_account_set = {account} が既定のアカウントになりました。
+auto_check_not_saved = 自動チェックの設定は保存されませんでした。
+mute_not_saved = ミュートの設定は保存されませんでした。
+account_muted = {account} をミュートしました。
+account_unmuted = {account} のミュートを解除しました。
+export_done = {count} 個のアカウントと設定を {path} にエクスポートしました。
+import_done = {path} から {count} 個のアカウントをインポートしました。
+
+# Filters, cache and the background lists
+filters_not_saved = フィルターは保存されませんでした。
+filters_saved = {account} のフィルターを保存しました。
+filters_checking = {folder} をフィルターと照合しています...
+filters_none_matched = 今すぐ実行: {folder} のどのメッセージも、有効なルールに一致しませんでした。
+filters_run_failed = フィルターを実行できませんでした。
+filters_moving = フィルター処理したメッセージ {count} 通を移動しています...
+filters_move_failures = フィルター: {count} 通のメッセージを移動できませんでした。
+filters_moved = フィルターにより {folder} から {count} 通のメッセージを移動しました。
+filters_move_failed = フィルター処理したメッセージを移動できませんでした。
+cache_not_cleared = キャッシュは削除されませんでした。
+auto_cache_cleanup = キャッシュの自動クリーンアップ: {age} より古いメッセージ。
+phishing_update_failed = フィッシングリストを更新できませんでした: {error}
+blocklist_update_failed = ブロックリストを更新できませんでした: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = 先にメッセージを開いてから、名前を付けて保存を使ってください。
+saving_message = メッセージを保存しています...
+save_file_failed = ファイルを保存できませんでした。
+save_fetch_failed = 保存するメッセージを取得できませんでした。
+open_message_first_print = 先にメッセージを開いてから、印刷を使ってください。
+open_message_first_preview = 先にメッセージを開いてから、印刷プレビューを使ってください。
+refreshing_accounts = {count} 個のアカウントを更新しています...
+emptying_trash = {account} のごみ箱を空にしています...
+trash_already_empty = ごみ箱はすでに空でした。
+trash_emptied = ごみ箱を空にしました: {count} 通のメッセージを消去しました。
+empty_trash_failed = ごみ箱を空にできませんでした。
+emptying_junk = {account} の迷惑メールフォルダーを空にしています...
+junk_already_empty = 迷惑メールフォルダーはすでに空でした。
+junk_emptied = 迷惑メールフォルダーを空にしました: {count} 通のメッセージを消去しました。
+junk_emptied_prefix = 迷惑メールフォルダーを空にしました:
+junk_part_purged = {count} 通を消去
+junk_part_in_trash = {count} 通はごみ箱に移動しましたが削除を確認できません。ごみ箱を確認してください
+junk_part_not_moved = {count} 通はごみ箱に移動できず、迷惑メールフォルダーに残っています
+empty_junk_failed = 迷惑メールフォルダーを空にできませんでした。
+back_online = オンラインに戻りました。
+offline_sync_running = {account} をオフライン用に同期しています...
+offline_sync_failed = オフライン同期に失敗しました: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = 先にメッセージを選択するか開いてください。
+select_or_open_message_ctrl_u = 先にメッセージを選択するか開いてから、Ctrl+U を押してください。
+no_sender_address = このメッセージには追加できる差出人アドレスがありません。
+contact_added = {contact} をアドレス帳に追加しました。
+contact_already_there = {contact} はすでにアドレス帳にあります。
+privacy_saved = プライバシー設定を保存しました。適用するにはメッセージを開き直してください。
+message_font_size = メッセージのフォントサイズ: {size} pt。
+
+# Deleting and moving several messages
+deleting_one = メッセージを完全に削除しています
+deleting_many = {count} 通のメッセージを完全に削除しています
+trashing_one = メッセージをごみ箱に移動しています
+trashing_many = {count} 通のメッセージをごみ箱に移動しています
+undo_partly_restored = {action} を元に戻しましたが、{count} 通は復元できませんでした。その後、移動、削除、または期限切れになった可能性があります。
+moves_report = {action}: {total} 通中 {moved} 通を移動しました。
+moves_report_failed = 移動されず元のフォルダーに残っているもの: {count} 通。
+
+tray_tooltip_one = ZBox — 未読メッセージ 1 通
+tray_tooltip_many = ZBox — 未読メッセージ {count} 通
+account_unreachable = {account} に接続できませんでした。このアカウントの自動チェックを {minutes} 分間停止します。
+bulk_copy_failed = メッセージをコピーできませんでした。
+bulk_copy_failed_status = コピーに失敗しました。
+bulk_loading_archive = メッセージはまだ読み込み中です。少ししてからもう一度アーカイブしてください。
+bulk_loading_delete = メッセージはまだ読み込み中です。少ししてからもう一度削除してください。
+bulk_loading_flag = メッセージはまだ読み込み中です。少ししてからもう一度スターを付けてください。
+bulk_loading_generic = メッセージはまだ読み込み中です。少ししてからもう一度お試しください。
+bulk_none = メッセージが選択されていません。
+bulk_none_archive = アーカイブするメッセージが選択されていません。
+bulk_none_delete = 削除するメッセージが選択されていません。
+bulk_none_junk = 迷惑メールとしてマークするメッセージが選択されていません。
+bulk_none_not_junk = 迷惑メールではないとマークするメッセージが選択されていません。
+delete_refused_still = サーバーが削除を拒否しました。メッセージはまだ {folder} にあります。
+delete_refused_trash = ごみ箱にはありますが、サーバーが完全な削除を拒否しました。
+delete_resume_failed = 以前の削除で残ったメッセージ {count} 通を削除できませんでした。
+done_perm_delete_one = メッセージを完全に削除しました。
+done_trash_one = メッセージをごみ箱に移動しました。
+filters_applied = {folder} の {count} 通のメッセージにフィルターを適用しました。
+filters_failed = フィルターを実行できませんでした。
+filters_running = {folder} でフィルターを実行しています
+flag_failed = スターを更新できませんでした。
+flag_updated = スターを更新しました。
+folder_verb_subscribing = 購読しています:
+folder_verb_unsubscribing = 購読を解除しています:
+mark_read_failed = メッセージを既読にできませんでした。
+mark_unread_failed = メッセージを未読にできませんでした。
+notify_new_mail_body = {name} に新着{noun}が {count} 通あります。
+notify_new_mail_title = 新着メール
+notify_noun_many = メッセージ
+notify_noun_one = メッセージ
+report_done = {count} 通中 {done} 通を{verb}。
+report_verb_deleted = 削除しました
+report_verb_permanent = 完全に削除しました
+running_copy_many = {count} 通のメッセージをコピーしています
+running_copy_one = メッセージをコピーしています
+running_junk_many = {count} 通のメッセージを迷惑メールとしてマークしています
+running_junk_one = 迷惑メールとしてマークしています
+running_move_many = {count} 通のメッセージを移動しています
+running_move_one = 移動しています
+running_not_junk_many = {count} 通のメッセージを迷惑メールではないとマークしています
+running_not_junk_one = 迷惑メールではないとマークしています
+running_perm_delete_one = メッセージを完全に削除しています...
+running_read_many = {count} 通のメッセージを既読にしています
+running_read_one = 既読にしています
+running_trash_one = メッセージをごみ箱に移動しています...
+running_unread_many = {count} 通のメッセージを未読にしています
+running_unread_one = 未読にしています
+settings_saved_no_startup = 設定を保存しました。Windows のスタートアップ項目を更新できませんでした。
+settings_saved_status = 設定を保存しました。
+spam_blocked_sender = ブロックした差出人
+spam_possible_phishing = フィッシングの可能性
+undo_running_many = {action} を元に戻しています ({count} 通)
+undo_running_one = {action} を元に戻しています
+mark_folder_read_failed = フォルダーを既読にできませんでした。
+marking_folder_read = フォルダーを既読にしています...
+upd_ready_at_exit = 更新はすでにダウンロード済みです。ZBox の終了時にインストールされます。
+upd_checking = 更新を確認しています...
+upd_up_to_date = ZBox は最新です。
+upd_available_source = ZBox {version} が利用可能です。このコピーはソースから実行されているため、git で更新してください。
+upd_check_failed = 更新を確認できませんでした: {error}
+opening_attachment = {filename} を開いています...
+loading_headers = ヘッダーを読み込んでいます...
+offline_inbox_only = オフラインで使えるように保持されるのは受信トレイとアーカイブだけです。
+offline_sync_done_inbox = オフライン用に受信トレイとアーカイブのメッセージ {count} 件を同期しました。
+working_offline = オフライン作業中: 受信トレイ/送信済み/下書きの最後に同期したコピーを表示しています。
+emptying_trash_all = すべてのアカウントのごみ箱を空にしています...
+trash_emptied_all = {accounts} 件のアカウントでごみ箱を空にしました: {count} 件のメッセージを完全に削除しました。
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &ファイル
+bar_edit = &編集
+bar_view = &表示
+bar_message = &メッセージ
+bar_compose = &作成
+bar_tools = &ツール
+bar_help = &ヘルプ
+
+# File
+file_new = 新規作成
+file_new_message = メッセージ
+file_new_account = メールアカウント...
+file_open_saved_message = 保存したメッセージを開く...
+file_close = 閉じる
+file_save_message_as = 名前を付けてメッセージを保存...
+file_get_new_for = 新着メッセージを受信
+file_get_new_all = すべてのアカウント
+file_get_new_current = 現在のアカウント
+file_offline = オフライン
+file_work_offline = オフライン作業
+file_sync_now = 今すぐ同期
+file_print = 印刷...
+file_print_preview = 印刷プレビュー...
+file_exit = 終了
+
+# Edit
+edit_undo = 元に戻す
+edit_select_all = すべて選択
+edit_find_messages = メッセージを検索...
+
+# Message
+message_reply = 返信
+message_reply_all = 全員に返信
+message_forward = 転送
+message_archive = アーカイブ
+message_delete = 削除
+message_delete_permanently = 完全に削除
+message_mark = マーク
+mark_read = 既読
+mark_unread = 未読
+mark_flagged = スター付き
+mark_junk = 迷惑メール
+mark_not_junk = 迷惑メールではない
+message_watch_thread = スレッドを監視
+message_ignore_thread = スレッドを無視
+message_open_conversation = 会話でメッセージを開く
+message_show_related = 関連メッセージを表示
+message_add_sender_to_address_book = 差出人をアドレス帳に追加
+message_announce_sender = 差出人を読み上げ
+message_announce_copy_sender = 差出人を読み上げてアドレスをコピー
+
+# View
+view_folders = フォルダー
+folders_all = すべて
+folders_unified = 統合
+folders_jump_inbox = 受信トレイのメッセージ一覧へ移動
+folders_configure_unified = 統合フォルダーの設定...
+view_sort_by = 並べ替え
+sort_date = 日付
+sort_subject = 件名
+sort_from = 差出人
+sort_descending = 降順 (新しい順)
+sort_ascending = 昇順 (古い順)
+view_threads = スレッド
+threads_all = すべて
+threads_watched = 監視中のスレッド
+threads_ignored = 無視したスレッド
+threads_expand_all = すべてのスレッドを展開
+threads_collapse_all = すべてのスレッドを折りたたむ
+view_load_more = さらにメッセージを読み込む
+view_toggle_message_view = テキスト表示と HTML 表示を切り替え
+view_show_remote_content = このメッセージのリモートコンテンツを表示
+view_message_zoom = メッセージのズーム
+zoom_increase = メッセージのフォントを大きくする
+zoom_decrease = メッセージのフォントを小さくする
+zoom_reset = メッセージのフォントサイズをリセット
+
+# Compose
+compose_send = &送信
+compose_save_draft = &下書き保存
+compose_attach = &ファイルを添付...
+compose_fmt_bold = &太字
+compose_fmt_italic = &斜体
+compose_fmt_strike = &取り消し線
+compose_fmt_bullet = &箇条書き
+compose_fmt_number = &番号付きリスト
+compose_fmt_quote = &引用
+compose_fmt_code = &コード
+compose_fmt_heading1 = &見出し
+compose_link = &リンクを挿入...
+compose_formatting = &ここの書式
+compose_spellcheck = &スペルチェック...
+compose_spellcheck_next = &次のスペルミス
+compose_spellcheck_add = &単語を辞書に追加
+compose_insert_signature = &署名を挿入
+compose_paste_quotation = &引用として貼り付け
+compose_word_count = &文字数カウント
+compose_preview = &プレビュー...
+compose_diagnostics = &作成画面の診断...
+compose_edit_signature = &署名を編集...
+compose_hotkeys_diagnostic = &ホットキー診断
+
+# Tools
+tools_account_settings = アカウントと差出人情報の設定...
+tools_mute_account = アカウントをミュート
+tools_pause_auto_check = 自動チェックを一時停止
+tools_disable_account = アカウントを無効にする
+tools_remove_account = アカウントを削除...
+tools_address_book = アドレス帳...
+tools_message_filters = メッセージフィルター...
+tools_import = アカウントと設定をインポート...
+tools_export = アカウントと設定をエクスポート...
+tools_cache_cleanup = キャッシュのクリーンアップ設定...
+tools_privacy = プライバシーとコンテンツのブロック...
+tools_settings = 設定...
+
+# Help
+help_shortcuts = キーボードショートカット...
+help_about = ZBox について...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = 新しいアカウント...
+tree_account_settings = アカウントと差出人情報の設定...
+tree_mute_account = アカウントをミュート
+tree_pause_auto_check = 自動チェックを一時停止
+tree_enable_account = アカウントを有効にする
+tree_disable_account = アカウントを無効にする
+tree_set_default_account = 既定のアカウントに設定
+tree_remove_account = アカウントを削除...
+tree_refresh = 更新
+tree_new_folder = 新しいフォルダー...
+tree_empty_trash = ごみ箱を空にする
+tree_empty_junk = 迷惑メールフォルダーを空にする
+tree_rename_folder = フォルダー名を変更...
+tree_delete_folder = フォルダーを削除...
+tree_subscribe_folder = フォルダーを購読
+tree_unsubscribe_folder = フォルダーの購読を解除
+
+# The message list menu, opened the same two ways
+list_select_all = すべて選択
+list_reply = 返信
+list_reply_all = 全員に返信
+list_forward = 転送
+list_mark = マーク
+list_archive = アーカイブ
+list_delete_to_trash = 削除 (ごみ箱へ移動)
+list_delete_permanently = 完全に削除
+list_move_to = 移動
+list_copy_to = コピー
+
+# The notification area icon
+tray_open = &ZBox を開く
+tray_unread_one = 未読メッセージ 1 通
+tray_unread_many = 未読メッセージ {count} 通
+tray_no_unread = 未読メッセージはありません
+tray_settings = &設定...
+tray_quit = &ZBox を終了
+
+# The formatting menu inside a message you are writing
+format_bold = &太字
+format_italic = &斜体
+format_strike = &取り消し線
+format_bullet = &箇条書き
+format_number = &番号付きリスト
+format_quote = &引用
+format_code = &コード
+format_heading1 = &見出し
+format_insert_link = &リンクを挿入...
+format_formatting_here = &ここの書式
+tools_enable_account = アカウントを有効にする
+edit_undo_action = {action} を元に戻す
+tree_mark_folder_read = フォルダーを既読にする
+help_updates = 更新
+help_check_updates = 今すぐ更新を確認...
+help_update_settings = 更新の設定...
+help_releases_page = リリースページを開く
+message_attachments = 添付ファイル
+message_no_attachments = 添付ファイルはありません
+message_save_all_attachments = すべての添付ファイルを保存
+view_full_headers = すべてのヘッダー
+folders_go_to_tree = フォルダー一覧へ移動
+list_block_sender = この差出人をブロック
+list_unblock_sender = この差出人のブロックを解除
+
+[dialogs]
+set_theme_restart_confirm = テーマの変更を適用するために ZBox を再起動しますか?
+set_ui_theme_label = &インターフェースのテーマ:
+set_ui_theme_note = メニュー、一覧、ダイアログ、テキスト表示のメッセージの色です。「システムに従う」は Windows のアプリのライト/ダークモードを使います。ミッドナイトブルー、ウォームダーク、ソフトコントラストは、目にやさしい色のダークテーマです。HTML メッセージは独自の色のまま表示され、Windows のハイコントラストが常に優先されます。次に ZBox を起動したときに有効になります。
+set_theme_system = システムに従う
+set_theme_light = ライト
+set_theme_dark = ダーク
+set_theme_midnight = ミッドナイトブルー
+set_theme_warm = ウォームダーク
+set_theme_soft = ソフトコントラスト
+set_language_restart_confirm = 言語の変更を適用するために ZBox を再起動しますか?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith に連絡
+title_identity = 差出人 ID
+title_show_password = パスワードを表示
+title_missing_information = 情報が不足しています
+title_unsupported_provider = 未対応のプロバイダー
+title_test_connection = 接続テスト
+title_new_contact = 新しい連絡先
+title_edit_contact = 連絡先を編集
+title_delete_contact = 連絡先を削除
+title_import_contacts = 連絡先をインポート
+title_export_contacts = 連絡先をエクスポート
+title_rename_group = グループ名を変更
+title_delete_group = グループを削除
+title_send = 送信
+title_send_failed = 送信に失敗しました
+title_attach_file = ファイルを添付
+title_save_draft = 下書き保存
+title_documentation = ZBox ドキュメント
+title_open_link = リンクを開く
+title_filter_rule = フィルタールール
+title_master_password = マスターパスワード
+title_attachment_saved = 添付ファイルを保存しました
+title_attachments_saved = 添付ファイルを保存しました
+title_download_failed = ダウンロードに失敗しました
+title_print = 印刷
+title_print_preview = 印刷プレビュー
+title_related_messages = 関連メッセージ
+title_search = 検索
+title_unlock = ロック解除
+title_unlock_methods = ロック解除の方法
+title_desktop_shortcut = デスクトップのショートカット
+title_spell_check = スペルチェック
+title_plain_text_password = 平文のパスワードが見つかりました
+title_startup_error = ZBox 起動エラー
+
+identity_email_required = メールアドレスを入力してください。
+
+wizard_password_not_shown = このシステムではパスワードを表示できません。入力と保存は通常どおり行われます。
+wizard_email_required = 続ける前に有効なメールアドレスを入力してください。
+wizard_test_needs_server = テストする前に、ログイン用メールアドレスと受信サーバーを入力してください。
+wizard_test_succeeded = 接続に成功しました。受信トレイに {count} 通のメッセージが見つかりました。
+
+contact_email_required = メールアドレスは必須です。
+contact_select_to_edit = 編集する連絡先を選択してください。
+contact_select_to_delete = 削除する連絡先を選択してください。
+contact_delete_confirm = {label} をアドレス帳から削除しますか?
+contacts_import_choose_file = インポートする .vcf (vCard) または .csv ファイルを選択してください。
+contacts_imported = {count} 件の連絡先をインポートしました。
+contacts_import_empty = そのファイルに連絡先は見つかりませんでした。
+contacts_none_to_export = エクスポートする連絡先がありません。
+contacts_exported = {count} 件の連絡先をエクスポートしました:\n{path}
+group_name_exists = 「{name}」という名前のグループはすでにあります。
+group_delete_confirm = グループ「{name}」を削除しますか? 連絡先は削除されません。
+
+send_no_account = 送信する前にアカウントを追加するか、差出人でアカウントを選択してください。
+send_no_recipient = 宛先に少なくとも 1 人の受信者を入力してください。
+draft_no_account = 下書きを保存する前にアカウントを追加するか、差出人でアカウントを選択してください。
+attached_file = 添付しました: {name}\n\n送信時に {count} 個のファイルが添付されます。
+
+documentation_copied = ZBox のドキュメント全体をクリップボードにコピーしました。
+
+filter_rule_needs_name = このルールに名前を付けてください。
+filter_rule_needs_condition = 少なくとも 1 つの条件 (差出人、宛先、件名) を設定してください。
+filter_rule_needs_action = 少なくとも 1 つの動作を選んでください: 既読にする、スターを付ける、フォルダーに移動する。
+
+master_password_set = マスターパスワードを設定しました。安全な場所に保管してください。ZBox は新しいコンピューターごとに一度これを尋ねます。紛失すると復元できません。
+master_password_offer = マスターパスワードがないと、保存されたアカウントのパスワードはこのコンピューターとこの Windows アカウントでしか読めません。ZBox を別の場所にコピーすると、すべてのアカウントでサインインし直す必要があります。\n\n今すぐ設定しますか?
+
+attachment_saved = 添付ファイルを保存しました:\n{path}
+attachments_saved = {count} 個の添付ファイルを保存しました:\n{path}
+
+shortcut_created_settings = ショートカットを作成しました:\n{path}\n\n起動する ZBox の場所:\n{base}
+
+spellcheck_no_dictionary = スペルチェック辞書が見つからないため、この ZBox ではスペルチェックを利用できません。
+spellcheck_none_found = スペルミスは見つかりませんでした。
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = このコンピューターでパスキーを設定し、別のコンピューターで保存したパスキーを削除しますか?\n\nWindows が Hello で確認を求めます。別のコンピューターに残っている古いパスキーはそのまま残り、このフォルダーをそのコンピューターに戻せば使えますが、設定し直す必要があります。
+unlock_replace_passkey_many = このコンピューターでパスキーを設定し、別のコンピューターで保存した {count} 個のパスキーを削除しますか?\n\nWindows が Hello で確認を求めます。別のコンピューターに残っている古いパスキーはそのまま残り、このフォルダーをそのコンピューターに戻せば使えますが、設定し直す必要があります。
+unlock_method_works = その方法は使えます。
+
+plain_text_password_found = data\config\himalaya.toml に、以前のアカウント設定による平文のパスワード (auth.raw) が残っています。\n\nそのアカウントを削除して追加し直すか、data\config\himalaya.toml を削除して、安全な資格情報ストアを使って再生成されるようにしてください。
+
+# main_frame's titles.
+title_account_list_unavailable = アカウント一覧を利用できません
+title_open_message = メッセージを開く
+title_run_filters = フィルターを実行
+title_clear_cache = オフラインメッセージのキャッシュを削除
+title_remove_account = アカウントを削除
+title_new_folder = 新しいフォルダー
+title_rename_folder = フォルダー名を変更
+title_delete_folder = フォルダーを削除
+title_subscribe = 購読
+title_unsubscribe = 購読解除
+title_open_saved_message = 保存したメッセージを開く
+title_save_message_as = 名前を付けてメッセージを保存
+title_empty_trash = ごみ箱を空にする
+title_empty_junk = 迷惑メールフォルダーを空にする
+title_synchronize_offline = オフライン用に同期
+title_export_accounts = アカウントと設定をエクスポート
+title_import_accounts = アカウントと設定をインポート
+title_show_related = 関連メッセージを表示
+title_reply = 返信
+title_forward = 転送
+title_undo = 元に戻す
+title_delete_permanently = 完全に削除
+title_delete = 削除
+title_copy_to = コピー
+title_archive = アーカイブ
+title_accounts_locked = アカウントはロックされています
+
+select_account_first = 先にツリーでアカウントを選択してください。
+select_account_or_folder = 先にアカウントまたはフォルダーを選択してください。
+filters_left_behind = {count} 通のメッセージがフィルターに一致しましたが、まだ {folder} にあります。
+cache_clear_confirm = すべてのアカウントのオフラインメッセージのキャッシュを削除しますか?\n\n削除されるのは ZBox のローカルコピーだけです。メールサーバーからは何も削除されず、メッセージは必要に応じて再度ダウンロードされます。
+account_remove_confirm = {name} ({address}) を削除しますか?\n\nサーバー上のメールは削除されません。\nこのコンピューターにダウンロードしたコピーは削除されます。\n保存されたパスワードは削除されます。
+folder_delete_confirm = {address} のフォルダー「{folder}」とその中身をすべて完全に削除しますか?\n\nこの操作は元に戻せません。
+empty_trash_confirm = {address} のごみ箱にあるすべてのメッセージを完全に削除しますか?\n\nこの操作は元に戻せません。
+empty_junk_confirm = {address} の迷惑メールフォルダーにあるすべてのメッセージを完全に削除しますか?\n\nこの操作は元に戻せません。
+sync_select_account = オフライン用に同期するアカウント (統合フォルダーではなく) を選択してください。
+accounts_imported = {count} 個のアカウントをインポートしました:\n\n{names}\n\nパスワードはエクスポートされず、暗号化されたパスワードストアはこの Windows ユーザーアカウント専用です。そのため、インポートした各アカウントは接続する前に、アカウント > アカウントと差出人情報の設定でパスワードを一度入力する必要があります。
+accounts_import_none = このファイルにアカウントは見つかりませんでした。設定がファイルに含まれていれば、それはインポートされました。
+delete_permanently_confirm_one = このメッセージを完全に削除しますか? ごみ箱を経由せず、元に戻せません。
+accounts_locked = 保存されたアカウントのパスワードは別のコンピューターで書き込まれたため、ここでは読めません。\n\n各アカウントでメールサーバーにサインインし直す必要があります。次回それを避けるには、アカウントがすでに動作しているコンピューターで、設定の「アプリとデータのセキュリティ」からマスターパスワードを設定してください。
+master_password_remove_confirm = マスターパスワードを削除しますか? 保存されたアカウントのパスワードは、このコンピューターとこの Windows アカウントでしか読めなくなります。その後 ZBox を別の場所にコピーすると、すべてのアカウントでサインインし直す必要があります。\n\n今すぐ削除しますか?
+shortcut_offer = デスクトップに ZBox のショートカットを作成しますか?\n\n起動するのはこの ZBox フォルダーです:\n{path}\n\nショートカットはこの場所そのものを記録します。後で ZBox フォルダーを移動した場合は、設定の「システムトレイとウィンドウ」を開き、「デスクトップにショートカットを作成」をもう一度選んで新しい場所を指すようにしてください。
+shortcut_created = ショートカットを作成しました:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = 表示名
+form_email_address = メールアドレス
+form_your_name = あなたの名前
+form_login_email = ログイン用メールアドレス
+form_password = パスワード
+srv_imap_host = 受信 (IMAP) サーバー
+srv_imap_port = 受信ポート
+srv_imap_encryption = 受信の暗号化
+srv_smtp_host = 送信 (SMTP) サーバー
+srv_smtp_port = 送信ポート
+srv_smtp_encryption = 送信の暗号化
+
+acct_login_email_label = ログイン用メールアドレス (サインインに使用)
+acct_new_password_label = 新しいパスワード (現在のものを使うには空欄)
+acct_new_password_name = 新しいパスワード
+acct_identity_email_label = メールアドレス (送受信に使用)
+acct_identities_label = 追加の差出人 ID (エイリアス)
+acct_identities_name = 追加の差出人 ID
+acct_add_identity = &差出人 ID を追加...
+acct_edit_identity = &差出人 ID を編集...
+acct_remove_identity = &差出人 ID を削除
+acct_signature = 署名
+acct_edit_signature = &署名を編集...
+acct_junk_folder = 迷惑メールフォルダー
+acct_account_status = アカウントの状態
+acct_disable_account = このアカウントを無効にする
+acct_default_account = 既定のアカウント
+acct_set_default = 既定のアカウントに設定
+acct_notifications = 新着メールの通知
+acct_mute_notifications = このアカウントの通知をミュート
+acct_server_settings = サーバー設定
+
+wiz_before_you_start = 始める前に
+wiz_notice_name = 重要なお知らせ
+wiz_google_instructions = &Google のアプリパスワードの説明を開く
+wiz_intro = あなたの名前とメールアドレス
+wiz_login_same = ログイン用メールアドレスは上のメールアドレスと同じ
+wiz_show_password = &パスワードを表示
+wiz_preset_applied = {name} のプリセットを適用しました。
+wiz_summary_name = アカウントの概要
+wiz_review = 内容を確認し、完了をクリックしてこのアカウントを保存してください。
+wiz_test_connection = &接続テスト
+wiz_testing = 接続をテストしています...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (デバッグログを有効にする。保存先: data\logs)
+set_language_label = &インターフェースの言語:
+set_language_label_only_english = &インターフェースの言語: (英語のみ)
+set_headers_checkbox = &開いたメッセージの上にメッセージヘッダーを表示
+set_zoom_label = メッセージのフォントとズーム:
+set_font_override = &メッセージの既定のフォントサイズを上書きする
+set_font_size_name = メッセージのフォントサイズ (ポイント)
+set_reading_font_name = 閲覧用フォント
+set_reading_font_label = 閲覧用フォント (既定にするには空欄):
+set_view_label = メッセージを開いたときの本文の表示:
+set_view_text = テキスト
+set_view_html = HTML (レンダリング)
+set_engine_label = HTML レンダリングエンジン:
+set_engine_edge = Edge / WebView2 (最新のレンダリング)
+set_engine_ie = 従来の MSHTML (スクリーンリーダーとの相性が最良)
+set_runtime_label = WebView2 ランタイム:
+set_runtime_auto = 自動 — 同梱のランタイムがあればそれを使用 (推奨)
+set_runtime_fixed = 同梱の固定バージョンのみ
+set_runtime_evergreen = システム全体のランタイム (Windows が更新)
+set_sr_box = スクリーンリーダーの読み上げの制御
+set_silence_label = HTML のスクリーンリーダー消音時間:
+set_silence_name = HTML のスクリーンリーダー消音時間 (ミリ秒)
+set_focus_delay_label = WebView のアクセシビリティ フォーカス遅延:
+set_focus_delay_name = WebView のアクセシビリティ フォーカス遅延、レベル 1 から 10
+set_announce_label = 読み上げの表示時間:
+set_announce_name = 読み上げの表示時間 (ミリ秒)
+set_announce_actions = &メッセージ操作を読み上げる
+set_attachment_dir_label = 添付ファイルの保存先フォルダー:
+set_attachment_dir_name = 添付ファイルの保存先フォルダー
+set_browse = &参照…
+set_autosave_label = 下書きの自動保存の間隔:
+set_autosave_name = 下書きの自動保存の間隔 (秒)
+set_auto_purge_label = ごみ箱と迷惑メールの古いメッセージを自動削除:
+set_auto_purge_name = この日数が過ぎたらごみ箱と迷惑メールを自動削除
+set_bare_keys = メッセージ一覧で単一キーのショートカットを有効にする: S (フラグ)、A (アーカイブ)、J (迷惑メールとしてマーク)/Shift+J (迷惑メールではないとしてマーク)、W (スレッドを監視)、K (スレッドを無視)、M (移動)/Shift+M (フォルダー名で移動)、C (コピー)
+set_sound_label = サウンドと通知:
+set_sounds_enabled = &通知音を鳴らす
+set_desktop_notifications = &新着メールのデスクトップ通知を表示
+set_theme_label = サウンドテーマを変更:
+set_theme_label_only_default = サウンドテーマを変更: (既定のテーマのみ)
+set_security_box = アプリとデータのセキュリティ
+set_lock_on_quit = &完全に終了したときに ZBox をロックする
+set_unlock_methods_button = &ロック解除の方法…
+set_master_password_button = &マスターパスワード…
+set_tray_label = システムトレイとウィンドウ:
+set_minimize_to_tray = &システムトレイに最小化
+set_close_to_tray = &閉じるとシステムトレイに入れる
+set_stay_maximized = &ZBox を常に最大化しておく
+set_run_at_startup = &Windows の起動時に ZBox を実行
+set_desktop_shortcut_button = &デスクトップにショートカットを作成
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = デバッグログは、問題が起きたときの原因調査に役立ちます。オフにすると新しい記録は書き込まれなくなりますが、既存のログファイルは削除されません。次に ZBox を起動したときに有効になります。
+set_language_note = 次に ZBox を起動したときに有効になります。言語ファイルは、ZBox の lang フォルダー (sounds フォルダーの隣) にあるプレーンテキストファイルです。追加するには、en フォルダーをコピーし、コピーしたフォルダーとその中の .lang ファイルの名前を言語コードに変更して、各等号の右側の文字列を翻訳してください。まだ翻訳していない部分は無音にならず英語で読み上げられるので、途中までのファイルでも安全に使えます。
+set_headers_note = 差出人、宛先、Cc、日付、件名を、テキスト表示と HTML 表示のどちらでもメッセージ本文の上に表示します。これがないと、タブを閉じて一覧に戻らない限り、メッセージの中から差出人を知る方法がありません。フォーカスは引き続き本文に置かれ、ヘッダー部分は Shift+Tab 1 回で移動できます。次にメッセージを開いたときに有効になります。
+set_zoom_note = 開いたメッセージの文字だけを、ZBox のほかの部分や Windows の表示スケールとは別に大きくしたり小さくしたりします。テキスト表示と HTML 表示の両方に適用されます。「閲覧用フォント」を指定すると、メッセージ本文に特定のフォント (Consolas、OpenDyslexic など) を強制できます。通常のフォントのままにするには空欄にしてください。表示メニューの Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 で、このダイアログを開かずにフォントサイズだけを拡大・縮小・リセットでき、開いているすべてのメッセージにすぐ反映されます。ここで行った変更も OK ですぐに反映されます。
+set_view_note = 既定は HTML です。送られたとおりにメッセージを表示し、NVDA と JAWS で読めます。HTML ページが開くと、ZBox はブラウザー自体の読み上げを抑え、読み上げカーソルをメッセージの最初の行に置き、ページ内でも ZBox のショートカット (ページからフォーカスを戻す F6 を含む) が使えるようにします。テキストは同じメッセージを、通常の編集コントロールに書式なしのプレーンテキストとして表示します。画像もレイアウトもなく、ブラウザーエンジンのインストールにも左右されません。開いたメッセージの中で Ctrl+B を押すと、どちらにも切り替えられます。
+set_engine_note = Edge は最新の CSS を表示できますが、ページを別プロセスで実行し、wxPython からは使えないインターフェースを通じてしかスクリーンリーダーに内容を渡しません。そのため、読める内容が何もない状態でメッセージが開くことがあります。従来の MSHTML は Outlook Express や Windows メールが使っていたエンジンで、同じプロセス内で動作して通常の文書ツリーを公開するため、NVDA と JAWS はほかの Web ページと同じようにブラウズモードで読めます。次にメッセージを開いたときに有効になります。
+set_runtime_note = システム全体のランタイムは Windows Update で更新されるため、メールを表示するエンジンが予告なく変わることがあります。ZBox に何の変更もないのに、HTML のメッセージ表示が動かなくなるのはこのためです。deps フォルダーに同梱したコピーは、ZBox のテストに使った正確なバージョンに固定されます。インストールするには tools\get_webview2.bat を実行してください。同梱のコピーがなければ、ZBox はどちらの設定でもシステム全体のランタイムを使うので、必ず起動します。次に ZBox を起動したときに有効になります。
+set_sr_intro = メッセージを開くときにスクリーンリーダーにどこまで読み上げさせるか、また ZBox 自身の読み上げをどれだけ表示しておくかを設定します。
+set_silence_note = HTML メッセージが開くとき、ZBox は最大 2 秒間、合成した Ctrl キーの押下を保持して、スクリーンリーダーによるブラウザーの読み上げを抑えられます。メッセージの件名はすでにページタイトルとして使われているので base64 の URL が読み上げられることはありませんが、スクリーンリーダーはメッセージの冒頭に重ねてコントロールと文書の種類を読み上げるため、既定でオンになっています。オフにするには 0 に下げ、それでも余計な読み上げが入る場合は値を上げてください。
+set_focus_delay_note = HTML メッセージの読み込みが終わってから、ZBox が実際にフォーカスを移すまでに待つ時間です。WebView2 がページの読み込み完了を報告する時点と、Windows がそのページのアクセシビリティツリーを完成させる時点は同じではありません。早すぎるフォーカスは、NVDA/JAWS がメッセージではなく汎用の「Web コンテンツ ページ」と読み上げたり、開いた直後しばらくメッセージを利用不可と報告したりする原因になります。レベル 1 は 100 ミリ秒、レベル 10 は 1 秒です。症状が出る場合は値を上げ、安定したら値を下げると速く開けます。
+set_announce_note = Ctrl+U と Ctrl+Shift+U は、自動的に閉じる小さなダイアログで差出人を知らせます。ステータスバーは、スクリーンリーダーでステータスバーの読み上げがオンになっている場合にしか読まれないためです。この値は、そのダイアログを表示しておく時間です。読み上げの速さに合わせて設定してください。短すぎると文の途中で閉じてしまい、意味がありません。どのキーを押しても早めに閉じますが、矢印キーでは閉じないので読み直せます。0 にするとキーを押すまで待ち、自動では閉じません。
+set_attachment_dir_note = メッセージに複数の添付ファイルがあるときに「すべて保存」で保存する場所です。存在しない場合は自動的に作成されます。添付ファイルが 1 つだけのメッセージは、これまでどおり保存先を尋ねます。既定にするには空欄にしてください:\n{path}
+set_autosave_note = 作成中のタブが、書いている間に下書きフォルダーへ自動保存する間隔です。下書き保存 (Ctrl+S) はいつでも手動で保存でき、未保存の内容があるタブを閉じるときは必ず保存するか尋ねます。0 にすると自動保存はオフになります。15 秒未満は選べません。入力とサーバーとの通信が競合するためです。
+set_auto_purge_note = ごみ箱と迷惑メールに指定の日数置かれたメッセージを完全に削除します。「ごみ箱を空にする」と「迷惑メールフォルダーを空にする」と同じ完全削除を、ZBox が開いている間 1 日に 1 回自動で行います。既定では 30 日でオンです。0 にするとオフになります。削除したメッセージは元に戻せません。
+set_bare_keys_note = オンにすると、メッセージ一覧で S、A、J、W、K を単独で押すだけで、スターの切り替え、アーカイブ、選択したメッセージに迷惑マークを付ける (Shift+J では迷惑マークを解除)、選択が属するスレッドの注目/無視がすぐに行われます。アーカイブと迷惑マークを付ける操作には確認も取り消しもありません。オフにすると、S、A、J、W、K は通常の頭文字による一覧移動に戻ります。Ctrl+S と Ctrl+Shift+A はどちらの場合も使えます。すぐに有効になります。
+set_sounds_note = 進行状況、新着メッセージ、送信・返信・転送の完了、削除、検索結果を知らせる短い音です。オフにするとアプリのすべての音が止まります。スクリーンリーダーとステータスバーの読み上げはどちらの場合も影響を受けません。
+set_desktop_notifications_note = 新着メールのまとまりごとに表示される Windows の通知で、上のサウンドとは別の設定です。オフにするとすべてのアカウントで無効になります。個々のアカウントは、アカウントと差出人情報の設定で個別にミュートすることもできます。
+set_theme_note = カスタムテーマは ZBox の sounds フォルダー内に置くフォルダーで、それぞれに progress-tick.wav、incoming-message.wav、action-done.wav、delete.wav、searching.wav、searching_done.wav、none_found.wav を用意します。テーマにないファイルは既定の音が使われます。
+set_theme_note_only_default = カスタムテーマは ZBox の sounds フォルダー内に置くフォルダーで、それぞれに progress-tick.wav、incoming-message.wav、action-done.wav、delete.wav、searching.wav、searching_done.wav、none_found.wav を用意します。テーマにないファイルは既定の音が使われます。別のテーマフォルダーを追加するまでは「default」しか選べません。
+set_lock_note = ZBox の起動時に、アカウントを開く前にロック解除の方法を 1 つ求めるようになります。パスキー、セキュリティキー、マスターパスワードのどれか 1 つで十分です。トレイに入れて閉じるのは終了ではないので再ロックされません。ファイル > 終了とトレイアイコンの終了が終了にあたります。何も登録されておらずマスターパスワードも設定されていない場合は、ご自身のメールから締め出されないよう、ロックは省略されます。
+set_security_note = 3 つのうち何かを暗号化するのはマスターパスワードだけです。このフォルダーが別のコンピューターで、保存されたアカウントのパスワードを開けるのはこのためです。パスキーやセキュリティキーは、このコンピューターでアプリのロックを解除するものです。ZBox を使ったことのないコンピューターでは、どちらもマスターパスワードの代わりにはなりません。
+set_minimize_note = ZBox を最小化すると、タスクバーのボタンが隠れ、トレイアイコンの裏で動作し続けます。トレイアイコンを左クリックする (キーボードフォーカスがあるときは Enter/Space) とウィンドウが戻ります。
+set_close_note = ウィンドウの閉じるボタン、Alt+F4、メールタブでの Ctrl+W は、ZBox を終了せずトレイに隠します。ファイル > 終了 (Ctrl+Shift+Q) とトレイアイコンの終了は、どちらの場合も必ず ZBox を終了するので、トレイに触れずに終了できるキーボード操作が常にあります。
+set_stay_maximized_note = ZBox は最大化して起動し、最大化を解除しても最大化に戻ります。メニューバー、タイトルバー、ウィンドウ枠はそのままです。枠のない全画面モードではないので、Alt キーのメニューショートカットはすべて使えます。
+set_run_at_startup_note = Windows にサインインすると ZBox が自動的に起動し、ウィンドウを表示せずにトレイに入ります。次回の起動だけでなく、すぐに有効になります。
+set_desktop_shortcut_note = デスクトップに ZBox のショートカットを作成します。すでにある場合は置き換えます。ショートカットはこの ZBox フォルダーの正確な場所を記録するので、ZBox を別の場所に移動またはコピーした場合は、新しいコピーでもう一度これを押して、デスクトップのショートカットがそちらを指すようにしてください。すぐに有効になり、OK を待ちません。
+
+# The Address Book, its contact form and its groups.
+ab_name = 名前
+ab_phone = 電話
+ab_notes = メモ
+ab_heading = アドレス帳
+ab_contacts = 連絡先
+ab_new = &新規...
+ab_edit = &編集...
+ab_delete = &削除
+ab_import = &インポート...
+ab_export = &エクスポート...
+ab_groups_label = グループ (メーリングリスト)
+ab_groups_name = グループ
+ab_new_group = &新しいグループ...
+ab_rename_group = &グループ名を変更...
+ab_delete_group = &グループを削除
+ab_manage_members = &メンバーを管理...
+ab_all_contacts = すべての連絡先
+ab_add_member = 追加 >>
+ab_remove_member = << 削除
+ab_members_of = {name} のメンバー
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &辞書にない単語:
+sp_not_in_dictionary_name = 辞書にない単語
+sp_in_this_line_label = この行:
+sp_in_this_line_name = この行
+sp_suggestions_label = &候補:
+sp_suggestions_name = 候補
+sp_replace_with_label = &置換後の単語:
+sp_replace_with_name = 置換後の単語
+sp_replace = &置換
+sp_replace_all = &すべて置換
+sp_ignore = &無視
+sp_ignore_all = &すべて無視
+sp_add_to_dictionary = &辞書に追加
+btn_close = &閉じる
+
+# Privacy and Content Blocking.
+priv_remote_label = メッセージ内のリモートコンテンツ:
+priv_block_remote = &要求するまでリモートコンテンツをブロックする (推奨)
+priv_blocklist_label = 広告とトラッカーのブロックリスト:
+priv_block_known = &既知の広告・トラッカーのドメインをブロックする
+priv_update_daily = &バックグラウンドで毎日リストを更新する
+priv_update_now = &今すぐ更新
+priv_junk_label = 迷惑メールのルール:
+priv_check_inbox = &受信トレイの新着メールを、ブロックした差出人と既知のフィッシングリンクで確認する
+priv_move_blocked = &ブロックした差出人からのメールを自動的に迷惑メールフォルダーへ移動する
+priv_update_phishing = &今すぐフィッシングリストを更新
+priv_blocked_label = ブロックした差出人:
+priv_blocked_name = ブロックした差出人
+priv_remove_blocked = &ブロックした差出人を削除
+priv_never_junk_label = 迷惑メールとして扱わない差出人:
+priv_never_junk_name = 迷惑メールとして扱わない差出人
+priv_remove_never_junk = &迷惑メールとして扱わない差出人を削除
+priv_allowed_label = リモートコンテンツの読み込みを許可した差出人:
+priv_allowed_name = 許可した差出人
+priv_remove_selected = &選択した差出人を削除
+
+# Message Filters.
+filt_rule_name = ルール名
+filt_enabled = &有効
+filt_match_label = 一致条件:
+filt_match_all = &次のすべてに一致 (AND)
+filt_match_any = &次のいずれかに一致 (OR)
+filt_conditions_label = 条件 (使わない条件は値を空欄にしてください):
+filt_condition_field = 条件 {number} の項目
+filt_condition_contains = 条件 {number} が含む文字列
+filt_actions_label = 動作:
+filt_mark_read = &既読にする
+filt_flag = &メッセージにスターを付ける
+filt_move_label = 移動先フォルダー:
+filt_move_name = 移動先フォルダー
+filt_rules_name = フィルタールール
+filt_new = &新しいルール...
+filt_edit = &ルールを編集...
+filt_delete = &ルールを削除
+filt_up = &上へ
+filt_down = &下へ
+filt_run_label = 今すぐ実行するフォルダー:
+filt_run_name = 今すぐ実行するフォルダー
+filt_run_now = &今すぐ実行
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &パスキーでロック解除 (Windows Hello)
+unl_security_key = &セキュリティキーでロック解除
+unl_master_password_label = &マスターパスワード:
+unl_master_password_name = マスターパスワード
+unl_unlock = &ロック解除
+unl_exit = &ZBox を終了
+unl_methods_label = &登録済みの方法:
+unl_methods_name = 登録済みのロック解除の方法
+unl_add_passkey = &パスキーを追加…
+unl_add_key = &セキュリティキーを追加…
+unl_reassign = &パスキーをこのコンピューターに割り当て直す…
+unl_test = &テスト…
+unl_remove = &削除
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = 差出人
+comp_to = 宛先
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = 件名
+comp_attach_button = ファイルを添付...
+comp_sending = 送信しています...
+comp_report_label = &レポート:
+comp_report_name = レポート
+comp_refresh = &更新
+comp_copy = &コピー
+comp_preview_read = 受信者が読むとおりの表示
+comp_preview_source = 送信される HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = メッセージ本文
+mv_blocked_notice = ブロックしたコンテンツのお知らせ
+mv_show_remote = &リモートコンテンツを表示
+mv_always_allow = &この差出人を常に許可
+mv_message_headers = メッセージヘッダー
+mv_attachments = 添付ファイル
+mv_attachments_count = 添付ファイル ({count})
+mv_save_attachment = 保存: {filename}
+mv_save_all = すべて保存
+mv_html_view = メッセージの HTML 表示
+mv_saved_message = 保存したメッセージ
+mv_show_remote_tip = リモートの画像とスタイルを含めてこのメッセージを再読み込みします。既知のトラッカーはブロックされたままです。
+mv_always_allow_tip = {sender} からのすべてのメッセージでリモートコンテンツを読み込みます。
+
+# The search tab.
+srch_account = アカウント
+srch_folder = フォルダー
+srch_for = 検索する語句
+
+# The signature editor.
+sig_editors = 署名エディター
+sig_formatted = 署名 (書式付き)
+sig_source = 署名 (HTML ソース)
+sig_plain_label = プレーンテキストの代替 (HTML と一緒に送信)
+sig_plain_name = プレーンテキストの代替
+
+# About ZBox.
+about_text_name = ZBox についての説明文
+about_view_license = &ライセンスを表示...
+about_google = &Google のアプリパスワード...
+about_support = &ZBox を支援 -- 個人による開発と保守
+about_repos = &GitHub の Harith のアプリのリポジトリ
+about_contact = &Harith に連絡
+btn_close_plain = 閉じる
+btn_cancel_plain = キャンセル
+
+# The license window.
+eula_heading = ZBox ライセンス
+eula_text_name = ZBox ライセンス本文
+eula_third_party = サードパーティ製コンポーネントのライセンスページ:
+eula_agree = &上記の条件に同意します
+eula_agree_name = ZBox のライセンス条件を読み、同意します
+eula_disagree = &同意しません
+eula_next = &次へ
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox ドキュメント本文
+doc_copy = クリップボードにコピー
+shortcuts_heading = キーボードショートカット
+shortcuts_text_name = キーボードショートカットの本文
+
+# The main window's own panes.
+mf_toolbar = メインツールバー
+mf_tabs = ZBox のタブ
+tree_heading = アカウントとフォルダー
+tree_name = アカウントとフォルダーのツリー
+envlist_heading = メッセージ
+envlist_name = メッセージ一覧
+rdr_heading = メッセージ
+rdr_name = メッセージリーダー
+conv_heading_one = 会話: 1 通のメッセージ
+conv_heading_many = 会話: {count} 通のメッセージ
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} 件中 {completed} 件完了。
+bulk_cancelling = 取り消しています -- 現在のメッセージを処理し終えるまでお待ちください...
+cache_clear_now = オフラインメッセージのキャッシュを今すぐ削除... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}、保護
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = 表示名は任意です。空欄にすると、このアカウント自身の名前で送信されます。
+acct_note_identity = プロバイダーが独自ドメインをこのメールボックスに関連付けている場合、メールアドレスはログイン用メールアドレスと異なっていてもかまいません。メールは上のアドレスで送受信され、サインインには引き続きログイン用メールアドレスが使われます。このアカウントに保存済みのパスワードを使い続けるには、パスワード欄を空欄にしてください。たとえば Gmail のアプリパスワードを作り直した後は新しいものをここに入力し、それ以外は空欄のままにしてください。
+acct_note_identities = このアカウントで送信や返信に使えるほかのアドレスです。これらのいずれかに送られたメッセージに返信すると、差出人は上のアドレスではなくそのアドレスになります。
+acct_note_signature = このアカウントから送る新規メッセージ、返信、転送のすべてに、「-- 」の行の下に追加されます。署名なしにするには空欄にしてください。「署名を編集」を押すと書式付きエディターが開き、太字、リスト、リンクを使えます。上の欄には、それと一緒に送られるプレーンテキスト版が入ります。
+acct_note_junk = 「迷惑メールとしてマーク」でメッセージを移動する実際のフォルダーです。「{automatic}」は、アーカイブとごみ箱ですでに使われているのと同じ、プロバイダーに応じた推測を使います。その推測が間違っている場合や、迷惑メールフォルダーに独自の名前が付いている場合だけ設定してください。
+acct_note_disable = 無効にしたアカウントには、有効に戻すまで一切接続しません。IDLE も定期更新も行いません。ツリーには (無効) と表示されて残り、ダウンロード済みのメールはオフラインで引き続き利用できます。アカウント > アカウントを無効にする、またはアカウントのコンテキストメニューと同じ切り替えで、ここはその別の入り口です。
+acct_note_default = このアカウントのフォルダーがツリーの最初に表示され、作成画面で手動で変更しない限り、新しいメッセージはこのアカウントから送信されます。返信や転送に使うアドレスには影響しません。それは返信するメッセージに従います (上の追加の差出人 ID を参照)。既定のアカウントは常に 1 つだけなので、ほかのアカウントでチェックを入れずに現在の既定でチェックを外しても変わりません。既定を移すには、ほかのアカウントのチェックボックスをオンにしてください。
+acct_note_mute = &ミュートすると、ほかの設定にかかわらず、このアカウントの新着メールの音、読み上げ、Windows の通知が止まります。ほかのアカウントには影響せず、設定 > サウンドと通知の全体のスイッチ (サウンドとデスクトップ通知) にも引き続き従います。
+wiz_note_app_password = ZBox 用のアプリパスワードをすでに作成している場合は、次へを押して続けてください。
+wiz_note_login = ログイン情報。\nログイン用メールアドレスが上のアドレスと異なる場合 (たとえば、プロバイダーのアカウントは login@example.net だが、you@example.org として送受信したい場合) は、ここにログイン用メールアドレスを入力してください。独自の送信アドレスは後でアカウントと差出人情報の設定で設定できます。
+wiz_note_servers = サーバー設定です。ドメインが認識された場合は入力済みです。異なる必要がある項目は編集してください。
+wiz_preset_none = このドメインのプリセットは見つかりませんでした。プロバイダーのサーバー設定を手動で入力してください。プロバイダーのヘルプページに記載されています。
+ab_note_groups = 作成画面の宛先、Cc、Bcc 欄にグループ名を入力すると、そのメンバー全員が一度に入力されます。
+cache_note_intro = これらが削除するのは ZBox のローカルコピーだけです。メールサーバーからは何も削除されず、削除したメッセージは次に開いたときに再度ダウンロードされます。
+cache_note_age = 自動クリーンアップは、ZBox で 10 分間キーボード操作がなく、メッセージが開いていないときに、1 日に 1 回実行されます。アカウントにまだ残っているメッセージも含め、各メッセージ自体の日付に基づいて判断します。
+filt_note_intro = ルールは上から順に実行され、差出人、宛先、件名を調べます。このアカウントの受信トレイに届いた新着メールには自動的に適用されます。すでにフォルダーにあるメッセージに適用するには、下の今すぐ実行を使ってください。
+filt_note_run_now = 上の有効なルールすべてを、順番に、選んだフォルダーにあるすべてのメッセージに適用します。OK と同じく、先に変更を保存します。
+mp_note_intro = これらのアカウントは別のコンピューターで設定されました。ここで保存済みのパスワードのロックを解除するには、マスターパスワードを入力してください。このコンピューターで尋ねるのは一度だけです。\n\n入力しない場合は、各アカウントでメールサーバーにサインインし直す必要があります。
+priv_note_remote = メッセージがインターネットから読み込む画像、スタイルシート、フォントは、あなたがいつどこでメッセージを開いたかを差出人に知らせます。これをオンにすると、どれも読み込まれません。何をブロックしたかを示すお知らせがメッセージの上に表示され、Ctrl+Shift+I でそのメッセージだけ読み込めます。メッセージ自体に添付された画像は常に表示されます。スクリプトと埋め込みフレームはどちらの場合も削除され、読み込まれることはありません。
+priv_note_blocklist = これは 2 段目の防御です。メッセージのリモートコンテンツを読み込んだり、差出人を許可したりしたときに効果を発揮します。画像は読み込まれますが、既知の追跡・広告ドメインから配信されるものは読み込まれません。リストは公開されている広告・トラッカーのリストからダウンロードして結合します。更新は 1〜2 秒で、バックグラウンドで行われます。
+priv_note_junk = 推測はしません。迷惑メールとしてマークすると、メッセージがメーリングリスト経由でない限り、差出人を下のブロックリストに追加します。迷惑メールではないとマークすると、差出人を迷惑メールとして扱わない差出人の一覧に追加し、そのメッセージは二度と確認されません。ブロックした差出人からの新着メッセージは一覧で「ブロックした差出人」と表示され、既知のフィッシングやマルウェアのサイトへのリンクを含むものは「フィッシングの可能性」と表示されます。メールプロバイダー自体の迷惑メールフィルターは、これまでどおり動作します。
+priv_status_phishing_updating = フィッシングリスト: バックグラウンドで更新中です。結果を見るにはこのダイアログを開き直してください。
+priv_status_updating = バックグラウンドで更新中です。結果を見るにはこのダイアログを開き直してください。
+rel_note_intro = 「{subject}」に Message-ID/References ヘッダーで関連するメッセージを、このアカウントのすべてのフォルダーから表示します。
+srch_note_intro = 下に入力した文字列で、差出人、件名、本文を検索します。下で絞り込まない限り、すべてのアカウントとフォルダーを検索します。
+sig_note_plain = プレーンテキストの代替を空欄にしておくと、保存を押したときに書式付きの署名から作成されます。
+unified_note_intro = すべてのアカウントにわたって統合するフォルダーを選んでください。チェックしたフォルダーはそれぞれ、全アカウントのそのフォルダーをまとめた 1 つの項目としてツリーに表示されます。
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox について
+title_account_settings = アカウントと差出人情報の設定: {name}
+title_new_account = 新しいアカウント
+title_address_book = アドレス帳
+title_members = メンバー: {name}
+ab_group_name_prompt = グループ名:
+title_new_group = 新しいグループ
+title_cache_cleanup = キャッシュのクリーンアップ設定
+cache_age_prompt = 次より古いキャッシュ済みメッセージを自動的に削除:
+title_automatic_cleanup = 自動クリーンアップ
+comp_link_prompt = リンクのアドレス:
+title_insert_link = リンクを挿入
+title_composer_diagnostics = 作成画面の診断
+title_formatted_preview = 書式付きプレビュー
+title_license_agreement = ZBox ライセンス契約
+title_message_filters = メッセージフィルター: {account}
+title_master_password_required = マスターパスワードが必要です
+title_privacy_dialog = プライバシーとコンテンツのブロック
+title_privacy = プライバシー
+title_settings = 設定
+title_unified_folders = 統合フォルダー
+title_zbox_locked = ZBox はロックされています
+title_message_view = メッセージ表示
+title_remote_content = リモートコンテンツ
+title_refresh = 更新
+title_refresh_all = すべて更新
+mv_choose_folder = 添付ファイルを保存するフォルダーを選択
+title_thread = スレッド
+title_inbox = 受信トレイ
+title_compose = 作成
+title_watch_thread = スレッドを監視
+title_ignore_thread = スレッドを無視
+title_edit_signature = 署名を編集
+title_account = アカウント
+mf_folder_name_prompt = フォルダー名:
+mf_new_name_prompt = 新しい名前:
+title_refresh_all_accounts = すべてのアカウントを更新
+title_sender = 差出人
+title_new_mail = 新着メール
+mf_export_dialog_title = {count} 個のアカウントすべてと設定をエクスポート
+mf_related_tab = 関連: {subject}
+title_hotkeys_diagnostic = ホットキー診断
+set_choose_attachment_dir = 添付ファイルの保存先フォルダーを選択
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox はロックされています。下のいずれかの方法でロックを解除してください。キャンセルすると、どのアカウントも開かずに ZBox を閉じます。
+unl_note_foreign_passkey = このフォルダーに保存されたパスキーは別のコンピューターのものなので、ここでは使えません。セキュリティキーまたはマスターパスワードでロックを解除してから、設定の「プライバシーとセキュリティ」の「ロック解除の方法」で、このコンピューターのパスキーを設定してください。
+unl_note_methods = アプリのロックがオンのとき、マスターパスワードに加えて、これらのどれでも ZBox のロックを解除できます。パスキーはこのコンピューターの Windows Hello を使います。セキュリティキーは USB または NFC の FIDO2 キーで、差し込んだどのコンピューターでも使えます。
+unl_note_not_encryption = これらはアプリのロックを解除するもので、何も暗号化しません。このフォルダーを初めて使うコンピューターで、保存されたアカウントのパスワードを開けるのは、引き続きマスターパスワードだけです。マスターパスワードを先に設定する必要があり、設定するまでこれらは追加できません。
+unl_add_passkey_unavailable = &パスキーを追加 (利用不可)
+unl_add_key_unavailable = &セキュリティキーを追加 (利用不可)
+unl_reassign_unavailable = &パスキーをこのコンピューターに割り当て直す (利用不可)
+unl_status_cancelled_passkey = パスキーはキャンセルされました。ZBox はロックされたままです。
+unl_status_cancelled_key = セキュリティキーはキャンセルされました。ZBox はロックされたままです。
+unl_status_enter_password = マスターパスワードを入力してください。
+unl_status_no_master = マスターパスワードが設定されていないため、まだパスキーやセキュリティキーを追加できません。設定の「プライバシーとセキュリティ」のマスターパスワードボタンで設定してから、ここに戻ってください。マスターパスワードは、別のコンピューターで保存済みのアカウントのパスワードを開くためのものです。パスキーはこのコンピューターでアプリのロックを解除するだけなので、単独では使えません。
+unl_status_unsupported = このコンピューターの Windows はパスキーやセキュリティキーに対応していないため、ここではマスターパスワードでしか ZBox のロックを解除できません。
+unl_status_foreign_one = 1 個のパスキーが別のコンピューターのもので、ここでは ZBox のロックを解除できません。割り当て直すと、このコンピューターで作成したものに置き換わります。
+unl_status_foreign_many = {count} 個のパスキーが別のコンピューターのもので、ここでは ZBox のロックを解除できません。割り当て直すと、このコンピューターで作成したものに置き換わります。
+unl_status_foreign_one_no_hello = 1 個のパスキーが別のコンピューターのもので、ここでは ZBox のロックを解除できません。ここでは Windows Hello が設定されていないため、このコンピューターで置き換えることはできません。削除すると忘れます。
+unl_status_foreign_many_no_hello = {count} 個のパスキーが別のコンピューターのもので、ここでは ZBox のロックを解除できません。ここでは Windows Hello が設定されていないため、このコンピューターで置き換えることはできません。削除すると忘れます。
+unl_status_no_hello = このコンピューターには Windows Hello が設定されていないため、ここではパスキーを追加できません。セキュリティキーは追加できます。
+unl_status_none_registered = ロック解除の方法はまだ登録されていません。
+unl_status_add_cancelled_passkey = パスキーの追加はキャンセルされました。
+unl_status_add_cancelled_key = セキュリティキーの追加はキャンセルされました。
+unl_status_added = 追加しました: {name}。
+unl_status_reassign_cancelled = 割り当て直しはキャンセルされました。何も変更されていません。
+unl_status_reassigned = {name} を追加し、ほかのコンピューターの {count} 個を忘れました。
+unl_status_test_cancelled = テストはキャンセルされました。
+unl_status_removed = 削除しました。
+unl_remove_warning_last = {name} を削除しますか?\n\nこれは登録されている唯一のロック解除の方法で、マスターパスワードも設定されていないため、アプリのロックがオンの場合、ZBox のロックを解除する手段がなくなります。締め出されることはなくロックは省略されますが、ZBox はロックされない状態で開くようになります。
+unl_remove_warning = {name} を削除しますか? ZBox はそれを受け付けなくなります。
+ab_col_email = メール
+ab_col_name = 名前
+ab_col_phone = 電話
+ab_no_contacts = 連絡先はまだありません。
+acct_auto_check = 新着メッセージを自動的にチェックする
+acct_note_auto_check = オフ: ZBox はこのアカウントに自分からは一切接続しません。新着メールの監視も、定期的な更新も、バックグラウンドでのダウンロードも行わないので、不安定なサーバーがほかのアカウントを遅くすることはありません。ダウンロード済みのメールは引き続き開け、更新 (F5)、送信、削除はサーバーに届きます。ツールメニューやアカウントのコンテキストメニューの「自動チェックを一時停止」と同じです。
+bl_day_ago = 1 日前
+bl_days_ago = {days} 日前
+bl_label_blocklists = ブロックリスト
+bl_label_phishing = フィッシングリスト
+bl_last_failed = 前回の試行は失敗しました: %s
+bl_not_downloaded = まだダウンロードされていません。
+bl_save_failed = %s をダウンロードしましたが保存できませんでした: %s
+bl_seed_only = 組み込みリストの %s 個のドメイン。まだインターネットから更新されていません。
+bl_some_failed = 一部のソースが失敗しました: %s
+bl_some_unreachable = 一部のソースに接続できませんでした: %s
+bl_status_line = %s 個のドメイン。最終更新: %s。
+bl_up_to_date = %s はすでに最新です。
+bl_update_failed = %s を更新できませんでした: %s
+bl_updated = %s を更新しました: %s 個のドメイン。
+cc_age_choice = %s より古いすべてのメッセージキャッシュ
+cc_auto_button = 自動クリーンアップ: %s より古いキャッシュ済みメッセージ...
+comp_btn_discard = &破棄
+comp_btn_keep_editing = &編集を続ける
+comp_btn_save_draft = &下書き保存
+comp_no_account = アカウントが設定されていません
+comp_saving_draft = 下書きを保存しています…
+comp_this_message = このメッセージ
+comp_unsent_save_q = 閉じる前に %s を下書きとして保存しますか?
+comp_unsent_tray_q = ZBox がトレイに入る前に %s を下書きとして保存しますか?
+doc_unreadable = ドキュメントファイルを読めませんでした:
+envlist_all_disabled = すべてのアカウントが無効です。
+envlist_col_date = 日付
+envlist_col_from = 差出人
+envlist_col_status = 状態
+envlist_col_subject = 件名
+envlist_collapsed = 折りたたみ (%d)
+envlist_empty = このフォルダーにメッセージはありません。
+envlist_loading = メッセージを読み込んでいます...
+envlist_no_accounts = アカウントはまだ設定されていません。
+envlist_no_ignored = このフォルダーに無視したスレッドはありません。
+envlist_no_watched = このフォルダーに監視中のスレッドはありません。
+envlist_select_folder = メッセージを読み込むアカウントまたはフォルダーを選択してください。
+eula_link_0 = Himalaya のライセンスページをブラウザーで開く
+eula_link_1 = StevenBlack hosts のライセンスページをブラウザーで開く
+eula_link_2 = EasyList/EasyPrivacy のライセンスページをブラウザーで開く
+eula_link_3 = Phishing.Database のライセンスページをブラウザーで開く
+eula_read_note = サードパーティのセクションを含め、下のライセンスをお読みください。次へを使えるようにするには「同意します」をチェックする必要があります。「同意しません」を選ぶと ZBox は起動せずに閉じ、今回の実行で作成したものを削除します。
+eula_unreadable = ライセンスファイルを読めませんでした:\n%s
+filters_title = フィルターを実行
+flag_title = メッセージにスターを付ける
+folder_type_archive = アーカイブ
+folder_type_drafts = 下書き
+folder_type_inbox = 受信トレイ
+folder_type_junk = 迷惑メール
+folder_type_sent = 送信済み
+folder_type_trash = ごみ箱
+mime_application_json = JSON ファイル
+mime_application_msword = Word 文書
+mime_application_octet_stream = バイナリファイル
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel スプレッドシート
+mime_application_vnd_ms_powerpoint = PowerPoint プレゼンテーション
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint プレゼンテーション
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel スプレッドシート
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word 文書
+mime_application_xml = XML ファイル
+mime_application_zip = ZIP アーカイブ
+mime_audio_mpeg = MP3 オーディオ
+mime_audio_ogg = OGG オーディオ
+mime_audio_wav = WAV オーディオ
+mime_image_bmp = BMP 画像
+mime_image_gif = GIF 画像
+mime_image_jpeg = JPEG 画像
+mime_image_png = PNG 画像
+mime_image_svg_xml = SVG 画像
+mime_image_webp = WebP 画像
+mime_text_csv = CSV ファイル
+mime_text_html = HTML ファイル
+mime_text_plain = テキストファイル
+mime_video_mp4 = MP4 ビデオ
+mime_video_x_msvideo = AVI ビデオ
+move_title_junk = 迷惑メールとしてマーク
+move_title_move_to = 移動
+move_title_not_junk = 迷惑メールではないとマーク
+mp_explain_set = マスターパスワードが設定されています。これにより、この ZBox フォルダーは別のコンピューターでも保存済みのアカウントのパスワードを開けます。\n\n削除するには、新しいパスワードの欄を両方とも空にして OK を押してください。削除してもこのコンピューターには影響しませんが、フォルダーはほかのコンピューターでは、すべてのアカウントでサインインし直さないと使えなくなります。
+mp_explain_unset = マスターパスワードが設定されていないため、保存されたアカウントのパスワードはこのコンピューターとこの Windows アカウントでしか読めません。フォルダーを別の場所にコピーすると、すべてのアカウントでメールサーバーにサインインし直す必要があります。\n\n設定すると、ZBox は新しいコンピューターごとに一度それを尋ね、その後はそこで通常どおりロックを解除します。このコンピューターで再び尋ねることはありません。\n\n書き留めて安全な場所に保管してください。どこにも保存されず、復元もできません。忘れた場合は、すべてのアカウントでメールサーバーにサインインし直す必要があります。
+mp_label_confirm = &新しいマスターパスワードの確認:
+mp_label_current = &現在のマスターパスワード:
+mp_label_master = &マスターパスワード:
+mp_label_new = &新しいマスターパスワード:
+mp_name_confirm = 新しいマスターパスワードの確認
+mp_name_current = 現在のマスターパスワード
+mp_name_master = マスターパスワード
+mp_name_new = 新しいマスターパスワード
+mp_prompt_existing = 保存されたアカウントのパスワードは、このコンピューターでのみ保護されています。ZBox を別のコンピューターに移しても開けるように、マスターパスワードを設定してください。
+mp_prompt_first_run = ZBox はこれからアカウントのパスワードを保存します。ZBox を別のコンピューターに移しても開けるように、今マスターパスワードを設定してください。
+mp_prompt_new_account = ZBox はこれからこのアカウントのパスワードを保存します。ZBox を別のコンピューターに移してもアカウントを開けるように、先にマスターパスワードを設定してください。
+mp_removed_done = マスターパスワードを削除しました。保存されたパスワードは、このコンピューターとこの Windows アカウントでのみ使えます。
+mp_set_done = マスターパスワードを設定しました。このフォルダーを開く新しいコンピューターごとに ZBox は一度それを尋ね、その後はそこで通常どおりロックを解除します。
+mv_body_title = メッセージ本文
+mv_col_format = 形式
+mv_col_name = 名前
+mv_col_size = サイズ
+mv_format_unknown = 不明
+mv_size_unknown = サイズ不明
+na_account_settings = アカウントと差出人情報の設定
+na_disable_account = アカウントを無効にする
+na_edit_signature = 署名を編集
+na_message_filters = メッセージフィルター
+na_mute_account = アカウントをミュート
+na_pause_auto_check = 自動チェックを一時停止
+na_remove_account = アカウントを削除
+na_set_default = 既定のアカウントに設定
+no_offline_copy = %s のオフラインコピーはありません。オンラインのときに開くか、ファイル、オフライン、今すぐ同期を使ってください。
+perm_delete_confirm = {msg} ごみ箱を経由せず、元に戻せません。
+perm_delete_many = {count} 通のメッセージを完全に削除しますか?
+perm_delete_one = {count} 通のメッセージを完全に削除しますか?
+preset_note_apple = Apple ではアプリ用パスワードが必要です。
+preset_note_fastmail = Fastmail ではアプリパスワードが必要です。
+preset_note_google = Google では通常のパスワードではなく、アプリパスワードまたは OAuth2 が必要です。
+preset_note_proton = ProtonMail では ProtonMail Bridge アプリをローカルで実行する必要があります。
+preset_note_yahoo = Yahoo ではアプリパスワードが必要です。
+priv_phishing_not_loaded = フィッシングリスト: まだ読み込まれていません。これらのルールがオンで ZBox がオンラインのときに、初めてダウンロードされます。
+priv_phishing_prefix = フィッシングリスト:
+priv_status_unavailable = ブロックリストの状態を取得できません。
+rdr_load_failed = メッセージを読み込めませんでした。\n\n{message}
+rdr_loading = メッセージを読み込んでいます...
+rdr_select_message = ここで読むメッセージを選択してください。
+set_autosave_off = オフ — 手動で保存するには下書き保存 (Ctrl+S) を使用
+set_autosave_seconds = {seconds} 秒ごと
+set_no_unlock = ここで使えるパスキーやセキュリティキーはありません
+set_purge_days = {days} 日後
+set_purge_off = オフ — ごみ箱と迷惑メールは自動削除されません
+set_purge_one_day = 1 日後
+set_rt_bundled_installed = 同梱のランタイム: インストール済み。
+set_rt_bundled_many = 同梱のランタイム: %s をインストール済み。
+set_rt_bundled_none = 同梱のランタイム: インストールされていないため、ZBox はシステム全体のものを使います。
+set_rt_bundled_unknown = 同梱のランタイム: 判別できませんでした。
+set_rt_bundled_ver = 同梱のランタイム: バージョン %s をインストール済み。
+set_rt_system_unknown = システム全体のランタイム: バージョンを判別できませんでした。
+set_rt_system_ver = システム全体のランタイム: バージョン %s。
+set_unlock_many = ここで使えるロック解除の方法: %d 個
+set_unlock_unreadable = ロック解除の方法を読み取れませんでした
+sig_tab_formatted = 書式付き
+sig_tab_source = HTML ソース
+srch_all_accounts = すべてのアカウント
+srch_all_folders = すべてのフォルダー
+tab_mail = メール
+tab_new_message = 新しいメッセージ
+tab_saved_message = 保存したメッセージ
+title_copy_to_err = コピー
+title_mark_message = メッセージにマーク
+title_unsent_message = 未送信のメッセージ
+tree_unified_root = 統合フォルダー
+unlock_kind_passkey = パスキー (Windows Hello)
+unlock_kind_security_key = セキュリティキー
+unlock_prompt_message = Windows が確認を求めています。Windows Hello、PIN、またはセキュリティキーでその確認に応答してください。Windows の処理が終わると、このウィンドウは自動的に閉じます。
+unlock_prompt_title = Windows セキュリティ
+unlock_registering = このロック解除の方法を登録しています
+unlock_the_passkey = パスキー
+unlock_the_security_key = セキュリティキー
+wildcard_eml = メールファイル (*.eml)|*.eml|すべてのファイル (*.*)|*.*
+wildcard_export = ZBox エクスポート (*.json)|*.json
+wiz_not_supported = 未対応: {name}。{note} このアカウントは ZBox に追加できません。
+stock_apply = &適用
+stock_cancel = キャンセル
+stock_close = &閉じる
+stock_help = &ヘルプ
+stock_no = &いいえ
+stock_ok = OK
+stock_yes = &はい
+wiz_btn_back = &< 戻る
+wiz_btn_finish = &完了
+wiz_btn_next = &次へ >
+acct_unsaved_q = このアカウントへの変更を保存しますか?
+btn_save = &保存
+spell_add_to_dictionary = &辞書に追加
+spell_no_suggestions = 候補なし
+title_signature_for = 署名: {account}
+title_mark_folder_read = フォルダーを既読にする
+title_update_available = ZBox の更新
+update_available = ZBox {new} が利用可能です。現在のバージョンは {current} です。
+upd_notes_label = リリースノート:
+upd_no_notes = リリースノートはありません。
+upd_notes_name = リリースノート
+upd_update_now = はい、今すぐ更新
+upd_remind_later = 後で通知
+title_update_download = ZBox の更新をダウンロード中
+upd_downloading = ZBox {version} をダウンロードしています...
+upd_progress_name = ダウンロードの進行状況
+upd_cancel = キャンセル
+upd_cancelling = キャンセルしています...
+set_updates_label = 更新:
+set_update_auto = 更新を自動的に確認する
+set_update_mode_label = 更新が見つかったとき:
+set_update_ask = 確認する
+set_update_silent = 確認せずにダウンロードしてインストールする
+set_update_note = ZBox は GitHub で新しいリリースを最大 1 日 1 回、操作されていないときだけ確認し、バージョン番号以外は何も送信しません。確認する を選ぶと、新しいバージョンとそのリリースノートが、はい、今すぐ更新 と 後で通知 とともに表示されます。確認せずにダウンロードしてインストールする を選ぶと、操作されていない時間に更新を取得し、次に ZBox を完全に終了したときにインストールします。作業中にインストールすることはありません。更新で置き換えられるのは ZBox 自身のプログラムファイルだけです。アカウント、パスワード、設定、メール、ログ、サウンドテーマ、追加した言語には一切触れません。以前のバージョンは保存され、新しいバージョンが起動しない場合は自動的に元に戻されます。ヘルプ、更新 には、手動で更新するための 今すぐ更新を確認 とリリースページもあります。
+set_update_check_now = 今すぐ確認
+mv_attachment_button = {filename} ({format})
+att_open = 開く
+att_save = 保存...
+att_save_all = すべての添付ファイルを保存
+title_save_attachment = 添付ファイルを保存
+title_full_headers = すべてのヘッダー
+hdr_copy_all = すべてコピー
+acct_identity_own_signature = 独自の署名を使用する
+acct_identity_own_reply_to = 独自の返信先アドレスを使用する
+acct_identity_reply_to = 返信先アドレス
+acct_identity_always_cc = 常にこれらのアドレスを Cc に入れる
+acct_identity_cc = Cc アドレス
+acct_identity_always_bcc = 常にこれらのアドレスを Bcc に入れる
+acct_identity_bcc = Bcc アドレス
+acct_identity_own_folders = 独自の下書きと送信済みフォルダーを使用する
+acct_identity_drafts = 下書きフォルダー
+acct_identity_sent = 送信済みフォルダー
+acct_identity_own_smtp = 独自の送信サーバーを使用する
+acct_identity_smtp_login = 送信用のログイン名
+acct_identity_smtp_password = 送信用のパスワード
+acct_identity_test_smtp = 送信サーバーをテスト
+acct_identity_note_smtp = ログイン名を空欄にすると、この差出人情報のメールアドレスでログインします。送信済みのコピーはこのアカウントの送信済みフォルダーに保存されます。この差出人情報に独自の送信済みフォルダーがある場合はそこに保存されます。
+identity_field_required = {field} を入力するか、そのチェックボックスをオフにしてください。
+identity_field_invalid = {field} に無効なアドレスがあります。
+identity_folders_required = 下書きフォルダー、送信済みフォルダー、またはその両方を選択するか、チェックボックスをオフにしてください。
+identity_password_required = 送信用のパスワードを入力してください。
+identity_smtp_testing = 送信サーバーをテストしています。
+identity_smtp_ok = 送信サーバーがログインを受け付けました。
+identity_smtp_failed = 送信サーバーのテストに失敗しました。\n\n{error}
+set_bare_keys_note_move = M と C は選択したメッセージのフォルダー付きの「移動」メニューと「コピー」メニューを開きます。Shift+M はフォルダー名の一部を入力して移動するためのボックスを開きます。これをオフにすると、M と C も頭文字によるナビゲーションに戻ります。
+folder_search_filter = フォルダー名に含まれる文字
+folder_search_list = 一致するフォルダー
+folder_search_no_match = その名前に一致するフォルダーはありません。
+wiz_signin_method = サインイン方法
+wiz_method_password = パスワード
+wiz_method_microsoft = Microsoft アカウント (Outlook.com、Hotmail、Live、Microsoft 365)
+wiz_ms_servers = Microsoft サインイン。Outlook.com、Hotmail、Live、Microsoft 365 のサーバー設定を入力しました。
+wiz_welcome_notice = Gmail。通常の Google のパスワードは拒否されますが、アプリパスワードは使えます。先に 2 段階認証プロセスをオンにする必要があります。下のボタンで Google の説明が開きます。\n\nOutlook.com、Hotmail、Live、Microsoft 365。これらは Microsoft アカウントでサインインします。ログインのページで Microsoft アカウントを選び、ブラウザーまたはコードでサインインしてください。\n\nその他のプロバイダー。通常は普段のパスワードまたはアプリパスワードが使え、サーバー設定はプロバイダーのヘルプページに記載されています。
+preset_note_outlook = Outlook.com、Hotmail、Live、MSN のアカウントは Microsoft アカウントでサインインします。ログインのページでサインイン方法として Microsoft アカウントを選んでください。
+ms_status_name = Microsoft サインインの状態
+ms_browser_button = ブラウザーでサインイン
+ms_code_button = コードでサインイン
+ms_copy_code = コードをコピー
+ms_open_page = サインインページを開く
+ms_stop = 待機をやめる
+ms_not_configured = この ZBox には Microsoft サインインが設定されていません。
+ms_not_signed_in = まだサインインしていません。ブラウザーで、または任意のデバイスでコードを使ってサインインしてください。
+ms_signed_in = {address} としてサインインしました。
+ms_signed_in_plain = サインインしました。
+ms_needs_sign_in = このアカウントは Microsoft へのサインインが再び必要です。ブラウザーで、または任意のデバイスでコードを使ってサインインしてください。
+ms_reason_cancelled = サインインを中止しました。
+ms_reason_timeout = 時間内に応答がありませんでした。
+ms_reason_denied = アクセスが許可されませんでした。
+ms_reason_expired = コードの有効期限が切れました。新しいコードを取得してください。
+ms_reason_network = Microsoft に接続できませんでした。接続を確認して、もう一度お試しください。
+ms_reason_server = Microsoft の応答: {detail}
+ms_page_done = サインインしました。このページを閉じて ZBox に戻ってください。
+ms_page_failed = サインインが完了しませんでした。詳細は ZBox に戻って確認してください。
+ms_browser_waiting = ブラウザーに Microsoft のサインインページが表示されています。そこでサインインを完了してから、ZBox に戻ってください。
+ms_code_asking = Microsoft にサインインコードを要求しています...
+ms_code_waiting = 任意のデバイスで {address} を開き、コード {code} を入力してください。サインインが完了するまで ZBox はここで待機します。
+ms_failed = サインインが完了しませんでした。{reason}
+ms_code_copied = コードをコピーしました。
+offline_inbox_only = オフラインで使えるように保持されるのは受信トレイとアーカイブだけです。{folder} を開くにはオンラインにしてください。
+block_sender_rule_name = {sender} をブロック
+title_block_sender = この差出人をブロック
+title_unblock_sender = この差出人のブロックを解除
+set_clear_inbox_cache = 受信トレイから移動したメッセージのキャッシュを消去する
+set_clear_inbox_cache_note = オンにすると、メッセージが受信トレイから出た時点で、そのオフラインコピーと保存された本文を削除します。携帯電話など別の場所で削除や移動された場合も同様なので、もう存在しない場所に表示されることはありません。これらのファイルを保持するのは受信トレイだけで、ほかのフォルダーは常にサーバーから読み込みます。
+empty_trash_all_confirm = すべてのアカウントのごみ箱にあるメッセージをすべて完全に削除しますか？\n\nこの操作は元に戻せません。
+
+[errors]
+language_restart_failed = ZBox は自身を再起動できませんでした:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} のためのメールクライアントを開けませんでした。
+
+wizard_test_failed = 接続に失敗しました:\n\n{error}
+
+contacts_import_unreadable = そのファイルを読めませんでした。\n\n{error}
+contacts_export_unwritable = そのファイルに書き込めませんでした。\n\n{error}
+
+attach_unreadable = 添付ファイル {path} を読めませんでした:\n{error}
+send_failed = メッセージを送信できませんでした。\n\n{error}
+draft_attach_unreadable = 添付ファイル {path} を読めませんでした:\n{error}\n\n下書きは保存されていません。
+draft_save_failed = 下書きを保存できませんでした。\n\n{error}
+
+clipboard_unavailable = クリップボードを開けませんでした。
+open_link_failed = 次のアドレスでブラウザーを開けませんでした:\n{url}
+
+master_password_mismatch = 新しいマスターパスワードの 2 つの欄が一致しません。
+master_password_required = マスターパスワードを入力するか、キャンセルを押してください。
+master_password_not_set = マスターパスワードを設定できませんでした: {error}
+master_password_not_here = ここではマスターパスワードを変更できません。
+
+attachment_save_failed = 添付ファイルを保存できませんでした。\n\n{error}
+attachments_save_failed = 添付ファイルを保存できませんでした。\n\n{error}
+print_failed = メッセージを印刷できませんでした。プリンターが設定されているか確認してください。
+print_preview_failed = 印刷プレビューを開けませんでした。プリンターが設定されているか確認してください。
+
+related_search_failed = 関連メッセージを検索できませんでした。\n\n{error}
+search_failed = 検索に失敗しました。\n\n{error}
+
+unlock_methods_no_config_folder = ZBox が設定フォルダーを見つけられないため、ここではロック解除の方法を管理できません。
+shortcut_no_folder = ZBox が自身のフォルダーを特定できないため、ここではショートカットを作成できません。
+shortcut_failed_settings = デスクトップのショートカットを作成できませんでした:\n\n{error}
+
+unlock_method_failed = {what} はうまくいきませんでした。\n\n{error}
+unlock_check_failed = マスターパスワードを確認できませんでした。\n\n{error}
+unlock_password_wrong = マスターパスワードが正しくありません。
+unlock_add_failed = {what} を追加できませんでした。\n\n{error}
+unlock_passkey_setup_failed = このコンピューターでパスキーを設定できなかったため、何も変更されていません。\n\n{error}
+unlock_method_test_failed = その方法はうまくいきませんでした。\n\n{error}
+
+account_list_unreadable = ZBox はアカウント一覧を開けませんでした。\n\n{error}\n\nアカウントは読み込まれておらず、ファイルも変更されていないので、何も失われていません。読み込めるようになるまで、アカウントの追加、編集、削除はできません。
+account_list_no_accounts = このセッションでは ZBox がアカウント一覧を開けなかったため ({error})、選択できるアカウントがありません。何も失われておらず、何も変更されていません。ZBox を閉じて起動し直し、求められたらマスターパスワードを入力してください。
+open_message_failed = メッセージを開けませんでした。\n\n{error}
+filters_list_failed = {folder} のメッセージを一覧表示できませんでした。\n\n{error}
+filters_move_failed = フィルター処理したメッセージを移動できませんでした。\n\n{error}
+cache_clear_failed = キャッシュを削除できませんでした。\n\n{error}
+folder_create_failed = フォルダーを作成できませんでした。\n\n{error}
+folder_rename_failed = フォルダー名を変更できませんでした。\n\n{error}
+folder_delete_failed = フォルダーを削除できませんでした。\n\n{error}
+folder_subscribe_failed = フォルダーを購読できませんでした。\n\n{error}
+folder_unsubscribe_failed = フォルダーの購読を解除できませんでした。\n\n{error}
+saved_open_failed = ファイルを開けませんでした。\n\n{error}
+saved_parse_failed = このファイルをメールメッセージとして解析できませんでした。\n\n{error}
+save_file_failed = ファイルを保存できませんでした。\n\n{error}
+save_fetch_failed = 保存するメッセージを取得できませんでした。\n\n{error}
+empty_trash_failed = ごみ箱を空にできませんでした。\n\n{error}
+empty_junk_failed = 迷惑メールフォルダーを空にできませんでした。\n\n{error}
+export_write_failed = エクスポートファイルに書き込めませんでした。\n\n{error}
+import_read_failed = このファイルを ZBox のエクスポートとして読めませんでした。\n\n{error}
+import_not_export = このファイルは ZBox のエクスポートではないようです。\n\n{error}
+search_open_failed = このメッセージを開けませんでした。
+related_load_failed = このメッセージを読み込めませんでした。\n\n{error}
+reply_load_failed = 返信するメッセージを読み込めませんでした。\n\n{error}
+forward_load_failed = 転送するメッセージを読み込めませんでした。\n\n{error}
+action_failed = この操作を完了できませんでした。\n\n{error}
+undo_failed = {label} を元に戻せませんでした。\n\n{error}
+copy_failed = メッセージをコピーできませんでした。\n\n{error}
+delete_failed = メッセージを削除できませんでした。\n\n{error}
+archive_failed = メッセージをアーカイブできませんでした。\n\n{error}
+master_password_not_changed = マスターパスワードを変更できませんでした: {error}
+shortcut_failed_startup = デスクトップのショートカットを作成できませんでした:\n\n{error}\n\nZBox の起動はこのまま続きます。後で設定からもう一度試せます。
+account_locked_action = ZBox は次の操作を実行できません: %s。このセッションではアカウント一覧を開けず (%s)、何も変更されていません。ZBox を閉じて起動し直し、求められたらマスターパスワードを入力してください。
+send_tls_mismatch = メッセージを送信できませんでした。送信サーバーが暗号化なしで応答したため、送信の暗号化がポートと合っていません。ツール、アカウントと差出人情報の設定で、ポート 587 には STARTTLS、ポート 465 には SSL/TLS を使ってから、もう一度送信してください。\n\n{error}
+mark_folder_read_failed = フォルダーを既読にできませんでした。\n\n{error}
+update_failed = 更新をダウンロードできなかったため、何も変更されていません。\n\n{error}
+update_rolled_back = 更新を起動できなかったため、以前のバージョンに戻しました。
+attachment_open_failed = 添付ファイルを開けませんでした。\n\n{error}
+headers_failed = メッセージのヘッダーを読み込めませんでした。\n\n{error}
+wizard_ms_sign_in_first = 続行する前に Microsoft でサインインしてください。このページにある 2 つのサインインボタンのどちらかを使ってください。
+wizard_provider_unsupported = ZBox はこのプロバイダーにサインインできません。理由はこのページの注記に書かれています。戻って別のメールアドレスを使うか、キャンセルしてください。
+acct_ms_sign_in_first = 保存する前に Microsoft でサインインするか、サインイン方法としてパスワードを選んでください。
+ms_sign_in_again = {account} は Microsoft へのサインインが再び必要です。アカウントと差出人情報の設定を開いて、そこでサインインしてください。
+empty_trash_all_failed = 次のごみ箱を空にできませんでした: {accounts}
+
+[help]

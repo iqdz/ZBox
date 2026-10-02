@@ -1,0 +1,103 @@
+Genel
+F6: Odağı bölmeler arasında gezdir
+Ctrl+Tab: Sonraki sekme
+Ctrl+Shift+Tab: Önceki sekme
+Ctrl+W veya Ctrl+F4: Geçerli sekmeyi kapat
+Escape: İleti listesi odaktayken genişletilmiş bir konu varsa onu daraltır; yoksa geçerli sekmeyi kapatır (ileti, kaydedilmiş ileti veya gönderilmemiş bir yazım -- kaydedilmemiş değişiklik varsa önce sorar)
+Uygulama tuşu veya Shift+F10: Odaktaki liste veya ağaç öğesinin bağlam menüsünü aç
+F1: Klavye Kısayolları, bu sayfa
+Ctrl+Shift+Q: Çıkış -- Ayarlar'da "Sistem tepsisine kapat" açık olsa bile ZBox'tan her zaman gerçekten çıkar (bu ayar açıkken pencerenin Kapat düğmesi, Alt+F4 ve Posta sekmesindeki Ctrl+W çıkmak yerine tepsiye gizler; tepsi simgesinin kendi Çıkış öğesi de her zaman gerçekten çıkar)
+Ctrl+Shift+Delete: Çevrimdışı ileti önbelleğini temizle -- yalnızca ZBox'ın yerel kopyaları, hiçbir sunucudaki hiçbir şey değil (Araçlar > Önbellek Temizleme Yapılandırması'nda bir düğme olarak da var)
+
+Posta
+Ctrl+N: Yeni ileti
+Ctrl+Shift+N: Yeni e-posta hesabı
+F5: Geçerli hesap için yeni postaları al
+Shift+F5: Tüm hesaplar için yeni postaları al
+Ctrl+Shift+J: Gelen Kutusu İleti Listesine Git
+Ctrl+Y: Klasör Listesine Git
+Klasör listesinde kapalı bir hesap veya klasör üzerinde Enter: sağ ok gibi onu açar
+Ctrl+Shift+B: Adres defteri
+Ctrl+Shift+F: İletilerde ara
+Ctrl+Shift+T: İlgili iletileri göster
+
+İleti listesi
+Delete, Shift+Delete, Arşivle, İşaretle/İşareti kaldır, Gereksiz/Gereksiz değil olarak işaretle, Taşı ve Kopyala, DARALTILMIŞ bir konu satırında kullanıldığında konudaki tüm iletilere uygulanır -- içindeki tek bir iletiyle işlem yapmak için önce konuyu genişletin (Sağ ok veya Enter/Space)
+Ctrl+A: Tüm iletileri seç
+Ctrl+Shift+L: Daha fazla ileti yükle
+Delete: İletileri Çöp Kutusu'na taşı
+Shift+Delete: İletileri kalıcı olarak sil
+Ctrl+Z: Son Silme, Arşivleme, Gereksiz olarak veya Gereksiz değil olarak işaretlemeyi geri al
+S: Seçili iletileri işaretle/işareti kaldır
+A: Seçili iletileri arşivle
+J: Seçili iletileri gereksiz olarak işaretle
+Shift+J: Seçili iletileri gereksiz değil olarak işaretle
+W: Konuyu izle -- seçimin ait olduğu konunun izlenip izlenmediğini değiştirir (İleti menüsünde ve sağ tıklamada da var)
+K: Konuyu yok say -- o konunun yok sayılıp sayılmadığını değiştirir (İleti menüsünde ve sağ tıklamada da var)
+M: Seçili iletileri taşı -- klasörleri içeren Taşı menüsünü açar
+Shift+M: Klasör adının bir kısmını yazarak seçili iletileri taşı
+C: Seçili iletileri kopyala -- klasörleri içeren Kopyala menüsünü açar
+Yukarıdaki S, A, J, W ve K varsayılan olarak açıktır ve Ayarlar'dan kapatılabilir (aksi halde ileti listesinin kendi ilk harfle gezinmesinden önce gelirler)
+Yukarıdaki M, Shift+M ve C de aynı ayara uyar
+Daraltılmış bir konuda Enter veya Space: o konudaki en yeni okunmamış iletiyi (konunun tamamı okunduysa en yeni iletiyi) tek bir ileti olarak, tek sekmede açar -- ardından Ctrl+Shift+Page Down ve Ctrl+Shift+Page Up hiç ikinci bir ileti açmadan konunun geri kalanında gezinir. Sıradan bir iletide onu her zamanki gibi açar
+Daraltılmış bir konuda Sağ ok: iletilerini hiçbirini açmadan liste olarak gösterir -- oradan kendi Enter veya Space tuşuyla birer birer açın
+Ctrl+Shift+O: İletiyi konuşmada aç -- konunun tamamı tek sekmede, iletilerinin listesi ve altında seçili iletinin metniyle. Birer birer okumak için listede oklarla gezinin; bir satırda Enter o iletiyi kendi tam sekmesinde tek başına açar. Thunderbird'ün kendi komutuyla aynı ad ve tuş
+Sol ok: seçimin o an içinde bulunduğu konuyu daralt
+*: Tüm konuları genişlet (Görünüm > Konular'da da var); \: Tüm konuları daralt (Görünüm > Konular'da da var)
+Görünüm > Konular > Tümü / İzlenen Konular / Yok Sayılan Konular hangi konuların gösterileceğini süzer -- Tümü'ne geri dönmek her iletiyi her zaman geri getirir; bununla klasörden hiçbir şey silinmez
+
+Açık bir ileti
+Alt+A: Bu iletiyi arşivle -- yalnızca metni (Metin veya HTML) gerçekten klavye odağındayken; başka yerlerde Alt+A, Hesaplar menüsünü açma şeklindeki normal anlamını korur
+Ctrl+R: Yanıtla
+Ctrl+Shift+R: Tümünü yanıtla
+Ctrl+L: İlet
+Ctrl+Delete veya Ctrl+D: Bu iletiyi Çöp Kutusu'na taşı. Bir HTML iletisi odaktayken tek başına Delete tuşunu çoğu zaman ekran okuyucu alır; Shift+Delete kalıcı olarak siler
+Ctrl+Shift+Page Down: Bu konudaki sonraki ileti; Ctrl+Shift+Page Up: önceki. Başka bir sekme açmak yerine geçerli sekmenin yerini alır, böylece hep tek bir ileti açık kalır. Son iletide (yukarı giderken ilkinde) bunu söyler ve sorar; aynı tuşa yeniden basmak iletiyi kapatır ve konuyu bitirerek ileti listesine döner. (Ctrl+Page Up/Down olduğu gibi bırakılır -- bunlar sekme değiştirir)
+Ctrl+B: İleti görünümünü değiştir (Metin/HTML)
+Ctrl+P: Yazdır
+Ctrl+Shift+P: Baskı önizleme
+Ctrl+S: İletiyi farklı kaydet
+Ctrl+U: Gönderenin adını ve adresini söyle
+Ctrl+Shift+U: Göndereni söyle ve adresi kopyala
+Ctrl+Shift+I: Bu iletideki uzak içeriği göster
+Ctrl+Shift+=: İleti yazı tipini büyüt
+Ctrl+Shift+-: İleti yazı tipini küçült
+Ctrl+Shift+0: İleti yazı tipi boyutunu sıfırla
+
+İleti yazma
+Ctrl+Enter veya Alt+S: Gönder
+Ctrl+S: Taslağı kaydet
+Ctrl+Shift+A: Dosya ekle
+Ctrl+Shift+S: Kimden alanındaki hesabın imzasını ekle
+Ctrl+Shift+V: Alıntı olarak yapıştır
+Ctrl+Shift+W: Sözcük sayısı
+Ctrl+Shift+P: İletiyi gönderileceği haliyle önizle
+Escape, Ctrl+W veya Ctrl+F4: Yazma sekmesini kapat -- kaydedilmemiş bir şey varsa önce sorar ve Taslağı kaydet, At veya Düzenlemeye devam et seçeneklerini sunar
+Aşağıdaki her komut, odak ileti metninin içindeyken bile Alt+C ile açılan Yaz menüsünde de bulunur
+
+Biçimlendirme, yazarken
+Ctrl+B: Kalın
+Ctrl+I: İtalik
+Ctrl+Shift+X: Üstü çizili
+Ctrl+Shift+8: Madde işaretli liste
+Ctrl+Shift+7: Numaralı liste
+Ctrl+Shift+9: Alıntı
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Başlık
+Ctrl+K: Bağlantı ekle
+Ctrl+Shift+K: İmlecin bulunduğu yerde hangi biçimlendirmenin geçerli olduğunu söyle
+Ctrl+Shift+M: Odak nerede olursa olsun, ileti metni dahil, Biçim menüsünü aç
+
+Yazım denetimi, yazarken
+Ctrl+Shift+F7: Yazımı denetle
+Ctrl+Shift+F9: Sonraki yazım hatasına git
+Ctrl+Shift+F8: Denetimin durduğu sözcüğü sözlüğe ekle
+
+İki yerde aynı tuş
+Ctrl+S: Yazarken Taslağı kaydet, açık bir iletide İletiyi farklı kaydet
+Ctrl+B: Yazarken Kalın, açık bir iletide Metin ile HTML arasında geçiş
+Ctrl+Shift+P: Yazarken Önizleme, açık bir iletide Baskı önizleme
+Alt+A: Arşivle, ancak yalnızca bir ileti metni klavye odağındayken; başka her yerde Hesaplar menüsünü açar
+
+Tanılama
+Ctrl+Shift+F12: Kısayol Tanılama -- bir yazma sekmesinde basılan her tuş birleşimi için hata ayıklama günlüğüne bir satır yazar, böylece bir tuşun gerçekte nereye ulaştığı kanıtlanabilir. Varsayılan olarak kapalıdır ve aynı tuş onu yeniden kapatır; durum her iki durumda da söylenir

@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Tiếng Việt
+code = vi
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Đã gửi thư.
+draft_saved = Đã lưu thư nháp.
+signature_inserted = Đã chèn chữ ký.
+signature_none = Tài khoản này không có chữ ký.
+signature_saved = Đã lưu chữ ký.
+signature_not_saved = Chưa lưu chữ ký.
+pasted_as_quotation = Đã dán dưới dạng trích dẫn.
+clipboard_empty = Không có gì trong bộ nhớ tạm.
+word_count = {words} từ, {characters} ký tự.
+report_copied = Đã sao chép báo cáo.
+compose_tab_needed = Lệnh đó cần một thẻ soạn thư.
+attach_file_instead = Tập tin được thả vào không được đưa vào nội dung thư. Hãy dùng Đính kèm tập tin để gửi tập tin.
+
+# Formatting in the message body
+formatting_here = Định dạng tại đây: {formatting}.
+no_formatting_here = Không có định dạng tại đây, văn bản thuần.
+
+# Spelling
+nothing_to_check = Không có gì để kiểm tra.
+no_misspellings = Không có lỗi chính tả.
+spelling_dictionary_unavailable = Từ điển chính tả không khả dụng.
+next_misspelling_first = Hãy dùng Lỗi chính tả tiếp theo trước.
+word_added = Đã thêm {word} vào từ điển.
+word_not_added = Không thể thêm {word}.
+corrections_applied_one = Đã áp dụng 1 sửa lỗi.
+corrections_applied_many = Đã áp dụng {count} sửa lỗi.
+corrections_applied_partly = Đã áp dụng {applied} trên {total} sửa lỗi. Số còn lại bị từ chối; xem nhật ký.
+occurrences_replaced_one = Đã thay thế 1 chỗ.
+occurrences_replaced_many = Đã thay thế {count} chỗ.
+
+# Reading mail
+message_did_not_open = Thư không mở được. Máy chủ không phản hồi. Nhấn Enter để thử lại.
+thread_open = {messages} trong chủ đề này. Nhấn lại để đóng.
+no_thread_selected = Chưa chọn chủ đề nào.
+thread_watched = Đã theo dõi chủ đề.
+thread_not_watched = Không còn theo dõi chủ đề.
+thread_ignored = Đã bỏ qua chủ đề.
+thread_not_ignored = Không còn bỏ qua chủ đề.
+none_found = Không tìm thấy.
+refreshing_this_folder = Đang làm mới thư mục này.
+refreshing_all_accounts = Đang làm mới tất cả tài khoản.
+message_view_html = Chế độ xem thư: HTML (hiển thị).
+message_view_text = Chế độ xem thư: Văn bản.
+html_view_still_loading = Thư vẫn đang tải. Phím Escape sẽ đóng thư.
+message_still_opening = Đang mở thư. Máy chủ chậm.
+remote_content_blocked = Đã chặn nội dung từ xa.
+remote_content_unblocked = Đã bỏ chặn nội dung từ xa.
+remote_content_already_showing = Nội dung từ xa đã được hiển thị trong thư này.
+archived = Đã lưu trữ.
+copied_to_folder = Đã sao chép vào {to_folder}.
+deleted_one = Đã xóa vĩnh viễn thư.
+deleted_many = Đã xóa vĩnh viễn {count} thư.
+trashed_one = Đã chuyển thư vào Thùng rác.
+trashed_many = Đã chuyển {count} thư vào Thùng rác.
+
+# Accounts and new mail
+no_account_yet = Chưa có tài khoản nào để chuyển tới.
+inbox_landed = Hộp thư đến của {name}.
+account_enabled = Đã bật {name}.
+auto_check_paused = Đã tạm dừng kiểm tra tự động cho {account}.
+auto_check_resumed = Đã bật kiểm tra tự động cho {account}.
+account_disabled = Đã tắt {name}.
+new_mail_one = 1 thư mới cho {name}.
+new_mail_many = {count} thư mới cho {name}.
+refresh_all_done_one = Đã làm mới 1 tài khoản.
+refresh_all_done_many = Đã làm mới {count} tài khoản.
+refresh_all_done_failures = Đã làm mới {count} tài khoản, {failed} tài khoản không làm mới được.
+refresh_all_done_failures_one = Đã làm mới {count} tài khoản, {failed} tài khoản không làm mới được.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Đã sao chép địa chỉ.
+sender_no_address = {sender}. Không có địa chỉ để sao chép.
+clipboard_not_opened = {sender}. Không thể mở bộ nhớ tạm.
+
+# The signature editor
+signature_page_formatted = Có định dạng. Đây là nội dung sẽ được lưu.
+signature_page_html = Mã nguồn HTML. Đây là nội dung sẽ được lưu.
+signature_page_html_still_wins = Có định dạng. Mã nguồn HTML vẫn là nội dung sẽ được lưu.
+
+# Background work
+phishing_list_updating = Danh sách lừa đảo đang được cập nhật trong nền.
+cache_cleared = Đã xóa {files} tập tin bộ nhớ đệm, {size} MB.
+hotkeys_diagnostic_on = Chẩn đoán phím tắt bật, đã chọn
+hotkeys_diagnostic_off = Chẩn đoán phím tắt tắt, chưa chọn
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Lưu trữ
+action_delete = Xóa
+action_delete_permanently = Xóa vĩnh viễn
+action_mark_as_junk = Đánh dấu là thư rác
+action_mark_as_not_junk = Đánh dấu không phải thư rác
+action_move_to = Di chuyển đến
+action_copy_to = Sao chép đến
+action_mark_message = Đánh dấu thư
+action_undo = Hoàn tác
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Đã hoàn tác {action}.
+undo_done_many = Đã hoàn tác {action} cho {count} thư.
+junk_marked_one = Đã đánh dấu là thư rác.
+junk_marked_many = Đã đánh dấu {count} thư là thư rác.
+junk_no_new_sender = Không chặn thêm người gửi nào: đã bị chặn, là danh sách thư, hoặc là một địa chỉ của chính bạn.
+not_junk_marked_one = Đã đánh dấu không phải thư rác.
+not_junk_marked_many = Đã đánh dấu {count} thư không phải thư rác.
+moved_to_one = Đã chuyển đến {to_folder}.
+moved_to_many = Đã chuyển {count} thư đến {to_folder}.
+copied_to_many = Đã sao chép {count} thư đến {to_folder}.
+marked_read = Đã đánh dấu là đã đọc.
+marked_unread = Đã đánh dấu là chưa đọc.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Đã hủy sau {completed} trên {total}. {succeeded} thành công, {failed} thất bại.
+bulk_failed_one = {done} {failed} trên 1 thư thất bại.
+bulk_failed_many = {done} {failed} trên {total} thư thất bại.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Đậm
+format_word_italic = Nghiêng
+format_word_strike = Gạch ngang
+format_word_href = Liên kết
+format_word_bullet = Danh sách dấu đầu dòng
+format_word_number = Danh sách đánh số
+format_word_quote = Trích dẫn
+format_word_code = Mã
+format_word_heading1 = Tiêu đề
+format_applied = Đã áp dụng {formatting}.
+format_inserted = Đã chèn {formatting}.
+format_not_available = {formatting} không khả dụng trong nội dung thư văn bản thuần.
+format_on = {formatting} bật
+format_off = {formatting} tắt
+link_applied = Đã áp dụng liên kết.
+link_applied_to_selection = Đã áp dụng liên kết cho vùng chọn.
+plain_body_formatting = Nội dung thư văn bản thuần hiển thị định dạng dưới dạng thẻ.
+
+# Reaching either end of a thread
+thread_edge_first = Thư đầu tiên trong chủ đề này. Nhấn lại để đóng.
+thread_edge_last = Thư cuối cùng trong chủ đề này. Nhấn lại để đóng.
+jump_unified_inbox = Hộp thư đến hợp nhất.
+remote_none = Thư này không có nội dung từ xa.
+sender_none = Thư này không có người gửi.
+sender_name_no_address = %s, không có địa chỉ
+signature_not_switched = Chưa đổi chữ ký. Nhấn Ctrl+Shift+S để chèn chữ ký của tài khoản này.
+signature_removed_no_signature = Đã gỡ chữ ký. Tài khoản này không có chữ ký.
+signature_switched = Đã đổi chữ ký sang chữ ký của tài khoản này.
+spell_not_replaced = Không thể thay thế từ.
+spell_replaced_with = Đã thay bằng {word}.
+folder_marked_read = Đã đánh dấu {count} thư là đã đọc.
+folder_no_unread = Không có thư chưa đọc.
+threads_all_collapsed = Đã thu gọn tất cả các chủ đề.
+threads_all_expanded = Đã mở rộng tất cả các chủ đề.
+upd_percent = {percent} phần trăm
+upd_download_done = Đã tải xuống xong. Đang chuẩn bị bản cập nhật...
+upd_updated_to = ZBox đã được cập nhật lên {version}.
+header_copied = Đã sao chép.
+headers_copied = Đã sao chép tất cả thông tin thư.
+identity_copies_updated = Đã cập nhật Cc và Bcc cho danh tính này.
+signature_switched_identity = Đã đổi chữ ký sang chữ ký của danh tính này.
+signature_removed_identity = Đã xóa chữ ký. Danh tính này không có chữ ký.
+signature_not_switched_identity = Chưa đổi chữ ký. Nhấn Ctrl+Shift+S để chèn chữ ký của danh tính này.
+signature_none_identity = Danh tính này không có chữ ký.
+move_keys_no_selection = Hãy chọn một thư trước.
+move_keys_no_folders = Chưa có thư mục nào để chọn. Hãy thử lại sau giây lát.
+block_sender_done_one = Đã chặn {sender}. Thư mới từ người này sẽ vào Thùng rác.
+block_sender_done_many = Đã chặn {count} người gửi. Thư mới của họ sẽ vào Thùng rác.
+block_sender_already = {sender} đã bị chặn rồi.
+block_sender_own = Không chặn: đó là một trong các địa chỉ của chính bạn.
+block_sender_list_unknown = Không chặn: thư này đến qua một danh sách thư và không cho biết ai đã gửi. Chặn địa chỉ của danh sách sẽ chặn mọi thành viên.
+block_sender_moved = Đã chặn người gửi. Đã chuyển {count} thư vào Thùng rác.
+block_senders_moved = Đã chặn {senders} người gửi. Đã chuyển {count} thư vào Thùng rác.
+unblock_sender_moved = Đã bỏ chặn người gửi. Đã chuyển {count} thư vào Hộp thư đến.
+unblock_senders_moved = Đã bỏ chặn {senders} người gửi. Đã chuyển {count} thư vào Hộp thư đến.
+unblock_sender_done = Đã bỏ chặn {sender}.
+unblock_sender_not_blocked = {sender} không bị chặn.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Nhập nội dung ở trên rồi nhấn Enter hoặc chọn Tìm kiếm.
+search_no_account = Hãy thêm tài khoản trước.
+search_no_term = Nhập nội dung cần tìm.
+search_running = Đang tìm kiếm...
+search_none = Không có kết quả cho "{term}".
+search_found_one = 1 kết quả cho "{term}".
+search_found_many = {count} kết quả cho "{term}".
+search_failed = Tìm kiếm thất bại.
+
+# The related messages tab
+related_running = Đang tìm kiếm...
+related_none = Không tìm thấy thư liên quan.
+related_found_one = Đã tìm thấy 1 thư liên quan.
+related_found_many = Đã tìm thấy {count} thư liên quan.
+related_failed = Không thể tìm thư liên quan.
+
+# Writing and sending
+sending_via = Đang gửi qua {sender}...
+send_failed = Gửi thất bại. Xem nhật ký để biết chi tiết.
+draft_autosaved = Đã tự động lưu thư nháp.
+draft_autosave_failed = Tự động lưu thư nháp thất bại. Xem nhật ký để biết chi tiết.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Nội dung từ xa giờ sẽ được tải cho thư từ {sender}.
+downloading_attachment = Đang tải xuống {filename}...
+downloading_attachments_one = Đang tải xuống 1 tập tin đính kèm...
+downloading_attachments_many = Đang tải xuống {count} tập tin đính kèm...
+saved_to = Đã lưu vào {folder}
+attachment_download_failed = Tải xuống tập tin đính kèm thất bại.
+
+# Getting mail onto the screen
+loading_folder = Đang tải {folder} cho {account}...
+messages_in_folder = {count} thư trong {folder}.
+messages_in_folder_cached = {count} thư trong {folder} (bản đồng bộ gần nhất, đang cập nhật...)
+no_offline_copy = Chưa có bản ngoại tuyến của {folder}.
+refresh_failed_cached = Không thể làm mới {folder}: đang hiển thị bản đồng bộ gần nhất.
+no_such_folder = Tài khoản này không có thư mục {folder}.
+load_failed = Không tải được thư. Xem nhật ký để biết chi tiết.
+no_more_to_load = Không còn thư nào để tải trong thư mục này.
+loading_more = Đang tải thêm thư trong {folder}...
+more_loaded = Đã tải thêm {count} thư.
+no_more_messages = Không còn thư nào trong thư mục này.
+load_more_failed = Không thể tải thêm thư: {error}
+loading_unified = Đang tải {folder} hợp nhất...
+messages_in_unified = {count} thư từ các tài khoản trong {folder} hợp nhất.
+messages_in_unified_cached = {count} thư trong {folder} hợp nhất (bản đồng bộ gần nhất, đang cập nhật...)
+auto_purge_done = Tự động dọn dẹp đã xóa {count} thư cũ khỏi Thùng rác/Thư rác.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Sẵn sàng.
+opening_message = Đang mở thư...
+opening_message_already = Đang mở thư... (đang tải)
+could_not_open_message = Không thể mở thư.
+could_not_open_that_message = Không thể mở thư đó.
+could_not_load_message = Không thể tải thư này.
+message_still_loading = Thư đó vẫn đang tải.
+folder_still_loading = Thư mục này vẫn đang tải -- hãy thử lại sau giây lát.
+not_in_thread = Thư này không thuộc chủ đề nào.
+no_longer_in_thread = Thư này không còn trong chủ đề.
+thread_position = Thư {position} trên {total} trong chủ đề này.
+thread_finished_one = Đã đọc xong chủ đề này (1 thư).
+thread_finished_many = Đã đọc xong chủ đề này ({count} thư).
+select_message_first = Hãy chọn một thư trước.
+conversation_failed = Không thể mở cuộc hội thoại này.
+select_message_for_related = Hãy chọn thư cần xem thư liên quan trước.
+looking_for_related = Đang tìm thư liên quan...
+no_threading_headers = Thư này không có Message-ID hay tiêu đề chủ đề để tìm.
+reply_one_at_a_time = Trả lời chỉ áp dụng cho một thư mỗi lần. Vui lòng chọn một thư.
+select_message_to_reply = Hãy chọn thư cần trả lời trước.
+preparing_reply = Đang chuẩn bị thư trả lời...
+reply_load_failed = Không thể tải thư gốc để trả lời.
+select_message_to_forward = Hãy chọn thư cần chuyển tiếp trước.
+preparing_forward = Đang chuẩn bị thư để chuyển tiếp...
+forward_load_failed = Không thể tải thư để chuyển tiếp.
+compose_tab_needed_hint = Lệnh đó cần một thẻ soạn thư. Nhấn Ctrl+N để viết thư.
+open_message_first_view = Hãy mở một thư trước, rồi nhấn Ctrl+B để đổi chế độ xem.
+open_message_first_remote = Hãy mở một thư trước, rồi nhấn Ctrl+Shift+I để tải nội dung từ xa.
+
+# Acting on messages
+copying_message = Đang sao chép thư...
+copy_failed = Sao chép thất bại.
+delete_failed = Xóa thất bại.
+already_in_archive = Đã có trong Lưu trữ.
+archiving = Đang lưu trữ...
+archive_failed = Lưu trữ thất bại.
+action_failed = {action} thất bại.
+nothing_to_undo = Không có gì để hoàn tác.
+undo_failed = Không thể hoàn tác {action}.
+
+# Views and folders
+folder_pane_all = Ngăn thư mục: Tất cả thư mục.
+folder_pane_unified = Ngăn thư mục: Thư mục hợp nhất.
+sorted_ascending = Đã sắp xếp theo {field}, tăng dần.
+sorted_descending = Đã sắp xếp theo {field}, giảm dần.
+unified_folders_updated = Đã cập nhật thư mục hợp nhất.
+zoom_reset = Đã đặt lại cỡ chữ thư về mặc định.
+folder_creating = Đang tạo thư mục "{folder}"...
+folder_created = Đã tạo thư mục "{folder}".
+folder_create_failed = Không thể tạo thư mục.
+folder_renaming = Đang đổi tên "{folder}" thành "{new_name}"...
+folder_renamed = Đã đổi tên thư mục thành "{new_name}".
+folder_rename_failed = Không thể đổi tên thư mục.
+folder_deleting = Đang xóa thư mục "{folder}"...
+folder_deleted = Đã xóa thư mục.
+folder_delete_failed = Không thể xóa thư mục.
+folder_subscribing = Đang đăng ký "{folder}"...
+folder_unsubscribing = Đang hủy đăng ký "{folder}"...
+folder_subscribed = Đã đăng ký.
+folder_unsubscribed = Đã hủy đăng ký.
+folder_subscribe_failed = Không thể đăng ký thư mục.
+folder_unsubscribe_failed = Không thể hủy đăng ký thư mục.
+
+# Accounts
+account_not_added = Chưa thêm tài khoản.
+account_added = Đã thêm tài khoản: {account}
+account_settings_not_saved = Chưa lưu cài đặt tài khoản.
+account_updated = Đã cập nhật tài khoản: {account}
+account_not_removed = Chưa gỡ tài khoản.
+account_removed = Đã gỡ tài khoản.
+account_removed_with_files = Đã gỡ tài khoản. Đã xóa {count} tập tin cục bộ.
+default_account_failed = Không thể đặt tài khoản mặc định.
+default_account_set = {account} giờ là tài khoản mặc định.
+auto_check_not_saved = Chưa lưu cài đặt kiểm tra tự động.
+mute_not_saved = Chưa lưu cài đặt tắt tiếng.
+account_muted = Đã tắt tiếng {account}.
+account_unmuted = Đã bật tiếng {account}.
+export_done = Đã xuất {count} tài khoản và cài đặt ra {path}.
+import_done = Đã nhập {count} tài khoản từ {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Chưa lưu bộ lọc.
+filters_saved = Đã lưu bộ lọc cho {account}.
+filters_checking = Đang kiểm tra {folder} với bộ lọc của bạn...
+filters_none_matched = Chạy ngay: không có thư nào trong {folder} khớp với quy tắc đang bật.
+filters_run_failed = Không thể chạy bộ lọc.
+filters_moving = Đang di chuyển {count} thư đã qua bộ lọc...
+filters_move_failures = Bộ lọc: không thể di chuyển {count} thư.
+filters_moved = Bộ lọc đã di chuyển {count} thư từ {folder}.
+filters_move_failed = Không thể di chuyển thư đã qua bộ lọc.
+cache_not_cleared = Chưa xóa bộ nhớ đệm.
+auto_cache_cleanup = Tự động dọn bộ nhớ đệm: thư cũ hơn {age}.
+phishing_update_failed = Không thể cập nhật danh sách lừa đảo: {error}
+blocklist_update_failed = Không thể cập nhật danh sách chặn: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Hãy mở một thư trước, rồi dùng Lưu thành.
+saving_message = Đang lưu thư...
+save_file_failed = Không thể lưu tập tin.
+save_fetch_failed = Không thể lấy thư để lưu.
+open_message_first_print = Hãy mở một thư trước, rồi dùng In.
+open_message_first_preview = Hãy mở một thư trước, rồi dùng Xem trước khi in.
+refreshing_accounts = Đang làm mới {count} tài khoản...
+emptying_trash = Đang dọn sạch Thùng rác cho {account}...
+trash_already_empty = Thùng rác đã trống.
+trash_emptied = Đã dọn sạch Thùng rác: xóa hẳn {count} thư.
+empty_trash_failed = Không thể dọn sạch Thùng rác.
+emptying_junk = Đang dọn sạch Thư rác cho {account}...
+junk_already_empty = Thư rác đã trống.
+junk_emptied = Đã dọn sạch Thư rác: xóa hẳn {count} thư.
+junk_emptied_prefix = Đã dọn sạch Thư rác:
+junk_part_purged = xóa hẳn {count}
+junk_part_in_trash = {count} đã chuyển vào Thùng rác nhưng chưa xác nhận đã xóa, hãy kiểm tra Thùng rác
+junk_part_not_moved = {count} chưa chuyển vào Thùng rác, vẫn ở Thư rác
+empty_junk_failed = Không thể dọn sạch Thư rác.
+back_online = Đã trực tuyến trở lại.
+offline_sync_running = Đang đồng bộ {account} để dùng ngoại tuyến...
+offline_sync_failed = Đồng bộ ngoại tuyến thất bại: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Hãy chọn hoặc mở một thư trước.
+select_or_open_message_ctrl_u = Hãy chọn hoặc mở một thư trước, rồi nhấn Ctrl+U.
+no_sender_address = Thư này không có địa chỉ người gửi để thêm.
+contact_added = Đã thêm {contact} vào sổ địa chỉ của bạn.
+contact_already_there = {contact} đã có trong sổ địa chỉ của bạn.
+privacy_saved = Đã lưu cài đặt riêng tư. Mở lại thư để áp dụng.
+message_font_size = Cỡ chữ thư: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Đang xóa vĩnh viễn thư
+deleting_many = Đang xóa vĩnh viễn {count} thư
+trashing_one = Đang chuyển thư vào Thùng rác
+trashing_many = Đang chuyển {count} thư vào Thùng rác
+undo_partly_restored = Đã hoàn tác {action}, nhưng không thể khôi phục {count} thư -- có thể chúng đã bị di chuyển, xóa hoặc hết hạn lần nữa kể từ đó.
+moves_report = {action}: đã di chuyển {moved} trên {total} thư.
+moves_report_failed = Chưa di chuyển, vẫn ở thư mục gốc: {count}.
+
+tray_tooltip_one = ZBox — 1 thư chưa đọc
+tray_tooltip_many = ZBox — {count} thư chưa đọc
+account_unreachable = Không thể kết nối tới {account}. Kiểm tra tự động cho tài khoản này tạm dừng trong {minutes} phút.
+bulk_copy_failed = Không thể sao chép thư.
+bulk_copy_failed_status = Sao chép thất bại.
+bulk_loading_archive = Thư vẫn đang tải -- hãy thử lưu trữ lại sau giây lát.
+bulk_loading_delete = Thư vẫn đang tải -- hãy thử xóa lại sau giây lát.
+bulk_loading_flag = Thư vẫn đang tải -- hãy thử gắn sao lại sau giây lát.
+bulk_loading_generic = Thư vẫn đang tải -- hãy thử lại sau giây lát.
+bulk_none = Chưa chọn thư nào.
+bulk_none_archive = Chưa chọn thư nào để lưu trữ.
+bulk_none_delete = Chưa chọn thư nào để xóa.
+bulk_none_junk = Chưa chọn thư nào để đánh dấu là thư rác.
+bulk_none_not_junk = Chưa chọn thư nào để đánh dấu không phải thư rác.
+delete_refused_still = Máy chủ từ chối xóa; thư vẫn ở trong {folder}.
+delete_refused_trash = Thư đã ở Thùng rác, nhưng máy chủ từ chối xóa vĩnh viễn.
+delete_resume_failed = Không thể xóa {count} thư từ lần xóa trước.
+done_perm_delete_one = Đã xóa vĩnh viễn thư.
+done_trash_one = Đã chuyển thư vào Thùng rác.
+filters_applied = Đã áp dụng bộ lọc cho {count} thư trong {folder}.
+filters_failed = Không thể chạy bộ lọc.
+filters_running = Đang chạy bộ lọc trên {folder}
+flag_failed = Không thể cập nhật gắn sao.
+flag_updated = Đã cập nhật gắn sao.
+folder_verb_subscribing = Đang đăng ký
+folder_verb_unsubscribing = Đang hủy đăng ký
+mark_read_failed = Không thể đánh dấu thư là đã đọc.
+mark_unread_failed = Không thể đánh dấu thư là chưa đọc.
+notify_new_mail_body = {count} {noun} mới cho {name}.
+notify_new_mail_title = Thư mới
+notify_noun_many = thư
+notify_noun_one = thư
+report_done = {verb} {done} trên {count} thư.
+report_verb_deleted = Đã xóa
+report_verb_permanent = Đã xóa vĩnh viễn
+running_copy_many = Đang sao chép {count} thư
+running_copy_one = Đang sao chép thư
+running_junk_many = Đang đánh dấu {count} thư là thư rác
+running_junk_one = Đang đánh dấu là thư rác
+running_move_many = Đang di chuyển {count} thư
+running_move_one = Đang di chuyển
+running_not_junk_many = Đang đánh dấu {count} thư không phải thư rác
+running_not_junk_one = Đang đánh dấu không phải thư rác
+running_perm_delete_one = Đang xóa vĩnh viễn thư...
+running_read_many = Đang đánh dấu {count} thư là đã đọc
+running_read_one = Đang đánh dấu là đã đọc
+running_trash_one = Đang chuyển thư vào Thùng rác...
+running_unread_many = Đang đánh dấu {count} thư là chưa đọc
+running_unread_one = Đang đánh dấu là chưa đọc
+settings_saved_no_startup = Đã lưu cài đặt. Không thể cập nhật mục khởi động của Windows.
+settings_saved_status = Đã lưu cài đặt.
+spam_blocked_sender = Người gửi bị chặn
+spam_possible_phishing = Có thể là lừa đảo
+undo_running_many = Đang hoàn tác {action} ({count} thư)
+undo_running_one = Đang hoàn tác {action}
+mark_folder_read_failed = Không thể đánh dấu thư mục là đã đọc.
+marking_folder_read = Đang đánh dấu thư mục là đã đọc...
+upd_ready_at_exit = Đã tải xuống sẵn một bản cập nhật. Bản cập nhật sẽ được cài đặt khi bạn thoát ZBox.
+upd_checking = Đang kiểm tra bản cập nhật...
+upd_up_to_date = ZBox đã là bản mới nhất.
+upd_available_source = Đã có ZBox {version}. Bản sao này chạy từ mã nguồn, vì vậy hãy cập nhật bằng git.
+upd_check_failed = Không thể kiểm tra bản cập nhật: {error}
+opening_attachment = Đang mở {filename}...
+loading_headers = Đang tải thông tin thư...
+offline_inbox_only = Chỉ Hộp thư đến và Lưu trữ được giữ lại để dùng ngoại tuyến.
+offline_sync_done_inbox = Đã đồng bộ {count} thư trong Hộp thư đến và Lưu trữ để dùng ngoại tuyến.
+working_offline = Đang làm việc ngoại tuyến: hiển thị bản đồng bộ gần nhất của Hộp thư đến/Đã gửi/Thư nháp.
+emptying_trash_all = Đang dọn Thùng rác của tất cả tài khoản...
+trash_emptied_all = Đã dọn Thùng rác ở {accounts} tài khoản: đã xóa vĩnh viễn {count} thư.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Tập tin
+bar_edit = &Chỉnh sửa
+bar_view = &Hiển thị
+bar_message = &Thư
+bar_compose = &Soạn thư
+bar_tools = &Công cụ
+bar_help = &Trợ giúp
+
+# File
+file_new = Mới
+file_new_message = Thư
+file_new_account = Tài khoản email...
+file_open_saved_message = Mở thư đã lưu...
+file_close = Đóng
+file_save_message_as = Lưu thư thành...
+file_get_new_for = Nhận thư mới cho
+file_get_new_all = Tất cả tài khoản
+file_get_new_current = Tài khoản hiện tại
+file_offline = Ngoại tuyến
+file_work_offline = Làm việc ngoại tuyến
+file_sync_now = Đồng bộ ngay
+file_print = In...
+file_print_preview = Xem trước khi in...
+file_exit = Thoát
+
+# Edit
+edit_undo = Hoàn tác
+edit_select_all = Chọn tất cả
+edit_find_messages = Tìm thư...
+
+# Message
+message_reply = Trả lời
+message_reply_all = Trả lời tất cả
+message_forward = Chuyển tiếp
+message_archive = Lưu trữ
+message_delete = Xóa
+message_delete_permanently = Xóa vĩnh viễn
+message_mark = Đánh dấu
+mark_read = Đã đọc
+mark_unread = Chưa đọc
+mark_flagged = Gắn sao
+mark_junk = Thư rác
+mark_not_junk = Không phải thư rác
+message_watch_thread = Theo dõi chủ đề
+message_ignore_thread = Bỏ qua chủ đề
+message_open_conversation = Mở thư trong cuộc hội thoại
+message_show_related = Hiện thư liên quan
+message_add_sender_to_address_book = Thêm người gửi vào sổ địa chỉ
+message_announce_sender = Đọc người gửi
+message_announce_copy_sender = Đọc người gửi và sao chép địa chỉ
+
+# View
+view_folders = Thư mục
+folders_all = Tất cả
+folders_unified = Hợp nhất
+folders_jump_inbox = Chuyển đến danh sách thư trong Hộp thư đến
+folders_configure_unified = Cấu hình thư mục hợp nhất...
+view_sort_by = Sắp xếp theo
+sort_date = Ngày
+sort_subject = Chủ đề
+sort_from = Người gửi
+sort_descending = Giảm dần (mới nhất trước)
+sort_ascending = Tăng dần (cũ nhất trước)
+view_threads = Chủ đề
+threads_all = Tất cả
+threads_watched = Chủ đề đang theo dõi
+threads_ignored = Chủ đề đã bỏ qua
+threads_expand_all = Mở rộng tất cả các chủ đề
+threads_collapse_all = Thu gọn tất cả các chủ đề
+view_load_more = Tải thêm thư
+view_toggle_message_view = Chuyển giữa chế độ xem Văn bản và HTML
+view_show_remote_content = Hiện nội dung từ xa trong thư này
+view_message_zoom = Thu phóng thư
+zoom_increase = Tăng cỡ chữ thư
+zoom_decrease = Giảm cỡ chữ thư
+zoom_reset = Đặt lại cỡ chữ thư
+
+# Compose
+compose_send = &Gửi
+compose_save_draft = &Lưu thư nháp
+compose_attach = &Đính kèm tập tin...
+compose_fmt_bold = &Đậm
+compose_fmt_italic = &Nghiêng
+compose_fmt_strike = &Gạch ngang
+compose_fmt_bullet = &Danh sách dấu đầu dòng
+compose_fmt_number = &Danh sách đánh số
+compose_fmt_quote = &Trích dẫn
+compose_fmt_code = &Mã
+compose_fmt_heading1 = &Tiêu đề
+compose_link = &Chèn liên kết...
+compose_formatting = &Định dạng tại đây
+compose_spellcheck = &Kiểm tra chính tả...
+compose_spellcheck_next = &Lỗi chính tả tiếp theo
+compose_spellcheck_add = &Thêm từ vào từ điển
+compose_insert_signature = &Chèn chữ ký
+compose_paste_quotation = &Dán dưới dạng trích dẫn
+compose_word_count = &Đếm từ
+compose_preview = &Xem trước...
+compose_diagnostics = &Chẩn đoán trình soạn thư...
+compose_edit_signature = &Sửa chữ ký...
+compose_hotkeys_diagnostic = &Chẩn đoán phím tắt
+
+# Tools
+tools_account_settings = Cài đặt tài khoản và danh tính...
+tools_mute_account = Tắt tiếng tài khoản
+tools_pause_auto_check = Tạm dừng kiểm tra tự động
+tools_disable_account = Tắt tài khoản
+tools_remove_account = Gỡ tài khoản...
+tools_address_book = Sổ địa chỉ...
+tools_message_filters = Bộ lọc thư...
+tools_import = Nhập tài khoản và cài đặt...
+tools_export = Xuất tài khoản và cài đặt...
+tools_cache_cleanup = Cấu hình dọn bộ nhớ đệm...
+tools_privacy = Riêng tư và chặn nội dung...
+tools_settings = Cài đặt...
+
+# Help
+help_shortcuts = Phím tắt...
+help_about = Giới thiệu ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Tài khoản mới...
+tree_account_settings = Cài đặt tài khoản và danh tính...
+tree_mute_account = Tắt tiếng tài khoản
+tree_pause_auto_check = Tạm dừng kiểm tra tự động
+tree_enable_account = Bật tài khoản
+tree_disable_account = Tắt tài khoản
+tree_set_default_account = Đặt làm tài khoản mặc định
+tree_remove_account = Gỡ tài khoản...
+tree_refresh = Làm mới
+tree_new_folder = Thư mục mới...
+tree_empty_trash = Dọn sạch Thùng rác
+tree_empty_junk = Dọn sạch Thư rác
+tree_rename_folder = Đổi tên thư mục...
+tree_delete_folder = Xóa thư mục...
+tree_subscribe_folder = Đăng ký thư mục
+tree_unsubscribe_folder = Hủy đăng ký thư mục
+
+# The message list menu, opened the same two ways
+list_select_all = Chọn tất cả
+list_reply = Trả lời
+list_reply_all = Trả lời tất cả
+list_forward = Chuyển tiếp
+list_mark = Đánh dấu
+list_archive = Lưu trữ
+list_delete_to_trash = Xóa (chuyển vào Thùng rác)
+list_delete_permanently = Xóa vĩnh viễn
+list_move_to = Di chuyển đến
+list_copy_to = Sao chép đến
+
+# The notification area icon
+tray_open = &Mở ZBox
+tray_unread_one = 1 thư chưa đọc
+tray_unread_many = {count} thư chưa đọc
+tray_no_unread = Không có thư chưa đọc
+tray_settings = &Cài đặt...
+tray_quit = &Thoát ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Đậm
+format_italic = &Nghiêng
+format_strike = &Gạch ngang
+format_bullet = &Danh sách dấu đầu dòng
+format_number = &Danh sách đánh số
+format_quote = &Trích dẫn
+format_code = &Mã
+format_heading1 = &Tiêu đề
+format_insert_link = &Chèn liên kết...
+format_formatting_here = &Định dạng tại đây
+tools_enable_account = Bật tài khoản
+edit_undo_action = Hoàn tác {action}
+tree_mark_folder_read = Đánh dấu thư mục là đã đọc
+help_updates = Cập nhật
+help_check_updates = Kiểm tra cập nhật ngay...
+help_update_settings = Cài đặt cập nhật...
+help_releases_page = Mở trang phát hành
+message_attachments = Tập tin đính kèm
+message_no_attachments = Không có tệp đính kèm
+message_save_all_attachments = Lưu tất cả tệp đính kèm
+view_full_headers = Tất cả thông tin thư
+folders_go_to_tree = Đi tới danh sách thư mục
+list_block_sender = Chặn người gửi này
+list_unblock_sender = Bỏ chặn người gửi này
+
+[dialogs]
+set_theme_restart_confirm = Khởi động lại ZBox để áp dụng thay đổi giao diện?
+set_ui_theme_label = &Chủ đề giao diện:
+set_ui_theme_note = Màu cho menu, danh sách, hộp thoại và chế độ xem thư Văn bản. Theo hệ thống dùng chế độ ứng dụng sáng hoặc tối của Windows. Xanh nửa đêm, Tối ấm và Tương phản dịu là các chủ đề tối với màu nhẹ nhàng hơn. Thư HTML giữ màu riêng, và Tương phản cao của Windows luôn được ưu tiên. Có hiệu lực vào lần khởi động ZBox tiếp theo.
+set_theme_system = Theo hệ thống
+set_theme_light = Sáng
+set_theme_dark = Tối
+set_theme_midnight = Xanh nửa đêm
+set_theme_warm = Tối ấm
+set_theme_soft = Tương phản dịu
+set_language_restart_confirm = Khởi động lại ZBox để áp dụng thay đổi ngôn ngữ?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Liên hệ Harith
+title_identity = Danh tính
+title_show_password = Hiện mật khẩu
+title_missing_information = Thiếu thông tin
+title_unsupported_provider = Nhà cung cấp không được hỗ trợ
+title_test_connection = Kiểm tra kết nối
+title_new_contact = Liên hệ mới
+title_edit_contact = Sửa liên hệ
+title_delete_contact = Xóa liên hệ
+title_import_contacts = Nhập danh bạ
+title_export_contacts = Xuất danh bạ
+title_rename_group = Đổi tên nhóm
+title_delete_group = Xóa nhóm
+title_send = Gửi
+title_send_failed = Gửi thất bại
+title_attach_file = Đính kèm tập tin
+title_save_draft = Lưu thư nháp
+title_documentation = Tài liệu ZBox
+title_open_link = Mở liên kết
+title_filter_rule = Quy tắc bộ lọc
+title_master_password = Mật khẩu chính
+title_attachment_saved = Đã lưu tập tin đính kèm
+title_attachments_saved = Đã lưu các tập tin đính kèm
+title_download_failed = Tải xuống thất bại
+title_print = In
+title_print_preview = Xem trước khi in
+title_related_messages = Thư liên quan
+title_search = Tìm kiếm
+title_unlock = Mở khóa
+title_unlock_methods = Phương thức mở khóa
+title_desktop_shortcut = Lối tắt trên màn hình nền
+title_spell_check = Kiểm tra chính tả
+title_plain_text_password = Tìm thấy mật khẩu dạng văn bản thuần
+title_startup_error = Lỗi khởi động ZBox
+
+identity_email_required = Nhập địa chỉ email.
+
+wizard_password_not_shown = Không thể hiện mật khẩu trên hệ thống này. Mật khẩu vẫn được nhập và lưu như bình thường.
+wizard_email_required = Nhập địa chỉ email hợp lệ trước khi tiếp tục.
+wizard_test_needs_server = Nhập email đăng nhập và máy chủ thư đến trước khi kiểm tra.
+wizard_test_succeeded = Kết nối thành công. Tìm thấy {count} thư trong Hộp thư đến.
+
+contact_email_required = Cần có địa chỉ email.
+contact_select_to_edit = Chọn một liên hệ để sửa.
+contact_select_to_delete = Chọn một liên hệ để xóa.
+contact_delete_confirm = Xóa {label} khỏi sổ địa chỉ?
+contacts_import_choose_file = Chọn tập tin .vcf (vCard) hoặc .csv để nhập.
+contacts_imported = Đã nhập {count} liên hệ.
+contacts_import_empty = Không tìm thấy liên hệ nào trong tập tin đó.
+contacts_none_to_export = Không có liên hệ nào để xuất.
+contacts_exported = Đã xuất {count} liên hệ ra:\n{path}
+group_name_exists = Đã có nhóm tên "{name}".
+group_delete_confirm = Xóa nhóm "{name}"? Các liên hệ trong nhóm không bị xóa.
+
+send_no_account = Hãy thêm tài khoản trước khi gửi, hoặc chọn một tài khoản trong Từ.
+send_no_recipient = Nhập ít nhất một người nhận trong Đến.
+draft_no_account = Hãy thêm tài khoản trước khi lưu thư nháp, hoặc chọn một tài khoản trong Từ.
+attached_file = Đã đính kèm: {name}\n\n{count} tập tin sẽ được đính kèm khi bạn gửi.
+
+documentation_copied = Toàn bộ tài liệu ZBox đã được sao chép vào bộ nhớ tạm.
+
+filter_rule_needs_name = Hãy đặt tên cho quy tắc này.
+filter_rule_needs_condition = Đặt ít nhất một điều kiện (Từ, Đến hoặc Chủ đề).
+filter_rule_needs_action = Chọn ít nhất một hành động: đánh dấu là đã đọc, gắn sao, hoặc di chuyển vào thư mục.
+
+master_password_set = Đã đặt mật khẩu chính. Hãy cất giữ ở nơi an toàn: ZBox hỏi mật khẩu này một lần trên mỗi máy tính mới, và không thể khôi phục nếu bị mất.
+master_password_offer = Không có mật khẩu chính, mật khẩu tài khoản đã lưu chỉ đọc được trên máy tính này và tài khoản Windows này. Sao chép ZBox sang nơi khác thì mọi tài khoản đều phải đăng nhập lại.\n\nĐặt mật khẩu chính ngay bây giờ?
+
+attachment_saved = Đã lưu tập tin đính kèm vào:\n{path}
+attachments_saved = Đã lưu {count} tập tin đính kèm vào:\n{path}
+
+shortcut_created_settings = Đã tạo lối tắt:\n{path}\n\nLối tắt khởi động ZBox từ:\n{base}
+
+spellcheck_no_dictionary = Thiếu từ điển chính tả, nên bản ZBox này không có kiểm tra chính tả.
+spellcheck_none_found = Không tìm thấy lỗi chính tả.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Thiết lập khóa truy cập trên máy tính này và quên khóa đã lưu từ máy tính khác?\n\nWindows sẽ yêu cầu bạn xác nhận bằng Hello. Khóa truy cập cũ trên máy tính kia vẫn giữ nguyên ở đó và vẫn hoạt động nếu bạn mang thư mục này trở lại, nhưng sẽ phải thiết lập lại.
+unlock_replace_passkey_many = Thiết lập khóa truy cập trên máy tính này và quên {count} khóa đã lưu từ các máy tính khác?\n\nWindows sẽ yêu cầu bạn xác nhận bằng Hello. Các khóa truy cập cũ trên máy tính kia vẫn giữ nguyên ở đó và vẫn hoạt động nếu bạn mang thư mục này trở lại, nhưng sẽ phải thiết lập lại.
+unlock_method_works = Phương thức đó hoạt động.
+
+plain_text_password_found = data\config\himalaya.toml vẫn chứa mật khẩu dạng văn bản thuần (auth.raw) từ một lần thiết lập tài khoản cũ.\n\nHãy gỡ tài khoản đó và thêm lại, hoặc xóa data\config\himalaya.toml, để tập tin được tạo lại bằng kho thông tin xác thực an toàn.
+
+# main_frame's titles.
+title_account_list_unavailable = Không có danh sách tài khoản
+title_open_message = Mở thư
+title_run_filters = Chạy bộ lọc
+title_clear_cache = Xóa bộ nhớ đệm thư ngoại tuyến
+title_remove_account = Gỡ tài khoản
+title_new_folder = Thư mục mới
+title_rename_folder = Đổi tên thư mục
+title_delete_folder = Xóa thư mục
+title_subscribe = Đăng ký
+title_unsubscribe = Hủy đăng ký
+title_open_saved_message = Mở thư đã lưu
+title_save_message_as = Lưu thư thành
+title_empty_trash = Dọn sạch Thùng rác
+title_empty_junk = Dọn sạch Thư rác
+title_synchronize_offline = Đồng bộ để dùng ngoại tuyến
+title_export_accounts = Xuất tài khoản và cài đặt
+title_import_accounts = Nhập tài khoản và cài đặt
+title_show_related = Hiện thư liên quan
+title_reply = Trả lời
+title_forward = Chuyển tiếp
+title_undo = Hoàn tác
+title_delete_permanently = Xóa vĩnh viễn
+title_delete = Xóa
+title_copy_to = Sao chép đến
+title_archive = Lưu trữ
+title_accounts_locked = Tài khoản bị khóa
+
+select_account_first = Hãy chọn một tài khoản trong cây trước.
+select_account_or_folder = Hãy chọn một tài khoản hoặc thư mục trước.
+filters_left_behind = {count} thư khớp bộ lọc nhưng vẫn ở trong {folder}.
+cache_clear_confirm = Xóa bộ nhớ đệm thư ngoại tuyến cho mọi tài khoản?\n\nViệc này chỉ xóa các bản sao cục bộ của ZBox. Không có gì bị xóa khỏi máy chủ thư, và thư sẽ được tải xuống lại khi bạn cần.
+account_remove_confirm = Gỡ {name} ({address})?\n\nThư trên máy chủ không bị xóa.\nCác bản sao đã tải xuống máy tính này sẽ bị xóa.\nMật khẩu đã lưu sẽ bị xóa.
+folder_delete_confirm = Xóa vĩnh viễn thư mục "{folder}" và mọi thứ trong đó cho {address}?\n\nKhông thể hoàn tác thao tác này.
+empty_trash_confirm = Xóa vĩnh viễn tất cả thư trong Thùng rác cho {address}?\n\nKhông thể hoàn tác thao tác này.
+empty_junk_confirm = Xóa vĩnh viễn tất cả thư trong Thư rác cho {address}?\n\nKhông thể hoàn tác thao tác này.
+sync_select_account = Chọn một tài khoản (không phải thư mục Hợp nhất) để đồng bộ dùng ngoại tuyến.
+accounts_imported = Đã nhập {count} tài khoản:\n\n{names}\n\nMật khẩu không bao giờ được xuất, và kho mật khẩu đã mã hóa chỉ dành cho tài khoản người dùng Windows này, nên mỗi tài khoản đã nhập cần nhập mật khẩu một lần qua Tài khoản > Cài đặt tài khoản và danh tính trước khi kết nối được.
+accounts_import_none = Không tìm thấy tài khoản nào trong tập tin này. Cài đặt vẫn được nhập nếu tập tin có.
+delete_permanently_confirm_one = Xóa vĩnh viễn thư này? Thư sẽ không qua Thùng rác và không thể hoàn tác.
+accounts_locked = Mật khẩu tài khoản đã lưu được ghi trên một máy tính khác, nên không đọc được ở đây.\n\nMỗi tài khoản sẽ cần đăng nhập lại vào máy chủ thư. Để tránh việc này lần sau, hãy đặt mật khẩu chính trong Cài đặt, Bảo mật ứng dụng và dữ liệu trên máy tính mà các tài khoản đang hoạt động.
+master_password_remove_confirm = Gỡ mật khẩu chính? Khi đó mật khẩu tài khoản đã lưu chỉ đọc được trên máy tính này và tài khoản Windows này. Sau này sao chép ZBox sang nơi khác thì mọi tài khoản đều phải đăng nhập lại.\n\nGỡ ngay bây giờ?
+shortcut_offer = Đặt lối tắt ZBox trên màn hình nền?\n\nLối tắt sẽ khởi động thư mục ZBox này:\n{path}\n\nLối tắt ghi lại đúng vị trí đó. Nếu sau này bạn di chuyển thư mục ZBox, hãy mở Cài đặt, Khay hệ thống và cửa sổ, rồi chọn Tạo lối tắt trên màn hình nền lần nữa để trỏ tới vị trí mới.
+shortcut_created = Đã tạo lối tắt:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Tên hiển thị
+form_email_address = Địa chỉ email
+form_your_name = Tên của bạn
+form_login_email = Email đăng nhập
+form_password = Mật khẩu
+srv_imap_host = Máy chủ thư đến (IMAP)
+srv_imap_port = Cổng thư đến
+srv_imap_encryption = Mã hóa thư đến
+srv_smtp_host = Máy chủ thư đi (SMTP)
+srv_smtp_port = Cổng thư đi
+srv_smtp_encryption = Mã hóa thư đi
+
+acct_login_email_label = Email đăng nhập (dùng để đăng nhập)
+acct_new_password_label = Mật khẩu mới (để trống để giữ mật khẩu hiện tại)
+acct_new_password_name = Mật khẩu mới
+acct_identity_email_label = Địa chỉ email (dùng để gửi và nhận)
+acct_identities_label = Danh tính bổ sung (bí danh)
+acct_identities_name = Danh tính bổ sung
+acct_add_identity = &Thêm danh tính...
+acct_edit_identity = &Sửa danh tính...
+acct_remove_identity = &Gỡ danh tính
+acct_signature = Chữ ký
+acct_edit_signature = &Sửa chữ ký...
+acct_junk_folder = Thư mục Thư rác
+acct_account_status = Trạng thái tài khoản
+acct_disable_account = Tắt tài khoản này
+acct_default_account = Tài khoản mặc định
+acct_set_default = Đặt làm tài khoản mặc định
+acct_notifications = Thông báo thư mới
+acct_mute_notifications = Tắt tiếng thông báo cho tài khoản này
+acct_server_settings = Cài đặt máy chủ
+
+wiz_before_you_start = Trước khi bắt đầu
+wiz_notice_name = Thông báo quan trọng
+wiz_google_instructions = &Mở hướng dẫn mật khẩu ứng dụng của Google
+wiz_intro = Tên và địa chỉ email của bạn
+wiz_login_same = Email đăng nhập giống địa chỉ email ở trên
+wiz_show_password = &Hiện mật khẩu
+wiz_preset_applied = Đã áp dụng thiết lập sẵn cho {name}.
+wiz_summary_name = Tóm tắt tài khoản
+wiz_review = Hãy xem lại, rồi nhấn Hoàn tất để lưu tài khoản này.
+wiz_test_connection = &Kiểm tra kết nối
+wiz_testing = Đang kiểm tra kết nối...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Bật ghi nhật ký gỡ lỗi, lưu tại: data\logs)
+set_language_label = &Ngôn ngữ giao diện:
+set_language_label_only_english = &Ngôn ngữ giao diện: (chỉ có tiếng Anh)
+set_headers_checkbox = &Hiện tiêu đề thư phía trên thư đang mở
+set_zoom_label = Phông chữ và thu phóng thư:
+set_font_override = &Ghi đè cỡ chữ thư mặc định
+set_font_size_name = Cỡ chữ thư (điểm)
+set_reading_font_name = Phông chữ đọc
+set_reading_font_label = Phông chữ đọc (để trống để dùng mặc định):
+set_view_label = Chế độ xem nội dung khi mở thư:
+set_view_text = Văn bản
+set_view_html = HTML (hiển thị)
+set_engine_label = Công cụ hiển thị HTML:
+set_engine_edge = Edge / WebView2 (hiển thị hiện đại)
+set_engine_ie = MSHTML cũ (hỗ trợ trình đọc màn hình tốt nhất)
+set_runtime_label = Môi trường chạy WebView2:
+set_runtime_auto = Tự động — dùng bản đi kèm nếu có (khuyến nghị)
+set_runtime_fixed = Chỉ phiên bản cố định đi kèm
+set_runtime_evergreen = Bản dùng chung của hệ thống (do Windows cập nhật)
+set_sr_box = Điều khiển thông báo của trình đọc màn hình
+set_silence_label = Thời gian giữ im lặng trình đọc màn hình với HTML:
+set_silence_name = Thời gian giữ im lặng trình đọc màn hình với HTML, tính bằng mili giây
+set_focus_delay_label = Độ trễ tiêu điểm trợ năng WebView:
+set_focus_delay_name = Độ trễ tiêu điểm trợ năng WebView, mức 1 đến 10
+set_announce_label = Thời gian hiển thị thông báo:
+set_announce_name = Thời gian hiển thị thông báo, tính bằng mili giây
+set_announce_actions = &Đọc thông báo thao tác thư
+set_attachment_dir_label = Thư mục lưu tập tin đính kèm:
+set_attachment_dir_name = Thư mục lưu tập tin đính kèm
+set_browse = &Duyệt…
+set_autosave_label = Khoảng thời gian tự lưu thư nháp:
+set_autosave_name = Khoảng thời gian tự lưu thư nháp, tính bằng giây
+set_auto_purge_label = Tự động dọn Thùng rác và Thư rác cũ:
+set_auto_purge_name = Tự động dọn Thùng rác và Thư rác sau số ngày này
+set_bare_keys = Bật phím tắt một phím trong danh sách thư: S (gắn cờ), A (lưu trữ), J (đánh dấu là thư rác)/Shift+J (đánh dấu không phải thư rác), W (theo dõi chuỗi), K (bỏ qua chuỗi), M (chuyển tới)/Shift+M (chuyển theo tên thư mục) và C (sao chép tới)
+set_sound_label = Âm thanh và thông báo:
+set_sounds_enabled = &Phát âm thanh thông báo
+set_desktop_notifications = &Hiện thông báo trên màn hình nền khi có thư mới
+set_theme_label = Đổi chủ đề âm thanh:
+set_theme_label_only_default = Đổi chủ đề âm thanh: (chỉ có chủ đề mặc định)
+set_security_box = Bảo mật ứng dụng và dữ liệu
+set_lock_on_quit = &Khóa ZBox khi thoát hẳn
+set_unlock_methods_button = &Phương thức mở khóa…
+set_master_password_button = &Mật khẩu chính…
+set_tray_label = Khay hệ thống và cửa sổ:
+set_minimize_to_tray = &Thu nhỏ xuống khay hệ thống
+set_close_to_tray = &Đóng xuống khay hệ thống
+set_stay_maximized = &Luôn giữ ZBox ở chế độ phóng to
+set_run_at_startup = &Chạy ZBox khi Windows khởi động
+set_desktop_shortcut_button = &Tạo lối tắt trên màn hình nền
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Nhật ký gỡ lỗi giúp chẩn đoán vấn đề khi có sự cố. Tắt đi sẽ ngừng ghi mục mới; các tập tin nhật ký hiện có không bị xóa. Có hiệu lực vào lần khởi động ZBox tiếp theo.
+set_language_note = Có hiệu lực vào lần khởi động ZBox tiếp theo. Tập tin ngôn ngữ là tập tin văn bản thuần trong thư mục lang của ZBox, bên cạnh thư mục sounds. Để thêm một ngôn ngữ, hãy sao chép thư mục en, đổi tên bản sao và tập tin .lang bên trong thành mã ngôn ngữ của bạn, rồi dịch phần văn bản bên phải mỗi dấu bằng. Phần chưa dịch sẽ được đọc bằng tiếng Anh thay vì im lặng, nên tập tin dịch dở vẫn dùng được an toàn.
+set_headers_note = Từ, Đến, Cc, Ngày và Chủ đề, hiển thị phía trên nội dung thư ở cả chế độ Văn bản và HTML. Không có phần này thì không có cách nào biết ai gửi thư từ bên trong thư mà không đóng thẻ và quay lại danh sách. Tiêu điểm vẫn nằm trong nội dung thư; phần tiêu đề cách một lần Shift+Tab. Có hiệu lực vào lần mở thư tiếp theo.
+set_zoom_note = Làm cho chữ của thư đang mở to hơn hoặc nhỏ hơn, độc lập với phần còn lại của ZBox và với tỷ lệ hiển thị của Windows. Áp dụng cho cả chế độ Văn bản và HTML. "Phông chữ đọc" có thể bắt buộc dùng một phông cụ thể (ví dụ Consolas, OpenDyslexic) cho nội dung thư; để trống để giữ phông bình thường. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 trong menu Hiển thị tăng, giảm hoặc đặt lại cỡ chữ mà không cần mở hộp thoại này, và áp dụng ngay cho mọi thư đang mở. Thay đổi ở đây cũng áp dụng ngay khi nhấn OK.
+set_view_note = HTML là mặc định. Chế độ này hiển thị thư đúng như khi được gửi, và NVDA cũng như JAWS đọc được: khi một trang HTML mở ra, ZBox làm im thông báo riêng của trình duyệt, đặt con trỏ đọc ở dòng đầu tiên của thư, và giữ các phím tắt của ZBox hoạt động trong trang, kể cả F6 để đưa tiêu điểm ra khỏi trang. Văn bản hiển thị cùng thư đó dưới dạng văn bản thuần, không định dạng, trong một ô soạn thảo bình thường -- không hình ảnh, không bố cục, và không phụ thuộc vào việc cài đặt công cụ trình duyệt. Nhấn Ctrl+B trong thư đang mở để chuyển qua lại.
+set_engine_note = Edge hiển thị CSS hiện đại nhưng chạy trang trong một tiến trình riêng, và chỉ chuyển nội dung cho trình đọc màn hình qua một giao diện mà wxPython không tiếp cận được -- nên thư có thể mở ra mà không có gì đọc được. MSHTML cũ là công cụ Outlook Express và Windows Mail từng dùng: chạy trong cùng tiến trình và công bố cây tài liệu bình thường, nên NVDA và JAWS đọc nó ở chế độ duyệt như mọi trang web. Có hiệu lực vào lần mở thư tiếp theo.
+set_runtime_note = Bản dùng chung của hệ thống được Windows Update bảo trì, nên công cụ đọc thư của bạn có thể thay đổi mà không báo trước — đó là lý do chế độ xem thư HTML đang chạy tốt có thể hỏng trên máy mà ZBox không hề thay đổi. Bản đi kèm trong thư mục deps cố định đúng phiên bản ZBox đã được kiểm thử. Chạy tools\get_webview2.bat để cài. Nếu không có bản đi kèm, ZBox dùng bản chung của hệ thống trong mọi trường hợp, nên luôn khởi động được. Có hiệu lực vào lần khởi động ZBox tiếp theo.
+set_sr_intro = Mức độ ZBox cho phép trình đọc màn hình nói khi mở thư, và thông báo của chính ZBox hiển thị trong bao lâu.
+set_silence_note = Khi thư HTML mở ra, ZBox có thể giữ một lần nhấn Ctrl giả lập trong tối đa 2 giây để làm im thông báo trình duyệt của trình đọc màn hình. Chủ đề thư đã được dùng làm tiêu đề trang nên URL base64 không bị đọc to, nhưng trình đọc vẫn thông báo điều khiển và loại tài liệu đè lên phần đầu thư, nên tùy chọn này bật theo mặc định. Giảm xuống 0 để tắt, hoặc tăng lên nếu vẫn còn tiếng nói thừa.
+set_focus_delay_note = Khi thư HTML tải xong, ZBox chờ khoảng thời gian này rồi mới thực sự đặt tiêu điểm. WebView2 báo trang đã tải và Windows hoàn tất cây trợ năng của trang không phải cùng một thời điểm; đặt tiêu điểm quá sớm khiến NVDA/JAWS đọc "Trang nội dung web" chung chung thay vì thư, hoặc báo thư không khả dụng một lúc sau khi mở. Mức 1 là 100 ms, mức 10 là một giây. Hãy tăng lên nếu vẫn gặp; giảm xuống khi việc mở đã ổn định để mở nhanh hơn.
+set_announce_note = Ctrl+U và Ctrl+Shift+U báo người gửi trong một hộp thoại nhỏ tự đóng, vì thanh trạng thái chỉ được đọc nếu trình đọc màn hình của bạn bật đọc thanh trạng thái. Đây là thời gian hộp thoại đó hiển thị. Hãy đặt theo tốc độ đọc của bạn: quá ngắn thì hộp thoại đóng giữa câu, mất ý nghĩa. Nhấn phím bất kỳ để đóng sớm; các phím mũi tên giữ hộp thoại mở để bạn đọc lại. 0 nghĩa là chờ nhấn phím và không bao giờ tự đóng.
+set_attachment_dir_note = Nơi "Lưu tất cả" ghi các tập tin đính kèm khi thư có nhiều hơn một tập tin. Tự động tạo nếu chưa có. Thư chỉ có một tập tin đính kèm vẫn hỏi nơi lưu như trước. Để trống để dùng mặc định:\n{path}
+set_autosave_note = Tần suất một thẻ soạn thư đang mở tự lưu vào Thư nháp trong lúc bạn viết. Lưu thư nháp (Ctrl+S) vẫn lưu theo yêu cầu, và khi đóng thẻ có nội dung chưa lưu luôn có đề nghị lưu. 0 tắt tự lưu. Không có lựa chọn dưới 15 giây -- khi đó mỗi lần lưu là một lượt gọi máy chủ tranh chấp với việc gõ của bạn.
+set_auto_purge_note = Xóa vĩnh viễn thư trong Thùng rác và Thư rác khi đã nằm ở đó số ngày này -- cũng là thao tác xóa vĩnh viễn mà Dọn sạch Thùng rác và Dọn sạch Thư rác thực hiện theo yêu cầu, chạy tự động mỗi ngày một lần khi ZBox đang mở. Bật theo mặc định với 30 ngày. 0 để tắt. Không thể hoàn tác khi thư đã bị xóa.
+set_bare_keys_note = Khi bật, nhấn riêng S, A, J, W hoặc K trong danh sách thư sẽ ngay lập tức gắn/bỏ sao, lưu trữ, đánh dấu (các) thư đã chọn là thư rác (Shift+J đánh dấu không phải thư rác), hoặc theo dõi/bỏ qua chủ đề chứa vùng chọn -- Lưu trữ và Đánh dấu là thư rác không có xác nhận và không hoàn tác được. Tắt đi thì S, A, J, W và K trở về điều hướng theo chữ cái đầu bình thường. Ctrl+S và Ctrl+Shift+A vẫn hoạt động trong mọi trường hợp. Có hiệu lực ngay.
+set_sounds_note = Âm ngắn cho tiến trình, thư mới, gửi, trả lời hoặc chuyển tiếp, xóa, và kết quả tìm kiếm. Tắt đi sẽ tắt mọi âm thanh trong ứng dụng; thông báo của trình đọc màn hình và thanh trạng thái không bị ảnh hưởng.
+set_desktop_notifications_note = Một thông báo Windows cho mỗi đợt thư mới, riêng biệt với âm thanh ở trên. Tắt đi sẽ tắt cho mọi tài khoản; từng tài khoản cũng có thể tắt tiếng riêng trong Cài đặt tài khoản và danh tính.
+set_theme_note = Chủ đề tùy chỉnh là các thư mục đặt trong thư mục sounds của ZBox, mỗi thư mục có progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav và none_found.wav riêng. Tập tin nào thiếu trong chủ đề sẽ dùng âm thanh mặc định.
+set_theme_note_only_default = Chủ đề tùy chỉnh là các thư mục đặt trong thư mục sounds của ZBox, mỗi thư mục có progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav và none_found.wav riêng. Tập tin nào thiếu trong chủ đề sẽ dùng âm thanh mặc định. Chỉ có "default" cho đến khi bạn thêm một thư mục chủ đề khác.
+set_lock_note = Khi đó, lúc khởi động ZBox sẽ hỏi một trong các phương thức mở khóa của bạn trước khi mở bất kỳ tài khoản nào. Chỉ cần một: khóa truy cập, khóa bảo mật hoặc mật khẩu chính. Đóng xuống khay không phải là thoát và không khóa lại; Tập tin > Thoát và mục Thoát của biểu tượng khay mới là thoát. Nếu chưa đăng ký gì và chưa đặt mật khẩu chính, khóa sẽ được bỏ qua thay vì chặn bạn khỏi thư của chính mình.
+set_security_note = Trong ba thứ, chỉ mật khẩu chính mã hóa dữ liệu: nhờ nó mà thư mục này mở được mật khẩu tài khoản đã lưu trên một máy tính khác. Khóa truy cập hay khóa bảo mật mở khóa ứng dụng trên máy này. Không cái nào thay được mật khẩu chính trên máy tính chưa từng dùng ZBox.
+set_minimize_note = Thu nhỏ ZBox sẽ ẩn nút trên thanh tác vụ và để ZBox chạy sau biểu tượng khay. Nhấp chuột trái vào biểu tượng khay (hoặc Enter/Space khi biểu tượng có tiêu điểm bàn phím) để hiện lại cửa sổ.
+set_close_note = Nút Đóng của cửa sổ, Alt+F4, và Ctrl+W nhấn trên thẻ Thư sẽ ẩn ZBox xuống khay thay vì thoát. Tập tin > Thoát (Ctrl+Shift+Q) và mục Thoát của chính biểu tượng khay luôn thực sự thoát ZBox, nên luôn có một cách thoát bằng bàn phím mà không cần chạm vào khay.
+set_stay_maximized_note = ZBox khởi động ở chế độ phóng to và được đưa về phóng to nếu bạn bỏ phóng to. Thanh menu, thanh tiêu đề và viền cửa sổ không bị ảnh hưởng -- đây không phải chế độ toàn màn hình không viền, nên mọi phím tắt menu bằng Alt vẫn hoạt động.
+set_run_at_startup_note = Tự động khởi động ZBox khi bạn đăng nhập Windows, mở thẳng xuống khay thay vì hiện cửa sổ. Có hiệu lực ngay, không chỉ ở lần chạy sau.
+set_desktop_shortcut_note = Đặt lối tắt ZBox trên màn hình nền, thay thế lối tắt đã có. Lối tắt lưu đúng vị trí của thư mục ZBox này, nên nếu bạn di chuyển hoặc sao chép ZBox đi nơi khác, hãy nhấn nút này lần nữa trên bản mới để trỏ lối tắt tới đó. Có hiệu lực ngay và không chờ OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Tên
+ab_phone = Điện thoại
+ab_notes = Ghi chú
+ab_heading = Sổ địa chỉ
+ab_contacts = Danh bạ
+ab_new = &Mới...
+ab_edit = &Sửa...
+ab_delete = &Xóa
+ab_import = &Nhập...
+ab_export = &Xuất...
+ab_groups_label = Nhóm (danh sách thư)
+ab_groups_name = Nhóm
+ab_new_group = &Nhóm mới...
+ab_rename_group = &Đổi tên nhóm...
+ab_delete_group = &Xóa nhóm
+ab_manage_members = &Quản lý thành viên...
+ab_all_contacts = Tất cả liên hệ
+ab_add_member = Thêm >>
+ab_remove_member = << Gỡ
+ab_members_of = Thành viên của {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Không có trong từ điển:
+sp_not_in_dictionary_name = Không có trong từ điển
+sp_in_this_line_label = Trong dòng này:
+sp_in_this_line_name = Trong dòng này
+sp_suggestions_label = &Gợi ý:
+sp_suggestions_name = Gợi ý
+sp_replace_with_label = &Thay bằng:
+sp_replace_with_name = Thay bằng
+sp_replace = &Thay thế
+sp_replace_all = &Thay thế tất cả
+sp_ignore = &Bỏ qua
+sp_ignore_all = &Bỏ qua tất cả
+sp_add_to_dictionary = &Thêm vào từ điển
+btn_close = &Đóng
+
+# Privacy and Content Blocking.
+priv_remote_label = Nội dung từ xa trong thư:
+priv_block_remote = &Chặn nội dung từ xa cho đến khi tôi yêu cầu (khuyến nghị)
+priv_blocklist_label = Danh sách chặn quảng cáo và trình theo dõi:
+priv_block_known = &Chặn các tên miền quảng cáo và theo dõi đã biết
+priv_update_daily = &Cập nhật danh sách hằng ngày trong nền
+priv_update_now = &Cập nhật ngay
+priv_junk_label = Quy tắc thư rác:
+priv_check_inbox = &Kiểm tra thư mới trong Hộp thư đến với người gửi bị chặn và liên kết lừa đảo đã biết
+priv_move_blocked = &Tự động chuyển thư từ người gửi bị chặn vào Thư rác
+priv_update_phishing = &Cập nhật danh sách lừa đảo ngay
+priv_blocked_label = Người gửi bị chặn:
+priv_blocked_name = Người gửi bị chặn
+priv_remove_blocked = &Gỡ người gửi bị chặn
+priv_never_junk_label = Người gửi không bao giờ bị coi là thư rác:
+priv_never_junk_name = Người gửi không bao giờ bị coi là thư rác
+priv_remove_never_junk = &Gỡ người gửi không bao giờ là thư rác
+priv_allowed_label = Người gửi được phép tải nội dung từ xa:
+priv_allowed_name = Người gửi được phép
+priv_remove_selected = &Gỡ người gửi đã chọn
+
+# Message Filters.
+filt_rule_name = Tên quy tắc
+filt_enabled = &Bật
+filt_match_label = Khớp:
+filt_match_all = &Khớp tất cả các điều kiện sau (AND)
+filt_match_any = &Khớp bất kỳ điều kiện nào sau (OR)
+filt_conditions_label = Điều kiện (để trống giá trị để bỏ qua):
+filt_condition_field = Trường của điều kiện {number}
+filt_condition_contains = Điều kiện {number} chứa
+filt_actions_label = Hành động:
+filt_mark_read = &Đánh dấu là đã đọc
+filt_flag = &Gắn sao cho thư
+filt_move_label = Di chuyển vào thư mục:
+filt_move_name = Di chuyển vào thư mục
+filt_rules_name = Quy tắc bộ lọc
+filt_new = &Quy tắc mới...
+filt_edit = &Sửa quy tắc...
+filt_delete = &Xóa quy tắc
+filt_up = &Lên
+filt_down = &Xuống
+filt_run_label = Chạy ngay trên thư mục:
+filt_run_name = Thư mục chạy ngay
+filt_run_now = &Chạy ngay
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Mở khóa bằng khóa truy cập (Windows Hello)
+unl_security_key = &Mở khóa bằng khóa bảo mật
+unl_master_password_label = &Mật khẩu chính:
+unl_master_password_name = Mật khẩu chính
+unl_unlock = &Mở khóa
+unl_exit = &Thoát ZBox
+unl_methods_label = &Phương thức đã đăng ký:
+unl_methods_name = Phương thức mở khóa đã đăng ký
+unl_add_passkey = &Thêm khóa truy cập…
+unl_add_key = &Thêm khóa bảo mật…
+unl_reassign = &Gán lại khóa truy cập cho máy tính này…
+unl_test = &Kiểm tra…
+unl_remove = &Gỡ
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Từ
+comp_to = Đến
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Chủ đề
+comp_attach_button = Đính kèm tập tin...
+comp_sending = Đang gửi...
+comp_report_label = &Báo cáo:
+comp_report_name = Báo cáo
+comp_refresh = &Làm mới
+comp_copy = &Sao chép
+comp_preview_read = Như người nhận sẽ đọc
+comp_preview_source = Mã HTML sẽ được gửi
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Nội dung thư
+mv_blocked_notice = Thông báo nội dung bị chặn
+mv_show_remote = &Hiện nội dung từ xa
+mv_always_allow = &Luôn cho phép người gửi này
+mv_message_headers = Tiêu đề thư
+mv_attachments = Tập tin đính kèm
+mv_attachments_count = Tập tin đính kèm ({count})
+mv_save_attachment = Lưu: {filename}
+mv_save_all = Lưu tất cả
+mv_html_view = Chế độ xem HTML của thư
+mv_saved_message = Thư đã lưu
+mv_show_remote_tip = Tải lại thư này cùng hình ảnh và kiểu dáng từ xa. Các trình theo dõi đã biết vẫn bị chặn.
+mv_always_allow_tip = Tải nội dung từ xa trong mọi thư từ {sender}.
+
+# The search tab.
+srch_account = Tài khoản
+srch_folder = Thư mục
+srch_for = Tìm
+
+# The signature editor.
+sig_editors = Trình sửa chữ ký
+sig_formatted = Chữ ký, có định dạng
+sig_source = Chữ ký, mã nguồn HTML
+sig_plain_label = Bản văn bản thuần thay thế (gửi kèm với HTML)
+sig_plain_name = Bản văn bản thuần thay thế
+
+# About ZBox.
+about_text_name = Nội dung giới thiệu ZBox
+about_view_license = &Xem giấy phép...
+about_google = &Mật khẩu ứng dụng Google...
+about_support = &Ủng hộ ZBox -- một người phát triển và bảo trì
+about_repos = &Kho ứng dụng của Harith trên GitHub
+about_contact = &Liên hệ Harith
+btn_close_plain = Đóng
+btn_cancel_plain = Hủy
+
+# The license window.
+eula_heading = Giấy phép ZBox
+eula_text_name = Nội dung giấy phép ZBox
+eula_third_party = Trang giấy phép của thành phần bên thứ ba:
+eula_agree = &Tôi đồng ý với các điều khoản ở trên
+eula_agree_name = Tôi đã đọc và đồng ý với các điều khoản giấy phép ZBox
+eula_disagree = &Tôi không đồng ý
+eula_next = &Tiếp
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Nội dung tài liệu ZBox
+doc_copy = Sao chép vào bộ nhớ tạm
+shortcuts_heading = Phím tắt
+shortcuts_text_name = Nội dung phím tắt
+
+# The main window's own panes.
+mf_toolbar = Thanh công cụ chính
+mf_tabs = Các thẻ ZBox
+tree_heading = Tài khoản và thư mục
+tree_name = Cây tài khoản và thư mục
+envlist_heading = Thư
+envlist_name = Danh sách thư
+rdr_heading = Thư
+rdr_name = Trình đọc thư
+conv_heading_one = Cuộc hội thoại: 1 thư
+conv_heading_many = Cuộc hội thoại: {count} thư
+
+# A run of several messages, and the cache dialog.
+bulk_progress = Đã xong {completed} trên {total}.
+bulk_cancelling = Đang hủy -- đang hoàn tất thư hiện tại...
+cache_clear_now = Xóa bộ nhớ đệm thư ngoại tuyến ngay... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, được bảo vệ
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Tên hiển thị là tùy chọn -- để trống để gửi bằng tên riêng của tài khoản này.
+acct_note_identity = Địa chỉ email có thể khác email đăng nhập nếu nhà cung cấp của bạn liên kết một tên miền riêng với hộp thư này. Thư sẽ được gửi và nhận bằng địa chỉ ở trên, còn đăng nhập vẫn dùng email đăng nhập. Để trống ô mật khẩu để giữ mật khẩu đã lưu cho tài khoản này -- ví dụ sau khi đổi mật khẩu ứng dụng Gmail, hãy nhập mật khẩu mới ở đây; nếu không thì để trống.
+acct_note_identities = Các địa chỉ khác mà tài khoản này có thể dùng để gửi và trả lời. Khi trả lời một thư được gửi tới một trong các địa chỉ này, trường Từ mặc định là địa chỉ đó thay vì địa chỉ ở trên.
+acct_note_signature = Được thêm vào mọi thư mới, thư trả lời và thư chuyển tiếp gửi từ tài khoản này, bên dưới dòng "-- ". Để trống nếu không dùng. Sửa chữ ký mở trình sửa có định dạng, nơi có chữ đậm, danh sách và liên kết; ô ở trên sau đó chứa bản văn bản thuần được gửi kèm.
+acct_note_junk = Thư mục thật mà Đánh dấu là thư rác chuyển thư vào. "{automatic}" dùng cùng cách đoán theo nhà cung cấp mà Lưu trữ và Thùng rác đang dùng; chỉ đặt mục này nếu cách đoán đó sai hoặc thư mục thư rác của bạn có tên riêng.
+acct_note_disable = Tài khoản bị tắt sẽ không bao giờ được liên lạc -- không IDLE, không làm mới định kỳ, không gì cả -- cho đến khi bật lại. Tài khoản vẫn hiện trong cây, đánh dấu (đã tắt), và thư đã tải xuống vẫn dùng được khi ngoại tuyến. Cùng công tắc với Tài khoản > Tắt tài khoản hoặc menu ngữ cảnh của tài khoản; đây chỉ là một chỗ khác để truy cập.
+acct_note_default = Thư mục của tài khoản này hiện đầu tiên trong cây, và thư mới mặc định gửi từ tài khoản này trừ khi bạn đổi trong trình soạn thư. Không ảnh hưởng đến địa chỉ dùng khi trả lời hay chuyển tiếp -- việc đó theo thư đang được trả lời (xem Danh tính bổ sung ở trên). Luôn có đúng một tài khoản mặc định, nên bỏ chọn ô này ở tài khoản mặc định hiện tại mà không chọn ở tài khoản khác sẽ không thay đổi gì -- hãy chọn ô của tài khoản khác để chuyển quyền mặc định.
+acct_note_mute = &Tắt tiếng sẽ chặn âm thanh thư mới, thông báo đọc to và thông báo Windows của tài khoản này, bất kể các cài đặt đó ra sao. Không ảnh hưởng đến tài khoản khác, và vẫn tuân theo công tắc chung trong Cài đặt > Âm thanh và thông báo (âm thanh và thông báo màn hình nền nói chung).
+wiz_note_app_password = Nếu bạn đã tạo mật khẩu ứng dụng cho ZBox, hãy nhấn Tiếp để tiếp tục.
+wiz_note_login = Thông tin đăng nhập.\nNếu email đăng nhập khác địa chỉ ở trên, ví dụ tài khoản nhà cung cấp của bạn là login@example.net nhưng bạn muốn gửi và nhận dưới tên you@example.org, hãy nhập email đăng nhập ở đây. Bạn có thể đặt địa chỉ gửi riêng sau trong Cài đặt tài khoản và danh tính.
+wiz_note_servers = Cài đặt máy chủ, được điền sẵn nếu nhận ra tên miền. Hãy sửa những gì cần khác đi.
+wiz_preset_none = Không tìm thấy thiết lập sẵn cho tên miền này. Hãy nhập cài đặt máy chủ của nhà cung cấp theo cách thủ công; trang trợ giúp của nhà cung cấp sẽ liệt kê chúng.
+ab_note_groups = Nhập tên nhóm vào trường Đến, Cc hoặc Bcc của cửa sổ soạn thư để điền tất cả thành viên của nhóm cùng lúc.
+cache_note_intro = Các mục này chỉ xóa bản sao cục bộ của ZBox. Không có gì bị xóa khỏi máy chủ thư, và thư đã xóa sẽ được tải xuống lại khi bạn mở lần sau.
+cache_note_age = Dọn dẹp tự động chạy mỗi ngày một lần, khi ZBox không có hoạt động bàn phím trong mười phút và không có thư nào đang mở. Dọn theo ngày của từng thư, kể cả thư vẫn còn trong tài khoản của bạn.
+filt_note_intro = Các quy tắc chạy theo thứ tự, từ trên xuống, kiểm tra Từ, Đến và Chủ đề. Tự động áp dụng cho thư mới khi đến Hộp thư đến của tài khoản này; dùng Chạy ngay bên dưới để áp dụng cho thư đã có trong một thư mục.
+filt_note_run_now = Áp dụng mọi quy tắc đang bật ở trên, theo thứ tự, cho mọi thư đã có trong thư mục đã chọn -- lưu thay đổi của bạn trước, giống như OK.
+mp_note_intro = Các tài khoản này được thiết lập trên máy tính khác. Nhập mật khẩu chính để mở khóa mật khẩu đã lưu của chúng ở đây. Bạn chỉ bị hỏi một lần trên máy tính này.\n\nKhông có mật khẩu chính, mỗi tài khoản phải đăng nhập lại vào máy chủ thư.
+priv_note_remote = Hình ảnh, bảng kiểu và phông chữ mà thư tải từ internet cho người gửi biết lúc bạn mở thư, và từ đâu. Khi bật, không cái nào được tải: một thông báo hiện phía trên thư cho biết đã chặn những gì, và Ctrl+Shift+I tải chúng cho riêng thư đó. Hình ảnh đính kèm trong chính thư luôn được hiện. Tập lệnh và khung nhúng luôn bị gỡ bỏ và không bao giờ được tải.
+priv_note_blocklist = Đây là lớp thứ hai. Lớp này có tác dụng khi bạn tải nội dung từ xa của một thư, hoặc cho phép một người gửi: hình ảnh được tải, nhưng mọi thứ từ tên miền theo dõi hoặc quảng cáo đã biết vẫn không được tải. Danh sách được tải xuống từ các danh sách quảng cáo và theo dõi công khai rồi gộp lại; việc cập nhật mất một hai giây và chạy trong nền.
+priv_note_junk = Không đoán mò. Đánh dấu là thư rác thêm người gửi vào danh sách chặn bên dưới, trừ khi thư đến qua danh sách thư. Đánh dấu không phải thư rác thêm người gửi vào danh sách không bao giờ là thư rác và thư đó không bao giờ bị kiểm tra lại. Thư mới từ người gửi bị chặn được đánh dấu Người gửi bị chặn trong danh sách; thư có liên kết tới trang lừa đảo hoặc mã độc đã biết được đánh dấu Có thể là lừa đảo. Bộ lọc thư rác riêng của nhà cung cấp thư vẫn hoạt động như trước.
+priv_status_phishing_updating = Danh sách lừa đảo: đang cập nhật trong nền. Mở lại hộp thoại này để xem kết quả.
+priv_status_updating = Đang cập nhật trong nền. Mở lại hộp thoại này để xem kết quả.
+rel_note_intro = Các thư liên quan đến "{subject}" theo tiêu đề Message-ID/References, trong mọi thư mục của tài khoản này.
+srch_note_intro = Tìm trong Từ, Chủ đề và Nội dung văn bản bạn nhập bên dưới. Tìm trong mọi tài khoản và thư mục trừ khi bạn thu hẹp bên dưới.
+sig_note_plain = Để trống bản văn bản thuần thay thế thì bản này sẽ được tạo từ chữ ký có định dạng khi bạn nhấn Lưu.
+unified_note_intro = Chọn các thư mục cần gộp từ mọi tài khoản. Mỗi thư mục được chọn trở thành một mục duy nhất trong cây, gộp thư mục đó từ tất cả tài khoản của bạn.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Giới thiệu ZBox
+title_account_settings = Cài đặt tài khoản và danh tính: {name}
+title_new_account = Tài khoản mới
+title_address_book = Sổ địa chỉ
+title_members = Thành viên: {name}
+ab_group_name_prompt = Tên nhóm:
+title_new_group = Nhóm mới
+title_cache_cleanup = Cấu hình dọn bộ nhớ đệm
+cache_age_prompt = Tự động xóa thư trong bộ nhớ đệm cũ hơn:
+title_automatic_cleanup = Dọn dẹp tự động
+comp_link_prompt = Địa chỉ liên kết:
+title_insert_link = Chèn liên kết
+title_composer_diagnostics = Chẩn đoán trình soạn thư
+title_formatted_preview = Xem trước có định dạng
+title_license_agreement = Thỏa thuận giấy phép ZBox
+title_message_filters = Bộ lọc thư: {account}
+title_master_password_required = Cần mật khẩu chính
+title_privacy_dialog = Riêng tư và chặn nội dung
+title_privacy = Riêng tư
+title_settings = Cài đặt
+title_unified_folders = Thư mục hợp nhất
+title_zbox_locked = ZBox đang bị khóa
+title_message_view = Chế độ xem thư
+title_remote_content = Nội dung từ xa
+title_refresh = Làm mới
+title_refresh_all = Làm mới tất cả
+mv_choose_folder = Chọn thư mục để lưu tập tin đính kèm
+title_thread = Chủ đề
+title_inbox = Hộp thư đến
+title_compose = Soạn thư
+title_watch_thread = Theo dõi chủ đề
+title_ignore_thread = Bỏ qua chủ đề
+title_edit_signature = Sửa chữ ký
+title_account = Tài khoản
+mf_folder_name_prompt = Tên thư mục:
+mf_new_name_prompt = Tên mới:
+title_refresh_all_accounts = Làm mới tất cả tài khoản
+title_sender = Người gửi
+title_new_mail = Thư mới
+mf_export_dialog_title = Xuất tất cả {count} tài khoản và cài đặt
+mf_related_tab = Liên quan: {subject}
+title_hotkeys_diagnostic = Chẩn đoán phím tắt
+set_choose_attachment_dir = Chọn thư mục lưu tập tin đính kèm
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox đang bị khóa. Hãy dùng một trong các phương thức bên dưới để mở khóa. Hủy sẽ đóng ZBox mà không mở tài khoản nào.
+unl_note_foreign_passkey = Khóa truy cập lưu cùng thư mục này thuộc về máy tính khác, nên không dùng được ở đây. Hãy mở khóa bằng khóa bảo mật hoặc mật khẩu chính, rồi dùng Cài đặt, Riêng tư và bảo mật, Phương thức mở khóa để thiết lập khóa truy cập trên máy tính này.
+unl_note_methods = Khi bật khóa ứng dụng, bất kỳ phương thức nào trong số này cũng mở khóa được ZBox, cùng với mật khẩu chính. Khóa truy cập dùng Windows Hello trên máy tính này; khóa bảo mật là khóa FIDO2 qua USB hoặc NFC và dùng được trên mọi máy tính bạn cắm vào.
+unl_note_not_encryption = Các phương thức này mở khóa ứng dụng. Chúng không mã hóa gì cả: mật khẩu chính vẫn là thứ duy nhất mở được mật khẩu tài khoản đã lưu trên máy tính chưa từng dùng thư mục này. Phải đặt mật khẩu chính trước, và chưa thêm được phương thức nào cho đến khi đặt.
+unl_add_passkey_unavailable = &Thêm khóa truy cập (không khả dụng)
+unl_add_key_unavailable = &Thêm khóa bảo mật (không khả dụng)
+unl_reassign_unavailable = &Gán lại khóa truy cập cho máy tính này (không khả dụng)
+unl_status_cancelled_passkey = Đã hủy khóa truy cập. ZBox vẫn đang bị khóa.
+unl_status_cancelled_key = Đã hủy khóa bảo mật. ZBox vẫn đang bị khóa.
+unl_status_enter_password = Nhập mật khẩu chính.
+unl_status_no_master = Chưa đặt mật khẩu chính, nên chưa thêm được khóa truy cập hay khóa bảo mật. Hãy đặt bằng nút Mật khẩu chính trong Cài đặt, Riêng tư và bảo mật, rồi quay lại đây. Mật khẩu chính là thứ mở được mật khẩu tài khoản đã lưu trên máy tính khác; khóa truy cập chỉ mở khóa ứng dụng trên máy này, nên không thể dùng riêng.
+unl_status_unsupported = Windows trên máy tính này không hỗ trợ khóa truy cập hay khóa bảo mật, nên ở đây chỉ mật khẩu chính mở khóa được ZBox.
+unl_status_foreign_one = 1 khóa truy cập thuộc về máy tính khác và không mở khóa được ZBox ở đây. Gán lại sẽ thay bằng một khóa tạo trên máy tính này.
+unl_status_foreign_many = {count} khóa truy cập thuộc về máy tính khác và không mở khóa được ZBox ở đây. Gán lại sẽ thay bằng một khóa tạo trên máy tính này.
+unl_status_foreign_one_no_hello = 1 khóa truy cập thuộc về máy tính khác và không mở khóa được ZBox ở đây. Windows Hello chưa được thiết lập ở đây, nên không thể thay trên máy tính này; Gỡ sẽ quên chúng.
+unl_status_foreign_many_no_hello = {count} khóa truy cập thuộc về máy tính khác và không mở khóa được ZBox ở đây. Windows Hello chưa được thiết lập ở đây, nên không thể thay trên máy tính này; Gỡ sẽ quên chúng.
+unl_status_no_hello = Windows Hello chưa được thiết lập trên máy tính này, nên không thêm được khóa truy cập ở đây. Vẫn thêm được khóa bảo mật.
+unl_status_none_registered = Chưa đăng ký phương thức mở khóa nào.
+unl_status_add_cancelled_passkey = Đã hủy thêm khóa truy cập.
+unl_status_add_cancelled_key = Đã hủy thêm khóa bảo mật.
+unl_status_added = Đã thêm: {name}.
+unl_status_reassign_cancelled = Đã hủy gán lại. Không có gì thay đổi.
+unl_status_reassigned = Đã thêm {name} và quên {count} khóa từ các máy tính khác.
+unl_status_test_cancelled = Đã hủy kiểm tra.
+unl_status_removed = Đã gỡ.
+unl_remove_warning_last = Gỡ {name}?\n\nĐây là phương thức mở khóa duy nhất đã đăng ký và chưa đặt mật khẩu chính, nên khi bật khóa ứng dụng sẽ không còn gì để mở khóa ZBox. Khóa sẽ được bỏ qua thay vì chặn bạn, nhưng khi đó ZBox sẽ mở mà không khóa.
+unl_remove_warning = Gỡ {name}? ZBox sẽ không chấp nhận phương thức này nữa.
+ab_col_email = Email
+ab_col_name = Tên
+ab_col_phone = Điện thoại
+ab_no_contacts = Chưa có liên hệ nào.
+acct_auto_check = Tự động kiểm tra thư mới
+acct_note_auto_check = Tắt: ZBox không bao giờ tự liên lạc với tài khoản này -- không theo dõi thư mới, không làm mới định kỳ, không tải xuống trong nền -- nên một máy chủ không ổn định không làm chậm các tài khoản khác. Thư đã tải xuống vẫn mở được, và Làm mới (F5), gửi và xóa vẫn tới máy chủ. Giống Tạm dừng kiểm tra tự động trong menu Công cụ hoặc menu ngữ cảnh của tài khoản.
+bl_day_ago = 1 ngày trước
+bl_days_ago = {days} ngày trước
+bl_label_blocklists = Danh sách chặn
+bl_label_phishing = Danh sách lừa đảo
+bl_last_failed = Lần thử gần nhất thất bại: %s
+bl_not_downloaded = Chưa tải xuống.
+bl_save_failed = Đã tải xuống %s nhưng không lưu được: %s
+bl_seed_only = %s tên miền từ danh sách có sẵn. Chưa từng cập nhật từ internet.
+bl_some_failed = Một số nguồn thất bại: %s
+bl_some_unreachable = Không kết nối được một số nguồn: %s
+bl_status_line = %s tên miền. Cập nhật lần cuối %s.
+bl_up_to_date = %s đã được cập nhật mới nhất.
+bl_update_failed = Không thể cập nhật %s: %s
+bl_updated = Đã cập nhật %s: %s tên miền.
+cc_age_choice = Mọi bộ nhớ đệm thư cũ %s
+cc_auto_button = Dọn dẹp tự động: thư trong bộ nhớ đệm cũ hơn %s...
+comp_btn_discard = &Bỏ
+comp_btn_keep_editing = &Tiếp tục sửa
+comp_btn_save_draft = &Lưu thư nháp
+comp_no_account = Chưa cấu hình tài khoản
+comp_saving_draft = Đang lưu thư nháp…
+comp_this_message = thư này
+comp_unsent_save_q = Lưu %s thành thư nháp trước khi đóng?
+comp_unsent_tray_q = Lưu %s thành thư nháp trước khi ZBox xuống khay?
+doc_unreadable = Không đọc được tập tin tài liệu:
+envlist_all_disabled = Mọi tài khoản đều bị tắt.
+envlist_col_date = Ngày
+envlist_col_from = Người gửi
+envlist_col_status = Trạng thái
+envlist_col_subject = Chủ đề
+envlist_collapsed = Đã thu gọn (%d)
+envlist_empty = Không có thư trong thư mục này.
+envlist_loading = Đang tải thư...
+envlist_no_accounts = Chưa cấu hình tài khoản nào.
+envlist_no_ignored = Không có chủ đề bị bỏ qua trong thư mục này.
+envlist_no_watched = Không có chủ đề đang theo dõi trong thư mục này.
+envlist_select_folder = Chọn một tài khoản hoặc thư mục để tải thư.
+eula_link_0 = Mở trang giấy phép của Himalaya trong trình duyệt
+eula_link_1 = Mở trang giấy phép của StevenBlack hosts trong trình duyệt
+eula_link_2 = Mở trang giấy phép của EasyList/EasyPrivacy trong trình duyệt
+eula_link_3 = Mở trang giấy phép của Phishing.Database trong trình duyệt
+eula_read_note = Hãy đọc giấy phép bên dưới, kể cả các phần của bên thứ ba. Bạn phải chọn Tôi đồng ý thì nút Tiếp mới dùng được. Tôi không đồng ý sẽ đóng ZBox mà không khởi động, và xóa những gì lần chạy này đã tạo.
+eula_unreadable = Không đọc được tập tin giấy phép:\n%s
+filters_title = Chạy bộ lọc
+flag_title = Gắn sao cho thư
+folder_type_archive = Lưu trữ
+folder_type_drafts = Thư nháp
+folder_type_inbox = Hộp thư đến
+folder_type_junk = Thư rác
+folder_type_sent = Đã gửi
+folder_type_trash = Thùng rác
+mime_application_json = Tập tin JSON
+mime_application_msword = Tài liệu Word
+mime_application_octet_stream = Tập tin nhị phân
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Bảng tính Excel
+mime_application_vnd_ms_powerpoint = Bản trình bày PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Bản trình bày PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Bảng tính Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Tài liệu Word
+mime_application_xml = Tập tin XML
+mime_application_zip = Tập tin nén ZIP
+mime_audio_mpeg = Âm thanh MP3
+mime_audio_ogg = Âm thanh OGG
+mime_audio_wav = Âm thanh WAV
+mime_image_bmp = Ảnh BMP
+mime_image_gif = Ảnh GIF
+mime_image_jpeg = Ảnh JPEG
+mime_image_png = Ảnh PNG
+mime_image_svg_xml = Ảnh SVG
+mime_image_webp = Ảnh WebP
+mime_text_csv = Tập tin CSV
+mime_text_html = Tập tin HTML
+mime_text_plain = Tập tin văn bản
+mime_video_mp4 = Video MP4
+mime_video_x_msvideo = Video AVI
+move_title_junk = Đánh dấu là thư rác
+move_title_move_to = Di chuyển đến
+move_title_not_junk = Đánh dấu không phải thư rác
+mp_explain_set = Đã đặt mật khẩu chính. Nhờ nó mà thư mục ZBox này mở được mật khẩu tài khoản đã lưu trên máy tính khác.\n\nĐể trống cả hai ô mật khẩu mới rồi nhấn OK để gỡ. Gỡ đi không ảnh hưởng đến máy tính này, nhưng thư mục sẽ không còn dùng được trên máy khác nếu không đăng nhập lại mọi tài khoản.
+mp_explain_unset = Chưa đặt mật khẩu chính, nên mật khẩu tài khoản đã lưu chỉ đọc được trên máy tính này và tài khoản Windows này. Sao chép thư mục sang nơi khác thì mọi tài khoản đều phải đăng nhập lại vào máy chủ thư.\n\nĐặt mật khẩu chính thì ZBox sẽ hỏi một lần trên mỗi máy tính mới, rồi từ đó mở khóa bình thường ở đó. Máy tính này sẽ không hỏi lại.\n\nHãy ghi lại và cất ở nơi an toàn. Mật khẩu không được lưu ở đâu và không thể khôi phục: nếu quên, mọi tài khoản đều phải đăng nhập lại vào máy chủ thư.
+mp_label_confirm = &Xác nhận mật khẩu chính mới:
+mp_label_current = &Mật khẩu chính hiện tại:
+mp_label_master = &Mật khẩu chính:
+mp_label_new = &Mật khẩu chính mới:
+mp_name_confirm = Xác nhận mật khẩu chính mới
+mp_name_current = Mật khẩu chính hiện tại
+mp_name_master = Mật khẩu chính
+mp_name_new = Mật khẩu chính mới
+mp_prompt_existing = Mật khẩu tài khoản đã lưu của bạn chỉ được bảo vệ trên máy tính này. Hãy đặt mật khẩu chính để vẫn mở được chúng nếu bạn chuyển ZBox sang máy khác.
+mp_prompt_first_run = ZBox sắp lưu mật khẩu tài khoản của bạn. Hãy đặt mật khẩu chính ngay để vẫn mở được chúng nếu bạn chuyển ZBox sang máy khác.
+mp_prompt_new_account = ZBox sắp lưu mật khẩu của tài khoản này. Hãy đặt mật khẩu chính trước để vẫn mở được tài khoản nếu bạn chuyển ZBox sang máy khác.
+mp_removed_done = Đã gỡ mật khẩu chính. Mật khẩu đã lưu giờ chỉ dùng được trên máy tính này và tài khoản Windows này.
+mp_set_done = Đã đặt mật khẩu chính. ZBox sẽ hỏi một lần trên mỗi máy tính mới mở thư mục này, rồi sau đó mở khóa bình thường ở đó.
+mv_body_title = Nội dung thư
+mv_col_format = Định dạng
+mv_col_name = Tên
+mv_col_size = Kích thước
+mv_format_unknown = Không rõ
+mv_size_unknown = Không rõ kích thước
+na_account_settings = Cài đặt tài khoản và danh tính
+na_disable_account = Tắt tài khoản
+na_edit_signature = Sửa chữ ký
+na_message_filters = Bộ lọc thư
+na_mute_account = Tắt tiếng tài khoản
+na_pause_auto_check = Tạm dừng kiểm tra tự động
+na_remove_account = Gỡ tài khoản
+na_set_default = Đặt làm tài khoản mặc định
+no_offline_copy = Không có bản ngoại tuyến của %s. Hãy mở khi đang trực tuyến, hoặc dùng Tập tin, Ngoại tuyến, Đồng bộ ngay.
+perm_delete_confirm = {msg} Thư sẽ không qua Thùng rác và không thể hoàn tác.
+perm_delete_many = Xóa vĩnh viễn {count} thư?
+perm_delete_one = Xóa vĩnh viễn {count} thư?
+preset_note_apple = Apple yêu cầu mật khẩu riêng cho ứng dụng.
+preset_note_fastmail = Fastmail yêu cầu mật khẩu ứng dụng.
+preset_note_google = Google yêu cầu mật khẩu ứng dụng hoặc OAuth2, không dùng mật khẩu thường của bạn.
+preset_note_proton = ProtonMail yêu cầu ứng dụng ProtonMail Bridge chạy trên máy.
+preset_note_yahoo = Yahoo yêu cầu mật khẩu ứng dụng.
+priv_phishing_not_loaded = Danh sách lừa đảo: chưa được tải. Danh sách được tải xuống lần đầu khi các quy tắc này bật và ZBox trực tuyến.
+priv_phishing_prefix = Danh sách lừa đảo:
+priv_status_unavailable = Không có trạng thái danh sách chặn.
+rdr_load_failed = Không thể tải thư.\n\n{message}
+rdr_loading = Đang tải thư...
+rdr_select_message = Chọn một thư để đọc tại đây.
+set_autosave_off = Tắt — dùng Lưu thư nháp (Ctrl+S) để lưu thủ công
+set_autosave_seconds = Mỗi {seconds} giây
+set_no_unlock = Không có khóa truy cập hay khóa bảo mật dùng được ở đây
+set_purge_days = Sau {days} ngày
+set_purge_off = Tắt — Thùng rác và Thư rác không bao giờ tự dọn
+set_purge_one_day = Sau 1 ngày
+set_rt_bundled_installed = Bản đi kèm: đã cài.
+set_rt_bundled_many = Bản đi kèm: đã cài %s.
+set_rt_bundled_none = Bản đi kèm: chưa cài, nên ZBox dùng bản chung của hệ thống.
+set_rt_bundled_unknown = Bản đi kèm: không xác định được.
+set_rt_bundled_ver = Bản đi kèm: đã cài phiên bản %s.
+set_rt_system_unknown = Bản chung của hệ thống: không xác định được phiên bản.
+set_rt_system_ver = Bản chung của hệ thống: phiên bản %s.
+set_unlock_many = %d phương thức mở khóa dùng được ở đây
+set_unlock_unreadable = Không đọc được phương thức mở khóa
+sig_tab_formatted = Có định dạng
+sig_tab_source = Mã nguồn HTML
+srch_all_accounts = Tất cả tài khoản
+srch_all_folders = Tất cả thư mục
+tab_mail = Thư
+tab_new_message = Thư mới
+tab_saved_message = Thư đã lưu
+title_copy_to_err = Sao chép đến
+title_mark_message = Đánh dấu thư
+title_unsent_message = Thư chưa gửi
+tree_unified_root = Thư mục hợp nhất
+unlock_kind_passkey = Khóa truy cập (Windows Hello)
+unlock_kind_security_key = Khóa bảo mật
+unlock_prompt_message = Windows đang yêu cầu bạn xác nhận. Hãy trả lời bằng Windows Hello, mã PIN hoặc khóa bảo mật của bạn. Cửa sổ này tự đóng khi Windows hoàn tất.
+unlock_prompt_title = Bảo mật Windows
+unlock_registering = Đang đăng ký phương thức mở khóa này
+unlock_the_passkey = Khóa truy cập
+unlock_the_security_key = Khóa bảo mật
+wildcard_eml = Tập tin email (*.eml)|*.eml|Tất cả tập tin (*.*)|*.*
+wildcard_export = Bản xuất ZBox (*.json)|*.json
+wiz_not_supported = KHÔNG HỖ TRỢ: {name}. {note} Không thể thêm tài khoản này vào ZBox.
+stock_apply = &Áp dụng
+stock_cancel = Hủy
+stock_close = &Đóng
+stock_help = &Trợ giúp
+stock_no = &Không
+stock_ok = OK
+stock_yes = &Có
+wiz_btn_back = &< Quay lại
+wiz_btn_finish = &Hoàn tất
+wiz_btn_next = &Tiếp >
+acct_unsaved_q = Lưu các thay đổi cho tài khoản này?
+btn_save = &Lưu
+spell_add_to_dictionary = &Thêm vào từ điển
+spell_no_suggestions = Không có gợi ý
+title_signature_for = Chữ ký: {account}
+title_mark_folder_read = Đánh dấu thư mục là đã đọc
+title_update_available = Cập nhật ZBox
+update_available = Đã có ZBox {new}. Bạn đang dùng {current}.
+upd_notes_label = Ghi chú phát hành:
+upd_no_notes = Không có ghi chú phát hành.
+upd_notes_name = Ghi chú phát hành
+upd_update_now = Có, cập nhật ngay
+upd_remind_later = Nhắc tôi sau
+title_update_download = Đang tải xuống bản cập nhật ZBox
+upd_downloading = Đang tải xuống ZBox {version}...
+upd_progress_name = Tiến độ tải xuống
+upd_cancel = Hủy
+upd_cancelling = Đang hủy...
+set_updates_label = Cập nhật:
+set_update_auto = Tự động kiểm tra cập nhật
+set_update_mode_label = Khi tìm thấy bản cập nhật:
+set_update_ask = Hỏi tôi
+set_update_silent = Tải xuống và cài đặt mà không hỏi
+set_update_note = ZBox kiểm tra GitHub để tìm bản phát hành mới hơn tối đa một lần mỗi ngày, chỉ khi đang rảnh, và không gửi gì ngoài số phiên bản của nó. Hỏi tôi hiển thị phiên bản mới và ghi chú phát hành, kèm Có, cập nhật ngay và Nhắc tôi sau. Tải xuống và cài đặt mà không hỏi lấy bản cập nhật trong lúc rảnh và cài đặt vào lần tới bạn thoát hẳn ZBox, không bao giờ trong lúc bạn đang làm việc. Bản cập nhật chỉ thay thế các tệp chương trình của chính ZBox: tài khoản, mật khẩu, cài đặt, thư, nhật ký, chủ đề âm thanh và bất kỳ ngôn ngữ nào bạn đã thêm đều không bao giờ bị động đến, và phiên bản trước được giữ lại và tự khôi phục nếu phiên bản mới không khởi động được. Trong Trợ giúp, Cập nhật còn có Kiểm tra cập nhật ngay và trang phát hành để cập nhật thủ công.
+set_update_check_now = Kiểm tra ngay
+mv_attachment_button = {filename} ({format})
+att_open = Mở
+att_save = Lưu...
+att_save_all = Lưu tất cả tệp đính kèm
+title_save_attachment = Lưu tệp đính kèm
+title_full_headers = Tất cả thông tin thư
+hdr_copy_all = Sao chép tất cả
+acct_identity_own_signature = Dùng chữ ký riêng
+acct_identity_own_reply_to = Dùng địa chỉ Trả lời tới riêng
+acct_identity_reply_to = Địa chỉ Trả lời tới
+acct_identity_always_cc = Luôn Cc tới các địa chỉ này
+acct_identity_cc = Địa chỉ Cc
+acct_identity_always_bcc = Luôn Bcc tới các địa chỉ này
+acct_identity_bcc = Địa chỉ Bcc
+acct_identity_own_folders = Dùng thư mục Thư nháp và Đã gửi riêng
+acct_identity_drafts = Thư mục thư nháp
+acct_identity_sent = Thư mục đã gửi
+acct_identity_own_smtp = Dùng máy chủ gửi thư đi riêng
+acct_identity_smtp_login = Tên đăng nhập gửi thư đi
+acct_identity_smtp_password = Mật khẩu gửi thư đi
+acct_identity_test_smtp = Kiểm tra máy chủ gửi thư đi
+acct_identity_note_smtp = Để trống tên đăng nhập để đăng nhập bằng địa chỉ email của danh tính này. Bản sao đã gửi được lưu vào thư mục Đã gửi của tài khoản này, hoặc vào thư mục Đã gửi riêng của danh tính này nếu có.
+identity_field_required = Hãy điền {field}, hoặc bỏ chọn ô của nó.
+identity_field_invalid = {field} có một địa chỉ không hợp lệ.
+identity_folders_required = Hãy chọn một thư mục thư nháp, một thư mục đã gửi hoặc cả hai, hoặc bỏ chọn ô của chúng.
+identity_password_required = Hãy nhập mật khẩu gửi thư đi.
+identity_smtp_testing = Đang kiểm tra máy chủ gửi thư đi.
+identity_smtp_ok = Máy chủ gửi thư đi đã chấp nhận đăng nhập.
+identity_smtp_failed = Kiểm tra máy chủ gửi thư đi thất bại.\n\n{error}
+set_bare_keys_note_move = M và C mở các menu Chuyển tới và Sao chép tới kèm danh sách thư mục cho các thư đã chọn, còn Shift+M mở một ô để bạn gõ một phần tên thư mục rồi chuyển thư tới đó. Tắt tùy chọn này cũng đưa M và C về điều hướng theo chữ cái đầu.
+folder_search_filter = Tên thư mục chứa
+folder_search_list = Các thư mục khớp
+folder_search_no_match = Không có thư mục nào khớp với tên đó.
+wiz_signin_method = Phương thức đăng nhập
+wiz_method_password = Mật khẩu
+wiz_method_microsoft = Tài khoản Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Đăng nhập bằng Microsoft. Đã điền cài đặt máy chủ cho Outlook.com, Hotmail, Live và Microsoft 365.
+wiz_welcome_notice = Gmail. Mật khẩu Google thường sẽ bị từ chối, nhưng mật khẩu ứng dụng thì dùng được. Phải bật xác minh 2 bước trước. Nút bên dưới mở hướng dẫn của Google.\n\nOutlook.com, Hotmail, Live và Microsoft 365. Các tài khoản này đăng nhập bằng tài khoản Microsoft của bạn. Ở trang Đăng nhập, chọn Tài khoản Microsoft, rồi đăng nhập trên trình duyệt hoặc bằng mã.\n\nNhà cung cấp khác. Mật khẩu thường hoặc mật khẩu ứng dụng thường dùng được, và trang trợ giúp của nhà cung cấp có liệt kê cài đặt máy chủ.
+preset_note_outlook = Tài khoản Outlook.com, Hotmail, Live và MSN đăng nhập bằng tài khoản Microsoft. Ở trang Đăng nhập, chọn Tài khoản Microsoft làm phương thức đăng nhập.
+ms_status_name = Trạng thái đăng nhập Microsoft
+ms_browser_button = Đăng nhập trên trình duyệt
+ms_code_button = Đăng nhập bằng mã
+ms_copy_code = Sao chép mã
+ms_open_page = Mở trang đăng nhập
+ms_stop = Ngừng chờ
+ms_not_configured = Bản ZBox này chưa được thiết lập đăng nhập bằng Microsoft.
+ms_not_signed_in = Chưa đăng nhập. Hãy đăng nhập trên trình duyệt, hoặc bằng mã trên bất kỳ thiết bị nào.
+ms_signed_in = Đã đăng nhập với tên {address}.
+ms_signed_in_plain = Đã đăng nhập.
+ms_needs_sign_in = Tài khoản này cần đăng nhập Microsoft lại. Hãy đăng nhập trên trình duyệt, hoặc bằng mã trên bất kỳ thiết bị nào.
+ms_reason_cancelled = Đã dừng đăng nhập.
+ms_reason_timeout = Không có phản hồi kịp thời.
+ms_reason_denied = Quyền truy cập không được cho phép.
+ms_reason_expired = Mã đã hết hạn. Hãy yêu cầu mã mới.
+ms_reason_network = Không thể kết nối với Microsoft. Hãy kiểm tra kết nối và thử lại.
+ms_reason_server = Microsoft trả lời: {detail}
+ms_page_done = Đã đăng nhập. Bạn có thể đóng trang này và quay lại ZBox.
+ms_page_failed = Đăng nhập chưa hoàn tất. Hãy quay lại ZBox để xem chi tiết.
+ms_browser_waiting = Trình duyệt đang hiển thị trang đăng nhập của Microsoft. Hãy hoàn tất đăng nhập ở đó, rồi quay lại ZBox.
+ms_code_asking = Đang xin Microsoft mã đăng nhập...
+ms_code_waiting = Trên bất kỳ thiết bị nào, hãy mở {address} và nhập mã {code}. ZBox chờ ở đây cho đến khi bạn đăng nhập xong.
+ms_failed = Đăng nhập chưa hoàn tất. {reason}
+ms_code_copied = Đã sao chép mã.
+offline_inbox_only = Chỉ Hộp thư đến và Lưu trữ được giữ lại để dùng ngoại tuyến. Hãy kết nối mạng để mở {folder}.
+block_sender_rule_name = Chặn {sender}
+title_block_sender = Chặn người gửi này
+title_unblock_sender = Bỏ chặn người gửi này
+set_clear_inbox_cache = Xóa bộ nhớ đệm của thư khi thư rời Hộp thư đến
+set_clear_inbox_cache_note = Khi bật, bản sao ngoại tuyến và nội dung đã lưu của một thư bị xóa ngay khi thư rời Hộp thư đến, kể cả khi thư bị xóa hoặc di chuyển ở nơi khác, chẳng hạn trên điện thoại của bạn, nên thư không bao giờ xuất hiện ở nơi nó không còn nữa. Chỉ Hộp thư đến giữ các tệp này; mọi thư mục khác luôn được đọc từ máy chủ.
+empty_trash_all_confirm = Xóa vĩnh viễn mọi thư trong Thùng rác của tất cả tài khoản?\n\nKhông thể hoàn tác thao tác này.
+
+[errors]
+language_restart_failed = ZBox không thể tự khởi động lại:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Không thể mở trình gửi thư cho {address}.
+
+wizard_test_failed = Kết nối thất bại:\n\n{error}
+
+contacts_import_unreadable = Không đọc được tập tin đó.\n\n{error}
+contacts_export_unwritable = Không ghi được tập tin đó.\n\n{error}
+
+attach_unreadable = Không đọc được tập tin đính kèm {path}:\n{error}
+send_failed = Không thể gửi thư.\n\n{error}
+draft_attach_unreadable = Không đọc được tập tin đính kèm {path}:\n{error}\n\nChưa lưu thư nháp.
+draft_save_failed = Không thể lưu thư nháp.\n\n{error}
+
+clipboard_unavailable = Không thể mở bộ nhớ tạm.
+open_link_failed = Không thể mở trình duyệt cho:\n{url}
+
+master_password_mismatch = Hai ô mật khẩu chính mới không khớp.
+master_password_required = Nhập mật khẩu chính, hoặc nhấn Hủy.
+master_password_not_set = Không thể đặt mật khẩu chính: {error}
+master_password_not_here = Không thể đổi mật khẩu chính từ đây.
+
+attachment_save_failed = Không thể lưu tập tin đính kèm.\n\n{error}
+attachments_save_failed = Không thể lưu các tập tin đính kèm.\n\n{error}
+print_failed = Không thể in thư. Hãy kiểm tra xem đã cấu hình máy in chưa.
+print_preview_failed = Không thể mở xem trước khi in. Hãy kiểm tra xem đã cấu hình máy in chưa.
+
+related_search_failed = Không thể tìm thư liên quan.\n\n{error}
+search_failed = Tìm kiếm thất bại.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox không tìm thấy thư mục cấu hình, nên không thể quản lý phương thức mở khóa ở đây.
+shortcut_no_folder = ZBox không xác định được thư mục của chính nó, nên không thể tạo lối tắt từ đây.
+shortcut_failed_settings = Không thể tạo lối tắt trên màn hình nền:\n\n{error}
+
+unlock_method_failed = {what} không hoạt động.\n\n{error}
+unlock_check_failed = Không thể kiểm tra mật khẩu chính.\n\n{error}
+unlock_password_wrong = Mật khẩu chính đó không đúng.
+unlock_add_failed = Không thể thêm {what}.\n\n{error}
+unlock_passkey_setup_failed = Không thể thiết lập khóa truy cập trên máy tính này, nên không có gì thay đổi.\n\n{error}
+unlock_method_test_failed = Phương thức đó không hoạt động.\n\n{error}
+
+account_list_unreadable = ZBox không mở được danh sách tài khoản của bạn.\n\n{error}\n\nChưa tải tài khoản nào, và tập tin không bị thay đổi, nên không mất gì cả. Việc thêm, sửa và gỡ tài khoản sẽ bị từ chối cho đến khi đọc được danh sách.
+account_list_no_accounts = ZBox không mở được danh sách tài khoản trong phiên này ({error}), nên không có tài khoản nào để chọn. Không mất gì và không có gì thay đổi. Hãy đóng ZBox rồi khởi động lại, và nhập mật khẩu chính khi được hỏi.
+open_message_failed = Không thể mở thư.\n\n{error}
+filters_list_failed = Không thể liệt kê thư trong {folder}.\n\n{error}
+filters_move_failed = Không thể di chuyển thư đã qua bộ lọc.\n\n{error}
+cache_clear_failed = Không thể xóa bộ nhớ đệm.\n\n{error}
+folder_create_failed = Không thể tạo thư mục.\n\n{error}
+folder_rename_failed = Không thể đổi tên thư mục.\n\n{error}
+folder_delete_failed = Không thể xóa thư mục.\n\n{error}
+folder_subscribe_failed = Không thể đăng ký thư mục.\n\n{error}
+folder_unsubscribe_failed = Không thể hủy đăng ký thư mục.\n\n{error}
+saved_open_failed = Không thể mở tập tin.\n\n{error}
+saved_parse_failed = Không thể phân tích tập tin này như một thư email.\n\n{error}
+save_file_failed = Không thể lưu tập tin.\n\n{error}
+save_fetch_failed = Không thể lấy thư để lưu.\n\n{error}
+empty_trash_failed = Không thể dọn sạch Thùng rác.\n\n{error}
+empty_junk_failed = Không thể dọn sạch Thư rác.\n\n{error}
+export_write_failed = Không thể ghi tập tin xuất.\n\n{error}
+import_read_failed = Không thể đọc tập tin này như bản xuất ZBox.\n\n{error}
+import_not_export = Tập tin này có vẻ không phải bản xuất ZBox.\n\n{error}
+search_open_failed = Không thể mở thư này.
+related_load_failed = Không thể tải thư này.\n\n{error}
+reply_load_failed = Không thể tải thư cần trả lời.\n\n{error}
+forward_load_failed = Không thể tải thư cần chuyển tiếp.\n\n{error}
+action_failed = Không thể hoàn thành thao tác này.\n\n{error}
+undo_failed = Không thể hoàn tác {label}.\n\n{error}
+copy_failed = Không thể sao chép thư.\n\n{error}
+delete_failed = Không thể xóa thư.\n\n{error}
+archive_failed = Không thể lưu trữ thư.\n\n{error}
+master_password_not_changed = Không thể đổi mật khẩu chính: {error}
+shortcut_failed_startup = Không thể tạo lối tắt trên màn hình nền:\n\n{error}\n\nZBox sẽ tiếp tục khởi động. Bạn có thể thử lại sau trong Cài đặt.
+account_locked_action = ZBox không thể thực hiện: %s. Không mở được danh sách tài khoản trong phiên này (%s), và không có gì thay đổi. Hãy đóng ZBox rồi khởi động lại, và nhập mật khẩu chính nếu được hỏi.
+send_tls_mismatch = Không thể gửi thư. Máy chủ thư đi trả lời mà không mã hóa, nên kiểu mã hóa thư đi không khớp với cổng. Trong Công cụ, Cài đặt tài khoản và danh tính, hãy dùng STARTTLS cho cổng 587, hoặc SSL/TLS cho cổng 465, rồi gửi lại.\n\n{error}
+mark_folder_read_failed = Không thể đánh dấu thư mục là đã đọc.\n\n{error}
+update_failed = Không thể tải xuống bản cập nhật, vì vậy không có gì thay đổi.\n\n{error}
+update_rolled_back = Không thể khởi động bản cập nhật, vì vậy đã khôi phục phiên bản trước.
+attachment_open_failed = Không thể mở tệp đính kèm.\n\n{error}
+headers_failed = Không thể tải thông tin thư.\n\n{error}
+wizard_ms_sign_in_first = Hãy đăng nhập bằng Microsoft trước khi tiếp tục. Dùng một trong hai nút đăng nhập trên trang này.
+wizard_provider_unsupported = ZBox không thể đăng nhập vào nhà cung cấp này. Ghi chú trên trang này cho biết lý do. Hãy quay lại và dùng địa chỉ email khác, hoặc hủy.
+acct_ms_sign_in_first = Hãy đăng nhập bằng Microsoft trước khi lưu, hoặc chọn Mật khẩu làm phương thức đăng nhập.
+ms_sign_in_again = {account} cần đăng nhập Microsoft lại. Hãy mở Cài đặt tài khoản và danh tính rồi đăng nhập ở đó.
+empty_trash_all_failed = Không thể dọn Thùng rác cho: {accounts}
+
+[help]

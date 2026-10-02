@@ -1,0 +1,16 @@
+ZBox
+Oleh Harith Alhamdani
+
+ZBox adalah klien email portabel, gesit, aman, dan sepenuhnya aksesibel. Gratis untuk penggunaan pribadi dan ringan bagi sumber daya sistem. ZBox dibuat untuk memberi pengguna tunanetra dan low vision alternatif nyata yang kaya fitur dibandingkan pilihan yang biasanya tersedia, yang berat dan lamban. Di balik layar, ZBox ditenagai oleh klien email Himalaya CLI yang tangguh.
+
+Privasi dan Keamanan
+ZBox dilengkapi pemblokir pelacak dan iklan (aktif secara bawaan), bersama aturan surat junk opsional dan pemeriksa tautan phishing. Untuk portabilitas yang aman, ZBox memakai perlindungan Kata Sandi Utama: jika folder aplikasi disalin ke komputer lain tanpa kata sandi ini, akses ke akun-akun Anda yang tertaut diblokir. Jika Anda berencana memindahkan ZBox ke mesin baru, pastikan untuk menetapkan kata sandi utama di sini terlebih dahulu. ZBox juga mendukung kunci sandi Windows Hello (sidik jari, PIN, atau pengenalan wajah) dan kunci keamanan perangkat keras modern.
+
+Kemudahan yang Familier
+Agar peralihan dari klien email lain terasa mulus, ZBox memiliki tombol pintas yang ramah dan fleksibel. Beberapa pintasan sering menjalankan tindakan yang sama; misalnya, Alt+S dan Ctrl+Enter sama-sama mengirim pesan. Anda dapat melihat daftar lengkapnya di Bantuan, Pintasan Papan Ketik.
+
+Penyiapan Akun
+Akun Outlook.com, Hotmail, Live, dan Microsoft 365 masuk dengan akun Microsoft Anda, melalui peramban atau dengan kode. Masuk langsung dengan Google akan ditambahkan dalam pembaruan mendatang. Untuk saat ini, Anda dapat menautkan akun Gmail dengan membuat Kata Sandi Aplikasi alih-alih memakai kata sandi biasa (lihat tombol di bawah untuk petunjuknya).
+
+Lisensi dan Penghargaan
+Tekan Lihat Lisensi di bawah untuk membaca lisensi ZBox dan melihat komponen pihak ketiga yang memungkinkannya. Komponen ini mencakup Himalaya, daftar blokir StevenBlack hosts dan EasyPrivacy, daftar Phishing.Database, serta (dalam salinan hasil build) Python, wxPython, imapclient, pywin32, keyring, dan accessible_output2 beserta pustaka klien pembaca layarnya.

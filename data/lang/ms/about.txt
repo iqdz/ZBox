@@ -1,0 +1,16 @@
+ZBox
+Oleh Harith Alhamdani
+
+ZBox ialah klien e-mel mudah alih, responsif, selamat dan boleh dicapai sepenuhnya. Percuma untuk kegunaan peribadi dan ringan pada sumber sistem. Ia dicipta untuk memberi pengguna buta dan rabun pilihan sebenar yang kaya ciri, berbanding pilihan berat dan perlahan yang biasanya tersedia. Di sebalik tabir, ZBox bergantung pada klien e-mel Himalaya CLI yang kukuh.
+
+Privasi dan Keselamatan
+ZBox menyertakan penyekat penjejak dan iklan (hidup secara lalai), bersama peraturan mel remeh pilihan dan semakan pautan pancingan data. Untuk mudah alih yang selamat, ia menggunakan perlindungan kata laluan utama: jika folder aplikasi disalin ke komputer lain tanpa kata laluan ini, akses ke akaun yang disambungkan disekat. Jika anda bercadang memindahkan ZBox ke komputer baru, tetapkan kata laluan utama di sini dahulu. Ia juga menyokong kunci laluan Windows Hello (cap jari, PIN atau pengecaman wajah) dan kunci keselamatan perkakasan moden.
+
+Pengalaman yang Biasa
+Untuk menjadikan peralihan daripada klien e-mel lain semudah mungkin, ZBox menawarkan pintasan papan kekunci yang praktikal dan fleksibel. Selalunya beberapa pintasan melakukan tindakan yang sama; contohnya, Alt+S dan Ctrl+Enter kedua-duanya menghantar mesej. Senarai penuh ada dalam Bantuan, Pintasan Papan Kekunci.
+
+Persediaan Akaun
+Akaun Outlook.com, Hotmail, Live dan Microsoft 365 log masuk dengan akaun Microsoft anda, melalui pelayar atau dengan kod. Log masuk asli Google akan ditambah dalam kemas kini akan datang. Buat masa ini, anda boleh memautkan akaun Gmail anda dengan menjana Kata Laluan Aplikasi dan bukannya menggunakan kata laluan biasa anda (lihat butang di bawah untuk arahan).
+
+Lesen dan Penghargaan
+Tekan Lihat Lesen di bawah untuk membaca lesen ZBox dan melihat komponen pihak ketiga yang menjadikannya mungkin. Ini termasuk: Himalaya, senarai sekatan StevenBlack hosts dan EasyPrivacy, senarai Phishing.Database, dan (dalam versi binaan) Python, wxPython, imapclient, pywin32, keyring dan accessible_output2 dengan pustaka klien pembaca skrinnya.

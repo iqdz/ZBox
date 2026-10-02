@@ -1,0 +1,103 @@
+Allgemein
+F6: Fokus zwischen den Bereichen wechseln
+Ctrl+Tab: Nächster Tab
+Ctrl+Shift+Tab: Vorheriger Tab
+Ctrl+W oder Ctrl+F4: Aktuellen Tab schließen
+Escape: Klappt ein aufgeklapptes Thema zu, wenn die Nachrichtenliste den Fokus hat und eines aufgeklappt ist; sonst wird der aktuelle Tab geschlossen (Nachricht, gespeicherte Nachricht oder eine ungesendete Nachricht im Entwurf -- fragt vorher nach, wenn es ungespeicherte Änderungen gibt)
+Anwendungstaste oder Shift+F10: Kontextmenü für das fokussierte Listen- oder Baumelement öffnen
+F1: Tastenkürzel, diese Seite
+Ctrl+Shift+Q: Beenden -- beendet ZBox immer wirklich, auch wenn „In den Infobereich schließen“ in den Einstellungen aktiviert ist (die Schließen-Schaltfläche des Fensters, Alt+F4 und Ctrl+W auf dem Tab Mail blenden dann in den Infobereich aus, statt zu beenden; der Eintrag Beenden des Infobereichssymbols beendet ebenfalls immer wirklich)
+Ctrl+Shift+Delete: Offline-Nachrichtencache leeren -- nur die lokalen Kopien von ZBox, nichts auf irgendeinem Server (auch eine Schaltfläche unter Extras > Cache-Bereinigung konfigurieren)
+
+Mail
+Ctrl+N: Neue Nachricht
+Ctrl+Shift+N: Neues E-Mail-Konto
+F5: Neue Mails für das aktuelle Konto abrufen
+Shift+F5: Neue Mails für alle Konten abrufen
+Ctrl+Shift+J: Zur Posteingangsliste Springen
+Ctrl+Y: Zur Ordnerliste wechseln
+Enter auf einem zugeklappten Konto oder Ordner in der Ordnerliste: klappt es auf, wie Pfeil rechts
+Ctrl+Shift+B: Adressbuch
+Ctrl+Shift+F: Nachrichten suchen
+Ctrl+Shift+T: Verwandte Nachrichten anzeigen
+
+Die Nachrichtenliste
+Delete, Shift+Delete, Archivieren, Kennzeichnen/Kennzeichnung entfernen, Als Junk/Kein Junk markieren, Verschieben nach und Kopieren nach gelten auf einer ZUGEKLAPPTEN Themenzeile für jede Nachricht im Thema -- klappen Sie das Thema zuerst auf (Pfeil rechts oder Enter/Space), um nur eine Nachricht darin zu bearbeiten
+Ctrl+A: Alle Nachrichten auswählen
+Ctrl+Shift+L: Weitere Nachrichten laden
+Delete: Nachricht(en) in den Papierkorb verschieben
+Shift+Delete: Nachricht(en) endgültig löschen
+Ctrl+Z: Letztes Löschen, Archivieren, Als Junk oder Als kein Junk markieren rückgängig machen
+S: Ausgewählte Nachricht(en) kennzeichnen/Kennzeichnung entfernen
+A: Ausgewählte Nachricht(en) archivieren
+J: Ausgewählte Nachricht(en) als Junk markieren
+Shift+J: Ausgewählte Nachricht(en) als kein Junk markieren
+W: Thema beobachten -- schaltet um, ob das Thema der Auswahl beobachtet wird (auch im Menü Nachricht und per Rechtsklick)
+K: Thema ignorieren -- schaltet um, ob dieses Thema ignoriert wird (auch im Menü Nachricht und per Rechtsklick)
+M: Ausgewählte Nachricht(en) verschieben -- öffnet das Menü „Verschieben nach“ mit den Ordnern
+Shift+M: Ausgewählte Nachricht(en) verschieben, indem Sie einen Teil eines Ordnernamens eingeben
+C: Ausgewählte Nachricht(en) kopieren -- öffnet das Menü „Kopieren nach“ mit den Ordnern
+S, A, J, W und K oben sind standardmäßig aktiv und lassen sich in den Einstellungen abschalten (sonst haben sie Vorrang vor der Anfangsbuchstaben-Navigation der Nachrichtenliste)
+M, Shift+M und C oben folgen derselben Einstellung
+Enter oder Space auf einem zugeklappten Thema: öffnet die neueste ungelesene Nachricht dieses Themas (die neueste, wenn das ganze Thema gelesen ist) als einzelne Nachricht in einem Tab -- danach blättern Ctrl+Shift+Page Down und Ctrl+Shift+Page Up durch den Rest des Themas, ohne je eine zweite Nachricht zu öffnen. Auf einer gewöhnlichen Nachricht wird sie wie üblich geöffnet
+Pfeil rechts auf einem zugeklappten Thema: zeigt seine Nachrichten als Liste, ohne eine davon zu öffnen -- öffnen Sie sie von dort einzeln mit ihrem eigenen Enter oder Space
+Ctrl+Shift+O: In Themenbaum anzeigen -- das ganze Thema in einem Tab, als Liste seiner Nachrichten mit dem Text der ausgewählten darunter. Mit den Pfeiltasten durch die Liste gehen, um sie einzeln zu lesen; Enter auf einer Zeile öffnet diese Nachricht allein in einem eigenen vollständigen Tab. Gleicher Name und gleiche Taste wie der entsprechende Befehl in Thunderbird
+Pfeil links: das Thema zuklappen, in dem sich die Auswahl gerade befindet
+*: Alle Themenbäume aufklappen (auch Ansicht > Themen); \: Alle Themenbäume zuklappen (auch Ansicht > Themen)
+Ansicht > Themen > Alle / Beobachtete Themen / Ignorierte Themen filtert, welche Themen angezeigt werden -- zurück zu Alle bringt immer jede Nachricht zurück; dadurch wird nie etwas aus dem Ordner entfernt
+
+Eine geöffnete Nachricht
+Alt+A: Diese Nachricht archivieren -- nur solange ihr Text (Text oder HTML) wirklich den Tastaturfokus hat; anderswo öffnet Alt+A wie gewohnt das Menü Konten
+Ctrl+R: Antworten
+Ctrl+Shift+R: Allen antworten
+Ctrl+L: Weiterleiten
+Ctrl+Delete oder Ctrl+D: Diese Nachricht in den Papierkorb verschieben. Delete allein wird oft vom Screenreader abgefangen, solange eine HTML-Nachricht den Fokus hat; Shift+Delete löscht endgültig
+Ctrl+Shift+Page Down: Nächste Nachricht in diesem Thema; Ctrl+Shift+Page Up: vorherige. Ersetzt den aktuellen Tab, statt einen weiteren zu öffnen, sodass immer nur eine Nachricht offen ist. Bei der letzten Nachricht (oder der ersten, nach oben) wird das angesagt und nachgefragt; erneutes Drücken derselben Taste schließt die Nachricht und beendet das Thema, zurück in der Nachrichtenliste. (Ctrl+Page Up/Down bleiben unberührt -- sie wechseln die Tabs)
+Ctrl+B: Nachrichtenansicht umschalten (Text/HTML)
+Ctrl+P: Drucken
+Ctrl+Shift+P: Druckvorschau
+Ctrl+S: Nachricht speichern unter
+Ctrl+U: Name und Adresse des Absenders ansagen
+Ctrl+Shift+U: Absender ansagen und Adresse kopieren
+Ctrl+Shift+I: Externe Inhalte in dieser Nachricht anzeigen
+Ctrl+Shift+=: Schrift der Nachricht vergrößern
+Ctrl+Shift+-: Schrift der Nachricht verkleinern
+Ctrl+Shift+0: Schriftgröße der Nachricht zurücksetzen
+
+Eine Nachricht verfassen
+Ctrl+Enter oder Alt+S: Senden
+Ctrl+S: Entwurf speichern
+Ctrl+Shift+A: Datei anhängen
+Ctrl+Shift+S: Signatur des Kontos im Feld Von einfügen
+Ctrl+Shift+V: Als Zitat einfügen
+Ctrl+Shift+W: Wörter zählen
+Ctrl+Shift+P: Vorschau der Nachricht, wie sie gesendet wird
+Escape, Ctrl+W oder Ctrl+F4: Verfassen-Tab schließen -- fragt vorher, wenn etwas ungespeichert ist, mit Entwurf speichern, Verwerfen oder Weiter bearbeiten
+Jeder Befehl unten steht auch im Menü Verfassen, das Alt+C öffnet, selbst wenn der Fokus im Nachrichtentext ist
+
+Formatierung beim Verfassen
+Ctrl+B: Fett
+Ctrl+I: Kursiv
+Ctrl+Shift+X: Durchgestrichen
+Ctrl+Shift+8: Aufzählung
+Ctrl+Shift+7: Nummerierte Liste
+Ctrl+Shift+9: Zitat
+Ctrl+Shift+6: Code
+Ctrl+Alt+1: Überschrift
+Ctrl+K: Link einfügen
+Ctrl+Shift+K: Ansagen, welche Formatierung an der Cursorposition gilt
+Ctrl+Shift+M: Menü Format öffnen, wo auch immer der Fokus ist, auch im Nachrichtentext
+
+Rechtschreibung beim Verfassen
+Ctrl+Shift+F7: Rechtschreibung prüfen
+Ctrl+Shift+F9: Zum nächsten Rechtschreibfehler
+Ctrl+Shift+F8: Das Wort, bei dem die Prüfung angehalten hat, zum Wörterbuch hinzufügen
+
+Dieselbe Taste an zwei Stellen
+Ctrl+S: Entwurf speichern beim Verfassen, Nachricht speichern unter in einer geöffneten Nachricht
+Ctrl+B: Fett beim Verfassen, zwischen Text und HTML wechseln in einer geöffneten Nachricht
+Ctrl+Shift+P: Vorschau beim Verfassen, Druckvorschau in einer geöffneten Nachricht
+Alt+A: Archivieren, aber nur solange ein Nachrichtentext den Tastaturfokus hat; überall sonst öffnet es das Menü Konten
+
+Diagnose
+Ctrl+Shift+F12: Tastenkürzel-Diagnose -- schreibt für jede in einem Verfassen-Tab gedrückte Kombination eine Zeile ins Debug-Protokoll, damit nachweisbar ist, was eine Taste tatsächlich erreicht hat. Standardmäßig aus, und dieselbe Taste schaltet es wieder aus; der Zustand wird jeweils angesagt

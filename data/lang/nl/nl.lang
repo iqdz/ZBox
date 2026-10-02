@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Nederlands
+code = nl
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Bericht verzonden.
+draft_saved = Concept opgeslagen.
+signature_inserted = Handtekening ingevoegd.
+signature_none = Dit account heeft geen handtekening.
+signature_saved = Handtekening opgeslagen.
+signature_not_saved = Handtekening niet opgeslagen.
+pasted_as_quotation = Geplakt als citaat.
+clipboard_empty = Er staat niets op het klembord.
+word_count = {words} woorden, {characters} tekens.
+report_copied = Rapport gekopieerd.
+compose_tab_needed = Die opdracht heeft een opsteltabblad nodig.
+attach_file_instead = Neergezette bestanden worden niet in de berichttekst geplaatst. Gebruik Bestand bijvoegen om er een te verzenden.
+
+# Formatting in the message body
+formatting_here = Opmaak hier: {formatting}.
+no_formatting_here = Geen opmaak hier, platte tekst.
+
+# Spelling
+nothing_to_check = Er is niets om te controleren.
+no_misspellings = Geen spelfouten.
+spelling_dictionary_unavailable = Het spellingwoordenboek is niet beschikbaar.
+next_misspelling_first = Gebruik eerst Volgende spelfout.
+word_added = {word} toegevoegd aan het woordenboek.
+word_not_added = {word} kon niet worden toegevoegd.
+corrections_applied_one = 1 correctie toegepast.
+corrections_applied_many = {count} correcties toegepast.
+corrections_applied_partly = {applied} van {total} correcties toegepast. De rest werd geweigerd; zie het logboek.
+occurrences_replaced_one = 1 keer vervangen.
+occurrences_replaced_many = {count} keer vervangen.
+
+# Reading mail
+message_did_not_open = Het bericht is niet geopend. De server reageerde niet. Druk op Enter om het opnieuw te proberen.
+thread_open = {messages} in deze conversatie. Druk nogmaals om te sluiten.
+no_thread_selected = Geen conversatie geselecteerd.
+thread_watched = Conversatie wordt gevolgd.
+thread_not_watched = Conversatie wordt niet meer gevolgd.
+thread_ignored = Conversatie genegeerd.
+thread_not_ignored = Conversatie wordt niet meer genegeerd.
+none_found = Niets gevonden.
+refreshing_this_folder = Deze map wordt vernieuwd.
+refreshing_all_accounts = Alle accounts worden vernieuwd.
+message_view_html = Berichtweergave: HTML (weergegeven).
+message_view_text = Berichtweergave: tekst.
+html_view_still_loading = Het bericht wordt nog geladen. Escape sluit het.
+message_still_opening = Bericht wordt geopend. De server is traag.
+remote_content_blocked = Externe inhoud geblokkeerd.
+remote_content_unblocked = Externe inhoud gedeblokkeerd.
+remote_content_already_showing = Externe inhoud wordt al getoond in dit bericht.
+archived = Gearchiveerd.
+copied_to_folder = Gekopieerd naar {to_folder}.
+deleted_one = Bericht definitief verwijderd.
+deleted_many = {count} berichten definitief verwijderd.
+trashed_one = Bericht naar de Prullenbak verplaatst.
+trashed_many = {count} berichten naar de Prullenbak verplaatst.
+
+# Accounts and new mail
+no_account_yet = Er is nog geen account om naartoe te gaan.
+inbox_landed = Postvak IN van {name}.
+account_enabled = {name} ingeschakeld.
+auto_check_paused = Automatisch controleren gepauzeerd voor {account}.
+auto_check_resumed = Automatisch controleren aan voor {account}.
+account_disabled = {name} uitgeschakeld.
+new_mail_one = 1 nieuw bericht voor {name}.
+new_mail_many = {count} nieuwe berichten voor {name}.
+refresh_all_done_one = 1 account vernieuwd.
+refresh_all_done_many = {count} accounts vernieuwd.
+refresh_all_done_failures = {count} accounts vernieuwd, {failed} konden niet worden vernieuwd.
+refresh_all_done_failures_one = {count} account vernieuwd, {failed} konden niet worden vernieuwd.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adres gekopieerd.
+sender_no_address = {sender}. Geen adres om te kopiëren.
+clipboard_not_opened = {sender}. Het klembord kon niet worden geopend.
+
+# The signature editor
+signature_page_formatted = Opgemaakt. Dit wordt opgeslagen.
+signature_page_html = HTML-bron. Dit wordt opgeslagen.
+signature_page_html_still_wins = Opgemaakt. De HTML-bron is nog steeds wat wordt opgeslagen.
+
+# Background work
+phishing_list_updating = Phishinglijst wordt op de achtergrond bijgewerkt.
+cache_cleared = {files} bestand(en) uit de cache gewist, {size} MB.
+hotkeys_diagnostic_on = Sneltoetsdiagnose aan, aangevinkt
+hotkeys_diagnostic_off = Sneltoetsdiagnose uit, niet aangevinkt
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Archiveren
+action_delete = Verwijderen
+action_delete_permanently = Definitief verwijderen
+action_mark_as_junk = Markeren als ongewenst
+action_mark_as_not_junk = Markeren als niet ongewenst
+action_move_to = Verplaatsen naar
+action_copy_to = Kopiëren naar
+action_mark_message = Bericht markeren
+action_undo = Ongedaan maken
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} ongedaan gemaakt.
+undo_done_many = {action} ongedaan gemaakt voor {count} berichten.
+junk_marked_one = Gemarkeerd als ongewenst.
+junk_marked_many = {count} berichten gemarkeerd als ongewenst.
+junk_no_new_sender = Geen nieuwe afzender geblokkeerd: al geblokkeerd, een mailinglijst of een van uw eigen adressen.
+not_junk_marked_one = Gemarkeerd als niet ongewenst.
+not_junk_marked_many = {count} berichten gemarkeerd als niet ongewenst.
+moved_to_one = Verplaatst naar {to_folder}.
+moved_to_many = {count} berichten verplaatst naar {to_folder}.
+copied_to_many = {count} berichten gekopieerd naar {to_folder}.
+marked_read = Gemarkeerd als gelezen.
+marked_unread = Gemarkeerd als ongelezen.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Geannuleerd na {completed} van {total}. {succeeded} gelukt, {failed} mislukt.
+bulk_failed_one = {done} {failed} van 1 bericht mislukt.
+bulk_failed_many = {done} {failed} van {total} berichten mislukt.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Vet
+format_word_italic = Cursief
+format_word_strike = Doorhalen
+format_word_href = Koppeling
+format_word_bullet = Lijst met opsommingstekens
+format_word_number = Genummerde lijst
+format_word_quote = Citaat
+format_word_code = Code
+format_word_heading1 = Kop
+format_applied = {formatting} toegepast.
+format_inserted = {formatting} ingevoegd.
+format_not_available = {formatting} is niet beschikbaar in de platte berichttekst.
+format_on = {formatting} aan
+format_off = {formatting} uit
+link_applied = Koppeling toegepast.
+link_applied_to_selection = Koppeling toegepast op de selectie.
+plain_body_formatting = De platte berichttekst toont de opmaak als tags.
+
+# Reaching either end of a thread
+thread_edge_first = Eerste bericht in deze conversatie. Druk nogmaals om te sluiten.
+thread_edge_last = Laatste bericht in deze conversatie. Druk nogmaals om te sluiten.
+jump_unified_inbox = Samengevoegd Postvak IN.
+remote_none = Geen externe inhoud in dit bericht.
+sender_none = Geen afzender bij dit bericht.
+sender_name_no_address = %s, geen adres
+signature_not_switched = Handtekening niet gewijzigd. Druk op Ctrl+Shift+S om de handtekening van dit account in te voegen.
+signature_removed_no_signature = Handtekening verwijderd. Dit account heeft er geen.
+signature_switched = Handtekening gewijzigd naar die van dit account.
+spell_not_replaced = Het woord kon niet worden vervangen.
+spell_replaced_with = Vervangen door {word}.
+folder_marked_read = {count} berichten gemarkeerd als gelezen.
+folder_no_unread = Geen ongelezen berichten.
+threads_all_collapsed = Alle conversaties samengevouwen.
+threads_all_expanded = Alle conversaties uitgevouwen.
+upd_percent = {percent} procent
+upd_download_done = Download voltooid. De update wordt voorbereid...
+upd_updated_to = ZBox is bijgewerkt naar {version}.
+header_copied = Gekopieerd.
+headers_copied = Alle kopregels gekopieerd.
+identity_copies_updated = Cc en Bcc bijgewerkt voor deze identiteit.
+signature_switched_identity = Handtekening gewijzigd in die van deze identiteit.
+signature_removed_identity = Handtekening verwijderd. Deze identiteit heeft er geen.
+signature_not_switched_identity = Handtekening niet gewijzigd. Druk op Ctrl+Shift+S om de handtekening van deze identiteit in te voegen.
+signature_none_identity = Deze identiteit heeft geen handtekening.
+move_keys_no_selection = Selecteer eerst een bericht.
+move_keys_no_folders = Nog geen mappen om uit te kiezen. Probeer het zo meteen opnieuw.
+block_sender_done_one = {sender} geblokkeerd. Nieuwe berichten van deze afzender gaan naar de prullenbak.
+block_sender_done_many = {count} afzenders geblokkeerd. Hun nieuwe berichten gaan naar de prullenbak.
+block_sender_already = {sender} is al geblokkeerd.
+block_sender_own = Niet geblokkeerd: dat is een van uw eigen adressen.
+block_sender_list_unknown = Niet geblokkeerd: dit bericht kwam via een mailinglijst en vermeldt niet wie het stuurde. Het adres van de lijst blokkeren zou iedereen erop blokkeren.
+block_sender_moved = Afzender geblokkeerd. {count} bericht(en) naar de prullenbak verplaatst.
+block_senders_moved = {senders} afzenders geblokkeerd. {count} bericht(en) naar de prullenbak verplaatst.
+unblock_sender_moved = Afzender gedeblokkeerd. {count} bericht(en) naar het Postvak IN verplaatst.
+unblock_senders_moved = {senders} afzenders gedeblokkeerd. {count} bericht(en) naar het Postvak IN verplaatst.
+unblock_sender_done = {sender} gedeblokkeerd.
+unblock_sender_not_blocked = {sender} is niet geblokkeerd.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Typ hierboven iets en druk op Enter of kies Zoeken.
+search_no_account = Voeg eerst een account toe.
+search_no_term = Typ iets om naar te zoeken.
+search_running = Zoeken...
+search_none = Geen resultaten voor „{term}”.
+search_found_one = 1 resultaat voor „{term}”.
+search_found_many = {count} resultaten voor „{term}”.
+search_failed = Zoeken mislukt.
+
+# The related messages tab
+related_running = Zoeken...
+related_none = Geen verwante berichten gevonden.
+related_found_one = 1 verwant bericht gevonden.
+related_found_many = {count} verwante berichten gevonden.
+related_failed = Kon niet naar verwante berichten zoeken.
+
+# Writing and sending
+sending_via = Verzenden via {sender}...
+send_failed = Verzenden mislukt. Zie de logboeken voor details.
+draft_autosaved = Concept automatisch opgeslagen.
+draft_autosave_failed = Automatisch opslaan van concept mislukt. Zie de logboeken voor details.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Externe inhoud wordt nu geladen voor berichten van {sender}.
+downloading_attachment = {filename} downloaden...
+downloading_attachments_one = 1 bijlage downloaden...
+downloading_attachments_many = {count} bijlagen downloaden...
+saved_to = Opgeslagen in {folder}
+attachment_download_failed = Downloaden van bijlage mislukt.
+
+# Getting mail onto the screen
+loading_folder = {folder} laden voor {account}...
+messages_in_folder = {count} bericht(en) in {folder}.
+messages_in_folder_cached = {count} bericht(en) in {folder} (laatst gesynchroniseerde kopie, wordt bijgewerkt...)
+no_offline_copy = Nog geen offlinekopie van {folder}.
+refresh_failed_cached = Kon {folder} niet vernieuwen: laatst gesynchroniseerde kopie wordt getoond.
+no_such_folder = Geen map {folder} voor dit account.
+load_failed = Laden van berichten mislukt. Zie de logboeken voor details.
+no_more_to_load = Geen berichten meer om te laden in deze map.
+loading_more = Meer berichten laden in {folder}...
+more_loaded = {count} bericht(en) meer geladen.
+no_more_messages = Geen berichten meer in deze map.
+load_more_failed = Kon geen berichten meer laden: {error}
+loading_unified = Samengevoegde map {folder} laden...
+messages_in_unified = {count} bericht(en) uit alle accounts in samengevoegde map {folder}.
+messages_in_unified_cached = {count} bericht(en) in samengevoegde map {folder} (laatst gesynchroniseerde kopie, wordt bijgewerkt...)
+auto_purge_done = Automatisch opschonen heeft {count} oud(e) bericht(en) uit Prullenbak/Ongewenst verwijderd.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Gereed.
+opening_message = Bericht openen...
+opening_message_already = Bericht openen... (wordt al geladen)
+could_not_open_message = Kon bericht niet openen.
+could_not_open_that_message = Kon dat bericht niet openen.
+could_not_load_message = Kon dit bericht niet laden.
+message_still_loading = Dat bericht wordt nog geladen.
+folder_still_loading = Deze map wordt nog geladen -- probeer het zo meteen opnieuw.
+not_in_thread = Dit bericht maakt geen deel uit van een conversatie.
+no_longer_in_thread = Dit bericht zit niet meer in de conversatie.
+thread_position = Bericht {position} van {total} in deze conversatie.
+thread_finished_one = Deze conversatie is uit (1 bericht).
+thread_finished_many = Deze conversatie is uit ({count} berichten).
+select_message_first = Selecteer eerst een bericht.
+conversation_failed = Kon deze conversatie niet openen.
+select_message_for_related = Selecteer eerst een bericht om verwante berichten van te zien.
+looking_for_related = Zoeken naar verwante berichten...
+no_threading_headers = Dit bericht heeft geen Message-ID of conversatiekoppen om op te zoeken.
+reply_one_at_a_time = Beantwoorden werkt op één bericht tegelijk. Selecteer één bericht.
+select_message_to_reply = Selecteer eerst een bericht om te beantwoorden.
+preparing_reply = Antwoord voorbereiden...
+reply_load_failed = Kon het oorspronkelijke bericht voor het antwoord niet laden.
+select_message_to_forward = Selecteer eerst een bericht om door te sturen.
+preparing_forward = Bericht voorbereiden om door te sturen...
+forward_load_failed = Kon het door te sturen bericht niet laden.
+compose_tab_needed_hint = Die opdracht heeft een opsteltabblad nodig. Druk op Ctrl+N om een bericht te schrijven.
+open_message_first_view = Open eerst een bericht en druk dan op Ctrl+B om de weergave te wisselen.
+open_message_first_remote = Open eerst een bericht en druk dan op Ctrl+Shift+I om de externe inhoud te laden.
+
+# Acting on messages
+copying_message = Bericht kopiëren...
+copy_failed = Kopiëren mislukt.
+delete_failed = Verwijderen mislukt.
+already_in_archive = Al in Archieven.
+archiving = Archiveren...
+archive_failed = Archiveren mislukt.
+action_failed = {action} mislukt.
+nothing_to_undo = Niets om ongedaan te maken.
+undo_failed = Kon {action} niet ongedaan maken.
+
+# Views and folders
+folder_pane_all = Mappenpaneel: Alle mappen.
+folder_pane_unified = Mappenpaneel: Samengevoegde mappen.
+sorted_ascending = Gesorteerd op {field}, oplopend.
+sorted_descending = Gesorteerd op {field}, aflopend.
+unified_folders_updated = Samengevoegde mappen bijgewerkt.
+zoom_reset = Lettergrootte van berichten teruggezet naar standaard.
+folder_creating = Map „{folder}” aanmaken...
+folder_created = Map „{folder}” aangemaakt.
+folder_create_failed = Kon map niet aanmaken.
+folder_renaming = „{folder}” hernoemen naar „{new_name}”...
+folder_renamed = Map hernoemd naar „{new_name}”.
+folder_rename_failed = Kon map niet hernoemen.
+folder_deleting = Map „{folder}” verwijderen...
+folder_deleted = Map verwijderd.
+folder_delete_failed = Kon map niet verwijderen.
+folder_subscribing = Abonneren op „{folder}”...
+folder_unsubscribing = Abonnement op „{folder}” opzeggen...
+folder_subscribed = Geabonneerd.
+folder_unsubscribed = Abonnement opgezegd.
+folder_subscribe_failed = Kon niet abonneren op map.
+folder_unsubscribe_failed = Kon abonnement op map niet opzeggen.
+
+# Accounts
+account_not_added = Account niet toegevoegd.
+account_added = Account toegevoegd: {account}
+account_settings_not_saved = Accountinstellingen niet opgeslagen.
+account_updated = Account bijgewerkt: {account}
+account_not_removed = Account niet verwijderd.
+account_removed = Account verwijderd.
+account_removed_with_files = Account verwijderd. {count} lokale bestand(en) verwijderd.
+default_account_failed = Kon het standaardaccount niet instellen.
+default_account_set = {account} is nu het standaardaccount.
+auto_check_not_saved = Instelling voor automatisch controleren niet opgeslagen.
+mute_not_saved = Dempinstelling niet opgeslagen.
+account_muted = {account} gedempt.
+account_unmuted = {account} niet meer gedempt.
+export_done = {count} account(s) en instellingen geëxporteerd naar {path}.
+import_done = {count} account(s) geïmporteerd uit {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filters niet opgeslagen.
+filters_saved = Filters opgeslagen voor {account}.
+filters_checking = {folder} wordt gecontroleerd met uw filters...
+filters_none_matched = Nu uitvoeren: geen berichten in {folder} voldeden aan een ingeschakelde regel.
+filters_run_failed = Kon filters niet uitvoeren.
+filters_moving = {count} gefilterd(e) bericht(en) verplaatsen...
+filters_move_failures = Filters: {count} bericht(en) konden niet worden verplaatst.
+filters_moved = Filters hebben {count} bericht(en) uit {folder} verplaatst.
+filters_move_failed = Kon gefilterde berichten niet verplaatsen.
+cache_not_cleared = Cache niet gewist.
+auto_cache_cleanup = Automatisch cache opschonen: berichten ouder dan {age}.
+phishing_update_failed = Kon de phishinglijst niet bijwerken: {error}
+blocklist_update_failed = Kon de blokkeerlijst niet bijwerken: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Open eerst een bericht en gebruik dan Opslaan als.
+saving_message = Bericht opslaan...
+save_file_failed = Kon het bestand niet opslaan.
+save_fetch_failed = Kon het op te slaan bericht niet ophalen.
+open_message_first_print = Open eerst een bericht en gebruik dan Afdrukken.
+open_message_first_preview = Open eerst een bericht en gebruik dan Afdrukvoorbeeld.
+refreshing_accounts = {count} account(s) vernieuwen...
+emptying_trash = Prullenbak leegmaken voor {account}...
+trash_already_empty = Prullenbak was al leeg.
+trash_emptied = Prullenbak leeggemaakt: {count} bericht(en) gewist.
+empty_trash_failed = Kon Prullenbak niet leegmaken.
+emptying_junk = Ongewenst leegmaken voor {account}...
+junk_already_empty = Ongewenst was al leeg.
+junk_emptied = Ongewenst leeggemaakt: {count} bericht(en) gewist.
+junk_emptied_prefix = Ongewenst leeggemaakt:
+junk_part_purged = {count} gewist
+junk_part_in_trash = {count} naar Prullenbak verplaatst maar niet bevestigd verwijderd, controleer Prullenbak
+junk_part_not_moved = {count} niet naar Prullenbak verplaatst, nog in Ongewenst
+empty_junk_failed = Kon Ongewenst niet leegmaken.
+back_online = Weer online.
+offline_sync_running = {account} synchroniseren voor offlinegebruik...
+offline_sync_failed = Offline synchroniseren mislukt: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Selecteer of open eerst een bericht.
+select_or_open_message_ctrl_u = Selecteer of open eerst een bericht en druk dan op Ctrl+U.
+no_sender_address = Dit bericht heeft geen afzenderadres om toe te voegen.
+contact_added = {contact} toegevoegd aan uw adresboek.
+contact_already_there = {contact} staat al in uw adresboek.
+privacy_saved = Privacyinstellingen opgeslagen. Open een bericht opnieuw om ze toe te passen.
+message_font_size = Lettergrootte van bericht: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Bericht definitief verwijderen
+deleting_many = {count} berichten definitief verwijderen
+trashing_one = Bericht naar Prullenbak verplaatsen
+trashing_many = {count} berichten naar Prullenbak verplaatsen
+undo_partly_restored = {action} ongedaan gemaakt, maar {count} konden niet worden hersteld -- ze zijn sindsdien mogelijk opnieuw verplaatst, verwijderd of verlopen.
+moves_report = {action}: {moved} van {total} bericht(en) verplaatst.
+moves_report_failed = Niet verplaatst, nog in de oorspronkelijke map: {count}.
+
+tray_tooltip_one = ZBox — 1 ongelezen bericht
+tray_tooltip_many = ZBox — {count} ongelezen berichten
+account_unreachable = {account} kon niet worden bereikt. Automatische controles ervoor pauzeren {minutes} minuut/minuten.
+bulk_copy_failed = Kon bericht(en) niet kopiëren.
+bulk_copy_failed_status = Kopiëren mislukt.
+bulk_loading_archive = Bericht(en) worden nog geladen -- probeer zo meteen opnieuw te archiveren.
+bulk_loading_delete = Bericht(en) worden nog geladen -- probeer zo meteen opnieuw te verwijderen.
+bulk_loading_flag = Bericht(en) worden nog geladen -- probeer zo meteen opnieuw een ster te geven.
+bulk_loading_generic = Bericht(en) worden nog geladen -- probeer het zo meteen opnieuw.
+bulk_none = Geen bericht geselecteerd.
+bulk_none_archive = Geen bericht geselecteerd om te archiveren.
+bulk_none_delete = Geen bericht geselecteerd om te verwijderen.
+bulk_none_junk = Geen bericht geselecteerd om als ongewenst te markeren.
+bulk_none_not_junk = Geen bericht geselecteerd om als niet ongewenst te markeren.
+delete_refused_still = De server weigerde het te verwijderen; het staat nog in {folder}.
+delete_refused_trash = Het staat in de Prullenbak, maar de server weigerde het definitief te verwijderen.
+delete_resume_failed = {count} bericht(en) van een eerdere verwijdering konden niet worden verwijderd.
+done_perm_delete_one = Bericht definitief verwijderd.
+done_trash_one = Bericht naar de Prullenbak verplaatst.
+filters_applied = Filters toegepast op {count} bericht(en) in {folder}.
+filters_failed = Kon filters niet uitvoeren.
+filters_running = Filters uitvoeren op {folder}
+flag_failed = Kon ster(ren) niet bijwerken.
+flag_updated = Ster(ren) bijgewerkt.
+folder_verb_subscribing = Abonneren op
+folder_verb_unsubscribing = Abonnement opzeggen op
+mark_read_failed = Kon bericht(en) niet als gelezen markeren.
+mark_unread_failed = Kon bericht(en) niet als ongelezen markeren.
+notify_new_mail_body = {count} nieuwe {noun} voor {name}.
+notify_new_mail_title = Nieuwe e-mail
+notify_noun_many = berichten
+notify_noun_one = bericht
+report_done = {verb}: {done} van {count} bericht(en).
+report_verb_deleted = Verwijderd
+report_verb_permanent = Definitief verwijderd
+running_copy_many = {count} berichten kopiëren
+running_copy_one = Bericht kopiëren
+running_junk_many = {count} berichten als ongewenst markeren
+running_junk_one = Als ongewenst markeren
+running_move_many = {count} berichten verplaatsen
+running_move_one = Verplaatsen
+running_not_junk_many = {count} berichten als niet ongewenst markeren
+running_not_junk_one = Als niet ongewenst markeren
+running_perm_delete_one = Bericht definitief verwijderen...
+running_read_many = {count} berichten als gelezen markeren
+running_read_one = Als gelezen markeren
+running_trash_one = Bericht naar Prullenbak verplaatsen...
+running_unread_many = {count} berichten als ongelezen markeren
+running_unread_one = Als ongelezen markeren
+settings_saved_no_startup = Instellingen opgeslagen. Kon het opstartitem van Windows niet bijwerken.
+settings_saved_status = Instellingen opgeslagen.
+spam_blocked_sender = Geblokkeerde afzender
+spam_possible_phishing = Mogelijke phishing
+undo_running_many = {action} ongedaan maken ({count} berichten)
+undo_running_one = {action} ongedaan maken
+mark_folder_read_failed = Kon de map niet als gelezen markeren.
+marking_folder_read = Map als gelezen markeren...
+upd_ready_at_exit = Er is al een update gedownload. Deze wordt geïnstalleerd wanneer u ZBox afsluit.
+upd_checking = Controleren op updates...
+upd_up_to_date = ZBox is up-to-date.
+upd_available_source = ZBox {version} is beschikbaar. Deze kopie draait vanuit de broncode, werk haar dus bij met git.
+upd_check_failed = Kon niet controleren op updates: {error}
+opening_attachment = {filename} wordt geopend...
+loading_headers = Kopregels laden...
+offline_inbox_only = Alleen het Postvak IN en Archieven worden bewaard voor offline gebruik.
+offline_sync_done_inbox = {count} bericht(en) in het Postvak IN en Archieven gesynchroniseerd voor offline gebruik.
+working_offline = Offline werken: de laatst gesynchroniseerde kopie van Postvak IN/Verzonden/Concepten wordt getoond.
+emptying_trash_all = De prullenbak van alle accounts wordt geleegd...
+trash_emptied_all = Prullenbak geleegd in {accounts} account(s): {count} bericht(en) definitief verwijderd.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Bestand
+bar_edit = &Bewerken
+bar_view = &Beeld
+bar_message = &Bericht
+bar_compose = &Opstellen
+bar_tools = &Extra
+bar_help = &Help
+
+# File
+file_new = Nieuw
+file_new_message = Bericht
+file_new_account = E-mailaccount...
+file_open_saved_message = Opgeslagen bericht openen...
+file_close = Sluiten
+file_save_message_as = Bericht opslaan als...
+file_get_new_for = Nieuwe berichten ophalen voor
+file_get_new_all = Alle accounts
+file_get_new_current = Huidig account
+file_offline = Offline
+file_work_offline = Offline werken
+file_sync_now = Nu synchroniseren
+file_print = Afdrukken...
+file_print_preview = Afdrukvoorbeeld...
+file_exit = Afsluiten
+
+# Edit
+edit_undo = Ongedaan maken
+edit_select_all = Alles selecteren
+edit_find_messages = Berichten zoeken...
+
+# Message
+message_reply = Beantwoorden
+message_reply_all = Allen beantwoorden
+message_forward = Doorsturen
+message_archive = Archiveren
+message_delete = Verwijderen
+message_delete_permanently = Definitief verwijderen
+message_mark = Markeren
+mark_read = Gelezen
+mark_unread = Ongelezen
+mark_flagged = Met ster
+mark_junk = Ongewenst
+mark_not_junk = Niet ongewenst
+message_watch_thread = Conversatie volgen
+message_ignore_thread = Conversatie negeren
+message_open_conversation = Bericht openen in conversatie
+message_show_related = Verwante berichten tonen
+message_add_sender_to_address_book = Afzender toevoegen aan adresboek
+message_announce_sender = Afzender uitspreken
+message_announce_copy_sender = Afzender uitspreken en adres kopiëren
+
+# View
+view_folders = Mappen
+folders_all = Alle
+folders_unified = Samengevoegd
+folders_jump_inbox = Naar berichtenlijst van Postvak IN gaan
+folders_configure_unified = Samengevoegde mappen configureren...
+view_sort_by = Sorteren op
+sort_date = Datum
+sort_subject = Onderwerp
+sort_from = Van
+sort_descending = Aflopend (nieuwste eerst)
+sort_ascending = Oplopend (oudste eerst)
+view_threads = Conversaties
+threads_all = Alle
+threads_watched = Gevolgde conversaties
+threads_ignored = Genegeerde conversaties
+threads_expand_all = Alle conversaties uitvouwen
+threads_collapse_all = Alle conversaties samenvouwen
+view_load_more = Meer berichten laden
+view_toggle_message_view = Wisselen tussen tekst- en HTML-weergave
+view_show_remote_content = Externe inhoud in dit bericht tonen
+view_message_zoom = Berichtzoom
+zoom_increase = Lettergrootte van bericht vergroten
+zoom_decrease = Lettergrootte van bericht verkleinen
+zoom_reset = Lettergrootte van bericht herstellen
+
+# Compose
+compose_send = &Verzenden
+compose_save_draft = &Concept opslaan
+compose_attach = &Bestand bijvoegen...
+compose_fmt_bold = &Vet
+compose_fmt_italic = &Cursief
+compose_fmt_strike = &Doorhalen
+compose_fmt_bullet = &Lijst met opsommingstekens
+compose_fmt_number = &Genummerde lijst
+compose_fmt_quote = &Citaat
+compose_fmt_code = &Code
+compose_fmt_heading1 = &Kop
+compose_link = &Koppeling invoegen...
+compose_formatting = &Opmaak hier
+compose_spellcheck = &Spelling controleren...
+compose_spellcheck_next = &Volgende spelfout
+compose_spellcheck_add = &Woord toevoegen aan woordenboek
+compose_insert_signature = &Handtekening invoegen
+compose_paste_quotation = &Plakken als citaat
+compose_word_count = &Aantal woorden
+compose_preview = &Voorbeeld...
+compose_diagnostics = &Diagnose van opstelvenster...
+compose_edit_signature = &Handtekening bewerken...
+compose_hotkeys_diagnostic = &Sneltoetsdiagnose
+
+# Tools
+tools_account_settings = Account- en identiteitsinstellingen...
+tools_mute_account = Account dempen
+tools_pause_auto_check = Automatisch controleren pauzeren
+tools_disable_account = Account uitschakelen
+tools_remove_account = Account verwijderen...
+tools_address_book = Adresboek...
+tools_message_filters = Berichtenfilters...
+tools_import = Accounts en instellingen importeren...
+tools_export = Accounts en instellingen exporteren...
+tools_cache_cleanup = Configuratie van cache opschonen...
+tools_privacy = Privacy en inhoudsblokkering...
+tools_settings = Instellingen...
+
+# Help
+help_shortcuts = Sneltoetsen...
+help_about = Over ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Nieuw account...
+tree_account_settings = Account- en identiteitsinstellingen...
+tree_mute_account = Account dempen
+tree_pause_auto_check = Automatisch controleren pauzeren
+tree_enable_account = Account inschakelen
+tree_disable_account = Account uitschakelen
+tree_set_default_account = Instellen als standaardaccount
+tree_remove_account = Account verwijderen...
+tree_refresh = Vernieuwen
+tree_new_folder = Nieuwe map...
+tree_empty_trash = Prullenbak leegmaken
+tree_empty_junk = Map Ongewenst leegmaken
+tree_rename_folder = Mapnaam wijzigen...
+tree_delete_folder = Map verwijderen...
+tree_subscribe_folder = Abonneren op map
+tree_unsubscribe_folder = Abonnement op map opzeggen
+
+# The message list menu, opened the same two ways
+list_select_all = Alles selecteren
+list_reply = Beantwoorden
+list_reply_all = Allen beantwoorden
+list_forward = Doorsturen
+list_mark = Markeren
+list_archive = Archiveren
+list_delete_to_trash = Verwijderen (naar Prullenbak)
+list_delete_permanently = Definitief verwijderen
+list_move_to = Verplaatsen naar
+list_copy_to = Kopiëren naar
+
+# The notification area icon
+tray_open = &ZBox openen
+tray_unread_one = 1 ongelezen bericht
+tray_unread_many = {count} ongelezen berichten
+tray_no_unread = Geen ongelezen berichten
+tray_settings = &Instellingen...
+tray_quit = &ZBox afsluiten
+
+# The formatting menu inside a message you are writing
+format_bold = &Vet
+format_italic = &Cursief
+format_strike = &Doorhalen
+format_bullet = &Lijst met opsommingstekens
+format_number = &Genummerde lijst
+format_quote = &Citaat
+format_code = &Code
+format_heading1 = &Kop
+format_insert_link = &Koppeling invoegen...
+format_formatting_here = &Opmaak hier
+tools_enable_account = Account inschakelen
+edit_undo_action = {action} ongedaan maken
+tree_mark_folder_read = Map als gelezen markeren
+help_updates = Updates
+help_check_updates = Nu controleren op updates...
+help_update_settings = Update-instellingen...
+help_releases_page = Pagina met uitgaven openen
+message_attachments = Bijlagen
+message_no_attachments = Geen bijlagen
+message_save_all_attachments = Alle bijlagen opslaan
+view_full_headers = Alle kopregels
+folders_go_to_tree = Naar de mappenlijst gaan
+list_block_sender = Deze afzender blokkeren
+list_unblock_sender = Deze afzender deblokkeren
+
+[dialogs]
+set_theme_restart_confirm = ZBox opnieuw starten om de themawijziging toe te passen?
+set_ui_theme_label = &Thema van de interface:
+set_ui_theme_note = Kleuren voor menu's, lijsten, dialoogvensters en de tekstweergave van berichten. Systeem volgen gebruikt de eigen lichte of donkere app-modus van Windows. Middernachtblauw, Warm donker en Zacht contrast zijn donkere thema's met zachtere kleuren. HTML-berichten behouden hun eigen kleuren, en Hoog contrast van Windows gaat altijd voor. Wordt van kracht wanneer ZBox de volgende keer start.
+set_theme_system = Systeem volgen
+set_theme_light = Licht
+set_theme_dark = Donker
+set_theme_midnight = Middernachtblauw
+set_theme_warm = Warm donker
+set_theme_soft = Zacht contrast
+set_language_restart_confirm = ZBox opnieuw starten om de taalwijziging toe te passen?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Contact met Harith
+title_identity = Identiteit
+title_show_password = Wachtwoord tonen
+title_missing_information = Ontbrekende gegevens
+title_unsupported_provider = Niet-ondersteunde provider
+title_test_connection = Verbinding testen
+title_new_contact = Nieuw contact
+title_edit_contact = Contact bewerken
+title_delete_contact = Contact verwijderen
+title_import_contacts = Contacten importeren
+title_export_contacts = Contacten exporteren
+title_rename_group = Groep hernoemen
+title_delete_group = Groep verwijderen
+title_send = Verzenden
+title_send_failed = Verzenden mislukt
+title_attach_file = Bestand bijvoegen
+title_save_draft = Concept opslaan
+title_documentation = ZBox-documentatie
+title_open_link = Koppeling openen
+title_filter_rule = Filterregel
+title_master_password = Hoofdwachtwoord
+title_attachment_saved = Bijlage opgeslagen
+title_attachments_saved = Bijlagen opgeslagen
+title_download_failed = Downloaden mislukt
+title_print = Afdrukken
+title_print_preview = Afdrukvoorbeeld
+title_related_messages = Verwante berichten
+title_search = Zoeken
+title_unlock = Ontgrendelen
+title_unlock_methods = Ontgrendelmethoden
+title_desktop_shortcut = Snelkoppeling op bureaublad
+title_spell_check = Spellingcontrole
+title_plain_text_password = Wachtwoord in platte tekst gevonden
+title_startup_error = Opstartfout van ZBox
+
+identity_email_required = Voer een e-mailadres in.
+
+wizard_password_not_shown = Het wachtwoord kan op dit systeem niet worden getoond. Het wordt nog steeds normaal getypt en opgeslagen.
+wizard_email_required = Voer een geldig e-mailadres in voordat u verdergaat.
+wizard_test_needs_server = Voer een aanmeld-e-mailadres en een inkomende server in voordat u test.
+wizard_test_succeeded = Verbinding geslaagd. {count} bericht(en) gevonden in Postvak IN.
+
+contact_email_required = Een e-mailadres is verplicht.
+contact_select_to_edit = Selecteer een contact om te bewerken.
+contact_select_to_delete = Selecteer een contact om te verwijderen.
+contact_delete_confirm = {label} uit het adresboek verwijderen?
+contacts_import_choose_file = Kies een .vcf- (vCard) of .csv-bestand om te importeren.
+contacts_imported = {count} contact(en) geïmporteerd.
+contacts_import_empty = Er zijn geen contacten gevonden in dat bestand.
+contacts_none_to_export = Er zijn geen contacten om te exporteren.
+contacts_exported = {count} contact(en) geëxporteerd naar:\n{path}
+group_name_exists = Er bestaat al een groep met de naam „{name}”.
+group_delete_confirm = De groep „{name}” verwijderen? De contacten erin worden niet verwijderd.
+
+send_no_account = Voeg een account toe voordat u verzendt, of selecteer er een bij Van.
+send_no_recipient = Voer ten minste één ontvanger in bij Aan.
+draft_no_account = Voeg een account toe voordat u een concept opslaat, of selecteer er een bij Van.
+attached_file = Bijgevoegd: {name}\n\n{count} bestand(en) worden bijgevoegd wanneer u verzendt.
+
+documentation_copied = De volledige ZBox-documentatie is naar het klembord gekopieerd.
+
+filter_rule_needs_name = Geef deze regel een naam.
+filter_rule_needs_condition = Stel ten minste één voorwaarde in (Van, Aan of Onderwerp).
+filter_rule_needs_action = Kies ten minste één actie: markeren als gelezen, een ster geven, of naar een map verplaatsen.
+
+master_password_set = Hoofdwachtwoord ingesteld. Bewaar het op een veilige plek: ZBox vraagt er op elke nieuwe computer één keer om, en het kan niet worden hersteld als het verloren gaat.
+master_password_offer = Zonder hoofdwachtwoord kunnen de opgeslagen accountwachtwoorden alleen op deze computer en in dit Windows-account worden gelezen. Kopieer ZBox ergens anders heen en elk account moet opnieuw worden aangemeld.\n\nNu een instellen?
+
+attachment_saved = Bijlage opgeslagen in:\n{path}
+attachments_saved = {count} bijlagen opgeslagen in:\n{path}
+
+shortcut_created_settings = Snelkoppeling gemaakt:\n{path}\n\nDeze start ZBox vanuit:\n{base}
+
+spellcheck_no_dictionary = Het spellingwoordenboek ontbreekt, dus spellingcontrole is niet beschikbaar in deze kopie van ZBox.
+spellcheck_none_found = Geen spelfouten gevonden.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Een toegangssleutel op deze computer instellen en de sleutel vergeten die van een andere computer is opgeslagen?\n\nWindows vraagt u te bevestigen met Hello. De oude toegangssleutel op de andere computer blijft daar ongemoeid en blijft werken als u deze map daarheen terugbrengt, maar moet dan opnieuw worden ingesteld.
+unlock_replace_passkey_many = Een toegangssleutel op deze computer instellen en de {count} sleutels vergeten die van andere computers zijn opgeslagen?\n\nWindows vraagt u te bevestigen met Hello. De oude toegangssleutels op de andere computer blijven daar ongemoeid en blijven werken als u deze map daarheen terugbrengt, maar moeten dan opnieuw worden ingesteld.
+unlock_method_works = Die methode werkt.
+
+plain_text_password_found = data\config\himalaya.toml bevat nog een wachtwoord in platte tekst (auth.raw) van een oudere accountinstelling.\n\nVerwijder dat account en voeg het opnieuw toe, of verwijder data\config\himalaya.toml, zodat het opnieuw wordt aangemaakt met de beveiligde opslag voor referenties.
+
+# main_frame's titles.
+title_account_list_unavailable = Accountlijst niet beschikbaar
+title_open_message = Bericht openen
+title_run_filters = Filters uitvoeren
+title_clear_cache = Offline berichtencache wissen
+title_remove_account = Account verwijderen
+title_new_folder = Nieuwe map
+title_rename_folder = Mapnaam wijzigen
+title_delete_folder = Map verwijderen
+title_subscribe = Abonneren
+title_unsubscribe = Abonnement opzeggen
+title_open_saved_message = Opgeslagen bericht openen
+title_save_message_as = Bericht opslaan als
+title_empty_trash = Prullenbak leegmaken
+title_empty_junk = Map Ongewenst leegmaken
+title_synchronize_offline = Synchroniseren voor offlinegebruik
+title_export_accounts = Accounts en instellingen exporteren
+title_import_accounts = Accounts en instellingen importeren
+title_show_related = Verwante berichten tonen
+title_reply = Beantwoorden
+title_forward = Doorsturen
+title_undo = Ongedaan maken
+title_delete_permanently = Definitief verwijderen
+title_delete = Verwijderen
+title_copy_to = Kopiëren naar
+title_archive = Archiveren
+title_accounts_locked = Accounts vergrendeld
+
+select_account_first = Selecteer eerst een account in de boom.
+select_account_or_folder = Selecteer eerst een account of map.
+filters_left_behind = {count} bericht(en) voldeden aan een filter maar staan nog in {folder}.
+cache_clear_confirm = De offline berichtencache voor elk account wissen?\n\nDit verwijdert alleen de lokale kopieën van ZBox. Er wordt niets van een mailserver verwijderd, en berichten worden opnieuw gedownload wanneer u ze nodig hebt.
+account_remove_confirm = {name} ({address}) verwijderen?\n\nE-mail op de server wordt niet verwijderd.\nDe kopieën die naar deze computer zijn gedownload, worden verwijderd.\nHet opgeslagen wachtwoord wordt verwijderd.
+folder_delete_confirm = De map „{folder}” en alles erin definitief verwijderen voor {address}?\n\nDit kan niet ongedaan worden gemaakt.
+empty_trash_confirm = Alle berichten in de Prullenbak definitief verwijderen voor {address}?\n\nDit kan niet ongedaan worden gemaakt.
+empty_junk_confirm = Alle berichten in Ongewenst definitief verwijderen voor {address}?\n\nDit kan niet ongedaan worden gemaakt.
+sync_select_account = Selecteer een account (geen samengevoegde map) om te synchroniseren voor offlinegebruik.
+accounts_imported = {count} account(s) geïmporteerd:\n\n{names}\n\nWachtwoorden worden nooit geëxporteerd, en de versleutelde wachtwoordopslag hoort bij dit Windows-gebruikersaccount, dus voor elk geïmporteerd account moet het wachtwoord één keer worden ingevoerd via Accounts > Account- en identiteitsinstellingen voordat het verbinding kan maken.
+accounts_import_none = Er zijn geen accounts gevonden in dit bestand. Instellingen zijn toch geïmporteerd, als het bestand die had.
+delete_permanently_confirm_one = Dit bericht definitief verwijderen? Dit slaat de Prullenbak over en kan niet ongedaan worden gemaakt.
+accounts_locked = De opgeslagen accountwachtwoorden zijn op een andere computer geschreven en kunnen hier dus niet worden gelezen.\n\nElk account moet opnieuw worden aangemeld bij de mailserver. Om dat de volgende keer te voorkomen, stelt u een hoofdwachtwoord in via Instellingen, App- en gegevensbeveiliging, op de computer waar de accounts al werken.
+master_password_remove_confirm = Het hoofdwachtwoord verwijderen? De opgeslagen accountwachtwoorden zijn dan alleen op deze computer en in dit Windows-account leesbaar. Kopieer ZBox daarna ergens anders heen en elk account moet opnieuw worden aangemeld.\n\nNu verwijderen?
+shortcut_offer = Een snelkoppeling naar ZBox op het bureaublad plaatsen?\n\nDeze start deze ZBox-map:\n{path}\n\nEen snelkoppeling legt precies die locatie vast. Als u de ZBox-map later verplaatst, opent u Instellingen, Systeemvak en venster, en kiest u opnieuw Snelkoppeling op bureaublad maken om naar de nieuwe plek te verwijzen.
+shortcut_created = Snelkoppeling gemaakt:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Weergavenaam
+form_email_address = E-mailadres
+form_your_name = Uw naam
+form_login_email = Aanmeld-e-mailadres
+form_password = Wachtwoord
+srv_imap_host = Inkomende (IMAP-)server
+srv_imap_port = Inkomende poort
+srv_imap_encryption = Inkomende versleuteling
+srv_smtp_host = Uitgaande (SMTP-)server
+srv_smtp_port = Uitgaande poort
+srv_smtp_encryption = Uitgaande versleuteling
+
+acct_login_email_label = Aanmeld-e-mailadres (gebruikt om aan te melden)
+acct_new_password_label = Nieuw wachtwoord (leeg laten om het huidige te behouden)
+acct_new_password_name = Nieuw wachtwoord
+acct_identity_email_label = E-mailadres (gebruikt om te verzenden en ontvangen)
+acct_identities_label = Extra identiteiten (aliassen)
+acct_identities_name = Extra identiteiten
+acct_add_identity = &Identiteit toevoegen...
+acct_edit_identity = &Identiteit bewerken...
+acct_remove_identity = &Identiteit verwijderen
+acct_signature = Handtekening
+acct_edit_signature = &Handtekening bewerken...
+acct_junk_folder = Map Ongewenst
+acct_account_status = Accountstatus
+acct_disable_account = Dit account uitschakelen
+acct_default_account = Standaardaccount
+acct_set_default = Instellen als standaardaccount
+acct_notifications = Meldingen voor nieuwe e-mail
+acct_mute_notifications = Meldingen voor dit account dempen
+acct_server_settings = Serverinstellingen
+
+wiz_before_you_start = Voordat u begint
+wiz_notice_name = Belangrijke mededeling
+wiz_google_instructions = &Instructies voor Google-app-wachtwoorden openen
+wiz_intro = Uw naam en e-mailadres
+wiz_login_same = Aanmeld-e-mailadres is hetzelfde als het e-mailadres hierboven
+wiz_show_password = &Wachtwoord tonen
+wiz_preset_applied = Voorinstelling toegepast voor {name}.
+wiz_summary_name = Accountoverzicht
+wiz_review = Controleer de gegevens en klik dan op Voltooien om dit account op te slaan.
+wiz_test_connection = &Verbinding testen
+wiz_testing = Verbinding testen...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Foutopsporingslogboek inschakelen, opgeslagen in: data\logs)
+set_language_label = &Taal van de interface:
+set_language_label_only_english = &Taal van de interface: (alleen Engels)
+set_headers_checkbox = &Berichtkoppen boven een geopend bericht tonen
+set_zoom_label = Lettertype en zoom van berichten:
+set_font_override = &De standaardlettergrootte van berichten overschrijven
+set_font_size_name = Lettergrootte van berichten (punten)
+set_reading_font_name = Leeslettertype
+set_reading_font_label = Leeslettertype (leeg voor standaard):
+set_view_label = Weergave van berichttekst bij het openen van een bericht:
+set_view_text = Tekst
+set_view_html = HTML (weergegeven)
+set_engine_label = HTML-weergave-engine:
+set_engine_edge = Edge / WebView2 (moderne weergave)
+set_engine_ie = Verouderde MSHTML (beste ondersteuning voor schermlezers)
+set_runtime_label = WebView2-runtime:
+set_runtime_auto = Automatisch — de meegeleverde runtime gebruiken indien aanwezig (aanbevolen)
+set_runtime_fixed = Alleen de meegeleverde vaste versie
+set_runtime_evergreen = Systeembrede runtime (bijgewerkt door Windows)
+set_sr_box = Beheer van schermlezeraankondigingen
+set_silence_label = Stilte voor schermlezer bij HTML:
+set_silence_name = Stilte voor schermlezer bij HTML in milliseconden
+set_focus_delay_label = Vertraging van toegankelijkheidsfocus in WebView:
+set_focus_delay_name = Vertraging van toegankelijkheidsfocus in WebView, niveau 1 tot 10
+set_announce_label = Duur van aankondiging:
+set_announce_name = Duur van aankondiging in milliseconden
+set_announce_actions = &Berichtacties aankondigen
+set_attachment_dir_label = Map voor het opslaan van bijlagen:
+set_attachment_dir_name = Map voor het opslaan van bijlagen
+set_browse = &Bladeren…
+set_autosave_label = Interval voor automatisch opslaan van concepten:
+set_autosave_name = Interval voor automatisch opslaan van concepten in seconden
+set_auto_purge_label = Oude Prullenbak en Ongewenst automatisch opschonen:
+set_auto_purge_name = Prullenbak en Ongewenst automatisch opschonen na dit aantal dagen
+set_bare_keys = Sneltoetsen met één toets in de berichtenlijst inschakelen: S (markeren), A (archiveren), J (als ongewenst markeren)/Shift+J (als niet ongewenst markeren), W (conversatie volgen), K (conversatie negeren), M (verplaatsen naar)/Shift+M (verplaatsen op mapnaam) en C (kopiëren naar)
+set_sound_label = Geluid en meldingen:
+set_sounds_enabled = &Meldingsgeluiden afspelen
+set_desktop_notifications = &Bureaubladmeldingen tonen voor nieuwe e-mail
+set_theme_label = Geluidsthema wijzigen:
+set_theme_label_only_default = Geluidsthema wijzigen: (alleen standaardthema)
+set_security_box = App- en gegevensbeveiliging
+set_lock_on_quit = &ZBox vergrendelen wanneer het volledig wordt afgesloten
+set_unlock_methods_button = &Ontgrendelmethoden…
+set_master_password_button = &Hoofdwachtwoord…
+set_tray_label = Systeemvak en venster:
+set_minimize_to_tray = &Minimaliseren naar het systeemvak
+set_close_to_tray = &Sluiten naar het systeemvak
+set_stay_maximized = &ZBox altijd gemaximaliseerd houden
+set_run_at_startup = &ZBox uitvoeren wanneer Windows start
+set_desktop_shortcut_button = &Snelkoppeling op bureaublad maken
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Het foutopsporingslogboek helpt bij het vaststellen van problemen als er iets misgaat. Uitschakelen stopt het schrijven van nieuwe regels; bestaande logbestanden worden niet verwijderd. Wordt van kracht wanneer ZBox de volgende keer start.
+set_language_note = Wordt van kracht wanneer ZBox de volgende keer start. Taalbestanden zijn platte-tekstbestanden in de map lang van ZBox, naast de map sounds. Om er een toe te voegen, kopieert u de map „en”, hernoemt u de kopie en het .lang-bestand erin naar uw taalcode, en vertaalt u de tekst rechts van elk isgelijkteken. Alles wat nog niet is vertaald, wordt in het Engels uitgesproken in plaats van stil te blijven, dus een half vertaald bestand is veilig te gebruiken.
+set_headers_note = Van, Aan, Cc, Datum en Onderwerp, getoond boven de berichttekst in zowel de tekst- als de HTML-weergave. Zonder deze koppen is er binnen een bericht geen manier om te zien wie het heeft verzonden zonder het tabblad te sluiten en terug te gaan naar de lijst. De focus komt nog steeds in de berichttekst; het kopblok is één Shift+Tab verwijderd. Wordt van kracht wanneer de volgende keer een bericht wordt geopend.
+set_zoom_note = Maakt de tekst van het geopende bericht zelf groter of kleiner, los van de rest van ZBox en van de eigen weergaveschaal van Windows. Geldt voor zowel de tekst- als de HTML-weergave. Met „Leeslettertype” kunt u desgewenst een bepaald lettertype afdwingen (bijvoorbeeld Consolas, OpenDyslexic) voor de berichttekst; laat het leeg om het normale lettertype te behouden. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 in het menu Beeld vergroten, verkleinen of herstellen alleen de lettergrootte zonder dit dialoogvenster te openen, en gelden direct voor elk geopend bericht. Wijzigingen die u hier maakt, gelden ook direct na OK.
+set_view_note = HTML is de standaard. Het toont het bericht zoals het is verzonden, en het wordt voorgelezen door NVDA en JAWS: wanneer een HTML-pagina opent, onderdrukt ZBox de eigen aankondiging van de browser, zet de leescursor op de eerste regel van het bericht en houdt de sneltoetsen van ZBox werkend binnen de pagina, inclusief F6 om de focus er weer uit te halen. Tekst toont hetzelfde bericht als platte, onopgemaakte tekst in een gewoon bewerkingsveld -- geen afbeeldingen, geen opmaak en niets dat afhangt van een geïnstalleerde browserengine. Druk in een geopend bericht op Ctrl+B om in beide richtingen te wisselen.
+set_engine_note = Edge geeft moderne CSS weer, maar voert de pagina uit in een apart proces en geeft de inhoud alleen aan een schermlezer via een interface die wxPython niet kan bereiken -- dus het bericht kan openen zonder dat er iets leesbaars in staat. Verouderde MSHTML is de engine die Outlook Express en Windows Mail gebruikten: deze draait in hetzelfde proces en publiceert een normale documentboom, zodat NVDA en JAWS het in bladermodus lezen zoals elke webpagina. Wordt van kracht wanneer de volgende keer een bericht wordt geopend.
+set_runtime_note = De systeembrede runtime wordt onderhouden door Windows Update, dus de engine die uw e-mail leest kan zonder aankondiging veranderen -- zo kan een werkende HTML-berichtweergave kapotgaan op een computer waar aan ZBox niets is veranderd. Een meegeleverde kopie in de map deps legt de exacte versie vast waarmee ZBox is getest. Voer tools\get_webview2.bat uit om er een te installeren. Als er geen meegeleverde kopie is, gebruikt ZBox hoe dan ook de systeembrede runtime, dus het start altijd. Wordt van kracht wanneer ZBox de volgende keer start.
+set_sr_intro = Hoeveel ZBox uw schermlezer laat zeggen terwijl een bericht opent, en hoe lang de eigen gesproken aankondigingen zichtbaar blijven.
+set_silence_note = Wanneer een HTML-bericht opent, kan ZBox tot 2 seconden een nagebootste Ctrl-toets ingedrukt houden om de browseraankondiging van de schermlezer stil te maken. Het onderwerp van het bericht wordt al als paginatitel gebruikt, waardoor de base64-URL niet wordt voorgelezen, maar de schermlezer kondigt nog steeds het besturingselement en het documenttype aan over het begin van het bericht heen, dus dit staat standaard aan. Zet het op 0 om het uit te schakelen, of verhoog het als er nog steeds geklets doorheen komt.
+set_focus_delay_note = Wanneer een HTML-bericht klaar is met laden, wacht ZBox zo lang voordat het de focus er daadwerkelijk op zet. WebView2 dat meldt dat een pagina is geladen en Windows dat de toegankelijkheidsboom van die pagina afrondt, zijn niet hetzelfde moment; te vroeg focussen zorgt ervoor dat NVDA/JAWS een algemene „webinhoudpagina” aankondigt in plaats van het bericht, of het bericht een tijdje na het openen als niet beschikbaar meldt. Niveau 1 is 100 ms, niveau 10 is een volle seconde. Verhoog het als u dit nog ziet; verlaag het zodra openen stabiel aanvoelt, voor sneller openen.
+set_announce_note = Ctrl+U en Ctrl+Shift+U melden de afzender in een klein dialoogvenster dat vanzelf sluit, omdat de statusbalk alleen wordt uitgesproken als statusbalkmeldingen in uw schermlezer zijn ingeschakeld. Dit is hoe lang dat dialoogvenster zichtbaar blijft. Stem het af op uw spraaksnelheid: te kort en het sluit midden in een zin, wat het doel voorbijschiet. Elke toets sluit het eerder; de pijltoetsen houden het open zodat u opnieuw kunt lezen. 0 betekent dat het op een toets wacht en nooit vanzelf sluit.
+set_attachment_dir_note = Waar „Alles opslaan” bijlagen wegschrijft wanneer een bericht er meer dan één heeft. Wordt automatisch aangemaakt als de map niet bestaat. Een bericht met één bijlage vraagt nog steeds waar het moet worden opgeslagen, zoals voorheen. Laat leeg voor de standaard:\n{path}
+set_autosave_note = Hoe vaak een geopend opsteltabblad zichzelf in Concepten opslaat terwijl u schrijft. Concept opslaan (Ctrl+S) slaat hoe dan ook op verzoek op, en bij het sluiten van een tabblad met niet-opgeslagen tekst wordt altijd aangeboden om op te slaan. 0 schakelt automatisch opslaan uit. Minder dan 15 seconden wordt niet aangeboden -- dat zou een serveraanroep zijn die concurreert met uw typen.
+set_auto_purge_note = Verwijdert berichten definitief uit Prullenbak en Ongewenst zodra ze er dit aantal dagen in staan -- dezelfde definitieve verwijdering die Prullenbak leegmaken en Map Ongewenst leegmaken op verzoek uitvoeren, automatisch één keer per dag uitgevoerd terwijl ZBox open is. Standaard aan op 30 dagen. 0 schakelt het uit. Dit kan niet ongedaan worden gemaakt zodra een bericht is verwijderd.
+set_bare_keys_note = Wanneer dit aan staat, schakelt het indrukken van alleen S, A, J, W of K in de berichtenlijst direct de ster om, archiveert het, markeert het de geselecteerde bericht(en) als ongewenst (Shift+J markeert ze als niet ongewenst), of volgt/negeert het de conversatie waar de selectie bij hoort -- Archiveren en Markeren als ongewenst hebben geen bevestiging en geen ongedaan maken. Als u dit uitschakelt, krijgen S, A, J, W en K weer de normale navigatie op eerste letter in de lijst. Ctrl+S en Ctrl+Shift+A blijven hoe dan ook werken. Wordt direct van kracht.
+set_sounds_note = Korte tonen voor voortgang, nieuwe berichten, verzonden, beantwoorde of doorgestuurde acties, verwijderingen en zoekresultaten. Uit schakelt elk geluid in de app uit; aankondigingen via schermlezer en statusbalk worden hoe dan ook niet beïnvloed.
+set_desktop_notifications_note = Een Windows-melding voor elke partij nieuwe e-mail, los van het geluid hierboven. Uit schakelt dit uit voor elk account; een afzonderlijk account kan ook apart worden gedempt in Account- en identiteitsinstellingen.
+set_theme_note = Aangepaste thema's zijn mappen in de map sounds van ZBox, die elk hun eigen progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav en none_found.wav leveren. Een themabestand dat ontbreekt, valt terug op het standaardgeluid.
+set_theme_note_only_default = Aangepaste thema's zijn mappen in de map sounds van ZBox, die elk hun eigen progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav en none_found.wav leveren. Een themabestand dat ontbreekt, valt terug op het standaardgeluid. Alleen „default” is beschikbaar totdat u een andere themamap toevoegt.
+set_lock_note = Bij het starten vraagt ZBox dan om een van uw ontgrendelmethoden voordat er een account wordt geopend. Elk ervan volstaat: een toegangssleutel, een beveiligingssleutel of het hoofdwachtwoord. Sluiten naar het systeemvak is geen afsluiten en vergrendelt niet opnieuw; Bestand > Afsluiten en Afsluiten bij het systeemvakpictogram wel. Als er niets is geregistreerd en er geen hoofdwachtwoord is ingesteld, wordt de vergrendeling overgeslagen in plaats van u buiten te sluiten van uw eigen e-mail.
+set_security_note = Het hoofdwachtwoord is als enige van de drie iets dat versleutelt: het zorgt ervoor dat deze map de opgeslagen accountwachtwoorden op een andere computer kan openen. Een toegangssleutel of beveiligingssleutel ontgrendelt de app op deze computer. Geen van beide vervangt het hoofdwachtwoord op een computer waarop ZBox nog niet eerder is gebruikt.
+set_minimize_note = Minimaliseren verbergt de taakbalkknop van ZBox en laat het in plaats daarvan achter het systeemvakpictogram draaien. Klik met de linkermuisknop op het systeemvakpictogram (of Enter/Spatie wanneer het de toetsenbordfocus heeft) om het venster terug te halen.
+set_close_note = De knop Sluiten van het venster, Alt+F4 en Ctrl+W op het tabblad E-mail verbergen ZBox in het systeemvak in plaats van af te sluiten. Bestand > Afsluiten (Ctrl+Shift+Q) en het eigen item Afsluiten van het systeemvakpictogram sluiten ZBox hoe dan ook echt af, dus er is altijd één toetsenbordweg om af te sluiten zonder het systeemvak aan te raken.
+set_stay_maximized_note = ZBox start gemaximaliseerd en wordt weer gemaximaliseerd als u dat ongedaan maakt. De menubalk, titelbalk en vensterrand worden niet beïnvloed -- dit is geen randloze volledigschermmodus, dus elke Alt-menusneltoets blijft werken.
+set_run_at_startup_note = Start ZBox automatisch wanneer u zich aanmeldt bij Windows, direct geopend in het systeemvak in plaats van het venster te tonen. Wordt direct van kracht, niet pas bij de volgende start.
+set_desktop_shortcut_note = Plaatst een snelkoppeling naar ZBox op uw bureaublad en vervangt een die er al staat. Een snelkoppeling slaat de exacte locatie van deze ZBox-map op, dus als u ZBox ergens anders heen verplaatst of kopieert, drukt u hier opnieuw op in de nieuwe kopie om de snelkoppeling daarnaar te laten verwijzen. Wordt direct van kracht en wacht niet op OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Naam
+ab_phone = Telefoon
+ab_notes = Notities
+ab_heading = Adresboek
+ab_contacts = Contacten
+ab_new = &Nieuw...
+ab_edit = &Bewerken...
+ab_delete = &Verwijderen
+ab_import = &Importeren...
+ab_export = &Exporteren...
+ab_groups_label = Groepen (mailinglijsten)
+ab_groups_name = Groepen
+ab_new_group = &Nieuwe groep...
+ab_rename_group = &Groep hernoemen...
+ab_delete_group = &Groep verwijderen
+ab_manage_members = &Leden beheren...
+ab_all_contacts = Alle contacten
+ab_add_member = Toevoegen >>
+ab_remove_member = << Verwijderen
+ab_members_of = Leden van {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Niet in woordenboek:
+sp_not_in_dictionary_name = Niet in woordenboek
+sp_in_this_line_label = In deze regel:
+sp_in_this_line_name = In deze regel
+sp_suggestions_label = &Suggesties:
+sp_suggestions_name = Suggesties
+sp_replace_with_label = &Vervangen door:
+sp_replace_with_name = Vervangen door
+sp_replace = &Vervangen
+sp_replace_all = &Alles vervangen
+sp_ignore = &Negeren
+sp_ignore_all = &Alles negeren
+sp_add_to_dictionary = &Toevoegen aan woordenboek
+btn_close = &Sluiten
+
+# Privacy and Content Blocking.
+priv_remote_label = Externe inhoud in berichten:
+priv_block_remote = &Externe inhoud blokkeren totdat ik erom vraag (aanbevolen)
+priv_blocklist_label = Blokkeerlijst voor advertenties en trackers:
+priv_block_known = &Bekende advertentie- en trackerdomeinen blokkeren
+priv_update_daily = &De lijst dagelijks op de achtergrond bijwerken
+priv_update_now = &Nu bijwerken
+priv_junk_label = Regels voor ongewenste e-mail:
+priv_check_inbox = &Nieuwe e-mail in Postvak IN controleren op geblokkeerde afzenders en bekende phishingkoppelingen
+priv_move_blocked = &E-mail van geblokkeerde afzenders automatisch naar Ongewenst verplaatsen
+priv_update_phishing = &Phishinglijst nu bijwerken
+priv_blocked_label = Geblokkeerde afzenders:
+priv_blocked_name = Geblokkeerde afzenders
+priv_remove_blocked = &Geblokkeerde afzender verwijderen
+priv_never_junk_label = Afzenders die nooit als ongewenst worden behandeld:
+priv_never_junk_name = Afzenders die nooit als ongewenst worden behandeld
+priv_remove_never_junk = &Nooit-ongewenst-afzender verwijderen
+priv_allowed_label = Afzenders die externe inhoud mogen laden:
+priv_allowed_name = Toegestane afzenders
+priv_remove_selected = &Geselecteerde afzender verwijderen
+
+# Message Filters.
+filt_rule_name = Regelnaam
+filt_enabled = &Ingeschakeld
+filt_match_label = Voldoen aan:
+filt_match_all = &Voldoen aan alle volgende (EN)
+filt_match_any = &Voldoen aan een van de volgende (OF)
+filt_conditions_label = Voorwaarden (laat een waarde leeg om deze over te slaan):
+filt_condition_field = Veld van voorwaarde {number}
+filt_condition_contains = Voorwaarde {number} bevat
+filt_actions_label = Acties:
+filt_mark_read = &Markeren als gelezen
+filt_flag = &Het bericht een ster geven
+filt_move_label = Naar map verplaatsen:
+filt_move_name = Naar map verplaatsen
+filt_rules_name = Filterregels
+filt_new = &Nieuwe regel...
+filt_edit = &Regel bewerken...
+filt_delete = &Regel verwijderen
+filt_up = &Omhoog
+filt_down = &Omlaag
+filt_run_label = Nu uitvoeren op map:
+filt_run_name = Map voor Nu uitvoeren
+filt_run_now = &Nu uitvoeren
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Ontgrendelen met toegangssleutel (Windows Hello)
+unl_security_key = &Ontgrendelen met beveiligingssleutel
+unl_master_password_label = &Hoofdwachtwoord:
+unl_master_password_name = Hoofdwachtwoord
+unl_unlock = &Ontgrendelen
+unl_exit = &ZBox afsluiten
+unl_methods_label = &Geregistreerde methoden:
+unl_methods_name = Geregistreerde ontgrendelmethoden
+unl_add_passkey = &Toegangssleutel toevoegen…
+unl_add_key = &Beveiligingssleutel toevoegen…
+unl_reassign = &Toegangssleutel opnieuw toewijzen aan deze computer…
+unl_test = &Testen…
+unl_remove = &Verwijderen
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Van
+comp_to = Aan
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Onderwerp
+comp_attach_button = Bestand bijvoegen...
+comp_sending = Verzenden...
+comp_report_label = &Rapport:
+comp_report_name = Rapport
+comp_refresh = &Vernieuwen
+comp_copy = &Kopiëren
+comp_preview_read = Zoals de ontvanger het leest
+comp_preview_source = De HTML die wordt verzonden
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Berichttekst
+mv_blocked_notice = Melding over geblokkeerde inhoud
+mv_show_remote = &Externe inhoud tonen
+mv_always_allow = &Deze afzender altijd toestaan
+mv_message_headers = Berichtkoppen
+mv_attachments = Bijlagen
+mv_attachments_count = Bijlagen ({count})
+mv_save_attachment = Opslaan: {filename}
+mv_save_all = Alles opslaan
+mv_html_view = HTML-weergave van bericht
+mv_saved_message = Opgeslagen bericht
+mv_show_remote_tip = Dit bericht opnieuw laden met de externe afbeeldingen en stijlen. Bekende trackers blijven geblokkeerd.
+mv_always_allow_tip = Externe inhoud laden in elk bericht van {sender}.
+
+# The search tab.
+srch_account = Account
+srch_folder = Map
+srch_for = Zoeken naar
+
+# The signature editor.
+sig_editors = Handtekeningeditors
+sig_formatted = Handtekening, opgemaakt
+sig_source = Handtekening, HTML-bron
+sig_plain_label = Alternatief in platte tekst (meegezonden met de HTML)
+sig_plain_name = Alternatief in platte tekst
+
+# About ZBox.
+about_text_name = Tekst Over ZBox
+about_view_license = &Licentie bekijken...
+about_google = &Google-app-wachtwoorden...
+about_support = &ZBox steunen -- ontwikkeling en onderhoud door één persoon
+about_repos = &Harith's app-repository's op GitHub
+about_contact = &Contact met Harith
+btn_close_plain = Sluiten
+btn_cancel_plain = Annuleren
+
+# The license window.
+eula_heading = ZBox-licentie
+eula_text_name = Tekst van de ZBox-licentie
+eula_third_party = Licentiepagina's van onderdelen van derden:
+eula_agree = &Ik ga akkoord met de bovenstaande voorwaarden
+eula_agree_name = Ik heb de licentievoorwaarden van ZBox gelezen en ga ermee akkoord
+eula_disagree = &Ik ga niet akkoord
+eula_next = &Volgende
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Tekst van de ZBox-documentatie
+doc_copy = Naar klembord kopiëren
+shortcuts_heading = Sneltoetsen
+shortcuts_text_name = Tekst van de sneltoetsen
+
+# The main window's own panes.
+mf_toolbar = Hoofdwerkbalk
+mf_tabs = ZBox-tabbladen
+tree_heading = Accounts en mappen
+tree_name = Boom met accounts en mappen
+envlist_heading = Berichten
+envlist_name = Berichtenlijst
+rdr_heading = Bericht
+rdr_name = Berichtlezer
+conv_heading_one = Conversatie: 1 bericht
+conv_heading_many = Conversatie: {count} berichten
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} van {total} klaar.
+bulk_cancelling = Annuleren -- het huidige bericht wordt afgerond...
+cache_clear_now = Offline berichtencache nu wissen... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, beveiligd
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Weergavenaam is optioneel -- laat leeg om te verzenden onder de eigen naam van dit account.
+acct_note_identity = Het e-mailadres kan verschillen van het aanmeld-e-mailadres als uw provider een eigen domein aan deze mailbox heeft gekoppeld. E-mail wordt verzonden en ontvangen onder het adres hierboven, terwijl het aanmelden nog steeds het aanmeld-e-mailadres gebruikt. Laat het wachtwoordveld leeg om het wachtwoord te behouden dat al voor dit account is opgeslagen -- typ hier bijvoorbeeld het nieuwe na het vervangen van een Gmail-app-wachtwoord; laat het anders leeg.
+acct_note_identities = Andere adressen waarmee dit account kan verzenden en antwoorden. Bij het beantwoorden van een bericht dat naar een van deze adressen is gestuurd, staat Van standaard op dat adres in plaats van het adres hierboven.
+acct_note_signature = Toegevoegd aan elk nieuw bericht, antwoord en doorgestuurd bericht dat vanuit dit account wordt verzonden, onder een regel „-- ”. Laat leeg voor geen. Handtekening bewerken opent de opmaakeditor, waar vet, lijsten en koppelingen beschikbaar zijn; het vak hierboven bevat dan de versie in platte tekst die ermee wordt meegestuurd.
+acct_note_junk = Naar welke echte map Markeren als ongewenst berichten verplaatst. „{automatic}” gebruikt dezelfde providerafhankelijke gok die Archiveren en Prullenbak al gebruiken; stel dit alleen in als die gok verkeerd is of uw map voor ongewenst een eigen naam heeft.
+acct_note_disable = Met een uitgeschakeld account wordt nooit contact gemaakt -- geen IDLE, geen periodieke vernieuwing, niets -- totdat het weer wordt ingeschakeld. Het blijft zichtbaar in de boom, gemarkeerd als (uitgeschakeld), en de al gedownloade e-mail blijft offline beschikbaar. Dezelfde schakelaar als Accounts > Account uitschakelen of het eigen contextmenu van het account; dit is gewoon een andere plek om er te komen.
+acct_note_default = De mappen van dit account staan bovenaan in de boom, en een nieuw bericht wordt standaard vanuit dit account verzonden, tenzij u dat handmatig wijzigt in het opstelvenster. Dit heeft geen invloed op het adres dat een antwoord of doorgestuurd bericht gebruikt -- dat volgt al het bericht dat wordt beantwoord (zie Extra identiteiten hierboven). Er is altijd precies één standaardaccount, dus als u dit uitvinkt bij het huidige standaardaccount zonder het bij een ander aan te vinken, verandert er niets -- vink in plaats daarvan het vakje van een ander account aan om de standaard daaraan over te dragen.
+acct_note_mute = &Dempen blokkeert het nieuwe-e-mailgeluid, de gesproken aankondiging en de Windows-melding van dit account, ongeacht hoe die verder zijn ingesteld. Het heeft geen invloed op andere accounts en valt nog steeds onder de hoofdschakelaars in Instellingen > Geluid en meldingen (geluiden en bureaubladmeldingen in het algemeen).
+wiz_note_app_password = Als u al een app-wachtwoord voor ZBox hebt gemaakt, drukt u op Volgende om verder te gaan.
+wiz_note_login = Aanmeldgegevens.\nAls uw aanmeld-e-mailadres verschilt van het adres hierboven, bijvoorbeeld als uw provideraccount login@example.net is maar u wilt verzenden en ontvangen als you@example.org, voert u hier het aanmeld-e-mailadres in. U kunt het eigen verzendadres daarna instellen in Account- en identiteitsinstellingen.
+wiz_note_servers = Serverinstellingen, vooraf ingevuld waar het domein wordt herkend. Pas aan wat anders moet zijn.
+wiz_preset_none = Geen voorinstelling gevonden voor dit domein. Voer de serverinstellingen van uw provider handmatig in; de helppagina's van uw provider vermelden ze.
+ab_note_groups = Typ de naam van een groep in het veld Aan, Cc of Bcc van een opstelvenster om al haar leden in één keer in te vullen.
+cache_note_intro = Deze verwijderen alleen de lokale kopieën van ZBox. Er wordt niets van een mailserver verwijderd, en een verwijderd bericht wordt opnieuw gedownload wanneer u het de volgende keer opent.
+cache_note_age = Automatisch opschonen wordt één keer per dag uitgevoerd, wanneer ZBox tien minuten geen toetsenbordactiviteit heeft gehad en er geen bericht open is. Het gaat uit van de eigen datum van elk bericht, ook van berichten die nog in uw account staan.
+filt_note_intro = Regels worden op volgorde uitgevoerd, van boven naar beneden, en testen Van, Aan en Onderwerp. Ze worden automatisch toegepast op nieuwe e-mail zodra die in Postvak IN van dit account binnenkomt; gebruik Nu uitvoeren hieronder om ze toe te passen op berichten die al in een map staan.
+filt_note_run_now = Past elke ingeschakelde regel hierboven op volgorde toe op elk bericht dat al in de gekozen map staat -- slaat eerst uw wijzigingen op, net als OK.
+mp_note_intro = Deze accounts zijn op een andere computer ingesteld. Voer het hoofdwachtwoord in om hun opgeslagen wachtwoorden hier te ontgrendelen. Er wordt op deze computer maar één keer om gevraagd.\n\nZonder het hoofdwachtwoord moet elk account opnieuw worden aangemeld bij de mailserver.
+priv_note_remote = Afbeeldingen, stijlbladen en lettertypen die een bericht van internet laadt, vertellen de afzender op welk moment u het opende, en vanaf waar. Met deze optie aan wordt niets daarvan geladen: boven het bericht verschijnt een melding over wat is geblokkeerd, en Ctrl+Shift+I laadt het voor dat ene bericht. Afbeeldingen die in het bericht zelf zijn bijgevoegd, worden altijd getoond. Scripts en ingesloten frames worden hoe dan ook verwijderd en nooit geladen.
+priv_note_blocklist = Dit is de tweede laag. Deze is van belang zodra u de externe inhoud van een bericht laadt, of een afzender toestaat: de afbeeldingen worden geladen, maar alles wat van een bekend tracking- of advertentiedomein komt nog steeds niet. De lijst wordt gedownload uit openbare lijsten met advertenties en trackers en samengevoegd; bijwerken duurt een seconde of twee en gebeurt op de achtergrond.
+priv_note_junk = Geen gegok. Markeren als ongewenst voegt de afzender toe aan de blokkeerlijst hieronder, tenzij het bericht via een mailinglijst kwam. Markeren als niet ongewenst voegt de afzender toe aan de nooit-ongewenst-lijst en dat bericht wordt nooit meer gecontroleerd. Een nieuw bericht van een geblokkeerde afzender wordt in de lijst gemarkeerd als Geblokkeerde afzender; een bericht dat naar een bekende phishing- of malwaresite verwijst, wordt gemarkeerd als Mogelijke phishing. De eigen spamfilter van uw e-mailprovider werkt nog steeds zoals voorheen.
+priv_status_phishing_updating = Phishinglijst: wordt op de achtergrond bijgewerkt. Open dit dialoogvenster opnieuw om het resultaat te zien.
+priv_status_updating = Wordt op de achtergrond bijgewerkt. Open dit dialoogvenster opnieuw om het resultaat te zien.
+rel_note_intro = Berichten die verwant zijn aan „{subject}” volgens hun Message-ID/References-koppen, in elke map van dit account.
+srch_note_intro = Zoek in Van, Onderwerp en Berichttekst naar de tekst die u hieronder invoert. Doorzoekt elk account en elke map, tenzij u het hieronder beperkt.
+sig_note_plain = Laat het alternatief in platte tekst leeg en het wordt uit de opgemaakte handtekening geschreven wanneer u op Opslaan drukt.
+unified_note_intro = Kies welke mappen over alle accounts heen worden samengevoegd. Elke aangevinkte map wordt één item in de boom dat die map uit al uw accounts combineert.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Over ZBox
+title_account_settings = Account- en identiteitsinstellingen: {name}
+title_new_account = Nieuw account
+title_address_book = Adresboek
+title_members = Leden: {name}
+ab_group_name_prompt = Groepsnaam:
+title_new_group = Nieuwe groep
+title_cache_cleanup = Configuratie van cache opschonen
+cache_age_prompt = Berichten in de cache automatisch verwijderen die ouder zijn dan:
+title_automatic_cleanup = Automatisch opschonen
+comp_link_prompt = Adres van koppeling:
+title_insert_link = Koppeling invoegen
+title_composer_diagnostics = Diagnose van opstelvenster
+title_formatted_preview = Opgemaakt voorbeeld
+title_license_agreement = Licentieovereenkomst van ZBox
+title_message_filters = Berichtenfilters: {account}
+title_master_password_required = Hoofdwachtwoord vereist
+title_privacy_dialog = Privacy en inhoudsblokkering
+title_privacy = Privacy
+title_settings = Instellingen
+title_unified_folders = Samengevoegde mappen
+title_zbox_locked = ZBox is vergrendeld
+title_message_view = Berichtweergave
+title_remote_content = Externe inhoud
+title_refresh = Vernieuwen
+title_refresh_all = Alles vernieuwen
+mv_choose_folder = Kies een map om de bijlage op te slaan
+title_thread = Conversatie
+title_inbox = Postvak IN
+title_compose = Opstellen
+title_watch_thread = Conversatie volgen
+title_ignore_thread = Conversatie negeren
+title_edit_signature = Handtekening bewerken
+title_account = Account
+mf_folder_name_prompt = Mapnaam:
+mf_new_name_prompt = Nieuwe naam:
+title_refresh_all_accounts = Alle accounts vernieuwen
+title_sender = Afzender
+title_new_mail = Nieuwe e-mail
+mf_export_dialog_title = Alle {count} account(s) en instellingen exporteren
+mf_related_tab = Verwant: {subject}
+title_hotkeys_diagnostic = Sneltoetsdiagnose
+set_choose_attachment_dir = Kies de map voor het opslaan van bijlagen
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox is vergrendeld. Gebruik een van de methoden hieronder om te ontgrendelen. Annuleren sluit ZBox zonder een account te openen.
+unl_note_foreign_passkey = De toegangssleutel die bij deze map is opgeslagen, hoort bij een andere computer en kan hier dus niet worden gebruikt. Ontgrendel met uw beveiligingssleutel of hoofdwachtwoord, en gebruik dan Instellingen, Privacy en beveiliging, Ontgrendelmethoden om een toegangssleutel op deze computer in te stellen.
+unl_note_methods = Elk van deze ontgrendelt ZBox wanneer de app-vergrendeling aan staat, naast het hoofdwachtwoord. Een toegangssleutel gebruikt Windows Hello op deze computer; een beveiligingssleutel is een FIDO2-sleutel via USB of NFC en werkt op elke computer waarop u hem aansluit.
+unl_note_not_encryption = Deze ontgrendelen de app. Ze versleutelen niets: het hoofdwachtwoord is nog steeds het enige dat de opgeslagen accountwachtwoorden kan openen op een computer waarop deze map niet eerder is gebruikt. Het moet eerst worden ingesteld, en geen van beide kan worden toegevoegd totdat dat is gebeurd.
+unl_add_passkey_unavailable = &Toegangssleutel toevoegen (niet beschikbaar)
+unl_add_key_unavailable = &Beveiligingssleutel toevoegen (niet beschikbaar)
+unl_reassign_unavailable = &Toegangssleutel opnieuw toewijzen aan deze computer (niet beschikbaar)
+unl_status_cancelled_passkey = De toegangssleutel is geannuleerd. ZBox is nog vergrendeld.
+unl_status_cancelled_key = De beveiligingssleutel is geannuleerd. ZBox is nog vergrendeld.
+unl_status_enter_password = Voer het hoofdwachtwoord in.
+unl_status_no_master = Er is geen hoofdwachtwoord ingesteld, dus een toegangssleutel of beveiligingssleutel kan nog niet worden toegevoegd. Stel er een in met de knop Hoofdwachtwoord in Instellingen, Privacy en beveiliging, en kom dan hier terug. Het hoofdwachtwoord is wat uw opgeslagen accountwachtwoorden op een andere computer opent; een toegangssleutel ontgrendelt alleen de app op deze computer, dus die kan niet op zichzelf staan.
+unl_status_unsupported = De Windows van deze computer ondersteunt geen toegangssleutels of beveiligingssleutels, dus hier kan alleen het hoofdwachtwoord ZBox ontgrendelen.
+unl_status_foreign_one = 1 toegangssleutel hoort bij een andere computer en kan ZBox hier niet ontgrendelen. Opnieuw toewijzen vervangt ze door een die op deze computer is gemaakt.
+unl_status_foreign_many = {count} toegangssleutels horen bij een andere computer en kunnen ZBox hier niet ontgrendelen. Opnieuw toewijzen vervangt ze door een die op deze computer is gemaakt.
+unl_status_foreign_one_no_hello = 1 toegangssleutel hoort bij een andere computer en kan ZBox hier niet ontgrendelen. Windows Hello is hier niet ingesteld, dus ze kunnen op deze computer niet worden vervangen; Verwijderen vergeet ze.
+unl_status_foreign_many_no_hello = {count} toegangssleutels horen bij een andere computer en kunnen ZBox hier niet ontgrendelen. Windows Hello is hier niet ingesteld, dus ze kunnen op deze computer niet worden vervangen; Verwijderen vergeet ze.
+unl_status_no_hello = Windows Hello is niet ingesteld op deze computer, dus hier kan geen toegangssleutel worden toegevoegd. Een beveiligingssleutel wel.
+unl_status_none_registered = Er zijn nog geen ontgrendelmethoden geregistreerd.
+unl_status_add_cancelled_passkey = Het toevoegen van een toegangssleutel is geannuleerd.
+unl_status_add_cancelled_key = Het toevoegen van een beveiligingssleutel is geannuleerd.
+unl_status_added = Toegevoegd: {name}.
+unl_status_reassign_cancelled = Opnieuw toewijzen is geannuleerd. Er is niets gewijzigd.
+unl_status_reassigned = {name} toegevoegd en {count} van andere computers vergeten.
+unl_status_test_cancelled = De test is geannuleerd.
+unl_status_removed = Verwijderd.
+unl_remove_warning_last = {name} verwijderen?\n\nHet is de enige geregistreerde ontgrendelmethode en er is geen hoofdwachtwoord ingesteld, dus met de app-vergrendeling aan zou er niets meer zijn om ZBox mee te ontgrendelen. De vergrendeling wordt dan overgeslagen in plaats van u buiten te sluiten, maar ZBox zou daarna ontgrendeld openen.
+unl_remove_warning = {name} verwijderen? ZBox accepteert deze dan niet meer.
+ab_col_email = E-mail
+ab_col_name = Naam
+ab_col_phone = Telefoon
+ab_no_contacts = Nog geen contacten.
+acct_auto_check = Automatisch controleren op nieuwe berichten
+acct_note_auto_check = Uit: ZBox maakt nooit uit zichzelf contact met dit account -- geen bewaking van nieuwe e-mail, geen vernieuwing op tijd, geen downloads op de achtergrond -- zodat een onbetrouwbare server de andere accounts niet kan vertragen. De gedownloade e-mail opent nog steeds, en Vernieuwen (F5), verzenden en verwijderen bereiken de server nog steeds. Hetzelfde als Automatisch controleren pauzeren in het menu Extra of het contextmenu van het account.
+bl_day_ago = 1 dag geleden
+bl_days_ago = {days} dagen geleden
+bl_label_blocklists = Blokkeerlijst
+bl_label_phishing = Phishinglijst
+bl_last_failed = Laatste poging mislukt: %s
+bl_not_downloaded = Nog niet gedownload.
+bl_save_failed = De %s is gedownload maar kon niet worden opgeslagen: %s
+bl_seed_only = %s domeinen uit de ingebouwde lijst. Nog nooit bijgewerkt via internet.
+bl_some_failed = Sommige bronnen zijn mislukt: %s
+bl_some_unreachable = Sommige bronnen konden niet worden bereikt: %s
+bl_status_line = %s domeinen. Laatst bijgewerkt %s.
+bl_up_to_date = %s is al bijgewerkt.
+bl_update_failed = Kon de %s niet bijwerken: %s
+bl_updated = %s bijgewerkt: %s domeinen.
+cc_age_choice = Elke berichtencache van %s oud
+cc_auto_button = Automatisch opschonen: berichten in de cache ouder dan %s...
+comp_btn_discard = &Verwerpen
+comp_btn_keep_editing = &Verder bewerken
+comp_btn_save_draft = &Concept opslaan
+comp_no_account = Geen account ingesteld
+comp_saving_draft = Concept opslaan…
+comp_this_message = dit bericht
+comp_unsent_save_q = %s als concept opslaan voordat het wordt gesloten?
+comp_unsent_tray_q = %s als concept opslaan voordat ZBox naar het systeemvak gaat?
+doc_unreadable = Het documentatiebestand kon niet worden gelezen:
+envlist_all_disabled = Elk account is uitgeschakeld.
+envlist_col_date = Datum
+envlist_col_from = Van
+envlist_col_status = Status
+envlist_col_subject = Onderwerp
+envlist_collapsed = Samengevouwen (%d)
+envlist_empty = Geen berichten in deze map.
+envlist_loading = Berichten laden...
+envlist_no_accounts = Nog geen accounts ingesteld.
+envlist_no_ignored = Geen genegeerde conversaties in deze map.
+envlist_no_watched = Geen gevolgde conversaties in deze map.
+envlist_select_folder = Selecteer een account of map om berichten te laden.
+eula_link_0 = De licentiepagina van Himalaya openen in uw browser
+eula_link_1 = De licentiepagina van StevenBlack hosts openen in uw browser
+eula_link_2 = De licentiepagina van EasyList/EasyPrivacy openen in uw browser
+eula_link_3 = De licentiepagina van Phishing.Database openen in uw browser
+eula_read_note = Lees de licentie hieronder, inclusief de gedeelten van derden. U moet Ik ga akkoord aanvinken voordat Volgende beschikbaar wordt. Ik ga niet akkoord sluit ZBox zonder het te starten, en verwijdert wat deze uitvoering tot nu toe heeft aangemaakt.
+eula_unreadable = Het licentiebestand kon niet worden gelezen:\n%s
+filters_title = Filters uitvoeren
+flag_title = Bericht een ster geven
+folder_type_archive = Archieven
+folder_type_drafts = Concepten
+folder_type_inbox = Postvak IN
+folder_type_junk = Ongewenst
+folder_type_sent = Verzonden
+folder_type_trash = Prullenbak
+mime_application_json = JSON-bestand
+mime_application_msword = Word-document
+mime_application_octet_stream = Binair bestand
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel-werkblad
+mime_application_vnd_ms_powerpoint = PowerPoint-presentatie
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint-presentatie
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel-werkblad
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word-document
+mime_application_xml = XML-bestand
+mime_application_zip = ZIP-archief
+mime_audio_mpeg = MP3-audio
+mime_audio_ogg = OGG-audio
+mime_audio_wav = WAV-audio
+mime_image_bmp = BMP-afbeelding
+mime_image_gif = GIF-afbeelding
+mime_image_jpeg = JPEG-afbeelding
+mime_image_png = PNG-afbeelding
+mime_image_svg_xml = SVG-afbeelding
+mime_image_webp = WebP-afbeelding
+mime_text_csv = CSV-bestand
+mime_text_html = HTML-bestand
+mime_text_plain = Tekstbestand
+mime_video_mp4 = MP4-video
+mime_video_x_msvideo = AVI-video
+move_title_junk = Markeren als ongewenst
+move_title_move_to = Verplaatsen naar
+move_title_not_junk = Markeren als niet ongewenst
+mp_explain_set = Er is een hoofdwachtwoord ingesteld. Het zorgt ervoor dat deze ZBox-map de opgeslagen accountwachtwoorden op een andere computer kan openen.\n\nLaat beide vakken voor het nieuwe wachtwoord leeg en druk op OK om het te verwijderen. Verwijderen heeft geen invloed op deze computer, maar de map werkt dan op geen enkele andere computer meer zonder elk account opnieuw aan te melden.
+mp_explain_unset = Er is geen hoofdwachtwoord ingesteld, dus de opgeslagen accountwachtwoorden kunnen alleen op deze computer en in dit Windows-account worden gelezen. Kopieer de map ergens anders heen en elk account moet opnieuw worden aangemeld bij de mailserver.\n\nStel er een in en ZBox vraagt er op elke nieuwe computer één keer om, en ontgrendelt daar vanaf dan normaal. Deze computer vraagt er niet meer om.\n\nSchrijf het op en bewaar het op een veilige plek. Het wordt nergens opgeslagen en kan niet worden hersteld: als u het vergeet, moet elk account opnieuw worden aangemeld bij de mailserver.
+mp_label_confirm = &Nieuw hoofdwachtwoord bevestigen:
+mp_label_current = &Huidig hoofdwachtwoord:
+mp_label_master = &Hoofdwachtwoord:
+mp_label_new = &Nieuw hoofdwachtwoord:
+mp_name_confirm = Nieuw hoofdwachtwoord bevestigen
+mp_name_current = Huidig hoofdwachtwoord
+mp_name_master = Hoofdwachtwoord
+mp_name_new = Nieuw hoofdwachtwoord
+mp_prompt_existing = Uw opgeslagen accountwachtwoorden zijn alleen op deze computer beveiligd. Stel een hoofdwachtwoord in zodat ze ook kunnen worden geopend als u ZBox naar een andere computer verplaatst.
+mp_prompt_first_run = ZBox gaat uw accountwachtwoorden opslaan. Stel nu een hoofdwachtwoord in zodat ze nog steeds kunnen worden geopend als u ZBox naar een andere computer verplaatst.
+mp_prompt_new_account = ZBox gaat het wachtwoord van dit account opslaan. Stel eerst een hoofdwachtwoord in zodat het account nog steeds kan worden geopend als u ZBox naar een andere computer verplaatst.
+mp_removed_done = Hoofdwachtwoord verwijderd. De opgeslagen wachtwoorden werken nu alleen op deze computer en in dit Windows-account.
+mp_set_done = Hoofdwachtwoord ingesteld. ZBox vraagt er één keer om op elke nieuwe computer waarop deze map wordt geopend, en ontgrendelt daar daarna normaal.
+mv_body_title = Berichttekst
+mv_col_format = Indeling
+mv_col_name = Naam
+mv_col_size = Grootte
+mv_format_unknown = Onbekend
+mv_size_unknown = Onbekende grootte
+na_account_settings = Account- en identiteitsinstellingen
+na_disable_account = Account uitschakelen
+na_edit_signature = Handtekening bewerken
+na_message_filters = Berichtenfilters
+na_mute_account = Account dempen
+na_pause_auto_check = Automatisch controleren pauzeren
+na_remove_account = Account verwijderen
+na_set_default = Instellen als standaardaccount
+no_offline_copy = Geen offlinekopie van %s. Open het terwijl u online bent, of gebruik Bestand, Offline, Nu synchroniseren.
+perm_delete_confirm = {msg} Dit slaat de Prullenbak over en kan niet ongedaan worden gemaakt.
+perm_delete_many = {count} berichten definitief verwijderen?
+perm_delete_one = {count} bericht definitief verwijderen?
+preset_note_apple = Apple vereist een app-specifiek wachtwoord.
+preset_note_fastmail = Fastmail vereist een app-wachtwoord.
+preset_note_google = Google vereist een app-wachtwoord of OAuth2, niet uw normale wachtwoord.
+preset_note_proton = ProtonMail vereist dat de app ProtonMail Bridge lokaal draait.
+preset_note_yahoo = Yahoo vereist een app-wachtwoord.
+priv_phishing_not_loaded = Phishinglijst: nog niet geladen. Deze wordt gedownload de eerste keer dat deze regels aan staan en ZBox online is.
+priv_phishing_prefix = Phishinglijst:
+priv_status_unavailable = Status van de blokkeerlijst is niet beschikbaar.
+rdr_load_failed = Kon bericht niet laden.\n\n{message}
+rdr_loading = Bericht laden...
+rdr_select_message = Selecteer een bericht om het hier te lezen.
+set_autosave_off = Uit — gebruik Concept opslaan (Ctrl+S) om handmatig op te slaan
+set_autosave_seconds = Elke {seconds} seconden
+set_no_unlock = Geen toegangssleutel of beveiligingssleutel hier bruikbaar
+set_purge_days = Na {days} dagen
+set_purge_off = Uit — Prullenbak en Ongewenst worden nooit automatisch opgeschoond
+set_purge_one_day = Na 1 dag
+set_rt_bundled_installed = Meegeleverde runtime: geïnstalleerd.
+set_rt_bundled_many = Meegeleverde runtime: %s geïnstalleerd.
+set_rt_bundled_none = Meegeleverde runtime: geen geïnstalleerd, dus ZBox gebruikt de systeembrede.
+set_rt_bundled_unknown = Meegeleverde runtime: kon niet worden vastgesteld.
+set_rt_bundled_ver = Meegeleverde runtime: versie %s geïnstalleerd.
+set_rt_system_unknown = Systeembrede runtime: versie kon niet worden vastgesteld.
+set_rt_system_ver = Systeembrede runtime: versie %s.
+set_unlock_many = %d ontgrendelmethoden hier bruikbaar
+set_unlock_unreadable = Ontgrendelmethoden konden niet worden gelezen
+sig_tab_formatted = Opgemaakt
+sig_tab_source = HTML-bron
+srch_all_accounts = Alle accounts
+srch_all_folders = Alle mappen
+tab_mail = E-mail
+tab_new_message = Nieuw bericht
+tab_saved_message = Opgeslagen bericht
+title_copy_to_err = Kopiëren naar
+title_mark_message = Bericht markeren
+title_unsent_message = Niet-verzonden bericht
+tree_unified_root = Samengevoegde mappen
+unlock_kind_passkey = Toegangssleutel (Windows Hello)
+unlock_kind_security_key = Beveiligingssleutel
+unlock_prompt_message = Windows vraagt u te bevestigen. Beantwoord de vraag met Windows Hello, uw pincode of uw beveiligingssleutel. Dit venster sluit vanzelf wanneer Windows klaar is.
+unlock_prompt_title = Windows-beveiliging
+unlock_registering = Deze ontgrendelmethode registreren
+unlock_the_passkey = De toegangssleutel
+unlock_the_security_key = De beveiligingssleutel
+wildcard_eml = E-mailbestanden (*.eml)|*.eml|Alle bestanden (*.*)|*.*
+wildcard_export = ZBox-export (*.json)|*.json
+wiz_not_supported = NIET ONDERSTEUND: {name}. {note} Dit account kan niet worden toegevoegd in ZBox.
+stock_apply = &Toepassen
+stock_cancel = Annuleren
+stock_close = &Sluiten
+stock_help = &Help
+stock_no = &Nee
+stock_ok = OK
+stock_yes = &Ja
+wiz_btn_back = &< Vorige
+wiz_btn_finish = &Voltooien
+wiz_btn_next = &Volgende >
+acct_unsaved_q = De wijzigingen aan dit account opslaan?
+btn_save = &Opslaan
+spell_add_to_dictionary = &Toevoegen aan woordenboek
+spell_no_suggestions = Geen suggesties
+title_signature_for = Handtekening: {account}
+title_mark_folder_read = Map als gelezen markeren
+title_update_available = ZBox-update
+update_available = ZBox {new} is beschikbaar. U hebt {current}.
+upd_notes_label = Uitgaveopmerkingen:
+upd_no_notes = Geen uitgaveopmerkingen.
+upd_notes_name = Uitgaveopmerkingen
+upd_update_now = Ja, nu bijwerken
+upd_remind_later = Later herinneren
+title_update_download = ZBox-update downloaden
+upd_downloading = ZBox {version} downloaden...
+upd_progress_name = Downloadvoortgang
+upd_cancel = Annuleren
+upd_cancelling = Annuleren...
+set_updates_label = Updates:
+set_update_auto = Automatisch controleren op updates
+set_update_mode_label = Als er een update is gevonden:
+set_update_ask = Mij vragen
+set_update_silent = Zonder vragen downloaden en installeren
+set_update_note = ZBox controleert GitHub hoogstens eenmaal per dag op een nieuwere uitgave, alleen als het niet in gebruik is, en verstuurt niets anders dan zijn versienummer. Mij vragen toont de nieuwe versie en de uitgaveopmerkingen, met Ja, nu bijwerken en Later herinneren. Zonder vragen downloaden en installeren haalt de update op als ZBox niet in gebruik is en installeert die de volgende keer dat u ZBox volledig afsluit, nooit terwijl u werkt. Een update vervangt alleen de programmabestanden van ZBox zelf: uw accounts, wachtwoorden, instellingen, e-mail, logboeken, geluidsthema's en talen die u zelf hebt toegevoegd worden nooit aangeraakt, en de vorige versie wordt bewaard en vanzelf teruggezet als de nieuwe niet start. Onder Help, Updates staan ook Nu controleren op updates en de pagina met uitgaven om met de hand bij te werken.
+set_update_check_now = Nu controleren
+mv_attachment_button = {filename} ({format})
+att_open = Openen
+att_save = Opslaan...
+att_save_all = Alle bijlagen opslaan
+title_save_attachment = Bijlage opslaan
+title_full_headers = Alle kopregels
+hdr_copy_all = Alles kopiëren
+acct_identity_own_signature = Een eigen handtekening gebruiken
+acct_identity_own_reply_to = Een eigen antwoordadres gebruiken
+acct_identity_reply_to = Antwoordadres
+acct_identity_always_cc = Altijd Cc naar deze adressen
+acct_identity_cc = Cc-adressen
+acct_identity_always_bcc = Altijd Bcc naar deze adressen
+acct_identity_bcc = Bcc-adressen
+acct_identity_own_folders = Eigen mappen Concepten en Verzonden gebruiken
+acct_identity_drafts = Map Concepten
+acct_identity_sent = Map Verzonden
+acct_identity_own_smtp = Een eigen uitgaande server gebruiken
+acct_identity_smtp_login = Aanmeldnaam uitgaande server
+acct_identity_smtp_password = Wachtwoord uitgaande server
+acct_identity_test_smtp = Uitgaande server testen
+acct_identity_note_smtp = Laat de aanmeldnaam leeg om aan te melden met het e-mailadres van deze identiteit. Verzonden kopieën gaan naar de map Verzonden van deze account, of naar de eigen map Verzonden van deze identiteit als die er een heeft.
+identity_field_required = Vul {field} in, of schakel het vakje uit.
+identity_field_invalid = {field} bevat een ongeldig adres.
+identity_folders_required = Kies een map Concepten, een map Verzonden of beide, of schakel het vakje uit.
+identity_password_required = Voer het wachtwoord voor de uitgaande server in.
+identity_smtp_testing = De uitgaande server wordt getest.
+identity_smtp_ok = De uitgaande server heeft de aanmelding geaccepteerd.
+identity_smtp_failed = De test van de uitgaande server is mislukt.\n\n{error}
+set_bare_keys_note_move = M en C openen de menu's Verplaatsen naar en Kopiëren naar met de mappen voor de geselecteerde bericht(en), en Shift+M opent een vak waarin u een deel van een mapnaam typt om ze daarheen te verplaatsen. Als u dit uitschakelt, keren ook M en C terug naar navigatie op beginletter.
+folder_search_filter = Mapnaam bevat
+folder_search_list = Overeenkomende mappen
+folder_search_no_match = Geen map komt overeen met die naam.
+wiz_signin_method = Aanmeldmethode
+wiz_method_password = Wachtwoord
+wiz_method_microsoft = Microsoft-account (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Aanmelden met Microsoft. De serverinstellingen voor Outlook.com, Hotmail, Live en Microsoft 365 zijn ingevuld.
+wiz_welcome_notice = Gmail. Uw normale Google-wachtwoord wordt geweigerd, maar een app-wachtwoord werkt. Verificatie in twee stappen moet eerst aan staan. De knop hieronder opent de instructies van Google.\n\nOutlook.com, Hotmail, Live en Microsoft 365. Deze melden zich aan met uw Microsoft-account. Kies op de aanmeldpagina Microsoft-account en meld u daarna aan in uw browser of met een code.\n\nAndere providers. Een normaal wachtwoord of een app-wachtwoord werkt meestal, en de helppagina's van uw provider vermelden de serverinstellingen.
+preset_note_outlook = Accounts van Outlook.com, Hotmail, Live en MSN melden zich aan met een Microsoft-account. Kies op de aanmeldpagina Microsoft-account als aanmeldmethode.
+ms_status_name = Status van aanmelden bij Microsoft
+ms_browser_button = Aanmelden in browser
+ms_code_button = Aanmelden met een code
+ms_copy_code = Code kopiëren
+ms_open_page = Aanmeldpagina openen
+ms_stop = Stoppen met wachten
+ms_not_configured = Aanmelden met Microsoft is niet ingesteld in deze kopie van ZBox.
+ms_not_signed_in = Nog niet aangemeld. Meld u aan in uw browser, of met een code op elk apparaat.
+ms_signed_in = Aangemeld als {address}.
+ms_signed_in_plain = Aangemeld.
+ms_needs_sign_in = Deze account moet zich opnieuw aanmelden bij Microsoft. Meld u aan in uw browser, of met een code op elk apparaat.
+ms_reason_cancelled = Het aanmelden is gestopt.
+ms_reason_timeout = Er kwam niet op tijd een antwoord.
+ms_reason_denied = De toegang werd niet toegestaan.
+ms_reason_expired = De code is verlopen. Vraag een nieuwe aan.
+ms_reason_network = Microsoft was niet bereikbaar. Controleer de verbinding en probeer het opnieuw.
+ms_reason_server = Microsoft meldt: {detail}
+ms_page_done = Aangemeld. U kunt deze pagina sluiten en terugkeren naar ZBox.
+ms_page_failed = Het aanmelden is niet voltooid. Keer terug naar ZBox voor details.
+ms_browser_waiting = Uw browser toont de aanmeldpagina van Microsoft. Voltooi daar het aanmelden en keer daarna terug naar ZBox.
+ms_code_asking = Een aanmeldcode wordt bij Microsoft opgevraagd...
+ms_code_waiting = Open op elk apparaat {address} en voer de code {code} in. ZBox wacht hier tot u klaar bent met aanmelden.
+ms_failed = Het aanmelden is niet voltooid. {reason}
+ms_code_copied = Code gekopieerd.
+offline_inbox_only = Alleen het Postvak IN en Archieven worden bewaard voor offline gebruik. Ga online om {folder} te openen.
+block_sender_rule_name = {sender} blokkeren
+title_block_sender = Deze afzender blokkeren
+title_unblock_sender = Deze afzender deblokkeren
+set_clear_inbox_cache = Berichtcache wissen als een bericht het Postvak IN verlaat
+set_clear_inbox_cache_note = Indien aan worden de offline kopie en de opgeslagen inhoud van een bericht verwijderd zodra het een Postvak IN verlaat, ook als het ergens anders werd verwijderd of verplaatst, zoals op uw telefoon, zodat het nooit opduikt waar het niet meer is. Alleen het Postvak IN bewaart deze bestanden; elke andere map wordt altijd van de server gelezen.
+empty_trash_all_confirm = Alle berichten in de prullenbak van alle accounts definitief verwijderen?\n\nDit kan niet ongedaan worden gemaakt.
+
+[errors]
+language_restart_failed = ZBox kon zichzelf niet opnieuw starten:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Kon geen e-mailprogramma openen voor {address}.
+
+wizard_test_failed = Verbinding mislukt:\n\n{error}
+
+contacts_import_unreadable = Kon dat bestand niet lezen.\n\n{error}
+contacts_export_unwritable = Kon dat bestand niet schrijven.\n\n{error}
+
+attach_unreadable = Kon bijlage {path} niet lezen:\n{error}
+send_failed = Kon bericht niet verzenden.\n\n{error}
+draft_attach_unreadable = Kon bijlage {path} niet lezen:\n{error}\n\nConcept niet opgeslagen.
+draft_save_failed = Kon concept niet opslaan.\n\n{error}
+
+clipboard_unavailable = Het klembord kon niet worden geopend.
+open_link_failed = Kon uw browser niet openen voor:\n{url}
+
+master_password_mismatch = De twee vakken voor het nieuwe hoofdwachtwoord komen niet overeen.
+master_password_required = Voer een hoofdwachtwoord in, of druk op Annuleren.
+master_password_not_set = Het hoofdwachtwoord kon niet worden ingesteld: {error}
+master_password_not_here = Het hoofdwachtwoord kan hier niet worden gewijzigd.
+
+attachment_save_failed = Kon bijlage niet opslaan.\n\n{error}
+attachments_save_failed = Kon bijlagen niet opslaan.\n\n{error}
+print_failed = Kon het bericht niet afdrukken. Controleer of er een printer is ingesteld.
+print_preview_failed = Kon afdrukvoorbeeld niet openen. Controleer of er een printer is ingesteld.
+
+related_search_failed = Kon niet naar verwante berichten zoeken.\n\n{error}
+search_failed = Zoeken mislukt.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox kon de configuratiemap niet vinden, dus ontgrendelmethoden kunnen hier niet worden beheerd.
+shortcut_no_folder = ZBox kon de eigen map niet bepalen, dus er kan hier geen snelkoppeling worden gemaakt.
+shortcut_failed_settings = De snelkoppeling op het bureaublad kon niet worden gemaakt:\n\n{error}
+
+unlock_method_failed = {what} werkte niet.\n\n{error}
+unlock_check_failed = Het hoofdwachtwoord kon niet worden gecontroleerd.\n\n{error}
+unlock_password_wrong = Dat hoofdwachtwoord is niet juist.
+unlock_add_failed = {what} kon niet worden toegevoegd.\n\n{error}
+unlock_passkey_setup_failed = De toegangssleutel kon niet worden ingesteld op deze computer, dus er is niets gewijzigd.\n\n{error}
+unlock_method_test_failed = Die methode werkte niet.\n\n{error}
+
+account_list_unreadable = ZBox kon uw accountlijst niet openen.\n\n{error}\n\nEr zijn geen accounts geladen en het bestand is niet gewijzigd, dus er is niets verloren. Accounts toevoegen, bewerken en verwijderen wordt geweigerd totdat de lijst kan worden gelezen.
+account_list_no_accounts = ZBox kon uw accountlijst in deze sessie niet openen ({error}), dus er zijn geen accounts om te selecteren. Er is niets verloren en niets gewijzigd. Sluit ZBox, start het opnieuw en voer uw hoofdwachtwoord in wanneer daarom wordt gevraagd.
+open_message_failed = Kon bericht niet openen.\n\n{error}
+filters_list_failed = Kon berichten in {folder} niet weergeven.\n\n{error}
+filters_move_failed = Kon gefilterde berichten niet verplaatsen.\n\n{error}
+cache_clear_failed = Kon de cache niet wissen.\n\n{error}
+folder_create_failed = Kon map niet aanmaken.\n\n{error}
+folder_rename_failed = Kon map niet hernoemen.\n\n{error}
+folder_delete_failed = Kon map niet verwijderen.\n\n{error}
+folder_subscribe_failed = Kon niet abonneren op map.\n\n{error}
+folder_unsubscribe_failed = Kon abonnement op map niet opzeggen.\n\n{error}
+saved_open_failed = Kon het bestand niet openen.\n\n{error}
+saved_parse_failed = Kon dit bestand niet verwerken als e-mailbericht.\n\n{error}
+save_file_failed = Kon het bestand niet opslaan.\n\n{error}
+save_fetch_failed = Kon het op te slaan bericht niet ophalen.\n\n{error}
+empty_trash_failed = Kon Prullenbak niet leegmaken.\n\n{error}
+empty_junk_failed = Kon Ongewenst niet leegmaken.\n\n{error}
+export_write_failed = Kon het exportbestand niet schrijven.\n\n{error}
+import_read_failed = Kon dit bestand niet lezen als ZBox-export.\n\n{error}
+import_not_export = Dit bestand lijkt geen ZBox-export te zijn.\n\n{error}
+search_open_failed = Kon dit bericht niet openen.
+related_load_failed = Kon dit bericht niet laden.\n\n{error}
+reply_load_failed = Kon het te beantwoorden bericht niet laden.\n\n{error}
+forward_load_failed = Kon het door te sturen bericht niet laden.\n\n{error}
+action_failed = Kon deze actie niet voltooien.\n\n{error}
+undo_failed = Kon {label} niet ongedaan maken.\n\n{error}
+copy_failed = Kon bericht niet kopiëren.\n\n{error}
+delete_failed = Kon bericht niet verwijderen.\n\n{error}
+archive_failed = Kon bericht niet archiveren.\n\n{error}
+master_password_not_changed = Het hoofdwachtwoord kon niet worden gewijzigd: {error}
+shortcut_failed_startup = De snelkoppeling op het bureaublad kon niet worden gemaakt:\n\n{error}\n\nZBox gaat verder met starten. U kunt het later opnieuw proberen via Instellingen.
+account_locked_action = ZBox kan niet %s. De accountlijst kon in deze sessie niet worden geopend (%s), en er is niets gewijzigd. Sluit ZBox, start het opnieuw en voer uw hoofdwachtwoord in als daarom wordt gevraagd.
+send_tls_mismatch = Kon het bericht niet verzenden. De uitgaande server antwoordde zonder versleuteling, dus de uitgaande versleuteling past niet bij de poort. Gebruik in Extra, Account- en identiteitsinstellingen STARTTLS voor poort 587, of SSL/TLS voor poort 465, en verzend dan opnieuw.\n\n{error}
+mark_folder_read_failed = Kon de map niet als gelezen markeren.\n\n{error}
+update_failed = De update kon niet worden gedownload, dus er is niets gewijzigd.\n\n{error}
+update_rolled_back = De update kon niet starten, dus de vorige versie is teruggezet.
+attachment_open_failed = Kan de bijlage niet openen.\n\n{error}
+headers_failed = Kan de kopregels van het bericht niet laden.\n\n{error}
+wizard_ms_sign_in_first = Meld u aan met Microsoft voordat u verdergaat. Gebruik een van de twee aanmeldknoppen op deze pagina.
+wizard_provider_unsupported = ZBox kan zich niet aanmelden bij deze provider. De opmerking op deze pagina zegt waarom. Ga terug en gebruik een ander e-mailadres, of annuleer.
+acct_ms_sign_in_first = Meld u aan met Microsoft voordat u opslaat, of kies Wachtwoord als aanmeldmethode.
+ms_sign_in_again = {account} moet zich opnieuw aanmelden bij Microsoft. Open Account- en identiteitsinstellingen en meld u daar aan.
+empty_trash_all_failed = Kon de prullenbak niet legen voor: {accounts}
+
+[help]

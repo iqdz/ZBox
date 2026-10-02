@@ -1,0 +1,16 @@
+ZBox
+Di Harith Alhamdani
+
+ZBox è un client di posta portatile, reattivo, sicuro e completamente accessibile. Gratuito per uso personale e leggero sulle risorse di sistema. È stato creato per offrire agli utenti ciechi e ipovedenti un’alternativa reale e ricca di funzioni alle opzioni pesanti e lente di solito disponibili. Dietro le quinte, ZBox si appoggia al solido client di posta Himalaya CLI.
+
+Privacy e sicurezza
+ZBox include un blocco di tracciamento e pubblicità (attivo per impostazione predefinita), oltre a regole facoltative contro la posta indesiderata e a un controllo dei collegamenti di phishing. Per una portabilità sicura usa la protezione con password principale: se la cartella dell’app viene copiata su un altro computer senza questa password, l’accesso agli account collegati è bloccato. Se si prevede di spostare ZBox su un nuovo computer, impostare prima qui una password principale. Supporta anche le passkey di Windows Hello (impronta digitale, PIN o riconoscimento del volto) e le moderne chiavi di sicurezza hardware.
+
+Un’esperienza familiare
+Per rendere il passaggio da altri client di posta il più semplice possibile, ZBox offre scorciatoie da tastiera pratiche e flessibili. Spesso più scorciatoie eseguono la stessa azione; ad esempio, sia Alt+S sia Ctrl+Invio inviano un messaggio. L’elenco completo si trova in Aiuto, Scorciatoie da tastiera.
+
+Configurazione degli account
+Gli account Outlook.com, Hotmail, Live e Microsoft 365 accedono con il tuo account Microsoft, dal browser o con un codice. L'accesso nativo con Google verrà aggiunto in un aggiornamento futuro. Per ora puoi collegare il tuo account Gmail generando una password per le app invece di usare la tua password abituale (vedi il pulsante qui sotto per le istruzioni).
+
+Licenze e ringraziamenti
+Premere Visualizza licenza qui sotto per leggere la licenza di ZBox e vedere i componenti di terze parti che lo rendono possibile. Tra questi: Himalaya, gli elenchi di blocco StevenBlack hosts ed EasyPrivacy, l’elenco Phishing.Database e (in una versione compilata) Python, wxPython, imapclient, pywin32, keyring e accessible_output2 con le sue librerie client per le utilità per la lettura dello schermo.

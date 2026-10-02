@@ -1,0 +1,103 @@
+Umum
+F6: Pindahkan fokus bergiliran antarpanel
+Ctrl+Tab: Tab berikutnya
+Ctrl+Shift+Tab: Tab sebelumnya
+Ctrl+W atau Ctrl+F4: Tutup tab saat ini
+Escape: Ciutkan utas yang dibentangkan jika daftar pesan mendapat fokus dan ada yang dibentangkan; jika tidak, tutup tab saat ini (pesan, pesan tersimpan, atau tulisan yang belum terkirim -- bertanya dulu jika ada perubahan yang belum disimpan)
+Tombol aplikasi atau Shift+F10: Buka menu konteks pada item daftar atau pohon yang mendapat fokus
+F1: Pintasan Papan Ketik, halaman ini
+Ctrl+Shift+Q: Keluar -- selalu benar-benar menutup ZBox, bahkan saat "Tutup ke baki sistem" aktif di Pengaturan (tombol Tutup jendela, Alt+F4, dan Ctrl+W pada tab Surat menyembunyikan ke baki alih-alih keluar saat pengaturan itu aktif; item Keluar milik ikon baki juga selalu benar-benar menutup)
+Ctrl+Shift+Delete: Bersihkan Cache Pesan Luring -- hanya salinan lokal ZBox, tidak ada apa pun di server mana pun (juga berupa tombol di Alat > Konfigurasi Pembersihan Cache)
+
+Surat
+Ctrl+N: Pesan Baru
+Ctrl+Shift+N: Akun Email Baru
+F5: Ambil Surat Baru untuk akun saat ini
+Shift+F5: Ambil Surat Baru untuk semua akun
+Ctrl+Shift+J: Lompat ke Daftar Pesan Kotak Masuk
+Ctrl+Y: Ke Daftar Folder
+Enter pada akun atau folder yang tertutup di daftar folder: membukanya, seperti panah kanan
+Ctrl+Shift+B: Buku Alamat
+Ctrl+Shift+F: Cari Pesan
+Ctrl+Shift+T: Tampilkan Pesan Terkait
+
+Daftar pesan
+Hapus, Shift+Delete, Arsipkan, Tandai/Hapus Tanda, Tandai sebagai Junk/Bukan Junk, Pindahkan Ke dan Salin Ke semuanya berlaku untuk setiap pesan dalam utas saat dipakai pada baris utas yang DICIUTKAN -- bentangkan utas terlebih dahulu (panah Kanan atau Enter/Spasi) untuk bertindak pada satu pesan di dalamnya
+Ctrl+A: Pilih semua pesan
+Ctrl+Shift+L: Muat Lebih Banyak Pesan
+Delete: Pindahkan pesan ke Tong Sampah
+Shift+Delete: Hapus pesan secara permanen
+Ctrl+Z: Urungkan Hapus, Arsipkan, Tandai sebagai Junk, atau Tandai sebagai Bukan Junk terakhir
+S: Tandai/hapus tanda pesan yang dipilih
+A: Arsipkan pesan yang dipilih
+J: Tandai pesan yang dipilih sebagai junk
+Shift+J: Tandai pesan yang dipilih sebagai bukan junk
+W: Pantau Utas -- aktifkan/nonaktifkan pemantauan utas tempat pilihan berada (juga di menu Pesan dan klik kanan)
+K: Abaikan Utas -- aktifkan/nonaktifkan pengabaian utas itu (juga di menu Pesan dan klik kanan)
+M: Pindahkan pesan yang dipilih -- membuka menu Pindahkan ke berisi folder
+Shift+M: Pindahkan pesan yang dipilih dengan mengetik sebagian nama folder
+C: Salin pesan yang dipilih -- membuka menu Salin ke berisi folder
+S, A, J, W, dan K di atas aktif secara bawaan dan dapat dimatikan di Pengaturan (jika tidak, tombol ini lebih diutamakan daripada navigasi huruf pertama milik daftar pesan)
+M, Shift+M, dan C di atas mengikuti pengaturan yang sama
+Enter atau Spasi pada utas yang diciutkan: membuka pesan belum dibaca terbaru dalam utas itu (pesan terbaru jika seluruh utas sudah dibaca) sebagai satu pesan, dalam satu tab -- lalu Ctrl+Shift+Page Down dan Ctrl+Shift+Page Up menelusuri sisa utas tanpa pernah membuka pesan kedua. Pada pesan biasa, membukanya seperti biasa
+Panah kanan pada utas yang diciutkan: menampilkan pesan-pesannya sebagai daftar, tanpa membuka satu pun -- buka satu per satu dari sana dengan Enter atau Spasi masing-masing
+Ctrl+Shift+O: Buka Pesan dalam Percakapan -- seluruh utas dalam satu tab, sebagai daftar pesannya dengan isi pesan yang dipilih di bawahnya. Gunakan tombol panah di daftar untuk membacanya satu per satu; Enter pada sebuah baris membuka pesan itu di tab penuhnya sendiri. Nama dan tombol sama dengan perintah milik Thunderbird
+Panah kiri: ciutkan utas tempat pilihan saat ini berada
+*: Bentangkan Semua Utas (juga Tampilan > Utas); \: Ciutkan Semua Utas (juga Tampilan > Utas)
+Tampilan > Utas > Semua / Utas yang Dipantau / Utas yang Diabaikan menyaring utas yang ditampilkan -- beralih kembali ke Semua selalu mengembalikan setiap pesan; tidak ada yang pernah dihapus dari folder karenanya
+
+Pesan yang terbuka
+Alt+A: Arsipkan pesan ini -- hanya saat isinya (Teks atau HTML) benar-benar mendapat fokus papan ketik; di tempat lain Alt+A tetap bermakna membuka menu Akun
+Ctrl+R: Balas
+Ctrl+Shift+R: Balas Semua
+Ctrl+L: Teruskan
+Ctrl+Delete atau Ctrl+D: Pindahkan pesan ini ke Tong Sampah. Delete saja sering diambil oleh pembaca layar saat pesan HTML memiliki fokus; Shift+Delete menghapus secara permanen
+Ctrl+Shift+Page Down: Pesan berikutnya dalam utas ini; Ctrl+Shift+Page Up: sebelumnya. Menggantikan tab saat ini alih-alih membuka yang lain, jadi hanya satu pesan yang pernah terbuka. Pada pesan terakhir (atau pertama, saat naik) ZBox memberitahukannya dan bertanya; menekan tombol yang sama lagi menutup pesan dan mengakhiri utas, kembali ke daftar pesan. (Ctrl+Page Up/Down tidak diubah -- keduanya berpindah tab)
+Ctrl+B: Beralih tampilan pesan (Teks/HTML)
+Ctrl+P: Cetak
+Ctrl+Shift+P: Pratinjau Cetak
+Ctrl+S: Simpan Pesan Sebagai
+Ctrl+U: Umumkan nama dan alamat pengirim
+Ctrl+Shift+U: Umumkan pengirim dan salin alamatnya
+Ctrl+Shift+I: Tampilkan konten jarak jauh di pesan ini
+Ctrl+Shift+=: Perbesar ukuran huruf pesan
+Ctrl+Shift+-: Perkecil ukuran huruf pesan
+Ctrl+Shift+0: Kembalikan ukuran huruf pesan
+
+Menulis pesan
+Ctrl+Enter atau Alt+S: Kirim
+Ctrl+S: Simpan Konsep
+Ctrl+Shift+A: Lampirkan Berkas
+Ctrl+Shift+S: Sisipkan tanda tangan akun di Dari
+Ctrl+Shift+V: Tempel sebagai kutipan
+Ctrl+Shift+W: Jumlah kata
+Ctrl+Shift+P: Pratinjau pesan seperti yang akan dikirim
+Escape, Ctrl+W atau Ctrl+F4: Tutup tab tulis -- bertanya dulu jika ada yang belum disimpan, menawarkan Simpan Konsep, Buang, atau Lanjutkan Mengedit
+Setiap perintah di bawah juga ada di menu Tulis, yang dibuka Alt+C bahkan saat fokus berada di dalam isi pesan
+
+Format, saat menulis
+Ctrl+B: Tebal
+Ctrl+I: Miring
+Ctrl+Shift+X: Coret
+Ctrl+Shift+8: Daftar berpoin
+Ctrl+Shift+7: Daftar bernomor
+Ctrl+Shift+9: Kutipan
+Ctrl+Shift+6: Kode
+Ctrl+Alt+1: Judul
+Ctrl+K: Sisipkan tautan
+Ctrl+Shift+K: Sebutkan format yang berlaku di posisi kursor
+Ctrl+Shift+M: Buka menu Format di mana pun fokus berada, termasuk isi pesan
+
+Ejaan, saat menulis
+Ctrl+Shift+F7: Periksa ejaan
+Ctrl+Shift+F9: Ke salah eja berikutnya
+Ctrl+Shift+F8: Tambahkan kata tempat pemeriksaan berhenti ke kamus
+
+Tombol yang sama di dua tempat
+Ctrl+S: Simpan Konsep saat menulis, Simpan Pesan Sebagai di pesan yang terbuka
+Ctrl+B: Tebal saat menulis, beralih antara Teks dan HTML di pesan yang terbuka
+Ctrl+Shift+P: Pratinjau saat menulis, Pratinjau Cetak di pesan yang terbuka
+Alt+A: Arsipkan, tetapi hanya saat isi pesan mendapat fokus papan ketik; di tempat lain membuka menu Akun
+
+Diagnostik
+Ctrl+Shift+F12: Diagnostik Tombol Pintas -- menulis satu baris ke log debug untuk setiap kombinasi yang ditekan di tab tulis, sehingga dapat dibuktikan ke mana sebuah tombol benar-benar sampai. Nonaktif secara bawaan, dan tombol yang sama mematikannya lagi; statusnya diucapkan dalam kedua keadaan

@@ -1,0 +1,103 @@
+Général
+F6 : Passer d'un volet à l'autre
+Ctrl+Tab : Onglet suivant
+Ctrl+Shift+Tab : Onglet précédent
+Ctrl+W ou Ctrl+F4 : Fermer l'onglet actif
+Escape : Réduit un fil développé si la liste des messages a le focus et qu'un fil est développé ; sinon ferme l'onglet actif (message, message enregistré ou message en cours de rédaction -- demande d'abord s'il y a des modifications non enregistrées)
+Touche Applications ou Shift+F10 : Ouvrir le menu contextuel de l'élément de liste ou d'arborescence qui a le focus
+F1 : Raccourcis clavier, cette page
+Ctrl+Shift+Q : Quitter -- quitte toujours réellement ZBox, même quand « Fermer dans la zone de notification » est activé dans les Paramètres (le bouton Fermer de la fenêtre, Alt+F4 et Ctrl+W sur l'onglet Courrier masquent dans la zone de notification au lieu de quitter quand ce paramètre est activé ; l'élément Quitter de l'icône de notification quitte aussi toujours réellement)
+Ctrl+Shift+Delete : Vider le cache des messages hors connexion -- uniquement les copies locales de ZBox, rien sur aucun serveur (aussi un bouton dans Outils > Configuration du nettoyage du cache)
+
+Courrier
+Ctrl+N : Nouveau message
+Ctrl+Shift+N : Nouveau compte de messagerie
+F5 : Relever le courrier du compte actuel
+Shift+F5 : Relever le courrier de tous les comptes
+Ctrl+Shift+J : Aller à la liste des messages du courrier entrant
+Ctrl+Y : Aller à la liste des dossiers
+Enter sur un compte ou un dossier replié dans la liste des dossiers : le déplie, comme la flèche droite
+Ctrl+Shift+B : Carnet d'adresses
+Ctrl+Shift+F : Rechercher des messages
+Ctrl+Shift+T : Afficher les messages liés
+
+La liste des messages
+Delete, Shift+Delete, Archiver, Marquer/Démarquer, Marquer comme indésirable/non indésirable, Déplacer vers et Copier vers s'appliquent tous à chaque message d'un fil lorsqu'ils sont utilisés sur une ligne de fil RÉDUITE -- développez d'abord le fil (flèche droite ou Enter/Space) pour agir sur un seul de ses messages
+Ctrl+A : Sélectionner tous les messages
+Ctrl+Shift+L : Charger plus de messages
+Delete : Mettre le ou les messages à la corbeille
+Shift+Delete : Supprimer définitivement le ou les messages
+Ctrl+Z : Annuler la dernière suppression, archivage, marquage comme indésirable ou non indésirable
+S : Marquer/démarquer le ou les messages sélectionnés
+A : Archiver le ou les messages sélectionnés
+J : Marquer le ou les messages sélectionnés comme indésirables
+Shift+J : Marquer le ou les messages sélectionnés comme non indésirables
+W : Surveiller le fil -- active ou désactive la surveillance du fil auquel appartient la sélection (aussi dans le menu Message et le clic droit)
+K : Ignorer le fil -- active ou désactive l'ignorance de ce fil (aussi dans le menu Message et le clic droit)
+M : Déplacer le ou les messages sélectionnés -- ouvre le menu Déplacer vers avec les dossiers
+Shift+M : Déplacer le ou les messages sélectionnés en tapant une partie du nom d'un dossier
+C : Copier le ou les messages sélectionnés -- ouvre le menu Copier vers avec les dossiers
+S, A, J, W et K ci-dessus sont activés par défaut et peuvent être désactivés dans les Paramètres (sinon ils ont priorité sur la navigation par première lettre de la liste des messages)
+M, Shift+M et C ci-dessus suivent le même réglage
+Enter ou Space sur un fil réduit : ouvre le message non lu le plus récent de ce fil (le plus récent si tout le fil est lu) comme message unique, dans un seul onglet -- ensuite Ctrl+Shift+Page Down et Ctrl+Shift+Page Up parcourent le reste du fil sans jamais ouvrir un deuxième message. Sur un message ordinaire, l'ouvre normalement
+Flèche droite sur un fil réduit : affiche ses messages sous forme de liste, sans en ouvrir aucun -- ouvrez-les ensuite un par un avec leur propre Enter ou Space
+Ctrl+Shift+O : Ouvrir le message dans la discussion -- toute la discussion dans un onglet, sous forme de liste de ses messages avec le corps du message sélectionné en dessous. Parcourez la liste avec les flèches pour les lire un par un ; Enter sur une ligne ouvre ce message seul dans son propre onglet complet. Même nom et même touche que la commande de Thunderbird
+Flèche gauche : réduire le fil dans lequel se trouve la sélection
+* : Développer tous les fils (aussi Affichage > Fils) ; \ : Réduire tous les fils (aussi Affichage > Fils)
+Affichage > Fils > Tous / Fils surveillés / Fils ignorés filtre les fils affichés -- revenir à Tous fait toujours réapparaître tous les messages ; rien n'est jamais retiré du dossier par ce filtre
+
+Un message ouvert
+Alt+A : Archiver ce message -- seulement quand son corps (Texte ou HTML) a réellement le focus clavier ; ailleurs, Alt+A garde son sens habituel d'ouverture du menu Comptes
+Ctrl+R : Répondre
+Ctrl+Shift+R : Répondre à tous
+Ctrl+L : Transférer
+Ctrl+Delete ou Ctrl+D : Mettre ce message à la corbeille. Delete seul est souvent pris par le lecteur d'écran quand un message HTML a le focus ; Shift+Delete supprime définitivement
+Ctrl+Shift+Page Down : Message suivant de ce fil ; Ctrl+Shift+Page Up : précédent. Remplace l'onglet actif au lieu d'en ouvrir un autre, de sorte qu'un seul message est ouvert à la fois. Au dernier message (ou au premier en remontant), il l'annonce et demande ; appuyer de nouveau sur la même touche ferme le message et termine le fil, en revenant à la liste des messages. (Ctrl+Page Up/Down ne sont pas touchés -- ils changent d'onglet)
+Ctrl+B : Basculer l'affichage du message (Texte/HTML)
+Ctrl+P : Imprimer
+Ctrl+Shift+P : Aperçu avant impression
+Ctrl+S : Enregistrer le message sous
+Ctrl+U : Annoncer le nom et l'adresse de l'expéditeur
+Ctrl+Shift+U : Annoncer l'expéditeur et copier l'adresse
+Ctrl+Shift+I : Afficher le contenu distant de ce message
+Ctrl+Shift+= : Agrandir la police du message
+Ctrl+Shift+- : Réduire la police du message
+Ctrl+Shift+0 : Rétablir la taille de police du message
+
+Rédaction d'un message
+Ctrl+Enter ou Alt+S : Envoyer
+Ctrl+S : Enregistrer le brouillon
+Ctrl+Shift+A : Joindre un fichier
+Ctrl+Shift+S : Insérer la signature du compte indiqué dans De
+Ctrl+Shift+V : Coller comme citation
+Ctrl+Shift+W : Nombre de mots
+Ctrl+Shift+P : Aperçu du message tel qu'il sera envoyé
+Escape, Ctrl+W ou Ctrl+F4 : Fermer l'onglet de rédaction -- demande d'abord si quelque chose n'est pas enregistré, en proposant Enregistrer le brouillon, Abandonner ou Continuer la modification
+Toutes les commandes ci-dessous se trouvent aussi dans le menu Rédaction, qu'Alt+C ouvre même quand le focus est dans le corps du message
+
+Mise en forme, pendant la rédaction
+Ctrl+B : Gras
+Ctrl+I : Italique
+Ctrl+Shift+X : Barré
+Ctrl+Shift+8 : Liste à puces
+Ctrl+Shift+7 : Liste numérotée
+Ctrl+Shift+9 : Citation
+Ctrl+Shift+6 : Code
+Ctrl+Alt+1 : Titre
+Ctrl+K : Insérer un lien
+Ctrl+Shift+K : Annoncer la mise en forme active à la position du curseur
+Ctrl+Shift+M : Ouvrir le menu Format où que soit le focus, corps du message compris
+
+Orthographe, pendant la rédaction
+Ctrl+Shift+F7 : Vérifier l'orthographe
+Ctrl+Shift+F9 : Aller à la faute suivante
+Ctrl+Shift+F8 : Ajouter au dictionnaire le mot sur lequel la vérification s'est arrêtée
+
+La même touche à deux endroits
+Ctrl+S : Enregistrer le brouillon pendant la rédaction, Enregistrer le message sous dans un message ouvert
+Ctrl+B : Gras pendant la rédaction, basculer entre Texte et HTML dans un message ouvert
+Ctrl+Shift+P : Aperçu pendant la rédaction, Aperçu avant impression dans un message ouvert
+Alt+A : Archiver, mais seulement quand le corps d'un message a le focus clavier ; partout ailleurs, ouvre le menu Comptes
+
+Diagnostic
+Ctrl+Shift+F12 : Diagnostic des raccourcis -- écrit une ligne dans le journal de débogage pour chaque combinaison pressée dans un onglet de rédaction, afin de prouver ce qu'une touche a réellement atteint. Désactivé par défaut, et la même touche le désactive à nouveau ; l'état est annoncé dans les deux cas

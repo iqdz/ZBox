@@ -1,0 +1,103 @@
+Geral
+F6: Alternar o foco entre os painéis
+Ctrl+Tab: Separador seguinte
+Ctrl+Shift+Tab: Separador anterior
+Ctrl+W ou Ctrl+F4: Fechar o separador atual
+Escape: Colapsa um tópico expandido se a lista de mensagens tiver o foco e houver um expandido; caso contrário, fecha o separador atual (mensagem, mensagem guardada ou uma mensagem por enviar em composição -- pergunta primeiro se houver alterações por guardar)
+Tecla de aplicações ou Shift+F10: Abrir o menu de contexto do item de lista ou árvore com o foco
+F1: Atalhos de teclado, esta página
+Ctrl+Shift+Q: Sair -- encerra sempre o ZBox de facto, mesmo quando "Fechar para a área de notificação" está ativado nas Definições (o botão Fechar da janela, Alt+F4 e Ctrl+W no separador Correio ocultam na área de notificação em vez de sair quando essa definição está ativada; o item Sair do ícone da área de notificação também sai sempre de facto)
+Ctrl+Shift+Delete: Limpar a cache de mensagens offline -- apenas as cópias locais do ZBox, nada em nenhum servidor (também um botão em Ferramentas > Configuração da limpeza da cache)
+
+Correio
+Ctrl+N: Nova mensagem
+Ctrl+Shift+N: Nova conta de correio
+F5: Obter correio novo da conta atual
+Shift+F5: Obter correio novo de todas as contas
+Ctrl+Shift+J: Ir para a Lista de Mensagens da Caixa de Entrada
+Ctrl+Y: Ir para a lista de pastas
+Enter numa conta ou pasta fechada na lista de pastas: expande-a, como a seta para a direita
+Ctrl+Shift+B: Livro de endereços
+Ctrl+Shift+F: Pesquisar mensagens
+Ctrl+Shift+T: Mostrar mensagens relacionadas
+
+A lista de mensagens
+Delete, Shift+Delete, Arquivar, Marcar/Desmarcar estrela, Marcar como lixo eletrónico/não é lixo eletrónico, Mover para e Copiar para aplicam-se a todas as mensagens de um tópico quando usados numa linha de tópico COLAPSADA -- expanda primeiro o tópico (seta para a direita ou Enter/Space) para agir sobre uma só mensagem dele
+Ctrl+A: Selecionar todas as mensagens
+Ctrl+Shift+L: Carregar mais mensagens
+Delete: Mover as mensagens para o lixo
+Shift+Delete: Eliminar as mensagens definitivamente
+Ctrl+Z: Anular a última eliminação, arquivo, marcação como não solicitado ou como solicitado
+S: Marcar/desmarcar estrela nas mensagens selecionadas
+A: Arquivar as mensagens selecionadas
+J: Marcar as mensagens selecionadas como não solicitadas
+Shift+J: Marcar as mensagens selecionadas como solicitadas
+W: Monitorizar tópico -- alterna se o tópico da seleção é monitorizado (também no menu Mensagem e com o botão direito)
+K: Ignorar tópico -- alterna se esse tópico é ignorado (também no menu Mensagem e com o botão direito)
+M: Mover as mensagens selecionadas -- abre o menu Mover para com as pastas
+Shift+M: Mover as mensagens selecionadas escrevendo parte do nome de uma pasta
+C: Copiar as mensagens selecionadas -- abre o menu Copiar para com as pastas
+S, A, J, W e K acima estão ativados por predefinição e podem ser desativados nas Definições (caso contrário têm prioridade sobre a navegação pela primeira letra da própria lista de mensagens)
+M, Shift+M e C acima seguem a mesma definição
+Enter ou Space num tópico colapsado: abre a mensagem não lida mais recente desse tópico (a mais recente, se todo o tópico estiver lido) como mensagem única, num separador -- depois Ctrl+Shift+Page Down e Ctrl+Shift+Page Up percorrem o resto do tópico sem nunca abrir uma segunda mensagem. Numa mensagem normal, abre-a como habitualmente
+Seta para a direita num tópico colapsado: mostra as suas mensagens em lista, sem abrir nenhuma -- abra-as uma de cada vez a partir daí com o próprio Enter ou Space
+Ctrl+Shift+O: Abrir mensagem na conversa -- o tópico inteiro num separador, como lista das suas mensagens com o corpo da selecionada por baixo. Percorra a lista com as setas para as ler uma a uma; Enter numa linha abre essa mensagem sozinha no seu próprio separador completo. Mesmo nome e tecla do comando do Thunderbird
+Seta para a esquerda: colapsar o tópico onde a seleção se encontra
+*: Expandir todos os tópicos (também Ver > Tópicos); \: Colapsar todos os tópicos (também Ver > Tópicos)
+Ver > Tópicos > Todos / Tópicos monitorizados / Tópicos ignorados filtra os tópicos mostrados -- voltar a Todos traz sempre todas as mensagens de volta; nada é retirado da pasta por isto
+
+Uma mensagem aberta
+Alt+A: Arquivar esta mensagem -- só enquanto o corpo (Texto ou HTML) tiver realmente o foco do teclado; noutros sítios Alt+A mantém a função normal de abrir o menu Contas
+Ctrl+R: Responder
+Ctrl+Shift+R: Responder a todos
+Ctrl+L: Reencaminhar
+Ctrl+Delete ou Ctrl+D: Mover esta mensagem para o Lixo. O Delete sozinho é muitas vezes captado pelo leitor de ecrã quando uma mensagem HTML tem o foco; Shift+Delete elimina definitivamente
+Ctrl+Shift+Page Down: Mensagem seguinte deste tópico; Ctrl+Shift+Page Up: anterior. Substitui o separador atual em vez de abrir outro, pelo que só há uma mensagem aberta. Na última mensagem (ou na primeira, a subir) avisa e pergunta; premir a mesma tecla outra vez fecha a mensagem e termina o tópico, regressando à lista de mensagens. (Ctrl+Page Up/Down não são alterados -- mudam de separador)
+Ctrl+B: Alternar a vista da mensagem (Texto/HTML)
+Ctrl+P: Imprimir
+Ctrl+Shift+P: Pré-visualizar impressão
+Ctrl+S: Guardar mensagem como
+Ctrl+U: Anunciar o nome e o endereço do remetente
+Ctrl+Shift+U: Anunciar o remetente e copiar o endereço
+Ctrl+Shift+I: Mostrar o conteúdo remoto desta mensagem
+Ctrl+Shift+=: Aumentar o tipo de letra da mensagem
+Ctrl+Shift+-: Diminuir o tipo de letra da mensagem
+Ctrl+Shift+0: Repor o tamanho do tipo de letra da mensagem
+
+Escrever uma mensagem
+Ctrl+Enter ou Alt+S: Enviar
+Ctrl+S: Guardar rascunho
+Ctrl+Shift+A: Anexar ficheiro
+Ctrl+Shift+S: Inserir a assinatura da conta indicada em De
+Ctrl+Shift+V: Colar como citação
+Ctrl+Shift+W: Contagem de palavras
+Ctrl+Shift+P: Pré-visualizar a mensagem tal como será enviada
+Escape, Ctrl+W ou Ctrl+F4: Fechar o separador de composição -- pergunta primeiro se houver algo por guardar, oferecendo Guardar rascunho, Descartar ou Continuar a editar
+Todos os comandos abaixo estão também no menu Escrever, que Alt+C abre mesmo com o foco dentro do corpo da mensagem
+
+Formatação, ao escrever
+Ctrl+B: Negrito
+Ctrl+I: Itálico
+Ctrl+Shift+X: Rasurado
+Ctrl+Shift+8: Lista com marcas
+Ctrl+Shift+7: Lista numerada
+Ctrl+Shift+9: Citação
+Ctrl+Shift+6: Código
+Ctrl+Alt+1: Título
+Ctrl+K: Inserir ligação
+Ctrl+Shift+K: Dizer que formatação está ativa na posição do cursor
+Ctrl+Shift+M: Abrir o menu Formatar onde quer que esteja o foco, incluindo o corpo da mensagem
+
+Ortografia, ao escrever
+Ctrl+Shift+F7: Verificar a ortografia
+Ctrl+Shift+F9: Ir para o erro ortográfico seguinte
+Ctrl+Shift+F8: Adicionar ao dicionário a palavra onde a verificação parou
+
+A mesma tecla em dois sítios
+Ctrl+S: Guardar rascunho ao escrever, Guardar mensagem como numa mensagem aberta
+Ctrl+B: Negrito ao escrever, alternar entre Texto e HTML numa mensagem aberta
+Ctrl+Shift+P: Pré-visualizar ao escrever, Pré-visualizar impressão numa mensagem aberta
+Alt+A: Arquivar, mas só enquanto o corpo de uma mensagem tiver o foco do teclado; em qualquer outro sítio abre o menu Contas
+
+Diagnóstico
+Ctrl+Shift+F12: Diagnóstico de atalhos -- escreve uma linha no registo de depuração por cada combinação premida num separador de composição, para provar o que uma tecla realmente alcançou. Desativado por predefinição, e a mesma tecla desativa-o de novo; o estado é anunciado em ambos os casos

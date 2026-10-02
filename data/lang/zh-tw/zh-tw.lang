@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = 繁體中文
+code = zh-tw
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = 郵件已傳送。
+draft_saved = 草稿已儲存。
+signature_inserted = 已插入簽名。
+signature_none = 此帳號沒有簽名。
+signature_saved = 簽名已儲存。
+signature_not_saved = 簽名未儲存。
+pasted_as_quotation = 已貼上為引文。
+clipboard_empty = 剪貼簿中沒有任何內容。
+word_count = {words} 個字，{characters} 個字元。
+report_copied = 報告已複製。
+compose_tab_needed = 此命令需要撰寫分頁。
+attach_file_instead = 拖放的檔案不會放入郵件內文。請使用「附加檔案」來傳送檔案。
+
+# Formatting in the message body
+formatting_here = 此處的格式：{formatting}。
+no_formatting_here = 此處沒有格式，為純文字。
+
+# Spelling
+nothing_to_check = 沒有可檢查的內容。
+no_misspellings = 沒有拼字錯誤。
+spelling_dictionary_unavailable = 無法使用拼字字典。
+next_misspelling_first = 請先使用「下一個拼字錯誤」。
+word_added = 已將 {word} 加入字典。
+word_not_added = 無法加入 {word}。
+corrections_applied_one = 已套用 1 項更正。
+corrections_applied_many = 已套用 {count} 項更正。
+corrections_applied_partly = 已套用 {total} 項更正中的 {applied} 項。其餘被拒絕，請查看記錄檔。
+occurrences_replaced_one = 已取代 1 處。
+occurrences_replaced_many = 已取代 {count} 處。
+
+# Reading mail
+message_did_not_open = 郵件未開啟。伺服器沒有回應。請按 Enter 再試一次。
+thread_open = 此討論串中有 {messages}。再按一次即可收起。
+no_thread_selected = 未選擇討論串。
+thread_watched = 已關注討論串。
+thread_not_watched = 已不再關注討論串。
+thread_ignored = 已忽略討論串。
+thread_not_ignored = 已不再忽略討論串。
+none_found = 找不到任何項目。
+refreshing_this_folder = 正在重新整理此信件匣。
+refreshing_all_accounts = 正在重新整理所有帳號。
+message_view_html = 郵件檢視：HTML（已轉譯）。
+message_view_text = 郵件檢視：文字。
+html_view_still_loading = 郵件仍在載入中。按 Escape 可關閉。
+message_still_opening = 正在開啟郵件。伺服器回應較慢。
+remote_content_blocked = 已封鎖遠端內容。
+remote_content_unblocked = 已解除封鎖遠端內容。
+remote_content_already_showing = 此郵件中已顯示遠端內容。
+archived = 已備存。
+copied_to_folder = 已複製到 {to_folder}。
+deleted_one = 郵件已永久刪除。
+deleted_many = 已永久刪除 {count} 封郵件。
+trashed_one = 郵件已移至垃圾桶。
+trashed_many = 已將 {count} 封郵件移至垃圾桶。
+
+# Accounts and new mail
+no_account_yet = 目前還沒有可跳至的帳號。
+inbox_landed = {name} 收件匣。
+account_enabled = 已啟用 {name}。
+auto_check_paused = 已暫停 {account} 的自動檢查。
+auto_check_resumed = 已開啟 {account} 的自動檢查。
+account_disabled = 已停用 {name}。
+new_mail_one = {name} 有 1 封新郵件。
+new_mail_many = {name} 有 {count} 封新郵件。
+refresh_all_done_one = 已重新整理 1 個帳號。
+refresh_all_done_many = 已重新整理 {count} 個帳號。
+refresh_all_done_failures = 已重新整理 {count} 個帳號，{failed} 個無法重新整理。
+refresh_all_done_failures_one = 已重新整理 {count} 個帳號，{failed} 個無法重新整理。
+
+# The sender of the message in view
+sender_address_copied = {sender}。已複製地址。
+sender_no_address = {sender}。沒有可複製的地址。
+clipboard_not_opened = {sender}。無法開啟剪貼簿。
+
+# The signature editor
+signature_page_formatted = 已格式化。這就是將儲存的內容。
+signature_page_html = HTML 原始碼。這就是將儲存的內容。
+signature_page_html_still_wins = 已格式化。將儲存的仍是 HTML 原始碼。
+
+# Background work
+phishing_list_updating = 正在背景更新釣魚網站清單。
+cache_cleared = 已清除 {files} 個快取檔案，共 {size} MB。
+hotkeys_diagnostic_on = 快速鍵診斷已開啟，已勾選
+hotkeys_diagnostic_off = 快速鍵診斷已關閉，未勾選
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = 備存
+action_delete = 刪除
+action_delete_permanently = 永久刪除
+action_mark_as_junk = 標示為垃圾信
+action_mark_as_not_junk = 標示為非垃圾信
+action_move_to = 移至
+action_copy_to = 複製到
+action_mark_message = 標記郵件
+action_undo = 復原
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = 已復原{action}。
+undo_done_many = 已復原 {count} 封郵件的{action}。
+junk_marked_one = 已標示為垃圾信。
+junk_marked_many = 已將 {count} 封郵件標示為垃圾信。
+junk_no_new_sender = 未封鎖新的寄件者：已封鎖、為郵寄清單，或是您自己的地址。
+not_junk_marked_one = 已標示為非垃圾信。
+not_junk_marked_many = 已將 {count} 封郵件標示為非垃圾信。
+moved_to_one = 已移至 {to_folder}。
+moved_to_many = 已將 {count} 封郵件移至 {to_folder}。
+copied_to_many = 已將 {count} 封郵件複製到 {to_folder}。
+marked_read = 已標示為已讀。
+marked_unread = 已標示為未讀。
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = 已在 {total} 封中的第 {completed} 封後取消。{succeeded} 封成功，{failed} 封失敗。
+bulk_failed_one = {done} 1 封郵件中有 {failed} 封失敗。
+bulk_failed_many = {done} {total} 封郵件中有 {failed} 封失敗。
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = 粗體
+format_word_italic = 斜體
+format_word_strike = 刪除線
+format_word_href = 連結
+format_word_bullet = 項目符號清單
+format_word_number = 編號清單
+format_word_quote = 引文
+format_word_code = 程式碼
+format_word_heading1 = 標題
+format_applied = 已套用{formatting}。
+format_inserted = 已插入{formatting}。
+format_not_available = 純文字郵件內文中無法使用{formatting}。
+format_on = {formatting}開啟
+format_off = {formatting}關閉
+link_applied = 已套用連結。
+link_applied_to_selection = 已將連結套用到選取範圍。
+plain_body_formatting = 純文字郵件內文會以標籤顯示其格式。
+
+# Reaching either end of a thread
+thread_edge_first = 此討論串的第一封郵件。再按一次即可關閉。
+thread_edge_last = 此討論串的最後一封郵件。再按一次即可關閉。
+jump_unified_inbox = 整合收件匣。
+remote_none = 此郵件中沒有遠端內容。
+sender_none = 此郵件沒有寄件者。
+sender_name_no_address = %s，沒有地址
+signature_not_switched = 簽名未變更。按 Ctrl+Shift+S 可插入此帳號的簽名。
+signature_removed_no_signature = 已移除簽名。此帳號沒有簽名。
+signature_switched = 已將簽名變更為此帳號的簽名。
+spell_not_replaced = 無法取代此字。
+spell_replaced_with = 已取代為 {word}。
+folder_marked_read = 已將 {count} 封郵件標示為已讀。
+folder_no_unread = 沒有未讀郵件。
+threads_all_collapsed = 已收起所有討論串。
+threads_all_expanded = 已展開所有討論串。
+upd_percent = 百分之 {percent}
+upd_download_done = 下載完成。正在準備更新...
+upd_updated_to = ZBox 已更新至 {version}。
+header_copied = 已複製。
+headers_copied = 已複製全部郵件資訊。
+identity_copies_updated = 已為此身分更新副本與密件副本。
+signature_switched_identity = 簽名已換成此身分的簽名。
+signature_removed_identity = 簽名已移除。此身分沒有簽名。
+signature_not_switched_identity = 簽名未更換。按 Ctrl+Shift+S 插入此身分的簽名。
+signature_none_identity = 此身分沒有簽名。
+move_keys_no_selection = 請先選擇一封郵件。
+move_keys_no_folders = 暫時還沒有可選的資料夾。請稍後再試。
+block_sender_done_one = 已封鎖 {sender}。其新郵件將移至垃圾桶。
+block_sender_done_many = 已封鎖 {count} 個寄件者。他們的新郵件將移至垃圾桶。
+block_sender_already = {sender} 已被封鎖。
+block_sender_own = 未封鎖：這是您自己的地址之一。
+block_sender_list_unknown = 未封鎖：此郵件來自郵寄清單，未說明寄件者。封鎖清單地址會封鎖其所有成員。
+block_sender_moved = 已封鎖寄件者。已將 {count} 封郵件移至垃圾桶。
+block_senders_moved = 已封鎖 {senders} 個寄件者。已將 {count} 封郵件移至垃圾桶。
+unblock_sender_moved = 已解除封鎖寄件者。已將 {count} 封郵件移至收件匣。
+unblock_senders_moved = 已解除封鎖 {senders} 個寄件者。已將 {count} 封郵件移至收件匣。
+unblock_sender_done = 已解除封鎖 {sender}。
+unblock_sender_not_blocked = {sender} 未被封鎖。
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = 在上方輸入內容，然後按 Enter 或選擇「搜尋」。
+search_no_account = 請先新增帳號。
+search_no_term = 請輸入要搜尋的內容。
+search_running = 搜尋中...
+search_none = 找不到符合「{term}」的項目。
+search_found_one = 有 1 項符合「{term}」。
+search_found_many = 有 {count} 項符合「{term}」。
+search_failed = 搜尋失敗。
+
+# The related messages tab
+related_running = 搜尋中...
+related_none = 找不到相關郵件。
+related_found_one = 找到 1 封相關郵件。
+related_found_many = 找到 {count} 封相關郵件。
+related_failed = 無法搜尋相關郵件。
+
+# Writing and sending
+sending_via = 正在透過 {sender} 傳送...
+send_failed = 傳送失敗。詳細資訊請查看記錄檔。
+draft_autosaved = 草稿已自動儲存。
+draft_autosave_failed = 草稿自動儲存失敗。詳細資訊請查看記錄檔。
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = 來自 {sender} 的郵件現在會載入遠端內容。
+downloading_attachment = 正在下載 {filename}...
+downloading_attachments_one = 正在下載 1 個附件...
+downloading_attachments_many = 正在下載 {count} 個附件...
+saved_to = 已儲存到 {folder}
+attachment_download_failed = 附件下載失敗。
+
+# Getting mail onto the screen
+loading_folder = 正在載入 {account} 的 {folder}...
+messages_in_folder = {folder} 中有 {count} 封郵件。
+messages_in_folder_cached = {folder} 中有 {count} 封郵件（上次同步的副本，正在更新...）
+no_offline_copy = {folder} 還沒有離線副本。
+refresh_failed_cached = 無法重新整理 {folder}：顯示上次同步的副本。
+no_such_folder = 此帳號沒有 {folder} 信件匣。
+load_failed = 無法載入郵件。詳細資訊請查看記錄檔。
+no_more_to_load = 此信件匣中沒有更多郵件可載入。
+loading_more = 正在載入 {folder} 中的更多郵件...
+more_loaded = 已再載入 {count} 封郵件。
+no_more_messages = 此信件匣中沒有更多郵件。
+load_more_failed = 無法載入更多郵件：{error}
+loading_unified = 正在載入整合的 {folder}...
+messages_in_unified = 整合的 {folder} 中，各帳號共有 {count} 封郵件。
+messages_in_unified_cached = 整合的 {folder} 中有 {count} 封郵件（上次同步的副本，正在更新...）
+auto_purge_done = 自動清除已從垃圾桶／垃圾郵件移除 {count} 封舊郵件。
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = 就緒。
+opening_message = 正在開啟郵件...
+opening_message_already = 正在開啟郵件...（已在載入中）
+could_not_open_message = 無法開啟郵件。
+could_not_open_that_message = 無法開啟該郵件。
+could_not_load_message = 無法載入此郵件。
+message_still_loading = 該郵件仍在載入中。
+folder_still_loading = 此信件匣仍在載入中，請稍後再試。
+not_in_thread = 此郵件不屬於任何討論串。
+no_longer_in_thread = 此郵件已不在該討論串中。
+thread_position = 此討論串中第 {position} 封，共 {total} 封。
+thread_finished_one = 已讀完此討論串（1 封郵件）。
+thread_finished_many = 已讀完此討論串（{count} 封郵件）。
+select_message_first = 請先選擇一封郵件。
+conversation_failed = 無法開啟此對話。
+select_message_for_related = 請先選擇要查看相關郵件的郵件。
+looking_for_related = 正在尋找相關郵件...
+no_threading_headers = 此郵件沒有可供搜尋的 Message-ID 或討論串標頭。
+reply_one_at_a_time = 回覆一次只能處理一封郵件。請只選擇一封郵件。
+select_message_to_reply = 請先選擇要回覆的郵件。
+preparing_reply = 正在準備回覆...
+reply_load_failed = 無法載入要回覆的原始郵件。
+select_message_to_forward = 請先選擇要轉寄的郵件。
+preparing_forward = 正在準備要轉寄的郵件...
+forward_load_failed = 無法載入要轉寄的郵件。
+compose_tab_needed_hint = 此命令需要撰寫分頁。按 Ctrl+N 可撰寫郵件。
+open_message_first_view = 請先開啟郵件，然後按 Ctrl+B 切換其檢視方式。
+open_message_first_remote = 請先開啟郵件，然後按 Ctrl+Shift+I 載入其遠端內容。
+
+# Acting on messages
+copying_message = 正在複製郵件...
+copy_failed = 複製失敗。
+delete_failed = 刪除失敗。
+already_in_archive = 已在備存中。
+archiving = 正在備存...
+archive_failed = 備存失敗。
+action_failed = {action}失敗。
+nothing_to_undo = 沒有可復原的動作。
+undo_failed = 無法復原{action}。
+
+# Views and folders
+folder_pane_all = 信件匣窗格：所有信件匣。
+folder_pane_unified = 信件匣窗格：整合信件匣。
+sorted_ascending = 依{field}排序，由小到大。
+sorted_descending = 依{field}排序，由大到小。
+unified_folders_updated = 已更新整合信件匣。
+zoom_reset = 郵件字型大小已重設為預設值。
+folder_creating = 正在建立信件匣「{folder}」...
+folder_created = 已建立信件匣「{folder}」。
+folder_create_failed = 無法建立信件匣。
+folder_renaming = 正在將「{folder}」重新命名為「{new_name}」...
+folder_renamed = 信件匣已重新命名為「{new_name}」。
+folder_rename_failed = 無法重新命名信件匣。
+folder_deleting = 正在刪除信件匣「{folder}」...
+folder_deleted = 已刪除信件匣。
+folder_delete_failed = 無法刪除信件匣。
+folder_subscribing = 正在訂閱「{folder}」...
+folder_unsubscribing = 正在取消訂閱「{folder}」...
+folder_subscribed = 已訂閱。
+folder_unsubscribed = 已取消訂閱。
+folder_subscribe_failed = 無法訂閱信件匣。
+folder_unsubscribe_failed = 無法取消訂閱信件匣。
+
+# Accounts
+account_not_added = 未新增帳號。
+account_added = 已新增帳號：{account}
+account_settings_not_saved = 帳號設定未儲存。
+account_updated = 已更新帳號：{account}
+account_not_removed = 未移除帳號。
+account_removed = 已移除帳號。
+account_removed_with_files = 已移除帳號。已刪除 {count} 個本機檔案。
+default_account_failed = 無法設定預設帳號。
+default_account_set = {account} 現在是預設帳號。
+auto_check_not_saved = 自動檢查設定未儲存。
+mute_not_saved = 靜音設定未儲存。
+account_muted = 已將 {account} 設為靜音。
+account_unmuted = 已取消 {account} 的靜音。
+export_done = 已將 {count} 個帳號和設定匯出到 {path}。
+import_done = 已從 {path} 匯入 {count} 個帳號。
+
+# Filters, cache and the background lists
+filters_not_saved = 篩選器未儲存。
+filters_saved = 已為 {account} 儲存篩選器。
+filters_checking = 正在以您的篩選器檢查 {folder}...
+filters_none_matched = 立即執行：{folder} 中沒有郵件符合任何已啟用的規則。
+filters_run_failed = 無法執行篩選器。
+filters_moving = 正在移動 {count} 封篩選出的郵件...
+filters_move_failures = 篩選器：有 {count} 封郵件無法移動。
+filters_moved = 篩選器已從 {folder} 移動 {count} 封郵件。
+filters_move_failed = 無法移動篩選出的郵件。
+cache_not_cleared = 未清除快取。
+auto_cache_cleanup = 自動快取清理：早於 {age} 的郵件。
+phishing_update_failed = 無法更新釣魚網站清單：{error}
+blocklist_update_failed = 無法更新封鎖清單：{error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = 請先開啟郵件，然後使用「另存新檔」。
+saving_message = 正在儲存郵件...
+save_file_failed = 無法儲存檔案。
+save_fetch_failed = 無法取得要儲存的郵件。
+open_message_first_print = 請先開啟郵件，然後使用「列印」。
+open_message_first_preview = 請先開啟郵件，然後使用「預覽列印」。
+refreshing_accounts = 正在重新整理 {count} 個帳號...
+emptying_trash = 正在清空 {account} 的垃圾桶...
+trash_already_empty = 垃圾桶原本就是空的。
+trash_emptied = 已清空垃圾桶：清除了 {count} 封郵件。
+empty_trash_failed = 無法清空垃圾桶。
+emptying_junk = 正在清空 {account} 的垃圾郵件...
+junk_already_empty = 垃圾郵件原本就是空的。
+junk_emptied = 已清空垃圾郵件：清除了 {count} 封郵件。
+junk_emptied_prefix = 已清空垃圾郵件：
+junk_part_purged = 清除了 {count} 封
+junk_part_in_trash = {count} 封已移至垃圾桶但未確認已移除，請檢查垃圾桶
+junk_part_not_moved = {count} 封未移至垃圾桶，仍在垃圾郵件中
+empty_junk_failed = 無法清空垃圾郵件。
+back_online = 已恢復連線。
+offline_sync_running = 正在同步 {account} 以供離線使用...
+offline_sync_failed = 離線同步失敗：{error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = 請先選擇或開啟郵件。
+select_or_open_message_ctrl_u = 請先選擇或開啟郵件，然後按 Ctrl+U。
+no_sender_address = 此郵件沒有可新增的寄件者地址。
+contact_added = 已將 {contact} 加入通訊錄。
+contact_already_there = {contact} 已在通訊錄中。
+privacy_saved = 隱私權設定已儲存。重新開啟郵件即可套用。
+message_font_size = 郵件字型大小：{size} 點。
+
+# Deleting and moving several messages
+deleting_one = 正在永久刪除郵件
+deleting_many = 正在永久刪除 {count} 封郵件
+trashing_one = 正在將郵件移至垃圾桶
+trashing_many = 正在將 {count} 封郵件移至垃圾桶
+undo_partly_restored = 已復原{action}，但有 {count} 封無法還原，可能在那之後又被移動、刪除或再次過期。
+moves_report = {action}：已移動 {total} 封郵件中的 {moved} 封。
+moves_report_failed = 未移動，仍在原信件匣中：{count} 封。
+
+tray_tooltip_one = ZBox — 1 封未讀郵件
+tray_tooltip_many = ZBox — {count} 封未讀郵件
+account_unreachable = 無法連線到 {account}。其自動檢查暫停 {minutes} 分鐘。
+bulk_copy_failed = 無法複製郵件。
+bulk_copy_failed_status = 複製失敗。
+bulk_loading_archive = 郵件仍在載入中，請稍後再試一次備存。
+bulk_loading_delete = 郵件仍在載入中，請稍後再試一次刪除。
+bulk_loading_flag = 郵件仍在載入中，請稍後再試一次加星號。
+bulk_loading_generic = 郵件仍在載入中，請稍後再試。
+bulk_none = 未選擇郵件。
+bulk_none_archive = 未選擇要備存的郵件。
+bulk_none_delete = 未選擇要刪除的郵件。
+bulk_none_junk = 未選擇要標示為垃圾信的郵件。
+bulk_none_not_junk = 未選擇要標示為非垃圾信的郵件。
+delete_refused_still = 伺服器拒絕刪除；郵件仍在 {folder} 中。
+delete_refused_trash = 郵件在垃圾桶中，但伺服器拒絕永久刪除。
+delete_resume_failed = 先前刪除作業中有 {count} 封郵件無法刪除。
+done_perm_delete_one = 郵件已永久刪除。
+done_trash_one = 郵件已移至垃圾桶。
+filters_applied = 已將篩選器套用到 {folder} 中的 {count} 封郵件。
+filters_failed = 無法執行篩選器。
+filters_running = 正在對 {folder} 執行篩選器
+flag_failed = 無法更新星號。
+flag_updated = 已更新星號。
+folder_verb_subscribing = 正在訂閱
+folder_verb_unsubscribing = 正在取消訂閱
+mark_read_failed = 無法將郵件標示為已讀。
+mark_unread_failed = 無法將郵件標示為未讀。
+notify_new_mail_body = {name} 有 {count} 封新{noun}。
+notify_new_mail_title = 新郵件
+notify_noun_many = 郵件
+notify_noun_one = 郵件
+report_done = {count} 封郵件中已{verb} {done} 封。
+report_verb_deleted = 刪除
+report_verb_permanent = 永久刪除
+running_copy_many = 正在複製 {count} 封郵件
+running_copy_one = 正在複製郵件
+running_junk_many = 正在將 {count} 封郵件標示為垃圾信
+running_junk_one = 正在標示為垃圾信
+running_move_many = 正在移動 {count} 封郵件
+running_move_one = 正在移動
+running_not_junk_many = 正在將 {count} 封郵件標示為非垃圾信
+running_not_junk_one = 正在標示為非垃圾信
+running_perm_delete_one = 正在永久刪除郵件...
+running_read_many = 正在將 {count} 封郵件標示為已讀
+running_read_one = 正在標示為已讀
+running_trash_one = 正在將郵件移至垃圾桶...
+running_unread_many = 正在將 {count} 封郵件標示為未讀
+running_unread_one = 正在標示為未讀
+settings_saved_no_startup = 設定已儲存。無法更新 Windows 開機啟動項目。
+settings_saved_status = 設定已儲存。
+spam_blocked_sender = 已封鎖的寄件者
+spam_possible_phishing = 可能是釣魚郵件
+undo_running_many = 正在復原{action}（{count} 封郵件）
+undo_running_one = 正在復原{action}
+mark_folder_read_failed = 無法將信件匣標示為已讀。
+marking_folder_read = 正在將信件匣標示為已讀...
+upd_ready_at_exit = 已下載一個更新。將在您結束 ZBox 時安裝。
+upd_checking = 正在檢查更新...
+upd_up_to_date = ZBox 已是最新版本。
+upd_available_source = ZBox {version} 已發布。此副本從原始碼執行，請使用 git 更新。
+upd_check_failed = 無法檢查更新：{error}
+opening_attachment = 正在開啟 {filename}...
+loading_headers = 正在載入郵件資訊...
+offline_inbox_only = 只有收件匣和備存會保留供離線使用。
+offline_sync_done_inbox = 已同步收件匣和備存中的 {count} 封郵件供離線使用。
+working_offline = 離線模式：顯示收件匣／寄件備份／草稿上次同步的副本。
+emptying_trash_all = 正在清空所有帳號的垃圾桶...
+trash_emptied_all = 已清空 {accounts} 個帳號的垃圾桶：永久刪除了 {count} 封郵件。
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &檔案
+bar_edit = &編輯
+bar_view = &檢視
+bar_message = &郵件
+bar_compose = &撰寫
+bar_tools = &工具
+bar_help = &說明
+
+# File
+file_new = 新增
+file_new_message = 郵件
+file_new_account = 電子郵件帳號...
+file_open_saved_message = 開啟已儲存的郵件...
+file_close = 關閉
+file_save_message_as = 另存郵件為...
+file_get_new_for = 下載新郵件
+file_get_new_all = 所有帳號
+file_get_new_current = 目前帳號
+file_offline = 離線
+file_work_offline = 離線模式
+file_sync_now = 立即同步
+file_print = 列印...
+file_print_preview = 預覽列印...
+file_exit = 結束
+
+# Edit
+edit_undo = 復原
+edit_select_all = 全選
+edit_find_messages = 搜尋郵件...
+
+# Message
+message_reply = 回覆
+message_reply_all = 回覆全部
+message_forward = 轉寄
+message_archive = 備存
+message_delete = 刪除
+message_delete_permanently = 永久刪除
+message_mark = 標記
+mark_read = 已讀
+mark_unread = 未讀
+mark_flagged = 已標星號
+mark_junk = 垃圾郵件
+mark_not_junk = 非垃圾郵件
+message_watch_thread = 關注討論串
+message_ignore_thread = 忽略討論串
+message_open_conversation = 在對話中開啟郵件
+message_show_related = 顯示相關郵件
+message_add_sender_to_address_book = 將寄件者加入通訊錄
+message_announce_sender = 朗讀寄件者
+message_announce_copy_sender = 朗讀寄件者並複製地址
+
+# View
+view_folders = 信件匣
+folders_all = 全部
+folders_unified = 整合
+folders_jump_inbox = 跳至收件匣郵件清單
+folders_configure_unified = 設定整合信件匣...
+view_sort_by = 排序方式
+sort_date = 日期
+sort_subject = 主旨
+sort_from = 從
+sort_descending = 由大到小（最新的在前）
+sort_ascending = 由小到大（最舊的在前）
+view_threads = 討論串
+threads_all = 全部
+threads_watched = 關注的討論串
+threads_ignored = 忽略的討論串
+threads_expand_all = 展開所有討論串
+threads_collapse_all = 收起所有討論串
+view_load_more = 載入更多郵件
+view_toggle_message_view = 在文字與 HTML 檢視之間切換
+view_show_remote_content = 顯示此郵件中的遠端內容
+view_message_zoom = 郵件縮放
+zoom_increase = 放大郵件字型
+zoom_decrease = 縮小郵件字型
+zoom_reset = 重設郵件字型大小
+
+# Compose
+compose_send = &傳送
+compose_save_draft = &儲存草稿
+compose_attach = &附加檔案...
+compose_fmt_bold = &粗體
+compose_fmt_italic = &斜體
+compose_fmt_strike = &刪除線
+compose_fmt_bullet = &項目符號清單
+compose_fmt_number = &編號清單
+compose_fmt_quote = &引文
+compose_fmt_code = &程式碼
+compose_fmt_heading1 = &標題
+compose_link = &插入連結...
+compose_formatting = &此處的格式
+compose_spellcheck = &檢查拼字...
+compose_spellcheck_next = &下一個拼字錯誤
+compose_spellcheck_add = &將字加入字典
+compose_insert_signature = &插入簽名
+compose_paste_quotation = &貼上為引文
+compose_word_count = &字數統計
+compose_preview = &預覽...
+compose_diagnostics = &撰寫視窗診斷...
+compose_edit_signature = &編輯簽名...
+compose_hotkeys_diagnostic = &快速鍵診斷
+
+# Tools
+tools_account_settings = 帳號與身分設定...
+tools_mute_account = 將帳號設為靜音
+tools_pause_auto_check = 暫停自動檢查
+tools_disable_account = 停用帳號
+tools_remove_account = 移除帳號...
+tools_address_book = 通訊錄...
+tools_message_filters = 郵件篩選器...
+tools_import = 匯入帳號和設定...
+tools_export = 匯出帳號和設定...
+tools_cache_cleanup = 快取清理設定...
+tools_privacy = 隱私權與內容封鎖...
+tools_settings = 設定...
+
+# Help
+help_shortcuts = 鍵盤快速鍵...
+help_about = 關於 ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = 新增帳號...
+tree_account_settings = 帳號與身分設定...
+tree_mute_account = 將帳號設為靜音
+tree_pause_auto_check = 暫停自動檢查
+tree_enable_account = 啟用帳號
+tree_disable_account = 停用帳號
+tree_set_default_account = 設為預設帳號
+tree_remove_account = 移除帳號...
+tree_refresh = 重新整理
+tree_new_folder = 新增信件匣...
+tree_empty_trash = 清空垃圾桶
+tree_empty_junk = 清空垃圾郵件匣
+tree_rename_folder = 重新命名信件匣...
+tree_delete_folder = 刪除信件匣...
+tree_subscribe_folder = 訂閱信件匣
+tree_unsubscribe_folder = 取消訂閱信件匣
+
+# The message list menu, opened the same two ways
+list_select_all = 全選
+list_reply = 回覆
+list_reply_all = 回覆全部
+list_forward = 轉寄
+list_mark = 標記
+list_archive = 備存
+list_delete_to_trash = 刪除（移至垃圾桶）
+list_delete_permanently = 永久刪除
+list_move_to = 移至
+list_copy_to = 複製到
+
+# The notification area icon
+tray_open = &開啟 ZBox
+tray_unread_one = 1 封未讀郵件
+tray_unread_many = {count} 封未讀郵件
+tray_no_unread = 沒有未讀郵件
+tray_settings = &設定...
+tray_quit = &結束 ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &粗體
+format_italic = &斜體
+format_strike = &刪除線
+format_bullet = &項目符號清單
+format_number = &編號清單
+format_quote = &引文
+format_code = &程式碼
+format_heading1 = &標題
+format_insert_link = &插入連結...
+format_formatting_here = &此處的格式
+tools_enable_account = 啟用帳號
+edit_undo_action = 復原{action}
+tree_mark_folder_read = 將信件匣標示為已讀
+help_updates = 更新
+help_check_updates = 立即檢查更新...
+help_update_settings = 更新設定...
+help_releases_page = 開啟發布頁面
+message_attachments = 附件
+message_no_attachments = 沒有附件
+message_save_all_attachments = 儲存所有附件
+view_full_headers = 全部郵件資訊
+folders_go_to_tree = 移至資料夾清單
+list_block_sender = 封鎖此寄件者
+list_unblock_sender = 解除封鎖此寄件者
+
+[dialogs]
+set_theme_restart_confirm = 要重新啟動 ZBox 以套用佈景主題變更嗎？
+set_ui_theme_label = &介面佈景主題：
+set_ui_theme_note = 選單、清單、對話方塊和文字郵件檢視的色彩。「跟隨系統」使用 Windows 本身的淺色或深色應用程式模式。「午夜藍」、「暖色深色」和「柔和對比」是色彩較柔和的深色佈景主題。HTML 郵件保留其自身色彩，且 Windows 高對比永遠優先。下次啟動 ZBox 時生效。
+set_theme_system = 跟隨系統
+set_theme_light = 淺色
+set_theme_dark = 深色
+set_theme_midnight = 午夜藍
+set_theme_warm = 暖色深色
+set_theme_soft = 柔和對比
+set_language_restart_confirm = 要重新啟動 ZBox 以套用語言變更嗎？
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = 聯絡 Harith
+title_identity = 身份
+title_show_password = 顯示密碼
+title_missing_information = 缺少資訊
+title_unsupported_provider = 不支援的服務供應商
+title_test_connection = 測試連線
+title_new_contact = 新增聯絡人
+title_edit_contact = 編輯聯絡人
+title_delete_contact = 刪除聯絡人
+title_import_contacts = 匯入聯絡人
+title_export_contacts = 匯出聯絡人
+title_rename_group = 重新命名群組
+title_delete_group = 刪除群組
+title_send = 傳送
+title_send_failed = 傳送失敗
+title_attach_file = 附加檔案
+title_save_draft = 儲存草稿
+title_documentation = ZBox 說明文件
+title_open_link = 開啟連結
+title_filter_rule = 篩選規則
+title_master_password = 主控密碼
+title_attachment_saved = 附件已儲存
+title_attachments_saved = 附件已儲存
+title_download_failed = 下載失敗
+title_print = 列印
+title_print_preview = 預覽列印
+title_related_messages = 相關郵件
+title_search = 搜尋
+title_unlock = 解鎖
+title_unlock_methods = 解鎖方式
+title_desktop_shortcut = 桌面捷徑
+title_spell_check = 拼字檢查
+title_plain_text_password = 發現純文字密碼
+title_startup_error = ZBox 啟動錯誤
+
+identity_email_required = 請輸入電子郵件地址。
+
+wizard_password_not_shown = 此系統上無法顯示密碼。密碼仍會正常輸入和儲存。
+wizard_email_required = 繼續之前請輸入有效的電子郵件地址。
+wizard_test_needs_server = 測試前請輸入登入電子郵件和收件伺服器。
+wizard_test_succeeded = 連線成功。收件匣中找到 {count} 封郵件。
+
+contact_email_required = 必須輸入電子郵件地址。
+contact_select_to_edit = 請選擇要編輯的聯絡人。
+contact_select_to_delete = 請選擇要刪除的聯絡人。
+contact_delete_confirm = 要從通訊錄中刪除 {label} 嗎？
+contacts_import_choose_file = 請選擇要匯入的 .vcf（vCard）或 .csv 檔案。
+contacts_imported = 已匯入 {count} 位聯絡人。
+contacts_import_empty = 在該檔案中找不到聯絡人。
+contacts_none_to_export = 沒有可匯出的聯絡人。
+contacts_exported = 已將 {count} 位聯絡人匯出到：\n{path}
+group_name_exists = 名為「{name}」的群組已存在。
+group_delete_confirm = 要刪除群組「{name}」嗎？其中的聯絡人不會被刪除。
+
+send_no_account = 傳送前請先新增帳號，或在「寄件者」中選擇一個帳號。
+send_no_recipient = 請在「收件者」中至少輸入一位收件者。
+draft_no_account = 儲存草稿前請先新增帳號，或在「寄件者」中選擇一個帳號。
+attached_file = 已附加：{name}\n\n傳送時將附加 {count} 個檔案。
+
+documentation_copied = 完整的 ZBox 說明文件已複製到剪貼簿。
+
+filter_rule_needs_name = 請為此規則命名。
+filter_rule_needs_condition = 請至少設定一個條件（從、收件者或主旨）。
+filter_rule_needs_action = 請至少選擇一個動作：標示為已讀、加上星號，或移至信件匣。
+
+master_password_set = 已設定主控密碼。請將其保存在安全的地方：ZBox 在每台新電腦上會詢問一次，遺失後無法復原。
+master_password_offer = 沒有主控密碼時，已儲存的帳號密碼只能在這台電腦和這個 Windows 帳號中讀取。將 ZBox 複製到其他地方後，每個帳號都必須重新登入。\n\n要現在設定嗎？
+
+attachment_saved = 附件已儲存到：\n{path}
+attachments_saved = {count} 個附件已儲存到：\n{path}
+
+shortcut_created_settings = 已建立捷徑：\n{path}\n\n它會從以下位置啟動 ZBox：\n{base}
+
+spellcheck_no_dictionary = 缺少拼字字典，因此這份 ZBox 無法使用拼字檢查。
+spellcheck_none_found = 找不到拼字錯誤。
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = 要在這台電腦上設定通行金鑰，並忘記從另一台電腦儲存的通行金鑰嗎？\n\nWindows 會要求您以 Hello 確認。留在另一台電腦上的舊通行金鑰在那裡不受影響，若您將此資料夾帶回該電腦仍可使用，但必須重新設定。
+unlock_replace_passkey_many = 要在這台電腦上設定通行金鑰，並忘記從其他電腦儲存的 {count} 個通行金鑰嗎？\n\nWindows 會要求您以 Hello 確認。留在另一台電腦上的舊通行金鑰在那裡不受影響，若您將此資料夾帶回該電腦仍可使用，但必須重新設定。
+unlock_method_works = 該方式可以使用。
+
+plain_text_password_found = data\config\himalaya.toml 中仍有舊版帳號設定留下的純文字密碼（auth.raw）。\n\n請移除該帳號後重新新增，或刪除 data\config\himalaya.toml，讓它改用安全的憑證儲存區重新產生。
+
+# main_frame's titles.
+title_account_list_unavailable = 無法使用帳號清單
+title_open_message = 開啟郵件
+title_run_filters = 執行篩選器
+title_clear_cache = 清除離線郵件快取
+title_remove_account = 移除帳號
+title_new_folder = 新增信件匣
+title_rename_folder = 重新命名信件匣
+title_delete_folder = 刪除信件匣
+title_subscribe = 訂閱
+title_unsubscribe = 取消訂閱
+title_open_saved_message = 開啟已儲存的郵件
+title_save_message_as = 另存郵件為
+title_empty_trash = 清空垃圾桶
+title_empty_junk = 清空垃圾郵件匣
+title_synchronize_offline = 同步以供離線使用
+title_export_accounts = 匯出帳號和設定
+title_import_accounts = 匯入帳號和設定
+title_show_related = 顯示相關郵件
+title_reply = 回覆
+title_forward = 轉寄
+title_undo = 復原
+title_delete_permanently = 永久刪除
+title_delete = 刪除
+title_copy_to = 複製到
+title_archive = 備存
+title_accounts_locked = 帳號已鎖定
+
+select_account_first = 請先在樹狀結構中選擇帳號。
+select_account_or_folder = 請先選擇帳號或信件匣。
+filters_left_behind = 有 {count} 封郵件符合篩選器，但仍在 {folder} 中。
+cache_clear_confirm = 要清除所有帳號的離線郵件快取嗎？\n\n這只會刪除 ZBox 的本機副本。任何郵件伺服器上的內容都不會被移除，郵件會在您需要時重新下載。
+account_remove_confirm = 要移除 {name}（{address}）嗎？\n\n伺服器上的郵件不會被刪除。\n下載到這台電腦的副本會被刪除。\n已儲存的密碼會被刪除。
+folder_delete_confirm = 要永久刪除 {address} 的信件匣「{folder}」及其中所有內容嗎？\n\n此動作無法復原。
+empty_trash_confirm = 要永久刪除 {address} 垃圾桶中的所有郵件嗎？\n\n此動作無法復原。
+empty_junk_confirm = 要永久刪除 {address} 垃圾郵件匣中的所有郵件嗎？\n\n此動作無法復原。
+sync_select_account = 請選擇要同步以供離線使用的帳號（不是整合信件匣）。
+accounts_imported = 已匯入 {count} 個帳號：\n\n{names}\n\n密碼永遠不會匯出，且加密的密碼儲存區僅適用於此 Windows 使用者帳號，因此每個匯入的帳號都必須透過「帳號 > 帳號與身分設定」輸入一次密碼才能連線。
+accounts_import_none = 在此檔案中找不到帳號。如果檔案中有設定，仍已匯入。
+delete_permanently_confirm_one = 要永久刪除此郵件嗎？這會略過垃圾桶，且無法復原。
+accounts_locked = 已儲存的帳號密碼是在另一台電腦上寫入的，因此無法在這裡讀取。\n\n每個帳號都需要重新登入其郵件伺服器。為避免下次再發生，請在帳號已可使用的那台電腦上，從「設定」的「應用程式與資料安全性」設定主控密碼。
+master_password_remove_confirm = 要移除主控密碼嗎？之後已儲存的帳號密碼只能在這台電腦和這個 Windows 帳號中讀取。之後若將 ZBox 複製到其他地方，每個帳號都必須重新登入。\n\n要現在移除嗎？
+shortcut_offer = 要在桌面放置 ZBox 捷徑嗎？\n\n它會啟動此 ZBox 資料夾：\n{path}\n\n捷徑會記錄確切的位置。如果之後移動 ZBox 資料夾，請開啟「設定」的「系統匣與視窗」，再次選擇「建立桌面捷徑」，使其指向新位置。
+shortcut_created = 已建立捷徑：\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = 顯示名稱
+form_email_address = 電子郵件地址
+form_your_name = 您的名字
+form_login_email = 登入電子郵件
+form_password = 密碼
+srv_imap_host = 收件（IMAP）伺服器
+srv_imap_port = 收件連接埠
+srv_imap_encryption = 收件加密
+srv_smtp_host = 寄件（SMTP）伺服器
+srv_smtp_port = 寄件連接埠
+srv_smtp_encryption = 寄件加密
+
+acct_login_email_label = 登入電子郵件（用於登入）
+acct_new_password_label = 新密碼（留空則保留目前密碼）
+acct_new_password_name = 新密碼
+acct_identity_email_label = 電子郵件地址（用於收發郵件）
+acct_identities_label = 其他身份（別名）
+acct_identities_name = 其他身份
+acct_add_identity = &新增身份...
+acct_edit_identity = &編輯身份...
+acct_remove_identity = &移除身份
+acct_signature = 簽名
+acct_edit_signature = &編輯簽名...
+acct_junk_folder = 垃圾郵件匣
+acct_account_status = 帳號狀態
+acct_disable_account = 停用此帳號
+acct_default_account = 預設帳號
+acct_set_default = 設為預設帳號
+acct_notifications = 新郵件通知
+acct_mute_notifications = 將此帳號的通知設為靜音
+acct_server_settings = 伺服器設定
+
+wiz_before_you_start = 開始之前
+wiz_notice_name = 重要通知
+wiz_google_instructions = &開啟 Google 應用程式密碼說明
+wiz_intro = 您的名字和電子郵件地址
+wiz_login_same = 登入電子郵件與上方的電子郵件地址相同
+wiz_show_password = &顯示密碼
+wiz_preset_applied = 已套用 {name} 的預設設定。
+wiz_summary_name = 帳號摘要
+wiz_review = 請檢查，然後按一下「完成」儲存此帳號。
+wiz_test_connection = &測試連線
+wiz_testing = 正在測試連線...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = （啟用除錯記錄，儲存到：data\logs）
+set_language_label = &介面語言：
+set_language_label_only_english = &介面語言：（僅有英文）
+set_headers_checkbox = &在開啟的郵件上方顯示郵件標頭
+set_zoom_label = 郵件字型與縮放：
+set_font_override = &覆寫預設的郵件字型大小
+set_font_size_name = 郵件字型大小（點）
+set_reading_font_name = 閱讀字型
+set_reading_font_label = 閱讀字型（留空則使用預設值）：
+set_view_label = 開啟郵件時的郵件內文檢視：
+set_view_text = 文字
+set_view_html = HTML（已轉譯）
+set_engine_label = HTML 轉譯引擎：
+set_engine_edge = Edge / WebView2（現代轉譯）
+set_engine_ie = 舊版 MSHTML（最佳螢幕閱讀器支援）
+set_runtime_label = WebView2 執行階段：
+set_runtime_auto = 自動 — 若有隨附的執行階段則使用（建議）
+set_runtime_fixed = 僅使用隨附的固定版本
+set_runtime_evergreen = 全系統執行階段（由 Windows 更新）
+set_sr_box = 螢幕閱讀器朗讀控制
+set_silence_label = HTML 螢幕閱讀器靜音保持：
+set_silence_name = HTML 螢幕閱讀器靜音保持（毫秒）
+set_focus_delay_label = WebView 協助工具焦點延遲：
+set_focus_delay_name = WebView 協助工具焦點延遲，等級 1 到 10
+set_announce_label = 朗讀保持：
+set_announce_name = 朗讀保持（毫秒）
+set_announce_actions = &朗讀郵件動作
+set_attachment_dir_label = 附件儲存資料夾：
+set_attachment_dir_name = 附件儲存資料夾
+set_browse = &瀏覽…
+set_autosave_label = 草稿自動儲存間隔：
+set_autosave_name = 草稿自動儲存間隔（秒）
+set_auto_purge_label = 自動清除舊的垃圾桶和垃圾郵件：
+set_auto_purge_name = 經過此天數後自動清除垃圾桶和垃圾郵件
+set_bare_keys = 在郵件清單中啟用單鍵快速鍵：S（標記星號）、A（封存）、J（標示為垃圾郵件）/Shift+J（標示為非垃圾郵件）、W（關注討論串）、K（忽略討論串）、M（移動到）/Shift+M（依資料夾名稱移動）和 C（複製到）
+set_sound_label = 音效與通知：
+set_sounds_enabled = &播放通知音效
+set_desktop_notifications = &顯示新郵件的桌面通知
+set_theme_label = 變更音效佈景主題：
+set_theme_label_only_default = 變更音效佈景主題：（僅有預設佈景主題）
+set_security_box = 應用程式與資料安全性
+set_lock_on_quit = &完全結束時鎖定 ZBox
+set_unlock_methods_button = &解鎖方式…
+set_master_password_button = &主控密碼…
+set_tray_label = 系統匣與視窗：
+set_minimize_to_tray = &最小化到系統匣
+set_close_to_tray = &關閉到系統匣
+set_stay_maximized = &讓 ZBox 永遠保持最大化
+set_run_at_startup = &Windows 啟動時執行 ZBox
+set_desktop_shortcut_button = &建立桌面捷徑
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = 發生問題時，除錯記錄有助於診斷。關閉後將停止寫入新項目，現有的記錄檔不會被刪除。下次啟動 ZBox 時生效。
+set_language_note = 下次啟動 ZBox 時生效。語言檔案是 ZBox 的 lang 資料夾（位於 sounds 資料夾旁）中的純文字檔。若要新增語言，請複製 en 資料夾，將複本及其中的 .lang 檔案重新命名為您的語言代碼，然後翻譯每個等號右邊的文字。尚未翻譯的內容會以英文朗讀而不會無聲，因此翻譯到一半的檔案也可以放心使用。
+set_headers_note = 從、收件者、副本、日期和主旨，在文字和 HTML 檢視中都會顯示在郵件內文上方。沒有它，就無法在郵件內得知寄件者，必須關閉分頁回到清單。焦點仍會落在郵件內文上；標頭區塊只需按一次 Shift+Tab 即可到達。下次開啟郵件時生效。
+set_zoom_note = 讓開啟的郵件本身的文字變大或變小，與 ZBox 其他部分以及 Windows 本身的顯示縮放無關。適用於文字和 HTML 檢視。「閱讀字型」可選擇強制郵件內文使用特定字型（例如 Consolas、OpenDyslexic）；留空則保留正常字型。「檢視」選單中的 Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 可直接放大、縮小或重設字型大小而不需開啟此對話方塊，並立即套用到所有開啟的郵件。在這裡所做的變更，按下「確定」後也會立即套用。
+set_view_note = HTML 是預設值。它會依郵件傳送時的樣子顯示，NVDA 和 JAWS 可以朗讀：HTML 頁面開啟時，ZBox 會讓瀏覽器本身的朗讀靜音，將閱讀游標放在郵件的第一行，並讓 ZBox 自己的快速鍵在頁面內繼續運作，包括按 F6 將焦點移出頁面。文字檢視則在一般的編輯控制項中，以未格式化的純文字顯示同一封郵件，沒有圖片、沒有版面配置，也不依賴已安裝的瀏覽器引擎。在開啟的郵件中按 Ctrl+B 可雙向切換。
+set_engine_note = Edge 可轉譯現代 CSS，但會在獨立的處理程序中執行頁面，而且只會透過 wxPython 無法存取的介面將內容交給螢幕閱讀器，因此郵件開啟時可能沒有任何可朗讀的內容。舊版 MSHTML 是 Outlook Express 和 Windows Mail 使用的引擎：它在同一處理程序中執行並發佈一般的文件樹狀結構，因此 NVDA 和 JAWS 可以像任何網頁一樣以瀏覽模式朗讀。下次開啟郵件時生效。
+set_runtime_note = 全系統執行階段由 Windows Update 維護，因此閱讀郵件的引擎可能在未通知的情況下變更，這就是為何在 ZBox 完全沒有變更的電腦上，原本正常的 HTML 郵件檢視也可能損壞。放在 deps 資料夾中的隨附複本會固定使用 ZBox 經過測試的確切版本。執行 tools\get_webview2.bat 即可安裝。如果沒有隨附的複本，ZBox 無論如何都會使用全系統執行階段，因此一定能夠啟動。下次啟動 ZBox 時生效。
+set_sr_intro = 郵件開啟時，ZBox 讓您的螢幕閱讀器說多少話，以及它自己的朗讀要顯示多久。
+set_silence_note = HTML 郵件開啟時，ZBox 可以按住模擬的 Ctrl 鍵最多 2 秒，讓螢幕閱讀器的瀏覽器朗讀靜音。郵件主旨已用作頁面標題，因此不會朗讀出 base64 網址，但閱讀器仍會在郵件開頭朗讀控制項和文件類型，所以此功能預設為開啟。將其調低到 0 即可關閉，若仍有多餘的朗讀，則可調高。
+set_focus_delay_note = HTML 郵件載入完成後，ZBox 會等待這段時間才實際將焦點移到郵件上。WebView2 回報頁面已載入，與 Windows 完成該頁面的協助工具樹狀結構並不是同一時刻；太早移動焦點會讓 NVDA/JAWS 朗讀一般的「網頁內容頁面」而不是郵件，或在開啟後一段時間內回報郵件無法使用。等級 1 為 100 毫秒，等級 10 為一整秒。若仍遇到此情況請調高；開啟變得穩定後可調低，讓開啟更快。
+set_announce_note = Ctrl+U 和 Ctrl+Shift+U 會在一個會自動關閉的小對話方塊中報告寄件者，因為只有在螢幕閱讀器開啟狀態列朗讀時，才會朗讀狀態列。這是該對話方塊保持開啟的時間。請依您的語音速度設定：太短會在句子中途關閉，失去意義。按任意鍵可提早關閉；方向鍵會讓它保持開啟，方便重新閱讀。0 表示等待按鍵，永遠不會自動關閉。
+set_attachment_dir_note = 郵件有多個附件時，「全部儲存」寫入附件的位置。如果不存在會自動建立。只有一個附件的郵件仍會像以前一樣詢問儲存位置。留空則使用預設值：\n{path}
+set_autosave_note = 撰寫時，開啟的撰寫分頁多久自動儲存到草稿一次。無論如何，「儲存草稿」（Ctrl+S）仍可隨時儲存，關閉含有未儲存內容的分頁時也一定會詢問是否儲存。0 表示關閉自動儲存。不提供低於 15 秒的間隔，因為那會讓伺服器往返與您的輸入互相競爭。
+set_auto_purge_note = 郵件在垃圾桶和垃圾郵件中放置此天數後即永久移除，與「清空垃圾桶」和「清空垃圾郵件匣」按需執行的永久移除相同，在 ZBox 開啟時每天自動執行一次。預設開啟，為 30 天。0 表示關閉。郵件一旦移除便無法復原。
+set_bare_keys_note = 開啟時，在郵件清單中單獨按 S、A、J、W 或 K，會立即切換星號、備存、將選取的郵件標示為垃圾信（Shift+J 標示為非垃圾信），或關注／忽略選取範圍所屬的討論串。備存和標示為垃圾信沒有確認，也無法復原。關閉此功能後，S、A、J、W 和 K 會恢復為一般的清單首字母瀏覽。無論如何，Ctrl+S 和 Ctrl+Shift+A 都能繼續運作。立即生效。
+set_sounds_note = 用於進度、新郵件、傳送、回覆或轉寄動作、刪除及搜尋結果的短音效。關閉會停用應用程式中的所有音效；螢幕閱讀器和狀態列的朗讀不受影響。
+set_desktop_notifications_note = 每批新郵件都會有一則 Windows 通知，與上方的音效分開。關閉會停用所有帳號的通知；也可在帳號與身分設定中單獨將個別帳號設為靜音。
+set_theme_note = 自訂佈景主題是放在 ZBox sounds 資料夾中的資料夾，每個都提供自己的 progress-tick.wav、incoming-message.wav、action-done.wav、delete.wav、searching.wav、searching_done.wav 和 none_found.wav。佈景主題中缺少的檔案會改用預設音效。
+set_theme_note_only_default = 自訂佈景主題是放在 ZBox sounds 資料夾中的資料夾，每個都提供自己的 progress-tick.wav、incoming-message.wav、action-done.wav、delete.wav、searching.wav、searching_done.wav 和 none_found.wav。佈景主題中缺少的檔案會改用預設音效。在您新增其他佈景主題資料夾之前，只有「default」可用。
+set_lock_note = 之後啟動 ZBox 時，在開啟任何帳號之前會要求您使用其中一種解鎖方式。任何一種都可以：通行金鑰、安全金鑰或主控密碼。關閉到系統匣並不是結束，不會重新鎖定；「檔案 > 結束」和系統匣圖示的「結束」才是。如果沒有註冊任何方式且未設定主控密碼，會略過鎖定，而不會把您擋在自己的郵件之外。
+set_security_note = 三者之中只有主控密碼會加密內容：正是它讓此資料夾能在另一台電腦上開啟已儲存的帳號密碼。通行金鑰或安全金鑰只能在這台電腦上解鎖應用程式。在從未使用過 ZBox 的電腦上，兩者都無法取代主控密碼。
+set_minimize_note = 最小化 ZBox 會隱藏其工作列按鈕，讓它改在系統匣圖示後面繼續執行。以滑鼠左鍵按一下系統匣圖示（或在其取得鍵盤焦點時按 Enter/空白鍵）即可還原視窗。
+set_close_note = 視窗的「關閉」按鈕、Alt+F4，以及在「郵件」分頁上按 Ctrl+W，會將 ZBox 隱藏到系統匣而不是結束。「檔案 > 結束」（Ctrl+Shift+Q）和系統匣圖示本身的「結束」項目，無論如何都會真正結束 ZBox，因此永遠有一條不需碰觸系統匣的鍵盤結束路徑。
+set_stay_maximized_note = ZBox 啟動時會最大化，若您取消最大化，也會恢復為最大化。選單列、標題列和視窗框線不受影響，這不是無框線的全螢幕模式，因此所有 Alt 鍵選單快速鍵都能繼續運作。
+set_run_at_startup_note = 登入 Windows 時自動啟動 ZBox，直接開啟到系統匣而不顯示視窗。立即生效，不只是下次啟動時。
+set_desktop_shortcut_note = 在桌面放置 ZBox 捷徑，取代已存在的捷徑。捷徑會儲存此 ZBox 資料夾的確切位置，因此若將 ZBox 移動或複製到其他地方，請在新的複本上再按一次，讓桌面捷徑指向它。立即生效，不需等待按下「確定」。
+
+# The Address Book, its contact form and its groups.
+ab_name = 名稱
+ab_phone = 電話
+ab_notes = 備註
+ab_heading = 通訊錄
+ab_contacts = 聯絡人
+ab_new = &新增...
+ab_edit = &編輯...
+ab_delete = &刪除
+ab_import = &匯入...
+ab_export = &匯出...
+ab_groups_label = 群組（郵寄清單）
+ab_groups_name = 群組
+ab_new_group = &新增群組...
+ab_rename_group = &重新命名群組...
+ab_delete_group = &刪除群組
+ab_manage_members = &管理成員...
+ab_all_contacts = 所有聯絡人
+ab_add_member = 新增 >>
+ab_remove_member = << 移除
+ab_members_of = {name} 的成員
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &不在字典中：
+sp_not_in_dictionary_name = 不在字典中
+sp_in_this_line_label = 在此行中：
+sp_in_this_line_name = 在此行中
+sp_suggestions_label = &建議：
+sp_suggestions_name = 建議
+sp_replace_with_label = &取代為：
+sp_replace_with_name = 取代為
+sp_replace = &取代
+sp_replace_all = &全部取代
+sp_ignore = &忽略
+sp_ignore_all = &全部忽略
+sp_add_to_dictionary = &加入字典
+btn_close = &關閉
+
+# Privacy and Content Blocking.
+priv_remote_label = 郵件中的遠端內容：
+priv_block_remote = &封鎖遠端內容，直到我要求為止（建議）
+priv_blocklist_label = 廣告與追蹤器封鎖清單：
+priv_block_known = &封鎖已知的廣告與追蹤器網域
+priv_update_daily = &每天在背景更新清單
+priv_update_now = &立即更新
+priv_junk_label = 垃圾郵件規則：
+priv_check_inbox = &以已封鎖的寄件者和已知的釣魚連結檢查收件匣中的新郵件
+priv_move_blocked = &自動將已封鎖寄件者的郵件移至垃圾郵件
+priv_update_phishing = &立即更新釣魚網站清單
+priv_blocked_label = 已封鎖的寄件者：
+priv_blocked_name = 已封鎖的寄件者
+priv_remove_blocked = &移除已封鎖的寄件者
+priv_never_junk_label = 永不視為垃圾郵件的寄件者：
+priv_never_junk_name = 永不視為垃圾郵件的寄件者
+priv_remove_never_junk = &移除永不視為垃圾郵件的寄件者
+priv_allowed_label = 允許載入遠端內容的寄件者：
+priv_allowed_name = 允許的寄件者
+priv_remove_selected = &移除選取的寄件者
+
+# Message Filters.
+filt_rule_name = 規則名稱
+filt_enabled = &已啟用
+filt_match_label = 符合：
+filt_match_all = &符合以下所有條件（AND）
+filt_match_any = &符合以下任一條件（OR）
+filt_conditions_label = 條件（值留空即略過）：
+filt_condition_field = 條件 {number} 欄位
+filt_condition_contains = 條件 {number} 包含
+filt_actions_label = 動作：
+filt_mark_read = &標示為已讀
+filt_flag = &為郵件加上星號
+filt_move_label = 移至信件匣：
+filt_move_name = 移至信件匣
+filt_rules_name = 篩選規則
+filt_new = &新增規則...
+filt_edit = &編輯規則...
+filt_delete = &刪除規則
+filt_up = &上移
+filt_down = &下移
+filt_run_label = 立即對信件匣執行：
+filt_run_name = 立即執行的信件匣
+filt_run_now = &立即執行
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &使用通行金鑰解鎖（Windows Hello）
+unl_security_key = &使用安全金鑰解鎖
+unl_master_password_label = &主控密碼：
+unl_master_password_name = 主控密碼
+unl_unlock = &解鎖
+unl_exit = &結束 ZBox
+unl_methods_label = &已註冊的方式：
+unl_methods_name = 已註冊的解鎖方式
+unl_add_passkey = &新增通行金鑰…
+unl_add_key = &新增安全金鑰…
+unl_reassign = &將通行金鑰重新指派給這台電腦…
+unl_test = &測試…
+unl_remove = &移除
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = 寄件者
+comp_to = 收件者
+comp_cc = 副本
+comp_bcc = 密件副本
+comp_subject = 主旨
+comp_attach_button = 附加檔案...
+comp_sending = 傳送中...
+comp_report_label = &報告：
+comp_report_name = 報告
+comp_refresh = &重新整理
+comp_copy = &複製
+comp_preview_read = 收件者看到的樣子
+comp_preview_source = 將傳送的 HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = 郵件內文
+mv_blocked_notice = 已封鎖內容通知
+mv_show_remote = &顯示遠端內容
+mv_always_allow = &永遠允許此寄件者
+mv_message_headers = 郵件標頭
+mv_attachments = 附件
+mv_attachments_count = 附件（{count}）
+mv_save_attachment = 儲存：{filename}
+mv_save_all = 全部儲存
+mv_html_view = 郵件 HTML 檢視
+mv_saved_message = 已儲存的郵件
+mv_show_remote_tip = 連同遠端圖片和樣式重新載入此郵件。已知的追蹤器仍會被封鎖。
+mv_always_allow_tip = 在來自 {sender} 的每封郵件中載入遠端內容。
+
+# The search tab.
+srch_account = 帳號
+srch_folder = 信件匣
+srch_for = 搜尋內容
+
+# The signature editor.
+sig_editors = 簽名編輯器
+sig_formatted = 簽名，已格式化
+sig_source = 簽名，HTML 原始碼
+sig_plain_label = 純文字替代版本（與 HTML 一起傳送）
+sig_plain_name = 純文字替代版本
+
+# About ZBox.
+about_text_name = 關於 ZBox 文字
+about_view_license = &檢視授權條款...
+about_google = &Google 應用程式密碼...
+about_support = &支持 ZBox，一人開發與維護
+about_repos = &Harith 在 GitHub 上的應用程式儲存庫
+about_contact = &聯絡 Harith
+btn_close_plain = 關閉
+btn_cancel_plain = 取消
+
+# The license window.
+eula_heading = ZBox 授權條款
+eula_text_name = ZBox 授權條款文字
+eula_third_party = 第三方元件授權條款頁面：
+eula_agree = &我同意上述條款
+eula_agree_name = 我已閱讀並同意 ZBox 授權條款
+eula_disagree = &我不同意
+eula_next = &下一步
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox 說明文件文字
+doc_copy = 複製到剪貼簿
+shortcuts_heading = 鍵盤快速鍵
+shortcuts_text_name = 鍵盤快速鍵文字
+
+# The main window's own panes.
+mf_toolbar = 主工具列
+mf_tabs = ZBox 分頁
+tree_heading = 帳號與信件匣
+tree_name = 帳號與信件匣樹狀結構
+envlist_heading = 郵件
+envlist_name = 郵件清單
+rdr_heading = 郵件
+rdr_name = 郵件閱讀器
+conv_heading_one = 對話：1 封郵件
+conv_heading_many = 對話：{count} 封郵件
+
+# A run of several messages, and the cache dialog.
+bulk_progress = 已完成 {total} 項中的 {completed} 項。
+bulk_cancelling = 正在取消，正在完成目前的郵件...
+cache_clear_now = 立即清除離線郵件快取...（Ctrl+Shift+Delete）
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}，受保護
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = 顯示名稱為選填，留空則以此帳號本身的名稱寄件。
+acct_note_identity = 如果您的服務供應商將自訂網域連結到此信箱，電子郵件地址可以與登入電子郵件不同。郵件會以上方的地址收發，而登入仍使用登入電子郵件。密碼欄位留空即保留此帳號已儲存的密碼；例如更換 Gmail 應用程式密碼後，請在這裡輸入新密碼，否則請留空。
+acct_note_identities = 此帳號可以用來寄件和回覆的其他地址。回覆寄到這些地址之一的郵件時，「寄件者」預設為該地址，而不是上方的地址。
+acct_note_signature = 附加在從此帳號寄出的每封新郵件、回覆和轉寄中，位於「-- 」行下方。留空表示不使用。「編輯簽名」會開啟格式化編輯器，可使用粗體、清單和連結；之後上方方塊會保存與其一起寄出的純文字版本。
+acct_note_junk = 「標示為垃圾信」將郵件移至哪個實際信件匣。「{automatic}」使用與備存和垃圾桶相同的、依服務供應商判斷的推測；只有在推測錯誤或您的垃圾郵件匣使用自訂名稱時才需設定。
+acct_note_disable = 停用的帳號在重新啟用之前永遠不會被連線，沒有 IDLE、沒有定期重新整理，什麼都沒有。它仍會顯示在樹狀結構中並標示為（已停用），已下載的郵件仍可離線使用。與「帳號 > 停用帳號」或帳號本身的內容選單是同一個開關；這裡只是另一個可以到達的位置。
+acct_note_default = 此帳號的信件匣會出現在樹狀結構的最前面，新郵件預設從此帳號寄出，除非在撰寫視窗中手動變更。這不影響回覆或轉寄使用的地址，那已經依照被回覆的郵件決定（請參閱上方的其他身份）。預設帳號永遠只有一個，因此在目前的預設帳號上取消勾選而沒有勾選其他帳號時，不會有任何變更；請改為勾選另一個帳號的方塊，將預設交給它。
+acct_note_mute = &設為靜音會封鎖此帳號的新郵件音效、朗讀和 Windows 通知，無論這些項目其他地方如何設定。它不影響其他帳號，且仍受「設定 > 音效與通知」中的總開關（音效和桌面通知整體）約束。
+wiz_note_app_password = 如果您已經為 ZBox 建立了應用程式密碼，請按「下一步」繼續。
+wiz_note_login = 登入憑證。\n如果您的登入電子郵件與上方的地址不同，例如您的服務供應商帳號是 login@example.net，但您想以 you@example.org 收發郵件，請在這裡輸入登入電子郵件。之後可以在帳號與身分設定中設定自訂的寄件地址。
+wiz_note_servers = 伺服器設定，已在辨識出網域時預先填入。請編輯任何需要不同的項目。
+wiz_preset_none = 找不到此網域的預設設定。請手動輸入您服務供應商的伺服器設定；您服務供應商的說明頁面會列出這些設定。
+ab_note_groups = 在撰寫視窗的「收件者」、「副本」或「密件副本」欄位中輸入群組名稱，即可一次填入其所有成員。
+cache_note_intro = 這些只會移除 ZBox 的本機副本。任何郵件伺服器上都不會刪除任何內容，被移除的郵件會在您下次開啟時重新下載。
+cache_note_age = 自動清理每天執行一次，時機是 ZBox 已有十分鐘沒有鍵盤活動且沒有開啟任何郵件時。它依據每封郵件本身的日期，包括仍在您帳號中的郵件。
+filt_note_intro = 規則依序由上而下執行，檢查從、收件者和主旨。新郵件抵達此帳號的收件匣時會自動套用；使用下方的「立即執行」可將其套用到已在信件匣中的郵件。
+filt_note_run_now = 將上方每條已啟用的規則，依序套用到所選信件匣中現有的每封郵件，並先儲存您的變更，與「確定」相同。
+mp_note_intro = 這些帳號是在另一台電腦上設定的。請輸入主控密碼，以在這裡解鎖其已儲存的密碼。在這台電腦上只會詢問一次。\n\n沒有它，每個帳號都必須重新登入其郵件伺服器。
+priv_note_remote = 郵件從網際網路載入的圖片、樣式表和字型，會讓寄件者知道您開啟郵件的時間和地點。開啟此功能後，這些都不會載入：郵件上方會出現通知說明封鎖了什麼，按 Ctrl+Shift+I 可為該郵件載入。郵件本身附加的圖片一律會顯示。指令碼和內嵌框架無論如何都會被移除，永遠不會載入。
+priv_note_blocklist = 這是第二層防護。當您載入郵件的遠端內容或允許某位寄件者時，它就會發揮作用：圖片會載入，但來自已知追蹤或廣告網域的內容仍不會載入。清單下載自公開的廣告與追蹤器清單並加以合併；更新只需一兩秒，並在背景執行。
+priv_note_junk = 不做猜測。「標示為垃圾信」會將寄件者加入下方的封鎖清單，除非郵件來自郵寄清單。「標示為非垃圾信」會將寄件者加入永不視為垃圾郵件的清單，該郵件之後不會再被檢查。來自已封鎖寄件者的新郵件會在清單中標示為「已封鎖的寄件者」；連結到已知釣魚或惡意網站的郵件會標示為「可能是釣魚郵件」。您郵件服務供應商本身的垃圾郵件篩選仍會照常運作。
+priv_status_phishing_updating = 釣魚網站清單：正在背景更新。重新開啟此對話方塊即可查看結果。
+priv_status_updating = 正在背景更新。重新開啟此對話方塊即可查看結果。
+rel_note_intro = 依據 Message-ID/References 標頭，在此帳號的所有信件匣中與「{subject}」相關的郵件。
+srch_note_intro = 在從、主旨和內文中搜尋您在下方輸入的文字。除非您在下方縮小範圍，否則會搜尋所有帳號和信件匣。
+sig_note_plain = 純文字替代版本留空時，按下「儲存」會以格式化的簽名自動產生。
+unified_note_intro = 選擇要在所有帳號之間合併的信件匣。每個勾選的項目都會成為樹狀結構中的單一項目，合併所有帳號的該信件匣。
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = 關於 ZBox
+title_account_settings = 帳號與身分設定：{name}
+title_new_account = 新增帳號
+title_address_book = 通訊錄
+title_members = 成員：{name}
+ab_group_name_prompt = 群組名稱：
+title_new_group = 新增群組
+title_cache_cleanup = 快取清理設定
+cache_age_prompt = 自動移除早於以下時間的快取郵件：
+title_automatic_cleanup = 自動清理
+comp_link_prompt = 連結網址：
+title_insert_link = 插入連結
+title_composer_diagnostics = 撰寫視窗診斷
+title_formatted_preview = 格式化預覽
+title_license_agreement = ZBox 授權合約
+title_message_filters = 郵件篩選器：{account}
+title_master_password_required = 需要主控密碼
+title_privacy_dialog = 隱私權與內容封鎖
+title_privacy = 隱私權
+title_settings = 設定
+title_unified_folders = 整合信件匣
+title_zbox_locked = ZBox 已鎖定
+title_message_view = 郵件檢視
+title_remote_content = 遠端內容
+title_refresh = 重新整理
+title_refresh_all = 全部重新整理
+mv_choose_folder = 選擇儲存附件的資料夾
+title_thread = 討論串
+title_inbox = 收件匣
+title_compose = 撰寫
+title_watch_thread = 關注討論串
+title_ignore_thread = 忽略討論串
+title_edit_signature = 編輯簽名
+title_account = 帳號
+mf_folder_name_prompt = 信件匣名稱：
+mf_new_name_prompt = 新名稱：
+title_refresh_all_accounts = 重新整理所有帳號
+title_sender = 寄件者
+title_new_mail = 新郵件
+mf_export_dialog_title = 匯出全部 {count} 個帳號和設定
+mf_related_tab = 相關：{subject}
+title_hotkeys_diagnostic = 快速鍵診斷
+set_choose_attachment_dir = 選擇附件儲存資料夾
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox 已鎖定。請使用下列任一方式解鎖。取消會關閉 ZBox 而不開啟任何帳號。
+unl_note_foreign_passkey = 與此資料夾一起儲存的通行金鑰屬於另一台電腦，因此無法在這裡使用。請使用安全金鑰或主控密碼解鎖，然後在「設定」的「隱私權與安全性」中，使用「解鎖方式」在這台電腦上設定通行金鑰。
+unl_note_methods = 應用程式鎖定開啟時，除了主控密碼之外，這些方式中的任何一種都可以解鎖 ZBox。通行金鑰使用這台電腦上的 Windows Hello；安全金鑰是透過 USB 或 NFC 使用的 FIDO2 金鑰，插入任何電腦都能使用。
+unl_note_not_encryption = 這些方式只解鎖應用程式，不會加密任何內容：在此資料夾從未使用過的電腦上，只有主控密碼能開啟已儲存的帳號密碼。必須先設定主控密碼，在設定之前兩者都無法新增。
+unl_add_passkey_unavailable = &新增通行金鑰（無法使用）
+unl_add_key_unavailable = &新增安全金鑰（無法使用）
+unl_reassign_unavailable = &將通行金鑰重新指派給這台電腦（無法使用）
+unl_status_cancelled_passkey = 已取消通行金鑰。ZBox 仍處於鎖定狀態。
+unl_status_cancelled_key = 已取消安全金鑰。ZBox 仍處於鎖定狀態。
+unl_status_enter_password = 請輸入主控密碼。
+unl_status_no_master = 尚未設定主控密碼，因此還無法新增通行金鑰或安全金鑰。請在「設定」的「隱私權與安全性」中使用「主控密碼」按鈕設定，然後再回到這裡。主控密碼是在另一台電腦上開啟已儲存帳號密碼的關鍵；通行金鑰只能在這台電腦上解鎖應用程式，因此無法單獨使用。
+unl_status_unsupported = 這台電腦的 Windows 不支援通行金鑰或安全金鑰，因此在這裡只能用主控密碼解鎖 ZBox。
+unl_status_foreign_one = 有 1 個通行金鑰屬於另一台電腦，無法在這裡解鎖 ZBox。「重新指派」會以在這台電腦上建立的通行金鑰取代它。
+unl_status_foreign_many = 有 {count} 個通行金鑰屬於另一台電腦，無法在這裡解鎖 ZBox。「重新指派」會以在這台電腦上建立的通行金鑰取代它們。
+unl_status_foreign_one_no_hello = 有 1 個通行金鑰屬於另一台電腦，無法在這裡解鎖 ZBox。這台電腦未設定 Windows Hello，因此無法在這裡取代；「移除」會忘記它。
+unl_status_foreign_many_no_hello = 有 {count} 個通行金鑰屬於另一台電腦，無法在這裡解鎖 ZBox。這台電腦未設定 Windows Hello，因此無法在這裡取代；「移除」會忘記它們。
+unl_status_no_hello = 這台電腦未設定 Windows Hello，因此無法在這裡新增通行金鑰。仍可新增安全金鑰。
+unl_status_none_registered = 尚未註冊任何解鎖方式。
+unl_status_add_cancelled_passkey = 已取消新增通行金鑰。
+unl_status_add_cancelled_key = 已取消新增安全金鑰。
+unl_status_added = 已新增：{name}。
+unl_status_reassign_cancelled = 已取消重新指派。未做任何變更。
+unl_status_reassigned = 已新增 {name}，並忘記其他電腦的 {count} 個。
+unl_status_test_cancelled = 已取消測試。
+unl_status_removed = 已移除。
+unl_remove_warning_last = 要移除 {name} 嗎？\n\n這是唯一註冊的解鎖方式，且未設定主控密碼，因此在應用程式鎖定開啟時，將沒有任何方式可以解鎖 ZBox。會略過鎖定而不會把您擋在外面，但 ZBox 之後將在未鎖定的狀態下開啟。
+unl_remove_warning = 要移除 {name} 嗎？ZBox 將不再接受它。
+ab_col_email = 電子郵件
+ab_col_name = 名稱
+ab_col_phone = 電話
+ab_no_contacts = 還沒有聯絡人。
+acct_auto_check = 自動檢查新郵件
+acct_note_auto_check = 關閉：ZBox 永遠不會主動連線此帳號，不監看新郵件、不定時重新整理、不在背景下載，因此不穩定的伺服器不會拖慢其他帳號。已下載的郵件仍可開啟，重新整理（F5）、傳送和刪除仍會連線到伺服器。與「工具」選單或帳號內容選單中的「暫停自動檢查」相同。
+bl_day_ago = 1 天前
+bl_days_ago = {days} 天前
+bl_label_blocklists = 封鎖清單
+bl_label_phishing = 釣魚網站清單
+bl_last_failed = 上次嘗試失敗：%s
+bl_not_downloaded = 尚未下載。
+bl_save_failed = 已下載%s，但無法儲存：%s
+bl_seed_only = 內建清單中的 %s 個網域。尚未從網際網路更新。
+bl_some_failed = 部分來源失敗：%s
+bl_some_unreachable = 部分來源無法連線：%s
+bl_status_line = %s 個網域。上次更新 %s。
+bl_up_to_date = %s已是最新版本。
+bl_update_failed = 無法更新%s：%s
+bl_updated = %s已更新：%s 個網域。
+cc_age_choice = 所有存放 %s 的郵件快取
+cc_auto_button = 自動清理：早於 %s 的快取郵件...
+comp_btn_discard = &捨棄
+comp_btn_keep_editing = &繼續編輯
+comp_btn_save_draft = &儲存草稿
+comp_no_account = 未設定帳號
+comp_saving_draft = 正在儲存草稿…
+comp_this_message = 此郵件
+comp_unsent_save_q = 關閉前要將%s儲存為草稿嗎？
+comp_unsent_tray_q = ZBox 縮到系統匣前要將%s儲存為草稿嗎？
+doc_unreadable = 無法讀取說明文件檔案：
+envlist_all_disabled = 所有帳號都已停用。
+envlist_col_date = 日期
+envlist_col_from = 從
+envlist_col_status = 狀態
+envlist_col_subject = 主旨
+envlist_collapsed = 已收起（%d）
+envlist_empty = 此信件匣中沒有郵件。
+envlist_loading = 正在載入郵件...
+envlist_no_accounts = 尚未設定帳號。
+envlist_no_ignored = 此信件匣中沒有忽略的討論串。
+envlist_no_watched = 此信件匣中沒有關注的討論串。
+envlist_select_folder = 請選擇帳號或信件匣以載入郵件。
+eula_link_0 = 在瀏覽器中開啟 Himalaya 的授權條款頁面
+eula_link_1 = 在瀏覽器中開啟 StevenBlack hosts 的授權條款頁面
+eula_link_2 = 在瀏覽器中開啟 EasyList/EasyPrivacy 的授權條款頁面
+eula_link_3 = 在瀏覽器中開啟 Phishing.Database 的授權條款頁面
+eula_read_note = 請閱讀下方的授權條款，包括第三方部分。您必須勾選「我同意」，「下一步」才能使用。「我不同意」會關閉 ZBox 而不啟動，並移除此次執行至今所建立的內容。
+eula_unreadable = 無法讀取授權條款檔案：\n%s
+filters_title = 執行篩選器
+flag_title = 為郵件加上星號
+folder_type_archive = 備存
+folder_type_drafts = 草稿
+folder_type_inbox = 收件匣
+folder_type_junk = 垃圾郵件
+folder_type_sent = 寄件備份
+folder_type_trash = 垃圾桶
+mime_application_json = JSON 檔案
+mime_application_msword = Word 文件
+mime_application_octet_stream = 二進位檔案
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel 試算表
+mime_application_vnd_ms_powerpoint = PowerPoint 簡報
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint 簡報
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel 試算表
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word 文件
+mime_application_xml = XML 檔案
+mime_application_zip = ZIP 壓縮檔
+mime_audio_mpeg = MP3 音訊
+mime_audio_ogg = OGG 音訊
+mime_audio_wav = WAV 音訊
+mime_image_bmp = BMP 圖片
+mime_image_gif = GIF 圖片
+mime_image_jpeg = JPEG 圖片
+mime_image_png = PNG 圖片
+mime_image_svg_xml = SVG 圖片
+mime_image_webp = WebP 圖片
+mime_text_csv = CSV 檔案
+mime_text_html = HTML 檔案
+mime_text_plain = 文字檔
+mime_video_mp4 = MP4 影片
+mime_video_x_msvideo = AVI 影片
+move_title_junk = 標示為垃圾信
+move_title_move_to = 移至
+move_title_not_junk = 標示為非垃圾信
+mp_explain_set = 已設定主控密碼。正是它讓此 ZBox 資料夾能在不同的電腦上開啟已儲存的帳號密碼。\n\n兩個新密碼方塊都留空並按「確定」即可移除。移除不影響這台電腦，但此資料夾在任何其他電腦上都將無法使用，除非重新登入每個帳號。
+mp_explain_unset = 尚未設定主控密碼，因此已儲存的帳號密碼只能在這台電腦和這個 Windows 帳號中讀取。將資料夾複製到其他地方後，每個帳號都必須重新登入其郵件伺服器。\n\n設定後，ZBox 會在每台新電腦上詢問一次，之後在那裡就會正常解鎖。這台電腦不會再詢問。\n\n請把它寫下來並保存在安全的地方。它不會儲存在任何地方，也無法復原：如果忘記，每個帳號都必須重新登入其郵件伺服器。
+mp_label_confirm = &確認新的主控密碼：
+mp_label_current = &目前的主控密碼：
+mp_label_master = &主控密碼：
+mp_label_new = &新的主控密碼：
+mp_name_confirm = 確認新的主控密碼
+mp_name_current = 目前的主控密碼
+mp_name_master = 主控密碼
+mp_name_new = 新的主控密碼
+mp_prompt_existing = 您已儲存的帳號密碼只在這台電腦上受到保護。請設定主控密碼，讓您將 ZBox 移到另一台電腦時也能開啟它們。
+mp_prompt_first_run = ZBox 即將儲存您的帳號密碼。請現在設定主控密碼，讓您將 ZBox 移到另一台電腦時仍能開啟它們。
+mp_prompt_new_account = ZBox 即將儲存此帳號的密碼。請先設定主控密碼，讓您將 ZBox 移到另一台電腦時仍能開啟此帳號。
+mp_removed_done = 已移除主控密碼。已儲存的密碼現在只能在這台電腦和這個 Windows 帳號中使用。
+mp_set_done = 已設定主控密碼。在每台開啟此資料夾的新電腦上，ZBox 會詢問一次，之後在那裡就會正常解鎖。
+mv_body_title = 郵件內文
+mv_col_format = 格式
+mv_col_name = 名稱
+mv_col_size = 大小
+mv_format_unknown = 未知
+mv_size_unknown = 大小未知
+na_account_settings = 帳號與身分設定
+na_disable_account = 停用帳號
+na_edit_signature = 編輯簽名
+na_message_filters = 郵件篩選器
+na_mute_account = 將帳號設為靜音
+na_pause_auto_check = 暫停自動檢查
+na_remove_account = 移除帳號
+na_set_default = 設為預設帳號
+no_offline_copy = %s 沒有離線副本。請在連線時開啟它，或使用「檔案」、「離線」、「立即同步」。
+perm_delete_confirm = {msg} 這會略過垃圾桶，且無法復原。
+perm_delete_many = 要永久刪除 {count} 封郵件嗎？
+perm_delete_one = 要永久刪除 {count} 封郵件嗎？
+preset_note_apple = Apple 需要應用程式專用密碼。
+preset_note_fastmail = Fastmail 需要應用程式密碼。
+preset_note_google = Google 需要應用程式密碼或 OAuth2，而不是您的一般密碼。
+preset_note_proton = ProtonMail 需要在本機執行 ProtonMail Bridge 應用程式。
+preset_note_yahoo = Yahoo 需要應用程式密碼。
+priv_phishing_not_loaded = 釣魚網站清單：尚未載入。首次開啟這些規則且 ZBox 連線時會下載。
+priv_phishing_prefix = 釣魚網站清單：
+priv_status_unavailable = 無法取得封鎖清單狀態。
+rdr_load_failed = 無法載入郵件。\n\n{message}
+rdr_loading = 正在載入郵件...
+rdr_select_message = 選擇郵件即可在這裡閱讀。
+set_autosave_off = 關閉 — 使用「儲存草稿」（Ctrl+S）手動儲存
+set_autosave_seconds = 每 {seconds} 秒
+set_no_unlock = 這裡沒有可用的通行金鑰或安全金鑰
+set_purge_days = {days} 天後
+set_purge_off = 關閉 — 永遠不自動清除垃圾桶和垃圾郵件
+set_purge_one_day = 1 天後
+set_rt_bundled_installed = 隨附的執行階段：已安裝。
+set_rt_bundled_many = 隨附的執行階段：已安裝 %s。
+set_rt_bundled_none = 隨附的執行階段：未安裝，因此 ZBox 使用全系統執行階段。
+set_rt_bundled_unknown = 隨附的執行階段：無法判斷。
+set_rt_bundled_ver = 隨附的執行階段：已安裝版本 %s。
+set_rt_system_unknown = 全系統執行階段：無法判斷版本。
+set_rt_system_ver = 全系統執行階段：版本 %s。
+set_unlock_many = 這裡可用 %d 種解鎖方式
+set_unlock_unreadable = 無法讀取解鎖方式
+sig_tab_formatted = 已格式化
+sig_tab_source = HTML 原始碼
+srch_all_accounts = 所有帳號
+srch_all_folders = 所有信件匣
+tab_mail = 郵件
+tab_new_message = 新郵件
+tab_saved_message = 已儲存的郵件
+title_copy_to_err = 複製到
+title_mark_message = 標記郵件
+title_unsent_message = 未傳送的郵件
+tree_unified_root = 整合信件匣
+unlock_kind_passkey = 通行金鑰（Windows Hello）
+unlock_kind_security_key = 安全金鑰
+unlock_prompt_message = Windows 正在要求您確認。請以 Windows Hello、PIN 或安全金鑰回應其提示。Windows 完成後，此視窗會自動關閉。
+unlock_prompt_title = Windows 安全性
+unlock_registering = 正在註冊此解鎖方式
+unlock_the_passkey = 通行金鑰
+unlock_the_security_key = 安全金鑰
+wildcard_eml = 電子郵件檔案 (*.eml)|*.eml|所有檔案 (*.*)|*.*
+wildcard_export = ZBox 匯出檔 (*.json)|*.json
+wiz_not_supported = 不支援：{name}。{note} 此帳號無法新增到 ZBox。
+stock_apply = &套用
+stock_cancel = 取消
+stock_close = &關閉
+stock_help = &說明
+stock_no = &否
+stock_ok = 確定
+stock_yes = &是
+wiz_btn_back = &< 上一步
+wiz_btn_finish = &完成
+wiz_btn_next = &下一步 >
+acct_unsaved_q = 要儲存對此帳號的變更嗎？
+btn_save = &儲存
+spell_add_to_dictionary = &加入字典
+spell_no_suggestions = 沒有建議
+title_signature_for = 簽名：{account}
+title_mark_folder_read = 將信件匣標示為已讀
+title_update_available = ZBox 更新
+update_available = ZBox {new} 已發布。您的版本是 {current}。
+upd_notes_label = 版本資訊：
+upd_no_notes = 沒有版本資訊。
+upd_notes_name = 版本資訊
+upd_update_now = 是，立即更新
+upd_remind_later = 稍後提醒我
+title_update_download = 正在下載 ZBox 更新
+upd_downloading = 正在下載 ZBox {version}...
+upd_progress_name = 下載進度
+upd_cancel = 取消
+upd_cancelling = 正在取消...
+set_updates_label = 更新：
+set_update_auto = 自動檢查更新
+set_update_mode_label = 找到更新時：
+set_update_ask = 詢問我
+set_update_silent = 不詢問直接下載並安裝
+set_update_note = ZBox 每天最多在 GitHub 上檢查一次新版本，且只在閒置時檢查，除版本號碼外不傳送任何資訊。選擇「詢問我」時，會顯示新版本及其版本資訊，並提供「是，立即更新」和「稍後提醒我」。選擇「不詢問直接下載並安裝」時，會在閒置時下載更新，並在您下次完全結束 ZBox 時安裝，絕不會在您工作時安裝。更新只取代 ZBox 本身的程式檔案：您的帳號、密碼、設定、郵件、記錄、音效主題以及您新增的任何語言都不會被更動；先前的版本會被保留，若新版本無法啟動，會自動還原。「說明」中的「更新」選單還有「立即檢查更新」和發布頁面，可用於手動更新。
+set_update_check_now = 立即檢查
+mv_attachment_button = {filename} ({format})
+att_open = 開啟
+att_save = 儲存...
+att_save_all = 儲存所有附件
+title_save_attachment = 儲存附件
+title_full_headers = 全部郵件資訊
+hdr_copy_all = 全部複製
+acct_identity_own_signature = 使用自己的簽名
+acct_identity_own_reply_to = 使用自己的回覆地址
+acct_identity_reply_to = 回覆地址
+acct_identity_always_cc = 一律副本給這些地址
+acct_identity_cc = 副本地址
+acct_identity_always_bcc = 一律密件副本給這些地址
+acct_identity_bcc = 密件副本地址
+acct_identity_own_folders = 使用自己的草稿與寄件備份資料夾
+acct_identity_drafts = 草稿資料夾
+acct_identity_sent = 寄件備份資料夾
+acct_identity_own_smtp = 使用自己的寄件伺服器
+acct_identity_smtp_login = 寄件登入名稱
+acct_identity_smtp_password = 寄件密碼
+acct_identity_test_smtp = 測試寄件伺服器
+acct_identity_note_smtp = 登入名稱留空則使用此身分的電子郵件地址登入。寄出的副本會存入此帳號的寄件備份資料夾；若此身分有自己的寄件備份資料夾，則存入該資料夾。
+identity_field_required = 請填寫{field}，或取消勾選其核取方塊。
+identity_field_invalid = {field}中有無效的地址。
+identity_folders_required = 請選擇草稿資料夾、寄件備份資料夾或兩者，或取消勾選其核取方塊。
+identity_password_required = 請輸入寄件密碼。
+identity_smtp_testing = 正在測試寄件伺服器。
+identity_smtp_ok = 寄件伺服器已接受登入。
+identity_smtp_failed = 寄件伺服器測試失敗。\n\n{error}
+set_bare_keys_note_move = M 和 C 會為所選郵件開啟含資料夾清單的「移動到」和「複製到」選單，Shift+M 會開啟一個輸入框，輸入資料夾名稱的一部分即可將郵件移到那裡。關閉此選項後，M 和 C 也會恢復為依首字母瀏覽。
+folder_search_filter = 資料夾名稱包含
+folder_search_list = 相符的資料夾
+folder_search_no_match = 沒有與該名稱相符的資料夾。
+wiz_signin_method = 登入方式
+wiz_method_password = 密碼
+wiz_method_microsoft = Microsoft 帳號（Outlook.com、Hotmail、Live、Microsoft 365）
+wiz_ms_servers = Microsoft 登入。已填入 Outlook.com、Hotmail、Live 與 Microsoft 365 的伺服器設定。
+wiz_welcome_notice = Gmail。您的一般 Google 密碼會被拒絕，但應用程式密碼可以使用。必須先開啟兩步驟驗證。下方按鈕會開啟 Google 的說明。\n\nOutlook.com、Hotmail、Live 與 Microsoft 365。這些帳號使用您的 Microsoft 帳號登入。在登入頁面選擇 Microsoft 帳號，然後在瀏覽器中或用代碼登入。\n\n其他服務供應商。一般密碼或應用程式密碼通常可以使用，您服務供應商的說明頁面會列出伺服器設定。
+preset_note_outlook = Outlook.com、Hotmail、Live 與 MSN 帳號使用 Microsoft 帳號登入。請在登入頁面選擇 Microsoft 帳號作為登入方式。
+ms_status_name = Microsoft 登入狀態
+ms_browser_button = 在瀏覽器中登入
+ms_code_button = 用代碼登入
+ms_copy_code = 複製代碼
+ms_open_page = 開啟登入頁面
+ms_stop = 停止等待
+ms_not_configured = 此 ZBox 副本未設定 Microsoft 登入。
+ms_not_signed_in = 尚未登入。請在瀏覽器中登入，或在任何裝置上用代碼登入。
+ms_signed_in = 已登入為 {address}。
+ms_signed_in_plain = 已登入。
+ms_needs_sign_in = 此帳號需要重新登入 Microsoft。請在瀏覽器中登入，或在任何裝置上用代碼登入。
+ms_reason_cancelled = 已停止登入。
+ms_reason_timeout = 未及時收到回應。
+ms_reason_denied = 未獲准存取。
+ms_reason_expired = 代碼已過期。請重新取得。
+ms_reason_network = 無法連線到 Microsoft。請檢查網路連線後再試一次。
+ms_reason_server = Microsoft 回應：{detail}
+ms_page_done = 已登入。您可以關閉此頁面並回到 ZBox。
+ms_page_failed = 登入未完成。請回到 ZBox 查看詳情。
+ms_browser_waiting = 您的瀏覽器正在顯示 Microsoft 登入頁面。請在那裡完成登入，然後回到 ZBox。
+ms_code_asking = 正在向 Microsoft 取得登入代碼...
+ms_code_waiting = 請在任何裝置上開啟 {address} 並輸入代碼 {code}。ZBox 會在這裡等待，直到您完成登入。
+ms_failed = 登入未完成。{reason}
+ms_code_copied = 代碼已複製。
+offline_inbox_only = 只有收件匣和備存會保留供離線使用。請連上網路後開啟 {folder}。
+block_sender_rule_name = 封鎖 {sender}
+title_block_sender = 封鎖此寄件者
+title_unblock_sender = 解除封鎖此寄件者
+set_clear_inbox_cache = 郵件離開收件匣時清除其快取
+set_clear_inbox_cache_note = 開啟後，郵件一旦離開收件匣，其離線副本與已儲存的內容就會被刪除；即使是在其他地方（例如手機上）刪除或移動的也是如此，因此它不會再出現在已不存在的位置。只有收件匣保留這些檔案；其他所有資料夾一律從伺服器讀取。
+empty_trash_all_confirm = 要永久刪除所有帳號垃圾桶中的全部郵件嗎？\n\n此操作無法復原。
+
+[errors]
+language_restart_failed = ZBox 無法自行重新啟動：\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = 無法為 {address} 開啟郵件用戶端。
+
+wizard_test_failed = 連線失敗：\n\n{error}
+
+contacts_import_unreadable = 無法讀取該檔案。\n\n{error}
+contacts_export_unwritable = 無法寫入該檔案。\n\n{error}
+
+attach_unreadable = 無法讀取附件 {path}：\n{error}
+send_failed = 無法傳送郵件。\n\n{error}
+draft_attach_unreadable = 無法讀取附件 {path}：\n{error}\n\n草稿未儲存。
+draft_save_failed = 無法儲存草稿。\n\n{error}
+
+clipboard_unavailable = 無法開啟剪貼簿。
+open_link_failed = 無法開啟瀏覽器以前往：\n{url}
+
+master_password_mismatch = 兩個新的主控密碼方塊不相符。
+master_password_required = 請輸入主控密碼，或按「取消」。
+master_password_not_set = 無法設定主控密碼：{error}
+master_password_not_here = 無法在這裡變更主控密碼。
+
+attachment_save_failed = 無法儲存附件。\n\n{error}
+attachments_save_failed = 無法儲存附件。\n\n{error}
+print_failed = 無法列印郵件。請確認已設定印表機。
+print_preview_failed = 無法開啟預覽列印。請確認已設定印表機。
+
+related_search_failed = 無法搜尋相關郵件。\n\n{error}
+search_failed = 搜尋失敗。\n\n{error}
+
+unlock_methods_no_config_folder = ZBox 找不到其設定資料夾，因此無法在這裡管理解鎖方式。
+shortcut_no_folder = ZBox 無法判斷其本身的資料夾，因此無法從這裡建立捷徑。
+shortcut_failed_settings = 無法建立桌面捷徑：\n\n{error}
+
+unlock_method_failed = {what}無法使用。\n\n{error}
+unlock_check_failed = 無法檢查主控密碼。\n\n{error}
+unlock_password_wrong = 該主控密碼不正確。
+unlock_add_failed = 無法新增{what}。\n\n{error}
+unlock_passkey_setup_failed = 無法在這台電腦上設定通行金鑰，因此未做任何變更。\n\n{error}
+unlock_method_test_failed = 該方式無法使用。\n\n{error}
+
+account_list_unreadable = ZBox 無法開啟您的帳號清單。\n\n{error}\n\n沒有載入任何帳號，檔案也沒有被變更，因此沒有遺失任何內容。在能夠讀取之前，新增、編輯和移除帳號都會被拒絕。
+account_list_no_accounts = ZBox 在本次工作階段無法開啟您的帳號清單（{error}），因此沒有可選擇的帳號。沒有遺失任何內容，也沒有做任何變更。請關閉 ZBox 後重新啟動，並在詢問時輸入主控密碼。
+open_message_failed = 無法開啟郵件。\n\n{error}
+filters_list_failed = 無法列出 {folder} 中的郵件。\n\n{error}
+filters_move_failed = 無法移動篩選出的郵件。\n\n{error}
+cache_clear_failed = 無法清除快取。\n\n{error}
+folder_create_failed = 無法建立信件匣。\n\n{error}
+folder_rename_failed = 無法重新命名信件匣。\n\n{error}
+folder_delete_failed = 無法刪除信件匣。\n\n{error}
+folder_subscribe_failed = 無法訂閱信件匣。\n\n{error}
+folder_unsubscribe_failed = 無法取消訂閱信件匣。\n\n{error}
+saved_open_failed = 無法開啟檔案。\n\n{error}
+saved_parse_failed = 無法將此檔案解析為電子郵件。\n\n{error}
+save_file_failed = 無法儲存檔案。\n\n{error}
+save_fetch_failed = 無法取得要儲存的郵件。\n\n{error}
+empty_trash_failed = 無法清空垃圾桶。\n\n{error}
+empty_junk_failed = 無法清空垃圾郵件匣。\n\n{error}
+export_write_failed = 無法寫入匯出檔案。\n\n{error}
+import_read_failed = 無法將此檔案讀取為 ZBox 匯出檔。\n\n{error}
+import_not_export = 此檔案看起來不是 ZBox 匯出檔。\n\n{error}
+search_open_failed = 無法開啟此郵件。
+related_load_failed = 無法載入此郵件。\n\n{error}
+reply_load_failed = 無法載入要回覆的郵件。\n\n{error}
+forward_load_failed = 無法載入要轉寄的郵件。\n\n{error}
+action_failed = 無法完成此動作。\n\n{error}
+undo_failed = 無法復原{label}。\n\n{error}
+copy_failed = 無法複製郵件。\n\n{error}
+delete_failed = 無法刪除郵件。\n\n{error}
+archive_failed = 無法備存郵件。\n\n{error}
+master_password_not_changed = 無法變更主控密碼：{error}
+shortcut_failed_startup = 無法建立桌面捷徑：\n\n{error}\n\nZBox 會繼續啟動。您可以稍後從「設定」再試一次。
+account_locked_action = ZBox 無法%s。本次工作階段無法開啟帳號清單（%s），且未做任何變更。請關閉 ZBox 後重新啟動，如有詢問請輸入主控密碼。
+send_tls_mismatch = 無法傳送郵件。寄件伺服器以未加密的方式回應，因此寄件加密與連接埠不相符。請在「工具」的「帳號與身分設定」中，連接埠 587 使用 STARTTLS，連接埠 465 使用 SSL/TLS，然後再傳送一次。\n\n{error}
+mark_folder_read_failed = 無法將信件匣標示為已讀。\n\n{error}
+update_failed = 無法下載更新，因此未做任何變更。\n\n{error}
+update_rolled_back = 更新無法啟動，因此已還原先前的版本。
+attachment_open_failed = 無法開啟附件。\n\n{error}
+headers_failed = 無法載入郵件資訊。\n\n{error}
+wizard_ms_sign_in_first = 請先用 Microsoft 登入再繼續。請使用此頁面上的兩個登入按鈕之一。
+wizard_provider_unsupported = ZBox 無法登入此服務供應商。此頁面上的說明解釋了原因。請返回並使用其他電子郵件地址，或取消。
+acct_ms_sign_in_first = 請先用 Microsoft 登入再儲存，或選擇密碼作為登入方式。
+ms_sign_in_again = {account} 需要重新登入 Microsoft。請開啟帳號與身分設定，在那裡登入。
+empty_trash_all_failed = 無法清空以下帳號的垃圾桶：{accounts}
+
+[help]

@@ -1,0 +1,16 @@
+ZBox
+Door Harith Alhamdani
+
+ZBox is een draagbaar, vlot, veilig en volledig toegankelijk e-mailprogramma. Gratis voor persoonlijk gebruik en zuinig met systeembronnen. Het is gemaakt om blinde en slechtziende mensen een echt, functierijk alternatief te bieden voor de logge en trage programma's die meestal beschikbaar zijn. Onder de motorkap draait ZBox op het robuuste e-mailprogramma Himalaya CLI.
+
+Privacy en beveiliging
+ZBox heeft een ingebouwde blokkering van trackers en advertenties (standaard ingeschakeld), plus optionele regels voor ongewenste e-mail en controle op phishingkoppelingen. Voor veilig draagbaar gebruik werkt het met bescherming door een hoofdwachtwoord: als de app-map zonder dit wachtwoord naar een andere computer wordt gekopieerd, is de toegang tot uw gekoppelde accounts geblokkeerd. Als u ZBox naar een nieuw apparaat wilt verhuizen, stelt u hier eerst een hoofdwachtwoord in. Daarnaast ondersteunt het toegangssleutels van Windows Hello (vingerafdruk, pincode of gezichtsherkenning) en moderne hardwarebeveiligingssleutels.
+
+Vertrouwde bediening
+Om de overstap van andere e-mailprogramma's soepel te laten verlopen, biedt ZBox vriendelijke, flexibele sneltoetsen. Vaak voeren meerdere sneltoetsen dezelfde actie uit; zo verzenden zowel Alt+S als Ctrl+Enter een bericht. De volledige lijst vindt u onder Help, Sneltoetsen.
+
+Account instellen
+Accounts van Outlook.com, Hotmail, Live en Microsoft 365 melden zich aan met uw Microsoft-account, in uw browser of met een code. Rechtstreeks aanmelden bij Google komt in een toekomstige update. Tot die tijd kunt u uw Gmail-account koppelen door een app-wachtwoord te maken in plaats van uw gewone wachtwoord te gebruiken (zie de knop hieronder voor instructies).
+
+Licenties en dankbetuigingen
+Druk hieronder op Licentie bekijken om de licentie van ZBox te lezen en de onderdelen van derden te zien die het mogelijk maken. Daartoe behoren Himalaya, de blokkeerlijsten StevenBlack hosts en EasyPrivacy, de lijst Phishing.Database en (in een gebouwde versie) Python, wxPython, imapclient, pywin32, keyring en accessible_output2 met zijn clientbibliotheken voor schermlezers.

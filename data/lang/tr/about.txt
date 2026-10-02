@@ -1,0 +1,16 @@
+ZBox
+Geliştiren: Harith Alhamdani
+
+ZBox taşınabilir, hızlı, güvenli ve tamamen erişilebilir bir e-posta istemcisidir. Kişisel kullanım için ücretsizdir ve sistem kaynaklarını az kullanır. Görme engelli ve az gören kullanıcılara, genellikle sunulan hantal ve yavaş seçeneklerin yerine gerçek ve özellik dolu bir alternatif sunmak için geliştirildi. Arka planda ZBox, güçlü Himalaya CLI e-posta istemcisiyle çalışır.
+
+Gizlilik ve güvenlik
+ZBox, izleyici ve reklam engelleyiciyle birlikte gelir (varsayılan olarak açık); ayrıca isteğe bağlı gereksiz posta kuralları ve bir kimlik avı bağlantısı denetleyicisi sunar. Güvenli taşınabilirlik için ana parola koruması kullanır: Uygulama klasörü bu parola olmadan başka bir bilgisayara kopyalanırsa bağlı hesaplarınıza erişim engellenir. ZBox'ı yeni bir bilgisayara taşımayı düşünüyorsanız önce burada bir ana parola belirleyin. Windows Hello geçiş anahtarlarını (parmak izi, PIN veya yüz tanıma) ve modern donanım güvenlik anahtarlarını da destekler.
+
+Tanıdık kullanım
+Diğer e-posta istemcilerinden geçişi kolaylaştırmak için ZBox kullanışlı ve esnek kısayol tuşları sunar. Çoğu zaman birden fazla kısayol aynı işi yapar; örneğin hem Alt+S hem Ctrl+Enter iletiyi gönderir. Tam listeyi Yardım, Klavye Kısayolları altında görebilirsiniz.
+
+Hesap kurulumu
+Outlook.com, Hotmail, Live ve Microsoft 365 hesapları, tarayıcıda veya bir kodla, Microsoft hesabınızla oturum açar. Yerel Google oturum açma desteği gelecekteki bir güncellemede eklenecek. Şimdilik, normal parolanız yerine bir Uygulama Parolası oluşturarak Gmail hesabınızı bağlayabilirsiniz (talimatlar için aşağıdaki düğmeye bakın).
+
+Lisanslar ve teşekkürler
+ZBox'ın lisansını okumak ve onu mümkün kılan üçüncü taraf bileşenleri görmek için aşağıdaki Lisansı Görüntüle düğmesine basın. Bunlar arasında Himalaya, StevenBlack hosts ve EasyPrivacy engelleme listeleri, Phishing.Database listesi ve (derlenmiş bir kopyada) Python, wxPython, imapclient, pywin32, keyring ve ekran okuyucu istemci kitaplıklarıyla birlikte accessible_output2 bulunur.

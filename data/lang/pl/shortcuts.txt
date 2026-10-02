@@ -1,0 +1,103 @@
+Ogólne
+F6: Przechodzenie między panelami
+Ctrl+Tab: Następna karta
+Ctrl+Shift+Tab: Poprzednia karta
+Ctrl+W lub Ctrl+F4: Zamknij bieżącą kartę
+Escape: Zwija rozwinięty wątek, jeśli lista wiadomości ma fokus, a wątek jest rozwinięty; w przeciwnym razie zamyka bieżącą kartę (wiadomość, zapisaną wiadomość lub tworzoną wiadomość: jeśli są niezapisane zmiany, najpierw pyta)
+Klawisz aplikacji lub Shift+F10: Otwiera menu kontekstowe elementu listy lub drzewa, który ma fokus
+F1: Skróty klawiaturowe, ta strona
+Ctrl+Shift+Q: Zakończ: zawsze naprawdę zamyka ZBox, nawet gdy w Ustawieniach włączone jest „Zamykaj do zasobnika systemowego” (przy włączonym ustawieniu przycisk Zamknij okna, Alt+F4 i Ctrl+W na karcie Poczta ukrywają program w zasobniku zamiast go zamykać; polecenie Zakończ ikony w zasobniku też zawsze naprawdę zamyka)
+Ctrl+Shift+Delete: Wyczyść pamięć podręczną wiadomości offline: tylko lokalne kopie ZBox, nic na żadnym serwerze (również przycisk w Narzędzia > Konfiguracja czyszczenia pamięci podręcznej)
+
+Poczta
+Ctrl+N: Nowa wiadomość
+Ctrl+Shift+N: Nowe konto pocztowe
+F5: Pobierz pocztę dla bieżącego konta
+Shift+F5: Pobierz pocztę dla wszystkich kont
+Ctrl+Shift+J: Przejdź do listy wiadomości w Odebranych
+Ctrl+Y: Przejdź do listy folderów
+Enter na zwiniętym koncie lub folderze na liście folderów: rozwija je, tak jak strzałka w prawo
+Ctrl+Shift+B: Książka adresowa
+Ctrl+Shift+F: Znajdź wiadomości
+Ctrl+Shift+T: Pokaż powiązane wiadomości
+
+Lista wiadomości
+Delete, Shift+Delete, Archiwizuj, Oznacz/usuń gwiazdkę, Oznacz jako niechcianą/pożądaną, Przenieś do i Kopiuj do działają na każdą wiadomość w wątku, gdy są użyte na ZWINIĘTYM wierszu wątku: aby działać na jednej wiadomości, najpierw rozwiń wątek (strzałka w prawo lub Enter/Spacja)
+Ctrl+A: Zaznacz wszystkie wiadomości
+Ctrl+Shift+L: Wczytaj więcej wiadomości
+Delete: Przenieś zaznaczone wiadomości do Kosza
+Shift+Delete: Trwale usuń zaznaczone wiadomości
+Ctrl+Z: Cofnij ostatnie usunięcie, archiwizację lub oznaczenie jako niechcianą/pożądaną
+S: Oznacz/usuń gwiazdkę zaznaczonych wiadomości
+A: Archiwizuj zaznaczone wiadomości
+J: Oznacz zaznaczone wiadomości jako niechciane
+Shift+J: Oznacz zaznaczone wiadomości jako pożądane
+W: Obserwuj wątek: włącza lub wyłącza obserwowanie wątku, do którego należy zaznaczenie (także w menu Wiadomość i pod prawym przyciskiem)
+K: Ignoruj wątek: włącza lub wyłącza ignorowanie tego wątku (także w menu Wiadomość i pod prawym przyciskiem)
+M: Przenieś zaznaczone wiadomości -- otwiera menu Przenieś do z folderami
+Shift+M: Przenieś zaznaczone wiadomości, wpisując część nazwy folderu
+C: Kopiuj zaznaczone wiadomości -- otwiera menu Kopiuj do z folderami
+Powyższe S, A, J, W i K są domyślnie włączone i można je wyłączyć w Ustawieniach (w przeciwnym razie mają pierwszeństwo przed nawigacją po pierwszej literze na liście wiadomości)
+M, Shift+M i C powyżej podlegają temu samemu ustawieniu
+Enter lub Spacja na zwiniętym wątku: otwiera najnowszą nieprzeczytaną wiadomość tego wątku (najnowszą, jeśli wszystkie są przeczytane) jako pojedynczą wiadomość, w jednej karcie; potem Ctrl+Shift+Page Down i Ctrl+Shift+Page Up przechodzą przez resztę wątku, nigdy nie otwierając drugiej wiadomości. Na zwykłej wiadomości otwiera ją normalnie
+Strzałka w prawo na zwiniętym wątku: pokazuje jego wiadomości jako listę, bez otwierania żadnej; potem otwieraj je pojedynczo ich własnym Enter lub Spacją
+Ctrl+Shift+O: Otwórz wiadomość w rozmowie: cały wątek w jednej karcie, jako lista jego wiadomości z treścią zaznaczonej wiadomości poniżej. Poruszaj się po liście strzałkami, aby czytać po kolei; Enter na wierszu otwiera tę wiadomość osobno w pełnej karcie. Ta sama nazwa i ten sam klawisz co polecenie Thunderbirda
+Strzałka w lewo: zwiń wątek, w którym jest zaznaczenie
+*: Rozwiń wszystkie wątki (także Widok > Wątki); \: Zwiń wszystkie wątki (także Widok > Wątki)
+Widok > Wątki > Wszystkie / Obserwowane wątki / Ignorowane wątki filtruje wyświetlane wątki: powrót do Wszystkie zawsze przywraca wszystkie wiadomości; ten filtr nigdy nic nie usuwa z folderu
+
+Otwarta wiadomość
+Alt+A: Archiwizuj tę wiadomość, tylko gdy jej treść (tekst lub HTML) naprawdę ma fokus klawiatury; gdzie indziej Alt+A zachowuje zwykłe znaczenie i otwiera menu Konta
+Ctrl+R: Odpowiedz
+Ctrl+Shift+R: Odpowiedz wszystkim
+Ctrl+L: Przekaż
+Ctrl+Delete lub Ctrl+D: Przenieś tę wiadomość do Kosza. Sam klawisz Delete jest często przechwytywany przez czytnik ekranu, gdy wiadomość HTML ma fokus; Shift+Delete usuwa trwale
+Ctrl+Shift+Page Down: Następna wiadomość w tym wątku; Ctrl+Shift+Page Up: poprzednia. Zastępuje bieżącą kartę zamiast otwierać kolejną, więc otwarta jest zawsze tylko jedna wiadomość. Na ostatniej wiadomości (lub pierwszej przy cofaniu) informuje o tym i pyta; ponowne naciśnięcie tego samego klawisza zamyka wiadomość i kończy wątek, wracając do listy wiadomości. (Ctrl+Page Up/Down pozostają bez zmian: przełączają karty)
+Ctrl+B: Przełącz widok wiadomości (tekst/HTML)
+Ctrl+P: Drukuj
+Ctrl+Shift+P: Podgląd wydruku
+Ctrl+S: Zapisz wiadomość jako
+Ctrl+U: Odczytaj nazwę i adres nadawcy
+Ctrl+Shift+U: Odczytaj nadawcę i kopiuj adres
+Ctrl+Shift+I: Pokaż zdalne treści w tej wiadomości
+Ctrl+Shift+=: Zwiększ czcionkę wiadomości
+Ctrl+Shift+-: Zmniejsz czcionkę wiadomości
+Ctrl+Shift+0: Przywróć rozmiar czcionki wiadomości
+
+Pisanie wiadomości
+Ctrl+Enter lub Alt+S: Wyślij
+Ctrl+S: Zapisz wersję roboczą
+Ctrl+Shift+A: Dołącz plik
+Ctrl+Shift+S: Wstaw podpis konta wybranego w polu Od
+Ctrl+Shift+V: Wklej jako cytat
+Ctrl+Shift+W: Liczba słów
+Ctrl+Shift+P: Podgląd wiadomości tak, jak zostanie wysłana
+Escape, Ctrl+W lub Ctrl+F4: Zamknij kartę tworzenia wiadomości: jeśli coś nie jest zapisane, najpierw pyta, proponując Zapisz wersję roboczą, Odrzuć lub Kontynuuj edycję
+Wszystkie poniższe polecenia są też w menu Tworzenie, które Alt+C otwiera nawet wtedy, gdy fokus jest w treści wiadomości
+
+Formatowanie podczas pisania
+Ctrl+B: Pogrubienie
+Ctrl+I: Kursywa
+Ctrl+Shift+X: Przekreślenie
+Ctrl+Shift+8: Lista punktowana
+Ctrl+Shift+7: Lista numerowana
+Ctrl+Shift+9: Cytat
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Nagłówek
+Ctrl+K: Wstaw odnośnik
+Ctrl+Shift+K: Odczytaj formatowanie aktywne w miejscu kursora
+Ctrl+Shift+M: Otwórz menu Formatowanie, gdziekolwiek jest fokus, także w treści wiadomości
+
+Pisownia podczas pisania
+Ctrl+Shift+F7: Sprawdź pisownię
+Ctrl+Shift+F9: Przejdź do następnego błędu pisowni
+Ctrl+Shift+F8: Dodaj do słownika słowo, na którym zatrzymało się sprawdzanie
+
+Ten sam klawisz w dwóch miejscach
+Ctrl+S: Zapisz wersję roboczą podczas pisania, Zapisz wiadomość jako w otwartej wiadomości
+Ctrl+B: Pogrubienie podczas pisania, przełączanie tekst/HTML w otwartej wiadomości
+Ctrl+Shift+P: Podgląd podczas pisania, Podgląd wydruku w otwartej wiadomości
+Alt+A: Archiwizuj, ale tylko gdy treść wiadomości ma fokus klawiatury; wszędzie indziej otwiera menu Konta
+
+Diagnostyka
+Ctrl+Shift+F12: Diagnostyka skrótów: zapisuje w dzienniku debugowania wiersz dla każdej kombinacji klawiszy naciśniętej na karcie tworzenia wiadomości, aby pokazać, co naprawdę otrzymał klawisz. Domyślnie wyłączona, ten sam klawisz wyłącza ją ponownie; stan jest odczytywany w obu przypadkach

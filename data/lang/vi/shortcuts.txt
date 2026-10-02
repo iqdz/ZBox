@@ -1,0 +1,103 @@
+Chung
+F6: Di chuyển giữa các ngăn
+Ctrl+Tab: Thẻ tiếp theo
+Ctrl+Shift+Tab: Thẻ trước
+Ctrl+W hoặc Ctrl+F4: Đóng thẻ hiện tại
+Escape: Thu gọn chủ đề đang mở rộng nếu danh sách thư có tiêu điểm và một chủ đề đang mở rộng; nếu không, đóng thẻ hiện tại (thư, thư đã lưu hoặc thư đang soạn: hỏi trước nếu có thay đổi chưa lưu)
+Phím Ứng dụng hoặc Shift+F10: Mở menu ngữ cảnh của mục trong danh sách hoặc cây đang có tiêu điểm
+F1: Phím tắt, trang này
+Ctrl+Shift+Q: Thoát: luôn thực sự thoát ZBox, kể cả khi bật "Đóng xuống khay hệ thống" trong Cài đặt (khi bật cài đặt đó, nút Đóng của cửa sổ, Alt+F4 và Ctrl+W trên thẻ Thư ẩn xuống khay thay vì thoát; mục Thoát của biểu tượng khay cũng luôn thực sự thoát)
+Ctrl+Shift+Delete: Xóa bộ nhớ đệm thư ngoại tuyến: chỉ các bản sao cục bộ của ZBox, không gì trên máy chủ (cũng có nút trong Công cụ > Cấu hình dọn bộ nhớ đệm)
+
+Thư
+Ctrl+N: Thư mới
+Ctrl+Shift+N: Tài khoản email mới
+F5: Nhận thư cho tài khoản hiện tại
+Shift+F5: Nhận thư cho tất cả tài khoản
+Ctrl+Shift+J: Chuyển đến danh sách thư trong Hộp thư đến
+Ctrl+Y: Đi tới danh sách thư mục
+Enter trên tài khoản hoặc thư mục đang thu gọn trong danh sách thư mục: mở rộng nó, giống mũi tên phải
+Ctrl+Shift+B: Sổ địa chỉ
+Ctrl+Shift+F: Tìm thư
+Ctrl+Shift+T: Hiện thư liên quan
+
+Danh sách thư
+Delete, Shift+Delete, Lưu trữ, Gắn/Bỏ sao, Đánh dấu là thư rác/không phải thư rác, Di chuyển đến và Sao chép đến đều áp dụng cho mọi thư trong chủ đề khi dùng trên một hàng chủ đề ĐÃ THU GỌN: hãy mở rộng chủ đề trước (mũi tên phải hoặc Enter/Space) để thao tác trên một thư
+Ctrl+A: Chọn tất cả thư
+Ctrl+Shift+L: Tải thêm thư
+Delete: Chuyển các thư đã chọn vào Thùng rác
+Shift+Delete: Xóa vĩnh viễn các thư đã chọn
+Ctrl+Z: Hoàn tác lần xóa, lưu trữ, hoặc đánh dấu thư rác/không phải thư rác gần nhất
+S: Gắn/bỏ sao cho các thư đã chọn
+A: Lưu trữ các thư đã chọn
+J: Đánh dấu các thư đã chọn là thư rác
+Shift+J: Đánh dấu các thư đã chọn không phải thư rác
+W: Theo dõi chủ đề: bật/tắt theo dõi chủ đề chứa vùng chọn (cũng có trong menu Thư và khi nhấp chuột phải)
+K: Bỏ qua chủ đề: bật/tắt bỏ qua chủ đề này (cũng có trong menu Thư và khi nhấp chuột phải)
+M: Chuyển các thư đã chọn -- mở menu Chuyển tới kèm danh sách thư mục
+Shift+M: Chuyển các thư đã chọn bằng cách gõ một phần tên thư mục
+C: Sao chép các thư đã chọn -- mở menu Sao chép tới kèm danh sách thư mục
+S, A, J, W và K ở trên bật theo mặc định và có thể tắt trong Cài đặt (nếu không, chúng được ưu tiên hơn điều hướng theo chữ cái đầu trong danh sách thư)
+M, Shift+M và C ở trên theo cùng một thiết lập
+Enter hoặc Space trên chủ đề đã thu gọn: mở thư chưa đọc mới nhất của chủ đề đó (mới nhất nếu đã đọc hết) như một thư đơn, trong một thẻ; sau đó Ctrl+Shift+Page Down và Ctrl+Shift+Page Up đi qua phần còn lại của chủ đề mà không bao giờ mở thư thứ hai. Trên thư thường, mở như bình thường
+Mũi tên phải trên chủ đề đã thu gọn: hiện các thư của chủ đề dưới dạng danh sách, không mở thư nào; sau đó mở từng thư bằng Enter hoặc Space của thư đó
+Ctrl+Shift+O: Mở thư trong cuộc hội thoại: toàn bộ chủ đề trong một thẻ, dạng danh sách các thư với nội dung thư đang chọn bên dưới. Dùng phím mũi tên để đọc từng thư; Enter trên một hàng mở riêng thư đó trong thẻ đầy đủ. Cùng tên và cùng phím với lệnh của Thunderbird
+Mũi tên trái: thu gọn chủ đề chứa vùng chọn
+*: Mở rộng tất cả chủ đề (cũng trong Hiển thị > Chủ đề); \: Thu gọn tất cả chủ đề (cũng trong Hiển thị > Chủ đề)
+Hiển thị > Chủ đề > Tất cả / Chủ đề đang theo dõi / Chủ đề đã bỏ qua lọc các chủ đề được hiển thị: chuyển về Tất cả luôn hiện lại mọi thư; bộ lọc này không bao giờ xóa gì khỏi thư mục
+
+Thư đang mở
+Alt+A: Lưu trữ thư này, chỉ khi nội dung thư (Văn bản hoặc HTML) thực sự có tiêu điểm bàn phím; ở nơi khác, Alt+A vẫn mở menu Tài khoản như thường
+Ctrl+R: Trả lời
+Ctrl+Shift+R: Trả lời tất cả
+Ctrl+L: Chuyển tiếp
+Ctrl+Delete hoặc Ctrl+D: Chuyển thư này vào Thùng rác. Phím Delete riêng thường bị trình đọc màn hình chiếm khi thư HTML có tiêu điểm; Shift+Delete xóa vĩnh viễn
+Ctrl+Shift+Page Down: Thư tiếp theo trong chủ đề này; Ctrl+Shift+Page Up: thư trước. Thay thế thẻ hiện tại thay vì mở thẻ khác, nên mỗi lúc chỉ có một thư mở. Ở thư cuối (hoặc thư đầu khi đi lùi) sẽ báo và hỏi; nhấn lại cùng phím đó sẽ đóng thư và kết thúc chủ đề, quay về danh sách thư. (Ctrl+Page Up/Down không bị ảnh hưởng: chúng chuyển thẻ)
+Ctrl+B: Chuyển chế độ xem thư (Văn bản/HTML)
+Ctrl+P: In
+Ctrl+Shift+P: Xem trước khi in
+Ctrl+S: Lưu thư thành
+Ctrl+U: Đọc tên và địa chỉ người gửi
+Ctrl+Shift+U: Đọc người gửi và sao chép địa chỉ
+Ctrl+Shift+I: Hiện nội dung từ xa trong thư này
+Ctrl+Shift+=: Tăng cỡ chữ thư
+Ctrl+Shift+-: Giảm cỡ chữ thư
+Ctrl+Shift+0: Đặt lại cỡ chữ thư
+
+Soạn thư
+Ctrl+Enter hoặc Alt+S: Gửi
+Ctrl+S: Lưu thư nháp
+Ctrl+Shift+A: Đính kèm tập tin
+Ctrl+Shift+S: Chèn chữ ký của tài khoản trong trường Từ
+Ctrl+Shift+V: Dán dưới dạng trích dẫn
+Ctrl+Shift+W: Đếm từ
+Ctrl+Shift+P: Xem trước thư như khi được gửi
+Escape, Ctrl+W hoặc Ctrl+F4: Đóng thẻ soạn thư: nếu có gì chưa lưu sẽ hỏi trước, với các lựa chọn Lưu thư nháp, Bỏ hoặc Tiếp tục sửa
+Tất cả các lệnh dưới đây cũng có trong menu Soạn thư, mà Alt+C mở được kể cả khi tiêu điểm ở trong nội dung thư
+
+Định dạng khi soạn thư
+Ctrl+B: Đậm
+Ctrl+I: Nghiêng
+Ctrl+Shift+X: Gạch ngang
+Ctrl+Shift+8: Danh sách dấu đầu dòng
+Ctrl+Shift+7: Danh sách đánh số
+Ctrl+Shift+9: Trích dẫn
+Ctrl+Shift+6: Mã
+Ctrl+Alt+1: Tiêu đề
+Ctrl+K: Chèn liên kết
+Ctrl+Shift+K: Đọc định dạng đang có tại con trỏ
+Ctrl+Shift+M: Mở menu Định dạng ở bất kỳ nơi nào có tiêu điểm, kể cả nội dung thư
+
+Chính tả khi soạn thư
+Ctrl+Shift+F7: Kiểm tra chính tả
+Ctrl+Shift+F9: Đến lỗi chính tả tiếp theo
+Ctrl+Shift+F8: Thêm từ mà trình kiểm tra đang dừng vào từ điển
+
+Cùng một phím ở hai nơi
+Ctrl+S: Lưu thư nháp khi soạn thư, Lưu thư thành trong thư đang mở
+Ctrl+B: Đậm khi soạn thư, chuyển Văn bản/HTML trong thư đang mở
+Ctrl+Shift+P: Xem trước khi soạn thư, Xem trước khi in trong thư đang mở
+Alt+A: Lưu trữ, nhưng chỉ khi nội dung thư có tiêu điểm bàn phím; ở mọi nơi khác, mở menu Tài khoản
+
+Chẩn đoán
+Ctrl+Shift+F12: Chẩn đoán phím tắt: ghi một dòng vào nhật ký gỡ lỗi cho mỗi tổ hợp phím được nhấn trong thẻ soạn thư, để chứng minh phím thực sự nhận được gì. Tắt theo mặc định, và cùng phím đó tắt lại; trạng thái được đọc ở cả hai lần

@@ -1,0 +1,103 @@
+Umum
+F6: Bergerak antara anak tetingkap
+Ctrl+Tab: Tab seterusnya
+Ctrl+Shift+Tab: Tab sebelumnya
+Ctrl+W atau Ctrl+F4: Tutup tab semasa
+Escape: Meruntuhkan thread yang dikembangkan jika senarai mesej mempunyai fokus dan thread dikembangkan; jika tidak, menutup tab semasa (mesej, mesej tersimpan atau mesej yang dikarang: jika ada perubahan belum disimpan ia bertanya dahulu)
+Kekunci Aplikasi atau Shift+F10: Membuka menu konteks item senarai atau pepohon yang mempunyai fokus
+F1: Pintasan Papan Kekunci, halaman ini
+Ctrl+Shift+Q: Keluar: sentiasa benar-benar keluar dari ZBox, walaupun "Tutup ke dulang sistem" dihidupkan dalam Tetapan (butang Tutup tetingkap, Alt+F4 dan Ctrl+W pada tab Mel menyembunyikan ke dulang dan bukannya keluar apabila tetapan itu hidup; item Keluar ikon dulang juga sentiasa benar-benar keluar)
+Ctrl+Shift+Delete: Kosongkan cache mesej luar talian: salinan setempat ZBox sahaja, tiada apa-apa pada mana-mana pelayan (juga butang dalam Alatan > Konfigurasi Pembersihan Cache)
+
+Mel
+Ctrl+N: Mesej baru
+Ctrl+Shift+N: Akaun e-mel baru
+F5: Dapatkan mel untuk akaun semasa
+Shift+F5: Dapatkan mel untuk semua akaun
+Ctrl+Shift+J: Lompat ke Senarai Mesej Peti masuk
+Ctrl+Y: Pergi ke Senarai Folder
+Enter pada akaun atau folder yang tertutup dalam senarai folder: membukanya, seperti anak panah kanan
+Ctrl+Shift+B: Buku Alamat
+Ctrl+Shift+F: Cari mesej
+Ctrl+Shift+T: Papar mesej berkaitan
+
+Senarai mesej
+Delete, Shift+Delete, Arkib, Bintangkan/Nyahbintangkan, Tandakan Sebagai Mel Remeh/Bukan Mel Remeh, Pindah Ke dan Salin Ke semuanya digunakan pada setiap mesej dalam thread apabila digunakan pada baris thread yang DIRUNTUHKAN: kembangkan thread dahulu (anak panah kanan atau Enter/Space) untuk bertindak pada satu mesej
+Ctrl+A: Pilih semua mesej
+Ctrl+Shift+L: Muatkan lebih banyak mesej
+Delete: Pindahkan mesej yang dipilih ke Sampah
+Shift+Delete: Buang mesej yang dipilih secara kekal
+Ctrl+Z: Batalkan pembuangan, pengarkiban, atau tandaan mel remeh/bukan mel remeh yang terakhir
+S: Bintangkan/nyahbintangkan mesej yang dipilih
+A: Arkibkan mesej yang dipilih
+J: Tandakan mesej yang dipilih sebagai mel remeh
+Shift+J: Tandakan mesej yang dipilih sebagai bukan mel remeh
+W: Ikuti Thread: togol mengikuti thread yang mengandungi pilihan (juga dalam menu Mesej dan klik kanan)
+K: Abaikan Thread: togol mengabaikan thread ini (juga dalam menu Mesej dan klik kanan)
+M: Alih mesej yang dipilih -- membuka menu Alih ke berisi folder
+Shift+M: Alih mesej yang dipilih dengan menaip sebahagian nama folder
+C: Salin mesej yang dipilih -- membuka menu Salin ke berisi folder
+S, A, J, W dan K di atas hidup secara lalai dan boleh dimatikan dalam Tetapan (jika hidup ia diutamakan berbanding navigasi huruf pertama dalam senarai mesej)
+M, Shift+M dan C di atas mengikut tetapan yang sama
+Enter atau Space pada thread yang diruntuhkan: membuka mesej belum dibaca terbaru dalam thread itu (terbaru jika semuanya sudah dibaca) sebagai satu mesej, dalam satu tab; kemudian Ctrl+Shift+Page Down dan Ctrl+Shift+Page Up melalui baki thread tanpa pernah membuka mesej kedua. Pada mesej biasa, membukanya seperti biasa
+Anak panah kanan pada thread yang diruntuhkan: memaparkan mesejnya sebagai senarai, tanpa membuka satu pun; kemudian buka satu demi satu dengan Enter atau Space masing-masing
+Ctrl+Shift+O: Buka Mesej dalam Perbualan: seluruh thread dalam satu tab, sebagai senarai mesejnya dengan teks mesej yang dipilih di bawahnya. Anak panah melalui senarai untuk membacanya satu demi satu; Enter pada baris membuka mesej itu sendiri dalam tab penuhnya. Nama dan kekunci sama seperti arahan Thunderbird
+Anak panah kiri: runtuhkan thread yang mengandungi pilihan
+*: Kembangkan Semua Thread (juga Papar > Thread); \: Runtuh Semua Thread (juga Papar > Thread)
+Papar > Thread > Semua / Thread Diikuti / Thread Diabaikan menapis thread yang dipaparkan: kembali ke Semua sentiasa memaparkan semula setiap mesej; penapis ini tidak pernah membuang apa-apa daripada folder
+
+Mesej yang dibuka
+Alt+A: Arkibkan mesej ini, hanya apabila teksnya (Teks atau HTML) benar-benar mempunyai fokus papan kekunci; di tempat lain Alt+A mengekalkan makna biasanya membuka menu Akaun
+Ctrl+R: Balas
+Ctrl+Shift+R: Balas Semua
+Ctrl+L: Kirim semula
+Ctrl+Delete atau Ctrl+D: Pindahkan mesej ini ke Sampah. Delete sahaja sering diambil oleh pembaca skrin apabila mesej HTML mempunyai fokus; Shift+Delete membuang secara kekal
+Ctrl+Shift+Page Down: Mesej seterusnya dalam thread ini; Ctrl+Shift+Page Up: sebelumnya. Menggantikan tab semasa dan bukannya membuka tab lain, jadi hanya satu mesej dibuka pada satu masa. Pada mesej terakhir (atau pertama semasa ke belakang) ia memberitahu dan bertanya; menekan kekunci yang sama sekali lagi menutup mesej dan menamatkan thread, kembali ke senarai mesej. (Ctrl+Page Up/Down tidak disentuh: ia menukar tab)
+Ctrl+B: Tukar paparan mesej (Teks/HTML)
+Ctrl+P: Cetak
+Ctrl+Shift+P: Previu Cetakan
+Ctrl+S: Simpan Mesej Sebagai
+Ctrl+U: Umumkan nama dan alamat pengirim
+Ctrl+Shift+U: Umumkan pengirim dan salin alamat
+Ctrl+Shift+I: Papar kandungan jauh dalam mesej ini
+Ctrl+Shift+=: Besarkan fon mesej
+Ctrl+Shift+-: Kecilkan fon mesej
+Ctrl+Shift+0: Tetapkan semula saiz fon mesej
+
+Mengarang mesej
+Ctrl+Enter atau Alt+S: Hantar
+Ctrl+S: Simpan Draf
+Ctrl+Shift+A: Lampir Fail
+Ctrl+Shift+S: Sisip tandatangan akaun dalam Daripada
+Ctrl+Shift+V: Tampal Sebagai Petikan
+Ctrl+Shift+W: Kiraan perkataan
+Ctrl+Shift+P: Previu mesej seperti yang akan dihantar
+Escape, Ctrl+W atau Ctrl+F4: Tutup tab karang: jika ada apa-apa yang belum disimpan ia bertanya dahulu, menawarkan Simpan Draf, Buang atau Terus edit
+Semua arahan di bawah juga ada dalam menu Karang, yang dibuka oleh Alt+C walaupun fokus berada dalam teks mesej
+
+Pemformatan, semasa mengarang
+Ctrl+B: Tebal
+Ctrl+I: Italik
+Ctrl+Shift+X: Garis lorek
+Ctrl+Shift+8: Senarai berbulet
+Ctrl+Shift+7: Senarai bernombor
+Ctrl+Shift+9: Petikan
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Tajuk
+Ctrl+K: Sisip pautan
+Ctrl+Shift+K: Umumkan pemformatan yang aktif di kursor
+Ctrl+Shift+M: Buka menu Format di mana sahaja fokus berada, termasuk teks mesej
+
+Ejaan, semasa mengarang
+Ctrl+Shift+F7: Semak Ejaan
+Ctrl+Shift+F9: Pergi ke salah ejaan seterusnya
+Ctrl+Shift+F8: Tambah perkataan tempat semakan berhenti ke kamus
+
+Kekunci yang sama di dua tempat
+Ctrl+S: Simpan Draf semasa mengarang, Simpan Mesej Sebagai dalam mesej yang dibuka
+Ctrl+B: Tebal semasa mengarang, tukar Teks/HTML dalam mesej yang dibuka
+Ctrl+Shift+P: Previu semasa mengarang, Previu Cetakan dalam mesej yang dibuka
+Alt+A: Arkib, tetapi hanya apabila teks mesej mempunyai fokus papan kekunci; di tempat lain, membuka menu Akaun
+
+Diagnostik
+Ctrl+Shift+F12: Diagnostik kekunci pintas: menulis satu baris ke log nyahpepijat untuk setiap kombinasi yang ditekan dalam tab karang, untuk membuktikan apa yang sebenarnya diterima oleh kekunci. Mati secara lalai, dan kekunci yang sama mematikannya semula; status diumumkan dalam kedua-dua arah

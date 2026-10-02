@@ -1,0 +1,103 @@
+Generale
+F6: Passa da un pannello all’altro
+Ctrl+Tab: Scheda successiva
+Ctrl+Shift+Tab: Scheda precedente
+Ctrl+W o Ctrl+F4: Chiudi la scheda corrente
+Esc: Comprime una discussione espansa se l’elenco messaggi ha il focus e una discussione è espansa; altrimenti chiude la scheda corrente (messaggio, messaggio salvato o messaggio in composizione: se ci sono modifiche non salvate chiede prima)
+Tasto Applicazioni o Shift+F10: Apre il menu contestuale dell’elemento dell’elenco o dell’albero che ha il focus
+F1: Scorciatoie da tastiera, questa pagina
+Ctrl+Shift+Q: Esci: chiude sempre davvero ZBox, anche quando «Chiudi nell’area di notifica» è attivo nelle Impostazioni (il pulsante Chiudi della finestra, Alt+F4 e Ctrl+W nella scheda Posta nascondono nell’area di notifica invece di uscire quando questa impostazione è attiva; anche la voce Esci dell’icona dell’area di notifica chiude sempre davvero)
+Ctrl+Shift+Delete: Svuota la cache dei messaggi non in linea: solo le copie locali di ZBox, nulla su alcun server (anche un pulsante in Strumenti > Configurazione pulizia cache)
+
+Posta
+Ctrl+N: Nuovo messaggio
+Ctrl+Shift+N: Nuovo account email
+F5: Scarica la posta dell’account corrente
+Shift+F5: Scarica la posta di tutti gli account
+Ctrl+Shift+J: Vai all’elenco messaggi di Posta in arrivo
+Ctrl+Y: Vai all'elenco delle cartelle
+Enter su un account o una cartella chiusi nell'elenco delle cartelle: lo apre, come la freccia destra
+Ctrl+Shift+B: Rubrica
+Ctrl+Shift+F: Cerca messaggi
+Ctrl+Shift+T: Mostra messaggi correlati
+
+L’elenco messaggi
+Delete, Shift+Delete, Archivia, Contrassegna come speciale/Togli speciale, Segna come indesiderata/non indesiderata, Sposta in e Copia in si applicano tutti a ogni messaggio di una discussione quando vengono usati su una riga di discussione COMPRESSA: espandere prima la discussione (freccia destra o Invio/Spazio) per agire su un solo messaggio
+Ctrl+A: Seleziona tutti i messaggi
+Ctrl+Shift+L: Carica altri messaggi
+Delete: Sposta nel Cestino i messaggi selezionati
+Shift+Delete: Elimina definitivamente i messaggi selezionati
+Ctrl+Z: Annulla l’ultima eliminazione, archiviazione o segnatura come indesiderata o non indesiderata
+S: Contrassegna come speciale/togli speciale ai messaggi selezionati
+A: Archivia i messaggi selezionati
+J: Segna come indesiderata i messaggi selezionati
+Shift+J: Segna come non indesiderata i messaggi selezionati
+W: Tieni d’occhio la discussione: attiva o disattiva il controllo della discussione a cui appartiene la selezione (anche nel menu Messaggio e con il clic destro)
+K: Ignora la discussione: attiva o disattiva l’ignorare questa discussione (anche nel menu Messaggio e con il clic destro)
+M: Sposta i messaggi selezionati -- apre il menu Sposta in con le cartelle
+Shift+M: Sposta i messaggi selezionati digitando parte del nome di una cartella
+C: Copia i messaggi selezionati -- apre il menu Copia in con le cartelle
+S, A, J, W e K sopra sono attivi per impostazione predefinita e si possono disattivare nelle Impostazioni (altrimenti hanno la precedenza sulla navigazione per iniziale nell’elenco messaggi)
+M, Shift+M e C qui sopra seguono la stessa impostazione
+Invio o Spazio su una discussione compressa: apre il messaggio non letto più recente di quella discussione (il più recente se è tutta letta) come messaggio singolo, in una sola scheda; poi Ctrl+Shift+Pagina giù e Ctrl+Shift+Pagina su scorrono il resto della discussione senza mai aprire un secondo messaggio. Su un messaggio normale, lo apre normalmente
+Freccia destra su una discussione compressa: mostra i suoi messaggi come elenco, senza aprirne nessuno; aprirli poi uno alla volta con il loro Invio o Spazio
+Ctrl+Shift+O: Apri messaggio nella conversazione: l’intera discussione in una scheda, come elenco dei suoi messaggi con il corpo del messaggio selezionato sotto. Scorrere l’elenco con le frecce per leggerli uno alla volta; Invio su una riga apre quel messaggio da solo nella sua scheda completa. Stesso nome e stesso tasto del comando di Thunderbird
+Freccia sinistra: comprimi la discussione in cui si trova la selezione
+*: Espandi tutte le discussioni (anche Visualizza > Discussioni); \: Comprimi tutte le discussioni (anche Visualizza > Discussioni)
+Visualizza > Discussioni > Tutte / Discussioni tenute d’occhio / Discussioni ignorate filtra le discussioni mostrate: tornare a Tutte fa sempre riapparire tutti i messaggi; questo filtro non rimuove mai nulla dalla cartella
+
+Un messaggio aperto
+Alt+A: Archivia questo messaggio, solo quando il suo corpo (Testo o HTML) ha davvero il focus della tastiera; altrove, Alt+A mantiene il suo significato abituale di apertura del menu Account
+Ctrl+R: Rispondi
+Ctrl+Shift+R: Rispondi a tutti
+Ctrl+L: Inoltra
+Ctrl+Delete o Ctrl+D: Sposta questo messaggio nel Cestino. Delete da solo viene spesso preso dall’utilità per la lettura dello schermo quando un messaggio HTML ha il focus; Shift+Delete elimina definitivamente
+Ctrl+Shift+Pagina giù: Messaggio successivo di questa discussione; Ctrl+Shift+Pagina su: precedente. Sostituisce la scheda corrente invece di aprirne un’altra, così è aperto un solo messaggio alla volta. All’ultimo messaggio (o al primo andando indietro) lo annuncia e chiede; premendo di nuovo lo stesso tasto il messaggio si chiude e la discussione termina, tornando all’elenco messaggi. (Ctrl+Pagina su/giù non sono toccati: cambiano scheda)
+Ctrl+B: Cambia la visualizzazione del messaggio (Testo/HTML)
+Ctrl+P: Stampa
+Ctrl+Shift+P: Anteprima di stampa
+Ctrl+S: Salva messaggio come
+Ctrl+U: Annuncia il nome e l’indirizzo del mittente
+Ctrl+Shift+U: Annuncia il mittente e copia l’indirizzo
+Ctrl+Shift+I: Mostra i contenuti remoti di questo messaggio
+Ctrl+Shift+=: Aumenta il carattere del messaggio
+Ctrl+Shift+-: Riduci il carattere del messaggio
+Ctrl+Shift+0: Reimposta la dimensione del carattere del messaggio
+
+Scrittura di un messaggio
+Ctrl+Invio o Alt+S: Invia
+Ctrl+S: Salva bozza
+Ctrl+Shift+A: Allega file
+Ctrl+Shift+S: Inserisci la firma dell’account indicato in Da
+Ctrl+Shift+V: Incolla come citazione
+Ctrl+Shift+W: Conteggio parole
+Ctrl+Shift+P: Anteprima del messaggio come verrà inviato
+Esc, Ctrl+W o Ctrl+F4: Chiudi la scheda di composizione: se qualcosa non è salvato chiede prima, proponendo Salva bozza, Scarta o Continua a modificare
+Tutti i comandi qui sotto si trovano anche nel menu Componi, che Alt+C apre anche quando il focus è nel corpo del messaggio
+
+Formattazione, durante la scrittura
+Ctrl+B: Grassetto
+Ctrl+I: Corsivo
+Ctrl+Shift+X: Barrato
+Ctrl+Shift+8: Elenco puntato
+Ctrl+Shift+7: Elenco numerato
+Ctrl+Shift+9: Citazione
+Ctrl+Shift+6: Codice
+Ctrl+Alt+1: Titolo
+Ctrl+K: Inserisci collegamento
+Ctrl+Shift+K: Annuncia la formattazione attiva alla posizione del cursore
+Ctrl+Shift+M: Apri il menu Formato ovunque sia il focus, compreso il corpo del messaggio
+
+Ortografia, durante la scrittura
+Ctrl+Shift+F7: Controlla ortografia
+Ctrl+Shift+F9: Vai all’errore successivo
+Ctrl+Shift+F8: Aggiungi al dizionario la parola su cui si è fermato il controllo
+
+Lo stesso tasto in due posti
+Ctrl+S: Salva bozza durante la scrittura, Salva messaggio come in un messaggio aperto
+Ctrl+B: Grassetto durante la scrittura, passa da Testo a HTML in un messaggio aperto
+Ctrl+Shift+P: Anteprima durante la scrittura, Anteprima di stampa in un messaggio aperto
+Alt+A: Archivia, ma solo quando il corpo di un messaggio ha il focus della tastiera; ovunque altrove, apre il menu Account
+
+Diagnostica
+Ctrl+Shift+F12: Diagnostica scorciatoie: scrive una riga nel registro di debug per ogni combinazione premuta in una scheda di composizione, per dimostrare cosa ha davvero ricevuto un tasto. Disattivata per impostazione predefinita, e lo stesso tasto la disattiva di nuovo; lo stato viene annunciato in entrambi i casi

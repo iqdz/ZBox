@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Română
+code = ro
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Mesaj trimis.
+draft_saved = Ciornă salvată.
+signature_inserted = Semnătură inserată.
+signature_none = Acest cont nu are semnătură.
+signature_saved = Semnătură salvată.
+signature_not_saved = Semnătura nu a fost salvată.
+pasted_as_quotation = Lipit ca citat.
+clipboard_empty = Nu este nimic în clipboard.
+word_count = {words} cuvinte, {characters} caractere.
+report_copied = Raport copiat.
+compose_tab_needed = Comanda necesită o filă de scriere.
+attach_file_instead = Fișierele plasate prin tragere nu sunt puse în textul mesajului. Folosiți Atașează fișier pentru a trimite unul.
+
+# Formatting in the message body
+formatting_here = Formatare aici: {formatting}.
+no_formatting_here = Nicio formatare aici, text simplu.
+
+# Spelling
+nothing_to_check = Nu este nimic de verificat.
+no_misspellings = Nicio greșeală de ortografie.
+spelling_dictionary_unavailable = Dicționarul ortografic nu este disponibil.
+next_misspelling_first = Folosiți mai întâi Următoarea greșeală.
+word_added = {word} a fost adăugat în dicționar.
+word_not_added = {word} nu a putut fi adăugat.
+corrections_applied_one = 1 corectură aplicată.
+corrections_applied_many = {count} corecturi aplicate.
+corrections_applied_partly = {applied} din {total} corecturi aplicate. Restul au fost refuzate; consultați jurnalul.
+occurrences_replaced_one = 1 apariție înlocuită.
+occurrences_replaced_many = {count} apariții înlocuite.
+
+# Reading mail
+message_did_not_open = Mesajul nu s-a deschis. Serverul nu a răspuns. Apăsați Enter pentru a încerca din nou.
+thread_open = {messages} în această conversație. Apăsați din nou pentru a închide.
+no_thread_selected = Nicio conversație selectată.
+thread_watched = Conversația este urmărită.
+thread_not_watched = Conversația nu mai este urmărită.
+thread_ignored = Conversația este ignorată.
+thread_not_ignored = Conversația nu mai este ignorată.
+none_found = Nu s-a găsit nimic.
+refreshing_this_folder = Se reîmprospătează acest dosar.
+refreshing_all_accounts = Se reîmprospătează toate conturile.
+message_view_html = Vizualizare mesaj: HTML (randat).
+message_view_text = Vizualizare mesaj: text.
+html_view_still_loading = Mesajul încă se încarcă. Escape îl închide.
+message_still_opening = Se deschide mesajul. Serverul este lent.
+remote_content_blocked = Conținut la distanță blocat.
+remote_content_unblocked = Conținut la distanță deblocat.
+remote_content_already_showing = Conținutul la distanță este deja afișat în acest mesaj.
+archived = Arhivat.
+copied_to_folder = Copiat în {to_folder}.
+deleted_one = Mesaj șters definitiv.
+deleted_many = {count} mesaje șterse definitiv.
+trashed_one = Mesaj mutat în Coșul de gunoi.
+trashed_many = {count} mesaje mutate în Coșul de gunoi.
+
+# Accounts and new mail
+no_account_yet = Nu există încă un cont la care să săriți.
+inbox_landed = Mesaje primite {name}.
+account_enabled = {name} activat.
+auto_check_paused = Verificarea automată a fost întreruptă pentru {account}.
+auto_check_resumed = Verificarea automată este pornită pentru {account}.
+account_disabled = {name} dezactivat.
+new_mail_one = 1 mesaj nou pentru {name}.
+new_mail_many = {count} mesaje noi pentru {name}.
+refresh_all_done_one = 1 cont reîmprospătat.
+refresh_all_done_many = {count} conturi reîmprospătate.
+refresh_all_done_failures = {count} conturi reîmprospătate, {failed} nu au putut fi reîmprospătate.
+refresh_all_done_failures_one = {count} cont reîmprospătat, {failed} nu au putut fi reîmprospătate.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adresă copiată.
+sender_no_address = {sender}. Nicio adresă de copiat.
+clipboard_not_opened = {sender}. Clipboardul nu a putut fi deschis.
+
+# The signature editor
+signature_page_formatted = Formatat. Acesta este conținutul care va fi salvat.
+signature_page_html = Sursă HTML. Acesta este conținutul care va fi salvat.
+signature_page_html_still_wins = Formatat. Sursa HTML este în continuare cea care va fi salvată.
+
+# Background work
+phishing_list_updating = Lista de phishing se actualizează în fundal.
+cache_cleared = {files} fișier(e) din cache șterse, {size} MB.
+hotkeys_diagnostic_on = Diagnosticare taste rapide pornită, bifat
+hotkeys_diagnostic_off = Diagnosticare taste rapide oprită, nebifat
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arhivează
+action_delete = Șterge
+action_delete_permanently = Șterge definitiv
+action_mark_as_junk = Marchează ca nesolicitat
+action_mark_as_not_junk = Marchează ca nefiind nesolicitat
+action_move_to = Mută în
+action_copy_to = Copiază în
+action_mark_message = Marchează mesajul
+action_undo = Anulează
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Anulat: {action}.
+undo_done_many = Anulat: {action} pentru {count} mesaje.
+junk_marked_one = Marcat ca nesolicitat.
+junk_marked_many = {count} mesaje marcate ca nesolicitate.
+junk_no_new_sender = Niciun expeditor nou blocat: deja blocat, o listă de discuții sau una dintre adresele dvs.
+not_junk_marked_one = Marcat ca nefiind nesolicitat.
+not_junk_marked_many = {count} mesaje marcate ca nefiind nesolicitate.
+moved_to_one = Mutat în {to_folder}.
+moved_to_many = {count} mesaje mutate în {to_folder}.
+copied_to_many = {count} mesaje copiate în {to_folder}.
+marked_read = Marcat ca citit.
+marked_unread = Marcat ca necitit.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Anulat după {completed} din {total}. {succeeded} reușite, {failed} eșuate.
+bulk_failed_one = {done} {failed} din 1 mesaj a eșuat.
+bulk_failed_many = {done} {failed} din {total} mesaje au eșuat.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Aldin
+format_word_italic = Cursiv
+format_word_strike = Tăiat
+format_word_href = Link
+format_word_bullet = Listă cu marcatori
+format_word_number = Listă numerotată
+format_word_quote = Citat
+format_word_code = Cod
+format_word_heading1 = Titlu
+format_applied = {formatting} aplicat.
+format_inserted = {formatting} inserat.
+format_not_available = {formatting} nu este disponibil în textul simplu al mesajului.
+format_on = {formatting} pornit
+format_off = {formatting} oprit
+link_applied = Link aplicat.
+link_applied_to_selection = Link aplicat selecției.
+plain_body_formatting = Textul simplu al mesajului își arată formatarea ca etichete.
+
+# Reaching either end of a thread
+thread_edge_first = Primul mesaj din această conversație. Apăsați din nou pentru a închide.
+thread_edge_last = Ultimul mesaj din această conversație. Apăsați din nou pentru a închide.
+jump_unified_inbox = Mesaje primite unificate.
+remote_none = Niciun conținut la distanță în acest mesaj.
+sender_none = Acest mesaj nu are expeditor.
+sender_name_no_address = %s, fără adresă
+signature_not_switched = Semnătura nu a fost schimbată. Apăsați Ctrl+Shift+S pentru a insera semnătura acestui cont.
+signature_removed_no_signature = Semnătură eliminată. Acest cont nu are semnătură.
+signature_switched = Semnătura a fost schimbată cu cea a acestui cont.
+spell_not_replaced = Cuvântul nu a putut fi înlocuit.
+spell_replaced_with = Înlocuit cu {word}.
+folder_marked_read = {count} mesaje marcate ca citite.
+folder_no_unread = Niciun mesaj necitit.
+threads_all_collapsed = Toate conversațiile au fost restrânse.
+threads_all_expanded = Toate conversațiile au fost extinse.
+upd_percent = {percent} la sută
+upd_download_done = Descărcare finalizată. Se pregătește actualizarea...
+upd_updated_to = ZBox a fost actualizat la {version}.
+header_copied = Copiat.
+headers_copied = Toate anteturile au fost copiate.
+identity_copies_updated = Cc și Bcc actualizate pentru această identitate.
+signature_switched_identity = Semnătura a fost schimbată cu cea a acestei identități.
+signature_removed_identity = Semnătura a fost eliminată. Această identitate nu are niciuna.
+signature_not_switched_identity = Semnătura nu a fost schimbată. Apăsați Ctrl+Shift+S pentru a insera semnătura acestei identități.
+signature_none_identity = Această identitate nu are semnătură.
+move_keys_no_selection = Selectați mai întâi un mesaj.
+move_keys_no_folders = Încă nu există dosare din care să alegeți. Încercați din nou peste câteva momente.
+block_sender_done_one = {sender} a fost blocat. Mesajele noi de la el vor ajunge în Coșul de gunoi.
+block_sender_done_many = {count} expeditori blocați. Mesajele lor noi vor ajunge în Coșul de gunoi.
+block_sender_already = {sender} este deja blocat.
+block_sender_own = Neblocat: este una dintre adresele dumneavoastră.
+block_sender_list_unknown = Neblocat: acest mesaj a venit printr-o listă de discuții și nu spune cine l-a trimis. Blocarea adresei listei i-ar bloca pe toți membrii.
+block_sender_moved = Expeditor blocat. {count} mesaj(e) mutat(e) în Coșul de gunoi.
+block_senders_moved = {senders} expeditori blocați. {count} mesaj(e) mutat(e) în Coșul de gunoi.
+unblock_sender_moved = Expeditor deblocat. {count} mesaj(e) mutat(e) în Inbox.
+unblock_senders_moved = {senders} expeditori deblocați. {count} mesaj(e) mutat(e) în Inbox.
+unblock_sender_done = {sender} a fost deblocat.
+unblock_sender_not_blocked = {sender} nu este blocat.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Tastați ceva mai sus și apăsați Enter sau alegeți Caută.
+search_no_account = Adăugați mai întâi un cont.
+search_no_term = Tastați ceva de căutat.
+search_running = Se caută...
+search_none = Niciun rezultat pentru „{term}”.
+search_found_one = 1 rezultat pentru „{term}”.
+search_found_many = {count} rezultate pentru „{term}”.
+search_failed = Căutarea a eșuat.
+
+# The related messages tab
+related_running = Se caută...
+related_none = Nu s-au găsit mesaje înrudite.
+related_found_one = S-a găsit 1 mesaj înrudit.
+related_found_many = S-au găsit {count} mesaje înrudite.
+related_failed = Nu s-au putut căuta mesaje înrudite.
+
+# Writing and sending
+sending_via = Se trimite prin {sender}...
+send_failed = Trimiterea a eșuat. Consultați jurnalele pentru detalii.
+draft_autosaved = Ciornă salvată automat.
+draft_autosave_failed = Salvarea automată a ciornei a eșuat. Consultați jurnalele pentru detalii.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Conținutul la distanță se va încărca de acum pentru mesajele de la {sender}.
+downloading_attachment = Se descarcă {filename}...
+downloading_attachments_one = Se descarcă 1 atașament...
+downloading_attachments_many = Se descarcă {count} atașamente...
+saved_to = Salvat în {folder}
+attachment_download_failed = Descărcarea atașamentului a eșuat.
+
+# Getting mail onto the screen
+loading_folder = Se încarcă {folder} pentru {account}...
+messages_in_folder = {count} mesaj(e) în {folder}.
+messages_in_folder_cached = {count} mesaj(e) în {folder} (ultima copie sincronizată, se actualizează...)
+no_offline_copy = Încă nu există o copie offline a {folder}.
+refresh_failed_cached = Nu s-a putut reîmprospăta {folder}: se afișează ultima copie sincronizată.
+no_such_folder = Acest cont nu are dosarul {folder}.
+load_failed = Încărcarea mesajelor a eșuat. Consultați jurnalele pentru detalii.
+no_more_to_load = Nu mai sunt mesaje de încărcat în acest dosar.
+loading_more = Se încarcă mai multe mesaje în {folder}...
+more_loaded = Încă {count} mesaj(e) încărcate.
+no_more_messages = Nu mai sunt mesaje în acest dosar.
+load_more_failed = Nu s-au putut încărca mai multe mesaje: {error}
+loading_unified = Se încarcă {folder} unificat...
+messages_in_unified = {count} mesaj(e) din toate conturile în {folder} unificat.
+messages_in_unified_cached = {count} mesaj(e) în {folder} unificat (ultima copie sincronizată, se actualizează...)
+auto_purge_done = Curățarea automată a eliminat {count} mesaj(e) vechi din Coșul de gunoi/Nesolicitate.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Gata.
+opening_message = Se deschide mesajul...
+opening_message_already = Se deschide mesajul... (se încarcă deja)
+could_not_open_message = Nu s-a putut deschide mesajul.
+could_not_open_that_message = Nu s-a putut deschide acel mesaj.
+could_not_load_message = Nu s-a putut încărca acest mesaj.
+message_still_loading = Acel mesaj încă se încarcă.
+folder_still_loading = Acest dosar încă se încarcă -- încercați din nou peste o clipă.
+not_in_thread = Acest mesaj nu face parte dintr-o conversație.
+no_longer_in_thread = Acest mesaj nu mai este în conversație.
+thread_position = Mesajul {position} din {total} în această conversație.
+thread_finished_one = Ați terminat această conversație (1 mesaj).
+thread_finished_many = Ați terminat această conversație ({count} mesaje).
+select_message_first = Selectați mai întâi un mesaj.
+conversation_failed = Nu s-a putut deschide această conversație.
+select_message_for_related = Selectați mai întâi un mesaj pentru care să vedeți mesajele înrudite.
+looking_for_related = Se caută mesaje înrudite...
+no_threading_headers = Acest mesaj nu are Message-ID sau antete de conversație după care să se caute.
+reply_one_at_a_time = Răspunsul funcționează pentru un singur mesaj o dată. Selectați un singur mesaj.
+select_message_to_reply = Selectați mai întâi un mesaj la care să răspundeți.
+preparing_reply = Se pregătește răspunsul...
+reply_load_failed = Nu s-a putut încărca mesajul original pentru răspuns.
+select_message_to_forward = Selectați mai întâi un mesaj de redirecționat.
+preparing_forward = Se pregătește mesajul de redirecționat...
+forward_load_failed = Nu s-a putut încărca mesajul de redirecționat.
+compose_tab_needed_hint = Comanda necesită o filă de scriere. Apăsați Ctrl+N pentru a scrie un mesaj.
+open_message_first_view = Deschideți mai întâi un mesaj, apoi apăsați Ctrl+B pentru a-i schimba vizualizarea.
+open_message_first_remote = Deschideți mai întâi un mesaj, apoi apăsați Ctrl+Shift+I pentru a-i încărca conținutul la distanță.
+
+# Acting on messages
+copying_message = Se copiază mesajul...
+copy_failed = Copierea a eșuat.
+delete_failed = Ștergerea a eșuat.
+already_in_archive = Deja în Arhive.
+archiving = Se arhivează...
+archive_failed = Arhivarea a eșuat.
+action_failed = {action} a eșuat.
+nothing_to_undo = Nimic de anulat.
+undo_failed = Nu s-a putut anula: {action}.
+
+# Views and folders
+folder_pane_all = Panoul de dosare: Toate dosarele.
+folder_pane_unified = Panoul de dosare: Dosare unificate.
+sorted_ascending = Sortat după {field}, crescător.
+sorted_descending = Sortat după {field}, descrescător.
+unified_folders_updated = Dosarele unificate au fost actualizate.
+zoom_reset = Mărimea fontului mesajelor a fost readusă la valoarea implicită.
+folder_creating = Se creează dosarul „{folder}”...
+folder_created = Dosarul „{folder}” a fost creat.
+folder_create_failed = Nu s-a putut crea dosarul.
+folder_renaming = Se redenumește „{folder}” în „{new_name}”...
+folder_renamed = Dosarul a fost redenumit în „{new_name}”.
+folder_rename_failed = Nu s-a putut redenumi dosarul.
+folder_deleting = Se șterge dosarul „{folder}”...
+folder_deleted = Dosar șters.
+folder_delete_failed = Nu s-a putut șterge dosarul.
+folder_subscribing = Abonare la „{folder}”...
+folder_unsubscribing = Dezabonare de la „{folder}”...
+folder_subscribed = Abonat.
+folder_unsubscribed = Dezabonat.
+folder_subscribe_failed = Nu s-a putut face abonarea la dosar.
+folder_unsubscribe_failed = Nu s-a putut face dezabonarea de la dosar.
+
+# Accounts
+account_not_added = Contul nu a fost adăugat.
+account_added = Cont adăugat: {account}
+account_settings_not_saved = Setările contului nu au fost salvate.
+account_updated = Cont actualizat: {account}
+account_not_removed = Contul nu a fost eliminat.
+account_removed = Cont eliminat.
+account_removed_with_files = Cont eliminat. {count} fișier(e) locale șterse.
+default_account_failed = Nu s-a putut seta contul implicit.
+default_account_set = {account} este acum contul implicit.
+auto_check_not_saved = Setarea de verificare automată nu a fost salvată.
+mute_not_saved = Setarea de dezactivare a sunetului nu a fost salvată.
+account_muted = Sunetul pentru {account} a fost dezactivat.
+account_unmuted = Sunetul pentru {account} a fost reactivat.
+export_done = {count} cont(uri) și setările au fost exportate în {path}.
+import_done = {count} cont(uri) importate din {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filtrele nu au fost salvate.
+filters_saved = Filtre salvate pentru {account}.
+filters_checking = Se verifică {folder} cu filtrele dvs....
+filters_none_matched = Execută acum: niciun mesaj din {folder} nu s-a potrivit cu vreo regulă activată.
+filters_run_failed = Nu s-au putut executa filtrele.
+filters_moving = Se mută {count} mesaj(e) filtrat(e)...
+filters_move_failures = Filtre: {count} mesaj(e) nu au putut fi mutate.
+filters_moved = Filtrele au mutat {count} mesaj(e) din {folder}.
+filters_move_failed = Nu s-au putut muta mesajele filtrate.
+cache_not_cleared = Cache-ul nu a fost golit.
+auto_cache_cleanup = Curățare automată a cache-ului: mesaje mai vechi de {age}.
+phishing_update_failed = Nu s-a putut actualiza lista de phishing: {error}
+blocklist_update_failed = Nu s-a putut actualiza lista de blocare: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Deschideți mai întâi un mesaj, apoi folosiți Salvează ca.
+saving_message = Se salvează mesajul...
+save_file_failed = Nu s-a putut salva fișierul.
+save_fetch_failed = Nu s-a putut obține mesajul de salvat.
+open_message_first_print = Deschideți mai întâi un mesaj, apoi folosiți Printează.
+open_message_first_preview = Deschideți mai întâi un mesaj, apoi folosiți Previzualizare tipărire.
+refreshing_accounts = Se reîmprospătează {count} cont(uri)...
+emptying_trash = Se golește Coșul de gunoi pentru {account}...
+trash_already_empty = Coșul de gunoi era deja gol.
+trash_emptied = Coșul de gunoi a fost golit: {count} mesaj(e) eliminate.
+empty_trash_failed = Nu s-a putut goli Coșul de gunoi.
+emptying_junk = Se golește dosarul Nesolicitate pentru {account}...
+junk_already_empty = Dosarul Nesolicitate era deja gol.
+junk_emptied = Dosarul Nesolicitate a fost golit: {count} mesaj(e) eliminate.
+junk_emptied_prefix = Dosarul Nesolicitate a fost golit:
+junk_part_purged = {count} eliminate
+junk_part_in_trash = {count} mutate în Coșul de gunoi, dar eliminarea nu a fost confirmată, verificați Coșul de gunoi
+junk_part_not_moved = {count} nu au fost mutate în Coșul de gunoi, sunt încă în Nesolicitate
+empty_junk_failed = Nu s-a putut goli dosarul Nesolicitate.
+back_online = Din nou online.
+offline_sync_running = Se sincronizează {account} pentru utilizare offline...
+offline_sync_failed = Sincronizarea offline a eșuat: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Selectați sau deschideți mai întâi un mesaj.
+select_or_open_message_ctrl_u = Selectați sau deschideți mai întâi un mesaj, apoi apăsați Ctrl+U.
+no_sender_address = Acest mesaj nu are o adresă de expeditor de adăugat.
+contact_added = {contact} a fost adăugat în agenda de contacte.
+contact_already_there = {contact} este deja în agenda de contacte.
+privacy_saved = Setările de confidențialitate au fost salvate. Deschideți din nou un mesaj pentru a le aplica.
+message_font_size = Mărimea fontului mesajului: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Se șterge definitiv mesajul
+deleting_many = Se șterg definitiv {count} mesaje
+trashing_one = Se mută mesajul în Coșul de gunoi
+trashing_many = Se mută {count} mesaje în Coșul de gunoi
+undo_partly_restored = Anulat: {action}, dar {count} nu au putut fi restaurate -- este posibil să fi fost mutate, șterse sau să fi expirat din nou între timp.
+moves_report = {action}: {moved} din {total} mesaj(e) mutate.
+moves_report_failed = Nemutate, încă în dosarul original: {count}.
+
+tray_tooltip_one = ZBox — 1 mesaj necitit
+tray_tooltip_many = ZBox — {count} mesaje necitite
+account_unreachable = {account} nu a putut fi contactat. Verificările automate pentru el se întrerup pentru {minutes} minut(e).
+bulk_copy_failed = Nu s-au putut copia mesajele.
+bulk_copy_failed_status = Copierea a eșuat.
+bulk_loading_archive = Mesajele încă se încarcă -- încercați din nou să arhivați peste o clipă.
+bulk_loading_delete = Mesajele încă se încarcă -- încercați din nou să ștergeți peste o clipă.
+bulk_loading_flag = Mesajele încă se încarcă -- încercați din nou să marcați cu steluță peste o clipă.
+bulk_loading_generic = Mesajele încă se încarcă -- încercați din nou peste o clipă.
+bulk_none = Niciun mesaj selectat.
+bulk_none_archive = Niciun mesaj selectat de arhivat.
+bulk_none_delete = Niciun mesaj selectat de șters.
+bulk_none_junk = Niciun mesaj selectat de marcat ca nesolicitat.
+bulk_none_not_junk = Niciun mesaj selectat de marcat ca nefiind nesolicitat.
+delete_refused_still = Serverul a refuzat ștergerea; mesajul este încă în {folder}.
+delete_refused_trash = Mesajul este în Coșul de gunoi, dar serverul a refuzat ștergerea definitivă.
+delete_resume_failed = {count} mesaj(e) dintr-o ștergere anterioară nu au putut fi șterse.
+done_perm_delete_one = Mesaj șters definitiv.
+done_trash_one = Mesaj mutat în Coșul de gunoi.
+filters_applied = Filtre aplicate pentru {count} mesaj(e) din {folder}.
+filters_failed = Nu s-au putut executa filtrele.
+filters_running = Se execută filtrele pe {folder}
+flag_failed = Nu s-au putut actualiza steluțele.
+flag_updated = Steluțe actualizate.
+folder_verb_subscribing = Abonare la
+folder_verb_unsubscribing = Dezabonare de la
+mark_read_failed = Nu s-au putut marca mesajele ca citite.
+mark_unread_failed = Nu s-au putut marca mesajele ca necitite.
+notify_new_mail_body = {count} {noun} noi pentru {name}.
+notify_new_mail_title = Mesaje noi
+notify_noun_many = mesaje
+notify_noun_one = mesaj
+report_done = {verb}: {done} din {count} mesaj(e).
+report_verb_deleted = Șterse
+report_verb_permanent = Șterse definitiv
+running_copy_many = Se copiază {count} mesaje
+running_copy_one = Se copiază mesajul
+running_junk_many = Se marchează {count} mesaje ca nesolicitate
+running_junk_one = Se marchează ca nesolicitat
+running_move_many = Se mută {count} mesaje
+running_move_one = Se mută
+running_not_junk_many = Se marchează {count} mesaje ca nefiind nesolicitate
+running_not_junk_one = Se marchează ca nefiind nesolicitat
+running_perm_delete_one = Se șterge definitiv mesajul...
+running_read_many = Se marchează {count} mesaje ca citite
+running_read_one = Se marchează ca citit
+running_trash_one = Se mută mesajul în Coșul de gunoi...
+running_unread_many = Se marchează {count} mesaje ca necitite
+running_unread_one = Se marchează ca necitit
+settings_saved_no_startup = Setări salvate. Intrarea de pornire Windows nu a putut fi actualizată.
+settings_saved_status = Setări salvate.
+spam_blocked_sender = Expeditor blocat
+spam_possible_phishing = Posibil phishing
+undo_running_many = Se anulează: {action} ({count} mesaje)
+undo_running_one = Se anulează: {action}
+mark_folder_read_failed = Nu s-a putut marca dosarul ca citit.
+marking_folder_read = Se marchează dosarul ca citit...
+upd_ready_at_exit = O actualizare este deja descărcată. Va fi instalată când ieșiți din ZBox.
+upd_checking = Se caută actualizări...
+upd_up_to_date = ZBox este la zi.
+upd_available_source = ZBox {version} este disponibil. Această copie rulează din codul sursă, deci actualizați-o cu git.
+upd_check_failed = Nu s-au putut căuta actualizări: {error}
+opening_attachment = Se deschide {filename}...
+loading_headers = Se încarcă anteturile...
+offline_inbox_only = Doar Inbox-ul și Arhivele sunt păstrate pentru utilizare offline.
+offline_sync_done_inbox = {count} mesaj(e) din Inbox și Arhive sincronizat(e) pentru utilizare offline.
+working_offline = Lucrați offline: se afișează ultima copie sincronizată a Mesaje primite/Mesaje trimise/Mesaje nefinalizate.
+emptying_trash_all = Se golește Coșul de gunoi al tuturor conturilor...
+trash_emptied_all = Coșul de gunoi a fost golit în {accounts} cont(uri): {count} mesaj(e) șters(e) definitiv.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fișier
+bar_edit = &Editare
+bar_view = &Vizualizare
+bar_message = &Mesaj
+bar_compose = &Scriere
+bar_tools = &Instrumente
+bar_help = &Ajutor
+
+# File
+file_new = Nou
+file_new_message = Mesaj
+file_new_account = Cont de e-mail...
+file_open_saved_message = Deschide un mesaj salvat...
+file_close = Închide
+file_save_message_as = Salvează mesajul ca...
+file_get_new_for = Descarcă mesajele noi pentru
+file_get_new_all = Toate conturile
+file_get_new_current = Contul curent
+file_offline = Offline
+file_work_offline = Lucrează offline
+file_sync_now = Sincronizează acum
+file_print = Printează...
+file_print_preview = Previzualizare tipărire...
+file_exit = Ieșire
+
+# Edit
+edit_undo = Anulează
+edit_select_all = Selectează tot
+edit_find_messages = Caută mesaje...
+
+# Message
+message_reply = Răspunde
+message_reply_all = Răspunde tuturor
+message_forward = Redirecționează
+message_archive = Arhivează
+message_delete = Șterge
+message_delete_permanently = Șterge definitiv
+message_mark = Marchează
+mark_read = Citit
+mark_unread = Necitit
+mark_flagged = Cu steluță
+mark_junk = Nesolicitat
+mark_not_junk = Nu e nesolicitat
+message_watch_thread = Urmărește conversația
+message_ignore_thread = Ignoră conversația
+message_open_conversation = Deschide mesajul în conversație
+message_show_related = Arată mesajele înrudite
+message_add_sender_to_address_book = Adaugă expeditorul în agenda de contacte
+message_announce_sender = Anunță expeditorul
+message_announce_copy_sender = Anunță expeditorul și copiază adresa
+
+# View
+view_folders = Dosare
+folders_all = Toate
+folders_unified = Unificate
+folders_jump_inbox = Salt la lista de mesaje din Mesaje primite
+folders_configure_unified = Configurează dosarele unificate...
+view_sort_by = Sortează după
+sort_date = Dată
+sort_subject = Subiect
+sort_from = Expeditor
+sort_descending = Descrescător (cele mai noi întâi)
+sort_ascending = Crescător (cele mai vechi întâi)
+view_threads = Conversații
+threads_all = Toate
+threads_watched = Conversații urmărite
+threads_ignored = Conversații ignorate
+threads_expand_all = Extinde toate conversațiile
+threads_collapse_all = Restrânge toate conversațiile
+view_load_more = Încarcă mai multe mesaje
+view_toggle_message_view = Comută între vizualizarea text și HTML
+view_show_remote_content = Arată conținutul la distanță din acest mesaj
+view_message_zoom = Zoom mesaj
+zoom_increase = Mărește fontul mesajului
+zoom_decrease = Micșorează fontul mesajului
+zoom_reset = Resetează mărimea fontului mesajului
+
+# Compose
+compose_send = &Trimite
+compose_save_draft = &Salvează ciorna
+compose_attach = &Atașează fișier...
+compose_fmt_bold = &Aldin
+compose_fmt_italic = &Cursiv
+compose_fmt_strike = &Tăiat
+compose_fmt_bullet = &Listă cu marcatori
+compose_fmt_number = &Listă numerotată
+compose_fmt_quote = &Citat
+compose_fmt_code = &Cod
+compose_fmt_heading1 = &Titlu
+compose_link = &Inserează link...
+compose_formatting = &Formatare aici
+compose_spellcheck = &Verifică ortografia...
+compose_spellcheck_next = &Următoarea greșeală
+compose_spellcheck_add = &Adaugă cuvântul în dicționar
+compose_insert_signature = &Inserează semnătura
+compose_paste_quotation = &Lipește ca citat
+compose_word_count = &Număr de cuvinte
+compose_preview = &Previzualizare...
+compose_diagnostics = &Diagnosticare fereastră de scriere...
+compose_edit_signature = &Editează semnătura...
+compose_hotkeys_diagnostic = &Diagnosticare taste rapide
+
+# Tools
+tools_account_settings = Setări cont și identități...
+tools_mute_account = Dezactivează sunetul contului
+tools_pause_auto_check = Întrerupe verificarea automată
+tools_disable_account = Dezactivează contul
+tools_remove_account = Elimină contul...
+tools_address_book = Agendă de contacte...
+tools_message_filters = Filtre de mesaje...
+tools_import = Importă conturi și setări...
+tools_export = Exportă conturi și setări...
+tools_cache_cleanup = Configurare curățare cache...
+tools_privacy = Confidențialitate și blocare conținut...
+tools_settings = Setări...
+
+# Help
+help_shortcuts = Comenzi rapide de la tastatură...
+help_about = Despre ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Cont nou...
+tree_account_settings = Setări cont și identități...
+tree_mute_account = Dezactivează sunetul contului
+tree_pause_auto_check = Întrerupe verificarea automată
+tree_enable_account = Activează contul
+tree_disable_account = Dezactivează contul
+tree_set_default_account = Setează drept cont implicit
+tree_remove_account = Elimină contul...
+tree_refresh = Reîmprospătează
+tree_new_folder = Dosar nou...
+tree_empty_trash = Golește coșul de gunoi
+tree_empty_junk = Golește dosarul cu nesolicitate
+tree_rename_folder = Redenumește dosarul...
+tree_delete_folder = Șterge dosarul...
+tree_subscribe_folder = Abonează-te la dosar
+tree_unsubscribe_folder = Dezabonează-te de la dosar
+
+# The message list menu, opened the same two ways
+list_select_all = Selectează tot
+list_reply = Răspunde
+list_reply_all = Răspunde tuturor
+list_forward = Redirecționează
+list_mark = Marchează
+list_archive = Arhivează
+list_delete_to_trash = Șterge (mută în Coșul de gunoi)
+list_delete_permanently = Șterge definitiv
+list_move_to = Mută în
+list_copy_to = Copiază în
+
+# The notification area icon
+tray_open = &Deschide ZBox
+tray_unread_one = 1 mesaj necitit
+tray_unread_many = {count} mesaje necitite
+tray_no_unread = Niciun mesaj necitit
+tray_settings = &Setări...
+tray_quit = &Ieșire din ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Aldin
+format_italic = &Cursiv
+format_strike = &Tăiat
+format_bullet = &Listă cu marcatori
+format_number = &Listă numerotată
+format_quote = &Citat
+format_code = &Cod
+format_heading1 = &Titlu
+format_insert_link = &Inserează link...
+format_formatting_here = &Formatare aici
+tools_enable_account = Activează contul
+edit_undo_action = Anulează: {action}
+tree_mark_folder_read = Marchează dosarul ca citit
+help_updates = Actualizări
+help_check_updates = Caută actualizări acum...
+help_update_settings = Setări pentru actualizări...
+help_releases_page = Deschide pagina versiunilor
+message_attachments = Atașamente
+message_no_attachments = Niciun atașament
+message_save_all_attachments = Salvează toate atașamentele
+view_full_headers = Toate anteturile
+folders_go_to_tree = Salt la lista de dosare
+list_block_sender = Blochează acest expeditor
+list_unblock_sender = Deblochează acest expeditor
+
+[dialogs]
+set_theme_restart_confirm = Reporniți ZBox pentru a aplica schimbarea temei?
+set_ui_theme_label = &Tema interfeței:
+set_ui_theme_note = Culori pentru meniuri, liste, casete de dialog și vizualizarea text a mesajelor. Urmează sistemul folosește modul luminos sau întunecat al aplicațiilor din Windows. Albastru de miezul nopții, Întunecat cald și Contrast blând sunt teme întunecate cu culori mai blânde. Mesajele HTML își păstrează culorile proprii, iar Contrastul ridicat din Windows are mereu prioritate. Intră în vigoare la următoarea pornire a ZBox.
+set_theme_system = Urmează sistemul
+set_theme_light = Luminoasă
+set_theme_dark = Întunecată
+set_theme_midnight = Albastru de miezul nopții
+set_theme_warm = Întunecat cald
+set_theme_soft = Contrast blând
+set_language_restart_confirm = Reporniți ZBox pentru a aplica schimbarea limbii?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Contactați-l pe Harith
+title_identity = Identitate
+title_show_password = Arată parola
+title_missing_information = Informații lipsă
+title_unsupported_provider = Furnizor neacceptat
+title_test_connection = Testează conexiunea
+title_new_contact = Contact nou
+title_edit_contact = Editează contactul
+title_delete_contact = Șterge contactul
+title_import_contacts = Importă contacte
+title_export_contacts = Exportă contacte
+title_rename_group = Redenumește grupul
+title_delete_group = Șterge grupul
+title_send = Trimite
+title_send_failed = Trimitere eșuată
+title_attach_file = Atașează fișier
+title_save_draft = Salvează ciorna
+title_documentation = Documentația ZBox
+title_open_link = Deschide linkul
+title_filter_rule = Regulă de filtrare
+title_master_password = Parolă primară
+title_attachment_saved = Atașament salvat
+title_attachments_saved = Atașamente salvate
+title_download_failed = Descărcare eșuată
+title_print = Printează
+title_print_preview = Previzualizare tipărire
+title_related_messages = Mesaje înrudite
+title_search = Caută
+title_unlock = Deblocare
+title_unlock_methods = Metode de deblocare
+title_desktop_shortcut = Comandă rapidă pe desktop
+title_spell_check = Verificare ortografică
+title_plain_text_password = S-a găsit o parolă în text simplu
+title_startup_error = Eroare la pornirea ZBox
+
+identity_email_required = Introduceți o adresă de e-mail.
+
+wizard_password_not_shown = Parola nu poate fi afișată pe acest sistem. Este totuși tastată și salvată normal.
+wizard_email_required = Introduceți o adresă de e-mail validă înainte de a continua.
+wizard_test_needs_server = Introduceți o adresă de e-mail de autentificare și un server de primire înainte de testare.
+wizard_test_succeeded = Conexiune reușită. {count} mesaj(e) găsite în Mesaje primite.
+
+contact_email_required = Este necesară o adresă de e-mail.
+contact_select_to_edit = Selectați un contact de editat.
+contact_select_to_delete = Selectați un contact de șters.
+contact_delete_confirm = Ștergeți {label} din agenda de contacte?
+contacts_import_choose_file = Alegeți un fișier .vcf (vCard) sau .csv de importat.
+contacts_imported = {count} contact(e) importate.
+contacts_import_empty = Nu s-au găsit contacte în acel fișier.
+contacts_none_to_export = Nu există contacte de exportat.
+contacts_exported = {count} contact(e) exportate în:\n{path}
+group_name_exists = Există deja un grup numit „{name}”.
+group_delete_confirm = Ștergeți grupul „{name}”? Contactele din el nu sunt șterse.
+
+send_no_account = Adăugați un cont înainte de a trimite sau selectați unul în Expeditor.
+send_no_recipient = Introduceți cel puțin un destinatar în Către.
+draft_no_account = Adăugați un cont înainte de a salva o ciornă sau selectați unul în Expeditor.
+attached_file = Atașat: {name}\n\n{count} fișier(e) vor fi atașate când trimiteți.
+
+documentation_copied = Documentația completă ZBox a fost copiată în clipboard.
+
+filter_rule_needs_name = Dați un nume acestei reguli.
+filter_rule_needs_condition = Setați cel puțin o condiție (Expeditor, Către sau Subiect).
+filter_rule_needs_action = Alegeți cel puțin o acțiune: marchează ca citit, adaugă steluță sau mută într-un dosar.
+
+master_password_set = Parola primară a fost setată. Păstrați-o într-un loc sigur: ZBox o cere o dată pe fiecare computer nou și nu poate fi recuperată dacă se pierde.
+master_password_offer = Fără o parolă primară, parolele salvate ale conturilor pot fi citite doar pe acest computer și în acest cont Windows. Dacă copiați ZBox în altă parte, va trebui să vă autentificați din nou în fiecare cont.\n\nO setați acum?
+
+attachment_saved = Atașament salvat în:\n{path}
+attachments_saved = {count} atașamente salvate în:\n{path}
+
+shortcut_created_settings = Comandă rapidă creată:\n{path}\n\nPornește ZBox din:\n{base}
+
+spellcheck_no_dictionary = Dicționarul ortografic lipsește, deci verificarea ortografică nu este disponibilă în această copie a ZBox.
+spellcheck_none_found = Nu s-au găsit greșeli de ortografie.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Configurați o cheie de acces pe acest computer și uitați cea salvată de pe un alt computer?\n\nWindows vă va cere să confirmați cu Hello. Cheia de acces veche rămasă pe celălalt computer nu este atinsă acolo și va funcționa în continuare dacă duceți acest dosar înapoi la el, dar va trebui configurată din nou.
+unlock_replace_passkey_many = Configurați o cheie de acces pe acest computer și uitați cele {count} salvate de pe alte computere?\n\nWindows vă va cere să confirmați cu Hello. Cheile de acces vechi rămase pe celălalt computer nu sunt atinse acolo și vor funcționa în continuare dacă duceți acest dosar înapoi la el, dar vor trebui configurate din nou.
+unlock_method_works = Metoda funcționează.
+
+plain_text_password_found = data\config\himalaya.toml conține încă o parolă în text simplu (auth.raw) dintr-o configurare mai veche a unui cont.\n\nEliminați acel cont și adăugați-l din nou, sau ștergeți data\config\himalaya.toml, pentru ca acesta să fie regenerat folosind depozitul securizat de credențiale.
+
+# main_frame's titles.
+title_account_list_unavailable = Lista de conturi nu este disponibilă
+title_open_message = Deschide mesajul
+title_run_filters = Execută filtrele
+title_clear_cache = Golește cache-ul de mesaje offline
+title_remove_account = Elimină contul
+title_new_folder = Dosar nou
+title_rename_folder = Redenumește dosarul
+title_delete_folder = Șterge dosarul
+title_subscribe = Abonare
+title_unsubscribe = Dezabonare
+title_open_saved_message = Deschide un mesaj salvat
+title_save_message_as = Salvează mesajul ca
+title_empty_trash = Golește coșul de gunoi
+title_empty_junk = Golește dosarul cu nesolicitate
+title_synchronize_offline = Sincronizează pentru utilizare offline
+title_export_accounts = Exportă conturi și setări
+title_import_accounts = Importă conturi și setări
+title_show_related = Arată mesajele înrudite
+title_reply = Răspunde
+title_forward = Redirecționează
+title_undo = Anulează
+title_delete_permanently = Șterge definitiv
+title_delete = Șterge
+title_copy_to = Copiază în
+title_archive = Arhivează
+title_accounts_locked = Conturi blocate
+
+select_account_first = Selectați mai întâi un cont în arbore.
+select_account_or_folder = Selectați mai întâi un cont sau un dosar.
+filters_left_behind = {count} mesaj(e) s-au potrivit cu un filtru, dar sunt încă în {folder}.
+cache_clear_confirm = Goliți cache-ul de mesaje offline pentru fiecare cont?\n\nAcest lucru șterge doar copiile locale ale ZBox. Nimic nu este eliminat de pe vreun server de e-mail, iar mesajele sunt descărcate din nou pe măsură ce aveți nevoie de ele.
+account_remove_confirm = Eliminați {name} ({address})?\n\nCorespondența de pe server nu este ștearsă.\nCopiile descărcate pe acest computer sunt șterse.\nParola salvată este ștearsă.
+folder_delete_confirm = Ștergeți definitiv dosarul „{folder}” și tot ce conține pentru {address}?\n\nAcest lucru nu poate fi anulat.
+empty_trash_confirm = Ștergeți definitiv toate mesajele din Coșul de gunoi pentru {address}?\n\nAcest lucru nu poate fi anulat.
+empty_junk_confirm = Ștergeți definitiv toate mesajele din Nesolicitate pentru {address}?\n\nAcest lucru nu poate fi anulat.
+sync_select_account = Selectați un cont (nu un dosar unificat) de sincronizat pentru utilizare offline.
+accounts_imported = {count} cont(uri) importate:\n\n{names}\n\nParolele nu sunt niciodată exportate, iar depozitul criptat de parole este specific acestui cont de utilizator Windows, deci pentru fiecare cont importat parola trebuie introdusă o dată prin Conturi > Setări cont și identități înainte ca acesta să se poată conecta.
+accounts_import_none = Nu s-au găsit conturi în acest fișier. Setările au fost totuși importate, dacă fișierul avea.
+delete_permanently_confirm_one = Ștergeți definitiv acest mesaj? Acest lucru ocolește Coșul de gunoi și nu poate fi anulat.
+accounts_locked = Parolele salvate ale conturilor au fost scrise pe un alt computer, deci nu pot fi citite aici.\n\nVa trebui să vă autentificați din nou pe serverul de e-mail pentru fiecare cont. Pentru a evita acest lucru data viitoare, setați o parolă primară din Setări, Securitatea aplicației și a datelor, pe computerul pe care conturile funcționează deja.
+master_password_remove_confirm = Eliminați parola primară? Parolele salvate ale conturilor vor putea fi citite atunci doar pe acest computer și în acest cont Windows. Dacă apoi copiați ZBox în altă parte, va trebui să vă autentificați din nou în fiecare cont.\n\nO eliminați acum?
+shortcut_offer = Puneți o comandă rapidă ZBox pe desktop?\n\nVa porni acest dosar ZBox:\n{path}\n\nO comandă rapidă reține exact această locație. Dacă mutați mai târziu dosarul ZBox, deschideți Setări, Zona de notificare și fereastra, și alegeți din nou Creează comandă rapidă pe desktop pentru a o îndrepta spre noul loc.
+shortcut_created = Comandă rapidă creată:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Nume afișat
+form_email_address = Adresă de e-mail
+form_your_name = Numele dvs.
+form_login_email = E-mail de autentificare
+form_password = Parolă
+srv_imap_host = Server de primire (IMAP)
+srv_imap_port = Port de primire
+srv_imap_encryption = Criptare la primire
+srv_smtp_host = Server de trimitere (SMTP)
+srv_smtp_port = Port de trimitere
+srv_smtp_encryption = Criptare la trimitere
+
+acct_login_email_label = E-mail de autentificare (folosit pentru conectare)
+acct_new_password_label = Parolă nouă (lăsați gol pentru a păstra parola curentă)
+acct_new_password_name = Parolă nouă
+acct_identity_email_label = Adresă de e-mail (folosită pentru trimitere și primire)
+acct_identities_label = Identități suplimentare (aliasuri)
+acct_identities_name = Identități suplimentare
+acct_add_identity = &Adaugă identitate...
+acct_edit_identity = &Editează identitatea...
+acct_remove_identity = &Elimină identitatea
+acct_signature = Semnătură
+acct_edit_signature = &Editează semnătura...
+acct_junk_folder = Dosar pentru nesolicitate
+acct_account_status = Starea contului
+acct_disable_account = Dezactivează acest cont
+acct_default_account = Cont implicit
+acct_set_default = Setează drept cont implicit
+acct_notifications = Notificări pentru mesaje noi
+acct_mute_notifications = Dezactivează notificările pentru acest cont
+acct_server_settings = Setări server
+
+wiz_before_you_start = Înainte de a începe
+wiz_notice_name = Notificare importantă
+wiz_google_instructions = &Deschide instrucțiunile Google pentru parole de aplicație
+wiz_intro = Numele și adresa dvs. de e-mail
+wiz_login_same = E-mailul de autentificare este același cu adresa de e-mail de mai sus
+wiz_show_password = &Arată parola
+wiz_preset_applied = Presetare aplicată pentru {name}.
+wiz_summary_name = Rezumatul contului
+wiz_review = Verificați, apoi faceți clic pe Finalizare pentru a salva acest cont.
+wiz_test_connection = &Testează conexiunea
+wiz_testing = Se testează conexiunea...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Activează jurnalul de depanare, salvat în: data\logs)
+set_language_label = &Limba interfeței:
+set_language_label_only_english = &Limba interfeței: (doar engleză)
+set_headers_checkbox = &Arată antetele mesajului deasupra unui mesaj deschis
+set_zoom_label = Font și zoom pentru mesaje:
+set_font_override = &Înlocuiește mărimea implicită a fontului mesajelor
+set_font_size_name = Mărimea fontului mesajelor (puncte)
+set_reading_font_name = Font de citire
+set_reading_font_label = Font de citire (gol pentru implicit):
+set_view_label = Vizualizarea corpului mesajului la deschiderea unui mesaj:
+set_view_text = Text
+set_view_html = HTML (randat)
+set_engine_label = Motor de randare HTML:
+set_engine_edge = Edge / WebView2 (randare modernă)
+set_engine_ie = MSHTML vechi (cel mai bun suport pentru cititoare de ecran)
+set_runtime_label = Mediu de rulare WebView2:
+set_runtime_auto = Automat — folosește mediul de rulare inclus dacă există (recomandat)
+set_runtime_fixed = Doar versiunea fixă inclusă
+set_runtime_evergreen = Mediu de rulare la nivel de sistem (actualizat de Windows)
+set_sr_box = Controlul anunțurilor cititorului de ecran
+set_silence_label = Menținere a liniștii cititorului de ecran pentru HTML:
+set_silence_name = Menținere a liniștii cititorului de ecran pentru HTML în milisecunde
+set_focus_delay_label = Întârziere a focalizării de accesibilitate WebView:
+set_focus_delay_name = Întârziere a focalizării de accesibilitate WebView, nivel de la 1 la 10
+set_announce_label = Durata anunțului:
+set_announce_name = Durata anunțului în milisecunde
+set_announce_actions = &Anunță acțiunile asupra mesajelor
+set_attachment_dir_label = Dosarul de salvare a atașamentelor:
+set_attachment_dir_name = Dosarul de salvare a atașamentelor
+set_browse = &Răsfoiește…
+set_autosave_label = Intervalul de salvare automată a ciornelor:
+set_autosave_name = Intervalul de salvare automată a ciornelor în secunde
+set_auto_purge_label = Curățare automată a Coșului de gunoi și a Nesolicitatelor vechi:
+set_auto_purge_name = Curăță automat Coșul de gunoi și Nesolicitate după acest număr de zile
+set_bare_keys = Activează comenzile rapide cu o singură tastă în lista de mesaje: S (marcare), A (arhivare), J (marcare ca nedorit)/Shift+J (marcare ca dorit), W (urmărire fir), K (ignorare fir), M (mută în)/Shift+M (mută după numele dosarului) și C (copiază în)
+set_sound_label = Sunete și notificări:
+set_sounds_enabled = &Redă sunetele de notificare
+set_desktop_notifications = &Arată notificări pe desktop pentru mesajele noi
+set_theme_label = Schimbă tema de sunete:
+set_theme_label_only_default = Schimbă tema de sunete: (doar tema implicită)
+set_security_box = Securitatea aplicației și a datelor
+set_lock_on_quit = &Blochează ZBox când este închis complet
+set_unlock_methods_button = &Metode de deblocare…
+set_master_password_button = &Parolă primară…
+set_tray_label = Zona de notificare și fereastra:
+set_minimize_to_tray = &Minimizează în zona de notificare
+set_close_to_tray = &Închide în zona de notificare
+set_stay_maximized = &Păstrează ZBox mereu maximizat
+set_run_at_startup = &Rulează ZBox la pornirea Windows
+set_desktop_shortcut_button = &Creează comandă rapidă pe desktop
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Jurnalul de depanare ajută la diagnosticarea problemelor dacă ceva nu merge bine. Dezactivarea lui oprește scrierea de intrări noi; fișierele jurnal existente nu sunt șterse. Intră în vigoare la următoarea pornire a ZBox.
+set_language_note = Intră în vigoare la următoarea pornire a ZBox. Fișierele de limbă sunt fișiere text simplu în dosarul lang al ZBox, lângă dosarul sounds. Pentru a adăuga unul, copiați dosarul en, redenumiți copia și fișierul .lang din ea cu codul limbii dvs. și traduceți textul din dreapta fiecărui semn egal. Tot ce nu este încă tradus este rostit în engleză în loc să rămână mut, deci un fișier tradus pe jumătate poate fi folosit în siguranță.
+set_headers_note = Expeditor, Către, Cc, Dată și Subiect, afișate deasupra corpului mesajului atât în vizualizarea text, cât și în cea HTML. Fără ele nu există nicio modalitate de a afla din interiorul unui mesaj cine l-a trimis fără a închide fila și a reveni la listă. Focalizarea ajunge în continuare în corpul mesajului; blocul de antete este la o apăsare de Shift+Tab. Intră în vigoare la următoarea deschidere a unui mesaj.
+set_zoom_note = Face textul propriu al mesajului deschis mai mare sau mai mic, independent de restul ZBox și de scalarea afișajului din Windows. Se aplică atât vizualizării text, cât și celei HTML. „Font de citire” impune opțional un anumit font (de exemplu Consolas, OpenDyslexic) pentru corpul mesajului; lăsați-l gol pentru a păstra fontul normal. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 din meniul Vizualizare măresc, micșorează sau resetează doar mărimea fontului fără a deschide această casetă de dialog și se aplică imediat fiecărui mesaj deschis. Modificările făcute aici se aplică și ele imediat la OK.
+set_view_note = HTML este implicit. Arată mesajul așa cum a fost trimis și este citit de NVDA și JAWS: când se deschide o pagină HTML, ZBox reduce la tăcere anunțul propriu al browserului, pune cursorul de citire pe primul rând al mesajului și menține funcționale comenzile rapide ale ZBox în pagină, inclusiv F6 pentru a muta focalizarea înapoi în afara ei. Text arată același mesaj ca text simplu, neformatat, într-un control obișnuit de editare -- fără imagini, fără aspect și nimic care să depindă de un motor de browser instalat. Apăsați Ctrl+B într-un mesaj deschis pentru a comuta în oricare direcție.
+set_engine_note = Edge randează CSS modern, dar rulează pagina într-un proces separat și își predă conținutul unui cititor de ecran doar printr-o interfață la care wxPython nu are acces -- așa că mesajul se poate deschide fără nimic citibil în el. MSHTML vechi este motorul folosit de Outlook Express și Windows Mail: rulează în același proces și publică un arbore de document obișnuit, astfel încât NVDA și JAWS îl citesc în modul de navigare ca pe orice pagină web. Intră în vigoare la următoarea deschidere a unui mesaj.
+set_runtime_note = Mediul de rulare la nivel de sistem este întreținut de Windows Update, deci motorul care vă citește corespondența se poate schimba fără avertisment -- așa se poate strica o vizualizare HTML funcțională pe un computer pe care nimic din ZBox nu s-a schimbat. O copie inclusă în dosarul deps fixează exact versiunea cu care a fost testat ZBox. Rulați tools\get_webview2.bat pentru a instala una. Dacă nu există o copie inclusă, ZBox folosește oricum mediul de rulare la nivel de sistem, deci pornește întotdeauna. Intră în vigoare la următoarea pornire a ZBox.
+set_sr_intro = Cât îi permite ZBox cititorului de ecran să spună în timp ce se deschide un mesaj și cât timp rămân afișate propriile anunțuri rostite.
+set_silence_note = Când se deschide un mesaj HTML, ZBox poate ține apăsată o tastă Ctrl simulată timp de până la 2 secunde pentru a reduce la tăcere anunțul browserului făcut de cititorul de ecran. Subiectul mesajului este deja folosit ca titlu al paginii, ceea ce împiedică citirea cu voce tare a adresei URL base64, dar cititorul anunță totuși controlul și tipul documentului peste începutul mesajului, de aceea opțiunea este activată implicit. Coborâți-o la 0 pentru a o dezactiva sau ridicați-o dacă se mai strecoară vorbărie.
+set_focus_delay_note = Când un mesaj HTML termină de încărcat, ZBox așteaptă atât înainte de a-l focaliza efectiv. Momentul în care WebView2 raportează că pagina s-a încărcat și momentul în care Windows termină arborele de accesibilitate al acelei pagini nu coincid; focalizarea prea devreme face ca NVDA/JAWS să anunțe o „pagină de conținut web” generică în locul mesajului sau să raporteze mesajul ca indisponibil o vreme după deschidere. Nivelul 1 înseamnă 100 ms, nivelul 10 o secundă întreagă. Ridicați-l dacă mai vedeți asta; coborâți-l după ce deschiderea devine sigură, pentru o deschidere mai rapidă.
+set_announce_note = Ctrl+U și Ctrl+Shift+U raportează expeditorul într-o casetă de dialog mică ce se închide singură, deoarece bara de stare este rostită doar dacă cititorul de ecran are activată raportarea barei de stare. Aceasta este durata în care caseta rămâne deschisă. Potriviți-o cu viteza vorbirii: prea scurtă și se închide în mijlocul propoziției, ceea ce anulează rostul ei. Orice tastă o închide mai devreme; tastele săgeți o țin deschisă ca să puteți reciti. 0 înseamnă că așteaptă o tastă și nu se închide niciodată singură.
+set_attachment_dir_note = Unde scrie „Salvează tot” atașamentele când un mesaj are mai multe. Este creat automat dacă nu există. Un mesaj cu un singur atașament întreabă în continuare unde să-l salveze, ca înainte. Lăsați gol pentru valoarea implicită:\n{path}
+set_autosave_note = Cât de des se salvează singură o filă de scriere deschisă în Mesaje nefinalizate în timp ce scrieți. Salvează ciorna (Ctrl+S) salvează oricum la cerere, iar închiderea unei file cu text nesalvat oferă întotdeauna salvarea. 0 dezactivează salvarea automată. Sub 15 secunde nu este oferit -- ar fi un schimb cu serverul care concurează cu tastarea dvs.
+set_auto_purge_note = Elimină definitiv mesajele din Coșul de gunoi și Nesolicitate după ce au stat acolo acest număr de zile -- aceeași eliminare definitivă pe care Golește coșul de gunoi și Golește dosarul cu nesolicitate o fac la cerere, executată automat o dată pe zi cât timp ZBox este deschis. Activată implicit la 30 de zile. 0 o dezactivează. Nu poate fi anulată după ce un mesaj a fost eliminat.
+set_bare_keys_note = Când este activat, apăsarea doar a tastelor S, A, J, W sau K în lista de mesaje comută imediat steluța, arhivează, marchează mesajele selectate ca nesolicitate (Shift+J le marchează ca nefiind nesolicitate) sau urmărește/ignoră conversația din care face parte selecția -- Arhivarea și Marcarea ca nesolicitat nu au confirmare și nici anulare. Dezactivarea readuce S, A, J, W și K la navigarea obișnuită după prima literă din listă. Ctrl+S și Ctrl+Shift+A funcționează oricum. Intră în vigoare imediat.
+set_sounds_note = Tonuri scurte pentru progres, mesaje noi, acțiuni de trimitere, răspuns sau redirecționare, ștergeri și rezultate de căutare. Dezactivat oprește orice sunet din aplicație; anunțurile cititorului de ecran și ale barei de stare nu sunt afectate.
+set_desktop_notifications_note = O notificare Windows pentru fiecare lot de mesaje noi, separată de sunetul de mai sus. Dezactivat o oprește pentru fiecare cont; un cont individual poate fi, de asemenea, redus la tăcere separat în Setări cont și identități.
+set_theme_note = Temele personalizate sunt dosare plasate în dosarul sounds al ZBox, fiecare furnizând propriile progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav și none_found.wav. Un fișier de temă care lipsește revine la sunetul implicit.
+set_theme_note_only_default = Temele personalizate sunt dosare plasate în dosarul sounds al ZBox, fiecare furnizând propriile progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav și none_found.wav. Un fișier de temă care lipsește revine la sunetul implicit. Doar „default” este disponibil până adăugați un alt dosar de temă.
+set_lock_note = La pornire, ZBox cere apoi una dintre metodele dvs. de deblocare înainte de a deschide vreun cont. Oricare dintre ele este suficientă: o cheie de acces, o cheie de securitate sau parola primară. Închiderea în zona de notificare nu este o ieșire și nu blochează din nou; Fișier > Ieșire și Ieșire din pictograma din zona de notificare sunt. Dacă nimic nu este înregistrat și nu este setată o parolă primară, blocarea este omisă în loc să vă închidă accesul la propria corespondență.
+set_security_note = Parola primară este singura dintre cele trei care criptează ceva: ea permite acestui dosar să deschidă parolele salvate ale conturilor pe un alt computer. O cheie de acces sau o cheie de securitate deblochează aplicația pe acest computer. Niciuna nu înlocuiește parola primară pe un computer pe care ZBox nu a mai fost folosit.
+set_minimize_note = Minimizarea ZBox îi ascunde butonul din bara de activități și îl lasă să ruleze în spatele pictogramei din zona de notificare. Faceți clic stânga pe pictograma din zona de notificare (sau Enter/Spațiu când are focalizarea tastaturii) pentru a readuce fereastra.
+set_close_note = Butonul Închide al ferestrei, Alt+F4 și Ctrl+W apăsat pe fila Corespondență ascund ZBox în zona de notificare în loc să-l închidă. Fișier > Ieșire (Ctrl+Shift+Q) și elementul Ieșire al pictogramei din zona de notificare închid întotdeauna efectiv ZBox, deci există mereu o cale de la tastatură pentru a ieși fără a atinge zona de notificare.
+set_stay_maximized_note = ZBox pornește maximizat și este readus la maximizat dacă îl demaximizați. Bara de meniu, bara de titlu și marginea ferestrei nu sunt afectate -- acesta nu este un mod ecran complet fără margini, deci orice comandă rapidă de meniu cu Alt continuă să funcționeze.
+set_run_at_startup_note = Pornește ZBox automat când vă conectați la Windows, deschis direct în zona de notificare în loc să-și arate fereastra. Intră în vigoare imediat, nu doar la următoarea lansare.
+set_desktop_shortcut_note = Pune o comandă rapidă ZBox pe desktop, înlocuind una care există deja. O comandă rapidă stochează locația exactă a acestui dosar ZBox, deci dacă mutați sau copiați ZBox în altă parte, apăsați din nou aici în noua copie pentru a îndrepta comanda rapidă de pe desktop spre ea. Intră în vigoare imediat și nu așteaptă OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Nume
+ab_phone = Telefon
+ab_notes = Note
+ab_heading = Agendă de contacte
+ab_contacts = Contacte
+ab_new = &Nou...
+ab_edit = &Editează...
+ab_delete = &Șterge
+ab_import = &Importă...
+ab_export = &Exportă...
+ab_groups_label = Grupuri (liste de discuții)
+ab_groups_name = Grupuri
+ab_new_group = &Grup nou...
+ab_rename_group = &Redenumește grupul...
+ab_delete_group = &Șterge grupul
+ab_manage_members = &Gestionează membrii...
+ab_all_contacts = Toate contactele
+ab_add_member = Adaugă >>
+ab_remove_member = << Elimină
+ab_members_of = Membrii grupului {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Nu este în dicționar:
+sp_not_in_dictionary_name = Nu este în dicționar
+sp_in_this_line_label = În acest rând:
+sp_in_this_line_name = În acest rând
+sp_suggestions_label = &Sugestii:
+sp_suggestions_name = Sugestii
+sp_replace_with_label = &Înlocuiește cu:
+sp_replace_with_name = Înlocuiește cu
+sp_replace = &Înlocuiește
+sp_replace_all = &Înlocuiește tot
+sp_ignore = &Ignoră
+sp_ignore_all = &Ignoră tot
+sp_add_to_dictionary = &Adaugă în dicționar
+btn_close = &Închide
+
+# Privacy and Content Blocking.
+priv_remote_label = Conținut la distanță în mesaje:
+priv_block_remote = &Blochează conținutul la distanță până îl cer (recomandat)
+priv_blocklist_label = Listă de blocare a reclamelor și urmăritorilor:
+priv_block_known = &Blochează domeniile cunoscute de reclame și urmăritori
+priv_update_daily = &Actualizează lista zilnic în fundal
+priv_update_now = &Actualizează acum
+priv_junk_label = Reguli pentru mesaje nesolicitate:
+priv_check_inbox = &Verifică mesajele noi din Mesaje primite după expeditori blocați și linkuri de phishing cunoscute
+priv_move_blocked = &Mută automat mesajele de la expeditori blocați în Nesolicitate
+priv_update_phishing = &Actualizează lista de phishing acum
+priv_blocked_label = Expeditori blocați:
+priv_blocked_name = Expeditori blocați
+priv_remove_blocked = &Elimină expeditorul blocat
+priv_never_junk_label = Expeditori care nu sunt tratați niciodată ca nesolicitați:
+priv_never_junk_name = Expeditori care nu sunt tratați niciodată ca nesolicitați
+priv_remove_never_junk = &Elimină expeditorul niciodată nesolicitat
+priv_allowed_label = Expeditori cărora li se permite să încarce conținut la distanță:
+priv_allowed_name = Expeditori permiși
+priv_remove_selected = &Elimină expeditorul selectat
+
+# Message Filters.
+filt_rule_name = Numele regulii
+filt_enabled = &Activată
+filt_match_label = Potrivire:
+filt_match_all = &Potrivește toate condițiile următoare (ȘI)
+filt_match_any = &Potrivește oricare dintre condițiile următoare (SAU)
+filt_conditions_label = Condiții (lăsați o valoare goală pentru a o omite):
+filt_condition_field = Câmpul condiției {number}
+filt_condition_contains = Condiția {number} conține
+filt_actions_label = Acțiuni:
+filt_mark_read = &Marchează ca citit
+filt_flag = &Adaugă steluță mesajului
+filt_move_label = Mută în dosarul:
+filt_move_name = Mută în dosar
+filt_rules_name = Reguli de filtrare
+filt_new = &Regulă nouă...
+filt_edit = &Editează regula...
+filt_delete = &Șterge regula
+filt_up = &Mută în sus
+filt_down = &Mută în jos
+filt_run_label = Execută acum pe dosarul:
+filt_run_name = Dosarul pentru Execută acum
+filt_run_now = &Execută acum
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Deblochează cu cheie de acces (Windows Hello)
+unl_security_key = &Deblochează cu cheie de securitate
+unl_master_password_label = &Parolă primară:
+unl_master_password_name = Parolă primară
+unl_unlock = &Deblochează
+unl_exit = &Ieșire din ZBox
+unl_methods_label = &Metode înregistrate:
+unl_methods_name = Metode de deblocare înregistrate
+unl_add_passkey = &Adaugă cheie de acces…
+unl_add_key = &Adaugă cheie de securitate…
+unl_reassign = &Reatribuie cheia de acces acestui computer…
+unl_test = &Testează…
+unl_remove = &Elimină
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Expeditor
+comp_to = Către
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Subiect
+comp_attach_button = Atașează fișier...
+comp_sending = Se trimite...
+comp_report_label = &Raport:
+comp_report_name = Raport
+comp_refresh = &Reîmprospătează
+comp_copy = &Copiază
+comp_preview_read = Așa cum îl citește destinatarul
+comp_preview_source = HTML-ul care va fi trimis
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Corpul mesajului
+mv_blocked_notice = Notificare despre conținutul blocat
+mv_show_remote = &Arată conținutul la distanță
+mv_always_allow = &Permite întotdeauna acest expeditor
+mv_message_headers = Antetele mesajului
+mv_attachments = Atașamente
+mv_attachments_count = Atașamente ({count})
+mv_save_attachment = Salvează: {filename}
+mv_save_all = Salvează tot
+mv_html_view = Vizualizarea HTML a mesajului
+mv_saved_message = Mesaj salvat
+mv_show_remote_tip = Reîncarcă acest mesaj cu imaginile și stilurile de la distanță. Urmăritorii cunoscuți rămân blocați.
+mv_always_allow_tip = Încarcă conținutul la distanță în fiecare mesaj de la {sender}.
+
+# The search tab.
+srch_account = Cont
+srch_folder = Dosar
+srch_for = Caută
+
+# The signature editor.
+sig_editors = Editoare de semnătură
+sig_formatted = Semnătură, formatată
+sig_source = Semnătură, sursă HTML
+sig_plain_label = Alternativă în text simplu (trimisă împreună cu HTML-ul)
+sig_plain_name = Alternativă în text simplu
+
+# About ZBox.
+about_text_name = Textul Despre ZBox
+about_view_license = &Vezi licența...
+about_google = &Parole de aplicație Google...
+about_support = &Susțineți ZBox -- dezvoltare și întreținere de către o singură persoană
+about_repos = &Depozitele de aplicații ale lui Harith pe GitHub
+about_contact = &Contactați-l pe Harith
+btn_close_plain = Închide
+btn_cancel_plain = Renunță
+
+# The license window.
+eula_heading = Licența ZBox
+eula_text_name = Textul licenței ZBox
+eula_third_party = Paginile de licență ale componentelor terțe:
+eula_agree = &Sunt de acord cu termenii de mai sus
+eula_agree_name = Am citit și sunt de acord cu termenii licenței ZBox
+eula_disagree = &Nu sunt de acord
+eula_next = &Înainte
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Textul documentației ZBox
+doc_copy = Copiază în clipboard
+shortcuts_heading = Comenzi rapide de la tastatură
+shortcuts_text_name = Textul comenzilor rapide de la tastatură
+
+# The main window's own panes.
+mf_toolbar = Bara de instrumente principală
+mf_tabs = File ZBox
+tree_heading = Conturi și dosare
+tree_name = Arborele de conturi și dosare
+envlist_heading = Mesaje
+envlist_name = Lista de mesaje
+rdr_heading = Mesaj
+rdr_name = Cititor de mesaje
+conv_heading_one = Conversație: 1 mesaj
+conv_heading_many = Conversație: {count} mesaje
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} din {total} finalizate.
+bulk_cancelling = Se anulează -- se termină mesajul curent...
+cache_clear_now = Golește acum cache-ul de mesaje offline... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, protejat
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Numele afișat este opțional -- lăsați-l gol pentru a trimite cu numele propriu al acestui cont.
+acct_note_identity = Adresa de e-mail poate fi diferită de e-mailul de autentificare dacă furnizorul dvs. are un domeniu personalizat legat de această cutie poștală. Corespondența va fi trimisă și primită cu adresa de mai sus, în timp ce autentificarea folosește în continuare e-mailul de autentificare. Lăsați câmpul parolei gol pentru a păstra parola deja stocată pentru acest cont -- de exemplu, după schimbarea unei parole de aplicație Gmail, tastați-o pe cea nouă aici; altfel lăsați-l gol.
+acct_note_identities = Alte adrese cu care acest cont poate trimite și răspunde. La răspunsul unui mesaj trimis la una dintre acestea, câmpul Expeditor are implicit acea adresă în locul celei de mai sus.
+acct_note_signature = Adăugată la fiecare mesaj nou, răspuns și redirecționare trimise din acest cont, sub un rând „-- ”. Lăsați gol pentru niciuna. Editează semnătura deschide editorul formatat, unde sunt disponibile aldin, liste și linkuri; caseta de mai sus conține apoi versiunea în text simplu care se trimite împreună cu ea.
+acct_note_junk = În ce dosar real mută mesajele Marchează ca nesolicitat. „{automatic}” folosește aceeași estimare în funcție de furnizor pe care o folosesc deja Arhivarea și Coșul de gunoi; setați aceasta doar dacă estimarea este greșită sau dosarul pentru nesolicitate are un nume personalizat.
+acct_note_disable = Un cont dezactivat nu este contactat niciodată -- fără IDLE, fără reîmprospătare periodică, nimic -- până la reactivare. Apare în continuare în arbore, marcat (dezactivat), iar corespondența deja descărcată rămâne disponibilă offline. Același comutator ca Conturi > Dezactivează contul sau meniul contextual propriu al contului; acesta este doar un alt loc din care se poate ajunge la el.
+acct_note_default = Dosarele acestui cont apar primele în arbore, iar un mesaj nou este trimis implicit din el, dacă nu este schimbat manual în fereastra de scriere. Nu afectează adresa pe care o folosește un răspuns sau o redirecționare -- aceasta urmează deja mesajul la care se răspunde (vedeți Identități suplimentare mai sus). Există întotdeauna exact un cont implicit, deci debifarea acestei opțiuni la contul implicit curent fără a o bifa la altul nu schimbă nimic -- bifați în schimb caseta altui cont pentru a-i preda lui rolul de implicit.
+acct_note_mute = &Dezactivarea sunetului blochează sunetul pentru mesaje noi, anunțul rostit și notificarea Windows ale acestui cont, indiferent cum sunt configurate altfel. Nu afectează alte conturi și rămâne supusă comutatoarelor principale din Setări > Sunete și notificări (sunete și notificări pe desktop în general).
+wiz_note_app_password = Dacă aveți deja o parolă de aplicație creată pentru ZBox, apăsați Înainte pentru a continua.
+wiz_note_login = Date de autentificare.\nDacă e-mailul de autentificare diferă de adresa de mai sus, de exemplu contul la furnizor este login@example.net, dar doriți să trimiteți și să primiți ca you@example.org, introduceți aici e-mailul de autentificare. Puteți seta ulterior adresa de trimitere personalizată în Setări cont și identități.
+wiz_note_servers = Setări server, completate în prealabil acolo unde domeniul este recunoscut. Editați tot ce trebuie să fie diferit.
+wiz_preset_none = Nu s-a găsit nicio presetare pentru acest domeniu. Introduceți manual setările serverului furnizorului; paginile de ajutor ale furnizorului le vor enumera.
+ab_note_groups = Tastați numele unui grup în câmpul Către, Cc sau Bcc al unei ferestre de scriere pentru a completa deodată toți membrii acestuia.
+cache_note_intro = Acestea elimină doar copiile locale ale ZBox. Nimic nu este șters de pe vreun server de e-mail, iar un mesaj eliminat este descărcat din nou data viitoare când îl deschideți.
+cache_note_age = Curățarea automată rulează o dată pe zi, când ZBox nu a avut activitate de la tastatură timp de zece minute și niciun mesaj nu este deschis. Se ghidează după data proprie a fiecărui mesaj, inclusiv a mesajelor care sunt încă în contul dvs.
+filt_note_intro = Regulile rulează în ordine, de sus în jos, testând Expeditor, Către și Subiect. Se aplică automat corespondenței noi pe măsură ce sosește în Mesaje primite ale acestui cont; folosiți Execută acum de mai jos pentru a le aplica mesajelor aflate deja într-un dosar.
+filt_note_run_now = Aplică în ordine fiecare regulă activată de mai sus fiecărui mesaj aflat deja în dosarul ales -- salvează mai întâi modificările, la fel ca OK.
+mp_note_intro = Aceste conturi au fost configurate pe un alt computer. Introduceți parola primară pentru a debloca aici parolele lor salvate. Vi se va cere o singură dată pe acest computer.\n\nFără ea, va trebui să vă autentificați din nou pe serverul de e-mail pentru fiecare cont.
+priv_note_remote = Imaginile, foile de stil și fonturile pe care un mesaj le încarcă de pe internet îi spun expeditorului momentul în care l-ați deschis și de unde. Cu această opțiune activată, niciuna nu se încarcă: deasupra mesajului apare o notificare despre ce a fost blocat, iar Ctrl+Shift+I le încarcă pentru acel mesaj. Imaginile atașate mesajului propriu-zis se afișează întotdeauna. Scripturile și cadrele încorporate sunt eliminate oricum și nu se încarcă niciodată.
+priv_note_blocklist = Acesta este al doilea nivel. Contează după ce încărcați conținutul la distanță al unui mesaj sau permiteți un expeditor: imaginile se încarcă, dar tot ce provine de la un domeniu cunoscut de urmărire sau de reclame tot nu. Lista este descărcată din liste publice de reclame și urmăritori și combinată; actualizarea durează o secundă sau două și rulează în fundal.
+priv_note_junk = Fără ghicit. Marchează ca nesolicitat adaugă expeditorul în lista de blocare de mai jos, cu excepția cazului în care mesajul a venit printr-o listă de discuții. Marchează ca nefiind nesolicitat adaugă expeditorul în lista celor niciodată nesolicitați, iar acel mesaj nu mai este verificat niciodată. Un mesaj nou de la un expeditor blocat este marcat Expeditor blocat în listă; unul care trimite la un site cunoscut de phishing sau malware este marcat Posibil phishing. Filtrarea spamului proprie furnizorului dvs. de e-mail rulează în continuare ca înainte.
+priv_status_phishing_updating = Listă de phishing: se actualizează în fundal. Redeschideți această casetă de dialog pentru a vedea rezultatul.
+priv_status_updating = Se actualizează în fundal. Redeschideți această casetă de dialog pentru a vedea rezultatul.
+rel_note_intro = Mesaje înrudite cu „{subject}” după antetele lor Message-ID/References, în toate dosarele acestui cont.
+srch_note_intro = Căutați în Expeditor, Subiect și Corp textul introdus mai jos. Caută în toate conturile și dosarele, dacă nu restrângeți mai jos.
+sig_note_plain = Lăsați alternativa în text simplu goală și va fi scrisă din semnătura formatată când apăsați Salvează.
+unified_note_intro = Alegeți ce dosare să fie combinate din toate conturile. Fiecare dosar bifat devine o singură intrare în arbore care combină acel dosar din toate conturile dvs.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Despre ZBox
+title_account_settings = Setări cont și identități: {name}
+title_new_account = Cont nou
+title_address_book = Agendă de contacte
+title_members = Membri: {name}
+ab_group_name_prompt = Numele grupului:
+title_new_group = Grup nou
+title_cache_cleanup = Configurare curățare cache
+cache_age_prompt = Elimină automat mesajele din cache mai vechi de:
+title_automatic_cleanup = Curățare automată
+comp_link_prompt = Adresa linkului:
+title_insert_link = Inserează link
+title_composer_diagnostics = Diagnosticare fereastră de scriere
+title_formatted_preview = Previzualizare formatată
+title_license_agreement = Acordul de licență ZBox
+title_message_filters = Filtre de mesaje: {account}
+title_master_password_required = Este necesară parola primară
+title_privacy_dialog = Confidențialitate și blocare conținut
+title_privacy = Confidențialitate
+title_settings = Setări
+title_unified_folders = Dosare unificate
+title_zbox_locked = ZBox este blocat
+title_message_view = Vizualizare mesaj
+title_remote_content = Conținut la distanță
+title_refresh = Reîmprospătează
+title_refresh_all = Reîmprospătează tot
+mv_choose_folder = Alegeți un dosar în care să salvați atașamentul
+title_thread = Conversație
+title_inbox = Mesaje primite
+title_compose = Scriere
+title_watch_thread = Urmărește conversația
+title_ignore_thread = Ignoră conversația
+title_edit_signature = Editează semnătura
+title_account = Cont
+mf_folder_name_prompt = Numele dosarului:
+mf_new_name_prompt = Nume nou:
+title_refresh_all_accounts = Reîmprospătează toate conturile
+title_sender = Expeditor
+title_new_mail = Mesaje noi
+mf_export_dialog_title = Exportă toate cele {count} cont(uri) și setările
+mf_related_tab = Înrudite: {subject}
+title_hotkeys_diagnostic = Diagnosticare taste rapide
+set_choose_attachment_dir = Alegeți dosarul de salvare a atașamentelor
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox este blocat. Folosiți oricare dintre metodele de mai jos pentru a-l debloca. Renunțarea închide ZBox fără a deschide vreun cont.
+unl_note_foreign_passkey = Cheia de acces salvată cu acest dosar aparține altui computer, deci nu poate fi folosită aici. Deblocați cu cheia de securitate sau cu parola primară, apoi folosiți Setări, Confidențialitate și securitate, Metode de deblocare pentru a configura o cheie de acces pe acest computer.
+unl_note_methods = Oricare dintre acestea deblochează ZBox când blocarea aplicației este activată, pe lângă parola primară. O cheie de acces folosește Windows Hello pe acest computer; o cheie de securitate este o cheie FIDO2 prin USB sau NFC și funcționează pe orice computer la care o conectați.
+unl_note_not_encryption = Acestea deblochează aplicația. Nu criptează nimic: parola primară este în continuare singurul lucru care poate deschide parolele salvate ale conturilor pe un computer pe care acest dosar nu a mai fost folosit. Trebuie setată prima, iar niciuna dintre acestea nu poate fi adăugată până atunci.
+unl_add_passkey_unavailable = &Adaugă cheie de acces (indisponibil)
+unl_add_key_unavailable = &Adaugă cheie de securitate (indisponibil)
+unl_reassign_unavailable = &Reatribuie cheia de acces acestui computer (indisponibil)
+unl_status_cancelled_passkey = Cheia de acces a fost anulată. ZBox este încă blocat.
+unl_status_cancelled_key = Cheia de securitate a fost anulată. ZBox este încă blocat.
+unl_status_enter_password = Introduceți parola primară.
+unl_status_no_master = Nu este setată nicio parolă primară, deci încă nu se poate adăuga o cheie de acces sau o cheie de securitate. Setați una cu butonul Parolă primară din Setări, Confidențialitate și securitate, apoi reveniți aici. Parola primară este cea care deschide parolele salvate ale conturilor pe un alt computer; o cheie de acces doar deblochează aplicația pe acest computer, deci nu poate funcționa singură.
+unl_status_unsupported = Windows-ul acestui computer nu acceptă chei de acces sau chei de securitate, deci aici doar parola primară poate debloca ZBox.
+unl_status_foreign_one = 1 cheie de acces aparține altui computer și nu poate debloca ZBox aici. Reatribuirea o înlocuiește cu una creată pe acest computer.
+unl_status_foreign_many = {count} chei de acces aparțin altui computer și nu pot debloca ZBox aici. Reatribuirea le înlocuiește cu una creată pe acest computer.
+unl_status_foreign_one_no_hello = 1 cheie de acces aparține altui computer și nu poate debloca ZBox aici. Windows Hello nu este configurat aici, deci nu poate fi înlocuită pe acest computer; Elimină o uită.
+unl_status_foreign_many_no_hello = {count} chei de acces aparțin altui computer și nu pot debloca ZBox aici. Windows Hello nu este configurat aici, deci nu pot fi înlocuite pe acest computer; Elimină le uită.
+unl_status_no_hello = Windows Hello nu este configurat pe acest computer, deci aici nu se poate adăuga o cheie de acces. O cheie de securitate se poate adăuga.
+unl_status_none_registered = Nu este înregistrată încă nicio metodă de deblocare.
+unl_status_add_cancelled_passkey = Adăugarea unei chei de acces a fost anulată.
+unl_status_add_cancelled_key = Adăugarea unei chei de securitate a fost anulată.
+unl_status_added = Adăugat: {name}.
+unl_status_reassign_cancelled = Reatribuirea a fost anulată. Nu s-a schimbat nimic.
+unl_status_reassigned = S-a adăugat {name} și s-au uitat {count} de pe alte computere.
+unl_status_test_cancelled = Testul a fost anulat.
+unl_status_removed = Eliminat.
+unl_remove_warning_last = Eliminați {name}?\n\nEste singura metodă de deblocare înregistrată și nu este setată nicio parolă primară, deci cu blocarea aplicației activată nu ar mai rămâne nimic cu care să deblocați ZBox. Blocarea este atunci omisă în loc să vă închidă accesul, dar ZBox s-ar deschide apoi deblocat.
+unl_remove_warning = Eliminați {name}? ZBox nu o va mai accepta.
+ab_col_email = E-mail
+ab_col_name = Nume
+ab_col_phone = Telefon
+ab_no_contacts = Încă nu există contacte.
+acct_auto_check = Verifică automat mesajele noi
+acct_note_auto_check = Dezactivat: ZBox nu contactează niciodată din proprie inițiativă acest cont -- fără urmărirea mesajelor noi, fără reîmprospătare periodică, fără descărcări în fundal -- astfel încât un server nesigur nu poate încetini celelalte conturi. Corespondența descărcată se deschide în continuare, iar Reîmprospătarea (F5), trimiterea și ștergerea ajung în continuare la server. La fel ca Întrerupe verificarea automată din meniul Instrumente sau din meniul contextual al contului.
+bl_day_ago = acum 1 zi
+bl_days_ago = acum {days} zile
+bl_label_blocklists = Listă de blocare
+bl_label_phishing = Listă de phishing
+bl_last_failed = Ultima încercare a eșuat: %s
+bl_not_downloaded = Nu a fost descărcată încă.
+bl_save_failed = S-a descărcat %s, dar nu a putut fi salvată: %s
+bl_seed_only = %s domenii din lista integrată. Nu a fost actualizată încă de pe internet.
+bl_some_failed = Unele surse au eșuat: %s
+bl_some_unreachable = Unele surse nu au putut fi contactate: %s
+bl_status_line = %s domenii. Ultima actualizare %s.
+bl_up_to_date = %s este deja la zi.
+bl_update_failed = Nu s-a putut actualiza %s: %s
+bl_updated = %s actualizată: %s domenii.
+cc_age_choice = Orice mesaj din cache vechi de %s
+cc_auto_button = Curățare automată: mesaje din cache mai vechi de %s...
+comp_btn_discard = &Renunță la mesaj
+comp_btn_keep_editing = &Continuă editarea
+comp_btn_save_draft = &Salvează ciorna
+comp_no_account = Niciun cont configurat
+comp_saving_draft = Se salvează ciorna…
+comp_this_message = acest mesaj
+comp_unsent_save_q = Salvați %s ca ciornă înainte de închidere?
+comp_unsent_tray_q = Salvați %s ca ciornă înainte ca ZBox să treacă în zona de notificare?
+doc_unreadable = Fișierul de documentație nu a putut fi citit:
+envlist_all_disabled = Toate conturile sunt dezactivate.
+envlist_col_date = Dată
+envlist_col_from = Expeditor
+envlist_col_status = Stare
+envlist_col_subject = Subiect
+envlist_collapsed = Restrânsă (%d)
+envlist_empty = Niciun mesaj în acest dosar.
+envlist_loading = Se încarcă mesajele...
+envlist_no_accounts = Niciun cont configurat încă.
+envlist_no_ignored = Nicio conversație ignorată în acest dosar.
+envlist_no_watched = Nicio conversație urmărită în acest dosar.
+envlist_select_folder = Selectați un cont sau un dosar pentru a încărca mesajele.
+eula_link_0 = Deschide în browser pagina de licență Himalaya
+eula_link_1 = Deschide în browser pagina de licență StevenBlack hosts
+eula_link_2 = Deschide în browser pagina de licență EasyList/EasyPrivacy
+eula_link_3 = Deschide în browser pagina de licență Phishing.Database
+eula_read_note = Citiți licența de mai jos, inclusiv secțiunile terțe. Trebuie să bifați Sunt de acord înainte ca Înainte să devină disponibil. Nu sunt de acord închide ZBox fără a-l porni și elimină ce a creat această rulare până acum.
+eula_unreadable = Fișierul de licență nu a putut fi citit:\n%s
+filters_title = Execută filtrele
+flag_title = Adaugă steluță mesajului
+folder_type_archive = Arhive
+folder_type_drafts = Mesaje nefinalizate
+folder_type_inbox = Mesaje primite
+folder_type_junk = Nesolicitate
+folder_type_sent = Mesaje trimise
+folder_type_trash = Coș de gunoi
+mime_application_json = Fișier JSON
+mime_application_msword = Document Word
+mime_application_octet_stream = Fișier binar
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Foaie de calcul Excel
+mime_application_vnd_ms_powerpoint = Prezentare PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Prezentare PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Foaie de calcul Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Document Word
+mime_application_xml = Fișier XML
+mime_application_zip = Arhivă ZIP
+mime_audio_mpeg = Audio MP3
+mime_audio_ogg = Audio OGG
+mime_audio_wav = Audio WAV
+mime_image_bmp = Imagine BMP
+mime_image_gif = Imagine GIF
+mime_image_jpeg = Imagine JPEG
+mime_image_png = Imagine PNG
+mime_image_svg_xml = Imagine SVG
+mime_image_webp = Imagine WebP
+mime_text_csv = Fișier CSV
+mime_text_html = Fișier HTML
+mime_text_plain = Fișier text
+mime_video_mp4 = Video MP4
+mime_video_x_msvideo = Video AVI
+move_title_junk = Marchează ca nesolicitat
+move_title_move_to = Mută în
+move_title_not_junk = Marchează ca nefiind nesolicitat
+mp_explain_set = Este setată o parolă primară. Ea permite acestui dosar ZBox să deschidă parolele salvate ale conturilor pe un alt computer.\n\nLăsați goale ambele casete pentru parola nouă și apăsați OK pentru a o elimina. Eliminarea nu afectează acest computer, dar dosarul nu va mai funcționa pe niciun alt computer fără a vă autentifica din nou în fiecare cont.
+mp_explain_unset = Nu este setată nicio parolă primară, deci parolele salvate ale conturilor pot fi citite doar pe acest computer și în acest cont Windows. Dacă copiați dosarul în altă parte, va trebui să vă autentificați din nou pe serverul de e-mail pentru fiecare cont.\n\nSetați una, iar ZBox o va cere o dată pe fiecare computer nou, apoi se va debloca normal acolo de atunci înainte. Acest computer nu o va mai cere.\n\nNotați-o și păstrați-o într-un loc sigur. Nu este stocată nicăieri și nu poate fi recuperată: dacă o uitați, va trebui să vă autentificați din nou pe serverul de e-mail pentru fiecare cont.
+mp_label_confirm = &Confirmați noua parolă primară:
+mp_label_current = &Parola primară curentă:
+mp_label_master = &Parolă primară:
+mp_label_new = &Noua parolă primară:
+mp_name_confirm = Confirmați noua parolă primară
+mp_name_current = Parola primară curentă
+mp_name_master = Parolă primară
+mp_name_new = Noua parolă primară
+mp_prompt_existing = Parolele salvate ale conturilor sunt protejate doar pe acest computer. Setați o parolă primară pentru ca ele să poată fi deschise și dacă mutați ZBox pe un alt computer.
+mp_prompt_first_run = ZBox urmează să salveze parolele conturilor dvs. Setați acum o parolă primară pentru ca ele să poată fi deschise și dacă mutați ZBox pe un alt computer.
+mp_prompt_new_account = ZBox urmează să salveze parola acestui cont. Setați mai întâi o parolă primară pentru ca contul să poată fi deschis și dacă mutați ZBox pe un alt computer.
+mp_removed_done = Parola primară a fost eliminată. Parolele salvate funcționează acum doar pe acest computer și în acest cont Windows.
+mp_set_done = Parola primară a fost setată. ZBox o va cere o dată pe fiecare computer nou pe care este deschis acest dosar, apoi se va debloca normal acolo.
+mv_body_title = Corpul mesajului
+mv_col_format = Format
+mv_col_name = Nume
+mv_col_size = Mărime
+mv_format_unknown = Necunoscut
+mv_size_unknown = Mărime necunoscută
+na_account_settings = Setări cont și identități
+na_disable_account = Dezactivează contul
+na_edit_signature = Editează semnătura
+na_message_filters = Filtre de mesaje
+na_mute_account = Dezactivează sunetul contului
+na_pause_auto_check = Întrerupe verificarea automată
+na_remove_account = Elimină contul
+na_set_default = Setează drept cont implicit
+no_offline_copy = Nu există o copie offline a %s. Deschideți-l cât sunteți online sau folosiți Fișier, Offline, Sincronizează acum.
+perm_delete_confirm = {msg} Acest lucru ocolește Coșul de gunoi și nu poate fi anulat.
+perm_delete_many = Ștergeți definitiv {count} mesaje?
+perm_delete_one = Ștergeți definitiv {count} mesaj?
+preset_note_apple = Apple necesită o parolă specifică aplicației.
+preset_note_fastmail = Fastmail necesită o parolă de aplicație.
+preset_note_google = Google necesită o parolă de aplicație sau OAuth2, nu parola dvs. normală.
+preset_note_proton = ProtonMail necesită rularea locală a aplicației ProtonMail Bridge.
+preset_note_yahoo = Yahoo necesită o parolă de aplicație.
+priv_phishing_not_loaded = Listă de phishing: nu este încă încărcată. Se descarcă prima dată când aceste reguli sunt activate și ZBox este online.
+priv_phishing_prefix = Listă de phishing:
+priv_status_unavailable = Starea listei de blocare nu este disponibilă.
+rdr_load_failed = Nu s-a putut încărca mesajul.\n\n{message}
+rdr_loading = Se încarcă mesajul...
+rdr_select_message = Selectați un mesaj pentru a-l citi aici.
+set_autosave_off = Dezactivat — folosiți Salvează ciorna (Ctrl+S) pentru a salva manual
+set_autosave_seconds = La fiecare {seconds} secunde
+set_no_unlock = Nicio cheie de acces sau cheie de securitate utilizabilă aici
+set_purge_days = După {days} zile
+set_purge_off = Dezactivat — Coșul de gunoi și Nesolicitate nu sunt curățate automat niciodată
+set_purge_one_day = După 1 zi
+set_rt_bundled_installed = Mediu de rulare inclus: instalat.
+set_rt_bundled_many = Mediu de rulare inclus: %s instalate.
+set_rt_bundled_none = Mediu de rulare inclus: niciunul instalat, deci ZBox îl folosește pe cel la nivel de sistem.
+set_rt_bundled_unknown = Mediu de rulare inclus: nu a putut fi determinat.
+set_rt_bundled_ver = Mediu de rulare inclus: versiunea %s instalată.
+set_rt_system_unknown = Mediu de rulare la nivel de sistem: versiunea nu a putut fi determinată.
+set_rt_system_ver = Mediu de rulare la nivel de sistem: versiunea %s.
+set_unlock_many = %d metode de deblocare utilizabile aici
+set_unlock_unreadable = Metodele de deblocare nu au putut fi citite
+sig_tab_formatted = Formatat
+sig_tab_source = Sursă HTML
+srch_all_accounts = Toate conturile
+srch_all_folders = Toate dosarele
+tab_mail = Corespondență
+tab_new_message = Mesaj nou
+tab_saved_message = Mesaj salvat
+title_copy_to_err = Copiază în
+title_mark_message = Marchează mesajul
+title_unsent_message = Mesaj netrimis
+tree_unified_root = Dosare unificate
+unlock_kind_passkey = Cheie de acces (Windows Hello)
+unlock_kind_security_key = Cheie de securitate
+unlock_prompt_message = Windows vă cere să confirmați. Răspundeți solicitării cu Windows Hello, codul PIN sau cheia de securitate. Această fereastră se închide singură când Windows termină.
+unlock_prompt_title = Securitate Windows
+unlock_registering = Se înregistrează această metodă de deblocare
+unlock_the_passkey = Cheia de acces
+unlock_the_security_key = Cheia de securitate
+wildcard_eml = Fișiere de e-mail (*.eml)|*.eml|Toate fișierele (*.*)|*.*
+wildcard_export = Export ZBox (*.json)|*.json
+wiz_not_supported = NEACCEPTAT: {name}. {note} Acest cont nu poate fi adăugat în ZBox.
+stock_apply = &Aplică
+stock_cancel = Renunță
+stock_close = &Închide
+stock_help = &Ajutor
+stock_no = &Nu
+stock_ok = OK
+stock_yes = &Da
+wiz_btn_back = &< Înapoi
+wiz_btn_finish = &Finalizare
+wiz_btn_next = &Înainte >
+acct_unsaved_q = Salvați modificările acestui cont?
+btn_save = &Salvează
+spell_add_to_dictionary = &Adaugă în dicționar
+spell_no_suggestions = Nicio sugestie
+title_signature_for = Semnătură: {account}
+title_mark_folder_read = Marchează dosarul ca citit
+title_update_available = Actualizare ZBox
+update_available = ZBox {new} este disponibil. Aveți {current}.
+upd_notes_label = Note de lansare:
+upd_no_notes = Nu există note de lansare.
+upd_notes_name = Note de lansare
+upd_update_now = Da, actualizează acum
+upd_remind_later = Amintește-mi mai târziu
+title_update_download = Se descarcă actualizarea ZBox
+upd_downloading = Se descarcă ZBox {version}...
+upd_progress_name = Progresul descărcării
+upd_cancel = Anulează
+upd_cancelling = Se anulează...
+set_updates_label = Actualizări:
+set_update_auto = Caută automat actualizări
+set_update_mode_label = Când se găsește o actualizare:
+set_update_ask = Întreabă-mă
+set_update_silent = Descarcă și instalează fără întrebări
+set_update_note = ZBox caută pe GitHub o versiune mai nouă cel mult o dată pe zi, doar când nu este folosit, și nu trimite nimic în afară de numărul versiunii sale. Întreabă-mă afișează versiunea nouă și notele ei de lansare, cu Da, actualizează acum și Amintește-mi mai târziu. Descarcă și instalează fără întrebări aduce actualizarea în timpul inactivității și o instalează data viitoare când ieșiți complet din ZBox, niciodată în timp ce lucrați. O actualizare înlocuiește doar fișierele de program ale ZBox: conturile, parolele, setările, mesajele, jurnalele, temele de sunet și orice limbă adăugată de dumneavoastră nu sunt atinse niciodată, iar versiunea anterioară este păstrată și restaurată singură dacă cea nouă nu pornește. În Ajutor, Actualizări găsiți și Caută actualizări acum și pagina versiunilor pentru actualizarea manuală.
+set_update_check_now = Caută acum
+mv_attachment_button = {filename} ({format})
+att_open = Deschide
+att_save = Salvează...
+att_save_all = Salvează toate atașamentele
+title_save_attachment = Salvează atașamentul
+title_full_headers = Toate anteturile
+hdr_copy_all = Copiază tot
+acct_identity_own_signature = Folosește propria semnătură
+acct_identity_own_reply_to = Folosește propria adresă Răspunde la
+acct_identity_reply_to = Adresa Răspunde la
+acct_identity_always_cc = Trimite întotdeauna Cc la aceste adrese
+acct_identity_cc = Adrese Cc
+acct_identity_always_bcc = Trimite întotdeauna Bcc la aceste adrese
+acct_identity_bcc = Adrese Bcc
+acct_identity_own_folders = Folosește propriile dosare Ciorne și Trimise
+acct_identity_drafts = Dosarul de ciorne
+acct_identity_sent = Dosarul de trimise
+acct_identity_own_smtp = Folosește propriul server de expediere
+acct_identity_smtp_login = Nume de autentificare pentru expediere
+acct_identity_smtp_password = Parolă pentru expediere
+acct_identity_test_smtp = Testează serverul de expediere
+acct_identity_note_smtp = Lăsați numele de autentificare gol pentru a vă conecta cu adresa de e-mail a acestei identități. Copiile trimise ajung în dosarul Trimise al acestui cont sau în dosarul Trimise propriu al acestei identități, dacă are unul.
+identity_field_required = Completați {field} sau debifați caseta sa.
+identity_field_invalid = {field} conține o adresă nevalidă.
+identity_folders_required = Alegeți un dosar de ciorne, un dosar de trimise sau pe amândouă, sau debifați caseta lor.
+identity_password_required = Introduceți parola pentru expediere.
+identity_smtp_testing = Se testează serverul de expediere.
+identity_smtp_ok = Serverul de expediere a acceptat autentificarea.
+identity_smtp_failed = Testul serverului de expediere a eșuat.\n\n{error}
+set_bare_keys_note_move = M și C deschid meniurile Mută în și Copiază în cu dosarele pentru mesajele selectate, iar Shift+M deschide o casetă în care tastați o parte din numele unui dosar pentru a le muta acolo. Dezactivarea acestei opțiuni readuce și M și C la navigarea după prima literă.
+folder_search_filter = Numele dosarului conține
+folder_search_list = Dosare potrivite
+folder_search_no_match = Niciun dosar nu se potrivește cu acest nume.
+wiz_signin_method = Metodă de conectare
+wiz_method_password = Parolă
+wiz_method_microsoft = Cont Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Conectare Microsoft. Setările serverului pentru Outlook.com, Hotmail, Live și Microsoft 365 au fost completate.
+wiz_welcome_notice = Gmail. Parola dvs. normală Google va fi refuzată, dar o parolă de aplicație funcționează. Verificarea în doi pași trebuie să fie activată mai întâi. Butonul de mai jos deschide instrucțiunile Google.\n\nOutlook.com, Hotmail, Live și Microsoft 365. Acestea se conectează cu contul dumneavoastră Microsoft. Pe pagina de autentificare, alegeți Cont Microsoft, apoi conectați-vă în browser sau cu un cod.\n\nAlți furnizori. O parolă normală sau o parolă de aplicație funcționează de obicei, iar paginile de ajutor ale furnizorului enumeră setările serverului.
+preset_note_outlook = Conturile Outlook.com, Hotmail, Live și MSN se conectează cu un cont Microsoft. Alegeți Cont Microsoft ca metodă de conectare pe pagina de autentificare.
+ms_status_name = Starea conectării Microsoft
+ms_browser_button = Conectare în browser
+ms_code_button = Conectare cu un cod
+ms_copy_code = Copiază codul
+ms_open_page = Deschide pagina de conectare
+ms_stop = Oprește așteptarea
+ms_not_configured = Conectarea Microsoft nu este configurată în această copie ZBox.
+ms_not_signed_in = Încă neconectat. Conectați-vă în browser sau cu un cod pe orice dispozitiv.
+ms_signed_in = Conectat ca {address}.
+ms_signed_in_plain = Conectat.
+ms_needs_sign_in = Acest cont trebuie să se conecteze din nou la Microsoft. Conectați-vă în browser sau cu un cod pe orice dispozitiv.
+ms_reason_cancelled = Conectarea a fost oprită.
+ms_reason_timeout = Niciun răspuns nu a sosit la timp.
+ms_reason_denied = Accesul nu a fost permis.
+ms_reason_expired = Codul a expirat. Cereți unul nou.
+ms_reason_network = Microsoft nu a putut fi contactat. Verificați conexiunea și încercați din nou.
+ms_reason_server = Microsoft a răspuns: {detail}
+ms_page_done = Conectat. Puteți închide această pagină și reveni la ZBox.
+ms_page_failed = Conectarea nu s-a încheiat. Reveniți la ZBox pentru detalii.
+ms_browser_waiting = Browserul afișează pagina de conectare Microsoft. Terminați conectarea acolo, apoi reveniți la ZBox.
+ms_code_asking = Se cere de la Microsoft un cod de conectare...
+ms_code_waiting = Pe orice dispozitiv, deschideți {address} și introduceți codul {code}. ZBox așteaptă aici până terminați conectarea.
+ms_failed = Conectarea nu s-a încheiat. {reason}
+ms_code_copied = Cod copiat.
+offline_inbox_only = Doar Inbox-ul și Arhivele sunt păstrate pentru utilizare offline. Conectați-vă la internet pentru a deschide {folder}.
+block_sender_rule_name = Blochează {sender}
+title_block_sender = Blochează acest expeditor
+title_unblock_sender = Deblochează acest expeditor
+set_clear_inbox_cache = Golește memoria cache a mesajelor la ieșirea din Inbox
+set_clear_inbox_cache_note = Când este activat, copia offline și conținutul salvat al unui mesaj sunt șterse imediat ce acesta părăsește un Inbox, și atunci când a fost șters sau mutat în altă parte, de exemplu pe telefon, astfel încât să nu mai apară acolo unde nu mai este. Doar Inbox-ul păstrează aceste fișiere; orice alt dosar este citit mereu de pe server.
+empty_trash_all_confirm = Ștergeți definitiv toate mesajele din Coșul de gunoi al tuturor conturilor?\n\nAcțiunea nu poate fi anulată.
+
+[errors]
+language_restart_failed = ZBox nu s-a putut reporni:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Nu s-a putut deschide un client de e-mail pentru {address}.
+
+wizard_test_failed = Conexiunea a eșuat:\n\n{error}
+
+contacts_import_unreadable = Nu s-a putut citi acel fișier.\n\n{error}
+contacts_export_unwritable = Nu s-a putut scrie acel fișier.\n\n{error}
+
+attach_unreadable = Nu s-a putut citi atașamentul {path}:\n{error}
+send_failed = Nu s-a putut trimite mesajul.\n\n{error}
+draft_attach_unreadable = Nu s-a putut citi atașamentul {path}:\n{error}\n\nCiorna nu a fost salvată.
+draft_save_failed = Nu s-a putut salva ciorna.\n\n{error}
+
+clipboard_unavailable = Clipboardul nu a putut fi deschis.
+open_link_failed = Nu s-a putut deschide browserul pentru:\n{url}
+
+master_password_mismatch = Cele două casete pentru noua parolă primară nu se potrivesc.
+master_password_required = Introduceți o parolă primară sau apăsați Renunță.
+master_password_not_set = Parola primară nu a putut fi setată: {error}
+master_password_not_here = Parola primară nu poate fi schimbată de aici.
+
+attachment_save_failed = Nu s-a putut salva atașamentul.\n\n{error}
+attachments_save_failed = Nu s-au putut salva atașamentele.\n\n{error}
+print_failed = Nu s-a putut printa mesajul. Verificați că este configurată o imprimantă.
+print_preview_failed = Nu s-a putut deschide previzualizarea tipăririi. Verificați că este configurată o imprimantă.
+
+related_search_failed = Nu s-au putut căuta mesaje înrudite.\n\n{error}
+search_failed = Căutarea a eșuat.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox nu și-a găsit dosarul de configurare, deci metodele de deblocare nu pot fi gestionate de aici.
+shortcut_no_folder = ZBox nu și-a putut determina propriul dosar, deci nu se poate crea o comandă rapidă de aici.
+shortcut_failed_settings = Comanda rapidă de pe desktop nu a putut fi creată:\n\n{error}
+
+unlock_method_failed = {what} nu a funcționat.\n\n{error}
+unlock_check_failed = Parola primară nu a putut fi verificată.\n\n{error}
+unlock_password_wrong = Parola primară nu este corectă.
+unlock_add_failed = {what} nu a putut fi adăugată.\n\n{error}
+unlock_passkey_setup_failed = Cheia de acces nu a putut fi configurată pe acest computer, deci nu s-a schimbat nimic.\n\n{error}
+unlock_method_test_failed = Metoda nu a funcționat.\n\n{error}
+
+account_list_unreadable = ZBox nu a putut deschide lista de conturi.\n\n{error}\n\nNu a fost încărcat niciun cont, iar fișierul nu a fost modificat, deci nu s-a pierdut nimic. Adăugarea, editarea și eliminarea conturilor sunt refuzate până când lista poate fi citită.
+account_list_no_accounts = ZBox nu a putut deschide lista de conturi în această sesiune ({error}), deci nu există conturi de selectat. Nu s-a pierdut și nu s-a schimbat nimic. Închideți ZBox și porniți-l din nou, apoi introduceți parola primară când vi se cere.
+open_message_failed = Nu s-a putut deschide mesajul.\n\n{error}
+filters_list_failed = Nu s-au putut lista mesajele din {folder}.\n\n{error}
+filters_move_failed = Nu s-au putut muta mesajele filtrate.\n\n{error}
+cache_clear_failed = Nu s-a putut goli cache-ul.\n\n{error}
+folder_create_failed = Nu s-a putut crea dosarul.\n\n{error}
+folder_rename_failed = Nu s-a putut redenumi dosarul.\n\n{error}
+folder_delete_failed = Nu s-a putut șterge dosarul.\n\n{error}
+folder_subscribe_failed = Nu s-a putut face abonarea la dosar.\n\n{error}
+folder_unsubscribe_failed = Nu s-a putut face dezabonarea de la dosar.\n\n{error}
+saved_open_failed = Nu s-a putut deschide fișierul.\n\n{error}
+saved_parse_failed = Nu s-a putut interpreta acest fișier ca mesaj de e-mail.\n\n{error}
+save_file_failed = Nu s-a putut salva fișierul.\n\n{error}
+save_fetch_failed = Nu s-a putut obține mesajul de salvat.\n\n{error}
+empty_trash_failed = Nu s-a putut goli Coșul de gunoi.\n\n{error}
+empty_junk_failed = Nu s-a putut goli dosarul Nesolicitate.\n\n{error}
+export_write_failed = Nu s-a putut scrie fișierul de export.\n\n{error}
+import_read_failed = Nu s-a putut citi acest fișier ca export ZBox.\n\n{error}
+import_not_export = Acest fișier nu pare a fi un export ZBox.\n\n{error}
+search_open_failed = Nu s-a putut deschide acest mesaj.
+related_load_failed = Nu s-a putut încărca acest mesaj.\n\n{error}
+reply_load_failed = Nu s-a putut încărca mesajul la care să răspundeți.\n\n{error}
+forward_load_failed = Nu s-a putut încărca mesajul de redirecționat.\n\n{error}
+action_failed = Nu s-a putut finaliza această acțiune.\n\n{error}
+undo_failed = Nu s-a putut anula: {label}.\n\n{error}
+copy_failed = Nu s-a putut copia mesajul.\n\n{error}
+delete_failed = Nu s-a putut șterge mesajul.\n\n{error}
+archive_failed = Nu s-a putut arhiva mesajul.\n\n{error}
+master_password_not_changed = Parola primară nu a putut fi schimbată: {error}
+shortcut_failed_startup = Comanda rapidă de pe desktop nu a putut fi creată:\n\n{error}\n\nZBox va continua să pornească. Puteți încerca din nou mai târziu din Setări.
+account_locked_action = ZBox nu poate %s. Lista de conturi nu a putut fi deschisă în această sesiune (%s) și nu s-a schimbat nimic. Închideți ZBox și porniți-l din nou, apoi introduceți parola primară dacă vi se cere.
+send_tls_mismatch = Nu s-a putut trimite mesajul. Serverul de trimitere a răspuns fără criptare, deci criptarea la trimitere nu se potrivește cu portul. În Instrumente, Setări cont și identități, folosiți STARTTLS pentru portul 587 sau SSL/TLS pentru portul 465, apoi trimiteți din nou.\n\n{error}
+mark_folder_read_failed = Nu s-a putut marca dosarul ca citit.\n\n{error}
+update_failed = Actualizarea nu a putut fi descărcată, deci nu s-a schimbat nimic.\n\n{error}
+update_rolled_back = Actualizarea nu a putut porni, deci versiunea anterioară a fost restaurată.
+attachment_open_failed = Atașamentul nu a putut fi deschis.\n\n{error}
+headers_failed = Anteturile mesajului nu au putut fi încărcate.\n\n{error}
+wizard_ms_sign_in_first = Conectați-vă cu Microsoft înainte de a continua. Folosiți unul dintre cele două butoane de conectare de pe această pagină.
+wizard_provider_unsupported = ZBox nu se poate conecta la acest furnizor. Nota de pe această pagină spune de ce. Reveniți și folosiți altă adresă de e-mail sau anulați.
+acct_ms_sign_in_first = Conectați-vă cu Microsoft înainte de a salva sau alegeți Parolă ca metodă de conectare.
+ms_sign_in_again = {account} trebuie să se conecteze din nou la Microsoft. Deschideți Setări cont și identități și conectați-vă acolo.
+empty_trash_all_failed = Coșul de gunoi nu a putut fi golit pentru: {accounts}
+
+[help]

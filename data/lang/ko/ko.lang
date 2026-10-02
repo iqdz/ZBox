@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = 한국어
+code = ko
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = 메시지를 보냈습니다.
+draft_saved = 임시 보관했습니다.
+signature_inserted = 서명을 넣었습니다.
+signature_none = 이 계정에는 서명이 없습니다.
+signature_saved = 서명을 저장했습니다.
+signature_not_saved = 서명을 저장하지 않았습니다.
+pasted_as_quotation = 인용으로 붙여넣었습니다.
+clipboard_empty = 클립보드에 아무것도 없습니다.
+word_count = {words}단어, {characters}자.
+report_copied = 보고서를 복사했습니다.
+compose_tab_needed = 이 명령에는 작성 탭이 필요합니다.
+attach_file_instead = 끌어다 놓은 파일은 메시지 본문에 들어가지 않습니다. 파일을 보내려면 파일 첨부를 사용하세요.
+
+# Formatting in the message body
+formatting_here = 여기의 서식: {formatting}.
+no_formatting_here = 여기에는 서식이 없습니다. 일반 텍스트입니다.
+
+# Spelling
+nothing_to_check = 검사할 내용이 없습니다.
+no_misspellings = 맞춤법 오류가 없습니다.
+spelling_dictionary_unavailable = 맞춤법 사전을 사용할 수 없습니다.
+next_misspelling_first = 먼저 다음 맞춤법 오류를 사용하세요.
+word_added = {word}을(를) 사전에 추가했습니다.
+word_not_added = {word}을(를) 추가할 수 없습니다.
+corrections_applied_one = 수정 1개를 적용했습니다.
+corrections_applied_many = 수정 {count}개를 적용했습니다.
+corrections_applied_partly = 수정 {total}개 중 {applied}개를 적용했습니다. 나머지는 거부되었습니다. 로그를 확인하세요.
+occurrences_replaced_one = 1곳을 바꿨습니다.
+occurrences_replaced_many = {count}곳을 바꿨습니다.
+
+# Reading mail
+message_did_not_open = 메시지가 열리지 않았습니다. 서버가 응답하지 않았습니다. 다시 시도하려면 Enter 키를 누르세요.
+thread_open = 이 글타래에 {messages}. 닫으려면 다시 누르세요.
+no_thread_selected = 선택한 글타래가 없습니다.
+thread_watched = 글타래를 봅니다.
+thread_not_watched = 글타래를 더 이상 보지 않습니다.
+thread_ignored = 글타래를 무시합니다.
+thread_not_ignored = 글타래를 더 이상 무시하지 않습니다.
+none_found = 찾은 항목이 없습니다.
+refreshing_this_folder = 이 폴더를 새로 고치는 중입니다.
+refreshing_all_accounts = 모든 계정을 새로 고치는 중입니다.
+message_view_html = 메시지 보기: HTML (렌더링).
+message_view_text = 메시지 보기: 텍스트.
+html_view_still_loading = 메시지를 아직 불러오는 중입니다. Esc 키를 누르면 닫힙니다.
+message_still_opening = 메시지를 여는 중입니다. 서버가 느립니다.
+remote_content_blocked = 원격 콘텐츠를 차단했습니다.
+remote_content_unblocked = 원격 콘텐츠 차단을 해제했습니다.
+remote_content_already_showing = 이 메시지의 원격 콘텐츠가 이미 표시되고 있습니다.
+archived = 보관했습니다.
+copied_to_folder = {to_folder}에 복사했습니다.
+deleted_one = 메시지를 영구 삭제했습니다.
+deleted_many = 메시지 {count}개를 영구 삭제했습니다.
+trashed_one = 메시지를 지운 편지함으로 옮겼습니다.
+trashed_many = 메시지 {count}개를 지운 편지함으로 옮겼습니다.
+
+# Accounts and new mail
+no_account_yet = 아직 이동할 계정이 없습니다.
+inbox_landed = {name} 받은 편지함.
+account_enabled = {name}을(를) 사용합니다.
+auto_check_paused = {account}의 자동 확인을 일시 중지했습니다.
+auto_check_resumed = {account}의 자동 확인을 켰습니다.
+account_disabled = {name}을(를) 사용하지 않습니다.
+new_mail_one = {name}에 새 메시지 1개가 있습니다.
+new_mail_many = {name}에 새 메시지 {count}개가 있습니다.
+refresh_all_done_one = 계정 1개를 새로 고쳤습니다.
+refresh_all_done_many = 계정 {count}개를 새로 고쳤습니다.
+refresh_all_done_failures = 계정 {count}개를 새로 고쳤고, {failed}개는 새로 고칠 수 없었습니다.
+refresh_all_done_failures_one = 계정 {count}개를 새로 고쳤고, {failed}개는 새로 고칠 수 없었습니다.
+
+# The sender of the message in view
+sender_address_copied = {sender}. 주소를 복사했습니다.
+sender_no_address = {sender}. 복사할 주소가 없습니다.
+clipboard_not_opened = {sender}. 클립보드를 열 수 없습니다.
+
+# The signature editor
+signature_page_formatted = 서식 있음. 이 내용이 저장됩니다.
+signature_page_html = HTML 소스. 이 내용이 저장됩니다.
+signature_page_html_still_wins = 서식 있음. 저장되는 것은 여전히 HTML 소스입니다.
+
+# Background work
+phishing_list_updating = 피싱 목록을 백그라운드에서 업데이트하는 중입니다.
+cache_cleared = 캐시 파일 {files}개({size} MB)를 지웠습니다.
+hotkeys_diagnostic_on = 단축키 진단 켜짐, 선택됨
+hotkeys_diagnostic_off = 단축키 진단 꺼짐, 선택 안 됨
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = 보관
+action_delete = 삭제
+action_delete_permanently = 영구 삭제
+action_mark_as_junk = 스팸으로 표시
+action_mark_as_not_junk = 스팸 아님으로 표시
+action_move_to = 이동
+action_copy_to = 복사
+action_mark_message = 메시지 표시
+action_undo = 실행 취소
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action}을(를) 실행 취소했습니다.
+undo_done_many = 메시지 {count}개의 {action}을(를) 실행 취소했습니다.
+junk_marked_one = 스팸으로 표시했습니다.
+junk_marked_many = 메시지 {count}개를 스팸으로 표시했습니다.
+junk_no_new_sender = 새로 차단한 보낸 사람이 없습니다: 이미 차단됨, 메일링 리스트, 또는 본인의 주소입니다.
+not_junk_marked_one = 스팸 아님으로 표시했습니다.
+not_junk_marked_many = 메시지 {count}개를 스팸 아님으로 표시했습니다.
+moved_to_one = {to_folder}(으)로 옮겼습니다.
+moved_to_many = 메시지 {count}개를 {to_folder}(으)로 옮겼습니다.
+copied_to_many = 메시지 {count}개를 {to_folder}에 복사했습니다.
+marked_read = 읽음으로 표시했습니다.
+marked_unread = 읽지 않음으로 표시했습니다.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total}개 중 {completed}개 후 취소했습니다. 성공 {succeeded}개, 실패 {failed}개.
+bulk_failed_one = {done} 메시지 1개 중 {failed}개가 실패했습니다.
+bulk_failed_many = {done} 메시지 {total}개 중 {failed}개가 실패했습니다.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = 굵게
+format_word_italic = 기울임꼴
+format_word_strike = 취소선
+format_word_href = 링크
+format_word_bullet = 글머리 기호 목록
+format_word_number = 번호 매기기 목록
+format_word_quote = 인용
+format_word_code = 코드
+format_word_heading1 = 제목
+format_applied = {formatting}을(를) 적용했습니다.
+format_inserted = {formatting}을(를) 넣었습니다.
+format_not_available = 일반 텍스트 본문에서는 {formatting}을(를) 사용할 수 없습니다.
+format_on = {formatting} 켜짐
+format_off = {formatting} 꺼짐
+link_applied = 링크를 적용했습니다.
+link_applied_to_selection = 선택 영역에 링크를 적용했습니다.
+plain_body_formatting = 일반 텍스트 본문에서는 서식이 태그로 표시됩니다.
+
+# Reaching either end of a thread
+thread_edge_first = 이 글타래의 첫 메시지입니다. 닫으려면 다시 누르세요.
+thread_edge_last = 이 글타래의 마지막 메시지입니다. 닫으려면 다시 누르세요.
+jump_unified_inbox = 통합 받은 편지함.
+remote_none = 이 메시지에는 원격 콘텐츠가 없습니다.
+sender_none = 이 메시지에는 보낸 사람이 없습니다.
+sender_name_no_address = %s, 주소 없음
+signature_not_switched = 서명을 바꾸지 않았습니다. 이 계정의 서명을 넣으려면 Ctrl+Shift+S를 누르세요.
+signature_removed_no_signature = 서명을 제거했습니다. 이 계정에는 서명이 없습니다.
+signature_switched = 서명을 이 계정의 서명으로 바꿨습니다.
+spell_not_replaced = 단어를 바꿀 수 없습니다.
+spell_replaced_with = {word}(으)로 바꿨습니다.
+folder_marked_read = 메시지 {count}개를 읽음으로 표시했습니다.
+folder_no_unread = 읽지 않은 메시지가 없습니다.
+threads_all_collapsed = 모든 글타래를 감췄습니다.
+threads_all_expanded = 모든 글타래를 보였습니다.
+upd_percent = {percent}퍼센트
+upd_download_done = 다운로드가 완료되었습니다. 업데이트를 준비하는 중...
+upd_updated_to = ZBox가 {version}(으)로 업데이트되었습니다.
+header_copied = 복사했습니다.
+headers_copied = 모든 머리글을 복사했습니다.
+identity_copies_updated = 이 ID의 참조와 숨은 참조를 업데이트했습니다.
+signature_switched_identity = 서명을 이 ID의 서명으로 바꿨습니다.
+signature_removed_identity = 서명을 제거했습니다. 이 ID에는 서명이 없습니다.
+signature_not_switched_identity = 서명을 바꾸지 않았습니다. 이 ID의 서명을 넣으려면 Ctrl+Shift+S를 누르세요.
+signature_none_identity = 이 ID에는 서명이 없습니다.
+move_keys_no_selection = 먼저 메시지를 선택하세요.
+move_keys_no_folders = 아직 선택할 폴더가 없습니다. 잠시 후 다시 시도하세요.
+block_sender_done_one = {sender}을(를) 차단했습니다. 새 메시지는 휴지통으로 갑니다.
+block_sender_done_many = 보낸 사람 {count}명을 차단했습니다. 새 메시지는 휴지통으로 갑니다.
+block_sender_already = {sender}은(는) 이미 차단되어 있습니다.
+block_sender_own = 차단하지 않음: 본인의 주소입니다.
+block_sender_list_unknown = 차단하지 않음: 이 메시지는 메일링 리스트를 통해 왔으며 보낸 사람을 알 수 없습니다. 리스트 주소를 차단하면 모든 구성원이 차단됩니다.
+block_sender_moved = 보낸 사람을 차단했습니다. 메시지 {count}개를 휴지통으로 옮겼습니다.
+block_senders_moved = 보낸 사람 {senders}명을 차단했습니다. 메시지 {count}개를 휴지통으로 옮겼습니다.
+unblock_sender_moved = 보낸 사람 차단을 해제했습니다. 메시지 {count}개를 받은편지함으로 옮겼습니다.
+unblock_senders_moved = 보낸 사람 {senders}명의 차단을 해제했습니다. 메시지 {count}개를 받은편지함으로 옮겼습니다.
+unblock_sender_done = {sender}의 차단을 해제했습니다.
+unblock_sender_not_blocked = {sender}은(는) 차단되어 있지 않습니다.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = 위에 입력하고 Enter 키를 누르거나 검색을 선택하세요.
+search_no_account = 먼저 계정을 추가하세요.
+search_no_term = 검색할 내용을 입력하세요.
+search_running = 검색 중...
+search_none = "{term}"과(와) 일치하는 항목이 없습니다.
+search_found_one = "{term}"과(와) 일치하는 항목 1개.
+search_found_many = "{term}"과(와) 일치하는 항목 {count}개.
+search_failed = 검색에 실패했습니다.
+
+# The related messages tab
+related_running = 검색 중...
+related_none = 관련 메시지를 찾지 못했습니다.
+related_found_one = 관련 메시지 1개를 찾았습니다.
+related_found_many = 관련 메시지 {count}개를 찾았습니다.
+related_failed = 관련 메시지를 검색할 수 없습니다.
+
+# Writing and sending
+sending_via = {sender}을(를) 통해 보내는 중...
+send_failed = 보내기에 실패했습니다. 자세한 내용은 로그를 확인하세요.
+draft_autosaved = 임시 보관함에 자동 저장했습니다.
+draft_autosave_failed = 임시 보관함 자동 저장에 실패했습니다. 자세한 내용은 로그를 확인하세요.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = 이제 {sender}에게서 온 메시지의 원격 콘텐츠를 불러옵니다.
+downloading_attachment = {filename} 다운로드 중...
+downloading_attachments_one = 첨부 파일 1개 다운로드 중...
+downloading_attachments_many = 첨부 파일 {count}개 다운로드 중...
+saved_to = {folder}에 저장했습니다
+attachment_download_failed = 첨부 파일 다운로드에 실패했습니다.
+
+# Getting mail onto the screen
+loading_folder = {account}의 {folder} 불러오는 중...
+messages_in_folder = {folder}에 메시지 {count}개.
+messages_in_folder_cached = {folder}에 메시지 {count}개 (마지막으로 동기화한 사본, 업데이트 중...)
+no_offline_copy = {folder}의 오프라인 사본이 아직 없습니다.
+refresh_failed_cached = {folder}을(를) 새로 고칠 수 없습니다: 마지막으로 동기화한 사본을 표시합니다.
+no_such_folder = 이 계정에는 {folder} 폴더가 없습니다.
+load_failed = 메시지를 불러오지 못했습니다. 자세한 내용은 로그를 확인하세요.
+no_more_to_load = 이 폴더에는 더 불러올 메시지가 없습니다.
+loading_more = {folder}의 메시지를 더 불러오는 중...
+more_loaded = 메시지 {count}개를 더 불러왔습니다.
+no_more_messages = 이 폴더에는 더 이상 메시지가 없습니다.
+load_more_failed = 메시지를 더 불러올 수 없습니다: {error}
+loading_unified = 통합 {folder} 불러오는 중...
+messages_in_unified = 통합 {folder}에 여러 계정의 메시지 {count}개.
+messages_in_unified_cached = 통합 {folder}에 메시지 {count}개 (마지막으로 동기화한 사본, 업데이트 중...)
+auto_purge_done = 자동 비우기로 지운 편지함/스팸에서 오래된 메시지 {count}개를 제거했습니다.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = 준비됨.
+opening_message = 메시지를 여는 중...
+opening_message_already = 메시지를 여는 중... (이미 불러오는 중)
+could_not_open_message = 메시지를 열 수 없습니다.
+could_not_open_that_message = 그 메시지를 열 수 없습니다.
+could_not_load_message = 이 메시지를 불러올 수 없습니다.
+message_still_loading = 그 메시지는 아직 불러오는 중입니다.
+folder_still_loading = 이 폴더를 아직 불러오는 중입니다 -- 잠시 후 다시 시도하세요.
+not_in_thread = 이 메시지는 글타래에 속하지 않습니다.
+no_longer_in_thread = 이 메시지는 더 이상 글타래에 없습니다.
+thread_position = 이 글타래의 메시지 {total}개 중 {position}번째.
+thread_finished_one = 이 글타래를 다 읽었습니다 (메시지 1개).
+thread_finished_many = 이 글타래를 다 읽었습니다 (메시지 {count}개).
+select_message_first = 먼저 메시지를 선택하세요.
+conversation_failed = 이 대화를 열 수 없습니다.
+select_message_for_related = 먼저 관련 메시지를 볼 메시지를 선택하세요.
+looking_for_related = 관련 메시지를 찾는 중...
+no_threading_headers = 이 메시지에는 검색에 쓸 Message-ID나 글타래 헤더가 없습니다.
+reply_one_at_a_time = 회신은 한 번에 메시지 하나에만 할 수 있습니다. 메시지를 하나만 선택하세요.
+select_message_to_reply = 먼저 회신할 메시지를 선택하세요.
+preparing_reply = 회신을 준비하는 중...
+reply_load_failed = 회신할 원본 메시지를 불러올 수 없습니다.
+select_message_to_forward = 먼저 전달할 메시지를 선택하세요.
+preparing_forward = 전달할 메시지를 준비하는 중...
+forward_load_failed = 전달할 메시지를 불러올 수 없습니다.
+compose_tab_needed_hint = 이 명령에는 작성 탭이 필요합니다. 메시지를 쓰려면 Ctrl+N을 누르세요.
+open_message_first_view = 먼저 메시지를 연 다음 Ctrl+B를 눌러 보기를 바꾸세요.
+open_message_first_remote = 먼저 메시지를 연 다음 Ctrl+Shift+I를 눌러 원격 콘텐츠를 불러오세요.
+
+# Acting on messages
+copying_message = 메시지를 복사하는 중...
+copy_failed = 복사에 실패했습니다.
+delete_failed = 삭제에 실패했습니다.
+already_in_archive = 이미 보관함에 있습니다.
+archiving = 보관하는 중...
+archive_failed = 보관에 실패했습니다.
+action_failed = {action}에 실패했습니다.
+nothing_to_undo = 실행 취소할 작업이 없습니다.
+undo_failed = {action}을(를) 실행 취소할 수 없습니다.
+
+# Views and folders
+folder_pane_all = 폴더 창: 모든 폴더.
+folder_pane_unified = 폴더 창: 통합 폴더.
+sorted_ascending = {field} 오름차순으로 정렬했습니다.
+sorted_descending = {field} 내림차순으로 정렬했습니다.
+unified_folders_updated = 통합 폴더를 업데이트했습니다.
+zoom_reset = 메시지 글꼴 크기를 기본값으로 되돌렸습니다.
+folder_creating = "{folder}" 폴더를 만드는 중...
+folder_created = "{folder}" 폴더를 만들었습니다.
+folder_create_failed = 폴더를 만들 수 없습니다.
+folder_renaming = "{folder}"의 이름을 "{new_name}"(으)로 바꾸는 중...
+folder_renamed = 폴더 이름을 "{new_name}"(으)로 바꿨습니다.
+folder_rename_failed = 폴더 이름을 바꿀 수 없습니다.
+folder_deleting = "{folder}" 폴더를 삭제하는 중...
+folder_deleted = 폴더를 삭제했습니다.
+folder_delete_failed = 폴더를 삭제할 수 없습니다.
+folder_subscribing = "{folder}" 구독하는 중...
+folder_unsubscribing = "{folder}" 구독 해제하는 중...
+folder_subscribed = 구독했습니다.
+folder_unsubscribed = 구독을 해제했습니다.
+folder_subscribe_failed = 폴더를 구독할 수 없습니다.
+folder_unsubscribe_failed = 폴더 구독을 해제할 수 없습니다.
+
+# Accounts
+account_not_added = 계정을 추가하지 않았습니다.
+account_added = 계정을 추가했습니다: {account}
+account_settings_not_saved = 계정 설정을 저장하지 않았습니다.
+account_updated = 계정을 업데이트했습니다: {account}
+account_not_removed = 계정을 제거하지 않았습니다.
+account_removed = 계정을 제거했습니다.
+account_removed_with_files = 계정을 제거했습니다. 로컬 파일 {count}개를 삭제했습니다.
+default_account_failed = 기본 계정을 설정할 수 없습니다.
+default_account_set = 이제 {account}이(가) 기본 계정입니다.
+auto_check_not_saved = 자동 확인 설정을 저장하지 않았습니다.
+mute_not_saved = 음소거 설정을 저장하지 않았습니다.
+account_muted = {account}을(를) 음소거했습니다.
+account_unmuted = {account}의 음소거를 해제했습니다.
+export_done = 계정 {count}개와 설정을 {path}(으)로 내보냈습니다.
+import_done = {path}에서 계정 {count}개를 가져왔습니다.
+
+# Filters, cache and the background lists
+filters_not_saved = 필터를 저장하지 않았습니다.
+filters_saved = {account}의 필터를 저장했습니다.
+filters_checking = {folder}을(를) 필터와 대조하는 중...
+filters_none_matched = 지금 실행: {folder}에서 사용 중인 규칙과 일치하는 메시지가 없습니다.
+filters_run_failed = 필터를 실행할 수 없습니다.
+filters_moving = 필터링한 메시지 {count}개를 옮기는 중...
+filters_move_failures = 필터: 메시지 {count}개를 옮길 수 없습니다.
+filters_moved = 필터가 {folder}에서 메시지 {count}개를 옮겼습니다.
+filters_move_failed = 필터링한 메시지를 옮길 수 없습니다.
+cache_not_cleared = 캐시를 지우지 않았습니다.
+auto_cache_cleanup = 자동 캐시 정리: {age}보다 오래된 메시지.
+phishing_update_failed = 피싱 목록을 업데이트할 수 없습니다: {error}
+blocklist_update_failed = 차단 목록을 업데이트할 수 없습니다: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = 먼저 메시지를 연 다음 다른 이름으로 저장을 사용하세요.
+saving_message = 메시지를 저장하는 중...
+save_file_failed = 파일을 저장할 수 없습니다.
+save_fetch_failed = 저장할 메시지를 가져올 수 없습니다.
+open_message_first_print = 먼저 메시지를 연 다음 인쇄를 사용하세요.
+open_message_first_preview = 먼저 메시지를 연 다음 인쇄 미리 보기를 사용하세요.
+refreshing_accounts = 계정 {count}개를 새로 고치는 중...
+emptying_trash = {account}의 지운 편지함을 비우는 중...
+trash_already_empty = 지운 편지함이 이미 비어 있었습니다.
+trash_emptied = 지운 편지함을 비웠습니다: 메시지 {count}개를 완전히 지웠습니다.
+empty_trash_failed = 지운 편지함을 비울 수 없습니다.
+emptying_junk = {account}의 스팸 폴더를 비우는 중...
+junk_already_empty = 스팸 폴더가 이미 비어 있었습니다.
+junk_emptied = 스팸 폴더를 비웠습니다: 메시지 {count}개를 완전히 지웠습니다.
+junk_emptied_prefix = 스팸 폴더를 비웠습니다:
+junk_part_purged = {count}개 완전히 지움
+junk_part_in_trash = {count}개는 지운 편지함으로 옮겼지만 제거가 확인되지 않았습니다. 지운 편지함을 확인하세요
+junk_part_not_moved = {count}개는 지운 편지함으로 옮기지 못해 아직 스팸 폴더에 있습니다
+empty_junk_failed = 스팸 폴더를 비울 수 없습니다.
+back_online = 다시 온라인 상태입니다.
+offline_sync_running = 오프라인 사용을 위해 {account}을(를) 동기화하는 중...
+offline_sync_failed = 오프라인 동기화에 실패했습니다: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = 먼저 메시지를 선택하거나 여세요.
+select_or_open_message_ctrl_u = 먼저 메시지를 선택하거나 연 다음 Ctrl+U를 누르세요.
+no_sender_address = 이 메시지에는 추가할 보낸 사람 주소가 없습니다.
+contact_added = {contact}을(를) 주소록에 추가했습니다.
+contact_already_there = {contact}은(는) 이미 주소록에 있습니다.
+privacy_saved = 개인 정보 설정을 저장했습니다. 적용하려면 메시지를 다시 여세요.
+message_font_size = 메시지 글꼴 크기: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = 메시지를 영구 삭제하는 중
+deleting_many = 메시지 {count}개를 영구 삭제하는 중
+trashing_one = 메시지를 지운 편지함으로 옮기는 중
+trashing_many = 메시지 {count}개를 지운 편지함으로 옮기는 중
+undo_partly_restored = {action}을(를) 실행 취소했지만 {count}개는 복원할 수 없습니다 -- 그 사이에 다시 이동, 삭제 또는 만료되었을 수 있습니다.
+moves_report = {action}: 메시지 {total}개 중 {moved}개를 옮겼습니다.
+moves_report_failed = 옮기지 못하고 원래 폴더에 남은 메시지: {count}개.
+
+tray_tooltip_one = ZBox — 읽지 않은 메시지 1개
+tray_tooltip_many = ZBox — 읽지 않은 메시지 {count}개
+account_unreachable = {account}에 연결할 수 없습니다. 이 계정의 자동 확인을 {minutes}분 동안 중지합니다.
+bulk_copy_failed = 메시지를 복사할 수 없습니다.
+bulk_copy_failed_status = 복사에 실패했습니다.
+bulk_loading_archive = 메시지를 아직 불러오는 중입니다 -- 잠시 후 다시 보관해 보세요.
+bulk_loading_delete = 메시지를 아직 불러오는 중입니다 -- 잠시 후 다시 삭제해 보세요.
+bulk_loading_flag = 메시지를 아직 불러오는 중입니다 -- 잠시 후 다시 별표를 붙여 보세요.
+bulk_loading_generic = 메시지를 아직 불러오는 중입니다 -- 잠시 후 다시 시도하세요.
+bulk_none = 선택한 메시지가 없습니다.
+bulk_none_archive = 보관할 메시지를 선택하지 않았습니다.
+bulk_none_delete = 삭제할 메시지를 선택하지 않았습니다.
+bulk_none_junk = 스팸으로 표시할 메시지를 선택하지 않았습니다.
+bulk_none_not_junk = 스팸 아님으로 표시할 메시지를 선택하지 않았습니다.
+delete_refused_still = 서버가 삭제를 거부했습니다. 메시지는 아직 {folder}에 있습니다.
+delete_refused_trash = 지운 편지함에 있지만 서버가 영구 삭제를 거부했습니다.
+delete_resume_failed = 이전 삭제에서 남은 메시지 {count}개를 삭제할 수 없습니다.
+done_perm_delete_one = 메시지를 영구 삭제했습니다.
+done_trash_one = 메시지를 지운 편지함으로 옮겼습니다.
+filters_applied = {folder}의 메시지 {count}개에 필터를 적용했습니다.
+filters_failed = 필터를 실행할 수 없습니다.
+filters_running = {folder}에서 필터를 실행하는 중
+flag_failed = 별표를 업데이트할 수 없습니다.
+flag_updated = 별표를 업데이트했습니다.
+folder_verb_subscribing = 구독하는 중:
+folder_verb_unsubscribing = 구독 해제하는 중:
+mark_read_failed = 메시지를 읽음으로 표시할 수 없습니다.
+mark_unread_failed = 메시지를 읽지 않음으로 표시할 수 없습니다.
+notify_new_mail_body = {name}에 새 {noun} {count}개.
+notify_new_mail_title = 새 메일
+notify_noun_many = 메시지
+notify_noun_one = 메시지
+report_done = 메시지 {count}개 중 {done}개 {verb}.
+report_verb_deleted = 삭제함
+report_verb_permanent = 영구 삭제함
+running_copy_many = 메시지 {count}개를 복사하는 중
+running_copy_one = 메시지를 복사하는 중
+running_junk_many = 메시지 {count}개를 스팸으로 표시하는 중
+running_junk_one = 스팸으로 표시하는 중
+running_move_many = 메시지 {count}개를 옮기는 중
+running_move_one = 옮기는 중
+running_not_junk_many = 메시지 {count}개를 스팸 아님으로 표시하는 중
+running_not_junk_one = 스팸 아님으로 표시하는 중
+running_perm_delete_one = 메시지를 영구 삭제하는 중...
+running_read_many = 메시지 {count}개를 읽음으로 표시하는 중
+running_read_one = 읽음으로 표시하는 중
+running_trash_one = 메시지를 지운 편지함으로 옮기는 중...
+running_unread_many = 메시지 {count}개를 읽지 않음으로 표시하는 중
+running_unread_one = 읽지 않음으로 표시하는 중
+settings_saved_no_startup = 설정을 저장했습니다. Windows 시작 항목을 업데이트할 수 없습니다.
+settings_saved_status = 설정을 저장했습니다.
+spam_blocked_sender = 차단된 보낸 사람
+spam_possible_phishing = 피싱 의심
+undo_running_many = {action} 실행 취소하는 중 (메시지 {count}개)
+undo_running_one = {action} 실행 취소하는 중
+mark_folder_read_failed = 폴더를 읽음으로 표시할 수 없습니다.
+marking_folder_read = 폴더를 읽음으로 표시하는 중...
+upd_ready_at_exit = 업데이트가 이미 다운로드되었습니다. ZBox를 종료할 때 설치됩니다.
+upd_checking = 업데이트 확인 중...
+upd_up_to_date = ZBox가 최신 상태입니다.
+upd_available_source = ZBox {version}을(를) 사용할 수 있습니다. 이 사본은 소스에서 실행되므로 git으로 업데이트하세요.
+upd_check_failed = 업데이트를 확인할 수 없습니다: {error}
+opening_attachment = {filename} 여는 중...
+loading_headers = 머리글 불러오는 중...
+offline_inbox_only = 받은편지함과 저장 편지함만 오프라인 사용을 위해 보관됩니다.
+offline_sync_done_inbox = 오프라인 사용을 위해 받은편지함과 저장 편지함의 메시지 {count}개를 동기화했습니다.
+working_offline = 오프라인 작업: 받은 편지함/보낸 편지함/임시 보관함의 마지막 동기화 사본을 표시합니다.
+emptying_trash_all = 모든 계정의 휴지통을 비우는 중...
+trash_emptied_all = 계정 {accounts}개의 휴지통을 비웠습니다: 메시지 {count}개를 영구 삭제했습니다.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &파일
+bar_edit = &편집
+bar_view = &보기
+bar_message = &메시지
+bar_compose = &작성
+bar_tools = &도구
+bar_help = &도움말
+
+# File
+file_new = 새로 만들기
+file_new_message = 메시지
+file_new_account = 메일 계정...
+file_open_saved_message = 저장된 메시지 열기...
+file_close = 닫기
+file_save_message_as = 다른 이름으로 메시지 저장...
+file_get_new_for = 새 메시지 받기
+file_get_new_all = 모든 계정
+file_get_new_current = 현재 계정
+file_offline = 오프라인
+file_work_offline = 오프라인으로 작업
+file_sync_now = 지금 동기화
+file_print = 인쇄...
+file_print_preview = 인쇄 미리 보기...
+file_exit = 종료
+
+# Edit
+edit_undo = 실행 취소
+edit_select_all = 모두 선택
+edit_find_messages = 메시지 찾기...
+
+# Message
+message_reply = 회신
+message_reply_all = 모두 회신
+message_forward = 전달
+message_archive = 보관
+message_delete = 삭제
+message_delete_permanently = 영구 삭제
+message_mark = 표시
+mark_read = 읽음
+mark_unread = 읽지 않음
+mark_flagged = 별표
+mark_junk = 스팸
+mark_not_junk = 스팸 아님
+message_watch_thread = 글타래 보기
+message_ignore_thread = 글타래 무시
+message_open_conversation = 대화에서 메시지 열기
+message_show_related = 관련 메시지 보기
+message_add_sender_to_address_book = 보낸 사람을 주소록에 추가
+message_announce_sender = 보낸 사람 읽기
+message_announce_copy_sender = 보낸 사람 읽고 주소 복사
+
+# View
+view_folders = 폴더
+folders_all = 모두
+folders_unified = 통합
+folders_jump_inbox = 받은 편지함 메시지 목록으로 이동
+folders_configure_unified = 통합 폴더 설정...
+view_sort_by = 정렬 기준
+sort_date = 날짜
+sort_subject = 제목
+sort_from = 보낸 사람
+sort_descending = 내림차순 (최신 항목 먼저)
+sort_ascending = 오름차순 (오래된 항목 먼저)
+view_threads = 글타래
+threads_all = 모두
+threads_watched = 보고 있는 글타래
+threads_ignored = 무시한 글타래
+threads_expand_all = 모든 글타래 보이기
+threads_collapse_all = 모든 글타래 감추기
+view_load_more = 메시지 더 불러오기
+view_toggle_message_view = 텍스트 보기와 HTML 보기 전환
+view_show_remote_content = 이 메시지의 원격 콘텐츠 표시
+view_message_zoom = 메시지 확대/축소
+zoom_increase = 메시지 글꼴 크게
+zoom_decrease = 메시지 글꼴 작게
+zoom_reset = 메시지 글꼴 크기 초기화
+
+# Compose
+compose_send = &보내기
+compose_save_draft = &임시 저장
+compose_attach = &파일 첨부...
+compose_fmt_bold = &굵게
+compose_fmt_italic = &기울임꼴
+compose_fmt_strike = &취소선
+compose_fmt_bullet = &글머리 기호 목록
+compose_fmt_number = &번호 매기기 목록
+compose_fmt_quote = &인용
+compose_fmt_code = &코드
+compose_fmt_heading1 = &제목
+compose_link = &링크 삽입...
+compose_formatting = &여기의 서식
+compose_spellcheck = &맞춤법 검사...
+compose_spellcheck_next = &다음 맞춤법 오류
+compose_spellcheck_add = &사전에 단어 추가
+compose_insert_signature = &서명 넣기
+compose_paste_quotation = &인용으로 붙여넣기
+compose_word_count = &단어 수
+compose_preview = &미리 보기...
+compose_diagnostics = &작성기 진단...
+compose_edit_signature = &서명 편집...
+compose_hotkeys_diagnostic = &단축키 진단
+
+# Tools
+tools_account_settings = 계정 및 ID 설정...
+tools_mute_account = 계정 음소거
+tools_pause_auto_check = 자동 확인 일시 중지
+tools_disable_account = 계정 사용 안 함
+tools_remove_account = 계정 제거...
+tools_address_book = 주소록...
+tools_message_filters = 메시지 필터...
+tools_import = 계정 및 설정 가져오기...
+tools_export = 계정 및 설정 내보내기...
+tools_cache_cleanup = 캐시 정리 설정...
+tools_privacy = 개인 정보 및 콘텐츠 차단...
+tools_settings = 설정...
+
+# Help
+help_shortcuts = 키보드 단축키...
+help_about = ZBox 정보...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = 새 계정...
+tree_account_settings = 계정 및 ID 설정...
+tree_mute_account = 계정 음소거
+tree_pause_auto_check = 자동 확인 일시 중지
+tree_enable_account = 계정 사용
+tree_disable_account = 계정 사용 안 함
+tree_set_default_account = 기본 계정으로 설정
+tree_remove_account = 계정 제거...
+tree_refresh = 새로 고침
+tree_new_folder = 새 폴더...
+tree_empty_trash = 지운 편지함 비우기
+tree_empty_junk = 스팸 폴더 비우기
+tree_rename_folder = 폴더 이름 바꾸기...
+tree_delete_folder = 폴더 삭제...
+tree_subscribe_folder = 폴더 구독
+tree_unsubscribe_folder = 폴더 구독 해제
+
+# The message list menu, opened the same two ways
+list_select_all = 모두 선택
+list_reply = 회신
+list_reply_all = 모두 회신
+list_forward = 전달
+list_mark = 표시
+list_archive = 보관
+list_delete_to_trash = 삭제 (지운 편지함으로 이동)
+list_delete_permanently = 영구 삭제
+list_move_to = 이동
+list_copy_to = 복사
+
+# The notification area icon
+tray_open = &ZBox 열기
+tray_unread_one = 읽지 않은 메시지 1개
+tray_unread_many = 읽지 않은 메시지 {count}개
+tray_no_unread = 읽지 않은 메시지 없음
+tray_settings = &설정...
+tray_quit = &ZBox 종료
+
+# The formatting menu inside a message you are writing
+format_bold = &굵게
+format_italic = &기울임꼴
+format_strike = &취소선
+format_bullet = &글머리 기호 목록
+format_number = &번호 매기기 목록
+format_quote = &인용
+format_code = &코드
+format_heading1 = &제목
+format_insert_link = &링크 삽입...
+format_formatting_here = &여기의 서식
+tools_enable_account = 계정 사용
+edit_undo_action = {action} 실행 취소
+tree_mark_folder_read = 폴더를 읽음으로 표시
+help_updates = 업데이트
+help_check_updates = 지금 업데이트 확인...
+help_update_settings = 업데이트 설정...
+help_releases_page = 릴리스 페이지 열기
+message_attachments = 첨부 파일
+message_no_attachments = 첨부 파일 없음
+message_save_all_attachments = 모든 첨부 파일 저장
+view_full_headers = 모든 머리글
+folders_go_to_tree = 폴더 목록으로 이동
+list_block_sender = 이 보낸 사람 차단
+list_unblock_sender = 이 보낸 사람 차단 해제
+
+[dialogs]
+set_theme_restart_confirm = 테마 변경을 적용하려면 ZBox를 다시 시작할까요?
+set_ui_theme_label = &인터페이스 테마:
+set_ui_theme_note = 메뉴, 목록, 대화 상자, 텍스트 메시지 보기의 색입니다. 시스템 설정 따르기는 Windows의 밝은 앱 모드 또는 어두운 앱 모드를 사용합니다. 미드나이트 블루, 따뜻한 어둠, 부드러운 대비는 색이 부드러운 어두운 테마입니다. HTML 메시지는 자체 색을 유지하며, Windows 고대비가 항상 우선합니다. 다음에 ZBox를 시작할 때 적용됩니다.
+set_theme_system = 시스템 설정 따르기
+set_theme_light = 밝게
+set_theme_dark = 어둡게
+set_theme_midnight = 미드나이트 블루
+set_theme_warm = 따뜻한 어둠
+set_theme_soft = 부드러운 대비
+set_language_restart_confirm = 언어 변경을 적용하려면 ZBox를 다시 시작할까요?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith에게 연락
+title_identity = ID
+title_show_password = 비밀번호 표시
+title_missing_information = 정보 누락
+title_unsupported_provider = 지원하지 않는 제공자
+title_test_connection = 연결 테스트
+title_new_contact = 새 연락처
+title_edit_contact = 연락처 편집
+title_delete_contact = 연락처 삭제
+title_import_contacts = 연락처 가져오기
+title_export_contacts = 연락처 내보내기
+title_rename_group = 그룹 이름 바꾸기
+title_delete_group = 그룹 삭제
+title_send = 보내기
+title_send_failed = 보내기 실패
+title_attach_file = 파일 첨부
+title_save_draft = 임시 저장
+title_documentation = ZBox 설명서
+title_open_link = 링크 열기
+title_filter_rule = 필터 규칙
+title_master_password = 기본 비밀번호
+title_attachment_saved = 첨부 파일 저장됨
+title_attachments_saved = 첨부 파일 저장됨
+title_download_failed = 다운로드 실패
+title_print = 인쇄
+title_print_preview = 인쇄 미리 보기
+title_related_messages = 관련 메시지
+title_search = 검색
+title_unlock = 잠금 해제
+title_unlock_methods = 잠금 해제 방법
+title_desktop_shortcut = 바탕 화면 바로 가기
+title_spell_check = 맞춤법 검사
+title_plain_text_password = 일반 텍스트 비밀번호 발견
+title_startup_error = ZBox 시작 오류
+
+identity_email_required = 메일 주소를 입력하세요.
+
+wizard_password_not_shown = 이 시스템에서는 비밀번호를 표시할 수 없습니다. 입력과 저장은 평소대로 됩니다.
+wizard_email_required = 계속하기 전에 올바른 메일 주소를 입력하세요.
+wizard_test_needs_server = 테스트하기 전에 로그인 메일과 받는 서버를 입력하세요.
+wizard_test_succeeded = 연결했습니다. 받은 편지함에서 메시지 {count}개를 찾았습니다.
+
+contact_email_required = 메일 주소가 필요합니다.
+contact_select_to_edit = 편집할 연락처를 선택하세요.
+contact_select_to_delete = 삭제할 연락처를 선택하세요.
+contact_delete_confirm = 주소록에서 {label}을(를) 삭제할까요?
+contacts_import_choose_file = 가져올 .vcf(vCard) 또는 .csv 파일을 선택하세요.
+contacts_imported = 연락처 {count}개를 가져왔습니다.
+contacts_import_empty = 그 파일에서 연락처를 찾지 못했습니다.
+contacts_none_to_export = 내보낼 연락처가 없습니다.
+contacts_exported = 연락처 {count}개를 내보냈습니다:\n{path}
+group_name_exists = "{name}" 그룹이 이미 있습니다.
+group_delete_confirm = "{name}" 그룹을 삭제할까요? 그룹의 연락처는 삭제되지 않습니다.
+
+send_no_account = 보내기 전에 계정을 추가하거나 보낸 사람에서 계정을 선택하세요.
+send_no_recipient = 받는 사람에 받는 사람을 한 명 이상 입력하세요.
+draft_no_account = 임시 저장하기 전에 계정을 추가하거나 보낸 사람에서 계정을 선택하세요.
+attached_file = 첨부함: {name}\n\n보낼 때 파일 {count}개가 첨부됩니다.
+
+documentation_copied = ZBox 설명서 전체를 클립보드에 복사했습니다.
+
+filter_rule_needs_name = 이 규칙의 이름을 입력하세요.
+filter_rule_needs_condition = 조건을 하나 이상 설정하세요 (보낸 사람, 받는 사람 또는 제목).
+filter_rule_needs_action = 동작을 하나 이상 선택하세요: 읽음으로 표시, 별표, 또는 폴더로 이동.
+
+master_password_set = 기본 비밀번호를 설정했습니다. 안전한 곳에 보관하세요. ZBox는 새 컴퓨터마다 한 번씩 이 비밀번호를 묻고, 잃어버리면 복구할 수 없습니다.
+master_password_offer = 기본 비밀번호가 없으면 저장된 계정 비밀번호를 이 컴퓨터와 이 Windows 계정에서만 읽을 수 있습니다. ZBox를 다른 곳에 복사하면 모든 계정에 다시 로그인해야 합니다.\n\n지금 설정할까요?
+
+attachment_saved = 첨부 파일을 저장했습니다:\n{path}
+attachments_saved = 첨부 파일 {count}개를 저장했습니다:\n{path}
+
+shortcut_created_settings = 바로 가기를 만들었습니다:\n{path}\n\n다음 위치의 ZBox를 시작합니다:\n{base}
+
+spellcheck_no_dictionary = 맞춤법 사전이 없어 이 ZBox에서는 맞춤법 검사를 사용할 수 없습니다.
+spellcheck_none_found = 맞춤법 오류를 찾지 못했습니다.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = 이 컴퓨터에 패스키를 설정하고 다른 컴퓨터에서 저장한 패스키를 잊을까요?\n\nWindows가 Hello로 확인을 요청합니다. 다른 컴퓨터에 남은 이전 패스키는 그곳에 그대로 있으며 이 폴더를 그 컴퓨터로 다시 가져가면 작동하지만, 다시 설정해야 합니다.
+unlock_replace_passkey_many = 이 컴퓨터에 패스키를 설정하고 다른 컴퓨터에서 저장한 패스키 {count}개를 잊을까요?\n\nWindows가 Hello로 확인을 요청합니다. 다른 컴퓨터에 남은 이전 패스키는 그곳에 그대로 있으며 이 폴더를 그 컴퓨터로 다시 가져가면 작동하지만, 다시 설정해야 합니다.
+unlock_method_works = 그 방법은 작동합니다.
+
+plain_text_password_found = data\config\himalaya.toml에 이전 계정 설정의 일반 텍스트 비밀번호(auth.raw)가 아직 남아 있습니다.\n\n그 계정을 제거한 뒤 다시 추가하거나, data\config\himalaya.toml을 삭제해 안전한 자격 증명 저장소를 사용하여 다시 만들어지게 하세요.
+
+# main_frame's titles.
+title_account_list_unavailable = 계정 목록을 사용할 수 없음
+title_open_message = 메시지 열기
+title_run_filters = 필터 실행
+title_clear_cache = 오프라인 메시지 캐시 지우기
+title_remove_account = 계정 제거
+title_new_folder = 새 폴더
+title_rename_folder = 폴더 이름 바꾸기
+title_delete_folder = 폴더 삭제
+title_subscribe = 구독
+title_unsubscribe = 구독 해제
+title_open_saved_message = 저장된 메시지 열기
+title_save_message_as = 다른 이름으로 메시지 저장
+title_empty_trash = 지운 편지함 비우기
+title_empty_junk = 스팸 폴더 비우기
+title_synchronize_offline = 오프라인용 동기화
+title_export_accounts = 계정 및 설정 내보내기
+title_import_accounts = 계정 및 설정 가져오기
+title_show_related = 관련 메시지 보기
+title_reply = 회신
+title_forward = 전달
+title_undo = 실행 취소
+title_delete_permanently = 영구 삭제
+title_delete = 삭제
+title_copy_to = 복사
+title_archive = 보관
+title_accounts_locked = 계정 잠김
+
+select_account_first = 먼저 트리에서 계정을 선택하세요.
+select_account_or_folder = 먼저 계정이나 폴더를 선택하세요.
+filters_left_behind = 메시지 {count}개가 필터와 일치했지만 아직 {folder}에 있습니다.
+cache_clear_confirm = 모든 계정의 오프라인 메시지 캐시를 지울까요?\n\nZBox의 로컬 사본만 삭제됩니다. 메일 서버에서는 아무것도 제거되지 않으며, 메시지는 필요할 때 다시 다운로드됩니다.
+account_remove_confirm = {name}({address})을(를) 제거할까요?\n\n서버의 메일은 삭제되지 않습니다.\n이 컴퓨터에 다운로드한 사본은 삭제됩니다.\n저장된 비밀번호는 삭제됩니다.
+folder_delete_confirm = {address}의 "{folder}" 폴더와 그 안의 모든 항목을 영구 삭제할까요?\n\n이 작업은 실행 취소할 수 없습니다.
+empty_trash_confirm = {address}의 지운 편지함에 있는 모든 메시지를 영구 삭제할까요?\n\n이 작업은 실행 취소할 수 없습니다.
+empty_junk_confirm = {address}의 스팸 폴더에 있는 모든 메시지를 영구 삭제할까요?\n\n이 작업은 실행 취소할 수 없습니다.
+sync_select_account = 오프라인 사용을 위해 동기화할 계정(통합 폴더가 아닌)을 선택하세요.
+accounts_imported = 계정 {count}개를 가져왔습니다:\n\n{names}\n\n비밀번호는 내보내지지 않으며, 암호화된 비밀번호 저장소는 이 Windows 사용자 계정 전용입니다. 따라서 가져온 각 계정은 연결하기 전에 계정 > 계정 및 ID 설정에서 비밀번호를 한 번 입력해야 합니다.
+accounts_import_none = 이 파일에서 계정을 찾지 못했습니다. 파일에 설정이 있었다면 설정은 가져왔습니다.
+delete_permanently_confirm_one = 이 메시지를 영구 삭제할까요? 지운 편지함을 거치지 않으며 실행 취소할 수 없습니다.
+accounts_locked = 저장된 계정 비밀번호가 다른 컴퓨터에서 기록되어 여기서는 읽을 수 없습니다.\n\n각 계정은 메일 서버에 다시 로그인해야 합니다. 다음에 이를 피하려면 계정이 이미 작동하는 컴퓨터에서 설정의 앱 및 데이터 보안에서 기본 비밀번호를 설정하세요.
+master_password_remove_confirm = 기본 비밀번호를 제거할까요? 그러면 저장된 계정 비밀번호를 이 컴퓨터와 이 Windows 계정에서만 읽을 수 있습니다. 이후 ZBox를 다른 곳에 복사하면 모든 계정에 다시 로그인해야 합니다.\n\n지금 제거할까요?
+shortcut_offer = 바탕 화면에 ZBox 바로 가기를 만들까요?\n\n다음 ZBox 폴더를 시작합니다:\n{path}\n\n바로 가기는 이 위치를 그대로 기록합니다. 나중에 ZBox 폴더를 옮기면 설정의 시스템 트레이 및 창을 열고 바탕 화면 바로 가기 만들기를 다시 선택하여 새 위치를 가리키게 하세요.
+shortcut_created = 바로 가기를 만들었습니다:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = 표시 이름
+form_email_address = 메일 주소
+form_your_name = 이름
+form_login_email = 로그인 메일
+form_password = 비밀번호
+srv_imap_host = 받는 (IMAP) 서버
+srv_imap_port = 받는 포트
+srv_imap_encryption = 받는 암호화
+srv_smtp_host = 보내는 (SMTP) 서버
+srv_smtp_port = 보내는 포트
+srv_smtp_encryption = 보내는 암호화
+
+acct_login_email_label = 로그인 메일 (로그인에 사용)
+acct_new_password_label = 새 비밀번호 (현재 비밀번호를 유지하려면 비워 두기)
+acct_new_password_name = 새 비밀번호
+acct_identity_email_label = 메일 주소 (보내고 받는 데 사용)
+acct_identities_label = 추가 ID (별칭)
+acct_identities_name = 추가 ID
+acct_add_identity = &ID 추가...
+acct_edit_identity = &ID 편집...
+acct_remove_identity = &ID 제거
+acct_signature = 서명
+acct_edit_signature = &서명 편집...
+acct_junk_folder = 스팸 폴더
+acct_account_status = 계정 상태
+acct_disable_account = 이 계정 사용 안 함
+acct_default_account = 기본 계정
+acct_set_default = 기본 계정으로 설정
+acct_notifications = 새 메일 알림
+acct_mute_notifications = 이 계정의 알림 음소거
+acct_server_settings = 서버 설정
+
+wiz_before_you_start = 시작하기 전에
+wiz_notice_name = 중요 안내
+wiz_google_instructions = &Google 앱 비밀번호 안내 열기
+wiz_intro = 이름과 메일 주소
+wiz_login_same = 로그인 메일이 위의 메일 주소와 같음
+wiz_show_password = &비밀번호 표시
+wiz_preset_applied = {name}의 미리 설정을 적용했습니다.
+wiz_summary_name = 계정 요약
+wiz_review = 검토한 다음 완료를 눌러 이 계정을 저장하세요.
+wiz_test_connection = &연결 테스트
+wiz_testing = 연결을 테스트하는 중...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (디버그 로그 사용, 저장 위치: data\logs)
+set_language_label = &인터페이스 언어:
+set_language_label_only_english = &인터페이스 언어: (영어만)
+set_headers_checkbox = &열린 메시지 위에 메시지 헤더 표시
+set_zoom_label = 메시지 글꼴 및 확대/축소:
+set_font_override = &기본 메시지 글꼴 크기 무시
+set_font_size_name = 메시지 글꼴 크기 (포인트)
+set_reading_font_name = 읽기 글꼴
+set_reading_font_label = 읽기 글꼴 (기본값은 비워 두기):
+set_view_label = 메시지를 열 때 본문 보기:
+set_view_text = 텍스트
+set_view_html = HTML (렌더링)
+set_engine_label = HTML 렌더링 엔진:
+set_engine_edge = Edge / WebView2 (최신 렌더링)
+set_engine_ie = 레거시 MSHTML (화면 낭독기 지원 최상)
+set_runtime_label = WebView2 런타임:
+set_runtime_auto = 자동 — 번들 런타임이 있으면 사용 (권장)
+set_runtime_fixed = 번들 고정 버전만
+set_runtime_evergreen = 시스템 전체 런타임 (Windows에서 업데이트)
+set_sr_box = 화면 낭독기 안내 제어
+set_silence_label = HTML 화면 낭독기 무음 유지 시간:
+set_silence_name = HTML 화면 낭독기 무음 유지 시간 (밀리초)
+set_focus_delay_label = WebView 접근성 포커스 지연:
+set_focus_delay_name = WebView 접근성 포커스 지연, 1~10단계
+set_announce_label = 안내 표시 시간:
+set_announce_name = 안내 표시 시간 (밀리초)
+set_announce_actions = &메시지 작업 안내
+set_attachment_dir_label = 첨부 파일 저장 폴더:
+set_attachment_dir_name = 첨부 파일 저장 폴더
+set_browse = &찾아보기…
+set_autosave_label = 임시 보관 자동 저장 간격:
+set_autosave_name = 임시 보관 자동 저장 간격 (초)
+set_auto_purge_label = 오래된 지운 편지함 및 스팸 자동 비우기:
+set_auto_purge_name = 이 일수가 지나면 지운 편지함 및 스팸 자동 비우기
+set_bare_keys = 메시지 목록에서 단일 키 바로 가기 사용: S(플래그), A(보관), J(정크로 표시)/Shift+J(정크 아님으로 표시), W(스레드 주시), K(스레드 무시), M(이동)/Shift+M(폴더 이름으로 이동), C(복사)
+set_sound_label = 소리 및 알림:
+set_sounds_enabled = &알림 소리 재생
+set_desktop_notifications = &새 메일에 대한 바탕 화면 알림 표시
+set_theme_label = 소리 테마 변경:
+set_theme_label_only_default = 소리 테마 변경: (기본 테마만)
+set_security_box = 앱 및 데이터 보안
+set_lock_on_quit = &완전히 종료하면 ZBox 잠그기
+set_unlock_methods_button = &잠금 해제 방법…
+set_master_password_button = &기본 비밀번호…
+set_tray_label = 시스템 트레이 및 창:
+set_minimize_to_tray = &시스템 트레이로 최소화
+set_close_to_tray = &닫으면 시스템 트레이로
+set_stay_maximized = &ZBox를 항상 최대화
+set_run_at_startup = &Windows 시작 시 ZBox 실행
+set_desktop_shortcut_button = &바탕 화면 바로 가기 만들기
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = 디버그 로그는 문제가 생겼을 때 원인을 찾는 데 도움이 됩니다. 끄면 새 항목이 기록되지 않으며, 기존 로그 파일은 삭제되지 않습니다. 다음에 ZBox를 시작할 때 적용됩니다.
+set_language_note = 다음에 ZBox를 시작할 때 적용됩니다. 언어 파일은 ZBox의 lang 폴더(sounds 폴더 옆)에 있는 일반 텍스트 파일입니다. 언어를 추가하려면 en 폴더를 복사하고, 복사본과 그 안의 .lang 파일 이름을 언어 코드로 바꾼 다음, 각 등호 오른쪽의 텍스트를 번역하세요. 아직 번역하지 않은 부분은 조용히 넘어가지 않고 영어로 읽히므로, 일부만 번역한 파일도 안전하게 사용할 수 있습니다.
+set_headers_note = 보낸 사람, 받는 사람, 참조, 날짜, 제목을 텍스트 보기와 HTML 보기 모두에서 메시지 본문 위에 표시합니다. 이것이 없으면 탭을 닫고 목록으로 돌아가지 않는 한 메시지 안에서 보낸 사람을 알 방법이 없습니다. 포커스는 여전히 메시지 본문에 있으며, 헤더 영역은 Shift+Tab 한 번 거리에 있습니다. 다음에 메시지를 열 때 적용됩니다.
+set_zoom_note = 열린 메시지의 텍스트만 ZBox의 다른 부분이나 Windows 디스플레이 배율과 관계없이 크게 또는 작게 합니다. 텍스트 보기와 HTML 보기 모두에 적용됩니다. "읽기 글꼴"로 메시지 본문에 특정 글꼴(예: Consolas, OpenDyslexic)을 강제로 사용할 수 있으며, 보통 글꼴을 유지하려면 비워 두세요. 보기 메뉴의 Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0으로 이 대화 상자를 열지 않고 글꼴 크기만 키우거나 줄이거나 초기화할 수 있으며, 열린 모든 메시지에 즉시 적용됩니다. 여기서 바꾼 내용도 확인을 누르면 즉시 적용됩니다.
+set_view_note = 기본값은 HTML입니다. 보낸 그대로 메시지를 표시하며 NVDA와 JAWS가 읽을 수 있습니다. HTML 페이지가 열리면 ZBox는 브라우저 자체의 안내를 조용히 하고, 읽기 커서를 메시지의 첫 줄에 두며, 페이지 안에서도 ZBox 단축키(페이지 밖으로 포커스를 옮기는 F6 포함)가 작동하게 합니다. 텍스트는 같은 메시지를 일반 편집 컨트롤에 서식 없는 일반 텍스트로 표시합니다 -- 이미지도, 레이아웃도 없으며 브라우저 엔진 설치 여부와도 관계없습니다. 열린 메시지에서 Ctrl+B를 누르면 양쪽으로 전환됩니다.
+set_engine_note = Edge는 최신 CSS를 렌더링하지만 페이지를 별도 프로세스에서 실행하며, wxPython이 접근할 수 없는 인터페이스를 통해서만 화면 낭독기에 내용을 전달합니다 -- 그래서 읽을 수 있는 내용 없이 메시지가 열릴 수 있습니다. 레거시 MSHTML은 Outlook Express와 Windows 메일이 사용하던 엔진으로, 같은 프로세스에서 실행되고 일반 문서 트리를 게시하므로 NVDA와 JAWS가 다른 웹 페이지처럼 탐색 모드로 읽습니다. 다음에 메시지를 열 때 적용됩니다.
+set_runtime_note = 시스템 전체 런타임은 Windows 업데이트로 관리되므로, 메일을 읽는 엔진이 예고 없이 바뀔 수 있습니다 — ZBox는 전혀 바뀌지 않았는데 잘 작동하던 HTML 메시지 보기가 어떤 컴퓨터에서 고장 나는 이유가 이것입니다. deps 폴더에 번들된 사본은 ZBox를 테스트한 정확한 버전으로 고정됩니다. 설치하려면 tools\get_webview2.bat를 실행하세요. 번들 사본이 없으면 ZBox는 어느 경우든 시스템 전체 런타임을 사용하므로 항상 시작됩니다. 다음에 ZBox를 시작할 때 적용됩니다.
+set_sr_intro = 메시지를 여는 동안 ZBox가 화면 낭독기에 얼마나 말하게 할지, 그리고 ZBox 자체의 음성 안내가 얼마나 오래 표시될지를 정합니다.
+set_silence_note = HTML 메시지가 열릴 때 ZBox는 최대 2초 동안 가상의 Ctrl 키 누름을 유지해 화면 낭독기의 브라우저 안내를 조용히 할 수 있습니다. 메시지 제목이 이미 페이지 제목으로 쓰이므로 base64 URL이 읽히지는 않지만, 낭독기는 여전히 메시지 시작 부분에 컨트롤과 문서 종류를 겹쳐 읽으므로 이 설정은 기본적으로 켜져 있습니다. 끄려면 0으로 낮추고, 그래도 불필요한 말이 끼어들면 높이세요.
+set_focus_delay_note = HTML 메시지를 다 불러온 뒤 ZBox가 실제로 포커스를 옮기기 전에 기다리는 시간입니다. WebView2가 페이지 로드를 알리는 시점과 Windows가 그 페이지의 접근성 트리를 완성하는 시점은 같지 않습니다. 너무 일찍 포커스를 옮기면 NVDA/JAWS가 메시지 대신 일반적인 "웹 콘텐츠 페이지"라고 읽거나, 연 직후 한동안 메시지를 사용할 수 없다고 알립니다. 1단계는 100ms, 10단계는 1초입니다. 계속 이런 일이 생기면 높이고, 여는 것이 안정되면 더 빨리 열리도록 낮추세요.
+set_announce_note = Ctrl+U와 Ctrl+Shift+U는 스스로 닫히는 작은 대화 상자로 보낸 사람을 알려 줍니다. 상태 표시줄은 화면 낭독기에서 상태 표시줄 읽기가 켜져 있을 때만 읽히기 때문입니다. 이 값은 그 대화 상자가 표시되는 시간입니다. 음성 속도에 맞게 설정하세요. 너무 짧으면 문장 중간에 닫혀 의미가 없습니다. 아무 키나 누르면 일찍 닫히고, 화살표 키는 다시 읽을 수 있도록 열어 둡니다. 0이면 키를 누를 때까지 기다리며 저절로 닫히지 않습니다.
+set_attachment_dir_note = 메시지에 첨부 파일이 둘 이상일 때 "모두 저장"이 파일을 쓰는 위치입니다. 없으면 자동으로 만들어집니다. 첨부 파일이 하나인 메시지는 전과 같이 저장 위치를 묻습니다. 기본값을 쓰려면 비워 두세요:\n{path}
+set_autosave_note = 작성 중인 탭이 쓰는 동안 임시 보관함에 스스로 저장하는 간격입니다. 임시 저장(Ctrl+S)은 언제든 직접 저장할 수 있으며, 저장하지 않은 내용이 있는 탭을 닫을 때는 항상 저장할지 묻습니다. 0이면 자동 저장이 꺼집니다. 15초 미만은 제공하지 않습니다 -- 입력과 서버 통신이 서로 부딪히게 됩니다.
+set_auto_purge_note = 지운 편지함과 스팸 폴더에 이 일수만큼 머문 메시지를 영구 삭제합니다 -- 지운 편지함 비우기와 스팸 폴더 비우기가 요청 시 하는 것과 같은 영구 삭제를, ZBox가 열려 있는 동안 하루 한 번 자동으로 실행합니다. 기본적으로 30일로 켜져 있습니다. 0이면 꺼집니다. 메시지가 제거되면 실행 취소할 수 없습니다.
+set_bare_keys_note = 켜면 메시지 목록에서 S, A, J, W, K만 눌러도 즉시 별표를 켜고 끄거나, 보관하거나, 선택한 메시지를 스팸으로 표시(Shift+J는 스팸 아님으로 표시)하거나, 선택 항목이 속한 글타래를 보기/무시합니다 -- 보관과 스팸으로 표시는 확인도 실행 취소도 없습니다. 끄면 S, A, J, W, K는 일반적인 첫 글자 목록 탐색으로 돌아갑니다. Ctrl+S와 Ctrl+Shift+A는 어느 경우든 작동합니다. 즉시 적용됩니다.
+set_sounds_note = 진행 상황, 새 메시지, 보내기·회신·전달 완료, 삭제, 검색 결과를 알리는 짧은 소리입니다. 끄면 앱의 모든 소리가 꺼집니다. 화면 낭독기와 상태 표시줄 안내는 어느 경우든 영향을 받지 않습니다.
+set_desktop_notifications_note = 새 메일이 들어올 때마다 표시되는 Windows 알림으로, 위의 소리와는 별개입니다. 끄면 모든 계정에서 꺼집니다. 개별 계정은 계정 및 ID 설정에서 따로 음소거할 수도 있습니다.
+set_theme_note = 사용자 지정 테마는 ZBox의 sounds 폴더 안에 넣는 폴더로, 각각 progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav, none_found.wav를 제공합니다. 테마에 없는 파일은 기본 소리를 사용합니다.
+set_theme_note_only_default = 사용자 지정 테마는 ZBox의 sounds 폴더 안에 넣는 폴더로, 각각 progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav, none_found.wav를 제공합니다. 테마에 없는 파일은 기본 소리를 사용합니다. 다른 테마 폴더를 추가하기 전까지는 "default"만 사용할 수 있습니다.
+set_lock_note = 그러면 ZBox를 시작할 때 계정을 열기 전에 잠금 해제 방법 중 하나를 묻습니다. 패스키, 보안 키, 기본 비밀번호 중 하나면 충분합니다. 트레이로 닫는 것은 종료가 아니므로 다시 잠기지 않습니다. 파일 > 종료와 트레이 아이콘의 종료가 종료입니다. 아무것도 등록하지 않았고 기본 비밀번호도 설정하지 않았다면, 본인의 메일에서 잠겨 나가지 않도록 잠금을 건너뜁니다.
+set_security_note = 셋 중 무언가를 암호화하는 것은 기본 비밀번호뿐입니다. 이 폴더가 다른 컴퓨터에서 저장된 계정 비밀번호를 열 수 있는 것은 이 때문입니다. 패스키나 보안 키는 이 컴퓨터에서 앱의 잠금을 해제합니다. ZBox를 사용한 적 없는 컴퓨터에서는 어느 것도 기본 비밀번호를 대신하지 못합니다.
+set_minimize_note = ZBox를 최소화하면 작업 표시줄 단추가 숨겨지고 트레이 아이콘 뒤에서 계속 실행됩니다. 창을 다시 표시하려면 트레이 아이콘을 왼쪽 클릭하세요(키보드 포커스가 있을 때는 Enter/Space).
+set_close_note = 창의 닫기 단추, Alt+F4, 메일 탭에서 누른 Ctrl+W는 ZBox를 종료하지 않고 트레이로 숨깁니다. 파일 > 종료(Ctrl+Shift+Q)와 트레이 아이콘 자체의 종료는 어느 경우든 항상 실제로 ZBox를 종료하므로, 트레이를 건드리지 않고 키보드로 종료하는 방법이 항상 있습니다.
+set_stay_maximized_note = ZBox는 최대화된 상태로 시작하며, 최대화를 해제하면 다시 최대화됩니다. 메뉴 모음, 제목 표시줄, 창 테두리는 그대로입니다 -- 테두리 없는 전체 화면 모드가 아니므로 Alt 키 메뉴 단축키는 모두 작동합니다.
+set_run_at_startup_note = Windows에 로그인하면 ZBox가 자동으로 시작되며, 창을 표시하지 않고 바로 트레이로 들어갑니다. 다음 실행부터가 아니라 즉시 적용됩니다.
+set_desktop_shortcut_note = 바탕 화면에 ZBox 바로 가기를 만들고, 이미 있으면 바꿉니다. 바로 가기는 이 ZBox 폴더의 정확한 위치를 저장하므로, ZBox를 다른 곳으로 옮기거나 복사했다면 새 사본에서 이것을 다시 눌러 바탕 화면 바로 가기가 그곳을 가리키게 하세요. 즉시 적용되며 확인을 기다리지 않습니다.
+
+# The Address Book, its contact form and its groups.
+ab_name = 이름
+ab_phone = 전화
+ab_notes = 메모
+ab_heading = 주소록
+ab_contacts = 연락처
+ab_new = &새로 만들기...
+ab_edit = &편집...
+ab_delete = &삭제
+ab_import = &가져오기...
+ab_export = &내보내기...
+ab_groups_label = 그룹 (메일링 리스트)
+ab_groups_name = 그룹
+ab_new_group = &새 그룹...
+ab_rename_group = &그룹 이름 바꾸기...
+ab_delete_group = &그룹 삭제
+ab_manage_members = &구성원 관리...
+ab_all_contacts = 모든 연락처
+ab_add_member = 추가 >>
+ab_remove_member = << 제거
+ab_members_of = {name}의 구성원
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &사전에 없음:
+sp_not_in_dictionary_name = 사전에 없음
+sp_in_this_line_label = 이 줄:
+sp_in_this_line_name = 이 줄
+sp_suggestions_label = &제안:
+sp_suggestions_name = 제안
+sp_replace_with_label = &바꿀 단어:
+sp_replace_with_name = 바꿀 단어
+sp_replace = &바꾸기
+sp_replace_all = &모두 바꾸기
+sp_ignore = &무시
+sp_ignore_all = &모두 무시
+sp_add_to_dictionary = &사전에 추가
+btn_close = &닫기
+
+# Privacy and Content Blocking.
+priv_remote_label = 메시지의 원격 콘텐츠:
+priv_block_remote = &요청할 때까지 원격 콘텐츠 차단 (권장)
+priv_blocklist_label = 광고 및 추적기 차단 목록:
+priv_block_known = &알려진 광고 및 추적기 도메인 차단
+priv_update_daily = &백그라운드에서 매일 목록 업데이트
+priv_update_now = &지금 업데이트
+priv_junk_label = 스팸 메일 규칙:
+priv_check_inbox = &받은 편지함의 새 메일을 차단한 보낸 사람 및 알려진 피싱 링크와 대조
+priv_move_blocked = &차단한 보낸 사람의 메일을 자동으로 스팸 폴더로 이동
+priv_update_phishing = &지금 피싱 목록 업데이트
+priv_blocked_label = 차단한 보낸 사람:
+priv_blocked_name = 차단한 보낸 사람
+priv_remove_blocked = &차단한 보낸 사람 제거
+priv_never_junk_label = 스팸으로 처리하지 않을 보낸 사람:
+priv_never_junk_name = 스팸으로 처리하지 않을 보낸 사람
+priv_remove_never_junk = &스팸 아님 보낸 사람 제거
+priv_allowed_label = 원격 콘텐츠 불러오기를 허용한 보낸 사람:
+priv_allowed_name = 허용한 보낸 사람
+priv_remove_selected = &선택한 보낸 사람 제거
+
+# Message Filters.
+filt_rule_name = 규칙 이름
+filt_enabled = &사용
+filt_match_label = 일치:
+filt_match_all = &다음을 모두 만족 (AND)
+filt_match_any = &다음 중 하나라도 만족 (OR)
+filt_conditions_label = 조건 (건너뛰려면 값을 비워 두기):
+filt_condition_field = 조건 {number} 필드
+filt_condition_contains = 조건 {number} 포함 내용
+filt_actions_label = 동작:
+filt_mark_read = &읽음으로 표시
+filt_flag = &메시지에 별표
+filt_move_label = 폴더로 이동:
+filt_move_name = 폴더로 이동
+filt_rules_name = 필터 규칙
+filt_new = &새 규칙...
+filt_edit = &규칙 편집...
+filt_delete = &규칙 삭제
+filt_up = &위로
+filt_down = &아래로
+filt_run_label = 지금 실행할 폴더:
+filt_run_name = 지금 실행할 폴더
+filt_run_now = &지금 실행
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &패스키로 잠금 해제 (Windows Hello)
+unl_security_key = &보안 키로 잠금 해제
+unl_master_password_label = &기본 비밀번호:
+unl_master_password_name = 기본 비밀번호
+unl_unlock = &잠금 해제
+unl_exit = &ZBox 종료
+unl_methods_label = &등록된 방법:
+unl_methods_name = 등록된 잠금 해제 방법
+unl_add_passkey = &패스키 추가…
+unl_add_key = &보안 키 추가…
+unl_reassign = &패스키를 이 컴퓨터에 다시 할당…
+unl_test = &테스트…
+unl_remove = &제거
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = 보낸 사람
+comp_to = 받는 사람
+comp_cc = 참조
+comp_bcc = 숨은 참조
+comp_subject = 제목
+comp_attach_button = 파일 첨부...
+comp_sending = 보내는 중...
+comp_report_label = &보고서:
+comp_report_name = 보고서
+comp_refresh = &새로 고침
+comp_copy = &복사
+comp_preview_read = 받는 사람이 읽는 모습
+comp_preview_source = 보낼 HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = 메시지 본문
+mv_blocked_notice = 차단된 콘텐츠 안내
+mv_show_remote = &원격 콘텐츠 표시
+mv_always_allow = &이 보낸 사람 항상 허용
+mv_message_headers = 메시지 헤더
+mv_attachments = 첨부 파일
+mv_attachments_count = 첨부 파일 ({count})
+mv_save_attachment = 저장: {filename}
+mv_save_all = 모두 저장
+mv_html_view = 메시지 HTML 보기
+mv_saved_message = 저장된 메시지
+mv_show_remote_tip = 원격 이미지와 스타일을 포함해 이 메시지를 다시 불러옵니다. 알려진 추적기는 계속 차단됩니다.
+mv_always_allow_tip = {sender}에게서 온 모든 메시지에서 원격 콘텐츠를 불러옵니다.
+
+# The search tab.
+srch_account = 계정
+srch_folder = 폴더
+srch_for = 검색할 내용
+
+# The signature editor.
+sig_editors = 서명 편집기
+sig_formatted = 서명, 서식 있음
+sig_source = 서명, HTML 소스
+sig_plain_label = 일반 텍스트 대체본 (HTML과 함께 보냄)
+sig_plain_name = 일반 텍스트 대체본
+
+# About ZBox.
+about_text_name = ZBox 정보 텍스트
+about_view_license = &라이선스 보기...
+about_google = &Google 앱 비밀번호...
+about_support = &ZBox 후원 -- 1인 개발 및 유지 관리
+about_repos = &GitHub의 Harith 앱 저장소
+about_contact = &Harith에게 연락
+btn_close_plain = 닫기
+btn_cancel_plain = 취소
+
+# The license window.
+eula_heading = ZBox 라이선스
+eula_text_name = ZBox 라이선스 텍스트
+eula_third_party = 타사 구성 요소 라이선스 페이지:
+eula_agree = &위 약관에 동의합니다
+eula_agree_name = ZBox 라이선스 약관을 읽었으며 동의합니다
+eula_disagree = &동의하지 않습니다
+eula_next = &다음
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox 설명서 텍스트
+doc_copy = 클립보드에 복사
+shortcuts_heading = 키보드 단축키
+shortcuts_text_name = 키보드 단축키 텍스트
+
+# The main window's own panes.
+mf_toolbar = 기본 도구 모음
+mf_tabs = ZBox 탭
+tree_heading = 계정 및 폴더
+tree_name = 계정 및 폴더 트리
+envlist_heading = 메시지
+envlist_name = 메시지 목록
+rdr_heading = 메시지
+rdr_name = 메시지 읽기 창
+conv_heading_one = 대화: 메시지 1개
+conv_heading_many = 대화: 메시지 {count}개
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total}개 중 {completed}개 완료.
+bulk_cancelling = 취소하는 중 -- 현재 메시지를 마무리하고 있습니다...
+cache_clear_now = 지금 오프라인 메시지 캐시 지우기... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, 보호됨
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = 표시 이름은 선택 사항입니다 -- 비워 두면 이 계정의 이름으로 보냅니다.
+acct_note_identity = 제공자가 이 사서함에 사용자 지정 도메인을 연결했다면 메일 주소가 로그인 메일과 다를 수 있습니다. 메일은 위의 주소로 보내고 받으며, 로그인에는 계속 로그인 메일을 사용합니다. 이 계정에 저장된 비밀번호를 유지하려면 비밀번호 칸을 비워 두세요 -- 예를 들어 Gmail 앱 비밀번호를 바꾼 뒤에는 새 비밀번호를 여기에 입력하고, 그 외에는 비워 두세요.
+acct_note_identities = 이 계정이 보내고 회신할 때 쓸 수 있는 다른 주소입니다. 이 주소 중 하나로 온 메시지에 회신하면 보낸 사람이 위의 주소 대신 그 주소로 설정됩니다.
+acct_note_signature = 이 계정에서 보내는 모든 새 메시지, 회신, 전달의 "-- " 줄 아래에 붙습니다. 서명을 쓰지 않으려면 비워 두세요. 서명 편집을 누르면 굵게, 목록, 링크를 쓸 수 있는 서식 편집기가 열리고, 위 칸에는 함께 보내는 일반 텍스트 버전이 들어갑니다.
+acct_note_junk = 스팸으로 표시가 메시지를 옮기는 실제 폴더입니다. "{automatic}"은(는) 보관과 지운 편지함에 이미 쓰이는 제공자별 추측을 사용합니다. 그 추측이 틀리거나 스팸 폴더 이름이 다른 경우에만 설정하세요.
+acct_note_disable = 사용하지 않는 계정에는 다시 사용할 때까지 전혀 연결하지 않습니다 -- IDLE도, 주기적 새로 고침도 없습니다. 트리에는 (사용 안 함)으로 표시되어 남아 있고, 이미 다운로드한 메일은 오프라인으로 계속 볼 수 있습니다. 계정 > 계정 사용 안 함 또는 계정의 컨텍스트 메뉴와 같은 스위치이며, 여기는 그곳에 닿는 또 다른 경로입니다.
+acct_note_default = 이 계정의 폴더가 트리 맨 위에 표시되고, 작성기에서 직접 바꾸지 않는 한 새 메시지는 이 계정에서 보냅니다. 회신이나 전달에 쓰는 주소에는 영향을 주지 않습니다 -- 그것은 회신하는 메시지를 따릅니다(위의 추가 ID 참조). 기본 계정은 항상 정확히 하나이므로, 다른 계정을 선택하지 않고 현재 기본 계정의 선택을 해제하면 아무것도 바뀌지 않습니다 -- 기본을 넘기려면 다른 계정의 확인란을 선택하세요.
+acct_note_mute = &음소거하면 다른 설정과 관계없이 이 계정의 새 메일 소리, 음성 안내, Windows 알림이 차단됩니다. 다른 계정에는 영향을 주지 않으며, 설정 > 소리 및 알림의 전체 스위치(소리와 바탕 화면 알림 전체)도 계속 적용됩니다.
+wiz_note_app_password = ZBox용 앱 비밀번호를 이미 만들었다면 다음을 눌러 계속하세요.
+wiz_note_login = 로그인 정보.\n로그인 메일이 위의 주소와 다르다면, 예를 들어 제공자 계정은 login@example.net이지만 you@example.org로 보내고 받으려면, 여기에 로그인 메일을 입력하세요. 사용자 지정 보내는 주소는 나중에 계정 및 ID 설정에서 지정할 수 있습니다.
+wiz_note_servers = 서버 설정입니다. 도메인을 인식한 경우 미리 채워져 있습니다. 달라야 하는 항목은 편집하세요.
+wiz_preset_none = 이 도메인의 미리 설정을 찾지 못했습니다. 제공자의 서버 설정을 직접 입력하세요. 제공자의 도움말 페이지에 나와 있습니다.
+ab_note_groups = 작성 창의 받는 사람, 참조, 숨은 참조 칸에 그룹 이름을 입력하면 그룹의 모든 구성원이 한꺼번에 채워집니다.
+cache_note_intro = 이 항목들은 ZBox의 로컬 사본만 제거합니다. 메일 서버에서는 아무것도 삭제되지 않으며, 제거한 메시지는 다음에 열 때 다시 다운로드됩니다.
+cache_note_age = 자동 정리는 ZBox에서 10분 동안 키보드 입력이 없고 열린 메시지가 없을 때 하루에 한 번 실행됩니다. 계정에 아직 남아 있는 메시지를 포함해 각 메시지 자체의 날짜를 기준으로 합니다.
+filt_note_intro = 규칙은 위에서 아래로 차례대로 실행되며 보낸 사람, 받는 사람, 제목을 검사합니다. 이 계정의 받은 편지함에 새 메일이 도착하면 자동으로 적용됩니다. 이미 폴더에 있는 메시지에 적용하려면 아래의 지금 실행을 사용하세요.
+filt_note_run_now = 위에서 사용 중인 모든 규칙을 차례대로, 선택한 폴더에 이미 있는 모든 메시지에 적용합니다 -- 확인과 마찬가지로 먼저 변경 사항을 저장합니다.
+mp_note_intro = 이 계정들은 다른 컴퓨터에서 설정되었습니다. 여기서 저장된 비밀번호의 잠금을 해제하려면 기본 비밀번호를 입력하세요. 이 컴퓨터에서는 한 번만 묻습니다.\n\n입력하지 않으면 각 계정은 메일 서버에 다시 로그인해야 합니다.
+priv_note_remote = 메시지가 인터넷에서 불러오는 이미지, 스타일시트, 글꼴은 언제 어디서 메시지를 열었는지를 보낸 사람에게 알려 줍니다. 이 설정을 켜면 아무것도 불러오지 않습니다. 무엇을 차단했는지 알려 주는 안내가 메시지 위에 표시되고, Ctrl+Shift+I를 누르면 그 메시지에만 불러옵니다. 메시지 자체에 첨부된 그림은 항상 표시됩니다. 스크립트와 포함된 프레임은 어느 경우든 제거되며 절대 불러오지 않습니다.
+priv_note_blocklist = 이것은 두 번째 방어선입니다. 메시지의 원격 콘텐츠를 불러오거나 보낸 사람을 허용했을 때 효과가 있습니다. 그림은 불러오지만, 알려진 추적 또는 광고 도메인에서 오는 것은 여전히 불러오지 않습니다. 목록은 공개 광고 및 추적기 목록에서 다운로드해 합친 것이며, 업데이트는 1~2초 걸리고 백그라운드에서 실행됩니다.
+priv_note_junk = 추측하지 않습니다. 스팸으로 표시하면 메시지가 메일링 리스트를 통해 온 경우가 아니면 보낸 사람을 아래의 차단 목록에 추가합니다. 스팸 아님으로 표시하면 보낸 사람을 스팸 아님 목록에 추가하고 그 메시지는 다시 검사하지 않습니다. 차단한 보낸 사람의 새 메시지는 목록에서 차단된 보낸 사람으로 표시되고, 알려진 피싱 또는 악성 코드 사이트로 연결되는 메시지는 피싱 의심으로 표시됩니다. 메일 제공자의 자체 스팸 필터링은 전과 같이 작동합니다.
+priv_status_phishing_updating = 피싱 목록: 백그라운드에서 업데이트하는 중입니다. 결과를 보려면 이 대화 상자를 다시 여세요.
+priv_status_updating = 백그라운드에서 업데이트하는 중입니다. 결과를 보려면 이 대화 상자를 다시 여세요.
+rel_note_intro = Message-ID/References 헤더로 "{subject}"와(과) 관련된 메시지를 이 계정의 모든 폴더에서 보여 줍니다.
+srch_note_intro = 아래에 입력한 텍스트로 보낸 사람, 제목, 본문을 검색합니다. 아래에서 범위를 좁히지 않으면 모든 계정과 폴더를 검색합니다.
+sig_note_plain = 일반 텍스트 대체본을 비워 두면 저장을 누를 때 서식 있는 서명에서 만들어집니다.
+unified_note_intro = 모든 계정에서 합칠 폴더를 선택하세요. 선택한 폴더는 각각 트리에서 모든 계정의 해당 폴더를 합친 하나의 항목이 됩니다.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox 정보
+title_account_settings = 계정 및 ID 설정: {name}
+title_new_account = 새 계정
+title_address_book = 주소록
+title_members = 구성원: {name}
+ab_group_name_prompt = 그룹 이름:
+title_new_group = 새 그룹
+title_cache_cleanup = 캐시 정리 설정
+cache_age_prompt = 다음보다 오래된 캐시 메시지를 자동으로 제거:
+title_automatic_cleanup = 자동 정리
+comp_link_prompt = 링크 주소:
+title_insert_link = 링크 삽입
+title_composer_diagnostics = 작성기 진단
+title_formatted_preview = 서식 미리 보기
+title_license_agreement = ZBox 라이선스 계약
+title_message_filters = 메시지 필터: {account}
+title_master_password_required = 기본 비밀번호 필요
+title_privacy_dialog = 개인 정보 및 콘텐츠 차단
+title_privacy = 개인 정보
+title_settings = 설정
+title_unified_folders = 통합 폴더
+title_zbox_locked = ZBox 잠김
+title_message_view = 메시지 보기
+title_remote_content = 원격 콘텐츠
+title_refresh = 새로 고침
+title_refresh_all = 모두 새로 고침
+mv_choose_folder = 첨부 파일을 저장할 폴더 선택
+title_thread = 글타래
+title_inbox = 받은 편지함
+title_compose = 작성
+title_watch_thread = 글타래 보기
+title_ignore_thread = 글타래 무시
+title_edit_signature = 서명 편집
+title_account = 계정
+mf_folder_name_prompt = 폴더 이름:
+mf_new_name_prompt = 새 이름:
+title_refresh_all_accounts = 모든 계정 새로 고침
+title_sender = 보낸 사람
+title_new_mail = 새 메일
+mf_export_dialog_title = 계정 {count}개 전체와 설정 내보내기
+mf_related_tab = 관련: {subject}
+title_hotkeys_diagnostic = 단축키 진단
+set_choose_attachment_dir = 첨부 파일 저장 폴더 선택
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox가 잠겨 있습니다. 아래 방법 중 하나로 잠금을 해제하세요. 취소하면 계정을 열지 않고 ZBox를 닫습니다.
+unl_note_foreign_passkey = 이 폴더에 저장된 패스키는 다른 컴퓨터의 것이라 여기서는 사용할 수 없습니다. 보안 키나 기본 비밀번호로 잠금을 해제한 다음, 설정, 개인 정보 및 보안, 잠금 해제 방법에서 이 컴퓨터의 패스키를 설정하세요.
+unl_note_methods = 앱 잠금이 켜져 있을 때 기본 비밀번호와 함께 이 중 하나로 ZBox의 잠금을 해제할 수 있습니다. 패스키는 이 컴퓨터의 Windows Hello를 사용하고, 보안 키는 USB나 NFC의 FIDO2 키로 꽂는 어느 컴퓨터에서든 작동합니다.
+unl_note_not_encryption = 이것들은 앱의 잠금을 해제할 뿐 아무것도 암호화하지 않습니다. 이 폴더를 처음 쓰는 컴퓨터에서 저장된 계정 비밀번호를 열 수 있는 것은 여전히 기본 비밀번호뿐입니다. 기본 비밀번호를 먼저 설정해야 하며, 설정하기 전에는 이것들을 추가할 수 없습니다.
+unl_add_passkey_unavailable = &패스키 추가 (사용할 수 없음)
+unl_add_key_unavailable = &보안 키 추가 (사용할 수 없음)
+unl_reassign_unavailable = &패스키를 이 컴퓨터에 다시 할당 (사용할 수 없음)
+unl_status_cancelled_passkey = 패스키를 취소했습니다. ZBox는 아직 잠겨 있습니다.
+unl_status_cancelled_key = 보안 키를 취소했습니다. ZBox는 아직 잠겨 있습니다.
+unl_status_enter_password = 기본 비밀번호를 입력하세요.
+unl_status_no_master = 기본 비밀번호가 설정되지 않아 아직 패스키나 보안 키를 추가할 수 없습니다. 설정, 개인 정보 및 보안의 기본 비밀번호 단추로 설정한 다음 여기로 돌아오세요. 기본 비밀번호는 다른 컴퓨터에서 저장된 계정 비밀번호를 여는 것이고, 패스키는 이 컴퓨터에서 앱의 잠금만 해제하므로 단독으로 쓸 수 없습니다.
+unl_status_unsupported = 이 컴퓨터의 Windows는 패스키나 보안 키를 지원하지 않으므로, 여기서는 기본 비밀번호로만 ZBox의 잠금을 해제할 수 있습니다.
+unl_status_foreign_one = 패스키 1개가 다른 컴퓨터의 것이라 여기서 ZBox의 잠금을 해제할 수 없습니다. 다시 할당하면 이 컴퓨터에서 만든 것으로 바뀝니다.
+unl_status_foreign_many = 패스키 {count}개가 다른 컴퓨터의 것이라 여기서 ZBox의 잠금을 해제할 수 없습니다. 다시 할당하면 이 컴퓨터에서 만든 것으로 바뀝니다.
+unl_status_foreign_one_no_hello = 패스키 1개가 다른 컴퓨터의 것이라 여기서 ZBox의 잠금을 해제할 수 없습니다. 여기에는 Windows Hello가 설정되어 있지 않아 이 컴퓨터에서 바꿀 수 없으며, 제거하면 잊습니다.
+unl_status_foreign_many_no_hello = 패스키 {count}개가 다른 컴퓨터의 것이라 여기서 ZBox의 잠금을 해제할 수 없습니다. 여기에는 Windows Hello가 설정되어 있지 않아 이 컴퓨터에서 바꿀 수 없으며, 제거하면 잊습니다.
+unl_status_no_hello = 이 컴퓨터에 Windows Hello가 설정되어 있지 않아 여기서는 패스키를 추가할 수 없습니다. 보안 키는 추가할 수 있습니다.
+unl_status_none_registered = 아직 등록된 잠금 해제 방법이 없습니다.
+unl_status_add_cancelled_passkey = 패스키 추가를 취소했습니다.
+unl_status_add_cancelled_key = 보안 키 추가를 취소했습니다.
+unl_status_added = 추가함: {name}.
+unl_status_reassign_cancelled = 다시 할당을 취소했습니다. 아무것도 바뀌지 않았습니다.
+unl_status_reassigned = {name}을(를) 추가하고 다른 컴퓨터의 {count}개를 잊었습니다.
+unl_status_test_cancelled = 테스트를 취소했습니다.
+unl_status_removed = 제거했습니다.
+unl_remove_warning_last = {name}을(를) 제거할까요?\n\n등록된 유일한 잠금 해제 방법이고 기본 비밀번호도 설정되지 않았으므로, 앱 잠금이 켜져 있으면 ZBox의 잠금을 해제할 방법이 남지 않습니다. 잠겨 나가지 않도록 잠금은 건너뛰지만, 그러면 ZBox가 잠기지 않은 채로 열립니다.
+unl_remove_warning = {name}을(를) 제거할까요? ZBox가 더 이상 받아들이지 않습니다.
+ab_col_email = 메일
+ab_col_name = 이름
+ab_col_phone = 전화
+ab_no_contacts = 아직 연락처가 없습니다.
+acct_auto_check = 새 메시지 자동 확인
+acct_note_auto_check = 끔: ZBox가 이 계정에 스스로 연결하지 않습니다 -- 새 메일 감시도, 정해진 새로 고침도, 백그라운드 다운로드도 없으므로 불안정한 서버가 다른 계정을 느리게 할 수 없습니다. 다운로드한 메일은 계속 열리며, 새로 고침(F5), 보내기, 삭제는 여전히 서버에 전달됩니다. 도구 메뉴나 계정의 컨텍스트 메뉴에 있는 자동 확인 일시 중지와 같습니다.
+bl_day_ago = 1일 전
+bl_days_ago = {days}일 전
+bl_label_blocklists = 차단 목록
+bl_label_phishing = 피싱 목록
+bl_last_failed = 마지막 시도 실패: %s
+bl_not_downloaded = 아직 다운로드하지 않았습니다.
+bl_save_failed = %s을(를) 다운로드했지만 저장할 수 없습니다: %s
+bl_seed_only = 기본 제공 목록의 도메인 %s개. 아직 인터넷에서 업데이트하지 않았습니다.
+bl_some_failed = 일부 원본이 실패했습니다: %s
+bl_some_unreachable = 일부 원본에 연결할 수 없습니다: %s
+bl_status_line = 도메인 %s개. 마지막 업데이트 %s.
+bl_up_to_date = %s은(는) 이미 최신입니다.
+bl_update_failed = %s을(를) 업데이트할 수 없습니다: %s
+bl_updated = %s 업데이트함: 도메인 %s개.
+cc_age_choice = %s 지난 모든 메시지 캐시
+cc_auto_button = 자동 정리: %s보다 오래된 캐시 메시지...
+comp_btn_discard = &버리기
+comp_btn_keep_editing = &계속 편집
+comp_btn_save_draft = &임시 저장
+comp_no_account = 설정된 계정 없음
+comp_saving_draft = 임시 저장하는 중…
+comp_this_message = 이 메시지
+comp_unsent_save_q = 닫기 전에 %s을(를) 임시 저장할까요?
+comp_unsent_tray_q = ZBox가 트레이로 가기 전에 %s을(를) 임시 저장할까요?
+doc_unreadable = 설명서 파일을 읽을 수 없습니다:
+envlist_all_disabled = 모든 계정을 사용하지 않습니다.
+envlist_col_date = 날짜
+envlist_col_from = 보낸 사람
+envlist_col_status = 상태
+envlist_col_subject = 제목
+envlist_collapsed = 접힘 (%d)
+envlist_empty = 이 폴더에 메시지가 없습니다.
+envlist_loading = 메시지를 불러오는 중...
+envlist_no_accounts = 아직 설정된 계정이 없습니다.
+envlist_no_ignored = 이 폴더에 무시한 글타래가 없습니다.
+envlist_no_watched = 이 폴더에 보고 있는 글타래가 없습니다.
+envlist_select_folder = 메시지를 불러올 계정이나 폴더를 선택하세요.
+eula_link_0 = 브라우저에서 Himalaya 라이선스 페이지 열기
+eula_link_1 = 브라우저에서 StevenBlack hosts 라이선스 페이지 열기
+eula_link_2 = 브라우저에서 EasyList/EasyPrivacy 라이선스 페이지 열기
+eula_link_3 = 브라우저에서 Phishing.Database 라이선스 페이지 열기
+eula_read_note = 타사 부분을 포함해 아래 라이선스를 읽으세요. 동의합니다를 선택해야 다음을 사용할 수 있습니다. 동의하지 않습니다를 선택하면 ZBox를 시작하지 않고 닫으며, 이번 실행에서 지금까지 만든 것을 제거합니다.
+eula_unreadable = 라이선스 파일을 읽을 수 없습니다:\n%s
+filters_title = 필터 실행
+flag_title = 메시지에 별표
+folder_type_archive = 저장 편지함
+folder_type_drafts = 임시 보관함
+folder_type_inbox = 받은 편지함
+folder_type_junk = 스팸
+folder_type_sent = 보낸 편지함
+folder_type_trash = 지운 편지함
+mime_application_json = JSON 파일
+mime_application_msword = Word 문서
+mime_application_octet_stream = 이진 파일
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel 스프레드시트
+mime_application_vnd_ms_powerpoint = PowerPoint 프레젠테이션
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint 프레젠테이션
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel 스프레드시트
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word 문서
+mime_application_xml = XML 파일
+mime_application_zip = ZIP 압축 파일
+mime_audio_mpeg = MP3 오디오
+mime_audio_ogg = OGG 오디오
+mime_audio_wav = WAV 오디오
+mime_image_bmp = BMP 이미지
+mime_image_gif = GIF 이미지
+mime_image_jpeg = JPEG 이미지
+mime_image_png = PNG 이미지
+mime_image_svg_xml = SVG 이미지
+mime_image_webp = WebP 이미지
+mime_text_csv = CSV 파일
+mime_text_html = HTML 파일
+mime_text_plain = 텍스트 파일
+mime_video_mp4 = MP4 동영상
+mime_video_x_msvideo = AVI 동영상
+move_title_junk = 스팸으로 표시
+move_title_move_to = 이동
+move_title_not_junk = 스팸 아님으로 표시
+mp_explain_set = 기본 비밀번호가 설정되어 있습니다. 이 ZBox 폴더가 다른 컴퓨터에서 저장된 계정 비밀번호를 열 수 있는 것은 이 때문입니다.\n\n제거하려면 새 비밀번호 칸을 모두 비우고 확인을 누르세요. 제거해도 이 컴퓨터에는 영향이 없지만, 폴더를 다른 컴퓨터에서 쓰려면 모든 계정에 다시 로그인해야 합니다.
+mp_explain_unset = 기본 비밀번호가 설정되지 않아 저장된 계정 비밀번호를 이 컴퓨터와 이 Windows 계정에서만 읽을 수 있습니다. 폴더를 다른 곳에 복사하면 모든 계정이 메일 서버에 다시 로그인해야 합니다.\n\n설정하면 ZBox는 새 컴퓨터마다 한 번씩 묻고, 그 뒤로는 그곳에서 평소처럼 잠금을 해제합니다. 이 컴퓨터에서는 다시 묻지 않습니다.\n\n적어서 안전한 곳에 보관하세요. 어디에도 저장되지 않으며 복구할 수 없습니다. 잊어버리면 모든 계정이 메일 서버에 다시 로그인해야 합니다.
+mp_label_confirm = &새 기본 비밀번호 확인:
+mp_label_current = &현재 기본 비밀번호:
+mp_label_master = &기본 비밀번호:
+mp_label_new = &새 기본 비밀번호:
+mp_name_confirm = 새 기본 비밀번호 확인
+mp_name_current = 현재 기본 비밀번호
+mp_name_master = 기본 비밀번호
+mp_name_new = 새 기본 비밀번호
+mp_prompt_existing = 저장된 계정 비밀번호는 이 컴퓨터에서만 보호됩니다. ZBox를 다른 컴퓨터로 옮겨도 열 수 있도록 기본 비밀번호를 설정하세요.
+mp_prompt_first_run = ZBox가 곧 계정 비밀번호를 저장합니다. ZBox를 다른 컴퓨터로 옮겨도 열 수 있도록 지금 기본 비밀번호를 설정하세요.
+mp_prompt_new_account = ZBox가 곧 이 계정의 비밀번호를 저장합니다. ZBox를 다른 컴퓨터로 옮겨도 계정을 열 수 있도록 먼저 기본 비밀번호를 설정하세요.
+mp_removed_done = 기본 비밀번호를 제거했습니다. 저장된 비밀번호는 이제 이 컴퓨터와 이 Windows 계정에서만 작동합니다.
+mp_set_done = 기본 비밀번호를 설정했습니다. 이 폴더를 여는 새 컴퓨터마다 ZBox가 한 번씩 묻고, 그 뒤로는 그곳에서 평소처럼 잠금을 해제합니다.
+mv_body_title = 메시지 본문
+mv_col_format = 형식
+mv_col_name = 이름
+mv_col_size = 크기
+mv_format_unknown = 알 수 없음
+mv_size_unknown = 크기 알 수 없음
+na_account_settings = 계정 및 ID 설정
+na_disable_account = 계정 사용 안 함
+na_edit_signature = 서명 편집
+na_message_filters = 메시지 필터
+na_mute_account = 계정 음소거
+na_pause_auto_check = 자동 확인 일시 중지
+na_remove_account = 계정 제거
+na_set_default = 기본 계정으로 설정
+no_offline_copy = %s의 오프라인 사본이 없습니다. 온라인일 때 열거나 파일, 오프라인, 지금 동기화를 사용하세요.
+perm_delete_confirm = {msg} 지운 편지함을 거치지 않으며 실행 취소할 수 없습니다.
+perm_delete_many = 메시지 {count}개를 영구 삭제할까요?
+perm_delete_one = 메시지 {count}개를 영구 삭제할까요?
+preset_note_apple = Apple은 앱 암호가 필요합니다.
+preset_note_fastmail = Fastmail은 앱 비밀번호가 필요합니다.
+preset_note_google = Google은 일반 비밀번호가 아닌 앱 비밀번호나 OAuth2가 필요합니다.
+preset_note_proton = ProtonMail은 ProtonMail Bridge 앱을 로컬에서 실행해야 합니다.
+preset_note_yahoo = Yahoo는 앱 비밀번호가 필요합니다.
+priv_phishing_not_loaded = 피싱 목록: 아직 불러오지 않았습니다. 이 규칙이 켜져 있고 ZBox가 온라인일 때 처음 다운로드됩니다.
+priv_phishing_prefix = 피싱 목록:
+priv_status_unavailable = 차단 목록 상태를 사용할 수 없습니다.
+rdr_load_failed = 메시지를 불러올 수 없습니다.\n\n{message}
+rdr_loading = 메시지를 불러오는 중...
+rdr_select_message = 여기서 읽을 메시지를 선택하세요.
+set_autosave_off = 끔 — 직접 저장하려면 임시 저장(Ctrl+S) 사용
+set_autosave_seconds = {seconds}초마다
+set_no_unlock = 여기서 쓸 수 있는 패스키나 보안 키 없음
+set_purge_days = {days}일 후
+set_purge_off = 끔 — 지운 편지함과 스팸은 자동으로 비우지 않음
+set_purge_one_day = 1일 후
+set_rt_bundled_installed = 번들 런타임: 설치됨.
+set_rt_bundled_many = 번들 런타임: %s 설치됨.
+set_rt_bundled_none = 번들 런타임: 설치되지 않아 ZBox가 시스템 전체 런타임을 사용합니다.
+set_rt_bundled_unknown = 번들 런타임: 확인할 수 없습니다.
+set_rt_bundled_ver = 번들 런타임: 버전 %s 설치됨.
+set_rt_system_unknown = 시스템 전체 런타임: 버전을 확인할 수 없습니다.
+set_rt_system_ver = 시스템 전체 런타임: 버전 %s.
+set_unlock_many = 여기서 쓸 수 있는 잠금 해제 방법 %d개
+set_unlock_unreadable = 잠금 해제 방법을 읽을 수 없습니다
+sig_tab_formatted = 서식 있음
+sig_tab_source = HTML 소스
+srch_all_accounts = 모든 계정
+srch_all_folders = 모든 폴더
+tab_mail = 메일
+tab_new_message = 새 메시지
+tab_saved_message = 저장된 메시지
+title_copy_to_err = 복사
+title_mark_message = 메시지 표시
+title_unsent_message = 보내지 않은 메시지
+tree_unified_root = 통합 폴더
+unlock_kind_passkey = 패스키 (Windows Hello)
+unlock_kind_security_key = 보안 키
+unlock_prompt_message = Windows가 확인을 요청하고 있습니다. Windows Hello, PIN 또는 보안 키로 요청에 응답하세요. Windows가 끝나면 이 창은 저절로 닫힙니다.
+unlock_prompt_title = Windows 보안
+unlock_registering = 이 잠금 해제 방법을 등록하는 중
+unlock_the_passkey = 패스키
+unlock_the_security_key = 보안 키
+wildcard_eml = 메일 파일 (*.eml)|*.eml|모든 파일 (*.*)|*.*
+wildcard_export = ZBox 내보내기 파일 (*.json)|*.json
+wiz_not_supported = 지원하지 않음: {name}. {note} 이 계정은 ZBox에 추가할 수 없습니다.
+stock_apply = &적용
+stock_cancel = 취소
+stock_close = &닫기
+stock_help = &도움말
+stock_no = &아니요
+stock_ok = 확인
+stock_yes = &예
+wiz_btn_back = &< 뒤로
+wiz_btn_finish = &완료
+wiz_btn_next = &다음 >
+acct_unsaved_q = 이 계정의 변경 사항을 저장할까요?
+btn_save = &저장
+spell_add_to_dictionary = &사전에 추가
+spell_no_suggestions = 제안 없음
+title_signature_for = 서명: {account}
+title_mark_folder_read = 폴더를 읽음으로 표시
+title_update_available = ZBox 업데이트
+update_available = ZBox {new}을(를) 사용할 수 있습니다. 현재 버전은 {current}입니다.
+upd_notes_label = 릴리스 노트:
+upd_no_notes = 릴리스 노트가 없습니다.
+upd_notes_name = 릴리스 노트
+upd_update_now = 예, 지금 업데이트
+upd_remind_later = 나중에 알림
+title_update_download = ZBox 업데이트 다운로드 중
+upd_downloading = ZBox {version} 다운로드 중...
+upd_progress_name = 다운로드 진행률
+upd_cancel = 취소
+upd_cancelling = 취소하는 중...
+set_updates_label = 업데이트:
+set_update_auto = 자동으로 업데이트 확인
+set_update_mode_label = 업데이트를 찾으면:
+set_update_ask = 묻기
+set_update_silent = 묻지 않고 다운로드 및 설치
+set_update_note = ZBox는 사용하지 않는 동안에만 하루에 최대 한 번 GitHub에서 새 릴리스를 확인하며, 버전 번호 외에는 아무것도 보내지 않습니다. 묻기를 선택하면 새 버전과 릴리스 노트를 예, 지금 업데이트 및 나중에 알림과 함께 보여 줍니다. 묻지 않고 다운로드 및 설치를 선택하면 사용하지 않는 시간에 업데이트를 받아, 다음에 ZBox를 완전히 종료할 때 설치하며 작업 중에는 절대 설치하지 않습니다. 업데이트는 ZBox 자체 프로그램 파일만 바꿉니다. 계정, 비밀번호, 설정, 메일, 로그, 소리 테마, 직접 추가한 언어는 전혀 건드리지 않으며, 이전 버전은 보관되었다가 새 버전이 시작되지 않으면 자동으로 복원됩니다. 도움말, 업데이트에는 수동 업데이트를 위한 지금 업데이트 확인과 릴리스 페이지도 있습니다.
+set_update_check_now = 지금 확인
+mv_attachment_button = {filename} ({format})
+att_open = 열기
+att_save = 저장...
+att_save_all = 모든 첨부 파일 저장
+title_save_attachment = 첨부 파일 저장
+title_full_headers = 모든 머리글
+hdr_copy_all = 모두 복사
+acct_identity_own_signature = 자체 서명 사용
+acct_identity_own_reply_to = 자체 답장 주소 사용
+acct_identity_reply_to = 답장 주소
+acct_identity_always_cc = 항상 이 주소를 참조에 추가
+acct_identity_cc = 참조 주소
+acct_identity_always_bcc = 항상 이 주소를 숨은 참조에 추가
+acct_identity_bcc = 숨은 참조 주소
+acct_identity_own_folders = 자체 임시 보관함 및 보낸 편지함 폴더 사용
+acct_identity_drafts = 임시 보관함 폴더
+acct_identity_sent = 보낸 편지함 폴더
+acct_identity_own_smtp = 자체 보내는 서버 사용
+acct_identity_smtp_login = 보내는 서버 로그인 이름
+acct_identity_smtp_password = 보내는 서버 비밀번호
+acct_identity_test_smtp = 보내는 서버 테스트
+acct_identity_note_smtp = 로그인 이름을 비워 두면 이 ID의 이메일 주소로 로그인합니다. 보낸 사본은 이 계정의 보낸 편지함 폴더에 저장되며, 이 ID에 자체 보낸 편지함 폴더가 있으면 그곳에 저장됩니다.
+identity_field_required = {field}을(를) 입력하거나 해당 확인란을 해제하세요.
+identity_field_invalid = {field}에 올바르지 않은 주소가 있습니다.
+identity_folders_required = 임시 보관함 폴더, 보낸 편지함 폴더 또는 둘 다를 선택하거나 해당 확인란을 해제하세요.
+identity_password_required = 보내는 서버 비밀번호를 입력하세요.
+identity_smtp_testing = 보내는 서버를 테스트하는 중입니다.
+identity_smtp_ok = 보내는 서버가 로그인을 수락했습니다.
+identity_smtp_failed = 보내는 서버 테스트에 실패했습니다.\n\n{error}
+set_bare_keys_note_move = M과 C는 선택한 메시지의 폴더가 담긴 이동 및 복사 메뉴를 열고, Shift+M은 폴더 이름의 일부를 입력해 그곳으로 옮기는 상자를 엽니다. 이 설정을 끄면 M과 C도 첫 글자 탐색으로 돌아갑니다.
+folder_search_filter = 폴더 이름에 포함된 글자
+folder_search_list = 일치하는 폴더
+folder_search_no_match = 그 이름과 일치하는 폴더가 없습니다.
+wiz_signin_method = 로그인 방법
+wiz_method_password = 비밀번호
+wiz_method_microsoft = Microsoft 계정 (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft 로그인. Outlook.com, Hotmail, Live, Microsoft 365의 서버 설정을 채웠습니다.
+wiz_welcome_notice = Gmail. 일반 Google 비밀번호는 거부되지만 앱 비밀번호는 작동합니다. 먼저 2단계 인증을 켜야 합니다. 아래 단추를 누르면 Google 안내가 열립니다.\n\nOutlook.com, Hotmail, Live, Microsoft 365. 이 계정은 Microsoft 계정으로 로그인합니다. 로그인 페이지에서 Microsoft 계정을 선택한 다음 브라우저나 코드로 로그인하세요.\n\n기타 제공자. 보통 일반 비밀번호나 앱 비밀번호가 작동하며, 서버 설정은 제공자의 도움말 페이지에 나와 있습니다.
+preset_note_outlook = Outlook.com, Hotmail, Live, MSN 계정은 Microsoft 계정으로 로그인합니다. 로그인 페이지에서 로그인 방법으로 Microsoft 계정을 선택하세요.
+ms_status_name = Microsoft 로그인 상태
+ms_browser_button = 브라우저로 로그인
+ms_code_button = 코드로 로그인
+ms_copy_code = 코드 복사
+ms_open_page = 로그인 페이지 열기
+ms_stop = 대기 중지
+ms_not_configured = 이 ZBox 사본에는 Microsoft 로그인이 설정되어 있지 않습니다.
+ms_not_signed_in = 아직 로그인하지 않았습니다. 브라우저로, 또는 아무 기기에서나 코드로 로그인하세요.
+ms_signed_in = {address}(으)로 로그인했습니다.
+ms_signed_in_plain = 로그인했습니다.
+ms_needs_sign_in = 이 계정은 Microsoft에 다시 로그인해야 합니다. 브라우저로, 또는 아무 기기에서나 코드로 로그인하세요.
+ms_reason_cancelled = 로그인을 중지했습니다.
+ms_reason_timeout = 제시간에 응답이 오지 않았습니다.
+ms_reason_denied = 액세스가 허용되지 않았습니다.
+ms_reason_expired = 코드가 만료되었습니다. 새 코드를 요청하세요.
+ms_reason_network = Microsoft에 연결할 수 없습니다. 연결을 확인하고 다시 시도하세요.
+ms_reason_server = Microsoft 응답: {detail}
+ms_page_done = 로그인했습니다. 이 페이지를 닫고 ZBox로 돌아가도 됩니다.
+ms_page_failed = 로그인이 완료되지 않았습니다. 자세한 내용은 ZBox로 돌아가 확인하세요.
+ms_browser_waiting = 브라우저에 Microsoft 로그인 페이지가 표시되어 있습니다. 그곳에서 로그인을 마친 다음 ZBox로 돌아오세요.
+ms_code_asking = Microsoft에 로그인 코드를 요청하는 중...
+ms_code_waiting = 아무 기기에서나 {address}을(를) 열고 코드 {code}을(를) 입력하세요. 로그인을 마칠 때까지 ZBox가 여기서 기다립니다.
+ms_failed = 로그인이 완료되지 않았습니다. {reason}
+ms_code_copied = 코드를 복사했습니다.
+offline_inbox_only = 받은편지함과 저장 편지함만 오프라인 사용을 위해 보관됩니다. {folder}을(를) 열려면 온라인으로 전환하세요.
+block_sender_rule_name = {sender} 차단
+title_block_sender = 이 보낸 사람 차단
+title_unblock_sender = 이 보낸 사람 차단 해제
+set_clear_inbox_cache = 받은편지함에서 벗어난 메시지의 캐시 지우기
+set_clear_inbox_cache_note = 켜면 메시지가 받은편지함을 떠나는 즉시 그 오프라인 사본과 저장된 본문이 삭제됩니다. 휴대폰처럼 다른 곳에서 삭제하거나 이동한 경우에도 마찬가지이므로, 더 이상 없는 곳에 나타나지 않습니다. 받은편지함만 이 파일들을 보관하며, 다른 모든 폴더는 항상 서버에서 읽습니다.
+empty_trash_all_confirm = 모든 계정의 휴지통에 있는 메시지를 모두 영구 삭제할까요?\n\n이 작업은 되돌릴 수 없습니다.
+
+[errors]
+language_restart_failed = ZBox가 스스로 다시 시작하지 못했습니다:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address}에 대한 메일 클라이언트를 열 수 없습니다.
+
+wizard_test_failed = 연결 실패:\n\n{error}
+
+contacts_import_unreadable = 그 파일을 읽을 수 없습니다.\n\n{error}
+contacts_export_unwritable = 그 파일에 쓸 수 없습니다.\n\n{error}
+
+attach_unreadable = 첨부 파일 {path}을(를) 읽을 수 없습니다:\n{error}
+send_failed = 메시지를 보낼 수 없습니다.\n\n{error}
+draft_attach_unreadable = 첨부 파일 {path}을(를) 읽을 수 없습니다:\n{error}\n\n임시 저장하지 않았습니다.
+draft_save_failed = 임시 저장할 수 없습니다.\n\n{error}
+
+clipboard_unavailable = 클립보드를 열 수 없습니다.
+open_link_failed = 다음 주소로 브라우저를 열 수 없습니다:\n{url}
+
+master_password_mismatch = 두 새 기본 비밀번호 칸이 일치하지 않습니다.
+master_password_required = 기본 비밀번호를 입력하거나 취소를 누르세요.
+master_password_not_set = 기본 비밀번호를 설정할 수 없습니다: {error}
+master_password_not_here = 여기서는 기본 비밀번호를 바꿀 수 없습니다.
+
+attachment_save_failed = 첨부 파일을 저장할 수 없습니다.\n\n{error}
+attachments_save_failed = 첨부 파일들을 저장할 수 없습니다.\n\n{error}
+print_failed = 메시지를 인쇄할 수 없습니다. 프린터가 설정되어 있는지 확인하세요.
+print_preview_failed = 인쇄 미리 보기를 열 수 없습니다. 프린터가 설정되어 있는지 확인하세요.
+
+related_search_failed = 관련 메시지를 검색할 수 없습니다.\n\n{error}
+search_failed = 검색에 실패했습니다.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox가 설정 폴더를 찾지 못해 여기서 잠금 해제 방법을 관리할 수 없습니다.
+shortcut_no_folder = ZBox가 자신의 폴더를 알아낼 수 없어 여기서 바로 가기를 만들 수 없습니다.
+shortcut_failed_settings = 바탕 화면 바로 가기를 만들 수 없습니다:\n\n{error}
+
+unlock_method_failed = {what}이(가) 작동하지 않았습니다.\n\n{error}
+unlock_check_failed = 기본 비밀번호를 확인할 수 없습니다.\n\n{error}
+unlock_password_wrong = 기본 비밀번호가 올바르지 않습니다.
+unlock_add_failed = {what}을(를) 추가할 수 없습니다.\n\n{error}
+unlock_passkey_setup_failed = 이 컴퓨터에 패스키를 설정할 수 없어 아무것도 바뀌지 않았습니다.\n\n{error}
+unlock_method_test_failed = 그 방법은 작동하지 않았습니다.\n\n{error}
+
+account_list_unreadable = ZBox가 계정 목록을 열 수 없습니다.\n\n{error}\n\n계정을 불러오지 않았고 파일도 바뀌지 않았으므로 잃은 것은 없습니다. 목록을 읽을 수 있을 때까지 계정 추가, 편집, 제거는 거부됩니다.
+account_list_no_accounts = 이번 세션에서 ZBox가 계정 목록을 열 수 없어({error}) 선택할 계정이 없습니다. 잃은 것도, 바뀐 것도 없습니다. ZBox를 닫았다가 다시 시작하고, 요청하면 기본 비밀번호를 입력하세요.
+open_message_failed = 메시지를 열 수 없습니다.\n\n{error}
+filters_list_failed = {folder}의 메시지 목록을 가져올 수 없습니다.\n\n{error}
+filters_move_failed = 필터링한 메시지를 옮길 수 없습니다.\n\n{error}
+cache_clear_failed = 캐시를 지울 수 없습니다.\n\n{error}
+folder_create_failed = 폴더를 만들 수 없습니다.\n\n{error}
+folder_rename_failed = 폴더 이름을 바꿀 수 없습니다.\n\n{error}
+folder_delete_failed = 폴더를 삭제할 수 없습니다.\n\n{error}
+folder_subscribe_failed = 폴더를 구독할 수 없습니다.\n\n{error}
+folder_unsubscribe_failed = 폴더 구독을 해제할 수 없습니다.\n\n{error}
+saved_open_failed = 파일을 열 수 없습니다.\n\n{error}
+saved_parse_failed = 이 파일을 메일 메시지로 해석할 수 없습니다.\n\n{error}
+save_file_failed = 파일을 저장할 수 없습니다.\n\n{error}
+save_fetch_failed = 저장할 메시지를 가져올 수 없습니다.\n\n{error}
+empty_trash_failed = 지운 편지함을 비울 수 없습니다.\n\n{error}
+empty_junk_failed = 스팸 폴더를 비울 수 없습니다.\n\n{error}
+export_write_failed = 내보내기 파일에 쓸 수 없습니다.\n\n{error}
+import_read_failed = 이 파일을 ZBox 내보내기 파일로 읽을 수 없습니다.\n\n{error}
+import_not_export = 이 파일은 ZBox 내보내기 파일이 아닌 것 같습니다.\n\n{error}
+search_open_failed = 이 메시지를 열 수 없습니다.
+related_load_failed = 이 메시지를 불러올 수 없습니다.\n\n{error}
+reply_load_failed = 회신할 메시지를 불러올 수 없습니다.\n\n{error}
+forward_load_failed = 전달할 메시지를 불러올 수 없습니다.\n\n{error}
+action_failed = 이 작업을 완료할 수 없습니다.\n\n{error}
+undo_failed = {label}을(를) 실행 취소할 수 없습니다.\n\n{error}
+copy_failed = 메시지를 복사할 수 없습니다.\n\n{error}
+delete_failed = 메시지를 삭제할 수 없습니다.\n\n{error}
+archive_failed = 메시지를 보관할 수 없습니다.\n\n{error}
+master_password_not_changed = 기본 비밀번호를 바꿀 수 없습니다: {error}
+shortcut_failed_startup = 바탕 화면 바로 가기를 만들 수 없습니다:\n\n{error}\n\nZBox는 계속 시작합니다. 나중에 설정에서 다시 시도할 수 있습니다.
+account_locked_action = ZBox가 다음 작업을 할 수 없습니다: %s. 이번 세션에서 계정 목록을 열 수 없었고(%s), 아무것도 바뀌지 않았습니다. ZBox를 닫았다가 다시 시작하고, 요청하면 기본 비밀번호를 입력하세요.
+send_tls_mismatch = 메시지를 보낼 수 없습니다. 보내는 서버가 암호화 없이 응답했으므로 보내는 암호화가 포트와 맞지 않습니다. 도구, 계정 및 ID 설정에서 포트 587에는 STARTTLS, 포트 465에는 SSL/TLS를 사용한 뒤 다시 보내세요.\n\n{error}
+mark_folder_read_failed = 폴더를 읽음으로 표시할 수 없습니다.\n\n{error}
+update_failed = 업데이트를 다운로드할 수 없어 아무것도 변경되지 않았습니다.\n\n{error}
+update_rolled_back = 업데이트를 시작할 수 없어 이전 버전을 복원했습니다.
+attachment_open_failed = 첨부 파일을 열 수 없습니다.\n\n{error}
+headers_failed = 메시지 머리글을 불러올 수 없습니다.\n\n{error}
+wizard_ms_sign_in_first = 계속하기 전에 Microsoft로 로그인하세요. 이 페이지의 로그인 버튼 두 개 중 하나를 사용하세요.
+wizard_provider_unsupported = ZBox는 이 공급자에 로그인할 수 없습니다. 이 페이지의 메모에 이유가 나와 있습니다. 돌아가서 다른 이메일 주소를 사용하거나 취소하세요.
+acct_ms_sign_in_first = 저장하기 전에 Microsoft로 로그인하거나, 로그인 방법으로 비밀번호를 선택하세요.
+ms_sign_in_again = {account}은(는) Microsoft에 다시 로그인해야 합니다. 계정 및 ID 설정을 열고 그곳에서 로그인하세요.
+empty_trash_all_failed = 다음 계정의 휴지통을 비우지 못했습니다: {accounts}
+
+[help]

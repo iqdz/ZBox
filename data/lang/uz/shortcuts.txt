@@ -1,0 +1,103 @@
+Umumiy
+F6: Fokusni panellar orasida almashtirish
+Ctrl+Tab: Keyingi ichki oyna
+Ctrl+Shift+Tab: Oldingi ichki oyna
+Ctrl+W yoki Ctrl+F4: Joriy ichki oynani yopish
+Escape: Xabarlar ro‘yxatida fokus bo‘lib, yoyilgan yozishma bo‘lsa, uni yig‘adi; aks holda joriy ichki oynani yopadi (xabar, saqlangan xabar yoki jo‘natilmagan yozuv -- saqlanmagan o‘zgarishlar bo‘lsa avval so‘raydi)
+Ilova tugmasi yoki Shift+F10: Fokusdagi ro‘yxat yoki daraxt bandining kontekst menyusini ochish
+F1: Klaviatura tezkor tugmalari, shu sahifa
+Ctrl+Shift+Q: Chiqish -- Sozlamalarda "Bildirishnomalar sohasiga yopish" yoqilgan bo‘lsa ham ZBoxdan har doim haqiqatan chiqadi (bu sozlama yoqilganda oynaning Yopish tugmasi, Alt+F4 va Pochta ichki oynasidagi Ctrl+W chiqish o‘rniga bildirishnomalar sohasiga yashiradi; bildirishnomalar sohasidagi belgining o‘z Chiqish bandi ham har doim haqiqatan chiqadi)
+Ctrl+Shift+Delete: Oflayn xabarlar keshini tozalash -- faqat ZBoxning mahalliy nusxalari, hech qanday serverdagi hech narsa emas (Asboblar > Kesh tozalash sozlamalarida tugma sifatida ham bor)
+
+Pochta
+Ctrl+N: Yangi xabar
+Ctrl+Shift+N: Yangi e-pochta hisobi
+F5: Joriy hisob uchun yangi xabarlarni olish
+Shift+F5: Barcha hisoblar uchun yangi xabarlarni olish
+Ctrl+Shift+J: Kiruvchi xabarlar ro‘yxatiga o‘tish
+Ctrl+Y: Jildlar roʻyxatiga oʻtish
+Jildlar roʻyxatidagi yopiq hisob yoki jildda Enter: oʻng strelka kabi uni ochadi
+Ctrl+Shift+B: Manzillar daftari
+Ctrl+Shift+F: Xabarlarni topish
+Ctrl+Shift+T: Aloqador xabarlarni ko‘rsatish
+
+Xabarlar ro‘yxati
+Delete, Shift+Delete, Arxivlash, Yulduz qo‘yish/olib tashlash, Spam/Spam emas deb belgilash, Ko‘chirish va Nusxa olish YIG‘ILGAN yozishma qatorida ishlatilganda yozishmadagi har bir xabarga qo‘llanadi -- ichidagi bitta xabar bilan ishlash uchun avval yozishmani yoying (O‘ng strelka yoki Enter/Bo‘shliq)
+Ctrl+A: Barcha xabarlarni tanlash
+Ctrl+Shift+L: Ko‘proq xabar yuklash
+Delete: Xabar(lar)ni Chiqitdonga ko‘chirish
+Shift+Delete: Xabar(lar)ni butunlay o‘chirish
+Ctrl+Z: Oxirgi O‘chirish, Arxivlash, Spam deb yoki Spam emas deb belgilashni bekor qilish
+S: Tanlangan xabar(lar)ga yulduz qo‘yish/olib tashlash
+A: Tanlangan xabar(lar)ni arxivlash
+J: Tanlangan xabar(lar)ni spam sifatida belgilash
+Shift+J: Tanlangan xabar(lar)ni spam emas deb belgilash
+W: Yozishmani kuzatish -- tanlov qismi bo‘lgan yozishma kuzatilishini yoqadi yoki o‘chiradi (Xabar menyusi va o‘ng tugma bosishda ham bor)
+K: Yozishmani e’tiborsiz qoldirish -- o‘sha yozishma e’tiborsiz qoldirilishini yoqadi yoki o‘chiradi (Xabar menyusi va o‘ng tugma bosishda ham bor)
+M: Tanlangan xabarlarni koʻchirish -- jildlar roʻyxatli Koʻchirish menyusini ochadi
+Shift+M: Jild nomining bir qismini yozib, tanlangan xabarlarni koʻchirish
+C: Tanlangan xabarlarni nusxalash -- jildlar roʻyxatli Nusxalash menyusini ochadi
+Yuqoridagi S, A, J, W va K standart holatda yoqilgan va Sozlamalarda o‘chirilishi mumkin (aks holda ular xabarlar ro‘yxatining o‘z birinchi-harf navigatsiyasidan ustun turadi)
+Yuqoridagi M, Shift+M va C ham shu sozlamaga boʻysunadi
+Yig‘ilgan yozishmada Enter yoki Bo‘shliq: o‘sha yozishmadagi eng yangi o‘qilmagan xabarni (butun yozishma o‘qilgan bo‘lsa eng yangi xabarni) bitta xabar sifatida, bitta ichki oynada ochadi -- so‘ng Ctrl+Shift+Page Down va Ctrl+Shift+Page Up hech qachon ikkinchi xabar ochmasdan yozishmaning qolgan qismi bo‘ylab yuradi. Oddiy xabarda uni odatdagidek ochadi
+Yig‘ilgan yozishmada O‘ng strelka: uning xabarlarini hech birini ochmasdan ro‘yxat sifatida ko‘rsatadi -- ularni u yerdan har birining o‘z Enter yoki Bo‘shliq tugmasi bilan birma-bir oching
+Ctrl+Shift+O: Xabarni suhbatda ochish -- butun yozishma bitta ichki oynada, uning xabarlari ro‘yxati va ostida tanlangan xabar matni bilan. Birma-bir o‘qish uchun ro‘yxat bo‘ylab strelkalar bilan yuring; qatorda Enter o‘sha xabarni alohida, o‘zining to‘liq ichki oynasida ochadi. Thunderbirdning o‘z buyrug‘i bilan bir xil nom va tugma
+Chap strelka: tanlov hozir ichida turgan yozishmani yig‘ish
+*: Barcha yozishmalarni yoyish (Ko‘rinish > Yozishmalarda ham bor); \: Barcha yozishmalarni yig‘ish (Ko‘rinish > Yozishmalarda ham bor)
+Ko‘rinish > Yozishmalar > Barchasi / Kuzatilayotgan yozishmalar / E’tiborsiz qoldirilgan yozishmalar qaysi yozishmalar ko‘rsatilishini saralaydi -- Barchasiga qaytish har doim har bir xabarni qaytaradi; bu bilan jilddan hech narsa hech qachon olib tashlanmaydi
+
+Ochiq xabar
+Alt+A: Bu xabarni arxivlash -- faqat uning matni (Matn yoki HTML) haqiqatan klaviatura fokusida bo‘lganda; boshqa joyda Alt+A Hisoblar menyusini ochish degan odatiy ma’nosini saqlaydi
+Ctrl+R: Javob berish
+Ctrl+Shift+R: Barchasiga javob berish
+Ctrl+L: Uzatish
+Ctrl+Delete yoki Ctrl+D: Bu xabarni Chiqitdonga ko‘chirish. HTML xabar fokusda bo‘lganda yolg‘iz Delete tugmasini ko‘pincha ekran o‘quvchi oladi; Shift+Delete butunlay o‘chiradi
+Ctrl+Shift+Page Down: Bu yozishmadagi keyingi xabar; Ctrl+Shift+Page Up: oldingisi. Boshqa ichki oyna ochish o‘rniga joriysini almashtiradi, shunda doim faqat bitta xabar ochiq qoladi. Oxirgi xabarda (yuqoriga ketayotganda birinchisida) buni aytadi va so‘raydi; o‘sha tugmani yana bosish xabarni yopadi va yozishmani tugatib, xabarlar ro‘yxatiga qaytadi. (Ctrl+Page Up/Down o‘zgarishsiz qoldirilgan -- ular ichki oynalarni almashtiradi)
+Ctrl+B: Xabar ko‘rinishini almashtirish (Matn/HTML)
+Ctrl+P: Chop qilish
+Ctrl+Shift+P: Chop qilishni ko‘rish
+Ctrl+S: Xabarni boshqacha saqlash
+Ctrl+U: Jo‘natuvchining ismi va manzilini aytish
+Ctrl+Shift+U: Jo‘natuvchini aytish va manzildan nusxa olish
+Ctrl+Shift+I: Bu xabardagi masofadagi kontentni ko‘rsatish
+Ctrl+Shift+=: Xabar shrift hajmini kattalashtirish
+Ctrl+Shift+-: Xabar shrift hajmini kichraytirish
+Ctrl+Shift+0: Xabar shrift hajmini boshlang‘ich holatga qaytarish
+
+Xabar yozish
+Ctrl+Enter yoki Alt+S: Jo‘natish
+Ctrl+S: Qoralamani saqlash
+Ctrl+Shift+A: Fayl biriktirish
+Ctrl+Shift+S: Kimdan maydonidagi hisob imzosini qo‘shish
+Ctrl+Shift+V: Iqtibos sifatida qo‘yish
+Ctrl+Shift+W: So‘zlar soni
+Ctrl+Shift+P: Xabarni jo‘natiladigan ko‘rinishida ko‘rib chiqish
+Escape, Ctrl+W yoki Ctrl+F4: Yozish ichki oynasini yopish -- saqlanmagan biror narsa bo‘lsa avval so‘raydi va Qoralamani saqlash, Tashlab yuborish yoki Tahrirlashda davom etishni taklif qiladi
+Quyidagi har bir buyruq Yozish menyusida ham bor, uni Alt+C fokus xabar matni ichida bo‘lganda ham ochadi
+
+Yozayotganda formatlash
+Ctrl+B: Qalin
+Ctrl+I: Qiya
+Ctrl+Shift+X: Chizib o‘tilgan
+Ctrl+Shift+8: Belgili ro‘yxat
+Ctrl+Shift+7: Raqamli ro‘yxat
+Ctrl+Shift+9: Iqtibos
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Sarlavha
+Ctrl+K: Havola qo‘shish
+Ctrl+Shift+K: Kursor turgan joyda qaysi format amalda ekanini aytish
+Ctrl+Shift+M: Fokus qayerda bo‘lishidan qat’i nazar, xabar matni ham, Format menyusini ochish
+
+Yozayotganda imloni tekshirish
+Ctrl+Shift+F7: Imloni tekshirish
+Ctrl+Shift+F9: Keyingi imlo xatosiga o‘tish
+Ctrl+Shift+F8: Tekshiruv to‘xtagan so‘zni lug‘atga qo‘shish
+
+Ikki joyda bir xil tugma
+Ctrl+S: Yozayotganda Qoralamani saqlash, ochiq xabarda Xabarni boshqacha saqlash
+Ctrl+B: Yozayotganda Qalin, ochiq xabarda Matn va HTML orasida almashtirish
+Ctrl+Shift+P: Yozayotganda Ko‘rib chiqish, ochiq xabarda Chop qilishni ko‘rish
+Alt+A: Arxivlash, lekin faqat xabar matni klaviatura fokusida bo‘lganda; boshqa har qanday joyda Hisoblar menyusini ochadi
+
+Diagnostika
+Ctrl+Shift+F12: Tezkor tugmalar diagnostikasi -- yozish ichki oynasida bosilgan har bir tugma birikmasi uchun tuzatish jurnaliga bitta qator yozadi, shunda tugma haqiqatan qayerga yetib borgani isbotlanishi mumkin. Standart holatda o‘chirilgan, va o‘sha tugma uni yana o‘chiradi; holat har ikkala holatda ham aytiladi

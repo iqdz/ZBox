@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Bahasa Melayu
+code = ms
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Mesej dihantar.
+draft_saved = Draf disimpan.
+signature_inserted = Tandatangan disisipkan.
+signature_none = Akaun ini tiada tandatangan.
+signature_saved = Tandatangan disimpan.
+signature_not_saved = Tandatangan tidak disimpan.
+pasted_as_quotation = Ditampal sebagai petikan.
+clipboard_empty = Tiada apa-apa dalam papan keratan.
+word_count = {words} perkataan, {characters} aksara.
+report_copied = Laporan disalin.
+compose_tab_needed = Arahan itu memerlukan tab karang.
+attach_file_instead = Fail yang dilepaskan tidak dimasukkan ke dalam teks mesej. Gunakan Lampir Fail untuk menghantarnya.
+
+# Formatting in the message body
+formatting_here = Pemformatan di sini: {formatting}.
+no_formatting_here = Tiada pemformatan di sini, teks biasa.
+
+# Spelling
+nothing_to_check = Tiada apa-apa untuk disemak.
+no_misspellings = Tiada salah ejaan.
+spelling_dictionary_unavailable = Kamus ejaan tidak tersedia.
+next_misspelling_first = Gunakan Salah Ejaan Seterusnya dahulu.
+word_added = {word} ditambah ke kamus.
+word_not_added = {word} tidak dapat ditambah.
+corrections_applied_one = 1 pembetulan digunakan.
+corrections_applied_many = {count} pembetulan digunakan.
+corrections_applied_partly = {applied} daripada {total} pembetulan digunakan. Selebihnya ditolak; lihat log.
+occurrences_replaced_one = 1 kejadian diganti.
+occurrences_replaced_many = {count} kejadian diganti.
+
+# Reading mail
+message_did_not_open = Mesej tidak dibuka. Pelayan tidak membalas. Tekan Enter untuk cuba lagi.
+thread_open = {messages} dalam thread ini. Tekan lagi untuk menutup.
+no_thread_selected = Tiada thread dipilih.
+thread_watched = Thread diikuti.
+thread_not_watched = Thread tidak lagi diikuti.
+thread_ignored = Thread diabaikan.
+thread_not_ignored = Thread tidak lagi diabaikan.
+none_found = Tiada ditemui.
+refreshing_this_folder = Menyegarkan folder ini.
+refreshing_all_accounts = Menyegarkan semua akaun.
+message_view_html = Paparan mesej: HTML (dipaparkan).
+message_view_text = Paparan mesej: Teks.
+html_view_still_loading = Mesej masih dimuatkan. Escape akan menutupnya.
+message_still_opening = Membuka mesej. Pelayan perlahan.
+remote_content_blocked = Kandungan jauh disekat.
+remote_content_unblocked = Kandungan jauh dinyahsekat.
+remote_content_already_showing = Kandungan jauh sudah dipaparkan dalam mesej ini.
+archived = Diarkibkan.
+copied_to_folder = Disalin ke {to_folder}.
+deleted_one = Mesej dibuang secara kekal.
+deleted_many = {count} mesej dibuang secara kekal.
+trashed_one = Mesej dipindah ke Sampah.
+trashed_many = {count} mesej dipindah ke Sampah.
+
+# Accounts and new mail
+no_account_yet = Belum ada akaun untuk dituju.
+inbox_landed = Peti masuk {name}.
+account_enabled = {name} didayakan.
+auto_check_paused = Semakan automatik dijeda untuk {account}.
+auto_check_resumed = Semakan automatik dihidupkan untuk {account}.
+account_disabled = {name} dinyahdayakan.
+new_mail_one = 1 mesej baru untuk {name}.
+new_mail_many = {count} mesej baru untuk {name}.
+refresh_all_done_one = 1 akaun disegarkan.
+refresh_all_done_many = {count} akaun disegarkan.
+refresh_all_done_failures = {count} akaun disegarkan, {failed} tidak dapat disegarkan.
+refresh_all_done_failures_one = {count} akaun disegarkan, {failed} tidak dapat disegarkan.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Alamat disalin.
+sender_no_address = {sender}. Tiada alamat untuk disalin.
+clipboard_not_opened = {sender}. Papan keratan tidak dapat dibuka.
+
+# The signature editor
+signature_page_formatted = Berformat. Inilah yang akan disimpan.
+signature_page_html = Sumber HTML. Inilah yang akan disimpan.
+signature_page_html_still_wins = Berformat. Sumber HTML masih yang akan disimpan.
+
+# Background work
+phishing_list_updating = Senarai pancingan data sedang dikemas kini di latar belakang.
+cache_cleared = {files} fail cache dikosongkan, {size} MB.
+hotkeys_diagnostic_on = Diagnostik kekunci pintas hidup, ditanda
+hotkeys_diagnostic_off = Diagnostik kekunci pintas mati, tidak ditanda
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arkib
+action_delete = Buang
+action_delete_permanently = Buang Secara Kekal
+action_mark_as_junk = Tandakan Sebagai Mel Remeh
+action_mark_as_not_junk = Tandakan Sebagai Bukan Mel Remeh
+action_move_to = Pindah Ke
+action_copy_to = Salin Ke
+action_mark_message = Tandakan Mesej
+action_undo = Batal
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} dibatalkan.
+undo_done_many = {action} dibatalkan untuk {count} mesej.
+junk_marked_one = Ditandakan sebagai mel remeh.
+junk_marked_many = {count} mesej ditandakan sebagai mel remeh.
+junk_no_new_sender = Tiada pengirim baru disekat: sudah disekat, senarai mel, atau salah satu alamat anda sendiri.
+not_junk_marked_one = Ditandakan sebagai bukan mel remeh.
+not_junk_marked_many = {count} mesej ditandakan sebagai bukan mel remeh.
+moved_to_one = Dipindah ke {to_folder}.
+moved_to_many = {count} mesej dipindah ke {to_folder}.
+copied_to_many = {count} mesej disalin ke {to_folder}.
+marked_read = Ditandakan sebagai sudah dibaca.
+marked_unread = Ditandakan sebagai belum dibaca.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Dibatalkan selepas {completed} daripada {total}. {succeeded} berjaya, {failed} gagal.
+bulk_failed_one = {done} {failed} daripada 1 mesej gagal.
+bulk_failed_many = {done} {failed} daripada {total} mesej gagal.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Tebal
+format_word_italic = Italik
+format_word_strike = Garis lorek
+format_word_href = Pautan
+format_word_bullet = Senarai berbulet
+format_word_number = Senarai bernombor
+format_word_quote = Petikan
+format_word_code = Kod
+format_word_heading1 = Tajuk
+format_applied = {formatting} digunakan.
+format_inserted = {formatting} disisipkan.
+format_not_available = {formatting} tidak tersedia dalam teks mesej biasa.
+format_on = {formatting} hidup
+format_off = {formatting} mati
+link_applied = Pautan digunakan.
+link_applied_to_selection = Pautan digunakan pada pilihan.
+plain_body_formatting = Teks mesej biasa menunjukkan pemformatannya sebagai tag.
+
+# Reaching either end of a thread
+thread_edge_first = Mesej pertama dalam thread ini. Tekan lagi untuk menutup.
+thread_edge_last = Mesej terakhir dalam thread ini. Tekan lagi untuk menutup.
+jump_unified_inbox = Peti masuk gabungan.
+remote_none = Tiada kandungan jauh dalam mesej ini.
+sender_none = Tiada pengirim pada mesej ini.
+sender_name_no_address = %s, tiada alamat
+signature_not_switched = Tandatangan tidak ditukar. Tekan Ctrl+Shift+S untuk menyisipkan tandatangan akaun ini.
+signature_removed_no_signature = Tandatangan dibuang. Akaun ini tiada tandatangan.
+signature_switched = Tandatangan ditukar kepada tandatangan akaun ini.
+spell_not_replaced = Perkataan tidak dapat diganti.
+spell_replaced_with = Diganti dengan {word}.
+folder_marked_read = {count} mesej ditandakan sebagai sudah dibaca.
+folder_no_unread = Tiada mesej belum dibaca.
+threads_all_collapsed = Semua thread diruntuhkan.
+threads_all_expanded = Semua thread dikembangkan.
+upd_percent = {percent} peratus
+upd_download_done = Muat turun selesai. Menyediakan kemas kini...
+upd_updated_to = ZBox dikemas kini kepada {version}.
+header_copied = Disalin.
+headers_copied = Semua pengepala disalin.
+identity_copies_updated = Cc dan Bcc dikemas kini untuk identiti ini.
+signature_switched_identity = Tandatangan ditukar kepada tandatangan identiti ini.
+signature_removed_identity = Tandatangan dibuang. Identiti ini tiada tandatangan.
+signature_not_switched_identity = Tandatangan tidak ditukar. Tekan Ctrl+Shift+S untuk memasukkan tandatangan identiti ini.
+signature_none_identity = Identiti ini tiada tandatangan.
+move_keys_no_selection = Pilih mesej dahulu.
+move_keys_no_folders = Belum ada folder untuk dipilih. Cuba lagi sebentar lagi.
+block_sender_done_one = {sender} disekat. Mesej baharunya akan pergi ke Sampah.
+block_sender_done_many = {count} penghantar disekat. Mesej baharu mereka akan pergi ke Sampah.
+block_sender_already = {sender} sudah disekat.
+block_sender_own = Tidak disekat: itu salah satu alamat anda sendiri.
+block_sender_list_unknown = Tidak disekat: mesej ini datang melalui senarai mel dan tidak menyatakan siapa penghantarnya. Menyekat alamat senarai akan menyekat semua ahlinya.
+block_sender_moved = Penghantar disekat. {count} mesej dialihkan ke Sampah.
+block_senders_moved = {senders} penghantar disekat. {count} mesej dialihkan ke Sampah.
+unblock_sender_moved = Penghantar dinyahsekat. {count} mesej dialihkan ke Peti Masuk.
+unblock_senders_moved = {senders} penghantar dinyahsekat. {count} mesej dialihkan ke Peti Masuk.
+unblock_sender_done = {sender} dinyahsekat.
+unblock_sender_not_blocked = {sender} tidak disekat.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Taip sesuatu di atas dan tekan Enter atau pilih Cari.
+search_no_account = Tambah akaun dahulu.
+search_no_term = Taip sesuatu untuk dicari.
+search_running = Mencari...
+search_none = Tiada padanan untuk "{term}".
+search_found_one = 1 padanan untuk "{term}".
+search_found_many = {count} padanan untuk "{term}".
+search_failed = Carian gagal.
+
+# The related messages tab
+related_running = Mencari...
+related_none = Tiada mesej berkaitan ditemui.
+related_found_one = 1 mesej berkaitan ditemui.
+related_found_many = {count} mesej berkaitan ditemui.
+related_failed = Tidak dapat mencari mesej berkaitan.
+
+# Writing and sending
+sending_via = Menghantar melalui {sender}...
+send_failed = Penghantaran gagal. Lihat log untuk butiran.
+draft_autosaved = Draf disimpan secara automatik.
+draft_autosave_failed = Simpan automatik draf gagal. Lihat log untuk butiran.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Kandungan jauh kini akan dimuatkan untuk mesej daripada {sender}.
+downloading_attachment = Memuat turun {filename}...
+downloading_attachments_one = Memuat turun 1 lampiran...
+downloading_attachments_many = Memuat turun {count} lampiran...
+saved_to = Disimpan ke {folder}
+attachment_download_failed = Muat turun lampiran gagal.
+
+# Getting mail onto the screen
+loading_folder = Memuatkan {folder} untuk {account}...
+messages_in_folder = {count} mesej dalam {folder}.
+messages_in_folder_cached = {count} mesej dalam {folder} (salinan terakhir disegerakkan, sedang dikemas kini...)
+no_offline_copy = Belum ada salinan luar talian bagi {folder}.
+refresh_failed_cached = Tidak dapat menyegarkan {folder}: memaparkan salinan terakhir disegerakkan.
+no_such_folder = Tiada folder {folder} untuk akaun ini.
+load_failed = Gagal memuatkan mesej. Lihat log untuk butiran.
+no_more_to_load = Tiada lagi mesej untuk dimuatkan dalam folder ini.
+loading_more = Memuatkan lebih banyak mesej dalam {folder}...
+more_loaded = {count} lagi mesej dimuatkan.
+no_more_messages = Tiada lagi mesej dalam folder ini.
+load_more_failed = Tidak dapat memuatkan lebih banyak mesej: {error}
+loading_unified = Memuatkan {folder} gabungan...
+messages_in_unified = {count} mesej merentas akaun dalam {folder} gabungan.
+messages_in_unified_cached = {count} mesej dalam {folder} gabungan (salinan terakhir disegerakkan, sedang dikemas kini...)
+auto_purge_done = Pembersihan automatik membuang {count} mesej lama daripada Sampah/Mel Remeh.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Sedia.
+opening_message = Membuka mesej...
+opening_message_already = Membuka mesej... (sudah dimuatkan)
+could_not_open_message = Tidak dapat membuka mesej.
+could_not_open_that_message = Tidak dapat membuka mesej itu.
+could_not_load_message = Tidak dapat memuatkan mesej ini.
+message_still_loading = Mesej itu masih dimuatkan.
+folder_still_loading = Folder ini masih dimuatkan -- cuba lagi sebentar lagi.
+not_in_thread = Mesej ini bukan sebahagian daripada thread.
+no_longer_in_thread = Mesej ini tidak lagi dalam thread.
+thread_position = Mesej {position} daripada {total} dalam thread ini.
+thread_finished_one = Thread ini selesai (1 mesej).
+thread_finished_many = Thread ini selesai ({count} mesej).
+select_message_first = Pilih mesej dahulu.
+conversation_failed = Tidak dapat membuka perbualan ini.
+select_message_for_related = Pilih mesej untuk melihat mesej berkaitannya dahulu.
+looking_for_related = Mencari mesej berkaitan...
+no_threading_headers = Mesej ini tiada Message-ID atau pengepala thread untuk dicari.
+reply_one_at_a_time = Balas berfungsi pada satu mesej pada satu masa. Sila pilih satu mesej.
+select_message_to_reply = Pilih mesej untuk dibalas dahulu.
+preparing_reply = Menyediakan balasan...
+reply_load_failed = Tidak dapat memuatkan mesej asal untuk dibalas.
+select_message_to_forward = Pilih mesej untuk dikirim semula dahulu.
+preparing_forward = Menyediakan mesej untuk dikirim semula...
+forward_load_failed = Tidak dapat memuatkan mesej untuk dikirim semula.
+compose_tab_needed_hint = Arahan itu memerlukan tab karang. Tekan Ctrl+N untuk menulis mesej.
+open_message_first_view = Buka mesej dahulu, kemudian tekan Ctrl+B untuk menukar paparannya.
+open_message_first_remote = Buka mesej dahulu, kemudian tekan Ctrl+Shift+I untuk memuatkan kandungan jauhnya.
+
+# Acting on messages
+copying_message = Menyalin mesej...
+copy_failed = Salinan gagal.
+delete_failed = Buang gagal.
+already_in_archive = Sudah dalam Arkib.
+archiving = Mengarkibkan...
+archive_failed = Pengarkiban gagal.
+action_failed = {action} gagal.
+nothing_to_undo = Tiada apa-apa untuk dibatalkan.
+undo_failed = Tidak dapat membatalkan {action}.
+
+# Views and folders
+folder_pane_all = Anak tetingkap folder: Semua Folder.
+folder_pane_unified = Anak tetingkap folder: Folder Gabungan.
+sorted_ascending = Disusun mengikut {field}, menaik.
+sorted_descending = Disusun mengikut {field}, menurun.
+unified_folders_updated = Folder gabungan dikemas kini.
+zoom_reset = Saiz fon mesej ditetapkan semula kepada lalai.
+folder_creating = Mencipta folder "{folder}"...
+folder_created = Folder "{folder}" dicipta.
+folder_create_failed = Tidak dapat mencipta folder.
+folder_renaming = Menamakan semula "{folder}" kepada "{new_name}"...
+folder_renamed = Folder dinamakan semula kepada "{new_name}".
+folder_rename_failed = Tidak dapat menamakan semula folder.
+folder_deleting = Membuang folder "{folder}"...
+folder_deleted = Folder dibuang.
+folder_delete_failed = Tidak dapat membuang folder.
+folder_subscribing = Melanggan "{folder}"...
+folder_unsubscribing = Membatalkan langganan "{folder}"...
+folder_subscribed = Dilanggan.
+folder_unsubscribed = Langganan dibatalkan.
+folder_subscribe_failed = Tidak dapat melanggan folder.
+folder_unsubscribe_failed = Tidak dapat membatalkan langganan folder.
+
+# Accounts
+account_not_added = Akaun tidak ditambah.
+account_added = Akaun ditambah: {account}
+account_settings_not_saved = Tetapan akaun tidak disimpan.
+account_updated = Akaun dikemas kini: {account}
+account_not_removed = Akaun tidak dibuang.
+account_removed = Akaun dibuang.
+account_removed_with_files = Akaun dibuang. {count} fail setempat dibuang.
+default_account_failed = Tidak dapat menetapkan akaun lalai.
+default_account_set = {account} kini akaun lalai.
+auto_check_not_saved = Tetapan semakan automatik tidak disimpan.
+mute_not_saved = Tetapan senyap tidak disimpan.
+account_muted = {account} disenyapkan.
+account_unmuted = {account} dinyahsenyapkan.
+export_done = {count} akaun dan tetapan dieksport ke {path}.
+import_done = {count} akaun diimport daripada {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Penapis tidak disimpan.
+filters_saved = Penapis disimpan untuk {account}.
+filters_checking = Menyemak {folder} dengan penapis anda...
+filters_none_matched = Jalankan Sekarang: tiada mesej dalam {folder} sepadan dengan mana-mana peraturan yang didayakan.
+filters_run_failed = Tidak dapat menjalankan penapis.
+filters_moving = Memindahkan {count} mesej yang ditapis...
+filters_move_failures = Penapis: {count} mesej tidak dapat dipindahkan.
+filters_moved = Penapis memindahkan {count} mesej daripada {folder}.
+filters_move_failed = Tidak dapat memindahkan mesej yang ditapis.
+cache_not_cleared = Cache tidak dikosongkan.
+auto_cache_cleanup = Pembersihan cache automatik: mesej lebih lama daripada {age}.
+phishing_update_failed = Tidak dapat mengemas kini senarai pancingan data: {error}
+blocklist_update_failed = Tidak dapat mengemas kini senarai sekatan: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Buka mesej dahulu, kemudian gunakan Simpan Sebagai.
+saving_message = Menyimpan mesej...
+save_file_failed = Tidak dapat menyimpan fail.
+save_fetch_failed = Tidak dapat mengambil mesej untuk disimpan.
+open_message_first_print = Buka mesej dahulu, kemudian gunakan Cetak.
+open_message_first_preview = Buka mesej dahulu, kemudian gunakan Previu Cetakan.
+refreshing_accounts = Menyegarkan {count} akaun...
+emptying_trash = Membuang Sampah untuk {account}...
+trash_already_empty = Sampah sudah kosong.
+trash_emptied = Sampah dibuang: {count} mesej dihapuskan.
+empty_trash_failed = Tidak dapat membuang Sampah.
+emptying_junk = Membuang Mel Remeh untuk {account}...
+junk_already_empty = Mel Remeh sudah kosong.
+junk_emptied = Mel Remeh dibuang: {count} mesej dihapuskan.
+junk_emptied_prefix = Mel Remeh dibuang:
+junk_part_purged = {count} dihapuskan
+junk_part_in_trash = {count} dipindah ke Sampah tetapi tidak disahkan dibuang, semak Sampah
+junk_part_not_moved = {count} tidak dipindah ke Sampah, masih dalam Mel Remeh
+empty_junk_failed = Tidak dapat membuang Mel Remeh.
+back_online = Kembali dalam talian.
+offline_sync_running = Menyegerakkan {account} untuk penggunaan luar talian...
+offline_sync_failed = Penyegerakan luar talian gagal: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Pilih atau buka mesej dahulu.
+select_or_open_message_ctrl_u = Pilih atau buka mesej dahulu, kemudian tekan Ctrl+U.
+no_sender_address = Mesej ini tiada alamat pengirim untuk ditambah.
+contact_added = {contact} ditambah ke buku alamat anda.
+contact_already_there = {contact} sudah ada dalam buku alamat anda.
+privacy_saved = Tetapan privasi disimpan. Buka mesej semula untuk menggunakannya.
+message_font_size = Saiz fon mesej: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Membuang mesej secara kekal
+deleting_many = Membuang {count} mesej secara kekal
+trashing_one = Memindahkan mesej ke Sampah
+trashing_many = Memindahkan {count} mesej ke Sampah
+undo_partly_restored = {action} dibatalkan, tetapi {count} tidak dapat dipulihkan -- mungkin telah dipindah, dibuang atau tamat tempoh lagi sejak itu.
+moves_report = {action}: {moved} daripada {total} mesej dipindahkan.
+moves_report_failed = Tidak dipindahkan, masih dalam folder asal: {count}.
+
+tray_tooltip_one = ZBox — 1 mesej belum dibaca
+tray_tooltip_many = ZBox — {count} mesej belum dibaca
+account_unreachable = {account} tidak dapat dicapai. Semakan automatik untuknya dijeda selama {minutes} minit.
+bulk_copy_failed = Tidak dapat menyalin mesej.
+bulk_copy_failed_status = Salinan gagal.
+bulk_loading_archive = Mesej masih dimuatkan -- cuba arkibkan lagi sebentar lagi.
+bulk_loading_delete = Mesej masih dimuatkan -- cuba buang lagi sebentar lagi.
+bulk_loading_flag = Mesej masih dimuatkan -- cuba bintangkan lagi sebentar lagi.
+bulk_loading_generic = Mesej masih dimuatkan -- cuba lagi sebentar lagi.
+bulk_none = Tiada mesej dipilih.
+bulk_none_archive = Tiada mesej dipilih untuk diarkibkan.
+bulk_none_delete = Tiada mesej dipilih untuk dibuang.
+bulk_none_junk = Tiada mesej dipilih untuk ditandakan sebagai mel remeh.
+bulk_none_not_junk = Tiada mesej dipilih untuk ditandakan sebagai bukan mel remeh.
+delete_refused_still = Pelayan enggan membuangnya; ia masih dalam {folder}.
+delete_refused_trash = Ia dalam Sampah, tetapi pelayan enggan membuangnya secara kekal.
+delete_resume_failed = {count} mesej daripada pembuangan terdahulu tidak dapat dibuang.
+done_perm_delete_one = Mesej dibuang secara kekal.
+done_trash_one = Mesej dipindah ke Sampah.
+filters_applied = Penapis digunakan pada {count} mesej dalam {folder}.
+filters_failed = Tidak dapat menjalankan penapis.
+filters_running = Menjalankan penapis pada {folder}
+flag_failed = Tidak dapat mengemas kini bintang.
+flag_updated = Bintang dikemas kini.
+folder_verb_subscribing = Melanggan
+folder_verb_unsubscribing = Membatalkan langganan
+mark_read_failed = Tidak dapat menandakan mesej sebagai sudah dibaca.
+mark_unread_failed = Tidak dapat menandakan mesej sebagai belum dibaca.
+notify_new_mail_body = {count} {noun} baru untuk {name}.
+notify_new_mail_title = Mel Baru
+notify_noun_many = mesej
+notify_noun_one = mesej
+report_done = {verb} {done} daripada {count} mesej.
+report_verb_deleted = Dibuang
+report_verb_permanent = Dibuang secara kekal
+running_copy_many = Menyalin {count} mesej
+running_copy_one = Menyalin mesej
+running_junk_many = Menandakan {count} mesej sebagai mel remeh
+running_junk_one = Menandakan sebagai mel remeh
+running_move_many = Memindahkan {count} mesej
+running_move_one = Memindahkan
+running_not_junk_many = Menandakan {count} mesej sebagai bukan mel remeh
+running_not_junk_one = Menandakan sebagai bukan mel remeh
+running_perm_delete_one = Membuang mesej secara kekal...
+running_read_many = Menandakan {count} mesej sebagai sudah dibaca
+running_read_one = Menandakan sebagai sudah dibaca
+running_trash_one = Memindahkan mesej ke Sampah...
+running_unread_many = Menandakan {count} mesej sebagai belum dibaca
+running_unread_one = Menandakan sebagai belum dibaca
+settings_saved_no_startup = Tetapan disimpan. Tidak dapat mengemas kini entri permulaan Windows.
+settings_saved_status = Tetapan disimpan.
+spam_blocked_sender = Pengirim Disekat
+spam_possible_phishing = Kemungkinan Pancingan Data
+undo_running_many = Membatalkan {action} ({count} mesej)
+undo_running_one = Membatalkan {action}
+mark_folder_read_failed = Tidak dapat menandakan folder sebagai sudah dibaca.
+marking_folder_read = Menandakan folder sebagai sudah dibaca...
+upd_ready_at_exit = Kemas kini sudah dimuat turun. Ia akan dipasang apabila anda keluar dari ZBox.
+upd_checking = Menyemak kemas kini...
+upd_up_to_date = ZBox adalah terkini.
+upd_available_source = ZBox {version} tersedia. Salinan ini berjalan daripada kod sumber, jadi kemas kininya dengan git.
+upd_check_failed = Tidak dapat menyemak kemas kini: {error}
+opening_attachment = Membuka {filename}...
+loading_headers = Memuatkan pengepala...
+offline_inbox_only = Hanya Peti Masuk dan Arkib disimpan untuk kegunaan luar talian.
+offline_sync_done_inbox = {count} mesej dalam Peti Masuk dan Arkib disegerakkan untuk kegunaan luar talian.
+working_offline = Kerja luar talian: memaparkan salinan terakhir disegerakkan bagi Peti masuk/Dihantar/Draf.
+emptying_trash_all = Mengosongkan Sampah bagi semua akaun...
+trash_emptied_all = Sampah dikosongkan dalam {accounts} akaun: {count} mesej dipadam secara kekal.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fail
+bar_edit = &Edit
+bar_view = &Papar
+bar_message = &Mesej
+bar_compose = &Karang
+bar_tools = &Alatan
+bar_help = &Bantuan
+
+# File
+file_new = Baru
+file_new_message = Mesej
+file_new_account = Akaun E-mel...
+file_open_saved_message = Buka Mesej Tersimpan...
+file_close = Tutup
+file_save_message_as = Simpan Mesej Sebagai...
+file_get_new_for = Dapatkan Mesej Baru untuk
+file_get_new_all = Semua Akaun
+file_get_new_current = Akaun Semasa
+file_offline = Luar talian
+file_work_offline = Kerja Luar Talian
+file_sync_now = Segerakkan Sekarang
+file_print = Cetak...
+file_print_preview = Previu Cetakan...
+file_exit = Keluar
+
+# Edit
+edit_undo = Batal
+edit_select_all = Pilih Semua
+edit_find_messages = Cari Mesej...
+
+# Message
+message_reply = Balas
+message_reply_all = Balas Semua
+message_forward = Kirim semula
+message_archive = Arkib
+message_delete = Buang
+message_delete_permanently = Buang Secara Kekal
+message_mark = Tandakan
+mark_read = Sebagai sudah Dibaca
+mark_unread = Sebagai Belum Dibaca
+mark_flagged = Berbintang
+mark_junk = Sebagai Mel Remeh
+mark_not_junk = Sebagai Bukan Mel Remeh
+message_watch_thread = Ikuti Thread
+message_ignore_thread = Abaikan Thread
+message_open_conversation = Buka Mesej dalam Perbualan
+message_show_related = Papar Mesej Berkaitan
+message_add_sender_to_address_book = Tambah Pengirim ke Buku Alamat
+message_announce_sender = Umumkan Pengirim
+message_announce_copy_sender = Umumkan Pengirim dan Salin Alamat
+
+# View
+view_folders = Folder
+folders_all = Semua
+folders_unified = Gabungan
+folders_jump_inbox = Lompat ke Senarai Mesej Peti masuk
+folders_configure_unified = Konfigurasi Folder Gabungan...
+view_sort_by = Susun mengikut
+sort_date = Tarikh
+sort_subject = Subjek
+sort_from = Daripada
+sort_descending = Menurun (terbaru dahulu)
+sort_ascending = Menaik (terlama dahulu)
+view_threads = Thread
+threads_all = Semua
+threads_watched = Thread Diikuti
+threads_ignored = Thread Diabaikan
+threads_expand_all = Kembangkan Semua Thread
+threads_collapse_all = Runtuh Semua Thread
+view_load_more = Muatkan Lebih Banyak Mesej
+view_toggle_message_view = Tukar Antara Paparan Teks dan HTML
+view_show_remote_content = Papar Kandungan Jauh dalam Mesej Ini
+view_message_zoom = Zum Mesej
+zoom_increase = Besarkan Fon Mesej
+zoom_decrease = Kecilkan Fon Mesej
+zoom_reset = Tetapkan Semula Saiz Fon Mesej
+
+# Compose
+compose_send = &Hantar
+compose_save_draft = &Simpan Draf
+compose_attach = &Lampir Fail...
+compose_fmt_bold = &Tebal
+compose_fmt_italic = &Italik
+compose_fmt_strike = &Garis lorek
+compose_fmt_bullet = &Senarai Berbulet
+compose_fmt_number = &Senarai Bernombor
+compose_fmt_quote = &Petikan
+compose_fmt_code = &Kod
+compose_fmt_heading1 = &Tajuk
+compose_link = &Sisip Pautan...
+compose_formatting = &Pemformatan di Sini
+compose_spellcheck = &Semak Ejaan...
+compose_spellcheck_next = &Salah Ejaan Seterusnya
+compose_spellcheck_add = &Tambah Perkataan ke Kamus
+compose_insert_signature = &Sisip Tandatangan
+compose_paste_quotation = &Tampal Sebagai Petikan
+compose_word_count = &Kiraan Perkataan
+compose_preview = &Previu...
+compose_diagnostics = &Diagnostik Pengarang...
+compose_edit_signature = &Edit Tandatangan...
+compose_hotkeys_diagnostic = &Diagnostik Kekunci Pintas
+
+# Tools
+tools_account_settings = Tetapan Akaun dan Identiti...
+tools_mute_account = Senyapkan Akaun
+tools_pause_auto_check = Jeda Semakan Automatik
+tools_disable_account = Nyahdayakan Akaun
+tools_remove_account = Buang Akaun...
+tools_address_book = Buku Alamat...
+tools_message_filters = Tapis Mesej...
+tools_import = Import Akaun dan Tetapan...
+tools_export = Eksport Akaun dan Tetapan...
+tools_cache_cleanup = Konfigurasi Pembersihan Cache...
+tools_privacy = Privasi dan Sekatan Kandungan...
+tools_settings = Tetapan...
+
+# Help
+help_shortcuts = Pintasan Papan Kekunci...
+help_about = Perihal ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Akaun Baru...
+tree_account_settings = Tetapan Akaun dan Identiti...
+tree_mute_account = Senyapkan Akaun
+tree_pause_auto_check = Jeda Semakan Automatik
+tree_enable_account = Dayakan Akaun
+tree_disable_account = Nyahdayakan Akaun
+tree_set_default_account = Tetapkan Sebagai Akaun Lalai
+tree_remove_account = Buang Akaun...
+tree_refresh = Segarkan
+tree_new_folder = Folder Baru...
+tree_empty_trash = Buang Sampah
+tree_empty_junk = Buang Mel Remeh
+tree_rename_folder = Namakan semula Folder...
+tree_delete_folder = Buang Folder...
+tree_subscribe_folder = Langgan Folder
+tree_unsubscribe_folder = Batal langganan Folder
+
+# The message list menu, opened the same two ways
+list_select_all = Pilih Semua
+list_reply = Balas
+list_reply_all = Balas Semua
+list_forward = Kirim semula
+list_mark = Tandakan
+list_archive = Arkib
+list_delete_to_trash = Buang (Pindah ke Sampah)
+list_delete_permanently = Buang Secara Kekal
+list_move_to = Pindah Ke
+list_copy_to = Salin Ke
+
+# The notification area icon
+tray_open = &Buka ZBox
+tray_unread_one = 1 mesej belum dibaca
+tray_unread_many = {count} mesej belum dibaca
+tray_no_unread = Tiada mesej belum dibaca
+tray_settings = &Tetapan...
+tray_quit = &Keluar ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Tebal
+format_italic = &Italik
+format_strike = &Garis lorek
+format_bullet = &Senarai berbulet
+format_number = &Senarai bernombor
+format_quote = &Petikan
+format_code = &Kod
+format_heading1 = &Tajuk
+format_insert_link = &Sisip pautan...
+format_formatting_here = &Pemformatan di sini
+tools_enable_account = Dayakan Akaun
+edit_undo_action = Batal {action}
+tree_mark_folder_read = Tandakan Folder sebagai sudah Dibaca
+help_updates = Kemas Kini
+help_check_updates = Semak Kemas Kini Sekarang...
+help_update_settings = Tetapan Kemas Kini...
+help_releases_page = Buka Halaman Keluaran
+message_attachments = Lampiran
+message_no_attachments = Tiada lampiran
+message_save_all_attachments = Simpan Semua Lampiran
+view_full_headers = Semua Pengepala
+folders_go_to_tree = Pergi ke Senarai Folder
+list_block_sender = Sekat Penghantar Ini
+list_unblock_sender = Nyahsekat Penghantar Ini
+
+[dialogs]
+set_theme_restart_confirm = Mulakan semula ZBox untuk menggunakan perubahan tema?
+set_ui_theme_label = &Tema antara muka:
+set_ui_theme_note = Warna untuk menu, senarai, dialog dan paparan mesej Teks. Ikut sistem menggunakan mod aplikasi terang atau gelap Windows sendiri. Biru tengah malam, Gelap hangat dan Kontras lembut ialah tema gelap dengan warna yang lebih lembut. Mesej HTML mengekalkan warna sendiri, dan Kontras Tinggi Windows sentiasa diutamakan. Berkuat kuasa apabila ZBox dimulakan seterusnya.
+set_theme_system = Ikut sistem
+set_theme_light = Terang
+set_theme_dark = Gelap
+set_theme_midnight = Biru tengah malam
+set_theme_warm = Gelap hangat
+set_theme_soft = Kontras lembut
+set_language_restart_confirm = Mulakan semula ZBox untuk menggunakan perubahan bahasa?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Hubungi Harith
+title_identity = Identiti
+title_show_password = Papar Kata Laluan
+title_missing_information = Maklumat tidak lengkap
+title_unsupported_provider = Pembekal tidak disokong
+title_test_connection = Uji Sambungan
+title_new_contact = Kenalan Baru
+title_edit_contact = Edit Kenalan
+title_delete_contact = Buang Kenalan
+title_import_contacts = Import Kenalan
+title_export_contacts = Eksport Kenalan
+title_rename_group = Namakan semula Kumpulan
+title_delete_group = Buang Kumpulan
+title_send = Hantar
+title_send_failed = Penghantaran Gagal
+title_attach_file = Lampir Fail
+title_save_draft = Simpan Draf
+title_documentation = Dokumentasi ZBox
+title_open_link = Buka Pautan
+title_filter_rule = Peraturan Tapisan
+title_master_password = Kata Laluan Utama
+title_attachment_saved = Lampiran Disimpan
+title_attachments_saved = Lampiran Disimpan
+title_download_failed = Muat Turun Gagal
+title_print = Cetak
+title_print_preview = Previu Cetakan
+title_related_messages = Mesej Berkaitan
+title_search = Cari
+title_unlock = Buka Kunci
+title_unlock_methods = Kaedah Buka Kunci
+title_desktop_shortcut = Pintasan Desktop
+title_spell_check = Semak Ejaan
+title_plain_text_password = Kata Laluan Teks Biasa Ditemui
+title_startup_error = Ralat Permulaan ZBox
+
+identity_email_required = Masukkan alamat e-mel.
+
+wizard_password_not_shown = Kata laluan tidak dapat dipaparkan pada sistem ini. Ia masih ditaip dan disimpan seperti biasa.
+wizard_email_required = Masukkan alamat e-mel yang sah sebelum meneruskan.
+wizard_test_needs_server = Masukkan e-mel log masuk dan pelayan masuk sebelum menguji.
+wizard_test_succeeded = Sambungan berjaya. {count} mesej ditemui dalam Peti masuk.
+
+contact_email_required = Alamat e-mel diperlukan.
+contact_select_to_edit = Pilih kenalan untuk diedit.
+contact_select_to_delete = Pilih kenalan untuk dibuang.
+contact_delete_confirm = Buang {label} daripada buku alamat?
+contacts_import_choose_file = Pilih fail .vcf (vCard) atau .csv untuk diimport.
+contacts_imported = {count} kenalan diimport.
+contacts_import_empty = Tiada kenalan ditemui dalam fail itu.
+contacts_none_to_export = Tiada kenalan untuk dieksport.
+contacts_exported = {count} kenalan dieksport ke:\n{path}
+group_name_exists = Kumpulan bernama "{name}" sudah wujud.
+group_delete_confirm = Buang kumpulan "{name}"? Kenalannya tidak dibuang.
+
+send_no_account = Tambah akaun sebelum menghantar, atau pilih satu dalam Daripada.
+send_no_recipient = Masukkan sekurang-kurangnya seorang penerima dalam Kepada.
+draft_no_account = Tambah akaun sebelum menyimpan draf, atau pilih satu dalam Daripada.
+attached_file = Dilampirkan: {name}\n\n{count} fail akan dilampirkan apabila anda menghantar.
+
+documentation_copied = Dokumentasi penuh ZBox telah disalin ke papan keratan.
+
+filter_rule_needs_name = Berikan nama kepada peraturan ini.
+filter_rule_needs_condition = Tetapkan sekurang-kurangnya satu syarat (Daripada, Kepada atau Subjek).
+filter_rule_needs_action = Pilih sekurang-kurangnya satu tindakan: tandakan sebagai sudah dibaca, bintangkan, atau pindah ke folder.
+
+master_password_set = Kata laluan utama ditetapkan. Simpan di tempat yang selamat: ZBox memintanya sekali pada setiap komputer baru, dan ia tidak dapat dipulihkan jika hilang.
+master_password_offer = Tanpa kata laluan utama, kata laluan akaun yang disimpan hanya boleh dibaca pada komputer ini dan akaun Windows ini. Salin ZBox ke tempat lain dan setiap akaun perlu log masuk semula.\n\nTetapkan satu sekarang?
+
+attachment_saved = Lampiran disimpan ke:\n{path}
+attachments_saved = {count} lampiran disimpan ke:\n{path}
+
+shortcut_created_settings = Pintasan dicipta:\n{path}\n\nIa memulakan ZBox dari:\n{base}
+
+spellcheck_no_dictionary = Kamus ejaan tiada, jadi semakan ejaan tidak tersedia dalam salinan ZBox ini.
+spellcheck_none_found = Tiada salah ejaan ditemui.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Sediakan kunci laluan pada komputer ini dan lupakan yang disimpan daripada komputer lain?\n\nWindows akan meminta anda mengesahkan dengan Hello. Kunci laluan lama pada komputer lain itu kekal di sana dan akan terus berfungsi jika anda membawa folder ini kembali ke sana, tetapi ia perlu disediakan semula.
+unlock_replace_passkey_many = Sediakan kunci laluan pada komputer ini dan lupakan {count} yang disimpan daripada komputer lain?\n\nWindows akan meminta anda mengesahkan dengan Hello. Kunci laluan lama pada komputer lain itu kekal di sana dan akan terus berfungsi jika anda membawa folder ini kembali ke sana, tetapi ia perlu disediakan semula.
+unlock_method_works = Kaedah itu berfungsi.
+
+plain_text_password_found = data\config\himalaya.toml masih mengandungi kata laluan teks biasa (auth.raw) daripada persediaan akaun yang lebih lama.\n\nBuang akaun itu dan tambah semula, atau buang data\config\himalaya.toml, supaya ia dijana semula menggunakan stor kelayakan yang selamat.
+
+# main_frame's titles.
+title_account_list_unavailable = Senarai akaun tidak tersedia
+title_open_message = Buka Mesej
+title_run_filters = Jalankan Penapis
+title_clear_cache = Kosongkan Cache Mesej Luar Talian
+title_remove_account = Buang Akaun
+title_new_folder = Folder Baru
+title_rename_folder = Namakan semula Folder
+title_delete_folder = Buang Folder
+title_subscribe = Langgan
+title_unsubscribe = Batal langganan
+title_open_saved_message = Buka Mesej Tersimpan
+title_save_message_as = Simpan Mesej Sebagai
+title_empty_trash = Buang Sampah
+title_empty_junk = Buang Mel Remeh
+title_synchronize_offline = Segerakkan untuk Luar Talian
+title_export_accounts = Eksport Akaun dan Tetapan
+title_import_accounts = Import Akaun dan Tetapan
+title_show_related = Papar Mesej Berkaitan
+title_reply = Balas
+title_forward = Kirim semula
+title_undo = Batal
+title_delete_permanently = Buang Secara Kekal
+title_delete = Buang
+title_copy_to = Salin Ke
+title_archive = Arkib
+title_accounts_locked = Akaun Dikunci
+
+select_account_first = Pilih akaun dalam pepohon dahulu.
+select_account_or_folder = Pilih akaun atau folder dahulu.
+filters_left_behind = {count} mesej sepadan dengan penapis tetapi masih dalam {folder}.
+cache_clear_confirm = Kosongkan cache mesej luar talian untuk setiap akaun?\n\nIni hanya membuang salinan setempat ZBox. Tiada apa-apa dibuang daripada mana-mana pelayan mel, dan mesej dimuat turun semula apabila anda memerlukannya.
+account_remove_confirm = Buang {name} ({address})?\n\nMel pada pelayan tidak dibuang.\nSalinan yang dimuat turun ke komputer ini dibuang.\nKata laluan yang disimpan dibuang.
+folder_delete_confirm = Buang secara kekal folder "{folder}" dan semua isinya untuk {address}?\n\nIni tidak boleh dibatalkan.
+empty_trash_confirm = Buang secara kekal semua mesej dalam Sampah untuk {address}?\n\nIni tidak boleh dibatalkan.
+empty_junk_confirm = Buang secara kekal semua mesej dalam Mel Remeh untuk {address}?\n\nIni tidak boleh dibatalkan.
+sync_select_account = Pilih akaun (bukan folder Gabungan) untuk disegerakkan bagi penggunaan luar talian.
+accounts_imported = {count} akaun diimport:\n\n{names}\n\nKata laluan tidak pernah dieksport, dan stor kata laluan yang disulitkan adalah khusus untuk akaun pengguna Windows ini, jadi setiap akaun yang diimport perlu kata laluannya dimasukkan sekali melalui Akaun > Tetapan Akaun dan Identiti sebelum dapat bersambung.
+accounts_import_none = Tiada akaun ditemui dalam fail ini. Tetapan tetap diimport, jika fail mempunyainya.
+delete_permanently_confirm_one = Buang mesej ini secara kekal? Ini melangkau folder Sampah dan tidak boleh dibatalkan.
+accounts_locked = Kata laluan akaun yang disimpan telah ditulis pada komputer lain, jadi ia tidak dapat dibaca di sini.\n\nSetiap akaun perlu log masuk semula ke pelayan melnya. Untuk mengelakkannya pada masa hadapan, tetapkan kata laluan utama daripada Tetapan, Keselamatan Aplikasi dan Data pada komputer di mana akaun sudah berfungsi.
+master_password_remove_confirm = Buang kata laluan utama? Kata laluan akaun yang disimpan kemudian hanya boleh dibaca pada komputer ini dan akaun Windows ini. Salin ZBox ke tempat lain selepas itu dan setiap akaun perlu log masuk semula.\n\nBuang sekarang?
+shortcut_offer = Letakkan pintasan ZBox pada Desktop?\n\nIa akan memulakan folder ZBox ini:\n{path}\n\nPintasan merekodkan lokasi tepat itu. Jika anda memindahkan folder ZBox kemudian, buka Tetapan, Dulang sistem dan tetingkap, dan pilih Cipta pintasan desktop sekali lagi untuk menghalakannya ke tempat baru.
+shortcut_created = Pintasan dicipta:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Nama paparan
+form_email_address = Alamat e-mel
+form_your_name = Nama anda
+form_login_email = E-mel log masuk
+form_password = Kata laluan
+srv_imap_host = Pelayan masuk (IMAP)
+srv_imap_port = Port masuk
+srv_imap_encryption = Penyulitan masuk
+srv_smtp_host = Pelayan keluar (SMTP)
+srv_smtp_port = Port keluar
+srv_smtp_encryption = Penyulitan keluar
+
+acct_login_email_label = E-mel log masuk (digunakan untuk log masuk)
+acct_new_password_label = Kata laluan baru (biarkan kosong untuk mengekalkan yang semasa)
+acct_new_password_name = Kata laluan baru
+acct_identity_email_label = Alamat e-mel (digunakan untuk menghantar dan menerima)
+acct_identities_label = Identiti tambahan (alias)
+acct_identities_name = Identiti tambahan
+acct_add_identity = &Tambah Identiti...
+acct_edit_identity = &Edit Identiti...
+acct_remove_identity = &Buang Identiti
+acct_signature = Tandatangan
+acct_edit_signature = &Edit Tandatangan...
+acct_junk_folder = Folder Mel Remeh
+acct_account_status = Status akaun
+acct_disable_account = Nyahdayakan akaun ini
+acct_default_account = Akaun lalai
+acct_set_default = Tetapkan sebagai akaun lalai
+acct_notifications = Pemberitahuan mel baru
+acct_mute_notifications = Senyapkan pemberitahuan untuk akaun ini
+acct_server_settings = Tetapan pelayan
+
+wiz_before_you_start = Sebelum anda mula
+wiz_notice_name = Notis penting
+wiz_google_instructions = &Buka arahan kata laluan aplikasi Google
+wiz_intro = Nama dan alamat e-mel anda
+wiz_login_same = E-mel log masuk sama dengan alamat e-mel di atas
+wiz_show_password = &Papar kata laluan
+wiz_preset_applied = Pratetap digunakan untuk {name}.
+wiz_summary_name = Ringkasan akaun
+wiz_review = Semak, kemudian klik Selesai untuk menyimpan akaun ini.
+wiz_test_connection = &Uji Sambungan
+wiz_testing = Menguji sambungan...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Dayakan log nyahpepijat yang disimpan ke: data\logs)
+set_language_label = &Bahasa antara muka:
+set_language_label_only_english = &Bahasa antara muka: (Bahasa Inggeris sahaja)
+set_headers_checkbox = &Papar pengepala mesej di atas mesej yang dibuka
+set_zoom_label = Fon dan zum mesej:
+set_font_override = &Ganti saiz fon mesej lalai
+set_font_size_name = Saiz fon mesej (mata)
+set_reading_font_name = Fon bacaan
+set_reading_font_label = Fon bacaan (kosong untuk lalai):
+set_view_label = Paparan teks mesej apabila membuka mesej:
+set_view_text = Teks
+set_view_html = HTML (dipaparkan)
+set_engine_label = Enjin paparan HTML:
+set_engine_edge = Edge / WebView2 (paparan moden)
+set_engine_ie = MSHTML lama (sokongan pembaca skrin terbaik)
+set_runtime_label = Masa jalan WebView2:
+set_runtime_auto = Automatik — gunakan masa jalan yang disertakan jika ada (disyorkan)
+set_runtime_fixed = Versi tetap yang disertakan sahaja
+set_runtime_evergreen = Masa jalan seluruh sistem (dikemas kini oleh Windows)
+set_sr_box = Kawalan pengumuman pembaca skrin
+set_silence_label = Tempoh senyap pembaca skrin HTML:
+set_silence_name = Tempoh senyap pembaca skrin HTML dalam milisaat
+set_focus_delay_label = Lengah fokus kebolehcapaian WebView:
+set_focus_delay_name = Lengah fokus kebolehcapaian WebView, tahap 1 hingga 10
+set_announce_label = Tempoh pengumuman:
+set_announce_name = Tempoh pengumuman dalam milisaat
+set_announce_actions = &Umumkan tindakan mesej
+set_attachment_dir_label = Folder simpanan lampiran:
+set_attachment_dir_name = Folder simpanan lampiran
+set_browse = &Semak imbas…
+set_autosave_label = Selang simpan automatik draf:
+set_autosave_name = Selang simpan automatik draf dalam saat
+set_auto_purge_label = Bersihkan Sampah dan Mel Remeh lama secara automatik:
+set_auto_purge_name = Bersihkan Sampah dan Mel Remeh secara automatik selepas bilangan hari ini
+set_bare_keys = Dayakan pintasan satu kekunci dalam senarai mesej: S (tanda), A (arkib), J (tanda sebagai sarap)/Shift+J (tanda bukan sarap), W (pantau bebenang), K (abaikan bebenang), M (alih ke)/Shift+M (alih mengikut nama folder) dan C (salin ke)
+set_sound_label = Bunyi dan Pemberitahuan:
+set_sounds_enabled = &Mainkan bunyi pemberitahuan
+set_desktop_notifications = &Papar pemberitahuan desktop untuk mel baru
+set_theme_label = Tukar tema bunyi:
+set_theme_label_only_default = Tukar tema bunyi: (tema lalai sahaja)
+set_security_box = Keselamatan Aplikasi dan Data
+set_lock_on_quit = &Kunci ZBox apabila ditutup sepenuhnya
+set_unlock_methods_button = &Kaedah buka kunci…
+set_master_password_button = &Kata laluan utama…
+set_tray_label = Dulang sistem dan tetingkap:
+set_minimize_to_tray = &Minimumkan ke dulang sistem
+set_close_to_tray = &Tutup ke dulang sistem
+set_stay_maximized = &Sentiasa kekalkan ZBox dimaksimumkan
+set_run_at_startup = &Jalankan ZBox apabila Windows bermula
+set_desktop_shortcut_button = &Cipta pintasan desktop
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Log nyahpepijat membantu mendiagnosis masalah jika sesuatu tidak kena. Mematikannya menghentikan entri baru daripada ditulis; fail log sedia ada tidak dibuang. Berkuat kuasa apabila ZBox dimulakan seterusnya.
+set_language_note = Berkuat kuasa apabila ZBox dimulakan seterusnya. Fail bahasa ialah fail teks biasa dalam folder lang ZBox, di sebelah folder sounds. Untuk menambah satu, salin folder en, namakan semula salinan itu dan fail .lang di dalamnya kepada kod bahasa anda, dan terjemahkan teks di sebelah kanan setiap tanda sama dengan. Apa-apa yang belum diterjemah akan disebut dalam Bahasa Inggeris dan bukannya senyap, jadi fail yang separuh siap selamat digunakan.
+set_headers_note = Daripada, Kepada, Cc, Tarikh dan Subjek, dipaparkan di atas teks mesej dalam kedua-dua paparan Teks dan HTML. Tanpanya tiada cara untuk mengetahui siapa yang menghantar mesej dari dalamnya tanpa menutup tab dan kembali ke senarai. Fokus masih jatuh dalam teks mesej; blok pengepala hanya satu Shift+Tab jauhnya. Berkuat kuasa apabila mesej dibuka seterusnya.
+set_zoom_note = Membesarkan atau mengecilkan teks mesej yang dibuka, bebas daripada bahagian lain ZBox dan penskalaan paparan Windows sendiri. Digunakan pada kedua-dua paparan Teks dan HTML. "Fon bacaan" boleh memaksa muka fon tertentu (cth. Consolas, OpenDyslexic) untuk teks mesej; biarkan kosong untuk mengekalkan fon biasa. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 dalam menu Papar menaikkan, menurunkan atau menetapkan semula saiz fon sahaja tanpa membuka dialog ini, dan digunakan serta-merta pada setiap mesej yang dibuka. Perubahan yang dibuat di sini juga digunakan serta-merta apabila OK.
+set_view_note = HTML ialah lalai. Ia memaparkan mesej seperti yang dihantar, dan dibaca oleh NVDA dan JAWS: apabila halaman HTML dibuka, ZBox menyenyapkan pengumuman pelayar sendiri, meletakkan kursor bacaan pada baris pertama mesej, dan memastikan pintasan ZBox sendiri berfungsi di dalam halaman, termasuk F6 untuk memindahkan fokus keluar daripadanya. Teks memaparkan mesej yang sama sebagai teks biasa tanpa format dalam kawalan edit biasa -- tiada imej, tiada susun atur, dan tiada apa-apa yang bergantung pada enjin pelayar yang dipasang. Tekan Ctrl+B di dalam mesej yang dibuka untuk bertukar antara kedua-duanya.
+set_engine_note = Edge memaparkan CSS moden tetapi menjalankan halaman dalam proses berasingan, dan hanya akan menyerahkan kandungannya kepada pembaca skrin melalui antara muka yang tidak dapat dicapai oleh wxPython -- jadi mesej boleh dibuka tanpa apa-apa yang boleh dibaca. MSHTML lama ialah enjin yang digunakan oleh Outlook Express dan Windows Mail: ia berjalan dalam proses yang sama dan menerbitkan pepohon dokumen biasa, jadi NVDA dan JAWS membacanya dalam mod layar seperti mana-mana halaman web. Berkuat kuasa apabila mesej dibuka seterusnya.
+set_runtime_note = Masa jalan seluruh sistem diselenggara oleh Windows Update, jadi enjin yang membaca mel anda boleh berubah tanpa notis — begitulah paparan mesej HTML yang berfungsi boleh rosak pada mesin di mana tiada apa-apa tentang ZBox berubah. Salinan yang disertakan dalam folder deps menetapkan versi tepat yang telah diuji dengan ZBox. Jalankan tools\get_webview2.bat untuk memasangnya. Jika tiada salinan disertakan, ZBox menggunakan masa jalan seluruh sistem dalam apa jua keadaan, jadi ia sentiasa bermula. Berkuat kuasa apabila ZBox dimulakan seterusnya.
+set_sr_intro = Berapa banyak ZBox membenarkan pembaca skrin anda bercakap semasa mesej dibuka, dan berapa lama pengumumannya sendiri kekal.
+set_silence_note = Apabila mesej HTML dibuka, ZBox boleh menahan tekanan Ctrl sintetik sehingga 2 saat untuk menyenyapkan pengumuman pelayar pembaca skrin. Subjek mesej sudah digunakan sebagai tajuk halaman, yang menghalang URL base64 daripada dibaca dengan kuat, tetapi pembaca masih mengumumkan kawalan dan jenis dokumen di atas permulaan mesej, jadi ini dihidupkan secara lalai. Turunkan kepada 0 untuk mematikannya, atau naikkan jika celoteh masih terlepas.
+set_focus_delay_note = Apabila mesej HTML selesai dimuatkan, ZBox menunggu selama ini sebelum benar-benar memfokuskannya. WebView2 melaporkan halaman telah dimuatkan dan Windows menyiapkan pepohon kebolehcapaian halaman itu bukanlah saat yang sama; memfokus terlalu awal menyebabkan NVDA/JAWS mengumumkan "Halaman kandungan web" generik dan bukannya mesej, atau melaporkan mesej tidak tersedia seketika selepas dibuka. Tahap 1 ialah 100 ms, tahap 10 ialah sesaat penuh. Naikkan jika anda masih melihatnya; turunkan apabila pembukaan terasa stabil, untuk pembukaan yang lebih pantas.
+set_announce_note = Ctrl+U dan Ctrl+Shift+U melaporkan pengirim dalam dialog kecil yang menutup sendiri, kerana bar status hanya disebut jika pembaca skrin anda menghidupkan pelaporan bar status. Inilah tempoh dialog itu kekal. Tetapkan mengikut kadar pertuturan anda: terlalu singkat dan ia tertutup di tengah ayat, yang mengecewakan tujuannya. Mana-mana kekunci menutupnya lebih awal; kekunci anak panah mengekalkannya terbuka supaya anda boleh membaca semula. 0 bermaksud ia menunggu kekunci dan tidak pernah menutup sendiri.
+set_attachment_dir_note = Tempat "Simpan Semua" menulis lampiran apabila mesej mempunyai lebih daripada satu. Dicipta secara automatik jika tidak wujud. Mesej dengan satu lampiran masih bertanya di mana untuk menyimpannya, seperti sebelum ini. Biarkan kosong untuk lalai:\n{path}
+set_autosave_note = Kekerapan tab karang yang terbuka menyimpan dirinya ke Draf semasa anda menulis. Simpan Draf (Ctrl+S) masih menyimpan atas permintaan, dan menutup tab dengan tulisan yang belum disimpan sentiasa menawarkan untuk menyimpannya. 0 mematikan simpan automatik. Kurang daripada 15 saat tidak ditawarkan -- itu akan menjadi perjalanan ke pelayan yang bersaing dengan taipan anda.
+set_auto_purge_note = Membuang secara kekal mesej daripada Sampah dan Mel Remeh setelah berada di sana selama bilangan hari ini -- pembuangan kekal yang sama seperti Buang Sampah dan Buang Mel Remeh lakukan atas permintaan, dijalankan secara automatik sekali sehari semasa ZBox dibuka. Hidup secara lalai pada 30 hari. 0 mematikannya. Ini tidak boleh dibatalkan setelah mesej dibuang.
+set_bare_keys_note = Apabila hidup, menekan S, A, J, W atau K sahaja dalam senarai mesej menogol bintang, mengarkibkan, menandakan mesej yang dipilih sebagai mel remeh (Shift+J menandakannya bukan mel remeh), atau mengikuti/mengabaikan thread yang mengandungi pilihan, serta-merta -- Arkib dan Tandakan Sebagai Mel Remeh tiada pengesahan dan tiada batal. Mematikannya mengembalikan S, A, J, W dan K kepada navigasi senarai huruf pertama biasa. Ctrl+S dan Ctrl+Shift+A terus berfungsi dalam apa jua keadaan. Berkuat kuasa serta-merta.
+set_sounds_note = Bunyi pendek untuk kemajuan, mesej baru, tindakan dihantar, dibalas atau dikirim semula, pembuangan, dan hasil carian. Mati melumpuhkan setiap bunyi dalam aplikasi; pengumuman pembaca skrin dan bar status tidak terjejas.
+set_desktop_notifications_note = Pemberitahuan Windows untuk setiap kumpulan mel baru, berasingan daripada bunyi di atas. Mati melumpuhkannya untuk setiap akaun; akaun individu juga boleh disenyapkan sendiri dalam Tetapan Akaun dan Identiti.
+set_theme_note = Tema tersuai ialah folder yang diletakkan di dalam folder sounds ZBox, setiap satu membekalkan progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav dan none_found.wav sendiri. Fail tema yang tiada akan menggunakan bunyi lalai.
+set_theme_note_only_default = Tema tersuai ialah folder yang diletakkan di dalam folder sounds ZBox, setiap satu membekalkan progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav dan none_found.wav sendiri. Fail tema yang tiada akan menggunakan bunyi lalai. Hanya "default" tersedia sehingga anda menambah folder tema lain.
+set_lock_note = Memulakan ZBox kemudian meminta salah satu kaedah buka kunci anda sebelum mana-mana akaun dibuka. Mana-mana satu sudah memadai: kunci laluan, kunci keselamatan, atau kata laluan utama. Menutup ke dulang bukan keluar dan tidak mengunci semula; Fail > Keluar dan Keluar pada ikon dulang ialah keluar. Jika tiada apa-apa didaftarkan dan tiada kata laluan utama ditetapkan, kunci dilangkau dan bukannya menghalang anda daripada mel anda sendiri.
+set_security_note = Kata laluan utama ialah satu-satunya daripada tiga yang menyulitkan apa-apa: ia yang membolehkan folder ini membuka kata laluan akaun yang disimpan pada komputer lain. Kunci laluan atau kunci keselamatan membuka kunci aplikasi pada komputer ini. Kedua-duanya tidak menggantikan kata laluan utama pada komputer yang belum pernah menggunakan ZBox.
+set_minimize_note = Meminimumkan ZBox menyembunyikan butang bar tugasnya dan membiarkannya berjalan di belakang ikon dulang. Klik kiri ikon dulang (atau Enter/Space apabila ia mempunyai fokus papan kekunci) untuk mengembalikan tetingkap.
+set_close_note = Butang Tutup tetingkap, Alt+F4, dan Ctrl+W yang ditekan pada tab Mel menyembunyikan ZBox ke dulang dan bukannya keluar. Fail > Keluar (Ctrl+Shift+Q) dan item Keluar ikon dulang sendiri sentiasa benar-benar keluar dari ZBox, jadi sentiasa ada satu laluan papan kekunci untuk keluar tanpa menyentuh dulang.
+set_stay_maximized_note = ZBox dilancarkan dalam keadaan maksimum dan dikembalikan ke maksimum jika anda menyahmaksimumkannya. Bar menu, bar tajuk dan sempadan tetingkap tidak terjejas -- ini bukan mod skrin penuh tanpa sempadan, jadi setiap pintasan menu kekunci Alt terus berfungsi.
+set_run_at_startup_note = Memulakan ZBox secara automatik apabila anda log masuk ke Windows, dibuka terus ke dulang dan bukannya memaparkan tetingkapnya. Berkuat kuasa serta-merta, bukan hanya pada pelancaran seterusnya.
+set_desktop_shortcut_note = Meletakkan pintasan ZBox pada Desktop anda, menggantikan yang sudah ada. Pintasan menyimpan lokasi tepat folder ZBox ini, jadi jika anda memindahkan atau menyalin ZBox ke tempat lain, tekan ini lagi pada salinan baru untuk menghalakan pintasan Desktop kepadanya. Berkuat kuasa serta-merta dan tidak menunggu OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Nama
+ab_phone = Telefon
+ab_notes = Nota
+ab_heading = Buku Alamat
+ab_contacts = Kenalan
+ab_new = &Baru...
+ab_edit = &Edit...
+ab_delete = &Buang
+ab_import = &Import...
+ab_export = &Eksport...
+ab_groups_label = Kumpulan (senarai mel)
+ab_groups_name = Kumpulan
+ab_new_group = &Kumpulan Baru...
+ab_rename_group = &Namakan semula Kumpulan...
+ab_delete_group = &Buang Kumpulan
+ab_manage_members = &Urus Ahli...
+ab_all_contacts = Semua kenalan
+ab_add_member = Tambah >>
+ab_remove_member = << Buang
+ab_members_of = Ahli {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Tiada dalam kamus:
+sp_not_in_dictionary_name = Tiada dalam kamus
+sp_in_this_line_label = Dalam baris ini:
+sp_in_this_line_name = Dalam baris ini
+sp_suggestions_label = &Cadangan:
+sp_suggestions_name = Cadangan
+sp_replace_with_label = &Ganti dengan:
+sp_replace_with_name = Ganti dengan
+sp_replace = &Ganti
+sp_replace_all = &Ganti Semua
+sp_ignore = &Abaikan
+sp_ignore_all = &Abaikan Semua
+sp_add_to_dictionary = &Tambah ke Kamus
+btn_close = &Tutup
+
+# Privacy and Content Blocking.
+priv_remote_label = Kandungan jauh dalam mesej:
+priv_block_remote = &Sekat kandungan jauh sehingga saya memintanya (disyorkan)
+priv_blocklist_label = Senarai sekatan iklan dan penjejak:
+priv_block_known = &Sekat domain iklan dan penjejak yang diketahui
+priv_update_daily = &Kemas kini senarai setiap hari di latar belakang
+priv_update_now = &Kemas Kini Sekarang
+priv_junk_label = Peraturan mel remeh:
+priv_check_inbox = &Semak mel baru Peti masuk terhadap pengirim yang disekat dan pautan pancingan data yang diketahui
+priv_move_blocked = &Pindahkan mel daripada pengirim yang disekat ke Mel Remeh secara automatik
+priv_update_phishing = &Kemas Kini Senarai Pancingan Data Sekarang
+priv_blocked_label = Pengirim yang disekat:
+priv_blocked_name = Pengirim yang disekat
+priv_remove_blocked = &Buang Pengirim yang Disekat
+priv_never_junk_label = Pengirim yang tidak pernah dianggap mel remeh:
+priv_never_junk_name = Pengirim yang tidak pernah dianggap mel remeh
+priv_remove_never_junk = &Buang Pengirim Bukan Mel Remeh
+priv_allowed_label = Pengirim yang dibenarkan memuatkan kandungan jauh:
+priv_allowed_name = Pengirim yang dibenarkan
+priv_remove_selected = &Buang Pengirim yang Dipilih
+
+# Message Filters.
+filt_rule_name = Nama peraturan
+filt_enabled = &Didayakan
+filt_match_label = Padanan:
+filt_match_all = &Padan semua yang berikut (AND)
+filt_match_any = &Padan mana-mana yang berikut (OR)
+filt_conditions_label = Syarat (biarkan nilai kosong untuk melangkaunya):
+filt_condition_field = Medan syarat {number}
+filt_condition_contains = Syarat {number} mengandungi
+filt_actions_label = Tindakan:
+filt_mark_read = &Tandakan sebagai sudah dibaca
+filt_flag = &Bintangkan mesej
+filt_move_label = Pindah ke folder:
+filt_move_name = Pindah ke folder
+filt_rules_name = Peraturan tapisan
+filt_new = &Peraturan Baru...
+filt_edit = &Edit Peraturan...
+filt_delete = &Buang Peraturan
+filt_up = &Naik
+filt_down = &Turun
+filt_run_label = Jalankan Sekarang pada folder:
+filt_run_name = Folder Jalankan Sekarang
+filt_run_now = &Jalankan Sekarang
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Buka kunci dengan kunci laluan (Windows Hello)
+unl_security_key = &Buka kunci dengan kunci keselamatan
+unl_master_password_label = &Kata laluan utama:
+unl_master_password_name = Kata laluan utama
+unl_unlock = &Buka Kunci
+unl_exit = &Keluar ZBox
+unl_methods_label = &Kaedah berdaftar:
+unl_methods_name = Kaedah buka kunci berdaftar
+unl_add_passkey = &Tambah kunci laluan…
+unl_add_key = &Tambah kunci keselamatan…
+unl_reassign = &Tetapkan semula kunci laluan kepada komputer ini…
+unl_test = &Uji…
+unl_remove = &Buang
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Daripada
+comp_to = Kepada
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Subjek
+comp_attach_button = Lampir Fail...
+comp_sending = Menghantar...
+comp_report_label = &Laporan:
+comp_report_name = Laporan
+comp_refresh = &Segarkan
+comp_copy = &Salin
+comp_preview_read = Seperti yang dibaca oleh penerima
+comp_preview_source = HTML yang akan dihantar
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Teks mesej
+mv_blocked_notice = Notis kandungan disekat
+mv_show_remote = &Papar kandungan jauh
+mv_always_allow = &Sentiasa izinkan pengirim ini
+mv_message_headers = Pengepala mesej
+mv_attachments = Lampiran
+mv_attachments_count = Lampiran ({count})
+mv_save_attachment = Simpan: {filename}
+mv_save_all = Simpan Semua
+mv_html_view = Paparan HTML mesej
+mv_saved_message = Mesej tersimpan
+mv_show_remote_tip = Muat semula mesej ini dengan imej dan gaya jauhnya. Penjejak yang diketahui kekal disekat.
+mv_always_allow_tip = Muatkan kandungan jauh dalam setiap mesej daripada {sender}.
+
+# The search tab.
+srch_account = Akaun
+srch_folder = Folder
+srch_for = Cari
+
+# The signature editor.
+sig_editors = Editor tandatangan
+sig_formatted = Tandatangan, berformat
+sig_source = Tandatangan, sumber HTML
+sig_plain_label = Alternatif teks biasa (dihantar bersama HTML)
+sig_plain_name = Alternatif teks biasa
+
+# About ZBox.
+about_text_name = Teks Perihal ZBox
+about_view_license = &Lihat Lesen...
+about_google = &Kata Laluan Aplikasi Google...
+about_support = &Sokong ZBox -- Pembangunan dan Penyelenggaraan Seorang Diri
+about_repos = &Repositori Aplikasi Harith di GitHub
+about_contact = &Hubungi Harith
+btn_close_plain = Tutup
+btn_cancel_plain = Batal
+
+# The license window.
+eula_heading = Lesen ZBox
+eula_text_name = Teks lesen ZBox
+eula_third_party = Halaman lesen komponen pihak ketiga:
+eula_agree = &Saya Bersetuju dengan terma di atas
+eula_agree_name = Saya telah membaca dan bersetuju dengan terma lesen ZBox
+eula_disagree = &Saya Tidak Bersetuju
+eula_next = &Seterusnya
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Teks dokumentasi ZBox
+doc_copy = Salin ke Papan Keratan
+shortcuts_heading = Pintasan Papan Kekunci
+shortcuts_text_name = Teks pintasan papan kekunci
+
+# The main window's own panes.
+mf_toolbar = Bar alat utama
+mf_tabs = Tab ZBox
+tree_heading = Akaun dan Folder
+tree_name = Pepohon akaun dan folder
+envlist_heading = Mesej
+envlist_name = Senarai mesej
+rdr_heading = Mesej
+rdr_name = Pembaca mesej
+conv_heading_one = Perbualan: 1 mesej
+conv_heading_many = Perbualan: {count} mesej
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} daripada {total} selesai.
+bulk_cancelling = Membatalkan -- menyelesaikan mesej semasa...
+cache_clear_now = Kosongkan Cache Mesej Luar Talian Sekarang... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, dilindungi
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Nama paparan adalah pilihan -- biarkan kosong untuk menghantar sebagai nama akaun ini sendiri.
+acct_note_identity = Alamat e-mel boleh berbeza daripada e-mel log masuk jika pembekal anda mempunyai domain tersuai yang dipautkan ke peti mel ini. Mel akan dihantar dan diterima di bawah alamat di atas, manakala log masuk masih menggunakan e-mel log masuk. Biarkan medan kata laluan kosong untuk mengekalkan kata laluan yang sudah disimpan untuk akaun ini -- contohnya selepas menukar kata laluan aplikasi Gmail, taip yang baru di sini; jika tidak biarkan kosong.
+acct_note_identities = Alamat lain yang boleh digunakan oleh akaun ini untuk menghantar dan membalas. Membalas mesej yang dihantar kepada salah satu daripadanya akan menetapkan Daripada kepada alamat itu dan bukannya alamat di atas.
+acct_note_signature = Dilampirkan pada setiap mesej baru, balasan dan kiriman semula yang dihantar dari akaun ini, di bawah baris "-- ". Biarkan kosong jika tiada. Edit Tandatangan membuka editor berformat, di mana tebal, senarai dan pautan tersedia; kotak di atas kemudian memegang versi teks biasa yang dihantar bersamanya.
+acct_note_junk = Folder sebenar yang dituju oleh Tandakan Sebagai Mel Remeh. "{automatic}" menggunakan tekaan mengikut pembekal yang sama yang sudah digunakan oleh Arkib dan Sampah; tetapkan ini hanya jika tekaan itu salah atau folder mel remeh anda mempunyai nama tersuai.
+acct_note_disable = Akaun yang dinyahdayakan tidak pernah dihubungi -- tiada IDLE, tiada penyegaran berkala, tiada apa-apa -- sehingga didayakan semula. Ia masih dipaparkan dalam pepohon, ditanda (dinyahdayakan), dan mel yang sudah dimuat turun kekal tersedia di luar talian. Togol yang sama seperti Akaun > Nyahdayakan Akaun atau menu konteks akaun sendiri; ini hanya satu lagi tempat untuk mencapainya.
+acct_note_default = Folder akaun ini muncul dahulu dalam pepohon, dan mesej baru dihantar daripadanya secara lalai melainkan ditukar secara manual dalam pengarang. Tidak menjejaskan alamat yang digunakan oleh balasan atau kiriman semula -- itu sudah mengikut mesej yang dijawab (lihat Identiti Tambahan di atas). Sentiasa ada tepat satu akaun lalai, jadi menyahtanda ini pada akaun lalai semasa tanpa menandanya pada akaun lain tidak mengubah apa-apa -- tandakan kotak akaun lain untuk menyerahkan lalai kepadanya.
+acct_note_mute = &Menyenyapkan menyekat bunyi mel baru, pengumuman yang dituturkan dan pemberitahuan Windows akaun ini, tanpa mengira konfigurasi lain. Ia tidak menjejaskan akaun lain, dan masih tertakluk kepada suis induk dalam Tetapan > Bunyi dan Pemberitahuan (bunyi dan pemberitahuan desktop secara keseluruhan).
+wiz_note_app_password = Jika anda sudah mempunyai kata laluan aplikasi yang dicipta untuk ZBox, tekan Seterusnya untuk meneruskan.
+wiz_note_login = Butiran log masuk.\nJika e-mel log masuk anda berbeza daripada alamat di atas, contohnya akaun pembekal anda ialah login@example.net tetapi anda mahu menghantar dan menerima sebagai you@example.org, masukkan e-mel log masuk di sini. Anda boleh menetapkan alamat hantar tersuai kemudian dalam Tetapan Akaun dan Identiti.
+wiz_note_servers = Tetapan pelayan, diisi awal di mana domain dikenali. Edit apa-apa yang perlu berbeza.
+wiz_preset_none = Tiada pratetap ditemui untuk domain ini. Masukkan tetapan pelayan pembekal anda secara manual; halaman bantuan pembekal anda akan menyenaraikannya.
+ab_note_groups = Taip nama kumpulan dalam medan Kepada, Cc atau Bcc tetingkap karang untuk mengisi setiap ahlinya sekali gus.
+cache_note_intro = Ini hanya membuang salinan setempat ZBox. Tiada apa-apa dibuang daripada mana-mana pelayan mel, dan mesej yang dibuang dimuat turun semula apabila anda membukanya seterusnya.
+cache_note_age = Pembersihan automatik berjalan sekali sehari, apabila ZBox tiada aktiviti papan kekunci selama sepuluh minit dan tiada mesej dibuka. Ia mengikut tarikh setiap mesej, termasuk mesej yang masih dalam akaun anda.
+filt_note_intro = Peraturan berjalan mengikut urutan, dari atas ke bawah, menguji Daripada, Kepada dan Subjek. Digunakan secara automatik pada mel baru apabila tiba dalam Peti masuk akaun ini; gunakan Jalankan Sekarang di bawah untuk menggunakannya pada mesej yang sudah berada dalam folder.
+filt_note_run_now = Menggunakan setiap peraturan yang didayakan di atas, mengikut urutan, pada setiap mesej yang sudah berada dalam folder yang dipilih -- menyimpan perubahan anda dahulu, sama seperti OK.
+mp_note_intro = Akaun ini disediakan pada komputer lain. Masukkan kata laluan utama untuk membuka kunci kata laluan tersimpannya di sini. Anda hanya akan ditanya sekali pada komputer ini.\n\nTanpanya, setiap akaun perlu log masuk semula ke pelayan melnya.
+priv_note_remote = Imej, helaian gaya dan fon yang dimuatkan oleh mesej dari internet memberitahu pengirim saat anda membukanya, dan dari mana. Dengan ini hidup, tiada satu pun dimuatkan: notis muncul di atas mesej menyatakan apa yang disekat, dan Ctrl+Shift+I memuatkannya untuk mesej itu sahaja. Gambar yang dilampirkan pada mesej itu sendiri sentiasa dipaparkan. Skrip dan bingkai terbenam dibuang dalam apa jua keadaan dan tidak pernah dimuatkan.
+priv_note_blocklist = Ini ialah lapisan kedua. Ia penting apabila anda memuatkan kandungan jauh mesej, atau membenarkan pengirim: gambar dimuatkan, tetapi apa-apa yang disajikan daripada domain penjejakan atau pengiklanan yang diketahui masih tidak dimuatkan. Senarai dimuat turun daripada senarai iklan dan penjejak awam dan digabungkan; kemas kini mengambil masa satu atau dua saat dan berjalan di latar belakang.
+priv_note_junk = Tiada tekaan. Tandakan Sebagai Mel Remeh menambah pengirim ke senarai disekat di bawah, melainkan mesej datang melalui senarai mel. Tandakan Sebagai Bukan Mel Remeh menambah pengirim ke senarai bukan mel remeh dan mesej itu tidak pernah disemak lagi. Mesej baru daripada pengirim yang disekat ditandakan Pengirim Disekat dalam senarai; yang memaut ke tapak pancingan data atau perisian hasad yang diketahui ditandakan Kemungkinan Pancingan Data. Penapisan spam pembekal mel anda sendiri masih berjalan seperti sebelum ini.
+priv_status_phishing_updating = Senarai pancingan data: sedang dikemas kini di latar belakang. Buka semula dialog ini untuk melihat hasilnya.
+priv_status_updating = Sedang dikemas kini di latar belakang. Buka semula dialog ini untuk melihat hasilnya.
+rel_note_intro = Mesej yang berkaitan dengan "{subject}" melalui pengepala Message-ID/References, merentas setiap folder dalam akaun ini.
+srch_note_intro = Cari Daripada, Subjek dan Teks untuk teks yang anda masukkan di bawah. Mencari setiap akaun dan folder melainkan anda menyempitkannya di bawah.
+sig_note_plain = Biarkan alternatif teks biasa kosong dan ia ditulis daripada tandatangan berformat apabila anda menekan Simpan.
+unified_note_intro = Pilih folder yang hendak digabungkan merentas setiap akaun. Setiap folder yang ditanda menjadi satu entri dalam pepohon yang menggabungkan folder itu daripada semua akaun anda.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Perihal ZBox
+title_account_settings = Tetapan Akaun dan Identiti: {name}
+title_new_account = Akaun Baru
+title_address_book = Buku Alamat
+title_members = Ahli: {name}
+ab_group_name_prompt = Nama kumpulan:
+title_new_group = Kumpulan Baru
+title_cache_cleanup = Konfigurasi Pembersihan Cache
+cache_age_prompt = Buang mesej cache yang lebih lama daripada ini secara automatik:
+title_automatic_cleanup = Pembersihan Automatik
+comp_link_prompt = Alamat pautan:
+title_insert_link = Sisip Pautan
+title_composer_diagnostics = Diagnostik Pengarang
+title_formatted_preview = Previu Berformat
+title_license_agreement = Perjanjian Lesen ZBox
+title_message_filters = Tapis Mesej: {account}
+title_master_password_required = Kata Laluan Utama Diperlukan
+title_privacy_dialog = Privasi dan Sekatan Kandungan
+title_privacy = Privasi
+title_settings = Tetapan
+title_unified_folders = Folder Gabungan
+title_zbox_locked = ZBox Dikunci
+title_message_view = Paparan Mesej
+title_remote_content = Kandungan Jauh
+title_refresh = Segarkan
+title_refresh_all = Segarkan Semua
+mv_choose_folder = Pilih folder untuk menyimpan lampiran
+title_thread = Thread
+title_inbox = Peti masuk
+title_compose = Karang
+title_watch_thread = Ikuti Thread
+title_ignore_thread = Abaikan Thread
+title_edit_signature = Edit Tandatangan
+title_account = Akaun
+mf_folder_name_prompt = Nama folder:
+mf_new_name_prompt = Nama baru:
+title_refresh_all_accounts = Segarkan Semua Akaun
+title_sender = Pengirim
+title_new_mail = Mel Baru
+mf_export_dialog_title = Eksport Semua {count} Akaun dan Tetapan
+mf_related_tab = Berkaitan: {subject}
+title_hotkeys_diagnostic = Diagnostik Kekunci Pintas
+set_choose_attachment_dir = Pilih folder simpanan lampiran
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox dikunci. Gunakan mana-mana satu kaedah di bawah untuk membuka kuncinya. Membatalkan akan menutup ZBox tanpa membuka mana-mana akaun.
+unl_note_foreign_passkey = Kunci laluan yang disimpan bersama folder ini milik komputer lain, jadi ia tidak boleh digunakan di sini. Buka kunci dengan kunci keselamatan atau kata laluan utama anda, kemudian gunakan Tetapan, Privasi dan Keselamatan, Kaedah buka kunci untuk menyediakan kunci laluan pada komputer ini.
+unl_note_methods = Mana-mana satu daripada ini membuka kunci ZBox apabila kunci aplikasi hidup, bersama kata laluan utama. Kunci laluan menggunakan Windows Hello pada komputer ini; kunci keselamatan ialah kunci FIDO2 pada USB atau NFC dan berfungsi pada mana-mana komputer yang anda pasangkan.
+unl_note_not_encryption = Ini membuka kunci aplikasi. Ia tidak menyulitkan apa-apa: kata laluan utama masih satu-satunya perkara yang boleh membuka kata laluan akaun yang disimpan pada komputer yang belum pernah menggunakan folder ini. Ia perlu ditetapkan dahulu, dan tiada satu pun daripada ini boleh ditambah sehingga ia ditetapkan.
+unl_add_passkey_unavailable = &Tambah kunci laluan (tidak tersedia)
+unl_add_key_unavailable = &Tambah kunci keselamatan (tidak tersedia)
+unl_reassign_unavailable = &Tetapkan semula kunci laluan kepada komputer ini (tidak tersedia)
+unl_status_cancelled_passkey = Kunci laluan dibatalkan. ZBox masih dikunci.
+unl_status_cancelled_key = Kunci keselamatan dibatalkan. ZBox masih dikunci.
+unl_status_enter_password = Masukkan kata laluan utama.
+unl_status_no_master = Tiada kata laluan utama ditetapkan, jadi kunci laluan atau kunci keselamatan belum boleh ditambah. Tetapkan satu dengan butang Kata laluan utama dalam Tetapan, Privasi dan Keselamatan, kemudian kembali ke sini. Kata laluan utama ialah yang membuka kata laluan akaun tersimpan anda pada komputer lain; kunci laluan hanya membuka kunci aplikasi pada komputer ini, jadi ia tidak boleh berdiri sendiri.
+unl_status_unsupported = Windows komputer ini tidak menyokong kunci laluan atau kunci keselamatan, jadi hanya kata laluan utama boleh membuka kunci ZBox di sini.
+unl_status_foreign_one = 1 kunci laluan milik komputer lain dan tidak boleh membuka kunci ZBox di sini. Tetapkan semula menggantikannya dengan satu yang dibuat pada komputer ini.
+unl_status_foreign_many = {count} kunci laluan milik komputer lain dan tidak boleh membuka kunci ZBox di sini. Tetapkan semula menggantikannya dengan satu yang dibuat pada komputer ini.
+unl_status_foreign_one_no_hello = 1 kunci laluan milik komputer lain dan tidak boleh membuka kunci ZBox di sini. Windows Hello tidak disediakan di sini, jadi ia tidak boleh diganti pada komputer ini; Buang akan melupakannya.
+unl_status_foreign_many_no_hello = {count} kunci laluan milik komputer lain dan tidak boleh membuka kunci ZBox di sini. Windows Hello tidak disediakan di sini, jadi ia tidak boleh diganti pada komputer ini; Buang akan melupakannya.
+unl_status_no_hello = Windows Hello tidak disediakan pada komputer ini, jadi kunci laluan tidak boleh ditambah di sini. Kunci keselamatan masih boleh.
+unl_status_none_registered = Belum ada kaedah buka kunci didaftarkan.
+unl_status_add_cancelled_passkey = Penambahan kunci laluan dibatalkan.
+unl_status_add_cancelled_key = Penambahan kunci keselamatan dibatalkan.
+unl_status_added = Ditambah: {name}.
+unl_status_reassign_cancelled = Penetapan semula dibatalkan. Tiada apa-apa diubah.
+unl_status_reassigned = {name} ditambah dan {count} daripada komputer lain dilupakan.
+unl_status_test_cancelled = Ujian dibatalkan.
+unl_status_removed = Dibuang.
+unl_remove_warning_last = Buang {name}?\n\nIa satu-satunya kaedah buka kunci yang didaftarkan dan tiada kata laluan utama ditetapkan, jadi dengan kunci aplikasi hidup tiada apa-apa lagi untuk membuka kunci ZBox. Kunci dilangkau dan bukannya menghalang anda, tetapi ZBox kemudian akan dibuka tanpa kunci.
+unl_remove_warning = Buang {name}? ZBox tidak akan menerimanya lagi.
+ab_col_email = E-mel
+ab_col_name = Nama
+ab_col_phone = Telefon
+ab_no_contacts = Belum ada kenalan.
+acct_auto_check = Semak mesej baru secara automatik
+acct_note_auto_check = Mati: ZBox tidak pernah menghubungi akaun ini sendiri -- tiada pemerhatian mel baru, tiada penyegaran berjadual, tiada muat turun di latar belakang -- jadi pelayan yang tidak boleh diharap tidak dapat memperlahankan akaun lain. Mel yang dimuat turun masih dibuka, dan Segarkan (F5), menghantar dan membuang masih sampai ke pelayan. Sama seperti Jeda Semakan Automatik dalam menu Alatan atau menu konteks akaun.
+bl_day_ago = 1 hari lalu
+bl_days_ago = {days} hari lalu
+bl_label_blocklists = Senarai sekatan
+bl_label_phishing = Senarai pancingan data
+bl_last_failed = Percubaan terakhir gagal: %s
+bl_not_downloaded = Belum dimuat turun.
+bl_save_failed = %s dimuat turun tetapi tidak dapat disimpan: %s
+bl_seed_only = %s domain daripada senarai terbina dalam. Belum pernah dikemas kini dari internet.
+bl_some_failed = Sesetengah sumber gagal: %s
+bl_some_unreachable = Sesetengah sumber tidak dapat dicapai: %s
+bl_status_line = %s domain. Kali terakhir dikemas kini %s.
+bl_up_to_date = %s sudah terkini.
+bl_update_failed = Tidak dapat mengemas kini %s: %s
+bl_updated = %s dikemas kini: %s domain.
+cc_age_choice = Setiap cache mesej berusia %s
+cc_auto_button = Pembersihan automatik: mesej cache lebih lama daripada %s...
+comp_btn_discard = &Buang
+comp_btn_keep_editing = &Terus edit
+comp_btn_save_draft = &Simpan Draf
+comp_no_account = Tiada akaun dikonfigurasi
+comp_saving_draft = Menyimpan draf…
+comp_this_message = mesej ini
+comp_unsent_save_q = Simpan %s sebagai draf sebelum menutup?
+comp_unsent_tray_q = Simpan %s sebagai draf sebelum ZBox ke dulang?
+doc_unreadable = Fail dokumentasi tidak dapat dibaca:
+envlist_all_disabled = Setiap akaun dinyahdayakan.
+envlist_col_date = Tarikh
+envlist_col_from = Daripada
+envlist_col_status = Status
+envlist_col_subject = Subjek
+envlist_collapsed = Diruntuhkan (%d)
+envlist_empty = Tiada mesej dalam folder ini.
+envlist_loading = Memuatkan mesej...
+envlist_no_accounts = Belum ada akaun dikonfigurasi.
+envlist_no_ignored = Tiada thread diabaikan dalam folder ini.
+envlist_no_watched = Tiada thread diikuti dalam folder ini.
+envlist_select_folder = Pilih akaun atau folder untuk memuatkan mesej.
+eula_link_0 = Buka halaman lesen Himalaya dalam pelayar anda
+eula_link_1 = Buka halaman lesen StevenBlack hosts dalam pelayar anda
+eula_link_2 = Buka halaman lesen EasyList/EasyPrivacy dalam pelayar anda
+eula_link_3 = Buka halaman lesen Phishing.Database dalam pelayar anda
+eula_read_note = Baca lesen di bawah, termasuk bahagian pihak ketiga. Anda mesti menandakan Saya Bersetuju sebelum Seterusnya tersedia. Saya Tidak Bersetuju menutup ZBox tanpa memulakannya, dan membuang apa yang telah dicipta oleh jalanan ini setakat ini.
+eula_unreadable = Fail lesen tidak dapat dibaca:\n%s
+filters_title = Jalankan Penapis
+flag_title = Bintangkan Mesej
+folder_type_archive = Arkib
+folder_type_drafts = Draf
+folder_type_inbox = Peti masuk
+folder_type_junk = Mel Remeh
+folder_type_sent = Dihantar
+folder_type_trash = Sampah
+mime_application_json = Fail JSON
+mime_application_msword = Dokumen Word
+mime_application_octet_stream = Fail binari
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Hamparan Excel
+mime_application_vnd_ms_powerpoint = Persembahan PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Persembahan PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Hamparan Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Dokumen Word
+mime_application_xml = Fail XML
+mime_application_zip = Arkib ZIP
+mime_audio_mpeg = Audio MP3
+mime_audio_ogg = Audio OGG
+mime_audio_wav = Audio WAV
+mime_image_bmp = Imej BMP
+mime_image_gif = Imej GIF
+mime_image_jpeg = Imej JPEG
+mime_image_png = Imej PNG
+mime_image_svg_xml = Imej SVG
+mime_image_webp = Imej WebP
+mime_text_csv = Fail CSV
+mime_text_html = Fail HTML
+mime_text_plain = Fail teks
+mime_video_mp4 = Video MP4
+mime_video_x_msvideo = Video AVI
+move_title_junk = Tandakan Sebagai Mel Remeh
+move_title_move_to = Pindah Ke
+move_title_not_junk = Tandakan Sebagai Bukan Mel Remeh
+mp_explain_set = Kata laluan utama ditetapkan. Ia yang membolehkan folder ZBox ini membuka kata laluan akaun tersimpannya pada komputer lain.\n\nBiarkan kedua-dua kotak kata laluan baru kosong dan tekan OK untuk membuangnya. Membuangnya tidak menjejaskan komputer ini, tetapi folder tidak akan lagi berfungsi pada mana-mana komputer lain tanpa log masuk semula setiap akaun.
+mp_explain_unset = Tiada kata laluan utama ditetapkan, jadi kata laluan akaun yang disimpan hanya boleh dibaca pada komputer ini dan akaun Windows ini. Salin folder ke tempat lain dan setiap akaun perlu log masuk semula ke pelayan melnya.\n\nTetapkan satu dan ZBox akan memintanya sekali pada setiap komputer baru, kemudian membuka kunci seperti biasa di sana selepas itu. Komputer ini tidak akan bertanya lagi.\n\nTulis dan simpan di tempat yang selamat. Ia tidak disimpan di mana-mana dan tidak dapat dipulihkan: jika anda terlupa, setiap akaun perlu log masuk semula ke pelayan melnya.
+mp_label_confirm = &Sahkan kata laluan utama baru:
+mp_label_current = &Kata laluan utama semasa:
+mp_label_master = &Kata laluan utama:
+mp_label_new = &Kata laluan utama baru:
+mp_name_confirm = Sahkan kata laluan utama baru
+mp_name_current = Kata laluan utama semasa
+mp_name_master = Kata laluan utama
+mp_name_new = Kata laluan utama baru
+mp_prompt_existing = Kata laluan akaun tersimpan anda dilindungi pada komputer ini sahaja. Tetapkan kata laluan utama supaya ia juga boleh dibuka jika anda memindahkan ZBox ke komputer lain.
+mp_prompt_first_run = ZBox akan menyimpan kata laluan akaun anda. Tetapkan kata laluan utama sekarang supaya ia masih boleh dibuka jika anda memindahkan ZBox ke komputer lain.
+mp_prompt_new_account = ZBox akan menyimpan kata laluan akaun ini. Tetapkan kata laluan utama dahulu supaya akaun masih boleh dibuka jika anda memindahkan ZBox ke komputer lain.
+mp_removed_done = Kata laluan utama dibuang. Kata laluan yang disimpan kini hanya berfungsi pada komputer ini dan akaun Windows ini.
+mp_set_done = Kata laluan utama ditetapkan. ZBox akan memintanya sekali pada setiap komputer baru folder ini dibuka, dan membuka kunci seperti biasa di sana selepas itu.
+mv_body_title = Teks Mesej
+mv_col_format = Format
+mv_col_name = Nama
+mv_col_size = Saiz
+mv_format_unknown = Tidak diketahui
+mv_size_unknown = Saiz tidak diketahui
+na_account_settings = Tetapan Akaun dan Identiti
+na_disable_account = Nyahdayakan Akaun
+na_edit_signature = Edit Tandatangan
+na_message_filters = Tapis Mesej
+na_mute_account = Senyapkan Akaun
+na_pause_auto_check = Jeda Semakan Automatik
+na_remove_account = Buang Akaun
+na_set_default = Tetapkan Sebagai Akaun Lalai
+no_offline_copy = Tiada salinan luar talian bagi %s. Bukanya semasa dalam talian, atau gunakan Fail, Luar talian, Segerakkan Sekarang.
+perm_delete_confirm = {msg} Ini melangkau folder Sampah dan tidak boleh dibatalkan.
+perm_delete_many = Buang {count} mesej secara kekal?
+perm_delete_one = Buang {count} mesej secara kekal?
+preset_note_apple = Apple memerlukan kata laluan khusus aplikasi.
+preset_note_fastmail = Fastmail memerlukan kata laluan aplikasi.
+preset_note_google = Google memerlukan kata laluan aplikasi atau OAuth2, bukan kata laluan biasa anda.
+preset_note_proton = ProtonMail memerlukan aplikasi ProtonMail Bridge berjalan secara setempat.
+preset_note_yahoo = Yahoo memerlukan kata laluan aplikasi.
+priv_phishing_not_loaded = Senarai pancingan data: belum dimuatkan. Ia dimuat turun kali pertama peraturan ini hidup dan ZBox dalam talian.
+priv_phishing_prefix = Senarai pancingan data:
+priv_status_unavailable = Status senarai sekatan tidak tersedia.
+rdr_load_failed = Tidak dapat memuatkan mesej.\n\n{message}
+rdr_loading = Memuatkan mesej...
+rdr_select_message = Pilih mesej untuk membacanya di sini.
+set_autosave_off = Mati — gunakan Simpan Draf (Ctrl+S) untuk menyimpan secara manual
+set_autosave_seconds = Setiap {seconds} saat
+set_no_unlock = Tiada kunci laluan atau kunci keselamatan yang boleh digunakan di sini
+set_purge_days = Selepas {days} hari
+set_purge_off = Mati — Sampah dan Mel Remeh tidak pernah dibersihkan secara automatik
+set_purge_one_day = Selepas 1 hari
+set_rt_bundled_installed = Masa jalan disertakan: dipasang.
+set_rt_bundled_many = Masa jalan disertakan: %s dipasang.
+set_rt_bundled_none = Masa jalan disertakan: tiada dipasang, jadi ZBox menggunakan yang seluruh sistem.
+set_rt_bundled_unknown = Masa jalan disertakan: tidak dapat ditentukan.
+set_rt_bundled_ver = Masa jalan disertakan: versi %s dipasang.
+set_rt_system_unknown = Masa jalan seluruh sistem: versi tidak dapat ditentukan.
+set_rt_system_ver = Masa jalan seluruh sistem: versi %s.
+set_unlock_many = %d kaedah buka kunci boleh digunakan di sini
+set_unlock_unreadable = Kaedah buka kunci tidak dapat dibaca
+sig_tab_formatted = Berformat
+sig_tab_source = Sumber HTML
+srch_all_accounts = Semua Akaun
+srch_all_folders = Semua Folder
+tab_mail = Mel
+tab_new_message = Mesej Baru
+tab_saved_message = Mesej Tersimpan
+title_copy_to_err = Salin Ke
+title_mark_message = Tandakan Mesej
+title_unsent_message = Mesej Belum Dihantar
+tree_unified_root = Folder Gabungan
+unlock_kind_passkey = Kunci laluan (Windows Hello)
+unlock_kind_security_key = Kunci keselamatan
+unlock_prompt_message = Windows meminta anda mengesahkan. Jawab gesaannya dengan Windows Hello, PIN anda, atau kunci keselamatan anda. Tetingkap ini menutup sendiri apabila Windows selesai.
+unlock_prompt_title = Keselamatan Windows
+unlock_registering = Mendaftarkan kaedah buka kunci ini
+unlock_the_passkey = Kunci laluan
+unlock_the_security_key = Kunci keselamatan
+wildcard_eml = Fail e-mel (*.eml)|*.eml|Semua fail (*.*)|*.*
+wildcard_export = Eksport ZBox (*.json)|*.json
+wiz_not_supported = TIDAK DISOKONG: {name}. {note} Akaun ini tidak boleh ditambah dalam ZBox.
+stock_apply = &Guna
+stock_cancel = Batal
+stock_close = &Tutup
+stock_help = &Bantuan
+stock_no = &Tidak
+stock_ok = OK
+stock_yes = &Ya
+wiz_btn_back = &< Kembali
+wiz_btn_finish = &Selesai
+wiz_btn_next = &Seterusnya >
+acct_unsaved_q = Simpan perubahan pada akaun ini?
+btn_save = &Simpan
+spell_add_to_dictionary = &Tambah ke kamus
+spell_no_suggestions = Tiada cadangan
+title_signature_for = Tandatangan: {account}
+title_mark_folder_read = Tandakan Folder sebagai sudah Dibaca
+title_update_available = Kemas Kini ZBox
+update_available = ZBox {new} tersedia. Anda mempunyai {current}.
+upd_notes_label = Nota keluaran:
+upd_no_notes = Tiada nota keluaran.
+upd_notes_name = Nota keluaran
+upd_update_now = Ya, kemas kini sekarang
+upd_remind_later = Ingatkan saya kemudian
+title_update_download = Memuat Turun Kemas Kini ZBox
+upd_downloading = Memuat turun ZBox {version}...
+upd_progress_name = Kemajuan muat turun
+upd_cancel = Batal
+upd_cancelling = Membatalkan...
+set_updates_label = Kemas kini:
+set_update_auto = Semak kemas kini secara automatik
+set_update_mode_label = Apabila kemas kini ditemui:
+set_update_ask = Tanya saya
+set_update_silent = Muat turun dan pasang tanpa bertanya
+set_update_note = ZBox menyemak GitHub untuk keluaran yang lebih baharu paling kerap sekali sehari, hanya ketika ia melahu, dan tidak menghantar apa-apa selain nombor versinya. Tanya saya menunjukkan versi baharu dan nota keluarannya, dengan Ya, kemas kini sekarang dan Ingatkan saya kemudian. Muat turun dan pasang tanpa bertanya mengambil kemas kini semasa melahu dan memasangnya apabila anda keluar sepenuhnya dari ZBox pada kali berikutnya, tidak sekali-kali semasa anda bekerja. Kemas kini hanya menggantikan fail program ZBox sendiri: akaun, kata laluan, tetapan, mel, log, tema bunyi dan sebarang bahasa yang anda tambah tidak pernah disentuh, dan versi sebelumnya disimpan serta dipulihkan sendiri jika versi baharu gagal bermula. Bantuan, Kemas Kini juga mempunyai Semak Kemas Kini Sekarang dan halaman keluaran untuk mengemas kini secara manual.
+set_update_check_now = Semak sekarang
+mv_attachment_button = {filename} ({format})
+att_open = Buka
+att_save = Simpan...
+att_save_all = Simpan Semua Lampiran
+title_save_attachment = Simpan Lampiran
+title_full_headers = Semua Pengepala
+hdr_copy_all = Salin Semua
+acct_identity_own_signature = Guna tandatangan sendiri
+acct_identity_own_reply_to = Guna alamat Balas-Kepada sendiri
+acct_identity_reply_to = Alamat Balas-Kepada
+acct_identity_always_cc = Sentiasa Cc kepada alamat ini
+acct_identity_cc = Alamat Cc
+acct_identity_always_bcc = Sentiasa Bcc kepada alamat ini
+acct_identity_bcc = Alamat Bcc
+acct_identity_own_folders = Guna folder Draf dan Dihantar sendiri
+acct_identity_drafts = Folder draf
+acct_identity_sent = Folder dihantar
+acct_identity_own_smtp = Guna pelayan keluar sendiri
+acct_identity_smtp_login = Nama log masuk keluar
+acct_identity_smtp_password = Kata laluan keluar
+acct_identity_test_smtp = Uji Pelayan Keluar
+acct_identity_note_smtp = Biarkan nama log masuk kosong untuk log masuk dengan alamat e-mel identiti ini. Salinan yang dihantar masuk ke folder Dihantar akaun ini, atau ke folder Dihantar identiti ini sendiri jika ada.
+identity_field_required = Isi {field}, atau nyahtanda kotaknya.
+identity_field_invalid = {field} mengandungi alamat yang tidak sah.
+identity_folders_required = Pilih folder draf, folder dihantar atau kedua-duanya, atau nyahtanda kotaknya.
+identity_password_required = Masukkan kata laluan keluar.
+identity_smtp_testing = Menguji pelayan keluar.
+identity_smtp_ok = Pelayan keluar menerima log masuk.
+identity_smtp_failed = Ujian pelayan keluar gagal.\n\n{error}
+set_bare_keys_note_move = M dan C membuka menu Alih ke dan Salin ke berisi folder untuk mesej yang dipilih, dan Shift+M membuka kotak untuk anda menaip sebahagian nama folder bagi mengalihkannya ke situ. Mematikan ini juga mengembalikan M dan C kepada navigasi huruf pertama.
+folder_search_filter = Nama folder mengandungi
+folder_search_list = Folder yang sepadan
+folder_search_no_match = Tiada folder yang sepadan dengan nama itu.
+wiz_signin_method = Kaedah log masuk
+wiz_method_password = Kata laluan
+wiz_method_microsoft = Akaun Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Log masuk Microsoft. Tetapan pelayan untuk Outlook.com, Hotmail, Live dan Microsoft 365 telah diisi.
+wiz_welcome_notice = Gmail. Kata laluan Google biasa anda akan ditolak, tetapi kata laluan aplikasi berfungsi. Pengesahan dua langkah perlu dihidupkan dahulu. Butang di bawah membuka arahan Google.\n\nOutlook.com, Hotmail, Live dan Microsoft 365. Akaun ini log masuk dengan akaun Microsoft anda. Pada halaman Log Masuk, pilih Akaun Microsoft, kemudian log masuk melalui pelayar atau dengan kod.\n\nPembekal lain. Kata laluan biasa atau kata laluan aplikasi biasanya berfungsi, dan halaman bantuan pembekal anda menyenaraikan tetapan pelayan.
+preset_note_outlook = Akaun Outlook.com, Hotmail, Live dan MSN log masuk dengan akaun Microsoft. Pilih Akaun Microsoft sebagai kaedah log masuk pada halaman Log Masuk.
+ms_status_name = Status log masuk Microsoft
+ms_browser_button = Log masuk melalui pelayar
+ms_code_button = Log masuk dengan kod
+ms_copy_code = Salin kod
+ms_open_page = Buka halaman log masuk
+ms_stop = Berhenti menunggu
+ms_not_configured = Log masuk Microsoft tidak disediakan dalam salinan ZBox ini.
+ms_not_signed_in = Belum log masuk. Log masuk melalui pelayar, atau dengan kod pada mana-mana peranti.
+ms_signed_in = Log masuk sebagai {address}.
+ms_signed_in_plain = Telah log masuk.
+ms_needs_sign_in = Akaun ini perlu log masuk ke Microsoft semula. Log masuk melalui pelayar, atau dengan kod pada mana-mana peranti.
+ms_reason_cancelled = Log masuk dihentikan.
+ms_reason_timeout = Tiada jawapan tiba tepat pada masanya.
+ms_reason_denied = Akses tidak dibenarkan.
+ms_reason_expired = Kod telah tamat tempoh. Minta kod baharu.
+ms_reason_network = Microsoft tidak dapat dihubungi. Semak sambungan dan cuba lagi.
+ms_reason_server = Jawapan Microsoft: {detail}
+ms_page_done = Telah log masuk. Anda boleh menutup halaman ini dan kembali ke ZBox.
+ms_page_failed = Log masuk tidak selesai. Kembali ke ZBox untuk butirannya.
+ms_browser_waiting = Pelayar anda menunjukkan halaman log masuk Microsoft. Selesaikan log masuk di sana, kemudian kembali ke ZBox.
+ms_code_asking = Meminta kod log masuk daripada Microsoft...
+ms_code_waiting = Pada mana-mana peranti, buka {address} dan masukkan kod {code}. ZBox menunggu di sini sehingga anda selesai log masuk.
+ms_failed = Log masuk tidak selesai. {reason}
+ms_code_copied = Kod disalin.
+offline_inbox_only = Hanya Peti Masuk dan Arkib disimpan untuk kegunaan luar talian. Pergi dalam talian untuk membuka {folder}.
+block_sender_rule_name = Sekat {sender}
+title_block_sender = Sekat Penghantar Ini
+title_unblock_sender = Nyahsekat Penghantar Ini
+set_clear_inbox_cache = Kosongkan cache mesej apabila mesej keluar dari Peti Masuk
+set_clear_inbox_cache_note = Apabila hidup, salinan luar talian dan kandungan tersimpan sesuatu mesej dipadam sebaik sahaja ia keluar dari Peti Masuk, juga apabila ia dipadam atau dialihkan di tempat lain, seperti pada telefon anda, supaya ia tidak muncul di tempat ia sudah tiada. Hanya Peti Masuk menyimpan fail ini; setiap folder lain sentiasa dibaca daripada pelayan.
+empty_trash_all_confirm = Padam secara kekal semua mesej dalam Sampah bagi semua akaun?\n\nTindakan ini tidak boleh dibuat asal.
+
+[errors]
+language_restart_failed = ZBox tidak dapat memulakan semula dirinya:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Tidak dapat membuka klien mel untuk {address}.
+
+wizard_test_failed = Sambungan gagal:\n\n{error}
+
+contacts_import_unreadable = Tidak dapat membaca fail itu.\n\n{error}
+contacts_export_unwritable = Tidak dapat menulis fail itu.\n\n{error}
+
+attach_unreadable = Tidak dapat membaca lampiran {path}:\n{error}
+send_failed = Tidak dapat menghantar mesej.\n\n{error}
+draft_attach_unreadable = Tidak dapat membaca lampiran {path}:\n{error}\n\nDraf tidak disimpan.
+draft_save_failed = Tidak dapat menyimpan draf.\n\n{error}
+
+clipboard_unavailable = Papan keratan tidak dapat dibuka.
+open_link_failed = Tidak dapat membuka pelayar anda untuk:\n{url}
+
+master_password_mismatch = Dua kotak kata laluan utama baru tidak sepadan.
+master_password_required = Masukkan kata laluan utama, atau tekan Batal.
+master_password_not_set = Kata laluan utama tidak dapat ditetapkan: {error}
+master_password_not_here = Kata laluan utama tidak boleh ditukar dari sini.
+
+attachment_save_failed = Tidak dapat menyimpan lampiran.\n\n{error}
+attachments_save_failed = Tidak dapat menyimpan lampiran.\n\n{error}
+print_failed = Tidak dapat mencetak mesej. Semak bahawa pencetak dikonfigurasi.
+print_preview_failed = Tidak dapat membuka previu cetakan. Semak bahawa pencetak dikonfigurasi.
+
+related_search_failed = Tidak dapat mencari mesej berkaitan.\n\n{error}
+search_failed = Carian gagal.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox tidak dapat menemui folder konfigurasinya, jadi kaedah buka kunci tidak boleh diurus di sini.
+shortcut_no_folder = ZBox tidak dapat menentukan foldernya sendiri, jadi pintasan tidak boleh dicipta dari sini.
+shortcut_failed_settings = Pintasan desktop tidak dapat dicipta:\n\n{error}
+
+unlock_method_failed = {what} tidak berfungsi.\n\n{error}
+unlock_check_failed = Kata laluan utama tidak dapat disemak.\n\n{error}
+unlock_password_wrong = Kata laluan utama itu tidak betul.
+unlock_add_failed = {what} tidak dapat ditambah.\n\n{error}
+unlock_passkey_setup_failed = Kunci laluan tidak dapat disediakan pada komputer ini, jadi tiada apa-apa diubah.\n\n{error}
+unlock_method_test_failed = Kaedah itu tidak berfungsi.\n\n{error}
+
+account_list_unreadable = ZBox tidak dapat membuka senarai akaun anda.\n\n{error}\n\nTiada akaun dimuatkan, dan fail tidak diubah, jadi tiada apa-apa hilang. Menambah, mengedit dan membuang akaun ditolak sehingga ia boleh dibaca.
+account_list_no_accounts = ZBox tidak dapat membuka senarai akaun anda sesi ini ({error}), jadi tiada akaun untuk dipilih. Tiada apa-apa hilang dan tiada apa-apa diubah. Tutup ZBox dan mulakan semula, dan masukkan kata laluan utama anda apabila diminta.
+open_message_failed = Tidak dapat membuka mesej.\n\n{error}
+filters_list_failed = Tidak dapat menyenaraikan mesej dalam {folder}.\n\n{error}
+filters_move_failed = Tidak dapat memindahkan mesej yang ditapis.\n\n{error}
+cache_clear_failed = Tidak dapat mengosongkan cache.\n\n{error}
+folder_create_failed = Tidak dapat mencipta folder.\n\n{error}
+folder_rename_failed = Tidak dapat menamakan semula folder.\n\n{error}
+folder_delete_failed = Tidak dapat membuang folder.\n\n{error}
+folder_subscribe_failed = Tidak dapat melanggan folder.\n\n{error}
+folder_unsubscribe_failed = Tidak dapat membatalkan langganan folder.\n\n{error}
+saved_open_failed = Tidak dapat membuka fail.\n\n{error}
+saved_parse_failed = Tidak dapat menghurai fail ini sebagai mesej e-mel.\n\n{error}
+save_file_failed = Tidak dapat menyimpan fail.\n\n{error}
+save_fetch_failed = Tidak dapat mengambil mesej untuk disimpan.\n\n{error}
+empty_trash_failed = Tidak dapat membuang Sampah.\n\n{error}
+empty_junk_failed = Tidak dapat membuang Mel Remeh.\n\n{error}
+export_write_failed = Tidak dapat menulis fail eksport.\n\n{error}
+import_read_failed = Tidak dapat membaca fail ini sebagai eksport ZBox.\n\n{error}
+import_not_export = Fail ini nampaknya bukan eksport ZBox.\n\n{error}
+search_open_failed = Tidak dapat membuka mesej ini.
+related_load_failed = Tidak dapat memuatkan mesej ini.\n\n{error}
+reply_load_failed = Tidak dapat memuatkan mesej untuk dibalas.\n\n{error}
+forward_load_failed = Tidak dapat memuatkan mesej untuk dikirim semula.\n\n{error}
+action_failed = Tidak dapat melengkapkan tindakan ini.\n\n{error}
+undo_failed = Tidak dapat membatalkan {label}.\n\n{error}
+copy_failed = Tidak dapat menyalin mesej.\n\n{error}
+delete_failed = Tidak dapat membuang mesej.\n\n{error}
+archive_failed = Tidak dapat mengarkibkan mesej.\n\n{error}
+master_password_not_changed = Kata laluan utama tidak dapat ditukar: {error}
+shortcut_failed_startup = Pintasan desktop tidak dapat dicipta:\n\n{error}\n\nZBox akan terus bermula. Anda boleh cuba lagi kemudian dari Tetapan.
+account_locked_action = ZBox tidak dapat melakukan: %s. Senarai akaun tidak dapat dibuka sesi ini (%s), dan tiada apa-apa diubah. Tutup ZBox dan mulakan semula, dan masukkan kata laluan utama anda jika diminta.
+send_tls_mismatch = Tidak dapat menghantar mesej. Pelayan keluar menjawab tanpa penyulitan, jadi penyulitan keluar tidak sepadan dengan port. Dalam Alatan, Tetapan Akaun dan Identiti, gunakan STARTTLS untuk port 587, atau SSL/TLS untuk port 465, kemudian hantar lagi.\n\n{error}
+mark_folder_read_failed = Tidak dapat menandakan folder sebagai sudah dibaca.\n\n{error}
+update_failed = Kemas kini tidak dapat dimuat turun, jadi tiada apa-apa yang diubah.\n\n{error}
+update_rolled_back = Kemas kini tidak dapat bermula, jadi versi sebelumnya dipulihkan.
+attachment_open_failed = Tidak dapat membuka lampiran.\n\n{error}
+headers_failed = Tidak dapat memuatkan pengepala mesej.\n\n{error}
+wizard_ms_sign_in_first = Log masuk dengan Microsoft sebelum meneruskan. Gunakan salah satu daripada dua butang log masuk pada halaman ini.
+wizard_provider_unsupported = ZBox tidak dapat log masuk ke pembekal ini. Nota pada halaman ini menerangkan sebabnya. Kembali dan gunakan alamat e-mel lain, atau batalkan.
+acct_ms_sign_in_first = Log masuk dengan Microsoft sebelum menyimpan, atau pilih Kata laluan sebagai kaedah log masuk.
+ms_sign_in_again = {account} perlu log masuk ke Microsoft semula. Buka Tetapan Akaun dan Identiti dan log masuk di sana.
+empty_trash_all_failed = Tidak dapat mengosongkan Sampah bagi: {accounts}
+
+[help]

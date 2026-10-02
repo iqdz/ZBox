@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = العربية
+code = ar
+direction = rtl
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = تم إرسال الرسالة.
+draft_saved = تم حفظ المسودة.
+signature_inserted = تم إدراج التوقيع.
+signature_none = لا يوجد توقيع لهذا الحساب.
+signature_saved = تم حفظ التوقيع.
+signature_not_saved = لم يتم حفظ التوقيع.
+pasted_as_quotation = تم اللصق كاقتباس.
+clipboard_empty = الحافظة فارغة.
+word_count = {words} كلمة، {characters} حرف.
+report_copied = تم نسخ التقرير.
+compose_tab_needed = يحتاج هذا الأمر إلى علامة تبويب إنشاء رسالة.
+attach_file_instead = لا تُدرَج الملفات المُفلتة في نص الرسالة. استخدم إرفاق ملف لإرسال واحد.
+
+# Formatting in the message body
+formatting_here = التنسيق هنا: {formatting}.
+no_formatting_here = لا يوجد تنسيق هنا، نص عادي.
+
+# Spelling
+nothing_to_check = لا يوجد شيء للتحقق منه.
+no_misspellings = لا توجد أخطاء إملائية.
+spelling_dictionary_unavailable = قاموس التدقيق الإملائي غير متوفر.
+next_misspelling_first = استخدم الخطأ الإملائي التالي أولاً.
+word_added = تمت إضافة {word} إلى القاموس.
+word_not_added = تعذّرت إضافة {word}.
+corrections_applied_one = تم تطبيق تصحيح واحد.
+corrections_applied_many = تم تطبيق {count} تصحيحات.
+corrections_applied_partly = تم تطبيق {applied} من {total} تصحيحات. تم رفض الباقي؛ راجع السجل.
+occurrences_replaced_one = تم استبدال تكرار واحد.
+occurrences_replaced_many = تم استبدال {count} تكرارات.
+
+# Reading mail
+message_did_not_open = لم تُفتح الرسالة. لم يستجب الخادم. اضغط Enter للمحاولة مرة أخرى.
+thread_open = {messages} في هذا النقاش. اضغط مرة أخرى للإغلاق.
+no_thread_selected = لم يتم تحديد أي نقاش.
+thread_watched = تتم مراقبة النقاش.
+thread_not_watched = لم تعد مراقبة النقاش.
+thread_ignored = تم تجاهل النقاش.
+thread_not_ignored = لم يعد النقاش متجاهلاً.
+none_found = لم يُعثر على شيء.
+refreshing_this_folder = جارٍ تحديث هذا المجلد.
+refreshing_all_accounts = جارٍ تحديث جميع الحسابات.
+message_view_html = عرض الرسالة: HTML (منسّق).
+message_view_text = عرض الرسالة: نص.
+remote_content_blocked = تم حظر المحتوى البعيد.
+remote_content_unblocked = تم إلغاء حظر المحتوى البعيد.
+remote_content_already_showing = المحتوى البعيد معروض بالفعل في هذه الرسالة.
+archived = تمت الأرشفة.
+copied_to_folder = تم النسخ إلى {to_folder}.
+deleted_one = تم حذف الرسالة نهائياً.
+deleted_many = تم حذف {count} رسائل نهائياً.
+trashed_one = تم نقل الرسالة إلى سلة المهملات.
+trashed_many = تم نقل {count} رسائل إلى سلة المهملات.
+
+# Accounts and new mail
+no_account_yet = لا يوجد حساب للانتقال إليه بعد.
+inbox_landed = صندوق وارد {name}.
+account_enabled = تم تفعيل {name}.
+account_disabled = تم تعطيل {name}.
+new_mail_one = رسالة جديدة واحدة لـ{name}.
+new_mail_many = {count} رسائل جديدة لـ{name}.
+refresh_all_done_one = تم تحديث حساب واحد.
+refresh_all_done_many = تم تحديث {count} حسابات.
+refresh_all_done_failures = تم تحديث {count} حسابات، تعذّر تحديث {failed}.
+refresh_all_done_failures_one = تم تحديث {count} حساب، تعذّر تحديث {failed}.
+
+# The sender of the message in view
+sender_address_copied = {sender}. تم نسخ العنوان.
+sender_no_address = {sender}. لا يوجد عنوان لنسخه.
+clipboard_not_opened = {sender}. تعذّر فتح الحافظة.
+
+# The signature editor
+signature_page_formatted = منسّق. هذا ما سيتم حفظه.
+signature_page_html = مصدر HTML. هذا ما سيتم حفظه.
+signature_page_html_still_wins = منسّق. مصدر HTML هو ما سيتم حفظه فعلياً.
+
+# Background work
+phishing_list_updating = جارٍ تحديث قائمة التصيّد في الخلفية.
+cache_cleared = تم مسح {files} ملف(ات) مخزّنة مؤقتاً، {size} ميجابايت.
+hotkeys_diagnostic_on = تشخيص اختصارات المفاتيح مفعّل، محدد
+hotkeys_diagnostic_off = تشخيص اختصارات المفاتيح معطّل، غير محدد
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = أرشفة
+action_delete = حذف
+action_delete_permanently = حذف نهائي
+action_mark_as_junk = تعيين كبريد مزعج
+action_mark_as_not_junk = تعيين على أنه ليس بريداً مزعجاً
+action_move_to = نقل إلى
+action_copy_to = نسخ إلى
+action_mark_message = تمييز الرسالة
+action_undo = تراجع
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = تم التراجع عن {action}.
+undo_done_many = تم التراجع عن {action} لـ{count} رسائل.
+junk_marked_one = تم التعيين كبريد مزعج.
+junk_marked_many = تم تعيين {count} رسائل كبريد مزعج.
+junk_no_new_sender = لم يُحظر أي مرسل جديد: إما محظور بالفعل، أو قائمة بريدية، أو أحد عناوينك الخاصة.
+not_junk_marked_one = تم التعيين على أنه ليس بريداً مزعجاً.
+not_junk_marked_many = تم تعيين {count} رسائل على أنها ليست بريداً مزعجاً.
+moved_to_one = تم النقل إلى {to_folder}.
+moved_to_many = تم نقل {count} رسائل إلى {to_folder}.
+copied_to_many = تم نسخ {count} رسائل إلى {to_folder}.
+marked_read = تم التمييز كمقروءة.
+marked_unread = تم التمييز كغير مقروءة.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = تم الإلغاء بعد {completed} من {total}. نجح {succeeded}، وفشل {failed}.
+bulk_failed_one = {done} فشلت {failed} من رسالة واحدة.
+bulk_failed_many = {done} فشلت {failed} من {total} رسائل.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = عريض
+format_word_italic = مائل
+format_word_strike = يتوسطه خط
+format_word_href = رابط
+format_word_bullet = قائمة نقطية
+format_word_number = قائمة مرقمة
+format_word_quote = اقتباس
+format_word_code = شيفرة برمجية
+format_word_heading1 = عنوان
+format_applied = تم تطبيق {formatting}.
+format_inserted = تم إدراج {formatting}.
+format_not_available = {formatting} غير متاح في نص الرسالة العادي.
+format_on = {formatting} مفعّل
+format_off = {formatting} معطّل
+link_applied = تم تطبيق الرابط.
+link_applied_to_selection = تم تطبيق الرابط على التحديد.
+plain_body_formatting = يعرض نص الرسالة العادي تنسيقه كوسوم.
+
+# Reaching either end of a thread
+thread_edge_first = أول رسالة في هذا النقاش. اضغط مرة أخرى للإغلاق.
+thread_edge_last = آخر رسالة في هذا النقاش. اضغط مرة أخرى للإغلاق.
+auto_check_paused = تم إيقاف الفحص التلقائي مؤقتًا لـ {account}.
+auto_check_resumed = الفحص التلقائي مفعّل لـ {account}.
+html_view_still_loading = لا تزال الرسالة قيد التحميل. يغلقها مفتاح الهروب.
+jump_unified_inbox = صندوق الوارد الموحّد.
+message_still_opening = جارٍ فتح الرسالة. الخادم بطيء.
+remote_none = لا يوجد محتوى بعيد في هذه الرسالة.
+sender_none = لا يوجد مرسل لهذه الرسالة.
+sender_name_no_address = %s، بلا عنوان
+signature_not_switched = لم يتغير التوقيع. اضغط Ctrl+Shift+S لإدراج توقيع هذا الحساب.
+signature_removed_no_signature = تمت إزالة التوقيع. لا يوجد توقيع لهذا الحساب.
+signature_switched = تم تغيير التوقيع إلى توقيع هذا الحساب.
+spell_not_replaced = تعذر استبدال الكلمة.
+spell_replaced_with = تم الاستبدال بـ {word}.
+folder_marked_read = تم تعليم {count} رسالة كمقروءة.
+folder_no_unread = لا توجد رسائل غير مقروءة.
+threads_all_collapsed = تم تقليص كل النقاشات.
+threads_all_expanded = تم توسيع كل النقاشات.
+upd_percent = {percent} بالمئة
+upd_download_done = اكتمل التنزيل. جارٍ تجهيز التحديث...
+upd_updated_to = تم تحديث ZBox إلى {version}.
+header_copied = نُسخ.
+headers_copied = نُسخت كل الترويسات.
+identity_copies_updated = حُدِّثت النسخة والنسخة المخفية لهذه الهوية.
+signature_switched_identity = تغيّر التوقيع إلى توقيع هذه الهوية.
+signature_removed_identity = أُزيل التوقيع. لا توقيع لهذه الهوية.
+signature_not_switched_identity = لم يتغيّر التوقيع. اضغط Ctrl+Shift+S لإدراج توقيع هذه الهوية.
+signature_none_identity = لا توقيع لهذه الهوية.
+move_keys_no_selection = حدّد رسالة أولًا.
+move_keys_no_folders = لا توجد مجلدات للاختيار منها بعد. أعد المحاولة بعد قليل.
+block_sender_done_one = تم حظر {sender}. ستذهب رسائله الجديدة إلى سلة المهملات.
+block_sender_done_many = تم حظر {count} مرسلين. ستذهب رسائلهم الجديدة إلى سلة المهملات.
+block_sender_already = {sender} محظور بالفعل.
+block_sender_own = لم يُحظر: هذا أحد عناوينك.
+block_sender_list_unknown = لم يُحظر: وصلت هذه الرسالة عبر قائمة بريدية ولا تذكر مَن أرسلها. حظر عنوان القائمة سيحظر كل من فيها.
+block_sender_moved = تم حظر المرسل. نُقلت {count} رسالة إلى سلة المهملات.
+block_senders_moved = تم حظر {senders} مرسلين. نُقلت {count} رسالة إلى سلة المهملات.
+unblock_sender_moved = أُلغي حظر المرسل. نُقلت {count} رسالة إلى صندوق الوارد.
+unblock_senders_moved = أُلغي حظر {senders} مرسلين. نُقلت {count} رسالة إلى صندوق الوارد.
+unblock_sender_done = أُلغي حظر {sender}.
+unblock_sender_not_blocked = {sender} غير محظور.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = اكتب شيئاً في الأعلى واضغط Enter أو اختر بحث.
+search_no_account = أضف حساباً أولاً.
+search_no_term = اكتب شيئاً للبحث عنه.
+search_running = جارٍ البحث...
+search_none = لا توجد نتائج لـ"{term}".
+search_found_one = نتيجة واحدة لـ"{term}".
+search_found_many = {count} نتائج لـ"{term}".
+search_failed = فشل البحث.
+
+# The related messages tab
+related_running = جارٍ البحث...
+related_none = لم يُعثر على رسائل ذات صلة.
+related_found_one = تم العثور على رسالة واحدة ذات صلة.
+related_found_many = تم العثور على {count} رسائل ذات صلة.
+related_failed = تعذّر البحث عن رسائل ذات صلة.
+
+# Writing and sending
+sending_via = جارٍ الإرسال عبر {sender}...
+send_failed = فشل الإرسال. راجع السجلات للتفاصيل.
+draft_autosaved = تم الحفظ التلقائي للمسودة.
+draft_autosave_failed = فشل الحفظ التلقائي للمسودة. راجع السجلات للتفاصيل.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = سيتم الآن تحميل المحتوى البعيد لرسائل {sender}.
+downloading_attachment = جارٍ تنزيل {filename}...
+downloading_attachments_one = جارٍ تنزيل مرفق واحد...
+downloading_attachments_many = جارٍ تنزيل {count} مرفقات...
+saved_to = تم الحفظ في {folder}
+attachment_download_failed = فشل تنزيل المرفق.
+
+# Getting mail onto the screen
+loading_folder = جارٍ تحميل {folder} لـ{account}...
+messages_in_folder = {count} رسالة في {folder}.
+messages_in_folder_cached = {count} رسالة في {folder} (آخر نسخة متزامنة، جارٍ التحديث...)
+no_offline_copy = لا توجد نسخة غير متصلة من {folder} بعد.
+refresh_failed_cached = تعذّر تحديث {folder}: يتم عرض آخر نسخة متزامنة.
+no_such_folder = لا يوجد مجلد {folder} لهذا الحساب.
+load_failed = فشل تحميل الرسائل. راجع السجلات للتفاصيل.
+no_more_to_load = لا مزيد من الرسائل لتحميلها في هذا المجلد.
+loading_more = جارٍ تحميل المزيد من الرسائل في {folder}...
+more_loaded = تم تحميل {count} رسالة إضافية.
+no_more_messages = لا مزيد من الرسائل في هذا المجلد.
+load_more_failed = تعذّر تحميل المزيد من الرسائل: {error}
+loading_unified = جارٍ تحميل {folder} الموحّد...
+messages_in_unified = {count} رسالة عبر الحسابات في {folder} الموحّد.
+messages_in_unified_cached = {count} رسالة في {folder} الموحّد (آخر نسخة متزامنة، جارٍ التحديث...)
+auto_purge_done = أزال الحذف التلقائي {count} رسالة قديمة من سلة المهملات/البريد المزعج.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = جاهز.
+opening_message = جارٍ فتح الرسالة...
+opening_message_already = جارٍ فتح الرسالة... (قيد التحميل بالفعل)
+could_not_open_message = تعذّر فتح الرسالة.
+could_not_open_that_message = تعذّر فتح تلك الرسالة.
+could_not_load_message = تعذّر تحميل هذه الرسالة.
+message_still_loading = لا تزال تلك الرسالة قيد التحميل.
+folder_still_loading = لا يزال هذا المجلد قيد التحميل -- حاول مرة أخرى بعد لحظة.
+not_in_thread = هذه الرسالة ليست جزءاً من نقاش.
+no_longer_in_thread = هذه الرسالة لم تعد في النقاش.
+thread_position = الرسالة {position} من {total} في هذا النقاش.
+thread_finished_one = انتهى هذا النقاش (رسالة واحدة).
+thread_finished_many = انتهى هذا النقاش ({count} رسائل).
+select_message_first = حدد رسالة أولاً.
+conversation_failed = تعذّر فتح هذه المحادثة.
+select_message_for_related = حدد رسالة لعرض الرسائل ذات الصلة بها أولاً.
+looking_for_related = جارٍ البحث عن رسائل ذات صلة...
+no_threading_headers = لا تحتوي هذه الرسالة على معرّف رسالة أو ترويسات تسلسل للبحث بها.
+reply_one_at_a_time = يعمل الرد على رسالة واحدة في كل مرة. يُرجى تحديد رسالة واحدة.
+select_message_to_reply = حدد رسالة للرد عليها أولاً.
+preparing_reply = جارٍ تجهيز الرد...
+reply_load_failed = تعذّر تحميل الرسالة الأصلية للرد عليها.
+select_message_to_forward = حدد رسالة لتمريرها أولاً.
+preparing_forward = جارٍ تجهيز الرسالة لتمريرها...
+forward_load_failed = تعذّر تحميل الرسالة لتمريرها.
+compose_tab_needed_hint = يحتاج هذا الأمر إلى علامة تبويب إنشاء رسالة. اضغط Ctrl+N لكتابة رسالة.
+open_message_first_view = افتح رسالة أولاً، ثم اضغط Ctrl+B لتبديل طريقة عرضها.
+open_message_first_remote = افتح رسالة أولاً، ثم اضغط Ctrl+Shift+I لتحميل محتواها البعيد.
+
+# Acting on messages
+copying_message = جارٍ نسخ الرسالة...
+copy_failed = فشل النسخ.
+delete_failed = فشل الحذف.
+already_in_archive = موجودة بالفعل في الأرشيف.
+archiving = جارٍ الأرشفة...
+archive_failed = فشلت الأرشفة.
+action_failed = فشل {action}.
+nothing_to_undo = لا يوجد شيء للتراجع عنه.
+undo_failed = تعذّر التراجع عن {action}.
+
+# Views and folders
+folder_pane_all = لوحة المجلدات: جميع المجلدات.
+folder_pane_unified = لوحة المجلدات: المجلدات الموحّدة.
+sorted_ascending = مرتّب حسب {field}، تصاعدياً.
+sorted_descending = مرتّب حسب {field}، تنازلياً.
+unified_folders_updated = تم تحديث المجلدات الموحّدة.
+zoom_reset = أُعيد حجم خط الرسالة إلى الافتراضي.
+folder_creating = جارٍ إنشاء المجلد "{folder}"...
+folder_created = تم إنشاء المجلد "{folder}".
+folder_create_failed = تعذّر إنشاء المجلد.
+folder_renaming = جارٍ إعادة تسمية "{folder}" إلى "{new_name}"...
+folder_renamed = أُعيدت تسمية المجلد إلى "{new_name}".
+folder_rename_failed = تعذّرت إعادة تسمية المجلد.
+folder_deleting = جارٍ حذف المجلد "{folder}"...
+folder_deleted = تم حذف المجلد.
+folder_delete_failed = تعذّر حذف المجلد.
+folder_subscribing = جارٍ الاشتراك في "{folder}"...
+folder_unsubscribing = جارٍ إلغاء الاشتراك في "{folder}"...
+folder_subscribed = تم الاشتراك.
+folder_unsubscribed = تم إلغاء الاشتراك.
+folder_subscribe_failed = تعذّر الاشتراك في المجلد.
+folder_unsubscribe_failed = تعذّر إلغاء الاشتراك في المجلد.
+
+# Accounts
+account_not_added = لم تتم إضافة الحساب.
+account_added = تمت إضافة الحساب: {account}
+account_settings_not_saved = لم يتم حفظ إعدادات الحساب.
+account_updated = تم تحديث الحساب: {account}
+account_not_removed = لم تتم إزالة الحساب.
+account_removed = تمت إزالة الحساب.
+account_removed_with_files = تمت إزالة الحساب. تم حذف {count} ملف محلي.
+default_account_failed = تعذّر تعيين الحساب الافتراضي.
+default_account_set = أصبح {account} الآن الحساب الافتراضي.
+mute_not_saved = لم يتم حفظ إعداد الكتم.
+account_muted = تم كتم {account}.
+account_unmuted = تم إلغاء كتم {account}.
+export_done = تم تصدير {count} حساب والإعدادات إلى {path}.
+import_done = تم استيراد {count} حساب من {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = لم يتم حفظ المرشّحات.
+filters_saved = تم حفظ المرشّحات لـ{account}.
+filters_checking = جارٍ فحص {folder} مقابل المرشّحات الخاصة بك...
+filters_none_matched = التشغيل الآن: لم تطابق أي رسالة في {folder} أي قاعدة مفعّلة.
+filters_run_failed = تعذّر تشغيل المرشّحات.
+filters_moving = جارٍ نقل {count} رسالة تمت تصفيتها...
+filters_move_failures = المرشّحات: تعذّر نقل {count} رسالة.
+filters_moved = نقلت المرشّحات {count} رسالة من {folder}.
+filters_move_failed = تعذّر نقل الرسائل التي تمت تصفيتها.
+cache_not_cleared = لم يتم مسح ذاكرة التخزين المؤقت.
+auto_cache_cleanup = التنظيف التلقائي لذاكرة التخزين المؤقت: الرسائل الأقدم من {age}.
+phishing_update_failed = تعذّر تحديث قائمة التصيّد: {error}
+blocklist_update_failed = تعذّر تحديث قائمة الحظر: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = افتح رسالة أولاً، ثم استخدم حفظ باسم.
+saving_message = جارٍ حفظ الرسالة...
+save_file_failed = تعذّر حفظ الملف.
+save_fetch_failed = تعذّر جلب الرسالة لحفظها.
+open_message_first_print = افتح رسالة أولاً، ثم استخدم طباعة.
+open_message_first_preview = افتح رسالة أولاً، ثم استخدم معاينة الطباعة.
+refreshing_accounts = جارٍ تحديث {count} حساب...
+emptying_trash = جارٍ إفراغ سلة المهملات لـ{account}...
+trash_already_empty = كانت سلة المهملات فارغة بالفعل.
+trash_emptied = تم إفراغ سلة المهملات: تم محو {count} رسالة نهائياً.
+empty_trash_failed = تعذّر إفراغ سلة المهملات.
+emptying_junk = جارٍ إفراغ البريد المزعج لـ{account}...
+junk_already_empty = كان البريد المزعج فارغاً بالفعل.
+junk_emptied = تم إفراغ البريد المزعج: تم محو {count} رسالة نهائياً.
+junk_emptied_prefix = تم إفراغ البريد المزعج:
+junk_part_purged = تم محو {count} نهائياً
+junk_part_in_trash = تم نقل {count} إلى سلة المهملات لكن لم يُؤكَّد إزالتها، تحقق من سلة المهملات
+junk_part_not_moved = لم يتم نقل {count} إلى سلة المهملات، لا تزال في البريد المزعج
+empty_junk_failed = تعذّر إفراغ البريد المزعج.
+back_online = عاد الاتصال.
+offline_sync_running = جارٍ مزامنة {account} للاستخدام بدون اتصال...
+offline_sync_failed = فشلت المزامنة بدون اتصال: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = حدد رسالة أو افتحها أولاً.
+select_or_open_message_ctrl_u = حدد رسالة أو افتحها أولاً، ثم اضغط Ctrl+U.
+no_sender_address = لا يوجد عنوان مرسل لإضافته لهذه الرسالة.
+contact_added = تمت إضافة {contact} إلى دفتر العناوين الخاص بك.
+contact_already_there = {contact} موجود بالفعل في دفتر العناوين الخاص بك.
+privacy_saved = تم حفظ إعدادات الخصوصية. افتح رسالة مرة أخرى لتطبيقها.
+message_font_size = حجم خط الرسالة: {size} نقطة.
+
+# Deleting and moving several messages
+deleting_one = جارٍ حذف الرسالة نهائياً
+deleting_many = جارٍ حذف {count} رسائل نهائياً
+trashing_one = جارٍ نقل الرسالة إلى سلة المهملات
+trashing_many = جارٍ نقل {count} رسائل إلى سلة المهملات
+undo_partly_restored = تم التراجع عن {action}، لكن تعذّرت استعادة {count} -- ربما تم نقلها أو حذفها أو انتهت صلاحيتها مرة أخرى منذ ذلك الحين.
+moves_report = {action}: تم نقل {moved} من {total} رسالة.
+moves_report_failed = لم يتم نقلها، لا تزال في المجلد الأصلي: {count}.
+
+tray_tooltip_one = ZBox — رسالة واحدة غير مقروءة
+tray_tooltip_many = ZBox — {count} رسائل غير مقروءة
+account_unreachable = تعذّر الوصول إلى {account}. يتوقف الفحص التلقائي له لمدة {minutes} دقيقة.
+auto_check_not_saved = لم يُحفظ إعداد الفحص التلقائي.
+bulk_copy_failed = تعذّر نسخ الرسائل.
+bulk_copy_failed_status = فشل النسخ.
+bulk_loading_archive = لا تزال الرسائل قيد التحميل؛ حاول الأرشفة مجددًا بعد لحظة.
+bulk_loading_delete = لا تزال الرسائل قيد التحميل؛ حاول الحذف مجددًا بعد لحظة.
+bulk_loading_flag = لا تزال الرسائل قيد التحميل؛ حاول وضع النجمة مجددًا بعد لحظة.
+bulk_loading_generic = لا تزال الرسائل قيد التحميل؛ حاول مجددًا بعد لحظة.
+bulk_none = لم تُحدَّد أي رسالة.
+bulk_none_archive = لم تُحدَّد رسالة للأرشفة.
+bulk_none_delete = لم تُحدَّد رسالة للحذف.
+bulk_none_junk = لم تُحدَّد رسالة لتعيينها كبريد مزعج.
+bulk_none_not_junk = لم تُحدَّد رسالة لتعيينها على أنها ليست بريداً مزعجاً.
+delete_refused_still = رفض الخادم حذفها؛ لا تزال في {folder}.
+delete_refused_trash = إنها في المهملات، لكن الخادم رفض حذفها نهائيًا.
+delete_resume_failed = تعذّر حذف {count} رسالة من عملية حذف سابقة.
+done_perm_delete_one = حُذفت الرسالة نهائيًا.
+done_trash_one = نُقلت الرسالة إلى المهملات.
+filters_applied = طُبّقت المرشّحات على {count} رسالة في {folder}.
+filters_failed = تعذّر تشغيل المرشّحات.
+filters_running = جارٍ تشغيل المرشّحات على {folder}
+flag_failed = تعذّر تحديث النجمات.
+flag_updated = حُدّثت النجمات.
+folder_verb_subscribing = جارٍ الاشتراك في
+folder_verb_unsubscribing = جارٍ إلغاء الاشتراك من
+mark_read_failed = تعذّر وضع علامة مقروءة على الرسائل.
+mark_unread_failed = تعذّر وضع علامة غير مقروءة على الرسائل.
+notify_new_mail_body = {count} {noun} جديدة لـ {name}.
+notify_new_mail_title = بريد جديد
+notify_noun_many = رسائل
+notify_noun_one = رسالة
+report_done = {verb} {done} من {count} رسالة.
+report_verb_deleted = حُذف
+report_verb_permanent = حُذف نهائيًا
+running_copy_many = جارٍ نسخ {count} رسائل
+running_copy_one = جارٍ نسخ الرسالة
+running_junk_many = جارٍ تعيين {count} رسائل كبريد مزعج
+running_junk_one = جارٍ التعيين كبريد مزعج
+running_move_many = جارٍ نقل {count} رسائل
+running_move_one = جارٍ النقل
+running_not_junk_many = جارٍ تعيين {count} رسائل على أنها ليست بريداً مزعجاً
+running_not_junk_one = جارٍ التعيين على أنه ليس بريداً مزعجاً
+running_perm_delete_one = جارٍ حذف الرسالة نهائيًا...
+running_read_many = جارٍ وضع علامة مقروءة على {count} رسائل
+running_read_one = جارٍ وضع علامة مقروءة
+running_trash_one = جارٍ نقل الرسالة إلى المهملات...
+running_unread_many = جارٍ وضع علامة غير مقروءة على {count} رسائل
+running_unread_one = جارٍ وضع علامة غير مقروءة
+settings_saved_no_startup = حُفظت الإعدادات. تعذّر تحديث إدخال بدء تشغيل Windows.
+settings_saved_status = حُفظت الإعدادات.
+spam_blocked_sender = مرسل محظور
+spam_possible_phishing = احتيال محتمل
+undo_running_many = جارٍ التراجع عن {action} ({count} رسائل)
+undo_running_one = جارٍ التراجع عن {action}
+mark_folder_read_failed = تعذّر تعليم المجلد كمقروء.
+marking_folder_read = جارٍ تعليم المجلد كمقروء...
+upd_ready_at_exit = تم تنزيل تحديث بالفعل. سيُثبَّت عند الخروج من ZBox.
+upd_checking = جارٍ البحث عن تحديثات...
+upd_up_to_date = ZBox محدَّث.
+upd_available_source = يتوفر ZBox {version}. تعمل هذه النسخة من الشيفرة المصدرية، لذا حدِّثها باستخدام git.
+upd_check_failed = تعذّر البحث عن تحديثات: {error}
+opening_attachment = جارٍ فتح {filename}...
+loading_headers = جارٍ تحميل الترويسات...
+offline_inbox_only = يُحتفظ بصندوق الوارد والأرشيف وحدهما للاستخدام دون اتصال.
+offline_sync_done_inbox = تمت مزامنة {count} رسالة في صندوق الوارد والأرشيف للاستخدام دون اتصال.
+working_offline = العمل بلا اتصال: يتم عرض آخر نسخة متزامنة من صندوق الوارد/المرسل/المسودات.
+emptying_trash_all = جارٍ إفراغ سلة المهملات لكل الحسابات...
+trash_emptied_all = أُفرغت سلة المهملات في {accounts} حساب: حُذفت {count} رسالة نهائيًا.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = ملف
+bar_edit = تحرير
+bar_view = عرض
+bar_message = رسالة
+bar_compose = إنشاء
+bar_tools = أدوات
+bar_help = مساعدة
+
+# File
+file_new = جديد
+file_new_message = رسالة
+file_new_account = حساب بريد إلكتروني...
+file_open_saved_message = فتح رسالة محفوظة...
+file_close = إغلاق
+file_save_message_as = حفظ الرسالة باسم...
+file_get_new_for = جلب رسائل جديدة لـ
+file_get_new_all = جميع الحسابات
+file_get_new_current = الحساب الحالي
+file_offline = غير متصل
+file_work_offline = العمل بلا اتصال
+file_sync_now = المزامنة الآن
+file_print = طباعة...
+file_print_preview = معاينة الطباعة...
+file_exit = خروج
+
+# Edit
+edit_undo = تراجع
+edit_select_all = تحديد الكل
+edit_find_messages = البحث عن رسائل...
+
+# Message
+message_reply = رد
+message_reply_all = الرد على الكل
+message_forward = مرّر
+message_archive = أرشفة
+message_delete = حذف
+message_delete_permanently = حذف نهائي
+message_mark = تمييز
+mark_read = مقروءة
+mark_unread = غير مقروءة
+mark_flagged = عليها نجمة
+mark_junk = بريد مزعج
+mark_not_junk = ليس بريداً مزعجاً
+message_watch_thread = راقب النقاش
+message_ignore_thread = تجاهل النقاش
+message_open_conversation = فتح الرسالة في محادثة
+message_show_related = عرض الرسائل ذات الصلة
+message_add_sender_to_address_book = إضافة المرسل إلى دفتر العناوين
+message_announce_sender = الإعلان عن المرسل
+message_announce_copy_sender = الإعلان عن المرسل ونسخ العنوان
+
+# View
+view_folders = المجلدات
+folders_all = الكل
+folders_unified = موحّد
+folders_jump_inbox = الانتقال إلى قائمة رسائل صندوق الوارد
+folders_configure_unified = تهيئة المجلدات الموحّدة...
+view_sort_by = ترتيب حسب
+sort_date = التاريخ
+sort_subject = الموضوع
+sort_from = المرسل
+sort_descending = تنازلي (الأحدث أولاً)
+sort_ascending = تصاعدي (الأقدم أولاً)
+view_threads = النقاشات
+threads_all = الكل
+threads_watched = النقاشات المُراقَبة
+threads_ignored = النقاشات المتجاهَلة
+threads_expand_all = وسّع كل النقاشات
+threads_collapse_all = قلِّص كل النقاشات
+view_load_more = تحميل المزيد من الرسائل
+view_toggle_message_view = التبديل بين عرض النص وHTML
+view_show_remote_content = عرض المحتوى البعيد في هذه الرسالة
+view_message_zoom = تكبير الرسالة
+zoom_increase = زيادة حجم خط الرسالة
+zoom_decrease = تقليل حجم خط الرسالة
+zoom_reset = إعادة تعيين حجم خط الرسالة
+
+# Compose
+compose_send = إرسال
+compose_save_draft = حفظ كمسودة
+compose_attach = إرفاق ملف...
+compose_fmt_bold = عريض
+compose_fmt_italic = مائل
+compose_fmt_strike = يتوسطه خط
+compose_fmt_bullet = قائمة نقطية
+compose_fmt_number = قائمة مرقمة
+compose_fmt_quote = اقتباس
+compose_fmt_code = شيفرة برمجية
+compose_fmt_heading1 = عنوان
+compose_link = إدراج رابط...
+compose_formatting = التنسيق هنا
+compose_spellcheck = التحقق من الإملاء...
+compose_spellcheck_next = الخطأ الإملائي التالي
+compose_spellcheck_add = إضافة الكلمة إلى القاموس
+compose_insert_signature = إدراج التوقيع
+compose_paste_quotation = اللصق كاقتباس
+compose_word_count = عدد الكلمات
+compose_preview = معاينة...
+compose_diagnostics = تشخيصات المحرر...
+compose_edit_signature = تعديل التوقيع...
+compose_hotkeys_diagnostic = تشخيص اختصارات المفاتيح
+
+# Tools
+tools_account_settings = إعدادات الحساب والهويات...
+tools_mute_account = كتم الحساب
+tools_disable_account = تعطيل الحساب
+tools_remove_account = إزالة الحساب...
+tools_address_book = دفتر العناوين...
+tools_message_filters = مرشّحات الرسائل...
+tools_import = استيراد الحسابات والإعدادات...
+tools_export = تصدير الحسابات والإعدادات...
+tools_cache_cleanup = إعدادات تنظيف ذاكرة التخزين المؤقت...
+tools_privacy = الخصوصية وحظر المحتوى...
+tools_settings = الإعدادات...
+
+# Help
+help_shortcuts = اختصارات لوحة المفاتيح...
+help_about = حول ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = حساب جديد...
+tree_account_settings = إعدادات الحساب والهويات...
+tree_mute_account = كتم الحساب
+tree_enable_account = تفعيل الحساب
+tree_disable_account = تعطيل الحساب
+tree_set_default_account = تعيين كحساب افتراضي
+tree_remove_account = إزالة الحساب...
+tree_refresh = تحديث
+tree_new_folder = مجلد جديد...
+tree_empty_trash = إفراغ سلة المهملات
+tree_empty_junk = إفراغ البريد المزعج
+tree_rename_folder = إعادة تسمية المجلد...
+tree_delete_folder = حذف المجلد...
+tree_subscribe_folder = الاشتراك في المجلد
+tree_unsubscribe_folder = إلغاء الاشتراك في المجلد
+
+# The message list menu, opened the same two ways
+list_select_all = تحديد الكل
+list_reply = رد
+list_reply_all = الرد على الكل
+list_forward = مرّر
+list_mark = تمييز
+list_archive = أرشفة
+list_delete_to_trash = حذف (نقل إلى سلة المهملات)
+list_delete_permanently = حذف نهائي
+list_move_to = نقل إلى
+list_copy_to = نسخ إلى
+
+# The notification area icon
+tray_open = فتح ZBox
+tray_unread_one = رسالة واحدة غير مقروءة
+tray_unread_many = {count} رسائل غير مقروءة
+tray_no_unread = لا توجد رسائل غير مقروءة
+tray_settings = الإعدادات...
+tray_quit = إنهاء ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = عريض
+format_italic = مائل
+format_strike = يتوسطه خط
+format_bullet = قائمة نقطية
+format_number = قائمة مرقمة
+format_quote = اقتباس
+format_code = شيفرة برمجية
+format_heading1 = عنوان
+format_insert_link = إدراج رابط...
+format_formatting_here = التنسيق هنا
+tools_enable_account = تمكين الحساب
+tools_pause_auto_check = إيقاف الفحص التلقائي مؤقتًا
+tree_pause_auto_check = إيقاف الفحص التلقائي مؤقتًا
+edit_undo_action = تراجع عن {action}
+tree_mark_folder_read = تعليم المجلد كمقروء
+help_updates = التحديثات
+help_check_updates = البحث عن تحديثات الآن...
+help_update_settings = إعدادات التحديث...
+help_releases_page = فتح صفحة الإصدارات
+message_attachments = المرفقات
+message_no_attachments = لا توجد مرفقات
+message_save_all_attachments = حفظ كل المرفقات
+view_full_headers = الترويسات الكاملة
+folders_go_to_tree = الانتقال إلى قائمة المجلدات
+list_block_sender = حظر هذا المرسل
+list_unblock_sender = إلغاء حظر هذا المرسل
+
+[dialogs]
+set_theme_restart_confirm = هل تريد إعادة تشغيل ZBox لتطبيق تغيير السمة؟
+set_ui_theme_label = سمة الواجهة:
+set_ui_theme_note = ألوان القوائم ومربعات الحوار وعرض النص للرسائل. يستخدم خيار "اتباع النظام" وضع التطبيقات الفاتح أو الداكن في Windows. الأزرق الليلي والداكن الدافئ والتباين الناعم سمات داكنة بألوان ألطف. تحتفظ رسائل HTML بألوانها الخاصة، ويكون للتباين العالي في Windows الأولوية دائماً. يسري مفعوله عند تشغيل ZBox في المرة القادمة.
+set_theme_system = اتباع النظام
+set_theme_light = فاتح
+set_theme_dark = داكن
+set_theme_midnight = الأزرق الليلي
+set_theme_warm = داكن دافئ
+set_theme_soft = تباين ناعم
+set_language_restart_confirm = هل تريد إعادة تشغيل ZBox لتطبيق تغيير اللغة؟
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = التواصل مع حارث
+title_identity = الهوية
+title_show_password = إظهار كلمة المرور
+title_missing_information = معلومات ناقصة
+title_unsupported_provider = مزوّد غير مدعوم
+title_test_connection = اختبار الاتصال
+title_new_contact = جهة اتصال جديدة
+title_edit_contact = تعديل جهة الاتصال
+title_delete_contact = حذف جهة الاتصال
+title_import_contacts = استيراد جهات الاتصال
+title_export_contacts = تصدير جهات الاتصال
+title_rename_group = إعادة تسمية المجموعة
+title_delete_group = حذف المجموعة
+title_send = إرسال
+title_send_failed = فشل الإرسال
+title_attach_file = إرفاق ملف
+title_save_draft = حفظ المسودة
+title_documentation = توثيق ZBox
+title_open_link = فتح الرابط
+title_filter_rule = قاعدة الترشيح
+title_master_password = كلمة المرور الرئيسية
+title_attachment_saved = تم حفظ المرفق
+title_attachments_saved = تم حفظ المرفقات
+title_download_failed = فشل التنزيل
+title_print = طباعة
+title_print_preview = معاينة الطباعة
+title_related_messages = الرسائل ذات الصلة
+title_search = بحث
+title_unlock = فتح القفل
+title_unlock_methods = طرق فتح القفل
+title_desktop_shortcut = اختصار سطح المكتب
+title_spell_check = التدقيق الإملائي
+title_plain_text_password = تم العثور على كلمة مرور نصية غير مشفّرة
+title_startup_error = خطأ بدء تشغيل ZBox
+
+identity_email_required = أدخل عنوان بريد إلكتروني.
+
+wizard_password_not_shown = لا يمكن إظهار كلمة المرور على هذا النظام. لا تزال تُكتب وتُحفظ بشكل طبيعي.
+wizard_email_required = أدخل عنوان بريد إلكتروني صالحاً قبل المتابعة.
+wizard_test_needs_server = أدخل بريد تسجيل الدخول وخادم الوارد قبل الاختبار.
+wizard_test_succeeded = نجح الاتصال. تم العثور على {count} رسالة في صندوق الوارد.
+
+contact_email_required = عنوان البريد الإلكتروني مطلوب.
+contact_select_to_edit = حدد جهة اتصال لتعديلها.
+contact_select_to_delete = حدد جهة اتصال لحذفها.
+contact_delete_confirm = هل تريد حذف {label} من دفتر العناوين؟
+contacts_import_choose_file = اختر ملف .vcf (بطاقة تعريف) أو .csv للاستيراد.
+contacts_imported = تم استيراد {count} جهة اتصال.
+contacts_import_empty = لم يُعثر على جهات اتصال في ذلك الملف.
+contacts_none_to_export = لا توجد جهات اتصال لتصديرها.
+contacts_exported = تم تصدير {count} جهة اتصال إلى:\n{path}
+group_name_exists = توجد بالفعل مجموعة باسم "{name}".
+group_delete_confirm = هل تريد حذف المجموعة "{name}"؟ لن يتم حذف جهات الاتصال الخاصة بها.
+
+send_no_account = أضف حساباً قبل الإرسال، أو حدد حساباً في حقل من.
+send_no_recipient = أدخل مستلماً واحداً على الأقل في حقل إلى.
+draft_no_account = أضف حساباً قبل حفظ مسودة، أو حدد حساباً في حقل من.
+attached_file = تم الإرفاق: {name}\n\nسيتم إرفاق {count} ملف عند الإرسال.
+
+documentation_copied = تم نسخ توثيق ZBox الكامل إلى الحافظة.
+
+filter_rule_needs_name = أعطِ هذه القاعدة اسماً.
+filter_rule_needs_condition = حدد شرطاً واحداً على الأقل (من، إلى، أو الموضوع).
+filter_rule_needs_action = اختر إجراءً واحداً على الأقل: التمييز كمقروءة، وضع نجمة، أو النقل إلى مجلد.
+
+master_password_set = تم تعيين كلمة المرور الرئيسية. احتفظ بها في مكان آمن: يطلبها ZBox مرة واحدة في كل جهاز كمبيوتر جديد، ولا يمكن استعادتها في حال فقدانها.
+master_password_offer = بدون كلمة مرور رئيسية، لا يمكن قراءة كلمات مرور الحسابات المحفوظة إلا على هذا الكمبيوتر وحساب ويندوز هذا. انسخ ZBox إلى أي مكان آخر وستحتاج كل الحسابات إلى تسجيل الدخول مرة أخرى.\n\nهل تريد تعيين واحدة الآن؟
+
+attachment_saved = تم حفظ المرفق في:\n{path}
+attachments_saved = تم حفظ {count} مرفقات في:\n{path}
+
+shortcut_created_settings = تم إنشاء الاختصار:\n{path}\n\nيبدأ تشغيل ZBox من:\n{base}
+
+spellcheck_no_dictionary = قاموس التدقيق الإملائي مفقود، لذا فإن التدقيق الإملائي غير متاح في هذه النسخة من ZBox.
+spellcheck_none_found = لم يُعثر على أخطاء إملائية.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = هل تريد إعداد مفتاح مرور على هذا الكمبيوتر ونسيان المفتاح المحفوظ من كمبيوتر آخر؟\n\nسيطلب منك ويندوز التأكيد باستخدام Hello. يبقى مفتاح المرور القديم على الكمبيوتر الآخر دون تغيير وسيستمر في العمل إذا أعدت هذا المجلد إليه، لكن سيتعيّن إعداده مرة أخرى.
+unlock_replace_passkey_many = هل تريد إعداد مفتاح مرور على هذا الكمبيوتر ونسيان {count} المحفوظة من أجهزة كمبيوتر أخرى؟\n\nسيطلب منك ويندوز التأكيد باستخدام Hello. تبقى مفاتيح المرور القديمة على الكمبيوتر الآخر دون تغيير وستستمر في العمل إذا أعدت هذا المجلد إليه، لكن سيتعيّن إعدادها مرة أخرى.
+unlock_method_works = تعمل هذه الطريقة.
+
+plain_text_password_found = لا يزال data\config\himalaya.toml يحتوي على كلمة مرور نصية غير مشفّرة (auth.raw) من إعداد حساب قديم.\n\nأزل ذلك الحساب وأعد إضافته، أو احذف data\config\himalaya.toml، ليُعاد إنشاؤه باستخدام مخزن بيانات الاعتماد الآمن بدلاً من ذلك.
+
+# main_frame's titles.
+title_account_list_unavailable = قائمة الحسابات غير متاحة
+title_open_message = فتح الرسالة
+title_run_filters = تشغيل المرشّحات
+title_clear_cache = مسح ذاكرة التخزين المؤقت للرسائل
+title_remove_account = إزالة الحساب
+title_new_folder = مجلد جديد
+title_rename_folder = إعادة تسمية المجلد
+title_delete_folder = حذف المجلد
+title_subscribe = اشتراك
+title_unsubscribe = إلغاء الاشتراك
+title_open_saved_message = فتح رسالة محفوظة
+title_save_message_as = حفظ الرسالة باسم
+title_empty_trash = إفراغ سلة المهملات
+title_empty_junk = إفراغ البريد المزعج
+title_synchronize_offline = المزامنة للاستخدام بدون اتصال
+title_export_accounts = تصدير الحسابات والإعدادات
+title_import_accounts = استيراد الحسابات والإعدادات
+title_show_related = عرض الرسائل ذات الصلة
+title_reply = رد
+title_forward = مرّر
+title_undo = تراجع
+title_delete_permanently = حذف نهائي
+title_delete = حذف
+title_copy_to = نسخ إلى
+title_archive = أرشفة
+title_accounts_locked = الحسابات مقفلة
+
+select_account_first = حدد حساباً في الشجرة أولاً.
+select_account_or_folder = حدد حساباً أو مجلداً أولاً.
+filters_left_behind = طابقت {count} رسالة مرشّح لكنها لا تزال في {folder}.
+cache_clear_confirm = هل تريد مسح ذاكرة التخزين المؤقت للرسائل غير المتصلة لكل حساب؟\n\nهذا يحذف نسخ ZBox المحلية فقط. لا يُحذف شيء من أي خادم بريد، ويُعاد تنزيل الرسائل عند الحاجة إليها.
+account_remove_confirm = هل تريد إزالة {name} ({address})؟\n\nلن يُحذف البريد الموجود على الخادم.\nستُحذف النسخ التي تم تنزيلها إلى هذا الكمبيوتر.\nستُحذف كلمة المرور المحفوظة.
+folder_delete_confirm = هل تريد حذف المجلد "{folder}" وكل ما فيه نهائياً لـ{address}؟\n\nلا يمكن التراجع عن هذا.
+empty_trash_confirm = هل تريد حذف جميع الرسائل في سلة المهملات نهائياً لـ{address}؟\n\nلا يمكن التراجع عن هذا.
+empty_junk_confirm = هل تريد حذف جميع الرسائل في البريد المزعج نهائياً لـ{address}؟\n\nلا يمكن التراجع عن هذا.
+sync_select_account = حدد حساباً (وليس مجلداً موحّداً) لمزامنته للاستخدام بدون اتصال.
+accounts_imported = تم استيراد {count} حساب:\n\n{names}\n\nلا يتم تصدير كلمات المرور أبداً، ومخزن كلمات المرور المشفّر خاص بحساب مستخدم ويندوز هذا، لذا يحتاج كل حساب مستورد إلى إدخال كلمة مروره مرة واحدة عبر الحسابات > إعدادات الحساب والهويات قبل أن يتمكن من الاتصال.
+accounts_import_none = لم يُعثر على حسابات في هذا الملف. تم استيراد الإعدادات مع ذلك، إن وُجدت في الملف.
+delete_permanently_confirm_one = هل تريد حذف هذه الرسالة نهائياً؟ هذا يتخطى مجلد سلة المهملات ولا يمكن التراجع عنه.
+accounts_locked = كُتبت كلمات مرور الحسابات المحفوظة على كمبيوتر آخر، لذا لا يمكن قراءتها هنا.\n\nستحتاج كل حساب إلى تسجيل الدخول إلى خادم بريده مرة أخرى. لتجنب ذلك في المرة القادمة، عيّن كلمة مرور رئيسية من الإعدادات، أمان التطبيق والبيانات على الكمبيوتر الذي تعمل فيه الحسابات بالفعل.
+master_password_remove_confirm = هل تريد إزالة كلمة المرور الرئيسية؟ عندها لن تكون كلمات مرور الحسابات المحفوظة قابلة للقراءة إلا على هذا الكمبيوتر وحساب ويندوز هذا. انسخ ZBox إلى أي مكان آخر بعد ذلك وستحتاج كل الحسابات إلى تسجيل الدخول مرة أخرى.\n\nهل تريد إزالتها الآن؟
+shortcut_offer = هل تريد وضع اختصار ZBox على سطح المكتب؟\n\nسيبدأ تشغيل مجلد ZBox هذا:\n{path}\n\nيسجّل الاختصار ذلك الموقع بالضبط. إذا نقلت مجلد ZBox لاحقاً، افتح الإعدادات، شريط النظام والنافذة، واختر إنشاء اختصار سطح المكتب مرة أخرى لتوجيهه إلى الموقع الجديد.
+shortcut_created = تم إنشاء الاختصار:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = الاسم المعروض
+form_email_address = عنوان البريد الإلكتروني
+form_your_name = اسمك
+form_login_email = بريد تسجيل الدخول
+form_password = كلمة المرور
+srv_imap_host = خادم الوارد (IMAP)
+srv_imap_port = منفذ الوارد
+srv_imap_encryption = تشفير الوارد
+srv_smtp_host = خادم الصادر (SMTP)
+srv_smtp_port = منفذ الصادر
+srv_smtp_encryption = تشفير الصادر
+
+acct_login_email_label = بريد تسجيل الدخول (يُستخدم لتسجيل الدخول)
+acct_new_password_label = كلمة مرور جديدة (اتركها فارغة للاحتفاظ بالحالية)
+acct_new_password_name = كلمة مرور جديدة
+acct_identity_email_label = عنوان البريد الإلكتروني (يُستخدم للإرسال والاستلام)
+acct_identities_label = هويات إضافية (أسماء بديلة)
+acct_identities_name = هويات إضافية
+acct_add_identity = إضافة هوية...
+acct_edit_identity = تعديل الهوية...
+acct_remove_identity = إزالة الهوية
+acct_signature = التوقيع
+acct_edit_signature = تعديل التوقيع...
+acct_junk_folder = مجلد البريد المزعج
+acct_account_status = حالة الحساب
+acct_disable_account = تعطيل هذا الحساب
+acct_default_account = الحساب الافتراضي
+acct_set_default = تعيين كحساب افتراضي
+acct_notifications = إشعارات البريد الجديد
+acct_mute_notifications = كتم الإشعارات لهذا الحساب
+acct_server_settings = إعدادات الخادم
+
+wiz_before_you_start = قبل أن تبدأ
+wiz_notice_name = ملاحظة هامة
+wiz_google_instructions = فتح إرشادات كلمة مرور تطبيق Google
+wiz_intro = اسمك وعنوان بريدك الإلكتروني
+wiz_login_same = بريد تسجيل الدخول هو نفسه عنوان البريد الإلكتروني أعلاه
+wiz_show_password = إظهار كلمة المرور
+wiz_preset_applied = تم تطبيق الإعداد المسبق لـ{name}.
+wiz_summary_name = ملخص الحساب
+wiz_review = راجع، ثم انقر إنهاء لحفظ هذا الحساب.
+wiz_test_connection = اختبار الاتصال
+wiz_testing = جارٍ اختبار الاتصال...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (تفعيل سجل التصحيح المحفوظ في: data\logs)
+set_language_label = لغة الواجهة:
+set_language_label_only_english = لغة الواجهة: (الإنجليزية فقط)
+set_headers_checkbox = عرض ترويسات الرسالة أعلى الرسالة المفتوحة
+set_zoom_label = خط الرسالة والتكبير:
+set_font_override = تجاوز حجم خط الرسالة الافتراضي
+set_font_size_name = حجم خط الرسالة (نقاط)
+set_reading_font_name = خط القراءة
+set_reading_font_label = خط القراءة (اتركه فارغاً للافتراضي):
+set_view_label = طريقة عرض نص الرسالة عند فتحها:
+set_view_text = نص
+set_view_html = HTML (منسّق)
+set_engine_label = محرك عرض HTML:
+set_engine_edge = Edge / WebView2 (عرض حديث)
+set_engine_ie = MSHTML القديم (أفضل دعم لقارئ الشاشة)
+set_runtime_label = بيئة تشغيل WebView2:
+set_runtime_auto = تلقائي — استخدام بيئة التشغيل المرفقة إن وُجدت (موصى به)
+set_runtime_fixed = الإصدار الثابت المرفق فقط
+set_runtime_evergreen = بيئة التشغيل على مستوى النظام (يحدّثها ويندوز)
+set_sr_box = التحكم في إعلانات قارئ الشاشة
+set_silence_label = مدة إسكات قارئ الشاشة لصفحات HTML:
+set_silence_name = مدة إسكات قارئ الشاشة لصفحات HTML بالميلي ثانية
+set_focus_delay_label = تأخير تركيز إمكانية الوصول لـWebView:
+set_focus_delay_name = تأخير تركيز إمكانية الوصول لـWebView، من المستوى 1 إلى 10
+set_announce_label = مدة بقاء الإعلان:
+set_announce_name = مدة بقاء الإعلان بالميلي ثانية
+set_announce_actions = الإعلان عن إجراءات الرسائل
+set_attachment_dir_label = مجلد حفظ المرفقات:
+set_attachment_dir_name = مجلد حفظ المرفقات
+set_browse = استعراض…
+set_autosave_label = فاصل الحفظ التلقائي للمسودات:
+set_autosave_name = فاصل الحفظ التلقائي للمسودات بالثواني
+set_auto_purge_label = المحو التلقائي لسلة المهملات والبريد المزعج القديمين:
+set_auto_purge_name = المحو التلقائي لسلة المهملات والبريد المزعج بعد هذا العدد من الأيام
+set_bare_keys = تفعيل الاختصارات أحادية المفتاح في قائمة الرسائل: S (وسم)، وA (أرشفة)، وJ (وسم كغير مرغوب)/Shift+J (وسم كمرغوب)، وW (مراقبة المحادثة)، وK (تجاهل المحادثة)، وM (نقل إلى)/Shift+M (نقل باسم المجلد)، وC (نسخ إلى)
+set_sound_label = الصوت والإشعارات:
+set_sounds_enabled = تشغيل أصوات الإشعارات
+set_desktop_notifications = عرض إشعارات سطح المكتب للبريد الجديد
+set_theme_label = تغيير سمة الأصوات:
+set_theme_label_only_default = تغيير سمة الأصوات: (السمة الافتراضية فقط)
+set_security_box = أمان التطبيق والبيانات
+set_lock_on_quit = قفل ZBox عند إنهائه بالكامل
+set_unlock_methods_button = طرق فتح القفل…
+set_master_password_button = كلمة المرور الرئيسية…
+set_tray_label = شريط النظام والنافذة:
+set_minimize_to_tray = التصغير إلى شريط النظام
+set_close_to_tray = الإغلاق إلى شريط النظام
+set_stay_maximized = إبقاء ZBox مكبّراً دائماً
+set_run_at_startup = تشغيل ZBox عند بدء تشغيل ويندوز
+set_desktop_shortcut_button = إنشاء اختصار سطح المكتب
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = يساعد سجل التصحيح على تشخيص المشكلات في حال حدوث خطأ ما. إيقافه يوقف كتابة إدخالات جديدة؛ لا تُحذف ملفات السجل الموجودة. يسري المفعول عند بدء تشغيل ZBox في المرة القادمة.
+set_language_note = يسري المفعول عند بدء تشغيل ZBox في المرة القادمة. ملفات اللغة هي ملفات نصية عادية في مجلد lang الخاص بـZBox، بجانب مجلد الأصوات. لإضافة واحدة، انسخ مجلد en، وأعد تسمية النسخة وملف .lang بداخلها برمز لغتك، وترجم النص الموجود على يمين كل علامة يساوي. أي شيء لم تتم ترجمته بعد يُنطق بالإنجليزية بدلاً من أن يُترك صامتاً، لذا فإن الملف غير المكتمل آمن للاستخدام.
+set_headers_note = من، إلى، نسخة، التاريخ والموضوع، تُعرض أعلى نص الرسالة في كل من عرض النص وHTML. بدونها لا توجد طريقة لمعرفة من أرسل الرسالة من داخلها دون إغلاق علامة التبويب والعودة إلى القائمة. لا يزال التركيز ينتقل إلى نص الرسالة؛ كتلة الترويسة تبعد Shift+Tab واحدة. يسري المفعول عند فتح رسالة في المرة القادمة.
+set_zoom_note = يجعل نص الرسالة المفتوحة نفسه أكبر أو أصغر، بشكل مستقل عن باقي ZBox وعن تحجيم عرض ويندوز نفسه. ينطبق على كل من عرضي النص وHTML. "خط القراءة" يفرض اختيارياً خطاً معيناً (مثل Consolas أو OpenDyslexic) لنص الرسالة؛ اتركه فارغاً للاحتفاظ بالخط العادي. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 في قائمة عرض تزيد أو تقلل أو تعيد تعيين حجم الخط فقط دون فتح هذا الحوار، وتنطبق فوراً على كل رسالة مفتوحة. التغييرات التي تُجرى هنا تنطبق أيضاً فوراً عند الضغط على موافق.
+set_view_note = HTML هو الافتراضي. يعرض الرسالة كما أُرسلت، ويقرأه NVDA وJAWS: عند فتح صفحة HTML، يُسكت ZBox إعلان المتصفح الخاص به، ويضع مؤشر القراءة على أول سطر من الرسالة، ويبقي اختصارات ZBox الخاصة تعمل داخل الصفحة، بما في ذلك F6 لنقل التركيز إلى خارجها. يعرض النص الرسالة نفسها كنص عادي غير منسّق في حقل تحرير عادي -- بلا صور، بلا تخطيط، وبلا أي شيء يعتمد على تثبيت محرك متصفح. اضغط Ctrl+B داخل رسالة مفتوحة للتبديل في أي اتجاه.
+set_engine_note = يعرض Edge لغة CSS الحديثة لكنه يشغّل الصفحة في عملية منفصلة، ولن يسلّم محتواها لقارئ الشاشة إلا عبر واجهة لا يستطيع wxPython الوصول إليها -- لذا قد تُفتح الرسالة بلا شيء قابل للقراءة فيها. MSHTML القديم هو المحرك الذي استخدمه Outlook Express وWindows Mail: يعمل ضمن العملية نفسها وينشر شجرة مستند عادية، لذا يقرأه NVDA وJAWS في وضع التصفح مثل أي صفحة ويب. يسري المفعول عند فتح رسالة في المرة القادمة.
+set_runtime_note = تتم صيانة بيئة التشغيل على مستوى النظام بواسطة Windows Update، لذا فإن المحرك الذي يقرأ بريدك يمكن أن يتغير دون إشعار — وهذا ما قد يجعل عرض رسالة HTML يتعطل على جهاز لم يتغير فيه شيء يخص ZBox. تثبّت النسخة المرفقة في مجلد deps الإصدار الدقيق الذي اختُبر ZBox معه. شغّل tools\get_webview2.bat لتثبيت واحدة. في حال عدم وجود نسخة مرفقة، يستخدم ZBox بيئة التشغيل على مستوى النظام على أي حال، بحيث يبدأ التشغيل دائماً. يسري المفعول عند بدء تشغيل ZBox في المرة القادمة.
+set_sr_intro = مقدار ما يسمح ZBox لقارئ الشاشة الخاص بك بقوله أثناء فتح رسالة، ومدة بقاء إعلاناته المنطوقة الخاصة.
+set_silence_note = عند فتح رسالة HTML، يمكن لـZBox أن يُبقي ضغطة Ctrl اصطناعية لمدة تصل إلى ثانيتين لإسكات إعلان قارئ الشاشة عن المتصفح. موضوع الرسالة يُستخدم بالفعل كعنوان الصفحة، مما يمنع قراءة رابط base64 بصوت عالٍ، لكن القارئ لا يزال يُعلن عن عنصر التحكم ونوع المستند فوق بداية الرسالة، لذا فهذا مفعّل افتراضياً. اخفضه إلى 0 لإيقافه، أو ارفعه إذا استمر تسرّب الثرثرة.
+set_focus_delay_note = عند انتهاء تحميل رسالة HTML، ينتظر ZBox هذه المدة قبل تركيز التركيز عليها فعلياً. إبلاغ WebView2 بأن الصفحة قد حُمّلت وانتهاء ويندوز من شجرة إمكانية الوصول لتلك الصفحة ليسا اللحظة نفسها؛ التركيز المبكر جداً هو ما يجعل NVDA/JAWS يُعلنان "صفحة محتوى ويب" عامة بدلاً من الرسالة، أو يُبلغان أن الرسالة غير متاحة لفترة بعد الفتح. المستوى 1 هو 100 مللي ثانية، والمستوى 10 هو ثانية كاملة. ارفعه إذا كنت لا تزال ترى هذا؛ اخفضه بمجرد أن يبدو الفتح ثابتاً، لفتح أسرع.
+set_announce_note = يُبلغ Ctrl+U وCtrl+Shift+U عن المرسل في حوار صغير يُغلق نفسه، لأن شريط الحالة لا يُنطق إلا إذا كان الإبلاغ عن شريط الحالة مفعّلاً في قارئ الشاشة لديك. هذه هي مدة بقاء ذلك الحوار. اضبطها لتناسب سرعة كلامك: مدة قصيرة جداً تُغلقه في منتصف الجملة، مما يُبطل الغرض منه. أي مفتاح يُغلقه مبكراً؛ مفاتيح الأسهم تُبقيه مفتوحاً لتتمكن من إعادة القراءة. 0 تعني أنه ينتظر ضغطة مفتاح ولا يُغلق نفسه أبداً.
+set_attachment_dir_note = أين تُكتب المرفقات عند استخدام "حفظ الكل" عندما تحتوي الرسالة على أكثر من مرفق. يُنشأ تلقائياً إن لم يكن موجوداً. لا تزال الرسالة ذات المرفق الواحد تسأل عن مكان حفظه، كما كان من قبل. اتركه فارغاً للافتراضي:\n{path}
+set_autosave_note = عدد مرات حفظ علامة تبويب الإنشاء المفتوحة نفسها إلى المسودات أثناء الكتابة. لا يزال حفظ كمسودة (Ctrl+S) يحفظ عند الطلب على أي حال، وإغلاق علامة تبويب تحتوي على كتابة غير محفوظة يعرض دائماً حفظها. 0 يوقف الحفظ التلقائي. لا يُعرض أقل من 15 ثانية -- فذلك سيكون رحلة ذهاب وإياب إلى الخادم تنافس كتابتك.
+set_auto_purge_note = يزيل الرسائل نهائياً من سلة المهملات والبريد المزعج بعد بقائها هناك هذا العدد من الأيام -- نفس الإزالة النهائية التي يقوم بها إفراغ سلة المهملات وإفراغ البريد المزعج عند الطلب، تُشغَّل تلقائياً مرة واحدة يومياً أثناء فتح ZBox. مفعّل افتراضياً عند 30 يوماً. 0 يوقفه. لا يمكن التراجع عن هذا بمجرد إزالة الرسالة.
+set_bare_keys_note = عند التفعيل، يؤدي ضغط S أو A أو J أو W أو K بمفردها في قائمة الرسائل إلى تبديل النجمة، الأرشفة، تعيين الرسالة (الرسائل) المحددة كبريد مزعج (Shift+J يعيّنها على أنها ليست بريداً مزعجاً)، أو مراقبة/تجاهل النقاش الذي التحديد جزء منه، فوراً -- الأرشفة والتعيين كبريد مزعج بلا تأكيد وبلا تراجع. إيقاف هذا يعيد S وA وJ وW وK إلى التنقل العادي بالحرف الأول في القائمة. يستمر Ctrl+S وCtrl+Shift+A في العمل على أي حال. يسري المفعول فوراً.
+set_sounds_note = نغمات قصيرة للتقدم، الرسائل الجديدة، إجراءات الإرسال أو الرد أو التمرير، الحذف، ونتائج البحث. إيقافه يعطّل كل صوت في التطبيق؛ إعلانات قارئ الشاشة وشريط الحالة لا تتأثر على أي حال.
+set_desktop_notifications_note = إشعار ويندوز لكل دفعة بريد جديد، منفصل عن الصوت أعلاه. إيقافه يعطّله لكل حساب؛ يمكن أيضاً كتم حساب فردي بمفرده في إعدادات الحساب والهويات.
+set_theme_note = السمات المخصصة هي مجلدات توضع داخل مجلد الأصوات الخاص بـZBox، يوفّر كل منها ملفات progress-tick.wav وincoming-message.wav وaction-done.wav وdelete.wav وsearching.wav وsearching_done.wav وnone_found.wav الخاصة به. ملف السمة المفقود يعود إلى الصوت الافتراضي.
+set_theme_note_only_default = السمات المخصصة هي مجلدات توضع داخل مجلد الأصوات الخاص بـZBox، يوفّر كل منها ملفات progress-tick.wav وincoming-message.wav وaction-done.wav وdelete.wav وsearching.wav وsearching_done.wav وnone_found.wav الخاصة به. ملف السمة المفقود يعود إلى الصوت الافتراضي. "default" فقط هو المتاح حتى تضيف مجلد سمة آخر.
+set_lock_note = عندها سيطلب بدء تشغيل ZBox إحدى طرق فتح القفل لديك قبل فتح أي حساب. أي واحدة منها كافية: مفتاح مرور، مفتاح أمان، أو كلمة المرور الرئيسية. الإغلاق إلى شريط النظام ليس إنهاءً ولا يُعيد القفل؛ ملف > خروج وإنهاء أيقونة شريط النظام يفعلان ذلك. إذا لم يكن هناك شيء مسجّل ولم تُعيَّن كلمة مرور رئيسية، يُتخطى القفل بدلاً من إبعادك عن بريدك الخاص.
+set_security_note = كلمة المرور الرئيسية هي الوحيدة من الثلاثة التي تشفّر أي شيء: فهي ما يسمح لهذا المجلد بفتح كلمات مرور الحسابات المحفوظة على كمبيوتر آخر. مفتاح المرور أو مفتاح الأمان يفتح قفل التطبيق على هذا الكمبيوتر. لا يحل أي منهما محل كلمة المرور الرئيسية على كمبيوتر لم يُستخدم ZBox عليه من قبل.
+set_minimize_note = تصغير ZBox يخفي زر شريط المهام الخاص به ويتركه يعمل خلف أيقونة شريط النظام بدلاً من ذلك. انقر بزر الفأرة الأيسر على أيقونة شريط النظام (أو Enter/مسافة عندما يكون عليها تركيز لوحة المفاتيح) لإعادة النافذة.
+set_close_note = زر إغلاق النافذة، وAlt+F4، وCtrl+W المضغوط على علامة تبويب البريد تُخفي ZBox إلى شريط النظام بدلاً من الإنهاء. ملف > خروج (Ctrl+Shift+Q) وعنصر إنهاء أيقونة شريط النظام نفسه ينهيان ZBox فعلياً دائماً على أي حال، لذا يوجد دائماً مسار واحد بلوحة المفاتيح للخروج دون لمس شريط النظام.
+set_stay_maximized_note = يبدأ تشغيل ZBox مكبّراً ويُعاد تكبيره إذا ألغيت تكبيره. شريط القوائم وشريط العنوان وحدود النافذة لا تتأثر -- هذا ليس وضع ملء شاشة بلا حدود، لذا يستمر عمل كل اختصار قائمة بمفتاح Alt.
+set_run_at_startup_note = يبدأ تشغيل ZBox تلقائياً عند تسجيل دخولك إلى ويندوز، ويُفتح مباشرة إلى شريط النظام بدلاً من إظهار نافذته. يسري المفعول فوراً، وليس فقط عند التشغيل القادم.
+set_desktop_shortcut_note = يضع اختصار ZBox على سطح مكتبك، ليحل محل اختصار موجود بالفعل هناك. يخزّن الاختصار الموقع الدقيق لمجلد ZBox هذا، لذا إذا نقلت أو نسخت ZBox إلى مكان آخر، اضغط هذا مرة أخرى على النسخة الجديدة لتوجيه اختصار سطح المكتب إليها. يسري المفعول فوراً ولا ينتظر الضغط على موافق.
+
+# The Address Book, its contact form and its groups.
+ab_name = الاسم
+ab_phone = الهاتف
+ab_notes = ملاحظات
+ab_heading = دفتر العناوين
+ab_contacts = جهات الاتصال
+ab_new = جديد...
+ab_edit = تعديل...
+ab_delete = حذف
+ab_import = استيراد...
+ab_export = تصدير...
+ab_groups_label = المجموعات (القوائم البريدية)
+ab_groups_name = المجموعات
+ab_new_group = مجموعة جديدة...
+ab_rename_group = إعادة تسمية المجموعة...
+ab_delete_group = حذف المجموعة
+ab_manage_members = إدارة الأعضاء...
+ab_all_contacts = جميع جهات الاتصال
+ab_add_member = إضافة >>
+ab_remove_member = << إزالة
+ab_members_of = أعضاء {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = غير موجودة في القاموس:
+sp_not_in_dictionary_name = غير موجودة في القاموس
+sp_in_this_line_label = في هذا السطر:
+sp_in_this_line_name = في هذا السطر
+sp_suggestions_label = اقتراحات:
+sp_suggestions_name = اقتراحات
+sp_replace_with_label = استبدال بـ:
+sp_replace_with_name = استبدال بـ
+sp_replace = استبدال
+sp_replace_all = استبدال الكل
+sp_ignore = تجاهل
+sp_ignore_all = تجاهل الكل
+sp_add_to_dictionary = إضافة إلى القاموس
+btn_close = إغلاق
+
+# Privacy and Content Blocking.
+priv_remote_label = المحتوى البعيد في الرسائل:
+priv_block_remote = حظر المحتوى البعيد حتى أطلبه (موصى به)
+priv_blocklist_label = قائمة حظر الإعلانات والمتتبعات:
+priv_block_known = حظر نطاقات الإعلانات والمتتبعات المعروفة
+priv_update_daily = تحديث القائمة يومياً في الخلفية
+priv_update_now = التحديث الآن
+priv_junk_label = قواعد البريد المزعج:
+priv_check_inbox = فحص بريد صندوق الوارد الجديد مقابل المرسلين المحظورين وروابط التصيّد المعروفة
+priv_move_blocked = نقل بريد المرسلين المحظورين تلقائياً إلى البريد المزعج
+priv_update_phishing = تحديث قائمة التصيّد الآن
+priv_blocked_label = المرسلون المحظورون:
+priv_blocked_name = المرسلون المحظورون
+priv_remove_blocked = إزالة المرسل المحظور
+priv_never_junk_label = مرسلون لا يُعاملون أبداً كبريد مزعج:
+priv_never_junk_name = مرسلون لا يُعاملون أبداً كبريد مزعج
+priv_remove_never_junk = إزالة مرسل الاستثناء
+priv_allowed_label = المرسلون المسموح لهم بتحميل المحتوى البعيد:
+priv_allowed_name = المرسلون المسموح بهم
+priv_remove_selected = إزالة المرسل المحدد
+
+# Message Filters.
+filt_rule_name = اسم القاعدة
+filt_enabled = مفعّلة
+filt_match_label = المطابقة:
+filt_match_all = مطابقة كل ما يلي (AND)
+filt_match_any = مطابقة أي مما يلي (OR)
+filt_conditions_label = الشروط (اترك القيمة فارغة لتخطيها):
+filt_condition_field = حقل الشرط {number}
+filt_condition_contains = الشرط {number} يحتوي على
+filt_actions_label = الإجراءات:
+filt_mark_read = تمييز كمقروءة
+filt_flag = وضع نجمة على الرسالة
+filt_move_label = النقل إلى مجلد:
+filt_move_name = النقل إلى مجلد
+filt_rules_name = قواعد الترشيح
+filt_new = قاعدة جديدة...
+filt_edit = تعديل القاعدة...
+filt_delete = حذف القاعدة
+filt_up = نقل لأعلى
+filt_down = نقل لأسفل
+filt_run_label = تشغيل الآن على المجلد:
+filt_run_name = مجلد التشغيل الآن
+filt_run_now = تشغيل الآن
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = فتح القفل بمفتاح المرور (Windows Hello)
+unl_security_key = فتح القفل بمفتاح الأمان
+unl_master_password_label = كلمة المرور الرئيسية:
+unl_master_password_name = كلمة المرور الرئيسية
+unl_unlock = فتح القفل
+unl_exit = إنهاء ZBox
+unl_methods_label = الطرق المسجّلة:
+unl_methods_name = طرق فتح القفل المسجّلة
+unl_add_passkey = إضافة مفتاح مرور…
+unl_add_key = إضافة مفتاح أمان…
+unl_reassign = إعادة تعيين مفتاح المرور لهذا الكمبيوتر…
+unl_test = اختبار…
+unl_remove = إزالة
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = من
+comp_to = إلى
+comp_cc = نسخة
+comp_bcc = نسخة مخفية
+comp_subject = الموضوع
+comp_attach_button = إرفاق ملف...
+comp_sending = جارٍ الإرسال...
+comp_report_label = التقرير:
+comp_report_name = التقرير
+comp_refresh = تحديث
+comp_copy = نسخ
+comp_preview_read = كما يقرؤها المستلم
+comp_preview_source = HTML الذي سيتم إرساله
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = نص الرسالة
+mv_blocked_notice = إشعار المحتوى المحظور
+mv_show_remote = عرض المحتوى البعيد
+mv_always_allow = السماح لهذا المرسل دائماً
+mv_message_headers = ترويسات الرسالة
+mv_attachments = المرفقات
+mv_attachments_count = المرفقات ({count})
+mv_save_attachment = حفظ: {filename}
+mv_save_all = حفظ الكل
+mv_html_view = عرض HTML للرسالة
+mv_saved_message = رسالة محفوظة
+mv_show_remote_tip = إعادة تحميل هذه الرسالة بصورها وأنماطها البعيدة. تبقى المتتبعات المعروفة محظورة.
+mv_always_allow_tip = تحميل المحتوى البعيد في كل رسالة من {sender}.
+
+# The search tab.
+srch_account = الحساب
+srch_folder = المجلد
+srch_for = البحث عن
+
+# The signature editor.
+sig_editors = محرّرا التوقيع
+sig_formatted = التوقيع، منسّق
+sig_source = التوقيع، مصدر HTML
+sig_plain_label = البديل النصي العادي (يُرسل جنباً إلى جنب مع HTML)
+sig_plain_name = البديل النصي العادي
+
+# About ZBox.
+about_text_name = نص حول ZBox
+about_view_license = عرض الترخيص...
+about_google = كلمات مرور تطبيقات Google...
+about_support = دعم ZBox -- تطوير وصيانة من شخص واحد
+about_repos = مستودعات تطبيقات حارث على GitHub
+about_contact = التواصل مع حارث
+btn_close_plain = إغلاق
+btn_cancel_plain = إلغاء
+
+# The license window.
+eula_heading = ترخيص ZBox
+eula_text_name = نص ترخيص ZBox
+eula_third_party = صفحات ترخيص المكونات الخارجية:
+eula_agree = أوافق على الشروط أعلاه
+eula_agree_name = قرأت شروط ترخيص ZBox وأوافق عليها
+eula_disagree = لا أوافق
+eula_next = التالي
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = نص توثيق ZBox
+doc_copy = نسخ إلى الحافظة
+shortcuts_heading = اختصارات لوحة المفاتيح
+shortcuts_text_name = نص اختصارات لوحة المفاتيح
+
+# The main window's own panes.
+mf_toolbar = شريط الأدوات الرئيسي
+mf_tabs = علامات تبويب ZBox
+tree_heading = الحسابات والمجلدات
+tree_name = شجرة الحسابات والمجلدات
+envlist_heading = الرسائل
+envlist_name = قائمة الرسائل
+rdr_heading = الرسالة
+rdr_name = قارئ الرسائل
+conv_heading_one = محادثة: رسالة واحدة
+conv_heading_many = محادثة: {count} رسائل
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} من {total} تم.
+bulk_cancelling = جارٍ الإلغاء -- جارٍ إنهاء الرسالة الحالية...
+cache_clear_now = مسح ذاكرة التخزين المؤقت للرسائل الآن... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}، محمية
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = الاسم المعروض اختياري -- اتركه فارغاً للإرسال باسم الحساب نفسه.
+acct_note_identity = يمكن أن يختلف عنوان البريد الإلكتروني عن بريد تسجيل الدخول إذا كان مزوّدك لديه نطاق مخصص مرتبط بصندوق البريد هذا. سيُرسل البريد ويُستلم تحت العنوان أعلاه، بينما يستمر تسجيل الدخول باستخدام بريد تسجيل الدخول. اترك حقل كلمة المرور فارغاً للاحتفاظ بكلمة المرور المخزّنة بالفعل لهذا الحساب -- مثلاً بعد تدوير كلمة مرور تطبيق Gmail، اكتب الجديدة هنا؛ وإلا فاتركه فارغاً.
+acct_note_identities = عناوين أخرى يمكن لهذا الحساب الإرسال والرد بها. الرد على رسالة أُرسلت إلى أحد هذه العناوين يجعل حقل من افتراضياً ذلك العنوان بدلاً من العنوان أعلاه.
+acct_note_signature = تُضاف إلى كل رسالة جديدة أو رد أو تمرير تُرسل من هذا الحساب، تحت سطر "-- ". اتركها فارغة لعدم وجود توقيع. تعديل التوقيع يفتح المحرر المنسّق، حيث تتوفر الخط العريض والقوائم والروابط؛ يحتفظ المربع أعلاه بعدها بالنسخة النصية العادية التي تُرسل معها.
+acct_note_junk = المجلد الفعلي الذي ينقل إليه أمر «تعيين كبريد مزعج» الرسائل. "{automatic}" يستخدم نفس التخمين الواعي بالمزوّد الذي تستخدمه الأرشيف وسلة المهملات بالفعل؛ عيّن هذا فقط إذا كان ذلك التخمين خاطئاً أو كان مجلد البريد المزعج لديك له اسم مخصص.
+acct_note_disable = لا يُتصل بالحساب المعطّل أبداً -- لا IDLE، لا تحديث دوري، لا شيء -- حتى تتم إعادة تفعيله. لا يزال يظهر في الشجرة، معلَّماً بـ(معطّل)، ويبقى بريده الذي تم تنزيله بالفعل متاحاً بدون اتصال. نفس المفتاح الموجود في الحسابات > تعطيل الحساب أو قائمة سياق الحساب نفسها؛ هذا مجرد مكان آخر للوصول إليه.
+acct_note_default = تظهر مجلدات هذا الحساب أولاً في الشجرة، وتُرسل الرسالة الجديدة افتراضياً منه ما لم يُغيَّر ذلك يدوياً في المحرر. لا يؤثر على العنوان الذي يستخدمه الرد أو التمرير -- فذلك يتبع بالفعل الرسالة التي يتم الرد عليها (انظر الهويات الإضافية أعلاه). يوجد دائماً حساب افتراضي واحد بالضبط، لذا فإن إلغاء تحديد هذا على الافتراضي الحالي دون تحديده على حساب آخر يتركه دون تغيير -- حدد مربع حساب آخر بدلاً من ذلك لمنحه الافتراضي.
+acct_note_mute = الكتم يمنع صوت البريد الجديد لهذا الحساب، والإعلان المنطوق، وإشعار ويندوز، بغض النظر عن كيفية تهيئتها بخلاف ذلك. لا يؤثر على الحسابات الأخرى، ولا يزال خاضعاً للمفاتيح الرئيسية في الإعدادات > الصوت والإشعارات (الأصوات وإشعارات سطح المكتب عموماً).
+wiz_note_app_password = إذا كان لديك بالفعل كلمة مرور تطبيق تم إنشاؤها لـZBox، اضغط التالي للمتابعة.
+wiz_note_login = بيانات اعتماد تسجيل الدخول.\nإذا كان بريد تسجيل الدخول لديك مختلفاً عن العنوان أعلاه، مثلاً حساب مزوّدك هو login@example.net لكنك تريد الإرسال والاستلام كـyou@example.org، أدخل بريد تسجيل الدخول هنا. يمكنك تعيين عنوان الإرسال المخصص لاحقاً في إعدادات الحساب والهويات.
+wiz_note_servers = إعدادات الخادم، معبّأة مسبقاً حيث يُتعرَّف على النطاق. عدّل أي شيء يحتاج إلى أن يكون مختلفاً.
+wiz_preset_none = لم يُعثر على إعداد مسبق لهذا النطاق. أدخل إعدادات خادم مزوّدك يدوياً؛ ستُدرجها صفحات مساعدة مزوّدك.
+ab_note_groups = اكتب اسم مجموعة في حقل إلى أو نسخة أو نسخة مخفية في نافذة إنشاء رسالة لتعبئة كل أعضائها دفعة واحدة.
+cache_note_intro = هذه تزيل نسخ ZBox المحلية فقط. لا شيء يُحذف من أي خادم بريد، وتُعاد الرسالة المُزالة عند فتحها في المرة القادمة.
+cache_note_age = يعمل التنظيف التلقائي مرة واحدة يومياً، عندما لا يكون لدى ZBox أي نشاط بلوحة المفاتيح لمدة عشر دقائق ولا رسالة مفتوحة. يعتمد على تاريخ كل رسالة نفسها، بما في ذلك الرسائل التي لا تزال في حسابك.
+filt_note_intro = تعمل القواعد بالترتيب، من الأعلى إلى الأسفل، مختبرة من وإلى والموضوع. تُطبَّق تلقائياً على البريد الجديد عند وصوله إلى صندوق وارد هذا الحساب؛ استخدم تشغيل الآن أدناه لتطبيقها على الرسائل الموجودة بالفعل في مجلد.
+filt_note_run_now = يطبّق كل قاعدة مفعّلة أعلاه، بالترتيب، على كل رسالة موجودة بالفعل في المجلد المختار -- يحفظ تغييراتك أولاً، مثل موافق تماماً.
+mp_note_intro = أُعدّت هذه الحسابات على كمبيوتر آخر. أدخل كلمة المرور الرئيسية لفتح كلمات مرورها المحفوظة هنا. لن يُطلب منك ذلك إلا مرة واحدة على هذا الكمبيوتر.\n\nبدونها، ستحتاج كل حساب إلى تسجيل الدخول إلى خادم بريده مرة أخرى.
+priv_note_remote = الصور وأوراق الأنماط والخطوط التي تحمّلها الرسالة من الإنترنت تُخبر المرسل بلحظة فتحك لها، ومن أين. مع تفعيل هذا، لا يُحمَّل أي منها: يظهر إشعار أعلى الرسالة يذكر ما تم حظره، وCtrl+Shift+I يحمّله لتلك الرسالة فقط. الصور المرفقة بالرسالة نفسها تظهر دائماً. تُزال البرمجيات النصية والإطارات المضمّنة على أي حال ولا تُحمَّل أبداً.
+priv_note_blocklist = هذه هي الطبقة الثانية. تهم بمجرد تحميل المحتوى البعيد لرسالة، أو السماح لمرسل: تُحمَّل الصور، لكن أي شيء يُقدَّم من نطاق تتبع أو إعلان معروف لا يزال لا يُحمَّل. تُنزَّل القائمة من قوائم إعلانات وتتبع عامة وتُدمج؛ التحديث يستغرق ثانية أو ثانيتين ويعمل في الخلفية.
+priv_note_junk = بلا تخمين. «تعيين كبريد مزعج» يضيف المرسل إلى قائمة الحظر أدناه، ما لم تكن الرسالة قد وصلت عبر قائمة بريدية. «ليس بريداً مزعجاً» يضيف المرسل إلى قائمة الاستثناء ولا تُفحص تلك الرسالة مرة أخرى أبداً. تُعلَّم الرسالة الجديدة من مرسل محظور بـمرسل محظور في القائمة؛ وتُعلَّم الرسالة التي ترتبط بموقع تصيّد أو برمجية خبيثة معروف بـتصيّد محتمل. تستمر تصفية البريد المزعج الخاصة بمزوّد بريدك في العمل كما كانت.
+priv_status_phishing_updating = قائمة التصيّد: جارٍ التحديث في الخلفية. أعد فتح هذا الحوار لرؤية النتيجة.
+priv_status_updating = جارٍ التحديث في الخلفية. أعد فتح هذا الحوار لرؤية النتيجة.
+rel_note_intro = الرسائل ذات الصلة بـ"{subject}" حسب ترويسات معرّف الرسالة/المراجع، عبر كل مجلد في هذا الحساب.
+srch_note_intro = البحث في من والموضوع والنص عن النص الذي تُدخله أدناه. يبحث في كل حساب ومجلد ما لم تضيّقه أدناه.
+sig_note_plain = اترك البديل النصي العادي فارغًا ليُكتب من التوقيع المنسق عند الضغط على حفظ.
+unified_note_intro = اختر المجلدات التي تريد دمجها عبر كل حساب. يصبح كل واحد محدد إدخالاً واحداً في الشجرة يدمج ذلك المجلد من جميع حساباتك.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = حول ZBox
+title_account_settings = إعدادات الحساب والهويات: {name}
+title_new_account = حساب جديد
+title_address_book = دفتر العناوين
+title_members = الأعضاء: {name}
+ab_group_name_prompt = اسم المجموعة:
+title_new_group = مجموعة جديدة
+title_cache_cleanup = إعدادات تنظيف ذاكرة التخزين المؤقت
+cache_age_prompt = إزالة الرسائل المخزّنة مؤقتاً تلقائياً الأقدم من:
+title_automatic_cleanup = التنظيف التلقائي
+comp_link_prompt = عنوان الرابط:
+title_insert_link = إدراج رابط
+title_composer_diagnostics = تشخيصات المحرر
+title_formatted_preview = معاينة منسّقة
+title_license_agreement = اتفاقية ترخيص ZBox
+title_message_filters = مرشّحات الرسائل: {account}
+title_master_password_required = كلمة المرور الرئيسية مطلوبة
+title_privacy_dialog = الخصوصية وحظر المحتوى
+title_privacy = الخصوصية
+title_settings = الإعدادات
+title_unified_folders = المجلدات الموحّدة
+title_zbox_locked = ZBox مقفل
+title_message_view = عرض الرسالة
+title_remote_content = المحتوى البعيد
+title_refresh = تحديث
+title_refresh_all = تحديث الكل
+mv_choose_folder = اختر مجلداً لحفظ المرفق
+title_thread = النقاش
+title_inbox = صندوق الوارد
+title_compose = إنشاء
+title_watch_thread = راقب النقاش
+title_ignore_thread = تجاهل النقاش
+title_edit_signature = تعديل التوقيع
+title_account = الحساب
+mf_folder_name_prompt = اسم المجلد:
+mf_new_name_prompt = الاسم الجديد:
+title_refresh_all_accounts = تحديث جميع الحسابات
+title_sender = المرسل
+title_new_mail = بريد جديد
+mf_export_dialog_title = تصدير جميع الحسابات ({count}) والإعدادات
+mf_related_tab = ذات صلة: {subject}
+title_hotkeys_diagnostic = تشخيص اختصارات المفاتيح
+set_choose_attachment_dir = اختر مجلد حفظ المرفقات
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox مقفل. استخدم أياً من الطرق أدناه لفتح قفله. الإلغاء يُغلق ZBox دون فتح أي حساب.
+unl_note_foreign_passkey = مفتاح المرور المحفوظ مع هذا المجلد يخص كمبيوتراً آخر، لذا لا يمكن استخدامه هنا. افتح القفل بمفتاح الأمان أو كلمة المرور الرئيسية لديك، ثم استخدم الإعدادات، الخصوصية والأمان، طرق فتح القفل لإعداد مفتاح مرور على هذا الكمبيوتر.
+unl_note_methods = أي واحدة من هذه تفتح قفل ZBox عندما يكون قفل التطبيق مفعّلاً، إلى جانب كلمة المرور الرئيسية. يستخدم مفتاح المرور Windows Hello على هذا الكمبيوتر؛ مفتاح الأمان هو مفتاح FIDO2 عبر USB أو NFC ويعمل على أي كمبيوتر توصله به.
+unl_note_not_encryption = تفتح هذه قفل التطبيق. لا تشفّر أي شيء: لا تزال كلمة المرور الرئيسية هي الشيء الوحيد الذي يمكنه فتح كلمات مرور الحسابات المحفوظة على كمبيوتر لم يُستخدم هذا المجلد عليه من قبل. يجب تعيينها أولاً، ولا يمكن إضافة أي من هذين حتى يتم ذلك.
+unl_add_passkey_unavailable = إضافة مفتاح مرور (غير متاح)
+unl_add_key_unavailable = إضافة مفتاح أمان (غير متاح)
+unl_reassign_unavailable = إعادة تعيين مفتاح المرور لهذا الكمبيوتر (غير متاح)
+unl_status_cancelled_passkey = تم إلغاء مفتاح المرور. لا يزال ZBox مقفلاً.
+unl_status_cancelled_key = تم إلغاء مفتاح الأمان. لا يزال ZBox مقفلاً.
+unl_status_enter_password = أدخل كلمة المرور الرئيسية.
+unl_status_no_master = لم تُعيَّن كلمة مرور رئيسية، لذا لا يمكن إضافة مفتاح مرور أو مفتاح أمان بعد. عيّن واحدة بزر كلمة المرور الرئيسية في الإعدادات، الخصوصية والأمان، ثم عد إلى هنا. كلمة المرور الرئيسية هي ما يفتح كلمات مرور حساباتك المحفوظة على كمبيوتر آخر؛ يفتح مفتاح المرور قفل التطبيق على هذا الكمبيوتر فقط، لذا لا يمكنه العمل بمفرده.
+unl_status_unsupported = لا يدعم ويندوز هذا الكمبيوتر مفاتيح المرور أو مفاتيح الأمان، لذا فإن كلمة المرور الرئيسية وحدها يمكنها فتح قفل ZBox هنا.
+unl_status_foreign_one = مفتاح مرور واحد يخص كمبيوتراً آخر ولا يمكنه فتح قفل ZBox هنا. إعادة التعيين تستبدله بمفتاح تم إنشاؤه على هذا الكمبيوتر.
+unl_status_foreign_many = {count} مفاتيح مرور تخص كمبيوتراً آخر ولا يمكنها فتح قفل ZBox هنا. إعادة التعيين تستبدلها بمفتاح تم إنشاؤه على هذا الكمبيوتر.
+unl_status_foreign_one_no_hello = مفتاح مرور واحد يخص كمبيوتراً آخر ولا يمكنه فتح قفل ZBox هنا. Windows Hello غير معدّ هنا، لذا لا يمكن استبداله على هذا الكمبيوتر؛ الإزالة تنساه.
+unl_status_foreign_many_no_hello = {count} مفاتيح مرور تخص كمبيوتراً آخر ولا يمكنها فتح قفل ZBox هنا. Windows Hello غير معدّ هنا، لذا لا يمكن استبدالها على هذا الكمبيوتر؛ الإزالة تنساها.
+unl_status_no_hello = Windows Hello غير معدّ على هذا الكمبيوتر، لذا لا يمكن إضافة مفتاح مرور هنا. لا يزال بإمكان مفتاح الأمان ذلك.
+unl_status_none_registered = لا توجد طرق فتح قفل مسجّلة بعد.
+unl_status_add_cancelled_passkey = تم إلغاء إضافة مفتاح مرور.
+unl_status_add_cancelled_key = تم إلغاء إضافة مفتاح أمان.
+unl_status_added = تمت الإضافة: {name}.
+unl_status_reassign_cancelled = تم إلغاء إعادة التعيين. لم يتغير شيء.
+unl_status_reassigned = تمت إضافة {name} ونسيان {count} من أجهزة كمبيوتر أخرى.
+unl_status_test_cancelled = تم إلغاء الاختبار.
+unl_status_removed = تمت الإزالة.
+unl_remove_warning_last = هل تريد إزالة {name}؟\n\nإنها طريقة فتح القفل الوحيدة المسجّلة ولم تُعيَّن كلمة مرور رئيسية، لذا مع تفعيل قفل التطبيق لن يبقى شيء لفتح قفل ZBox به. يُتخطى القفل بدلاً من إبعادك، لكن سيُفتح ZBox عندها دون قفل.
+unl_remove_warning = هل تريد إزالة {name}؟ لن يقبله ZBox بعد الآن.
+ab_col_email = البريد الإلكتروني
+ab_col_name = الاسم
+ab_col_phone = الهاتف
+ab_no_contacts = لا توجد جهات اتصال بعد.
+acct_auto_check = التحقق من الرسائل الجديدة تلقائيًا
+acct_note_auto_check = عند الإيقاف: لا يتصل ZBox بهذا الحساب من تلقاء نفسه، فلا مراقبة للبريد الجديد ولا تحديث مجدول ولا تنزيلات في الخلفية، لذلك لا يمكن لخادم غير موثوق أن يبطئ الحسابات الأخرى. يظل البريد المنزّل قابلًا للفتح، ولا يزال التحديث (F5) والإرسال والحذف تصل إلى الخادم. هذا مماثل لخيار إيقاف الفحص التلقائي مؤقتًا في قائمة الأدوات أو في قائمة سياق الحساب.
+bl_day_ago = منذ يوم واحد
+bl_days_ago = منذ {days} أيام
+bl_label_blocklists = قائمة الحظر
+bl_label_phishing = قائمة الاحتيال
+bl_last_failed = فشلت المحاولة الأخيرة: %s
+bl_not_downloaded = لم يُنزَّل بعد.
+bl_save_failed = نُزّلت %s لكن تعذّر حفظها: %s
+bl_seed_only = %s نطاق من القائمة المدمجة. لم تُحدَّث من الإنترنت بعد.
+bl_some_failed = فشلت بعض المصادر: %s
+bl_some_unreachable = تعذّر الوصول إلى بعض المصادر: %s
+bl_status_line = %s نطاق. آخر تحديث %s.
+bl_up_to_date = %s محدَّثة بالفعل.
+bl_update_failed = تعذّر تحديث %s: %s
+bl_updated = حُدّثت %s: %s نطاق.
+cc_age_choice = كل ذاكرة رسائل عمرها %s
+cc_auto_button = التنظيف التلقائي: الرسائل المخزّنة الأقدم من %s...
+comp_btn_discard = تجاهل
+comp_btn_keep_editing = متابعة التحرير
+comp_btn_save_draft = حفظ المسودة
+comp_no_account = لا يوجد حساب مُعدّ
+comp_saving_draft = جارٍ حفظ المسودة…
+comp_this_message = هذه الرسالة
+comp_unsent_save_q = حفظ %s كمسودة قبل الإغلاق؟
+comp_unsent_tray_q = حفظ %s كمسودة قبل انتقال ZBox إلى علبة النظام؟
+doc_unreadable = تعذّرت قراءة ملف التوثيق:
+envlist_all_disabled = جميع الحسابات معطّلة.
+envlist_col_date = التاريخ
+envlist_col_from = من
+envlist_col_status = الحالة
+envlist_col_subject = الموضوع
+envlist_collapsed = مطويّة (%d)
+envlist_empty = لا توجد رسائل في هذا المجلد.
+envlist_loading = جارٍ تحميل الرسائل...
+envlist_no_accounts = لم يُعدّ أي حساب بعد.
+envlist_no_ignored = لا توجد نقاشات متجاهلة في هذا المجلد.
+envlist_no_watched = لا توجد نقاشات مُراقَبة في هذا المجلد.
+envlist_select_folder = اختر حسابًا أو مجلدًا لتحميل الرسائل.
+eula_link_0 = فتح صفحة ترخيص Himalaya في المتصفح
+eula_link_1 = فتح صفحة ترخيص StevenBlack hosts في المتصفح
+eula_link_2 = فتح صفحة ترخيص EasyList/EasyPrivacy في المتصفح
+eula_link_3 = فتح صفحة ترخيص Phishing.Database في المتصفح
+eula_read_note = اقرأ الترخيص أدناه، بما في ذلك أقسام الجهات الخارجية. يجب تحديد أوافق قبل أن يصبح زر التالي متاحًا. أما لا أوافق فيغلق ZBox دون تشغيله ويزيل ما أنشأه هذا التشغيل حتى الآن.
+eula_unreadable = تعذّرت قراءة ملف الترخيص:\n%s
+filters_title = تشغيل المرشّحات
+flag_title = وضع نجمة على الرسالة
+folder_type_archive = الأرشيف
+folder_type_drafts = المسودات
+folder_type_inbox = صندوق الوارد
+folder_type_junk = البريد المزعج
+folder_type_sent = المرسل
+folder_type_trash = المهملات
+mime_application_json = ملف JSON
+mime_application_msword = مستند Word
+mime_application_octet_stream = ملف ثنائي
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = جدول Excel
+mime_application_vnd_ms_powerpoint = عرض PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = عرض PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = جدول Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = مستند Word
+mime_application_xml = ملف XML
+mime_application_zip = أرشيف ZIP
+mime_audio_mpeg = صوت MP3
+mime_audio_ogg = صوت OGG
+mime_audio_wav = صوت WAV
+mime_image_bmp = صورة BMP
+mime_image_gif = صورة GIF
+mime_image_jpeg = صورة JPEG
+mime_image_png = صورة PNG
+mime_image_svg_xml = صورة SVG
+mime_image_webp = صورة WebP
+mime_text_csv = ملف CSV
+mime_text_html = ملف HTML
+mime_text_plain = ملف نصي
+mime_video_mp4 = فيديو MP4
+mime_video_x_msvideo = فيديو AVI
+move_title_junk = تعيين كبريد مزعج
+move_title_move_to = نقل إلى
+move_title_not_junk = تعيين على أنه ليس بريداً مزعجاً
+mp_explain_set = تم تعيين كلمة مرور رئيسية. هي ما يتيح لمجلد ZBox هذا فتح كلمات مرور الحسابات المحفوظة على كمبيوتر آخر.\n\nاترك مربعي كلمة المرور الجديدة فارغين واضغط موافق لإزالتها. لا تؤثر الإزالة على هذا الكمبيوتر، لكن المجلد لن يعمل على أي كمبيوتر آخر دون تسجيل الدخول إلى كل حساب من جديد.
+mp_explain_unset = لم تُعيَّن كلمة مرور رئيسية، لذا لا يمكن قراءة كلمات مرور الحسابات المحفوظة إلا على هذا الكمبيوتر وحساب Windows هذا. إذا نسخت المجلد إلى مكان آخر فيجب تسجيل الدخول إلى كل حساب في خادم بريده من جديد.\n\nعيّن واحدة وسيطلبها ZBox مرة واحدة على كل كمبيوتر جديد، ثم يُفتح عادةً هناك بعد ذلك. لن يطلبها هذا الكمبيوتر مجددًا.\n\nاكتبها واحفظها في مكان آمن. فهي غير مخزّنة في أي مكان ولا يمكن استعادتها: إذا نسيتها فيجب تسجيل الدخول إلى كل حساب في خادم بريده من جديد.
+mp_label_confirm = تأكيد كلمة المرور الرئيسية الجديدة:
+mp_label_current = كلمة المرور الرئيسية الحالية:
+mp_label_master = كلمة المرور الرئيسية:
+mp_label_new = كلمة المرور الرئيسية الجديدة:
+mp_name_confirm = تأكيد كلمة المرور الرئيسية الجديدة
+mp_name_current = كلمة المرور الرئيسية الحالية
+mp_name_master = كلمة المرور الرئيسية
+mp_name_new = كلمة المرور الرئيسية الجديدة
+mp_prompt_existing = كلمات مرور الحسابات المحفوظة محمية على هذا الكمبيوتر فقط. عيّن كلمة مرور رئيسية ليمكن فتحها أيضًا إذا نقلت ZBox إلى كمبيوتر آخر.
+mp_prompt_first_run = سيحفظ ZBox كلمات مرور حساباتك. عيّن كلمة مرور رئيسية الآن ليمكن فتحها إذا نقلت ZBox إلى كمبيوتر آخر.
+mp_prompt_new_account = سيحفظ ZBox كلمة مرور هذا الحساب. عيّن كلمة مرور رئيسية أولًا ليمكن فتح الحساب إذا نقلت ZBox إلى كمبيوتر آخر.
+mp_removed_done = أُزيلت كلمة المرور الرئيسية. تعمل كلمات المرور المحفوظة الآن على هذا الكمبيوتر وحساب Windows هذا فقط.
+mp_set_done = عُيّنت كلمة المرور الرئيسية. سيطلبها ZBox مرة واحدة على كل كمبيوتر جديد يُفتح عليه هذا المجلد، ثم يُفتح عادةً بعد ذلك.
+mv_body_title = نص الرسالة
+mv_col_format = التنسيق
+mv_col_name = الاسم
+mv_col_size = الحجم
+mv_format_unknown = غير معروف
+mv_size_unknown = حجم غير معروف
+na_account_settings = إعدادات الحساب والهويات
+na_disable_account = تعطيل الحساب
+na_edit_signature = تحرير التوقيع
+na_message_filters = مرشّحات الرسائل
+na_mute_account = كتم الحساب
+na_pause_auto_check = إيقاف الفحص التلقائي مؤقتًا
+na_remove_account = إزالة الحساب
+na_set_default = تعيين كحساب افتراضي
+no_offline_copy = لا توجد نسخة بدون اتصال من %s. افتحه أثناء الاتصال، أو استخدم ملف، بدون اتصال، مزامنة الآن.
+perm_delete_confirm = {msg} يتجاوز هذا مجلد المهملات ولا يمكن التراجع عنه.
+perm_delete_many = حذف {count} رسائل نهائيًا؟
+perm_delete_one = حذف {count} رسالة نهائيًا؟
+preset_note_apple = تتطلب Apple كلمة مرور خاصة بالتطبيق.
+preset_note_fastmail = تتطلب Fastmail كلمة مرور تطبيق.
+preset_note_google = تتطلب Google كلمة مرور تطبيق أو OAuth2، وليس كلمة مرورك العادية.
+preset_note_proton = تتطلب ProtonMail تشغيل تطبيق ProtonMail Bridge محليًا.
+preset_note_yahoo = تتطلب Yahoo كلمة مرور تطبيق.
+priv_phishing_not_loaded = قائمة الاحتيال: لم تُحمَّل بعد. تُنزَّل أول مرة تكون فيها هذه القواعد مفعّلة ويكون ZBox متصلًا.
+priv_phishing_prefix = قائمة الاحتيال:
+priv_status_unavailable = حالة قائمة الحظر غير متاحة.
+rdr_load_failed = تعذّر تحميل الرسالة.\n\n{message}
+rdr_loading = جارٍ تحميل الرسالة...
+rdr_select_message = اختر رسالة لقراءتها هنا.
+set_autosave_off = إيقاف — استخدم حفظ المسودة (Ctrl+S) للحفظ يدويًا
+set_autosave_seconds = كل {seconds} ثانية
+set_no_unlock = لا يوجد مفتاح مرور أو مفتاح أمان قابل للاستخدام هنا
+set_purge_days = بعد {days} أيام
+set_purge_off = إيقاف — لا تُفرَّغ المهملات والبريد المزعج تلقائيًا أبدًا
+set_purge_one_day = بعد يوم واحد
+set_rt_bundled_installed = بيئة التشغيل المرفقة: مثبّتة.
+set_rt_bundled_many = بيئة التشغيل المرفقة: %s مثبّتة.
+set_rt_bundled_none = بيئة التشغيل المرفقة: غير مثبّتة، لذا يستخدم ZBox بيئة النظام.
+set_rt_bundled_unknown = بيئة التشغيل المرفقة: تعذّر التحديد.
+set_rt_bundled_ver = بيئة التشغيل المرفقة: الإصدار %s مثبّت.
+set_rt_system_unknown = بيئة التشغيل على مستوى النظام: تعذّر تحديد الإصدار.
+set_rt_system_ver = بيئة التشغيل على مستوى النظام: الإصدار %s.
+set_unlock_many = %d طرق فتح قابلة للاستخدام هنا
+set_unlock_unreadable = تعذّرت قراءة طرق الفتح
+sig_tab_formatted = منسّق
+sig_tab_source = مصدر HTML
+srch_all_accounts = جميع الحسابات
+srch_all_folders = جميع المجلدات
+tab_mail = البريد
+tab_new_message = رسالة جديدة
+tab_saved_message = رسالة محفوظة
+title_copy_to_err = نسخ إلى
+title_mark_message = وضع علامة على الرسالة
+title_unsent_message = رسالة غير مُرسلة
+tree_unified_root = المجلدات الموحدة
+unlock_kind_passkey = مفتاح مرور (Windows Hello)
+unlock_kind_security_key = مفتاح أمان
+unlock_prompt_message = يطلب منك Windows التأكيد. أجب عن مطالبته باستخدام Windows Hello أو رمز PIN أو مفتاح الأمان. تُغلق هذه النافذة من تلقاء نفسها عند انتهاء Windows.
+unlock_prompt_title = أمان Windows
+unlock_registering = تسجيل طريقة الفتح هذه
+unlock_the_passkey = مفتاح المرور
+unlock_the_security_key = مفتاح الأمان
+wildcard_eml = ملفات البريد (*.eml)|*.eml|جميع الملفات (*.*)|*.*
+wildcard_export = تصدير ZBox (*.json)|*.json
+wiz_not_supported = غير مدعوم: {name}. {note} لا يمكن إضافة هذا الحساب في ZBox.
+stock_apply = تطبيق
+stock_cancel = إلغاء
+stock_close = إغلاق
+stock_help = مساعدة
+stock_no = لا
+stock_ok = موافق
+stock_yes = نعم
+wiz_btn_back = السابق
+wiz_btn_finish = إنهاء
+wiz_btn_next = التالي
+acct_unsaved_q = هل تريد حفظ التغييرات على هذا الحساب؟
+btn_save = حفظ
+spell_add_to_dictionary = إضافة إلى القاموس
+spell_no_suggestions = لا توجد اقتراحات
+title_signature_for = التوقيع: {account}
+title_mark_folder_read = تعليم المجلد كمقروء
+title_update_available = تحديث ZBox
+update_available = يتوفر ZBox {new}. لديك {current}.
+upd_notes_label = ملاحظات الإصدار:
+upd_no_notes = لا توجد ملاحظات إصدار.
+upd_notes_name = ملاحظات الإصدار
+upd_update_now = نعم، حدِّث الآن
+upd_remind_later = ذكّرني لاحقًا
+title_update_download = جارٍ تنزيل تحديث ZBox
+upd_downloading = جارٍ تنزيل ZBox {version}...
+upd_progress_name = تقدم التنزيل
+upd_cancel = إلغاء
+upd_cancelling = جارٍ الإلغاء...
+set_updates_label = التحديثات:
+set_update_auto = البحث عن تحديثات تلقائيًا
+set_update_mode_label = عند العثور على تحديث:
+set_update_ask = اسألني
+set_update_silent = التنزيل والتثبيت بصمت
+set_update_note = يبحث ZBox في GitHub عن إصدار أحدث مرة واحدة في اليوم على الأكثر، وفقط أثناء خموله، ولا يرسل سوى رقم إصداره. خيار اسألني يعرض الإصدار الجديد وملاحظات إصداره مع نعم، حدِّث الآن وذكّرني لاحقًا. خيار التنزيل والتثبيت بصمت يجلب التحديث في وقت الخمول ويثبّته في المرة التالية التي تخرج فيها من ZBox كليًا، ولا يفعل ذلك أبدًا أثناء عملك. يستبدل التحديث ملفات برنامج ZBox فقط: لا تُمسّ حساباتك وكلمات مرورك وإعداداتك وبريدك وسجلاتك وسمات الأصوات وأي لغة أضفتها، وتُحفظ النسخة السابقة وتُستعاد تلقائيًا إذا تعذّر تشغيل النسخة الجديدة. وفي المساعدة، التحديثات أيضًا البحث عن تحديثات الآن وصفحة الإصدارات للتحديث يدويًا.
+set_update_check_now = تحقق الآن
+mv_attachment_button = {filename} ({format})
+att_open = فتح
+att_save = حفظ...
+att_save_all = حفظ كل المرفقات
+title_save_attachment = حفظ المرفق
+title_full_headers = الترويسات الكاملة
+hdr_copy_all = نسخ الكل
+acct_identity_own_signature = استخدام توقيع خاص بها
+acct_identity_own_reply_to = استخدام عنوان رد خاص بها
+acct_identity_reply_to = عنوان الرد
+acct_identity_always_cc = إرسال نسخة دائمًا إلى هذه العناوين
+acct_identity_cc = عناوين النسخة
+acct_identity_always_bcc = إرسال نسخة مخفية دائمًا إلى هذه العناوين
+acct_identity_bcc = عناوين النسخة المخفية
+acct_identity_own_folders = استخدام مجلدي مسودات ومُرسَل خاصين بها
+acct_identity_drafts = مجلد المسودات
+acct_identity_sent = مجلد المُرسَل
+acct_identity_own_smtp = استخدام خادوم صادر خاص بها
+acct_identity_smtp_login = اسم الدخول للصادر
+acct_identity_smtp_password = كلمة سر الصادر
+acct_identity_test_smtp = اختبار خادوم الصادر
+acct_identity_note_smtp = اترك اسم الدخول فارغًا لتسجيل الدخول بعنوان بريد هذه الهوية. تذهب النسخ المرسلة إلى مجلد المُرسَل لهذا الحساب، أو إلى مجلد المُرسَل الخاص بهذه الهوية إن كان لها واحد.
+identity_field_required = املأ {field}، أو ألغِ تحديد مربعه.
+identity_field_invalid = في {field} عنوان غير صالح.
+identity_folders_required = اختر مجلد مسودات أو مجلد مُرسَل أو كليهما، أو ألغِ تحديد مربعهما.
+identity_password_required = أدخل كلمة سر الصادر.
+identity_smtp_testing = جارٍ اختبار خادوم الصادر.
+identity_smtp_ok = قبل خادوم الصادر تسجيل الدخول.
+identity_smtp_failed = فشل اختبار خادوم الصادر.\n\n{error}
+set_bare_keys_note_move = يفتح M وC قائمتي «نقل إلى» و«نسخ إلى» بالمجلدات للرسائل المحددة، ويفتح Shift+M مربعًا تكتب فيه جزءًا من اسم مجلد لنقلها إليه. إيقاف هذا الخيار يعيد M وC أيضًا إلى التنقل بالحرف الأول.
+folder_search_filter = اسم المجلد يحتوي على
+folder_search_list = المجلدات المطابقة
+folder_search_no_match = لا يوجد مجلد يطابق هذا الاسم.
+wiz_signin_method = طريقة تسجيل الدخول
+wiz_method_password = كلمة السر
+wiz_method_microsoft = حساب Microsoft (Outlook.com وHotmail وLive وMicrosoft 365)
+wiz_ms_servers = تسجيل الدخول عبر Microsoft. مُلئت إعدادات الخادوم لـ Outlook.com وHotmail وLive وMicrosoft 365.
+wiz_welcome_notice = Gmail. ستُرفض كلمة مرور Google العادية، لكن كلمة مرور التطبيق تعمل. يجب تفعيل التحقق بخطوتين أولًا. يفتح الزر أدناه تعليمات Google.\n\nOutlook.com وHotmail وLive وMicrosoft 365. تسجّل هذه الحسابات الدخول بحساب Microsoft الخاص بك. في صفحة تسجيل الدخول، اختر حساب Microsoft، ثم سجّل الدخول من المتصفح أو برمز.\n\nمزوّدون آخرون. عادةً ما تعمل كلمة المرور العادية أو كلمة مرور التطبيق، وتذكر صفحات مساعدة مزوّدك إعدادات الخادم.
+preset_note_outlook = تسجّل حسابات Outlook.com وHotmail وLive وMSN الدخول بحساب Microsoft. اختر حساب Microsoft طريقةً لتسجيل الدخول في صفحة تسجيل الدخول.
+ms_status_name = حالة تسجيل الدخول إلى Microsoft
+ms_browser_button = تسجيل الدخول من المتصفح
+ms_code_button = تسجيل الدخول برمز
+ms_copy_code = نسخ الرمز
+ms_open_page = فتح صفحة تسجيل الدخول
+ms_stop = إيقاف الانتظار
+ms_not_configured = تسجيل الدخول عبر Microsoft غير مُعَدّ في هذه النسخة من ZBox.
+ms_not_signed_in = لم يُسجَّل الدخول بعد. سجّل الدخول من المتصفح، أو برمز على أي جهاز.
+ms_signed_in = تم تسجيل الدخول باسم {address}.
+ms_signed_in_plain = تم تسجيل الدخول.
+ms_needs_sign_in = يلزم تسجيل الدخول إلى Microsoft مجددًا لهذا الحساب. سجّل الدخول من المتصفح، أو برمز على أي جهاز.
+ms_reason_cancelled = أُوقف تسجيل الدخول.
+ms_reason_timeout = لم يصل أي رد في الوقت المحدد.
+ms_reason_denied = لم يُسمح بالوصول.
+ms_reason_expired = انتهت صلاحية الرمز. اطلب رمزًا جديدًا.
+ms_reason_network = تعذّر الوصول إلى Microsoft. تحقّق من الاتصال وحاول مجددًا.
+ms_reason_server = قالت Microsoft: {detail}
+ms_page_done = تم تسجيل الدخول. يمكنك إغلاق هذه الصفحة والعودة إلى ZBox.
+ms_page_failed = لم يكتمل تسجيل الدخول. عُد إلى ZBox لمعرفة التفاصيل.
+ms_browser_waiting = يعرض متصفحك صفحة تسجيل الدخول إلى Microsoft. أكمل تسجيل الدخول هناك، ثم عُد إلى ZBox.
+ms_code_asking = جارٍ طلب رمز تسجيل دخول من Microsoft...
+ms_code_waiting = على أي جهاز، افتح {address} وأدخل الرمز {code}. ينتظر ZBox هنا حتى تُكمل تسجيل الدخول.
+ms_failed = لم يكتمل تسجيل الدخول. {reason}
+ms_code_copied = نُسخ الرمز.
+offline_inbox_only = يُحتفظ بصندوق الوارد والأرشيف وحدهما للاستخدام دون اتصال. اتصل بالإنترنت لفتح {folder}.
+block_sender_rule_name = حظر {sender}
+title_block_sender = حظر هذا المرسل
+title_unblock_sender = إلغاء حظر هذا المرسل
+set_clear_inbox_cache = مسح ذاكرة الرسائل المؤقتة عند خروجها من صندوق الوارد
+set_clear_inbox_cache_note = عند التفعيل، تُحذف النسخة دون اتصال من الرسالة ونصها المحفوظ فور خروجها من صندوق الوارد، حتى لو حُذفت أو نُقلت من مكان آخر مثل هاتفك، فلا تظهر أبدًا حيث لم تعد موجودة. صندوق الوارد وحده يحتفظ بهذه الملفات، وكل مجلد آخر يُقرأ دائمًا من الخادوم.
+empty_trash_all_confirm = حذف كل الرسائل في سلة المهملات نهائيًا لكل الحسابات؟\n\nلا يمكن التراجع عن ذلك.
+
+[errors]
+language_restart_failed = تعذّر على ZBox إعادة تشغيل نفسه:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = تعذّر فتح عميل بريد لـ{address}.
+
+wizard_test_failed = فشل الاتصال:\n\n{error}
+
+contacts_import_unreadable = تعذّر قراءة ذلك الملف.\n\n{error}
+contacts_export_unwritable = تعذّرت كتابة ذلك الملف.\n\n{error}
+
+attach_unreadable = تعذّرت قراءة المرفق {path}:\n{error}
+send_failed = تعذّر إرسال الرسالة.\n\n{error}
+draft_attach_unreadable = تعذّرت قراءة المرفق {path}:\n{error}\n\nلم تُحفظ المسودة.
+draft_save_failed = تعذّر حفظ المسودة.\n\n{error}
+
+clipboard_unavailable = تعذّر فتح الحافظة.
+open_link_failed = تعذّر فتح متصفحك لـ:\n{url}
+
+master_password_mismatch = لا يتطابق مربعا كلمة المرور الرئيسية الجديدة.
+master_password_required = أدخل كلمة مرور رئيسية، أو اضغط إلغاء.
+master_password_not_set = تعذّر تعيين كلمة المرور الرئيسية: {error}
+master_password_not_here = لا يمكن تغيير كلمة المرور الرئيسية من هنا.
+
+attachment_save_failed = تعذّر حفظ المرفق.\n\n{error}
+attachments_save_failed = تعذّر حفظ المرفقات.\n\n{error}
+print_failed = تعذّرت طباعة الرسالة. تحقق من تهيئة طابعة.
+print_preview_failed = تعذّر فتح معاينة الطباعة. تحقق من تهيئة طابعة.
+
+related_search_failed = تعذّر البحث عن رسائل ذات صلة.\n\n{error}
+search_failed = فشل البحث.\n\n{error}
+
+unlock_methods_no_config_folder = تعذّر على ZBox إيجاد مجلد تهيئته، لذا لا يمكن إدارة طرق فتح القفل هنا.
+shortcut_no_folder = تعذّر على ZBox تحديد مجلده الخاص، لذا لا يمكن إنشاء اختصار من هنا.
+shortcut_failed_settings = تعذّر إنشاء اختصار سطح المكتب:\n\n{error}
+
+unlock_method_failed = لم تعمل {what}.\n\n{error}
+unlock_check_failed = تعذّر التحقق من كلمة المرور الرئيسية.\n\n{error}
+unlock_password_wrong = كلمة المرور الرئيسية تلك غير صحيحة.
+unlock_add_failed = تعذّرت إضافة {what}.\n\n{error}
+unlock_passkey_setup_failed = تعذّر إعداد مفتاح المرور على هذا الكمبيوتر، لذا لم يتغير شيء.\n\n{error}
+unlock_method_test_failed = لم تعمل تلك الطريقة.\n\n{error}
+
+account_list_unreadable = تعذّر على ZBox فتح قائمة حساباتك.\n\n{error}\n\nلم يتم تحميل أي حسابات، ولم يتغير الملف، لذا لم يُفقد شيء. تُرفض إضافة الحسابات وتعديلها وإزالتها حتى يمكن قراءتها.
+account_list_no_accounts = تعذّر على ZBox فتح قائمة حساباتك في هذه الجلسة ({error})، لذا لا توجد حسابات لتحديدها. لم يُفقد شيء ولم يتغير شيء. أغلق ZBox وابدأ تشغيله مرة أخرى، وأدخل كلمة مرورك الرئيسية عند سؤالك عنها.
+open_message_failed = تعذّر فتح الرسالة.\n\n{error}
+filters_list_failed = تعذّر سرد الرسائل في {folder}.\n\n{error}
+filters_move_failed = تعذّر نقل الرسائل التي تمت تصفيتها.\n\n{error}
+cache_clear_failed = تعذّر مسح ذاكرة التخزين المؤقت.\n\n{error}
+folder_create_failed = تعذّر إنشاء المجلد.\n\n{error}
+folder_rename_failed = تعذّرت إعادة تسمية المجلد.\n\n{error}
+folder_delete_failed = تعذّر حذف المجلد.\n\n{error}
+folder_subscribe_failed = تعذّر الاشتراك في المجلد.\n\n{error}
+folder_unsubscribe_failed = تعذّر إلغاء الاشتراك في المجلد.\n\n{error}
+saved_open_failed = تعذّر فتح الملف.\n\n{error}
+saved_parse_failed = تعذّر تحليل هذا الملف كرسالة بريد إلكتروني.\n\n{error}
+save_file_failed = تعذّر حفظ الملف.\n\n{error}
+save_fetch_failed = تعذّر جلب الرسالة لحفظها.\n\n{error}
+empty_trash_failed = تعذّر إفراغ سلة المهملات.\n\n{error}
+empty_junk_failed = تعذّر إفراغ البريد المزعج.\n\n{error}
+export_write_failed = تعذّرت كتابة ملف التصدير.\n\n{error}
+import_read_failed = تعذّرت قراءة هذا الملف كتصدير من ZBox.\n\n{error}
+import_not_export = لا يبدو هذا الملف تصديراً من ZBox.\n\n{error}
+search_open_failed = تعذّر فتح هذه الرسالة.
+related_load_failed = تعذّر تحميل هذه الرسالة.\n\n{error}
+reply_load_failed = تعذّر تحميل الرسالة للرد عليها.\n\n{error}
+forward_load_failed = تعذّر تحميل الرسالة لتمريرها.\n\n{error}
+action_failed = تعذّر إتمام هذا الإجراء.\n\n{error}
+undo_failed = تعذّر التراجع عن {label}.\n\n{error}
+copy_failed = تعذّر نسخ الرسالة.\n\n{error}
+delete_failed = تعذّر حذف الرسالة.\n\n{error}
+archive_failed = تعذّرت أرشفة الرسالة.\n\n{error}
+master_password_not_changed = تعذّر تغيير كلمة المرور الرئيسية: {error}
+shortcut_failed_startup = تعذّر إنشاء اختصار سطح المكتب:\n\n{error}\n\nسيتابع ZBox بدء التشغيل. يمكنك المحاولة مرة أخرى لاحقاً من الإعدادات.
+account_locked_action = لا يستطيع ZBox %s. تعذّر فتح قائمة الحسابات في هذه الجلسة (%s)، ولم يتغيّر شيء. أغلق ZBox وشغّله مجددًا، وأدخل كلمة المرور الرئيسية إذا طُلبت منك.
+send_tls_mismatch = تعذّر إرسال الرسالة. أجاب خادم البريد الصادر دون تشفير، لذا فإن تشفير البريد الصادر لا يطابق المنفذ. في الأدوات، إعدادات الحساب والهويات، استخدم STARTTLS للمنفذ 587 أو SSL/TLS للمنفذ 465، ثم أعد الإرسال.\n\n{error}
+mark_folder_read_failed = تعذّر تعليم المجلد كمقروء.\n\n{error}
+update_failed = تعذّر تنزيل التحديث، لذا لم يتغير شيء.\n\n{error}
+update_rolled_back = تعذّر تشغيل التحديث، لذا استُعيدت النسخة السابقة.
+attachment_open_failed = تعذّر فتح المرفق.\n\n{error}
+headers_failed = تعذّر تحميل ترويسات الرسالة.\n\n{error}
+wizard_ms_sign_in_first = سجّل الدخول عبر Microsoft قبل المتابعة. استخدم أحد زرّي تسجيل الدخول في هذه الصفحة.
+wizard_provider_unsupported = لا يستطيع ZBox تسجيل الدخول لدى هذا المزوّد. توضح الملاحظة في هذه الصفحة السبب. ارجع واستخدم عنوان بريد آخر، أو ألغِ.
+acct_ms_sign_in_first = سجّل الدخول عبر Microsoft قبل الحفظ، أو اختر كلمة السر طريقةً لتسجيل الدخول.
+ms_sign_in_again = يلزم تسجيل الدخول إلى Microsoft مجددًا لـ {account}. افتح إعدادات الحساب والهويات وسجّل الدخول هناك.
+empty_trash_all_failed = تعذّر إفراغ سلة المهملات لـ: {accounts}
+
+[help]

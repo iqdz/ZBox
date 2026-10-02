@@ -1,0 +1,1598 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Türkçe
+code = tr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = İleti gönderildi.
+draft_saved = Taslak kaydedildi.
+signature_inserted = İmza eklendi.
+signature_none = Bu hesabın imzası yok.
+signature_saved = İmza kaydedildi.
+signature_not_saved = İmza kaydedilmedi.
+pasted_as_quotation = Alıntı olarak yapıştırıldı.
+clipboard_empty = Panoda hiçbir şey yok.
+word_count = {words} sözcük, {characters} karakter.
+report_copied = Rapor kopyalandı.
+compose_tab_needed = Bu komut bir yazma sekmesi gerektirir.
+attach_file_instead = Bırakılan dosyalar ileti metnine eklenmez. Dosya göndermek için Dosya Ekle'yi kullanın.
+
+# Formatting in the message body
+formatting_here = Buradaki biçimlendirme: {formatting}.
+no_formatting_here = Burada biçimlendirme yok, düz metin.
+
+# Spelling
+nothing_to_check = Denetlenecek bir şey yok.
+no_misspellings = Yazım hatası yok.
+spelling_dictionary_unavailable = Yazım sözlüğü kullanılamıyor.
+next_misspelling_first = Önce Sonraki Yazım Hatası'nı kullanın.
+word_added = Sözlüğe eklendi: {word}.
+word_not_added = Eklenemedi: {word}.
+corrections_applied_one = 1 düzeltme uygulandı.
+corrections_applied_many = {count} düzeltme uygulandı.
+corrections_applied_partly = {total} düzeltmeden {applied} tanesi uygulandı. Geri kalanı reddedildi; günlüğe bakın.
+occurrences_replaced_one = 1 geçiş değiştirildi.
+occurrences_replaced_many = {count} geçiş değiştirildi.
+
+# Reading mail
+message_did_not_open = İleti açılmadı. Sunucu yanıt vermedi. Yeniden denemek için Enter'a basın.
+thread_open = Bu ileti dizisinde {messages}. Kapatmak için yeniden basın.
+no_thread_selected = İleti dizisi seçilmedi.
+thread_watched = İleti dizisi izleniyor.
+thread_not_watched = İleti dizisi artık izlenmiyor.
+thread_ignored = İleti dizisi yoksayıldı.
+thread_not_ignored = İleti dizisi artık yoksayılmıyor.
+none_found = Hiçbir şey bulunamadı.
+refreshing_this_folder = Bu klasör yenileniyor.
+refreshing_all_accounts = Tüm hesaplar yenileniyor.
+message_view_html = İleti görünümü: HTML (işlenmiş).
+message_view_text = İleti görünümü: Metin.
+remote_content_blocked = Uzak içerik engellendi.
+remote_content_unblocked = Uzak içerik engeli kaldırıldı.
+remote_content_already_showing = Uzak içerik bu iletide zaten gösteriliyor.
+archived = Arşivlendi.
+copied_to_folder = {to_folder} klasörüne kopyalandı.
+deleted_one = İleti kalıcı olarak silindi.
+deleted_many = {count} ileti kalıcı olarak silindi.
+trashed_one = İleti Çöp Kutusu'na taşındı.
+trashed_many = {count} ileti Çöp Kutusu'na taşındı.
+
+# Accounts and new mail
+no_account_yet = Henüz geçilecek bir hesap yok.
+inbox_landed = {name} gelen kutusu.
+account_enabled = {name} etkinleştirildi.
+account_disabled = {name} devre dışı bırakıldı.
+new_mail_one = {name} için 1 yeni ileti.
+new_mail_many = {name} için {count} yeni ileti.
+refresh_all_done_one = 1 hesap yenilendi.
+refresh_all_done_many = {count} hesap yenilendi.
+refresh_all_done_failures = {count} hesap yenilendi, {failed} tanesi yenilenemedi.
+refresh_all_done_failures_one = {count} hesap yenilendi, {failed} tanesi yenilenemedi.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adres kopyalandı.
+sender_no_address = {sender}. Kopyalanacak adres yok.
+clipboard_not_opened = {sender}. Pano açılamadı.
+
+# The signature editor
+signature_page_formatted = Biçimlendirilmiş. Kaydedilecek olan budur.
+signature_page_html = HTML kaynağı. Kaydedilecek olan budur.
+signature_page_html_still_wins = Biçimlendirilmiş. Kaydedilecek olan hâlâ HTML kaynağıdır.
+
+# Background work
+phishing_list_updating = Kimlik avı listesi arka planda güncelleniyor.
+cache_cleared = {files} önbellek dosyası temizlendi, {size} MB.
+hotkeys_diagnostic_on = Kısayol tanılaması açık, işaretli
+hotkeys_diagnostic_off = Kısayol tanılaması kapalı, işaretsiz
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arşivle
+action_delete = Sil
+action_delete_permanently = Kalıcı Olarak Sil
+action_mark_as_junk = Gereksiz Olarak İşaretle
+action_mark_as_not_junk = Gereksiz Değil Olarak İşaretle
+action_move_to = Taşı
+action_copy_to = Kopyala
+action_mark_message = İletiyi İşaretle
+action_undo = Geri Al
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Geri alındı: {action}.
+undo_done_many = {count} ileti için geri alındı: {action}.
+junk_marked_one = Gereksiz olarak işaretlendi.
+junk_marked_many = {count} ileti gereksiz olarak işaretlendi.
+junk_no_new_sender = Yeni gönderen engellenmedi: zaten engelli, bir posta listesi ya da kendi adreslerinizden biri.
+not_junk_marked_one = Gereksiz değil olarak işaretlendi.
+not_junk_marked_many = {count} ileti gereksiz değil olarak işaretlendi.
+moved_to_one = {to_folder} klasörüne taşındı.
+moved_to_many = {count} ileti {to_folder} klasörüne taşındı.
+copied_to_many = {count} ileti {to_folder} klasörüne kopyalandı.
+marked_read = Okundu olarak işaretlendi.
+marked_unread = Okunmadı olarak işaretlendi.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} iletiden {completed} tanesinden sonra iptal edildi. {succeeded} başarılı, {failed} başarısız.
+bulk_failed_one = {done} 1 iletiden {failed} tanesi başarısız oldu.
+bulk_failed_many = {done} {total} iletiden {failed} tanesi başarısız oldu.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Kalın
+format_word_italic = İtalik
+format_word_strike = Üstü çizili
+format_word_href = Bağlantı
+format_word_bullet = Madde işaretli liste
+format_word_number = Numaralı liste
+format_word_quote = Alıntı
+format_word_code = Kod
+format_word_heading1 = Başlık
+format_applied = {formatting} uygulandı.
+format_inserted = {formatting} eklendi.
+format_not_available = {formatting} düz ileti gövdesinde kullanılamaz.
+format_on = {formatting} açık
+format_off = {formatting} kapalı
+link_applied = Bağlantı uygulandı.
+link_applied_to_selection = Bağlantı seçime uygulandı.
+plain_body_formatting = Düz ileti gövdesi, biçimlendirmesini etiketler olarak gösterir.
+
+# Reaching either end of a thread
+thread_edge_first = Bu ileti dizisindeki ilk ileti. Kapatmak için yeniden basın.
+thread_edge_last = Bu ileti dizisindeki son ileti. Kapatmak için yeniden basın.
+auto_check_paused = {account} için otomatik denetim duraklatıldı.
+auto_check_resumed = {account} için otomatik denetim açık.
+html_view_still_loading = İleti hâlâ yükleniyor. Escape kapatır.
+jump_unified_inbox = Birleşik gelen kutusu.
+message_still_opening = İleti açılıyor. Sunucu yavaş.
+remote_none = Bu iletide uzak içerik yok.
+sender_none = Bu iletinin göndereni yok.
+sender_name_no_address = %s, adres yok
+signature_not_switched = İmza değiştirilmedi. Bu hesabın imzasını eklemek için Ctrl+Shift+S tuşlarına basın.
+signature_removed_no_signature = İmza kaldırıldı. Bu hesabın imzası yok.
+signature_switched = İmza bu hesabın imzasıyla değiştirildi.
+spell_not_replaced = Sözcük değiştirilemedi.
+spell_replaced_with = {word} ile değiştirildi.
+folder_marked_read = {count} ileti okundu olarak işaretlendi.
+folder_no_unread = Okunmamış ileti yok.
+threads_all_collapsed = Tüm ileti dizileri daraltıldı.
+threads_all_expanded = Tüm ileti dizileri genişletildi.
+upd_percent = yüzde {percent}
+upd_download_done = İndirme tamamlandı. Güncelleme hazırlanıyor...
+upd_updated_to = ZBox {version} sürümüne güncellendi.
+header_copied = Kopyalandı.
+headers_copied = Tüm üst bilgiler kopyalandı.
+identity_copies_updated = Bu kimlik için Cc ve Bcc güncellendi.
+signature_switched_identity = İmza bu kimliğinkiyle değiştirildi.
+signature_removed_identity = İmza kaldırıldı. Bu kimliğin imzası yok.
+signature_not_switched_identity = İmza değiştirilmedi. Bu kimliğin imzasını eklemek için Ctrl+Shift+S tuşlarına basın.
+signature_none_identity = Bu kimliğin imzası yok.
+move_keys_no_selection = Önce bir ileti seçin.
+move_keys_no_folders = Henüz seçilecek klasör yok. Birazdan yeniden deneyin.
+block_sender_done_one = {sender} engellendi. Yeni iletileri Çöp Kutusu'na gidecek.
+block_sender_done_many = {count} gönderen engellendi. Yeni iletileri Çöp Kutusu'na gidecek.
+block_sender_already = {sender} zaten engelli.
+block_sender_own = Engellenmedi: bu sizin kendi adreslerinizden biri.
+block_sender_list_unknown = Engellenmedi: bu ileti bir posta listesi üzerinden geldi ve kimin gönderdiğini belirtmiyor. Listenin adresini engellemek tüm üyelerini engeller.
+block_sender_moved = Gönderen engellendi. {count} ileti Çöp Kutusu'na taşındı.
+block_senders_moved = {senders} gönderen engellendi. {count} ileti Çöp Kutusu'na taşındı.
+unblock_sender_moved = Gönderenin engeli kaldırıldı. {count} ileti Gelen Kutusu'na taşındı.
+unblock_senders_moved = {senders} gönderenin engeli kaldırıldı. {count} ileti Gelen Kutusu'na taşındı.
+unblock_sender_done = {sender} engeli kaldırıldı.
+unblock_sender_not_blocked = {sender} engelli değil.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Yukarıya bir şey yazın ve Enter'a basın ya da Ara'yı seçin.
+search_no_account = Önce bir hesap ekleyin.
+search_no_term = Aranacak bir şey yazın.
+search_running = Aranıyor...
+search_none = "{term}" için eşleşme yok.
+search_found_one = "{term}" için 1 eşleşme.
+search_found_many = "{term}" için {count} eşleşme.
+search_failed = Arama başarısız oldu.
+
+# The related messages tab
+related_running = Aranıyor...
+related_none = İlgili ileti bulunamadı.
+related_found_one = 1 ilgili ileti bulundu.
+related_found_many = {count} ilgili ileti bulundu.
+related_failed = İlgili iletiler aranamadı.
+
+# Writing and sending
+sending_via = Gönderiliyor, gönderen: {sender}...
+send_failed = Gönderme başarısız oldu. Ayrıntılar için günlüklere bakın.
+draft_autosaved = Taslak otomatik kaydedildi.
+draft_autosave_failed = Taslak otomatik kaydedilemedi. Ayrıntılar için günlüklere bakın.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Uzak içerik artık şu gönderenin iletileri için yüklenecek: {sender}.
+downloading_attachment = İndiriliyor: {filename}...
+downloading_attachments_one = 1 ek indiriliyor...
+downloading_attachments_many = {count} ek indiriliyor...
+saved_to = Kaydedildiği yer: {folder}
+attachment_download_failed = Ek indirilemedi.
+
+# Getting mail onto the screen
+loading_folder = {folder} yükleniyor, hesap: {account}...
+messages_in_folder = {folder} içinde {count} ileti.
+messages_in_folder_cached = {folder} içinde {count} ileti (son eşitlenen kopya, güncelleniyor...)
+no_offline_copy = {folder} için henüz çevrimdışı kopya yok.
+refresh_failed_cached = {folder} yenilenemedi: son eşitlenen kopya gösteriliyor.
+no_such_folder = Bu hesapta {folder} klasörü yok.
+load_failed = İletiler yüklenemedi. Ayrıntılar için günlüklere bakın.
+no_more_to_load = Bu klasörde yüklenecek başka ileti yok.
+loading_more = {folder} içinde daha fazla ileti yükleniyor...
+more_loaded = {count} ileti daha yüklendi.
+no_more_messages = Bu klasörde başka ileti yok.
+load_more_failed = Daha fazla ileti yüklenemedi: {error}
+loading_unified = Birleşik {folder} yükleniyor...
+messages_in_unified = Birleşik {folder} içinde, hesaplar genelinde {count} ileti.
+messages_in_unified_cached = Birleşik {folder} içinde {count} ileti (son eşitlenen kopya, güncelleniyor...)
+auto_purge_done = Otomatik temizleme, Çöp Kutusu/Gereksiz klasöründen {count} eski iletiyi kaldırdı.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Hazır.
+opening_message = İleti açılıyor...
+opening_message_already = İleti açılıyor... (zaten yükleniyor)
+could_not_open_message = İleti açılamadı.
+could_not_open_that_message = O ileti açılamadı.
+could_not_load_message = Bu ileti yüklenemedi.
+message_still_loading = O ileti hâlâ yükleniyor.
+folder_still_loading = Bu klasör hâlâ yükleniyor -- birazdan yeniden deneyin.
+not_in_thread = Bu ileti bir ileti dizisinin parçası değil.
+no_longer_in_thread = Bu ileti artık ileti dizisinde değil.
+thread_position = Bu ileti dizisinde {total} iletiden {position}. ileti.
+thread_finished_one = Bu ileti dizisi bitti (1 ileti).
+thread_finished_many = Bu ileti dizisi bitti ({count} ileti).
+select_message_first = Önce bir ileti seçin.
+conversation_failed = Bu konuşma açılamadı.
+select_message_for_related = Önce ilgili iletilerini görmek istediğiniz iletiyi seçin.
+looking_for_related = İlgili iletiler aranıyor...
+no_threading_headers = Bu iletide aranacak Message-ID ya da ileti dizisi üstbilgisi yok.
+reply_one_at_a_time = Yanıtla aynı anda tek bir iletide çalışır. Lütfen tek bir ileti seçin.
+select_message_to_reply = Önce yanıtlanacak bir ileti seçin.
+preparing_reply = Yanıt hazırlanıyor...
+reply_load_failed = Yanıt için özgün ileti yüklenemedi.
+select_message_to_forward = Önce iletilecek bir ileti seçin.
+preparing_forward = İletilecek ileti hazırlanıyor...
+forward_load_failed = İletilecek ileti yüklenemedi.
+compose_tab_needed_hint = Bu komut bir yazma sekmesi gerektirir. İleti yazmak için Ctrl+N'ye basın.
+open_message_first_view = Önce bir ileti açın, ardından görünümünü değiştirmek için Ctrl+B'ye basın.
+open_message_first_remote = Önce bir ileti açın, ardından uzak içeriğini yüklemek için Ctrl+Shift+I'ya basın.
+
+# Acting on messages
+copying_message = İleti kopyalanıyor...
+copy_failed = Kopyalama başarısız oldu.
+delete_failed = Silme başarısız oldu.
+already_in_archive = Zaten Arşiv'de.
+archiving = Arşivleniyor...
+archive_failed = Arşivleme başarısız oldu.
+action_failed = Başarısız oldu: {action}.
+nothing_to_undo = Geri alınacak bir şey yok.
+undo_failed = Geri alınamadı: {action}.
+
+# Views and folders
+folder_pane_all = Klasör bölmesi: Tüm Klasörler.
+folder_pane_unified = Klasör bölmesi: Birleşik Klasörler.
+sorted_ascending = Sıralama: {field}, artan.
+sorted_descending = Sıralama: {field}, azalan.
+unified_folders_updated = Birleşik klasörler güncellendi.
+zoom_reset = İleti yazı boyutu varsayılana sıfırlandı.
+folder_creating = "{folder}" klasörü oluşturuluyor...
+folder_created = "{folder}" klasörü oluşturuldu.
+folder_create_failed = Klasör oluşturulamadı.
+folder_renaming = "{folder}" klasörünün adı "{new_name}" olarak değiştiriliyor...
+folder_renamed = Klasörün adı "{new_name}" olarak değiştirildi.
+folder_rename_failed = Klasörün adı değiştirilemedi.
+folder_deleting = "{folder}" klasörü siliniyor...
+folder_deleted = Klasör silindi.
+folder_delete_failed = Klasör silinemedi.
+folder_subscribing = "{folder}" klasörüne abone olunuyor...
+folder_unsubscribing = "{folder}" klasörünün aboneliği kaldırılıyor...
+folder_subscribed = Abone olundu.
+folder_unsubscribed = Abonelik kaldırıldı.
+folder_subscribe_failed = Klasöre abone olunamadı.
+folder_unsubscribe_failed = Klasörün aboneliği kaldırılamadı.
+
+# Accounts
+account_not_added = Hesap eklenmedi.
+account_added = Hesap eklendi: {account}
+account_settings_not_saved = Hesap ayarları kaydedilmedi.
+account_updated = Hesap güncellendi: {account}
+account_not_removed = Hesap kaldırılmadı.
+account_removed = Hesap kaldırıldı.
+account_removed_with_files = Hesap kaldırıldı. {count} yerel dosya silindi.
+default_account_failed = Varsayılan hesap ayarlanamadı.
+default_account_set = Varsayılan hesap artık: {account}.
+mute_not_saved = Sessize alma ayarı kaydedilmedi.
+account_muted = Sessize alındı: {account}.
+account_unmuted = Sesi açıldı: {account}.
+export_done = {count} hesap ve ayarlar dışa aktarıldı: {path}.
+import_done = {count} hesap içe aktarıldı: {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Süzgeçler kaydedilmedi.
+filters_saved = Süzgeçler kaydedildi, hesap: {account}.
+filters_checking = {folder} süzgeçlerinize göre denetleniyor...
+filters_none_matched = Şimdi Çalıştır: {folder} içinde hiçbir ileti etkin bir kuralla eşleşmedi.
+filters_run_failed = Süzgeçler çalıştırılamadı.
+filters_moving = Süzgeçten geçen {count} ileti taşınıyor...
+filters_move_failures = Süzgeçler: {count} ileti taşınamadı.
+filters_moved = Süzgeçler {folder} içinden {count} iletiyi taşıdı.
+filters_move_failed = Süzgeçten geçen iletiler taşınamadı.
+cache_not_cleared = Önbellek temizlenmedi.
+auto_cache_cleanup = Otomatik önbellek temizliği: şundan eski iletiler: {age}.
+phishing_update_failed = Kimlik avı listesi güncellenemedi: {error}
+blocklist_update_failed = Engelleme listesi güncellenemedi: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Önce bir ileti açın, ardından Farklı Kaydet'i kullanın.
+saving_message = İleti kaydediliyor...
+save_file_failed = Dosya kaydedilemedi.
+save_fetch_failed = Kaydedilecek ileti alınamadı.
+open_message_first_print = Önce bir ileti açın, ardından Yazdır'ı kullanın.
+open_message_first_preview = Önce bir ileti açın, ardından Baskı Önizleme'yi kullanın.
+refreshing_accounts = {count} hesap yenileniyor...
+emptying_trash = Çöp Kutusu boşaltılıyor, hesap: {account}...
+trash_already_empty = Çöp Kutusu zaten boştu.
+trash_emptied = Çöp Kutusu boşaltıldı: {count} ileti temizlendi.
+empty_trash_failed = Çöp Kutusu boşaltılamadı.
+emptying_junk = Gereksiz boşaltılıyor, hesap: {account}...
+junk_already_empty = Gereksiz zaten boştu.
+junk_emptied = Gereksiz boşaltıldı: {count} ileti temizlendi.
+junk_emptied_prefix = Gereksiz boşaltıldı:
+junk_part_purged = {count} temizlendi
+junk_part_in_trash = {count} Çöp Kutusu'na taşındı ama kaldırıldığı doğrulanmadı, Çöp Kutusu'nu denetleyin
+junk_part_not_moved = {count} Çöp Kutusu'na taşınmadı, hâlâ Gereksiz'de
+empty_junk_failed = Gereksiz boşaltılamadı.
+back_online = Yeniden çevrimiçi.
+offline_sync_running = {account} çevrimdışı kullanım için eşitleniyor...
+offline_sync_failed = Çevrimdışı eşitleme başarısız oldu: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Önce bir ileti seçin ya da açın.
+select_or_open_message_ctrl_u = Önce bir ileti seçin ya da açın, ardından Ctrl+U'ya basın.
+no_sender_address = Bu iletide eklenecek bir gönderen adresi yok.
+contact_added = Adres defterinize eklendi: {contact}.
+contact_already_there = Zaten adres defterinizde: {contact}.
+privacy_saved = Gizlilik ayarları kaydedildi. Uygulamak için iletiyi yeniden açın.
+message_font_size = İleti yazı boyutu: {size} punto.
+
+# Deleting and moving several messages
+deleting_one = İleti kalıcı olarak siliniyor
+deleting_many = {count} ileti kalıcı olarak siliniyor
+trashing_one = İleti Çöp Kutusu'na taşınıyor
+trashing_many = {count} ileti Çöp Kutusu'na taşınıyor
+undo_partly_restored = Geri alındı: {action}, ancak {count} ileti geri yüklenemedi -- o zamandan beri yeniden taşınmış, silinmiş ya da süresi dolmuş olabilir.
+moves_report = {action}: {total} iletiden {moved} tanesi taşındı.
+moves_report_failed = Taşınmadı, hâlâ özgün klasörde: {count}.
+
+tray_tooltip_one = ZBox — 1 okunmamış ileti
+tray_tooltip_many = ZBox — {count} okunmamış ileti
+account_unreachable = {account} hesabına ulaşılamadı. Otomatik denetimleri {minutes} dakika duraklatıldı.
+auto_check_not_saved = Otomatik denetim ayarı kaydedilmedi.
+bulk_copy_failed = İletiler kopyalanamadı.
+bulk_copy_failed_status = Kopyalama başarısız.
+bulk_loading_archive = İletiler hâlâ yükleniyor -- birazdan yeniden arşivlemeyi deneyin.
+bulk_loading_delete = İletiler hâlâ yükleniyor -- birazdan yeniden silmeyi deneyin.
+bulk_loading_flag = İletiler hâlâ yükleniyor -- birazdan yeniden yıldız eklemeyi deneyin.
+bulk_loading_generic = İletiler hâlâ yükleniyor -- birazdan yeniden deneyin.
+bulk_none = İleti seçilmedi.
+bulk_none_archive = Arşivlenecek ileti seçilmedi.
+bulk_none_delete = Silinecek ileti seçilmedi.
+bulk_none_junk = Gereksiz olarak işaretlenecek ileti seçilmedi.
+bulk_none_not_junk = Gereksiz değil olarak işaretlenecek ileti seçilmedi.
+delete_refused_still = Sunucu silmeyi reddetti; ileti hâlâ {folder} içinde.
+delete_refused_trash = Çöp Kutusu'nda, ancak sunucu kalıcı olarak silmeyi reddetti.
+delete_resume_failed = Önceki bir silme işleminden {count} ileti silinemedi.
+done_perm_delete_one = İleti kalıcı olarak silindi.
+done_trash_one = İleti Çöp Kutusu'na taşındı.
+filters_applied = {folder} içindeki {count} iletiye süzgeçler uygulandı.
+filters_failed = Süzgeçler çalıştırılamadı.
+filters_running = {folder} üzerinde süzgeçler çalışıyor
+flag_failed = Yıldızlar güncellenemedi.
+flag_updated = Yıldızlar güncellendi.
+folder_verb_subscribing = Abone olunuyor:
+folder_verb_unsubscribing = Abonelikten çıkılıyor:
+mark_read_failed = İletiler okundu olarak işaretlenemedi.
+mark_unread_failed = İletiler okunmadı olarak işaretlenemedi.
+notify_new_mail_body = {name} için {count} yeni {noun}.
+notify_new_mail_title = Yeni Posta
+notify_noun_many = ileti
+notify_noun_one = ileti
+report_done = {verb}: {count} iletiden {done} tanesi.
+report_verb_deleted = Silindi
+report_verb_permanent = Kalıcı olarak silindi
+running_copy_many = {count} ileti kopyalanıyor
+running_copy_one = İleti kopyalanıyor
+running_junk_many = {count} ileti gereksiz olarak işaretleniyor
+running_junk_one = Gereksiz olarak işaretleniyor
+running_move_many = {count} ileti taşınıyor
+running_move_one = Taşınıyor
+running_not_junk_many = {count} ileti gereksiz değil olarak işaretleniyor
+running_not_junk_one = Gereksiz değil olarak işaretleniyor
+running_perm_delete_one = İleti kalıcı olarak siliniyor...
+running_read_many = {count} ileti okundu olarak işaretleniyor
+running_read_one = Okundu olarak işaretleniyor
+running_trash_one = İleti Çöp Kutusu'na taşınıyor...
+running_unread_many = {count} ileti okunmadı olarak işaretleniyor
+running_unread_one = Okunmadı olarak işaretleniyor
+settings_saved_no_startup = Ayarlar kaydedildi. Windows başlangıç girdisi güncellenemedi.
+settings_saved_status = Ayarlar kaydedildi.
+spam_blocked_sender = Engellenen Gönderen
+spam_possible_phishing = Olası Kimlik Avı
+undo_running_many = Geri alınıyor: {action} ({count} ileti)
+undo_running_one = Geri alınıyor: {action}
+mark_folder_read_failed = Klasör okundu olarak işaretlenemedi.
+marking_folder_read = Klasör okundu olarak işaretleniyor...
+upd_ready_at_exit = Bir güncelleme zaten indirildi. ZBox'tan çıktığınızda yüklenecek.
+upd_checking = Güncellemeler denetleniyor...
+upd_up_to_date = ZBox güncel.
+upd_available_source = ZBox {version} kullanılabilir. Bu kopya kaynak koddan çalışıyor, bu yüzden git ile güncelleyin.
+upd_check_failed = Güncellemeler denetlenemedi: {error}
+opening_attachment = {filename} açılıyor...
+loading_headers = Üst bilgiler yükleniyor...
+offline_inbox_only = Çevrimdışı kullanım için yalnızca Gelen Kutusu ve Arşiv saklanır.
+offline_sync_done_inbox = Gelen Kutusu ve Arşiv'deki {count} ileti çevrimdışı kullanım için eşitlendi.
+working_offline = Çevrimdışı çalışılıyor: Gelen Kutusu/Gönderilenler/Taslaklar için son eşitlenen kopya gösteriliyor.
+emptying_trash_all = Tüm hesapların Çöp Kutusu boşaltılıyor...
+trash_emptied_all = {accounts} hesapta Çöp Kutusu boşaltıldı: {count} ileti kalıcı olarak silindi.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = Dosya
+bar_edit = Düzen
+bar_view = Görünüm
+bar_message = İleti
+bar_compose = Yaz
+bar_tools = Araçlar
+bar_help = Yardım
+
+# File
+file_new = Yeni
+file_new_message = İleti
+file_new_account = E-posta Hesabı...
+file_open_saved_message = Kayıtlı İletiyi Aç...
+file_close = Kapat
+file_save_message_as = İletiyi Farklı Kaydet...
+file_get_new_for = Yeni İletileri Al
+file_get_new_all = Tüm Hesaplar
+file_get_new_current = Geçerli Hesap
+file_offline = Çevrimdışı
+file_work_offline = Çevrimdışı Çalış
+file_sync_now = Şimdi Eşitle
+file_print = Yazdır...
+file_print_preview = Baskı Önizleme...
+file_exit = Çıkış
+
+# Edit
+edit_undo = Geri Al
+edit_select_all = Tümünü Seç
+edit_find_messages = İleti Bul...
+
+# Message
+message_reply = Yanıtla
+message_reply_all = Tümünü Yanıtla
+message_forward = İlet
+message_archive = Arşivle
+message_delete = Sil
+message_delete_permanently = Kalıcı Olarak Sil
+message_mark = İşaretle
+mark_read = Okundu
+mark_unread = Okunmadı
+mark_flagged = Yıldızlı
+mark_junk = Gereksiz
+mark_not_junk = Gereksiz Değil
+message_watch_thread = İleti Dizisini İzle
+message_ignore_thread = İleti Dizisini Yoksay
+message_open_conversation = İletiyi Konuşmada Aç
+message_show_related = İlgili İletileri Göster
+message_add_sender_to_address_book = Göndereni Adres Defterine Ekle
+message_announce_sender = Göndereni Duyur
+message_announce_copy_sender = Göndereni Duyur ve Adresi Kopyala
+
+# View
+view_folders = Klasörler
+folders_all = Tümü
+folders_unified = Birleşik
+folders_jump_inbox = Gelen Kutusu İleti Listesine Git
+folders_configure_unified = Birleşik Klasörleri Yapılandır...
+view_sort_by = Sırala
+sort_date = Tarih
+sort_subject = Konu
+sort_from = Kimden
+sort_descending = Azalan (en yeni önce)
+sort_ascending = Artan (en eski önce)
+view_threads = İleti Dizileri
+threads_all = Tümü
+threads_watched = İzlenen İleti Dizileri
+threads_ignored = Yoksayılan İleti Dizileri
+threads_expand_all = Tüm İleti Dizilerini Genişlet
+threads_collapse_all = Tüm İleti Dizilerini Daralt
+view_load_more = Daha Fazla İleti Yükle
+view_toggle_message_view = Metin ve HTML Görünümü Arasında Geçiş Yap
+view_show_remote_content = Bu İletide Uzak İçeriği Göster
+view_message_zoom = İleti Yakınlaştırma
+zoom_increase = İleti Yazı Boyutunu Büyüt
+zoom_decrease = İleti Yazı Boyutunu Küçült
+zoom_reset = İleti Yazı Boyutunu Sıfırla
+
+# Compose
+compose_send = Gönder
+compose_save_draft = Taslağı Kaydet
+compose_attach = Dosya Ekle...
+compose_fmt_bold = Kalın
+compose_fmt_italic = İtalik
+compose_fmt_strike = Üstü Çizili
+compose_fmt_bullet = Madde İşaretli Liste
+compose_fmt_number = Numaralı Liste
+compose_fmt_quote = Alıntı
+compose_fmt_code = Kod
+compose_fmt_heading1 = Başlık
+compose_link = Bağlantı Ekle...
+compose_formatting = Buradaki Biçimlendirme
+compose_spellcheck = Yazımı Denetle...
+compose_spellcheck_next = Sonraki Yazım Hatası
+compose_spellcheck_add = Sözcüğü Sözlüğe Ekle
+compose_insert_signature = İmza Ekle
+compose_paste_quotation = Alıntı Olarak Yapıştır
+compose_word_count = Sözcük Sayısı
+compose_preview = Önizleme...
+compose_diagnostics = Yazma Aracı Tanılaması...
+compose_edit_signature = İmzayı Düzenle...
+compose_hotkeys_diagnostic = Kısayol Tanılaması
+
+# Tools
+tools_account_settings = Hesap ve Kimlik Ayarları...
+tools_mute_account = Hesabı Sessize Al
+tools_disable_account = Hesabı Devre Dışı Bırak
+tools_remove_account = Hesabı Kaldır...
+tools_address_book = Adres Defteri...
+tools_message_filters = İleti Süzgeçleri...
+tools_import = Hesapları ve Ayarları İçe Aktar...
+tools_export = Hesapları ve Ayarları Dışa Aktar...
+tools_cache_cleanup = Önbellek Temizliği Yapılandırması...
+tools_privacy = Gizlilik ve İçerik Engelleme...
+tools_settings = Ayarlar...
+
+# Help
+help_shortcuts = Klavye Kısayolları...
+help_about = ZBox Hakkında...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Yeni Hesap...
+tree_account_settings = Hesap ve Kimlik Ayarları...
+tree_mute_account = Hesabı Sessize Al
+tree_enable_account = Hesabı Etkinleştir
+tree_disable_account = Hesabı Devre Dışı Bırak
+tree_set_default_account = Varsayılan Hesap Yap
+tree_remove_account = Hesabı Kaldır...
+tree_refresh = Yenile
+tree_new_folder = Yeni Klasör...
+tree_empty_trash = Çöp Kutusunu Boşalt
+tree_empty_junk = Gereksizi Boşalt
+tree_rename_folder = Klasörü Yeniden Adlandır...
+tree_delete_folder = Klasörü Sil...
+tree_subscribe_folder = Klasöre Abone Ol
+tree_unsubscribe_folder = Klasör Aboneliğini Kaldır
+
+# The message list menu, opened the same two ways
+list_select_all = Tümünü Seç
+list_reply = Yanıtla
+list_reply_all = Tümünü Yanıtla
+list_forward = İlet
+list_mark = İşaretle
+list_archive = Arşivle
+list_delete_to_trash = Sil (Çöp Kutusuna Taşı)
+list_delete_permanently = Kalıcı Olarak Sil
+list_move_to = Taşı
+list_copy_to = Kopyala
+
+# The notification area icon
+tray_open = ZBox'ı Aç
+tray_unread_one = 1 okunmamış ileti
+tray_unread_many = {count} okunmamış ileti
+tray_no_unread = Okunmamış ileti yok
+tray_settings = Ayarlar...
+tray_quit = ZBox'tan Çık
+
+# The formatting menu inside a message you are writing
+format_bold = Kalın
+format_italic = İtalik
+format_strike = Üstü çizili
+format_bullet = Madde işaretli liste
+format_number = Numaralı liste
+format_quote = Alıntı
+format_code = Kod
+format_heading1 = Başlık
+format_insert_link = Bağlantı ekle...
+format_formatting_here = Buradaki biçimlendirme
+tools_enable_account = Hesabı Etkinleştir
+tools_pause_auto_check = Otomatik Denetimi Duraklat
+tree_pause_auto_check = Otomatik Denetimi Duraklat
+edit_undo_action = Geri al: {action}
+tree_mark_folder_read = Klasörü okundu olarak işaretle
+help_updates = Güncellemeler
+help_check_updates = Güncellemeleri Şimdi Denetle...
+help_update_settings = Güncelleme Ayarları...
+help_releases_page = Sürümler Sayfasını Aç
+message_attachments = Ekler
+message_no_attachments = Ek yok
+message_save_all_attachments = Tüm ekleri kaydet
+view_full_headers = Tüm üst bilgiler
+folders_go_to_tree = Klasör Listesine Git
+list_block_sender = Bu Göndereni Engelle
+list_unblock_sender = Bu Gönderenin Engelini Kaldır
+
+[dialogs]
+set_theme_restart_confirm = Tema değişikliğini uygulamak için ZBox yeniden başlatılsın mı?
+set_ui_theme_label = Arayüz teması:
+set_ui_theme_note = Menüler, listeler, iletişim kutuları ve iletilerin Metin görünümü için renkler. Sistemi izle, Windows'un açık veya koyu uygulama modunu kullanır. Gece mavisi, Sıcak koyu ve Yumuşak kontrast, daha yumuşak renklere sahip koyu temalardır. HTML iletiler kendi renklerini korur ve Windows Yüksek Karşıtlık her zaman önceliklidir. ZBox bir sonraki başlatılışında geçerli olur.
+set_theme_system = Sistemi izle
+set_theme_light = Açık
+set_theme_dark = Koyu
+set_theme_midnight = Gece mavisi
+set_theme_warm = Sıcak koyu
+set_theme_soft = Yumuşak kontrast
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith ile İletişim
+title_identity = Kimlik
+title_show_password = Parolayı Göster
+title_missing_information = Eksik bilgi
+title_unsupported_provider = Desteklenmeyen sağlayıcı
+title_test_connection = Bağlantıyı Sına
+title_new_contact = Yeni Kişi
+title_edit_contact = Kişiyi Düzenle
+title_delete_contact = Kişiyi Sil
+title_import_contacts = Kişileri İçe Aktar
+title_export_contacts = Kişileri Dışa Aktar
+title_rename_group = Grubu Yeniden Adlandır
+title_delete_group = Grubu Sil
+title_send = Gönder
+title_send_failed = Gönderme Başarısız
+title_attach_file = Dosya Ekle
+title_save_draft = Taslağı Kaydet
+title_documentation = ZBox Belgeleri
+title_open_link = Bağlantıyı Aç
+title_filter_rule = Süzgeç Kuralı
+title_master_password = Ana Parola
+title_attachment_saved = Ek Kaydedildi
+title_attachments_saved = Ekler Kaydedildi
+title_download_failed = İndirme Başarısız
+title_print = Yazdır
+title_print_preview = Baskı Önizleme
+title_related_messages = İlgili İletiler
+title_search = Ara
+title_unlock = Kilidi Aç
+title_unlock_methods = Kilit Açma Yöntemleri
+title_desktop_shortcut = Masaüstü Kısayolu
+title_spell_check = Yazım Denetimi
+title_plain_text_password = Düz Metin Parola Bulundu
+title_startup_error = ZBox Başlatma Hatası
+
+identity_email_required = Bir e-posta adresi girin.
+
+wizard_password_not_shown = Parola bu sistemde gösterilemiyor. Yine de normal şekilde yazılır ve kaydedilir.
+wizard_email_required = Devam etmeden önce geçerli bir e-posta adresi girin.
+wizard_test_needs_server = Sınamadan önce bir oturum açma e-postası ve gelen sunucu girin.
+wizard_test_succeeded = Bağlantı başarılı. Gelen Kutusu'nda {count} ileti bulundu.
+
+contact_email_required = Bir e-posta adresi gerekli.
+contact_select_to_edit = Düzenlemek için bir kişi seçin.
+contact_select_to_delete = Silmek için bir kişi seçin.
+contact_delete_confirm = Adres defterinden silinsin mi: {label}?
+contacts_import_choose_file = İçe aktarmak için bir .vcf (vCard) ya da .csv dosyası seçin.
+contacts_imported = {count} kişi içe aktarıldı.
+contacts_import_empty = Bu dosyada kişi bulunamadı.
+contacts_none_to_export = Dışa aktarılacak kişi yok.
+contacts_exported = {count} kişi dışa aktarıldı:\n{path}
+group_name_exists = "{name}" adlı bir grup zaten var.
+group_delete_confirm = "{name}" grubu silinsin mi? Kişileri silinmez.
+
+send_no_account = Göndermeden önce bir hesap ekleyin ya da Kimden alanında birini seçin.
+send_no_recipient = Kime alanına en az bir alıcı girin.
+draft_no_account = Taslak kaydetmeden önce bir hesap ekleyin ya da Kimden alanında birini seçin.
+attached_file = Eklendi: {name}\n\nGönderdiğinizde {count} dosya eklenecek.
+
+documentation_copied = ZBox belgelerinin tamamı panoya kopyalandı.
+
+filter_rule_needs_name = Bu kurala bir ad verin.
+filter_rule_needs_condition = En az bir koşul ayarlayın (Kimden, Kime ya da Konu).
+filter_rule_needs_action = En az bir eylem seçin: okundu olarak işaretle, yıldız ekle ya da bir klasöre taşı.
+
+master_password_set = Ana parola ayarlandı. Güvenli bir yerde saklayın: ZBox her yeni bilgisayarda bir kez bunu sorar ve kaybolursa kurtarılamaz.
+master_password_offer = Ana parola olmadan, kayıtlı hesap parolaları yalnızca bu bilgisayarda ve bu Windows hesabında okunabilir. ZBox'ı başka bir yere kopyalarsanız her hesapta yeniden oturum açılması gerekir.\n\nŞimdi bir tane ayarlansın mı?
+
+attachment_saved = Ek kaydedildi:\n{path}
+attachments_saved = {count} ek kaydedildi:\n{path}
+
+shortcut_created_settings = Kısayol oluşturuldu:\n{path}\n\nZBox'ı şuradan başlatır:\n{base}
+
+spellcheck_no_dictionary = Yazım sözlüğü eksik, bu nedenle ZBox'ın bu kopyasında yazım denetimi kullanılamıyor.
+spellcheck_none_found = Yazım hatası bulunamadı.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Bu bilgisayarda bir geçiş anahtarı ayarlansın ve başka bir bilgisayardan kaydedilen unutulsun mu?\n\nWindows, Hello ile onaylamanızı isteyecek. Diğer bilgisayarda kalan eski geçiş anahtarına orada dokunulmaz ve bu klasörü oraya geri götürürseniz çalışmaya devam eder, ancak yeniden ayarlanması gerekir.
+unlock_replace_passkey_many = Bu bilgisayarda bir geçiş anahtarı ayarlansın ve başka bilgisayarlardan kaydedilen {count} tanesi unutulsun mu?\n\nWindows, Hello ile onaylamanızı isteyecek. Diğer bilgisayarda kalan eski geçiş anahtarlarına orada dokunulmaz ve bu klasörü oraya geri götürürseniz çalışmaya devam eder, ancak yeniden ayarlanmaları gerekir.
+unlock_method_works = Bu yöntem çalışıyor.
+
+plain_text_password_found = data\config\himalaya.toml, eski bir hesap kurulumundan kalma düz metin bir parola (auth.raw) içeriyor.\n\nGüvenli kimlik bilgisi deposunu kullanarak yeniden oluşturulması için o hesabı kaldırıp yeniden ekleyin ya da data\config\himalaya.toml dosyasını silin.
+
+# main_frame's titles.
+title_account_list_unavailable = Hesap listesi kullanılamıyor
+title_open_message = İletiyi Aç
+title_run_filters = Süzgeçleri Çalıştır
+title_clear_cache = Çevrimdışı İleti Önbelleğini Temizle
+title_remove_account = Hesabı Kaldır
+title_new_folder = Yeni Klasör
+title_rename_folder = Klasörü Yeniden Adlandır
+title_delete_folder = Klasörü Sil
+title_subscribe = Abone Ol
+title_unsubscribe = Aboneliği Kaldır
+title_open_saved_message = Kayıtlı İletiyi Aç
+title_save_message_as = İletiyi Farklı Kaydet
+title_empty_trash = Çöp Kutusunu Boşalt
+title_empty_junk = Gereksizi Boşalt
+title_synchronize_offline = Çevrimdışı İçin Eşitle
+title_export_accounts = Hesapları ve Ayarları Dışa Aktar
+title_import_accounts = Hesapları ve Ayarları İçe Aktar
+title_show_related = İlgili İletileri Göster
+title_reply = Yanıtla
+title_forward = İlet
+title_undo = Geri Al
+title_delete_permanently = Kalıcı Olarak Sil
+title_delete = Sil
+title_copy_to = Kopyala
+title_archive = Arşivle
+title_accounts_locked = Hesaplar Kilitli
+
+select_account_first = Önce ağaçta bir hesap seçin.
+select_account_or_folder = Önce bir hesap ya da klasör seçin.
+filters_left_behind = {count} ileti bir süzgeçyle eşleşti ama hâlâ {folder} içinde.
+cache_clear_confirm = Tüm hesaplar için çevrimdışı ileti önbelleği temizlensin mi?\n\nBu yalnızca ZBox'ın yerel kopyalarını siler. Hiçbir posta sunucusundan hiçbir şey kaldırılmaz ve iletiler gerektikçe yeniden indirilir.
+account_remove_confirm = {name} ({address}) kaldırılsın mı?\n\nSunucudaki postalar silinmez.\nBu bilgisayara indirilen kopyalar silinir.\nKayıtlı parola silinir.
+folder_delete_confirm = {address} için "{folder}" klasörü ve içindeki her şey kalıcı olarak silinsin mi?\n\nBu geri alınamaz.
+empty_trash_confirm = {address} için Çöp Kutusu'ndaki tüm iletiler kalıcı olarak silinsin mi?\n\nBu geri alınamaz.
+empty_junk_confirm = {address} için Gereksiz'deki tüm iletiler kalıcı olarak silinsin mi?\n\nBu geri alınamaz.
+sync_select_account = Çevrimdışı kullanım için eşitlenecek bir hesap seçin (Birleşik klasör değil).
+accounts_imported = {count} hesap içe aktarıldı:\n\n{names}\n\nParolalar asla dışa aktarılmaz ve şifreli parola deposu bu Windows kullanıcı hesabına özgüdür; bu nedenle içe aktarılan her hesabın bağlanabilmesi için parolasının Hesaplar > Hesap ve Kimlik Ayarları yoluyla bir kez girilmesi gerekir.
+accounts_import_none = Bu dosyada hesap bulunamadı. Dosyada ayar varsa yine de içe aktarıldı.
+delete_permanently_confirm_one = Bu ileti kalıcı olarak silinsin mi? Bu, Çöp Kutusu klasörünü atlar ve geri alınamaz.
+accounts_locked = Kayıtlı hesap parolaları başka bir bilgisayarda yazıldığı için burada okunamıyor.\n\nHer hesabın posta sunucusunda yeniden oturum açılması gerekecek. Bir dahaki sefere bunu önlemek için, hesapların zaten çalıştığı bilgisayarda Ayarlar, Uygulama ve Veri Güvenliği'nden bir ana parola ayarlayın.
+master_password_remove_confirm = Ana parola kaldırılsın mı? Kayıtlı hesap parolaları o zaman yalnızca bu bilgisayarda ve bu Windows hesabında okunabilir. Sonrasında ZBox'ı başka bir yere kopyalarsanız her hesapta yeniden oturum açılması gerekir.\n\nŞimdi kaldırılsın mı?
+shortcut_offer = Masaüstüne bir ZBox kısayolu konsun mu?\n\nBu ZBox klasörünü başlatır:\n{path}\n\nKısayol tam olarak bu konumu kaydeder. ZBox klasörünü daha sonra taşırsanız Ayarlar, Sistem tepsisi ve pencere'yi açın ve yeni yeri göstermesi için Masaüstü kısayolu oluştur'u yeniden seçin.
+shortcut_created = Kısayol oluşturuldu:\n{path}
+set_language_restart_confirm = Dil değişikliğini uygulamak için ZBox yeniden başlatılsın mı?
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Görünen ad
+form_email_address = E-posta adresi
+form_your_name = Adınız
+form_login_email = Oturum açma e-postası
+form_password = Parola
+srv_imap_host = Gelen (IMAP) sunucusu
+srv_imap_port = Gelen bağlantı noktası
+srv_imap_encryption = Gelen şifreleme
+srv_smtp_host = Giden (SMTP) sunucusu
+srv_smtp_port = Giden bağlantı noktası
+srv_smtp_encryption = Giden şifreleme
+
+acct_login_email_label = Oturum açma e-postası (oturum açmak için kullanılır)
+acct_new_password_label = Yeni parola (geçerli parolayı korumak için boş bırakın)
+acct_new_password_name = Yeni parola
+acct_identity_email_label = E-posta adresi (göndermek ve almak için kullanılır)
+acct_identities_label = Ek kimlikler (diğer adlar)
+acct_identities_name = Ek kimlikler
+acct_add_identity = Kimlik Ekle...
+acct_edit_identity = Kimliği Düzenle...
+acct_remove_identity = Kimliği Kaldır
+acct_signature = İmza
+acct_edit_signature = İmzayı Düzenle...
+acct_junk_folder = Gereksiz klasörü
+acct_account_status = Hesap durumu
+acct_disable_account = Bu hesabı devre dışı bırak
+acct_default_account = Varsayılan hesap
+acct_set_default = Varsayılan hesap yap
+acct_notifications = Yeni posta bildirimleri
+acct_mute_notifications = Bu hesabın bildirimlerini sessize al
+acct_server_settings = Sunucu ayarları
+
+wiz_before_you_start = Başlamadan önce
+wiz_notice_name = Önemli uyarı
+wiz_google_instructions = Google uygulama parolası yönergelerini aç
+wiz_intro = Adınız ve e-posta adresiniz
+wiz_login_same = Oturum açma e-postası yukarıdaki e-posta adresiyle aynı
+wiz_show_password = Parolayı göster
+wiz_preset_applied = Ön ayar uygulandı: {name}.
+wiz_summary_name = Hesap özeti
+wiz_review = Gözden geçirin, ardından bu hesabı kaydetmek için Son'a tıklayın.
+wiz_test_connection = Bağlantıyı Sına
+wiz_testing = Bağlantı sınanıyor...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Hata ayıklama günlüğünü etkinleştir, kaydedildiği yer: data\logs)
+set_language_label = Arabirim dili:
+set_language_label_only_english = Arabirim dili: (yalnızca İngilizce)
+set_headers_checkbox = Açık bir iletinin üstünde ileti üstbilgilerini göster
+set_zoom_label = İleti yazı tipi ve yakınlaştırma:
+set_font_override = Varsayılan ileti yazı boyutunu geçersiz kıl
+set_font_size_name = İleti yazı boyutu (punto)
+set_reading_font_name = Okuma yazı tipi
+set_reading_font_label = Okuma yazı tipi (varsayılan için boş):
+set_view_label = İleti açılırken ileti gövdesi görünümü:
+set_view_text = Metin
+set_view_html = HTML (işlenmiş)
+set_engine_label = HTML işleme motoru:
+set_engine_edge = Edge / WebView2 (modern işleme)
+set_engine_ie = Eski MSHTML (en iyi ekran okuyucu desteği)
+set_runtime_label = WebView2 çalışma zamanı:
+set_runtime_auto = Otomatik — varsa paketlenmiş çalışma zamanını kullan (önerilen)
+set_runtime_fixed = Yalnızca paketlenmiş sabit sürüm
+set_runtime_evergreen = Sistem geneli çalışma zamanı (Windows tarafından güncellenir)
+set_sr_box = Ekran okuyucu duyuruları denetimi
+set_silence_label = HTML ekran okuyucu sessizlik süresi:
+set_silence_name = Milisaniye cinsinden HTML ekran okuyucu sessizlik süresi
+set_focus_delay_label = WebView erişilebilirlik odak gecikmesi:
+set_focus_delay_name = WebView erişilebilirlik odak gecikmesi, düzey 1 ile 10 arası
+set_announce_label = Duyuru süresi:
+set_announce_name = Milisaniye cinsinden duyuru süresi
+set_announce_actions = İleti eylemlerini duyur
+set_attachment_dir_label = Eklerin kaydedileceği klasör:
+set_attachment_dir_name = Eklerin kaydedileceği klasör
+set_browse = Gözat…
+set_autosave_label = Taslak otomatik kaydetme aralığı:
+set_autosave_name = Saniye cinsinden taslak otomatik kaydetme aralığı
+set_auto_purge_label = Eski Çöp Kutusu ve Gereksiz iletilerini otomatik temizle:
+set_auto_purge_name = Çöp Kutusu ve Gereksiz bu kadar gün sonra otomatik temizlensin
+set_bare_keys = İleti listesinde tek tuşlu kısayolları etkinleştir: S (bayrak), A (arşivle), J (gereksiz olarak işaretle)/Shift+J (gereksiz değil olarak işaretle), W (konuyu izle), K (konuyu yok say), M (taşı)/Shift+M (klasör adıyla taşı) ve C (kopyala)
+set_sound_label = Ses ve Bildirimler:
+set_sounds_enabled = Bildirim seslerini çal
+set_desktop_notifications = Yeni posta için masaüstü bildirimleri göster
+set_theme_label = Ses temasını değiştir:
+set_theme_label_only_default = Ses temasını değiştir: (yalnızca varsayılan tema)
+set_security_box = Uygulama ve Veri Güvenliği
+set_lock_on_quit = ZBox tamamen kapatıldığında kilitle
+set_unlock_methods_button = Kilit açma yöntemleri…
+set_master_password_button = Ana parola…
+set_tray_label = Sistem tepsisi ve pencere:
+set_minimize_to_tray = Sistem tepsisine küçült
+set_close_to_tray = Sistem tepsisine kapat
+set_stay_maximized = ZBox'ı her zaman ekranı kaplamış tut
+set_run_at_startup = Windows başlarken ZBox'ı çalıştır
+set_desktop_shortcut_button = Masaüstü kısayolu oluştur
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Hata ayıklama günlüğü, bir şeyler ters giderse sorunları tanılamaya yardımcı olur. Kapatıldığında yeni kayıt yazılmaz; mevcut günlük dosyaları silinmez. ZBox bir sonraki başlatıldığında geçerli olur.
+set_language_note = ZBox bir sonraki başlatıldığında geçerli olur. Dil dosyaları, ZBox'ın lang klasöründe, sounds klasörünün yanında duran düz metin dosyalarıdır. Yeni bir dil eklemek için en klasörünü kopyalayın, kopyayı ve içindeki .lang dosyasını dil kodunuzla yeniden adlandırın ve her eşittir işaretinin sağındaki metni çevirin. Henüz çevrilmemiş her şey sessiz kalmak yerine İngilizce okunur, bu nedenle yarım kalmış bir dosya da güvenle kullanılabilir.
+set_headers_note = Kimden, Kime, Bilgi, Tarih ve Konu; hem Metin hem HTML görünümünde ileti gövdesinin üstünde gösterilir. Bu olmadan, bir iletiyi kimin gönderdiğini sekmeyi kapatıp listeye dönmeden ileti içinden anlamanın yolu yoktur. Odak yine ileti gövdesine gelir; üstbilgi bloğu bir Shift+Tab uzaklıktadır. Bir ileti bir sonraki açıldığında geçerli olur.
+set_zoom_note = Açık iletinin kendi metnini, ZBox'ın geri kalanından ve Windows'un kendi ekran ölçeklendirmesinden bağımsız olarak büyütür ya da küçültür. Hem Metin hem HTML görünümüne uygulanır. “Okuma yazı tipi”, ileti gövdesi için isteğe bağlı olarak belirli bir yazı tipini (örneğin Consolas, OpenDyslexic) zorlar; normal yazı tipini korumak için boş bırakın. Görünüm menüsündeki Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0, bu iletişim kutusunu açmadan yalnızca yazı boyutunu büyütür, küçültür ya da sıfırlar ve açık her iletiye hemen uygulanır. Burada yapılan değişiklikler de Tamam'a basıldığında hemen uygulanır.
+set_view_note = Varsayılan HTML'dir. İletiyi gönderildiği gibi gösterir ve NVDA ile JAWS tarafından okunur: bir HTML sayfası açıldığında ZBox tarayıcının kendi duyurusunu susturur, okuma imlecini iletinin ilk satırına koyar ve ZBox'ın kendi kısayollarını, oradan odak dışarı taşıyan F6 dahil, sayfanın içinde çalışır durumda tutar. Metin aynı iletiyi sıradan bir düzenleme denetiminde düz, biçimsiz metin olarak gösterir -- görüntü yok, düzen yok ve yüklü bir tarayıcı motoruna bağlı hiçbir şey yok. İki yöne de geçmek için açık bir iletide Ctrl+B'ye basın.
+set_engine_note = Edge modern CSS'i işler ama sayfayı ayrı bir süreçte çalıştırır ve içeriğini bir ekran okuyucuya yalnızca wxPython'un ulaşamadığı bir arabirim üzerinden verir -- bu nedenle ileti içinde okunabilir hiçbir şey olmadan açılabilir. Eski MSHTML, Outlook Express ve Windows Mail'in kullandığı motordur: aynı süreçte çalışır ve normal bir belge ağacı yayımlar, bu nedenle NVDA ve JAWS onu herhangi bir web sayfası gibi göz atma kipinde okur. Bir ileti bir sonraki açıldığında geçerli olur.
+set_runtime_note = Sistem geneli çalışma zamanı Windows Update tarafından bakımlanır, bu nedenle postanızı okuyan motor haber verilmeden değişebilir -- ZBox'ta hiçbir şey değişmemiş bir makinede çalışan bir HTML ileti görünümünün bozulmasının nedeni budur. deps klasöründe paketlenmiş bir kopya, ZBox'ın sınandığı tam sürümü sabitler. Bir tane kurmak için tools\get_webview2.bat dosyasını çalıştırın. Paketlenmiş kopya yoksa ZBox her durumda sistem geneli çalışma zamanını kullanır, böylece her zaman başlar. ZBox bir sonraki başlatıldığında geçerli olur.
+set_sr_intro = Bir ileti açılırken ZBox'ın ekran okuyucunuzun ne kadar konuşmasına izin verdiği ve kendi sesli duyurularının ne kadar süre ekranda kaldığı.
+set_silence_note = Bir HTML ileti açıldığında ZBox, ekran okuyucunun tarayıcı duyurusunu susturmak için 2 saniyeye kadar yapay bir Ctrl basışı tutabilir. İletinin konusu zaten sayfa başlığı olarak kullanıldığından base64 URL'nin sesli okunması engellenir, ancak okuyucu yine de denetimi ve belge türünü iletinin başının üzerine duyurur; bu nedenle bu varsayılan olarak açıktır. Kapatmak için 0'a düşürün ya da gevezelik hâlâ araya giriyorsa artırın.
+set_focus_delay_note = Bir HTML ileti yüklenmeyi bitirdiğinde ZBox, onu gerçekten odaklamadan önce bu kadar bekler. WebView2'nin bir sayfanın yüklendiğini bildirmesi ile Windows'un o sayfanın erişilebilirlik ağacını bitirmesi aynı an değildir; çok erken odaklamak, NVDA/JAWS'ın ileti yerine genel bir “Web içeriği sayfası” duyurmasına ya da açıldıktan sonra bir süre iletiyi kullanılamaz olarak bildirmesine yol açar. Düzey 1, 100 ms; düzey 10 tam bir saniyedir. Bunu hâlâ görüyorsanız artırın; açılış sağlam hissettirdiğinde daha hızlı bir açılış için azaltın.
+set_announce_note = Ctrl+U ve Ctrl+Shift+U göndereni kendiliğinden kapanan küçük bir iletişim kutusunda bildirir, çünkü durum çubuğu yalnızca ekran okuyucunuzda durum çubuğu bildirimi açıksa okunur. Bu, o iletişim kutusunun ne kadar süre ekranda kaldığıdır. Konuşma hızınıza göre ayarlayın: çok kısa olursa cümlenin ortasında kapanır ve bu da amacı boşa çıkarır. Herhangi bir tuş onu erken kapatır; ok tuşları yeniden okuyabilmeniz için açık tutar. 0, bir tuşu bekleyeceği ve kendiliğinden asla kapanmayacağı anlamına gelir.
+set_attachment_dir_note = Bir iletide birden fazla ek olduğunda “Tümünü Kaydet”in ekleri yazdığı yer. Yoksa otomatik olarak oluşturulur. Tek eki olan bir ileti, eskisi gibi, nereye kaydedileceğini yine sorar. Varsayılan için boş bırakın:\n{path}
+set_autosave_note = Açık bir yazma sekmesinin siz yazarken kendini Taslaklar'a ne sıklıkla kaydettiği. Taslağı Kaydet (Ctrl+S) her durumda isteğe bağlı olarak kaydeder ve kaydedilmemiş yazısı olan bir sekmeyi kapatmak her zaman kaydetmeyi önerir. 0 otomatik kaydetmeyi kapatır. 15 saniyenin altı sunulmaz -- bu, yazmanızla yarışan bir sunucu gidiş dönüşü olurdu.
+set_auto_purge_note = İletileri, Çöp Kutusu ve Gereksiz'de bu kadar gün kaldıktan sonra kalıcı olarak kaldırır -- Çöp Kutusunu Boşalt ve Gereksizi Boşalt'ın istek üzerine yaptığı kalıcı kaldırmanın aynısıdır, ZBox açıkken günde bir kez otomatik çalışır. Varsayılan olarak 30 günle açıktır. 0 kapatır. Bir ileti kaldırıldıktan sonra bu geri alınamaz.
+set_bare_keys_note = Açık olduğunda, ileti listesinde tek başına S, A, J, W ya da K'ya basmak yıldızı açıp kapatır, arşivler, seçili iletileri gereksiz olarak işaretler (Shift+J gereksiz değil olarak işaretler) ya da seçimin ait olduğu diziyi izler/görmezden gelir, hemen -- Arşivle ve Gereksiz Olarak İşaretle'nin onayı ve geri alınması yoktur. Bunu kapatmak S, A, J, W ve K'yı normal ilk harfle liste gezinmesine döndürür. Ctrl+S ve Ctrl+Shift+A her durumda çalışmaya devam eder. Hemen geçerli olur.
+set_sounds_note = İlerleme, yeni iletiler, gönderme, yanıtlama ya da iletme eylemleri, silmeler ve arama sonuçları için kısa sesler. Kapalı olması uygulamadaki tüm sesleri devre dışı bırakır; ekran okuyucu ve durum çubuğu duyuruları her durumda etkilenmez.
+set_desktop_notifications_note = Her yeni posta topluluğu için yukarıdaki sesten ayrı bir Windows bildirimi. Kapalı olması tüm hesaplar için devre dışı bırakır; tek bir hesap da Hesap ve Kimlik Ayarları'nda kendi başına sessize alınabilir.
+set_theme_note = Özel temalar, ZBox'ın sounds klasörüne yerleştirilen klasörlerdir; her biri kendi progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav ve none_found.wav dosyalarını sağlar. Eksik bir tema dosyası varsayılan sese döner.
+set_theme_note_only_default = Özel temalar, ZBox'ın sounds klasörüne yerleştirilen klasörlerdir; her biri kendi progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav ve none_found.wav dosyalarını sağlar. Eksik bir tema dosyası varsayılan sese döner. Başka bir tema klasörü ekleyene kadar yalnızca “default” kullanılabilir.
+set_lock_note = ZBox'ı başlatmak, herhangi bir hesap açılmadan önce kilit açma yöntemlerinizden birini ister. Herhangi biri yeterlidir: bir geçiş anahtarı, bir güvenlik anahtarı ya da ana parola. Tepsiye kapatmak bir çıkış değildir ve yeniden kilitlemez; Dosya > Çıkış ve tepsi simgesinin Çık öğesi çıkıştır. Hiçbir şey kayıtlı değilse ve ana parola ayarlanmamışsa, sizi kendi postanızdan dışarıda bırakmak yerine kilit atlanır.
+set_security_note = Üçünden bir şeyi şifreleyen tek şey ana paroladır: bu klasörün kayıtlı hesap parolalarını başka bir bilgisayarda açmasını sağlayan odur. Geçiş anahtarı ya da güvenlik anahtarı uygulamanın kilidini bu bilgisayarda açar. Hiçbiri, ZBox'ın daha önce kullanılmadığı bir bilgisayarda ana parolanın yerini tutmaz.
+set_minimize_note = ZBox'ı simge durumuna küçültmek görev çubuğu düğmesini gizler ve onu tepsi simgesinin arkasında çalışır durumda bırakır. Pencereyi geri getirmek için tepsi simgesine sol tıklayın (ya da klavye odağı ondayken Enter/Boşluk'a basın).
+set_close_note = Pencerenin Kapat düğmesi, Alt+F4 ve Posta sekmesinde basılan Ctrl+W, ZBox'ı kapatmak yerine tepsiye gizler. Dosya > Çıkış (Ctrl+Shift+Q) ve tepsi simgesinin kendi Çık öğesi her durumda ZBox'ı gerçekten kapatır; böylece tepsiye dokunmadan çıkmak için her zaman bir klavye yolu vardır.
+set_stay_maximized_note = ZBox ekranı kaplamış olarak açılır ve ekranı kaplama durumundan çıkarsanız yeniden ekranı kaplar. Menü çubuğu, başlık çubuğu ve pencere kenarlığı etkilenmez -- bu kenarlıksız tam ekran kipi değildir, bu nedenle her Alt tuşlu menü kısayolu çalışmaya devam eder.
+set_run_at_startup_note = Windows'ta oturum açtığınızda ZBox'ı otomatik başlatır; penceresini göstermek yerine doğrudan tepside açılır. Yalnızca bir sonraki başlatmada değil, hemen geçerli olur.
+set_desktop_shortcut_note = Masaüstünüze, zaten orada olanın yerine geçen bir ZBox kısayolu koyar. Kısayol bu ZBox klasörünün tam konumunu saklar; bu nedenle ZBox'ı başka bir yere taşır ya da kopyalarsanız, Masaüstü kısayolunun onu göstermesi için yeni kopyada buna yeniden basın. Hemen geçerli olur ve Tamam'ı beklemez.
+
+# The Address Book, its contact form and its groups.
+ab_name = Ad
+ab_phone = Telefon
+ab_notes = Notlar
+ab_heading = Adres Defteri
+ab_contacts = Kişiler
+ab_new = Yeni...
+ab_edit = Düzenle...
+ab_delete = Sil
+ab_import = İçe Aktar...
+ab_export = Dışa Aktar...
+ab_groups_label = Gruplar (posta listeleri)
+ab_groups_name = Gruplar
+ab_new_group = Yeni Grup...
+ab_rename_group = Grubu Yeniden Adlandır...
+ab_delete_group = Grubu Sil
+ab_manage_members = Üyeleri Yönet...
+ab_all_contacts = Tüm kişiler
+ab_add_member = Ekle >>
+ab_remove_member = << Kaldır
+ab_members_of = Üyeler: {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = Sözlükte yok:
+sp_not_in_dictionary_name = Sözlükte yok
+sp_in_this_line_label = Bu satırda:
+sp_in_this_line_name = Bu satırda
+sp_suggestions_label = Öneriler:
+sp_suggestions_name = Öneriler
+sp_replace_with_label = Şununla değiştir:
+sp_replace_with_name = Şununla değiştir
+sp_replace = Değiştir
+sp_replace_all = Tümünü Değiştir
+sp_ignore = Yoksay
+sp_ignore_all = Tümünü Yoksay
+sp_add_to_dictionary = Sözlüğe Ekle
+btn_close = Kapat
+
+# Privacy and Content Blocking.
+priv_remote_label = İletilerdeki uzak içerik:
+priv_block_remote = Ben isteyene kadar uzak içeriği engelle (önerilen)
+priv_blocklist_label = Reklam ve izleyici engelleme listesi:
+priv_block_known = Bilinen reklam ve izleyici alan adlarını engelle
+priv_update_daily = Listeyi arka planda her gün güncelle
+priv_update_now = Şimdi Güncelle
+priv_junk_label = Gereksiz posta kuralları:
+priv_check_inbox = Yeni Gelen Kutusu postasını engellenen gönderenlere ve bilinen kimlik avı bağlantılarına göre denetle
+priv_move_blocked = Engellenen gönderenlerden gelen postayı otomatik olarak Gereksiz'e taşı
+priv_update_phishing = Kimlik Avı Listesini Şimdi Güncelle
+priv_blocked_label = Engellenen gönderenler:
+priv_blocked_name = Engellenen gönderenler
+priv_remove_blocked = Engellenen Göndereni Kaldır
+priv_never_junk_label = Asla gereksiz sayılmayan gönderenler:
+priv_never_junk_name = Asla gereksiz sayılmayan gönderenler
+priv_remove_never_junk = Asla Gereksiz Olmayan Göndereni Kaldır
+priv_allowed_label = Uzak içerik yüklemesine izin verilen gönderenler:
+priv_allowed_name = İzin verilen gönderenler
+priv_remove_selected = Seçili Göndereni Kaldır
+
+# Message Filters.
+filt_rule_name = Kural adı
+filt_enabled = Etkin
+filt_match_label = Eşleşme:
+filt_match_all = Aşağıdakilerin tümüyle eşleş (VE)
+filt_match_any = Aşağıdakilerin herhangi biriyle eşleş (VEYA)
+filt_conditions_label = Koşullar (atlamak için bir değeri boş bırakın):
+filt_condition_field = Koşul {number} alanı
+filt_condition_contains = Koşul {number} içerir
+filt_actions_label = Eylemler:
+filt_mark_read = Okundu olarak işaretle
+filt_flag = İletiye yıldız ekle
+filt_move_label = Klasöre taşı:
+filt_move_name = Klasöre taşı
+filt_rules_name = Süzgeç kuralları
+filt_new = Yeni Kural...
+filt_edit = Kuralı Düzenle...
+filt_delete = Kuralı Sil
+filt_up = Yukarı Taşı
+filt_down = Aşağı Taşı
+filt_run_label = Şu klasörde Şimdi Çalıştır:
+filt_run_name = Şimdi Çalıştır klasörü
+filt_run_now = Şimdi Çalıştır
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = Geçiş anahtarıyla kilidi aç (Windows Hello)
+unl_security_key = Güvenlik anahtarıyla kilidi aç
+unl_master_password_label = Ana parola:
+unl_master_password_name = Ana parola
+unl_unlock = Kilidi Aç
+unl_exit = ZBox'tan Çık
+unl_methods_label = Kayıtlı yöntemler:
+unl_methods_name = Kayıtlı kilit açma yöntemleri
+unl_add_passkey = Geçiş anahtarı ekle…
+unl_add_key = Güvenlik anahtarı ekle…
+unl_reassign = Geçiş anahtarını bu bilgisayara yeniden ata…
+unl_test = Sına…
+unl_remove = Kaldır
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Kimden
+comp_to = Kime
+comp_cc = Bilgi
+comp_bcc = Gizli
+comp_subject = Konu
+comp_attach_button = Dosya Ekle...
+comp_sending = Gönderiliyor...
+comp_report_label = Rapor:
+comp_report_name = Rapor
+comp_refresh = Yenile
+comp_copy = Kopyala
+comp_preview_read = Alıcının okuduğu şekliyle
+comp_preview_source = Gönderilecek HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = İleti gövdesi
+mv_blocked_notice = Engellenen içerik uyarısı
+mv_show_remote = Uzak içeriği göster
+mv_always_allow = Bu gönderene her zaman izin ver
+mv_message_headers = İleti üstbilgileri
+mv_attachments = Ekler
+mv_attachments_count = Ekler ({count})
+mv_save_attachment = Kaydet: {filename}
+mv_save_all = Tümünü Kaydet
+mv_html_view = İleti HTML görünümü
+mv_saved_message = Kayıtlı ileti
+mv_show_remote_tip = Bu iletiyi uzak görüntüleri ve stilleriyle yeniden yükle. Bilinen izleyiciler engelli kalır.
+mv_always_allow_tip = Şu gönderenin her iletisinde uzak içeriği yükle: {sender}.
+
+# The search tab.
+srch_account = Hesap
+srch_folder = Klasör
+srch_for = Aranacak
+
+# The signature editor.
+sig_editors = İmza düzenleyicileri
+sig_formatted = İmza, biçimlendirilmiş
+sig_source = İmza, HTML kaynağı
+sig_plain_label = Düz metin alternatifi (HTML ile birlikte gönderilir)
+sig_plain_name = Düz metin alternatifi
+
+# About ZBox.
+about_text_name = ZBox Hakkında metni
+about_view_license = Lisansı Görüntüle...
+about_google = Google Uygulama Parolaları...
+about_support = ZBox'ı Destekleyin -- Tek Kişilik Geliştirme ve Bakım
+about_repos = Harith'in GitHub'daki Uygulama Depoları
+about_contact = Harith ile İletişim
+btn_close_plain = Kapat
+btn_cancel_plain = İptal
+
+# The license window.
+eula_heading = ZBox Lisansı
+eula_text_name = ZBox lisans metni
+eula_third_party = Üçüncü taraf bileşen lisans sayfaları:
+eula_agree = Yukarıdaki koşulları kabul ediyorum
+eula_agree_name = ZBox lisans koşullarını okudum ve kabul ediyorum
+eula_disagree = Kabul etmiyorum
+eula_next = İleri
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox belge metni
+doc_copy = Panoya Kopyala
+shortcuts_heading = Klavye Kısayolları
+shortcuts_text_name = Klavye kısayolları metni
+
+# The main window's own panes.
+mf_toolbar = Ana araç çubuğu
+mf_tabs = ZBox sekmeleri
+tree_heading = Hesaplar ve Klasörler
+tree_name = Hesap ve klasör ağacı
+envlist_heading = İletiler
+envlist_name = İleti listesi
+rdr_heading = İleti
+rdr_name = İleti okuyucu
+conv_heading_one = Konuşma: 1 ileti
+conv_heading_many = Konuşma: {count} ileti
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} işlemden {completed} tanesi tamamlandı.
+bulk_cancelling = İptal ediliyor -- geçerli ileti bitiriliyor...
+cache_clear_now = Çevrimdışı İleti Önbelleğini Şimdi Temizle... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, korumalı
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Görünen ad isteğe bağlıdır -- bu hesabın kendi adıyla göndermek için boş bırakın.
+acct_note_identity = Sağlayıcınız bu posta kutusuna bağlı özel bir alan adı sunuyorsa e-posta adresi oturum açma e-postasından farklı olabilir. Posta yukarıdaki adresle gönderilir ve alınır, oturum açma ise yine oturum açma e-postasıyla yapılır. Bu hesap için zaten kayıtlı olan parolayı korumak için parola alanını boş bırakın -- örneğin bir Gmail uygulama parolasını yeniledikten sonra yenisini buraya yazın; aksi halde boş bırakın.
+acct_note_identities = Bu hesabın gönderip yanıtlayabildiği diğer adresler. Bunlardan birine gönderilmiş bir iletiyi yanıtlamak, Kimden alanını varsayılan olarak yukarıdaki adres yerine o adrese ayarlar.
+acct_note_signature = Bu hesaptan gönderilen her yeni iletinin, yanıtın ve iletmenin sonuna, bir "-- " satırının altına eklenir. İmza istemiyorsanız boş bırakın. İmzayı Düzenle, kalın, liste ve bağlantıların kullanılabildiği biçimli düzenleyiciyi açar; yukarıdaki kutu o zaman onunla birlikte giden düz metin sürümünü tutar.
+acct_note_junk = Gereksiz Olarak İşaretle'nin iletileri taşıdığı gerçek klasör. "{automatic}", Arşiv ve Çöp Kutusu'nun zaten kullandığı sağlayıcıya duyarlı tahmini kullanır; bunu yalnızca o tahmin yanlışsa ya da gereksiz klasörünüzün özel bir adı varsa ayarlayın.
+acct_note_disable = Devre dışı bir hesaba yeniden etkinleştirilene kadar asla bağlanılmaz -- IDLE yok, düzenli yenileme yok, hiçbir şey yok. Ağaçta (devre dışı) olarak işaretli görünmeye devam eder ve daha önce indirilmiş postası çevrimdışı kullanılabilir kalır. Hesaplar > Hesabı Devre Dışı Bırak ya da hesabın kendi bağlam menüsüyle aynı anahtardır; burası yalnızca ona ulaşmanın başka bir yoludur.
+acct_note_default = Bu hesabın klasörleri ağaçta ilk sırada görünür ve yeni bir ileti, yazma penceresinde elle değiştirilmedikçe varsayılan olarak bu hesaptan gönderilir. Bir yanıtın ya da iletmenin hangi adresi kullandığını etkilemez -- bu zaten yanıtlanan iletiyi izler (yukarıdaki Ek kimlikler'e bakın). Her zaman tam olarak bir varsayılan hesap vardır; bu nedenle geçerli varsayılanda bunun işaretini başka birinde işaretlemeden kaldırmak onu değiştirmez -- varsayılanı başka bir hesaba devretmek için onun kutusunu işaretleyin.
+acct_note_mute = Sessize almak, bu hesabın yeni posta sesini, sesli duyurusunu ve Windows bildirimini, bunlar başka nasıl yapılandırılmış olursa olsun engeller. Diğer hesapları etkilemez ve yine Ayarlar > Ses ve Bildirimler'deki ana anahtarlara (genel olarak sesler ve masaüstü bildirimleri) bağlıdır.
+wiz_note_app_password = ZBox için zaten oluşturulmuş bir uygulama parolanız varsa devam etmek için İleri'ye basın.
+wiz_note_login = Oturum açma bilgileri.\nOturum açma e-postanız yukarıdaki adresten farklıysa, örneğin sağlayıcı hesabınız login@example.net ama you@example.org olarak gönderip almak istiyorsanız, oturum açma e-postasını buraya girin. Özel gönderme adresini daha sonra Hesap ve Kimlik Ayarları'nda ayarlayabilirsiniz.
+wiz_note_servers = Sunucu ayarları, alan adı tanındığında önceden doldurulur. Farklı olması gereken her şeyi düzenleyin.
+wiz_preset_none = Bu alan adı için ön ayar bulunamadı. Sağlayıcınızın sunucu ayarlarını elle girin; sağlayıcınızın yardım sayfaları bunları listeler.
+ab_note_groups = Tüm üyelerini tek seferde doldurmak için bir yazma penceresinin Kime, Bilgi ya da Gizli alanına bir grubun adını yazın.
+cache_note_intro = Bunlar yalnızca ZBox'ın yerel kopyalarını kaldırır. Hiçbir posta sunucusundan hiçbir şey silinmez ve kaldırılan bir ileti bir sonraki açışınızda yeniden indirilir.
+cache_note_age = Otomatik temizlik, ZBox'ta on dakika boyunca klavye etkinliği olmadığında ve hiçbir ileti açık değilken günde bir kez çalışır. Hâlâ hesabınızda olan iletiler dahil, her iletinin kendi tarihine göre işler.
+filt_note_intro = Kurallar yukarıdan aşağıya sırayla çalışır ve Kimden, Kime ve Konu'yu sınar. Bu hesabın Gelen Kutusu'na ulaşan yeni postaya otomatik uygulanır; bir klasörde zaten duran iletilere uygulamak için aşağıdaki Şimdi Çalıştır'ı kullanın.
+filt_note_run_now = Yukarıdaki her etkin kuralı, sırayla, seçilen klasörde zaten bulunan her iletiye uygular -- Tamam gibi önce değişikliklerinizi kaydeder.
+mp_note_intro = Bu hesaplar başka bir bilgisayarda kuruldu. Kayıtlı parolalarının kilidini burada açmak için ana parolayı girin. Bu bilgisayarda yalnızca bir kez sorulacaksınız.\n\nO olmadan her hesabın posta sunucusunda yeniden oturum açılması gerekir.
+priv_note_remote = Bir iletinin internetten yüklediği görüntüler, stil sayfaları ve yazı tipleri, gönderene iletiyi açtığınız anı ve nereden açtığınızı bildirir. Bu açıkken hiçbiri yüklenmez: iletinin üstünde neyin engellendiğini söyleyen bir uyarı görünür ve Ctrl+Shift+I onu yalnızca o ileti için yükler. İletinin kendisine ekli resimler her zaman görünür. Betikler ve gömülü çerçeveler her durumda kaldırılır ve asla yüklenmez.
+priv_note_blocklist = Bu ikinci katmandır. Bir iletinin uzak içeriğini yüklediğinizde ya da bir gönderene izin verdiğinizde önem kazanır: resimler yüklenir, ama bilinen bir izleme ya da reklam alan adından sunulan hiçbir şey yüklenmez. Liste herkese açık reklam ve izleyici listelerinden indirilip birleştirilir; güncelleme bir iki saniye sürer ve arka planda çalışır.
+priv_note_junk = Tahmin yok. Gereksiz Olarak İşaretle, ileti bir posta listesinden gelmedikçe göndereni aşağıdaki engellenenler listesine ekler. Gereksiz Değil Olarak İşaretle göndereni asla gereksiz sayılmayanlar listesine ekler ve o ileti bir daha asla denetlenmez. Engellenen bir gönderenden gelen yeni bir ileti listede Engellenen Gönderen olarak işaretlenir; bilinen bir kimlik avı ya da kötü amaçlı yazılım sitesine bağlantı veren bir ileti Olası Kimlik Avı olarak işaretlenir. Posta sağlayıcınızın kendi spam süzgeci eskisi gibi çalışmaya devam eder.
+priv_status_phishing_updating = Kimlik avı listesi: arka planda güncelleniyor. Sonucu görmek için bu iletişim kutusunu yeniden açın.
+priv_status_updating = Arka planda güncelleniyor. Sonucu görmek için bu iletişim kutusunu yeniden açın.
+rel_note_intro = Message-ID/References üstbilgilerine göre "{subject}" ile ilgili iletiler, bu hesabın tüm klasörlerinde.
+srch_note_intro = Aşağıya girdiğiniz metni Kimden, Konu ve Gövde'de arayın. Aşağıda daraltmadıkça tüm hesaplarda ve klasörlerde arar.
+sig_note_plain = Düz metin alternatifini boş bırakırsanız, Kaydet'e bastığınızda biçimli imzadan oluşturulur.
+unified_note_intro = Tüm hesaplar genelinde hangi klasörlerin birleştirileceğini seçin. İşaretlenen her biri, o klasörü tüm hesaplarınızdan birleştiren tek bir ağaç öğesine dönüşür.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox Hakkında
+title_account_settings = Hesap ve Kimlik Ayarları: {name}
+title_new_account = Yeni Hesap
+title_address_book = Adres Defteri
+title_members = Üyeler: {name}
+ab_group_name_prompt = Grup adı:
+title_new_group = Yeni Grup
+title_cache_cleanup = Önbellek Temizliği Yapılandırması
+cache_age_prompt = Şundan eski önbellekteki iletileri otomatik kaldır:
+title_automatic_cleanup = Otomatik Temizlik
+comp_link_prompt = Bağlantı adresi:
+title_insert_link = Bağlantı Ekle
+title_composer_diagnostics = Yazma Aracı Tanılaması
+title_formatted_preview = Biçimlendirilmiş Önizleme
+title_license_agreement = ZBox Lisans Sözleşmesi
+title_message_filters = İleti Süzgeçleri: {account}
+title_master_password_required = Ana Parola Gerekli
+title_privacy_dialog = Gizlilik ve İçerik Engelleme
+title_privacy = Gizlilik
+title_settings = Ayarlar
+title_unified_folders = Birleşik Klasörler
+title_zbox_locked = ZBox Kilitli
+title_message_view = İleti Görünümü
+title_remote_content = Uzak İçerik
+title_refresh = Yenile
+title_refresh_all = Tümünü Yenile
+mv_choose_folder = Ekin kaydedileceği bir klasör seçin
+title_thread = İleti Dizisi
+title_inbox = Gelen Kutusu
+title_compose = Yaz
+title_watch_thread = İleti Dizisini İzle
+title_ignore_thread = İleti Dizisini Yoksay
+title_edit_signature = İmzayı Düzenle
+title_account = Hesap
+mf_folder_name_prompt = Klasör adı:
+mf_new_name_prompt = Yeni ad:
+title_refresh_all_accounts = Tüm Hesapları Yenile
+title_sender = Gönderen
+title_new_mail = Yeni Posta
+mf_export_dialog_title = {count} Hesabın Tümünü ve Ayarları Dışa Aktar
+mf_related_tab = İlgili: {subject}
+title_hotkeys_diagnostic = Kısayol Tanılaması
+set_choose_attachment_dir = Eklerin kaydedileceği klasörü seçin
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox kilitli. Kilidini açmak için aşağıdaki yöntemlerden herhangi birini kullanın. İptal, hiçbir hesabı açmadan ZBox'ı kapatır.
+unl_note_foreign_passkey = Bu klasörle kaydedilen geçiş anahtarı başka bir bilgisayara ait olduğundan burada kullanılamaz. Güvenlik anahtarınız ya da ana parolanızla kilidi açın, ardından bu bilgisayarda bir geçiş anahtarı ayarlamak için Ayarlar, Gizlilik ve Güvenlik, Kilit açma yöntemleri'ni kullanın.
+unl_note_methods = Uygulama kilidi açıkken, ana parolanın yanı sıra bunlardan herhangi biri ZBox'ın kilidini açar. Geçiş anahtarı bu bilgisayarda Windows Hello'yu kullanır; güvenlik anahtarı USB ya da NFC üzerinden bir FIDO2 anahtarıdır ve takıldığı her bilgisayarda çalışır.
+unl_note_not_encryption = Bunlar uygulamanın kilidini açar. Hiçbir şeyi şifrelemezler: kayıtlı hesap parolalarını, bu klasörün daha önce kullanılmadığı bir bilgisayarda açabilen tek şey hâlâ ana paroladır. Önce o ayarlanmalıdır ve o ayarlanana kadar bunlardan hiçbiri eklenemez.
+unl_add_passkey_unavailable = Geçiş anahtarı ekle (kullanılamıyor)
+unl_add_key_unavailable = Güvenlik anahtarı ekle (kullanılamıyor)
+unl_reassign_unavailable = Geçiş anahtarını bu bilgisayara yeniden ata (kullanılamıyor)
+unl_status_cancelled_passkey = Geçiş anahtarı iptal edildi. ZBox hâlâ kilitli.
+unl_status_cancelled_key = Güvenlik anahtarı iptal edildi. ZBox hâlâ kilitli.
+unl_status_enter_password = Ana parolayı girin.
+unl_status_no_master = Ana parola ayarlanmadığından henüz geçiş anahtarı ya da güvenlik anahtarı eklenemez. Ayarlar, Gizlilik ve Güvenlik'teki Ana parola düğmesiyle bir tane ayarlayın, sonra buraya dönün. Kayıtlı hesap parolalarınızı başka bir bilgisayarda açan ana paroladır; geçiş anahtarı yalnızca bu bilgisayarda uygulamanın kilidini açar, bu nedenle tek başına yeterli olamaz.
+unl_status_unsupported = Bu bilgisayarın Windows sürümü geçiş anahtarlarını ya da güvenlik anahtarlarını desteklemiyor, bu nedenle burada ZBox'ın kilidini yalnızca ana parola açabilir.
+unl_status_foreign_one = 1 geçiş anahtarı başka bir bilgisayara ait ve burada ZBox'ın kilidini açamaz. Yeniden Ata, onu bu bilgisayarda oluşturulan bir tanesiyle değiştirir.
+unl_status_foreign_many = {count} geçiş anahtarı başka bir bilgisayara ait ve burada ZBox'ın kilidini açamaz. Yeniden Ata, onları bu bilgisayarda oluşturulan bir tanesiyle değiştirir.
+unl_status_foreign_one_no_hello = 1 geçiş anahtarı başka bir bilgisayara ait ve burada ZBox'ın kilidini açamaz. Windows Hello burada ayarlanmadığından bu bilgisayarda değiştirilemez; Kaldır onu unutur.
+unl_status_foreign_many_no_hello = {count} geçiş anahtarı başka bir bilgisayara ait ve burada ZBox'ın kilidini açamaz. Windows Hello burada ayarlanmadığından bu bilgisayarda değiştirilemezler; Kaldır onları unutur.
+unl_status_no_hello = Windows Hello bu bilgisayarda ayarlanmamış, bu nedenle burada geçiş anahtarı eklenemez. Güvenlik anahtarı yine eklenebilir.
+unl_status_none_registered = Henüz kayıtlı kilit açma yöntemi yok.
+unl_status_add_cancelled_passkey = Geçiş anahtarı ekleme iptal edildi.
+unl_status_add_cancelled_key = Güvenlik anahtarı ekleme iptal edildi.
+unl_status_added = Eklendi: {name}.
+unl_status_reassigned = Eklendi: {name}. Diğer bilgisayarlardan {count} tanesi unutuldu.
+unl_status_reassign_cancelled = Yeniden atama iptal edildi. Hiçbir şey değişmedi.
+unl_status_test_cancelled = Sınama iptal edildi.
+unl_status_removed = Kaldırıldı.
+unl_remove_warning_last = Kaldırılsın mı: {name}?\n\nKayıtlı tek kilit açma yöntemi bu ve ana parola ayarlanmamış; bu nedenle uygulama kilidi açıkken ZBox'ın kilidini açacak hiçbir şey kalmaz. Sizi dışarıda bırakmak yerine kilit atlanır, ancak ZBox o zaman kilitsiz açılır.
+unl_remove_warning = Kaldırılsın mı: {name}? ZBox artık onu kabul etmeyecek.
+ab_col_email = E-posta
+ab_col_name = Ad
+ab_col_phone = Telefon
+ab_no_contacts = Henüz kişi yok.
+acct_auto_check = Yeni iletileri otomatik denetle
+acct_note_auto_check = Kapalı: ZBox bu hesaba asla kendiliğinden bağlanmaz -- yeni posta izleme, zamanlı yenileme ve arka planda indirme olmaz --, böylece güvenilmez bir sunucu diğer hesapları yavaşlatamaz. İndirilmiş postalar yine açılır; Yenile (F5), gönderme ve silme yine sunucuya ulaşır. Araçlar menüsündeki veya hesabın bağlam menüsündeki Otomatik Denetimi Duraklat ile aynıdır.
+bl_day_ago = 1 gün önce
+bl_days_ago = {days} gün önce
+bl_label_blocklists = Engelleme listesi
+bl_label_phishing = Kimlik avı listesi
+bl_last_failed = Son deneme başarısız: %s
+bl_not_downloaded = Henüz indirilmedi.
+bl_save_failed = %s indirildi ancak kaydedilemedi: %s
+bl_seed_only = Yerleşik listeden %s alan adı. Henüz internetten güncellenmedi.
+bl_some_failed = Bazı kaynaklar başarısız oldu: %s
+bl_some_unreachable = Bazı kaynaklara ulaşılamadı: %s
+bl_status_line = %s alan adı. Son güncelleme %s.
+bl_up_to_date = %s zaten güncel.
+bl_update_failed = %s güncellenemedi: %s
+bl_updated = %s güncellendi: %s alan adı.
+cc_age_choice = %s eskiyen her ileti önbelleği
+cc_auto_button = Otomatik temizlik: %s süreden eski önbellekteki iletiler...
+comp_btn_discard = At
+comp_btn_keep_editing = Düzenlemeye devam et
+comp_btn_save_draft = Taslağı Kaydet
+comp_no_account = Yapılandırılmış hesap yok
+comp_saving_draft = Taslak kaydediliyor…
+comp_this_message = bu ileti
+comp_unsent_save_q = Kapatmadan önce %s taslak olarak kaydedilsin mi?
+comp_unsent_tray_q = ZBox tepsiye geçmeden önce %s taslak olarak kaydedilsin mi?
+doc_unreadable = Belge dosyası okunamadı:
+envlist_all_disabled = Tüm hesaplar devre dışı.
+envlist_col_date = Tarih
+envlist_col_from = Kimden
+envlist_col_status = Durum
+envlist_col_subject = Konu
+envlist_collapsed = Daraltılmış (%d)
+envlist_empty = Bu klasörde ileti yok.
+envlist_loading = İletiler yükleniyor...
+envlist_no_accounts = Henüz yapılandırılmış hesap yok.
+envlist_no_ignored = Bu klasörde görmezden gelinen dizi yok.
+envlist_no_watched = Bu klasörde izlenen dizi yok.
+envlist_select_folder = İletileri yüklemek için bir hesap veya klasör seçin.
+eula_link_0 = Himalaya lisans sayfasını tarayıcıda aç
+eula_link_1 = StevenBlack hosts lisans sayfasını tarayıcıda aç
+eula_link_2 = EasyList/EasyPrivacy lisans sayfasını tarayıcıda aç
+eula_link_3 = Phishing.Database lisans sayfasını tarayıcıda aç
+eula_read_note = Üçüncü taraf bölümleri dahil aşağıdaki lisansı okuyun. İleri'nin kullanılabilmesi için Kabul Ediyorum'u işaretlemelisiniz. Kabul Etmiyorum, ZBox'ı başlatmadan kapatır ve bu çalıştırmanın şimdiye kadar oluşturduklarını kaldırır.
+eula_unreadable = Lisans dosyası okunamadı:\n%s
+filters_title = Süzgeçleri Çalıştır
+flag_title = İletiye Yıldız Ekle
+folder_type_archive = Arşiv
+folder_type_drafts = Taslaklar
+folder_type_inbox = Gelen Kutusu
+folder_type_junk = Gereksiz
+folder_type_sent = Gönderilmiş
+folder_type_trash = Çöp Kutusu
+mime_application_json = JSON dosyası
+mime_application_msword = Word belgesi
+mime_application_octet_stream = İkili dosya
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel elektronik tablosu
+mime_application_vnd_ms_powerpoint = PowerPoint sunusu
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint sunusu
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel elektronik tablosu
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word belgesi
+mime_application_xml = XML dosyası
+mime_application_zip = ZIP arşivi
+mime_audio_mpeg = MP3 ses
+mime_audio_ogg = OGG ses
+mime_audio_wav = WAV ses
+mime_image_bmp = BMP görüntüsü
+mime_image_gif = GIF görüntüsü
+mime_image_jpeg = JPEG görüntüsü
+mime_image_png = PNG görüntüsü
+mime_image_svg_xml = SVG görüntüsü
+mime_image_webp = WebP görüntüsü
+mime_text_csv = CSV dosyası
+mime_text_html = HTML dosyası
+mime_text_plain = Metin dosyası
+mime_video_mp4 = MP4 video
+mime_video_x_msvideo = AVI video
+move_title_junk = Gereksiz Olarak İşaretle
+move_title_move_to = Taşı
+move_title_not_junk = Gereksiz Değil Olarak İşaretle
+mp_explain_set = Bir ana parola belirlenmiş. Bu ZBox klasörünün kayıtlı hesap parolalarını başka bir bilgisayarda açmasını sağlayan odur.\n\nKaldırmak için iki yeni parola kutusunu boş bırakıp Tamam'a basın. Kaldırmak bu bilgisayarı etkilemez, ancak klasör her hesapta yeniden oturum açılmadan başka hiçbir bilgisayarda çalışmaz.
+mp_explain_unset = Ana parola belirlenmemiş, bu nedenle kayıtlı hesap parolaları yalnızca bu bilgisayarda ve bu Windows hesabında okunabilir. Klasörü başka bir yere kopyalarsanız her hesabın posta sunucusunda yeniden oturum açması gerekir.\n\nBir tane belirlerseniz ZBox her yeni bilgisayarda bir kez sorar, ardından orada normal şekilde kilidi açar. Bu bilgisayar bir daha sormaz.\n\nBir yere yazın ve güvenli bir yerde saklayın. Hiçbir yerde depolanmaz ve kurtarılamaz: unutursanız her hesabın posta sunucusunda yeniden oturum açması gerekir.
+mp_label_confirm = Yeni ana parolayı onaylayın:
+mp_label_current = Geçerli ana parola:
+mp_label_master = Ana parola:
+mp_label_new = Yeni ana parola:
+mp_name_confirm = Yeni ana parolayı onaylayın
+mp_name_current = Geçerli ana parola
+mp_name_master = Ana parola
+mp_name_new = Yeni ana parola
+mp_prompt_existing = Kayıtlı hesap parolalarınız yalnızca bu bilgisayarda korunuyor. ZBox'ı başka bir bilgisayara taşırsanız da açılabilmeleri için bir ana parola belirleyin.
+mp_prompt_first_run = ZBox hesap parolalarınızı kaydetmek üzere. ZBox'ı başka bir bilgisayara taşırsanız yine açılabilmeleri için şimdi bir ana parola belirleyin.
+mp_prompt_new_account = ZBox bu hesabın parolasını kaydetmek üzere. ZBox'ı başka bir bilgisayara taşırsanız hesabın yine açılabilmesi için önce bir ana parola belirleyin.
+mp_removed_done = Ana parola kaldırıldı. Kayıtlı parolalar artık yalnızca bu bilgisayarda ve bu Windows hesabında çalışır.
+mp_set_done = Ana parola belirlendi. ZBox, bu klasörün açıldığı her yeni bilgisayarda bir kez soracak ve sonrasında orada normal şekilde kilidi açacak.
+mv_body_title = İleti Gövdesi
+mv_col_format = Biçim
+mv_col_name = Ad
+mv_col_size = Boyut
+mv_format_unknown = Bilinmiyor
+mv_size_unknown = Bilinmeyen boyut
+na_account_settings = Hesap ve Kimlik Ayarları
+na_disable_account = Hesabı Devre Dışı Bırak
+na_edit_signature = İmzayı Düzenle
+na_message_filters = İleti Süzgeçleri
+na_mute_account = Hesabı Sessize Al
+na_pause_auto_check = Otomatik Denetimi Duraklat
+na_remove_account = Hesabı Kaldır
+na_set_default = Varsayılan Hesap Yap
+no_offline_copy = %s için çevrimdışı kopya yok. Çevrimiçiyken açın veya Dosya, Çevrimdışı, Şimdi Eşitle'yi kullanın.
+perm_delete_confirm = {msg} Bu işlem Çöp Kutusu'nu atlar ve geri alınamaz.
+perm_delete_many = {count} ileti kalıcı olarak silinsin mi?
+perm_delete_one = {count} ileti kalıcı olarak silinsin mi?
+preset_note_apple = Apple uygulamaya özel parola ister.
+preset_note_fastmail = Fastmail uygulama parolası ister.
+preset_note_google = Google normal parolanızı değil, uygulama parolası veya OAuth2 ister.
+preset_note_proton = ProtonMail, yerel olarak çalışan ProtonMail Bridge uygulamasını gerektirir.
+preset_note_yahoo = Yahoo uygulama parolası ister.
+priv_phishing_not_loaded = Kimlik avı listesi: henüz yüklenmedi. Bu kurallar ilk açıldığında ve ZBox çevrimiçiyken indirilir.
+priv_phishing_prefix = Kimlik avı listesi:
+priv_status_unavailable = Engelleme listesi durumu kullanılamıyor.
+rdr_load_failed = İleti yüklenemedi.\n\n{message}
+rdr_loading = İleti yükleniyor...
+rdr_select_message = Burada okumak için bir ileti seçin.
+set_autosave_off = Kapalı — elle kaydetmek için Taslağı Kaydet'i (Ctrl+S) kullanın
+set_autosave_seconds = Her {seconds} saniyede
+set_no_unlock = Burada kullanılabilen geçiş anahtarı veya güvenlik anahtarı yok
+set_purge_days = {days} gün sonra
+set_purge_off = Kapalı — Çöp Kutusu ve Gereksiz asla otomatik boşaltılmaz
+set_purge_one_day = 1 gün sonra
+set_rt_bundled_installed = Paketlenmiş çalışma zamanı: yüklü.
+set_rt_bundled_many = Paketlenmiş çalışma zamanı: %s yüklü.
+set_rt_bundled_none = Paketlenmiş çalışma zamanı: yüklü değil, bu yüzden ZBox sistem genelindekini kullanıyor.
+set_rt_bundled_unknown = Paketlenmiş çalışma zamanı: belirlenemedi.
+set_rt_bundled_ver = Paketlenmiş çalışma zamanı: sürüm %s yüklü.
+set_rt_system_unknown = Sistem geneli çalışma zamanı: sürüm belirlenemedi.
+set_rt_system_ver = Sistem geneli çalışma zamanı: sürüm %s.
+set_unlock_many = Burada kullanılabilen %d kilit açma yöntemi
+set_unlock_unreadable = Kilit açma yöntemleri okunamadı
+sig_tab_formatted = Biçimli
+sig_tab_source = HTML kaynağı
+srch_all_accounts = Tüm Hesaplar
+srch_all_folders = Tüm Klasörler
+tab_mail = Posta
+tab_new_message = Yeni İleti
+tab_saved_message = Kaydedilmiş İleti
+title_copy_to_err = Kopyala
+title_mark_message = İletiyi İşaretle
+title_unsent_message = Gönderilmemiş İleti
+tree_unified_root = Birleşik Klasörler
+unlock_kind_passkey = Geçiş anahtarı (Windows Hello)
+unlock_kind_security_key = Güvenlik anahtarı
+unlock_prompt_message = Windows onay istiyor. İsteğine Windows Hello, PIN'iniz veya güvenlik anahtarınızla yanıt verin. Windows işini bitirince bu pencere kendiliğinden kapanır.
+unlock_prompt_title = Windows Güvenliği
+unlock_registering = Bu kilit açma yöntemini kaydetme
+unlock_the_passkey = Geçiş anahtarı
+unlock_the_security_key = Güvenlik anahtarı
+wildcard_eml = E-posta dosyaları (*.eml)|*.eml|Tüm dosyalar (*.*)|*.*
+wildcard_export = ZBox dışa aktarımı (*.json)|*.json
+wiz_not_supported = DESTEKLENMİYOR: {name}. {note} Bu hesap ZBox'a eklenemez.
+stock_apply = Uygula
+stock_cancel = İptal
+stock_close = Kapat
+stock_help = Yardım
+stock_no = Hayır
+stock_ok = Tamam
+stock_yes = Evet
+wiz_btn_back = < Geri
+wiz_btn_finish = Son
+wiz_btn_next = İleri >
+acct_unsaved_q = Bu hesaptaki değişiklikler kaydedilsin mi?
+btn_save = Kaydet
+spell_add_to_dictionary = Sözlüğe ekle
+spell_no_suggestions = Öneri yok
+title_signature_for = İmza: {account}
+title_mark_folder_read = Klasörü okundu olarak işaretle
+title_update_available = ZBox Güncellemesi
+update_available = ZBox {new} kullanılabilir. Sizdeki sürüm {current}.
+upd_notes_label = Sürüm notları:
+upd_no_notes = Sürüm notu yok.
+upd_notes_name = Sürüm notları
+upd_update_now = Evet, şimdi güncelle
+upd_remind_later = Daha sonra hatırlat
+title_update_download = ZBox Güncellemesi İndiriliyor
+upd_downloading = ZBox {version} indiriliyor...
+upd_progress_name = İndirme ilerlemesi
+upd_cancel = İptal
+upd_cancelling = İptal ediliyor...
+set_updates_label = Güncellemeler:
+set_update_auto = Güncellemeleri otomatik denetle
+set_update_mode_label = Bir güncelleme bulunduğunda:
+set_update_ask = Bana sor
+set_update_silent = Sormadan indir ve yükle
+set_update_note = ZBox, GitHub'da daha yeni bir sürümü günde en fazla bir kez ve yalnızca boştayken denetler; sürüm numarası dışında hiçbir şey göndermez. Bana sor, yeni sürümü ve sürüm notlarını Evet, şimdi güncelle ve Daha sonra hatırlat ile gösterir. Sormadan indir ve yükle, güncellemeyi boş zamanda indirir ve ZBox'tan bir sonraki tam çıkışınızda yükler; siz çalışırken asla yüklemez. Güncelleme yalnızca ZBox'un kendi program dosyalarını değiştirir: hesaplarınız, parolalarınız, ayarlarınız, postalarınız, günlükleriniz, ses temalarınız ve eklediğiniz diller asla değiştirilmez; önceki sürüm saklanır ve yenisi başlamazsa kendiliğinden geri yüklenir. Yardım, Güncellemeler altında elle güncelleme için Güncellemeleri Şimdi Denetle ve sürümler sayfası da vardır.
+set_update_check_now = Şimdi denetle
+mv_attachment_button = {filename} ({format})
+att_open = Aç
+att_save = Kaydet...
+att_save_all = Tüm ekleri kaydet
+title_save_attachment = Eki kaydet
+title_full_headers = Tüm üst bilgiler
+hdr_copy_all = Tümünü kopyala
+acct_identity_own_signature = Kendi imzasını kullan
+acct_identity_own_reply_to = Kendi yanıt adresini kullan
+acct_identity_reply_to = Yanıt adresi
+acct_identity_always_cc = Bu adreslere her zaman Cc gönder
+acct_identity_cc = Cc adresleri
+acct_identity_always_bcc = Bu adreslere her zaman Bcc gönder
+acct_identity_bcc = Bcc adresleri
+acct_identity_own_folders = Kendi Taslaklar ve Gönderilenler klasörlerini kullan
+acct_identity_drafts = Taslaklar klasörü
+acct_identity_sent = Gönderilenler klasörü
+acct_identity_own_smtp = Kendi giden sunucusunu kullan
+acct_identity_smtp_login = Giden oturum açma adı
+acct_identity_smtp_password = Giden parolası
+acct_identity_test_smtp = Giden Sunucusunu Sına
+acct_identity_note_smtp = Bu kimliğin e-posta adresiyle oturum açmak için oturum açma adını boş bırakın. Gönderilen kopyalar bu hesabın Gönderilenler klasörüne veya varsa bu kimliğin kendi Gönderilenler klasörüne gider.
+identity_field_required = {field} alanını doldurun veya kutusunun işaretini kaldırın.
+identity_field_invalid = {field} geçersiz bir adres içeriyor.
+identity_folders_required = Bir Taslaklar klasörü, bir Gönderilenler klasörü veya ikisini seçin ya da kutularının işaretini kaldırın.
+identity_password_required = Giden parolasını girin.
+identity_smtp_testing = Giden sunucusu sınanıyor.
+identity_smtp_ok = Giden sunucusu oturum açmayı kabul etti.
+identity_smtp_failed = Giden sunucusu sınaması başarısız oldu.\n\n{error}
+set_bare_keys_note_move = M ve C, seçili iletiler için klasörleri içeren Taşı ve Kopyala menülerini açar; Shift+M ise iletileri oraya taşımak için klasör adının bir kısmını yazdığınız bir kutu açar. Bunu kapatmak M ve C'yi de ilk harfle gezinmeye döndürür.
+folder_search_filter = Klasör adında geçen
+folder_search_list = Eşleşen klasörler
+folder_search_no_match = Bu adla eşleşen klasör yok.
+wiz_signin_method = Oturum açma yöntemi
+wiz_method_password = Parola
+wiz_method_microsoft = Microsoft hesabı (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft ile oturum açma. Outlook.com, Hotmail, Live ve Microsoft 365 sunucu ayarları dolduruldu.
+wiz_welcome_notice = Gmail. Normal Google parolanız reddedilir, ancak uygulama parolası çalışır. Önce iki adımlı doğrulama açık olmalıdır. Aşağıdaki düğme Google'ın talimatlarını açar.\n\nOutlook.com, Hotmail, Live ve Microsoft 365. Bunlar Microsoft hesabınızla oturum açar. Oturum açma sayfasında Microsoft hesabı seçeneğini seçin, ardından tarayıcıda veya bir kodla oturum açın.\n\nDiğer sağlayıcılar. Genellikle normal parola veya uygulama parolası çalışır; sağlayıcınızın yardım sayfaları sunucu ayarlarını listeler.
+preset_note_outlook = Outlook.com, Hotmail, Live ve MSN hesapları bir Microsoft hesabıyla oturum açar. Oturum açma sayfasında oturum açma yöntemi olarak Microsoft hesabı seçeneğini seçin.
+ms_status_name = Microsoft oturum açma durumu
+ms_browser_button = Tarayıcıda oturum aç
+ms_code_button = Kodla oturum aç
+ms_copy_code = Kodu kopyala
+ms_open_page = Oturum açma sayfasını aç
+ms_stop = Beklemeyi durdur
+ms_not_configured = ZBox'ın bu kopyasında Microsoft ile oturum açma ayarlanmamış.
+ms_not_signed_in = Henüz oturum açılmadı. Tarayıcıda veya herhangi bir cihazda bir kodla oturum açın.
+ms_signed_in = {address} olarak oturum açıldı.
+ms_signed_in_plain = Oturum açıldı.
+ms_needs_sign_in = Bu hesabın Microsoft'ta yeniden oturum açması gerekiyor. Tarayıcıda veya herhangi bir cihazda bir kodla oturum açın.
+ms_reason_cancelled = Oturum açma durduruldu.
+ms_reason_timeout = Zamanında yanıt gelmedi.
+ms_reason_denied = Erişime izin verilmedi.
+ms_reason_expired = Kodun süresi doldu. Yeni bir kod isteyin.
+ms_reason_network = Microsoft'a ulaşılamadı. Bağlantıyı denetleyip yeniden deneyin.
+ms_reason_server = Microsoft yanıtı: {detail}
+ms_page_done = Oturum açıldı. Bu sayfayı kapatıp ZBox'a dönebilirsiniz.
+ms_page_failed = Oturum açma tamamlanmadı. Ayrıntılar için ZBox'a dönün.
+ms_browser_waiting = Tarayıcınız Microsoft'un oturum açma sayfasını gösteriyor. Oturum açmayı orada bitirin, ardından ZBox'a dönün.
+ms_code_asking = Microsoft'tan oturum açma kodu isteniyor...
+ms_code_waiting = Herhangi bir cihazda {address} adresini açın ve {code} kodunu girin. Oturum açmayı bitirene kadar ZBox burada bekler.
+ms_failed = Oturum açma tamamlanmadı. {reason}
+ms_code_copied = Kod kopyalandı.
+offline_inbox_only = Çevrimdışı kullanım için yalnızca Gelen Kutusu ve Arşiv saklanır. {folder} klasörünü açmak için çevrimiçi olun.
+block_sender_rule_name = Engelle: {sender}
+title_block_sender = Bu Göndereni Engelle
+title_unblock_sender = Bu Gönderenin Engelini Kaldır
+set_clear_inbox_cache = İleti Gelen Kutusu'ndan çıkınca önbelleğini temizle
+set_clear_inbox_cache_note = Açıkken, bir iletinin çevrimdışı kopyası ve kaydedilmiş içeriği, ileti Gelen Kutusu'ndan çıktığı anda silinir; telefonunuz gibi başka bir yerde silinmiş veya taşınmış olsa da. Böylece artık bulunmadığı yerde hiçbir zaman görünmez. Bu dosyaları yalnızca Gelen Kutusu saklar; diğer tüm klasörler her zaman sunucudan okunur.
+empty_trash_all_confirm = Tüm hesapların Çöp Kutusu'ndaki tüm iletiler kalıcı olarak silinsin mi?\n\nBu işlem geri alınamaz.
+
+[errors]
+language_restart_failed = ZBox kendini yeniden başlatamadı:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Şu adres için bir posta istemcisi açılamadı: {address}.
+
+wizard_test_failed = Bağlantı başarısız oldu:\n\n{error}
+
+contacts_import_unreadable = Bu dosya okunamadı.\n\n{error}
+contacts_export_unwritable = Bu dosya yazılamadı.\n\n{error}
+
+attach_unreadable = Ek okunamadı: {path}\n{error}
+send_failed = İleti gönderilemedi.\n\n{error}
+draft_attach_unreadable = Ek okunamadı: {path}\n{error}\n\nTaslak kaydedilmedi.
+draft_save_failed = Taslak kaydedilemedi.\n\n{error}
+
+clipboard_unavailable = Pano açılamadı.
+open_link_failed = Tarayıcınız şu adres için açılamadı:\n{url}
+
+master_password_mismatch = İki yeni ana parola kutusu birbiriyle eşleşmiyor.
+master_password_required = Bir ana parola girin ya da İptal'e basın.
+master_password_not_set = Ana parola ayarlanamadı: {error}
+master_password_not_here = Ana parola buradan değiştirilemez.
+
+attachment_save_failed = Ek kaydedilemedi.\n\n{error}
+attachments_save_failed = Ekler kaydedilemedi.\n\n{error}
+print_failed = İleti yazdırılamadı. Bir yazıcının yapılandırıldığını denetleyin.
+print_preview_failed = Baskı önizlemesi açılamadı. Bir yazıcının yapılandırıldığını denetleyin.
+
+related_search_failed = İlgili iletiler aranamadı.\n\n{error}
+search_failed = Arama başarısız oldu.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox yapılandırma klasörünü bulamadı, bu nedenle kilit açma yöntemleri burada yönetilemez.
+shortcut_no_folder = ZBox kendi klasörünü belirleyemedi, bu nedenle buradan kısayol oluşturulamaz.
+shortcut_failed_settings = Masaüstü kısayolu oluşturulamadı:\n\n{error}
+
+unlock_method_failed = Çalışmadı: {what}.\n\n{error}
+unlock_check_failed = Ana parola denetlenemedi.\n\n{error}
+unlock_password_wrong = Bu ana parola doğru değil.
+unlock_add_failed = Eklenemedi: {what}.\n\n{error}
+unlock_passkey_setup_failed = Geçiş anahtarı bu bilgisayarda ayarlanamadı, bu nedenle hiçbir şey değişmedi.\n\n{error}
+unlock_method_test_failed = Bu yöntem çalışmadı.\n\n{error}
+
+account_list_unreadable = ZBox hesap listenizi açamadı.\n\n{error}\n\nHiçbir hesap yüklenmedi ve dosya değiştirilmedi, bu nedenle hiçbir şey kaybolmadı. Liste okunabilene kadar hesap ekleme, düzenleme ve kaldırma reddedilir.
+account_list_no_accounts = ZBox bu oturumda hesap listenizi açamadı ({error}), bu nedenle seçilecek hesap yok. Hiçbir şey kaybolmadı ve hiçbir şey değişmedi. ZBox'ı kapatıp yeniden başlatın ve sorulursa ana parolanızı girin.
+open_message_failed = İleti açılamadı.\n\n{error}
+filters_list_failed = {folder} içindeki iletiler listelenemedi.\n\n{error}
+filters_move_failed = Süzgeçten geçen iletiler taşınamadı.\n\n{error}
+cache_clear_failed = Önbellek temizlenemedi.\n\n{error}
+folder_create_failed = Klasör oluşturulamadı.\n\n{error}
+folder_rename_failed = Klasörün adı değiştirilemedi.\n\n{error}
+folder_delete_failed = Klasör silinemedi.\n\n{error}
+folder_subscribe_failed = Klasöre abone olunamadı.\n\n{error}
+folder_unsubscribe_failed = Klasörün aboneliği kaldırılamadı.\n\n{error}
+saved_open_failed = Dosya açılamadı.\n\n{error}
+saved_parse_failed = Bu dosya bir e-posta iletisi olarak ayrıştırılamadı.\n\n{error}
+save_file_failed = Dosya kaydedilemedi.\n\n{error}
+save_fetch_failed = Kaydedilecek ileti alınamadı.\n\n{error}
+empty_trash_failed = Çöp Kutusu boşaltılamadı.\n\n{error}
+empty_junk_failed = Gereksiz boşaltılamadı.\n\n{error}
+export_write_failed = Dışa aktarma dosyası yazılamadı.\n\n{error}
+import_read_failed = Bu dosya bir ZBox dışa aktarması olarak okunamadı.\n\n{error}
+import_not_export = Bu dosya bir ZBox dışa aktarmasına benzemiyor.\n\n{error}
+search_open_failed = Bu ileti açılamadı.
+related_load_failed = Bu ileti yüklenemedi.\n\n{error}
+reply_load_failed = Yanıtlanacak ileti yüklenemedi.\n\n{error}
+forward_load_failed = İletilecek ileti yüklenemedi.\n\n{error}
+action_failed = Bu eylem tamamlanamadı.\n\n{error}
+undo_failed = Geri alınamadı: {label}.\n\n{error}
+copy_failed = İleti kopyalanamadı.\n\n{error}
+delete_failed = İleti silinemedi.\n\n{error}
+archive_failed = İleti arşivlenemedi.\n\n{error}
+master_password_not_changed = Ana parola değiştirilemedi: {error}
+shortcut_failed_startup = Masaüstü kısayolu oluşturulamadı:\n\n{error}\n\nZBox başlamaya devam edecek. Daha sonra Ayarlar'dan yeniden deneyebilirsiniz.
+account_locked_action = ZBox şunu yapamıyor: %s. Hesap listesi bu oturumda açılamadı (%s) ve hiçbir şey değiştirilmedi. ZBox'ı kapatıp yeniden başlatın ve istenirse ana parolanızı girin.
+send_tls_mismatch = İleti gönderilemedi. Giden sunucu şifrelemesiz yanıt verdi; yani giden şifreleme bağlantı noktasıyla uyuşmuyor. Araçlar, Hesap ve Kimlik Ayarları'nda 587 numaralı bağlantı noktası için STARTTLS, 465 için SSL/TLS kullanın ve yeniden gönderin.\n\n{error}
+mark_folder_read_failed = Klasör okundu olarak işaretlenemedi.\n\n{error}
+update_failed = Güncelleme indirilemedi, bu yüzden hiçbir şey değiştirilmedi.\n\n{error}
+update_rolled_back = Güncelleme başlatılamadı, bu yüzden önceki sürüm geri yüklendi.
+attachment_open_failed = Ek açılamadı.\n\n{error}
+headers_failed = İletinin üst bilgileri yüklenemedi.\n\n{error}
+wizard_ms_sign_in_first = Devam etmeden önce Microsoft ile oturum açın. Bu sayfadaki iki oturum açma düğmesinden birini kullanın.
+wizard_provider_unsupported = ZBox bu sağlayıcıda oturum açamıyor. Nedeni bu sayfadaki notta yazıyor. Geri dönüp başka bir e-posta adresi kullanın veya iptal edin.
+acct_ms_sign_in_first = Kaydetmeden önce Microsoft ile oturum açın veya oturum açma yöntemi olarak Parola seçeneğini seçin.
+ms_sign_in_again = {account} için Microsoft'ta yeniden oturum açılması gerekiyor. Hesap ve Kimlik Ayarları'nı açıp orada oturum açın.
+empty_trash_all_failed = Çöp Kutusu boşaltılamadı: {accounts}
+
+[help]

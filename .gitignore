@@ -1,0 +1,39 @@
+# Per-user data created at runtime: accounts, secrets, settings,
+# mail cache and logs. None of it belongs in the repository.
+data/userdata/
+data/cache/
+data/logs/
+data/config/*
+!data/config/settings.default.json
+
+# Vendored binaries, fetched by tools/get_himalaya.bat and
+# tools/get_webview2.bat (see docs/webview2_fixed_runtime.md).
+himalaya/himalaya.exe
+apps_files/webview2/
+tools/*
+!tools/get_himalaya.bat
+!tools/get_webview2.bat
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller build output.
+build/
+build_temp/
+dist/
+
+# Spelling dictionary inputs that ZBox does not ship; see
+# app/vendor/dictionary/README.txt.
+app/vendor/dictionary/count_1w.txt
+app/vendor/dictionary/ngrams.py
+app/vendor/dictionary/ngrams-test.txt
+
+# Workflow files: tests, build and run-from-source scripts. Local only,
+# never committed or published -- excluded by request on 2 October 2026.
+tests/
+build.bat
+zbox.spec
+launcher.bat
+requirements.txt

@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = हिन्दी
+code = hi
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = संदेश भेजा गया।
+draft_saved = ड्राफ़्ट सहेजा गया।
+signature_inserted = हस्ताक्षर डाला गया।
+signature_none = इस खाते का कोई हस्ताक्षर नहीं है।
+signature_saved = हस्ताक्षर सहेजा गया।
+signature_not_saved = हस्ताक्षर नहीं सहेजा गया।
+pasted_as_quotation = उद्धरण के रूप में चिपकाया गया।
+clipboard_empty = क्लिपबोर्ड पर कुछ नहीं है।
+word_count = {words} शब्द, {characters} अक्षर।
+report_copied = रिपोर्ट कॉपी की गई।
+compose_tab_needed = इस आदेश के लिए लिखने वाला टैब चाहिए।
+attach_file_instead = छोड़ी गई फ़ाइलें संदेश के पाठ में नहीं डाली जातीं। फ़ाइल भेजने के लिए फ़ाइल संलग्न करें का उपयोग करें।
+
+# Formatting in the message body
+formatting_here = यहाँ का फ़ॉर्मेटिंग: {formatting}।
+no_formatting_here = यहाँ कोई फ़ॉर्मेटिंग नहीं, सादा पाठ।
+
+# Spelling
+nothing_to_check = जाँचने के लिए कुछ नहीं है।
+no_misspellings = कोई वर्तनी त्रुटि नहीं।
+spelling_dictionary_unavailable = वर्तनी शब्दकोश उपलब्ध नहीं है।
+next_misspelling_first = पहले अगली वर्तनी त्रुटि का उपयोग करें।
+word_added = {word} शब्दकोश में जोड़ा गया।
+word_not_added = {word} नहीं जोड़ा जा सका।
+corrections_applied_one = 1 सुधार लागू किया गया।
+corrections_applied_many = {count} सुधार लागू किए गए।
+corrections_applied_partly = {total} में से {applied} सुधार लागू किए गए। बाकी अस्वीकार हुए; लॉग देखें।
+occurrences_replaced_one = 1 जगह बदला गया।
+occurrences_replaced_many = {count} जगह बदला गया।
+
+# Reading mail
+message_did_not_open = संदेश नहीं खुला। सर्वर ने उत्तर नहीं दिया। फिर से प्रयास करने के लिए Enter दबाएँ।
+thread_open = इस थ्रेड में {messages}। बंद करने के लिए फिर से दबाएँ।
+no_thread_selected = कोई थ्रेड चयनित नहीं।
+thread_watched = थ्रेड पर नज़र रखी जा रही है।
+thread_not_watched = थ्रेड पर अब नज़र नहीं रखी जा रही।
+thread_ignored = थ्रेड अनदेखा किया गया।
+thread_not_ignored = थ्रेड अब अनदेखा नहीं है।
+none_found = कुछ नहीं मिला।
+refreshing_this_folder = यह फ़ोल्डर रीफ़्रेश हो रहा है।
+refreshing_all_accounts = सभी खाते रीफ़्रेश हो रहे हैं।
+message_view_html = संदेश दृश्य: HTML (प्रस्तुत)।
+message_view_text = संदेश दृश्य: पाठ।
+html_view_still_loading = संदेश अभी लोड हो रहा है। Escape इसे बंद करता है।
+message_still_opening = संदेश खुल रहा है। सर्वर धीमा है।
+remote_content_blocked = रिमोट सामग्री अवरुद्ध की गई।
+remote_content_unblocked = रिमोट सामग्री अनवरुद्ध की गई।
+remote_content_already_showing = इस संदेश में रिमोट सामग्री पहले से दिख रही है।
+archived = संग्रहित किया गया।
+copied_to_folder = {to_folder} में कॉपी किया गया।
+deleted_one = संदेश स्थायी रूप से हटाया गया।
+deleted_many = {count} संदेश स्थायी रूप से हटाए गए।
+trashed_one = संदेश ट्रैश में ले जाया गया।
+trashed_many = {count} संदेश ट्रैश में ले जाए गए।
+
+# Accounts and new mail
+no_account_yet = अभी जाने के लिए कोई खाता नहीं है।
+inbox_landed = {name} इनबॉक्स।
+account_enabled = {name} सक्षम किया गया।
+auto_check_paused = {account} के लिए स्वचालित जाँच रोकी गई।
+auto_check_resumed = {account} के लिए स्वचालित जाँच चालू है।
+account_disabled = {name} अक्षम किया गया।
+new_mail_one = {name} के लिए 1 नया संदेश।
+new_mail_many = {name} के लिए {count} नए संदेश।
+refresh_all_done_one = 1 खाता रीफ़्रेश किया गया।
+refresh_all_done_many = {count} खाते रीफ़्रेश किए गए।
+refresh_all_done_failures = {count} खाते रीफ़्रेश किए गए, {failed} रीफ़्रेश नहीं हो सके।
+refresh_all_done_failures_one = {count} खाता रीफ़्रेश किया गया, {failed} रीफ़्रेश नहीं हो सका।
+
+# The sender of the message in view
+sender_address_copied = {sender}। पता कॉपी किया गया।
+sender_no_address = {sender}। कॉपी करने के लिए कोई पता नहीं।
+clipboard_not_opened = {sender}। क्लिपबोर्ड नहीं खोला जा सका।
+
+# The signature editor
+signature_page_formatted = फ़ॉर्मेट किया गया। यही सहेजा जाएगा।
+signature_page_html = HTML स्रोत। यही सहेजा जाएगा।
+signature_page_html_still_wins = फ़ॉर्मेट किया गया। सहेजा अब भी HTML स्रोत ही जाएगा।
+
+# Background work
+phishing_list_updating = फ़िशिंग सूची पृष्ठभूमि में अपडेट हो रही है।
+cache_cleared = {files} कैश फ़ाइलें साफ़ की गईं, {size} MB।
+hotkeys_diagnostic_on = हॉटकी निदान चालू, चेक किया गया
+hotkeys_diagnostic_off = हॉटकी निदान बंद, अनचेक किया गया
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = संग्रहित करें
+action_delete = हटाएँ
+action_delete_permanently = स्थायी रूप से हटाएँ
+action_mark_as_junk = जंक के रूप में चिह्नित करें
+action_mark_as_not_junk = जंक नहीं के रूप में चिह्नित करें
+action_move_to = यहाँ ले जाएँ
+action_copy_to = यहाँ कॉपी करें
+action_mark_message = संदेश चिह्नित करें
+action_undo = पूर्ववत करें
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} पूर्ववत किया गया।
+undo_done_many = {count} संदेशों के लिए {action} पूर्ववत किया गया।
+junk_marked_one = जंक के रूप में चिह्नित किया गया।
+junk_marked_many = {count} संदेश जंक के रूप में चिह्नित किए गए।
+junk_no_new_sender = कोई नया प्रेषक अवरुद्ध नहीं हुआ: पहले से अवरुद्ध, मेलिंग सूची, या आपका अपना कोई पता।
+not_junk_marked_one = जंक नहीं के रूप में चिह्नित किया गया।
+not_junk_marked_many = {count} संदेश जंक नहीं के रूप में चिह्नित किए गए।
+moved_to_one = {to_folder} में ले जाया गया।
+moved_to_many = {count} संदेश {to_folder} में ले जाए गए।
+copied_to_many = {count} संदेश {to_folder} में कॉपी किए गए।
+marked_read = पढ़ा हुआ चिह्नित किया गया।
+marked_unread = अपठित चिह्नित किया गया।
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} में से {completed} के बाद रद्द किया गया। {succeeded} सफल, {failed} विफल।
+bulk_failed_one = {done} 1 में से {failed} संदेश विफल रहा।
+bulk_failed_many = {done} {total} में से {failed} संदेश विफल रहे।
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = बोल्ड
+format_word_italic = इटैलिक
+format_word_strike = स्ट्राइकथ्रू
+format_word_href = लिंक
+format_word_bullet = बुलेट सूची
+format_word_number = क्रमांकित सूची
+format_word_quote = उद्धरण
+format_word_code = कोड
+format_word_heading1 = शीर्षक
+format_applied = {formatting} लागू किया गया।
+format_inserted = {formatting} डाला गया।
+format_not_available = सादे संदेश मुख्य भाग में {formatting} उपलब्ध नहीं है।
+format_on = {formatting} चालू
+format_off = {formatting} बंद
+link_applied = लिंक लागू किया गया।
+link_applied_to_selection = चयन पर लिंक लागू किया गया।
+plain_body_formatting = सादा संदेश मुख्य भाग अपना फ़ॉर्मेटिंग टैग के रूप में दिखाता है।
+
+# Reaching either end of a thread
+thread_edge_first = इस थ्रेड का पहला संदेश। बंद करने के लिए फिर से दबाएँ।
+thread_edge_last = इस थ्रेड का अंतिम संदेश। बंद करने के लिए फिर से दबाएँ।
+jump_unified_inbox = एकीकृत इनबॉक्स।
+remote_none = इस संदेश में कोई रिमोट सामग्री नहीं।
+sender_none = इस संदेश का कोई प्रेषक नहीं।
+sender_name_no_address = %s, कोई पता नहीं
+signature_not_switched = हस्ताक्षर नहीं बदला। इस खाते का हस्ताक्षर डालने के लिए Ctrl+Shift+S दबाएँ।
+signature_removed_no_signature = हस्ताक्षर हटाया गया। इस खाते का कोई हस्ताक्षर नहीं है।
+signature_switched = हस्ताक्षर इस खाते के हस्ताक्षर में बदल दिया गया।
+spell_not_replaced = शब्द बदला नहीं जा सका।
+spell_replaced_with = {word} से बदला गया।
+folder_marked_read = {count} संदेश पढ़े हुए चिह्नित किए गए।
+folder_no_unread = कोई अपठित संदेश नहीं।
+threads_all_collapsed = सभी थ्रेड संक्षिप्त किए गए।
+threads_all_expanded = सभी थ्रेड विस्तृत किए गए।
+upd_percent = {percent} प्रतिशत
+upd_download_done = डाउनलोड पूरा हुआ। अपडेट तैयार किया जा रहा है...
+upd_updated_to = ZBox {version} पर अपडेट हो गया।
+header_copied = कॉपी किया गया।
+headers_copied = सभी हेडर कॉपी किए गए।
+identity_copies_updated = इस पहचान के लिए Cc और Bcc अपडेट किए गए।
+signature_switched_identity = हस्ताक्षर इस पहचान के हस्ताक्षर में बदला गया।
+signature_removed_identity = हस्ताक्षर हटाया गया। इस पहचान का कोई हस्ताक्षर नहीं है।
+signature_not_switched_identity = हस्ताक्षर नहीं बदला। इस पहचान का हस्ताक्षर डालने के लिए Ctrl+Shift+S दबाएँ।
+signature_none_identity = इस पहचान का कोई हस्ताक्षर नहीं है।
+move_keys_no_selection = पहले एक संदेश चुनें।
+move_keys_no_folders = अभी चुनने के लिए कोई फ़ोल्डर नहीं है। थोड़ी देर में फिर कोशिश करें।
+block_sender_done_one = {sender} को ब्लॉक किया गया। उनके नए संदेश ट्रैश में जाएँगे।
+block_sender_done_many = {count} प्रेषकों को ब्लॉक किया गया। उनके नए संदेश ट्रैश में जाएँगे।
+block_sender_already = {sender} पहले से ब्लॉक है।
+block_sender_own = ब्लॉक नहीं किया गया: यह आपका अपना एक पता है।
+block_sender_list_unknown = ब्लॉक नहीं किया गया: यह संदेश एक मेलिंग सूची से आया है और नहीं बताता कि इसे किसने भेजा। सूची का पता ब्लॉक करने से उसके सभी सदस्य ब्लॉक हो जाएँगे।
+block_sender_moved = प्रेषक ब्लॉक किया गया। {count} संदेश ट्रैश में ले जाए गए।
+block_senders_moved = {senders} प्रेषक ब्लॉक किए गए। {count} संदेश ट्रैश में ले जाए गए।
+unblock_sender_moved = प्रेषक अनब्लॉक किया गया। {count} संदेश इनबॉक्स में ले जाए गए।
+unblock_senders_moved = {senders} प्रेषक अनब्लॉक किए गए। {count} संदेश इनबॉक्स में ले जाए गए।
+unblock_sender_done = {sender} को अनब्लॉक किया गया।
+unblock_sender_not_blocked = {sender} ब्लॉक नहीं है।
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = ऊपर कुछ लिखें और Enter दबाएँ या खोजें चुनें।
+search_no_account = पहले एक खाता जोड़ें।
+search_no_term = खोजने के लिए कुछ लिखें।
+search_running = खोज हो रही है...
+search_none = "{term}" के लिए कोई मिलान नहीं।
+search_found_one = "{term}" के लिए 1 मिलान।
+search_found_many = "{term}" के लिए {count} मिलान।
+search_failed = खोज विफल रही।
+
+# The related messages tab
+related_running = खोज हो रही है...
+related_none = कोई संबंधित संदेश नहीं मिला।
+related_found_one = 1 संबंधित संदेश मिला।
+related_found_many = {count} संबंधित संदेश मिले।
+related_failed = संबंधित संदेश नहीं खोजे जा सके।
+
+# Writing and sending
+sending_via = {sender} के ज़रिए भेजा जा रहा है...
+send_failed = भेजना विफल रहा। विवरण के लिए लॉग देखें।
+draft_autosaved = ड्राफ़्ट अपने आप सहेजा गया।
+draft_autosave_failed = ड्राफ़्ट अपने आप सहेजना विफल रहा। विवरण के लिए लॉग देखें।
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = {sender} के संदेशों के लिए अब रिमोट सामग्री लोड होगी।
+downloading_attachment = {filename} डाउनलोड हो रहा है...
+downloading_attachments_one = 1 अटैचमेंट डाउनलोड हो रहा है...
+downloading_attachments_many = {count} अटैचमेंट डाउनलोड हो रहे हैं...
+saved_to = {folder} में सहेजा गया
+attachment_download_failed = अटैचमेंट डाउनलोड विफल रहा।
+
+# Getting mail onto the screen
+loading_folder = {account} के लिए {folder} लोड हो रहा है...
+messages_in_folder = {folder} में {count} संदेश।
+messages_in_folder_cached = {folder} में {count} संदेश (अंतिम सिंक की गई प्रति, अपडेट हो रही है...)
+no_offline_copy = {folder} की अभी कोई ऑफ़लाइन प्रति नहीं है।
+refresh_failed_cached = {folder} रीफ़्रेश नहीं हो सका: अंतिम सिंक की गई प्रति दिखाई जा रही है।
+no_such_folder = इस खाते के लिए कोई {folder} फ़ोल्डर नहीं है।
+load_failed = संदेश लोड नहीं हो सके। विवरण के लिए लॉग देखें।
+no_more_to_load = इस फ़ोल्डर में लोड करने के लिए और संदेश नहीं हैं।
+loading_more = {folder} में और संदेश लोड हो रहे हैं...
+more_loaded = {count} और संदेश लोड हुए।
+no_more_messages = इस फ़ोल्डर में और संदेश नहीं हैं।
+load_more_failed = और संदेश लोड नहीं हो सके: {error}
+loading_unified = एकीकृत {folder} लोड हो रहा है...
+messages_in_unified = एकीकृत {folder} में सभी खातों के {count} संदेश।
+messages_in_unified_cached = एकीकृत {folder} में {count} संदेश (अंतिम सिंक की गई प्रति, अपडेट हो रही है...)
+auto_purge_done = स्वतः सफ़ाई ने ट्रैश/जंक से {count} पुराने संदेश हटाए।
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = तैयार।
+opening_message = संदेश खुल रहा है...
+opening_message_already = संदेश खुल रहा है... (पहले से लोड हो रहा है)
+could_not_open_message = संदेश नहीं खोला जा सका।
+could_not_open_that_message = वह संदेश नहीं खोला जा सका।
+could_not_load_message = यह संदेश लोड नहीं हो सका।
+message_still_loading = वह संदेश अभी लोड हो रहा है।
+folder_still_loading = यह फ़ोल्डर अभी लोड हो रहा है -- थोड़ी देर में फिर प्रयास करें।
+not_in_thread = यह संदेश किसी थ्रेड का हिस्सा नहीं है।
+no_longer_in_thread = यह संदेश अब थ्रेड में नहीं है।
+thread_position = इस थ्रेड में {total} में से संदेश {position}।
+thread_finished_one = यह थ्रेड पूरा हुआ (1 संदेश)।
+thread_finished_many = यह थ्रेड पूरा हुआ ({count} संदेश)।
+select_message_first = पहले एक संदेश चुनें।
+conversation_failed = यह बातचीत नहीं खोली जा सकी।
+select_message_for_related = पहले वह संदेश चुनें जिसके संबंधित संदेश देखने हैं।
+looking_for_related = संबंधित संदेश खोजे जा रहे हैं...
+no_threading_headers = इस संदेश में खोजने के लिए कोई Message-ID या थ्रेडिंग हेडर नहीं है।
+reply_one_at_a_time = उत्तर एक बार में एक संदेश पर काम करता है। कृपया एक ही संदेश चुनें।
+select_message_to_reply = पहले उत्तर देने के लिए एक संदेश चुनें।
+preparing_reply = उत्तर तैयार हो रहा है...
+reply_load_failed = उत्तर के लिए मूल संदेश लोड नहीं हो सका।
+select_message_to_forward = पहले अग्रेषित करने के लिए एक संदेश चुनें।
+preparing_forward = अग्रेषित करने के लिए संदेश तैयार हो रहा है...
+forward_load_failed = अग्रेषित करने वाला संदेश लोड नहीं हो सका।
+compose_tab_needed_hint = इस आदेश के लिए लिखने वाला टैब चाहिए। संदेश लिखने के लिए Ctrl+N दबाएँ।
+open_message_first_view = पहले एक संदेश खोलें, फिर उसका दृश्य बदलने के लिए Ctrl+B दबाएँ।
+open_message_first_remote = पहले एक संदेश खोलें, फिर उसकी रिमोट सामग्री लोड करने के लिए Ctrl+Shift+I दबाएँ।
+
+# Acting on messages
+copying_message = संदेश कॉपी हो रहा है...
+copy_failed = कॉपी विफल रही।
+delete_failed = हटाना विफल रहा।
+already_in_archive = पहले से संग्रह में है।
+archiving = संग्रहित किया जा रहा है...
+archive_failed = संग्रहित करना विफल रहा।
+action_failed = {action} विफल रहा।
+nothing_to_undo = पूर्ववत करने के लिए कुछ नहीं।
+undo_failed = {action} पूर्ववत नहीं हो सका।
+
+# Views and folders
+folder_pane_all = फ़ोल्डर पैनल: सभी फ़ोल्डर।
+folder_pane_unified = फ़ोल्डर पैनल: एकीकृत फ़ोल्डर।
+sorted_ascending = {field} के अनुसार आरोही क्रम में।
+sorted_descending = {field} के अनुसार अवरोही क्रम में।
+unified_folders_updated = एकीकृत फ़ोल्डर अपडेट किए गए।
+zoom_reset = संदेश फ़ॉन्ट आकार डिफ़ॉल्ट पर रीसेट किया गया।
+folder_creating = फ़ोल्डर "{folder}" बनाया जा रहा है...
+folder_created = फ़ोल्डर "{folder}" बनाया गया।
+folder_create_failed = फ़ोल्डर नहीं बनाया जा सका।
+folder_renaming = "{folder}" का नाम बदलकर "{new_name}" किया जा रहा है...
+folder_renamed = फ़ोल्डर का नाम बदलकर "{new_name}" किया गया।
+folder_rename_failed = फ़ोल्डर का नाम नहीं बदला जा सका।
+folder_deleting = फ़ोल्डर "{folder}" हटाया जा रहा है...
+folder_deleted = फ़ोल्डर हटाया गया।
+folder_delete_failed = फ़ोल्डर नहीं हटाया जा सका।
+folder_subscribing = "{folder}" की सदस्यता ली जा रही है...
+folder_unsubscribing = "{folder}" की सदस्यता छोड़ी जा रही है...
+folder_subscribed = सदस्यता ली गई।
+folder_unsubscribed = सदस्यता छोड़ी गई।
+folder_subscribe_failed = फ़ोल्डर की सदस्यता नहीं ली जा सकी।
+folder_unsubscribe_failed = फ़ोल्डर की सदस्यता नहीं छोड़ी जा सकी।
+
+# Accounts
+account_not_added = खाता नहीं जोड़ा गया।
+account_added = खाता जोड़ा गया: {account}
+account_settings_not_saved = खाता सेटिंग्स नहीं सहेजी गईं।
+account_updated = खाता अपडेट किया गया: {account}
+account_not_removed = खाता नहीं हटाया गया।
+account_removed = खाता हटाया गया।
+account_removed_with_files = खाता हटाया गया। {count} स्थानीय फ़ाइलें हटाई गईं।
+default_account_failed = डिफ़ॉल्ट खाता सेट नहीं हो सका।
+default_account_set = {account} अब डिफ़ॉल्ट खाता है।
+auto_check_not_saved = स्वचालित जाँच सेटिंग नहीं सहेजी गई।
+mute_not_saved = म्यूट सेटिंग नहीं सहेजी गई।
+account_muted = {account} म्यूट किया गया।
+account_unmuted = {account} अनम्यूट किया गया।
+export_done = {count} खाते और सेटिंग्स {path} में निर्यात किए गए।
+import_done = {path} से {count} खाते आयात किए गए।
+
+# Filters, cache and the background lists
+filters_not_saved = फ़िल्टर नहीं सहेजे गए।
+filters_saved = {account} के लिए फ़िल्टर सहेजे गए।
+filters_checking = {folder} को आपके फ़िल्टरों से जाँचा जा रहा है...
+filters_none_matched = अभी चलाएँ: {folder} का कोई संदेश किसी सक्षम नियम से मेल नहीं खाया।
+filters_run_failed = फ़िल्टर नहीं चलाए जा सके।
+filters_moving = {count} फ़िल्टर किए गए संदेश ले जाए जा रहे हैं...
+filters_move_failures = फ़िल्टर: {count} संदेश नहीं ले जाए जा सके।
+filters_moved = फ़िल्टरों ने {folder} से {count} संदेश ले जाए।
+filters_move_failed = फ़िल्टर किए गए संदेश नहीं ले जाए जा सके।
+cache_not_cleared = कैश साफ़ नहीं किया गया।
+auto_cache_cleanup = स्वचालित कैश सफ़ाई: {age} से पुराने संदेश।
+phishing_update_failed = फ़िशिंग सूची अपडेट नहीं हो सकी: {error}
+blocklist_update_failed = ब्लॉकलिस्ट अपडेट नहीं हो सकी: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = पहले एक संदेश खोलें, फिर इस रूप में सहेजें का उपयोग करें।
+saving_message = संदेश सहेजा जा रहा है...
+save_file_failed = फ़ाइल नहीं सहेजी जा सकी।
+save_fetch_failed = सहेजने के लिए संदेश प्राप्त नहीं हो सका।
+open_message_first_print = पहले एक संदेश खोलें, फिर प्रिंट करें का उपयोग करें।
+open_message_first_preview = पहले एक संदेश खोलें, फिर प्रिंट पूर्वावलोकन का उपयोग करें।
+refreshing_accounts = {count} खाते रीफ़्रेश हो रहे हैं...
+emptying_trash = {account} का ट्रैश खाली किया जा रहा है...
+trash_already_empty = ट्रैश पहले से खाली था।
+trash_emptied = ट्रैश खाली किया गया: {count} संदेश हटाए गए।
+empty_trash_failed = ट्रैश खाली नहीं हो सका।
+emptying_junk = {account} का जंक खाली किया जा रहा है...
+junk_already_empty = जंक पहले से खाली था।
+junk_emptied = जंक खाली किया गया: {count} संदेश हटाए गए।
+junk_emptied_prefix = जंक खाली किया गया:
+junk_part_purged = {count} हटाए गए
+junk_part_in_trash = {count} ट्रैश में ले जाए गए पर हटाए जाने की पुष्टि नहीं हुई, ट्रैश देखें
+junk_part_not_moved = {count} ट्रैश में नहीं ले जाए गए, अभी भी जंक में हैं
+empty_junk_failed = जंक खाली नहीं हो सका।
+back_online = फिर से ऑनलाइन।
+offline_sync_running = ऑफ़लाइन उपयोग के लिए {account} सिंक हो रहा है...
+offline_sync_failed = ऑफ़लाइन सिंक विफल रहा: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = पहले एक संदेश चुनें या खोलें।
+select_or_open_message_ctrl_u = पहले एक संदेश चुनें या खोलें, फिर Ctrl+U दबाएँ।
+no_sender_address = इस संदेश में जोड़ने के लिए कोई प्रेषक पता नहीं है।
+contact_added = {contact} को आपकी पता पुस्तिका में जोड़ा गया।
+contact_already_there = {contact} पहले से आपकी पता पुस्तिका में है।
+privacy_saved = गोपनीयता सेटिंग्स सहेजी गईं। उन्हें लागू करने के लिए संदेश फिर से खोलें।
+message_font_size = संदेश फ़ॉन्ट आकार: {size} pt।
+
+# Deleting and moving several messages
+deleting_one = संदेश स्थायी रूप से हटाया जा रहा है
+deleting_many = {count} संदेश स्थायी रूप से हटाए जा रहे हैं
+trashing_one = संदेश ट्रैश में ले जाया जा रहा है
+trashing_many = {count} संदेश ट्रैश में ले जाए जा रहे हैं
+undo_partly_restored = {action} पूर्ववत किया गया, पर {count} वापस नहीं लाए जा सके -- हो सकता है वे तब से ले जाए गए, हटाए गए या फिर समाप्त हो गए हों।
+moves_report = {action}: {total} में से {moved} संदेश ले जाए गए।
+moves_report_failed = नहीं ले जाए गए, अभी भी मूल फ़ोल्डर में: {count}।
+
+tray_tooltip_one = ZBox — 1 अपठित संदेश
+tray_tooltip_many = ZBox — {count} अपठित संदेश
+account_unreachable = {account} तक नहीं पहुँचा जा सका। इसके लिए स्वचालित जाँच {minutes} मिनट के लिए रुकी है।
+bulk_copy_failed = संदेश कॉपी नहीं हो सके।
+bulk_copy_failed_status = कॉपी विफल रही।
+bulk_loading_archive = संदेश अभी लोड हो रहे हैं -- थोड़ी देर में फिर संग्रहित करने का प्रयास करें।
+bulk_loading_delete = संदेश अभी लोड हो रहे हैं -- थोड़ी देर में फिर हटाने का प्रयास करें।
+bulk_loading_flag = संदेश अभी लोड हो रहे हैं -- थोड़ी देर में फिर फ़्लैग करने का प्रयास करें।
+bulk_loading_generic = संदेश अभी लोड हो रहे हैं -- थोड़ी देर में फिर प्रयास करें।
+bulk_none = कोई संदेश चयनित नहीं।
+bulk_none_archive = संग्रहित करने के लिए कोई संदेश चयनित नहीं।
+bulk_none_delete = हटाने के लिए कोई संदेश चयनित नहीं।
+bulk_none_junk = जंक चिह्नित करने के लिए कोई संदेश चयनित नहीं।
+bulk_none_not_junk = जंक नहीं चिह्नित करने के लिए कोई संदेश चयनित नहीं।
+delete_refused_still = सर्वर ने इसे हटाने से मना कर दिया; यह अभी भी {folder} में है।
+delete_refused_trash = यह ट्रैश में है, पर सर्वर ने इसे स्थायी रूप से हटाने से मना कर दिया।
+delete_resume_failed = पिछली बार हटाने वाले {count} संदेश नहीं हटाए जा सके।
+done_perm_delete_one = संदेश स्थायी रूप से हटाया गया।
+done_trash_one = संदेश ट्रैश में ले जाया गया।
+filters_applied = {folder} के {count} संदेशों पर फ़िल्टर लागू किए गए।
+filters_failed = फ़िल्टर नहीं चलाए जा सके।
+filters_running = {folder} पर फ़िल्टर चल रहे हैं
+flag_failed = फ़्लैग अपडेट नहीं हो सके।
+flag_updated = फ़्लैग अपडेट किए गए।
+folder_verb_subscribing = सदस्यता ली जा रही है:
+folder_verb_unsubscribing = सदस्यता छोड़ी जा रही है:
+mark_read_failed = संदेश पढ़े हुए चिह्नित नहीं हो सके।
+mark_unread_failed = संदेश अपठित चिह्नित नहीं हो सके।
+notify_new_mail_body = {name} के लिए {count} नए {noun}।
+notify_new_mail_title = नया मेल
+notify_noun_many = संदेश
+notify_noun_one = संदेश
+report_done = {count} में से {done} संदेश {verb}।
+report_verb_deleted = हटाए गए
+report_verb_permanent = स्थायी रूप से हटाए गए
+running_copy_many = {count} संदेश कॉपी हो रहे हैं
+running_copy_one = संदेश कॉपी हो रहा है
+running_junk_many = {count} संदेश जंक चिह्नित किए जा रहे हैं
+running_junk_one = जंक चिह्नित किया जा रहा है
+running_move_many = {count} संदेश ले जाए जा रहे हैं
+running_move_one = ले जाया जा रहा है
+running_not_junk_many = {count} संदेश जंक नहीं चिह्नित किए जा रहे हैं
+running_not_junk_one = जंक नहीं चिह्नित किया जा रहा है
+running_perm_delete_one = संदेश स्थायी रूप से हटाया जा रहा है...
+running_read_many = {count} संदेश पढ़े हुए चिह्नित किए जा रहे हैं
+running_read_one = पढ़ा हुआ चिह्नित किया जा रहा है
+running_trash_one = संदेश ट्रैश में ले जाया जा रहा है...
+running_unread_many = {count} संदेश अपठित चिह्नित किए जा रहे हैं
+running_unread_one = अपठित चिह्नित किया जा रहा है
+settings_saved_no_startup = सेटिंग्स सहेजी गईं। Windows स्टार्टअप प्रविष्टि अपडेट नहीं हो सकी।
+settings_saved_status = सेटिंग्स सहेजी गईं।
+spam_blocked_sender = अवरुद्ध प्रेषक
+spam_possible_phishing = संभावित फ़िशिंग
+undo_running_many = {action} पूर्ववत हो रहा है ({count} संदेश)
+undo_running_one = {action} पूर्ववत हो रहा है
+mark_folder_read_failed = फ़ोल्डर को पढ़ा हुआ चिह्नित नहीं किया जा सका।
+marking_folder_read = फ़ोल्डर को पढ़ा हुआ चिह्नित किया जा रहा है...
+upd_ready_at_exit = एक अपडेट पहले से डाउनलोड है। ZBox से बाहर निकलने पर यह इंस्टॉल होगा।
+upd_checking = अपडेट की जाँच हो रही है...
+upd_up_to_date = ZBox अद्यतन है।
+upd_available_source = ZBox {version} उपलब्ध है। यह प्रति सोर्स से चल रही है, इसलिए इसे git से अपडेट करें।
+upd_check_failed = अपडेट की जाँच नहीं हो सकी: {error}
+opening_attachment = {filename} खोला जा रहा है...
+loading_headers = हेडर लोड हो रहे हैं...
+offline_inbox_only = केवल इनबॉक्स और संग्रह ऑफ़लाइन उपयोग के लिए रखे जाते हैं।
+offline_sync_done_inbox = ऑफ़लाइन उपयोग के लिए इनबॉक्स और संग्रह के {count} संदेश सिंक किए गए।
+working_offline = ऑफ़लाइन काम: इनबॉक्स/भेजे गए/ड्राफ़्ट की अंतिम सिंक की गई प्रति दिखाई जा रही है।
+emptying_trash_all = सभी खातों का ट्रैश खाली किया जा रहा है...
+trash_emptied_all = {accounts} खातों में ट्रैश खाली किया गया: {count} संदेश स्थायी रूप से हटाए गए।
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &फ़ाइल
+bar_edit = &संपादन
+bar_view = &दृश्य
+bar_message = &संदेश
+bar_compose = &लिखें
+bar_tools = &उपकरण
+bar_help = &सहायता
+
+# File
+file_new = नया
+file_new_message = संदेश
+file_new_account = ईमेल खाता...
+file_open_saved_message = सहेजा गया संदेश खोलें...
+file_close = बंद करें
+file_save_message_as = संदेश इस रूप में सहेजें...
+file_get_new_for = नए संदेश प्राप्त करें
+file_get_new_all = सभी खाते
+file_get_new_current = वर्तमान खाता
+file_offline = ऑफ़लाइन
+file_work_offline = ऑफ़लाइन काम करें
+file_sync_now = अभी सिंक करें
+file_print = प्रिंट करें...
+file_print_preview = प्रिंट पूर्वावलोकन...
+file_exit = बाहर निकलें
+
+# Edit
+edit_undo = पूर्ववत करें
+edit_select_all = सभी चुनें
+edit_find_messages = संदेश खोजें...
+
+# Message
+message_reply = उत्तर दें
+message_reply_all = सभी को उत्तर दें
+message_forward = अग्रेषित करें
+message_archive = संग्रहित करें
+message_delete = हटाएँ
+message_delete_permanently = स्थायी रूप से हटाएँ
+message_mark = चिह्नित करें
+mark_read = पढ़ा हुआ
+mark_unread = अपठित
+mark_flagged = फ़्लैग किया गया
+mark_junk = जंक
+mark_not_junk = जंक नहीं
+message_watch_thread = थ्रेड पर नज़र रखें
+message_ignore_thread = थ्रेड अनदेखा करें
+message_open_conversation = संदेश को बातचीत में खोलें
+message_show_related = संबंधित संदेश दिखाएँ
+message_add_sender_to_address_book = प्रेषक को पता पुस्तिका में जोड़ें
+message_announce_sender = प्रेषक बताएँ
+message_announce_copy_sender = प्रेषक बताएँ और पता कॉपी करें
+
+# View
+view_folders = फ़ोल्डर
+folders_all = सभी
+folders_unified = एकीकृत
+folders_jump_inbox = इनबॉक्स संदेश सूची पर जाएँ
+folders_configure_unified = एकीकृत फ़ोल्डर कॉन्फ़िगर करें...
+view_sort_by = इसके अनुसार क्रमबद्ध करें
+sort_date = तारीख
+sort_subject = विषय
+sort_from = प्रेषक
+sort_descending = अवरोही (नवीनतम पहले)
+sort_ascending = आरोही (सबसे पुराने पहले)
+view_threads = थ्रेड
+threads_all = सभी
+threads_watched = नज़र रखे गए थ्रेड
+threads_ignored = अनदेखे थ्रेड
+threads_expand_all = सभी थ्रेड विस्तृत करें
+threads_collapse_all = सभी थ्रेड संक्षिप्त करें
+view_load_more = और संदेश लोड करें
+view_toggle_message_view = पाठ और HTML दृश्य के बीच बदलें
+view_show_remote_content = इस संदेश में रिमोट सामग्री दिखाएँ
+view_message_zoom = संदेश ज़ूम
+zoom_increase = संदेश फ़ॉन्ट आकार बढ़ाएँ
+zoom_decrease = संदेश फ़ॉन्ट आकार घटाएँ
+zoom_reset = संदेश फ़ॉन्ट आकार रीसेट करें
+
+# Compose
+compose_send = &भेजें
+compose_save_draft = &ड्राफ़्ट सहेजें
+compose_attach = &फ़ाइल संलग्न करें...
+compose_fmt_bold = &बोल्ड
+compose_fmt_italic = &इटैलिक
+compose_fmt_strike = &स्ट्राइकथ्रू
+compose_fmt_bullet = &बुलेट सूची
+compose_fmt_number = &क्रमांकित सूची
+compose_fmt_quote = &उद्धरण
+compose_fmt_code = &कोड
+compose_fmt_heading1 = &शीर्षक
+compose_link = &लिंक डालें...
+compose_formatting = &यहाँ का फ़ॉर्मेटिंग
+compose_spellcheck = &वर्तनी जाँचें...
+compose_spellcheck_next = &अगली वर्तनी त्रुटि
+compose_spellcheck_add = &शब्द को शब्दकोश में जोड़ें
+compose_insert_signature = &हस्ताक्षर डालें
+compose_paste_quotation = &उद्धरण के रूप में चिपकाएँ
+compose_word_count = &शब्द गणना
+compose_preview = &पूर्वावलोकन...
+compose_diagnostics = &लेखक निदान...
+compose_edit_signature = &हस्ताक्षर संपादित करें...
+compose_hotkeys_diagnostic = &हॉटकी निदान
+
+# Tools
+tools_account_settings = खाता और पहचान सेटिंग्स...
+tools_mute_account = खाता म्यूट करें
+tools_pause_auto_check = स्वचालित जाँच रोकें
+tools_disable_account = खाता अक्षम करें
+tools_remove_account = खाता हटाएँ...
+tools_address_book = पता पुस्तिका...
+tools_message_filters = संदेश फ़िल्टर...
+tools_import = खाते और सेटिंग्स आयात करें...
+tools_export = खाते और सेटिंग्स निर्यात करें...
+tools_cache_cleanup = कैश सफ़ाई कॉन्फ़िगरेशन...
+tools_privacy = गोपनीयता और सामग्री अवरोधन...
+tools_settings = सेटिंग्स...
+
+# Help
+help_shortcuts = कीबोर्ड शॉर्टकट...
+help_about = ZBox के बारे में...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = नया खाता...
+tree_account_settings = खाता और पहचान सेटिंग्स...
+tree_mute_account = खाता म्यूट करें
+tree_pause_auto_check = स्वचालित जाँच रोकें
+tree_enable_account = खाता सक्षम करें
+tree_disable_account = खाता अक्षम करें
+tree_set_default_account = डिफ़ॉल्ट खाता बनाएँ
+tree_remove_account = खाता हटाएँ...
+tree_refresh = रीफ़्रेश करें
+tree_new_folder = नया फ़ोल्डर...
+tree_empty_trash = ट्रैश खाली करें
+tree_empty_junk = जंक खाली करें
+tree_rename_folder = फ़ोल्डर का नाम बदलें...
+tree_delete_folder = फ़ोल्डर हटाएँ...
+tree_subscribe_folder = फ़ोल्डर की सदस्यता लें
+tree_unsubscribe_folder = फ़ोल्डर की सदस्यता छोड़ें
+
+# The message list menu, opened the same two ways
+list_select_all = सभी चुनें
+list_reply = उत्तर दें
+list_reply_all = सभी को उत्तर दें
+list_forward = अग्रेषित करें
+list_mark = चिह्नित करें
+list_archive = संग्रहित करें
+list_delete_to_trash = हटाएँ (ट्रैश में ले जाएँ)
+list_delete_permanently = स्थायी रूप से हटाएँ
+list_move_to = यहाँ ले जाएँ
+list_copy_to = यहाँ कॉपी करें
+
+# The notification area icon
+tray_open = &ZBox खोलें
+tray_unread_one = 1 अपठित संदेश
+tray_unread_many = {count} अपठित संदेश
+tray_no_unread = कोई अपठित संदेश नहीं
+tray_settings = &सेटिंग्स...
+tray_quit = &ZBox से बाहर निकलें
+
+# The formatting menu inside a message you are writing
+format_bold = &बोल्ड
+format_italic = &इटैलिक
+format_strike = &स्ट्राइकथ्रू
+format_bullet = &बुलेट सूची
+format_number = &क्रमांकित सूची
+format_quote = &उद्धरण
+format_code = &कोड
+format_heading1 = &शीर्षक
+format_insert_link = &लिंक डालें...
+format_formatting_here = &यहाँ का फ़ॉर्मेटिंग
+tools_enable_account = खाता सक्षम करें
+edit_undo_action = {action} पूर्ववत करें
+tree_mark_folder_read = फ़ोल्डर को पढ़ा हुआ चिह्नित करें
+help_updates = अपडेट
+help_check_updates = अभी अपडेट जाँचें...
+help_update_settings = अपडेट सेटिंग्स...
+help_releases_page = रिलीज़ पेज खोलें
+message_attachments = अटैचमेंट
+message_no_attachments = कोई अनुलग्नक नहीं
+message_save_all_attachments = सभी अनुलग्नक सहेजें
+view_full_headers = पूरे हेडर
+folders_go_to_tree = फ़ोल्डर सूची पर जाएँ
+list_block_sender = इस प्रेषक को ब्लॉक करें
+list_unblock_sender = इस प्रेषक को अनब्लॉक करें
+
+[dialogs]
+set_theme_restart_confirm = थीम परिवर्तन लागू करने के लिए ZBox फिर से शुरू करें?
+set_ui_theme_label = &इंटरफ़ेस थीम:
+set_ui_theme_note = मेनू, सूचियों, संवादों और पाठ संदेश दृश्य के रंग। सिस्टम का अनुसरण करें Windows का अपना लाइट या डार्क ऐप मोड उपयोग करता है। मिडनाइट ब्लू, वार्म डार्क और सॉफ़्ट कंट्रास्ट हल्के रंगों वाली डार्क थीम हैं। HTML संदेश अपने रंग रखते हैं, और Windows हाई कंट्रास्ट को हमेशा प्राथमिकता मिलती है। अगली बार ZBox शुरू होने पर लागू होता है।
+set_theme_system = सिस्टम का अनुसरण करें
+set_theme_light = लाइट
+set_theme_dark = डार्क
+set_theme_midnight = मिडनाइट ब्लू
+set_theme_warm = वार्म डार्क
+set_theme_soft = सॉफ़्ट कंट्रास्ट
+set_language_restart_confirm = भाषा परिवर्तन लागू करने के लिए ZBox फिर से शुरू करें?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith से संपर्क करें
+title_identity = पहचान
+title_show_password = पासवर्ड दिखाएँ
+title_missing_information = जानकारी अधूरी है
+title_unsupported_provider = असमर्थित प्रदाता
+title_test_connection = कनेक्शन जाँचें
+title_new_contact = नया संपर्क
+title_edit_contact = संपर्क संपादित करें
+title_delete_contact = संपर्क हटाएँ
+title_import_contacts = संपर्क आयात करें
+title_export_contacts = संपर्क निर्यात करें
+title_rename_group = समूह का नाम बदलें
+title_delete_group = समूह हटाएँ
+title_send = भेजें
+title_send_failed = भेजना विफल
+title_attach_file = फ़ाइल संलग्न करें
+title_save_draft = ड्राफ़्ट सहेजें
+title_documentation = ZBox दस्तावेज़
+title_open_link = लिंक खोलें
+title_filter_rule = फ़िल्टर नियम
+title_master_password = मास्टर पासवर्ड
+title_attachment_saved = अटैचमेंट सहेजा गया
+title_attachments_saved = अटैचमेंट सहेजे गए
+title_download_failed = डाउनलोड विफल
+title_print = प्रिंट करें
+title_print_preview = प्रिंट पूर्वावलोकन
+title_related_messages = संबंधित संदेश
+title_search = खोजें
+title_unlock = अनलॉक करें
+title_unlock_methods = अनलॉक विधियाँ
+title_desktop_shortcut = डेस्कटॉप शॉर्टकट
+title_spell_check = वर्तनी जाँच
+title_plain_text_password = सादे पाठ में पासवर्ड मिला
+title_startup_error = ZBox प्रारंभ त्रुटि
+
+identity_email_required = एक ईमेल पता दर्ज करें।
+
+wizard_password_not_shown = इस सिस्टम पर पासवर्ड नहीं दिखाया जा सकता। यह फिर भी सामान्य रूप से लिखा और सहेजा जाता है।
+wizard_email_required = आगे बढ़ने से पहले एक मान्य ईमेल पता दर्ज करें।
+wizard_test_needs_server = जाँचने से पहले लॉगिन ईमेल और आने वाला सर्वर दर्ज करें।
+wizard_test_succeeded = कनेक्शन सफल। इनबॉक्स में {count} संदेश मिले।
+
+contact_email_required = ईमेल पता आवश्यक है।
+contact_select_to_edit = संपादित करने के लिए एक संपर्क चुनें।
+contact_select_to_delete = हटाने के लिए एक संपर्क चुनें।
+contact_delete_confirm = {label} को पता पुस्तिका से हटाएँ?
+contacts_import_choose_file = आयात करने के लिए एक .vcf (vCard) या .csv फ़ाइल चुनें।
+contacts_imported = {count} संपर्क आयात किए गए।
+contacts_import_empty = उस फ़ाइल में कोई संपर्क नहीं मिला।
+contacts_none_to_export = निर्यात करने के लिए कोई संपर्क नहीं है।
+contacts_exported = {count} संपर्क यहाँ निर्यात किए गए:\n{path}
+group_name_exists = "{name}" नाम का समूह पहले से मौजूद है।
+group_delete_confirm = समूह "{name}" हटाएँ? इसके संपर्क नहीं हटाए जाते।
+
+send_no_account = भेजने से पहले एक खाता जोड़ें, या प्रेषक में एक चुनें।
+send_no_recipient = प्रति में कम से कम एक प्राप्तकर्ता दर्ज करें।
+draft_no_account = ड्राफ़्ट सहेजने से पहले एक खाता जोड़ें, या प्रेषक में एक चुनें।
+attached_file = संलग्न: {name}\n\nभेजने पर {count} फ़ाइलें संलग्न की जाएँगी।
+
+documentation_copied = ZBox का पूरा दस्तावेज़ क्लिपबोर्ड पर कॉपी किया गया।
+
+filter_rule_needs_name = इस नियम को एक नाम दें।
+filter_rule_needs_condition = कम से कम एक शर्त सेट करें (प्रेषक, प्रति या विषय)।
+filter_rule_needs_action = कम से कम एक क्रिया चुनें: पढ़ा हुआ चिह्नित करें, फ़्लैग करें, या किसी फ़ोल्डर में ले जाएँ।
+
+master_password_set = मास्टर पासवर्ड सेट किया गया। इसे किसी सुरक्षित जगह रखें: ZBox हर नए कंप्यूटर पर इसे एक बार माँगता है, और खो जाने पर इसे वापस नहीं पाया जा सकता।
+master_password_offer = मास्टर पासवर्ड के बिना सहेजे गए खाता पासवर्ड केवल इसी कंप्यूटर और इसी Windows खाते पर पढ़े जा सकते हैं। ZBox को कहीं और कॉपी करने पर हर खाते में फिर से साइन इन करना होगा।\n\nअभी एक सेट करें?
+
+attachment_saved = अटैचमेंट यहाँ सहेजा गया:\n{path}
+attachments_saved = {count} अटैचमेंट यहाँ सहेजे गए:\n{path}
+
+shortcut_created_settings = शॉर्टकट बनाया गया:\n{path}\n\nयह ZBox को यहाँ से शुरू करता है:\n{base}
+
+spellcheck_no_dictionary = वर्तनी शब्दकोश मौजूद नहीं है, इसलिए ZBox की इस प्रति में वर्तनी जाँच उपलब्ध नहीं है।
+spellcheck_none_found = कोई वर्तनी त्रुटि नहीं मिली।
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = इस कंप्यूटर पर एक पासकी सेट करें और दूसरे कंप्यूटर से सहेजी गई पासकी भूल जाएँ?\n\nWindows आपसे Hello से पुष्टि करने को कहेगा। दूसरे कंप्यूटर पर छोड़ी गई पुरानी पासकी वहाँ अछूती रहती है और यह फ़ोल्डर वापस वहाँ ले जाने पर काम करती रहेगी, पर उसे फिर से सेट करना होगा।
+unlock_replace_passkey_many = इस कंप्यूटर पर एक पासकी सेट करें और दूसरे कंप्यूटरों से सहेजी गई {count} पासकी भूल जाएँ?\n\nWindows आपसे Hello से पुष्टि करने को कहेगा। दूसरे कंप्यूटर पर छोड़ी गई पुरानी पासकी वहाँ अछूती रहती हैं और यह फ़ोल्डर वापस वहाँ ले जाने पर काम करती रहेंगी, पर उन्हें फिर से सेट करना होगा।
+unlock_method_works = वह विधि काम करती है।
+
+plain_text_password_found = data\config\himalaya.toml में अब भी किसी पुराने खाता सेटअप का सादे पाठ वाला पासवर्ड (auth.raw) है।\n\nउस खाते को हटाकर फिर से जोड़ें, या data\config\himalaya.toml हटा दें, ताकि यह सुरक्षित क्रेडेंशियल स्टोर का उपयोग करके फिर से बने।
+
+# main_frame's titles.
+title_account_list_unavailable = खाता सूची उपलब्ध नहीं
+title_open_message = संदेश खोलें
+title_run_filters = फ़िल्टर चलाएँ
+title_clear_cache = ऑफ़लाइन संदेश कैश साफ़ करें
+title_remove_account = खाता हटाएँ
+title_new_folder = नया फ़ोल्डर
+title_rename_folder = फ़ोल्डर का नाम बदलें
+title_delete_folder = फ़ोल्डर हटाएँ
+title_subscribe = सदस्यता लें
+title_unsubscribe = सदस्यता छोड़ें
+title_open_saved_message = सहेजा गया संदेश खोलें
+title_save_message_as = संदेश इस रूप में सहेजें
+title_empty_trash = ट्रैश खाली करें
+title_empty_junk = जंक खाली करें
+title_synchronize_offline = ऑफ़लाइन के लिए सिंक करें
+title_export_accounts = खाते और सेटिंग्स निर्यात करें
+title_import_accounts = खाते और सेटिंग्स आयात करें
+title_show_related = संबंधित संदेश दिखाएँ
+title_reply = उत्तर दें
+title_forward = अग्रेषित करें
+title_undo = पूर्ववत करें
+title_delete_permanently = स्थायी रूप से हटाएँ
+title_delete = हटाएँ
+title_copy_to = यहाँ कॉपी करें
+title_archive = संग्रहित करें
+title_accounts_locked = खाते लॉक हैं
+
+select_account_first = पहले ट्री में एक खाता चुनें।
+select_account_or_folder = पहले एक खाता या फ़ोल्डर चुनें।
+filters_left_behind = {count} संदेश किसी फ़िल्टर से मेल खाए पर अभी भी {folder} में हैं।
+cache_clear_confirm = हर खाते का ऑफ़लाइन संदेश कैश साफ़ करें?\n\nयह केवल ZBox की स्थानीय प्रतियाँ हटाता है। किसी भी मेल सर्वर से कुछ नहीं हटाया जाता, और ज़रूरत पड़ने पर संदेश फिर से डाउनलोड होते हैं।
+account_remove_confirm = {name} ({address}) हटाएँ?\n\nसर्वर पर मेल नहीं हटाया जाता।\nइस कंप्यूटर पर डाउनलोड की गई प्रतियाँ हटाई जाती हैं।\nसहेजा गया पासवर्ड हटाया जाता है।
+folder_delete_confirm = {address} के लिए फ़ोल्डर "{folder}" और उसमें सब कुछ स्थायी रूप से हटाएँ?\n\nइसे पूर्ववत नहीं किया जा सकता।
+empty_trash_confirm = {address} के ट्रैश के सभी संदेश स्थायी रूप से हटाएँ?\n\nइसे पूर्ववत नहीं किया जा सकता।
+empty_junk_confirm = {address} के जंक के सभी संदेश स्थायी रूप से हटाएँ?\n\nइसे पूर्ववत नहीं किया जा सकता।
+sync_select_account = ऑफ़लाइन उपयोग के लिए सिंक करने हेतु एक खाता चुनें (एकीकृत फ़ोल्डर नहीं)।
+accounts_imported = {count} खाते आयात किए गए:\n\n{names}\n\nपासवर्ड कभी निर्यात नहीं किए जाते, और एन्क्रिप्टेड पासवर्ड स्टोर इसी Windows उपयोगकर्ता खाते का होता है, इसलिए कनेक्ट होने से पहले हर आयात किए गए खाते का पासवर्ड खाते > खाता और पहचान सेटिंग्स में एक बार दर्ज करना होगा।
+accounts_import_none = इस फ़ाइल में कोई खाता नहीं मिला। फ़ाइल में सेटिंग्स थीं तो वे फिर भी आयात की गईं।
+delete_permanently_confirm_one = यह संदेश स्थायी रूप से हटाएँ? यह ट्रैश फ़ोल्डर को छोड़ देता है और इसे पूर्ववत नहीं किया जा सकता।
+accounts_locked = सहेजे गए खाता पासवर्ड किसी दूसरे कंप्यूटर पर लिखे गए थे, इसलिए यहाँ उन्हें पढ़ा नहीं जा सकता।\n\nहर खाते को अपने मेल सर्वर में फिर से साइन इन करना होगा। अगली बार इससे बचने के लिए, जिस कंप्यूटर पर खाते पहले से काम करते हैं वहाँ सेटिंग्स, ऐप और डेटा सुरक्षा से एक मास्टर पासवर्ड सेट करें।
+master_password_remove_confirm = मास्टर पासवर्ड हटाएँ? तब सहेजे गए खाता पासवर्ड केवल इसी कंप्यूटर और इसी Windows खाते पर पढ़े जा सकेंगे। इसके बाद ZBox को कहीं और कॉपी करने पर हर खाते में फिर से साइन इन करना होगा।\n\nअभी हटाएँ?
+shortcut_offer = डेस्कटॉप पर ZBox का शॉर्टकट रखें?\n\nयह यह ZBox फ़ोल्डर शुरू करेगा:\n{path}\n\nशॉर्टकट ठीक यही स्थान दर्ज करता है। अगर आप बाद में ZBox फ़ोल्डर ले जाएँ, तो सेटिंग्स, सिस्टम ट्रे और विंडो खोलें, और नई जगह की ओर इंगित करने के लिए फिर से डेस्कटॉप शॉर्टकट बनाएँ चुनें।
+shortcut_created = शॉर्टकट बनाया गया:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = प्रदर्शन नाम
+form_email_address = ईमेल पता
+form_your_name = आपका नाम
+form_login_email = लॉगिन ईमेल
+form_password = पासवर्ड
+srv_imap_host = आने वाला (IMAP) सर्वर
+srv_imap_port = आने वाला पोर्ट
+srv_imap_encryption = आने वाला एन्क्रिप्शन
+srv_smtp_host = जाने वाला (SMTP) सर्वर
+srv_smtp_port = जाने वाला पोर्ट
+srv_smtp_encryption = जाने वाला एन्क्रिप्शन
+
+acct_login_email_label = लॉगिन ईमेल (साइन इन के लिए उपयोग)
+acct_new_password_label = नया पासवर्ड (वर्तमान रखने के लिए खाली छोड़ें)
+acct_new_password_name = नया पासवर्ड
+acct_identity_email_label = ईमेल पता (भेजने और प्राप्त करने के लिए उपयोग)
+acct_identities_label = अतिरिक्त पहचानें (उपनाम)
+acct_identities_name = अतिरिक्त पहचानें
+acct_add_identity = &पहचान जोड़ें...
+acct_edit_identity = &पहचान संपादित करें...
+acct_remove_identity = &पहचान हटाएँ
+acct_signature = हस्ताक्षर
+acct_edit_signature = &हस्ताक्षर संपादित करें...
+acct_junk_folder = जंक फ़ोल्डर
+acct_account_status = खाते की स्थिति
+acct_disable_account = यह खाता अक्षम करें
+acct_default_account = डिफ़ॉल्ट खाता
+acct_set_default = डिफ़ॉल्ट खाता बनाएँ
+acct_notifications = नए मेल की सूचनाएँ
+acct_mute_notifications = इस खाते की सूचनाएँ म्यूट करें
+acct_server_settings = सर्वर सेटिंग्स
+
+wiz_before_you_start = शुरू करने से पहले
+wiz_notice_name = महत्वपूर्ण सूचना
+wiz_google_instructions = &Google ऐप पासवर्ड के निर्देश खोलें
+wiz_intro = आपका नाम और ईमेल पता
+wiz_login_same = लॉगिन ईमेल ऊपर दिए ईमेल पते के समान है
+wiz_show_password = &पासवर्ड दिखाएँ
+wiz_preset_applied = {name} के लिए प्रीसेट लागू किया गया।
+wiz_summary_name = खाते का सारांश
+wiz_review = जाँच लें, फिर यह खाता सहेजने के लिए समाप्त पर क्लिक करें।
+wiz_test_connection = &कनेक्शन जाँचें
+wiz_testing = कनेक्शन जाँचा जा रहा है...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (डीबग लॉगिंग सक्षम करें, यहाँ सहेजी जाती है: data\logs)
+set_language_label = &इंटरफ़ेस भाषा:
+set_language_label_only_english = &इंटरफ़ेस भाषा: (केवल अंग्रेज़ी)
+set_headers_checkbox = &खुले संदेश के ऊपर संदेश हेडर दिखाएँ
+set_zoom_label = संदेश फ़ॉन्ट और ज़ूम:
+set_font_override = &डिफ़ॉल्ट संदेश फ़ॉन्ट आकार बदलें
+set_font_size_name = संदेश फ़ॉन्ट आकार (पॉइंट)
+set_reading_font_name = पढ़ने का फ़ॉन्ट
+set_reading_font_label = पढ़ने का फ़ॉन्ट (डिफ़ॉल्ट के लिए खाली):
+set_view_label = संदेश खोलते समय मुख्य भाग का दृश्य:
+set_view_text = पाठ
+set_view_html = HTML (प्रस्तुत)
+set_engine_label = HTML रेंडरिंग इंजन:
+set_engine_edge = Edge / WebView2 (आधुनिक रेंडरिंग)
+set_engine_ie = पुराना MSHTML (सबसे अच्छा स्क्रीन रीडर समर्थन)
+set_runtime_label = WebView2 रनटाइम:
+set_runtime_auto = स्वचालित — मौजूद हो तो साथ आया रनटाइम उपयोग करें (अनुशंसित)
+set_runtime_fixed = केवल साथ आया निश्चित संस्करण
+set_runtime_evergreen = सिस्टम-व्यापी रनटाइम (Windows द्वारा अपडेट)
+set_sr_box = स्क्रीन रीडर घोषणा नियंत्रण
+set_silence_label = HTML स्क्रीन रीडर मौन अवधि:
+set_silence_name = HTML स्क्रीन रीडर मौन अवधि मिलीसेकंड में
+set_focus_delay_label = WebView सुलभता फ़ोकस विलंब:
+set_focus_delay_name = WebView सुलभता फ़ोकस विलंब, स्तर 1 से 10
+set_announce_label = घोषणा अवधि:
+set_announce_name = घोषणा अवधि मिलीसेकंड में
+set_announce_actions = &संदेश क्रियाओं की घोषणा करें
+set_attachment_dir_label = अटैचमेंट सहेजने का फ़ोल्डर:
+set_attachment_dir_name = अटैचमेंट सहेजने का फ़ोल्डर
+set_browse = &ब्राउज़ करें…
+set_autosave_label = ड्राफ़्ट स्वतः सहेजने का अंतराल:
+set_autosave_name = ड्राफ़्ट स्वतः सहेजने का अंतराल सेकंड में
+set_auto_purge_label = पुराने ट्रैश और जंक की स्वतः सफ़ाई:
+set_auto_purge_name = इतने दिनों के बाद ट्रैश और जंक की स्वतः सफ़ाई
+set_bare_keys = संदेश सूची में एकल-कुंजी शॉर्टकट सक्षम करें: S (फ़्लैग), A (संग्रह), J (जंक चिह्नित)/Shift+J (जंक नहीं चिह्नित), W (थ्रेड पर नज़र), K (थ्रेड अनदेखा), M (यहाँ ले जाएँ)/Shift+M (फ़ोल्डर के नाम से ले जाएँ) और C (यहाँ कॉपी करें)
+set_sound_label = ध्वनि && सूचनाएँ:
+set_sounds_enabled = &सूचना ध्वनियाँ चलाएँ
+set_desktop_notifications = &नए मेल के लिए डेस्कटॉप सूचनाएँ दिखाएँ
+set_theme_label = ध्वनि थीम बदलें:
+set_theme_label_only_default = ध्वनि थीम बदलें: (केवल डिफ़ॉल्ट थीम)
+set_security_box = ऐप और डेटा सुरक्षा
+set_lock_on_quit = &पूरी तरह बाहर निकलने पर ZBox लॉक करें
+set_unlock_methods_button = &अनलॉक विधियाँ…
+set_master_password_button = &मास्टर पासवर्ड…
+set_tray_label = सिस्टम ट्रे && विंडो:
+set_minimize_to_tray = &सिस्टम ट्रे में छोटा करें
+set_close_to_tray = &सिस्टम ट्रे में बंद करें
+set_stay_maximized = &ZBox को हमेशा अधिकतम रखें
+set_run_at_startup = &Windows शुरू होने पर ZBox चलाएँ
+set_desktop_shortcut_button = &डेस्कटॉप शॉर्टकट बनाएँ
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = कुछ गड़बड़ होने पर डीबग लॉगिंग समस्याओं का पता लगाने में मदद करती है। इसे बंद करने से नई प्रविष्टियाँ लिखनी बंद हो जाती हैं; मौजूदा लॉग फ़ाइलें नहीं हटाई जातीं। अगली बार ZBox शुरू होने पर लागू होता है।
+set_language_note = अगली बार ZBox शुरू होने पर लागू होता है। भाषा फ़ाइलें ZBox के lang फ़ोल्डर में, sounds फ़ोल्डर के पास, सादी पाठ फ़ाइलें हैं। एक जोड़ने के लिए en फ़ोल्डर कॉपी करें, उस प्रति और उसके अंदर की .lang फ़ाइल का नाम अपनी भाषा के कोड में बदलें, और हर बराबर चिह्न के दाईं ओर का पाठ अनुवाद करें। जो अभी अनुवादित नहीं है वह चुप रहने के बजाय अंग्रेज़ी में बोला जाता है, इसलिए अधूरी फ़ाइल भी उपयोग के लिए सुरक्षित है।
+set_headers_note = प्रेषक, प्रति, Cc, तारीख और विषय, पाठ और HTML दोनों दृश्यों में संदेश के मुख्य भाग के ऊपर दिखाए जाते हैं। इसके बिना संदेश के अंदर से यह जानने का कोई तरीका नहीं कि उसे किसने भेजा, जब तक टैब बंद करके सूची पर वापस न जाएँ। फ़ोकस फिर भी संदेश के मुख्य भाग पर आता है; हेडर खंड एक Shift+Tab दूर है। अगली बार संदेश खोलने पर लागू होता है।
+set_zoom_note = खुले संदेश का अपना पाठ बड़ा या छोटा करता है, बाकी ZBox और Windows के अपने डिस्प्ले स्केलिंग से अलग। पाठ और HTML दोनों दृश्यों पर लागू होता है। “पढ़ने का फ़ॉन्ट” वैकल्पिक रूप से संदेश के मुख्य भाग के लिए एक खास फ़ॉन्ट (जैसे Consolas, OpenDyslexic) लागू करता है; सामान्य फ़ॉन्ट रखने के लिए इसे खाली छोड़ें। दृश्य मेनू में Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 यह संवाद खोले बिना केवल फ़ॉन्ट आकार बढ़ाते, घटाते या रीसेट करते हैं, और हर खुले संदेश पर तुरंत लागू होते हैं। यहाँ किए गए बदलाव भी ठीक दबाने पर तुरंत लागू होते हैं।
+set_view_note = HTML डिफ़ॉल्ट है। यह संदेश को वैसे ही दिखाता है जैसे वह भेजा गया था, और NVDA और JAWS इसे पढ़ते हैं: HTML पृष्ठ खुलने पर ZBox ब्राउज़र की अपनी घोषणा को चुप कराता है, पढ़ने का कर्सर संदेश की पहली पंक्ति पर रखता है, और पृष्ठ के अंदर ZBox के अपने शॉर्टकट चालू रखता है, जिसमें फ़ोकस बाहर लाने के लिए F6 भी शामिल है। पाठ वही संदेश एक सामान्य संपादन नियंत्रण में सादे, बिना फ़ॉर्मेट वाले पाठ के रूप में दिखाता है -- न चित्र, न लेआउट, और ऐसा कुछ नहीं जो किसी ब्राउज़र इंजन के इंस्टॉल होने पर निर्भर हो। किसी भी ओर बदलने के लिए खुले संदेश के अंदर Ctrl+B दबाएँ।
+set_engine_note = Edge आधुनिक CSS रेंडर करता है पर पृष्ठ को एक अलग प्रक्रिया में चलाता है, और अपनी सामग्री स्क्रीन रीडर को केवल ऐसे इंटरफ़ेस से देता है जिस तक wxPython नहीं पहुँच सकता -- इसलिए संदेश बिना किसी पठनीय सामग्री के खुल सकता है। पुराना MSHTML वह इंजन है जिसे Outlook Express और Windows Mail उपयोग करते थे: यह उसी प्रक्रिया में चलता है और एक सामान्य दस्तावेज़ ट्री प्रकाशित करता है, इसलिए NVDA और JAWS इसे किसी भी वेब पृष्ठ की तरह ब्राउज़ मोड में पढ़ते हैं। अगली बार संदेश खोलने पर लागू होता है।
+set_runtime_note = सिस्टम-व्यापी रनटाइम Windows Update द्वारा अपडेट होता है, इसलिए आपका मेल पढ़ने वाला इंजन बिना सूचना के बदल सकता है — इसी तरह ऐसी मशीन पर भी काम करता HTML संदेश दृश्य टूट सकता है जहाँ ZBox में कुछ नहीं बदला। deps फ़ोल्डर में साथ आई प्रति ठीक वही संस्करण तय कर देती है जिस पर ZBox जाँचा गया था। एक इंस्टॉल करने के लिए tools\get_webview2.bat चलाएँ। साथ आई प्रति न हो तो ZBox किसी भी स्थिति में सिस्टम-व्यापी रनटाइम उपयोग करता है, इसलिए यह हमेशा शुरू होता है। अगली बार ZBox शुरू होने पर लागू होता है।
+set_sr_intro = संदेश खुलते समय ZBox आपके स्क्रीन रीडर को कितना बोलने देता है, और उसकी अपनी बोली गई घोषणाएँ कितनी देर दिखती हैं।
+set_silence_note = HTML संदेश खुलने पर स्क्रीन रीडर की ब्राउज़र घोषणा को चुप कराने के लिए ZBox 2 सेकंड तक एक कृत्रिम Ctrl दबाव बनाए रख सकता है। संदेश का विषय पहले से पृष्ठ शीर्षक के रूप में उपयोग होता है, जिससे base64 URL ज़ोर से नहीं पढ़ा जाता, पर रीडर फिर भी संदेश की शुरुआत पर नियंत्रण और दस्तावेज़ प्रकार की घोषणा करता है, इसलिए यह डिफ़ॉल्ट रूप से चालू है। बंद करने के लिए इसे 0 करें, या अगर बातें फिर भी बीच में आएँ तो बढ़ाएँ।
+set_focus_delay_note = HTML संदेश लोड होने के बाद ZBox उसे फ़ोकस करने से पहले इतनी देर प्रतीक्षा करता है। WebView2 का पृष्ठ लोड होने की सूचना देना और Windows का उस पृष्ठ का सुलभता ट्री पूरा करना एक ही पल नहीं होते; बहुत जल्दी फ़ोकस करने से NVDA/JAWS संदेश के बजाय एक सामान्य “वेब सामग्री पृष्ठ” बोलते हैं, या खुलने के बाद कुछ देर संदेश को अनुपलब्ध बताते हैं। स्तर 1 का मतलब 100 ms, स्तर 10 का मतलब पूरा एक सेकंड है। यह अब भी दिखे तो बढ़ाएँ; खुलना ठोस लगने लगे तो तेज़ खुलने के लिए घटाएँ।
+set_announce_note = Ctrl+U और Ctrl+Shift+U प्रेषक को एक छोटे संवाद में बताते हैं जो अपने आप बंद हो जाता है, क्योंकि स्टेटस बार तभी बोला जाता है जब आपके स्क्रीन रीडर में स्टेटस बार रिपोर्टिंग चालू हो। यह वह अवधि है जितनी देर वह संवाद दिखता है। इसे अपनी बोलने की गति के अनुसार सेट करें: बहुत कम हो तो यह वाक्य के बीच बंद हो जाता है, जो इसके उद्देश्य को विफल करता है। कोई भी कुंजी इसे पहले बंद कर देती है; तीर कुंजियाँ इसे खुला रखती हैं ताकि आप फिर से पढ़ सकें। 0 का मतलब है कि यह कुंजी की प्रतीक्षा करता है और अपने आप कभी बंद नहीं होता।
+set_attachment_dir_note = संदेश में एक से अधिक अटैचमेंट होने पर “सभी सहेजें” उन्हें कहाँ लिखता है। मौजूद न हो तो अपने आप बनता है। एक ही अटैचमेंट वाला संदेश पहले की तरह पूछता है कि कहाँ सहेजें। डिफ़ॉल्ट के लिए खाली छोड़ें:\n{path}
+set_autosave_note = लिखते समय खुला लेखन टैब कितनी बार अपने आप ड्राफ़्ट में सहेजा जाता है। ड्राफ़्ट सहेजें (Ctrl+S) किसी भी स्थिति में माँगने पर सहेजता है, और बिना सहेजे लेखन वाला टैब बंद करने पर हमेशा सहेजने का विकल्प मिलता है। 0 स्वतः सहेजना बंद करता है। 15 सेकंड से कम उपलब्ध नहीं है -- वह आपके टाइपिंग से होड़ करता सर्वर का चक्कर होगा।
+set_auto_purge_note = ट्रैश और जंक में इतने दिन पड़े रहने के बाद संदेशों को स्थायी रूप से हटाता है -- वही स्थायी हटाना जो ट्रैश खाली करें और जंक खाली करें माँगने पर करते हैं, ZBox खुला रहने पर दिन में एक बार अपने आप चलता है। डिफ़ॉल्ट रूप से 30 दिनों पर चालू। 0 इसे बंद करता है। संदेश हटने के बाद इसे पूर्ववत नहीं किया जा सकता।
+set_bare_keys_note = चालू होने पर संदेश सूची में अकेले S, A, J, W या K दबाने से तुरंत फ़्लैग बदलता है, संग्रहित होता है, चयनित संदेश जंक चिह्नित होते हैं (Shift+J उन्हें जंक नहीं चिह्नित करता है), या चयन जिस थ्रेड का हिस्सा है उस पर नज़र रखी जाती है/उसे अनदेखा किया जाता है -- संग्रहित करें और जंक के रूप में चिह्नित करें में न पुष्टि है न पूर्ववत। इसे बंद करने से S, A, J, W और K सामान्य पहले-अक्षर सूची नेविगेशन पर लौट आते हैं। Ctrl+S और Ctrl+Shift+A किसी भी स्थिति में काम करते रहते हैं। तुरंत लागू होता है।
+set_sounds_note = प्रगति, नए संदेश, भेजे गए, उत्तर दिए गए या अग्रेषित किए गए कार्यों, हटाने और खोज परिणामों के लिए छोटी ध्वनियाँ। बंद करने पर ऐप की हर ध्वनि बंद हो जाती है; स्क्रीन रीडर और स्टेटस बार की घोषणाओं पर किसी भी स्थिति में असर नहीं पड़ता।
+set_desktop_notifications_note = नए मेल के हर समूह के लिए एक Windows सूचना, ऊपर की ध्वनि से अलग। बंद करने पर हर खाते के लिए बंद होती है; किसी एक खाते को खाता और पहचान सेटिंग्स में अलग से भी म्यूट किया जा सकता है।
+set_theme_note = कस्टम थीम ZBox के sounds फ़ोल्डर के अंदर रखे गए फ़ोल्डर होते हैं, हर एक में अपनी progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav और none_found.wav होती हैं। थीम की कोई फ़ाइल न हो तो डिफ़ॉल्ट ध्वनि उपयोग होती है।
+set_theme_note_only_default = कस्टम थीम ZBox के sounds फ़ोल्डर के अंदर रखे गए फ़ोल्डर होते हैं, हर एक में अपनी progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav और none_found.wav होती हैं। थीम की कोई फ़ाइल न हो तो डिफ़ॉल्ट ध्वनि उपयोग होती है। जब तक आप कोई दूसरा थीम फ़ोल्डर न जोड़ें, केवल “default” उपलब्ध है।
+set_lock_note = तब ZBox शुरू होने पर कोई भी खाता खोलने से पहले आपकी किसी एक अनलॉक विधि की माँग करता है। इनमें से कोई एक काफ़ी है: पासकी, सुरक्षा कुंजी, या मास्टर पासवर्ड। ट्रे में बंद करना बाहर निकलना नहीं है और फिर से लॉक नहीं करता; फ़ाइल > बाहर निकलें और ट्रे आइकन का बाहर निकलें ऐसा करते हैं। अगर कुछ पंजीकृत नहीं है और कोई मास्टर पासवर्ड सेट नहीं है, तो आपको अपने ही मेल से बाहर रखने के बजाय लॉक छोड़ दिया जाता है।
+set_security_note = तीनों में केवल मास्टर पासवर्ड ही कुछ एन्क्रिप्ट करता है: इसी से यह फ़ोल्डर किसी दूसरे कंप्यूटर पर अपने सहेजे गए खाता पासवर्ड खोल पाता है। पासकी या सुरक्षा कुंजी इसी कंप्यूटर पर ऐप अनलॉक करती है। कोई भी उस कंप्यूटर पर मास्टर पासवर्ड की जगह नहीं लेती जहाँ ZBox पहले उपयोग नहीं हुआ है।
+set_minimize_note = ZBox को छोटा करने पर उसका टास्कबार बटन छिप जाता है और वह ट्रे आइकन के पीछे चलता रहता है। विंडो वापस लाने के लिए ट्रे आइकन पर बायाँ क्लिक करें (या कीबोर्ड फ़ोकस होने पर Enter/Space)।
+set_close_note = विंडो का बंद करें बटन, Alt+F4, और मेल टैब पर दबाया गया Ctrl+W, बाहर निकलने के बजाय ZBox को ट्रे में छिपाते हैं। फ़ाइल > बाहर निकलें (Ctrl+Shift+Q) और ट्रे आइकन का अपना बाहर निकलें आइटम किसी भी स्थिति में वास्तव में ZBox बंद करते हैं, इसलिए ट्रे को छुए बिना बाहर निकलने का एक कीबोर्ड रास्ता हमेशा रहता है।
+set_stay_maximized_note = ZBox अधिकतम आकार में शुरू होता है और अगर आप उसे अधिकतम से हटाएँ तो वापस अधिकतम कर दिया जाता है। मेनू बार, शीर्षक पट्टी और विंडो किनारे पर असर नहीं पड़ता -- यह बिना किनारे वाला पूर्ण-स्क्रीन मोड नहीं है, इसलिए हर Alt-कुंजी मेनू शॉर्टकट काम करता रहता है।
+set_run_at_startup_note = Windows में साइन इन करने पर ZBox अपने आप शुरू होता है, अपनी विंडो दिखाने के बजाय सीधे ट्रे में खुलता है। तुरंत लागू होता है, केवल अगली बार शुरू होने पर नहीं।
+set_desktop_shortcut_note = आपके डेस्कटॉप पर ZBox का शॉर्टकट रखता है, पहले से मौजूद शॉर्टकट को बदलकर। शॉर्टकट इस ZBox फ़ोल्डर का ठीक स्थान संग्रहीत करता है, इसलिए अगर आप ZBox को कहीं और ले जाएँ या कॉपी करें, तो डेस्कटॉप शॉर्टकट को उसकी ओर इंगित करने के लिए नई प्रति पर इसे फिर से दबाएँ। तुरंत लागू होता है और ठीक की प्रतीक्षा नहीं करता।
+
+# The Address Book, its contact form and its groups.
+ab_name = नाम
+ab_phone = फ़ोन
+ab_notes = टिप्पणियाँ
+ab_heading = पता पुस्तिका
+ab_contacts = संपर्क
+ab_new = &नया...
+ab_edit = &संपादित करें...
+ab_delete = &हटाएँ
+ab_import = &आयात करें...
+ab_export = &निर्यात करें...
+ab_groups_label = समूह (मेलिंग सूचियाँ)
+ab_groups_name = समूह
+ab_new_group = &नया समूह...
+ab_rename_group = &समूह का नाम बदलें...
+ab_delete_group = &समूह हटाएँ
+ab_manage_members = &सदस्य प्रबंधित करें...
+ab_all_contacts = सभी संपर्क
+ab_add_member = जोड़ें >>
+ab_remove_member = << हटाएँ
+ab_members_of = {name} के सदस्य
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &शब्दकोश में नहीं:
+sp_not_in_dictionary_name = शब्दकोश में नहीं
+sp_in_this_line_label = इस पंक्ति में:
+sp_in_this_line_name = इस पंक्ति में
+sp_suggestions_label = &सुझाव:
+sp_suggestions_name = सुझाव
+sp_replace_with_label = &इससे बदलें:
+sp_replace_with_name = इससे बदलें
+sp_replace = &बदलें
+sp_replace_all = &सभी बदलें
+sp_ignore = &अनदेखा करें
+sp_ignore_all = &सभी अनदेखा करें
+sp_add_to_dictionary = &शब्दकोश में जोड़ें
+btn_close = &बंद करें
+
+# Privacy and Content Blocking.
+priv_remote_label = संदेशों में रिमोट सामग्री:
+priv_block_remote = &जब तक मैं न माँगूँ रिमोट सामग्री अवरुद्ध रखें (अनुशंसित)
+priv_blocklist_label = विज्ञापन और ट्रैकर ब्लॉकलिस्ट:
+priv_block_known = &ज्ञात विज्ञापन और ट्रैकर डोमेन अवरुद्ध करें
+priv_update_daily = &सूची को पृष्ठभूमि में रोज़ अपडेट करें
+priv_update_now = &अभी अपडेट करें
+priv_junk_label = जंक मेल नियम:
+priv_check_inbox = &नए इनबॉक्स मेल को अवरुद्ध प्रेषकों और ज्ञात फ़िशिंग लिंक से जाँचें
+priv_move_blocked = &अवरुद्ध प्रेषकों का मेल अपने आप जंक में ले जाएँ
+priv_update_phishing = &फ़िशिंग सूची अभी अपडेट करें
+priv_blocked_label = अवरुद्ध प्रेषक:
+priv_blocked_name = अवरुद्ध प्रेषक
+priv_remove_blocked = &अवरुद्ध प्रेषक हटाएँ
+priv_never_junk_label = प्रेषक जिन्हें कभी जंक नहीं माना जाता:
+priv_never_junk_name = प्रेषक जिन्हें कभी जंक नहीं माना जाता
+priv_remove_never_junk = &कभी-जंक-नहीं प्रेषक हटाएँ
+priv_allowed_label = रिमोट सामग्री लोड करने की अनुमति वाले प्रेषक:
+priv_allowed_name = अनुमत प्रेषक
+priv_remove_selected = &चयनित प्रेषक हटाएँ
+
+# Message Filters.
+filt_rule_name = नियम का नाम
+filt_enabled = &सक्षम
+filt_match_label = मिलान:
+filt_match_all = &नीचे दिए सभी से मिलान करें (AND)
+filt_match_any = &नीचे दिए किसी से भी मिलान करें (OR)
+filt_conditions_label = शर्तें (छोड़ने के लिए मान खाली रखें):
+filt_condition_field = शर्त {number} फ़ील्ड
+filt_condition_contains = शर्त {number} में शामिल है
+filt_actions_label = क्रियाएँ:
+filt_mark_read = &पढ़ा हुआ चिह्नित करें
+filt_flag = &संदेश फ़्लैग करें
+filt_move_label = फ़ोल्डर में ले जाएँ:
+filt_move_name = फ़ोल्डर में ले जाएँ
+filt_rules_name = फ़िल्टर नियम
+filt_new = &नया नियम...
+filt_edit = &नियम संपादित करें...
+filt_delete = &नियम हटाएँ
+filt_up = &ऊपर ले जाएँ
+filt_down = &नीचे ले जाएँ
+filt_run_label = इस फ़ोल्डर पर अभी चलाएँ:
+filt_run_name = अभी चलाने का फ़ोल्डर
+filt_run_now = &अभी चलाएँ
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &पासकी से अनलॉक करें (Windows Hello)
+unl_security_key = &सुरक्षा कुंजी से अनलॉक करें
+unl_master_password_label = &मास्टर पासवर्ड:
+unl_master_password_name = मास्टर पासवर्ड
+unl_unlock = &अनलॉक करें
+unl_exit = &ZBox से बाहर निकलें
+unl_methods_label = &पंजीकृत विधियाँ:
+unl_methods_name = पंजीकृत अनलॉक विधियाँ
+unl_add_passkey = &पासकी जोड़ें…
+unl_add_key = &सुरक्षा कुंजी जोड़ें…
+unl_reassign = &पासकी को इस कंप्यूटर पर फिर से असाइन करें…
+unl_test = &जाँचें…
+unl_remove = &हटाएँ
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = प्रेषक
+comp_to = प्रति
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = विषय
+comp_attach_button = फ़ाइल संलग्न करें...
+comp_sending = भेजा जा रहा है...
+comp_report_label = &रिपोर्ट:
+comp_report_name = रिपोर्ट
+comp_refresh = &रीफ़्रेश करें
+comp_copy = &कॉपी करें
+comp_preview_read = जैसा प्राप्तकर्ता पढ़ेगा
+comp_preview_source = वह HTML जो भेजा जाएगा
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = संदेश का मुख्य भाग
+mv_blocked_notice = अवरुद्ध सामग्री की सूचना
+mv_show_remote = &रिमोट सामग्री दिखाएँ
+mv_always_allow = &इस प्रेषक को हमेशा अनुमति दें
+mv_message_headers = संदेश हेडर
+mv_attachments = अटैचमेंट
+mv_attachments_count = अटैचमेंट ({count})
+mv_save_attachment = सहेजें: {filename}
+mv_save_all = सभी सहेजें
+mv_html_view = संदेश HTML दृश्य
+mv_saved_message = सहेजा गया संदेश
+mv_show_remote_tip = इस संदेश को उसके रिमोट चित्रों और शैलियों के साथ फिर से लोड करें। ज्ञात ट्रैकर अवरुद्ध रहते हैं।
+mv_always_allow_tip = {sender} के हर संदेश में रिमोट सामग्री लोड करें।
+
+# The search tab.
+srch_account = खाता
+srch_folder = फ़ोल्डर
+srch_for = इसे खोजें
+
+# The signature editor.
+sig_editors = हस्ताक्षर संपादक
+sig_formatted = हस्ताक्षर, फ़ॉर्मेट किया हुआ
+sig_source = हस्ताक्षर, HTML स्रोत
+sig_plain_label = सादा पाठ विकल्प (HTML के साथ भेजा जाता है)
+sig_plain_name = सादा पाठ विकल्प
+
+# About ZBox.
+about_text_name = ZBox के बारे में पाठ
+about_view_license = &लाइसेंस देखें...
+about_google = &Google ऐप पासवर्ड...
+about_support = &ZBox का समर्थन करें -- एक व्यक्ति द्वारा विकास और रखरखाव
+about_repos = &GitHub पर Harith के ऐप रिपॉज़िटरी
+about_contact = &Harith से संपर्क करें
+btn_close_plain = बंद करें
+btn_cancel_plain = रद्द करें
+
+# The license window.
+eula_heading = ZBox लाइसेंस
+eula_text_name = ZBox लाइसेंस पाठ
+eula_third_party = तृतीय-पक्ष घटकों के लाइसेंस पृष्ठ:
+eula_agree = &मैं ऊपर की शर्तों से सहमत हूँ
+eula_agree_name = मैंने ZBox लाइसेंस की शर्तें पढ़ ली हैं और उनसे सहमत हूँ
+eula_disagree = &मैं असहमत हूँ
+eula_next = &आगे
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox दस्तावेज़ पाठ
+doc_copy = क्लिपबोर्ड पर कॉपी करें
+shortcuts_heading = कीबोर्ड शॉर्टकट
+shortcuts_text_name = कीबोर्ड शॉर्टकट पाठ
+
+# The main window's own panes.
+mf_toolbar = मुख्य टूलबार
+mf_tabs = ZBox टैब
+tree_heading = खाते और फ़ोल्डर
+tree_name = खाता और फ़ोल्डर ट्री
+envlist_heading = संदेश
+envlist_name = संदेश सूची
+rdr_heading = संदेश
+rdr_name = संदेश पाठक
+conv_heading_one = बातचीत: 1 संदेश
+conv_heading_many = बातचीत: {count} संदेश
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} में से {completed} पूरे।
+bulk_cancelling = रद्द किया जा रहा है -- वर्तमान संदेश पूरा हो रहा है...
+cache_clear_now = ऑफ़लाइन संदेश कैश अभी साफ़ करें... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, सुरक्षित
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = प्रदर्शन नाम वैकल्पिक है -- इस खाते के अपने नाम से भेजने के लिए इसे खाली छोड़ें।
+acct_note_identity = अगर आपके प्रदाता ने इस मेलबॉक्स से कोई कस्टम डोमेन जोड़ा है, तो ईमेल पता लॉगिन ईमेल से अलग हो सकता है। मेल ऊपर दिए पते से भेजा और प्राप्त किया जाएगा, जबकि साइन इन फिर भी लॉगिन ईमेल से होगा। इस खाते का पहले से संग्रहीत पासवर्ड रखने के लिए पासवर्ड फ़ील्ड खाली छोड़ें -- उदाहरण के लिए Gmail ऐप पासवर्ड बदलने के बाद नया यहाँ लिखें; वरना इसे खाली छोड़ें।
+acct_note_identities = दूसरे पते जिनसे यह खाता भेज और उत्तर दे सकता है। इनमें से किसी पर भेजे गए संदेश का उत्तर देते समय प्रेषक ऊपर वाले के बजाय उसी पते पर डिफ़ॉल्ट होता है।
+acct_note_signature = इस खाते से भेजे गए हर नए संदेश, उत्तर और अग्रेषण के अंत में, एक "-- " पंक्ति के नीचे जोड़ा जाता है। कोई नहीं चाहिए तो खाली छोड़ें। हस्ताक्षर संपादित करें फ़ॉर्मेट किया हुआ संपादक खोलता है, जहाँ बोल्ड, सूचियाँ और लिंक उपलब्ध हैं; तब ऊपर वाले बॉक्स में वह सादा पाठ संस्करण रहता है जो उसके साथ भेजा जाता है।
+acct_note_junk = जंक के रूप में चिह्नित करें संदेशों को किस वास्तविक फ़ोल्डर में ले जाता है। "{automatic}" वही प्रदाता-आधारित अनुमान उपयोग करता है जो संग्रह और ट्रैश पहले से उपयोग करते हैं; इसे तभी सेट करें जब वह अनुमान गलत हो या आपके जंक फ़ोल्डर का कस्टम नाम हो।
+acct_note_disable = अक्षम खाते से फिर से सक्षम किए जाने तक कभी संपर्क नहीं किया जाता -- न IDLE, न नियमित रीफ़्रेश, कुछ भी नहीं। यह फिर भी ट्री में (अक्षम) चिह्न के साथ दिखता है, और इसका पहले से डाउनलोड किया गया मेल ऑफ़लाइन उपलब्ध रहता है। यह खाते > खाता अक्षम करें या खाते के अपने संदर्भ मेनू वाला ही टॉगल है; यह बस उस तक पहुँचने की एक और जगह है।
+acct_note_default = इस खाते के फ़ोल्डर ट्री में सबसे पहले दिखते हैं, और नया संदेश डिफ़ॉल्ट रूप से इसी से भेजा जाता है जब तक लेखक में हाथ से न बदला जाए। उत्तर या अग्रेषण किस पते का उपयोग करता है इस पर असर नहीं पड़ता -- वह पहले से उत्तर दिए जा रहे संदेश का अनुसरण करता है (ऊपर अतिरिक्त पहचानें देखें)। हमेशा ठीक एक डिफ़ॉल्ट खाता होता है, इसलिए वर्तमान डिफ़ॉल्ट पर इसे अनचेक करने से, बिना किसी दूसरे पर चेक किए, कुछ नहीं बदलता -- डिफ़ॉल्ट सौंपने के लिए इसके बजाय दूसरे खाते का बॉक्स चेक करें।
+acct_note_mute = म्यूट करने से इस खाते की नए मेल की ध्वनि, बोली गई घोषणा और Windows सूचना रुक जाती है, चाहे वे अन्यथा कैसे भी कॉन्फ़िगर हों। इसका दूसरे खातों पर असर नहीं पड़ता, और यह फिर भी सेटिंग्स > ध्वनि & सूचनाएँ के मुख्य स्विचों (कुल मिलाकर ध्वनियाँ और डेस्कटॉप सूचनाएँ) के अधीन है।
+wiz_note_app_password = अगर आपने ZBox के लिए पहले से ऐप पासवर्ड बनाया है, तो आगे बढ़ने के लिए आगे दबाएँ।
+wiz_note_login = लॉगिन क्रेडेंशियल।\nअगर आपका लॉगिन ईमेल ऊपर वाले पते से अलग है, उदाहरण के लिए आपके प्रदाता का खाता login@example.net है पर आप you@example.org के रूप में भेजना और प्राप्त करना चाहते हैं, तो लॉगिन ईमेल यहाँ दर्ज करें। कस्टम भेजने का पता आप बाद में खाता और पहचान सेटिंग्स में सेट कर सकते हैं।
+wiz_note_servers = सर्वर सेटिंग्स, जहाँ डोमेन पहचाना गया वहाँ पहले से भरी हुई। जो कुछ अलग होना चाहिए उसे संपादित करें।
+wiz_preset_none = इस डोमेन के लिए कोई प्रीसेट नहीं मिला। अपने प्रदाता की सर्वर सेटिंग्स हाथ से दर्ज करें; आपके प्रदाता के सहायता पृष्ठों में वे दी होंगी।
+ab_note_groups = किसी समूह के सभी सदस्य एक साथ भरने के लिए लेखन विंडो के प्रति, Cc या Bcc फ़ील्ड में उस समूह का नाम लिखें।
+cache_note_intro = ये केवल ZBox की स्थानीय प्रतियाँ हटाते हैं। किसी भी मेल सर्वर से कुछ नहीं हटाया जाता, और हटाया गया संदेश अगली बार खोलने पर फिर से डाउनलोड होता है।
+cache_note_age = स्वचालित सफ़ाई दिन में एक बार चलती है, जब ZBox पर दस मिनट से कोई कीबोर्ड गतिविधि न हुई हो और कोई संदेश खुला न हो। यह हर संदेश की अपनी तारीख के अनुसार चलती है, जिनमें वे संदेश भी शामिल हैं जो अभी भी आपके खाते में हैं।
+filt_note_intro = नियम ऊपर से नीचे क्रम से चलते हैं, प्रेषक, प्रति और विषय की जाँच करते हुए। इस खाते के इनबॉक्स में आने वाले नए मेल पर अपने आप लागू होते हैं; किसी फ़ोल्डर में पहले से पड़े संदेशों पर लागू करने के लिए नीचे अभी चलाएँ का उपयोग करें।
+filt_note_run_now = ऊपर का हर सक्षम नियम, क्रम से, चुने गए फ़ोल्डर में पहले से मौजूद हर संदेश पर लागू करता है -- पहले आपके बदलाव सहेजता है, ठीक की तरह।
+mp_note_intro = ये खाते किसी दूसरे कंप्यूटर पर सेट किए गए थे। यहाँ उनके सहेजे गए पासवर्ड अनलॉक करने के लिए मास्टर पासवर्ड दर्ज करें। इस कंप्यूटर पर आपसे केवल एक बार पूछा जाएगा।\n\nइसके बिना हर खाते को अपने मेल सर्वर में फिर से साइन इन करना होगा।
+priv_note_remote = संदेश जो चित्र, स्टाइलशीट और फ़ॉन्ट इंटरनेट से लोड करता है, वे प्रेषक को बता देते हैं कि आपने उसे कब और कहाँ से खोला। यह चालू होने पर इनमें से कुछ लोड नहीं होता: संदेश के ऊपर एक सूचना दिखती है कि क्या अवरुद्ध हुआ, और Ctrl+Shift+I उसे उस एक संदेश के लिए लोड करता है। संदेश में ही संलग्न चित्र हमेशा दिखते हैं। स्क्रिप्ट और एम्बेड किए गए फ़्रेम किसी भी स्थिति में हटाए जाते हैं और कभी लोड नहीं होते।
+priv_note_blocklist = यह दूसरी परत है। यह तब मायने रखती है जब आप किसी संदेश की रिमोट सामग्री लोड करते हैं, या किसी प्रेषक को अनुमति देते हैं: चित्र लोड होते हैं, पर किसी ज्ञात ट्रैकिंग या विज्ञापन डोमेन से आने वाली चीज़ें फिर भी नहीं। सूची सार्वजनिक विज्ञापन और ट्रैकर सूचियों से डाउनलोड करके मिलाई जाती है; अपडेट में एक-दो सेकंड लगते हैं और यह पृष्ठभूमि में चलता है।
+priv_note_junk = कोई अनुमान नहीं। जंक के रूप में चिह्नित करें प्रेषक को नीचे की अवरुद्ध सूची में जोड़ता है, जब तक संदेश किसी मेलिंग सूची से न आया हो। जंक नहीं के रूप में चिह्नित करें प्रेषक को कभी-जंक-नहीं सूची में जोड़ता है और वह संदेश फिर कभी नहीं जाँचा जाता। किसी अवरुद्ध प्रेषक का नया संदेश सूची में अवरुद्ध प्रेषक चिह्नित होता है; किसी ज्ञात फ़िशिंग या मैलवेयर साइट से लिंक करने वाला संदेश संभावित फ़िशिंग चिह्नित होता है। आपके मेल प्रदाता की अपनी स्पैम फ़िल्टरिंग पहले की तरह चलती रहती है।
+priv_status_phishing_updating = फ़िशिंग सूची: पृष्ठभूमि में अपडेट हो रही है। परिणाम देखने के लिए यह संवाद फिर से खोलें।
+priv_status_updating = पृष्ठभूमि में अपडेट हो रहा है। परिणाम देखने के लिए यह संवाद फिर से खोलें।
+rel_note_intro = "{subject}" से उनके Message-ID/References हेडरों द्वारा संबंधित संदेश, इस खाते के हर फ़ोल्डर में।
+srch_note_intro = नीचे दर्ज पाठ के लिए प्रेषक, विषय और मुख्य भाग खोजें। जब तक आप नीचे सीमित न करें, हर खाता और फ़ोल्डर खोजा जाता है।
+sig_note_plain = सादा टेक्स्ट विकल्प खाली छोड़ दें, सहेजें दबाने पर यह फ़ॉर्मेट किए गए हस्ताक्षर से लिखा जाएगा।
+unified_note_intro = चुनें कि हर खाते में से कौन से फ़ोल्डर मिलाने हैं। हर चेक किया गया फ़ोल्डर ट्री में एक प्रविष्टि बनता है जो आपके सभी खातों से उस फ़ोल्डर को मिलाती है।
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox के बारे में
+title_account_settings = खाता और पहचान सेटिंग्स: {name}
+title_new_account = नया खाता
+title_address_book = पता पुस्तिका
+title_members = सदस्य: {name}
+ab_group_name_prompt = समूह का नाम:
+title_new_group = नया समूह
+title_cache_cleanup = कैश सफ़ाई कॉन्फ़िगरेशन
+cache_age_prompt = इससे पुराने कैश संदेश अपने आप हटाएँ:
+title_automatic_cleanup = स्वचालित सफ़ाई
+comp_link_prompt = लिंक पता:
+title_insert_link = लिंक डालें
+title_composer_diagnostics = लेखक निदान
+title_formatted_preview = फ़ॉर्मेट किया हुआ पूर्वावलोकन
+title_license_agreement = ZBox लाइसेंस अनुबंध
+title_message_filters = संदेश फ़िल्टर: {account}
+title_master_password_required = मास्टर पासवर्ड आवश्यक
+title_privacy_dialog = गोपनीयता और सामग्री अवरोधन
+title_privacy = गोपनीयता
+title_settings = सेटिंग्स
+title_unified_folders = एकीकृत फ़ोल्डर
+title_zbox_locked = ZBox लॉक है
+title_message_view = संदेश दृश्य
+title_remote_content = रिमोट सामग्री
+title_refresh = रीफ़्रेश करें
+title_refresh_all = सभी रीफ़्रेश करें
+mv_choose_folder = अटैचमेंट सहेजने के लिए एक फ़ोल्डर चुनें
+title_thread = थ्रेड
+title_inbox = इनबॉक्स
+title_compose = लिखें
+title_watch_thread = थ्रेड पर नज़र रखें
+title_ignore_thread = थ्रेड अनदेखा करें
+title_edit_signature = हस्ताक्षर संपादित करें
+title_account = खाता
+mf_folder_name_prompt = फ़ोल्डर का नाम:
+mf_new_name_prompt = नया नाम:
+title_refresh_all_accounts = सभी खाते रीफ़्रेश करें
+title_sender = प्रेषक
+title_new_mail = नया मेल
+mf_export_dialog_title = सभी {count} खाते और सेटिंग्स निर्यात करें
+mf_related_tab = संबंधित: {subject}
+title_hotkeys_diagnostic = हॉटकी निदान
+set_choose_attachment_dir = अटैचमेंट सहेजने का फ़ोल्डर चुनें
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox लॉक है। इसे अनलॉक करने के लिए नीचे की किसी एक विधि का उपयोग करें। रद्द करने पर कोई खाता खोले बिना ZBox बंद हो जाता है।
+unl_note_foreign_passkey = इस फ़ोल्डर के साथ सहेजी गई पासकी किसी दूसरे कंप्यूटर की है, इसलिए यहाँ उपयोग नहीं हो सकती। अपनी सुरक्षा कुंजी या मास्टर पासवर्ड से अनलॉक करें, फिर इस कंप्यूटर पर पासकी सेट करने के लिए सेटिंग्स, गोपनीयता और सुरक्षा, अनलॉक विधियाँ का उपयोग करें।
+unl_note_methods = ऐप लॉक चालू होने पर इनमें से कोई भी ZBox अनलॉक करती है, मास्टर पासवर्ड के साथ। पासकी इस कंप्यूटर पर Windows Hello का उपयोग करती है; सुरक्षा कुंजी USB या NFC वाली FIDO2 कुंजी है और आप जिस भी कंप्यूटर में लगाएँ वहाँ काम करती है।
+unl_note_not_encryption = ये ऐप अनलॉक करती हैं। ये कुछ एन्क्रिप्ट नहीं करतीं: मास्टर पासवर्ड ही एकमात्र चीज़ है जो उस कंप्यूटर पर सहेजे गए खाता पासवर्ड खोल सकती है जहाँ यह फ़ोल्डर पहले उपयोग नहीं हुआ है। इसे पहले सेट करना होगा, और तब तक इनमें से कोई नहीं जोड़ी जा सकती।
+unl_add_passkey_unavailable = &पासकी जोड़ें (अनुपलब्ध)
+unl_add_key_unavailable = &सुरक्षा कुंजी जोड़ें (अनुपलब्ध)
+unl_reassign_unavailable = &पासकी को इस कंप्यूटर पर फिर से असाइन करें (अनुपलब्ध)
+unl_status_cancelled_passkey = पासकी रद्द की गई। ZBox अभी भी लॉक है।
+unl_status_cancelled_key = सुरक्षा कुंजी रद्द की गई। ZBox अभी भी लॉक है।
+unl_status_enter_password = मास्टर पासवर्ड दर्ज करें।
+unl_status_no_master = कोई मास्टर पासवर्ड सेट नहीं है, इसलिए अभी पासकी या सुरक्षा कुंजी नहीं जोड़ी जा सकती। सेटिंग्स, गोपनीयता और सुरक्षा में मास्टर पासवर्ड बटन से एक सेट करें, फिर यहाँ लौटें। मास्टर पासवर्ड ही दूसरे कंप्यूटर पर आपके सहेजे गए खाता पासवर्ड खोलता है; पासकी केवल इसी कंप्यूटर पर ऐप अनलॉक करती है, इसलिए वह अकेले काम नहीं कर सकती।
+unl_status_unsupported = इस कंप्यूटर का Windows पासकी या सुरक्षा कुंजियों का समर्थन नहीं करता, इसलिए यहाँ केवल मास्टर पासवर्ड ही ZBox अनलॉक कर सकता है।
+unl_status_foreign_one = 1 पासकी किसी दूसरे कंप्यूटर की है और यहाँ ZBox अनलॉक नहीं कर सकती। फिर से असाइन करें उन्हें इस कंप्यूटर पर बनी एक पासकी से बदल देता है।
+unl_status_foreign_many = {count} पासकी किसी दूसरे कंप्यूटर की हैं और यहाँ ZBox अनलॉक नहीं कर सकतीं। फिर से असाइन करें उन्हें इस कंप्यूटर पर बनी एक पासकी से बदल देता है।
+unl_status_foreign_one_no_hello = 1 पासकी किसी दूसरे कंप्यूटर की है और यहाँ ZBox अनलॉक नहीं कर सकती। यहाँ Windows Hello सेट नहीं है, इसलिए उन्हें इस कंप्यूटर पर बदला नहीं जा सकता; हटाएँ उन्हें भूल जाता है।
+unl_status_foreign_many_no_hello = {count} पासकी किसी दूसरे कंप्यूटर की हैं और यहाँ ZBox अनलॉक नहीं कर सकतीं। यहाँ Windows Hello सेट नहीं है, इसलिए उन्हें इस कंप्यूटर पर बदला नहीं जा सकता; हटाएँ उन्हें भूल जाता है।
+unl_status_no_hello = इस कंप्यूटर पर Windows Hello सेट नहीं है, इसलिए यहाँ पासकी नहीं जोड़ी जा सकती। सुरक्षा कुंजी फिर भी जोड़ी जा सकती है।
+unl_status_none_registered = अभी कोई अनलॉक विधि पंजीकृत नहीं है।
+unl_status_add_cancelled_passkey = पासकी जोड़ना रद्द किया गया।
+unl_status_add_cancelled_key = सुरक्षा कुंजी जोड़ना रद्द किया गया।
+unl_status_added = जोड़ा गया: {name}।
+unl_status_reassign_cancelled = फिर से असाइन करना रद्द किया गया। कुछ नहीं बदला।
+unl_status_reassigned = {name} जोड़ा गया और दूसरे कंप्यूटरों की {count} भूल गए।
+unl_status_test_cancelled = जाँच रद्द की गई।
+unl_status_removed = हटाया गया।
+unl_remove_warning_last = {name} हटाएँ?\n\nयह पंजीकृत एकमात्र अनलॉक विधि है और कोई मास्टर पासवर्ड सेट नहीं है, इसलिए ऐप लॉक चालू होने पर ZBox अनलॉक करने के लिए कुछ नहीं बचेगा। आपको बाहर रखने के बजाय लॉक छोड़ दिया जाता है, पर तब ZBox बिना लॉक के खुलेगा।
+unl_remove_warning = {name} हटाएँ? ZBox इसे अब स्वीकार नहीं करेगा।
+ab_col_email = ईमेल
+ab_col_name = नाम
+ab_col_phone = फ़ोन
+ab_no_contacts = अभी कोई संपर्क नहीं।
+acct_auto_check = नए संदेशों की अपने आप जाँच करें
+acct_note_auto_check = बंद: ZBox अपने आप इस खाते से कभी संपर्क नहीं करता -- न नए मेल पर नज़र, न समय-निर्धारित रीफ़्रेश, न पृष्ठभूमि डाउनलोड -- इसलिए कोई अविश्वसनीय सर्वर दूसरे खातों को धीमा नहीं कर सकता। इसका डाउनलोड किया गया मेल फिर भी खुलता है, और रीफ़्रेश (F5), भेजना और हटाना फिर भी सर्वर तक पहुँचते हैं। उपकरण मेनू या खाते के संदर्भ मेनू में स्वचालित जाँच रोकें के समान।
+bl_day_ago = 1 दिन पहले
+bl_days_ago = {days} दिन पहले
+bl_label_blocklists = ब्लॉकलिस्ट
+bl_label_phishing = फ़िशिंग सूची
+bl_last_failed = पिछला प्रयास विफल रहा: %s
+bl_not_downloaded = अभी डाउनलोड नहीं हुई।
+bl_save_failed = %s डाउनलोड हुई पर सहेजी नहीं जा सकी: %s
+bl_seed_only = अंतर्निहित सूची से %s डोमेन। अभी तक इंटरनेट से कभी अपडेट नहीं हुई।
+bl_some_failed = कुछ स्रोत विफल रहे: %s
+bl_some_unreachable = कुछ स्रोतों तक नहीं पहुँचा जा सका: %s
+bl_status_line = %s डोमेन। पिछला अपडेट %s।
+bl_up_to_date = %s पहले से अद्यतन है।
+bl_update_failed = %s अपडेट नहीं हो सकी: %s
+bl_updated = %s अपडेट हुई: %s डोमेन।
+cc_age_choice = %s पुराना हर संदेश कैश
+cc_auto_button = स्वचालित सफ़ाई: %s से पुराने कैश संदेश...
+comp_btn_discard = &त्यागें
+comp_btn_keep_editing = &संपादन जारी रखें
+comp_btn_save_draft = &ड्राफ़्ट सहेजें
+comp_no_account = कोई खाता कॉन्फ़िगर नहीं
+comp_saving_draft = ड्राफ़्ट सहेजा जा रहा है…
+comp_this_message = यह संदेश
+comp_unsent_save_q = बंद करने से पहले %s को ड्राफ़्ट के रूप में सहेजें?
+comp_unsent_tray_q = ZBox के ट्रे में जाने से पहले %s को ड्राफ़्ट के रूप में सहेजें?
+doc_unreadable = दस्तावेज़ फ़ाइल पढ़ी नहीं जा सकी:
+envlist_all_disabled = हर खाता अक्षम है।
+envlist_col_date = तारीख
+envlist_col_from = प्रेषक
+envlist_col_status = स्थिति
+envlist_col_subject = विषय
+envlist_collapsed = संक्षिप्त (%d)
+envlist_empty = इस फ़ोल्डर में कोई संदेश नहीं।
+envlist_loading = संदेश लोड हो रहे हैं...
+envlist_no_accounts = अभी कोई खाता कॉन्फ़िगर नहीं।
+envlist_no_ignored = इस फ़ोल्डर में कोई अनदेखा थ्रेड नहीं।
+envlist_no_watched = इस फ़ोल्डर में कोई नज़र रखा गया थ्रेड नहीं।
+envlist_select_folder = संदेश लोड करने के लिए एक खाता या फ़ोल्डर चुनें।
+eula_link_0 = Himalaya का लाइसेंस पृष्ठ अपने ब्राउज़र में खोलें
+eula_link_1 = StevenBlack hosts का लाइसेंस पृष्ठ अपने ब्राउज़र में खोलें
+eula_link_2 = EasyList/EasyPrivacy का लाइसेंस पृष्ठ अपने ब्राउज़र में खोलें
+eula_link_3 = Phishing.Database का लाइसेंस पृष्ठ अपने ब्राउज़र में खोलें
+eula_read_note = नीचे का लाइसेंस पढ़ें, तृतीय-पक्ष खंडों सहित। आगे उपलब्ध होने से पहले आपको मैं सहमत हूँ चेक करना होगा। मैं असहमत हूँ ZBox को शुरू किए बिना बंद करता है, और इस बार अब तक जो बना है उसे हटा देता है।
+eula_unreadable = लाइसेंस फ़ाइल पढ़ी नहीं जा सकी:\n%s
+filters_title = फ़िल्टर चलाएँ
+flag_title = संदेश फ़्लैग करें
+folder_type_archive = संग्रह
+folder_type_drafts = ड्राफ़्ट
+folder_type_inbox = इनबॉक्स
+folder_type_junk = जंक
+folder_type_sent = भेजे गए
+folder_type_trash = ट्रैश
+mime_application_json = JSON फ़ाइल
+mime_application_msword = Word दस्तावेज़
+mime_application_octet_stream = बाइनरी फ़ाइल
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel स्प्रेडशीट
+mime_application_vnd_ms_powerpoint = PowerPoint प्रस्तुति
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint प्रस्तुति
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel स्प्रेडशीट
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word दस्तावेज़
+mime_application_xml = XML फ़ाइल
+mime_application_zip = ZIP संग्रह
+mime_audio_mpeg = MP3 ऑडियो
+mime_audio_ogg = OGG ऑडियो
+mime_audio_wav = WAV ऑडियो
+mime_image_bmp = BMP चित्र
+mime_image_gif = GIF चित्र
+mime_image_jpeg = JPEG चित्र
+mime_image_png = PNG चित्र
+mime_image_svg_xml = SVG चित्र
+mime_image_webp = WebP चित्र
+mime_text_csv = CSV फ़ाइल
+mime_text_html = HTML फ़ाइल
+mime_text_plain = पाठ फ़ाइल
+mime_video_mp4 = MP4 वीडियो
+mime_video_x_msvideo = AVI वीडियो
+move_title_junk = जंक के रूप में चिह्नित करें
+move_title_move_to = यहाँ ले जाएँ
+move_title_not_junk = जंक नहीं के रूप में चिह्नित करें
+mp_explain_set = एक मास्टर पासवर्ड सेट है। इसी से यह ZBox फ़ोल्डर किसी दूसरे कंप्यूटर पर अपने सहेजे गए खाता पासवर्ड खोल पाता है।\n\nइसे हटाने के लिए दोनों नए पासवर्ड बॉक्स खाली छोड़ें और ठीक दबाएँ। हटाने से इस कंप्यूटर पर असर नहीं पड़ता, पर यह फ़ोल्डर हर खाते में फिर से साइन इन किए बिना किसी दूसरे कंप्यूटर पर काम नहीं करेगा।
+mp_explain_unset = कोई मास्टर पासवर्ड सेट नहीं है, इसलिए सहेजे गए खाता पासवर्ड केवल इसी कंप्यूटर और इसी Windows खाते पर पढ़े जा सकते हैं। फ़ोल्डर को कहीं और कॉपी करने पर हर खाते को अपने मेल सर्वर में फिर से साइन इन करना होगा।\n\nएक सेट करें और ZBox हर नए कंप्यूटर पर इसे एक बार माँगेगा, फिर वहाँ से सामान्य रूप से अनलॉक होगा। यह कंप्यूटर फिर नहीं पूछेगा।\n\nइसे लिख लें और किसी सुरक्षित जगह रखें। यह कहीं संग्रहीत नहीं होता और वापस नहीं पाया जा सकता: भूल जाने पर हर खाते को अपने मेल सर्वर में फिर से साइन इन करना होगा।
+mp_label_confirm = &नए मास्टर पासवर्ड की पुष्टि करें:
+mp_label_current = &वर्तमान मास्टर पासवर्ड:
+mp_label_master = &मास्टर पासवर्ड:
+mp_label_new = &नया मास्टर पासवर्ड:
+mp_name_confirm = नए मास्टर पासवर्ड की पुष्टि करें
+mp_name_current = वर्तमान मास्टर पासवर्ड
+mp_name_master = मास्टर पासवर्ड
+mp_name_new = नया मास्टर पासवर्ड
+mp_prompt_existing = आपके सहेजे गए खाता पासवर्ड केवल इसी कंप्यूटर पर सुरक्षित हैं। एक मास्टर पासवर्ड सेट करें ताकि ZBox को दूसरे कंप्यूटर पर ले जाने पर भी वे खोले जा सकें।
+mp_prompt_first_run = ZBox आपके खाता पासवर्ड सहेजने वाला है। अभी एक मास्टर पासवर्ड सेट करें ताकि ZBox को दूसरे कंप्यूटर पर ले जाने पर भी वे खोले जा सकें।
+mp_prompt_new_account = ZBox इस खाते का पासवर्ड सहेजने वाला है। पहले एक मास्टर पासवर्ड सेट करें ताकि ZBox को दूसरे कंप्यूटर पर ले जाने पर भी खाता खोला जा सके।
+mp_removed_done = मास्टर पासवर्ड हटाया गया। सहेजे गए पासवर्ड अब केवल इसी कंप्यूटर और इसी Windows खाते पर काम करते हैं।
+mp_set_done = मास्टर पासवर्ड सेट किया गया। यह फ़ोल्डर जिस भी नए कंप्यूटर पर खोला जाएगा वहाँ ZBox इसे एक बार माँगेगा, और उसके बाद सामान्य रूप से अनलॉक होगा।
+mv_body_title = संदेश का मुख्य भाग
+mv_col_format = प्रारूप
+mv_col_name = नाम
+mv_col_size = आकार
+mv_format_unknown = अज्ञात
+mv_size_unknown = अज्ञात आकार
+na_account_settings = खाता और पहचान सेटिंग्स
+na_disable_account = खाता अक्षम करें
+na_edit_signature = हस्ताक्षर संपादित करें
+na_message_filters = संदेश फ़िल्टर
+na_mute_account = खाता म्यूट करें
+na_pause_auto_check = स्वचालित जाँच रोकें
+na_remove_account = खाता हटाएँ
+na_set_default = डिफ़ॉल्ट खाता बनाएँ
+no_offline_copy = %s की कोई ऑफ़लाइन प्रति नहीं है। इसे ऑनलाइन रहते खोलें, या फ़ाइल, ऑफ़लाइन, अभी सिंक करें का उपयोग करें।
+perm_delete_confirm = {msg} यह ट्रैश फ़ोल्डर को छोड़ देता है और इसे पूर्ववत नहीं किया जा सकता।
+perm_delete_many = {count} संदेश स्थायी रूप से हटाएँ?
+perm_delete_one = {count} संदेश स्थायी रूप से हटाएँ?
+preset_note_apple = Apple को ऐप-विशिष्ट पासवर्ड चाहिए।
+preset_note_fastmail = Fastmail को ऐप पासवर्ड चाहिए।
+preset_note_google = Google को आपके सामान्य पासवर्ड के बजाय ऐप पासवर्ड या OAuth2 चाहिए।
+preset_note_proton = ProtonMail को स्थानीय रूप से चलता ProtonMail Bridge ऐप चाहिए।
+preset_note_yahoo = Yahoo को ऐप पासवर्ड चाहिए।
+priv_phishing_not_loaded = फ़िशिंग सूची: अभी लोड नहीं हुई। ये नियम पहली बार चालू होने और ZBox के ऑनलाइन होने पर यह डाउनलोड होती है।
+priv_phishing_prefix = फ़िशिंग सूची:
+priv_status_unavailable = ब्लॉकलिस्ट की स्थिति उपलब्ध नहीं है।
+rdr_load_failed = संदेश लोड नहीं हो सका।\n\n{message}
+rdr_loading = संदेश लोड हो रहा है...
+rdr_select_message = यहाँ पढ़ने के लिए एक संदेश चुनें।
+set_autosave_off = बंद — हाथ से सहेजने के लिए ड्राफ़्ट सहेजें (Ctrl+S) का उपयोग करें
+set_autosave_seconds = हर {seconds} सेकंड
+set_no_unlock = यहाँ उपयोग योग्य कोई पासकी या सुरक्षा कुंजी नहीं
+set_purge_days = {days} दिनों के बाद
+set_purge_off = बंद — ट्रैश और जंक की कभी स्वतः सफ़ाई नहीं होती
+set_purge_one_day = 1 दिन के बाद
+set_rt_bundled_installed = साथ आया रनटाइम: इंस्टॉल है।
+set_rt_bundled_many = साथ आया रनटाइम: %s इंस्टॉल हैं।
+set_rt_bundled_none = साथ आया रनटाइम: कोई इंस्टॉल नहीं, इसलिए ZBox सिस्टम-व्यापी रनटाइम उपयोग करता है।
+set_rt_bundled_unknown = साथ आया रनटाइम: पता नहीं चल सका।
+set_rt_bundled_ver = साथ आया रनटाइम: संस्करण %s इंस्टॉल है।
+set_rt_system_unknown = सिस्टम-व्यापी रनटाइम: संस्करण पता नहीं चल सका।
+set_rt_system_ver = सिस्टम-व्यापी रनटाइम: संस्करण %s।
+set_unlock_many = यहाँ उपयोग योग्य %d अनलॉक विधियाँ
+set_unlock_unreadable = अनलॉक विधियाँ पढ़ी नहीं जा सकीं
+sig_tab_formatted = फ़ॉर्मेट किया हुआ
+sig_tab_source = HTML स्रोत
+srch_all_accounts = सभी खाते
+srch_all_folders = सभी फ़ोल्डर
+tab_mail = मेल
+tab_new_message = नया संदेश
+tab_saved_message = सहेजा गया संदेश
+title_copy_to_err = यहाँ कॉपी करें
+title_mark_message = संदेश चिह्नित करें
+title_unsent_message = न भेजा गया संदेश
+tree_unified_root = एकीकृत फ़ोल्डर
+unlock_kind_passkey = पासकी (Windows Hello)
+unlock_kind_security_key = सुरक्षा कुंजी
+unlock_prompt_message = Windows आपसे पुष्टि माँग रहा है। उसके संकेत का उत्तर Windows Hello, अपने PIN, या अपनी सुरक्षा कुंजी से दें। Windows का काम पूरा होने पर यह विंडो अपने आप बंद हो जाती है।
+unlock_prompt_title = Windows सुरक्षा
+unlock_registering = यह अनलॉक विधि पंजीकृत की जा रही है
+unlock_the_passkey = पासकी
+unlock_the_security_key = सुरक्षा कुंजी
+wildcard_eml = ईमेल फ़ाइलें (*.eml)|*.eml|सभी फ़ाइलें (*.*)|*.*
+wildcard_export = ZBox निर्यात (*.json)|*.json
+wiz_not_supported = समर्थित नहीं: {name}। {note} यह खाता ZBox में नहीं जोड़ा जा सकता।
+stock_apply = &लागू करें
+stock_cancel = रद्द करें
+stock_close = &बंद करें
+stock_help = &सहायता
+stock_no = &नहीं
+stock_ok = ठीक
+stock_yes = &हाँ
+wiz_btn_back = < पीछे
+wiz_btn_finish = समाप्त
+wiz_btn_next = आगे >
+acct_unsaved_q = इस खाते में किए गए बदलाव सहेजें?
+btn_save = सहेजें
+spell_add_to_dictionary = शब्दकोश में जोड़ें
+spell_no_suggestions = कोई सुझाव नहीं
+title_signature_for = हस्ताक्षर: {account}
+title_mark_folder_read = फ़ोल्डर को पढ़ा हुआ चिह्नित करें
+title_update_available = ZBox अपडेट
+update_available = ZBox {new} उपलब्ध है। आपके पास {current} है।
+upd_notes_label = रिलीज़ नोट्स:
+upd_no_notes = कोई रिलीज़ नोट्स नहीं।
+upd_notes_name = रिलीज़ नोट्स
+upd_update_now = हाँ, अभी अपडेट करें
+upd_remind_later = बाद में याद दिलाएँ
+title_update_download = ZBox अपडेट डाउनलोड हो रहा है
+upd_downloading = ZBox {version} डाउनलोड हो रहा है...
+upd_progress_name = डाउनलोड की प्रगति
+upd_cancel = रद्द करें
+upd_cancelling = रद्द किया जा रहा है...
+set_updates_label = अपडेट:
+set_update_auto = अपडेट की अपने-आप जाँच करें
+set_update_mode_label = अपडेट मिलने पर:
+set_update_ask = मुझसे पूछें
+set_update_silent = चुपचाप डाउनलोड और इंस्टॉल करें
+set_update_note = ZBox दिन में अधिकतम एक बार, केवल निष्क्रिय रहते हुए, GitHub पर नई रिलीज़ खोजता है और अपनी संस्करण संख्या के अलावा कुछ नहीं भेजता। मुझसे पूछें नया संस्करण और उसके रिलीज़ नोट्स दिखाता है, साथ में हाँ, अभी अपडेट करें और बाद में याद दिलाएँ। चुपचाप डाउनलोड और इंस्टॉल करें अपडेट को निष्क्रिय समय में लाता है और अगली बार ZBox से पूरी तरह बाहर निकलने पर इंस्टॉल करता है, आपके काम करते समय कभी नहीं। अपडेट केवल ZBox की अपनी प्रोग्राम फ़ाइलें बदलता है: आपके खाते, पासवर्ड, सेटिंग्स, मेल, लॉग, ध्वनि थीम और आपकी जोड़ी गई कोई भी भाषा कभी नहीं छुई जाती, और पिछला संस्करण रखा जाता है और नया शुरू न होने पर अपने-आप वापस लाया जाता है। सहायता, अपडेट में हाथ से अपडेट करने के लिए अभी अपडेट जाँचें और रिलीज़ पेज भी हैं।
+set_update_check_now = अभी जाँचें
+mv_attachment_button = {filename} ({format})
+att_open = खोलें
+att_save = सहेजें...
+att_save_all = सभी अनुलग्नक सहेजें
+title_save_attachment = अनुलग्नक सहेजें
+title_full_headers = पूरे हेडर
+hdr_copy_all = सभी कॉपी करें
+acct_identity_own_signature = इसका अपना हस्ताक्षर उपयोग करें
+acct_identity_own_reply_to = इसका अपना जवाब-पता उपयोग करें
+acct_identity_reply_to = जवाब-पता
+acct_identity_always_cc = इन पतों को हमेशा Cc करें
+acct_identity_cc = Cc पते
+acct_identity_always_bcc = इन पतों को हमेशा Bcc करें
+acct_identity_bcc = Bcc पते
+acct_identity_own_folders = इसके अपने ड्राफ्ट और भेजे गए फ़ोल्डर उपयोग करें
+acct_identity_drafts = ड्राफ्ट फ़ोल्डर
+acct_identity_sent = भेजे गए फ़ोल्डर
+acct_identity_own_smtp = इसका अपना निर्गामी सर्वर उपयोग करें
+acct_identity_smtp_login = निर्गामी लॉगिन नाम
+acct_identity_smtp_password = निर्गामी पासवर्ड
+acct_identity_test_smtp = निर्गामी सर्वर जाँचें
+acct_identity_note_smtp = इस पहचान के ईमेल पते से साइन इन करने के लिए लॉगिन नाम खाली छोड़ें। भेजी गई प्रतियाँ इस खाते के भेजे गए फ़ोल्डर में जाती हैं, या इस पहचान का अपना भेजे गए फ़ोल्डर होने पर उसमें।
+identity_field_required = {field} भरें, या इसके बॉक्स से चिह्न हटाएँ।
+identity_field_invalid = {field} में एक अमान्य पता है।
+identity_folders_required = एक ड्राफ्ट फ़ोल्डर, एक भेजे गए फ़ोल्डर या दोनों चुनें, या उनके बॉक्स से चिह्न हटाएँ।
+identity_password_required = निर्गामी पासवर्ड दर्ज करें।
+identity_smtp_testing = निर्गामी सर्वर जाँचा जा रहा है।
+identity_smtp_ok = निर्गामी सर्वर ने साइन-इन स्वीकार किया।
+identity_smtp_failed = निर्गामी सर्वर की जाँच विफल रही।\n\n{error}
+set_bare_keys_note_move = M और C चयनित संदेशों के लिए फ़ोल्डरों वाले «यहाँ ले जाएँ» और «यहाँ कॉपी करें» मेनू खोलते हैं, और Shift+M एक बॉक्स खोलता है जिसमें फ़ोल्डर के नाम का हिस्सा लिखकर उन्हें वहाँ ले जाया जाता है। इसे बंद करने पर M और C भी पहले-अक्षर नेविगेशन पर लौट आते हैं।
+folder_search_filter = फ़ोल्डर के नाम में है
+folder_search_list = मेल खाते फ़ोल्डर
+folder_search_no_match = इस नाम से कोई फ़ोल्डर मेल नहीं खाता।
+wiz_signin_method = साइन-इन का तरीका
+wiz_method_password = पासवर्ड
+wiz_method_microsoft = Microsoft खाता (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft साइन-इन। Outlook.com, Hotmail, Live और Microsoft 365 की सर्वर सेटिंग्स भर दी गई हैं।
+wiz_welcome_notice = Gmail। आपका सामान्य Google पासवर्ड अस्वीकार होगा, पर ऐप पासवर्ड काम करता है। पहले दो-चरणीय सत्यापन चालू होना चाहिए। नीचे का बटन Google के निर्देश खोलता है।\n\nOutlook.com, Hotmail, Live और Microsoft 365। ये आपके Microsoft खाते से साइन इन करते हैं। लॉगिन पेज पर Microsoft खाता चुनें, फिर ब्राउज़र से या कोड से साइन इन करें।\n\nदूसरे प्रदाता। सामान्य पासवर्ड या ऐप पासवर्ड आम तौर पर काम करता है, और आपके प्रदाता के सहायता पृष्ठों में सर्वर सेटिंग्स दी होती हैं।
+preset_note_outlook = Outlook.com, Hotmail, Live और MSN खाते Microsoft खाते से साइन इन करते हैं। लॉगिन पेज पर साइन-इन के तरीके के रूप में Microsoft खाता चुनें।
+ms_status_name = Microsoft साइन-इन की स्थिति
+ms_browser_button = ब्राउज़र से साइन इन करें
+ms_code_button = कोड से साइन इन करें
+ms_copy_code = कोड कॉपी करें
+ms_open_page = साइन-इन पेज खोलें
+ms_stop = प्रतीक्षा रोकें
+ms_not_configured = ZBox की इस प्रति में Microsoft साइन-इन सेट नहीं है।
+ms_not_signed_in = अभी साइन इन नहीं किया गया है। ब्राउज़र से, या किसी भी डिवाइस पर कोड से साइन इन करें।
+ms_signed_in = {address} के रूप में साइन इन किया गया।
+ms_signed_in_plain = साइन इन किया गया।
+ms_needs_sign_in = इस खाते के लिए फिर से Microsoft साइन-इन ज़रूरी है। ब्राउज़र से, या किसी भी डिवाइस पर कोड से साइन इन करें।
+ms_reason_cancelled = साइन इन रोक दिया गया।
+ms_reason_timeout = समय पर कोई उत्तर नहीं आया।
+ms_reason_denied = पहुँच की अनुमति नहीं दी गई।
+ms_reason_expired = कोड की समय-सीमा समाप्त हो गई। नया कोड माँगें।
+ms_reason_network = Microsoft तक नहीं पहुँचा जा सका। कनेक्शन जाँचें और फिर से कोशिश करें।
+ms_reason_server = Microsoft ने कहा: {detail}
+ms_page_done = साइन इन हो गया। आप यह पेज बंद करके ZBox पर लौट सकते हैं।
+ms_page_failed = साइन-इन पूरा नहीं हुआ। विवरण के लिए ZBox पर लौटें।
+ms_browser_waiting = आपका ब्राउज़र Microsoft का साइन-इन पेज दिखा रहा है। वहाँ साइन इन पूरा करें, फिर ZBox पर लौटें।
+ms_code_asking = Microsoft से साइन-इन कोड माँगा जा रहा है...
+ms_code_waiting = किसी भी डिवाइस पर {address} खोलें और कोड {code} दर्ज करें। जब तक आप साइन इन पूरा नहीं करते, ZBox यहाँ प्रतीक्षा करेगा।
+ms_failed = साइन-इन पूरा नहीं हुआ। {reason}
+ms_code_copied = कोड कॉपी किया गया।
+offline_inbox_only = केवल इनबॉक्स और संग्रह ऑफ़लाइन उपयोग के लिए रखे जाते हैं। {folder} खोलने के लिए ऑनलाइन जाएँ।
+block_sender_rule_name = {sender} को ब्लॉक करें
+title_block_sender = इस प्रेषक को ब्लॉक करें
+title_unblock_sender = इस प्रेषक को अनब्लॉक करें
+set_clear_inbox_cache = इनबॉक्स से हटने पर संदेश कैश साफ़ करें
+set_clear_inbox_cache_note = चालू होने पर, कोई संदेश इनबॉक्स छोड़ते ही उसकी ऑफ़लाइन प्रति और सहेजी गई सामग्री हटा दी जाती है, तब भी जब उसे कहीं और, जैसे आपके फ़ोन पर, हटाया या ले जाया गया हो, ताकि वह कभी वहाँ न दिखे जहाँ वह अब नहीं है। केवल इनबॉक्स ये फ़ाइलें रखता है; बाकी हर फ़ोल्डर हमेशा सर्वर से पढ़ा जाता है।
+empty_trash_all_confirm = सभी खातों के ट्रैश के सभी संदेश स्थायी रूप से हटाएँ?\n\nइसे पूर्ववत नहीं किया जा सकता।
+
+[errors]
+language_restart_failed = ZBox अपने आप फिर से शुरू नहीं हो सका:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} के लिए कोई मेल क्लाइंट नहीं खोला जा सका।
+
+wizard_test_failed = कनेक्शन विफल रहा:\n\n{error}
+
+contacts_import_unreadable = वह फ़ाइल पढ़ी नहीं जा सकी।\n\n{error}
+contacts_export_unwritable = वह फ़ाइल लिखी नहीं जा सकी।\n\n{error}
+
+attach_unreadable = अटैचमेंट {path} पढ़ा नहीं जा सका:\n{error}
+send_failed = संदेश नहीं भेजा जा सका।\n\n{error}
+draft_attach_unreadable = अटैचमेंट {path} पढ़ा नहीं जा सका:\n{error}\n\nड्राफ़्ट नहीं सहेजा गया।
+draft_save_failed = ड्राफ़्ट नहीं सहेजा जा सका।\n\n{error}
+
+clipboard_unavailable = क्लिपबोर्ड नहीं खोला जा सका।
+open_link_failed = इसके लिए आपका ब्राउज़र नहीं खोला जा सका:\n{url}
+
+master_password_mismatch = दोनों नए मास्टर पासवर्ड बॉक्स मेल नहीं खाते।
+master_password_required = एक मास्टर पासवर्ड दर्ज करें, या रद्द करें दबाएँ।
+master_password_not_set = मास्टर पासवर्ड सेट नहीं हो सका: {error}
+master_password_not_here = मास्टर पासवर्ड यहाँ से नहीं बदला जा सकता।
+
+attachment_save_failed = अटैचमेंट नहीं सहेजा जा सका।\n\n{error}
+attachments_save_failed = अटैचमेंट नहीं सहेजे जा सके।\n\n{error}
+print_failed = संदेश प्रिंट नहीं हो सका। जाँचें कि कोई प्रिंटर कॉन्फ़िगर है।
+print_preview_failed = प्रिंट पूर्वावलोकन नहीं खुल सका। जाँचें कि कोई प्रिंटर कॉन्फ़िगर है।
+
+related_search_failed = संबंधित संदेश नहीं खोजे जा सके।\n\n{error}
+search_failed = खोज विफल रही।\n\n{error}
+
+unlock_methods_no_config_folder = ZBox को अपना कॉन्फ़िगरेशन फ़ोल्डर नहीं मिला, इसलिए यहाँ अनलॉक विधियाँ प्रबंधित नहीं की जा सकतीं।
+shortcut_no_folder = ZBox अपना फ़ोल्डर पता नहीं कर सका, इसलिए यहाँ से शॉर्टकट नहीं बनाया जा सकता।
+shortcut_failed_settings = डेस्कटॉप शॉर्टकट नहीं बनाया जा सका:\n\n{error}
+
+unlock_method_failed = {what} ने काम नहीं किया।\n\n{error}
+unlock_check_failed = मास्टर पासवर्ड जाँचा नहीं जा सका।\n\n{error}
+unlock_password_wrong = वह मास्टर पासवर्ड सही नहीं है।
+unlock_add_failed = {what} नहीं जोड़ी जा सकी।\n\n{error}
+unlock_passkey_setup_failed = इस कंप्यूटर पर पासकी सेट नहीं हो सकी, इसलिए कुछ नहीं बदला।\n\n{error}
+unlock_method_test_failed = उस विधि ने काम नहीं किया।\n\n{error}
+
+account_list_unreadable = ZBox आपकी खाता सूची नहीं खोल सका।\n\n{error}\n\nकोई खाता लोड नहीं हुआ है, और फ़ाइल नहीं बदली गई है, इसलिए कुछ नहीं खोया। जब तक इसे पढ़ा न जा सके, खाते जोड़ना, संपादित करना और हटाना अस्वीकार किया जाता है।
+account_list_no_accounts = ZBox इस सत्र में आपकी खाता सूची नहीं खोल सका ({error}), इसलिए चुनने के लिए कोई खाता नहीं है। कुछ नहीं खोया और कुछ नहीं बदला। ZBox बंद करके फिर से शुरू करें, और पूछे जाने पर अपना मास्टर पासवर्ड दर्ज करें।
+open_message_failed = संदेश नहीं खोला जा सका।\n\n{error}
+filters_list_failed = {folder} के संदेश सूचीबद्ध नहीं हो सके।\n\n{error}
+filters_move_failed = फ़िल्टर किए गए संदेश नहीं ले जाए जा सके।\n\n{error}
+cache_clear_failed = कैश साफ़ नहीं हो सका।\n\n{error}
+folder_create_failed = फ़ोल्डर नहीं बनाया जा सका।\n\n{error}
+folder_rename_failed = फ़ोल्डर का नाम नहीं बदला जा सका।\n\n{error}
+folder_delete_failed = फ़ोल्डर नहीं हटाया जा सका।\n\n{error}
+folder_subscribe_failed = फ़ोल्डर की सदस्यता नहीं ली जा सकी।\n\n{error}
+folder_unsubscribe_failed = फ़ोल्डर की सदस्यता नहीं छोड़ी जा सकी।\n\n{error}
+saved_open_failed = फ़ाइल नहीं खोली जा सकी।\n\n{error}
+saved_parse_failed = इस फ़ाइल को ईमेल संदेश के रूप में पढ़ा नहीं जा सका।\n\n{error}
+save_file_failed = फ़ाइल नहीं सहेजी जा सकी।\n\n{error}
+save_fetch_failed = सहेजने के लिए संदेश प्राप्त नहीं हो सका।\n\n{error}
+empty_trash_failed = ट्रैश खाली नहीं हो सका।\n\n{error}
+empty_junk_failed = जंक खाली नहीं हो सका।\n\n{error}
+export_write_failed = निर्यात फ़ाइल नहीं लिखी जा सकी।\n\n{error}
+import_read_failed = इस फ़ाइल को ZBox निर्यात के रूप में पढ़ा नहीं जा सका।\n\n{error}
+import_not_export = यह फ़ाइल ZBox निर्यात जैसी नहीं लगती।\n\n{error}
+search_open_failed = यह संदेश नहीं खोला जा सका।
+related_load_failed = यह संदेश लोड नहीं हो सका।\n\n{error}
+reply_load_failed = उत्तर देने के लिए संदेश लोड नहीं हो सका।\n\n{error}
+forward_load_failed = अग्रेषित करने के लिए संदेश लोड नहीं हो सका।\n\n{error}
+action_failed = यह क्रिया पूरी नहीं हो सकी।\n\n{error}
+undo_failed = {label} पूर्ववत नहीं हो सका।\n\n{error}
+copy_failed = संदेश कॉपी नहीं हो सका।\n\n{error}
+delete_failed = संदेश नहीं हटाया जा सका।\n\n{error}
+archive_failed = संदेश संग्रहित नहीं हो सका।\n\n{error}
+master_password_not_changed = मास्टर पासवर्ड नहीं बदला जा सका: {error}
+shortcut_failed_startup = डेस्कटॉप शॉर्टकट नहीं बनाया जा सका:\n\n{error}\n\nZBox शुरू होता रहेगा। आप बाद में सेटिंग्स से फिर प्रयास कर सकते हैं।
+account_locked_action = ZBox %s नहीं कर सकता। इस सत्र में खाता सूची नहीं खोली जा सकी (%s), और कुछ नहीं बदला गया। ZBox बंद करके फिर से शुरू करें, और पूछे जाने पर अपना मास्टर पासवर्ड दर्ज करें।
+send_tls_mismatch = संदेश नहीं भेजा जा सका। आउटगोइंग सर्वर ने बिना एन्क्रिप्शन के उत्तर दिया, इसलिए आउटगोइंग एन्क्रिप्शन पोर्ट से मेल नहीं खाता। टूल्स, खाता और पहचान सेटिंग्स में पोर्ट 587 के लिए STARTTLS या पोर्ट 465 के लिए SSL/TLS चुनें, फिर दोबारा भेजें।\n\n{error}
+mark_folder_read_failed = फ़ोल्डर को पढ़ा हुआ चिह्नित नहीं किया जा सका।\n\n{error}
+update_failed = अपडेट डाउनलोड नहीं हो सका, इसलिए कुछ नहीं बदला गया।\n\n{error}
+update_rolled_back = अपडेट शुरू नहीं हो सका, इसलिए पिछला संस्करण वापस लाया गया।
+attachment_open_failed = अनुलग्नक नहीं खुल सका।\n\n{error}
+headers_failed = संदेश के हेडर लोड नहीं हो सके।\n\n{error}
+wizard_ms_sign_in_first = आगे बढ़ने से पहले Microsoft से साइन इन करें। इस पेज के दो साइन-इन बटनों में से एक का उपयोग करें।
+wizard_provider_unsupported = ZBox इस प्रदाता पर साइन इन नहीं कर सकता। इस पेज का नोट कारण बताता है। वापस जाकर कोई दूसरा ईमेल पता उपयोग करें, या रद्द करें।
+acct_ms_sign_in_first = सहेजने से पहले Microsoft से साइन इन करें, या साइन-इन के तरीके के रूप में पासवर्ड चुनें।
+ms_sign_in_again = {account} के लिए फिर से Microsoft साइन-इन ज़रूरी है। खाता और पहचान सेटिंग्स खोलें और वहाँ साइन इन करें।
+empty_trash_all_failed = इनका ट्रैश खाली नहीं किया जा सका: {accounts}
+
+[help]

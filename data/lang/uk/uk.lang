@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Українська
+code = uk
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Повідомлення надіслано.
+draft_saved = Чернетку збережено.
+signature_inserted = Підпис вставлено.
+signature_none = Цей обліковий запис не має підпису.
+signature_saved = Підпис збережено.
+signature_not_saved = Підпис не збережено.
+pasted_as_quotation = Вставлено як цитату.
+clipboard_empty = Буфер обміну порожній.
+word_count = Слів: {words}, символів: {characters}.
+report_copied = Звіт скопійовано.
+compose_tab_needed = Для цієї команди потрібна вкладка створення повідомлення.
+attach_file_instead = Перетягнуті файли не вставляються в текст повідомлення. Щоб надіслати файл, скористайтеся командою Долучити файл.
+
+# Formatting in the message body
+formatting_here = Форматування тут: {formatting}.
+no_formatting_here = Тут немає форматування, звичайний текст.
+
+# Spelling
+nothing_to_check = Немає чого перевіряти.
+no_misspellings = Орфографічних помилок немає.
+spelling_dictionary_unavailable = Словник орфографії недоступний.
+next_misspelling_first = Спершу скористайтеся командою Наступна помилка.
+word_added = {word} додано до словника.
+word_not_added = Не вдалося додати {word}.
+corrections_applied_one = Застосовано 1 виправлення.
+corrections_applied_many = Застосовано виправлень: {count}.
+corrections_applied_partly = Застосовано {applied} з {total} виправлень. Решту відхилено; перегляньте журнал.
+occurrences_replaced_one = Замінено 1 входження.
+occurrences_replaced_many = Замінено входжень: {count}.
+
+# Reading mail
+message_did_not_open = Повідомлення не відкрилося. Сервер не відповів. Натисніть Enter, щоб спробувати ще раз.
+thread_open = У цій розмові: {messages}. Натисніть ще раз, щоб закрити.
+no_thread_selected = Розмову не вибрано.
+thread_watched = Розмова відстежується.
+thread_not_watched = Розмова більше не відстежується.
+thread_ignored = Розмова ігнорується.
+thread_not_ignored = Розмова більше не ігнорується.
+none_found = Нічого не знайдено.
+refreshing_this_folder = Оновлення цієї теки.
+refreshing_all_accounts = Оновлення всіх облікових записів.
+message_view_html = Перегляд повідомлення: HTML (відтворений).
+message_view_text = Перегляд повідомлення: текст.
+html_view_still_loading = Повідомлення ще завантажується. Escape закриває його.
+message_still_opening = Відкриття повідомлення. Сервер працює повільно.
+remote_content_blocked = Віддалений вміст заблоковано.
+remote_content_unblocked = Віддалений вміст розблоковано.
+remote_content_already_showing = Віддалений вміст у цьому повідомленні вже показано.
+archived = Заархівовано.
+copied_to_folder = Скопійовано до {to_folder}.
+deleted_one = Повідомлення остаточно видалено.
+deleted_many = Остаточно видалено повідомлень: {count}.
+trashed_one = Повідомлення переміщено до Смітника.
+trashed_many = Переміщено до Смітника повідомлень: {count}.
+
+# Accounts and new mail
+no_account_yet = Ще немає облікового запису, до якого можна перейти.
+inbox_landed = Вхідні {name}.
+account_enabled = {name} увімкнено.
+auto_check_paused = Автоматичну перевірку для {account} призупинено.
+auto_check_resumed = Автоматичну перевірку для {account} увімкнено.
+account_disabled = {name} вимкнено.
+new_mail_one = 1 нове повідомлення для {name}.
+new_mail_many = Нових повідомлень для {name}: {count}.
+refresh_all_done_one = Оновлено 1 обліковий запис.
+refresh_all_done_many = Оновлено облікових записів: {count}.
+refresh_all_done_failures = Оновлено облікових записів: {count}, не вдалося оновити: {failed}.
+refresh_all_done_failures_one = Оновлено облікових записів: {count}, не вдалося оновити: {failed}.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Адресу скопійовано.
+sender_no_address = {sender}. Немає адреси для копіювання.
+clipboard_not_opened = {sender}. Не вдалося відкрити буфер обміну.
+
+# The signature editor
+signature_page_formatted = Форматований. Саме це буде збережено.
+signature_page_html = Джерело HTML. Саме це буде збережено.
+signature_page_html_still_wins = Форматований. Зберігатиметься й надалі джерело HTML.
+
+# Background work
+phishing_list_updating = Список фішингу оновлюється у фоновому режимі.
+cache_cleared = Очищено файлів кешу: {files}, {size} МБ.
+hotkeys_diagnostic_on = Діагностику гарячих клавіш увімкнено, позначено
+hotkeys_diagnostic_off = Діагностику гарячих клавіш вимкнено, не позначено
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Архівувати
+action_delete = Видалити
+action_delete_permanently = Видалити остаточно
+action_mark_as_junk = Позначити як спам
+action_mark_as_not_junk = Позначити як не спам
+action_move_to = Перемістити до
+action_copy_to = Копіювати до
+action_mark_message = Позначити повідомлення
+action_undo = Скасувати
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Скасовано: {action}.
+undo_done_many = Скасовано: {action} для повідомлень: {count}.
+junk_marked_one = Позначено як спам.
+junk_marked_many = Позначено як спам повідомлень: {count}.
+junk_no_new_sender = Нового відправника не заблоковано: уже заблокований, список розсилки або одна з ваших адрес.
+not_junk_marked_one = Позначено як не спам.
+not_junk_marked_many = Позначено як не спам повідомлень: {count}.
+moved_to_one = Переміщено до {to_folder}.
+moved_to_many = Переміщено до {to_folder} повідомлень: {count}.
+copied_to_many = Скопійовано до {to_folder} повідомлень: {count}.
+marked_read = Позначено як прочитане.
+marked_unread = Позначено як непрочитане.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Скасовано після {completed} з {total}. Успішно: {succeeded}, невдало: {failed}.
+bulk_failed_one = {done} Невдало: {failed} з 1 повідомлення.
+bulk_failed_many = {done} Невдало: {failed} з {total} повідомлень.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Жирний
+format_word_italic = Курсив
+format_word_strike = Закреслений
+format_word_href = Посилання
+format_word_bullet = Маркований список
+format_word_number = Нумерований список
+format_word_quote = Цитата
+format_word_code = Код
+format_word_heading1 = Заголовок
+format_applied = Застосовано: {formatting}.
+format_inserted = Вставлено: {formatting}.
+format_not_available = {formatting} недоступно в тексті звичайного повідомлення.
+format_on = {formatting} увімкнено
+format_off = {formatting} вимкнено
+link_applied = Посилання застосовано.
+link_applied_to_selection = Посилання застосовано до виділення.
+plain_body_formatting = У тексті звичайного повідомлення форматування показано як теги.
+
+# Reaching either end of a thread
+thread_edge_first = Перше повідомлення в цій розмові. Натисніть ще раз, щоб закрити.
+thread_edge_last = Останнє повідомлення в цій розмові. Натисніть ще раз, щоб закрити.
+jump_unified_inbox = Об'єднані вхідні.
+remote_none = У цьому повідомленні немає віддаленого вмісту.
+sender_none = У цього повідомлення немає відправника.
+sender_name_no_address = %s, без адреси
+signature_not_switched = Підпис не змінено. Натисніть Ctrl+Shift+S, щоб вставити підпис цього облікового запису.
+signature_removed_no_signature = Підпис вилучено. У цього облікового запису його немає.
+signature_switched = Підпис змінено на підпис цього облікового запису.
+spell_not_replaced = Не вдалося замінити слово.
+spell_replaced_with = Замінено на {word}.
+folder_marked_read = Позначено як прочитані повідомлень: {count}.
+folder_no_unread = Непрочитаних повідомлень немає.
+threads_all_collapsed = Усі розмови згорнуто.
+threads_all_expanded = Усі розмови розгорнуто.
+upd_percent = {percent} відсотків
+upd_download_done = Завантаження завершено. Підготовка оновлення...
+upd_updated_to = ZBox оновлено до версії {version}.
+header_copied = Скопійовано.
+headers_copied = Усі заголовки скопійовано.
+identity_copies_updated = Копію та приховану копію оновлено для цього профілю.
+signature_switched_identity = Підпис замінено підписом цього профілю.
+signature_removed_identity = Підпис видалено. У цього профілю його немає.
+signature_not_switched_identity = Підпис не змінено. Натисніть Ctrl+Shift+S, щоб вставити підпис цього профілю.
+signature_none_identity = У цього профілю немає підпису.
+move_keys_no_selection = Спершу виберіть повідомлення.
+move_keys_no_folders = Тек для вибору поки немає. Спробуйте ще раз за хвилину.
+block_sender_done_one = Відправника {sender} заблоковано. Нові повідомлення від нього потраплятимуть до кошика.
+block_sender_done_many = Заблоковано відправників: {count}. Їхні нові повідомлення потраплятимуть до кошика.
+block_sender_already = {sender} уже заблоковано.
+block_sender_own = Не заблоковано: це одна з ваших власних адрес.
+block_sender_list_unknown = Не заблоковано: повідомлення надійшло через список розсилки й не вказує відправника. Блокування адреси списку заблокувало б усіх його учасників.
+block_sender_moved = Відправника заблоковано. Переміщено до кошика повідомлень: {count}.
+block_senders_moved = Заблоковано відправників: {senders}. Переміщено до кошика повідомлень: {count}.
+unblock_sender_moved = Відправника розблоковано. Переміщено до «Вхідних» повідомлень: {count}.
+unblock_senders_moved = Розблоковано відправників: {senders}. Переміщено до «Вхідних» повідомлень: {count}.
+unblock_sender_done = Відправника {sender} розблоковано.
+unblock_sender_not_blocked = {sender} не заблоковано.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Введіть щось вище й натисніть Enter або виберіть Шукати.
+search_no_account = Спершу додайте обліковий запис.
+search_no_term = Введіть, що шукати.
+search_running = Пошук...
+search_none = Немає збігів для «{term}».
+search_found_one = 1 збіг для «{term}».
+search_found_many = Збігів для «{term}»: {count}.
+search_failed = Пошук не вдався.
+
+# The related messages tab
+related_running = Пошук...
+related_none = Пов'язаних повідомлень не знайдено.
+related_found_one = Знайдено 1 пов'язане повідомлення.
+related_found_many = Знайдено пов'язаних повідомлень: {count}.
+related_failed = Не вдалося знайти пов'язані повідомлення.
+
+# Writing and sending
+sending_via = Надсилання через {sender}...
+send_failed = Не вдалося надіслати. Подробиці в журналі.
+draft_autosaved = Чернетку збережено автоматично.
+draft_autosave_failed = Не вдалося автоматично зберегти чернетку. Подробиці в журналі.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Віддалений вміст тепер завантажуватиметься для повідомлень від {sender}.
+downloading_attachment = Завантаження {filename}...
+downloading_attachments_one = Завантаження 1 вкладення...
+downloading_attachments_many = Завантаження вкладень: {count}...
+saved_to = Збережено до {folder}
+attachment_download_failed = Не вдалося завантажити вкладення.
+
+# Getting mail onto the screen
+loading_folder = Завантаження {folder} для {account}...
+messages_in_folder = Повідомлень у {folder}: {count}.
+messages_in_folder_cached = Повідомлень у {folder}: {count} (остання синхронізована копія, оновлення...)
+no_offline_copy = Ще немає автономної копії {folder}.
+refresh_failed_cached = Не вдалося оновити {folder}: показано останню синхронізовану копію.
+no_such_folder = Цей обліковий запис не має теки {folder}.
+load_failed = Не вдалося завантажити повідомлення. Подробиці в журналі.
+no_more_to_load = У цій теці більше немає повідомлень для завантаження.
+loading_more = Завантаження інших повідомлень у {folder}...
+more_loaded = Завантажено ще повідомлень: {count}.
+no_more_messages = У цій теці більше немає повідомлень.
+load_more_failed = Не вдалося завантажити більше повідомлень: {error}
+loading_unified = Завантаження об'єднаної теки {folder}...
+messages_in_unified = Повідомлень з усіх облікових записів в об'єднаній теці {folder}: {count}.
+messages_in_unified_cached = Повідомлень в об'єднаній теці {folder}: {count} (остання синхронізована копія, оновлення...)
+auto_purge_done = Автоматичне очищення вилучило старі повідомлення зі Смітника/Спаму: {count}.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Готово.
+opening_message = Відкриття повідомлення...
+opening_message_already = Відкриття повідомлення... (уже завантажується)
+could_not_open_message = Не вдалося відкрити повідомлення.
+could_not_open_that_message = Не вдалося відкрити це повідомлення.
+could_not_load_message = Не вдалося завантажити це повідомлення.
+message_still_loading = Це повідомлення ще завантажується.
+folder_still_loading = Ця тека ще завантажується -- спробуйте ще раз за мить.
+not_in_thread = Це повідомлення не належить до розмови.
+no_longer_in_thread = Цього повідомлення вже немає в розмові.
+thread_position = Повідомлення {position} з {total} у цій розмові.
+thread_finished_one = Розмову прочитано (1 повідомлення).
+thread_finished_many = Розмову прочитано (повідомлень: {count}).
+select_message_first = Спершу виберіть повідомлення.
+conversation_failed = Не вдалося відкрити цю розмову.
+select_message_for_related = Спершу виберіть повідомлення, для якого показати пов'язані.
+looking_for_related = Пошук пов'язаних повідомлень...
+no_threading_headers = У цьому повідомленні немає Message-ID або заголовків розмови для пошуку.
+reply_one_at_a_time = Відповідь працює з одним повідомленням за раз. Виберіть одне повідомлення.
+select_message_to_reply = Спершу виберіть повідомлення для відповіді.
+preparing_reply = Підготовка відповіді...
+reply_load_failed = Не вдалося завантажити оригінальне повідомлення для відповіді.
+select_message_to_forward = Спершу виберіть повідомлення для пересилання.
+preparing_forward = Підготовка повідомлення до пересилання...
+forward_load_failed = Не вдалося завантажити повідомлення для пересилання.
+compose_tab_needed_hint = Для цієї команди потрібна вкладка створення повідомлення. Натисніть Ctrl+N, щоб написати повідомлення.
+open_message_first_view = Спершу відкрийте повідомлення, потім натисніть Ctrl+B, щоб змінити його вигляд.
+open_message_first_remote = Спершу відкрийте повідомлення, потім натисніть Ctrl+Shift+I, щоб завантажити його віддалений вміст.
+
+# Acting on messages
+copying_message = Копіювання повідомлення...
+copy_failed = Не вдалося скопіювати.
+delete_failed = Не вдалося видалити.
+already_in_archive = Уже в Архіві.
+archiving = Архівування...
+archive_failed = Не вдалося заархівувати.
+action_failed = Не вдалося: {action}.
+nothing_to_undo = Немає чого скасовувати.
+undo_failed = Не вдалося скасувати: {action}.
+
+# Views and folders
+folder_pane_all = Панель тек: усі теки.
+folder_pane_unified = Панель тек: об'єднані теки.
+sorted_ascending = Упорядковано за: {field}, за зростанням.
+sorted_descending = Упорядковано за: {field}, за спаданням.
+unified_folders_updated = Об'єднані теки оновлено.
+zoom_reset = Розмір шрифту повідомлення скинуто до типового.
+folder_creating = Створення теки «{folder}»...
+folder_created = Теку «{folder}» створено.
+folder_create_failed = Не вдалося створити теку.
+folder_renaming = Перейменування «{folder}» на «{new_name}»...
+folder_renamed = Теку перейменовано на «{new_name}».
+folder_rename_failed = Не вдалося перейменувати теку.
+folder_deleting = Видалення теки «{folder}»...
+folder_deleted = Теку видалено.
+folder_delete_failed = Не вдалося видалити теку.
+folder_subscribing = Підписування на «{folder}»...
+folder_unsubscribing = Скасування підписки на «{folder}»...
+folder_subscribed = Підписано.
+folder_unsubscribed = Підписку скасовано.
+folder_subscribe_failed = Не вдалося підписатися на теку.
+folder_unsubscribe_failed = Не вдалося скасувати підписку на теку.
+
+# Accounts
+account_not_added = Обліковий запис не додано.
+account_added = Обліковий запис додано: {account}
+account_settings_not_saved = Налаштування облікового запису не збережено.
+account_updated = Обліковий запис оновлено: {account}
+account_not_removed = Обліковий запис не вилучено.
+account_removed = Обліковий запис вилучено.
+account_removed_with_files = Обліковий запис вилучено. Видалено локальних файлів: {count}.
+default_account_failed = Не вдалося встановити типовий обліковий запис.
+default_account_set = {account} тепер типовий обліковий запис.
+auto_check_not_saved = Налаштування автоматичної перевірки не збережено.
+mute_not_saved = Налаштування вимкнення звуку не збережено.
+account_muted = Звук для {account} вимкнено.
+account_unmuted = Звук для {account} увімкнено.
+export_done = Облікові записи ({count}) і налаштування експортовано до {path}.
+import_done = Імпортовано облікові записи ({count}) з {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Фільтри не збережено.
+filters_saved = Фільтри для {account} збережено.
+filters_checking = Перевірка {folder} за вашими фільтрами...
+filters_none_matched = Запустити зараз: жодне повідомлення в {folder} не відповідає увімкненим правилам.
+filters_run_failed = Не вдалося запустити фільтри.
+filters_moving = Переміщення відфільтрованих повідомлень: {count}...
+filters_move_failures = Фільтри: не вдалося перемістити повідомлень: {count}.
+filters_moved = Фільтри перемістили повідомлення з {folder}: {count}.
+filters_move_failed = Не вдалося перемістити відфільтровані повідомлення.
+cache_not_cleared = Кеш не очищено.
+auto_cache_cleanup = Автоматичне очищення кешу: повідомлення, старші за {age}.
+phishing_update_failed = Не вдалося оновити список фішингу: {error}
+blocklist_update_failed = Не вдалося оновити список блокування: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Спершу відкрийте повідомлення, потім скористайтеся командою Зберегти як.
+saving_message = Збереження повідомлення...
+save_file_failed = Не вдалося зберегти файл.
+save_fetch_failed = Не вдалося отримати повідомлення для збереження.
+open_message_first_print = Спершу відкрийте повідомлення, потім скористайтеся командою Друк.
+open_message_first_preview = Спершу відкрийте повідомлення, потім скористайтеся командою Попередній перегляд.
+refreshing_accounts = Оновлення облікових записів: {count}...
+emptying_trash = Очищення Смітника для {account}...
+trash_already_empty = Смітник уже був порожній.
+trash_emptied = Смітник очищено: остаточно видалено повідомлень: {count}.
+empty_trash_failed = Не вдалося очистити Смітник.
+emptying_junk = Очищення Спаму для {account}...
+junk_already_empty = Спам уже був порожній.
+junk_emptied = Спам очищено: остаточно видалено повідомлень: {count}.
+junk_emptied_prefix = Спам очищено:
+junk_part_purged = остаточно видалено: {count}
+junk_part_in_trash = переміщено до Смітника, але видалення не підтверджено: {count}, перевірте Смітник
+junk_part_not_moved = не переміщено до Смітника, досі в Спамі: {count}
+empty_junk_failed = Не вдалося очистити Спам.
+back_online = Знову в мережі.
+offline_sync_running = Синхронізація {account} для автономного використання...
+offline_sync_failed = Не вдалося виконати автономну синхронізацію: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Спершу виберіть або відкрийте повідомлення.
+select_or_open_message_ctrl_u = Спершу виберіть або відкрийте повідомлення, потім натисніть Ctrl+U.
+no_sender_address = У цьому повідомленні немає адреси відправника, яку можна додати.
+contact_added = {contact} додано до адресної книги.
+contact_already_there = {contact} уже є в адресній книзі.
+privacy_saved = Налаштування приватності збережено. Відкрийте повідомлення знову, щоб їх застосувати.
+message_font_size = Розмір шрифту повідомлення: {size} пт.
+
+# Deleting and moving several messages
+deleting_one = Остаточне видалення повідомлення
+deleting_many = Остаточне видалення повідомлень: {count}
+trashing_one = Переміщення повідомлення до Смітника
+trashing_many = Переміщення повідомлень до Смітника: {count}
+undo_partly_restored = Скасовано: {action}, але не вдалося відновити повідомлень: {count} -- їх могли знову перемістити, видалити або термін їх дії минув.
+moves_report = {action}: переміщено {moved} з {total} повідомлень.
+moves_report_failed = Не переміщено, досі в початковій теці: {count}.
+
+tray_tooltip_one = ZBox — 1 непрочитане повідомлення
+tray_tooltip_many = ZBox — непрочитаних повідомлень: {count}
+account_unreachable = Не вдалося з'єднатися з {account}. Автоматичну перевірку цього облікового запису призупинено на {minutes} хв.
+bulk_copy_failed = Не вдалося скопіювати повідомлення.
+bulk_copy_failed_status = Не вдалося скопіювати.
+bulk_loading_archive = Повідомлення ще завантажуються -- спробуйте заархівувати за мить.
+bulk_loading_delete = Повідомлення ще завантажуються -- спробуйте видалити за мить.
+bulk_loading_flag = Повідомлення ще завантажуються -- спробуйте позначити зірочкою за мить.
+bulk_loading_generic = Повідомлення ще завантажуються -- спробуйте ще раз за мить.
+bulk_none = Повідомлення не вибрано.
+bulk_none_archive = Не вибрано повідомлення для архівування.
+bulk_none_delete = Не вибрано повідомлення для видалення.
+bulk_none_junk = Не вибрано повідомлення, щоб позначити як спам.
+bulk_none_not_junk = Не вибрано повідомлення, щоб позначити як не спам.
+delete_refused_still = Сервер відмовився видаляти; повідомлення досі в {folder}.
+delete_refused_trash = Воно в Смітнику, але сервер відмовився видаляти його остаточно.
+delete_resume_failed = Не вдалося видалити повідомлення з попереднього видалення: {count}.
+done_perm_delete_one = Повідомлення остаточно видалено.
+done_trash_one = Повідомлення переміщено до Смітника.
+filters_applied = Фільтри застосовано до повідомлень у {folder}: {count}.
+filters_failed = Не вдалося запустити фільтри.
+filters_running = Виконання фільтрів у {folder}
+flag_failed = Не вдалося оновити зірочки.
+flag_updated = Зірочки оновлено.
+folder_verb_subscribing = Підписування на
+folder_verb_unsubscribing = Скасування підписки на
+mark_read_failed = Не вдалося позначити повідомлення як прочитані.
+mark_unread_failed = Не вдалося позначити повідомлення як непрочитані.
+notify_new_mail_body = Нових {noun} для {name}: {count}.
+notify_new_mail_title = Нова пошта
+notify_noun_many = повідомлень
+notify_noun_one = повідомлення
+report_done = {verb}: {done} з {count} повідомлень.
+report_verb_deleted = Видалено
+report_verb_permanent = Остаточно видалено
+running_copy_many = Копіювання повідомлень: {count}
+running_copy_one = Копіювання повідомлення
+running_junk_many = Позначення як спам повідомлень: {count}
+running_junk_one = Позначення як спам
+running_move_many = Переміщення повідомлень: {count}
+running_move_one = Переміщення
+running_not_junk_many = Позначення як не спам повідомлень: {count}
+running_not_junk_one = Позначення як не спам
+running_perm_delete_one = Остаточне видалення повідомлення...
+running_read_many = Позначення як прочитані повідомлень: {count}
+running_read_one = Позначення як прочитане
+running_trash_one = Переміщення повідомлення до Смітника...
+running_unread_many = Позначення як непрочитані повідомлень: {count}
+running_unread_one = Позначення як непрочитане
+settings_saved_no_startup = Налаштування збережено. Не вдалося оновити запис автозапуску Windows.
+settings_saved_status = Налаштування збережено.
+spam_blocked_sender = Заблокований відправник
+spam_possible_phishing = Можливий фішинг
+undo_running_many = Скасування: {action} (повідомлень: {count})
+undo_running_one = Скасування: {action}
+mark_folder_read_failed = Не вдалося позначити теку як прочитану.
+marking_folder_read = Позначення теки як прочитаної...
+upd_ready_at_exit = Оновлення вже завантажено. Його буде встановлено під час виходу з ZBox.
+upd_checking = Перевірка оновлень...
+upd_up_to_date = Встановлено останню версію ZBox.
+upd_available_source = Доступна версія ZBox {version}. Ця копія запущена з вихідного коду, тому оновіть її за допомогою git.
+upd_check_failed = Не вдалося перевірити оновлення: {error}
+opening_attachment = Відкривається {filename}...
+loading_headers = Завантаження заголовків...
+offline_inbox_only = Для роботи без мережі зберігаються лише папки «Вхідні» і «Архів».
+offline_sync_done_inbox = Синхронізовано повідомлень із «Вхідних» і «Архіву» для роботи без мережі: {count}.
+working_offline = Автономна робота: показано останню синхронізовану копію Вхідних/Надісланих/Чернеток.
+emptying_trash_all = Очищення кошика всіх облікових записів...
+trash_emptied_all = Кошик очищено в облікових записах: {accounts}. Остаточно видалено повідомлень: {count}.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Файл
+bar_edit = &Зміни
+bar_view = &Вигляд
+bar_message = &Повідомлення
+bar_compose = &Створення
+bar_tools = &Інструменти
+bar_help = &Довідка
+
+# File
+file_new = Створити
+file_new_message = Повідомлення
+file_new_account = Обліковий запис пошти...
+file_open_saved_message = Відкрити збережене повідомлення...
+file_close = Закрити
+file_save_message_as = Зберегти повідомлення як...
+file_get_new_for = Отримати нові повідомлення для
+file_get_new_all = Усі облікові записи
+file_get_new_current = Поточний обліковий запис
+file_offline = Автономно
+file_work_offline = Працювати автономно
+file_sync_now = Синхронізувати зараз
+file_print = Друк...
+file_print_preview = Попередній перегляд...
+file_exit = Вихід
+
+# Edit
+edit_undo = Скасувати
+edit_select_all = Вибрати все
+edit_find_messages = Знайти повідомлення...
+
+# Message
+message_reply = Відповісти
+message_reply_all = Відповісти всім
+message_forward = Переслати
+message_archive = Архівувати
+message_delete = Видалити
+message_delete_permanently = Видалити остаточно
+message_mark = Позначити
+mark_read = Як прочитане
+mark_unread = Як непрочитане
+mark_flagged = Зірочкою
+mark_junk = Як спам
+mark_not_junk = Як не спам
+message_watch_thread = Відстежувати розмову
+message_ignore_thread = Ігнорувати розмову
+message_open_conversation = Відкрити повідомлення в розмові
+message_show_related = Показати пов'язані повідомлення
+message_add_sender_to_address_book = Додати відправника до адресної книги
+message_announce_sender = Озвучити відправника
+message_announce_copy_sender = Озвучити відправника й копіювати адресу
+
+# View
+view_folders = Теки
+folders_all = Усі
+folders_unified = Об'єднані
+folders_jump_inbox = Перейти до списку повідомлень у Вхідних
+folders_configure_unified = Налаштувати об'єднані теки...
+view_sort_by = Упорядкувати за
+sort_date = Дата
+sort_subject = Тема
+sort_from = Від
+sort_descending = За спаданням (нові спершу)
+sort_ascending = За зростанням (старі спершу)
+view_threads = Розмови
+threads_all = Усі
+threads_watched = Відстежувані розмови
+threads_ignored = Ігноровані розмови
+threads_expand_all = Розгорнути всі розмови
+threads_collapse_all = Згорнути всі розмови
+view_load_more = Завантажити більше повідомлень
+view_toggle_message_view = Перемкнути текстовий вигляд і HTML
+view_show_remote_content = Показати віддалений вміст у цьому повідомленні
+view_message_zoom = Масштаб повідомлення
+zoom_increase = Збільшити шрифт повідомлення
+zoom_decrease = Зменшити шрифт повідомлення
+zoom_reset = Скинути розмір шрифту повідомлення
+
+# Compose
+compose_send = &Надіслати
+compose_save_draft = &Зберегти чернетку
+compose_attach = &Долучити файл...
+compose_fmt_bold = &Жирний
+compose_fmt_italic = &Курсив
+compose_fmt_strike = &Закреслений
+compose_fmt_bullet = &Маркований список
+compose_fmt_number = &Нумерований список
+compose_fmt_quote = &Цитата
+compose_fmt_code = &Код
+compose_fmt_heading1 = &Заголовок
+compose_link = &Вставити посилання...
+compose_formatting = &Форматування тут
+compose_spellcheck = &Перевірити орфографію...
+compose_spellcheck_next = &Наступна помилка
+compose_spellcheck_add = &Додати слово до словника
+compose_insert_signature = &Вставити підпис
+compose_paste_quotation = &Вставити як цитату
+compose_word_count = &Кількість слів
+compose_preview = &Попередній перегляд...
+compose_diagnostics = &Діагностика редактора...
+compose_edit_signature = &Редагувати підпис...
+compose_hotkeys_diagnostic = &Діагностика гарячих клавіш
+
+# Tools
+tools_account_settings = Налаштування облікового запису та профілів...
+tools_mute_account = Вимкнути звук облікового запису
+tools_pause_auto_check = Призупинити автоматичну перевірку
+tools_disable_account = Вимкнути обліковий запис
+tools_remove_account = Вилучити обліковий запис...
+tools_address_book = Адресна книга...
+tools_message_filters = Фільтри повідомлень...
+tools_import = Імпортувати облікові записи й налаштування...
+tools_export = Експортувати облікові записи й налаштування...
+tools_cache_cleanup = Налаштування очищення кешу...
+tools_privacy = Приватність і блокування вмісту...
+tools_settings = Налаштування...
+
+# Help
+help_shortcuts = Клавіатурні скорочення...
+help_about = Про ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Новий обліковий запис...
+tree_account_settings = Налаштування облікового запису та профілів...
+tree_mute_account = Вимкнути звук облікового запису
+tree_pause_auto_check = Призупинити автоматичну перевірку
+tree_enable_account = Увімкнути обліковий запис
+tree_disable_account = Вимкнути обліковий запис
+tree_set_default_account = Зробити типовим обліковим записом
+tree_remove_account = Вилучити обліковий запис...
+tree_refresh = Оновити
+tree_new_folder = Нова тека...
+tree_empty_trash = Очистити Смітник
+tree_empty_junk = Очистити Спам
+tree_rename_folder = Перейменувати теку...
+tree_delete_folder = Видалити теку...
+tree_subscribe_folder = Підписатися на теку
+tree_unsubscribe_folder = Скасувати підписку на теку
+
+# The message list menu, opened the same two ways
+list_select_all = Вибрати все
+list_reply = Відповісти
+list_reply_all = Відповісти всім
+list_forward = Переслати
+list_mark = Позначити
+list_archive = Архівувати
+list_delete_to_trash = Видалити (до Смітника)
+list_delete_permanently = Видалити остаточно
+list_move_to = Перемістити до
+list_copy_to = Копіювати до
+
+# The notification area icon
+tray_open = &Відкрити ZBox
+tray_unread_one = 1 непрочитане повідомлення
+tray_unread_many = Непрочитаних повідомлень: {count}
+tray_no_unread = Немає непрочитаних повідомлень
+tray_settings = &Налаштування...
+tray_quit = &Вийти з ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Жирний
+format_italic = &Курсив
+format_strike = &Закреслений
+format_bullet = &Маркований список
+format_number = &Нумерований список
+format_quote = &Цитата
+format_code = &Код
+format_heading1 = &Заголовок
+format_insert_link = &Вставити посилання...
+format_formatting_here = &Форматування тут
+tools_enable_account = Увімкнути обліковий запис
+edit_undo_action = Скасувати: {action}
+tree_mark_folder_read = Позначити теку як прочитану
+help_updates = Оновлення
+help_check_updates = Перевірити оновлення зараз...
+help_update_settings = Налаштування оновлення...
+help_releases_page = Відкрити сторінку випусків
+message_attachments = Вкладення
+message_no_attachments = Немає вкладень
+message_save_all_attachments = Зберегти всі вкладення
+view_full_headers = Усі заголовки
+folders_go_to_tree = Перейти до списку тек
+list_block_sender = Заблокувати цього відправника
+list_unblock_sender = Розблокувати цього відправника
+
+[dialogs]
+set_theme_restart_confirm = Перезапустити ZBox, щоб застосувати зміну теми?
+set_ui_theme_label = &Тема інтерфейсу:
+set_ui_theme_note = Кольори меню, списків, діалогів і текстового перегляду повідомлень. Як у системі використовує світлий або темний режим застосунків Windows. Опівнічна синя, Тепла темна й М'який контраст — темні теми з м'якшими кольорами. Повідомлення HTML зберігають власні кольори, а висока контрастність Windows завжди має перевагу. Набуває чинності після наступного запуску ZBox.
+set_theme_system = Як у системі
+set_theme_light = Світла
+set_theme_dark = Темна
+set_theme_midnight = Опівнічна синя
+set_theme_warm = Тепла темна
+set_theme_soft = М'який контраст
+set_language_restart_confirm = Перезапустити ZBox, щоб застосувати зміну мови?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Зв'язатися з Харітом
+title_identity = Профіль
+title_show_password = Показати пароль
+title_missing_information = Бракує даних
+title_unsupported_provider = Непідтримуваний постачальник
+title_test_connection = Перевірити з'єднання
+title_new_contact = Новий контакт
+title_edit_contact = Редагувати контакт
+title_delete_contact = Видалити контакт
+title_import_contacts = Імпортувати контакти
+title_export_contacts = Експортувати контакти
+title_rename_group = Перейменувати групу
+title_delete_group = Видалити групу
+title_send = Надіслати
+title_send_failed = Не вдалося надіслати
+title_attach_file = Долучити файл
+title_save_draft = Зберегти чернетку
+title_documentation = Документація ZBox
+title_open_link = Відкрити посилання
+title_filter_rule = Правило фільтра
+title_master_password = Головний пароль
+title_attachment_saved = Вкладення збережено
+title_attachments_saved = Вкладення збережено
+title_download_failed = Не вдалося завантажити
+title_print = Друк
+title_print_preview = Попередній перегляд
+title_related_messages = Пов'язані повідомлення
+title_search = Пошук
+title_unlock = Розблокувати
+title_unlock_methods = Способи розблокування
+title_desktop_shortcut = Ярлик на робочому столі
+title_spell_check = Перевірка орфографії
+title_plain_text_password = Знайдено пароль звичайним текстом
+title_startup_error = Помилка запуску ZBox
+
+identity_email_required = Введіть адресу електронної пошти.
+
+wizard_password_not_shown = У цій системі неможливо показати пароль. Він і далі вводиться й зберігається звичайно.
+wizard_email_required = Перш ніж продовжити, введіть правильну адресу електронної пошти.
+wizard_test_needs_server = Перед перевіркою введіть адресу для входу й сервер вхідної пошти.
+wizard_test_succeeded = З'єднання успішне. У Вхідних знайдено повідомлень: {count}.
+
+contact_email_required = Адреса електронної пошти обов'язкова.
+contact_select_to_edit = Виберіть контакт для редагування.
+contact_select_to_delete = Виберіть контакт для видалення.
+contact_delete_confirm = Видалити {label} з адресної книги?
+contacts_import_choose_file = Виберіть файл .vcf (vCard) або .csv для імпорту.
+contacts_imported = Імпортовано контактів: {count}.
+contacts_import_empty = У цьому файлі не знайдено контактів.
+contacts_none_to_export = Немає контактів для експорту.
+contacts_exported = Експортовано контакти ({count}) до:\n{path}
+group_name_exists = Група з назвою «{name}» уже існує.
+group_delete_confirm = Видалити групу «{name}»? Її контакти не буде видалено.
+
+send_no_account = Перед надсиланням додайте обліковий запис або виберіть його в полі Від.
+send_no_recipient = Введіть щонайменше одного отримувача в полі Кому.
+draft_no_account = Перед збереженням чернетки додайте обліковий запис або виберіть його в полі Від.
+attached_file = Долучено: {name}\n\nПід час надсилання буде долучено файлів: {count}.
+
+documentation_copied = Повну документацію ZBox скопійовано до буфера обміну.
+
+filter_rule_needs_name = Дайте цьому правилу назву.
+filter_rule_needs_condition = Задайте щонайменше одну умову (Від, Кому або Тема).
+filter_rule_needs_action = Виберіть щонайменше одну дію: позначити як прочитане, позначити зірочкою або перемістити до теки.
+
+master_password_set = Головний пароль встановлено. Зберігайте його в надійному місці: ZBox запитує його один раз на кожному новому комп'ютері, і в разі втрати його неможливо відновити.
+master_password_offer = Без головного пароля збережені паролі облікових записів можна прочитати лише на цьому комп'ютері й у цьому обліковому записі Windows. Якщо скопіювати ZBox деінде, доведеться знову входити в кожен обліковий запис.\n\nВстановити його зараз?
+
+attachment_saved = Вкладення збережено до:\n{path}
+attachments_saved = Вкладення ({count}) збережено до:\n{path}
+
+shortcut_created_settings = Ярлик створено:\n{path}\n\nВін запускає ZBox з:\n{base}
+
+spellcheck_no_dictionary = Словник орфографії відсутній, тому перевірка орфографії в цій копії ZBox недоступна.
+spellcheck_none_found = Орфографічних помилок не знайдено.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Налаштувати ключ доступу на цьому комп'ютері й забути ключ, збережений на іншому комп'ютері?\n\nWindows попросить підтвердити за допомогою Hello. Старий ключ доступу на іншому комп'ютері залишиться там без змін і працюватиме, якщо повернути туди цю теку, але його доведеться налаштувати знову.
+unlock_replace_passkey_many = Налаштувати ключ доступу на цьому комп'ютері й забути ключі, збережені на інших комп'ютерах ({count})?\n\nWindows попросить підтвердити за допомогою Hello. Старі ключі доступу на іншому комп'ютері залишаться там без змін і працюватимуть, якщо повернути туди цю теку, але їх доведеться налаштувати знову.
+unlock_method_works = Цей спосіб працює.
+
+plain_text_password_found = Файл data\config\himalaya.toml досі містить пароль звичайним текстом (auth.raw) зі старого налаштування облікового запису.\n\nВилучіть цей обліковий запис і додайте його знову або видаліть data\config\himalaya.toml, щоб його було створено знову з використанням захищеного сховища облікових даних.
+
+# main_frame's titles.
+title_account_list_unavailable = Список облікових записів недоступний
+title_open_message = Відкрити повідомлення
+title_run_filters = Запустити фільтри
+title_clear_cache = Очистити кеш автономних повідомлень
+title_remove_account = Вилучити обліковий запис
+title_new_folder = Нова тека
+title_rename_folder = Перейменувати теку
+title_delete_folder = Видалити теку
+title_subscribe = Підписатися
+title_unsubscribe = Скасувати підписку
+title_open_saved_message = Відкрити збережене повідомлення
+title_save_message_as = Зберегти повідомлення як
+title_empty_trash = Очистити Смітник
+title_empty_junk = Очистити Спам
+title_synchronize_offline = Синхронізувати для автономної роботи
+title_export_accounts = Експортувати облікові записи й налаштування
+title_import_accounts = Імпортувати облікові записи й налаштування
+title_show_related = Показати пов'язані повідомлення
+title_reply = Відповісти
+title_forward = Переслати
+title_undo = Скасувати
+title_delete_permanently = Видалити остаточно
+title_delete = Видалити
+title_copy_to = Копіювати до
+title_archive = Архівувати
+title_accounts_locked = Облікові записи заблоковано
+
+select_account_first = Спершу виберіть обліковий запис у дереві.
+select_account_or_folder = Спершу виберіть обліковий запис або теку.
+filters_left_behind = Повідомлень, що відповідають фільтру, але досі в {folder}: {count}.
+cache_clear_confirm = Очистити кеш автономних повідомлень для всіх облікових записів?\n\nВидаляються лише локальні копії ZBox. З поштових серверів нічого не вилучається, а повідомлення буде завантажено знову за потреби.
+account_remove_confirm = Вилучити {name} ({address})?\n\nПошту на сервері не буде видалено.\nКопії, завантажені на цей комп'ютер, буде видалено.\nЗбережений пароль буде видалено.
+folder_delete_confirm = Остаточно видалити теку «{folder}» і весь її вміст для {address}?\n\nЦю дію неможливо скасувати.
+empty_trash_confirm = Остаточно видалити всі повідомлення зі Смітника для {address}?\n\nЦю дію неможливо скасувати.
+empty_junk_confirm = Остаточно видалити всі повідомлення зі Спаму для {address}?\n\nЦю дію неможливо скасувати.
+sync_select_account = Виберіть обліковий запис (не об'єднану теку) для синхронізації для автономного використання.
+accounts_imported = Імпортовано облікові записи ({count}):\n\n{names}\n\nПаролі ніколи не експортуються, а зашифроване сховище паролів прив'язане до цього облікового запису користувача Windows, тому для кожного імпортованого облікового запису потрібно один раз ввести пароль у Облікові записи > Налаштування облікового запису та профілів, перш ніж він зможе під'єднатися.
+accounts_import_none = У цьому файлі не знайдено облікових записів. Налаштування, якщо вони були у файлі, імпортовано.
+delete_permanently_confirm_one = Остаточно видалити це повідомлення? Смітник буде пропущено, і цю дію неможливо скасувати.
+accounts_locked = Збережені паролі облікових записів записано на іншому комп'ютері, тому тут їх неможливо прочитати.\n\nДля кожного облікового запису потрібно знову ввійти на поштовий сервер. Щоб уникнути цього наступного разу, встановіть головний пароль у Налаштуваннях, Безпека застосунку й даних, на комп'ютері, де облікові записи вже працюють.
+master_password_remove_confirm = Вилучити головний пароль? Тоді збережені паролі облікових записів можна буде прочитати лише на цьому комп'ютері й у цьому обліковому записі Windows. Якщо потім скопіювати ZBox деінде, доведеться знову входити в кожен обліковий запис.\n\nВилучити його зараз?
+shortcut_offer = Розмістити ярлик ZBox на робочому столі?\n\nВін запускатиме цю теку ZBox:\n{path}\n\nЯрлик запам'ятовує саме це розташування. Якщо згодом перемістити теку ZBox, відкрийте Налаштування, Системний лоток і вікно, і знову виберіть Створити ярлик на робочому столі, щоб він вказував на нове місце.
+shortcut_created = Ярлик створено:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Показане ім'я
+form_email_address = Адреса електронної пошти
+form_your_name = Ваше ім'я
+form_login_email = Адреса для входу
+form_password = Пароль
+srv_imap_host = Сервер вхідної пошти (IMAP)
+srv_imap_port = Порт вхідної пошти
+srv_imap_encryption = Шифрування вхідної пошти
+srv_smtp_host = Сервер вихідної пошти (SMTP)
+srv_smtp_port = Порт вихідної пошти
+srv_smtp_encryption = Шифрування вихідної пошти
+
+acct_login_email_label = Адреса для входу (використовується для входу)
+acct_new_password_label = Новий пароль (залиште порожнім, щоб зберегти поточний)
+acct_new_password_name = Новий пароль
+acct_identity_email_label = Адреса електронної пошти (для надсилання й отримання)
+acct_identities_label = Додаткові профілі (псевдоніми)
+acct_identities_name = Додаткові профілі
+acct_add_identity = &Додати профіль...
+acct_edit_identity = &Редагувати профіль...
+acct_remove_identity = &Вилучити профіль
+acct_signature = Підпис
+acct_edit_signature = &Редагувати підпис...
+acct_junk_folder = Тека спаму
+acct_account_status = Стан облікового запису
+acct_disable_account = Вимкнути цей обліковий запис
+acct_default_account = Типовий обліковий запис
+acct_set_default = Зробити типовим обліковим записом
+acct_notifications = Сповіщення про нову пошту
+acct_mute_notifications = Вимкнути сповіщення для цього облікового запису
+acct_server_settings = Налаштування сервера
+
+wiz_before_you_start = Перш ніж почати
+wiz_notice_name = Важливе повідомлення
+wiz_google_instructions = &Відкрити інструкції щодо паролів застосунків Google
+wiz_intro = Ваше ім'я та адреса електронної пошти
+wiz_login_same = Адреса для входу збігається з адресою вище
+wiz_show_password = &Показати пароль
+wiz_preset_applied = Застосовано попередні налаштування для {name}.
+wiz_summary_name = Підсумок облікового запису
+wiz_review = Перевірте, потім натисніть Готово, щоб зберегти цей обліковий запис.
+wiz_test_connection = &Перевірити з'єднання
+wiz_testing = Перевірка з'єднання...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Увімкнути журнал налагодження, що зберігається в: data\logs)
+set_language_label = &Мова інтерфейсу:
+set_language_label_only_english = &Мова інтерфейсу: (лише англійська)
+set_headers_checkbox = &Показувати заголовки над відкритим повідомленням
+set_zoom_label = Шрифт і масштаб повідомлення:
+set_font_override = &Замінити типовий розмір шрифту повідомлення
+set_font_size_name = Розмір шрифту повідомлення (пункти)
+set_reading_font_name = Шрифт для читання
+set_reading_font_label = Шрифт для читання (порожньо — типовий):
+set_view_label = Вигляд тексту під час відкриття повідомлення:
+set_view_text = Текст
+set_view_html = HTML (відтворений)
+set_engine_label = Рушій відтворення HTML:
+set_engine_edge = Edge / WebView2 (сучасне відтворення)
+set_engine_ie = Застарілий MSHTML (найкраща підтримка засобів читання з екрана)
+set_runtime_label = Середовище виконання WebView2:
+set_runtime_auto = Автоматично — використовувати вбудоване середовище, якщо є (рекомендовано)
+set_runtime_fixed = Лише вбудована фіксована версія
+set_runtime_evergreen = Системне середовище (оновлюється Windows)
+set_sr_box = Керування озвученням засобу читання з екрана
+set_silence_label = Утримання тиші засобу читання з екрана для HTML:
+set_silence_name = Утримання тиші засобу читання з екрана для HTML у мілісекундах
+set_focus_delay_label = Затримка фокуса доступності WebView:
+set_focus_delay_name = Затримка фокуса доступності WebView, рівень від 1 до 10
+set_announce_label = Тривалість показу оголошення:
+set_announce_name = Тривалість показу оголошення в мілісекундах
+set_announce_actions = &Озвучувати дії з повідомленнями
+set_attachment_dir_label = Тека для збереження вкладень:
+set_attachment_dir_name = Тека для збереження вкладень
+set_browse = &Огляд…
+set_autosave_label = Інтервал автозбереження чернетки:
+set_autosave_name = Інтервал автозбереження чернетки в секундах
+set_auto_purge_label = Автоматично очищати старі Смітник і Спам:
+set_auto_purge_name = Автоматично очищати Смітник і Спам через стільки днів
+set_bare_keys = Увімкнути скорочення з однієї клавіші у списку повідомлень: S (позначити), A (архівувати), J (позначити як спам)/Shift+J (позначити як не спам), W (стежити за розмовою), K (ігнорувати розмову), M (перемістити до)/Shift+M (перемістити за назвою теки) і C (копіювати до)
+set_sound_label = Звуки й сповіщення:
+set_sounds_enabled = &Відтворювати звуки сповіщень
+set_desktop_notifications = &Показувати сповіщення на робочому столі про нову пошту
+set_theme_label = Змінити звукову тему:
+set_theme_label_only_default = Змінити звукову тему: (лише типова тема)
+set_security_box = Безпека застосунку й даних
+set_lock_on_quit = &Блокувати ZBox після повного виходу
+set_unlock_methods_button = &Способи розблокування…
+set_master_password_button = &Головний пароль…
+set_tray_label = Системний лоток і вікно:
+set_minimize_to_tray = &Згортати до системного лотка
+set_close_to_tray = &Закривати до системного лотка
+set_stay_maximized = &Завжди тримати ZBox розгорнутим
+set_run_at_startup = &Запускати ZBox під час запуску Windows
+set_desktop_shortcut_button = &Створити ярлик на робочому столі
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Журнал налагодження допомагає з'ясувати причину, якщо щось піде не так. Якщо його вимкнути, нові записи не додаються; наявні файли журналу не видаляються. Набуває чинності після наступного запуску ZBox.
+set_language_note = Набуває чинності після наступного запуску ZBox. Мовні файли — це звичайні текстові файли в теці lang програми ZBox, поруч із текою sounds. Щоб додати мову, скопіюйте теку en, перейменуйте копію й файл .lang у ній на код своєї мови та перекладіть текст праворуч від кожного знака рівності. Усе ще не перекладене озвучується англійською замість тиші, тому частково перекладеним файлом можна безпечно користуватися.
+set_headers_note = Від, Кому, Копія, Дата й Тема показуються над текстом повідомлення в текстовому вигляді й HTML. Без цього неможливо дізнатися, хто надіслав повідомлення, не закривши вкладку й не повернувшись до списку. Фокус і далі потрапляє в текст повідомлення; заголовки на відстані одного Shift+Tab. Набуває чинності під час наступного відкриття повідомлення.
+set_zoom_note = Збільшує або зменшує текст відкритого повідомлення незалежно від решти ZBox і масштабування екрана Windows. Діє для текстового вигляду й HTML. «Шрифт для читання» може примусово задати певний шрифт (наприклад, Consolas, OpenDyslexic) для тексту повідомлення; залиште порожнім, щоб зберегти звичайний шрифт. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 у меню Вигляд збільшують, зменшують або скидають лише розмір шрифту без відкриття цього вікна й одразу діють для всіх відкритих повідомлень. Зміни, внесені тут, також діють одразу після натискання OK.
+set_view_note = Типовим є HTML. Він показує повідомлення так, як його надіслано, і читається NVDA та JAWS: коли відкривається сторінка HTML, ZBox приглушує власне оголошення браузера, ставить курсор читання на перший рядок повідомлення й зберігає роботу скорочень ZBox усередині сторінки, зокрема F6 для виведення фокуса зі сторінки. Текст показує те саме повідомлення як звичайний неформатований текст у звичайному полі редагування -- без зображень, без макета й без залежності від установленого рушія браузера. Натисніть Ctrl+B у відкритому повідомленні, щоб перемикатися в обидва боки.
+set_engine_note = Edge відтворює сучасний CSS, але виконує сторінку в окремому процесі й передає її вміст засобу читання з екрана лише через інтерфейс, недоступний для wxPython -- тож повідомлення може відкритися без нічого придатного для читання. Застарілий MSHTML — це рушій, який використовували Outlook Express і Пошта Windows: він працює в тому самому процесі й публікує звичайне дерево документа, тому NVDA та JAWS читають його в режимі огляду, як будь-яку вебсторінку. Набуває чинності під час наступного відкриття повідомлення.
+set_runtime_note = Системне середовище обслуговується Windows Update, тому рушій, що показує вашу пошту, може змінитися без попередження — саме через це перегляд повідомлень HTML може зламатися на комп'ютері, де в ZBox нічого не змінювалося. Копія, вбудована в теку deps, фіксує саме ту версію, з якою ZBox тестувався. Щоб установити її, запустіть tools\get_webview2.bat. Якщо вбудованої копії немає, ZBox у будь-якому разі використовує системне середовище, тож завжди запускається. Набуває чинності після наступного запуску ZBox.
+set_sr_intro = Скільки ZBox дозволяє говорити засобу читання з екрана під час відкриття повідомлення і як довго показуються його власні оголошення.
+set_silence_note = Коли відкривається повідомлення HTML, ZBox може утримувати імітоване натискання Ctrl до 2 секунд, щоб приглушити оголошення браузера засобом читання з екрана. Тема повідомлення вже використовується як заголовок сторінки, тож URL base64 не зачитується, але засіб читання й далі оголошує елемент керування й тип документа поверх початку повідомлення, тому ця функція типово увімкнена. Зменште до 0, щоб вимкнути, або збільште, якщо зайві оголошення все ще проскакують.
+set_focus_delay_note = Коли повідомлення HTML завантажено, ZBox чекає стільки часу, перш ніж справді перевести на нього фокус. Момент, коли WebView2 повідомляє про завантаження сторінки, і момент, коли Windows завершує дерево доступності цієї сторінки, — різні; зарано встановлений фокус змушує NVDA/JAWS оголошувати загальну «сторінку вебвмісту» замість повідомлення або якийсь час повідомляти, що воно недоступне. Рівень 1 — це 100 мс, рівень 10 — ціла секунда. Збільште, якщо це досі трапляється; зменште, коли відкриття стабільне, щоб воно було швидшим.
+set_announce_note = Ctrl+U та Ctrl+Shift+U повідомляють відправника в невеликому вікні, яке закривається само, бо рядок стану зачитується лише тоді, коли засіб читання з екрана має ввімкнене читання рядка стану. Це час, протягом якого вікно показується. Налаштуйте його під швидкість мовлення: занадто короткий закриє вікно посеред речення. Будь-яка клавіша закриває його раніше; клавіші зі стрілками залишають його відкритим, щоб можна було перечитати. 0 означає очікування клавіші без автоматичного закриття.
+set_attachment_dir_note = Куди «Зберегти все» записує вкладення, коли в повідомленні їх більше одного. Створюється автоматично, якщо не існує. Повідомлення з одним вкладенням, як і раніше, запитує, куди його зберегти. Залиште порожнім для типового:\n{path}
+set_autosave_note = Як часто відкрита вкладка створення повідомлення зберігає себе до Чернеток, поки ви пишете. Зберегти чернетку (Ctrl+S) і далі зберігає на вимогу, а під час закриття вкладки з незбереженим текстом завжди пропонується зберегти. 0 вимикає автозбереження. Менше 15 секунд вибрати не можна -- це був би запит до сервера, що конкурує з набором тексту.
+set_auto_purge_note = Остаточно видаляє повідомлення зі Смітника й Спаму, які пролежали там стільки днів -- те саме остаточне видалення, яке на вимогу виконують Очистити Смітник і Очистити Спам, автоматично раз на день, поки ZBox відкрито. Типово ввімкнено, 30 днів. 0 вимикає. Після видалення повідомлення це неможливо скасувати.
+set_bare_keys_note = Коли ввімкнено, натискання S, A, J, W або K у списку повідомлень одразу перемикає зірочку, архівує, позначає вибрані повідомлення як спам (Shift+J — як не спам) або відстежує/ігнорує розмову, до якої належить виділення -- Архівувати й Позначити як спам не мають підтвердження й скасування. Якщо вимкнути, S, A, J, W і K повертаються до звичайного переходу за першою літерою. Ctrl+S і Ctrl+Shift+A працюють у будь-якому разі. Діє одразу.
+set_sounds_note = Короткі звуки для перебігу, нових повідомлень, надсилання, відповіді чи пересилання, видалення й результатів пошуку. Вимкнення вимикає всі звуки застосунку; оголошення засобу читання з екрана й рядка стану не змінюються.
+set_desktop_notifications_note = Сповіщення Windows для кожної партії нової пошти, окремо від звуку вище. Вимкнення вимикає його для всіх облікових записів; окремий обліковий запис також можна приглушити в Налаштуваннях облікового запису та профілів.
+set_theme_note = Власні теми — це теки в теці sounds програми ZBox, кожна з власними progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav і none_found.wav. Для відсутнього в темі файлу використовується типовий звук.
+set_theme_note_only_default = Власні теми — це теки в теці sounds програми ZBox, кожна з власними progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav і none_found.wav. Для відсутнього в темі файлу використовується типовий звук. Доки ви не додасте іншу теку теми, доступна лише «default».
+set_lock_note = Тоді під час запуску ZBox перед відкриттям будь-якого облікового запису запитуватиметься один зі способів розблокування. Досить будь-якого одного: ключа доступу, ключа безпеки або головного пароля. Закриття до лотка — це не вихід і не блокує знову; вихід — це Файл > Вихід і команда Вийти значка в лотку. Якщо нічого не зареєстровано й головний пароль не встановлено, блокування пропускається, щоб не відрізати вас від власної пошти.
+set_security_note = З трьох лише головний пароль щось шифрує: саме завдяки йому ця тека може відкрити збережені паролі облікових записів на іншому комп'ютері. Ключ доступу або ключ безпеки розблоковує застосунок на цьому комп'ютері. Жоден із них не замінює головний пароль на комп'ютері, де ZBox раніше не використовувався.
+set_minimize_note = Під час згортання ZBox ховає свою кнопку на панелі завдань і продовжує працювати за значком у лотку. Клацніть значок у лотку лівою кнопкою (або Enter/Пробіл, коли він має фокус клавіатури), щоб повернути вікно.
+set_close_note = Кнопка Закрити вікна, Alt+F4 і Ctrl+W на вкладці Пошта ховають ZBox до лотка замість виходу. Файл > Вихід (Ctrl+Shift+Q) і команда Вийти самого значка в лотку в будь-якому разі справді закривають ZBox, тож завжди є спосіб вийти з клавіатури, не торкаючись лотка.
+set_stay_maximized_note = ZBox запускається розгорнутим і знову розгортається, якщо скасувати розгортання. Рядок меню, рядок заголовка й рамка вікна не змінюються -- це не повноекранний режим без рамки, тож усі скорочення меню з Alt працюють.
+set_run_at_startup_note = Автоматично запускає ZBox під час входу в Windows, одразу в лоток, без показу вікна. Діє одразу, а не лише під час наступного запуску.
+set_desktop_shortcut_note = Розміщує ярлик ZBox на робочому столі, замінюючи наявний. Ярлик зберігає точне розташування цієї теки ZBox, тож якщо перемістити або скопіювати ZBox деінде, натисніть цю кнопку знову в новій копії, щоб ярлик на робочому столі вказував на неї. Діє одразу й не чекає натискання OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Ім'я
+ab_phone = Телефон
+ab_notes = Примітки
+ab_heading = Адресна книга
+ab_contacts = Контакти
+ab_new = &Створити...
+ab_edit = &Редагувати...
+ab_delete = &Видалити
+ab_import = &Імпортувати...
+ab_export = &Експортувати...
+ab_groups_label = Групи (списки розсилки)
+ab_groups_name = Групи
+ab_new_group = &Нова група...
+ab_rename_group = &Перейменувати групу...
+ab_delete_group = &Видалити групу
+ab_manage_members = &Керувати учасниками...
+ab_all_contacts = Усі контакти
+ab_add_member = Додати >>
+ab_remove_member = << Вилучити
+ab_members_of = Учасники групи {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Немає в словнику:
+sp_not_in_dictionary_name = Немає в словнику
+sp_in_this_line_label = У цьому рядку:
+sp_in_this_line_name = У цьому рядку
+sp_suggestions_label = &Пропозиції:
+sp_suggestions_name = Пропозиції
+sp_replace_with_label = &Замінити на:
+sp_replace_with_name = Замінити на
+sp_replace = &Замінити
+sp_replace_all = &Замінити все
+sp_ignore = &Ігнорувати
+sp_ignore_all = &Ігнорувати все
+sp_add_to_dictionary = &Додати до словника
+btn_close = &Закрити
+
+# Privacy and Content Blocking.
+priv_remote_label = Віддалений вміст у повідомленнях:
+priv_block_remote = &Блокувати віддалений вміст, доки я не попрошу (рекомендовано)
+priv_blocklist_label = Список блокування реклами й стеження:
+priv_block_known = &Блокувати відомі домени реклами й стеження
+priv_update_daily = &Щодня оновлювати список у фоновому режимі
+priv_update_now = &Оновити зараз
+priv_junk_label = Правила спаму:
+priv_check_inbox = &Перевіряти нову пошту у Вхідних на заблокованих відправників і відомі фішингові посилання
+priv_move_blocked = &Автоматично переміщувати пошту від заблокованих відправників до Спаму
+priv_update_phishing = &Оновити список фішингу зараз
+priv_blocked_label = Заблоковані відправники:
+priv_blocked_name = Заблоковані відправники
+priv_remove_blocked = &Вилучити заблокованого відправника
+priv_never_junk_label = Відправники, яких ніколи не вважати спамом:
+priv_never_junk_name = Відправники, яких ніколи не вважати спамом
+priv_remove_never_junk = &Вилучити відправника зі списку «ніколи не спам»
+priv_allowed_label = Відправники, яким дозволено завантажувати віддалений вміст:
+priv_allowed_name = Дозволені відправники
+priv_remove_selected = &Вилучити вибраного відправника
+
+# Message Filters.
+filt_rule_name = Назва правила
+filt_enabled = &Увімкнено
+filt_match_label = Відповідність:
+filt_match_all = &Відповідає всім умовам нижче (AND)
+filt_match_any = &Відповідає будь-якій умові нижче (OR)
+filt_conditions_label = Умови (залиште значення порожнім, щоб пропустити):
+filt_condition_field = Поле умови {number}
+filt_condition_contains = Умова {number} містить
+filt_actions_label = Дії:
+filt_mark_read = &Позначити як прочитане
+filt_flag = &Позначити повідомлення зірочкою
+filt_move_label = Перемістити до теки:
+filt_move_name = Перемістити до теки
+filt_rules_name = Правила фільтрів
+filt_new = &Нове правило...
+filt_edit = &Редагувати правило...
+filt_delete = &Видалити правило
+filt_up = &Вгору
+filt_down = &Вниз
+filt_run_label = Запустити зараз у теці:
+filt_run_name = Тека для запуску зараз
+filt_run_now = &Запустити зараз
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Розблокувати ключем доступу (Windows Hello)
+unl_security_key = &Розблокувати ключем безпеки
+unl_master_password_label = &Головний пароль:
+unl_master_password_name = Головний пароль
+unl_unlock = &Розблокувати
+unl_exit = &Вийти з ZBox
+unl_methods_label = &Зареєстровані способи:
+unl_methods_name = Зареєстровані способи розблокування
+unl_add_passkey = &Додати ключ доступу…
+unl_add_key = &Додати ключ безпеки…
+unl_reassign = &Перепризначити ключ доступу цьому комп'ютеру…
+unl_test = &Перевірити…
+unl_remove = &Вилучити
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Від
+comp_to = Кому
+comp_cc = Копія
+comp_bcc = Прихована копія
+comp_subject = Тема
+comp_attach_button = Долучити файл...
+comp_sending = Надсилання...
+comp_report_label = &Звіт:
+comp_report_name = Звіт
+comp_refresh = &Оновити
+comp_copy = &Копіювати
+comp_preview_read = Як його прочитає отримувач
+comp_preview_source = HTML, який буде надіслано
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Текст повідомлення
+mv_blocked_notice = Сповіщення про заблокований вміст
+mv_show_remote = &Показати віддалений вміст
+mv_always_allow = &Завжди дозволяти цьому відправнику
+mv_message_headers = Заголовки повідомлення
+mv_attachments = Вкладення
+mv_attachments_count = Вкладення ({count})
+mv_save_attachment = Зберегти: {filename}
+mv_save_all = Зберегти все
+mv_html_view = Перегляд HTML повідомлення
+mv_saved_message = Збережене повідомлення
+mv_show_remote_tip = Перезавантажити це повідомлення з віддаленими зображеннями й стилями. Відомі елементи стеження лишаються заблокованими.
+mv_always_allow_tip = Завантажувати віддалений вміст у всіх повідомленнях від {sender}.
+
+# The search tab.
+srch_account = Обліковий запис
+srch_folder = Тека
+srch_for = Шукати
+
+# The signature editor.
+sig_editors = Редактори підпису
+sig_formatted = Підпис, форматований
+sig_source = Підпис, джерело HTML
+sig_plain_label = Варіант звичайним текстом (надсилається разом з HTML)
+sig_plain_name = Варіант звичайним текстом
+
+# About ZBox.
+about_text_name = Текст «Про ZBox»
+about_view_license = &Переглянути ліцензію...
+about_google = &Паролі застосунків Google...
+about_support = &Підтримати ZBox -- розробка й підтримка однією людиною
+about_repos = &Репозиторії застосунків Харіта на GitHub
+about_contact = &Зв'язатися з Харітом
+btn_close_plain = Закрити
+btn_cancel_plain = Скасувати
+
+# The license window.
+eula_heading = Ліцензія ZBox
+eula_text_name = Текст ліцензії ZBox
+eula_third_party = Сторінки ліцензій сторонніх компонентів:
+eula_agree = &Я погоджуюся з наведеними умовами
+eula_agree_name = Я прочитав(-ла) умови ліцензії ZBox і погоджуюся з ними
+eula_disagree = &Я не погоджуюся
+eula_next = &Далі
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Текст документації ZBox
+doc_copy = Копіювати до буфера обміну
+shortcuts_heading = Клавіатурні скорочення
+shortcuts_text_name = Текст клавіатурних скорочень
+
+# The main window's own panes.
+mf_toolbar = Головна панель інструментів
+mf_tabs = Вкладки ZBox
+tree_heading = Облікові записи й теки
+tree_name = Дерево облікових записів і тек
+envlist_heading = Повідомлення
+envlist_name = Список повідомлень
+rdr_heading = Повідомлення
+rdr_name = Перегляд повідомлення
+conv_heading_one = Розмова: 1 повідомлення
+conv_heading_many = Розмова: повідомлень: {count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = Виконано {completed} з {total}.
+bulk_cancelling = Скасування -- завершення поточного повідомлення...
+cache_clear_now = Очистити кеш автономних повідомлень зараз... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, захищено
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Показане ім'я необов'язкове -- залиште порожнім, щоб надсилати від імені цього облікового запису.
+acct_note_identity = Адреса електронної пошти може відрізнятися від адреси для входу, якщо ваш постачальник прив'язав до цієї скриньки власний домен. Пошта надсилатиметься й отримуватиметься з адреси вище, а для входу й далі використовуватиметься адреса для входу. Залиште поле пароля порожнім, щоб зберегти вже збережений для цього облікового запису пароль -- наприклад, після зміни пароля застосунку Gmail введіть тут новий; інакше залиште порожнім.
+acct_note_identities = Інші адреси, з яких цей обліковий запис може надсилати й відповідати. Відповідь на повідомлення, надіслане на одну з них, типово ставить у поле Від цю адресу замість адреси вище.
+acct_note_signature = Додається до кожного нового повідомлення, відповіді й пересилання з цього облікового запису під рядком «-- ». Залиште порожнім, якщо підпис не потрібен. Редагувати підпис відкриває форматований редактор, де доступні жирний шрифт, списки й посилання; поле вище тоді містить варіант звичайним текстом, що надсилається разом із ним.
+acct_note_junk = Справжня тека, до якої Позначити як спам переміщує повідомлення. «{automatic}» використовує те саме припущення з урахуванням постачальника, що вже застосовується для Архіву й Смітника; задавайте це лише тоді, коли припущення хибне або тека спаму має власну назву.
+acct_note_disable = З вимкненим обліковим записом ніколи не встановлюється зв'язок -- ні IDLE, ні періодичного оновлення, нічого -- доки його не ввімкнуть знову. Він і далі показується в дереві з позначкою (вимкнено), а вже завантажена пошта лишається доступною автономно. Це той самий перемикач, що й Облікові записи > Вимкнути обліковий запис або контекстне меню облікового запису; тут лише ще одне місце, де його знайти.
+acct_note_default = Теки цього облікового запису показуються першими в дереві, а нове повідомлення типово надсилається з нього, якщо не змінити вручну в редакторі. Не впливає на адресу для відповіді чи пересилання -- її визначає повідомлення, на яке відповідають (див. Додаткові профілі вище). Типовий обліковий запис завжди рівно один, тож якщо зняти позначку в поточного типового, не позначивши інший, нічого не зміниться -- позначте поле іншого облікового запису, щоб передати йому роль типового.
+acct_note_mute = &Вимкнення звуку блокує звук нової пошти, голосове оголошення й сповіщення Windows для цього облікового запису незалежно від інших налаштувань. Не впливає на інші облікові записи й і далі підпорядковується загальним перемикачам у Налаштування > Звуки й сповіщення (звуки й сповіщення на робочому столі загалом).
+wiz_note_app_password = Якщо ви вже створили пароль застосунку для ZBox, натисніть Далі, щоб продовжити.
+wiz_note_login = Дані для входу.\nЯкщо ваша адреса для входу відрізняється від адреси вище, наприклад обліковий запис постачальника — login@example.net, а надсилати й отримувати ви хочете як you@example.org, введіть тут адресу для входу. Власну адресу надсилання можна задати згодом у Налаштуваннях облікового запису та профілів.
+wiz_note_servers = Налаштування сервера, заповнені заздалегідь, якщо домен розпізнано. Змініть усе, що має бути інакше.
+wiz_preset_none = Для цього домену не знайдено попередніх налаштувань. Введіть налаштування сервера постачальника вручну; їх наведено на сторінках довідки постачальника.
+ab_note_groups = Введіть назву групи в поле Кому, Копія або Прихована копія вікна створення повідомлення, щоб одразу заповнити всіх її учасників.
+cache_note_intro = Вони видаляють лише локальні копії ZBox. З поштових серверів нічого не видаляється, а видалене повідомлення буде завантажено знову під час наступного відкриття.
+cache_note_age = Автоматичне очищення виконується раз на день, коли в ZBox десять хвилин не було дій із клавіатурою й не відкрито жодного повідомлення. Воно орієнтується на дату кожного повідомлення, зокрема тих, що досі є в обліковому записі.
+filt_note_intro = Правила виконуються по черзі, згори вниз, перевіряючи Від, Кому й Тему. Вони автоматично застосовуються до нової пошти, що надходить до Вхідних цього облікового запису; скористайтеся кнопкою Запустити зараз нижче, щоб застосувати їх до повідомлень, які вже є в теці.
+filt_note_run_now = Застосовує кожне ввімкнене правило вище, по черзі, до кожного повідомлення, що вже є у вибраній теці -- спершу зберігає ваші зміни, як і OK.
+mp_note_intro = Ці облікові записи налаштовано на іншому комп'ютері. Введіть головний пароль, щоб розблокувати тут їхні збережені паролі. На цьому комп'ютері вас запитають лише один раз.\n\nБез нього для кожного облікового запису доведеться знову ввійти на поштовий сервер.
+priv_note_remote = Зображення, таблиці стилів і шрифти, які повідомлення завантажує з інтернету, повідомляють відправнику, коли й звідки ви його відкрили. Коли цю функцію ввімкнено, нічого з цього не завантажується: над повідомленням з'являється сповіщення про те, що заблоковано, а Ctrl+Shift+I завантажує це лише для цього повідомлення. Зображення, долучені до самого повідомлення, показуються завжди. Скрипти й вбудовані фрейми вилучаються в будь-якому разі й ніколи не завантажуються.
+priv_note_blocklist = Це другий рівень захисту. Він важливий, коли ви завантажуєте віддалений вміст повідомлення або дозволяєте відправника: зображення завантажуються, але все, що надходить із відомих доменів стеження чи реклами, і далі не завантажується. Список завантажується з публічних списків реклами й стеження та об'єднується; оновлення триває секунду-дві й відбувається у фоновому режимі.
+priv_note_junk = Жодних здогадок. Позначити як спам додає відправника до списку заблокованих нижче, якщо повідомлення надійшло не через список розсилки. Позначити як не спам додає відправника до списку «ніколи не спам», і це повідомлення більше ніколи не перевіряється. Нове повідомлення від заблокованого відправника позначається в списку як Заблокований відправник; повідомлення з посиланням на відомий фішинговий або шкідливий сайт позначається як Можливий фішинг. Власна фільтрація спаму вашого поштового постачальника працює як і раніше.
+priv_status_phishing_updating = Список фішингу: оновлюється у фоновому режимі. Відкрийте це вікно знову, щоб побачити результат.
+priv_status_updating = Оновлюється у фоновому режимі. Відкрийте це вікно знову, щоб побачити результат.
+rel_note_intro = Повідомлення, пов'язані з «{subject}» заголовками Message-ID/References, з усіх тек цього облікового запису.
+srch_note_intro = Шукає введений нижче текст у полях Від, Тема й у тексті. Шукає в усіх облікових записах і теках, якщо не звузити пошук нижче.
+sig_note_plain = Залиште варіант звичайним текстом порожнім, і його буде створено з форматованого підпису, коли ви натиснете Зберегти.
+unified_note_intro = Виберіть, які теки об'єднувати з усіх облікових записів. Кожна позначена тека стає одним пунктом у дереві, що об'єднує цю теку з усіх ваших облікових записів.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Про ZBox
+title_account_settings = Налаштування облікового запису та профілів: {name}
+title_new_account = Новий обліковий запис
+title_address_book = Адресна книга
+title_members = Учасники: {name}
+ab_group_name_prompt = Назва групи:
+title_new_group = Нова група
+title_cache_cleanup = Налаштування очищення кешу
+cache_age_prompt = Автоматично вилучати кешовані повідомлення, старші за:
+title_automatic_cleanup = Автоматичне очищення
+comp_link_prompt = Адреса посилання:
+title_insert_link = Вставити посилання
+title_composer_diagnostics = Діагностика редактора
+title_formatted_preview = Форматований попередній перегляд
+title_license_agreement = Ліцензійна угода ZBox
+title_message_filters = Фільтри повідомлень: {account}
+title_master_password_required = Потрібен головний пароль
+title_privacy_dialog = Приватність і блокування вмісту
+title_privacy = Приватність
+title_settings = Налаштування
+title_unified_folders = Об'єднані теки
+title_zbox_locked = ZBox заблоковано
+title_message_view = Перегляд повідомлення
+title_remote_content = Віддалений вміст
+title_refresh = Оновити
+title_refresh_all = Оновити все
+mv_choose_folder = Виберіть теку для збереження вкладення
+title_thread = Розмова
+title_inbox = Вхідні
+title_compose = Створення
+title_watch_thread = Відстежувати розмову
+title_ignore_thread = Ігнорувати розмову
+title_edit_signature = Редагувати підпис
+title_account = Обліковий запис
+mf_folder_name_prompt = Назва теки:
+mf_new_name_prompt = Нова назва:
+title_refresh_all_accounts = Оновити всі облікові записи
+title_sender = Відправник
+title_new_mail = Нова пошта
+mf_export_dialog_title = Експортувати всі облікові записи ({count}) і налаштування
+mf_related_tab = Пов'язані: {subject}
+title_hotkeys_diagnostic = Діагностика гарячих клавіш
+set_choose_attachment_dir = Виберіть теку для збереження вкладень
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox заблоковано. Скористайтеся будь-яким зі способів нижче, щоб розблокувати його. Скасування закриває ZBox, не відкриваючи жодного облікового запису.
+unl_note_foreign_passkey = Ключ доступу, збережений у цій теці, належить іншому комп'ютеру, тому тут його неможливо використати. Розблокуйте ключем безпеки або головним паролем, а потім у Налаштуваннях, Приватність і безпека, Способи розблокування налаштуйте ключ доступу на цьому комп'ютері.
+unl_note_methods = Коли блокування застосунку ввімкнено, будь-який із цих способів розблоковує ZBox, поряд із головним паролем. Ключ доступу використовує Windows Hello на цьому комп'ютері; ключ безпеки — це ключ FIDO2 через USB або NFC, і він працює на будь-якому комп'ютері, до якого його під'єднати.
+unl_note_not_encryption = Ці способи розблоковують застосунок. Вони нічого не шифрують: відкрити збережені паролі облікових записів на комп'ютері, де ця тека раніше не використовувалася, може лише головний пароль. Його потрібно встановити першим, і доти жоден із цих способів додати неможливо.
+unl_add_passkey_unavailable = &Додати ключ доступу (недоступно)
+unl_add_key_unavailable = &Додати ключ безпеки (недоступно)
+unl_reassign_unavailable = &Перепризначити ключ доступу цьому комп'ютеру (недоступно)
+unl_status_cancelled_passkey = Ключ доступу скасовано. ZBox досі заблоковано.
+unl_status_cancelled_key = Ключ безпеки скасовано. ZBox досі заблоковано.
+unl_status_enter_password = Введіть головний пароль.
+unl_status_no_master = Головний пароль не встановлено, тому ключ доступу або ключ безпеки додати поки неможливо. Встановіть його кнопкою Головний пароль у Налаштуваннях, Приватність і безпека, а потім поверніться сюди. Головний пароль відкриває збережені паролі облікових записів на іншому комп'ютері; ключ доступу лише розблоковує застосунок на цьому, тож не може працювати самостійно.
+unl_status_unsupported = Windows на цьому комп'ютері не підтримує ключі доступу чи ключі безпеки, тому тут ZBox можна розблокувати лише головним паролем.
+unl_status_foreign_one = 1 ключ доступу належить іншому комп'ютеру й не може розблокувати ZBox тут. Перепризначення замінює його ключем, створеним на цьому комп'ютері.
+unl_status_foreign_many = Ключів доступу, що належать іншому комп'ютеру й не можуть розблокувати ZBox тут: {count}. Перепризначення замінює їх ключем, створеним на цьому комп'ютері.
+unl_status_foreign_one_no_hello = 1 ключ доступу належить іншому комп'ютеру й не може розблокувати ZBox тут. Windows Hello тут не налаштовано, тому замінити його на цьому комп'ютері неможливо; Вилучити забуває його.
+unl_status_foreign_many_no_hello = Ключів доступу, що належать іншому комп'ютеру й не можуть розблокувати ZBox тут: {count}. Windows Hello тут не налаштовано, тому замінити їх на цьому комп'ютері неможливо; Вилучити забуває їх.
+unl_status_no_hello = На цьому комп'ютері не налаштовано Windows Hello, тому тут неможливо додати ключ доступу. Ключ безпеки додати можна.
+unl_status_none_registered = Способи розблокування ще не зареєстровано.
+unl_status_add_cancelled_passkey = Додавання ключа доступу скасовано.
+unl_status_add_cancelled_key = Додавання ключа безпеки скасовано.
+unl_status_added = Додано: {name}.
+unl_status_reassign_cancelled = Перепризначення скасовано. Нічого не змінено.
+unl_status_reassigned = Додано {name} і забуто ключі з інших комп'ютерів: {count}.
+unl_status_test_cancelled = Перевірку скасовано.
+unl_status_removed = Вилучено.
+unl_remove_warning_last = Вилучити {name}?\n\nЦе єдиний зареєстрований спосіб розблокування, і головний пароль не встановлено, тож за ввімкненого блокування застосунку не лишиться чим розблокувати ZBox. Щоб не відрізати вас, блокування буде пропущено, але тоді ZBox відкриватиметься без блокування.
+unl_remove_warning = Вилучити {name}? ZBox більше не прийматиме його.
+ab_col_email = Ел. пошта
+ab_col_name = Ім'я
+ab_col_phone = Телефон
+ab_no_contacts = Контактів ще немає.
+acct_auto_check = Автоматично перевіряти нові повідомлення
+acct_note_auto_check = Вимкнено: ZBox ніколи сам не з'єднується з цим обліковим записом -- жодного стеження за новою поштою, жодного оновлення за розкладом, жодних фонових завантажень -- тож ненадійний сервер не сповільнить інші облікові записи. Завантажена пошта й далі відкривається, а Оновити (F5), надсилання й видалення й далі доходять до сервера. Те саме, що Призупинити автоматичну перевірку в меню Інструменти або в контекстному меню облікового запису.
+bl_day_ago = 1 день тому
+bl_days_ago = {days} дн. тому
+bl_label_blocklists = Список блокування
+bl_label_phishing = Список фішингу
+bl_last_failed = Остання спроба не вдалася: %s
+bl_not_downloaded = Ще не завантажено.
+bl_save_failed = Завантажено %s, але не вдалося зберегти: %s
+bl_seed_only = Доменів із вбудованого списку: %s. Ще жодного разу не оновлено з інтернету.
+bl_some_failed = Деякі джерела не спрацювали: %s
+bl_some_unreachable = Не вдалося з'єднатися з деякими джерелами: %s
+bl_status_line = Доменів: %s. Останнє оновлення: %s.
+bl_up_to_date = %s уже актуальний.
+bl_update_failed = Не вдалося оновити %s: %s
+bl_updated = %s оновлено: доменів: %s.
+cc_age_choice = Увесь кеш повідомлень, старший за %s
+cc_auto_button = Автоматичне очищення: кешовані повідомлення, старші за %s...
+comp_btn_discard = &Відкинути
+comp_btn_keep_editing = &Продовжити редагування
+comp_btn_save_draft = &Зберегти чернетку
+comp_no_account = Обліковий запис не налаштовано
+comp_saving_draft = Збереження чернетки…
+comp_this_message = це повідомлення
+comp_unsent_save_q = Зберегти %s як чернетку перед закриттям?
+comp_unsent_tray_q = Зберегти %s як чернетку, перш ніж ZBox перейде до лотка?
+doc_unreadable = Не вдалося прочитати файл документації:
+envlist_all_disabled = Усі облікові записи вимкнено.
+envlist_col_date = Дата
+envlist_col_from = Від
+envlist_col_status = Стан
+envlist_col_subject = Тема
+envlist_collapsed = Згорнуто (%d)
+envlist_empty = У цій теці немає повідомлень.
+envlist_loading = Завантаження повідомлень...
+envlist_no_accounts = Облікові записи ще не налаштовано.
+envlist_no_ignored = У цій теці немає ігнорованих розмов.
+envlist_no_watched = У цій теці немає відстежуваних розмов.
+envlist_select_folder = Виберіть обліковий запис або теку, щоб завантажити повідомлення.
+eula_link_0 = Відкрити сторінку ліцензії Himalaya у браузері
+eula_link_1 = Відкрити сторінку ліцензії StevenBlack hosts у браузері
+eula_link_2 = Відкрити сторінку ліцензії EasyList/EasyPrivacy у браузері
+eula_link_3 = Відкрити сторінку ліцензії Phishing.Database у браузері
+eula_read_note = Прочитайте ліцензію нижче, зокрема розділи сторонніх компонентів. Щоб кнопка Далі стала доступною, потрібно позначити Я погоджуюся. Я не погоджуюся закриває ZBox без запуску й вилучає те, що було створено під час цього запуску.
+eula_unreadable = Не вдалося прочитати файл ліцензії:\n%s
+filters_title = Запустити фільтри
+flag_title = Позначити повідомлення зірочкою
+folder_type_archive = Архів
+folder_type_drafts = Чернетки
+folder_type_inbox = Вхідні
+folder_type_junk = Спам
+folder_type_sent = Надіслані
+folder_type_trash = Смітник
+mime_application_json = Файл JSON
+mime_application_msword = Документ Word
+mime_application_octet_stream = Двійковий файл
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Таблиця Excel
+mime_application_vnd_ms_powerpoint = Презентація PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Презентація PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Таблиця Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Документ Word
+mime_application_xml = Файл XML
+mime_application_zip = Архів ZIP
+mime_audio_mpeg = Аудіо MP3
+mime_audio_ogg = Аудіо OGG
+mime_audio_wav = Аудіо WAV
+mime_image_bmp = Зображення BMP
+mime_image_gif = Зображення GIF
+mime_image_jpeg = Зображення JPEG
+mime_image_png = Зображення PNG
+mime_image_svg_xml = Зображення SVG
+mime_image_webp = Зображення WebP
+mime_text_csv = Файл CSV
+mime_text_html = Файл HTML
+mime_text_plain = Текстовий файл
+mime_video_mp4 = Відео MP4
+mime_video_x_msvideo = Відео AVI
+move_title_junk = Позначити як спам
+move_title_move_to = Перемістити до
+move_title_not_junk = Позначити як не спам
+mp_explain_set = Головний пароль встановлено. Завдяки йому ця тека ZBox може відкривати збережені паролі облікових записів на іншому комп'ютері.\n\nЩоб вилучити його, залиште обидва поля нового пароля порожніми й натисніть OK. Вилучення не впливає на цей комп'ютер, але на будь-якому іншому тека більше не працюватиме без повторного входу в кожен обліковий запис.
+mp_explain_unset = Головний пароль не встановлено, тому збережені паролі облікових записів можна прочитати лише на цьому комп'ютері й у цьому обліковому записі Windows. Якщо скопіювати теку деінде, для кожного облікового запису доведеться знову ввійти на поштовий сервер.\n\nВстановіть його, і ZBox запитає його один раз на кожному новому комп'ютері, а далі там розблоковуватиметься звичайно. Цей комп'ютер більше не запитуватиме.\n\nЗапишіть його й зберігайте в надійному місці. Він ніде не зберігається й не може бути відновлений: якщо ви його забудете, для кожного облікового запису доведеться знову ввійти на поштовий сервер.
+mp_label_confirm = &Підтвердьте новий головний пароль:
+mp_label_current = &Поточний головний пароль:
+mp_label_master = &Головний пароль:
+mp_label_new = &Новий головний пароль:
+mp_name_confirm = Підтвердьте новий головний пароль
+mp_name_current = Поточний головний пароль
+mp_name_master = Головний пароль
+mp_name_new = Новий головний пароль
+mp_prompt_existing = Збережені паролі облікових записів захищено лише на цьому комп'ютері. Встановіть головний пароль, щоб їх можна було відкрити й після перенесення ZBox на інший комп'ютер.
+mp_prompt_first_run = ZBox збирається зберегти паролі облікових записів. Встановіть зараз головний пароль, щоб їх можна було відкрити й після перенесення ZBox на інший комп'ютер.
+mp_prompt_new_account = ZBox збирається зберегти пароль цього облікового запису. Спершу встановіть головний пароль, щоб обліковий запис можна було відкрити й після перенесення ZBox на інший комп'ютер.
+mp_removed_done = Головний пароль вилучено. Збережені паролі тепер працюють лише на цьому комп'ютері й у цьому обліковому записі Windows.
+mp_set_done = Головний пароль встановлено. ZBox запитає його один раз на кожному новому комп'ютері, де відкриють цю теку, а далі там розблоковуватиметься звичайно.
+mv_body_title = Текст повідомлення
+mv_col_format = Формат
+mv_col_name = Назва
+mv_col_size = Розмір
+mv_format_unknown = Невідомий
+mv_size_unknown = Розмір невідомий
+na_account_settings = Налаштування облікового запису та профілів
+na_disable_account = Вимкнути обліковий запис
+na_edit_signature = Редагувати підпис
+na_message_filters = Фільтри повідомлень
+na_mute_account = Вимкнути звук облікового запису
+na_pause_auto_check = Призупинити автоматичну перевірку
+na_remove_account = Вилучити обліковий запис
+na_set_default = Зробити типовим обліковим записом
+no_offline_copy = Немає автономної копії %s. Відкрийте її в мережі або скористайтеся Файл, Автономно, Синхронізувати зараз.
+perm_delete_confirm = {msg} Смітник буде пропущено, і цю дію неможливо скасувати.
+perm_delete_many = Остаточно видалити повідомлення ({count})?
+perm_delete_one = Остаточно видалити повідомлення ({count})?
+preset_note_apple = Apple вимагає пароля для застосунку.
+preset_note_fastmail = Fastmail вимагає пароля застосунку.
+preset_note_google = Google вимагає пароля застосунку або OAuth2, а не звичайного пароля.
+preset_note_proton = ProtonMail потребує запущеного локально застосунку ProtonMail Bridge.
+preset_note_yahoo = Yahoo вимагає пароля застосунку.
+priv_phishing_not_loaded = Список фішингу: ще не завантажено. Він завантажиться вперше, коли ці правила буде ввімкнено, а ZBox буде в мережі.
+priv_phishing_prefix = Список фішингу:
+priv_status_unavailable = Стан списку блокування недоступний.
+rdr_load_failed = Не вдалося завантажити повідомлення.\n\n{message}
+rdr_loading = Завантаження повідомлення...
+rdr_select_message = Виберіть повідомлення, щоб прочитати його тут.
+set_autosave_off = Вимкнено — зберігайте вручну командою Зберегти чернетку (Ctrl+S)
+set_autosave_seconds = Кожні {seconds} с
+set_no_unlock = Немає ключа доступу чи ключа безпеки, придатного тут
+set_purge_days = Через {days} дн.
+set_purge_off = Вимкнено — Смітник і Спам ніколи не очищаються автоматично
+set_purge_one_day = Через 1 день
+set_rt_bundled_installed = Вбудоване середовище: установлено.
+set_rt_bundled_many = Вбудоване середовище: установлено %s.
+set_rt_bundled_none = Вбудоване середовище: не встановлено, тому ZBox використовує системне.
+set_rt_bundled_unknown = Вбудоване середовище: не вдалося визначити.
+set_rt_bundled_ver = Вбудоване середовище: установлено версію %s.
+set_rt_system_unknown = Системне середовище: не вдалося визначити версію.
+set_rt_system_ver = Системне середовище: версія %s.
+set_unlock_many = Способів розблокування, придатних тут: %d
+set_unlock_unreadable = Не вдалося прочитати способи розблокування
+sig_tab_formatted = Форматований
+sig_tab_source = Джерело HTML
+srch_all_accounts = Усі облікові записи
+srch_all_folders = Усі теки
+tab_mail = Пошта
+tab_new_message = Нове повідомлення
+tab_saved_message = Збережене повідомлення
+title_copy_to_err = Копіювати до
+title_mark_message = Позначити повідомлення
+title_unsent_message = Ненадіслане повідомлення
+tree_unified_root = Об'єднані теки
+unlock_kind_passkey = Ключ доступу (Windows Hello)
+unlock_kind_security_key = Ключ безпеки
+unlock_prompt_message = Windows просить підтвердження. Дайте відповідь за допомогою Windows Hello, PIN-коду або ключа безпеки. Це вікно закриється само, коли Windows завершить.
+unlock_prompt_title = Безпека Windows
+unlock_registering = Реєстрація цього способу розблокування
+unlock_the_passkey = Ключ доступу
+unlock_the_security_key = Ключ безпеки
+wildcard_eml = Файли пошти (*.eml)|*.eml|Усі файли (*.*)|*.*
+wildcard_export = Експорт ZBox (*.json)|*.json
+wiz_not_supported = НЕ ПІДТРИМУЄТЬСЯ: {name}. {note} Цей обліковий запис неможливо додати в ZBox.
+stock_apply = &Застосувати
+stock_cancel = Скасувати
+stock_close = &Закрити
+stock_help = &Довідка
+stock_no = &Ні
+stock_ok = OK
+stock_yes = &Так
+wiz_btn_back = &< Назад
+wiz_btn_finish = &Готово
+wiz_btn_next = &Далі >
+acct_unsaved_q = Зберегти зміни цього облікового запису?
+btn_save = &Зберегти
+spell_add_to_dictionary = &Додати до словника
+spell_no_suggestions = Немає пропозицій
+title_signature_for = Підпис: {account}
+title_mark_folder_read = Позначити теку як прочитану
+title_update_available = Оновлення ZBox
+update_available = Доступна версія ZBox {new}. У вас версія {current}.
+upd_notes_label = Примітки до випуску:
+upd_no_notes = Приміток до випуску немає.
+upd_notes_name = Примітки до випуску
+upd_update_now = Так, оновити зараз
+upd_remind_later = Нагадати пізніше
+title_update_download = Завантаження оновлення ZBox
+upd_downloading = Завантаження ZBox {version}...
+upd_progress_name = Перебіг завантаження
+upd_cancel = Скасувати
+upd_cancelling = Скасування...
+set_updates_label = Оновлення:
+set_update_auto = Автоматично перевіряти оновлення
+set_update_mode_label = Коли знайдено оновлення:
+set_update_ask = Питати мене
+set_update_silent = Завантажувати й встановлювати без запитань
+set_update_note = ZBox перевіряє наявність нового випуску на GitHub не частіше одного разу на день, лише коли не використовується, і не надсилає нічого, крім номера своєї версії. Питати мене показує нову версію та примітки до випуску з кнопками Так, оновити зараз і Нагадати пізніше. Завантажувати й встановлювати без запитань отримує оновлення під час простою і встановлює його під час наступного повного виходу з ZBox, але ніколи під час роботи. Оновлення замінює лише власні файли програми ZBox: ваші облікові записи, паролі, налаштування, пошта, журнали, звукові теми й додані вами мови ніколи не змінюються, а попередня версія зберігається і сама відновлюється, якщо нова не запуститься. У меню Довідка, Оновлення також є Перевірити оновлення зараз і сторінка випусків для оновлення вручну.
+set_update_check_now = Перевірити зараз
+mv_attachment_button = {filename} ({format})
+att_open = Відкрити
+att_save = Зберегти...
+att_save_all = Зберегти всі вкладення
+title_save_attachment = Зберегти вкладення
+title_full_headers = Усі заголовки
+hdr_copy_all = Копіювати все
+acct_identity_own_signature = Використовувати власний підпис
+acct_identity_own_reply_to = Використовувати власну адресу для відповіді
+acct_identity_reply_to = Адреса для відповіді
+acct_identity_always_cc = Завжди надсилати копію на ці адреси
+acct_identity_cc = Адреси копії
+acct_identity_always_bcc = Завжди надсилати приховану копію на ці адреси
+acct_identity_bcc = Адреси прихованої копії
+acct_identity_own_folders = Використовувати власні теки «Чернетки» та «Надіслані»
+acct_identity_drafts = Тека чернеток
+acct_identity_sent = Тека надісланих
+acct_identity_own_smtp = Використовувати власний сервер вихідної пошти
+acct_identity_smtp_login = Ім'я користувача для вихідної пошти
+acct_identity_smtp_password = Пароль для вихідної пошти
+acct_identity_test_smtp = Перевірити сервер вихідної пошти
+acct_identity_note_smtp = Залиште ім'я користувача порожнім, щоб входити з адресою електронної пошти цього профілю. Надіслані копії потрапляють до теки «Надіслані» цього облікового запису або до власної теки «Надіслані» цього профілю, якщо вона є.
+identity_field_required = Заповніть поле «{field}» або зніміть його прапорець.
+identity_field_invalid = У полі «{field}» є недійсна адреса.
+identity_folders_required = Виберіть теку чернеток, теку надісланих або обидві, або зніміть їхній прапорець.
+identity_password_required = Введіть пароль для вихідної пошти.
+identity_smtp_testing = Перевірка сервера вихідної пошти.
+identity_smtp_ok = Сервер вихідної пошти прийняв вхід.
+identity_smtp_failed = Не вдалося перевірити сервер вихідної пошти.\n\n{error}
+set_bare_keys_note_move = M і C відкривають меню «Перемістити до» і «Копіювати до» з теками для вибраних повідомлень, а Shift+M відкриває поле, у якому вводиться частина назви теки, щоб перемістити їх туди. Якщо вимкнути цей параметр, M і C також повернуться до переходу за першою літерою.
+folder_search_filter = Назва теки містить
+folder_search_list = Відповідні теки
+folder_search_no_match = Жодна тека не відповідає цій назві.
+wiz_signin_method = Спосіб входу
+wiz_method_password = Пароль
+wiz_method_microsoft = Обліковий запис Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Вхід через Microsoft. Налаштування сервера для Outlook.com, Hotmail, Live і Microsoft 365 заповнено.
+wiz_welcome_notice = Gmail. Звичайний пароль Google буде відхилено, але пароль застосунку працює. Спершу потрібно ввімкнути двоетапну перевірку. Кнопка нижче відкриває інструкції Google.\n\nOutlook.com, Hotmail, Live і Microsoft 365. Ці облікові записи входять через ваш обліковий запис Microsoft. На сторінці входу виберіть «Обліковий запис Microsoft», потім увійдіть у браузері або за допомогою коду.\n\nІнші постачальники. Зазвичай працює звичайний пароль або пароль застосунку, а сторінки довідки постачальника наводять налаштування сервера.
+preset_note_outlook = Облікові записи Outlook.com, Hotmail, Live і MSN входять через обліковий запис Microsoft. На сторінці входу виберіть «Обліковий запис Microsoft» як спосіб входу.
+ms_status_name = Стан входу через Microsoft
+ms_browser_button = Увійти в браузері
+ms_code_button = Увійти за допомогою коду
+ms_copy_code = Копіювати код
+ms_open_page = Відкрити сторінку входу
+ms_stop = Припинити очікування
+ms_not_configured = Вхід через Microsoft не налаштовано в цій копії ZBox.
+ms_not_signed_in = Вхід ще не виконано. Увійдіть у браузері або за допомогою коду на будь-якому пристрої.
+ms_signed_in = Виконано вхід як {address}.
+ms_signed_in_plain = Вхід виконано.
+ms_needs_sign_in = Цьому обліковому запису потрібно знову увійти через Microsoft. Увійдіть у браузері або за допомогою коду на будь-якому пристрої.
+ms_reason_cancelled = Вхід зупинено.
+ms_reason_timeout = Відповідь не надійшла вчасно.
+ms_reason_denied = Доступ не було дозволено.
+ms_reason_expired = Термін дії коду минув. Запросіть новий.
+ms_reason_network = Не вдалося зв'язатися з Microsoft. Перевірте підключення і спробуйте ще раз.
+ms_reason_server = Відповідь Microsoft: {detail}
+ms_page_done = Вхід виконано. Можна закрити цю сторінку й повернутися до ZBox.
+ms_page_failed = Вхід не завершено. Подробиці дивіться в ZBox.
+ms_browser_waiting = У браузері відкрито сторінку входу Microsoft. Завершіть вхід там, потім поверніться до ZBox.
+ms_code_asking = Запит коду входу в Microsoft...
+ms_code_waiting = На будь-якому пристрої відкрийте {address} і введіть код {code}. ZBox чекає тут, доки ви не завершите вхід.
+ms_failed = Вхід не завершено. {reason}
+ms_code_copied = Код скопійовано.
+offline_inbox_only = Для роботи без мережі зберігаються лише папки «Вхідні» і «Архів». Підключіться до мережі, щоб відкрити {folder}.
+block_sender_rule_name = Блокувати {sender}
+title_block_sender = Заблокувати цього відправника
+title_unblock_sender = Розблокувати цього відправника
+set_clear_inbox_cache = Очищати кеш повідомлення, коли воно залишає «Вхідні»
+set_clear_inbox_cache_note = Якщо ввімкнено, автономна копія і збережений вміст повідомлення видаляються, щойно воно залишає «Вхідні», зокрема якщо його видалили або перемістили деінде, наприклад на телефоні, тож воно ніколи не з'явиться там, де його вже немає. Ці файли зберігаються лише для «Вхідних»; усі інші папки завжди читаються із сервера.
+empty_trash_all_confirm = Остаточно видалити всі повідомлення з кошика всіх облікових записів?\n\nЦю дію не можна скасувати.
+
+[errors]
+language_restart_failed = ZBox не зміг перезапуститися:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Не вдалося відкрити поштовий клієнт для {address}.
+
+wizard_test_failed = Не вдалося з'єднатися:\n\n{error}
+
+contacts_import_unreadable = Не вдалося прочитати цей файл.\n\n{error}
+contacts_export_unwritable = Не вдалося записати цей файл.\n\n{error}
+
+attach_unreadable = Не вдалося прочитати вкладення {path}:\n{error}
+send_failed = Не вдалося надіслати повідомлення.\n\n{error}
+draft_attach_unreadable = Не вдалося прочитати вкладення {path}:\n{error}\n\nЧернетку не збережено.
+draft_save_failed = Не вдалося зберегти чернетку.\n\n{error}
+
+clipboard_unavailable = Не вдалося відкрити буфер обміну.
+open_link_failed = Не вдалося відкрити браузер для:\n{url}
+
+master_password_mismatch = Два поля нового головного пароля не збігаються.
+master_password_required = Введіть головний пароль або натисніть Скасувати.
+master_password_not_set = Не вдалося встановити головний пароль: {error}
+master_password_not_here = Тут неможливо змінити головний пароль.
+
+attachment_save_failed = Не вдалося зберегти вкладення.\n\n{error}
+attachments_save_failed = Не вдалося зберегти вкладення.\n\n{error}
+print_failed = Не вдалося надрукувати повідомлення. Перевірте, чи налаштовано принтер.
+print_preview_failed = Не вдалося відкрити попередній перегляд. Перевірте, чи налаштовано принтер.
+
+related_search_failed = Не вдалося знайти пов'язані повідомлення.\n\n{error}
+search_failed = Пошук не вдався.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox не знайшов теку налаштувань, тому тут неможливо керувати способами розблокування.
+shortcut_no_folder = ZBox не зміг визначити власну теку, тому звідси неможливо створити ярлик.
+shortcut_failed_settings = Не вдалося створити ярлик на робочому столі:\n\n{error}
+
+unlock_method_failed = {what} не спрацював.\n\n{error}
+unlock_check_failed = Не вдалося перевірити головний пароль.\n\n{error}
+unlock_password_wrong = Цей головний пароль неправильний.
+unlock_add_failed = Не вдалося додати: {what}.\n\n{error}
+unlock_passkey_setup_failed = Не вдалося налаштувати ключ доступу на цьому комп'ютері, тому нічого не змінено.\n\n{error}
+unlock_method_test_failed = Цей спосіб не спрацював.\n\n{error}
+
+account_list_unreadable = ZBox не зміг відкрити список облікових записів.\n\n{error}\n\nЖодного облікового запису не завантажено, а файл не змінено, тож нічого не втрачено. Додавання, редагування й вилучення облікових записів заблоковано, доки список не вдасться прочитати.
+account_list_no_accounts = ZBox не зміг відкрити список облікових записів у цьому сеансі ({error}), тому немає облікових записів для вибору. Нічого не втрачено й нічого не змінено. Закрийте ZBox і запустіть знову, а коли буде запит, введіть головний пароль.
+open_message_failed = Не вдалося відкрити повідомлення.\n\n{error}
+filters_list_failed = Не вдалося отримати список повідомлень у {folder}.\n\n{error}
+filters_move_failed = Не вдалося перемістити відфільтровані повідомлення.\n\n{error}
+cache_clear_failed = Не вдалося очистити кеш.\n\n{error}
+folder_create_failed = Не вдалося створити теку.\n\n{error}
+folder_rename_failed = Не вдалося перейменувати теку.\n\n{error}
+folder_delete_failed = Не вдалося видалити теку.\n\n{error}
+folder_subscribe_failed = Не вдалося підписатися на теку.\n\n{error}
+folder_unsubscribe_failed = Не вдалося скасувати підписку на теку.\n\n{error}
+saved_open_failed = Не вдалося відкрити файл.\n\n{error}
+saved_parse_failed = Не вдалося розібрати цей файл як повідомлення електронної пошти.\n\n{error}
+save_file_failed = Не вдалося зберегти файл.\n\n{error}
+save_fetch_failed = Не вдалося отримати повідомлення для збереження.\n\n{error}
+empty_trash_failed = Не вдалося очистити Смітник.\n\n{error}
+empty_junk_failed = Не вдалося очистити Спам.\n\n{error}
+export_write_failed = Не вдалося записати файл експорту.\n\n{error}
+import_read_failed = Не вдалося прочитати цей файл як експорт ZBox.\n\n{error}
+import_not_export = Цей файл не схожий на експорт ZBox.\n\n{error}
+search_open_failed = Не вдалося відкрити це повідомлення.
+related_load_failed = Не вдалося завантажити це повідомлення.\n\n{error}
+reply_load_failed = Не вдалося завантажити повідомлення для відповіді.\n\n{error}
+forward_load_failed = Не вдалося завантажити повідомлення для пересилання.\n\n{error}
+action_failed = Не вдалося виконати цю дію.\n\n{error}
+undo_failed = Не вдалося скасувати: {label}.\n\n{error}
+copy_failed = Не вдалося скопіювати повідомлення.\n\n{error}
+delete_failed = Не вдалося видалити повідомлення.\n\n{error}
+archive_failed = Не вдалося заархівувати повідомлення.\n\n{error}
+master_password_not_changed = Не вдалося змінити головний пароль: {error}
+shortcut_failed_startup = Не вдалося створити ярлик на робочому столі:\n\n{error}\n\nZBox продовжить запуск. Можна спробувати пізніше в Налаштуваннях.
+account_locked_action = ZBox не може виконати дію: %s. У цьому сеансі не вдалося відкрити список облікових записів (%s), і нічого не змінено. Закрийте ZBox і запустіть знову, а коли буде запит, введіть головний пароль.
+send_tls_mismatch = Не вдалося надіслати повідомлення. Сервер вихідної пошти відповів без шифрування, тож шифрування вихідної пошти не відповідає порту. В Інструменти, Налаштування облікового запису та профілів використовуйте STARTTLS для порту 587 або SSL/TLS для порту 465, а потім надішліть знову.\n\n{error}
+mark_folder_read_failed = Не вдалося позначити теку як прочитану.\n\n{error}
+update_failed = Не вдалося завантажити оновлення, тому нічого не змінено.\n\n{error}
+update_rolled_back = Не вдалося запустити оновлення, тому відновлено попередню версію.
+attachment_open_failed = Не вдалося відкрити вкладення.\n\n{error}
+headers_failed = Не вдалося завантажити заголовки повідомлення.\n\n{error}
+wizard_ms_sign_in_first = Увійдіть через Microsoft, перш ніж продовжити. Скористайтеся однією з двох кнопок входу на цій сторінці.
+wizard_provider_unsupported = ZBox не може увійти до цього постачальника. Причину вказано в примітці на цій сторінці. Поверніться й укажіть іншу адресу електронної пошти або скасуйте.
+acct_ms_sign_in_first = Увійдіть через Microsoft перед збереженням або виберіть «Пароль» як спосіб входу.
+ms_sign_in_again = Для {account} потрібно знову увійти через Microsoft. Відкрийте Налаштування облікового запису та профілів і увійдіть там.
+empty_trash_all_failed = Не вдалося очистити кошик для: {accounts}
+
+[help]

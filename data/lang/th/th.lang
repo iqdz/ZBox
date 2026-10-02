@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = ไทย
+code = th
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = ส่งข้อความแล้ว
+draft_saved = บันทึกฉบับร่างแล้ว
+signature_inserted = แทรกลายเซ็นแล้ว
+signature_none = บัญชีนี้ไม่มีลายเซ็น
+signature_saved = บันทึกลายเซ็นแล้ว
+signature_not_saved = ไม่ได้บันทึกลายเซ็น
+pasted_as_quotation = วางเป็นถ้อยคำอ้างอิงแล้ว
+clipboard_empty = ไม่มีอะไรในคลิปบอร์ด
+word_count = {words} คำ, {characters} อักขระ
+report_copied = คัดลอกรายงานแล้ว
+compose_tab_needed = คำสั่งนั้นต้องใช้แท็บเขียนข้อความ
+attach_file_instead = ไฟล์ที่ลากมาวางจะไม่ถูกใส่ในเนื้อความ ใช้ แนบไฟล์ เพื่อส่งไฟล์
+
+# Formatting in the message body
+formatting_here = การจัดรูปแบบที่นี่: {formatting}
+no_formatting_here = ไม่มีการจัดรูปแบบที่นี่ เป็นข้อความธรรมดา
+
+# Spelling
+nothing_to_check = ไม่มีอะไรให้ตรวจสอบ
+no_misspellings = ไม่มีคำสะกดผิด
+spelling_dictionary_unavailable = พจนานุกรมการสะกดคำไม่พร้อมใช้งาน
+next_misspelling_first = ใช้ คำสะกดผิดถัดไป ก่อน
+word_added = เพิ่ม {word} ลงในพจนานุกรมแล้ว
+word_not_added = ไม่สามารถเพิ่ม {word} ได้
+corrections_applied_one = ใช้การแก้ไข 1 รายการแล้ว
+corrections_applied_many = ใช้การแก้ไข {count} รายการแล้ว
+corrections_applied_partly = ใช้การแก้ไข {applied} จาก {total} รายการแล้ว ที่เหลือถูกปฏิเสธ ดูบันทึก
+occurrences_replaced_one = แทนที่ 1 ตำแหน่งแล้ว
+occurrences_replaced_many = แทนที่ {count} ตำแหน่งแล้ว
+
+# Reading mail
+message_did_not_open = ข้อความไม่เปิด เซิร์ฟเวอร์ไม่ตอบสนอง กด Enter เพื่อลองอีกครั้ง
+thread_open = {messages} ในเธรดนี้ กดอีกครั้งเพื่อปิด
+no_thread_selected = ไม่ได้เลือกเธรด
+thread_watched = เฝ้าดูเธรดแล้ว
+thread_not_watched = เลิกเฝ้าดูเธรดแล้ว
+thread_ignored = เพิกเฉยเธรดแล้ว
+thread_not_ignored = เลิกเพิกเฉยเธรดแล้ว
+none_found = ไม่พบ
+refreshing_this_folder = กำลังรีเฟรชโฟลเดอร์นี้
+refreshing_all_accounts = กำลังรีเฟรชบัญชีทั้งหมด
+message_view_html = มุมมองข้อความ: HTML (แสดงผล)
+message_view_text = มุมมองข้อความ: ข้อความธรรมดา
+html_view_still_loading = ข้อความยังโหลดอยู่ Escape จะปิดข้อความ
+message_still_opening = กำลังเปิดข้อความ เซิร์ฟเวอร์ทำงานช้า
+remote_content_blocked = ปิดกั้นเนื้อหาระยะไกลแล้ว
+remote_content_unblocked = เลิกปิดกั้นเนื้อหาระยะไกลแล้ว
+remote_content_already_showing = เนื้อหาระยะไกลแสดงอยู่ในข้อความนี้แล้ว
+archived = เก็บถาวรแล้ว
+copied_to_folder = คัดลอกไปยัง {to_folder} แล้ว
+deleted_one = ลบข้อความอย่างถาวรแล้ว
+deleted_many = ลบ {count} ข้อความอย่างถาวรแล้ว
+trashed_one = ย้ายข้อความไปยังถังขยะแล้ว
+trashed_many = ย้าย {count} ข้อความไปยังถังขยะแล้ว
+
+# Accounts and new mail
+no_account_yet = ยังไม่มีบัญชีให้ไป
+inbox_landed = กล่องขาเข้าของ {name}
+account_enabled = เปิดใช้งาน {name} แล้ว
+auto_check_paused = หยุดการตรวจสอบอัตโนมัติชั่วคราวสำหรับ {account}
+auto_check_resumed = เปิดการตรวจสอบอัตโนมัติสำหรับ {account}
+account_disabled = ปิดใช้งาน {name} แล้ว
+new_mail_one = ข้อความใหม่ 1 ข้อความสำหรับ {name}
+new_mail_many = ข้อความใหม่ {count} ข้อความสำหรับ {name}
+refresh_all_done_one = รีเฟรช 1 บัญชีแล้ว
+refresh_all_done_many = รีเฟรช {count} บัญชีแล้ว
+refresh_all_done_failures = รีเฟรช {count} บัญชีแล้ว รีเฟรชไม่ได้ {failed} บัญชี
+refresh_all_done_failures_one = รีเฟรช {count} บัญชีแล้ว รีเฟรชไม่ได้ {failed} บัญชี
+
+# The sender of the message in view
+sender_address_copied = {sender} คัดลอกที่อยู่แล้ว
+sender_no_address = {sender} ไม่มีที่อยู่ให้คัดลอก
+clipboard_not_opened = {sender} ไม่สามารถเปิดคลิปบอร์ดได้
+
+# The signature editor
+signature_page_formatted = จัดรูปแบบแล้ว นี่คือสิ่งที่จะถูกบันทึก
+signature_page_html = ซอร์ส HTML นี่คือสิ่งที่จะถูกบันทึก
+signature_page_html_still_wins = จัดรูปแบบแล้ว สิ่งที่จะถูกบันทึกยังคงเป็นซอร์ส HTML
+
+# Background work
+phishing_list_updating = กำลังอัปเดตรายการฟิชชิงในเบื้องหลัง
+cache_cleared = ล้างไฟล์แคช {files} ไฟล์แล้ว {size} MB
+hotkeys_diagnostic_on = การวินิจฉัยปุ่มลัด เปิด ทำเครื่องหมายแล้ว
+hotkeys_diagnostic_off = การวินิจฉัยปุ่มลัด ปิด ไม่ได้ทำเครื่องหมาย
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = เก็บถาวร
+action_delete = ลบ
+action_delete_permanently = ลบอย่างถาวร
+action_mark_as_junk = ทำเครื่องหมายว่าเป็นขยะ
+action_mark_as_not_junk = ทำเครื่องหมายว่าไม่เป็นขยะ
+action_move_to = ย้ายไปยัง
+action_copy_to = คัดลอกไปยัง
+action_mark_message = ทำเครื่องหมายข้อความ
+action_undo = เลิกทำ
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = เลิกทำ {action} แล้ว
+undo_done_many = เลิกทำ {action} สำหรับ {count} ข้อความแล้ว
+junk_marked_one = ทำเครื่องหมายว่าเป็นขยะแล้ว
+junk_marked_many = ทำเครื่องหมาย {count} ข้อความว่าเป็นขยะแล้ว
+junk_no_new_sender = ไม่ได้ปิดกั้นผู้ส่งรายใหม่: ถูกปิดกั้นอยู่แล้ว เป็นรายชื่อผู้รับจดหมาย หรือเป็นที่อยู่ของคุณเอง
+not_junk_marked_one = ทำเครื่องหมายว่าไม่เป็นขยะแล้ว
+not_junk_marked_many = ทำเครื่องหมาย {count} ข้อความว่าไม่เป็นขยะแล้ว
+moved_to_one = ย้ายไปยัง {to_folder} แล้ว
+moved_to_many = ย้าย {count} ข้อความไปยัง {to_folder} แล้ว
+copied_to_many = คัดลอก {count} ข้อความไปยัง {to_folder} แล้ว
+marked_read = ทำเครื่องหมายว่าอ่านแล้ว
+marked_unread = ทำเครื่องหมายว่ายังไม่ได้อ่าน
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = ยกเลิกหลังจาก {completed} จาก {total} สำเร็จ {succeeded} ล้มเหลว {failed}
+bulk_failed_one = {done} ล้มเหลว {failed} จาก 1 ข้อความ
+bulk_failed_many = {done} ล้มเหลว {failed} จาก {total} ข้อความ
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = ตัวหนา
+format_word_italic = ตัวเอียง
+format_word_strike = ขีดทับ
+format_word_href = ลิงก์
+format_word_bullet = รายการสัญลักษณ์แสดงหัวข้อ
+format_word_number = รายการลำดับเลข
+format_word_quote = อ้างอิง
+format_word_code = โค้ด
+format_word_heading1 = หัวเรื่อง
+format_applied = ใช้ {formatting} แล้ว
+format_inserted = แทรก {formatting} แล้ว
+format_not_available = {formatting} ใช้ไม่ได้ในเนื้อความแบบข้อความธรรมดา
+format_on = {formatting} เปิด
+format_off = {formatting} ปิด
+link_applied = ใช้ลิงก์แล้ว
+link_applied_to_selection = ใช้ลิงก์กับส่วนที่เลือกแล้ว
+plain_body_formatting = เนื้อความแบบข้อความธรรมดาแสดงการจัดรูปแบบเป็นแท็ก
+
+# Reaching either end of a thread
+thread_edge_first = ข้อความแรกในเธรดนี้ กดอีกครั้งเพื่อปิด
+thread_edge_last = ข้อความสุดท้ายในเธรดนี้ กดอีกครั้งเพื่อปิด
+jump_unified_inbox = กล่องขาเข้าแบบรวม
+remote_none = ไม่มีเนื้อหาระยะไกลในข้อความนี้
+sender_none = ข้อความนี้ไม่มีผู้ส่ง
+sender_name_no_address = %s ไม่มีที่อยู่
+signature_not_switched = ไม่ได้เปลี่ยนลายเซ็น กด Ctrl+Shift+S เพื่อแทรกลายเซ็นของบัญชีนี้
+signature_removed_no_signature = เอาลายเซ็นออกแล้ว บัญชีนี้ไม่มีลายเซ็น
+signature_switched = เปลี่ยนเป็นลายเซ็นของบัญชีนี้แล้ว
+spell_not_replaced = ไม่สามารถแทนที่คำได้
+spell_replaced_with = แทนที่ด้วย {word} แล้ว
+folder_marked_read = ทำเครื่องหมาย {count} ข้อความว่าอ่านแล้ว
+folder_no_unread = ไม่มีข้อความที่ยังไม่ได้อ่าน
+threads_all_collapsed = ยุบเธรดทั้งหมดแล้ว
+threads_all_expanded = ขยายเธรดทั้งหมดแล้ว
+upd_percent = {percent} เปอร์เซ็นต์
+upd_download_done = ดาวน์โหลดเสร็จแล้ว กำลังเตรียมการอัปเดต...
+upd_updated_to = อัปเดต ZBox เป็น {version} แล้ว
+header_copied = คัดลอกแล้ว
+headers_copied = คัดลอกส่วนหัวทั้งหมดแล้ว
+identity_copies_updated = อัปเดตสำเนาถึงและสำเนาลับถึงสำหรับข้อมูลประจำตัวนี้แล้ว
+signature_switched_identity = เปลี่ยนลายเซ็นเป็นของข้อมูลประจำตัวนี้แล้ว
+signature_removed_identity = ลบลายเซ็นแล้ว ข้อมูลประจำตัวนี้ไม่มีลายเซ็น
+signature_not_switched_identity = ไม่ได้เปลี่ยนลายเซ็น กด Ctrl+Shift+S เพื่อแทรกลายเซ็นของข้อมูลประจำตัวนี้
+signature_none_identity = ข้อมูลประจำตัวนี้ไม่มีลายเซ็น
+move_keys_no_selection = เลือกข้อความก่อน
+move_keys_no_folders = ยังไม่มีโฟลเดอร์ให้เลือก โปรดลองอีกครั้งในอีกสักครู่
+block_sender_done_one = บล็อก {sender} แล้ว ข้อความใหม่จากผู้ส่งนี้จะไปที่ถังขยะ
+block_sender_done_many = บล็อกผู้ส่ง {count} รายแล้ว ข้อความใหม่จากพวกเขาจะไปที่ถังขยะ
+block_sender_already = {sender} ถูกบล็อกอยู่แล้ว
+block_sender_own = ไม่ได้บล็อก: นี่เป็นที่อยู่ของคุณเอง
+block_sender_list_unknown = ไม่ได้บล็อก: ข้อความนี้มาทางรายชื่อส่งจดหมายและไม่ได้ระบุว่าใครส่ง การบล็อกที่อยู่ของรายชื่อจะบล็อกสมาชิกทุกคน
+block_sender_moved = บล็อกผู้ส่งแล้ว ย้ายข้อความ {count} ฉบับไปที่ถังขยะ
+block_senders_moved = บล็อกผู้ส่ง {senders} รายแล้ว ย้ายข้อความ {count} ฉบับไปที่ถังขยะ
+unblock_sender_moved = เลิกบล็อกผู้ส่งแล้ว ย้ายข้อความ {count} ฉบับไปที่กล่องจดหมายเข้า
+unblock_senders_moved = เลิกบล็อกผู้ส่ง {senders} รายแล้ว ย้ายข้อความ {count} ฉบับไปที่กล่องจดหมายเข้า
+unblock_sender_done = เลิกบล็อก {sender} แล้ว
+unblock_sender_not_blocked = {sender} ไม่ได้ถูกบล็อก
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = พิมพ์ด้านบนแล้วกด Enter หรือเลือก ค้นหา
+search_no_account = เพิ่มบัญชีก่อน
+search_no_term = พิมพ์สิ่งที่ต้องการค้นหา
+search_running = กำลังค้นหา...
+search_none = ไม่มีผลลัพธ์สำหรับ "{term}"
+search_found_one = 1 ผลลัพธ์สำหรับ "{term}"
+search_found_many = {count} ผลลัพธ์สำหรับ "{term}"
+search_failed = การค้นหาล้มเหลว
+
+# The related messages tab
+related_running = กำลังค้นหา...
+related_none = ไม่พบข้อความที่เกี่ยวข้อง
+related_found_one = พบข้อความที่เกี่ยวข้อง 1 ข้อความ
+related_found_many = พบข้อความที่เกี่ยวข้อง {count} ข้อความ
+related_failed = ไม่สามารถค้นหาข้อความที่เกี่ยวข้องได้
+
+# Writing and sending
+sending_via = กำลังส่งผ่าน {sender}...
+send_failed = การส่งล้มเหลว ดูรายละเอียดในบันทึก
+draft_autosaved = บันทึกฉบับร่างอัตโนมัติแล้ว
+draft_autosave_failed = การบันทึกฉบับร่างอัตโนมัติล้มเหลว ดูรายละเอียดในบันทึก
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = เนื้อหาระยะไกลจะโหลดสำหรับข้อความจาก {sender} แล้ว
+downloading_attachment = กำลังดาวน์โหลด {filename}...
+downloading_attachments_one = กำลังดาวน์โหลดไฟล์แนบ 1 ไฟล์...
+downloading_attachments_many = กำลังดาวน์โหลดไฟล์แนบ {count} ไฟล์...
+saved_to = บันทึกไปยัง {folder} แล้ว
+attachment_download_failed = การดาวน์โหลดไฟล์แนบล้มเหลว
+
+# Getting mail onto the screen
+loading_folder = กำลังโหลด {folder} สำหรับ {account}...
+messages_in_folder = {count} ข้อความใน {folder}
+messages_in_folder_cached = {count} ข้อความใน {folder} (สำเนาที่ประสานล่าสุด กำลังอัปเดต...)
+no_offline_copy = ยังไม่มีสำเนาออฟไลน์ของ {folder}
+refresh_failed_cached = ไม่สามารถรีเฟรช {folder} ได้: กำลังแสดงสำเนาที่ประสานล่าสุด
+no_such_folder = บัญชีนี้ไม่มีโฟลเดอร์ {folder}
+load_failed = โหลดข้อความไม่สำเร็จ ดูรายละเอียดในบันทึก
+no_more_to_load = ไม่มีข้อความให้โหลดเพิ่มในโฟลเดอร์นี้
+loading_more = กำลังโหลดข้อความเพิ่มใน {folder}...
+more_loaded = โหลดข้อความเพิ่ม {count} ข้อความแล้ว
+no_more_messages = ไม่มีข้อความเพิ่มในโฟลเดอร์นี้
+load_more_failed = ไม่สามารถโหลดข้อความเพิ่มได้: {error}
+loading_unified = กำลังโหลด {folder} แบบรวม...
+messages_in_unified = {count} ข้อความจากทุกบัญชีใน {folder} แบบรวม
+messages_in_unified_cached = {count} ข้อความใน {folder} แบบรวม (สำเนาที่ประสานล่าสุด กำลังอัปเดต...)
+auto_purge_done = การล้างอัตโนมัติเอาข้อความเก่า {count} ข้อความออกจากถังขยะ/ขยะแล้ว
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = พร้อม
+opening_message = กำลังเปิดข้อความ...
+opening_message_already = กำลังเปิดข้อความ... (กำลังโหลดอยู่แล้ว)
+could_not_open_message = ไม่สามารถเปิดข้อความได้
+could_not_open_that_message = ไม่สามารถเปิดข้อความนั้นได้
+could_not_load_message = ไม่สามารถโหลดข้อความนี้ได้
+message_still_loading = ข้อความนั้นยังโหลดอยู่
+folder_still_loading = โฟลเดอร์นี้ยังโหลดอยู่ -- ลองอีกครั้งในอีกสักครู่
+not_in_thread = ข้อความนี้ไม่ได้อยู่ในเธรด
+no_longer_in_thread = ข้อความนี้ไม่ได้อยู่ในเธรดแล้ว
+thread_position = ข้อความ {position} จาก {total} ในเธรดนี้
+thread_finished_one = อ่านเธรดนี้จบแล้ว (1 ข้อความ)
+thread_finished_many = อ่านเธรดนี้จบแล้ว ({count} ข้อความ)
+select_message_first = เลือกข้อความก่อน
+conversation_failed = ไม่สามารถเปิดการสนทนานี้ได้
+select_message_for_related = เลือกข้อความที่ต้องการดูข้อความที่เกี่ยวข้องก่อน
+looking_for_related = กำลังค้นหาข้อความที่เกี่ยวข้อง...
+no_threading_headers = ข้อความนี้ไม่มี Message-ID หรือส่วนหัวเธรดให้ค้นหา
+reply_one_at_a_time = ตอบกลับใช้ได้ทีละข้อความ โปรดเลือกข้อความเดียว
+select_message_to_reply = เลือกข้อความที่จะตอบกลับก่อน
+preparing_reply = กำลังเตรียมการตอบกลับ...
+reply_load_failed = ไม่สามารถโหลดข้อความต้นฉบับเพื่อตอบกลับได้
+select_message_to_forward = เลือกข้อความที่จะส่งต่อก่อน
+preparing_forward = กำลังเตรียมข้อความเพื่อส่งต่อ...
+forward_load_failed = ไม่สามารถโหลดข้อความเพื่อส่งต่อได้
+compose_tab_needed_hint = คำสั่งนั้นต้องใช้แท็บเขียนข้อความ กด Ctrl+N เพื่อเขียนข้อความ
+open_message_first_view = เปิดข้อความก่อน แล้วกด Ctrl+B เพื่อสลับมุมมอง
+open_message_first_remote = เปิดข้อความก่อน แล้วกด Ctrl+Shift+I เพื่อโหลดเนื้อหาระยะไกล
+
+# Acting on messages
+copying_message = กำลังคัดลอกข้อความ...
+copy_failed = การคัดลอกล้มเหลว
+delete_failed = การลบล้มเหลว
+already_in_archive = อยู่ในการเก็บถาวรแล้ว
+archiving = กำลังเก็บถาวร...
+archive_failed = การเก็บถาวรล้มเหลว
+action_failed = {action} ล้มเหลว
+nothing_to_undo = ไม่มีอะไรให้เลิกทำ
+undo_failed = ไม่สามารถเลิกทำ {action} ได้
+
+# Views and folders
+folder_pane_all = บานหน้าต่างโฟลเดอร์: โฟลเดอร์ทั้งหมด
+folder_pane_unified = บานหน้าต่างโฟลเดอร์: โฟลเดอร์แบบรวม
+sorted_ascending = เรียงตาม {field} จากน้อยไปมาก
+sorted_descending = เรียงตาม {field} จากมากไปน้อย
+unified_folders_updated = อัปเดตโฟลเดอร์แบบรวมแล้ว
+zoom_reset = ตั้งขนาดแบบอักษรข้อความกลับเป็นค่าเริ่มต้นแล้ว
+folder_creating = กำลังสร้างโฟลเดอร์ "{folder}"...
+folder_created = สร้างโฟลเดอร์ "{folder}" แล้ว
+folder_create_failed = ไม่สามารถสร้างโฟลเดอร์ได้
+folder_renaming = กำลังเปลี่ยนชื่อ "{folder}" เป็น "{new_name}"...
+folder_renamed = เปลี่ยนชื่อโฟลเดอร์เป็น "{new_name}" แล้ว
+folder_rename_failed = ไม่สามารถเปลี่ยนชื่อโฟลเดอร์ได้
+folder_deleting = กำลังลบโฟลเดอร์ "{folder}"...
+folder_deleted = ลบโฟลเดอร์แล้ว
+folder_delete_failed = ไม่สามารถลบโฟลเดอร์ได้
+folder_subscribing = กำลังบอกรับ "{folder}"...
+folder_unsubscribing = กำลังเลิกบอกรับ "{folder}"...
+folder_subscribed = บอกรับแล้ว
+folder_unsubscribed = เลิกบอกรับแล้ว
+folder_subscribe_failed = ไม่สามารถบอกรับโฟลเดอร์ได้
+folder_unsubscribe_failed = ไม่สามารถเลิกบอกรับโฟลเดอร์ได้
+
+# Accounts
+account_not_added = ไม่ได้เพิ่มบัญชี
+account_added = เพิ่มบัญชีแล้ว: {account}
+account_settings_not_saved = ไม่ได้บันทึกการตั้งค่าบัญชี
+account_updated = อัปเดตบัญชีแล้ว: {account}
+account_not_removed = ไม่ได้เอาบัญชีออก
+account_removed = เอาบัญชีออกแล้ว
+account_removed_with_files = เอาบัญชีออกแล้ว ลบไฟล์ในเครื่อง {count} ไฟล์แล้ว
+default_account_failed = ไม่สามารถตั้งบัญชีเริ่มต้นได้
+default_account_set = {account} เป็นบัญชีเริ่มต้นแล้ว
+auto_check_not_saved = ไม่ได้บันทึกการตั้งค่าการตรวจสอบอัตโนมัติ
+mute_not_saved = ไม่ได้บันทึกการตั้งค่าปิดเสียง
+account_muted = ปิดเสียง {account} แล้ว
+account_unmuted = เลิกปิดเสียง {account} แล้ว
+export_done = ส่งออก {count} บัญชีและการตั้งค่าไปยัง {path} แล้ว
+import_done = นำเข้า {count} บัญชีจาก {path} แล้ว
+
+# Filters, cache and the background lists
+filters_not_saved = ไม่ได้บันทึกตัวกรอง
+filters_saved = บันทึกตัวกรองสำหรับ {account} แล้ว
+filters_checking = กำลังตรวจสอบ {folder} กับตัวกรองของคุณ...
+filters_none_matched = เรียกใช้ตอนนี้: ไม่มีข้อความใน {folder} ที่ตรงกับกฎที่เปิดใช้งาน
+filters_run_failed = ไม่สามารถเรียกใช้ตัวกรองได้
+filters_moving = กำลังย้าย {count} ข้อความที่กรองแล้ว...
+filters_move_failures = ตัวกรอง: ไม่สามารถย้าย {count} ข้อความได้
+filters_moved = ตัวกรองย้าย {count} ข้อความจาก {folder} แล้ว
+filters_move_failed = ไม่สามารถย้ายข้อความที่กรองแล้วได้
+cache_not_cleared = ไม่ได้ล้างแคช
+auto_cache_cleanup = การล้างแคชอัตโนมัติ: ข้อความที่เก่ากว่า {age}
+phishing_update_failed = ไม่สามารถอัปเดตรายการฟิชชิงได้: {error}
+blocklist_update_failed = ไม่สามารถอัปเดตรายการปิดกั้นได้: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = เปิดข้อความก่อน แล้วใช้ บันทึกเป็น
+saving_message = กำลังบันทึกข้อความ...
+save_file_failed = ไม่สามารถบันทึกไฟล์ได้
+save_fetch_failed = ไม่สามารถดึงข้อความเพื่อบันทึกได้
+open_message_first_print = เปิดข้อความก่อน แล้วใช้ พิมพ์
+open_message_first_preview = เปิดข้อความก่อน แล้วใช้ ตัวอย่างก่อนพิมพ์
+refreshing_accounts = กำลังรีเฟรช {count} บัญชี...
+emptying_trash = กำลังล้างข้อมูลในถังขยะสำหรับ {account}...
+trash_already_empty = ถังขยะว่างอยู่แล้ว
+trash_emptied = ล้างข้อมูลในถังขยะแล้ว: ลบถาวร {count} ข้อความ
+empty_trash_failed = ไม่สามารถล้างข้อมูลในถังขยะได้
+emptying_junk = กำลังล้างขยะสำหรับ {account}...
+junk_already_empty = โฟลเดอร์ขยะว่างอยู่แล้ว
+junk_emptied = ล้างขยะแล้ว: ลบถาวร {count} ข้อความ
+junk_emptied_prefix = ล้างขยะแล้ว:
+junk_part_purged = ลบถาวร {count}
+junk_part_in_trash = {count} ย้ายไปยังถังขยะแล้วแต่ไม่ยืนยันว่าลบแล้ว ตรวจสอบถังขยะ
+junk_part_not_moved = {count} ไม่ได้ย้ายไปยังถังขยะ ยังอยู่ในขยะ
+empty_junk_failed = ไม่สามารถล้างขยะได้
+back_online = กลับมาออนไลน์แล้ว
+offline_sync_running = กำลังประสาน {account} สำหรับการใช้งานออฟไลน์...
+offline_sync_failed = การประสานออฟไลน์ล้มเหลว: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = เลือกหรือเปิดข้อความก่อน
+select_or_open_message_ctrl_u = เลือกหรือเปิดข้อความก่อน แล้วกด Ctrl+U
+no_sender_address = ข้อความนี้ไม่มีที่อยู่ผู้ส่งให้เพิ่ม
+contact_added = เพิ่ม {contact} ลงในสมุดรายชื่อของคุณแล้ว
+contact_already_there = {contact} อยู่ในสมุดรายชื่อของคุณแล้ว
+privacy_saved = บันทึกการตั้งค่าความเป็นส่วนตัวแล้ว เปิดข้อความอีกครั้งเพื่อใช้การตั้งค่า
+message_font_size = ขนาดแบบอักษรข้อความ: {size} pt
+
+# Deleting and moving several messages
+deleting_one = กำลังลบข้อความอย่างถาวร
+deleting_many = กำลังลบ {count} ข้อความอย่างถาวร
+trashing_one = กำลังย้ายข้อความไปยังถังขยะ
+trashing_many = กำลังย้าย {count} ข้อความไปยังถังขยะ
+undo_partly_restored = เลิกทำ {action} แล้ว แต่กู้คืนไม่ได้ {count} รายการ -- อาจถูกย้าย ลบ หรือหมดอายุอีกครั้งตั้งแต่นั้น
+moves_report = {action}: ย้ายแล้ว {moved} จาก {total} ข้อความ
+moves_report_failed = ไม่ได้ย้าย ยังอยู่ในโฟลเดอร์เดิม: {count}
+
+tray_tooltip_one = ZBox — ข้อความที่ยังไม่ได้อ่าน 1 ข้อความ
+tray_tooltip_many = ZBox — ข้อความที่ยังไม่ได้อ่าน {count} ข้อความ
+account_unreachable = ไม่สามารถติดต่อ {account} ได้ การตรวจสอบอัตโนมัติสำหรับบัญชีนี้หยุดชั่วคราว {minutes} นาที
+bulk_copy_failed = ไม่สามารถคัดลอกข้อความได้
+bulk_copy_failed_status = การคัดลอกล้มเหลว
+bulk_loading_archive = ข้อความยังโหลดอยู่ -- ลองเก็บถาวรอีกครั้งในอีกสักครู่
+bulk_loading_delete = ข้อความยังโหลดอยู่ -- ลองลบอีกครั้งในอีกสักครู่
+bulk_loading_flag = ข้อความยังโหลดอยู่ -- ลองติดดาวอีกครั้งในอีกสักครู่
+bulk_loading_generic = ข้อความยังโหลดอยู่ -- ลองอีกครั้งในอีกสักครู่
+bulk_none = ไม่ได้เลือกข้อความ
+bulk_none_archive = ไม่ได้เลือกข้อความที่จะเก็บถาวร
+bulk_none_delete = ไม่ได้เลือกข้อความที่จะลบ
+bulk_none_junk = ไม่ได้เลือกข้อความที่จะทำเครื่องหมายว่าเป็นขยะ
+bulk_none_not_junk = ไม่ได้เลือกข้อความที่จะทำเครื่องหมายว่าไม่เป็นขยะ
+delete_refused_still = เซิร์ฟเวอร์ปฏิเสธการลบ ข้อความยังอยู่ใน {folder}
+delete_refused_trash = ข้อความอยู่ในถังขยะ แต่เซิร์ฟเวอร์ปฏิเสธการลบอย่างถาวร
+delete_resume_failed = ไม่สามารถลบ {count} ข้อความจากการลบครั้งก่อนได้
+done_perm_delete_one = ลบข้อความอย่างถาวรแล้ว
+done_trash_one = ย้ายข้อความไปยังถังขยะแล้ว
+filters_applied = ใช้ตัวกรองกับ {count} ข้อความใน {folder} แล้ว
+filters_failed = ไม่สามารถเรียกใช้ตัวกรองได้
+filters_running = กำลังเรียกใช้ตัวกรองบน {folder}
+flag_failed = ไม่สามารถอัปเดตดาวได้
+flag_updated = อัปเดตดาวแล้ว
+folder_verb_subscribing = กำลังบอกรับ
+folder_verb_unsubscribing = กำลังเลิกบอกรับ
+mark_read_failed = ไม่สามารถทำเครื่องหมายข้อความว่าอ่านแล้วได้
+mark_unread_failed = ไม่สามารถทำเครื่องหมายข้อความว่ายังไม่ได้อ่านได้
+notify_new_mail_body = {noun}ใหม่ {count} รายการสำหรับ {name}
+notify_new_mail_title = จดหมายใหม่
+notify_noun_many = ข้อความ
+notify_noun_one = ข้อความ
+report_done = {verb} {done} จาก {count} ข้อความ
+report_verb_deleted = ลบแล้ว
+report_verb_permanent = ลบอย่างถาวรแล้ว
+running_copy_many = กำลังคัดลอก {count} ข้อความ
+running_copy_one = กำลังคัดลอกข้อความ
+running_junk_many = กำลังทำเครื่องหมาย {count} ข้อความว่าเป็นขยะ
+running_junk_one = กำลังทำเครื่องหมายว่าเป็นขยะ
+running_move_many = กำลังย้าย {count} ข้อความ
+running_move_one = กำลังย้าย
+running_not_junk_many = กำลังทำเครื่องหมาย {count} ข้อความว่าไม่เป็นขยะ
+running_not_junk_one = กำลังทำเครื่องหมายว่าไม่เป็นขยะ
+running_perm_delete_one = กำลังลบข้อความอย่างถาวร...
+running_read_many = กำลังทำเครื่องหมาย {count} ข้อความว่าอ่านแล้ว
+running_read_one = กำลังทำเครื่องหมายว่าอ่านแล้ว
+running_trash_one = กำลังย้ายข้อความไปยังถังขยะ...
+running_unread_many = กำลังทำเครื่องหมาย {count} ข้อความว่ายังไม่ได้อ่าน
+running_unread_one = กำลังทำเครื่องหมายว่ายังไม่ได้อ่าน
+settings_saved_no_startup = บันทึกการตั้งค่าแล้ว ไม่สามารถอัปเดตรายการเริ่มต้นของ Windows ได้
+settings_saved_status = บันทึกการตั้งค่าแล้ว
+spam_blocked_sender = ผู้ส่งที่ถูกปิดกั้น
+spam_possible_phishing = อาจเป็นฟิชชิง
+undo_running_many = กำลังเลิกทำ {action} ({count} ข้อความ)
+undo_running_one = กำลังเลิกทำ {action}
+mark_folder_read_failed = ไม่สามารถทำเครื่องหมายโฟลเดอร์ว่าอ่านแล้วได้
+marking_folder_read = กำลังทำเครื่องหมายโฟลเดอร์ว่าอ่านแล้ว...
+upd_ready_at_exit = มีการอัปเดตที่ดาวน์โหลดไว้แล้ว จะติดตั้งเมื่อคุณออกจาก ZBox
+upd_checking = กำลังตรวจหาการอัปเดต...
+upd_up_to_date = ZBox เป็นรุ่นล่าสุดแล้ว
+upd_available_source = มี ZBox {version} ให้ใช้งาน สำเนานี้ทำงานจากซอร์สโค้ด จึงควรอัปเดตด้วย git
+upd_check_failed = ไม่สามารถตรวจหาการอัปเดต: {error}
+opening_attachment = กำลังเปิด {filename}...
+loading_headers = กำลังโหลดส่วนหัว...
+offline_inbox_only = เก็บไว้ใช้แบบออฟไลน์เฉพาะกล่องจดหมายเข้าและการเก็บถาวรเท่านั้น
+offline_sync_done_inbox = ซิงค์ข้อความในกล่องจดหมายเข้าและการเก็บถาวร {count} ฉบับไว้ใช้แบบออฟไลน์แล้ว
+working_offline = ทำงานออฟไลน์: กำลังแสดงสำเนาที่ประสานล่าสุดของกล่องขาเข้า/ที่ส่งแล้ว/ฉบับร่าง
+emptying_trash_all = กำลังล้างถังขยะของทุกบัญชี...
+trash_emptied_all = ล้างถังขยะใน {accounts} บัญชีแล้ว: ลบข้อความ {count} ฉบับอย่างถาวร
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &ไฟล์
+bar_edit = &แก้ไข
+bar_view = &มุมมอง
+bar_message = &ข้อความ
+bar_compose = &เขียน
+bar_tools = &เครื่องมือ
+bar_help = &ช่วยเหลือ
+
+# File
+file_new = ใหม่
+file_new_message = ข้อความ
+file_new_account = บัญชีอีเมล...
+file_open_saved_message = เปิดข้อความที่บันทึกไว้...
+file_close = ปิด
+file_save_message_as = บันทึกข้อความเป็น...
+file_get_new_for = รับข้อความใหม่สำหรับ
+file_get_new_all = บัญชีทั้งหมด
+file_get_new_current = บัญชีปัจจุบัน
+file_offline = ออฟไลน์
+file_work_offline = ทำงานออฟไลน์
+file_sync_now = ประสานตอนนี้
+file_print = พิมพ์...
+file_print_preview = ตัวอย่างก่อนพิมพ์...
+file_exit = ออก
+
+# Edit
+edit_undo = เลิกทำ
+edit_select_all = เลือกทั้งหมด
+edit_find_messages = ค้นหาข้อความ...
+
+# Message
+message_reply = ตอบกลับ
+message_reply_all = ตอบกลับทั้งหมด
+message_forward = ส่งต่อ
+message_archive = เก็บถาวร
+message_delete = ลบ
+message_delete_permanently = ลบอย่างถาวร
+message_mark = ทำเครื่องหมาย
+mark_read = ว่าอ่านแล้ว
+mark_unread = ว่ายังไม่ได้อ่าน
+mark_flagged = ติดดาว
+mark_junk = ว่าเป็นขยะ
+mark_not_junk = ว่าไม่เป็นขยะ
+message_watch_thread = เฝ้าดูเธรด
+message_ignore_thread = เพิกเฉยเธรด
+message_open_conversation = เปิดข้อความในการสนทนา
+message_show_related = แสดงข้อความที่เกี่ยวข้อง
+message_add_sender_to_address_book = เพิ่มผู้ส่งลงในสมุดรายชื่อ
+message_announce_sender = ประกาศผู้ส่ง
+message_announce_copy_sender = ประกาศผู้ส่งและคัดลอกที่อยู่
+
+# View
+view_folders = โฟลเดอร์
+folders_all = ทั้งหมด
+folders_unified = แบบรวม
+folders_jump_inbox = ไปยังรายการข้อความในกล่องขาเข้า
+folders_configure_unified = กำหนดค่าโฟลเดอร์แบบรวม...
+view_sort_by = เรียงตาม
+sort_date = วันที่
+sort_subject = หัวเรื่อง
+sort_from = จาก
+sort_descending = จากมากไปน้อย (ใหม่สุดก่อน)
+sort_ascending = จากน้อยไปมาก (เก่าสุดก่อน)
+view_threads = เธรด
+threads_all = ทั้งหมด
+threads_watched = เธรดที่เฝ้าดู
+threads_ignored = เธรดที่เพิกเฉย
+threads_expand_all = ขยายเธรดทั้งหมด
+threads_collapse_all = ยุบเธรดทั้งหมด
+view_load_more = โหลดข้อความเพิ่ม
+view_toggle_message_view = สลับระหว่างมุมมองข้อความธรรมดาและ HTML
+view_show_remote_content = แสดงเนื้อหาระยะไกลในข้อความนี้
+view_message_zoom = การย่อขยายข้อความ
+zoom_increase = เพิ่มขนาดแบบอักษรข้อความ
+zoom_decrease = ลดขนาดแบบอักษรข้อความ
+zoom_reset = ตั้งขนาดแบบอักษรข้อความใหม่
+
+# Compose
+compose_send = &ส่ง
+compose_save_draft = &บันทึกฉบับร่าง
+compose_attach = &แนบไฟล์...
+compose_fmt_bold = &ตัวหนา
+compose_fmt_italic = &ตัวเอียง
+compose_fmt_strike = &ขีดทับ
+compose_fmt_bullet = &รายการสัญลักษณ์แสดงหัวข้อ
+compose_fmt_number = &รายการลำดับเลข
+compose_fmt_quote = &อ้างอิง
+compose_fmt_code = &โค้ด
+compose_fmt_heading1 = &หัวเรื่อง
+compose_link = &แทรกลิงก์...
+compose_formatting = &การจัดรูปแบบที่นี่
+compose_spellcheck = &ตรวจสอบการสะกดคำ...
+compose_spellcheck_next = &คำสะกดผิดถัดไป
+compose_spellcheck_add = &เพิ่มคำลงในพจนานุกรม
+compose_insert_signature = &แทรกลายเซ็น
+compose_paste_quotation = &วางเป็นถ้อยคำอ้างอิง
+compose_word_count = &จำนวนคำ
+compose_preview = &แสดงตัวอย่าง...
+compose_diagnostics = &การวินิจฉัยตัวเขียน...
+compose_edit_signature = &แก้ไขลายเซ็น...
+compose_hotkeys_diagnostic = &การวินิจฉัยปุ่มลัด
+
+# Tools
+tools_account_settings = การตั้งค่าบัญชีและข้อมูลประจำตัว...
+tools_mute_account = ปิดเสียงบัญชี
+tools_pause_auto_check = หยุดการตรวจสอบอัตโนมัติชั่วคราว
+tools_disable_account = ปิดใช้งานบัญชี
+tools_remove_account = เอาบัญชีออก...
+tools_address_book = สมุดรายชื่อ...
+tools_message_filters = ตัวกรองข้อความ...
+tools_import = นำเข้าบัญชีและการตั้งค่า...
+tools_export = ส่งออกบัญชีและการตั้งค่า...
+tools_cache_cleanup = กำหนดค่าการล้างแคช...
+tools_privacy = ความเป็นส่วนตัวและการปิดกั้นเนื้อหา...
+tools_settings = การตั้งค่า...
+
+# Help
+help_shortcuts = แป้นพิมพ์ลัด...
+help_about = เกี่ยวกับ ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = บัญชีใหม่...
+tree_account_settings = การตั้งค่าบัญชีและข้อมูลประจำตัว...
+tree_mute_account = ปิดเสียงบัญชี
+tree_pause_auto_check = หยุดการตรวจสอบอัตโนมัติชั่วคราว
+tree_enable_account = เปิดใช้งานบัญชี
+tree_disable_account = ปิดใช้งานบัญชี
+tree_set_default_account = ตั้งเป็นบัญชีเริ่มต้น
+tree_remove_account = เอาบัญชีออก...
+tree_refresh = รีเฟรช
+tree_new_folder = โฟลเดอร์ใหม่...
+tree_empty_trash = ล้างข้อมูลในถังขยะ
+tree_empty_junk = ล้างขยะ
+tree_rename_folder = เปลี่ยนชื่อโฟลเดอร์...
+tree_delete_folder = ลบโฟลเดอร์...
+tree_subscribe_folder = บอกรับโฟลเดอร์
+tree_unsubscribe_folder = เลิกบอกรับโฟลเดอร์
+
+# The message list menu, opened the same two ways
+list_select_all = เลือกทั้งหมด
+list_reply = ตอบกลับ
+list_reply_all = ตอบกลับทั้งหมด
+list_forward = ส่งต่อ
+list_mark = ทำเครื่องหมาย
+list_archive = เก็บถาวร
+list_delete_to_trash = ลบ (ย้ายไปยังถังขยะ)
+list_delete_permanently = ลบอย่างถาวร
+list_move_to = ย้ายไปยัง
+list_copy_to = คัดลอกไปยัง
+
+# The notification area icon
+tray_open = &เปิด ZBox
+tray_unread_one = ข้อความที่ยังไม่ได้อ่าน 1 ข้อความ
+tray_unread_many = ข้อความที่ยังไม่ได้อ่าน {count} ข้อความ
+tray_no_unread = ไม่มีข้อความที่ยังไม่ได้อ่าน
+tray_settings = &การตั้งค่า...
+tray_quit = &ออกจาก ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &ตัวหนา
+format_italic = &ตัวเอียง
+format_strike = &ขีดทับ
+format_bullet = &รายการสัญลักษณ์แสดงหัวข้อ
+format_number = &รายการลำดับเลข
+format_quote = &อ้างอิง
+format_code = &โค้ด
+format_heading1 = &หัวเรื่อง
+format_insert_link = &แทรกลิงก์...
+format_formatting_here = &การจัดรูปแบบที่นี่
+tools_enable_account = เปิดใช้งานบัญชี
+edit_undo_action = เลิกทำ {action}
+tree_mark_folder_read = ทำเครื่องหมายโฟลเดอร์ว่าอ่านแล้ว
+help_updates = การอัปเดต
+help_check_updates = ตรวจหาการอัปเดตตอนนี้...
+help_update_settings = การตั้งค่าการอัปเดต...
+help_releases_page = เปิดหน้ารุ่นที่เผยแพร่
+message_attachments = ไฟล์แนบ
+message_no_attachments = ไม่มีไฟล์แนบ
+message_save_all_attachments = บันทึกไฟล์แนบทั้งหมด
+view_full_headers = ส่วนหัวทั้งหมด
+folders_go_to_tree = ไปที่รายการโฟลเดอร์
+list_block_sender = บล็อกผู้ส่งนี้
+list_unblock_sender = เลิกบล็อกผู้ส่งนี้
+
+[dialogs]
+set_theme_restart_confirm = เริ่ม ZBox ใหม่เพื่อใช้การเปลี่ยนแปลงชุดตกแต่งหรือไม่?
+set_ui_theme_label = &ชุดตกแต่งส่วนติดต่อ:
+set_ui_theme_note = สีของเมนู รายการ กล่องโต้ตอบ และมุมมองข้อความธรรมดา ตามระบบ ใช้โหมดแอปสว่างหรือมืดของ Windows เอง น้ำเงินเที่ยงคืน มืดอบอุ่น และคอนทราสต์นุ่มนวล เป็นชุดตกแต่งสีมืดที่มีสีนุ่มนวลกว่า ข้อความ HTML คงสีของตัวเอง และความคมชัดสูงของ Windows มีความสำคัญเหนือกว่าเสมอ มีผลในครั้งถัดไปที่ ZBox เริ่มทำงาน
+set_theme_system = ตามระบบ
+set_theme_light = สว่าง
+set_theme_dark = มืด
+set_theme_midnight = น้ำเงินเที่ยงคืน
+set_theme_warm = มืดอบอุ่น
+set_theme_soft = คอนทราสต์นุ่มนวล
+set_language_restart_confirm = เริ่ม ZBox ใหม่เพื่อใช้การเปลี่ยนแปลงภาษาหรือไม่?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = ติดต่อ Harith
+title_identity = ข้อมูลประจำตัว
+title_show_password = แสดงรหัสผ่าน
+title_missing_information = ข้อมูลไม่ครบ
+title_unsupported_provider = ผู้ให้บริการที่ไม่รองรับ
+title_test_connection = ทดสอบการเชื่อมต่อ
+title_new_contact = ผู้ติดต่อใหม่
+title_edit_contact = แก้ไขผู้ติดต่อ
+title_delete_contact = ลบผู้ติดต่อ
+title_import_contacts = นำเข้าผู้ติดต่อ
+title_export_contacts = ส่งออกผู้ติดต่อ
+title_rename_group = เปลี่ยนชื่อกลุ่ม
+title_delete_group = ลบกลุ่ม
+title_send = ส่ง
+title_send_failed = การส่งล้มเหลว
+title_attach_file = แนบไฟล์
+title_save_draft = บันทึกฉบับร่าง
+title_documentation = เอกสาร ZBox
+title_open_link = เปิดลิงก์
+title_filter_rule = กฎตัวกรอง
+title_master_password = รหัสผ่านหลัก
+title_attachment_saved = บันทึกไฟล์แนบแล้ว
+title_attachments_saved = บันทึกไฟล์แนบแล้ว
+title_download_failed = การดาวน์โหลดล้มเหลว
+title_print = พิมพ์
+title_print_preview = ตัวอย่างก่อนพิมพ์
+title_related_messages = ข้อความที่เกี่ยวข้อง
+title_search = ค้นหา
+title_unlock = ปลดล็อก
+title_unlock_methods = วิธีปลดล็อก
+title_desktop_shortcut = ทางลัดบนเดสก์ท็อป
+title_spell_check = ตรวจสอบการสะกดคำ
+title_plain_text_password = พบรหัสผ่านแบบข้อความธรรมดา
+title_startup_error = ข้อผิดพลาดในการเริ่ม ZBox
+
+identity_email_required = ป้อนที่อยู่อีเมล
+
+wizard_password_not_shown = ไม่สามารถแสดงรหัสผ่านบนระบบนี้ได้ ยังพิมพ์และบันทึกได้ตามปกติ
+wizard_email_required = ป้อนที่อยู่อีเมลที่ถูกต้องก่อนดำเนินการต่อ
+wizard_test_needs_server = ป้อนอีเมลเข้าสู่ระบบและเซิร์ฟเวอร์ขาเข้าก่อนทดสอบ
+wizard_test_succeeded = เชื่อมต่อสำเร็จ พบ {count} ข้อความในกล่องขาเข้า
+
+contact_email_required = ต้องมีที่อยู่อีเมล
+contact_select_to_edit = เลือกผู้ติดต่อที่จะแก้ไข
+contact_select_to_delete = เลือกผู้ติดต่อที่จะลบ
+contact_delete_confirm = ลบ {label} ออกจากสมุดรายชื่อหรือไม่?
+contacts_import_choose_file = เลือกไฟล์ .vcf (vCard) หรือ .csv ที่จะนำเข้า
+contacts_imported = นำเข้าผู้ติดต่อ {count} รายแล้ว
+contacts_import_empty = ไม่พบผู้ติดต่อในไฟล์นั้น
+contacts_none_to_export = ไม่มีผู้ติดต่อให้ส่งออก
+contacts_exported = ส่งออกผู้ติดต่อ {count} รายไปยัง:\n{path}
+group_name_exists = มีกลุ่มชื่อ "{name}" อยู่แล้ว
+group_delete_confirm = ลบกลุ่ม "{name}" หรือไม่? ผู้ติดต่อในกลุ่มจะไม่ถูกลบ
+
+send_no_account = เพิ่มบัญชีก่อนส่ง หรือเลือกบัญชีใน จาก
+send_no_recipient = ป้อนผู้รับอย่างน้อยหนึ่งคนใน ถึง
+draft_no_account = เพิ่มบัญชีก่อนบันทึกฉบับร่าง หรือเลือกบัญชีใน จาก
+attached_file = แนบแล้ว: {name}\n\nจะแนบ {count} ไฟล์เมื่อคุณส่ง
+
+documentation_copied = คัดลอกเอกสาร ZBox ทั้งหมดไปยังคลิปบอร์ดแล้ว
+
+filter_rule_needs_name = ตั้งชื่อให้กฎนี้
+filter_rule_needs_condition = ตั้งเงื่อนไขอย่างน้อยหนึ่งข้อ (จาก ถึง หรือหัวเรื่อง)
+filter_rule_needs_action = เลือกการกระทำอย่างน้อยหนึ่งอย่าง: ทำเครื่องหมายว่าอ่านแล้ว ติดดาว หรือย้ายไปยังโฟลเดอร์
+
+master_password_set = ตั้งรหัสผ่านหลักแล้ว เก็บไว้ในที่ปลอดภัย: ZBox จะถามรหัสผ่านนี้หนึ่งครั้งบนคอมพิวเตอร์เครื่องใหม่แต่ละเครื่อง และกู้คืนไม่ได้หากทำหาย
+master_password_offer = หากไม่มีรหัสผ่านหลัก รหัสผ่านบัญชีที่บันทึกไว้จะอ่านได้เฉพาะบนคอมพิวเตอร์เครื่องนี้และบัญชี Windows นี้เท่านั้น หากคัดลอก ZBox ไปที่อื่น ทุกบัญชีต้องลงชื่อเข้าใหม่\n\nตั้งรหัสผ่านหลักตอนนี้หรือไม่?
+
+attachment_saved = บันทึกไฟล์แนบไปยัง:\n{path}
+attachments_saved = บันทึกไฟล์แนบ {count} ไฟล์ไปยัง:\n{path}
+
+shortcut_created_settings = สร้างทางลัดแล้ว:\n{path}\n\nทางลัดนี้เริ่ม ZBox จาก:\n{base}
+
+spellcheck_no_dictionary = ไม่มีพจนานุกรมการสะกดคำ จึงใช้การตรวจสอบการสะกดคำไม่ได้ใน ZBox ชุดนี้
+spellcheck_none_found = ไม่พบคำสะกดผิด
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = ตั้งค่าพาสคีย์บนคอมพิวเตอร์เครื่องนี้และลืมพาสคีย์ที่บันทึกจากคอมพิวเตอร์เครื่องอื่นหรือไม่?\n\nWindows จะขอให้คุณยืนยันด้วย Hello พาสคีย์เก่าบนคอมพิวเตอร์เครื่องอื่นยังคงอยู่ที่นั่นและจะใช้งานได้ต่อหากคุณนำโฟลเดอร์นี้กลับไป แต่จะต้องตั้งค่าใหม่
+unlock_replace_passkey_many = ตั้งค่าพาสคีย์บนคอมพิวเตอร์เครื่องนี้และลืมพาสคีย์ {count} รายการที่บันทึกจากคอมพิวเตอร์เครื่องอื่นหรือไม่?\n\nWindows จะขอให้คุณยืนยันด้วย Hello พาสคีย์เก่าบนคอมพิวเตอร์เครื่องอื่นยังคงอยู่ที่นั่นและจะใช้งานได้ต่อหากคุณนำโฟลเดอร์นี้กลับไป แต่จะต้องตั้งค่าใหม่
+unlock_method_works = วิธีนั้นใช้งานได้
+
+plain_text_password_found = data\config\himalaya.toml ยังมีรหัสผ่านแบบข้อความธรรมดา (auth.raw) จากการตั้งค่าบัญชีรุ่นเก่า\n\nเอาบัญชีนั้นออกแล้วเพิ่มใหม่ หรือลบ data\config\himalaya.toml เพื่อให้สร้างขึ้นใหม่โดยใช้ที่เก็บข้อมูลประจำตัวที่ปลอดภัย
+
+# main_frame's titles.
+title_account_list_unavailable = รายการบัญชีไม่พร้อมใช้งาน
+title_open_message = เปิดข้อความ
+title_run_filters = เรียกใช้ตัวกรอง
+title_clear_cache = ล้างแคชข้อความออฟไลน์
+title_remove_account = เอาบัญชีออก
+title_new_folder = โฟลเดอร์ใหม่
+title_rename_folder = เปลี่ยนชื่อโฟลเดอร์
+title_delete_folder = ลบโฟลเดอร์
+title_subscribe = บอกรับ
+title_unsubscribe = เลิกบอกรับ
+title_open_saved_message = เปิดข้อความที่บันทึกไว้
+title_save_message_as = บันทึกข้อความเป็น
+title_empty_trash = ล้างข้อมูลในถังขยะ
+title_empty_junk = ล้างขยะ
+title_synchronize_offline = ประสานสำหรับออฟไลน์
+title_export_accounts = ส่งออกบัญชีและการตั้งค่า
+title_import_accounts = นำเข้าบัญชีและการตั้งค่า
+title_show_related = แสดงข้อความที่เกี่ยวข้อง
+title_reply = ตอบกลับ
+title_forward = ส่งต่อ
+title_undo = เลิกทำ
+title_delete_permanently = ลบอย่างถาวร
+title_delete = ลบ
+title_copy_to = คัดลอกไปยัง
+title_archive = เก็บถาวร
+title_accounts_locked = บัญชีถูกล็อก
+
+select_account_first = เลือกบัญชีในแผนผังก่อน
+select_account_or_folder = เลือกบัญชีหรือโฟลเดอร์ก่อน
+filters_left_behind = {count} ข้อความตรงกับตัวกรองแต่ยังอยู่ใน {folder}
+cache_clear_confirm = ล้างแคชข้อความออฟไลน์สำหรับทุกบัญชีหรือไม่?\n\nการนี้ลบเฉพาะสำเนาในเครื่องของ ZBox ไม่มีสิ่งใดถูกลบออกจากเซิร์ฟเวอร์จดหมาย และข้อความจะถูกดาวน์โหลดใหม่เมื่อคุณต้องการ
+account_remove_confirm = เอา {name} ({address}) ออกหรือไม่?\n\nจดหมายบนเซิร์ฟเวอร์จะไม่ถูกลบ\nสำเนาที่ดาวน์โหลดมาบนคอมพิวเตอร์เครื่องนี้จะถูกลบ\nรหัสผ่านที่บันทึกไว้จะถูกลบ
+folder_delete_confirm = ลบโฟลเดอร์ "{folder}" และทุกอย่างในนั้นอย่างถาวรสำหรับ {address} หรือไม่?\n\nการนี้เลิกทำไม่ได้
+empty_trash_confirm = ลบข้อความทั้งหมดในถังขยะอย่างถาวรสำหรับ {address} หรือไม่?\n\nการนี้เลิกทำไม่ได้
+empty_junk_confirm = ลบข้อความทั้งหมดในขยะอย่างถาวรสำหรับ {address} หรือไม่?\n\nการนี้เลิกทำไม่ได้
+sync_select_account = เลือกบัญชี (ไม่ใช่โฟลเดอร์แบบรวม) ที่จะประสานสำหรับการใช้งานออฟไลน์
+accounts_imported = นำเข้า {count} บัญชีแล้ว:\n\n{names}\n\nรหัสผ่านไม่เคยถูกส่งออก และที่เก็บรหัสผ่านที่เข้ารหัสใช้ได้เฉพาะกับบัญชีผู้ใช้ Windows นี้ ดังนั้นแต่ละบัญชีที่นำเข้าต้องป้อนรหัสผ่านหนึ่งครั้งผ่าน บัญชี > การตั้งค่าบัญชีและข้อมูลประจำตัว ก่อนจึงจะเชื่อมต่อได้
+accounts_import_none = ไม่พบบัญชีในไฟล์นี้ ยังคงนำเข้าการตั้งค่าหากไฟล์มี
+delete_permanently_confirm_one = ลบข้อความนี้อย่างถาวรหรือไม่? การนี้ข้ามโฟลเดอร์ถังขยะและเลิกทำไม่ได้
+accounts_locked = รหัสผ่านบัญชีที่บันทึกไว้ถูกเขียนบนคอมพิวเตอร์เครื่องอื่น จึงอ่านที่นี่ไม่ได้\n\nแต่ละบัญชีจะต้องลงชื่อเข้าเซิร์ฟเวอร์จดหมายใหม่ เพื่อหลีกเลี่ยงครั้งหน้า ให้ตั้งรหัสผ่านหลักจาก การตั้งค่า ความปลอดภัยของแอปและข้อมูล บนคอมพิวเตอร์ที่บัญชีใช้งานได้อยู่แล้ว
+master_password_remove_confirm = เอารหัสผ่านหลักออกหรือไม่? หลังจากนั้นรหัสผ่านบัญชีที่บันทึกไว้จะอ่านได้เฉพาะบนคอมพิวเตอร์เครื่องนี้และบัญชี Windows นี้ หากคัดลอก ZBox ไปที่อื่นภายหลัง ทุกบัญชีจะต้องลงชื่อเข้าใหม่\n\nเอาออกตอนนี้หรือไม่?
+shortcut_offer = วางทางลัด ZBox บนเดสก์ท็อปหรือไม่?\n\nทางลัดจะเริ่มโฟลเดอร์ ZBox นี้:\n{path}\n\nทางลัดบันทึกตำแหน่งที่แน่นอนนั้น หากคุณย้ายโฟลเดอร์ ZBox ภายหลัง ให้เปิด การตั้งค่า ถาดระบบและหน้าต่าง แล้วเลือก สร้างทางลัดบนเดสก์ท็อป อีกครั้งเพื่อชี้ไปยังตำแหน่งใหม่
+shortcut_created = สร้างทางลัดแล้ว:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = ชื่อที่แสดง
+form_email_address = ที่อยู่อีเมล
+form_your_name = ชื่อของคุณ
+form_login_email = อีเมลเข้าสู่ระบบ
+form_password = รหัสผ่าน
+srv_imap_host = เซิร์ฟเวอร์ขาเข้า (IMAP)
+srv_imap_port = พอร์ตขาเข้า
+srv_imap_encryption = การเข้ารหัสขาเข้า
+srv_smtp_host = เซิร์ฟเวอร์ขาออก (SMTP)
+srv_smtp_port = พอร์ตขาออก
+srv_smtp_encryption = การเข้ารหัสขาออก
+
+acct_login_email_label = อีเมลเข้าสู่ระบบ (ใช้ลงชื่อเข้า)
+acct_new_password_label = รหัสผ่านใหม่ (เว้นว่างไว้เพื่อใช้รหัสผ่านปัจจุบัน)
+acct_new_password_name = รหัสผ่านใหม่
+acct_identity_email_label = ที่อยู่อีเมล (ใช้ส่งและรับ)
+acct_identities_label = ข้อมูลประจำตัวเพิ่มเติม (นามแฝง)
+acct_identities_name = ข้อมูลประจำตัวเพิ่มเติม
+acct_add_identity = &เพิ่มข้อมูลประจำตัว...
+acct_edit_identity = &แก้ไขข้อมูลประจำตัว...
+acct_remove_identity = &เอาข้อมูลประจำตัวออก
+acct_signature = ลายเซ็น
+acct_edit_signature = &แก้ไขลายเซ็น...
+acct_junk_folder = โฟลเดอร์ขยะ
+acct_account_status = สถานะบัญชี
+acct_disable_account = ปิดใช้งานบัญชีนี้
+acct_default_account = บัญชีเริ่มต้น
+acct_set_default = ตั้งเป็นบัญชีเริ่มต้น
+acct_notifications = การแจ้งเตือนจดหมายใหม่
+acct_mute_notifications = ปิดเสียงการแจ้งเตือนสำหรับบัญชีนี้
+acct_server_settings = การตั้งค่าเซิร์ฟเวอร์
+
+wiz_before_you_start = ก่อนเริ่ม
+wiz_notice_name = ประกาศสำคัญ
+wiz_google_instructions = &เปิดคำแนะนำรหัสผ่านสำหรับแอปของ Google
+wiz_intro = ชื่อและที่อยู่อีเมลของคุณ
+wiz_login_same = อีเมลเข้าสู่ระบบเหมือนกับที่อยู่อีเมลด้านบน
+wiz_show_password = &แสดงรหัสผ่าน
+wiz_preset_applied = ใช้ค่าที่กำหนดไว้ล่วงหน้าสำหรับ {name} แล้ว
+wiz_summary_name = สรุปบัญชี
+wiz_review = ตรวจทาน แล้วคลิก เสร็จสิ้น เพื่อบันทึกบัญชีนี้
+wiz_test_connection = &ทดสอบการเชื่อมต่อ
+wiz_testing = กำลังทดสอบการเชื่อมต่อ...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (เปิดใช้งานการบันทึกข้อบกพร่อง บันทึกไว้ที่: data\logs)
+set_language_label = &ภาษาส่วนติดต่อ:
+set_language_label_only_english = &ภาษาส่วนติดต่อ: (ภาษาอังกฤษเท่านั้น)
+set_headers_checkbox = &แสดงส่วนหัวข้อความด้านบนข้อความที่เปิดอยู่
+set_zoom_label = แบบอักษรและการย่อขยายข้อความ:
+set_font_override = &แทนที่ขนาดแบบอักษรข้อความเริ่มต้น
+set_font_size_name = ขนาดแบบอักษรข้อความ (พอยต์)
+set_reading_font_name = แบบอักษรสำหรับอ่าน
+set_reading_font_label = แบบอักษรสำหรับอ่าน (เว้นว่างเพื่อใช้ค่าเริ่มต้น):
+set_view_label = มุมมองเนื้อความเมื่อเปิดข้อความ:
+set_view_text = ข้อความธรรมดา
+set_view_html = HTML (แสดงผล)
+set_engine_label = เอนจินแสดงผล HTML:
+set_engine_edge = Edge / WebView2 (การแสดงผลสมัยใหม่)
+set_engine_ie = MSHTML รุ่นเก่า (รองรับโปรแกรมอ่านหน้าจอได้ดีที่สุด)
+set_runtime_label = รันไทม์ WebView2:
+set_runtime_auto = อัตโนมัติ — ใช้รันไทม์ที่มาพร้อมกันหากมี (แนะนำ)
+set_runtime_fixed = รุ่นคงที่ที่มาพร้อมกันเท่านั้น
+set_runtime_evergreen = รันไทม์ทั้งระบบ (อัปเดตโดย Windows)
+set_sr_box = การควบคุมการประกาศของโปรแกรมอ่านหน้าจอ
+set_silence_label = ระยะเงียบของโปรแกรมอ่านหน้าจอสำหรับ HTML:
+set_silence_name = ระยะเงียบของโปรแกรมอ่านหน้าจอสำหรับ HTML เป็นมิลลิวินาที
+set_focus_delay_label = การหน่วงโฟกัสการช่วยการเข้าถึงของ WebView:
+set_focus_delay_name = การหน่วงโฟกัสการช่วยการเข้าถึงของ WebView ระดับ 1 ถึง 10
+set_announce_label = ระยะเวลาแสดงการประกาศ:
+set_announce_name = ระยะเวลาแสดงการประกาศเป็นมิลลิวินาที
+set_announce_actions = &ประกาศการกระทำกับข้อความ
+set_attachment_dir_label = โฟลเดอร์บันทึกไฟล์แนบ:
+set_attachment_dir_name = โฟลเดอร์บันทึกไฟล์แนบ
+set_browse = &เรียกดู…
+set_autosave_label = ช่วงเวลาบันทึกฉบับร่างอัตโนมัติ:
+set_autosave_name = ช่วงเวลาบันทึกฉบับร่างอัตโนมัติเป็นวินาที
+set_auto_purge_label = ล้างถังขยะและขยะเก่าอัตโนมัติ:
+set_auto_purge_name = ล้างถังขยะและขยะอัตโนมัติหลังจากจำนวนวันนี้
+set_bare_keys = เปิดใช้ปุ่มลัดแบบปุ่มเดียวในรายการข้อความ: S (ติดธง), A (เก็บถาวร), J (ทำเครื่องหมายว่าขยะ)/Shift+J (ทำเครื่องหมายว่าไม่ใช่ขยะ), W (ติดตามเธรด), K (ละเว้นเธรด), M (ย้ายไป)/Shift+M (ย้ายตามชื่อโฟลเดอร์) และ C (คัดลอกไป)
+set_sound_label = เสียงและการแจ้งเตือน:
+set_sounds_enabled = &เล่นเสียงแจ้งเตือน
+set_desktop_notifications = &แสดงการแจ้งเตือนบนเดสก์ท็อปสำหรับจดหมายใหม่
+set_theme_label = เปลี่ยนชุดเสียง:
+set_theme_label_only_default = เปลี่ยนชุดเสียง: (ชุดเริ่มต้นเท่านั้น)
+set_security_box = ความปลอดภัยของแอปและข้อมูล
+set_lock_on_quit = &ล็อก ZBox เมื่อออกโดยสมบูรณ์
+set_unlock_methods_button = &วิธีปลดล็อก…
+set_master_password_button = &รหัสผ่านหลัก…
+set_tray_label = ถาดระบบและหน้าต่าง:
+set_minimize_to_tray = &ย่อลงถาดระบบ
+set_close_to_tray = &ปิดลงถาดระบบ
+set_stay_maximized = &ขยาย ZBox เต็มหน้าจอเสมอ
+set_run_at_startup = &เรียกใช้ ZBox เมื่อ Windows เริ่มทำงาน
+set_desktop_shortcut_button = &สร้างทางลัดบนเดสก์ท็อป
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = การบันทึกข้อบกพร่องช่วยวินิจฉัยปัญหาหากมีสิ่งผิดพลาด การปิดจะหยุดเขียนรายการใหม่ ไฟล์บันทึกที่มีอยู่จะไม่ถูกลบ มีผลในครั้งถัดไปที่ ZBox เริ่มทำงาน
+set_language_note = มีผลในครั้งถัดไปที่ ZBox เริ่มทำงาน ไฟล์ภาษาเป็นไฟล์ข้อความธรรมดาในโฟลเดอร์ lang ของ ZBox ข้างโฟลเดอร์ sounds หากต้องการเพิ่มภาษา ให้คัดลอกโฟลเดอร์ en เปลี่ยนชื่อสำเนาและไฟล์ .lang ภายในเป็นรหัสภาษาของคุณ แล้วแปลข้อความทางขวาของเครื่องหมายเท่ากับแต่ละตัว สิ่งที่ยังไม่ได้แปลจะถูกพูดเป็นภาษาอังกฤษแทนที่จะเงียบ ไฟล์ที่แปลไม่เสร็จจึงใช้ได้อย่างปลอดภัย
+set_headers_note = จาก ถึง Cc วันที่ และหัวเรื่อง แสดงด้านบนเนื้อความทั้งในมุมมองข้อความธรรมดาและ HTML หากไม่มีส่วนนี้ จะไม่มีทางรู้ว่าใครส่งข้อความจากภายในข้อความโดยไม่ปิดแท็บแล้วกลับไปที่รายการ โฟกัสยังคงอยู่ที่เนื้อความ ส่วนหัวอยู่ห่างไปหนึ่ง Shift+Tab มีผลในครั้งถัดไปที่เปิดข้อความ
+set_zoom_note = ทำให้ข้อความของข้อความที่เปิดอยู่ใหญ่ขึ้นหรือเล็กลง โดยไม่ขึ้นกับส่วนอื่นของ ZBox และการปรับขนาดการแสดงผลของ Windows ใช้กับทั้งมุมมองข้อความธรรมดาและ HTML "แบบอักษรสำหรับอ่าน" สามารถบังคับแบบอักษรเฉพาะ (เช่น Consolas, OpenDyslexic) สำหรับเนื้อความได้ เว้นว่างไว้เพื่อใช้แบบอักษรปกติ Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 ในเมนูมุมมองจะเพิ่ม ลด หรือตั้งขนาดแบบอักษรใหม่โดยไม่ต้องเปิดกล่องโต้ตอบนี้ และมีผลทันทีกับทุกข้อความที่เปิดอยู่ การเปลี่ยนแปลงที่ทำที่นี่ก็มีผลทันทีเมื่อกด OK
+set_view_note = HTML เป็นค่าเริ่มต้น แสดงข้อความตามที่ถูกส่ง และ NVDA กับ JAWS อ่านได้: เมื่อหน้า HTML เปิด ZBox จะทำให้การประกาศของเบราว์เซอร์เงียบ วางเคอร์เซอร์อ่านไว้ที่บรรทัดแรกของข้อความ และทำให้ปุ่มลัดของ ZBox ยังทำงานภายในหน้า รวมถึง F6 เพื่อย้ายโฟกัสออกจากหน้า ข้อความธรรมดาแสดงข้อความเดียวกันเป็นข้อความธรรมดาไม่จัดรูปแบบในช่องแก้ไขปกติ -- ไม่มีรูปภาพ ไม่มีเค้าโครง และไม่ขึ้นกับว่าติดตั้งเอนจินเบราว์เซอร์หรือไม่ กด Ctrl+B ภายในข้อความที่เปิดอยู่เพื่อสลับไปมา
+set_engine_note = Edge แสดงผล CSS สมัยใหม่แต่เรียกใช้หน้าในกระบวนการแยก และส่งเนื้อหาให้โปรแกรมอ่านหน้าจอผ่านส่วนติดต่อที่ wxPython เข้าถึงไม่ได้เท่านั้น -- ข้อความจึงอาจเปิดขึ้นโดยไม่มีอะไรให้อ่าน MSHTML รุ่นเก่าคือเอนจินที่ Outlook Express และ Windows Mail ใช้: ทำงานในกระบวนการเดียวกันและเผยแพร่แผนผังเอกสารปกติ NVDA และ JAWS จึงอ่านได้ในโหมดเรียกดูเหมือนหน้าเว็บทั่วไป มีผลในครั้งถัดไปที่เปิดข้อความ
+set_runtime_note = รันไทม์ทั้งระบบได้รับการดูแลโดย Windows Update เอนจินที่อ่านจดหมายของคุณจึงอาจเปลี่ยนโดยไม่แจ้ง — นี่คือสาเหตุที่มุมมองข้อความ HTML ที่ใช้งานได้อาจเสียบนเครื่องที่ ZBox ไม่มีอะไรเปลี่ยน สำเนาที่มาพร้อมกันในโฟลเดอร์ deps จะตรึงรุ่นที่ ZBox ทดสอบไว้ เรียกใช้ tools\get_webview2.bat เพื่อติดตั้ง หากไม่มีสำเนาที่มาพร้อมกัน ZBox จะใช้รันไทม์ทั้งระบบไม่ว่ากรณีใด จึงเริ่มทำงานได้เสมอ มีผลในครั้งถัดไปที่ ZBox เริ่มทำงาน
+set_sr_intro = ZBox ให้โปรแกรมอ่านหน้าจอพูดได้มากเพียงใดขณะเปิดข้อความ และการประกาศของ ZBox เองแสดงอยู่นานเท่าใด
+set_silence_note = เมื่อข้อความ HTML เปิด ZBox สามารถกดปุ่ม Ctrl จำลองค้างไว้ได้สูงสุด 2 วินาทีเพื่อทำให้การประกาศเบราว์เซอร์ของโปรแกรมอ่านหน้าจอเงียบ หัวเรื่องข้อความถูกใช้เป็นชื่อหน้าอยู่แล้ว จึงไม่มีการอ่าน URL แบบ base64 ออกเสียง แต่โปรแกรมอ่านยังคงประกาศตัวควบคุมและชนิดเอกสารทับช่วงต้นของข้อความ ตัวเลือกนี้จึงเปิดโดยค่าเริ่มต้น ลดเป็น 0 เพื่อปิด หรือเพิ่มหากยังมีเสียงพูดเกินหลุดมา
+set_focus_delay_note = เมื่อข้อความ HTML โหลดเสร็จ ZBox จะรอเท่านี้ก่อนตั้งโฟกัสจริง การที่ WebView2 รายงานว่าหน้าโหลดแล้วกับการที่ Windows สร้างแผนผังการช่วยการเข้าถึงของหน้านั้นเสร็จไม่ใช่เวลาเดียวกัน การโฟกัสเร็วเกินไปทำให้ NVDA/JAWS ประกาศ "หน้าเนื้อหาเว็บ" ทั่วไปแทนข้อความ หรือรายงานว่าข้อความไม่พร้อมใช้งานชั่วขณะหลังเปิด ระดับ 1 คือ 100 ms ระดับ 10 คือหนึ่งวินาทีเต็ม เพิ่มหากยังพบปัญหา ลดเมื่อการเปิดเสถียรแล้วเพื่อให้เปิดเร็วขึ้น
+set_announce_note = Ctrl+U และ Ctrl+Shift+U รายงานผู้ส่งในกล่องโต้ตอบเล็กที่ปิดเอง เพราะแถบสถานะจะถูกพูดก็ต่อเมื่อโปรแกรมอ่านหน้าจอเปิดการรายงานแถบสถานะไว้ นี่คือระยะเวลาที่กล่องโต้ตอบนั้นแสดงอยู่ ตั้งให้เข้ากับความเร็วการพูดของคุณ: สั้นเกินไปจะปิดกลางประโยค ซึ่งเสียจุดประสงค์ ปุ่มใดก็ได้จะปิดก่อนกำหนด ปุ่มลูกศรจะคงไว้เพื่อให้อ่านซ้ำได้ 0 หมายถึงรอการกดปุ่มและไม่ปิดเอง
+set_attachment_dir_note = ตำแหน่งที่ "บันทึกทั้งหมด" เขียนไฟล์แนบเมื่อข้อความมีไฟล์แนบมากกว่าหนึ่งไฟล์ สร้างให้อัตโนมัติหากยังไม่มี ข้อความที่มีไฟล์แนบเดียวยังคงถามว่าจะบันทึกที่ไหนเหมือนเดิม เว้นว่างเพื่อใช้ค่าเริ่มต้น:\n{path}
+set_autosave_note = ความถี่ที่แท็บเขียนข้อความที่เปิดอยู่บันทึกตัวเองลงในฉบับร่างขณะคุณเขียน บันทึกฉบับร่าง (Ctrl+S) ยังบันทึกได้ตามต้องการ และการปิดแท็บที่มีงานเขียนยังไม่บันทึกจะเสนอให้บันทึกเสมอ 0 ปิดการบันทึกอัตโนมัติ ไม่มีตัวเลือกต่ำกว่า 15 วินาที -- นั่นจะเป็นการติดต่อเซิร์ฟเวอร์ที่แย่งกับการพิมพ์ของคุณ
+set_auto_purge_note = ลบข้อความในถังขยะและขยะอย่างถาวรเมื่ออยู่ที่นั่นครบจำนวนวันนี้ -- เป็นการลบถาวรแบบเดียวกับที่ ล้างข้อมูลในถังขยะ และ ล้างขยะ ทำตามคำสั่ง แต่ทำงานอัตโนมัติวันละครั้งขณะ ZBox เปิดอยู่ เปิดโดยค่าเริ่มต้นที่ 30 วัน 0 เพื่อปิด เลิกทำไม่ได้เมื่อข้อความถูกลบแล้ว
+set_bare_keys_note = เมื่อเปิด การกด S, A, J, W หรือ K เพียงปุ่มเดียวในรายการข้อความจะสลับดาว เก็บถาวร ทำเครื่องหมายข้อความที่เลือกว่าเป็นขยะ (Shift+J ทำเครื่องหมายว่าไม่เป็นขยะ) หรือเฝ้าดู/เพิกเฉยเธรดที่ส่วนที่เลือกอยู่ทันที -- เก็บถาวร และ ทำเครื่องหมายว่าเป็นขยะ ไม่มีการยืนยันและเลิกทำไม่ได้ การปิดจะคืน S, A, J, W และ K ให้เป็นการนำทางรายการด้วยอักษรตัวแรกตามปกติ Ctrl+S และ Ctrl+Shift+A ใช้ได้ทั้งสองกรณี มีผลทันที
+set_sounds_note = เสียงสั้นๆ สำหรับความคืบหน้า ข้อความใหม่ การส่ง ตอบกลับ หรือส่งต่อ การลบ และผลการค้นหา ปิดจะปิดเสียงทั้งหมดในแอป การประกาศของโปรแกรมอ่านหน้าจอและแถบสถานะไม่ได้รับผลกระทบ
+set_desktop_notifications_note = การแจ้งเตือนของ Windows สำหรับจดหมายใหม่แต่ละชุด แยกจากเสียงด้านบน ปิดจะปิดสำหรับทุกบัญชี บัญชีแต่ละบัญชียังปิดเสียงแยกได้ในการตั้งค่าบัญชีและข้อมูลประจำตัว
+set_theme_note = ชุดเสียงกำหนดเองคือโฟลเดอร์ที่วางไว้ในโฟลเดอร์ sounds ของ ZBox แต่ละโฟลเดอร์มี progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav และ none_found.wav ของตัวเอง ไฟล์ที่ขาดไปจะใช้เสียงเริ่มต้นแทน
+set_theme_note_only_default = ชุดเสียงกำหนดเองคือโฟลเดอร์ที่วางไว้ในโฟลเดอร์ sounds ของ ZBox แต่ละโฟลเดอร์มี progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav และ none_found.wav ของตัวเอง ไฟล์ที่ขาดไปจะใช้เสียงเริ่มต้นแทน มีเพียง "default" จนกว่าคุณจะเพิ่มโฟลเดอร์ชุดเสียงอื่น
+set_lock_note = จากนั้นการเริ่ม ZBox จะขอวิธีปลดล็อกวิธีหนึ่งก่อนเปิดบัญชีใดๆ วิธีใดวิธีหนึ่งก็พอ: พาสคีย์ กุญแจความปลอดภัย หรือรหัสผ่านหลัก การปิดลงถาดไม่ใช่การออกและไม่ล็อกใหม่ ไฟล์ > ออก และ ออก ของไอคอนถาดคือการออก หากไม่ได้ลงทะเบียนอะไรไว้และไม่ได้ตั้งรหัสผ่านหลัก จะข้ามการล็อกแทนที่จะกันคุณออกจากจดหมายของตัวเอง
+set_security_note = ในสามอย่างนี้ มีเพียงรหัสผ่านหลักที่เข้ารหัสข้อมูล: รหัสผ่านหลักคือสิ่งที่ทำให้โฟลเดอร์นี้เปิดรหัสผ่านบัญชีที่บันทึกไว้บนคอมพิวเตอร์เครื่องอื่นได้ พาสคีย์หรือกุญแจความปลอดภัยปลดล็อกแอปบนเครื่องนี้ ไม่มีอันใดแทนรหัสผ่านหลักได้บนคอมพิวเตอร์ที่ไม่เคยใช้ ZBox มาก่อน
+set_minimize_note = การย่อ ZBox จะซ่อนปุ่มบนแถบงานและให้ ZBox ทำงานต่อหลังไอคอนถาด คลิกซ้ายที่ไอคอนถาด (หรือ Enter/Space เมื่อมีโฟกัสแป้นพิมพ์) เพื่อนำหน้าต่างกลับมา
+set_close_note = ปุ่มปิดของหน้าต่าง Alt+F4 และ Ctrl+W ที่กดบนแท็บจดหมาย จะซ่อน ZBox ลงถาดแทนการออก ไฟล์ > ออก (Ctrl+Shift+Q) และรายการ ออก ของไอคอนถาดเองจะออกจาก ZBox จริงเสมอ จึงมีทางออกด้วยแป้นพิมพ์เสมอโดยไม่ต้องแตะถาด
+set_stay_maximized_note = ZBox เปิดแบบขยายเต็มและจะกลับเป็นขยายเต็มหากคุณเลิกขยาย แถบเมนู แถบชื่อเรื่อง และขอบหน้าต่างไม่ได้รับผลกระทบ -- นี่ไม่ใช่โหมดเต็มหน้าจอไร้ขอบ ปุ่มลัดเมนูด้วย Alt ทุกปุ่มจึงยังทำงาน
+set_run_at_startup_note = เริ่ม ZBox อัตโนมัติเมื่อคุณลงชื่อเข้า Windows โดยเปิดลงถาดทันทีแทนการแสดงหน้าต่าง มีผลทันที ไม่ใช่เฉพาะการเปิดครั้งถัดไป
+set_desktop_shortcut_note = วางทางลัด ZBox บนเดสก์ท็อป แทนที่ทางลัดที่มีอยู่แล้ว ทางลัดเก็บตำแหน่งที่แน่นอนของโฟลเดอร์ ZBox นี้ หากคุณย้ายหรือคัดลอก ZBox ไปที่อื่น ให้กดปุ่มนี้อีกครั้งบนสำเนาใหม่เพื่อชี้ทางลัดบนเดสก์ท็อปไปที่นั่น มีผลทันทีและไม่รอ OK
+
+# The Address Book, its contact form and its groups.
+ab_name = ชื่อ
+ab_phone = โทรศัพท์
+ab_notes = หมายเหตุ
+ab_heading = สมุดรายชื่อ
+ab_contacts = ผู้ติดต่อ
+ab_new = &ใหม่...
+ab_edit = &แก้ไข...
+ab_delete = &ลบ
+ab_import = &นำเข้า...
+ab_export = &ส่งออก...
+ab_groups_label = กลุ่ม (รายชื่อผู้รับจดหมาย)
+ab_groups_name = กลุ่ม
+ab_new_group = &กลุ่มใหม่...
+ab_rename_group = &เปลี่ยนชื่อกลุ่ม...
+ab_delete_group = &ลบกลุ่ม
+ab_manage_members = &จัดการสมาชิก...
+ab_all_contacts = ผู้ติดต่อทั้งหมด
+ab_add_member = เพิ่ม >>
+ab_remove_member = << เอาออก
+ab_members_of = สมาชิกของ {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &ไม่มีในพจนานุกรม:
+sp_not_in_dictionary_name = ไม่มีในพจนานุกรม
+sp_in_this_line_label = ในบรรทัดนี้:
+sp_in_this_line_name = ในบรรทัดนี้
+sp_suggestions_label = &คำแนะนำ:
+sp_suggestions_name = คำแนะนำ
+sp_replace_with_label = &แทนที่ด้วย:
+sp_replace_with_name = แทนที่ด้วย
+sp_replace = &แทนที่
+sp_replace_all = &แทนที่ทั้งหมด
+sp_ignore = &ละเว้น
+sp_ignore_all = &ละเว้นทั้งหมด
+sp_add_to_dictionary = &เพิ่มลงในพจนานุกรม
+btn_close = &ปิด
+
+# Privacy and Content Blocking.
+priv_remote_label = เนื้อหาระยะไกลในข้อความ:
+priv_block_remote = &ปิดกั้นเนื้อหาระยะไกลจนกว่าฉันจะขอ (แนะนำ)
+priv_blocklist_label = รายการปิดกั้นโฆษณาและตัวติดตาม:
+priv_block_known = &ปิดกั้นโดเมนโฆษณาและตัวติดตามที่รู้จัก
+priv_update_daily = &อัปเดตรายการทุกวันในเบื้องหลัง
+priv_update_now = &อัปเดตตอนนี้
+priv_junk_label = กฎจดหมายขยะ:
+priv_check_inbox = &ตรวจสอบจดหมายใหม่ในกล่องขาเข้ากับผู้ส่งที่ถูกปิดกั้นและลิงก์ฟิชชิงที่รู้จัก
+priv_move_blocked = &ย้ายจดหมายจากผู้ส่งที่ถูกปิดกั้นไปยังขยะโดยอัตโนมัติ
+priv_update_phishing = &อัปเดตรายการฟิชชิงตอนนี้
+priv_blocked_label = ผู้ส่งที่ถูกปิดกั้น:
+priv_blocked_name = ผู้ส่งที่ถูกปิดกั้น
+priv_remove_blocked = &เอาผู้ส่งที่ถูกปิดกั้นออก
+priv_never_junk_label = ผู้ส่งที่ไม่ถือว่าเป็นขยะเลย:
+priv_never_junk_name = ผู้ส่งที่ไม่ถือว่าเป็นขยะเลย
+priv_remove_never_junk = &เอาผู้ส่งที่ไม่เป็นขยะออก
+priv_allowed_label = ผู้ส่งที่อนุญาตให้โหลดเนื้อหาระยะไกล:
+priv_allowed_name = ผู้ส่งที่อนุญาต
+priv_remove_selected = &เอาผู้ส่งที่เลือกออก
+
+# Message Filters.
+filt_rule_name = ชื่อกฎ
+filt_enabled = &เปิดใช้งาน
+filt_match_label = การจับคู่:
+filt_match_all = &ตรงกับทุกข้อต่อไปนี้ (AND)
+filt_match_any = &ตรงกับข้อใดข้อหนึ่งต่อไปนี้ (OR)
+filt_conditions_label = เงื่อนไข (เว้นค่าว่างไว้เพื่อข้าม):
+filt_condition_field = ช่องของเงื่อนไข {number}
+filt_condition_contains = เงื่อนไข {number} มีคำว่า
+filt_actions_label = การกระทำ:
+filt_mark_read = &ทำเครื่องหมายว่าอ่านแล้ว
+filt_flag = &ติดดาวข้อความ
+filt_move_label = ย้ายไปยังโฟลเดอร์:
+filt_move_name = ย้ายไปยังโฟลเดอร์
+filt_rules_name = กฎตัวกรอง
+filt_new = &กฎใหม่...
+filt_edit = &แก้ไขกฎ...
+filt_delete = &ลบกฎ
+filt_up = &ย้ายขึ้น
+filt_down = &ย้ายลง
+filt_run_label = เรียกใช้ตอนนี้บนโฟลเดอร์:
+filt_run_name = โฟลเดอร์ที่จะเรียกใช้ตอนนี้
+filt_run_now = &เรียกใช้ตอนนี้
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &ปลดล็อกด้วยพาสคีย์ (Windows Hello)
+unl_security_key = &ปลดล็อกด้วยกุญแจความปลอดภัย
+unl_master_password_label = &รหัสผ่านหลัก:
+unl_master_password_name = รหัสผ่านหลัก
+unl_unlock = &ปลดล็อก
+unl_exit = &ออกจาก ZBox
+unl_methods_label = &วิธีที่ลงทะเบียนไว้:
+unl_methods_name = วิธีปลดล็อกที่ลงทะเบียนไว้
+unl_add_passkey = &เพิ่มพาสคีย์…
+unl_add_key = &เพิ่มกุญแจความปลอดภัย…
+unl_reassign = &กำหนดพาสคีย์ให้คอมพิวเตอร์เครื่องนี้ใหม่…
+unl_test = &ทดสอบ…
+unl_remove = &เอาออก
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = จาก
+comp_to = ถึง
+comp_cc = สำเนาถึง
+comp_bcc = สำเนาลับถึง
+comp_subject = หัวเรื่อง
+comp_attach_button = แนบไฟล์...
+comp_sending = กำลังส่ง...
+comp_report_label = &รายงาน:
+comp_report_name = รายงาน
+comp_refresh = &รีเฟรช
+comp_copy = &คัดลอก
+comp_preview_read = ตามที่ผู้รับอ่าน
+comp_preview_source = HTML ที่จะถูกส่ง
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = เนื้อความ
+mv_blocked_notice = ประกาศเนื้อหาที่ถูกปิดกั้น
+mv_show_remote = &แสดงเนื้อหาระยะไกล
+mv_always_allow = &อนุญาตผู้ส่งนี้เสมอ
+mv_message_headers = ส่วนหัวข้อความ
+mv_attachments = ไฟล์แนบ
+mv_attachments_count = ไฟล์แนบ ({count})
+mv_save_attachment = บันทึก: {filename}
+mv_save_all = บันทึกทั้งหมด
+mv_html_view = มุมมอง HTML ของข้อความ
+mv_saved_message = ข้อความที่บันทึกไว้
+mv_show_remote_tip = โหลดข้อความนี้ใหม่พร้อมรูปภาพและสไตล์ระยะไกล ตัวติดตามที่รู้จักยังคงถูกปิดกั้น
+mv_always_allow_tip = โหลดเนื้อหาระยะไกลในทุกข้อความจาก {sender}
+
+# The search tab.
+srch_account = บัญชี
+srch_folder = โฟลเดอร์
+srch_for = ค้นหา
+
+# The signature editor.
+sig_editors = ตัวแก้ไขลายเซ็น
+sig_formatted = ลายเซ็น แบบจัดรูปแบบ
+sig_source = ลายเซ็น ซอร์ส HTML
+sig_plain_label = ทางเลือกแบบข้อความธรรมดา (ส่งไปพร้อมกับ HTML)
+sig_plain_name = ทางเลือกแบบข้อความธรรมดา
+
+# About ZBox.
+about_text_name = ข้อความเกี่ยวกับ ZBox
+about_view_license = &ดูสัญญาอนุญาต...
+about_google = &รหัสผ่านสำหรับแอปของ Google...
+about_support = &สนับสนุน ZBox -- การพัฒนาและดูแลโดยคนคนเดียว
+about_repos = &คลังแอปของ Harith บน GitHub
+about_contact = &ติดต่อ Harith
+btn_close_plain = ปิด
+btn_cancel_plain = ยกเลิก
+
+# The license window.
+eula_heading = สัญญาอนุญาต ZBox
+eula_text_name = ข้อความสัญญาอนุญาต ZBox
+eula_third_party = หน้าสัญญาอนุญาตของส่วนประกอบจากบุคคลที่สาม:
+eula_agree = &ฉันยอมรับข้อกำหนดข้างต้น
+eula_agree_name = ฉันได้อ่านและยอมรับข้อกำหนดสัญญาอนุญาต ZBox แล้ว
+eula_disagree = &ฉันไม่ยอมรับ
+eula_next = &ถัดไป
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ข้อความเอกสาร ZBox
+doc_copy = คัดลอกไปยังคลิปบอร์ด
+shortcuts_heading = แป้นพิมพ์ลัด
+shortcuts_text_name = ข้อความแป้นพิมพ์ลัด
+
+# The main window's own panes.
+mf_toolbar = แถบเครื่องมือหลัก
+mf_tabs = แท็บ ZBox
+tree_heading = บัญชีและโฟลเดอร์
+tree_name = แผนผังบัญชีและโฟลเดอร์
+envlist_heading = ข้อความ
+envlist_name = รายการข้อความ
+rdr_heading = ข้อความ
+rdr_name = ตัวอ่านข้อความ
+conv_heading_one = การสนทนา: 1 ข้อความ
+conv_heading_many = การสนทนา: {count} ข้อความ
+
+# A run of several messages, and the cache dialog.
+bulk_progress = เสร็จแล้ว {completed} จาก {total}
+bulk_cancelling = กำลังยกเลิก -- กำลังทำข้อความปัจจุบันให้เสร็จ...
+cache_clear_now = ล้างแคชข้อความออฟไลน์ตอนนี้... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label} ได้รับการปกป้อง
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = ชื่อที่แสดงไม่บังคับ -- เว้นว่างไว้เพื่อส่งในชื่อของบัญชีนี้เอง
+acct_note_identity = ที่อยู่อีเมลอาจต่างจากอีเมลเข้าสู่ระบบได้ หากผู้ให้บริการของคุณเชื่อมโดเมนกำหนดเองกับกล่องจดหมายนี้ จดหมายจะถูกส่งและรับด้วยที่อยู่ด้านบน ส่วนการลงชื่อเข้ายังใช้อีเมลเข้าสู่ระบบ เว้นช่องรหัสผ่านว่างไว้เพื่อใช้รหัสผ่านที่บันทึกไว้สำหรับบัญชีนี้ -- เช่น หลังเปลี่ยนรหัสผ่านสำหรับแอปของ Gmail ให้พิมพ์รหัสใหม่ที่นี่ มิฉะนั้นเว้นว่างไว้
+acct_note_identities = ที่อยู่อื่นที่บัญชีนี้ใช้ส่งและตอบกลับได้ การตอบกลับข้อความที่ส่งถึงที่อยู่เหล่านี้จะใช้ที่อยู่นั้นเป็น จาก โดยค่าเริ่มต้น แทนที่อยู่ด้านบน
+acct_note_signature = ต่อท้ายทุกข้อความใหม่ การตอบกลับ และการส่งต่อที่ส่งจากบัญชีนี้ ใต้บรรทัด "-- " เว้นว่างหากไม่ต้องการ แก้ไขลายเซ็น จะเปิดตัวแก้ไขแบบจัดรูปแบบ ซึ่งมีตัวหนา รายการ และลิงก์ จากนั้นกล่องด้านบนจะเก็บรุ่นข้อความธรรมดาที่ส่งไปพร้อมกัน
+acct_note_junk = โฟลเดอร์จริงที่ ทำเครื่องหมายว่าเป็นขยะ ย้ายข้อความไป "{automatic}" ใช้การคาดเดาตามผู้ให้บริการแบบเดียวกับที่ เก็บถาวร และถังขยะใช้อยู่ ตั้งค่านี้เฉพาะเมื่อการคาดเดานั้นผิด หรือโฟลเดอร์ขยะของคุณมีชื่อกำหนดเอง
+acct_note_disable = บัญชีที่ปิดใช้งานจะไม่ถูกติดต่อเลย -- ไม่มี IDLE ไม่มีการรีเฟรชเป็นระยะ ไม่มีอะไรเลย -- จนกว่าจะเปิดใช้งานใหม่ ยังคงแสดงในแผนผังโดยมีเครื่องหมาย (ปิดใช้งาน) และจดหมายที่ดาวน์โหลดแล้วยังใช้ออฟไลน์ได้ เป็นสวิตช์เดียวกับ บัญชี > ปิดใช้งานบัญชี หรือเมนูบริบทของบัญชี ที่นี่เป็นเพียงอีกที่หนึ่งที่เข้าถึงได้
+acct_note_default = โฟลเดอร์ของบัญชีนี้จะแสดงก่อนในแผนผัง และข้อความใหม่จะส่งจากบัญชีนี้โดยค่าเริ่มต้น เว้นแต่เปลี่ยนเองในตัวเขียน ไม่มีผลกับที่อยู่ที่ใช้ตอบกลับหรือส่งต่อ -- ซึ่งเป็นไปตามข้อความที่ตอบอยู่แล้ว (ดูข้อมูลประจำตัวเพิ่มเติมด้านบน) มีบัญชีเริ่มต้นเพียงบัญชีเดียวเสมอ การยกเลิกเครื่องหมายนี้บนบัญชีเริ่มต้นปัจจุบันโดยไม่ทำเครื่องหมายบัญชีอื่นจะไม่เปลี่ยนอะไร -- ให้ทำเครื่องหมายช่องของบัญชีอื่นเพื่อส่งต่อสถานะเริ่มต้นไปยังบัญชีนั้น
+acct_note_mute = &การปิดเสียงจะปิดกั้นเสียงจดหมายใหม่ การประกาศด้วยเสียง และการแจ้งเตือนของ Windows ของบัญชีนี้ ไม่ว่าจะตั้งค่าอื่นไว้อย่างไร ไม่มีผลกับบัญชีอื่น และยังอยู่ภายใต้สวิตช์หลักใน การตั้งค่า > เสียงและการแจ้งเตือน (เสียงและการแจ้งเตือนบนเดสก์ท็อปโดยรวม)
+wiz_note_app_password = หากคุณสร้างรหัสผ่านสำหรับแอปสำหรับ ZBox แล้ว กด ถัดไป เพื่อดำเนินการต่อ
+wiz_note_login = ข้อมูลเข้าสู่ระบบ\nหากอีเมลเข้าสู่ระบบต่างจากที่อยู่ด้านบน เช่น บัญชีผู้ให้บริการของคุณคือ login@example.net แต่คุณต้องการส่งและรับในชื่อ you@example.org ให้ป้อนอีเมลเข้าสู่ระบบที่นี่ คุณตั้งที่อยู่ส่งกำหนดเองได้ภายหลังในการตั้งค่าบัญชีและข้อมูลประจำตัว
+wiz_note_servers = การตั้งค่าเซิร์ฟเวอร์ กรอกไว้ล่วงหน้าเมื่อรู้จักโดเมน แก้ไขสิ่งที่ต้องต่างออกไป
+wiz_preset_none = ไม่พบค่าที่กำหนดไว้ล่วงหน้าสำหรับโดเมนนี้ ป้อนการตั้งค่าเซิร์ฟเวอร์ของผู้ให้บริการเอง หน้าช่วยเหลือของผู้ให้บริการจะระบุไว้
+ab_note_groups = พิมพ์ชื่อกลุ่มในช่อง ถึง สำเนาถึง หรือ สำเนาลับถึง ของหน้าต่างเขียนข้อความ เพื่อใส่สมาชิกทุกคนของกลุ่มในครั้งเดียว
+cache_note_intro = รายการเหล่านี้ลบเฉพาะสำเนาในเครื่องของ ZBox ไม่มีสิ่งใดถูกลบจากเซิร์ฟเวอร์จดหมาย และข้อความที่ลบจะถูกดาวน์โหลดใหม่เมื่อคุณเปิดครั้งถัดไป
+cache_note_age = การล้างอัตโนมัติทำงานวันละครั้ง เมื่อ ZBox ไม่มีการใช้แป้นพิมพ์เป็นเวลาสิบนาทีและไม่มีข้อความเปิดอยู่ พิจารณาตามวันที่ของแต่ละข้อความ รวมถึงข้อความที่ยังอยู่ในบัญชีของคุณ
+filt_note_intro = กฎทำงานตามลำดับจากบนลงล่าง ตรวจสอบ จาก ถึง และหัวเรื่อง ใช้กับจดหมายใหม่โดยอัตโนมัติเมื่อมาถึงกล่องขาเข้าของบัญชีนี้ ใช้ เรียกใช้ตอนนี้ ด้านล่างเพื่อใช้กับข้อความที่อยู่ในโฟลเดอร์แล้ว
+filt_note_run_now = ใช้ทุกกฎที่เปิดใช้งานด้านบนตามลำดับ กับทุกข้อความที่อยู่ในโฟลเดอร์ที่เลือกแล้ว -- บันทึกการเปลี่ยนแปลงของคุณก่อน เช่นเดียวกับ OK
+mp_note_intro = บัญชีเหล่านี้ถูกตั้งค่าบนคอมพิวเตอร์เครื่องอื่น ป้อนรหัสผ่านหลักเพื่อปลดล็อกรหัสผ่านที่บันทึกไว้ที่นี่ คุณจะถูกถามเพียงครั้งเดียวบนคอมพิวเตอร์เครื่องนี้\n\nหากไม่มีรหัสผ่านหลัก แต่ละบัญชีต้องลงชื่อเข้าเซิร์ฟเวอร์จดหมายใหม่
+priv_note_remote = รูปภาพ สไตล์ชีต และแบบอักษรที่ข้อความโหลดจากอินเทอร์เน็ต จะบอกผู้ส่งว่าคุณเปิดข้อความเมื่อใดและจากที่ใด เมื่อเปิดตัวเลือกนี้ จะไม่มีสิ่งใดถูกโหลด: ประกาศจะแสดงด้านบนข้อความว่าปิดกั้นอะไร และ Ctrl+Shift+I จะโหลดสำหรับข้อความนั้นข้อความเดียว รูปภาพที่แนบมากับข้อความจะแสดงเสมอ สคริปต์และเฟรมที่ฝังจะถูกเอาออกเสมอและไม่ถูกโหลด
+priv_note_blocklist = นี่คือชั้นที่สอง มีความสำคัญเมื่อคุณโหลดเนื้อหาระยะไกลของข้อความ หรืออนุญาตผู้ส่ง: รูปภาพจะโหลด แต่สิ่งใดที่มาจากโดเมนติดตามหรือโฆษณาที่รู้จักจะยังไม่ถูกโหลด รายการดาวน์โหลดจากรายการโฆษณาและตัวติดตามสาธารณะแล้วรวมกัน การอัปเดตใช้เวลาหนึ่งถึงสองวินาทีและทำงานในเบื้องหลัง
+priv_note_junk = ไม่มีการคาดเดา ทำเครื่องหมายว่าเป็นขยะ จะเพิ่มผู้ส่งลงในรายการปิดกั้นด้านล่าง เว้นแต่ข้อความมาทางรายชื่อผู้รับจดหมาย ทำเครื่องหมายว่าไม่เป็นขยะ จะเพิ่มผู้ส่งลงในรายการไม่เป็นขยะ และข้อความนั้นจะไม่ถูกตรวจสอบอีก ข้อความใหม่จากผู้ส่งที่ถูกปิดกั้นจะมีเครื่องหมาย ผู้ส่งที่ถูกปิดกั้น ในรายการ ข้อความที่ลิงก์ไปยังไซต์ฟิชชิงหรือมัลแวร์ที่รู้จักจะมีเครื่องหมาย อาจเป็นฟิชชิง การกรองสแปมของผู้ให้บริการจดหมายยังทำงานเหมือนเดิม
+priv_status_phishing_updating = รายการฟิชชิง: กำลังอัปเดตในเบื้องหลัง เปิดกล่องโต้ตอบนี้ใหม่เพื่อดูผลลัพธ์
+priv_status_updating = กำลังอัปเดตในเบื้องหลัง เปิดกล่องโต้ตอบนี้ใหม่เพื่อดูผลลัพธ์
+rel_note_intro = ข้อความที่เกี่ยวข้องกับ "{subject}" ตามส่วนหัว Message-ID/References จากทุกโฟลเดอร์ในบัญชีนี้
+srch_note_intro = ค้นหา จาก หัวเรื่อง และเนื้อความ สำหรับข้อความที่คุณป้อนด้านล่าง ค้นหาทุกบัญชีและโฟลเดอร์ เว้นแต่คุณจะจำกัดด้านล่าง
+sig_note_plain = เว้นทางเลือกแบบข้อความธรรมดาว่างไว้ แล้วจะสร้างจากลายเซ็นแบบจัดรูปแบบเมื่อคุณกด บันทึก
+unified_note_intro = เลือกโฟลเดอร์ที่จะรวมจากทุกบัญชี แต่ละโฟลเดอร์ที่ทำเครื่องหมายจะกลายเป็นรายการเดียวในแผนผังที่รวมโฟลเดอร์นั้นจากทุกบัญชีของคุณ
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = เกี่ยวกับ ZBox
+title_account_settings = การตั้งค่าบัญชีและข้อมูลประจำตัว: {name}
+title_new_account = บัญชีใหม่
+title_address_book = สมุดรายชื่อ
+title_members = สมาชิก: {name}
+ab_group_name_prompt = ชื่อกลุ่ม:
+title_new_group = กลุ่มใหม่
+title_cache_cleanup = กำหนดค่าการล้างแคช
+cache_age_prompt = เอาข้อความในแคชที่เก่ากว่านี้ออกโดยอัตโนมัติ:
+title_automatic_cleanup = การล้างอัตโนมัติ
+comp_link_prompt = ที่อยู่ลิงก์:
+title_insert_link = แทรกลิงก์
+title_composer_diagnostics = การวินิจฉัยตัวเขียน
+title_formatted_preview = ตัวอย่างแบบจัดรูปแบบ
+title_license_agreement = ข้อตกลงสัญญาอนุญาต ZBox
+title_message_filters = ตัวกรองข้อความ: {account}
+title_master_password_required = ต้องใช้รหัสผ่านหลัก
+title_privacy_dialog = ความเป็นส่วนตัวและการปิดกั้นเนื้อหา
+title_privacy = ความเป็นส่วนตัว
+title_settings = การตั้งค่า
+title_unified_folders = โฟลเดอร์แบบรวม
+title_zbox_locked = ZBox ถูกล็อก
+title_message_view = มุมมองข้อความ
+title_remote_content = เนื้อหาระยะไกล
+title_refresh = รีเฟรช
+title_refresh_all = รีเฟรชทั้งหมด
+mv_choose_folder = เลือกโฟลเดอร์ที่จะบันทึกไฟล์แนบ
+title_thread = เธรด
+title_inbox = กล่องขาเข้า
+title_compose = เขียน
+title_watch_thread = เฝ้าดูเธรด
+title_ignore_thread = เพิกเฉยเธรด
+title_edit_signature = แก้ไขลายเซ็น
+title_account = บัญชี
+mf_folder_name_prompt = ชื่อโฟลเดอร์:
+mf_new_name_prompt = ชื่อใหม่:
+title_refresh_all_accounts = รีเฟรชบัญชีทั้งหมด
+title_sender = ผู้ส่ง
+title_new_mail = จดหมายใหม่
+mf_export_dialog_title = ส่งออกบัญชีทั้งหมด {count} บัญชีและการตั้งค่า
+mf_related_tab = ที่เกี่ยวข้อง: {subject}
+title_hotkeys_diagnostic = การวินิจฉัยปุ่มลัด
+set_choose_attachment_dir = เลือกโฟลเดอร์บันทึกไฟล์แนบ
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox ถูกล็อก ใช้วิธีใดวิธีหนึ่งด้านล่างเพื่อปลดล็อก การยกเลิกจะปิด ZBox โดยไม่เปิดบัญชีใด
+unl_note_foreign_passkey = พาสคีย์ที่บันทึกกับโฟลเดอร์นี้เป็นของคอมพิวเตอร์เครื่องอื่น จึงใช้ที่นี่ไม่ได้ ปลดล็อกด้วยกุญแจความปลอดภัยหรือรหัสผ่านหลัก แล้วใช้ การตั้งค่า ความเป็นส่วนตัวและความปลอดภัย วิธีปลดล็อก เพื่อตั้งค่าพาสคีย์บนคอมพิวเตอร์เครื่องนี้
+unl_note_methods = เมื่อเปิดการล็อกแอป วิธีใดวิธีหนึ่งเหล่านี้ปลดล็อก ZBox ได้ ร่วมกับรหัสผ่านหลัก พาสคีย์ใช้ Windows Hello บนคอมพิวเตอร์เครื่องนี้ กุญแจความปลอดภัยคือกุญแจ FIDO2 ผ่าน USB หรือ NFC และใช้ได้บนคอมพิวเตอร์ทุกเครื่องที่คุณเสียบ
+unl_note_not_encryption = วิธีเหล่านี้ปลดล็อกแอป ไม่ได้เข้ารหัสอะไร: รหัสผ่านหลักยังคงเป็นสิ่งเดียวที่เปิดรหัสผ่านบัญชีที่บันทึกไว้บนคอมพิวเตอร์ที่ไม่เคยใช้โฟลเดอร์นี้ ต้องตั้งรหัสผ่านหลักก่อน และเพิ่มวิธีเหล่านี้ไม่ได้จนกว่าจะตั้ง
+unl_add_passkey_unavailable = &เพิ่มพาสคีย์ (ไม่พร้อมใช้งาน)
+unl_add_key_unavailable = &เพิ่มกุญแจความปลอดภัย (ไม่พร้อมใช้งาน)
+unl_reassign_unavailable = &กำหนดพาสคีย์ให้คอมพิวเตอร์เครื่องนี้ใหม่ (ไม่พร้อมใช้งาน)
+unl_status_cancelled_passkey = ยกเลิกพาสคีย์แล้ว ZBox ยังถูกล็อก
+unl_status_cancelled_key = ยกเลิกกุญแจความปลอดภัยแล้ว ZBox ยังถูกล็อก
+unl_status_enter_password = ป้อนรหัสผ่านหลัก
+unl_status_no_master = ยังไม่ได้ตั้งรหัสผ่านหลัก จึงยังเพิ่มพาสคีย์หรือกุญแจความปลอดภัยไม่ได้ ตั้งด้วยปุ่ม รหัสผ่านหลัก ใน การตั้งค่า ความเป็นส่วนตัวและความปลอดภัย แล้วกลับมาที่นี่ รหัสผ่านหลักคือสิ่งที่เปิดรหัสผ่านบัญชีที่บันทึกไว้บนคอมพิวเตอร์เครื่องอื่น พาสคีย์เพียงปลดล็อกแอปบนเครื่องนี้ จึงใช้เดี่ยวๆ ไม่ได้
+unl_status_unsupported = Windows บนคอมพิวเตอร์เครื่องนี้ไม่รองรับพาสคีย์หรือกุญแจความปลอดภัย ที่นี่จึงปลดล็อก ZBox ได้ด้วยรหัสผ่านหลักเท่านั้น
+unl_status_foreign_one = พาสคีย์ 1 รายการเป็นของคอมพิวเตอร์เครื่องอื่นและปลดล็อก ZBox ที่นี่ไม่ได้ กำหนดใหม่ จะแทนที่ด้วยพาสคีย์ที่สร้างบนเครื่องนี้
+unl_status_foreign_many = พาสคีย์ {count} รายการเป็นของคอมพิวเตอร์เครื่องอื่นและปลดล็อก ZBox ที่นี่ไม่ได้ กำหนดใหม่ จะแทนที่ด้วยพาสคีย์ที่สร้างบนเครื่องนี้
+unl_status_foreign_one_no_hello = พาสคีย์ 1 รายการเป็นของคอมพิวเตอร์เครื่องอื่นและปลดล็อก ZBox ที่นี่ไม่ได้ ไม่ได้ตั้งค่า Windows Hello ที่นี่ จึงแทนที่บนเครื่องนี้ไม่ได้ เอาออก จะลืมพาสคีย์นั้น
+unl_status_foreign_many_no_hello = พาสคีย์ {count} รายการเป็นของคอมพิวเตอร์เครื่องอื่นและปลดล็อก ZBox ที่นี่ไม่ได้ ไม่ได้ตั้งค่า Windows Hello ที่นี่ จึงแทนที่บนเครื่องนี้ไม่ได้ เอาออก จะลืมพาสคีย์เหล่านั้น
+unl_status_no_hello = ไม่ได้ตั้งค่า Windows Hello บนคอมพิวเตอร์เครื่องนี้ จึงเพิ่มพาสคีย์ที่นี่ไม่ได้ ยังเพิ่มกุญแจความปลอดภัยได้
+unl_status_none_registered = ยังไม่ได้ลงทะเบียนวิธีปลดล็อก
+unl_status_add_cancelled_passkey = ยกเลิกการเพิ่มพาสคีย์แล้ว
+unl_status_add_cancelled_key = ยกเลิกการเพิ่มกุญแจความปลอดภัยแล้ว
+unl_status_added = เพิ่มแล้ว: {name}
+unl_status_reassign_cancelled = ยกเลิกการกำหนดใหม่แล้ว ไม่มีอะไรเปลี่ยน
+unl_status_reassigned = เพิ่ม {name} และลืม {count} รายการจากคอมพิวเตอร์เครื่องอื่นแล้ว
+unl_status_test_cancelled = ยกเลิกการทดสอบแล้ว
+unl_status_removed = เอาออกแล้ว
+unl_remove_warning_last = เอา {name} ออกหรือไม่?\n\nนี่เป็นวิธีปลดล็อกเดียวที่ลงทะเบียนไว้และยังไม่ได้ตั้งรหัสผ่านหลัก เมื่อเปิดการล็อกแอปจะไม่มีอะไรเหลือไว้ปลดล็อก ZBox การล็อกจะถูกข้ามแทนที่จะกันคุณออก แต่ ZBox จะเปิดโดยไม่ล็อก
+unl_remove_warning = เอา {name} ออกหรือไม่? ZBox จะไม่ยอมรับวิธีนี้อีก
+ab_col_email = อีเมล
+ab_col_name = ชื่อ
+ab_col_phone = โทรศัพท์
+ab_no_contacts = ยังไม่มีผู้ติดต่อ
+acct_auto_check = ตรวจสอบข้อความใหม่โดยอัตโนมัติ
+acct_note_auto_check = ปิด: ZBox จะไม่ติดต่อบัญชีนี้เอง -- ไม่เฝ้าดูจดหมายใหม่ ไม่รีเฟรชตามเวลา ไม่ดาวน์โหลดในเบื้องหลัง -- เซิร์ฟเวอร์ที่ไม่เสถียรจึงทำให้บัญชีอื่นช้าลงไม่ได้ จดหมายที่ดาวน์โหลดแล้วยังเปิดได้ และรีเฟรช (F5) การส่ง และการลบยังไปถึงเซิร์ฟเวอร์ เหมือนกับ หยุดการตรวจสอบอัตโนมัติชั่วคราว ในเมนูเครื่องมือหรือเมนูบริบทของบัญชี
+bl_day_ago = 1 วันก่อน
+bl_days_ago = {days} วันก่อน
+bl_label_blocklists = รายการปิดกั้น
+bl_label_phishing = รายการฟิชชิง
+bl_last_failed = ความพยายามครั้งล่าสุดล้มเหลว: %s
+bl_not_downloaded = ยังไม่ได้ดาวน์โหลด
+bl_save_failed = ดาวน์โหลด %s แล้วแต่บันทึกไม่ได้: %s
+bl_seed_only = %s โดเมนจากรายการในตัว ยังไม่เคยอัปเดตจากอินเทอร์เน็ต
+bl_some_failed = บางแหล่งล้มเหลว: %s
+bl_some_unreachable = ติดต่อบางแหล่งไม่ได้: %s
+bl_status_line = %s โดเมน อัปเดตล่าสุด %s
+bl_up_to_date = %s เป็นรุ่นล่าสุดแล้ว
+bl_update_failed = ไม่สามารถอัปเดต %s ได้: %s
+bl_updated = อัปเดต %s แล้ว: %s โดเมน
+cc_age_choice = แคชข้อความทุกรายการที่มีอายุ %s
+cc_auto_button = การล้างอัตโนมัติ: ข้อความในแคชที่เก่ากว่า %s...
+comp_btn_discard = &ละทิ้ง
+comp_btn_keep_editing = &แก้ไขต่อ
+comp_btn_save_draft = &บันทึกฉบับร่าง
+comp_no_account = ไม่ได้กำหนดค่าบัญชี
+comp_saving_draft = กำลังบันทึกฉบับร่าง…
+comp_this_message = ข้อความนี้
+comp_unsent_save_q = บันทึก %s เป็นฉบับร่างก่อนปิดหรือไม่?
+comp_unsent_tray_q = บันทึก %s เป็นฉบับร่างก่อน ZBox ลงถาดหรือไม่?
+doc_unreadable = ไม่สามารถอ่านไฟล์เอกสารได้:
+envlist_all_disabled = ทุกบัญชีถูกปิดใช้งาน
+envlist_col_date = วันที่
+envlist_col_from = จาก
+envlist_col_status = สถานะ
+envlist_col_subject = หัวเรื่อง
+envlist_collapsed = ยุบอยู่ (%d)
+envlist_empty = ไม่มีข้อความในโฟลเดอร์นี้
+envlist_loading = กำลังโหลดข้อความ...
+envlist_no_accounts = ยังไม่ได้กำหนดค่าบัญชี
+envlist_no_ignored = ไม่มีเธรดที่เพิกเฉยในโฟลเดอร์นี้
+envlist_no_watched = ไม่มีเธรดที่เฝ้าดูในโฟลเดอร์นี้
+envlist_select_folder = เลือกบัญชีหรือโฟลเดอร์เพื่อโหลดข้อความ
+eula_link_0 = เปิดหน้าสัญญาอนุญาตของ Himalaya ในเบราว์เซอร์
+eula_link_1 = เปิดหน้าสัญญาอนุญาตของ StevenBlack hosts ในเบราว์เซอร์
+eula_link_2 = เปิดหน้าสัญญาอนุญาตของ EasyList/EasyPrivacy ในเบราว์เซอร์
+eula_link_3 = เปิดหน้าสัญญาอนุญาตของ Phishing.Database ในเบราว์เซอร์
+eula_read_note = อ่านสัญญาอนุญาตด้านล่าง รวมถึงส่วนของบุคคลที่สาม คุณต้องทำเครื่องหมาย ฉันยอมรับ ก่อนที่ ถัดไป จะใช้ได้ ฉันไม่ยอมรับ จะปิด ZBox โดยไม่เริ่มทำงาน และเอาสิ่งที่การเรียกใช้ครั้งนี้สร้างไว้ออก
+eula_unreadable = ไม่สามารถอ่านไฟล์สัญญาอนุญาตได้:\n%s
+filters_title = เรียกใช้ตัวกรอง
+flag_title = ติดดาวข้อความ
+folder_type_archive = การเก็บถาวร
+folder_type_drafts = ฉบับร่าง
+folder_type_inbox = กล่องขาเข้า
+folder_type_junk = ขยะ
+folder_type_sent = ที่ส่งแล้ว
+folder_type_trash = ถังขยะ
+mime_application_json = ไฟล์ JSON
+mime_application_msword = เอกสาร Word
+mime_application_octet_stream = ไฟล์ไบนารี
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = สเปรดชีต Excel
+mime_application_vnd_ms_powerpoint = งานนำเสนอ PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = งานนำเสนอ PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = สเปรดชีต Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = เอกสาร Word
+mime_application_xml = ไฟล์ XML
+mime_application_zip = ไฟล์เก็บถาวร ZIP
+mime_audio_mpeg = เสียง MP3
+mime_audio_ogg = เสียง OGG
+mime_audio_wav = เสียง WAV
+mime_image_bmp = รูปภาพ BMP
+mime_image_gif = รูปภาพ GIF
+mime_image_jpeg = รูปภาพ JPEG
+mime_image_png = รูปภาพ PNG
+mime_image_svg_xml = รูปภาพ SVG
+mime_image_webp = รูปภาพ WebP
+mime_text_csv = ไฟล์ CSV
+mime_text_html = ไฟล์ HTML
+mime_text_plain = ไฟล์ข้อความ
+mime_video_mp4 = วิดีโอ MP4
+mime_video_x_msvideo = วิดีโอ AVI
+move_title_junk = ทำเครื่องหมายว่าเป็นขยะ
+move_title_move_to = ย้ายไปยัง
+move_title_not_junk = ทำเครื่องหมายว่าไม่เป็นขยะ
+mp_explain_set = ตั้งรหัสผ่านหลักไว้แล้ว รหัสผ่านหลักคือสิ่งที่ทำให้โฟลเดอร์ ZBox นี้เปิดรหัสผ่านบัญชีที่บันทึกไว้บนคอมพิวเตอร์เครื่องอื่นได้\n\nเว้นช่องรหัสผ่านใหม่ทั้งสองว่างไว้แล้วกด OK เพื่อเอาออก การเอาออกไม่มีผลกับเครื่องนี้ แต่โฟลเดอร์จะใช้บนเครื่องอื่นไม่ได้อีกหากไม่ลงชื่อเข้าทุกบัญชีใหม่
+mp_explain_unset = ยังไม่ได้ตั้งรหัสผ่านหลัก รหัสผ่านบัญชีที่บันทึกไว้จึงอ่านได้เฉพาะบนคอมพิวเตอร์เครื่องนี้และบัญชี Windows นี้ หากคัดลอกโฟลเดอร์ไปที่อื่น ทุกบัญชีต้องลงชื่อเข้าเซิร์ฟเวอร์จดหมายใหม่\n\nตั้งไว้แล้ว ZBox จะถามหนึ่งครั้งบนคอมพิวเตอร์เครื่องใหม่แต่ละเครื่อง จากนั้นปลดล็อกตามปกติที่นั่น เครื่องนี้จะไม่ถามอีก\n\nจดไว้และเก็บในที่ปลอดภัย รหัสผ่านหลักไม่ได้ถูกเก็บไว้ที่ใดและกู้คืนไม่ได้: หากลืม ทุกบัญชีต้องลงชื่อเข้าเซิร์ฟเวอร์จดหมายใหม่
+mp_label_confirm = &ยืนยันรหัสผ่านหลักใหม่:
+mp_label_current = &รหัสผ่านหลักปัจจุบัน:
+mp_label_master = &รหัสผ่านหลัก:
+mp_label_new = &รหัสผ่านหลักใหม่:
+mp_name_confirm = ยืนยันรหัสผ่านหลักใหม่
+mp_name_current = รหัสผ่านหลักปัจจุบัน
+mp_name_master = รหัสผ่านหลัก
+mp_name_new = รหัสผ่านหลักใหม่
+mp_prompt_existing = รหัสผ่านบัญชีที่บันทึกไว้ได้รับการปกป้องบนคอมพิวเตอร์เครื่องนี้เท่านั้น ตั้งรหัสผ่านหลักเพื่อให้เปิดได้เมื่อคุณย้าย ZBox ไปยังเครื่องอื่นด้วย
+mp_prompt_first_run = ZBox กำลังจะบันทึกรหัสผ่านบัญชีของคุณ ตั้งรหัสผ่านหลักตอนนี้เพื่อให้ยังเปิดได้หากคุณย้าย ZBox ไปยังคอมพิวเตอร์เครื่องอื่น
+mp_prompt_new_account = ZBox กำลังจะบันทึกรหัสผ่านของบัญชีนี้ ตั้งรหัสผ่านหลักก่อนเพื่อให้ยังเปิดบัญชีได้หากคุณย้าย ZBox ไปยังคอมพิวเตอร์เครื่องอื่น
+mp_removed_done = เอารหัสผ่านหลักออกแล้ว รหัสผ่านที่บันทึกไว้ตอนนี้ใช้ได้เฉพาะบนคอมพิวเตอร์เครื่องนี้และบัญชี Windows นี้
+mp_set_done = ตั้งรหัสผ่านหลักแล้ว ZBox จะถามหนึ่งครั้งบนคอมพิวเตอร์เครื่องใหม่แต่ละเครื่องที่เปิดโฟลเดอร์นี้ จากนั้นปลดล็อกตามปกติที่นั่น
+mv_body_title = เนื้อความ
+mv_col_format = รูปแบบ
+mv_col_name = ชื่อ
+mv_col_size = ขนาด
+mv_format_unknown = ไม่ทราบ
+mv_size_unknown = ไม่ทราบขนาด
+na_account_settings = การตั้งค่าบัญชีและข้อมูลประจำตัว
+na_disable_account = ปิดใช้งานบัญชี
+na_edit_signature = แก้ไขลายเซ็น
+na_message_filters = ตัวกรองข้อความ
+na_mute_account = ปิดเสียงบัญชี
+na_pause_auto_check = หยุดการตรวจสอบอัตโนมัติชั่วคราว
+na_remove_account = เอาบัญชีออก
+na_set_default = ตั้งเป็นบัญชีเริ่มต้น
+no_offline_copy = ไม่มีสำเนาออฟไลน์ของ %s เปิดขณะออนไลน์ หรือใช้ ไฟล์ ออฟไลน์ ประสานตอนนี้
+perm_delete_confirm = {msg} การนี้ข้ามโฟลเดอร์ถังขยะและเลิกทำไม่ได้
+perm_delete_many = ลบ {count} ข้อความอย่างถาวรหรือไม่?
+perm_delete_one = ลบ {count} ข้อความอย่างถาวรหรือไม่?
+preset_note_apple = Apple ต้องใช้รหัสผ่านเฉพาะแอป
+preset_note_fastmail = Fastmail ต้องใช้รหัสผ่านสำหรับแอป
+preset_note_google = Google ต้องใช้รหัสผ่านสำหรับแอปหรือ OAuth2 ไม่ใช่รหัสผ่านปกติของคุณ
+preset_note_proton = ProtonMail ต้องมีแอป ProtonMail Bridge ทำงานอยู่ในเครื่อง
+preset_note_yahoo = Yahoo ต้องใช้รหัสผ่านสำหรับแอป
+priv_phishing_not_loaded = รายการฟิชชิง: ยังไม่ได้โหลด จะดาวน์โหลดครั้งแรกเมื่อกฎเหล่านี้เปิดอยู่และ ZBox ออนไลน์
+priv_phishing_prefix = รายการฟิชชิง:
+priv_status_unavailable = สถานะรายการปิดกั้นไม่พร้อมใช้งาน
+rdr_load_failed = ไม่สามารถโหลดข้อความได้\n\n{message}
+rdr_loading = กำลังโหลดข้อความ...
+rdr_select_message = เลือกข้อความเพื่ออ่านที่นี่
+set_autosave_off = ปิด — ใช้ บันทึกฉบับร่าง (Ctrl+S) เพื่อบันทึกเอง
+set_autosave_seconds = ทุก {seconds} วินาที
+set_no_unlock = ไม่มีพาสคีย์หรือกุญแจความปลอดภัยที่ใช้ได้ที่นี่
+set_purge_days = หลังจาก {days} วัน
+set_purge_off = ปิด — ถังขยะและขยะไม่ถูกล้างอัตโนมัติ
+set_purge_one_day = หลังจาก 1 วัน
+set_rt_bundled_installed = รันไทม์ที่มาพร้อมกัน: ติดตั้งแล้ว
+set_rt_bundled_many = รันไทม์ที่มาพร้อมกัน: ติดตั้ง %s แล้ว
+set_rt_bundled_none = รันไทม์ที่มาพร้อมกัน: ไม่ได้ติดตั้ง ZBox จึงใช้รันไทม์ทั้งระบบ
+set_rt_bundled_unknown = รันไทม์ที่มาพร้อมกัน: ไม่สามารถระบุได้
+set_rt_bundled_ver = รันไทม์ที่มาพร้อมกัน: ติดตั้งรุ่น %s แล้ว
+set_rt_system_unknown = รันไทม์ทั้งระบบ: ไม่สามารถระบุรุ่นได้
+set_rt_system_ver = รันไทม์ทั้งระบบ: รุ่น %s
+set_unlock_many = วิธีปลดล็อกที่ใช้ได้ที่นี่ %d วิธี
+set_unlock_unreadable = ไม่สามารถอ่านวิธีปลดล็อกได้
+sig_tab_formatted = จัดรูปแบบ
+sig_tab_source = ซอร์ส HTML
+srch_all_accounts = บัญชีทั้งหมด
+srch_all_folders = โฟลเดอร์ทั้งหมด
+tab_mail = จดหมาย
+tab_new_message = ข้อความใหม่
+tab_saved_message = ข้อความที่บันทึกไว้
+title_copy_to_err = คัดลอกไปยัง
+title_mark_message = ทำเครื่องหมายข้อความ
+title_unsent_message = ข้อความที่ยังไม่ได้ส่ง
+tree_unified_root = โฟลเดอร์แบบรวม
+unlock_kind_passkey = พาสคีย์ (Windows Hello)
+unlock_kind_security_key = กุญแจความปลอดภัย
+unlock_prompt_message = Windows กำลังขอให้คุณยืนยัน ตอบด้วย Windows Hello, PIN ของคุณ หรือกุญแจความปลอดภัย หน้าต่างนี้จะปิดเองเมื่อ Windows ทำเสร็จ
+unlock_prompt_title = ความปลอดภัยของ Windows
+unlock_registering = กำลังลงทะเบียนวิธีปลดล็อกนี้
+unlock_the_passkey = พาสคีย์
+unlock_the_security_key = กุญแจความปลอดภัย
+wildcard_eml = ไฟล์อีเมล (*.eml)|*.eml|ไฟล์ทั้งหมด (*.*)|*.*
+wildcard_export = ไฟล์ส่งออก ZBox (*.json)|*.json
+wiz_not_supported = ไม่รองรับ: {name} {note} เพิ่มบัญชีนี้ใน ZBox ไม่ได้
+stock_apply = &นำไปใช้
+stock_cancel = ยกเลิก
+stock_close = &ปิด
+stock_help = &ช่วยเหลือ
+stock_no = &ไม่
+stock_ok = ตกลง
+stock_yes = &ใช่
+wiz_btn_back = &< ย้อนกลับ
+wiz_btn_finish = &เสร็จสิ้น
+wiz_btn_next = &ถัดไป >
+acct_unsaved_q = บันทึกการเปลี่ยนแปลงของบัญชีนี้หรือไม่?
+btn_save = &บันทึก
+spell_add_to_dictionary = &เพิ่มลงในพจนานุกรม
+spell_no_suggestions = ไม่มีคำแนะนำ
+title_signature_for = ลายเซ็น: {account}
+title_mark_folder_read = ทำเครื่องหมายโฟลเดอร์ว่าอ่านแล้ว
+title_update_available = การอัปเดต ZBox
+update_available = มี ZBox {new} ให้ใช้งาน คุณมีรุ่น {current}
+upd_notes_label = บันทึกประจำรุ่น:
+upd_no_notes = ไม่มีบันทึกประจำรุ่น
+upd_notes_name = บันทึกประจำรุ่น
+upd_update_now = ใช่ อัปเดตตอนนี้
+upd_remind_later = เตือนฉันภายหลัง
+title_update_download = กำลังดาวน์โหลดการอัปเดต ZBox
+upd_downloading = กำลังดาวน์โหลด ZBox {version}...
+upd_progress_name = ความคืบหน้าการดาวน์โหลด
+upd_cancel = ยกเลิก
+upd_cancelling = กำลังยกเลิก...
+set_updates_label = การอัปเดต:
+set_update_auto = ตรวจหาการอัปเดตโดยอัตโนมัติ
+set_update_mode_label = เมื่อพบการอัปเดต:
+set_update_ask = ถามฉัน
+set_update_silent = ดาวน์โหลดและติดตั้งโดยไม่ถาม
+set_update_note = ZBox ตรวจหารุ่นใหม่บน GitHub ไม่เกินวันละครั้ง เฉพาะตอนที่ไม่ได้ใช้งาน และไม่ส่งข้อมูลใดนอกจากหมายเลขรุ่นของตัวเอง ถามฉัน จะแสดงรุ่นใหม่และบันทึกประจำรุ่น พร้อม ใช่ อัปเดตตอนนี้ และ เตือนฉันภายหลัง ดาวน์โหลดและติดตั้งโดยไม่ถาม จะดึงการอัปเดตในช่วงที่ไม่ได้ใช้งาน และติดตั้งเมื่อคุณออกจาก ZBox อย่างสมบูรณ์ครั้งถัดไป ไม่ติดตั้งระหว่างที่คุณทำงานเลย การอัปเดตจะแทนที่เฉพาะไฟล์โปรแกรมของ ZBox เท่านั้น บัญชี รหัสผ่าน การตั้งค่า อีเมล บันทึก ธีมเสียง และภาษาที่คุณเพิ่มเองจะไม่ถูกแตะต้อง และรุ่นก่อนหน้าจะถูกเก็บไว้และกู้คืนเองหากรุ่นใหม่เริ่มทำงานไม่ได้ ในวิธีใช้ การอัปเดต ยังมี ตรวจหาการอัปเดตตอนนี้ และหน้ารุ่นที่เผยแพร่สำหรับการอัปเดตด้วยตนเอง
+set_update_check_now = ตรวจหาตอนนี้
+mv_attachment_button = {filename} ({format})
+att_open = เปิด
+att_save = บันทึก...
+att_save_all = บันทึกไฟล์แนบทั้งหมด
+title_save_attachment = บันทึกไฟล์แนบ
+title_full_headers = ส่วนหัวทั้งหมด
+hdr_copy_all = คัดลอกทั้งหมด
+acct_identity_own_signature = ใช้ลายเซ็นของตัวเอง
+acct_identity_own_reply_to = ใช้ที่อยู่ตอบกลับของตัวเอง
+acct_identity_reply_to = ที่อยู่ตอบกลับ
+acct_identity_always_cc = สำเนาถึงที่อยู่เหล่านี้เสมอ
+acct_identity_cc = ที่อยู่สำเนาถึง
+acct_identity_always_bcc = สำเนาลับถึงที่อยู่เหล่านี้เสมอ
+acct_identity_bcc = ที่อยู่สำเนาลับถึง
+acct_identity_own_folders = ใช้โฟลเดอร์ฉบับร่างและส่งแล้วของตัวเอง
+acct_identity_drafts = โฟลเดอร์ฉบับร่าง
+acct_identity_sent = โฟลเดอร์ส่งแล้ว
+acct_identity_own_smtp = ใช้เซิร์ฟเวอร์ขาออกของตัวเอง
+acct_identity_smtp_login = ชื่อเข้าสู่ระบบขาออก
+acct_identity_smtp_password = รหัสผ่านขาออก
+acct_identity_test_smtp = ทดสอบเซิร์ฟเวอร์ขาออก
+acct_identity_note_smtp = เว้นชื่อเข้าสู่ระบบว่างไว้เพื่อเข้าสู่ระบบด้วยที่อยู่อีเมลของข้อมูลประจำตัวนี้ สำเนาที่ส่งจะไปยังโฟลเดอร์ส่งแล้วของบัญชีนี้ หรือไปยังโฟลเดอร์ส่งแล้วของข้อมูลประจำตัวนี้เองหากมี
+identity_field_required = กรอก {field} หรือยกเลิกการเลือกกล่องของมัน
+identity_field_invalid = {field} มีที่อยู่ที่ไม่ถูกต้อง
+identity_folders_required = เลือกโฟลเดอร์ฉบับร่าง โฟลเดอร์ส่งแล้ว หรือทั้งสอง หรือยกเลิกการเลือกกล่องของมัน
+identity_password_required = ป้อนรหัสผ่านขาออก
+identity_smtp_testing = กำลังทดสอบเซิร์ฟเวอร์ขาออก
+identity_smtp_ok = เซิร์ฟเวอร์ขาออกยอมรับการเข้าสู่ระบบ
+identity_smtp_failed = การทดสอบเซิร์ฟเวอร์ขาออกล้มเหลว\n\n{error}
+set_bare_keys_note_move = M และ C เปิดเมนูย้ายไปและคัดลอกไปพร้อมรายการโฟลเดอร์สำหรับข้อความที่เลือก และ Shift+M เปิดช่องให้พิมพ์บางส่วนของชื่อโฟลเดอร์เพื่อย้ายข้อความไปที่นั่น การปิดตัวเลือกนี้จะทำให้ M และ C กลับไปใช้การนำทางด้วยอักษรตัวแรกด้วย
+folder_search_filter = ชื่อโฟลเดอร์มีคำว่า
+folder_search_list = โฟลเดอร์ที่ตรงกัน
+folder_search_no_match = ไม่มีโฟลเดอร์ที่ตรงกับชื่อนั้น
+wiz_signin_method = วิธีลงชื่อเข้าใช้
+wiz_method_password = รหัสผ่าน
+wiz_method_microsoft = บัญชี Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = ลงชื่อเข้าใช้ด้วย Microsoft กรอกการตั้งค่าเซิร์ฟเวอร์สำหรับ Outlook.com, Hotmail, Live และ Microsoft 365 แล้ว
+wiz_welcome_notice = Gmail รหัสผ่าน Google ปกติจะถูกปฏิเสธ แต่รหัสผ่านสำหรับแอปใช้ได้ ต้องเปิดการยืนยันแบบสองขั้นตอนก่อน ปุ่มด้านล่างจะเปิดคำแนะนำของ Google\n\nOutlook.com, Hotmail, Live และ Microsoft 365 บัญชีเหล่านี้ลงชื่อเข้าใช้ด้วยบัญชี Microsoft ของคุณ ที่หน้าเข้าสู่ระบบ ให้เลือกบัญชี Microsoft แล้วลงชื่อเข้าใช้ผ่านเบราว์เซอร์หรือด้วยรหัส\n\nผู้ให้บริการอื่น รหัสผ่านปกติหรือรหัสผ่านสำหรับแอปมักใช้ได้ และหน้าช่วยเหลือของผู้ให้บริการระบุการตั้งค่าเซิร์ฟเวอร์ไว้
+preset_note_outlook = บัญชี Outlook.com, Hotmail, Live และ MSN ลงชื่อเข้าใช้ด้วยบัญชี Microsoft ที่หน้าเข้าสู่ระบบ ให้เลือกบัญชี Microsoft เป็นวิธีลงชื่อเข้าใช้
+ms_status_name = สถานะการลงชื่อเข้าใช้ Microsoft
+ms_browser_button = ลงชื่อเข้าใช้ผ่านเบราว์เซอร์
+ms_code_button = ลงชื่อเข้าใช้ด้วยรหัส
+ms_copy_code = คัดลอกรหัส
+ms_open_page = เปิดหน้าลงชื่อเข้าใช้
+ms_stop = หยุดรอ
+ms_not_configured = ยังไม่ได้ตั้งค่าการลงชื่อเข้าใช้ด้วย Microsoft ใน ZBox ชุดนี้
+ms_not_signed_in = ยังไม่ได้ลงชื่อเข้าใช้ ลงชื่อเข้าใช้ผ่านเบราว์เซอร์ หรือด้วยรหัสบนอุปกรณ์ใดก็ได้
+ms_signed_in = ลงชื่อเข้าใช้ในชื่อ {address} แล้ว
+ms_signed_in_plain = ลงชื่อเข้าใช้แล้ว
+ms_needs_sign_in = บัญชีนี้ต้องลงชื่อเข้าใช้ Microsoft อีกครั้ง ลงชื่อเข้าใช้ผ่านเบราว์เซอร์ หรือด้วยรหัสบนอุปกรณ์ใดก็ได้
+ms_reason_cancelled = หยุดการลงชื่อเข้าใช้แล้ว
+ms_reason_timeout = ไม่มีคำตอบมาทันเวลา
+ms_reason_denied = ไม่ได้รับอนุญาตให้เข้าถึง
+ms_reason_expired = รหัสหมดอายุแล้ว ขอรหัสใหม่
+ms_reason_network = ติดต่อ Microsoft ไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง
+ms_reason_server = Microsoft ตอบว่า: {detail}
+ms_page_done = ลงชื่อเข้าใช้แล้ว คุณปิดหน้านี้และกลับไปที่ ZBox ได้
+ms_page_failed = การลงชื่อเข้าใช้ไม่เสร็จสมบูรณ์ กลับไปที่ ZBox เพื่อดูรายละเอียด
+ms_browser_waiting = เบราว์เซอร์ของคุณแสดงหน้าลงชื่อเข้าใช้ของ Microsoft ลงชื่อเข้าใช้ให้เสร็จที่นั่น แล้วกลับมาที่ ZBox
+ms_code_asking = กำลังขอรหัสลงชื่อเข้าใช้จาก Microsoft...
+ms_code_waiting = บนอุปกรณ์ใดก็ได้ เปิด {address} แล้วป้อนรหัส {code} ZBox จะรออยู่ที่นี่จนกว่าคุณจะลงชื่อเข้าใช้เสร็จ
+ms_failed = การลงชื่อเข้าใช้ไม่เสร็จสมบูรณ์ {reason}
+ms_code_copied = คัดลอกรหัสแล้ว
+offline_inbox_only = เก็บไว้ใช้แบบออฟไลน์เฉพาะกล่องจดหมายเข้าและการเก็บถาวรเท่านั้น เชื่อมต่ออินเทอร์เน็ตเพื่อเปิด {folder}
+block_sender_rule_name = บล็อก {sender}
+title_block_sender = บล็อกผู้ส่งนี้
+title_unblock_sender = เลิกบล็อกผู้ส่งนี้
+set_clear_inbox_cache = ล้างแคชข้อความเมื่อข้อความออกจากกล่องจดหมายเข้า
+set_clear_inbox_cache_note = เมื่อเปิดใช้ สำเนาออฟไลน์และเนื้อหาที่บันทึกไว้ของข้อความจะถูกลบทันทีที่ข้อความออกจากกล่องจดหมายเข้า รวมถึงเมื่อถูกลบหรือย้ายจากที่อื่น เช่น บนโทรศัพท์ของคุณ ข้อความจึงไม่โผล่ในที่ที่ไม่มีอยู่แล้ว มีเพียงกล่องจดหมายเข้าที่เก็บไฟล์เหล่านี้ โฟลเดอร์อื่นทั้งหมดจะอ่านจากเซิร์ฟเวอร์เสมอ
+empty_trash_all_confirm = ลบข้อความทั้งหมดในถังขยะของทุกบัญชีอย่างถาวรหรือไม่\n\nการดำเนินการนี้ย้อนกลับไม่ได้
+
+[errors]
+language_restart_failed = ZBox ไม่สามารถเริ่มตัวเองใหม่ได้:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = ไม่สามารถเปิดโปรแกรมจดหมายสำหรับ {address} ได้
+
+wizard_test_failed = การเชื่อมต่อล้มเหลว:\n\n{error}
+
+contacts_import_unreadable = ไม่สามารถอ่านไฟล์นั้นได้\n\n{error}
+contacts_export_unwritable = ไม่สามารถเขียนไฟล์นั้นได้\n\n{error}
+
+attach_unreadable = ไม่สามารถอ่านไฟล์แนบ {path} ได้:\n{error}
+send_failed = ไม่สามารถส่งข้อความได้\n\n{error}
+draft_attach_unreadable = ไม่สามารถอ่านไฟล์แนบ {path} ได้:\n{error}\n\nไม่ได้บันทึกฉบับร่าง
+draft_save_failed = ไม่สามารถบันทึกฉบับร่างได้\n\n{error}
+
+clipboard_unavailable = ไม่สามารถเปิดคลิปบอร์ดได้
+open_link_failed = ไม่สามารถเปิดเบราว์เซอร์สำหรับ:\n{url}
+
+master_password_mismatch = ช่องรหัสผ่านหลักใหม่ทั้งสองไม่ตรงกัน
+master_password_required = ป้อนรหัสผ่านหลัก หรือกด ยกเลิก
+master_password_not_set = ไม่สามารถตั้งรหัสผ่านหลักได้: {error}
+master_password_not_here = เปลี่ยนรหัสผ่านหลักจากที่นี่ไม่ได้
+
+attachment_save_failed = ไม่สามารถบันทึกไฟล์แนบได้\n\n{error}
+attachments_save_failed = ไม่สามารถบันทึกไฟล์แนบได้\n\n{error}
+print_failed = ไม่สามารถพิมพ์ข้อความได้ ตรวจสอบว่าได้กำหนดค่าเครื่องพิมพ์แล้ว
+print_preview_failed = ไม่สามารถเปิดตัวอย่างก่อนพิมพ์ได้ ตรวจสอบว่าได้กำหนดค่าเครื่องพิมพ์แล้ว
+
+related_search_failed = ไม่สามารถค้นหาข้อความที่เกี่ยวข้องได้\n\n{error}
+search_failed = การค้นหาล้มเหลว\n\n{error}
+
+unlock_methods_no_config_folder = ZBox ไม่พบโฟลเดอร์การกำหนดค่า จึงจัดการวิธีปลดล็อกที่นี่ไม่ได้
+shortcut_no_folder = ZBox ระบุโฟลเดอร์ของตัวเองไม่ได้ จึงสร้างทางลัดจากที่นี่ไม่ได้
+shortcut_failed_settings = ไม่สามารถสร้างทางลัดบนเดสก์ท็อปได้:\n\n{error}
+
+unlock_method_failed = {what} ใช้งานไม่ได้\n\n{error}
+unlock_check_failed = ไม่สามารถตรวจสอบรหัสผ่านหลักได้\n\n{error}
+unlock_password_wrong = รหัสผ่านหลักนั้นไม่ถูกต้อง
+unlock_add_failed = ไม่สามารถเพิ่ม {what} ได้\n\n{error}
+unlock_passkey_setup_failed = ไม่สามารถตั้งค่าพาสคีย์บนคอมพิวเตอร์เครื่องนี้ได้ จึงไม่มีอะไรเปลี่ยน\n\n{error}
+unlock_method_test_failed = วิธีนั้นใช้งานไม่ได้\n\n{error}
+
+account_list_unreadable = ZBox ไม่สามารถเปิดรายการบัญชีของคุณได้\n\n{error}\n\nไม่ได้โหลดบัญชีใด และไฟล์ไม่ได้ถูกเปลี่ยน จึงไม่มีอะไรสูญหาย การเพิ่ม แก้ไข และเอาบัญชีออกจะถูกปฏิเสธจนกว่าจะอ่านได้
+account_list_no_accounts = ZBox ไม่สามารถเปิดรายการบัญชีของคุณในเซสชันนี้ ({error}) จึงไม่มีบัญชีให้เลือก ไม่มีอะไรสูญหายและไม่มีอะไรเปลี่ยน ปิด ZBox แล้วเริ่มใหม่ และป้อนรหัสผ่านหลักเมื่อถูกถาม
+open_message_failed = ไม่สามารถเปิดข้อความได้\n\n{error}
+filters_list_failed = ไม่สามารถแสดงรายการข้อความใน {folder} ได้\n\n{error}
+filters_move_failed = ไม่สามารถย้ายข้อความที่กรองแล้วได้\n\n{error}
+cache_clear_failed = ไม่สามารถล้างแคชได้\n\n{error}
+folder_create_failed = ไม่สามารถสร้างโฟลเดอร์ได้\n\n{error}
+folder_rename_failed = ไม่สามารถเปลี่ยนชื่อโฟลเดอร์ได้\n\n{error}
+folder_delete_failed = ไม่สามารถลบโฟลเดอร์ได้\n\n{error}
+folder_subscribe_failed = ไม่สามารถบอกรับโฟลเดอร์ได้\n\n{error}
+folder_unsubscribe_failed = ไม่สามารถเลิกบอกรับโฟลเดอร์ได้\n\n{error}
+saved_open_failed = ไม่สามารถเปิดไฟล์ได้\n\n{error}
+saved_parse_failed = ไม่สามารถแยกวิเคราะห์ไฟล์นี้เป็นข้อความอีเมลได้\n\n{error}
+save_file_failed = ไม่สามารถบันทึกไฟล์ได้\n\n{error}
+save_fetch_failed = ไม่สามารถดึงข้อความเพื่อบันทึกได้\n\n{error}
+empty_trash_failed = ไม่สามารถล้างข้อมูลในถังขยะได้\n\n{error}
+empty_junk_failed = ไม่สามารถล้างขยะได้\n\n{error}
+export_write_failed = ไม่สามารถเขียนไฟล์ส่งออกได้\n\n{error}
+import_read_failed = ไม่สามารถอ่านไฟล์นี้เป็นไฟล์ส่งออก ZBox ได้\n\n{error}
+import_not_export = ไฟล์นี้ดูไม่เหมือนไฟล์ส่งออก ZBox\n\n{error}
+search_open_failed = ไม่สามารถเปิดข้อความนี้ได้
+related_load_failed = ไม่สามารถโหลดข้อความนี้ได้\n\n{error}
+reply_load_failed = ไม่สามารถโหลดข้อความที่จะตอบกลับได้\n\n{error}
+forward_load_failed = ไม่สามารถโหลดข้อความที่จะส่งต่อได้\n\n{error}
+action_failed = ไม่สามารถทำการกระทำนี้ให้เสร็จได้\n\n{error}
+undo_failed = ไม่สามารถเลิกทำ {label} ได้\n\n{error}
+copy_failed = ไม่สามารถคัดลอกข้อความได้\n\n{error}
+delete_failed = ไม่สามารถลบข้อความได้\n\n{error}
+archive_failed = ไม่สามารถเก็บถาวรข้อความได้\n\n{error}
+master_password_not_changed = ไม่สามารถเปลี่ยนรหัสผ่านหลักได้: {error}
+shortcut_failed_startup = ไม่สามารถสร้างทางลัดบนเดสก์ท็อปได้:\n\n{error}\n\nZBox จะเริ่มทำงานต่อ คุณลองอีกครั้งภายหลังได้จากการตั้งค่า
+account_locked_action = ZBox ไม่สามารถทำสิ่งนี้ได้: %s ไม่สามารถเปิดรายการบัญชีในเซสชันนี้ (%s) และไม่มีอะไรเปลี่ยน ปิด ZBox แล้วเริ่มใหม่ และป้อนรหัสผ่านหลักหากถูกถาม
+send_tls_mismatch = ไม่สามารถส่งข้อความได้ เซิร์ฟเวอร์ขาออกตอบกลับโดยไม่เข้ารหัส การเข้ารหัสขาออกจึงไม่ตรงกับพอร์ต ใน เครื่องมือ การตั้งค่าบัญชีและข้อมูลประจำตัว ให้ใช้ STARTTLS สำหรับพอร์ต 587 หรือ SSL/TLS สำหรับพอร์ต 465 แล้วส่งอีกครั้ง\n\n{error}
+mark_folder_read_failed = ไม่สามารถทำเครื่องหมายโฟลเดอร์ว่าอ่านแล้วได้\n\n{error}
+update_failed = ไม่สามารถดาวน์โหลดการอัปเดต จึงไม่มีการเปลี่ยนแปลงใด\n\n{error}
+update_rolled_back = การอัปเดตเริ่มทำงานไม่ได้ จึงกู้คืนรุ่นก่อนหน้าแล้ว
+attachment_open_failed = ไม่สามารถเปิดไฟล์แนบ\n\n{error}
+headers_failed = ไม่สามารถโหลดส่วนหัวของข้อความ\n\n{error}
+wizard_ms_sign_in_first = ลงชื่อเข้าใช้ด้วย Microsoft ก่อนดำเนินการต่อ ใช้ปุ่มลงชื่อเข้าใช้ปุ่มใดปุ่มหนึ่งจากสองปุ่มในหน้านี้
+wizard_provider_unsupported = ZBox ลงชื่อเข้าใช้กับผู้ให้บริการนี้ไม่ได้ หมายเหตุในหน้านี้บอกเหตุผล ย้อนกลับไปใช้ที่อยู่อีเมลอื่น หรือยกเลิก
+acct_ms_sign_in_first = ลงชื่อเข้าใช้ด้วย Microsoft ก่อนบันทึก หรือเลือกรหัสผ่านเป็นวิธีลงชื่อเข้าใช้
+ms_sign_in_again = {account} ต้องลงชื่อเข้าใช้ Microsoft อีกครั้ง เปิดการตั้งค่าบัญชีและข้อมูลประจำตัว แล้วลงชื่อเข้าใช้ที่นั่น
+empty_trash_all_failed = ล้างถังขยะไม่ได้สำหรับ: {accounts}
+
+[help]

@@ -1,0 +1,103 @@
+General
+F6: mută focalizarea între panouri
+Ctrl+Tab: fila următoare
+Ctrl+Shift+Tab: fila anterioară
+Ctrl+W sau Ctrl+F4: închide fila curentă
+Escape: restrânge o conversație extinsă dacă lista de mesaje are focalizarea și una este extinsă; altfel închide fila curentă (mesaj, mesaj salvat sau un mesaj netrimis în scriere -- întreabă mai întâi dacă există modificări nesalvate)
+Tasta Aplicații sau Shift+F10: deschide meniul contextual pentru elementul focalizat din listă sau arbore
+F1: comenzi rapide de la tastatură, această pagină
+Ctrl+Shift+Q: ieșire -- închide întotdeauna efectiv ZBox, chiar dacă „Închide în zona de notificare” este activat în Setări (butonul Închide al ferestrei, Alt+F4 și Ctrl+W pe fila Corespondență ascund atunci ZBox în zona de notificare în loc să-l închidă; elementul Ieșire al pictogramei din zona de notificare închide și el întotdeauna efectiv)
+Ctrl+Shift+Delete: golește cache-ul de mesaje offline -- doar copiile locale ale ZBox, nimic de pe vreun server (există și un buton în Instrumente > Configurare curățare cache)
+
+Corespondență
+Ctrl+N: mesaj nou
+Ctrl+Shift+N: cont de e-mail nou
+F5: descarcă mesajele noi pentru contul curent
+Shift+F5: descarcă mesajele noi pentru toate conturile
+Ctrl+Shift+J: Salt la lista de mesaje din Mesaje primite
+Ctrl+Y: Salt la lista de dosare
+Enter pe un cont sau dosar restrâns din lista de dosare: îl extinde, ca săgeata dreapta
+Ctrl+Shift+B: agendă de contacte
+Ctrl+Shift+F: caută mesaje
+Ctrl+Shift+T: arată mesajele înrudite
+
+Lista de mesaje
+Delete, Shift+Delete, Arhivează, Adaugă/elimină steluța, Marchează ca nesolicitat/nefiind nesolicitat, Mută în și Copiază în acționează pe un rând de conversație RESTRÂNS pentru fiecare mesaj din conversație -- extindeți mai întâi conversația (săgeată dreapta sau Enter/Spațiu) pentru a acționa doar asupra unui mesaj din ea
+Ctrl+A: selectează toate mesajele
+Ctrl+Shift+L: încarcă mai multe mesaje
+Delete: mută mesajele în Coșul de gunoi
+Shift+Delete: șterge definitiv mesajele
+Ctrl+Z: anulează ultima ștergere, arhivare, marcare ca nesolicitat sau marcare ca nefiind nesolicitat
+S: adaugă/elimină steluța mesajelor selectate
+A: arhivează mesajele selectate
+J: marchează mesajele selectate ca nesolicitate
+Shift+J: marchează mesajele selectate ca nefiind nesolicitate
+W: urmărește conversația -- comută dacă este urmărită conversația din care face parte selecția (și în meniul Mesaj și la clic dreapta)
+K: ignoră conversația -- comută dacă această conversație este ignorată (și în meniul Mesaj și la clic dreapta)
+M: Mută mesajele selectate -- deschide meniul Mută în cu dosarele
+Shift+M: Mută mesajele selectate tastând o parte din numele unui dosar
+C: Copiază mesajele selectate -- deschide meniul Copiază în cu dosarele
+S, A, J, W și K de mai sus sunt activate implicit și pot fi dezactivate în Setări (altfel au prioritate față de navigarea după prima literă din lista de mesaje)
+M, Shift+M și C de mai sus urmează aceeași setare
+Enter sau Spațiu pe o conversație restrânsă: deschide cel mai nou mesaj necitit din acea conversație (cel mai nou, dacă toată conversația este citită) ca mesaj separat într-o filă -- apoi Ctrl+Shift+Page Down și Ctrl+Shift+Page Up parcurg restul conversației, fără a deschide vreodată un al doilea mesaj. Pe un mesaj obișnuit, îl deschide ca de obicei
+Săgeată dreapta pe o conversație restrânsă: îi afișează mesajele ca listă, fără a deschide vreunul -- deschideți-le de acolo pe rând cu propriul Enter sau Spațiu
+Ctrl+Shift+O: deschide mesajul în conversație -- întreaga conversație într-o filă, ca listă a mesajelor sale cu textul celui selectat dedesubt. Parcurgeți lista cu săgețile pentru a le citi pe rând; Enter pe un rând deschide acel mesaj separat, în propria filă completă. Același nume și aceeași tastă ca și comanda corespunzătoare din Thunderbird
+Săgeată stânga: restrânge conversația în care se află acum selecția
+*: extinde toate conversațiile (și Vizualizare > Conversații); \: restrânge toate conversațiile (și Vizualizare > Conversații)
+Vizualizare > Conversații > Toate / Conversații urmărite / Conversații ignorate filtrează ce conversații sunt afișate -- revenirea la Toate readuce întotdeauna fiecare mesaj; astfel nu se elimină niciodată nimic din dosar
+
+Un mesaj deschis
+Alt+A: arhivează acest mesaj -- doar cât timp corpul său (text sau HTML) are efectiv focalizarea tastaturii; în alte locuri, Alt+A deschide ca de obicei meniul Conturi
+Ctrl+R: răspunde
+Ctrl+Shift+R: răspunde tuturor
+Ctrl+L: redirecționează
+Ctrl+Delete sau Ctrl+D: mută acest mesaj în Coșul de gunoi. Tasta Delete singură este adesea interceptată de cititorul de ecran cât timp un mesaj HTML are focalizarea; Shift+Delete șterge definitiv
+Ctrl+Shift+Page Down: mesajul următor din această conversație; Ctrl+Shift+Page Up: cel anterior. Înlocuiește fila curentă în loc să deschidă alta, astfel încât un singur mesaj este deschis mereu. La ultimul mesaj (sau primul, în sus) vă anunță și întreabă; apăsarea din nou a aceleiași taste închide mesajul și încheie conversația, înapoi în lista de mesaje. (Ctrl+Page Up/Down rămân neschimbate -- ele comută între file)
+Ctrl+B: comută vizualizarea mesajului (text/HTML)
+Ctrl+P: printează
+Ctrl+Shift+P: previzualizare tipărire
+Ctrl+S: salvează mesajul ca
+Ctrl+U: anunță numele și adresa expeditorului
+Ctrl+Shift+U: anunță expeditorul și copiază adresa
+Ctrl+Shift+I: arată conținutul la distanță din acest mesaj
+Ctrl+Shift+=: mărește fontul mesajului
+Ctrl+Shift+-: micșorează fontul mesajului
+Ctrl+Shift+0: resetează mărimea fontului mesajului
+
+Scrierea unui mesaj
+Ctrl+Enter sau Alt+S: trimite
+Ctrl+S: salvează ciorna
+Ctrl+Shift+A: atașează fișier
+Ctrl+Shift+S: inserează semnătura contului din câmpul Expeditor
+Ctrl+Shift+V: lipește ca citat
+Ctrl+Shift+W: numără cuvintele
+Ctrl+Shift+P: previzualizează mesajul așa cum va fi trimis
+Escape, Ctrl+W sau Ctrl+F4: închide fila de scriere -- întreabă mai întâi dacă ceva nu este salvat, cu Salvează ciorna, Renunță la mesaj sau Continuă editarea
+Fiecare comandă de mai jos se află și în meniul Scriere, pe care îl deschide Alt+C, chiar dacă focalizarea este în corpul mesajului
+
+Formatare la scriere
+Ctrl+B: aldin
+Ctrl+I: cursiv
+Ctrl+Shift+X: tăiat
+Ctrl+Shift+8: listă cu marcatori
+Ctrl+Shift+7: listă numerotată
+Ctrl+Shift+9: citat
+Ctrl+Shift+6: cod
+Ctrl+Alt+1: titlu
+Ctrl+K: inserează link
+Ctrl+Shift+K: anunță ce formatare se aplică la poziția cursorului
+Ctrl+Shift+M: deschide meniul Format oriunde s-ar afla focalizarea, inclusiv în corpul mesajului
+
+Ortografie la scriere
+Ctrl+Shift+F7: verifică ortografia
+Ctrl+Shift+F9: salt la următoarea greșeală de ortografie
+Ctrl+Shift+F8: adaugă în dicționar cuvântul la care s-a oprit verificarea
+
+Aceeași tastă în două locuri
+Ctrl+S: salvează ciorna la scriere, salvează mesajul ca într-un mesaj deschis
+Ctrl+B: aldin la scriere, comută între text și HTML într-un mesaj deschis
+Ctrl+Shift+P: previzualizare la scriere, previzualizare tipărire într-un mesaj deschis
+Alt+A: arhivează, dar doar cât timp un corp de mesaj are focalizarea tastaturii; oriunde altundeva deschide meniul Conturi
+
+Diagnosticare
+Ctrl+Shift+F12: diagnosticare taste rapide -- scrie în jurnalul de depanare câte un rând pentru fiecare combinație apăsată într-o filă de scriere, ca să se poată dovedi unde a ajuns de fapt o tastă. Dezactivată implicit, iar aceeași tastă o oprește din nou; starea este anunțată de fiecare dată

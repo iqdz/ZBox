@@ -1,0 +1,1599 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = O‘zbekcha
+code = uz
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Xabar jo‘natildi.
+draft_saved = Qoralama saqlandi.
+signature_inserted = Imzo qo‘shildi.
+signature_none = Bu hisobda imzo yo‘q.
+signature_saved = Imzo saqlandi.
+signature_not_saved = Imzo saqlanmadi.
+pasted_as_quotation = Iqtibos sifatida qo‘yildi.
+clipboard_empty = Vaqtinchalik xotirada hech narsa yo‘q.
+word_count = {words} so‘z, {characters} belgi.
+report_copied = Hisobotdan nusxa olindi.
+compose_tab_needed = Bu buyruq yozish oynasini talab qiladi.
+attach_file_instead = Tashlangan fayllar xabar matniga qo‘shilmaydi. Faylni jo‘natish uchun Fayl biriktirish’dan foydalaning.
+
+# Formatting in the message body
+formatting_here = Bu yerdagi format: {formatting}.
+no_formatting_here = Bu yerda format yo‘q, oddiy matn.
+
+# Spelling
+nothing_to_check = Tekshirish uchun hech narsa yo‘q.
+no_misspellings = Imlo xatolari yo‘q.
+spelling_dictionary_unavailable = Imlo lug‘ati mavjud emas.
+next_misspelling_first = Avval keyingi imlo xatosidan foydalaning.
+word_added = {word} lug‘atga qo‘shildi.
+word_not_added = {word} qo‘shilmadi.
+corrections_applied_one = 1 ta tuzatish qo‘llanildi.
+corrections_applied_many = {count} ta tuzatish qo‘llanildi.
+corrections_applied_partly = {total} tadan {applied} ta tuzatish qo‘llanildi. Qolganlari rad etildi; jurnalga qarang.
+occurrences_replaced_one = 1 ta uchrashuv almashtirildi.
+occurrences_replaced_many = {count} ta uchrashuv almashtirildi.
+
+# Reading mail
+message_did_not_open = Xabar ochilmadi. Server javob bermadi. Qayta urinish uchun Enter tugmasini bosing.
+thread_open = Bu yozishmada {messages} bor. Yopish uchun qayta bosing.
+no_thread_selected = Yozishma tanlanmagan.
+thread_watched = Yozishma kuzatilmoqda.
+thread_not_watched = Yozishma endi kuzatilmaydi.
+thread_ignored = Yozishma e’tiborsiz qoldirildi.
+thread_not_ignored = Yozishma endi e’tiborsiz qoldirilmaydi.
+none_found = Hech narsa topilmadi.
+refreshing_this_folder = Bu jild yangilanmoqda.
+refreshing_all_accounts = Barcha hisoblar yangilanmoqda.
+message_view_html = Xabar ko‘rinishi: HTML (tasvirlangan).
+message_view_text = Xabar ko‘rinishi: Matn.
+html_view_still_loading = Xabar hali yuklanmoqda. Escape uni yopadi.
+message_still_opening = Xabar ochilmoqda. Server sekin javob bermoqda.
+remote_content_blocked = Masofadagi kontent bloklandi.
+remote_content_unblocked = Masofadagi kontent blokdan chiqarildi.
+remote_content_already_showing = Bu xabarda masofadagi kontent allaqachon ko‘rsatilmoqda.
+archived = Arxivlandi.
+copied_to_folder = {to_folder} ga nusxa olindi.
+deleted_one = Xabar butunlay o‘chirildi.
+deleted_many = {count} ta xabar butunlay o‘chirildi.
+trashed_one = Xabar Chiqitdonga ko‘chirildi.
+trashed_many = {count} ta xabar Chiqitdonga ko‘chirildi.
+
+# Accounts and new mail
+no_account_yet = Hozircha o‘tish uchun hisob yo‘q.
+inbox_landed = {name} kiruvchi xabarlari.
+account_enabled = {name} yoqildi.
+auto_check_paused = {account} uchun avtomatik tekshirish to‘xtatildi.
+auto_check_resumed = {account} uchun avtomatik tekshirish yoqilgan.
+account_disabled = {name} faolsizlantirildi.
+new_mail_one = {name} uchun 1 ta yangi xabar.
+new_mail_many = {name} uchun {count} ta yangi xabar.
+refresh_all_done_one = 1 ta hisob yangilandi.
+refresh_all_done_many = {count} ta hisob yangilandi.
+refresh_all_done_failures = {count} ta hisob yangilandi, {failed} tasi yangilanmadi.
+refresh_all_done_failures_one = {count} ta hisob yangilandi, {failed} tasi yangilanmadi.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Manzildan nusxa olindi.
+sender_no_address = {sender}. Nusxa olish uchun manzil yo‘q.
+clipboard_not_opened = {sender}. Vaqtinchalik xotira ochilmadi.
+
+# The signature editor
+signature_page_formatted = Formatlangan. Saqlanadigani shu.
+signature_page_html = HTML manbasi. Saqlanadigani shu.
+signature_page_html_still_wins = Formatlangan. Baribir HTML manbasi saqlanadi.
+
+# Background work
+phishing_list_updating = Firibgarlik ro‘yxati orqa fonda yangilanmoqda.
+cache_cleared = {files} ta keshlangan fayl, {size} MB tozalandi.
+hotkeys_diagnostic_on = Tezkor tugmalar diagnostikasi yoqilgan, belgilangan
+hotkeys_diagnostic_off = Tezkor tugmalar diagnostikasi o‘chirilgan, belgilanmagan
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arxivlash
+action_delete = O‘chirish
+action_delete_permanently = Butunlay o‘chirish
+action_mark_as_junk = Spam sifatida belgilash
+action_mark_as_not_junk = Spam emas deb belgilash
+action_move_to = Ko‘chirish
+action_copy_to = Nusxa olish
+action_mark_message = Xabarni belgilash
+action_undo = Bekor qilish
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} bekor qilindi.
+undo_done_many = {count} ta xabar uchun {action} bekor qilindi.
+junk_marked_one = Spam sifatida belgilandi.
+junk_marked_many = {count} ta xabar spam sifatida belgilandi.
+junk_no_new_sender = Yangi jo‘natuvchi bloklanmadi: u allaqachon bloklangan, pochta ro‘yxati yoki sizning o‘z manzillaringizdan biri.
+not_junk_marked_one = Spam emas deb belgilandi.
+not_junk_marked_many = {count} ta xabar spam emas deb belgilandi.
+moved_to_one = {to_folder} ga ko‘chirildi.
+moved_to_many = {count} ta xabar {to_folder} ga ko‘chirildi.
+copied_to_many = {count} ta xabardan {to_folder} ga nusxa olindi.
+marked_read = O‘qilgan deb belgilandi.
+marked_unread = O‘qilmagan deb belgilandi.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} tadan {completed} tasidan so‘ng bekor qilindi. {succeeded} tasi muvaffaqiyatli, {failed} tasi muvaffaqiyatsiz bo‘ldi.
+bulk_failed_one = {done} 1 xabardan {failed} tasi muvaffaqiyatsiz bo‘ldi.
+bulk_failed_many = {done} {total} xabardan {failed} tasi muvaffaqiyatsiz bo‘ldi.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Qalin
+format_word_italic = Qiya
+format_word_strike = Chizib o‘tilgan
+format_word_href = Havola
+format_word_bullet = Belgili ro‘yxat
+format_word_number = Raqamli ro‘yxat
+format_word_quote = Iqtibos
+format_word_code = Kod
+format_word_heading1 = Sarlavha
+format_applied = {formatting} qo‘llanildi.
+format_inserted = {formatting} qo‘shildi.
+format_not_available = {formatting} oddiy xabar matnida mavjud emas.
+format_on = {formatting} yoqilgan
+format_off = {formatting} o‘chirilgan
+link_applied = Havola qo‘llanildi.
+link_applied_to_selection = Havola tanlangan matnga qo‘llanildi.
+plain_body_formatting = Oddiy xabar matni o‘z formatini teglar sifatida ko‘rsatadi.
+
+# Reaching either end of a thread
+thread_edge_first = Bu yozishmadagi birinchi xabar. Yopish uchun qayta bosing.
+thread_edge_last = Bu yozishmadagi oxirgi xabar. Yopish uchun qayta bosing.
+jump_unified_inbox = Birlashtirilgan kiruvchi xabarlar.
+remote_none = Bu xabarda masofadagi kontent yo‘q.
+sender_none = Bu xabarda jo‘natuvchi yo‘q.
+sender_name_no_address = %s, manzil yo‘q
+signature_not_switched = Imzo o‘zgartirilmadi. Bu hisobning imzosini qo‘shish uchun Ctrl+Shift+S tugmalarini bosing.
+signature_removed_no_signature = Imzo olib tashlandi. Bu hisobda imzo yo‘q.
+signature_switched = Imzo shu hisobnikiga o‘zgartirildi.
+spell_not_replaced = So‘z almashtirilmadi.
+spell_replaced_with = {word} bilan almashtirildi.
+folder_marked_read = {count} ta xabar o‘qilgan deb belgilandi.
+folder_no_unread = O‘qilmagan xabarlar yo‘q.
+threads_all_collapsed = Barcha yozishmalar yig‘ildi.
+threads_all_expanded = Barcha yozishmalar yoyildi.
+upd_percent = {percent} foiz
+upd_download_done = Yuklab olish tugadi. Yangilanish tayyorlanmoqda...
+upd_updated_to = ZBox {version} versiyasiga yangilandi.
+header_copied = Nusxalandi.
+headers_copied = Barcha sarlavhalar nusxalandi.
+identity_copies_updated = Bu identifikator uchun Cc va Bcc yangilandi.
+signature_switched_identity = Imzo bu identifikatorning imzosiga almashtirildi.
+signature_removed_identity = Imzo olib tashlandi. Bu identifikatorda imzo yoʻq.
+signature_not_switched_identity = Imzo oʻzgartirilmadi. Bu identifikator imzosini qoʻyish uchun Ctrl+Shift+S tugmalarini bosing.
+signature_none_identity = Bu identifikatorda imzo yoʻq.
+move_keys_no_selection = Avval xabarni tanlang.
+move_keys_no_folders = Hozircha tanlash uchun jild yoʻq. Birozdan keyin qayta urinib koʻring.
+block_sender_done_one = {sender} bloklandi. Uning yangi xabarlari Savatga tushadi.
+block_sender_done_many = {count} ta yuboruvchi bloklandi. Ularning yangi xabarlari Savatga tushadi.
+block_sender_already = {sender} allaqachon bloklangan.
+block_sender_own = Bloklanmadi: bu sizning oʻz manzilingiz.
+block_sender_list_unknown = Bloklanmadi: bu xabar pochta roʻyxati orqali kelgan va kim yuborgani koʻrsatilmagan. Roʻyxat manzilini bloklash uning barcha aʼzolarini bloklaydi.
+block_sender_moved = Yuboruvchi bloklandi. {count} ta xabar Savatga koʻchirildi.
+block_senders_moved = {senders} ta yuboruvchi bloklandi. {count} ta xabar Savatga koʻchirildi.
+unblock_sender_moved = Yuboruvchi blokdan chiqarildi. {count} ta xabar Kiruvchilarga koʻchirildi.
+unblock_senders_moved = {senders} ta yuboruvchi blokdan chiqarildi. {count} ta xabar Kiruvchilarga koʻchirildi.
+unblock_sender_done = {sender} blokdan chiqarildi.
+unblock_sender_not_blocked = {sender} bloklanmagan.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Yuqorida biror narsa yozib Enter tugmasini bosing yoki Qidirishni tanlang.
+search_no_account = Avval hisob qo‘shing.
+search_no_term = Qidirish uchun biror narsa yozing.
+search_running = Qidirilmoqda...
+search_none = "{term}" uchun mos kelish topilmadi.
+search_found_one = "{term}" uchun 1 ta mos kelish.
+search_found_many = "{term}" uchun {count} ta mos kelish.
+search_failed = Qidiruv muvaffaqiyatsiz tugadi.
+
+# The related messages tab
+related_running = Qidirilmoqda...
+related_none = Aloqador xabarlar topilmadi.
+related_found_one = 1 ta aloqador xabar topildi.
+related_found_many = {count} ta aloqador xabar topildi.
+related_failed = Aloqador xabarlarni qidirib bo‘lmadi.
+
+# Writing and sending
+sending_via = {sender} orqali jo‘natilmoqda...
+send_failed = Jo‘natish muvaffaqiyatsiz tugadi. Batafsil ma’lumot uchun jurnallarga qarang.
+draft_autosaved = Qoralama avtomatik saqlandi.
+draft_autosave_failed = Qoralamani avtomatik saqlab bo‘lmadi. Batafsil ma’lumot uchun jurnallarga qarang.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Endi {sender} dan kelgan xabarlarda masofadagi kontent yuklanadi.
+downloading_attachment = {filename} yuklab olinmoqda...
+downloading_attachments_one = 1 ta ilova yuklab olinmoqda...
+downloading_attachments_many = {count} ta ilova yuklab olinmoqda...
+saved_to = {folder} ga saqlandi
+attachment_download_failed = Ilovani yuklab olib bo‘lmadi.
+
+# Getting mail onto the screen
+loading_folder = {account} uchun {folder} yuklanmoqda...
+messages_in_folder = {folder} da {count} ta xabar.
+messages_in_folder_cached = {folder} da {count} ta xabar (oxirgi sinxronlangan nusxa, yangilanmoqda...)
+no_offline_copy = {folder} ning hali oflayn nusxasi yo‘q.
+refresh_failed_cached = {folder} ni yangilab bo‘lmadi: oxirgi sinxronlangan nusxa ko‘rsatilmoqda.
+no_such_folder = Bu hisobda {folder} jildi yo‘q.
+load_failed = Xabarlarni yuklab bo‘lmadi. Batafsil ma’lumot uchun jurnallarga qarang.
+no_more_to_load = Bu jildda yuklanadigan boshqa xabar yo‘q.
+loading_more = {folder} da ko‘proq xabar yuklanmoqda...
+more_loaded = Yana {count} ta xabar yuklandi.
+no_more_messages = Bu jildda boshqa xabar yo‘q.
+load_more_failed = Ko‘proq xabar yuklab bo‘lmadi: {error}
+loading_unified = Birlashtirilgan {folder} yuklanmoqda...
+messages_in_unified = Birlashtirilgan {folder} da hisoblar bo‘yicha {count} ta xabar.
+messages_in_unified_cached = Birlashtirilgan {folder} da {count} ta xabar (oxirgi sinxronlangan nusxa, yangilanmoqda...)
+auto_purge_done = Avtomatik tozalash Chiqitdon/Spamdan {count} ta eski xabarni olib tashladi.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Tayyor.
+opening_message = Xabar ochilmoqda...
+opening_message_already = Xabar ochilmoqda... (allaqachon yuklanmoqda)
+could_not_open_message = Xabarni ochib bo‘lmadi.
+could_not_open_that_message = O‘sha xabarni ochib bo‘lmadi.
+could_not_load_message = Bu xabarni yuklab bo‘lmadi.
+message_still_loading = O‘sha xabar hali yuklanmoqda.
+folder_still_loading = Bu jild hali yuklanmoqda -- bir ozdan so‘ng qayta urinib ko‘ring.
+not_in_thread = Bu xabar yozishmaning bir qismi emas.
+no_longer_in_thread = Bu xabar endi yozishmada emas.
+thread_position = Bu yozishmada {total} tadan {position}-xabar.
+thread_finished_one = Bu yozishma tugadi (1 ta xabar).
+thread_finished_many = Bu yozishma tugadi ({count} ta xabar).
+select_message_first = Avval xabarni tanlang.
+conversation_failed = Bu suhbatni ochib bo‘lmadi.
+select_message_for_related = Avval aloqador xabarlarni ko‘rish uchun xabarni tanlang.
+looking_for_related = Aloqador xabarlar izlanmoqda...
+no_threading_headers = Bu xabarda izlash uchun Message-ID yoki yozishma sarlavhalari yo‘q.
+reply_one_at_a_time = Javob berish bir vaqtda bitta xabar bilan ishlaydi. Bitta xabarni tanlang.
+select_message_to_reply = Avval javob berish uchun xabarni tanlang.
+preparing_reply = Javob tayyorlanmoqda...
+reply_load_failed = Javob berish uchun asl xabarni yuklab bo‘lmadi.
+select_message_to_forward = Avval uzatish uchun xabarni tanlang.
+preparing_forward = Uzatish uchun xabar tayyorlanmoqda...
+forward_load_failed = Uzatish uchun xabarni yuklab bo‘lmadi.
+compose_tab_needed_hint = Bu buyruq yozish oynasini talab qiladi. Xabar yozish uchun Ctrl+N tugmalarini bosing.
+open_message_first_view = Avval xabarni oching, so‘ng ko‘rinishini almashtirish uchun Ctrl+B tugmalarini bosing.
+open_message_first_remote = Avval xabarni oching, so‘ng masofadagi kontentni yuklash uchun Ctrl+Shift+I tugmalarini bosing.
+
+# Acting on messages
+copying_message = Xabardan nusxa olinmoqda...
+copy_failed = Nusxa olish muvaffaqiyatsiz tugadi.
+delete_failed = O‘chirish muvaffaqiyatsiz tugadi.
+already_in_archive = Allaqachon Arxivda.
+archiving = Arxivlanmoqda...
+archive_failed = Arxivlash muvaffaqiyatsiz tugadi.
+action_failed = {action} muvaffaqiyatsiz tugadi.
+nothing_to_undo = Bekor qilinadigan hech narsa yo‘q.
+undo_failed = {action} ni bekor qilib bo‘lmadi.
+
+# Views and folders
+folder_pane_all = Jild oynasi: Barcha jildlar.
+folder_pane_unified = Jild oynasi: Birlashtirilgan jildlar.
+sorted_ascending = {field} bo‘yicha o‘sish tartibida saralangan.
+sorted_descending = {field} bo‘yicha kamayish tartibida saralangan.
+unified_folders_updated = Birlashtirilgan jildlar yangilandi.
+zoom_reset = Xabar shrift hajmi standart holatga qaytarildi.
+folder_creating = "{folder}" jildi yaratilmoqda...
+folder_created = "{folder}" jildi yaratildi.
+folder_create_failed = Jild yaratib bo‘lmadi.
+folder_renaming = "{folder}" nomi "{new_name}" ga o‘zgartirilmoqda...
+folder_renamed = Jild nomi "{new_name}" ga o‘zgartirildi.
+folder_rename_failed = Jild nomini o‘zgartirib bo‘lmadi.
+folder_deleting = "{folder}" jildi o‘chirilmoqda...
+folder_deleted = Jild o‘chirildi.
+folder_delete_failed = Jildni o‘chirib bo‘lmadi.
+folder_subscribing = "{folder}" ga obuna bo‘linmoqda...
+folder_unsubscribing = "{folder}" dan obuna bekor qilinmoqda...
+folder_subscribed = Obuna bo‘lindi.
+folder_unsubscribed = Obunadan voz kechildi.
+folder_subscribe_failed = Jildga obuna bo‘lib bo‘lmadi.
+folder_unsubscribe_failed = Jilddan obunani bekor qilib bo‘lmadi.
+
+# Accounts
+account_not_added = Hisob qo‘shilmadi.
+account_added = Hisob qo‘shildi: {account}
+account_settings_not_saved = Hisob sozlamalari saqlanmadi.
+account_updated = Hisob yangilandi: {account}
+account_not_removed = Hisob olib tashlanmadi.
+account_removed = Hisob olib tashlandi.
+account_removed_with_files = Hisob olib tashlandi. {count} ta mahalliy fayl o‘chirildi.
+default_account_failed = Asosiy hisobni belgilab bo‘lmadi.
+default_account_set = Endi {account} asosiy hisob.
+auto_check_not_saved = Avtomatik tekshirish sozlamasi saqlanmadi.
+mute_not_saved = Ovozsiz sozlamasi saqlanmadi.
+account_muted = {account} ovozsiz qilindi.
+account_unmuted = {account} ovozi yoqildi.
+export_done = {count} ta hisob va sozlamalar {path} ga eksport qilindi.
+import_done = {path} dan {count} ta hisob import qilindi.
+
+# Filters, cache and the background lists
+filters_not_saved = Filterlar saqlanmadi.
+filters_saved = {account} uchun filterlar saqlandi.
+filters_checking = {folder} filterlaringiz bo‘yicha tekshirilmoqda...
+filters_none_matched = Hozir ishga tushirish: {folder} da yoqilgan qoidaga mos xabar topilmadi.
+filters_run_failed = Filterlarni ishga tushirib bo‘lmadi.
+filters_moving = {count} ta filterlangan xabar ko‘chirilmoqda...
+filters_move_failures = Filterlar: {count} ta xabar ko‘chirilmadi.
+filters_moved = Filterlar {folder} dan {count} ta xabarni ko‘chirdi.
+filters_move_failed = Filterlangan xabarlarni ko‘chirib bo‘lmadi.
+cache_not_cleared = Kesh tozalanmadi.
+auto_cache_cleanup = Avtomatik kesh tozalash: {age} dan eski xabarlar.
+phishing_update_failed = Firibgarlik ro‘yxatini yangilab bo‘lmadi: {error}
+blocklist_update_failed = Bloklash ro‘yxatini yangilab bo‘lmadi: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Avval xabarni oching, so‘ng Boshqacha saqlash’dan foydalaning.
+saving_message = Xabar saqlanmoqda...
+save_file_failed = Faylni saqlab bo‘lmadi.
+save_fetch_failed = Saqlash uchun xabarni olib bo‘lmadi.
+open_message_first_print = Avval xabarni oching, so‘ng Chop qilish’dan foydalaning.
+open_message_first_preview = Avval xabarni oching, so‘ng Chop qilishni ko‘rish’dan foydalaning.
+refreshing_accounts = {count} ta hisob yangilanmoqda...
+emptying_trash = {account} uchun Chiqitdon bo‘shatilmoqda...
+trash_already_empty = Chiqitdon allaqachon bo‘sh edi.
+trash_emptied = Chiqitdon bo‘shatildi: {count} ta xabar tozalandi.
+empty_trash_failed = Chiqitdonni bo‘shatib bo‘lmadi.
+emptying_junk = {account} uchun Spam bo‘shatilmoqda...
+junk_already_empty = Spam allaqachon bo‘sh edi.
+junk_emptied = Spam bo‘shatildi: {count} ta xabar tozalandi.
+junk_emptied_prefix = Spam bo‘shatildi:
+junk_part_purged = {count} tasi tozalandi
+junk_part_in_trash = {count} tasi Chiqitdonga ko‘chirildi, lekin o‘chirilgani tasdiqlanmadi, Chiqitdonni tekshiring
+junk_part_not_moved = {count} tasi Chiqitdonga ko‘chirilmadi, hali Spamda
+empty_junk_failed = Spamni bo‘shatib bo‘lmadi.
+back_online = Qayta onlaynga chiqildi.
+offline_sync_running = {account} oflayn foydalanish uchun sinxronlanmoqda...
+offline_sync_failed = Oflayn sinxronlash muvaffaqiyatsiz tugadi: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Avval xabarni tanlang yoki oching.
+select_or_open_message_ctrl_u = Avval xabarni tanlang yoki oching, so‘ng Ctrl+U tugmalarini bosing.
+no_sender_address = Bu xabarda qo‘shish uchun jo‘natuvchi manzili yo‘q.
+contact_added = {contact} manzillar daftaringizga qo‘shildi.
+contact_already_there = {contact} allaqachon manzillar daftaringizda bor.
+privacy_saved = Maxfiylik sozlamalari saqlandi. Ularni qo‘llash uchun xabarni qayta oching.
+message_font_size = Xabar shrift hajmi: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Xabar butunlay o‘chirilmoqda
+deleting_many = {count} ta xabar butunlay o‘chirilmoqda
+trashing_one = Xabar Chiqitdonga ko‘chirilmoqda
+trashing_many = {count} ta xabar Chiqitdonga ko‘chirilmoqda
+undo_partly_restored = {action} bekor qilindi, lekin {count} tasini tiklab bo‘lmadi -- ular shundan beri qayta ko‘chirilgan, o‘chirilgan yoki muddati o‘tgan bo‘lishi mumkin.
+moves_report = {action}: {total} tadan {moved} ta xabar ko‘chirildi.
+moves_report_failed = Ko‘chirilmadi, hali asl jildda: {count}.
+
+tray_tooltip_one = ZBox — 1 ta o‘qilmagan xabar
+tray_tooltip_many = ZBox — {count} ta o‘qilmagan xabar
+account_unreachable = {account} ga ulanib bo‘lmadi. Uning avtomatik tekshiruvlari {minutes} daqiqaga to‘xtatiladi.
+bulk_copy_failed = Xabar(lar)dan nusxa olib bo‘lmadi.
+bulk_copy_failed_status = Nusxa olish muvaffaqiyatsiz tugadi.
+bulk_loading_archive = Xabar(lar) hali yuklanmoqda -- bir ozdan so‘ng arxivlashga qayta urinib ko‘ring.
+bulk_loading_delete = Xabar(lar) hali yuklanmoqda -- bir ozdan so‘ng o‘chirishga qayta urinib ko‘ring.
+bulk_loading_flag = Xabar(lar) hali yuklanmoqda -- bir ozdan so‘ng belgilashga qayta urinib ko‘ring.
+bulk_loading_generic = Xabar(lar) hali yuklanmoqda -- bir ozdan so‘ng qayta urinib ko‘ring.
+bulk_none = Xabar tanlanmagan.
+bulk_none_archive = Arxivlash uchun xabar tanlanmagan.
+bulk_none_delete = O‘chirish uchun xabar tanlanmagan.
+bulk_none_junk = Spam sifatida belgilash uchun xabar tanlanmagan.
+bulk_none_not_junk = Spam emas deb belgilash uchun xabar tanlanmagan.
+delete_refused_still = Server uni o‘chirishni rad etdi; u hali {folder} da.
+delete_refused_trash = U Chiqitdonda, lekin server uni butunlay o‘chirishni rad etdi.
+delete_resume_failed = Oldingi o‘chirishdan {count} ta xabarni o‘chirib bo‘lmadi.
+done_perm_delete_one = Xabar butunlay o‘chirildi.
+done_trash_one = Xabar Chiqitdonga ko‘chirildi.
+filters_applied = {folder} dagi {count} ta xabarga filterlar qo‘llanildi.
+filters_failed = Filterlarni ishga tushirib bo‘lmadi.
+filters_running = {folder} da filterlar ishga tushirilmoqda
+flag_failed = Belgi(lar)ni yangilab bo‘lmadi.
+flag_updated = Belgi(lar) yangilandi.
+folder_verb_subscribing = Obuna bo‘linmoqda:
+folder_verb_unsubscribing = Obuna bekor qilinmoqda:
+mark_read_failed = Xabar(lar)ni o‘qilgan deb belgilab bo‘lmadi.
+mark_unread_failed = Xabar(lar)ni o‘qilmagan deb belgilab bo‘lmadi.
+notify_new_mail_body = {name} uchun {count} ta yangi {noun}.
+notify_new_mail_title = Yangi pochta
+notify_noun_many = xabar
+notify_noun_one = xabar
+report_done = {count} tadan {done} ta xabar {verb}.
+report_verb_deleted = o‘chirildi
+report_verb_permanent = butunlay o‘chirildi
+running_copy_many = {count} ta xabardan nusxa olinmoqda
+running_copy_one = Xabardan nusxa olinmoqda
+running_junk_many = {count} ta xabar spam sifatida belgilanmoqda
+running_junk_one = Spam sifatida belgilanmoqda
+running_move_many = {count} ta xabar ko‘chirilmoqda
+running_move_one = Ko‘chirilmoqda
+running_not_junk_many = {count} ta xabar spam emas deb belgilanmoqda
+running_not_junk_one = Spam emas deb belgilanmoqda
+running_perm_delete_one = Xabar butunlay o‘chirilmoqda...
+running_read_many = {count} ta xabar o‘qilgan deb belgilanmoqda
+running_read_one = O‘qilgan deb belgilanmoqda
+running_trash_one = Xabar Chiqitdonga ko‘chirilmoqda...
+running_unread_many = {count} ta xabar o‘qilmagan deb belgilanmoqda
+running_unread_one = O‘qilmagan deb belgilanmoqda
+settings_saved_no_startup = Sozlamalar saqlandi. Windows ishga tushirish yozuvini yangilab bo‘lmadi.
+settings_saved_status = Sozlamalar saqlandi.
+spam_blocked_sender = Bloklangan jo‘natuvchi
+spam_possible_phishing = Ehtimoliy firibgarlik
+undo_running_many = {action} bekor qilinmoqda ({count} ta xabar)
+undo_running_one = {action} bekor qilinmoqda
+mark_folder_read_failed = Jildni o‘qilgan deb belgilab bo‘lmadi.
+marking_folder_read = Jild o‘qilgan deb belgilanmoqda...
+upd_ready_at_exit = Yangilanish allaqachon yuklab olingan. U ZBox'dan chiqqaningizda o'rnatiladi.
+upd_checking = Yangilanishlar tekshirilmoqda...
+upd_up_to_date = ZBox eng so'nggi versiyada.
+upd_available_source = ZBox {version} mavjud. Bu nusxa manba kodidan ishlaydi, shuning uchun uni git bilan yangilang.
+upd_check_failed = Yangilanishlarni tekshirib bo'lmadi: {error}
+opening_attachment = {filename} ochilmoqda...
+loading_headers = Sarlavhalar yuklanmoqda...
+offline_inbox_only = Oflayn foydalanish uchun faqat Kiruvchilar va Arxiv saqlanadi.
+offline_sync_done_inbox = Kiruvchilar va Arxivdagi {count} ta xabar oflayn foydalanish uchun sinxronlandi.
+working_offline = Oflayn ishlanmoqda: Kiruvchi/Jo‘natilgan/Qoralamalarning oxirgi sinxronlangan nusxasi ko‘rsatilmoqda.
+emptying_trash_all = Barcha hisoblarning Savati boʻshatilmoqda...
+trash_emptied_all = {accounts} ta hisobda Savat boʻshatildi: {count} ta xabar butunlay oʻchirildi.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fayl
+bar_edit = &Tahrirlash
+bar_view = &Ko‘rinish
+bar_message = &Xabar
+bar_compose = &Yozish
+bar_tools = &Asboblar
+bar_help = &Yordam
+
+# File
+file_new = Yangi
+file_new_message = Xabar
+file_new_account = E-pochta hisobi...
+file_open_saved_message = Saqlangan xabarni ochish...
+file_close = Yopish
+file_save_message_as = Xabarni boshqacha saqlash...
+file_get_new_for = Yangi xabarlarni olish:
+file_get_new_all = Barcha hisoblar
+file_get_new_current = Joriy hisob
+file_offline = Oflayn
+file_work_offline = Oflayn ishlash
+file_sync_now = Hozir sinxronlash
+file_print = Chop qilish...
+file_print_preview = Chop qilishni ko‘rish...
+file_exit = Chiqish
+
+# Edit
+edit_undo = Bekor qilish
+edit_select_all = Barchasini tanlash
+edit_find_messages = Xabarlarni topish...
+
+# Message
+message_reply = Javob berish
+message_reply_all = Barchasiga javob berish
+message_forward = Uzatish
+message_archive = Arxivlash
+message_delete = O‘chirish
+message_delete_permanently = Butunlay o‘chirish
+message_mark = Belgilash
+mark_read = O‘qilgan
+mark_unread = O‘qilmagan
+mark_flagged = Yulduz qo‘yilgan
+mark_junk = Spam
+mark_not_junk = Spam emas
+message_watch_thread = Yozishmani kuzatish
+message_ignore_thread = Yozishmani e’tiborsiz qoldirish
+message_open_conversation = Xabarni suhbatda ochish
+message_show_related = Aloqador xabarlarni ko‘rsatish
+message_add_sender_to_address_book = Jo‘natuvchini manzillar daftariga qo‘shish
+message_announce_sender = Jo‘natuvchini aytish
+message_announce_copy_sender = Jo‘natuvchini aytish va manzildan nusxa olish
+
+# View
+view_folders = Jildlar
+folders_all = Barchasi
+folders_unified = Birlashtirilgan
+folders_jump_inbox = Kiruvchi xabarlar ro‘yxatiga o‘tish
+folders_configure_unified = Birlashtirilgan jildlarni moslash...
+view_sort_by = Saralash
+sort_date = Sana
+sort_subject = Mavzu
+sort_from = Jo‘natuvchi
+sort_descending = Kamayish tartibida (avval yangilari)
+sort_ascending = O‘sish tartibida (avval eskilari)
+view_threads = Yozishmalar
+threads_all = Barchasi
+threads_watched = Kuzatilayotgan yozishmalar
+threads_ignored = E’tiborsiz qoldirilgan yozishmalar
+threads_expand_all = Barcha yozishmalarni yoyish
+threads_collapse_all = Barcha yozishmalarni yig‘ish
+view_load_more = Ko‘proq xabar yuklash
+view_toggle_message_view = Matn va HTML ko‘rinishini almashtirish
+view_show_remote_content = Bu xabardagi masofadagi kontentni ko‘rsatish
+view_message_zoom = Xabar shrift hajmi
+zoom_increase = Xabar shrift hajmini kattalashtirish
+zoom_decrease = Xabar shrift hajmini kichraytirish
+zoom_reset = Xabar shrift hajmini boshlang‘ich holatga qaytarish
+
+# Compose
+compose_send = &Jo‘natish
+compose_save_draft = &Qoralamani saqlash
+compose_attach = &Fayl biriktirish...
+compose_fmt_bold = &Qalin
+compose_fmt_italic = &Qiya
+compose_fmt_strike = &Chizib o‘tilgan
+compose_fmt_bullet = &Belgili ro‘yxat
+compose_fmt_number = &Raqamli ro‘yxat
+compose_fmt_quote = &Iqtibos
+compose_fmt_code = &Kod
+compose_fmt_heading1 = &Sarlavha
+compose_link = &Havola qo‘shish...
+compose_formatting = &Bu yerdagi format
+compose_spellcheck = &Imloni tekshirish...
+compose_spellcheck_next = &Keyingi imlo xatosi
+compose_spellcheck_add = &So‘zni lug‘atga qo‘shish
+compose_insert_signature = &Imzo qo‘shish
+compose_paste_quotation = &Iqtibos sifatida qo‘yish
+compose_word_count = &So‘zlar soni
+compose_preview = &Ko‘rib chiqish...
+compose_diagnostics = &Yozish diagnostikasi...
+compose_edit_signature = &Imzoni tahrirlash...
+compose_hotkeys_diagnostic = &Tezkor tugmalar diagnostikasi
+
+# Tools
+tools_account_settings = Hisob va identifikatorlar sozlamalari...
+tools_mute_account = Hisobni ovozsiz qilish
+tools_pause_auto_check = Avtomatik tekshirishni to‘xtatish
+tools_disable_account = Hisobni faolsizlantirish
+tools_remove_account = Hisobni olib tashlash...
+tools_address_book = Manzillar daftari...
+tools_message_filters = Xabar filterlari...
+tools_import = Hisoblar va sozlamalarni import qilish...
+tools_export = Hisoblar va sozlamalarni eksport qilish...
+tools_cache_cleanup = Kesh tozalash sozlamalari...
+tools_privacy = Maxfiylik va kontentni bloklash...
+tools_settings = Sozlamalar...
+
+# Help
+help_shortcuts = Klaviatura tezkor tugmalari...
+help_about = ZBox haqida...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Yangi hisob...
+tree_account_settings = Hisob va identifikatorlar sozlamalari...
+tree_mute_account = Hisobni ovozsiz qilish
+tree_pause_auto_check = Avtomatik tekshirishni to‘xtatish
+tree_enable_account = Hisobni yoqish
+tree_disable_account = Hisobni faolsizlantirish
+tree_set_default_account = Asosiy hisob sifatida belgilash
+tree_remove_account = Hisobni olib tashlash...
+tree_refresh = Yangilash
+tree_new_folder = Yangi jild...
+tree_empty_trash = Chiqitdonni bo‘shatish
+tree_empty_junk = Spamni bo‘shatish
+tree_rename_folder = Jild nomini o‘zgartirish...
+tree_delete_folder = Jildni o‘chirish...
+tree_subscribe_folder = Jildga obuna bo‘lish
+tree_unsubscribe_folder = Jilddan obunani bekor qilish
+
+# The message list menu, opened the same two ways
+list_select_all = Barchasini tanlash
+list_reply = Javob berish
+list_reply_all = Barchasiga javob berish
+list_forward = Uzatish
+list_mark = Belgilash
+list_archive = Arxivlash
+list_delete_to_trash = O‘chirish (Chiqitdonga ko‘chirish)
+list_delete_permanently = Butunlay o‘chirish
+list_move_to = Ko‘chirish
+list_copy_to = Nusxa olish
+
+# The notification area icon
+tray_open = &ZBoxni ochish
+tray_unread_one = 1 ta o‘qilmagan xabar
+tray_unread_many = {count} ta o‘qilmagan xabar
+tray_no_unread = O‘qilmagan xabarlar yo‘q
+tray_settings = &Sozlamalar...
+tray_quit = &ZBoxdan chiqish
+
+# The formatting menu inside a message you are writing
+format_bold = &Qalin
+format_italic = &Qiya
+format_strike = &Chizib o‘tilgan
+format_bullet = &Belgili ro‘yxat
+format_number = &Raqamli ro‘yxat
+format_quote = &Iqtibos
+format_code = &Kod
+format_heading1 = &Sarlavha
+format_insert_link = &Havola qo‘shish...
+format_formatting_here = &Bu yerdagi format
+tools_enable_account = Hisobni yoqish
+edit_undo_action = {action} bekor qilish
+tree_mark_folder_read = Jildni o‘qilgan deb belgilash
+help_updates = Yangilanishlar
+help_check_updates = Yangilanishlarni hozir tekshirish...
+help_update_settings = Yangilanish sozlamalari...
+help_releases_page = Relizlar sahifasini ochish
+message_attachments = Ilovalar
+message_no_attachments = Biriktirmalar yoʻq
+message_save_all_attachments = Barcha biriktirmalarni saqlash
+view_full_headers = Barcha sarlavhalar
+folders_go_to_tree = Jildlar roʻyxatiga oʻtish
+list_block_sender = Bu yuboruvchini bloklash
+list_unblock_sender = Bu yuboruvchini blokdan chiqarish
+
+[dialogs]
+set_theme_restart_confirm = Mavzu o‘zgarishini qo‘llash uchun ZBox qayta ishga tushirilsinmi?
+set_ui_theme_label = &Interfeys mavzusi:
+set_ui_theme_note = Menyular, ro‘yxatlar, dialoglar va Matn xabar ko‘rinishi uchun ranglar. Tizimga ergashish Windows'ning o‘z yorug‘ yoki qorong‘i ilova rejimidan foydalanadi. Yarim tun ko‘ki, Issiq qorong‘i va Yumshoq kontrast — yumshoqroq ranglarga ega qorong‘i mavzular. HTML xabarlar o‘z ranglarini saqlab qoladi, Windows Yuqori kontrast esa har doim ustuvor bo‘ladi. ZBox keyingi marta ishga tushganda kuchga kiradi.
+set_theme_system = Tizimga ergashish
+set_theme_light = Yorug‘
+set_theme_dark = Qorong‘i
+set_theme_midnight = Yarim tun ko‘ki
+set_theme_warm = Issiq qorong‘i
+set_theme_soft = Yumshoq kontrast
+set_language_restart_confirm = Til o‘zgarishini qo‘llash uchun ZBox qayta ishga tushirilsinmi?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith bilan bog‘lanish
+title_identity = Shaxs
+title_show_password = Parolni ko‘rsatish
+title_missing_information = Ma’lumot yetishmayapti
+title_unsupported_provider = Qo‘llab-quvvatlanmaydigan provayder
+title_test_connection = Ulanishni sinash
+title_new_contact = Yangi kontakt
+title_edit_contact = Kontaktni tahrirlash
+title_delete_contact = Kontaktni o‘chirish
+title_import_contacts = Kontaktlarni import qilish
+title_export_contacts = Kontaktlarni eksport qilish
+title_rename_group = Guruh nomini o‘zgartirish
+title_delete_group = Guruhni o‘chirish
+title_send = Jo‘natish
+title_send_failed = Jo‘natish muvaffaqiyatsiz
+title_attach_file = Fayl biriktirish
+title_save_draft = Qoralamani saqlash
+title_documentation = ZBox hujjatlari
+title_open_link = Havolani ochish
+title_filter_rule = Filter qoidasi
+title_master_password = Bosh parol
+title_attachment_saved = Ilova saqlandi
+title_attachments_saved = Ilovalar saqlandi
+title_download_failed = Yuklab olish muvaffaqiyatsiz
+title_print = Chop qilish
+title_print_preview = Chop qilishni ko‘rish
+title_related_messages = Aloqador xabarlar
+title_search = Qidirish
+title_unlock = Ochish
+title_unlock_methods = Ochish usullari
+title_desktop_shortcut = Ish stoli yorlig‘i
+title_spell_check = Imloni tekshirish
+title_plain_text_password = Ochiq matnli parol topildi
+title_startup_error = ZBox ishga tushirish xatosi
+
+identity_email_required = E-pochta manzilini kiriting.
+
+wizard_password_not_shown = Bu tizimda parolni ko‘rsatib bo‘lmaydi. U baribir odatdagidek kiritiladi va saqlanadi.
+wizard_email_required = Davom etishdan oldin to‘g‘ri e-pochta manzilini kiriting.
+wizard_test_needs_server = Sinashdan oldin kirish e-pochtasi va kiruvchi serverni kiriting.
+wizard_test_succeeded = Ulanish muvaffaqiyatli bo‘ldi. Kiruvchi xabarlarda {count} ta xabar topildi.
+
+contact_email_required = E-pochta manzili talab qilinadi.
+contact_select_to_edit = Tahrirlash uchun kontaktni tanlang.
+contact_select_to_delete = O‘chirish uchun kontaktni tanlang.
+contact_delete_confirm = {label} manzillar daftaridan o‘chirilsinmi?
+contacts_import_choose_file = Import qilish uchun .vcf (vCard) yoki .csv faylini tanlang.
+contacts_imported = {count} ta kontakt import qilindi.
+contacts_import_empty = O‘sha faylda kontaktlar topilmadi.
+contacts_none_to_export = Eksport qilish uchun kontaktlar yo‘q.
+contacts_exported = {count} ta kontakt bu yerga eksport qilindi:\n{path}
+group_name_exists = "{name}" nomli guruh allaqachon mavjud.
+group_delete_confirm = "{name}" guruhi o‘chirilsinmi? Uning kontaktlari o‘chirilmaydi.
+
+send_no_account = Jo‘natishdan oldin hisob qo‘shing, yoki Kimdan maydonida birini tanlang.
+send_no_recipient = Kimga maydonida kamida bitta qabul qiluvchini kiriting.
+draft_no_account = Qoralamani saqlashdan oldin hisob qo‘shing, yoki Kimdan maydonida birini tanlang.
+attached_file = Biriktirildi: {name}\n\nJo‘natganingizda {count} ta fayl biriktiriladi.
+
+documentation_copied = ZBoxning to‘liq hujjatlari vaqtinchalik xotiraga nusxalandi.
+
+filter_rule_needs_name = Bu qoidaga nom bering.
+filter_rule_needs_condition = Kamida bitta shart belgilang (Kimdan, Kimga yoki Mavzu).
+filter_rule_needs_action = Kamida bitta amalni tanlang: o‘qilgan deb belgilash, yulduz qo‘yish yoki jildga ko‘chirish.
+
+master_password_set = Bosh parol belgilandi. Uni xavfsiz joyda saqlang: ZBox har yangi kompyuterda uni bir marta so‘raydi, va u yo‘qolsa tiklab bo‘lmaydi.
+master_password_offer = Bosh parolsiz saqlangan hisob parollari faqat shu kompyuter va shu Windows hisobida o‘qilishi mumkin. ZBoxni boshqa joyga nusxalasangiz, har bir hisobga qayta kirish kerak bo‘ladi.\n\nHozir birini belgilaysizmi?
+
+attachment_saved = Ilova bu yerga saqlandi:\n{path}
+attachments_saved = {count} ta ilova bu yerga saqlandi:\n{path}
+
+shortcut_created_settings = Yorliq yaratildi:\n{path}\n\nU ZBoxni bu yerdan ishga tushiradi:\n{base}
+
+spellcheck_no_dictionary = Imlo lug‘ati yo‘q, shuning uchun ZBoxning bu nusxasida imlo tekshiruvi mavjud emas.
+spellcheck_none_found = Imlo xatolari topilmadi.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Bu kompyuterda passkey sozlanib, boshqa kompyuterdan saqlangani unutilsinmi?\n\nWindows sizdan Hello bilan tasdiqlashni so‘raydi. Boshqa kompyuterda qolgan eski passkey u yerda o‘zgarishsiz qoladi va bu jildni o‘sha kompyuterga qaytarsangiz ishlayveradi, lekin uni qayta sozlash kerak bo‘ladi.
+unlock_replace_passkey_many = Bu kompyuterda passkey sozlanib, boshqa kompyuterlardan saqlangan {count} tasi unutilsinmi?\n\nWindows sizdan Hello bilan tasdiqlashni so‘raydi. Boshqa kompyuterda qolgan eski passkeylar u yerda o‘zgarishsiz qoladi va bu jildni o‘sha kompyuterga qaytarsangiz ishlayveradi, lekin ularni qayta sozlash kerak bo‘ladi.
+unlock_method_works = Bu usul ishlaydi.
+
+plain_text_password_found = data\config\himalaya.toml faylida hali ham eski hisob sozlashidan qolgan ochiq matnli parol (auth.raw) bor.\n\nO‘sha hisobni olib tashlab qayta qo‘shing, yoki data\config\himalaya.toml faylini o‘chiring, shunda u xavfsiz hisob ma’lumotlari ombori yordamida qaytadan yaratiladi.
+
+# main_frame's titles.
+title_account_list_unavailable = Hisoblar ro‘yxati mavjud emas
+title_open_message = Xabarni ochish
+title_run_filters = Filterlarni ishga tushirish
+title_clear_cache = Oflayn xabarlar keshini tozalash
+title_remove_account = Hisobni olib tashlash
+title_new_folder = Yangi jild
+title_rename_folder = Jild nomini o‘zgartirish
+title_delete_folder = Jildni o‘chirish
+title_subscribe = Obuna bo‘lish
+title_unsubscribe = Obunani bekor qilish
+title_open_saved_message = Saqlangan xabarni ochish
+title_save_message_as = Xabarni boshqacha saqlash
+title_empty_trash = Chiqitdonni bo‘shatish
+title_empty_junk = Spamni bo‘shatish
+title_synchronize_offline = Oflayn uchun sinxronlash
+title_export_accounts = Hisoblar va sozlamalarni eksport qilish
+title_import_accounts = Hisoblar va sozlamalarni import qilish
+title_show_related = Aloqador xabarlarni ko‘rsatish
+title_reply = Javob berish
+title_forward = Uzatish
+title_undo = Bekor qilish
+title_delete_permanently = Butunlay o‘chirish
+title_delete = O‘chirish
+title_copy_to = Nusxa olish
+title_archive = Arxivlash
+title_accounts_locked = Hisoblar qulflangan
+
+select_account_first = Avval daraxtdagi hisobni tanlang.
+select_account_or_folder = Avval hisob yoki jildni tanlang.
+filters_left_behind = {count} ta xabar filterga mos keldi, lekin hali {folder} da qoldi.
+cache_clear_confirm = Har bir hisob uchun oflayn xabarlar keshi tozalansinmi?\n\nBu faqat ZBoxning mahalliy nusxalarini o‘chiradi. Hech narsa hech qanday pochta serveridan o‘chirilmaydi, va xabarlar kerak bo‘lganda qayta yuklab olinadi.
+account_remove_confirm = {name} ({address}) olib tashlansinmi?\n\nServerdagi pochta o‘chirilmaydi.\nBu kompyuterga yuklab olingan nusxalar o‘chiriladi.\nSaqlangan parol o‘chiriladi.
+folder_delete_confirm = "{folder}" jildi va undagi hamma narsa {address} uchun butunlay o‘chirilsinmi?\n\nBu amalni qaytarib bo‘lmaydi.
+empty_trash_confirm = {address} uchun Chiqitdondagi barcha xabarlar butunlay o‘chirilsinmi?\n\nBu amalni qaytarib bo‘lmaydi.
+empty_junk_confirm = {address} uchun Spamdagi barcha xabarlar butunlay o‘chirilsinmi?\n\nBu amalni qaytarib bo‘lmaydi.
+sync_select_account = Oflayn foydalanish uchun sinxronlash uchun hisobni tanlang (Birlashtirilgan jild emas).
+accounts_imported = {count} ta hisob import qilindi:\n\n{names}\n\nParollar hech qachon eksport qilinmaydi, shifrlangan parol ombori esa shu Windows foydalanuvchi hisobiga xos, shuning uchun har bir import qilingan hisob ulanishdan oldin Hisoblar > Hisob va identifikatorlar sozlamalari orqali bir marta paroli kiritilishi kerak.
+accounts_import_none = Bu faylda hisoblar topilmadi. Agar faylda sozlamalar bo‘lsa, ular baribir import qilindi.
+delete_permanently_confirm_one = Bu xabar butunlay o‘chirilsinmi? Bu Chiqitdon jildini chetlab o‘tadi va qaytarib bo‘lmaydi.
+accounts_locked = Saqlangan hisob parollari boshqa kompyuterda yozilgan, shuning uchun bu yerda ularni o‘qib bo‘lmaydi.\n\nHar bir hisobga qayta pochta serveriga kirish kerak bo‘ladi. Buni keyingi safar oldini olish uchun hisoblar allaqachon ishlayotgan kompyuterda Sozlamalar, Ilova va ma’lumotlar xavfsizligidan bosh parol belgilang.
+master_password_remove_confirm = Bosh parol olib tashlansinmi? Shundan so‘ng saqlangan hisob parollari faqat shu kompyuter va shu Windows hisobida o‘qiladigan bo‘ladi. ZBoxni keyin boshqa joyga nusxalasangiz, har bir hisobga qayta kirish kerak bo‘ladi.\n\nHozir olib tashlansinmi?
+shortcut_offer = Ish stoliga ZBox yorlig‘i qo‘yilsinmi?\n\nU shu ZBox jildini ishga tushiradi:\n{path}\n\nYorliq shu aniq joyni eslab qoladi. ZBox jildini keyin ko‘chirsangiz, Sozlamalar, Bildirishnomalar sohasi va oyna bo‘limini oching va uni yangi joyga yo‘naltirish uchun Ish stoli yorlig‘ini yaratishni qayta tanlang.
+shortcut_created = Yorliq yaratildi:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Ko‘rsatiladigan ism
+form_email_address = E-pochta manzili
+form_your_name = Ismingiz
+form_login_email = Kirish e-pochtasi
+form_password = Parol
+srv_imap_host = Kiruvchi (IMAP) server
+srv_imap_port = Kiruvchi port
+srv_imap_encryption = Kiruvchi shifrlash
+srv_smtp_host = Chiquvchi (SMTP) server
+srv_smtp_port = Chiquvchi port
+srv_smtp_encryption = Chiquvchi shifrlash
+
+acct_login_email_label = Kirish e-pochtasi (kirish uchun ishlatiladi)
+acct_new_password_label = Yangi parol (joriysini saqlash uchun bo‘sh qoldiring)
+acct_new_password_name = Yangi parol
+acct_identity_email_label = E-pochta manzili (jo‘natish va qabul qilish uchun ishlatiladi)
+acct_identities_label = Qo‘shimcha shaxslar (taxalluslar)
+acct_identities_name = Qo‘shimcha shaxslar
+acct_add_identity = &Shaxs qo‘shish...
+acct_edit_identity = &Shaxsni tahrirlash...
+acct_remove_identity = &Shaxsni olib tashlash
+acct_signature = Imzo
+acct_edit_signature = &Imzoni tahrirlash...
+acct_junk_folder = Spam jildi
+acct_account_status = Hisob holati
+acct_disable_account = Bu hisobni faolsizlantirish
+acct_default_account = Asosiy hisob
+acct_set_default = Asosiy hisob sifatida belgilash
+acct_notifications = Yangi pochta bildirishnomalari
+acct_mute_notifications = Bu hisob uchun bildirishnomalarni ovozsiz qilish
+acct_server_settings = Server sozlamalari
+
+wiz_before_you_start = Boshlashdan oldin
+wiz_notice_name = Muhim eslatma
+wiz_google_instructions = &Google ilova paroli yo‘riqnomasini ochish
+wiz_intro = Ismingiz va e-pochta manzilingiz
+wiz_login_same = Kirish e-pochtasi yuqoridagi e-pochta manziliga teng
+wiz_show_password = &Parolni ko‘rsatish
+wiz_preset_applied = {name} uchun tayyor sozlama qo‘llanildi.
+wiz_summary_name = Hisob xulosasi
+wiz_review = Ko‘rib chiqing, so‘ng bu hisobni saqlash uchun Tugatish tugmasini bosing.
+wiz_test_connection = &Ulanishni sinash
+wiz_testing = Ulanish sinalmoqda...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Diagnostika jurnali yozib borilsin: data\logs)
+set_language_label = &Interfeys tili:
+set_language_label_only_english = &Interfeys tili: (faqat inglizcha)
+set_headers_checkbox = &Ochilgan xabar ustida xabar sarlavhalarini ko‘rsatish
+set_zoom_label = Xabar shrifti va masshtabi:
+set_font_override = &Standart xabar shrift hajmini bekor qilish
+set_font_size_name = Xabar shrift hajmi (punktlarda)
+set_reading_font_name = O‘qish shrifti
+set_reading_font_label = O‘qish shrifti (standart uchun bo‘sh qoldiring):
+set_view_label = Xabar ochilganda tanasi ko‘rinishi:
+set_view_text = Matn
+set_view_html = HTML (tasvirlangan)
+set_engine_label = HTML tasvirlash dvigateli:
+set_engine_edge = Edge / WebView2 (zamonaviy tasvirlash)
+set_engine_ie = Eski MSHTML (eng yaxshi ekran o‘quvchi qo‘llab-quvvatlashi)
+set_runtime_label = WebView2 runtime:
+set_runtime_auto = Avtomatik — mavjud bo‘lsa qo‘shilgan runtime'dan foydalanish (tavsiya etiladi)
+set_runtime_fixed = Faqat qo‘shilgan qat’iy versiya
+set_runtime_evergreen = Tizim bo‘ylab runtime (Windows tomonidan yangilanadi)
+set_sr_box = Ekran o‘quvchi e’lonlari boshqaruvi
+set_silence_label = HTML ekran o‘quvchi sukut kutish vaqti:
+set_silence_name = HTML ekran o‘quvchi sukut kutish vaqti, millisekundlarda
+set_focus_delay_label = WebView qulaylik fokus kechikishi:
+set_focus_delay_name = WebView qulaylik fokus kechikishi, 1 dan 10 gacha daraja
+set_announce_label = E’lon kutish vaqti:
+set_announce_name = E’lon kutish vaqti, millisekundlarda
+set_announce_actions = &Xabar amallarini aytish
+set_attachment_dir_label = Ilovalarni saqlash jildi:
+set_attachment_dir_name = Ilovalarni saqlash jildi
+set_browse = &Ko‘rish…
+set_autosave_label = Qoralamani avtomatik saqlash oralig‘i:
+set_autosave_name = Qoralamani avtomatik saqlash oralig‘i, soniyalarda
+set_auto_purge_label = Eski Chiqitdon va Spamni avtomatik tozalash:
+set_auto_purge_name = Chiqitdon va Spamni shuncha kundan so‘ng avtomatik tozalash
+set_bare_keys = Xabarlar roʻyxatida bitta tugmali tezkor tugmalarni yoqish: S (bayroqcha), A (arxivlash), J (spam deb belgilash)/Shift+J (spam emas deb belgilash), W (mavzuni kuzatish), K (mavzuni eʼtiborsiz qoldirish), M (koʻchirish)/Shift+M (jild nomi boʻyicha koʻchirish) va C (nusxalash)
+set_sound_label = Tovush va bildirishnomalar:
+set_sounds_enabled = &Bildirishnoma tovushlarini ijro etish
+set_desktop_notifications = &Yangi pochta uchun ish stoli bildirishnomalarini ko‘rsatish
+set_theme_label = Tovush mavzusini o‘zgartirish:
+set_theme_label_only_default = Tovush mavzusini o‘zgartirish: (faqat standart mavzu)
+set_security_box = Ilova va ma’lumotlar xavfsizligi
+set_lock_on_quit = &ZBox butunlay yopilganda uni qulflash
+set_unlock_methods_button = &Ochish usullari…
+set_master_password_button = &Bosh parol…
+set_tray_label = Bildirishnomalar sohasi va oyna:
+set_minimize_to_tray = &Bildirishnomalar sohasiga yig‘ish
+set_close_to_tray = &Bildirishnomalar sohasiga yopish
+set_stay_maximized = &ZBoxni doim yoyilgan holda ushlab turish
+set_run_at_startup = &Windows ishga tushganda ZBoxni ishga tushirish
+set_desktop_shortcut_button = &Ish stoli yorlig‘ini yaratish
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Diagnostika jurnali biror narsa noto‘g‘ri ketsa muammoni aniqlashga yordam beradi. Uni o‘chirish yangi yozuvlarni yozilishini to‘xtatadi; mavjud jurnal fayllari o‘chirilmaydi. ZBox keyingi marta ishga tushganda kuchga kiradi.
+set_language_note = ZBox keyingi marta ishga tushganda kuchga kiradi. Til fayllari ZBoxning lang jildida, tovushlar jildi yonida joylashgan oddiy matn fayllari. Birini qo‘shish uchun en jildini nusxalab, nusxa va ichidagi .lang faylini til kodingizga qayta nomlang, va har bir teng belgisining o‘ng tomonidagi matnni tarjima qiling. Hali tarjima qilinmagan har qanday narsa jim qolish o‘rniga inglizcha aytiladi, shuning uchun yarim tugallangan faylni ishlatish xavfsiz.
+set_headers_note = Matn va HTML ko‘rinishida ham xabar tanasi ustida ko‘rsatiladigan Kimdan, Kimga, Cc, Sana va Mavzu. Usiz uni ichida kim jo‘natganini bilishning yo‘li yo‘q, ichki oynani yopib ro‘yxatga qaytmasdan. Fokus baribir xabar tanasiga tushadi; sarlavha bloki bitta Shift+Tab uzoqlikda. Keyingi xabar ochilganda kuchga kiradi.
+set_zoom_note = Ochilgan xabarning o‘z matnini ZBoxning qolgan qismidan va Windows'ning o‘z displey masshtablashidan mustaqil ravishda kattalashtiradi yoki kichraytiradi. Ham Matn, ham HTML ko‘rinishlariga qo‘llanadi. “O‘qish shrifti” ixtiyoriy ravishda xabar tanasi uchun aniq shrift (masalan, Consolas, OpenDyslexic) majburlaydi; oddiy shriftni saqlash uchun bo‘sh qoldiring. Ko‘rinish menyusidagi Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 bu oynani ochmasdan faqat shrift hajmini oshiradi, pasaytiradi yoki qayta tiklaydi, va har bir ochiq xabarga darhol qo‘llanadi. Bu yerda qilingan o‘zgarishlar ham OK bosilganda darhol qo‘llanadi.
+set_view_note = HTML standart holat. U xabarni jo‘natilgandek ko‘rsatadi, va NVDA hamda JAWS tomonidan o‘qiladi: HTML sahifa ochilganda, ZBox brauzerning o‘z e’lonini jim qiladi, o‘qish kursorini xabarning birinchi qatoriga qo‘yadi, va ZBoxning o‘z tezkor tugmalari sahifa ichida ishlashda davom etadi, jumladan fokusni undan tashqariga qaytarish uchun F6. Matn xuddi shu xabarni oddiy, formatlanmagan matn sifatida oddiy tahrirlash boshqaruvida ko‘rsatadi -- rasmlar yo‘q, joylashuv yo‘q, va brauzer dvigateli o‘rnatilganligiga bog‘liq hech narsa yo‘q. Har ikkala tomonga o‘tish uchun ochiq xabar ichida Ctrl+B tugmalarini bosing.
+set_engine_note = Edge zamonaviy CSS'ni tasvirlaydi, lekin sahifani alohida jarayonda ishga tushiradi, va o‘z kontentini ekran o‘quvchiga faqat wxPython yeta olmaydigan interfeys orqali beradi -- shuning uchun xabar hech narsa o‘qib bo‘lmaydigan holda ochilishi mumkin. Eski MSHTML — Outlook Express va Windows Mail ishlatgan dvigatel: u jarayon ichida ishlaydi va oddiy hujjat daraxtini e’lon qiladi, shuning uchun NVDA va JAWS uni har qanday veb-sahifa kabi ko‘rish rejimida o‘qiydi. Keyingi xabar ochilganda kuchga kiradi.
+set_runtime_note = Tizim bo‘ylab runtime Windows Update tomonidan xizmat qiladi, shuning uchun pochtangizni o‘qiydigan dvigatel ogohlantirishsiz o‘zgarishi mumkin — ZBoxda hech narsa o‘zgarmagan kompyuterda ishlayotgan HTML xabar ko‘rinishi shu tarzda buziladi. deps jildiga qo‘shilgan nusxa ZBox sinalgan aniq versiyani qat’iylashtiradi. Birini o‘rnatish uchun tools\get_webview2.bat ni ishga tushiring. Qo‘shilgan nusxa bo‘lmasa, ZBox baribir tizim bo‘ylab runtime'dan foydalanadi, shuning uchun u har doim ishga tushadi. ZBox keyingi marta ishga tushganda kuchga kiradi.
+set_sr_intro = Xabar ochilayotganda ZBox ekran o‘quvchingizga qancha narsa aytishga ruxsat berishi, va uning o‘z ovozli e’lonlari qancha vaqt turishi.
+set_silence_note = HTML xabar ochilganda, ZBox ekran o‘quvchining brauzer e’lonini jim qilish uchun sun’iy Ctrl bosishini 2 soniyagacha ushlab turishi mumkin. Xabarning mavzusi allaqachon sahifa sarlavhasi sifatida ishlatiladi, bu base64 manzilining o‘qib eshittirilishini to‘xtatadi, lekin o‘quvchi baribir xabarning boshlanishi ustidan boshqaruv va hujjat turini e’lon qiladi, shuning uchun bu standart holatda yoqilgan. Uni o‘chirish uchun 0 ga tushiring, yoki shovqin hali ham o‘tib kelayotgan bo‘lsa oshiring.
+set_focus_delay_note = HTML xabar yuklanishini tugatgach, ZBox uni haqiqatan fokuslashdan oldin shuncha kutadi. WebView2ning sahifa yuklandi deb bildirishi va Windows'ning o‘sha sahifaning qulaylik daraxtini tugatishi bir xil payt emas; juda erta fokuslash NVDA/JAWS'ni xabar o‘rniga umumiy “Veb kontent sahifasi” deb e’lon qilishiga, yoki ochilgandan keyin bir muddat xabar mavjud emas deb bildirishiga sabab bo‘ladi. 1-daraja 100 ms, 10-daraja butun bir soniya. Buni hali ham ko‘rsangiz oshiring; ochilish barqaror his qilinsa, tezroq ochilish uchun pasaytiring.
+set_announce_note = Ctrl+U va Ctrl+Shift+U jo‘natuvchini o‘zi yopiladigan kichik dialogda bildiradi, chunki holat paneli faqat ekran o‘quvchingizda holat paneli xabarlari yoqilgan bo‘lsagina o‘qiladi. Bu o‘sha dialog qancha vaqt turishi. Uni nutq tezligingizga moslang: juda qisqa bo‘lsa u gap o‘rtasida yopiladi, bu esa maqsadni yo‘qqa chiqaradi. Har qanday tugma uni erta yopadi; strelka tugmalari uni ochiq qoldiradi, shunda qayta o‘qiy olasiz. 0 u tugmani kutishini va o‘zi hech qachon yopilmasligini bildiradi.
+set_attachment_dir_note = Xabarda birdan ortiq ilova bo‘lganda “Hammasini saqlash” ilovalarni qayerga yozadi. Mavjud bo‘lmasa avtomatik yaratiladi. Bitta ilovali xabar avvalgidek baribir uni qayerga saqlashni so‘raydi. Standart uchun bo‘sh qoldiring:\n{path}
+set_autosave_note = Yozayotganingizda ochiq yozish oynasi o‘zini Qoralamalarga qanchalik tez-tez saqlashi. Qoralamani saqlash (Ctrl+S) baribir talab bo‘yicha saqlashda davom etadi, va saqlanmagan yozuv bilan ichki oynani yopish har doim uni saqlashni taklif qiladi. 0 avtomatik saqlashni o‘chiradi. 15 soniyadan kam taklif etilmaydi -- bu yozayotganingiz bilan raqobatlashadigan server aylanishi bo‘lar edi.
+set_auto_purge_note = Xabarlar Chiqitdon va Spamda shuncha kun turgach, ularni butunlay olib tashlaydi -- xuddi Chiqitdonni bo‘shatish va Spamni bo‘shatish talab bo‘yicha bajaradigan o‘sha butunlay olib tashlash, ZBox ochiq bo‘lganda kuniga bir marta avtomatik ishga tushadi. Standart holatda 30 kunda yoqilgan. 0 uni o‘chiradi. Xabar olib tashlangach buni qaytarib bo‘lmaydi.
+set_bare_keys_note = Yoqilganda, xabarlar ro‘yxatida yolg‘iz S, A, J, W yoki K bosish darhol yulduzni almashtiradi, arxivlaydi, tanlangan xabar(lar)ni spam sifatida belgilaydi (Shift+J ularni spam emas deb belgilaydi), yoki tanlov qismi bo‘lgan yozishmani kuzatadi/e’tiborsiz qoldiradi -- Arxivlash va Spam sifatida belgilashda tasdiqlash ham, bekor qilish ham yo‘q. Buni o‘chirish S, A, J, W va K ni oddiy birinchi-harf ro‘yxat navigatsiyasiga qaytaradi. Ctrl+S va Ctrl+Shift+A har ikkala holatda ham ishlayveradi. Darhol kuchga kiradi.
+set_sounds_note = Jarayon, yangi xabarlar, jo‘natilgan, javob berilgan yoki uzatilgan amallar, o‘chirishlar va qidiruv natijalari uchun qisqa tovushlar. O‘chirish ilovadagi har bir tovushni o‘chiradi; ekran o‘quvchi va holat paneli e’lonlariga har ikkala holatda ham ta’sir qilmaydi.
+set_desktop_notifications_note = Har bir yangi pochta guruhi uchun, yuqoridagi tovushdan alohida, Windows bildirishnomasi. O‘chirish uni har bir hisob uchun o‘chiradi; alohida hisob ham Hisob va identifikatorlar sozlamalarida o‘zicha ovozsiz qilinishi mumkin.
+set_theme_note = Maxsus mavzular ZBoxning tovushlar jildi ichiga joylashgan jildlar bo‘lib, har biri o‘zining progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav va none_found.wav fayllarini ta’minlaydi. Yo‘q bo‘lgan mavzu fayli standart tovushga qaytadi.
+set_theme_note_only_default = Maxsus mavzular ZBoxning tovushlar jildi ichiga joylashgan jildlar bo‘lib, har biri o‘zining progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav va none_found.wav fayllarini ta’minlaydi. Yo‘q bo‘lgan mavzu fayli standart tovushga qaytadi. Boshqa mavzu jildi qo‘shmaguningizcha faqat “default” mavjud.
+set_lock_note = ZBoxni ishga tushirish shunda har qanday hisob ochilishidan oldin ochish usullaringizdan birini so‘raydi. Ulardan har qandayi yetarli: passkey, xavfsizlik kaliti, yoki bosh parol. Bildirishnomalar sohasiga yopish chiqish emas va qayta qulflamaydi; buni Fayl > Chiqish va bildirishnomalar sohasidagi belgining Chiqish bandi qiladi. Hech narsa ro‘yxatdan o‘tkazilmagan va bosh parol belgilanmagan bo‘lsa, qulf sizni o‘z pochtangizdan mahrum qilish o‘rniga o‘tkazib yuboriladi.
+set_security_note = Bosh parol — uchtadan biror narsani shifrlaydigan yagona narsa: u shu jildga boshqa kompyuterda saqlangan hisob parollarini ochishga imkon beradi. Passkey yoki xavfsizlik kaliti ilovani shu kompyuterda ochadi. Ikkalasi ham ZBox ilgari ishlatilmagan kompyuterda bosh parolning o‘rnini bosmaydi.
+set_minimize_note = ZBoxni yig‘ish uning vazifalar panelidagi tugmasini yashiradi va uni bildirishnomalar sohasidagi belgi ortida ishlab turishda qoldiradi. Oynani qaytarish uchun o‘sha belgini chap tugma bilan bosing (yoki u klaviatura fokusiga ega bo‘lganda Enter/Bo‘shliq).
+set_close_note = Oynaning Yopish tugmasi, Alt+F4, va Pochta ichki oynasida bosilgan Ctrl+W ZBoxni chiqish o‘rniga bildirishnomalar sohasiga yashiradi. Fayl > Chiqish (Ctrl+Shift+Q) va bildirishnomalar sohasidagi belgining o‘z Chiqish bandi har ikkala holatda ham ZBoxdan haqiqatan chiqadi, shuning uchun bildirishnomalar sohasiga tegmasdan chiqishning bitta klaviatura yo‘li har doim bor.
+set_stay_maximized_note = ZBox yoyilgan holda ishga tushadi va uni kichraytirsangiz qayta yoyilgan holatga qaytariladi. Menyu paneli, sarlavha paneli va oyna chegarasiga ta’sir qilmaydi -- bu chegarasiz to‘liq ekran rejimi emas, shuning uchun har bir Alt-tugma menyu tezkor tugmasi ishlashda davom etadi.
+set_run_at_startup_note = Windows'ga kirganingizda ZBoxni avtomatik ishga tushiradi, oynasini ko‘rsatish o‘rniga to‘g‘ridan-to‘g‘ri bildirishnomalar sohasiga ochiladi. Faqat keyingi ishga tushirishda emas, darhol kuchga kiradi.
+set_desktop_shortcut_note = Ish stolingizga, u yerda allaqachon mavjud bo‘lganini almashtirib, ZBox yorlig‘ini qo‘yadi. Yorliq shu ZBox jildining aniq joyini saqlaydi, shuning uchun ZBoxni boshqa joyga ko‘chirsangiz yoki nusxalasangiz, Ish stoli yorlig‘ini yangi joyga yo‘naltirish uchun yangi nusxada buni qayta bosing. Darhol kuchga kiradi va OK ni kutmaydi.
+
+# The Address Book, its contact form and its groups.
+ab_name = Ism
+ab_phone = Telefon
+ab_notes = Eslatmalar
+ab_heading = Manzillar daftari
+ab_contacts = Kontaktlar
+ab_new = &Yangi...
+ab_edit = &Tahrirlash...
+ab_delete = &O‘chirish
+ab_import = &Import qilish...
+ab_export = &Eksport qilish...
+ab_groups_label = Guruhlar (pochta ro‘yxatlari)
+ab_groups_name = Guruhlar
+ab_new_group = &Yangi guruh...
+ab_rename_group = &Guruh nomini o‘zgartirish...
+ab_delete_group = &Guruhni o‘chirish
+ab_manage_members = &A’zolarni boshqarish...
+ab_all_contacts = Barcha kontaktlar
+ab_add_member = Qo‘shish >>
+ab_remove_member = << Olib tashlash
+ab_members_of = {name} a’zolari
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Lug‘atda yo‘q:
+sp_not_in_dictionary_name = Lug‘atda yo‘q
+sp_in_this_line_label = Bu qatorda:
+sp_in_this_line_name = Bu qatorda
+sp_suggestions_label = &Takliflar:
+sp_suggestions_name = Takliflar
+sp_replace_with_label = &Bilan almashtirish:
+sp_replace_with_name = Bilan almashtirish
+sp_replace = &Almashtirish
+sp_replace_all = &Hammasini almashtirish
+sp_ignore = &E’tiborsiz qoldirish
+sp_ignore_all = &Hammasini e’tiborsiz qoldirish
+sp_add_to_dictionary = &Lug‘atga qo‘shish
+btn_close = &Yopish
+
+# Privacy and Content Blocking.
+priv_remote_label = Xabarlardagi masofadagi kontent:
+priv_block_remote = &So‘ramaguncha masofadagi kontentni bloklash (tavsiya etiladi)
+priv_blocklist_label = Reklama va kuzatuvchi bloklash ro‘yxati:
+priv_block_known = &Ma’lum reklama va kuzatuvchi domenlarini bloklash
+priv_update_daily = &Ro‘yxatni orqa fonda har kuni yangilash
+priv_update_now = &Hozir yangilash
+priv_junk_label = Spam qoidalari:
+priv_check_inbox = &Yangi Kiruvchi pochtani bloklangan jo‘natuvchilar va ma’lum firibgarlik havolalariga qarshi tekshirish
+priv_move_blocked = &Bloklangan jo‘natuvchilardan pochtani avtomatik ravishda Spamga ko‘chirish
+priv_update_phishing = &Firibgarlik ro‘yxatini hozir yangilash
+priv_blocked_label = Bloklangan jo‘natuvchilar:
+priv_blocked_name = Bloklangan jo‘natuvchilar
+priv_remove_blocked = &Bloklangan jo‘natuvchini olib tashlash
+priv_never_junk_label = Hech qachon spam deb hisoblanmaydigan jo‘natuvchilar:
+priv_never_junk_name = Hech qachon spam deb hisoblanmaydigan jo‘natuvchilar
+priv_remove_never_junk = &Spam-emas jo‘natuvchini olib tashlash
+priv_allowed_label = Masofadagi kontentni yuklashga ruxsat etilgan jo‘natuvchilar:
+priv_allowed_name = Ruxsat etilgan jo‘natuvchilar
+priv_remove_selected = &Tanlangan jo‘natuvchini olib tashlash
+
+# Message Filters.
+filt_rule_name = Qoida nomi
+filt_enabled = &Yoqilgan
+filt_match_label = Moslash:
+filt_match_all = &Quyidagilarning hammasiga mos kelsin (VA)
+filt_match_any = &Quyidagilardan biriga mos kelsin (YOKI)
+filt_conditions_label = Shartlar (o‘tkazib yuborish uchun qiymatni bo‘sh qoldiring):
+filt_condition_field = {number}-shart maydoni
+filt_condition_contains = {number}-shart o‘z ichiga oladi
+filt_actions_label = Amallar:
+filt_mark_read = &O‘qilgan deb belgilash
+filt_flag = &Xabarga yulduz qo‘yish
+filt_move_label = Jildga ko‘chirish:
+filt_move_name = Jildga ko‘chirish
+filt_rules_name = Filter qoidalari
+filt_new = &Yangi qoida...
+filt_edit = &Qoidani tahrirlash...
+filt_delete = &Qoidani o‘chirish
+filt_up = &Yuqoriga ko‘chirish
+filt_down = &Pastga ko‘chirish
+filt_run_label = Jildda hozir ishga tushirish:
+filt_run_name = Hozir ishga tushirish jildi
+filt_run_now = &Hozir ishga tushirish
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Passkey bilan ochish (Windows Hello)
+unl_security_key = &Xavfsizlik kaliti bilan ochish
+unl_master_password_label = &Bosh parol:
+unl_master_password_name = Bosh parol
+unl_unlock = &Ochish
+unl_exit = &ZBoxdan chiqish
+unl_methods_label = &Ro‘yxatdan o‘tkazilgan usullar:
+unl_methods_name = Ro‘yxatdan o‘tkazilgan ochish usullari
+unl_add_passkey = &Passkey qo‘shish…
+unl_add_key = &Xavfsizlik kaliti qo‘shish…
+unl_reassign = &Passkeyni shu kompyuterga qayta tayinlash…
+unl_test = &Sinash…
+unl_remove = &Olib tashlash
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Kimdan
+comp_to = Kimga
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Mavzu
+comp_attach_button = Fayl biriktirish...
+comp_sending = Jo‘natilmoqda...
+comp_report_label = &Hisobot:
+comp_report_name = Hisobot
+comp_refresh = &Yangilash
+comp_copy = &Nusxa olish
+comp_preview_read = Qabul qiluvchi o‘qigandek
+comp_preview_source = Jo‘natiladigan HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Xabar tanasi
+mv_blocked_notice = Bloklangan kontent bildirishnomasi
+mv_show_remote = &Masofadagi kontentni ko‘rsatish
+mv_always_allow = &Bu jo‘natuvchiga doim ruxsat berish
+mv_message_headers = Xabar sarlavhalari
+mv_attachments = Ilovalar
+mv_attachments_count = Ilovalar ({count})
+mv_save_attachment = Saqlash: {filename}
+mv_save_all = Hammasini saqlash
+mv_html_view = Xabar HTML ko‘rinishi
+mv_saved_message = Saqlangan xabar
+mv_show_remote_tip = Bu xabarni masofadagi rasmlari va uslublari bilan qayta yuklash. Ma’lum kuzatuvchilar bloklangan holda qoladi.
+mv_always_allow_tip = {sender} dan kelgan har bir xabarda masofadagi kontentni yuklash.
+
+# The search tab.
+srch_account = Hisob
+srch_folder = Jild
+srch_for = Qidirish
+
+# The signature editor.
+sig_editors = Imzo tahrirlagichlari
+sig_formatted = Imzo, formatlangan
+sig_source = Imzo, HTML manbasi
+sig_plain_label = Oddiy matn muqobili (HTML bilan birga jo‘natiladi)
+sig_plain_name = Oddiy matn muqobili
+
+# About ZBox.
+about_text_name = ZBox haqida matni
+about_view_license = &Litsenziyani ko‘rish...
+about_google = &Google ilova parollari...
+about_support = &ZBoxni qo‘llab-quvvatlash -- Bir kishilik ishlab chiqish va texnik xizmat
+about_repos = &Harithning GitHub'dagi ilovalar ombori
+about_contact = &Harith bilan bog‘lanish
+btn_close_plain = Yopish
+btn_cancel_plain = Bekor qilish
+
+# The license window.
+eula_heading = ZBox litsenziyasi
+eula_text_name = ZBox litsenziya matni
+eula_third_party = Uchinchi tomon komponentlarining litsenziya sahifalari:
+eula_agree = &Yuqoridagi shartlarga roziman
+eula_agree_name = ZBox litsenziya shartlarini o‘qib chiqdim va roziman
+eula_disagree = &Rozi emasman
+eula_next = &Keyingi
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox hujjatlari matni
+doc_copy = Vaqtinchalik xotiraga nusxalash
+shortcuts_heading = Klaviatura tezkor tugmalari
+shortcuts_text_name = Klaviatura tezkor tugmalari matni
+
+# The main window's own panes.
+mf_toolbar = Asosiy asboblar paneli
+mf_tabs = ZBox ichki oynalari
+tree_heading = Hisoblar va jildlar
+tree_name = Hisob va jild daraxti
+envlist_heading = Xabarlar
+envlist_name = Xabarlar ro‘yxati
+rdr_heading = Xabar
+rdr_name = Xabar o‘quvchisi
+conv_heading_one = Suhbat: 1 ta xabar
+conv_heading_many = Suhbat: {count} ta xabar
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} tadan {completed} tasi bajarildi.
+bulk_cancelling = Bekor qilinmoqda -- joriy xabar tugallanmoqda...
+cache_clear_now = Oflayn xabarlar keshini hozir tozalash... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, himoyalangan
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Ko‘rsatiladigan ism ixtiyoriy -- bu hisobning o‘z ismi sifatida jo‘natish uchun bo‘sh qoldiring.
+acct_note_identity = Provayderingiz bu pochta qutisiga bog‘langan maxsus domenga ega bo‘lsa, e-pochta manzili kirish e-pochtasidan farq qilishi mumkin. Pochta yuqoridagi manzil ostida jo‘natiladi va qabul qilinadi, kirish esa baribir kirish e-pochtasidan foydalanadi. Bu hisob uchun allaqachon saqlangan parolni saqlash uchun parol maydonini bo‘sh qoldiring -- masalan, Gmail ilova parolini almashtirgandan so‘ng, yangisini shu yerga kiriting; aks holda bo‘sh qoldiring.
+acct_note_identities = Bu hisob jo‘natishi va javob berishi mumkin bo‘lgan boshqa manzillar. Ulardan biriga jo‘natilgan xabarga javob berish Kimdan maydonini yuqoridagi o‘rniga o‘sha manzilga standart qiladi.
+acct_note_signature = Bu hisobdan jo‘natilgan har bir yangi xabar, javob va uzatishga "-- " qatoridan pastga qo‘shiladi. Yo‘qligi uchun bo‘sh qoldiring. Imzoni tahrirlash qalin, ro‘yxatlar va havolalar mavjud bo‘lgan formatlangan tahrirlagichni ochadi; yuqoridagi katak esa u bilan birga jo‘natiladigan oddiy matn versiyasini saqlaydi.
+acct_note_junk = Spam sifatida belgilash xabarlarni qaysi haqiqiy jildga ko‘chiradi. "{automatic}" Arxiv va Chiqitdon allaqachon ishlatadigan xuddi shu provayderga mos taxminni ishlatadi; buni faqat o‘sha taxmin noto‘g‘ri bo‘lsa yoki spam jildingiz maxsus nomga ega bo‘lsa belgilang.
+acct_note_disable = Faolsizlantirilgan hisobga qayta yoqilmaguncha hech qachon murojaat qilinmaydi -- IDLE yo‘q, davriy yangilash yo‘q, hech narsa yo‘q. U baribir daraxtda (faolsizlantirilgan) deb belgilangan holda ko‘rinadi, va uning allaqachon yuklab olingan pochtasi oflayn mavjud bo‘lib qoladi. Hisoblar > Hisobni faolsizlantirish yoki hisobning o‘z kontekst menyusi bilan bir xil almashtirgich; bu shunchaki unga yetishning yana bir joyi.
+acct_note_default = Bu hisobning jildlari daraxtda birinchi bo‘lib chiqadi, va yangi xabar yozish oynasida qo‘lda o‘zgartirilmaguncha undan jo‘natishga standart bo‘ladi. Javob yoki uzatish qaysi manzildan foydalanishiga ta’sir qilmaydi -- bu allaqachon javob berilayotgan xabarga ergashadi (yuqoridagi Qo‘shimcha shaxslarga qarang). Har doim aynan bitta asosiy hisob bo‘ladi, shuning uchun buni joriy asosiysida boshqasida belgilamasdan bekor qilish uni o‘zgarishsiz qoldiradi -- asosiylikni unga topshirish uchun boshqa hisobning katagini belgilang.
+acct_note_mute = &Ovozsiz qilish bu hisobning yangi pochta tovushini, ovozli e’lonini va Windows bildirishnomasini, ular boshqacha qanday sozlanganidan qat’i nazar, bloklaydi. Boshqa hisoblarga ta’sir qilmaydi, va baribir Sozlamalar > Tovush va bildirishnomalardagi asosiy tugmalarga bog‘liq (umuman tovushlar va ish stoli bildirishnomalari).
+wiz_note_app_password = Agar ZBox uchun allaqachon yaratilgan ilova paroliga ega bo‘lsangiz, davom etish uchun Keyingi tugmasini bosing.
+wiz_note_login = Kirish ma’lumotlari.\nAgar kirish e-pochtangiz yuqoridagi manzildan farq qilsa, masalan provayder hisobingiz login@example.net, lekin siz you@example.org sifatida jo‘natish va qabul qilishni xohlasangiz, kirish e-pochtasini shu yerga kiriting. Maxsus jo‘natish manzilini keyin Hisob va identifikatorlar sozlamalarida belgilashingiz mumkin.
+wiz_note_servers = Domen tanilgan joyda oldindan to‘ldirilgan server sozlamalari. Farq qilishi kerak bo‘lgan har qanday narsani tahrirlang.
+wiz_preset_none = Bu domen uchun tayyor sozlama topilmadi. Provayderingizning server sozlamalarini qo‘lda kiriting; provayderingizning yordam sahifalari ularni sanab o‘tadi.
+ab_note_groups = Barcha a’zolarini bir vaqtda to‘ldirish uchun yozish oynasining Kimga, Cc yoki Bcc maydoniga guruh nomini yozing.
+cache_note_intro = Bular faqat ZBoxning mahalliy nusxalarini olib tashlaydi. Hech narsa hech qanday pochta serveridan o‘chirilmaydi, va olib tashlangan xabar uni keyingi marta ochganingizda qayta yuklab olinadi.
+cache_note_age = Avtomatik tozalash kuniga bir marta, ZBoxda o‘n daqiqa klaviatura faoliyati bo‘lmagan va hech qanday xabar ochiq bo‘lmaganda ishga tushadi. U hali hisobingizda bo‘lgan xabarlar ham hisobga olingan holda, har bir xabarning o‘z sanasiga qarab ishlaydi.
+filt_note_intro = Qoidalar Kimdan, Kimga va Mavzuni tekshirib, yuqoridan pastga tartibda ishga tushadi. Bu hisobning Kiruvchi qutisiga yangi pochta yetib kelganda avtomatik qo‘llanadi; allaqachon jildda turgan xabarlarga qo‘llash uchun quyidagi Hozir ishga tushirishdan foydalaning.
+filt_note_run_now = Yuqoridagi har bir yoqilgan qoidani tartib bo‘yicha tanlangan jilddagi har bir xabarga qo‘llaydi -- avval o‘zgarishlaringizni saqlaydi, xuddi OK kabi.
+mp_note_intro = Bu hisoblar boshqa kompyuterda sozlangan. Ularning saqlangan parollarini bu yerda ochish uchun bosh parolni kiriting. Sizdan bu kompyuterda faqat bir marta so‘raladi.\n\nUsiz, har bir hisobga qayta pochta serveriga kirish kerak bo‘ladi.
+priv_note_remote = Xabar internetdan yuklaydigan rasmlar, uslub jadvallari va shriftlar jo‘natuvchiga siz uni qachon va qayerdan ochganingizni bildiradi. Bu yoqilganda, ularning hech biri yuklanmaydi: xabar ustida nima bloklangani haqida bildirishnoma paydo bo‘ladi, va Ctrl+Shift+I uni shu bitta xabar uchun yuklaydi. Xabarning o‘ziga biriktirilgan rasmlar har doim ko‘rsatiladi. Skriptlar va ichki freymlar har ikkala holatda ham olib tashlanadi va hech qachon yuklanmaydi.
+priv_note_blocklist = Bu ikkinchi qatlam. U xabarning masofadagi kontentini yuklaganingizda yoki jo‘natuvchiga ruxsat berganingizda ahamiyatli bo‘ladi: rasmlar yuklanadi, lekin ma’lum kuzatuv yoki reklama domenidan kelgan hech narsa baribir yuklanmaydi. Ro‘yxat ommaviy reklama va kuzatuvchi ro‘yxatlaridan yuklab olinadi va birlashtiriladi; yangilash bir necha soniya oladi va orqa fonda ishlaydi.
+priv_note_junk = Taxmin qilish yo‘q. Spam sifatida belgilash xabar pochta ro‘yxati orqali kelmagan bo‘lsa, jo‘natuvchini quyidagi bloklangan ro‘yxatga qo‘shadi. Spam emas deb belgilash jo‘natuvchini hech-qachon-spam-emas ro‘yxatiga qo‘shadi va o‘sha xabar boshqa hech qachon tekshirilmaydi. Bloklangan jo‘natuvchidan kelgan yangi xabar ro‘yxatda Bloklangan jo‘natuvchi deb belgilanadi; ma’lum firibgarlik yoki zararli sayt havolasiga ega bo‘lgan xabar Ehtimoliy firibgarlik deb belgilanadi. Pochta provayderingizning o‘z spam filtri avvalgidek ishlashda davom etadi.
+priv_status_phishing_updating = Firibgarlik ro‘yxati: orqa fonda yangilanmoqda. Natijani ko‘rish uchun bu oynani qayta oching.
+priv_status_updating = Orqa fonda yangilanmoqda. Natijani ko‘rish uchun bu oynani qayta oching.
+rel_note_intro = "{subject}" ga Message-ID/References sarlavhalari orqali aloqador xabarlar, bu hisobdagi har bir jild bo‘ylab.
+srch_note_intro = Quyida kiritgan matn uchun Kimdan, Mavzu va Tanani qidiring. Quyida toraytirmasangiz, har bir hisob va jildni qidiradi.
+sig_note_plain = Oddiy matn muqobilini bo‘sh qoldiring, va Saqlash bosganingizda u formatlangan imzodan yoziladi.
+unified_note_intro = Har bir hisob bo‘ylab qaysi jildlarni birlashtirishni tanlang. Belgilangan har biri barcha hisoblaringizdan o‘sha jildni birlashtiradigan daraxtdagi yagona yozuvga aylanadi.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox haqida
+title_account_settings = Hisob va identifikatorlar sozlamalari: {name}
+title_new_account = Yangi hisob
+title_address_book = Manzillar daftari
+title_members = A’zolar: {name}
+ab_group_name_prompt = Guruh nomi:
+title_new_group = Yangi guruh
+title_cache_cleanup = Kesh tozalash sozlamalari
+cache_age_prompt = Shuncha kundan eski keshlangan xabarlarni avtomatik olib tashlash:
+title_automatic_cleanup = Avtomatik tozalash
+comp_link_prompt = Havola manzili:
+title_insert_link = Havola qo‘shish
+title_composer_diagnostics = Yozish diagnostikasi
+title_formatted_preview = Formatlangan ko‘rib chiqish
+title_license_agreement = ZBox litsenziya shartnomasi
+title_message_filters = Xabar filterlari: {account}
+title_master_password_required = Bosh parol talab qilinadi
+title_privacy_dialog = Maxfiylik va kontentni bloklash
+title_privacy = Maxfiylik
+title_settings = Sozlamalar
+title_unified_folders = Birlashtirilgan jildlar
+title_zbox_locked = ZBox qulflangan
+title_message_view = Xabar ko‘rinishi
+title_remote_content = Masofadagi kontent
+title_refresh = Yangilash
+title_refresh_all = Hammasini yangilash
+mv_choose_folder = Ilovani saqlash uchun jildni tanlang
+title_thread = Yozishma
+title_inbox = Kiruvchi xabarlar
+title_compose = Yozish
+title_watch_thread = Yozishmani kuzatish
+title_ignore_thread = Yozishmani e’tiborsiz qoldirish
+title_edit_signature = Imzoni tahrirlash
+title_account = Hisob
+mf_folder_name_prompt = Jild nomi:
+mf_new_name_prompt = Yangi nom:
+title_refresh_all_accounts = Barcha hisoblarni yangilash
+title_sender = Jo‘natuvchi
+title_new_mail = Yangi pochta
+mf_export_dialog_title = Barcha {count} ta hisob va sozlamalarni eksport qilish
+mf_related_tab = Aloqador: {subject}
+title_hotkeys_diagnostic = Tezkor tugmalar diagnostikasi
+set_choose_attachment_dir = Ilova saqlash jildini tanlang
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox qulflangan. Uni ochish uchun quyidagi usullardan birini ishlating. Bekor qilish hech qanday hisobni ochmasdan ZBoxni yopadi.
+unl_note_foreign_passkey = Bu jild bilan saqlangan passkey boshqa kompyuterga tegishli, shuning uchun bu yerda ishlatib bo‘lmaydi. Xavfsizlik kaliti yoki bosh parol bilan oching, so‘ng bu kompyuterda passkey sozlash uchun Sozlamalar, Maxfiylik va xavfsizlik, Ochish usullaridan foydalaning.
+unl_note_methods = Ilova qulfi yoqilganda, bosh paroldan tashqari, bularning har qandayi ZBoxni ochadi. Passkey bu kompyuterda Windows Hello'dan foydalanadi; xavfsizlik kaliti — USB yoki NFC orqali FIDO2 kaliti bo‘lib, ulaganingiz har qanday kompyuterda ishlaydi.
+unl_note_not_encryption = Bular ilovani ochadi. Ular hech narsani shifrlamaydi: bosh parol baribir bu jild ilgari ishlatilmagan kompyuterda saqlangan hisob parollarini ocha oladigan yagona narsa. U avval belgilanishi kerak, va u belgilanmaguncha ularning hech birini qo‘shib bo‘lmaydi.
+unl_add_passkey_unavailable = &Passkey qo‘shish (mavjud emas)
+unl_add_key_unavailable = &Xavfsizlik kaliti qo‘shish (mavjud emas)
+unl_reassign_unavailable = &Passkeyni shu kompyuterga qayta tayinlash (mavjud emas)
+unl_status_cancelled_passkey = Passkey bekor qilindi. ZBox hali ham qulflangan.
+unl_status_cancelled_key = Xavfsizlik kaliti bekor qilindi. ZBox hali ham qulflangan.
+unl_status_enter_password = Bosh parolni kiriting.
+unl_status_no_master = Bosh parol belgilanmagan, shuning uchun passkey yoki xavfsizlik kalitini hali qo‘shib bo‘lmaydi. Sozlamalar, Maxfiylik va xavfsizlikdagi Bosh parol tugmasi bilan birini belgilang, so‘ng bu yerga qayting. Bosh parol saqlangan hisob parollaringizni boshqa kompyuterda ochadigan narsa; passkey esa faqat ilovani shu kompyuterda ochadi, shuning uchun u yolg‘iz tura olmaydi.
+unl_status_unsupported = Bu kompyuterning Windows'i passkey yoki xavfsizlik kalitlarini qo‘llab-quvvatlamaydi, shuning uchun bu yerda faqat bosh parol ZBoxni ochishi mumkin.
+unl_status_foreign_one = 1 ta passkey boshqa kompyuterga tegishli va bu yerda ZBoxni ocha olmaydi. Qayta tayinlash ularni shu kompyuterda yasalgan bittasi bilan almashtiradi.
+unl_status_foreign_many = {count} ta passkey boshqa kompyuterga tegishli va bu yerda ZBoxni ocha olmaydi. Qayta tayinlash ularni shu kompyuterda yasalgan bittasi bilan almashtiradi.
+unl_status_foreign_one_no_hello = 1 ta passkey boshqa kompyuterga tegishli va bu yerda ZBoxni ocha olmaydi. Windows Hello bu yerda sozlanmagan, shuning uchun ularni bu kompyuterda almashtirib bo‘lmaydi; Olib tashlash ularni unutadi.
+unl_status_foreign_many_no_hello = {count} ta passkey boshqa kompyuterga tegishli va bu yerda ZBoxni ocha olmaydi. Windows Hello bu yerda sozlanmagan, shuning uchun ularni bu kompyuterda almashtirib bo‘lmaydi; Olib tashlash ularni unutadi.
+unl_status_no_hello = Windows Hello bu kompyuterda sozlanmagan, shuning uchun bu yerda passkey qo‘shib bo‘lmaydi. Xavfsizlik kaliti baribir mumkin.
+unl_status_none_registered = Hali hech qanday ochish usuli ro‘yxatdan o‘tkazilmagan.
+unl_status_add_cancelled_passkey = Passkey qo‘shish bekor qilindi.
+unl_status_add_cancelled_key = Xavfsizlik kaliti qo‘shish bekor qilindi.
+unl_status_added = Qo‘shildi: {name}.
+unl_status_reassign_cancelled = Qayta tayinlash bekor qilindi. Hech narsa o‘zgartirilmadi.
+unl_status_reassigned = {name} qo‘shildi va boshqa kompyuterlardan {count} tasi unutildi.
+unl_status_test_cancelled = Sinov bekor qilindi.
+unl_status_removed = Olib tashlandi.
+unl_remove_warning_last = {name} olib tashlansinmi?\n\nU ro‘yxatdan o‘tkazilgan yagona ochish usuli va bosh parol belgilanmagan, shuning uchun ilova qulfi yoqilganda ZBoxni ochadigan hech narsa qolmaydi. Sizni qulflab qo‘yish o‘rniga qulf o‘tkazib yuboriladi, lekin ZBox shunda qulflanmagan holda ochiladi.
+unl_remove_warning = {name} olib tashlansinmi? ZBox uni boshqa qabul qilmaydi.
+ab_col_email = E-pochta
+ab_col_name = Ism
+ab_col_phone = Telefon
+ab_no_contacts = Hali kontaktlar yo‘q.
+acct_auto_check = Yangi xabarlarni avtomatik tekshirish
+acct_note_auto_check = O‘chirilgan: ZBox bu hisobga hech qachon o‘zicha murojaat qilmaydi -- yangi pochta kuzatuvi yo‘q, vaqtli yangilash yo‘q, orqa fon yuklab olishlari yo‘q -- shuning uchun ishonchsiz server boshqa hisoblarni sekinlashtira olmaydi. Uning yuklab olingan pochtasi baribir ochiladi, va Yangilash (F5), jo‘natish va o‘chirish baribir serverga yetib boradi. Asboblar menyusidagi yoki hisobning kontekst menyusidagi Avtomatik tekshirishni to‘xtatish bilan bir xil.
+bl_day_ago = 1 kun oldin
+bl_days_ago = {days} kun oldin
+bl_label_blocklists = Bloklash ro‘yxati
+bl_label_phishing = Firibgarlik ro‘yxati
+bl_last_failed = Oxirgi urinish muvaffaqiyatsiz bo‘ldi: %s
+bl_not_downloaded = Hali yuklab olinmagan.
+bl_save_failed = %s yuklab olindi, lekin saqlab bo‘lmadi: %s
+bl_seed_only = O‘rnatilgan ro‘yxatdan %s ta domen. Hali internetdan yangilanmagan.
+bl_some_failed = Ba’zi manbalar muvaffaqiyatsiz bo‘ldi: %s
+bl_some_unreachable = Ba’zi manbalarga ulanib bo‘lmadi: %s
+bl_status_line = %s ta domen. Oxirgi yangilanish %s.
+bl_up_to_date = %s allaqachon yangilangan.
+bl_update_failed = %s ni yangilab bo‘lmadi: %s
+bl_updated = %s yangilandi: %s ta domen.
+cc_age_choice = Har bir xabar keshi %s eski
+cc_auto_button = Avtomatik tozalash: %s dan eski keshlangan xabarlar...
+comp_btn_discard = &Tashlab yuborish
+comp_btn_keep_editing = &Tahrirlashda davom etish
+comp_btn_save_draft = &Qoralamani saqlash
+comp_no_account = Hisob sozlanmagan
+comp_saving_draft = Qoralama saqlanmoqda…
+comp_this_message = bu xabar
+comp_unsent_save_q = Yopishdan oldin %s qoralama sifatida saqlansinmi?
+comp_unsent_tray_q = ZBox bildirishnomalar sohasiga o‘tishdan oldin %s qoralama sifatida saqlansinmi?
+doc_unreadable = Hujjat faylini o‘qib bo‘lmadi:
+envlist_all_disabled = Barcha hisoblar faolsizlantirilgan.
+envlist_col_date = Sana
+envlist_col_from = Kimdan
+envlist_col_status = Holat
+envlist_col_subject = Mavzu
+envlist_collapsed = Yig‘ilgan (%d)
+envlist_empty = Bu jildda xabarlar yo‘q.
+envlist_loading = Xabarlar yuklanmoqda...
+envlist_no_accounts = Hali hisoblar sozlanmagan.
+envlist_no_ignored = Bu jildda e’tiborsiz qoldirilgan yozishmalar yo‘q.
+envlist_no_watched = Bu jildda kuzatilayotgan yozishmalar yo‘q.
+envlist_select_folder = Xabarlarni yuklash uchun hisob yoki jildni tanlang.
+eula_link_0 = Himalayaning litsenziya sahifasini brauzeringizda ochish
+eula_link_1 = StevenBlack hosts'ning litsenziya sahifasini brauzeringizda ochish
+eula_link_2 = EasyList/EasyPrivacy'ning litsenziya sahifasini brauzeringizda ochish
+eula_link_3 = Phishing.Database'ning litsenziya sahifasini brauzeringizda ochish
+eula_read_note = Uchinchi tomon bo‘limlari bilan birga quyidagi litsenziyani o‘qing. Keyingi mavjud bo‘lishidan oldin Roziman belgisini qo‘yishingiz kerak. Rozi emasman ZBoxni ishga tushirmasdan yopadi va bu ishga tushirish hozirgacha yaratgan narsalarni olib tashlaydi.
+eula_unreadable = Litsenziya faylini o‘qib bo‘lmadi:\n%s
+filters_title = Filterlarni ishga tushirish
+flag_title = Xabarga yulduz qo‘yish
+folder_type_archive = Arxiv
+folder_type_drafts = Qoralamalar
+folder_type_inbox = Kiruvchi xabarlar
+folder_type_junk = Spam
+folder_type_sent = Jo‘natilgan
+folder_type_trash = Chiqitdon
+mime_application_json = JSON fayli
+mime_application_msword = Word hujjati
+mime_application_octet_stream = Ikkilik fayl
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel jadvali
+mime_application_vnd_ms_powerpoint = PowerPoint taqdimoti
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint taqdimoti
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel jadvali
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word hujjati
+mime_application_xml = XML fayli
+mime_application_zip = ZIP arxivi
+mime_audio_mpeg = MP3 audio
+mime_audio_ogg = OGG audio
+mime_audio_wav = WAV audio
+mime_image_bmp = BMP rasmi
+mime_image_gif = GIF rasmi
+mime_image_jpeg = JPEG rasmi
+mime_image_png = PNG rasmi
+mime_image_svg_xml = SVG rasmi
+mime_image_webp = WebP rasmi
+mime_text_csv = CSV fayli
+mime_text_html = HTML fayli
+mime_text_plain = Matn fayli
+mime_video_mp4 = MP4 video
+mime_video_x_msvideo = AVI video
+move_title_junk = Spam sifatida belgilash
+move_title_move_to = Ko‘chirish
+move_title_not_junk = Spam emas deb belgilash
+mp_explain_set = Bosh parol belgilangan. U shu ZBox jildiga boshqa kompyuterda saqlangan hisob parollarini ochishga imkon beradi.\n\nUni olib tashlash uchun ikkala yangi parol katagini bo‘sh qoldirib OK ni bosing. Uni olib tashlash bu kompyuterga ta’sir qilmaydi, lekin jild har bir hisobga qayta kirmasdan boshqa hech qanday kompyuterda ishlamaydi.
+mp_explain_unset = Bosh parol belgilanmagan, shuning uchun saqlangan hisob parollari faqat shu kompyuter va shu Windows hisobida o‘qiladi. Jildni boshqa joyga nusxalasangiz, har bir hisobga qayta pochta serveriga kirish kerak bo‘ladi.\n\nBirini belgilang, va ZBox uni har yangi kompyuterda bir marta so‘raydi, so‘ng o‘shandan buyon u yerda odatdagidek ochiladi. Bu kompyuter qayta so‘ramaydi.\n\nUni yozib, xavfsiz joyda saqlang. U hech qayerda saqlanmaydi va tiklab bo‘lmaydi: uni unutsangiz, har bir hisobga qayta pochta serveriga kirish kerak bo‘ladi.
+mp_label_confirm = &Yangi bosh parolni tasdiqlash:
+mp_label_current = &Joriy bosh parol:
+mp_label_master = &Bosh parol:
+mp_label_new = &Yangi bosh parol:
+mp_name_confirm = Yangi bosh parolni tasdiqlash
+mp_name_current = Joriy bosh parol
+mp_name_master = Bosh parol
+mp_name_new = Yangi bosh parol
+mp_prompt_existing = Saqlangan hisob parollaringiz faqat shu kompyuterda himoyalangan. ZBoxni boshqa joyga ko‘chirsangiz ham ochilishi uchun bosh parol belgilang.
+mp_prompt_first_run = ZBox hisob parollaringizni saqlamoqchi. ZBoxni boshqa kompyuterga ko‘chirsangiz ham ular ochilib qolishi uchun hozir bosh parol belgilang.
+mp_prompt_new_account = ZBox bu hisobning parolini saqlamoqchi. ZBoxni boshqa kompyuterga ko‘chirsangiz ham hisob ochilib qolishi uchun avval bosh parol belgilang.
+mp_removed_done = Bosh parol olib tashlandi. Saqlangan parollar endi faqat shu kompyuter va shu Windows hisobida ishlaydi.
+mp_set_done = Bosh parol belgilandi. ZBox bu jild ochilgan har yangi kompyuterda uni bir marta so‘raydi, so‘ng u yerda keyin odatdagidek ochiladi.
+mv_body_title = Xabar tanasi
+mv_col_format = Format
+mv_col_name = Nomi
+mv_col_size = Hajmi
+mv_format_unknown = Noma’lum
+mv_size_unknown = Hajmi noma’lum
+na_account_settings = Hisob va identifikatorlar sozlamalari
+na_disable_account = Hisobni faolsizlantirish
+na_edit_signature = Imzoni tahrirlash
+na_message_filters = Xabar filterlari
+na_mute_account = Hisobni ovozsiz qilish
+na_pause_auto_check = Avtomatik tekshirishni to‘xtatish
+na_remove_account = Hisobni olib tashlash
+na_set_default = Asosiy hisob sifatida belgilash
+no_offline_copy = %s ning oflayn nusxasi yo‘q. Uni onlaynda oching, yoki Fayl, Oflayn, Hozir sinxronlashdan foydalaning.
+perm_delete_confirm = {msg} Bu Chiqitdon jildini chetlab o‘tadi va qaytarib bo‘lmaydi.
+perm_delete_many = {count} ta xabar butunlay o‘chirilsinmi?
+perm_delete_one = {count} ta xabar butunlay o‘chirilsinmi?
+preset_note_apple = Apple ilovaga xos parol talab qiladi.
+preset_note_fastmail = Fastmail ilova paroli talab qiladi.
+preset_note_google = Google oddiy parolingiz emas, ilova paroli yoki OAuth2 talab qiladi.
+preset_note_proton = ProtonMail mahalliy ishlayotgan ProtonMail Bridge ilovasini talab qiladi.
+preset_note_yahoo = Yahoo ilova paroli talab qiladi.
+priv_phishing_not_loaded = Firibgarlik ro‘yxati: hali yuklanmagan. Bu qoidalar yoqilgan va ZBox onlayn bo‘lgan birinchi safar yuklab olinadi.
+priv_phishing_prefix = Firibgarlik ro‘yxati:
+priv_status_unavailable = Bloklash ro‘yxati holati mavjud emas.
+rdr_load_failed = Xabarni yuklab bo‘lmadi.\n\n{message}
+rdr_loading = Xabar yuklanmoqda...
+rdr_select_message = Uni bu yerda o‘qish uchun xabarni tanlang.
+set_autosave_off = O‘chirilgan — qo‘lda saqlash uchun Qoralamani saqlash (Ctrl+S) dan foydalaning
+set_autosave_seconds = Har {seconds} soniyada
+set_no_unlock = Bu yerda ishlatiladigan passkey yoki xavfsizlik kaliti yo‘q
+set_purge_days = {days} kundan so‘ng
+set_purge_off = O‘chirilgan — Chiqitdon va Spam hech qachon avtomatik tozalanmaydi
+set_purge_one_day = 1 kundan so‘ng
+set_rt_bundled_installed = Qo‘shilgan runtime: o‘rnatilgan.
+set_rt_bundled_many = Qo‘shilgan runtime: %s o‘rnatilgan.
+set_rt_bundled_none = Qo‘shilgan runtime: hech biri o‘rnatilmagan, shuning uchun ZBox tizim bo‘ylab runtime'dan foydalanadi.
+set_rt_bundled_unknown = Qo‘shilgan runtime: aniqlab bo‘lmadi.
+set_rt_bundled_ver = Qo‘shilgan runtime: %s versiyasi o‘rnatilgan.
+set_rt_system_unknown = Tizim bo‘ylab runtime: versiyasini aniqlab bo‘lmadi.
+set_rt_system_ver = Tizim bo‘ylab runtime: %s versiyasi.
+set_unlock_many = Bu yerda %d ta ochish usuli ishlatiladi
+set_unlock_unreadable = Ochish usullarini o‘qib bo‘lmadi
+sig_tab_formatted = Formatlangan
+sig_tab_source = HTML manbasi
+srch_all_accounts = Barcha hisoblar
+srch_all_folders = Barcha jildlar
+tab_mail = Pochta
+tab_new_message = Yangi xabar
+tab_saved_message = Saqlangan xabar
+title_copy_to_err = Nusxa olish
+title_mark_message = Xabarni belgilash
+title_unsent_message = Jo‘natilmagan xabar
+tree_unified_root = Birlashtirilgan jildlar
+unlock_kind_passkey = Passkey (Windows Hello)
+unlock_kind_security_key = Xavfsizlik kaliti
+unlock_prompt_message = Windows tasdiqlashingizni so‘ramoqda. Uning so‘rovini Windows Hello, PIN kodingiz yoki xavfsizlik kalitingiz bilan javoblang. Windows tugatgach bu oyna o‘zi yopiladi.
+unlock_prompt_title = Windows xavfsizligi
+unlock_registering = Bu ochish usuli ro‘yxatdan o‘tkazilmoqda
+unlock_the_passkey = Passkey
+unlock_the_security_key = Xavfsizlik kaliti
+wildcard_eml = E-pochta fayllari (*.eml)|*.eml|Barcha fayllar (*.*)|*.*
+wildcard_export = ZBox eksporti (*.json)|*.json
+wiz_not_supported = QO‘LLAB-QUVVATLANMAYDI: {name}. {note} Bu hisobni ZBoxga qo‘shib bo‘lmaydi.
+stock_apply = &Qo‘llash
+stock_cancel = Bekor qilish
+stock_close = &Yopish
+stock_help = &Yordam
+stock_no = &Yo‘q
+stock_ok = OK
+stock_yes = &Ha
+wiz_btn_back = &< Orqaga
+wiz_btn_finish = &Tugatish
+wiz_btn_next = &Keyingi >
+acct_unsaved_q = Bu hisobga o‘zgarishlar saqlansinmi?
+btn_save = &Saqlash
+spell_add_to_dictionary = &Lug‘atga qo‘shish
+spell_no_suggestions = Takliflar yo‘q
+title_signature_for = Imzo: {account}
+title_mark_folder_read = Jildni o‘qilgan deb belgilash
+title_update_available = ZBox yangilanishi
+update_available = ZBox {new} mavjud. Sizda {current} bor.
+upd_notes_label = Reliz qaydlari:
+upd_no_notes = Reliz qaydlari yo'q.
+upd_notes_name = Reliz qaydlari
+upd_update_now = Ha, hozir yangilash
+upd_remind_later = Keyinroq eslatish
+title_update_download = ZBox yangilanishi yuklab olinmoqda
+upd_downloading = ZBox {version} yuklab olinmoqda...
+upd_progress_name = Yuklab olish jarayoni
+upd_cancel = Bekor qilish
+upd_cancelling = Bekor qilinmoqda...
+set_updates_label = Yangilanishlar:
+set_update_auto = Yangilanishlarni avtomatik tekshirish
+set_update_mode_label = Yangilanish topilganda:
+set_update_ask = Mendan so'rash
+set_update_silent = So'ramasdan yuklab olish va o'rnatish
+set_update_note = ZBox GitHub'da yangiroq relizni kuniga ko'pi bilan bir marta, faqat bo'sh turganda tekshiradi va versiya raqamidan boshqa hech narsa yubormaydi. Mendan so'rash yangi versiya va uning reliz qaydlarini Ha, hozir yangilash va Keyinroq eslatish bilan ko'rsatadi. So'ramasdan yuklab olish va o'rnatish yangilanishni bo'sh vaqtda yuklab oladi va keyingi safar ZBox'dan to'liq chiqqaningizda o'rnatadi, ishlayotganingizda hech qachon. Yangilanish faqat ZBox'ning o'z dastur fayllarini almashtiradi: hisoblaringiz, parollaringiz, sozlamalaringiz, pochtangiz, jurnallaringiz, ovoz mavzulari va siz qo'shgan har qanday til hech qachon o'zgartirilmaydi, oldingi versiya esa saqlanadi va yangisi ishga tushmasa, o'zi tiklanadi. Yordam, Yangilanishlar menyusida qo'lda yangilash uchun Yangilanishlarni hozir tekshirish va relizlar sahifasi ham bor.
+set_update_check_now = Hozir tekshirish
+mv_attachment_button = {filename} ({format})
+att_open = Ochish
+att_save = Saqlash...
+att_save_all = Barcha biriktirmalarni saqlash
+title_save_attachment = Biriktirmani saqlash
+title_full_headers = Barcha sarlavhalar
+hdr_copy_all = Hammasini nusxalash
+acct_identity_own_signature = Oʻz imzosidan foydalanish
+acct_identity_own_reply_to = Oʻz javob manzilidan foydalanish
+acct_identity_reply_to = Javob manzili
+acct_identity_always_cc = Bu manzillarga doim nusxa (Cc) yuborish
+acct_identity_cc = Nusxa (Cc) manzillari
+acct_identity_always_bcc = Bu manzillarga doim yashirin nusxa (Bcc) yuborish
+acct_identity_bcc = Yashirin nusxa (Bcc) manzillari
+acct_identity_own_folders = Oʻz Qoralamalar va Yuborilganlar jildlaridan foydalanish
+acct_identity_drafts = Qoralamalar jildi
+acct_identity_sent = Yuborilganlar jildi
+acct_identity_own_smtp = Oʻz chiquvchi serveridan foydalanish
+acct_identity_smtp_login = Chiquvchi server uchun login
+acct_identity_smtp_password = Chiquvchi server uchun parol
+acct_identity_test_smtp = Chiquvchi serverni tekshirish
+acct_identity_note_smtp = Bu identifikatorning e-pochta manzili bilan kirish uchun loginni boʻsh qoldiring. Yuborilgan nusxalar ushbu hisobning Yuborilganlar jildiga yoki bu identifikatorning oʻz Yuborilganlar jildiga (agar boʻlsa) tushadi.
+identity_field_required = {field} maydonini toʻldiring yoki uning belgisini olib tashlang.
+identity_field_invalid = {field} ichida notoʻgʻri manzil bor.
+identity_folders_required = Qoralamalar jildi, Yuborilganlar jildi yoki ikkalasini tanlang yoki ularning belgisini olib tashlang.
+identity_password_required = Chiquvchi server parolini kiriting.
+identity_smtp_testing = Chiquvchi server tekshirilmoqda.
+identity_smtp_ok = Chiquvchi server kirishni qabul qildi.
+identity_smtp_failed = Chiquvchi serverni tekshirib boʻlmadi.\n\n{error}
+set_bare_keys_note_move = M va C tanlangan xabarlar uchun jildlar roʻyxatli Koʻchirish va Nusxalash menyularini ochadi, Shift+M esa xabarlarni u yerga koʻchirish uchun jild nomining bir qismini yozadigan maydonni ochadi. Buni oʻchirsangiz, M va C ham birinchi harf boʻyicha oʻtishga qaytadi.
+folder_search_filter = Jild nomida bor
+folder_search_list = Mos jildlar
+folder_search_no_match = Bu nomga mos jild yoʻq.
+wiz_signin_method = Kirish usuli
+wiz_method_password = Parol
+wiz_method_microsoft = Microsoft hisobi (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft orqali kirish. Outlook.com, Hotmail, Live va Microsoft 365 server sozlamalari toʻldirildi.
+wiz_welcome_notice = Gmail. Oddiy Google parolingiz rad etiladi, lekin ilova paroli ishlaydi. Avval ikki bosqichli tekshiruv yoqilgan bo‘lishi kerak. Quyidagi tugma Google'ning yo‘riqnomasini ochadi.\n\nOutlook.com, Hotmail, Live va Microsoft 365. Bu hisoblar Microsoft hisobingiz bilan kiradi. Kirish sahifasida Microsoft hisobini tanlang, soʻng brauzerda yoki kod bilan kiring.\n\nBoshqa provayderlar. Odatda oddiy parol yoki ilova paroli ishlaydi, va provayderingizning yordam sahifalari server sozlamalarini sanab o‘tadi.
+preset_note_outlook = Outlook.com, Hotmail, Live va MSN hisoblari Microsoft hisobi bilan kiradi. Kirish sahifasida kirish usuli sifatida Microsoft hisobini tanlang.
+ms_status_name = Microsoft orqali kirish holati
+ms_browser_button = Brauzerda kirish
+ms_code_button = Kod bilan kirish
+ms_copy_code = Kodni nusxalash
+ms_open_page = Kirish sahifasini ochish
+ms_stop = Kutishni toʻxtatish
+ms_not_configured = ZBoxning ushbu nusxasida Microsoft orqali kirish sozlanmagan.
+ms_not_signed_in = Hali kirilmagan. Brauzerda yoki istalgan qurilmada kod bilan kiring.
+ms_signed_in = {address} sifatida kirildi.
+ms_signed_in_plain = Kirildi.
+ms_needs_sign_in = Bu hisob Microsoftga qayta kirishi kerak. Brauzerda yoki istalgan qurilmada kod bilan kiring.
+ms_reason_cancelled = Kirish toʻxtatildi.
+ms_reason_timeout = Javob oʻz vaqtida kelmadi.
+ms_reason_denied = Kirishga ruxsat berilmadi.
+ms_reason_expired = Kod muddati tugadi. Yangisini soʻrang.
+ms_reason_network = Microsoftga ulanib boʻlmadi. Ulanishni tekshirib, qayta urining.
+ms_reason_server = Microsoft javobi: {detail}
+ms_page_done = Kirildi. Bu sahifani yopib, ZBoxga qaytishingiz mumkin.
+ms_page_failed = Kirish yakunlanmadi. Tafsilotlar uchun ZBoxga qayting.
+ms_browser_waiting = Brauzeringiz Microsoftning kirish sahifasini koʻrsatmoqda. Kirishni oʻsha yerda yakunlang, soʻng ZBoxga qayting.
+ms_code_asking = Microsoftdan kirish kodi soʻralmoqda...
+ms_code_waiting = Istalgan qurilmada {address} manzilini oching va {code} kodini kiriting. Kirishni yakunlamaguningizcha ZBox shu yerda kutadi.
+ms_failed = Kirish yakunlanmadi. {reason}
+ms_code_copied = Kod nusxalandi.
+offline_inbox_only = Oflayn foydalanish uchun faqat Kiruvchilar va Arxiv saqlanadi. {folder} jildini ochish uchun internetga ulaning.
+block_sender_rule_name = Bloklash: {sender}
+title_block_sender = Bu yuboruvchini bloklash
+title_unblock_sender = Bu yuboruvchini blokdan chiqarish
+set_clear_inbox_cache = Xabar Kiruvchilardan chiqqanda uning keshini tozalash
+set_clear_inbox_cache_note = Yoqilganda, xabar Kiruvchilardan chiqishi bilanoq uning oflayn nusxasi va saqlangan matni oʻchiriladi, hatto u boshqa joyda, masalan telefoningizda, oʻchirilgan yoki koʻchirilgan boʻlsa ham, shuning uchun u endi yoʻq joyda hech qachon koʻrinmaydi. Bu fayllarni faqat Kiruvchilar saqlaydi; boshqa har bir jild doim serverdan oʻqiladi.
+empty_trash_all_confirm = Barcha hisoblarning Savatidagi barcha xabarlar butunlay oʻchirilsinmi?\n\nBuni ortga qaytarib boʻlmaydi.
+
+[errors]
+language_restart_failed = ZBox o‘zini qayta ishga tushira olmadi:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} uchun pochta mijozini ochib bo‘lmadi.
+
+wizard_test_failed = Ulanish muvaffaqiyatsiz tugadi:\n\n{error}
+
+contacts_import_unreadable = O‘sha faylni o‘qib bo‘lmadi.\n\n{error}
+contacts_export_unwritable = O‘sha faylga yozib bo‘lmadi.\n\n{error}
+
+attach_unreadable = {path} ilovasini o‘qib bo‘lmadi:\n{error}
+send_failed = Xabarni jo‘natib bo‘lmadi.\n\n{error}
+draft_attach_unreadable = {path} ilovasini o‘qib bo‘lmadi:\n{error}\n\nQoralama saqlanmadi.
+draft_save_failed = Qoralamani saqlab bo‘lmadi.\n\n{error}
+
+clipboard_unavailable = Vaqtinchalik xotirani ochib bo‘lmadi.
+open_link_failed = Brauzeringizni bu manzil uchun ochib bo‘lmadi:\n{url}
+
+master_password_mismatch = Ikkita yangi bosh parol katakchasi bir-biriga mos kelmadi.
+master_password_required = Bosh parolni kiriting, yoki Bekor qilish tugmasini bosing.
+master_password_not_set = Bosh parolni belgilab bo‘lmadi: {error}
+master_password_not_here = Bosh parolni bu yerdan o‘zgartirib bo‘lmaydi.
+
+attachment_save_failed = Ilovani saqlab bo‘lmadi.\n\n{error}
+attachments_save_failed = Ilovalarni saqlab bo‘lmadi.\n\n{error}
+print_failed = Xabarni chop qilib bo‘lmadi. Printer moslanganligini tekshiring.
+print_preview_failed = Chop qilishni ko‘rishni ochib bo‘lmadi. Printer moslanganligini tekshiring.
+
+related_search_failed = Aloqador xabarlarni qidirib bo‘lmadi.\n\n{error}
+search_failed = Qidiruv muvaffaqiyatsiz tugadi.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox o‘zining sozlamalar jildini topa olmadi, shuning uchun ochish usullarini bu yerda boshqarib bo‘lmaydi.
+shortcut_no_folder = ZBox o‘z jildini aniqlay olmadi, shuning uchun bu yerdan yorliq yaratib bo‘lmaydi.
+shortcut_failed_settings = Ish stoli yorlig‘ini yaratib bo‘lmadi:\n\n{error}
+
+unlock_method_failed = {what} ishlamadi.\n\n{error}
+unlock_check_failed = Bosh parolni tekshirib bo‘lmadi.\n\n{error}
+unlock_password_wrong = Bu bosh parol noto‘g‘ri.
+unlock_add_failed = {what} qo‘shilmadi.\n\n{error}
+unlock_passkey_setup_failed = Bu kompyuterda passkey sozlanmadi, shuning uchun hech narsa o‘zgartirilmadi.\n\n{error}
+unlock_method_test_failed = O‘sha usul ishlamadi.\n\n{error}
+
+account_list_unreadable = ZBox hisoblar ro‘yxatingizni ocha olmadi.\n\n{error}\n\nHech qanday hisob yuklanmadi, va fayl o‘zgartirilmadi, shuning uchun hech narsa yo‘qolmadi. Uni o‘qib bo‘lmaguncha hisob qo‘shish, tahrirlash va olib tashlash rad etiladi.
+account_list_no_accounts = ZBox bu seansda hisoblar ro‘yxatingizni ocha olmadi ({error}), shuning uchun tanlash uchun hisob yo‘q. Hech narsa yo‘qolmadi va hech narsa o‘zgartirilmadi. ZBoxni yopib qayta ishga tushiring va so‘ralganda bosh parolingizni kiriting.
+open_message_failed = Xabarni ochib bo‘lmadi.\n\n{error}
+filters_list_failed = {folder} dagi xabarlarni ro‘yxatlab bo‘lmadi.\n\n{error}
+filters_move_failed = Filterlangan xabarlarni ko‘chirib bo‘lmadi.\n\n{error}
+cache_clear_failed = Keshni tozalab bo‘lmadi.\n\n{error}
+folder_create_failed = Jild yaratib bo‘lmadi.\n\n{error}
+folder_rename_failed = Jild nomini o‘zgartirib bo‘lmadi.\n\n{error}
+folder_delete_failed = Jildni o‘chirib bo‘lmadi.\n\n{error}
+folder_subscribe_failed = Jildga obuna bo‘lib bo‘lmadi.\n\n{error}
+folder_unsubscribe_failed = Jilddan obunani bekor qilib bo‘lmadi.\n\n{error}
+saved_open_failed = Faylni ochib bo‘lmadi.\n\n{error}
+saved_parse_failed = Bu faylni e-pochta xabari sifatida tahlil qilib bo‘lmadi.\n\n{error}
+save_file_failed = Faylni saqlab bo‘lmadi.\n\n{error}
+save_fetch_failed = Saqlash uchun xabarni olib bo‘lmadi.\n\n{error}
+empty_trash_failed = Chiqitdonni bo‘shatib bo‘lmadi.\n\n{error}
+empty_junk_failed = Spamni bo‘shatib bo‘lmadi.\n\n{error}
+export_write_failed = Eksport faylini yozib bo‘lmadi.\n\n{error}
+import_read_failed = Bu faylni ZBox eksporti sifatida o‘qib bo‘lmadi.\n\n{error}
+import_not_export = Bu fayl ZBox eksportiga o‘xshamaydi.\n\n{error}
+search_open_failed = Bu xabarni ochib bo‘lmadi.
+related_load_failed = Bu xabarni yuklab bo‘lmadi.\n\n{error}
+reply_load_failed = Javob berish uchun xabarni yuklab bo‘lmadi.\n\n{error}
+forward_load_failed = Uzatish uchun xabarni yuklab bo‘lmadi.\n\n{error}
+action_failed = Bu amalni bajarib bo‘lmadi.\n\n{error}
+undo_failed = {label} ni bekor qilib bo‘lmadi.\n\n{error}
+copy_failed = Xabardan nusxa olib bo‘lmadi.\n\n{error}
+delete_failed = Xabarni o‘chirib bo‘lmadi.\n\n{error}
+archive_failed = Xabarni arxivlab bo‘lmadi.\n\n{error}
+master_password_not_changed = Bosh parolni o‘zgartirib bo‘lmadi: {error}
+shortcut_failed_startup = Ish stoli yorlig‘ini yaratib bo‘lmadi:\n\n{error}\n\nZBox ishga tushishda davom etadi. Keyinroq Sozlamalardan qayta urinib ko‘rishingiz mumkin.
+account_locked_action = ZBox %s qila olmaydi. Hisoblar ro‘yxati bu seansda ochilmadi (%s), va hech narsa o‘zgartirilmadi. ZBoxni yopib qayta ishga tushiring va so‘ralganda bosh parolingizni kiriting.
+send_tls_mismatch = Xabarni jo‘natib bo‘lmadi. Chiquvchi server shifrlashsiz javob berdi, shuning uchun chiquvchi shifrlash portga mos kelmaydi. Asboblar, Hisob va identifikatorlar sozlamalarida 587-port uchun STARTTLS, yoki 465-port uchun SSL/TLS dan foydalaning, so‘ng qayta jo‘nating.\n\n{error}
+mark_folder_read_failed = Jildni o‘qilgan deb belgilab bo‘lmadi.\n\n{error}
+update_failed = Yangilanishni yuklab bo'lmadi, shuning uchun hech narsa o'zgartirilmadi.\n\n{error}
+update_rolled_back = Yangilanishni ishga tushirib bo'lmadi, shuning uchun oldingi versiya tiklandi.
+attachment_open_failed = Biriktirmani ochib boʻlmadi.\n\n{error}
+headers_failed = Xabar sarlavhalarini yuklab boʻlmadi.\n\n{error}
+wizard_ms_sign_in_first = Davom etishdan oldin Microsoft orqali kiring. Bu sahifadagi ikki kirish tugmasidan birini ishlating.
+wizard_provider_unsupported = ZBox bu provayderga kira olmaydi. Sababi bu sahifadagi izohda yozilgan. Ortga qaytib, boshqa e-pochta manzilidan foydalaning yoki bekor qiling.
+acct_ms_sign_in_first = Saqlashdan oldin Microsoft orqali kiring yoki kirish usuli sifatida Parolni tanlang.
+ms_sign_in_again = {account} Microsoftga qayta kirishi kerak. Hisob va identifikatorlar sozlamalarini oching va oʻsha yerda kiring.
+empty_trash_all_failed = Savatni boʻshatib boʻlmadi: {accounts}
+
+[help]

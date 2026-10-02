@@ -1,0 +1,158 @@
+Copyright (c) 2026 Harith Alhamdani. All Rights Reserved.
+
+Software: ZBox
+
+1. GRANT OF PERSONAL LICENSE
+Permission is hereby granted to individuals to download, view, compile, and
+modify the original source code of this software ("ZBox") solely for
+personal, private, non-commercial use on local devices owned or controlled
+by the user.
+
+This grant also covers official builds published by the copyright holder,
+including beta and pre-release builds published on the ZBox GitHub
+repository: an individual may download, install, and run such a build for
+personal, private, non-commercial use, and may take part in beta testing
+and report problems. This is a grant to USE an official build, and nothing
+more. It does not permit republishing or passing on that build to anyone
+else -- see Section 2, which applies to official builds exactly as it
+applies to source code. A beta build is unfinished software offered for
+testing; see Section 4.
+
+2. PUBLIC DISTRIBUTION & FORKING PROHIBITION
+You are expressly prohibited from:
+  a) Publishing, hosting, or distributing ZBox -- modified or unmodified,
+     as source code or as a compiled binary -- publicly or privately, to
+     any third party.
+  b) Uploading ZBox, modified or unmodified, to public code repositories,
+     forums, websites, or file-sharing services.
+  c) Distributing compiled binaries or executables built from ZBox source
+     code, modified or unmodified.
+  d) Using this software for any commercial, business, or enterprise
+     purpose.
+
+3. RESERVATION OF RIGHTS
+All rights not explicitly granted herein -- including the exclusive right
+to publish, distribute, and license this software publicly -- are reserved
+by the copyright holder.
+
+4. NO WARRANTY
+ZBox is provided "AS IS" and "AS AVAILABLE", without warranty of any kind,
+express or implied, including but not limited to the implied warranties of
+merchantability, fitness for a particular purpose, title, and
+non-infringement. The copyright holder does not warrant that ZBox will be
+uninterrupted, timely, secure, or error-free, that any defect will be
+corrected, or that it will send, receive, store, or delete any message
+correctly or at all.
+
+This applies with particular force to beta and pre-release builds, which
+are offered for testing, are expected to contain defects, and must not be
+relied upon for any message, account, or data you cannot afford to lose.
+You are responsible for your own backups.
+
+5. LIMITATION OF LIABILITY
+To the maximum extent permitted by applicable law, the copyright holder
+shall not be liable for any claim, damages, or other liability -- whether
+in contract, tort, or otherwise -- arising from or connected with ZBox or
+its use, including without limitation lost, corrupted, unsent, or
+misdelivered messages, loss of access to any mail account, loss of data,
+loss of profits, or business interruption, even if advised of the
+possibility of such damage.
+
+Nothing in Sections 4 and 5 excludes or limits any liability that cannot
+lawfully be excluded or limited.
+
+6. THIRD-PARTY SERVICES
+ZBox connects to mail providers and downloads blocklist and phishing data
+from third-party projects. Those services are not operated by the
+copyright holder, are governed by their own terms, and may change or stop
+without notice.
+
+---------------------------------------------------------------------------
+THIRD-PARTY COMPONENTS AND LICENSES
+---------------------------------------------------------------------------
+ZBox uses external third-party software and data sources. The restrictive
+terms in Sections 1-3 above apply ONLY to the original ZBox source code
+and do NOT apply to the following third-party components, which are
+governed by their own licenses.
+
+How they reach you depends on what you have. A source checkout bundles
+none of them: each is fetched by your own copy of ZBox, from the original
+project's own servers, at the time it is used. A published build is
+different -- it contains the Python runtime and libraries listed in
+Section D, which are redistributed under their own licenses, named below.
+The data sources in Sections B and C are always downloaded at runtime and
+are never bundled in either case.
+
+A. HIMALAYA CLI EMAIL CLIENT
+ZBox drives the pre-built Himalaya binary as a separate external process;
+no Himalaya source or binary is bundled with or modified by ZBox.
+  Copyright (c) Clement Douin and Himalaya contributors.
+  License: dual-licensed, at the user's choice, under either the MIT
+  License or the Apache License, Version 2.0.
+  Repository: https://github.com/pimalaya/himalaya
+
+B. TRACKER AND AD BLOCKLISTS
+Downloaded by ZBox directly from each project's own servers when the
+blocklist is refreshed; never bundled or redistributed by ZBox itself.
+  StevenBlack unified hosts -- a consolidated ad/malware-serving hosts
+  file. License: MIT.
+  https://github.com/StevenBlack/hosts
+
+  EasyPrivacy (part of the EasyList project) -- a filter list of known
+  tracking-server domains. License: dual-licensed, at the user's choice,
+  under either the GNU General Public License v3 or Creative Commons
+  Attribution-ShareAlike 3.0 Unported. Attribution: "The EasyList authors
+  (https://easylist.to/)".
+  https://easylist.to/pages/licence.html
+
+C. PHISHING DOMAIN LIST
+Downloaded by ZBox directly from the project's own repository, once a
+day and only while the junk mail rules are on; never bundled or
+redistributed by ZBox itself. The junk rules' own code -- blocked and
+never-junk senders, and checking links against this list -- is ZBox's
+original code and is covered by Sections 1-3 above, like the rest of
+ZBox.
+  Phishing.Database -- a list of known active phishing domains.
+  Copyright (c) 2018-2025 Mitchell Krog, Nissar Chababy and
+  Phishing.Database Contributors. License: MIT.
+  https://github.com/Phishing-Database/Phishing.Database
+
+D. RUNTIME AND LIBRARIES IN A PUBLISHED BUILD
+A build published by the copyright holder is produced with PyInstaller and
+contains the following, each redistributed under its own license. A source
+checkout contains none of them; they are installed by the user with pip.
+  Python -- the language runtime. Copyright (c) Python Software Foundation.
+  License: PSF License Agreement. https://www.python.org
+
+  wxPython and the wxWidgets library it wraps -- the user interface
+  toolkit. License: the wxWindows Library Licence, an LGPL-based licence
+  with an exception permitting distribution of binaries under the terms of
+  the distributor's own choice. https://wxpython.org
+
+  IMAPClient -- the IMAP library behind the IDLE watcher and the pooled
+  body fetch. Copyright (c) Menno Smits. License: BSD 3-Clause.
+  https://github.com/mjs/imapclient
+
+  pywin32 -- Windows API access, used for DPAPI password encryption.
+  Copyright (c) Mark Hammond and contributors. License: PSF-style.
+  https://github.com/mhammond/pywin32
+
+  keyring -- read only, and only to migrate a password saved by an older
+  ZBox install. Copyright (c) Jason R. Coombs. License: MIT.
+  https://github.com/jaraco/keyring
+
+  accessible_output2 -- speaks ZBox's announcements through whichever
+  screen reader is running. License: MIT.
+  https://github.com/accessibleapps/accessible_output2
+  It carries each supported reader's own client library, including the
+  NVDA Controller Client, copyright (c) NV Access Limited, licensed under
+  the GNU Lesser General Public License version 2.1, used unmodified and
+  loaded dynamically. https://github.com/nvaccess/nvda
+  The client libraries for JAWS, Dolphin, System Access and other
+  commercial readers remain the property of their respective vendors and
+  are governed by those vendors' own terms.
+
+  Microsoft Edge WebView2 Runtime -- renders HTML messages. Not part of
+  the build: it is either already present on the system or fetched
+  separately by the user (see docs/webview2_fixed_runtime.md), and is
+  governed by the Microsoft Software License Terms that accompany it.

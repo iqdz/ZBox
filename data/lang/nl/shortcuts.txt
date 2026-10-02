@@ -1,0 +1,103 @@
+Algemeen
+F6: focus wisselen tussen de deelvensters
+Ctrl+Tab: volgend tabblad
+Ctrl+Shift+Tab: vorig tabblad
+Ctrl+W of Ctrl+F4: huidig tabblad sluiten
+Escape: vouwt een uitgevouwen conversatie samen als de berichtenlijst de focus heeft en er een is uitgevouwen; sluit anders het huidige tabblad (bericht, opgeslagen bericht of een niet-verzonden bericht in opstelling -- vraagt eerst als er niet-opgeslagen wijzigingen zijn)
+Toepassingstoets of Shift+F10: contextmenu openen voor het lijst- of boomitem met de focus
+F1: sneltoetsen, deze pagina
+Ctrl+Shift+Q: afsluiten -- sluit ZBox altijd echt af, ook als „Sluiten naar het systeemvak” in Instellingen aan staat (de knop Sluiten van het venster, Alt+F4 en Ctrl+W op het tabblad E-mail verbergen ZBox dan in het systeemvak in plaats van af te sluiten; het item Afsluiten van het systeemvakpictogram sluit ook altijd echt af)
+Ctrl+Shift+Delete: offline berichtencache wissen -- alleen de lokale kopieën van ZBox, niets op welke server dan ook (ook een knop onder Extra > Configuratie van cache opschonen)
+
+E-mail
+Ctrl+N: nieuw bericht
+Ctrl+Shift+N: nieuw e-mailaccount
+F5: nieuwe berichten ophalen voor het huidige account
+Shift+F5: nieuwe berichten ophalen voor alle accounts
+Ctrl+Shift+J: Naar berichtenlijst van Postvak IN gaan
+Ctrl+Y: Naar de mappenlijst gaan
+Enter op een ingeklapt account of een ingeklapte map in de mappenlijst: klapt het uit, net als pijl-rechts
+Ctrl+Shift+B: adresboek
+Ctrl+Shift+F: berichten zoeken
+Ctrl+Shift+T: verwante berichten tonen
+
+De berichtenlijst
+Delete, Shift+Delete, Archiveren, Ster geven/weghalen, Markeren als ongewenst/niet ongewenst, Verplaatsen naar en Kopiëren naar werken op een SAMENGEVOUWEN conversatieregel voor elk bericht in de conversatie -- vouw de conversatie eerst uit (pijl rechts of Enter/Spatie) om slechts één bericht erin te bewerken
+Ctrl+A: alle berichten selecteren
+Ctrl+Shift+L: meer berichten laden
+Delete: bericht(en) naar de Prullenbak verplaatsen
+Shift+Delete: bericht(en) definitief verwijderen
+Ctrl+Z: laatste verwijdering, archivering, markering als ongewenst of als niet ongewenst ongedaan maken
+S: geselecteerde bericht(en) een ster geven/ster weghalen
+A: geselecteerde bericht(en) archiveren
+J: geselecteerde bericht(en) markeren als ongewenst
+Shift+J: geselecteerde bericht(en) markeren als niet ongewenst
+W: conversatie volgen -- schakelt om of de conversatie van de selectie wordt gevolgd (ook in het menu Bericht en via rechtsklikken)
+K: conversatie negeren -- schakelt om of deze conversatie wordt genegeerd (ook in het menu Bericht en via rechtsklikken)
+M: Geselecteerde bericht(en) verplaatsen -- opent het menu Verplaatsen naar met de mappen
+Shift+M: Geselecteerde bericht(en) verplaatsen door een deel van een mapnaam te typen
+C: Geselecteerde bericht(en) kopiëren -- opent het menu Kopiëren naar met de mappen
+S, A, J, W en K hierboven staan standaard aan en kunnen in Instellingen worden uitgeschakeld (anders gaan ze voor de navigatie op eerste letter in de berichtenlijst)
+M, Shift+M en C hierboven volgen dezelfde instelling
+Enter of Spatie op een samengevouwen conversatie: opent het nieuwste ongelezen bericht van die conversatie (het nieuwste als de hele conversatie gelezen is) als afzonderlijk bericht in een tabblad -- daarna bladeren Ctrl+Shift+Page Down en Ctrl+Shift+Page Up door de rest van de conversatie, zonder ooit een tweede bericht te openen. Op een gewoon bericht wordt het zoals gewoonlijk geopend
+Pijl rechts op een samengevouwen conversatie: toont de berichten als lijst, zonder er een te openen -- open ze vandaar afzonderlijk met hun eigen Enter of Spatie
+Ctrl+Shift+O: bericht openen in conversatie -- de hele conversatie in een tabblad, als lijst van de berichten met de tekst van het geselecteerde eronder. Ga met de pijltoetsen door de lijst om ze één voor één te lezen; Enter op een regel opent dat bericht apart in een eigen volledig tabblad. Dezelfde naam en toets als de overeenkomstige opdracht in Thunderbird
+Pijl links: de conversatie samenvouwen waarin de selectie zich nu bevindt
+*: alle conversaties uitvouwen (ook Beeld > Conversaties); \: alle conversaties samenvouwen (ook Beeld > Conversaties)
+Beeld > Conversaties > Alle / Gevolgde conversaties / Genegeerde conversaties filtert welke conversaties worden getoond -- terug naar Alle brengt altijd elk bericht terug; hiermee wordt nooit iets uit de map verwijderd
+
+Een geopend bericht
+Alt+A: dit bericht archiveren -- alleen zolang de tekst ervan (tekst of HTML) echt de toetsenbordfocus heeft; elders opent Alt+A zoals gewoonlijk het menu Accounts
+Ctrl+R: beantwoorden
+Ctrl+Shift+R: allen beantwoorden
+Ctrl+L: doorsturen
+Ctrl+Delete of Ctrl+D: dit bericht naar de Prullenbak verplaatsen. Delete alleen wordt vaak door de schermlezer onderschept zolang een HTML-bericht de focus heeft; Shift+Delete verwijdert definitief
+Ctrl+Shift+Page Down: volgend bericht in deze conversatie; Ctrl+Shift+Page Up: vorig bericht. Vervangt het huidige tabblad in plaats van een nieuw te openen, zodat er altijd maar één bericht open is. Bij het laatste bericht (of het eerste, naar boven) wordt dat aangekondigd en gevraagd; nogmaals dezelfde toets indrukken sluit het bericht en beëindigt de conversatie, terug in de berichtenlijst. (Ctrl+Page Up/Down blijven ongemoeid -- die wisselen van tabblad)
+Ctrl+B: berichtweergave wisselen (tekst/HTML)
+Ctrl+P: afdrukken
+Ctrl+Shift+P: afdrukvoorbeeld
+Ctrl+S: bericht opslaan als
+Ctrl+U: naam en adres van de afzender uitspreken
+Ctrl+Shift+U: afzender uitspreken en adres kopiëren
+Ctrl+Shift+I: externe inhoud in dit bericht tonen
+Ctrl+Shift+=: lettergrootte van het bericht vergroten
+Ctrl+Shift+-: lettergrootte van het bericht verkleinen
+Ctrl+Shift+0: lettergrootte van het bericht herstellen
+
+Een bericht opstellen
+Ctrl+Enter of Alt+S: verzenden
+Ctrl+S: concept opslaan
+Ctrl+Shift+A: bestand bijvoegen
+Ctrl+Shift+S: handtekening invoegen van het account in het veld Van
+Ctrl+Shift+V: plakken als citaat
+Ctrl+Shift+W: woorden tellen
+Ctrl+Shift+P: voorbeeld van het bericht zoals het wordt verzonden
+Escape, Ctrl+W of Ctrl+F4: opsteltabblad sluiten -- vraagt eerst als er iets niet is opgeslagen, met Concept opslaan, Verwerpen of Verder bewerken
+Elke opdracht hieronder staat ook in het menu Opstellen, dat Alt+C opent, zelfs als de focus in de berichttekst staat
+
+Opmaak tijdens het opstellen
+Ctrl+B: vet
+Ctrl+I: cursief
+Ctrl+Shift+X: doorhalen
+Ctrl+Shift+8: lijst met opsommingstekens
+Ctrl+Shift+7: genummerde lijst
+Ctrl+Shift+9: citaat
+Ctrl+Shift+6: code
+Ctrl+Alt+1: kop
+Ctrl+K: koppeling invoegen
+Ctrl+Shift+K: uitspreken welke opmaak op de cursorpositie geldt
+Ctrl+Shift+M: menu Opmaak openen, waar de focus ook is, ook in de berichttekst
+
+Spelling tijdens het opstellen
+Ctrl+Shift+F7: spelling controleren
+Ctrl+Shift+F9: naar de volgende spelfout
+Ctrl+Shift+F8: het woord waar de controle stopte toevoegen aan het woordenboek
+
+Dezelfde toets op twee plekken
+Ctrl+S: concept opslaan bij het opstellen, bericht opslaan als in een geopend bericht
+Ctrl+B: vet bij het opstellen, wisselen tussen tekst en HTML in een geopend bericht
+Ctrl+Shift+P: voorbeeld bij het opstellen, afdrukvoorbeeld in een geopend bericht
+Alt+A: archiveren, maar alleen zolang een berichttekst de toetsenbordfocus heeft; overal elders opent het het menu Accounts
+
+Diagnose
+Ctrl+Shift+F12: sneltoetsdiagnose -- schrijft voor elke combinatie die in een opsteltabblad wordt ingedrukt een regel in het foutopsporingslogboek, zodat aantoonbaar is wat een toets werkelijk heeft bereikt. Standaard uit, en dezelfde toets zet het weer uit; de toestand wordt telkens aangekondigd
