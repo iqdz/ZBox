@@ -68,6 +68,10 @@ _LIST_INTERACTION_QUIET_SECONDS = 0.5
 # Floor between auto-refreshes, whatever asks for one.
 _AUTO_REFRESH_MIN_INTERVAL_SECONDS = 5.0
 
+# A 20-second tick for an Inbox that a live IDLE connection watches still
+# runs once the last refresh is this old (_on_auto_refresh_timer).
+_IDLE_SAFEGUARD_SECONDS = 120
+
 # Pause after a tab closes before the catch-up refresh, so returning
 # to the list is not immediately followed by it moving.
 _TAB_CLOSE_REFRESH_DELAY_SECONDS = 2.0
@@ -81,6 +85,16 @@ class MailFetchMixin:
     # exist before __init__ runs; each instance writes floats or None,
     # never a shared mutable value.
     _list_last_interaction = 0.0
+    # The last tree selection the reader made (see
+    # main_frame._on_tree_selection_changed), for _navigating_recently.
+    _tree_last_interaction = 0.0
+    # How long a tree selection must rest before its folder loads.
+    _TREE_SETTLE_MS = 300
+    # Background work waits while the reader moved in the tree or the
+    # list this recently.
+    _NAVIGATION_PAUSE_SECONDS = 3.0
+    # One silent listing of a folder serves every trigger this close.
+    _SILENT_LIST_MERGE_SECONDS = 1.5
     _auto_refresh_last_run = 0.0
     _tab_close_refresh_timer = None
     # What the message list is currently showing, as (account_id or
@@ -137,6 +151,8 @@ class MailFetchMixin:
         # (where the live fetch below already targets the local copy
         # directly, so there's nothing extra to preview).
         target = (account_id, folder)
+        if silent and self._hold_silent_listing(target):
+            return
         # Re-fetching what is already on screen -- a manual refresh, or
         # toggling Work Offline, which re-runs the current selection.
         # Blanking the list in that case makes it vanish and come back
@@ -161,14 +177,15 @@ class MailFetchMixin:
         # launch comes straight from the server; later visits are instant
         # from the offline copy.
         startup_done = getattr(self, "_startup_list_seen", False)
-        if not silent and not self.work_offline and not same_target and offline_kept and startup_done:
-            # The Inbox and the Archive show their offline copy first.
-            # _show_cached_envelopes_first returns False when there is
-            # none yet, so this stays a no-op before the first sync.
-            showed_cache = self._show_cached_envelopes_first(account, folder, request_id)
-        elif not silent and not self.work_offline and not same_target:
-            # Any other folder: its remembered list, if one was taken
-            # this session, at once; the live list follows.
+        if not silent and not self.work_offline and not same_target:
+            # The remembered list first, for every folder, the Inbox and
+            # the Archive included: every live listing and every delete
+            # or move keeps it current (_remember_list,
+            # _forget_remembered_row). The offline copy is resynced at
+            # most every five minutes, so showing it first brought back
+            # messages deleted or moved since, as ghost rows, until the
+            # live list arrived. It is shown first only while nothing is
+            # remembered yet this session, and never at startup.
             remembered = self._remembered_list(account_id, folder)
             if remembered is not None:
                 self.mail_panel.envelope_panel.populate([dict(row) for row in remembered])
@@ -179,6 +196,8 @@ class MailFetchMixin:
                 ))
                 self._maybe_apply_initial_focus()
                 showed_cache = True
+            elif offline_kept and startup_done:
+                showed_cache = self._show_cached_envelopes_first(account, folder, request_id)
 
         if not silent and not showed_cache and not same_target:
             self.mail_panel.envelope_panel.show_placeholder("Loading...")
@@ -204,6 +223,12 @@ class MailFetchMixin:
                 # "Loading..." for a long stretch after returning to
                 # Unified Inbox.
                 return None
+            if silent:
+                # A silent refresh is background work: with the pooled
+                # connection busy it stands down instead of starting
+                # himalaya.exe, and the next refresh retries.
+                with himalaya_client.background_priority():
+                    return himalaya_client.list_envelopes(self.paths, account, folder=folder, backend=backend)
             return himalaya_client.list_envelopes(self.paths, account, folder=folder, backend=backend)
 
         def on_success(envelopes):
@@ -287,6 +312,8 @@ class MailFetchMixin:
             self._prefetch_message_bodies(account, folder, envelopes, backend, request_id)
 
         def on_error(exc):
+            if isinstance(exc, himalaya_client.HimalayaBackgroundSkipped):
+                return  # a silent refresh stood down; not a server failure
             if backend == "imap":
                 self._note_server_result(account, exc)
             if request_id != self._envelope_request_id:
@@ -493,6 +520,8 @@ class MailFetchMixin:
         def work():
             # Background lane: stands down (HimalayaBackgroundSkipped)
             # if interactive work for this account is active or waiting.
+            if self._navigating_recently():
+                return  # the reader is moving; the next live listing retries
             with himalaya_client.background_priority():
                 himalaya_client.sync_folder_offline(
                     self.paths, account, folder, limit=limit,
@@ -518,7 +547,7 @@ class MailFetchMixin:
         is on. Local files only, on the local lane; silent, like every
         other piece of cache housekeeping.
         """
-        if not getattr(self.settings_manager.settings, "clear_cache_leaving_inbox", True):
+        if not getattr(self.settings_manager.settings, "clear_cache_leaving_inbox", False):
             return
         if envelopes is None or not himalaya_client.keeps_offline(account, folder):
             return
@@ -738,6 +767,8 @@ class MailFetchMixin:
             self._remembered_inflight = max(0, getattr(self, "_remembered_inflight", 1) - 1)
 
         def work():
+            if self._navigating_recently():
+                return None  # the reader is moving; the next round lists it
             if folder_type == "Junk":
                 folder = _junk_folder_for_account(account)
             else:
@@ -818,6 +849,8 @@ class MailFetchMixin:
             account_backends[account.account_id] = account_backend
 
         target = ("unified", folder_type)
+        if silent and self._hold_silent_listing(target):
+            return
         same_target = (
             target == self._displayed_target
             and self.mail_panel.envelope_panel.has_content()
@@ -846,12 +879,13 @@ class MailFetchMixin:
             # for the first list after launch (see _fetch_account_envelopes);
             # any other folder, or an account without a copy yet, from its
             # remembered list.
-            if getattr(self, "_startup_list_seen", False):
+            # Remembered lists first, as for a single folder: they are
+            # current, the offline copies may not be.
+            showed_cache = self._show_remembered_unified(accounts, account_folders, folder_type)
+            if not showed_cache and getattr(self, "_startup_list_seen", False):
                 showed_cache = self._show_cached_unified_envelopes_first(
                     accounts, account_folders, folder_type, request_id
                 )
-            if not showed_cache:
-                showed_cache = self._show_remembered_unified(accounts, account_folders, folder_type)
 
         if not silent and not showed_cache and not same_target:
             self.mail_panel.envelope_panel.show_placeholder("Loading...")
@@ -952,12 +986,14 @@ class MailFetchMixin:
 
         def make_error(account):
             def on_error(exc):
-                if account_backends[account.account_id] == "imap":
+                skipped = isinstance(exc, himalaya_client.HimalayaBackgroundSkipped)
+                if account_backends[account.account_id] == "imap" and not skipped:
                     self._note_server_result(account, exc)
                 if request_id != self._envelope_request_id:
                     return
-                logger = logging.getLogger("zbox.main")
-                logger.warning("Unified fetch failed for %s: %s", account.identity_email, exc)
+                if not skipped:
+                    logger = logging.getLogger("zbox.main")
+                    logger.warning("Unified fetch failed for %s: %s", account.identity_email, exc)
                 remaining[0] -= 1
                 if remaining[0] == 0:
                     if grace is not None and grace.IsRunning():
@@ -982,6 +1018,12 @@ class MailFetchMixin:
                 account_backend = account_backends[account.account_id]
                 if account_backend == "maildir" and not himalaya_client.keeps_offline(account, account_folder):
                     return []  # no offline copy of this folder
+                if silent:
+                    # Background work, as for a single folder.
+                    with himalaya_client.background_priority():
+                        return himalaya_client.list_envelopes(
+                            self.paths, account, folder=account_folder, backend=account_backend,
+                        )
                 return himalaya_client.list_envelopes(
                     self.paths, account, folder=account_folder, backend=account_backend,
                 )
@@ -1670,7 +1712,50 @@ class MailFetchMixin:
         self.new_mail_worker.submit(work, lambda _result: None, on_error)
 
     def _on_auto_refresh_timer(self, event):
+        # A live IDLE connection reports new mail in the Inbox it watches
+        # the moment it arrives, so a tick for that Inbox is skipped, unless
+        # the last refresh is _IDLE_SAFEGUARD_SECONDS old: that one still
+        # runs, in case a router dropped the connection without a word.
+        # Refresh, F5, coming back to the window and closing a tab are
+        # unchanged.
+        if (
+            self._idle_covers_current_folder()
+            and time.monotonic() - self._auto_refresh_last_run < _IDLE_SAFEGUARD_SECONDS
+        ):
+            return
         self._request_auto_refresh()
+
+    def _idle_covers_current_folder(self):
+        """True when the folder on screen is an Inbox that live IDLE
+        connections watch: one account's Inbox with its connection live, or
+        the Unified Inbox with every enabled account's connection live."""
+        manager = self.__dict__.get("idle_manager")
+        if manager is None:
+            return False
+        try:
+            target = self.mail_panel.account_panel.selected_fetch_target()
+        except Exception:  # noqa: BLE001 - no folder tree yet
+            return False
+        if not target:
+            return False
+        if "unified" in target:
+            if str(target.get("unified") or "").casefold() != "inbox":
+                return False
+            accounts = self.account_manager.enabled_accounts()
+            return bool(accounts) and all(
+                manager.is_live(account.account_id, _folder_display_to_himalaya("Inbox", account))
+                for account in accounts
+            )
+        account = next(
+            (a for a in self.account_manager.accounts if a.account_id == target.get("account_id")),
+            None,
+        )
+        if account is None:
+            return False
+        inbox = _folder_display_to_himalaya("Inbox", account)
+        if str(target.get("folder") or "").casefold() not in ("inbox", inbox.casefold()):
+            return False
+        return manager.is_live(account.account_id, inbox)
 
     def _on_activate(self, event):
         # Alt+Tab back to the window: check for new mail immediately
@@ -1691,6 +1776,8 @@ class MailFetchMixin:
         """
         if self._background_work_should_stand_down():
             return
+        if self._navigating_recently():
+            return  # the reader is moving; the next tick refreshes
         now = time.monotonic()
         if now - self._auto_refresh_last_run < _AUTO_REFRESH_MIN_INTERVAL_SECONDS:
             return  # a silent pass just ran; this trigger is subsumed by it
@@ -1742,6 +1829,64 @@ class MailFetchMixin:
 
             for delay_seconds in (3, 8, 15):
                 wx.CallLater(delay_seconds * 1000, check)
+
+    def _navigating_recently(self):
+        """
+        True while the reader moved in the folder tree or the message
+        list within _NAVIGATION_PAUSE_SECONDS. Background work waits
+        then: the 20-second refresh, the remembered-list round and the
+        offline top-up used to keep listing, and starting himalaya.exe,
+        while the reader arrowed, which made moving feel heavy. Read
+        from worker threads too; it only reads floats.
+        """
+        last = max(self._list_last_interaction, self._tree_last_interaction)
+        return (time.monotonic() - last) < self._NAVIGATION_PAUSE_SECONDS
+
+    def _hold_silent_listing(self, target):
+        """
+        True when a silent listing of target -- (account_id, folder),
+        or ("unified", folder_type) -- should not run now, and arranges
+        for one to run soon instead:
+
+        while the reader is moving (_navigating_recently), once the
+        pause ends; and when the same target was listed under
+        _SILENT_LIST_MERGE_SECONDS ago, once that window ends. The
+        20-second refresh, IDLE, a finished delete and the folder
+        counts used to list one Inbox up to five times within five
+        seconds. At most one listing waits per target, so a burst of
+        triggers becomes one listing a moment later; none is lost.
+        False, recording this listing, when it may run now.
+        """
+        listed_at = self.__dict__.setdefault("_silent_listed_at", {})
+        waiting = self.__dict__.setdefault("_silent_list_waiting", set())
+        now = time.monotonic()
+        delay = 0.0
+        if self._navigating_recently():
+            last = max(self._list_last_interaction, self._tree_last_interaction)
+            delay = self._NAVIGATION_PAUSE_SECONDS - (now - last)
+        last_listed = listed_at.get(target)
+        if last_listed is not None and now - last_listed < self._SILENT_LIST_MERGE_SECONDS:
+            delay = max(delay, self._SILENT_LIST_MERGE_SECONDS - (now - last_listed))
+        if delay <= 0:
+            listed_at[target] = now
+            return False
+        if target not in waiting:
+            waiting.add(target)
+
+            def again():
+                waiting.discard(target)
+                # Only for what is still on screen: a reader who moved to
+                # another folder meanwhile gets that folder's own listing.
+                selected = self.mail_panel.account_panel.selected_fetch_target() or {}
+                if "unified" in selected:
+                    current = ("unified", selected["unified"])
+                else:
+                    current = (selected.get("account_id"), selected.get("folder"))
+                if current == target:
+                    self._auto_refresh_current_folder()
+
+            wx.CallLater(int(delay * 1000) + 50, again)
+        return True
 
     def _list_navigation_active(self):
         """True while the reader is arrowing through the message list:

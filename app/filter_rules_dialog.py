@@ -19,6 +19,7 @@ it.
 import wx
 
 import lang
+import notice_toast
 
 from accessible import fit_dialog, wrap_text
 from filter_rules import FIELDS, FilterCondition, FilterRule
@@ -196,34 +197,34 @@ class FilterRuleEditDialog(wx.Dialog):
     def _on_ok(self, event):
         rule = self.result_rule()
         if not rule.name.strip():
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "filter_rule_needs_name",
                     default="Give this rule a name.",
                 ),
                 lang.t("dialogs", "title_filter_rule", default="Filter Rule"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             self.name_field.SetFocus()
             return
         if not rule.has_condition():
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "filter_rule_needs_condition",
                     default="Set at least one condition (From, To or Subject).",
                 ),
                 lang.t("dialogs", "title_filter_rule", default="Filter Rule"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
         if not rule.has_action():
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "filter_rule_needs_action",
                     default="Choose at least one action: mark as read, flag, or move to a folder.",
                 ),
                 lang.t("dialogs", "title_filter_rule", default="Filter Rule"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
         event.Skip()

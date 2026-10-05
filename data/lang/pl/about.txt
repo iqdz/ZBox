@@ -10,7 +10,7 @@ Znajome działanie
 Aby przejście z innych programów pocztowych było jak najprostsze, ZBox oferuje praktyczne i elastyczne skróty klawiaturowe. Często ta sama czynność ma kilka skrótów; na przykład zarówno Alt+S, jak i Ctrl+Enter wysyłają wiadomość. Pełną listę znajdziesz w Pomoc, Skróty klawiaturowe.
 
 Konfiguracja kont
-Konta Outlook.com, Hotmail, Live i Microsoft 365 logują się Twoim kontem Microsoft, w przeglądarce lub kodem. Natywne logowanie przez Google zostanie dodane w przyszłej aktualizacji. Na razie możesz połączyć konto Gmail, tworząc hasło do aplikacji zamiast używać zwykłego hasła (instrukcje pod przyciskiem poniżej).
+Konta Outlook.com, Hotmail, Live i Microsoft 365 logują się Twoim kontem Microsoft, w przeglądarce lub kodem.Na razie możesz połączyć konto Gmail, tworząc hasło do aplikacji zamiast używać zwykłego hasła (instrukcje pod przyciskiem poniżej).
 
 Licencje i podziękowania
 Naciśnij Wyświetl licencję poniżej, aby przeczytać licencję ZBox i zobaczyć komponenty innych firm, dzięki którym powstał. Należą do nich: Himalaya, listy blokowanych StevenBlack hosts i EasyPrivacy, lista Phishing.Database oraz (w wersji skompilowanej) Python, wxPython, imapclient, pywin32, keyring i accessible_output2 wraz z bibliotekami klienckimi dla czytników ekranu.

@@ -1,5 +1,5 @@
 """
-Settings dialog, reached from Tools > Settings. Options:
+Settings dialog, reached from Tools > Settings, in seven tabs. Options:
 - whether to write the debug log file at all;
 - the default message body view (rendered HTML, or plain Text) used
   when a message opens in its own tab;
@@ -32,15 +32,101 @@ import os
 
 import wx
 
-from accessible import fit_dialog, wrap_text
+from about_dialog import AboutPanel
+from accessible import _fit_scrolled_children, fit_dialog, wrap_text
 import lang
+import notice_toast
+import spoken_feedback
 import sound_manager
-from settings_manager import UI_THEMES
+from cache_cleanup_dialog import age_button_label, age_choice_label
+from settings_manager import CACHE_AGE_CHOICES, UI_THEMES
 from message_view_panel import DEFAULT_READING_FONT_POINT_SIZE, clamp_reading_font_size
 
 
+# The values each choice list offers, in the units the settings store.
+SILENCE_VALUES = (0,) + tuple(range(100, 2001, 100))      # milliseconds
+FOCUS_DELAY_LEVELS = tuple(range(1, 11))                   # level x 100 ms
+ANNOUNCE_VALUES = (0,) + tuple(range(300, 6001, 300))     # milliseconds
+AUTOSAVE_VALUES = (0, 15, 30, 60, 120, 180, 300, 600)     # seconds
+PURGE_VALUES = (0, 1, 7, 14, 30, 60, 90, 180, 365)        # days
+
+
+def _seconds_text(ms):
+    """A millisecond value as the seconds a person would say."""
+    seconds = ms / 1000.0
+    if seconds == 1:
+        return lang.t("dialogs", "set_val_one_second", default="1 second")
+    return lang.t("dialogs", "set_val_seconds", default="{seconds} seconds",
+                  seconds="%g" % seconds)
+
+
+def _silence_text(ms):
+    if ms == 0:
+        return lang.t("dialogs", "set_silence_off", default="Off")
+    return _seconds_text(ms)
+
+
+def _focus_text(level):
+    return _seconds_text(level * 100)
+
+
+def _announce_text(ms):
+    if ms == 0:
+        return lang.t("dialogs", "set_announce_wait", default="Waits for a key")
+    return _seconds_text(ms)
+
+
+def _autosave_text(seconds):
+    if seconds == 0:
+        return lang.t('dialogs', 'set_autosave_off', default="Off \u2014 use Save Draft (Ctrl+S) to save manually")
+    if seconds < 60:
+        return lang.t('dialogs', 'set_autosave_seconds', default='Every {seconds} seconds', seconds=seconds)
+    if seconds == 60:
+        return lang.t("dialogs", "set_autosave_one_minute", default="Every minute")
+    return lang.t("dialogs", "set_autosave_minutes", default="Every {minutes} minutes",
+                  minutes="%g" % (seconds / 60.0))
+
+
+def _purge_text(days):
+    if days == 0:
+        return lang.t('dialogs', 'set_purge_off', default="Off \u2014 Trash and Junk are never auto-purged")
+    if days == 1:
+        return lang.t('dialogs', 'set_purge_one_day', default="After 1 day")
+    return lang.t('dialogs', 'set_purge_days', default='After {days} days', days=days)
+
+
+def _values_with(values, current):
+    """The offered values, plus the stored one in its place when it is
+    not among them, so opening Settings never changes it unseen."""
+    values = list(values)
+    if current not in values:
+        values.append(current)
+        values.sort()
+    return values
+
+
+def _value_choice(parent, values, current, text_of, label):
+    """A choice list of real values in place of a slider: a screen
+    reader says the value itself, never a percentage. Named after its
+    own label, without the colon."""
+    values = _values_with(values, current)
+    choice = wx.Choice(parent, choices=[text_of(value) for value in values])
+    choice.SetSelection(values.index(current))
+    choice.SetName(label.GetLabel().replace("&", "").rstrip(": \uff1a"))
+    choice._zbox_values = values
+    return choice
+
+
+def _chosen_value(choice, fallback):
+    values = getattr(choice, "_zbox_values", None) or []
+    index = choice.GetSelection()
+    if 0 <= index < len(values):
+        return values[index]
+    return fallback
+
+
 class SettingsDialog(wx.Dialog):
-    def __init__(self, parent, settings):
+    def __init__(self, parent, settings, page=None):
         super().__init__(parent,
                          title=lang.t("dialogs", "title_settings", default="Settings"),
                          style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER)
@@ -48,46 +134,42 @@ class SettingsDialog(wx.Dialog):
             self.SetLayoutDirection(wx.Layout_RightToLeft)
         self.settings = settings
 
-        # The controls live in a scrolled panel rather than directly
-        # on the dialog. There are six setting groups here, each with
-        # an explanatory paragraph, and at 150 or 200 percent Windows
-        # text scaling that is taller than the screen -- which used to
-        # put OK and Cancel below the bottom edge, unreachable by
-        # keyboard as well as by mouse. Scrolling keeps the buttons
-        # where they belong and costs a screen reader nothing:
-        # everything stays in the tab order, and wx scrolls whatever
-        # takes focus into view.
-        panel = wx.ScrolledWindow(self, style=wx.VSCROLL)
-        panel.SetScrollRate(0, 12)
-
-        sizer = wx.BoxSizer(wx.VERTICAL)
-        self.debug_checkbox = wx.CheckBox(
-            panel,
-            label=lang.t(
-                "dialogs", "set_debug_logging",
-                default="(Enable debug logging saved to: data\\logs)",
-            ),
-        )
-        self.debug_checkbox.SetValue(settings.debug_logging)
-
-        note = wx.StaticText(
-            panel,
-            label=lang.t(
-                "dialogs", "set_debug_note",
-                default="Debug logging helps diagnose problems if something goes "
-                "wrong. Turning it off stops new entries from being "
-                "written; existing log files are not deleted. Takes "
-                "effect the next time ZBox starts.",
-            ),
-        )
-        note
-
-        sizer.Add(self.debug_checkbox, 0, wx.ALL, 10)
-        wrap_text(note)
-        sizer.Add(note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
-
-        sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
-
+        # Seven categories, General first and About ZBox last, in a
+        # standard Windows list on the left, each category's settings
+        # beside it. A list, not a tab row: in dark mode wx paints a tab
+        # row itself, and JAWS and NVDA then read every freshly painted
+        # tab title on each switch; a list stays a native control in
+        # light and dark mode, and the reader says only the item landed
+        # on. Up and Down Arrow move between categories; Ctrl+Tab and
+        # Ctrl+Shift+Tab work from anywhere in the dialog
+        # (_on_tab_keys). Each category is a plain panel holding a
+        # scrolling area: at 150 or 200 percent Windows text scaling it
+        # can be taller than the screen, which would put OK and Cancel
+        # below the bottom edge, unreachable by keyboard as well as by
+        # mouse. Each block below is built in the scrolling area of the
+        # category it belongs to (_page), in the order it is read there.
+        self.settings_tabs = wx.Listbook(self, style=wx.LB_LEFT)
+        self._pages = {}
+        self._scrollers = {}
+        for key, title in (
+            ("general", lang.t("dialogs", "set_tab_general", default="General")),
+            ("personalization", lang.t("dialogs", "set_tab_personalization", default="Personalization")),
+            ("accessibility", lang.t("dialogs", "set_tab_accessibility", default="Accessibility and Shortcut Keys")),
+            ("maintenance", lang.t("dialogs", "set_tab_maintenance", default="Maintenance and Cleanup")),
+            ("sounds", lang.t("dialogs", "set_tab_sounds", default="Sounds and Notifications")),
+            ("security", lang.t("dialogs", "set_tab_security", default="Security")),
+        ):
+            tab_page = wx.Panel(self.settings_tabs)
+            scroller = wx.ScrolledWindow(tab_page, style=wx.VSCROLL)
+            scroller.SetScrollRate(0, 12)
+            scroller.SetSizer(wx.BoxSizer(wx.VERTICAL))
+            holder = wx.BoxSizer(wx.VERTICAL)
+            holder.Add(scroller, 1, wx.EXPAND)
+            tab_page.SetSizer(holder)
+            self.settings_tabs.AddPage(tab_page, title)
+            self._pages[key] = tab_page
+            self._scrollers[key] = scroller
+        panel, sizer = self._page("general")
         # Interface language. Built from whatever files are in the
         # lang folder, the same way the sound theme choice is built
         # from the theme folders, so adding a language never means
@@ -144,6 +226,35 @@ class SettingsDialog(wx.Dialog):
         sizer.Add(language_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        self.debug_checkbox = wx.CheckBox(
+            panel,
+            label=lang.t(
+                "dialogs", "set_debug_logging",
+                default="(Enable debug logging saved to: data\\logs)",
+            ),
+        )
+        self.debug_checkbox.SetValue(settings.debug_logging)
+
+        note = wx.StaticText(
+            panel,
+            label=lang.t(
+                "dialogs", "set_debug_note",
+                default="Debug logging helps diagnose problems if something goes "
+                "wrong. Turning it off stops new entries from being "
+                "written; existing log files are not deleted. Takes "
+                "effect the next time ZBox starts.",
+            ),
+        )
+        note
+
+        sizer.Add(self.debug_checkbox, 0, wx.ALL, 10)
+        wrap_text(note)
+        sizer.Add(note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
+
+        sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("personalization")
 
         # Interface theme. Colours only: names, roles and the Tab
         # order are the same in every theme. See theme.py.
@@ -468,6 +579,21 @@ class SettingsDialog(wx.Dialog):
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
 
+        panel, sizer = self._page("accessibility")
+
+        # The speech switch, the top line of this tab. Shows whether ZBox
+        # speaks now; stored only when changed here, so automatic stays
+        # automatic (spoken_feedback).
+        self.announce_actions_checkbox = wx.CheckBox(
+            panel,
+            label=lang.control_label(
+                "set_announce_actions", "Speak &announcements for actions, new mail and notices"
+            ),
+        )
+        self._speech_shown = spoken_feedback.enabled(settings)
+        self.announce_actions_checkbox.SetValue(self._speech_shown)
+        sizer.Add(self.announce_actions_checkbox, 0, wx.ALL, 10)
+
         # --- Screen reader announcements control -------------------
         # A real wx.StaticBox, with these controls parented to it
         # rather than merely sitting next to it: that is what makes
@@ -506,44 +632,11 @@ class SettingsDialog(wx.Dialog):
         )
         silence_label.SetFont(silence_label.GetFont().Bold())
 
-        self.silence_slider = wx.Slider(
-            sr_box,
-            value=min(max(settings.html_silence_hold_ms, 0), 2000),
-            minValue=0,
-            maxValue=2000,
-            # No SL_LABELS. On Windows that style draws wx's own
-            # min/max/value captions as extra children of the
-            # trackbar, and NVDA/JAWS read those instead of (and
-            # before) the real value -- reported live as the slider
-            # announcing "1" and then "3" on focus without anything
-            # having moved. The value is spoken by the reader anyway,
-            # and the *_value_label StaticText below each slider
-            # already shows it in real units for sighted readers.
-            style=wx.SL_HORIZONTAL,
+        self.silence_choice = _value_choice(
+            sr_box, SILENCE_VALUES,
+            max(0, min(2000, int(settings.html_silence_hold_ms))),
+            _silence_text, silence_label,
         )
-        self.silence_slider.SetTickFreq(500)
-        # Step sizes matter for more than convenience here. A screen
-        # reader announces a trackbar as a percentage, so with the
-        # default one-unit arrow step this slider moved 1 ms of 2000
-        # -- 0.05 percent -- and every arrow press re-announced the
-        # same "0 percent", which is indistinguishable from a slider
-        # that is not moving at all (reported live). 100 ms per arrow
-        # is 5 percent, which the reader actually reports as a change.
-        self.silence_slider.SetLineSize(100)
-        self.silence_slider.SetPageSize(500)
-        # Named explicitly: a native trackbar takes no accessible name
-        # from the StaticText sitting above it, so without this the
-        # reader announced a bare number with no idea what it set.
-        self.silence_slider.SetName(
-            lang.t(
-                "dialogs", "set_silence_name",
-                default="HTML screen-reader silence hold in milliseconds",
-            )
-        )
-        self.silence_value_label = wx.StaticText(
-            sr_box, label=self._silence_value_text(settings.html_silence_hold_ms)
-        )
-        self.silence_slider.Bind(wx.EVT_SLIDER, self._on_silence_slider)
 
         silence_note = wx.StaticText(
             sr_box,
@@ -562,8 +655,7 @@ class SettingsDialog(wx.Dialog):
         )
 
         sr_sizer.Add(silence_label, 0, wx.ALL, 10)
-        sr_sizer.Add(self.silence_slider, 0, wx.LEFT | wx.RIGHT | wx.EXPAND, 16)
-        sr_sizer.Add(self.silence_value_label, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+        sr_sizer.Add(self.silence_choice, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
         wrap_text(silence_note)
         sr_sizer.Add(silence_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
 
@@ -578,31 +670,11 @@ class SettingsDialog(wx.Dialog):
         )
         focus_delay_label.SetFont(focus_delay_label.GetFont().Bold())
 
-        self.focus_delay_slider = wx.Slider(
-            sr_box,
-            value=min(max(settings.webview_focus_delay_level, 1), 10),
-            minValue=1,
-            maxValue=10,
-            style=wx.SL_HORIZONTAL,
+        self.focus_delay_choice = _value_choice(
+            sr_box, FOCUS_DELAY_LEVELS,
+            max(1, min(10, int(settings.webview_focus_delay_level))),
+            _focus_text, focus_delay_label,
         )
-        self.focus_delay_slider.SetTickFreq(1)
-        # Already a coarse 1-10 scale, so one arrow is a tenth of the
-        # range and the reader reports the change. Set explicitly all
-        # the same, so the three sliders in this group are obviously
-        # governed by the same rule rather than one of them happening
-        # to work.
-        self.focus_delay_slider.SetLineSize(1)
-        self.focus_delay_slider.SetPageSize(2)
-        self.focus_delay_slider.SetName(
-            lang.t(
-                "dialogs", "set_focus_delay_name",
-                default="WebView accessibility focus delay, level 1 to 10",
-            )
-        )
-        self.focus_delay_value_label = wx.StaticText(
-            sr_box, label=self._focus_delay_value_text(settings.webview_focus_delay_level)
-        )
-        self.focus_delay_slider.Bind(wx.EVT_SLIDER, self._on_focus_delay_slider)
 
         focus_delay_note = wx.StaticText(
             sr_box,
@@ -622,8 +694,7 @@ class SettingsDialog(wx.Dialog):
         )
 
         sr_sizer.Add(focus_delay_label, 0, wx.ALL, 10)
-        sr_sizer.Add(self.focus_delay_slider, 0, wx.LEFT | wx.RIGHT | wx.EXPAND, 16)
-        sr_sizer.Add(self.focus_delay_value_label, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+        sr_sizer.Add(self.focus_delay_choice, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
         wrap_text(focus_delay_note)
         sr_sizer.Add(focus_delay_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
 
@@ -637,32 +708,11 @@ class SettingsDialog(wx.Dialog):
         )
         announce_label.SetFont(announce_label.GetFont().Bold())
 
-        self.announce_slider = wx.Slider(
-            sr_box,
-            value=min(max(getattr(settings, "announcement_hold_ms", 1800), 0), 6000),
-            minValue=0,
-            maxValue=6000,
-            style=wx.SL_HORIZONTAL,
+        self.announce_choice = _value_choice(
+            sr_box, ANNOUNCE_VALUES,
+            max(0, min(6000, int(getattr(settings, "announcement_hold_ms", 1800)))),
+            _announce_text, announce_label,
         )
-        self.announce_slider.SetTickFreq(1000)
-        # 300 ms per arrow of a 6000 ms range is 5 percent, the same
-        # audible step as the silence hold above; the old one-unit
-        # step was 0.017 percent and re-announced "30 percent" forever.
-        self.announce_slider.SetLineSize(300)
-        self.announce_slider.SetPageSize(1000)
-        self.announce_slider.SetName(
-            lang.t(
-                "dialogs", "set_announce_name",
-                default="Announcement hold in milliseconds",
-            )
-        )
-        self.announce_value_label = wx.StaticText(
-            sr_box,
-            label=self._announce_value_text(
-                getattr(settings, "announcement_hold_ms", 1800)
-            ),
-        )
-        self.announce_slider.Bind(wx.EVT_SLIDER, self._on_announce_slider)
 
         announce_note = wx.StaticText(
             sr_box,
@@ -681,27 +731,15 @@ class SettingsDialog(wx.Dialog):
         )
         wrap_text(announce_note)
 
-        self.announce_actions_checkbox = wx.CheckBox(
-            sr_box,
-            label=lang.control_label(
-                "set_announce_actions", "Announce message &actions"
-            ),
-        )
-        self.announce_actions_checkbox.SetValue(
-            getattr(settings, "announce_actions", True)
-        )
-
         sr_sizer.Add(announce_label, 0, wx.ALL, 10)
-        sr_sizer.Add(self.announce_slider, 0, wx.LEFT | wx.RIGHT | wx.EXPAND, 16)
-        sr_sizer.Add(self.announce_value_label, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+        sr_sizer.Add(self.announce_choice, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
         sr_sizer.Add(announce_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
-        sr_sizer.Add(
-            self.announce_actions_checkbox, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16
-        )
 
         sizer.Add(sr_sizer, 0, wx.EXPAND | wx.ALL, 10)
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("general")
 
         attachment_dir_label = wx.StaticText(
             panel,
@@ -771,35 +809,12 @@ class SettingsDialog(wx.Dialog):
         )
         autosave_label.SetFont(autosave_label.GetFont().Bold())
 
-        self.autosave_slider = wx.Slider(
-            panel,
-            value=min(max(getattr(settings, "draft_autosave_seconds", 60), 0), 600),
-            minValue=0,
-            maxValue=600,
-            style=wx.SL_HORIZONTAL,
+        autosave_now = int(getattr(settings, "draft_autosave_seconds", 60))
+        self.autosave_choice = _value_choice(
+            panel, AUTOSAVE_VALUES,
+            0 if autosave_now <= 0 else max(15, min(600, autosave_now)),
+            _autosave_text, autosave_label,
         )
-        self.autosave_slider.SetTickFreq(60)
-        # 30 seconds per arrow of a 600 second range is 5 percent --
-        # the same audible step as the sliders in the screen reader
-        # group above, and for the same reason: a screen reader
-        # announces a trackbar as a percentage, so a one-unit step
-        # here re-announced the same figure however long you held the
-        # arrow key.
-        self.autosave_slider.SetLineSize(30)
-        self.autosave_slider.SetPageSize(60)
-        self.autosave_slider.SetName(
-            lang.t(
-                "dialogs", "set_autosave_name",
-                default="Draft autosave interval in seconds",
-            )
-        )
-        self.autosave_value_label = wx.StaticText(
-            panel,
-            label=self._autosave_value_text(
-                getattr(settings, "draft_autosave_seconds", 60)
-            ),
-        )
-        self.autosave_slider.Bind(wx.EVT_SLIDER, self._on_autosave_slider)
 
         autosave_note = wx.StaticText(
             panel,
@@ -816,9 +831,38 @@ class SettingsDialog(wx.Dialog):
         wrap_text(autosave_note)
 
         sizer.Add(autosave_label, 0, wx.ALL, 10)
-        sizer.Add(self.autosave_slider, 0, wx.LEFT | wx.RIGHT | wx.EXPAND, 16)
-        sizer.Add(self.autosave_value_label, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+        sizer.Add(self.autosave_choice, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
         sizer.Add(autosave_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
+
+        sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("maintenance")
+
+        self.clear_inbox_cache_checkbox = wx.CheckBox(
+            panel,
+            label=lang.control_label(
+                "set_clear_inbox_cache", "Clear message cache on moving away from Inbox"
+            ),
+        )
+        self.clear_inbox_cache_checkbox.SetValue(
+            getattr(settings, "clear_cache_leaving_inbox", False)
+        )
+        clear_inbox_cache_note = wx.StaticText(
+            panel,
+            label=lang.t(
+                "dialogs", "set_clear_inbox_cache_note",
+                default="When on, a message's offline copy and saved body are "
+                "deleted as soon as it leaves an Inbox, also when it was deleted "
+                "or moved somewhere else, such as on your phone, so it never "
+                "shows up where it no longer is. Only the Inbox keeps these "
+                "files; every other folder is always read from the server.",
+            ),
+        )
+        wrap_text(clear_inbox_cache_note)
+        sizer.Add(self.clear_inbox_cache_checkbox, 0, wx.ALL, 10)
+        sizer.Add(
+            clear_inbox_cache_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10
+        )
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
 
@@ -826,34 +870,16 @@ class SettingsDialog(wx.Dialog):
             panel,
             label=lang.t(
                 "dialogs", "set_auto_purge_label",
-                default="Auto-purge old Trash and Junk:",
+                default="Auto-delete old Trash and Junk:",
             ),
         )
         auto_purge_label.SetFont(auto_purge_label.GetFont().Bold())
 
-        self.auto_purge_slider = wx.Slider(
-            panel,
-            value=min(max(getattr(settings, "auto_purge_days", 30), 0), 365),
-            minValue=0,
-            maxValue=365,
-            style=wx.SL_HORIZONTAL,
+        self.auto_purge_choice = _value_choice(
+            panel, PURGE_VALUES,
+            max(0, min(365, int(getattr(settings, "auto_purge_days", 30)))),
+            _purge_text, auto_purge_label,
         )
-        self.auto_purge_slider.SetTickFreq(30)
-        self.auto_purge_slider.SetLineSize(15)
-        self.auto_purge_slider.SetPageSize(30)
-        self.auto_purge_slider.SetName(
-            lang.t(
-                "dialogs", "set_auto_purge_name",
-                default="Auto-purge Trash and Junk after this many days",
-            )
-        )
-        self.auto_purge_value_label = wx.StaticText(
-            panel,
-            label=self._auto_purge_value_text(
-                getattr(settings, "auto_purge_days", 30)
-            ),
-        )
-        self.auto_purge_slider.Bind(wx.EVT_SLIDER, self._on_auto_purge_slider)
 
         auto_purge_note = wx.StaticText(
             panel,
@@ -870,11 +896,15 @@ class SettingsDialog(wx.Dialog):
         wrap_text(auto_purge_note)
 
         sizer.Add(auto_purge_label, 0, wx.ALL, 10)
-        sizer.Add(self.auto_purge_slider, 0, wx.LEFT | wx.RIGHT | wx.EXPAND, 16)
-        sizer.Add(self.auto_purge_value_label, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+        sizer.Add(self.auto_purge_choice, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
         sizer.Add(auto_purge_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+        self._build_cache_cleanup_group(panel, sizer)
+
+        sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("accessibility")
 
         self.bare_key_shortcuts_checkbox = wx.CheckBox(
             panel,
@@ -929,31 +959,20 @@ class SettingsDialog(wx.Dialog):
         )
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
-        self.clear_inbox_cache_checkbox = wx.CheckBox(
+        # Off by default: a screen reader then speaks each message row's
+        # cells without the column names before them.
+        self.list_headers_checkbox = wx.CheckBox(
             panel,
             label=lang.control_label(
-                "set_clear_inbox_cache", "Clear message cache on moving away from Inbox"
+                "set_list_headers", "Show column headers in the message list"
             ),
         )
-        self.clear_inbox_cache_checkbox.SetValue(
-            getattr(settings, "clear_cache_leaving_inbox", True)
-        )
-        clear_inbox_cache_note = wx.StaticText(
-            panel,
-            label=lang.t(
-                "dialogs", "set_clear_inbox_cache_note",
-                default="When on, a message's offline copy and saved body are "
-                "deleted as soon as it leaves an Inbox, also when it was deleted "
-                "or moved somewhere else, such as on your phone, so it never "
-                "shows up where it no longer is. Only the Inbox keeps these "
-                "files; every other folder is always read from the server.",
-            ),
-        )
-        wrap_text(clear_inbox_cache_note)
-        sizer.Add(self.clear_inbox_cache_checkbox, 0, wx.ALL, 10)
-        sizer.Add(
-            clear_inbox_cache_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10
-        )
+        self.list_headers_checkbox.SetValue(bool(getattr(settings, "show_list_headers", False)))
+        sizer.Add(self.list_headers_checkbox, 0, wx.ALL, 10)
+
+        sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("sounds")
 
         sound_label = wx.StaticText(
             panel,
@@ -1084,6 +1103,8 @@ class SettingsDialog(wx.Dialog):
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
 
+        panel, sizer = self._page("security")
+
         # --- App and Data Security ----------------------------------
         # A real wx.StaticBox with the controls parented to it, same
         # reasoning as the screen reader group above: NVDA/JAWS
@@ -1183,10 +1204,45 @@ class SettingsDialog(wx.Dialog):
             security_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10
         )
 
+        # Private mode (private_mode.py). Turning it on asks for the
+        # master password and warns first; see _on_private_mode.
+        self.private_mode_checkbox = wx.CheckBox(
+            security_box,
+            # The key name stays in English in every language.
+            label=lang.control_label(
+                "set_private_mode", "&Private mode: keep no mail on this computer or drive"
+            ) + " (Windows+Ctrl+Shift+P)",
+        )
+        self.private_mode_checkbox.SetValue(bool(getattr(settings, "private_mode", False)))
+        self.private_mode_checkbox.Bind(wx.EVT_CHECKBOX, self._on_private_mode)
+        self._private_confirmed = False
+        private_note = wx.StaticText(
+            security_box,
+            label=lang.t(
+                "dialogs", "set_private_mode_note",
+                default="Messages are read from the server and kept in memory "
+                "only. No offline copies, saved messages or debug logs are kept, "
+                "and opened attachments and the browser data of HTML mail are "
+                "deleted when ZBox closes. Closing also ends every program ZBox "
+                "started, including those showing an attachment, empties the "
+                "clipboard, and stops trusting this computer unless private mode "
+                "was turned on from it. Windows still keeps some records no "
+                "program can remove, such as its list of USB drives, the page "
+                "file, and antivirus and network logs.",
+            ),
+        )
+        wrap_text(private_note)
+        security_sizer.Add(self.private_mode_checkbox, 0, wx.LEFT | wx.RIGHT | wx.TOP, 10)
+        security_sizer.Add(
+            private_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10
+        )
+
         self._refresh_security_status()
         sizer.Add(security_sizer, 0, wx.EXPAND | wx.ALL, 10)
 
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
+
+        panel, sizer = self._page("general")
 
         tray_label = wx.StaticText(
             panel,
@@ -1328,17 +1384,139 @@ class SettingsDialog(wx.Dialog):
         sizer.Add(wx.StaticLine(panel), 0, wx.EXPAND | wx.LEFT | wx.RIGHT, 10)
         self._build_updates_group(panel, sizer, settings)
 
-        panel.SetSizer(sizer)
+        # About ZBox, the last tab (about_dialog.AboutPanel).
+        about = AboutPanel(
+            self.settings_tabs, parent,
+            getattr(getattr(parent, "paths", None), "license_file", None),
+        )
+        self.settings_tabs.AddPage(
+            about, lang.t("dialogs", "title_about", default="About ZBox")
+        )
+        self._pages["about"] = about
 
         outer = wx.BoxSizer(wx.VERTICAL)
-        outer.Add(panel, 1, wx.EXPAND)
+        outer.Add(self.settings_tabs, 1, wx.EXPAND | wx.ALL, 6)
         button_sizer = self.CreateButtonSizer(wx.OK | wx.CANCEL)
         outer.Add(button_sizer, 0, wx.ALIGN_RIGHT | wx.ALL, 10)
 
+        # Each tab's scrolling area gets a real size first, with room
+        # left for the tab row as well as the title bar and the buttons.
+        for key in self._scrollers:
+            _fit_scrolled_children(self._pages[key], reserve=240)
         fit_dialog(self, outer)
-        # Help > Updates > Update Settings opens this dialog at Updates.
+        self.Bind(wx.EVT_CHAR_HOOK, self._on_tab_keys)
+
+        # Opens on the category it was asked for, General otherwise,
+        # with focus on the category list so the arrow keys work at once.
+        # Help > Updates > Update Settings opens General at Check for
+        # updates automatically, as before.
+        keys = list(self._pages)
+        self.settings_tabs.SetSelection(keys.index(page) if page in keys else 0)
         if getattr(parent, "_settings_focus_updates", False):
             wx.CallAfter(self.update_auto_checkbox.SetFocus)
+        elif getattr(parent, "_settings_focus_private", False):
+            # Windows+Ctrl+Shift+P: App and Data Security, at Private mode.
+            wx.CallAfter(self.private_mode_checkbox.SetFocus)
+        else:
+            wx.CallAfter(self.settings_tabs.GetListView().SetFocus)
+
+    def _page(self, key):
+        """The scrolling area of one settings tab and its sizer."""
+        scroller = self._scrollers[key]
+        return scroller, scroller.GetSizer()
+
+    def _on_tab_keys(self, event):
+        """Ctrl+Tab and Ctrl+Shift+Tab switch to the next and previous
+        category from any control, wrapping around, and put focus on the
+        category list so the new category's name is spoken. Handled here
+        and not passed on, so one press moves exactly one category."""
+        if event.GetKeyCode() == wx.WXK_TAB and event.ControlDown() and not event.AltDown():
+            count = self.settings_tabs.GetPageCount()
+            if count:
+                step = -1 if event.ShiftDown() else 1
+                self.settings_tabs.SetSelection(
+                    (self.settings_tabs.GetSelection() + step) % count
+                )
+                self.settings_tabs.GetListView().SetFocus()
+            return
+        event.Skip()
+
+    def _build_cache_cleanup_group(self, panel, sizer):
+        """Maintenance and Cleanup: the cache clean-up controls, which
+        had a dialog of their own (Tools > Cache Clean Up Configuration
+        now opens this tab). They remove ZBox's local copies only. The
+        age is saved with OK, like every other setting here."""
+        self._cache_age_days = getattr(self.settings, "cache_max_message_age_days", 30)
+        intro = wx.StaticText(panel, label=lang.t(
+            "dialogs", "cache_note_intro",
+            default=(
+                "These remove ZBox's local copies only. Nothing is deleted "
+                "from any mail server, and a removed message is downloaded "
+                "again the next time you open it."
+            ),
+        ))
+        wrap_text(intro)
+        sizer.Add(intro, 0, wx.EXPAND | wx.ALL, 10)
+
+        self.cache_clear_button = wx.Button(
+            panel,
+            label=lang.t(
+                "dialogs", "cache_clear_now",
+                default="Clear Offline Message Cache Now... (Ctrl+Shift+Delete)",
+            ),
+        )
+        self.cache_clear_button.Bind(wx.EVT_BUTTON, self._on_cache_clear_now)
+        sizer.Add(self.cache_clear_button, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+
+        age_note = wx.StaticText(panel, label=lang.t(
+            "dialogs", "cache_note_age",
+            default=(
+                "Automatic clean up runs once a day, when ZBox has had no "
+                "keyboard activity for ten minutes and no message is open. "
+                "It goes by each message's own date, including messages "
+                "that are still in your account."
+            ),
+        ))
+        wrap_text(age_note)
+        sizer.Add(age_note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
+
+        self.cache_age_button = wx.Button(panel, label=age_button_label(self._cache_age_days))
+        self.cache_age_button.Bind(wx.EVT_BUTTON, self._on_cache_choose_age)
+        sizer.Add(self.cache_age_button, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 16)
+
+    def _on_cache_clear_now(self, _event):
+        """Saves like OK, closes, then runs the frame's own Clear Offline
+        Message Cache, so its confirmation and spoken result never sit
+        on top of this dialog. The same way Check now works."""
+        handler = getattr(self.GetParent(), "_on_clear_message_cache", None)
+        self.EndModal(wx.ID_OK)
+        if handler is not None:
+            wx.CallAfter(handler, None)
+
+    def _on_cache_choose_age(self, _event):
+        labels = [
+            lang.t('dialogs', 'cc_age_choice', default="Every message cache %s old") % age_choice_label(days)
+            for days in CACHE_AGE_CHOICES
+        ]
+        chooser = wx.SingleChoiceDialog(
+            self,
+            lang.t(
+                "dialogs", "cache_age_prompt",
+                default="Automatically remove cached messages older than:",
+            ),
+            lang.t(
+                "dialogs", "title_automatic_cleanup",
+                default="Automatic Clean Up",
+            ),
+            labels,
+        )
+        if self._cache_age_days in CACHE_AGE_CHOICES:
+            chooser.SetSelection(CACHE_AGE_CHOICES.index(self._cache_age_days))
+        if chooser.ShowModal() == wx.ID_OK:
+            self._cache_age_days = CACHE_AGE_CHOICES[chooser.GetSelection()]
+            self.cache_age_button.SetLabel(age_button_label(self._cache_age_days))
+        chooser.Destroy()
+        self.cache_age_button.SetFocus()
 
     def _build_updates_group(self, panel, sizer, settings):
         """Settings > Updates: the automatic check, what to do when an
@@ -1417,6 +1595,86 @@ class SettingsDialog(wx.Dialog):
         self.EndModal(wx.ID_OK)
         if handler is not None:
             wx.CallAfter(handler, None)
+
+    def _on_private_mode(self, event):
+        """Private mode on: a master password must exist and be entered,
+        then the warning, with No as the default. Any refusal leaves the
+        box off, with focus back on it. Turning it off needs neither."""
+        box = self.private_mode_checkbox
+        if not box.GetValue():
+            self._private_confirmed = False
+            return
+        if getattr(self.settings, "private_mode", False):
+            return  # it was on when Settings opened
+        import dpapi_secret_store
+
+        title = lang.t("dialogs", "title_private_mode", default="Private Mode")
+        config_dir = self._config_dir()
+        try:
+            has_master = bool(config_dir) and dpapi_secret_store.has_master_password(config_dir)
+        except Exception:  # noqa: BLE001
+            has_master = False
+        if not has_master:
+            wx.MessageBox(
+                lang.t(
+                    "dialogs", "private_mode_need_master",
+                    default="Private mode needs a master password, because only "
+                    "the master password opens your accounts on a computer that "
+                    "is not yours. Set one with the Master password button, then "
+                    "turn on private mode.",
+                ),
+                title, wx.OK | wx.ICON_WARNING, self,
+            )
+            box.SetValue(False)
+            box.SetFocus()
+            return
+        dialog = wx.PasswordEntryDialog(
+            self,
+            lang.t(
+                "dialogs", "private_mode_enter_master",
+                default="Enter the master password to turn on private mode.",
+            ),
+            title,
+        )
+        try:
+            entered = dialog.GetValue() if dialog.ShowModal() == wx.ID_OK else ""
+        finally:
+            dialog.Destroy()
+        correct = False
+        if entered:
+            try:
+                correct = bool(dpapi_secret_store.verify_master_password(config_dir, entered))
+            except Exception:  # noqa: BLE001 - a wrong password raises here
+                correct = False
+            if not correct:
+                wx.MessageBox(
+                    lang.t(
+                        "errors", "unlock_password_wrong",
+                        default="That master password is not correct.",
+                    ),
+                    title, wx.OK | wx.ICON_ERROR, self,
+                )
+        if not correct:
+            box.SetValue(False)
+            box.SetFocus()
+            return
+        answer = wx.MessageBox(
+            lang.t(
+                "dialogs", "private_mode_confirm",
+                default="Private mode keeps no copies of your mail on this "
+                "computer or on the drive ZBox runs from. Turning it on deletes "
+                "ZBox's offline copies, saved messages, opened attachments, the "
+                "browser data of HTML mail and the debug logs. Nothing on your "
+                "mail servers is deleted, and your accounts, contacts and "
+                "settings are kept. Turn on private mode?",
+            ),
+            title, wx.YES_NO | wx.NO_DEFAULT | wx.ICON_WARNING, self,
+        )
+        if answer == wx.YES:
+            self._private_confirmed = True
+        else:
+            box.SetValue(False)
+        box.SetFocus()
 
     def _config_dir(self):
         paths = getattr(self.GetParent(), "paths", None)
@@ -1542,7 +1800,8 @@ class SettingsDialog(wx.Dialog):
                 wx.OK | wx.ICON_ERROR, self,
             )
             return
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "shortcut_created_settings",
                 default="Shortcut created:\n%s\n\nIt starts ZBox from:\n%s"
@@ -1550,7 +1809,6 @@ class SettingsDialog(wx.Dialog):
                 path=path, base=base,
             ),
             lang.t("dialogs", "title_desktop_shortcut", default="Desktop Shortcut"),
-            wx.OK | wx.ICON_INFORMATION, self,
         )
 
     def _runtime_status_text(self, parent):
@@ -1605,69 +1863,6 @@ class SettingsDialog(wx.Dialog):
             (lang.t('dialogs', 'set_rt_bundled_none', default='Bundled runtime: none installed, so ZBox uses the system-wide one.') + ' ') + system_line
         )
 
-    def _silence_value_text(self, ms):
-        ms = max(0, min(2000, int(ms)))
-        if ms == 0:
-            return "0 ms — off (recommended)"
-        return f"{ms} ms ({ms / 1000:.1f} seconds)"
-
-    def _on_silence_slider(self, _event):
-        self.silence_value_label.SetLabel(
-            self._silence_value_text(self.silence_slider.GetValue())
-        )
-
-    def _announce_value_text(self, ms):
-        ms = max(0, min(6000, int(ms)))
-        if ms == 0:
-            return "0 \u2014 stays until you press a key"
-        return "%d ms (%.1f seconds)" % (ms, ms / 1000)
-
-    def _on_announce_slider(self, _event):
-        self.announce_value_label.SetLabel(
-            self._announce_value_text(self.announce_slider.GetValue())
-        )
-
-    def _focus_delay_value_text(self, level):
-        level = max(1, min(10, int(level)))
-        ms = level * 100
-        return f"Level {level} \u2014 {ms} ms ({ms / 1000:.1f} seconds)"
-
-    def _on_focus_delay_slider(self, _event):
-        self.focus_delay_value_label.SetLabel(
-            self._focus_delay_value_text(self.focus_delay_slider.GetValue())
-        )
-
-    def _autosave_value_text(self, seconds):
-        seconds = max(0, min(600, int(seconds)))
-        if seconds == 0:
-            return lang.t('dialogs', 'set_autosave_off', default="Off \u2014 use Save Draft (Ctrl+S) to save manually")
-        if seconds < 60:
-            return lang.t('dialogs', 'set_autosave_seconds', default='Every {seconds} seconds', seconds=seconds)
-        minutes = seconds / 60
-        return f"Every {seconds} seconds ({minutes:.1f} minutes)"
-
-    def _on_autosave_slider(self, _event):
-        raw = self.autosave_slider.GetValue()
-        # 1-14 isn't a real choice (settings_manager clamps it up to
-        # 15 on save) -- snapping the label to what will actually be
-        # stored, live, avoids the slider claiming "every 8 seconds"
-        # for a value that becomes 15 the moment you click OK.
-        effective = 0 if raw == 0 else max(15, raw)
-        self.autosave_value_label.SetLabel(self._autosave_value_text(effective))
-
-    def _auto_purge_value_text(self, days):
-        days = max(0, min(365, int(days)))
-        if days == 0:
-            return lang.t('dialogs', 'set_purge_off', default="Off \u2014 Trash and Junk are never auto-purged")
-        if days == 1:
-            return lang.t('dialogs', 'set_purge_one_day', default="After 1 day")
-        return lang.t('dialogs', 'set_purge_days', default='After {days} days', days=days)
-
-    def _on_auto_purge_slider(self, _event):
-        self.auto_purge_value_label.SetLabel(
-            self._auto_purge_value_text(self.auto_purge_slider.GetValue())
-        )
-
     def _on_reading_font_override_checkbox(self, _event):
         self.reading_font_size_spin.Enable(
             self.reading_font_override_checkbox.GetValue()
@@ -1714,15 +1909,28 @@ class SettingsDialog(wx.Dialog):
         self.settings.default_message_view = (
             "html" if self.html_view_radio.GetValue() else "text"
         )
-        self.settings.html_silence_hold_ms = self.silence_slider.GetValue()
-        self.settings.webview_focus_delay_level = self.focus_delay_slider.GetValue()
-        self.settings.announcement_hold_ms = self.announce_slider.GetValue()
-        self.settings.announce_actions = self.announce_actions_checkbox.GetValue()
+        self.settings.html_silence_hold_ms = _chosen_value(
+            self.silence_choice, self.settings.html_silence_hold_ms
+        )
+        self.settings.webview_focus_delay_level = _chosen_value(
+            self.focus_delay_choice, self.settings.webview_focus_delay_level
+        )
+        self.settings.announcement_hold_ms = _chosen_value(
+            self.announce_choice, self.settings.announcement_hold_ms
+        )
+        speech = self.announce_actions_checkbox.GetValue()
+        if speech != self.__dict__.get("_speech_shown", speech):
+            self.settings.announce_actions = speech
         self.settings.show_message_headers = self.headers_checkbox.GetValue()
         self.settings.attachment_save_dir = self.attachment_dir_field.GetValue().strip()
         self.settings.bare_key_shortcuts_enabled = self.bare_key_shortcuts_checkbox.GetValue()
+        headers_box = getattr(self, "list_headers_checkbox", None)
+        if headers_box is not None:
+            self.settings.show_list_headers = headers_box.GetValue()
         self.settings.clear_cache_leaving_inbox = self.clear_inbox_cache_checkbox.GetValue()
-        self.settings.draft_autosave_seconds = self.autosave_slider.GetValue()
+        self.settings.draft_autosave_seconds = _chosen_value(
+            self.autosave_choice, self.settings.draft_autosave_seconds
+        )
         self.settings.webview_backend = (
             "ie" if self.engine_ie_radio.GetValue() else "edge"
         )
@@ -1744,9 +1952,21 @@ class SettingsDialog(wx.Dialog):
         self.settings.stay_maximized = self.stay_maximized_checkbox.GetValue()
         self.settings.run_at_windows_startup = self.run_at_startup_checkbox.GetValue()
         self.settings.lock_on_full_quit = self.lock_on_quit_checkbox.GetValue()
-        self.settings.auto_purge_days = self.auto_purge_slider.GetValue()
+        # Never on without the master password and the warning
+        # (_on_private_mode); off needs neither.
+        private = self.private_mode_checkbox.GetValue()
+        if (private and not getattr(self.settings, "private_mode", False)
+                and not self.__dict__.get("_private_confirmed")):
+            private = False
+        self.settings.private_mode = private
+        self.settings.auto_purge_days = _chosen_value(
+            self.auto_purge_choice, self.settings.auto_purge_days
+        )
         self.settings.update_auto_check = self.update_auto_checkbox.GetValue()
         self.settings.update_mode = (
             "silent" if self.update_silent_radio.GetValue() else "ask"
+        )
+        self.settings.cache_max_message_age_days = self.__dict__.get(
+            "_cache_age_days", self.settings.cache_max_message_age_days
         )
         return self.settings

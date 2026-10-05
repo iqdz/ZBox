@@ -45,6 +45,8 @@ import threading
 import time
 import uuid
 
+import secure_json
+
 import himalaya_client
 import imap_body_fetch
 
@@ -337,6 +339,9 @@ class DeleteQueue:
     def __init__(self, paths, account_for, on_done, dispatch, pause=time.sleep):
         self._paths = paths
         self._file = os.path.join(paths.userdata, QUEUE_FILE_NAME)
+        # Encrypted at rest when the paths carry a config folder
+        # (secure_json), like contacts.json.
+        self._config = getattr(paths, "config", None)
         self._account_for = account_for
         self._on_done = on_done
         self._dispatch = dispatch
@@ -351,8 +356,7 @@ class DeleteQueue:
 
     def _load(self):
         try:
-            with open(self._file, "r", encoding="utf-8") as handle:
-                data = json.load(handle)
+            data = secure_json.load(self._config, self._file)
         except FileNotFoundError:
             return []
         except (OSError, ValueError):
@@ -371,10 +375,7 @@ class DeleteQueue:
         folder = os.path.dirname(self._file)
         try:
             os.makedirs(folder, exist_ok=True)
-            temporary = self._file + ".tmp"
-            with open(temporary, "w", encoding="utf-8") as handle:
-                json.dump(self._batches, handle, indent=1)
-            os.replace(temporary, self._file)
+            secure_json.save(self._config, self._file, self._batches, indent=1)
         except OSError:
             logger.warning("Could not save %s.", self._file, exc_info=True)
 

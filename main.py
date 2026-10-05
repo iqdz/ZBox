@@ -586,6 +586,43 @@ def ensure_webview2_accessibility_args(logger=None):
         logger.info("WebView2 additional browser args: %s", os.environ.get(var, ""))
 
 
+def ensure_webview2_data_folder(cache_dir, logger=None):
+    """
+    Keeps the HTML view's browser data (its cache, cookies and local
+    storage) inside ZBox's own folder, in data\\cache\\webview2, so a
+    portable ZBox leaves none of it on the computer it runs on. Without
+    this, wxWidgets puts it in the Windows account's Local AppData folder.
+
+    WEBVIEW2_USER_DATA_FOLDER is the WebView2 loader's documented override,
+    read when the first wx.html2.WebView creates the environment, the same
+    way as the two variables above, so it must be set before then. A value
+    set outside ZBox is left alone. Browser data an earlier ZBox left in
+    Local AppData\\ZBox\\EBWebView is deleted.
+    """
+    import shutil
+
+    var = "WEBVIEW2_USER_DATA_FOLDER"
+    folder = os.path.join(cache_dir, "webview2")
+    try:
+        os.makedirs(folder, exist_ok=True)
+    except OSError:
+        pass
+    if not os.environ.get(var):
+        os.environ[var] = folder
+    local = os.environ.get("LOCALAPPDATA")
+    if local:
+        old_root = os.path.join(local, "ZBox")
+        old = os.path.join(old_root, "EBWebView")
+        if os.path.isdir(old):
+            shutil.rmtree(old, ignore_errors=True)
+            try:
+                os.rmdir(old_root)  # only when nothing else is in it
+            except OSError:
+                pass
+    if logger is not None:
+        logger.info("WebView2 data folder: %s", os.environ.get(var, ""))
+
+
 def main(minimized=False, debug=False, updated_from=None, update_failed=False):
     from app.paths import Paths
     from app.settings_manager import SettingsManager
@@ -608,6 +645,15 @@ def main(minimized=False, debug=False, updated_from=None, update_failed=False):
     # is the one way to get a log of the first-run path.
     debug_logging = settings_manager.settings.debug_logging or debug
 
+    # Private mode (app/private_mode.py): no debug log, and whatever a run
+    # that did not close normally left behind is deleted before anything
+    # else starts.
+    if getattr(settings_manager.settings, "private_mode", False):
+        import private_mode
+
+        private_mode.ACTIVE = True
+        debug_logging = False
+        private_mode.clear_local_copies(CACHE_DIR, LOGS_DIR)
     setup_logging(debug_logging)
     install_exception_logging()
     logger = logging.getLogger("zbox.main")
@@ -627,6 +673,7 @@ def main(minimized=False, debug=False, updated_from=None, update_failed=False):
         logger,
     )
     ensure_webview2_accessibility_args(logger)
+    ensure_webview2_data_folder(CACHE_DIR, logger)
 
     try:
         from app.main_frame import ZBoxApp
@@ -650,6 +697,14 @@ def main(minimized=False, debug=False, updated_from=None, update_failed=False):
             updated_from=updated_from, update_failed=update_failed,
         )
         app.MainLoop()
+        # Private mode, as it is now (it may have been turned on in
+        # Settings during this run): the clean-up after the window.
+        if getattr(settings_manager.settings, "private_mode", False):
+            import private_mode
+
+            private_mode.close_cleanup(
+                paths, getattr(settings_manager.settings, "private_home", ""),
+            )
 
     except Exception as exc:
         logger.exception("ZBox failed to start.")

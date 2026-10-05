@@ -10,7 +10,7 @@ Vertrouwde bediening
 Om de overstap van andere e-mailprogramma's soepel te laten verlopen, biedt ZBox vriendelijke, flexibele sneltoetsen. Vaak voeren meerdere sneltoetsen dezelfde actie uit; zo verzenden zowel Alt+S als Ctrl+Enter een bericht. De volledige lijst vindt u onder Help, Sneltoetsen.
 
 Account instellen
-Accounts van Outlook.com, Hotmail, Live en Microsoft 365 melden zich aan met uw Microsoft-account, in uw browser of met een code. Rechtstreeks aanmelden bij Google komt in een toekomstige update. Tot die tijd kunt u uw Gmail-account koppelen door een app-wachtwoord te maken in plaats van uw gewone wachtwoord te gebruiken (zie de knop hieronder voor instructies).
+Accounts van Outlook.com, Hotmail, Live en Microsoft 365 melden zich aan met uw Microsoft-account, in uw browser of met een code.Tot die tijd kunt u uw Gmail-account koppelen door een app-wachtwoord te maken in plaats van uw gewone wachtwoord te gebruiken (zie de knop hieronder voor instructies).
 
 Licenties en dankbetuigingen
 Druk hieronder op Licentie bekijken om de licentie van ZBox te lezen en de onderdelen van derden te zien die het mogelijk maken. Daartoe behoren Himalaya, de blokkeerlijsten StevenBlack hosts en EasyPrivacy, de lijst Phishing.Database en (in een gebouwde versie) Python, wxPython, imapclient, pywin32, keyring en accessible_output2 met zijn clientbibliotheken voor schermlezers.

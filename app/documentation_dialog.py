@@ -12,6 +12,7 @@ opened or copied directly from the folder.
 import wx
 
 import lang
+import notice_toast
 
 from accessible import bind_close_accelerators, make_read_only_viewer
 
@@ -87,13 +88,13 @@ class DocumentationDialog(wx.Dialog):
         if wx.TheClipboard.Open():
             wx.TheClipboard.SetData(wx.TextDataObject(self._text))
             wx.TheClipboard.Close()
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "documentation_copied",
                     default="The full ZBox documentation was copied to the clipboard.",
                 ),
                 lang.t("dialogs", "title_documentation", default="ZBox Documentation"),
-                wx.OK | wx.ICON_INFORMATION,
             )
         else:
             wx.MessageBox(

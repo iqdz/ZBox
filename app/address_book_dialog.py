@@ -20,6 +20,7 @@ import os
 import wx
 
 import lang
+import notice_toast
 from accessible import wrap_text
 import contacts as contacts_module
 
@@ -287,13 +288,13 @@ class AddressBookDialog(wx.Dialog):
     def _on_edit(self, event):
         contact = self._selected_contact()
         if contact is None:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "contact_select_to_edit",
                     default="Select a contact to edit.",
                 ),
                 lang.t("dialogs", "title_edit_contact", default="Edit Contact"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
         dialog = ContactEditDialog(
@@ -312,13 +313,13 @@ class AddressBookDialog(wx.Dialog):
     def _on_delete(self, event):
         contact = self._selected_contact()
         if contact is None:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "contact_select_to_delete",
                     default="Select a contact to delete.",
                 ),
                 lang.t("dialogs", "title_delete_contact", default="Delete Contact"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
         label = contacts_module.format_contact(contact)
@@ -387,7 +388,8 @@ class AddressBookDialog(wx.Dialog):
             return
 
         self._populate()
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "contacts_imported",
                 default=f"Imported {count} contact(s).", count=count,
@@ -396,18 +398,17 @@ class AddressBookDialog(wx.Dialog):
                 default="No contacts were found in that file.",
             ),
             lang.t("dialogs", "title_import_contacts", default="Import Contacts"),
-            wx.OK | wx.ICON_INFORMATION,
         )
 
     def _on_export(self, event):
         if not self._rows:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "contacts_none_to_export",
                     default="There are no contacts to export.",
                 ),
                 lang.t("dialogs", "title_export_contacts", default="Export Contacts"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
 
@@ -456,14 +457,14 @@ class AddressBookDialog(wx.Dialog):
             )
             return
 
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "contacts_exported",
                 default=f"Exported {len(self._rows)} contact(s) to:\n{path}",
                 count=len(self._rows), path=path,
             ),
             lang.t("dialogs", "title_export_contacts", default="Export Contacts"),
-            wx.OK | wx.ICON_INFORMATION,
         )
 
     # --- Groups (mailing lists) --------------------------------------

@@ -10,7 +10,7 @@ Utilização familiar
 Para tornar a mudança a partir de outros clientes de correio simples, o ZBox oferece atalhos de teclado práticos e flexíveis. Muitas vezes vários atalhos fazem a mesma ação; por exemplo, tanto Alt+S como Ctrl+Enter enviam uma mensagem. Pode ver a lista completa em Ajuda, Atalhos de teclado.
 
 Configuração de contas
-As contas do Outlook.com, Hotmail, Live e Microsoft 365 iniciam sessão com a sua conta Microsoft, no navegador ou com um código. O início de sessão nativo com a Google será adicionado numa atualização futura. Por agora, pode ligar a sua conta Gmail gerando uma palavra-passe de aplicação em vez de utilizar a sua palavra-passe habitual (veja o botão abaixo para as instruções).
+As contas do Outlook.com, Hotmail, Live e Microsoft 365 iniciam sessão com a sua conta Microsoft, no navegador ou com um código.Por agora, pode ligar a sua conta Gmail gerando uma palavra-passe de aplicação em vez de utilizar a sua palavra-passe habitual (veja o botão abaixo para as instruções).
 
 Licenças e créditos
 Prima Ver licença abaixo para ler a licença do ZBox e ver os componentes de terceiros que o tornam possível. Entre eles estão o Himalaya, as listas de bloqueio StevenBlack hosts e EasyPrivacy, a lista Phishing.Database e (numa cópia compilada) Python, wxPython, imapclient, pywin32, keyring e accessible_output2 com as suas bibliotecas cliente de leitores de ecrã.

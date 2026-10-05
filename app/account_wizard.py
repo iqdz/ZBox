@@ -12,6 +12,7 @@ import uuid
 import wx
 
 import lang
+import notice_toast
 import ms_oauth
 from accessible import make_protected_field, set_field_protected, wrap_text
 import wx.adv
@@ -318,14 +319,14 @@ class LoginPage(wx.adv.WizardPageSimple):
             )
             return
         self.show_password.SetValue(False)
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "wizard_password_not_shown",
                 default="The password cannot be shown on this system. It is still "
                 "typed and saved normally.",
             ),
             lang.t("dialogs", "title_show_password", default="Show Password"),
-            wx.OK | wx.ICON_INFORMATION,
         )
 
     def _on_toggle_same(self, event):
@@ -850,14 +851,14 @@ class AccountWizard:
         def on_success(envelopes):
             if not finished():
                 return
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "wizard_test_succeeded",
                     default=f"Connection succeeded. {len(envelopes)} message(s) found in Inbox.",
                     count=len(envelopes),
                 ),
                 lang.t("dialogs", "title_test_connection", default="Test Connection"),
-                wx.OK | wx.ICON_INFORMATION,
             )
 
         def on_error(exc):

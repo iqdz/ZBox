@@ -20,7 +20,7 @@ import body_html
 import compose_body
 import lang
 from accessible import fit_dialog, wrap_text
-from announce import speak
+from spoken_feedback import speak
 
 
 class SignatureEditDialog(wx.Dialog):

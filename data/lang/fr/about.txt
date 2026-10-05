@@ -10,7 +10,7 @@ Une prise en main familière
 Pour rendre la transition depuis d'autres clients de messagerie aussi simple que possible, ZBox propose des raccourcis clavier pratiques et flexibles. Plusieurs raccourcis effectuent souvent la même action ; par exemple, Alt+S et Ctrl+Enter envoient tous deux un message. La liste complète se trouve dans Aide, Raccourcis clavier.
 
 Configuration des comptes
-Les comptes Outlook.com, Hotmail, Live et Microsoft 365 se connectent avec votre compte Microsoft, dans votre navigateur ou avec un code. La connexion native à Google sera ajoutée dans une prochaine mise à jour. En attendant, vous pouvez lier votre compte Gmail en créant un mot de passe d'application au lieu d'utiliser votre mot de passe habituel (voir le bouton ci-dessous pour les instructions).
+Les comptes Outlook.com, Hotmail, Live et Microsoft 365 se connectent avec votre compte Microsoft, dans votre navigateur ou avec un code.En attendant, vous pouvez lier votre compte Gmail en créant un mot de passe d'application au lieu d'utiliser votre mot de passe habituel (voir le bouton ci-dessous pour les instructions).
 
 Licences et remerciements
 Appuyez sur Afficher la licence ci-dessous pour lire la licence de ZBox et voir les composants tiers qui le rendent possible. Parmi eux : Himalaya, les listes de blocage StevenBlack hosts et EasyPrivacy, la liste Phishing.Database et (dans une version compilée) Python, wxPython, imapclient, pywin32, keyring et accessible_output2 avec ses bibliothèques clientes de lecteurs d'écran.

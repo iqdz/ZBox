@@ -24,6 +24,7 @@ from types import SimpleNamespace
 
 import data_crypto
 import dpapi_secret_store
+import graph_client
 import himalaya_client
 import legacy_keyring_store
 import ms_oauth
@@ -66,6 +67,28 @@ def _clean_port(value, default):
     except (TypeError, ValueError):
         return default
     return port if 1 <= port <= 65535 else default
+
+
+# OpenPGP sending settings for one address (stage 3), as Thunderbird's
+# End-to-End Encryption page has them: the personal key ("" is the personal
+# key for the address, "none" no OpenPGP, else a fingerprint), encryption
+# for new messages, signing of unencrypted ones, and the Autocrypt header.
+OPENPGP_DEFAULTS = {"key": "", "encrypt": False, "sign": False, "autocrypt": True}
+
+
+def _normalize_openpgp(value):
+    """The stored form of OpenPGP settings: only what differs from
+    OPENPGP_DEFAULTS, so an address without any stays exactly as before."""
+    if not isinstance(value, dict):
+        return {}
+    clean = {}
+    key = str(value.get("key") or "").strip().lower()
+    if key == "none" or (40 <= len(key) <= 64 and all(c in "0123456789abcdef" for c in key)):
+        clean["key"] = key
+    for name in ("encrypt", "sign", "autocrypt"):
+        if name in value and bool(value[name]) != OPENPGP_DEFAULTS[name]:
+            clean[name] = bool(value[name])
+    return clean
 
 
 def _normalize_identities(entries):
@@ -128,6 +151,9 @@ def _normalize_identities(entries):
             clean["smtp_auth"] = "login" if entry.get("smtp_auth") == "login" else "plain"
             clean["smtp_login"] = (entry.get("smtp_login") or "").strip() or email
             clean["identity_id"] = _clean_identity_id(entry.get("identity_id"))
+        openpgp = _normalize_openpgp(entry.get("openpgp"))
+        if openpgp:
+            clean["openpgp"] = openpgp
         result.append(clean)
     return result
 
@@ -203,6 +229,7 @@ class Account:
         enabled=True,
         auto_check=True,
         auth_method="password",
+        openpgp=None,
     ):
         self.account_id = account_id or uuid.uuid4().hex[:12]
         self.display_name = display_name
@@ -298,6 +325,10 @@ class Account:
         # through --get-token; see ms_oauth). Anything else is a
         # password, so an account saved by an older build is unchanged.
         self.auth_method = "microsoft" if auth_method == "microsoft" else "password"
+        # The primary address's OpenPGP sending settings (stage 3), only
+        # what differs from OPENPGP_DEFAULTS; extra identities keep theirs
+        # in their own entry.
+        self.openpgp = _normalize_openpgp(openpgp)
         # Transient, never saved: outgoing passwords typed for extra
         # identities in the settings dialog ({identity_id: password}),
         # and the secret-store keys of identities that no longer have
@@ -330,6 +361,15 @@ class Account:
             if extra["email"].lower() == target:
                 return extra
         return None
+
+    def openpgp_settings(self, email):
+        """The OpenPGP sending settings for email, over OPENPGP_DEFAULTS:
+        the extra identity's own, or the account's for its primary address."""
+        extra = self.identity_settings(email)
+        stored = extra.get("openpgp") if extra is not None else self.openpgp
+        result = dict(OPENPGP_DEFAULTS)
+        result.update(stored or {})
+        return result
 
     def identity_secret_key(self, extra):
         """Where an identity's own outgoing password is stored."""
@@ -387,6 +427,10 @@ class Account:
         # "password" anywhere in them.
         if self.auth_method == "microsoft":
             data["auth_method"] = "microsoft"
+        # Only when set, so an account without OpenPGP settings is saved
+        # exactly as before.
+        if self.openpgp:
+            data["openpgp"] = dict(self.openpgp)
         return data
 
     @classmethod
@@ -418,6 +462,7 @@ class Account:
             enabled=data.get("enabled", True),
             auto_check=data.get("auto_check", True),
             auth_method=data.get("auth_method", "password"),
+            openpgp=data.get("openpgp"),
         )
 
 
@@ -766,6 +811,10 @@ class AccountManager:
         duration of the call and removed again in a finally block
         whether the test passes or fails.
         """
+        if graph_client.uses_graph(account):
+            # A personal Microsoft account works through Microsoft
+            # Graph: the test lists one Inbox message there.
+            return graph_client.test_connection(self.paths, account)
         section = account.toml_section_name()
         secret_cmd = _toml_string_array(self._get_secret_argv(account.account_id))
         imap_scheme = "imaps" if account.imap_encryption == "tls" else "imap"
@@ -911,6 +960,41 @@ class AccountManager:
             return [sys.executable, "--get-secret", account_id]
         return [sys.executable, self.paths.main_script, "--get-secret", account_id]
 
+    def _graph_section_tail(self, account):
+        """The rest of a Graph account's sections (write_himalaya_config):
+        its offline maildir, then a section per identity with its own
+        outgoing server, SMTP only."""
+        lines = []
+        maildir_root = os.path.join(self.paths.cache_dir(account.account_id), "offline_mail")
+        lines.append(f"maildir.root = {_toml_string(maildir_root)}")
+        lines.append("")
+        for extra in account.own_smtp_identities():
+            identity_cmd = _toml_string_array(
+                self._get_secret_argv(account.identity_secret_key(extra))
+            )
+            identity_scheme = "smtps" if extra["smtp_encryption"] == "tls" else "smtp"
+            identity_mech = "login" if extra.get("smtp_auth") == "login" else "plain"
+            lines.append(f"[accounts.{account.identity_section_name(extra)}]")
+            lines.append(f'email = {_toml_string(extra["email"])}')
+            lines.append(
+                f'display-name = {_toml_string(extra["display_name"] or account.display_name)}'
+            )
+            lines.append("default = false")
+            lines.append("message.send.save-copy = false")
+            lines.append("")
+            identity_url = "%s://%s:%s" % (
+                identity_scheme, extra["smtp_host"], extra["smtp_port"],
+            )
+            lines.append(f"smtp.server = {_toml_string(identity_url)}")
+            if extra["smtp_encryption"] == "start-tls":
+                lines.append("smtp.starttls = true")
+            lines.append(
+                f'smtp.sasl.{identity_mech}.username = {_toml_string(extra["smtp_login"])}'
+            )
+            lines.append(f"smtp.sasl.{identity_mech}.password.command = {identity_cmd}")
+            lines.append("")
+        return lines
+
     def write_himalaya_config(self):
         """
         Regenerates Himalaya's TOML config from the current account
@@ -928,6 +1012,9 @@ class AccountManager:
         """
         lines = []
         for account in self.accounts:
+            # The special folders learned from the server on an earlier run,
+            # so the aliases below use them from launch on.
+            provider_presets.load_learned_folders(self.paths, account.account_id)
             section = account.toml_section_name()
             secret_cmd = _toml_string_array(
                 self._get_secret_argv(account.account_id)
@@ -949,11 +1036,11 @@ class AccountManager:
             # Mail" for archive) instead of names that don't exist on
             # its server; every other provider keeps today's plain
             # names since they have no override in provider_presets.
-            sent_folder = provider_presets.himalaya_folder_name(account.imap_host, "Sent")
-            drafts_folder = provider_presets.himalaya_folder_name(account.imap_host, "Drafts")
-            trash_folder = provider_presets.himalaya_folder_name(account.imap_host, "Trash")
-            junk_folder = provider_presets.himalaya_folder_name(account.imap_host, "Junk")
-            archive_folder = provider_presets.himalaya_folder_name(account.imap_host, "Archive")
+            sent_folder = provider_presets.himalaya_folder_name(account.imap_host, "Sent", account.account_id)
+            drafts_folder = provider_presets.himalaya_folder_name(account.imap_host, "Drafts", account.account_id)
+            trash_folder = provider_presets.himalaya_folder_name(account.imap_host, "Trash", account.account_id)
+            junk_folder = provider_presets.himalaya_folder_name(account.imap_host, "Junk", account.account_id)
+            archive_folder = provider_presets.himalaya_folder_name(account.imap_host, "Archive", account.account_id)
             lines.append('folder.aliases.inbox = "INBOX"')
             lines.append(f'folder.aliases.sent = {_toml_string(sent_folder)}')
             lines.append(f'folder.aliases.drafts = {_toml_string(drafts_folder)}')
@@ -970,6 +1057,12 @@ class AccountManager:
             # so a sent message reliably gets a copy saved to Sent.
             lines.append("message.send.save-copy = true")
             lines.append("")
+            if graph_client.uses_graph(account):
+                # A personal Microsoft account works through Microsoft
+                # Graph: no IMAP and no SMTP here, only its offline copy
+                # and any identity with its own outgoing server.
+                lines.extend(self._graph_section_tail(account))
+                continue
             lines.append(
                 f'imap.server = {_toml_string(f"{imap_scheme}://{account.imap_host}:{account.imap_port}")}'
             )

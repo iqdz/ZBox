@@ -27,6 +27,8 @@ import re
 import threading
 import time
 
+import secure_json
+
 logger = logging.getLogger("zbox.junkrules")
 
 ALLOWED = "allowed"
@@ -108,8 +110,10 @@ class JunkRules:
     thread, so every access takes the lock. A failed save loses one
     change, never mail, and is logged."""
 
-    def __init__(self, path):
+    def __init__(self, path, config_dir=None):
         self._path = path
+        # Encrypted at rest when a config folder is given (secure_json).
+        self._config = config_dir
         self._lock = threading.Lock()
         self._blocked = set()
         self._allowed = set()
@@ -123,8 +127,7 @@ class JunkRules:
 
     def _load(self):
         try:
-            with open(self._path, "r", encoding="utf-8") as handle:
-                data = json.load(handle)
+            data = secure_json.load(self._config, self._path)
         except FileNotFoundError:
             return
         except (OSError, ValueError):
@@ -146,10 +149,7 @@ class JunkRules:
             directory = os.path.dirname(self._path)
             if directory:
                 os.makedirs(directory, exist_ok=True)
-            temp = self._path + ".tmp"
-            with open(temp, "w", encoding="utf-8") as handle:
-                json.dump(data, handle, indent=2)
-            os.replace(temp, self._path)
+            secure_json.save(self._config, self._path, data)
         except OSError:
             logger.warning("Could not save junk rules to %s.", self._path, exc_info=True)
 

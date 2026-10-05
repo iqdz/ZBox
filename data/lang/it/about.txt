@@ -10,7 +10,7 @@ Un’esperienza familiare
 Per rendere il passaggio da altri client di posta il più semplice possibile, ZBox offre scorciatoie da tastiera pratiche e flessibili. Spesso più scorciatoie eseguono la stessa azione; ad esempio, sia Alt+S sia Ctrl+Invio inviano un messaggio. L’elenco completo si trova in Aiuto, Scorciatoie da tastiera.
 
 Configurazione degli account
-Gli account Outlook.com, Hotmail, Live e Microsoft 365 accedono con il tuo account Microsoft, dal browser o con un codice. L'accesso nativo con Google verrà aggiunto in un aggiornamento futuro. Per ora puoi collegare il tuo account Gmail generando una password per le app invece di usare la tua password abituale (vedi il pulsante qui sotto per le istruzioni).
+Gli account Outlook.com, Hotmail, Live e Microsoft 365 accedono con il tuo account Microsoft, dal browser o con un codice.Per ora puoi collegare il tuo account Gmail generando una password per le app invece di usare la tua password abituale (vedi il pulsante qui sotto per le istruzioni).
 
 Licenze e ringraziamenti
 Premere Visualizza licenza qui sotto per leggere la licenza di ZBox e vedere i componenti di terze parti che lo rendono possibile. Tra questi: Himalaya, gli elenchi di blocco StevenBlack hosts ed EasyPrivacy, l’elenco Phishing.Database e (in una versione compilata) Python, wxPython, imapclient, pywin32, keyring e accessible_output2 con le sue librerie client per le utilità per la lettura dello schermo.

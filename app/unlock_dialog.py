@@ -24,6 +24,7 @@ import threading
 import wx
 
 import lang
+import notice_toast
 from accessible import fit_dialog, note_text, wrap_text
 import unlock_methods
 import webauthn_unlock
@@ -845,10 +846,10 @@ class UnlockMethodsDialog(wx.Dialog):
                 wx.OK | wx.ICON_ERROR, self,
             )
             return
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t("dialogs", "unlock_method_works", default="That method works."),
             lang.t("dialogs", "title_unlock_methods", default="Unlock Methods"),
-            wx.OK | wx.ICON_INFORMATION, self,
         )
 
     def _on_remove(self, _event):

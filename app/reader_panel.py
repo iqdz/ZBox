@@ -46,7 +46,23 @@ class ReaderPanel(wx.Panel):
         self.reader.SetValue(lang.t('dialogs', 'rdr_load_failed', default='Could not load message.\n\n{message}', message=message))
 
     def set_message(self, message):
-        self.show_body_text(extract_message_body(message))
+        import openpgp_read
+
+        text = extract_message_body(message)
+        status = openpgp_read.status_of(message)
+        if status is not None:
+            # OpenPGP: the security words first, as an open message shows
+            # them above its headers.
+            lines = [openpgp_read.summary(status)]
+            if status.needs_passphrase:
+                lines.append(lang.t(
+                    "dialogs", "pgp_rs_open_to_unlock",
+                    default="Open the message to enter the passphrase.",
+                ))
+            if text:
+                lines.append(text)
+            text = "\n".join(line for line in lines if line)
+        self.show_body_text(text)
 
     def show_body_text(self, body):
         """Text already extracted off the main thread (see

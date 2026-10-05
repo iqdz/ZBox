@@ -19,6 +19,38 @@ voice, rate and settings.
 
 In this version:
 
+1. OpenPGP. Read and write encrypted and signed mail, with the
+   OpenPGP Key Manager in Tools for your keys and your contacts' keys.
+2. S/MIME reading. Tools, S/MIME Certificate Manager imports your own
+   certificate (a .p12 or .pfx file) and other people's certificates.
+   Signed and encrypted S/MIME mail opens with its status above the
+   message. Sending S/MIME mail comes later.
+3. Private mode, for using ZBox from a USB drive on a computer that
+   is not yours. See Private mode below.
+4. Outlook.com, Hotmail, Live and MSN accounts work through Microsoft
+   Graph, so IMAP no longer has to be turned on in Outlook.com.
+5. A Search tab (Ctrl+Shift+F): words in every account or one folder,
+   dates, unread, flagged and attachments, and every message action on
+   the results.
+6. Address suggestions while writing come only from people you wrote
+   to and contacts you saved. Down Arrow in To, Cc or Bcc opens them.
+7. Settings in seven categories in a list, with real values in place
+   of sliders.
+8. Spoken announcements follow your screen reader on their own, and
+   information-only popups are now short notices that never take
+   focus.
+9. Sent, Drafts, Trash, Junk and Archive are found from your server's
+   own markings, so folder names in any language work.
+10. Ctrl+Z undoes a delete, archive or junk action from the message
+    list, the search results, the folder tree or an open message, and
+    in a text field only undoes typing.
+11. Sort By and Columns for the message list.
+12. Everything ZBox keeps now stays in its folder, the browser data of
+    HTML mail included, and its own records are encrypted.
+13. All of this in every interface language.
+
+Also new in testing beta 26.10.02:
+
 1. Microsoft sign-in for Outlook.com, Hotmail, Live, MSN and
    Microsoft 365. Sign in on Microsoft's own page in your browser, or
    with a code on any device. ZBox keeps only an encrypted sign-in
@@ -37,17 +69,6 @@ In this version:
    show up, and focus stays on the top message until you move it.
 5. A privacy policy, in [PRIVACY.md](PRIVACY.md).
 
-Also new in testing beta 26.10.01:
-
-1. Per-identity settings. Each extra identity can have its own
-   signature, Reply-To, Always Cc and Always Bcc, Drafts and Sent
-   folders, and outgoing server.
-2. Tools > Account Settings is now Account and Identities Settings.
-3. Tab and Shift+Tab stay inside the Mail tab's three panes. Ctrl+Y
-   goes to the folder list, and Enter opens a closed folder.
-4. In the message list, M moves the selected messages, Shift+M moves
-   them by typing part of a folder name, and C copies them.
-
 ## Features
 
 - Built for screen readers first, tested with NVDA and JAWS.
@@ -63,8 +84,11 @@ Also new in testing beta 26.10.01:
 - Unified folders that combine one folder type from every account.
 - Message filters, and Block This Sender.
 - Extra identities, each with its own settings.
+- OpenPGP encryption and signing, and S/MIME reading.
+- Private mode for reading mail on a computer that is not yours.
 - An address book with groups, vCard and CSV import and export.
-- Search across sender, subject and body.
+- A Search tab across every account, by words, dates, unread,
+  flagged and attachments.
 - An offline copy of the Inbox and the Archive.
 - A formatted editor with spell check, signatures, draft autosave,
   and Undo for delete, archive and move.
@@ -137,6 +161,8 @@ On the wizard's Login page, choose Microsoft account as the sign-in
 method; it is chosen for you for Outlook.com, Hotmail and Live
 addresses. Then sign in on Microsoft's own page in your browser, or
 with a code on any device. The server settings are filled in for you.
+Outlook.com, Hotmail, Live and MSN accounts work through Microsoft
+Graph, so IMAP does not have to be turned on in Outlook.com.
 
 Some work or school accounts need their administrator to approve
 ZBox once before it can sign in. Gmail signs in with an app password,
@@ -167,6 +193,31 @@ down.
 ZBox also recognises each computer by a fingerprint. Open the folder
 on a machine it does not know and it locks and asks for the master
 password, then remembers that machine.
+
+## Private mode
+
+For reading mail from a USB drive on a computer that is not yours.
+Turn it on in Settings, App and Data Security, or press
+Windows+Ctrl+Shift+P from any program. It needs a master password,
+asks for it, and warns before it starts.
+
+While it is on, ZBox reads your mail from the server and keeps it in
+memory only. No offline copies, saved messages or debug logs are
+kept. Opened attachments and the browser data of HTML mail are
+deleted when ZBox closes. Closing also ends the programs ZBox
+started, empties the clipboard, and stops trusting the computer,
+unless private mode was turned on from it. If the drive is lost, only
+encrypted files are left on it.
+
+Limits: Windows itself keeps some records no program can remove, such
+as its list of USB drives, the page file, and antivirus and network
+logs. A program that was already open when it took an attachment
+cannot be told apart from your other work, so it is not closed.
+
+Advice: close every opened attachment yourself before closing ZBox,
+above all those opened with Windows' own programs such as Notepad or
+Windows Media Player. Their processes cannot always be ended without
+extra permissions.
 
 ## HTML mail
 

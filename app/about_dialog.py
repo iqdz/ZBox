@@ -18,7 +18,7 @@ import os
 import wx
 
 import lang
-from accessible import bind_close_accelerators, fit_dialog, make_read_only_viewer
+from accessible import make_read_only_viewer
 from eula_dialog import EulaDialog, _open_link
 
 # Paragraphs, not hard-wrapped lines. The viewer wraps them itself,
@@ -52,7 +52,7 @@ ABOUT_TEXT = (
     "Account Setup\n"
     "Outlook.com, Hotmail, Live and Microsoft 365 accounts sign in with "
     "your Microsoft account, in your browser or with a code. Native "
-    "Google sign-in will be added in a future update. For now, you can "
+    "You can "
     "link your Gmail account by generating an App Password instead of "
     "using your standard password (see the button below for "
     "instructions).\n\n"
@@ -102,20 +102,16 @@ def with_version(text, version):
     return title + "\n" + ZBOX_REPO_URL + "\n" + text
 
 
-class AboutZBoxDialog(wx.Dialog):
-    """Read-only About text plus every other button an About page
-    carries. main_frame is the ZBoxMainFrame this was opened from
-    (also this dialog's wx parent) -- kept as a separate reference so
-    Contact Harith can open a real compose tab there rather than only
-    ever falling back to the OS mail handler."""
+class AboutPanel(wx.Panel):
+    """The About ZBox tab of Settings, the last tab: the read-only
+    About text and every other button an About page carries. There is
+    no separate About window: Help > About ZBox opens Settings on this
+    tab. main_frame is the main window Settings was opened from, kept
+    so the Contact button can open a real compose tab there rather
+    than only ever falling back to the OS mail handler."""
 
     def __init__(self, parent, main_frame, license_path):
-        super().__init__(
-            parent,
-            title=lang.t("dialogs", "title_about", default="About ZBox"),
-        )
-        if lang.is_rtl():
-            self.SetLayoutDirection(wx.Layout_RightToLeft)
+        super().__init__(parent)
         self.main_frame = main_frame
         self.license_path = license_path
 
@@ -131,6 +127,7 @@ class AboutZBoxDialog(wx.Dialog):
         self.text.SetValue(
             with_version(lang.body("about", ABOUT_TEXT), read_version(license_path))
         )
+        self.text.SetMinSize((-1, self.text.GetCharHeight() * 12))
         sizer.Add(self.text, 1, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 8)
 
         buttons = wx.BoxSizer(wx.VERTICAL)
@@ -180,41 +177,27 @@ class AboutZBoxDialog(wx.Dialog):
         contact_button.Bind(wx.EVT_BUTTON, self._on_contact)
         buttons.Add(contact_button, 0, wx.EXPAND | wx.BOTTOM, 4)
 
-        close_button = wx.Button(
-            self, wx.ID_CLOSE,
-            lang.t("dialogs", "btn_close_plain", default="Close"),
-        )
-        close_button.Bind(
-            wx.EVT_BUTTON, lambda evt: self.EndModal(wx.ID_CLOSE)
-        )
-        buttons.Add(close_button, 0, wx.ALIGN_RIGHT | wx.TOP, 4)
-
         sizer.Add(buttons, 0, wx.EXPAND | wx.ALL, 8)
-
-        fit_dialog(self, sizer, min_width_chars=60)
-        bind_close_accelerators(self, wx.ID_CLOSE)
-        wx.CallAfter(self.text.SetFocus)
+        self.SetSizer(sizer)
 
     def _on_view_license(self, event):
-        dialog = EulaDialog(self, self.license_path, interactive=False)
+        dialog = EulaDialog(wx.GetTopLevelParent(self), self.license_path, interactive=False)
         dialog.ShowModal()
         dialog.Destroy()
 
     def _on_contact(self, event):
-        """Opens a ZBox compose tab addressed to Harith, the same
-        path every mailto: link inside a rendered message already
-        goes through (main_frame.open_compose_from_mailto) -- so
-        contacting him stays inside ZBox and uses whichever account
-        is already set up, rather than handing off to the OS mail
-        handler. Deferred via CallAfter and this dialog closed first:
-        it's modal, and would otherwise block reaching the new tab it
-        just opened. Falls back to the OS mail handler only if there
-        is genuinely no main_frame to open a compose tab on.
-        """
+        """Opens a ZBox compose tab addressed to the author, the same
+        path every mailto: link inside a rendered message already goes
+        through (main_frame.open_compose_from_mailto). Settings is
+        modal, so it is closed first, saving like OK, and the compose
+        tab opens after it. Falls back to the OS mail handler only if
+        there is genuinely no main_frame to open a compose tab on."""
         url = "mailto:%s" % CONTACT_HARITH_ADDRESS
         if self.main_frame is not None:
             wx.CallAfter(self.main_frame.open_compose_from_mailto, url)
-            self.EndModal(wx.ID_CLOSE)
+            dialog = wx.GetTopLevelParent(self)
+            if isinstance(dialog, wx.Dialog) and dialog.IsModal():
+                dialog.EndModal(wx.ID_OK)
             return
         if not wx.LaunchDefaultBrowser(url):
             wx.MessageBox(

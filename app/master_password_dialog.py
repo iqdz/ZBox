@@ -23,6 +23,7 @@ import logging
 import wx
 
 import lang
+import notice_toast
 
 from accessible import fit_dialog, wrap_text
 
@@ -261,7 +262,8 @@ def ensure_master_password_set(parent, config_dir, note):
                     wx.OK | wx.ICON_ERROR, parent,
                 )
                 return False
-            wx.MessageBox(
+            notice_toast.notify(
+                parent,
                 lang.t(
                     "dialogs", "master_password_set",
                     default="Master password set. Keep it somewhere safe: ZBox "
@@ -269,7 +271,6 @@ def ensure_master_password_set(parent, config_dir, note):
                     "cannot be recovered if it is lost.",
                 ),
                 lang.t("dialogs", "title_master_password", default="Master Password"),
-                wx.OK | wx.ICON_INFORMATION, parent,
             )
             return True
 

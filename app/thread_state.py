@@ -35,19 +35,23 @@ import json
 import logging
 import os
 
+import secure_json
+
 logger = logging.getLogger("zbox.threads")
 
 
 class ThreadStateStore:
     def __init__(self, paths, account_id):
         self._path = os.path.join(paths.profile_dir(account_id), "thread_state.json")
+        # Encrypted at rest when the paths carry a config folder
+        # (secure_json), like contacts.json.
+        self._config = getattr(paths, "config", None)
         self._data = self._load()
 
     def _load(self):
         data = None
         try:
-            with open(self._path, "r", encoding="utf-8") as handle:
-                data = json.load(handle)
+            data = secure_json.load(self._config, self._path)
         except FileNotFoundError:
             data = {}
         except (OSError, ValueError):
@@ -67,8 +71,7 @@ class ThreadStateStore:
 
     def _save(self):
         try:
-            with open(self._path, "w", encoding="utf-8") as handle:
-                json.dump(self._data, handle, indent=2)
+            secure_json.save(self._config, self._path, self._data)
         except OSError:
             # Same reasoning as settings_manager/account_manager's own
             # saves not having a retry path: a failed write here loses

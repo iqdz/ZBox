@@ -20,8 +20,9 @@ import re
 import wx
 
 import lang
+import notice_toast
 from accessible import make_read_only_viewer
-from announce import speak
+from spoken_feedback import speak
 from spellcheck import SUGGESTION_LIMIT, get_dictionary, misspellings
 
 
@@ -373,13 +374,13 @@ def check_text(parent, text, personal_path=None):
         )
         return text, []
     if not misspellings(text, dictionary):
-        wx.MessageBox(
+        notice_toast.notify(
+            parent,
             lang.t(
                 "dialogs", "spellcheck_none_found",
                 default="No misspellings found.",
             ),
             lang.t("dialogs", "title_spell_check", default="Spell Check"),
-            wx.OK | wx.ICON_INFORMATION, parent,
         )
         return text, []
     dialog = SpellCheckDialog(parent, text, dictionary)

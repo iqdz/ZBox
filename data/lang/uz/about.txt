@@ -10,7 +10,7 @@ Tanish ishlash tarzi
 Boshqa pochta dasturlaridan o‘tish imkon qadar oson bo‘lishi uchun, ZBox amaliy va moslashuvchan klaviatura tezkor tugmalarini taklif qiladi. Ko‘pincha bir xil amalning bir necha tezkor tugmasi bor; masalan, Alt+S va Ctrl+Enter ikkalasi ham xabarni jo‘natadi. To‘liq ro‘yxatni Yordam, Klaviatura tezkor tugmalaridan topasiz.
 
 Hisoblarni sozlash
-Outlook.com, Hotmail, Live va Microsoft 365 hisoblari Microsoft hisobingiz bilan brauzerda yoki kod orqali kiradi. Google orqali toʻgʻridan-toʻgʻri kirish kelgusi yangilanishda qoʻshiladi. Hozircha oddiy parolingiz oʻrniga ilova parolini yaratib, Gmail hisobingizni ulashingiz mumkin (koʻrsatmalar uchun quyidagi tugmaga qarang).
+Outlook.com, Hotmail, Live va Microsoft 365 hisoblari Microsoft hisobingiz bilan brauzerda yoki kod orqali kiradi.Hozircha oddiy parolingiz oʻrniga ilova parolini yaratib, Gmail hisobingizni ulashingiz mumkin (koʻrsatmalar uchun quyidagi tugmaga qarang).
 
 Litsenziyalar va minnatdorchilik
 ZBox litsenziyasini o‘qish va uni yaratishga yordam bergan uchinchi tomon komponentlarini ko‘rish uchun quyidagi Litsenziyani ko‘rish tugmasini bosing. Ular orasida: Himalaya, StevenBlack hosts va EasyPrivacy bloklash ro‘yxatlari, Phishing.Database ro‘yxati, va (yig‘ilgan versiyada) Python, wxPython, imapclient, pywin32, keyring va accessible_output2, shu jumladan ekran o‘quvchilar uchun mijoz kutubxonalari.

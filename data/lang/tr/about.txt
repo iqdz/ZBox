@@ -10,7 +10,7 @@ Tanıdık kullanım
 Diğer e-posta istemcilerinden geçişi kolaylaştırmak için ZBox kullanışlı ve esnek kısayol tuşları sunar. Çoğu zaman birden fazla kısayol aynı işi yapar; örneğin hem Alt+S hem Ctrl+Enter iletiyi gönderir. Tam listeyi Yardım, Klavye Kısayolları altında görebilirsiniz.
 
 Hesap kurulumu
-Outlook.com, Hotmail, Live ve Microsoft 365 hesapları, tarayıcıda veya bir kodla, Microsoft hesabınızla oturum açar. Yerel Google oturum açma desteği gelecekteki bir güncellemede eklenecek. Şimdilik, normal parolanız yerine bir Uygulama Parolası oluşturarak Gmail hesabınızı bağlayabilirsiniz (talimatlar için aşağıdaki düğmeye bakın).
+Outlook.com, Hotmail, Live ve Microsoft 365 hesapları, tarayıcıda veya bir kodla, Microsoft hesabınızla oturum açar.Şimdilik, normal parolanız yerine bir Uygulama Parolası oluşturarak Gmail hesabınızı bağlayabilirsiniz (talimatlar için aşağıdaki düğmeye bakın).
 
 Lisanslar ve teşekkürler
 ZBox'ın lisansını okumak ve onu mümkün kılan üçüncü taraf bileşenleri görmek için aşağıdaki Lisansı Görüntüle düğmesine basın. Bunlar arasında Himalaya, StevenBlack hosts ve EasyPrivacy engelleme listeleri, Phishing.Database listesi ve (derlenmiş bir kopyada) Python, wxPython, imapclient, pywin32, keyring ve ekran okuyucu istemci kitaplıklarıyla birlikte accessible_output2 bulunur.

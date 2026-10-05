@@ -27,6 +27,7 @@ import threading
 import time
 from contextlib import contextmanager
 
+import graph_client
 import imap_body_fetch
 
 logger = logging.getLogger("zbox.himalaya")
@@ -320,6 +321,13 @@ def _run(paths, account, args, timeout=30, input_text=None, backend=None):
     * Interactive calls wait for at most the one subprocess currently
       holding the account, then proceed.
     """
+    # A personal Microsoft account works through Microsoft Graph
+    # (graph_client). Himalaya serves it only for its offline maildir
+    # copy and for an identity's own outgoing server; anything else
+    # that reaches here fails at once with the Graph error behind it.
+    if (backend != "maildir" and not isinstance(account, _SectionOverride)
+            and graph_client.uses_graph(account)):
+        raise graph_client.blocked_error(paths, account, args)
     background = bool(getattr(_BACKGROUND_LOCAL, "active", False))
     gate = _account_gate(account.account_id)
     if background:
@@ -791,7 +799,7 @@ def ensure_trash_folder(paths, account):
     try:
         import provider_presets
 
-        trash = provider_presets.himalaya_folder_name(account.imap_host, "Trash")
+        trash = provider_presets.himalaya_folder_name(account.imap_host, "Trash", account_id)
     except Exception as exc:  # noqa: BLE001 - never stop the caller
         log.debug("Could not resolve the Trash name for %s: %s", account_id, exc)
         return False
@@ -839,6 +847,98 @@ def ensure_trash_folder(paths, account):
     return True
 
 
+# --- Special folders the server marks -------------------------------------
+#
+# RFC 6154 special-use attributes in the full folder list name each
+# account's own Sent, Drafts, Trash, Junk and Archive, whatever language the
+# server uses for them (a Gmail account in Arabic, say). Read once per run
+# for each account and kept through provider_presets, which puts them
+# before its fixed table.
+
+_SPECIAL_LEARNED = set()
+_SPECIAL_USE = (
+    ("Sent", "sent"),
+    ("Drafts", "drafts"),
+    ("Trash", "trash"),
+    ("Junk", "junk"),
+    ("Archive", "archive"),
+)
+
+
+def _special_use_words(attributes):
+    """The attribute words of one folder entry, lowercased and without
+    their backslashes, from a list or a string."""
+    import re
+
+    if isinstance(attributes, (list, tuple)):
+        text = " ".join(str(item) for item in attributes)
+    else:
+        text = str(attributes or "")
+    return {word for word in re.split(r"[^a-z]+", text.casefold()) if word}
+
+
+def special_folders_from_list(entries, imap_host=""):
+    """{role: real name} for the roles the server marks. The first folder
+    marked for a role wins. All Mail (\\All) stands for Archive only where
+    the provider table already maps Archive to it, as Thunderbird does for
+    Gmail."""
+    found = {}
+    all_mail = None
+    for entry in entries or []:
+        if not isinstance(entry, dict) or not entry.get("name"):
+            continue
+        name = str(entry.get("name")).strip()
+        words = _special_use_words(entry.get("attributes") or entry.get("attrs"))
+        for role, word in _SPECIAL_USE:
+            if word in words and role not in found:
+                found[role] = name
+        if "all" in words and all_mail is None:
+            all_mail = name
+    if "Archive" not in found and all_mail:
+        import provider_presets
+
+        table = provider_presets.SPECIAL_FOLDER_NAMES.get((imap_host or "").strip().lower(), {})
+        if "Archive" in table:
+            found["Archive"] = all_mail
+    return found
+
+
+def learn_special_folders(paths, account):
+    """Reads the account's full folder list once per run and keeps the
+    folders its server marks as Sent, Drafts, Trash, Junk and Archive
+    (provider_presets.set_learned_folders). True when the names known for
+    the account changed, so the caller writes himalaya.toml again.
+    Personal Microsoft accounts are left out: Graph names their folders
+    itself. Never raises."""
+    account_id = getattr(account, "account_id", None)
+    if not account_id or account_id in _SPECIAL_LEARNED:
+        return False
+    try:
+        if graph_client.uses_graph(account):
+            _SPECIAL_LEARNED.add(account_id)
+            return False
+        raw = list_all_folders(paths, account)
+    except Exception as exc:  # noqa: BLE001 - tried again with the next folder list
+        logger.debug("Special folders not read for %s: %s", account_id, exc)
+        return False
+    entries = [entry for entry in raw if isinstance(entry, dict) and entry.get("name")]
+    if not entries:
+        # An empty list proves nothing; tried again next time.
+        return False
+    _SPECIAL_LEARNED.add(account_id)
+    try:
+        import provider_presets
+
+        found = special_folders_from_list(entries, getattr(account, "imap_host", ""))
+        changed = provider_presets.set_learned_folders(paths, account_id, found)
+    except Exception as exc:  # noqa: BLE001 - the table stays in use
+        logger.debug("Special folders not kept for %s: %s", account_id, exc)
+        return False
+    if changed:
+        logger.info("Special folders marked by the server for %s: %s.", account_id, ", ".join(sorted(found)) or "none")
+    return changed
+
+
 def list_envelopes(paths, account, folder="INBOX", page_size=200, page=1, backend="imap", allow_pooled=True):
     """
     Returns a list of envelope dicts (id, from, subject, date, ...).
@@ -882,6 +982,15 @@ def list_envelopes(paths, account, folder="INBOX", page_size=200, page=1, backen
                 background=bool(getattr(_BACKGROUND_LOCAL, "active", False)),
             )
         except imap_body_fetch.ImapBodyFetchUnavailable as exc:
+            if getattr(_BACKGROUND_LOCAL, "active", False) and "busy" in str(exc):
+                # Background work never starts himalaya.exe for a list
+                # when the pooled connection is only busy: 3 to 6
+                # seconds each, about 90 times in one evening's log,
+                # and the main cause of moving through ZBox feeling
+                # heavy. It stands down; the next round retries.
+                raise HimalayaBackgroundSkipped(
+                    "pooled connection busy; background list of %s skipped" % folder
+                )
             logger.debug(
                 "Pooled IMAP envelope list unavailable for %s (%s); using the "
                 "Himalaya subprocess instead.", folder, exc,
@@ -963,7 +1072,57 @@ def _escape_search_pattern(term):
     return escaped
 
 
-def search_envelopes(paths, account, term, folder, page_size=200, backend="imap"):
+def build_search_query(term, fields=("subject", "from", "body"), unread=False,
+                       flagged=False, after=None, not_after=None):
+    """
+    The trailing query tokens for 'envelope search' (the Search tab), in
+    the grammar of the pinned Himalaya build's filter parser: 'not' binds
+    tightest, then 'and', then 'or', and a group is written as '(' and
+    ')' against the conditions it encloses, with no space inside.
+
+    The words go to every field in `fields`, joined by 'or', each with
+    the same escaped pattern (_escape_search_pattern). With more than one
+    field and any other condition they are grouped, so 'and' cannot split
+    them; words alone give exactly the query this module always sent.
+    unread is 'not flag seen', flagged is 'flag flagged'. after and
+    not_after are datetime.date values: 'after' keeps mail dated after
+    that day and 'not after' leaves out mail dated after the other. The
+    Search tab passes days wider than its range and checks the exact
+    times itself (search_filters), so neither edge decides a match alone.
+    An empty list means there is nothing to search for.
+    """
+    groups = []
+    term = (term or "").strip()
+    if term and fields:
+        pattern = _escape_search_pattern(term)
+        words = []
+        for field in fields:
+            if words:
+                words.append("or")
+            words.extend([field, pattern])
+        groups.append(words)
+    if unread:
+        groups.append(["not", "flag", "seen"])
+    if flagged:
+        groups.append(["flag", "flagged"])
+    if after is not None:
+        groups.append(["after", after.isoformat()])
+    if not_after is not None:
+        groups.append(["not", "after", not_after.isoformat()])
+    if len(groups) > 1 and len(groups[0]) > 2 and groups[0][2] == "or":
+        first = groups[0]
+        groups[0] = ["(" + first[0]] + first[1:-1] + [first[-1] + ")"]
+    query = []
+    for group in groups:
+        if query:
+            query.append("and")
+        query.extend(group)
+    return query
+
+
+def search_envelopes(paths, account, term, folder, page_size=200, backend="imap",
+                     fields=("subject", "from", "body"), unread=False, flagged=False,
+                     after=None, not_after=None):
     """
     Audit finding 39: searches one folder's envelopes for `term`
     against From, Subject and Body, via the pinned Himalaya build's
@@ -999,8 +1158,12 @@ def search_envelopes(paths, account, term, folder, page_size=200, backend="imap"
     uses, since a caller merging results from more than one folder
     needs each row to carry its own origin.
     """
-    pattern = _escape_search_pattern(term)
-    query = ["subject", pattern, "or", "from", pattern, "or", "body", pattern]
+    query = build_search_query(
+        term, fields=fields, unread=unread, flagged=flagged,
+        after=after, not_after=not_after,
+    )
+    if not query:
+        return []
     data = _run(
         paths, account,
         ["envelope", "search", "-m", folder, "--page-size", str(page_size), *query],
@@ -1110,6 +1273,10 @@ def _load_disk_cached_message(paths, account, folder, message_id, backend):
 
 
 def _save_disk_cached_message(paths, account, folder, message_id, backend, message):
+    import private_mode
+
+    if private_mode.ACTIVE:
+        return  # private mode keeps message bodies in memory only
     if not keeps_offline(account, folder):
         return  # other folders keep their bodies in memory only
     path = _message_cache_path(paths, account, folder, message_id, backend)
@@ -1550,6 +1717,36 @@ def read_message_raw(paths, account, message_id, folder="INBOX", backend="imap",
     return raw_text or ""
 
 
+def read_message_bytes(paths, account, message_id, folder="INBOX", backend="imap", timeout=90):
+    """
+    The message exactly as stored, as bytes, for OpenPGP (openpgp_read):
+    a signature is checked against these bytes, while read_message_raw's
+    text has had every byte that is not UTF-8 replaced. The pooled
+    connection first; the Himalaya subprocess otherwise, its raw text
+    encoded back. Never cached, so nothing readable is kept on disk.
+    """
+    if backend == "imap":
+        try:
+            return imap_body_fetch.fetch_message_bytes(
+                paths, account, message_id, folder=folder,
+                background=bool(getattr(_BACKGROUND_LOCAL, "active", False)),
+            )
+        except imap_body_fetch.ImapBodyFetchUnavailable as exc:
+            logger.debug(
+                "Pooled IMAP byte fetch unavailable for %s/%s (%s); using the "
+                "Himalaya subprocess instead.", folder, message_id, exc,
+            )
+    raw = _run(
+        paths, account,
+        ["message", "read", str(message_id), "-m", folder, "--raw"],
+        backend=backend, timeout=timeout,
+    )
+    raw_text = raw.get("message") if isinstance(raw, dict) else raw
+    if isinstance(raw_text, bytes):
+        return raw_text
+    return str(raw_text or "").encode("utf-8", "surrogateescape")
+
+
 def read_message_cached_only(paths, account, message_id, folder="INBOX", backend="imap"):
     """
     Returns a message body already sitting in the cache (memory,
@@ -1922,7 +2119,9 @@ def _is_himalaya_trash(account, folder):
     try:
         import provider_presets
 
-        configured = provider_presets.himalaya_folder_name(account.imap_host, "Trash")
+        configured = provider_presets.himalaya_folder_name(
+            account.imap_host, "Trash", getattr(account, "account_id", None)
+        )
     except Exception:  # noqa: BLE001 - keep today's path
         return True
     return _same_folder(folder, configured)
@@ -2842,7 +3041,9 @@ def _ensure_sent_copy(paths, account, raw_message_text, folder=None):
         return
     header = header.strip()
     # folder: an identity's own Sent folder. None is the account's.
-    folder = folder or provider_presets.himalaya_folder_name(account.imap_host, "Sent")
+    folder = folder or provider_presets.himalaya_folder_name(
+        account.imap_host, "Sent", getattr(account, "account_id", None)
+    )
     try:
         for attempt in (1, 2):
             if imap_body_fetch.sent_copy_exists(paths, account, folder, header):
@@ -3731,3 +3932,36 @@ def sync_folder_offline(paths, account, folder, limit=100, progress_cb=None, max
             progress_cb(index + 1, total)
 
     return copied
+
+
+# --- Personal Microsoft accounts through Microsoft Graph ---------------
+#
+# Each function named in graph_client.HIMALAYA_ROUTES sends a Graph
+# account to its Graph route and every other account to the function
+# above, unchanged. The reads, flags, listings and moves that go through
+# the pooled connection first are routed in imap_body_fetch instead, so
+# their caching and fall-back logic here stays as it is. A send through
+# an identity's own outgoing server keeps Himalaya and SMTP, and a
+# search of the offline copy keeps Himalaya's maildir.
+graph_client.route_module(
+    globals(), graph_client.HIMALAYA_ROUTES,
+    skip=lambda name, args, kwargs: (
+        (name == "send_message_raw" and bool(kwargs.get("section") or (len(args) > 2 and args[2])))
+        or (name == "search_envelopes"
+            and (kwargs.get("backend") or (args[3] if len(args) > 3 else "imap")) == "maildir")
+    ),
+)
+
+
+# Private mode keeps no offline copies (private_mode.py): a sync copies
+# nothing and reports 0. Every caller reaches the function through this
+# name, so the check covers them all.
+_sync_folder_offline_all = sync_folder_offline
+
+
+def sync_folder_offline(paths, account, folder, *args, **kwargs):
+    import private_mode
+
+    if private_mode.ACTIVE:
+        return 0
+    return _sync_folder_offline_all(paths, account, folder, *args, **kwargs)

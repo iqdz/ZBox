@@ -127,7 +127,9 @@ class ConversationTabPanel(wx.Panel):
             folder=self.folder, backend=backend,
         )
         self._body_request_id += 1
-        if cached is not None:
+        import openpgp_read
+
+        if cached is not None and not openpgp_read.looks_protected(cached):
             self.reader.set_message(cached)
             return
 
@@ -135,10 +137,11 @@ class ConversationTabPanel(wx.Panel):
         self.reader.show_loading()
 
         def work():
-            return himalaya_client.read_message(
+            message = himalaya_client.read_message(
                 self.main_frame.paths, self.account, message_id,
                 folder=self.folder, backend=backend,
             )
+            return self.main_frame._readable(self.account, self.folder, envelope, backend, message)
 
         def on_success(message):
             if request_id != self._body_request_id:

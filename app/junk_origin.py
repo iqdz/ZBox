@@ -18,14 +18,16 @@ Storage is one small JSON file per account
 (profile_dir(account_id)/junk_origin.json), loaded once and rewritten
 on every change -- same simple load/save-on-write shape thread_state.py
 and settings_manager.py already use, no locking, since nothing else in
-ZBox writes this file concurrently. Not run through Task 3's
-encryption, same reasoning as thread_state.json: this holds folder
-names and Message-IDs, not account secrets or message content.
+ZBox writes this file concurrently. Encrypted at rest like
+contacts.json (secure_json), since Message-IDs and folder names are
+the user's own records.
 """
 
 import json
 import logging
 import os
+
+import secure_json
 
 logger = logging.getLogger("zbox.junkorigin")
 
@@ -33,13 +35,15 @@ logger = logging.getLogger("zbox.junkorigin")
 class JunkOriginStore:
     def __init__(self, paths, account_id):
         self._path = os.path.join(paths.profile_dir(account_id), "junk_origin.json")
+        # Encrypted at rest when the paths carry a config folder
+        # (secure_json), like contacts.json.
+        self._config = getattr(paths, "config", None)
         self._data = self._load()
 
     def _load(self):
         data = None
         try:
-            with open(self._path, "r", encoding="utf-8") as handle:
-                data = json.load(handle)
+            data = secure_json.load(self._config, self._path)
         except FileNotFoundError:
             data = {}
         except (OSError, ValueError):
@@ -54,8 +58,7 @@ class JunkOriginStore:
 
     def _save(self):
         try:
-            with open(self._path, "w", encoding="utf-8") as handle:
-                json.dump(self._data, handle, indent=2)
+            secure_json.save(self._config, self._path, self._data)
         except OSError:
             # Same reasoning as thread_state.py's own save: a failed
             # write here loses one origin record, never mail, and the

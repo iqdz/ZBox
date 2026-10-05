@@ -54,6 +54,13 @@ class AccountTreePanel(wx.Panel):
         # handler rather than EVT_TREE_ITEM_ACTIVATED, so a mouse
         # double-click keeps its own open-and-close behaviour.
         self.tree.Bind(wx.EVT_KEY_DOWN, self._on_tree_key_down)
+        # All Folders view: accounts start closed. The ones the person
+        # opens stay open, and the ones closed stay closed, across the
+        # tree's rebuilds (every folder or unread count update) for the
+        # session.
+        self._open_accounts = set()
+        self.tree.Bind(wx.EVT_TREE_ITEM_EXPANDED, self._on_account_toggled)
+        self.tree.Bind(wx.EVT_TREE_ITEM_COLLAPSED, self._on_account_toggled)
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(label, 0, wx.ALL, 6)
@@ -185,7 +192,11 @@ class AccountTreePanel(wx.Panel):
                         first_account_inbox = folder_item
                     if first_folder_item is None:
                         first_folder_item = folder_item
-                self.tree.Expand(item)
+                # Closed unless the person opened it this session; the
+                # account holding the selection below is opened by
+                # Windows itself as it shows the selected folder.
+                if account.account_id in self.__dict__.get("_open_accounts", ()):
+                    self.tree.Expand(item)
             first_selectable = first_account_inbox or first_folder_item
 
         self.first_selectable_item = first_selectable
@@ -227,6 +238,33 @@ class AccountTreePanel(wx.Panel):
             child, cookie = self.tree.GetFirstChild(item)
             while child.IsOk():
                 if matches(self.tree.GetItemData(child)):
+                    self.tree.SelectItem(child)
+                    return True
+                if walk(child):
+                    return True
+                child, cookie = self.tree.GetNextChild(item, cookie)
+            return False
+
+        return walk(self.root)
+
+    def select_account_inbox(self, account_id):
+        """
+        Selects this account's Inbox, found by its label rather than by
+        its server name, which differs between providers and changes
+        once the real folder list arrives. Either view: under the
+        account in All Folders, under the Inbox type in Unified.
+        Returns True if one was selected.
+        """
+        def walk(item):
+            child, cookie = self.tree.GetFirstChild(item)
+            while child.IsOk():
+                data = self.tree.GetItemData(child)
+                if (
+                    data
+                    and data.get("account_id") == account_id
+                    and data.get("folder_label") == "Inbox"
+                    and not data.get("is_account_root")
+                ):
                     self.tree.SelectItem(child)
                     return True
                 if walk(child):
@@ -284,12 +322,34 @@ class AccountTreePanel(wx.Panel):
             return self.tree.GetItemData(parent)
         return None
 
+    def _on_account_toggled(self, event):
+        """Remembers which accounts are open, for the next rebuild."""
+        event.Skip()
+        item = event.GetItem()
+        if not item.IsOk():
+            return
+        data = self.tree.GetItemData(item)
+        if isinstance(data, dict) and data.get("is_account_root"):
+            opened = self.__dict__.setdefault("_open_accounts", set())
+            if self.tree.IsExpanded(item):
+                opened.add(data["account_id"])
+            else:
+                opened.discard(data["account_id"])
+
     def _on_tree_key_down(self, event):
         """Enter or numpad Enter, with no modifier, on a closed item
         that has children: open it. The selection does not move, so no
         folder is fetched. Every other key, and Enter anywhere else,
         goes on to the tree as before -- the numpad asterisk included,
         which Windows uses to open everything under the item."""
+        if (event.ControlDown() and not event.AltDown() and not event.ShiftDown()
+                and event.GetKeyCode() in (ord("Z"), ord("z"))):
+            # Edit, Undo from the folder tree, as before it lost its menu
+            # shortcut.
+            undo = getattr(wx.GetTopLevelParent(self), "_on_undo", None)
+            if undo is not None:
+                undo(None)
+            return
         if (event.GetKeyCode() in (wx.WXK_RETURN, wx.WXK_NUMPAD_ENTER)
                 and not event.HasAnyModifiers()):
             item = self.tree.GetSelection()

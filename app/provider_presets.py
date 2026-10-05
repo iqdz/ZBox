@@ -513,7 +513,12 @@ SPECIAL_FOLDER_NAMES = {
 }
 
 
-def himalaya_folder_name(imap_host, display_name):
+# Yahoo's server (also used by Cox, Frontier and Rogers) keeps Drafts as
+# "Draft" and Junk as "Bulk", and marks them so itself.
+SPECIAL_FOLDER_NAMES["imap.mail.yahoo.com"] = {"Drafts": "Draft", "Junk": "Bulk"}
+
+
+def himalaya_folder_name(imap_host, display_name, account_id=None):
     """
     Resolves one of ZBox's generic display folder names ("Sent",
     "Archive", etc.) to the real IMAP folder name Himalaya should use
@@ -524,6 +529,11 @@ def himalaya_folder_name(imap_host, display_name):
     """
     if display_name == "Inbox":
         return "INBOX"
+    # The folder the account's own server marks for this role comes first
+    # (learned_folder, below).
+    learned = learned_folder(account_id, display_name)
+    if learned:
+        return learned
     overrides = SPECIAL_FOLDER_NAMES.get((imap_host or "").strip().lower(), {})
     return overrides.get(display_name, display_name)
 
@@ -558,3 +568,94 @@ def forget_trash_folders():
     """Clears every remembered trash folder. For tests."""
     with _REMEMBERED_TRASH_LOCK:
         _REMEMBERED_TRASH.clear()
+
+
+# Special folders the account's own server marks (RFC 6154 special-use:
+# \Sent, \Drafts, \Trash, \Junk, \Archive, and \All for Gmail's All Mail),
+# learned from its full folder list by himalaya_client's
+# learn_special_folders and kept in special_folders.json in the account's
+# cache folder, so they are known from the next launch on, before the
+# folder list arrives. himalaya_folder_name puts them before
+# SPECIAL_FOLDER_NAMES, so a provider that names its folders in another
+# language works without an entry there.
+SPECIAL_FOLDERS_FILE_NAME = "special_folders.json"
+LEARNED_ROLES = ("Sent", "Drafts", "Trash", "Junk", "Archive")
+
+_LEARNED = {}
+_LEARNED_LOCK = _threading.Lock()
+
+
+def _learned_path(paths, account_id):
+    import os
+
+    return os.path.join(paths.cache_dir(account_id), SPECIAL_FOLDERS_FILE_NAME)
+
+
+def _clean_learned(data):
+    """Only the five roles, each with a non-empty name."""
+    if not isinstance(data, dict):
+        return {}
+    return {
+        role: data[role] for role in LEARNED_ROLES
+        if isinstance(data.get(role), str) and data[role].strip()
+    }
+
+
+def load_learned_folders(paths, account_id):
+    """Reads the account's learned names from its cache folder, once per
+    run. A missing or damaged file means nothing learned yet. Never
+    raises."""
+    if not account_id:
+        return
+    with _LEARNED_LOCK:
+        if account_id in _LEARNED:
+            return
+    try:
+        import json
+
+        with open(_learned_path(paths, account_id), "r", encoding="utf-8") as handle:
+            data = _clean_learned(json.load(handle))
+    except Exception:  # noqa: BLE001 - nothing learned yet, or a damaged file
+        data = {}
+    with _LEARNED_LOCK:
+        _LEARNED.setdefault(account_id, data)
+
+
+def set_learned_folders(paths, account_id, mapping):
+    """Keeps the names learned from the server's folder list, in memory and
+    in the account's cache folder. True when they differ from what was
+    known before. Never raises."""
+    if not account_id:
+        return False
+    load_learned_folders(paths, account_id)
+    mapping = _clean_learned(mapping)
+    with _LEARNED_LOCK:
+        if _LEARNED.get(account_id) == mapping:
+            return False
+        _LEARNED[account_id] = mapping
+    import private_mode
+
+    if private_mode.ACTIVE:
+        return True  # kept in memory only in private mode
+    try:
+        import json
+
+        with open(_learned_path(paths, account_id), "w", encoding="utf-8") as handle:
+            json.dump(mapping, handle, ensure_ascii=False, indent=1)
+    except Exception:  # noqa: BLE001 - kept in memory for this run either way
+        pass
+    return True
+
+
+def learned_folder(account_id, display_name):
+    """The learned name for one role of the account, or None."""
+    if not account_id:
+        return None
+    with _LEARNED_LOCK:
+        return (_LEARNED.get(account_id) or {}).get(display_name)
+
+
+def forget_learned_folders():
+    """Clears the learned names held in memory. For tests."""
+    with _LEARNED_LOCK:
+        _LEARNED.clear()

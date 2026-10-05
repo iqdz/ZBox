@@ -22,7 +22,12 @@ import lang
 from accessible import apply_content_background
 from envelope_format import (
     _SORT_KEY_FUNCS,
+    _envelope_attachment_text,
+    _envelope_priority_text,
+    _envelope_recipient,
+    _envelope_size_text,
     _friendly_envelope_date,
+    _friendly_envelope_received,
     _envelope_from,
     _envelope_is_flagged,
     _envelope_is_unread,
@@ -33,6 +38,7 @@ from envelope_format import (
     _parse_envelope_date,
 )
 import thread_grouping
+from settings_manager import DEFAULT_LIST_COLUMNS, LIST_COLUMNS
 
 logger = logging.getLogger("zbox.envlist")
 
@@ -120,6 +126,284 @@ def hide_key_for_header(header):
     if text.startswith("<") and text.endswith(">"):
         text = text[1:-1].strip()
     return "hdr:" + text.casefold() if text else None
+
+
+
+def _row_key(envelope, info):
+    """
+    What makes a visible row the same row from one render to the
+    next: the message (account and id) and the way it is shown (a
+    collapsed thread's stand-in, or a message at some depth of an
+    expanded one). _render's in-place update matches rows by this.
+    """
+    return (
+        envelope.get("_zbox_account_id") or None,
+        str(envelope.get("id")),
+        bool(info is not None and info.is_collapsed),
+        info.depth if info is not None else 0,
+    )
+
+
+
+def _row_texts(envelope, info, columns=DEFAULT_LIST_COLUMNS, outgoing=False):
+    """The cells of one row, one per shown column (View > Columns), in
+    their order. outgoing is True for Sent and Drafts, where
+    Correspondents shows the recipient."""
+    spam_label = ""
+    if info is not None and info.is_collapsed:
+        # One row standing in for every message in the
+        # thread: the oldest (root) message's own From/
+        # Subject/Date, unmodified, plus a "Collapsed (N)"
+        # label in the Status column -- the same column
+        # "Unread"/"Starred" already live in, so a screen
+        # reader hears it as part of the row's normal status
+        # rather than a change buried in the subject text.
+        # Unread/Starred themselves are aggregated across
+        # every message in the thread (see _build_threaded_
+        # rows), not just the root's own (usually-read, since
+        # it's the oldest) state -- otherwise collapsing a
+        # thread with unread or starred replies would
+        # misreport it as read/unstarred.
+        status = _envelope_status_text(info.aggregate_unread, info.aggregate_flagged)
+        label = lang.t('dialogs', 'envlist_collapsed', default="Collapsed (%d)") % info.message_count
+        status = f"{status}, {label}" if status else label
+        subject = _envelope_subject(envelope)
+    else:
+        unread = _envelope_is_unread(envelope)
+        flagged = _envelope_is_flagged(envelope)
+        status = _envelope_status_text(unread, flagged)
+        # Junk rules state (see mail_fetch._apply_spam_filter
+        # and mark_ids_spam below) -- text
+        # only, same rule as every other row state here, and
+        # not aggregated onto a collapsed thread's row: a
+        # freshly-flagged arrival is essentially always its
+        # own single-message thread at the point this runs.
+        # With the Junk Status column shown it is said there
+        # instead, never twice.
+        spam_label = envelope.get("_zbox_spam_label") or ""
+        if spam_label and "junk" not in columns:
+            status = f"{status}, {spam_label}" if status else spam_label
+        subject = _envelope_subject(envelope)
+        if info is not None and info.depth > 0:
+            # A visible reply inside an expanded thread --
+            # indented under its root so the nesting is at
+            # least visible/readable, since list_ctrl (a
+            # plain report-view list, not a tree control) has
+            # no real indentation or expand/collapse glyph of
+            # its own to draw one with.
+            subject = ("    " * info.depth) + subject
+    # Text status rather than relying on color/bold alone,
+    # since a screen reader won't announce font weight or color
+    # changes but will read plain text every time.
+    cells = []
+    for column in columns:
+        if column == "status":
+            cells.append(status)
+        elif column == "from":
+            cells.append(_envelope_from(envelope))
+        elif column == "recipient":
+            cells.append(_envelope_recipient(envelope))
+        elif column == "correspondents":
+            cells.append(_envelope_recipient(envelope) if outgoing else _envelope_from(envelope))
+        elif column == "subject":
+            cells.append(subject)
+        elif column == "date":
+            cells.append(_friendly_envelope_date(envelope))
+        elif column == "received":
+            cells.append(_friendly_envelope_received(envelope))
+        elif column == "size":
+            cells.append(_envelope_size_text(envelope))
+        elif column == "attachments":
+            cells.append(_envelope_attachment_text(envelope))
+        elif column == "priority":
+            cells.append(_envelope_priority_text(envelope))
+        elif column == "junk":
+            cells.append(spam_label)
+        else:
+            cells.append("")
+    return tuple(cells)
+
+
+def _insert_row(list_ctrl, row, row_text):
+    list_ctrl.InsertItem(row, row_text[0])
+    for column in range(1, len(row_text)):
+        list_ctrl.SetItem(row, column, row_text[column])
+
+
+# How every message list is shown, set by main_frame from the saved
+# settings (configure_lists) before any list exists, and read by each
+# list as it is made: the Mail tab, search results and Related
+# Messages alike. Without a header row a screen reader speaks only the
+# cells, "Sam, Lunch, Today 12:30", not "From: Sam, Subject: Lunch,
+# Date: Today 12:30".
+_LIST_DISPLAY = {"columns": DEFAULT_LIST_COLUMNS, "headers": False}
+
+_COLUMN_WIDTHS = {
+    "status": 70, "from": 160, "recipient": 160, "correspondents": 160, "subject": 280,
+    "date": 140, "received": 140, "size": 70, "attachments": 90, "priority": 80, "junk": 100,
+}
+
+
+def _clean_columns(columns):
+    """The chosen columns in their fixed order; the default four when
+    nothing valid is left."""
+    chosen = set(columns or ())
+    return tuple(column for column in LIST_COLUMNS if column in chosen) or DEFAULT_LIST_COLUMNS
+
+
+def configure_lists(columns=None, show_headers=None):
+    """Sets the columns and the header row every message list made from
+    now on uses. Existing lists follow through apply_list_display."""
+    if columns is not None:
+        _LIST_DISPLAY["columns"] = _clean_columns(columns)
+    if show_headers is not None:
+        _LIST_DISPLAY["headers"] = bool(show_headers)
+
+
+def column_label(column):
+    """A column's name, for its header and the View > Columns menu."""
+    if column == "status":
+        return lang.t('dialogs', 'envlist_col_status', default="Status")
+    if column == "from":
+        return lang.t('dialogs', 'envlist_col_from', default="From")
+    if column == "recipient":
+        return lang.t('dialogs', 'envlist_col_recipient', default="Recipient")
+    if column == "correspondents":
+        return lang.t('dialogs', 'envlist_col_correspondents', default="Correspondents")
+    if column == "subject":
+        return lang.t('dialogs', 'envlist_col_subject', default="Subject")
+    if column == "date":
+        return lang.t('dialogs', 'envlist_col_date', default="Date")
+    if column == "received":
+        return lang.t('dialogs', 'envlist_col_received', default="Received")
+    if column == "size":
+        return lang.t('dialogs', 'envlist_col_size', default="Size")
+    if column == "attachments":
+        return lang.t('dialogs', 'envlist_col_attachments', default="Attachments")
+    if column == "priority":
+        return lang.t('dialogs', 'envlist_col_priority', default="Priority")
+    if column == "junk":
+        return lang.t('dialogs', 'envlist_col_junk_status', default="Junk Status")
+    return column
+
+
+def _column_title(column):
+    """A column's header text: its name while the header row is shown,
+    nothing while it is hidden. Screen readers read a column's name from
+    the column itself, hidden header row or not, so hiding the row alone
+    did not keep the names from being spoken before every cell."""
+    return column_label(column) if _LIST_DISPLAY["headers"] else ""
+
+
+def _outgoing_view(panel):
+    """True when the list shows Sent or Drafts, where Correspondents is
+    the recipient. Asked of main_frame (set_outgoing_check) once per
+    render; False for lists without one, and on any error. A module
+    function because the tests' stand-in panels borrow _render alone."""
+    check = vars(panel).get("_outgoing_check")
+    if check is None:
+        return False
+    try:
+        return bool(check())
+    except Exception:  # noqa: BLE001 - a wrong guess only changes one column
+        return False
+
+
+def _unthreaded_rows(panel, envelopes):
+    """
+    View > Sort By > Unthreaded: every message its own row, in the
+    chosen order. The threads are still worked out, so View > Threads
+    > Watched or Ignored Threads still filters, and Watch Thread,
+    Ignore Thread and Open Message in Conversation still find the
+    whole thread a row belongs to (_unthreaded_keys and
+    _unthreaded_members). A module function for the same reason as
+    _thread_expanded.
+    """
+    roots = thread_grouping.group_into_threads(envelopes)
+    keys, members = {}, {}
+    for root in roots:
+        key = thread_grouping.thread_key(root.envelope)
+        group = root.all_envelopes()
+        members[key] = group
+        for envelope in group:
+            keys[id(envelope)] = key
+    panel._unthreaded_keys = keys
+    panel._unthreaded_members = members
+    panel._thread_members_by_key = {}
+    mode = vars(panel).get("_thread_filter", "all")
+    if mode != "all":
+        allowed = set()
+        for root in roots:
+            key = thread_grouping.thread_key(root.envelope)
+            watched_keys, ignored_keys = panel._thread_flags_provider(
+                root.envelope.get("_zbox_account_id")
+            )
+            if (mode == "watched" and key in watched_keys) or (mode == "ignored" and key in ignored_keys):
+                allowed.add(key)
+        envelopes = [envelope for envelope in envelopes if keys.get(id(envelope)) in allowed]
+    return [(envelope, None) for envelope in envelopes]
+
+
+def _update_rows_in_place(panel, new_keys, new_texts):
+    """
+    Turns the rows on screen into new_keys/new_texts by removing,
+    inserting and updating only what differs. Returns False when a
+    full redraw is the right thing instead: nothing real on screen
+    yet (a placeholder), keys that repeat, mostly new rows (a
+    different folder), or kept rows in a new order (a resort, or a
+    thread moving up because it got a reply).
+
+    Windows keeps selection and focus with their row as rows are
+    inserted and removed around it, so the reader stays on the
+    same message and hears nothing new. When the focused row
+    itself is removed, focus moves to the row now in its place,
+    and the selection too if it was selected, so Enter always has
+    a row to act on.
+    """
+    list_ctrl = panel.list_ctrl
+    if not all(hasattr(list_ctrl, name) for name in ("GetFocusedItem", "IsSelected", "DeleteItem")):
+        return False  # a list without these is simply redrawn whole
+    old_keys = getattr(panel, "_row_keys", None) or []
+    old_texts = getattr(panel, "_row_text_cache", None) or []
+    if (
+        not old_keys or not panel._row_envelopes
+        or len(old_keys) != len(old_texts)
+        or len(old_keys) != list_ctrl.GetItemCount()
+    ):
+        return False
+    if old_keys == new_keys and list(old_texts) == list(new_texts):
+        return True
+    new_set = set(new_keys)
+    old_set = set(old_keys)
+    if len(new_set) != len(new_keys) or len(old_set) != len(old_keys):
+        return False
+    kept = [key for key in old_keys if key in new_set]
+    if len(kept) * 2 < len(new_keys):
+        return False
+    if kept != [key for key in new_keys if key in old_set]:
+        return False
+
+    focused = list_ctrl.GetFocusedItem()
+    focused_removed = 0 <= focused < len(old_keys) and old_keys[focused] not in new_set
+    focused_selected = focused_removed and list_ctrl.IsSelected(focused)
+    for row in range(len(old_keys) - 1, -1, -1):
+        if old_keys[row] not in new_set:
+            list_ctrl.DeleteItem(row)
+    old_text_by_key = dict(zip(old_keys, old_texts))
+    for row, (key, row_text) in enumerate(zip(new_keys, new_texts)):
+        if key not in old_set:
+            _insert_row(list_ctrl, row, row_text)
+            continue
+        before = old_text_by_key[key]
+        for column, (old_cell, new_cell) in enumerate(zip(before, row_text)):
+            if old_cell != new_cell:
+                list_ctrl.SetItem(row, column, new_cell)
+    if focused_removed and new_keys:
+        index = min(focused, len(new_keys) - 1)
+        if focused_selected:
+            list_ctrl.Select(index)
+        list_ctrl.Focus(index)
+    return True
 
 
 class EnvelopeListPanel(wx.Panel):
@@ -228,6 +512,18 @@ class EnvelopeListPanel(wx.Panel):
         # the move cannot put those rows back. None on the search
         # results and Related Messages instances, which hide nothing.
         self._hidden_keys_provider = hidden_keys_provider
+        # View > Columns, read from configure_lists as the list is made.
+        self._columns = tuple(_LIST_DISPLAY["columns"])
+        # View > Sort By > Threaded (True) or Unthreaded (False). Only
+        # matters where threading is enabled (the Mail tab).
+        self._threaded_view = True
+        # main_frame's zero-arg callable: True for Sent and Drafts
+        # (set_outgoing_check). None on search results and Related
+        # Messages, where Correspondents is the sender.
+        self._outgoing_check = None
+        self._unthreaded_keys = {}
+        self._unthreaded_members = {}
+        self._placeholder_text = ""
 
         label = wx.StaticText(
             self, label=lang.t("dialogs", "envlist_heading", default="Messages")
@@ -241,16 +537,17 @@ class EnvelopeListPanel(wx.Panel):
         # delete, etc.) still reads only the first selected row via
         # selected_envelope(), unchanged -- multi-select is currently
         # just a selection capability, not yet wired to bulk actions.
-        self.list_ctrl = wx.ListCtrl(
-            self, style=wx.LC_REPORT
-        )
+        style = wx.LC_REPORT
+        if not _LIST_DISPLAY["headers"]:
+            # No header row, so a screen reader speaks only each row's
+            # cells. Settings > Show column headers in the message list
+            # brings it back (apply_list_display).
+            style |= wx.LC_NO_HEADER
+        self.list_ctrl = wx.ListCtrl(self, style=style)
         self.list_ctrl.SetName(
             lang.t("dialogs", "envlist_name", default="Message list")
         )
-        self.list_ctrl.InsertColumn(0, lang.t('dialogs', 'envlist_col_status', default="Status"), width=70)
-        self.list_ctrl.InsertColumn(1, lang.t('dialogs', 'envlist_col_from', default="From"), width=160)
-        self.list_ctrl.InsertColumn(2, lang.t('dialogs', 'envlist_col_subject', default="Subject"), width=280)
-        self.list_ctrl.InsertColumn(3, lang.t('dialogs', 'envlist_col_date', default="Date"), width=140)
+        self._build_columns()
 
         # What the list says before anything has been fetched -- the
         # first thing a screen reader reads at launch, since the row
@@ -297,10 +594,88 @@ class EnvelopeListPanel(wx.Panel):
         self._all_envelopes = []
         self._signature = ()
         self._listing_loaded = False
+        self._row_keys = []
+        self._row_text_cache = []
+        self._placeholder_text = message
+        count = len(self.__dict__.get("_columns", DEFAULT_LIST_COLUMNS))
+        if count < 2:
+            self.list_ctrl.InsertItem(0, message)
+            return
         self.list_ctrl.InsertItem(0, "")
         self.list_ctrl.SetItem(0, 1, message)
-        self.list_ctrl.SetItem(0, 2, "")
-        self.list_ctrl.SetItem(0, 3, "")
+        for column in range(2, count):
+            self.list_ctrl.SetItem(0, column, "")
+
+    def _build_columns(self):
+        # Whether these columns carry their names (header row shown) or
+        # none. Retitling existing columns does nothing on Windows, so a
+        # change of the header setting rebuilds them (apply_list_display).
+        self._titles_shown = bool(_LIST_DISPLAY["headers"])
+        for index, column in enumerate(self._columns):
+            self.list_ctrl.InsertColumn(
+                index, _column_title(column), width=_COLUMN_WIDTHS.get(column, 120)
+            )
+
+    def apply_list_display(self):
+        """
+        Brings this list in line with configure_lists: the header row
+        shown or hidden, and the chosen columns. A change of columns
+        redraws the whole list, keeping the selected messages selected
+        and the focused one focused.
+        """
+        headers = _LIST_DISPLAY["headers"]
+        style = self.list_ctrl.GetWindowStyleFlag()
+        wanted = (style & ~wx.LC_NO_HEADER) if headers else (style | wx.LC_NO_HEADER)
+        if wanted != style:
+            self.list_ctrl.SetWindowStyleFlag(wanted)
+        columns = tuple(_LIST_DISPLAY["columns"])
+        if columns == tuple(self._columns) and self.__dict__.get("_titles_shown", False) == bool(headers):
+            return
+        selected = []
+        row = self.list_ctrl.GetFirstSelected()
+        while row != -1:
+            if row < len(self._row_envelopes):
+                envelope = self._row_envelopes[row]
+                selected.append((envelope.get("_zbox_account_id"), envelope.get("id")))
+            row = self.list_ctrl.GetNextSelected(row)
+        focused = self.list_ctrl.GetFocusedItem()
+        focus_key = None
+        if 0 <= focused < len(self._row_envelopes):
+            envelope = self._row_envelopes[focused]
+            focus_key = (envelope.get("_zbox_account_id"), envelope.get("id"))
+        envelopes = list(self._all_envelopes)
+        placeholder = self._placeholder_text
+        self._columns = columns
+        self.list_ctrl.DeleteAllItems()
+        self.list_ctrl.DeleteAllColumns()
+        self._row_keys = []
+        self._row_text_cache = []
+        self._build_columns()
+        if not envelopes:
+            self.show_placeholder(placeholder)
+            return
+        self.populate(envelopes)
+        for row, envelope in enumerate(self._row_envelopes):
+            key = (envelope.get("_zbox_account_id"), envelope.get("id"))
+            if key in selected:
+                self.list_ctrl.Select(row)
+            if key == focus_key:
+                self.list_ctrl.Focus(row)
+                self.list_ctrl.EnsureVisible(row)
+
+    def set_threaded(self, threaded, redraw=True):
+        """View > Sort By > Threaded (True) or Unthreaded (False)."""
+        threaded = bool(threaded)
+        if threaded == self._threaded_view:
+            return
+        self._threaded_view = threaded
+        if redraw and self._enable_threading and self._all_envelopes:
+            self.populate(self._all_envelopes)
+
+    def set_outgoing_check(self, check):
+        """main_frame's zero-arg callable, True while the list shows Sent
+        or Drafts, for the Correspondents column and sort."""
+        self._outgoing_check = check
 
     def set_sort(self, key, ascending):
         """Records the order without redrawing. Used when seeding the
@@ -310,7 +685,10 @@ class EnvelopeListPanel(wx.Panel):
         self._sort_ascending = bool(ascending)
 
     def _apply_sort(self, envelopes):
-        func = _SORT_KEY_FUNCS.get(self._sort_key)
+        key = self._sort_key
+        if key == "correspondents" and _outgoing_view(self):
+            key = "recipient"  # Sent and Drafts: the people written to
+        func = _SORT_KEY_FUNCS.get(key)
         if func is None:
             return list(envelopes)
         return sorted(envelopes, key=func, reverse=not self._sort_ascending)
@@ -377,6 +755,15 @@ class EnvelopeListPanel(wx.Panel):
         self._all_envelopes = self._without_hidden(envelopes)
         self._render()
 
+        holding = getattr(self, "_holding_top", None)
+        if holding is not None and holding():
+            # The top-row hold after startup or Ctrl+Shift+J
+            # (main_frame._maybe_apply_initial_focus): newer rows sorted
+            # in above, and the cursor stays on the top row instead of
+            # following the message that was there.
+            self.focus_top_message()
+            return
+
         if previous_keys:
             matched = [
                 row for row, envelope in enumerate(self._row_envelopes)
@@ -391,24 +778,34 @@ class EnvelopeListPanel(wx.Panel):
 
     def _render(self):
         """
-        Redraws list_ctrl from self._all_envelopes, self._sort_key/
-        self._sort_ascending and (when threading is on) self.
-        _expanded_thread_keys -- the one place that turns "what data
-        do we have and what's expanded" into actual rows. Called by
-        populate() whenever new data arrived, and directly by the
-        expand/collapse handlers when only the expanded set changed.
+        Brings list_ctrl in line with self._all_envelopes, the sort
+        and (when threading is on) the expanded threads -- the one
+        place that turns "what data do we have and what is expanded"
+        into rows. Called by populate() whenever data arrived, and
+        directly by the expand/collapse, filter and mark handlers.
+
+        Rows change in place rather than being redrawn: a message
+        that arrived is inserted where it belongs, one that is gone
+        is removed, a row whose status or text changed is updated
+        cell by cell, and every other row is left exactly as it was,
+        with its selection and focus. A refresh that changed nothing
+        touches nothing at all. Every list goes through here -- the
+        Mail tab, search results and Related Messages -- so the
+        20-second refresh, IDLE, a delete, a remembered list being
+        replaced by the live one and Load More all behave the same
+        way. Only a change of folder, a new sort order or a thread
+        moving to a new place redraws the whole list (see
+        _update_rows_in_place).
         """
-        self.list_ctrl.DeleteAllItems()
         envelopes = self._apply_sort(self._all_envelopes)
         self._signature = _envelopes_signature(self._all_envelopes)
 
-        if self._enable_threading:
+        if self._enable_threading and self.__dict__.get("_threaded_view", True):
             rows = self._build_threaded_rows(envelopes)
+        elif self._enable_threading:
+            rows = _unthreaded_rows(self, envelopes)
         else:
             rows = [(envelope, None) for envelope in envelopes]
-
-        self._row_envelopes = [envelope for envelope, _info in rows]
-        self._row_thread_info = [info for _envelope, info in rows]
 
         if not rows:
             if self._enable_threading and self._thread_filter != "all" and self._all_envelopes:
@@ -431,54 +828,18 @@ class EnvelopeListPanel(wx.Panel):
             self._listing_loaded = True
             return
 
-        for row, (envelope, info) in enumerate(rows):
-            if info is not None and info.is_collapsed:
-                # One row standing in for every message in the
-                # thread: the oldest (root) message's own From/
-                # Subject/Date, unmodified, plus a "Collapsed (N)"
-                # label in the Status column -- the same column
-                # "Unread"/"Starred" already live in, so a screen
-                # reader hears it as part of the row's normal status
-                # rather than a change buried in the subject text.
-                # Unread/Starred themselves are aggregated across
-                # every message in the thread (see _build_threaded_
-                # rows), not just the root's own (usually-read, since
-                # it's the oldest) state -- otherwise collapsing a
-                # thread with unread or starred replies would
-                # misreport it as read/unstarred.
-                status = _envelope_status_text(info.aggregate_unread, info.aggregate_flagged)
-                label = lang.t('dialogs', 'envlist_collapsed', default="Collapsed (%d)") % info.message_count
-                status = f"{status}, {label}" if status else label
-                subject = _envelope_subject(envelope)
-            else:
-                unread = _envelope_is_unread(envelope)
-                flagged = _envelope_is_flagged(envelope)
-                status = _envelope_status_text(unread, flagged)
-                # Junk rules state (see mail_fetch._apply_spam_filter
-                # and mark_ids_spam below) -- text
-                # only, same rule as every other row state here, and
-                # not aggregated onto a collapsed thread's row: a
-                # freshly-flagged arrival is essentially always its
-                # own single-message thread at the point this runs.
-                spam_label = envelope.get("_zbox_spam_label")
-                if spam_label:
-                    status = f"{status}, {spam_label}" if status else spam_label
-                subject = _envelope_subject(envelope)
-                if info is not None and info.depth > 0:
-                    # A visible reply inside an expanded thread --
-                    # indented under its root so the nesting is at
-                    # least visible/readable, since list_ctrl (a
-                    # plain report-view list, not a tree control) has
-                    # no real indentation or expand/collapse glyph of
-                    # its own to draw one with.
-                    subject = ("    " * info.depth) + subject
-            # Text status rather than relying on color/bold alone,
-            # since a screen reader won't announce font weight or
-            # color changes but will read plain text every time.
-            self.list_ctrl.InsertItem(row, status)
-            self.list_ctrl.SetItem(row, 1, _envelope_from(envelope))
-            self.list_ctrl.SetItem(row, 2, subject)
-            self.list_ctrl.SetItem(row, 3, _friendly_envelope_date(envelope))
+        keys = [_row_key(envelope, info) for envelope, info in rows]
+        columns = self.__dict__.get("_columns", DEFAULT_LIST_COLUMNS)
+        outgoing = _outgoing_view(self)
+        texts = [_row_texts(envelope, info, columns, outgoing) for envelope, info in rows]
+        if not _update_rows_in_place(self, keys, texts):
+            self.list_ctrl.DeleteAllItems()
+            for row, row_text in enumerate(texts):
+                _insert_row(self.list_ctrl, row, row_text)
+        self._row_envelopes = [envelope for envelope, _info in rows]
+        self._row_thread_info = [info for _envelope, info in rows]
+        self._row_keys = keys
+        self._row_text_cache = texts
 
     def sort_by(self, key, ascending):
         """
@@ -862,6 +1223,54 @@ class EnvelopeListPanel(wx.Panel):
                     self.list_ctrl.Select(row)
                 self.list_ctrl.EnsureVisible(matched[0])
 
+    def drop_rows(self, match):
+        """
+        Takes every row match(envelope) names off the list at once, with
+        no fetch: drop_hidden_rows for a list without a hidden-keys
+        provider, the Search tab's results, whose rows come from many
+        folders. Focus goes to the row index the first selected row had,
+        clamped to the new end, as drop_hidden_rows does.
+        """
+        remaining = [envelope for envelope in self._all_envelopes if not match(envelope)]
+        if len(remaining) == len(self._all_envelopes):
+            return
+        first = self.list_ctrl.GetFirstSelected()
+        self._all_envelopes = remaining
+        self._render()
+        count = len(self._row_envelopes)
+        if count == 0:
+            return
+        index = min(max(first, 0), count - 1)
+        self.list_ctrl.Select(index)
+        self.list_ctrl.Focus(index)
+        self.list_ctrl.EnsureVisible(index)
+
+    def mark_rows(self, match, mutate):
+        """
+        _mark_ids_and_refresh for rows chosen by match(envelope) instead of
+        by message number alone: the Search tab's results, where two rows
+        from different folders can share a number. Selection is kept by
+        row index across the one redraw.
+        """
+        matched = False
+        for envelope in self._all_envelopes:
+            if match(envelope):
+                mutate(envelope)
+                matched = True
+        if not matched:
+            return
+        selected_rows = []
+        index = self.list_ctrl.GetFirstSelected()
+        while index != -1:
+            selected_rows.append(index)
+            index = self.list_ctrl.GetNextSelected(index)
+        self._render()
+        for selected_row in selected_rows:
+            if selected_row < self.list_ctrl.GetItemCount():
+                self.list_ctrl.Select(selected_row)
+        if selected_rows:
+            self.list_ctrl.Focus(selected_rows[0])
+
     def drop_hidden_rows(self):
         """
         Takes the rows the hidden_keys_provider now names off the list
@@ -1206,7 +1615,13 @@ class EnvelopeListPanel(wx.Panel):
             return info.thread_key
         if index >= len(self._row_envelopes):
             return None
-        return thread_grouping.thread_key(self._row_envelopes[index])
+        envelope = self._row_envelopes[index]
+        if not self.__dict__.get("_threaded_view", True):
+            # Unthreaded: the row's own thread, found when it was drawn.
+            mapped = self.__dict__.get("_unthreaded_keys", {}).get(id(envelope))
+            if mapped is not None:
+                return mapped
+        return thread_grouping.thread_key(envelope)
 
     def refresh_thread_flags(self):
         """
@@ -1317,7 +1732,15 @@ class EnvelopeListPanel(wx.Panel):
             return []
         if info is None:
             envelope = self.selected_envelope()
-            return [envelope] if envelope is not None else []
+            if envelope is None:
+                return []
+            if not self.__dict__.get("_threaded_view", True):
+                # Unthreaded: the whole thread this row belongs to.
+                key = self.__dict__.get("_unthreaded_keys", {}).get(id(envelope))
+                members = self.__dict__.get("_unthreaded_members", {}).get(key)
+                if members:
+                    return list(members)
+            return [envelope]
         if info.is_collapsed:
             return list(self._thread_members_by_key.get(info.thread_key, []))
         return [
@@ -1352,6 +1775,13 @@ class EnvelopeListPanel(wx.Panel):
             return  # consumed either way; ZBox handles Delete itself
         if event.ControlDown() and not event.AltDown() and key in (ord("A"), ord("a")):
             self.select_all()
+            return
+        if (event.ControlDown() and not event.AltDown() and not event.ShiftDown()
+                and key in (ord("Z"), ord("z"))):
+            # Edit, Undo is not a menu shortcut, so Ctrl+Z in a text field
+            # never undoes a message move; the list handles it itself.
+            if self._key_handler is not None:
+                self._key_handler("undo", False)
             return
         if self._enable_threading and not event.ControlDown() and not event.AltDown():
             # Right reveals a collapsed thread's messages as a

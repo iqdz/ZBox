@@ -31,7 +31,7 @@ import logging
 import mimetypes
 import os
 from email.message import EmailMessage
-from email.utils import formataddr, formatdate, make_msgid
+from email.utils import formataddr, formatdate, getaddresses, make_msgid, parseaddr
 
 import wx
 
@@ -39,11 +39,13 @@ import body_html
 import compose_body
 import himalaya_client
 import lang
+import notice_toast
+import openpgp_compose
 import spellcheck
 import trix_page
 from accessible import fit_dialog, make_read_only_viewer
 from account_manager import all_identities
-from announce import speak
+from spoken_feedback import speak
 from contacts import format_contact
 from envelope_format import _folder_display_to_himalaya
 
@@ -115,6 +117,24 @@ def _identity_signature(account, email):
     return account.signature, account.signature_html, False
 
 
+def _recipient_addresses(*fields):
+    """Every address in the To, Cc and Bcc fields, in order. Each field is
+    parsed on its own: since Python 3.13 getaddresses parses strictly, and
+    an empty Cc or Bcc in one joined list could leave it with nothing,
+    which sent encrypted mail with only the sender's own key. A field it
+    cannot parse is split at its commas instead."""
+    found = []
+    for field in fields:
+        field = (field or "").strip()
+        if not field:
+            continue
+        parsed = [address for _name, address in getaddresses([field]) if address]
+        if not parsed:
+            parsed = [parseaddr(part)[1] for part in field.split(",") if parseaddr(part)[1]]
+        found.extend(parsed)
+    return found
+
+
 def _address_items(value):
     return [part.strip() for part in (value or "").split(",") if part.strip()]
 
@@ -153,61 +173,44 @@ def _focus_page_underneath(notebook):
         page = notebook.GetPage(index)
     except RuntimeError:
         return
+    # A message tab: the top of the message, inside the page
+    # (MessageViewPanel.focus_page_top).
+    focus_top = getattr(page, "focus_page_top", None)
+    if focus_top is not None:
+        focus_top()
+        return
     focus_default = getattr(page, "focus_default", None)
     if focus_default is not None:
         focus_default()
 
 
-class _ContactCompleter(wx.TextCompleter):
-    """
-    Feeds the address book into a To/Cc/Bcc field's native Windows
-    autocomplete dropdown (screen-reader accessible since it's the
-    real system autocomplete, not a custom-drawn popup). Fields can
-    hold several comma-separated addresses, so only the segment after
-    the last comma is matched, and each candidate returned is the
-    full field text with that segment replaced -- the shape
-    wx.TextCompleter's own contract requires.
-    """
+def _suggestion_entries(provider, text):
+    """The suggestions for an address field holding text, as (head,
+    entries). Fields hold several comma-separated addresses, so only the
+    part after the last comma is matched; head is everything before it,
+    with the separator. Each entry is (value, email): one contact and its
+    address, or every member of a matching group at once with None, since
+    a group is not one address."""
+    head, _, segment = (text or "").rpartition(",")
+    segment = segment.strip()
+    if not segment:
+        return "", []
+    head_text = (head + ", ") if head else ""
+    entries = [
+        (format_contact(contact), contact.get("email"))
+        for contact in provider.search(segment)
+    ]
+    for group in provider.search_groups(segment):
+        members = provider.group_members(group["name"])
+        if members:
+            entries.append((", ".join(format_contact(contact) for contact in members), None))
+    return head_text, entries
 
-    def __init__(self, contacts_provider):
-        super().__init__()
-        self._contacts_provider = contacts_provider
-        self._matches = []
-        self._index = 0
 
-    def Start(self, prefix):
-        head, _, segment = prefix.rpartition(",")
-        segment = segment.strip()
-        if not segment:
-            self._matches = []
-            return False
-        head_text = (head + ", ") if head else ""
-        provider = self._contacts_provider()
-        contacts = provider.search(segment)
-        matches = [head_text + format_contact(c) for c in contacts]
-        # Audit finding 50: typing a group's name here expands to
-        # every one of its members at once -- the "mailing list" this
-        # finding asks for, with no new UI in the compose window
-        # itself. The dropdown entry IS the expanded text it inserts
-        # (wx.TextCompleter has no separate display label from the
-        # replacement value), which fits this app's no-surprises
-        # approach to spoken feedback: what's read out is exactly
-        # what lands in the field.
-        for group in provider.search_groups(segment):
-            members = provider.group_members(group["name"])
-            if not members:
-                continue
-            matches.append(head_text + ", ".join(format_contact(c) for c in members))
-        self._matches = matches
-        self._index = 0
-        return bool(self._matches)
-
-    def GetNext(self):
-        if self._index >= len(self._matches):
-            return ""
-        value = self._matches[self._index]
-        self._index += 1
-        return value
+def _suggestions(provider, text):
+    """(head, values): _suggestion_entries without the addresses."""
+    head, entries = _suggestion_entries(provider, text)
+    return head, [value for value, _email in entries]
 
 
 class _SavingDraftDialog(wx.Dialog):
@@ -260,9 +263,14 @@ class _SavingDraftDialog(wx.Dialog):
 
 class ComposePanel(wx.Panel):
     def __init__(self, parent, main_frame, from_identity="", to="", cc="", bcc="",
-                 subject="", body="", in_reply_to="", references=""):
+                 subject="", body="", in_reply_to="", references="", encrypt=None):
         super().__init__(parent)
         self.main_frame = main_frame
+        # OpenPGP (stage 3): True for a reply or forward of encrypted mail,
+        # which opens with Encrypt on, as Thunderbird does. The boxes the
+        # writer changed by hand are never reset by a From change.
+        self._pgp_reply_encrypted = bool(encrypt)
+        self._pgp_touched = set()
         self.attachment_paths = []
         # Threading, set by Reply and Forward from the original
         # message's own headers (see message_body.threading_headers).
@@ -311,8 +319,6 @@ class ComposePanel(wx.Panel):
         self.bcc_field = wx.TextCtrl(self, value=bcc)
         self.bcc_field.SetName(lang.t("dialogs", "comp_bcc", default="Bcc"))
 
-        for field in (self.to_field, self.cc_field, self.bcc_field):
-            field.AutoComplete(_ContactCompleter(lambda: self.main_frame.contacts))
         self.from_choice.Bind(wx.EVT_CHOICE, self._on_from_changed)
         # The selected identity's Always Cc and Always Bcc go into the
         # fields themselves, where they can be read and removed before
@@ -331,6 +337,26 @@ class ComposePanel(wx.Panel):
             lang.t("dialogs", "comp_subject", default="Subject")
         )
 
+        # Address suggestions (_open_suggestions): a real list, hidden and
+        # out of the tab order until Down Arrow in To, Cc or Bcc opens it.
+        # Made here, after Subject and before the body, which is its place
+        # in the tab order while it is shown.
+        # An empty label right before the list. Windows names a list after
+        # the label in front of it, which made JAWS call this one "Subject
+        # list"; with an empty one it reads the addresses alone. Shown and
+        # hidden with the list.
+        self.suggestion_label = wx.StaticText(self, label="")
+        self.suggestion_label.Hide()
+        self.suggestion_list = wx.ListBox(self, choices=[], style=wx.LB_SINGLE)
+        self.suggestion_list.SetMinSize(wx.Size(-1, 140))
+        self.suggestion_list.Hide()
+        self.suggestion_list.Bind(wx.EVT_LISTBOX_DCLICK, lambda _event: self._pick_suggestion())
+        self.suggestion_list.Bind(wx.EVT_KILL_FOCUS, self._on_suggestions_left)
+        self._suggest_field = None
+        self._suggest_head = ""
+        self._suggest_values = []
+        self._suggest_emails = []
+
         for label, field in (
             (from_label, self.from_choice),
             (to_label, self.to_field),
@@ -342,6 +368,8 @@ class ComposePanel(wx.Panel):
             header_grid.Add(field, 1, wx.EXPAND)
 
         sizer.Add(header_grid, 0, wx.EXPAND | wx.ALL, 8)
+        sizer.Add(self.suggestion_label, 0, wx.LEFT | wx.RIGHT, 8)
+        sizer.Add(self.suggestion_list, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 8)
 
         # No wx.StaticText label in front of the body, deliberately.
         # Three things would otherwise name this control and a screen
@@ -419,6 +447,19 @@ class ComposePanel(wx.Panel):
         button_row.Add(self.send_button, 0, wx.RIGHT, 6)
         button_row.Add(self.save_button, 0, wx.RIGHT, 6)
         button_row.Add(self.attach_button, 0)
+        # OpenPGP (stage 3): Thunderbird's Encrypt, Digitally Sign and
+        # Attach My Public Key, after Attach File in the tab order, set from
+        # the identity's End-to-End Encryption settings. Also on the Compose
+        # menu, which reaches them from inside the body.
+        self.encrypt_box = wx.CheckBox(self, label=lang.t("dialogs", "pgp_cm_encrypt", default="Encrypt"))
+        self.sign_box = wx.CheckBox(self, label=lang.t("dialogs", "pgp_cm_sign", default="Digitally Sign"))
+        self.attach_key_box = wx.CheckBox(
+            self, label=lang.t("dialogs", "pgp_cm_attach_key", default="Attach My Public Key"),
+        )
+        for box in (self.encrypt_box, self.sign_box, self.attach_key_box):
+            button_row.Add(box, 0, wx.LEFT | wx.ALIGN_CENTER_VERTICAL, 12)
+            box.Bind(wx.EVT_CHECKBOX, self._on_pgp_box)
+        self._apply_pgp_defaults(opening_entry)
         sizer.Add(button_row, 0, wx.ALL, 8)
 
         self.SetSizer(sizer)
@@ -766,6 +807,9 @@ class ComposePanel(wx.Panel):
             "formatting": self.cmd_formatting,
             "format_menu": self.cmd_format_menu,
             "link": self.cmd_link,
+            "pgp_encrypt": lambda: self.cmd_toggle_pgp("encrypt"),
+            "pgp_sign": lambda: self.cmd_toggle_pgp("sign"),
+            "pgp_attach_key": lambda: self.cmd_toggle_pgp("attach_key"),
             # The way out. Without these four the body is a keyboard
             # trap, which is the bug the reading view already had to
             # fix once -- see app/trix_page.py's chord table.
@@ -853,6 +897,87 @@ class ComposePanel(wx.Panel):
         if spoken:
             self._say(spoken)
 
+    # --- OpenPGP (stage 3) ---------------------------------------------
+
+    def _pgp_boxes(self):
+        return {"encrypt": self.encrypt_box, "sign": self.sign_box, "attach_key": self.attach_key_box}
+
+    def pgp_state(self):
+        """(Encrypt, Digitally Sign, Attach My Public Key), for ticking the
+        Compose menu."""
+        return (self.encrypt_box.GetValue(), self.sign_box.GetValue(), self.attach_key_box.GetValue())
+
+    def _pgp_settings(self, entry=None):
+        entry = entry if entry is not None else self._selected_identity_entry()
+        if entry is None:
+            return openpgp_compose.settings_for(None, "")
+        return openpgp_compose.settings_for(entry[0], entry[2])
+
+    def _apply_pgp_defaults(self, entry):
+        """Sets the boxes the writer has not changed from the identity's
+        settings, as Thunderbird does: Encrypt from encryption for new
+        messages (always on for a reply to encrypted mail), Digitally Sign
+        whenever Encrypt is on or unencrypted messages are signed, Attach My
+        Public Key whenever the message is signed. True when one changed."""
+        settings = self._pgp_settings(entry)
+        if str(settings.get("key") or "") == "none" and not self._pgp_reply_encrypted:
+            wanted = {"encrypt": False, "sign": False, "attach_key": False}
+        else:
+            encrypt = bool(settings.get("encrypt")) or self._pgp_reply_encrypted
+            sign = encrypt or bool(settings.get("sign"))
+            wanted = {"encrypt": encrypt, "sign": sign, "attach_key": sign}
+        changed = False
+        for name, box in self._pgp_boxes().items():
+            if name in self._pgp_touched or box.GetValue() == wanted[name]:
+                continue
+            box.SetValue(wanted[name])
+            changed = True
+        return changed
+
+    def _follow_pgp_boxes(self):
+        """Digitally Sign follows Encrypt, and Attach My Public Key follows
+        Digitally Sign, until each is changed by hand. Returns what changed,
+        in words, to be said."""
+        spoken = []
+        if "sign" not in self._pgp_touched:
+            value = self.encrypt_box.GetValue() or bool(self._pgp_settings().get("sign"))
+            if self.sign_box.GetValue() != value:
+                self.sign_box.SetValue(value)
+                spoken.append(self._pgp_state_words(self.sign_box))
+        if "attach_key" not in self._pgp_touched:
+            value = self.sign_box.GetValue()
+            if self.attach_key_box.GetValue() != value:
+                self.attach_key_box.SetValue(value)
+                spoken.append(self._pgp_state_words(self.attach_key_box))
+        return spoken
+
+    def _pgp_state_words(self, box):
+        if box.GetValue():
+            return lang.t("actions_announcements", "pgp_cm_on", default="{name} on.", name=box.GetLabel())
+        return lang.t("actions_announcements", "pgp_cm_off", default="{name} off.", name=box.GetLabel())
+
+    def _on_pgp_box(self, event):
+        """A box changed by hand. The box says its own state; any box that
+        follows it is said after."""
+        for name, box in self._pgp_boxes().items():
+            if box is event.GetEventObject():
+                self._pgp_touched.add(name)
+        spoken = self._follow_pgp_boxes()
+        if spoken:
+            self._say(" ".join(spoken))
+        event.Skip()
+
+    def cmd_toggle_pgp(self, name):
+        """Compose > Encrypt, Digitally Sign or Attach My Public Key, which
+        work from inside the body too. The new state is said, with any box
+        that follows it."""
+        box = self._pgp_boxes().get(name)
+        if box is None:
+            return
+        box.SetValue(not box.GetValue())
+        self._pgp_touched.add(name)
+        self._say(" ".join([self._pgp_state_words(box)] + self._follow_pgp_boxes()))
+
     def _apply_identity_copies(self, entry):
         """Puts the identity's Always Cc and Always Bcc addresses into
         the Cc and Bcc fields, taking out those the previous identity
@@ -900,6 +1025,11 @@ class ComposePanel(wx.Panel):
             spoken.append(lang.t(
                 "actions_announcements", "identity_copies_updated",
                 default="Cc and Bcc updated for this identity.",
+            ))
+        if self._apply_pgp_defaults(entry):
+            spoken.append(lang.t(
+                "actions_announcements", "pgp_cm_identity",
+                default="Encryption settings changed to this identity's.",
             ))
         plain, formatted, own = _identity_signature(account, email)
         new = (plain, formatted)
@@ -1281,7 +1411,134 @@ class ComposePanel(wx.Panel):
                     )
         except Exception:
             pass
+        # The address suggestion keys, the only keys this hook ever keeps.
+        if self._suggestion_key(event):
+            return
         event.Skip()
+
+    # --- Address suggestions ---------------------------------------------
+
+    def _address_fields(self):
+        return (self.to_field, self.cc_field, self.bcc_field)
+
+    def _suggestion_key(self, event):
+        """Down Arrow in To, Cc or Bcc opens the suggestions; in the list,
+        Enter and Tab put the chosen one in the field and Escape goes back
+        with nothing changed. True when the key was used here."""
+        key = event.GetKeyCode()
+        plain = not (event.ControlDown() or event.AltDown() or event.ShiftDown() or event.MetaDown())
+        focus = wx.Window.FindFocus()
+        if focus is self.suggestion_list and self.suggestion_list.IsShown():
+            if plain and key in (wx.WXK_RETURN, wx.WXK_NUMPAD_ENTER, wx.WXK_TAB):
+                self._pick_suggestion()
+                return True
+            if key == wx.WXK_BACK and not (event.ControlDown() or event.AltDown()):
+                self._backspace_from_suggestions()
+                return True
+            if (key in (wx.WXK_DELETE, wx.WXK_NUMPAD_DELETE) and event.ShiftDown()
+                    and not (event.ControlDown() or event.AltDown())):
+                self._remove_suggested_contact()
+                return True
+            if key == wx.WXK_ESCAPE:
+                self._close_suggestions(back_to_field=True)
+                return True
+            return False
+        if plain and key in (wx.WXK_DOWN, wx.WXK_NUMPAD_DOWN) and focus in self._address_fields():
+            return self._open_suggestions(focus)
+        return False
+
+    def _open_suggestions(self, field):
+        """Shows the suggestions for what is typed in field, most used
+        first, with focus on the first one. False, and nothing shown, when
+        there are none: Down Arrow then does what it always did."""
+        head, entries = _suggestion_entries(self.main_frame.contacts, field.GetValue())
+        if not entries:
+            return False
+        self._suggest_field = field
+        self._suggest_head = head
+        self._suggest_values = [value for value, _email in entries]
+        self._suggest_emails = [email for _value, email in entries]
+        self.suggestion_list.Set(self._suggest_values)
+        self.suggestion_list.SetSelection(0)
+        self.suggestion_label.Show()
+        self.suggestion_list.Show()
+        self.Layout()
+        self.suggestion_list.SetFocus()
+        return True
+
+    def _pick_suggestion(self):
+        """The selected suggestion goes into its field after what was there
+        before the last comma, followed by a comma and a space for the next
+        address, and focus returns to the end of the field."""
+        index = self.suggestion_list.GetSelection()
+        field = self._suggest_field
+        if field is not None and index != wx.NOT_FOUND and index < len(self._suggest_values):
+            field.ChangeValue(self._suggest_head + self._suggest_values[index] + ", ")
+        self._close_suggestions(back_to_field=True)
+
+    def _close_suggestions(self, back_to_field):
+        """Hides the list. Focus goes back to the field first, so hiding the
+        focused list never hands focus to whatever control comes next."""
+        field = self._suggest_field
+        self._suggest_field = None
+        self._suggest_values = []
+        self._suggest_emails = []
+        if back_to_field and field is not None:
+            field.SetFocus()
+            field.SetInsertionPointEnd()
+        if self.suggestion_list.IsShown():
+            self.suggestion_label.Hide()
+            self.suggestion_list.Hide()
+            self.Layout()
+
+    def _backspace_from_suggestions(self):
+        """Backspace in the list: the list closes and the field loses its
+        last character, as if Backspace had been pressed there. Held down,
+        the repeats then reach the field itself and go on deleting."""
+        field = self._suggest_field
+        self._close_suggestions(back_to_field=True)
+        if field is None:
+            return
+        end = field.GetLastPosition()
+        if end > 0:
+            field.Remove(end - 1, end)
+            field.SetInsertionPointEnd()
+
+    def _remove_suggested_contact(self):
+        """Shift+Delete in the list: the selected address leaves the
+        Address Book, and so the suggestions. Focus stays in the list on
+        the next suggestion, or goes back to the field when none is left.
+        A group's entry is not one address and is left alone."""
+        index = self.suggestion_list.GetSelection()
+        field = self._suggest_field
+        if field is None or index == wx.NOT_FOUND or index >= len(self._suggest_emails):
+            return
+        email = self._suggest_emails[index]
+        if not email:
+            return
+        self.main_frame.contacts.remove(email)
+        head, entries = _suggestion_entries(self.main_frame.contacts, field.GetValue())
+        if not entries:
+            self._close_suggestions(back_to_field=True)
+            return
+        self._suggest_head = head
+        self._suggest_values = [value for value, _email in entries]
+        self._suggest_emails = [address for _value, address in entries]
+        self.suggestion_list.Set(self._suggest_values)
+        self.suggestion_list.SetSelection(min(index, len(self._suggest_values) - 1))
+
+    def _on_suggestions_left(self, event):
+        # Shift+Tab or a click elsewhere: the list goes away once focus
+        # has settled somewhere else.
+        event.Skip()
+        wx.CallAfter(self._hide_if_left)
+
+    def _hide_if_left(self):
+        try:
+            if wx.Window.FindFocus() is not self.suggestion_list:
+                self._close_suggestions(back_to_field=False)
+        except RuntimeError:  # the tab closed meanwhile
+            pass
 
     def _describe_key(self, event):
         """The combination as text, or an empty string when the key is
@@ -1717,13 +1974,28 @@ class ComposePanel(wx.Panel):
             )
             return
 
+        # OpenPGP (stage 3): what Encrypt, Digitally Sign, Attach My Public
+        # Key and the Autocrypt header do to this message, after any question
+        # (openpgp_compose.plan_for_send). An empty plan sends exactly as
+        # before; None means the send was cancelled, and why was said.
+        recipients = _recipient_addresses(to, cc, bcc)
+        plan = openpgp_compose.plan_for_send(
+            self, self.main_frame.paths, account, email, recipients,
+            self.encrypt_box.GetValue(), self.sign_box.GetValue(), self.attach_key_box.GetValue(),
+        )
+        if plan is None:
+            return
+
         self._set_sending_state(True)
         self.main_frame.GetStatusBar().SetStatusText(lang.t(
             "main_ui", "sending_via",
             default=f"Sending via {email}...", sender=email,
         ))
 
-        raw_message = message.as_string()
+        # With OpenPGP the message is built on the worker (openpgp_send),
+        # once; a retry with AUTH LOGIN sends the same text again.
+        raw_message = None if plan.active() else message.as_string()
+        built = {"raw": raw_message}
         # Snapshot before the worker runs -- self._last_draft_id can
         # legitimately change (a new autosave lands) while Send is in
         # flight, and the cleanup below should purge whatever draft
@@ -1748,12 +2020,16 @@ class ComposePanel(wx.Panel):
         def work():
             # SMTP only. The Sent copy and the draft purge run after the
             # send is reported (after_send), so the tab closes at once.
+            if built["raw"] is None:
+                import openpgp_send
+
+                built["raw"] = openpgp_send.build(message, plan)
             himalaya_client.send_message_raw(
-                paths, account, raw_message, save_copy=False, section=send_section,
+                paths, account, built["raw"], save_copy=False, section=send_section,
             )
 
         def after_send():
-            himalaya_client.ensure_sent_copy(paths, account, raw_message, folder=sent_folder)
+            himalaya_client.ensure_sent_copy(paths, account, built["raw"], folder=sent_folder)
             if superseded_draft_id is not None:
                 # Best-effort: a sent message shouldn't leave a stale
                 # copy of itself sitting in Drafts. Failure here
@@ -2037,7 +2313,36 @@ class ComposePanel(wx.Panel):
                 return
             logger.warning("Draft autosave: skipping unreadable attachment(s): %s", unreadable)
 
-        raw_message = message.as_string()
+        # Encrypt on: the draft is saved encrypted to your own key
+        # (openpgp_send.build_draft), or not at all -- never in plain text.
+        draft_key = None
+        if self.encrypt_box.GetValue():
+            draft_key, problem = openpgp_compose.draft_key(self.main_frame.paths, account, email)
+            if draft_key is None:
+                logger.warning("Draft not saved: it cannot be encrypted.")
+                if silent:
+                    try:
+                        self.main_frame.GetStatusBar().SetStatusText(
+                            lang.t(
+                                "main_ui", "draft_autosave_failed",
+                                default="Draft autosave failed. See logs for details.",
+                            )
+                        )
+                    except RuntimeError:
+                        pass
+                else:
+                    wx.MessageBox(
+                        lang.t(
+                            "errors", "draft_save_failed",
+                            default=f"Could not save draft.\n\n{problem}", error=problem,
+                        ),
+                        lang.t("dialogs", "title_save_draft", default="Save Draft"),
+                        wx.OK | wx.ICON_ERROR,
+                    )
+                if on_done is not None:
+                    on_done(False)
+                return
+        raw_message = None if draft_key else message.as_string()
         drafts_folder = self._identity_drafts_folder(account, email)
         trash_folder = _folder_display_to_himalaya("Trash", account)
         previous_id = (
@@ -2059,8 +2364,13 @@ class ComposePanel(wx.Panel):
         draft_message_id_header = self._draft_message_id.strip("<>")
 
         def work():
+            text = raw_message
+            if text is None:
+                import openpgp_send
+
+                text = openpgp_send.build_draft(draft_key[0], message, draft_key[1])
             new_id = himalaya_client.add_message_raw(
-                self.main_frame.paths, account, drafts_folder, raw_message, flags=("draft",),
+                self.main_frame.paths, account, drafts_folder, text, flags=("draft",),
             )
             if previous_id is not None:
                 try:
@@ -2175,7 +2485,8 @@ class ComposePanel(wx.Panel):
             if dialog.ShowModal() == wx.ID_OK:
                 path = dialog.GetPath()
                 self.attachment_paths.append(path)
-                wx.MessageBox(
+                notice_toast.notify(
+                    self,
                     lang.t(
                         "dialogs", "attached_file",
                         default=f"Attached: {os.path.basename(path)}\n\n"
@@ -2184,5 +2495,4 @@ class ComposePanel(wx.Panel):
                         count=len(self.attachment_paths),
                     ),
                     lang.t("dialogs", "title_attach_file", default="Attach File"),
-                    wx.OK | wx.ICON_INFORMATION,
                 )

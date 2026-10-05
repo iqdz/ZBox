@@ -19,8 +19,17 @@ ZBox has no speech of its own. Everything it announces is handed to
 the screen reader you already run, in your own voice, rate and
 settings.
 
+Announcements are automatic: ZBox speaks while a screen reader runs
+and stays silent otherwise. One switch in Settings, Accessibility and
+Shortcut Keys, turns all of its speech on or off. Messages that only
+report what happened appear as small notices that close by
+themselves and never take focus.
+
 Mail is read over IMAP and sent over SMTP through the Himalaya
 command-line mail client, which ships inside the ZBox folder.
+Outlook.com, Hotmail, Live and MSN accounts are the exception: they
+work through Microsoft Graph, Microsoft's own mail service for apps
+(section 3).
 
 The whole folder is the app. There is no installer, nothing is added
 to the registry, and nothing is written outside the folder. Put it on
@@ -98,6 +107,14 @@ If Microsoft later asks you to sign in again, ZBox says so: open
 Tools, Account and Identities Settings, and sign in there. An
 existing account can switch to Microsoft sign-in there too.
 
+Outlook.com, Hotmail, Live and MSN accounts work through Microsoft
+Graph instead of IMAP and SMTP, so IMAP need not be turned on in
+Outlook.com. Their new mail is checked every 20 seconds. Large
+attachments are uploaded in pieces; an encrypted or signed message
+must stay under about 3 MB. Such an account added before this
+version signs in once more in Account and Identities Settings.
+Microsoft 365 work and school accounts still use IMAP and SMTP.
+
 Other providers
 Anything with plain IMAP and SMTP should work with its normal password
 or an app password: Yahoo, Fastmail and Apple (each needs an app
@@ -119,7 +136,18 @@ Folders > Go to Folder List, goes straight to the folder list.
 2. Messages, the list, with Status, From, Subject and Date columns.
    Status says Unread in words. Conversations are grouped into
    threads, collapsed by default and showing how many messages they
-   hold.
+   hold. The screen reader hears only each row's cells, such as the
+   sender, the subject and the date, without the column names before
+   them. Settings, Show column headers in the message list, shows
+   the header row again.
+   View > Columns adds or removes columns: Recipient, Correspondents,
+   Received, Size, Attachments, Priority and Junk Status, besides the
+   four above. The choice applies to every message list.
+   View > Sort By sorts by Date, Received, Star, Order Received,
+   Priority, From, Recipient, Correspondents, Size, Subject, Read,
+   Junk Status or Attachments, descending or ascending, and switches
+   between Threaded and Unthreaded. Correspondents is the recipient
+   in Sent and Drafts, and the sender everywhere else.
 3. Message, a reader that previews the selected message without
    marking it read.
 
@@ -198,12 +226,21 @@ dialogs.
 
 6. WRITING MAIL
 ---------------
-1. Ctrl+N opens a new message in its own tab. Reply (Ctrl+R), Reply
-   All (Ctrl+Shift+R) and Forward (Ctrl+L) open one filled in from the
-   message. Reply goes to the message's Reply-To address when it has
-   one, and replies stay in the same conversation for the recipient.
-2. Choose the From account, fill in To, Cc, Bcc and Subject. Typing a
-   contact or a group name completes it from the address book.
+1. Ctrl+N opens a new message in its own tab, from the account
+   selected in the folder tree, or from the default account when a
+   unified folder is selected. Reply (Ctrl+R), Reply All (Ctrl+Shift+R)
+   and Forward (Ctrl+L) open one filled in from the message. Reply
+   goes to the message's Reply-To address when it has one, and replies
+   stay in the same conversation for the recipient.
+2. Choose the From account, fill in To, Cc, Bcc and Subject. As you
+   type in To, Cc or Bcc, ZBox suggests the addresses you have sent
+   to (new messages, replies and forwards) and the contacts you put
+   in the address book; mail you receive adds nothing. The most
+   used come first, and older sends count for less. Down Arrow opens
+   the suggestions: Enter or Tab inserts one, Escape goes back,
+   Backspace goes back and deletes a character, and Shift+Delete
+   removes the address from the address book. A group's name fills
+   in all its members.
 3. Write the body. Formatting is on the Compose and Format menus and
    on keys such as Ctrl+B bold, Ctrl+I italic and Ctrl+K link.
    Ctrl+Shift+K says what formatting is at the caret.
@@ -236,7 +273,10 @@ only shows a dialog when something did not work.
 - Delete moves messages to Trash. Shift+Delete deletes them
   permanently after a confirmation. In an open HTML message the
   screen reader usually keeps plain Delete for itself; Ctrl+Delete or
-  Ctrl+D moves the message to Trash there instead.
+  Ctrl+D moves the message to Trash there instead. Delete and
+  Shift+Delete act on messages only in the message list, the search
+  results and an open message; in a text field they edit text as
+  usual.
 - Archive moves them to the account's archive folder (on Gmail, All
   Mail).
 - Move To and Copy To, in the list's context menu, list the account's
@@ -266,6 +306,11 @@ test From, To and Subject, then mark read, flag, or move to a folder.
 They run on new Inbox mail as it arrives, and Run Now applies them to
 a folder's existing messages.
 
+
+Ctrl+Z undoes the last Delete, Archive or Junk action in the message
+list, the search results, the folder tree and an open message, in
+Text and HTML view. It is not a menu shortcut, so in a text field
+Ctrl+Z only undoes typing.
 
 8. CHECKING FOR NEW MAIL
 ------------------------
@@ -306,7 +351,7 @@ their message lists are remembered in memory while ZBox runs and
 refreshed every two minutes, so they open at once, and the live list
 follows a moment later. Synchronize Now downloads the most recent
 messages of the Inbox and the Archive for the selected account.
-Settings, Clear message cache on moving away from Inbox, on by
+Settings, Clear message cache on moving away from Inbox, off by
 default, deletes a message's offline copy and saved body as soon as
 it leaves the Inbox or the Archive, also when it was deleted or moved
 somewhere else, such as on a phone. Nothing is ever deleted from the
@@ -319,12 +364,35 @@ and start it with Windows. File > Exit (Ctrl+Shift+Q) and the tray
 icon's Quit always really quit.
 
 
+ZBox reads which folders your server marks as Sent, Drafts, Trash,
+Junk and Archive (Gmail's All Mail for Archive), in any language,
+and remembers them for each account. A folder you set in Account
+Settings still comes first.
+
+While an instant-sync (IDLE) connection is live, the Inbox it
+watches is not checked every 20 seconds, but still at least every
+2 minutes.
+
 9. SEARCH
 ---------
-Edit > Find Messages (Ctrl+Shift+F) opens a search tab. Type the text,
-optionally narrow it to one account and one folder, and press Enter.
-It searches From, Subject and body, and the results open like any
-message.
+Edit > Find Messages (Ctrl+Shift+F) opens the Search tab. In tab
+order: Search for, the words; Look in (All, Subject, From, To or
+Body); Account; Folder, which with one account chosen also lists that
+account's own folders; Date (Any time, Today, Yesterday, Last 7 days,
+Last 30 days, This year, or Custom range, with From date and To date
+typed as year-month-day and an optional time such as 14:30); Unread
+only; Flagged only; Has attachment; and Search. Enter runs the search
+from any of them. The words may be left empty to search by the other
+choices alone. Has attachment is checked by ZBox itself, so a search
+with it takes longer.
+
+The number found is announced and the cursor lands on the first
+result. The results list works like the Inbox list: the same columns,
+context menu, single keys and bulk actions, each acting on the
+account and folder the message came from. A deleted or moved message
+leaves the results at once. Watch Thread, Ignore Thread and Open
+Message in Conversation are not offered there, as results are not
+grouped by thread. Enter opens a result in its own tab.
 
 
 10. ADDRESS BOOK
@@ -334,6 +402,11 @@ phone and notes. Import and export use vCard (.vcf) or CSV. Groups
 work as mailing lists: typing a group's name in To, Cc or Bcc fills in
 all its members. Message > Add Sender to Address Book adds the sender
 of the selected message.
+
+Contacts added here by hand, imported, or added with Add Sender are
+suggested when you write (section 6). Addresses kept from older
+versions that you never wrote to stay here, but are suggested only
+once you write to them or save them here again.
 
 
 11. PRIVACY, CONTENT BLOCKING AND JUNK RULES
@@ -398,27 +471,99 @@ another copy of ZBox. Passwords are never exported, so each imported
 account needs its password entered once in Account and Identities
 Settings.
 
+End-to-end encryption, OpenPGP
+Tools > OpenPGP Key Manager keeps your own OpenPGP keys and your
+correspondents' public keys, one line per key. New Key Pair makes a
+key for one of your identities: ECC (Elliptic Curve), the default,
+or RSA 3072 or 4096, expiring in three years or never. Import
+OpenPGP Key File and Import Key(s) From Clipboard read public keys,
+secret keys and secret key backups; a secret key with its own
+passphrase asks for it once. Export Public Key To File and Copy
+Public Key give your public key to others. Backup Secret Key To File
+saves your secret key in a file protected by a password you choose;
+ZBox reads such a backup back, and other OpenPGP programs need it
+decrypted first. Key Properties shows the fingerprint, and sets your
+acceptance of a correspondent's key, or whether your own key is a
+personal key. Revoke Key and Delete Key ask first.
+Your secret keys are kept in the secret store, under the master
+password, and the key list in the data folder, encrypted. Nothing is
+kept outside the ZBox folder.
+
+A message ZBox cannot decrypt says so instead of showing an empty
+page. Its text says the message cannot be decrypted and why: the secret
+key is not available, the passphrase was not entered, OpenPGP is not
+available in this copy, or the message could not be fetched. When the
+sender hid the subject, it reads Encrypted Message, in the message list
+too, until the message is opened and decrypted.
+
+
+Private mode (Settings, App and Data Security, or the key
+Windows+Ctrl+Shift+P from any program) is for using ZBox from a USB
+drive on a computer that is not yours. It needs a master password,
+asks for it, and warns before it starts. While it is on, messages
+are read from the server and kept in memory only: no offline copies,
+saved messages or debug logs, and Work Offline is not available.
+Opened attachments and the browser data of HTML mail are deleted when
+ZBox closes. Closing also ends every program ZBox started, empties the
+clipboard, and stops trusting the computer unless private mode was
+turned on from it. If the drive is lost, only encrypted files are
+left on it.
+
+Limits of private mode: Windows still keeps records no program can
+remove, such as its list of USB drives, the page file, and
+antivirus and network logs. A program that was already open when it
+took an attachment cannot be told apart from your other work and is
+not closed. Close every opened attachment yourself before closing
+ZBox, above all those opened with Windows' own programs such as
+Notepad or Windows Media Player, which cannot always be ended
+without extra permissions.
+
+S/MIME: Tools, S/MIME Certificate Manager imports your own
+certificate with its private key (a .p12 or .pfx file, with its
+password) and correspondents' certificates (.cer, .crt, .pem or
+.der). Signed and encrypted S/MIME mail is read like OpenPGP mail,
+with its status above the message. A signature is trusted when its
+certificate comes from an authority Windows trusts and matches the
+sender's address. Certificates from valid signatures are kept for
+later.
+
+The browser data of HTML mail is kept in the ZBox folder
+(data\cache\webview2), not in Windows' Local AppData, and the
+thread, junk and pending delete records are encrypted like the
+address book.
 
 13. SETTINGS
 ------------
-Tools > Settings, in groups:
-- Language and theme: interface language, and interface theme (Follow
-  system, Light, Dark, Midnight blue, Warm dark, Soft contrast). Both
-  take effect after a restart, which ZBox offers to do.
-- Reading: message headers on or off, font size and reading font,
-  default view (HTML or Text), HTML engine, and WebView2 runtime.
-- Screen reader: how long ZBox quiets the screen reader while an HTML
-  message opens, how long it waits before focusing the page, how long
-  its own announcements stay up, and whether actions are announced.
-- Writing and folders: attachments folder, draft autosave interval,
-  Trash and Junk auto-purge, and the single-key list shortcuts.
-- Sound and notifications: sounds on or off, desktop notifications,
+Tools > Settings opens with focus on a list of categories. Up and
+Down Arrow move through it, and Ctrl+Tab and Ctrl+Shift+Tab switch
+category from anywhere in the dialog. The categories:
+- General: interface language, debug logging (one log per launch in
+  data\logs), the attachments folder, the draft autosave interval,
+  the system tray and window (minimize or close to the tray, stay
+  maximized, run when Windows starts, create a desktop shortcut),
+  and updates.
+- Personalization: interface theme (Follow system, Light, Dark,
+  Midnight blue, Warm dark, Soft contrast), message headers, font
+  size and reading font, default view (HTML or Text), HTML engine and
+  WebView2 runtime. Language and theme take effect after a restart,
+  which ZBox offers to do.
+- Accessibility and Shortcut Keys: first the switch for all of
+  ZBox's speech, then how long ZBox quiets the screen reader while an
+  HTML message opens, how long it waits before focusing the page, how
+  long its own announcements stay up, the single-key list shortcuts,
+  and the list's column headers.
+- Maintenance and Cleanup: Clear message cache on moving away from
+  Inbox (off by default), Trash and Junk auto-delete, and the offline
+  cache clean-up. Tools > Cache Clean Up Configuration opens this
+  category.
+- Sounds and Notifications: sounds on or off, desktop notifications,
   and the sound theme. A sound theme is a folder of .wav files in
   data\sounds; any file it lacks falls back to the default sound.
-- App and Data Security: app lock, unlock methods, master password.
-- System tray and window: minimize or close to the tray, stay
-  maximized, run when Windows starts, and create a desktop shortcut.
-- Debug logging, which writes one log per launch in data\logs.
+- Security: app lock, unlock methods, master password, private mode.
+- About ZBox, with its Contact button. Help > About ZBox opens this
+  category.
+Times and intervals are chosen from lists of real values, in seconds,
+minutes and days.
 
 Account and Identities Settings (Tools > Account and Identities
 Settings) holds each account's name, addresses and extra identities, a
@@ -482,7 +627,9 @@ Update Settings, Open the Releases Page), About ZBox.
 Unified Folders combine one folder type, such as Inbox, from every
 account into a single list. Choose them in View > Folders > Configure
 Unified Folders. Ctrl+Shift+J, or View > Folders > Jump to Inbox
-Messages List, jumps to the inbox list.
+Messages List, goes to the default Inbox with the cursor on its top
+message: the unified Inbox in Unified view, otherwise the default
+account's Inbox. ZBox opens there at startup too.
 
 
 15. LANGUAGES
@@ -558,7 +705,8 @@ appear only by domain. You can read a log before sending it.
 ---------------------------------------------
 Not yet supported:
 - Google sign-in (OAuth2). Gmail works with an app password.
-- PGP encryption, deferred unless users ask for it.
+- Sending signed or encrypted S/MIME mail, and checking whether a
+  certificate was revoked.
 
 Reporting a problem: email harith@gvoice.org. GitHub issues are not
 used. Please include:

@@ -99,7 +99,9 @@ def _folder_display_to_himalaya(folder_name, account=None):
             )
             if remembered:
                 return remembered
-        return provider_presets.himalaya_folder_name(account.imap_host, folder_name)
+        return provider_presets.himalaya_folder_name(
+            account.imap_host, folder_name, getattr(account, "account_id", None)
+        )
     return {"Inbox": "INBOX"}.get(folder_name, folder_name)
 
 
@@ -287,8 +289,30 @@ def _envelope_from(envelope):
     return "(unknown sender)"
 
 
+# Subjects read from inside encrypted messages opened this session (the
+# OpenPGP protected headers), by Message-ID, shown in place of the "..."
+# the sender put outside. Memory only: never written anywhere.
+_SESSION_SUBJECTS = {}
+
+
+def remember_session_subject(message_id, subject):
+    key = str(message_id or "").strip()
+    if key and subject:
+        _SESSION_SUBJECTS[key] = str(subject)
+
+
 def _envelope_subject(envelope):
-    return envelope.get("subject") or "(no subject)"
+    if _SESSION_SUBJECTS:
+        hidden = _SESSION_SUBJECTS.get(str(envelope.get("message-id") or "").strip())
+        if hidden:
+            return hidden
+    subject = str(envelope.get("subject") or "(no subject)")
+    if subject.strip() == "...":
+        # OpenPGP protected headers: the real Subject is inside the
+        # encrypted message. Until it is opened and read, say what it is
+        # rather than a bare "..." a screen reader speaks as nothing.
+        return lang.t("dialogs", "pgp_rs_hidden_subject", default="Encrypted Message")
+    return subject
 
 
 def _envelope_date(envelope):
@@ -849,10 +873,124 @@ def _envelope_status_text(unread, flagged):
     return ", ".join(parts)
 
 
+def _envelope_recipient(envelope):
+    """Every To address, by name where it has one, joined: the
+    Recipient column. To is a list of {"name", "email"} dicts, or a
+    single one."""
+    entries = envelope.get("to")
+    if isinstance(entries, dict):
+        entries = [entries]
+    names = []
+    for entry in entries if isinstance(entries, list) else []:
+        if isinstance(entry, dict):
+            text = entry.get("name") or entry.get("email") or entry.get("address")
+            if text:
+                names.append(str(text))
+    return ", ".join(names)
+
+
+def _envelope_size(envelope):
+    """The message size in bytes, 0 when the listing gave none."""
+    try:
+        return max(0, int(envelope.get("size") or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def _envelope_has_attachment(envelope):
+    """True when the listing said the message has an attachment. Rows
+    Himalaya listed without its costly option carry null: no."""
+    return bool(envelope.get("has-attachment"))
+
+
+def _envelope_priority(envelope):
+    """1 (highest) to 5 (lowest); 3, normal, when none is known."""
+    try:
+        value = int(envelope.get("priority") or 3)
+    except (TypeError, ValueError):
+        return 3
+    return value if 1 <= value <= 5 else 3
+
+
+def _parse_envelope_received(envelope):
+    """The server's arrival date, parsed like the Date header; the Date
+    header itself for rows that came without one."""
+    received = envelope.get("received")
+    if received:
+        return _parse_envelope_date({"date": received})
+    return _parse_envelope_date(envelope)
+
+
+def _friendly_envelope_received(envelope):
+    """The Received column: the arrival date, read like the Date
+    column, or the Date header for rows without one."""
+    received = envelope.get("received")
+    if received:
+        return _friendly_envelope_date({"date": received})
+    return _friendly_envelope_date(envelope)
+
+
+def _envelope_order(envelope):
+    """Order Received: the server's UID, which grows with each arrival.
+    An offline-copy id that is not a number sorts after the numbers."""
+    text = str(envelope.get("id") or "")
+    if text.isdigit():
+        return (0, int(text), "")
+    return (1, 0, text)
+
+
+def _envelope_size_text(envelope):
+    """The Size column, as Thunderbird writes it: whole kilobytes below
+    a megabyte, then megabytes with one decimal. Empty when unknown."""
+    size = _envelope_size(envelope)
+    if size <= 0:
+        return ""
+    if size < 1024 * 1024:
+        return lang.t("dialogs", "envlist_size_kb", default="{size} KB",
+                      size=max(1, (size + 1023) // 1024))
+    return lang.t("dialogs", "envlist_size_mb", default="{size} MB",
+                  size="%.1f" % (size / 1048576.0))
+
+
+def _envelope_priority_text(envelope):
+    """The Priority column: nothing for Normal, as in Thunderbird."""
+    value = _envelope_priority(envelope)
+    if value == 1:
+        return lang.t("dialogs", "envlist_priority_highest", default="Highest")
+    if value == 2:
+        return lang.t("dialogs", "envlist_priority_high", default="High")
+    if value == 4:
+        return lang.t("dialogs", "envlist_priority_low", default="Low")
+    if value == 5:
+        return lang.t("dialogs", "envlist_priority_lowest", default="Lowest")
+    return ""
+
+
+def _envelope_attachment_text(envelope):
+    """The Attachments column: a word when there is one, else nothing."""
+    if _envelope_has_attachment(envelope):
+        return lang.t("dialogs", "envlist_attachment", default="Attachments")
+    return ""
+
+
+# View > Sort By, in Thunderbird's order. Keys that can tie take the
+# date as their second value, so equal rows stay in date order.
+# "correspondents" sorts by From here; the list panel uses "recipient"
+# instead for Sent and Drafts (envelope_list_panel._apply_sort).
 _SORT_KEY_FUNCS = {
     "date": lambda envelope: _parse_envelope_date(envelope),
-    "subject": lambda envelope: _envelope_subject(envelope).lower(),
+    "received": lambda envelope: _parse_envelope_received(envelope),
+    "star": lambda envelope: (_envelope_is_flagged(envelope), _parse_envelope_date(envelope)),
+    "order": lambda envelope: _envelope_order(envelope),
+    "priority": lambda envelope: (-_envelope_priority(envelope), _parse_envelope_date(envelope)),
     "from": lambda envelope: _envelope_from(envelope).lower(),
+    "recipient": lambda envelope: _envelope_recipient(envelope).lower(),
+    "correspondents": lambda envelope: _envelope_from(envelope).lower(),
+    "size": lambda envelope: (_envelope_size(envelope), _parse_envelope_date(envelope)),
+    "subject": lambda envelope: _envelope_subject(envelope).lower(),
+    "read": lambda envelope: (_envelope_is_unread(envelope), _parse_envelope_date(envelope)),
+    "junk": lambda envelope: (bool(envelope.get("_zbox_spam_label")), _parse_envelope_date(envelope)),
+    "attachments": lambda envelope: (_envelope_has_attachment(envelope), _parse_envelope_date(envelope)),
 }
 
 
@@ -881,6 +1019,11 @@ def _envelopes_signature(envelopes):
             _envelope_from(envelope),
             _envelope_subject(envelope),
             _envelope_date(envelope),
+            _envelope_recipient(envelope),
+            _envelope_size(envelope),
+            _envelope_has_attachment(envelope),
+            _envelope_priority(envelope),
+            str(envelope.get("received") or ""),
         )
         for envelope in envelopes
     ))

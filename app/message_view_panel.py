@@ -100,10 +100,12 @@ import wx
 
 import himalaya_client
 import lang
+import notice_toast
 from accessible import make_read_only_viewer, make_silent_focus_target
 from content_blocker import filter_message_html
 from envelope_format import _envelope_sender_email_only, _message_header_block
 from message_body import extract_message_body, extract_message_html, html_to_text, clean_body_text
+import openpgp_read
 
 logger = logging.getLogger("zbox.msgview")
 
@@ -230,6 +232,9 @@ _HOTKEY_BRIDGE_JS = r"""
     // live screen-reader check for the same reason bare A was --
     // this file cannot run JAWS to confirm it.
     else if (event.altKey && (key === 'a' || key === 'A')) { message = 'ALT_A'; }
+    // Edit, Undo is not a menu shortcut, so Ctrl+Z inside the page is
+    // passed on here, as Delete is.
+    else if (ctrl && !event.shiftKey && !event.altKey && (key === 'z' || key === 'Z')) { message = 'CTRL_Z'; }
     if (message) {
       event.preventDefault();
       event.stopPropagation();
@@ -275,6 +280,18 @@ _HOTKEY_BRIDGE_JS = r"""
 # "works" only because it happens to move focus to the first real
 # content node. Focusing the first element with direct text instead
 # places the virtual cursor at the very start of the message.
+# The forced run of the anchor below, for focus coming back to a page
+# that already had it (a reply or a forward from this message was just
+# sent). The anchor already holds the page's focus from when the message
+# opened, and focusing it again raises no focus event, so the screen
+# reader stayed at the document edge until Tab. Forced, the anchor is
+# blurred first and focused afresh, at the top of the message.
+_CONTENT_ANCHOR_REFOCUS_JS = r"""
+(function () {
+  if (window.__zboxContentAnchor) { window.__zboxContentAnchor(true); }
+})();
+"""
+
 _CONTENT_ANCHOR_FOCUS_JS = r"""
 (function () {
   if (window.__zboxContentAnchor) {
@@ -321,16 +338,26 @@ _CONTENT_ANCHOR_FOCUS_JS = r"""
 
   var anchor = null;
 
-  function place() {
+  function place(force) {
     if (!document.body) { return; }
+    // force is true only from _CONTENT_ANCHOR_REFOCUS_JS. Run as the
+    // DOMContentLoaded listener this receives an Event, which must not
+    // count as forced.
+    var forced = force === true;
     var active = document.activeElement;
-    if (active && active !== document.body && active !== document.documentElement) {
+    var inside = active && active !== document.body && active !== document.documentElement;
+    if (forced && inside) {
+      // Focusing the element that already has focus raises no focus
+      // event. Blur it first, so the focus below is a fresh one.
+      try { active.blur(); } catch (e) {}
+    } else if (inside) {
       // Focus already sits inside the page (our anchor from an
       // earlier run, or a Tab the user pressed). Never move it.
       return;
     }
     if (!anchor) { anchor = firstTextElement(document.body); }
     var el = anchor || document.body;
+    if (forced) { try { window.scrollTo(0, 0); } catch (e) {} }
     try { if (!el.hasAttribute('tabindex')) { el.setAttribute('tabindex', '-1'); } } catch (e) {}
     try { el.style.outline = 'none'; } catch (e) {}
     try { el.focus({ preventScroll: true }); } catch (e) { try { el.focus(); } catch (e2) {} }
@@ -757,6 +784,16 @@ class MessageViewPanel(wx.Panel):
         self.folder = folder
         self.envelope = envelope
         self.message = message
+        # OpenPGP (openpgp_read): the status of an encrypted or signed
+        # message, None for any other. Its readable form lives only in
+        # this tab, in memory, and goes with it.
+        self._pgp = openpgp_read.status_of(message)
+        # The envelope as shown: the Subject from inside an encrypted
+        # message (protected headers) in place of the outer "...".
+        self._display_envelope = envelope
+        hidden_subject = openpgp_read.display_subject(message)
+        if hidden_subject and isinstance(envelope, dict):
+            self._display_envelope = dict(envelope, subject=hidden_subject)
         # Every message of the thread this one belongs to, in list
         # order, or None when it was opened outside a thread context.
         # Ctrl+Shift+Page Down / Page Up flip through it, replacing
@@ -811,10 +848,32 @@ class MessageViewPanel(wx.Panel):
         # right, and putting a control in front of it would undo that;
         # the header block is one Shift+Tab away instead, and reads as
         # static text rather than an edit field.
+        # --- Message security (OpenPGP) ---
+        # Thunderbird's words for what the message's encryption and
+        # signature are, above the headers and outside the body like
+        # them, one Shift+Tab further. Only for encrypted or signed mail.
+        self.security = None
+        if self._pgp is not None:
+            security_text = openpgp_read.details(self._pgp)
+            self.security = wx.TextCtrl(
+                self,
+                value=security_text,
+                style=wx.TE_MULTILINE | wx.TE_READONLY | wx.BORDER_SIMPLE,
+            )
+            self.security.SetName(
+                lang.t("dialogs", "pgp_rs_field", default="Message security")
+            )
+            make_read_only_viewer(self.security)
+            line_height = self.security.GetCharHeight() or 16
+            self.security.SetMinSize(
+                (-1, line_height * (security_text.count("\n") + 2) + line_height)
+            )
+            sizer.Add(self.security, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 8)
+
         self.headers = None
         if getattr(main_frame.settings_manager.settings,
                    "show_message_headers", True):
-            header_text = _message_header_block(envelope)
+            header_text = _message_header_block(self._display_envelope)
             self.headers = wx.TextCtrl(
                 self,
                 value=header_text,
@@ -891,6 +950,16 @@ class MessageViewPanel(wx.Panel):
             button.Bind(wx.EVT_BUTTON, lambda _event: self.show_attachments_dialog())
             sizer.Add(button, 0, wx.ALL, 8)
 
+        # A public key attached to the message (application/pgp-keys),
+        # offered for import as Thunderbird does.
+        self._key_positions = openpgp_read.key_attachment_positions(message)
+        if self._key_positions:
+            key_button = wx.Button(
+                self, label=lang.t("dialogs", "pgp_rs_import", default="Import OpenPGP Key")
+            )
+            key_button.Bind(wx.EVT_BUTTON, lambda _event: self.import_attached_keys())
+            sizer.Add(key_button, 0, wx.ALL, 8)
+
         self.SetSizer(sizer)
         self._bind_close_accelerators()
 
@@ -938,11 +1007,12 @@ class MessageViewPanel(wx.Panel):
         open."""
         body_text = extract_message_body(self.message)
         body_text = body_text if body_text else "(no message body)"
-        header_text = _message_header_block(self.envelope)
+        header_text = _message_header_block(getattr(self, "_display_envelope", None) or self.envelope)
         return header_text + "\n\n" + body_text
 
     def printable_title(self):
-        subject = self.envelope.get("subject") if isinstance(self.envelope, dict) else None
+        shown = getattr(self, "_display_envelope", None) or self.envelope
+        subject = shown.get("subject") if isinstance(shown, dict) else None
         return subject or "Message"
 
     # --- View-mode switching -----------------------------------------
@@ -1002,6 +1072,28 @@ class MessageViewPanel(wx.Panel):
             wx.CallLater(self._webview_focus_delay_ms(), self._focus_loaded_webview)
             return
         self.focus_view()
+
+    def focus_page_top(self):
+        """
+        Where a reply or a forward made from this message comes back to
+        once it is sent (compose_panel._focus_page_underneath): the top
+        of the message, with the screen reader inside the page, as when
+        it opened. focus_default leaves the page's own focus where it
+        was -- on the anchor, from the open -- and focusing that again
+        raised no event, so the reader stayed at the document edge
+        until Tab. The forced anchor blurs it first. Text view, or a
+        page not loaded: the same as focus_default.
+        """
+        if (
+            self._view_mode == "html"
+            and self.webview is not None
+            and getattr(self, "_webview_loaded", False)
+            and not self._webview_closing
+        ):
+            logger.debug("focus_page_top: HTML view, page top after the focus delay")
+            wx.CallLater(self._webview_focus_delay_ms(), self._focus_loaded_webview, True)
+            return
+        self.focus_default()
 
     def focus_view(self):
         """Puts keyboard focus on whichever view is active, so the
@@ -1238,7 +1330,7 @@ class MessageViewPanel(wx.Panel):
                 extract_message_html(self.message)
             )
             subject = None
-            for source in (self.envelope, self.message):
+            for source in (getattr(self, "_display_envelope", None) or self.envelope, self.message):
                 if isinstance(source, dict):
                     subject = source.get("subject")
                     if subject:
@@ -1710,7 +1802,9 @@ class MessageViewPanel(wx.Panel):
         thread_next_id = wx.NewIdRef()
         thread_prev_id = wx.NewIdRef()
         full_headers_id = wx.NewIdRef()
+        undo_id = wx.NewIdRef()
         self.Bind(wx.EVT_MENU, self._on_full_headers_shortcut, id=full_headers_id)
+        self.Bind(wx.EVT_MENU, self._on_undo_shortcut, id=undo_id)
         self.Bind(wx.EVT_MENU, self._on_thread_next_shortcut, id=thread_next_id)
         self.Bind(wx.EVT_MENU, self._on_thread_prev_shortcut, id=thread_prev_id)
         self.Bind(wx.EVT_MENU, self._on_close_and_return, id=close_id)
@@ -1781,8 +1875,14 @@ class MessageViewPanel(wx.Panel):
             (wx.ACCEL_CTRL | wx.ACCEL_SHIFT, wx.WXK_PAGEUP, thread_prev_id),
             # View > Full Headers, the same key as in the menu.
             (wx.ACCEL_CTRL | wx.ACCEL_SHIFT, ord("H"), full_headers_id),
+            # Edit, Undo, which is not a menu shortcut.
+            (wx.ACCEL_CTRL, ord("Z"), undo_id),
         ])
         self.SetAcceleratorTable(accel_table)
+
+    def _on_undo_shortcut(self, event):
+        """Ctrl+Z from inside an open message tab: Edit, Undo."""
+        self.main_frame._on_undo(None)
 
     def _on_delete_shortcut(self, event):
         """Delete/Ctrl+D/Ctrl+Delete from inside an open message
@@ -2029,7 +2129,7 @@ class MessageViewPanel(wx.Panel):
         self._pending_html_focus = True
         self._park_focus_while_loading()
 
-    def _focus_loaded_webview(self):
+    def _focus_loaded_webview(self, refocus=False):
         """Actually focuses the loaded WebView, once
         _webview_focus_delay_ms has elapsed since it reported
         itself loaded. Guarded: the tab may have closed (Escape /
@@ -2055,7 +2155,7 @@ class MessageViewPanel(wx.Panel):
             # announced until there is a message to announce.
             self._reveal_webview()
             self._show_own_tab()
-            if not self._focus_webview_document():
+            if not self._focus_webview_document(force=refocus):
                 logger.debug("_focus_loaded_webview: SetFocus failed")
                 return
             webview = self.webview
@@ -2145,7 +2245,7 @@ class MessageViewPanel(wx.Panel):
         injection at load is enough."""
         self._run_script(_HTML_BLANK_CLEANUP_JS, "blank_cleanup")
 
-    def _focus_webview_document(self):
+    def _focus_webview_document(self, force=False):
         """Focuses the rendered page itself rather than the wx wrapper
         around it. SetFocus() first (Win32 focus must reach the
         control), then a script moves focus on into the page's first
@@ -2161,7 +2261,10 @@ class MessageViewPanel(wx.Panel):
             self.webview.SetFocus()
         except RuntimeError:
             return False
-        self._run_script(_CONTENT_ANCHOR_FOCUS_JS, "content_anchor")
+        if force:
+            self._run_script(_CONTENT_ANCHOR_REFOCUS_JS, "content_anchor_refocus")
+        else:
+            self._run_script(_CONTENT_ANCHOR_FOCUS_JS, "content_anchor")
         return True
 
     def _silence_hold_ms(self):
@@ -2367,6 +2470,8 @@ class MessageViewPanel(wx.Panel):
                 self.account, self.folder, self.envelope,
                 after_success=self.close_tab,
             )
+        elif message == "CTRL_Z":
+            self._on_undo_shortcut(None)
 
     # --- Message actions ----------------------------------------------
 
@@ -2423,6 +2528,8 @@ class MessageViewPanel(wx.Panel):
         ))
 
         def work():
+            if self._save_plain_attachments(dest_dir):
+                return
             himalaya_client.download_attachments(
                 self.main_frame.paths, self.account, message_id, dest_dir, folder=self.folder
             )
@@ -2432,13 +2539,13 @@ class MessageViewPanel(wx.Panel):
                 "main_ui", "saved_to",
                 default=f"Saved to {dest_dir}", folder=dest_dir,
             ))
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "attachment_saved",
                     default=f"Attachment saved to:\n{dest_dir}", path=dest_dir,
                 ),
                 lang.t("dialogs", "title_attachment_saved", default="Attachment Saved"),
-                wx.OK | wx.ICON_INFORMATION,
             )
 
         def on_error(exc):
@@ -2518,6 +2625,50 @@ class MessageViewPanel(wx.Panel):
         if getattr(self, "_attachment_indexes", []):
             self._on_save_all_attachments(self._attachment_indexes)
 
+    def import_attached_keys(self):
+        """Import OpenPGP Key: the keys attached to this message, shown
+        and asked about as Import OpenPGP Key File does."""
+        jobs = [self._attachment_bytes_job(position) for position in getattr(self, "_key_positions", [])]
+        if not jobs:
+            return
+        main_frame = self.main_frame
+
+        def work():
+            return b"\n".join(job() for job in jobs)
+
+        def on_success(raw):
+            from openpgp_key_manager import import_key_bytes
+
+            import_key_bytes(main_frame, raw, paths=main_frame.paths)
+
+        def on_error(exc):
+            wx.MessageBox(
+                lang.t(
+                    "errors", "attachment_open_failed",
+                    default=f"Could not open attachment.\n\n{exc}", error=exc,
+                ),
+                lang.t("dialogs", "pgp_title", default="OpenPGP Key Manager"),
+                wx.OK | wx.ICON_ERROR, main_frame,
+            )
+
+        main_frame.lanes.for_account(self.account.account_id).submit(work, on_success, on_error)
+
+    def _save_plain_attachments(self, dest_dir):
+        """For a message read through OpenPGP, writes every attachment
+        from the readable form held here and returns True; False for any
+        other message, which Himalaya's download saves as before."""
+        import attachment_extract
+
+        status = getattr(self, "_pgp", None)
+        plain = status.plain if status is not None else None
+        if not plain:
+            return False
+        for position, (name, _part) in enumerate(attachment_extract.attachment_parts(plain)):
+            filename = attachment_extract.safe_filename(name, "attachment%d" % (position + 1))
+            with open(os.path.join(dest_dir, filename), "wb") as handle:
+                handle.write(attachment_extract.extract_attachment(plain, name, position))
+        return True
+
     def _attachment_bytes_job(self, position):
         """A worker job that returns one attachment's bytes, taken out
         of the message's raw source."""
@@ -2527,7 +2678,14 @@ class MessageViewPanel(wx.Panel):
             self.main_frame, self.account, self.folder, self.envelope,
         )
 
+        status = getattr(self, "_pgp", None)
+        plain = status.plain if status is not None else None
+
         def work():
+            if plain:
+                # Read through OpenPGP: the attachment comes from the
+                # readable form held in this tab, not the server copy.
+                return attachment_extract.extract_attachment(plain, name, position)
             raw = main_frame.raw_message(account, folder, envelope.get("id"), envelope)
             return attachment_extract.extract_attachment(raw, name, position)
         return work
@@ -2621,13 +2779,13 @@ class MessageViewPanel(wx.Panel):
             status.SetStatusText(lang.t(
                 "main_ui", "saved_to", default=f"Saved to {folder}", folder=folder,
             ))
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "attachment_saved",
                     default=f"Attachment saved to:\n{saved}", path=saved,
                 ),
                 lang.t("dialogs", "title_attachment_saved", default="Attachment Saved"),
-                wx.OK | wx.ICON_INFORMATION,
             )
 
         def on_error(exc):
@@ -2678,6 +2836,8 @@ class MessageViewPanel(wx.Panel):
 
         def work():
             os.makedirs(dest_dir, exist_ok=True)
+            if self._save_plain_attachments(dest_dir):
+                return
             himalaya_client.download_attachments(
                 self.main_frame.paths, self.account, message_id, dest_dir, folder=self.folder
             )
@@ -2687,7 +2847,8 @@ class MessageViewPanel(wx.Panel):
                 "main_ui", "saved_to",
                 default=f"Saved to {dest_dir}", folder=dest_dir,
             ))
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "attachments_saved",
                     default=f"{count} attachments saved to:\n{dest_dir}",
@@ -2697,7 +2858,6 @@ class MessageViewPanel(wx.Panel):
                     "dialogs", "title_attachments_saved",
                     default="Attachments Saved",
                 ),
-                wx.OK | wx.ICON_INFORMATION,
             )
 
         def on_error(exc):

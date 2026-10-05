@@ -573,7 +573,7 @@ class _PooledConnection:
                     if not window:
                         return []
                     response = self._client.fetch(
-                        window, ["ENVELOPE", "FLAGS", "INTERNALDATE"],
+                        window, _list_items(),
                     )
                 except ImapBodyFetchUnavailable:
                     raise
@@ -817,6 +817,32 @@ class _PooledConnection:
                 return bool(uids)
         raise ImapBodyFetchUnavailable("unreachable")
 
+    def attachment_uids(self, folder, message_ids):
+        """
+        Which of these UIDs in `folder` have an attachment, read from
+        each message's BODYSTRUCTURE the way a listing with the
+        attachment column marks rows (_has_attachment). IMAP SEARCH has
+        no key for attachments, so the Search tab checks the results the
+        server already matched this way.
+        """
+        uids = []
+        for value in message_ids:
+            try:
+                uids.append(int(str(value)))
+            except (TypeError, ValueError):
+                continue
+        if not uids:
+            return []
+
+        def action(client):
+            data = client.fetch(uids, ["BODYSTRUCTURE"])
+            return sorted(
+                int(uid) for uid, item in data.items()
+                if _has_attachment(item.get(b"BODYSTRUCTURE"))
+            )
+
+        return self._run_classified(folder, action, fresh=False)
+
     def close(self, wait=0.5):
         """
         Logs out, waiting at most `wait` seconds for the lock. A
@@ -907,6 +933,17 @@ _FLAG_IANA = {
 }
 
 
+def fetch_message_bytes(paths, account, message_id, folder="INBOX", background=False):
+    """
+    The message exactly as the server holds it, as bytes, over the same
+    pooled connection: what an OpenPGP signature is checked against
+    (openpgp_read). Not decoded, not parsed, not cached.
+    """
+    if imapclient is None:
+        raise ImapBodyFetchUnavailable("imapclient is not installed")
+    return bytes(_pooled(account, paths).fetch(message_id, folder, background=background))
+
+
 def _flag_entries(raw_flags):
     """
     IMAP flags in the shape envelope consumers read: a list of
@@ -953,6 +990,75 @@ def _address_entries(raw):
             "email": email_text,
         })
     return entries
+
+
+# What a listing asks for beyond the envelope, flags and arrival date
+# (View > Sort By and View > Columns). The size always: one number per
+# message, measured at no cost worth naming. The message structure, for
+# attachments, and the priority headers only while a shown column or the
+# chosen sort needs them (main_frame._update_list_extras), so a list
+# nobody sorts by attachment stays as light as it was.
+_PRIORITY_FIELDS = "BODY.PEEK[HEADER.FIELDS (X-PRIORITY IMPORTANCE PRIORITY X-MSMAIL-PRIORITY)]"
+_LIST_EXTRAS = {"structure": False, "priority": False}
+
+
+def set_list_extras(structure=False, priority=False):
+    """Whether listings also ask for the message structure (attachments)
+    and the priority headers."""
+    _LIST_EXTRAS["structure"] = bool(structure)
+    _LIST_EXTRAS["priority"] = bool(priority)
+
+
+def list_extras():
+    """(structure, priority): what listings ask for now."""
+    return (_LIST_EXTRAS["structure"], _LIST_EXTRAS["priority"])
+
+
+def _list_items():
+    items = ["ENVELOPE", "FLAGS", "INTERNALDATE", "RFC822.SIZE"]
+    if _LIST_EXTRAS["structure"]:
+        items.append("BODYSTRUCTURE")
+    if _LIST_EXTRAS["priority"]:
+        items.append(_PRIORITY_FIELDS)
+    return items
+
+
+def _has_attachment(structure):
+    """True when any part of a BODYSTRUCTURE is marked as an attachment."""
+    if isinstance(structure, bytes):
+        return structure.lower() == b"attachment"
+    if isinstance(structure, (list, tuple)):
+        return any(_has_attachment(item) for item in structure)
+    return False
+
+
+def _priority_from(data):
+    """1 (highest) to 5 (lowest) from a row's priority headers, or None
+    when it has none. X-Priority first, as Thunderbird reads it, then
+    Importance and X-MSMail-Priority, then Priority."""
+    for key, value in data.items():
+        if not (isinstance(key, bytes) and key.upper().startswith(b"BODY[HEADER")):
+            continue
+        if not isinstance(value, bytes):
+            continue
+        headers = email.message_from_bytes(value)
+        number = str(headers.get("X-Priority") or "").strip()
+        if number[:1] in ("1", "2", "3", "4", "5"):
+            return int(number[0])
+        for name in ("Importance", "X-MSMail-Priority"):
+            word = str(headers.get(name) or "").strip().lower()
+            if word == "high":
+                return 2
+            if word == "low":
+                return 4
+            if word == "normal":
+                return 3
+        word = str(headers.get("Priority") or "").strip().lower()
+        if word == "urgent":
+            return 2
+        if word == "non-urgent":
+            return 4
+    return None
 
 
 def _envelope_dict(uid, data):
@@ -1007,6 +1113,26 @@ def _envelope_dict(uid, data):
         "to": _address_entries(getattr(envelope, "to", None) if envelope else None),
         "cc": _address_entries(getattr(envelope, "cc", None) if envelope else None),
     }
+    # The server's own arrival date (View > Sort By > Received), in the
+    # same local-time form as "date" above.
+    received = data.get(b"INTERNALDATE")
+    if received is not None:
+        if received.tzinfo is None:
+            try:
+                received = received.astimezone()
+            except (ValueError, OSError, OverflowError):
+                received = received.replace(tzinfo=datetime.timezone.utc)
+        result["received"] = received.isoformat()
+    # Himalaya's own names for these two, so one helper reads rows
+    # from either path.
+    size = data.get(b"RFC822.SIZE")
+    if isinstance(size, int):
+        result["size"] = size
+    if b"BODYSTRUCTURE" in data:
+        result["has-attachment"] = _has_attachment(data.get(b"BODYSTRUCTURE"))
+    priority = _priority_from(data)
+    if priority is not None:
+        result["priority"] = priority
     message_id_text = text(message_id)
     if message_id_text:
         result["message-id"] = message_id_text
@@ -1112,6 +1238,14 @@ def sent_copy_exists(paths, account, folder, message_id_header):
     return _pooled(account, paths).has_message_id(folder, message_id_header)
 
 
+def attachment_uids(paths, account, folder, message_ids):
+    """Of these UIDs in `folder`, the ones with an attachment, over the
+    pooled connection (the Search tab's Has attachment)."""
+    if imapclient is None:
+        raise ImapBodyFetchUnavailable("imapclient is not installed")
+    return _pooled(account, paths).attachment_uids(folder, message_ids)
+
+
 def close_all():
     """
     Closes every pooled connection. Called from the frame's close
@@ -1127,4 +1261,29 @@ def close_all():
     for connection in connections:
         if connection.close():
             closed += 1
+    return closed
+
+
+# --- Personal Microsoft accounts through Microsoft Graph ---------------
+#
+# Each function named in graph_client.POOLED_ROUTES sends a Graph account
+# to its Graph route, in the shape the pooled connection gives, and every
+# other account to the function above, unchanged. That covers
+# himalaya_client's fast paths, delete_queue, the Search tab and Mark
+# Folder as Read.
+import graph_client as _graph_client  # noqa: E402
+
+_graph_client.route_module(globals(), _graph_client.POOLED_ROUTES)
+
+_close_all_connections = close_all
+
+
+def close_all():
+    """Closes every pooled connection, and saves the Graph accounts'
+    message numbers still waiting to be written."""
+    closed = _close_all_connections()
+    try:
+        _graph_client.close_all()
+    except Exception:  # noqa: BLE001 - quitting
+        logger.debug("Could not save the Graph message numbers.", exc_info=True)
     return closed

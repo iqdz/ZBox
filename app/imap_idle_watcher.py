@@ -114,6 +114,12 @@ def build_watcher_profile(account):
     """
     if not account.imap_host:
         return WatcherProfile(supported=False)
+    import graph_client
+
+    if graph_client.uses_graph(account):
+        # Microsoft Graph has no IDLE; the 20-second refresh lists the
+        # Inbox of a personal Microsoft account.
+        return WatcherProfile(supported=False)
     return WatcherProfile(
         supported=True, folder=_folder_display_to_himalaya("Inbox", account)
     )
@@ -152,6 +158,9 @@ class ImapIdleWatcher:
         self._stop_event = threading.Event()
         self._thread = None
         self._catch_up = False
+        # True while the connection is open on the watched folder, for the
+        # 20-second refresh (IdleWatcherManager.is_live).
+        self.live = False
 
     def start(self):
         if imapclient is None or not self._profile.supported:
@@ -163,6 +172,7 @@ class ImapIdleWatcher:
 
     def stop(self):
         self._stop_event.set()
+        self.live = False
 
     def _run(self):
         backoff = _RECONNECT_INITIAL_SECONDS
@@ -182,7 +192,10 @@ class ImapIdleWatcher:
                     return
                 continue
             try:
-                self._watch_once()
+                try:
+                    self._watch_once()
+                finally:
+                    self.live = False
                 backoff = _RECONNECT_INITIAL_SECONDS  # a clean session resets the backoff
             except ImapIdleUnsupported as exc:
                 logger.info(
@@ -247,6 +260,7 @@ class ImapIdleWatcher:
                 raise ImapIdleUnsupported(f"server for {self._account.imap_host} doesn't advertise IDLE")
 
             client.select_folder(self._profile.folder, readonly=True)
+            self.live = True
 
             if self._catch_up:
                 self._catch_up = False
@@ -326,6 +340,16 @@ class IdleWatcherManager:
         watcher = self._watchers.pop(account_id, None)
         if watcher is not None:
             watcher.stop()
+
+    def is_live(self, account_id, folder=None):
+        """True while the account's watcher holds its connection open on its
+        folder (on folder, when one is given)."""
+        watcher = self._watchers.get(account_id)
+        if watcher is None or not getattr(watcher, "live", False):
+            return False
+        if folder is None:
+            return True
+        return str(watcher._profile.folder).casefold() == str(folder).casefold()
 
     def stop_all(self):
         for watcher in self._watchers.values():

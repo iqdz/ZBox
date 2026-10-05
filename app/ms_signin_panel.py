@@ -23,7 +23,7 @@ import wx
 import lang
 import ms_oauth
 from accessible import make_read_only_viewer
-from announce import speak
+from spoken_feedback import speak
 
 logger = logging.getLogger("zbox.ms_signin")
 
@@ -245,11 +245,18 @@ class MicrosoftSignInPanel(wx.Panel):
 
     def _on_code(self, _event):
         seq, cancel = self._begin()
+        # The address chooses the scopes, as for the browser sign-in.
+        hint = ""
+        if self._login_hint is not None:
+            try:
+                hint = self._login_hint() or ""
+            except Exception:  # noqa: BLE001
+                hint = ""
         self._show_controls(waiting=True, code=False)
         self._say(lang.t("dialogs", "ms_code_asking", "Asking Microsoft for a sign-in code..."), focus=True)
 
         def work():
-            info = ms_oauth.start_device_code()
+            info = ms_oauth.start_device_code(hint)
             wx.CallAfter(self._show_code, seq, info)
             return ms_oauth.complete_device_code(info, cancel)
 

@@ -76,6 +76,54 @@ SCOPES = (
 )
 SCOPE = " ".join(SCOPES)
 
+# Personal Microsoft accounts (Outlook.com, Hotmail, Live, MSN) work
+# through Microsoft Graph (graph_client), with these scopes asked at
+# sign-in instead; a token serves one resource only. Work and school
+# accounts keep the Outlook scopes above.
+GRAPH_SCOPES = (
+    "https://graph.microsoft.com/Mail.ReadWrite",
+    "https://graph.microsoft.com/Mail.Send",
+    "offline_access",
+    "openid",
+    "profile",
+)
+GRAPH_SCOPE = " ".join(GRAPH_SCOPES)
+# The tenant every personal Microsoft account belongs to.
+PERSONAL_TENANT = "9188040d-6c67-4c5b-b112-36a304b66dad"
+_PERSONAL_BRANDS = frozenset({"outlook", "hotmail", "live", "msn", "windowslive", "passport"})
+
+
+def personal_address(address):
+    """True for a personal Microsoft address: outlook, hotmail, live,
+    msn, windowslive or passport after the @, followed only by a
+    country or top-level ending (com, fr, co.uk, com.au)."""
+    text = str(address or "").strip().lower()
+    if "@" not in text:
+        return False
+    labels = text.rsplit("@", 1)[1].split(".")
+    if len(labels) < 2 or len(labels) > 3 or labels[0] not in _PERSONAL_BRANDS:
+        return False
+    return all(label.isalpha() and 2 <= len(label) <= 3 for label in labels[1:])
+
+
+def scope_set_for(address):
+    """'graph' for a personal Microsoft address, 'outlook' otherwise."""
+    return "graph" if personal_address(address) else "outlook"
+
+
+def _scope_of(scope_set):
+    return GRAPH_SCOPE if scope_set == "graph" else SCOPE
+
+
+def _wrong_scope_set(record):
+    """True when a record holds tokens of the other scope set than its
+    signed-in address needs: a personal account signed in before it
+    moved to Microsoft Graph. It signs in once more."""
+    username = str((record or {}).get("username") or "")
+    if not username:
+        return False
+    return str(record.get("scope_set") or "outlook") != scope_set_for(username)
+
 SECRET_SUFFIX = ".oauth"
 # Put in front of every "sign in again" error, so himalaya_client can
 # tell it apart from any other failure in Himalaya's stderr.
@@ -256,7 +304,7 @@ def _id_claims(id_token):
     return claims if isinstance(claims, dict) else {}
 
 
-def _record_from(data, previous=None):
+def _record_from(data, previous=None, scope_set=None):
     access = data.get("access_token")
     if not access:
         raise OAuthError("server", _describe(data) or "Microsoft sent no access token.")
@@ -273,6 +321,9 @@ def _record_from(data, previous=None):
         "refresh_token": data.get("refresh_token") or previous.get("refresh_token", ""),
         "username": claims.get("preferred_username") or claims.get("email") or previous.get("username", ""),
         "name": claims.get("name") or previous.get("name", ""),
+        # Which scope set the tokens hold, and the tenant Microsoft named.
+        "scope_set": scope_set or previous.get("scope_set", "outlook"),
+        "tenant": claims.get("tid") or previous.get("tenant", ""),
     }
 
 
@@ -402,6 +453,8 @@ def sign_in_with_browser(open_url, cancel_event=None, page_done="Signed in.",
     the browser shows afterwards, in the person's language.
     """
     cid = _require_client()
+    # Chosen from the address: Graph for a personal Microsoft account.
+    scope_set = scope_set_for(login_hint)
     verifier, challenge = _pkce_pair()
     state = _random.token_urlsafe(24)
     catcher = _Catcher(state, page_done, page_failed)
@@ -412,7 +465,7 @@ def sign_in_with_browser(open_url, cancel_event=None, page_done="Signed in.",
         "response_type": "code",
         "redirect_uri": redirect,
         "response_mode": "query",
-        "scope": SCOPE,
+        "scope": _scope_of(scope_set),
         "state": state,
         "code_challenge": challenge,
         "code_challenge_method": "S256",
@@ -461,20 +514,21 @@ def sign_in_with_browser(open_url, cancel_event=None, page_done="Signed in.",
         "code": value,
         "redirect_uri": redirect,
         "code_verifier": verifier,
-        "scope": SCOPE,
+        "scope": _scope_of(scope_set),
     })
     if data.get("error"):
         _raise_for(data)
-    return _record_from(data)
+    return _record_from(data, scope_set=scope_set)
 
 
 # --- Code sign-in -----------------------------------------------------
 
-def start_device_code():
+def start_device_code(login_hint=""):
     """Asks Microsoft for a sign-in code. Returns a dict with user_code
     and verification_uri to show, plus what complete_device_code needs."""
     cid = _require_client()
-    data = _post(DEVICE_CODE_URL, {"client_id": cid, "scope": SCOPE})
+    scope_set = scope_set_for(login_hint)
+    data = _post(DEVICE_CODE_URL, {"client_id": cid, "scope": _scope_of(scope_set)})
     if data.get("error") or not data.get("device_code"):
         _raise_for(data)
     try:
@@ -488,6 +542,7 @@ def start_device_code():
         "verification_uri": str(data.get("verification_uri") or data.get("verification_url") or ""),
         "interval": max(1, interval),
         "expires_at": time.monotonic() + lifetime,
+        "scope_set": scope_set,
     }
 
 
@@ -521,7 +576,7 @@ def complete_device_code(info, cancel_event=None):
         network_failures = 0
         error = data.get("error")
         if not error:
-            return _record_from(data)
+            return _record_from(data, scope_set=info.get("scope_set", "outlook"))
         if error == "authorization_pending":
             continue
         if error == "slow_down":
@@ -634,6 +689,8 @@ def needs_sign_in(config_dir, account_id):
         return True
     if record.get("client_id") != client_id():
         return True
+    if _wrong_scope_set(record):
+        return True
     return bool(record.get("needs_sign_in"))
 
 
@@ -642,6 +699,8 @@ def _usable_token(record, margin):
         raise SignInNeeded("No Microsoft sign-in is stored for this account.")
     if record.get("client_id") != client_id():
         raise SignInNeeded("The stored sign-in belongs to a different app registration.")
+    if _wrong_scope_set(record):
+        raise SignInNeeded("The stored sign-in is for the other Microsoft mail service.")
     if record.get("needs_sign_in"):
         # Microsoft already refused this record's refresh token: fail
         # at once rather than ask again on every connection.
@@ -665,7 +724,7 @@ def refresh(record):
         "client_id": cid,
         "grant_type": "refresh_token",
         "refresh_token": token,
-        "scope": SCOPE,
+        "scope": _scope_of((record or {}).get("scope_set", "outlook")),
     })
     if data.get("error"):
         _raise_for(data)

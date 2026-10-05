@@ -24,18 +24,21 @@ from compose_panel import ComposePanel
 from settings_dialog import SettingsDialog
 from unified_folders_dialog import UnifiedFoldersDialog
 from cache_cleanup_dialog import (
-    CacheCleanupDialog,
-    ID_CLEAR_NOW,
     age_choice_label,
     cleanup_due,
 )
 import envelope_format
+import envelope_list_panel
 import himalaya_client
 import imap_body_fetch
 import lang
+import notice_toast
+import spoken_feedback
+import openpgp_read
 from himalaya_worker import HimalayaWorker
 from account_lanes import AccountLanes, Reachability, is_network_error
 import imap_idle_watcher
+import private_mode
 from contacts import ContactManager
 from blocklist import Blocklist, PhishingList
 from message_body import threading_headers, thread_ids as _message_thread_ids
@@ -156,6 +159,48 @@ ID_SORT_SUBJECT = wx.NewIdRef()
 ID_SORT_FROM = wx.NewIdRef()
 ID_SORT_ASCENDING = wx.NewIdRef()
 ID_SORT_DESCENDING = wx.NewIdRef()
+ID_SORT_RECEIVED = wx.NewIdRef()
+ID_SORT_STAR = wx.NewIdRef()
+ID_SORT_ORDER = wx.NewIdRef()
+ID_SORT_PRIORITY = wx.NewIdRef()
+ID_SORT_RECIPIENT = wx.NewIdRef()
+ID_SORT_CORRESPONDENTS = wx.NewIdRef()
+ID_SORT_SIZE = wx.NewIdRef()
+ID_SORT_READ = wx.NewIdRef()
+ID_SORT_JUNK = wx.NewIdRef()
+ID_SORT_ATTACHMENTS = wx.NewIdRef()
+ID_SORT_THREADED = wx.NewIdRef()
+ID_SORT_UNTHREADED = wx.NewIdRef()
+# View > Sort By, in Thunderbird's order: (sort key, menu id).
+_SORT_MENU = [
+    ("date", ID_SORT_DATE), ("received", ID_SORT_RECEIVED), ("star", ID_SORT_STAR),
+    ("order", ID_SORT_ORDER), ("priority", ID_SORT_PRIORITY), ("from", ID_SORT_FROM),
+    ("recipient", ID_SORT_RECIPIENT), ("correspondents", ID_SORT_CORRESPONDENTS),
+    ("size", ID_SORT_SIZE), ("subject", ID_SORT_SUBJECT), ("read", ID_SORT_READ),
+    ("junk", ID_SORT_JUNK), ("attachments", ID_SORT_ATTACHMENTS),
+]
+# View > Columns: (column, menu id).
+_COLUMN_IDS = [(column, wx.NewIdRef()) for column in envelope_list_panel.LIST_COLUMNS]
+
+
+def _sort_menu_labels():
+    """Each sort key's View > Sort By label, translated. Literal calls,
+    so the language audit sees every key."""
+    return {
+        "date": lang.menu_label("sort_date", "Date"),
+        "received": lang.menu_label("sort_received", "Received"),
+        "star": lang.menu_label("sort_star", "Star"),
+        "order": lang.menu_label("sort_order_received", "Order Received"),
+        "priority": lang.menu_label("sort_priority", "Priority"),
+        "from": lang.menu_label("sort_from", "From"),
+        "recipient": lang.menu_label("sort_recipient", "Recipient"),
+        "correspondents": lang.menu_label("sort_correspondents", "Correspondents"),
+        "size": lang.menu_label("sort_size", "Size"),
+        "subject": lang.menu_label("sort_subject", "Subject"),
+        "read": lang.menu_label("sort_read", "Read"),
+        "junk": lang.menu_label("sort_junk_status", "Junk Status"),
+        "attachments": lang.menu_label("sort_attachments", "Attachments"),
+    }
 ID_THREADS_ALL = wx.NewIdRef()
 ID_THREADS_WATCHED = wx.NewIdRef()
 ID_THREADS_IGNORED = wx.NewIdRef()
@@ -174,6 +219,7 @@ ID_ARCHIVE = wx.NewIdRef()
 ID_MARK_JUNK = wx.NewIdRef()
 ID_MARK_NOT_JUNK = wx.NewIdRef()
 ID_ADDRESS_BOOK = wx.NewIdRef()
+ID_OPENPGP_KEYS = wx.NewIdRef()
 ID_SELECT_ALL = wx.NewIdRef()
 ID_REFRESH_ALL_ACCOUNTS = wx.NewIdRef()
 ID_OPEN_SAVED_MESSAGE = wx.NewIdRef()
@@ -468,7 +514,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # sync worker by _apply_spam_filter. The phishing list is
         # loaded lazily, on that same worker, the first time the rules
         # run -- see _get_phishing_list.
-        self.junk_rules = junk_rules_module.JunkRules(paths.junk_rules_file)
+        self.junk_rules = junk_rules_module.JunkRules(paths.junk_rules_file, config_dir=paths.config)
         self._phishing_list = None
         # Messages ZBox itself is moving into a folder, so the next
         # listing does not greet them as new mail: no sound, no toast,
@@ -550,6 +596,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self._sort_ascending = bool(
             getattr(settings_manager.settings, "sort_ascending", False)
         )
+        # View > Sort By > Threaded / Unthreaded, and View > Columns,
+        # both remembered across restarts.
+        self._threaded = bool(getattr(settings_manager.settings, "threaded", True))
+        self._list_columns = list(
+            getattr(settings_manager.settings, "list_columns", None)
+            or envelope_list_panel.DEFAULT_LIST_COLUMNS
+        )
         # View > Threads > Expand All / Collapse All, a lasting state
         # remembered across restarts (see _set_threads_expanded).
         self._threads_expanded = bool(
@@ -565,18 +618,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self._bind_commands()
 
         self._refresh_tree()
-        # Audit finding 52: land back on whatever account/folder (or
-        # Unified Folders entry) was selected when ZBox last closed,
-        # instead of always defaulting to the first account's Inbox.
-        # A no-op if nothing was saved yet, or if the saved target no
-        # longer exists (account removed, folder renamed/deleted).
-        saved_target = saved_fields_to_target(
-            self.settings_manager.settings.last_selected_account_id,
-            self.settings_manager.settings.last_selected_folder,
-            self.settings_manager.settings.last_selected_unified_type,
-        )
-        if saved_target:
-            self.mail_panel.account_panel.select_by_target(saved_target)
+        # Startup always opens on the default Inbox -- the unified
+        # Inbox in Unified view, otherwise the default account's Inbox
+        # -- and _maybe_apply_initial_focus puts the cursor on its top
+        # message once the list arrives. The folder selected when ZBox
+        # last closed is still saved, but no longer reopened.
+        if self._select_default_inbox() is None:
+            self.mail_panel.account_panel.ensure_selection()
         self.idle_manager.sync(self.account_manager.accounts)
         self._resume_pending_deletes()
         # Held back until the folder ZBox opens on has arrived (mail_fetch.
@@ -779,6 +827,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # (EnvelopeListPanel._holding_top): newer rows from slower
         # accounts sort in above it, and following the selected message
         # used to leave the reader on whichever message was first.
+        self.mail_panel.envelope_panel.reader_moved = False
         self.mail_panel.envelope_panel.hold_top_until = time.monotonic() + 120
 
     def _unified_available(self):
@@ -870,7 +919,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         Copy To fetch, on the interactive worker since this is a
         single quick call, not a multi-message loop.
         """
+        learned = {"changed": False}
+
         def work():
+            # The folders the server marks as Sent, Drafts, Trash, Junk and
+            # Archive, read once per run; when they changed, himalaya.toml
+            # is written again below so Himalaya uses them too.
+            learned["changed"] = himalaya_client.learn_special_folders(self.paths, account)
             raw = himalaya_client.list_all_folders(self.paths, account, counts=True)
             entries = [f for f in raw if isinstance(f, dict) and f.get("name")]
             if not entries:
@@ -891,6 +946,14 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
 
         def on_success(pairs):
             self._note_server_result(account)
+            if learned["changed"]:
+                try:
+                    self.account_manager.write_himalaya_config()
+                except Exception as exc:  # noqa: BLE001 - the earlier file stays in use
+                    logging.getLogger("zbox.main").warning(
+                        "Could not write the Himalaya settings again for %s: %s",
+                        account.account_id, exc,
+                    )
             if not pairs:
                 return
             self._tree_folder_lists[account.account_id] = pairs
@@ -916,7 +979,25 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 self._refresh_real_folders_for_account(account)
 
     def _on_tree_selection_changed(self, event):
+        """
+        A folder or account picked in the tree. Arrowing through the
+        tree raised this for every folder passed, and each one started
+        a load, which made moving feel heavy. A selection from the tree
+        now waits until it has rested _TREE_SETTLE_MS, so only the
+        folder the reader stops on loads; a call with no event (ZBox
+        selecting a folder itself) loads at once.
+        """
         if self._shutting_down:
+            return
+        if event is not None:
+            self._tree_last_interaction = time.monotonic()
+            pending = getattr(self, "_tree_settle_call", None)
+            if pending is not None and pending.IsRunning():
+                pending.Restart(self._TREE_SETTLE_MS)
+            else:
+                self._tree_settle_call = wx.CallLater(
+                    self._TREE_SETTLE_MS, self._on_tree_selection_changed, None,
+                )
             return
         target = self.mail_panel.account_panel.selected_fetch_target()
         self.mail_panel.reader_panel.reader.SetValue(lang.t('dialogs', 'rdr_select_message', default="Select a message to read it here."))
@@ -952,6 +1033,119 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         else:
             self._fetch_account_envelopes(target["account_id"], target["folder"], request_id)
 
+    def _search_results_list(self):
+        """The Search tab's results list, or None when that tab is not
+        open (or was destroyed)."""
+        tab = getattr(self, "_search_tab", None)
+        if tab is None:
+            return None
+        try:
+            return tab.results_panel
+        except (RuntimeError, AttributeError):
+            return None
+
+    def _on_search_tab(self):
+        """True when the Search tab is the tab in front."""
+        tab = getattr(self, "_search_tab", None)
+        if tab is None:
+            return False
+        try:
+            return self.notebook.GetCurrentPage() is tab
+        except RuntimeError:
+            return False
+
+    def _action_list(self):
+        """The message list the list actions work on: the Search tab's
+        results when the Search tab is in front, otherwise the Mail tab's
+        list, exactly as before."""
+        if self._on_search_tab():
+            results = self._search_results_list()
+            if results is not None:
+                return results
+        return self.mail_panel.envelope_panel
+
+    def _row_matcher(self, keys):
+        """A test for rows of the Search tab's results: True for a row whose
+        own account, folder and message number are one of keys, each
+        (account_id, folder, message_id). Results from different folders
+        can share a number, so the number alone is never enough."""
+        wanted = [(account_id, folder, str(message_id)) for account_id, folder, message_id in keys]
+
+        def match(envelope):
+            folder = envelope.get("_zbox_folder")
+            account_id = envelope.get("_zbox_account_id")
+            if not folder or not account_id:
+                return False
+            message_id = str(envelope.get("id"))
+            for one_account_id, one_folder, one_id in wanted:
+                if (one_account_id == account_id and one_id == message_id
+                        and himalaya_client._same_folder(one_folder, folder)):
+                    return True
+            return False
+
+        return match
+
+    def _drop_removed_rows(self, removals):
+        """Takes the rows a delete or move removes off the lists at once.
+        The Mail tab's list drops what its hidden-rows provider names, as
+        before; the Search tab's results drop the same messages, matched by
+        account, folder and number. removals: [(account, items)], each item
+        starting (message_id, folder)."""
+        self.mail_panel.envelope_panel.drop_hidden_rows()
+        results = self._search_results_list()
+        if results is None:
+            return
+        keys = [
+            (account.account_id, item[1], item[0])
+            for account, items in removals for item in items
+        ]
+        if not keys:
+            return
+        try:
+            results.drop_rows(self._row_matcher(keys))
+        except RuntimeError:
+            pass
+
+    def _mark_result_rows(self, panel, contexts, succeeded_ids, flag, present):
+        """Read, unread and flag changes on the Search tab's results, the
+        list the action started from, matched by account, folder and
+        number. The Mail tab picks the change up on its next refresh."""
+        from envelope_format import _set_envelope_flag
+
+        keys = [
+            (account.account_id, folder, message_id)
+            for _envelope, (account, folder, message_id) in contexts
+            if account is not None and message_id in succeeded_ids
+        ]
+        if not keys:
+            return
+        try:
+            panel.mark_rows(
+                self._row_matcher(keys),
+                lambda envelope: _set_envelope_flag(envelope, flag, present),
+            )
+        except RuntimeError:
+            pass
+
+    def _context_menu_target(self):
+        """What the list's context menu decides Junk or Not Junk and Block
+        or Unblock This Sender from: the folder tree's selection on the
+        Mail tab, as before; on the Search tab, the folder of the first
+        selected result."""
+        if not self._on_search_tab():
+            return self.mail_panel.account_panel.selected_fetch_target()
+        envelopes = self._action_list().get_all_selected_envelopes()
+        if not envelopes:
+            return {}
+        context = self._resolve_envelope_context(envelopes[0])
+        if context is None:
+            return {}
+        account, folder, _message_id = context
+        for kind in ("Junk", "Inbox", "Trash"):
+            if himalaya_client._same_folder(folder, _folder_display_to_himalaya(kind, account)):
+                return {"folder_label": kind}
+        return {}
+
     def _resolve_envelope_context(self, envelope):
         """
         Returns (account, folder, message_id) for the given envelope
@@ -959,8 +1153,24 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         piece can't be resolved. Shared by preview, tab-open, and
         mark read/unread, so they can never drift out of sync with
         each other about which account/folder a message belongs to.
+
+        A search result carries its own account and folder
+        (_zbox_account_id and _zbox_folder, stamped by the Search tab
+        and by nothing else), so it resolves from them, not the tree.
         """
         log = logging.getLogger("zbox.main")
+        own_folder = envelope.get("_zbox_folder")
+        own_account_id = envelope.get("_zbox_account_id")
+        if own_folder and own_account_id:
+            account = self._find_account(own_account_id)
+            message_id = envelope.get("id")
+            if account is None or message_id is None:
+                log.debug(
+                    "No envelope context: search result account %r not found or no id.",
+                    own_account_id,
+                )
+                return None
+            return account, own_folder, message_id
         target = self.mail_panel.account_panel.selected_fetch_target()
         if not target:
             # Every caller of this treats None as "quietly do
@@ -1065,16 +1275,18 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self._prefetch_around_cursor(account, folder, backend)
 
         def work():
-            return himalaya_client.read_message(
-                self.paths, account, message_id, folder=folder,
-                backend=backend,
+            return self._readable(
+                account, folder, envelope, backend,
+                himalaya_client.read_message(
+                    self.paths, account, message_id, folder=folder,
+                    backend=backend,
+                ),
             )
 
         def on_success(message):
             if request_id != self._body_request_id:
                 return
             self.mail_panel.reader_panel.set_message(message)
-            self.contacts.add_from_envelope_from(envelope.get("from"))
 
         def on_error(exc):
             if request_id != self._body_request_id:
@@ -1091,7 +1303,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             cached = himalaya_client.read_message_cached_only(
                 self.paths, account, message_id, folder=folder, backend=backend,
             )
-            if cached is None:
+            if cached is None or openpgp_read.looks_protected(cached):
+                # An encrypted or signed message is read live: its
+                # readable form is never kept in the cache.
                 return None
             from message_body import extract_message_body
 
@@ -1106,7 +1320,6 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 begin()
                 return
             self.mail_panel.reader_panel.show_body_text(result[0])
-            self.contacts.add_from_envelope_from(envelope.get("from"))
             self._prefetch_around_cursor(account, folder, backend)
 
         def on_warm_error(exc):
@@ -1250,7 +1463,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         cached_message = himalaya_client.read_message_cached_only(
             self.paths, account, message_id, folder=folder, backend=backend,
         )
-        if cached_message is not None:
+        if cached_message is not None and not openpgp_read.looks_protected(cached_message):
             self._open_message_tab(
                 account, folder, envelope, cached_message,
                 thread_envelopes=thread_envelopes,
@@ -1263,9 +1476,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ))
 
         def work():
-            return himalaya_client.read_message(
-                self.paths, account, message_id, folder=folder,
-                backend=backend,
+            return self._readable(
+                account, folder, envelope, backend,
+                himalaya_client.read_message(
+                    self.paths, account, message_id, folder=folder,
+                    backend=backend,
+                ),
             )
 
         def clear_key():
@@ -1459,7 +1675,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         cached = himalaya_client.read_message_cached_only(
             self.paths, account, message_id, folder=folder, backend=backend,
         )
-        if cached is not None:
+        if cached is not None and not openpgp_read.looks_protected(cached):
             show(cached)
             return
 
@@ -1468,9 +1684,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ))
 
         def work():
-            return himalaya_client.read_message(
-                self.paths, account, message_id, folder=folder,
-                backend=backend,
+            return self._readable(
+                account, folder, envelope, backend,
+                himalaya_client.read_message(
+                    self.paths, account, message_id, folder=folder,
+                    backend=backend,
+                ),
             )
 
         def on_error(exc):
@@ -1552,6 +1771,75 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             spoken, title=lang.t("dialogs", "title_thread", default="Thread")
         )
 
+    def _readable(self, account, folder, envelope, backend, message):
+        """
+        OpenPGP stage 2. For a message that is encrypted or signed, the
+        message to show: decrypted and checked in memory from the exact
+        bytes on the server, with its status (openpgp_read). Runs on the
+        worker that read the message; anything else comes back as it is.
+        The caches only ever hold the message as it arrived.
+        """
+        self._collect_autocrypt(envelope, message)
+        if not openpgp_read.looks_protected(message):
+            return message
+        message_id = envelope.get("id")
+
+        def fetch():
+            return himalaya_client.read_message_bytes(
+                self.paths, account, message_id, folder=folder, backend=backend,
+            )
+
+        readable = openpgp_read.read(
+            self.paths, message, fetch, sender=openpgp_read.envelope_address(envelope),
+        )
+        openpgp_read.remember_subject(envelope, readable)
+        return readable
+
+    def _collect_autocrypt(self, envelope, message):
+        """OpenPGP stage 4: the key in a message's Autocrypt header, kept
+        silently for its sender (openpgp.collect_autocrypt) and offered when
+        mail to them is sent encrypted. Runs on the worker that read the
+        message. Never raises."""
+        try:
+            import message_body
+            import openpgp
+
+            value = message_body.header_text(message, "autocrypt") if isinstance(message, dict) else ""
+            if value and openpgp.available():
+                openpgp.collect_autocrypt(
+                    self.paths, openpgp_read.envelope_address(envelope), value,
+                    envelope.get("date") if isinstance(envelope, dict) else None,
+                )
+        except Exception as exc:  # noqa: BLE001 - collecting is never worth an error
+            logging.getLogger("zbox.openpgp").debug("Autocrypt not collected: %s", type(exc).__name__)
+
+    def _unlock_protected(self, message):
+        """
+        A locked personal key asks its passphrase once per session, here,
+        where a dialog can be shown; the message is then read again from
+        the bytes already fetched. Cancel shows it as not decrypted.
+        """
+        status = openpgp_read.status_of(message)
+        while status is not None and status.needs_passphrase:
+            fingerprint, name = status.needs_passphrase
+            from openpgp_key_manager import _ask_passphrase
+
+            passphrase = _ask_passphrase(self, name)
+            if passphrase is None:
+                openpgp_read.give_up(message)
+                break
+            if not openpgp_read.passphrase_opens(self.paths, fingerprint, passphrase):
+                wx.MessageBox(
+                    lang.t("dialogs", "pgp_unlock_failed", default="The key, or subordinate parts of the key, could not be unlocked."),
+                    lang.t("dialogs", "pgp_passphrase_title", default="Passphrase required"),
+                    wx.OK | wx.ICON_ERROR, self,
+                )
+                continue
+            openpgp_read.remember_passphrase(fingerprint, passphrase)
+            message = openpgp_read.retry(self.paths, message)
+            status = openpgp_read.status_of(message)
+        return message
+
     def _open_message_tab(self, account, folder, envelope, message, thread_envelopes=None):
         from message_view_panel import MessageViewPanel
 
@@ -1578,11 +1866,14 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 envelope.get("id"), account.account_id, folder, callers,
             )
 
+        message = self._unlock_protected(message)
         panel = MessageViewPanel(
             self.notebook, self, account, folder, envelope, message,
             thread_envelopes=thread_envelopes,
         )
-        subject = envelope.get("subject") or "(no subject)"
+        subject = (
+            openpgp_read.display_subject(message) or envelope.get("subject") or "(no subject)"
+        )
         title = subject if len(subject) <= 30 else subject[:27] + "..."
         # Added unselected on purpose. Adding it selected switched the
         # notebook, moved focus and had the screen reader announce the
@@ -1594,10 +1885,15 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # that, immediately for Text and after the page loads for HTML.
         self.open_tab(panel, title, select=False)
         panel.focus_view()
+        spoken = openpgp_read.summary(openpgp_read.status_of(message))
+        if spoken:
+            # Said once, a moment after opening, as Thunderbird shows it
+            # above the message. Not switchable: whether a message really
+            # was encrypted or signed is something the reader must hear.
+            wx.CallLater(1500, self.announce, spoken)
         self.GetStatusBar().SetStatusText(
             lang.t("main_ui", "ready", default="Ready.")
         )
-        self.contacts.add_from_envelope_from(envelope.get("from"))
         if self._is_live_envelope(envelope):
             self._mark_read(account, folder, envelope)
 
@@ -1685,6 +1981,65 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ])
         self.SetAcceleratorTable(accel_table)
         self._focus_targets = None  # built lazily, after panes exist
+        # Windows+Ctrl+Shift+P, a global hotkey: the Private mode switch.
+        self._register_private_hotkey()
+
+    # Windows' id for the private mode hotkey; applications use 0 to 0xBFFF.
+    _PRIVATE_HOTKEY_ID = 0xB0E1
+
+    def _register_private_hotkey(self):
+        """Windows+Ctrl+Shift+P, from any program, even with ZBox in the
+        tray: Settings at App and Data Security, with focus on Private mode
+        (_on_private_hotkey). When Windows or another program already holds
+        the combination, that is logged and nothing else changes."""
+        try:
+            registered = self.RegisterHotKey(
+                self._PRIVATE_HOTKEY_ID,
+                wx.MOD_WIN | wx.MOD_CONTROL | wx.MOD_SHIFT, ord("P"),
+            )
+        except Exception:  # noqa: BLE001
+            registered = False
+        self._private_hotkey_registered = bool(registered)
+        if registered:
+            self.Bind(wx.EVT_HOTKEY, self._on_private_hotkey, id=self._PRIVATE_HOTKEY_ID)
+        else:
+            logging.getLogger("zbox.main").info(
+                "Windows+Ctrl+Shift+P is taken by another program; the private mode hotkey is off."
+            )
+
+    def _on_private_hotkey(self, event):
+        """Brings ZBox forward, from the tray too, and opens Settings at
+        App and Data Security with focus on the Private mode check box.
+        With a dialog already open, ZBox only comes forward."""
+        if getattr(self, "_shutting_down", False):
+            return
+        # A modal dialog keeps the main window disabled: raising the main
+        # window above it hides the dialog and leaves ZBox unusable. So an
+        # open dialog is what comes forward, with its focus where it was.
+        modal = None
+        for window in wx.GetTopLevelWindows():
+            if isinstance(window, wx.Dialog) and window.IsShown() and window.IsModal():
+                modal = window
+        if modal is None:
+            if not self.IsShown():
+                self.Show()
+            if self.IsIconized():
+                self.Iconize(False)
+        target = modal if modal is not None else self
+        target.Raise()
+        try:
+            single_instance.force_foreground(target.GetHandle())
+        except Exception:  # noqa: BLE001
+            pass
+        if modal is not None or self.__dict__.get("_private_hotkey_busy"):
+            return
+        self._private_hotkey_busy = True
+        self._settings_focus_private = True
+        try:
+            self._on_settings(None, page="security")
+        finally:
+            self._settings_focus_private = False
+            self._private_hotkey_busy = False
 
     def _on_cycle_panes(self, event):
         """
@@ -1723,95 +2078,82 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # After the menu has closed and handed focus back, not before.
         wx.CallAfter(self.mail_panel.focus_folder_tree)
 
+    def _select_default_inbox(self):
+        """
+        Selects the default Inbox in the folder tree: the unified Inbox
+        in Unified view, otherwise the default account's Inbox (the
+        first account; Set as Default Account moves one there). Used
+        at startup and by Ctrl+Shift+J. Returns "unified", the account,
+        or None when neither is in the tree (Unified view without Inbox
+        among its folders, or no account).
+        """
+        panel = self.mail_panel.account_panel
+        if self._effective_folder_pane_mode() == "unified":
+            if panel.select_by_target({"unified": "Inbox"}):
+                return "unified"
+        accounts = self.account_manager.accounts
+        if accounts and panel.select_account_inbox(accounts[0].account_id):
+            return accounts[0]
+        return None
+
     def _on_jump_unified_inbox(self, event):
         """
         View > Folders > Jump to Inbox Messages List, and
-        Ctrl+Shift+J: the way back when the reader is several folders
-        deep somewhere else and wants their mail again.
+        Ctrl+Shift+J: back to the default Inbox from anywhere, the same
+        one ZBox opens on -- the unified Inbox in Unified view,
+        otherwise the default account's Inbox -- with the cursor on its
+        top message. It never changes the folder pane mode.
 
-        It follows the current view rather than changing it. With
-        Unified selected, that is the unified Inbox; with a
-        particular account selected, that account's Inbox; with one
-        account configured, the only Inbox there is. It used to force
-        the folder pane into unified mode first, which meant a key
-        pressed to get home also silently rearranged the folder tree
-        -- a surprising thing to do to someone navigating by ear.
-
-        Focus lands in the message list, not the folder tree, so a
-        screen reader starts on a message rather than on a tree node
-        the reader then has to arrow out of. Deferred for the reason
-        _maybe_apply_initial_focus defers its own: the selection
-        starts a fetch, and focus should land after the list has been
-        repainted, not during.
+        Focus lands on the top message, not the folder tree: at once
+        when that Inbox is already showing, otherwise when its list
+        arrives, through the one-shot startup focus
+        (_maybe_apply_initial_focus), re-armed here, which also holds
+        the top row until a key is pressed in the list.
 
         (The method keeps its old name so the existing binding in
         _bind_commands still finds it.)
         """
         panel = self.mail_panel.account_panel
-        target = panel.selected_fetch_target()
-
-        jump = None
-        if target and "unified" in target:
-            jump = {"unified": "Inbox"}
-        elif target and target.get("account_id"):
-            account = self._find_account(target.get("account_id"))
-            if account is not None:
-                jump = {
-                    "account_id": account.account_id,
-                    "folder": _folder_display_to_himalaya("Inbox", account),
-                }
-
-        # Two ways to land here with nothing to go on: no selection
-        # at all (a launch that restored none), or a target that no
-        # longer exists in the tree -- unified mode with Inbox not
-        # among the chosen folder types, or an account since removed.
-        # Both fall back to the first account's Inbox, which is what
-        # the tree itself defaults to on a rebuild.
-        landed = None
-        if jump is not None and panel.select_by_target(jump):
-            if "unified" in jump:
-                landed = lang.t('actions_announcements', 'jump_unified_inbox', default="Unified inbox.")
-            else:
-                account = self._find_account(jump.get("account_id"))
-                name = (account.display_name or account.identity_email) if account else ""
-                landed = lang.t(
-                    "actions_announcements", "inbox_landed",
-                    default="{name} inbox.", name=name,
-                ).strip()
-        if landed is None:
+        envelope_panel = self.mail_panel.envelope_panel
+        before = panel.selected_fetch_target()
+        landed_on = self._select_default_inbox()
+        if landed_on is None:
             accounts = self.account_manager.accounts
             if not accounts:
-                self.GetStatusBar().SetStatusText(lang.t(
+                text = lang.t(
                     "actions_announcements", "no_account_yet",
                     default="There is no account to jump to yet.",
-                ))
+                )
+                self.GetStatusBar().SetStatusText(text)
                 self.announce_action(
-                    lang.t(
-                        "actions_announcements", "no_account_yet",
-                        default="There is no account to jump to yet.",
-                    ),
-                    title=lang.t("dialogs", "title_inbox", default="Inbox"),
+                    text, title=lang.t("dialogs", "title_inbox", default="Inbox"),
                 )
                 return
-            account = accounts[0]
-            panel.select_by_target({
-                "account_id": account.account_id,
-                "folder": _folder_display_to_himalaya("Inbox", account),
-            })
+            # Unified view without Inbox among its folders: the tree's
+            # own default item, as on a rebuild.
+            panel.ensure_selection()
+            landed_on = accounts[0]
+        if isinstance(landed_on, str):
+            landed = lang.t('actions_announcements', 'jump_unified_inbox', default="Unified inbox.")
+        else:
             landed = lang.t(
                 "actions_announcements", "inbox_landed",
                 default="{name} inbox.",
-                name=(account.display_name or account.identity_email),
-            )
-        # Ctrl+Shift+J used to land somewhere silently, which is the
-        # one thing a jump must not do: the whole point is knowing
+                name=(landed_on.display_name or landed_on.identity_email),
+            ).strip()
+        # A jump must never land silently: the whole point is knowing
         # where you now are.
         self.GetStatusBar().SetStatusText(landed)
         self.announce_action(
             landed, title=lang.t("dialogs", "title_inbox", default="Inbox")
         )
-
-        wx.CallAfter(self.mail_panel.envelope_panel.list_ctrl.SetFocus)
+        if panel.selected_fetch_target() == before and envelope_panel.has_content():
+            # That Inbox is already showing: no new list is coming.
+            wx.CallAfter(envelope_panel.focus_top_message)
+        else:
+            # Its list is on the way: the cursor goes to the top message
+            # when it arrives.
+            self._did_initial_focus = False
 
     def _flag_check_state(self):
         """
@@ -1825,7 +2167,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         checkmark always predicts it. Disabled with nothing selected,
         which a screen reader announces as unavailable.
         """
-        envelopes = self.mail_panel.envelope_panel.get_all_selected_envelopes()
+        envelopes = self._action_list().get_all_selected_envelopes()
         enabled = bool(envelopes)
         checked = enabled and all(_envelope_is_flagged(envelope) for envelope in envelopes)
         return enabled, checked
@@ -1844,18 +2186,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         item.Check(checked)
 
     def _on_about(self, event):
-        """Help > About ZBox. An accessible read-only dialog (see
-        about_dialog.AboutZBoxDialog) rather than wx.adv.AboutBox or
-        a plain wx.MessageBox: the native About dialog puts its
-        content in a static block that NVDA and JAWS often leave
-        unread until the user goes looking for it, and a message box
-        has no room for the license, app-password help, support,
-        GitHub and contact buttons this needs now."""
-        from about_dialog import AboutZBoxDialog
-
-        dialog = AboutZBoxDialog(self, self, self.paths.license_file)
-        dialog.ShowModal()
-        dialog.Destroy()
+        """Help > About ZBox: Settings, opened on its About ZBox tab
+        (about_dialog.AboutPanel), the one place that content lives. A
+        read-only text field, not wx.adv.AboutBox: the native About box
+        puts its content in a static block that NVDA and JAWS often
+        leave unread until the user goes looking for it."""
+        self._on_settings(event, page="about")
 
     def _build_menu(self):
         menubar = wx.MenuBar()
@@ -1904,12 +2240,16 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         )
         file_menu.AppendSeparator()
         offline_submenu = wx.Menu()
-        offline_submenu.AppendCheckItem(
+        self._work_offline_item = offline_submenu.AppendCheckItem(
             ID_WORK_OFFLINE, lang.menu_label("file_work_offline", "Work Offline")
         )
-        offline_submenu.Append(
+        self._sync_offline_item = offline_submenu.Append(
             ID_SYNC_OFFLINE, lang.menu_label("file_sync_now", "Synchronize Now")
         )
+        if private_mode.ACTIVE:
+            # Private mode keeps no offline copies (private_mode.py).
+            self._work_offline_item.Enable(False)
+            self._sync_offline_item.Enable(False)
         file_menu.AppendSubMenu(
             offline_submenu, lang.menu_label("file_offline", "Offline")
         )
@@ -1941,7 +2281,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # Thunderbird's own Edit placement.
         edit_menu = wx.Menu()
         self.undo_menu_item = edit_menu.Append(
-            wx.ID_UNDO, lang.menu_label("edit_undo", "Undo\tCtrl+Z")
+            # "(Ctrl+Z)" is part of the name, not an accelerator, for the
+            # same reason as Select All below: a menu accelerator would
+            # take Ctrl+Z from a text field too, where it undoes typing.
+            # The message list, the folder tree and the message tab
+            # handle Ctrl+Z themselves.
+            wx.ID_UNDO, lang.menu_label("edit_undo", "Undo") + " (Ctrl+Z)"
         )
         edit_menu.AppendSeparator()
         # "(Ctrl+A)" is part of the name, not an accelerator: a real
@@ -1986,14 +2331,17 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # Delete Permanently directly under it the distinction is
         # already clear, and the parenthetical is one more thing to
         # sit through on every pass down this menu.
+        # The keys are part of the names, not menu shortcuts. A menu
+        # shortcut fires from any text field too, and Delete pressed in a
+        # compose address field deleted the Mail tab's selected messages.
+        # The message list, the Search results and the message tab handle
+        # Delete and Shift+Delete themselves.
         message_menu.Append(
-            ID_DELETE_MESSAGE, lang.menu_label("message_delete", "Delete\tDel")
+            ID_DELETE_MESSAGE, lang.menu_label("message_delete", "Delete") + " (Del)"
         )
         message_menu.Append(
             ID_DELETE_PERMANENT,
-            lang.menu_label(
-                "message_delete_permanently", "Delete Permanently\tShift+Del"
-            ),
+            lang.menu_label("message_delete_permanently", "Delete Permanently") + " (Shift+Del)",
         )
         message_menu.AppendSeparator()
         # Six flat "Mark as ..." items collapsed into one submenu,
@@ -2142,17 +2490,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         )
         view_menu.AppendSeparator()
         sort_submenu = wx.Menu()
-        sort_submenu.AppendRadioItem(ID_SORT_DATE, lang.menu_label("sort_date", "Date"))
-        sort_submenu.AppendRadioItem(
-            ID_SORT_SUBJECT, lang.menu_label("sort_subject", "Subject")
-        )
-        sort_submenu.AppendRadioItem(ID_SORT_FROM, lang.menu_label("sort_from", "From"))
-        sort_submenu.Check(
-            {"subject": ID_SORT_SUBJECT, "from": ID_SORT_FROM}.get(
-                self._sort_key, ID_SORT_DATE
-            ),
-            True,
-        )
+        sort_labels = _sort_menu_labels()
+        for sort_key, item_id in _SORT_MENU:
+            sort_submenu.AppendRadioItem(item_id, sort_labels[sort_key])
+        sort_submenu.Check(dict(_SORT_MENU).get(self._sort_key, ID_SORT_DATE), True)
         sort_submenu.AppendSeparator()
         sort_submenu.AppendRadioItem(
             ID_SORT_DESCENDING,
@@ -2165,8 +2506,23 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         sort_submenu.Check(
             ID_SORT_ASCENDING if self._sort_ascending else ID_SORT_DESCENDING, True
         )
+        sort_submenu.AppendSeparator()
+        sort_submenu.AppendRadioItem(
+            ID_SORT_THREADED, lang.menu_label("sort_threaded", "Threaded")
+        )
+        sort_submenu.AppendRadioItem(
+            ID_SORT_UNTHREADED, lang.menu_label("sort_unthreaded", "Unthreaded")
+        )
+        sort_submenu.Check(ID_SORT_THREADED if self._threaded else ID_SORT_UNTHREADED, True)
         view_menu.AppendSubMenu(
             sort_submenu, lang.menu_label("view_sort_by", "Sort By")
+        )
+        columns_submenu = wx.Menu()
+        for column, item_id in _COLUMN_IDS:
+            columns_submenu.AppendCheckItem(item_id, envelope_list_panel.column_label(column))
+            columns_submenu.Check(item_id, column in self._list_columns)
+        view_menu.AppendSubMenu(
+            columns_submenu, lang.menu_label("view_columns", "Columns")
         )
         threads_submenu = wx.Menu()
         threads_submenu.AppendRadioItem(
@@ -2297,6 +2653,22 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             )
             self._compose_commands[item.GetId()] = command
             self.Bind(wx.EVT_MENU, self._on_compose_command, item)
+        # OpenPGP (stage 3): Encrypt, Digitally Sign and Attach My Public
+        # Key, routed at the compose tab like the items above and ticked from
+        # it each time the menu opens (_on_menu_open).
+        compose_menu.AppendSeparator()
+        self._compose_pgp_items = []
+        for label, command in (
+            ("&Encrypt", "pgp_encrypt"),
+            ("Digitall&y Sign", "pgp_sign"),
+            ("Attach My Public &Key", "pgp_attach_key"),
+        ):
+            item = compose_menu.AppendCheckItem(
+                wx.NewIdRef(), lang.menu_label("compose_" + command, label),
+            )
+            self._compose_commands[item.GetId()] = command
+            self._compose_pgp_items.append(item)
+            self.Bind(wx.EVT_MENU, self._on_compose_command, item)
         # Editing a signature does not need a compose tab, so this one
         # is bound to the frame like the diagnostic below rather than
         # routed at a compose panel like every item above. It sits
@@ -2361,6 +2733,15 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             ID_MESSAGE_FILTERS,
             lang.menu_label("tools_message_filters", "Message Filters..."),
         )
+        tools_menu.Append(
+            ID_OPENPGP_KEYS,
+            lang.menu_label("tools_openpgp_keys", "OpenPGP Key Manager"),
+        )
+        smime_item = tools_menu.Append(
+            wx.NewIdRef(),
+            lang.menu_label("tools_smime_certs", "S/MIME Certificate Manager"),
+        )
+        self.Bind(wx.EVT_MENU, self._on_smime_certs, smime_item)
         tools_menu.AppendSeparator()
         tools_menu.Append(
             ID_IMPORT_ACCOUNTS,
@@ -2513,6 +2894,14 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.mail_panel.envelope_panel.set_threads_mode_handler(
             self._set_threads_expanded
         )
+        # The saved columns, header row, Threaded or Unthreaded, and
+        # which extra data the listings ask for, before any mail
+        # arrives. Lists made later (search, Related Messages) read
+        # the same columns and header row as they are made.
+        self._apply_list_display()
+        self.mail_panel.envelope_panel.set_threaded(self._threaded, redraw=False)
+        self.mail_panel.envelope_panel.set_outgoing_check(self._list_shows_outgoing)
+        self._update_list_extras()
         # The Mail tab is protected from closing in _close_current_tab
         # below (index 0 is never removed).
 
@@ -2812,29 +3201,11 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.sync_worker.submit(work, on_success, on_error)
 
     def _on_cache_cleanup_configuration(self, event):
-        """
-        Tools > Cache Clean Up Configuration. The age choice is saved
-        on OK, and also when Clear Offline Message Cache Now closes
-        the dialog, so a choice made just before pressing it is not
-        lost. The clear itself runs after the dialog is gone, so its
-        confirmation and spoken result belong to the main window
-        rather than a modal it is hidden behind.
-        """
-        dialog = CacheCleanupDialog(self, self.settings_manager.settings)
-        result = dialog.ShowModal()
-        if result in (wx.ID_OK, ID_CLEAR_NOW):
-            self.settings_manager.settings = dialog.apply_to_settings()
-            self.settings_manager.save()
-            days = self.settings_manager.settings.cache_max_message_age_days
-            self.GetStatusBar().SetStatusText(lang.t(
-                "main_ui", "auto_cache_cleanup",
-                default="Automatic cache clean up: messages older than %s."
-                        % age_choice_label(days),
-                age=age_choice_label(days),
-            ))
-        dialog.Destroy()
-        if result == ID_CLEAR_NOW:
-            self._on_clear_message_cache(None)
+        """Tools > Cache Clean Up Configuration: Settings, opened on its
+        Maintenance and Cleanup tab, where the cache clean-up controls
+        are. Clear Offline Message Cache Now there saves like OK and runs
+        the clear after Settings closes."""
+        self._on_settings(event, page="maintenance")
 
     def _on_char_hook(self, event):
         """
@@ -2947,6 +3318,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.Bind(wx.EVT_MENU, self._on_sort_by, id=ID_SORT_DATE)
         self.Bind(wx.EVT_MENU, self._on_sort_by, id=ID_SORT_SUBJECT)
         self.Bind(wx.EVT_MENU, self._on_sort_by, id=ID_SORT_FROM)
+        for _sort_key, _item_id in _SORT_MENU:
+            if _item_id not in (ID_SORT_DATE, ID_SORT_SUBJECT, ID_SORT_FROM):
+                self.Bind(wx.EVT_MENU, self._on_sort_by, id=_item_id)
+        self.Bind(wx.EVT_MENU, self._on_sort_threading, id=ID_SORT_THREADED)
+        self.Bind(wx.EVT_MENU, self._on_sort_threading, id=ID_SORT_UNTHREADED)
+        for _column, _item_id in _COLUMN_IDS:
+            self.Bind(wx.EVT_MENU, self._on_column_toggle, id=_item_id)
         self.Bind(wx.EVT_MENU, self._on_sort_order, id=ID_SORT_ASCENDING)
         self.Bind(wx.EVT_MENU, self._on_sort_order, id=ID_SORT_DESCENDING)
         self.Bind(wx.EVT_MENU, self._on_thread_filter, id=ID_THREADS_ALL)
@@ -2957,6 +3335,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.Bind(wx.EVT_MENU, self._on_undo, id=wx.ID_UNDO)
         self.Bind(wx.EVT_MENU_OPEN, self._on_menu_open)
         self.Bind(wx.EVT_MENU, self._on_new_account, id=ID_NEW_ACCOUNT)
+        self.Bind(wx.EVT_MENU, self._on_openpgp_keys, id=ID_OPENPGP_KEYS)
         self.Bind(wx.EVT_MENU, self._on_account_settings, id=ID_ACCOUNT_SETTINGS)
         self.Bind(wx.EVT_MENU, self._on_toggle_mute_account, id=ID_MUTE_ACCOUNT)
         self.Bind(wx.EVT_MENU, self._on_toggle_pause_auto_check, id=ID_PAUSE_AUTO_CHECK)
@@ -3026,7 +3405,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.Bind(wx.EVT_MENU, self._on_block_sender, id=ID_BLOCK_SENDER)
         self.Bind(wx.EVT_MENU, self._on_unblock_sender, id=ID_UNBLOCK_SENDER)
         self.Bind(wx.EVT_MENU, self._on_shortcuts, id=ID_SHORTCUTS)
-        self.Bind(wx.EVT_MENU, lambda e: self.mail_panel.envelope_panel.select_all(), id=ID_SELECT_ALL)
+        self.Bind(wx.EVT_MENU, lambda e: self._action_list().select_all(), id=ID_SELECT_ALL)
 
     # --- Context menus -------------------------------------------------
 
@@ -3197,7 +3576,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         flag_item.Enable(flag_enabled)
         flag_item.Check(flag_checked)
         mark_submenu.AppendSeparator()
-        target = self.mail_panel.account_panel.selected_fetch_target()
+        target = self._context_menu_target()
         viewing_junk = bool(target) and (
             target.get("folder_label") == "Junk" or target.get("unified") == "Junk"
         )
@@ -3266,7 +3645,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         are selected, each is moved or copied from its own source
         folder to the target. (Q3 answer: smart bulk)
         """
-        envelopes = self.mail_panel.envelope_panel.get_all_selected_envelopes()
+        envelopes = self._action_list().get_all_selected_envelopes()
         if not envelopes:
             return None, []
 
@@ -3372,7 +3751,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             return
         move_menu, copy_menu = self._move_copy_menus(contexts, targets)
         menu, other = (move_menu, copy_menu) if kind == "move" else (copy_menu, move_menu)
-        list_ctrl = self.mail_panel.envelope_panel.list_ctrl
+        list_ctrl = self._action_list().list_ctrl
         position = wx.DefaultPosition
         index = list_ctrl.GetFirstSelected()
         if index >= 0:
@@ -3416,8 +3795,22 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
 
     # --- Command handlers, wired for both menu bar and context menu ---
 
+    def _new_message_identity(self):
+        """
+        From for a new message (Ctrl+N): the address of the account the
+        folder tree entry belongs to -- an account's own Inbox or other
+        folder under a unified type, an account, or any of its folders
+        in All Folders. A unified entry, or nothing selected, gives ""
+        and so the default identity.
+        """
+        target = self.mail_panel.account_panel.selected_fetch_target() or {}
+        if "unified" in target:
+            return ""
+        account = self._find_account(target.get("account_id"))
+        return account.identity_email if account is not None else ""
+
     def _on_new_message(self, event):
-        panel = ComposePanel(self.notebook, self)
+        panel = ComposePanel(self.notebook, self, from_identity=self._new_message_identity())
         self.open_tab(panel, lang.t('dialogs', 'tab_new_message', default="New Message"))
 
     def open_compose_from_mailto(self, url):
@@ -3488,6 +3881,11 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 page.SetFocus()
                 return
         self._shutting_down = True
+        if self.__dict__.get("_private_hotkey_registered"):
+            try:
+                self.UnregisterHotKey(self._PRIVATE_HOTKEY_ID)
+            except Exception:  # noqa: BLE001
+                pass
         # A downloaded update is applied now that the quit is certain:
         # the apply step waits for this process to end (update_actions).
         self._apply_staged_update_on_exit()
@@ -3761,7 +4159,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             account, folder, envelope = tab.account, tab.folder, tab.envelope
             message_id = envelope.get("id") if isinstance(envelope, dict) else None
         else:
-            envelope = self.mail_panel.envelope_panel.selected_envelope()
+            envelope = self._action_list().selected_envelope()
             context = self._resolve_envelope_context(envelope) if envelope is not None else None
             account, folder, message_id = context if context else (None, None, None)
         if account is None or message_id is None:
@@ -3956,13 +4354,115 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self._set_folder_pane_mode("unified")
 
     def _on_sort_by(self, event):
-        key = {
-            ID_SORT_DATE: "date",
-            ID_SORT_SUBJECT: "subject",
-            ID_SORT_FROM: "from",
-        }.get(event.GetId(), "date")
+        key = {item_id: sort_key for sort_key, item_id in _SORT_MENU}.get(event.GetId(), "date")
         self._sort_key = key
         self._apply_sort_choice()
+
+    def _on_sort_threading(self, event):
+        """View > Sort By > Threaded or Unthreaded, remembered."""
+        self._threaded = event.GetId() == ID_SORT_THREADED
+        self.mail_panel.envelope_panel.set_threaded(self._threaded)
+        settings = self.settings_manager.settings
+        if getattr(settings, "threaded", None) != self._threaded:
+            settings.threaded = self._threaded
+            self._save_list_settings()
+
+    def _on_column_toggle(self, event):
+        """View > Columns: shows or hides one column, remembered. The
+        last shown column stays."""
+        column = {item_id: name for name, item_id in _COLUMN_IDS}.get(event.GetId())
+        if column is None:
+            return
+        chosen = set(self._list_columns)
+        if event.IsChecked():
+            chosen.add(column)
+        else:
+            chosen.discard(column)
+            if not chosen:
+                self.GetMenuBar().Check(event.GetId(), True)
+                return
+        self._list_columns = [c for c in envelope_list_panel.LIST_COLUMNS if c in chosen]
+        self.settings_manager.settings.list_columns = list(self._list_columns)
+        self._save_list_settings()
+        self._apply_list_display()
+        self._update_list_extras()
+
+    def _save_list_settings(self):
+        try:
+            self.settings_manager.save()
+        except Exception:
+            logging.getLogger("zbox.main").warning(
+                "Could not save the message list settings.", exc_info=True
+            )
+
+    def _apply_list_display(self):
+        """The saved columns and header row, for every list made from
+        now on and for the Mail tab's list at once."""
+        envelope_list_panel.configure_lists(
+            columns=self._list_columns,
+            show_headers=getattr(self.settings_manager.settings, "show_list_headers", False),
+        )
+        self.mail_panel.envelope_panel.apply_list_display()
+
+    def _update_list_extras(self):
+        """
+        Listings ask for the message structure only while the
+        Attachments column is shown or the list is sorted by
+        attachments, and for the priority headers only while the
+        Priority column or sort is in use. When one is newly needed,
+        the folder on screen is listed again quietly, so its rows get
+        the data without waiting for the next refresh.
+        """
+        columns = set(self._list_columns)
+        was = imap_body_fetch.list_extras()
+        imap_body_fetch.set_list_extras(
+            structure="attachments" in columns or self._sort_key == "attachments",
+            priority="priority" in columns or self._sort_key == "priority",
+        )
+        now = imap_body_fetch.list_extras()
+        newly = (now[0] and not was[0]) or (now[1] and not was[1])
+        if newly and getattr(self, "_startup_list_seen", False):
+            wx.CallAfter(self._auto_refresh_current_folder)
+
+    def _list_shows_outgoing(self):
+        """True while the Mail tab's list shows a Sent or Drafts folder,
+        an account's own or a Unified one, so Correspondents is the
+        recipient there. Any doubt is False: the sender is shown."""
+        try:
+            target = self.mail_panel.account_panel.selected_fetch_target() or {}
+            if "unified" in target:
+                return target.get("unified") in ("Sent", "Drafts")
+            folder = str(target.get("folder") or "")
+            account = next(
+                (a for a in self.account_manager.accounts
+                 if a.account_id == target.get("account_id")),
+                None,
+            )
+            if account is None or not folder:
+                return False
+            import provider_presets
+
+            names = {
+                folder.casefold(),
+                str(envelope_format._folder_display_to_himalaya(folder, account) or "").casefold(),
+            }
+            outgoing = {"sent", "drafts"}
+            for kind in ("Sent", "Drafts"):
+                outgoing.add(str(provider_presets.himalaya_folder_name(
+                    account.imap_host, kind, account.account_id) or "").casefold())
+            identities = account.identities() if callable(getattr(account, "identities", None)) else []
+            for identity in identities or []:
+                for field in ("sent_folder", "drafts_folder"):
+                    if isinstance(identity, dict):
+                        value = identity.get(field)
+                    else:
+                        value = getattr(identity, field, "")
+                    if value:
+                        outgoing.add(str(value).casefold())
+            outgoing.discard("")
+            return bool(names & outgoing)
+        except Exception:  # noqa: BLE001 - a wrong guess only changes one column
+            return False
 
     def _on_sort_order(self, event):
         self._sort_ascending = event.GetId() == ID_SORT_ASCENDING
@@ -4127,6 +4627,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         _resolve_envelope_context already uses for every other
         per-message action.
         """
+        if self._on_search_tab():
+            # Search results are not grouped by thread.
+            return None
         thread_key = self.mail_panel.envelope_panel.selected_thread_key()
         if thread_key is None:
             return None
@@ -4256,6 +4759,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         user has no column header to glance at to see where the list
         currently stands."""
         self.mail_panel.envelope_panel.sort_by(self._sort_key, self._sort_ascending)
+        self._update_list_extras()
         settings = self.settings_manager.settings
         if (getattr(settings, "sort_key", None) == self._sort_key
                 and getattr(settings, "sort_ascending", None) == self._sort_ascending):
@@ -4268,9 +4772,8 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             logging.getLogger("zbox.main").warning(
                 "Could not save the sort order.", exc_info=True
             )
-        label = {"date": "Date", "subject": "Subject", "from": "From"}.get(
-            self._sort_key, "Date"
-        )
+        labels = _sort_menu_labels()
+        label = labels.get(self._sort_key) or labels["date"]
         direction = "ascending" if self._sort_ascending else "descending"
         self.GetStatusBar().SetStatusText(
             lang.t(
@@ -4326,12 +4829,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 title, wx.OK | wx.ICON_WARNING,
             )
             return
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "select_account_first",
                 default="Select an account in the tree first.",
             ),
-            title, wx.OK | wx.ICON_INFORMATION,
+            title,
         )
 
     def _on_new_account(self, event):
@@ -4690,7 +5194,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self.announce_action(text, title=title)
 
         contexts = []
-        for envelope in self.mail_panel.envelope_panel.get_all_selected_envelopes():
+        for envelope in self._action_list().get_all_selected_envelopes():
             context = self._resolve_envelope_context(envelope)
             if context is not None:
                 contexts.append((envelope, context[0]))
@@ -4890,7 +5394,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self.announce_action(text, title=title)
 
         contexts = []
-        for envelope in self.mail_panel.envelope_panel.get_all_selected_envelopes():
+        for envelope in self._action_list().get_all_selected_envelopes():
             context = self._resolve_envelope_context(envelope)
             if context is not None:
                 contexts.append((envelope, context[0]))
@@ -5472,13 +5976,13 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         target = self._tree_context_target or {}
         account = self._find_account(target.get("account_id"))
         if account is None:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "select_account_or_folder",
                     default="Select an account or folder first.",
                 ),
                 lang.t("dialogs", "title_new_folder", default="New Folder"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
 
@@ -6277,6 +6781,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         print_preview(self, page.printable_text(), page.printable_title())
 
     def _on_toggle_work_offline(self, event):
+        if private_mode.ACTIVE:
+            # No offline copies exist in private mode.
+            self.work_offline = False
+            return
         self.work_offline = event.IsChecked()
         self.GetStatusBar().SetStatusText(
             lang.t(
@@ -6302,7 +6810,8 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         target = self.mail_panel.account_panel.selected_fetch_target()
         account = self._find_account(target.get("account_id")) if target else None
         if account is None:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "sync_select_account",
                     default="Select an account (not a Unified folder) to synchronize for offline use.",
@@ -6311,7 +6820,6 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                     "dialogs", "title_synchronize_offline",
                     default="Synchronize for Offline",
                 ),
-                wx.OK | wx.ICON_INFORMATION,
             )
             return
 
@@ -6373,8 +6881,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         via _current_message_context) to the address book, without
         opening the message or waiting for a reply -- a deliberate,
         user-visible counterpart to the automatic capture that
-        already happens on read/reply/send (see contacts.
-        add_from_envelope_from's other call sites). Uses the same
+        happens when mail is sent (compose_panel, after a send). It
+        marks the contact as the person's own, so compose suggests
+        it. Uses the same
         soft-merge add() automatic capture does, not upsert(), so
         this never blanks out a name or phone/notes already on file
         for that address; the status line says which happened
@@ -6401,7 +6910,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         name = (sender.get("name") or "").strip() if isinstance(sender, dict) else ""
 
         label = f"{name} <{email}>" if name else email
-        if self.contacts.add(name, email):
+        if self.contacts.add(name, email, manual=True):
             self.GetStatusBar().SetStatusText(lang.t(
                 "main_ui", "contact_added",
                 default=f"Added {label} to your address book.", contact=label,
@@ -6474,6 +6983,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self.GetStatusBar().SetStatusText(text)
         except Exception:
             pass
+        # Spoken only when spoken announcements are on: the choice in
+        # Settings, or, until one is made, while a screen reader is
+        # running (spoken_feedback). The status bar above is written
+        # either way.
+        if not spoken_feedback.enabled(self.settings_manager.settings):
+            return
         hold_ms = getattr(
             self.settings_manager.settings, "announcement_hold_ms", 1800
         )
@@ -6488,18 +7003,11 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         announce(self, text, title=title, hold_ms=hold_ms)
 
     def announce_action(self, text, title="ZBox"):
-        """Says what an action just did, when Settings' Announce
-        message actions is on.
-
-        Separate from announce() on purpose. announce() is for things
-        whose whole reason to exist is to be heard -- who sent this,
-        new mail, a message that would not open -- and must never be
-        switchable off. This one is the per-action running commentary
-        (archived, marked as junk, deleted), which is genuinely a
-        matter of taste. Off still leaves the status bar written, as
-        every action already did."""
-        if not getattr(self.settings_manager.settings, "announce_actions", True):
-            return
+        """Says what an action just did: the per-action running
+        commentary (archived, marked as junk, deleted). Spoken only
+        when spoken announcements are on, like every announcement
+        (announce, spoken_feedback); the status bar is written either
+        way."""
         self.announce(text, title=title)
 
     def _check_raise_request(self):
@@ -6631,15 +7139,30 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self._schedule_phishing_update()
         dialog.Destroy()
 
-    def _on_settings(self, event):
+    def _on_settings(self, event, page=None):
         old_language = getattr(self.settings_manager.settings, "language", "en")
         old_theme = getattr(self.settings_manager.settings, "ui_theme", "system")
-        dialog = SettingsDialog(self, self.settings_manager.settings)
+        old_private = bool(getattr(self.settings_manager.settings, "private_mode", False))
+        dialog = SettingsDialog(self, self.settings_manager.settings, page=page)
         language_changed = False
         theme_changed = False
         if dialog.ShowModal() == wx.ID_OK:
             self.settings_manager.settings = dialog.apply_to_settings()
+            private_now = bool(getattr(self.settings_manager.settings, "private_mode", False))
+            if private_now and not old_private:
+                # The computer private mode is turned on from stays trusted
+                # when ZBox closes (private_mode.close_cleanup).
+                try:
+                    import dpapi_secret_store
+
+                    self.settings_manager.settings.private_home = dpapi_secret_store.machine_id()
+                except Exception:  # noqa: BLE001
+                    self.settings_manager.settings.private_home = ""
             self.settings_manager.save()
+            if private_now != old_private:
+                self._apply_private_mode(private_now)
+            # The column headers setting applies at once.
+            self._apply_list_display()
             # Message font size/reading font (audit finding 53) is
             # the one Settings change worth applying immediately --
             # everything else in this dialog is documented as
@@ -6652,7 +7175,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             # a checkbox that silently does nothing until you restart
             # the app looks broken, not deferred.
             ok = startup_registration.set_registered(
-                self.settings_manager.settings.run_at_windows_startup,
+                # Private mode leaves no startup entry on the computer.
+                self.settings_manager.settings.run_at_windows_startup
+                and not getattr(self.settings_manager.settings, "private_mode", False),
                 self.paths.base,
             )
             status_text = lang.t('main_ui', 'settings_saved_status', default="Settings saved.")
@@ -6675,6 +7200,61 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                     default="Restart ZBox to apply the theme change?",
                 )
             )
+
+    def _apply_private_mode(self, on):
+        """Private mode turned on or off in Settings (private_mode.py).
+        On: ZBox's copies of mail are deleted now, in the background (the
+        HTML view's browser data, still in use, goes when ZBox closes),
+        this run's debug log stops, and Work Offline is turned off and made
+        unavailable. Off: ZBox keeps copies again from now on. A notice
+        says which; focus stays where it is."""
+        import notice_toast
+        import private_mode
+        import threading
+
+        private_mode.ACTIVE = bool(on)
+        title = lang.t("dialogs", "title_private_mode", default="Private Mode")
+        items = [
+            self.__dict__.get("_work_offline_item"),
+            self.__dict__.get("_sync_offline_item"),
+        ]
+        if on:
+            was_offline = self.work_offline
+            self.work_offline = False
+            for item in items:
+                if item is None:
+                    continue
+                try:
+                    if item.IsCheckable():
+                        item.Check(False)
+                    item.Enable(False)
+                except Exception:  # noqa: BLE001
+                    pass
+            private_mode.stop_file_logging()
+            threading.Thread(
+                target=private_mode.clear_local_copies,
+                args=(self.paths.cache, self.paths.logs, True),
+                name="private-mode-clear", daemon=True,
+            ).start()
+            if was_offline:
+                self._on_refresh_folder(None)
+            notice_toast.notify(self, lang.t(
+                "main_ui", "private_mode_on",
+                default="Private mode is on. ZBox's copies of your mail on this "
+                "computer have been deleted.",
+            ), title)
+        else:
+            for item in items:
+                if item is None:
+                    continue
+                try:
+                    item.Enable(True)
+                except Exception:  # noqa: BLE001
+                    pass
+            notice_toast.notify(self, lang.t(
+                "main_ui", "private_mode_off",
+                default="Private mode is off. ZBox keeps copies of your mail again.",
+            ), title)
 
     def _offer_language_restart(self, question=None):
         """Interface language is only read once, at startup (see
@@ -6919,7 +7499,8 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             names = "\n".join(
                 f"  {a.display_name or a.login_email}" for a in new_accounts
             )
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "accounts_imported",
                     default="Imported %d account(s):\n\n%s\n\n"
@@ -6935,10 +7516,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                     "dialogs", "title_import_accounts",
                     default="Import Accounts and Settings",
                 ),
-                wx.OK | wx.ICON_INFORMATION,
             )
         else:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "accounts_import_none",
                     default="No accounts were found in this file. Settings were "
@@ -6948,13 +7529,24 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                     "dialogs", "title_import_accounts",
                     default="Import Accounts and Settings",
                 ),
-                wx.OK | wx.ICON_INFORMATION,
             )
         self.GetStatusBar().SetStatusText(lang.t(
             "main_ui", "import_done",
             default=f"Imported {len(new_accounts)} account(s) from {path}.",
             count=len(new_accounts), path=path,
         ))
+
+    def _on_openpgp_keys(self, event):
+        """Tools > OpenPGP Key Manager (see openpgp_key_manager)."""
+        from openpgp_key_manager import show_key_manager
+
+        show_key_manager(self, self.paths, self.account_manager.accounts)
+
+    def _on_smime_certs(self, event):
+        """Tools > S/MIME Certificate Manager (see smime_manager)."""
+        from smime_manager import show_certificate_manager
+
+        show_certificate_manager(self, self.paths)
 
     def _on_address_book(self, event):
         from address_book_dialog import AddressBookDialog
@@ -7073,7 +7665,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         cached_message = himalaya_client.read_message_cached_only(
             self.paths, account, message_id, folder=folder, backend=backend,
         )
-        if cached_message is not None:
+        if cached_message is not None and not openpgp_read.looks_protected(cached_message):
             self._open_message_tab(account, folder, envelope, cached_message)
             return
 
@@ -7083,9 +7675,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ))
 
         def work():
-            return himalaya_client.read_message(
-                self.paths, account, message_id, folder=folder,
-                backend=backend,
+            return self._readable(
+                account, folder, envelope, backend,
+                himalaya_client.read_message(
+                    self.paths, account, message_id, folder=folder,
+                    backend=backend,
+                ),
             )
 
         def clear_key():
@@ -7149,7 +7744,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         This is what replaced opening a tab per message. See
         conversation_panel.py for why that had to go.
         """
-        envelopes = self.mail_panel.envelope_panel.selected_thread_envelopes()
+        # Search results are not grouped by thread: nothing to open
+        # from the Search tab.
+        envelopes = [] if self._on_search_tab() else self.mail_panel.envelope_panel.selected_thread_envelopes()
         if not envelopes:
             self.GetStatusBar().SetStatusText(lang.t(
                 "main_ui", "select_message_first",
@@ -7303,7 +7900,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             # act on the same way.
             return tab.account, tab.folder, tab.envelope, tab.message
 
-        envelope = self.mail_panel.envelope_panel.selected_envelope()
+        envelope = self._action_list().selected_envelope()
         if envelope is None:
             return None, None, None, None
         context = self._resolve_envelope_context(envelope)
@@ -7323,7 +7920,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         block is skipped in that case.
         """
         if self._current_message_tab() is None:
-            count = self.mail_panel.envelope_panel.get_selected_item_count()
+            count = self._action_list().get_selected_item_count()
             if count > 1:
                 self.GetStatusBar().SetStatusText(lang.t(
                     "main_ui", "reply_one_at_a_time",
@@ -7337,7 +7934,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         """Reply to all recipients of the selected message (Q1 answer: block multi-select).
         See _on_reply for why the block is skipped when a message tab is focused."""
         if self._current_message_tab() is None:
-            count = self.mail_panel.envelope_panel.get_selected_item_count()
+            count = self._action_list().get_selected_item_count()
             if count > 1:
                 self.GetStatusBar().SetStatusText(lang.t(
                     "main_ui", "reply_one_at_a_time",
@@ -7369,7 +7966,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         cached_message = himalaya_client.read_message_cached_only(
             self.paths, account, message_id, folder=folder, backend=backend,
         )
-        if cached_message is not None:
+        # A protected message is read again below, so an encrypted original
+        # is quoted decrypted (OpenPGP stage 3).
+        if cached_message is not None and not openpgp_read.looks_protected(cached_message):
             self._open_reply_compose(account, envelope, cached_message, all_recipients)
             return
 
@@ -7378,14 +7977,17 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ))
 
         def work():
-            return himalaya_client.read_message(
+            # Read as a message tab reads it (_readable), so an encrypted
+            # original arrives decrypted.
+            return self._readable(account, folder, envelope, backend, himalaya_client.read_message(
                 self.paths, account, message_id, folder=folder, backend=backend,
-            )
+            ))
 
         def on_success(fetched_message):
             self.GetStatusBar().SetStatusText(
                 lang.t("main_ui", "ready", default="Ready.")
             )
+            fetched_message = self._unlock_protected(fetched_message)
             self._open_reply_compose(account, envelope, fetched_message, all_recipients)
 
         def on_error(exc):
@@ -7410,8 +8012,23 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # Reply All must not Cc anyone already in To -- which, with
         # Reply-To honoured, is no longer always just the From address.
         cc_field = _reply_all_cc_field(account, envelope, covered) if all_recipients else ""
+        # The protected Subject of an encrypted original, not its "...".
+        shown_subject = openpgp_read.display_subject(message)
+        if shown_subject:
+            envelope = dict(envelope, subject=shown_subject)
         subject = _reply_subject(envelope.get("subject"))
-        body = _quoted_reply_body(envelope, message)
+        # OpenPGP stage 3: a reply to encrypted mail opens with Encrypt on
+        # and quotes the decrypted text, as Thunderbird does. An original
+        # that could not be decrypted has nothing readable to quote.
+        encrypted = openpgp_read.was_encrypted(message)
+        status = openpgp_read.status_of(message)
+        if encrypted and (status is None or status.encrypted is not True):
+            body = "\n\n\n" + lang.t(
+                "dialogs", "pgp_rs_reply_not_quoted",
+                default="The original message was encrypted, so its text is not quoted here.",
+            ) + "\n"
+        else:
+            body = _quoted_reply_body(envelope, message)
         in_reply_to, references = threading_headers(message)
 
         panel = ComposePanel(
@@ -7423,6 +8040,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             body=body,
             in_reply_to=in_reply_to,
             references=references,
+            encrypt=True if encrypted else None,
         )
         title = subject if len(subject) <= 30 else subject[:27] + "..."
         self.open_tab(panel, title)
@@ -7445,7 +8063,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         cached_message = himalaya_client.read_message_cached_only(
             self.paths, account, message_id, folder=folder, backend=backend,
         )
-        if cached_message is not None:
+        if cached_message is not None and not openpgp_read.looks_protected(cached_message):
             self._open_forward_compose(account, envelope, cached_message)
             return
 
@@ -7455,14 +8073,15 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         ))
 
         def work():
-            return himalaya_client.read_message(
+            return self._readable(account, folder, envelope, backend, himalaya_client.read_message(
                 self.paths, account, message_id, folder=folder, backend=backend,
-            )
+            ))
 
         def on_success(fetched_message):
             self.GetStatusBar().SetStatusText(
                 lang.t("main_ui", "ready", default="Ready.")
             )
+            fetched_message = self._unlock_protected(fetched_message)
             self._open_forward_compose(account, envelope, fetched_message)
 
         def on_error(exc):
@@ -7483,8 +8102,21 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         self.lanes.for_read(account.account_id, backend).submit(work, on_success, on_error)
 
     def _open_forward_compose(self, account, envelope, message):
+        shown_subject = openpgp_read.display_subject(message)
+        if shown_subject:
+            envelope = dict(envelope, subject=shown_subject)
         subject = _forward_subject(envelope.get("subject"))
-        body = _forwarded_body(envelope, message)
+        # As for a reply: encrypted mail is forwarded with Encrypt on and its
+        # decrypted text; one that could not be decrypted, without it.
+        encrypted = openpgp_read.was_encrypted(message)
+        status = openpgp_read.status_of(message)
+        if encrypted and (status is None or status.encrypted is not True):
+            body = _forwarded_body(envelope, None) + lang.t(
+                "dialogs", "pgp_rs_reply_not_quoted",
+                default="The original message was encrypted, so its text is not quoted here.",
+            ) + "\n"
+        else:
+            body = _forwarded_body(envelope, message)
         # References but not In-Reply-To, which is what Thunderbird
         # does on a forward: the new message belongs to the same
         # conversation history, but it is not a reply to anything and
@@ -7497,12 +8129,16 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             subject=subject,
             body=body,
             references=references,
+            encrypt=True if encrypted else None,
         )
         title = subject if len(subject) <= 30 else subject[:27] + "..."
         self.open_tab(panel, title)
 
     def _on_list_delete_key(self, action, shift):
-        if action == "delete":
+        if action == "undo":
+            # Ctrl+Z in the message list or the Search results: Edit, Undo.
+            self._on_undo(None)
+        elif action == "delete":
             self._delete_from_selection(shift)
         elif action == "flag":
             self._toggle_flag_from_selection()
@@ -7512,6 +8148,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self._mark_junk_from_selection()
         elif action == "not_junk":
             self._mark_not_junk_from_selection()
+        elif action in ("watch_thread", "ignore_thread") and self._on_search_tab():
+            # Search results are not grouped by thread.
+            self.GetStatusBar().SetStatusText(lang.t(
+                "main_ui", "select_message_first",
+                default="Select a message first.",
+            ))
         elif action == "watch_thread":
             self._toggle_watch_thread()
         elif action == "ignore_thread":
@@ -7556,7 +8198,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         audit item 24: this and _run_bulk_action below are what the
         six near-identical bulk actions were collapsed onto.
         """
-        envelopes = self.mail_panel.envelope_panel.get_all_selected_envelopes()
+        envelopes = self._action_list().get_all_selected_envelopes()
         if not envelopes:
             self.GetStatusBar().SetStatusText(none_selected_text)
             return []
@@ -7707,6 +8349,12 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self._refresh_attachments_menu()
         if event.GetMenu() is self._compose_menu:
             self._hotkeys_item.Check(self.hotkeys_diagnostic)
+            page_index = self.notebook.GetSelection()
+            page = self.notebook.GetPage(page_index) if page_index != wx.NOT_FOUND else None
+            state = getattr(page, "pgp_state", None)
+            values = state() if state is not None else (False, False, False)
+            for item, value in zip(getattr(self, "_compose_pgp_items", []), values):
+                item.Check(bool(value))
         event.Skip()
 
     def _on_toggle_hotkeys_diagnostic(self, _event):
@@ -7807,11 +8455,11 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 lang.t(
                     "menus", "edit_undo_action", default="Undo {action}",
                     action=_action_name(label),
-                ) + "\tCtrl+Z"
+                ) + " (Ctrl+Z)"
             )
             self.undo_menu_item.Enable(True)
         else:
-            self.undo_menu_item.SetItemLabel(lang.menu_label("edit_undo", "Undo\tCtrl+Z"))
+            self.undo_menu_item.SetItemLabel(lang.menu_label("edit_undo", "Undo") + " (Ctrl+Z)")
             self.undo_menu_item.Enable(False)
 
     def _set_undo_record(self, label, moves):
@@ -8105,7 +8753,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
 
         for account, items in by_account.items():
             self._hold_pending_removals(account, items)
-        self.mail_panel.envelope_panel.drop_hidden_rows()
+        self._drop_removed_rows(list(by_account.items()))
 
         if permanent:
             running = (
@@ -8485,7 +9133,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             self._hold_pending_removals(account, [item for item, _destination in plan])
             for item, destination in plan:
                 self._expect_arrivals(account, destination, [item[2]])
-        self.mail_panel.envelope_panel.drop_hidden_rows()
+        self._drop_removed_rows([
+            (account, [item for item, _destination in plan])
+            for account, plan in by_account.items()
+        ])
         self.GetStatusBar().SetStatusText(f"{running_text}...")
         # Said now, not when the worker comes back. The rows are
         # already off the list, so the action is done as far as the
@@ -8701,6 +9352,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         if not contexts:
             return
 
+        origin = self._action_list()
         target_state = not all(_envelope_is_flagged(envelope) for envelope, _context in contexts)
 
         count = len(contexts)
@@ -8715,7 +9367,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                 message_id for _envelope, (_account, _folder, message_id) in contexts
                 if message_id not in failed_ids
             ]
-            self.mail_panel.envelope_panel.mark_ids_flagged(succeeded_ids, target_state)
+            if origin is self.mail_panel.envelope_panel:
+                self.mail_panel.envelope_panel.mark_ids_flagged(succeeded_ids, target_state)
+            else:
+                self._mark_result_rows(origin, contexts, succeeded_ids, "flagged", target_state)
 
         self._run_bulk_action(
             contexts, running_text, lang.t('main_ui', 'flag_updated', default="Flag(s) updated."),
@@ -8807,7 +9462,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
         # success, shown again on failure.
         removal = [(message_id, folder, envelope.get("message-id"))]
         self._hold_pending_removals(account, removal)
-        self.mail_panel.envelope_panel.drop_hidden_rows()
+        self._drop_removed_rows([(account, removal)])
 
         def on_success(_result):
             self._settle_pending_removals(account, removal, [])
@@ -8955,6 +9610,7 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             done_text = lang.t(
                 "actions_announcements", "marked_unread", default="Marked as unread."
             )
+        origin = self._action_list()
         error_text = (
             lang.t("main_ui", "mark_read_failed", default="Could not mark message(s) as read.")
             if read
@@ -8983,7 +9639,9 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
                     key = (account.account_id, folder)
                     entry = changes.setdefault(key, [account, 0])
                     entry[1] += -1 if read else 1
-            if read:
+            if origin is not self.mail_panel.envelope_panel:
+                self._mark_result_rows(origin, contexts, succeeded_ids, "seen", read)
+            elif read:
                 self.mail_panel.envelope_panel.mark_ids_read(succeeded_ids)
             else:
                 self.mail_panel.envelope_panel.mark_ids_unread(succeeded_ids)
@@ -9206,10 +9864,10 @@ class ZBoxMainFrame(MailFetchMixin, UpdateActionsMixin, wx.Frame):
             )
             return
 
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             message,
             lang.t("dialogs", "title_master_password", default="Master Password"),
-            wx.OK | wx.ICON_INFORMATION, self,
         )
 
     def _on_shortcuts(self, event):
@@ -9423,13 +10081,13 @@ class ZBoxApp(wx.App):
                 wx.OK | wx.ICON_WARNING,
             )
             return
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t(
                 "dialogs", "shortcut_created",
                 default="Shortcut created:\n%s" % path, path=path,
             ),
             lang.t("dialogs", "title_desktop_shortcut", default="Desktop Shortcut"),
-            wx.OK | wx.ICON_INFORMATION,
         )
 
     def _cleanup_declined_install(self):

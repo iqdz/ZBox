@@ -16,6 +16,7 @@ the text box.
 import wx
 
 import lang
+import notice_toast
 from accessible import fit_dialog
 
 
@@ -86,13 +87,13 @@ class FolderSearchDialog(wx.Dialog):
 
     def _on_pick(self, event):
         if not self._matches:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "folder_search_no_match",
                     default="No folder matches that name.",
                 ),
                 lang.t("dialogs", "move_title_move_to", default="Move To"),
-                wx.OK | wx.ICON_INFORMATION,
             )
             self.filter_field.SetFocus()
             return

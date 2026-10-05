@@ -810,3 +810,41 @@ def file_key(config_dir, keyset_id=None):
     if not had_id or len(store["keysets"]) != before:
         _save(config_dir, store)
     return new_id, _derive_file_key(data_key)
+
+
+# --- private mode --------------------------------------------------------
+
+def forget_this_machine(config_dir):
+    """Removes this computer from every keyset that a master password also
+    opens: the DPAPI wraps this Windows account can open, and this
+    computer's fingerprint. The next start here asks for the master
+    password again. A keyset without a master password is left alone, so
+    nothing is ever locked out for good. True when something was removed.
+    Used by private mode when ZBox closes (private_mode.close_cleanup)."""
+    _require_dpapi()
+
+    def opens_here(encoded):
+        try:
+            return bool(_dpapi_unprotect(encoded))
+        except Exception:  # noqa: BLE001 - another computer's wrap
+            return False
+
+    store = _load(config_dir)
+    current = machine_id()
+    changed = False
+    for keyset in store["keysets"]:
+        if not _has_master(keyset):
+            continue
+        wraps = _wraps(keyset)
+        kept = [encoded for encoded in wraps["dpapi"] if not opens_here(encoded)]
+        if len(kept) != len(wraps["dpapi"]):
+            wraps["dpapi"] = kept
+            changed = True
+        machines = _machines(keyset)
+        if current in machines:
+            machines.remove(current)
+            changed = True
+    if changed:
+        _save(config_dir, store)
+        _log.info("This computer was removed from the trusted list.")
+    return changed

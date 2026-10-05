@@ -10,7 +10,7 @@ ZBox 內建追蹤器和廣告封鎖器（預設啟用），另有可選的垃圾
 為了讓您從其他電子郵件用戶端順利轉換，ZBox 提供友善、彈性的快速鍵。多個快速鍵常常執行同一個動作；例如，Alt+S 和 Ctrl+Enter 都可以傳送郵件。完整清單請查看「說明」中的「鍵盤快速鍵」。
 
 帳號設定
-Outlook.com、Hotmail、Live 與 Microsoft 365 帳號使用您的 Microsoft 帳號登入，可在瀏覽器中或用代碼登入。原生 Google 登入將在日後的更新中加入。目前，您可以產生應用程式密碼代替一般密碼來連結 Gmail 帳號（操作說明請見下方按鈕）。
+Outlook.com、Hotmail、Live 與 Microsoft 365 帳號使用您的 Microsoft 帳號登入，可在瀏覽器中或用代碼登入。目前，您可以產生應用程式密碼代替一般密碼來連結 Gmail 帳號（操作說明請見下方按鈕）。
 
 授權與致謝
 按下方的「檢視授權條款」可閱讀 ZBox 的授權條款，並查看使其得以實現的第三方元件。這些元件包括 Himalaya、StevenBlack hosts 和 EasyPrivacy 封鎖清單、Phishing.Database 清單，以及（在建置版本中）Python、wxPython、imapclient、pywin32、keyring 和 accessible_output2 及其螢幕閱讀器用戶端程式庫。

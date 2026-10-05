@@ -10,7 +10,7 @@ Utilizare familiară
 Pentru ca trecerea de la alți clienți de e-mail să fie ușoară, ZBox oferă comenzi rapide prietenoase și flexibile. Adesea, mai multe comenzi rapide fac aceeași acțiune; de exemplu, atât Alt+S, cât și Ctrl+Enter trimit un mesaj. Lista completă se află în Ajutor, Comenzi rapide de la tastatură.
 
 Configurarea contului
-Conturile Outlook.com, Hotmail, Live și Microsoft 365 se conectează cu contul dumneavoastră Microsoft, în browser sau cu un cod. Conectarea nativă cu Google va fi adăugată într-o actualizare viitoare. Deocamdată, vă puteți lega contul Gmail generând o parolă pentru aplicații în loc să folosiți parola obișnuită (vedeți butonul de mai jos pentru instrucțiuni).
+Conturile Outlook.com, Hotmail, Live și Microsoft 365 se conectează cu contul dumneavoastră Microsoft, în browser sau cu un cod.Deocamdată, vă puteți lega contul Gmail generând o parolă pentru aplicații în loc să folosiți parola obișnuită (vedeți butonul de mai jos pentru instrucțiuni).
 
 Licențe și mulțumiri
 Apăsați mai jos Vezi licența pentru a citi licența ZBox și a vedea componentele terțe care îl fac posibil. Printre acestea se numără Himalaya, listele de blocare StevenBlack hosts și EasyPrivacy, lista Phishing.Database și (într-o versiune compilată) Python, wxPython, imapclient, pywin32, keyring și accessible_output2 cu bibliotecile sale client pentru cititoare de ecran.

@@ -10,7 +10,7 @@ Trải nghiệm quen thuộc
 Để việc chuyển từ các trình gửi thư khác dễ dàng nhất có thể, ZBox có các phím tắt thực tế và linh hoạt. Thường có nhiều phím tắt cho cùng một thao tác; ví dụ, cả Alt+S và Ctrl+Enter đều gửi thư. Danh sách đầy đủ nằm trong Trợ giúp, Phím tắt.
 
 Thiết lập tài khoản
-Tài khoản Outlook.com, Hotmail, Live và Microsoft 365 đăng nhập bằng tài khoản Microsoft của bạn, trên trình duyệt hoặc bằng mã. Đăng nhập Google trực tiếp sẽ được thêm trong bản cập nhật sắp tới. Hiện tại, bạn có thể liên kết tài khoản Gmail bằng cách tạo Mật khẩu ứng dụng thay vì dùng mật khẩu thông thường (xem nút bên dưới để biết hướng dẫn).
+Tài khoản Outlook.com, Hotmail, Live và Microsoft 365 đăng nhập bằng tài khoản Microsoft của bạn, trên trình duyệt hoặc bằng mã.Hiện tại, bạn có thể liên kết tài khoản Gmail bằng cách tạo Mật khẩu ứng dụng thay vì dùng mật khẩu thông thường (xem nút bên dưới để biết hướng dẫn).
 
 Giấy phép và ghi nhận
 Nhấn Xem giấy phép bên dưới để đọc giấy phép của ZBox và xem các thành phần bên thứ ba giúp tạo nên ZBox. Trong đó có: Himalaya, danh sách chặn StevenBlack hosts và EasyPrivacy, danh sách Phishing.Database, và (trong bản dựng) Python, wxPython, imapclient, pywin32, keyring và accessible_output2 cùng các thư viện máy khách dành cho trình đọc màn hình.

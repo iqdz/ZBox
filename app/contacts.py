@@ -1,8 +1,9 @@
 """
-Local address book. Contacts are captured automatically from mail the
-user already sent or received (matching Thunderbird's "Collected
-Addresses" behavior), then offered back as autocomplete suggestions
-in the compose window's To/Cc/Bcc fields. They can also be entered,
+Local address book. Addresses the user sends to (a new message, a
+reply or a forward) are captured automatically, as Outlook does, and
+offered back as suggestions in the compose window's To/Cc/Bcc fields,
+together with the contacts the user put in the book. Mail that arrives
+adds nothing. They can also be entered,
 edited or removed directly, and imported/exported as vCard (.vcf) or
 CSV, from the Address Book dialog (Ctrl+Shift+B).
 
@@ -75,7 +76,9 @@ class ContactManager:
                         "notes": entry.get("notes", ""),
                         "use_count": _as_int(entry.get("use_count")),
                         "last_used": _as_int(entry.get("last_used")),
+                        "manual": bool(entry.get("manual")),
                     }
+                    _load_score(self._contacts[email.lower()], entry)
             for group in data.get("groups", []):
                 name = (group.get("name") or "").strip()
                 if not name:
@@ -117,7 +120,7 @@ class ContactManager:
         except (OSError, data_crypto.EncryptedDataUnavailable):
             logger.exception("Could not save contacts.json.")
 
-    def add(self, name, email, phone="", notes=""):
+    def add(self, name, email, phone="", notes="", manual=False):
         """Soft-merge add used by automatic capture and vCard/CSV
         import. A blank incoming name/phone/notes never overwrites a
         non-blank value already on file, so e.g. a bare address seen
@@ -140,12 +143,18 @@ class ContactManager:
                 if value and not existing.get(field):
                     existing[field] = value
                     changed = True
+            # Put in the book by the person (import, Add Sender): offered
+            # in compose suggestions from now on.
+            if manual and not existing.get("manual"):
+                existing["manual"] = True
+                changed = True
             if changed:
                 self._save()
             return False
         self._contacts[key] = {
             "name": name, "email": email, "phone": phone, "notes": notes,
             "use_count": 0, "last_used": 0,
+            "manual": bool(manual), "score": 0.0, "score_at": 0,
         }
         self._save()
         return True
@@ -163,8 +172,11 @@ class ContactManager:
         contact = self._contacts.get((email or "").strip().lower())
         if contact is None:
             return
+        now = int(time.time())
+        contact["score"] = _faded_score(contact, now) + 1.0
+        contact["score_at"] = now
         contact["use_count"] = _as_int(contact.get("use_count")) + 1
-        contact["last_used"] = int(time.time())
+        contact["last_used"] = now
         self._save()
 
     def upsert(self, name, email, previous_email=None, phone="", notes=""):
@@ -191,6 +203,11 @@ class ContactManager:
             "name": name, "email": email, "phone": phone, "notes": notes,
             "use_count": _as_int(existing.get("use_count")),
             "last_used": _as_int(existing.get("last_used")),
+            # Saved in the Address Book: the person's own entry, offered
+            # in compose suggestions from now on.
+            "manual": True,
+            "score": _as_float(existing.get("score")),
+            "score_at": _as_int(existing.get("score_at")),
         }
         self._save()
 
@@ -345,35 +362,33 @@ class ContactManager:
         )
 
     def search(self, prefix, limit=10):
-        """Matches for compose autocomplete, most-used first.
+        """Matches for compose suggestions, most used first.
 
-        Two changes from a plain alphabetical prefix match, both
-        because alphabetical order is the wrong answer to "who do you
-        mean": the person written to most often should be the first
-        thing offered, and typing a surname should find someone whose
-        entry starts with their first name.
+        Who: only contacts the person sent to, put in the book (by hand,
+        by import, with Add Sender) or put in a group. An address only seen
+        on mail that arrived is never offered.
 
-        Matching: the typed text against the start of the name, the
-        start of any word in the name, the start of the address, and
-        the start of its local part -- so "smith", "john" and "jsmith"
-        all reach John Smith <jsmith@example.com>.
+        Matching: the typed text against the start of the name, the start
+        of any word in the name, the start of the address, and the start
+        of its local part -- so "smith", "john" and "jsmith" all reach
+        John Smith <jsmith@example.com>.
 
-        Ranking: how often this address has been sent to, plus a
-        small bonus for having been used recently. Thunderbird ranks
-        the same list on a popularity counter alone and has an open
-        request to weigh recency into it as well; doing both here
-        costs one stored timestamp. Ties fall back to alphabetical,
-        so a fresh address book behaves exactly as it did before any
-        of this existed.
+        Ranking: the fading send score (_faded_score), then a match at the
+        start of the name or address before one at a later word, then
+        alphabetical.
         """
         prefix = (prefix or "").strip().lower()
         if not prefix:
             return []
+        grouped = set()
+        for group in self._groups.values():
+            grouped.update(group["members"])
+        now = time.time()
         matches = [
             contact for contact in self._contacts.values()
-            if _contact_matches(contact, prefix)
+            if _suggestable(contact, grouped) and _contact_matches(contact, prefix)
         ]
-        matches.sort(key=_autocomplete_rank)
+        matches.sort(key=lambda contact: _autocomplete_rank(contact, prefix, now))
         return matches[:limit]
 
     # --- Import / export ------------------------------------------
@@ -432,7 +447,7 @@ class ContactManager:
             elif prop_name == "NOTE":
                 current_notes = value
             elif prop_name == "EMAIL" and value.strip():
-                self.add(current_name, value.strip(), phone=current_phone, notes=current_notes)
+                self.add(current_name, value.strip(), phone=current_phone, notes=current_notes, manual=True)
                 imported += 1
 
         return imported
@@ -507,7 +522,10 @@ class ContactManager:
             email = row[email_idx].strip()
             if not email:
                 continue
-            self.add(cell(row, name_idx), email, phone=cell(row, phone_idx), notes=cell(row, notes_idx))
+            self.add(
+                cell(row, name_idx), email, phone=cell(row, phone_idx), notes=cell(row, notes_idx),
+                manual=True,
+            )
             imported += 1
         return imported
 
@@ -546,20 +564,69 @@ def _contact_matches(contact, prefix):
     return any(word.startswith(prefix) for word in name.replace(",", " ").split())
 
 
-def _autocomplete_rank(contact):
-    """Sort key: most-used first, recent use worth a little extra,
-    alphabetical to break ties. Negated because sort ascends."""
-    score = _as_int(contact.get("use_count"))
-    last_used = _as_int(contact.get("last_used"))
-    if last_used:
-        days = (time.time() - last_used) / 86400.0
-        if days < 7:
-            score += 3
-        elif days < 30:
-            score += 2
-        elif days < 180:
-            score += 1
-    return (-score, (contact.get("name") or contact.get("email") or "").lower())
+# A send counts for half as much after this many days, so the people
+# written to now come before the ones written to often long ago. The same
+# idea as Outlook's usage weighting and Thunderbird's planned frecency.
+SCORE_HALF_LIFE_DAYS = 30
+
+
+def _as_float(value):
+    try:
+        return max(0.0, float(value))
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _load_score(contact, entry):
+    """Fills in the fading send score of a contact read from the file. A
+    book from before the score starts from its send count, counted from the
+    last send, so nothing already learned is lost."""
+    if isinstance(entry, dict) and "score" in entry:
+        contact["score"] = _as_float(entry.get("score"))
+        contact["score_at"] = _as_int(entry.get("score_at"))
+    else:
+        contact["score"] = float(contact.get("use_count") or 0)
+        contact["score_at"] = _as_int(contact.get("last_used"))
+
+
+def _faded_score(contact, now):
+    """The send score as it stands at now: each send adds one, and halves
+    every SCORE_HALF_LIFE_DAYS days after it."""
+    score = _as_float(contact.get("score"))
+    stamp = _as_int(contact.get("score_at"))
+    if score <= 0:
+        return 0.0
+    if not stamp or now <= stamp:
+        return score
+    return score * 0.5 ** ((now - stamp) / (SCORE_HALF_LIFE_DAYS * 86400.0))
+
+
+def _suggestable(contact, grouped):
+    """Whether compose may suggest this contact: one the person sent to,
+    added or saved in the Address Book, imported, added with Add Sender, or
+    put in a group. Never one only seen on mail that arrived."""
+    if contact.get("manual") or _as_int(contact.get("use_count")) > 0:
+        return True
+    return (contact.get("email") or "").lower() in grouped
+
+
+def _match_tier(contact, prefix):
+    """0 when the typed text starts the name or the address, 1 when it
+    starts a later word of the name."""
+    name = (contact.get("name") or "").lower()
+    email = (contact.get("email") or "").lower()
+    return 0 if name.startswith(prefix) or email.startswith(prefix) else 1
+
+
+def _autocomplete_rank(contact, prefix, now):
+    """Sort key: highest faded send score first, then a match at the start
+    before one at a later word, then alphabetical. Negated because sort
+    ascends; rounded so scores equal in practice count as equal."""
+    return (
+        -round(_faded_score(contact, now), 6),
+        _match_tier(contact, prefix),
+        (contact.get("name") or contact.get("email") or "").lower(),
+    )
 
 
 def _unfold_vcard_lines(text):

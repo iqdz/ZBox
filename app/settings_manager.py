@@ -11,12 +11,28 @@ land here as they're added.
 import json
 import os
 import sys
+import spoken_feedback
 
 
 FOLDER_TYPES = ["Inbox", "Sent", "Drafts", "Trash", "Junk", "Archive"]
 
+# View > Sort By, in Thunderbird's order.
+SORT_KEYS = (
+    "date", "received", "star", "order", "priority", "from", "recipient",
+    "correspondents", "size", "subject", "read", "junk", "attachments",
+)
+# View > Columns, in the order they stand in the message list.
+LIST_COLUMNS = (
+    "status", "from", "recipient", "correspondents", "subject", "date",
+    "received", "size", "attachments", "priority", "junk",
+)
+DEFAULT_LIST_COLUMNS = ("status", "from", "subject", "date")
+
 # The only ages Tools > Cache Clean Up Configuration offers, in days.
 CACHE_AGE_CHOICES = (1, 7, 15, 30)
+
+# One-time changes to settings saved by an older ZBox (Settings.from_dict).
+SETTINGS_REVISION = 1
 
 # Interface themes, in the order Settings lists them. See theme.py.
 UI_THEMES = ("system", "light", "dark", "midnight", "warm", "soft")
@@ -41,12 +57,17 @@ class Settings:
         sort_key="date",
         sort_ascending=False,
         threads_expanded=False,
+        threaded=True,
+        list_columns=None,
+        show_list_headers=False,
         announcement_hold_ms=1800,
-        announce_actions=True,
+        announce_actions=None,
         show_message_headers=True,
         attachment_save_dir="",
         bare_key_shortcuts_enabled=True,
-        clear_cache_leaving_inbox=True,
+        clear_cache_leaving_inbox=False,
+        private_mode=False,
+        private_home="",
         draft_autosave_seconds=60,
         sounds_enabled=True,
         sound_theme="default",
@@ -223,11 +244,21 @@ class Settings:
         # it is a chore -- and because a screen reader user cannot
         # glance at a column header to see where the list currently
         # stands.
-        self.sort_key = sort_key if sort_key in ("date", "subject", "from") else "date"
+        self.sort_key = sort_key if sort_key in SORT_KEYS else "date"
         self.sort_ascending = bool(sort_ascending)
         # View > Threads > Expand All (True) / Collapse All (False).
         # A lasting state, so it is remembered like the sort order.
         self.threads_expanded = bool(threads_expanded)
+        # View > Sort By > Threaded (True) or Unthreaded (False).
+        self.threaded = bool(threaded)
+        # View > Columns: the message list's columns, always in their
+        # fixed order; the default four when nothing valid is saved.
+        chosen = set(list_columns) if isinstance(list_columns, (list, tuple)) else set()
+        self.list_columns = [c for c in LIST_COLUMNS if c in chosen] or list(DEFAULT_LIST_COLUMNS)
+        # Settings: the message list's column headers. Off by default,
+        # so a screen reader speaks each row's cells without the column
+        # names before them.
+        self.show_list_headers = bool(show_list_headers)
 
         # How long an announcement dialog (Ctrl+U and friends) stays
         # up before dismissing itself. This is a setting rather than a
@@ -242,15 +273,16 @@ class Settings:
             hold = 1800
         self.announcement_hold_ms = max(0, min(6000, hold))
 
-        # Whether an action on a message says what it did out loud
-        # (Settings > Screen reader announcements control). On by
-        # default: the status bar these actions already write to is
-        # only spoken when status-bar reporting is switched on, which
-        # is off by default in NVDA and JAWS, so without this an
-        # action and a silently failed action sound identical. Off is
-        # for anyone who finds a dialog per action more interruption
-        # than it is worth.
-        self.announce_actions = bool(announce_actions)
+        # Whether ZBox speaks its announcements: message actions, new
+        # mail, notices and the rest (spoken_feedback). True or False
+        # once chosen in Settings; None, the default, means automatic:
+        # spoken while a screen reader is running, silent otherwise, so
+        # a sighted user without one hears nothing. The status bar is
+        # written either way.
+        self.announce_actions = None if announce_actions is None else bool(announce_actions)
+        # Which one-time settings changes this object already has
+        # (from_dict); a new one always has all of them.
+        self.settings_revision = SETTINGS_REVISION
 
         # Whether an open message shows a From/To/Cc/Date/Subject
         # block above the body. On by default: without it there is no
@@ -282,9 +314,18 @@ class Settings:
 
         # Deletes a message's offline copy and cached body as soon as it
         # leaves the Inbox or the Archive, wherever it went (mail_fetch.
-        # _reconcile_inbox_cache). On by default: a stale copy is what
-        # brought deleted messages back as ghost entries.
+        # _reconcile_inbox_cache). Off by default, since clearing on
+        # every move slowed moving around the app; turned on, it stops a
+        # stale copy coming back as a ghost entry.
         self.clear_cache_leaving_inbox = bool(clear_cache_leaving_inbox)
+
+        # Private mode (private_mode.py): no copy of any mail on this
+        # computer or drive, turned on only with the master password.
+        # private_home is the fingerprint of the computer it was turned on
+        # from (dpapi_secret_store.machine_id), the one computer that stays
+        # trusted when ZBox closes.
+        self.private_mode = bool(private_mode)
+        self.private_home = str(private_home or "")
 
         # How often an open compose tab autosaves to Drafts, in
         # seconds. 0 turns autosave off (Save Draft/Ctrl+S and the
@@ -582,12 +623,18 @@ class Settings:
             "sort_key": self.sort_key,
             "sort_ascending": self.sort_ascending,
             "threads_expanded": self.threads_expanded,
+            "threaded": self.threaded,
+            "list_columns": list(self.list_columns),
+            "show_list_headers": self.show_list_headers,
             "announcement_hold_ms": self.announcement_hold_ms,
             "announce_actions": self.announce_actions,
             "show_message_headers": self.show_message_headers,
             "attachment_save_dir": self.attachment_save_dir,
             "bare_key_shortcuts_enabled": self.bare_key_shortcuts_enabled,
             "clear_cache_leaving_inbox": self.clear_cache_leaving_inbox,
+            "private_mode": self.private_mode,
+            "private_home": self.private_home,
+            "settings_revision": self.settings_revision,
             "draft_autosave_seconds": self.draft_autosave_seconds,
             "sounds_enabled": self.sounds_enabled,
             "sound_theme": self.sound_theme,
@@ -624,6 +671,23 @@ class Settings:
 
     @classmethod
     def from_dict(cls, data):
+        settings = cls._built_from_dict(data)
+        # Settings revision 1, once, for a settings file saved before
+        # it: Clear message cache on moving away from Inbox is switched
+        # off, and spoken announcements left on become automatic
+        # (spoken_feedback). Off stays off.
+        try:
+            revision = int(data.get("settings_revision") or 0)
+        except (TypeError, ValueError):
+            revision = 0
+        if revision < 1:
+            settings.clear_cache_leaving_inbox = False
+            if settings.announce_actions:
+                settings.announce_actions = None
+        return settings
+
+    @classmethod
+    def _built_from_dict(cls, data):
         return cls(
             debug_logging=data.get("debug_logging", True),
             language=data.get("language", "en"),
@@ -643,12 +707,17 @@ class Settings:
             sort_key=data.get("sort_key", "date"),
             sort_ascending=data.get("sort_ascending", False),
             threads_expanded=data.get("threads_expanded", False),
+            threaded=data.get("threaded", True),
+            list_columns=data.get("list_columns"),
+            show_list_headers=data.get("show_list_headers", False),
             announcement_hold_ms=data.get("announcement_hold_ms", 1800),
-            announce_actions=data.get("announce_actions", True),
+            announce_actions=data.get("announce_actions"),
             show_message_headers=data.get("show_message_headers", True),
             attachment_save_dir=data.get("attachment_save_dir", ""),
             bare_key_shortcuts_enabled=data.get("bare_key_shortcuts_enabled", True),
-            clear_cache_leaving_inbox=data.get("clear_cache_leaving_inbox", True),
+            clear_cache_leaving_inbox=data.get("clear_cache_leaving_inbox", False),
+            private_mode=data.get("private_mode", False),
+            private_home=data.get("private_home", ""),
             draft_autosave_seconds=data.get("draft_autosave_seconds", 60),
             sounds_enabled=data.get("sounds_enabled", True),
             sound_theme=data.get("sound_theme", "default"),
@@ -690,6 +759,8 @@ class SettingsManager:
     def __init__(self, paths):
         self.paths = paths
         self.settings = self.load()
+        # These settings decide whether ZBox speaks (spoken_feedback).
+        spoken_feedback.use(self)
 
     def _load_shipped_defaults(self):
         """Settings for a checkout that has no settings.json yet,

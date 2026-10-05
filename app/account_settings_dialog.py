@@ -19,13 +19,14 @@ from email.utils import formataddr
 import wx
 
 import lang
+import notice_toast
 
 from accessible import fit_dialog, wrap_text
-from account_manager import _normalize_identities, check_smtp_login
+from account_manager import _normalize_identities, _normalize_openpgp, check_smtp_login
 import ms_oauth
 from ms_signin_panel import MicrosoftSignInPanel
 from provider_presets import MICROSOFT_SERVERS
-from announce import speak
+from spoken_feedback import speak
 from message_build import invalid_addresses
 from signature_dialog import SignatureEditDialog
 
@@ -271,6 +272,15 @@ class _IdentityEditDialog(wx.Dialog):
             self.test_smtp_button,
         ]))
 
+        # 7. OpenPGP (stage 3): this identity's End-to-End Encryption,
+        # held here until OK like every other field.
+        self.openpgp = dict(entry.get("openpgp") or {})
+        self.e2e_button = wx.Button(
+            self, label=lang.control_label("acct_e2e_button", "End-to-End Encr&yption..."),
+        )
+        self.e2e_button.Bind(wx.EVT_BUTTON, self._on_e2e)
+        sizer.Add(self.e2e_button, 0, wx.ALL, 10)
+
         button_sizer = self.CreateButtonSizer(wx.OK | wx.CANCEL)
         sizer.Add(button_sizer, 0, wx.ALIGN_RIGHT | wx.ALL, 10)
 
@@ -307,10 +317,10 @@ class _IdentityEditDialog(wx.Dialog):
             self.test_smtp_button.Disable()
 
     def _refuse(self, key, default, field, **values):
-        wx.MessageBox(
+        notice_toast.notify(
+            self,
             lang.t("dialogs", key, default=default, **values),
             lang.t("dialogs", "title_identity", default="Identity"),
-            wx.OK | wx.ICON_INFORMATION,
         )
         field.SetFocus()
 
@@ -328,6 +338,13 @@ class _IdentityEditDialog(wx.Dialog):
                 self._plain_synced = self.signature_field.GetValue()
         finally:
             dialog.Destroy()
+
+    def _on_e2e(self, event):
+        import openpgp_compose
+
+        result = openpgp_compose.edit_settings(self, self.email_field.GetValue().strip(), self.openpgp)
+        if result is not None:
+            self.openpgp = result
 
     def _stored_password(self):
         if not (self._identity_id and self._account is not None and self._secret_lookup):
@@ -385,12 +402,13 @@ class _IdentityEditDialog(wx.Dialog):
         self.test_smtp_button.Enable(self.smtp_box.GetValue())
         title = lang.t("dialogs", "title_identity", default="Identity")
         if error is None:
-            wx.MessageBox(
+            notice_toast.notify(
+                self,
                 lang.t(
                     "dialogs", "identity_smtp_ok",
                     default="The outgoing server accepted the sign-in.",
                 ),
-                title, wx.OK | wx.ICON_INFORMATION,
+                title,
             )
         else:
             wx.MessageBox(
@@ -479,6 +497,7 @@ class _IdentityEditDialog(wx.Dialog):
             "smtp_auth": self._smtp_auth,
             "smtp_login": self.smtp_login_field.GetValue().strip(),
             "identity_id": self._identity_id,
+            "openpgp": dict(self.openpgp),
         }
 
     def password(self):
@@ -589,6 +608,13 @@ class AccountSettingsDialog(wx.Dialog):
         self.identity_field.SetName(
             lang.t("dialogs", "form_email_address", default="Email address")
         )
+        # OpenPGP (stage 3): this address's End-to-End Encryption, right
+        # after the address it is for, held here until Save.
+        self.openpgp = dict(getattr(account, "openpgp", None) or {})
+        self.e2e_button = wx.Button(
+            self, label=lang.control_label("acct_e2e_button", "End-to-End Encr&yption..."),
+        )
+        self.e2e_button.Bind(wx.EVT_BUTTON, self._on_e2e)
 
         note = wx.StaticText(
             self,
@@ -981,6 +1007,7 @@ class AccountSettingsDialog(wx.Dialog):
 
         sizer.Add(form, 0, wx.EXPAND | wx.ALL, 10)
         sizer.Add(note, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
+        sizer.Add(self.e2e_button, 0, wx.LEFT | wx.RIGHT | wx.BOTTOM, 10)
         sizer.Add(identities_label, 0, wx.LEFT | wx.RIGHT, 10)
         sizer.Add(self.identities_list, 0, wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, 4)
         sizer.Add(identities_button_row, 0, wx.LEFT | wx.RIGHT | wx.TOP, 10)
@@ -1137,6 +1164,7 @@ class AccountSettingsDialog(wx.Dialog):
             tuple(sorted(self.identity_passwords.items())),
             self.signature_field.GetValue(),
             self.signature_html,
+            tuple(sorted(self.openpgp.items())),
             self.junk_folder_field.GetValue(),
             self.disable_account_checkbox.GetValue(),
             self.auto_check_checkbox.GetValue(),
@@ -1200,6 +1228,14 @@ class AccountSettingsDialog(wx.Dialog):
                 self._plain_synced = self.signature_field.GetValue()
         finally:
             dialog.Destroy()
+
+    def _on_e2e(self, event):
+        import openpgp_compose
+
+        address = self.identity_field.GetValue().strip() or self.login_field.GetValue().strip()
+        result = openpgp_compose.edit_settings(self, address, self.openpgp)
+        if result is not None:
+            self.openpgp = result
 
     def _identity_dialog(self, entry):
         identity_id = (entry or {}).get("identity_id", "")
@@ -1265,7 +1301,7 @@ class AccountSettingsDialog(wx.Dialog):
         "smtp_host", "smtp_port", "smtp_encryption",
         "signature", "signature_html", "junk_folder", "notifications_muted",
         "extra_identities", "enabled", "auto_check",
-        "identity_passwords", "identity_secret_removals",
+        "identity_passwords", "identity_secret_removals", "openpgp",
     )
 
     def wants_default(self):
@@ -1322,6 +1358,7 @@ class AccountSettingsDialog(wx.Dialog):
         self.account.junk_folder = "" if junk_value in ("", AUTOMATIC_JUNK_LABEL) else junk_value
         self.account.notifications_muted = self.mute_account_checkbox.GetValue()
         self.account.extra_identities = _normalize_identities(self.identities)
+        self.account.openpgp = _normalize_openpgp(self.openpgp)
         # Typed identity passwords, and the stored ones of identities
         # that no longer have their own outgoing server. update_account
         # stores or deletes them and empties both.
