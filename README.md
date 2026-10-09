@@ -69,6 +69,14 @@ Also new in testing beta 26.10.02:
    show up, and focus stays on the top message until you move it.
 5. A privacy policy, in [PRIVACY.md](PRIVACY.md).
 
+Also new in testing beta 26.10.09:
+
+1. 22 more interface languages, 50 in all. See Interface languages
+   below.
+2. Moving through the From list in a new message, reply or forward no
+   longer speaks the signature, Cc and Bcc, or encryption notices. Those
+   settings still follow the account or identity you choose.
+
 ## Features
 
 - Built for screen readers first, tested with NVDA and JAWS.
@@ -98,7 +106,35 @@ Also new in testing beta 26.10.02:
 - Updates found and installed by ZBox itself, put back automatically
   if a new version fails to start.
 - Six interface themes, and sound themes you can add your own to.
-- 28 interface languages.
+- Watch Thread and Ignore Thread, with filters for watched and ignored
+  threads.
+- Move or copy messages by typing part of a folder name. Mute, pause or
+  disable an account.
+- Subscribe to server folders, mark a folder read, empty Trash and Junk,
+  or let ZBox clear old Trash and Junk after the number of days you
+  choose.
+- Save a message as a file, open saved .eml messages, save every
+  attachment at once to a folder you choose, and view or copy the full
+  message headers.
+- Message headers above the message, a message font size and reading
+  font of your own, and the sender announced with Ctrl+U.
+- Preview a message as it will be sent, a word count, and spell check
+  from the keyboard.
+- Per identity: its own signature, Reply-To address, Cc and Bcc, Drafts
+  and Sent folders and outgoing server.
+- OpenPGP key discovery from a mail provider and from keys.openpgp.org,
+  publishing your key, Autocrypt headers, and your public key attached
+  on request.
+- Export and import your accounts and settings. Passwords are never
+  exported.
+- Minimize or close to the system tray, start with Windows, stay
+  maximized, and a desktop shortcut.
+- Tuning for HTML mail with a screen reader: how long the reader stays
+  quiet when a message opens, and how long announcements stay.
+- Settings for how long cached messages are kept, and for updates: ask
+  first, or download and install quietly.
+- A Keyboard Shortcuts page in Help.
+- 50 interface languages, listed under Interface languages below.
 
 ## Getting it
 
@@ -226,25 +262,33 @@ machines already have. If HTML mail does not render, Settings has a
 legacy engine option and a way to use a bundled runtime instead.
 Text view (Ctrl+B toggles) always works regardless.
 
-## Languages
+## Interface languages
 
-ZBox's interface is available in English and 27 translations: Arabic
-(العربية), Bengali (বাংলা), Chinese Simplified (简体中文), Chinese
-Traditional (繁體中文), Dutch (Nederlands), French (Français), German
-(Deutsch), Hindi (हिन्दी), Indonesian (Bahasa Indonesia), Italian
-(Italiano), Japanese (日本語), Korean (한국어), Malay (Bahasa Melayu),
-Marathi (मराठी), Persian (فارسی), Polish (Polski), Portuguese Brazil
+ZBox's interface is available in English and 49 translations: Afrikaans,
+Amharic (አማርኛ), Arabic (العربية), Azerbaijani (Azərbaycanca), Bengali
+(বাংলা), Burmese (မြန်မာ), Chinese Simplified (简体中文), Chinese
+Traditional (繁體中文), Czech (Čeština), Danish (Dansk), Dutch (Nederlands),
+French (Français), German (Deutsch), Greek (Ελληνικά), Gujarati
+(ગુજરાતી), Hausa, Hindi (हिन्दी), Hungarian (Magyar), Indonesian (Bahasa
+Indonesia), Italian (Italiano), Japanese (日本語), Kannada (ಕನ್ನಡ), Korean
+(한국어), Malay (Bahasa Melayu), Malayalam (മലയാളം), Marathi (मराठी),
+Norwegian Bokmal (Norsk bokmål), Norwegian Nynorsk (Norsk nynorsk),
+Pashto (پښتو), Persian (فارسی), Polish (Polski), Portuguese Brazil
 (Português (Brasil)), Portuguese Portugal (Português (Portugal)),
-Romanian (Română), Russian (Русский), Spanish (Español), Thai (ไทย),
-Turkish (Türkçe), Ukrainian (Українська), Urdu (اردو), Uzbek
-(O‘zbekcha) and Vietnamese (Tiếng Việt). Arabic, Persian and Urdu are
-laid out right to left. Choose one in Settings, Interface language.
+Romanian (Română), Russian (Русский), Somali (Soomaali), Spanish
+(Español), Swahili (Kiswahili), Swedish (Svenska), Tamil (தமிழ்), Telugu
+(తెలుగు), Thai (ไทย), Turkish (Türkçe), Ukrainian (Українська), Urdu
+(اردو), Uzbek (O‘zbekcha), Vietnamese (Tiếng Việt), Yoruba (Yorùbá) and
+Zulu (isiZulu).
+Arabic, Pashto, Persian and Urdu are laid out right to left. Choose one
+in Settings, General, Interface language.
 
 The translations were made mainly with generative translation, not by
-native translators, so they will have mistakes. If you speak one of
-these languages, corrections are very welcome by email: say which
-language, where the text appears, what it says now, and what it
-should say.
+native translators, so they will have mistakes. Mail words such as
+Inbox, Junk and Trash follow Thunderbird's own wording where it has one.
+If you speak one of these languages, corrections are very welcome by
+email: say which language, where the text appears, what it says now, and
+what it should say.
 
 ## Privacy
 

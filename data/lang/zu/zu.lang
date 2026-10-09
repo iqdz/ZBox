@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = isiZulu
+code = zu
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Umlayezo uthunyelwe.
+draft_saved = Idrafti ilondolozwe.
+signature_inserted = Isiginesha ifakiwe.
+signature_none = Le akhawunti ayinayo isiginesha.
+signature_saved = Isiginesha ilondolozwe.
+signature_not_saved = Isiginesha ayilondolozwanga.
+pasted_as_quotation = Kunamathiselwe njengesicaphuna.
+clipboard_empty = Akukho lutho ku-clipboard.
+word_count = Amagama angu-{words}, onkamisa abangu-{characters}.
+report_copied = Umbiko ukopishiwe.
+compose_tab_needed = Leyo miyalo idinga ithebhu yokubhala.
+attach_file_instead = Amafayela alahliwe awafakwa kumbhalo womlayezo. Sebenzisa u-Namathisela ifayela ukuthumela elilodwa.
+
+# Formatting in the message body
+formatting_here = Ukufomethwa lapha: {formatting}.
+no_formatting_here = Akukho kufomethwa lapha, umbhalo ovamile.
+
+# Spelling
+nothing_to_check = Akukho lutho lokuhlola.
+no_misspellings = Awekho amaphutha okupela.
+spelling_dictionary_unavailable = Isichazamazwi sokupela asitholakali.
+next_misspelling_first = Sebenzisa iphutha lokupela elilandelayo kuqala.
+word_added = I-{word} ifakwe esichazamazwini.
+word_not_added = I-{word} ayikwazanga ukufakwa esichazamazwini.
+corrections_applied_one = Ukulungisa okungu-1 kusetshenzisiwe.
+corrections_applied_many = Ukulungisa okungu-{count} kusetshenzisiwe.
+corrections_applied_partly = {applied} kokulungisa okungu-{total} kusetshenzisiwe. Okunye kwenqatshiwe; bheka irekhodi.
+occurrences_replaced_one = Isenzeko esingu-1 sishintshiwe.
+occurrences_replaced_many = Izenzeko ezingu-{count} zishintshiwe.
+
+# Reading mail
+message_did_not_open = Umlayezo awuvulekanga. Iseva ayiphendulanga. Cindezela u-Enter ukuze uzame futhi.
+thread_open = {messages} kule ntambo. Cindezela futhi ukuze uvale.
+no_thread_selected = Ayikho intambo ekhethiwe.
+thread_watched = Intambo iyabhekwa.
+thread_not_watched = Intambo ayisabhekwa.
+thread_ignored = Intambo iyaziwa.
+thread_not_ignored = Intambo ayisaziwa.
+none_found = Akukho okutholiwe.
+refreshing_this_folder = Kuvuseleleka le ifolda.
+refreshing_all_accounts = Kuvuseleleka wonke ama-akhawunti.
+message_view_html = Umbono womlayezo: i-HTML (ekhonjisiwe).
+message_view_text = Umbono womlayezo: Umbhalo.
+html_view_still_loading = Umlayezo usalayisha. U-Escape uyawuvala.
+message_still_opening = Kuvulwa umlayezo. Iseva ihamba kancane.
+remote_content_blocked = Okuqukethwe okukude kuvinjiwe.
+remote_content_unblocked = Okuqukethwe okukude akusavinjiwe.
+remote_content_already_showing = Okuqukethwe okukude sekuvele kuyabonakala kulo mlayezo.
+archived = Kugcinwe.
+copied_to_folder = Kukopishelwe ku-{to_folder}.
+deleted_one = Umlayezo wesuswe unomphela.
+deleted_many = Imilayezo engu-{count} isuswe unomphela.
+trashed_one = Umlayezo uthuthelwe kudoti.
+trashed_many = Imilayezo engu-{count} ithuthelwe kudoti.
+
+# Accounts and new mail
+no_account_yet = Akukabikho i-akhawunti ongayigxumela kuyo.
+inbox_landed = Okungenayo kuka-{name}.
+account_enabled = I-{name} inikwe amandla.
+auto_check_paused = Ukuhlola okuzenzakalelayo kumiswe okwesikhashana kwe-{account}.
+auto_check_resumed = Ukuhlola okuzenzakalelayo kuvuliwe kwe-{account}.
+account_disabled = I-{name} ikhutshaziwe.
+new_mail_one = Umlayezo omusha ongu-1 we-{name}.
+new_mail_many = Imilayezo emisha engu-{count} ye-{name}.
+refresh_all_done_one = I-akhawunti engu-1 ivuselelwe.
+refresh_all_done_many = Ama-akhawunti angu-{count} avuselelwe.
+refresh_all_done_failures = Ama-akhawunti angu-{count} avuselelwe, angu-{failed} awakwazanga ukuvuselelwa.
+refresh_all_done_failures_one = I-akhawunti engu-{count} ivuselelwe, angu-{failed} awakwazanga ukuvuselelwa.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Ikheli likopishiwe.
+sender_no_address = {sender}. Alikho ikheli lokukopisha.
+clipboard_not_opened = {sender}. I-clipboard ayikwazanga ukuvulwa.
+
+# The signature editor
+signature_page_formatted = Ifomethiwe. Yilokhu okuzolondolozwa.
+signature_page_html = Umthombo we-HTML. Yilokhu okuzolondolozwa.
+signature_page_html_still_wins = Ifomethiwe. Umthombo we-HTML usayiwona ozolondolozwa.
+
+# Background work
+phishing_list_updating = Uhlu lwe-phishing luyabuyekezwa ngemuva.
+cache_cleared = Amafayela e-cache angu-{files} asusiwe, {size} MB.
+hotkeys_diagnostic_on = Ukuhlolwa kwamakhiye esinqamuleli kuvuliwe, kumakiwe
+hotkeys_diagnostic_off = Ukuhlolwa kwamakhiye esinqamuleli kuvaliwe, akumakiwe
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Gcina
+action_delete = Susa
+action_delete_permanently = Susa unomphela
+action_mark_as_junk = Maka njengokungafuneki
+action_mark_as_not_junk = Maka njengokufunekayo
+action_move_to = Hambisa ku-
+action_copy_to = Kopisha ku-
+action_mark_message = Maka umlayezo
+action_undo = Hlehlisa
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Kuhlehliswe: {action}.
+undo_done_many = Kuhlehliswe: {action} kwemilayezo engu-{count}.
+junk_marked_one = Kumakiwe njengokungafuneki.
+junk_marked_many = Imilayezo engu-{count} imakiwe njengokungafuneki.
+junk_no_new_sender = Akukho muthumeli omusha ovinjiwe: usevele uvinjiwe, uhlu lwamameyili, noma elinye lamakheli akho.
+not_junk_marked_one = Kumakiwe njengokufunekayo.
+not_junk_marked_many = Imilayezo engu-{count} imakiwe njengokufunekayo.
+moved_to_one = Kuhanjiswe ku-{to_folder}.
+moved_to_many = Imilayezo engu-{count} ihanjiswe ku-{to_folder}.
+copied_to_many = Imilayezo engu-{count} ikopishelwe ku-{to_folder}.
+marked_read = Kumakiwe njengokufundiwe.
+marked_unread = Kumakiwe njengokungafundiwe.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Kukhanselwe ngemuva kwe-{completed} kwangu-{total}. {succeeded} kuphumelele, {failed} kwehlulekile.
+bulk_failed_one = {done} {failed} kumlayezo ongu-1 kwehlulekile.
+bulk_failed_many = {done} {failed} kwemilayezo engu-{total} kwehlulekile.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Okugqamile
+format_word_italic = Okuthambamele
+format_word_strike = Okudwetshiwe
+format_word_href = Isixhumanisi
+format_word_bullet = Uhlu olunamachashazi
+format_word_number = Uhlu olunamanani
+format_word_quote = Isicaphuna
+format_word_code = Ikhodi
+format_word_heading1 = Isihloko
+format_applied = {formatting} kusetshenzisiwe.
+format_inserted = {formatting} kufakiwe.
+format_not_available = {formatting} akutholakali emzimbeni womlayezo ovamile.
+format_on = {formatting} kuvuliwe
+format_off = {formatting} kuvaliwe
+link_applied = Isixhumanisi sisetshenzisiwe.
+link_applied_to_selection = Isixhumanisi sisetshenzisiwe kokukhethiwe.
+plain_body_formatting = Umzimba womlayezo ovamile ukhombisa ukufomethwa kwawo njengamathegi.
+
+# Reaching either end of a thread
+thread_edge_first = Umlayezo wokuqala kule ntambo. Cindezela futhi ukuze uvale.
+thread_edge_last = Umlayezo wokugcina kule ntambo. Cindezela futhi ukuze uvale.
+jump_unified_inbox = Okungenayo okuhlanganisiwe.
+remote_none = Akukho okuqukethwe okukude kulo mlayezo.
+sender_none = Lo mlayezo awunaye umthumeli.
+sender_name_no_address = %s, akukho kheli
+signature_not_switched = Isiginesha ayishintshiwe. Cindezela Ctrl+Shift+S ukufaka isiginesha yale akhawunti.
+signature_removed_no_signature = Isiginesha isusiwe. Le akhawunti ayinayo.
+signature_switched = Isiginesha ishintshelwe kweyale akhawunti.
+spell_not_replaced = Igama alikwazanga ukushintshwa.
+spell_replaced_with = Kushintshwe nge-{word}.
+folder_marked_read = Imilayezo engu-{count} imakiwe njengefundiwe.
+folder_no_unread = Ayikho imilayezo engafundiwe.
+threads_all_collapsed = Zonke izintambo zigoqiwe.
+threads_all_expanded = Zonke izintambo ziviwe.
+upd_percent = amaphesenti angu-{percent}
+upd_download_done = Ukudawuniloda kuphelile. Kulungiselelwa isibuyekezo...
+upd_updated_to = I-ZBox ibuyekezwe yaba yi-{version}.
+header_copied = Kukopishiwe.
+headers_copied = Zonke izihloko zikopishiwe.
+identity_copies_updated = I-Cc ne-Bcc zibuyekeziwe kulobu buwena.
+signature_switched_identity = Isiginesha ishintshelwe kweyalobu buwena.
+signature_removed_identity = Isiginesha isusiwe. Lobu buwena abunayo.
+signature_not_switched_identity = Isiginesha ayishintshiwe. Cindezela Ctrl+Shift+S ukufaka isiginesha yalobu buwena.
+signature_none_identity = Lobu buwena abunaso isiginesha.
+move_keys_no_selection = Khetha umlayezo kuqala.
+move_keys_no_folders = Azikabikho amafolda okukhetha kuwo. Zama futhi maduze.
+block_sender_done_one = U-{sender} uvinjiwe. Imilayezo yakhe emisha izoya kudoti.
+block_sender_done_many = Abathumeli abangu-{count} bavinjiwe. Imilayezo yabo emisha izoya kudoti.
+block_sender_already = U-{sender} usevele uvinjiwe.
+block_sender_own = Akuvinjiwe: lelo yikheli lakho.
+block_sender_list_unknown = Akuvinjiwe: lo mlayezo uvele ohlwini lwamameyili futhi awusho ukuthi ubuthunywe ngubani. Ukuvimba ikheli loluhlu kungavimba wonke umuntu okulo.
+block_sender_moved = Umthumeli uvinjiwe. Imilayezo engu-{count} ithuthelwe kudoti.
+block_senders_moved = Abathumeli abangu-{senders} bavinjiwe. Imilayezo engu-{count} ithuthelwe kudoti.
+unblock_sender_moved = Umthumeli akasavinjiwe. Imilayezo engu-{count} ithuthelwe kokungenayo.
+unblock_senders_moved = Abathumeli abangu-{senders} abasavinjiwe. Imilayezo engu-{count} ithuthelwe kokungenayo.
+unblock_sender_done = U-{sender} akasavinjiwe.
+unblock_sender_not_blocked = U-{sender} akavinjiwe.
+pgp_cm_on = {name} kuvuliwe.
+pgp_cm_off = {name} kuvaliwe.
+pgp_cm_identity = Amasethingi okubethela ashintshelwe kweyalobu buwena.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Thayipha okuthile ngenhla bese ucindezela u-Enter noma ukhethe u-Sesha.
+search_no_account = Engeza i-akhawunti kuqala.
+search_no_term = Thayipha amagama okuwasesha, noma ukhethe usuku noma ibhokisi lokumaka.
+search_running = Iyasesha...
+search_none = Akukho okufanayo ne-"{term}".
+search_found_one = Okufanayo okungu-1 ne-"{term}".
+search_found_many = Okufanayo okungu-{count} ne-"{term}".
+search_bad_date = Thayipha usuku njengonyaka-inyanga-usuku, isibonelo 2025-12-31, nesikhathi ongasikhetha njenge-14:30.
+search_bad_range = Ukuphela kobubanzi bosuku kungaphambi kokuqala kwabo.
+search_none_any = Ayikho imilayezo efanayo.
+search_found_one_any = Umlayezo oyi-1 utholakele.
+search_found_many_any = Imilayezo engu-{count} itholakele.
+search_failed = Ukusesha kwehlulekile.
+
+# The related messages tab
+related_running = Iyasesha...
+related_none = Ayikho imilayezo ehlobene etholakele.
+related_found_one = Umlayezo oyi-1 ohlobene utholakele.
+related_found_many = Imilayezo engu-{count} ehlobene itholakele.
+related_failed = Ayikwazanga ukusesha imilayezo ehlobene.
+
+# Writing and sending
+sending_via = Kuthunyelwa nge-{sender}...
+send_failed = Ukuthumela kwehlulekile. Bheka amarekhodi ukuthola imininingwane.
+draft_autosaved = Idrafti ilondolozwe ngokuzenzakalelayo.
+draft_autosave_failed = Ukulondoloza idrafti ngokuzenzakalelayo kwehlulekile. Bheka amarekhodi ukuthola imininingwane.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Okuqukethwe okukude manje kuzolayisha emilayezweni evela ku-{sender}.
+downloading_attachment = Kudawunilodwa i-{filename}...
+downloading_attachments_one = Kudawunilodwa okunamathiselwe okungu-1...
+downloading_attachments_many = Kudawunilodwa okunamathiselwe okungu-{count}...
+saved_to = Kulondolozwe ku-{folder}
+attachment_download_failed = Ukudawuniloda okunamathiselwe kwehlulekile.
+
+# Getting mail onto the screen
+loading_folder = Kulayishwa i-{folder} ye-{account}...
+messages_in_folder = Imilayezo engu-{count} ku-{folder}.
+messages_in_folder_cached = Imilayezo engu-{count} ku-{folder} (ikhophi yokugcina evumelaniswe, iyabuyekezwa...)
+no_offline_copy = Akukabikho ikhophi ye-offline ye-{folder}.
+refresh_failed_cached = Ayikwazanga ukuvuselela i-{folder}: kubonisa ikhophi yokugcina evumelaniswe.
+no_such_folder = Ayikho ifolda ye-{folder} yale akhawunti.
+load_failed = Ukulayisha imilayezo kwehlulekile. Bheka amarekhodi ukuthola imininingwane.
+no_more_to_load = Ayisekho imilayezo ongayilayisha kule folda.
+loading_more = Kulayishwa imilayezo eminye ku-{folder}...
+more_loaded = Imilayezo eminye engu-{count} ilayishiwe.
+no_more_messages = Ayisekho imilayezo kule folda.
+load_more_failed = Ayikwazanga ukulayisha imilayezo eminye: {error}
+loading_unified = Kulayishwa i-{folder} ehlanganisiwe...
+messages_in_unified = Imilayezo engu-{count} kuwo wonke ama-akhawunti ku-{folder} ehlanganisiwe.
+messages_in_unified_cached = Imilayezo engu-{count} ku-{folder} ehlanganisiwe (ikhophi yokugcina evumelaniswe, iyabuyekezwa...)
+auto_purge_done = Ukuhlanza okuzenzakalelayo kususe imilayezo endala engu-{count} kudoti/Okungafuneki.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Kulungile.
+opening_message = Kuvulwa umlayezo...
+opening_message_already = Kuvulwa umlayezo... (usevele ulayisha)
+could_not_open_message = Ayikwazanga ukuvula umlayezo.
+could_not_open_that_message = Ayikwazanga ukuvula lowo mlayezo.
+could_not_load_message = Ayikwazanga ukulayisha lo mlayezo.
+message_still_loading = Lowo mlayezo usalayisha.
+folder_still_loading = Le folda isalayisha -- zama futhi maduze.
+not_in_thread = Lo mlayezo awuyingxenye yentambo.
+no_longer_in_thread = Lo mlayezo awusayona ingxenye yentambo.
+thread_position = Umlayezo {position} kwangu-{total} kule ntambo.
+thread_finished_one = Le ntambo iphelile (umlayezo oyi-1).
+thread_finished_many = Le ntambo iphelile (imilayezo engu-{count}).
+select_message_first = Khetha umlayezo kuqala.
+conversation_failed = Ayikwazanga ukuvula lo mbhulo.
+select_message_for_related = Khetha umlayezo kuqala ukubona imilayezo ehlobene.
+looking_for_related = Kufunwa imilayezo ehlobene...
+no_threading_headers = Lo mlayezo awunayo i-Message-ID noma izihloko zentambo zokusesha.
+reply_one_at_a_time = Ukuphendula kusebenza kumlayezo owodwa ngesikhathi. Sicela ukhethe umlayezo owodwa kuphela.
+select_message_to_reply = Khetha umlayezo kuqala ozowuphendula.
+preparing_reply = Kulungiselelwa impendulo...
+reply_load_failed = Ayikwazanga ukulayisha umlayezo wokuqala wokuphendula.
+select_message_to_forward = Khetha umlayezo kuqala ozowudlulisela.
+preparing_forward = Kulungiselelwa umlayezo wokudlulisela...
+forward_load_failed = Ayikwazanga ukulayisha umlayezo wokudlulisela.
+compose_tab_needed_hint = Leyo miyalo idinga ithebhu yokubhala. Cindezela Ctrl+N ukubhala umlayezo.
+open_message_first_view = Vula umlayezo kuqala, bese ucindezela Ctrl+B ukushintsha umbono wawo.
+open_message_first_remote = Vula umlayezo kuqala, bese ucindezela Ctrl+Shift+I ukulayisha okuqukethwe kwawo okukude.
+
+# Acting on messages
+copying_message = Kukopishwa umlayezo...
+copy_failed = Ukukopisha kwehlulekile.
+delete_failed = Ukusula kwehlulekile.
+already_in_archive = Usevele ku-Ugcino.
+archiving = Iyagcina...
+archive_failed = Ukugcina kwehlulekile.
+action_failed = I-{action} yehlulekile.
+nothing_to_undo = Akukho lutho lokuhlehlisa.
+private_mode_on = Imodi yangasese ivuliwe. Amakhophi e-ZBox eposi lakho kuleli khompyutha asusiwe.
+private_mode_off = Imodi yangasese ivaliwe. I-ZBox igcina futhi amakhophi eposi lakho.
+undo_failed = Ayikwazanga ukuhlehlisa i-{action}.
+
+# Views and folders
+folder_pane_all = Iphaneli yamafolda: Wonke amafolda.
+folder_pane_unified = Iphaneli yamafolda: Amafolda ahlanganisiwe.
+sorted_ascending = Kuhleliwe ngokwe-{field}, kunyuka.
+sorted_descending = Kuhleliwe ngokwe-{field}, kwehla.
+unified_folders_updated = Amafolda ahlanganisiwe abuyekeziwe.
+zoom_reset = Usayizi wohlamvu lomlayezo ubuyiselwe kokuzenzakalelayo.
+folder_creating = Kudalwa ifolda ethi "{folder}"...
+folder_created = Ifolda ethi "{folder}" idaliwe.
+folder_create_failed = Ayikwazanga ukudala ifolda.
+folder_renaming = Kuqanjwa kabusha i-"{folder}" kuthiwe "{new_name}"...
+folder_renamed = Ifolda iqanjwe kabusha yathi "{new_name}".
+folder_rename_failed = Ayikwazanga ukuqamba kabusha ifolda.
+folder_deleting = Kusulwa ifolda ethi "{folder}"...
+folder_deleted = Ifolda isusiwe.
+folder_delete_failed = Ayikwazanga ukusula ifolda.
+folder_subscribing = Kubhaliswa ku-"{folder}"...
+folder_unsubscribing = Kukhishwa ku-"{folder}"...
+folder_subscribed = Kubhalisiwe.
+folder_unsubscribed = Kukhishiwe.
+folder_subscribe_failed = Ayikwazanga ukubhalisa ifolda.
+folder_unsubscribe_failed = Ayikwazanga ukukhipha ifolda.
+
+# Accounts
+account_not_added = I-akhawunti ayengezwanga.
+account_added = I-akhawunti yengeziwe: {account}
+account_settings_not_saved = Amasethingi e-akhawunti awalondolozwanga.
+account_updated = I-akhawunti ibuyekeziwe: {account}
+account_not_removed = I-akhawunti ayisusiwe.
+account_removed = I-akhawunti isusiwe.
+account_removed_with_files = I-akhawunti isusiwe. Amafayela asendaweni angu-{count} asusiwe.
+default_account_failed = Ayikwazanga ukusetha i-akhawunti ezenzakalelayo.
+default_account_set = I-{account} manje iyi-akhawunti ezenzakalelayo.
+auto_check_not_saved = Isethingi sokuhlola okuzenzakalelayo alilondolozwanga.
+mute_not_saved = Isethingi sokuthulisa alilondolozwanga.
+account_muted = I-{account} ithuliswe.
+account_unmuted = I-{account} ayisathuliswe.
+export_done = Ama-akhawunti angu-{count} namasethingi athunyelwe ku-{path}.
+import_done = Ama-akhawunti angu-{count} angeniswe avela ku-{path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Izihlungi azilondolozwanga.
+filters_saved = Izihlungi zilondolozwe ye-{account}.
+filters_checking = Kuhlolwa i-{folder} ngezihlungi zakho...
+filters_none_matched = Sebenzisa manje: akukho mlayezo ku-{folder} ofane nomthetho ovuliwe.
+filters_run_failed = Ayikwazanga ukusebenzisa izihlungi.
+filters_moving = Kuhanjiswa imilayezo ehlungiwe engu-{count}...
+filters_move_failures = Izihlungi: imilayezo engu-{count} ayikwazanga ukuhanjiswa.
+filters_moved = Izihlungi zihambise imilayezo engu-{count} ukusuka ku-{folder}.
+filters_move_failed = Ayikwazanga ukuhambisa imilayezo ehlungiwe.
+cache_not_cleared = I-cache ayisuswanga.
+auto_cache_cleanup = Ukuhlanza kwe-cache okuzenzakalelayo: imilayezo endala kune-{age}.
+phishing_update_failed = Ayikwazanga ukubuyekeza uhlu lwe-phishing: {error}
+blocklist_update_failed = Ayikwazanga ukubuyekeza uhlu lokuvimba: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Vula umlayezo kuqala, bese usebenzisa u-Londoloza njenge.
+saving_message = Kulondolozwa umlayezo...
+save_file_failed = Ayikwazanga ukulondoloza ifayela.
+save_fetch_failed = Ayikwazanga ukulanda umlayezo ozolondolozwa.
+open_message_first_print = Vula umlayezo kuqala, bese usebenzisa u-Phrinta.
+open_message_first_preview = Vula umlayezo kuqala, bese usebenzisa u-Ukubuka kuqala kokuphrinta.
+refreshing_accounts = Kuvuseleleka ama-akhawunti angu-{count}...
+emptying_trash = Kuze kungabi nalutho udoti ye-{account}...
+trash_already_empty = Udoti ubusevele ungenalutho.
+trash_emptied = Udoti ungenalutho: imilayezo engu-{count} isusiwe.
+empty_trash_failed = Ayikwazanga ukungenisa udoti.
+emptying_junk = Kuze kungabi nalutho Okungafuneki ye-{account}...
+junk_already_empty = Okungafuneki bekusevele kungenalutho.
+junk_emptied = Okungafuneki kungenalutho: imilayezo engu-{count} isusiwe.
+junk_emptied_prefix = Okungafuneki kungenalutho:
+junk_part_purged = {count} isusiwe
+junk_part_in_trash = {count} ithuthelwe kudoti kodwa ayiqinisekisiwe ukuthi isusiwe, bheka udoti
+junk_part_not_moved = {count} ayithuthelwanga kudoti, isekuNgafuneki
+empty_junk_failed = Ayikwazanga ukungenisa Okungafuneki.
+back_online = Kubuyele ku-inthanethi.
+offline_sync_running = Kuvumelaniswa i-{account} ukusetshenziswa ngaphandle kwe-inthanethi...
+offline_sync_failed = Ukuvumelanisa ngaphandle kwe-inthanethi kwehlulekile: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Khetha noma vula umlayezo kuqala.
+select_or_open_message_ctrl_u = Khetha noma vula umlayezo kuqala, bese ucindezela Ctrl+U.
+no_sender_address = Lo mlayezo awunalo ikheli lomthumeli lokungeza.
+contact_added = I-{contact} yengezwe encwadini yakho yamakheli.
+contact_already_there = I-{contact} isivele ikuyo incwadi yakho yamakheli.
+privacy_saved = Amasethingi obumfihlo alondolozwe. Vula umlayezo futhi ukuze asebenze.
+message_font_size = Usayizi wohlamvu lomlayezo: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Kusulwa umlayezo unomphela
+deleting_many = Kusulwa imilayezo engu-{count} unomphela
+trashing_one = Kuthuthelwa umlayezo kudoti
+trashing_many = Kuthuthelwa imilayezo engu-{count} kudoti
+undo_partly_restored = I-{action} ihlehlisiwe, kodwa engu-{count} ayikwazanga ukubuyiselwa -- kungenzeka ihanjisiwe, yasuswa noma yaphelelwa isikhathi.
+moves_report = {action}: imilayezo engu-{moved} kwangu-{total} ihanjisiwe.
+moves_report_failed = Ayihanjiswanga, isefolda yokuqala: {count}.
+
+tray_tooltip_one = ZBox — umlayezo oyi-1 ongafundiwe
+tray_tooltip_many = ZBox — imilayezo engu-{count} engafundiwe
+account_unreachable = I-{account} ayifinyeleleki. Ukuhlola okuzenzakalelayo kwayo kumiswa imizuzu engu-{minutes}.
+bulk_copy_failed = Ayikwazanga ukukopisha imilayezo.
+bulk_copy_failed_status = Ukukopisha kwehlulekile.
+bulk_loading_archive = Imilayezo isalayisha -- zama ukugcina futhi maduze.
+bulk_loading_delete = Imilayezo isalayisha -- zama ukusula futhi maduze.
+bulk_loading_flag = Imilayezo isalayisha -- zama ukumaka ngenkanyezi futhi maduze.
+bulk_loading_generic = Imilayezo isalayisha -- zama futhi maduze.
+bulk_none = Awukho umlayezo okhethiwe.
+bulk_none_archive = Awukho umlayezo okhethiwe ozogcinwa.
+bulk_none_delete = Awukho umlayezo okhethiwe ozosulwa.
+bulk_none_junk = Awukho umlayezo okhethiwe ozomakwa njengokungafuneki.
+bulk_none_not_junk = Awukho umlayezo okhethiwe ozomakwa njengokufunekayo.
+delete_refused_still = Iseva yenqabile ukuwusula; usesefolda ethi {folder}.
+delete_refused_trash = Usedodini, kodwa iseva yenqabile ukuwusula unomphela.
+delete_resume_failed = Imilayezo engu-{count} evela ekusuleni kwangaphambilini ayikwazanga ukusulwa.
+done_perm_delete_one = Umlayezo wesuswe unomphela.
+done_trash_one = Umlayezo uthuthelwe kudoti.
+filters_applied = Izihlungi zisetshenzisiwe kumilayezo engu-{count} ku-{folder}.
+filters_failed = Ayikwazanga ukusebenzisa izihlungi.
+filters_running = Kusetshenziswa izihlungi ku-{folder}
+flag_failed = Ayikwazanga ukubuyekeza inkanyezi.
+flag_updated = Inkanyezi ibuyekeziwe.
+folder_verb_subscribing = Kubhaliswa ku-
+folder_verb_unsubscribing = Kukhishwa ku-
+mark_read_failed = Ayikwazanga ukumaka imilayezo njengefundiwe.
+mark_unread_failed = Ayikwazanga ukumaka imilayezo njengengafundiwe.
+notify_new_mail_body = {noun} elisha elingu-{count} le-{name}.
+notify_new_mail_title = Iposi elisha
+notify_noun_many = imilayezo
+notify_noun_one = umlayezo
+report_done = {verb} {done} kwemilayezo engu-{count}.
+report_verb_deleted = Kususiwe
+report_verb_permanent = Kususwe unomphela
+running_copy_many = Kukopishwa imilayezo engu-{count}
+running_copy_one = Kukopishwa umlayezo
+running_junk_many = Kumakwa imilayezo engu-{count} njengokungafuneki
+running_junk_one = Kumakwa njengokungafuneki
+running_move_many = Kuhanjiswa imilayezo engu-{count}
+running_move_one = Kuyahanjiswa
+running_not_junk_many = Kumakwa imilayezo engu-{count} njengokufunekayo
+running_not_junk_one = Kumakwa njengokufunekayo
+running_perm_delete_one = Kusulwa umlayezo unomphela...
+running_read_many = Kumakwa imilayezo engu-{count} njengefundiwe
+running_read_one = Kumakwa njengokufundiwe
+running_trash_one = Kuthuthelwa umlayezo kudoti...
+running_unread_many = Kumakwa imilayezo engu-{count} njengengafundiwe
+running_unread_one = Kumakwa njengokungafundiwe
+settings_saved_no_startup = Amasethingi alondolozwe. Ayikwazanga ukubuyekeza okufakiwe kokuqala kwe-Windows.
+settings_saved_status = Amasethingi alondolozwe.
+spam_blocked_sender = Umthumeli ovinjiwe
+spam_possible_phishing = Okungenzeka i-phishing
+undo_running_many = Kuhlehliswa i-{action} (imilayezo engu-{count})
+undo_running_one = Kuhlehliswa i-{action}
+mark_folder_read_failed = Ayikwazanga ukumaka ifolda njengefundiwe.
+marking_folder_read = Kumakwa ifolda njengefundiwe...
+upd_ready_at_exit = Isibuyekezo sesivele sidawunilodiwe. Sizofakwa uma uphuma ku-ZBox.
+upd_checking = Kuhlolwa izibuyekezo...
+upd_up_to_date = I-ZBox isesikhathini samanje.
+upd_available_source = I-ZBox {version} iyatholakala. Le khophi isebenza ngomthombo, ngakho yibuyekeze nge-git.
+upd_check_failed = Ayikwazanga ukuhlola izibuyekezo: {error}
+opening_attachment = Kuvulwa i-{filename}...
+loading_headers = Kulayishwa izihloko...
+offline_inbox_only = Okungenayo ne-Ugcino kuphela okugcinelwe ukusetshenziswa ngaphandle kwe-inthanethi.
+offline_sync_done_inbox = Imilayezo engu-{count} kokungenayo nase-Ugcinweni ivumelanisiwe ukusetshenziswa ngaphandle kwe-inthanethi.
+working_offline = Kusetshenzwa ngaphandle kwe-inthanethi: kubonisa ikhophi yokugcina evumelaniswe yokungenayo/Okuthunyelwe/Amadrafti.
+emptying_trash_all = Kuze kungabi nalutho udoti kuwo wonke ama-akhawunti...
+trash_emptied_all = Udoti ungenalutho kuma-akhawunti angu-{accounts}: imilayezo engu-{count} isusiwe.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Ifayela
+bar_edit = &Hlela
+bar_view = &Buka
+bar_message = &Umlayezo
+bar_compose = &Bhala
+bar_tools = &Amathuluzi
+bar_help = &Usizo
+
+# File
+file_new = Okusha
+file_new_message = Umlayezo
+file_new_account = I-akhawunti ye-imeyili...
+file_open_saved_message = Vula umlayezo olondoloziwe...
+file_close = Vala
+file_save_message_as = Londoloza umlayezo njenge...
+file_get_new_for = Thola imilayezo emisha ye-
+file_get_new_all = Wonke ama-akhawunti
+file_get_new_current = I-akhawunti yamanje
+file_offline = Ngaphandle kwe-inthanethi
+file_work_offline = Sebenza ngaphandle kwe-inthanethi
+file_sync_now = Vumelanisa manje
+file_print = Phrinta...
+file_print_preview = Ukubuka kuqala kokuphrinta...
+file_exit = Phuma
+
+# Edit
+edit_undo = Hlehlisa
+edit_select_all = Khetha konke
+edit_find_messages = Thola imilayezo...
+
+# Message
+message_reply = Phendula
+message_reply_all = Phendula bonke
+message_forward = Dlulisela
+message_archive = Gcina
+message_delete = Susa
+message_delete_permanently = Susa unomphela
+message_mark = Maka
+mark_read = Okufundiwe
+mark_unread = Okungafundiwe
+mark_flagged = Okunenkanyezi
+mark_junk = Okungafuneki
+mark_not_junk = Okufunekayo
+message_watch_thread = Bheka intambo
+message_ignore_thread = Ziba intambo
+message_open_conversation = Vula umlayezo embhulweni
+message_show_related = Khombisa imilayezo ehlobene
+message_add_sender_to_address_book = Engeza umthumeli encwadini yamakheli
+message_announce_sender = Memezela umthumeli
+message_announce_copy_sender = Memezela umthumeli bese ukopisha ikheli
+
+# View
+view_folders = Amafolda
+folders_all = Wonke
+folders_unified = Ahlanganisiwe
+folders_jump_inbox = Gxumela ohlwini lwemilayezo yokungenayo
+folders_configure_unified = Misa amafolda ahlanganisiwe...
+view_sort_by = Hlela ngokwe
+sort_date = Usuku
+sort_subject = Isihloko
+sort_from = Kusuka ku-
+sort_descending = Kwehla (okusha kuqala)
+sort_ascending = Kunyuka (okudala kuqala)
+view_threads = Izintambo
+threads_all = Zonke
+threads_watched = Izintambo ezibhekiwe
+threads_ignored = Izintambo ezizibiwe
+threads_expand_all = Vula zonke izintambo
+threads_collapse_all = Goqa zonke izintambo
+view_load_more = Layisha imilayezo eminye
+view_toggle_message_view = Shintsha phakathi kombuko womBhalo ne-HTML
+view_show_remote_content = Khombisa okuqukethwe okukude kulo mlayezo
+view_message_zoom = Ukukhulisa umlayezo
+zoom_increase = Khulisa usayizi wohlamvu lomlayezo
+zoom_decrease = Nciphisa usayizi wohlamvu lomlayezo
+zoom_reset = Setha kabusha usayizi wohlamvu lomlayezo
+
+# Compose
+compose_send = &Thumela
+compose_save_draft = &Londoloza idrafti
+compose_attach = &Namathisela ifayela...
+compose_fmt_bold = &Okugqamile
+compose_fmt_italic = &Okuthambamele
+compose_fmt_strike = &Okudwetshiwe
+compose_fmt_bullet = &Uhlu olunamachashazi
+compose_fmt_number = &Uhlu olunamanani
+compose_fmt_quote = &Isicaphuna
+compose_fmt_code = &Ikhodi
+compose_fmt_heading1 = &Isihloko
+compose_link = &Faka isixhumanisi...
+compose_formatting = &Ukufomethwa lapha
+compose_spellcheck = &Hlola ukupela...
+compose_spellcheck_next = &Iphutha lokupela elilandelayo
+compose_spellcheck_add = &Engeza igama esichazamazwini
+compose_insert_signature = &Faka isiginesha
+compose_paste_quotation = &Namathisela njengesicaphuna
+compose_word_count = &Inani lamagama
+compose_preview = &Ukubuka kuqala...
+compose_diagnostics = &Ukuhlolwa kokubhala...
+compose_edit_signature = &Hlela isiginesha...
+compose_hotkeys_diagnostic = &Ukuhlolwa kwamakhiye esinqamuleli
+
+# Tools
+tools_account_settings = Amasethingi ama-akhawunti nobuwena...
+tools_mute_account = Thulisa i-akhawunti
+tools_pause_auto_check = Misa okwesikhashana ukuhlola okuzenzakalelayo
+tools_disable_account = Khubaza i-akhawunti
+tools_remove_account = Susa i-akhawunti...
+tools_address_book = Incwadi yamakheli...
+tools_message_filters = Izihlungi zemilayezo...
+tools_import = Ngenisa ama-akhawunti namasethingi...
+tools_export = Thumela ama-akhawunti namasethingi...
+tools_cache_cleanup = Ukumisa ukuhlanza i-cache...
+tools_privacy = Ubumfihlo nokuvimba okuqukethwe...
+tools_settings = Amasethingi...
+
+# Help
+help_shortcuts = Izinqamuleli zekhibhodi...
+help_about = Mayelana ne-ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = I-akhawunti entsha...
+tree_account_settings = Amasethingi ama-akhawunti nobuwena...
+tree_mute_account = Thulisa i-akhawunti
+tree_pause_auto_check = Misa okwesikhashana ukuhlola okuzenzakalelayo
+tree_enable_account = Nikeza amandla i-akhawunti
+tree_disable_account = Khubaza i-akhawunti
+tree_set_default_account = Setha njengeakhawunti ezenzakalelayo
+tree_remove_account = Susa i-akhawunti...
+tree_refresh = Vuselela
+tree_new_folder = Ifolda entsha...
+tree_empty_trash = Ngenisa udoti
+tree_empty_junk = Ngenisa Okungafuneki
+tree_rename_folder = Qamba kabusha ifolda...
+tree_delete_folder = Susa ifolda...
+tree_subscribe_folder = Bhalisa ifolda
+tree_unsubscribe_folder = Khipha ifolda
+
+# The message list menu, opened the same two ways
+list_select_all = Khetha konke
+list_reply = Phendula
+list_reply_all = Phendula bonke
+list_forward = Dlulisela
+list_mark = Maka
+list_archive = Gcina
+list_delete_to_trash = Susa (Hambisa kudoti)
+list_delete_permanently = Susa unomphela
+list_move_to = Hambisa ku-
+list_copy_to = Kopisha ku-
+
+# The notification area icon
+tray_open = &Vula i-ZBox
+tray_unread_one = Umlayezo oyi-1 ongafundiwe
+tray_unread_many = Imilayezo engu-{count} engafundiwe
+tray_no_unread = Ayikho imilayezo engafundiwe
+tray_settings = &Amasethingi...
+tray_quit = &Phuma ku-ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Okugqamile
+format_italic = &Okuthambamele
+format_strike = &Okudwetshiwe
+format_bullet = &Uhlu olunamachashazi
+format_number = &Uhlu olunamanani
+format_quote = &Isicaphuna
+format_code = &Ikhodi
+format_heading1 = &Isihloko
+format_insert_link = &Faka isixhumanisi...
+format_formatting_here = &Ukufomethwa lapha
+tools_enable_account = Nikeza amandla i-akhawunti
+edit_undo_action = Hlehlisa {action}
+tree_mark_folder_read = Maka ifolda njengefundiwe
+help_updates = &Izibuyekezo
+help_check_updates = &Hlola izibuyekezo manje...
+help_update_settings = &Amasethingi ezibuyekezo...
+help_releases_page = &Vula ikhasi lokukhishwa
+message_attachments = Okunamathiselwe
+message_no_attachments = Akukho okunamathiselwe
+message_save_all_attachments = Londoloza konke okunamathiselwe
+view_full_headers = Izihloko ezigcwele
+folders_go_to_tree = Iya ohlwini lwamafolda
+list_block_sender = Vimba lo mthumeli
+list_unblock_sender = Susa ukuvimbwa kwalo mthumeli
+sort_received = Okutholiwe
+sort_star = Inkanyezi
+sort_order_received = Ukulandelana kokutholwa
+sort_priority = Okubalulekile
+sort_recipient = Umamukeli
+sort_correspondents = Abaxhumana
+sort_size = Usayizi
+sort_read = Okufundiwe
+sort_junk_status = Isimo sokungafuneki
+sort_attachments = Okunamathiselwe
+sort_threaded = Ngezintambo
+sort_unthreaded = Ngaphandle kwezintambo
+view_columns = Amakholomu
+tools_openpgp_keys = Umphathi wezikhiye ze-OpenPGP
+tools_smime_certs = Umphathi wamasatifikethi e-S/MIME
+compose_pgp_encrypt = &Bethela
+compose_pgp_sign = &Sayina ngokwedijithali
+compose_pgp_attach_key = &Namathisela ukhiye wami womphakathi
+
+[dialogs]
+set_theme_restart_confirm = Qalisa kabusha i-ZBox ukusebenzisa ushintsho lwetimu?
+set_ui_theme_label = &Itimu yesixhumanisi:
+set_ui_theme_note = Imibala yamamenyu, izinhlu, amawindi okuxoxa kanye nombono womlayezo wombhalo. Landela isistimu isebenzisa imodi yohlelo ekhanyayo noma emnyama ye-Windows. I-Midnight blue, i-Warm dark ne-Soft contrast yimitimu emnyama enemibala ethambile. Imilayezo ye-HTML igcina imibala yayo, futhi i-Windows High Contrast ihlale iza kuqala. Isebenza ngokuqala okulandelayo kwe-ZBox.
+set_theme_system = Landela isistimu
+set_theme_light = Ekhanyayo
+set_theme_dark = Emnyama
+set_theme_midnight = Midnight blue
+set_theme_warm = Warm dark
+set_theme_soft = Soft contrast
+set_language_restart_confirm = Qalisa kabusha i-ZBox ukusebenzisa ushintsho lolimi?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Xhumana no-Harith
+title_identity = Ubuwena
+title_show_password = Khombisa iphasiwedi
+title_missing_information = Ulwazi olungekho
+title_unsupported_provider = Umhlinzeki ongasekelwa
+title_test_connection = Hlola uxhumano
+title_new_contact = Othintana naye omusha
+title_edit_contact = Hlela othintana naye
+title_delete_contact = Susa othintana naye
+title_import_contacts = Ngenisa abathintana nabo
+title_export_contacts = Thumela abathintana nabo
+title_rename_group = Qamba kabusha iqembu
+title_delete_group = Susa iqembu
+title_send = Thumela
+title_send_failed = Ukuthumela kwehlulekile
+title_attach_file = Namathisela ifayela
+title_save_draft = Londoloza idrafti
+title_documentation = Imibhalo ye-ZBox
+title_open_link = Vula isixhumanisi
+title_filter_rule = Umthetho wesihlungi
+title_master_password = Iphasiwedi enkulu
+title_attachment_saved = Okunamathiselwe kulondoloziwe
+title_attachments_saved = Okunamathiselwe kulondoloziwe
+title_download_failed = Ukudawuniloda kwehlulekile
+title_print = Phrinta
+title_print_preview = Ukubuka kuqala kokuphrinta
+title_related_messages = Imilayezo ehlobene
+title_search = Sesha
+title_unlock = Vula
+title_unlock_methods = Izindlela zokuvula
+title_desktop_shortcut = Isinqamuleli sedeskithophu
+title_spell_check = Ukuhlola ukupela
+title_plain_text_password = Kutholwe iphasiwedi yombhalo ovamile
+title_startup_error = Iphutha lokuqalisa i-ZBox
+
+identity_email_required = Faka ikheli le-imeyili.
+
+wizard_password_not_shown = Iphasiwedi ayikwazi ukubonisa kule sistimu. Isathayiphwa futhi ilondolozwe ngokujwayelekile.
+wizard_email_required = Faka ikheli le-imeyili elivumelekile ngaphambi kokuqhubeka.
+wizard_test_needs_server = Faka i-imeyili yokungena neseva yokungenayo ngaphambi kokuhlola.
+wizard_test_succeeded = Uxhumano luphumelele. Imilayezo engu-{count} itholakele kokungenayo.
+
+contact_email_required = Kudingeka ikheli le-imeyili.
+contact_select_to_edit = Khetha othintana naye ozomhlela.
+contact_select_to_delete = Khetha othintana naye ozomsusa.
+contact_delete_confirm = Susa u-{label} encwadini yamakheli?
+contacts_import_choose_file = Khetha ifayela le-.vcf (vCard) noma le-.csv ozolingenisa.
+contacts_imported = Abathintana nabo abangu-{count} bangeniswe.
+contacts_import_empty = Akukho abathintana nabo abatholakele kuleyo fayela.
+contacts_none_to_export = Abekho abathintana nabo abazothunyelwa.
+contacts_exported = Abathintana nabo abangu-{count} bathunyelwe ku-:\n{path}
+group_name_exists = Iqembu elibizwa ngokuthi "{name}" selivele likhona.
+group_delete_confirm = Susa iqembu elithi "{name}"? Abathintana nabo abasuswa.
+
+send_no_account = Engeza i-akhawunti ngaphambi kokuthumela, noma ukhethe eyodwa ku-Kusuka ku-.
+send_no_recipient = Faka okungenani umamukeli oyedwa ku-Ku-.
+draft_no_account = Engeza i-akhawunti ngaphambi kokulondoloza idrafti, noma ukhethe eyodwa ku-Kusuka ku-.
+attached_file = Kunamathiselwe: {name}\n\nAmafayela angu-{count} azonamathiselwa uma uthumela.
+
+documentation_copied = Imibhalo ephelele ye-ZBox ikopishelwe ku-clipboard.
+
+filter_rule_needs_name = Qamba lo mthetho.
+filter_rule_needs_condition = Setha okungenani isimo esisodwa (Kusuka ku-, Ku- noma Isihloko).
+filter_rule_needs_action = Khetha okungenani isenzo esisodwa: maka njengokufundiwe, inkanyezi, noma hambisa kufolda.
+
+master_password_set = Iphasiwedi enkulu isethiwe. Igcine endaweni ephephile: i-ZBox iyayibuza kanye kukhompyutha ngayinye entsha, futhi ayikwazi ukubuyiswa uma ilahlekile.
+master_password_offer = Ngaphandle kwephasiwedi enkulu, amaphasiwedi ama-akhawunti alondoloziwe angafundwa kuphela kuleli khompyutha nakule akhawunti ye-Windows. Uma ukopisha i-ZBox kwenye indawo, i-akhawunti ngayinye kufanele ingene futhi.\n\nSetha eyodwa manje?
+
+attachment_saved = Okunamathiselwe kulondolozwe ku-:\n{path}
+attachments_saved = Okunamathiselwe okungu-{count} kulondolozwe ku-:\n{path}
+
+shortcut_created_settings = Isinqamuleli sidaliwe:\n{path}\n\nSiqalisa i-ZBox kusuka ku-:\n{base}
+
+spellcheck_no_dictionary = Isichazamazwi sokupela asikho, ngakho ukuhlola ukupela akutholakali kule khophi ye-ZBox.
+spellcheck_none_found = Awekho amaphutha okupela atholakele.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Setha ukhiye wokungena kuleli khompyutha bese ukhohlwa onye olondolozwe kwelinye ikhompyutha?\n\nI-Windows izokucela uqinisekise nge-Hello. Ukhiye wokungena omdala osele kwelinye ikhompyutha awuthintwa lapho futhi uzoqhubeka usebenza uma ubuyisela le folda lapho, kodwa kuzodingeka usethwe futhi.
+unlock_replace_passkey_many = Setha ukhiye wokungena kuleli khompyutha bese ukhohlwa abangu-{count} abalondolozwe kwamanye amakhompyutha?\n\nI-Windows izokucela uqinisekise nge-Hello. Okhiye bokungena abadala abasele kwelinye ikhompyutha abathintwa lapho futhi bazoqhubeka basebenza uma ubuyisela le folda lapho, kodwa kuzodingeka basethwe futhi.
+unlock_method_works = Leyo ndlela iyasebenza.
+
+plain_text_password_found = I-data\config\himalaya.toml isaqukethe iphasiwedi yombhalo ovamile (auth.raw) evela ekusethweni kwe-akhawunti endala.\n\nSusa leyo akhawunti bese uyengeza futhi, noma wusule i-data\config\himalaya.toml ukuze yakhiwe kabusha isebenzisa indawo egcina izitifiketi ephephile.
+
+# main_frame's titles.
+title_account_list_unavailable = Uhlu lwama-akhawunti alutholakali
+title_open_message = Vula umlayezo
+title_run_filters = Sebenzisa izihlungi
+title_clear_cache = Susa i-cache yemilayezo ye-offline
+title_remove_account = Susa i-akhawunti
+title_new_folder = Ifolda entsha
+title_rename_folder = Qamba kabusha ifolda
+title_delete_folder = Susa ifolda
+title_subscribe = Bhalisa
+title_unsubscribe = Khipha
+title_open_saved_message = Vula umlayezo olondoloziwe
+title_save_message_as = Londoloza umlayezo njenge
+title_empty_trash = Ngenisa udoti
+title_empty_junk = Ngenisa Okungafuneki
+title_synchronize_offline = Vumelanisa ukusetshenziswa ngaphandle kwe-inthanethi
+title_export_accounts = Thumela ama-akhawunti namasethingi
+title_import_accounts = Ngenisa ama-akhawunti namasethingi
+title_show_related = Khombisa imilayezo ehlobene
+title_reply = Phendula
+title_forward = Dlulisela
+title_undo = Hlehlisa
+title_delete_permanently = Susa unomphela
+title_delete = Susa
+title_copy_to = Kopisha ku-
+title_archive = Gcina
+title_accounts_locked = Ama-akhawunti ayakhiyiwe
+
+select_account_first = Khetha i-akhawunti kuqala emthini.
+select_account_or_folder = Khetha i-akhawunti noma ifolda kuqala.
+filters_left_behind = Imilayezo engu-{count} ifane nesihlungi kodwa isesefolda ethi {folder}.
+cache_clear_confirm = Susa i-cache yemilayezo ye-offline yawo wonke ama-akhawunti?\n\nLokhu kususa amakhophi endaweni e-ZBox kuphela. Akukho okususwa kunoma iyiphi iseva yamameyili, futhi imilayezo idawunilodwa futhi njengoba uyidinga.
+account_remove_confirm = Susa i-{name} ({address})?\n\nIposi eliseseva alisuswa.\nAmakhophi adawunilodiwe kuleli khompyutha ayasuswa.\nIphasiwedi elondoloziwe iyasuswa.
+folder_delete_confirm = Susa unomphela ifolda ethi "{folder}" nakho konke okukuyo kwe-{address}?\n\nLokhu akukwazi ukuhlehliswa.
+empty_trash_confirm = Susa unomphela yonke imilayezo kudoti ye-{address}?\n\nLokhu akukwazi ukuhlehliswa.
+empty_junk_confirm = Susa unomphela yonke imilayezo ku-Okungafuneki ye-{address}?\n\nLokhu akukwazi ukuhlehliswa.
+sync_select_account = Khetha i-akhawunti (hhayi ifolda Ehlanganisiwe) ozoyivumelanisa ukusetshenziswa ngaphandle kwe-inthanethi.
+accounts_imported = Ama-akhawunti angu-{count} angeniswe:\n\n{names}\n\nAmaphasiwedi awasoze athunyelwa, futhi indawo egcina amaphasiwedi ebethelwe ikhethekile kule akhawunti yomsebenzisi we-Windows, ngakho i-akhawunti ngayinye engeniswe idinga ukufakwa iphasiwedi kanye nge-Amathuluzi > Amasethingi ama-akhawunti nobuwena ngaphambi kokuthi ixhume.
+accounts_import_none = Awekho ama-akhawunti atholakele kuleli fayela. Amasethingi angeniswe nokho, uma ifayela libenawo.
+delete_permanently_confirm_one = Susa unomphela lo mlayezo? Lokhu kweqa ifolda kadoti futhi akukwazi ukuhlehliswa.
+accounts_locked = Amaphasiwedi ama-akhawunti alondoloziwe abhalwe kwelinye ikhompyutha, ngakho awakwazi ukufundwa lapha.\n\nI-akhawunti ngayinye izodinga ukungena futhi kuseva yayo yamameyili. Ukugwema lokhu ngokuzayo, setha iphasiwedi enkulu ku-Amasethingi, Ukuphepha kohlelo nedatha kukhompyutha lapho ama-akhawunti esevele esebenza khona.
+master_password_remove_confirm = Susa iphasiwedi enkulu? Amaphasiwedi ama-akhawunti alondoloziwe azobe esefundeka kuphela kuleli khompyutha nakule akhawunti ye-Windows. Uma ukopisha i-ZBox kwenye indawo ngemuva kwalokho, i-akhawunti ngayinye izodinga ukungena futhi.\n\nYisuse manje?
+shortcut_offer = Beka isinqamuleli se-ZBox kudeskithophu?\n\nSizoqalisa le folda ye-ZBox:\n{path}\n\nIsinqamuleli siqopha le ndawo kanye. Uma uthutha ifolda ye-ZBox kamuva, vula Amasethingi, Indawo yezaziso nefasitela bese ukhetha futhi Dala isinqamuleli sedeskithophu ukusikhomba endaweni entsha.
+shortcut_created = Isinqamuleli sidaliwe:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Igama elibonakalayo
+form_email_address = Ikheli le-imeyili
+form_your_name = Igama lakho
+form_login_email = I-imeyili yokungena
+form_password = Iphasiwedi
+srv_imap_host = Iseva yokungenayo (IMAP)
+srv_imap_port = Imbobo yokungenayo
+srv_imap_encryption = Ukubethela kokungenayo
+srv_smtp_host = Iseva yokuphumayo (SMTP)
+srv_smtp_port = Imbobo yokuphumayo
+srv_smtp_encryption = Ukubethela kokuphumayo
+
+acct_login_email_label = I-imeyili yokungena (isetshenziselwa ukungena)
+acct_new_password_label = Iphasiwedi entsha (shiya ize ukuze ugcine yamanje)
+acct_new_password_name = Iphasiwedi entsha
+acct_identity_email_label = Ikheli le-imeyili (lisetshenziselwa ukuthumela nokwamukela)
+acct_identities_label = Ubuwena obungeziwe (amagama aphambene)
+acct_identities_name = Ubuwena obungeziwe
+acct_add_identity = &Engeza ubuwena...
+acct_edit_identity = &Hlela ubuwena...
+acct_remove_identity = &Susa ubuwena
+acct_signature = Isiginesha
+acct_edit_signature = &Hlela isiginesha...
+acct_junk_folder = Ifolda Yokungafuneki
+acct_account_status = Isimo se-akhawunti
+acct_disable_account = Khubaza le akhawunti
+acct_default_account = I-akhawunti ezenzakalelayo
+acct_set_default = Setha njengeakhawunti ezenzakalelayo
+acct_notifications = Izaziso zeposi elisha
+acct_mute_notifications = Thulisa izaziso zale akhawunti
+acct_server_settings = Amasethingi eseva
+
+wiz_before_you_start = Ngaphambi kokuqala
+wiz_notice_name = Isaziso esibalulekile
+wiz_google_instructions = &Vula iziqondiso zephasiwedi yohlelo lwe-Google
+wiz_intro = Igama lakho nekheli le-imeyili
+wiz_login_same = I-imeyili yokungena iyefana nekheli le-imeyili elingenhla
+wiz_show_password = &Khombisa iphasiwedi
+wiz_preset_applied = Okusethwe kusengaphambili kusetshenzisiwe ye-{name}.
+wiz_summary_name = Isifinyezo se-akhawunti
+wiz_review = Buyekeza, bese ucindezela u-Qeda ukulondoloza le akhawunti.
+wiz_test_connection = &Hlola uxhumano
+wiz_testing = Kuhlolwa uxhumano...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Vula ukurekhoda kokususa amaphutha, kulondolozwe ku-: data\logs)
+set_language_label = &Ulimi lwesixhumanisi:
+set_language_label_only_english = &Ulimi lwesixhumanisi: (isiNgisi kuphela)
+set_headers_checkbox = &Khombisa izihloko zomlayezo ngenhla komlayezo ovuliwe
+set_zoom_label = Uhlamvu lomlayezo nokukhulisa:
+set_font_override = &Dlulisa usayizi wohlamvu lomlayezo ozenzakalelayo
+set_font_size_name = Usayizi wohlamvu lomlayezo (amaphoyinti)
+set_reading_font_name = Uhlamvu lokufunda
+set_reading_font_label = Uhlamvu lokufunda (shiya lukhale ukuze kusetshenziswe ozenzakalelayo):
+set_view_label = Umbono womzimba womlayezo uma kuvulwa umlayezo:
+set_view_text = Umbhalo
+set_view_html = I-HTML (ekhonjisiwe)
+set_engine_label = Injini yokukhombisa i-HTML:
+set_engine_edge = Edge / WebView2 (ukukhombisa kwesimanje)
+set_engine_ie = I-MSHTML endala (ukusekela okungcono kakhulu komfundi wesikrini)
+set_runtime_label = I-WebView2 runtime:
+set_runtime_auto = Okuzenzakalelayo — sebenzisa i-runtime efakwe kanye uma ikhona (kuyanconywa)
+set_runtime_fixed = Inguqulo ebhekiwe efakwe kanye kuphela
+set_runtime_evergreen = I-runtime yesistimu yonke (ibuyekezwa yi-Windows)
+set_sr_box = Ukulawula izimemezelo zomfundi wesikrini
+set_silence_label = Ukuthula komfundi wesikrini kwe-HTML:
+set_silence_name = Ukuthula komfundi wesikrini kwe-HTML ngamamilisekhondi
+set_focus_delay_label = Ukubambezeleka kwefokhasi yokufinyeleleka kwe-WebView:
+set_focus_delay_name = Ukubambezeleka kwefokhasi yokufinyeleleka kwe-WebView, izinga 1 kuya ku-10
+set_announce_label = Isikhathi sokumemezela:
+set_announce_name = Isikhathi sokumemezela ngamamilisekhondi
+set_announce_actions = &Khuluma izimemezelo zezenzo, iposi elisha nezaziso
+set_attachment_dir_label = Ifolda yokulondoloza okunamathiselwe:
+set_attachment_dir_name = Ifolda yokulondoloza okunamathiselwe
+set_browse = &Phequlula…
+set_autosave_label = Isikhawu sokulondoloza idrafti ngokuzenzakalelayo:
+set_autosave_name = Isikhawu sokulondoloza idrafti ngokuzenzakalelayo ngamasekhondi
+set_auto_purge_label = Susa ngokuzenzakalelayo udoti oludala nokuNgafuneki:
+set_auto_purge_name = Susa ngokuzenzakalelayo udoti nokuNgafuneki ngemva kwalokhu kwezinsuku
+set_bare_keys = &Vula izinqamuleli zokhiye owodwa u-S (inkanyezi), u-A (gcina), u-J (maka njengokungafuneki)/Shift+J (maka njengokufunekayo), u-W (bheka intambo), u-K (ziba intambo), u-M (hambisa)/Shift+M (hambisa ngegama lefolda) no-C (kopisha ku-) ohlwini lwemilayezo
+set_sound_label = Umsindo nezaziso:
+set_sounds_enabled = &Dlala imisindo yezaziso
+set_desktop_notifications = &Khombisa izaziso zedeskithophu zeposi elisha
+set_theme_label = Shintsha itimu yemisindo:
+set_theme_label_only_default = Shintsha itimu yemisindo: (itimu ezenzakalelayo kuphela)
+set_security_box = Ukuphepha kohlelo nedatha
+set_lock_on_quit = &Khiya i-ZBox uma ivalwa ngokuphelele
+set_private_mode = &Imodi yangasese: ungagcini iposi kuleli khompyutha noma kudiski
+set_unlock_methods_button = &Izindlela zokuvula…
+set_master_password_button = &Iphasiwedi enkulu…
+set_tray_label = Indawo yezaziso nefasitela:
+set_minimize_to_tray = &Nciphisa uye endaweni yezaziso
+set_close_to_tray = &Vala uye endaweni yezaziso
+set_stay_maximized = &Hlala ugcine i-ZBox ikhulisiwe
+set_run_at_startup = &Sebenzisa i-ZBox uma i-Windows iqala
+set_desktop_shortcut_button = &Dala isinqamuleli sedeskithophu
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Ukurekhoda kokususa amaphutha kusiza ukuhlonza izinkinga uma kukhona okungahambi kahle. Ukukuvala kumisa ukubhalwa kwamarekhodi amasha; amafayela amarekhodi akhona awasuswa. Kusebenza ngokuqala okulandelayo kwe-ZBox.
+set_language_note = Kusebenza ngokuqala okulandelayo kwe-ZBox. Amafayela olimi angamafayela ombhalo ovamile kufolda ye-lang ye-ZBox, eduze kwefolda ye-sounds. Ukuze wengeze elilodwa, kopisha ifolda ye-en, uqambe kabusha ikhophi nefayela le-.lang elikuyo libe yikhodi yolimi lwakho, bese uhumusha umbhalo ongakwesokudla sophawu ngalunye lokulingana. Noma yini engakahunyushwa ikhulunywa ngesiNgisi kunokuthula, ngakho ifayela elingaqediwe lisebenziseka ngokuphepha.
+set_headers_note = Kusuka ku-, Ku-, Cc, Usuku nesihloko, kukhonjiswa ngenhla komzimba womlayezo kuyo yomibili imibono yombhalo ne-HTML. Ngaphandle kwalokhu akukho ndlela yokwazi ukuthi ubani othumele umlayezo ngaphakathi kuwo ngaphandle kokuvala ithebhu ubuyele ohlwini. Ifokhasi isafika emzimbeni womlayezo; ibhulokhi yezihloko ingu-Shift+Tab owodwa kude. Kusebenza ngokuvulwa okulandelayo komlayezo.
+set_zoom_note = Kwenza umbhalo womlayezo ovuliwe mkhulu noma mncane, ngokuzimela kwezinye izingxenye ze-ZBox nasekukhuliseni kwesikrini se-Windows. Kusebenza kuyo yomibili imibono yombhalo ne-HTML. U-"Uhlamvu lokufunda" ungaphoqa uhlamvu oluthile (isb. Consolas, OpenDyslexic) emzimbeni womlayezo; shiya lukhale ukuze kugcinwe uhlamvu lwejwayelekile. U-Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 kumenyu ethi Buka kukhuphula, kuncisha noma kusetha kabusha usayizi wohlamvu kuphela ngaphandle kokuvula leli windi, futhi kusebenza ngokushesha kuwo wonke umlayezo ovuliwe. Izinguquko ezenziwe lapha nazo zisebenza ngokushesha ku-OK.
+set_view_note = I-HTML iyona ezenzakalelayo. Ikhombisa umlayezo njengoba uthunyelwe, futhi ifundwa yi-NVDA ne-JAWS: uma ikhasi le-HTML livulwa, i-ZBox ithulisa isimemezelo sesiphequluli, ibeka ikhesa lokufunda emgqeni wokuqala womlayezo, futhi igcina izinqamuleli zayo ze-ZBox zisebenza ngaphakathi kwekhasi, kuhlanganisa ne-F6 yokuhambisa ifokhasi iphume kulo. Umbhalo ukhombisa lowo mlayezo njengombhalo ovamile ongafomethiwe enkontilweni evamile yokuhlela -- akukho zithombe, akukho ukuhlelwa, futhi akukho okuncike ekutheni injini yesiphequluli ifakiwe. Cindezela Ctrl+B ngaphakathi komlayezo ovuliwe ukushintsha nganoma iyiphi indlela.
+set_engine_note = I-Edge ikhombisa i-CSS yesimanje kodwa isebenzisa ikhasi enqubweni ehlukile, futhi inikeza okuqukethwe kwayo komfundi wesikrini kuphela ngesixhumanisi i-wxPython engakwazi ukusifinyelela -- ngakho umlayezo ungavuleka ungenalutho olufundekayo. I-MSHTML endala yinjini ebisetshenziswa yi-Outlook Express ne-Windows Mail: isebenza ngaphakathi kwenqubo futhi ikhipha isihlahla sombhalo esijwayelekile, ngakho i-NVDA ne-JAWS bayifunda kumodi yokuphequlula njenganoma yiliphi ikhasi lewebhu. Kusebenza ngokuvulwa okulandelayo komlayezo.
+set_runtime_note = I-runtime yesistimu yonke ilungiswa yi-Windows Update, ngakho injini efunda iposi lakho ingashintsha ngaphandle kwesexwayiso -- yilokho okungenza umbono womlayezo we-HTML osebenzayo wephuce emshinini lapho kungashintshanga lutho nge-ZBox. Ikhophi efakwe kanye kufolda ye-deps ibambelela inguqulo eqondile i-ZBox ehlolwe ngayo. Sebenzisa i-tools\get_webview2.bat ukufaka eyodwa. Uma kungekho khophi efakwe kanye, i-ZBox isebenzisa i-runtime yesistimu yonke noma kunjalo, ngakho iyaqala njalo. Kusebenza ngokuqala okulandelayo kwe-ZBox.
+set_sr_intro = Ukuthi i-ZBox ivumela umfundi wakho wesikrini ukukhuluma kangakanani ngenkathi kuvulwa umlayezo, nokuthi izimemezelo zayo ezikhulunywayo zihlala isikhathi esingakanani.
+set_silence_note = Uma umlayezo we-HTML uvulwa, i-ZBox ingabamba i-Ctrl yokwenziwa kuze kube yizi-2 amasekhondi ukuthulisa isimemezelo sesiphequluli somfundi wesikrini. Isihloko somlayezo sesivele sisetshenziswa njengesihloko sekhasi, okuvimbela i-URL ye-base64 ukufundwa ngokuvakashayo, kodwa umfundi usamemezela ukulawula nohlobo lwedokhumenti phezu kokuqala komlayezo, ngakho lokhu kuvuliwe ngokuzenzakalelayo. Khetha Valiwe ukukuvala, noma isikhathi esingeziwe uma umsindo usadlula.
+set_focus_delay_note = Uma umlayezo we-HTML uqeda ukulayisha, i-ZBox ilinda lesi sikhathi ngaphambi kokuwufokhasa ngempela. I-WebView2 imemezela ukuthi ikhasi lilayishiwe kanye ne-Windows iqeda isihlahla sokufinyeleleka sekhasi akusona isikhathi esifanayo; ukufokhasa kusenesikhathi yilokho okwenza i-NVDA/JAWS imemezele "Web content page" evamile esikhundleni somlayezo, noma imemezele umlayezo ungatholakali isikhashana ngemva kokuvula. Izinketho zisuka ku-0.1 isekhondi kuya kwesi-1. Khetha isikhathi eside uma usakuzwa lokhu, nesifushane uma ukuvula kuzwakala kuqinile, ukuze kuvuleke ngokushesha.
+set_announce_note = U-Ctrl+U no-Ctrl+Shift+U bamemezela umthumeli ewindini elincane elizivalayo, ngoba ibha yesimo ikhulunywa kuphela uma umfundi wakho wesikrini evule ukubika kwebha yesimo. Yilesi isikhathi leli windi elihlala ngaso. Lisethe ukuze lifane nesivinini sakho sokukhuluma: uma lifushane kakhulu, livala phakathi nomusho, okuhlula inhloso. Noma yikuphi ukhiye likuvala ngaphambi kwesikhathi; okhiye bemicibisholo bakugcina kuvuliwe ukuze ufunde futhi. Linda ukhiye kugcina kuvuliwe uze ucindezele oyedwa.
+set_attachment_dir_note = Lapho u-"Londoloza konke" ubhala khona okunamathiselwe uma umlayezo unokungaphezu kokukodwa. Idalwa ngokuzenzakalelayo uma ingekho. Umlayezo onokunamathiselwe okukodwa usabuza ukuthi uzolondolozwa kuphi, njengakuqala. Shiya ize ukuze kusetshenziswe ezenzakalelayo:\n{path}
+set_autosave_note = Ukuthi ithebhu yokubhala evuliwe izilondoloza kangakanani kuma-Drafti ngenkathi ubhala. U-Londoloza idrafti (Ctrl+S) usalondoloza uma kucelwa kuzo zombili izimo, futhi ukuvala ithebhu enombhalo ongalondolozwanga kuhlala kunikeza ukuyilondoloza. Valiwe uvala ukulondoloza okuzenzakalelayo. Okungaphansi kwamasekhondi angu-15 akunikezwa -- lokho kungaba uhambo lweseva oluncintisana nokuthayipha kwakho.
+set_auto_purge_note = Kususa unomphela imilayezo kudoti nokuNgafuneki uma isihlale lapho lezi zinsuku -- ukususa unomphela okufanayo okwenziwa u-Ngenisa udoti no-Ngenisa Okungafuneki uma kucelwa, kusebenza ngokuzenzakalelayo kanye ngosuku ngenkathi i-ZBox ivuliwe. Kuvuliwe ngokuzenzakalelayo ezinsukwini ezingu-30. Valiwe uyakuvala. Lokhu akukwazi ukuhlehliswa uma umlayezo usususiwe.
+set_bare_keys_note = Uma kuvuliwe, ukucindezela u-S, A, J, W noma u-K kuphela ohlwini lwemilayezo kushintsha inkanyezi, kugcina, kumaka imilayezo ekhethiwe njengokungafuneki (u-Shift+J ukumaka njengokufunekayo), noma kubheka/kuziba intambo okuyingxenye yakho ukukhetha, ngokushesha -- u-Gcina no-Maka njengokungafuneki akunakuqinisekisa futhi akunakuhlehliswa. Ukukuvala kubuyisela u-S, A, J, W no-K ekuhambeni okujwayelekile kohlu ngohlamvu lokuqala. U-Ctrl+S no-Ctrl+Shift+A baqhubeka bekusebenza kuzo zombili izimo. Kusebenza ngokushesha.
+set_sounds_note = Amathoni amafushane okuqhubeka, imilayezo emisha, ezithunyelwe, ezaphendulwa noma ezidluliselwa, ukususwa nemiphumela yokusesha. Valiwe uvala wonke umsindo ohlelweni; izimemezelo zomfundi wesikrini nebha yesimo azithinteki kuzo zombili izimo.
+set_desktop_notifications_note = Isaziso se-Windows kuqoqo ngalinye leposi elisha, ngokwehlukile emsindweni ongenhla. Valiwe uyakuvala kuwo wonke ama-akhawunti; i-akhawunti eyodwa nayo ingathuliswa yodwa ku-Amasethingi ama-akhawunti nobuwena.
+set_theme_note = Izitimu ezenziwe ngokwezifiso yizifolda ezifakwa ngaphakathi kwefolda ye-sounds ye-ZBox, ngayinye inemisindo yayo ye-progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav kanye ne-none_found.wav. Ifayela letimu elingekho libuyela emsindweni ozenzakalelayo.
+set_theme_note_only_default = Izitimu ezenziwe ngokwezifiso yizifolda ezifakwa ngaphakathi kwefolda ye-sounds ye-ZBox, ngayinye inemisindo yayo ye-progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav kanye ne-none_found.wav. Ifayela letimu elingekho libuyela emsindweni ozenzakalelayo. U-"default" kuphela otholakalayo uze wengeze enye ifolda yetimu.
+set_lock_note = Ukuqala kwe-ZBox kube sekubuza eyodwa yezindlela zakho zokuvula ngaphambi kokuba kuvulwe noma iyiphi i-akhawunti. Noma iyiphi kwazo ikhona: ukhiye wokungena, ukhiye wokuphepha, noma iphasiwedi enkulu. Ukuvala uye endaweni yezaziso akukona ukuphuma futhi akukhiyi kabusha; U-Ifayela > Phuma nokuthi Phuma kwesithonjana sendawo yezaziso kuyakhiya. Uma kungekho okubhalisiwe futhi iphasiwedi enkulu ingasethiwe, ukhiye uyeqiwa kunokukukhiya ngaphandle kweposi lakho.
+set_security_note = Iphasiwedi enkulu iyona yodwa kokuthathu ebethela noma yini: yiyona evumela le folda ukuvula amaphasiwedi ama-akhawunti alondoloziwe kwelinye ikhompyutha. Ukhiye wokungena noma ukhiye wokuphepha uvula uhlelo kuleli kuphela. Akukho okufaka esikhundleni sephasiwedi enkulu kukhompyutha i-ZBox engakaze isetshenziswe kuyo.
+set_private_mode_note = Imilayezo ifundwa kuseva futhi igcinwa enkumbulweni kuphela. Awekho amakhophi e-offline, imilayezo elondoloziwe noma amarekhodi okususa amaphutha agcinwayo, futhi okunamathiselwe okuvuliwe nedatha yesiphequluli yeposi le-HTML kuyasuswa uma i-ZBox ivalwa. Ukuvala kuphinda kuqede zonke izinhlelo ezaqalwa yi-ZBox, kuhlanganise nalezo ezikhombisa okunamathiselwe, kukhiphe i-clipboard, futhi kuyeke ukwethemba leli khompyutha ngaphandle uma imodi yangasese ivulwe kulo. I-Windows isagcina amanye amarekhodi ayikho inhlelo engawasusa, njengohlu lwayo lwamadiski e-USB, ifayela lekhasi, namarekhodi e-antivirus nenethiwekhi.
+title_private_mode = Imodi yangasese
+private_mode_need_master = Imodi yangasese idinga iphasiwedi enkulu, ngoba iphasiwedi enkulu kuphela evula ama-akhawunti akho kukhompyutha engeyona eyakho. Setha eyodwa ngenkinobho ethi Iphasiwedi enkulu, bese uvula imodi yangasese.
+private_mode_enter_master = Faka iphasiwedi enkulu ukuvula imodi yangasese.
+private_mode_confirm = Imodi yangasese ayigcini amakhophi eposi lakho kuleli khompyutha noma kudiski i-ZBox esebenza kulo. Ukuyivula kususa amakhophi e-offline e-ZBox, imilayezo elondoloziwe, okunamathiselwe okuvuliwe, idatha yesiphequluli yeposi le-HTML namarekhodi okususa amaphutha. Akukho okususwa kuma-seva akho amameyili, futhi ama-akhawunti akho, abathintana nabo namasethingi kugcinwa. Vula imodi yangasese?
+set_minimize_note = Ukunciphisa i-ZBox kufihla inkinobho yayo yebha yemisebenzi futhi ikushiya isebenza ngemuva kwesithonjana sendawo yezaziso. Chofoza ngakwesokunxele isithonjana (noma u-Enter/Space uma sinefokhasi yekhibhodi) ukubuyisa iwindi.
+set_close_note = Inkinobho Yokuvala yewindi, u-Alt+F4, no-Ctrl+W ocindezelwe kuthebhu Yeposi kufihla i-ZBox endaweni yezaziso esikhundleni sokuphuma. U-Ifayela > Phuma (Ctrl+Shift+Q) nento ethi Phuma yesithonjana sendawo yezaziso kuphuma ku-ZBox ngempela kuzo zombili izimo, ngakho kuhlala kunendlela eyodwa yekhibhodi yokuphuma ngaphandle kokuthinta indawo yezaziso.
+set_stay_maximized_note = I-ZBox iqala ikhulisiwe futhi ibuyiselwa ekukhulisweni uma uyincipha. Ibha yemenyu, ibha yesihloko nomphetho wewindi akuthinteki -- lena akuyona imodi yesikrini esigcwele engenamphetho, ngakho zonke izinqamuleli zemenyu ze-Alt ziyaqhubeka zisebenza.
+set_run_at_startup_note = Iqalisa i-ZBox ngokuzenzakalelayo uma ungena ku-Windows, ivulwe ngqo endaweni yezaziso esikhundleni sokukhombisa iwindi layo. Kusebenza ngokushesha, hhayi ngokuqala okulandelayo kuphela.
+set_desktop_shortcut_note = Ibeka isinqamuleli se-ZBox kudeskithophu yakho, ishintshe esisele lapho. Isinqamuleli sigcina indawo eqondile yale folda ye-ZBox, ngakho uma uthutha noma ukopisha i-ZBox kwenye indawo, cindezela lokhu futhi kukhophi entsha ukuze isinqamuleli sedeskithophu sikhombe kuyo. Kusebenza ngokushesha futhi akulindi u-OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Igama
+ab_phone = Ucingo
+ab_notes = Amanothi
+ab_heading = Incwadi yamakheli
+ab_contacts = Abathintana nabo
+ab_new = &Okusha...
+ab_edit = &Hlela...
+ab_delete = &Susa
+ab_import = &Ngenisa...
+ab_export = &Thumela...
+ab_groups_label = Amaqembu (uhlu lwamameyili)
+ab_groups_name = Amaqembu
+ab_new_group = &Iqembu elisha...
+ab_rename_group = &Qamba kabusha iqembu...
+ab_delete_group = &Susa iqembu
+ab_manage_members = &Phatha amalungu...
+ab_all_contacts = Bonke abathintana nabo
+ab_add_member = Engeza >>
+ab_remove_member = << Susa
+ab_members_of = Amalungu e-{name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Akukho esichazamazwini:
+sp_not_in_dictionary_name = Akukho esichazamazwini
+sp_in_this_line_label = Kulo mugqa:
+sp_in_this_line_name = Kulo mugqa
+sp_suggestions_label = &Iziphakamiso:
+sp_suggestions_name = Iziphakamiso
+sp_replace_with_label = &Shintsha nge-:
+sp_replace_with_name = Shintsha nge-
+sp_replace = &Shintsha
+sp_replace_all = &Shintsha konke
+sp_ignore = &Ziba
+sp_ignore_all = &Ziba konke
+sp_add_to_dictionary = &Engeza esichazamazwini
+btn_close = &Vala
+
+# Privacy and Content Blocking.
+priv_remote_label = Okuqukethwe okukude emilayezweni:
+priv_block_remote = &Vimba okuqukethwe okukude uze ukucele (kuyanconywa)
+priv_blocklist_label = Uhlu lokuvimba izikhangiso nabalandeli:
+priv_block_known = &Vimba izizinda ezaziwayo zezikhangiso nabalandeli
+priv_update_daily = &Buyekeza uhlu nsuku zonke ngemuva
+priv_update_now = &Buyekeza manje
+priv_junk_label = Imithetho yeposi elingafuneki:
+priv_check_inbox = &Hlola iposi elisha lokungenayo ngokumelene nabathumeli abavinjiwe nezixhumanisi ze-phishing ezaziwayo
+priv_move_blocked = &Hambisa ngokuzenzakalelayo iposi labathumeli abavinjiwe ku-Okungafuneki
+priv_update_phishing = &Buyekeza uhlu lwe-phishing manje
+priv_blocked_label = Abathumeli abavinjiwe:
+priv_blocked_name = Abathumeli abavinjiwe
+priv_remove_blocked = &Susa umthumeli ovinjiwe
+priv_never_junk_label = Abathumeli abangahlali bebhekwa njengokungafuneki:
+priv_never_junk_name = Abathumeli abangahlali bebhekwa njengokungafuneki
+priv_remove_never_junk = &Susa umthumeli ofunekayo
+priv_allowed_label = Abathumeli abavunyelwe ukulayisha okuqukethwe okukude:
+priv_allowed_name = Abathumeli abavunyelwe
+priv_remove_selected = &Susa umthumeli okhethiwe
+
+# Message Filters.
+filt_rule_name = Igama lomthetho
+filt_enabled = &Kuvuliwe
+filt_match_label = Ukufana:
+filt_match_all = &Fana nakho konke okulandelayo (FUTHI)
+filt_match_any = &Fana noma yikuphi kokulandelayo (NOMA)
+filt_conditions_label = Izimo (shiya inani lingenalutho ukulweqa):
+filt_condition_field = Inkambu yesimo {number}
+filt_condition_contains = Isimo {number} siqukethe
+filt_actions_label = Izenzo:
+filt_mark_read = &Maka njengokufundiwe
+filt_flag = &Maka umlayezo ngenkanyezi
+filt_move_label = Hambisa kufolda:
+filt_move_name = Hambisa kufolda
+filt_rules_name = Imithetho yezihlungi
+filt_new = &Umthetho omusha...
+filt_edit = &Hlela umthetho...
+filt_delete = &Susa umthetho
+filt_up = &Khuphula
+filt_down = &Yehlisa
+filt_run_label = Sebenzisa manje kufolda:
+filt_run_name = Ifolda yokusebenzisa manje
+filt_run_now = &Sebenzisa manje
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Vula ngokhiye wokungena (Windows Hello)
+unl_security_key = &Vula ngokhiye wokuphepha
+unl_master_password_label = &Iphasiwedi enkulu:
+unl_master_password_name = Iphasiwedi enkulu
+unl_unlock = &Vula
+unl_exit = &Phuma ku-ZBox
+unl_methods_label = &Izindlela ezibhalisiwe:
+unl_methods_name = Izindlela zokuvula ezibhalisiwe
+unl_add_passkey = &Engeza ukhiye wokungena…
+unl_add_key = &Engeza ukhiye wokuphepha…
+unl_reassign = &Nikeza kabusha ukhiye wokungena kuleli khompyutha…
+unl_test = &Hlola…
+unl_remove = &Susa
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Kusuka ku-
+comp_to = Ku-
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Isihloko
+comp_attach_button = Namathisela ifayela...
+comp_sending = Kuyathunyelwa...
+comp_report_label = &Umbiko:
+comp_report_name = Umbiko
+comp_refresh = &Vuselela
+comp_copy = &Kopisha
+comp_preview_read = Njengoba umamukeli eyifunda
+comp_preview_source = I-HTML ezothunyelwa
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Umzimba womlayezo
+mv_blocked_notice = Isaziso sokuqukethwe okuvinjiwe
+mv_show_remote = &Khombisa okuqukethwe okukude
+mv_always_allow = &Vumela njalo lo mthumeli
+mv_message_headers = Izihloko zomlayezo
+mv_attachments = Okunamathiselwe
+mv_attachments_count = Okunamathiselwe ({count})
+mv_save_attachment = Londoloza: {filename}
+mv_save_all = Londoloza konke
+mv_html_view = Umbono we-HTML womlayezo
+mv_saved_message = Umlayezo olondoloziwe
+mv_show_remote_tip = Layisha kabusha lo mlayezo ngezithombe namastayela awo akude. Abalandeli abaziwayo basavinjiwe.
+mv_always_allow_tip = Layisha okuqukethwe okukude emlayezweni ngamunye ovela ku-{sender}.
+
+# The search tab.
+srch_account = I-akhawunti
+srch_folder = Ifolda
+srch_for = Sesha
+srch_look_in = Bheka ku-
+srch_in_all = Konke
+srch_in_subject = Isihloko
+srch_in_from = Kusuka ku-
+srch_in_to = Ku-
+srch_in_body = Umzimba
+srch_date = Usuku
+srch_date_any = Noma nini
+srch_date_today = Namuhla
+srch_date_yesterday = Izolo
+srch_date_week = Izinsuku ezingu-7 ezedlule
+srch_date_month = Izinsuku ezingu-30 ezedlule
+srch_date_year = Kulo nyaka
+srch_date_custom = Ububanzi obuyisiko
+srch_from_date = Kusukela osukwini (unyaka-inyanga-usuku, isikhathi ongasikhetha)
+srch_to_date = Kuya osukwini (unyaka-inyanga-usuku, isikhathi ongasikhetha)
+srch_unread = Okungafundiwe kuphela
+srch_flagged = Okunenkanyezi kuphela
+srch_attachment = Kunokunamathiselwe
+
+# The signature editor.
+sig_editors = Abahleli bezisignesha
+sig_formatted = Isiginesha, ifomethiwe
+sig_source = Isiginesha, umthombo we-HTML
+sig_plain_label = Okunye kombhalo ovamile (kuthunyelwa kanye ne-HTML)
+sig_plain_name = Okunye kombhalo ovamile
+
+# About ZBox.
+about_text_name = Umbhalo mayelana ne-ZBox
+about_view_license = &Buka ilayisense...
+about_google = &Amaphasiwedi ohlelo lwe-Google...
+about_support = &Sekela i-ZBox -- Ukuthuthukiswa nokunakekelwa komuntu oyedwa
+about_repos = &Izinqolobane zezinhlelo zika-Harith ku-GitHub
+about_contact = &Xhumana no-Harith
+btn_close_plain = Vala
+btn_cancel_plain = Khansela
+
+# The license window.
+eula_heading = Ilayisense ye-ZBox
+eula_text_name = Umbhalo welayisense ye-ZBox
+eula_third_party = Amakhasi amalayisense ezingxenye zomthengisi wesithathu:
+eula_agree = &Ngiyavuma ngemigomo engenhla
+eula_agree_name = Ngifundile futhi ngiyavuma ngemigomo yelayisense ye-ZBox
+eula_disagree = &Angivumi
+eula_next = &Okulandelayo
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Umbhalo wemibhalo ye-ZBox
+doc_copy = Kopisha ku-clipboard
+shortcuts_heading = Izinqamuleli zekhibhodi
+shortcuts_text_name = Umbhalo wezinqamuleli zekhibhodi
+
+# The main window's own panes.
+mf_toolbar = Ibha yamathuluzi eyinhloko
+mf_tabs = Amathebhu e-ZBox
+tree_heading = Ama-akhawunti namafolda
+tree_name = Isihlahla sama-akhawunti namafolda
+envlist_heading = Imilayezo
+envlist_name = Uhlu lwemilayezo
+rdr_heading = Umlayezo
+rdr_name = Umfundi womlayezo
+conv_heading_one = Umbhulo: umlayezo oyi-1
+conv_heading_many = Umbhulo: imilayezo engu-{count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} kwangu-{total} kwenziwe.
+bulk_cancelling = Kuyakhanselwa -- kuqedwa umlayezo wamanje...
+cache_clear_now = Susa i-cache yemilayezo ye-offline manje... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, kuvikelwe
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Igama elibonakalayo alidingekile -- shiya lingenalutho ukuze uthumele ngegama le-akhawunti uqobo.
+acct_note_identity = Ikheli le-imeyili lingahluka ku-imeyili yokungena uma umhlinzeki wakho enesizinda esiyisiko esixhumene nale bhokisi leposi. Iposi lizothunyelwa lamukelwe ngaphansi kwekheli elingenhla, kuyilapho ukungena kusasebenzisa i-imeyili yokungena. Shiya inkambu yephasiwedi ingenalutho ukugcina iphasiwedi esivele ilondolozwe kule akhawunti -- isibonelo ngemva kokushintsha iphasiwedi yohlelo ye-Gmail, thayipha entsha lapha; ngaphandle kwalokho shiya ingenalutho.
+acct_note_identities = Amanye amakheli le akhawunti engathumela ngawo iphendule ngawo. Ukuphendula umlayezo othunyelwe kwelinye lawo kubeka u-Kusuka ku- kuleli kheli esikhundleni salelo elingenhla.
+acct_note_signature = Kunamathiselwa emlayezweni ngamunye omusha, empendulweni nasekudlulisweni okuthunyelwe kule akhawunti, ngaphansi komugqa othi "-- ". Shiya ingenalutho ukuze kungabi nalutho. U-Hlela isiginesha uvula umhleli ofomethiwe, lapho okugqamile, izinhlu nezixhumanisi kutholakala khona; ibhokisi elingenhla lithi liphethe inguqulo yombhalo ovamile ephuma nayo.
+acct_note_junk = Iyiphi ifolda yangempela u-Maka njengokungafuneki ahambisa kuyo imilayezo. U-"{automatic}" usebenzisa isilinganiso esifanayo esazi umhlinzeki esisivele sisetshenziswa u-Ugcino nodoti; sisethe kuphela uma lesi silinganiso singalungile noma ifolda yakho yokungafuneki inegama eliyisiko.
+acct_note_disable = I-akhawunti ekhutshaziwe ayixhunyanwa nayo neze -- akukho IDLE, akukho ukuvuselela ngezikhathi, akukho lutho -- kuze kube yinikezwa amandla futhi. Isabonakala emthini, ihlukaniswe (ikhutshaziwe), nepasi layo elisivele ladawunilodwa lisatholakala ku-offline. Isishintshi esifanayo no-Ama-akhawunti > Khubaza i-akhawunti noma imenyu yokuqukethwe ye-akhawunti uqobo; lena iyindawo nje enye yokuyifinyelela.
+acct_note_default = Amafolda ale akhawunti avela kuqala emthini, futhi umlayezo omusha uthunyelwa kuyo ngokuzenzakalelayo ngaphandle kwalokho uma kushintshwa ngesandla kumbhali. Akuthinti ukuthi ikheli elisetshenziswa yimpendulo noma ukudlulisela -- lokho sekulandela umlayezo ophendulwayo (bheka Ubuwena obungeziwe ngenhla). Kuhlala kunei-akhawunti eyodwa kuphela ezenzakalelayo, ngakho ukususa ukumaka lokhu kweyamanje ezenzakalelayo ngaphandle kokukumaka kwenye kuyishiya kunjalo -- esikhundleni salokho maka ibhokisi le-akhawunti enye ukuyinikeza ezenzakalelayo.
+acct_note_mute = &Ukuthulisa kuvimba umsindo weposi elisha, isimemezelo esikhulunywayo nesaziso se-Windows sale akhawunti, noma kusethwe kanjani. Akuthinti ezinye ama-akhawunti, futhi kusaphansi kwezishintshi eziyinhloko ku-Amasethingi > Umsindo nezaziso (imisindo nezaziso zedeskithophu ngokuphelele).
+wiz_note_app_password = Uma usudale iphasiwedi yohlelo ye-ZBox, cindezela u-Okulandelayo ukuze uqhubeke.
+wiz_note_login = Imininingwane yokungena.\nUma i-imeyili yakho yokungena ihlukile kukheli elingenhla, isibonelo i-akhawunti yakho kumhlinzeki ngu-login@example.net kodwa ufuna ukuthumela nokwamukela njengo-you@example.org, faka i-imeyili yokungena lapha. Ungasetha ikheli lokuthumela eliyisiko kamuva ku-Amasethingi ama-akhawunti nobuwena.
+wiz_note_servers = Amasethingi eseva, agcwaliswe kusengaphambili lapho isizinda sibonwa khona. Hlela noma yini edinga ukuhluka.
+wiz_preset_none = Akukho okusethwe kusengaphambili kokutholakele kwalesi sizinda. Faka ngesandla amasethingi eseva yomhlinzeki wakho; amakhasi osizo womhlinzeki wakho azowabala.
+ab_note_groups = Thayipha igama leqembu emkhathini othi Ku-, Cc noma Bcc wewindi lokubhala ukuze kugcwaliswe wonke amalungu alo ngesikhathi esisodwa.
+cache_note_intro = Lokhu kususa amakhophi endaweni e-ZBox kuphela. Akukho okususwa kunoma iyiphi iseva yamameyili, futhi umlayezo osusiwe udawunilodwa futhi ngokuzayo uma uwuvula.
+cache_note_age = Ukuhlanza okuzenzakalelayo kusebenza kanye ngosuku, uma i-ZBox ingabanawo umsebenzi wekhibhodi imizuzu eyishumi futhi kungekho mlayezo ovuliwe. Kuya ngosuku lomlayezo ngamunye, kuhlanganise nemilayezo esekule akhawunti yakho.
+filt_note_intro = Imithetho isebenza ngokulandelana, kusuka phezulu kuye phansi, ihlola Kusuka ku-, Ku- nesihloko. Isetshenziswa ngokuzenzakalelayo eposini elisha njengoba lifika Kokungenayo kwale akhawunti; sebenzisa u-Sebenzisa manje ngezansi ukulisebenzisa emilayezweni esevele isefolda.
+filt_note_run_now = Isebenzisa umthetho ngamunye ovuliwe ongenhla, ngokulandelana, emlayezweni ngamunye osevele usefolda ekhethiwe -- ilondoloza izinguquko zakho kuqala, njengo-OK.
+mp_note_intro = Lawa ma-akhawunti asethwe kwelinye ikhompyutha. Faka iphasiwedi enkulu ukuvula amaphasiwedi awo alondoloziwe lapha. Uzobuzwa kanye kuleli khompyutha.\n\nNgaphandle kwayo, i-akhawunti ngayinye kufanele ingene futhi kuseva yayo yamameyili.
+priv_note_remote = Izithombe, amashidi ezitayela nezinhlobo zohlamvu umlayezo ozilayisha ku-inthanethi zitshela umthumeli ngomzuzu owuvule ngawo, nokuthi uvela kuphi. Uma kuvuliwe, akukho okulayishwayo: kuvela isaziso ngenhla komlayezo esitshela ukuthi kuvinjwe ini, futhi u-Ctrl+Shift+I uyalayisha kuleyo mlayezo kuphela. Izithombe ezinamathiselwe emlayezweni uqobo zibonakala njalo. Imibhalo yohlelo namafreyimu afakwe ngaphakathi asuswa kuzo zombili izimo futhi awalayishwa neze.
+priv_note_blocklist = Leli yileyeli leveli yesibili. Linendaba uma ulayisha okuqukethwe okukude komlayezo, noma uvumela umthumeli: izithombe ziyalayisha, kodwa noma yini enikezwa isizinda esaziwayo sokulandela noma sezikhangiso asilayishwa. Uhlu lwedawunilodwa ezinhlwini zomphakathi zezikhangiso nabalandeli bese luhlanganiswa; ukubuyekeza kuthatha isekhondi noma amabili futhi kusebenza ngemuva.
+priv_note_junk = Akukho kuqagela. U-Maka njengokungafuneki wengeza umthumeli ohlwini lwabavinjiwe ngezansi, ngaphandle uma umlayezo uvele ohlwini lwamameyili. U-Maka njengokufunekayo wengeza umthumeli ohlwini lwabangahlali bengafuneki futhi lowo mlayezo awusahlolwa neze. Umlayezo omusha ovela kumthumeli ovinjiwe umakwa ohlwini njengo-Umthumeli ovinjiwe; lowo oxhumanisa newebhusayithi ye-phishing noma yezinhlobo ezimbi eyaziwayo umakwa njengo-Okungenzeka i-phishing. Ukuhlunga kweposi okungafuneki komhlinzeki weposi lakho kusasebenza njengakuqala.
+priv_status_phishing_updating = Uhlu lwe-phishing: luyabuyekezwa ngemuva. Vula leli windi futhi ukuze ubone umphumela.
+priv_status_updating = Kuyabuyekezwa ngemuva. Vula leli windi futhi ukuze ubone umphumela.
+rel_note_intro = Imilayezo ehlobene ne-"{subject}" ngezihloko zayo ze-Message-ID/References, kuwo wonke amafolda ale akhawunti.
+srch_note_intro = Sesha amagama kuwo wonke ama-akhawunti namafolda, noma unciphise ukusesha ngezinketho ezingezansi. Shiya amagama engenalutho ukuthola imilayezo ngosuku noma ngamabhokisi okumaka kuphela.
+sig_note_plain = Shiya okunye kombhalo ovamile kungenalutho futhi kuzobhalwa kusuka kusiginesha efomethiwe uma ucindezela u-Londoloza.
+unified_note_intro = Khetha ukuthi amaphi amafolda azohlanganiswa kuwo wonke ama-akhawunti. Ngayinye ekhethiwe iba yinto eyodwa emthini ehlanganisa leyo folda evela kuwo wonke ama-akhawunti akho.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Mayelana ne-ZBox
+title_account_settings = Amasethingi ama-akhawunti nobuwena: {name}
+title_new_account = I-akhawunti entsha
+title_address_book = Incwadi yamakheli
+title_members = Amalungu: {name}
+ab_group_name_prompt = Igama leqembu:
+title_new_group = Iqembu elisha
+title_cache_cleanup = Ukumisa ukuhlanza i-cache
+cache_age_prompt = Susa ngokuzenzakalelayo imilayezo ye-cache endala kune:
+title_automatic_cleanup = Ukuhlanza okuzenzakalelayo
+comp_link_prompt = Ikheli lesixhumanisi:
+title_insert_link = Faka isixhumanisi
+title_composer_diagnostics = Ukuhlolwa komthayiphi
+title_formatted_preview = Ukubuka kuqala okufomethiwe
+title_license_agreement = Isivumelwano selayisense ye-ZBox
+title_message_filters = Izihlungi zemilayezo: {account}
+title_master_password_required = Kudingeka iphasiwedi enkulu
+title_privacy_dialog = Ubumfihlo nokuvimba okuqukethwe
+title_privacy = Ubumfihlo
+title_settings = Amasethingi
+set_tab_general = Okujwayelekile
+set_tab_personalization = Ukwenza ngendlela oyifunayo
+set_tab_accessibility = Ukufinyeleleka namakhiye ezinqamuleli
+set_tab_maintenance = Ukunakekela nokuhlanza
+set_tab_sounds = Imisindo nezaziso
+set_tab_security = Ukuphepha
+title_unified_folders = Amafolda ahlanganisiwe
+title_zbox_locked = I-ZBox ikhiyiwe
+title_message_view = Umbono womlayezo
+title_remote_content = Okuqukethwe okukude
+title_refresh = Vuselela
+title_refresh_all = Vuselela konke
+mv_choose_folder = Khetha ifolda yokulondoloza okunamathiselwe
+title_thread = Intambo
+title_inbox = Okungenayo
+title_compose = Bhala
+title_watch_thread = Bheka intambo
+title_ignore_thread = Ziba intambo
+title_edit_signature = Hlela isiginesha
+title_account = I-akhawunti
+mf_folder_name_prompt = Igama lefolda:
+mf_new_name_prompt = Igama elisha:
+title_refresh_all_accounts = Vuselela wonke ama-akhawunti
+title_sender = Umthumeli
+title_new_mail = Iposi elisha
+mf_export_dialog_title = Thumela wonke ama-akhawunti angu-{count} namasethingi
+mf_related_tab = Okuhlobene: {subject}
+title_hotkeys_diagnostic = Ukuhlolwa kwamakhiye esinqamuleli
+set_choose_attachment_dir = Khetha ifolda yokulondoloza okunamathiselwe
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = I-ZBox ikhiyiwe. Sebenzisa noma iyiphi indlela engezansi ukuyivula. Ukukhansela kuvala i-ZBox ngaphandle kokuvula noma iyiphi i-akhawunti.
+unl_note_foreign_passkey = Ukhiye wokungena olondolozwe nale folda ungokwekhompyutha elinye, ngakho awukwazi ukusetshenziswa lapha. Vula ngokhiye wakho wokuphepha noma ngephasiwedi enkulu, bese usebenzisa u-Amasethingi, Ukuphepha, Izindlela zokuvula ukusetha ukhiye wokungena kuleli khompyutha.
+unl_note_methods = Noma iyiphi kwalezi ivula i-ZBox uma ukhiye wohlelo uvuliwe, kanye nephasiwedi enkulu. Ukhiye wokungena usebenzisa i-Windows Hello kuleli khompyutha; ukhiye wokuphepha ungukhiye we-FIDO2 nge-USB noma i-NFC futhi usebenza kunoma yikuphi ikhompyutha ewufaka kulo.
+unl_note_not_encryption = Lezi zivula uhlelo. Aziwubetheli lutho: iphasiwedi enkulu isaba yodwa engavula amaphasiwedi ama-akhawunti alondoloziwe kukhompyutha le folda engakaze isetshenziswe kulo. Kufanele isethwe kuqala, futhi akukho okungengezwa kwalezi uze wenze lokho.
+unl_add_passkey_unavailable = &Engeza ukhiye wokungena (akutholakali)
+unl_add_key_unavailable = &Engeza ukhiye wokuphepha (akutholakali)
+unl_reassign_unavailable = &Nikeza kabusha ukhiye wokungena kuleli khompyutha (akutholakali)
+unl_status_cancelled_passkey = Ukhiye wokungena ukhanseliwe. I-ZBox isakhiyiwe.
+unl_status_cancelled_key = Ukhiye wokuphepha ukhanseliwe. I-ZBox isakhiyiwe.
+unl_status_enter_password = Faka iphasiwedi enkulu.
+unl_status_no_master = Ayikho iphasiwedi enkulu esethiwe, ngakho ukhiye wokungena noma ukhiye wokuphepha akakwazi ukwengezwa okwamanje. Setha eyodwa ngenkinobho ethi Iphasiwedi enkulu ku-Amasethingi, Ukuphepha, bese ubuyela lapha. Iphasiwedi enkulu yilokho okuvula amaphasiwedi ama-akhawunti akho alondoloziwe kwelinye ikhompyutha; ukhiye wokungena uvula uhlelo kuleli kuphela, ngakho awukwazi ukuma wodwa.
+unl_status_unsupported = I-Windows yaleli khompyutha ayisekeli okhiye bokungena noma okhiye bokuphepha, ngakho iphasiwedi enkulu kuphela engavula i-ZBox lapha.
+unl_status_foreign_one = Ukhiye wokungena oyi-1 ungokwekhompyutha elinye futhi awukwazi ukuvula i-ZBox lapha. Ukunikeza kabusha kuwushintshela ngoyedwa owenziwe kuleli khompyutha.
+unl_status_foreign_many = Okhiye bokungena abangu-{count} bangokwekhompyutha elinye futhi abakwazi ukuvula i-ZBox lapha. Ukunikeza kabusha kubashintshela ngoyedwa owenziwe kuleli khompyutha.
+unl_status_foreign_one_no_hello = Ukhiye wokungena oyi-1 ungokwekhompyutha elinye futhi awukwazi ukuvula i-ZBox lapha. I-Windows Hello ayisethiwe lapha, ngakho akukwazi ukushintshwa kuleli khompyutha; U-Susa uyawukhohlwa.
+unl_status_foreign_many_no_hello = Okhiye bokungena abangu-{count} bangokwekhompyutha elinye futhi abakwazi ukuvula i-ZBox lapha. I-Windows Hello ayisethiwe lapha, ngakho abakwazi ukushintshwa kuleli khompyutha; U-Susa uyabakhohlwa.
+unl_status_no_hello = I-Windows Hello ayisethiwe kuleli khompyutha, ngakho ukhiye wokungena awukwazi ukwengezwa lapha. Ukhiye wokuphepha usengakwenziwa.
+unl_status_none_registered = Akukho ndlela yokuvula ebhalisiwe okwamanje.
+unl_status_add_cancelled_passkey = Ukwengeza ukhiye wokungena kukhanseliwe.
+unl_status_add_cancelled_key = Ukwengeza ukhiye wokuphepha kukhanseliwe.
+unl_status_added = Kwengeziwe: {name}.
+unl_status_reassign_cancelled = Ukunikeza kabusha kukhanseliwe. Akukho okushintshile.
+unl_status_reassigned = Kwengezwe i-{name} futhi kukhohliwe okungu-{count} kwamanye amakhompyutha.
+unl_status_test_cancelled = Ukuhlola kukhanseliwe.
+unl_status_removed = Kususiwe.
+unl_remove_warning_last = Susa i-{name}?\n\nIyiyona kuphela indlela yokuvula ebhalisiwe futhi ayikho iphasiwedi enkulu esethiwe, ngakho ngokhiye wohlelo ovuliwe angeke kusale lutho lokuvula i-ZBox. Ukhiye uyeqiwa kunokukukhiya ngaphandle, kodwa i-ZBox izovuleka ingakhiyiwe.
+unl_remove_warning = Susa i-{name}? I-ZBox ngeke isayamukela.
+ab_col_email = I-imeyili
+ab_col_name = Igama
+ab_col_phone = Ucingo
+ab_no_contacts = Akukabikho abathintana nabo.
+acct_auto_check = Hlola ngokuzenzakalelayo imilayezo emisha
+acct_note_auto_check = Valiwe: i-ZBox ayixhumani nale akhawunti yodwa neze -- akukho kubheka iposi elisha, akukho kuvuselela ngezikhathi, akukho kudawunilodwa ngemuva -- ngakho iseva engathembekile ayikwazi ukunciphisa ama-akhawunti amanye. Iposi layo elidawunilodiwe lisavuleka, futhi u-Vuselela (F5), ukuthumela nokusula kusafinyelela iseva. Okufanayo no-Misa okwesikhashana ukuhlola okuzenzakalelayo kumenyu ethi Amathuluzi noma kumenyu yokuqukethwe ye-akhawunti.
+bl_day_ago = usuku olu-1 olwedlule
+bl_days_ago = izinsuku ezingu-{days} ezedlule
+bl_label_blocklists = Uhlu lokuvimba
+bl_label_phishing = Uhlu lwe-phishing
+bl_last_failed = Umzamo wokugcina wehlulekile: %s
+bl_not_downloaded = Alukadawunilodwa.
+bl_save_failed = I-%s idawunilodiwe kodwa ayikwazanga ukulondolozwa: %s
+bl_seed_only = Izizinda ezingu-%s ezivela ohlwini olufakwe kanye. Alukaze lubuyekezwe ku-inthanethi.
+bl_some_failed = Eminye imithombo ihlulekile: %s
+bl_some_unreachable = Eminye imithombo ayifinyeleleki: %s
+bl_status_line = Izizinda ezingu-%s. Kubuyekezwe ekugcineni %s.
+bl_up_to_date = I-%s isesikhathini samanje.
+bl_update_failed = Ayikwazanga ukubuyekeza i-%s: %s
+bl_updated = I-%s ibuyekeziwe: izizinda ezingu-%s.
+cc_age_choice = I-cache yemilayezo yonke endala kune-%s
+cc_auto_button = Ukuhlanza okuzenzakalelayo: imilayezo ye-cache endala kune-%s...
+comp_btn_discard = &Lahla
+comp_btn_keep_editing = &Qhubeka uhlela
+comp_btn_save_draft = &Londoloza idrafti
+comp_no_account = Ayikho i-akhawunti esethiwe
+comp_saving_draft = Kulondolozwa idrafti…
+comp_this_message = lo mlayezo
+comp_unsent_save_q = Londoloza i-%s njengedrafti ngaphambi kokuvala?
+comp_unsent_tray_q = Londoloza i-%s njengedrafti ngaphambi kokuba i-ZBox iye endaweni yezaziso?
+doc_unreadable = Ifayela lemibhalo alikwazanga ukufundwa:
+envlist_all_disabled = Wonke ama-akhawunti akhutshaziwe.
+envlist_col_date = Usuku
+envlist_col_from = Kusuka ku-
+envlist_col_status = Isimo
+envlist_col_subject = Isihloko
+envlist_collapsed = Kugoqiwe (%d)
+envlist_empty = Ayikho imilayezo kule folda.
+envlist_loading = Kulayishwa imilayezo...
+envlist_no_accounts = Akukabikho ama-akhawunti asethiwe.
+envlist_no_ignored = Azikho izintambo ezizibiwe kule folda.
+envlist_no_watched = Azikho izintambo ezibhekiwe kule folda.
+envlist_select_folder = Khetha i-akhawunti noma ifolda ukuze ulayishe imilayezo.
+eula_link_0 = Vula ikhasi lelayisense ye-Himalaya esiphequluleni sakho
+eula_link_1 = Vula ikhasi lelayisense ye-StevenBlack hosts esiphequluleni sakho
+eula_link_2 = Vula ikhasi lelayisense ye-EasyList/EasyPrivacy esiphequluleni sakho
+eula_link_3 = Vula ikhasi lelayisense ye-Phishing.Database esiphequluleni sakho
+eula_read_note = Funda ilayisense engezansi, kuhlanganise nezingxenye zabantu besithathu. Kufanele umake u-Ngiyavuma ngaphambi kokuba u-Okulandelayo atholakale. U-Angivumi uvala i-ZBox ngaphandle kokuyiqalisa, futhi ususa lokho okudalwe yilokhu kusebenza kuze kube manje.
+eula_unreadable = Ifayela lelayisense alikwazanga ukufundwa:\n%s
+filters_title = Sebenzisa izihlungi
+flag_title = Maka umlayezo ngenkanyezi
+folder_type_archive = Ugcino
+folder_type_drafts = Amadrafti
+folder_type_inbox = Okungenayo
+folder_type_junk = Okungafuneki
+folder_type_sent = Okuthunyelwe
+folder_type_trash = Udoti
+mime_application_json = Ifayela le-JSON
+mime_application_msword = Idokhumenti ye-Word
+mime_application_octet_stream = Ifayela le-binary
+mime_application_pdf = I-PDF
+mime_application_vnd_ms_excel = Isipredishithi se-Excel
+mime_application_vnd_ms_powerpoint = Inkulumo ye-PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Inkulumo ye-PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Isipredishithi se-Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Idokhumenti ye-Word
+mime_application_xml = Ifayela le-XML
+mime_application_zip = Ugcino lwe-ZIP
+mime_audio_mpeg = Umsindo we-MP3
+mime_audio_ogg = Umsindo we-OGG
+mime_audio_wav = Umsindo we-WAV
+mime_image_bmp = Isithombe se-BMP
+mime_image_gif = Isithombe se-GIF
+mime_image_jpeg = Isithombe se-JPEG
+mime_image_png = Isithombe se-PNG
+mime_image_svg_xml = Isithombe se-SVG
+mime_image_webp = Isithombe se-WebP
+mime_text_csv = Ifayela le-CSV
+mime_text_html = Ifayela le-HTML
+mime_text_plain = Ifayela lombhalo
+mime_video_mp4 = Ividiyo ye-MP4
+mime_video_x_msvideo = Ividiyo ye-AVI
+move_title_junk = Maka njengokungafuneki
+move_title_move_to = Hambisa ku-
+move_title_not_junk = Maka njengokufunekayo
+mp_explain_set = Iphasiwedi enkulu isethiwe. Yiyona evumela le folda ye-ZBox ukuvula amaphasiwedi ama-akhawunti ayo alondoloziwe kwelinye ikhompyutha.\n\nShiya womabili amabhokisi ephasiwedi entsha engenalutho bese ucindezela u-OK ukuyisusa. Ukususa akuthinti leli khompyutha, kodwa ifolda ngeke isasebenza kunoma yiliphi elinye ngaphandle kokuba i-akhawunti ngayinye ingene futhi.
+mp_explain_unset = Ayikho iphasiwedi enkulu esethiwe, ngakho amaphasiwedi ama-akhawunti alondoloziwe angafundwa kuphela kuleli khompyutha nakule akhawunti ye-Windows. Uma ukopisha ifolda kwenye indawo, i-akhawunti ngayinye kufanele ingene futhi kuseva yayo yamameyili.\n\nSetha eyodwa futhi i-ZBox izoyibuza kanye kukhompyutha ngayinye entsha, bese ivula ngokujwayelekile lapho. Leli khompyutha ngeke libuze futhi.\n\nYibhale phansi futhi uyigcine endaweni ephephile. Ayigcinwandawo futhi ayikwazi ukubuyiswa: uma uyikhohlwa, i-akhawunti ngayinye kufanele ingene futhi kuseva yayo yamameyili.
+mp_label_confirm = &Qinisekisa iphasiwedi enkulu entsha:
+mp_label_current = &Iphasiwedi enkulu yamanje:
+mp_label_master = &Iphasiwedi enkulu:
+mp_label_new = &Iphasiwedi enkulu entsha:
+mp_name_confirm = Qinisekisa iphasiwedi enkulu entsha
+mp_name_current = Iphasiwedi enkulu yamanje
+mp_name_master = Iphasiwedi enkulu
+mp_name_new = Iphasiwedi enkulu entsha
+mp_prompt_existing = Amaphasiwedi akho ama-akhawunti alondoloziwe avikelwe kuleli khompyutha kuphela. Setha iphasiwedi enkulu ukuze nawo avuleke uma uthutha i-ZBox uyiyisa kwelinye.
+mp_prompt_first_run = I-ZBox isiseduze nokulondoloza amaphasiwedi akho ama-akhawunti. Setha iphasiwedi enkulu manje ukuze avuleke noma uthutha i-ZBox uyiyisa kwelinye ikhompyutha.
+mp_prompt_new_account = I-ZBox isiseduze nokulondoloza iphasiwedi yale akhawunti. Setha iphasiwedi enkulu kuqala ukuze i-akhawunti ivuleke noma uthutha i-ZBox uyiyisa kwelinye ikhompyutha.
+mp_removed_done = Iphasiwedi enkulu isusiwe. Amaphasiwedi alondoloziwe manje asebenza kuphela kuleli khompyutha nakule akhawunti ye-Windows.
+mp_set_done = Iphasiwedi enkulu isethiwe. I-ZBox izoyibuza kanye kukhompyutha ngayinye entsha lapho le folda ivulwa khona, bese ivula ngokujwayelekile lapho.
+mv_body_title = Umzimba womlayezo
+mv_col_format = Ifomethi
+mv_col_name = Igama
+mv_col_size = Usayizi
+mv_format_unknown = Akwaziwa
+mv_size_unknown = Usayizi ongaziwa
+na_account_settings = Amasethingi ama-akhawunti nobuwena
+na_disable_account = Khubaza i-akhawunti
+na_edit_signature = Hlela isiginesha
+na_message_filters = Izihlungi zemilayezo
+na_mute_account = Thulisa i-akhawunti
+na_pause_auto_check = Misa okwesikhashana ukuhlola okuzenzakalelayo
+na_remove_account = Susa i-akhawunti
+na_set_default = Setha njengeakhawunti ezenzakalelayo
+no_offline_copy = Ayikho ikhophi ye-offline ye-%s. Yivule uma une-inthanethi, noma usebenzise u-Ifayela, Ngaphandle kwe-inthanethi, Vumelanisa manje.
+perm_delete_confirm = {msg} Lokhu kweqa ifolda kadoti futhi akukwazi ukuhlehliswa.
+perm_delete_many = Susa unomphela imilayezo engu-{count}?
+perm_delete_one = Susa unomphela umlayezo ongu-{count}?
+preset_note_apple = I-Apple idinga iphasiwedi ethize yohlelo.
+preset_note_fastmail = I-Fastmail idinga iphasiwedi yohlelo.
+preset_note_google = I-Google idinga iphasiwedi yohlelo noma i-OAuth2, hhayi iphasiwedi yakho evamile.
+preset_note_proton = I-ProtonMail idinga uhlelo lwe-ProtonMail Bridge olusebenza endaweni.
+preset_note_yahoo = I-Yahoo idinga iphasiwedi yohlelo.
+priv_phishing_not_loaded = Uhlu lwe-phishing: alukalayishwa. Ludawunilodwa ngokokuqala uma le mithetho ivuliwe futhi i-ZBox une-inthanethi.
+priv_phishing_prefix = Uhlu lwe-phishing:
+priv_status_unavailable = Isimo soluhlu lokuvimba asitholakali.
+rdr_load_failed = Ayikwazanga ukulayisha umlayezo.\n\n{message}
+rdr_loading = Kulayishwa umlayezo...
+rdr_select_message = Khetha umlayezo ukuze uwufunde lapha.
+set_autosave_off = Valiwe — sebenzisa u-Londoloza idrafti (Ctrl+S) ukulondoloza ngesandla
+set_autosave_seconds = Njalo ngamasekhondi angu-{seconds}
+set_no_unlock = Alukho ukhiye wokungena noma ukhiye wokuphepha osetshenziswayo lapha
+set_purge_days = Ngemva kwezinsuku ezingu-{days}
+set_purge_off = Valiwe — udoti nokuNgafuneki akususwa ngokuzenzakalelayo
+set_purge_one_day = Ngemva kosuku olu-1
+set_val_seconds = amasekhondi angu-{seconds}
+set_val_one_second = isekhondi eli-1
+set_silence_off = Valiwe
+set_announce_wait = Linda ukhiye
+set_autosave_minutes = Njalo ngemizuzu engu-{minutes}
+set_autosave_one_minute = Njalo ngomzuzu
+set_rt_bundled_installed = I-runtime efakwe kanye: ifakiwe.
+set_rt_bundled_many = I-runtime efakwe kanye: i-%s ifakiwe.
+set_rt_bundled_none = I-runtime efakwe kanye: ayikho efakiwe, ngakho i-ZBox isebenzisa yesistimu yonke.
+set_rt_bundled_unknown = I-runtime efakwe kanye: ayikwazanga ukuhlonzwa.
+set_rt_bundled_ver = I-runtime efakwe kanye: inguqulo ye-%s ifakiwe.
+set_rt_system_unknown = I-runtime yesistimu yonke: inguqulo ayikwazanga ukuhlonzwa.
+set_rt_system_ver = I-runtime yesistimu yonke: inguqulo ye-%s.
+set_unlock_many = Izindlela zokuvula ezingu-%d zisetshenziswa lapha
+set_unlock_unreadable = Izindlela zokuvula azikwazanga ukufundwa
+sig_tab_formatted = Ifomethiwe
+sig_tab_source = Umthombo we-HTML
+srch_all_accounts = Wonke ama-akhawunti
+srch_all_folders = Wonke amafolda
+tab_mail = Iposi
+tab_new_message = Umlayezo omusha
+tab_saved_message = Umlayezo olondoloziwe
+title_copy_to_err = Kopisha ku-
+title_mark_message = Maka umlayezo
+title_unsent_message = Umlayezo ongathunyelwanga
+tree_unified_root = Amafolda ahlanganisiwe
+unlock_kind_passkey = Ukhiye wokungena (Windows Hello)
+unlock_kind_security_key = Ukhiye wokuphepha
+unlock_prompt_message = I-Windows ikucela uqinisekise. Phendula isicelo sayo nge-Windows Hello, i-PIN yakho noma ukhiye wakho wokuphepha. Leli windi liyazivala lapho i-Windows isiqedile.
+unlock_prompt_title = Ukuphepha kwe-Windows
+unlock_registering = Kubhaliswa le ndlela yokuvula
+unlock_the_passkey = Ukhiye wokungena
+unlock_the_security_key = Ukhiye wokuphepha
+wildcard_eml = Amafayela e-imeyili (*.eml)|*.eml|Wonke amafayela (*.*)|*.*
+wildcard_export = Okuthunyelwe kwe-ZBox (*.json)|*.json
+wiz_not_supported = AKUSEKELWA: {name}. {note} Le akhawunti ayikwazi ukwengezwa ku-ZBox.
+stock_apply = &Sebenzisa
+stock_cancel = Khansela
+stock_close = &Vala
+stock_help = &Usizo
+stock_no = &Cha
+stock_ok = OK
+stock_yes = &Yebo
+wiz_btn_back = &< Emuva
+wiz_btn_finish = &Qeda
+wiz_btn_next = &Okulandelayo >
+acct_unsaved_q = Londoloza izinguquko kule akhawunti?
+btn_save = &Londoloza
+spell_add_to_dictionary = &Engeza esichazamazwini
+spell_no_suggestions = Akukho ziphakamiso
+title_signature_for = Isiginesha: {account}
+title_mark_folder_read = Maka ifolda njengefundiwe
+title_update_available = Isibuyekezo se-ZBox
+update_available = I-ZBox {new} iyatholakala. Unayo i-{current}.
+upd_notes_label = &Amanothi okukhishwa:
+upd_no_notes = Awekho amanothi okukhishwa.
+upd_notes_name = Amanothi okukhishwa
+upd_update_now = &Yebo, buyekeza manje
+upd_remind_later = &Ngikhumbuze kamuva
+title_update_download = Kudawunilodwa isibuyekezo se-ZBox
+upd_downloading = Kudawunilodwa i-ZBox {version}...
+upd_progress_name = Ukuqhubeka kokudawuniloda
+upd_cancel = &Khansela
+upd_cancelling = Kuyakhanselwa...
+set_updates_label = Izibuyekezo:
+set_update_auto = &Hlola izibuyekezo ngokuzenzakalelayo
+set_update_mode_label = Uma kutholakala isibuyekezo:
+set_update_ask = &Ngibuze
+set_update_silent = &Dawuniloda futhi ufake ngokuthula
+set_update_note = I-ZBox ihlola i-GitHub ukuthola ukukhishwa okusha kanye ngosuku ngokuphezulu, uma ingenzi lutho kuphela, futhi ayithumeli lutho ngaphandle kwenombolo yenguqulo yayo. U-Ngibuze ukhombisa inguqulo entsha namanothi ayo okukhishwa, no-Yebo, buyekeza manje no-Ngikhumbuze kamuva. U-Dawuniloda futhi ufake ngokuthula udawunilodela isibuyekezo ngesikhathi esingenzi lutho futhi usifaka ngokuzayo uma uvala i-ZBox ngokuphelele, hhayi ngenkathi usebenza. Isibuyekezo sishintsha kuphela amafayela enhlelo ye-ZBox uqobo: ama-akhawunti akho, amaphasiwedi, amasethingi, iposi, amarekhodi, izitimu zemisindo nanoma yiluphi ulimi olwengeziwe awasoze athintwa, futhi inguqulo yangaphambilini iyagcinwa futhi izibuyisela uma entsha ingaqali. U-Usizo, Izibuyekezo unalo futhi u-Hlola izibuyekezo manje nekhasi lokukhishwa lokubuyekeza ngesandla.
+set_update_check_now = &Hlola manje
+mv_attachment_button = {filename} ({format})
+att_open = Vula
+att_save = Londoloza...
+att_save_all = Londoloza konke okunamathiselwe
+title_save_attachment = Londoloza okunamathiselwe
+title_full_headers = Izihloko ezigcwele
+hdr_copy_all = Kopisha konke
+acct_identity_own_signature = Sebenzisa isiginesha yayo
+acct_identity_own_reply_to = Sebenzisa ikheli layo le-Phendula-ku-
+acct_identity_reply_to = Ikheli le-Phendula-ku-
+acct_identity_always_cc = Njalo thumela i-Cc kulala makheli
+acct_identity_cc = Amakheli e-Cc
+acct_identity_always_bcc = Njalo thumela i-Bcc kulala makheli
+acct_identity_bcc = Amakheli e-Bcc
+acct_identity_own_folders = Sebenzisa amafolda ayo e-Amadrafti ne-Okuthunyelwe
+acct_identity_drafts = Ifolda ye-Amadrafti
+acct_identity_sent = Ifolda ye-Okuthunyelwe
+acct_identity_own_smtp = Sebenzisa iseva yayo yokuphumayo
+acct_identity_smtp_login = Igama lokungena lokuphumayo
+acct_identity_smtp_password = Iphasiwedi yokuphumayo
+acct_identity_test_smtp = &Hlola iseva yokuphumayo
+acct_identity_note_smtp = Shiya igama lokungena lingenalutho ukuze ungene ngekheli le-imeyili lalobu buwena. Amakhophi athunyelwe asaya kufolda ye-Okuthunyelwe yale akhawunti, noma kufolda yalobu buwena ye-Okuthunyelwe uma inayo.
+identity_field_required = Gcwalisa u-{field}, noma ususe ukumaka ibhokisi lawo.
+identity_field_invalid = U-{field} unekheli elingavumelekile.
+identity_folders_required = Khetha ifolda ye-Amadrafti, ifolda ye-Okuthunyelwe noma zombili, noma ususe ukumaka ibhokisi lazo.
+identity_password_required = Faka iphasiwedi yokuphumayo.
+identity_smtp_testing = Kuhlolwa iseva yokuphumayo.
+identity_smtp_ok = Iseva yokuphumayo yamukele ukungena.
+identity_smtp_failed = Ukuhlolwa kweseva yokuphumayo kwehlulekile.\n\n{error}
+set_bare_keys_note_move = U-M no-C bavula amamenyu e-Hambisa ku- ne-Kopisha ku- wamafolda emilayezweni ekhethiwe, futhi u-Shift+M uvula ibhokisi lapho uthayipha khona ingxenye yegama lefolda ukuze uyihambise lapho. Ukukuvala kubuyisela u-M no-C nakukuhambeni ngohlamvu lokuqala.
+folder_search_filter = Igama lefolda liqukethe
+folder_search_list = Amafolda afanayo
+folder_search_no_match = Ayikho ifolda efana nalelo gama.
+wiz_signin_method = Indlela yokungena
+wiz_method_password = Iphasiwedi
+wiz_method_microsoft = I-akhawunti ye-Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Ukungena nge-Microsoft. Amasethingi eseva ye-Outlook.com, Hotmail, Live ne-Microsoft 365 agcwalisiwe.
+wiz_welcome_notice = Gmail. Iphasiwedi yakho evamile ye-Google izokwenqatshwa, kodwa iphasiwedi yohlelo iyasebenza. Ukuqinisekisa ngezinyathelo ezimbili kufanele kuvulwe kuqala. Inkinobho engezansi ivula iziqondiso ze-Google.\n\nOutlook.com, Hotmail, Live ne-Microsoft 365. Lezi zingena nge-akhawunti yakho ye-Microsoft. Ekhasini Lokungena, khetha i-akhawunti ye-Microsoft, bese ungena ngesiphequluli sakho noma ngekhodi.\n\nAbanye abahlinzeki. Iphasiwedi evamile noma iphasiwedi yohlelo ivamise ukusebenza, futhi amakhasi osizo womhlinzeki wakho abala amasethingi eseva.
+preset_note_outlook = Ama-akhawunti e-Outlook.com, Hotmail, Live ne-MSN angena nge-akhawunti ye-Microsoft. Khetha i-akhawunti ye-Microsoft njengendlela yokungena ekhasini Lokungena.
+ms_status_name = Isimo sokungena nge-Microsoft
+ms_browser_button = &Ngena ngesiphequluli
+ms_code_button = &Ngena ngekhodi
+ms_copy_code = &Kopisha ikhodi
+ms_open_page = &Vula ikhasi lokungena
+ms_stop = &Yeka ukulinda
+ms_not_configured = Ukungena nge-Microsoft akusethiwe kule khophi ye-ZBox.
+ms_not_signed_in = Awukangeni. Ngena ngesiphequluli sakho, noma ngekhodi kunoma yiliphi idivayisi.
+ms_signed_in = Kungeniwe njengo-{address}.
+ms_signed_in_plain = Kungeniwe.
+ms_needs_sign_in = Ukungena nge-Microsoft kudingeka futhi kule akhawunti. Ngena ngesiphequluli sakho, noma ngekhodi kunoma yiliphi idivayisi.
+ms_reason_cancelled = Ukungena kumisiwe.
+ms_reason_timeout = Akukho mpendulo efikile ngesikhathi.
+ms_reason_denied = Ukufinyelela akuvunyelwanga.
+ms_reason_expired = Ikhodi iphelelwe yisikhathi. Cela entsha.
+ms_reason_network = I-Microsoft ayifinyeleleki. Hlola uxhumano bese uzama futhi.
+ms_reason_server = I-Microsoft ithe: {detail}
+ms_page_done = Kungeniwe. Ungavala leli khasi ubuyele ku-ZBox.
+ms_page_failed = Ukungena akuqediwe. Buyela ku-ZBox ukuthola imininingwane.
+ms_browser_waiting = Isiphequluli sakho sikhombisa ikhasi lokungena le-Microsoft. Qeda ukungena lapho, bese ubuyela ku-ZBox.
+ms_code_asking = Kucelwa i-Microsoft ikhodi yokungena...
+ms_code_waiting = Kunoma yiliphi idivayisi, vula i-{address} bese ufaka ikhodi {code}. I-ZBox ilinda lapha uze uqede ukungena.
+ms_failed = Ukungena akuqediwe. {reason}
+ms_code_copied = Ikhodi ikopishiwe.
+offline_inbox_only = Okungenayo ne-Ugcino kuphela okugcinelwe ukusetshenziswa ngaphandle kwe-inthanethi. Ngena ku-inthanethi ukuvula i-{folder}.
+block_sender_rule_name = Vimba i-{sender}
+title_block_sender = Vimba lo mthumeli
+title_unblock_sender = Susa ukuvimbwa kwalo mthumeli
+set_clear_inbox_cache = Susa i-cache yemilayezo uma kuhanjwa kude nokungenayo
+set_clear_inbox_cache_note = Uma kuvuliwe, ikhophi ye-offline yomlayezo nomzimba wawo olondoloziwe kuyasuswa ngokushesha lapho ushiya Okungenayo, nalapho wasulwa noma wahanjiswa kwenye indawo, njengakufoni yakho, ukuze ungavezi lapho ungasekho khona. Okungenayo kuphela okugcina lawa mafayela; enye ifolda ngayinye ifundwa njalo kuseva.
+empty_trash_all_confirm = Susa unomphela yonke imilayezo kudoti kuwo wonke ama-akhawunti?\n\nLokhu akukwazi ukuhlehliswa.
+envlist_col_recipient = Umamukeli
+envlist_col_correspondents = Abaxhumana
+envlist_col_received = Okutholiwe
+envlist_col_size = Usayizi
+envlist_col_attachments = Okunamathiselwe
+envlist_col_priority = Okubalulekile
+envlist_col_junk_status = Isimo sokungafuneki
+envlist_attachment = Okunamathiselwe
+envlist_priority_highest = Okuphezulu kakhulu
+envlist_priority_high = Okuphezulu
+envlist_priority_low = Okuphansi
+envlist_priority_lowest = Okuphansi kakhulu
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Khombisa izihloko zamakholomu ohlwini lwemilayezo
+pgp_title = Umphathi wezikhiye ze-OpenPGP
+smime_title = Umphathi wamasatifikethi e-S/MIME
+smime_own = isatifikethi sakho
+smime_expired = siphelelwe yisikhathi
+smime_expires = siphelelwa yisikhathi ku-{date}
+smime_issuer = Umkhishi
+smime_valid = Sivumelekile kusuka ku-{start} kuya ku-{end}
+smime_fingerprint = Isigxivizo somunwe se-SHA-256
+smime_own_key = Isatifikethi sakho, nokhiye waso oyimfihlo: iposi elibethelwe lona lingafundwa lapha.
+smime_unavailable = I-S/MIME ayitholakali kule khophi ye-ZBox.
+smime_details = Imininingwane yesatifikethi
+smime_no_certs = Asikabikho amasatifikethi. Ngenisa ifayela lakho le-.p12 noma le-.pfx, noma isatifikethi somuntu oxhumana naye.
+smime_import_failed = Isatifikethi asikwazanga ukungeniswa: {error}
+smime_import_title = Ngenisa ifayela lesatifikethi
+smime_password_prompt = Faka iphasiwedi ye-{name}.
+smime_password_title = Iphasiwedi yesatifikethi
+smime_imported = Isatifikethi singeniswe.
+smime_export_title = Thumela isatifikethi
+smime_exported = Isatifikethi sithunyelwe.
+smime_delete_confirm = Susa isatifikethi se-{name}? Uma siyisakho, iposi elibethelwe lona alisafundeki lapha.
+smime_deleted = Isatifikethi sisusiwe.
+smime_rs_verified = Lo mlayezo uqukethe isignesha ye-S/MIME evumelekile evela kusatifikethi esikhishwe isiphathimandla i-Windows ethembe sona kwikheli lomthumeli.
+smime_rs_unverified = Lo mlayezo uqukethe isignesha ye-S/MIME evumelekile, kodwa isatifikethi sayo asikhishwanga isiphathimandla i-Windows ethembe sona.
+smime_rs_mismatch = Lo mlayezo uqukethe isignesha ye-S/MIME, kodwa ikheli lomthumeli alifani nesatifikethi somasayini.
+smime_rs_technical = Lo mlayezo uqukethe isignesha ye-S/MIME, kodwa ayifani nomlayezo. Umlayezo ungabe washintshwa ngemva kokusayinwa.
+smime_rs_signer = Usayinwe ngu-: {name}
+smime_rs_issuer = Isatifikethi sikhishwe ngu-: {issuer}
+smime_rs_import_hint = Ukuze uwufunde, ngenisa isatifikethi sakho se-S/MIME nokhiye waso oyimfihlo, ifayela le-.p12 noma le-.pfx, ku-Amathuluzi, Umphathi wamasatifikethi e-S/MIME.
+pgp_details = Izimfanelo zikakhiye
+pgp_generate = &Isibili esisha sezikhiye
+smime_import = &Ngenisa ifayela lesatifikethi
+smime_export = &Thumela isatifikethi
+smime_delete = &Susa isatifikethi
+pgp_import_file = &Ngenisa ifayela likakhiye we-OpenPGP
+pgp_import_file_title = Ngenisa ifayela likakhiye we-OpenPGP
+pgp_import_clip = &Ngenisa ukhiye/okhiye ku-clipboard
+pgp_export = &Thumela ukhiye womphakathi kufayela
+pgp_copy = &Kopisha ukhiye womphakathi
+pgp_backup = &Yenza ikhophi yokulondoloza yokhiye oyimfihlo kufayela
+pgp_props = &Izimfanelo zikakhiye
+pgp_revoke = &Buyisa ukhiye
+pgp_delete = &Susa ukhiye
+pgp_expires = uphelelwa yisikhathi: {date}
+pgp_never_expires = akaphelelwa yisikhathi
+pgp_expired = uphelelwe yisikhathi
+pgp_revoked = ubuyisiwe
+pgp_fingerprint = Isigxivizo somunwe
+pgp_key_id = I-ID kakhiye
+pgp_created = Kudaliwe
+pgp_acceptance = Ukwamukela kwakho
+pgp_acc_rejected = Cha, nqaba lo khiye.
+pgp_acc_undecided = Hhayi okwamanje, mhlawumbe kamuva.
+pgp_acc_unverified = Yebo, kodwa angiqinisekisanga ukuthi ngukhiye olungile.
+pgp_acc_verified = Yebo, ngiqinisekise mathupha ukuthi lo khiye unesigxivizo somunwe esilungile.
+pgp_personal_no = Cha, ungasebenzisi njengokhiye wami siqu.
+pgp_personal_yes = Yebo, phatha lo khiye njengokhiye siqu.
+pgp_verify_hint = Qinisekisa isigxivizo somunwe sikakhiye ngendlela yokuxhumana ephephile ngaphandle kwe-imeyili ukuze uqiniseke ukuthi ngempela ngukhiye ka-{addr}.
+pgp_gen_title = Dala ukhiye we-OpenPGP
+pgp_gen_identity = Ubuwena
+pgp_gen_type = Uhlobo lukakhiye:
+pgp_gen_ecc = I-ECC (Ijika le-Elliptic)
+pgp_gen_expiry = Ukuphelelwa yisikhathi kukakhiye
+pgp_gen_no_expiry = Ukhiye akaphelelwa yisikhathi
+pgp_gen_button = Dala ukhiye
+pgp_gen_confirm = Dala ukhiye womphakathi noyimfihlo we-{identity}?
+pgp_gen_progress = Kudalwa ukhiye wakho omusha we-OpenPGP…
+pgp_gen_done = Ukhiye we-OpenPGP udaliwe ngempumelelo!
+pgp_gen_failed = Ukudalwa kukakhiye we-OpenPGP kwehlulekile ngokungalindelekile
+pgp_import_none = Akukho zikhiye ezingeniswe.
+pgp_import_done = Izikhiye ze-OpenPGP zingeniswe ngempumelelo!
+pgp_passphrase_title = Kudingeka imushwana
+pgp_unlock_failed = Ukhiye, noma izingxenye zakhe ezingaphansi, azikwazanga ukuvulwa.
+pgp_backup_title = Khetha iphasiwedi yokwenza ikhophi yokulondoloza yokhiye wakho we-OpenPGP
+pgp_backup_message = Iphasiwedi oyisethayo lapha ivikela ifayela lekhophi yokulondoloza yokhiye we-OpenPGP oyimfihlo osuzoyidala. Kufanele usethe le phasiwedi ukuze uqhubeke nekhophi yokulondoloza.
+pgp_backup_pw = Iphasiwedi yekhophi yokulondoloza yokhiye oyimfihlo:
+pgp_backup_pw2 = Iphasiwedi yekhophi yokulondoloza yokhiye oyimfihlo (futhi):
+pgp_backup_done = Ukhiye oyimfihlo uthunyelwe ngempumelelo!
+pgp_export_done = Ukhiye womphakathi uthunyelwe ngempumelelo!
+pgp_copied = Ukhiye/okhiye bakopishelwe ku-clipboard
+pgp_revoke_done = Ukhiye ubuyisiwe ngempumelelo.
+pgp_personal = ukhiye siqu
+pgp_no_keys = Azikabikho zikhiye. Dala isibili esisha sezikhiye noma ungenise ukhiye.
+pgp_unavailable = I-OpenPGP ayitholakali kule khophi ye-ZBox.
+pgp_gen_expires_3y = Ukhiye uphelelwa yisikhathi eminyakeni emi-3
+pgp_gen_no_identity = Engeza i-akhawunti ye-imeyili kuqala.
+pgp_import_confirm = Ngenisa lezi zikhiye?\n\n{keys}
+pgp_passphrase_prompt = Faka imushwana yokhiye oyimfihlo we-{name}.
+pgp_clip_empty = I-clipboard ayiqukethe ukhiye we-OpenPGP.
+pgp_pw_mismatch = Amaphasiwedi amabili awafani.
+pgp_backup_open = Leli fayela lingukhiye oyimfihlo wekhophi yokulondoloza. Faka iphasiwedi yayo yekhophi yokulondoloza.
+pgp_revoke_confirm = Buyisa ukhiye we-{name}? Ukhiye obuyisiwe awusoze usetshenziswe futhi. Yabelana ngokhiye womphakathi obuyisiwe ukuze abanye bayeke ukumsebenzisa.
+pgp_delete_public_confirm = Susa ukhiye womphakathi we-{name}?
+pgp_delete_secret_confirm = Susa ukhiye wakho siqu {name}? Iposi elibethelwe lona alisoze lifundeke futhi. Yenza ikhophi yokulondoloza yokhiye oyimfihlo kuqala uma ungase uyidinge.
+pgp_select_key = Khetha ukhiye kuqala.
+pgp_save_failed = Izikhiye azikwazanga ukulondolozwa: {error}
+pgp_publish = &Shicilela
+pgp_publish_ok = Ukhiye womphakathi uthunyelwe ku-"{keyserver}".
+pgp_publish_fail = Ukuthumela ukhiye wakho womphakathi ku-"{keyserver}" kwehlulekile.
+pgp_publish_suggest = Ukushicilela ukhiye womphakathi kuseva yezikhiye kuvumela abanye ukuwutholela.
+pgp_publish_question = Wushicilele ku-{keyserver} manje? Iseva ibe isithumela i-imeyili yokuqinisekisa ku-{addresses}. Ikheli lakho lizotholakala uma uvula isixhumanisi sayo.
+pgp_publish_sent = I-imeyili yokuqinisekisa ithunyelwe ku-{addresses}. Vula isixhumanisi esikuyo ukuze ukhiye wakho utholakale ngekheli lakho.
+pgp_publish_already = Usevele utholakala ngo-{addresses}.
+pgp_rs_no_sig = Ayikho isignesha yedijithali
+pgp_rs_no_sig_info = Lo mlayezo awuqukethe isignesha yedijithali yomthumeli. Ukungabikho kwesignesha yedijithali kusho ukuthi umlayezo ungabe uthunywe othile ozenza enalo leli kheli le-imeyili. Kungenzeka nokuthi umlayezo ushintshwe ngenkathi uhamba kunethiwekhi.
+pgp_rs_uncertain = Isignesha yedijithali engaqinisekile
+pgp_rs_uncertain_date = Isignesha yedijithali engaqinisekile - Isayinwe ngo-{date}
+pgp_rs_invalid = Isignesha yedijithali engavumelekile
+pgp_rs_invalid_date = Isignesha yedijithali engavumelekile - Isayinwe ngo-{date}
+pgp_rs_good = Isignesha yedijithali enhle
+pgp_rs_good_date = Isignesha yedijithali enhle - Isayinwe ngo-{date}
+pgp_rs_no_key = Lo mlayezo uqukethe isignesha yedijithali, kodwa akuqinisekile ukuthi ilungile. Ukuze uyiqinisekise, udinga ukuthola ikhophi yokhiye womphakathi womthumeli.
+pgp_rs_uid_mismatch = Lo mlayezo uqukethe isignesha yedijithali, kodwa kuhlonziwe ukungafani. Umlayezo uthunyelwe kusukela ekhelini le-imeyili elingafani nokhiye womphakathi womasayini.
+pgp_rs_not_accepted = Lo mlayezo uqukethe isignesha yedijithali, kodwa awukabi nesinqumo sokuthi ukhiye womasayini wamukelekile kuwe yini.
+pgp_rs_rejected = Lo mlayezo uqukethe isignesha yedijithali, kodwa ngaphambilini unqume ukwenqaba ukhiye womasayini.
+pgp_rs_technical = Lo mlayezo uqukethe isignesha yedijithali, kodwa kuhlonziwe iphutha lobuchwepheshe. Noma umlayezo ubhidlikile, noma ushintshwe ngomunye umuntu.
+pgp_rs_unverified = Lo mlayezo uqukethe isignesha yedijithali evumelekile evela kukhiye osuvele wamukela. Kodwa awukaqinisekisi ukuthi ukhiye ungowomthumeli ngempela.
+pgp_rs_verified = Lo mlayezo uqukethe isignesha yedijithali evumelekile evela kukhiye oqinisekisiwe.
+pgp_rs_own_key = Lo mlayezo uqukethe isignesha yedijithali evumelekile evela kukhiye wakho siqu.
+pgp_rs_signer_id = I-ID kakhiye womasayini: {keyid}
+pgp_rs_decrypt_id = I-ID kakhiye wakho wokuvula ukubethela: {keyid}
+pgp_rs_enc_none = Umlayezo awubethelwe
+pgp_rs_enc_none_info = Lo mlayezo awubethelwanga ngaphambi kokuthunyelwa. Ulwazi olothunyelwa nge-inthanethi ngaphandle kokubethela lungabonwa ngabanye abantu lapho lusendleleni.
+pgp_rs_enc_invalid = Umlayezo awukwazi ukuvulwa ukubethela
+pgp_rs_enc_invalid_info = Lo mlayezo ubethelwe ngaphambi kokuthunyelwa kuwe, kodwa awukwazi ukuvulwa ukubethela.
+pgp_rs_enc_valid = Umlayezo ubethelwe
+pgp_rs_enc_valid_info = Lo mlayezo ubethelwe ngaphambi kokuthunyelwa kuwe. Ukubethela kuqinisekisa ukuthi umlayezo ungafundwa kuphela ngabamukeli ewuhlose bona.
+pgp_rs_field = Ukuphepha komlayezo
+pgp_rs_import = Ngenisa ukhiye we-OpenPGP
+pgp_rs_open_to_unlock = Vula umlayezo ukuze ufake imushwana.
+pgp_rs_reply_not_quoted = Umlayezo wokuqala ubethelwe, ngakho umbhalo wawo awucatshwa lapha.
+pgp_cm_encrypt = Bethela
+pgp_cm_sign = Sayina ngokwedijithali
+pgp_e2e_title = Ukubethela kusuka ekugcineni kuya ekugcineni
+acct_e2e_button = &Ukubethela kusuka ekugcineni kuya ekugcineni...
+pgp_e2e_none = Ungasebenzisi i-OpenPGP kulobu buwena.
+pgp_e2e_disable = Vala ukubethela kwemilayezo emisha
+pgp_e2e_enable = Vula ukubethela kwemilayezo emisha
+pgp_e2e_enable_info = Uzokwazi ukuvala ukubethela kwemilayezo ngayinye.
+pgp_e2e_sign = Sayina imilayezo engabethelwanga
+pgp_e2e_signing_info = Isignesha yedijithali ivumela abamukeli ukuqinisekisa ukuthi umlayezo uthunywe nguwe futhi okuqukethwe kwawo akushintshiwe. Imilayezo ebethelwe isayinwa njalo ngokuzenzakalelayo.
+pgp_e2e_autocrypt = Thumela okhiye/ukhiye bomphakathi be-OpenPGP ezihlokweni ze-imeyili ukuze kuhambisane ne-Autocrypt
+pgp_not_set_up = Awusethiwe ukuthumela imilayezo ebethelwe kusuka ekugcineni kuya ekugcineni evela ku-{addr}.
+pgp_cannot_encrypt = Ayikwazi ukubethela
+pgp_do_you_accept = Uyamukela yini lo khiye wokuqinisekisa amasignesha edijithali nokubethela imilayezo?
+pgp_searching = Iyasesha…
+pgp_no_key_found = Asikwazanga ukuthola ukhiye osebenzisekayo ofana nezindlela zokusesha ezicaciswe.
+pgp_source_autocrypt = Isihloko se-Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = iseva yezikhiye
+pgp_discover = &Thola izikhiye ku-inthanethi
+pgp_cm_attach_key = Namathisela ukhiye wami womphakathi
+pgp_e2e_key_label = Ukhiye siqu we-{address}
+pgp_e2e_auto = Okuzenzakalelayo: ukhiye wakho siqu walelikheli
+pgp_e2e_no_key = I-ZBox ayinaye ukhiye we-OpenPGP siqu we-{address}. Yenza eyodwa ku-Amathuluzi, Umphathi wezikhiye ze-OpenPGP.
+pgp_e2e_new_messages = Ukubethela kwemilayezo emisha
+pgp_e2e_key_missing = Ukhiye {keyid}, akatholakali
+pgp_missing_keys = Laba bamukeli abanaye ukhiye osebenzisekayo, owamukelwe:\n\n{addresses}\n\nUmlayezo awukwazi ukuthunyelwa ubethelwe.
+pgp_send_unencrypted = &Thumela ngaphandle kokubethela
+pgp_collected_found = Izikhiye zalaba bamukeli zitholakale kwiposi abalithumele kuwe:
+pgp_lookup_q = Sesha izikhiye ku-inthanethi zalaba bamukeli?\n\n{addresses}\n\nLokhu kuthumela amakheli abo ku-keys.openpgp.org nakuzizinda zabo zamameyili.
+pgp_found_online = Izikhiye ezitholakele ku-inthanethi:
+pgp_source = Umthombo: {source}
+pgp_discover_prompt = Faka ikheli le-imeyili. I-ZBox isesha izikhiye zalo ze-OpenPGP ku-Web Key Directory yesizinda sayo sameyili nakuma-keys.openpgp.org.
+pgp_discover_bad = Faka ikheli le-imeyili eligcwele, njenge-name@example.com.
+pgp_keys_unreadable = Izikhiye ze-OpenPGP azikwazanga ukuvulwa: {error}
+pgp_rs_why_no_key = Ukhiye oyimfihlo odingekayo ukuvula ukubethela kwalo mlayezo awutholakali.
+pgp_rs_why_unknown = Kunezinkinga ezingaziwa ngalo mlayezo obethelwe.
+pgp_rs_hidden_subject = Umlayezo obethelwe
+pgp_rs_why_passphrase = Imushwana yokhiye wakho ayifakiwe. Vula umlayezo futhi ukuze uyifake.
+pgp_rs_why_unavailable = I-OpenPGP ayitholakali kule khophi ye-ZBox.
+pgp_rs_why_fetch = Umlayezo awukwazanga ukulandwa kuseva ukuze uvulwe ukubethela. Vula futhi ukuze uzame kanye futhi.
+pgp_rs_import_hint = Ukuze uwufunde, ngenisa ukhiye wakho oyimfihlo walo mlayezo ku-ZBox.
+
+[errors]
+language_restart_failed = I-ZBox ayikwazanga ukuziqalisa kabusha:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Ayikwazanga ukuvula uhlelo lwamameyili ye-{address}.
+
+wizard_test_failed = Uxhumano lwehlulekile:\n\n{error}
+
+contacts_import_unreadable = Ayikwazanga ukufunda leyo fayela.\n\n{error}
+contacts_export_unwritable = Ayikwazanga ukubhala leyo fayela.\n\n{error}
+
+attach_unreadable = Ayikwazanga ukufunda okunamathiselwe {path}:\n{error}
+send_failed = Ayikwazanga ukuthumela umlayezo.\n\n{error}
+draft_attach_unreadable = Ayikwazanga ukufunda okunamathiselwe {path}:\n{error}\n\nIdrafti ayilondolozwanga.
+draft_save_failed = Ayikwazanga ukulondoloza idrafti.\n\n{error}
+
+clipboard_unavailable = I-clipboard ayikwazanga ukuvulwa.
+open_link_failed = Ayikwazanga ukuvula isiphequluli sakho se-:\n{url}
+
+master_password_mismatch = Amabhokisi amabili ephasiwedi enkulu entsha awafani.
+master_password_required = Faka iphasiwedi enkulu, noma ucindezele u-Khansela.
+master_password_not_set = Iphasiwedi enkulu ayikwazanga ukusethwa: {error}
+master_password_not_here = Iphasiwedi enkulu ayikwazi ukushintshwa kusuka lapha.
+
+attachment_save_failed = Ayikwazanga ukulondoloza okunamathiselwe.\n\n{error}
+attachments_save_failed = Ayikwazanga ukulondoloza okunamathiselwe.\n\n{error}
+print_failed = Ayikwazanga ukuphrinta umlayezo. Hlola ukuthi iphrinta isethiwe.
+print_preview_failed = Ayikwazanga ukuvula ukubuka kuqala kokuphrinta. Hlola ukuthi iphrinta isethiwe.
+
+related_search_failed = Ayikwazanga ukusesha imilayezo ehlobene.\n\n{error}
+search_failed = Ukusesha kwehlulekile.\n\n{error}
+
+unlock_methods_no_config_folder = I-ZBox ayikwazanga ukuthola ifolda yayo yokumisa, ngakho izindlela zokuvula azikwazi ukuphathwa lapha.
+shortcut_no_folder = I-ZBox ayikwazanga ukuthola ifolda yayo, ngakho isinqamuleli asikwazi ukudalwa lapha.
+shortcut_failed_settings = Isinqamuleli sedeskithophu asikwazanga ukudalwa:\n\n{error}
+
+unlock_method_failed = {what} ayisebenzanga.\n\n{error}
+unlock_check_failed = Iphasiwedi enkulu ayikwazanga ukuhlolwa.\n\n{error}
+unlock_password_wrong = Leyo phasiwedi enkulu ayilungile.
+unlock_add_failed = {what} ayikwazanga ukwengezwa.\n\n{error}
+unlock_passkey_setup_failed = Ukhiye wokungena awukwazanga ukusethwa kuleli khompyutha, ngakho akukho okushintshiwe.\n\n{error}
+unlock_method_test_failed = Leyo ndlela ayisebenzanga.\n\n{error}
+
+account_list_unreadable = I-ZBox ayikwazanga ukuvula uhlu lwakho lwama-akhawunti.\n\n{error}\n\nAkukho ama-akhawunti alayishiwe, futhi ifayela alishintshiwe, ngakho akukho okulahlekile. Ukwengeza, ukuhlela nokususa ama-akhawunti kwenqatshiwe kuze kufundeke.
+account_list_no_accounts = I-ZBox ayikwazanga ukuvula uhlu lwakho lwama-akhawunti kuleli sizini ({error}), ngakho ayikho i-akhawunti ongayikhetha. Akukho okulahlekile futhi akukho okushintshile. Vala i-ZBox uyiqalise kabusha, bese ufaka iphasiwedi yakho enkulu uma ucelwa.
+open_message_failed = Ayikwazanga ukuvula umlayezo.\n\n{error}
+filters_list_failed = Ayikwazanga ukulandisa imilayezo ku-{folder}.\n\n{error}
+filters_move_failed = Ayikwazanga ukuhambisa imilayezo ehlungiwe.\n\n{error}
+cache_clear_failed = Ayikwazanga ukusula i-cache.\n\n{error}
+folder_create_failed = Ayikwazanga ukudala ifolda.\n\n{error}
+folder_rename_failed = Ayikwazanga ukuqamba kabusha ifolda.\n\n{error}
+folder_delete_failed = Ayikwazanga ukusula ifolda.\n\n{error}
+folder_subscribe_failed = Ayikwazanga ukubhalisa ifolda.\n\n{error}
+folder_unsubscribe_failed = Ayikwazanga ukukhipha ifolda.\n\n{error}
+saved_open_failed = Ayikwazanga ukuvula ifayela.\n\n{error}
+saved_parse_failed = Ayikwazanga ukuhlaziya leli fayela njengomlayezo we-imeyili.\n\n{error}
+save_file_failed = Ayikwazanga ukulondoloza ifayela.\n\n{error}
+save_fetch_failed = Ayikwazanga ukulanda umlayezo ozolondolozwa.\n\n{error}
+empty_trash_failed = Ayikwazanga ukungenisa udoti.\n\n{error}
+empty_junk_failed = Ayikwazanga ukungenisa Okungafuneki.\n\n{error}
+export_write_failed = Ayikwazanga ukubhala ifayela lokuthunyelwa.\n\n{error}
+import_read_failed = Ayikwazanga ukufunda leli fayela njengokuthunyelwe kwe-ZBox.\n\n{error}
+import_not_export = Leli fayela alibukeki njengokuthunyelwe kwe-ZBox.\n\n{error}
+search_open_failed = Ayikwazanga ukuvula lo mlayezo.
+related_load_failed = Ayikwazanga ukulayisha lo mlayezo.\n\n{error}
+reply_load_failed = Ayikwazanga ukulayisha umlayezo ozowuphendula.\n\n{error}
+forward_load_failed = Ayikwazanga ukulayisha umlayezo ozowudlulisela.\n\n{error}
+action_failed = Ayikwazanga ukuqeda lesi senzo.\n\n{error}
+undo_failed = Ayikwazanga ukuhlehlisa {label}.\n\n{error}
+copy_failed = Ayikwazanga ukukopisha umlayezo.\n\n{error}
+delete_failed = Ayikwazanga ukusula umlayezo.\n\n{error}
+archive_failed = Ayikwazanga ukugcina umlayezo.\n\n{error}
+master_password_not_changed = Iphasiwedi enkulu ayikwazanga ukushintshwa: {error}
+shortcut_failed_startup = Isinqamuleli sedeskithophu asikwazanga ukudalwa:\n\n{error}\n\nI-ZBox izoqhubeka iqala. Ungazama futhi kamuva ku-Amasethingi.
+account_locked_action = I-ZBox ayikwazi ukwenza %s. Uhlu lwama-akhawunti alukwazanga ukuvulwa kuleli sizini (%s), futhi akukho okushintshile. Vala i-ZBox uyiqalise kabusha, bese ufaka iphasiwedi yakho enkulu uma ucelwa.
+send_tls_mismatch = Ayikwazanga ukuthumela umlayezo. Iseva yokuphumayo iphendule ngaphandle kokubethela, ngakho ukubethela kokuphumayo akufani nembobo. Ku-Amathuluzi, Amasethingi ama-akhawunti nobuwena, sebenzisa i-STARTTLS yembobo 587, noma i-SSL/TLS yembobo 465, bese uthumela futhi.\n\n{error}
+mark_folder_read_failed = Ayikwazanga ukumaka ifolda njengefundiwe.\n\n{error}
+update_failed = Isibuyekezo asikwazanga ukudawunilodwa, ngakho akukho okushintshiwe.\n\n{error}
+update_rolled_back = Isibuyekezo asikwazanga ukuqala, ngakho inguqulo yangaphambilini ibuyiselwe.
+attachment_open_failed = Ayikwazanga ukuvula okunamathiselwe.\n\n{error}
+headers_failed = Ayikwazanga ukulayisha izihloko zomlayezo.\n\n{error}
+wizard_ms_sign_in_first = Ngena nge-Microsoft ngaphambi kokuqhubeka. Sebenzisa eyodwa yezinkinobho ezimbili zokungena kuleli khasi.
+wizard_provider_unsupported = I-ZBox ayikwazi ukungena kulo mhlinzeki. Inothi elikuleli khasi lichaza ukuthi kungani. Buyela emuva usebenzise elinye ikheli le-imeyili, noma ukhansele.
+acct_ms_sign_in_first = Ngena nge-Microsoft ngaphambi kokulondoloza, noma ukhethe Iphasiwedi njengendlela yokungena.
+ms_sign_in_again = Ukungena nge-Microsoft kwe-{account} kudingeka futhi. Vula Amasethingi ama-akhawunti nobuwena bese ungena lapho.
+graph_pgp_too_large = Lo mlayezo obethelwe noma osayiniwe mkhulu kunalokho i-Microsoft eyakuvumela kwiposi elinjalo, cishe u-3 MB. Thumela okunamathiselwe okuncane, noma uvale u-Bethela no-Sayina ngokwedijithali walo mlayezo.
+empty_trash_all_failed = Ayikwazanga ukungenisa udoti we-: {accounts}
+
+[help]

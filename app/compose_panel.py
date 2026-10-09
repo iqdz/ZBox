@@ -982,7 +982,7 @@ class ComposePanel(wx.Panel):
         """Puts the identity's Always Cc and Always Bcc addresses into
         the Cc and Bcc fields, taking out those the previous identity
         added where they are still there unchanged. True when a field
-        changed. Silent; _on_from_changed says so."""
+        changed. Silent."""
         account, _name, email = entry
         extra = _identity_extra(account, email)
         new = (extra.get("always_cc", ""), extra.get("always_bcc", ""))
@@ -1008,30 +1008,20 @@ class ComposePanel(wx.Panel):
         return own or _folder_display_to_himalaya("Drafts", account)
 
     def _on_from_changed(self, event):
-        """From now names another identity: its Always Cc and Bcc, and
-        its signature, should be the ones in the message. The signature
-        is the identity's own when it has one, else its account's. It
-        is rebuilt while the body is untouched. Either way it is said
-        out loud, in one announcement with any Cc or Bcc change,
-        because both are invisible to a screen reader user until the
-        message has gone."""
+        """From now names another identity: its Always Cc and Bcc, its
+        encryption settings and its signature should be the ones in the
+        message. The signature is the identity's own when it has one,
+        else its account's. It is rebuilt while the body is untouched.
+        All of this is silent: users set these up themselves, and moving
+        through the From list must not speak them."""
         event.Skip()
         entry = self._selected_identity_entry()
         if entry is None:
             return
         account, _name, email = entry
-        spoken = []
-        if self._apply_identity_copies(entry):
-            spoken.append(lang.t(
-                "actions_announcements", "identity_copies_updated",
-                default="Cc and Bcc updated for this identity.",
-            ))
-        if self._apply_pgp_defaults(entry):
-            spoken.append(lang.t(
-                "actions_announcements", "pgp_cm_identity",
-                default="Encryption settings changed to this identity's.",
-            ))
-        plain, formatted, own = _identity_signature(account, email)
+        self._apply_identity_copies(entry)
+        self._apply_pgp_defaults(entry)
+        plain, formatted, _own = _identity_signature(account, email)
         new = (plain, formatted)
         if new == self._signature_pair:
             self._signature_account_id = account.account_id
@@ -1039,41 +1029,6 @@ class ComposePanel(wx.Panel):
             self.body.set_html(_initial_body_html(self._opening_body, plain, formatted))
             self._signature_pair = new
             self._signature_account_id = account.account_id
-            if plain or formatted:
-                if own:
-                    spoken.append(lang.t(
-                        "actions_announcements", "signature_switched_identity",
-                        default="Signature changed to this identity's.",
-                    ))
-                else:
-                    spoken.append(lang.t(
-                        "actions_announcements", "signature_switched",
-                        default="Signature changed to this account's.",
-                    ))
-            elif own:
-                spoken.append(lang.t(
-                    "actions_announcements", "signature_removed_identity",
-                    default="Signature removed. This identity has none.",
-                ))
-            else:
-                spoken.append(lang.t(
-                    "actions_announcements", "signature_removed_no_signature",
-                    default="Signature removed. This account has none.",
-                ))
-        elif own:
-            spoken.append(lang.t(
-                "actions_announcements", "signature_not_switched_identity",
-                default="Signature not changed. Press Ctrl+Shift+S to insert "
-                        "this identity's signature.",
-            ))
-        else:
-            spoken.append(lang.t(
-                "actions_announcements", "signature_not_switched",
-                default="Signature not changed. Press Ctrl+Shift+S to insert "
-                        "this account's signature.",
-            ))
-        if spoken:
-            self._say(" ".join(spoken))
 
     def cmd_insert_signature(self):
         entry = self._selected_identity_entry()

@@ -1,0 +1,16 @@
+ZBox
+Daga Harith Alhamdani
+
+ZBox manhajar imel ce mai ɗaukuwa, mai sauri, mai tsaro kuma wadda kowa zai iya amfani da ita gaba ɗaya. Kyauta ce don amfanin kai kuma tana da sauƙi ga albarkatun tsarin. An ƙirƙire ta ne don ba duk wanda ke amfani da ita, har da masu rashin gani da masu rauni a gani, madadin gaske, mai cike da fasali, maimakon manhajoji masu nauyi da jinkiri da ake samu a yawancin lokuta. A ƙarƙashin murfin, ZBox yana aiki ne da ƙaƙƙarfar manhajar imel ta Himalaya CLI.
+
+Sirri da tsaro
+ZBox ya zo da mai toshe masu bin sawu da tallace-tallace (a kunne a asali), tare da ƙa'idojin saƙon banza na zaɓi da mai duba mahaɗan zamba ta yanar gizo. Don ɗaukar shi cikin tsaro, yana amfani da kariyar babbar kalmar sirri: idan aka kwafi babban fayil ɗin manhajar zuwa wata kwamfuta ba tare da wannan kalmar sirri ba, ana toshe samun damar zuwa asusunka da aka haɗa. Idan kana shirin mayar da ZBox zuwa sabuwar kwamfuta, tabbatar ka saita babbar kalmar sirri a nan tukuna. Yana kuma goyon bayan maɓallan shiga na Windows Hello (sawun yatsa, PIN ko gane fuska) da maɓallan tsaro na kayan aiki na zamani.
+
+Amfani da aka saba
+Don sauƙaƙa sauyawa daga wasu manhajojin imel, ZBox yana da gajerun maɓallai masu sauƙi da sassauƙa. Gajerun hanyoyi da dama galibi suna yin aiki iri ɗaya; misali, Alt+S da Ctrl+Enter duka suna aika saƙo. Za ka iya ganin cikakken jerin a ƙarƙashin Taimako, Gajerun hanyoyin madannai.
+
+Saita asusu
+Asusun Outlook.com, Hotmail, Live da Microsoft 365 suna shiga da asusunka na Microsoft, a burauzarka ko da lamba. Za ka iya haɗa asusunka na Gmail ta hanyar ƙirƙirar kalmar sirrin manhaja maimakon amfani da kalmar sirrinka ta yau da kullum (duba maɓallin da ke ƙasa don umarni).
+
+Lasisi da godiya
+Danna Duba lasisi a ƙasa don karanta lasisin ZBox da ganin abubuwan wasu kamfanoni da suka sa hakan ya yiwu. Waɗannan sun haɗa da Himalaya, jerin toshewa na StevenBlack hosts da EasyPrivacy, jerin Phishing.Database, da (a cikin kwafin da aka gina) Python, wxPython, imapclient, pywin32, keyring da accessible_output2 tare da ɗakunan karatun abokan mai karanta allo.

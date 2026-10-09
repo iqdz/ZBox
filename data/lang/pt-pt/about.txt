@@ -1,7 +1,7 @@
 ZBox
 Por Harith Alhamdani
 
-O ZBox é um cliente de correio eletrónico portátil, rápido, seguro e totalmente acessível. Gratuito para uso pessoal e leve nos recursos do sistema. Foi criado para dar às pessoas cegas e com baixa visão uma alternativa real e completa às opções pesadas e lentas que costumam existir. Por dentro, o ZBox funciona com o robusto cliente de correio Himalaya CLI.
+O ZBox é um cliente de correio eletrónico portátil, rápido, seguro e totalmente acessível. Gratuito para uso pessoal e leve nos recursos do sistema. Foi criado para dar a todas as pessoas que o utilizam, incluindo as pessoas cegas e com baixa visão, uma alternativa real e completa às opções pesadas e lentas que costumam existir. Por dentro, o ZBox funciona com o robusto cliente de correio Himalaya CLI.
 
 Privacidade e segurança
 O ZBox inclui um bloqueador de rastreadores e anúncios (ativado por predefinição), a par de regras opcionais de correio não solicitado e de um verificador de ligações de phishing. Para uma portabilidade segura, usa proteção por palavra-passe principal: se a pasta da aplicação for copiada para outro computador sem esta palavra-passe, o acesso às suas contas associadas fica bloqueado. Se pretende mudar o ZBox para um computador novo, defina primeiro aqui uma palavra-passe principal. Também suporta chaves de acesso do Windows Hello (impressão digital, PIN ou reconhecimento facial) e chaves de segurança de hardware modernas.

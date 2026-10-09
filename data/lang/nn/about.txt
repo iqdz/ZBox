@@ -1,0 +1,16 @@
+ZBox
+Av Harith Alhamdani
+
+ZBox er ein berbar, rask, trygg og fullt tilgjengeleg e-postklient. Gratis til personleg bruk og nøysam med systemressursane. Han vart laga for å gi alle som brukar han, også blinde og svaksynte brukarar, eit ekte, funksjonsrikt alternativ til dei oppsvulma og trege programma som vanlegvis er tilgjengelege. Under panseret blir ZBox drive av den robuste e-postklienten Himalaya CLI.
+
+Personvern og tryggleik
+ZBox blir levert med ei blokkering av sporarar og annonsar (slått på som standard), saman med valfrie reglar for søppelpost og ei kontroll av phishing-lenkjer. For trygg portabilitet blir vern med hovudpassord brukt: viss programmappa blir kopiert til ei anna datamaskin utan dette passordet, blir tilgangen til dei tilknytte kontoane dine blokkert. Viss du planlegg å flytte ZBox til ei ny datamaskin, bør du først angi eit hovudpassord her. Det støttar også passnøklar med Windows Hello (fingeravtrykk, PIN-kode eller ansiktsgjenkjenning) og moderne tryggleiksnøklar.
+
+Kjend bruk
+For å gjere overgangen frå andre e-postklientar smidig har ZBox vennlege, fleksible hurtigtastar. Fleire snarvegar utfører ofte same handling; til dømes sender både Alt+S og Ctrl+Enter ei melding. Du kan sjå heile lista under Hjelp, Tastatursnarvegar.
+
+Kontooppsett
+Kontoar på Outlook.com, Hotmail, Live og Microsoft 365 loggar inn med Microsoft-kontoen din, i nettlesaren eller med ein kode. Du kan knyte Gmail-kontoen din til ved å opprette eit apppassord i staden for å bruke det vanlege passordet ditt (sjå knappen nedanfor for rettleiing).
+
+Lisensar og takk
+Trykk Vis lisens nedanfor for å lese ZBox-lisensen og sjå tredjepartskomponentane som gjer det mogleg. Desse omfattar Himalaya, blokkeringslistene StevenBlack hosts og EasyPrivacy, lista Phishing.Database samt (i ein bygd kopi) Python, wxPython, imapclient, pywin32, keyring og accessible_output2 med klientbiblioteka for skjermlesarar.

@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Ελληνικά
+code = el
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Το μήνυμα στάλθηκε.
+draft_saved = Το προσχέδιο αποθηκεύτηκε.
+signature_inserted = Η υπογραφή εισήχθη.
+signature_none = Αυτός ο λογαριασμός δεν έχει υπογραφή.
+signature_saved = Η υπογραφή αποθηκεύτηκε.
+signature_not_saved = Η υπογραφή δεν αποθηκεύτηκε.
+pasted_as_quotation = Επικολλήθηκε ως παράθεση.
+clipboard_empty = Δεν υπάρχει τίποτα στο πρόχειρο.
+word_count = {words} λέξεις, {characters} χαρακτήρες.
+report_copied = Η αναφορά αντιγράφηκε.
+compose_tab_needed = Αυτή η εντολή χρειάζεται μια καρτέλα σύνταξης.
+attach_file_instead = Τα αρχεία που αφήνονται δεν μπαίνουν στο κείμενο του μηνύματος. Χρησιμοποιήστε την Επισύναψη αρχείου για να στείλετε ένα.
+
+# Formatting in the message body
+formatting_here = Μορφοποίηση εδώ: {formatting}.
+no_formatting_here = Καμία μορφοποίηση εδώ, απλό κείμενο.
+
+# Spelling
+nothing_to_check = Δεν υπάρχει τίποτα προς έλεγχο.
+no_misspellings = Δεν υπάρχουν ορθογραφικά λάθη.
+spelling_dictionary_unavailable = Το ορθογραφικό λεξικό δεν είναι διαθέσιμο.
+next_misspelling_first = Χρησιμοποιήστε πρώτα το επόμενο ορθογραφικό λάθος.
+word_added = Το {word} προστέθηκε στο λεξικό.
+word_not_added = Το {word} δεν μπόρεσε να προστεθεί στο λεξικό.
+corrections_applied_one = Εφαρμόστηκε 1 διόρθωση.
+corrections_applied_many = Εφαρμόστηκαν {count} διορθώσεις.
+corrections_applied_partly = Εφαρμόστηκαν {applied} από {total} διορθώσεις. Οι υπόλοιπες απορρίφθηκαν· δείτε το αρχείο καταγραφής.
+occurrences_replaced_one = Αντικαταστάθηκε 1 εμφάνιση.
+occurrences_replaced_many = Αντικαταστάθηκαν {count} εμφανίσεις.
+
+# Reading mail
+message_did_not_open = Το μήνυμα δεν άνοιξε. Ο διακομιστής δεν απάντησε. Πατήστε Enter για να δοκιμάσετε ξανά.
+thread_open = {messages} σε αυτό το νήμα. Πατήστε ξανά για κλείσιμο.
+no_thread_selected = Δεν έχει επιλεγεί νήμα.
+thread_watched = Το νήμα παρακολουθείται.
+thread_not_watched = Το νήμα δεν παρακολουθείται πλέον.
+thread_ignored = Το νήμα αγνοείται.
+thread_not_ignored = Το νήμα δεν αγνοείται πλέον.
+none_found = Δεν βρέθηκε τίποτα.
+refreshing_this_folder = Ανανέωση αυτού του φακέλου.
+refreshing_all_accounts = Ανανέωση όλων των λογαριασμών.
+message_view_html = Προβολή μηνύματος: HTML (αποδοσμένο).
+message_view_text = Προβολή μηνύματος: Κείμενο.
+html_view_still_loading = Το μήνυμα φορτώνει ακόμη. Το Escape το κλείνει.
+message_still_opening = Άνοιγμα μηνύματος. Ο διακομιστής είναι αργός.
+remote_content_blocked = Το απομακρυσμένο περιεχόμενο αποκλείστηκε.
+remote_content_unblocked = Το απομακρυσμένο περιεχόμενο επιτράπηκε.
+remote_content_already_showing = Το απομακρυσμένο περιεχόμενο εμφανίζεται ήδη σε αυτό το μήνυμα.
+archived = Αρχειοθετήθηκε.
+copied_to_folder = Αντιγράφηκε στον φάκελο {to_folder}.
+deleted_one = Το μήνυμα διαγράφηκε οριστικά.
+deleted_many = Διαγράφηκαν οριστικά {count} μηνύματα.
+trashed_one = Το μήνυμα μετακινήθηκε στα Απορρίμματα.
+trashed_many = Μετακινήθηκαν {count} μηνύματα στα Απορρίμματα.
+
+# Accounts and new mail
+no_account_yet = Δεν υπάρχει ακόμη λογαριασμός για μετάβαση.
+inbox_landed = Εισερχόμενα του {name}.
+account_enabled = Ο λογαριασμός {name} ενεργοποιήθηκε.
+auto_check_paused = Ο αυτόματος έλεγχος τέθηκε σε παύση για τον λογαριασμό {account}.
+auto_check_resumed = Ο αυτόματος έλεγχος είναι ενεργός για τον λογαριασμό {account}.
+account_disabled = Ο λογαριασμός {name} απενεργοποιήθηκε.
+new_mail_one = 1 νέο μήνυμα για τον λογαριασμό {name}.
+new_mail_many = {count} νέα μηνύματα για τον λογαριασμό {name}.
+refresh_all_done_one = Ανανεώθηκε 1 λογαριασμός.
+refresh_all_done_many = Ανανεώθηκαν {count} λογαριασμοί.
+refresh_all_done_failures = Ανανεώθηκαν {count} λογαριασμοί, {failed} δεν μπόρεσαν να ανανεωθούν.
+refresh_all_done_failures_one = Ανανεώθηκε {count} λογαριασμός, {failed} δεν μπόρεσαν να ανανεωθούν.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Η διεύθυνση αντιγράφηκε.
+sender_no_address = {sender}. Δεν υπάρχει διεύθυνση για αντιγραφή.
+clipboard_not_opened = {sender}. Το πρόχειρο δεν μπόρεσε να ανοίξει.
+
+# The signature editor
+signature_page_formatted = Μορφοποιημένη. Αυτό θα αποθηκευτεί.
+signature_page_html = Πηγή HTML. Αυτό θα αποθηκευτεί.
+signature_page_html_still_wins = Μορφοποιημένη. Η πηγή HTML είναι ακόμη αυτό που θα αποθηκευτεί.
+
+# Background work
+phishing_list_updating = Η λίστα ηλεκτρονικού ψαρέματος ενημερώνεται στο παρασκήνιο.
+cache_cleared = Εκκαθαρίστηκαν {files} αρχεία προσωρινής μνήμης, {size} MB.
+hotkeys_diagnostic_on = Η διάγνωση πλήκτρων συντόμευσης είναι ενεργή, επιλεγμένη
+hotkeys_diagnostic_off = Η διάγνωση πλήκτρων συντόμευσης είναι ανενεργή, μη επιλεγμένη
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Αρχειοθέτηση
+action_delete = Διαγραφή
+action_delete_permanently = Οριστική διαγραφή
+action_mark_as_junk = Επισήμανση ως ανεπιθύμητο
+action_mark_as_not_junk = Επισήμανση ως όχι ανεπιθύμητο
+action_move_to = Μετακίνηση σε
+action_copy_to = Αντιγραφή σε
+action_mark_message = Επισήμανση μηνύματος
+action_undo = Αναίρεση
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Αναιρέθηκε: {action}.
+undo_done_many = Αναιρέθηκε: {action} για {count} μηνύματα.
+junk_marked_one = Επισημάνθηκε ως ανεπιθύμητο.
+junk_marked_many = {count} μηνύματα επισημάνθηκαν ως ανεπιθύμητα.
+junk_no_new_sender = Δεν αποκλείστηκε νέος αποστολέας: είναι ήδη αποκλεισμένος, λίστα αλληλογραφίας ή μία από τις δικές σας διευθύνσεις.
+not_junk_marked_one = Επισημάνθηκε ως όχι ανεπιθύμητο.
+not_junk_marked_many = {count} μηνύματα επισημάνθηκαν ως όχι ανεπιθύμητα.
+moved_to_one = Μετακινήθηκε στον φάκελο {to_folder}.
+moved_to_many = Μετακινήθηκαν {count} μηνύματα στον φάκελο {to_folder}.
+copied_to_many = Αντιγράφηκαν {count} μηνύματα στον φάκελο {to_folder}.
+marked_read = Επισημάνθηκε ως αναγνωσμένο.
+marked_unread = Επισημάνθηκε ως μη αναγνωσμένο.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Ακυρώθηκε μετά από {completed} από {total}. {succeeded} πέτυχαν, {failed} απέτυχαν.
+bulk_failed_one = {done} {failed} από 1 μήνυμα απέτυχε.
+bulk_failed_many = {done} {failed} από {total} μηνύματα απέτυχαν.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Έντονα
+format_word_italic = Πλάγια
+format_word_strike = Διαγραμμισμένο
+format_word_href = Σύνδεσμος
+format_word_bullet = Λίστα με κουκκίδες
+format_word_number = Αριθμημένη λίστα
+format_word_quote = Παράθεση
+format_word_code = Κώδικας
+format_word_heading1 = Επικεφαλίδα
+format_applied = Εφαρμόστηκε: {formatting}.
+format_inserted = Εισήχθη: {formatting}.
+format_not_available = Το {formatting} δεν είναι διαθέσιμο στο απλό σώμα μηνύματος.
+format_on = {formatting} ενεργό
+format_off = {formatting} ανενεργό
+link_applied = Ο σύνδεσμος εφαρμόστηκε.
+link_applied_to_selection = Ο σύνδεσμος εφαρμόστηκε στην επιλογή.
+plain_body_formatting = Το απλό σώμα μηνύματος δείχνει τη μορφοποίησή του ως ετικέτες.
+
+# Reaching either end of a thread
+thread_edge_first = Πρώτο μήνυμα σε αυτό το νήμα. Πατήστε ξανά για κλείσιμο.
+thread_edge_last = Τελευταίο μήνυμα σε αυτό το νήμα. Πατήστε ξανά για κλείσιμο.
+jump_unified_inbox = Ενοποιημένα εισερχόμενα.
+remote_none = Δεν υπάρχει απομακρυσμένο περιεχόμενο σε αυτό το μήνυμα.
+sender_none = Αυτό το μήνυμα δεν έχει αποστολέα.
+sender_name_no_address = %s, χωρίς διεύθυνση
+signature_not_switched = Η υπογραφή δεν άλλαξε. Πατήστε Ctrl+Shift+S για να εισαγάγετε την υπογραφή αυτού του λογαριασμού.
+signature_removed_no_signature = Η υπογραφή αφαιρέθηκε. Αυτός ο λογαριασμός δεν έχει υπογραφή.
+signature_switched = Η υπογραφή άλλαξε σε αυτή του λογαριασμού.
+spell_not_replaced = Η λέξη δεν μπόρεσε να αντικατασταθεί.
+spell_replaced_with = Αντικαταστάθηκε με το {word}.
+folder_marked_read = {count} μηνύματα επισημάνθηκαν ως αναγνωσμένα.
+folder_no_unread = Δεν υπάρχουν μη αναγνωσμένα μηνύματα.
+threads_all_collapsed = Όλα τα νήματα συμπτύχθηκαν.
+threads_all_expanded = Όλα τα νήματα αναπτύχθηκαν.
+upd_percent = {percent} τοις εκατό
+upd_download_done = Η λήψη ολοκληρώθηκε. Προετοιμασία της ενημέρωσης...
+upd_updated_to = Το ZBox ενημερώθηκε στην έκδοση {version}.
+header_copied = Αντιγράφηκε.
+headers_copied = Όλες οι κεφαλίδες αντιγράφηκαν.
+identity_copies_updated = Τα Κοιν. και Κρυφή κοιν. ενημερώθηκαν για αυτή την ταυτότητα.
+signature_switched_identity = Η υπογραφή άλλαξε σε αυτή της ταυτότητας.
+signature_removed_identity = Η υπογραφή αφαιρέθηκε. Αυτή η ταυτότητα δεν έχει υπογραφή.
+signature_not_switched_identity = Η υπογραφή δεν άλλαξε. Πατήστε Ctrl+Shift+S για να εισαγάγετε την υπογραφή αυτής της ταυτότητας.
+signature_none_identity = Αυτή η ταυτότητα δεν έχει υπογραφή.
+move_keys_no_selection = Επιλέξτε πρώτα ένα μήνυμα.
+move_keys_no_folders = Δεν υπάρχουν ακόμη φάκελοι για επιλογή. Δοκιμάστε ξανά σε λίγο.
+block_sender_done_one = Ο αποστολέας {sender} αποκλείστηκε. Τα νέα του μηνύματα θα πηγαίνουν στα Απορρίμματα.
+block_sender_done_many = Αποκλείστηκαν {count} αποστολείς. Τα νέα τους μηνύματα θα πηγαίνουν στα Απορρίμματα.
+block_sender_already = Ο αποστολέας {sender} είναι ήδη αποκλεισμένος.
+block_sender_own = Δεν αποκλείστηκε: είναι μία από τις δικές σας διευθύνσεις.
+block_sender_list_unknown = Δεν αποκλείστηκε: αυτό το μήνυμα ήρθε μέσω λίστας αλληλογραφίας και δεν αναφέρει ποιος το έστειλε. Ο αποκλεισμός της διεύθυνσης της λίστας θα απέκλειε όλους όσοι ανήκουν σε αυτή.
+block_sender_moved = Ο αποστολέας αποκλείστηκε. Μετακινήθηκαν {count} μηνύματα στα Απορρίμματα.
+block_senders_moved = Αποκλείστηκαν {senders} αποστολείς. Μετακινήθηκαν {count} μηνύματα στα Απορρίμματα.
+unblock_sender_moved = Ο αποστολέας επιτράπηκε. Μετακινήθηκαν {count} μηνύματα στα Εισερχόμενα.
+unblock_senders_moved = Επιτράπηκαν {senders} αποστολείς. Μετακινήθηκαν {count} μηνύματα στα Εισερχόμενα.
+unblock_sender_done = Ο αποστολέας {sender} επιτράπηκε.
+unblock_sender_not_blocked = Ο αποστολέας {sender} δεν είναι αποκλεισμένος.
+pgp_cm_on = {name} ενεργό.
+pgp_cm_off = {name} ανενεργό.
+pgp_cm_identity = Οι ρυθμίσεις κρυπτογράφησης άλλαξαν σε αυτές της ταυτότητας.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Πληκτρολογήστε κάτι παραπάνω και πατήστε Enter ή επιλέξτε Αναζήτηση.
+search_no_account = Προσθέστε πρώτα έναν λογαριασμό.
+search_no_term = Πληκτρολογήστε λέξεις προς αναζήτηση ή επιλέξτε ημερομηνία ή πλαίσιο ελέγχου.
+search_running = Αναζήτηση...
+search_none = Δεν υπάρχουν αποτελέσματα για "{term}".
+search_found_one = 1 αποτέλεσμα για "{term}".
+search_found_many = {count} αποτελέσματα για "{term}".
+search_bad_date = Πληκτρολογήστε την ημερομηνία ως έτος-μήνας-ημέρα, για παράδειγμα 2025-12-31, με προαιρετική ώρα όπως 14:30.
+search_bad_range = Το τέλος του εύρους ημερομηνιών είναι πριν από την αρχή του.
+search_none_any = Κανένα μήνυμα δεν ταιριάζει.
+search_found_one_any = Βρέθηκε 1 μήνυμα.
+search_found_many_any = Βρέθηκαν {count} μηνύματα.
+search_failed = Η αναζήτηση απέτυχε.
+
+# The related messages tab
+related_running = Αναζήτηση...
+related_none = Δεν βρέθηκαν σχετικά μηνύματα.
+related_found_one = Βρέθηκε 1 σχετικό μήνυμα.
+related_found_many = Βρέθηκαν {count} σχετικά μηνύματα.
+related_failed = Δεν ήταν δυνατή η αναζήτηση σχετικών μηνυμάτων.
+
+# Writing and sending
+sending_via = Αποστολή μέσω {sender}...
+send_failed = Η αποστολή απέτυχε. Δείτε τα αρχεία καταγραφής για λεπτομέρειες.
+draft_autosaved = Το προσχέδιο αποθηκεύτηκε αυτόματα.
+draft_autosave_failed = Η αυτόματη αποθήκευση του προσχεδίου απέτυχε. Δείτε τα αρχεία καταγραφής για λεπτομέρειες.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Το απομακρυσμένο περιεχόμενο θα φορτώνεται πλέον για μηνύματα από τον αποστολέα {sender}.
+downloading_attachment = Λήψη του {filename}...
+downloading_attachments_one = Λήψη 1 συνημμένου...
+downloading_attachments_many = Λήψη {count} συνημμένων...
+saved_to = Αποθηκεύτηκε στο {folder}
+attachment_download_failed = Η λήψη του συνημμένου απέτυχε.
+
+# Getting mail onto the screen
+loading_folder = Φόρτωση του φακέλου {folder} για τον λογαριασμό {account}...
+messages_in_folder = {count} μηνύματα στον φάκελο {folder}.
+messages_in_folder_cached = {count} μηνύματα στον φάκελο {folder} (τελευταίο συγχρονισμένο αντίγραφο, γίνεται ενημέρωση...)
+no_offline_copy = Δεν υπάρχει ακόμη αντίγραφο εκτός σύνδεσης για τον φάκελο {folder}.
+refresh_failed_cached = Δεν ήταν δυνατή η ανανέωση του φακέλου {folder}: εμφανίζεται το τελευταίο συγχρονισμένο αντίγραφο.
+no_such_folder = Δεν υπάρχει φάκελος {folder} για αυτόν τον λογαριασμό.
+load_failed = Η φόρτωση των μηνυμάτων απέτυχε. Δείτε τα αρχεία καταγραφής για λεπτομέρειες.
+no_more_to_load = Δεν υπάρχουν άλλα μηνύματα για φόρτωση σε αυτόν τον φάκελο.
+loading_more = Φόρτωση περισσότερων μηνυμάτων στον φάκελο {folder}...
+more_loaded = Φορτώθηκαν {count} ακόμη μηνύματα.
+no_more_messages = Δεν υπάρχουν άλλα μηνύματα σε αυτόν τον φάκελο.
+load_more_failed = Δεν ήταν δυνατή η φόρτωση περισσότερων μηνυμάτων: {error}
+loading_unified = Φόρτωση του ενοποιημένου φακέλου {folder}...
+messages_in_unified = {count} μηνύματα από όλους τους λογαριασμούς στον ενοποιημένο φάκελο {folder}.
+messages_in_unified_cached = {count} μηνύματα στον ενοποιημένο φάκελο {folder} (τελευταίο συγχρονισμένο αντίγραφο, γίνεται ενημέρωση...)
+auto_purge_done = Ο αυτόματος καθαρισμός αφαίρεσε {count} παλιά μηνύματα από τα Απορρίμματα/Ανεπιθύμητα.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Έτοιμο.
+opening_message = Άνοιγμα μηνύματος...
+opening_message_already = Άνοιγμα μηνύματος... (φορτώνει ήδη)
+could_not_open_message = Δεν ήταν δυνατό το άνοιγμα του μηνύματος.
+could_not_open_that_message = Δεν ήταν δυνατό το άνοιγμα εκείνου του μηνύματος.
+could_not_load_message = Δεν ήταν δυνατή η φόρτωση αυτού του μηνύματος.
+message_still_loading = Εκείνο το μήνυμα φορτώνει ακόμη.
+folder_still_loading = Ο φάκελος φορτώνει ακόμη -- δοκιμάστε ξανά σε λίγο.
+not_in_thread = Αυτό το μήνυμα δεν ανήκει σε νήμα.
+no_longer_in_thread = Αυτό το μήνυμα δεν ανήκει πλέον στο νήμα.
+thread_position = Μήνυμα {position} από {total} σε αυτό το νήμα.
+thread_finished_one = Τέλος αυτού του νήματος (1 μήνυμα).
+thread_finished_many = Τέλος αυτού του νήματος ({count} μηνύματα).
+select_message_first = Επιλέξτε πρώτα ένα μήνυμα.
+conversation_failed = Δεν ήταν δυνατό το άνοιγμα αυτής της συνομιλίας.
+select_message_for_related = Επιλέξτε πρώτα ένα μήνυμα για να δείτε τα σχετικά μηνύματα.
+looking_for_related = Αναζήτηση σχετικών μηνυμάτων...
+no_threading_headers = Αυτό το μήνυμα δεν έχει Message-ID ή κεφαλίδες νήματος για αναζήτηση.
+reply_one_at_a_time = Η απάντηση λειτουργεί σε ένα μήνυμα κάθε φορά. Επιλέξτε ένα μόνο μήνυμα.
+select_message_to_reply = Επιλέξτε πρώτα ένα μήνυμα για απάντηση.
+preparing_reply = Προετοιμασία απάντησης...
+reply_load_failed = Δεν ήταν δυνατή η φόρτωση του αρχικού μηνύματος για απάντηση.
+select_message_to_forward = Επιλέξτε πρώτα ένα μήνυμα για προώθηση.
+preparing_forward = Προετοιμασία μηνύματος προς προώθηση...
+forward_load_failed = Δεν ήταν δυνατή η φόρτωση του μηνύματος προς προώθηση.
+compose_tab_needed_hint = Αυτή η εντολή χρειάζεται μια καρτέλα σύνταξης. Πατήστε Ctrl+N για να γράψετε ένα μήνυμα.
+open_message_first_view = Ανοίξτε πρώτα ένα μήνυμα και μετά πατήστε Ctrl+B για να αλλάξετε την προβολή του.
+open_message_first_remote = Ανοίξτε πρώτα ένα μήνυμα και μετά πατήστε Ctrl+Shift+I για να φορτώσετε το απομακρυσμένο περιεχόμενό του.
+
+# Acting on messages
+copying_message = Αντιγραφή μηνύματος...
+copy_failed = Η αντιγραφή απέτυχε.
+delete_failed = Η διαγραφή απέτυχε.
+already_in_archive = Βρίσκεται ήδη στην Αρχειοθήκη.
+archiving = Αρχειοθέτηση...
+archive_failed = Η αρχειοθέτηση απέτυχε.
+action_failed = Το {action} απέτυχε.
+nothing_to_undo = Δεν υπάρχει τίποτα για αναίρεση.
+private_mode_on = Η ιδιωτική λειτουργία είναι ενεργή. Τα αντίγραφα της αλληλογραφίας σας που κρατούσε το ZBox σε αυτόν τον υπολογιστή διαγράφηκαν.
+private_mode_off = Η ιδιωτική λειτουργία είναι ανενεργή. Το ZBox κρατά ξανά αντίγραφα της αλληλογραφίας σας.
+undo_failed = Δεν ήταν δυνατή η αναίρεση: {action}.
+
+# Views and folders
+folder_pane_all = Παράθυρο φακέλων: Όλοι οι φάκελοι.
+folder_pane_unified = Παράθυρο φακέλων: Ενοποιημένοι φάκελοι.
+sorted_ascending = Ταξινόμηση κατά {field}, αύξουσα.
+sorted_descending = Ταξινόμηση κατά {field}, φθίνουσα.
+unified_folders_updated = Οι ενοποιημένοι φάκελοι ενημερώθηκαν.
+zoom_reset = Το μέγεθος γραμματοσειράς του μηνύματος επανήλθε στην προεπιλογή.
+folder_creating = Δημιουργία φακέλου "{folder}"...
+folder_created = Ο φάκελος "{folder}" δημιουργήθηκε.
+folder_create_failed = Δεν ήταν δυνατή η δημιουργία του φακέλου.
+folder_renaming = Μετονομασία του "{folder}" σε "{new_name}"...
+folder_renamed = Ο φάκελος μετονομάστηκε σε "{new_name}".
+folder_rename_failed = Δεν ήταν δυνατή η μετονομασία του φακέλου.
+folder_deleting = Διαγραφή φακέλου "{folder}"...
+folder_deleted = Ο φάκελος διαγράφηκε.
+folder_delete_failed = Δεν ήταν δυνατή η διαγραφή του φακέλου.
+folder_subscribing = Συνδρομή στον φάκελο "{folder}"...
+folder_unsubscribing = Ακύρωση συνδρομής από τον φάκελο "{folder}"...
+folder_subscribed = Έγινε συνδρομή.
+folder_unsubscribed = Η συνδρομή ακυρώθηκε.
+folder_subscribe_failed = Δεν ήταν δυνατή η συνδρομή στον φάκελο.
+folder_unsubscribe_failed = Δεν ήταν δυνατή η ακύρωση συνδρομής από τον φάκελο.
+
+# Accounts
+account_not_added = Ο λογαριασμός δεν προστέθηκε.
+account_added = Ο λογαριασμός προστέθηκε: {account}
+account_settings_not_saved = Οι ρυθμίσεις λογαριασμού δεν αποθηκεύτηκαν.
+account_updated = Ο λογαριασμός ενημερώθηκε: {account}
+account_not_removed = Ο λογαριασμός δεν αφαιρέθηκε.
+account_removed = Ο λογαριασμός αφαιρέθηκε.
+account_removed_with_files = Ο λογαριασμός αφαιρέθηκε. Διαγράφηκαν {count} τοπικά αρχεία.
+default_account_failed = Δεν ήταν δυνατός ο ορισμός του προεπιλεγμένου λογαριασμού.
+default_account_set = Ο λογαριασμός {account} είναι πλέον ο προεπιλεγμένος.
+auto_check_not_saved = Η ρύθμιση αυτόματου ελέγχου δεν αποθηκεύτηκε.
+mute_not_saved = Η ρύθμιση σίγασης δεν αποθηκεύτηκε.
+account_muted = Ο λογαριασμός {account} σιγάστηκε.
+account_unmuted = Η σίγαση του λογαριασμού {account} άρθηκε.
+export_done = Εξήχθησαν {count} λογαριασμοί και οι ρυθμίσεις στο {path}.
+import_done = Εισήχθησαν {count} λογαριασμοί από το {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Τα φίλτρα δεν αποθηκεύτηκαν.
+filters_saved = Τα φίλτρα αποθηκεύτηκαν για τον λογαριασμό {account}.
+filters_checking = Έλεγχος του φακέλου {folder} με τα φίλτρα σας...
+filters_none_matched = Εκτέλεση τώρα: κανένα μήνυμα στον φάκελο {folder} δεν ταίριαξε με ενεργό κανόνα.
+filters_run_failed = Δεν ήταν δυνατή η εκτέλεση των φίλτρων.
+filters_moving = Μετακίνηση {count} φιλτραρισμένων μηνυμάτων...
+filters_move_failures = Φίλτρα: δεν ήταν δυνατή η μετακίνηση {count} μηνυμάτων.
+filters_moved = Τα φίλτρα μετακίνησαν {count} μηνύματα από τον φάκελο {folder}.
+filters_move_failed = Δεν ήταν δυνατή η μετακίνηση των φιλτραρισμένων μηνυμάτων.
+cache_not_cleared = Η προσωρινή μνήμη δεν εκκαθαρίστηκε.
+auto_cache_cleanup = Αυτόματη εκκαθάριση προσωρινής μνήμης: μηνύματα παλαιότερα από {age}.
+phishing_update_failed = Δεν ήταν δυνατή η ενημέρωση της λίστας ηλεκτρονικού ψαρέματος: {error}
+blocklist_update_failed = Δεν ήταν δυνατή η ενημέρωση της λίστας αποκλεισμού: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Ανοίξτε πρώτα ένα μήνυμα και μετά χρησιμοποιήστε το Αποθήκευση ως.
+saving_message = Αποθήκευση μηνύματος...
+save_file_failed = Δεν ήταν δυνατή η αποθήκευση του αρχείου.
+save_fetch_failed = Δεν ήταν δυνατή η λήψη του μηνύματος για αποθήκευση.
+open_message_first_print = Ανοίξτε πρώτα ένα μήνυμα και μετά χρησιμοποιήστε την Εκτύπωση.
+open_message_first_preview = Ανοίξτε πρώτα ένα μήνυμα και μετά χρησιμοποιήστε την Προεπισκόπηση εκτύπωσης.
+refreshing_accounts = Ανανέωση {count} λογαριασμών...
+emptying_trash = Άδειασμα των Απορριμμάτων για τον λογαριασμό {account}...
+trash_already_empty = Τα Απορρίμματα ήταν ήδη άδεια.
+trash_emptied = Τα Απορρίμματα αδειάστηκαν: διαγράφηκαν {count} μηνύματα.
+empty_trash_failed = Δεν ήταν δυνατό το άδειασμα των Απορριμμάτων.
+emptying_junk = Άδειασμα των Ανεπιθύμητων για τον λογαριασμό {account}...
+junk_already_empty = Τα Ανεπιθύμητα ήταν ήδη άδεια.
+junk_emptied = Τα Ανεπιθύμητα αδειάστηκαν: διαγράφηκαν {count} μηνύματα.
+junk_emptied_prefix = Τα Ανεπιθύμητα αδειάστηκαν:
+junk_part_purged = {count} διαγράφηκαν
+junk_part_in_trash = {count} μετακινήθηκαν στα Απορρίμματα αλλά δεν επιβεβαιώθηκε η αφαίρεσή τους, ελέγξτε τα Απορρίμματα
+junk_part_not_moved = {count} δεν μετακινήθηκαν στα Απορρίμματα, είναι ακόμη στα Ανεπιθύμητα
+empty_junk_failed = Δεν ήταν δυνατό το άδειασμα των Ανεπιθύμητων.
+back_online = Ξανά σε σύνδεση.
+offline_sync_running = Συγχρονισμός του λογαριασμού {account} για χρήση εκτός σύνδεσης...
+offline_sync_failed = Ο συγχρονισμός εκτός σύνδεσης απέτυχε: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Επιλέξτε ή ανοίξτε πρώτα ένα μήνυμα.
+select_or_open_message_ctrl_u = Επιλέξτε ή ανοίξτε πρώτα ένα μήνυμα και μετά πατήστε Ctrl+U.
+no_sender_address = Αυτό το μήνυμα δεν έχει διεύθυνση αποστολέα για προσθήκη.
+contact_added = Η επαφή {contact} προστέθηκε στο ευρετήριο διευθύνσεών σας.
+contact_already_there = Η επαφή {contact} υπάρχει ήδη στο ευρετήριο διευθύνσεών σας.
+privacy_saved = Οι ρυθμίσεις απορρήτου αποθηκεύτηκαν. Ανοίξτε ξανά ένα μήνυμα για να εφαρμοστούν.
+message_font_size = Μέγεθος γραμματοσειράς μηνύματος: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Οριστική διαγραφή μηνύματος
+deleting_many = Οριστική διαγραφή {count} μηνυμάτων
+trashing_one = Μετακίνηση μηνύματος στα Απορρίμματα
+trashing_many = Μετακίνηση {count} μηνυμάτων στα Απορρίμματα
+undo_partly_restored = Αναιρέθηκε το {action}, αλλά {count} δεν μπόρεσαν να επαναφερθούν -- μπορεί να έχουν μετακινηθεί, διαγραφεί ή λήξει στο μεταξύ.
+moves_report = {action}: μετακινήθηκαν {moved} από {total} μηνύματα.
+moves_report_failed = Δεν μετακινήθηκαν, παραμένουν στον αρχικό φάκελο: {count}.
+
+tray_tooltip_one = ZBox — 1 μη αναγνωσμένο μήνυμα
+tray_tooltip_many = ZBox — {count} μη αναγνωσμένα μηνύματα
+account_unreachable = Δεν ήταν δυνατή η επικοινωνία με τον λογαριασμό {account}. Οι αυτόματοι έλεγχοι για αυτόν τίθενται σε παύση για {minutes} λεπτά.
+bulk_copy_failed = Δεν ήταν δυνατή η αντιγραφή μηνυμάτων.
+bulk_copy_failed_status = Η αντιγραφή απέτυχε.
+bulk_loading_archive = Τα μηνύματα φορτώνουν ακόμη -- δοκιμάστε ξανά την αρχειοθέτηση σε λίγο.
+bulk_loading_delete = Τα μηνύματα φορτώνουν ακόμη -- δοκιμάστε ξανά τη διαγραφή σε λίγο.
+bulk_loading_flag = Τα μηνύματα φορτώνουν ακόμη -- δοκιμάστε ξανά την επισήμανση με αστέρι σε λίγο.
+bulk_loading_generic = Τα μηνύματα φορτώνουν ακόμη -- δοκιμάστε ξανά σε λίγο.
+bulk_none = Δεν έχει επιλεγεί μήνυμα.
+bulk_none_archive = Δεν έχει επιλεγεί μήνυμα για αρχειοθέτηση.
+bulk_none_delete = Δεν έχει επιλεγεί μήνυμα για διαγραφή.
+bulk_none_junk = Δεν έχει επιλεγεί μήνυμα για επισήμανση ως ανεπιθύμητο.
+bulk_none_not_junk = Δεν έχει επιλεγεί μήνυμα για επισήμανση ως όχι ανεπιθύμητο.
+delete_refused_still = Ο διακομιστής αρνήθηκε τη διαγραφή· βρίσκεται ακόμη στον φάκελο {folder}.
+delete_refused_trash = Βρίσκεται στα Απορρίμματα, αλλά ο διακομιστής αρνήθηκε την οριστική διαγραφή.
+delete_resume_failed = Δεν ήταν δυνατή η διαγραφή {count} μηνυμάτων από προηγούμενη διαγραφή.
+done_perm_delete_one = Το μήνυμα διαγράφηκε οριστικά.
+done_trash_one = Το μήνυμα μετακινήθηκε στα Απορρίμματα.
+filters_applied = Τα φίλτρα εφαρμόστηκαν σε {count} μηνύματα στον φάκελο {folder}.
+filters_failed = Δεν ήταν δυνατή η εκτέλεση των φίλτρων.
+filters_running = Εκτέλεση φίλτρων στον φάκελο {folder}
+flag_failed = Δεν ήταν δυνατή η ενημέρωση της επισήμανσης με αστέρι.
+flag_updated = Η επισήμανση με αστέρι ενημερώθηκε.
+folder_verb_subscribing = Συνδρομή στον
+folder_verb_unsubscribing = Ακύρωση συνδρομής από τον
+mark_read_failed = Δεν ήταν δυνατή η επισήμανση μηνυμάτων ως αναγνωσμένων.
+mark_unread_failed = Δεν ήταν δυνατή η επισήμανση μηνυμάτων ως μη αναγνωσμένων.
+notify_new_mail_body = {count} νέα {noun} για τον λογαριασμό {name}.
+notify_new_mail_title = Νέα αλληλογραφία
+notify_noun_many = μηνύματα
+notify_noun_one = μήνυμα
+report_done = {verb} {done} από {count} μηνύματα.
+report_verb_deleted = Διαγράφηκαν
+report_verb_permanent = Διαγράφηκαν οριστικά
+running_copy_many = Αντιγραφή {count} μηνυμάτων
+running_copy_one = Αντιγραφή μηνύματος
+running_junk_many = Επισήμανση {count} μηνυμάτων ως ανεπιθύμητων
+running_junk_one = Επισήμανση ως ανεπιθύμητο
+running_move_many = Μετακίνηση {count} μηνυμάτων
+running_move_one = Μετακίνηση
+running_not_junk_many = Επισήμανση {count} μηνυμάτων ως όχι ανεπιθύμητων
+running_not_junk_one = Επισήμανση ως όχι ανεπιθύμητο
+running_perm_delete_one = Οριστική διαγραφή μηνύματος...
+running_read_many = Επισήμανση {count} μηνυμάτων ως αναγνωσμένων
+running_read_one = Επισήμανση ως αναγνωσμένο
+running_trash_one = Μετακίνηση μηνύματος στα Απορρίμματα...
+running_unread_many = Επισήμανση {count} μηνυμάτων ως μη αναγνωσμένων
+running_unread_one = Επισήμανση ως μη αναγνωσμένο
+settings_saved_no_startup = Οι ρυθμίσεις αποθηκεύτηκαν. Δεν ήταν δυνατή η ενημέρωση της καταχώρισης εκκίνησης των Windows.
+settings_saved_status = Οι ρυθμίσεις αποθηκεύτηκαν.
+spam_blocked_sender = Αποκλεισμένος αποστολέας
+spam_possible_phishing = Πιθανό ηλεκτρονικό ψάρεμα
+undo_running_many = Αναίρεση: {action} ({count} μηνύματα)
+undo_running_one = Αναίρεση: {action}
+mark_folder_read_failed = Δεν ήταν δυνατή η επισήμανση του φακέλου ως αναγνωσμένου.
+marking_folder_read = Επισήμανση του φακέλου ως αναγνωσμένου...
+upd_ready_at_exit = Μια ενημέρωση έχει ήδη ληφθεί. Θα εγκατασταθεί όταν κλείσετε το ZBox.
+upd_checking = Έλεγχος για ενημερώσεις...
+upd_up_to_date = Το ZBox είναι ενημερωμένο.
+upd_available_source = Το ZBox {version} είναι διαθέσιμο. Αυτό το αντίγραφο τρέχει από τον πηγαίο κώδικα, οπότε ενημερώστε το με git.
+upd_check_failed = Δεν ήταν δυνατός ο έλεγχος για ενημερώσεις: {error}
+opening_attachment = Άνοιγμα του {filename}...
+loading_headers = Φόρτωση κεφαλίδων...
+offline_inbox_only = Μόνο τα Εισερχόμενα και η Αρχειοθήκη διατηρούνται για χρήση εκτός σύνδεσης.
+offline_sync_done_inbox = Συγχρονίστηκαν {count} μηνύματα στα Εισερχόμενα και στην Αρχειοθήκη για χρήση εκτός σύνδεσης.
+working_offline = Εργασία εκτός σύνδεσης: εμφανίζεται το τελευταίο συγχρονισμένο αντίγραφο των Εισερχομένων/Απεσταλμένων/Προσχεδίων.
+emptying_trash_all = Άδειασμα των Απορριμμάτων για όλους τους λογαριασμούς...
+trash_emptied_all = Τα Απορρίμματα αδειάστηκαν σε {accounts} λογαριασμούς: διαγράφηκαν {count} μηνύματα.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Αρχείο
+bar_edit = &Επεξεργασία
+bar_view = &Προβολή
+bar_message = &Μήνυμα
+bar_compose = &Σύνταξη
+bar_tools = &Εργαλεία
+bar_help = &Βοήθεια
+
+# File
+file_new = Δημιουργία
+file_new_message = Μήνυμα
+file_new_account = Λογαριασμός email...
+file_open_saved_message = Άνοιγμα αποθηκευμένου μηνύματος...
+file_close = Κλείσιμο
+file_save_message_as = Αποθήκευση μηνύματος ως...
+file_get_new_for = Λήψη νέων μηνυμάτων για
+file_get_new_all = Όλους τους λογαριασμούς
+file_get_new_current = Τον τρέχοντα λογαριασμό
+file_offline = Εκτός σύνδεσης
+file_work_offline = Εργασία εκτός σύνδεσης
+file_sync_now = Συγχρονισμός τώρα
+file_print = Εκτύπωση...
+file_print_preview = Προεπισκόπηση εκτύπωσης...
+file_exit = Έξοδος
+
+# Edit
+edit_undo = Αναίρεση
+edit_select_all = Επιλογή όλων
+edit_find_messages = Εύρεση μηνυμάτων...
+
+# Message
+message_reply = Απάντηση
+message_reply_all = Απάντηση σε όλους
+message_forward = Προώθηση
+message_archive = Αρχειοθέτηση
+message_delete = Διαγραφή
+message_delete_permanently = Οριστική διαγραφή
+message_mark = Επισήμανση
+mark_read = Αναγνωσμένο
+mark_unread = Μη αναγνωσμένο
+mark_flagged = Με αστέρι
+mark_junk = Ανεπιθύμητο
+mark_not_junk = Όχι ανεπιθύμητο
+message_watch_thread = Παρακολούθηση νήματος
+message_ignore_thread = Αγνόηση νήματος
+message_open_conversation = Άνοιγμα μηνύματος σε συνομιλία
+message_show_related = Εμφάνιση σχετικών μηνυμάτων
+message_add_sender_to_address_book = Προσθήκη αποστολέα στο ευρετήριο διευθύνσεων
+message_announce_sender = Ανακοίνωση αποστολέα
+message_announce_copy_sender = Ανακοίνωση αποστολέα και αντιγραφή διεύθυνσης
+
+# View
+view_folders = Φάκελοι
+folders_all = Όλοι
+folders_unified = Ενοποιημένοι
+folders_jump_inbox = Μετάβαση στη λίστα μηνυμάτων των Εισερχομένων
+folders_configure_unified = Διαμόρφωση ενοποιημένων φακέλων...
+view_sort_by = Ταξινόμηση κατά
+sort_date = Ημερομηνία
+sort_subject = Θέμα
+sort_from = Από
+sort_descending = Φθίνουσα (πρώτα τα νεότερα)
+sort_ascending = Αύξουσα (πρώτα τα παλαιότερα)
+view_threads = Νήματα
+threads_all = Όλα
+threads_watched = Νήματα υπό παρακολούθηση
+threads_ignored = Αγνοημένα νήματα
+threads_expand_all = Ανάπτυξη όλων των νημάτων
+threads_collapse_all = Σύμπτυξη όλων των νημάτων
+view_load_more = Φόρτωση περισσότερων μηνυμάτων
+view_toggle_message_view = Εναλλαγή μεταξύ προβολής κειμένου και HTML
+view_show_remote_content = Εμφάνιση απομακρυσμένου περιεχομένου σε αυτό το μήνυμα
+view_message_zoom = Μεγέθυνση μηνύματος
+zoom_increase = Αύξηση μεγέθους γραμματοσειράς μηνύματος
+zoom_decrease = Μείωση μεγέθους γραμματοσειράς μηνύματος
+zoom_reset = Επαναφορά μεγέθους γραμματοσειράς μηνύματος
+
+# Compose
+compose_send = &Αποστολή
+compose_save_draft = &Αποθήκευση προσχεδίου
+compose_attach = &Επισύναψη αρχείου...
+compose_fmt_bold = &Έντονα
+compose_fmt_italic = &Πλάγια
+compose_fmt_strike = &Διαγράμμιση
+compose_fmt_bullet = &Λίστα με κουκκίδες
+compose_fmt_number = &Αριθμημένη λίστα
+compose_fmt_quote = &Παράθεση
+compose_fmt_code = &Κώδικας
+compose_fmt_heading1 = &Επικεφαλίδα
+compose_link = &Εισαγωγή συνδέσμου...
+compose_formatting = &Μορφοποίηση εδώ
+compose_spellcheck = &Έλεγχος ορθογραφίας...
+compose_spellcheck_next = &Επόμενο ορθογραφικό λάθος
+compose_spellcheck_add = &Προσθήκη λέξης στο λεξικό
+compose_insert_signature = &Εισαγωγή υπογραφής
+compose_paste_quotation = &Επικόλληση ως παράθεση
+compose_word_count = &Πλήθος λέξεων
+compose_preview = &Προεπισκόπηση...
+compose_diagnostics = &Διαγνωστικά σύνταξης...
+compose_edit_signature = &Επεξεργασία υπογραφής...
+compose_hotkeys_diagnostic = &Διάγνωση πλήκτρων συντόμευσης
+
+# Tools
+tools_account_settings = Ρυθμίσεις λογαριασμού και ταυτοτήτων...
+tools_mute_account = Σίγαση λογαριασμού
+tools_pause_auto_check = Παύση αυτόματου ελέγχου
+tools_disable_account = Απενεργοποίηση λογαριασμού
+tools_remove_account = Αφαίρεση λογαριασμού...
+tools_address_book = Ευρετήριο διευθύνσεων...
+tools_message_filters = Φίλτρα μηνυμάτων...
+tools_import = Εισαγωγή λογαριασμών και ρυθμίσεων...
+tools_export = Εξαγωγή λογαριασμών και ρυθμίσεων...
+tools_cache_cleanup = Διαμόρφωση εκκαθάρισης προσωρινής μνήμης...
+tools_privacy = Απόρρητο και αποκλεισμός περιεχομένου...
+tools_settings = Ρυθμίσεις...
+
+# Help
+help_shortcuts = Συντομεύσεις πληκτρολογίου...
+help_about = Σχετικά με το ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Νέος λογαριασμός...
+tree_account_settings = Ρυθμίσεις λογαριασμού και ταυτοτήτων...
+tree_mute_account = Σίγαση λογαριασμού
+tree_pause_auto_check = Παύση αυτόματου ελέγχου
+tree_enable_account = Ενεργοποίηση λογαριασμού
+tree_disable_account = Απενεργοποίηση λογαριασμού
+tree_set_default_account = Ορισμός ως προεπιλεγμένου λογαριασμού
+tree_remove_account = Αφαίρεση λογαριασμού...
+tree_refresh = Ανανέωση
+tree_new_folder = Νέος φάκελος...
+tree_empty_trash = Άδειασμα απορριμμάτων
+tree_empty_junk = Άδειασμα ανεπιθύμητων
+tree_rename_folder = Μετονομασία φακέλου...
+tree_delete_folder = Διαγραφή φακέλου...
+tree_subscribe_folder = Συνδρομή στον φάκελο
+tree_unsubscribe_folder = Ακύρωση συνδρομής από τον φάκελο
+
+# The message list menu, opened the same two ways
+list_select_all = Επιλογή όλων
+list_reply = Απάντηση
+list_reply_all = Απάντηση σε όλους
+list_forward = Προώθηση
+list_mark = Επισήμανση
+list_archive = Αρχειοθέτηση
+list_delete_to_trash = Διαγραφή (μετακίνηση στα Απορρίμματα)
+list_delete_permanently = Οριστική διαγραφή
+list_move_to = Μετακίνηση σε
+list_copy_to = Αντιγραφή σε
+
+# The notification area icon
+tray_open = &Άνοιγμα του ZBox
+tray_unread_one = 1 μη αναγνωσμένο μήνυμα
+tray_unread_many = {count} μη αναγνωσμένα μηνύματα
+tray_no_unread = Δεν υπάρχουν μη αναγνωσμένα μηνύματα
+tray_settings = &Ρυθμίσεις...
+tray_quit = &Έξοδος από το ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Έντονα
+format_italic = &Πλάγια
+format_strike = &Διαγράμμιση
+format_bullet = &Λίστα με κουκκίδες
+format_number = &Αριθμημένη λίστα
+format_quote = &Παράθεση
+format_code = &Κώδικας
+format_heading1 = &Επικεφαλίδα
+format_insert_link = &Εισαγωγή συνδέσμου...
+format_formatting_here = &Μορφοποίηση εδώ
+tools_enable_account = Ενεργοποίηση λογαριασμού
+edit_undo_action = Αναίρεση: {action}
+tree_mark_folder_read = Επισήμανση φακέλου ως αναγνωσμένου
+help_updates = &Ενημερώσεις
+help_check_updates = &Έλεγχος για ενημερώσεις τώρα...
+help_update_settings = &Ρυθμίσεις ενημερώσεων...
+help_releases_page = &Άνοιγμα της σελίδας εκδόσεων
+message_attachments = Συνημμένα
+message_no_attachments = Χωρίς συνημμένα
+message_save_all_attachments = Αποθήκευση όλων των συνημμένων
+view_full_headers = Πλήρεις κεφαλίδες
+folders_go_to_tree = Μετάβαση στη λίστα φακέλων
+list_block_sender = Αποκλεισμός αυτού του αποστολέα
+list_unblock_sender = Άρση αποκλεισμού αυτού του αποστολέα
+sort_received = Παραλαβή
+sort_star = Αστέρι
+sort_order_received = Σειρά παραλαβής
+sort_priority = Προτεραιότητα
+sort_recipient = Παραλήπτης
+sort_correspondents = Αλληλογράφοι
+sort_size = Μέγεθος
+sort_read = Αναγνωσμένο
+sort_junk_status = Κατάσταση ανεπιθύμητου
+sort_attachments = Συνημμένα
+sort_threaded = Σε νήμα
+sort_unthreaded = Εκτός νήματος
+view_columns = Στήλες
+tools_openpgp_keys = Διαχείριση κλειδιών OpenPGP
+tools_smime_certs = Διαχείριση πιστοποιητικών S/MIME
+compose_pgp_encrypt = &Κρυπτογράφηση
+compose_pgp_sign = &Ψηφιακή υπογραφή
+compose_pgp_attach_key = &Επισύναψη του δημόσιου κλειδιού μου
+
+[dialogs]
+set_theme_restart_confirm = Να γίνει επανεκκίνηση του ZBox για εφαρμογή της αλλαγής θέματος;
+set_ui_theme_label = &Θέμα διεπαφής:
+set_ui_theme_note = Χρώματα για μενού, λίστες, παράθυρα διαλόγου και την προβολή κειμένου μηνύματος. Το Ακολουθεί το σύστημα χρησιμοποιεί τη δική του φωτεινή ή σκοτεινή λειτουργία εφαρμογών των Windows. Το Σκούρο μπλε, το Ζεστό σκούρο και η Απαλή αντίθεση είναι σκοτεινά θέματα με πιο ήπια χρώματα. Τα μηνύματα HTML διατηρούν τα δικά τους χρώματα και η Υψηλή αντίθεση των Windows έχει πάντα προτεραιότητα. Ισχύει την επόμενη φορά που θα ξεκινήσει το ZBox.
+set_theme_system = Ακολουθεί το σύστημα
+set_theme_light = Φωτεινό
+set_theme_dark = Σκοτεινό
+set_theme_midnight = Σκούρο μπλε
+set_theme_warm = Ζεστό σκούρο
+set_theme_soft = Απαλή αντίθεση
+set_language_restart_confirm = Να γίνει επανεκκίνηση του ZBox για εφαρμογή της αλλαγής γλώσσας;
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Επικοινωνία με τον Harith
+title_identity = Ταυτότητα
+title_show_password = Εμφάνιση κωδικού πρόσβασης
+title_missing_information = Λείπουν πληροφορίες
+title_unsupported_provider = Μη υποστηριζόμενος πάροχος
+title_test_connection = Δοκιμή σύνδεσης
+title_new_contact = Νέα επαφή
+title_edit_contact = Επεξεργασία επαφής
+title_delete_contact = Διαγραφή επαφής
+title_import_contacts = Εισαγωγή επαφών
+title_export_contacts = Εξαγωγή επαφών
+title_rename_group = Μετονομασία ομάδας
+title_delete_group = Διαγραφή ομάδας
+title_send = Αποστολή
+title_send_failed = Η αποστολή απέτυχε
+title_attach_file = Επισύναψη αρχείου
+title_save_draft = Αποθήκευση προσχεδίου
+title_documentation = Τεκμηρίωση ZBox
+title_open_link = Άνοιγμα συνδέσμου
+title_filter_rule = Κανόνας φίλτρου
+title_master_password = Κύριος κωδικός πρόσβασης
+title_attachment_saved = Το συνημμένο αποθηκεύτηκε
+title_attachments_saved = Τα συνημμένα αποθηκεύτηκαν
+title_download_failed = Η λήψη απέτυχε
+title_print = Εκτύπωση
+title_print_preview = Προεπισκόπηση εκτύπωσης
+title_related_messages = Σχετικά μηνύματα
+title_search = Αναζήτηση
+title_unlock = Ξεκλείδωμα
+title_unlock_methods = Μέθοδοι ξεκλειδώματος
+title_desktop_shortcut = Συντόμευση επιφάνειας εργασίας
+title_spell_check = Έλεγχος ορθογραφίας
+title_plain_text_password = Βρέθηκε κωδικός πρόσβασης σε απλό κείμενο
+title_startup_error = Σφάλμα εκκίνησης του ZBox
+
+identity_email_required = Εισαγάγετε μια διεύθυνση email.
+
+wizard_password_not_shown = Ο κωδικός πρόσβασης δεν μπορεί να εμφανιστεί σε αυτό το σύστημα. Εξακολουθεί να πληκτρολογείται και να αποθηκεύεται κανονικά.
+wizard_email_required = Εισαγάγετε μια έγκυρη διεύθυνση email πριν συνεχίσετε.
+wizard_test_needs_server = Εισαγάγετε email σύνδεσης και διακομιστή εισερχομένων πριν τη δοκιμή.
+wizard_test_succeeded = Η σύνδεση πέτυχε. Βρέθηκαν {count} μηνύματα στα Εισερχόμενα.
+
+contact_email_required = Απαιτείται διεύθυνση email.
+contact_select_to_edit = Επιλέξτε μια επαφή για επεξεργασία.
+contact_select_to_delete = Επιλέξτε μια επαφή για διαγραφή.
+contact_delete_confirm = Να διαγραφεί η επαφή {label} από το ευρετήριο διευθύνσεων;
+contacts_import_choose_file = Επιλέξτε ένα αρχείο .vcf (vCard) ή .csv για εισαγωγή.
+contacts_imported = Εισήχθησαν {count} επαφές.
+contacts_import_empty = Δεν βρέθηκαν επαφές σε αυτό το αρχείο.
+contacts_none_to_export = Δεν υπάρχουν επαφές για εξαγωγή.
+contacts_exported = Εξήχθησαν {count} επαφές στο:\n{path}
+group_name_exists = Υπάρχει ήδη ομάδα με όνομα "{name}".
+group_delete_confirm = Να διαγραφεί η ομάδα "{name}"; Οι επαφές της δεν διαγράφονται.
+
+send_no_account = Προσθέστε έναν λογαριασμό πριν την αποστολή ή επιλέξτε έναν στο πεδίο Από.
+send_no_recipient = Εισαγάγετε τουλάχιστον έναν παραλήπτη στο πεδίο Προς.
+draft_no_account = Προσθέστε έναν λογαριασμό πριν την αποθήκευση προσχεδίου ή επιλέξτε έναν στο πεδίο Από.
+attached_file = Επισυνάφθηκε: {name}\n\nΘα επισυναφθούν {count} αρχεία όταν στείλετε το μήνυμα.
+
+documentation_copied = Η πλήρης τεκμηρίωση του ZBox αντιγράφηκε στο πρόχειρο.
+
+filter_rule_needs_name = Δώστε ένα όνομα σε αυτόν τον κανόνα.
+filter_rule_needs_condition = Ορίστε τουλάχιστον μία συνθήκη (Από, Προς ή Θέμα).
+filter_rule_needs_action = Επιλέξτε τουλάχιστον μία ενέργεια: επισήμανση ως αναγνωσμένο, αστέρι ή μετακίνηση σε φάκελο.
+
+master_password_set = Ο κύριος κωδικός πρόσβασης ορίστηκε. Φυλάξτε τον σε ασφαλές μέρος: το ZBox τον ζητά μία φορά σε κάθε νέο υπολογιστή και δεν μπορεί να ανακτηθεί αν χαθεί.
+master_password_offer = Χωρίς κύριο κωδικό πρόσβασης, οι αποθηκευμένοι κωδικοί των λογαριασμών μπορούν να διαβαστούν μόνο σε αυτόν τον υπολογιστή και αυτόν τον λογαριασμό Windows. Αν αντιγράψετε το ZBox αλλού, κάθε λογαριασμός θα πρέπει να συνδεθεί ξανά.\n\nΝα οριστεί τώρα ένας;
+
+attachment_saved = Το συνημμένο αποθηκεύτηκε στο:\n{path}
+attachments_saved = {count} συνημμένα αποθηκεύτηκαν στο:\n{path}
+
+shortcut_created_settings = Η συντόμευση δημιουργήθηκε:\n{path}\n\nΞεκινά το ZBox από:\n{base}
+
+spellcheck_no_dictionary = Το ορθογραφικό λεξικό λείπει, οπότε ο έλεγχος ορθογραφίας δεν είναι διαθέσιμος σε αυτό το αντίγραφο του ZBox.
+spellcheck_none_found = Δεν βρέθηκαν ορθογραφικά λάθη.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Να ρυθμιστεί ένα κλειδί πρόσβασης σε αυτόν τον υπολογιστή και να ξεχαστεί αυτό που αποθηκεύτηκε από άλλον υπολογιστή;\n\nΤα Windows θα σας ζητήσουν επιβεβαίωση με το Hello. Το παλιό κλειδί πρόσβασης που έμεινε στον άλλον υπολογιστή δεν θίγεται εκεί και θα συνεχίσει να λειτουργεί αν επιστρέψετε αυτόν τον φάκελο εκεί, αλλά θα πρέπει να ρυθμιστεί ξανά.
+unlock_replace_passkey_many = Να ρυθμιστεί ένα κλειδί πρόσβασης σε αυτόν τον υπολογιστή και να ξεχαστούν τα {count} που αποθηκεύτηκαν από άλλους υπολογιστές;\n\nΤα Windows θα σας ζητήσουν επιβεβαίωση με το Hello. Τα παλιά κλειδιά πρόσβασης που έμειναν στον άλλον υπολογιστή δεν θίγονται εκεί και θα συνεχίσουν να λειτουργούν αν επιστρέψετε αυτόν τον φάκελο εκεί, αλλά θα πρέπει να ρυθμιστούν ξανά.
+unlock_method_works = Αυτή η μέθοδος λειτουργεί.
+
+plain_text_password_found = Το data\config\himalaya.toml περιέχει ακόμη έναν κωδικό πρόσβασης σε απλό κείμενο (auth.raw) από παλαιότερη ρύθμιση λογαριασμού.\n\nΑφαιρέστε αυτόν τον λογαριασμό και προσθέστε τον ξανά ή διαγράψτε το data\config\himalaya.toml ώστε να δημιουργηθεί ξανά με χρήση του ασφαλούς αποθηκευτικού χώρου διαπιστευτηρίων.
+
+# main_frame's titles.
+title_account_list_unavailable = Η λίστα λογαριασμών δεν είναι διαθέσιμη
+title_open_message = Άνοιγμα μηνύματος
+title_run_filters = Εκτέλεση φίλτρων
+title_clear_cache = Εκκαθάριση προσωρινής μνήμης μηνυμάτων εκτός σύνδεσης
+title_remove_account = Αφαίρεση λογαριασμού
+title_new_folder = Νέος φάκελος
+title_rename_folder = Μετονομασία φακέλου
+title_delete_folder = Διαγραφή φακέλου
+title_subscribe = Συνδρομή
+title_unsubscribe = Ακύρωση συνδρομής
+title_open_saved_message = Άνοιγμα αποθηκευμένου μηνύματος
+title_save_message_as = Αποθήκευση μηνύματος ως
+title_empty_trash = Άδειασμα απορριμμάτων
+title_empty_junk = Άδειασμα ανεπιθύμητων
+title_synchronize_offline = Συγχρονισμός για χρήση εκτός σύνδεσης
+title_export_accounts = Εξαγωγή λογαριασμών και ρυθμίσεων
+title_import_accounts = Εισαγωγή λογαριασμών και ρυθμίσεων
+title_show_related = Εμφάνιση σχετικών μηνυμάτων
+title_reply = Απάντηση
+title_forward = Προώθηση
+title_undo = Αναίρεση
+title_delete_permanently = Οριστική διαγραφή
+title_delete = Διαγραφή
+title_copy_to = Αντιγραφή σε
+title_archive = Αρχειοθέτηση
+title_accounts_locked = Οι λογαριασμοί είναι κλειδωμένοι
+
+select_account_first = Επιλέξτε πρώτα έναν λογαριασμό στο δέντρο.
+select_account_or_folder = Επιλέξτε πρώτα έναν λογαριασμό ή φάκελο.
+filters_left_behind = {count} μηνύματα ταίριαξαν με φίλτρο αλλά βρίσκονται ακόμη στον φάκελο {folder}.
+cache_clear_confirm = Να εκκαθαριστεί η προσωρινή μνήμη μηνυμάτων εκτός σύνδεσης για όλους τους λογαριασμούς;\n\nΑυτό διαγράφει μόνο τα τοπικά αντίγραφα του ZBox. Τίποτα δεν αφαιρείται από κανέναν διακομιστή αλληλογραφίας και τα μηνύματα λαμβάνονται ξανά όταν τα χρειάζεστε.
+account_remove_confirm = Να αφαιρεθεί ο λογαριασμός {name} ({address});\n\nΗ αλληλογραφία στον διακομιστή δεν διαγράφεται.\nΤα αντίγραφα που λήφθηκαν σε αυτόν τον υπολογιστή διαγράφονται.\nΟ αποθηκευμένος κωδικός πρόσβασης διαγράφεται.
+folder_delete_confirm = Να διαγραφεί οριστικά ο φάκελος "{folder}" και ό,τι περιέχει για τον λογαριασμό {address};\n\nΑυτό δεν μπορεί να αναιρεθεί.
+empty_trash_confirm = Να διαγραφούν οριστικά όλα τα μηνύματα στα Απορρίμματα για τον λογαριασμό {address};\n\nΑυτό δεν μπορεί να αναιρεθεί.
+empty_junk_confirm = Να διαγραφούν οριστικά όλα τα μηνύματα στα Ανεπιθύμητα για τον λογαριασμό {address};\n\nΑυτό δεν μπορεί να αναιρεθεί.
+sync_select_account = Επιλέξτε έναν λογαριασμό (όχι ενοποιημένο φάκελο) για συγχρονισμό για χρήση εκτός σύνδεσης.
+accounts_imported = Εισήχθησαν {count} λογαριασμοί:\n\n{names}\n\nΟι κωδικοί πρόσβασης δεν εξάγονται ποτέ και ο κρυπτογραφημένος χώρος κωδικών είναι ειδικός για αυτόν τον λογαριασμό χρήστη των Windows, οπότε κάθε εισηγμένος λογαριασμός χρειάζεται να εισαχθεί ο κωδικός του μία φορά μέσω Εργαλεία > Ρυθμίσεις λογαριασμού και ταυτοτήτων πριν μπορέσει να συνδεθεί.
+accounts_import_none = Δεν βρέθηκαν λογαριασμοί σε αυτό το αρχείο. Οι ρυθμίσεις εισήχθησαν ωστόσο, αν το αρχείο είχε.
+delete_permanently_confirm_one = Να διαγραφεί οριστικά αυτό το μήνυμα; Αυτό παρακάμπτει τον φάκελο Απορρίμματα και δεν μπορεί να αναιρεθεί.
+accounts_locked = Οι αποθηκευμένοι κωδικοί των λογαριασμών γράφτηκαν σε άλλον υπολογιστή, οπότε δεν μπορούν να διαβαστούν εδώ.\n\nΚάθε λογαριασμός θα χρειαστεί να συνδεθεί ξανά στον διακομιστή αλληλογραφίας του. Για να το αποφύγετε την επόμενη φορά, ορίστε έναν κύριο κωδικό πρόσβασης από τις Ρυθμίσεις, Ασφάλεια εφαρμογής και δεδομένων στον υπολογιστή όπου οι λογαριασμοί λειτουργούν ήδη.
+master_password_remove_confirm = Να αφαιρεθεί ο κύριος κωδικός πρόσβασης; Οι αποθηκευμένοι κωδικοί των λογαριασμών θα μπορούν τότε να διαβάζονται μόνο σε αυτόν τον υπολογιστή και αυτόν τον λογαριασμό Windows. Αν αντιγράψετε το ZBox αλλού αργότερα, κάθε λογαριασμός θα πρέπει να συνδεθεί ξανά.\n\nΝα αφαιρεθεί τώρα;
+shortcut_offer = Να τοποθετηθεί μια συντόμευση του ZBox στην επιφάνεια εργασίας;\n\nΘα ξεκινά αυτόν τον φάκελο του ZBox:\n{path}\n\nΜια συντόμευση καταγράφει ακριβώς αυτή την τοποθεσία. Αν μετακινήσετε αργότερα τον φάκελο του ZBox, ανοίξτε τις Ρυθμίσεις, Περιοχή ειδοποιήσεων και παράθυρο και επιλέξτε ξανά Δημιουργία συντόμευσης επιφάνειας εργασίας για να δείχνει στη νέα θέση.
+shortcut_created = Η συντόμευση δημιουργήθηκε:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Εμφανιζόμενο όνομα
+form_email_address = Διεύθυνση email
+form_your_name = Το όνομά σας
+form_login_email = Email σύνδεσης
+form_password = Κωδικός πρόσβασης
+srv_imap_host = Διακομιστής εισερχομένων (IMAP)
+srv_imap_port = Θύρα εισερχομένων
+srv_imap_encryption = Κρυπτογράφηση εισερχομένων
+srv_smtp_host = Διακομιστής εξερχομένων (SMTP)
+srv_smtp_port = Θύρα εξερχομένων
+srv_smtp_encryption = Κρυπτογράφηση εξερχομένων
+
+acct_login_email_label = Email σύνδεσης (χρησιμοποιείται για είσοδο)
+acct_new_password_label = Νέος κωδικός πρόσβασης (αφήστε κενό για να διατηρηθεί ο τρέχων)
+acct_new_password_name = Νέος κωδικός πρόσβασης
+acct_identity_email_label = Διεύθυνση email (χρησιμοποιείται για αποστολή και λήψη)
+acct_identities_label = Πρόσθετες ταυτότητες (ψευδώνυμα)
+acct_identities_name = Πρόσθετες ταυτότητες
+acct_add_identity = &Προσθήκη ταυτότητας...
+acct_edit_identity = &Επεξεργασία ταυτότητας...
+acct_remove_identity = &Αφαίρεση ταυτότητας
+acct_signature = Υπογραφή
+acct_edit_signature = &Επεξεργασία υπογραφής...
+acct_junk_folder = Φάκελος ανεπιθύμητων
+acct_account_status = Κατάσταση λογαριασμού
+acct_disable_account = Απενεργοποίηση αυτού του λογαριασμού
+acct_default_account = Προεπιλεγμένος λογαριασμός
+acct_set_default = Ορισμός ως προεπιλεγμένου λογαριασμού
+acct_notifications = Ειδοποιήσεις νέας αλληλογραφίας
+acct_mute_notifications = Σίγαση ειδοποιήσεων για αυτόν τον λογαριασμό
+acct_server_settings = Ρυθμίσεις διακομιστή
+
+wiz_before_you_start = Πριν ξεκινήσετε
+wiz_notice_name = Σημαντική ειδοποίηση
+wiz_google_instructions = &Άνοιγμα οδηγιών για τον κωδικό εφαρμογής Google
+wiz_intro = Το όνομά σας και η διεύθυνση email σας
+wiz_login_same = Το email σύνδεσης είναι το ίδιο με τη διεύθυνση email παραπάνω
+wiz_show_password = &Εμφάνιση κωδικού πρόσβασης
+wiz_preset_applied = Εφαρμόστηκαν προρυθμίσεις για τον πάροχο {name}.
+wiz_summary_name = Σύνοψη λογαριασμού
+wiz_review = Ελέγξτε και μετά κάντε κλικ στην Ολοκλήρωση για να αποθηκευτεί αυτός ο λογαριασμός.
+wiz_test_connection = &Δοκιμή σύνδεσης
+wiz_testing = Δοκιμή σύνδεσης...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Ενεργοποίηση καταγραφής αποσφαλμάτωσης, αποθήκευση στο: data\logs)
+set_language_label = &Γλώσσα διεπαφής:
+set_language_label_only_english = &Γλώσσα διεπαφής: (μόνο αγγλικά)
+set_headers_checkbox = &Εμφάνιση κεφαλίδων μηνύματος πάνω από ένα ανοιχτό μήνυμα
+set_zoom_label = Γραμματοσειρά και μεγέθυνση μηνύματος:
+set_font_override = &Παράκαμψη του προεπιλεγμένου μεγέθους γραμματοσειράς μηνύματος
+set_font_size_name = Μέγεθος γραμματοσειράς μηνύματος (στιγμές)
+set_reading_font_name = Γραμματοσειρά ανάγνωσης
+set_reading_font_label = Γραμματοσειρά ανάγνωσης (κενό για προεπιλογή):
+set_view_label = Προβολή σώματος μηνύματος κατά το άνοιγμα μηνύματος:
+set_view_text = Κείμενο
+set_view_html = HTML (αποδοσμένο)
+set_engine_label = Μηχανή απόδοσης HTML:
+set_engine_edge = Edge / WebView2 (σύγχρονη απόδοση)
+set_engine_ie = Παλαιά MSHTML (καλύτερη υποστήριξη αναγνώστη οθόνης)
+set_runtime_label = Περιβάλλον εκτέλεσης WebView2:
+set_runtime_auto = Αυτόματο — χρήση του ενσωματωμένου περιβάλλοντος αν υπάρχει (συνιστάται)
+set_runtime_fixed = Μόνο η ενσωματωμένη σταθερή έκδοση
+set_runtime_evergreen = Περιβάλλον εκτέλεσης συστήματος (ενημερώνεται από τα Windows)
+set_sr_box = Έλεγχος ανακοινώσεων αναγνώστη οθόνης
+set_silence_label = Διάρκεια σίγασης αναγνώστη οθόνης για HTML:
+set_silence_name = Διάρκεια σίγασης αναγνώστη οθόνης για HTML σε χιλιοστά του δευτερολέπτου
+set_focus_delay_label = Καθυστέρηση εστίασης προσβασιμότητας WebView:
+set_focus_delay_name = Καθυστέρηση εστίασης προσβασιμότητας WebView, επίπεδο 1 έως 10
+set_announce_label = Διάρκεια ανακοίνωσης:
+set_announce_name = Διάρκεια ανακοίνωσης σε χιλιοστά του δευτερολέπτου
+set_announce_actions = &Εκφώνηση ανακοινώσεων για ενέργειες, νέα αλληλογραφία και ειδοποιήσεις
+set_attachment_dir_label = Φάκελος αποθήκευσης συνημμένων:
+set_attachment_dir_name = Φάκελος αποθήκευσης συνημμένων
+set_browse = &Αναζήτηση…
+set_autosave_label = Διάστημα αυτόματης αποθήκευσης προσχεδίου:
+set_autosave_name = Διάστημα αυτόματης αποθήκευσης προσχεδίου σε δευτερόλεπτα
+set_auto_purge_label = Αυτόματη διαγραφή παλιών Απορριμμάτων και Ανεπιθύμητων:
+set_auto_purge_name = Αυτόματη διαγραφή Απορριμμάτων και Ανεπιθύμητων μετά από τόσες ημέρες
+set_bare_keys = &Ενεργοποίηση των συντομεύσεων ενός πλήκτρου S (αστέρι), A (αρχειοθέτηση), J (επισήμανση ως ανεπιθύμητο)/Shift+J (επισήμανση ως όχι ανεπιθύμητο), W (παρακολούθηση νήματος), K (αγνόηση νήματος), M (μετακίνηση)/Shift+M (μετακίνηση με όνομα φακέλου) και C (αντιγραφή σε) στη λίστα μηνυμάτων
+set_sound_label = Ήχος και ειδοποιήσεις:
+set_sounds_enabled = &Αναπαραγωγή ήχων ειδοποίησης
+set_desktop_notifications = &Εμφάνιση ειδοποιήσεων επιφάνειας εργασίας για νέα αλληλογραφία
+set_theme_label = Αλλαγή θέματος ήχων:
+set_theme_label_only_default = Αλλαγή θέματος ήχων: (μόνο το προεπιλεγμένο θέμα)
+set_security_box = Ασφάλεια εφαρμογής και δεδομένων
+set_lock_on_quit = &Κλείδωμα του ZBox όταν κλείνει πλήρως
+set_private_mode = &Ιδιωτική λειτουργία: να μη διατηρείται αλληλογραφία σε αυτόν τον υπολογιστή ή τον δίσκο
+set_unlock_methods_button = &Μέθοδοι ξεκλειδώματος…
+set_master_password_button = &Κύριος κωδικός πρόσβασης…
+set_tray_label = Περιοχή ειδοποιήσεων και παράθυρο:
+set_minimize_to_tray = &Ελαχιστοποίηση στην περιοχή ειδοποιήσεων
+set_close_to_tray = &Κλείσιμο στην περιοχή ειδοποιήσεων
+set_stay_maximized = &Το ZBox να παραμένει πάντα μεγιστοποιημένο
+set_run_at_startup = &Εκτέλεση του ZBox κατά την εκκίνηση των Windows
+set_desktop_shortcut_button = &Δημιουργία συντόμευσης επιφάνειας εργασίας
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Η καταγραφή αποσφαλμάτωσης βοηθά στη διάγνωση προβλημάτων αν κάτι πάει στραβά. Η απενεργοποίησή της σταματά τη γραφή νέων εγγραφών· τα υπάρχοντα αρχεία καταγραφής δεν διαγράφονται. Ισχύει την επόμενη φορά που θα ξεκινήσει το ZBox.
+set_language_note = Ισχύει την επόμενη φορά που θα ξεκινήσει το ZBox. Τα αρχεία γλώσσας είναι απλά αρχεία κειμένου στον φάκελο lang του ZBox, δίπλα στον φάκελο sounds. Για να προσθέσετε ένα, αντιγράψτε τον φάκελο en, μετονομάστε το αντίγραφο και το αρχείο .lang μέσα σε αυτό στον κωδικό της γλώσσας σας και μεταφράστε το κείμενο στα δεξιά κάθε σημείου ίσον. Ό,τι δεν έχει μεταφραστεί ακόμη εκφωνείται στα αγγλικά αντί να μένει σιωπηλό, οπότε ένα ημιτελές αρχείο μπορεί να χρησιμοποιηθεί με ασφάλεια.
+set_headers_note = Από, Προς, Κοιν., Ημερομηνία και Θέμα, που εμφανίζονται πάνω από το σώμα του μηνύματος τόσο στην προβολή Κειμένου όσο και σε HTML. Χωρίς αυτό, δεν υπάρχει τρόπος να δείτε ποιος έστειλε ένα μήνυμα μέσα από αυτό χωρίς να κλείσετε την καρτέλα και να επιστρέψετε στη λίστα. Η εστίαση πηγαίνει ακόμη στο σώμα του μηνύματος· το μπλοκ κεφαλίδων απέχει ένα Shift+Tab. Ισχύει την επόμενη φορά που θα ανοίξει ένα μήνυμα.
+set_zoom_note = Μεγαλώνει ή μικραίνει το κείμενο του ανοιχτού μηνύματος, ανεξάρτητα από το υπόλοιπο ZBox και την κλιμάκωση οθόνης των Windows. Ισχύει τόσο για την προβολή Κειμένου όσο και για την HTML. Η "Γραμματοσειρά ανάγνωσης" επιβάλλει προαιρετικά μια συγκεκριμένη γραμματοσειρά (π.χ. Consolas, OpenDyslexic) για το σώμα του μηνύματος· αφήστε την κενή για να διατηρηθεί η κανονική γραμματοσειρά. Τα Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 στο μενού Προβολή αυξάνουν, μειώνουν ή επαναφέρουν μόνο το μέγεθος γραμματοσειράς χωρίς να ανοίξει αυτός ο διάλογος και εφαρμόζονται αμέσως σε κάθε ανοιχτό μήνυμα. Οι αλλαγές που γίνονται εδώ εφαρμόζονται επίσης αμέσως με το OK.
+set_view_note = Η HTML είναι η προεπιλογή. Δείχνει το μήνυμα όπως στάλθηκε και διαβάζεται από τα NVDA και JAWS: όταν ανοίγει μια σελίδα HTML, το ZBox σιωπά τη δική του ανακοίνωση του προγράμματος περιήγησης, τοποθετεί τον δρομέα ανάγνωσης στην πρώτη γραμμή του μηνύματος και διατηρεί τις δικές του συντομεύσεις ενεργές μέσα στη σελίδα, συμπεριλαμβανομένου του F6 για να βγει η εστίαση από αυτήν. Το Κείμενο δείχνει το ίδιο μήνυμα ως απλό, αμορφοποίητο κείμενο σε ένα συνηθισμένο πεδίο επεξεργασίας -- χωρίς εικόνες, χωρίς διάταξη και τίποτα που να εξαρτάται από την ύπαρξη εγκατεστημένης μηχανής προγράμματος περιήγησης. Πατήστε Ctrl+B μέσα σε ένα ανοιχτό μήνυμα για εναλλαγή προς οποιαδήποτε κατεύθυνση.
+set_engine_note = Το Edge αποδίδει σύγχρονο CSS αλλά εκτελεί τη σελίδα σε ξεχωριστή διεργασία και παραδίδει το περιεχόμενό της σε αναγνώστη οθόνης μόνο μέσω διεπαφής στην οποία το wxPython δεν έχει πρόσβαση -- οπότε το μήνυμα μπορεί να ανοίξει χωρίς τίποτα αναγνώσιμο. Η παλαιά MSHTML είναι η μηχανή που χρησιμοποιούσαν το Outlook Express και το Windows Mail: τρέχει μέσα στη διεργασία και δημοσιεύει κανονικό δέντρο εγγράφου, οπότε τα NVDA και JAWS τη διαβάζουν σε λειτουργία περιήγησης όπως κάθε ιστοσελίδα. Ισχύει την επόμενη φορά που θα ανοίξει ένα μήνυμα.
+set_runtime_note = Το περιβάλλον εκτέλεσης συστήματος συντηρείται από το Windows Update, οπότε η μηχανή που διαβάζει την αλληλογραφία σας μπορεί να αλλάξει χωρίς προειδοποίηση -- έτσι μπορεί να χαλάσει μια προβολή μηνύματος HTML που δούλευε σε υπολογιστή όπου τίποτα δεν άλλαξε στο ZBox. Ένα ενσωματωμένο αντίγραφο στον φάκελο deps καθηλώνει την ακριβή έκδοση με την οποία δοκιμάστηκε το ZBox. Εκτελέστε το tools\get_webview2.bat για να εγκαταστήσετε ένα. Αν δεν υπάρχει ενσωματωμένο αντίγραφο, το ZBox χρησιμοποιεί σε κάθε περίπτωση το περιβάλλον εκτέλεσης συστήματος, οπότε πάντα ξεκινά. Ισχύει την επόμενη φορά που θα ξεκινήσει το ZBox.
+set_sr_intro = Πόσο αφήνει το ZBox τον αναγνώστη οθόνης σας να μιλά ενώ ανοίγει ένα μήνυμα και πόση ώρα παραμένουν οι δικές του εκφωνούμενες ανακοινώσεις.
+set_silence_note = Όταν ανοίγει ένα μήνυμα HTML, το ZBox μπορεί να κρατήσει πατημένο ένα συνθετικό Ctrl έως και 2 δευτερόλεπτα για να σιωπήσει την ανακοίνωση του προγράμματος περιήγησης από τον αναγνώστη οθόνης. Το θέμα του μηνύματος χρησιμοποιείται ήδη ως τίτλος σελίδας, κάτι που εμποδίζει την ανάγνωση του URL base64, αλλά ο αναγνώστης εξακολουθεί να ανακοινώνει το στοιχείο ελέγχου και τον τύπο εγγράφου πάνω από την αρχή του μηνύματος, γι' αυτό είναι ενεργό από προεπιλογή. Επιλέξτε Ανενεργό για απενεργοποίηση ή μεγαλύτερη διάρκεια αν εξακολουθούν να ακούγονται παρεμβολές.
+set_focus_delay_note = Όταν ένα μήνυμα HTML ολοκληρώνει τη φόρτωση, το ZBox περιμένει τόση ώρα πριν το εστιάσει πραγματικά. Το ότι το WebView2 αναφέρει ότι η σελίδα φορτώθηκε και το ότι τα Windows ολοκληρώνουν το δέντρο προσβασιμότητας της σελίδας δεν είναι η ίδια στιγμή· η πολύ πρόωρη εστίαση κάνει τα NVDA/JAWS να ανακοινώνουν μια γενική "Web content page" αντί για το μήνυμα ή να αναφέρουν το μήνυμα μη διαθέσιμο για ένα διάστημα μετά το άνοιγμα. Οι επιλογές κυμαίνονται από 0,1 έως 1 δευτερόλεπτο. Επιλέξτε μεγαλύτερη διάρκεια αν το ακούτε ακόμη και μικρότερη όταν το άνοιγμα φαίνεται σταθερό, για πιο γρήγορο άνοιγμα.
+set_announce_note = Τα Ctrl+U και Ctrl+Shift+U αναφέρουν τον αποστολέα σε ένα μικρό παράθυρο διαλόγου που κλείνει μόνο του, επειδή η γραμμή κατάστασης εκφωνείται μόνο αν ο αναγνώστης οθόνης σας έχει ενεργοποιημένη την αναφορά γραμμής κατάστασης. Αυτή είναι η διάρκεια που παραμένει το παράθυρο. Ρυθμίστε την ανάλογα με την ταχύτητα ομιλίας σας: αν είναι πολύ μικρή, κλείνει στη μέση της πρότασης, κάτι που ακυρώνει τον σκοπό. Οποιοδήποτε πλήκτρο το κλείνει νωρίτερα· τα πλήκτρα βέλους το κρατούν ανοιχτό ώστε να ξαναδιαβάσετε. Το Αναμονή πλήκτρου το κρατά ανοιχτό μέχρι να πατήσετε ένα.
+set_attachment_dir_note = Το σημείο όπου το "Αποθήκευση όλων" γράφει τα συνημμένα όταν ένα μήνυμα έχει περισσότερα από ένα. Δημιουργείται αυτόματα αν δεν υπάρχει. Ένα μήνυμα με ένα μόνο συνημμένο εξακολουθεί να ρωτά πού να αποθηκευτεί, όπως πριν. Αφήστε κενό για την προεπιλογή:\n{path}
+set_autosave_note = Πόσο συχνά μια ανοιχτή καρτέλα σύνταξης αποθηκεύει τον εαυτό της στα Προσχέδια ενώ γράφετε. Η Αποθήκευση προσχεδίου (Ctrl+S) εξακολουθεί να αποθηκεύει κατά παραγγελία και στις δύο περιπτώσεις και το κλείσιμο μιας καρτέλας με μη αποθηκευμένο κείμενο προσφέρει πάντα αποθήκευση. Το Ανενεργό απενεργοποιεί την αυτόματη αποθήκευση. Λιγότερο από 15 δευτερόλεπτα δεν προσφέρεται -- θα ήταν μια αποστολή στον διακομιστή που ανταγωνίζεται την πληκτρολόγησή σας.
+set_auto_purge_note = Αφαιρεί οριστικά μηνύματα από τα Απορρίμματα και τα Ανεπιθύμητα όταν έχουν μείνει εκεί τόσες ημέρες -- η ίδια οριστική αφαίρεση που κάνουν κατά παραγγελία το Άδειασμα απορριμμάτων και το Άδειασμα ανεπιθύμητων, εκτελούμενη αυτόματα μία φορά την ημέρα ενώ το ZBox είναι ανοιχτό. Ενεργό από προεπιλογή στις 30 ημέρες. Το Ανενεργό το απενεργοποιεί. Αυτό δεν μπορεί να αναιρεθεί μόλις αφαιρεθεί ένα μήνυμα.
+set_bare_keys_note = Όταν είναι ενεργό, το πάτημα μόνο των S, A, J, W ή K στη λίστα μηνυμάτων εναλλάσσει το αστέρι, αρχειοθετεί, επισημαίνει τα επιλεγμένα μηνύματα ως ανεπιθύμητα (το Shift+J τα επισημαίνει ως όχι ανεπιθύμητα) ή παρακολουθεί/αγνοεί το νήμα στο οποίο ανήκει η επιλογή, αμέσως -- η Αρχειοθέτηση και η Επισήμανση ως ανεπιθύμητου δεν έχουν επιβεβαίωση ούτε αναίρεση. Η απενεργοποίηση επαναφέρει τα S, A, J, W και K στην κανονική πλοήγηση της λίστας με το πρώτο γράμμα. Τα Ctrl+S και Ctrl+Shift+A συνεχίζουν να λειτουργούν και στις δύο περιπτώσεις. Ισχύει αμέσως.
+set_sounds_note = Σύντομοι τόνοι για πρόοδο, νέα μηνύματα, αποστολή, απάντηση ή προώθηση, διαγραφές και αποτελέσματα αναζήτησης. Το Ανενεργό απενεργοποιεί κάθε ήχο στην εφαρμογή· οι ανακοινώσεις του αναγνώστη οθόνης και της γραμμής κατάστασης δεν επηρεάζονται σε καμία περίπτωση.
+set_desktop_notifications_note = Μια ειδοποίηση των Windows για κάθε νέα δέσμη αλληλογραφίας, ξεχωριστά από τον ήχο παραπάνω. Το Ανενεργό την απενεργοποιεί για όλους τους λογαριασμούς· ένας μεμονωμένος λογαριασμός μπορεί επίσης να σιγαστεί ξεχωριστά στις Ρυθμίσεις λογαριασμού και ταυτοτήτων.
+set_theme_note = Τα προσαρμοσμένα θέματα είναι φάκελοι που τοποθετούνται μέσα στον φάκελο sounds του ZBox, καθένας με τα δικά του progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav και none_found.wav. Ένα αρχείο θέματος που λείπει επιστρέφει στον προεπιλεγμένο ήχο.
+set_theme_note_only_default = Τα προσαρμοσμένα θέματα είναι φάκελοι που τοποθετούνται μέσα στον φάκελο sounds του ZBox, καθένας με τα δικά του progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav και none_found.wav. Ένα αρχείο θέματος που λείπει επιστρέφει στον προεπιλεγμένο ήχο. Μόνο το "default" είναι διαθέσιμο μέχρι να προσθέσετε άλλον φάκελο θέματος.
+set_lock_note = Στη συνέχεια η εκκίνηση του ZBox ζητά μία από τις μεθόδους ξεκλειδώματός σας πριν ανοίξει οποιοσδήποτε λογαριασμός. Αρκεί οποιαδήποτε από αυτές: ένα κλειδί πρόσβασης, ένα κλειδί ασφαλείας ή ο κύριος κωδικός πρόσβασης. Το κλείσιμο στην περιοχή ειδοποιήσεων δεν είναι έξοδος και δεν ξανακλειδώνει· το Αρχείο > Έξοδος και το Έξοδος του εικονιδίου της περιοχής ειδοποιήσεων κλειδώνουν. Αν δεν έχει καταχωριστεί τίποτα και δεν έχει οριστεί κύριος κωδικός πρόσβασης, το κλείδωμα παραλείπεται αντί να σας αποκλείσει από τη δική σας αλληλογραφία.
+set_security_note = Ο κύριος κωδικός πρόσβασης είναι ο μόνος από τους τρεις που κρυπτογραφεί οτιδήποτε: είναι αυτός που επιτρέπει σε αυτόν τον φάκελο να ανοίξει τους αποθηκευμένους κωδικούς λογαριασμών σε άλλον υπολογιστή. Ένα κλειδί πρόσβασης ή κλειδί ασφαλείας ξεκλειδώνει την εφαρμογή μόνο σε αυτόν. Κανένα δεν αντικαθιστά τον κύριο κωδικό πρόσβασης σε υπολογιστή όπου το ZBox δεν έχει χρησιμοποιηθεί ποτέ.
+set_private_mode_note = Τα μηνύματα διαβάζονται από τον διακομιστή και κρατούνται μόνο στη μνήμη. Δεν διατηρούνται αντίγραφα εκτός σύνδεσης, αποθηκευμένα μηνύματα ή αρχεία καταγραφής αποσφαλμάτωσης και τα ανοιγμένα συνημμένα και τα δεδομένα προγράμματος περιήγησης της αλληλογραφίας HTML διαγράφονται όταν κλείνει το ZBox. Το κλείσιμο τερματίζει επίσης κάθε πρόγραμμα που ξεκίνησε το ZBox, συμπεριλαμβανομένων εκείνων που δείχνουν ένα συνημμένο, αδειάζει το πρόχειρο και σταματά να εμπιστεύεται αυτόν τον υπολογιστή εκτός αν η ιδιωτική λειτουργία ενεργοποιήθηκε από αυτόν. Τα Windows εξακολουθούν να κρατούν ορισμένα αρχεία που κανένα πρόγραμμα δεν μπορεί να αφαιρέσει, όπως τη λίστα των συσκευών USB, το αρχείο σελιδοποίησης και τα αρχεία καταγραφής του antivirus και του δικτύου.
+title_private_mode = Ιδιωτική λειτουργία
+private_mode_need_master = Η ιδιωτική λειτουργία χρειάζεται κύριο κωδικό πρόσβασης, επειδή μόνο ο κύριος κωδικός ανοίγει τους λογαριασμούς σας σε υπολογιστή που δεν είναι δικός σας. Ορίστε έναν με το κουμπί Κύριος κωδικός πρόσβασης και μετά ενεργοποιήστε την ιδιωτική λειτουργία.
+private_mode_enter_master = Εισαγάγετε τον κύριο κωδικό πρόσβασης για να ενεργοποιήσετε την ιδιωτική λειτουργία.
+private_mode_confirm = Η ιδιωτική λειτουργία δεν κρατά αντίγραφα της αλληλογραφίας σας σε αυτόν τον υπολογιστή ή στον δίσκο από τον οποίο τρέχει το ZBox. Η ενεργοποίησή της διαγράφει τα αντίγραφα εκτός σύνδεσης του ZBox, τα αποθηκευμένα μηνύματα, τα ανοιγμένα συνημμένα, τα δεδομένα προγράμματος περιήγησης της αλληλογραφίας HTML και τα αρχεία καταγραφής αποσφαλμάτωσης. Τίποτα στους διακομιστές αλληλογραφίας σας δεν διαγράφεται και οι λογαριασμοί, οι επαφές και οι ρυθμίσεις σας διατηρούνται. Να ενεργοποιηθεί η ιδιωτική λειτουργία;
+set_minimize_note = Η ελαχιστοποίηση του ZBox κρύβει το κουμπί του στη γραμμή εργασιών και το αφήνει να τρέχει πίσω από το εικονίδιο της περιοχής ειδοποιήσεων. Κάντε αριστερό κλικ στο εικονίδιο (ή Enter/Space όταν έχει εστίαση πληκτρολογίου) για να επανέλθει το παράθυρο.
+set_close_note = Το κουμπί Κλείσιμο του παραθύρου, το Alt+F4 και το Ctrl+W στην καρτέλα Αλληλογραφία κρύβουν το ZBox στην περιοχή ειδοποιήσεων αντί να το τερματίζουν. Το Αρχείο > Έξοδος (Ctrl+Shift+Q) και το δικό του στοιχείο Έξοδος του εικονιδίου περιοχής ειδοποιήσεων τερματίζουν πάντα πραγματικά το ZBox, οπότε υπάρχει πάντα μια διαδρομή πληκτρολογίου για έξοδο χωρίς να αγγίξετε την περιοχή ειδοποιήσεων.
+set_stay_maximized_note = Το ZBox ξεκινά μεγιστοποιημένο και επαναφέρεται σε μεγιστοποιημένο αν το αποεπιλέξετε. Η γραμμή μενού, η γραμμή τίτλου και το περίγραμμα του παραθύρου δεν επηρεάζονται -- δεν είναι λειτουργία πλήρους οθόνης χωρίς περίγραμμα, οπότε όλες οι συντομεύσεις μενού με Alt εξακολουθούν να λειτουργούν.
+set_run_at_startup_note = Ξεκινά το ZBox αυτόματα όταν συνδέεστε στα Windows, ανοίγοντας κατευθείαν στην περιοχή ειδοποιήσεων αντί να εμφανίσει το παράθυρό του. Ισχύει αμέσως, όχι μόνο στην επόμενη εκκίνηση.
+set_desktop_shortcut_note = Τοποθετεί μια συντόμευση του ZBox στην επιφάνεια εργασίας σας, αντικαθιστώντας όποια υπάρχει ήδη. Μια συντόμευση αποθηκεύει την ακριβή τοποθεσία αυτού του φακέλου του ZBox, οπότε αν μετακινήσετε ή αντιγράψετε το ZBox αλλού, πατήστε το ξανά στο νέο αντίγραφο ώστε η συντόμευση να δείχνει εκεί. Ισχύει αμέσως και δεν περιμένει το OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Όνομα
+ab_phone = Τηλέφωνο
+ab_notes = Σημειώσεις
+ab_heading = Ευρετήριο διευθύνσεων
+ab_contacts = Επαφές
+ab_new = &Νέα...
+ab_edit = &Επεξεργασία...
+ab_delete = &Διαγραφή
+ab_import = &Εισαγωγή...
+ab_export = &Εξαγωγή...
+ab_groups_label = Ομάδες (λίστες αλληλογραφίας)
+ab_groups_name = Ομάδες
+ab_new_group = &Νέα ομάδα...
+ab_rename_group = &Μετονομασία ομάδας...
+ab_delete_group = &Διαγραφή ομάδας
+ab_manage_members = &Διαχείριση μελών...
+ab_all_contacts = Όλες οι επαφές
+ab_add_member = Προσθήκη >>
+ab_remove_member = << Αφαίρεση
+ab_members_of = Μέλη της ομάδας {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Δεν υπάρχει στο λεξικό:
+sp_not_in_dictionary_name = Δεν υπάρχει στο λεξικό
+sp_in_this_line_label = Σε αυτή τη γραμμή:
+sp_in_this_line_name = Σε αυτή τη γραμμή
+sp_suggestions_label = &Προτάσεις:
+sp_suggestions_name = Προτάσεις
+sp_replace_with_label = &Αντικατάσταση με:
+sp_replace_with_name = Αντικατάσταση με
+sp_replace = &Αντικατάσταση
+sp_replace_all = &Αντικατάσταση όλων
+sp_ignore = &Αγνόηση
+sp_ignore_all = &Αγνόηση όλων
+sp_add_to_dictionary = &Προσθήκη στο λεξικό
+btn_close = &Κλείσιμο
+
+# Privacy and Content Blocking.
+priv_remote_label = Απομακρυσμένο περιεχόμενο στα μηνύματα:
+priv_block_remote = &Αποκλεισμός απομακρυσμένου περιεχομένου μέχρι να το ζητήσω (συνιστάται)
+priv_blocklist_label = Λίστα αποκλεισμού διαφημίσεων και ιχνηλατών:
+priv_block_known = &Αποκλεισμός γνωστών τομέων διαφημίσεων και ιχνηλατών
+priv_update_daily = &Ενημέρωση της λίστας καθημερινά στο παρασκήνιο
+priv_update_now = &Ενημέρωση τώρα
+priv_junk_label = Κανόνες ανεπιθύμητης αλληλογραφίας:
+priv_check_inbox = &Έλεγχος της νέας αλληλογραφίας των Εισερχομένων με βάση τους αποκλεισμένους αποστολείς και τους γνωστούς συνδέσμους ηλεκτρονικού ψαρέματος
+priv_move_blocked = &Αυτόματη μετακίνηση αλληλογραφίας από αποκλεισμένους αποστολείς στα Ανεπιθύμητα
+priv_update_phishing = &Ενημέρωση λίστας ηλεκτρονικού ψαρέματος τώρα
+priv_blocked_label = Αποκλεισμένοι αποστολείς:
+priv_blocked_name = Αποκλεισμένοι αποστολείς
+priv_remove_blocked = &Αφαίρεση αποκλεισμένου αποστολέα
+priv_never_junk_label = Αποστολείς που δεν θεωρούνται ποτέ ανεπιθύμητοι:
+priv_never_junk_name = Αποστολείς που δεν θεωρούνται ποτέ ανεπιθύμητοι
+priv_remove_never_junk = &Αφαίρεση αποστολέα που δεν είναι ανεπιθύμητος
+priv_allowed_label = Αποστολείς που επιτρέπεται να φορτώνουν απομακρυσμένο περιεχόμενο:
+priv_allowed_name = Επιτρεπόμενοι αποστολείς
+priv_remove_selected = &Αφαίρεση επιλεγμένου αποστολέα
+
+# Message Filters.
+filt_rule_name = Όνομα κανόνα
+filt_enabled = &Ενεργό
+filt_match_label = Αντιστοίχιση:
+filt_match_all = &Αντιστοίχιση με όλα τα παρακάτω (ΚΑΙ)
+filt_match_any = &Αντιστοίχιση με οποιοδήποτε από τα παρακάτω (Ή)
+filt_conditions_label = Συνθήκες (αφήστε μια τιμή κενή για παράλειψη):
+filt_condition_field = Πεδίο συνθήκης {number}
+filt_condition_contains = Η συνθήκη {number} περιέχει
+filt_actions_label = Ενέργειες:
+filt_mark_read = &Επισήμανση ως αναγνωσμένο
+filt_flag = &Επισήμανση του μηνύματος με αστέρι
+filt_move_label = Μετακίνηση στον φάκελο:
+filt_move_name = Μετακίνηση στον φάκελο
+filt_rules_name = Κανόνες φίλτρων
+filt_new = &Νέος κανόνας...
+filt_edit = &Επεξεργασία κανόνα...
+filt_delete = &Διαγραφή κανόνα
+filt_up = &Μετακίνηση πάνω
+filt_down = &Μετακίνηση κάτω
+filt_run_label = Εκτέλεση τώρα στον φάκελο:
+filt_run_name = Φάκελος εκτέλεσης τώρα
+filt_run_now = &Εκτέλεση τώρα
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Ξεκλείδωμα με κλειδί πρόσβασης (Windows Hello)
+unl_security_key = &Ξεκλείδωμα με κλειδί ασφαλείας
+unl_master_password_label = &Κύριος κωδικός πρόσβασης:
+unl_master_password_name = Κύριος κωδικός πρόσβασης
+unl_unlock = &Ξεκλείδωμα
+unl_exit = &Έξοδος από το ZBox
+unl_methods_label = &Καταχωρισμένες μέθοδοι:
+unl_methods_name = Καταχωρισμένες μέθοδοι ξεκλειδώματος
+unl_add_passkey = &Προσθήκη κλειδιού πρόσβασης…
+unl_add_key = &Προσθήκη κλειδιού ασφαλείας…
+unl_reassign = &Επανακαθορισμός κλειδιού πρόσβασης σε αυτόν τον υπολογιστή…
+unl_test = &Δοκιμή…
+unl_remove = &Αφαίρεση
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Από
+comp_to = Προς
+comp_cc = Κοιν.
+comp_bcc = Κρυφή κοιν.
+comp_subject = Θέμα
+comp_attach_button = Επισύναψη αρχείου...
+comp_sending = Αποστολή...
+comp_report_label = &Αναφορά:
+comp_report_name = Αναφορά
+comp_refresh = &Ανανέωση
+comp_copy = &Αντιγραφή
+comp_preview_read = Όπως το διαβάζει ο παραλήπτης
+comp_preview_source = Το HTML που θα σταλεί
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Σώμα μηνύματος
+mv_blocked_notice = Ειδοποίηση αποκλεισμένου περιεχομένου
+mv_show_remote = &Εμφάνιση απομακρυσμένου περιεχομένου
+mv_always_allow = &Να επιτρέπεται πάντα αυτός ο αποστολέας
+mv_message_headers = Κεφαλίδες μηνύματος
+mv_attachments = Συνημμένα
+mv_attachments_count = Συνημμένα ({count})
+mv_save_attachment = Αποθήκευση: {filename}
+mv_save_all = Αποθήκευση όλων
+mv_html_view = Προβολή HTML του μηνύματος
+mv_saved_message = Αποθηκευμένο μήνυμα
+mv_show_remote_tip = Επαναφόρτωση αυτού του μηνύματος με τις απομακρυσμένες εικόνες και τα στυλ του. Οι γνωστοί ιχνηλάτες παραμένουν αποκλεισμένοι.
+mv_always_allow_tip = Φόρτωση απομακρυσμένου περιεχομένου σε κάθε μήνυμα από τον αποστολέα {sender}.
+
+# The search tab.
+srch_account = Λογαριασμός
+srch_folder = Φάκελος
+srch_for = Αναζήτηση για
+srch_look_in = Αναζήτηση σε
+srch_in_all = Όλα
+srch_in_subject = Θέμα
+srch_in_from = Από
+srch_in_to = Προς
+srch_in_body = Σώμα
+srch_date = Ημερομηνία
+srch_date_any = Οποιαδήποτε στιγμή
+srch_date_today = Σήμερα
+srch_date_yesterday = Χθες
+srch_date_week = Τελευταίες 7 ημέρες
+srch_date_month = Τελευταίες 30 ημέρες
+srch_date_year = Φέτος
+srch_date_custom = Προσαρμοσμένο εύρος
+srch_from_date = Από ημερομηνία (έτος-μήνας-ημέρα, προαιρετική ώρα)
+srch_to_date = Έως ημερομηνία (έτος-μήνας-ημέρα, προαιρετική ώρα)
+srch_unread = Μόνο μη αναγνωσμένα
+srch_flagged = Μόνο με αστέρι
+srch_attachment = Έχει συνημμένο
+
+# The signature editor.
+sig_editors = Επεξεργαστές υπογραφής
+sig_formatted = Υπογραφή, μορφοποιημένη
+sig_source = Υπογραφή, πηγή HTML
+sig_plain_label = Εναλλακτική σε απλό κείμενο (αποστέλλεται μαζί με το HTML)
+sig_plain_name = Εναλλακτική σε απλό κείμενο
+
+# About ZBox.
+about_text_name = Κείμενο σχετικά με το ZBox
+about_view_license = &Προβολή άδειας χρήσης...
+about_google = &Κωδικοί εφαρμογής Google...
+about_support = &Υποστήριξη του ZBox -- Ανάπτυξη και συντήρηση από ένα άτομο
+about_repos = &Αποθετήρια εφαρμογών του Harith στο GitHub
+about_contact = &Επικοινωνία με τον Harith
+btn_close_plain = Κλείσιμο
+btn_cancel_plain = Άκυρο
+
+# The license window.
+eula_heading = Άδεια χρήσης του ZBox
+eula_text_name = Κείμενο άδειας χρήσης του ZBox
+eula_third_party = Σελίδες αδειών στοιχείων τρίτων:
+eula_agree = &Συμφωνώ με τους παραπάνω όρους
+eula_agree_name = Έχω διαβάσει και συμφωνώ με τους όρους της άδειας χρήσης του ZBox
+eula_disagree = &Διαφωνώ
+eula_next = &Επόμενο
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Κείμενο τεκμηρίωσης του ZBox
+doc_copy = Αντιγραφή στο πρόχειρο
+shortcuts_heading = Συντομεύσεις πληκτρολογίου
+shortcuts_text_name = Κείμενο συντομεύσεων πληκτρολογίου
+
+# The main window's own panes.
+mf_toolbar = Κύρια γραμμή εργαλείων
+mf_tabs = Καρτέλες του ZBox
+tree_heading = Λογαριασμοί και φάκελοι
+tree_name = Δέντρο λογαριασμών και φακέλων
+envlist_heading = Μηνύματα
+envlist_name = Λίστα μηνυμάτων
+rdr_heading = Μήνυμα
+rdr_name = Αναγνώστης μηνυμάτων
+conv_heading_one = Συνομιλία: 1 μήνυμα
+conv_heading_many = Συνομιλία: {count} μηνύματα
+
+# A run of several messages, and the cache dialog.
+bulk_progress = Ολοκληρώθηκαν {completed} από {total}.
+bulk_cancelling = Ακύρωση -- ολοκλήρωση του τρέχοντος μηνύματος...
+cache_clear_now = Εκκαθάριση προσωρινής μνήμης μηνυμάτων εκτός σύνδεσης τώρα... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, προστατευμένο
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Το εμφανιζόμενο όνομα είναι προαιρετικό -- αφήστε το κενό για να στέλνετε με το δικό όνομα του λογαριασμού.
+acct_note_identity = Η διεύθυνση email μπορεί να διαφέρει από το email σύνδεσης αν ο πάροχός σας έχει προσαρμοσμένο τομέα συνδεδεμένο με αυτό το γραμματοκιβώτιο. Η αλληλογραφία θα αποστέλλεται και θα λαμβάνεται με την παραπάνω διεύθυνση, ενώ η σύνδεση εξακολουθεί να χρησιμοποιεί το email σύνδεσης. Αφήστε το πεδίο κωδικού πρόσβασης κενό για να διατηρηθεί ο κωδικός που είναι ήδη αποθηκευμένος για αυτόν τον λογαριασμό -- για παράδειγμα, μετά την αλλαγή ενός κωδικού εφαρμογής Gmail, πληκτρολογήστε εδώ τον νέο· διαφορετικά αφήστε το κενό.
+acct_note_identities = Άλλες διευθύνσεις με τις οποίες αυτός ο λογαριασμός μπορεί να στέλνει και να απαντά. Όταν απαντάτε σε ένα μήνυμα που στάλθηκε σε μία από αυτές, το πεδίο Από παίρνει αυτή τη διεύθυνση αντί για την παραπάνω.
+acct_note_signature = Προστίθεται σε κάθε νέο μήνυμα, απάντηση και προώθηση που στέλνεται από αυτόν τον λογαριασμό, κάτω από μια γραμμή "-- ". Αφήστε κενό για καμία. Η Επεξεργασία υπογραφής ανοίγει τον μορφοποιημένο επεξεργαστή, όπου διατίθενται έντονα, λίστες και σύνδεσμοι· το παραπάνω πλαίσιο περιέχει τότε την έκδοση απλού κειμένου που αποστέλλεται μαζί.
+acct_note_junk = Σε ποιον πραγματικό φάκελο μετακινεί τα μηνύματα η Επισήμανση ως ανεπιθύμητο. Το "{automatic}" χρησιμοποιεί την ίδια εικασία με γνώση του παρόχου που χρησιμοποιούν ήδη η Αρχειοθέτηση και τα Απορρίμματα· ορίστε το μόνο αν αυτή η εικασία είναι λάθος ή ο φάκελος ανεπιθύμητων έχει προσαρμοσμένο όνομα.
+acct_note_disable = Ένας απενεργοποιημένος λογαριασμός δεν επικοινωνεί ποτέ -- ούτε IDLE, ούτε περιοδική ανανέωση, τίποτα -- μέχρι να ενεργοποιηθεί ξανά. Εξακολουθεί να εμφανίζεται στο δέντρο, με την ένδειξη (απενεργοποιημένος), και η ήδη ληφθείσα αλληλογραφία του παραμένει διαθέσιμη εκτός σύνδεσης. Είναι η ίδια εναλλαγή με το Λογαριασμοί > Απενεργοποίηση λογαριασμού ή το δικό του μενού περιβάλλοντος· αυτό είναι απλώς ένα ακόμη σημείο πρόσβασης.
+acct_note_default = Οι φάκελοι αυτού του λογαριασμού εμφανίζονται πρώτοι στο δέντρο και ένα νέο μήνυμα στέλνεται από προεπιλογή από αυτόν εκτός αν αλλάξει χειροκίνητα στο παράθυρο σύνταξης. Δεν επηρεάζει ποια διεύθυνση χρησιμοποιεί μια απάντηση ή προώθηση -- αυτή ακολουθεί ήδη το μήνυμα στο οποίο απαντάτε (δείτε τις Πρόσθετες ταυτότητες παραπάνω). Υπάρχει πάντα ακριβώς ένας προεπιλεγμένος λογαριασμός, οπότε αν αποεπιλέξετε αυτό στον τρέχοντα προεπιλεγμένο χωρίς να το επιλέξετε σε άλλον, μένει όπως είναι -- επιλέξτε αντ' αυτού το πλαίσιο ενός άλλου λογαριασμού για να του δώσετε την προεπιλογή.
+acct_note_mute = &Η σίγαση αποκλείει τον ήχο νέας αλληλογραφίας, την εκφωνούμενη ανακοίνωση και την ειδοποίηση των Windows αυτού του λογαριασμού, ανεξάρτητα από το πώς έχουν ρυθμιστεί αλλιώς. Δεν επηρεάζει άλλους λογαριασμούς και υπόκειται ακόμη στους κύριους διακόπτες στις Ρυθμίσεις > Ήχος και ειδοποιήσεις (συνολικά οι ήχοι και οι ειδοποιήσεις επιφάνειας εργασίας).
+wiz_note_app_password = Αν έχετε ήδη δημιουργήσει κωδικό εφαρμογής για το ZBox, πατήστε Επόμενο για να συνεχίσετε.
+wiz_note_login = Διαπιστευτήρια σύνδεσης.\nΑν το email σύνδεσής σας διαφέρει από τη διεύθυνση παραπάνω, για παράδειγμα ο λογαριασμός σας στον πάροχο είναι login@example.net αλλά θέλετε να στέλνετε και να λαμβάνετε ως you@example.org, εισαγάγετε εδώ το email σύνδεσης. Μπορείτε να ορίσετε την προσαρμοσμένη διεύθυνση αποστολής αργότερα στις Ρυθμίσεις λογαριασμού και ταυτοτήτων.
+wiz_note_servers = Ρυθμίσεις διακομιστή, προσυμπληρωμένες όπου ο τομέας αναγνωρίζεται. Επεξεργαστείτε ό,τι χρειάζεται να διαφέρει.
+wiz_preset_none = Δεν βρέθηκε προρύθμιση για αυτόν τον τομέα. Εισαγάγετε χειροκίνητα τις ρυθμίσεις διακομιστή του παρόχου σας· οι σελίδες βοήθειας του παρόχου σας τις αναφέρουν.
+ab_note_groups = Πληκτρολογήστε το όνομα μιας ομάδας στο πεδίο Προς, Κοιν. ή Κρυφή κοιν. ενός παραθύρου σύνταξης για να συμπληρωθούν όλα τα μέλη της ταυτόχρονα.
+cache_note_intro = Αυτά αφαιρούν μόνο τα τοπικά αντίγραφα του ZBox. Τίποτα δεν διαγράφεται από κανέναν διακομιστή αλληλογραφίας και ένα μήνυμα που αφαιρέθηκε λαμβάνεται ξανά την επόμενη φορά που θα το ανοίξετε.
+cache_note_age = Ο αυτόματος καθαρισμός εκτελείται μία φορά την ημέρα, όταν το ZBox δεν είχε δραστηριότητα πληκτρολογίου για δέκα λεπτά και κανένα μήνυμα δεν είναι ανοιχτό. Πηγαίνει με βάση τη δική του ημερομηνία κάθε μηνύματος, συμπεριλαμβανομένων των μηνυμάτων που βρίσκονται ακόμη στον λογαριασμό σας.
+filt_note_intro = Οι κανόνες εκτελούνται με τη σειρά, από πάνω προς τα κάτω, ελέγχοντας τα Από, Προς και Θέμα. Εφαρμόζονται αυτόματα στη νέα αλληλογραφία καθώς φτάνει στα Εισερχόμενα αυτού του λογαριασμού· χρησιμοποιήστε το Εκτέλεση τώρα παρακάτω για να τους εφαρμόσετε σε μηνύματα που βρίσκονται ήδη σε έναν φάκελο.
+filt_note_run_now = Εφαρμόζει κάθε ενεργό κανόνα παραπάνω, με τη σειρά, σε κάθε μήνυμα που βρίσκεται ήδη στον επιλεγμένο φάκελο -- αποθηκεύει πρώτα τις αλλαγές σας, όπως το OK.
+mp_note_intro = Αυτοί οι λογαριασμοί ρυθμίστηκαν σε άλλον υπολογιστή. Εισαγάγετε τον κύριο κωδικό πρόσβασης για να ξεκλειδώσετε εδώ τους αποθηκευμένους κωδικούς τους. Θα σας ζητηθεί μόνο μία φορά σε αυτόν τον υπολογιστή.\n\nΧωρίς αυτόν, κάθε λογαριασμός πρέπει να συνδεθεί ξανά στον διακομιστή αλληλογραφίας του.
+priv_note_remote = Οι εικόνες, τα φύλλα στυλ και οι γραμματοσειρές που φορτώνει ένα μήνυμα από το διαδίκτυο λένε στον αποστολέα τη στιγμή που το ανοίξατε και από πού. Όταν είναι ενεργό, κανένα δεν φορτώνεται: εμφανίζεται μια ειδοποίηση πάνω από το μήνυμα που λέει τι αποκλείστηκε και το Ctrl+Shift+I το φορτώνει για αυτό το μήνυμα μόνο. Οι εικόνες που είναι συνημμένες στο ίδιο το μήνυμα εμφανίζονται πάντα. Τα σενάρια και τα ενσωματωμένα πλαίσια αφαιρούνται σε κάθε περίπτωση και δεν φορτώνονται ποτέ.
+priv_note_blocklist = Αυτό είναι το δεύτερο επίπεδο. Έχει σημασία όταν φορτώνετε το απομακρυσμένο περιεχόμενο ενός μηνύματος ή επιτρέπετε έναν αποστολέα: οι εικόνες φορτώνουν, αλλά ό,τι προέρχεται από γνωστό τομέα παρακολούθησης ή διαφημίσεων εξακολουθεί να μη φορτώνει. Η λίστα λαμβάνεται από δημόσιες λίστες διαφημίσεων και ιχνηλατών και συγχωνεύεται· η ενημέρωση διαρκεί ένα ή δύο δευτερόλεπτα και εκτελείται στο παρασκήνιο.
+priv_note_junk = Χωρίς εικασίες. Η Επισήμανση ως ανεπιθύμητο προσθέτει τον αποστολέα στη λίστα αποκλεισμένων παρακάτω, εκτός αν το μήνυμα ήρθε μέσω λίστας αλληλογραφίας. Η Επισήμανση ως όχι ανεπιθύμητο προσθέτει τον αποστολέα στη λίστα των μη ανεπιθύμητων και εκείνο το μήνυμα δεν ελέγχεται ποτέ ξανά. Ένα νέο μήνυμα από αποκλεισμένο αποστολέα επισημαίνεται ως Αποκλεισμένος αποστολέας στη λίστα· ένα που συνδέεται με γνωστή τοποθεσία ηλεκτρονικού ψαρέματος ή κακόβουλου λογισμικού επισημαίνεται ως Πιθανό ηλεκτρονικό ψάρεμα. Το δικό φιλτράρισμα ανεπιθύμητων του παρόχου αλληλογραφίας σας εξακολουθεί να εκτελείται όπως πριν.
+priv_status_phishing_updating = Λίστα ηλεκτρονικού ψαρέματος: ενημερώνεται στο παρασκήνιο. Ανοίξτε ξανά αυτόν τον διάλογο για να δείτε το αποτέλεσμα.
+priv_status_updating = Ενημερώνεται στο παρασκήνιο. Ανοίξτε ξανά αυτόν τον διάλογο για να δείτε το αποτέλεσμα.
+rel_note_intro = Μηνύματα σχετικά με το "{subject}" με βάση τις κεφαλίδες Message-ID/References, σε κάθε φάκελο αυτού του λογαριασμού.
+srch_note_intro = Αναζητήστε λέξεις σε κάθε λογαριασμό και φάκελο ή περιορίστε την αναζήτηση με τις παρακάτω επιλογές. Αφήστε τις λέξεις κενές για να βρείτε μηνύματα μόνο με ημερομηνία ή με τα πλαίσια ελέγχου.
+sig_note_plain = Αφήστε την εναλλακτική σε απλό κείμενο κενή και θα γραφτεί από τη μορφοποιημένη υπογραφή όταν πατήσετε Αποθήκευση.
+unified_note_intro = Επιλέξτε ποιοι φάκελοι θα συνδυάζονται σε όλους τους λογαριασμούς. Κάθε επιλεγμένος γίνεται ένα μόνο στοιχείο στο δέντρο που συνδυάζει αυτόν τον φάκελο από όλους τους λογαριασμούς σας.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Σχετικά με το ZBox
+title_account_settings = Ρυθμίσεις λογαριασμού και ταυτοτήτων: {name}
+title_new_account = Νέος λογαριασμός
+title_address_book = Ευρετήριο διευθύνσεων
+title_members = Μέλη: {name}
+ab_group_name_prompt = Όνομα ομάδας:
+title_new_group = Νέα ομάδα
+title_cache_cleanup = Διαμόρφωση εκκαθάρισης προσωρινής μνήμης
+cache_age_prompt = Αυτόματη αφαίρεση μηνυμάτων προσωρινής μνήμης παλαιότερων από:
+title_automatic_cleanup = Αυτόματη εκκαθάριση
+comp_link_prompt = Διεύθυνση συνδέσμου:
+title_insert_link = Εισαγωγή συνδέσμου
+title_composer_diagnostics = Διαγνωστικά σύνταξης
+title_formatted_preview = Μορφοποιημένη προεπισκόπηση
+title_license_agreement = Συμφωνία άδειας χρήσης του ZBox
+title_message_filters = Φίλτρα μηνυμάτων: {account}
+title_master_password_required = Απαιτείται κύριος κωδικός πρόσβασης
+title_privacy_dialog = Απόρρητο και αποκλεισμός περιεχομένου
+title_privacy = Απόρρητο
+title_settings = Ρυθμίσεις
+set_tab_general = Γενικά
+set_tab_personalization = Εξατομίκευση
+set_tab_accessibility = Προσβασιμότητα και πλήκτρα συντόμευσης
+set_tab_maintenance = Συντήρηση και εκκαθάριση
+set_tab_sounds = Ήχοι και ειδοποιήσεις
+set_tab_security = Ασφάλεια
+title_unified_folders = Ενοποιημένοι φάκελοι
+title_zbox_locked = Το ZBox είναι κλειδωμένο
+title_message_view = Προβολή μηνύματος
+title_remote_content = Απομακρυσμένο περιεχόμενο
+title_refresh = Ανανέωση
+title_refresh_all = Ανανέωση όλων
+mv_choose_folder = Επιλέξτε φάκελο για αποθήκευση του συνημμένου
+title_thread = Νήμα
+title_inbox = Εισερχόμενα
+title_compose = Σύνταξη
+title_watch_thread = Παρακολούθηση νήματος
+title_ignore_thread = Αγνόηση νήματος
+title_edit_signature = Επεξεργασία υπογραφής
+title_account = Λογαριασμός
+mf_folder_name_prompt = Όνομα φακέλου:
+mf_new_name_prompt = Νέο όνομα:
+title_refresh_all_accounts = Ανανέωση όλων των λογαριασμών
+title_sender = Αποστολέας
+title_new_mail = Νέα αλληλογραφία
+mf_export_dialog_title = Εξαγωγή όλων των {count} λογαριασμών και των ρυθμίσεων
+mf_related_tab = Σχετικά: {subject}
+title_hotkeys_diagnostic = Διάγνωση πλήκτρων συντόμευσης
+set_choose_attachment_dir = Επιλέξτε τον φάκελο αποθήκευσης συνημμένων
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = Το ZBox είναι κλειδωμένο. Χρησιμοποιήστε οποιαδήποτε από τις παρακάτω μεθόδους για να το ξεκλειδώσετε. Η ακύρωση κλείνει το ZBox χωρίς να ανοίξει κανέναν λογαριασμό.
+unl_note_foreign_passkey = Το κλειδί πρόσβασης που αποθηκεύτηκε με αυτόν τον φάκελο ανήκει σε άλλον υπολογιστή, οπότε δεν μπορεί να χρησιμοποιηθεί εδώ. Ξεκλειδώστε με το κλειδί ασφαλείας ή τον κύριο κωδικό πρόσβασής σας και μετά χρησιμοποιήστε τις Ρυθμίσεις, Ασφάλεια, Μέθοδοι ξεκλειδώματος για να ρυθμίσετε ένα κλειδί πρόσβασης σε αυτόν τον υπολογιστή.
+unl_note_methods = Οποιαδήποτε από αυτές ξεκλειδώνει το ZBox όταν είναι ενεργό το κλείδωμα εφαρμογής, μαζί με τον κύριο κωδικό πρόσβασης. Ένα κλειδί πρόσβασης χρησιμοποιεί το Windows Hello σε αυτόν τον υπολογιστή· ένα κλειδί ασφαλείας είναι κλειδί FIDO2 σε USB ή NFC και λειτουργεί σε οποιονδήποτε υπολογιστή το συνδέσετε.
+unl_note_not_encryption = Αυτές ξεκλειδώνουν την εφαρμογή. Δεν κρυπτογραφούν τίποτα: ο κύριος κωδικός πρόσβασης είναι ακόμη το μόνο που μπορεί να ανοίξει τους αποθηκευμένους κωδικούς λογαριασμών σε υπολογιστή όπου δεν έχει ξαναχρησιμοποιηθεί αυτός ο φάκελος. Πρέπει να οριστεί πρώτα και καμία από αυτές δεν μπορεί να προστεθεί μέχρι τότε.
+unl_add_passkey_unavailable = &Προσθήκη κλειδιού πρόσβασης (μη διαθέσιμο)
+unl_add_key_unavailable = &Προσθήκη κλειδιού ασφαλείας (μη διαθέσιμο)
+unl_reassign_unavailable = &Επανακαθορισμός κλειδιού πρόσβασης σε αυτόν τον υπολογιστή (μη διαθέσιμο)
+unl_status_cancelled_passkey = Το κλειδί πρόσβασης ακυρώθηκε. Το ZBox παραμένει κλειδωμένο.
+unl_status_cancelled_key = Το κλειδί ασφαλείας ακυρώθηκε. Το ZBox παραμένει κλειδωμένο.
+unl_status_enter_password = Εισαγάγετε τον κύριο κωδικό πρόσβασης.
+unl_status_no_master = Δεν έχει οριστεί κύριος κωδικός πρόσβασης, οπότε δεν μπορεί να προστεθεί ακόμη κλειδί πρόσβασης ή κλειδί ασφαλείας. Ορίστε έναν με το κουμπί Κύριος κωδικός πρόσβασης στις Ρυθμίσεις, Ασφάλεια και μετά επιστρέψτε εδώ. Ο κύριος κωδικός πρόσβασης είναι αυτός που ανοίγει τους αποθηκευμένους κωδικούς λογαριασμών σε άλλον υπολογιστή· ένα κλειδί πρόσβασης ξεκλειδώνει την εφαρμογή μόνο σε αυτόν, οπότε δεν μπορεί να σταθεί μόνο του.
+unl_status_unsupported = Τα Windows αυτού του υπολογιστή δεν υποστηρίζουν κλειδιά πρόσβασης ή κλειδιά ασφαλείας, οπότε μόνο ο κύριος κωδικός πρόσβασης μπορεί να ξεκλειδώσει το ZBox εδώ.
+unl_status_foreign_one = 1 κλειδί πρόσβασης ανήκει σε άλλον υπολογιστή και δεν μπορεί να ξεκλειδώσει το ZBox εδώ. Ο επανακαθορισμός το αντικαθιστά με ένα που δημιουργήθηκε σε αυτόν τον υπολογιστή.
+unl_status_foreign_many = {count} κλειδιά πρόσβασης ανήκουν σε άλλον υπολογιστή και δεν μπορούν να ξεκλειδώσουν το ZBox εδώ. Ο επανακαθορισμός τα αντικαθιστά με ένα που δημιουργήθηκε σε αυτόν τον υπολογιστή.
+unl_status_foreign_one_no_hello = 1 κλειδί πρόσβασης ανήκει σε άλλον υπολογιστή και δεν μπορεί να ξεκλειδώσει το ZBox εδώ. Το Windows Hello δεν έχει ρυθμιστεί εδώ, οπότε δεν μπορεί να αντικατασταθεί σε αυτόν τον υπολογιστή· η Αφαίρεση το ξεχνά.
+unl_status_foreign_many_no_hello = {count} κλειδιά πρόσβασης ανήκουν σε άλλον υπολογιστή και δεν μπορούν να ξεκλειδώσουν το ZBox εδώ. Το Windows Hello δεν έχει ρυθμιστεί εδώ, οπότε δεν μπορούν να αντικατασταθούν σε αυτόν τον υπολογιστή· η Αφαίρεση τα ξεχνά.
+unl_status_no_hello = Το Windows Hello δεν έχει ρυθμιστεί σε αυτόν τον υπολογιστή, οπότε δεν μπορεί να προστεθεί κλειδί πρόσβασης εδώ. Ένα κλειδί ασφαλείας μπορεί ακόμη.
+unl_status_none_registered = Δεν έχει καταχωριστεί ακόμη καμία μέθοδος ξεκλειδώματος.
+unl_status_add_cancelled_passkey = Η προσθήκη κλειδιού πρόσβασης ακυρώθηκε.
+unl_status_add_cancelled_key = Η προσθήκη κλειδιού ασφαλείας ακυρώθηκε.
+unl_status_added = Προστέθηκε: {name}.
+unl_status_reassign_cancelled = Ο επανακαθορισμός ακυρώθηκε. Τίποτα δεν άλλαξε.
+unl_status_reassigned = Προστέθηκε το {name} και ξεχάστηκαν {count} από άλλους υπολογιστές.
+unl_status_test_cancelled = Η δοκιμή ακυρώθηκε.
+unl_status_removed = Αφαιρέθηκε.
+unl_remove_warning_last = Να αφαιρεθεί το {name};\n\nΕίναι η μοναδική καταχωρισμένη μέθοδος ξεκλειδώματος και δεν έχει οριστεί κύριος κωδικός πρόσβασης, οπότε με ενεργό το κλείδωμα εφαρμογής δεν θα έμενε τίποτα για να ξεκλειδώσει το ZBox. Το κλείδωμα παραλείπεται αντί να σας αποκλείσει, αλλά το ZBox θα ανοίγει τότε ξεκλείδωτο.
+unl_remove_warning = Να αφαιρεθεί το {name}; Το ZBox δεν θα το αποδέχεται πλέον.
+ab_col_email = Email
+ab_col_name = Όνομα
+ab_col_phone = Τηλέφωνο
+ab_no_contacts = Δεν υπάρχουν ακόμη επαφές.
+acct_auto_check = Αυτόματος έλεγχος για νέα μηνύματα
+acct_note_auto_check = Ανενεργό: το ZBox δεν επικοινωνεί ποτέ μόνο του με αυτόν τον λογαριασμό -- ούτε παρακολούθηση νέας αλληλογραφίας, ούτε χρονομετρημένη ανανέωση, ούτε λήψεις στο παρασκήνιο -- ώστε ένας αναξιόπιστος διακομιστής να μην επιβραδύνει τους άλλους λογαριασμούς. Η ήδη ληφθείσα αλληλογραφία του ανοίγει ακόμη και η Ανανέωση (F5), η αποστολή και η διαγραφή φτάνουν ακόμη στον διακομιστή. Το ίδιο με την Παύση αυτόματου ελέγχου στο μενού Εργαλεία ή στο μενού περιβάλλοντος του λογαριασμού.
+bl_day_ago = πριν από 1 ημέρα
+bl_days_ago = πριν από {days} ημέρες
+bl_label_blocklists = Λίστα αποκλεισμού
+bl_label_phishing = Λίστα ηλεκτρονικού ψαρέματος
+bl_last_failed = Η τελευταία προσπάθεια απέτυχε: %s
+bl_not_downloaded = Δεν έχει ληφθεί ακόμη.
+bl_save_failed = Λήφθηκε η λίστα %s αλλά δεν μπόρεσε να αποθηκευτεί: %s
+bl_seed_only = %s τομείς από την ενσωματωμένη λίστα. Δεν έχει ενημερωθεί ακόμη από το διαδίκτυο.
+bl_some_failed = Ορισμένες πηγές απέτυχαν: %s
+bl_some_unreachable = Ορισμένες πηγές δεν ήταν προσβάσιμες: %s
+bl_status_line = %s τομείς. Τελευταία ενημέρωση %s.
+bl_up_to_date = Η λίστα %s είναι ήδη ενημερωμένη.
+bl_update_failed = Δεν ήταν δυνατή η ενημέρωση της λίστας %s: %s
+bl_updated = Η λίστα %s ενημερώθηκε: %s τομείς.
+cc_age_choice = Κάθε προσωρινή μνήμη μηνυμάτων παλαιότερη από %s
+cc_auto_button = Αυτόματη εκκαθάριση: μηνύματα προσωρινής μνήμης παλαιότερα από %s...
+comp_btn_discard = &Απόρριψη
+comp_btn_keep_editing = &Συνέχεια επεξεργασίας
+comp_btn_save_draft = &Αποθήκευση προσχεδίου
+comp_no_account = Δεν έχει ρυθμιστεί λογαριασμός
+comp_saving_draft = Αποθήκευση προσχεδίου…
+comp_this_message = αυτό το μήνυμα
+comp_unsent_save_q = Να αποθηκευτεί το %s ως προσχέδιο πριν κλείσει;
+comp_unsent_tray_q = Να αποθηκευτεί το %s ως προσχέδιο πριν το ZBox μεταβεί στην περιοχή ειδοποιήσεων;
+doc_unreadable = Το αρχείο τεκμηρίωσης δεν μπόρεσε να διαβαστεί:
+envlist_all_disabled = Κάθε λογαριασμός είναι απενεργοποιημένος.
+envlist_col_date = Ημερομηνία
+envlist_col_from = Από
+envlist_col_status = Κατάσταση
+envlist_col_subject = Θέμα
+envlist_collapsed = Συμπτυγμένο (%d)
+envlist_empty = Δεν υπάρχουν μηνύματα σε αυτόν τον φάκελο.
+envlist_loading = Φόρτωση μηνυμάτων...
+envlist_no_accounts = Δεν έχει ρυθμιστεί ακόμη κανένας λογαριασμός.
+envlist_no_ignored = Δεν υπάρχουν αγνοημένα νήματα σε αυτόν τον φάκελο.
+envlist_no_watched = Δεν υπάρχουν νήματα υπό παρακολούθηση σε αυτόν τον φάκελο.
+envlist_select_folder = Επιλέξτε έναν λογαριασμό ή φάκελο για φόρτωση μηνυμάτων.
+eula_link_0 = Άνοιγμα της σελίδας άδειας του Himalaya στο πρόγραμμα περιήγησης
+eula_link_1 = Άνοιγμα της σελίδας άδειας του StevenBlack hosts στο πρόγραμμα περιήγησης
+eula_link_2 = Άνοιγμα της σελίδας άδειας του EasyList/EasyPrivacy στο πρόγραμμα περιήγησης
+eula_link_3 = Άνοιγμα της σελίδας άδειας του Phishing.Database στο πρόγραμμα περιήγησης
+eula_read_note = Διαβάστε την παρακάτω άδεια, συμπεριλαμβανομένων των ενοτήτων τρίτων. Πρέπει να επιλέξετε Συμφωνώ πριν γίνει διαθέσιμο το Επόμενο. Το Διαφωνώ κλείνει το ZBox χωρίς να το ξεκινήσει και αφαιρεί ό,τι έχει δημιουργήσει αυτή η εκτέλεση μέχρι τώρα.
+eula_unreadable = Το αρχείο άδειας δεν μπόρεσε να διαβαστεί:\n%s
+filters_title = Εκτέλεση φίλτρων
+flag_title = Επισήμανση μηνύματος με αστέρι
+folder_type_archive = Αρχειοθήκη
+folder_type_drafts = Προσχέδια
+folder_type_inbox = Εισερχόμενα
+folder_type_junk = Ανεπιθύμητα
+folder_type_sent = Απεσταλμένα
+folder_type_trash = Απορρίμματα
+mime_application_json = Αρχείο JSON
+mime_application_msword = Έγγραφο Word
+mime_application_octet_stream = Δυαδικό αρχείο
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Υπολογιστικό φύλλο Excel
+mime_application_vnd_ms_powerpoint = Παρουσίαση PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Παρουσίαση PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Υπολογιστικό φύλλο Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Έγγραφο Word
+mime_application_xml = Αρχείο XML
+mime_application_zip = Αρχείο ZIP
+mime_audio_mpeg = Ήχος MP3
+mime_audio_ogg = Ήχος OGG
+mime_audio_wav = Ήχος WAV
+mime_image_bmp = Εικόνα BMP
+mime_image_gif = Εικόνα GIF
+mime_image_jpeg = Εικόνα JPEG
+mime_image_png = Εικόνα PNG
+mime_image_svg_xml = Εικόνα SVG
+mime_image_webp = Εικόνα WebP
+mime_text_csv = Αρχείο CSV
+mime_text_html = Αρχείο HTML
+mime_text_plain = Αρχείο κειμένου
+mime_video_mp4 = Βίντεο MP4
+mime_video_x_msvideo = Βίντεο AVI
+move_title_junk = Επισήμανση ως ανεπιθύμητο
+move_title_move_to = Μετακίνηση σε
+move_title_not_junk = Επισήμανση ως όχι ανεπιθύμητο
+mp_explain_set = Έχει οριστεί κύριος κωδικός πρόσβασης. Είναι αυτός που επιτρέπει σε αυτόν τον φάκελο του ZBox να ανοίγει τους αποθηκευμένους κωδικούς λογαριασμών του σε διαφορετικό υπολογιστή.\n\nΑφήστε και τα δύο πλαίσια νέου κωδικού κενά και πατήστε OK για να τον αφαιρέσετε. Η αφαίρεση δεν επηρεάζει αυτόν τον υπολογιστή, αλλά ο φάκελος δεν θα λειτουργεί πλέον σε κανέναν άλλον χωρίς να συνδεθεί ξανά κάθε λογαριασμός.
+mp_explain_unset = Δεν έχει οριστεί κύριος κωδικός πρόσβασης, οπότε οι αποθηκευμένοι κωδικοί των λογαριασμών μπορούν να διαβαστούν μόνο σε αυτόν τον υπολογιστή και αυτόν τον λογαριασμό Windows. Αν αντιγράψετε τον φάκελο αλλού, κάθε λογαριασμός θα πρέπει να συνδεθεί ξανά στον διακομιστή αλληλογραφίας του.\n\nΟρίστε έναν και το ZBox θα τον ζητά μία φορά σε κάθε νέο υπολογιστή και μετά θα ξεκλειδώνει κανονικά εκεί. Αυτός ο υπολογιστής δεν θα ρωτήσει ξανά.\n\nΣημειώστε τον και φυλάξτε τον σε ασφαλές μέρος. Δεν αποθηκεύεται πουθενά και δεν μπορεί να ανακτηθεί: αν τον ξεχάσετε, κάθε λογαριασμός θα πρέπει να συνδεθεί ξανά στον διακομιστή αλληλογραφίας του.
+mp_label_confirm = &Επιβεβαίωση νέου κύριου κωδικού πρόσβασης:
+mp_label_current = &Τρέχων κύριος κωδικός πρόσβασης:
+mp_label_master = &Κύριος κωδικός πρόσβασης:
+mp_label_new = &Νέος κύριος κωδικός πρόσβασης:
+mp_name_confirm = Επιβεβαίωση νέου κύριου κωδικού πρόσβασης
+mp_name_current = Τρέχων κύριος κωδικός πρόσβασης
+mp_name_master = Κύριος κωδικός πρόσβασης
+mp_name_new = Νέος κύριος κωδικός πρόσβασης
+mp_prompt_existing = Οι αποθηκευμένοι κωδικοί των λογαριασμών σας προστατεύονται μόνο σε αυτόν τον υπολογιστή. Ορίστε έναν κύριο κωδικό πρόσβασης ώστε να μπορούν να ανοίξουν και αν μεταφέρετε το ZBox σε άλλον.
+mp_prompt_first_run = Το ZBox πρόκειται να αποθηκεύσει τους κωδικούς των λογαριασμών σας. Ορίστε τώρα έναν κύριο κωδικό πρόσβασης ώστε να μπορούν να ανοιχτούν ακόμη και αν μεταφέρετε το ZBox σε άλλον υπολογιστή.
+mp_prompt_new_account = Το ZBox πρόκειται να αποθηκεύσει τον κωδικό αυτού του λογαριασμού. Ορίστε πρώτα έναν κύριο κωδικό πρόσβασης ώστε ο λογαριασμός να μπορεί να ανοίξει ακόμη και αν μεταφέρετε το ZBox σε άλλον υπολογιστή.
+mp_removed_done = Ο κύριος κωδικός πρόσβασης αφαιρέθηκε. Οι αποθηκευμένοι κωδικοί λειτουργούν πλέον μόνο σε αυτόν τον υπολογιστή και αυτόν τον λογαριασμό Windows.
+mp_set_done = Ο κύριος κωδικός πρόσβασης ορίστηκε. Το ZBox θα τον ζητά μία φορά σε κάθε νέο υπολογιστή όπου ανοίγει αυτός ο φάκελος και μετά θα ξεκλειδώνει κανονικά εκεί.
+mv_body_title = Σώμα μηνύματος
+mv_col_format = Μορφή
+mv_col_name = Όνομα
+mv_col_size = Μέγεθος
+mv_format_unknown = Άγνωστη
+mv_size_unknown = Άγνωστο μέγεθος
+na_account_settings = Ρυθμίσεις λογαριασμού και ταυτοτήτων
+na_disable_account = Απενεργοποίηση λογαριασμού
+na_edit_signature = Επεξεργασία υπογραφής
+na_message_filters = Φίλτρα μηνυμάτων
+na_mute_account = Σίγαση λογαριασμού
+na_pause_auto_check = Παύση αυτόματου ελέγχου
+na_remove_account = Αφαίρεση λογαριασμού
+na_set_default = Ορισμός ως προεπιλεγμένου λογαριασμού
+no_offline_copy = Δεν υπάρχει αντίγραφο εκτός σύνδεσης για το %s. Ανοίξτε το ενώ είστε συνδεδεμένοι ή χρησιμοποιήστε Αρχείο, Εκτός σύνδεσης, Συγχρονισμός τώρα.
+perm_delete_confirm = {msg} Αυτό παρακάμπτει τον φάκελο Απορρίμματα και δεν μπορεί να αναιρεθεί.
+perm_delete_many = Να διαγραφούν οριστικά {count} μηνύματα;
+perm_delete_one = Να διαγραφεί οριστικά {count} μήνυμα;
+preset_note_apple = Η Apple απαιτεί κωδικό για συγκεκριμένη εφαρμογή.
+preset_note_fastmail = Το Fastmail απαιτεί κωδικό εφαρμογής.
+preset_note_google = Η Google απαιτεί κωδικό εφαρμογής ή OAuth2, όχι τον κανονικό κωδικό σας.
+preset_note_proton = Το ProtonMail απαιτεί την εφαρμογή ProtonMail Bridge να εκτελείται τοπικά.
+preset_note_yahoo = Το Yahoo απαιτεί κωδικό εφαρμογής.
+priv_phishing_not_loaded = Λίστα ηλεκτρονικού ψαρέματος: δεν έχει φορτωθεί ακόμη. Λαμβάνεται την πρώτη φορά που αυτοί οι κανόνες είναι ενεργοί και το ZBox είναι συνδεδεμένο.
+priv_phishing_prefix = Λίστα ηλεκτρονικού ψαρέματος:
+priv_status_unavailable = Η κατάσταση της λίστας αποκλεισμού δεν είναι διαθέσιμη.
+rdr_load_failed = Δεν ήταν δυνατή η φόρτωση του μηνύματος.\n\n{message}
+rdr_loading = Φόρτωση μηνύματος...
+rdr_select_message = Επιλέξτε ένα μήνυμα για να το διαβάσετε εδώ.
+set_autosave_off = Ανενεργό — χρησιμοποιήστε την Αποθήκευση προσχεδίου (Ctrl+S) για χειροκίνητη αποθήκευση
+set_autosave_seconds = Κάθε {seconds} δευτερόλεπτα
+set_no_unlock = Δεν υπάρχει διαθέσιμο κλειδί πρόσβασης ή κλειδί ασφαλείας εδώ
+set_purge_days = Μετά από {days} ημέρες
+set_purge_off = Ανενεργό — τα Απορρίμματα και τα Ανεπιθύμητα δεν διαγράφονται ποτέ αυτόματα
+set_purge_one_day = Μετά από 1 ημέρα
+set_val_seconds = {seconds} δευτερόλεπτα
+set_val_one_second = 1 δευτερόλεπτο
+set_silence_off = Ανενεργό
+set_announce_wait = Αναμονή πλήκτρου
+set_autosave_minutes = Κάθε {minutes} λεπτά
+set_autosave_one_minute = Κάθε λεπτό
+set_rt_bundled_installed = Ενσωματωμένο περιβάλλον εκτέλεσης: εγκατεστημένο.
+set_rt_bundled_many = Ενσωματωμένο περιβάλλον εκτέλεσης: εγκαταστάθηκε το %s.
+set_rt_bundled_none = Ενσωματωμένο περιβάλλον εκτέλεσης: δεν έχει εγκατασταθεί κανένα, οπότε το ZBox χρησιμοποιεί αυτό του συστήματος.
+set_rt_bundled_unknown = Ενσωματωμένο περιβάλλον εκτέλεσης: δεν ήταν δυνατός ο προσδιορισμός.
+set_rt_bundled_ver = Ενσωματωμένο περιβάλλον εκτέλεσης: εγκατεστημένη έκδοση %s.
+set_rt_system_unknown = Περιβάλλον εκτέλεσης συστήματος: δεν ήταν δυνατός ο προσδιορισμός της έκδοσης.
+set_rt_system_ver = Περιβάλλον εκτέλεσης συστήματος: έκδοση %s.
+set_unlock_many = %d μέθοδοι ξεκλειδώματος διαθέσιμες εδώ
+set_unlock_unreadable = Δεν ήταν δυνατή η ανάγνωση των μεθόδων ξεκλειδώματος
+sig_tab_formatted = Μορφοποιημένη
+sig_tab_source = Πηγή HTML
+srch_all_accounts = Όλοι οι λογαριασμοί
+srch_all_folders = Όλοι οι φάκελοι
+tab_mail = Αλληλογραφία
+tab_new_message = Νέο μήνυμα
+tab_saved_message = Αποθηκευμένο μήνυμα
+title_copy_to_err = Αντιγραφή σε
+title_mark_message = Επισήμανση μηνύματος
+title_unsent_message = Μη απεσταλμένο μήνυμα
+tree_unified_root = Ενοποιημένοι φάκελοι
+unlock_kind_passkey = Κλειδί πρόσβασης (Windows Hello)
+unlock_kind_security_key = Κλειδί ασφαλείας
+unlock_prompt_message = Τα Windows ζητούν επιβεβαίωση. Απαντήστε στο αίτημά τους με το Windows Hello, το PIN σας ή το κλειδί ασφαλείας σας. Αυτό το παράθυρο κλείνει μόνο του όταν ολοκληρώσουν τα Windows.
+unlock_prompt_title = Ασφάλεια των Windows
+unlock_registering = Καταχώριση αυτής της μεθόδου ξεκλειδώματος
+unlock_the_passkey = Το κλειδί πρόσβασης
+unlock_the_security_key = Το κλειδί ασφαλείας
+wildcard_eml = Αρχεία email (*.eml)|*.eml|Όλα τα αρχεία (*.*)|*.*
+wildcard_export = Εξαγωγή ZBox (*.json)|*.json
+wiz_not_supported = ΔΕΝ ΥΠΟΣΤΗΡΙΖΕΤΑΙ: {name}. {note} Αυτός ο λογαριασμός δεν μπορεί να προστεθεί στο ZBox.
+stock_apply = &Εφαρμογή
+stock_cancel = Άκυρο
+stock_close = &Κλείσιμο
+stock_help = &Βοήθεια
+stock_no = &Όχι
+stock_ok = OK
+stock_yes = &Ναι
+wiz_btn_back = &< Πίσω
+wiz_btn_finish = &Ολοκλήρωση
+wiz_btn_next = &Επόμενο >
+acct_unsaved_q = Να αποθηκευτούν οι αλλαγές σε αυτόν τον λογαριασμό;
+btn_save = &Αποθήκευση
+spell_add_to_dictionary = &Προσθήκη στο λεξικό
+spell_no_suggestions = Καμία πρόταση
+title_signature_for = Υπογραφή: {account}
+title_mark_folder_read = Επισήμανση φακέλου ως αναγνωσμένου
+title_update_available = Ενημέρωση ZBox
+update_available = Το ZBox {new} είναι διαθέσιμο. Έχετε το {current}.
+upd_notes_label = &Σημειώσεις έκδοσης:
+upd_no_notes = Δεν υπάρχουν σημειώσεις έκδοσης.
+upd_notes_name = Σημειώσεις έκδοσης
+upd_update_now = &Ναι, ενημέρωση τώρα
+upd_remind_later = &Υπενθύμιση αργότερα
+title_update_download = Λήψη ενημέρωσης ZBox
+upd_downloading = Λήψη του ZBox {version}...
+upd_progress_name = Πρόοδος λήψης
+upd_cancel = &Άκυρο
+upd_cancelling = Ακύρωση...
+set_updates_label = Ενημερώσεις:
+set_update_auto = &Αυτόματος έλεγχος για ενημερώσεις
+set_update_mode_label = Όταν βρεθεί ενημέρωση:
+set_update_ask = &Να με ρωτά
+set_update_silent = &Αθόρυβη λήψη και εγκατάσταση
+set_update_note = Το ZBox ελέγχει το GitHub για νεότερη έκδοση το πολύ μία φορά την ημέρα, μόνο όταν είναι αδρανές, και δεν στέλνει τίποτα εκτός από τον αριθμό έκδοσής του. Το Να με ρωτά δείχνει τη νέα έκδοση και τις σημειώσεις της, με τα Ναι, ενημέρωση τώρα και Υπενθύμιση αργότερα. Η Αθόρυβη λήψη και εγκατάσταση κατεβάζει την ενημέρωση σε αδρανή χρόνο και την εγκαθιστά την επόμενη φορά που θα κλείσετε πλήρως το ZBox, ποτέ ενώ εργάζεστε. Μια ενημέρωση αντικαθιστά μόνο τα δικά του αρχεία προγράμματος: οι λογαριασμοί, οι κωδικοί, οι ρυθμίσεις, η αλληλογραφία, τα αρχεία καταγραφής, τα θέματα ήχων και κάθε γλώσσα που προσθέσατε δεν αγγίζονται ποτέ και η προηγούμενη έκδοση διατηρείται και επαναφέρεται αυτόματα αν η νέα δεν ξεκινήσει. Το Βοήθεια, Ενημερώσεις έχει επίσης Έλεγχος για ενημερώσεις τώρα και τη σελίδα εκδόσεων για χειροκίνητη ενημέρωση.
+set_update_check_now = &Έλεγχος τώρα
+mv_attachment_button = {filename} ({format})
+att_open = Άνοιγμα
+att_save = Αποθήκευση...
+att_save_all = Αποθήκευση όλων των συνημμένων
+title_save_attachment = Αποθήκευση συνημμένου
+title_full_headers = Πλήρεις κεφαλίδες
+hdr_copy_all = Αντιγραφή όλων
+acct_identity_own_signature = Χρήση της δικής της υπογραφής
+acct_identity_own_reply_to = Χρήση της δικής της διεύθυνσης Απάντηση προς
+acct_identity_reply_to = Διεύθυνση Απάντηση προς
+acct_identity_always_cc = Πάντα Κοιν. σε αυτές τις διευθύνσεις
+acct_identity_cc = Διευθύνσεις Κοιν.
+acct_identity_always_bcc = Πάντα Κρυφή κοιν. σε αυτές τις διευθύνσεις
+acct_identity_bcc = Διευθύνσεις Κρυφή κοιν.
+acct_identity_own_folders = Χρήση των δικών της φακέλων Προσχεδίων και Απεσταλμένων
+acct_identity_drafts = Φάκελος Προσχεδίων
+acct_identity_sent = Φάκελος Απεσταλμένων
+acct_identity_own_smtp = Χρήση του δικού της διακομιστή εξερχομένων
+acct_identity_smtp_login = Όνομα σύνδεσης εξερχομένων
+acct_identity_smtp_password = Κωδικός πρόσβασης εξερχομένων
+acct_identity_test_smtp = &Δοκιμή διακομιστή εξερχομένων
+acct_identity_note_smtp = Αφήστε το όνομα σύνδεσης κενό για να συνδέεστε με τη διεύθυνση email αυτής της ταυτότητας. Τα αντίγραφα που στέλνονται πηγαίνουν ακόμη στον φάκελο Απεσταλμένων αυτού του λογαριασμού ή στον δικό της φάκελο Απεσταλμένων αν έχει.
+identity_field_required = Συμπληρώστε το πεδίο {field} ή αποεπιλέξτε το πλαίσιό του.
+identity_field_invalid = Το πεδίο {field} έχει διεύθυνση που δεν είναι έγκυρη.
+identity_folders_required = Επιλέξτε φάκελο Προσχεδίων, φάκελο Απεσταλμένων ή και τα δύο ή αποεπιλέξτε το πλαίσιό τους.
+identity_password_required = Εισαγάγετε τον κωδικό πρόσβασης εξερχομένων.
+identity_smtp_testing = Δοκιμή του διακομιστή εξερχομένων.
+identity_smtp_ok = Ο διακομιστής εξερχομένων δέχτηκε τη σύνδεση.
+identity_smtp_failed = Η δοκιμή του διακομιστή εξερχομένων απέτυχε.\n\n{error}
+set_bare_keys_note_move = Τα M και C ανοίγουν τα μενού Μετακίνηση σε και Αντιγραφή σε φακέλων για τα επιλεγμένα μηνύματα και το Shift+M ανοίγει ένα πλαίσιο όπου πληκτρολογείτε μέρος ενός ονόματος φακέλου για να μετακινήσετε εκεί τα μηνύματα. Η απενεργοποίηση επαναφέρει και τα M και C στην πλοήγηση με το πρώτο γράμμα.
+folder_search_filter = Το όνομα φακέλου περιέχει
+folder_search_list = Φάκελοι που ταιριάζουν
+folder_search_no_match = Κανένας φάκελος δεν ταιριάζει με αυτό το όνομα.
+wiz_signin_method = Μέθοδος σύνδεσης
+wiz_method_password = Κωδικός πρόσβασης
+wiz_method_microsoft = Λογαριασμός Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Σύνδεση Microsoft. Οι ρυθμίσεις διακομιστή για Outlook.com, Hotmail, Live και Microsoft 365 έχουν συμπληρωθεί.
+wiz_welcome_notice = Gmail. Ο κανονικός κωδικός Google θα απορριφθεί, αλλά ένας κωδικός εφαρμογής λειτουργεί. Η επαλήθευση σε δύο βήματα πρέπει να είναι πρώτα ενεργή. Το κουμπί παρακάτω ανοίγει τις οδηγίες της Google.\n\nOutlook.com, Hotmail, Live και Microsoft 365. Αυτά συνδέονται με τον λογαριασμό Microsoft σας. Στη σελίδα Σύνδεσης, επιλέξτε Λογαριασμός Microsoft και μετά συνδεθείτε με το πρόγραμμα περιήγησης ή με κωδικό.\n\nΆλλοι πάροχοι. Ένας κανονικός κωδικός ή κωδικός εφαρμογής συνήθως λειτουργεί και οι σελίδες βοήθειας του παρόχου σας αναφέρουν τις ρυθμίσεις διακομιστή.
+preset_note_outlook = Οι λογαριασμοί Outlook.com, Hotmail, Live και MSN συνδέονται με λογαριασμό Microsoft. Επιλέξτε Λογαριασμός Microsoft ως μέθοδο σύνδεσης στη σελίδα Σύνδεσης.
+ms_status_name = Κατάσταση σύνδεσης Microsoft
+ms_browser_button = &Σύνδεση με πρόγραμμα περιήγησης
+ms_code_button = &Σύνδεση με κωδικό
+ms_copy_code = &Αντιγραφή κωδικού
+ms_open_page = &Άνοιγμα σελίδας σύνδεσης
+ms_stop = &Διακοπή αναμονής
+ms_not_configured = Η σύνδεση Microsoft δεν έχει ρυθμιστεί σε αυτό το αντίγραφο του ZBox.
+ms_not_signed_in = Δεν έχει γίνει σύνδεση ακόμη. Συνδεθείτε με το πρόγραμμα περιήγησης ή με κωδικό σε οποιαδήποτε συσκευή.
+ms_signed_in = Συνδεδεμένος ως {address}.
+ms_signed_in_plain = Συνδεδεμένος.
+ms_needs_sign_in = Χρειάζεται ξανά σύνδεση Microsoft για αυτόν τον λογαριασμό. Συνδεθείτε με το πρόγραμμα περιήγησης ή με κωδικό σε οποιαδήποτε συσκευή.
+ms_reason_cancelled = Η σύνδεση διακόπηκε.
+ms_reason_timeout = Δεν ήρθε απάντηση εγκαίρως.
+ms_reason_denied = Η πρόσβαση δεν επιτράπηκε.
+ms_reason_expired = Ο κωδικός έληξε. Ζητήστε νέο.
+ms_reason_network = Δεν ήταν δυνατή η επικοινωνία με τη Microsoft. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά.
+ms_reason_server = Η Microsoft ανέφερε: {detail}
+ms_page_done = Η σύνδεση έγινε. Μπορείτε να κλείσετε αυτή τη σελίδα και να επιστρέψετε στο ZBox.
+ms_page_failed = Η σύνδεση δεν ολοκληρώθηκε. Επιστρέψτε στο ZBox για λεπτομέρειες.
+ms_browser_waiting = Το πρόγραμμα περιήγησής σας δείχνει τη σελίδα σύνδεσης της Microsoft. Ολοκληρώστε εκεί τη σύνδεση και μετά επιστρέψτε στο ZBox.
+ms_code_asking = Αίτημα κωδικού σύνδεσης από τη Microsoft...
+ms_code_waiting = Σε οποιαδήποτε συσκευή, ανοίξτε το {address} και εισαγάγετε τον κωδικό {code}. Το ZBox περιμένει εδώ μέχρι να ολοκληρώσετε τη σύνδεση.
+ms_failed = Η σύνδεση δεν ολοκληρώθηκε. {reason}
+ms_code_copied = Ο κωδικός αντιγράφηκε.
+offline_inbox_only = Μόνο τα Εισερχόμενα και η Αρχειοθήκη διατηρούνται για χρήση εκτός σύνδεσης. Συνδεθείτε στο διαδίκτυο για να ανοίξετε τον φάκελο {folder}.
+block_sender_rule_name = Αποκλεισμός του {sender}
+title_block_sender = Αποκλεισμός αυτού του αποστολέα
+title_unblock_sender = Άρση αποκλεισμού αυτού του αποστολέα
+set_clear_inbox_cache = Εκκαθάριση προσωρινής μνήμης μηνυμάτων όταν φεύγουν από τα Εισερχόμενα
+set_clear_inbox_cache_note = Όταν είναι ενεργό, το αντίγραφο εκτός σύνδεσης και το αποθηκευμένο σώμα ενός μηνύματος διαγράφονται μόλις φύγει από τα Εισερχόμενα, επίσης όταν διαγράφηκε ή μετακινήθηκε αλλού, όπως στο τηλέφωνό σας, ώστε να μην εμφανίζεται εκεί που δεν βρίσκεται πια. Μόνο τα Εισερχόμενα κρατούν αυτά τα αρχεία· κάθε άλλος φάκελος διαβάζεται πάντα από τον διακομιστή.
+empty_trash_all_confirm = Να διαγραφούν οριστικά όλα τα μηνύματα στα Απορρίμματα για όλους τους λογαριασμούς;\n\nΑυτό δεν μπορεί να αναιρεθεί.
+envlist_col_recipient = Παραλήπτης
+envlist_col_correspondents = Αλληλογράφοι
+envlist_col_received = Παραλαβή
+envlist_col_size = Μέγεθος
+envlist_col_attachments = Συνημμένα
+envlist_col_priority = Προτεραιότητα
+envlist_col_junk_status = Κατάσταση ανεπιθύμητου
+envlist_attachment = Συνημμένα
+envlist_priority_highest = Υψηλότατη
+envlist_priority_high = Υψηλή
+envlist_priority_low = Χαμηλή
+envlist_priority_lowest = Χαμηλότατη
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Εμφάνιση κεφαλίδων στηλών στη λίστα μηνυμάτων
+pgp_title = Διαχείριση κλειδιών OpenPGP
+smime_title = Διαχείριση πιστοποιητικών S/MIME
+smime_own = το πιστοποιητικό σας
+smime_expired = έχει λήξει
+smime_expires = λήγει {date}
+smime_issuer = Εκδότης
+smime_valid = Ισχύει από {start} έως {end}
+smime_fingerprint = Αποτύπωμα SHA-256
+smime_own_key = Το πιστοποιητικό σας, με το ιδιωτικό του κλειδί: η αλληλογραφία που έχει κρυπτογραφηθεί για αυτό μπορεί να διαβαστεί εδώ.
+smime_unavailable = Το S/MIME δεν είναι διαθέσιμο σε αυτό το αντίγραφο του ZBox.
+smime_details = Λεπτομέρειες πιστοποιητικού
+smime_no_certs = Δεν υπάρχουν ακόμη πιστοποιητικά. Εισαγάγετε το δικό σας αρχείο .p12 ή .pfx ή το πιστοποιητικό ενός αλληλογράφου.
+smime_import_failed = Το πιστοποιητικό δεν μπόρεσε να εισαχθεί: {error}
+smime_import_title = Εισαγωγή αρχείου πιστοποιητικού
+smime_password_prompt = Εισαγάγετε τον κωδικό πρόσβασης του {name}.
+smime_password_title = Κωδικός πρόσβασης πιστοποιητικού
+smime_imported = Το πιστοποιητικό εισήχθη.
+smime_export_title = Εξαγωγή πιστοποιητικού
+smime_exported = Το πιστοποιητικό εξήχθη.
+smime_delete_confirm = Να διαγραφεί το πιστοποιητικό του {name}; Αν είναι δικό σας, η αλληλογραφία που έχει κρυπτογραφηθεί για αυτό δεν θα μπορεί πλέον να διαβαστεί εδώ.
+smime_deleted = Το πιστοποιητικό διαγράφηκε.
+smime_rs_verified = Αυτό το μήνυμα περιλαμβάνει έγκυρη υπογραφή S/MIME από πιστοποιητικό που εξέδωσε για τη διεύθυνση του αποστολέα αρχή που εμπιστεύονται τα Windows.
+smime_rs_unverified = Αυτό το μήνυμα περιλαμβάνει έγκυρη υπογραφή S/MIME, αλλά το πιστοποιητικό της δεν εκδόθηκε από αρχή που εμπιστεύονται τα Windows.
+smime_rs_mismatch = Αυτό το μήνυμα περιλαμβάνει υπογραφή S/MIME, αλλά η διεύθυνση του αποστολέα δεν ταιριάζει με το πιστοποιητικό του υπογράφοντος.
+smime_rs_technical = Αυτό το μήνυμα περιλαμβάνει υπογραφή S/MIME, αλλά δεν ταιριάζει με το μήνυμα. Το μήνυμα μπορεί να άλλαξε μετά την υπογραφή του.
+smime_rs_signer = Υπογράφων: {name}
+smime_rs_issuer = Πιστοποιητικό εκδόθηκε από: {issuer}
+smime_rs_import_hint = Για να το διαβάσετε, εισαγάγετε το πιστοποιητικό S/MIME σας με το ιδιωτικό του κλειδί, ένα αρχείο .p12 ή .pfx, στο Εργαλεία, Διαχείριση πιστοποιητικών S/MIME.
+pgp_details = Ιδιότητες κλειδιού
+pgp_generate = &Νέο ζεύγος κλειδιών
+smime_import = &Εισαγωγή αρχείου πιστοποιητικού
+smime_export = &Εξαγωγή πιστοποιητικού
+smime_delete = &Διαγραφή πιστοποιητικού
+pgp_import_file = &Εισαγωγή αρχείου κλειδιού OpenPGP
+pgp_import_file_title = Εισαγωγή αρχείου κλειδιού OpenPGP
+pgp_import_clip = &Εισαγωγή κλειδιών από το πρόχειρο
+pgp_export = &Εξαγωγή δημόσιου κλειδιού σε αρχείο
+pgp_copy = &Αντιγραφή δημόσιου κλειδιού
+pgp_backup = &Αντίγραφο ασφαλείας του μυστικού κλειδιού σε αρχείο
+pgp_props = &Ιδιότητες κλειδιού
+pgp_revoke = &Ανάκληση κλειδιού
+pgp_delete = &Διαγραφή κλειδιού
+pgp_expires = λήγει: {date}
+pgp_never_expires = δεν λήγει ποτέ
+pgp_expired = έχει λήξει
+pgp_revoked = ανακλήθηκε
+pgp_fingerprint = Αποτύπωμα
+pgp_key_id = Αναγνωριστικό κλειδιού
+pgp_created = Δημιουργήθηκε
+pgp_acceptance = Η αποδοχή σας
+pgp_acc_rejected = Όχι, απόρριψη αυτού του κλειδιού.
+pgp_acc_undecided = Όχι ακόμη, ίσως αργότερα.
+pgp_acc_unverified = Ναι, αλλά δεν έχω επαληθεύσει ότι είναι το σωστό κλειδί.
+pgp_acc_verified = Ναι, έχω επαληθεύσει αυτοπροσώπως ότι αυτό το κλειδί έχει το σωστό αποτύπωμα.
+pgp_personal_no = Όχι, να μη χρησιμοποιηθεί ως προσωπικό μου κλειδί.
+pgp_personal_yes = Ναι, να αντιμετωπιστεί αυτό το κλειδί ως προσωπικό κλειδί.
+pgp_verify_hint = Επαληθεύστε το αποτύπωμα του κλειδιού μέσω ενός ασφαλούς καναλιού επικοινωνίας εκτός email για να βεβαιωθείτε ότι είναι πράγματι το κλειδί του {addr}.
+pgp_gen_title = Δημιουργία κλειδιού OpenPGP
+pgp_gen_identity = Ταυτότητα
+pgp_gen_type = Τύπος κλειδιού:
+pgp_gen_ecc = ECC (Ελλειπτική καμπύλη)
+pgp_gen_expiry = Λήξη κλειδιού
+pgp_gen_no_expiry = Το κλειδί δεν λήγει
+pgp_gen_button = Δημιουργία κλειδιού
+pgp_gen_confirm = Να δημιουργηθεί δημόσιο και μυστικό κλειδί για την ταυτότητα {identity};
+pgp_gen_progress = Δημιουργία του νέου σας κλειδιού OpenPGP…
+pgp_gen_done = Το κλειδί OpenPGP δημιουργήθηκε με επιτυχία!
+pgp_gen_failed = Η δημιουργία του κλειδιού OpenPGP απέτυχε απροσδόκητα
+pgp_import_none = Δεν εισήχθη κανένα κλειδί.
+pgp_import_done = Τα κλειδιά OpenPGP εισήχθησαν με επιτυχία!
+pgp_passphrase_title = Απαιτείται φράση πρόσβασης
+pgp_unlock_failed = Το κλειδί ή τα υποκλειδιά του δεν μπόρεσαν να ξεκλειδωθούν.
+pgp_backup_title = Επιλέξτε κωδικό πρόσβασης για το αντίγραφο ασφαλείας του κλειδιού OpenPGP
+pgp_backup_message = Ο κωδικός που ορίζετε εδώ προστατεύει το αρχείο αντιγράφου ασφαλείας του μυστικού κλειδιού OpenPGP που πρόκειται να δημιουργήσετε. Πρέπει να ορίσετε αυτόν τον κωδικό για να συνεχίσετε με το αντίγραφο ασφαλείας.
+pgp_backup_pw = Κωδικός αντιγράφου ασφαλείας μυστικού κλειδιού:
+pgp_backup_pw2 = Κωδικός αντιγράφου ασφαλείας μυστικού κλειδιού (ξανά):
+pgp_backup_done = Το μυστικό κλειδί εξήχθη με επιτυχία!
+pgp_export_done = Το δημόσιο κλειδί εξήχθη με επιτυχία!
+pgp_copied = Τα κλειδιά αντιγράφηκαν στο πρόχειρο
+pgp_revoke_done = Το κλειδί ανακλήθηκε με επιτυχία.
+pgp_personal = προσωπικό κλειδί
+pgp_no_keys = Δεν υπάρχουν ακόμη κλειδιά. Δημιουργήστε νέο ζεύγος κλειδιών ή εισαγάγετε ένα κλειδί.
+pgp_unavailable = Το OpenPGP δεν είναι διαθέσιμο σε αυτό το αντίγραφο του ZBox.
+pgp_gen_expires_3y = Το κλειδί λήγει σε 3 χρόνια
+pgp_gen_no_identity = Προσθέστε πρώτα έναν λογαριασμό email.
+pgp_import_confirm = Να εισαχθούν αυτά τα κλειδιά;\n\n{keys}
+pgp_passphrase_prompt = Εισαγάγετε τη φράση πρόσβασης του μυστικού κλειδιού για τον {name}.
+pgp_clip_empty = Το πρόχειρο δεν περιέχει κλειδί OpenPGP.
+pgp_pw_mismatch = Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν.
+pgp_backup_open = Αυτό το αρχείο είναι αντίγραφο ασφαλείας μυστικού κλειδιού. Εισαγάγετε τον κωδικό του αντιγράφου ασφαλείας.
+pgp_revoke_confirm = Να ανακληθεί το κλειδί του {name}; Ένα ανακληθέν κλειδί δεν μπορεί ποτέ να χρησιμοποιηθεί ξανά. Μοιραστείτε το ανακληθέν δημόσιο κλειδί ώστε οι άλλοι να σταματήσουν να το χρησιμοποιούν.
+pgp_delete_public_confirm = Να διαγραφεί το δημόσιο κλειδί του {name};
+pgp_delete_secret_confirm = Να διαγραφεί το προσωπικό σας κλειδί {name}; Η αλληλογραφία που έχει κρυπτογραφηθεί για αυτό δεν θα μπορεί ποτέ ξανά να διαβαστεί. Δημιουργήστε πρώτα αντίγραφο ασφαλείας του μυστικού κλειδιού αν μπορεί να το χρειαστείτε.
+pgp_select_key = Επιλέξτε πρώτα ένα κλειδί.
+pgp_save_failed = Τα κλειδιά δεν μπόρεσαν να αποθηκευτούν: {error}
+pgp_publish = &Δημοσίευση
+pgp_publish_ok = Το δημόσιο κλειδί στάλθηκε στο "{keyserver}".
+pgp_publish_fail = Η αποστολή του δημόσιου κλειδιού σας στο "{keyserver}" απέτυχε.
+pgp_publish_suggest = Η δημοσίευση του δημόσιου κλειδιού σε έναν διακομιστή κλειδιών επιτρέπει στους άλλους να το βρουν.
+pgp_publish_question = Να δημοσιευθεί τώρα στο {keyserver}; Ο διακομιστής στέλνει τότε ένα email επαλήθευσης στο {addresses}. Η διεύθυνσή σας γίνεται ανιχνεύσιμη μόλις ανοίξετε τον σύνδεσμό του.
+pgp_publish_sent = Στάλθηκε email επαλήθευσης στο {addresses}. Ανοίξτε τον σύνδεσμο που περιέχει για να γίνει το κλειδί σας ανιχνεύσιμο με τη διεύθυνσή σας.
+pgp_publish_already = Ήδη ανιχνεύσιμο με το {addresses}.
+pgp_rs_no_sig = Χωρίς ψηφιακή υπογραφή
+pgp_rs_no_sig_info = Αυτό το μήνυμα δεν περιλαμβάνει την ψηφιακή υπογραφή του αποστολέα. Η απουσία ψηφιακής υπογραφής σημαίνει ότι το μήνυμα θα μπορούσε να έχει σταλεί από κάποιον που παριστάνει ότι έχει αυτή τη διεύθυνση email. Είναι επίσης πιθανό το μήνυμα να τροποποιήθηκε κατά τη μεταφορά του μέσω του δικτύου.
+pgp_rs_uncertain = Αβέβαιη ψηφιακή υπογραφή
+pgp_rs_uncertain_date = Αβέβαιη ψηφιακή υπογραφή - Υπογράφηκε στις {date}
+pgp_rs_invalid = Μη έγκυρη ψηφιακή υπογραφή
+pgp_rs_invalid_date = Μη έγκυρη ψηφιακή υπογραφή - Υπογράφηκε στις {date}
+pgp_rs_good = Καλή ψηφιακή υπογραφή
+pgp_rs_good_date = Καλή ψηφιακή υπογραφή - Υπογράφηκε στις {date}
+pgp_rs_no_key = Αυτό το μήνυμα περιέχει ψηφιακή υπογραφή, αλλά δεν είναι βέβαιο αν είναι σωστή. Για να την επαληθεύσετε, πρέπει να αποκτήσετε αντίγραφο του δημόσιου κλειδιού του αποστολέα.
+pgp_rs_uid_mismatch = Αυτό το μήνυμα περιέχει ψηφιακή υπογραφή, αλλά εντοπίστηκε ασυμφωνία. Το μήνυμα στάλθηκε από διεύθυνση email που δεν ταιριάζει με το δημόσιο κλειδί του υπογράφοντος.
+pgp_rs_not_accepted = Αυτό το μήνυμα περιέχει ψηφιακή υπογραφή, αλλά δεν έχετε αποφασίσει ακόμη αν το κλειδί του υπογράφοντος είναι αποδεκτό.
+pgp_rs_rejected = Αυτό το μήνυμα περιέχει ψηφιακή υπογραφή, αλλά έχετε αποφασίσει νωρίτερα να απορρίψετε το κλειδί του υπογράφοντος.
+pgp_rs_technical = Αυτό το μήνυμα περιέχει ψηφιακή υπογραφή, αλλά εντοπίστηκε τεχνικό σφάλμα. Είτε το μήνυμα έχει αλλοιωθεί είτε έχει τροποποιηθεί από κάποιον άλλον.
+pgp_rs_unverified = Αυτό το μήνυμα περιλαμβάνει έγκυρη ψηφιακή υπογραφή από κλειδί που έχετε ήδη αποδεχτεί. Ωστόσο, δεν έχετε επαληθεύσει ακόμη ότι το κλειδί ανήκει πράγματι στον αποστολέα.
+pgp_rs_verified = Αυτό το μήνυμα περιλαμβάνει έγκυρη ψηφιακή υπογραφή από επαληθευμένο κλειδί.
+pgp_rs_own_key = Αυτό το μήνυμα περιλαμβάνει έγκυρη ψηφιακή υπογραφή από το προσωπικό σας κλειδί.
+pgp_rs_signer_id = Αναγνωριστικό κλειδιού υπογράφοντος: {keyid}
+pgp_rs_decrypt_id = Αναγνωριστικό του κλειδιού αποκρυπτογράφησής σας: {keyid}
+pgp_rs_enc_none = Το μήνυμα δεν είναι κρυπτογραφημένο
+pgp_rs_enc_none_info = Αυτό το μήνυμα δεν κρυπτογραφήθηκε πριν σταλεί. Οι πληροφορίες που αποστέλλονται μέσω του διαδικτύου χωρίς κρυπτογράφηση μπορούν να φανούν σε άλλους κατά τη μεταφορά.
+pgp_rs_enc_invalid = Το μήνυμα δεν μπορεί να αποκρυπτογραφηθεί
+pgp_rs_enc_invalid_info = Αυτό το μήνυμα κρυπτογραφήθηκε πριν σας σταλεί, αλλά δεν μπορεί να αποκρυπτογραφηθεί.
+pgp_rs_enc_valid = Το μήνυμα είναι κρυπτογραφημένο
+pgp_rs_enc_valid_info = Αυτό το μήνυμα κρυπτογραφήθηκε πριν σας σταλεί. Η κρυπτογράφηση διασφαλίζει ότι το μήνυμα μπορεί να διαβαστεί μόνο από τους παραλήπτες για τους οποίους προοριζόταν.
+pgp_rs_field = Ασφάλεια μηνύματος
+pgp_rs_import = Εισαγωγή κλειδιού OpenPGP
+pgp_rs_open_to_unlock = Ανοίξτε το μήνυμα για να εισαγάγετε τη φράση πρόσβασης.
+pgp_rs_reply_not_quoted = Το αρχικό μήνυμα ήταν κρυπτογραφημένο, οπότε το κείμενό του δεν παρατίθεται εδώ.
+pgp_cm_encrypt = Κρυπτογράφηση
+pgp_cm_sign = Ψηφιακή υπογραφή
+pgp_e2e_title = Κρυπτογράφηση από άκρο σε άκρο
+acct_e2e_button = &Κρυπτογράφηση από άκρο σε άκρο...
+pgp_e2e_none = Να μη χρησιμοποιείται το OpenPGP για αυτή την ταυτότητα.
+pgp_e2e_disable = Απενεργοποίηση κρυπτογράφησης για νέα μηνύματα
+pgp_e2e_enable = Ενεργοποίηση κρυπτογράφησης για νέα μηνύματα
+pgp_e2e_enable_info = Θα μπορείτε να απενεργοποιείτε την κρυπτογράφηση για μεμονωμένα μηνύματα.
+pgp_e2e_sign = Υπογραφή μη κρυπτογραφημένων μηνυμάτων
+pgp_e2e_signing_info = Μια ψηφιακή υπογραφή επιτρέπει στους παραλήπτες να επαληθεύσουν ότι το μήνυμα στάλθηκε από εσάς και ότι το περιεχόμενό του δεν άλλαξε. Τα κρυπτογραφημένα μηνύματα υπογράφονται πάντα από προεπιλογή.
+pgp_e2e_autocrypt = Αποστολή δημόσιων κλειδιών OpenPGP στις κεφαλίδες του email για συμβατότητα με το Autocrypt
+pgp_not_set_up = Δεν έχετε ρυθμιστεί για αποστολή κρυπτογραφημένων από άκρο σε άκρο μηνυμάτων από το {addr}.
+pgp_cannot_encrypt = Αδυναμία κρυπτογράφησης
+pgp_do_you_accept = Αποδέχεστε αυτό το κλειδί για επαλήθευση ψηφιακών υπογραφών και για κρυπτογράφηση μηνυμάτων;
+pgp_searching = Αναζήτηση…
+pgp_no_key_found = Δεν βρήκαμε κανένα χρησιμοποιήσιμο κλειδί που να ταιριάζει με τα καθορισμένα κριτήρια αναζήτησης.
+pgp_source_autocrypt = Κεφαλίδα Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = διακομιστής κλειδιών
+pgp_discover = &Εύρεση κλειδιών στο διαδίκτυο
+pgp_cm_attach_key = Επισύναψη του δημόσιου κλειδιού μου
+pgp_e2e_key_label = Προσωπικό κλειδί για {address}
+pgp_e2e_auto = Αυτόματο: το προσωπικό σας κλειδί για αυτή τη διεύθυνση
+pgp_e2e_no_key = Το ZBox δεν έχει προσωπικό κλειδί OpenPGP για το {address}. Δημιουργήστε ένα στο Εργαλεία, Διαχείριση κλειδιών OpenPGP.
+pgp_e2e_new_messages = Κρυπτογράφηση για νέα μηνύματα
+pgp_e2e_key_missing = Το κλειδί {keyid} δεν βρέθηκε
+pgp_missing_keys = Αυτοί οι παραλήπτες δεν έχουν χρησιμοποιήσιμο, αποδεκτό κλειδί:\n\n{addresses}\n\nΤο μήνυμα δεν μπορεί να σταλεί κρυπτογραφημένο.
+pgp_send_unencrypted = &Αποστολή χωρίς κρυπτογράφηση
+pgp_collected_found = Βρέθηκαν κλειδιά για αυτούς τους παραλήπτες σε αλληλογραφία που σας έστειλαν:
+pgp_lookup_q = Να αναζητηθούν online κλειδιά για αυτούς τους παραλήπτες;\n\n{addresses}\n\nΑυτό στέλνει τις διευθύνσεις τους στο keys.openpgp.org και στους δικούς τους τομείς αλληλογραφίας.
+pgp_found_online = Κλειδιά που βρέθηκαν στο διαδίκτυο:
+pgp_source = Πηγή: {source}
+pgp_discover_prompt = Εισαγάγετε μια διεύθυνση email. Το ZBox αναζητά τα κλειδιά OpenPGP της στο Web Key Directory του τομέα αλληλογραφίας της και στο keys.openpgp.org.
+pgp_discover_bad = Εισαγάγετε ολόκληρη τη διεύθυνση email, όπως name@example.com.
+pgp_keys_unreadable = Τα κλειδιά OpenPGP δεν μπόρεσαν να ανοιχτούν: {error}
+pgp_rs_why_no_key = Το μυστικό κλειδί που απαιτείται για την αποκρυπτογράφηση αυτού του μηνύματος δεν είναι διαθέσιμο.
+pgp_rs_why_unknown = Υπάρχουν άγνωστα προβλήματα με αυτό το κρυπτογραφημένο μήνυμα.
+pgp_rs_hidden_subject = Κρυπτογραφημένο μήνυμα
+pgp_rs_why_passphrase = Η φράση πρόσβασης του κλειδιού σας δεν εισήχθη. Ανοίξτε ξανά το μήνυμα για να την εισαγάγετε.
+pgp_rs_why_unavailable = Το OpenPGP δεν είναι διαθέσιμο σε αυτό το αντίγραφο του ZBox.
+pgp_rs_why_fetch = Το μήνυμα δεν μπόρεσε να ληφθεί από τον διακομιστή για αποκρυπτογράφηση. Ανοίξτε το ξανά για να δοκιμάσετε άλλη μία φορά.
+pgp_rs_import_hint = Για να το διαβάσετε, εισαγάγετε στο ZBox το μυστικό κλειδί σας για αυτό το μήνυμα.
+
+[errors]
+language_restart_failed = Το ZBox δεν μπόρεσε να επανεκκινήσει:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Δεν ήταν δυνατό το άνοιγμα προγράμματος αλληλογραφίας για το {address}.
+
+wizard_test_failed = Η σύνδεση απέτυχε:\n\n{error}
+
+contacts_import_unreadable = Δεν ήταν δυνατή η ανάγνωση αυτού του αρχείου.\n\n{error}
+contacts_export_unwritable = Δεν ήταν δυνατή η εγγραφή αυτού του αρχείου.\n\n{error}
+
+attach_unreadable = Δεν ήταν δυνατή η ανάγνωση του συνημμένου {path}:\n{error}
+send_failed = Δεν ήταν δυνατή η αποστολή του μηνύματος.\n\n{error}
+draft_attach_unreadable = Δεν ήταν δυνατή η ανάγνωση του συνημμένου {path}:\n{error}\n\nΤο προσχέδιο δεν αποθηκεύτηκε.
+draft_save_failed = Δεν ήταν δυνατή η αποθήκευση του προσχεδίου.\n\n{error}
+
+clipboard_unavailable = Το πρόχειρο δεν μπόρεσε να ανοίξει.
+open_link_failed = Δεν ήταν δυνατό το άνοιγμα του προγράμματος περιήγησης για:\n{url}
+
+master_password_mismatch = Τα δύο πλαίσια νέου κύριου κωδικού πρόσβασης δεν ταιριάζουν.
+master_password_required = Εισαγάγετε έναν κύριο κωδικό πρόσβασης ή πατήστε Άκυρο.
+master_password_not_set = Ο κύριος κωδικός πρόσβασης δεν μπόρεσε να οριστεί: {error}
+master_password_not_here = Ο κύριος κωδικός πρόσβασης δεν μπορεί να αλλάξει από εδώ.
+
+attachment_save_failed = Δεν ήταν δυνατή η αποθήκευση του συνημμένου.\n\n{error}
+attachments_save_failed = Δεν ήταν δυνατή η αποθήκευση των συνημμένων.\n\n{error}
+print_failed = Δεν ήταν δυνατή η εκτύπωση του μηνύματος. Ελέγξτε ότι έχει ρυθμιστεί εκτυπωτής.
+print_preview_failed = Δεν ήταν δυνατό το άνοιγμα της προεπισκόπησης εκτύπωσης. Ελέγξτε ότι έχει ρυθμιστεί εκτυπωτής.
+
+related_search_failed = Δεν ήταν δυνατή η αναζήτηση σχετικών μηνυμάτων.\n\n{error}
+search_failed = Η αναζήτηση απέτυχε.\n\n{error}
+
+unlock_methods_no_config_folder = Το ZBox δεν βρήκε τον φάκελο διαμόρφωσής του, οπότε οι μέθοδοι ξεκλειδώματος δεν μπορούν να διαχειριστούν από εδώ.
+shortcut_no_folder = Το ZBox δεν μπόρεσε να βρει τον δικό του φάκελο, οπότε δεν μπορεί να δημιουργηθεί συντόμευση από εδώ.
+shortcut_failed_settings = Η συντόμευση επιφάνειας εργασίας δεν μπόρεσε να δημιουργηθεί:\n\n{error}
+
+unlock_method_failed = Το {what} δεν λειτούργησε.\n\n{error}
+unlock_check_failed = Ο κύριος κωδικός πρόσβασης δεν μπόρεσε να ελεγχθεί.\n\n{error}
+unlock_password_wrong = Ο κύριος κωδικός πρόσβασης δεν είναι σωστός.
+unlock_add_failed = Το {what} δεν μπόρεσε να προστεθεί.\n\n{error}
+unlock_passkey_setup_failed = Το κλειδί πρόσβασης δεν μπόρεσε να ρυθμιστεί σε αυτόν τον υπολογιστή, οπότε τίποτα δεν άλλαξε.\n\n{error}
+unlock_method_test_failed = Αυτή η μέθοδος δεν λειτούργησε.\n\n{error}
+
+account_list_unreadable = Το ZBox δεν μπόρεσε να ανοίξει τη λίστα λογαριασμών σας.\n\n{error}\n\nΔεν φορτώθηκε κανένας λογαριασμός και το αρχείο δεν άλλαξε, οπότε δεν χάθηκε τίποτα. Η προσθήκη, η επεξεργασία και η αφαίρεση λογαριασμών απορρίπτονται μέχρι να μπορέσει να διαβαστεί.
+account_list_no_accounts = Το ZBox δεν μπόρεσε να ανοίξει τη λίστα λογαριασμών σας σε αυτή τη συνεδρία ({error}), οπότε δεν υπάρχουν λογαριασμοί για επιλογή. Δεν χάθηκε τίποτα και δεν άλλαξε τίποτα. Κλείστε το ZBox και ξεκινήστε το ξανά και εισαγάγετε τον κύριο κωδικό πρόσβασής σας όταν σας ζητηθεί.
+open_message_failed = Δεν ήταν δυνατό το άνοιγμα του μηνύματος.\n\n{error}
+filters_list_failed = Δεν ήταν δυνατή η λίστα των μηνυμάτων στον φάκελο {folder}.\n\n{error}
+filters_move_failed = Δεν ήταν δυνατή η μετακίνηση των φιλτραρισμένων μηνυμάτων.\n\n{error}
+cache_clear_failed = Η προσωρινή μνήμη δεν μπόρεσε να εκκαθαριστεί.\n\n{error}
+folder_create_failed = Δεν ήταν δυνατή η δημιουργία του φακέλου.\n\n{error}
+folder_rename_failed = Δεν ήταν δυνατή η μετονομασία του φακέλου.\n\n{error}
+folder_delete_failed = Δεν ήταν δυνατή η διαγραφή του φακέλου.\n\n{error}
+folder_subscribe_failed = Δεν ήταν δυνατή η συνδρομή στον φάκελο.\n\n{error}
+folder_unsubscribe_failed = Δεν ήταν δυνατή η ακύρωση συνδρομής από τον φάκελο.\n\n{error}
+saved_open_failed = Δεν ήταν δυνατό το άνοιγμα του αρχείου.\n\n{error}
+saved_parse_failed = Δεν ήταν δυνατή η ανάλυση αυτού του αρχείου ως μηνύματος email.\n\n{error}
+save_file_failed = Δεν ήταν δυνατή η αποθήκευση του αρχείου.\n\n{error}
+save_fetch_failed = Δεν ήταν δυνατή η λήψη του μηνύματος για αποθήκευση.\n\n{error}
+empty_trash_failed = Δεν ήταν δυνατό το άδειασμα των Απορριμμάτων.\n\n{error}
+empty_junk_failed = Δεν ήταν δυνατό το άδειασμα των Ανεπιθύμητων.\n\n{error}
+export_write_failed = Δεν ήταν δυνατή η εγγραφή του αρχείου εξαγωγής.\n\n{error}
+import_read_failed = Δεν ήταν δυνατή η ανάγνωση αυτού του αρχείου ως εξαγωγής του ZBox.\n\n{error}
+import_not_export = Αυτό το αρχείο δεν μοιάζει με εξαγωγή του ZBox.\n\n{error}
+search_open_failed = Δεν ήταν δυνατό το άνοιγμα αυτού του μηνύματος.
+related_load_failed = Δεν ήταν δυνατή η φόρτωση αυτού του μηνύματος.\n\n{error}
+reply_load_failed = Δεν ήταν δυνατή η φόρτωση του μηνύματος προς απάντηση.\n\n{error}
+forward_load_failed = Δεν ήταν δυνατή η φόρτωση του μηνύματος προς προώθηση.\n\n{error}
+action_failed = Δεν ήταν δυνατή η ολοκλήρωση αυτής της ενέργειας.\n\n{error}
+undo_failed = Δεν ήταν δυνατή η αναίρεση: {label}.\n\n{error}
+copy_failed = Δεν ήταν δυνατή η αντιγραφή του μηνύματος.\n\n{error}
+delete_failed = Δεν ήταν δυνατή η διαγραφή του μηνύματος.\n\n{error}
+archive_failed = Δεν ήταν δυνατή η αρχειοθέτηση του μηνύματος.\n\n{error}
+master_password_not_changed = Ο κύριος κωδικός πρόσβασης δεν μπόρεσε να αλλάξει: {error}
+shortcut_failed_startup = Η συντόμευση επιφάνειας εργασίας δεν μπόρεσε να δημιουργηθεί:\n\n{error}\n\nΤο ZBox θα συνεχίσει να ξεκινά. Μπορείτε να δοκιμάσετε ξανά αργότερα από τις Ρυθμίσεις.
+account_locked_action = Το ZBox δεν μπορεί να %s. Η λίστα λογαριασμών δεν μπόρεσε να ανοίξει σε αυτή τη συνεδρία (%s) και τίποτα δεν άλλαξε. Κλείστε το ZBox και ξεκινήστε το ξανά και εισαγάγετε τον κύριο κωδικό πρόσβασής σας αν σας ζητηθεί.
+send_tls_mismatch = Το μήνυμα δεν μπόρεσε να σταλεί. Ο διακομιστής εξερχομένων απάντησε χωρίς κρυπτογράφηση, οπότε η κρυπτογράφηση εξερχομένων δεν ταιριάζει με τη θύρα. Στο Εργαλεία, Ρυθμίσεις λογαριασμού και ταυτοτήτων, χρησιμοποιήστε STARTTLS για τη θύρα 587 ή SSL/TLS για τη θύρα 465 και μετά στείλτε ξανά.\n\n{error}
+mark_folder_read_failed = Δεν ήταν δυνατή η επισήμανση του φακέλου ως αναγνωσμένου.\n\n{error}
+update_failed = Η ενημέρωση δεν μπόρεσε να ληφθεί, οπότε τίποτα δεν άλλαξε.\n\n{error}
+update_rolled_back = Η ενημέρωση δεν μπόρεσε να ξεκινήσει, οπότε επαναφέρθηκε η προηγούμενη έκδοση.
+attachment_open_failed = Δεν ήταν δυνατό το άνοιγμα του συνημμένου.\n\n{error}
+headers_failed = Δεν ήταν δυνατή η φόρτωση των κεφαλίδων του μηνύματος.\n\n{error}
+wizard_ms_sign_in_first = Συνδεθείτε με τη Microsoft πριν συνεχίσετε. Χρησιμοποιήστε ένα από τα δύο κουμπιά σύνδεσης σε αυτή τη σελίδα.
+wizard_provider_unsupported = Το ZBox δεν μπορεί να συνδεθεί σε αυτόν τον πάροχο. Η σημείωση σε αυτή τη σελίδα εξηγεί γιατί. Επιστρέψτε και χρησιμοποιήστε διαφορετική διεύθυνση email ή ακυρώστε.
+acct_ms_sign_in_first = Συνδεθείτε με τη Microsoft πριν την αποθήκευση ή επιλέξτε Κωδικός πρόσβασης ως μέθοδο σύνδεσης.
+ms_sign_in_again = Χρειάζεται ξανά σύνδεση Microsoft για τον λογαριασμό {account}. Ανοίξτε τις Ρυθμίσεις λογαριασμού και ταυτοτήτων και συνδεθείτε εκεί.
+graph_pgp_too_large = Αυτό το κρυπτογραφημένο ή υπογεγραμμένο μήνυμα είναι μεγαλύτερο από όσο επιτρέπει η Microsoft για τέτοια αλληλογραφία, περίπου 3 MB. Στείλτε μικρότερα συνημμένα ή απενεργοποιήστε την Κρυπτογράφηση και την Ψηφιακή υπογραφή για αυτό το μήνυμα.
+empty_trash_all_failed = Δεν ήταν δυνατό το άδειασμα των Απορριμμάτων για: {accounts}
+
+[help]

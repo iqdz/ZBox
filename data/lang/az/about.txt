@@ -1,0 +1,16 @@
+ZBox
+Müəllif: Harith Alhamdani
+
+ZBox portativ, çevik, təhlükəsiz və tam əlçatan e-poçt müştərisidir. Şəxsi istifadə üçün pulsuzdur və sistem resurslarına az yük salır. O, istifadə edən hər kəsə, o cümlədən görmə qabiliyyəti olmayan və ya zəif olan istifadəçilərə, adətən mövcud olan şişkin və ləng variantlara real, funksiyalarla zəngin alternativ təqdim etmək üçün yaradılıb. Qapının arxasında ZBox güclü Himalaya CLI e-poçt müştərisi ilə işləyir.
+
+Məxfilik və təhlükəsizlik
+ZBox izləyici və reklam bloklayıcısı ilə birlikdə gəlir (standart olaraq aktivdir), bundan əlavə istəyə görə spam poçt qaydaları və fişinq keçidlərinin yoxlayıcısı da var. Təhlükəsiz daşınma üçün o, Əsas parol qorumasından istifadə edir: tətbiq qovluğu bu parol olmadan başqa kompüterə kopyalanarsa, bağlı hesablarınıza giriş bloklanır. ZBox-u yeni maşına köçürməyi planlaşdırırsınızsa, əvvəlcə burada əsas parol təyin etdiyinizə əmin olun. O, həmçinin Windows Hello giriş açarlarını (barmaq izi, PIN və ya üz tanıma) və müasir aparat təhlükəsizlik açarlarını dəstəkləyir.
+
+Tanış istifadə rahatlığı
+Digər e-poçt müştərilərindən keçidi problemsiz etmək üçün ZBox dostcasına, çevik qısayol düymələri təqdim edir. Bir neçə qısayol çox vaxt eyni əməliyyatı yerinə yetirir; məsələn, həm Alt+S, həm də Ctrl+Enter mesajı göndərir. Tam siyahıya Kömək, Klaviatura qısayolları bölməsində baxa bilərsiniz.
+
+Hesabın qurulması
+Outlook.com, Hotmail, Live və Microsoft 365 hesabları Microsoft hesabınızla, brauzerdə və ya kodla daxil olur. Gmail hesabınızı standart parolunuzdan istifadə etmək əvəzinə tətbiq parolu yaratmaqla bağlaya bilərsiniz (təlimatlar üçün aşağıdakı düyməyə baxın).
+
+Lisenziyalar və təşəkkürlər
+ZBox lisenziyasını oxumaq və onu mümkün edən üçüncü tərəf komponentlərinə baxmaq üçün aşağıdakı Lisenziyaya bax düyməsini basın. Bunlara Himalaya, StevenBlack hosts və EasyPrivacy bloklama siyahıları, Phishing.Database siyahısı və (qurulmuş nüsxədə) Python, wxPython, imapclient, pywin32, keyring və ekran oxuyucusu müştəri kitabxanaları ilə accessible_output2 daxildir.

@@ -1,0 +1,16 @@
+ZBox
+Deur Harith Alhamdani
+
+ZBox is 'n draagbare, vinnige, veilige en ten volle toeganklike e-poskliënt. Dit is gratis vir persoonlike gebruik en lig op stelselbronne. Dit is geskep om elkeen wat dit gebruik, insluitend blinde en swaksiende gebruikers, 'n egte, funksie-ryke alternatief te bied vir die opgeblaasde en trae opsies wat gewoonlik beskikbaar is. Onder die enjinkap word ZBox deur die robuuste Himalaya CLI-e-poskliënt aangedryf.
+
+Privaatheid en sekuriteit
+ZBox kom met 'n spoorder- en advertensieblokkeerder (by verstek aan), saam met opsionele gemorsposreëls en 'n uitvissingskakel-kontroleerder. Vir veilige draagbaarheid gebruik dit Hoofwagwoord-beskerming: as die toepassingvouer sonder hierdie wagwoord na 'n ander rekenaar gekopieer word, word toegang tot jou gekoppelde rekeninge geblokkeer. As jy beplan om ZBox na 'n nuwe masjien te skuif, maak seker jy stel eers hier 'n hoofwagwoord. Dit ondersteun ook Windows Hello-toegangsleutels (vingerafdruk, PIN of gesigherkenning) en moderne hardeware-sekuriteitsleutels.
+
+Bekende gebruiksgemak
+Om die oorgang van ander e-poskliënte naatloos te maak, het ZBox vriendelike, buigsame sleutelbordkortpaaie. Verskeie kortpaaie voer dikwels dieselfde aksie uit; byvoorbeeld, beide Alt+S en Ctrl+Enter stuur 'n boodskap. Jy kan die volledige lys onder Hulp, Sleutelbordkortpaaie sien.
+
+Rekeningopstelling
+Outlook.com-, Hotmail-, Live- en Microsoft 365-rekeninge meld aan met jou Microsoft-rekening, in jou blaaier of met 'n kode. Jy kan jou Gmail-rekening koppel deur 'n Toepassingwagwoord te genereer in plaas van jou standaardwagwoord te gebruik (sien die knoppie hieronder vir instruksies).
+
+Lisensies en erkennings
+Druk Bekyk lisensie hieronder om ZBox se lisensie te lees en die derdeparty-komponente te sien wat dit moontlik maak. Dit sluit Himalaya, die StevenBlack hosts- en EasyPrivacy-blokkeerlyste, die Phishing.Database-lys, en (in 'n saamgestelde kopie) Python, wxPython, imapclient, pywin32, keyring en accessible_output2 met sy skermleser-kliëntbiblioteke in.

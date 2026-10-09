@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = မြန်မာ
+code = my
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = မက်ဆေ့ချ်ကို ပို့ပြီးပါပြီ။
+draft_saved = မူကြမ်းကို သိမ်းပြီးပါပြီ။
+signature_inserted = လက်မှတ်ကို ထည့်ပြီးပါပြီ။
+signature_none = ဤအကောင့်တွင် လက်မှတ် မရှိပါ။
+signature_saved = လက်မှတ်ကို သိမ်းပြီးပါပြီ။
+signature_not_saved = လက်မှတ်ကို မသိမ်းထားပါ။
+pasted_as_quotation = ကိုးကားချက်အဖြစ် ကူးထည့်ပြီးပါပြီ။
+clipboard_empty = ကလစ်ဘုတ်တွင် ဘာမျှ မရှိပါ။
+word_count = စကားလုံး {words} လုံး၊ စာလုံး {characters} လုံး။
+report_copied = အစီရင်ခံစာကို ကူးယူပြီးပါပြီ။
+compose_tab_needed = ထိုအမိန့်အတွက် ရေးသားရန် တက်ဘ် လိုအပ်ပါသည်။
+attach_file_instead = ချထားသော ဖိုင်များကို မက်ဆေ့ချ်စာသားထဲ မထည့်ပါ။ တစ်ခုပို့ရန် ဖိုင်ပူးတွဲရန် ကို သုံးပါ။
+
+# Formatting in the message body
+formatting_here = ဤနေရာတွင် ဖော်မက်: {formatting}။
+no_formatting_here = ဤနေရာတွင် ဖော်မက် မရှိပါ၊ ရိုးရိုးစာသား။
+
+# Spelling
+nothing_to_check = စစ်ဆေးရန် ဘာမျှ မရှိပါ။
+no_misspellings = စာလုံးပေါင်းအမှား မရှိပါ။
+spelling_dictionary_unavailable = စာလုံးပေါင်း အဘိဓာန် မရနိုင်ပါ။
+next_misspelling_first = ဦးစွာ နောက်စာလုံးပေါင်းအမှားကို သုံးပါ။
+word_added = {word} ကို အဘိဓာန်သို့ ထည့်ပြီးပါပြီ။
+word_not_added = {word} ကို မထည့်နိုင်ပါ။
+corrections_applied_one = ပြင်ဆင်ချက် ၁ ခု အသုံးပြုပြီးပါပြီ။
+corrections_applied_many = ပြင်ဆင်ချက် {count} ခု အသုံးပြုပြီးပါပြီ။
+corrections_applied_partly = {total} ခုအနက် ပြင်ဆင်ချက် {applied} ခု အသုံးပြုပြီးပါပြီ။ ကျန်သည်များကို ပယ်ချခဲ့သည်၊ မှတ်တမ်းကို ကြည့်ပါ။
+occurrences_replaced_one = နေရာ ၁ ခု အစားထိုးပြီးပါပြီ။
+occurrences_replaced_many = နေရာ {count} ခု အစားထိုးပြီးပါပြီ။
+
+# Reading mail
+message_did_not_open = မက်ဆေ့ချ် မပွင့်ပါ။ ဆာဗာက မတုံ့ပြန်ပါ။ ထပ်ကြိုးစားရန် Enter နှိပ်ပါ။
+thread_open = ဤချည်မျှင်တွင် {messages}။ ပိတ်ရန် ထပ်နှိပ်ပါ။
+no_thread_selected = ချည်မျှင် မရွေးထားပါ။
+thread_watched = ချည်မျှင်ကို စောင့်ကြည့်နေပါသည်။
+thread_not_watched = ချည်မျှင်ကို မစောင့်ကြည့်တော့ပါ။
+thread_ignored = ချည်မျှင်ကို လျစ်လျူရှုထားပါသည်။
+thread_not_ignored = ချည်မျှင်ကို မလျစ်လျူရှုတော့ပါ။
+none_found = ဘာမျှ မတွေ့ပါ။
+refreshing_this_folder = ဤဖိုင်တွဲကို ပြန်လည်စတင်နေပါသည်။
+refreshing_all_accounts = အကောင့်အားလုံးကို ပြန်လည်စတင်နေပါသည်။
+message_view_html = မက်ဆေ့ချ်မြင်ကွင်း: HTML (ပုံဖော်ထားသော)။
+message_view_text = မက်ဆေ့ချ်မြင်ကွင်း: စာသား။
+html_view_still_loading = မက်ဆေ့ချ်ကို ဆက်လက် ဖွင့်နေဆဲဖြစ်သည်။ Escape က ပိတ်ပေးသည်။
+message_still_opening = မက်ဆေ့ချ်ကို ဖွင့်နေပါသည်။ ဆာဗာ နှေးနေသည်။
+remote_content_blocked = အဝေးမှ အကြောင်းအရာကို ပိတ်ဆို့ထားသည်။
+remote_content_unblocked = အဝေးမှ အကြောင်းအရာ ပိတ်ဆို့မှုကို ဖယ်ရှားပြီးပါပြီ။
+remote_content_already_showing = ဤမက်ဆေ့ချ်တွင် အဝေးမှ အကြောင်းအရာကို ပြထားပြီးဖြစ်သည်။
+archived = မော်ကွန်းတင်ပြီးပါပြီ။
+copied_to_folder = {to_folder} သို့ ကူးယူပြီးပါပြီ။
+deleted_one = မက်ဆေ့ချ်ကို အပြီးအပိုင် ဖျက်ပြီးပါပြီ။
+deleted_many = မက်ဆေ့ချ် {count} ခုကို အပြီးအပိုင် ဖျက်ပြီးပါပြီ။
+trashed_one = မက်ဆေ့ချ်ကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ။
+trashed_many = မက်ဆေ့ချ် {count} ခုကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ။
+
+# Accounts and new mail
+no_account_yet = ခုန်သွားရန် အကောင့် မရှိသေးပါ။
+inbox_landed = {name} ၏ ဝင်စာပုံး။
+account_enabled = {name} ကို ဖွင့်ပြီးပါပြီ။
+auto_check_paused = {account} အတွက် အလိုအလျောက်စစ်ဆေးမှုကို ခဏရပ်ထားသည်။
+auto_check_resumed = {account} အတွက် အလိုအလျောက်စစ်ဆေးမှုကို ဖွင့်ပြီးပါပြီ။
+account_disabled = {name} ကို ပိတ်ပြီးပါပြီ။
+new_mail_one = {name} အတွက် မက်ဆေ့ချ်အသစ် ၁ စောင်။
+new_mail_many = {name} အတွက် မက်ဆေ့ချ်အသစ် {count} စောင်။
+refresh_all_done_one = အကောင့် ၁ ခုကို ပြန်လည်စတင်ပြီးပါပြီ။
+refresh_all_done_many = အကောင့် {count} ခုကို ပြန်လည်စတင်ပြီးပါပြီ။
+refresh_all_done_failures = အကောင့် {count} ခုကို ပြန်လည်စတင်ပြီးပါပြီ၊ {failed} ခု မအောင်မြင်ပါ။
+refresh_all_done_failures_one = အကောင့် {count} ခုကို ပြန်လည်စတင်ပြီးပါပြီ၊ {failed} ခု မအောင်မြင်ပါ။
+
+# The sender of the message in view
+sender_address_copied = {sender}။ လိပ်စာကို ကူးယူပြီးပါပြီ။
+sender_no_address = {sender}။ ကူးယူရန် လိပ်စာ မရှိပါ။
+clipboard_not_opened = {sender}။ ကလစ်ဘုတ်ကို မဖွင့်နိုင်ပါ။
+
+# The signature editor
+signature_page_formatted = ဖော်မက်လုပ်ထားသည်။ ဤအရာကိုပင် သိမ်းမည်။
+signature_page_html = HTML အရင်းအမြစ်။ ဤအရာကိုပင် သိမ်းမည်။
+signature_page_html_still_wins = ဖော်မက်လုပ်ထားသည်။ HTML အရင်းအမြစ်ကိုပင် ဆက်လက် သိမ်းမည်။
+
+# Background work
+phishing_list_updating = ဖစ်ရှင်းစာရင်းကို နောက်ခံတွင် အပ်ဒိတ်လုပ်နေပါသည်။
+cache_cleared = ကက်ရှ်ဖိုင် {files} ခုကို ရှင်းလင်းပြီးပါပြီ၊ {size} MB။
+hotkeys_diagnostic_on = ဖြတ်လမ်းကီး စစ်ဆေးမှု ဖွင့်ထားသည်၊ အမှန်ခြစ်ထားသည်
+hotkeys_diagnostic_off = ဖြတ်လမ်းကီး စစ်ဆေးမှု ပိတ်ထားသည်၊ အမှန်ခြစ်ဖြုတ်ထားသည်
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = မော်ကွန်းတင်ရန်
+action_delete = ဖျက်ရန်
+action_delete_permanently = အပြီးအပိုင် ဖျက်ရန်
+action_mark_as_junk = အမှိုက်စာအဖြစ် မှတ်ရန်
+action_mark_as_not_junk = အမှိုက်စာမဟုတ်ဟု မှတ်ရန်
+action_move_to = ရွှေ့ရန်
+action_copy_to = ကူးယူရန်
+action_mark_message = မက်ဆေ့ချ်ကို မှတ်ရန်
+action_undo = နောက်ပြန်ရန်
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} ကို နောက်ပြန်လိုက်ပါပြီ။
+undo_done_many = မက်ဆေ့ချ် {count} ခုအတွက် {action} ကို နောက်ပြန်လိုက်ပါပြီ။
+junk_marked_one = အမှိုက်စာအဖြစ် မှတ်ပြီးပါပြီ။
+junk_marked_many = မက်ဆေ့ချ် {count} ခုကို အမှိုက်စာအဖြစ် မှတ်ပြီးပါပြီ။
+junk_no_new_sender = ပို့သူအသစ် မည်သူ့ကိုမျှ မပိတ်ဆို့ပါ - ပိတ်ဆို့ပြီးသား၊ စာပို့စာရင်း၊ သို့မဟုတ် သင့်ကိုယ်ပိုင်လိပ်စာတစ်ခု ဖြစ်သည်။
+not_junk_marked_one = အမှိုက်စာမဟုတ်ဟု မှတ်ပြီးပါပြီ။
+not_junk_marked_many = မက်ဆေ့ချ် {count} ခုကို အမှိုက်စာမဟုတ်ဟု မှတ်ပြီးပါပြီ။
+moved_to_one = {to_folder} သို့ ရွှေ့ပြီးပါပြီ။
+moved_to_many = မက်ဆေ့ချ် {count} ခုကို {to_folder} သို့ ရွှေ့ပြီးပါပြီ။
+copied_to_many = မက်ဆေ့ချ် {count} ခုကို {to_folder} သို့ ကူးယူပြီးပါပြီ။
+marked_read = ဖတ်ပြီးအဖြစ် မှတ်ပြီးပါပြီ။
+marked_unread = မဖတ်ရသေးအဖြစ် မှတ်ပြီးပါပြီ။
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} ခုအနက် {completed} ခုပြီးနောက် ပယ်ဖျက်ခဲ့သည်။ အောင်မြင် {succeeded}၊ မအောင်မြင် {failed}။
+bulk_failed_one = မက်ဆေ့ချ် ၁ စောင်တွင် {failed} ခု {done} မအောင်မြင်ပါ။
+bulk_failed_many = မက်ဆေ့ချ် {total} စောင်တွင် {failed} ခု {done} မအောင်မြင်ပါ။
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = စာလုံးမည်း
+format_word_italic = စာလုံးစောင်း
+format_word_strike = မျဉ်းကြောင်းဖြတ်
+format_word_href = လင့်ခ်
+format_word_bullet = ကျည်ဆံပွင့်စာရင်း
+format_word_number = နံပါတ်စာရင်း
+format_word_quote = ကိုးကားချက်
+format_word_code = ကုဒ်
+format_word_heading1 = ခေါင်းစီး
+format_applied = {formatting} ကို အသုံးပြုပြီးပါပြီ။
+format_inserted = {formatting} ကို ထည့်ပြီးပါပြီ။
+format_not_available = ရိုးရိုးမက်ဆေ့ချ်ကိုယ်ထည်တွင် {formatting} မရနိုင်ပါ။
+format_on = {formatting} ဖွင့်
+format_off = {formatting} ပိတ်
+link_applied = လင့်ခ်ကို အသုံးပြုပြီးပါပြီ။
+link_applied_to_selection = ရွေးထားသည့်အရာတွင် လင့်ခ်ကို အသုံးပြုပြီးပါပြီ။
+plain_body_formatting = ရိုးရိုးမက်ဆေ့ချ်ကိုယ်ထည်သည် ၎င်း၏ ဖော်မက်ကို တဂ်များအဖြစ် ပြသည်။
+
+# Reaching either end of a thread
+thread_edge_first = ဤချည်မျှင်၏ ပထမဆုံး မက်ဆေ့ချ်။ ပိတ်ရန် ထပ်နှိပ်ပါ။
+thread_edge_last = ဤချည်မျှင်၏ နောက်ဆုံး မက်ဆေ့ချ်။ ပိတ်ရန် ထပ်နှိပ်ပါ။
+jump_unified_inbox = ပေါင်းစည်းထားသော ဝင်စာပုံး။
+remote_none = ဤမက်ဆေ့ချ်တွင် အဝေးမှ အကြောင်းအရာ မရှိပါ။
+sender_none = ဤမက်ဆေ့ချ်တွင် ပို့သူ မရှိပါ။
+sender_name_no_address = %s၊ လိပ်စာ မရှိပါ
+signature_not_switched = လက်မှတ် မပြောင်းပါ။ ဤအကောင့်၏ လက်မှတ်ကို ထည့်ရန် Ctrl+Shift+S နှိပ်ပါ။
+signature_removed_no_signature = လက်မှတ်ကို ဖယ်ရှားပြီးပါပြီ။ ဤအကောင့်တွင် မရှိပါ။
+signature_switched = လက်မှတ်ကို ဤအကောင့်၏ လက်မှတ်သို့ ပြောင်းပြီးပါပြီ။
+spell_not_replaced = စကားလုံးကို အစားမထိုးနိုင်ပါ။
+spell_replaced_with = {word} ဖြင့် အစားထိုးပြီးပါပြီ။
+folder_marked_read = မက်ဆေ့ချ် {count} ခုကို ဖတ်ပြီးအဖြစ် မှတ်ပြီးပါပြီ။
+folder_no_unread = မဖတ်ရသေးသော မက်ဆေ့ချ် မရှိပါ။
+threads_all_collapsed = ချည်မျှင်အားလုံးကို ခေါက်ပြီးပါပြီ။
+threads_all_expanded = ချည်မျှင်အားလုံးကို ဖြန့်ပြီးပါပြီ။
+upd_percent = ရာခိုင်နှုန်း {percent}
+upd_download_done = ဒေါင်းလုဒ်ဆွဲပြီးပါပြီ။ အပ်ဒိတ်ကို ပြင်ဆင်နေပါသည်...
+upd_updated_to = ZBox ကို {version} သို့ အပ်ဒိတ်လုပ်ပြီးပါပြီ။
+header_copied = ကူးယူပြီးပါပြီ။
+headers_copied = ခေါင်းစီးအားလုံးကို ကူးယူပြီးပါပြီ။
+identity_copies_updated = ဤအထောက်အထားအတွက် မိတ္တူနှင့် လျှို့ဝှက်မိတ္တူကို အပ်ဒိတ်လုပ်ပြီးပါပြီ။
+signature_switched_identity = လက်မှတ်ကို ဤအထောက်အထား၏ လက်မှတ်သို့ ပြောင်းပြီးပါပြီ။
+signature_removed_identity = လက်မှတ်ကို ဖယ်ရှားပြီးပါပြီ။ ဤအထောက်အထားတွင် မရှိပါ။
+signature_not_switched_identity = လက်မှတ် မပြောင်းပါ။ ဤအထောက်အထား၏ လက်မှတ်ကို ထည့်ရန် Ctrl+Shift+S နှိပ်ပါ။
+signature_none_identity = ဤအထောက်အထားတွင် လက်မှတ် မရှိပါ။
+move_keys_no_selection = ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+move_keys_no_folders = ရွေးရန် ဖိုင်တွဲ မရှိသေးပါ။ ခဏနောက် ထပ်ကြိုးစားပါ။
+block_sender_done_one = {sender} ကို ပိတ်ဆို့ပြီးပါပြီ။ ၎င်း၏ မက်ဆေ့ချ်အသစ်များသည် အမှိုက်ပုံးသို့ သွားမည်။
+block_sender_done_many = ပို့သူ {count} ဦးကို ပိတ်ဆို့ပြီးပါပြီ။ ၎င်းတို့၏ မက်ဆေ့ချ်အသစ်များသည် အမှိုက်ပုံးသို့ သွားမည်။
+block_sender_already = {sender} ကို ပိတ်ဆို့ပြီးသားဖြစ်သည်။
+block_sender_own = မပိတ်ဆို့ပါ - ၎င်းသည် သင့်ကိုယ်ပိုင်လိပ်စာတစ်ခု ဖြစ်သည်။
+block_sender_list_unknown = မပိတ်ဆို့ပါ - ဤမက်ဆေ့ချ်သည် စာပို့စာရင်းမှ လာပြီး မည်သူပို့သည်ကို မပြောပါ။ စာရင်း၏လိပ်စာကို ပိတ်ဆို့လျှင် ၎င်းတွင်ပါသူအားလုံး ပိတ်ဆို့ခံရမည်။
+block_sender_moved = ပို့သူကို ပိတ်ဆို့ပြီးပါပြီ။ မက်ဆေ့ချ် {count} ခုကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ။
+block_senders_moved = ပို့သူ {senders} ဦးကို ပိတ်ဆို့ပြီးပါပြီ။ မက်ဆေ့ချ် {count} ခုကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ။
+unblock_sender_moved = ပို့သူ၏ ပိတ်ဆို့မှုကို ဖယ်ရှားပြီးပါပြီ။ မက်ဆေ့ချ် {count} ခုကို ဝင်စာပုံးသို့ ရွှေ့ပြီးပါပြီ။
+unblock_senders_moved = ပို့သူ {senders} ဦး၏ ပိတ်ဆို့မှုကို ဖယ်ရှားပြီးပါပြီ။ မက်ဆေ့ချ် {count} ခုကို ဝင်စာပုံးသို့ ရွှေ့ပြီးပါပြီ။
+unblock_sender_done = {sender} ၏ ပိတ်ဆို့မှုကို ဖယ်ရှားပြီးပါပြီ။
+unblock_sender_not_blocked = {sender} ကို မပိတ်ဆို့ထားပါ။
+pgp_cm_on = {name} ဖွင့်။
+pgp_cm_off = {name} ပိတ်။
+pgp_cm_identity = ကုဒ်ဝှက်ဆက်တင်များကို ဤအထောက်အထား၏ ဆက်တင်များသို့ ပြောင်းပြီးပါပြီ။
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = အပေါ်တွင် တစ်ခုခုရိုက်ပြီး Enter နှိပ်ပါ သို့မဟုတ် ရှာဖွေရန် ကို ရွေးပါ။
+search_no_account = ဦးစွာ အကောင့်တစ်ခု ထည့်ပါ။
+search_no_term = ရှာဖွေရန် စကားလုံးများ ရိုက်ပါ၊ သို့မဟုတ် ရက်စွဲ သို့မဟုတ် အမှန်ခြစ်ဘောက်စ်ကို ရွေးပါ။
+search_running = ရှာဖွေနေပါသည်...
+search_none = "{term}" အတွက် ကိုက်ညီမှု မရှိပါ။
+search_found_one = "{term}" အတွက် ကိုက်ညီမှု ၁ ခု။
+search_found_many = "{term}" အတွက် ကိုက်ညီမှု {count} ခု။
+search_bad_date = ရက်စွဲကို နှစ်-လ-ရက် ဟု ရိုက်ပါ၊ ဥပမာ 2025-12-31၊ ရွေးချယ်နိုင်သော အချိန် 14:30 ကဲ့သို့ ထည့်နိုင်သည်။
+search_bad_range = ရက်စွဲအပိုင်းအခြား၏ အဆုံးသည် အစထက် ပိုစောနေသည်။
+search_none_any = ကိုက်ညီသော မက်ဆေ့ချ် မရှိပါ။
+search_found_one_any = မက်ဆေ့ချ် ၁ စောင် တွေ့ပါသည်။
+search_found_many_any = မက်ဆေ့ချ် {count} စောင် တွေ့ပါသည်။
+search_failed = ရှာဖွေမှု မအောင်မြင်ပါ။
+
+# The related messages tab
+related_running = ရှာဖွေနေပါသည်...
+related_none = ဆက်စပ်မက်ဆေ့ချ် မတွေ့ပါ။
+related_found_one = ဆက်စပ်မက်ဆေ့ချ် ၁ စောင် တွေ့ပါသည်။
+related_found_many = ဆက်စပ်မက်ဆေ့ချ် {count} စောင် တွေ့ပါသည်။
+related_failed = ဆက်စပ်မက်ဆေ့ချ်များကို မရှာနိုင်ပါ။
+
+# Writing and sending
+sending_via = {sender} မှတစ်ဆင့် ပို့နေပါသည်...
+send_failed = ပို့ခြင်း မအောင်မြင်ပါ။ အသေးစိတ်အတွက် မှတ်တမ်းများကို ကြည့်ပါ။
+draft_autosaved = မူကြမ်းကို အလိုအလျောက် သိမ်းပြီးပါပြီ။
+draft_autosave_failed = မူကြမ်း အလိုအလျောက်သိမ်းခြင်း မအောင်မြင်ပါ။ အသေးစိတ်အတွက် မှတ်တမ်းများကို ကြည့်ပါ။
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = {sender} ထံမှ မက်ဆေ့ချ်များအတွက် အဝေးမှ အကြောင်းအရာကို ယခု ဖွင့်မည်။
+downloading_attachment = {filename} ကို ဒေါင်းလုဒ်ဆွဲနေပါသည်...
+downloading_attachments_one = ပူးတွဲဖိုင် ၁ ခုကို ဒေါင်းလုဒ်ဆွဲနေပါသည်...
+downloading_attachments_many = ပူးတွဲဖိုင် {count} ခုကို ဒေါင်းလုဒ်ဆွဲနေပါသည်...
+saved_to = {folder} တွင် သိမ်းပြီးပါပြီ
+attachment_download_failed = ပူးတွဲဖိုင် ဒေါင်းလုဒ်ဆွဲခြင်း မအောင်မြင်ပါ။
+
+# Getting mail onto the screen
+loading_folder = {account} အတွက် {folder} ကို ဖွင့်နေပါသည်...
+messages_in_folder = {folder} တွင် မက်ဆေ့ချ် {count} စောင်။
+messages_in_folder_cached = {folder} တွင် မက်ဆေ့ချ် {count} စောင် (နောက်ဆုံးထပ်တူကျသော မိတ္တူ၊ အပ်ဒိတ်လုပ်နေသည်...)
+no_offline_copy = {folder} ၏ အော့ဖ်လိုင်းမိတ္တူ မရှိသေးပါ။
+refresh_failed_cached = {folder} ကို ပြန်လည်စတင်၍ မရပါ - နောက်ဆုံးထပ်တူကျသော မိတ္တူကို ပြထားသည်။
+no_such_folder = ဤအကောင့်တွင် {folder} ဖိုင်တွဲ မရှိပါ။
+load_failed = မက်ဆေ့ချ်များကို မဖွင့်နိုင်ပါ။ အသေးစိတ်အတွက် မှတ်တမ်းများကို ကြည့်ပါ။
+no_more_to_load = ဤဖိုင်တွဲတွင် ထပ်ဖွင့်ရန် မက်ဆေ့ချ် မရှိတော့ပါ။
+loading_more = {folder} တွင် မက်ဆေ့ချ်ပိုမိုဖွင့်နေပါသည်...
+more_loaded = မက်ဆေ့ချ် {count} စောင် ထပ်ဖွင့်ပြီးပါပြီ။
+no_more_messages = ဤဖိုင်တွဲတွင် မက်ဆေ့ချ် မရှိတော့ပါ။
+load_more_failed = မက်ဆေ့ချ်ပိုမိုမဖွင့်နိုင်ပါ: {error}
+loading_unified = ပေါင်းစည်းထားသော {folder} ကို ဖွင့်နေပါသည်...
+messages_in_unified = ပေါင်းစည်းထားသော {folder} တွင် အကောင့်အားလုံးမှ မက်ဆေ့ချ် {count} စောင်။
+messages_in_unified_cached = ပေါင်းစည်းထားသော {folder} တွင် မက်ဆေ့ချ် {count} စောင် (နောက်ဆုံးထပ်တူကျသော မိတ္တူ၊ အပ်ဒိတ်လုပ်နေသည်...)
+auto_purge_done = အလိုအလျောက်ရှင်းလင်းမှုက အမှိုက်ပုံး/အမှိုက်စာမှ မက်ဆေ့ချ်အဟောင်း {count} စောင်ကို ဖယ်ရှားခဲ့သည်။
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = အဆင်သင့်။
+opening_message = မက်ဆေ့ချ်ကို ဖွင့်နေပါသည်...
+opening_message_already = မက်ဆေ့ချ်ကို ဖွင့်နေပါသည်... (ဖွင့်နေပြီးသား)
+could_not_open_message = မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+could_not_open_that_message = ထိုမက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+could_not_load_message = ဤမက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+message_still_loading = ထိုမက်ဆေ့ချ်ကို ဖွင့်နေဆဲဖြစ်သည်။
+folder_still_loading = ဖိုင်တွဲကို ဖွင့်နေဆဲဖြစ်သည် -- ခဏနောက် ထပ်ကြိုးစားပါ။
+not_in_thread = ဤမက်ဆေ့ချ်သည် မည်သည့်ချည်မျှင်၏ အစိတ်အပိုင်းမျှ မဟုတ်ပါ။
+no_longer_in_thread = ဤမက်ဆေ့ချ်သည် ချည်မျှင်ထဲတွင် မရှိတော့ပါ။
+thread_position = ဤချည်မျှင်တွင် {total} စောင်အနက် {position} စောင်မြောက်။
+thread_finished_one = ချည်မျှင် ပြီးဆုံးပါပြီ (မက်ဆေ့ချ် ၁ စောင်)။
+thread_finished_many = ချည်မျှင် ပြီးဆုံးပါပြီ (မက်ဆေ့ချ် {count} စောင်)။
+select_message_first = ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+conversation_failed = ဤစကားဝိုင်းကို မဖွင့်နိုင်ပါ။
+select_message_for_related = ဆက်စပ်မက်ဆေ့ချ်များကြည့်ရန် ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+looking_for_related = ဆက်စပ်မက်ဆေ့ချ်များ ရှာနေပါသည်...
+no_threading_headers = ဤမက်ဆေ့ချ်တွင် ရှာရန် Message-ID သို့မဟုတ် ချည်မျှင်ခေါင်းစီးများ မရှိပါ။
+reply_one_at_a_time = ပြန်စာသည် တစ်ကြိမ်လျှင် မက်ဆေ့ချ်တစ်စောင်အတွက် အလုပ်လုပ်သည်။ မက်ဆေ့ချ်တစ်စောင်တည်းကို ရွေးပါ။
+select_message_to_reply = ပြန်စာရေးရန် ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+preparing_reply = ပြန်စာကို ပြင်ဆင်နေပါသည်...
+reply_load_failed = ပြန်စာအတွက် မူရင်းမက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+select_message_to_forward = ထပ်ဆင့်ပို့ရန် ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+preparing_forward = ထပ်ဆင့်ပို့ရန် မက်ဆေ့ချ်ကို ပြင်ဆင်နေပါသည်...
+forward_load_failed = ထပ်ဆင့်ပို့မည့် မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+compose_tab_needed_hint = ထိုအမိန့်အတွက် ရေးသားရန် တက်ဘ် လိုအပ်ပါသည်။ မက်ဆေ့ချ်ရေးရန် Ctrl+N နှိပ်ပါ။
+open_message_first_view = ဦးစွာ မက်ဆေ့ချ်ဖွင့်ပါ၊ ထို့နောက် မြင်ကွင်းပြောင်းရန် Ctrl+B နှိပ်ပါ။
+open_message_first_remote = ဦးစွာ မက်ဆေ့ချ်ဖွင့်ပါ၊ ထို့နောက် အဝေးမှ အကြောင်းအရာကို ဖွင့်ရန် Ctrl+Shift+I နှိပ်ပါ။
+
+# Acting on messages
+copying_message = မက်ဆေ့ချ်ကို ကူးယူနေပါသည်...
+copy_failed = ကူးယူခြင်း မအောင်မြင်ပါ။
+delete_failed = ဖျက်ခြင်း မအောင်မြင်ပါ။
+already_in_archive = မော်ကွန်းထဲတွင် ရှိပြီးသားဖြစ်သည်။
+archiving = မော်ကွန်းတင်နေပါသည်...
+archive_failed = မော်ကွန်းတင်ခြင်း မအောင်မြင်ပါ။
+action_failed = {action} မအောင်မြင်ပါ။
+nothing_to_undo = နောက်ပြန်ရန် ဘာမျှ မရှိပါ။
+private_mode_on = ကိုယ်ပိုင်မုဒ် ဖွင့်ထားသည်။ ဤကွန်ပျူတာတွင် ZBox သိမ်းထားသော သင့်မေးလ်မိတ္တူများကို ဖျက်ပြီးပါပြီ။
+private_mode_off = ကိုယ်ပိုင်မုဒ် ပိတ်ထားသည်။ ZBox သည် သင့်မေးလ်မိတ္တူများကို ပြန်လည်သိမ်းထားမည်။
+undo_failed = {action} ကို နောက်ပြန်၍ မရပါ။
+
+# Views and folders
+folder_pane_all = ဖိုင်တွဲအကန့်: ဖိုင်တွဲအားလုံး။
+folder_pane_unified = ဖိုင်တွဲအကန့်: ပေါင်းစည်းထားသော ဖိုင်တွဲများ။
+sorted_ascending = {field} အလိုက် စီထားသည်၊ အငယ်မှအကြီး။
+sorted_descending = {field} အလိုက် စီထားသည်၊ အကြီးမှအငယ်။
+unified_folders_updated = ပေါင်းစည်းထားသော ဖိုင်တွဲများကို အပ်ဒိတ်လုပ်ပြီးပါပြီ။
+zoom_reset = မက်ဆေ့ချ်စာလုံးအရွယ်အစားကို မူလသို့ ပြန်ထားပြီးပါပြီ။
+folder_creating = "{folder}" ဖိုင်တွဲကို ဖန်တီးနေပါသည်...
+folder_created = "{folder}" ဖိုင်တွဲကို ဖန်တီးပြီးပါပြီ။
+folder_create_failed = ဖိုင်တွဲကို မဖန်တီးနိုင်ပါ။
+folder_renaming = "{folder}" ကို "{new_name}" သို့ အမည်ပြောင်းနေပါသည်...
+folder_renamed = ဖိုင်တွဲကို "{new_name}" သို့ အမည်ပြောင်းပြီးပါပြီ။
+folder_rename_failed = ဖိုင်တွဲကို အမည်မပြောင်းနိုင်ပါ။
+folder_deleting = "{folder}" ဖိုင်တွဲကို ဖျက်နေပါသည်...
+folder_deleted = ဖိုင်တွဲကို ဖျက်ပြီးပါပြီ။
+folder_delete_failed = ဖိုင်တွဲကို မဖျက်နိုင်ပါ။
+folder_subscribing = "{folder}" သို့ စာရင်းသွင်းနေပါသည်...
+folder_unsubscribing = "{folder}" မှ စာရင်းသွင်းမှု ပယ်ဖျက်နေပါသည်...
+folder_subscribed = စာရင်းသွင်းပြီးပါပြီ။
+folder_unsubscribed = စာရင်းသွင်းမှု ပယ်ဖျက်ပြီးပါပြီ။
+folder_subscribe_failed = ဖိုင်တွဲသို့ စာရင်းမသွင်းနိုင်ပါ။
+folder_unsubscribe_failed = ဖိုင်တွဲမှ စာရင်းသွင်းမှု မပယ်ဖျက်နိုင်ပါ။
+
+# Accounts
+account_not_added = အကောင့်ကို မထည့်ထားပါ။
+account_added = အကောင့်ထည့်ပြီးပါပြီ: {account}
+account_settings_not_saved = အကောင့်ဆက်တင်များကို မသိမ်းထားပါ။
+account_updated = အကောင့်ကို အပ်ဒိတ်လုပ်ပြီးပါပြီ: {account}
+account_not_removed = အကောင့်ကို မဖယ်ရှားထားပါ။
+account_removed = အကောင့်ကို ဖယ်ရှားပြီးပါပြီ။
+account_removed_with_files = အကောင့်ကို ဖယ်ရှားပြီးပါပြီ။ ဒေသတွင်းဖိုင် {count} ခုကို ဖျက်ပြီးပါပြီ။
+default_account_failed = မူလအကောင့်ကို မသတ်မှတ်နိုင်ပါ။
+default_account_set = {account} သည် ယခု မူလအကောင့် ဖြစ်သည်။
+auto_check_not_saved = အလိုအလျောက်စစ်ဆေးမှု ဆက်တင်ကို မသိမ်းထားပါ။
+mute_not_saved = အသံပိတ်ဆက်တင်ကို မသိမ်းထားပါ။
+account_muted = {account} ကို အသံပိတ်ပြီးပါပြီ။
+account_unmuted = {account} ကို အသံပြန်ဖွင့်ပြီးပါပြီ။
+export_done = အကောင့် {count} ခုနှင့် ဆက်တင်များကို {path} သို့ ထုတ်ယူပြီးပါပြီ။
+import_done = {path} မှ အကောင့် {count} ခုကို ထည့်သွင်းပြီးပါပြီ။
+
+# Filters, cache and the background lists
+filters_not_saved = စစ်ထုတ်မှုများကို မသိမ်းထားပါ။
+filters_saved = {account} အတွက် စစ်ထုတ်မှုများကို သိမ်းပြီးပါပြီ။
+filters_checking = သင့်စစ်ထုတ်မှုများဖြင့် {folder} ကို စစ်ဆေးနေပါသည်...
+filters_none_matched = ယခုလုပ်ဆောင်ရန်: {folder} ရှိ မည်သည့်မက်ဆေ့ချ်မျှ ဖွင့်ထားသော စည်းမျဉ်းနှင့် မကိုက်ညီပါ။
+filters_run_failed = စစ်ထုတ်မှုများကို မလုပ်ဆောင်နိုင်ပါ။
+filters_moving = စစ်ထုတ်ပြီးသော မက်ဆေ့ချ် {count} စောင်ကို ရွှေ့နေပါသည်...
+filters_move_failures = စစ်ထုတ်မှုများ: မက်ဆေ့ချ် {count} စောင်ကို မရွှေ့နိုင်ပါ။
+filters_moved = စစ်ထုတ်မှုများက {folder} မှ မက်ဆေ့ချ် {count} စောင်ကို ရွှေ့ခဲ့သည်။
+filters_move_failed = စစ်ထုတ်ပြီးသော မက်ဆေ့ချ်များကို မရွှေ့နိုင်ပါ။
+cache_not_cleared = ကက်ရှ်ကို မရှင်းလင်းထားပါ။
+auto_cache_cleanup = အလိုအလျောက် ကက်ရှ်ရှင်းလင်းမှု: {age} ထက်ဟောင်းသော မက်ဆေ့ချ်များ။
+phishing_update_failed = ဖစ်ရှင်းစာရင်းကို အပ်ဒိတ်မလုပ်နိုင်ပါ: {error}
+blocklist_update_failed = ပိတ်ဆို့စာရင်းကို အပ်ဒိတ်မလုပ်နိုင်ပါ: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = ဦးစွာ မက်ဆေ့ချ်ဖွင့်ပါ၊ ထို့နောက် အမည်ပေး၍ သိမ်းရန် ကို သုံးပါ။
+saving_message = မက်ဆေ့ချ်ကို သိမ်းနေပါသည်...
+save_file_failed = ဖိုင်ကို မသိမ်းနိုင်ပါ။
+save_fetch_failed = သိမ်းရန် မက်ဆေ့ချ်ကို မရယူနိုင်ပါ။
+open_message_first_print = ဦးစွာ မက်ဆေ့ချ်ဖွင့်ပါ၊ ထို့နောက် ပရင့်ထုတ်ရန် ကို သုံးပါ။
+open_message_first_preview = ဦးစွာ မက်ဆေ့ချ်ဖွင့်ပါ၊ ထို့နောက် ပရင့်ကြိုကြည့်ရန် ကို သုံးပါ။
+refreshing_accounts = အကောင့် {count} ခုကို ပြန်လည်စတင်နေပါသည်...
+emptying_trash = {account} ၏ အမှိုက်ပုံးကို ရှင်းနေပါသည်...
+trash_already_empty = အမှိုက်ပုံး ဗလာဖြစ်ပြီးသား။
+trash_emptied = အမှိုက်ပုံး ရှင်းပြီးပါပြီ: မက်ဆေ့ချ် {count} စောင်ကို ဖျက်ပြီးပါပြီ။
+empty_trash_failed = အမှိုက်ပုံးကို မရှင်းနိုင်ပါ။
+emptying_junk = {account} ၏ အမှိုက်စာကို ရှင်းနေပါသည်...
+junk_already_empty = အမှိုက်စာ ဗလာဖြစ်ပြီးသား။
+junk_emptied = အမှိုက်စာ ရှင်းပြီးပါပြီ: မက်ဆေ့ချ် {count} စောင်ကို ဖျက်ပြီးပါပြီ။
+junk_emptied_prefix = အမှိုက်စာ ရှင်းပြီးပါပြီ:
+junk_part_purged = {count} ခု ဖျက်ပြီး
+junk_part_in_trash = {count} ခုကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးသော်လည်း ဖယ်ရှားမှု အတည်မပြုရသေးပါ၊ အမှိုက်ပုံးကို စစ်ပါ
+junk_part_not_moved = {count} ခုကို အမှိုက်ပုံးသို့ မရွှေ့ရသေးပါ၊ အမှိုက်စာထဲတွင် ရှိနေသေးသည်
+empty_junk_failed = အမှိုက်စာကို မရှင်းနိုင်ပါ။
+back_online = အွန်လိုင်း ပြန်ရောက်ပါပြီ။
+offline_sync_running = အော့ဖ်လိုင်းသုံးရန် {account} ကို ထပ်တူကျစေနေပါသည်...
+offline_sync_failed = အော့ဖ်လိုင်း ထပ်တူကျစေမှု မအောင်မြင်ပါ: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ သို့မဟုတ် ဖွင့်ပါ။
+select_or_open_message_ctrl_u = ဦးစွာ မက်ဆေ့ချ်တစ်ခု ရွေးပါ သို့မဟုတ် ဖွင့်ပါ၊ ထို့နောက် Ctrl+U နှိပ်ပါ။
+no_sender_address = ဤမက်ဆေ့ချ်တွင် ထည့်ရန် ပို့သူလိပ်စာ မရှိပါ။
+contact_added = {contact} ကို သင့်လိပ်စာစာအုပ်သို့ ထည့်ပြီးပါပြီ။
+contact_already_there = {contact} သည် သင့်လိပ်စာစာအုပ်တွင် ရှိပြီးသား ဖြစ်သည်။
+privacy_saved = ကိုယ်ရေးလုံခြုံမှု ဆက်တင်များကို သိမ်းပြီးပါပြီ။ အသုံးပြုရန် မက်ဆေ့ချ်ကို ပြန်ဖွင့်ပါ။
+message_font_size = မက်ဆေ့ချ်စာလုံးအရွယ်အစား: {size} pt။
+
+# Deleting and moving several messages
+deleting_one = မက်ဆေ့ချ်ကို အပြီးအပိုင် ဖျက်နေပါသည်
+deleting_many = မက်ဆေ့ချ် {count} စောင်ကို အပြီးအပိုင် ဖျက်နေပါသည်
+trashing_one = မက်ဆေ့ချ်ကို အမှိုက်ပုံးသို့ ရွှေ့နေပါသည်
+trashing_many = မက်ဆေ့ချ် {count} စောင်ကို အမှိုက်ပုံးသို့ ရွှေ့နေပါသည်
+undo_partly_restored = {action} ကို နောက်ပြန်လိုက်ပါပြီ၊ သို့သော် {count} ခုကို မပြန်ထားနိုင်ပါ -- ၎င်းတို့ကို နောက်ပိုင်းတွင် ရွှေ့ခြင်း၊ ဖျက်ခြင်း သို့မဟုတ် သက်တမ်းကုန်ခြင်း ဖြစ်နိုင်သည်။
+moves_report = {action}: {total} ခုအနက် မက်ဆေ့ချ် {moved} စောင်ကို ရွှေ့ပြီးပါပြီ။
+moves_report_failed = မရွှေ့ရသေးပါ၊ မူလဖိုင်တွဲတွင် ရှိနေသေးသည်: {count}။
+
+tray_tooltip_one = ZBox — မဖတ်ရသေးသော မက်ဆေ့ချ် ၁ စောင်
+tray_tooltip_many = ZBox — မဖတ်ရသေးသော မက်ဆေ့ချ် {count} စောင်
+account_unreachable = {account} ကို မရောက်နိုင်ပါ။ ၎င်း၏ အလိုအလျောက်စစ်ဆေးမှုများကို မိနစ် {minutes} ခဏရပ်ထားမည်။
+bulk_copy_failed = မက်ဆေ့ချ်များကို မကူးယူနိုင်ပါ။
+bulk_copy_failed_status = ကူးယူခြင်း မအောင်မြင်ပါ။
+bulk_loading_archive = မက်ဆေ့ချ်များကို ဖွင့်နေဆဲ -- ခဏနောက် မော်ကွန်းတင်ရန် ထပ်ကြိုးစားပါ။
+bulk_loading_delete = မက်ဆေ့ချ်များကို ဖွင့်နေဆဲ -- ခဏနောက် ဖျက်ရန် ထပ်ကြိုးစားပါ။
+bulk_loading_flag = မက်ဆေ့ချ်များကို ဖွင့်နေဆဲ -- ခဏနောက် ကြယ်ပွင့်ပေးရန် ထပ်ကြိုးစားပါ။
+bulk_loading_generic = မက်ဆေ့ချ်များကို ဖွင့်နေဆဲ -- ခဏနောက် ထပ်ကြိုးစားပါ။
+bulk_none = မက်ဆေ့ချ် မရွေးထားပါ။
+bulk_none_archive = မော်ကွန်းတင်ရန် မက်ဆေ့ချ် မရွေးထားပါ။
+bulk_none_delete = ဖျက်ရန် မက်ဆေ့ချ် မရွေးထားပါ။
+bulk_none_junk = အမှိုက်စာအဖြစ် မှတ်ရန် မက်ဆေ့ချ် မရွေးထားပါ။
+bulk_none_not_junk = အမှိုက်စာမဟုတ်ဟု မှတ်ရန် မက်ဆေ့ချ် မရွေးထားပါ။
+delete_refused_still = ဆာဗာက ဖျက်ရန် ငြင်းဆိုခဲ့သည်၊ ၎င်းသည် {folder} တွင် ရှိနေသေးသည်။
+delete_refused_trash = ၎င်းသည် အမှိုက်ပုံးတွင် ရှိသော်လည်း ဆာဗာက အပြီးအပိုင်ဖျက်ရန် ငြင်းဆိုခဲ့သည်။
+delete_resume_failed = ယခင်ဖျက်မှုမှ မက်ဆေ့ချ် {count} စောင်ကို မဖျက်နိုင်ပါ။
+done_perm_delete_one = မက်ဆေ့ချ်ကို အပြီးအပိုင် ဖျက်ပြီးပါပြီ။
+done_trash_one = မက်ဆေ့ချ်ကို အမှိုက်ပုံးသို့ ရွှေ့ပြီးပါပြီ။
+filters_applied = {folder} ရှိ မက်ဆေ့ချ် {count} စောင်တွင် စစ်ထုတ်မှုများ အသုံးပြုပြီးပါပြီ။
+filters_failed = စစ်ထုတ်မှုများကို မလုပ်ဆောင်နိုင်ပါ။
+filters_running = {folder} တွင် စစ်ထုတ်မှုများ လုပ်ဆောင်နေပါသည်
+flag_failed = ကြယ်ပွင့်ကို အပ်ဒိတ်မလုပ်နိုင်ပါ။
+flag_updated = ကြယ်ပွင့်ကို အပ်ဒိတ်လုပ်ပြီးပါပြီ။
+folder_verb_subscribing = စာရင်းသွင်းနေသည်
+folder_verb_unsubscribing = စာရင်းသွင်းမှု ပယ်ဖျက်နေသည်
+mark_read_failed = မက်ဆေ့ချ်များကို ဖတ်ပြီးအဖြစ် မမှတ်နိုင်ပါ။
+mark_unread_failed = မက်ဆေ့ချ်များကို မဖတ်ရသေးအဖြစ် မမှတ်နိုင်ပါ။
+notify_new_mail_body = {name} အတွက် {noun} {count}။
+notify_new_mail_title = မေးလ်အသစ်
+notify_noun_many = မက်ဆေ့ချ်အသစ်များ
+notify_noun_one = မက်ဆေ့ချ်အသစ်
+report_done = မက်ဆေ့ချ် {count} စောင်အနက် {done} စောင် {verb}။
+report_verb_deleted = ဖျက်ပြီး
+report_verb_permanent = အပြီးအပိုင် ဖျက်ပြီး
+running_copy_many = မက်ဆေ့ချ် {count} စောင်ကို ကူးယူနေသည်
+running_copy_one = မက်ဆေ့ချ်ကို ကူးယူနေသည်
+running_junk_many = မက်ဆေ့ချ် {count} စောင်ကို အမှိုက်စာအဖြစ် မှတ်နေသည်
+running_junk_one = အမှိုက်စာအဖြစ် မှတ်နေသည်
+running_move_many = မက်ဆေ့ချ် {count} စောင်ကို ရွှေ့နေသည်
+running_move_one = ရွှေ့နေသည်
+running_not_junk_many = မက်ဆေ့ချ် {count} စောင်ကို အမှိုက်စာမဟုတ်ဟု မှတ်နေသည်
+running_not_junk_one = အမှိုက်စာမဟုတ်ဟု မှတ်နေသည်
+running_perm_delete_one = မက်ဆေ့ချ်ကို အပြီးအပိုင် ဖျက်နေပါသည်...
+running_read_many = မက်ဆေ့ချ် {count} စောင်ကို ဖတ်ပြီးအဖြစ် မှတ်နေသည်
+running_read_one = ဖတ်ပြီးအဖြစ် မှတ်နေသည်
+running_trash_one = မက်ဆေ့ချ်ကို အမှိုက်ပုံးသို့ ရွှေ့နေပါသည်...
+running_unread_many = မက်ဆေ့ချ် {count} စောင်ကို မဖတ်ရသေးအဖြစ် မှတ်နေသည်
+running_unread_one = မဖတ်ရသေးအဖြစ် မှတ်နေသည်
+settings_saved_no_startup = ဆက်တင်များကို သိမ်းပြီးပါပြီ။ Windows စတင်မှု ထည့်သွင်းချက်ကို အပ်ဒိတ်မလုပ်နိုင်ပါ။
+settings_saved_status = ဆက်တင်များကို သိမ်းပြီးပါပြီ။
+spam_blocked_sender = ပိတ်ဆို့ထားသော ပို့သူ
+spam_possible_phishing = ဖစ်ရှင်း ဖြစ်နိုင်သည်
+undo_running_many = {action} ကို နောက်ပြန်နေသည် (မက်ဆေ့ချ် {count} စောင်)
+undo_running_one = {action} ကို နောက်ပြန်နေသည်
+mark_folder_read_failed = ဖိုင်တွဲကို ဖတ်ပြီးအဖြစ် မမှတ်နိုင်ပါ။
+marking_folder_read = ဖိုင်တွဲကို ဖတ်ပြီးအဖြစ် မှတ်နေပါသည်...
+upd_ready_at_exit = အပ်ဒိတ်ကို ဒေါင်းလုဒ်ဆွဲပြီးပါပြီ။ သင် ZBox မှ ထွက်သောအခါ ထည့်သွင်းမည်။
+upd_checking = အပ်ဒိတ်များကို စစ်ဆေးနေပါသည်...
+upd_up_to_date = ZBox သည် နောက်ဆုံးဗားရှင်းဖြစ်သည်။
+upd_available_source = ZBox {version} ရနိုင်ပါပြီ။ ဤမိတ္တူသည် အရင်းအမြစ်မှ လည်ပတ်နေသဖြင့် git ဖြင့် အပ်ဒိတ်လုပ်ပါ။
+upd_check_failed = အပ်ဒိတ်များကို မစစ်ဆေးနိုင်ပါ: {error}
+opening_attachment = {filename} ကို ဖွင့်နေပါသည်...
+loading_headers = ခေါင်းစီးများကို ဖွင့်နေပါသည်...
+offline_inbox_only = အော့ဖ်လိုင်းသုံးရန် ဝင်စာပုံးနှင့် မော်ကွန်းကိုသာ သိမ်းထားသည်။
+offline_sync_done_inbox = အော့ဖ်လိုင်းသုံးရန် ဝင်စာပုံးနှင့် မော်ကွန်းရှိ မက်ဆေ့ချ် {count} စောင်ကို ထပ်တူကျစေပြီးပါပြီ။
+working_offline = အော့ဖ်လိုင်းတွင် အလုပ်လုပ်နေသည်: ဝင်စာပုံး/ပို့ပြီး/မူကြမ်းများ၏ နောက်ဆုံးထပ်တူကျသော မိတ္တူကို ပြထားသည်။
+emptying_trash_all = အကောင့်အားလုံး၏ အမှိုက်ပုံးကို ရှင်းနေပါသည်...
+trash_emptied_all = အကောင့် {accounts} ခုတွင် အမှိုက်ပုံး ရှင်းပြီးပါပြီ: မက်ဆေ့ချ် {count} စောင်ကို ဖျက်ပြီးပါပြီ။
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &ဖိုင်
+bar_edit = &တည်းဖြတ်
+bar_view = &ကြည့်ရှု
+bar_message = &မက်ဆေ့ချ်
+bar_compose = &ရေးသား
+bar_tools = &ကိရိယာများ
+bar_help = &အကူအညီ
+
+# File
+file_new = အသစ်
+file_new_message = မက်ဆေ့ချ်
+file_new_account = အီးမေးလ်အကောင့်...
+file_open_saved_message = သိမ်းထားသော မက်ဆေ့ချ်ကို ဖွင့်ရန်...
+file_close = ပိတ်ရန်
+file_save_message_as = မက်ဆေ့ချ်ကို အမည်ပေး၍ သိမ်းရန်...
+file_get_new_for = မက်ဆေ့ချ်အသစ်များ ရယူရန်
+file_get_new_all = အကောင့်အားလုံး
+file_get_new_current = လက်ရှိအကောင့်
+file_offline = အော့ဖ်လိုင်း
+file_work_offline = အော့ဖ်လိုင်းတွင် အလုပ်လုပ်ရန်
+file_sync_now = ယခု ထပ်တူကျစေရန်
+file_print = ပရင့်ထုတ်ရန်...
+file_print_preview = ပရင့်ကြိုကြည့်ရန်...
+file_exit = ထွက်ရန်
+
+# Edit
+edit_undo = နောက်ပြန်ရန်
+edit_select_all = အားလုံးရွေးရန်
+edit_find_messages = မက်ဆေ့ချ်များ ရှာရန်...
+
+# Message
+message_reply = ပြန်စာ
+message_reply_all = အားလုံးသို့ ပြန်စာ
+message_forward = ထပ်ဆင့်ပို့ရန်
+message_archive = မော်ကွန်းတင်ရန်
+message_delete = ဖျက်ရန်
+message_delete_permanently = အပြီးအပိုင် ဖျက်ရန်
+message_mark = မှတ်ရန်
+mark_read = ဖတ်ပြီး
+mark_unread = မဖတ်ရသေး
+mark_flagged = ကြယ်ပွင့်ပေးထားသော
+mark_junk = အမှိုက်စာ
+mark_not_junk = အမှိုက်စာမဟုတ်
+message_watch_thread = ချည်မျှင်ကို စောင့်ကြည့်ရန်
+message_ignore_thread = ချည်မျှင်ကို လျစ်လျူရှုရန်
+message_open_conversation = မက်ဆေ့ချ်ကို စကားဝိုင်းတွင် ဖွင့်ရန်
+message_show_related = ဆက်စပ်မက်ဆေ့ချ်များ ပြရန်
+message_add_sender_to_address_book = ပို့သူကို လိပ်စာစာအုပ်သို့ ထည့်ရန်
+message_announce_sender = ပို့သူကို ကြေညာရန်
+message_announce_copy_sender = ပို့သူကို ကြေညာပြီး လိပ်စာကူးယူရန်
+
+# View
+view_folders = ဖိုင်တွဲများ
+folders_all = အားလုံး
+folders_unified = ပေါင်းစည်းထားသော
+folders_jump_inbox = ဝင်စာပုံးမက်ဆေ့ချ်စာရင်းသို့ ခုန်ရန်
+folders_configure_unified = ပေါင်းစည်းထားသော ဖိုင်တွဲများကို ပြင်ဆင်ရန်...
+view_sort_by = စီရန်
+sort_date = ရက်စွဲ
+sort_subject = ခေါင်းစဉ်
+sort_from = ပို့သူ
+sort_descending = အကြီးမှအငယ် (အသစ်အရင်)
+sort_ascending = အငယ်မှအကြီး (အဟောင်းအရင်)
+view_threads = ချည်မျှင်များ
+threads_all = အားလုံး
+threads_watched = စောင့်ကြည့်သော ချည်မျှင်များ
+threads_ignored = လျစ်လျူရှုသော ချည်မျှင်များ
+threads_expand_all = ချည်မျှင်အားလုံးကို ဖြန့်ရန်
+threads_collapse_all = ချည်မျှင်အားလုံးကို ခေါက်ရန်
+view_load_more = မက်ဆေ့ချ်ပိုမို ဖွင့်ရန်
+view_toggle_message_view = စာသားနှင့် HTML မြင်ကွင်းကြား ပြောင်းရန်
+view_show_remote_content = ဤမက်ဆေ့ချ်တွင် အဝေးမှ အကြောင်းအရာ ပြရန်
+view_message_zoom = မက်ဆေ့ချ် ချဲ့ခြင်း
+zoom_increase = မက်ဆေ့ချ်စာလုံးအရွယ်အစား တိုးရန်
+zoom_decrease = မက်ဆေ့ချ်စာလုံးအရွယ်အစား လျှော့ရန်
+zoom_reset = မက်ဆေ့ချ်စာလုံးအရွယ်အစား ပြန်ထားရန်
+
+# Compose
+compose_send = &ပို့ရန်
+compose_save_draft = &မူကြမ်းသိမ်းရန်
+compose_attach = &ဖိုင်ပူးတွဲရန်...
+compose_fmt_bold = &စာလုံးမည်း
+compose_fmt_italic = &စာလုံးစောင်း
+compose_fmt_strike = &မျဉ်းကြောင်းဖြတ်
+compose_fmt_bullet = &ကျည်ဆံပွင့်စာရင်း
+compose_fmt_number = &နံပါတ်စာရင်း
+compose_fmt_quote = &ကိုးကားချက်
+compose_fmt_code = &ကုဒ်
+compose_fmt_heading1 = &ခေါင်းစီး
+compose_link = &လင့်ခ်ထည့်ရန်...
+compose_formatting = &ဤနေရာတွင် ဖော်မက်
+compose_spellcheck = &စာလုံးပေါင်းစစ်ရန်...
+compose_spellcheck_next = &နောက်စာလုံးပေါင်းအမှား
+compose_spellcheck_add = &စကားလုံးကို အဘိဓာန်သို့ ထည့်ရန်
+compose_insert_signature = &လက်မှတ်ထည့်ရန်
+compose_paste_quotation = &ကိုးကားချက်အဖြစ် ကူးထည့်ရန်
+compose_word_count = &စကားလုံးရေတွက်ရန်
+compose_preview = &ကြိုကြည့်ရန်...
+compose_diagnostics = &ရေးသားမှု စစ်ဆေးခြင်း...
+compose_edit_signature = &လက်မှတ်တည်းဖြတ်ရန်...
+compose_hotkeys_diagnostic = &ဖြတ်လမ်းကီး စစ်ဆေးမှု
+
+# Tools
+tools_account_settings = အကောင့်နှင့် အထောက်အထား ဆက်တင်များ...
+tools_mute_account = အကောင့်ကို အသံပိတ်ရန်
+tools_pause_auto_check = အလိုအလျောက်စစ်ဆေးမှုကို ခဏရပ်ရန်
+tools_disable_account = အကောင့်ကို ပိတ်ရန်
+tools_remove_account = အကောင့်ကို ဖယ်ရှားရန်...
+tools_address_book = လိပ်စာစာအုပ်...
+tools_message_filters = မက်ဆေ့ချ်စစ်ထုတ်မှုများ...
+tools_import = အကောင့်များနှင့် ဆက်တင်များ ထည့်သွင်းရန်...
+tools_export = အကောင့်များနှင့် ဆက်တင်များ ထုတ်ယူရန်...
+tools_cache_cleanup = ကက်ရှ်ရှင်းလင်းမှု ပြင်ဆင်ချက်...
+tools_privacy = ကိုယ်ရေးလုံခြုံမှုနှင့် အကြောင်းအရာပိတ်ဆို့မှု...
+tools_settings = ဆက်တင်များ...
+
+# Help
+help_shortcuts = ကီးဘုတ်ဖြတ်လမ်းများ...
+help_about = ZBox အကြောင်း...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = အကောင့်အသစ်...
+tree_account_settings = အကောင့်နှင့် အထောက်အထား ဆက်တင်များ...
+tree_mute_account = အကောင့်ကို အသံပိတ်ရန်
+tree_pause_auto_check = အလိုအလျောက်စစ်ဆေးမှုကို ခဏရပ်ရန်
+tree_enable_account = အကောင့်ကို ဖွင့်ရန်
+tree_disable_account = အကောင့်ကို ပိတ်ရန်
+tree_set_default_account = မူလအကောင့်အဖြစ် သတ်မှတ်ရန်
+tree_remove_account = အကောင့်ကို ဖယ်ရှားရန်...
+tree_refresh = ပြန်လည်စတင်ရန်
+tree_new_folder = ဖိုင်တွဲအသစ်...
+tree_empty_trash = အမှိုက်ပုံးကို ရှင်းရန်
+tree_empty_junk = အမှိုက်စာကို ရှင်းရန်
+tree_rename_folder = ဖိုင်တွဲအမည်ပြောင်းရန်...
+tree_delete_folder = ဖိုင်တွဲကို ဖျက်ရန်...
+tree_subscribe_folder = ဖိုင်တွဲသို့ စာရင်းသွင်းရန်
+tree_unsubscribe_folder = ဖိုင်တွဲမှ စာရင်းသွင်းမှု ပယ်ဖျက်ရန်
+
+# The message list menu, opened the same two ways
+list_select_all = အားလုံးရွေးရန်
+list_reply = ပြန်စာ
+list_reply_all = အားလုံးသို့ ပြန်စာ
+list_forward = ထပ်ဆင့်ပို့ရန်
+list_mark = မှတ်ရန်
+list_archive = မော်ကွန်းတင်ရန်
+list_delete_to_trash = ဖျက်ရန် (အမှိုက်ပုံးသို့ ရွှေ့ရန်)
+list_delete_permanently = အပြီးအပိုင် ဖျက်ရန်
+list_move_to = ရွှေ့ရန်
+list_copy_to = ကူးယူရန်
+
+# The notification area icon
+tray_open = &ZBox ကို ဖွင့်ရန်
+tray_unread_one = မဖတ်ရသေးသော မက်ဆေ့ချ် ၁ စောင်
+tray_unread_many = မဖတ်ရသေးသော မက်ဆေ့ချ် {count} စောင်
+tray_no_unread = မဖတ်ရသေးသော မက်ဆေ့ချ် မရှိပါ
+tray_settings = &ဆက်တင်များ...
+tray_quit = &ZBox မှ ထွက်ရန်
+
+# The formatting menu inside a message you are writing
+format_bold = &စာလုံးမည်း
+format_italic = &စာလုံးစောင်း
+format_strike = &မျဉ်းကြောင်းဖြတ်
+format_bullet = &ကျည်ဆံပွင့်စာရင်း
+format_number = &နံပါတ်စာရင်း
+format_quote = &ကိုးကားချက်
+format_code = &ကုဒ်
+format_heading1 = &ခေါင်းစီး
+format_insert_link = &လင့်ခ်ထည့်ရန်...
+format_formatting_here = &ဤနေရာတွင် ဖော်မက်
+tools_enable_account = အကောင့်ကို ဖွင့်ရန်
+edit_undo_action = {action} ကို နောက်ပြန်ရန်
+tree_mark_folder_read = ဖိုင်တွဲကို ဖတ်ပြီးအဖြစ် မှတ်ရန်
+help_updates = &အပ်ဒိတ်များ
+help_check_updates = &ယခု အပ်ဒိတ်များ စစ်ဆေးရန်...
+help_update_settings = &အပ်ဒိတ်ဆက်တင်များ
+help_releases_page = &ထုတ်ပြန်မှုစာမျက်နှာကို ဖွင့်ရန်
+message_attachments = ပူးတွဲဖိုင်များ
+message_no_attachments = ပူးတွဲဖိုင် မရှိပါ
+message_save_all_attachments = ပူးတွဲဖိုင်အားလုံး သိမ်းရန်
+view_full_headers = ခေါင်းစီးအပြည့်အစုံ
+folders_go_to_tree = ဖိုင်တွဲစာရင်းသို့ သွားရန်
+list_block_sender = ဤပို့သူကို ပိတ်ဆို့ရန်
+list_unblock_sender = ဤပို့သူ၏ ပိတ်ဆို့မှုကို ဖယ်ရန်
+sort_received = လက်ခံရရှိသော
+sort_star = ကြယ်ပွင့်
+sort_order_received = လက်ခံရရှိသည့်အစီအစဉ်
+sort_priority = ဦးစားပေး
+sort_recipient = လက်ခံသူ
+sort_correspondents = ဆက်သွယ်သူများ
+sort_size = အရွယ်အစား
+sort_read = ဖတ်ပြီး
+sort_junk_status = အမှိုက်စာအခြေအနေ
+sort_attachments = ပူးတွဲဖိုင်များ
+sort_threaded = ချည်မျှင်အလိုက်
+sort_unthreaded = ချည်မျှင်မခွဲ
+view_columns = ကော်လံများ
+tools_openpgp_keys = OpenPGP ကီး စီမံခန့်ခွဲသူ
+tools_smime_certs = S/MIME လက်မှတ်လွှာ စီမံခန့်ခွဲသူ
+compose_pgp_encrypt = &ကုဒ်ဝှက်ရန်
+compose_pgp_sign = &ဒစ်ဂျစ်တယ်လက်မှတ်ထိုးရန်
+compose_pgp_attach_key = &ကျွန်ုပ်၏ အများသုံးကီးကို ပူးတွဲရန်
+
+[dialogs]
+set_theme_restart_confirm = အသွင်အပြင်ပြောင်းလဲမှုကို အသုံးပြုရန် ZBox ကို ပြန်စတင်မလား။
+set_ui_theme_label = &အင်တာဖေ့စ် အသွင်အပြင်:
+set_ui_theme_note = မီနူးများ၊ စာရင်းများ၊ ဒိုင်ယာလော့များနှင့် မက်ဆေ့ချ်စာသားမြင်ကွင်းအတွက် အရောင်များ။ စနစ်ကို လိုက်နာရန် သည် Windows ၏ ကိုယ်ပိုင် အလင်း သို့မဟုတ် အမှောင် အက်ပ်မုဒ်ကို သုံးသည်။ သန်းခေါင်အပြာ၊ နွေးသောအမှောင်နှင့် ပျော့ပျောင်းသော ကွာခြားမှု တို့သည် အရောင်ပျော့ပျောင်းသော အမှောင်အသွင်အပြင်များ ဖြစ်သည်။ HTML မက်ဆေ့ချ်များသည် ၎င်းတို့၏ ကိုယ်ပိုင်အရောင်များကို ထိန်းသိမ်းထားပြီး Windows အရောင်ကွာခြားမှုမြင့်မားမှုသည် အမြဲ ဦးစားပေးသည်။ ZBox နောက်တစ်ကြိမ် စတင်သောအခါ အကျိုးသက်ရောက်မည်။
+set_theme_system = စနစ်ကို လိုက်နာရန်
+set_theme_light = အလင်း
+set_theme_dark = အမှောင်
+set_theme_midnight = သန်းခေါင်အပြာ
+set_theme_warm = နွေးသောအမှောင်
+set_theme_soft = ပျော့ပျောင်းသော ကွာခြားမှု
+set_language_restart_confirm = ဘာသာစကားပြောင်းလဲမှုကို အသုံးပြုရန် ZBox ကို ပြန်စတင်မလား။
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith ကို ဆက်သွယ်ရန်
+title_identity = အထောက်အထား
+title_show_password = စကားဝှက်ပြရန်
+title_missing_information = အချက်အလက် ပျောက်နေသည်
+title_unsupported_provider = မထောက်ပံ့သော ဝန်ဆောင်မှုပေးသူ
+title_test_connection = ချိတ်ဆက်မှု စမ်းသပ်ရန်
+title_new_contact = အဆက်အသွယ်အသစ်
+title_edit_contact = အဆက်အသွယ် တည်းဖြတ်ရန်
+title_delete_contact = အဆက်အသွယ် ဖျက်ရန်
+title_import_contacts = အဆက်အသွယ်များ ထည့်သွင်းရန်
+title_export_contacts = အဆက်အသွယ်များ ထုတ်ယူရန်
+title_rename_group = အုပ်စုအမည်ပြောင်းရန်
+title_delete_group = အုပ်စုဖျက်ရန်
+title_send = ပို့ရန်
+title_send_failed = ပို့ခြင်း မအောင်မြင်ပါ
+title_attach_file = ဖိုင်ပူးတွဲရန်
+title_save_draft = မူကြမ်းသိမ်းရန်
+title_documentation = ZBox စာတမ်းများ
+title_open_link = လင့်ခ်ဖွင့်ရန်
+title_filter_rule = စစ်ထုတ်မှုစည်းမျဉ်း
+title_master_password = မာစတာစကားဝှက်
+title_attachment_saved = ပူးတွဲဖိုင် သိမ်းပြီးပါပြီ
+title_attachments_saved = ပူးတွဲဖိုင်များ သိမ်းပြီးပါပြီ
+title_download_failed = ဒေါင်းလုဒ်ဆွဲခြင်း မအောင်မြင်ပါ
+title_print = ပရင့်ထုတ်ရန်
+title_print_preview = ပရင့်ကြိုကြည့်ရန်
+title_related_messages = ဆက်စပ်မက်ဆေ့ချ်များ
+title_search = ရှာဖွေရန်
+title_unlock = လော့ခ်ဖွင့်ရန်
+title_unlock_methods = လော့ခ်ဖွင့်နည်းများ
+title_desktop_shortcut = ဒက်စ်တော့ဖြတ်လမ်း
+title_spell_check = စာလုံးပေါင်းစစ်ဆေးမှု
+title_plain_text_password = ရိုးရိုးစာသားစကားဝှက် တွေ့ရှိသည်
+title_startup_error = ZBox စတင်မှု အမှား
+
+identity_email_required = အီးမေးလ်လိပ်စာ ထည့်ပါ။
+
+wizard_password_not_shown = ဤစနစ်တွင် စကားဝှက်ကို မပြနိုင်ပါ။ ၎င်းကို ပုံမှန်အတိုင်း ရိုက်ထည့်၍ သိမ်းဆည်းနေဆဲဖြစ်သည်။
+wizard_email_required = ဆက်မသွားမီ မှန်ကန်သော အီးမေးလ်လိပ်စာ ထည့်ပါ။
+wizard_test_needs_server = စမ်းသပ်ခြင်းမပြုမီ လော့ဂင်အီးမေးလ်နှင့် ဝင်လာသော ဆာဗာကို ထည့်ပါ။
+wizard_test_succeeded = ချိတ်ဆက်မှု အောင်မြင်သည်။ ဝင်စာပုံးတွင် မက်ဆေ့ချ် {count} စောင် တွေ့ရှိသည်။
+
+contact_email_required = အီးမေးလ်လိပ်စာ လိုအပ်သည်။
+contact_select_to_edit = တည်းဖြတ်ရန် အဆက်အသွယ်တစ်ခု ရွေးပါ။
+contact_select_to_delete = ဖျက်ရန် အဆက်အသွယ်တစ်ခု ရွေးပါ။
+contact_delete_confirm = {label} ကို လိပ်စာစာအုပ်မှ ဖျက်မလား။
+contacts_import_choose_file = ထည့်သွင်းရန် .vcf (vCard) သို့မဟုတ် .csv ဖိုင်ကို ရွေးပါ။
+contacts_imported = အဆက်အသွယ် {count} ခု ထည့်သွင်းပြီးပါပြီ။
+contacts_import_empty = ထိုဖိုင်တွင် အဆက်အသွယ် မတွေ့ပါ။
+contacts_none_to_export = ထုတ်ယူရန် အဆက်အသွယ် မရှိပါ။
+contacts_exported = အဆက်အသွယ် {count} ခုကို ဤနေရာသို့ ထုတ်ယူပြီးပါပြီ:\n{path}
+group_name_exists = "{name}" အမည်ရှိ အုပ်စု ရှိပြီးသားဖြစ်သည်။
+group_delete_confirm = အုပ်စု "{name}" ကို ဖျက်မလား။ ၎င်း၏ အဆက်အသွယ်များကို မဖျက်ပါ။
+
+send_no_account = မပို့မီ အကောင့်တစ်ခု ထည့်ပါ၊ သို့မဟုတ် မှ တွင် တစ်ခုကို ရွေးပါ။
+send_no_recipient = သို့ တွင် လက်ခံသူ အနည်းဆုံး တစ်ဦး ထည့်ပါ။
+draft_no_account = မူကြမ်းမသိမ်းမီ အကောင့်တစ်ခု ထည့်ပါ၊ သို့မဟုတ် မှ တွင် တစ်ခုကို ရွေးပါ။
+attached_file = ပူးတွဲပြီး: {name}\n\nသင်ပို့သောအခါ ဖိုင် {count} ခု ပူးတွဲမည်။
+
+documentation_copied = ZBox စာတမ်းအပြည့်အစုံကို ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ။
+
+filter_rule_needs_name = ဤစည်းမျဉ်းကို အမည်ပေးပါ။
+filter_rule_needs_condition = အနည်းဆုံး အခြေအနေတစ်ခု သတ်မှတ်ပါ (မှ၊ သို့ သို့မဟုတ် ခေါင်းစဉ်)။
+filter_rule_needs_action = အနည်းဆုံး လုပ်ဆောင်ချက်တစ်ခု ရွေးပါ: ဖတ်ပြီးအဖြစ် မှတ်ရန်၊ ကြယ်ပွင့်ပေးရန်၊ သို့မဟုတ် ဖိုင်တွဲသို့ ရွှေ့ရန်။
+
+master_password_set = မာစတာစကားဝှက် သတ်မှတ်ပြီးပါပြီ။ လုံခြုံသောနေရာတွင် သိမ်းထားပါ - ZBox သည် ကွန်ပျူတာအသစ်တိုင်းတွင် တစ်ကြိမ် တောင်းမည်ဖြစ်ပြီး ပျောက်သွားလျှင် ပြန်ယူ၍ မရနိုင်ပါ။
+master_password_offer = မာစတာစကားဝှက်မရှိလျှင် သိမ်းထားသော အကောင့်စကားဝှက်များကို ဤကွန်ပျူတာနှင့် ဤ Windows အကောင့်တွင်သာ ဖတ်နိုင်သည်။ ZBox ကို အခြားနေရာသို့ ကူးပါက အကောင့်တိုင်း ပြန်လည်လော့ဂင်ဝင်ရမည်။\n\nယခု တစ်ခု သတ်မှတ်မလား။
+
+attachment_saved = ပူးတွဲဖိုင်ကို ဤနေရာတွင် သိမ်းပြီးပါပြီ:\n{path}
+attachments_saved = ပူးတွဲဖိုင် {count} ခုကို ဤနေရာတွင် သိမ်းပြီးပါပြီ:\n{path}
+
+shortcut_created_settings = ဖြတ်လမ်း ဖန်တီးပြီးပါပြီ:\n{path}\n\nဤအရာသည် ZBox ကို ဤနေရာမှ စတင်သည်:\n{base}
+
+spellcheck_no_dictionary = စာလုံးပေါင်းအဘိဓာန် ပျောက်နေသဖြင့် ZBox ၏ ဤမိတ္တူတွင် စာလုံးပေါင်းစစ်ဆေးမှု မရနိုင်ပါ။
+spellcheck_none_found = စာလုံးပေါင်းအမှား မတွေ့ပါ။
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = ဤကွန်ပျူတာတွင် ပါစ်ကီးတစ်ခု သတ်မှတ်ပြီး အခြားကွန်ပျူတာမှ သိမ်းထားသည့်အရာကို မေ့ပစ်မလား။\n\nHello ဖြင့် အတည်ပြုရန် Windows က တောင်းမည်။ အခြားကွန်ပျူတာတွင် ကျန်နေသော ပါစ်ကီးဟောင်းသည် ထိုနေရာတွင် မပြောင်းလဲဘဲ ဤဖိုင်တွဲကို ထိုနေရာသို့ ပြန်ယူသွားပါက ဆက်လုပ်ဆောင်မည်ဖြစ်သော်လည်း ပြန်သတ်မှတ်ရန် လိုမည်။
+unlock_replace_passkey_many = ဤကွန်ပျူတာတွင် ပါစ်ကီးတစ်ခု သတ်မှတ်ပြီး အခြားကွန်ပျူတာများမှ သိမ်းထားသော {count} ခုကို မေ့ပစ်မလား။\n\nHello ဖြင့် အတည်ပြုရန် Windows က တောင်းမည်။ အခြားကွန်ပျူတာတွင် ကျန်နေသော ပါစ်ကီးဟောင်းများသည် ထိုနေရာတွင် မပြောင်းလဲဘဲ ဤဖိုင်တွဲကို ထိုနေရာသို့ ပြန်ယူသွားပါက ဆက်လုပ်ဆောင်မည်ဖြစ်သော်လည်း ပြန်သတ်မှတ်ရန် လိုမည်။
+unlock_method_works = ထိုနည်းလမ်း အလုပ်လုပ်ပါသည်။
+
+plain_text_password_found = data\config\himalaya.toml တွင် အကောင့်တပ်ဆင်မှုဟောင်းမှ ရိုးရိုးစာသားစကားဝှက် (auth.raw) ကျန်နေသေးသည်။\n\nထိုအကောင့်ကို ဖယ်ရှားပြီး ပြန်ထည့်ပါ၊ သို့မဟုတ် data\config\himalaya.toml ကို ဖျက်ပါ၊ ထိုအခါ လုံခြုံသော အထောက်အထားသိမ်းဆည်းမှုကို သုံး၍ ပြန်ဖန်တီးမည်။
+
+# main_frame's titles.
+title_account_list_unavailable = အကောင့်စာရင်း မရနိုင်ပါ
+title_open_message = မက်ဆေ့ချ်ဖွင့်ရန်
+title_run_filters = စစ်ထုတ်မှုများ လုပ်ဆောင်ရန်
+title_clear_cache = အော့ဖ်လိုင်းမက်ဆေ့ချ်ကက်ရှ် ရှင်းလင်းရန်
+title_remove_account = အကောင့်ဖယ်ရှားရန်
+title_new_folder = ဖိုင်တွဲအသစ်
+title_rename_folder = ဖိုင်တွဲအမည်ပြောင်းရန်
+title_delete_folder = ဖိုင်တွဲဖျက်ရန်
+title_subscribe = စာရင်းသွင်းရန်
+title_unsubscribe = စာရင်းသွင်းမှု ပယ်ဖျက်ရန်
+title_open_saved_message = သိမ်းထားသော မက်ဆေ့ချ် ဖွင့်ရန်
+title_save_message_as = မက်ဆေ့ချ်ကို အမည်ပေး၍ သိမ်းရန်
+title_empty_trash = အမှိုက်ပုံး ရှင်းရန်
+title_empty_junk = အမှိုက်စာ ရှင်းရန်
+title_synchronize_offline = အော့ဖ်လိုင်းအတွက် ထပ်တူကျစေရန်
+title_export_accounts = အကောင့်များနှင့် ဆက်တင်များ ထုတ်ယူရန်
+title_import_accounts = အကောင့်များနှင့် ဆက်တင်များ ထည့်သွင်းရန်
+title_show_related = ဆက်စပ်မက်ဆေ့ချ်များ ပြရန်
+title_reply = ပြန်စာ
+title_forward = ထပ်ဆင့်ပို့ရန်
+title_undo = နောက်ပြန်ရန်
+title_delete_permanently = အပြီးအပိုင် ဖျက်ရန်
+title_delete = ဖျက်ရန်
+title_copy_to = ကူးယူရန်
+title_archive = မော်ကွန်းတင်ရန်
+title_accounts_locked = အကောင့်များ လော့ခ်ချထားသည်
+
+select_account_first = ဦးစွာ သစ်ပင်တွင် အကောင့်တစ်ခု ရွေးပါ။
+select_account_or_folder = ဦးစွာ အကောင့် သို့မဟုတ် ဖိုင်တွဲတစ်ခု ရွေးပါ။
+filters_left_behind = မက်ဆေ့ချ် {count} စောင်သည် စစ်ထုတ်မှုနှင့် ကိုက်ညီသော်လည်း {folder} တွင် ရှိနေသေးသည်။
+cache_clear_confirm = အကောင့်အားလုံး၏ အော့ဖ်လိုင်းမက်ဆေ့ချ်ကက်ရှ်ကို ရှင်းမလား။\n\nဤအရာသည် ZBox ၏ ဒေသတွင်းမိတ္တူများကိုသာ ဖယ်ရှားသည်။ မည်သည့်မေးလ်ဆာဗာမှ မည်သည့်အရာမျှ မဖယ်ရှားပါ၊ လိုအပ်သောအခါ မက်ဆေ့ချ်များကို ပြန်ဒေါင်းလုဒ်ဆွဲမည်။
+account_remove_confirm = {name} ({address}) ကို ဖယ်ရှားမလား။\n\nဆာဗာပေါ်ရှိ မေးလ်ကို မဖျက်ပါ။\nဤကွန်ပျူတာသို့ ဒေါင်းလုဒ်ဆွဲထားသော မိတ္တူများကို ဖျက်မည်။\nသိမ်းထားသော စကားဝှက်ကို ဖျက်မည်။
+folder_delete_confirm = {address} အတွက် "{folder}" ဖိုင်တွဲနှင့် ၎င်းထဲရှိ အားလုံးကို အပြီးအပိုင် ဖျက်မလား။\n\nဤအရာကို နောက်ပြန်၍ မရပါ။
+empty_trash_confirm = {address} အတွက် အမှိုက်ပုံးထဲရှိ မက်ဆေ့ချ်အားလုံးကို အပြီးအပိုင် ဖျက်မလား။\n\nဤအရာကို နောက်ပြန်၍ မရပါ။
+empty_junk_confirm = {address} အတွက် အမှိုက်စာထဲရှိ မက်ဆေ့ချ်အားလုံးကို အပြီးအပိုင် ဖျက်မလား။\n\nဤအရာကို နောက်ပြန်၍ မရပါ။
+sync_select_account = အော့ဖ်လိုင်းသုံးရန် ထပ်တူကျစေရန် အကောင့် (ပေါင်းစည်းထားသောဖိုင်တွဲ မဟုတ်) တစ်ခု ရွေးပါ။
+accounts_imported = အကောင့် {count} ခု ထည့်သွင်းပြီးပါပြီ:\n\n{names}\n\nစကားဝှက်များကို ဘယ်တော့မှ မထုတ်ယူပါ၊ ကုဒ်ဝှက်ထားသော စကားဝှက်သိမ်းဆည်းမှုသည် ဤ Windows အသုံးပြုသူအကောင့်အတွက်သာ သီးသန့်ဖြစ်သဖြင့် ထည့်သွင်းထားသော အကောင့်တိုင်းသည် မချိတ်ဆက်မီ ကိရိယာများ > အကောင့်နှင့် အထောက်အထား ဆက်တင်များ မှတစ်ဆင့် ၎င်း၏ စကားဝှက်ကို တစ်ကြိမ် ထည့်ရမည်။
+accounts_import_none = ဤဖိုင်တွင် အကောင့် မတွေ့ပါ။ ဖိုင်တွင် ဆက်တင်များ ပါလျှင် ၎င်းတို့ကို ထည့်သွင်းပြီးဖြစ်သည်။
+delete_permanently_confirm_one = ဤမက်ဆေ့ချ်ကို အပြီးအပိုင် ဖျက်မလား။ ဤအရာသည် အမှိုက်ပုံးဖိုင်တွဲကို ကျော်သွားပြီး နောက်ပြန်၍ မရပါ။
+accounts_locked = သိမ်းထားသော အကောင့်စကားဝှက်များကို အခြားကွန်ပျူတာတွင် ရေးထားသဖြင့် ဤနေရာတွင် မဖတ်နိုင်ပါ။\n\nအကောင့်တိုင်း ၎င်း၏ မေးလ်ဆာဗာသို့ ပြန်လည်လော့ဂင်ဝင်ရမည်။ နောက်တစ်ကြိမ် ရှောင်ရန် အကောင့်များ အလုပ်လုပ်နေဆဲ ကွန်ပျူတာတွင် ဆက်တင်များ၊ အက်ပ်နှင့် ဒေတာလုံခြုံရေး မှ မာစတာစကားဝှက်ကို သတ်မှတ်ပါ။
+master_password_remove_confirm = မာစတာစကားဝှက်ကို ဖယ်ရှားမလား။ ထိုအခါ သိမ်းထားသော အကောင့်စကားဝှက်များကို ဤကွန်ပျူတာနှင့် ဤ Windows အကောင့်တွင်သာ ဖတ်နိုင်မည်။ နောက်ပိုင်း ZBox ကို အခြားနေရာသို့ ကူးပါက အကောင့်တိုင်း ပြန်လည်လော့ဂင်ဝင်ရမည်။\n\nယခု ဖယ်ရှားမလား။
+shortcut_offer = ဒက်စ်တော့တွင် ZBox ဖြတ်လမ်းတစ်ခု ထားမလား။\n\nဤအရာသည် ဤ ZBox ဖိုင်တွဲကို စတင်မည်:\n{path}\n\nဖြတ်လမ်းသည် ထိုတိကျသောနေရာကို မှတ်ထားသည်။ နောက်ပိုင်း ZBox ဖိုင်တွဲကို ရွှေ့ပါက ဆက်တင်များ၊ စနစ်ထရေးနှင့် ဝင်းဒိုး ကို ဖွင့်ပြီး နေရာသစ်ကို ညွှန်ရန် ဒက်စ်တော့ဖြတ်လမ်း ဖန်တီးရန် ကို ထပ်ရွေးပါ။
+shortcut_created = ဖြတ်လမ်း ဖန်တီးပြီးပါပြီ:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = ပြသမည့်အမည်
+form_email_address = အီးမေးလ်လိပ်စာ
+form_your_name = သင့်အမည်
+form_login_email = လော့ဂင်အီးမေးလ်
+form_password = စကားဝှက်
+srv_imap_host = ဝင်လာသော (IMAP) ဆာဗာ
+srv_imap_port = ဝင်လာသော ပေါ့တ်
+srv_imap_encryption = ဝင်လာသော ကုဒ်ဝှက်မှု
+srv_smtp_host = ထွက်သွားသော (SMTP) ဆာဗာ
+srv_smtp_port = ထွက်သွားသော ပေါ့တ်
+srv_smtp_encryption = ထွက်သွားသော ကုဒ်ဝှက်မှု
+
+acct_login_email_label = လော့ဂင်အီးမေးလ် (လော့ဂင်ဝင်ရန် သုံးသည်)
+acct_new_password_label = စကားဝှက်အသစ် (လက်ရှိကို ထိန်းရန် ဗလာထားပါ)
+acct_new_password_name = စကားဝှက်အသစ်
+acct_identity_email_label = အီးမေးလ်လိပ်စာ (ပို့ရန်နှင့် လက်ခံရန် သုံးသည်)
+acct_identities_label = ထပ်ဆောင်းအထောက်အထားများ (အမည်ပြောင်များ)
+acct_identities_name = ထပ်ဆောင်းအထောက်အထားများ
+acct_add_identity = &အထောက်အထားထည့်ရန်...
+acct_edit_identity = &အထောက်အထားတည်းဖြတ်ရန်...
+acct_remove_identity = &အထောက်အထားဖယ်ရှားရန်
+acct_signature = လက်မှတ်
+acct_edit_signature = &လက်မှတ်တည်းဖြတ်ရန်...
+acct_junk_folder = အမှိုက်စာဖိုင်တွဲ
+acct_account_status = အကောင့်အခြေအနေ
+acct_disable_account = ဤအကောင့်ကို ပိတ်ရန်
+acct_default_account = မူလအကောင့်
+acct_set_default = မူလအကောင့်အဖြစ် သတ်မှတ်ရန်
+acct_notifications = မေးလ်အသစ် အသိပေးချက်များ
+acct_mute_notifications = ဤအကောင့်၏ အသိပေးချက်များကို အသံပိတ်ရန်
+acct_server_settings = ဆာဗာဆက်တင်များ
+
+wiz_before_you_start = မစတင်မီ
+wiz_notice_name = အရေးကြီးသော အသိပေးချက်
+wiz_google_instructions = &Google အက်ပ်စကားဝှက် ညွှန်ကြားချက်များ ဖွင့်ရန်
+wiz_intro = သင့်အမည်နှင့် အီးမေးလ်လိပ်စာ
+wiz_login_same = လော့ဂင်အီးမေးလ်သည် အထက်ပါအီးမေးလ်လိပ်စာနှင့် တူသည်
+wiz_show_password = &စကားဝှက်ပြရန်
+wiz_preset_applied = {name} အတွက် ကြိုတင်သတ်မှတ်ချက်ကို အသုံးပြုပြီးပါပြီ။
+wiz_summary_name = အကောင့်အကျဉ်းချုပ်
+wiz_review = ပြန်စစ်ပြီး ဤအကောင့်ကို သိမ်းရန် ပြီးဆုံးရန် ကို နှိပ်ပါ။
+wiz_test_connection = &ချိတ်ဆက်မှု စမ်းသပ်ရန်
+wiz_testing = ချိတ်ဆက်မှုကို စမ်းသပ်နေပါသည်...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (ပြဿနာရှာဖွေမှတ်တမ်းကို ဖွင့်ပါ၊ ဤနေရာတွင် သိမ်းမည်: data\logs)
+set_language_label = &အင်တာဖေ့စ် ဘာသာစကား:
+set_language_label_only_english = &အင်တာဖေ့စ် ဘာသာစကား: (အင်္ဂလိပ်ဘာသာစကားသာ)
+set_headers_checkbox = &ဖွင့်ထားသော မက်ဆေ့ချ်အပေါ်တွင် မက်ဆေ့ချ်ခေါင်းစီးများ ပြရန်
+set_zoom_label = မက်ဆေ့ချ်စာလုံးနှင့် ချဲ့ခြင်း:
+set_font_override = &မူလမက်ဆေ့ချ်စာလုံးအရွယ်အစားကို အစားထိုးရန်
+set_font_size_name = မက်ဆေ့ချ်စာလုံးအရွယ်အစား (ပွိုင့်)
+set_reading_font_name = ဖတ်ရန်စာလုံး
+set_reading_font_label = ဖတ်ရန်စာလုံး (မူလအတွက် ဗလာထားပါ):
+set_view_label = မက်ဆေ့ချ်ဖွင့်သောအခါ မက်ဆေ့ချ်ကိုယ်ထည်မြင်ကွင်း:
+set_view_text = စာသား
+set_view_html = HTML (ပုံဖော်ထားသော)
+set_engine_label = HTML ပုံဖော်ရေးအင်ဂျင်:
+set_engine_edge = Edge / WebView2 (ခေတ်မီပုံဖော်မှု)
+set_engine_ie = အဟောင်း MSHTML (အကောင်းဆုံး စခရင်ရီဒါ ထောက်ပံ့မှု)
+set_runtime_label = WebView2 ရန်တိုင်း:
+set_runtime_auto = အလိုအလျောက် — ရှိလျှင် ပါဝင်သော ရန်တိုင်းကို သုံးပါ (အကြံပြုသည်)
+set_runtime_fixed = ပါဝင်သော ပုံသေဗားရှင်းသာ
+set_runtime_evergreen = စနစ်တစ်ခုလုံး ရန်တိုင်း (Windows က အပ်ဒိတ်လုပ်သည်)
+set_sr_box = စခရင်ရီဒါ ကြေညာချက် ထိန်းချုပ်မှု
+set_silence_label = HTML စခရင်ရီဒါ တိတ်ဆိတ်မှု ကိုင်ထားချိန်:
+set_silence_name = မီလီစက္ကန့်ဖြင့် HTML စခရင်ရီဒါ တိတ်ဆိတ်မှု ကိုင်ထားချိန်
+set_focus_delay_label = WebView လက်လှမ်းမီမှု အာရုံစိုက်မှု နှောင့်နှေးချိန်:
+set_focus_delay_name = WebView လက်လှမ်းမီမှု အာရုံစိုက်မှု နှောင့်နှေးချိန်၊ အဆင့် ၁ မှ ၁၀
+set_announce_label = ကြေညာချက် ကိုင်ထားချိန်:
+set_announce_name = မီလီစက္ကန့်ဖြင့် ကြေညာချက် ကိုင်ထားချိန်
+set_announce_actions = &လုပ်ဆောင်ချက်များ၊ မေးလ်အသစ်နှင့် မှတ်ချက်များ ကြေညာချက်များကို ပြောပါ
+set_attachment_dir_label = သိမ်းထားသော ပူးတွဲဖိုင်ဖိုင်တွဲ:
+set_attachment_dir_name = သိမ်းထားသော ပူးတွဲဖိုင်ဖိုင်တွဲ
+set_browse = &ရှာဖွေရန်…
+set_autosave_label = မူကြမ်း အလိုအလျောက်သိမ်းချိန်ကွာဟမှု:
+set_autosave_name = စက္ကန့်ဖြင့် မူကြမ်း အလိုအလျောက်သိမ်းချိန်ကွာဟမှု
+set_auto_purge_label = အမှိုက်ပုံးနှင့် အမှိုက်စာအဟောင်းကို အလိုအလျောက် ဖျက်ရန်:
+set_auto_purge_name = ဤရက်ပြီးနောက် အမှိုက်ပုံးနှင့် အမှိုက်စာကို အလိုအလျောက် ဖျက်ရန်
+set_bare_keys = &မက်ဆေ့ချ်စာရင်းတွင် ကီးတစ်ခုတည်း ဖြတ်လမ်းများ S (ကြယ်ပွင့်), A (မော်ကွန်း), J (အမှိုက်စာအဖြစ်မှတ်)/Shift+J (အမှိုက်စာမဟုတ်ဟုမှတ်), W (ချည်မျှင်ကို စောင့်ကြည့်), K (ချည်မျှင်ကို လျစ်လျူရှု), M (ရွှေ့)/Shift+M (ဖိုင်တွဲအမည်ဖြင့်ရွှေ့) နှင့် C (ကူးယူ) တို့ကို ဖွင့်ပါ
+set_sound_label = အသံများနှင့် အသိပေးချက်များ:
+set_sounds_enabled = &အသိပေးချက်အသံများ ဖွင့်ရန်
+set_desktop_notifications = &မေးလ်အသစ်အတွက် ဒက်စ်တော့အသိပေးချက်များ ပြရန်
+set_theme_label = အသံအသွင်အပြင် ပြောင်းရန်:
+set_theme_label_only_default = အသံအသွင်အပြင် ပြောင်းရန်: (မူလအသွင်အပြင်သာ)
+set_security_box = အက်ပ်နှင့် ဒေတာလုံခြုံရေး
+set_lock_on_quit = &ZBox အပြည့်အဝ ထွက်သောအခါ လော့ခ်ချရန်
+set_private_mode = &ကိုယ်ပိုင်မုဒ်: ဤကွန်ပျူတာ သို့မဟုတ် ဒရိုက်တွင် မေးလ် မသိမ်းပါနှင့်
+set_unlock_methods_button = &လော့ခ်ဖွင့်နည်းများ…
+set_master_password_button = &မာစတာစကားဝှက်…
+set_tray_label = စနစ်ထရေးနှင့် ဝင်းဒိုး:
+set_minimize_to_tray = &စနစ်ထရေးသို့ ချုံ့ရန်
+set_close_to_tray = &စနစ်ထရေးသို့ ပိတ်ရန်
+set_stay_maximized = &ZBox ကို အမြဲ အပြည့်ချဲ့ထားရန်
+set_run_at_startup = &Windows စတင်သောအခါ ZBox ကို လည်ပတ်ရန်
+set_desktop_shortcut_button = &ဒက်စ်တော့ဖြတ်လမ်း ဖန်တီးရန်
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = တစ်စုံတစ်ရာမှားယွင်းပါက ပြဿနာများကို စစ်ဆေးရန် ပြဿနာရှာဖွေမှတ်တမ်းက အထောက်အကူပြုသည်။ ၎င်းကို ပိတ်ပါက ထည့်သွင်းချက်အသစ်များ မရေးတော့ပါ၊ ရှိပြီးသား မှတ်တမ်းဖိုင်များကို မဖျက်ပါ။ ZBox နောက်တစ်ကြိမ်စတင်သောအခါ အကျိုးသက်ရောက်မည်။
+set_language_note = ZBox နောက်တစ်ကြိမ်စတင်သောအခါ အကျိုးသက်ရောက်မည်။ ဘာသာစကားဖိုင်များသည် sounds ဖိုင်တွဲနှင့်ယှဉ်လျက် ZBox ၏ lang ဖိုင်တွဲရှိ ရိုးရိုးစာသားဖိုင်များ ဖြစ်သည်။ တစ်ခုထည့်ရန် en ဖိုင်တွဲကို ကူးပြီး မိတ္တူနှင့် ၎င်းအတွင်းရှိ .lang ဖိုင်အမည်ကို သင့်ဘာသာစကားကုဒ်သို့ ပြောင်းကာ ညီမျှခြင်းလက္ခဏာတိုင်း၏ ညာဘက်ရှိ စာသားကို ဘာသာပြန်ပါ။ မဘာသာပြန်ရသေးသည်များကို တိတ်ဆိတ်နေမည့်အစား အင်္ဂလိပ်လို ပြောသဖြင့် တစ်ဝက်ပြီးသော ဖိုင်ကို သုံးရန် လုံခြုံသည်။
+set_headers_note = မှ၊ သို့၊ မိတ္တူ၊ ရက်စွဲနှင့် ခေါင်းစဉ်တို့ကို စာသားနှင့် HTML မြင်ကွင်းနှစ်ခုလုံးတွင် မက်ဆေ့ချ်ကိုယ်ထည်အပေါ်တွင် ပြသည်။ ၎င်းမရှိလျှင် တက်ဘ်ပိတ်ပြီး စာရင်းသို့ မပြန်ဘဲ မက်ဆေ့ချ်အတွင်းမှ မည်သူပို့သည်ကို သိရန် နည်းလမ်း မရှိပါ။ အာရုံစိုက်မှုသည် မက်ဆေ့ချ်ကိုယ်ထည်ပေါ်တွင်ပင် ကျသည်၊ ခေါင်းစီးတုံးသည် Shift+Tab တစ်ချက်အကွာတွင်ရှိသည်။ မက်ဆေ့ချ်ကို နောက်တစ်ကြိမ်ဖွင့်သောအခါ အကျိုးသက်ရောက်မည်။
+set_zoom_note = ဖွင့်ထားသော မက်ဆေ့ချ်၏ ကိုယ်ပိုင်စာသားကို ZBox ၏ ကျန်အပိုင်းနှင့် Windows ၏ ကိုယ်ပိုင်ပြသမှုအရွယ်စကေးမှ လွတ်လပ်စွာ ပိုကြီး သို့မဟုတ် ပိုသေးစေသည်။ စာသားနှင့် HTML မြင်ကွင်းနှစ်ခုလုံးတွင် သက်ရောက်သည်။ "ဖတ်ရန်စာလုံး" သည် မက်ဆေ့ချ်ကိုယ်ထည်အတွက် သီးသန့်စာလုံး (ဥပမာ Consolas, OpenDyslexic) ကို ရွေးချယ်နိုင်သလို အတင်းအကျပ်သုံးစေနိုင်သည်၊ ပုံမှန်စာလုံးကို ထိန်းရန် ဗလာထားပါ။ ကြည့်ရှု မီနူးရှိ Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 သည် ဤဒိုင်ယာလော့ကို မဖွင့်ဘဲ စာလုံးအရွယ်အစားကိုသာ တိုး၊ လျှော့ သို့မဟုတ် ပြန်ထားပြီး ဖွင့်ထားသော မက်ဆေ့ချ်တိုင်းတွင် ချက်ချင်း သက်ရောက်သည်။ ဤနေရာတွင်ပြုလုပ်သော ပြောင်းလဲမှုများသည် အိုကေ ကို နှိပ်လျှင်လည်း ချက်ချင်း သက်ရောက်သည်။
+set_view_note = HTML သည် မူလဖြစ်သည်။ ၎င်းသည် မက်ဆေ့ချ်ကို ပို့ခဲ့သည့်အတိုင်း ပြသပြီး NVDA နှင့် JAWS တို့က ဖတ်သည်: HTML စာမျက်နှာဖွင့်သောအခါ ZBox က ဘရောက်ဇာ၏ ကိုယ်ပိုင်ကြေညာချက်ကို တိတ်စေပြီး ဖတ်ရန်ကာဆာကို မက်ဆေ့ချ်၏ ပထမစာကြောင်းတွင် ထားကာ စာမျက်နှာအတွင်း ZBox ၏ ကိုယ်ပိုင်ဖြတ်လမ်းများ အလုပ်လုပ်နေစေသည်၊ အာရုံစိုက်မှုကို ၎င်းမှ ထုတ်ပေးသော F6 အပါအဝင်။ စာသားသည် တူညီသောမက်ဆေ့ချ်ကို ပုံမှန်တည်းဖြတ်ထိန်းချုပ်မှုတွင် ရိုးရိုး၊ ဖော်မက်မလုပ်ထားသော စာသားအဖြစ် ပြသည် -- ပုံများ မရှိ၊ အပြင်အဆင် မရှိ၊ ဘရောက်ဇာအင်ဂျင်ထည့်သွင်းထားမှုအပေါ် မူတည်သည့်အရာ မရှိ။ နှစ်ဖက်စလုံး ပြောင်းရန် ဖွင့်ထားသော မက်ဆေ့ချ်တွင် Ctrl+B နှိပ်ပါ။
+set_engine_note = Edge သည် ခေတ်မီ CSS ကို ပုံဖော်သော်လည်း စာမျက်နှာကို သီးခြားလုပ်ငန်းစဉ်တွင် လည်ပတ်စေပြီး wxPython မရောက်နိုင်သော အင်တာဖေ့စ်ဖြင့်သာ ၎င်း၏အကြောင်းအရာကို စခရင်ရီဒါထံ ပေးသည် -- ထို့ကြောင့် မက်ဆေ့ချ်သည် ဖတ်စရာမရှိဘဲ ပွင့်လာနိုင်သည်။ အဟောင်း MSHTML သည် Outlook Express နှင့် Windows Mail သုံးခဲ့သော အင်ဂျင်ဖြစ်သည်: ၎င်းသည် တူညီသောလုပ်ငန်းစဉ်တွင် လည်ပတ်ပြီး ပုံမှန်စာတမ်းသစ်ပင်ကို ထုတ်ပြန်သည်၊ ထို့ကြောင့် NVDA နှင့် JAWS တို့က ၎င်းကို မည်သည့်ဝဘ်စာမျက်နှာကဲ့သို့ ကြည့်ရှုမုဒ်တွင် ဖတ်သည်။ မက်ဆေ့ချ်ကို နောက်တစ်ကြိမ်ဖွင့်သောအခါ အကျိုးသက်ရောက်မည်။
+set_runtime_note = စနစ်တစ်ခုလုံး ရန်တိုင်းကို Windows Update က ထိန်းသိမ်းသဖြင့် သင့်မေးလ်ကို ဖတ်သော အင်ဂျင်သည် သတိမပေးဘဲ ပြောင်းလဲနိုင်သည် — ZBox နှင့်ပတ်သက်၍ မည်သည့်အရာမျှ မပြောင်းလဲသော ကွန်ပျူတာတွင် ကောင်းစွာအလုပ်လုပ်ခဲ့သော HTML မက်ဆေ့ချ်မြင်ကွင်း ပျက်စီးနိုင်ပုံမှာ ဤသို့ဖြစ်သည်။ deps ဖိုင်တွဲရှိ ပါဝင်သောမိတ္တူသည် ZBox စမ်းသပ်ခဲ့သော တိကျသည့်ဗားရှင်းကို ပင့်ထားသည်။ တစ်ခုထည့်သွင်းရန် tools\get_webview2.bat ကို လည်ပတ်ပါ။ ပါဝင်သောမိတ္တူ မရှိလျှင် ZBox သည် မည်သို့ပင်ဖြစ်စေ စနစ်တစ်ခုလုံးရန်တိုင်းကို သုံးသဖြင့် အမြဲစတင်နိုင်သည်။ ZBox နောက်တစ်ကြိမ်စတင်သောအခါ အကျိုးသက်ရောက်မည်။
+set_sr_intro = မက်ဆေ့ချ်ဖွင့်နေစဉ် ZBox က သင့်စခရင်ရီဒါကို မည်မျှပြောခွင့်ပေးသည်နှင့် ၎င်း၏ကိုယ်ပိုင် အသံထွက်ကြေညာချက်များ မည်မျှကြာသည်။
+set_silence_note = HTML မက်ဆေ့ချ်ဖွင့်သောအခါ စခရင်ရီဒါ၏ ဘရောက်ဇာကြေညာချက်ကို တိတ်စေရန် ZBox က အတုအယောင် Ctrl နှိပ်ချက်ကို ၂ စက္ကန့်အထိ ကိုင်ထားနိုင်သည်။ မက်ဆေ့ချ်ခေါင်းစဉ်ကို စာမျက်နှာခေါင်းစဉ်အဖြစ် သုံးပြီးဖြစ်သဖြင့် base64 URL ကို မဖတ်စေရန် တားဆီးသော်လည်း ဖတ်သူက မက်ဆေ့ချ်အစတွင် ထိန်းချုပ်မှုနှင့် စာတမ်းအမျိုးအစားကို ကြေညာနေသေးသဖြင့် ၎င်းကို မူလအားဖြင့် ဖွင့်ထားသည်။ ပိတ် ကို ရွေးပါ၊ သို့မဟုတ် စကားပြောသံ ဆက်ပေါက်နေလျှင် ပိုကြာသောအချိန်ကို ရွေးပါ။
+set_focus_delay_note = HTML မက်ဆေ့ချ် ဖွင့်ပြီးသောအခါ ၎င်းကို အာရုံစိုက်မှု မပေးမီ ZBox က ဤမျှကြာ စောင့်သည်။ WebView2 က စာမျက်နှာဖွင့်ပြီးကြောင်း အစီရင်ခံခြင်းနှင့် Windows က ထိုစာမျက်နှာ၏ လက်လှမ်းမီမှုသစ်ပင် ပြီးစီးခြင်းသည် တစ်ချိန်တည်း မဟုတ်ပါ၊ အလွန်စောစီးစွာ အာရုံစိုက်လျှင် NVDA/JAWS က မက်ဆေ့ချ်အစား ယေဘုယျ "ဝဘ်အကြောင်းအရာစာမျက်နှာ" ကို ကြေညာတတ်သည်၊ သို့မဟုတ် ဖွင့်ပြီး ခဏကြာ မက်ဆေ့ချ်မရနိုင်ဟု အစီရင်ခံတတ်သည်။ ရွေးချယ်စရာများမှာ ၀.၁ စက္ကန့်မှ ၁ စက္ကန့်အထိ ဖြစ်သည်။ ဤအရာကို ကြားနေသေးလျှင် ပိုကြာသောအချိန်ကို၊ ဖွင့်ခြင်းတည်ငြိမ်သည်ဟု ခံစားရလျှင် ပိုမြန်သော ဖွင့်ခြင်းအတွက် ပိုတိုသောအချိန်ကို ရွေးပါ။
+set_announce_note = စခရင်ရီဒါတွင် အခြေအနေဘားအစီရင်ခံမှု ဖွင့်ထားမှသာ အခြေအနေဘားကို ဖတ်သဖြင့် Ctrl+U နှင့် Ctrl+Shift+U က ပို့သူကို ကိုယ်တိုင်ပိတ်သွားသော သေးငယ်သည့်ဒိုင်ယာလော့တွင် အစီရင်ခံသည်။ ထိုဒိုင်ယာလော့ မည်မျှကြာသည်ကို ဤအရာက သတ်မှတ်သည်။ သင့်စကားပြောနှုန်းနှင့် ကိုက်ညီအောင် သတ်မှတ်ပါ: တိုလွန်းလျှင် ဝါကျအလယ်တွင် ပိတ်သွားပြီး ရည်ရွယ်ချက်ကို ပျက်စေသည်။ မည်သည့်ကီးမဆို စောပိတ်စေသည်၊ မျှားကီးများက ပြန်ဖတ်ရန် ဖွင့်ထားစေသည်။ ကီးကို စောင့်သည် သည် သင်တစ်ခုနှိပ်သည်အထိ ဖွင့်ထားသည်။
+set_attachment_dir_note = မက်ဆေ့ချ်တစ်စောင်တွင် ပူးတွဲဖိုင်တစ်ခုထက်ပိုသောအခါ "အားလုံးသိမ်းရန်" က ပူးတွဲဖိုင်များကို ဘယ်မှာရေးမည်ကို သတ်မှတ်သည်။ မရှိလျှင် အလိုအလျောက်ဖန်တီးသည်။ ပူးတွဲဖိုင်တစ်ခုတည်းပါသော မက်ဆေ့ချ်သည် ယခင်ကဲ့သို့ပင် ဘယ်မှာသိမ်းမည်ကို မေးမြန်းဆဲဖြစ်သည်။ မူလအတွက် ဗလာထားပါ:\n{path}
+set_autosave_note = သင်ရေးနေစဉ် ဖွင့်ထားသော ရေးသားရန်တက်ဘ်က မူကြမ်းများထဲသို့ ကိုယ့်ကိုယ်ကိုယ် မည်မျှမကြာခဏ သိမ်းသည်။ မူကြမ်းသိမ်းရန် (Ctrl+S) သည် မည်သို့ပင်ဖြစ်စေ လိုအပ်သောအခါ သိမ်းပေးပြီး မသိမ်းရသေးသော စာပါသည့်တက်ဘ်ကို ပိတ်သောအခါ သိမ်းရန် အမြဲအခွင့်အလမ်းပေးသည်။ ပိတ် သည် အလိုအလျောက်သိမ်းခြင်းကို ပိတ်သည်။ ၁၅ စက္ကန့်အောက် မပေးပါ -- ၎င်းသည် သင့်စာရိုက်ခြင်းနှင့် ယှဉ်ပြိုင်သော ဆာဗာခရီးစဉ် ဖြစ်လာမည်။
+set_auto_purge_note = အမှိုက်ပုံးနှင့် အမှိုက်စာထဲရှိ မက်ဆေ့ချ်များသည် ဤရက်အရေအတွက်အထိ ရှိနေပြီးနောက် အပြီးအပိုင် ဖယ်ရှားသည် -- အမှိုက်ပုံးကို ရှင်းရန်နှင့် အမှိုက်စာကို ရှင်းရန် တို့က လိုအပ်သောအခါ ပြုလုပ်သည့် အတူတူသော အပြီးအပိုင်ဖျက်ခြင်း ဖြစ်ပြီး ZBox ဖွင့်ထားစဉ် တစ်နေ့တစ်ကြိမ် အလိုအလျောက် လည်ပတ်သည်။ မူလအားဖြင့် ၃၀ ရက်တွင် ဖွင့်ထားသည်။ ပိတ် သည် ၎င်းကို ပိတ်သည်။ မက်ဆေ့ချ်ကို ဖယ်ရှားပြီးသည်နှင့် ဤအရာကို နောက်ပြန်၍ မရပါ။
+set_bare_keys_note = ဖွင့်ထားသောအခါ မက်ဆေ့ချ်စာရင်းတွင် S, A, J, W သို့မဟုတ် K ကို တစ်ခုတည်းနှိပ်လျှင် ကြယ်ပွင့်ကို ချက်ချင်း ပြောင်းသည်၊ မော်ကွန်းတင်သည်၊ ရွေးထားသော မက်ဆေ့ချ်များကို အမှိုက်စာအဖြစ် မှတ်သည် (Shift+J က အမှိုက်စာမဟုတ်ဟု မှတ်သည်)၊ သို့မဟုတ် ရွေးချယ်မှုပါဝင်သော ချည်မျှင်ကို စောင့်ကြည့်/လျစ်လျူရှုသည် -- မော်ကွန်းတင်ရန် နှင့် အမှိုက်စာအဖြစ် မှတ်ရန် တို့တွင် အတည်ပြုချက်နှင့် နောက်ပြန်ခြင်း မရှိပါ။ ၎င်းကို ပိတ်လျှင် S, A, J, W နှင့် K တို့သည် စာရင်းတွင် ပုံမှန် ပထမစာလုံးသွားလာမှုသို့ ပြန်သွားသည်။ Ctrl+S နှင့် Ctrl+Shift+A တို့သည် မည်သို့ပင်ဖြစ်စေ အလုပ်လုပ်ဆဲဖြစ်သည်။ ချက်ချင်း အကျိုးသက်ရောက်သည်။
+set_sounds_note = တိုးတက်မှု၊ မက်ဆေ့ချ်အသစ်များ၊ ပို့ခြင်း၊ ပြန်စာပေးခြင်း သို့မဟုတ် ထပ်ဆင့်ပို့ခြင်းလုပ်ဆောင်ချက်များ၊ ဖျက်ခြင်းများနှင့် ရှာဖွေမှုရလဒ်များအတွက် အသံတိုများ။ ပိတ် သည် အက်ပ်ရှိ အသံတိုင်းကို ပိတ်သည်၊ စခရင်ရီဒါနှင့် အခြေအနေဘား ကြေညာချက်များကို မည်သို့မျှ မထိခိုက်ပါ။
+set_desktop_notifications_note = အထက်ပါအသံနှင့် သီးခြားစီ မေးလ်အသစ်အစုလိုက်တိုင်းအတွက် Windows အသိပေးချက်တစ်ခု။ ပိတ် သည် အကောင့်အားလုံးအတွက် ပိတ်သည်၊ အကောင့်တစ်ခုချင်းကိုလည်း အကောင့်နှင့် အထောက်အထား ဆက်တင်များတွင် သီးခြား အသံပိတ်နိုင်သည်။
+set_theme_note = စိတ်ကြိုက်အသွင်အပြင်များသည် ZBox ၏ sounds ဖိုင်တွဲအတွင်း ထားသော ဖိုင်တွဲများဖြစ်ပြီး တစ်ခုချင်းက ကိုယ်ပိုင် progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav နှင့် none_found.wav ကို ပံ့ပိုးသည်။ ပျောက်နေသော အသွင်အပြင်ဖိုင်သည် မူလအသံသို့ ပြန်သွားသည်။
+set_theme_note_only_default = စိတ်ကြိုက်အသွင်အပြင်များသည် ZBox ၏ sounds ဖိုင်တွဲအတွင်း ထားသော ဖိုင်တွဲများဖြစ်ပြီး တစ်ခုချင်းက ကိုယ်ပိုင် progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav နှင့် none_found.wav ကို ပံ့ပိုးသည်။ ပျောက်နေသော အသွင်အပြင်ဖိုင်သည် မူလအသံသို့ ပြန်သွားသည်။ သင်အခြားအသွင်အပြင်ဖိုင်တွဲတစ်ခု မထည့်မချင်း "default" သာ ရနိုင်သည်။
+set_lock_note = ZBox စတင်သောအခါ မည်သည့်အကောင့်မဖွင့်မီ သင့်လော့ခ်ဖွင့်နည်းများထဲမှ တစ်ခုကို တောင်းသည်။ ၎င်းတို့အနက် တစ်ခုခုဖြင့် လုံလောက်သည်: ပါစ်ကီး၊ လုံခြုံရေးကီး၊ သို့မဟုတ် မာစတာစကားဝှက်။ ထရေးသို့ပိတ်ခြင်းသည် ထွက်ခြင်း မဟုတ်ဘဲ ပြန်လော့ခ်မချပါ၊ ဖိုင် > ထွက်ရန် နှင့် ထရေးအိုင်ကွန်၏ ထွက်ရန် တို့က ထွက်သည်။ ဘာမျှမမှတ်ပုံတင်ထားဘဲ မာစတာစကားဝှက်လည်း မသတ်မှတ်ထားလျှင် သင့်ကိုယ်ပိုင်မေးလ်မှ ပိတ်ဆို့မထားရန် လော့ခ်ကို ကျော်သွားသည်။
+set_security_note = သုံးခုအနက် တစ်ခုခုကို ကုဒ်ဝှက်သည်မှာ မာစတာစကားဝှက်သာဖြစ်သည်: ဤဖိုင်တွဲသည် အခြားကွန်ပျူတာတွင် သိမ်းထားသော အကောင့်စကားဝှက်များကို ဖွင့်နိုင်စေသည်မှာ ၎င်းသာဖြစ်သည်။ ပါစ်ကီး သို့မဟုတ် လုံခြုံရေးကီးသည် ဤကွန်ပျူတာတစ်ခုတည်းတွင် အက်ပ်ကို လော့ခ်ဖွင့်သည်။ ZBox မသုံးဖူးသော ကွန်ပျူတာတွင် ၎င်းတို့မည်သည်မျှ မာစတာစကားဝှက်ကို အစားမထိုးနိုင်ပါ။
+set_private_mode_note = မက်ဆေ့ချ်များကို ဆာဗာမှ ဖတ်ပြီး မှတ်ဉာဏ်ထဲတွင်သာ ထားသည်။ အော့ဖ်လိုင်းမိတ္တူများ၊ သိမ်းထားသော မက်ဆေ့ချ်များ သို့မဟုတ် ပြဿနာရှာဖွေမှတ်တမ်းများ မသိမ်းပါ၊ ဖွင့်ထားသော ပူးတွဲဖိုင်များနှင့် HTML မေးလ်၏ ဘရောက်ဇာဒေတာကို ZBox ပိတ်သောအခါ ဖျက်သည်။ ပိတ်ခြင်းသည် ZBox စတင်ခဲ့သော ပရိုဂရမ်တိုင်းကိုလည်း ရပ်စေသည်၊ ပူးတွဲဖိုင်ကို ပြနေသည်များ အပါအဝင်၊ ကလစ်ဘုတ်ကို ရှင်းလင်းပြီး ကိုယ်ပိုင်မုဒ်ကို ဤကွန်ပျူတာမှပင် ဖွင့်ခဲ့ခြင်း မဟုတ်လျှင် ဤကွန်ပျူတာကို ယုံကြည်ခြင်း ရပ်သည်။ USB ဒရိုက်စာရင်း၊ စာမျက်နှာဖိုင်နှင့် ဗိုင်းရပ်စ်ဆန့်ကျင်ရေးနှင့် ကွန်ရက်မှတ်တမ်းများကဲ့သို့ မည်သည့်ပရိုဂရမ်မျှ မဖယ်ရှားနိုင်သော မှတ်တမ်းအချို့ကို Windows က ထိန်းသိမ်းထားဆဲဖြစ်သည်။
+title_private_mode = ကိုယ်ပိုင်မုဒ်
+private_mode_need_master = ကိုယ်ပိုင်မုဒ်အတွက် မာစတာစကားဝှက် လိုအပ်သည်၊ အဘယ်ကြောင့်ဆိုသော် သင်၏မဟုတ်သော ကွန်ပျူတာတွင် သင့်အကောင့်များကို ဖွင့်ပေးနိုင်သည်မှာ မာစတာစကားဝှက်သာဖြစ်သည်။ မာစတာစကားဝှက် ခလုတ်ဖြင့် တစ်ခုသတ်မှတ်ပြီး ကိုယ်ပိုင်မုဒ်ကို ဖွင့်ပါ။
+private_mode_enter_master = ကိုယ်ပိုင်မုဒ်ဖွင့်ရန် မာစတာစကားဝှက် ထည့်ပါ။
+private_mode_confirm = ကိုယ်ပိုင်မုဒ်သည် ဤကွန်ပျူတာ သို့မဟုတ် ZBox လည်ပတ်နေသော ဒရိုက်တွင် သင့်မေးလ်၏ မိတ္တူများကို မသိမ်းထားပါ။ ၎င်းကို ဖွင့်ခြင်းဖြင့် ZBox ၏ အော့ဖ်လိုင်းမိတ္တူများ၊ သိမ်းထားသော မက်ဆေ့ချ်များ၊ ဖွင့်ထားသော ပူးတွဲဖိုင်များ၊ HTML မေးလ်၏ ဘရောက်ဇာဒေတာနှင့် ပြဿနာရှာဖွေမှတ်တမ်းများကို ဖျက်သည်။ သင့်မေးလ်ဆာဗာများတွင် မည်သည့်အရာမျှ မဖျက်ပါ၊ သင့်အကောင့်များ၊ အဆက်အသွယ်များနှင့် ဆက်တင်များကို ထိန်းသိမ်းထားသည်။ ကိုယ်ပိုင်မုဒ်ကို ဖွင့်မလား။
+set_minimize_note = ZBox ကို ချုံ့လျှင် ၎င်း၏ အလုပ်ဘားခလုတ် ပျောက်သွားပြီး ထရေးအိုင်ကွန်နောက်တွင် ဆက်လည်ပတ်နေသည်။ ဝင်းဒိုးကို ပြန်ယူရန် ထရေးအိုင်ကွန်ကို ဘယ်ဘက်ကလစ်နှိပ်ပါ (သို့မဟုတ် ကီးဘုတ်အာရုံစိုက်မှုရှိလျှင် Enter/Space နှိပ်ပါ)။
+set_close_note = ဝင်းဒိုး၏ ပိတ်ရန်ခလုတ်၊ Alt+F4 နှင့် မေးလ်တက်ဘ်ပေါ်တွင် Ctrl+W တို့သည် ZBox ကို မထွက်ဘဲ ထရေးတွင် ဖျောက်ထားသည်။ ဖိုင် > ထွက်ရန် (Ctrl+Shift+Q) နှင့် ထရေးအိုင်ကွန်၏ ကိုယ်ပိုင် ထွက်ရန် တို့သည် မည်သို့ပင်ဖြစ်စေ ZBox ကို တကယ်ထွက်စေသဖြင့် ထရေးကို မထိဘဲ ထွက်ရန် ကီးဘုတ်နည်းလမ်း အမြဲရှိသည်။
+set_stay_maximized_note = ZBox သည် အပြည့်ချဲ့ထားပြီး စတင်ကာ သင်က ချဲ့ထားမှုကို ဖြုတ်လျှင် ပြန်ချဲ့သည်။ မီနူးဘား၊ ခေါင်းစဉ်ဘားနှင့် ဝင်းဒိုးအစွန်းတို့ မထိခိုက်ပါ -- ၎င်းသည် အစွန်းမဲ့ မျက်နှာပြင်အပြည့်မုဒ် မဟုတ်သဖြင့် Alt-ကီးမီနူးဖြတ်လမ်းတိုင်း ဆက်လက်အလုပ်လုပ်သည်။
+set_run_at_startup_note = သင် Windows သို့ လော့ဂင်ဝင်သောအခါ ZBox ကို အလိုအလျောက်စတင်ပြီး ၎င်း၏ ဝင်းဒိုးကိုမပြဘဲ ထရေးတွင် တိုက်ရိုက်ဖွင့်သည်။ နောက်တစ်ကြိမ်စတင်သည်အထိ မစောင့်ဘဲ ချက်ချင်း အကျိုးသက်ရောက်သည်။
+set_desktop_shortcut_note = သင့်ဒက်စ်တော့တွင် ZBox ဖြတ်လမ်းတစ်ခုကို ထားပြီး ရှိပြီးသားကို အစားထိုးသည်။ ဖြတ်လမ်းသည် ဤ ZBox ဖိုင်တွဲ၏ တိကျသောတည်နေရာကို သိမ်းထားသဖြင့် ZBox ကို အခြားနေရာသို့ ရွှေ့ခြင်း သို့မဟုတ် ကူးခြင်းပြုလျှင် ဒက်စ်တော့ဖြတ်လမ်းကို ထိုနေရာသို့ ညွှန်ရန် မိတ္တူသစ်ပေါ်တွင် ဤခလုတ်ကို ထပ်နှိပ်ပါ။ ချက်ချင်း အကျိုးသက်ရောက်ပြီး အိုကေ ကို မစောင့်ပါ။
+
+# The Address Book, its contact form and its groups.
+ab_name = အမည်
+ab_phone = ဖုန်း
+ab_notes = မှတ်စုများ
+ab_heading = လိပ်စာစာအုပ်
+ab_contacts = အဆက်အသွယ်များ
+ab_new = &အသစ်...
+ab_edit = &တည်းဖြတ်ရန်...
+ab_delete = &ဖျက်ရန်
+ab_import = &ထည့်သွင်းရန်...
+ab_export = &ထုတ်ယူရန်...
+ab_groups_label = အုပ်စုများ (စာပို့စာရင်းများ)
+ab_groups_name = အုပ်စုများ
+ab_new_group = &အုပ်စုအသစ်...
+ab_rename_group = &အုပ်စုအမည်ပြောင်းရန်...
+ab_delete_group = &အုပ်စုဖျက်ရန်
+ab_manage_members = &အဖွဲ့ဝင်များ စီမံရန်...
+ab_all_contacts = အဆက်အသွယ်အားလုံး
+ab_add_member = ထည့်ရန် >>
+ab_remove_member = << ဖယ်ရန်
+ab_members_of = {name} ၏ အဖွဲ့ဝင်များ
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &အဘိဓာန်တွင် မရှိ:
+sp_not_in_dictionary_name = အဘိဓာန်တွင် မရှိ
+sp_in_this_line_label = ဤစာကြောင်းတွင်:
+sp_in_this_line_name = ဤစာကြောင်းတွင်
+sp_suggestions_label = &အကြံပြုချက်များ:
+sp_suggestions_name = အကြံပြုချက်များ
+sp_replace_with_label = &ဤအရာဖြင့် အစားထိုးရန်:
+sp_replace_with_name = ဤအရာဖြင့် အစားထိုးရန်
+sp_replace = &အစားထိုးရန်
+sp_replace_all = &အားလုံး အစားထိုးရန်
+sp_ignore = &လျစ်လျူရှုရန်
+sp_ignore_all = &အားလုံး လျစ်လျူရှုရန်
+sp_add_to_dictionary = &အဘိဓာန်သို့ ထည့်ရန်
+btn_close = &ပိတ်ရန်
+
+# Privacy and Content Blocking.
+priv_remote_label = မက်ဆေ့ချ်များရှိ အဝေးမှ အကြောင်းအရာ:
+priv_block_remote = &ကျွန်ုပ်မတောင်းမချင်း အဝေးမှ အကြောင်းအရာကို ပိတ်ဆို့ရန် (အကြံပြုသည်)
+priv_blocklist_label = ကြော်ငြာနှင့် ခြေရာခံ ပိတ်ဆို့စာရင်း:
+priv_block_known = &လူသိများသော ကြော်ငြာနှင့် ခြေရာခံ ဒိုမိန်းများကို ပိတ်ဆို့ရန်
+priv_update_daily = &စာရင်းကို နောက်ခံတွင် နေ့စဉ် အပ်ဒိတ်လုပ်ရန်
+priv_update_now = &ယခု အပ်ဒိတ်လုပ်ရန်
+priv_junk_label = အမှိုက်စာမေးလ် စည်းမျဉ်းများ:
+priv_check_inbox = &ဝင်စာပုံးမေးလ်အသစ်ကို ပိတ်ဆို့ထားသော ပို့သူများနှင့် လူသိများသော ဖစ်ရှင်းလင့်ခ်များနှင့် စစ်ဆေးရန်
+priv_move_blocked = &ပိတ်ဆို့ထားသော ပို့သူများ၏ မေးလ်ကို အလိုအလျောက် အမှိုက်စာသို့ ရွှေ့ရန်
+priv_update_phishing = &ဖစ်ရှင်းစာရင်းကို ယခု အပ်ဒိတ်လုပ်ရန်
+priv_blocked_label = ပိတ်ဆို့ထားသော ပို့သူများ:
+priv_blocked_name = ပိတ်ဆို့ထားသော ပို့သူများ
+priv_remove_blocked = &ပိတ်ဆို့ထားသော ပို့သူကို ဖယ်ရှားရန်
+priv_never_junk_label = အမှိုက်စာအဖြစ် ဘယ်တော့မှ မယူဆသော ပို့သူများ:
+priv_never_junk_name = အမှိုက်စာအဖြစ် ဘယ်တော့မှ မယူဆသော ပို့သူများ
+priv_remove_never_junk = &ဘယ်တော့မှ အမှိုက်စာမဟုတ်သော ပို့သူကို ဖယ်ရှားရန်
+priv_allowed_label = အဝေးမှ အကြောင်းအရာကို ဖွင့်ခွင့်ရှိသော ပို့သူများ:
+priv_allowed_name = ခွင့်ပြုထားသော ပို့သူများ
+priv_remove_selected = &ရွေးထားသော ပို့သူကို ဖယ်ရှားရန်
+
+# Message Filters.
+filt_rule_name = စည်းမျဉ်းအမည်
+filt_enabled = &ဖွင့်ထားသည်
+filt_match_label = ကိုက်ညီမှု:
+filt_match_all = &အောက်ပါအားလုံးနှင့် ကိုက်ညီရမည် (နှင့်)
+filt_match_any = &အောက်ပါတစ်ခုခုနှင့် ကိုက်ညီရမည် (သို့မဟုတ်)
+filt_conditions_label = အခြေအနေများ (ကျော်ရန် တန်ဖိုးကို ဗလာထားပါ):
+filt_condition_field = အခြေအနေ {number} အကွက်
+filt_condition_contains = အခြေအနေ {number} ပါဝင်သည်
+filt_actions_label = လုပ်ဆောင်ချက်များ:
+filt_mark_read = &ဖတ်ပြီးအဖြစ် မှတ်ရန်
+filt_flag = &မက်ဆေ့ချ်ကို ကြယ်ပွင့်ပေးရန်
+filt_move_label = ဖိုင်တွဲသို့ ရွှေ့ရန်:
+filt_move_name = ဖိုင်တွဲသို့ ရွှေ့ရန်
+filt_rules_name = စစ်ထုတ်မှုစည်းမျဉ်းများ
+filt_new = &စည်းမျဉ်းအသစ်...
+filt_edit = &စည်းမျဉ်းတည်းဖြတ်ရန်...
+filt_delete = &စည်းမျဉ်းဖျက်ရန်
+filt_up = &အပေါ်ရွှေ့ရန်
+filt_down = &အောက်ရွှေ့ရန်
+filt_run_label = ဖိုင်တွဲပေါ်တွင် ယခုလုပ်ဆောင်ရန်:
+filt_run_name = ယခုလုပ်ဆောင်မည့် ဖိုင်တွဲ
+filt_run_now = &ယခုလုပ်ဆောင်ရန်
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &ပါစ်ကီးဖြင့် လော့ခ်ဖွင့်ရန် (Windows Hello)
+unl_security_key = &လုံခြုံရေးကီးဖြင့် လော့ခ်ဖွင့်ရန်
+unl_master_password_label = &မာစတာစကားဝှက်:
+unl_master_password_name = မာစတာစကားဝှက်
+unl_unlock = &လော့ခ်ဖွင့်ရန်
+unl_exit = &ZBox မှ ထွက်ရန်
+unl_methods_label = &မှတ်ပုံတင်ထားသော နည်းလမ်းများ:
+unl_methods_name = မှတ်ပုံတင်ထားသော လော့ခ်ဖွင့်နည်းများ
+unl_add_passkey = &ပါစ်ကီးထည့်ရန်…
+unl_add_key = &လုံခြုံရေးကီးထည့်ရန်…
+unl_reassign = &ပါစ်ကီးကို ဤကွန်ပျူတာသို့ ပြန်လည်သတ်မှတ်ရန်…
+unl_test = &စမ်းသပ်ရန်…
+unl_remove = &ဖယ်ရှားရန်
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = မှ
+comp_to = သို့
+comp_cc = မိတ္တူ (Cc)
+comp_bcc = လျှို့ဝှက်မိတ္တူ (Bcc)
+comp_subject = ခေါင်းစဉ်
+comp_attach_button = ဖိုင်ပူးတွဲရန်...
+comp_sending = ပို့နေပါသည်...
+comp_report_label = &အစီရင်ခံစာ:
+comp_report_name = အစီရင်ခံစာ
+comp_refresh = &ပြန်လည်စတင်ရန်
+comp_copy = &ကူးယူရန်
+comp_preview_read = လက်ခံသူ ဖတ်သည့်အတိုင်း
+comp_preview_source = ပို့မည့် HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = မက်ဆေ့ချ်ကိုယ်ထည်
+mv_blocked_notice = ပိတ်ဆို့ထားသော အကြောင်းအရာ အသိပေးချက်
+mv_show_remote = &အဝေးမှ အကြောင်းအရာ ပြရန်
+mv_always_allow = &ဤပို့သူကို အမြဲ ခွင့်ပြုရန်
+mv_message_headers = မက်ဆေ့ချ်ခေါင်းစီးများ
+mv_attachments = ပူးတွဲဖိုင်များ
+mv_attachments_count = ပူးတွဲဖိုင်များ ({count})
+mv_save_attachment = သိမ်းရန်: {filename}
+mv_save_all = အားလုံး သိမ်းရန်
+mv_html_view = မက်ဆေ့ချ် HTML မြင်ကွင်း
+mv_saved_message = သိမ်းထားသော မက်ဆေ့ချ်
+mv_show_remote_tip = ဤမက်ဆေ့ချ်ကို အဝေးမှ ပုံများနှင့် စတိုင်များနှင့်အတူ ပြန်ဖွင့်ပါ။ လူသိများသော ခြေရာခံများကို ဆက်လက်ပိတ်ဆို့ထားမည်။
+mv_always_allow_tip = {sender} ထံမှ မက်ဆေ့ချ်တိုင်းတွင် အဝေးမှ အကြောင်းအရာကို ဖွင့်ပါ။
+
+# The search tab.
+srch_account = အကောင့်
+srch_folder = ဖိုင်တွဲ
+srch_for = ရှာမည့်အရာ
+srch_look_in = ရှာမည့်နေရာ
+srch_in_all = အားလုံး
+srch_in_subject = ခေါင်းစဉ်
+srch_in_from = ပို့သူ
+srch_in_to = လက်ခံသူ
+srch_in_body = ကိုယ်ထည်
+srch_date = ရက်စွဲ
+srch_date_any = အချိန်မရွေး
+srch_date_today = ယနေ့
+srch_date_yesterday = မနေ့က
+srch_date_week = လွန်ခဲ့သော ၇ ရက်
+srch_date_month = လွန်ခဲ့သော ၃၀ ရက်
+srch_date_year = ယခုနှစ်
+srch_date_custom = စိတ်ကြိုက်အပိုင်းအခြား
+srch_from_date = ဤရက်စွဲမှ (နှစ်-လ-ရက်၊ ရွေးချယ်နိုင်သော အချိန်)
+srch_to_date = ဤရက်စွဲအထိ (နှစ်-လ-ရက်၊ ရွေးချယ်နိုင်သော အချိန်)
+srch_unread = မဖတ်ရသေးသည်များသာ
+srch_flagged = ကြယ်ပွင့်ပေးထားသည်များသာ
+srch_attachment = ပူးတွဲဖိုင်ပါသည်
+
+# The signature editor.
+sig_editors = လက်မှတ်တည်းဖြတ်သူများ
+sig_formatted = လက်မှတ်၊ ဖော်မက်လုပ်ထားသော
+sig_source = လက်မှတ်၊ HTML အရင်းအမြစ်
+sig_plain_label = ရိုးရိုးစာသား အစားထိုးမှု (HTML နှင့်အတူ ပို့သည်)
+sig_plain_name = ရိုးရိုးစာသား အစားထိုးမှု
+
+# About ZBox.
+about_text_name = ZBox အကြောင်း စာသား
+about_view_license = &လိုင်စင်ကြည့်ရန်...
+about_google = &Google အက်ပ်စကားဝှက်များ...
+about_support = &ZBox ကို ထောက်ပံ့ပါ -- လူတစ်ဦးတည်း၏ ဖန်တီးမှုနှင့် ထိန်းသိမ်းမှု
+about_repos = &GitHub ပေါ်ရှိ Harith ၏ အက်ပ်သိုလှောင်ရုံများ
+about_contact = &Harith ကို ဆက်သွယ်ရန်
+btn_close_plain = ပိတ်ရန်
+btn_cancel_plain = ပယ်ဖျက်ရန်
+
+# The license window.
+eula_heading = ZBox လိုင်စင်
+eula_text_name = ZBox လိုင်စင်စာသား
+eula_third_party = တတိယပါတီ အစိတ်အပိုင်းများ၏ လိုင်စင်စာမျက်နှာများ:
+eula_agree = &အထက်ပါစည်းကမ်းချက်များကို ကျွန်ုပ် လက်ခံပါသည်
+eula_agree_name = ZBox လိုင်စင်စည်းကမ်းချက်များကို ဖတ်ပြီး လက်ခံပါသည်
+eula_disagree = &ကျွန်ုပ် မလက်ခံပါ
+eula_next = &နောက်တစ်ဆင့်
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox စာတမ်းစာသား
+doc_copy = ကလစ်ဘုတ်သို့ ကူးယူရန်
+shortcuts_heading = ကီးဘုတ်ဖြတ်လမ်းများ
+shortcuts_text_name = ကီးဘုတ်ဖြတ်လမ်းများ စာသား
+
+# The main window's own panes.
+mf_toolbar = ပင်မကိရိယာဘား
+mf_tabs = ZBox တက်ဘ်များ
+tree_heading = အကောင့်များနှင့် ဖိုင်တွဲများ
+tree_name = အကောင့်နှင့် ဖိုင်တွဲ သစ်ပင်
+envlist_heading = မက်ဆေ့ချ်များ
+envlist_name = မက်ဆေ့ချ်စာရင်း
+rdr_heading = မက်ဆေ့ချ်
+rdr_name = မက်ဆေ့ချ်ဖတ်သူ
+conv_heading_one = စကားဝိုင်း: မက်ဆေ့ချ် ၁ စောင်
+conv_heading_many = စကားဝိုင်း: မက်ဆေ့ချ် {count} စောင်
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} ခုအနက် {completed} ခု ပြီးဆုံးပါပြီ။
+bulk_cancelling = ပယ်ဖျက်နေသည် -- လက်ရှိမက်ဆေ့ချ်ကို အပြီးသတ်နေသည်...
+cache_clear_now = အော့ဖ်လိုင်းမက်ဆေ့ချ်ကက်ရှ်ကို ယခုရှင်းလင်းရန်... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}၊ ကာကွယ်ထားသည်
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = ပြသမည့်အမည်သည် ရွေးချယ်နိုင်သည် -- ဤအကောင့်၏ ကိုယ်ပိုင်အမည်ဖြင့် ပို့ရန် ဗလာထားပါ။
+acct_note_identity = သင့်ဝန်ဆောင်မှုပေးသူတွင် ဤမေးလ်ဘောက်စ်နှင့် ချိတ်ထားသော စိတ်ကြိုက်ဒိုမိန်း ရှိလျှင် အီးမေးလ်လိပ်စာသည် လော့ဂင်အီးမေးလ်နှင့် ကွာခြားနိုင်သည်။ မေးလ်ကို အထက်ပါလိပ်စာအောက်တွင် ပို့၍ လက်ခံသော်လည်း လော့ဂင်ဝင်ခြင်းသည် လော့ဂင်အီးမေးလ်ကို ဆက်သုံးသည်။ ဤအကောင့်အတွက် သိမ်းထားပြီးသော စကားဝှက်ကို ထိန်းရန် စကားဝှက်အကွက်ကို ဗလာထားပါ -- ဥပမာ Gmail အက်ပ်စကားဝှက်ကို ပြောင်းပြီးနောက် အသစ်ကို ဤနေရာတွင် ရိုက်ပါ၊ မဟုတ်လျှင် ဗလာထားပါ။
+acct_note_identities = ဤအကောင့်က ပို့ရန်နှင့် ပြန်စာပေးရန် သုံးနိုင်သော အခြားလိပ်စာများ။ ၎င်းတို့အနက် တစ်ခုသို့ ပို့ထားသော မက်ဆေ့ချ်ကို ပြန်စာပေးသောအခါ မှ သည် အထက်ပါလိပ်စာအစား ထိုလိပ်စာသို့ မူလအားဖြင့် ပြောင်းသည်။
+acct_note_signature = ဤအကောင့်မှ ပို့သော မက်ဆေ့ချ်အသစ်၊ ပြန်စာနှင့် ထပ်ဆင့်ပို့တိုင်းတွင် "-- " စာကြောင်းအောက်၌ ထည့်သည်။ မလိုလျှင် ဗလာထားပါ။ လက်မှတ်တည်းဖြတ်ရန် သည် စာလုံးမည်း၊ စာရင်းများနှင့် လင့်ခ်များ ရနိုင်သော ဖော်မက်လုပ်ထားသည့် တည်းဖြတ်ကိရိယာကို ဖွင့်သည်၊ အထက်ပါအကွက်တွင် ၎င်းနှင့်အတူ ပါသော ရိုးရိုးစာသားဗားရှင်း ရှိမည်။
+acct_note_junk = အမှိုက်စာအဖြစ် မှတ်ရန် က မက်ဆေ့ချ်များကို မည်သည့်အစစ်အမှန်ဖိုင်တွဲသို့ ရွှေ့မည်ကို သတ်မှတ်သည်။ "{automatic}" သည် မော်ကွန်းတင်ရန်နှင့် အမှိုက်ပုံးက သုံးပြီးသား ဝန်ဆောင်မှုပေးသူကို သိသော ခန့်မှန်းချက်ကို သုံးသည်၊ ထိုခန့်မှန်းချက်မှားလျှင် သို့မဟုတ် သင့်အမှိုက်စာဖိုင်တွဲတွင် စိတ်ကြိုက်အမည်ရှိလျှင်သာ ဤအရာကို သတ်မှတ်ပါ။
+acct_note_disable = ပိတ်ထားသော အကောင့်ကို ပြန်ဖွင့်သည်အထိ ဘယ်တော့မှ မဆက်သွယ်ပါ -- IDLE မရှိ၊ အချိန်မှန်ပြန်လည်စတင်ခြင်း မရှိ၊ ဘာမျှ မရှိ။ ၎င်းသည် သစ်ပင်တွင် (ပိတ်ထားသည်) ဟု မှတ်ထားပြီး ပေါ်နေဆဲဖြစ်ပြီး ဒေါင်းလုဒ်ဆွဲပြီးသား မေးလ်ကို အော့ဖ်လိုင်းတွင် ရနိုင်သည်။ အကောင့်များ > အကောင့်ကို ပိတ်ရန် သို့မဟုတ် အကောင့်၏ကိုယ်ပိုင် အကြောင်းအရာမီနူးနှင့် တူညီသော ခလုတ်ဖြစ်သည်၊ ဤအရာသည် ၎င်းကို ရောက်ရန် နောက်တစ်နေရာ ဖြစ်သည်။
+acct_note_default = ဤအကောင့်၏ ဖိုင်တွဲများကို သစ်ပင်တွင် ပထမဆုံးပြပြီး ရေးသားသည့်နေရာတွင် ကိုယ်တိုင်မပြောင်းလျှင် မက်ဆေ့ချ်အသစ်ကို မူလအားဖြင့် ဤအကောင့်မှ ပို့သည်။ ပြန်စာ သို့မဟုတ် ထပ်ဆင့်ပို့ခြင်းက မည်သည့်လိပ်စာကို သုံးမည်ကို မထိခိုက်ပါ -- ၎င်းသည် ပြန်ကြားနေသော မက်ဆေ့ချ်ကို လိုက်သည် (အထက်ပါ ထပ်ဆောင်းအထောက်အထားများကို ကြည့်ပါ)။ မူလအကောင့် တစ်ခုတည်းသာ အမြဲရှိရမည်ဖြစ်သဖြင့် အခြားတစ်ခုကို မအမှန်ခြစ်ဘဲ လက်ရှိမူလအကောင့်တွင် ဤအရာကို အမှန်ခြစ်ဖြုတ်လျှင် ဘာမျှမပြောင်းပါ -- အစား မူလကို လွှဲပြောင်းရန် အခြားအကောင့်၏ အကွက်ကို အမှန်ခြစ်ပါ။
+acct_note_mute = &အသံပိတ်ခြင်းသည် ဤအကောင့်၏ မေးလ်အသစ်အသံ၊ အသံထွက်ကြေညာချက်နှင့် Windows အသိပေးချက်ကို အခြားနည်းဖြင့် မည်သို့ပင်ပြင်ဆင်ထားစေ ပိတ်ဆို့သည်။ ၎င်းသည် အခြားအကောင့်များကို မထိခိုက်ပါ၊ ဆက်တင်များ > အသံများနှင့် အသိပေးချက်များ ရှိ ပင်မခလုတ်များ (အသံများနှင့် ဒက်စ်တော့အသိပေးချက်များ ခြုံငုံ) ကို လိုက်နာရဆဲဖြစ်သည်။
+wiz_note_app_password = ZBox အတွက် အက်ပ်စကားဝှက်ကို ဖန်တီးပြီးပါက ဆက်သွားရန် နောက်တစ်ဆင့် ကို နှိပ်ပါ။
+wiz_note_login = လော့ဂင်အထောက်အထားများ။\nသင့်လော့ဂင်အီးမေးလ်သည် အထက်ပါလိပ်စာနှင့် ကွာခြားလျှင်၊ ဥပမာ သင့်ဝန်ဆောင်မှုပေးသူအကောင့်သည် login@example.net ဖြစ်ပြီး သင်က you@example.org အဖြစ် ပို့ကာ လက်ခံလိုလျှင် လော့ဂင်အီးမေးလ်ကို ဤနေရာတွင် ထည့်ပါ။ စိတ်ကြိုက်ပို့မည့်လိပ်စာကို နောက်ပိုင်း အကောင့်နှင့် အထောက်အထား ဆက်တင်များတွင် သတ်မှတ်နိုင်သည်။
+wiz_note_servers = ဒိုမိန်းကို သိရှိသည့်နေရာတွင် ကြိုတင်ဖြည့်ထားသော ဆာဗာဆက်တင်များ။ ကွာခြားရမည့်အရာကို တည်းဖြတ်ပါ။
+wiz_preset_none = ဤဒိုမိန်းအတွက် ကြိုတင်သတ်မှတ်ချက် မတွေ့ပါ။ သင့်ဝန်ဆောင်မှုပေးသူ၏ ဆာဗာဆက်တင်များကို ကိုယ်တိုင်ထည့်ပါ၊ သင့်ဝန်ဆောင်မှုပေးသူ၏ အကူအညီစာမျက်နှာများတွင် ဖော်ပြထားသည်။
+ab_note_groups = အုပ်စုဝင်အားလုံးကို တစ်ပြိုင်နက် ဖြည့်ရန် ရေးသားသည့်ဝင်းဒိုး၏ သို့၊ မိတ္တူ သို့မဟုတ် လျှို့ဝှက်မိတ္တူ အကွက်တွင် ၎င်း၏အမည်ကို ရိုက်ပါ။
+cache_note_intro = ဤအရာများသည် ZBox ၏ ဒေသတွင်းမိတ္တူများကိုသာ ဖယ်ရှားသည်။ မည်သည့်မေးလ်ဆာဗာမှ မည်သည့်အရာမျှ မဖျက်ပါ၊ ဖယ်ရှားထားသော မက်ဆေ့ချ်ကို သင်နောက်တစ်ကြိမ်ဖွင့်သောအခါ ပြန်ဒေါင်းလုဒ်ဆွဲမည်။
+cache_note_age = ZBox တွင် ကီးဘုတ်လှုပ်ရှားမှု မိနစ်ဆယ်မိနစ် မရှိဘဲ မက်ဆေ့ချ်မဖွင့်ထားသောအခါ အလိုအလျောက်ရှင်းလင်းမှုသည် တစ်နေ့တစ်ကြိမ် လည်ပတ်သည်။ ၎င်းသည် သင့်အကောင့်တွင် ရှိနေဆဲဖြစ်သော မက်ဆေ့ချ်များအပါအဝင် မက်ဆေ့ချ်တစ်စောင်စီ၏ ကိုယ်ပိုင်ရက်စွဲအလိုက် သွားသည်။
+filt_note_intro = စည်းမျဉ်းများကို အပေါ်မှအောက်သို့ အစဉ်လိုက် လည်ပတ်ပြီး မှ၊ သို့ နှင့် ခေါင်းစဉ်ကို စစ်ဆေးသည်။ ဤအကောင့်၏ ဝင်စာပုံးသို့ မေးလ်အသစ်ရောက်သောအခါ အလိုအလျောက်အသုံးပြုသည်၊ ဖိုင်တွဲထဲတွင် ရှိပြီးသား မက်ဆေ့ချ်များတွင် အသုံးပြုရန် အောက်ပါ ယခုလုပ်ဆောင်ရန် ကို သုံးပါ။
+filt_note_run_now = အထက်ရှိ ဖွင့်ထားသော စည်းမျဉ်းတိုင်းကို အစဉ်လိုက် ရွေးထားသောဖိုင်တွဲထဲရှိ မက်ဆေ့ချ်တိုင်းတွင် အသုံးပြုသည် -- အိုကေ ကဲ့သို့ ဦးစွာ သင့်ပြောင်းလဲမှုများကို သိမ်းသည်။
+mp_note_intro = ဤအကောင့်များကို အခြားကွန်ပျူတာတွင် တပ်ဆင်ထားခဲ့သည်။ ၎င်းတို့၏ သိမ်းထားသော စကားဝှက်များကို ဤနေရာတွင် လော့ခ်ဖွင့်ရန် မာစတာစကားဝှက်ကို ထည့်ပါ။ ဤကွန်ပျူတာတွင် တစ်ကြိမ်သာ မေးမည်။\n\nမရှိလျှင် အကောင့်တိုင်း ၎င်း၏မေးလ်ဆာဗာသို့ ပြန်လည်လော့ဂင်ဝင်ရမည်။
+priv_note_remote = မက်ဆေ့ချ်တစ်စောင်က အင်တာနက်မှ ဖွင့်သော ပုံများ၊ စတိုင်ရှိစ်များနှင့် စာလုံးများသည် သင်ဖွင့်လိုက်သည့်အချိန်နှင့် မည်သည့်နေရာမှဖြစ်သည်ကို ပို့သူကို အသိပေးသည်။ ၎င်းကို ဖွင့်ထားလျှင် ၎င်းတို့မည်သည်မျှ မဖွင့်ပါ: ဘာကို ပိတ်ဆို့ထားသည်ဟု ပြောသော သတိပေးချက်ကို မက်ဆေ့ချ်အပေါ်တွင် ပြပြီး Ctrl+Shift+I က ထိုမက်ဆေ့ချ်တစ်စောင်အတွက် ဖွင့်ပေးသည်။ မက်ဆေ့ချ်နှင့်အတူ ပူးတွဲပါသော ပုံများကို အမြဲပြသည်။ စခရစ်များနှင့် ထည့်သွင်းထားသော ဘောင်များကို မည်သို့ပင်ဖြစ်စေ ဖယ်ရှားပြီး ဘယ်တော့မှ မဖွင့်ပါ။
+priv_note_blocklist = ဤအရာသည် ဒုတိယအလွှာဖြစ်သည်။ သင်က မက်ဆေ့ချ်၏ အဝေးမှ အကြောင်းအရာကို ဖွင့်သောအခါ သို့မဟုတ် ပို့သူကို ခွင့်ပြုသောအခါ အရေးကြီးသည်: ပုံများ ဖွင့်သော်လည်း လူသိများသော ခြေရာခံ သို့မဟုတ် ကြော်ငြာဒိုမိန်းမှ ပေးသောအရာ မည်သည်မျှ မဖွင့်သေးပါ။ စာရင်းကို အများသုံး ကြော်ငြာနှင့် ခြေရာခံစာရင်းများမှ ဒေါင်းလုဒ်ဆွဲ၍ ပေါင်းစည်းသည်၊ အပ်ဒိတ်လုပ်ရန် စက္ကန့်တစ်ခု သို့မဟုတ် နှစ်ခု ကြာပြီး နောက်ခံတွင် လည်ပတ်သည်။
+priv_note_junk = ခန့်မှန်းချက် မရှိပါ။ မက်ဆေ့ချ်သည် စာပို့စာရင်းမှ မလာလျှင် အမှိုက်စာအဖြစ် မှတ်ရန် က ပို့သူကို အောက်ပါပိတ်ဆို့စာရင်းသို့ ထည့်သည်။ အမှိုက်စာမဟုတ်ဟု မှတ်ရန် က ပို့သူကို ဘယ်တော့မှ အမှိုက်စာမဟုတ်သည့်စာရင်းသို့ ထည့်ပြီး ထိုမက်ဆေ့ချ်ကို ပြန်မစစ်တော့ပါ။ ပိတ်ဆို့ထားသော ပို့သူ၏ မက်ဆေ့ချ်အသစ်ကို စာရင်းတွင် ပိတ်ဆို့ထားသော ပို့သူ ဟု မှတ်ထားပြီး လူသိများသော ဖစ်ရှင်း သို့မဟုတ် မဲလ်ဝဲဆိုက်သို့ လင့်ခ်ချိတ်သည်ကို ဖစ်ရှင်း ဖြစ်နိုင်သည် ဟု မှတ်သည်။ သင့်မေးလ်ဝန်ဆောင်မှုပေးသူ၏ ကိုယ်ပိုင်စပမ်စစ်ထုတ်မှုသည် ယခင်ကဲ့သို့ပင် လည်ပတ်သည်။
+priv_status_phishing_updating = ဖစ်ရှင်းစာရင်း: နောက်ခံတွင် အပ်ဒိတ်လုပ်နေသည်။ ရလဒ်ကြည့်ရန် ဤဒိုင်ယာလော့ကို ပြန်ဖွင့်ပါ။
+priv_status_updating = နောက်ခံတွင် အပ်ဒိတ်လုပ်နေသည်။ ရလဒ်ကြည့်ရန် ဤဒိုင်ယာလော့ကို ပြန်ဖွင့်ပါ။
+rel_note_intro = ဤအကောင့်၏ ဖိုင်တွဲအားလုံးတွင် Message-ID/References ခေါင်းစီးများမှတစ်ဆင့် "{subject}" နှင့် ဆက်စပ်သော မက်ဆေ့ချ်များ။
+srch_note_intro = အကောင့်များနှင့် ဖိုင်တွဲအားလုံးတွင် စကားလုံးများကို ရှာပါ၊ သို့မဟုတ် အောက်ပါရွေးချယ်စရာများဖြင့် ရှာဖွေမှုကို ကျဉ်းစေပါ။ ရက်စွဲ သို့မဟုတ် အမှန်ခြစ်ဘောက်စ်များဖြင့်သာ မက်ဆေ့ချ်များ ရှာရန် စကားလုံးများကို ဗလာထားပါ။
+sig_note_plain = ရိုးရိုးစာသား အစားထိုးမှုကို ဗလာထားလျှင် သိမ်းရန် နှိပ်သောအခါ ဖော်မက်လုပ်ထားသော လက်မှတ်မှ ရေးမည်။
+unified_note_intro = အကောင့်အားလုံးတွင် မည်သည့်ဖိုင်တွဲများကို ပေါင်းစည်းမည်ကို ရွေးပါ။ အမှန်ခြစ်ထားသော တစ်ခုစီသည် သင့်အကောင့်အားလုံးမှ ထိုဖိုင်တွဲကို ပေါင်းစည်းသော သစ်ပင်ရှိ တစ်ခုတည်းသော ထည့်သွင်းချက် ဖြစ်လာမည်။
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox အကြောင်း
+title_account_settings = အကောင့်နှင့် အထောက်အထား ဆက်တင်များ: {name}
+title_new_account = အကောင့်အသစ်
+title_address_book = လိပ်စာစာအုပ်
+title_members = အဖွဲ့ဝင်များ: {name}
+ab_group_name_prompt = အုပ်စုအမည်:
+title_new_group = အုပ်စုအသစ်
+title_cache_cleanup = ကက်ရှ်ရှင်းလင်းမှု ပြင်ဆင်ချက်
+cache_age_prompt = ဤထက်ဟောင်းသော ကက်ရှ်မက်ဆေ့ချ်များကို အလိုအလျောက် ဖယ်ရှားရန်:
+title_automatic_cleanup = အလိုအလျောက်ရှင်းလင်းမှု
+comp_link_prompt = လင့်ခ်လိပ်စာ:
+title_insert_link = လင့်ခ်ထည့်ရန်
+title_composer_diagnostics = ရေးသားမှု စစ်ဆေးခြင်း
+title_formatted_preview = ဖော်မက်လုပ်ထားသော ကြိုကြည့်မှု
+title_license_agreement = ZBox လိုင်စင်သဘောတူညီချက်
+title_message_filters = မက်ဆေ့ချ်စစ်ထုတ်မှုများ: {account}
+title_master_password_required = မာစတာစကားဝှက် လိုအပ်သည်
+title_privacy_dialog = ကိုယ်ရေးလုံခြုံမှုနှင့် အကြောင်းအရာပိတ်ဆို့မှု
+title_privacy = ကိုယ်ရေးလုံခြုံမှု
+title_settings = ဆက်တင်များ
+set_tab_general = ယေဘုယျ
+set_tab_personalization = ကိုယ်ပိုင်ပြုပြင်မှု
+set_tab_accessibility = လက်လှမ်းမီမှုနှင့် ဖြတ်လမ်းကီးများ
+set_tab_maintenance = ထိန်းသိမ်းမှုနှင့် ရှင်းလင်းမှု
+set_tab_sounds = အသံများနှင့် အသိပေးချက်များ
+set_tab_security = လုံခြုံရေး
+title_unified_folders = ပေါင်းစည်းထားသော ဖိုင်တွဲများ
+title_zbox_locked = ZBox လော့ခ်ချထားသည်
+title_message_view = မက်ဆေ့ချ်မြင်ကွင်း
+title_remote_content = အဝေးမှ အကြောင်းအရာ
+title_refresh = ပြန်လည်စတင်ရန်
+title_refresh_all = အားလုံး ပြန်လည်စတင်ရန်
+mv_choose_folder = ပူးတွဲဖိုင်ကို သိမ်းရန် ဖိုင်တွဲရွေးပါ
+title_thread = ချည်မျှင်
+title_inbox = ဝင်စာပုံး
+title_compose = ရေးသား
+title_watch_thread = ချည်မျှင်ကို စောင့်ကြည့်ရန်
+title_ignore_thread = ချည်မျှင်ကို လျစ်လျူရှုရန်
+title_edit_signature = လက်မှတ်တည်းဖြတ်ရန်
+title_account = အကောင့်
+mf_folder_name_prompt = ဖိုင်တွဲအမည်:
+mf_new_name_prompt = အမည်သစ်:
+title_refresh_all_accounts = အကောင့်အားလုံး ပြန်လည်စတင်ရန်
+title_sender = ပို့သူ
+title_new_mail = မေးလ်အသစ်
+mf_export_dialog_title = အကောင့် {count} ခုလုံးနှင့် ဆက်တင်များ ထုတ်ယူရန်
+mf_related_tab = ဆက်စပ်: {subject}
+title_hotkeys_diagnostic = ဖြတ်လမ်းကီး စစ်ဆေးမှု
+set_choose_attachment_dir = သိမ်းထားသော ပူးတွဲဖိုင်ဖိုင်တွဲ ရွေးပါ
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox လော့ခ်ချထားသည်။ ၎င်းကို လော့ခ်ဖွင့်ရန် အောက်ပါနည်းလမ်းများအနက် တစ်ခုခုကို သုံးပါ။ ပယ်ဖျက်လျှင် မည်သည့်အကောင့်မျှ မဖွင့်ဘဲ ZBox ပိတ်သွားမည်။
+unl_note_foreign_passkey = ဤဖိုင်တွဲနှင့်အတူ သိမ်းထားသော ပါစ်ကီးသည် အခြားကွန်ပျူတာ၏ဖြစ်သဖြင့် ဤနေရာတွင် မသုံးနိုင်ပါ။ သင့်လုံခြုံရေးကီး သို့မဟုတ် မာစတာစကားဝှက်ဖြင့် လော့ခ်ဖွင့်ပြီး ဤကွန်ပျူတာတွင် ပါစ်ကီးသတ်မှတ်ရန် ဆက်တင်များ၊ ကိုယ်ရေးလုံခြုံမှုနှင့် လုံခြုံရေး၊ လော့ခ်ဖွင့်နည်းများ ကို သုံးပါ။
+unl_note_methods = အက်ပ်လော့ခ်ဖွင့်ထားသောအခါ မာစတာစကားဝှက်နှင့်အတူ ဤအရာများအနက် တစ်ခုခုက ZBox ကို လော့ခ်ဖွင့်သည်။ ပါစ်ကီးသည် ဤကွန်ပျူတာတွင် Windows Hello ကို သုံးသည်၊ လုံခြုံရေးကီးသည် USB သို့မဟုတ် NFC ပေါ်ရှိ FIDO2 ကီးဖြစ်ပြီး သင်ထိုးသွင်းသည့် မည်သည့်ကွန်ပျူတာတွင်မဆို အလုပ်လုပ်သည်။
+unl_note_not_encryption = ဤအရာများသည် အက်ပ်ကို လော့ခ်ဖွင့်သည်။ မည်သည့်အရာကိုမျှ ကုဒ်မဝှက်ပါ: ဤဖိုင်တွဲ မသုံးဖူးသော ကွန်ပျူတာတွင် သိမ်းထားသော အကောင့်စကားဝှက်များကို ဖွင့်နိုင်သည်မှာ မာစတာစကားဝှက်သာ ဖြစ်သည်။ ၎င်းကို ဦးစွာသတ်မှတ်ရမည်ဖြစ်ပြီး ထိုအချိန်အထိ ဤအရာများတွင် မည်သည့်အရာကိုမျှ ထည့်၍ မရပါ။
+unl_add_passkey_unavailable = &ပါစ်ကီးထည့်ရန် (မရနိုင်ပါ)
+unl_add_key_unavailable = &လုံခြုံရေးကီးထည့်ရန် (မရနိုင်ပါ)
+unl_reassign_unavailable = &ပါစ်ကီးကို ဤကွန်ပျူတာသို့ ပြန်လည်သတ်မှတ်ရန် (မရနိုင်ပါ)
+unl_status_cancelled_passkey = ပါစ်ကီးကို ပယ်ဖျက်ခဲ့သည်။ ZBox လော့ခ်ချထားဆဲဖြစ်သည်။
+unl_status_cancelled_key = လုံခြုံရေးကီးကို ပယ်ဖျက်ခဲ့သည်။ ZBox လော့ခ်ချထားဆဲဖြစ်သည်။
+unl_status_enter_password = မာစတာစကားဝှက် ထည့်ပါ။
+unl_status_no_master = မာစတာစကားဝှက် မသတ်မှတ်ရသေးသဖြင့် ပါစ်ကီး သို့မဟုတ် လုံခြုံရေးကီးကို မထည့်နိုင်သေးပါ။ ဆက်တင်များ၊ ကိုယ်ရေးလုံခြုံမှုနှင့် လုံခြုံရေး ရှိ မာစတာစကားဝှက် ခလုတ်ဖြင့် တစ်ခုသတ်မှတ်ပြီး ဤနေရာသို့ ပြန်လာပါ။ မာစတာစကားဝှက်က အခြားကွန်ပျူတာတွင် သင့်သိမ်းထားသော အကောင့်စကားဝှက်များကို ဖွင့်သည်၊ ပါစ်ကီးသည် ဤကွန်ပျူတာတစ်ခုတည်းတွင် အက်ပ်ကို လော့ခ်ဖွင့်သဖြင့် ၎င်းတစ်ခုတည်း မရပ်တည်နိုင်ပါ။
+unl_status_unsupported = ဤကွန်ပျူတာ၏ Windows သည် ပါစ်ကီး သို့မဟုတ် လုံခြုံရေးကီးများကို မထောက်ပံ့သဖြင့် ဤနေရာတွင် ZBox ကို လော့ခ်ဖွင့်နိုင်သည်မှာ မာစတာစကားဝှက်သာ ဖြစ်သည်။
+unl_status_foreign_one = ပါစ်ကီး ၁ ခုသည် အခြားကွန်ပျူတာ၏ဖြစ်ပြီး ဤနေရာတွင် ZBox ကို လော့ခ်မဖွင့်နိုင်ပါ။ ပြန်လည်သတ်မှတ်ခြင်းက ၎င်းကို ဤကွန်ပျူတာတွင် ဖန်တီးထားသည့်အရာဖြင့် အစားထိုးသည်။
+unl_status_foreign_many = ပါစ်ကီး {count} ခုသည် အခြားကွန်ပျူတာ၏ဖြစ်ပြီး ဤနေရာတွင် ZBox ကို လော့ခ်မဖွင့်နိုင်ပါ။ ပြန်လည်သတ်မှတ်ခြင်းက ၎င်းတို့ကို ဤကွန်ပျူတာတွင် ဖန်တီးထားသည့်အရာဖြင့် အစားထိုးသည်။
+unl_status_foreign_one_no_hello = ပါစ်ကီး ၁ ခုသည် အခြားကွန်ပျူတာ၏ဖြစ်ပြီး ဤနေရာတွင် ZBox ကို လော့ခ်မဖွင့်နိုင်ပါ။ ဤနေရာတွင် Windows Hello မသတ်မှတ်ရသေးသဖြင့် ဤကွန်ပျူတာတွင် အစားထိုး၍ မရပါ၊ ဖယ်ရှားရန် က ၎င်းကို မေ့ပစ်သည်။
+unl_status_foreign_many_no_hello = ပါစ်ကီး {count} ခုသည် အခြားကွန်ပျူတာ၏ဖြစ်ပြီး ဤနေရာတွင် ZBox ကို လော့ခ်မဖွင့်နိုင်ပါ။ ဤနေရာတွင် Windows Hello မသတ်မှတ်ရသေးသဖြင့် ဤကွန်ပျူတာတွင် အစားထိုး၍ မရပါ၊ ဖယ်ရှားရန် က ၎င်းတို့ကို မေ့ပစ်သည်။
+unl_status_no_hello = ဤကွန်ပျူတာတွင် Windows Hello မသတ်မှတ်ရသေးသဖြင့် ဤနေရာတွင် ပါစ်ကီးမထည့်နိုင်ပါ။ လုံခြုံရေးကီးကိုမူ ထည့်နိုင်သေးသည်။
+unl_status_none_registered = လော့ခ်ဖွင့်နည်း မှတ်ပုံမတင်ရသေးပါ။
+unl_status_add_cancelled_passkey = ပါစ်ကီးထည့်ခြင်းကို ပယ်ဖျက်ခဲ့သည်။
+unl_status_add_cancelled_key = လုံခြုံရေးကီးထည့်ခြင်းကို ပယ်ဖျက်ခဲ့သည်။
+unl_status_added = ထည့်ပြီးပါပြီ: {name}။
+unl_status_reassign_cancelled = ပြန်လည်သတ်မှတ်ခြင်းကို ပယ်ဖျက်ခဲ့သည်။ ဘာမျှ မပြောင်းပါ။
+unl_status_reassigned = {name} ကို ထည့်ပြီး အခြားကွန်ပျူတာများမှ {count} ခုကို မေ့ပစ်ပြီးပါပြီ။
+unl_status_test_cancelled = စမ်းသပ်မှုကို ပယ်ဖျက်ခဲ့သည်။
+unl_status_removed = ဖယ်ရှားပြီးပါပြီ။
+unl_remove_warning_last = {name} ကို ဖယ်ရှားမလား။\n\nဤအရာသည် မှတ်ပုံတင်ထားသော တစ်ခုတည်းသော လော့ခ်ဖွင့်နည်းဖြစ်ပြီး မာစတာစကားဝှက် မသတ်မှတ်ထားသဖြင့် အက်ပ်လော့ခ်ဖွင့်ထားလျှင် ZBox ကို လော့ခ်ဖွင့်ရန် ဘာမျှမကျန်တော့ပါ။ သင့်ကို ပိတ်ဆို့မထားရန် လော့ခ်ကို ကျော်သွားမည်ဖြစ်သော်လည်း ZBox သည် ထိုအခါ လော့ခ်မချဘဲ ပွင့်မည်။
+unl_remove_warning = {name} ကို ဖယ်ရှားမလား။ ZBox က ၎င်းကို ဆက်မလက်ခံတော့ပါ။
+ab_col_email = အီးမေးလ်
+ab_col_name = အမည်
+ab_col_phone = ဖုန်း
+ab_no_contacts = အဆက်အသွယ် မရှိသေးပါ။
+acct_auto_check = မက်ဆေ့ချ်အသစ်များကို အလိုအလျောက် စစ်ဆေးရန်
+acct_note_auto_check = ပိတ်: ZBox သည် ဤအကောင့်ကို ကိုယ်တိုင် ဘယ်တော့မှ မဆက်သွယ်ပါ -- မေးလ်အသစ်စောင့်ကြည့်မှု မရှိ၊ အချိန်အခြေပြု ပြန်လည်စတင်မှု မရှိ၊ နောက်ခံဒေါင်းလုဒ်များ မရှိ -- ထို့ကြောင့် မယုံကြည်ရသော ဆာဗာက အခြားအကောင့်များကို မနှေးစေနိုင်ပါ။ ၎င်း၏ ဒေါင်းလုဒ်ဆွဲပြီးသား မေးလ်သည် ဆက်ပွင့်ပြီး ပြန်လည်စတင်ရန် (F5)၊ ပို့ခြင်းနှင့် ဖျက်ခြင်းတို့သည် ဆာဗာသို့ ဆက်ရောက်သည်။ ကိရိယာများမီနူး သို့မဟုတ် အကောင့်၏ အကြောင်းအရာမီနူးရှိ အလိုအလျောက်စစ်ဆေးမှုကို ခဏရပ်ရန် နှင့် တူညီသည်။
+bl_day_ago = ၁ ရက်အရင်က
+bl_days_ago = {days} ရက်အရင်က
+bl_label_blocklists = ပိတ်ဆို့စာရင်း
+bl_label_phishing = ဖစ်ရှင်းစာရင်း
+bl_last_failed = နောက်ဆုံးကြိုးစားမှု မအောင်မြင်ပါ: %s
+bl_not_downloaded = မဒေါင်းလုဒ်ဆွဲရသေးပါ။
+bl_save_failed = %s ကို ဒေါင်းလုဒ်ဆွဲပြီးသော်လည်း မသိမ်းနိုင်ပါ: %s
+bl_seed_only = ပါဝင်သောစာရင်းမှ ဒိုမိန်း %s ခု။ အင်တာနက်မှ ဘယ်တော့မျှ မအပ်ဒိတ်လုပ်ရသေးပါ။
+bl_some_failed = အချို့သော အရင်းအမြစ်များ မအောင်မြင်ပါ: %s
+bl_some_unreachable = အချို့သော အရင်းအမြစ်များကို မရောက်နိုင်ပါ: %s
+bl_status_line = ဒိုမိန်း %s ခု။ နောက်ဆုံးအပ်ဒိတ် %s။
+bl_up_to_date = %s သည် နောက်ဆုံးဖြစ်ပြီးသား။
+bl_update_failed = %s ကို အပ်ဒိတ်မလုပ်နိုင်ပါ: %s
+bl_updated = %s ကို အပ်ဒိတ်လုပ်ပြီးပါပြီ: ဒိုမိန်း %s ခု။
+cc_age_choice = %s ထက်ဟောင်းသော မက်ဆေ့ချ်ကက်ရှ်တိုင်း
+cc_auto_button = အလိုအလျောက်ရှင်းလင်းမှု: %s ထက်ဟောင်းသော ကက်ရှ်မက်ဆေ့ချ်များ...
+comp_btn_discard = &စွန့်ပစ်ရန်
+comp_btn_keep_editing = &ဆက်တည်းဖြတ်ရန်
+comp_btn_save_draft = &မူကြမ်းသိမ်းရန်
+comp_no_account = အကောင့် မပြင်ဆင်ရသေးပါ
+comp_saving_draft = မူကြမ်းကို သိမ်းနေပါသည်…
+comp_this_message = ဤမက်ဆေ့ချ်
+comp_unsent_save_q = မပိတ်မီ %s ကို မူကြမ်းအဖြစ် သိမ်းမလား။
+comp_unsent_tray_q = ZBox ထရေးသို့ မသွားမီ %s ကို မူကြမ်းအဖြစ် သိမ်းမလား။
+doc_unreadable = စာတမ်းဖိုင်ကို မဖတ်နိုင်ပါ:
+envlist_all_disabled = အကောင့်တိုင်းကို ပိတ်ထားသည်။
+envlist_col_date = ရက်စွဲ
+envlist_col_from = ပို့သူ
+envlist_col_status = အခြေအနေ
+envlist_col_subject = ခေါင်းစဉ်
+envlist_collapsed = ခေါက်ထားသည် (%d)
+envlist_empty = ဤဖိုင်တွဲတွင် မက်ဆေ့ချ် မရှိပါ။
+envlist_loading = မက်ဆေ့ချ်များကို ဖွင့်နေပါသည်...
+envlist_no_accounts = အကောင့် မပြင်ဆင်ရသေးပါ။
+envlist_no_ignored = ဤဖိုင်တွဲတွင် လျစ်လျူရှုထားသော ချည်မျှင် မရှိပါ။
+envlist_no_watched = ဤဖိုင်တွဲတွင် စောင့်ကြည့်သော ချည်မျှင် မရှိပါ။
+envlist_select_folder = မက်ဆေ့ချ်များ ဖွင့်ရန် အကောင့် သို့မဟုတ် ဖိုင်တွဲ ရွေးပါ။
+eula_link_0 = သင့်ဘရောက်ဇာတွင် Himalaya လိုင်စင်စာမျက်နှာကို ဖွင့်ရန်
+eula_link_1 = သင့်ဘရောက်ဇာတွင် StevenBlack hosts လိုင်စင်စာမျက်နှာကို ဖွင့်ရန်
+eula_link_2 = သင့်ဘရောက်ဇာတွင် EasyList/EasyPrivacy လိုင်စင်စာမျက်နှာကို ဖွင့်ရန်
+eula_link_3 = သင့်ဘရောက်ဇာတွင် Phishing.Database လိုင်စင်စာမျက်နှာကို ဖွင့်ရန်
+eula_read_note = တတိယပါတီအပိုင်းများအပါအဝင် အောက်ပါလိုင်စင်ကို ဖတ်ပါ။ နောက်တစ်ဆင့် မရမီ ကျွန်ုပ် လက်ခံပါသည် ကို အမှန်ခြစ်ရမည်။ ကျွန်ုပ် မလက်ခံပါ က ZBox ကို မစတင်ဘဲ ပိတ်ပြီး ဤအကြိမ်က ယခုအထိ ဖန်တီးခဲ့သည်များကို ဖယ်ရှားသည်။
+eula_unreadable = လိုင်စင်ဖိုင်ကို မဖတ်နိုင်ပါ:\n%s
+filters_title = စစ်ထုတ်မှုများ လုပ်ဆောင်ရန်
+flag_title = မက်ဆေ့ချ်ကို ကြယ်ပွင့်ပေးရန်
+folder_type_archive = မော်ကွန်း
+folder_type_drafts = မူကြမ်းများ
+folder_type_inbox = ဝင်စာပုံး
+folder_type_junk = အမှိုက်စာ
+folder_type_sent = ပို့ပြီး
+folder_type_trash = အမှိုက်ပုံး
+mime_application_json = JSON ဖိုင်
+mime_application_msword = Word စာတမ်း
+mime_application_octet_stream = ဘိုင်နရီဖိုင်
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel စာရင်းဇယား
+mime_application_vnd_ms_powerpoint = PowerPoint တင်ပြမှု
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint တင်ပြမှု
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel စာရင်းဇယား
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word စာတမ်း
+mime_application_xml = XML ဖိုင်
+mime_application_zip = ZIP မော်ကွန်း
+mime_audio_mpeg = MP3 အသံ
+mime_audio_ogg = OGG အသံ
+mime_audio_wav = WAV အသံ
+mime_image_bmp = BMP ပုံ
+mime_image_gif = GIF ပုံ
+mime_image_jpeg = JPEG ပုံ
+mime_image_png = PNG ပုံ
+mime_image_svg_xml = SVG ပုံ
+mime_image_webp = WebP ပုံ
+mime_text_csv = CSV ဖိုင်
+mime_text_html = HTML ဖိုင်
+mime_text_plain = စာသားဖိုင်
+mime_video_mp4 = MP4 ဗီဒီယို
+mime_video_x_msvideo = AVI ဗီဒီယို
+move_title_junk = အမှိုက်စာအဖြစ် မှတ်ရန်
+move_title_move_to = ရွှေ့ရန်
+move_title_not_junk = အမှိုက်စာမဟုတ်ဟု မှတ်ရန်
+mp_explain_set = မာစတာစကားဝှက် သတ်မှတ်ထားသည်။ ဤ ZBox ဖိုင်တွဲက အခြားကွန်ပျူတာတွင် ၎င်း၏ သိမ်းထားသော အကောင့်စကားဝှက်များကို ဖွင့်နိုင်စေသည်မှာ ၎င်းပင်ဖြစ်သည်။\n\nဖယ်ရှားရန် စကားဝှက်အသစ်နှစ်ခုလုံးကို ဗလာထားပြီး အိုကေ ကို နှိပ်ပါ။ ၎င်းကို ဖယ်ရှားခြင်းသည် ဤကွန်ပျူတာကို မထိခိုက်ပါ၊ သို့သော် အကောင့်တိုင်း ပြန်လော့ဂင်မဝင်ဘဲ ဖိုင်တွဲသည် အခြားမည်သည့်နေရာတွင်မှ အလုပ်မလုပ်တော့ပါ။
+mp_explain_unset = မာစတာစကားဝှက် မသတ်မှတ်ရသေးသဖြင့် သိမ်းထားသော အကောင့်စကားဝှက်များကို ဤကွန်ပျူတာနှင့် ဤ Windows အကောင့်တွင်သာ ဖတ်နိုင်သည်။ ဖိုင်တွဲကို အခြားနေရာသို့ ကူးပါက အကောင့်တိုင်း ၎င်း၏မေးလ်ဆာဗာသို့ ပြန်လည်လော့ဂင်ဝင်ရမည်။\n\nတစ်ခုသတ်မှတ်လျှင် ZBox က ကွန်ပျူတာအသစ်တိုင်းတွင် တစ်ကြိမ်မေးပြီး ထို့နောက် ထိုနေရာတွင် ပုံမှန်အတိုင်း လော့ခ်ဖွင့်မည်။ ဤကွန်ပျူတာ ထပ်မမေးတော့ပါ။\n\nရေးမှတ်၍ လုံခြုံသောနေရာတွင် ထားပါ။ ၎င်းကို မည်သည့်နေရာတွင်မျှ မသိမ်းထားသဖြင့် ပြန်ယူ၍ မရပါ: မေ့သွားလျှင် အကောင့်တိုင်း ၎င်း၏မေးလ်ဆာဗာသို့ ပြန်လည်လော့ဂင်ဝင်ရမည်။
+mp_label_confirm = &မာစတာစကားဝှက်အသစ်ကို အတည်ပြုပါ:
+mp_label_current = &လက်ရှိမာစတာစကားဝှက်:
+mp_label_master = &မာစတာစကားဝှက်:
+mp_label_new = &မာစတာစကားဝှက်အသစ်:
+mp_name_confirm = မာစတာစကားဝှက်အသစ်ကို အတည်ပြုပါ
+mp_name_current = လက်ရှိမာစတာစကားဝှက်
+mp_name_master = မာစတာစကားဝှက်
+mp_name_new = မာစတာစကားဝှက်အသစ်
+mp_prompt_existing = သင့်သိမ်းထားသော အကောင့်စကားဝှက်များကို ဤကွန်ပျူတာတွင်သာ ကာကွယ်ထားသည်။ ZBox ကို အခြားတစ်ခုသို့ ရွှေ့လျှင်လည်း ဖွင့်နိုင်ရန် မာစတာစကားဝှက် သတ်မှတ်ပါ။
+mp_prompt_first_run = ZBox သည် သင့်အကောင့်စကားဝှက်များကို သိမ်းတော့မည်။ ZBox ကို အခြားကွန်ပျူတာသို့ ရွှေ့လျှင်လည်း ဖွင့်နိုင်ရန် ယခု မာစတာစကားဝှက် သတ်မှတ်ပါ။
+mp_prompt_new_account = ZBox သည် ဤအကောင့်၏ စကားဝှက်ကို သိမ်းတော့မည်။ ZBox ကို အခြားကွန်ပျူတာသို့ ရွှေ့လျှင်လည်း အကောင့်ကို ဖွင့်နိုင်ရန် ဦးစွာ မာစတာစကားဝှက် သတ်မှတ်ပါ။
+mp_removed_done = မာစတာစကားဝှက်ကို ဖယ်ရှားပြီးပါပြီ။ သိမ်းထားသော စကားဝှက်များသည် ယခု ဤကွန်ပျူတာနှင့် ဤ Windows အကောင့်တွင်သာ အလုပ်လုပ်သည်။
+mp_set_done = မာစတာစကားဝှက် သတ်မှတ်ပြီးပါပြီ။ ဤဖိုင်တွဲကို ဖွင့်သည့် ကွန်ပျူတာအသစ်တိုင်းတွင် ZBox က တစ်ကြိမ်မေးပြီး ထို့နောက် ထိုနေရာတွင် ပုံမှန်အတိုင်း လော့ခ်ဖွင့်မည်။
+mv_body_title = မက်ဆေ့ချ်ကိုယ်ထည်
+mv_col_format = ဖော်မက်
+mv_col_name = အမည်
+mv_col_size = အရွယ်အစား
+mv_format_unknown = မသိ
+mv_size_unknown = အရွယ်အစား မသိ
+na_account_settings = အကောင့်နှင့် အထောက်အထား ဆက်တင်များ
+na_disable_account = အကောင့်ကို ပိတ်ရန်
+na_edit_signature = လက်မှတ်တည်းဖြတ်ရန်
+na_message_filters = မက်ဆေ့ချ်စစ်ထုတ်မှုများ
+na_mute_account = အကောင့်ကို အသံပိတ်ရန်
+na_pause_auto_check = အလိုအလျောက်စစ်ဆေးမှုကို ခဏရပ်ရန်
+na_remove_account = အကောင့်ကို ဖယ်ရှားရန်
+na_set_default = မူလအကောင့်အဖြစ် သတ်မှတ်ရန်
+no_offline_copy = %s ၏ အော့ဖ်လိုင်းမိတ္တူ မရှိပါ။ အွန်လိုင်းတွင်ရှိစဉ် ဖွင့်ပါ၊ သို့မဟုတ် ဖိုင်၊ အော့ဖ်လိုင်း၊ ယခု ထပ်တူကျစေရန် ကို သုံးပါ။
+perm_delete_confirm = {msg} ဤအရာသည် အမှိုက်ပုံးဖိုင်တွဲကို ကျော်သွားပြီး နောက်ပြန်၍ မရပါ။
+perm_delete_many = မက်ဆေ့ချ် {count} စောင်ကို အပြီးအပိုင် ဖျက်မလား။
+perm_delete_one = မက်ဆေ့ချ် {count} စောင်ကို အပြီးအပိုင် ဖျက်မလား။
+preset_note_apple = Apple သည် အက်ပ်သီးသန့်စကားဝှက် လိုအပ်သည်။
+preset_note_fastmail = Fastmail သည် အက်ပ်စကားဝှက် လိုအပ်သည်။
+preset_note_google = Google သည် အက်ပ်စကားဝှက် သို့မဟုတ် OAuth2 လိုအပ်သည်၊ သင့်ပုံမှန်စကားဝှက် မဟုတ်ပါ။
+preset_note_proton = ProtonMail သည် ProtonMail Bridge အက်ပ်ကို ဒေသတွင်း လည်ပတ်နေရန် လိုအပ်သည်။
+preset_note_yahoo = Yahoo သည် အက်ပ်စကားဝှက် လိုအပ်သည်။
+priv_phishing_not_loaded = ဖစ်ရှင်းစာရင်း: မဖွင့်ရသေးပါ။ ဤစည်းမျဉ်းများ ဖွင့်ထားပြီး ZBox အွန်လိုင်းရှိသောအခါ ပထမဆုံးအကြိမ် ဒေါင်းလုဒ်ဆွဲမည်။
+priv_phishing_prefix = ဖစ်ရှင်းစာရင်း:
+priv_status_unavailable = ပိတ်ဆို့စာရင်းအခြေအနေ မရနိုင်ပါ။
+rdr_load_failed = မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။\n\n{message}
+rdr_loading = မက်ဆေ့ချ်ကို ဖွင့်နေပါသည်...
+rdr_select_message = ဤနေရာတွင် ဖတ်ရန် မက်ဆေ့ချ်တစ်ခု ရွေးပါ။
+set_autosave_off = ပိတ် — ကိုယ်တိုင်သိမ်းရန် မူကြမ်းသိမ်းရန် (Ctrl+S) ကို သုံးပါ
+set_autosave_seconds = {seconds} စက္ကန့်တိုင်း
+set_no_unlock = ဤနေရာတွင် သုံးနိုင်သော ပါစ်ကီး သို့မဟုတ် လုံခြုံရေးကီး မရှိပါ
+set_purge_days = {days} ရက်ပြီးနောက်
+set_purge_off = ပိတ် — အမှိုက်ပုံးနှင့် အမှိုက်စာကို အလိုအလျောက် ဘယ်တော့မှ မရှင်းပါ
+set_purge_one_day = ၁ ရက်ပြီးနောက်
+set_val_seconds = {seconds} စက္ကန့်
+set_val_one_second = ၁ စက္ကန့်
+set_silence_off = ပိတ်
+set_announce_wait = ကီးကို စောင့်သည်
+set_autosave_minutes = {minutes} မိနစ်တိုင်း
+set_autosave_one_minute = တစ်မိနစ်တိုင်း
+set_rt_bundled_installed = ပါဝင်သော ရန်တိုင်း: ထည့်သွင်းထားသည်။
+set_rt_bundled_many = ပါဝင်သော ရန်တိုင်း: %s ထည့်သွင်းထားသည်။
+set_rt_bundled_none = ပါဝင်သော ရန်တိုင်း: မည်သည့်အရာမျှ မထည့်သွင်းထားသဖြင့် ZBox က စနစ်တစ်ခုလုံးရန်တိုင်းကို သုံးသည်။
+set_rt_bundled_unknown = ပါဝင်သော ရန်တိုင်း: ဆုံးဖြတ်၍ မရပါ။
+set_rt_bundled_ver = ပါဝင်သော ရန်တိုင်း: ဗားရှင်း %s ထည့်သွင်းထားသည်။
+set_rt_system_unknown = စနစ်တစ်ခုလုံး ရန်တိုင်း: ဗားရှင်းကို ဆုံးဖြတ်၍ မရပါ။
+set_rt_system_ver = စနစ်တစ်ခုလုံး ရန်တိုင်း: ဗားရှင်း %s။
+set_unlock_many = ဤနေရာတွင် လော့ခ်ဖွင့်နည်း %d မျိုး သုံးနိုင်သည်
+set_unlock_unreadable = လော့ခ်ဖွင့်နည်းများကို မဖတ်နိုင်ပါ
+sig_tab_formatted = ဖော်မက်လုပ်ထားသော
+sig_tab_source = HTML အရင်းအမြစ်
+srch_all_accounts = အကောင့်အားလုံး
+srch_all_folders = ဖိုင်တွဲအားလုံး
+tab_mail = မေးလ်
+tab_new_message = မက်ဆေ့ချ်အသစ်
+tab_saved_message = သိမ်းထားသော မက်ဆေ့ချ်
+title_copy_to_err = ကူးယူရန်
+title_mark_message = မက်ဆေ့ချ်ကို မှတ်ရန်
+title_unsent_message = မပို့ရသေးသော မက်ဆေ့ချ်
+tree_unified_root = ပေါင်းစည်းထားသော ဖိုင်တွဲများ
+unlock_kind_passkey = ပါစ်ကီး (Windows Hello)
+unlock_kind_security_key = လုံခြုံရေးကီး
+unlock_prompt_message = Windows က သင့်ကို အတည်ပြုရန် တောင်းနေသည်။ ၎င်း၏ မေးမြန်းချက်ကို Windows Hello၊ သင့် PIN သို့မဟုတ် သင့်လုံခြုံရေးကီးဖြင့် ဖြေပါ။ Windows ပြီးသောအခါ ဤဝင်းဒိုးသည် ကိုယ်တိုင်ပိတ်သွားမည်။
+unlock_prompt_title = Windows လုံခြုံရေး
+unlock_registering = ဤလော့ခ်ဖွင့်နည်းကို မှတ်ပုံတင်နေသည်
+unlock_the_passkey = ပါစ်ကီး
+unlock_the_security_key = လုံခြုံရေးကီး
+wildcard_eml = အီးမေးလ်ဖိုင်များ (*.eml)|*.eml|ဖိုင်အားလုံး (*.*)|*.*
+wildcard_export = ZBox ထုတ်ယူမှု (*.json)|*.json
+wiz_not_supported = မထောက်ပံ့ပါ: {name}။ {note} ဤအကောင့်ကို ZBox တွင် ထည့်၍ မရပါ။
+stock_apply = &အသုံးပြုရန်
+stock_cancel = ပယ်ဖျက်ရန်
+stock_close = &ပိတ်ရန်
+stock_help = &အကူအညီ
+stock_no = &မဟုတ်ပါ
+stock_ok = အိုကေ
+stock_yes = &ဟုတ်ကဲ့
+wiz_btn_back = &< နောက်သို့
+wiz_btn_finish = &ပြီးဆုံးရန်
+wiz_btn_next = &နောက်တစ်ဆင့် >
+acct_unsaved_q = ဤအကောင့်၏ ပြောင်းလဲမှုများကို သိမ်းမလား။
+btn_save = &သိမ်းရန်
+spell_add_to_dictionary = &အဘိဓာန်သို့ ထည့်ရန်
+spell_no_suggestions = အကြံပြုချက် မရှိပါ
+title_signature_for = လက်မှတ်: {account}
+title_mark_folder_read = ဖိုင်တွဲကို ဖတ်ပြီးအဖြစ် မှတ်ရန်
+title_update_available = ZBox အပ်ဒိတ်
+update_available = ZBox {new} ရနိုင်ပါပြီ။ သင့်တွင် {current} ရှိသည်။
+upd_notes_label = &ထုတ်ပြန်မှုမှတ်စုများ:
+upd_no_notes = ထုတ်ပြန်မှုမှတ်စု မရှိပါ။
+upd_notes_name = ထုတ်ပြန်မှုမှတ်စုများ
+upd_update_now = &ဟုတ်ကဲ့၊ ယခု အပ်ဒိတ်လုပ်ရန်
+upd_remind_later = &နောက်မှ သတိပေးရန်
+title_update_download = ZBox အပ်ဒိတ် ဒေါင်းလုဒ်ဆွဲနေသည်
+upd_downloading = ZBox {version} ကို ဒေါင်းလုဒ်ဆွဲနေပါသည်...
+upd_progress_name = ဒေါင်းလုဒ်တိုးတက်မှု
+upd_cancel = &ပယ်ဖျက်ရန်
+upd_cancelling = ပယ်ဖျက်နေပါသည်...
+set_updates_label = အပ်ဒိတ်များ:
+set_update_auto = &အပ်ဒိတ်များကို အလိုအလျောက် စစ်ဆေးရန်
+set_update_mode_label = အပ်ဒိတ်တွေ့သောအခါ:
+set_update_ask = &ကျွန်ုပ်ကို မေးရန်
+set_update_silent = &တိတ်တိတ်ဆိတ်ဆိတ် ဒေါင်းလုဒ်ဆွဲပြီး ထည့်သွင်းရန်
+set_update_note = ZBox သည် ထုတ်ပြန်မှုအသစ်အတွက် GitHub ကို တစ်ရက်လျှင် အများဆုံးတစ်ကြိမ်၊ အားနေချိန်တွင်သာ စစ်ဆေးပြီး ၎င်း၏ဗားရှင်းနံပါတ်မှလွဲ၍ မည်သည့်အရာမျှ မပို့ပါ။ ကျွန်ုပ်ကို မေးရန် က ဗားရှင်းအသစ်နှင့် ၎င်း၏ထုတ်ပြန်မှုမှတ်စုများကို ဟုတ်ကဲ့၊ ယခု အပ်ဒိတ်လုပ်ရန် နှင့် နောက်မှ သတိပေးရန် တို့နှင့်အတူ ပြသည်။ တိတ်တိတ်ဆိတ်ဆိတ် ဒေါင်းလုဒ်ဆွဲပြီး ထည့်သွင်းရန် က အားနေချိန်တွင် အပ်ဒိတ်ကို ယူပြီး သင်နောက်တစ်ကြိမ် ZBox မှ အပြည့်အဝထွက်သောအခါ၊ သင်အလုပ်လုပ်နေစဉ် ဘယ်တော့မျှ မဟုတ်ဘဲ၊ ထည့်သွင်းသည်။ အပ်ဒိတ်သည် ZBox ၏ ကိုယ်ပိုင်ပရိုဂရမ်ဖိုင်များကိုသာ အစားထိုးသည်: သင့်အကောင့်များ၊ စကားဝှက်များ၊ ဆက်တင်များ၊ မေးလ်၊ မှတ်တမ်းများ၊ အသံအသွင်အပြင်များနှင့် သင်ထည့်ထားသော ဘာသာစကားများကို မထိပါ၊ အသစ်မစတင်လျှင် ယခင်ဗားရှင်းကို ထိန်းသိမ်းထားပြီး ကိုယ်တိုင်ပြန်ထားမည်။ အကူအညီ၊ အပ်ဒိတ်များ တွင် ယခု အပ်ဒိတ်များ စစ်ဆေးရန် နှင့် ကိုယ်တိုင်အပ်ဒိတ်လုပ်ရန် ထုတ်ပြန်မှုစာမျက်နှာလည်း ပါသည်။
+set_update_check_now = &ယခု စစ်ဆေးရန်
+mv_attachment_button = {filename} ({format})
+att_open = ဖွင့်ရန်
+att_save = သိမ်းရန်...
+att_save_all = ပူးတွဲဖိုင်အားလုံး သိမ်းရန်
+title_save_attachment = ပူးတွဲဖိုင်သိမ်းရန်
+title_full_headers = ခေါင်းစီးအပြည့်အစုံ
+hdr_copy_all = အားလုံး ကူးယူရန်
+acct_identity_own_signature = ကိုယ်ပိုင်လက်မှတ်ကို သုံးရန်
+acct_identity_own_reply_to = ကိုယ်ပိုင် ပြန်စာလိပ်စာကို သုံးရန်
+acct_identity_reply_to = ပြန်စာလိပ်စာ
+acct_identity_always_cc = ဤလိပ်စာများသို့ မိတ္တူကို အမြဲပို့ရန်
+acct_identity_cc = မိတ္တူလိပ်စာများ
+acct_identity_always_bcc = ဤလိပ်စာများသို့ လျှို့ဝှက်မိတ္တူကို အမြဲပို့ရန်
+acct_identity_bcc = လျှို့ဝှက်မိတ္တူလိပ်စာများ
+acct_identity_own_folders = ကိုယ်ပိုင် မူကြမ်းများနှင့် ပို့ပြီး ဖိုင်တွဲများကို သုံးရန်
+acct_identity_drafts = မူကြမ်းများဖိုင်တွဲ
+acct_identity_sent = ပို့ပြီးဖိုင်တွဲ
+acct_identity_own_smtp = ကိုယ်ပိုင် ထွက်သွားသောဆာဗာကို သုံးရန်
+acct_identity_smtp_login = ထွက်သွားသော လော့ဂင်အမည်
+acct_identity_smtp_password = ထွက်သွားသော စကားဝှက်
+acct_identity_test_smtp = &ထွက်သွားသောဆာဗာ စမ်းသပ်ရန်
+acct_identity_note_smtp = ဤအထောက်အထား၏ အီးမေးလ်လိပ်စာဖြင့် လော့ဂင်ဝင်ရန် လော့ဂင်အမည်ကို ဗလာထားပါ။ ပို့ပြီးမိတ္တူများသည် ဤအကောင့်၏ ပို့ပြီးဖိုင်တွဲသို့ ဆက်သွားမည်၊ သို့မဟုတ် ဤအထောက်အထားတွင် ကိုယ်ပိုင်ရှိလျှင် ၎င်းသို့ သွားမည်။
+identity_field_required = {field} ကို ဖြည့်ပါ၊ သို့မဟုတ် ၎င်း၏အကွက်ကို အမှန်ခြစ်ဖြုတ်ပါ။
+identity_field_invalid = {field} တွင် မမှန်ကန်သော လိပ်စာ ပါသည်။
+identity_folders_required = မူကြမ်းများဖိုင်တွဲ၊ ပို့ပြီးဖိုင်တွဲ သို့မဟုတ် နှစ်ခုလုံးကို ရွေးပါ၊ သို့မဟုတ် ၎င်းတို့၏အကွက်ကို အမှန်ခြစ်ဖြုတ်ပါ။
+identity_password_required = ထွက်သွားသော စကားဝှက် ထည့်ပါ။
+identity_smtp_testing = ထွက်သွားသောဆာဗာကို စမ်းသပ်နေပါသည်။
+identity_smtp_ok = ထွက်သွားသောဆာဗာက လော့ဂင်ဝင်ခြင်းကို လက်ခံခဲ့သည်။
+identity_smtp_failed = ထွက်သွားသောဆာဗာ စမ်းသပ်မှု မအောင်မြင်ပါ။\n\n{error}
+set_bare_keys_note_move = M နှင့် C သည် ရွေးထားသော မက်ဆေ့ချ်များအတွက် ဖိုင်တွဲများ၏ ရွှေ့ရန်နှင့် ကူးယူရန် မီနူးများကို ဖွင့်ပြီး Shift+M က ဖိုင်တွဲအမည်၏ အစိတ်အပိုင်းကို ရိုက်၍ ထိုနေရာသို့ ရွှေ့နိုင်သော အကွက်ကို ဖွင့်သည်။ ဤအရာကို ပိတ်လျှင် M နှင့် C တို့လည်း ပထမစာလုံးသွားလာမှုသို့ ပြန်သွားသည်။
+folder_search_filter = ဖိုင်တွဲအမည်တွင် ပါဝင်သည်
+folder_search_list = ကိုက်ညီသော ဖိုင်တွဲများ
+folder_search_no_match = ထိုအမည်နှင့် ကိုက်ညီသော ဖိုင်တွဲ မရှိပါ။
+wiz_signin_method = လော့ဂင်ဝင်နည်း
+wiz_method_password = စကားဝှက်
+wiz_method_microsoft = Microsoft အကောင့် (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft လော့ဂင်။ Outlook.com, Hotmail, Live နှင့် Microsoft 365 အတွက် ဆာဗာဆက်တင်များကို ဖြည့်ထားသည်။
+wiz_welcome_notice = Gmail။ သင့်ပုံမှန် Google စကားဝှက်ကို ပယ်ချမည်ဖြစ်သော်လည်း အက်ပ်စကားဝှက်က အလုပ်လုပ်သည်။ နှစ်ဆင့်စစ်ဆေးမှု ဦးစွာ ဖွင့်ထားရမည်။ အောက်ပါခလုတ်က Google ၏ ညွှန်ကြားချက်များကို ဖွင့်သည်။\n\nOutlook.com, Hotmail, Live နှင့် Microsoft 365။ ဤအကောင့်များသည် သင့် Microsoft အကောင့်ဖြင့် လော့ဂင်ဝင်သည်။ လော့ဂင်စာမျက်နှာတွင် Microsoft အကောင့်ကို ရွေးပြီး သင့်ဘရောက်ဇာ သို့မဟုတ် ကုဒ်ဖြင့် လော့ဂင်ဝင်ပါ။\n\nအခြားဝန်ဆောင်မှုပေးသူများ။ ပုံမှန်စကားဝှက် သို့မဟုတ် အက်ပ်စကားဝှက်သည် များသောအားဖြင့် အလုပ်လုပ်ပြီး သင့်ဝန်ဆောင်မှုပေးသူ၏ အကူအညီစာမျက်နှာများတွင် ဆာဗာဆက်တင်များကို ဖော်ပြထားသည်။
+preset_note_outlook = Outlook.com, Hotmail, Live နှင့် MSN အကောင့်များသည် Microsoft အကောင့်ဖြင့် လော့ဂင်ဝင်သည်။ လော့ဂင်စာမျက်နှာတွင် လော့ဂင်ဝင်နည်းအဖြစ် Microsoft အကောင့်ကို ရွေးပါ။
+ms_status_name = Microsoft လော့ဂင် အခြေအနေ
+ms_browser_button = &ဘရောက်ဇာဖြင့် လော့ဂင်ဝင်ရန်
+ms_code_button = &ကုဒ်ဖြင့် လော့ဂင်ဝင်ရန်
+ms_copy_code = &ကုဒ်ကူးယူရန်
+ms_open_page = &လော့ဂင်စာမျက်နှာကို ဖွင့်ရန်
+ms_stop = &စောင့်ခြင်းကို ရပ်ရန်
+ms_not_configured = ZBox ၏ ဤမိတ္တူတွင် Microsoft လော့ဂင် မသတ်မှတ်ထားပါ။
+ms_not_signed_in = မဝင်ရသေးပါ။ သင့်ဘရောက်ဇာဖြင့် သို့မဟုတ် မည်သည့်စက်ပေါ်တွင်မဆို ကုဒ်ဖြင့် လော့ဂင်ဝင်ပါ။
+ms_signed_in = {address} အဖြစ် လော့ဂင်ဝင်ထားသည်။
+ms_signed_in_plain = လော့ဂင်ဝင်ထားသည်။
+ms_needs_sign_in = ဤအကောင့်အတွက် Microsoft လော့ဂင် ထပ်လိုအပ်သည်။ သင့်ဘရောက်ဇာဖြင့် သို့မဟုတ် မည်သည့်စက်ပေါ်တွင်မဆို ကုဒ်ဖြင့် လော့ဂင်ဝင်ပါ။
+ms_reason_cancelled = လော့ဂင်ဝင်ခြင်းကို ရပ်လိုက်သည်။
+ms_reason_timeout = အချိန်မီ တုံ့ပြန်မှု မရခဲ့ပါ။
+ms_reason_denied = ဝင်ရောက်ခွင့် မပေးပါ။
+ms_reason_expired = ကုဒ်သက်တမ်းကုန်သွားသည်။ အသစ်တောင်းပါ။
+ms_reason_network = Microsoft သို့ မရောက်နိုင်ပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။
+ms_reason_server = Microsoft က ပြောသည်: {detail}
+ms_page_done = လော့ဂင်ဝင်ပြီးပါပြီ။ ဤစာမျက်နှာကို ပိတ်ပြီး ZBox သို့ ပြန်နိုင်ပါသည်။
+ms_page_failed = လော့ဂင်ဝင်ခြင်း မပြီးဆုံးပါ။ အသေးစိတ်အတွက် ZBox သို့ ပြန်သွားပါ။
+ms_browser_waiting = သင့်ဘရောက်ဇာက Microsoft လော့ဂင်စာမျက်နှာကို ပြနေသည်။ ထိုနေရာတွင် လော့ဂင်ဝင်ခြင်းကို အပြီးသတ်ပြီး ZBox သို့ ပြန်လာပါ။
+ms_code_asking = Microsoft ထံမှ လော့ဂင်ကုဒ် တောင်းနေပါသည်...
+ms_code_waiting = မည်သည့်စက်ပေါ်တွင်မဆို {address} ကိုဖွင့်ပြီး ကုဒ် {code} ကို ထည့်ပါ။ သင်လော့ဂင်ဝင်ပြီးသည်အထိ ZBox က ဤနေရာတွင် စောင့်မည်။
+ms_failed = လော့ဂင်ဝင်ခြင်း မပြီးဆုံးပါ။ {reason}
+ms_code_copied = ကုဒ်ကို ကူးယူပြီးပါပြီ။
+offline_inbox_only = အော့ဖ်လိုင်းသုံးရန် ဝင်စာပုံးနှင့် မော်ကွန်းကိုသာ သိမ်းထားသည်။ {folder} ကို ဖွင့်ရန် အွန်လိုင်းသို့ သွားပါ။
+block_sender_rule_name = {sender} ကို ပိတ်ဆို့ရန်
+title_block_sender = ဤပို့သူကို ပိတ်ဆို့ရန်
+title_unblock_sender = ဤပို့သူ၏ ပိတ်ဆို့မှုကို ဖယ်ရန်
+set_clear_inbox_cache = ဝင်စာပုံးမှ ထွက်သွားသောအခါ မက်ဆေ့ချ်ကက်ရှ် ရှင်းလင်းရန်
+set_clear_inbox_cache_note = ဖွင့်ထားလျှင် မက်ဆေ့ချ်တစ်စောင် ဝင်စာပုံးမှ ထွက်သွားသည်နှင့် ၎င်း၏ အော့ဖ်လိုင်းမိတ္တူနှင့် သိမ်းထားသော ကိုယ်ထည်ကို ဖျက်သည်၊ အခြားနေရာ (ဥပမာ သင့်ဖုန်း) တွင် ဖျက်သည်ဖြစ်စေ ရွှေ့သည်ဖြစ်စေ၊ ထို့ကြောင့် မရှိတော့သည့်နေရာတွင် ဘယ်တော့မျှ မပေါ်တော့ပါ။ ဤဖိုင်များကို ဝင်စာပုံးသာ ထားသည်၊ အခြားဖိုင်တွဲတိုင်းကို ဆာဗာမှ အမြဲဖတ်သည်။
+empty_trash_all_confirm = အကောင့်တိုင်း၏ အမှိုက်ပုံးထဲရှိ မက်ဆေ့ချ်အားလုံးကို အပြီးအပိုင် ဖျက်မလား။\n\nဤအရာကို နောက်ပြန်၍ မရပါ။
+envlist_col_recipient = လက်ခံသူ
+envlist_col_correspondents = ဆက်သွယ်သူများ
+envlist_col_received = လက်ခံရရှိသော
+envlist_col_size = အရွယ်အစား
+envlist_col_attachments = ပူးတွဲဖိုင်များ
+envlist_col_priority = ဦးစားပေး
+envlist_col_junk_status = အမှိုက်စာအခြေအနေ
+envlist_attachment = ပူးတွဲဖိုင်များ
+envlist_priority_highest = အမြင့်ဆုံး
+envlist_priority_high = မြင့်
+envlist_priority_low = နိမ့်
+envlist_priority_lowest = အနိမ့်ဆုံး
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = မက်ဆေ့ချ်စာရင်းတွင် ကော်လံခေါင်းစဉ်များ ပြရန်
+pgp_title = OpenPGP ကီး စီမံခန့်ခွဲသူ
+smime_title = S/MIME လက်မှတ်လွှာ စီမံခန့်ခွဲသူ
+smime_own = သင့်လက်မှတ်လွှာ
+smime_expired = သက်တမ်းကုန်သွားသည်
+smime_expires = {date} တွင် သက်တမ်းကုန်မည်
+smime_issuer = ထုတ်ပေးသူ
+smime_valid = {start} မှ {end} အထိ အကျုံးဝင်သည်
+smime_fingerprint = SHA-256 လက်ဗွေ
+smime_own_key = သင့်လက်မှတ်လွှာ၊ ၎င်း၏ ကိုယ်ပိုင်ကီးနှင့်အတူ: ၎င်းသို့ ကုဒ်ဝှက်ထားသော မေးလ်ကို ဤနေရာတွင် ဖတ်နိုင်သည်။
+smime_unavailable = ZBox ၏ ဤမိတ္တူတွင် S/MIME မရနိုင်ပါ။
+smime_details = လက်မှတ်လွှာ အသေးစိတ်
+smime_no_certs = လက်မှတ်လွှာ မရှိသေးပါ။ သင့်ကိုယ်ပိုင် .p12 သို့မဟုတ် .pfx ဖိုင်၊ သို့မဟုတ် ဆက်သွယ်သူ၏ လက်မှတ်လွှာကို ထည့်သွင်းပါ။
+smime_import_failed = လက်မှတ်လွှာကို မထည့်သွင်းနိုင်ပါ: {error}
+smime_import_title = လက်မှတ်လွှာဖိုင် ထည့်သွင်းရန်
+smime_password_prompt = {name} အတွက် စကားဝှက် ထည့်ပါ။
+smime_password_title = လက်မှတ်လွှာစကားဝှက်
+smime_imported = လက်မှတ်လွှာကို ထည့်သွင်းပြီးပါပြီ။
+smime_export_title = လက်မှတ်လွှာ ထုတ်ယူရန်
+smime_exported = လက်မှတ်လွှာကို ထုတ်ယူပြီးပါပြီ။
+smime_delete_confirm = {name} အတွက် လက်မှတ်လွှာကို ဖျက်မလား။ ၎င်းသည် သင့်ကိုယ်ပိုင်ဖြစ်လျှင် ၎င်းသို့ ကုဒ်ဝှက်ထားသော မေးလ်ကို ဤနေရာတွင် မဖတ်နိုင်တော့ပါ။
+smime_deleted = လက်မှတ်လွှာကို ဖျက်ပြီးပါပြီ။
+smime_rs_verified = ဤမက်ဆေ့ချ်တွင် Windows ယုံကြည်သော အာဏာပိုင်က ပို့သူ၏လိပ်စာအတွက် ထုတ်ပေးထားသည့် လက်မှတ်လွှာမှ မှန်ကန်သော S/MIME လက်မှတ် ပါသည်။
+smime_rs_unverified = ဤမက်ဆေ့ချ်တွင် မှန်ကန်သော S/MIME လက်မှတ် ပါသော်လည်း ၎င်း၏ လက်မှတ်လွှာကို Windows ယုံကြည်သော အာဏာပိုင်က ထုတ်ပေးခြင်း မဟုတ်ပါ။
+smime_rs_mismatch = ဤမက်ဆေ့ချ်တွင် S/MIME လက်မှတ် ပါသော်လည်း ပို့သူ၏လိပ်စာသည် လက်မှတ်ထိုးသူ၏ လက်မှတ်လွှာနှင့် မကိုက်ညီပါ။
+smime_rs_technical = ဤမက်ဆေ့ချ်တွင် S/MIME လက်မှတ် ပါသော်လည်း မက်ဆေ့ချ်နှင့် မကိုက်ညီပါ။ လက်မှတ်ထိုးပြီးနောက် မက်ဆေ့ချ်ကို ပြောင်းလဲထားနိုင်သည်။
+smime_rs_signer = လက်မှတ်ထိုးသူ: {name}
+smime_rs_issuer = လက်မှတ်လွှာ ထုတ်ပေးသူ: {issuer}
+smime_rs_import_hint = ဖတ်ရန် ကိရိယာများ၊ S/MIME လက်မှတ်လွှာ စီမံခန့်ခွဲသူ တွင် သင့် S/MIME လက်မှတ်လွှာကို ၎င်း၏ ကိုယ်ပိုင်ကီးနှင့်အတူ .p12 သို့မဟုတ် .pfx ဖိုင်အဖြစ် ထည့်သွင်းပါ။
+pgp_details = ကီးဂုဏ်သတ္တိများ
+pgp_generate = &ကီးအတွဲအသစ်
+smime_import = &လက်မှတ်လွှာဖိုင် ထည့်သွင်းရန်
+smime_export = &လက်မှတ်လွှာ ထုတ်ယူရန်
+smime_delete = &လက်မှတ်လွှာ ဖျက်ရန်
+pgp_import_file = &OpenPGP ကီးဖိုင် ထည့်သွင်းရန်
+pgp_import_file_title = OpenPGP ကီးဖိုင် ထည့်သွင်းရန်
+pgp_import_clip = &ကလစ်ဘုတ်မှ ကီးများ ထည့်သွင်းရန်
+pgp_export = &အများသုံးကီးကို ဖိုင်သို့ ထုတ်ယူရန်
+pgp_copy = &အများသုံးကီး ကူးယူရန်
+pgp_backup = &လျှို့ဝှက်ကီးကို ဖိုင်သို့ အရန်သိမ်းရန်
+pgp_props = &ကီးဂုဏ်သတ္တိများ
+pgp_revoke = &ကီး ရုပ်သိမ်းရန်
+pgp_delete = &ကီး ဖျက်ရန်
+pgp_expires = သက်တမ်းကုန်မည်: {date}
+pgp_never_expires = သက်တမ်း မကုန်ပါ
+pgp_expired = သက်တမ်းကုန်သွားသည်
+pgp_revoked = ရုပ်သိမ်းပြီး
+pgp_fingerprint = လက်ဗွေ
+pgp_key_id = ကီး ID
+pgp_created = ဖန်တီးသည့်ရက်
+pgp_acceptance = သင့်လက်ခံမှု
+pgp_acc_rejected = မဟုတ်ပါ၊ ဤကီးကို ပယ်ချပါ။
+pgp_acc_undecided = မဆုံးဖြတ်သေးပါ၊ နောက်မှ ဖြစ်နိုင်သည်။
+pgp_acc_unverified = ဟုတ်ကဲ့၊ သို့သော် ဤကီးမှန်ကန်ကြောင်း ကျွန်ုပ်မစစ်ဆေးရသေးပါ။
+pgp_acc_verified = ဟုတ်ကဲ့၊ ဤကီးတွင် မှန်ကန်သော လက်ဗွေရှိကြောင်း ကျွန်ုပ်ကိုယ်တိုင် စစ်ဆေးပြီးပါပြီ။
+pgp_personal_no = မဟုတ်ပါ၊ ၎င်းကို ကျွန်ုပ်၏ ကိုယ်ပိုင်ကီးအဖြစ် မသုံးပါနှင့်။
+pgp_personal_yes = ဟုတ်ကဲ့၊ ဤကီးကို ကိုယ်ပိုင်ကီးအဖြစ် သတ်မှတ်ပါ။
+pgp_verify_hint = ၎င်းသည် {addr} ၏ ကီးအစစ်ဖြစ်ကြောင်း သေချာစေရန် အီးမေးလ်မဟုတ်သော လုံခြုံသည့် ဆက်သွယ်ရေးလမ်းကြောင်းမှ ကီး၏ လက်ဗွေကို စစ်ဆေးပါ။
+pgp_gen_title = OpenPGP ကီး ဖန်တီးရန်
+pgp_gen_identity = အထောက်အထား
+pgp_gen_type = ကီးအမျိုးအစား:
+pgp_gen_ecc = ECC (ဧလစ်ပတစ်ကာ့ဗ်)
+pgp_gen_expiry = ကီးသက်တမ်း
+pgp_gen_no_expiry = ကီးသက်တမ်း မကုန်ပါ
+pgp_gen_button = ကီး ဖန်တီးရန်
+pgp_gen_confirm = {identity} အတွက် အများသုံးနှင့် လျှို့ဝှက်ကီး ဖန်တီးမလား။
+pgp_gen_progress = သင့် OpenPGP ကီးအသစ်ကို ဖန်တီးနေပါသည်…
+pgp_gen_done = OpenPGP ကီးကို အောင်မြင်စွာ ဖန်တီးပြီးပါပြီ။
+pgp_gen_failed = OpenPGP ကီးဖန်တီးမှု မမျှော်လင့်ဘဲ မအောင်မြင်ပါ
+pgp_import_none = ကီးများ ထည့်သွင်းခြင်း မရှိပါ။
+pgp_import_done = OpenPGP ကီးများကို အောင်မြင်စွာ ထည့်သွင်းပြီးပါပြီ။
+pgp_passphrase_title = စကားဝှက်စာပိုဒ် လိုအပ်သည်
+pgp_unlock_failed = ကီး သို့မဟုတ် ကီး၏ အခွဲများကို လော့ခ်မဖွင့်နိုင်ပါ။
+pgp_backup_title = သင့် OpenPGP ကီးကို အရန်သိမ်းရန် စကားဝှက်တစ်ခု ရွေးပါ
+pgp_backup_message = သင်ဤနေရာတွင် သတ်မှတ်သော စကားဝှက်က သင်ဖန်တီးမည့် OpenPGP လျှို့ဝှက်ကီး အရန်ဖိုင်ကို ကာကွယ်သည်။ အရန်သိမ်းခြင်းကို ဆက်လုပ်ရန် ဤစကားဝှက်ကို သတ်မှတ်ရမည်။
+pgp_backup_pw = လျှို့ဝှက်ကီး အရန်စကားဝှက်:
+pgp_backup_pw2 = လျှို့ဝှက်ကီး အရန်စကားဝှက် (ထပ်မံ):
+pgp_backup_done = လျှို့ဝှက်ကီးကို အောင်မြင်စွာ ထုတ်ယူပြီးပါပြီ။
+pgp_export_done = အများသုံးကီးကို အောင်မြင်စွာ ထုတ်ယူပြီးပါပြီ။
+pgp_copied = ကီး(များ)ကို ကလစ်ဘုတ်သို့ ကူးယူပြီးပါပြီ
+pgp_revoke_done = ကီးကို အောင်မြင်စွာ ရုပ်သိမ်းပြီးပါပြီ။
+pgp_personal = ကိုယ်ပိုင်ကီး
+pgp_no_keys = ကီး မရှိသေးပါ။ ကီးအတွဲအသစ်ကို ဖန်တီးပါ သို့မဟုတ် ကီးတစ်ခု ထည့်သွင်းပါ။
+pgp_unavailable = ZBox ၏ ဤမိတ္တူတွင် OpenPGP မရနိုင်ပါ။
+pgp_gen_expires_3y = ကီးသည် ၃ နှစ်အတွင်း သက်တမ်းကုန်မည်
+pgp_gen_no_identity = ဦးစွာ အီးမေးလ်အကောင့်တစ်ခု ထည့်ပါ။
+pgp_import_confirm = ဤကီးများကို ထည့်သွင်းမလား။\n\n{keys}
+pgp_passphrase_prompt = {name} ၏ လျှို့ဝှက်ကီးအတွက် စကားဝှက်စာပိုဒ် ထည့်ပါ။
+pgp_clip_empty = ကလစ်ဘုတ်တွင် OpenPGP ကီး မပါပါ။
+pgp_pw_mismatch = စကားဝှက်နှစ်ခု မကိုက်ညီပါ။
+pgp_backup_open = ဤဖိုင်သည် လျှို့ဝှက်ကီးအရန်ဖြစ်သည်။ ၎င်း၏ အရန်စကားဝှက်ကို ထည့်ပါ။
+pgp_revoke_confirm = {name} ၏ ကီးကို ရုပ်သိမ်းမလား။ ရုပ်သိမ်းထားသော ကီးကို ဘယ်တော့မျှ ပြန်မသုံးနိုင်ပါ။ အခြားသူများ မသုံးတော့စေရန် ရုပ်သိမ်းထားသော အများသုံးကီးကို မျှဝေပါ။
+pgp_delete_public_confirm = {name} ၏ အများသုံးကီးကို ဖျက်မလား။
+pgp_delete_secret_confirm = သင့်ကိုယ်ပိုင်ကီး {name} ကို ဖျက်မလား။ ၎င်းသို့ ကုဒ်ဝှက်ထားသော မေးလ်ကို ဘယ်တော့မျှ ပြန်မဖတ်နိုင်တော့ပါ။ လိုအပ်နိုင်သည်ဟု ထင်လျှင် ဦးစွာ လျှို့ဝှက်ကီးကို အရန်သိမ်းပါ။
+pgp_select_key = ဦးစွာ ကီးတစ်ခု ရွေးပါ။
+pgp_save_failed = ကီးများကို မသိမ်းနိုင်ပါ: {error}
+pgp_publish = &ထုတ်ဝေရန်
+pgp_publish_ok = အများသုံးကီးကို "{keyserver}" သို့ ပို့ပြီးပါပြီ။
+pgp_publish_fail = သင့်အများသုံးကီးကို "{keyserver}" သို့ မပို့နိုင်ပါ။
+pgp_publish_suggest = အများသုံးကီးကို ကီးဆာဗာတွင် ထုတ်ဝေခြင်းဖြင့် အခြားသူများ ၎င်းကို ရှာတွေ့နိုင်သည်။
+pgp_publish_question = ၎င်းကို ယခု {keyserver} တွင် ထုတ်ဝေမလား။ ထို့နောက် ဆာဗာက {addresses} သို့ အတည်ပြုအီးမေးလ်တစ်စောင် ပို့မည်။ ၎င်းထဲရှိ လင့်ခ်ကို ဖွင့်ပြီးနောက် သင့်လိပ်စာကို ရှာတွေ့နိုင်လိမ့်မည်။
+pgp_publish_sent = အတည်ပြုအီးမေးလ်ကို {addresses} သို့ ပို့ပြီးပါပြီ။ သင့်ကီးကို သင့်လိပ်စာဖြင့် ရှာတွေ့နိုင်စေရန် ၎င်းထဲရှိ လင့်ခ်ကို ဖွင့်ပါ။
+pgp_publish_already = {addresses} ဖြင့် ရှာတွေ့နိုင်ပြီးသား ဖြစ်သည်။
+pgp_rs_no_sig = ဒစ်ဂျစ်တယ်လက်မှတ် မရှိပါ
+pgp_rs_no_sig_info = ဤမက်ဆေ့ချ်တွင် ပို့သူ၏ ဒစ်ဂျစ်တယ်လက်မှတ် မပါပါ။ ဒစ်ဂျစ်တယ်လက်မှတ် မရှိခြင်းသည် ဤအီးမေးလ်လိပ်စာကို ဟန်ဆောင်သူတစ်ဦးက မက်ဆေ့ချ်ကို ပို့ခဲ့နိုင်သည်ဟု ဆိုလိုသည်။ ကွန်ရက်ကို ဖြတ်သန်းနေစဉ် မက်ဆေ့ချ်ကို ပြောင်းလဲခံရနိုင်ခြေလည်း ရှိသည်။
+pgp_rs_uncertain = မသေချာသော ဒစ်ဂျစ်တယ်လက်မှတ်
+pgp_rs_uncertain_date = မသေချာသော ဒစ်ဂျစ်တယ်လက်မှတ် - {date} တွင် လက်မှတ်ထိုးထားသည်
+pgp_rs_invalid = မမှန်ကန်သော ဒစ်ဂျစ်တယ်လက်မှတ်
+pgp_rs_invalid_date = မမှန်ကန်သော ဒစ်ဂျစ်တယ်လက်မှတ် - {date} တွင် လက်မှတ်ထိုးထားသည်
+pgp_rs_good = ကောင်းမွန်သော ဒစ်ဂျစ်တယ်လက်မှတ်
+pgp_rs_good_date = ကောင်းမွန်သော ဒစ်ဂျစ်တယ်လက်မှတ် - {date} တွင် လက်မှတ်ထိုးထားသည်
+pgp_rs_no_key = ဤမက်ဆေ့ချ်တွင် ဒစ်ဂျစ်တယ်လက်မှတ် ပါသော်လည်း မှန်ကန်မှု မသေချာပါ။ လက်မှတ်ကို စစ်ဆေးရန် ပို့သူ၏ အများသုံးကီး၏ မိတ္တူကို ရယူရမည်။
+pgp_rs_uid_mismatch = ဤမက်ဆေ့ချ်တွင် ဒစ်ဂျစ်တယ်လက်မှတ် ပါသော်လည်း မကိုက်ညီမှု တွေ့ရှိသည်။ လက်မှတ်ထိုးသူ၏ အများသုံးကီးနှင့် မကိုက်ညီသော အီးမေးလ်လိပ်စာမှ မက်ဆေ့ချ်ကို ပို့ထားသည်။
+pgp_rs_not_accepted = ဤမက်ဆေ့ချ်တွင် ဒစ်ဂျစ်တယ်လက်မှတ် ပါသော်လည်း လက်မှတ်ထိုးသူ၏ ကီးသည် သင့်အတွက် လက်ခံနိုင်သလားဟု သင် မဆုံးဖြတ်ရသေးပါ။
+pgp_rs_rejected = ဤမက်ဆေ့ချ်တွင် ဒစ်ဂျစ်တယ်လက်မှတ် ပါသော်လည်း လက်မှတ်ထိုးသူ၏ ကီးကို ပယ်ချရန် သင် အရင်က ဆုံးဖြတ်ပြီးသားဖြစ်သည်။
+pgp_rs_technical = ဤမက်ဆေ့ချ်တွင် ဒစ်ဂျစ်တယ်လက်မှတ် ပါသော်လည်း နည်းပညာဆိုင်ရာ အမှားတစ်ခု တွေ့ရှိသည်။ မက်ဆေ့ချ်ပျက်စီးနေခြင်း သို့မဟုတ် အခြားသူတစ်ဦးက ပြောင်းလဲခဲ့ခြင်း ဖြစ်နိုင်သည်။
+pgp_rs_unverified = ဤမက်ဆေ့ချ်တွင် သင်လက်ခံပြီးသား ကီးမှ မှန်ကန်သော ဒစ်ဂျစ်တယ်လက်မှတ် ပါသည်။ သို့သော် ထိုကီးသည် ပို့သူနှင့် အမှန်တကယ် သက်ဆိုင်ကြောင်း သင် မစစ်ဆေးရသေးပါ။
+pgp_rs_verified = ဤမက်ဆေ့ချ်တွင် စစ်ဆေးပြီး ကီးမှ မှန်ကန်သော ဒစ်ဂျစ်တယ်လက်မှတ် ပါသည်။
+pgp_rs_own_key = ဤမက်ဆေ့ချ်တွင် သင့်ကိုယ်ပိုင်ကီးမှ မှန်ကန်သော ဒစ်ဂျစ်တယ်လက်မှတ် ပါသည်။
+pgp_rs_signer_id = လက်မှတ်ထိုးသူ၏ ကီး ID: {keyid}
+pgp_rs_decrypt_id = သင့်ကုဒ်ဖြည်ကီး ID: {keyid}
+pgp_rs_enc_none = မက်ဆေ့ချ်ကို ကုဒ်မဝှက်ထားပါ
+pgp_rs_enc_none_info = ဤမက်ဆေ့ချ်ကို မပို့မီ ကုဒ်မဝှက်ခဲ့ပါ။ ကုဒ်ဝှက်မှုမရှိဘဲ အင်တာနက်ပေါ်သို့ ပို့သော အချက်အလက်များကို လမ်းတွင် အခြားသူများ မြင်နိုင်သည်။
+pgp_rs_enc_invalid = မက်ဆေ့ချ်ကို ကုဒ်ဖြည်၍ မရပါ
+pgp_rs_enc_invalid_info = ဤမက်ဆေ့ချ်ကို သင့်ထံ မပို့မီ ကုဒ်ဝှက်ထားသော်လည်း ကုဒ်ဖြည်၍ မရပါ။
+pgp_rs_enc_valid = မက်ဆေ့ချ်ကို ကုဒ်ဝှက်ထားသည်
+pgp_rs_enc_valid_info = ဤမက်ဆေ့ချ်ကို သင့်ထံ မပို့မီ ကုဒ်ဝှက်ထားသည်။ ကုဒ်ဝှက်မှုက မက်ဆေ့ချ်ကို ရည်ရွယ်ထားသော လက်ခံသူများသာ ဖတ်နိုင်ကြောင်း အာမခံသည်။
+pgp_rs_field = မက်ဆေ့ချ်လုံခြုံရေး
+pgp_rs_import = OpenPGP ကီး ထည့်သွင်းရန်
+pgp_rs_open_to_unlock = စကားဝှက်စာပိုဒ် ထည့်ရန် မက်ဆေ့ချ်ကို ဖွင့်ပါ။
+pgp_rs_reply_not_quoted = မူရင်းမက်ဆေ့ချ်ကို ကုဒ်ဝှက်ထားသဖြင့် ၎င်း၏စာသားကို ဤနေရာတွင် မကိုးကားထားပါ။
+pgp_cm_encrypt = ကုဒ်ဝှက်ရန်
+pgp_cm_sign = ဒစ်ဂျစ်တယ်လက်မှတ်ထိုးရန်
+pgp_e2e_title = အဆုံးမှအဆုံး ကုဒ်ဝှက်မှု
+acct_e2e_button = &အဆုံးမှအဆုံး ကုဒ်ဝှက်မှု...
+pgp_e2e_none = ဤအထောက်အထားအတွက် OpenPGP မသုံးပါနှင့်။
+pgp_e2e_disable = မက်ဆေ့ချ်အသစ်များအတွက် ကုဒ်ဝှက်မှုကို ပိတ်ရန်
+pgp_e2e_enable = မက်ဆေ့ချ်အသစ်များအတွက် ကုဒ်ဝှက်မှုကို ဖွင့်ရန်
+pgp_e2e_enable_info = တစ်စောင်ချင်းစီအတွက် ကုဒ်ဝှက်မှုကို ပိတ်နိုင်သည်။
+pgp_e2e_sign = ကုဒ်မဝှက်ထားသော မက်ဆေ့ချ်များကို လက်မှတ်ထိုးရန်
+pgp_e2e_signing_info = ဒစ်ဂျစ်တယ်လက်မှတ်သည် မက်ဆေ့ချ်ကို သင်ပို့ကြောင်းနှင့် ၎င်း၏အကြောင်းအရာ မပြောင်းလဲကြောင်း လက်ခံသူများ စစ်ဆေးနိုင်စေသည်။ ကုဒ်ဝှက်ထားသော မက်ဆေ့ချ်များကို မူလအားဖြင့် အမြဲ လက်မှတ်ထိုးသည်။
+pgp_e2e_autocrypt = Autocrypt နှင့် လိုက်ဖက်ရန် အီးမေးလ်ခေါင်းစီးများတွင် OpenPGP အများသုံးကီး(များ) ပို့ရန်
+pgp_not_set_up = {addr} မှ အဆုံးမှအဆုံး ကုဒ်ဝှက်ထားသော မက်ဆေ့ချ်များ ပို့ရန် သင် မသတ်မှတ်ထားပါ။
+pgp_cannot_encrypt = ကုဒ်ဝှက်၍ မရပါ
+pgp_do_you_accept = ဒစ်ဂျစ်တယ်လက်မှတ်များ စစ်ဆေးရန်နှင့် မက်ဆေ့ချ်များ ကုဒ်ဝှက်ရန် ဤကီးကို လက်ခံပါသလား။
+pgp_searching = ရှာဖွေနေပါသည်…
+pgp_no_key_found = သတ်မှတ်ထားသော ရှာဖွေမှုစံနှုန်းများနှင့် ကိုက်ညီသော သုံးနိုင်သည့်ကီးကို ကျွန်ုပ်တို့ မတွေ့နိုင်ပါ။
+pgp_source_autocrypt = Autocrypt ခေါင်းစီး
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = ကီးဆာဗာ
+pgp_discover = &အွန်လိုင်းတွင် ကီးများ ရှာဖွေရန်
+pgp_cm_attach_key = ကျွန်ုပ်၏ အများသုံးကီးကို ပူးတွဲရန်
+pgp_e2e_key_label = {address} အတွက် ကိုယ်ပိုင်ကီး
+pgp_e2e_auto = အလိုအလျောက်: ဤလိပ်စာအတွက် သင့်ကိုယ်ပိုင်ကီး
+pgp_e2e_no_key = ZBox တွင် {address} အတွက် ကိုယ်ပိုင် OpenPGP ကီး မရှိပါ။ ကိရိယာများ၊ OpenPGP ကီး စီမံခန့်ခွဲသူ တွင် တစ်ခု ဖန်တီးပါ။
+pgp_e2e_new_messages = မက်ဆေ့ချ်အသစ်များအတွက် ကုဒ်ဝှက်မှု
+pgp_e2e_key_missing = ကီး {keyid}၊ မတွေ့ပါ
+pgp_missing_keys = ဤလက်ခံသူများတွင် သုံးနိုင်သော၊ လက်ခံထားသော ကီး မရှိပါ:\n\n{addresses}\n\nမက်ဆေ့ချ်ကို ကုဒ်ဝှက်၍ မပို့နိုင်ပါ။
+pgp_send_unencrypted = &ကုဒ်မဝှက်ဘဲ ပို့ရန်
+pgp_collected_found = ဤလက်ခံသူများ၏ ကီးများကို ၎င်းတို့ သင့်ထံ ပို့ထားသော မေးလ်တွင် တွေ့ခဲ့သည်:
+pgp_lookup_q = ဤလက်ခံသူများ၏ ကီးများကို အွန်လိုင်းတွင် ရှာမလား။\n\n{addresses}\n\nဤအရာသည် ၎င်းတို့၏ လိပ်စာများကို keys.openpgp.org သို့နှင့် ၎င်းတို့၏ ကိုယ်ပိုင်မေးလ်ဒိုမိန်းများသို့ ပို့သည်။
+pgp_found_online = အွန်လိုင်းတွင် တွေ့သော ကီးများ:
+pgp_source = အရင်းအမြစ်: {source}
+pgp_discover_prompt = အီးမေးလ်လိပ်စာ ထည့်ပါ။ ZBox က ၎င်း၏ မေးလ်ဒိုမိန်း၏ Web Key Directory တွင်နှင့် keys.openpgp.org တွင် ၎င်း၏ OpenPGP ကီးများကို ရှာသည်။
+pgp_discover_bad = name@example.com ကဲ့သို့ အီးမေးလ်လိပ်စာအပြည့်အစုံ ထည့်ပါ။
+pgp_keys_unreadable = OpenPGP ကီးများကို မဖွင့်နိုင်ပါ: {error}
+pgp_rs_why_no_key = ဤမက်ဆေ့ချ်ကို ကုဒ်ဖြည်ရန် လိုအပ်သော လျှို့ဝှက်ကီး မရနိုင်ပါ။
+pgp_rs_why_unknown = ဤကုဒ်ဝှက်ထားသော မက်ဆေ့ချ်တွင် မသိသော ပြဿနာများ ရှိသည်။
+pgp_rs_hidden_subject = ကုဒ်ဝှက်ထားသော မက်ဆေ့ချ်
+pgp_rs_why_passphrase = သင့်ကီး၏ စကားဝှက်စာပိုဒ်ကို မထည့်ရသေးပါ။ ၎င်းကို ထည့်ရန် မက်ဆေ့ချ်ကို ပြန်ဖွင့်ပါ။
+pgp_rs_why_unavailable = ZBox ၏ ဤမိတ္တူတွင် OpenPGP မရနိုင်ပါ။
+pgp_rs_why_fetch = ကုဒ်ဖြည်ရန် ဆာဗာမှ မက်ဆေ့ချ်ကို မရယူနိုင်ပါ။ ထပ်ကြိုးစားရန် ၎င်းကို ပြန်ဖွင့်ပါ။
+pgp_rs_import_hint = ဖတ်ရန် ဤမက်ဆေ့ချ်အတွက် သင့်လျှို့ဝှက်ကီးကို ZBox သို့ ထည့်သွင်းပါ။
+
+[errors]
+language_restart_failed = ZBox ကိုယ်တိုင် ပြန်မစတင်နိုင်ပါ:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} အတွက် မေးလ်ကလိုင်းယင့်ကို မဖွင့်နိုင်ပါ။
+
+wizard_test_failed = ချိတ်ဆက်မှု မအောင်မြင်ပါ:\n\n{error}
+
+contacts_import_unreadable = ထိုဖိုင်ကို မဖတ်နိုင်ပါ။\n\n{error}
+contacts_export_unwritable = ထိုဖိုင်ကို မရေးနိုင်ပါ။\n\n{error}
+
+attach_unreadable = ပူးတွဲဖိုင် {path} ကို မဖတ်နိုင်ပါ:\n{error}
+send_failed = မက်ဆေ့ချ်ကို မပို့နိုင်ပါ။\n\n{error}
+draft_attach_unreadable = ပူးတွဲဖိုင် {path} ကို မဖတ်နိုင်ပါ:\n{error}\n\nမူကြမ်းကို မသိမ်းထားပါ။
+draft_save_failed = မူကြမ်းကို မသိမ်းနိုင်ပါ။\n\n{error}
+
+clipboard_unavailable = ကလစ်ဘုတ်ကို မဖွင့်နိုင်ပါ။
+open_link_failed = ဤအတွက် သင့်ဘရောက်ဇာကို မဖွင့်နိုင်ပါ:\n{url}
+
+master_password_mismatch = မာစတာစကားဝှက်အသစ် အကွက်နှစ်ခု မကိုက်ညီပါ။
+master_password_required = မာစတာစကားဝှက် ထည့်ပါ၊ သို့မဟုတ် ပယ်ဖျက်ရန် ကို နှိပ်ပါ။
+master_password_not_set = မာစတာစကားဝှက်ကို မသတ်မှတ်နိုင်ပါ: {error}
+master_password_not_here = မာစတာစကားဝှက်ကို ဤနေရာမှ မပြောင်းနိုင်ပါ။
+
+attachment_save_failed = ပူးတွဲဖိုင်ကို မသိမ်းနိုင်ပါ။\n\n{error}
+attachments_save_failed = ပူးတွဲဖိုင်များကို မသိမ်းနိုင်ပါ။\n\n{error}
+print_failed = မက်ဆေ့ချ်ကို ပရင့်မထုတ်နိုင်ပါ။ ပရင့်တာ ပြင်ဆင်ထားခြင်း ရှိမရှိ စစ်ဆေးပါ။
+print_preview_failed = ပရင့်ကြိုကြည့်မှုကို မဖွင့်နိုင်ပါ။ ပရင့်တာ ပြင်ဆင်ထားခြင်း ရှိမရှိ စစ်ဆေးပါ။
+
+related_search_failed = ဆက်စပ်မက်ဆေ့ချ်များကို မရှာနိုင်ပါ။\n\n{error}
+search_failed = ရှာဖွေမှု မအောင်မြင်ပါ။\n\n{error}
+
+unlock_methods_no_config_folder = ZBox သည် ၎င်း၏ ပြင်ဆင်ချက်ဖိုင်တွဲကို မတွေ့နိုင်သဖြင့် လော့ခ်ဖွင့်နည်းများကို ဤနေရာတွင် စီမံ၍ မရပါ။
+shortcut_no_folder = ZBox သည် ၎င်း၏ကိုယ်ပိုင်ဖိုင်တွဲကို မဆုံးဖြတ်နိုင်သဖြင့် ဤနေရာမှ ဖြတ်လမ်းကို ဖန်တီး၍ မရပါ။
+shortcut_failed_settings = ဒက်စ်တော့ဖြတ်လမ်းကို မဖန်တီးနိုင်ပါ:\n\n{error}
+
+unlock_method_failed = {what} အလုပ်မလုပ်ပါ။\n\n{error}
+unlock_check_failed = မာစတာစကားဝှက်ကို မစစ်ဆေးနိုင်ပါ။\n\n{error}
+unlock_password_wrong = ထိုမာစတာစကားဝှက် မမှန်ပါ။
+unlock_add_failed = {what} ကို မထည့်နိုင်ပါ။\n\n{error}
+unlock_passkey_setup_failed = ဤကွန်ပျူတာတွင် ပါစ်ကီးကို မသတ်မှတ်နိုင်သဖြင့် ဘာမျှ မပြောင်းပါ။\n\n{error}
+unlock_method_test_failed = ထိုနည်းလမ်း အလုပ်မလုပ်ပါ။\n\n{error}
+
+account_list_unreadable = ZBox သည် သင့်အကောင့်စာရင်းကို မဖွင့်နိုင်ပါ။\n\n{error}\n\nအကောင့်များ မဖွင့်ရသေးပါ၊ ဖိုင်ကိုလည်း မပြောင်းလဲထားသဖြင့် ဘာမျှ မဆုံးရှုံးပါ။ ၎င်းကို ဖတ်နိုင်သည်အထိ အကောင့်များ ထည့်ခြင်း၊ တည်းဖြတ်ခြင်းနှင့် ဖယ်ရှားခြင်းကို ငြင်းပယ်မည်။
+account_list_no_accounts = ZBox သည် ဤအကြိမ်တွင် သင့်အကောင့်စာရင်းကို မဖွင့်နိုင်ပါ ({error})၊ ထို့ကြောင့် ရွေးရန်အကောင့် မရှိပါ။ ဘာမျှ မဆုံးရှုံးဘဲ ဘာမျှ မပြောင်းလဲပါ။ ZBox ကို ပိတ်ပြီး ပြန်စတင်ကာ မေးလာလျှင် သင့်မာစတာစကားဝှက်ကို ထည့်ပါ။
+open_message_failed = မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+filters_list_failed = {folder} ရှိ မက်ဆေ့ချ်များကို စာရင်းမပြုစုနိုင်ပါ။\n\n{error}
+filters_move_failed = စစ်ထုတ်ပြီးသော မက်ဆေ့ချ်များကို မရွှေ့နိုင်ပါ။\n\n{error}
+cache_clear_failed = ကက်ရှ်ကို မရှင်းလင်းနိုင်ပါ။\n\n{error}
+folder_create_failed = ဖိုင်တွဲကို မဖန်တီးနိုင်ပါ။\n\n{error}
+folder_rename_failed = ဖိုင်တွဲကို အမည်မပြောင်းနိုင်ပါ။\n\n{error}
+folder_delete_failed = ဖိုင်တွဲကို မဖျက်နိုင်ပါ။\n\n{error}
+folder_subscribe_failed = ဖိုင်တွဲသို့ စာရင်းမသွင်းနိုင်ပါ။\n\n{error}
+folder_unsubscribe_failed = ဖိုင်တွဲမှ စာရင်းသွင်းမှု မပယ်ဖျက်နိုင်ပါ။\n\n{error}
+saved_open_failed = ဖိုင်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+saved_parse_failed = ဤဖိုင်ကို အီးမေးလ်မက်ဆေ့ချ်အဖြစ် မခွဲခြမ်းစိတ်ဖြာနိုင်ပါ။\n\n{error}
+save_file_failed = ဖိုင်ကို မသိမ်းနိုင်ပါ။\n\n{error}
+save_fetch_failed = သိမ်းရန် မက်ဆေ့ချ်ကို မရယူနိုင်ပါ။\n\n{error}
+empty_trash_failed = အမှိုက်ပုံးကို မရှင်းနိုင်ပါ။\n\n{error}
+empty_junk_failed = အမှိုက်စာကို မရှင်းနိုင်ပါ။\n\n{error}
+export_write_failed = ထုတ်ယူဖိုင်ကို မရေးနိုင်ပါ။\n\n{error}
+import_read_failed = ဤဖိုင်ကို ZBox ထုတ်ယူမှုအဖြစ် မဖတ်နိုင်ပါ။\n\n{error}
+import_not_export = ဤဖိုင်သည် ZBox ထုတ်ယူမှုနှင့် မတူပါ။\n\n{error}
+search_open_failed = ဤမက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။
+related_load_failed = ဤမက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+reply_load_failed = ပြန်စာပေးရန် မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+forward_load_failed = ထပ်ဆင့်ပို့ရန် မက်ဆေ့ချ်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+action_failed = ဤလုပ်ဆောင်ချက်ကို မပြီးစီးနိုင်ပါ။\n\n{error}
+undo_failed = {label} ကို နောက်ပြန်၍ မရပါ။\n\n{error}
+copy_failed = မက်ဆေ့ချ်ကို မကူးယူနိုင်ပါ။\n\n{error}
+delete_failed = မက်ဆေ့ချ်ကို မဖျက်နိုင်ပါ။\n\n{error}
+archive_failed = မက်ဆေ့ချ်ကို မော်ကွန်းမတင်နိုင်ပါ။\n\n{error}
+master_password_not_changed = မာစတာစကားဝှက်ကို မပြောင်းနိုင်ပါ: {error}
+shortcut_failed_startup = ဒက်စ်တော့ဖြတ်လမ်းကို မဖန်တီးနိုင်ပါ:\n\n{error}\n\nZBox ဆက်လက်စတင်မည်။ နောက်ပိုင်း ဆက်တင်များမှ ထပ်ကြိုးစားနိုင်သည်။
+account_locked_action = ZBox က %s မလုပ်နိုင်ပါ။ ဤအကြိမ်တွင် အကောင့်စာရင်းကို မဖွင့်နိုင်ပါ (%s)၊ ဘာမျှ မပြောင်းလဲပါ။ ZBox ကို ပိတ်ပြီး ပြန်စတင်ကာ မေးလာလျှင် သင့်မာစတာစကားဝှက်ကို ထည့်ပါ။
+send_tls_mismatch = မက်ဆေ့ချ်ကို မပို့နိုင်ပါ။ ထွက်သွားသောဆာဗာက ကုဒ်ဝှက်မှုမပါဘဲ တုံ့ပြန်သဖြင့် ထွက်သွားသော ကုဒ်ဝှက်မှုသည် ပေါ့တ်နှင့် မကိုက်ညီပါ။ ကိရိယာများ၊ အကောင့်နှင့် အထောက်အထား ဆက်တင်များတွင် ပေါ့တ် 587 အတွက် STARTTLS သို့မဟုတ် ပေါ့တ် 465 အတွက် SSL/TLS ကို သုံးပြီး ပြန်ပို့ပါ။\n\n{error}
+mark_folder_read_failed = ဖိုင်တွဲကို ဖတ်ပြီးအဖြစ် မမှတ်နိုင်ပါ။\n\n{error}
+update_failed = အပ်ဒိတ်ကို မဒေါင်းလုဒ်ဆွဲနိုင်သဖြင့် ဘာမျှ မပြောင်းပါ။\n\n{error}
+update_rolled_back = အပ်ဒိတ်မစတင်နိုင်သဖြင့် ယခင်ဗားရှင်းကို ပြန်ထားပြီးပါပြီ။
+attachment_open_failed = ပူးတွဲဖိုင်ကို မဖွင့်နိုင်ပါ။\n\n{error}
+headers_failed = မက်ဆေ့ချ်ခေါင်းစီးများကို မဖွင့်နိုင်ပါ။\n\n{error}
+wizard_ms_sign_in_first = မဆက်မီ Microsoft ဖြင့် လော့ဂင်ဝင်ပါ။ ဤစာမျက်နှာရှိ လော့ဂင်ခလုတ်နှစ်ခုအနက် တစ်ခုကို သုံးပါ။
+wizard_provider_unsupported = ZBox သည် ဤဝန်ဆောင်မှုပေးသူသို့ လော့ဂင်မဝင်နိုင်ပါ။ ဤစာမျက်နှာရှိ မှတ်ချက်က အကြောင်းပြချက်ကို ပြောသည်။ နောက်ပြန်သွားပြီး အခြားအီးမေးလ်လိပ်စာကို သုံးပါ၊ သို့မဟုတ် ပယ်ဖျက်ပါ။
+acct_ms_sign_in_first = မသိမ်းမီ Microsoft ဖြင့် လော့ဂင်ဝင်ပါ၊ သို့မဟုတ် လော့ဂင်ဝင်နည်းအဖြစ် စကားဝှက်ကို ရွေးပါ။
+ms_sign_in_again = {account} အတွက် Microsoft လော့ဂင် ထပ်လိုအပ်သည်။ အကောင့်နှင့် အထောက်အထား ဆက်တင်များကို ဖွင့်ပြီး ထိုနေရာတွင် လော့ဂင်ဝင်ပါ။
+graph_pgp_too_large = ဤကုဒ်ဝှက်ထားသော သို့မဟုတ် လက်မှတ်ထိုးထားသော မက်ဆေ့ချ်သည် ထိုကဲ့သို့ မေးလ်အတွက် Microsoft ခွင့်ပြုသည့် ၃ MB ခန့်ထက် ကြီးသည်။ ပူးတွဲဖိုင်ငယ်များ ပို့ပါ၊ သို့မဟုတ် ဤမက်ဆေ့ချ်အတွက် ကုဒ်ဝှက်ရန် နှင့် ဒစ်ဂျစ်တယ်လက်မှတ်ထိုးရန် ကို ပိတ်ပါ။
+empty_trash_all_failed = ဤအကောင့်များအတွက် အမှိုက်ပုံးကို မရှင်းနိုင်ပါ: {accounts}
+
+[help]

@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = پښتو
+code = ps
+direction = rtl
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = پیغام ولیږل شو.
+draft_saved = مسوده خوندي شوه.
+signature_inserted = لاسلیک ورزیات شو.
+signature_none = دا حساب لاسلیک نه لري.
+signature_saved = لاسلیک خوندي شو.
+signature_not_saved = لاسلیک خوندي نه شو.
+pasted_as_quotation = د نقل قول په توګه پیسټ شو.
+clipboard_empty = په کلیپبورډ کې هیڅ نشته.
+word_count = {words} کلمې، {characters} توري.
+report_copied = راپور کاپي شو.
+compose_tab_needed = دغه قومانده د لیکلو ټب ته اړتیا لري.
+attach_file_instead = غورځول شوې فایلونه د پیغام په متن کې نه اچول کېږي. د فایل لیږلو لپاره فایل ضمیمه کړئ وکاروئ.
+
+# Formatting in the message body
+formatting_here = دلته بڼه: {formatting}.
+no_formatting_here = دلته بڼه نشته، ساده متن.
+
+# Spelling
+nothing_to_check = د کتلو لپاره هیڅ نشته.
+no_misspellings = املایي تېروتنه نشته.
+spelling_dictionary_unavailable = د املا قاموس شتون نه لري.
+next_misspelling_first = لومړی بله تېروتنه وکاروئ.
+word_added = {word} قاموس ته ورزیات شو.
+word_not_added = {word} قاموس ته نه شو ورزیاتېدلی.
+corrections_applied_one = ۱ سمون پلي شو.
+corrections_applied_many = {count} سمونونه پلي شول.
+corrections_applied_partly = له {total} سمونونو څخه {applied} پلي شول. پاتې رد شول؛ لاګ وګورئ.
+occurrences_replaced_one = ۱ پېښه بدله شوه.
+occurrences_replaced_many = {count} پېښې بدلې شوې.
+
+# Reading mail
+message_did_not_open = پیغام نه خلاص شو. سرور ځواب ونه کړ. د بیا هڅې لپاره Enter ووهئ.
+thread_open = پدې لړۍ کې {messages}. د بندولو لپاره بیا ووهئ.
+no_thread_selected = هیڅ لړۍ نه ده ټاکل شوې.
+thread_watched = لړۍ څارل کېږي.
+thread_not_watched = لړۍ نور نه څارل کېږي.
+thread_ignored = لړۍ له پامه غورځول کېږي.
+thread_not_ignored = لړۍ نور له پامه نه غورځول کېږي.
+none_found = هیڅ ونه موندل شول.
+refreshing_this_folder = دا پوښه تازه کېږي.
+refreshing_all_accounts = ټول حسابونه تازه کېږي.
+message_view_html = د پیغام کتنه: HTML (ښودل شوی).
+message_view_text = د پیغام کتنه: متن.
+html_view_still_loading = پیغام لا هم بارېږي. Escape یې بندوي.
+message_still_opening = پیغام خلاصېږي. سرور ورو دی.
+remote_content_blocked = لرې منځپانګه بنده شوه.
+remote_content_unblocked = د لرې منځپانګې بندیز لرې شو.
+remote_content_already_showing = لرې منځپانګه لا دمخه پدې پیغام کې ښودل کېږي.
+archived = آرشیف شو.
+copied_to_folder = {to_folder} ته کاپي شو.
+deleted_one = پیغام د تل لپاره ړنګ شو.
+deleted_many = {count} پیغامونه د تل لپاره ړنګ شول.
+trashed_one = پیغام زباله‌دان ته ولېږدول شو.
+trashed_many = {count} پیغامونه زباله‌دان ته ولېږدول شول.
+
+# Accounts and new mail
+no_account_yet = تر اوسه د تلو لپاره هیڅ حساب نشته.
+inbox_landed = د {name} راغلي پیغامونه.
+account_enabled = {name} فعال شو.
+auto_check_paused = د {account} لپاره اتومات کتنه ودرول شوه.
+auto_check_resumed = د {account} لپاره اتومات کتنه فعاله ده.
+account_disabled = {name} غیرفعال شو.
+new_mail_one = د {name} لپاره ۱ نوی پیغام.
+new_mail_many = د {name} لپاره {count} نوي پیغامونه.
+refresh_all_done_one = ۱ حساب تازه شو.
+refresh_all_done_many = {count} حسابونه تازه شول.
+refresh_all_done_failures = {count} حسابونه تازه شول، {failed} تازه نه شول.
+refresh_all_done_failures_one = {count} حساب تازه شو، {failed} تازه نه شو.
+
+# The sender of the message in view
+sender_address_copied = {sender}. پته کاپي شو.
+sender_no_address = {sender}. د کاپي کولو لپاره پته نشته.
+clipboard_not_opened = {sender}. کلیپبورډ نه شو خلاصېدلی.
+
+# The signature editor
+signature_page_formatted = بڼه شوی. همدا به خوندي کېږي.
+signature_page_html = د HTML سرچینه. همدا به خوندي کېږي.
+signature_page_html_still_wins = بڼه شوی. لا هم د HTML سرچینه خوندي کېږي.
+
+# Background work
+phishing_list_updating = د فشینګ لیست په شالید کې تازه کېږي.
+cache_cleared = {files} کېش شوې فایلونه پاک شول، {size} MB.
+hotkeys_diagnostic_on = د ګړندیو کیلیو تشخیص فعال دی، نښه شوی
+hotkeys_diagnostic_off = د ګړندیو کیلیو تشخیص بند دی، نښه لرې شوې
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = آرشیف
+action_delete = ړنګول
+action_delete_permanently = د تل لپاره ړنګول
+action_mark_as_junk = د سپیم په توګه نښه کول
+action_mark_as_not_junk = د ناسپیم په توګه نښه کول
+action_move_to = لېږدول
+action_copy_to = کاپي کول
+action_mark_message = پیغام نښه کول
+action_undo = بېرته کول
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = بېرته شو: {action}.
+undo_done_many = د {count} پیغامونو لپاره بېرته شو: {action}.
+junk_marked_one = د سپیم په توګه نښه شو.
+junk_marked_many = {count} پیغامونه د سپیم په توګه نښه شول.
+junk_no_new_sender = نوی لیږونکی بند نه شو: لا دمخه بند دی، د لیکلیست پیغام دی، یا ستاسو له خپلو پتو څخه یو دی.
+not_junk_marked_one = د ناسپیم په توګه نښه شو.
+not_junk_marked_many = {count} پیغامونه د ناسپیم په توګه نښه شول.
+moved_to_one = {to_folder} ته ولېږدول شو.
+moved_to_many = {count} پیغامونه {to_folder} ته ولېږدول شول.
+copied_to_many = {count} پیغامونه {to_folder} ته کاپي شول.
+marked_read = د لوستل شوي په توګه نښه شو.
+marked_unread = د نالوستل شوي په توګه نښه شو.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = له {total} څخه {completed} وروسته لغوه شو. {succeeded} بریالي، {failed} ناکام.
+bulk_failed_one = {done} له ۱ پیغام څخه {failed} ناکام شو.
+bulk_failed_many = {done} له {total} پیغامونو څخه {failed} ناکام شول.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = تور
+format_word_italic = کوږ
+format_word_strike = کرښه پرې ایښودل شوی
+format_word_href = لینک
+format_word_bullet = ټکي لرونکی لیست
+format_word_number = شمېرل شوی لیست
+format_word_quote = نقل قول
+format_word_code = کوډ
+format_word_heading1 = سرلیک
+format_applied = {formatting} پلي شو.
+format_inserted = {formatting} ورزیات شو.
+format_not_available = {formatting} په ساده پیغام متن کې شتون نه لري.
+format_on = {formatting} فعال
+format_off = {formatting} بند
+link_applied = لینک پلي شو.
+link_applied_to_selection = لینک ټاکل شوي برخې ته پلي شو.
+plain_body_formatting = ساده پیغام متن خپل بڼه د ټګونو په توګه ښیي.
+
+# Reaching either end of a thread
+thread_edge_first = پدې لړۍ کې لومړی پیغام. د بندولو لپاره بیا ووهئ.
+thread_edge_last = پدې لړۍ کې وروستی پیغام. د بندولو لپاره بیا ووهئ.
+jump_unified_inbox = یو شوي راغلي پیغامونه.
+remote_none = پدې پیغام کې لرې منځپانګه نشته.
+sender_none = پدې پیغام کې لیږونکی نشته.
+sender_name_no_address = %s، پته نشته
+signature_not_switched = لاسلیک ونه بدل شو. د دې حساب د لاسلیک د ورزیاتولو لپاره Ctrl+Shift+S ووهئ.
+signature_removed_no_signature = لاسلیک لرې شو. دا حساب لاسلیک نه لري.
+signature_switched = لاسلیک د دې حساب لاسلیک ته بدل شو.
+spell_not_replaced = کلمه نه شوه بدلېدلی.
+spell_replaced_with = د {word} په ځای شو.
+folder_marked_read = {count} پیغامونه د لوستل شوي په توګه نښه شول.
+folder_no_unread = نالوستل شوي پیغامونه نشته.
+threads_all_collapsed = ټولې لړۍ راټولې شوې.
+threads_all_expanded = ټولې لړۍ پرانیستل شوې.
+upd_percent = {percent} سلنه
+upd_download_done = ډاونلوډ بشپړ شو. تازه کول چمتو کېږي...
+upd_updated_to = ZBox {version} ته تازه شو.
+header_copied = کاپي شو.
+headers_copied = ټول سرلیکونه کاپي شول.
+identity_copies_updated = د دې پېژندنې لپاره Cc او Bcc تازه شول.
+signature_switched_identity = لاسلیک د دې پېژندنې لاسلیک ته بدل شو.
+signature_removed_identity = لاسلیک لرې شو. دا پېژندنه لاسلیک نه لري.
+signature_not_switched_identity = لاسلیک ونه بدل شو. د دې پېژندنې د لاسلیک د ورزیاتولو لپاره Ctrl+Shift+S ووهئ.
+signature_none_identity = دا پېژندنه لاسلیک نه لري.
+move_keys_no_selection = لومړی یو پیغام وټاکئ.
+move_keys_no_folders = تر اوسه د ټاکلو لپاره پوښې نشته. لږ وروسته بیا هڅه وکړئ.
+block_sender_done_one = {sender} بند شو. د هغه نوي پیغامونه به زباله‌دان ته ځي.
+block_sender_done_many = {count} لیږونکي بند شول. د هغوی نوي پیغامونه به زباله‌دان ته ځي.
+block_sender_already = {sender} لا دمخه بند دی.
+block_sender_own = بند نه شو: دا ستاسو له خپلو پتو څخه یو دی.
+block_sender_list_unknown = بند نه شو: دا پیغام د لیکلیست له لارې راغلی او نه ښیي چې چا لېږلی. د لیکلیست د پتې بندول به په هغه کې ټول کسان بند کړي.
+block_sender_moved = لیږونکی بند شو. {count} پیغامونه زباله‌دان ته ولېږدول شول.
+block_senders_moved = {senders} لیږونکي بند شول. {count} پیغامونه زباله‌دان ته ولېږدول شول.
+unblock_sender_moved = د لیږونکي بندیز لرې شو. {count} پیغامونه راغلو پیغامونو ته ولېږدول شول.
+unblock_senders_moved = د {senders} لیږونکو بندیز لرې شو. {count} پیغامونه راغلو پیغامونو ته ولېږدول شول.
+unblock_sender_done = د {sender} بندیز لرې شو.
+unblock_sender_not_blocked = {sender} بند نه دی.
+pgp_cm_on = {name} فعال.
+pgp_cm_off = {name} بند.
+pgp_cm_identity = د کوډولو امستنې د دې پېژندنې امستنو ته بدلې شوې.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = پورته یو څه ولیکئ او Enter ووهئ یا لټون وټاکئ.
+search_no_account = لومړی یو حساب ورزیات کړئ.
+search_no_term = د لټون لپاره کلمې ولیکئ، یا نیټه یا یو چک بکس وټاکئ.
+search_running = لټول کېږي...
+search_none = د "{term}" لپاره هیڅ سمون نشته.
+search_found_one = د "{term}" لپاره ۱ سمون.
+search_found_many = د "{term}" لپاره {count} سمونونه.
+search_bad_date = نیټه د کال-میاشت-ورځ په بڼه ولیکئ، د بېلګې په توګه 2025-12-31، د اختیاري وخت سره لکه 14:30.
+search_bad_range = د نیټې د حد پای د پیل څخه مخکې دی.
+search_none_any = هیڅ پیغام نه سمون خوري.
+search_found_one_any = ۱ پیغام وموندل شو.
+search_found_many_any = {count} پیغامونه وموندل شول.
+search_failed = لټون ناکام شو.
+
+# The related messages tab
+related_running = لټول کېږي...
+related_none = اړوند پیغامونه ونه موندل شول.
+related_found_one = ۱ اړوند پیغام وموندل شو.
+related_found_many = {count} اړوند پیغامونه وموندل شول.
+related_failed = د اړوندو پیغامونو لټون نه شو کېدای.
+
+# Writing and sending
+sending_via = د {sender} له لارې لېږل کېږي...
+send_failed = لېږل ناکام شو. د جزیاتو لپاره لاګونه وګورئ.
+draft_autosaved = مسوده په اتومات ډول خوندي شوه.
+draft_autosave_failed = د مسودې اتومات خوندي کول ناکام شو. د جزیاتو لپاره لاګونه وګورئ.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = لرې منځپانګه به اوس د {sender} له پیغامونو لپاره بار شي.
+downloading_attachment = {filename} ډاونلوډ کېږي...
+downloading_attachments_one = ۱ ضمیمه ډاونلوډ کېږي...
+downloading_attachments_many = {count} ضمیمې ډاونلوډ کېږي...
+saved_to = په {folder} کې خوندي شو
+attachment_download_failed = د ضمیمې ډاونلوډ ناکام شو.
+
+# Getting mail onto the screen
+loading_folder = د {account} لپاره {folder} بارېږي...
+messages_in_folder = په {folder} کې {count} پیغامونه.
+messages_in_folder_cached = په {folder} کې {count} پیغامونه (وروستۍ همغږې شوې کاپي، تازه کېږي...)
+no_offline_copy = د {folder} لپاره تر اوسه آفلاین کاپي نشته.
+refresh_failed_cached = {folder} تازه نه شو: وروستۍ همغږې شوې کاپي ښودل کېږي.
+no_such_folder = د دې حساب لپاره {folder} پوښه نشته.
+load_failed = د پیغامونو بارول ناکام شو. د جزیاتو لپاره لاګونه وګورئ.
+no_more_to_load = پدې پوښه کې د بارولو لپاره نور پیغامونه نشته.
+loading_more = په {folder} کې نور پیغامونه بارېږي...
+more_loaded = {count} نور پیغامونه بار شول.
+no_more_messages = پدې پوښه کې نور پیغامونه نشته.
+load_more_failed = نور پیغامونه نه شول بارېدلی: {error}
+loading_unified = یو شوې {folder} بارېږي...
+messages_in_unified = په یو شوې {folder} کې د حسابونو په اوږدو کې {count} پیغامونه.
+messages_in_unified_cached = په یو شوې {folder} کې {count} پیغامونه (وروستۍ همغږې شوې کاپي، تازه کېږي...)
+auto_purge_done = اتومات پاکول له زباله‌دان/سپیم څخه {count} زاړه پیغامونه لرې کړل.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = چمتو.
+opening_message = پیغام خلاصېږي...
+opening_message_already = پیغام خلاصېږي... (لا دمخه بارېږي)
+could_not_open_message = پیغام نه شو خلاصېدلی.
+could_not_open_that_message = دا پیغام نه شو خلاصېدلی.
+could_not_load_message = دا پیغام نه شو بارېدلی.
+message_still_loading = دا پیغام لا هم بارېږي.
+folder_still_loading = دا پوښه لا هم بارېږي -- لږ وروسته بیا هڅه وکړئ.
+not_in_thread = دا پیغام د یوې لړۍ برخه نه دی.
+no_longer_in_thread = دا پیغام نور د لړۍ برخه نه دی.
+thread_position = پدې لړۍ کې له {total} څخه {position} پیغام.
+thread_finished_one = دا لړۍ پای ته ورسېده (۱ پیغام).
+thread_finished_many = دا لړۍ پای ته ورسېده ({count} پیغامونه).
+select_message_first = لومړی یو پیغام وټاکئ.
+conversation_failed = دا خبرې اترې نه شوې خلاصېدلی.
+select_message_for_related = لومړی یو پیغام وټاکئ چې اړوند پیغامونه یې وګورئ.
+looking_for_related = اړوند پیغامونه لټول کېږي...
+no_threading_headers = پدې پیغام کې د لټون لپاره Message-ID یا د لړۍ سرلیکونه نشته.
+reply_one_at_a_time = ځواب په یو وخت یو پیغام ته کار کوي. مهرباني وکړئ یو پیغام وټاکئ.
+select_message_to_reply = لومړی هغه پیغام وټاکئ چې ځواب ورکول یې غواړئ.
+preparing_reply = ځواب چمتو کېږي...
+reply_load_failed = د ځواب لپاره اصلي پیغام نه شو بارېدلی.
+select_message_to_forward = لومړی هغه پیغام وټاکئ چې مخکې لېږل یې غواړئ.
+preparing_forward = د مخکې لېږلو پیغام چمتو کېږي...
+forward_load_failed = د مخکې لېږلو پیغام نه شو بارېدلی.
+compose_tab_needed_hint = دغه قومانده د لیکلو ټب ته اړتیا لري. د پیغام لیکلو لپاره Ctrl+N ووهئ.
+open_message_first_view = لومړی یو پیغام خلاص کړئ، بیا د کتنې بدلولو لپاره Ctrl+B ووهئ.
+open_message_first_remote = لومړی یو پیغام خلاص کړئ، بیا د لرې منځپانګې بارولو لپاره Ctrl+Shift+I ووهئ.
+
+# Acting on messages
+copying_message = پیغام کاپي کېږي...
+copy_failed = کاپي کول ناکام شو.
+delete_failed = ړنګول ناکام شو.
+already_in_archive = لا دمخه په آرشیف کې دی.
+archiving = آرشیف کېږي...
+archive_failed = آرشیف کول ناکام شو.
+action_failed = {action} ناکام شو.
+nothing_to_undo = د بېرته کولو لپاره هیڅ نشته.
+private_mode_on = شخصي حالت فعال دی. په دې کمپیوټر کې د ZBox د پیغامونو کاپي ړنګې شوې.
+private_mode_off = شخصي حالت بند دی. ZBox بیا ستاسو د پیغامونو کاپي ساتي.
+undo_failed = {action} بېرته نه شو کېدای.
+
+# Views and folders
+folder_pane_all = د پوښو چوکاټ: ټولې پوښې.
+folder_pane_unified = د پوښو چوکاټ: یو شوې پوښې.
+sorted_ascending = د {field} له مخې، په پورته کېدونکي ډول ترتیب شو.
+sorted_descending = د {field} له مخې، په ښکته کېدونکي ډول ترتیب شو.
+unified_folders_updated = یو شوې پوښې تازه شوې.
+zoom_reset = د پیغام د فونټ اندازه اصلي حالت ته راستنه شوه.
+folder_creating = د "{folder}" پوښه جوړېږي...
+folder_created = د "{folder}" پوښه جوړه شوه.
+folder_create_failed = پوښه نه شوه جوړېدلی.
+folder_renaming = د "{folder}" نوم په "{new_name}" بدلېږي...
+folder_renamed = د پوښې نوم په "{new_name}" بدل شو.
+folder_rename_failed = د پوښې نوم نه شو بدلېدلی.
+folder_deleting = د "{folder}" پوښه ړنګېږي...
+folder_deleted = پوښه ړنګه شوه.
+folder_delete_failed = پوښه نه شوه ړنګېدلی.
+folder_subscribing = د "{folder}" ګډون کېږي...
+folder_unsubscribing = د "{folder}" ګډون لغوه کېږي...
+folder_subscribed = ګډون وشو.
+folder_unsubscribed = ګډون لغوه شو.
+folder_subscribe_failed = پوښې ته ګډون نه شو کېدای.
+folder_unsubscribe_failed = د پوښې ګډون نه شو لغوه کېدای.
+
+# Accounts
+account_not_added = حساب ورزیات نه شو.
+account_added = حساب ورزیات شو: {account}
+account_settings_not_saved = د حساب امستنې خوندي نه شوې.
+account_updated = حساب تازه شو: {account}
+account_not_removed = حساب لرې نه شو.
+account_removed = حساب لرې شو.
+account_removed_with_files = حساب لرې شو. {count} ځایي فایلونه ړنګ شول.
+default_account_failed = ډیفالټ حساب نه شو ټاکل کېدای.
+default_account_set = {account} اوس ډیفالټ حساب دی.
+auto_check_not_saved = د اتومات کتنې امستنه خوندي نه شوه.
+mute_not_saved = د غلي کولو امستنه خوندي نه شوه.
+account_muted = {account} غلی شو.
+account_unmuted = د {account} غږ بیا فعال شو.
+export_done = {count} حسابونه او امستنې {path} ته صادر شول.
+import_done = {count} حسابونه له {path} څخه وارد شول.
+
+# Filters, cache and the background lists
+filters_not_saved = چاڼګرونه خوندي نه شول.
+filters_saved = د {account} لپاره چاڼګرونه خوندي شول.
+filters_checking = {folder} ستاسو د چاڼګرونو پر وړاندې کتل کېږي...
+filters_none_matched = همدا اوس چلول: په {folder} کې هیڅ پیغام د کوم فعال قاعدې سره سمون نه خوري.
+filters_run_failed = چاڼګرونه نه شول چلېدلی.
+filters_moving = {count} چاڼ شوي پیغامونه لېږدول کېږي...
+filters_move_failures = چاڼګرونه: {count} پیغامونه نه شول لېږدېدلی.
+filters_moved = چاڼګرونو {count} پیغامونه له {folder} څخه ولېږدول.
+filters_move_failed = چاڼ شوي پیغامونه نه شول لېږدېدلی.
+cache_not_cleared = کېش پاک نه شو.
+auto_cache_cleanup = د کېش اتومات پاکول: له {age} زاړه پیغامونه.
+phishing_update_failed = د فشینګ لیست نه شو تازه کېدای: {error}
+blocklist_update_failed = د بندیز لیست نه شو تازه کېدای: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = لومړی یو پیغام خلاص کړئ، بیا په نوم خوندي کول وکاروئ.
+saving_message = پیغام خوندي کېږي...
+save_file_failed = فایل نه شو خوندي کېدای.
+save_fetch_failed = د خوندي کولو لپاره پیغام نه شو راوړل کېدای.
+open_message_first_print = لومړی یو پیغام خلاص کړئ، بیا چاپ وکاروئ.
+open_message_first_preview = لومړی یو پیغام خلاص کړئ، بیا د چاپ مخکتنه وکاروئ.
+refreshing_accounts = {count} حسابونه تازه کېږي...
+emptying_trash = د {account} لپاره زباله‌دان خالي کېږي...
+trash_already_empty = زباله‌دان لا دمخه خالي و.
+trash_emptied = زباله‌دان خالي شو: {count} پیغامونه پاک شول.
+empty_trash_failed = زباله‌دان نه شو خالي کېدای.
+emptying_junk = د {account} لپاره سپیم خالي کېږي...
+junk_already_empty = سپیم لا دمخه خالي و.
+junk_emptied = سپیم خالي شو: {count} پیغامونه پاک شول.
+junk_emptied_prefix = سپیم خالي شو:
+junk_part_purged = {count} پاک شول
+junk_part_in_trash = {count} زباله‌دان ته ولېږدول شول مګر د لرې کېدو تایید نه شو، زباله‌دان وګورئ
+junk_part_not_moved = {count} زباله‌دان ته نه شول لېږدېدلی، لا هم په سپیم کې دي
+empty_junk_failed = سپیم نه شو خالي کېدای.
+back_online = بیا آنلاین.
+offline_sync_running = {account} د آفلاین کارونې لپاره همغږي کېږي...
+offline_sync_failed = آفلاین همغږي ناکامه شوه: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = لومړی یو پیغام وټاکئ یا خلاص کړئ.
+select_or_open_message_ctrl_u = لومړی یو پیغام وټاکئ یا خلاص کړئ، بیا Ctrl+U ووهئ.
+no_sender_address = پدې پیغام کې د ورزیاتولو لپاره د لیږونکي پته نشته.
+contact_added = {contact} ستاسو د پتو کتاب ته ورزیات شو.
+contact_already_there = {contact} لا دمخه ستاسو د پتو په کتاب کې دی.
+privacy_saved = د محرمیت امستنې خوندي شوې. د پلي کولو لپاره پیغام بیا خلاص کړئ.
+message_font_size = د پیغام د فونټ اندازه: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = پیغام د تل لپاره ړنګېږي
+deleting_many = {count} پیغامونه د تل لپاره ړنګېږي
+trashing_one = پیغام زباله‌دان ته لېږدول کېږي
+trashing_many = {count} پیغامونه زباله‌دان ته لېږدول کېږي
+undo_partly_restored = {action} بېرته شو، خو {count} نه شول بیا رغېدلی -- شاید له هغه وخته لېږدول شوي، ړنګ شوي یا بیا ختم شوي وي.
+moves_report = {action}: له {total} پیغامونو څخه {moved} ولېږدول شول.
+moves_report_failed = نه دي لېږدول شوي، لا هم په اصلي پوښه کې دي: {count}.
+
+tray_tooltip_one = ZBox — ۱ نالوستل شوی پیغام
+tray_tooltip_many = ZBox — {count} نالوستل شوي پیغامونه
+account_unreachable = {account} ته نه شو رسېدلی. د هغه اتومات کتنې د {minutes} دقیقو لپاره ودرول کېږي.
+bulk_copy_failed = پیغام(ونه) نه شول کاپي کېدای.
+bulk_copy_failed_status = کاپي کول ناکام شو.
+bulk_loading_archive = پیغام(ونه) لا هم بارېږي -- لږ وروسته بیا آرشیف کولو هڅه وکړئ.
+bulk_loading_delete = پیغام(ونه) لا هم بارېږي -- لږ وروسته بیا ړنګولو هڅه وکړئ.
+bulk_loading_flag = پیغام(ونه) لا هم بارېږي -- لږ وروسته بیا ستوری ورکولو هڅه وکړئ.
+bulk_loading_generic = پیغام(ونه) لا هم بارېږي -- لږ وروسته بیا هڅه وکړئ.
+bulk_none = هیڅ پیغام نه دی ټاکل شوی.
+bulk_none_archive = د آرشیف کولو لپاره هیڅ پیغام نه دی ټاکل شوی.
+bulk_none_delete = د ړنګولو لپاره هیڅ پیغام نه دی ټاکل شوی.
+bulk_none_junk = د سپیم په توګه د نښه کولو لپاره هیڅ پیغام نه دی ټاکل شوی.
+bulk_none_not_junk = د ناسپیم په توګه د نښه کولو لپاره هیڅ پیغام نه دی ټاکل شوی.
+delete_refused_still = سرور د هغه له ړنګولو انکار وکړ؛ لا هم په {folder} کې دی.
+delete_refused_trash = دا په زباله‌دان کې دی، خو سرور د هغه د تل لپاره ړنګولو انکار وکړ.
+delete_resume_failed = له پخوانۍ ړنګولو څخه {count} پیغامونه نه شول ړنګېدلی.
+done_perm_delete_one = پیغام د تل لپاره ړنګ شو.
+done_trash_one = پیغام زباله‌دان ته ولېږدول شو.
+filters_applied = چاڼګرونه په {folder} کې {count} پیغامونو ته پلي شول.
+filters_failed = چاڼګرونه نه شول چلېدلی.
+filters_running = په {folder} کې چاڼګرونه چلېږي
+flag_failed = د ستوري نښه نه شوه تازه کېدای.
+flag_updated = د ستوري نښه تازه شوه.
+folder_verb_subscribing = ګډون کېږي
+folder_verb_unsubscribing = ګډون لغوه کېږي
+mark_read_failed = پیغام(ونه) د لوستل شوي په توګه نه شول نښه کېدای.
+mark_unread_failed = پیغام(ونه) د نالوستل شوي په توګه نه شول نښه کېدای.
+notify_new_mail_body = د {name} لپاره {count} نوي {noun}.
+notify_new_mail_title = نوی پیغام
+notify_noun_many = پیغامونه
+notify_noun_one = پیغام
+report_done = {verb} {done} له {count} پیغامونو څخه.
+report_verb_deleted = ړنګ شو
+report_verb_permanent = د تل لپاره ړنګ شو
+running_copy_many = {count} پیغامونه کاپي کېږي
+running_copy_one = پیغام کاپي کېږي
+running_junk_many = {count} پیغامونه د سپیم په توګه نښه کېږي
+running_junk_one = د سپیم په توګه نښه کېږي
+running_move_many = {count} پیغامونه لېږدول کېږي
+running_move_one = لېږدول کېږي
+running_not_junk_many = {count} پیغامونه د ناسپیم په توګه نښه کېږي
+running_not_junk_one = د ناسپیم په توګه نښه کېږي
+running_perm_delete_one = پیغام د تل لپاره ړنګېږي...
+running_read_many = {count} پیغامونه د لوستل شوي په توګه نښه کېږي
+running_read_one = د لوستل شوي په توګه نښه کېږي
+running_trash_one = پیغام زباله‌دان ته لېږدول کېږي...
+running_unread_many = {count} پیغامونه د نالوستل شوي په توګه نښه کېږي
+running_unread_one = د نالوستل شوي په توګه نښه کېږي
+settings_saved_no_startup = امستنې خوندي شوې. د Windows د پیل ننوتنه نه شوه تازه کېدای.
+settings_saved_status = امستنې خوندي شوې.
+spam_blocked_sender = بند شوی لیږونکی
+spam_possible_phishing = ممکنه فشینګ
+undo_running_many = {action} بېرته کېږي ({count} پیغامونه)
+undo_running_one = {action} بېرته کېږي
+mark_folder_read_failed = پوښه د لوستل شوي په توګه نه شوه نښه کېدای.
+marking_folder_read = پوښه د لوستل شوي په توګه نښه کېږي...
+upd_ready_at_exit = تازه کول لا دمخه ډاونلوډ شوی. کله چې له ZBox څخه وځئ، نصب به شي.
+upd_checking = تازه کولو لپاره کتل کېږي...
+upd_up_to_date = ZBox تازه دی.
+upd_available_source = ZBox {version} شتون لري. دا کاپي له سرچینې څخه چلېږي، نو د git په مرسته یې تازه کړئ.
+upd_check_failed = د تازه کولو لپاره نه شو کتلی: {error}
+opening_attachment = {filename} خلاصېږي...
+loading_headers = سرلیکونه بارېږي...
+offline_inbox_only = یوازې راغلي پیغامونه او آرشیف د آفلاین کارونې لپاره ساتل کېږي.
+offline_sync_done_inbox = د آفلاین کارونې لپاره په راغلو پیغامونو او آرشیف کې {count} پیغامونه همغږي شول.
+working_offline = آفلاین کار: د راغلو/لیږل شویو/مسودو وروستۍ همغږې شوې کاپي ښودل کېږي.
+emptying_trash_all = د هر حساب لپاره زباله‌دان خالي کېږي...
+trash_emptied_all = په {accounts} حسابونو کې زباله‌دان خالي شو: {count} پیغامونه پاک شول.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &فایل
+bar_edit = &سمون
+bar_view = &کتنه
+bar_message = &پیغام
+bar_compose = &لیکل
+bar_tools = &وسایل
+bar_help = &مرسته
+
+# File
+file_new = نوی
+file_new_message = پیغام
+file_new_account = د برېښنالیک حساب...
+file_open_saved_message = خوندي شوی پیغام خلاصول...
+file_close = بندول
+file_save_message_as = پیغام په نوم خوندي کول...
+file_get_new_for = نوي پیغامونه ترلاسه کول د
+file_get_new_all = ټول حسابونه
+file_get_new_current = اوسنی حساب
+file_offline = آفلاین
+file_work_offline = آفلاین کار کول
+file_sync_now = همدا اوس همغږي کول
+file_print = چاپ...
+file_print_preview = د چاپ مخکتنه...
+file_exit = وتل
+
+# Edit
+edit_undo = بېرته کول
+edit_select_all = ټول ټاکل
+edit_find_messages = پیغامونه لټول...
+
+# Message
+message_reply = ځواب ورکول
+message_reply_all = ټولو ته ځواب ورکول
+message_forward = مخکې لېږل
+message_archive = آرشیف
+message_delete = ړنګول
+message_delete_permanently = د تل لپاره ړنګول
+message_mark = نښه کول
+mark_read = لوستل شوی
+mark_unread = نالوستل شوی
+mark_flagged = ستوری لرونکی
+mark_junk = سپیم
+mark_not_junk = ناسپیم
+message_watch_thread = لړۍ څارل
+message_ignore_thread = لړۍ له پامه غورځول
+message_open_conversation = پیغام په خبرو اترو کې خلاصول
+message_show_related = اړوند پیغامونه ښودل
+message_add_sender_to_address_book = لیږونکی د پتو کتاب ته ورزیاتول
+message_announce_sender = لیږونکی اعلانول
+message_announce_copy_sender = لیږونکی اعلانول او پته کاپي کول
+
+# View
+view_folders = پوښې
+folders_all = ټولې
+folders_unified = یو شوې
+folders_jump_inbox = د راغلو پیغامونو لیست ته تلل
+folders_configure_unified = یو شوې پوښې تنظیمول...
+view_sort_by = ترتیب د مخې
+sort_date = نیټه
+sort_subject = موضوع
+sort_from = له
+sort_descending = ښکته کېدونکی (نوی لومړی)
+sort_ascending = پورته کېدونکی (زوړ لومړی)
+view_threads = لړۍ
+threads_all = ټولې
+threads_watched = څارل شوې لړۍ
+threads_ignored = له پامه غورځول شوې لړۍ
+threads_expand_all = ټولې لړۍ پرانیستل
+threads_collapse_all = ټولې لړۍ راټولول
+view_load_more = نور پیغامونه بارول
+view_toggle_message_view = تر متن او HTML کتنې منځ بدلول
+view_show_remote_content = پدې پیغام کې لرې منځپانګه ښودل
+view_message_zoom = د پیغام زوم
+zoom_increase = د پیغام د فونټ اندازه زیاتول
+zoom_decrease = د پیغام د فونټ اندازه کمول
+zoom_reset = د پیغام د فونټ اندازه بیا ټاکل
+
+# Compose
+compose_send = &لیږل
+compose_save_draft = &مسوده خوندي کول
+compose_attach = &فایل ضمیمه کول...
+compose_fmt_bold = &تور
+compose_fmt_italic = &کوږ
+compose_fmt_strike = &کرښه پرې ایښودل
+compose_fmt_bullet = &ټکي لرونکی لیست
+compose_fmt_number = &شمېرل شوی لیست
+compose_fmt_quote = &نقل قول
+compose_fmt_code = &کوډ
+compose_fmt_heading1 = &سرلیک
+compose_link = &لینک ورزیاتول...
+compose_formatting = &دلته بڼه
+compose_spellcheck = &املا کتل...
+compose_spellcheck_next = &بله تېروتنه
+compose_spellcheck_add = &کلمه قاموس ته ورزیاتول
+compose_insert_signature = &لاسلیک ورزیاتول
+compose_paste_quotation = &د نقل قول په توګه پیسټ کول
+compose_word_count = &د کلمو شمېر
+compose_preview = &مخکتنه...
+compose_diagnostics = &د لیکوال تشخیص...
+compose_edit_signature = &لاسلیک سمول...
+compose_hotkeys_diagnostic = &د ګړندیو کیلیو تشخیص
+
+# Tools
+tools_account_settings = د حساب او پېژندنو امستنې...
+tools_mute_account = حساب غلی کول
+tools_pause_auto_check = اتومات کتنه درول
+tools_disable_account = حساب غیرفعالول
+tools_remove_account = حساب لرې کول...
+tools_address_book = د پتو کتاب...
+tools_message_filters = د پیغام چاڼګرونه...
+tools_import = حسابونه او امستنې واردول...
+tools_export = حسابونه او امستنې صادرول...
+tools_cache_cleanup = د کېش پاکولو تنظیمات...
+tools_privacy = محرمیت او د منځپانګې بندول...
+tools_settings = امستنې...
+
+# Help
+help_shortcuts = د کیبورډ شارټکټونه...
+help_about = د ZBox په اړه...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = نوی حساب...
+tree_account_settings = د حساب او پېژندنو امستنې...
+tree_mute_account = حساب غلی کول
+tree_pause_auto_check = اتومات کتنه درول
+tree_enable_account = حساب فعالول
+tree_disable_account = حساب غیرفعالول
+tree_set_default_account = د ډیفالټ حساب په توګه ټاکل
+tree_remove_account = حساب لرې کول...
+tree_refresh = تازه کول
+tree_new_folder = نوې پوښه...
+tree_empty_trash = زباله‌دان خالي کول
+tree_empty_junk = سپیم خالي کول
+tree_rename_folder = د پوښې نوم بدلول...
+tree_delete_folder = پوښه ړنګول...
+tree_subscribe_folder = پوښې ته ګډون
+tree_unsubscribe_folder = د پوښې ګډون لغوه کول
+
+# The message list menu, opened the same two ways
+list_select_all = ټول ټاکل
+list_reply = ځواب ورکول
+list_reply_all = ټولو ته ځواب ورکول
+list_forward = مخکې لېږل
+list_mark = نښه کول
+list_archive = آرشیف
+list_delete_to_trash = ړنګول (زباله‌دان ته لېږدول)
+list_delete_permanently = د تل لپاره ړنګول
+list_move_to = لېږدول
+list_copy_to = کاپي کول
+
+# The notification area icon
+tray_open = &ZBox خلاصول
+tray_unread_one = ۱ نالوستل شوی پیغام
+tray_unread_many = {count} نالوستل شوي پیغامونه
+tray_no_unread = نالوستل شوي پیغامونه نشته
+tray_settings = &امستنې...
+tray_quit = &له ZBox وتل
+
+# The formatting menu inside a message you are writing
+format_bold = &تور
+format_italic = &کوږ
+format_strike = &کرښه پرې ایښودل
+format_bullet = &ټکي لرونکی لیست
+format_number = &شمېرل شوی لیست
+format_quote = &نقل قول
+format_code = &کوډ
+format_heading1 = &سرلیک
+format_insert_link = &لینک ورزیاتول...
+format_formatting_here = &دلته بڼه
+tools_enable_account = حساب فعالول
+edit_undo_action = {action} بېرته کول
+tree_mark_folder_read = پوښه د لوستل شوې په توګه نښه کول
+help_updates = &تازه کولو
+help_check_updates = &همدا اوس د تازه کولو لپاره کتل...
+help_update_settings = &د تازه کولو امستنې...
+help_releases_page = &د خپرونو پاڼه خلاصول
+message_attachments = ضمیمې
+message_no_attachments = ضمیمې نشته
+message_save_all_attachments = ټولې ضمیمې خوندي کول
+view_full_headers = بشپړ سرلیکونه
+folders_go_to_tree = د پوښو لیست ته تلل
+list_block_sender = دا لیږونکی بندول
+list_unblock_sender = د دې لیږونکي بندیز لرې کول
+sort_received = ترلاسه شوی
+sort_star = ستوری
+sort_order_received = د ترلاسه کېدو ترتیب
+sort_priority = لومړیتوب
+sort_recipient = ترلاسه کوونکی
+sort_correspondents = مکاتبه کوونکي
+sort_size = اندازه
+sort_read = لوستل شوی
+sort_junk_status = د سپیم حالت
+sort_attachments = ضمیمې
+sort_threaded = په لړۍ کې
+sort_unthreaded = له لړۍ پرته
+view_columns = کالمونه
+tools_openpgp_keys = د OpenPGP د کیلیو مدیر
+tools_smime_certs = د S/MIME د سندونو مدیر
+compose_pgp_encrypt = &کوډ کول
+compose_pgp_sign = &ډیجیټل لاسلیک کول
+compose_pgp_attach_key = &زما عامه کیلي ضمیمه کول
+
+[dialogs]
+set_theme_restart_confirm = د تم د بدلون د پلي کولو لپاره ZBox بیا پیل شي؟
+set_ui_theme_label = &د انٹرفیس تم:
+set_ui_theme_note = د مېنوګانو، لیستونو، ډیالوګونو او د متن پیغام کتنې رنګونه. د سیستم تعقیب د Windows خپل روښانه یا تیاره اپ حالت کاروي. نیمه شپه شین، تیاره تود او نرم توپیر تیاره تمونه دي چې نرم رنګونه لري. د HTML پیغامونه خپل رنګونه ساتي او د Windows لوړ توپیر تل لومړیتوب لري. ZBox ته په بله پیل کې اغېز کوي.
+set_theme_system = د سیستم تعقیب
+set_theme_light = روښانه
+set_theme_dark = تیاره
+set_theme_midnight = نیمه شپه شین
+set_theme_warm = تیاره تود
+set_theme_soft = نرم توپیر
+set_language_restart_confirm = د ژبې د بدلون د پلي کولو لپاره ZBox بیا پیل شي؟
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = له Harith سره اړیکه
+title_identity = پېژندنه
+title_show_password = پټنوم ښودل
+title_missing_information = ورکه معلومات
+title_unsupported_provider = ناملاتړل شوی چمتو کوونکی
+title_test_connection = اړیکه ازمایل
+title_new_contact = نوې اړیکه
+title_edit_contact = اړیکه سمول
+title_delete_contact = اړیکه ړنګول
+title_import_contacts = اړیکې واردول
+title_export_contacts = اړیکې صادرول
+title_rename_group = د ډلې نوم بدلول
+title_delete_group = ډله ړنګول
+title_send = لیږل
+title_send_failed = لېږل ناکام شو
+title_attach_file = فایل ضمیمه کول
+title_save_draft = مسوده خوندي کول
+title_documentation = د ZBox اسناد
+title_open_link = لینک خلاصول
+title_filter_rule = د چاڼګر قاعده
+title_master_password = اصلي پټنوم
+title_attachment_saved = ضمیمه خوندي شوه
+title_attachments_saved = ضمیمې خوندي شوې
+title_download_failed = ډاونلوډ ناکام شو
+title_print = چاپ
+title_print_preview = د چاپ مخکتنه
+title_related_messages = اړوند پیغامونه
+title_search = لټون
+title_unlock = خلاصول
+title_unlock_methods = د خلاصولو لارې
+title_desktop_shortcut = د ډیسکټاپ شارټکټ
+title_spell_check = د املا کتنه
+title_plain_text_password = ساده متن پټنوم وموندل شو
+title_startup_error = د ZBox د پیل تېروتنه
+
+identity_email_required = یوه د برېښنالیک پته ولیکئ.
+
+wizard_password_not_shown = پټنوم په دې سیستم کې نه شي ښودل کېدای. دا لا هم په عادي ډول لیکل او خوندي کېږي.
+wizard_email_required = د دوام کولو دمخه یوه سمه د برېښنالیک پته ولیکئ.
+wizard_test_needs_server = د ازمایښت دمخه د ننوتلو برېښنالیک او راتلونکی سرور ولیکئ.
+wizard_test_succeeded = اړیکه بریالۍ شوه. په راغلو پیغامونو کې {count} پیغامونه وموندل شول.
+
+contact_email_required = د برېښنالیک پته اړینه ده.
+contact_select_to_edit = د سمولو لپاره یوه اړیکه وټاکئ.
+contact_select_to_delete = د ړنګولو لپاره یوه اړیکه وټاکئ.
+contact_delete_confirm = {label} د پتو له کتاب څخه ړنګ شي؟
+contacts_import_choose_file = د واردولو لپاره .vcf (vCard) یا .csv فایل وټاکئ.
+contacts_imported = {count} اړیکې وارد شوې.
+contacts_import_empty = پدې فایل کې هیڅ اړیکه ونه موندل شوه.
+contacts_none_to_export = د صادرولو لپاره هیڅ اړیکه نشته.
+contacts_exported = {count} اړیکې صادر شوې:\n{path}
+group_name_exists = د "{name}" په نوم ډله لا دمخه شتون لري.
+group_delete_confirm = د "{name}" ډله ړنګه شي؟ د هغې اړیکې نه ړنګېږي.
+
+send_no_account = د لېږلو دمخه یو حساب ورزیات کړئ، یا په له کې یو وټاکئ.
+send_no_recipient = په ته کې لږ تر لږه یو ترلاسه کوونکی ولیکئ.
+draft_no_account = د مسودې د خوندي کولو دمخه یو حساب ورزیات کړئ، یا په له کې یو وټاکئ.
+attached_file = ضمیمه شو: {name}\n\nکله چې ولېږئ {count} فایلونه به ضمیمه شي.
+
+documentation_copied = د ZBox بشپړ اسناد کلیپبورډ ته کاپي شول.
+
+filter_rule_needs_name = دې قاعدې ته یو نوم ورکړئ.
+filter_rule_needs_condition = لږ تر لږه یو شرط وټاکئ (له، ته یا موضوع).
+filter_rule_needs_action = لږ تر لږه یو عمل وټاکئ: د لوستل شوي په توګه نښه کول، ستوری ورکول، یا پوښې ته لېږدول.
+
+master_password_set = اصلي پټنوم ټاکل شو. په خوندي ځای کې یې وساتئ: ZBox یې په هر نوي کمپیوټر کې یو ځل غواړي او که ورک شي بیا نه ترلاسه کېږي.
+master_password_offer = بې له اصلي پټنوم څخه، خوندي شوي حساب پټنومونه یوازې پدې کمپیوټر او پدې Windows حساب کې لوستل کېدای شي. که ZBox بل چېرې کاپي کړئ، هر حساب باید بیا ننوځي.\n\nاوس یو ټاکل شي؟
+
+attachment_saved = ضمیمه خوندي شوه:\n{path}
+attachments_saved = {count} ضمیمې خوندي شوې:\n{path}
+
+shortcut_created_settings = شارټکټ جوړ شو:\n{path}\n\nدا ZBox له دې ځای څخه پیلوي:\n{base}
+
+spellcheck_no_dictionary = د املا قاموس نشته، نو د ZBox پدې کاپي کې د املا کتنه شتون نه لري.
+spellcheck_none_found = املایي تېروتنه ونه موندل شوه.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = پدې کمپیوټر کې د ننوتلو کیلي جوړه شي او هغه چې له بل کمپیوټر څخه خوندي شوې هېره شي؟\n\nWindows به له تاسو وغواړي چې د Hello سره تایید کړئ. په بل کمپیوټر کې پاتې زړه کیلي هلته نه لمس کېږي او که دا پوښه بېرته هلته یوسئ کار به کوي، خو بیا باید جوړه شي.
+unlock_replace_passkey_many = پدې کمپیوټر کې د ننوتلو کیلي جوړه شي او هغه {count} چې له نورو کمپیوټرونو څخه خوندي شوې هېرې شي؟\n\nWindows به له تاسو وغواړي چې د Hello سره تایید کړئ. په بل کمپیوټر کې پاتې زړې کیلي هلته نه لمس کېږي او که دا پوښه بېرته هلته یوسئ کار به کوي، خو بیا باید جوړې شي.
+unlock_method_works = دا لار کار کوي.
+
+plain_text_password_found = data\config\himalaya.toml لا هم د زاړه حساب د جوړولو یو ساده متن پټنوم (auth.raw) لري.\n\nهغه حساب لرې کړئ او بیا یې ورزیات کړئ، یا data\config\himalaya.toml ړنګ کړئ، چې دا د خوندي اسنادو ذخیرې په کارولو سره بیا جوړ شي.
+
+# main_frame's titles.
+title_account_list_unavailable = د حسابونو لیست شتون نه لري
+title_open_message = پیغام خلاصول
+title_run_filters = چاڼګرونه چلول
+title_clear_cache = د آفلاین پیغام کېش پاکول
+title_remove_account = حساب لرې کول
+title_new_folder = نوې پوښه
+title_rename_folder = د پوښې نوم بدلول
+title_delete_folder = پوښه ړنګول
+title_subscribe = ګډون
+title_unsubscribe = ګډون لغوه کول
+title_open_saved_message = خوندي شوی پیغام خلاصول
+title_save_message_as = پیغام په نوم خوندي کول
+title_empty_trash = زباله‌دان خالي کول
+title_empty_junk = سپیم خالي کول
+title_synchronize_offline = د آفلاین لپاره همغږي کول
+title_export_accounts = حسابونه او امستنې صادرول
+title_import_accounts = حسابونه او امستنې واردول
+title_show_related = اړوند پیغامونه ښودل
+title_reply = ځواب ورکول
+title_forward = مخکې لېږل
+title_undo = بېرته کول
+title_delete_permanently = د تل لپاره ړنګول
+title_delete = ړنګول
+title_copy_to = کاپي کول
+title_archive = آرشیف
+title_accounts_locked = حسابونه بند دي
+
+select_account_first = لومړی په ونه کې یو حساب وټاکئ.
+select_account_or_folder = لومړی یو حساب یا پوښه وټاکئ.
+filters_left_behind = {count} پیغامونه د یوه چاڼګر سره سم راغلل خو لا هم په {folder} کې دي.
+cache_clear_confirm = د ټولو حسابونو لپاره د آفلاین پیغام کېش پاک شي؟\n\nدا یوازې د ZBox ځایي کاپي ړنګوي. له هېڅ پیغام سرور څخه هیڅ نه لرې کېږي او پیغامونه کله چې اړتیا وي بیا ډاونلوډ کېږي.
+account_remove_confirm = {name} ({address}) لرې شي؟\n\nپه سرور کې پیغامونه نه ړنګېږي.\nپدې کمپیوټر ډاونلوډ شوې کاپي ړنګېږي.\nخوندي شوی پټنوم ړنګېږي.
+folder_delete_confirm = د {address} لپاره د "{folder}" پوښه او هر څه چې پکې دي د تل لپاره ړنګ شي؟\n\nدا نه شي بېرته کېدای.
+empty_trash_confirm = د {address} لپاره په زباله‌دان کې ټول پیغامونه د تل لپاره ړنګ شي؟\n\nدا نه شي بېرته کېدای.
+empty_junk_confirm = د {address} لپاره په سپیم کې ټول پیغامونه د تل لپاره ړنګ شي؟\n\nدا نه شي بېرته کېدای.
+sync_select_account = د آفلاین کارونې لپاره د همغږي کولو لپاره یو حساب وټاکئ (نه یو شوې پوښه).
+accounts_imported = {count} حسابونه وارد شول:\n\n{names}\n\nپټنومونه هېڅکله نه صادرېږي او کوډ شوې پټنوم ذخیره د دې Windows کاروونکي حساب سره ځانګړې ده، نو هر وارد شوی حساب باید د وسایل > د حساب او پېژندنو امستنې له لارې یو ځل پټنوم ولیکي، مخکې له دې چې وصل شي.
+accounts_import_none = پدې فایل کې هیڅ حساب ونه موندل شو. امستنې لا هم وارد شوې، که په فایل کې وې.
+delete_permanently_confirm_one = دا پیغام د تل لپاره ړنګ شي؟ دا زباله‌دان پرېږدي او نه شي بېرته کېدای.
+accounts_locked = خوندي شوي حساب پټنومونه په بل کمپیوټر کې لیکل شوي، نو دلته نه لوستل کېږي.\n\nهر حساب باید بیا د خپل برېښنالیک سرور ته ننوځي. د دې مخنیوي لپاره بل ځل، په هغه کمپیوټر کې چې حسابونه لا دمخه کار کوي، له امستنې، د اپ او معلوماتو امنیت څخه اصلي پټنوم وټاکئ.
+master_password_remove_confirm = اصلي پټنوم لرې شي؟ نو خوندي شوي حساب پټنومونه به یوازې پدې کمپیوټر او پدې Windows حساب کې ولوستل شي. وروسته که ZBox بل چېرې کاپي کړئ، هر حساب باید بیا ننوځي.\n\nاوس یې لرې کړئ؟
+shortcut_offer = په ډیسکټاپ کې د ZBox شارټکټ ایښودل شي؟\n\nدا به دا ZBox پوښه پیل کړي:\n{path}\n\nشارټکټ همدا دقیق ځای ثبتوي. که وروسته د ZBox پوښه ولېږدوئ، امستنې، د سیستم ټری او کړکۍ خلاصې کړئ او د ډیسکټاپ شارټکټ جوړول بیا غوره کړئ چې نوي ځای ته یې ګوته ونیسي.
+shortcut_created = شارټکټ جوړ شو:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = ښودل کېدونکی نوم
+form_email_address = د برېښنالیک پته
+form_your_name = ستاسو نوم
+form_login_email = د ننوتلو برېښنالیک
+form_password = پټنوم
+srv_imap_host = راتلونکی (IMAP) سرور
+srv_imap_port = راتلونکی پورټ
+srv_imap_encryption = راتلونکی کوډول
+srv_smtp_host = وتونکی (SMTP) سرور
+srv_smtp_port = وتونکی پورټ
+srv_smtp_encryption = وتونکی کوډول
+
+acct_login_email_label = د ننوتلو برېښنالیک (د ننوتلو لپاره کارول کېږي)
+acct_new_password_label = نوی پټنوم (د اوسني ساتلو لپاره تش پرېږدئ)
+acct_new_password_name = نوی پټنوم
+acct_identity_email_label = د برېښنالیک پته (د لېږلو او ترلاسه کولو لپاره کارول کېږي)
+acct_identities_label = اضافي پېژندنې (مستعار نومونه)
+acct_identities_name = اضافي پېژندنې
+acct_add_identity = &پېژندنه ورزیاتول...
+acct_edit_identity = &پېژندنه سمول...
+acct_remove_identity = &پېژندنه لرې کول
+acct_signature = لاسلیک
+acct_edit_signature = &لاسلیک سمول...
+acct_junk_folder = د سپیم پوښه
+acct_account_status = د حساب حالت
+acct_disable_account = دا حساب غیرفعالول
+acct_default_account = ډیفالټ حساب
+acct_set_default = د ډیفالټ حساب په توګه ټاکل
+acct_notifications = د نوو پیغامونو خبرتیاوې
+acct_mute_notifications = د دې حساب لپاره خبرتیاوې غلي کول
+acct_server_settings = د سرور امستنې
+
+wiz_before_you_start = د پیل دمخه
+wiz_notice_name = مهمه خبرتیا
+wiz_google_instructions = &د Google د اپ پټنوم لارښوونې خلاصول
+wiz_intro = ستاسو نوم او د برېښنالیک پته
+wiz_login_same = د ننوتلو برېښنالیک د پورتنۍ برېښنالیک پتې سره یو شان دی
+wiz_show_password = &پټنوم ښودل
+wiz_preset_applied = د {name} لپاره مخکې ټاکل شوې امستنې پلي شوې.
+wiz_summary_name = د حساب لنډیز
+wiz_review = وګورئ، بیا د دې حساب د خوندي کولو لپاره پای ته رسول وټاکئ.
+wiz_test_connection = &اړیکه ازمایل
+wiz_testing = اړیکه ازمایل کېږي...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (د ډیبګ لاګ فعالول، په دې ځای کې خوندي کېږي: data\logs)
+set_language_label = &د انٹرفیس ژبه:
+set_language_label_only_english = &د انٹرفیس ژبه: (یوازې انګلیسي)
+set_headers_checkbox = &د خلاص پیغام پورته د پیغام سرلیکونه ښودل
+set_zoom_label = د پیغام فونټ او زوم:
+set_font_override = &د پیغام د ډیفالټ فونټ اندازه بدلول
+set_font_size_name = د پیغام د فونټ اندازه (پوائنټ)
+set_reading_font_name = د لوستلو فونټ
+set_reading_font_label = د لوستلو فونټ (د ډیفالټ لپاره تش):
+set_view_label = د پیغام د خلاصولو پر مهال د پیغام د متن کتنه:
+set_view_text = متن
+set_view_html = HTML (ښودل شوی)
+set_engine_label = د HTML د ښودلو انجن:
+set_engine_edge = Edge / WebView2 (عصري ښودنه)
+set_engine_ie = زوړ MSHTML (د سکرین لوستونکي لپاره غوره ملاتړ)
+set_runtime_label = د WebView2 چلښت:
+set_runtime_auto = اتومات — که شتون ولري ځای پر ځای چلښت وکاروئ (سپارښتل کېږي)
+set_runtime_fixed = یوازې ځای پر ځای ټاکل شوې بڼه
+set_runtime_evergreen = د سیستم چلښت (د Windows له خوا تازه کېږي)
+set_sr_box = د سکرین لوستونکي اعلانونو کنټرول
+set_silence_label = د HTML لپاره د سکرین لوستونکي غلی ساتل:
+set_silence_name = د HTML لپاره د سکرین لوستونکي غلی ساتل په میلي ثانیو کې
+set_focus_delay_label = د WebView د لاسرسي فوکس ځنډ:
+set_focus_delay_name = د WebView د لاسرسي فوکس ځنډ، له ۱ څخه تر ۱۰ کچه
+set_announce_label = د اعلان ساتل:
+set_announce_name = د اعلان ساتل په میلي ثانیو کې
+set_announce_actions = &د عملونو، نوو پیغامونو او خبرتیاوو اعلانونه ویل
+set_attachment_dir_label = د ضمیمو د خوندي کولو پوښه:
+set_attachment_dir_name = د ضمیمو د خوندي کولو پوښه
+set_browse = &لټول…
+set_autosave_label = د مسودې د اتومات خوندي کولو وقفه:
+set_autosave_name = د مسودې د اتومات خوندي کولو وقفه په ثانیو کې
+set_auto_purge_label = زاړه زباله‌دان او سپیم پیغامونه په اتومات ډول ړنګول:
+set_auto_purge_name = زباله‌دان او سپیم د دې شمېر ورځو وروسته په اتومات ډول ړنګول
+set_bare_keys = &د پیغام په لیست کې د یوې کیلۍ S (ستوری)، A (آرشیف)، J (د سپیم په توګه نښه کول)/Shift+J (د ناسپیم په توګه نښه کول)، W (لړۍ څارل)، K (لړۍ له پامه غورځول)، M (لېږدول)/Shift+M (د پوښې د نوم له مخې لېږدول) او C (کاپي کول) شارټکټونه فعالول
+set_sound_label = غږ او خبرتیاوې:
+set_sounds_enabled = &د خبرتیا غږونه غږول
+set_desktop_notifications = &د نوو پیغامونو لپاره د ډیسکټاپ خبرتیاوې ښودل
+set_theme_label = د غږونو تم بدلول:
+set_theme_label_only_default = د غږونو تم بدلول: (یوازې ډیفالټ تم)
+set_security_box = د اپ او معلوماتو امنیت
+set_lock_on_quit = &کله چې ZBox بشپړ وتلی وي، بندول یې
+set_private_mode = &شخصي حالت: پدې کمپیوټر یا ډرایو کې هیڅ پیغام مه ساتئ
+set_unlock_methods_button = &د خلاصولو لارې…
+set_master_password_button = &اصلي پټنوم…
+set_tray_label = د سیستم ټری او کړکۍ:
+set_minimize_to_tray = &د سیستم ټری ته کوچنی کول
+set_close_to_tray = &د سیستم ټری ته بندول
+set_stay_maximized = &ZBox تل لوی ساتل
+set_run_at_startup = &کله چې Windows پیل شي ZBox چلول
+set_desktop_shortcut_button = &د ډیسکټاپ شارټکټ جوړول
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = د ډیبګ لاګ د ستونزو په تشخیص کې مرسته کوي که څه ناسم شي. بندول یې د نوو ثبتونو لیکل ودروي؛ شته لاګ فایلونه نه ړنګېږي. ZBox ته په بله پیل کې اغېز کوي.
+set_language_note = ZBox ته په بله پیل کې اغېز کوي. د ژبې فایلونه ساده متن فایلونه دي چې د ZBox په lang پوښه کې، د sounds پوښې تر څنګ دي. د یوې ژبې د ورزیاتولو لپاره، en پوښه کاپي کړئ، کاپي او په کې .lang فایل ستاسو د ژبې کوډ ته نوم ورکړئ، او د هرې مساوي نښې ښۍ خوا متن ژباړئ. هر هغه څه چې تر اوسه نه دي ژباړل شوي په خاموشۍ پرېښودو پر ځای په انګلیسي ویل کېږي، نو نیمګړی فایل د کارولو لپاره خوندي دی.
+set_headers_note = له، ته، Cc، نیټه او موضوع، د پیغام د متن پورته په متن او HTML دواړو کتنو کې ښودل کېږي. بې له دې، د پیغام دننه نه شي پوهېدای چې چا لېږلی پرته له دې چې ټب وتړئ او لیست ته ستانه شئ. فوکس لا هم د پیغام متن ته ځي؛ د سرلیک بلاک یو Shift+Tab لرې دی. په بل ځل چې پیغام خلاصېږي اغېز کوي.
+set_zoom_note = د خلاص پیغام خپل متن لوی یا کوچنی کوي، د ZBox له پاتې برخې او د Windows له خپل ښودلو پیمانې څخه خپلواک. د متن او HTML دواړو کتنو ته پلي کېږي. "د لوستلو فونټ" په اختیاري ډول د پیغام د متن لپاره ځانګړی فونټ مجبوروي (د بېلګې په توګه Consolas، OpenDyslexic)؛ د عادي فونټ ساتلو لپاره یې تش پرېږدئ. په کتنه مېنو کې Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 د دې ډیالوګ خلاصولو پرته یوازې د فونټ اندازه لوړوي، ټيټوي یا بیا ټاکي، او ژر ټولو خلاصو پیغامونو ته پلي کېږي. دلته شوي بدلونونه هم د OK په ټک سم ژر پلي کېږي.
+set_view_note = HTML ډیفالټ دی. دا پیغام لکه څنګه چې لېږل شوی ښیي، او د NVDA او JAWS له خوا لوستل کېږي: کله چې د HTML پاڼه خلاصېږي، ZBox د براوزر خپل اعلان غلی کوي، د لوستلو کرسر د پیغام لومړۍ کرښې ته اچوي، او د ZBox خپل شارټکټونه، په کې د F6 چې فوکس له پاڼې بهر ته بېرته راولي، په پاڼه کې کار ورکوي. متن همدا پیغام د ساده، بې بڼې متن په توګه په یو عادي ایډیټ کنټرول کې ښیي -- نه انځورونه، نه ترتیب، او هیڅ داسې څه نه چې د براوزر انجن په نصب بنسټ ولاړ وي. په خلاص پیغام کې Ctrl+B د دواړو لورو لپاره وهئ.
+set_engine_note = Edge عصري CSS ښیي خو پاڼه په جلا پروسه کې چلوي، او خپله منځپانګه یوازې د یو انٹرفیس له لارې د سکرین لوستونکي ته ورکوي چې wxPython ورته نه رسېږي -- نو پیغام کېدای شي هیڅ د لوستلو وړ څه پرته خلاص شي. زوړ MSHTML هغه انجن دی چې Outlook Express او Windows Mail یې کاروي: دا په پروسه کې چلېږي او یوه عادي سند ونه خپروي، نو NVDA او JAWS یې د هرې ویب پاڼې په څېر د براوزینګ په حالت کې لولي. په بل ځل چې پیغام خلاصېږي اغېز کوي.
+set_runtime_note = د سیستم چلښت د Windows Update له خوا خدمت کېږي، نو هغه انجن چې ستاسو پیغامونه لولي بې خبرتیا بدلېدای شي -- دا هغه ډول دی چې په یوه ماشین کې چې د ZBox په اړه هیڅ نه دي بدل شوي، د HTML پیغام کتنه خرابه شي. په deps پوښه کې ځای پر ځای کاپي هغه دقیقه بڼه ټاکي چې ZBox پرې ازمایل شوی. د نصبولو لپاره tools\get_webview2.bat وچلوئ. که ځای پر ځای کاپي نه وي، ZBox په هر حال د سیستم چلښت کاروي، نو دا تل پیلېږي. ZBox ته په بله پیل کې اغېز کوي.
+set_sr_intro = ستاسو سکرین لوستونکی ته څومره اجازه ورکول کېږي چې ووايي پداسې حال کې چې پیغام خلاصېږي، او د ZBox خپل غږیز اعلانونه څومره پاتې کېږي.
+set_silence_note = کله چې د HTML پیغام خلاصېږي، ZBox کولای شي تر ۲ ثانیو پورې یو مصنوعي Ctrl ونیسي ترڅو د سکرین لوستونکي د براوزر اعلان غلی کړي. د پیغام موضوع لا دمخه د پاڼې سرلیک په توګه کارول کېږي، چې د base64 URL د لوستلو مخه نیسي، خو لوستونکی لا هم کنټرول او د سند ډول د پیغام پیل ته اعلانوي، نو دا ډیفالټ فعال دی. د بندولو لپاره بند وټاکئ، یا اوږد وخت که لا هم غږ تېرېږي.
+set_focus_delay_note = کله چې د HTML پیغام بارول بشپړ شي، ZBox دومره انتظار کوي مخکې له دې چې حقیقتاً فوکس کړي. دا چې WebView2 وايي پاڼه بار شوه او دا چې Windows د هغې پاڼې د لاسرسي ونه بشپړه کړي، یو شان شېبه نه ده؛ ډېر ژر فوکس کول هغه څه دي چې NVDA/JAWS ته د پیغام پر ځای عمومي "Web content page" اعلانوي، یا د خلاصېدو وروسته د یوې مودې لپاره پیغام ناشته راپور ورکوي. انتخابونه له ۰٫۱ ثانیې تر ۱ ثانیې دي. که تاسو لا هم دا اوریئ اوږد وخت وټاکئ، او کله چې خلاصېدل مستحکم احساس شي لنډ وخت د چټک خلاصېدو لپاره.
+set_announce_note = Ctrl+U او Ctrl+Shift+U لیږونکی په یوه کوچني ډیالوګ کې راپور کوي چې پخپله بندېږي، ځکه چې د حالت کرښه یوازې هغه وخت ویل کېږي چې ستاسو سکرین لوستونکي د حالت کرښې راپور ورکول فعال وي. دا هغه موده ده چې ډیالوګ پاتې کېږي. دا ستاسو د خبرو له سرعت سره برابر کړئ: که ډېره لنډه وي، د جملې په منځ کې بندېږي، چې موخه ماتوي. هره کیلي یې ژر بندوي؛ د غشو کیلۍ یې خلاص ساتي ترڅو بیا ولولئ. د کیلۍ انتظار یې خلاص ساتي ترڅو تاسو یوه کیلۍ ووهئ.
+set_attachment_dir_note = هغه ځای چېرته چې "ټول خوندي کول" ضمیمې لیکي کله چې پیغام له یوې ضمیمې ډېر ولري. که شتون ونه لري په اتومات ډول جوړېږي. هغه پیغام چې یوازې یوه ضمیمه لري لا هم لکه پخوا پوښتنه کوي چې چېرته یې خوندي کړي. د ډیفالټ لپاره یې تش پرېږدئ:\n{path}
+set_autosave_note = یو خلاص لیکلو ټب څومره ځله ځان مسودو ته خوندي کوي پداسې حال کې چې تاسو لیکئ. مسوده خوندي کول (Ctrl+S) په هر حال کې د غوښتنې پر مهال خوندي کوي، او هغه ټب بندول چې خوندي نه شوی لیکنه لري تل د خوندي کولو وړاندیز کوي. بند اتومات خوندي کول بندوي. له ۱۵ ثانیو کم نه وړاندیز کېږي -- هغه به د سرور سفر وي چې ستاسو له لیکلو سره سیالي کوي.
+set_auto_purge_note = پیغامونه له زباله‌دان او سپیم څخه د تل لپاره لرې کوي کله چې دا شمېر ورځې هلته پاتې وي -- هماغه د تل لپاره لرې کول چې زباله‌دان خالي کول او سپیم خالي کول د غوښتنې پر مهال ترسره کوي، په ورځ کې یو ځل په اتومات ډول چلېږي پداسې حال کې چې ZBox خلاص وي. په ډیفالټ ډول په ۳۰ ورځو فعال دی. بند یې بندوي. کله چې پیغام لرې شي دا نه شي بېرته کېدای.
+set_bare_keys_note = کله چې فعال وي، د پیغام په لیست کې یوازې S، A، J، W یا K وهل ژر ستوری بدلوي، آرشیف کوي، ټاکل شوي پیغامونه د سپیم په توګه نښه کوي (Shift+J یې د ناسپیم په توګه نښه کوي)، یا هغه لړۍ چې ټاکنه یې برخه ده څاري/له پامه غورځوي -- آرشیف او د سپیم په توګه نښه کول تایید نه لري او بېرته کول نه لري. دا بندول S، A، J، W او K بېرته عادي لومړي توري د لیست ناوبرۍ ته راګرځوي. Ctrl+S او Ctrl+Shift+A په دواړو حالتونو کې کار کوي. ژر اغېز کوي.
+set_sounds_note = د پرمختګ، نوو پیغامونو، لېږل شوو، ځواب شوو یا مخکې لېږل شوو عملونو، ړنګونو او د لټون د پایلو لپاره لنډ غږونه. بند په اپ کې ټول غږونه بندوي؛ د سکرین لوستونکي او د حالت کرښې اعلانونه په دواړو حالتونو کې نه اغېزمن کېږي.
+set_desktop_notifications_note = د هر نوي پیغام ټولګې لپاره د Windows خبرتیا، د پورتني غږ څخه جلا. بند یې د ټولو حسابونو لپاره بندوي؛ یو انفرادي حساب هم په خپله د حساب او پېژندنو په امستنو کې غلی کېدای شي.
+set_theme_note = دودیز تمونه هغه پوښې دي چې د ZBox د sounds پوښې دننه ایښودل کېږي، هر یو خپل progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav او none_found.wav برابروي. هغه تم فایل چې ورک وي ډیفالټ غږ ته ستنېږي.
+set_theme_note_only_default = دودیز تمونه هغه پوښې دي چې د ZBox د sounds پوښې دننه ایښودل کېږي، هر یو خپل progress-tick.wav، incoming-message.wav، action-done.wav، delete.wav، searching.wav، searching_done.wav او none_found.wav برابروي. هغه تم فایل چې ورک وي ډیفالټ غږ ته ستنېږي. تر هغه چې بله تم پوښه ورزیات نه کړئ یوازې "default" شتون لري.
+set_lock_note = بیا ZBox پیلېدل د هیڅ حساب خلاصېدو مخکې ستاسو د خلاصولو له لارو څخه یوه غواړي. هره یوه کافي ده: د ننوتلو کیلي، امنیتي کیلي، یا اصلي پټنوم. ټری ته بندول وتل نه دی او بیا نه تړي؛ فایل > وتل او د ټری انځورګر وتل تړي. که هیڅ نه وي ثبت شوی او اصلي پټنوم نه وي ټاکل شوی، تړل پرېښودل کېږي پر ځای دې چې تاسو له خپل برېښنالیک بهر کړي.
+set_security_note = اصلي پټنوم د درېیو څخه یوازینی دی چې څه کوډوي: دا هغه دی چې دا پوښه ته اجازه ورکوي چې خپل خوندي شوي حساب پټنومونه په بل کمپیوټر کې خلاص کړي. د ننوتلو کیلي یا امنیتي کیلي یوازې پدې یو کې اپ خلاصوي. هېڅ یو په هغه کمپیوټر کې اصلي پټنوم نه بدلوي چې ZBox مخکې نه دی کارول شوی.
+set_private_mode_note = پیغامونه له سرور څخه لوستل کېږي او یوازې په حافظه کې ساتل کېږي. هیڅ آفلاین کاپي، خوندي پیغامونه یا ډیبګ لاګونه نه ساتل کېږي، او خلاصې ضمیمې او د HTML پیغامونو د براوزر معلومات کله چې ZBox بندېږي ړنګېږي. بندول هم هر هغه پروګرام چې ZBox پیل کړی، په کې هغه چې ضمیمه ښیي، پای ته رسوي، کلیپبورډ خالي کوي، او پدې کمپیوټر ته باور بندوي مګر که شخصي حالت له همدې فعال شوی وي. Windows لا هم ځینې ثبتونه ساتي چې هیڅ پروګرام یې نه شي لرې کولای، لکه د USB ډرایونو لیست، پاڼې فایل، او د انټي ویروس او شبکې لاګونه.
+title_private_mode = شخصي حالت
+private_mode_need_master = شخصي حالت اصلي پټنوم ته اړتیا لري، ځکه یوازې اصلي پټنوم ستاسو حسابونه په هغه کمپیوټر کې خلاصوي چې ستاسو نه وي. یو د اصلي پټنوم تڼۍ سره وټاکئ، بیا شخصي حالت فعال کړئ.
+private_mode_enter_master = د شخصي حالت د فعالولو لپاره اصلي پټنوم ولیکئ.
+private_mode_confirm = شخصي حالت پدې کمپیوټر یا هغه ډرایو کې چې ZBox پرې چلېږي ستاسو د پیغامونو هیڅ کاپي نه ساتي. فعالول یې د ZBox آفلاین کاپي، خوندي پیغامونه، خلاصې ضمیمې، د HTML پیغامونو د براوزر معلومات او د ډیبګ لاګونه ړنګوي. ستاسو په پیغام سرورونو کې هیڅ نه ړنګېږي، او ستاسو حسابونه، اړیکې او امستنې ساتل کېږي. شخصي حالت فعال شي؟
+set_minimize_note = ZBox کوچنی کول د هغه د کارپټې تڼۍ پټوي او پر ځای یې د ټری انځورګر تر شا چلېدونکی پرېږدي. د کړکۍ د بېرته راوړلو لپاره د ټری انځورګر ته کیڼ کلیک وکړئ (یا Enter/Space کله چې کیبورډ فوکس لري).
+set_close_note = د کړکۍ بندولو تڼۍ، Alt+F4، او په پوسټ ټب کې Ctrl+W ZBox له وتلو پر ځای ټری ته پټوي. فایل > وتل (Ctrl+Shift+Q) او د ټری انځورګر خپل وتل توکی په دواړو حالتونو کې ZBox حقیقتاً وتي، نو تل یوه کیبورډ لار شته چې ټری لمس کولو پرته ووځئ.
+set_stay_maximized_note = ZBox لوی پیلېږي او که تاسو یې لوی حالت لرې کړئ بېرته لوی کېږي. د مېنو کرښه، د سرلیک کرښه او د کړکۍ څنډه نه اغېزمنېږي -- دا بې څنډې بشپړ سکرین حالت نه دی، نو د Alt کیلۍ ټول مېنو شارټکټونه کار کوي.
+set_run_at_startup_note = کله چې Windows ته ننوځئ ZBox په اتومات ډول پیلوي، د کړکۍ ښودلو پر ځای مستقیم ټری ته خلاصېږي. ژر اغېز کوي، نه یوازې په بل پیل کې.
+set_desktop_shortcut_note = ستاسو په ډیسکټاپ کې د ZBox شارټکټ ږدي، هغه چې لا دمخه هلته وي بدلوي. شارټکټ د دې ZBox پوښې دقیق ځای ثبتوي، نو که ZBox بل ځای ته ولېږدوئ یا کاپي کړئ، دا بیا په نوې کاپي کې وهئ چې د ډیسکټاپ شارټکټ ورته ګوته ونیسي. ژر اغېز کوي او د OK انتظار نه کوي.
+
+# The Address Book, its contact form and its groups.
+ab_name = نوم
+ab_phone = تلیفون
+ab_notes = یادښتونه
+ab_heading = د پتو کتاب
+ab_contacts = اړیکې
+ab_new = &نوی...
+ab_edit = &سمول...
+ab_delete = &ړنګول
+ab_import = &واردول...
+ab_export = &صادرول...
+ab_groups_label = ډلې (د لیکلیستونه)
+ab_groups_name = ډلې
+ab_new_group = &نوې ډله...
+ab_rename_group = &د ډلې نوم بدلول...
+ab_delete_group = &ډله ړنګول
+ab_manage_members = &غړي اداره کول...
+ab_all_contacts = ټولې اړیکې
+ab_add_member = ورزیاتول >>
+ab_remove_member = << لرې کول
+ab_members_of = د {name} غړي
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &په قاموس کې نشته:
+sp_not_in_dictionary_name = په قاموس کې نشته
+sp_in_this_line_label = پدې کرښه کې:
+sp_in_this_line_name = پدې کرښه کې
+sp_suggestions_label = &وړاندیزونه:
+sp_suggestions_name = وړاندیزونه
+sp_replace_with_label = &په دې بدلول:
+sp_replace_with_name = په دې بدلول
+sp_replace = &بدلول
+sp_replace_all = &ټول بدلول
+sp_ignore = &له پامه غورځول
+sp_ignore_all = &ټول له پامه غورځول
+sp_add_to_dictionary = &قاموس ته ورزیاتول
+btn_close = &بندول
+
+# Privacy and Content Blocking.
+priv_remote_label = په پیغامونو کې لرې منځپانګه:
+priv_block_remote = &لرې منځپانګه تر هغه بندول چې زه یې وغواړم (سپارښتل کېږي)
+priv_blocklist_label = د اعلان او تعقیبوونکو د بندیز لیست:
+priv_block_known = &پیژندل شوي اعلان او تعقیبوونکي ډومېنونه بندول
+priv_update_daily = &لیست هره ورځ په شالید کې تازه کول
+priv_update_now = &همدا اوس تازه کول
+priv_junk_label = د سپیم پیغام قاعدې:
+priv_check_inbox = &نوي راغلي پیغامونه د بند شویو لیږونکو او پیژندل شوو فشینګ لینکونو پر وړاندې کتل
+priv_move_blocked = &د بند شویو لیږونکو پیغامونه په اتومات ډول سپیم ته لېږدول
+priv_update_phishing = &د فشینګ لیست همدا اوس تازه کول
+priv_blocked_label = بند شوي لیږونکي:
+priv_blocked_name = بند شوي لیږونکي
+priv_remove_blocked = &بند شوی لیږونکی لرې کول
+priv_never_junk_label = هغه لیږونکي چې هېڅکله سپیم نه ګڼل کېږي:
+priv_never_junk_name = هغه لیږونکي چې هېڅکله سپیم نه ګڼل کېږي
+priv_remove_never_junk = &د ناسپیم لیږونکی لرې کول
+priv_allowed_label = هغه لیږونکي چې د لرې منځپانګې بارولو اجازه لري:
+priv_allowed_name = اجازه شوي لیږونکي
+priv_remove_selected = &ټاکل شوی لیږونکی لرې کول
+
+# Message Filters.
+filt_rule_name = د قاعدې نوم
+filt_enabled = &فعال
+filt_match_label = سمون:
+filt_match_all = &له ټولو لاندې سره سمون (او)
+filt_match_any = &له کوم یو لاندې سره سمون (یا)
+filt_conditions_label = شرطونه (د پریښودو لپاره ارزښت تش پرېږدئ):
+filt_condition_field = د {number} شرط ساحه
+filt_condition_contains = د {number} شرط لري
+filt_actions_label = عملونه:
+filt_mark_read = &د لوستل شوي په توګه نښه کول
+filt_flag = &پیغام ستوری ورکول
+filt_move_label = پوښې ته لېږدول:
+filt_move_name = پوښې ته لېږدول
+filt_rules_name = د چاڼګر قاعدې
+filt_new = &نوې قاعده...
+filt_edit = &قاعده سمول...
+filt_delete = &قاعده ړنګول
+filt_up = &پورته کول
+filt_down = &ښکته کول
+filt_run_label = همدا اوس په پوښه کې چلول:
+filt_run_name = همدا اوس چلولو پوښه
+filt_run_now = &همدا اوس چلول
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &د ننوتلو کیلي سره خلاصول (Windows Hello)
+unl_security_key = &د امنیتي کیلي سره خلاصول
+unl_master_password_label = &اصلي پټنوم:
+unl_master_password_name = اصلي پټنوم
+unl_unlock = &خلاصول
+unl_exit = &له ZBox وتل
+unl_methods_label = &ثبت شوې لارې:
+unl_methods_name = ثبت شوې د خلاصولو لارې
+unl_add_passkey = &د ننوتلو کیلي ورزیاتول…
+unl_add_key = &امنیتي کیلي ورزیاتول…
+unl_reassign = &د ننوتلو کیلي پدې کمپیوټر ته بیا ټاکل…
+unl_test = &ازمایل…
+unl_remove = &لرې کول
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = له
+comp_to = ته
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = موضوع
+comp_attach_button = فایل ضمیمه کول...
+comp_sending = لېږل کېږي...
+comp_report_label = &راپور:
+comp_report_name = راپور
+comp_refresh = &تازه کول
+comp_copy = &کاپي کول
+comp_preview_read = لکه څنګه چې ترلاسه کوونکی یې لولي
+comp_preview_source = هغه HTML چې لېږل کېږي
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = د پیغام متن
+mv_blocked_notice = د بندې منځپانګې خبرتیا
+mv_show_remote = &لرې منځپانګه ښودل
+mv_always_allow = &دا لیږونکی تل اجازه ورکول
+mv_message_headers = د پیغام سرلیکونه
+mv_attachments = ضمیمې
+mv_attachments_count = ضمیمې ({count})
+mv_save_attachment = خوندي کول: {filename}
+mv_save_all = ټول خوندي کول
+mv_html_view = د پیغام HTML کتنه
+mv_saved_message = خوندي شوی پیغام
+mv_show_remote_tip = دا پیغام د لرې انځورونو او سټایلونو سره بیا بارول. پیژندل شوي تعقیبوونکي بند پاتې کېږي.
+mv_always_allow_tip = د {sender} په هر پیغام کې لرې منځپانګه بارول.
+
+# The search tab.
+srch_account = حساب
+srch_folder = پوښه
+srch_for = لټون د
+srch_look_in = کې لټول
+srch_in_all = ټول
+srch_in_subject = موضوع
+srch_in_from = له
+srch_in_to = ته
+srch_in_body = متن
+srch_date = نیټه
+srch_date_any = هر وخت
+srch_date_today = نن
+srch_date_yesterday = پرون
+srch_date_week = وروستۍ ۷ ورځې
+srch_date_month = وروستۍ ۳۰ ورځې
+srch_date_year = دا کال
+srch_date_custom = دودیز حد
+srch_from_date = له نیټې (کال-میاشت-ورځ، اختیاري وخت)
+srch_to_date = تر نیټې (کال-میاشت-ورځ، اختیاري وخت)
+srch_unread = یوازې نالوستل شوي
+srch_flagged = یوازې ستوری لرونکي
+srch_attachment = ضمیمه لري
+
+# The signature editor.
+sig_editors = د لاسلیک سمونګرونه
+sig_formatted = لاسلیک، بڼه شوی
+sig_source = لاسلیک، د HTML سرچینه
+sig_plain_label = د ساده متن بدیل (د HTML سره لېږل کېږي)
+sig_plain_name = د ساده متن بدیل
+
+# About ZBox.
+about_text_name = د ZBox د اړوند متن
+about_view_license = &جواز کتل...
+about_google = &د Google اپ پټنومونه...
+about_support = &ZBox ملاتړ کول -- د یو کس پرمختګ او ساتنه
+about_repos = &د Harith د اپونو ذخیرې په GitHub کې
+about_contact = &له Harith سره اړیکه
+btn_close_plain = بندول
+btn_cancel_plain = لغوه کول
+
+# The license window.
+eula_heading = د ZBox جواز
+eula_text_name = د ZBox د جواز متن
+eula_third_party = د دریمې ډلې برخو د جواز پاڼې:
+eula_agree = &زه پورتنۍ شرطونو سره موافق یم
+eula_agree_name = ما د ZBox د جواز شرطونه لوستلي او موافق یم
+eula_disagree = &زه موافق نه یم
+eula_next = &بل
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = د ZBox د اسنادو متن
+doc_copy = کلیپبورډ ته کاپي کول
+shortcuts_heading = د کیبورډ شارټکټونه
+shortcuts_text_name = د کیبورډ شارټکټونو متن
+
+# The main window's own panes.
+mf_toolbar = اصلي توکپټه
+mf_tabs = د ZBox ټبونه
+tree_heading = حسابونه او پوښې
+tree_name = د حساب او پوښې ونه
+envlist_heading = پیغامونه
+envlist_name = د پیغامونو لیست
+rdr_heading = پیغام
+rdr_name = د پیغام لوستونکی
+conv_heading_one = خبرې اترې: ۱ پیغام
+conv_heading_many = خبرې اترې: {count} پیغامونه
+
+# A run of several messages, and the cache dialog.
+bulk_progress = له {total} څخه {completed} بشپړ شول.
+bulk_cancelling = لغوه کېږي -- اوسنی پیغام پای ته رسېږي...
+cache_clear_now = د آفلاین پیغام کېش همدا اوس پاکول... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}، خوندي
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = ښودل کېدونکی نوم اختیاري دی -- که غواړئ د دې حساب د خپل نوم په توګه ولېږئ، تش یې پرېږدئ.
+acct_note_identity = د برېښنالیک پته کېدای شي د ننوتلو برېښنالیک څخه توپیر ولري که ستاسو چمتو کوونکی دې صندوق ته تړلی دودیز ډومین ولري. پیغامونه به د پورتنۍ پتې لاندې ولېږل شي او ترلاسه شي، پداسې حال کې چې ننوتل لا هم د ننوتلو برېښنالیک کاروي. د پټنوم ساحه تش پرېږدئ چې د دې حساب لپاره لا دمخه خوندي شوی پټنوم وساتل شي -- د بېلګې په توګه د Gmail اپ پټنوم له بدلولو وروسته، نوی دلته ولیکئ؛ بل ډول یې تش پرېږدئ.
+acct_note_identities = نور پتې چې دا حساب پرې لېږلای او ځواب ورکولای شي. هغه پیغام ته ځواب ورکول چې په دې پتو کې یو ته لېږل شوی و، له ساحه د پورتنۍ پتې پر ځای هغې پتې ته ډیفالټ کوي.
+acct_note_signature = د دې حساب څخه لېږل شوي هر نوي پیغام، ځواب او مخکې لېږل ته، د "-- " کرښې لاندې ورزیاتېږي. د هیڅ لپاره یې تش پرېږدئ. لاسلیک سمول هغه بڼه شوی سمونګر خلاصوي چې په کې تور، لیستونه او لینکونه شته؛ پورتنی بکس بیا د ساده متن نسخه ساتي چې ورسره ځي.
+acct_note_junk = کوم حقیقي پوښې ته د سپیم په توګه نښه کول پیغامونه لېږدوي. "{automatic}" همدا چمتو کوونکي-پوه اټکل کاروي چې آرشیف او زباله‌دان لا دمخه کاروي؛ دا یوازې هغه وخت وټاکئ چې هغه اټکل غلط وي یا ستاسو د سپیم پوښه دودیز نوم ولري.
+acct_note_disable = غیرفعال شوی حساب هېڅکله نه اړیکه کېږي -- نه IDLE، نه دوره‌یي تازه کول، هیڅ نه -- تر هغه چې بیا فعال شي. دا لا هم په ونه کې، د (غیرفعال) په نښه ښکاري، او دمخه ډاونلوډ شوي پیغامونه یې آفلاین شتون لري. دا هماغه بدلون دی لکه حسابونه > حساب غیرفعالول یا د حساب خپل د مندرجاتو مېنو؛ دا یوازې بل ځای دی چې ورته ورسېږئ.
+acct_note_default = د دې حساب پوښې په ونه کې لومړی ښکاري، او نوی پیغام په ډیفالټ د هغه څخه لېږل کېږي مګر چې په لاس په لیکوال کې بدل شي. دا نه اغېزمنوي چې ځواب یا مخکې لېږل کومه پته کاروي -- هغه لا دمخه د پیغام تعقیب کوي چې ځواب ورکول کېږي (پورته اضافي پېژندنې وګورئ). تل دقیقاً یو ډیفالټ حساب شته، نو د اوسني ډیفالټ له دې څخه نښه لرې کول پرته له دې چې بل ته یې ورکړئ بدلون نه راولي -- پر ځای یې د بل حساب بکس نښه کړئ چې ډیفالټ هغه ته ورکړئ.
+acct_note_mute = &غلی کول د دې حساب د نوي پیغام غږ، غږیز اعلان او د Windows خبرتیا بندوي، پرته له دې چې هغه بل ډول څنګه تنظیم شوي. نور حسابونه نه اغېزمنوي، او لا هم د امستنې > غږ او خبرتیاوو په اصلي سویچونو تړلی دی (په ټولیز ډول غږونه او د ډیسکټاپ خبرتیاوې).
+wiz_note_app_password = که تاسو لا دمخه د ZBox لپاره د اپ پټنوم جوړ کړی وي، د دوام لپاره بل وټاکئ.
+wiz_note_login = د ننوتلو اسناد.\nکه ستاسو د ننوتلو برېښنالیک له پورتنۍ پتې څخه توپیر ولري، د بېلګې په توګه ستاسو د چمتو کوونکي حساب login@example.net وي مګر تاسو غواړئ د you@example.org په توګه ولېږئ او ترلاسه کړئ، د ننوتلو برېښنالیک دلته ولیکئ. تاسو کولای شئ دودیزه د لېږلو پته وروسته د حساب او پېژندنو په امستنو کې وټاکئ.
+wiz_note_servers = د سرور امستنې، چېرته چې ډومین پیژندل کېږي مخکې ډکې شوې. هر څه چې توپیر ولري سم کړئ.
+wiz_preset_none = د دې ډومین لپاره هیڅ مخکې ټاکل شوې امستنه ونه موندل شوه. د خپل چمتو کوونکي سرور امستنې په لاس ولیکئ؛ د ستاسو د چمتو کوونکي د مرستې پاڼې به یې لیست کړي.
+ab_note_groups = د لیکلو کړکۍ په ته، Cc یا Bcc ساحه کې د یوې ډلې نوم ولیکئ چې ټول غړي یې یو ځل ډک شي.
+cache_note_intro = دا یوازې د ZBox ځایي کاپي لرې کوي. له هېڅ پیغام سرور څخه هیڅ نه ړنګېږي، او لرې شوی پیغام په بل ځل چې یې خلاصوئ بیا ډاونلوډ کېږي.
+cache_note_age = اتومات پاکول په ورځ کې یو ځل چلېږي، کله چې ZBox لس دقیقې د کیبورډ فعالیت نه وي لیدلی او هیڅ پیغام خلاص نه وي. دا د هر پیغام خپلې نیټې ته ګوري، په کې هغه پیغامونه چې لا هم ستاسو په حساب کې دي.
+filt_note_intro = قاعدې په ترتیب، له پورته څخه ښکته، چلېږي، له، ته او موضوع ازمایي. د دې حساب په راغلو پیغامونو کې کله چې نوي پیغامونه راشي په اتومات ډول پلي کېږي؛ لاندې همدا اوس چلول وکاروئ چې هغو پیغامونو ته یې پلي کړئ چې لا دمخه په پوښه کې دي.
+filt_note_run_now = ټولې پورتنۍ فعالې قاعدې، په ترتیب، په ټاکل شوې پوښه کې هر پیغام ته پلي کوي -- لومړی ستاسو بدلونونه خوندي کوي، هماغه ډول لکه OK.
+mp_note_intro = دا حسابونه په بل کمپیوټر کې جوړ شوي وو. د دوی خوندي شوي پټنومونه دلته د خلاصولو لپاره اصلي پټنوم ولیکئ. پدې کمپیوټر کې به یوازې یو ځل له تاسو پوښتل کېږي.\n\nبې له دې، هر حساب باید بیا د خپل برېښنالیک سرور ته ننوځي.
+priv_note_remote = انځورونه، سټایل شیټونه او فونټونه چې پیغام له انټرنیټ څخه بارېږي لیږونکي ته هماغه شېبه وايي چې تاسو یې خلاص کړ، او له کوم ځای څخه. کله چې دا فعال وي، هیڅ یو نه بارېږي: د پیغام پورته یوه خبرتیا ښکاري چې څه بند شول، او Ctrl+Shift+I یې یوازې د هغه یو پیغام لپاره بارېږي. هغه انځورونه چې پخپله پیغام ته ضمیمه دي تل ښکاري. سکریپټونه او ځای پر ځای شوې چوکاټونه په هر حال کې لرې کېږي او هېڅکله نه بارېږي.
+priv_note_blocklist = دا دویمه طبقه ده. دا هغه وخت مهمه ده چې تاسو د پیغام لرې منځپانګه بار کړئ، یا یو لیږونکی اجازه ورکړئ: انځورونه بارېږي، خو هر څه چې د پیژندل شوي تعقیب یا اعلان ډومین څخه چمتو کېږي لا هم نه بارېږي. لیست له عامه اعلان او تعقیبوونکو لیستونو ډاونلوډ او یو ځای کېږي؛ تازه کول یوه یا دوه ثانیې نیسي او په شالید کې چلېږي.
+priv_note_junk = اټکل نشته. د سپیم په توګه نښه کول لیږونکی لاندې بند لیست ته ورزیاتوي، مګر که پیغام د لیکلیست له لارې راغلی وي. د ناسپیم په توګه نښه کول لیږونکی د هېڅکله-سپیم لیست ته ورزیاتوي او هغه پیغام بیا هېڅکله نه کتل کېږي. د بند شوي لیږونکي نوی پیغام په لیست کې د بند شوی لیږونکی په توګه نښه کېږي؛ هغه چې پیژندل شوي فشینګ یا مالویر سایټ ته لینک لري د ممکنه فشینګ په توګه نښه کېږي. ستاسو د برېښنالیک چمتو کوونکي خپل سپیم چاڼ لکه پخوا چلېږي.
+priv_status_phishing_updating = د فشینګ لیست: په شالید کې تازه کېږي. د پایلې لیدلو لپاره دا ډیالوګ بیا خلاص کړئ.
+priv_status_updating = په شالید کې تازه کېږي. د پایلې لیدلو لپاره دا ډیالوګ بیا خلاص کړئ.
+rel_note_intro = هغه پیغامونه چې د "{subject}" سره د Message-ID/References سرلیکونو له مخې اړوند دي، په دې حساب کې په هره پوښه کې.
+srch_note_intro = په هر حساب او پوښه کې کلمې ولټوئ، یا لټون د لاندې انتخابونو سره تنګ کړئ. کلمې تش پرېږدئ چې پیغامونه یوازې د نیټې یا د چک بکسونو له مخې ومومئ.
+sig_note_plain = د ساده متن بدیل تش پرېږدئ او کله چې خوندي کول وهئ، له بڼه شوي لاسلیک څخه لیکل کېږي.
+unified_note_intro = وټاکئ کومې پوښې په ټولو حسابونو کې یو ځای شي. هره نښه شوې په ونه کې یو واحد توکی کېږي چې هغه پوښه ستاسو له ټولو حسابونو یو ځای کوي.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = د ZBox په اړه
+title_account_settings = د حساب او پېژندنو امستنې: {name}
+title_new_account = نوی حساب
+title_address_book = د پتو کتاب
+title_members = غړي: {name}
+ab_group_name_prompt = د ډلې نوم:
+title_new_group = نوې ډله
+title_cache_cleanup = د کېش پاکولو تنظیمات
+cache_age_prompt = کېش شوي پیغامونه چې له دې زاړه دي په اتومات ډول لرې کول:
+title_automatic_cleanup = اتومات پاکول
+comp_link_prompt = د لینک پته:
+title_insert_link = لینک ورزیاتول
+title_composer_diagnostics = د لیکوال تشخیص
+title_formatted_preview = بڼه شوې مخکتنه
+title_license_agreement = د ZBox د جواز موافقه
+title_message_filters = د پیغام چاڼګرونه: {account}
+title_master_password_required = اصلي پټنوم ته اړتیا ده
+title_privacy_dialog = محرمیت او د منځپانګې بندول
+title_privacy = محرمیت
+title_settings = امستنې
+set_tab_general = عمومي
+set_tab_personalization = شخصي کول
+set_tab_accessibility = لاسرسی او د شارټکټ کیلۍ
+set_tab_maintenance = ساتنه او پاکول
+set_tab_sounds = غږونه او خبرتیاوې
+set_tab_security = امنیت
+title_unified_folders = یو شوې پوښې
+title_zbox_locked = ZBox بند دی
+title_message_view = د پیغام کتنه
+title_remote_content = لرې منځپانګه
+title_refresh = تازه کول
+title_refresh_all = ټول تازه کول
+mv_choose_folder = د ضمیمې د خوندي کولو لپاره پوښه وټاکئ
+title_thread = لړۍ
+title_inbox = راغلي پیغامونه
+title_compose = لیکل
+title_watch_thread = لړۍ څارل
+title_ignore_thread = لړۍ له پامه غورځول
+title_edit_signature = لاسلیک سمول
+title_account = حساب
+mf_folder_name_prompt = د پوښې نوم:
+mf_new_name_prompt = نوی نوم:
+title_refresh_all_accounts = ټول حسابونه تازه کول
+title_sender = لیږونکی
+title_new_mail = نوی پیغام
+mf_export_dialog_title = ټول {count} حسابونه او امستنې صادرول
+mf_related_tab = اړوند: {subject}
+title_hotkeys_diagnostic = د ګړندیو کیلیو تشخیص
+set_choose_attachment_dir = د ضمیمې د خوندي کولو پوښه وټاکئ
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox بند دی. د خلاصولو لپاره لاندې لارو څخه کومه یوه وکاروئ. لغوه کول ZBox د هیڅ حساب خلاصولو پرته بندوي.
+unl_note_foreign_passkey = د ننوتلو کیلي چې دې پوښې سره خوندي شوې بل کمپیوټر ته تړاو لري، نو دلته نه شي کارېدلی. له خپلې امنیتي کیلي یا اصلي پټنوم سره یې خلاص کړئ، بیا امستنې، امنیت، د خلاصولو لارې وکاروئ چې پدې کمپیوټر کې د ننوتلو کیلي جوړه کړئ.
+unl_note_methods = دا هره یوه ZBox خلاصوي کله چې د اپ بندول فعال وي، د اصلي پټنوم تر څنګ. د ننوتلو کیلي پدې کمپیوټر کې Windows Hello کاروي؛ امنیتي کیلي په USB یا NFC یو FIDO2 کیلي ده او په هر هغه کمپیوټر کې کار کوي چې ورته ولګوئ.
+unl_note_not_encryption = دا اپ خلاصوي. هیڅ نه کوډوي: اصلي پټنوم لا هم یوازینی دی چې په هغه کمپیوټر کې د حساب خوندي شوي پټنومونه خلاصولای شي چې دا پوښه مخکې نه ده کارول شوې. دا باید لومړی ټاکل شي، او د دې پرته هیڅ یو ورزیات نه شي.
+unl_add_passkey_unavailable = &د ننوتلو کیلي ورزیاتول (شتون نه لري)
+unl_add_key_unavailable = &امنیتي کیلي ورزیاتول (شتون نه لري)
+unl_reassign_unavailable = &د ننوتلو کیلي پدې کمپیوټر ته بیا ټاکل (شتون نه لري)
+unl_status_cancelled_passkey = د ننوتلو کیلي لغوه شوه. ZBox لا هم بند دی.
+unl_status_cancelled_key = امنیتي کیلي لغوه شوه. ZBox لا هم بند دی.
+unl_status_enter_password = اصلي پټنوم ولیکئ.
+unl_status_no_master = اصلي پټنوم نه دی ټاکل شوی، نو د ننوتلو کیلي یا امنیتي کیلي تر اوسه نه شي ورزیاتېدلی. په امستنې، امنیت کې د اصلي پټنوم تڼۍ سره یو وټاکئ، بیا دلته راشئ. اصلي پټنوم هغه دی چې ستاسو خوندي شوي حساب پټنومونه په بل کمپیوټر کې خلاصوي؛ د ننوتلو کیلي اپ یوازې پدې یو کې خلاصوي، نو نه شي په خپله ولاړه شي.
+unl_status_unsupported = د دې کمپیوټر Windows د ننوتلو کیلي یا امنیتي کیلي نه ملاتړ کوي، نو دلته یوازې اصلي پټنوم ZBox خلاصولای شي.
+unl_status_foreign_one = ۱ د ننوتلو کیلي بل کمپیوټر ته تړاو لري او دلته ZBox نه شي خلاصولای. بیا ټاکل یې پدې کمپیوټر کې د جوړ شوې کیلي سره بدلوي.
+unl_status_foreign_many = {count} د ننوتلو کیلۍ بل کمپیوټر ته تړاو لري او دلته ZBox نه شي خلاصولای. بیا ټاکل یې پدې کمپیوټر کې د جوړ شوې کیلي سره بدلوي.
+unl_status_foreign_one_no_hello = ۱ د ننوتلو کیلي بل کمپیوټر ته تړاو لري او دلته ZBox نه شي خلاصولای. Windows Hello دلته نه دی جوړ شوی، نو پدې کمپیوټر کې نه شي بدلېدلی؛ لرې کول یې هېروي.
+unl_status_foreign_many_no_hello = {count} د ننوتلو کیلۍ بل کمپیوټر ته تړاو لري او دلته ZBox نه شي خلاصولای. Windows Hello دلته نه دی جوړ شوی، نو پدې کمپیوټر کې نه شي بدلېدلی؛ لرې کول یې هېروي.
+unl_status_no_hello = Windows Hello پدې کمپیوټر کې نه دی جوړ شوی، نو دلته د ننوتلو کیلي نه شي ورزیاتېدلی. امنیتي کیلي لا هم کېدای شي.
+unl_status_none_registered = تر اوسه د خلاصولو هیڅ لار ثبت شوې نه ده.
+unl_status_add_cancelled_passkey = د ننوتلو کیلي ورزیاتول لغوه شو.
+unl_status_add_cancelled_key = امنیتي کیلي ورزیاتول لغوه شو.
+unl_status_added = ورزیات شو: {name}.
+unl_status_reassign_cancelled = بیا ټاکل لغوه شو. هیڅ نه دي بدل شوي.
+unl_status_reassigned = {name} ورزیات شو او له نورو کمپیوټرونو څخه {count} هېر شول.
+unl_status_test_cancelled = ازمایښت لغوه شو.
+unl_status_removed = لرې شو.
+unl_remove_warning_last = {name} لرې شي؟\n\nدا د خلاصولو یوازینۍ ثبت شوې لار ده او اصلي پټنوم نه دی ټاکل شوی، نو چې د اپ بندول فعال وي ZBox د خلاصولو لپاره هیڅ نه پاتې کېږي. بندول پرېښودل کېږي پر ځای دې چې تاسو بهر کړي، خو ZBox به بیا نه بند خلاص شي.
+unl_remove_warning = {name} لرې شي؟ ZBox به نور یې نه مني.
+ab_col_email = برېښنالیک
+ab_col_name = نوم
+ab_col_phone = تلیفون
+ab_no_contacts = تر اوسه هیڅ اړیکه نشته.
+acct_auto_check = نوي پیغامونه په اتومات ډول کتل
+acct_note_auto_check = بند: ZBox هېڅکله دې حساب سره په خپله اړیکه نه نیسي -- د نوو پیغامونو څارنه نشته، وخت لرونکی تازه کول نشته، د شالید ډاونلوډونه نشته -- نو یو ناباوره سرور نور حسابونه نه ورو کوي. ډاونلوډ شوي پیغامونه یې لا هم خلاصېږي، او تازه کول (F5)، لېږل او ړنګول لا هم سرور ته رسېږي. د وسایلو په مېنو یا د حساب په مندرجاتو مېنو کې د اتومات کتنې درولو سره یو شان.
+bl_day_ago = ۱ ورځ مخکې
+bl_days_ago = {days} ورځې مخکې
+bl_label_blocklists = د بندیز لیست
+bl_label_phishing = د فشینګ لیست
+bl_last_failed = وروستۍ هڅه ناکامه شوه: %s
+bl_not_downloaded = تر اوسه ډاونلوډ شوی نه دی.
+bl_save_failed = %s ډاونلوډ شو خو خوندي نه شو: %s
+bl_seed_only = %s ډومېنونه د ځای پر ځای لیست څخه. له انټرنیټ څخه تر اوسه هېڅکله تازه شوی نه دی.
+bl_some_failed = ځینې سرچینې ناکامې شوې: %s
+bl_some_unreachable = ځینو سرچینو ته نه شو رسېدلی: %s
+bl_status_line = %s ډومېنونه. وروستی تازه کول %s.
+bl_up_to_date = %s لا دمخه تازه دی.
+bl_update_failed = %s نه شو تازه کېدای: %s
+bl_updated = %s تازه شو: %s ډومېنونه.
+cc_age_choice = هر پیغام کېش %s زوړ
+cc_auto_button = اتومات پاکول: کېش شوي پیغامونه چې له %s زاړه دي...
+comp_btn_discard = &ردول
+comp_btn_keep_editing = &سمول ته دوام
+comp_btn_save_draft = &مسوده خوندي کول
+comp_no_account = هیڅ حساب نه دی تنظیم شوی
+comp_saving_draft = مسوده خوندي کېږي…
+comp_this_message = دا پیغام
+comp_unsent_save_q = د بندولو دمخه %s د مسودې په توګه خوندي شي؟
+comp_unsent_tray_q = مخکې له دې چې ZBox ټری ته ولاړ شي %s د مسودې په توګه خوندي شي؟
+doc_unreadable = د اسنادو فایل نه شو لوستل کېدای:
+envlist_all_disabled = هر حساب غیرفعال دی.
+envlist_col_date = نیټه
+envlist_col_from = له
+envlist_col_status = حالت
+envlist_col_subject = موضوع
+envlist_collapsed = راټول شوی (%d)
+envlist_empty = پدې پوښه کې هیڅ پیغام نشته.
+envlist_loading = پیغامونه بارېږي...
+envlist_no_accounts = تر اوسه هیڅ حساب نه دی تنظیم شوی.
+envlist_no_ignored = پدې پوښه کې هیڅ له پامه غورځول شوې لړۍ نشته.
+envlist_no_watched = پدې پوښه کې هیڅ څارل شوې لړۍ نشته.
+envlist_select_folder = د پیغامونو د بارولو لپاره یو حساب یا پوښه وټاکئ.
+eula_link_0 = د Himalaya د جواز پاڼه په براوزر کې خلاصول
+eula_link_1 = د StevenBlack hosts د جواز پاڼه په براوزر کې خلاصول
+eula_link_2 = د EasyList/EasyPrivacy د جواز پاڼه په براوزر کې خلاصول
+eula_link_3 = د Phishing.Database د جواز پاڼه په براوزر کې خلاصول
+eula_read_note = لاندې جواز ولولئ، په کې د دریمې ډلې برخې. تاسو باید زه موافق یم نښه کړئ مخکې له دې چې بل شتون ولري. زه موافق نه یم ZBox پرته له پیلولو بندوي، او هغه څه لرې کوي چې دا چلول تر اوسه جوړ کړي.
+eula_unreadable = د جواز فایل نه شو لوستل کېدای:\n%s
+filters_title = چاڼګرونه چلول
+flag_title = پیغام ستوری ورکول
+folder_type_archive = آرشیف
+folder_type_drafts = مسودې
+folder_type_inbox = راغلي پیغامونه
+folder_type_junk = سپیم
+folder_type_sent = لیږل شوي
+folder_type_trash = زباله‌دان
+mime_application_json = JSON فایل
+mime_application_msword = Word سند
+mime_application_octet_stream = دوهمی فایل
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel جدول
+mime_application_vnd_ms_powerpoint = PowerPoint وړاندیز
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint وړاندیز
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel جدول
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word سند
+mime_application_xml = XML فایل
+mime_application_zip = ZIP آرشیف
+mime_audio_mpeg = MP3 غږ
+mime_audio_ogg = OGG غږ
+mime_audio_wav = WAV غږ
+mime_image_bmp = BMP انځور
+mime_image_gif = GIF انځور
+mime_image_jpeg = JPEG انځور
+mime_image_png = PNG انځور
+mime_image_svg_xml = SVG انځور
+mime_image_webp = WebP انځور
+mime_text_csv = CSV فایل
+mime_text_html = HTML فایل
+mime_text_plain = متن فایل
+mime_video_mp4 = MP4 ویډیو
+mime_video_x_msvideo = AVI ویډیو
+move_title_junk = د سپیم په توګه نښه کول
+move_title_move_to = لېږدول
+move_title_not_junk = د ناسپیم په توګه نښه کول
+mp_explain_set = اصلي پټنوم ټاکل شوی. دا هغه دی چې دې ZBox پوښې ته اجازه ورکوي چې خپل خوندي شوي حساب پټنومونه په بل کمپیوټر کې خلاص کړي.\n\nد لرې کولو لپاره دواړه نوي پټنوم بکسونه تش پرېږدئ او OK وهئ. لرې کول دا کمپیوټر نه اغېزمنوي، خو پوښه به نور په هېڅ بل کمپیوټر کې د هر حساب بیا ننوتلو پرته کار ونه کړي.
+mp_explain_unset = اصلي پټنوم نه دی ټاکل شوی، نو خوندي شوي حساب پټنومونه یوازې پدې کمپیوټر او پدې Windows حساب کې لوستل کېدای شي. که پوښه بل ځای کاپي کړئ، هر حساب باید بیا د خپل برېښنالیک سرور ته ننوځي.\n\nیو وټاکئ او ZBox به په هر نوي کمپیوټر کې یو ځل یې وغواړي، بیا هلته له هغه وروسته په عادي ډول خلاصېږي. دا کمپیوټر بیا نه پوښتي.\n\nلیکئ یې او په خوندي ځای کې یې وساتئ. دا هیڅ ځای نه ساتل کېږي او نه شي ترلاسه کېدای: که یې هېر کړئ، هر حساب باید بیا د خپل برېښنالیک سرور ته ننوځي.
+mp_label_confirm = &نوی اصلي پټنوم تایید کړئ:
+mp_label_current = &اوسنی اصلي پټنوم:
+mp_label_master = &اصلي پټنوم:
+mp_label_new = &نوی اصلي پټنوم:
+mp_name_confirm = نوی اصلي پټنوم تایید کړئ
+mp_name_current = اوسنی اصلي پټنوم
+mp_name_master = اصلي پټنوم
+mp_name_new = نوی اصلي پټنوم
+mp_prompt_existing = ستاسو خوندي شوي حساب پټنومونه یوازې پدې کمپیوټر کې خوندي دي. یو اصلي پټنوم وټاکئ چې که ZBox بل کمپیوټر ته یوسئ هم خلاص شي.
+mp_prompt_first_run = ZBox د دې په حال کې دی چې ستاسو حساب پټنومونه خوندي کړي. اوس یو اصلي پټنوم وټاکئ چې که ZBox بل کمپیوټر ته یوسئ هم خلاص شي.
+mp_prompt_new_account = ZBox د دې په حال کې دی چې د دې حساب پټنوم خوندي کړي. لومړی یو اصلي پټنوم وټاکئ چې که ZBox بل کمپیوټر ته یوسئ حساب هم خلاص شي.
+mp_removed_done = اصلي پټنوم لرې شو. خوندي شوي پټنومونه اوس یوازې پدې کمپیوټر او پدې Windows حساب کې کار کوي.
+mp_set_done = اصلي پټنوم ټاکل شو. ZBox به په هر نوي کمپیوټر کې چې دا پوښه خلاصېږي یو ځل یې وغواړي، بیا هلته له هغه وروسته په عادي ډول خلاصېږي.
+mv_body_title = د پیغام متن
+mv_col_format = بڼه
+mv_col_name = نوم
+mv_col_size = اندازه
+mv_format_unknown = نامعلوم
+mv_size_unknown = نامعلومه اندازه
+na_account_settings = د حساب او پېژندنو امستنې
+na_disable_account = حساب غیرفعالول
+na_edit_signature = لاسلیک سمول
+na_message_filters = د پیغام چاڼګرونه
+na_mute_account = حساب غلی کول
+na_pause_auto_check = اتومات کتنه درول
+na_remove_account = حساب لرې کول
+na_set_default = د ډیفالټ حساب په توګه ټاکل
+no_offline_copy = د %s لپاره آفلاین کاپي نشته. دا په آنلاین وخت کې خلاص کړئ، یا فایل، آفلاین، همدا اوس همغږي کول وکاروئ.
+perm_delete_confirm = {msg} دا زباله‌دان پرېږدي او نه شي بېرته کېدای.
+perm_delete_many = {count} پیغامونه د تل لپاره ړنګ شي؟
+perm_delete_one = {count} پیغام د تل لپاره ړنګ شي؟
+preset_note_apple = Apple یو د اپ ځانګړی پټنوم غواړي.
+preset_note_fastmail = Fastmail د اپ پټنوم غواړي.
+preset_note_google = Google د اپ پټنوم یا OAuth2 غواړي، نه ستاسو عادي پټنوم.
+preset_note_proton = ProtonMail غواړي چې ProtonMail Bridge اپ په ځای کې چلېږي.
+preset_note_yahoo = Yahoo د اپ پټنوم غواړي.
+priv_phishing_not_loaded = د فشینګ لیست: تر اوسه بار شوی نه دی. دا لومړی ځل بارېږي کله چې دا قاعدې فعالې وي او ZBox آنلاین وي.
+priv_phishing_prefix = د فشینګ لیست:
+priv_status_unavailable = د بندیز لیست حالت شتون نه لري.
+rdr_load_failed = پیغام نه شو بارېدلی.\n\n{message}
+rdr_loading = پیغام بارېږي...
+rdr_select_message = دلته د لوستلو لپاره یو پیغام وټاکئ.
+set_autosave_off = بند — د لاسي خوندي کولو لپاره مسوده خوندي کول (Ctrl+S) وکاروئ
+set_autosave_seconds = هر {seconds} ثانیې
+set_no_unlock = د ننوتلو کیلي یا امنیتي کیلي دلته د کارونې وړ نه ده
+set_purge_days = د {days} ورځو وروسته
+set_purge_off = بند — زباله‌دان او سپیم هېڅکله په اتومات ډول نه پاکېږي
+set_purge_one_day = د ۱ ورځې وروسته
+set_val_seconds = {seconds} ثانیې
+set_val_one_second = ۱ ثانیه
+set_silence_off = بند
+set_announce_wait = د کیلۍ انتظار کوي
+set_autosave_minutes = هر {minutes} دقیقې
+set_autosave_one_minute = هره دقیقه
+set_rt_bundled_installed = ځای پر ځای چلښت: نصب شوی.
+set_rt_bundled_many = ځای پر ځای چلښت: %s نصب شوی.
+set_rt_bundled_none = ځای پر ځای چلښت: هیڅ نصب شوی نه دی، نو ZBox د سیستم چلښت کاروي.
+set_rt_bundled_unknown = ځای پر ځای چلښت: نه شو ټاکل کېدای.
+set_rt_bundled_ver = ځای پر ځای چلښت: %s بڼه نصب شوې.
+set_rt_system_unknown = د سیستم چلښت: بڼه نه شوه ټاکل کېدای.
+set_rt_system_ver = د سیستم چلښت: %s بڼه.
+set_unlock_many = دلته %d د خلاصولو لارې د کارونې وړ دي
+set_unlock_unreadable = د خلاصولو لارې نه شوې لوستل کېدای
+sig_tab_formatted = بڼه شوی
+sig_tab_source = د HTML سرچینه
+srch_all_accounts = ټول حسابونه
+srch_all_folders = ټولې پوښې
+tab_mail = پیغام
+tab_new_message = نوی پیغام
+tab_saved_message = خوندي شوی پیغام
+title_copy_to_err = کاپي کول
+title_mark_message = پیغام نښه کول
+title_unsent_message = نه لېږل شوی پیغام
+tree_unified_root = یو شوې پوښې
+unlock_kind_passkey = د ننوتلو کیلي (Windows Hello)
+unlock_kind_security_key = امنیتي کیلي
+unlock_prompt_message = Windows له تاسو تایید غواړي. د هغه پوښتنې ته د Windows Hello، PIN یا خپلې امنیتي کیلي سره ځواب ورکړئ. دا کړکۍ پخپله بندېږي کله چې Windows بشپړ شي.
+unlock_prompt_title = د Windows امنیت
+unlock_registering = د خلاصولو دا لار ثبتېږي
+unlock_the_passkey = د ننوتلو کیلي
+unlock_the_security_key = امنیتي کیلي
+wildcard_eml = د برېښنالیک فایلونه (*.eml)|*.eml|ټول فایلونه (*.*)|*.*
+wildcard_export = د ZBox صادرات (*.json)|*.json
+wiz_not_supported = نه ملاتړ کېږي: {name}. {note} دا حساب په ZBox کې نه شي ورزیاتېدلی.
+stock_apply = &پلي کول
+stock_cancel = لغوه کول
+stock_close = &بندول
+stock_help = &مرسته
+stock_no = &نه
+stock_ok = OK
+stock_yes = &هو
+wiz_btn_back = &< شاته
+wiz_btn_finish = &پای ته رسول
+wiz_btn_next = &بل >
+acct_unsaved_q = پدې حساب کې بدلونونه خوندي شي؟
+btn_save = &خوندي کول
+spell_add_to_dictionary = &قاموس ته ورزیاتول
+spell_no_suggestions = هیڅ وړاندیز نشته
+title_signature_for = لاسلیک: {account}
+title_mark_folder_read = پوښه د لوستل شوې په توګه نښه کول
+title_update_available = د ZBox تازه کول
+update_available = ZBox {new} شتون لري. تاسو {current} لرئ.
+upd_notes_label = &د خپرونې یادښتونه:
+upd_no_notes = د خپرونې یادښتونه نشته.
+upd_notes_name = د خپرونې یادښتونه
+upd_update_now = &هو، همدا اوس تازه کول
+upd_remind_later = &وروسته راپه یاد کړئ
+title_update_download = د ZBox تازه کول ډاونلوډ کېږي
+upd_downloading = ZBox {version} ډاونلوډ کېږي...
+upd_progress_name = د ډاونلوډ پرمختګ
+upd_cancel = &لغوه کول
+upd_cancelling = لغوه کېږي...
+set_updates_label = تازه کول:
+set_update_auto = &تازه کولو لپاره په اتومات ډول کتل
+set_update_mode_label = کله چې تازه کول وموندل شي:
+set_update_ask = &له ما پوښتل
+set_update_silent = &په خاموشۍ ډاونلوډ او نصبول
+set_update_note = ZBox په ورځ کې ډېر تر ډېره یو ځل په GitHub کې د نوې خپرونې لپاره کتي، یوازې کله چې بې کاره وي، او یوازې خپل د بڼې شمېره لېږي. له ما پوښتل نوې بڼه او د خپرونې یادښتونه د هو، همدا اوس تازه کول او وروسته راپه یاد کړئ سره ښیي. په خاموشۍ ډاونلوډ او نصبول تازه کول په بې کاره وخت کې راوړي او کله چې بل ځل له ZBox څخه بشپړ ووځئ یې نصبوي، هېڅکله پداسې حال کې چې تاسو کار کوئ. تازه کول یوازې د ZBox خپل پروګرام فایلونه بدلوي: ستاسو حسابونه، پټنومونه، امستنې، پیغامونه، لاګونه، د غږ تمونه او هره ژبه چې تاسو ورزیاته کړې هېڅکله نه لمس کېږي، او پخوانۍ بڼه ساتل کېږي او پخپله بېرته راځي که نوې پیل نه شي. مرسته، تازه کول هم د لاسي تازه کولو لپاره همدا اوس د تازه کولو لپاره کتل او د خپرونو پاڼه لري.
+set_update_check_now = &همدا اوس کتل
+mv_attachment_button = {filename} ({format})
+att_open = خلاصول
+att_save = خوندي کول...
+att_save_all = ټولې ضمیمې خوندي کول
+title_save_attachment = ضمیمه خوندي کول
+title_full_headers = بشپړ سرلیکونه
+hdr_copy_all = ټول کاپي کول
+acct_identity_own_signature = خپل لاسلیک کارول
+acct_identity_own_reply_to = خپل د ځواب پته کارول
+acct_identity_reply_to = د ځواب پته
+acct_identity_always_cc = تل دې پتو ته Cc ورکول
+acct_identity_cc = Cc پتې
+acct_identity_always_bcc = تل دې پتو ته Bcc ورکول
+acct_identity_bcc = Bcc پتې
+acct_identity_own_folders = خپلې مسودې او لیږل شوي پوښې کارول
+acct_identity_drafts = د مسودو پوښه
+acct_identity_sent = د لیږل شویو پوښه
+acct_identity_own_smtp = خپل وتونکی سرور کارول
+acct_identity_smtp_login = د وتونکي ننوتلو نوم
+acct_identity_smtp_password = د وتونکي پټنوم
+acct_identity_test_smtp = &وتونکی سرور ازمایل
+acct_identity_note_smtp = د ننوتلو نوم تش پرېږدئ چې د دې پېژندنې د برېښنالیک پتې سره ننوځئ. لېږل شوې کاپي لا هم د دې حساب لیږل شویو پوښې ته ځي، یا د دې پېژندنې خپلې لیږل شویو پوښې ته که یې ولري.
+identity_field_required = {field} ډک کړئ، یا د هغې بکس بې نښې کړئ.
+identity_field_invalid = {field} داسې پته لري چې سمه نه ده.
+identity_folders_required = د مسودو پوښه، د لیږل شویو پوښه یا دواړه وټاکئ، یا د هغوی بکس بې نښې کړئ.
+identity_password_required = د وتونکي پټنوم ولیکئ.
+identity_smtp_testing = وتونکی سرور ازمایل کېږي.
+identity_smtp_ok = وتونکي سرور ننوتل ومنل.
+identity_smtp_failed = د وتونکي سرور ازمایښت ناکام شو.\n\n{error}
+set_bare_keys_note_move = M او C د ټاکل شوو پیغامونو لپاره د لېږدولو او کاپي کولو پوښو مېنو خلاصوي، او Shift+M یو بکس خلاصوي چې په کې د پوښې د نوم یوه برخه ولیکئ چې هلته یې ولېږدوئ. دا بندول M او C هم بېرته د لومړي توري ناوبرۍ ته راګرځوي.
+folder_search_filter = د پوښې نوم لري
+folder_search_list = سمون خوړونکې پوښې
+folder_search_no_match = هیڅ پوښه د دې نوم سره سمون نه خوري.
+wiz_signin_method = د ننوتلو لار
+wiz_method_password = پټنوم
+wiz_method_microsoft = Microsoft حساب (Outlook.com، Hotmail، Live، Microsoft 365)
+wiz_ms_servers = د Microsoft ننوتل. د Outlook.com، Hotmail، Live او Microsoft 365 د سرور امستنې ډکې شوې.
+wiz_welcome_notice = Gmail. ستاسو عادي Google پټنوم به رد شي، خو د اپ پټنوم کار کوي. دوه ګامي تصدیق باید لومړی فعال وي. لاندې تڼۍ د Google لارښوونې خلاصوي.\n\nOutlook.com، Hotmail، Live او Microsoft 365. دا ستاسو د Microsoft حساب سره ننوځي. د ننوتلو پاڼه کې، Microsoft حساب وټاکئ، بیا په براوزر یا کوډ سره ننوځئ.\n\nنور چمتو کوونکي. عادي پټنوم یا د اپ پټنوم معمولاً کار کوي، او ستاسو د چمتو کوونکي د مرستې پاڼې د سرور امستنې لیست کوي.
+preset_note_outlook = د Outlook.com، Hotmail، Live او MSN حسابونه د Microsoft حساب سره ننوځي. د ننوتلو پاڼه کې د ننوتلو د لارې په توګه Microsoft حساب وټاکئ.
+ms_status_name = د Microsoft د ننوتلو حالت
+ms_browser_button = &په براوزر ننوتل
+ms_code_button = &په کوډ ننوتل
+ms_copy_code = &کوډ کاپي کول
+ms_open_page = &د ننوتلو پاڼه خلاصول
+ms_stop = &انتظار درول
+ms_not_configured = د Microsoft ننوتل د ZBox پدې کاپي کې نه دی جوړ شوی.
+ms_not_signed_in = تر اوسه نه ننوتی. په خپل براوزر یا په هر وسیله کې په کوډ ننوځئ.
+ms_signed_in = د {address} په توګه ننوتلی.
+ms_signed_in_plain = ننوتلی.
+ms_needs_sign_in = د دې حساب لپاره د Microsoft ننوتل بیا اړین دی. په خپل براوزر یا په هر وسیله کې په کوډ ننوځئ.
+ms_reason_cancelled = ننوتل ودرول شو.
+ms_reason_timeout = په وخت کې هیڅ ځواب ونه رسېد.
+ms_reason_denied = لاسرسي ته اجازه ورنه کړل شوه.
+ms_reason_expired = کوډ پای ته ورسېد. نوی وغواړئ.
+ms_reason_network = Microsoft ته نه شو رسېدلی. اړیکه وګورئ او بیا هڅه وکړئ.
+ms_reason_server = Microsoft وویل: {detail}
+ms_page_done = ننوتل شو. تاسو کولای شئ دا پاڼه وتړئ او ZBox ته ستانه شئ.
+ms_page_failed = ننوتل بشپړ نه شو. د جزیاتو لپاره ZBox ته ستانه شئ.
+ms_browser_waiting = ستاسو براوزر د Microsoft د ننوتلو پاڼه ښیي. هلته ننوتل بشپړ کړئ، بیا ZBox ته راشئ.
+ms_code_asking = له Microsoft څخه د ننوتلو کوډ غوښتل کېږي...
+ms_code_waiting = په هره وسیله کې {address} خلاص کړئ او {code} کوډ ولیکئ. ZBox دلته انتظار کوي تر هغه چې تاسو ننوتل بشپړ کړئ.
+ms_failed = ننوتل بشپړ نه شو. {reason}
+ms_code_copied = کوډ کاپي شو.
+offline_inbox_only = یوازې راغلي پیغامونه او آرشیف د آفلاین کارونې لپاره ساتل کېږي. د {folder} د خلاصولو لپاره آنلاین شئ.
+block_sender_rule_name = {sender} بندول
+title_block_sender = دا لیږونکی بندول
+title_unblock_sender = د دې لیږونکي بندیز لرې کول
+set_clear_inbox_cache = له راغلو پیغامونو څخه د لرې کېدو پر مهال د پیغام کېش پاکول
+set_clear_inbox_cache_note = کله چې فعال وي، د پیغام آفلاین کاپي او خوندي شوی متن سمدلاسه ړنګېږي کله چې پیغام له راغلو پیغامونو څخه ووځي، همداراز کله چې ړنګ شوی وي یا بل ځای ته لېږدول شوی وي، لکه په ستاسو تلیفون کې، ترڅو هغه هلته ونه ښکاري چېرته چې نور نه وي. یوازې راغلي پیغامونه دا فایلونه ساتي؛ هره بله پوښه تل له سرور څخه لوستل کېږي.
+empty_trash_all_confirm = د ټولو حسابونو لپاره په زباله‌دان کې ټول پیغامونه د تل لپاره ړنګ شي؟\n\nدا نه شي بېرته کېدای.
+envlist_col_recipient = ترلاسه کوونکی
+envlist_col_correspondents = مکاتبه کوونکي
+envlist_col_received = ترلاسه شوی
+envlist_col_size = اندازه
+envlist_col_attachments = ضمیمې
+envlist_col_priority = لومړیتوب
+envlist_col_junk_status = د سپیم حالت
+envlist_attachment = ضمیمې
+envlist_priority_highest = تر ټولو لوړ
+envlist_priority_high = لوړ
+envlist_priority_low = ټیټ
+envlist_priority_lowest = تر ټولو ټیټ
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = د پیغام په لیست کې د کالم سرلیکونه ښودل
+pgp_title = د OpenPGP د کیلیو مدیر
+smime_title = د S/MIME د سندونو مدیر
+smime_own = ستاسو سند
+smime_expired = پای ته رسېدلی
+smime_expires = پای ته رسېږي {date}
+smime_issuer = ورکوونکی
+smime_valid = له {start} څخه تر {end} پورې اعتبار لري
+smime_fingerprint = SHA-256 ګوتې نښه
+smime_own_key = ستاسو سند، د خپلې شخصي کیلي سره: هغه پیغام چې ورته کوډ شوی دلته لوستل کېدای شي.
+smime_unavailable = S/MIME د ZBox پدې کاپي کې شتون نه لري.
+smime_details = د سند جزیات
+smime_no_certs = تر اوسه هیڅ سند نشته. خپل .p12 یا .pfx فایل، یا د مکاتبه کوونکي سند وارد کړئ.
+smime_import_failed = سند نه شو واردېدلی: {error}
+smime_import_title = د سند فایل واردول
+smime_password_prompt = د {name} پټنوم ولیکئ.
+smime_password_title = د سند پټنوم
+smime_imported = سند وارد شو.
+smime_export_title = سند صادرول
+smime_exported = سند صادر شو.
+smime_delete_confirm = د {name} سند ړنګ شي؟ که ستاسو خپل وي، هغه پیغام چې ورته کوډ شوی نور دلته نه لوستل کېږي.
+smime_deleted = سند ړنګ شو.
+smime_rs_verified = دا پیغام یو باوري S/MIME لاسلیک لري له یو سند څخه چې د لیږونکي د پتې لپاره یو داسې چارواکي ورکړی چې Windows ورباندې باور لري.
+smime_rs_unverified = دا پیغام یو باوري S/MIME لاسلیک لري، خو د هغه سند د هغه چارواکي له خوا نه دی ورکړل شوی چې Windows ورباندې باور لري.
+smime_rs_mismatch = دا پیغام یو S/MIME لاسلیک لري، خو د لیږونکي پته د لاسلیک کوونکي له سند سره سمون نه خوري.
+smime_rs_technical = دا پیغام یو S/MIME لاسلیک لري، خو هغه له پیغام سره سمون نه خوري. پیغام کېدای شي وروسته له لاسلیک بدل شوی وي.
+smime_rs_signer = لاسلیک کوونکی: {name}
+smime_rs_issuer = سند ورکوونکی: {issuer}
+smime_rs_import_hint = د لوستلو لپاره خپل S/MIME سند د شخصي کیلي سره، یو .p12 یا .pfx فایل، په وسایل، د S/MIME د سندونو مدیر کې وارد کړئ.
+pgp_details = د کیلي ځانګړتیاوې
+pgp_generate = &نوی د کیلیو جوړه
+smime_import = &د سند فایل واردول
+smime_export = &سند صادرول
+smime_delete = &سند ړنګول
+pgp_import_file = &د OpenPGP کیلي فایل واردول
+pgp_import_file_title = د OpenPGP کیلي فایل واردول
+pgp_import_clip = &له کلیپبورډ څخه کیلۍ واردول
+pgp_export = &عامه کیلي فایل ته صادرول
+pgp_copy = &عامه کیلي کاپي کول
+pgp_backup = &د پټې کیلي بیک اپ فایل ته
+pgp_props = &د کیلي ځانګړتیاوې
+pgp_revoke = &کیلي لغوه کول
+pgp_delete = &کیلي ړنګول
+pgp_expires = پای ته رسېږي: {date}
+pgp_never_expires = هېڅکله پای ته نه رسېږي
+pgp_expired = پای ته رسېدلی
+pgp_revoked = لغوه شوی
+pgp_fingerprint = ګوتې نښه
+pgp_key_id = د کیلي ID
+pgp_created = جوړ شوی
+pgp_acceptance = ستاسو منل
+pgp_acc_rejected = نه، دا کیلي رد کړئ.
+pgp_acc_undecided = تر اوسه نه، شاید وروسته.
+pgp_acc_unverified = هو، خو ما نه دي تایید کړي چې دا سمه کیلي ده.
+pgp_acc_verified = هو، ما په شخصي ډول تایید کړی چې دا کیلي سمه ګوتې نښه لري.
+pgp_personal_no = نه، دا د زما د شخصي کیلي په توګه مه کاروئ.
+pgp_personal_yes = هو، دا کیلي د شخصي کیلي په توګه وګڼئ.
+pgp_verify_hint = د کیلي ګوتې نښه د برېښنالیک پرته د یو بل خوندي اړیکې لارې په کارولو سره تایید کړئ چې ډاډ ترلاسه کړئ چې دا واقعاً د {addr} کیلي ده.
+pgp_gen_title = د OpenPGP کیلي جوړول
+pgp_gen_identity = پېژندنه
+pgp_gen_type = د کیلي ډول:
+pgp_gen_ecc = ECC (ایلیپټیک کرو)
+pgp_gen_expiry = د کیلي پای نیټه
+pgp_gen_no_expiry = کیلي پای ته نه رسېږي
+pgp_gen_button = کیلي جوړول
+pgp_gen_confirm = د {identity} لپاره عامه او پټه کیلي جوړه شي؟
+pgp_gen_progress = ستاسو نوې OpenPGP کیلي جوړېږي…
+pgp_gen_done = د OpenPGP کیلي په بریالیتوب جوړه شوه!
+pgp_gen_failed = د OpenPGP کیلي جوړول ناڅاپي ناکام شو
+pgp_import_none = هیڅ کیلي نه دي وارد شوې.
+pgp_import_done = د OpenPGP کیلۍ په بریالیتوب وارد شوې!
+pgp_passphrase_title = پټنوم عبارت ته اړتیا ده
+pgp_unlock_failed = کیلي، یا د کیلي ماتحت برخې، نه شوې خلاصېدلی.
+pgp_backup_title = د خپلې OpenPGP کیلي د بیک اپ لپاره پټنوم وټاکئ
+pgp_backup_message = هغه پټنوم چې تاسو دلته ټاکئ د OpenPGP پټې کیلي د بیک اپ فایل ساتي چې تاسو یې د جوړولو په حال کې یاست. تاسو باید دا پټنوم وټاکئ چې بیک اپ ته دوام ورکړئ.
+pgp_backup_pw = د پټې کیلي د بیک اپ پټنوم:
+pgp_backup_pw2 = د پټې کیلي د بیک اپ پټنوم (بیا):
+pgp_backup_done = پټه کیلي په بریالیتوب صادره شوه!
+pgp_export_done = عامه کیلي په بریالیتوب صادره شوه!
+pgp_copied = کیلۍ کلیپبورډ ته کاپي شوې
+pgp_revoke_done = کیلي په بریالیتوب لغوه شوه.
+pgp_personal = شخصي کیلي
+pgp_no_keys = تر اوسه هیڅ کیلۍ نشته. نوې د کیلیو جوړه جوړه کړئ یا یوه کیلي وارد کړئ.
+pgp_unavailable = OpenPGP د ZBox پدې کاپي کې شتون نه لري.
+pgp_gen_expires_3y = کیلي په ۳ کلونو کې پای ته رسېږي
+pgp_gen_no_identity = لومړی د برېښنالیک حساب ورزیات کړئ.
+pgp_import_confirm = دا کیلۍ وارد شي؟\n\n{keys}
+pgp_passphrase_prompt = د {name} لپاره د پټې کیلي پټنوم عبارت ولیکئ.
+pgp_clip_empty = کلیپبورډ هیڅ OpenPGP کیلي نه لري.
+pgp_pw_mismatch = دوه پټنومونه سره سمون نه خوري.
+pgp_backup_open = دا فایل د پټې کیلي بیک اپ دی. د هغه د بیک اپ پټنوم ولیکئ.
+pgp_revoke_confirm = د {name} کیلي لغوه شي؟ لغوه شوې کیلي هېڅکله بیا نه شي کارېدلی. لغوه شوې عامه کیلي شریکه کړئ چې نور یې کارول ودروي.
+pgp_delete_public_confirm = د {name} عامه کیلي ړنګه شي؟
+pgp_delete_secret_confirm = ستاسو شخصي کیلي {name} ړنګه شي؟ هغه پیغام چې ورته کوډ شوی هېڅکله بیا نه لوستل کېږي. که اړتیا درلودای شئ لومړی د پټې کیلي بیک اپ جوړ کړئ.
+pgp_select_key = لومړی یوه کیلي وټاکئ.
+pgp_save_failed = کیلۍ خوندي نه شوې: {error}
+pgp_publish = &خپرول
+pgp_publish_ok = عامه کیلي "{keyserver}" ته ولېږل شوه.
+pgp_publish_fail = ستاسو عامه کیلي "{keyserver}" ته نه شوه لېږل کېدای.
+pgp_publish_suggest = د کیلي سرور کې د عامې کیلي خپرول نورو ته اجازه ورکوي چې هغه ومومي.
+pgp_publish_question = اوس په {keyserver} کې خپره شي؟ سرور بیا {addresses} ته د تایید برېښنالیک لېږي. ستاسو پته هغه وخت د موندلو وړ کېږي چې د هغه لینک خلاص کړئ.
+pgp_publish_sent = {addresses} ته د تایید برېښنالیک ولېږل شو. په هغه کې لینک خلاص کړئ چې ستاسو کیلي د پتې په واسطه د موندلو وړ شي.
+pgp_publish_already = لا دمخه د {addresses} په واسطه د موندلو وړ ده.
+pgp_rs_no_sig = ډیجیټل لاسلیک نشته
+pgp_rs_no_sig_info = دا پیغام د لیږونکي ډیجیټل لاسلیک نه لري. د ډیجیټل لاسلیک نشتون پدې معنا دی چې پیغام کېدای شي د داسې چا له خوا لېږل شوی وي چې ځان دې برېښنالیک پتې لرونکی ښيي. دا هم امکان لري چې پیغام د شبکې له لارې د لېږدېدو پر مهال بدل شوی وي.
+pgp_rs_uncertain = ناڅرګند ډیجیټل لاسلیک
+pgp_rs_uncertain_date = ناڅرګند ډیجیټل لاسلیک - لاسلیک شوی په {date}
+pgp_rs_invalid = ناسم ډیجیټل لاسلیک
+pgp_rs_invalid_date = ناسم ډیجیټل لاسلیک - لاسلیک شوی په {date}
+pgp_rs_good = سم ډیجیټل لاسلیک
+pgp_rs_good_date = سم ډیجیټل لاسلیک - لاسلیک شوی په {date}
+pgp_rs_no_key = دا پیغام یو ډیجیټل لاسلیک لري، خو ناڅرګنده ده چې سم دی که نه. د لاسلیک د تایید لپاره، تاسو باید د لیږونکي د عامې کیلي یوه کاپي ترلاسه کړئ.
+pgp_rs_uid_mismatch = دا پیغام یو ډیجیټل لاسلیک لري، خو ناسمون وموندل شو. پیغام د داسې برېښنالیک پتې څخه لېږل شوی چې د لاسلیک کوونکي له عامې کیلي سره سمون نه خوري.
+pgp_rs_not_accepted = دا پیغام یو ډیجیټل لاسلیک لري، خو تاسو تر اوسه نه یاست پرېکړه کړې چې د لاسلیک کوونکي کیلي ستاسو لپاره د منلو وړ ده که نه.
+pgp_rs_rejected = دا پیغام یو ډیجیټل لاسلیک لري، خو تاسو مخکې پرېکړه کړې چې د لاسلیک کوونکي کیلي رد کړئ.
+pgp_rs_technical = دا پیغام یو ډیجیټل لاسلیک لري، خو یوه تخنیکي تېروتنه وموندل شوه. یا پیغام خراب شوی، یا د بل چا له خوا بدل شوی.
+pgp_rs_unverified = دا پیغام له یوې داسې کیلي څخه یو باوري ډیجیټل لاسلیک لري چې تاسو لا دمخه منلې. خو تاسو تر اوسه نه یاست تایید کړی چې کیلي واقعاً د لیږونکي ده.
+pgp_rs_verified = دا پیغام له یوې تایید شوې کیلي څخه یو باوري ډیجیټل لاسلیک لري.
+pgp_rs_own_key = دا پیغام ستاسو له شخصي کیلي څخه یو باوري ډیجیټل لاسلیک لري.
+pgp_rs_signer_id = د لاسلیک کوونکي د کیلي ID: {keyid}
+pgp_rs_decrypt_id = ستاسو د کوډ خلاصولو د کیلي ID: {keyid}
+pgp_rs_enc_none = پیغام کوډ شوی نه دی
+pgp_rs_enc_none_info = دا پیغام د لېږلو دمخه کوډ شوی نه و. هغه معلومات چې پرته له کوډ کولو د انټرنیټ له لارې لېږل کېږي نور خلک د لېږد پر مهال لیدلای شي.
+pgp_rs_enc_invalid = پیغام نه شي کوډ خلاصېدلی
+pgp_rs_enc_invalid_info = دا پیغام تاسو ته د لېږلو دمخه کوډ شوی و، خو کوډ یې نه شي خلاصېدلی.
+pgp_rs_enc_valid = پیغام کوډ شوی دی
+pgp_rs_enc_valid_info = دا پیغام تاسو ته د لېږلو دمخه کوډ شوی و. کوډ کول ډاډ ورکوي چې پیغام یوازې هغه ترلاسه کوونکي لوستلای شي چې ورته ټاکل شوی.
+pgp_rs_field = د پیغام امنیت
+pgp_rs_import = د OpenPGP کیلي واردول
+pgp_rs_open_to_unlock = د پټنوم عبارت د لیکلو لپاره پیغام خلاص کړئ.
+pgp_rs_reply_not_quoted = اصلي پیغام کوډ شوی و، نو متن یې دلته نقل نه شو.
+pgp_cm_encrypt = کوډ کول
+pgp_cm_sign = ډیجیټل لاسلیک کول
+pgp_e2e_title = له پای څخه تر پایه کوډ کول
+acct_e2e_button = &له پای څخه تر پایه کوډ کول...
+pgp_e2e_none = د دې پېژندنې لپاره OpenPGP مه کاروئ.
+pgp_e2e_disable = د نوو پیغامونو لپاره کوډ کول بندول
+pgp_e2e_enable = د نوو پیغامونو لپاره کوډ کول فعالول
+pgp_e2e_enable_info = تاسو به وکولای شئ د انفرادي پیغامونو لپاره کوډ کول بند کړئ.
+pgp_e2e_sign = نه کوډ شوي پیغامونه لاسلیک کول
+pgp_e2e_signing_info = ډیجیټل لاسلیک ترلاسه کوونکو ته اجازه ورکوي چې تایید کړي چې پیغام ستاسو له خوا لېږل شوی او منځپانګه یې نه ده بدله شوې. کوډ شوي پیغامونه تل په ډیفالټ ډول لاسلیک کېږي.
+pgp_e2e_autocrypt = د Autocrypt سره د مطابقت لپاره د OpenPGP عامه کیلۍ د برېښنالیک په سرلیکونو کې لېږل
+pgp_not_set_up = تاسو د {addr} څخه د پای څخه تر پایه کوډ شوي پیغامونو د لېږلو لپاره نه یاست جوړ شوی.
+pgp_cannot_encrypt = نه شي کوډ کولای
+pgp_do_you_accept = ایا دا کیلي د ډیجیټل لاسلیکونو د تایید او د پیغامونو د کوډ کولو لپاره منئ؟
+pgp_searching = لټول کېږي…
+pgp_no_key_found = موږ د ټاکل شوو لټون معیارونو سره سمه د کارونې وړ کومه کیلي ونه موندله.
+pgp_source_autocrypt = د Autocrypt سرلیک
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = د کیلي سرور
+pgp_discover = &کیلۍ آنلاین موندل
+pgp_cm_attach_key = زما عامه کیلي ضمیمه کول
+pgp_e2e_key_label = د {address} لپاره شخصي کیلي
+pgp_e2e_auto = اتومات: ستاسو د دې پتې لپاره شخصي کیلي
+pgp_e2e_no_key = ZBox د {address} لپاره شخصي OpenPGP کیلي نه لري. په وسایل، د OpenPGP د کیلیو مدیر کې یوه جوړه کړئ.
+pgp_e2e_new_messages = د نوو پیغامونو لپاره کوډ کول
+pgp_e2e_key_missing = کیلي {keyid}، ونه موندل شوه
+pgp_missing_keys = دا ترلاسه کوونکي د کارونې وړ، منل شوې کیلي نه لري:\n\n{addresses}\n\nپیغام نه شي کوډ شوی لېږل کېدای.
+pgp_send_unencrypted = &پرته له کوډ کولو لېږل
+pgp_collected_found = د دې ترلاسه کوونکو لپاره کیلۍ په هغه پیغامونو کې وموندل شوې چې هغوی تاسو ته لېږلي:
+pgp_lookup_q = د دې ترلاسه کوونکو لپاره کیلۍ آنلاین ولټول شي؟\n\n{addresses}\n\nدا د هغوی پتې keys.openpgp.org ته او د هغوی خپلو برېښنالیک ډومېنونو ته لېږي.
+pgp_found_online = آنلاین موندل شوې کیلۍ:
+pgp_source = سرچینه: {source}
+pgp_discover_prompt = یوه د برېښنالیک پته ولیکئ. ZBox د هغې د OpenPGP کیلۍ د هغې د برېښنالیک ډومین په Web Key Directory او keys.openpgp.org کې لټوي.
+pgp_discover_bad = یوه بشپړه د برېښنالیک پته ولیکئ، لکه name@example.com.
+pgp_keys_unreadable = د OpenPGP کیلۍ نه شوې خلاصېدلی: {error}
+pgp_rs_why_no_key = هغه پټه کیلي چې د دې پیغام د کوډ خلاصولو لپاره اړینه ده شتون نه لري.
+pgp_rs_why_unknown = پدې کوډ شوي پیغام کې نامعلومې ستونزې شته.
+pgp_rs_hidden_subject = کوډ شوی پیغام
+pgp_rs_why_passphrase = ستاسو د کیلي پټنوم عبارت نه دی لیکل شوی. د هغه د لیکلو لپاره پیغام بیا خلاص کړئ.
+pgp_rs_why_unavailable = OpenPGP د ZBox پدې کاپي کې شتون نه لري.
+pgp_rs_why_fetch = پیغام د کوډ خلاصولو لپاره له سرور څخه نه شو راوړل کېدای. بیا یې خلاص کړئ چې یو ځل بیا هڅه وکړئ.
+pgp_rs_import_hint = د لوستلو لپاره، د دې پیغام لپاره خپله پټه کیلي ZBox ته وارده کړئ.
+
+[errors]
+language_restart_failed = ZBox نه شو خپله بیا پیلېدلی:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = د {address} لپاره د برېښنالیک پروګرام نه شو خلاصېدلی.
+
+wizard_test_failed = اړیکه ناکامه شوه:\n\n{error}
+
+contacts_import_unreadable = دا فایل نه شو لوستل کېدای.\n\n{error}
+contacts_export_unwritable = دا فایل نه شو لیکل کېدای.\n\n{error}
+
+attach_unreadable = ضمیمه {path} نه شوه لوستل کېدای:\n{error}
+send_failed = پیغام نه شو لېږل کېدای.\n\n{error}
+draft_attach_unreadable = ضمیمه {path} نه شوه لوستل کېدای:\n{error}\n\nمسوده خوندي نه شوه.
+draft_save_failed = مسوده نه شوه خوندي کېدای.\n\n{error}
+
+clipboard_unavailable = کلیپبورډ نه شو خلاصېدلی.
+open_link_failed = ستاسو براوزر د دې لپاره نه شو خلاصېدلی:\n{url}
+
+master_password_mismatch = دوه نوي اصلي پټنوم بکسونه سره سمون نه خوري.
+master_password_required = یو اصلي پټنوم ولیکئ، یا لغوه کول وهئ.
+master_password_not_set = اصلي پټنوم نه شو ټاکل کېدای: {error}
+master_password_not_here = اصلي پټنوم له دې ځایه نه شي بدلېدای.
+
+attachment_save_failed = ضمیمه نه شوه خوندي کېدای.\n\n{error}
+attachments_save_failed = ضمیمې نه شوې خوندي کېدای.\n\n{error}
+print_failed = پیغام نه شو چاپېدلی. وګورئ چې چاپګر تنظیم شوی دی.
+print_preview_failed = د چاپ مخکتنه نه شوه خلاصېدلی. وګورئ چې چاپګر تنظیم شوی دی.
+
+related_search_failed = د اړوندو پیغامونو لټون نه شو کېدای.\n\n{error}
+search_failed = لټون ناکام شو.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox خپله د تنظیماتو پوښه ونه موندله، نو د خلاصولو لارې دلته نه شي اداره کېدای.
+shortcut_no_folder = ZBox خپله پوښه نه شوه ټاکلی، نو شارټکټ له دې ځایه نه شي جوړېدای.
+shortcut_failed_settings = د ډیسکټاپ شارټکټ نه شو جوړېدلی:\n\n{error}
+
+unlock_method_failed = {what} کار ونه کړ.\n\n{error}
+unlock_check_failed = اصلي پټنوم نه شو کتل کېدای.\n\n{error}
+unlock_password_wrong = دا اصلي پټنوم سم نه دی.
+unlock_add_failed = {what} نه شو ورزیاتېدلی.\n\n{error}
+unlock_passkey_setup_failed = د ننوتلو کیلي پدې کمپیوټر کې نه شوه جوړېدلی، نو هیڅ نه دي بدل شوي.\n\n{error}
+unlock_method_test_failed = دا لار کار ونه کړ.\n\n{error}
+
+account_list_unreadable = ZBox ستاسو د حسابونو لیست نه شو خلاصېدلی.\n\n{error}\n\nهیڅ حساب بار نه شو، او فایل نه دی بدل شوی، نو هیڅ نه دي ورک شوي. د حسابونو ورزیاتول، سمول او لرې کول رد کېږي تر هغه چې لوستل شي.
+account_list_no_accounts = ZBox ستاسو د حسابونو لیست پدې ناسته کې نه شو خلاصېدلی ({error})، نو د ټاکلو لپاره هیڅ حساب نشته. هیڅ نه دي ورک شوي او هیڅ نه دي بدل شوي. ZBox وتړئ او بیا یې پیل کړئ، او کله چې پوښتنه وشي خپل اصلي پټنوم ولیکئ.
+open_message_failed = پیغام نه شو خلاصېدلی.\n\n{error}
+filters_list_failed = په {folder} کې پیغامونه نه شول لیست کېدای.\n\n{error}
+filters_move_failed = چاڼ شوي پیغامونه نه شول لېږدېدلی.\n\n{error}
+cache_clear_failed = کېش نه شو پاکېدلی.\n\n{error}
+folder_create_failed = پوښه نه شوه جوړېدلی.\n\n{error}
+folder_rename_failed = د پوښې نوم نه شو بدلېدلی.\n\n{error}
+folder_delete_failed = پوښه نه شوه ړنګېدلی.\n\n{error}
+folder_subscribe_failed = پوښې ته ګډون نه شو کېدای.\n\n{error}
+folder_unsubscribe_failed = د پوښې ګډون نه شو لغوه کېدای.\n\n{error}
+saved_open_failed = فایل نه شو خلاصېدلی.\n\n{error}
+saved_parse_failed = دا فایل د برېښنالیک پیغام په توګه نه شو تحلیل کېدای.\n\n{error}
+save_file_failed = فایل نه شو خوندي کېدای.\n\n{error}
+save_fetch_failed = د خوندي کولو لپاره پیغام نه شو راوړل کېدای.\n\n{error}
+empty_trash_failed = زباله‌دان نه شو خالي کېدای.\n\n{error}
+empty_junk_failed = سپیم نه شو خالي کېدای.\n\n{error}
+export_write_failed = د صادرولو فایل نه شو لیکل کېدای.\n\n{error}
+import_read_failed = دا فایل د ZBox د صادراتو په توګه نه شو لوستل کېدای.\n\n{error}
+import_not_export = دا فایل د ZBox صادراتو ته نه ورته کېږي.\n\n{error}
+search_open_failed = دا پیغام نه شو خلاصېدلی.
+related_load_failed = دا پیغام نه شو بارېدلی.\n\n{error}
+reply_load_failed = هغه پیغام چې ځواب ورکول یې غواړئ نه شو بارېدلی.\n\n{error}
+forward_load_failed = هغه پیغام چې مخکې لېږل یې غواړئ نه شو بارېدلی.\n\n{error}
+action_failed = دا عمل نه شو بشپړېدلی.\n\n{error}
+undo_failed = {label} بېرته نه شو کېدای.\n\n{error}
+copy_failed = پیغام نه شو کاپي کېدای.\n\n{error}
+delete_failed = پیغام نه شو ړنګېدلی.\n\n{error}
+archive_failed = پیغام نه شو آرشیف کېدای.\n\n{error}
+master_password_not_changed = اصلي پټنوم نه شو بدلېدلی: {error}
+shortcut_failed_startup = د ډیسکټاپ شارټکټ نه شو جوړېدلی:\n\n{error}\n\nZBox به پیلېدو ته دوام ورکړي. تاسو کولای شئ وروسته له امستنو څخه بیا هڅه وکړئ.
+account_locked_action = ZBox نه شي کولای %s. د حسابونو لیست پدې ناسته کې نه شو خلاصېدلی (%s)، او هیڅ نه دي بدل شوي. ZBox وتړئ او بیا یې پیل کړئ، او که پوښتنه وشي خپل اصلي پټنوم ولیکئ.
+send_tls_mismatch = پیغام نه شو لېږل کېدای. وتونکي سرور پرته له کوډ کولو ځواب ورکړ، نو وتونکی کوډ کول د پورټ سره سمون نه خوري. په وسایل، د حساب او پېژندنو امستنو کې د 587 پورټ لپاره STARTTLS، یا د 465 پورټ لپاره SSL/TLS وکاروئ، بیا بیا ولېږئ.\n\n{error}
+mark_folder_read_failed = پوښه د لوستل شوې په توګه نه شوه نښه کېدای.\n\n{error}
+update_failed = تازه کول نه شو ډاونلوډېدلی، نو هیڅ نه دي بدل شوي.\n\n{error}
+update_rolled_back = تازه کول نه شو پیلېدلی، نو پخوانۍ بڼه بېرته راوړل شوه.
+attachment_open_failed = ضمیمه نه شوه خلاصېدلی.\n\n{error}
+headers_failed = د پیغام سرلیکونه نه شول بارېدلی.\n\n{error}
+wizard_ms_sign_in_first = د دوام دمخه له Microsoft سره ننوځئ. پدې پاڼه کې د ننوتلو له دوو تڼیو یوه وکاروئ.
+wizard_provider_unsupported = ZBox نه شي کولای دې چمتو کوونکي ته ننوځي. پدې پاڼه کې یادښت دلیل وايي. بېرته لاړ شئ او بله د برېښنالیک پته وکاروئ، یا لغوه کړئ.
+acct_ms_sign_in_first = د خوندي کولو دمخه له Microsoft سره ننوځئ، یا د ننوتلو د لارې په توګه پټنوم وټاکئ.
+ms_sign_in_again = د {account} لپاره د Microsoft ننوتل بیا اړین دی. د حساب او پېژندنو امستنې خلاصې کړئ او هلته ننوځئ.
+graph_pgp_too_large = دا کوډ شوی یا لاسلیک شوی پیغام د هغه اندازې څخه لوی دی چې Microsoft د داسې پیغام لپاره اجازه ورکوي، شاوخوا ۳ MB. کوچنۍ ضمیمې ولېږئ، یا د دې پیغام لپاره کوډ کول او ډیجیټل لاسلیک کول بند کړئ.
+empty_trash_all_failed = د دې لپاره زباله‌دان نه شو خالي کېدای: {accounts}
+
+[help]

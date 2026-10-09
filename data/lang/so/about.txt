@@ -1,0 +1,16 @@
+ZBox
+Waxaa sameeyay Harith Alhamdani
+
+ZBox waa barnaamij iimeyl oo la qaadan karo, dhakhso badan, ammaan ah oo gebi ahaanba la heli karo. Waa bilaash isticmaal shakhsi ahaaneed, wuxuuna fududahay agabka nidaamka. Waxaa loo sameeyay in uu siiyo qof kasta oo isticmaala, oo ay ku jiraan isticmaalayaasha indhoolayaasha iyo kuwa aragga yar, beddel run ah oo hawlo badan leh oo ka soo horjeeda doorashooyinka culus oo gaabiya ee badanaa jira. Hoosta daboolka, ZBox waxaa shido barnaamijka iimeylka ee xoogga leh ee Himalaya CLI.
+
+Qarsoodi iyo amni
+ZBox wuxuu la yimaadaa xannibaha raacayaasha iyo xayeysiisyada (shidan caadi ahaan), iyo xeerar boosto spam ikhtiyaari ah iyo hubiye xiriiriyayaasha phishing-ka. Si loo qaadan karo oo ammaan ah, wuxuu isticmaalaa ilaalinta Erayga sirta ee ugu weyn: haddii galka barnaamijka loo koobiyeeyo kombiyuutar kale erayga sirtan la'aantiis, helitaanka akoonnadaada isku xiran waa la xannibaa. Haddii aad qorsheyneyso inaad ZBox u guurto mashiin cusub, hubi inaad marka hore halkan ku dejiso eray sir oo weyn. Wuxuu sidoo kale taageeraa furayaasha gelitaanka ee Windows Hello (faraha, PIN, ama aqoonsiga wajiga) iyo furayaasha amniga ee qalabka casriga ah.
+
+Isticmaal la yaqaan
+Si ay u noqoto isbeddelka laga bilaabo barnaamijyada iimeylka kale mid siman, ZBox wuxuu leeyahay gaaban-furayaal kiiboodh oo saaxiibtinimo leh oo dabacsan. Gaaban-furayaal badan ayaa inta badan sameeya isla tallaabo; tusaale ahaan, Alt+S iyo Ctrl+Enter labadaba waxay diraan fariin. Waxaad arki kartaa liiska oo dhan Caawimaad, Gaaban-furayaasha kiiboodhka hoostiisa.
+
+Habaynta akoonka
+Akoonnada Outlook.com, Hotmail, Live iyo Microsoft 365 waxay ku gelaan akoonkaaga Microsoft, browser-kaaga ama koodh. Waxaad xiri kartaa akoonkaaga Gmail adigoo abuuraya Eray sir barnaamij halkii aad isticmaali lahayd erayga sirta ee caadiga ah (eeg badhanka hoose si aad u hesho tilmaamo).
+
+Shatiyo iyo mahadnaq
+Taabo Eeg shatiga hoose si aad u akhrido shatiga ZBox oo aad u aragto qaybaha dhinac saddexaad ee suurtagalka ka dhigay. Waxaa ka mid ah Himalaya, liisaska xannibaadda StevenBlack hosts iyo EasyPrivacy, liiska Phishing.Database, iyo (nuqul la dhisay) Python, wxPython, imapclient, pywin32, keyring, iyo accessible_output2 oo leh maktabadaha macmiilka ee akhriyaha shaashadda.

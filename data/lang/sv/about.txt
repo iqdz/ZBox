@@ -1,0 +1,16 @@
+ZBox
+Av Harith Alhamdani
+
+ZBox är en bärbar, snabb, säker och helt tillgänglig e-postklient. Gratis för personligt bruk och snål med systemresurserna. Den skapades för att ge alla som använder den, även blinda och synskadade användare, ett verkligt, funktionsrikt alternativ till de tungrodda och sega program som vanligtvis finns att tillgå. Under huven drivs ZBox av den robusta e-postklienten Himalaya CLI.
+
+Sekretess och säkerhet
+ZBox levereras med en spårnings- och annonsblockerare (aktiverad som standard), tillsammans med valfria skräpregler och en kontroll av nätfiskelänkar. För säker portabilitet används skydd med huvudlösenord: om appens mapp kopieras till en annan dator utan det här lösenordet blockeras åtkomsten till dina länkade konton. Om du tänker flytta ZBox till en ny dator ska du först ange ett huvudlösenord här. Det stöder också åtkomstnycklar med Windows Hello (fingeravtryck, PIN-kod eller ansiktsigenkänning) och moderna säkerhetsnycklar.
+
+Välbekant användning
+För att göra övergången från andra e-postklienter smidig har ZBox vänliga, flexibla snabbtangenter. Flera genvägar utför ofta samma åtgärd; till exempel skickar både Alt+S och Ctrl+Enter ett meddelande. Du kan se hela listan under Hjälp, Tangentbordsgenvägar.
+
+Kontoinställning
+Konton på Outlook.com, Hotmail, Live och Microsoft 365 loggar in med ditt Microsoft-konto, i din webbläsare eller med en kod. Du kan länka ditt Gmail-konto genom att skapa ett applösenord i stället för att använda ditt vanliga lösenord (se knappen nedan för instruktioner).
+
+Licenser och tack
+Tryck på Visa licens nedan för att läsa ZBox licens och se de tredjepartskomponenter som gör det möjligt. Dessa omfattar Himalaya, blockeringslistorna StevenBlack hosts och EasyPrivacy, listan Phishing.Database samt (i en byggd kopia) Python, wxPython, imapclient, pywin32, keyring och accessible_output2 med dess klientbibliotek för skärmläsare.

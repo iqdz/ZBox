@@ -1,0 +1,16 @@
+ZBox
+Na Harith Alhamdani
+
+ZBox ni programu ya barua pepe inayobebeka, ya haraka, salama na inayopatikana kikamilifu kwa wote. Ni bure kwa matumizi binafsi na nyepesi kwa rasilimali za mfumo. Iliundwa ili kuwapa wote wanaoitumia, wakiwemo watumiaji wasioona na wenye uoni hafifu, mbadala halisi, wenye vipengele vingi, wa programu nzito na polepole ambazo kwa kawaida hupatikana. Chini ya kifuniko, ZBox inaendeshwa na programu thabiti ya barua pepe ya Himalaya CLI.
+
+Faragha na usalama
+ZBox huja na kizuizi cha vifuatiliaji na matangazo (kimewashwa kwa chaguo-msingi), pamoja na kanuni za hiari za barua taka na kikagua viungo vya ulaghai wa mtandaoni. Kwa ubebekaji salama, hutumia ulinzi wa nenosiri kuu: folda ya programu ikinakiliwa kwenye kompyuta nyingine bila nenosiri hili, ufikiaji wa akaunti zako zilizounganishwa unazuiwa. Ikiwa unapanga kuhamishia ZBox kwenye kompyuta mpya, hakikisha unaweka nenosiri kuu hapa kwanza. Pia inaunga mkono funguo za kufikia za Windows Hello (alama ya kidole, PIN au utambuzi wa uso) na funguo za kisasa za usalama za vifaa.
+
+Matumizi yanayofahamika
+Ili kurahisisha mpito kutoka programu nyingine za barua pepe, ZBox ina vitufe vya mkato vya kirafiki na vinavyobadilika. Njia kadhaa za mkato mara nyingi hufanya kitendo kimoja; kwa mfano, Alt+S na Ctrl+Enter vyote hutuma ujumbe. Unaweza kuona orodha kamili chini ya Msaada, Njia za mkato za kibodi.
+
+Usanidi wa akaunti
+Akaunti za Outlook.com, Hotmail, Live na Microsoft 365 huingia kwa akaunti yako ya Microsoft, kwenye kivinjari chako au kwa msimbo. Unaweza kuunganisha akaunti yako ya Gmail kwa kutengeneza nenosiri la programu badala ya kutumia nenosiri lako la kawaida (tazama kitufe kilicho hapa chini kwa maelekezo).
+
+Leseni na shukrani
+Bonyeza Tazama leseni hapa chini ili kusoma leseni ya ZBox na kuona vipengele vya wengine vinavyoiwezesha. Hivi ni pamoja na Himalaya, orodha za kuzuia za StevenBlack hosts na EasyPrivacy, orodha ya Phishing.Database, na (kwenye nakala iliyojengwa) Python, wxPython, imapclient, pywin32, keyring na accessible_output2 pamoja na maktaba zake za wateja wa visoma skrini.

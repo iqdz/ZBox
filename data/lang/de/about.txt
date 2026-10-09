@@ -1,7 +1,7 @@
 ZBox
 Von Harith Alhamdani
 
-ZBox ist ein portabler, flotter, sicherer und vollständig barrierefreier E-Mail-Client. Kostenlos für den privaten Gebrauch und sparsam mit Systemressourcen. Er wurde geschaffen, um blinden und sehbehinderten Menschen eine echte, funktionsreiche Alternative zu den aufgeblähten und trägen Programmen zu bieten, die sonst meist verfügbar sind. Unter der Haube arbeitet ZBox mit dem robusten E-Mail-Client Himalaya CLI.
+ZBox ist ein portabler, flotter, sicherer und vollständig barrierefreier E-Mail-Client. Kostenlos für den privaten Gebrauch und sparsam mit Systemressourcen. Er wurde geschaffen, um allen, die ihn nutzen, auch blinden und sehbehinderten Menschen, eine echte, funktionsreiche Alternative zu den aufgeblähten und trägen Programmen zu bieten, die sonst meist verfügbar sind. Unter der Haube arbeitet ZBox mit dem robusten E-Mail-Client Himalaya CLI.
 
 Datenschutz und Sicherheit
 ZBox bringt einen Tracker- und Werbeblocker mit (standardmäßig aktiviert), dazu optionale Junk-Mail-Regeln und eine Prüfung auf Phishing-Links. Für sichere Portabilität nutzt es den Schutz durch ein Hauptpasswort: Wird der App-Ordner ohne dieses Kennwort auf einen anderen Computer kopiert, ist der Zugriff auf Ihre verknüpften Konten gesperrt. Wenn Sie ZBox auf ein neues Gerät umziehen möchten, legen Sie hier zuerst ein Hauptpasswort fest. Außerdem unterstützt es Windows Hello-Passkeys (Fingerabdruck, PIN oder Gesichtserkennung) und moderne Hardware-Sicherheitsschlüssel.

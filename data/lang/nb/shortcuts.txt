@@ -1,0 +1,103 @@
+Generelt
+F6: Bytt fokus mellom rutene
+Ctrl+Tab: Neste fane
+Ctrl+Shift+Tab: Forrige fane
+Ctrl+W eller Ctrl+F4: Lukk gjeldende fane
+Escape: Skjul en utvidet tråd hvis meldingslisten har fokus og en er utvidet; ellers lukk gjeldende fane (melding, lagret melding eller en usendt melding under skriving -- spør først hvis den har ulagrede endringer)
+Programtasten eller Shift+F10: Åpne hurtigmenyen for det valgte elementet i listen eller treet
+F1: Tastatursnarveier, denne siden
+Ctrl+Shift+Q: Avslutt -- avslutter alltid ZBox helt, selv når "Lukk til systemfeltet" er på i Innstillinger (vinduets Lukk-knapp, Alt+F4 og Ctrl+W på fanen E-post skjuler i stedet til systemfeltet når den innstillingen er aktivert; systemfeltikonets eget Avslutt avslutter også alltid helt)
+Ctrl+Shift+Delete: Tøm hurtigbufferen for frakoblede meldinger -- bare ZBox sine lokale kopier, ingenting på noen server (også en knapp i Verktøy > Konfigurasjon av opprydding i hurtigbuffer)
+
+E-post
+Ctrl+N: Ny melding
+Ctrl+Shift+N: Ny e-postkonto
+F5: Hent ny e-post for gjeldende konto
+Shift+F5: Hent ny e-post for alle kontoer
+Ctrl+Shift+J: Hopp til meldingslisten i Innboks
+Ctrl+Y: Gå til mappelisten
+Enter på en lukket konto eller mappe i mappelisten: åpne den, som Høyrepil
+Ctrl+Shift+B: Adressebok
+Ctrl+Shift+F: Søk i meldinger
+Ctrl+Shift+T: Vis relaterte meldinger
+
+Meldingslisten
+Delete, Shift+Delete, Arkiver, Stjernemerk/Fjern stjernemerking, Merk som søppelpost/ikke søppelpost, Flytt til og Kopier til gjelder alle meldinger i en tråd når de brukes på en SKJULT trådrad -- utvid tråden først (Høyrepil eller Enter/Mellomrom) for i stedet å handle på én melding i den
+Ctrl+A: Merk alle meldinger
+Ctrl+Shift+L: Last flere meldinger
+Delete: Flytt meldinger til søppelkassen
+Shift+Delete: Slett meldinger permanent
+Ctrl+Z: Angre den siste slettingen, arkiveringen, merkingen som søppelpost eller merkingen som ikke søppelpost
+S: Stjernemerk/fjern stjernemerking på de valgte meldingene
+A: Arkiver de valgte meldingene
+J: Merk de valgte meldingene som søppelpost
+Shift+J: Merk de valgte meldingene som ikke søppelpost
+W: Overvåk tråd -- bytt om tråden markeringen er en del av, overvåkes (også Melding-menyen og høyreklikk)
+K: Ignorer tråd -- bytt om den tråden ignoreres (også Melding-menyen og høyreklikk)
+M: Flytt de valgte meldingene -- åpner menyen Flytt til med mapper
+Shift+M: Flytt de valgte meldingene ved å skrive en del av et mappenavn
+C: Kopier de valgte meldingene -- åpner menyen Kopier til med mapper
+S, A, J, W og K ovenfor er på som standard og kan slås av i Innstillinger (ellers har de forrang over meldingslistens egen førstebokstavnavigasjon)
+M, Shift+M og C ovenfor følger den samme innstillingen
+Enter eller Mellomrom på en skjult tråd: åpner den nyeste uleste meldingen i den tråden (den nyeste meldingen hvis hele tråden er lest) som én enkelt melding, i én fane -- deretter blar Ctrl+Shift+Page Down og Ctrl+Shift+Page Up gjennom resten av tråden uten noen gang å åpne en andre melding. På en vanlig melding åpnes den som vanlig
+Høyrepil på en skjult tråd: viser meldingene som en liste, uten å åpne noen av dem -- åpne én om gangen derfra med deres egen Enter eller Mellomrom
+Ctrl+Shift+O: Åpne melding i samtale -- hele tråden i én fane, som en liste over meldingene med teksten til den valgte under. Bruk piltastene gjennom listen for å lese dem én om gangen; Enter på en rad åpner den enkelte meldingen i sin egen fulle fane. Samme navn og tast som Thunderbirds egen kommando
+Venstrepil: skjul tråden markeringen for øyeblikket er inne i
+*: Utvid alle tråder (også Visning > Tråder); \: Skjul alle tråder (også Visning > Tråder)
+Visning > Tråder > Alle / Overvåkede tråder / Ignorerte tråder filtrerer hvilke tråder som vises -- å bytte tilbake til Alle bringer alltid tilbake hver melding; ingenting fjernes noen gang fra mappen av dette
+
+En åpen melding
+Alt+A: Arkiver denne meldingen -- bare mens teksten (Tekst eller HTML) faktisk har tastaturfokus; ellers beholder Alt+A sin vanlige betydning å åpne menyen Kontoer
+Ctrl+R: Svar
+Ctrl+Shift+R: Svar alle
+Ctrl+L: Videresend
+Ctrl+Delete eller Ctrl+D: Flytt denne meldingen til søppelkassen. Vanlig Delete tas ofte av skjermleseren mens en HTML-melding har fokus; Shift+Delete sletter permanent
+Ctrl+Shift+Page Down: Neste melding i denne tråden; Ctrl+Shift+Page Up: forrige. Erstatter gjeldende fane i stedet for å åpne en annen, så bare én melding er noen gang åpen. Ved den siste meldingen (eller den første, når man går oppover) sier den det og spør; å trykke på den samme tasten igjen lukker meldingen og avslutter tråden, og du havner tilbake i meldingslisten. (Ctrl+Page Up/Down lates være -- de bytter faner)
+Ctrl+B: Bytt meldingsvisning (Tekst/HTML)
+Ctrl+P: Skriv ut
+Ctrl+Shift+P: Forhåndsvis utskrift
+Ctrl+S: Lagre melding som
+Ctrl+U: Les opp avsenderens navn og adresse
+Ctrl+Shift+U: Les opp avsenderen og kopier adressen
+Ctrl+Shift+I: Vis eksternt innhold i denne meldingen
+Ctrl+Shift+=: Øk skriftstørrelsen for meldinger
+Ctrl+Shift+-: Reduser skriftstørrelsen for meldinger
+Ctrl+Shift+0: Tilbakestill skriftstørrelsen for meldinger
+
+Skrive en melding
+Ctrl+Enter eller Alt+S: Send
+Ctrl+S: Lagre utkast
+Ctrl+Shift+A: Legg ved fil
+Ctrl+Shift+S: Sett inn signaturen til kontoen i Fra
+Ctrl+Shift+V: Lim inn som sitat
+Ctrl+Shift+W: Ordtelling
+Ctrl+Shift+P: Forhåndsvis meldingen slik den vil bli sendt
+Escape, Ctrl+W eller Ctrl+F4: Lukk skrivefanen -- spør først hvis noe er ulagret, og tilbyr Lagre utkast, Forkast eller Fortsett å redigere
+Hver kommando nedenfor finnes også i menyen Skriv, som Alt+C åpner selv når fokus er inne i meldingsteksten
+
+Formatering under skriving
+Ctrl+B: Fet
+Ctrl+I: Kursiv
+Ctrl+Shift+X: Gjennomstreket
+Ctrl+Shift+8: Punktliste
+Ctrl+Shift+7: Nummerert liste
+Ctrl+Shift+9: Sitat
+Ctrl+Shift+6: Kode
+Ctrl+Alt+1: Overskrift
+Ctrl+K: Sett inn lenke
+Ctrl+Shift+K: Si hvilken formatering som gjelder der markøren står
+Ctrl+Shift+M: Åpne Format-menyen uansett hvor fokus er, også i meldingsteksten
+
+Stavekontroll under skriving
+Ctrl+Shift+F7: Kontroller stavingen
+Ctrl+Shift+F9: Gå til neste stavefeil
+Ctrl+Shift+F8: Legg til ordet den stoppet ved i ordlisten
+
+Samme tast to steder
+Ctrl+S: Lagre utkast under skriving, Lagre melding som i en åpen melding
+Ctrl+B: Fet under skriving, bytt mellom Tekst og HTML i en åpen melding
+Ctrl+Shift+P: Forhåndsvisning under skriving, Forhåndsvis utskrift i en åpen melding
+Alt+A: Arkiver, men bare mens en meldingstekst har tastaturfokus; alle andre steder åpner det menyen Kontoer
+
+Diagnostikk
+Ctrl+Shift+F12: Diagnostikk av hurtigtaster -- skriver en linje i feilsøkingsloggen for hver kombinasjon som trykkes i en skrivefane, slik at det kan bevises hva en tast faktisk nådde. Av som standard, og den samme tasten slår den av igjen; tilstanden sies høyt i begge tilfeller

@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Hausa
+code = ha
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = An aika saƙon.
+draft_saved = An adana daftarin.
+signature_inserted = An saka sa hannun.
+signature_none = Wannan asusun ba shi da sa hannu.
+signature_saved = An adana sa hannun.
+signature_not_saved = Ba a adana sa hannun ba.
+pasted_as_quotation = An liƙa a matsayin ƙaulin magana.
+clipboard_empty = Babu komai a allon kwafi.
+word_count = Kalmomi {words}, haruffa {characters}.
+report_copied = An kwafi rahoton.
+compose_tab_needed = Wannan umarnin yana buƙatar shafin rubutu.
+attach_file_instead = Ba a saka fayilolin da aka jefa a cikin rubutun saƙo. Yi amfani da Haɗa fayil don aika ɗaya.
+
+# Formatting in the message body
+formatting_here = Tsarin rubutu a nan: {formatting}.
+no_formatting_here = Babu tsarin rubutu a nan, rubutu na fili.
+
+# Spelling
+nothing_to_check = Babu abin dubawa.
+no_misspellings = Babu kuskuren rubutu.
+spelling_dictionary_unavailable = Ba a samun ƙamus ɗin duba rubutu.
+next_misspelling_first = Yi amfani da kuskuren rubutu na gaba tukuna.
+word_added = An ƙara {word} cikin ƙamus.
+word_not_added = Ba a iya ƙara {word} ba.
+corrections_applied_one = An yi gyara 1.
+corrections_applied_many = An yi gyare-gyare {count}.
+corrections_applied_partly = An yi gyare-gyare {applied} daga cikin {total}. An ƙi sauran; duba rajista.
+occurrences_replaced_one = An maye wuri 1.
+occurrences_replaced_many = An maye wurare {count}.
+
+# Reading mail
+message_did_not_open = Saƙon bai buɗe ba. Sabar ba ta amsa ba. Danna Enter don sake gwadawa.
+thread_open = {messages} a cikin wannan zaren. Danna sake don rufewa.
+no_thread_selected = Ba a zaɓi zare ba.
+thread_watched = Ana sa ido kan zaren.
+thread_not_watched = Ba a sake sa ido kan zaren.
+thread_ignored = An yi watsi da zaren.
+thread_not_ignored = Ba a sake yin watsi da zaren.
+none_found = Ba a samu komai ba.
+refreshing_this_folder = Ana wartsakar da wannan babban fayil.
+refreshing_all_accounts = Ana wartsakar da dukkan asusun.
+message_view_html = Yadda ake duba saƙo: HTML (an nuna).
+message_view_text = Yadda ake duba saƙo: Rubutu.
+html_view_still_loading = Saƙon yana ci gaba da lodawa. Escape yana rufe shi.
+message_still_opening = Ana buɗe saƙon. Sabar tana jinkiri.
+remote_content_blocked = An toshe abun ciki na nesa.
+remote_content_unblocked = An cire toshe abun ciki na nesa.
+remote_content_already_showing = Abun ciki na nesa yana nuna a wannan saƙon tuni.
+archived = An ajiye a ma'aji.
+copied_to_folder = An kwafi zuwa {to_folder}.
+deleted_one = An share saƙon har abada.
+deleted_many = An share saƙonni {count} har abada.
+trashed_one = An mayar da saƙon cikin shara.
+trashed_many = An mayar da saƙonni {count} cikin shara.
+
+# Accounts and new mail
+no_account_yet = Babu asusun da za a tsallaka zuwa gare shi tukuna.
+inbox_landed = Akwatin saƙon {name}.
+account_enabled = An kunna {name}.
+auto_check_paused = An dakatar da dubawa ta atomatik don {account}.
+auto_check_resumed = An kunna dubawa ta atomatik don {account}.
+account_disabled = An kashe {name}.
+new_mail_one = Sabon saƙo 1 ga {name}.
+new_mail_many = Sabbin saƙonni {count} ga {name}.
+refresh_all_done_one = An wartsakar da asusu 1.
+refresh_all_done_many = An wartsakar da asusu {count}.
+refresh_all_done_failures = An wartsakar da asusu {count}, {failed} ba a iya wartsakar da su ba.
+refresh_all_done_failures_one = An wartsakar da asusu {count}, {failed} ba a iya wartsakar da shi ba.
+
+# The sender of the message in view
+sender_address_copied = {sender}. An kwafi adireshin.
+sender_no_address = {sender}. Babu adireshin da za a kwafa.
+clipboard_not_opened = {sender}. Ba a iya buɗe allon kwafi ba.
+
+# The signature editor
+signature_page_formatted = An tsara. Wannan shi ne za a adana.
+signature_page_html = Tushen HTML. Wannan shi ne za a adana.
+signature_page_html_still_wins = An tsara. Tushen HTML har yanzu shi ne za a adana.
+
+# Background work
+phishing_list_updating = Ana sabunta jerin zamba ta yanar gizo a bayan fage.
+cache_cleared = An share fayilolin ajiya na wucin gadi {files}, MB {size}.
+hotkeys_diagnostic_on = Binciken gajerun maɓallai a kunne, an yi alama
+hotkeys_diagnostic_off = Binciken gajerun maɓallai a kashe, ba a yi alama ba
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Ajiye a ma'aji
+action_delete = Share
+action_delete_permanently = Share har abada
+action_mark_as_junk = Yi alama a matsayin saƙon banza
+action_mark_as_not_junk = Yi alama a matsayin ba saƙon banza ba
+action_move_to = Mayar zuwa
+action_copy_to = Kwafa zuwa
+action_mark_message = Yi alama a saƙo
+action_undo = Warware
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = An warware {action}.
+undo_done_many = An warware {action} na saƙonni {count}.
+junk_marked_one = An yi alama a matsayin saƙon banza.
+junk_marked_many = An yi wa saƙonni {count} alama a matsayin saƙon banza.
+junk_no_new_sender = Ba a toshe sabon mai aikawa ba: an riga an toshe shi, jerin wasiƙa, ko ɗaya daga adireshinka.
+not_junk_marked_one = An yi alama a matsayin ba saƙon banza ba.
+not_junk_marked_many = An yi wa saƙonni {count} alama a matsayin ba saƙon banza ba.
+moved_to_one = An mayar zuwa {to_folder}.
+moved_to_many = An mayar da saƙonni {count} zuwa {to_folder}.
+copied_to_many = An kwafi saƙonni {count} zuwa {to_folder}.
+marked_read = An yi alama a matsayin an karanta.
+marked_unread = An yi alama a matsayin ba a karanta ba.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = An soke bayan {completed} daga {total}. {succeeded} sun yi nasara, {failed} sun gaza.
+bulk_failed_one = {done} {failed} daga saƙo 1 ya gaza.
+bulk_failed_many = {done} {failed} daga saƙonni {total} sun gaza.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Kauri
+format_word_italic = Rubutu mai karkata
+format_word_strike = Layi a tsakiya
+format_word_href = Mahaɗi
+format_word_bullet = Jerin digo-digo
+format_word_number = Jerin lambobi
+format_word_quote = Ƙaulin magana
+format_word_code = Lamba
+format_word_heading1 = Kan labari
+format_applied = An yi amfani da {formatting}.
+format_inserted = An saka {formatting}.
+format_not_available = {formatting} ba ya samuwa a cikin jikin saƙo na rubutu na fili.
+format_on = {formatting} a kunne
+format_off = {formatting} a kashe
+link_applied = An yi amfani da mahaɗin.
+link_applied_to_selection = An yi amfani da mahaɗin ga abin da aka zaɓa.
+plain_body_formatting = Jikin saƙo na rubutu na fili yana nuna tsarinsa a matsayin alamomi.
+
+# Reaching either end of a thread
+thread_edge_first = Saƙon farko a cikin wannan zaren. Danna sake don rufewa.
+thread_edge_last = Saƙon ƙarshe a cikin wannan zaren. Danna sake don rufewa.
+jump_unified_inbox = Akwatin saƙo na haɗaka.
+remote_none = Babu abun ciki na nesa a wannan saƙon.
+sender_none = Babu mai aikawa a wannan saƙon.
+sender_name_no_address = %s, babu adireshi
+signature_not_switched = Ba a canza sa hannun ba. Danna Ctrl+Shift+S don saka sa hannun wannan asusun.
+signature_removed_no_signature = An cire sa hannun. Wannan asusun ba shi da shi.
+signature_switched = An canza sa hannun zuwa na wannan asusun.
+spell_not_replaced = Ba a iya maye kalmar ba.
+spell_replaced_with = An maye da {word}.
+folder_marked_read = An yi wa saƙonni {count} alama a matsayin an karanta.
+folder_no_unread = Babu saƙonnin da ba a karanta ba.
+threads_all_collapsed = An naɗe dukkan zaren.
+threads_all_expanded = An buɗe dukkan zaren.
+upd_percent = kashi {percent} cikin ɗari
+upd_download_done = An gama saukewa. Ana shirya sabuntawar...
+upd_updated_to = An sabunta ZBox zuwa {version}.
+header_copied = An kwafa.
+headers_copied = An kwafi dukkan kanun saƙo.
+identity_copies_updated = An sabunta Kwafi da Kwafi na Ɓoye don wannan shaida.
+signature_switched_identity = An canza sa hannun zuwa na wannan shaida.
+signature_removed_identity = An cire sa hannun. Wannan shaida ba ta da shi.
+signature_not_switched_identity = Ba a canza sa hannun ba. Danna Ctrl+Shift+S don saka sa hannun wannan shaida.
+signature_none_identity = Wannan shaida ba ta da sa hannu.
+move_keys_no_selection = Zaɓi saƙo tukuna.
+move_keys_no_folders = Babu manyan fayiloli da za a zaɓa tukuna. Sake gwadawa nan da ɗan lokaci.
+block_sender_done_one = An toshe {sender}. Sabbin saƙonninsa za su tafi shara.
+block_sender_done_many = An toshe masu aikawa {count}. Sabbin saƙonninsu za su tafi shara.
+block_sender_already = An riga an toshe {sender}.
+block_sender_own = Ba a toshe ba: wannan ɗaya ne daga adireshinka.
+block_sender_list_unknown = Ba a toshe ba: wannan saƙon ya zo ta jerin wasiƙa kuma bai faɗi wanda ya aiko shi ba. Toshe adireshin jerin zai toshe kowa da ke ciki.
+block_sender_moved = An toshe mai aikawa. An mayar da saƙonni {count} cikin shara.
+block_senders_moved = An toshe masu aikawa {senders}. An mayar da saƙonni {count} cikin shara.
+unblock_sender_moved = An cire toshe mai aikawa. An mayar da saƙonni {count} cikin akwatin saƙo.
+unblock_senders_moved = An cire toshe masu aikawa {senders}. An mayar da saƙonni {count} cikin akwatin saƙo.
+unblock_sender_done = An cire toshe {sender}.
+unblock_sender_not_blocked = Ba a toshe {sender} ba.
+pgp_cm_on = {name} a kunne.
+pgp_cm_off = {name} a kashe.
+pgp_cm_identity = An canza saitunan ɓoyewa zuwa na wannan shaida.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Rubuta wani abu a sama sannan ka danna Enter ko ka zaɓi Nema.
+search_no_account = Ƙara asusu tukuna.
+search_no_term = Rubuta kalmomin da za a nema, ko ka zaɓi kwanan wata ko akwatin zaɓi.
+search_running = Ana nema...
+search_none = Babu sakamako ga "{term}".
+search_found_one = Sakamako 1 ga "{term}".
+search_found_many = Sakamako {count} ga "{term}".
+search_bad_date = Rubuta kwanan wata kamar shekara-wata-rana, misali 2025-12-31, tare da lokaci na zaɓi kamar 14:30.
+search_bad_range = Ƙarshen tazarar kwanan wata ya riga farkonta.
+search_none_any = Babu saƙonnin da suka dace.
+search_found_one_any = An sami saƙo 1.
+search_found_many_any = An sami saƙonni {count}.
+search_failed = Neman ya gaza.
+
+# The related messages tab
+related_running = Ana nema...
+related_none = Ba a sami saƙonnin da suka shafi wannan ba.
+related_found_one = An sami saƙo 1 mai alaƙa.
+related_found_many = An sami saƙonni {count} masu alaƙa.
+related_failed = Ba a iya neman saƙonnin da suka shafi wannan ba.
+
+# Writing and sending
+sending_via = Ana aikawa ta {sender}...
+send_failed = Aikawa ta gaza. Duba rajista don cikakkun bayanai.
+draft_autosaved = An adana daftarin ta atomatik.
+draft_autosave_failed = Adana daftarin ta atomatik ya gaza. Duba rajista don cikakkun bayanai.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Za a loda abun ciki na nesa yanzu ga saƙonni daga {sender}.
+downloading_attachment = Ana sauke {filename}...
+downloading_attachments_one = Ana sauke abin da aka haɗa 1...
+downloading_attachments_many = Ana sauke abubuwan da aka haɗa {count}...
+saved_to = An adana a {folder}
+attachment_download_failed = Saukar da abin da aka haɗa ya gaza.
+
+# Getting mail onto the screen
+loading_folder = Ana loda {folder} na {account}...
+messages_in_folder = Saƙonni {count} a {folder}.
+messages_in_folder_cached = Saƙonni {count} a {folder} (kwafin da aka daidaita na ƙarshe, ana sabuntawa...)
+no_offline_copy = Babu kwafin {folder} na rashin intanet tukuna.
+refresh_failed_cached = Ba a iya wartsakar da {folder} ba: ana nuna kwafin da aka daidaita na ƙarshe.
+no_such_folder = Babu babban fayil {folder} a wannan asusun.
+load_failed = An kasa loda saƙonni. Duba rajista don cikakkun bayanai.
+no_more_to_load = Babu ƙarin saƙonnin da za a loda a wannan babban fayil.
+loading_more = Ana loda ƙarin saƙonni a {folder}...
+more_loaded = An loda ƙarin saƙonni {count}.
+no_more_messages = Babu ƙarin saƙonni a wannan babban fayil.
+load_more_failed = Ba a iya loda ƙarin saƙonni ba: {error}
+loading_unified = Ana loda {folder} na haɗaka...
+messages_in_unified = Saƙonni {count} a cikin dukkan asusun a {folder} na haɗaka.
+messages_in_unified_cached = Saƙonni {count} a {folder} na haɗaka (kwafin da aka daidaita na ƙarshe, ana sabuntawa...)
+auto_purge_done = Tsabtace ta atomatik ya cire tsofaffin saƙonni {count} daga shara da saƙon banza.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = A shirye.
+opening_message = Ana buɗe saƙon...
+opening_message_already = Ana buɗe saƙon... (ana lodawa tuni)
+could_not_open_message = Ba a iya buɗe saƙon ba.
+could_not_open_that_message = Ba a iya buɗe wannan saƙon ba.
+could_not_load_message = Ba a iya loda wannan saƙon ba.
+message_still_loading = Wannan saƙon yana ci gaba da lodawa.
+folder_still_loading = Babban fayil yana ci gaba da lodawa -- sake gwadawa nan da ɗan lokaci.
+not_in_thread = Wannan saƙon ba ya cikin wani zare.
+no_longer_in_thread = Wannan saƙon ba ya cikin zaren kuma.
+thread_position = Saƙo na {position} daga {total} a cikin wannan zaren.
+thread_finished_one = An gama zaren (saƙo 1).
+thread_finished_many = An gama zaren (saƙonni {count}).
+select_message_first = Zaɓi saƙo tukuna.
+conversation_failed = Ba a iya buɗe wannan tattaunawar ba.
+select_message_for_related = Zaɓi saƙo tukuna don ganin saƙonnin da suka shafe shi.
+looking_for_related = Ana neman saƙonnin da suka shafe shi...
+no_threading_headers = Wannan saƙon ba shi da Message-ID ko kanun zare da za a nema a kai.
+reply_one_at_a_time = Amsawa yana aiki da saƙo ɗaya a lokaci guda. Da fatan za a zaɓi saƙo ɗaya kawai.
+select_message_to_reply = Zaɓi saƙon da za a amsa tukuna.
+preparing_reply = Ana shirya amsa...
+reply_load_failed = Ba a iya loda ainihin saƙon don amsawa ba.
+select_message_to_forward = Zaɓi saƙon da za a tura tukuna.
+preparing_forward = Ana shirya saƙon da za a tura...
+forward_load_failed = Ba a iya loda saƙon da za a tura ba.
+compose_tab_needed_hint = Wannan umarnin yana buƙatar shafin rubutu. Danna Ctrl+N don rubuta saƙo.
+open_message_first_view = Buɗe saƙo tukuna, sannan ka danna Ctrl+B don canza yadda ake duba shi.
+open_message_first_remote = Buɗe saƙo tukuna, sannan ka danna Ctrl+Shift+I don loda abun cikinsa na nesa.
+
+# Acting on messages
+copying_message = Ana kwafar saƙon...
+copy_failed = Kwafa ya gaza.
+delete_failed = Sharewa ya gaza.
+already_in_archive = Yana cikin Ma'aji tuni.
+archiving = Ana ajiyewa a ma'aji...
+archive_failed = Ajiyewa a ma'aji ya gaza.
+action_failed = {action} ya gaza.
+nothing_to_undo = Babu abin warwarewa.
+private_mode_on = Yanayin sirri yana kunne. An share kwafin wasiƙarka da ZBox ke ajiyewa a wannan kwamfutar.
+private_mode_off = Yanayin sirri yana kashe. ZBox yana sake adana kwafin wasiƙarka.
+undo_failed = Ba a iya warware {action} ba.
+
+# Views and folders
+folder_pane_all = Allon manyan fayiloli: Dukkan manyan fayiloli.
+folder_pane_unified = Allon manyan fayiloli: Manyan fayiloli na haɗaka.
+sorted_ascending = An jera bisa {field}, hawa.
+sorted_descending = An jera bisa {field}, sauka.
+unified_folders_updated = An sabunta manyan fayiloli na haɗaka.
+zoom_reset = An mayar da girman rubutun saƙo zuwa na asali.
+folder_creating = Ana ƙirƙirar babban fayil "{folder}"...
+folder_created = An ƙirƙiri babban fayil "{folder}".
+folder_create_failed = Ba a iya ƙirƙirar babban fayil ba.
+folder_renaming = Ana sauya sunan "{folder}" zuwa "{new_name}"...
+folder_renamed = An sauya sunan babban fayil zuwa "{new_name}".
+folder_rename_failed = Ba a iya sauya sunan babban fayil ba.
+folder_deleting = Ana share babban fayil "{folder}"...
+folder_deleted = An share babban fayil.
+folder_delete_failed = Ba a iya share babban fayil ba.
+folder_subscribing = Ana yin rajista ga "{folder}"...
+folder_unsubscribing = Ana cire rajista daga "{folder}"...
+folder_subscribed = An yi rajista.
+folder_unsubscribed = An cire rajista.
+folder_subscribe_failed = Ba a iya yin rajista ga babban fayil ba.
+folder_unsubscribe_failed = Ba a iya cire rajista daga babban fayil ba.
+
+# Accounts
+account_not_added = Ba a ƙara asusun ba.
+account_added = An ƙara asusu: {account}
+account_settings_not_saved = Ba a adana saitunan asusun ba.
+account_updated = An sabunta asusu: {account}
+account_not_removed = Ba a cire asusun ba.
+account_removed = An cire asusun.
+account_removed_with_files = An cire asusun. An share fayilolin gida {count}.
+default_account_failed = Ba a iya saita asusun asali ba.
+default_account_set = {account} yanzu shi ne asusun asali.
+auto_check_not_saved = Ba a adana saitin dubawa ta atomatik ba.
+mute_not_saved = Ba a adana saitin yin shiru ba.
+account_muted = An yi wa {account} shiru.
+account_unmuted = An cire shiru daga {account}.
+export_done = An fitar da asusu {count} da saituna zuwa {path}.
+import_done = An shigo da asusu {count} daga {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Ba a adana tacewar ba.
+filters_saved = An adana tacewa don {account}.
+filters_checking = Ana duba {folder} da tacewarka...
+filters_none_matched = Gudanar yanzu: babu saƙon da ke {folder} da ya dace da wata ƙa'ida da aka kunna.
+filters_run_failed = Ba a iya gudanar da tacewar ba.
+filters_moving = Ana mayar da saƙonni {count} da aka tace...
+filters_move_failures = Tacewa: ba a iya mayar da saƙonni {count} ba.
+filters_moved = Tacewa ta mayar da saƙonni {count} daga {folder}.
+filters_move_failed = Ba a iya mayar da saƙonnin da aka tace ba.
+cache_not_cleared = Ba a share ma'ajiyar wucin gadi ba.
+auto_cache_cleanup = Tsabtace ma'ajiyar wucin gadi ta atomatik: saƙonni da suka girmi {age}.
+phishing_update_failed = Ba a iya sabunta jerin zamba ta yanar gizo ba: {error}
+blocklist_update_failed = Ba a iya sabunta jerin toshewa ba: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Buɗe saƙo tukuna, sannan ka yi amfani da Adana a matsayin.
+saving_message = Ana adana saƙon...
+save_file_failed = Ba a iya adana fayil ɗin ba.
+save_fetch_failed = Ba a iya samo saƙon da za a adana ba.
+open_message_first_print = Buɗe saƙo tukuna, sannan ka yi amfani da Buga.
+open_message_first_preview = Buɗe saƙo tukuna, sannan ka yi amfani da Duba kafin Bugawa.
+refreshing_accounts = Ana wartsakar da asusu {count}...
+emptying_trash = Ana zubar da shara ta {account}...
+trash_already_empty = Shara ta riga ta zama fanko.
+trash_emptied = An zubar da shara: an share saƙonni {count} har abada.
+empty_trash_failed = Ba a iya zubar da shara ba.
+emptying_junk = Ana zubar da saƙon banza na {account}...
+junk_already_empty = Saƙon banza ya riga ya zama fanko.
+junk_emptied = An zubar da saƙon banza: an share saƙonni {count} har abada.
+junk_emptied_prefix = An zubar da saƙon banza:
+junk_part_purged = {count} an share har abada
+junk_part_in_trash = {count} an mayar da su cikin shara amma ba a tabbatar da cire su ba, duba shara
+junk_part_not_moved = {count} ba a mayar da su cikin shara ba, har yanzu suna cikin saƙon banza
+empty_junk_failed = Ba a iya zubar da saƙon banza ba.
+back_online = An dawo kan intanet.
+offline_sync_running = Ana daidaita {account} don amfani ba tare da intanet ba...
+offline_sync_failed = Daidaitawa don rashin intanet ta gaza: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Zaɓi ko buɗe saƙo tukuna.
+select_or_open_message_ctrl_u = Zaɓi ko buɗe saƙo tukuna, sannan ka danna Ctrl+U.
+no_sender_address = Wannan saƙon ba shi da adireshin mai aikawa da za a ƙara.
+contact_added = An ƙara {contact} cikin littafin adireshinka.
+contact_already_there = {contact} yana cikin littafin adireshinka tuni.
+privacy_saved = An adana saitunan sirri. Sake buɗe saƙo don amfani da su.
+message_font_size = Girman rubutun saƙo: pt {size}.
+
+# Deleting and moving several messages
+deleting_one = Ana share saƙon har abada
+deleting_many = Ana share saƙonni {count} har abada
+trashing_one = Ana mayar da saƙon cikin shara
+trashing_many = Ana mayar da saƙonni {count} cikin shara
+undo_partly_restored = An warware {action}, amma ba a iya maido {count} ba -- mai yiwuwa an mayar da su, an share su ko lokacinsu ya ƙare tun daga lokacin.
+moves_report = {action}: an mayar da saƙonni {moved} daga {total}.
+moves_report_failed = Ba a mayar ba, har yanzu suna babban fayil na asali: {count}.
+
+tray_tooltip_one = ZBox — saƙo 1 da ba a karanta ba
+tray_tooltip_many = ZBox — saƙonni {count} da ba a karanta ba
+account_unreachable = Ba a iya isa ga {account} ba. Za a dakatar da dubawa ta atomatik a kansa na mintuna {minutes}.
+bulk_copy_failed = Ba a iya kwafar saƙonni ba.
+bulk_copy_failed_status = Kwafa ya gaza.
+bulk_loading_archive = Saƙonni suna ci gaba da lodawa -- sake gwada ajiyewa a ma'aji nan da ɗan lokaci.
+bulk_loading_delete = Saƙonni suna ci gaba da lodawa -- sake gwada sharewa nan da ɗan lokaci.
+bulk_loading_flag = Saƙonni suna ci gaba da lodawa -- sake gwada saka tauraro nan da ɗan lokaci.
+bulk_loading_generic = Saƙonni suna ci gaba da lodawa -- sake gwadawa nan da ɗan lokaci.
+bulk_none = Ba a zaɓi saƙo ba.
+bulk_none_archive = Ba a zaɓi saƙon da za a ajiye a ma'aji ba.
+bulk_none_delete = Ba a zaɓi saƙon da za a share ba.
+bulk_none_junk = Ba a zaɓi saƙon da za a yi wa alama a matsayin saƙon banza ba.
+bulk_none_not_junk = Ba a zaɓi saƙon da za a yi wa alama a matsayin ba saƙon banza ba ba.
+delete_refused_still = Sabar ta ƙi share shi; har yanzu yana cikin {folder}.
+delete_refused_trash = Yana cikin shara, amma sabar ta ƙi share shi har abada.
+delete_resume_failed = Ba a iya share saƙonni {count} daga sharewar da ta gabata ba.
+done_perm_delete_one = An share saƙon har abada.
+done_trash_one = An mayar da saƙon cikin shara.
+filters_applied = An yi amfani da tacewa ga saƙonni {count} a {folder}.
+filters_failed = Ba a iya gudanar da tacewar ba.
+filters_running = Ana gudanar da tacewa a {folder}
+flag_failed = Ba a iya sabunta tauraron ba.
+flag_updated = An sabunta tauraron.
+folder_verb_subscribing = Ana yin rajista ga
+folder_verb_unsubscribing = Ana cire rajista daga
+mark_read_failed = Ba a iya yi wa saƙonni alama a matsayin an karanta ba.
+mark_unread_failed = Ba a iya yi wa saƙonni alama a matsayin ba a karanta ba.
+notify_new_mail_body = {noun} {count} ga {name}.
+notify_new_mail_title = Sabuwar wasiƙa
+notify_noun_many = sabbin saƙonni
+notify_noun_one = sabon saƙo
+report_done = {verb} {done} daga saƙonni {count}.
+report_verb_deleted = An share
+report_verb_permanent = An share har abada
+running_copy_many = Ana kwafar saƙonni {count}
+running_copy_one = Ana kwafar saƙon
+running_junk_many = Ana yi wa saƙonni {count} alama a matsayin saƙon banza
+running_junk_one = Ana yin alama a matsayin saƙon banza
+running_move_many = Ana mayar da saƙonni {count}
+running_move_one = Ana mayarwa
+running_not_junk_many = Ana yi wa saƙonni {count} alama a matsayin ba saƙon banza ba
+running_not_junk_one = Ana yin alama a matsayin ba saƙon banza ba
+running_perm_delete_one = Ana share saƙon har abada...
+running_read_many = Ana yi wa saƙonni {count} alama a matsayin an karanta
+running_read_one = Ana yin alama a matsayin an karanta
+running_trash_one = Ana mayar da saƙon cikin shara...
+running_unread_many = Ana yi wa saƙonni {count} alama a matsayin ba a karanta ba
+running_unread_one = Ana yin alama a matsayin ba a karanta ba
+settings_saved_no_startup = An adana saituna. Ba a iya sabunta shigarwar farawa ta Windows ba.
+settings_saved_status = An adana saituna.
+spam_blocked_sender = Mai aikawa da aka toshe
+spam_possible_phishing = Mai yiwuwa zamba ta yanar gizo
+undo_running_many = Ana warware {action} (saƙonni {count})
+undo_running_one = Ana warware {action}
+mark_folder_read_failed = Ba a iya yi wa babban fayil alama a matsayin an karanta ba.
+marking_folder_read = Ana yi wa babban fayil alama a matsayin an karanta...
+upd_ready_at_exit = An riga an sauke sabuntawa. Za a shigar da ita idan ka fita daga ZBox.
+upd_checking = Ana duba sabuntawa...
+upd_up_to_date = ZBox yana kan sabon salo.
+upd_available_source = ZBox {version} yana nan. Wannan kwafin yana gudana daga tushe, don haka sabunta shi da git.
+upd_check_failed = Ba a iya duba sabuntawa ba: {error}
+opening_attachment = Ana buɗe {filename}...
+loading_headers = Ana loda kanun saƙo...
+offline_inbox_only = Akwatin Saƙo da Ma'aji kawai ake adanawa don amfani ba tare da intanet ba.
+offline_sync_done_inbox = An daidaita saƙonni {count} a Akwatin Saƙo da Ma'aji don amfani ba tare da intanet ba.
+working_offline = Ana aiki ba tare da intanet ba: ana nuna kwafin Akwatin Saƙo/An Aika/Daftarori da aka daidaita na ƙarshe.
+emptying_trash_all = Ana zubar da shara ta dukkan asusun...
+trash_emptied_all = An zubar da shara a asusu {accounts}: an share saƙonni {count} har abada.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fayil
+bar_edit = &Gyara
+bar_view = &Duba
+bar_message = &Saƙo
+bar_compose = &Rubuta
+bar_tools = &Kayan Aiki
+bar_help = &Taimako
+
+# File
+file_new = Sabo
+file_new_message = Saƙo
+file_new_account = Asusun imel...
+file_open_saved_message = Buɗe saƙon da aka adana...
+file_close = Rufe
+file_save_message_as = Adana saƙo a matsayin...
+file_get_new_for = Karɓi sabbin saƙonni na
+file_get_new_all = Dukkan asusun
+file_get_new_current = Asusun yanzu
+file_offline = Ba tare da intanet ba
+file_work_offline = Yi aiki ba tare da intanet ba
+file_sync_now = Daidaita yanzu
+file_print = Buga...
+file_print_preview = Duba kafin Bugawa...
+file_exit = Fita
+
+# Edit
+edit_undo = Warware
+edit_select_all = Zaɓi duka
+edit_find_messages = Nemo saƙonni...
+
+# Message
+message_reply = Amsa
+message_reply_all = Amsa ga Kowa
+message_forward = Tura
+message_archive = Ajiye a ma'aji
+message_delete = Share
+message_delete_permanently = Share har abada
+message_mark = Yi alama
+mark_read = An karanta
+mark_unread = Ba a karanta ba
+mark_flagged = Mai tauraro
+mark_junk = Saƙon banza
+mark_not_junk = Ba saƙon banza ba
+message_watch_thread = Sa ido kan zare
+message_ignore_thread = Yi watsi da zare
+message_open_conversation = Buɗe saƙo a cikin tattaunawa
+message_show_related = Nuna saƙonnin da suka shafe shi
+message_add_sender_to_address_book = Ƙara mai aikawa cikin littafin adireshi
+message_announce_sender = Sanar da mai aikawa
+message_announce_copy_sender = Sanar da mai aikawa kuma kwafi adireshi
+
+# View
+view_folders = Manyan fayiloli
+folders_all = Duka
+folders_unified = Haɗaka
+folders_jump_inbox = Tsallaka zuwa jerin saƙonnin Akwatin Saƙo
+folders_configure_unified = Saita manyan fayiloli na haɗaka...
+view_sort_by = Jera bisa
+sort_date = Kwanan wata
+sort_subject = Take
+sort_from = Daga
+sort_descending = Sauka (sababbi da farko)
+sort_ascending = Hawa (tsofaffi da farko)
+view_threads = Zaren saƙo
+threads_all = Duka
+threads_watched = Zaren da ake sa ido
+threads_ignored = Zaren da aka yi watsi da su
+threads_expand_all = Buɗe dukkan zaren
+threads_collapse_all = Naɗe dukkan zaren
+view_load_more = Loda ƙarin saƙonni
+view_toggle_message_view = Canza tsakanin duba rubutu da HTML
+view_show_remote_content = Nuna abun ciki na nesa a wannan saƙon
+view_message_zoom = Girman saƙo
+zoom_increase = Ƙara girman rubutun saƙo
+zoom_decrease = Rage girman rubutun saƙo
+zoom_reset = Mayar da girman rubutun saƙo
+
+# Compose
+compose_send = &Aika
+compose_save_draft = &Adana daftari
+compose_attach = &Haɗa fayil...
+compose_fmt_bold = &Kauri
+compose_fmt_italic = &Rubutu mai karkata
+compose_fmt_strike = &Layi a tsakiya
+compose_fmt_bullet = &Jerin digo-digo
+compose_fmt_number = &Jerin lambobi
+compose_fmt_quote = &Ƙaulin magana
+compose_fmt_code = &Lamba
+compose_fmt_heading1 = &Kan labari
+compose_link = &Saka mahaɗi...
+compose_formatting = &Tsarin rubutu a nan
+compose_spellcheck = &Duba rubutu...
+compose_spellcheck_next = &Kuskuren rubutu na gaba
+compose_spellcheck_add = &Ƙara kalma cikin ƙamus
+compose_insert_signature = &Saka sa hannu
+compose_paste_quotation = &Liƙa a matsayin ƙaulin magana
+compose_word_count = &Yawan kalmomi
+compose_preview = &Duba kafin aikawa...
+compose_diagnostics = &Binciken rubutu...
+compose_edit_signature = &Gyara sa hannu...
+compose_hotkeys_diagnostic = &Binciken gajerun maɓallai
+
+# Tools
+tools_account_settings = Saitunan asusu da shaida...
+tools_mute_account = Yi wa asusu shiru
+tools_pause_auto_check = Dakatar da dubawa ta atomatik
+tools_disable_account = Kashe asusu
+tools_remove_account = Cire asusu...
+tools_address_book = Littafin adireshi...
+tools_message_filters = Tacewar saƙonni...
+tools_import = Shigo da asusu da saituna...
+tools_export = Fitar da asusu da saituna...
+tools_cache_cleanup = Saitin tsabtace ma'ajiyar wucin gadi...
+tools_privacy = Sirri da toshe abun ciki...
+tools_settings = Saituna...
+
+# Help
+help_shortcuts = Gajerun hanyoyin madannai...
+help_about = Game da ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Sabon asusu...
+tree_account_settings = Saitunan asusu da shaida...
+tree_mute_account = Yi wa asusu shiru
+tree_pause_auto_check = Dakatar da dubawa ta atomatik
+tree_enable_account = Kunna asusu
+tree_disable_account = Kashe asusu
+tree_set_default_account = Saita a matsayin asusun asali
+tree_remove_account = Cire asusu...
+tree_refresh = Wartsake
+tree_new_folder = Sabon babban fayil...
+tree_empty_trash = Zubar da shara
+tree_empty_junk = Zubar da saƙon banza
+tree_rename_folder = Sauya sunan babban fayil...
+tree_delete_folder = Share babban fayil...
+tree_subscribe_folder = Yi rajista ga babban fayil
+tree_unsubscribe_folder = Cire rajista daga babban fayil
+
+# The message list menu, opened the same two ways
+list_select_all = Zaɓi duka
+list_reply = Amsa
+list_reply_all = Amsa ga Kowa
+list_forward = Tura
+list_mark = Yi alama
+list_archive = Ajiye a ma'aji
+list_delete_to_trash = Share (mayar cikin shara)
+list_delete_permanently = Share har abada
+list_move_to = Mayar zuwa
+list_copy_to = Kwafa zuwa
+
+# The notification area icon
+tray_open = &Buɗe ZBox
+tray_unread_one = Saƙo 1 da ba a karanta ba
+tray_unread_many = Saƙonni {count} da ba a karanta ba
+tray_no_unread = Babu saƙonnin da ba a karanta ba
+tray_settings = &Saituna...
+tray_quit = &Fita daga ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Kauri
+format_italic = &Rubutu mai karkata
+format_strike = &Layi a tsakiya
+format_bullet = &Jerin digo-digo
+format_number = &Jerin lambobi
+format_quote = &Ƙaulin magana
+format_code = &Lamba
+format_heading1 = &Kan labari
+format_insert_link = &Saka mahaɗi...
+format_formatting_here = &Tsarin rubutu a nan
+tools_enable_account = Kunna asusu
+edit_undo_action = Warware {action}
+tree_mark_folder_read = Yi wa babban fayil alama a matsayin an karanta
+help_updates = &Sabuntawa
+help_check_updates = &Duba sabuntawa yanzu...
+help_update_settings = &Saitunan sabuntawa
+help_releases_page = &Buɗe shafin fitowa
+message_attachments = Abubuwan da aka haɗa
+message_no_attachments = Babu abubuwan da aka haɗa
+message_save_all_attachments = Adana dukkan abubuwan da aka haɗa
+view_full_headers = Cikakkun kanun saƙo
+folders_go_to_tree = Je zuwa jerin manyan fayiloli
+list_block_sender = Toshe wannan mai aikawa
+list_unblock_sender = Cire toshe wannan mai aikawa
+sort_received = An karɓa
+sort_star = Tauraro
+sort_order_received = Jerin karɓa
+sort_priority = Muhimmanci
+sort_recipient = Mai karɓa
+sort_correspondents = Masu musayar wasiƙa
+sort_size = Girma
+sort_read = An karanta
+sort_junk_status = Matsayin saƙon banza
+sort_attachments = Abubuwan da aka haɗa
+sort_threaded = Cikin zare
+sort_unthreaded = Ba cikin zare ba
+view_columns = Ginshiƙai
+tools_openpgp_keys = Mai kula da maɓallan OpenPGP
+tools_smime_certs = Mai kula da takardun shaida na S/MIME
+compose_pgp_encrypt = &Ɓoye bayanai
+compose_pgp_sign = &Sa hannu ta lambobi
+compose_pgp_attach_key = &Haɗa maɓalli na na jama'a
+
+[dialogs]
+set_theme_restart_confirm = A sake kunna ZBox don amfani da canjin jigo?
+set_ui_theme_label = &Jigon mahaɗa:
+set_ui_theme_note = Launuka na menu, jerin abubuwa, akwatunan tattaunawa da duba saƙo na rubutu. Bi tsarin yana amfani da yanayin haske ko duhu na Windows. Shuɗin tsakar dare, Duhu mai ɗumi da Bambanci mai laushi jigogi ne masu duhu da launuka masu laushi. Saƙonnin HTML suna riƙe launukansu, kuma Babban Bambanci na Windows koyaushe yana da fifiko. Zai fara aiki lokaci na gaba da ZBox ya fara.
+set_theme_system = Bi tsarin
+set_theme_light = Haske
+set_theme_dark = Duhu
+set_theme_midnight = Shuɗin tsakar dare
+set_theme_warm = Duhu mai ɗumi
+set_theme_soft = Bambanci mai laushi
+set_language_restart_confirm = A sake kunna ZBox don amfani da canjin harshe?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Tuntuɓi Harith
+title_identity = Shaida
+title_show_password = Nuna kalmar sirri
+title_missing_information = Bayani ya ɓace
+title_unsupported_provider = Mai bayarwa da ba a tallafa masa ba
+title_test_connection = Gwada haɗi
+title_new_contact = Sabon abokin tuntuɓa
+title_edit_contact = Gyara abokin tuntuɓa
+title_delete_contact = Share abokin tuntuɓa
+title_import_contacts = Shigo da abokan tuntuɓa
+title_export_contacts = Fitar da abokan tuntuɓa
+title_rename_group = Sauya sunan ƙungiya
+title_delete_group = Share ƙungiya
+title_send = Aika
+title_send_failed = Aikawa ta gaza
+title_attach_file = Haɗa fayil
+title_save_draft = Adana daftari
+title_documentation = Bayanan ZBox
+title_open_link = Buɗe mahaɗi
+title_filter_rule = Ƙa'idar tace
+title_master_password = Babbar kalmar sirri
+title_attachment_saved = An adana abin da aka haɗa
+title_attachments_saved = An adana abubuwan da aka haɗa
+title_download_failed = Saukewa ta gaza
+title_print = Buga
+title_print_preview = Duba kafin Bugawa
+title_related_messages = Saƙonni masu alaƙa
+title_search = Nema
+title_unlock = Buɗe
+title_unlock_methods = Hanyoyin buɗewa
+title_desktop_shortcut = Gajeriyar hanyar tebur
+title_spell_check = Duba rubutu
+title_plain_text_password = An sami kalmar sirri ta rubutu na fili
+title_startup_error = Kuskuren farawa na ZBox
+
+identity_email_required = Shigar da adireshin imel.
+
+wizard_password_not_shown = Ba za a iya nuna kalmar sirri a wannan tsarin ba. Har yanzu ana rubuta ta kuma ana adana ta kamar yadda aka saba.
+wizard_email_required = Shigar da adireshin imel mai inganci kafin ci gaba.
+wizard_test_needs_server = Shigar da imel ɗin shiga da sabar shigowa kafin gwaji.
+wizard_test_succeeded = Haɗin ya yi nasara. An sami saƙonni {count} a Akwatin Saƙo.
+
+contact_email_required = Ana buƙatar adireshin imel.
+contact_select_to_edit = Zaɓi abokin tuntuɓa da za a gyara.
+contact_select_to_delete = Zaɓi abokin tuntuɓa da za a share.
+contact_delete_confirm = A share {label} daga littafin adireshi?
+contacts_import_choose_file = Zaɓi fayil ɗin .vcf (vCard) ko .csv da za a shigo da shi.
+contacts_imported = An shigo da abokan tuntuɓa {count}.
+contacts_import_empty = Ba a sami abokan tuntuɓa a cikin wannan fayil ɗin ba.
+contacts_none_to_export = Babu abokan tuntuɓa da za a fitar.
+contacts_exported = An fitar da abokan tuntuɓa {count} zuwa:\n{path}
+group_name_exists = Akwai ƙungiya mai suna "{name}" tuni.
+group_delete_confirm = A share ƙungiyar "{name}"? Ba za a share abokan tuntuɓarta ba.
+
+send_no_account = Ƙara asusu kafin aikawa, ko ka zaɓi ɗaya a Daga.
+send_no_recipient = Shigar da aƙalla mai karɓa ɗaya a Zuwa.
+draft_no_account = Ƙara asusu kafin adana daftari, ko ka zaɓi ɗaya a Daga.
+attached_file = An haɗa: {name}\n\nZa a haɗa fayiloli {count} idan ka aika.
+
+documentation_copied = An kwafi cikakkun bayanan ZBox zuwa allon kwafi.
+
+filter_rule_needs_name = Ba wannan ƙa'idar suna.
+filter_rule_needs_condition = Saita aƙalla sharaɗi ɗaya (Daga, Zuwa ko Take).
+filter_rule_needs_action = Zaɓi aƙalla aiki ɗaya: yi alama a matsayin an karanta, saka tauraro, ko mayar zuwa babban fayil.
+
+master_password_set = An saita babbar kalmar sirri. Ajiye ta a wuri mai aminci: ZBox zai nemi ta sau ɗaya a kowace sabuwar kwamfuta, kuma ba za a iya maido ta ba idan ta ɓace.
+master_password_offer = Ba tare da babbar kalmar sirri ba, ana iya karanta kalmomin sirrin asusu da aka adana a wannan kwamfutar da wannan asusun Windows kawai. Idan ka kwafi ZBox zuwa wani wuri, kowane asusu zai sake shiga.\n\nA saita ɗaya yanzu?
+
+attachment_saved = An adana abin da aka haɗa a:\n{path}
+attachments_saved = An adana abubuwan da aka haɗa {count} a:\n{path}
+
+shortcut_created_settings = An ƙirƙiri gajeriyar hanya:\n{path}\n\nTana fara ZBox daga:\n{base}
+
+spellcheck_no_dictionary = Ƙamus ɗin duba rubutu ya ɓace, don haka duba rubutu ba ya samuwa a wannan kwafin ZBox.
+spellcheck_none_found = Ba a sami kuskuren rubutu ba.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = A saita maɓallin shiga a wannan kwamfutar kuma a manta wanda aka adana daga wata kwamfuta?\n\nWindows za ta nemi ka tabbatar da Hello. Tsohon maɓallin shiga da ya rage a ɗayar kwamfutar ba za a taɓa shi a can ba kuma zai ci gaba da aiki idan ka mayar da wannan babban fayil can, amma sai a sake saita shi.
+unlock_replace_passkey_many = A saita maɓallin shiga a wannan kwamfutar kuma a manta {count} da aka adana daga wasu kwamfutoci?\n\nWindows za ta nemi ka tabbatar da Hello. Tsofaffin maɓallan shiga da suka rage a ɗayar kwamfutar ba za a taɓa su a can ba kuma za su ci gaba da aiki idan ka mayar da wannan babban fayil can, amma sai a sake saita su.
+unlock_method_works = Wannan hanyar tana aiki.
+
+plain_text_password_found = data\config\himalaya.toml har yanzu yana ɗauke da kalmar sirri ta rubutu na fili (auth.raw) daga tsohon saitin asusu.\n\nCire wannan asusun ka sake ƙara shi, ko ka share data\config\himalaya.toml, domin ya sake samuwa ta amfani da amintaccen ma'ajiyar bayanan shaida.
+
+# main_frame's titles.
+title_account_list_unavailable = Ba a samun jerin asusu
+title_open_message = Buɗe saƙo
+title_run_filters = Gudanar da tacewa
+title_clear_cache = Share ma'ajiyar saƙonni ta rashin intanet
+title_remove_account = Cire asusu
+title_new_folder = Sabon babban fayil
+title_rename_folder = Sauya sunan babban fayil
+title_delete_folder = Share babban fayil
+title_subscribe = Yi rajista
+title_unsubscribe = Cire rajista
+title_open_saved_message = Buɗe saƙon da aka adana
+title_save_message_as = Adana saƙo a matsayin
+title_empty_trash = Zubar da shara
+title_empty_junk = Zubar da saƙon banza
+title_synchronize_offline = Daidaita don rashin intanet
+title_export_accounts = Fitar da asusu da saituna
+title_import_accounts = Shigo da asusu da saituna
+title_show_related = Nuna saƙonni masu alaƙa
+title_reply = Amsa
+title_forward = Tura
+title_undo = Warware
+title_delete_permanently = Share har abada
+title_delete = Share
+title_copy_to = Kwafa zuwa
+title_archive = Ajiye a ma'aji
+title_accounts_locked = An kulle asusun
+
+select_account_first = Zaɓi asusu a cikin itacen tukuna.
+select_account_or_folder = Zaɓi asusu ko babban fayil tukuna.
+filters_left_behind = Saƙonni {count} sun dace da tacewa amma har yanzu suna cikin {folder}.
+cache_clear_confirm = A share ma'ajiyar saƙonnin rashin intanet ta dukkan asusun?\n\nWannan yana share kwafin ZBox na cikin gida kawai. Ba a cire komai daga kowace sabar imel, kuma ana sake sauke saƙonni idan ka buƙace su.
+account_remove_confirm = A cire {name} ({address})?\n\nBa a share wasiƙa a kan sabar ba.\nAna share kwafin da aka sauke zuwa wannan kwamfutar.\nAna share kalmar sirrin da aka adana.
+folder_delete_confirm = A share babban fayil "{folder}" da duk abin da ke cikinsa na {address} har abada?\n\nBa za a iya warware wannan ba.
+empty_trash_confirm = A share dukkan saƙonnin da ke shara na {address} har abada?\n\nBa za a iya warware wannan ba.
+empty_junk_confirm = A share dukkan saƙonnin da ke saƙon banza na {address} har abada?\n\nBa za a iya warware wannan ba.
+sync_select_account = Zaɓi asusu (ba babban fayil na haɗaka ba) da za a daidaita don amfani ba tare da intanet ba.
+accounts_imported = An shigo da asusu {count}:\n\n{names}\n\nBa a taɓa fitar da kalmomin sirri, kuma ma'ajiyar kalmomin sirri da aka ɓoye ta keɓance ga wannan asusun mai amfani da Windows, don haka kowane asusu da aka shigo da shi yana buƙatar a shigar da kalmar sirrinsa sau ɗaya ta Kayan Aiki > Saitunan asusu da shaida kafin ya iya haɗawa.
+accounts_import_none = Ba a sami asusu a cikin wannan fayil ɗin ba. An shigo da saituna ko da yake, idan fayil ɗin yana da su.
+delete_permanently_confirm_one = A share wannan saƙon har abada? Wannan yana tsallake babban fayil na shara kuma ba za a iya warware shi ba.
+accounts_locked = An rubuta kalmomin sirrin asusu da aka adana a wata kwamfuta, don haka ba za a iya karanta su a nan ba.\n\nKowane asusu zai sake shiga sabar imel ɗinsa. Don guje wa hakan a gaba, saita babbar kalmar sirri daga Saituna, Tsaron manhaja da bayanai a kwamfutar da asusun ke aiki a yanzu.
+master_password_remove_confirm = A cire babbar kalmar sirri? Za a iya karanta kalmomin sirrin asusu da aka adana a wannan kwamfutar da wannan asusun Windows kawai. Idan ka kwafi ZBox zuwa wani wuri daga baya, kowane asusu zai sake shiga.\n\nA cire ta yanzu?
+shortcut_offer = A saka gajeriyar hanyar ZBox a tebur?\n\nTa fara wannan babban fayil na ZBox:\n{path}\n\nGajeriyar hanya tana tuna ainihin wannan wuri. Idan ka mayar da babban fayil na ZBox daga baya, buɗe Saituna, Tire na tsarin da taga, ka sake zaɓar Ƙirƙiri gajeriyar hanyar tebur don nuna sabon wurin.
+shortcut_created = An ƙirƙiri gajeriyar hanya:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Sunan da za a nuna
+form_email_address = Adireshin imel
+form_your_name = Sunanka
+form_login_email = Imel ɗin shiga
+form_password = Kalmar sirri
+srv_imap_host = Sabar shigowa (IMAP)
+srv_imap_port = Tashar shigowa
+srv_imap_encryption = Ɓoyewar shigowa
+srv_smtp_host = Sabar fita (SMTP)
+srv_smtp_port = Tashar fita
+srv_smtp_encryption = Ɓoyewar fita
+
+acct_login_email_label = Imel ɗin shiga (ana amfani da shi don shiga)
+acct_new_password_label = Sabuwar kalmar sirri (bar wuri fanko don riƙe ta yanzu)
+acct_new_password_name = Sabuwar kalmar sirri
+acct_identity_email_label = Adireshin imel (ana amfani da shi don aikawa da karɓa)
+acct_identities_label = ƙarin shaidu (sunayen maye)
+acct_identities_name = ƙarin shaidu
+acct_add_identity = &Ƙara shaida...
+acct_edit_identity = &Gyara shaida...
+acct_remove_identity = &Cire shaida
+acct_signature = Sa hannu
+acct_edit_signature = &Gyara sa hannu...
+acct_junk_folder = Babban fayil na saƙon banza
+acct_account_status = Matsayin asusu
+acct_disable_account = Kashe wannan asusun
+acct_default_account = Asusun asali
+acct_set_default = Saita a matsayin asusun asali
+acct_notifications = Sanarwar sabuwar wasiƙa
+acct_mute_notifications = Yi wa sanarwar wannan asusun shiru
+acct_server_settings = Saitunan sabar
+
+wiz_before_you_start = Kafin ka fara
+wiz_notice_name = Sanarwa mai muhimmanci
+wiz_google_instructions = &Buɗe umarnin kalmar sirrin manhaja ta Google
+wiz_intro = Sunanka da adireshin imel ɗinka
+wiz_login_same = Imel ɗin shiga iri ɗaya ne da adireshin imel ɗin da ke sama
+wiz_show_password = &Nuna kalmar sirri
+wiz_preset_applied = An yi amfani da saitin da aka riga aka tsara don {name}.
+wiz_summary_name = Taƙaitaccen bayanin asusu
+wiz_review = Duba, sannan ka danna Gama don adana wannan asusun.
+wiz_test_connection = &Gwada haɗi
+wiz_testing = Ana gwada haɗin...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Kunna rajistar gyara kurakurai da aka adana a: data\logs)
+set_language_label = &Harshen mahaɗa:
+set_language_label_only_english = &Harshen mahaɗa: (Turanci kawai)
+set_headers_checkbox = &Nuna kanun saƙo a saman saƙon da aka buɗe
+set_zoom_label = Nau'in rubutun saƙo da girmansa:
+set_font_override = &Soke girman rubutun saƙo na asali
+set_font_size_name = Girman rubutun saƙo (pt)
+set_reading_font_name = Rubutun karatu
+set_reading_font_label = Rubutun karatu (bar wuri fanko don na asali):
+set_view_label = Yadda ake duba jikin saƙo idan an buɗe saƙo:
+set_view_text = Rubutu
+set_view_html = HTML (an nuna)
+set_engine_label = Injin nuna HTML:
+set_engine_edge = Edge / WebView2 (nuna na zamani)
+set_engine_ie = MSHTML na tsoho (mafi kyawun tallafi ga masu karanta allo)
+set_runtime_label = Muhallin aiki na WebView2:
+set_runtime_auto = Atomatik — yi amfani da muhallin aiki da aka haɗa idan yana nan (an ba da shawara)
+set_runtime_fixed = Sigar da aka haɗa kuma ba ta canzawa kawai
+set_runtime_evergreen = Muhallin aiki na tsarin gaba ɗaya (Windows ke sabunta shi)
+set_sr_box = Sarrafa sanarwar mai karanta allo
+set_silence_label = Riƙe shiru na mai karanta allo a HTML:
+set_silence_name = Riƙe shiru na mai karanta allo a HTML a cikin milisakan
+set_focus_delay_label = Jinkirin mayar da hankali na samuwar WebView:
+set_focus_delay_name = Jinkirin mayar da hankali na samuwar WebView, mataki na 1 zuwa 10
+set_announce_label = Tsawon riƙe sanarwa:
+set_announce_name = Tsawon riƙe sanarwa a cikin milisakan
+set_announce_actions = &Furta sanarwar ayyuka, sabuwar wasiƙa da bayanai
+set_attachment_dir_label = Babban fayil na adana abubuwan da aka haɗa:
+set_attachment_dir_name = Babban fayil na adana abubuwan da aka haɗa
+set_browse = &Bincika…
+set_autosave_label = Tazarar adana daftari ta atomatik:
+set_autosave_name = Tazarar adana daftari ta atomatik a cikin daƙiƙu
+set_auto_purge_label = Share tsohuwar shara da saƙon banza ta atomatik:
+set_auto_purge_name = Share shara da saƙon banza ta atomatik bayan kwanaki nawa
+set_bare_keys = &Kunna gajerun hanyoyin maɓalli ɗaya S (saka tauraro), A (ajiye a ma'aji), J (yi alama a matsayin saƙon banza)/Shift+J (yi alama a matsayin ba saƙon banza ba), W (sa ido kan zare), K (yi watsi da zare), M (mayar zuwa)/Shift+M (mayar bisa sunan babban fayil) da C (kwafa zuwa) a jerin saƙonni
+set_sound_label = Sautuka da sanarwa:
+set_sounds_enabled = &Kunna sautukan sanarwa
+set_desktop_notifications = &Nuna sanarwar tebur don sabuwar wasiƙa
+set_theme_label = Canza jigon sauti:
+set_theme_label_only_default = Canza jigon sauti: (jigon asali kawai)
+set_security_box = Tsaron manhaja da bayanai
+set_lock_on_quit = &Kulle ZBox idan ya fita gaba ɗaya
+set_private_mode = &Yanayin sirri: kada a ajiye wasiƙa a wannan kwamfutar ko faifan
+set_unlock_methods_button = &Hanyoyin buɗewa…
+set_master_password_button = &Babbar kalmar sirri…
+set_tray_label = Tire na tsarin da taga:
+set_minimize_to_tray = &Ƙanƙanta zuwa tire na tsarin
+set_close_to_tray = &Rufe zuwa tire na tsarin
+set_stay_maximized = &Koyaushe a riƙe ZBox a girma
+set_run_at_startup = &Kunna ZBox idan Windows ya fara
+set_desktop_shortcut_button = &Ƙirƙiri gajeriyar hanyar tebur
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Rajistar gyara kurakurai tana taimakawa wajen gano matsaloli idan wani abu ya lalace. Kashe ta yana dakatar da rubuta sababbin shigarwa; ba a share fayilolin rajista da suke nan ba. Zai fara aiki lokaci na gaba da ZBox ya fara.
+set_language_note = Zai fara aiki lokaci na gaba da ZBox ya fara. Fayilolin harshe fayilolin rubutu ne na fili a babban fayil na lang na ZBox, kusa da babban fayil na sounds. Don ƙara ɗaya, kwafi babban fayil na en, ka sauya sunan kwafin da fayil ɗin .lang da ke ciki zuwa lambar harshenka, sannan ka fassara rubutun da ke dama da kowace alamar daidai. Duk abin da ba a fassara ba ana furta shi da Turanci maimakon yin shiru, don haka fayil ɗin da ba a kammala ba yana da aminci a yi amfani da shi.
+set_headers_note = Daga, Zuwa, Kwafi, Kwanan wata da Take, ana nuna su a saman jikin saƙo a duba na rubutu da na HTML. Idan babu su ba za a iya sanin wanda ya aiko saƙo daga cikinsa ba tare da rufe shafin ka koma jerin ba. Hankali yana sauka a jikin saƙo har yanzu; shingen kanun yana nesa da Shift+Tab ɗaya. Zai fara aiki lokaci na gaba da aka buɗe saƙo.
+set_zoom_note = Yana sa rubutun saƙon da aka buɗe ya zama babba ko ƙarami, ba tare da dogara da sauran ZBox ko girman nuni na Windows ba. Yana aiki a duba na rubutu da na HTML. "Rubutun karatu" yana tilasta wani nau'in rubutu na musamman (misali Consolas, OpenDyslexic) don jikin saƙo idan ka so; bar shi fanko don riƙe rubutu na yau da kullum. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 a menu na Duba suna ƙara, rage ko mayar da girman rubutu kawai ba tare da buɗe wannan akwatin ba, kuma suna aiki nan take ga kowane saƙon da aka buɗe. Canje-canjen da aka yi a nan suna aiki nan take idan ka danna Ok.
+set_view_note = HTML shi ne na asali. Yana nuna saƙon yadda aka aiko shi, kuma NVDA da JAWS suna karanta shi: idan shafin HTML ya buɗe, ZBox yana kashe sanarwar burauzar da kanta, yana sanya siginar karatu a layin farko na saƙon, kuma yana sa gajerun hanyoyin ZBox su ci gaba da aiki a cikin shafin, har da F6 don fitar da hankali daga cikinsa. Rubutu yana nuna wannan saƙon a matsayin rubutu na fili wanda ba a tsara ba a cikin akwatin gyara na yau da kullum -- babu hotuna, babu tsari, kuma babu abin da ya dogara da shigar injin burauza. Danna Ctrl+B a cikin saƙon da aka buɗe don canzawa ta kowace hanya.
+set_engine_note = Edge yana nuna CSS na zamani amma yana gudanar da shafin a wani tsari dabam, kuma yana ba mai karanta allo abin cikinsa ne kawai ta wata hanya da wxPython ba ta iya isa — don haka saƙo na iya buɗewa ba tare da wani abu mai karantuwa a cikinsa ba. MSHTML na tsoho shi ne injin da Outlook Express da Windows Mail suka yi amfani da shi: yana gudana a cikin tsari ɗaya kuma yana fitar da bishiyar takarda ta yau da kullum, don haka NVDA da JAWS suna karanta shi a yanayin bincike kamar kowane shafin yanar gizo. Zai fara aiki lokaci na gaba da aka buɗe saƙo.
+set_runtime_note = Windows Update ke kula da muhallin aiki na tsarin gaba ɗaya, don haka injin da ke karanta wasiƙarka na iya canzawa ba tare da sanarwa ba — haka duba saƙon HTML da ke aiki yadda ya kamata zai iya lalacewa a kwamfutar da babu abin da ya canza game da ZBox. Kwafin da aka haɗa a babban fayil na deps yana kulle ainihin sigar da aka gwada ZBox da ita. Gudanar da tools\get_webview2.bat don shigar da ɗaya. Idan babu kwafin da aka haɗa, ZBox yana amfani da muhallin aiki na tsarin gaba ɗaya ko ta yaya, don haka koyaushe yana farawa. Zai fara aiki lokaci na gaba da ZBox ya fara.
+set_sr_intro = Nawa ZBox yake bari mai karanta allonka ya furta yayin da saƙo ke buɗewa, da tsawon lokacin da sanarwarsa ta murya ke tsayawa.
+set_silence_note = Idan saƙon HTML ya buɗe, ZBox na iya riƙe latsa Ctrl na ƙarya har zuwa daƙiƙu 2 don kashe sanarwar burauza ta mai karanta allo. Take na saƙo ana amfani da shi a matsayin sunan shafi, wanda ke hana karanta adireshin base64 da babbar murya, amma mai karatu har yanzu yana sanar da sarrafawa da nau'in takarda a kan farkon saƙon, don haka wannan yana kunne a asali. Zaɓi A kashe don kashe shi, ko lokaci mai tsawo idan magana ta ci gaba da shigowa.
+set_focus_delay_note = Idan saƙon HTML ya gama lodawa, ZBox yana jira wannan lokacin kafin ya mayar masa da hankali. WebView2 ya bayar da rahoton an loda shafi da Windows ya gama bishiyar samuwar shafin ba lokaci ɗaya ba ne; mayar da hankali da wuri yana sa NVDA/JAWS su sanar da "Shafin abun ciki na yanar gizo" na gama-gari maimakon saƙon, ko su ba da rahoton saƙon ba ya samuwa na ɗan lokaci bayan buɗewa. Zaɓuɓɓukan suna daga daƙiƙa 0.1 zuwa daƙiƙa 1. Zaɓi lokaci mai tsawo idan har yanzu kana jin wannan, da gajere idan buɗewa ta yi ƙarfi, don buɗewa mai sauri.
+set_announce_note = Ctrl+U da Ctrl+Shift+U suna ba da rahoton mai aikawa a ƙaramin akwati da ke rufe kansa, saboda ana karanta sandar matsayi ne kawai idan mai karanta allonka ya kunna rahoton sandar matsayi. Wannan shi ne tsawon lokacin da akwatin ke tsayawa. Saita shi daidai da saurin maganarka: idan ya yi gajere sosai yana rufewa a tsakiyar jimla, wanda ke ɓata manufar. Kowane maɓalli yana rufe shi da wuri; maɓallan kibiya suna barin shi a buɗe don ka sake karantawa. Yana jiran maɓalli yana barin shi a buɗe har sai ka danna ɗaya.
+set_attachment_dir_note = Inda "Adana duka" ke rubuta abubuwan da aka haɗa idan saƙo yana da fiye da ɗaya. Ana ƙirƙirarsa ta atomatik idan babu shi. Saƙo mai abu ɗaya da aka haɗa har yanzu yana tambaya inda za a adana shi, kamar da. Bar wuri fanko don na asali:\n{path}
+set_autosave_note = Sau nawa shafin rubutu da aka buɗe yake adana kansa a Daftarori yayin da kake rubutu. Adana daftari (Ctrl+S) har yanzu yana adanawa idan an buƙata ta kowace hanya, kuma rufe shafi mai rubutun da ba a adana ba koyaushe yana ba da damar adana shi. A kashe yana kashe adanawa ta atomatik. Ƙasa da daƙiƙu 15 ba a bayarwa -- wannan zai zama tafiya zuwa sabar da ke gogayya da rubutunka.
+set_auto_purge_note = Yana cire saƙonni daga shara da saƙon banza har abada idan sun daɗe a can kwanakin nan -- sharewa har abada ɗaya da Zubar da shara da Zubar da saƙon banza ke yi idan an buƙata, ana gudanar da ita ta atomatik sau ɗaya a rana yayin da ZBox ke buɗe. A kunne a asali a kwanaki 30. A kashe yana kashe shi. Ba za a iya warware wannan ba da zarar an cire saƙo.
+set_bare_keys_note = Idan a kunne yake, latsa S, A, J, W ko K shi kaɗai a jerin saƙonni yana sauya tauraro, yana ajiyewa a ma'aji, yana yi wa saƙonnin da aka zaɓa alama a matsayin saƙon banza (Shift+J yana yi musu alama a matsayin ba saƙon banza ba), ko yana sa ido/yin watsi da zaren da zaɓin ke cikinsa, nan take -- Ajiye a ma'aji da Yi alama a matsayin saƙon banza ba su da tabbatarwa kuma ba su da warwarewa. Kashe shi yana mayar da S, A, J, W da K zuwa tsarin tsallake-tsallake na harafin farko na yau da kullum a jerin. Ctrl+S da Ctrl+Shift+A suna ci gaba da aiki ta kowace hanya. Yana aiki nan take.
+set_sounds_note = Gajerun sautuka don ci gaba, sababbin saƙonni, ayyukan aikawa, amsawa ko turawa, sharewa, da sakamakon nema. A kashe yana kashe kowane sauti a manhajar; sanarwar mai karanta allo da sandar matsayi ba su shafa ta kowace hanya.
+set_desktop_notifications_note = Sanarwar Windows ga kowane rukunin sabbin wasiƙu, dabam da sautin da ke sama. A kashe yana kashe ta ga kowane asusu; ana kuma iya yi wa asusu ɗaya shiru da kansa a Saitunan asusu da shaida.
+set_theme_note = Jigogi na musamman manyan fayiloli ne da ake sa wa cikin babban fayil na sounds na ZBox, kowanne yana ba da progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav da none_found.wav nasa. Fayil ɗin jigo da ya ɓace yana komawa ga sautin asali.
+set_theme_note_only_default = Jigogi na musamman manyan fayiloli ne da ake sa wa cikin babban fayil na sounds na ZBox, kowanne yana ba da progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav da none_found.wav nasa. Fayil ɗin jigo da ya ɓace yana komawa ga sautin asali. "default" kawai ke samuwa har sai ka ƙara wani babban fayil na jigo.
+set_lock_note = Idan ZBox ya fara yana neman ɗaya daga hanyoyin buɗewarka kafin a buɗe kowane asusu. Ɗaya daga cikinsu ya isa: maɓallin shiga, maɓallin tsaro, ko babbar kalmar sirri. Rufe zuwa tire ba fita ba ne kuma ba ya sake kullewa; Fayil > Fita da Fita na alamar tire suna yin hakan. Idan ba a yi rajistar komai ba kuma ba a saita babbar kalmar sirri ba, ana tsallake kulle maimakon kulle ka daga wasiƙarka.
+set_security_note = Babbar kalmar sirri ita kaɗai ce cikin ukun da ke ɓoye wani abu: ita ce ke ba wannan babban fayil damar buɗe kalmomin sirrin asusu da aka adana a wata kwamfuta. Maɓallin shiga ko maɓallin tsaro yana buɗe manhajar a wannan ɗaya kawai. Babu ɗayansu da ke maye gurbin babbar kalmar sirri a kwamfutar da ba a taɓa amfani da ZBox a kanta ba.
+set_private_mode_note = Ana karanta saƙonni daga sabar kuma ana riƙe su a ƙwaƙwalwa kawai. Ba a adana kwafin rashin intanet, saƙonnin da aka adana ko rajistar gyara kurakurai, kuma ana share abubuwan da aka buɗe da bayanan burauza na wasiƙar HTML idan ZBox ya rufe. Rufewa kuma yana kawo ƙarshen kowace shirin da ZBox ya fara, har da waɗanda ke nuna abin da aka haɗa, yana zubar da allon kwafi, kuma yana daina amincewa da wannan kwamfutar sai dai idan an kunna yanayin sirri daga gare ta. Windows har yanzu yana adana wasu bayanai da babu shirin da zai iya cirewa, kamar jerin faifan USB, fayil ɗin shafi, da rajistar riga-kafi da cibiyar sadarwa.
+title_private_mode = Yanayin sirri
+private_mode_need_master = Yanayin sirri yana buƙatar babbar kalmar sirri, saboda babbar kalmar sirri ce kaɗai ke buɗe asusunka a kwamfutar da ba taka ba. Saita ɗaya da maɓallin Babbar kalmar sirri, sannan ka kunna yanayin sirri.
+private_mode_enter_master = Shigar da babbar kalmar sirri don kunna yanayin sirri.
+private_mode_confirm = Yanayin sirri ba ya ajiye kwafin wasiƙarka a wannan kwamfutar ko faifan da ZBox ke gudana daga gare shi. Kunna shi yana share kwafin rashin intanet na ZBox, saƙonnin da aka adana, abubuwan da aka buɗe, bayanan burauza na wasiƙar HTML da rajistar gyara kurakurai. Ba a share komai a sabar imel ɗinka ba, kuma ana riƙe asusunka, abokan tuntuɓa da saitunanka. A kunna yanayin sirri?
+set_minimize_note = Ƙanƙanta ZBox yana ɓoye maɓallin sandar ayyukansa kuma yana barinsa yana gudana a bayan alamar tire. Danna hagu a kan alamar tire (ko Enter/Space idan tana da hankalin madannai) don dawo da taga.
+set_close_note = Maɓallin Rufe na taga, Alt+F4, da Ctrl+W a shafin Wasiƙa suna ɓoye ZBox a tire maimakon fita. Fayil > Fita (Ctrl+Shift+Q) da Fita na alamar tire koyaushe suna fitar da ZBox da gaske ta kowace hanya, don haka koyaushe akwai hanyar madannai ta fita ba tare da taɓa tire ba.
+set_stay_maximized_note = ZBox yana farawa a girma kuma ana mayar da shi girma idan ka rage shi. Sandar menu, sandar take da gefen taga ba su shafa ba -- wannan ba yanayin cikakken allo ne ba tare da gefe ba, don haka kowace gajeriyar hanyar menu ta maɓallin Alt tana ci gaba da aiki.
+set_run_at_startup_note = Yana kunna ZBox ta atomatik idan ka shiga Windows, ana buɗe shi kai tsaye a tire maimakon nuna tagarsa. Yana aiki nan take, ba sai farawa na gaba ba.
+set_desktop_shortcut_note = Yana sa gajeriyar hanyar ZBox a tebur ɗinka, yana maye gurbin wadda ke can tuni. Gajeriyar hanya tana adana ainihin wurin wannan babban fayil na ZBox, don haka idan ka mayar ko kwafi ZBox zuwa wani wuri, sake danna wannan a sabon kwafin don nuna gajeriyar hanyar tebur zuwa gare shi. Yana aiki nan take kuma ba ya jiran Ok.
+
+# The Address Book, its contact form and its groups.
+ab_name = Suna
+ab_phone = Waya
+ab_notes = Bayanai
+ab_heading = Littafin adireshi
+ab_contacts = Abokan tuntuɓa
+ab_new = &Sabo...
+ab_edit = &Gyara...
+ab_delete = &Share
+ab_import = &Shigo da...
+ab_export = &Fitar da...
+ab_groups_label = Ƙungiyoyi (jerin wasiƙa)
+ab_groups_name = Ƙungiyoyi
+ab_new_group = &Sabuwar ƙungiya...
+ab_rename_group = &Sauya sunan ƙungiya...
+ab_delete_group = &Share ƙungiya
+ab_manage_members = &Gudanar da mambobi...
+ab_all_contacts = Dukkan abokan tuntuɓa
+ab_add_member = Ƙara >>
+ab_remove_member = << Cire
+ab_members_of = Mambobin {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Ba a ƙamus ba:
+sp_not_in_dictionary_name = Ba a ƙamus ba
+sp_in_this_line_label = A wannan layin:
+sp_in_this_line_name = A wannan layin
+sp_suggestions_label = &Shawarwari:
+sp_suggestions_name = Shawarwari
+sp_replace_with_label = &Maye gurbin da:
+sp_replace_with_name = Maye gurbin da
+sp_replace = &Maye gurbin
+sp_replace_all = &Maye gurbin duka
+sp_ignore = &Yi watsi
+sp_ignore_all = &Yi watsi da duka
+sp_add_to_dictionary = &Ƙara cikin ƙamus
+btn_close = &Rufe
+
+# Privacy and Content Blocking.
+priv_remote_label = Abun ciki na nesa a cikin saƙonni:
+priv_block_remote = &Toshe abun ciki na nesa har sai na nema (an ba da shawara)
+priv_blocklist_label = Jerin toshe tallace-tallace da masu bin sawu:
+priv_block_known = &Toshe sanannun yankunan tallace-tallace da masu bin sawu
+priv_update_daily = &Sabunta jerin kowace rana a bayan fage
+priv_update_now = &Sabunta yanzu
+priv_junk_label = Ƙa'idojin saƙon banza:
+priv_check_inbox = &Duba sabuwar wasiƙar Akwatin Saƙo da masu aikawa da aka toshe da sanannun mahaɗan zamba ta yanar gizo
+priv_move_blocked = &Mayar da wasiƙar masu aikawa da aka toshe zuwa saƙon banza ta atomatik
+priv_update_phishing = &Sabunta jerin zamba ta yanar gizo yanzu
+priv_blocked_label = Masu aikawa da aka toshe:
+priv_blocked_name = Masu aikawa da aka toshe
+priv_remove_blocked = &Cire mai aikawa da aka toshe
+priv_never_junk_label = Masu aikawa da ba a taɓa ɗaukarsu a matsayin saƙon banza ba:
+priv_never_junk_name = Masu aikawa da ba a taɓa ɗaukarsu a matsayin saƙon banza ba
+priv_remove_never_junk = &Cire mai aikawa wanda ba saƙon banza ba
+priv_allowed_label = Masu aikawa da aka yarda su loda abun ciki na nesa:
+priv_allowed_name = Masu aikawa da aka yarda
+priv_remove_selected = &Cire mai aikawa da aka zaɓa
+
+# Message Filters.
+filt_rule_name = Sunan ƙa'ida
+filt_enabled = &An kunna
+filt_match_label = Dacewa:
+filt_match_all = &Daidaita da dukkan waɗannan (DA)
+filt_match_any = &Daidaita da ɗaya daga cikin waɗannan (KO)
+filt_conditions_label = Sharuɗɗa (bar ƙima fanko don tsallakewa):
+filt_condition_field = Filin sharaɗi {number}
+filt_condition_contains = Sharaɗi {number} yana ɗauke da
+filt_actions_label = Ayyuka:
+filt_mark_read = &Yi alama a matsayin an karanta
+filt_flag = &Saka tauraro a saƙon
+filt_move_label = Mayar zuwa babban fayil:
+filt_move_name = Mayar zuwa babban fayil
+filt_rules_name = Ƙa'idojin tacewa
+filt_new = &Sabuwar ƙa'ida...
+filt_edit = &Gyara ƙa'ida...
+filt_delete = &Share ƙa'ida
+filt_up = &Hawa sama
+filt_down = &Sauka ƙasa
+filt_run_label = Gudanar yanzu a babban fayil:
+filt_run_name = Babban fayil na Gudanar yanzu
+filt_run_now = &Gudanar yanzu
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Buɗe da maɓallin shiga (Windows Hello)
+unl_security_key = &Buɗe da maɓallin tsaro
+unl_master_password_label = &Babbar kalmar sirri:
+unl_master_password_name = Babbar kalmar sirri
+unl_unlock = &Buɗe
+unl_exit = &Fita daga ZBox
+unl_methods_label = &Hanyoyin da aka yi wa rajista:
+unl_methods_name = Hanyoyin buɗewa da aka yi wa rajista
+unl_add_passkey = &Ƙara maɓallin shiga…
+unl_add_key = &Ƙara maɓallin tsaro…
+unl_reassign = &Sake danƙa maɓallin shiga ga wannan kwamfutar…
+unl_test = &Gwada…
+unl_remove = &Cire
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Daga
+comp_to = Zuwa
+comp_cc = Kwafi
+comp_bcc = Kwafi na Ɓoye
+comp_subject = Take
+comp_attach_button = Haɗa fayil...
+comp_sending = Ana aikawa...
+comp_report_label = &Rahoto:
+comp_report_name = Rahoto
+comp_refresh = &Wartsake
+comp_copy = &Kwafa
+comp_preview_read = Yadda mai karɓa ke karanta shi
+comp_preview_source = HTML da za a aika
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Jikin saƙo
+mv_blocked_notice = Sanarwar abun ciki da aka toshe
+mv_show_remote = &Nuna abun ciki na nesa
+mv_always_allow = &Koyaushe a yarda da wannan mai aikawa
+mv_message_headers = Kanun saƙo
+mv_attachments = Abubuwan da aka haɗa
+mv_attachments_count = Abubuwan da aka haɗa ({count})
+mv_save_attachment = Adana: {filename}
+mv_save_all = Adana duka
+mv_html_view = Duba saƙo na HTML
+mv_saved_message = Saƙon da aka adana
+mv_show_remote_tip = Sake loda wannan saƙon tare da hotuna da salon nesansa. Sanannun masu bin sawu suna ci gaba da toshewa.
+mv_always_allow_tip = Loda abun ciki na nesa a kowane saƙo daga {sender}.
+
+# The search tab.
+srch_account = Asusu
+srch_folder = Babban fayil
+srch_for = Nemo
+srch_look_in = Nema a cikin
+srch_in_all = Duka
+srch_in_subject = Take
+srch_in_from = Daga
+srch_in_to = Zuwa
+srch_in_body = Jiki
+srch_date = Kwanan wata
+srch_date_any = Kowane lokaci
+srch_date_today = Yau
+srch_date_yesterday = Jiya
+srch_date_week = Kwanaki 7 na ƙarshe
+srch_date_month = Kwanaki 30 na ƙarshe
+srch_date_year = Wannan shekarar
+srch_date_custom = Tazara ta musamman
+srch_from_date = Daga kwanan wata (shekara-wata-rana, lokaci na zaɓi)
+srch_to_date = Zuwa kwanan wata (shekara-wata-rana, lokaci na zaɓi)
+srch_unread = Waɗanda ba a karanta ba kawai
+srch_flagged = Masu tauraro kawai
+srch_attachment = Yana da abin da aka haɗa
+
+# The signature editor.
+sig_editors = Masu gyaran sa hannu
+sig_formatted = Sa hannu, an tsara
+sig_source = Sa hannu, tushen HTML
+sig_plain_label = Madadin rubutu na fili (ana aikawa tare da HTML)
+sig_plain_name = Madadin rubutu na fili
+
+# About ZBox.
+about_text_name = Rubutu game da ZBox
+about_view_license = &Duba lasisi...
+about_google = &Kalmomin sirrin manhaja na Google...
+about_support = &Tallafa wa ZBox -- haɓakawa da kula da mutum ɗaya
+about_repos = &Ma'ajiyoyin manhajojin Harith a GitHub
+about_contact = &Tuntuɓi Harith
+btn_close_plain = Rufe
+btn_cancel_plain = Soke
+
+# The license window.
+eula_heading = Lasisin ZBox
+eula_text_name = Rubutun lasisin ZBox
+eula_third_party = Shafukan lasisi na abubuwan wasu kamfanoni:
+eula_agree = &Na yarda da sharuɗɗan da ke sama
+eula_agree_name = Na karanta kuma na yarda da sharuɗɗan lasisin ZBox
+eula_disagree = &Ban yarda ba
+eula_next = &Na gaba
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Rubutun bayanan ZBox
+doc_copy = Kwafa zuwa allon kwafi
+shortcuts_heading = Gajerun hanyoyin madannai
+shortcuts_text_name = Rubutun gajerun hanyoyin madannai
+
+# The main window's own panes.
+mf_toolbar = Babban sandar kayan aiki
+mf_tabs = Shafukan ZBox
+tree_heading = Asusu da manyan fayiloli
+tree_name = Itacen asusu da manyan fayiloli
+envlist_heading = Saƙonni
+envlist_name = Jerin saƙonni
+rdr_heading = Saƙo
+rdr_name = Mai karanta saƙo
+conv_heading_one = Tattaunawa: saƙo 1
+conv_heading_many = Tattaunawa: saƙonni {count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = An gama {completed} daga {total}.
+bulk_cancelling = Ana sokewa -- ana kammala saƙon yanzu...
+cache_clear_now = Share ma'ajiyar saƙonnin rashin intanet yanzu... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, an kare
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Sunan da za a nuna na zaɓi ne -- bar shi fanko don aikawa da sunan wannan asusun.
+acct_note_identity = Adireshin imel na iya bambanta da imel ɗin shiga idan mai ba ka sabis yana da yanki na musamman da aka haɗa da wannan akwatin wasiƙa. Ana aikawa da karɓar wasiƙa da adireshin da ke sama, yayin da shiga har yanzu yana amfani da imel ɗin shiga. Bar filin kalmar sirri fanko don riƙe kalmar sirrin da aka adana tuni na wannan asusun -- misali bayan canza kalmar sirrin manhajar Gmail, rubuta sabuwa a nan; in ba haka ba bar shi fanko.
+acct_note_identities = Sauran adireshin da wannan asusun zai iya aikawa da amsawa da su. Amsa saƙon da aka aika zuwa ɗaya daga cikinsu yana mayar da Daga ya zama wannan adireshin maimakon na sama.
+acct_note_signature = Ana ƙarawa a kowane sabon saƙo, amsa da turawa da ake aikawa daga wannan asusun, ƙasa da layin "-- ". Bar fanko don babu. Gyara sa hannu yana buɗe edita mai tsari, inda ake samun rubutu mai kauri, jerin abubuwa da mahaɗai; akwatin da ke sama sai ya ɗauki sigar rubutu na fili da ke tafiya tare da shi.
+acct_note_junk = Babban fayil na gaske da Yi alama a matsayin saƙon banza ke mayar da saƙonni zuwa gare shi. "{automatic}" yana amfani da irin zaton da ke gane mai bayarwa da Ajiye a ma'aji da shara ke amfani da shi tuni; saita wannan idan zaton ba daidai ba ne ko babban fayil ɗin saƙon banza naka yana da suna na musamman.
+acct_note_disable = Ba a taɓa tuntuɓar asusun da aka kashe ba -- babu IDLE, babu wartsakewa na lokaci-lokaci, babu komai -- har sai an sake kunna shi. Har yanzu yana nuna a cikin itacen, an yi masa alama (an kashe), kuma wasiƙarsa da aka riga aka sauke tana nan ba tare da intanet ba. Maɓallin sauyawa iri ɗaya da Asusun > Kashe asusu ko menu na yanayin asusun da kansa; wannan wani wuri ne kawai na isa gare shi.
+acct_note_default = Manyan fayilolin wannan asusun suna nuna da farko a cikin itacen, kuma sabon saƙo yana aikawa daga gare shi a asali sai dai idan an canza da hannu a wurin rubutu. Ba ya shafar adireshin da amsa ko turawa ke amfani da shi -- hakan yana bin saƙon da ake amsawa (duba ƙarin shaidu a sama). Koyaushe akwai asusun asali ɗaya daidai, don haka cire alama a kansa ba tare da yin alama a wani ba yana barin shi yadda yake -- maimakon haka yi alama a akwatin wani asusun don ba shi matsayin asali.
+acct_note_mute = &Yin shiru yana toshe sautin sabuwar wasiƙa na wannan asusun, sanarwa ta murya da sanarwar Windows, ko ta yaya aka saita su. Ba ya shafar sauran asusun, kuma har yanzu yana ƙarƙashin manyan maɓallan Saituna > Sautuka da sanarwa (sautuka da sanarwar tebur gabaɗaya).
+wiz_note_app_password = Idan ka riga ka ƙirƙiri kalmar sirrin manhaja don ZBox, danna Na gaba don ci gaba.
+wiz_note_login = Bayanan shiga.\nIdan imel ɗin shigarka ya bambanta da adireshin da ke sama, misali asusun mai ba ka sabis login@example.net ne amma kana so ka aika kuma ka karɓa a matsayin you@example.org, shigar da imel ɗin shiga a nan. Za ka iya saita adireshin aikawa na musamman daga baya a Saitunan asusu da shaida.
+wiz_note_servers = Saitunan sabar, an cika su tun da farko inda aka gane yankin. Gyara duk abin da ya kamata ya bambanta.
+wiz_preset_none = Ba a sami saitin da aka riga aka tsara don wannan yanki ba. Shigar da saitunan sabar mai ba ka sabis da hannu; shafukan taimakon mai ba ka sabis suna lissafa su.
+ab_note_groups = Rubuta sunan ƙungiya a filin Zuwa, Kwafi ko Kwafi na Ɓoye na taga rubutu don cika dukkan mambobinta lokaci guda.
+cache_note_intro = Waɗannan suna cire kwafin ZBox na cikin gida kawai. Ba a share komai daga kowace sabar imel, kuma ana sake sauke saƙon da aka cire a lokaci na gaba da ka buɗe shi.
+cache_note_age = Tsabtacewa ta atomatik tana gudana sau ɗaya a rana, idan ZBox bai yi aikin madannai ba na mintuna goma kuma babu saƙon da aka buɗe. Tana bin ranar kowane saƙo da kanta, har da saƙonnin da har yanzu suke cikin asusunka.
+filt_note_intro = Ana gudanar da ƙa'idoji bisa jeri, daga sama zuwa ƙasa, suna gwada Daga, Zuwa da Take. Ana amfani da su ta atomatik ga sabuwar wasiƙa idan ta iso a Akwatin Saƙon wannan asusun; yi amfani da Gudanar yanzu a ƙasa don amfani da su ga saƙonnin da ke cikin babban fayil tuni.
+filt_note_run_now = Yana amfani da kowace ƙa'ida da aka kunna a sama, bisa jeri, ga kowane saƙon da ke cikin babban fayil da aka zaɓa tuni -- yana adana canje-canjenka tukuna, kamar Ok.
+mp_note_intro = An saita waɗannan asusun a wata kwamfuta. Shigar da babbar kalmar sirri don buɗe kalmomin sirrinsu da aka adana a nan. Za a tambaye ka sau ɗaya kawai a wannan kwamfutar.\n\nBa tare da ita ba, kowane asusu zai sake shiga sabar imel ɗinsa.
+priv_note_remote = Hotuna, takardun salo da rubutu da saƙo ke loda daga intanet suna gaya wa mai aikawa a daidai lokacin da ka buɗe shi, da kuma daga ina. Idan wannan a kunne yake, babu ɗayansu da ke lodawa: sanarwa tana bayyana a saman saƙon tana faɗin abin da aka toshe, kuma Ctrl+Shift+I yana loda shi ga wannan saƙon ɗaya. Hotunan da aka haɗa da saƙon da kansa koyaushe suna nuna. Ana cire rubutun shirye-shirye da firam da aka saka ko ta yaya kuma ba a taɓa loda su ba.
+priv_note_blocklist = Wannan shi ne mataki na biyu. Yana da muhimmanci idan ka loda abun ciki na nesa na saƙo, ko ka yarda da mai aikawa: hotuna suna lodawa, amma duk abin da aka bayar daga sanannen yankin bin sawu ko talla har yanzu ba ya lodawa. Ana sauke jerin daga jerin tallace-tallace da masu bin sawu na jama'a a haɗa; sabuntawa tana ɗaukar daƙiƙa ɗaya ko biyu kuma tana gudana a bayan fage.
+priv_note_junk = Babu zato. Yi alama a matsayin saƙon banza yana ƙara mai aikawa cikin jerin da aka toshe a ƙasa, sai dai idan saƙon ya zo ta jerin wasiƙa. Yi alama a matsayin ba saƙon banza ba yana ƙara mai aikawa cikin jerin waɗanda ba saƙon banza ba kuma ba a sake duba wannan saƙon ba. Sabon saƙo daga mai aikawa da aka toshe ana masa alama Mai aikawa da aka toshe a jerin; wanda ke mahaɗa zuwa sanannen shafin zamba ko ƙwayar cuta ana masa alama Mai yiwuwa zamba ta yanar gizo. Tace spam ta mai ba ka sabis na imel tana ci gaba da aiki kamar da.
+priv_status_phishing_updating = Jerin zamba ta yanar gizo: ana sabuntawa a bayan fage. Sake buɗe wannan akwatin don ganin sakamakon.
+priv_status_updating = Ana sabuntawa a bayan fage. Sake buɗe wannan akwatin don ganin sakamakon.
+rel_note_intro = Saƙonni masu alaƙa da "{subject}" ta kanun Message-ID/References ɗinsu, a cikin dukkan manyan fayiloli na wannan asusun.
+srch_note_intro = Nemi kalmomi a dukkan asusun da manyan fayiloli, ko ka taƙaita neman da zaɓuɓɓukan da ke ƙasa. Bar kalmomin fanko don nemo saƙonni ta kwanan wata ko akwatunan zaɓi kawai.
+sig_note_plain = Bar madadin rubutu na fili fanko kuma za a rubuta shi daga sa hannun da aka tsara idan ka danna Adana.
+unified_note_intro = Zaɓi manyan fayilolin da za a haɗa a dukkan asusun. Kowanne da aka yi wa alama yana zama shigarwa ɗaya a cikin itacen da ke haɗa wannan babban fayil daga dukkan asusunka.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Game da ZBox
+title_account_settings = Saitunan asusu da shaida: {name}
+title_new_account = Sabon asusu
+title_address_book = Littafin adireshi
+title_members = Mambobi: {name}
+ab_group_name_prompt = Sunan ƙungiya:
+title_new_group = Sabuwar ƙungiya
+title_cache_cleanup = Saitin tsabtace ma'ajiyar wucin gadi
+cache_age_prompt = Cire saƙonnin ma'ajiya da suka girmi wannan ta atomatik:
+title_automatic_cleanup = Tsabtacewa ta atomatik
+comp_link_prompt = Adireshin mahaɗi:
+title_insert_link = Saka mahaɗi
+title_composer_diagnostics = Binciken rubutu
+title_formatted_preview = Dubawa mai tsari
+title_license_agreement = Yarjejeniyar lasisin ZBox
+title_message_filters = Tacewar saƙonni: {account}
+title_master_password_required = Ana buƙatar babbar kalmar sirri
+title_privacy_dialog = Sirri da toshe abun ciki
+title_privacy = Sirri
+title_settings = Saituna
+set_tab_general = Gabaɗaya
+set_tab_personalization = Keɓantawa
+set_tab_accessibility = Samuwa da gajerun maɓallai
+set_tab_maintenance = Kulawa da tsabtacewa
+set_tab_sounds = Sautuka da sanarwa
+set_tab_security = Tsaro
+title_unified_folders = Manyan fayiloli na haɗaka
+title_zbox_locked = ZBox a kulle yake
+title_message_view = Duba saƙo
+title_remote_content = Abun ciki na nesa
+title_refresh = Wartsake
+title_refresh_all = Wartsake duka
+mv_choose_folder = Zaɓi babban fayil don adana abin da aka haɗa
+title_thread = Zare
+title_inbox = Akwatin Saƙo
+title_compose = Rubuta
+title_watch_thread = Sa ido kan zare
+title_ignore_thread = Yi watsi da zare
+title_edit_signature = Gyara sa hannu
+title_account = Asusu
+mf_folder_name_prompt = Sunan babban fayil:
+mf_new_name_prompt = Sabon suna:
+title_refresh_all_accounts = Wartsake dukkan asusun
+title_sender = Mai aikawa
+title_new_mail = Sabuwar wasiƙa
+mf_export_dialog_title = Fitar da dukkan asusu {count} da saituna
+mf_related_tab = Masu alaƙa: {subject}
+title_hotkeys_diagnostic = Binciken gajerun maɓallai
+set_choose_attachment_dir = Zaɓi babban fayil na adana abubuwan da aka haɗa
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox a kulle yake. Yi amfani da kowace hanya daga cikin na ƙasa don buɗe shi. Soke yana rufe ZBox ba tare da buɗe kowane asusu ba.
+unl_note_foreign_passkey = Maɓallin shiga da aka adana tare da wannan babban fayil na wata kwamfuta ne, don haka ba za a iya amfani da shi a nan ba. Buɗe da maɓallin tsaro ko babbar kalmar sirri, sannan ka yi amfani da Saituna, Sirri da tsaro, Hanyoyin buɗewa don saita maɓallin shiga a wannan kwamfutar.
+unl_note_methods = Kowace ɗaya daga waɗannan tana buɗe ZBox idan kulle manhaja yana kunne, tare da babbar kalmar sirri. Maɓallin shiga yana amfani da Windows Hello a wannan kwamfutar; maɓallin tsaro maɓallin FIDO2 ne a USB ko NFC kuma yana aiki a kowace kwamfuta da ka toshe shi.
+unl_note_not_encryption = Waɗannan suna buɗe manhajar. Ba sa ɓoye komai: babbar kalmar sirri har yanzu ita kaɗai ce za ta iya buɗe kalmomin sirrin asusu da aka adana a kwamfutar da ba a taɓa amfani da wannan babban fayil a kanta ba. Dole ne a saita ta tukuna, kuma babu ɗayansu da za a iya ƙarawa har sai an yi hakan.
+unl_add_passkey_unavailable = &Ƙara maɓallin shiga (ba ya samuwa)
+unl_add_key_unavailable = &Ƙara maɓallin tsaro (ba ya samuwa)
+unl_reassign_unavailable = &Sake danƙa maɓallin shiga ga wannan kwamfutar (ba ya samuwa)
+unl_status_cancelled_passkey = An soke maɓallin shiga. ZBox har yanzu a kulle yake.
+unl_status_cancelled_key = An soke maɓallin tsaro. ZBox har yanzu a kulle yake.
+unl_status_enter_password = Shigar da babbar kalmar sirri.
+unl_status_no_master = Ba a saita babbar kalmar sirri ba, don haka ba za a iya ƙara maɓallin shiga ko maɓallin tsaro tukuna ba. Saita ɗaya da maɓallin Babbar kalmar sirri a Saituna, Sirri da tsaro, sannan ka dawo nan. Babbar kalmar sirri ita ce ke buɗe kalmomin sirrin asusunka da aka adana a wata kwamfuta; maɓallin shiga yana buɗe manhajar a wannan ɗaya kawai, don haka ba zai iya tsayawa shi kaɗai ba.
+unl_status_unsupported = Windows na wannan kwamfutar ba ya goyon bayan maɓallan shiga ko maɓallan tsaro, don haka babbar kalmar sirri ce kaɗai za ta iya buɗe ZBox a nan.
+unl_status_foreign_one = Maɓallin shiga 1 na wata kwamfuta ne kuma ba zai iya buɗe ZBox a nan ba. Sake danƙawa yana maye gurbinsu da wanda aka yi a wannan kwamfutar.
+unl_status_foreign_many = Maɓallan shiga {count} na wata kwamfuta ne kuma ba za su iya buɗe ZBox a nan ba. Sake danƙawa yana maye gurbinsu da wanda aka yi a wannan kwamfutar.
+unl_status_foreign_one_no_hello = Maɓallin shiga 1 na wata kwamfuta ne kuma ba zai iya buɗe ZBox a nan ba. Ba a saita Windows Hello a nan ba, don haka ba za a iya maye gurbinsu a wannan kwamfutar ba; Cire yana mantawa da su.
+unl_status_foreign_many_no_hello = Maɓallan shiga {count} na wata kwamfuta ne kuma ba za su iya buɗe ZBox a nan ba. Ba a saita Windows Hello a nan ba, don haka ba za a iya maye gurbinsu a wannan kwamfutar ba; Cire yana mantawa da su.
+unl_status_no_hello = Ba a saita Windows Hello a wannan kwamfutar ba, don haka ba za a iya ƙara maɓallin shiga a nan ba. Har yanzu ana iya ƙara maɓallin tsaro.
+unl_status_none_registered = Ba a yi wa wata hanyar buɗewa rajista ba tukuna.
+unl_status_add_cancelled_passkey = An soke ƙara maɓallin shiga.
+unl_status_add_cancelled_key = An soke ƙara maɓallin tsaro.
+unl_status_added = An ƙara: {name}.
+unl_status_reassign_cancelled = An soke sake danƙawa. Ba a canza komai ba.
+unl_status_reassigned = An ƙara {name} kuma an manta {count} daga wasu kwamfutoci.
+unl_status_test_cancelled = An soke gwajin.
+unl_status_removed = An cire.
+unl_remove_warning_last = A cire {name}?\n\nWannan ita ce hanyar buɗewa kaɗai da aka yi wa rajista kuma ba a saita babbar kalmar sirri ba, don haka idan kulle manhaja yana kunne babu abin da zai rage don buɗe ZBox. Ana tsallake kulle maimakon kulle ka a waje, amma ZBox zai buɗe ba tare da kulle ba.
+unl_remove_warning = A cire {name}? ZBox ba zai karɓe ta ba kuma.
+ab_col_email = Imel
+ab_col_name = Suna
+ab_col_phone = Waya
+ab_no_contacts = Babu abokan tuntuɓa tukuna.
+acct_auto_check = Duba sabbin saƙonni ta atomatik
+acct_note_auto_check = A kashe: ZBox ba ya tuntuɓar wannan asusun da kansa -- babu sa ido kan sabuwar wasiƙa, babu wartsakewa na lokaci, babu saukewa a bayan fage -- don sabar maras tabbaci ba za ta rage gudun sauran asusun ba. Wasiƙarsa da aka sauke tana buɗewa har yanzu, kuma Wartsake (F5), aikawa da sharewa har yanzu suna isa sabar. Daidai yake da Dakatar da dubawa ta atomatik a menu na Kayan Aiki ko menu na yanayin asusun.
+bl_day_ago = kwana 1 da ya wuce
+bl_days_ago = kwanaki {days} da suka wuce
+bl_label_blocklists = Jerin toshewa
+bl_label_phishing = Jerin zamba ta yanar gizo
+bl_last_failed = Ƙoƙarin ƙarshe ya gaza: %s
+bl_not_downloaded = Ba a sauke ba tukuna.
+bl_save_failed = An sauke %s amma ba a iya adana shi ba: %s
+bl_seed_only = Yankuna %s daga jerin da aka gina a ciki. Ba a taɓa sabunta shi daga intanet ba tukuna.
+bl_some_failed = Wasu tushe sun gaza: %s
+bl_some_unreachable = Ba a iya isa ga wasu tushe ba: %s
+bl_status_line = Yankuna %s. An sabunta na ƙarshe %s.
+bl_up_to_date = %s ya riga ya zama na yanzu.
+bl_update_failed = Ba a iya sabunta %s ba: %s
+bl_updated = An sabunta %s: yankuna %s.
+cc_age_choice = Kowace ma'ajiyar saƙo da ta girmi %s
+cc_auto_button = Tsabtacewa ta atomatik: saƙonnin ma'ajiya da suka girmi %s...
+comp_btn_discard = &Jefar
+comp_btn_keep_editing = &Ci gaba da gyarawa
+comp_btn_save_draft = &Adana daftari
+comp_no_account = Ba a saita asusu ba
+comp_saving_draft = Ana adana daftari…
+comp_this_message = wannan saƙon
+comp_unsent_save_q = A adana %s a matsayin daftari kafin rufewa?
+comp_unsent_tray_q = A adana %s a matsayin daftari kafin ZBox ya tafi tire?
+doc_unreadable = Ba a iya karanta fayil ɗin bayanan ba:
+envlist_all_disabled = An kashe kowane asusu.
+envlist_col_date = Kwanan wata
+envlist_col_from = Daga
+envlist_col_status = Matsayi
+envlist_col_subject = Take
+envlist_collapsed = An naɗe (%d)
+envlist_empty = Babu saƙonni a wannan babban fayil.
+envlist_loading = Ana loda saƙonni...
+envlist_no_accounts = Ba a saita asusu ba tukuna.
+envlist_no_ignored = Babu zaren da aka yi watsi da su a wannan babban fayil.
+envlist_no_watched = Babu zaren da ake sa ido a wannan babban fayil.
+envlist_select_folder = Zaɓi asusu ko babban fayil don loda saƙonni.
+eula_link_0 = Buɗe shafin lasisin Himalaya a burauzarka
+eula_link_1 = Buɗe shafin lasisin StevenBlack hosts a burauzarka
+eula_link_2 = Buɗe shafin lasisin EasyList/EasyPrivacy a burauzarka
+eula_link_3 = Buɗe shafin lasisin Phishing.Database a burauzarka
+eula_read_note = Karanta lasisin da ke ƙasa, har da sassan wasu kamfanoni. Dole ne ka yi alama a Na yarda kafin Na gaba ya samu. Ban yarda ba yana rufe ZBox ba tare da fara shi ba, kuma yana cire abin da wannan gudanarwar ta ƙirƙira zuwa yanzu.
+eula_unreadable = Ba a iya karanta fayil ɗin lasisi ba:\n%s
+filters_title = Gudanar da tacewa
+flag_title = Saka tauraro a saƙo
+folder_type_archive = Ma'aji
+folder_type_drafts = Daftarori
+folder_type_inbox = Akwatin Saƙo
+folder_type_junk = Saƙon banza
+folder_type_sent = An Aika
+folder_type_trash = Shara
+mime_application_json = Fayil na JSON
+mime_application_msword = Takardar Word
+mime_application_octet_stream = Fayil na binary
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Takardar lissafi ta Excel
+mime_application_vnd_ms_powerpoint = Gabatarwar PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Gabatarwar PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Takardar lissafi ta Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Takardar Word
+mime_application_xml = Fayil na XML
+mime_application_zip = Ma'ajiyar ZIP
+mime_audio_mpeg = Sautin MP3
+mime_audio_ogg = Sautin OGG
+mime_audio_wav = Sautin WAV
+mime_image_bmp = Hoton BMP
+mime_image_gif = Hoton GIF
+mime_image_jpeg = Hoton JPEG
+mime_image_png = Hoton PNG
+mime_image_svg_xml = Hoton SVG
+mime_image_webp = Hoton WebP
+mime_text_csv = Fayil na CSV
+mime_text_html = Fayil na HTML
+mime_text_plain = Fayil na rubutu
+mime_video_mp4 = Bidiyon MP4
+mime_video_x_msvideo = Bidiyon AVI
+move_title_junk = Yi alama a matsayin saƙon banza
+move_title_move_to = Mayar zuwa
+move_title_not_junk = Yi alama a matsayin ba saƙon banza ba
+mp_explain_set = An saita babbar kalmar sirri. Ita ce ke ba wannan babban fayil na ZBox damar buɗe kalmomin sirrin asusunsa da aka adana a wata kwamfuta daban.\n\nBar akwatunan sabuwar kalmar sirri guda biyu fanko ka danna Ok don cire ta. Cire ta ba ya shafar wannan kwamfutar, amma babban fayil ɗin ba zai ƙara aiki a kowace wata ba tare da sake shigar da kowane asusu ba.
+mp_explain_unset = Ba a saita babbar kalmar sirri ba, don haka ana iya karanta kalmomin sirrin asusu da aka adana a wannan kwamfutar da wannan asusun Windows kawai. Idan ka kwafi babban fayil zuwa wani wuri, kowane asusu zai sake shiga sabar imel ɗinsa.\n\nSaita ɗaya kuma ZBox zai nemi ta sau ɗaya a kowace sabuwar kwamfuta, sannan ya buɗe kamar yadda aka saba a can daga nan gaba. Wannan kwamfutar ba za ta sake tambaya ba.\n\nRubuta ta ka ajiye ta a wuri mai aminci. Ba a adana ta a ko'ina ba kuma ba za a iya maido ta ba: idan ka manta ta, kowane asusu zai sake shiga sabar imel ɗinsa.
+mp_label_confirm = &Tabbatar da sabuwar babbar kalmar sirri:
+mp_label_current = &Babbar kalmar sirri ta yanzu:
+mp_label_master = &Babbar kalmar sirri:
+mp_label_new = &Sabuwar babbar kalmar sirri:
+mp_name_confirm = Tabbatar da sabuwar babbar kalmar sirri
+mp_name_current = Babbar kalmar sirri ta yanzu
+mp_name_master = Babbar kalmar sirri
+mp_name_new = Sabuwar babbar kalmar sirri
+mp_prompt_existing = Kalmomin sirrin asusunka da aka adana suna da kariya a wannan kwamfutar kawai. Saita babbar kalmar sirri domin a iya buɗe su idan ka mayar da ZBox zuwa wata.
+mp_prompt_first_run = ZBox na gab da adana kalmomin sirrin asusunka. Saita babbar kalmar sirri yanzu domin har yanzu a iya buɗe su idan ka mayar da ZBox zuwa wata kwamfuta.
+mp_prompt_new_account = ZBox na gab da adana kalmar sirrin wannan asusun. Saita babbar kalmar sirri tukuna domin har yanzu a iya buɗe asusun idan ka mayar da ZBox zuwa wata kwamfuta.
+mp_removed_done = An cire babbar kalmar sirri. Kalmomin sirrin da aka adana yanzu suna aiki a wannan kwamfutar da wannan asusun Windows kawai.
+mp_set_done = An saita babbar kalmar sirri. ZBox zai nemi ta sau ɗaya a kowace sabuwar kwamfuta da aka buɗe wannan babban fayil a kanta, sannan ya buɗe kamar yadda aka saba a can daga baya.
+mv_body_title = Jikin saƙo
+mv_col_format = Tsari
+mv_col_name = Suna
+mv_col_size = Girma
+mv_format_unknown = Ba a sani ba
+mv_size_unknown = Ba a san girma ba
+na_account_settings = Saitunan asusu da shaida
+na_disable_account = Kashe asusu
+na_edit_signature = Gyara sa hannu
+na_message_filters = Tacewar saƙonni
+na_mute_account = Yi wa asusu shiru
+na_pause_auto_check = Dakatar da dubawa ta atomatik
+na_remove_account = Cire asusu
+na_set_default = Saita a matsayin asusun asali
+no_offline_copy = Babu kwafin %s na rashin intanet. Buɗe shi idan kana kan intanet, ko ka yi amfani da Fayil, Ba tare da intanet ba, Daidaita yanzu.
+perm_delete_confirm = {msg} Wannan yana tsallake babban fayil na shara kuma ba za a iya warware shi ba.
+perm_delete_many = A share saƙonni {count} har abada?
+perm_delete_one = A share saƙo {count} har abada?
+preset_note_apple = Apple yana buƙatar kalmar sirri ta musamman ta manhaja.
+preset_note_fastmail = Fastmail yana buƙatar kalmar sirrin manhaja.
+preset_note_google = Google yana buƙatar kalmar sirrin manhaja ko OAuth2, ba kalmar sirrinka ta yau da kullum ba.
+preset_note_proton = ProtonMail yana buƙatar manhajar ProtonMail Bridge ta yi gudu a cikin gida.
+preset_note_yahoo = Yahoo yana buƙatar kalmar sirrin manhaja.
+priv_phishing_not_loaded = Jerin zamba ta yanar gizo: ba a loda ba tukuna. Ana sauke shi a karon farko idan waɗannan ƙa'idoji suna kunne kuma ZBox yana kan intanet.
+priv_phishing_prefix = Jerin zamba ta yanar gizo:
+priv_status_unavailable = Matsayin jerin toshewa ba ya samuwa.
+rdr_load_failed = Ba a iya loda saƙon ba.\n\n{message}
+rdr_loading = Ana loda saƙo...
+rdr_select_message = Zaɓi saƙo don karanta shi a nan.
+set_autosave_off = A kashe — yi amfani da Adana daftari (Ctrl+S) don adanawa da hannu
+set_autosave_seconds = Kowace daƙiƙa {seconds}
+set_no_unlock = Babu maɓallin shiga ko maɓallin tsaro da za a iya amfani da shi a nan
+set_purge_days = Bayan kwanaki {days}
+set_purge_off = A kashe — ba a taɓa share shara da saƙon banza ta atomatik ba
+set_purge_one_day = Bayan kwana 1
+set_val_seconds = daƙiƙa {seconds}
+set_val_one_second = daƙiƙa 1
+set_silence_off = A kashe
+set_announce_wait = Yana jiran maɓalli
+set_autosave_minutes = Kowane minti {minutes}
+set_autosave_one_minute = Kowane minti
+set_rt_bundled_installed = Muhallin aiki da aka haɗa: an shigar.
+set_rt_bundled_many = Muhallin aiki da aka haɗa: an shigar da %s.
+set_rt_bundled_none = Muhallin aiki da aka haɗa: babu wanda aka shigar, don haka ZBox yana amfani da na tsarin gaba ɗaya.
+set_rt_bundled_unknown = Muhallin aiki da aka haɗa: ba a iya tantancewa ba.
+set_rt_bundled_ver = Muhallin aiki da aka haɗa: an shigar da sigar %s.
+set_rt_system_unknown = Muhallin aiki na tsarin gaba ɗaya: ba a iya tantance sigar ba.
+set_rt_system_ver = Muhallin aiki na tsarin gaba ɗaya: sigar %s.
+set_unlock_many = Ana iya amfani da hanyoyin buɗewa %d a nan
+set_unlock_unreadable = Ba a iya karanta hanyoyin buɗewa ba
+sig_tab_formatted = An tsara
+sig_tab_source = Tushen HTML
+srch_all_accounts = Dukkan asusun
+srch_all_folders = Dukkan manyan fayiloli
+tab_mail = Wasiƙa
+tab_new_message = Sabon saƙo
+tab_saved_message = Saƙon da aka adana
+title_copy_to_err = Kwafa zuwa
+title_mark_message = Yi alama a saƙo
+title_unsent_message = Saƙon da ba a aika ba
+tree_unified_root = Manyan fayiloli na haɗaka
+unlock_kind_passkey = Maɓallin shiga (Windows Hello)
+unlock_kind_security_key = Maɓallin tsaro
+unlock_prompt_message = Windows na neman ka tabbatar. Amsa tambayarta da Windows Hello, PIN ɗinka ko maɓallin tsaronka. Wannan taga yana rufe kansa idan Windows ta gama.
+unlock_prompt_title = Tsaron Windows
+unlock_registering = Ana yi wa wannan hanyar buɗewa rajista
+unlock_the_passkey = Maɓallin shiga
+unlock_the_security_key = Maɓallin tsaro
+wildcard_eml = Fayilolin imel (*.eml)|*.eml|Dukkan fayiloli (*.*)|*.*
+wildcard_export = Fitarwar ZBox (*.json)|*.json
+wiz_not_supported = BA A TALLAFA BA: {name}. {note} Ba za a iya ƙara wannan asusun a ZBox ba.
+stock_apply = &Yi amfani
+stock_cancel = Soke
+stock_close = &Rufe
+stock_help = &Taimako
+stock_no = &A'a
+stock_ok = Ok
+stock_yes = &Eh
+wiz_btn_back = &< Baya
+wiz_btn_finish = &Gama
+wiz_btn_next = &Na gaba >
+acct_unsaved_q = A adana canje-canjen wannan asusun?
+btn_save = &Adana
+spell_add_to_dictionary = &Ƙara cikin ƙamus
+spell_no_suggestions = Babu shawarwari
+title_signature_for = Sa hannu: {account}
+title_mark_folder_read = Yi wa babban fayil alama a matsayin an karanta
+title_update_available = Sabuntawar ZBox
+update_available = ZBox {new} yana nan. Kana da {current}.
+upd_notes_label = &Bayanan fitowa:
+upd_no_notes = Babu bayanan fitowa.
+upd_notes_name = Bayanan fitowa
+upd_update_now = &Eh, sabunta yanzu
+upd_remind_later = &Tuna min daga baya
+title_update_download = Ana sauke sabuntawar ZBox
+upd_downloading = Ana sauke ZBox {version}...
+upd_progress_name = Ci gaban saukewa
+upd_cancel = &Soke
+upd_cancelling = Ana sokewa...
+set_updates_label = Sabuntawa:
+set_update_auto = &Duba sabuntawa ta atomatik
+set_update_mode_label = Idan aka sami sabuntawa:
+set_update_ask = &Tambaye ni
+set_update_silent = &Sauke kuma shigar da shiru
+set_update_note = ZBox yana duba GitHub don sabon fitowa sau ɗaya a rana a mafi yawa, kawai idan ba shi da aiki, kuma ba ya aika komai sai lambar sigarsa. Tambaye ni yana nuna sabuwar sigar da bayanan fitowarta, tare da Eh, sabunta yanzu da Tuna min daga baya. Sauke kuma shigar da shiru yana ɗauko sabuntawar a lokacin da ba shi da aiki kuma ya shigar da ita idan ka fita daga ZBox gaba ɗaya a gaba, ba a lokacin da kake aiki ba. Sabuntawa tana maye gurbin fayilolin shirin ZBox kawai: asusunka, kalmomin sirri, saituna, wasiƙa, rajista, jigogin sauti da kowane harshe da ka ƙara ba a taɓa su ba, kuma ana riƙe sigar da ta gabata a dawo da ita da kanta idan sabuwar ba ta fara ba. Taimako, Sabuntawa yana da Duba sabuntawa yanzu da shafin fitowa don sabuntawa da hannu.
+set_update_check_now = &Duba yanzu
+mv_attachment_button = {filename} ({format})
+att_open = Buɗe
+att_save = Adana...
+att_save_all = Adana dukkan abubuwan da aka haɗa
+title_save_attachment = Adana abin da aka haɗa
+title_full_headers = Cikakkun kanun saƙo
+hdr_copy_all = Kwafa duka
+acct_identity_own_signature = Yi amfani da sa hannunsa na kansa
+acct_identity_own_reply_to = Yi amfani da adireshin Amsa-zuwa nasa na kansa
+acct_identity_reply_to = Adireshin Amsa-zuwa
+acct_identity_always_cc = Koyaushe a aika Kwafi zuwa waɗannan adireshin
+acct_identity_cc = Adireshin Kwafi
+acct_identity_always_bcc = Koyaushe a aika Kwafi na Ɓoye zuwa waɗannan adireshin
+acct_identity_bcc = Adireshin Kwafi na Ɓoye
+acct_identity_own_folders = Yi amfani da manyan fayilolin Daftarori da An Aika nasa na kansa
+acct_identity_drafts = Babban fayil na Daftarori
+acct_identity_sent = Babban fayil na An Aika
+acct_identity_own_smtp = Yi amfani da sabar fita tasa ta kansa
+acct_identity_smtp_login = Sunan shiga na fita
+acct_identity_smtp_password = Kalmar sirri ta fita
+acct_identity_test_smtp = &Gwada sabar fita
+acct_identity_note_smtp = Bar sunan shiga fanko don shiga da adireshin imel na wannan shaida. Kwafin da aka aika har yanzu yana zuwa babban fayil na An Aika na wannan asusun, ko babban fayil na An Aika na wannan shaida idan tana da nata.
+identity_field_required = Cika {field}, ko ka cire alamar akwatinsa.
+identity_field_invalid = {field} yana da adireshin da ba shi da inganci.
+identity_folders_required = Zaɓi babban fayil na Daftarori, babban fayil na An Aika ko duka biyun, ko ka cire alamar akwatinsu.
+identity_password_required = Shigar da kalmar sirri ta fita.
+identity_smtp_testing = Ana gwada sabar fita.
+identity_smtp_ok = Sabar fita ta karɓi shiga.
+identity_smtp_failed = Gwajin sabar fita ya gaza.\n\n{error}
+set_bare_keys_note_move = M da C suna buɗe menu na Mayar zuwa da Kwafa zuwa na manyan fayiloli don saƙonnin da aka zaɓa, kuma Shift+M yana buɗe akwati da kake rubuta ɓangaren sunan babban fayil don mayar da su can. Kashe wannan yana mayar da M da C zuwa tsallake-tsallake na harafin farko ma.
+folder_search_filter = Sunan babban fayil yana ɗauke da
+folder_search_list = Manyan fayiloli masu daidaituwa
+folder_search_no_match = Babu babban fayil da ya dace da wannan suna.
+wiz_signin_method = Hanyar shiga
+wiz_method_password = Kalmar sirri
+wiz_method_microsoft = Asusun Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Shiga da Microsoft. An cika saitunan sabar Outlook.com, Hotmail, Live da Microsoft 365.
+wiz_welcome_notice = Gmail. Za a ƙi kalmar sirrin Google ɗinka ta yau da kullum, amma kalmar sirrin manhaja tana aiki. Dole ne a kunna tabbatarwa matakai biyu tukuna. Maɓallin da ke ƙasa yana buɗe umarnin Google.\n\nOutlook.com, Hotmail, Live da Microsoft 365. Waɗannan suna shiga da asusunka na Microsoft. A shafin Shiga, zaɓi Asusun Microsoft, sannan ka shiga da burauzarka ko da lamba.\n\nSauran masu ba da sabis. Kalmar sirri ta yau da kullum ko kalmar sirrin manhaja yawanci tana aiki, kuma shafukan taimakon mai ba ka sabis suna lissafa saitunan sabar.
+preset_note_outlook = Asusun Outlook.com, Hotmail, Live da MSN suna shiga da asusun Microsoft. Zaɓi Asusun Microsoft a matsayin hanyar shiga a shafin Shiga.
+ms_status_name = Matsayin shiga na Microsoft
+ms_browser_button = &Shiga da burauza
+ms_code_button = &Shiga da lamba
+ms_copy_code = &Kwafa lamba
+ms_open_page = &Buɗe shafin shiga
+ms_stop = &Daina jira
+ms_not_configured = Ba a saita shiga ta Microsoft a wannan kwafin ZBox ba.
+ms_not_signed_in = Ba ka shiga ba tukuna. Shiga da burauzarka, ko da lamba a kowace na'ura.
+ms_signed_in = An shiga a matsayin {address}.
+ms_signed_in_plain = An shiga.
+ms_needs_sign_in = Ana buƙatar shiga ta Microsoft don wannan asusun kuma. Shiga da burauzarka, ko da lamba a kowace na'ura.
+ms_reason_cancelled = An dakatar da shiga.
+ms_reason_timeout = Ba a sami amsa a kan lokaci ba.
+ms_reason_denied = Ba a yarda da samun dama ba.
+ms_reason_expired = Lamba ta ƙare. Nemi sabuwa.
+ms_reason_network = Ba a iya isa ga Microsoft ba. Duba haɗin ka sake gwadawa.
+ms_reason_server = Microsoft ya ce: {detail}
+ms_page_done = An shiga. Za ka iya rufe wannan shafi ka koma ZBox.
+ms_page_failed = Shigar ba ta kammala ba. Koma ZBox don cikakkun bayanai.
+ms_browser_waiting = Burauzarka tana nuna shafin shiga na Microsoft. Kammala shiga a can, sannan ka koma ZBox.
+ms_code_asking = Ana neman lambar shiga daga Microsoft...
+ms_code_waiting = A kowace na'ura, buɗe {address} ka shigar da lambar {code}. ZBox yana jira a nan har ka gama shiga.
+ms_failed = Shigar ba ta kammala ba. {reason}
+ms_code_copied = An kwafi lambar.
+offline_inbox_only = Akwatin Saƙo da Ma'aji kawai ake adanawa don amfani ba tare da intanet ba. Shiga intanet don buɗe {folder}.
+block_sender_rule_name = Toshe {sender}
+title_block_sender = Toshe wannan mai aikawa
+title_unblock_sender = Cire toshe wannan mai aikawa
+set_clear_inbox_cache = Share ma'ajiyar saƙo idan an bar Akwatin Saƙo
+set_clear_inbox_cache_note = Idan a kunne yake, ana share kwafin rashin intanet na saƙo da jikinsa da aka adana da zarar ya bar Akwatin Saƙo, har ma idan an share shi ko an mayar da shi wani wuri, kamar a wayarka, don kada ya taɓa bayyana inda ba ya nan kuma. Akwatin Saƙo kawai ke riƙe waɗannan fayiloli; ana karanta kowane babban fayil a koyaushe daga sabar.
+empty_trash_all_confirm = A share dukkan saƙonnin da ke shara na kowane asusu har abada?\n\nBa za a iya warware wannan ba.
+envlist_col_recipient = Mai karɓa
+envlist_col_correspondents = Masu musayar wasiƙa
+envlist_col_received = An karɓa
+envlist_col_size = Girma
+envlist_col_attachments = Abubuwan da aka haɗa
+envlist_col_priority = Muhimmanci
+envlist_col_junk_status = Matsayin saƙon banza
+envlist_attachment = Abubuwan da aka haɗa
+envlist_priority_highest = Mafi girma
+envlist_priority_high = Babba
+envlist_priority_low = Ƙarami
+envlist_priority_lowest = Mafi ƙanƙanta
+envlist_size_kb = KB {size}
+envlist_size_mb = MB {size}
+set_list_headers = Nuna kanun ginshiƙai a jerin saƙonni
+pgp_title = Mai kula da maɓallan OpenPGP
+smime_title = Mai kula da takardun shaida na S/MIME
+smime_own = takardar shaidarka
+smime_expired = ta ƙare
+smime_expires = tana ƙarewa {date}
+smime_issuer = Wanda ya bayar
+smime_valid = Mai inganci daga {start} zuwa {end}
+smime_fingerprint = Sawun yatsa na SHA-256
+smime_own_key = Takardar shaidarka, tare da maɓallinta na sirri: ana iya karanta wasiƙar da aka ɓoye zuwa gare ta a nan.
+smime_unavailable = S/MIME ba ya samuwa a wannan kwafin ZBox.
+smime_details = Bayanan takardar shaida
+smime_no_certs = Babu takardun shaida tukuna. Shigo da fayil ɗin .p12 ko .pfx naka, ko takardar shaidar wanda kake musayar wasiƙa da shi.
+smime_import_failed = Ba a iya shigo da takardar shaidar ba: {error}
+smime_import_title = Shigo da fayil ɗin takardar shaida
+smime_password_prompt = Shigar da kalmar sirrin {name}.
+smime_password_title = Kalmar sirrin takardar shaida
+smime_imported = An shigo da takardar shaidar.
+smime_export_title = Fitar da takardar shaida
+smime_exported = An fitar da takardar shaidar.
+smime_delete_confirm = A share takardar shaidar {name}? Idan taka ce, ba za a iya karanta wasiƙar da aka ɓoye zuwa gare ta a nan ba kuma.
+smime_deleted = An share takardar shaidar.
+smime_rs_verified = Wannan saƙon yana ɗauke da sa hannu mai inganci na S/MIME daga takardar shaida da wata hukuma da Windows ke amincewa da ita ta bayar don adireshin mai aikawa.
+smime_rs_unverified = Wannan saƙon yana ɗauke da sa hannu mai inganci na S/MIME, amma takardar shaidarsa ba ta fito daga hukumar da Windows ke amincewa da ita ba.
+smime_rs_mismatch = Wannan saƙon yana ɗauke da sa hannun S/MIME, amma adireshin mai aikawa bai dace da takardar shaidar wanda ya sa hannu ba.
+smime_rs_technical = Wannan saƙon yana ɗauke da sa hannun S/MIME, amma bai dace da saƙon ba. Mai yiwuwa an canza saƙon bayan an sa masa hannu.
+smime_rs_signer = Wanda ya sa hannu: {name}
+smime_rs_issuer = Wanda ya bayar da takardar shaida: {issuer}
+smime_rs_import_hint = Don karanta shi, shigo da takardar shaidar S/MIME ɗinka tare da maɓallinta na sirri, fayil ɗin .p12 ko .pfx, a Kayan Aiki, Mai kula da takardun shaida na S/MIME.
+pgp_details = Halayen maɓalli
+pgp_generate = &Sabbin maɓallai biyu
+smime_import = &Shigo da fayil ɗin takardar shaida
+smime_export = &Fitar da takardar shaida
+smime_delete = &Share takardar shaida
+pgp_import_file = &Shigo da fayil ɗin maɓallin OpenPGP
+pgp_import_file_title = Shigo da fayil ɗin maɓallin OpenPGP
+pgp_import_clip = &Shigo da maɓallai daga allon kwafi
+pgp_export = &Fitar da maɓallin jama'a zuwa fayil
+pgp_copy = &Kwafa maɓallin jama'a
+pgp_backup = &Yi kwafin ajiya na maɓallin sirri zuwa fayil
+pgp_props = &Halayen maɓalli
+pgp_revoke = &Soke maɓalli
+pgp_delete = &Share maɓalli
+pgp_expires = yana ƙarewa: {date}
+pgp_never_expires = ba ya ƙarewa
+pgp_expired = ya ƙare
+pgp_revoked = an soke
+pgp_fingerprint = Sawun yatsa
+pgp_key_id = ID na maɓalli
+pgp_created = An ƙirƙira
+pgp_acceptance = Yardarka
+pgp_acc_rejected = A'a, ƙi wannan maɓallin.
+pgp_acc_undecided = Ba yanzu ba, wataƙila daga baya.
+pgp_acc_unverified = Eh, amma ban tabbatar cewa maɓalli ne daidai ba.
+pgp_acc_verified = Eh, na tabbatar da kaina cewa wannan maɓallin yana da sawun yatsa daidai.
+pgp_personal_no = A'a, kada a yi amfani da shi a matsayin maɓallina na kai.
+pgp_personal_yes = Eh, ɗauki wannan maɓallin a matsayin maɓalli na kai.
+pgp_verify_hint = Tabbatar da sawun yatsan maɓallin ta hanyar sadarwa mai aminci ba imel ba, don tabbatar cewa da gaske maɓallin {addr} ne.
+pgp_gen_title = Ƙirƙiri maɓallin OpenPGP
+pgp_gen_identity = Shaida
+pgp_gen_type = Nau'in maɓalli:
+pgp_gen_ecc = ECC (Elliptic Curve)
+pgp_gen_expiry = Ƙarewar maɓalli
+pgp_gen_no_expiry = Maɓallin ba ya ƙarewa
+pgp_gen_button = Ƙirƙiri maɓalli
+pgp_gen_confirm = A ƙirƙiri maɓallin jama'a da na sirri don {identity}?
+pgp_gen_progress = Ana ƙirƙirar sabon maɓallin OpenPGP naka…
+pgp_gen_done = An ƙirƙiri maɓallin OpenPGP cikin nasara!
+pgp_gen_failed = Ƙirƙirar maɓallin OpenPGP ta gaza ba zato ba tsammani
+pgp_import_none = Ba a shigo da maɓallai ba.
+pgp_import_done = An shigo da maɓallan OpenPGP cikin nasara!
+pgp_passphrase_title = Ana buƙatar jimlar sirri
+pgp_unlock_failed = Ba a iya buɗe maɓallin, ko ƙananan sassan maɓallin ba.
+pgp_backup_title = Zaɓi kalmar sirri don yin kwafin ajiya na maɓallin OpenPGP naka
+pgp_backup_message = Kalmar sirrin da ka saita a nan tana kare fayil ɗin kwafin ajiya na maɓallin sirri na OpenPGP da za ka ƙirƙira. Dole ne ka saita wannan kalmar sirri don ci gaba da kwafin ajiyar.
+pgp_backup_pw = Kalmar sirrin kwafin ajiya na maɓallin sirri:
+pgp_backup_pw2 = Kalmar sirrin kwafin ajiya na maɓallin sirri (sake):
+pgp_backup_done = An fitar da maɓallin sirri cikin nasara!
+pgp_export_done = An fitar da maɓallin jama'a cikin nasara!
+pgp_copied = An kwafi maɓalli/maɓallai zuwa allon kwafi
+pgp_revoke_done = An soke maɓallin cikin nasara.
+pgp_personal = maɓalli na kai
+pgp_no_keys = Babu maɓallai tukuna. Ƙirƙiri sabbin maɓallai biyu ko ka shigo da maɓalli.
+pgp_unavailable = OpenPGP ba ya samuwa a wannan kwafin ZBox.
+pgp_gen_expires_3y = Maɓallin yana ƙarewa cikin shekaru 3
+pgp_gen_no_identity = Ƙara asusun imel tukuna.
+pgp_import_confirm = A shigo da waɗannan maɓallan?\n\n{keys}
+pgp_passphrase_prompt = Shigar da jimlar sirrin maɓallin sirri na {name}.
+pgp_clip_empty = Allon kwafi ba ya ɗauke da maɓallin OpenPGP.
+pgp_pw_mismatch = Kalmomin sirri biyu ba su yi daidai ba.
+pgp_backup_open = Wannan fayil kwafin ajiya ne na maɓallin sirri. Shigar da kalmar sirrin kwafin ajiyarsa.
+pgp_revoke_confirm = A soke maɓallin {name}? Ba za a taɓa sake amfani da maɓallin da aka soke ba. Raba maɓallin jama'a da aka soke domin wasu su daina amfani da shi.
+pgp_delete_public_confirm = A share maɓallin jama'a na {name}?
+pgp_delete_secret_confirm = A share maɓallinka na kai {name}? Ba za a taɓa sake karanta wasiƙar da aka ɓoye zuwa gare shi ba. Yi kwafin ajiya na maɓallin sirri tukuna idan za ka iya buƙatarsa.
+pgp_select_key = Zaɓi maɓalli tukuna.
+pgp_save_failed = Ba a iya adana maɓallan ba: {error}
+pgp_publish = &Wallafa
+pgp_publish_ok = An aika maɓallin jama'a zuwa "{keyserver}".
+pgp_publish_fail = An kasa aika maɓallin jama'arka zuwa "{keyserver}".
+pgp_publish_suggest = Wallafa maɓallin jama'a a sabar maɓalli yana ba wasu damar gano shi.
+pgp_publish_question = A wallafa shi a {keyserver} yanzu? Sabar za ta aika imel na tabbatarwa zuwa {addresses}. Za a iya gano adireshinka idan ka buɗe mahaɗin da ke ciki.
+pgp_publish_sent = An aika imel na tabbatarwa zuwa {addresses}. Buɗe mahaɗin da ke ciki don a iya gano maɓallinka ta adireshinka.
+pgp_publish_already = Ana iya gano shi tuni ta {addresses}.
+pgp_rs_no_sig = Babu sa hannu na lambobi
+pgp_rs_no_sig_info = Wannan saƙon ba shi da sa hannun lambobi na mai aikawa. Rashin sa hannun lambobi yana nufin wani da ke yin kamar yana da wannan adireshin imel ne ya aiko saƙon. Haka kuma mai yiwuwa ne an canza saƙon yayin da yake bi ta hanyar sadarwa.
+pgp_rs_uncertain = Sa hannu na lambobi maras tabbaci
+pgp_rs_uncertain_date = Sa hannu na lambobi maras tabbaci - An sa hannu a {date}
+pgp_rs_invalid = Sa hannu na lambobi mara inganci
+pgp_rs_invalid_date = Sa hannu na lambobi mara inganci - An sa hannu a {date}
+pgp_rs_good = Sa hannu na lambobi mai kyau
+pgp_rs_good_date = Sa hannu na lambobi mai kyau - An sa hannu a {date}
+pgp_rs_no_key = Wannan saƙon yana ɗauke da sa hannu na lambobi, amma ba a tabbatar ko daidai ne ba. Don tabbatar da sa hannun, kana buƙatar samun kwafin maɓallin jama'a na mai aikawa.
+pgp_rs_uid_mismatch = Wannan saƙon yana ɗauke da sa hannu na lambobi, amma an gano rashin daidaituwa. An aika saƙon daga adireshin imel da bai dace da maɓallin jama'a na wanda ya sa hannu ba.
+pgp_rs_not_accepted = Wannan saƙon yana ɗauke da sa hannu na lambobi, amma ba ka yanke shawara ba tukuna ko maɓallin wanda ya sa hannu yana karɓuwa a gare ka.
+pgp_rs_rejected = Wannan saƙon yana ɗauke da sa hannu na lambobi, amma ka riga ka yanke shawarar ƙin maɓallin wanda ya sa hannu.
+pgp_rs_technical = Wannan saƙon yana ɗauke da sa hannu na lambobi, amma an gano kuskuren fasaha. Ko dai saƙon ya lalace, ko kuma wani ya canza shi.
+pgp_rs_unverified = Wannan saƙon yana ɗauke da sa hannu na lambobi mai inganci daga maɓallin da ka riga ka karɓa. Duk da haka, ba ka tabbatar tukuna cewa maɓallin da gaske na mai aikawa ne ba.
+pgp_rs_verified = Wannan saƙon yana ɗauke da sa hannu na lambobi mai inganci daga maɓalli da aka tabbatar.
+pgp_rs_own_key = Wannan saƙon yana ɗauke da sa hannu na lambobi mai inganci daga maɓallinka na kai.
+pgp_rs_signer_id = ID na maɓallin wanda ya sa hannu: {keyid}
+pgp_rs_decrypt_id = ID na maɓallin buɗe ɓoyewarka: {keyid}
+pgp_rs_enc_none = Ba a ɓoye saƙon ba
+pgp_rs_enc_none_info = Ba a ɓoye wannan saƙon ba kafin aikawa. Bayanan da ake aikawa ta intanet ba tare da ɓoyewa ba wasu za su iya ganinsu yayin da suke wucewa.
+pgp_rs_enc_invalid = Ba za a iya buɗe ɓoyewar saƙon ba
+pgp_rs_enc_invalid_info = An ɓoye wannan saƙon kafin a aiko maka shi, amma ba za a iya buɗe ɓoyewarsa ba.
+pgp_rs_enc_valid = An ɓoye saƙon
+pgp_rs_enc_valid_info = An ɓoye wannan saƙon kafin a aiko maka shi. Ɓoyewa tana tabbatar da cewa masu karɓa da aka yi nufinsu kawai ne za su iya karanta saƙon.
+pgp_rs_field = Tsaron saƙo
+pgp_rs_import = Shigo da maɓallin OpenPGP
+pgp_rs_open_to_unlock = Buɗe saƙon don shigar da jimlar sirri.
+pgp_rs_reply_not_quoted = Ainihin saƙon an ɓoye shi, don haka ba a ɗauko rubutunsa a nan ba.
+pgp_cm_encrypt = Ɓoye bayanai
+pgp_cm_sign = Sa hannu ta lambobi
+pgp_e2e_title = Ɓoyewa daga ƙarshe zuwa ƙarshe
+acct_e2e_button = &Ɓoyewa daga ƙarshe zuwa ƙarshe...
+pgp_e2e_none = Kada a yi amfani da OpenPGP don wannan shaida.
+pgp_e2e_disable = Kashe ɓoyewa don sababbin saƙonni
+pgp_e2e_enable = Kunna ɓoyewa don sababbin saƙonni
+pgp_e2e_enable_info = Za ka iya kashe ɓoyewa don saƙonni ɗaiɗai.
+pgp_e2e_sign = Sa hannu a saƙonnin da ba a ɓoye ba
+pgp_e2e_signing_info = Sa hannu na lambobi yana ba masu karɓa damar tabbatar da cewa kai ne ka aiko saƙon kuma ba a canza abin cikinsa ba. Ana sa hannu a saƙonnin da aka ɓoye koyaushe a asali.
+pgp_e2e_autocrypt = Aika maɓallan jama'a na OpenPGP a kanun imel don dacewa da Autocrypt
+pgp_not_set_up = Ba a saita ka don aika saƙonnin da aka ɓoye daga ƙarshe zuwa ƙarshe daga {addr} ba.
+pgp_cannot_encrypt = Ba za a iya ɓoyewa ba
+pgp_do_you_accept = Kana karɓar wannan maɓallin don tabbatar da sa hannun lambobi da ɓoye saƙonni?
+pgp_searching = Ana nema…
+pgp_no_key_found = Ba mu iya samun wani maɓalli da za a iya amfani da shi wanda ya dace da ma'aunin nemawar da aka ƙayyade ba.
+pgp_source_autocrypt = Kanun Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = sabar maɓalli
+pgp_discover = &Gano maɓallai a kan layi
+pgp_cm_attach_key = Haɗa maɓallina na jama'a
+pgp_e2e_key_label = Maɓalli na kai na {address}
+pgp_e2e_auto = Atomatik: maɓallinka na kai na wannan adireshi
+pgp_e2e_no_key = ZBox ba shi da maɓallin OpenPGP na kai na {address}. Ƙirƙiri ɗaya a Kayan Aiki, Mai kula da maɓallan OpenPGP.
+pgp_e2e_new_messages = Ɓoyewa don sababbin saƙonni
+pgp_e2e_key_missing = Maɓalli {keyid}, ba a same shi ba
+pgp_missing_keys = Waɗannan masu karɓa ba su da maɓalli da za a iya amfani da shi kuma aka karɓa:\n\n{addresses}\n\nBa za a iya aika saƙon a ɓoye ba.
+pgp_send_unencrypted = &Aika ba tare da ɓoyewa ba
+pgp_collected_found = An sami maɓallan waɗannan masu karɓa a cikin wasiƙar da suka aiko maka:
+pgp_lookup_q = A nemi maɓallan waɗannan masu karɓa a kan layi?\n\n{addresses}\n\nWannan yana aika adireshinsu zuwa keys.openpgp.org da kuma yankunan imel nasu.
+pgp_found_online = Maɓallan da aka samu a kan layi:
+pgp_source = Tushe: {source}
+pgp_discover_prompt = Shigar da adireshin imel. ZBox yana neman maɓallan OpenPGP nasa a Web Key Directory na yankin imel ɗinsa da kuma a keys.openpgp.org.
+pgp_discover_bad = Shigar da cikakken adireshin imel, kamar name@example.com.
+pgp_keys_unreadable = Ba a iya buɗe maɓallan OpenPGP ba: {error}
+pgp_rs_why_no_key = Maɓallin sirrin da ake buƙata don buɗe ɓoyewar wannan saƙon ba ya samuwa.
+pgp_rs_why_unknown = Akwai matsaloli da ba a sani ba game da wannan saƙon da aka ɓoye.
+pgp_rs_hidden_subject = Saƙon da aka ɓoye
+pgp_rs_why_passphrase = Ba a shigar da jimlar sirrin maɓallinka ba. Sake buɗe saƙon don shigar da ita.
+pgp_rs_why_unavailable = OpenPGP ba ya samuwa a wannan kwafin ZBox.
+pgp_rs_why_fetch = Ba a iya samo saƙon daga sabar don buɗe ɓoyewarsa ba. Sake buɗe shi don sake gwadawa.
+pgp_rs_import_hint = Don karanta shi, shigo da maɓallin sirrinka na wannan saƙon cikin ZBox.
+
+[errors]
+language_restart_failed = ZBox bai iya sake kunna kansa ba:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Ba a iya buɗe manhajar imel ta {address} ba.
+
+wizard_test_failed = Haɗin ya gaza:\n\n{error}
+
+contacts_import_unreadable = Ba a iya karanta wannan fayil ɗin ba.\n\n{error}
+contacts_export_unwritable = Ba a iya rubuta wannan fayil ɗin ba.\n\n{error}
+
+attach_unreadable = Ba a iya karanta abin da aka haɗa {path} ba:\n{error}
+send_failed = Ba a iya aika saƙon ba.\n\n{error}
+draft_attach_unreadable = Ba a iya karanta abin da aka haɗa {path} ba:\n{error}\n\nBa a adana daftarin ba.
+draft_save_failed = Ba a iya adana daftarin ba.\n\n{error}
+
+clipboard_unavailable = Ba a iya buɗe allon kwafi ba.
+open_link_failed = Ba a iya buɗe burauzarka don:\n{url}
+
+master_password_mismatch = Akwatunan sabuwar babbar kalmar sirri guda biyu ba su yi daidai ba.
+master_password_required = Shigar da babbar kalmar sirri, ko ka danna Soke.
+master_password_not_set = Ba a iya saita babbar kalmar sirri ba: {error}
+master_password_not_here = Ba za a iya canza babbar kalmar sirri daga nan ba.
+
+attachment_save_failed = Ba a iya adana abin da aka haɗa ba.\n\n{error}
+attachments_save_failed = Ba a iya adana abubuwan da aka haɗa ba.\n\n{error}
+print_failed = Ba a iya buga saƙon ba. Tabbatar an saita na'urar buga takarda.
+print_preview_failed = Ba a iya buɗe duba kafin bugawa ba. Tabbatar an saita na'urar buga takarda.
+
+related_search_failed = Ba a iya neman saƙonni masu alaƙa ba.\n\n{error}
+search_failed = Neman ya gaza.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox bai iya samun babban fayil ɗin saitinsa ba, don haka ba za a iya sarrafa hanyoyin buɗewa a nan ba.
+shortcut_no_folder = ZBox bai iya gane babban fayil ɗinsa ba, don haka ba za a iya ƙirƙirar gajeriyar hanya daga nan ba.
+shortcut_failed_settings = Ba a iya ƙirƙirar gajeriyar hanyar tebur ba:\n\n{error}
+
+unlock_method_failed = {what} bai yi aiki ba.\n\n{error}
+unlock_check_failed = Ba a iya duba babbar kalmar sirri ba.\n\n{error}
+unlock_password_wrong = Wannan babbar kalmar sirri ba daidai ba ce.
+unlock_add_failed = Ba a iya ƙara {what} ba.\n\n{error}
+unlock_passkey_setup_failed = Ba a iya saita maɓallin shiga a wannan kwamfutar ba, don haka ba a canza komai ba.\n\n{error}
+unlock_method_test_failed = Wannan hanyar ba ta yi aiki ba.\n\n{error}
+
+account_list_unreadable = ZBox bai iya buɗe jerin asusunka ba.\n\n{error}\n\nBa a loda wani asusu ba, kuma ba a canza fayil ɗin ba, don haka ba a rasa komai ba. Ana ƙin ƙara, gyara da cire asusu har sai an iya karanta shi.
+account_list_no_accounts = ZBox bai iya buɗe jerin asusunka a wannan zaman ba ({error}), don haka babu asusun da za a zaɓa. Ba a rasa komai ba kuma ba a canza komai ba. Rufe ZBox ka sake kunna shi, ka shigar da babbar kalmar sirri idan aka nemi hakan.
+open_message_failed = Ba a iya buɗe saƙon ba.\n\n{error}
+filters_list_failed = Ba a iya lissafa saƙonni a {folder} ba.\n\n{error}
+filters_move_failed = Ba a iya mayar da saƙonnin da aka tace ba.\n\n{error}
+cache_clear_failed = Ba a iya share ma'ajiyar wucin gadi ba.\n\n{error}
+folder_create_failed = Ba a iya ƙirƙirar babban fayil ba.\n\n{error}
+folder_rename_failed = Ba a iya sauya sunan babban fayil ba.\n\n{error}
+folder_delete_failed = Ba a iya share babban fayil ba.\n\n{error}
+folder_subscribe_failed = Ba a iya yin rajista ga babban fayil ba.\n\n{error}
+folder_unsubscribe_failed = Ba a iya cire rajista daga babban fayil ba.\n\n{error}
+saved_open_failed = Ba a iya buɗe fayil ɗin ba.\n\n{error}
+saved_parse_failed = Ba a iya fassara wannan fayil a matsayin saƙon imel ba.\n\n{error}
+save_file_failed = Ba a iya adana fayil ɗin ba.\n\n{error}
+save_fetch_failed = Ba a iya samo saƙon da za a adana ba.\n\n{error}
+empty_trash_failed = Ba a iya zubar da shara ba.\n\n{error}
+empty_junk_failed = Ba a iya zubar da saƙon banza ba.\n\n{error}
+export_write_failed = Ba a iya rubuta fayil ɗin fitarwa ba.\n\n{error}
+import_read_failed = Ba a iya karanta wannan fayil a matsayin fitarwar ZBox ba.\n\n{error}
+import_not_export = Wannan fayil ba ya yi kama da fitarwar ZBox ba.\n\n{error}
+search_open_failed = Ba a iya buɗe wannan saƙon ba.
+related_load_failed = Ba a iya loda wannan saƙon ba.\n\n{error}
+reply_load_failed = Ba a iya loda saƙon da za a amsa ba.\n\n{error}
+forward_load_failed = Ba a iya loda saƙon da za a tura ba.\n\n{error}
+action_failed = Ba a iya kammala wannan aikin ba.\n\n{error}
+undo_failed = Ba a iya warware {label} ba.\n\n{error}
+copy_failed = Ba a iya kwafar saƙon ba.\n\n{error}
+delete_failed = Ba a iya share saƙon ba.\n\n{error}
+archive_failed = Ba a iya ajiye saƙon a ma'aji ba.\n\n{error}
+master_password_not_changed = Ba a iya canza babbar kalmar sirri ba: {error}
+shortcut_failed_startup = Ba a iya ƙirƙirar gajeriyar hanyar tebur ba:\n\n{error}\n\nZBox zai ci gaba da farawa. Za ka iya sake gwadawa daga baya daga Saituna.
+account_locked_action = ZBox ba zai iya %s ba. Ba a iya buɗe jerin asusun a wannan zaman ba (%s), kuma ba a canza komai ba. Rufe ZBox ka sake kunna shi, ka shigar da babbar kalmar sirri idan aka nemi hakan.
+send_tls_mismatch = Ba a iya aika saƙon ba. Sabar fita ta amsa ba tare da ɓoyewa ba, don haka ɓoyewar fita ba ta dace da tashar ba. A Kayan Aiki, Saitunan asusu da shaida, yi amfani da STARTTLS don tashar 587, ko SSL/TLS don tashar 465, sannan ka sake aikawa.\n\n{error}
+mark_folder_read_failed = Ba a iya yi wa babban fayil alama a matsayin an karanta ba.\n\n{error}
+update_failed = Ba a iya sauke sabuntawar ba, don haka ba a canza komai ba.\n\n{error}
+update_rolled_back = Sabuntawar ta kasa farawa, don haka an maido da sigar da ta gabata.
+attachment_open_failed = Ba a iya buɗe abin da aka haɗa ba.\n\n{error}
+headers_failed = Ba a iya loda kanun saƙo ba.\n\n{error}
+wizard_ms_sign_in_first = Shiga da Microsoft kafin ci gaba. Yi amfani da ɗaya daga maɓallan shiga biyu da ke wannan shafi.
+wizard_provider_unsupported = ZBox ba zai iya shiga wurin wannan mai ba da sabis ba. Bayanin da ke wannan shafi yana bayyana dalili. Koma baya ka yi amfani da wani adireshin imel, ko ka soke.
+acct_ms_sign_in_first = Shiga da Microsoft kafin adanawa, ko ka zaɓi Kalmar sirri a matsayin hanyar shiga.
+ms_sign_in_again = Ana buƙatar shiga ta Microsoft don {account} kuma. Buɗe Saitunan asusu da shaida ka shiga a can.
+graph_pgp_too_large = Wannan saƙon da aka ɓoye ko aka sa wa hannu ya fi abin da Microsoft ke ba da izini ga irin wannan wasiƙa girma, kusan MB 3. Aika ƙananan abubuwan da aka haɗa, ko ka kashe Ɓoye bayanai da Sa hannu ta lambobi don wannan saƙon.
+empty_trash_all_failed = Ba a iya zubar da shara ta: {accounts}
+
+[help]

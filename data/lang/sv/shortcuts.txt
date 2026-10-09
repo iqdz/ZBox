@@ -1,0 +1,103 @@
+Allmänt
+F6: Växla fokus mellan fönsterdelarna
+Ctrl+Tab: Nästa flik
+Ctrl+Shift+Tab: Föregående flik
+Ctrl+W eller Ctrl+F4: Stäng aktuell flik
+Escape: Fäll ihop en expanderad tråd om meddelandelistan har fokus och en är expanderad; annars stäng aktuell flik (meddelande, sparat meddelande eller ett osänt meddelande under skrivning -- frågar först om det har osparade ändringar)
+Menytangenten eller Shift+F10: Öppna snabbmenyn för det markerade objektet i listan eller trädet
+F1: Tangentbordsgenvägar, den här sidan
+Ctrl+Shift+Q: Avsluta -- avslutar alltid ZBox på riktigt, även när "Stäng till systemfältet" är på i Inställningar (fönstrets Stäng-knapp, Alt+F4 och Ctrl+W på fliken E-post döljer i stället till systemfältet när den inställningen är aktiverad; systemfältsikonens egen Avsluta avslutar också alltid på riktigt)
+Ctrl+Shift+Delete: Rensa cache för nedkopplade meddelanden -- bara ZBox lokala kopior, ingenting på någon server (också en knapp i Verktyg > Konfiguration av cacherensning)
+
+E-post
+Ctrl+N: Nytt meddelande
+Ctrl+Shift+N: Nytt e-postkonto
+F5: Hämta ny e-post för det aktuella kontot
+Shift+F5: Hämta ny e-post för alla konton
+Ctrl+Shift+J: Hoppa till meddelandelistan i Inkorgen
+Ctrl+Y: Gå till mapplistan
+Retur på ett stängt konto eller en stängd mapp i mapplistan: öppna det, som Högerpil
+Ctrl+Shift+B: Adressbok
+Ctrl+Shift+F: Sök meddelanden
+Ctrl+Shift+T: Visa relaterade meddelanden
+
+Meddelandelistan
+Delete, Shift+Delete, Arkivera, Stjärnmärk/Ta bort stjärnmärkning, Markera som skräp/Inte skräp, Flytta till och Kopiera till gäller alla meddelanden i en tråd när de används på en HOPFÄLLD trådrad -- expandera tråden först (Högerpil eller Retur/Blanksteg) för att i stället agera på ett meddelande inuti den
+Ctrl+A: Markera alla meddelanden
+Ctrl+Shift+L: Läs in fler meddelanden
+Delete: Flytta meddelanden till papperskorgen
+Shift+Delete: Ta bort meddelanden permanent
+Ctrl+Z: Ångra den senaste borttagningen, arkiveringen, markeringen som skräp eller markeringen som inte skräp
+S: Stjärnmärk/ta bort stjärnmärkning på de markerade meddelandena
+A: Arkivera de markerade meddelandena
+J: Markera de markerade meddelandena som skräp
+Shift+J: Markera de markerade meddelandena som inte skräp
+W: Bevaka tråd -- växla om tråden som markeringen ingår i bevakas (också menyn Meddelande och högerklick)
+K: Ignorera tråd -- växla om den tråden ignoreras (också menyn Meddelande och högerklick)
+M: Flytta de markerade meddelandena -- öppnar menyn Flytta till med mappar
+Shift+M: Flytta de markerade meddelandena genom att skriva en del av ett mappnamn
+C: Kopiera de markerade meddelandena -- öppnar menyn Kopiera till med mappar
+S, A, J, W och K ovan är på som standard och kan stängas av i Inställningar (annars har de företräde framför meddelandelistans egen förstabokstavsnavigering)
+M, Shift+M och C ovan följer samma inställning
+Retur eller Blanksteg på en hopfälld tråd: öppnar det senaste olästa meddelandet i den tråden (det senaste meddelandet om hela tråden är läst) som ett enskilt meddelande, i en flik -- sedan bläddrar Ctrl+Shift+Page Down och Ctrl+Shift+Page Up genom resten av tråden utan att någonsin öppna ett andra meddelande. På ett vanligt meddelande öppnas det som vanligt
+Högerpil på en hopfälld tråd: visar dess meddelanden som en lista, utan att öppna något av dem -- öppna ett i taget därifrån med dess egen Retur eller Blanksteg
+Ctrl+Shift+O: Öppna meddelande i konversation -- hela tråden i en flik, som en lista över dess meddelanden med det markerades text under. Gå med piltangenterna genom listan för att läsa dem ett i taget; Retur på en rad öppnar det enskilda meddelandet i sin egen fulla flik. Samma namn och tangent som Thunderbirds eget kommando
+Vänsterpil: fäll ihop tråden som markeringen just nu ligger i
+*: Expandera alla trådar (också Visa > Trådar); \: Fäll ihop alla trådar (också Visa > Trådar)
+Visa > Trådar > Alla / Bevakade trådar / Ignorerade trådar filtrerar vilka trådar som visas -- att växla tillbaka till Alla tar alltid tillbaka varje meddelande; ingenting tas någonsin bort från mappen av detta
+
+Ett öppet meddelande
+Alt+A: Arkivera det här meddelandet -- bara medan dess text (Text eller HTML) faktiskt har tangentbordsfokus; annars behåller Alt+A sin vanliga betydelse att öppna menyn Konton
+Ctrl+R: Svara
+Ctrl+Shift+R: Svara alla
+Ctrl+L: Vidarebefordra
+Ctrl+Delete eller Ctrl+D: Flytta det här meddelandet till papperskorgen. Vanlig Delete tas ofta av skärmläsaren medan ett HTML-meddelande har fokus; Shift+Delete tar bort permanent
+Ctrl+Shift+Page Down: Nästa meddelande i den här tråden; Ctrl+Shift+Page Up: föregående. Ersätter den aktuella fliken i stället för att öppna en annan, så bara ett meddelande är någonsin öppet. Vid det sista meddelandet (eller det första, när du går uppåt) säger det så och frågar; om du trycker på samma tangent igen stängs meddelandet och tråden avslutas, och du hamnar tillbaka i meddelandelistan. (Ctrl+Page Up/Down lämnas ifred -- de byter flikar)
+Ctrl+B: Växla meddelandevy (Text/HTML)
+Ctrl+P: Skriv ut
+Ctrl+Shift+P: Förhandsgranska utskrift
+Ctrl+S: Spara meddelande som
+Ctrl+U: Läs upp avsändarens namn och adress
+Ctrl+Shift+U: Läs upp avsändare och kopiera adressen
+Ctrl+Shift+I: Visa fjärrinnehåll i det här meddelandet
+Ctrl+Shift+=: Öka meddelandets teckenstorlek
+Ctrl+Shift+-: Minska meddelandets teckenstorlek
+Ctrl+Shift+0: Återställ meddelandets teckenstorlek
+
+Skriva ett meddelande
+Ctrl+Enter eller Alt+S: Skicka
+Ctrl+S: Spara utkast
+Ctrl+Shift+A: Bifoga fil
+Ctrl+Shift+S: Infoga signaturen för kontot i Från
+Ctrl+Shift+V: Klistra in som citat
+Ctrl+Shift+W: Antal ord
+Ctrl+Shift+P: Förhandsgranska meddelandet så som det kommer att skickas
+Escape, Ctrl+W eller Ctrl+F4: Stäng fliken för att skriva -- frågar först om något är osparat och erbjuder Spara utkast, Kassera eller Fortsätt redigera
+Varje kommando nedan finns också i menyn Skriv, som Alt+C öppnar även när fokus ligger inne i meddelandetexten
+
+Formatering under skrivning
+Ctrl+B: Fet
+Ctrl+I: Kursiv
+Ctrl+Shift+X: Genomstruken
+Ctrl+Shift+8: Punktlista
+Ctrl+Shift+7: Numrerad lista
+Ctrl+Shift+9: Citat
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Rubrik
+Ctrl+K: Infoga länk
+Ctrl+Shift+K: Säg vilken formatering som gäller där markören står
+Ctrl+Shift+M: Öppna menyn Format var fokus än ligger, även i meddelandetexten
+
+Stavning under skrivning
+Ctrl+Shift+F7: Kontrollera stavning
+Ctrl+Shift+F9: Gå till nästa stavfel
+Ctrl+Shift+F8: Lägg till ordet den stannade på i ordlistan
+
+Samma tangent på två ställen
+Ctrl+S: Spara utkast under skrivning, Spara meddelande som i ett öppet meddelande
+Ctrl+B: Fet under skrivning, växla mellan Text och HTML i ett öppet meddelande
+Ctrl+Shift+P: Förhandsgranska under skrivning, Förhandsgranska utskrift i ett öppet meddelande
+Alt+A: Arkivera, men bara medan en meddelandetext har tangentbordsfokus; på alla andra ställen öppnar det menyn Konton
+
+Diagnostik
+Ctrl+Shift+F12: Snabbtangentsdiagnostik -- skriver en rad i felsökningsloggen för varje kombination som trycks i en flik för att skriva, så att det kan bevisas vad en tangent faktiskt nådde. Av som standard, och samma tangent stänger av den igen; läget sägs högt i båda fallen

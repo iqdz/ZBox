@@ -1,7 +1,7 @@
 ZBox
 Oleh Harith Alhamdani
 
-ZBox adalah klien email portabel, gesit, aman, dan sepenuhnya aksesibel. Gratis untuk penggunaan pribadi dan ringan bagi sumber daya sistem. ZBox dibuat untuk memberi pengguna tunanetra dan low vision alternatif nyata yang kaya fitur dibandingkan pilihan yang biasanya tersedia, yang berat dan lamban. Di balik layar, ZBox ditenagai oleh klien email Himalaya CLI yang tangguh.
+ZBox adalah klien email portabel, gesit, aman, dan sepenuhnya aksesibel. Gratis untuk penggunaan pribadi dan ringan bagi sumber daya sistem. ZBox dibuat untuk memberi semua penggunanya, termasuk pengguna tunanetra dan low vision, alternatif nyata yang kaya fitur dibandingkan pilihan yang biasanya tersedia, yang berat dan lamban. Di balik layar, ZBox ditenagai oleh klien email Himalaya CLI yang tangguh.
 
 Privasi dan Keamanan
 ZBox dilengkapi pemblokir pelacak dan iklan (aktif secara bawaan), bersama aturan surat junk opsional dan pemeriksa tautan phishing. Untuk portabilitas yang aman, ZBox memakai perlindungan Kata Sandi Utama: jika folder aplikasi disalin ke komputer lain tanpa kata sandi ini, akses ke akun-akun Anda yang tertaut diblokir. Jika Anda berencana memindahkan ZBox ke mesin baru, pastikan untuk menetapkan kata sandi utama di sini terlebih dahulu. ZBox juga mendukung kunci sandi Windows Hello (sidik jari, PIN, atau pengenalan wajah) dan kunci keamanan perangkat keras modern.

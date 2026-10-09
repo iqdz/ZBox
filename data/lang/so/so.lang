@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Soomaali
+code = so
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Fariinta waa la diray.
+draft_saved = Qabyada waa la kaydiyay.
+signature_inserted = Saxiixa waa la geliyay.
+signature_none = Akoonkan saxiix ma leh.
+signature_saved = Saxiixa waa la kaydiyay.
+signature_not_saved = Saxiixa lama kaydin.
+pasted_as_quotation = Waxaa lagu dhejiyay xigasho ahaan.
+clipboard_empty = Clipboard-ka waxba kuma jiraan.
+word_count = {words} eray, {characters} xaraf.
+report_copied = Warbixinta waa la koobiyeeyay.
+compose_tab_needed = Amarkaas waxa uu u baahan yahay tab qoraal.
+attach_file_instead = Faylasha la riday lagama dhigo qoraalka fariinta. U isticmaal Ku lifaaq fayl si aad mid u dirto.
+
+# Formatting in the message body
+formatting_here = Qaabaynta halkan: {formatting}.
+no_formatting_here = Halkan qaabayn ma jirto, qoraal caadi ah.
+
+# Spelling
+nothing_to_check = Waxba looma baahna in la hubiyo.
+no_misspellings = Qaladaad higaad ma jiraan.
+spelling_dictionary_unavailable = Qaamuuska higaadda lama heli karo.
+next_misspelling_first = Marka hore isticmaal qalad higaad ee xiga.
+word_added = {word} waxaa lagu daray qaamuuska.
+word_not_added = {word} lagama dari karin qaamuuska.
+corrections_applied_one = 1 sax ayaa la dabbaqay.
+corrections_applied_many = {count} sax ayaa la dabbaqay.
+corrections_applied_partly = {applied} ee {total} saxid ayaa la dabbaqay. Inta kale waa la diiday; eeg diiwaanka.
+occurrences_replaced_one = 1 dhacdo ayaa la beddelay.
+occurrences_replaced_many = {count} dhacdo ayaa la beddelay.
+
+# Reading mail
+message_did_not_open = Fariinta ma furmin. Server-ku ma jawaabin. Taabo Enter si aad mar kale u tijaabiso.
+thread_open = {messages} silsiladdan ku jira. Mar kale taabo si aad u xirto.
+no_thread_selected = Silsilad lama dooran.
+thread_watched = Silsiladda waa la eegayaa.
+thread_not_watched = Silsiladda mar dambe lama eegayo.
+thread_ignored = Silsiladda waa la iska indho tirayaa.
+thread_not_ignored = Silsiladda mar dambe lama iska indho tiro.
+none_found = Waxba lama helin.
+refreshing_this_folder = Galkan waa la cusboonaysiinayaa.
+refreshing_all_accounts = Dhammaan akoonnada waa la cusboonaysiinayaa.
+message_view_html = Muuqaalka fariinta: HTML (la muujiyay).
+message_view_text = Muuqaalka fariinta: Qoraal.
+html_view_still_loading = Fariinta weli way soo dhacaysaa. Escape wuu xiraa.
+message_still_opening = Fariinta waa la furayaa. Server-ku wuu gaabiyay.
+remote_content_blocked = Nuxurka fogaanta waa la xannibay.
+remote_content_unblocked = Nuxurka fogaanta xannibaaddiisa waa la qaaday.
+remote_content_already_showing = Nuxurka fogaanta horay ayuu ugu muuqday fariintan.
+archived = Waa la kaydiyay.
+copied_to_folder = Waxaa loo koobiyeeyay {to_folder}.
+deleted_one = Fariinta si joogto ah ayaa loo tirtiray.
+deleted_many = {count} fariin si joogto ah ayaa loo tirtiray.
+trashed_one = Fariinta waxaa loo guuray Qashinka.
+trashed_many = {count} fariin ayaa loo guuray Qashinka.
+
+# Accounts and new mail
+no_account_yet = Wali ma jiro akoon la tago.
+inbox_landed = Soo-gelitaanka {name}.
+account_enabled = {name} waa la hawlgeliyay.
+auto_check_paused = Hubinta otomaatiga ah waa la hakiyay {account}.
+auto_check_resumed = Hubinta otomaatiga ah waa shidan tahay {account}.
+account_disabled = {name} waa la damiyay.
+new_mail_one = 1 fariin cusub oo loogu talagalay {name}.
+new_mail_many = {count} fariin oo cusub oo loogu talagalay {name}.
+refresh_all_done_one = 1 akoon ayaa la cusboonaysiiyay.
+refresh_all_done_many = {count} akoon ayaa la cusboonaysiiyay.
+refresh_all_done_failures = {count} akoon ayaa la cusboonaysiiyay, {failed} lama cusboonaysiin karin.
+refresh_all_done_failures_one = {count} akoon ayaa la cusboonaysiiyay, {failed} lama cusboonaysiin karin.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Cinwaanka waa la koobiyeeyay.
+sender_no_address = {sender}. Cinwaan la koobiyeeyo ma jiro.
+clipboard_not_opened = {sender}. Clipboard-ka lama furi karin.
+
+# The signature editor
+signature_page_formatted = La qaabeeyay. Kani waa waxa la kaydin doono.
+signature_page_html = Isha HTML. Kani waa waxa la kaydin doono.
+signature_page_html_still_wins = La qaabeeyay. Isha HTML weli waa waxa la kaydin doono.
+
+# Background work
+phishing_list_updating = Liiska phishing-ka waxaa laga cusboonaysiinayaa gadaal.
+cache_cleared = {files} fayl oo cache ah ayaa la nadiifiyay, {size} MB.
+hotkeys_diagnostic_on = Baaritaanka furayaasha degdega ah waa shidan yahay, la calaamadeeyay
+hotkeys_diagnostic_off = Baaritaanka furayaasha degdega ah waa dansan yahay, lama calaamadeynin
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Kaydi
+action_delete = Tirtir
+action_delete_permanently = Si joogto ah u tirtir
+action_mark_as_junk = U calaamadee spam
+action_mark_as_not_junk = U calaamadee ma aha spam
+action_move_to = U guur
+action_copy_to = U koobiyee
+action_mark_message = Calaamadee fariinta
+action_undo = Ka noqo
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Waa laga noqday: {action}.
+undo_done_many = Waa laga noqday: {action} {count} fariin.
+junk_marked_one = Waxaa loo calaamadeeyay spam.
+junk_marked_many = {count} fariin ayaa loo calaamadeeyay spam.
+junk_no_new_sender = Diraaye cusub lama xannibin: horay ayaa loo xannibay, waa liis boostada, ama mid ka mid ah cinwaannadaada.
+not_junk_marked_one = Waxaa loo calaamadeeyay ma aha spam.
+not_junk_marked_many = {count} fariin ayaa loo calaamadeeyay ma aha spam.
+moved_to_one = Waxaa loo guuray {to_folder}.
+moved_to_many = {count} fariin ayaa loo guuray {to_folder}.
+copied_to_many = {count} fariin ayaa loo koobiyeeyay {to_folder}.
+marked_read = Waxaa loo calaamadeeyay la akhriyay.
+marked_unread = Waxaa loo calaamadeeyay aan la akhriyin.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Waa la joojiyay ka dib {completed} ee {total}. {succeeded} way guuleysteen, {failed} way fashilmeen.
+bulk_failed_one = {done} {failed} ee 1 fariin way fashilantay.
+bulk_failed_many = {done} {failed} ee {total} fariin way fashilmeen.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Qalin
+format_word_italic = Dheg
+format_word_strike = Sahan
+format_word_href = Xiriiriye
+format_word_bullet = Liis dhibco leh
+format_word_number = Liis tiro leh
+format_word_quote = Xigasho
+format_word_code = Koodh
+format_word_heading1 = Cinwaan
+format_applied = {formatting} waa la dabbaqay.
+format_inserted = {formatting} waa la geliyay.
+format_not_available = {formatting} lagama heli karo jidhka fariinta caadiga ah.
+format_on = {formatting} shid
+format_off = {formatting} dami
+link_applied = Xiriiriyaha waa la dabbaqay.
+link_applied_to_selection = Xiriiriyaha waxaa lagu dabbaqay doorashada.
+plain_body_formatting = Jidhka fariinta caadiga ah wuxuu qaabayntiisa u muujiyaa sidii tags.
+
+# Reaching either end of a thread
+thread_edge_first = Fariinta ugu horeysa silsiladdan. Mar kale taabo si aad u xirto.
+thread_edge_last = Fariinta ugu dambeysa silsiladdan. Mar kale taabo si aad u xirto.
+jump_unified_inbox = Soo-gelitaanka midaysan.
+remote_none = Fariintan nuxur fogaan ah kuma jiro.
+sender_none = Fariintan diraaye ma laha.
+sender_name_no_address = %s, cinwaan ma leh
+signature_not_switched = Saxiixa lama beddelin. Taabo Ctrl+Shift+S si aad u gelisid saxiixa akoonkan.
+signature_removed_no_signature = Saxiixa waa la saaray. Akoonkan mid ma laha.
+signature_switched = Saxiixa waxaa loo beddelay kan akoonkan.
+spell_not_replaced = Ereyga lama beddeli karin.
+spell_replaced_with = Waxaa lagu beddelay {word}.
+folder_marked_read = {count} fariin ayaa loo calaamadeeyay la akhriyay.
+folder_no_unread = Fariimo aan la akhriyin ma jiraan.
+threads_all_collapsed = Dhammaan silsiladaha waa la isku laabay.
+threads_all_expanded = Dhammaan silsiladaha waa la balaadhiyay.
+upd_percent = {percent} boqolkiiba
+upd_download_done = Soo dejintu waa dhammaatay. Cusboonaysiinta waa la diyaarinayaa...
+upd_updated_to = ZBox waxaa loo cusboonaysiiyay {version}.
+header_copied = La koobiyeeyay.
+headers_copied = Dhammaan madaxyada waa la koobiyeeyay.
+identity_copies_updated = Cc iyo Bcc waa la cusboonaysiiyay shakhsiyaddan.
+signature_switched_identity = Saxiixa waxaa loo beddelay kan shakhsiyaddan.
+signature_removed_identity = Saxiixa waa la saaray. Shakhsiyaddan mid ma laha.
+signature_not_switched_identity = Saxiixa lama beddelin. Taabo Ctrl+Shift+S si aad u gelisid saxiixa shakhsiyaddan.
+signature_none_identity = Shakhsiyaddan saxiix ma laha.
+move_keys_no_selection = Marka hore dooro fariin.
+move_keys_no_folders = Wali ma jiraan gallo la doorto. Dhawaan mar kale isku day.
+block_sender_done_one = {sender} waa la xannibay. Fariimihiisa cusub waxay aadi doonaan Qashinka.
+block_sender_done_many = {count} diraaye ayaa la xannibay. Fariimahooda cusub waxay aadi doonaan Qashinka.
+block_sender_already = {sender} horay ayaa loo xannibay.
+block_sender_own = Lama xannibin: waa mid ka mid ah cinwaannadaada.
+block_sender_list_unknown = Lama xannibin: fariintan waxay ka timid liis boostada oo ma sheegayso cidda dirtay. Xannibaadda cinwaanka liiska waxay xannibi lahayd qof kasta oo ku jira.
+block_sender_moved = Diraaye waa la xannibay. {count} fariin ayaa loo guuray Qashinka.
+block_senders_moved = {senders} diraaye ayaa la xannibay. {count} fariin ayaa loo guuray Qashinka.
+unblock_sender_moved = Diraaye xannibaaddiisa waa la qaaday. {count} fariin ayaa loo guuray Soo-gelitaanka.
+unblock_senders_moved = {senders} diraaye xannibaaddooda waa la qaaday. {count} fariin ayaa loo guuray Soo-gelitaanka.
+unblock_sender_done = {sender} xannibaaddiisa waa la qaaday.
+unblock_sender_not_blocked = {sender} lama xannibin.
+pgp_cm_on = {name} shid.
+pgp_cm_off = {name} dami.
+pgp_cm_identity = Dejinta sirta (encryption) waxaa loo beddelay kan shakhsiyaddan.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Wax kor ku qor oo taabo Enter ama dooro Raadi.
+search_no_account = Marka hore ku dar akoon.
+search_no_term = Qor ereyada aad raadinayso, ama dooro taariikh ama sanduuq calaamad.
+search_running = Waa la raadinayaa...
+search_none = Wax ku habboon "{term}" ma jiraan.
+search_found_one = 1 wax ku habboon "{term}".
+search_found_many = {count} wax ku habboon "{term}".
+search_bad_date = Taariikhda u qor sida sanad-bil-maalin, tusaale 2025-12-31, iyo waqti ikhtiyaari ah sida 14:30.
+search_bad_range = Dhammaadka xadka taariikhdu waa ka hor bilowgiisa.
+search_none_any = Fariin ku habboon ma jirto.
+search_found_one_any = 1 fariin ayaa la helay.
+search_found_many_any = {count} fariin ayaa la helay.
+search_failed = Raadinta way fashilantay.
+
+# The related messages tab
+related_running = Waa la raadinayaa...
+related_none = Fariimo la xiriira lama helin.
+related_found_one = 1 fariin oo la xiriirta ayaa la helay.
+related_found_many = {count} fariin oo la xiriira ayaa la helay.
+related_failed = Fariimaha la xiriira lama raadin karin.
+
+# Writing and sending
+sending_via = Waxaa lagu dirayaa {sender}...
+send_failed = Diristu way fashilantay. Eeg diiwaannada si aad u hesho faahfaahin.
+draft_autosaved = Qabyada si otomaatig ah ayaa loo kaydiyay.
+draft_autosave_failed = Kaydinta otomaatiga ah ee qabyada way fashilantay. Eeg diiwaannada si aad u hesho faahfaahin.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Nuxurka fogaanta hadda wuu soo dhici doonaa fariimaha ka yimaada {sender}.
+downloading_attachment = {filename} waa la soo dejinayaa...
+downloading_attachments_one = 1 lifaaq ayaa la soo dejinayaa...
+downloading_attachments_many = {count} lifaaq ayaa la soo dejinayaa...
+saved_to = Waxaa lagu kaydiyay {folder}
+attachment_download_failed = Soo dejinta lifaaqa way fashilantay.
+
+# Getting mail onto the screen
+loading_folder = {folder} ee {account} waa la soo dhacayaa...
+messages_in_folder = {count} fariin {folder} ku jira.
+messages_in_folder_cached = {count} fariin {folder} ku jira (nuqulkii ugu dambeeyay ee isku-dubaridan, waa la cusboonaysiinayaa...)
+no_offline_copy = Wali nuqul aan khadka ahayn ee {folder} ma jiro.
+refresh_failed_cached = {folder} lama cusboonaysiin karin: waxaa la muujinayaa nuqulkii ugu dambeeyay ee isku-dubaridan.
+no_such_folder = Akoonkan gal {folder} ma laha.
+load_failed = Fariimaha lama soo dhicin karin. Eeg diiwaannada si aad u hesho faahfaahin.
+no_more_to_load = Galkan fariimo dheeraad ah oo la soo dhaco ma jiraan.
+loading_more = Fariimo dheeraad ah ayaa laga soo dhacayaa {folder}...
+more_loaded = {count} fariin oo dheeraad ah ayaa la soo dhacay.
+no_more_messages = Galkan fariimo dheeraad ah ma jiraan.
+load_more_failed = Fariimo dheeraad ah lama soo dhicin karin: {error}
+loading_unified = {folder} midaysan ayaa la soo dhacayaa...
+messages_in_unified = {count} fariin oo akoonnada ka mid ah ayaa ku jira {folder} midaysan.
+messages_in_unified_cached = {count} fariin {folder} midaysan ku jira (nuqulkii ugu dambeeyay ee isku-dubaridan, waa la cusboonaysiinayaa...)
+auto_purge_done = Nadiifinta otomaatigga ahi waxay ka saartay {count} fariin oo duug ah Qashinka/Spam.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Diyaar.
+opening_message = Fariinta waa la furayaa...
+opening_message_already = Fariinta waa la furayaa... (horay ayay u soo dhacaysay)
+could_not_open_message = Fariinta lama furi karin.
+could_not_open_that_message = Fariintaas lama furi karin.
+could_not_load_message = Fariintan lama soo dhici karin.
+message_still_loading = Fariintaas weli way soo dhacaysaa.
+folder_still_loading = Galkan weli wuu soo dhacayaa -- dhawaan mar kale isku day.
+not_in_thread = Fariintan ma ahan qayb silsilad ka mid ah.
+no_longer_in_thread = Fariintan mar dambe ma ahan qayb silsiladda ka mid ah.
+thread_position = Fariinta {position} ee {total} silsiladdan ku jirta.
+thread_finished_one = Silsiladdan waa dhammaatay (1 fariin).
+thread_finished_many = Silsiladdan waa dhammaatay ({count} fariin).
+select_message_first = Marka hore dooro fariin.
+conversation_failed = Wada hadalkan lama furi karin.
+select_message_for_related = Marka hore dooro fariin si aad u aragto fariimaha la xiriira.
+looking_for_related = Fariimaha la xiriira waa la raadinayaa...
+no_threading_headers = Fariintan ma laha Message-ID ama madax silsilad oo la raadiyo.
+reply_one_at_a_time = Jawaabtu waxay ku shaqeysaa hal fariin mar kasta. Fadlan dooro hal fariin oo keliya.
+select_message_to_reply = Marka hore dooro fariinta aad ka jawaabayso.
+preparing_reply = Jawaabta waa la diyaarinayaa...
+reply_load_failed = Fariintii asalka ahayd ee jawaabta lama soo dhici karin.
+select_message_to_forward = Marka hore dooro fariinta aad gudbinayso.
+preparing_forward = Fariinta la gudbinayo waa la diyaarinayaa...
+forward_load_failed = Fariinta la gudbinayo lama soo dhici karin.
+compose_tab_needed_hint = Amarkaas waxa uu u baahan yahay tab qoraal. Taabo Ctrl+N si aad fariin u qorto.
+open_message_first_view = Marka hore fur fariin, ka dibna taabo Ctrl+B si aad u beddesho muuqaalkeeda.
+open_message_first_remote = Marka hore fur fariin, ka dibna taabo Ctrl+Shift+I si aad u soo dhacdo nuxurkeeda fogaanta.
+
+# Acting on messages
+copying_message = Fariinta waa la koobiyeynayaa...
+copy_failed = Koobiyeyntu way fashilantay.
+delete_failed = Tirtiristu way fashilantay.
+already_in_archive = Horay ayuu ugu jiray Kaydka.
+archiving = Waa la kaydinayaa...
+archive_failed = Kaydintu way fashilantay.
+action_failed = {action} way fashilantay.
+nothing_to_undo = Waxba looma baahna in laga noqdo.
+private_mode_on = Hab gaar ah waa shidan yahay. Nuqulladii boostadaada ee ZBox kombiyuutarkan ku hayay waa la tirtiray.
+private_mode_off = Hab gaar ah waa dansan yahay. ZBox mar kale ayuu hayaa nuqulladaada boostada.
+undo_failed = {action} laga noqon kari waayay.
+
+# Views and folders
+folder_pane_all = Guddiga gallada: Dhammaan gallada.
+folder_pane_unified = Guddiga gallada: Gallo midaysan.
+sorted_ascending = Waxaa loo kala saaray {field}, kor u kac.
+sorted_descending = Waxaa loo kala saaray {field}, hoos u dhac.
+unified_folders_updated = Gallada midaysan waa la cusboonaysiiyay.
+zoom_reset = Cabbirka far-qoraalka fariinta waxaa loo celiyay caadiga.
+folder_creating = Gal "{folder}" waa la abuurayaa...
+folder_created = Gal "{folder}" waa la abuuray.
+folder_create_failed = Galka lama abuuri karin.
+folder_renaming = "{folder}" waxaa loo bedelayaa "{new_name}"...
+folder_renamed = Galka magaciisa waxaa loo bedelay "{new_name}".
+folder_rename_failed = Galka magaciisa lama bedeli karin.
+folder_deleting = Gal "{folder}" waa la tirtirayaa...
+folder_deleted = Galka waa la tirtiray.
+folder_delete_failed = Galka lama tirtiri karin.
+folder_subscribing = "{folder}" waa la ka diiwaan gelayaa...
+folder_unsubscribing = "{folder}" waa laga saaraayaa diiwaanka...
+folder_subscribed = La diiwaan geliyay.
+folder_unsubscribed = Laga saaray diiwaanka.
+folder_subscribe_failed = Galka lama diiwaan gelin karin.
+folder_unsubscribe_failed = Galka laga saari kari waayay diiwaanka.
+
+# Accounts
+account_not_added = Akoonka lama darin.
+account_added = Akoon waa lagu daray: {account}
+account_settings_not_saved = Dejinta akoonka lama kaydin.
+account_updated = Akoon waa la cusboonaysiiyay: {account}
+account_not_removed = Akoonka lama saarin.
+account_removed = Akoonka waa la saaray.
+account_removed_with_files = Akoonka waa la saaray. {count} fayl oo maxalli ah ayaa la tirtiray.
+default_account_failed = Akoonka caadiga ah lama dejin karin.
+default_account_set = {account} hadda waa akoonka caadiga ah.
+auto_check_not_saved = Dejinta hubinta otomaatiga ah lama kaydin.
+mute_not_saved = Dejinta aamusnaanta lama kaydin.
+account_muted = {account} waa la aamusiiyay.
+account_unmuted = {account} aamusnaantiisa waa la qaaday.
+export_done = {count} akoon iyo dejinno ayaa loo dhoofiyay {path}.
+import_done = {count} akoon ayaa laga soo geliyay {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Shaandheynta lama kaydin.
+filters_saved = Shaandheynta waa la kaydiyay {account}.
+filters_checking = {folder} waxaa lagu hubinayaa shaandheyntaada...
+filters_none_matched = Hadda socodsii: fariin {folder} ku jirta ma ku habboonaan xeer hawlgal ah.
+filters_run_failed = Shaandheynta lama socodsiin karin.
+filters_moving = {count} fariin oo la shaandheeyay ayaa la guurayaa...
+filters_move_failures = Shaandheynta: {count} fariin lama guuri karin.
+filters_moved = Shaandheyntu waxay ka guurtay {count} fariin {folder}.
+filters_move_failed = Fariimaha la shaandheeyay lama guuri karin.
+cache_not_cleared = Cache-ka lama nadiifin.
+auto_cache_cleanup = Nadiifinta cache-ka ee otomaatigga ah: fariimo ka duug ah {age}.
+phishing_update_failed = Liiska phishing-ka lama cusboonaysiin karin: {error}
+blocklist_update_failed = Liiska xannibaadda lama cusboonaysiin karin: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Marka hore fur fariin, ka dibna isticmaal Kaydi sida.
+saving_message = Fariinta waa la kaydinayaa...
+save_file_failed = Faylka lama kaydin karin.
+save_fetch_failed = Fariinta la kaydinayo lama keeni karin.
+open_message_first_print = Marka hore fur fariin, ka dibna isticmaal Daabac.
+open_message_first_preview = Marka hore fur fariin, ka dibna isticmaal Horudhac daabacaad.
+refreshing_accounts = {count} akoon ayaa la cusboonaysiinayaa...
+emptying_trash = Qashinka waa la faaruqinayaa {account}...
+trash_already_empty = Qashinku horay ayuu u madhnaa.
+trash_emptied = Qashinka waa la faaruqiyay: {count} fariin ayaa la tirtiray.
+empty_trash_failed = Qashinka lama faaruqin karin.
+emptying_junk = Spam waa la faaruqinayaa {account}...
+junk_already_empty = Spam horay ayuu u madhnaa.
+junk_emptied = Spam waa la faaruqiyay: {count} fariin ayaa la tirtiray.
+junk_emptied_prefix = Spam waa la faaruqiyay:
+junk_part_purged = {count} la tirtiray
+junk_part_in_trash = {count} Qashinka ayaa loo guuray laakiin lama xaqiijin in la saaray, hubi Qashinka
+junk_part_not_moved = {count} Qashinka lama guurin, weli waxay ku jiraan Spam
+empty_junk_failed = Spam lama faaruqin karin.
+back_online = Mar kale khadka ayaa la joogaa.
+offline_sync_running = {account} waxaa loo isku-dubaridayaa isticmaal aan khadka ahayn...
+offline_sync_failed = Isku-dubaridka aan khadka ahayn way fashilantay: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Marka hore dooro ama fur fariin.
+select_or_open_message_ctrl_u = Marka hore dooro ama fur fariin, ka dibna taabo Ctrl+U.
+no_sender_address = Fariintan cinwaan diraaye oo lagu daro ma laha.
+contact_added = {contact} waxaa lagu daray buug-cinwaankaaga.
+contact_already_there = {contact} horay ayuu ugu jiray buug-cinwaankaaga.
+privacy_saved = Dejinta qarsoodiga waa la kaydiyay. Mar kale fur fariin si loo dabbaqo.
+message_font_size = Cabbirka far-qoraalka fariinta: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Fariinta si joogto ah ayaa loo tirtirayaa
+deleting_many = {count} fariin si joogto ah ayaa loo tirtirayaa
+trashing_one = Fariinta waxaa loo guurayaa Qashinka
+trashing_many = {count} fariin ayaa loo guurayaa Qashinka
+undo_partly_restored = {action} waa laga noqday, laakiin {count} lama soo celin karin -- waxaa laga yaabaa in ay hadda la guuray, la tirtiray ama ay dhacday.
+moves_report = {action}: {moved} ee {total} fariin ayaa la guuray.
+moves_report_failed = Lama guurin, weli waxay ku jiraan galkii asalka ahaa: {count}.
+
+tray_tooltip_one = ZBox — 1 fariin oo aan la akhriyin
+tray_tooltip_many = ZBox — {count} fariin oo aan la akhriyin
+account_unreachable = {account} lama gaari karin. Hubinta otomaatiga ah ee loogu talagalay waxaa la hakinayaa {minutes} daqiiqo.
+bulk_copy_failed = Fariimaha lama koobiyeyn karin.
+bulk_copy_failed_status = Koobiyeyntu way fashilantay.
+bulk_loading_archive = Fariimaha weli way soo dhacayaan -- dhawaan mar kale isku day kaydinta.
+bulk_loading_delete = Fariimaha weli way soo dhacayaan -- dhawaan mar kale isku day tirtirka.
+bulk_loading_flag = Fariimaha weli way soo dhacayaan -- dhawaan mar kale isku day xiddigaynta.
+bulk_loading_generic = Fariimaha weli way soo dhacayaan -- dhawaan mar kale isku day.
+bulk_none = Fariin lama dooran.
+bulk_none_archive = Fariin la kaydiyo lama dooran.
+bulk_none_delete = Fariin la tirtiro lama dooran.
+bulk_none_junk = Fariin loo calaamadeeyo spam lama dooran.
+bulk_none_not_junk = Fariin loo calaamadeeyo ma aha spam lama dooran.
+delete_refused_still = Server-ku wuu diiday in la tirtiro; weli waxay ku jirtaa {folder}.
+delete_refused_trash = Waxay ku jirtaa Qashinka, laakiin server-ku wuu diiday in si joogto ah loo tirtiro.
+delete_resume_failed = {count} fariin oo tirtir hore ka timid lama tirtiri karin.
+done_perm_delete_one = Fariinta si joogto ah ayaa loo tirtiray.
+done_trash_one = Fariinta waxaa loo guuray Qashinka.
+filters_applied = Shaandheynta waxaa lagu dabbaqay {count} fariin {folder}.
+filters_failed = Shaandheynta lama socodsiin karin.
+filters_running = Shaandheynta waxaa lagu socodsiinayaa {folder}
+flag_failed = Xiddigta lama cusboonaysiin karin.
+flag_updated = Xiddigta waa la cusboonaysiiyay.
+folder_verb_subscribing = Waa la diiwaan gelinayaa
+folder_verb_unsubscribing = Waa laga saaraayaa diiwaanka
+mark_read_failed = Fariimaha loogu calaamadeyn kari waayay la akhriyay.
+mark_unread_failed = Fariimaha loogu calaamadeyn kari waayay aan la akhriyin.
+notify_new_mail_body = {count} {noun} oo cusub oo loogu talagalay {name}.
+notify_new_mail_title = Boosto cusub
+notify_noun_many = fariimood
+notify_noun_one = fariin
+report_done = {verb} {done} ee {count} fariin.
+report_verb_deleted = La tirtiray
+report_verb_permanent = Si joogto ah la tirtiray
+running_copy_many = {count} fariin ayaa la koobiyeynayaa
+running_copy_one = Fariinta waa la koobiyeynayaa
+running_junk_many = {count} fariin ayaa loo calaamadeynayaa spam
+running_junk_one = Waxaa loo calaamadeynayaa spam
+running_move_many = {count} fariin ayaa la guurayaa
+running_move_one = Waa la guurayaa
+running_not_junk_many = {count} fariin ayaa loo calaamadeynayaa ma aha spam
+running_not_junk_one = Waxaa loo calaamadeynayaa ma aha spam
+running_perm_delete_one = Fariinta si joogto ah ayaa loo tirtirayaa...
+running_read_many = {count} fariin ayaa loo calaamadeynayaa la akhriyay
+running_read_one = Waxaa loo calaamadeynayaa la akhriyay
+running_trash_one = Fariinta waxaa loo guurayaa Qashinka...
+running_unread_many = {count} fariin ayaa loo calaamadeynayaa aan la akhriyin
+running_unread_one = Waxaa loo calaamadeynayaa aan la akhriyin
+settings_saved_no_startup = Dejinta waa la kaydiyay. Gelitaanka bilowga Windows lama cusboonaysiin karin.
+settings_saved_status = Dejinta waa la kaydiyay.
+spam_blocked_sender = Diraaye la xannibay
+spam_possible_phishing = Waxaa suurtagal ah phishing
+undo_running_many = {action} waa laga noqonayaa ({count} fariin)
+undo_running_one = {action} waa laga noqonayaa
+mark_folder_read_failed = Galka loogu calaamadeyn kari waayay la akhriyay.
+marking_folder_read = Galka waxaa loogu calaamadeynayaa la akhriyay...
+upd_ready_at_exit = Cusboonaysiin horay ayaa loo soo dejiyay. Waxaa la rakibi doonaa marka aad ka baxdo ZBox.
+upd_checking = Cusboonaysiinno ayaa la hubinayaa...
+upd_up_to_date = ZBox waa cusub yahay.
+upd_available_source = ZBox {version} waa diyaar. Nuqulkani wuxuu ka shaqeeyaa isha, sidaa darteed ku cusboonaysii git.
+upd_check_failed = Cusboonaysiinno lama hubin karin: {error}
+opening_attachment = {filename} waa la furayaa...
+loading_headers = Madaxyada waa la soo dhacayaa...
+offline_inbox_only = Soo-gelitaanka iyo Kaydka oo keliya ayaa loo hayaa isticmaal aan khadka ahayn.
+offline_sync_done_inbox = {count} fariin oo Soo-gelitaanka iyo Kaydka ku jira ayaa loo isku-dubaridey isticmaal aan khadka ahayn.
+working_offline = Shaqo aan khadka ahayn: waxaa la muujinayaa nuqulkii ugu dambeeyay ee isku-dubaridan ee Soo-gelitaanka/La diray/Qabyo.
+emptying_trash_all = Qashinka akoon kasta waa la faaruqinayaa...
+trash_emptied_all = Qashinka waa la faaruqiyay {accounts} akoon: {count} fariin ayaa la tirtiray.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fayl
+bar_edit = &Tafatir
+bar_view = &Muuqaal
+bar_message = &Fariin
+bar_compose = &Qor
+bar_tools = &Qalabka
+bar_help = &Caawimaad
+
+# File
+file_new = Cusub
+file_new_message = Fariin
+file_new_account = Akoon iimeyl...
+file_open_saved_message = Fur fariin la kaydiyay...
+file_close = Xir
+file_save_message_as = Kaydi fariinta sida...
+file_get_new_for = Hel fariimo cusub oo loogu talagalay
+file_get_new_all = Dhammaan akoonnada
+file_get_new_current = Akoonka hadda
+file_offline = Aan khadka ahayn
+file_work_offline = Shaqee aan khadka ahayn
+file_sync_now = Isku-dubaridka hadda
+file_print = Daabac...
+file_print_preview = Horudhac daabacaad...
+file_exit = Ka bax
+
+# Edit
+edit_undo = Ka noqo
+edit_select_all = Dooro dhammaan
+edit_find_messages = Hel fariimo...
+
+# Message
+message_reply = Jawaab
+message_reply_all = Jawaab dhammaan
+message_forward = Gudbi
+message_archive = Kaydi
+message_delete = Tirtir
+message_delete_permanently = Si joogto ah u tirtir
+message_mark = Calaamadee
+mark_read = La akhriyay
+mark_unread = Aan la akhriyin
+mark_flagged = Xiddig leh
+mark_junk = Spam
+mark_not_junk = Ma aha spam
+message_watch_thread = Eeg silsilad
+message_ignore_thread = Iska indho tir silsilad
+message_open_conversation = Fur fariinta wada hadal
+message_show_related = Muuji fariimaha la xiriira
+message_add_sender_to_address_book = Ku dar diraaha buug-cinwaanka
+message_announce_sender = Ku dhawaaq diraaha
+message_announce_copy_sender = Ku dhawaaq diraaha oo koobiyee cinwaanka
+
+# View
+view_folders = Gallo
+folders_all = Dhammaan
+folders_unified = Midaysan
+folders_jump_inbox = U gudub liiska fariimaha Soo-gelitaanka
+folders_configure_unified = Habee gallada midaysan...
+view_sort_by = Kala saar
+sort_date = Taariikh
+sort_subject = Mawduuc
+sort_from = Laga soo diray
+sort_descending = Hoos u dhac (ugu cusub marka hore)
+sort_ascending = Kor u kac (ugu duugga marka hore)
+view_threads = Silsilado
+threads_all = Dhammaan
+threads_watched = Silsilado la eego
+threads_ignored = Silsilado la iska indho tiray
+threads_expand_all = Balaadhi dhammaan silsiladaha
+threads_collapse_all = Isku laab dhammaan silsiladaha
+view_load_more = Soo dhac fariimo dheeraad ah
+view_toggle_message_view = U beddel muuqaalka Qoraalka iyo HTML
+view_show_remote_content = Muuji nuxurka fogaanta fariintan
+view_message_zoom = Weyneynta fariinta
+zoom_increase = Kordhi cabbirka far-qoraalka fariinta
+zoom_decrease = Yaree cabbirka far-qoraalka fariinta
+zoom_reset = Dib u deji cabbirka far-qoraalka fariinta
+
+# Compose
+compose_send = &Dir
+compose_save_draft = &Kaydi qabyada
+compose_attach = &Ku lifaaq fayl...
+compose_fmt_bold = &Qalin
+compose_fmt_italic = &Dheg
+compose_fmt_strike = &Sahan
+compose_fmt_bullet = &Liis dhibco leh
+compose_fmt_number = &Liis tiro leh
+compose_fmt_quote = &Xigasho
+compose_fmt_code = &Koodh
+compose_fmt_heading1 = &Cinwaan
+compose_link = &Geli xiriiriye...
+compose_formatting = &Qaabaynta halkan
+compose_spellcheck = &Hubi higaadda...
+compose_spellcheck_next = &Qalad higaad ee xiga
+compose_spellcheck_add = &Ku dar ereyga qaamuuska
+compose_insert_signature = &Geli saxiix
+compose_paste_quotation = &Ku dhejiso xigasho ahaan
+compose_word_count = &Tirada erayada
+compose_preview = &Horudhac...
+compose_diagnostics = &Baaritaanka qoraalka...
+compose_edit_signature = &Tafatir saxiixa...
+compose_hotkeys_diagnostic = &Baaritaanka furayaasha degdega ah
+
+# Tools
+tools_account_settings = Dejinta akoonnada iyo shakhsiyaadka...
+tools_mute_account = Aamusii akoonka
+tools_pause_auto_check = Hakii hubinta otomaatiga ah
+tools_disable_account = Dami akoonka
+tools_remove_account = Ka saar akoonka...
+tools_address_book = Buug-cinwaan...
+tools_message_filters = Shaandheynta fariimaha...
+tools_import = Soo geli akoonno iyo dejinno...
+tools_export = U dhoofi akoonno iyo dejinno...
+tools_cache_cleanup = Habaynta nadiifinta cache-ka...
+tools_privacy = Qarsoodi iyo xannibaadda nuxurka...
+tools_settings = Dejinta...
+
+# Help
+help_shortcuts = Gaaban-furayaasha kiiboodhka...
+help_about = Ku saabsan ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Akoon cusub...
+tree_account_settings = Dejinta akoonnada iyo shakhsiyaadka...
+tree_mute_account = Aamusii akoonka
+tree_pause_auto_check = Hakii hubinta otomaatiga ah
+tree_enable_account = Hawlgeli akoonka
+tree_disable_account = Dami akoonka
+tree_set_default_account = U deji akoon caadi ah
+tree_remove_account = Ka saar akoonka...
+tree_refresh = Cusboonaysii
+tree_new_folder = Gal cusub...
+tree_empty_trash = Faaruqi qashinka
+tree_empty_junk = Faaruqi spam
+tree_rename_folder = Magac bedel galka...
+tree_delete_folder = Tirtir galka...
+tree_subscribe_folder = Diiwaan geli galka
+tree_unsubscribe_folder = Ka saar diiwaanka galka
+
+# The message list menu, opened the same two ways
+list_select_all = Dooro dhammaan
+list_reply = Jawaab
+list_reply_all = Jawaab dhammaan
+list_forward = Gudbi
+list_mark = Calaamadee
+list_archive = Kaydi
+list_delete_to_trash = Tirtir (U guur Qashinka)
+list_delete_permanently = Si joogto ah u tirtir
+list_move_to = U guur
+list_copy_to = U koobiyee
+
+# The notification area icon
+tray_open = &Fur ZBox
+tray_unread_one = 1 fariin oo aan la akhriyin
+tray_unread_many = {count} fariin oo aan la akhriyin
+tray_no_unread = Fariimo aan la akhriyin ma jiraan
+tray_settings = &Dejinta...
+tray_quit = &Ka bax ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Qalin
+format_italic = &Dheg
+format_strike = &Sahan
+format_bullet = &Liis dhibco leh
+format_number = &Liis tiro leh
+format_quote = &Xigasho
+format_code = &Koodh
+format_heading1 = &Cinwaan
+format_insert_link = &Geli xiriiriye...
+format_formatting_here = &Qaabaynta halkan
+tools_enable_account = Hawlgeli akoonka
+edit_undo_action = Ka noqo {action}
+tree_mark_folder_read = U calaamadee galka la akhriyay
+help_updates = &Cusboonaysiinno
+help_check_updates = &Hadda hubi cusboonaysiinno...
+help_update_settings = &Dejinta cusboonaysiinta...
+help_releases_page = &Fur bogga soo-saarida
+message_attachments = Lifaaqyo
+message_no_attachments = Lifaaq ma jiro
+message_save_all_attachments = Kaydi dhammaan lifaaqyada
+view_full_headers = Madaxyada oo dhan
+folders_go_to_tree = U tag liiska gallada
+list_block_sender = Xannib diraahan
+list_unblock_sender = Qaad xannibaadda diraahan
+sort_received = La helay
+sort_star = Xiddig
+sort_order_received = Hanaanka helista
+sort_priority = Mudnaan
+sort_recipient = Qaataha
+sort_correspondents = Is-weydaarsada
+sort_size = Cabbir
+sort_read = La akhriyay
+sort_junk_status = Xaaladda spam
+sort_attachments = Lifaaqyo
+sort_threaded = Silsilado leh
+sort_unthreaded = Silsilado la'aan
+view_columns = Tiirar
+tools_openpgp_keys = Maamulaha furayaasha OpenPGP
+tools_smime_certs = Maamulaha shahaadooyinka S/MIME
+compose_pgp_encrypt = &Sir geli
+compose_pgp_sign = &Ku saxiix si dijitaal ah
+compose_pgp_attach_key = &Ku lifaaq furahayga dadweynaha
+
+[dialogs]
+set_theme_restart_confirm = Dib ugu bilow ZBox si loo dabbaqo beddelka mawduuca?
+set_ui_theme_label = &Mawduuca interface-ka:
+set_ui_theme_note = Midabbada menus-ka, liisaska, wada hadalada iyo muuqaalka fariinta Qoraalka. Raac nidaamka wuxuu isticmaalaa habka iftiinka ama mugdiga ee Windows. Buluug-barka-dhexe, Mugdi-diiran iyo Kala-duwanaansho-jilicsan waa mawduucyo mugdi ah oo midabbo jilicsan leh. Fariimaha HTML waxay haystaan midabbadooda, Windows High Contrast-na had iyo jeer waa mudnaan. Waxay dhaqan galaysaa marka xigta ee ZBox bilaabmo.
+set_theme_system = Raac nidaamka
+set_theme_light = Iftiin
+set_theme_dark = Mugdi
+set_theme_midnight = Buluug-barka-dhexe
+set_theme_warm = Mugdi-diiran
+set_theme_soft = Kala-duwanaansho-jilicsan
+set_language_restart_confirm = Dib ugu bilow ZBox si loo dabbaqo beddelka luqadda?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = La xiriir Harith
+title_identity = Shakhsiyad
+title_show_password = Muuji erayga sirta
+title_missing_information = Macluumaad maqan
+title_unsupported_provider = Bixiye aan la taageerin
+title_test_connection = Tijaabi xidhiidhka
+title_new_contact = Xiriir cusub
+title_edit_contact = Tafatir xiriirka
+title_delete_contact = Tirtir xiriirka
+title_import_contacts = Soo geli xiriiro
+title_export_contacts = U dhoofi xiriiro
+title_rename_group = Magac bedel kooxda
+title_delete_group = Tirtir kooxda
+title_send = Dir
+title_send_failed = Diristu way fashilantay
+title_attach_file = Ku lifaaq fayl
+title_save_draft = Kaydi qabyada
+title_documentation = Dukumeentiyada ZBox
+title_open_link = Fur xiriiriyaha
+title_filter_rule = Xeerka shaandhaynta
+title_master_password = Erayga sirta ee ugu weyn
+title_attachment_saved = Lifaaqa waa la kaydiyay
+title_attachments_saved = Lifaaqyada waa la kaydiyay
+title_download_failed = Soo dejintu way fashilantay
+title_print = Daabac
+title_print_preview = Horudhac daabacaad
+title_related_messages = Fariimaha la xiriira
+title_search = Raadi
+title_unlock = Fur
+title_unlock_methods = Habab furid
+title_desktop_shortcut = Gaaban-fure miiska
+title_spell_check = Hubinta higaadda
+title_plain_text_password = Erayga sirta qoraal caadi ah ayaa la helay
+title_startup_error = Qalad bilaabista ZBox
+
+identity_email_required = Geli cinwaan iimeyl.
+
+wizard_password_not_shown = Erayga sirta lagama muujin karo nidaamkan. Weli si caadi ah ayaa loo qorayaa oo loo kaydiyaa.
+wizard_email_required = Geli cinwaan iimeyl oo sax ah ka hor intaadan sii wadin.
+wizard_test_needs_server = Geli iimeylka gelitaanka iyo server-ka soo-gelitaanka ka hor tijaabada.
+wizard_test_succeeded = Xidhiidhku wuu guuleystay. {count} fariin ayaa laga helay Soo-gelitaanka.
+
+contact_email_required = Cinwaan iimeyl ayaa loo baahan yahay.
+contact_select_to_edit = Dooro xiriir si aad u tafatirto.
+contact_select_to_delete = Dooro xiriir si aad u tirtirto.
+contact_delete_confirm = Ka tirtir {label} buug-cinwaanka?
+contacts_import_choose_file = Dooro fayl .vcf (vCard) ama .csv si aad u soo gelisid.
+contacts_imported = {count} xiriir ayaa la soo geliyay.
+contacts_import_empty = Faylkaas xiriiro lagama helin.
+contacts_none_to_export = Xiriiro la dhoofiyo ma jiraan.
+contacts_exported = {count} xiriir ayaa loo dhoofiyay:\n{path}
+group_name_exists = Koox magaceeda "{name}" horay ayay u jirtay.
+group_delete_confirm = Tirtir kooxda "{name}"? Xiriirradeeda lama tirtiro.
+
+send_no_account = Ku dar akoon ka hor dirista, ama dooro mid Laga soo diray.
+send_no_recipient = Geli ugu yaraan hal qaate Loogu.
+draft_no_account = Ku dar akoon ka hor kaydinta qabyada, ama dooro mid Laga soo diray.
+attached_file = La lifaaqay: {name}\n\n{count} fayl ayaa la lifaaqi doonaa marka aad dirto.
+
+documentation_copied = Dukumeentiyada oo dhan ee ZBox waa la koobiyeeyay clipboard-ka.
+
+filter_rule_needs_name = Magac u bixi xeerkan.
+filter_rule_needs_condition = Deji ugu yaraan hal shuruud (Laga soo diray, Loogu ama Mawduuc).
+filter_rule_needs_action = Dooro ugu yaraan hal tallaabo: u calaamadee la akhriyay, xiddigee, ama u guur gal.
+
+master_password_set = Erayga sirta ee ugu weyn waa la dejiyay. Ku hay meel ammaan ah: ZBox wuxuu weydiin doonaa mar kasta oo kombiyuutar cusub, lamana soo celin karo haddii uu lumo.
+master_password_offer = Erayga sirta ee ugu weyn la'aantiisa, erayada sirta ee akoonnada la kaydiyay waxaa lagu akhriyi karaa kaliya kombiyuutarkan iyo akoonkan Windows. Haddii aad ZBox u koobiyeyso meel kale, akoon kastaa waa inuu mar kale galo.\n\nDeji mid hadda?
+
+attachment_saved = Lifaaqa waa la kaydiyay:\n{path}
+attachments_saved = {count} lifaaq ayaa la kaydiyay:\n{path}
+
+shortcut_created_settings = Gaaban-fure waa la abuuray:\n{path}\n\nWaxay ka bilowdaa ZBox:\n{base}
+
+spellcheck_no_dictionary = Qaamuuska higaaddu waa maqan yahay, sidaa darteed hubinta higaaddu kuma jirto nuqulkan ZBox.
+spellcheck_none_found = Qalad higaad lama helin.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Ku deji furaha gelitaanka kombiyuutarkan oo hilmaan midka laga kaydiyay kombiyuutar kale?\n\nWindows wuxuu ku weydiin doonaa inaad ku xaqiijiso Hello. Furihii hore ee gelitaanka ee kombiyuutarka kale ku hadhay halkaas lama taaban doono wuuna sii shaqayn doonaa haddii aad galkan halkaas ku celiso, laakiin waa in mar kale la dejiyaa.
+unlock_replace_passkey_many = Ku deji furaha gelitaanka kombiyuutarkan oo hilmaan {count} oo laga kaydiyay kombiyuutaro kale?\n\nWindows wuxuu ku weydiin doonaa inaad ku xaqiijiso Hello. Furayaashii hore ee gelitaanka ee kombiyuutarka kale ku hadhay halkaas lama taaban doono wayna sii shaqayn doonaan haddii aad galkan halkaas ku celiso, laakiin waa in mar kale la dejiyaa.
+unlock_method_works = Habkaas wuu shaqeeyaa.
+
+plain_text_password_found = data\config\himalaya.toml weli waxay ka kooban tahay eray sir qoraal caadi ah (auth.raw) oo ka yimid dejinta akoon hore.\n\nKa saar akoonkaas oo mar kale ku dar, ama tirtir data\config\himalaya.toml si loo soo celiyo isagoo isticmaalaya kaydka aqoonsiga ee ammaanka ah.
+
+# main_frame's titles.
+title_account_list_unavailable = Liiska akoonnada lama heli karo
+title_open_message = Fur fariin
+title_run_filters = Socodsii shaandheynta
+title_clear_cache = Nadiifi cache-ka fariimaha aan khadka ahayn
+title_remove_account = Ka saar akoonka
+title_new_folder = Gal cusub
+title_rename_folder = Magac bedel galka
+title_delete_folder = Tirtir galka
+title_subscribe = Diiwaan geli
+title_unsubscribe = Ka saar diiwaanka
+title_open_saved_message = Fur fariin la kaydiyay
+title_save_message_as = Kaydi fariinta sida
+title_empty_trash = Faaruqi qashinka
+title_empty_junk = Faaruqi spam
+title_synchronize_offline = Isku-dubarid isticmaal aan khadka ahayn
+title_export_accounts = U dhoofi akoonno iyo dejinno
+title_import_accounts = Soo geli akoonno iyo dejinno
+title_show_related = Muuji fariimaha la xiriira
+title_reply = Jawaab
+title_forward = Gudbi
+title_undo = Ka noqo
+title_delete_permanently = Si joogto ah u tirtir
+title_delete = Tirtir
+title_copy_to = U koobiyee
+title_archive = Kaydi
+title_accounts_locked = Akoonnada waa la xiray
+
+select_account_first = Marka hore dooro akoon geedka dhexdiisa.
+select_account_or_folder = Marka hore dooro akoon ama gal.
+filters_left_behind = {count} fariin ayaa ku habboonaatay shaandhe laakiin weli waxay ku jiraan {folder}.
+cache_clear_confirm = Nadiifi cache-ka fariimaha aan khadka ahayn ee akoon kasta?\n\nTani waxay tirtirtaa nuqullada maxalliga ah ee ZBox oo keliya. Waxba looma tirtiro server boosto oo kasta, fariimahana mar kale ayaa la soo dejin doonaa marka aad u baahato.
+account_remove_confirm = Ka saar {name} ({address})?\n\nBoostada server-ka lama tirtiro.\nNuqullada kombiyuutarkan lagu soo dejiyay waa la tirtiraa.\nErayga sirta ee la kaydiyay waa la tirtiraa.
+folder_delete_confirm = Si joogto ah u tirtir galka "{folder}" iyo wax kasta oo ku jira {address}?\n\nTan laga noqon mayo.
+empty_trash_confirm = Si joogto ah u tirtir dhammaan fariimaha Qashinka ku jira ee {address}?\n\nTan laga noqon mayo.
+empty_junk_confirm = Si joogto ah u tirtir dhammaan fariimaha Spam ku jira ee {address}?\n\nTan laga noqon mayo.
+sync_select_account = Dooro akoon (ma aha gal Midaysan) si loo isku-dubaridey isticmaal aan khadka ahayn.
+accounts_imported = {count} akoon ayaa la soo geliyay:\n\n{names}\n\nErayada sirta weligood lama dhoofiyo, kaydka erayada sirta ee sirta lagu geliyay wuxuu u gaar yahay akoonkan isticmaalaha Windows, sidaas darteed akoon kasta oo la soo geliyay wuxuu u baahan yahay in erayga sirta lagu qoro hal mar iyada oo loo marayo Qalabka > Dejinta akoonnada iyo shakhsiyaadka ka hor inta aanu isku xirmin.
+accounts_import_none = Akoonno lagama helin faylkan. Dejinno weli waa la soo geliyay, haddii faylku haystay.
+delete_permanently_confirm_one = Si joogto ah u tirtir fariintan? Tani waxay ka boodaysaa galka qashinka laguna laaban karo mayo.
+accounts_locked = Erayada sirta ee akoonnada la kaydiyay waxaa lagu qoray kombiyuutar kale, sidaas darteed halkan lagama akhriyi karo.\n\nAkoon kastaa waa inuu mar kale ku galo server-ka boostadiisa. Si aad taas uga fogaato mar dambe, ku deji eray sir oo weyn Dejinta, Amniga barnaamijka iyo xogta kombiyuutarka akoonnadu horay ugu shaqeynayeen.
+master_password_remove_confirm = Ka saar erayga sirta ee ugu weyn? Erayada sirta ee akoonnada la kaydiyay markaas waxaa lagu akhriyi karaa kaliya kombiyuutarkan iyo akoonkan Windows. Haddii aad ZBox u koobiyeyso meel kale ka dib, akoon kastaa waa inuu mar kale galo.\n\nHadda ka saar?
+shortcut_offer = Miiska saar gaaban-fure ZBox?\n\nWaxay bilaabi doontaa galkan ZBox:\n{path}\n\nGaaban-furuhu wuxuu duubaa meeshan saxda ah. Haddii aad galka ZBox dambe u guurto, fur Dejinta, Aagga ogeysiisyada iyo daaqadda oo mar kale dooro Abuur gaaban-fure miiska si uu ugu tilmaamo meesha cusub.
+shortcut_created = Gaaban-fure waa la abuuray:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Magaca la muujiyo
+form_email_address = Cinwaanka iimeylka
+form_your_name = Magacaaga
+form_login_email = Iimeylka gelitaanka
+form_password = Erayga sirta
+srv_imap_host = Server soo-gelitaan (IMAP)
+srv_imap_port = Dekedda soo-gelitaanka
+srv_imap_encryption = Sir-gelinta soo-gelitaanka
+srv_smtp_host = Server baxa (SMTP)
+srv_smtp_port = Dekedda baxa
+srv_smtp_encryption = Sir-gelinta baxa
+
+acct_login_email_label = Iimeylka gelitaanka (waxaa loo isticmaalaa gelitaanka)
+acct_new_password_label = Eray sir cusub (ka tag madhan si aad u haysato kan hadda)
+acct_new_password_name = Eray sir cusub
+acct_identity_email_label = Cinwaanka iimeylka (waxaa loo isticmaalaa dirista iyo qaadashada)
+acct_identities_label = Shakhsiyaado dheeraad ah (magacyo kale)
+acct_identities_name = Shakhsiyaado dheeraad ah
+acct_add_identity = &Ku dar shakhsiyad...
+acct_edit_identity = &Tafatir shakhsiyadda...
+acct_remove_identity = &Ka saar shakhsiyadda
+acct_signature = Saxiix
+acct_edit_signature = &Tafatir saxiixa...
+acct_junk_folder = Galka spam
+acct_account_status = Xaaladda akoonka
+acct_disable_account = Dami akoonkan
+acct_default_account = Akoonka caadiga ah
+acct_set_default = U deji akoon caadi ah
+acct_notifications = Ogeysiisyada boostada cusub
+acct_mute_notifications = Aamusii ogeysiisyada akoonkan
+acct_server_settings = Dejinta server-ka
+
+wiz_before_you_start = Ka hor intaadan bilaabin
+wiz_notice_name = Ogeysiis muhiim ah
+wiz_google_instructions = &Fur tilmaamaha erayga sirta ee barnaamijka Google
+wiz_intro = Magacaaga iyo cinwaanka iimeylkaaga
+wiz_login_same = Iimeylka gelitaanku wuxuu la mid yahay cinwaanka iimeylka kor ku xusan
+wiz_show_password = &Muuji erayga sirta
+wiz_preset_applied = Dejin hore ayaa loo dabbaqay {name}.
+wiz_summary_name = Soo koobidda akoonka
+wiz_review = Dib u eeg, ka dibna dhufo Dhammee si aad u kaydiso akoonkan.
+wiz_test_connection = &Tijaabi xidhiidhka
+wiz_testing = Xidhiidhka waa la tijaabinayaa...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Awood sii diiwaanka cilad-baaritaanka, lagu kaydiyay: data\logs)
+set_language_label = &Luqadda interface-ka:
+set_language_label_only_english = &Luqadda interface-ka: (Ingiriis oo keliya)
+set_headers_checkbox = &Muuji madaxyada fariinta kor fariinta furan
+set_zoom_label = Far-qoraalka iyo weyneynta fariinta:
+set_font_override = &Dhaafi cabbirka far-qoraalka fariinta ee caadiga ah
+set_font_size_name = Cabbirka far-qoraalka fariinta (dhibco)
+set_reading_font_name = Far-qoraalka akhriska
+set_reading_font_label = Far-qoraalka akhriska (madhan caadi ahaan):
+set_view_label = Muuqaalka jidhka fariinta marka la furo fariin:
+set_view_text = Qoraal
+set_view_html = HTML (la muujiyay)
+set_engine_label = Mishiinka muujinta HTML:
+set_engine_edge = Edge / WebView2 (muujin casri ah)
+set_engine_ie = MSHTML duug ah (taageerada akhriyaha shaashadda ugu fiican)
+set_runtime_label = WebView2 runtime:
+set_runtime_auto = Otomaatig — isticmaal runtime-ka la baakadeeyay haddii uu jiro (lagu talinayo)
+set_runtime_fixed = Nuqulka go'an ee la baakadeeyay oo keliya
+set_runtime_evergreen = Runtime nidaamka oo dhan (waxaa cusboonaysiiya Windows)
+set_sr_box = Xakamaynta ogeysiisyada akhriyaha shaashadda
+set_silence_label = Aamusnaanta akhriyaha shaashadda ee HTML:
+set_silence_name = Aamusnaanta akhriyaha shaashadda ee HTML millisekan ahaan
+set_focus_delay_label = Dib-u-dhaca fokas-ka helitaanka WebView:
+set_focus_delay_name = Dib-u-dhaca fokas-ka helitaanka WebView, heerka 1 ilaa 10
+set_announce_label = Muddada ogeysiiska:
+set_announce_name = Muddada ogeysiiska millisekan ahaan
+set_announce_actions = &Ku hadal ogeysiisyada tallaabooyinka, boostada cusub iyo ogeysiisyada
+set_attachment_dir_label = Galka lagu kaydiyo lifaaqyada:
+set_attachment_dir_name = Galka lagu kaydiyo lifaaqyada
+set_browse = &Baadh…
+set_autosave_label = Xilliga kaydinta otomaatiga ah ee qabyada:
+set_autosave_name = Xilliga kaydinta otomaatiga ah ee qabyada ilbiriqsi ahaan
+set_auto_purge_label = Si otomaatig ah u tirtir Qashinka duug ah iyo Spam:
+set_auto_purge_name = Si otomaatig ah u tirtir Qashinka iyo Spam ka dib maalmahan
+set_bare_keys = &Awood sii gaaban-furayaasha hal-fure ee S (xiddig), A (kaydi), J (u calaamadee spam)/Shift+J (u calaamadee ma aha spam), W (eeg silsilad), K (iska indho tir silsilad), M (u guur)/Shift+M (u guur magaca galka) iyo C (u koobiyee) liiska fariimaha
+set_sound_label = Cod iyo ogeysiisyo:
+set_sounds_enabled = &Ciyaar codadka ogeysiiska
+set_desktop_notifications = &Muuji ogeysiisyada miiska ee boostada cusub
+set_theme_label = Beddel mawduuca codadka:
+set_theme_label_only_default = Beddel mawduuca codadka: (mawduuca caadiga ah oo keliya)
+set_security_box = Amniga barnaamijka iyo xogta
+set_lock_on_quit = &Xir ZBox marka si buuxda looga baxo
+set_private_mode = &Hab gaar ah: ha ku haynin boosto kombiyuutarkan ama diskiga
+set_unlock_methods_button = &Habab furid…
+set_master_password_button = &Erayga sirta ee ugu weyn…
+set_tray_label = Aagga ogeysiisyada iyo daaqadda:
+set_minimize_to_tray = &Yaree aagga ogeysiisyada
+set_close_to_tray = &Xir aagga ogeysiisyada
+set_stay_maximized = &Had iyo jeer ZBox ka dhig mid la weeyneeyay
+set_run_at_startup = &Socodsii ZBox marka Windows bilaabmo
+set_desktop_shortcut_button = &Abuur gaaban-fure miiska
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Diiwaanka cilad-baaritaanku wuxuu caawiyaa baarista dhibaatooyinka haddii wax khaldamaan. Dansiintiisu wuxuu joojiyaa qorista gelitaanno cusub; faylasha diiwaanka ee jira lama tirtiro. Waxay dhaqan galaysaa marka xigta ee ZBox bilaabmo.
+set_language_note = Waxay dhaqan galaysaa marka xigta ee ZBox bilaabmo. Faylasha luqaddu waa faylal qoraal caadi ah oo ku jira galka lang ee ZBox, ku xigta galka sounds. Si aad mid ugu darto, koobiyee galka en, magac bedel koobiga iyo faylka .lang ee ku jira una beddel koodhka luqaddaada, kuna turjun qoraalka midigta calaamad kasta oo le'eg. Wax kasta oo aan weli la turjumin waxaa lagu hadlaa Ingiriis halkii aamusnaan lahaa, sidaa darteed fayl aan dhammaystirnayn si ammaan ah ayaa loo isticmaali karaa.
+set_headers_note = Laga soo diray, Loogu, Cc, Taariikh iyo Mawduuc, oo la muujiyo kor jidhka fariinta labada muuqaal ee Qoraalka iyo HTML. La'aantiis ma jirto hab lagu ogaado cidda fariinta dirtay isagoo fariinta ku dhex jira adigoon xirin tabka oo liiska ku noqonin. Fokas-ku weli wuxuu ku dhacaa jidhka fariinta; qaybta madaxyadu waa hal Shift+Tab fog. Waxay dhaqan galaysaa marka xigta ee la furo fariin.
+set_zoom_note = Waxay weyneysaa ama yaraysaa qoraalka fariinta furan, iyada oo aan ku xirnayn inta kale ee ZBox iyo cabbirka shaashadda ee Windows. Waxay khusaysaa muuqaalada Qoraalka iyo HTML labadaba. "Far-qoraalka akhriska" wuxuu si ikhtiyaari ah u xoojiyaa far-qoraal gaar ah (tusaale Consolas, OpenDyslexic) jidhka fariinta; ka tag madhan si aad u haysato far-qoraalka caadiga ah. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 ee liiska Muuqaalka waxay kordhiyaan, yareeyaan ama dib u dejiyaan cabbirka far-qoraalka oo keliya iyagoon furin wada hadalkan, waxayna isla markiiba khusaan fariin kasta oo furan. Beddelka halkan lagu sameeyo wuxuu sidoo kale isla markiiba khusaa marka OK la taabto.
+set_view_note = HTML waa caadiga ah. Wuxuu muujiyaa fariinta sida loo diray, waxaana akhriya NVDA iyo JAWS: marka bog HTML ah la furo, ZBox wuxuu aamusiiyaa ogeysiiska browser-ka, wuxuu geliyaa kursoorka akhriska safka koowaad ee fariinta, wuxuuna ku shaqeysiiyaa gaaban-furayaasha ZBox bogga dhexdiisa, oo ay ku jirto F6 si fokas-ka looga saaro. Qoraalku wuxuu muujiyaa isla fariintaas qoraal caadi ah oo aan qaabeyn lahayn kontoroolka tafatirka caadiga ah -- sawirro ma jiraan, qaab ma jiro, wax kale oo ku xiran in browser engine la rakibay ma jiro. Taabo Ctrl+B fariin furan dhexdeeda si aad u beddesho dhinac kasta.
+set_engine_note = Edge wuxuu muujiyaa CSS casri ah laakiin wuxuu bogga ku socodsiiyaa habraac gaar ah, nuxurkiisana wuxuu u gudbiyaa akhriyaha shaashadda oo keliya iyada oo loo marayo interface wxPython aanu gaari karin -- sidaa darteed fariintu waxay u furmi kartaa iyadoo aan wax la akhriyi karo ku jirin. MSHTML-ka duugga ahi waa mishiinka ay isticmaaleen Outlook Express iyo Windows Mail: wuxuu ku shaqeeyaa habraaca gudihiisa wuxuuna daabacaa geed dukumeenti oo caadi ah, sidaa darteed NVDA iyo JAWS waxay ku akhriyaan habka baadhista sida bog web kasta. Waxay dhaqan galaysaa marka xigta ee la furo fariin.
+set_runtime_note = Runtime-ka nidaamka oo dhan waxaa dayactira Windows Update, sidaa darteed mishiinka akhriya boostadaada wuu isbeddeli karaa digniin la'aan -- sidaasaa muuqaal fariin HTML ah oo shaqaynayay ay ku jabi karto mashiin aan wax ZBox ku saabsan isbeddelin. Nuqul baakad ah oo ku jira galka deps ayaa xidhaya nooca saxda ah ee ZBox lagu tijaabiyay. Socodsii tools\get_webview2.bat si aad mid u rakibto. Haddii aan nuqul baakad ah jirin, ZBox si kasta ayuu u isticmaalaa runtime-ka nidaamka oo dhan, sidaa darteed had iyo jeer wuu bilaabmaa. Waxay dhaqan galaysaa marka xigta ee ZBox bilaabmo.
+set_sr_intro = Intee le'eg ZBox ayuu u oggolaanayaa akhriyaha shaashaddaada inuu hadlo marka fariin la furayo, iyo intee le'eg ayay ogeysiisyada codka ee ZBox ee ay iyagu leeyihiin sii jiraan.
+set_silence_note = Marka fariin HTML ah la furo, ZBox wuxuu hayn karaa Ctrl macmal ah ilaa 2 ilbiriqsi si uu u aamusiiyo ogeysiiska browser-ka ee akhriyaha shaashadda. Mawduuca fariinta horay ayaa loo isticmaalaa cinwaanka bogga, taasoo ka hortagta in URL base64 la akhriyo si dhawaaq leh, laakiin akhriyuhu weli wuxuu ku dhawaaqaa kontoroolka iyo nooca dukumeentiga bilowga fariinta, sidaa darteed tani waa shidan tahay caadi ahaan. Dooro Dansan si aad u damiso, ama waqti dheer haddii buuq weli dhex maro.
+set_focus_delay_note = Marka fariin HTML ah dhammayso soo dhaca, ZBox wuxuu sugaa waqtigan ka hor intaanu runti fokas-garayn. WebView2 oo sheegaya in bog la soo dhigay iyo Windows oo dhammaystiraya geedka helitaanka bogga ma aha isla wakhti; fokas-gelinta aad u hore ayaa keenta in NVDA/JAWS ku dhawaaqaan "Web content page" guud halkii fariinta, ama ay ka warbixiyaan fariinta in aanay diyaar ahayn muddo ka dib furista. Doorashooyinku waxay ka bilaabmaan 0.1 ilbiriqsi ilaa 1 ilbiriqsi. Dooro waqti dheer haddii aad weli maqlayso tan, mid gaaban marka furistu ay dhisan dareento, si ay u furmaan si degdeg ah.
+set_announce_note = Ctrl+U iyo Ctrl+Shift+U waxay ka warbixiyaan diraaha wada hadal yar oo is xira, sababtoo ah bar-xaaladda waxaa lagu hadlaa kaliya haddii akhriyaha shaashaddaadu leeyahay warbixinta bar-xaaladda oo shidan. Tani waa waqtiga wada hadalku sii jiro. U deji si ay ula mid noqoto xawaaraha hadalkaaga: haddii ay aad u gaaban tahay, waxay xirmaysaa dhexda weedha, taasoo ka dhigeysa ujeedka mid fashilma. Fure kasta wuu hore u xiraa; furayaasha fallaadhu way furan ka dhigaan si aad mar kale u akhrisato. Sug fure wuxuu furan ka dhigaa ilaa aad mid taabato.
+set_attachment_dir_note = Halka "Kaydi dhammaan" ku qoro lifaaqyada marka fariin ay ka badan tahay hal. Si otomaatig ah ayaa loo abuuraa haddii aanu jirin. Fariin hal lifaaq leh weli waxay weydiisaa halka lagu kaydiyo, sidii hore. Ka tag madhan si aad u isticmaasho caadiga ah:\n{path}
+set_autosave_note = Inta jeer ee tabka qoraalka furan uu is-kaydiyo Qabyada intaad qorayso. Kaydi qabyada (Ctrl+S) weli wuxuu kaydiyaa marka la weydiiyo labada xaaladood, xirista tabka qoraal aan la kaydin leh had iyo jeer wuxuu bixiyaa kaydinta. Dansan wuxuu damiyaa kaydinta otomaatiga ah. Wax ka yar 15 ilbiriqsi lama bixiyo -- taasi waxay noqon lahayd safar server ah oo la tartamaya qorista.
+set_auto_purge_note = Si joogto ah ayuu uga saaraa fariimaha Qashinka iyo Spam marka ay halkaas joogeen maalmahan -- isla ka saarista joogtada ah ee Faaruqi qashinka iyo Faaruqi spam ay sameeyaan marka la weydiiyo, wuxuu si otomaatig ah u socdaa mar maalintii ZBox marka uu furan yahay. Waa shidan yahay caadi ahaan 30 maalmood. Dansan wuu damiyaa. Tan laga noqon karo mayo marka fariin la saaro.
+set_bare_keys_note = Marka la shido, taabashada S, A, J, W ama K oo keliya liiska fariimaha waxay isla markiiba beddeshaa xiddigta, kaydisaa, u calaamadaysaa fariimaha la doortay spam (Shift+J wuxuu u calaamadeeyaa ma aha spam), ama eegtaa/iska indho tiraa silsiladda doorashadu ka mid tahay -- Kaydi iyo U calaamadee spam ma laha xaqiijin iyo ka noqosho. Dansiintiisu waxay u celisaa S, A, J, W iyo K hagitaanka liiska xarafka hore ee caadiga ah. Ctrl+S iyo Ctrl+Shift+A waxay sii shaqeeyaan labada xaaladood. Isla markiiba wuu dhaqan galaa.
+set_sounds_note = Codad gaagaaban oo loogu talagalay horumarka, fariimaha cusub, la diray, jawaab ama gudbin, tirtirka iyo natiijooyinka raadinta. Dansan wuxuu damiyaa cod kasta barnaamijka; ogeysiisyada akhriyaha shaashadda iyo bar-xaaladdu ma saameeyaan labada xaaladood.
+set_desktop_notifications_note = Ogeysiis Windows ah koox kasta oo boosto cusub ah, kala duwan codka kor ku xusan. Dansan wuxuu damiyaa akoon kasta; akoon gaar ah ayaa sidoo kale lagu aamusin karaa Dejinta akoonnada iyo shakhsiyaadka.
+set_theme_note = Mawduucyada gaarka ahi waa gallo gudaha galka sounds ee ZBox la geliyo, mid kastana wuxuu leeyahay progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav iyo none_found.wav ay iyagu leeyihiin. Fayl mawduuc oo maqan wuxuu dib ugu noqdaa codka caadiga ah.
+set_theme_note_only_default = Mawduucyada gaarka ahi waa gallo gudaha galka sounds ee ZBox la geliyo, mid kastana wuxuu leeyahay progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav iyo none_found.wav ay iyagu leeyihiin. Fayl mawduuc oo maqan wuxuu dib ugu noqdaa codka caadiga ah. "default" oo keliya ayaa diyaar ah ilaa aad ku darto gal mawduuc kale.
+set_lock_note = ZBox markaas wuxuu weydiinayaa mid ka mid ah hababkaaga furista ka hor intaan akoon la furin. Mid kasta ayaa ku filan: furaha gelitaanka, furaha amniga, ama erayga sirta ee ugu weyn. Xirista aagga ogeysiisyada ma aha ka bixid mana dib u xirto; Fayl > Ka bax iyo Ka bax ee astaanta aagga ogeysiisyada way xiraan. Haddii wax la diiwaan galin oo aan eray sir oo weyn la dejin, xiriirka waa laga boodaa halkii laguu xirin lahaa boostadaada.
+set_security_note = Erayga sirta ee ugu weyn waa kan keliya ee saddexda ka mid ah oo wax sir geliya: waa kan u oggolaada galkan inuu furo erayada sirta ee akoonnada la kaydiyay kombiyuutar kale. Furaha gelitaanka ama furaha amniga wuxuu furaa barnaamijka kan keliya. Midna ma beddelo erayga sirta ee ugu weyn kombiyuutar aan ZBox weligiis lagu isticmaalin.
+set_private_mode_note = Fariimaha waxaa laga akhriyaa server-ka waxaana lagu hayaa xusuusta oo keliya. Nuqullo aan khadka ahayn, fariimo la kaydiyay ama diiwaanno cilad-baaritaan lama hayo, lifaaqyada la furay iyo xogta browser-ka ee boostada HTML waa la tirtiraa marka ZBox xirmo. Xirmiddu waxay sidoo kale joojisaa barnaamij kasta oo ZBox bilaabay, oo ay ku jiraan kuwa muujiya lifaaq, waxay faaruqisaa clipboard-ka, waxayna joojisaa aaminaadda kombiyuutarkan haddii aan hab gaar ah laga shidin. Windows weli wuxuu haystaa diiwaanno qaar oo barnaamij midna ka saari karin, sida liiskiisa diskiyada USB, faylka bogga, iyo diiwaannada antivirus-ka iyo shabakadda.
+title_private_mode = Hab gaar ah
+private_mode_need_master = Habka gaarka ahi wuxuu u baahan yahay eray sir oo weyn, maxaa yeelay erayga sirta ee ugu weyn oo keliya ayaa furi kara akoonnadaada kombiyuutar aan adiga ahayn. Deji mid adigoo isticmaalaya badhanka Erayga sirta ee ugu weyn, ka dibna shid habka gaarka ah.
+private_mode_enter_master = Geli erayga sirta ee ugu weyn si aad u shido habka gaarka ah.
+private_mode_confirm = Habka gaarka ahi ma haysto nuqullo boostadaada kombiyuutarkan ama diskiga ZBox ka shaqeeyo. Shidistiisu waxay tirtirtaa nuqullada aan khadka ahayn ee ZBox, fariimaha la kaydiyay, lifaaqyada la furay, xogta browser-ka ee boostada HTML iyo diiwaannada cilad-baaritaanka. Waxba looma tirtiro server-yada boostadaada, akoonnadaada, xiriirradaada iyo dejintaadana waa la hayaa. Shid habka gaarka ah?
+set_minimize_note = Yaraynta ZBox waxay qarisaa badhankiisa taskbar-ka oo waxay ka tagtaa isagoo ka dambeeya astaanta aagga ogeysiisyada. Midig-dhufo astaanta (ama Enter/Space marka ay leedahay fokas kiiboodh) si aad daaqadda u soo celiso.
+set_close_note = Badhanka Xirista ee daaqadda, Alt+F4, iyo Ctrl+W ee tabka Boostada waxay ZBox ku qarisaa aagga ogeysiisyada halkii laga bixi lahaa. Fayl > Ka bax (Ctrl+Shift+Q) iyo shayga Ka bax ee astaanta aagga ogeysiisyada runtii way ka baxaan ZBox labada xaaladood, sidaa darteed had iyo jeer waxaa jirta hal jid kiiboodh oo lagu baxo adigoon taaban aagga ogeysiisyada.
+set_stay_maximized_note = ZBox wuxuu ku bilaabmaa si weyn wuxuuna ku soo noqdaa weyn haddii aad yareyso. Bar-menu-ga, bar-cinwaanka iyo cidhifka daaqadda lama taabto -- tani ma aha hab shaashad buuxda oo aan cidhif lahayn, sidaa darteed dhammaan gaaban-furayaasha menu-ga ee Alt way sii shaqeeyaan.
+set_run_at_startup_note = Waxay bilaabaysaa ZBox si otomaatig ah marka aad gasho Windows, isagoo si toos ah ugu furmaya aagga ogeysiisyada halkii uu muujin lahaa daaqaddiisa. Isla markiiba wuu dhaqan galaa, ma aha kaliya bilowga xiga.
+set_desktop_shortcut_note = Waxay miiskaaga saartaa gaaban-fure ZBox, iyadoo beddeleysa mid horay u joogay. Gaaban-furuhu wuxuu kaydiyaa meesha saxda ah ee galkan ZBox, sidaa darteed haddii aad ZBox u guurto ama koobiyeyso meel kale, mar kale taabo tan nuqulka cusub si gaaban-furaha miiska u tilmaamo. Isla markiiba wuu dhaqan galaa mana sugo OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Magac
+ab_phone = Taleefan
+ab_notes = Qoraallo
+ab_heading = Buug-cinwaan
+ab_contacts = Xiriiro
+ab_new = &Cusub...
+ab_edit = &Tafatir...
+ab_delete = &Tirtir
+ab_import = &Soo geli...
+ab_export = &U dhoofi...
+ab_groups_label = Kooxo (liisaska boostada)
+ab_groups_name = Kooxo
+ab_new_group = &Koox cusub...
+ab_rename_group = &Magac bedel kooxda...
+ab_delete_group = &Tirtir kooxda
+ab_manage_members = &Maamul xubnaha...
+ab_all_contacts = Dhammaan xiriirada
+ab_add_member = Ku dar >>
+ab_remove_member = << Ka saar
+ab_members_of = Xubnaha {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Qaamuuska kuma jiro:
+sp_not_in_dictionary_name = Qaamuuska kuma jiro
+sp_in_this_line_label = Safkan:
+sp_in_this_line_name = Safkan
+sp_suggestions_label = &Soo-jeedinno:
+sp_suggestions_name = Soo-jeedinno
+sp_replace_with_label = &Ku beddel:
+sp_replace_with_name = Ku beddel
+sp_replace = &Beddel
+sp_replace_all = &Beddel dhammaan
+sp_ignore = &Iska indho tir
+sp_ignore_all = &Iska indho tir dhammaan
+sp_add_to_dictionary = &Ku dar qaamuuska
+btn_close = &Xir
+
+# Privacy and Content Blocking.
+priv_remote_label = Nuxurka fogaanta ee fariimaha:
+priv_block_remote = &Xannib nuxurka fogaanta ilaa aan weydiisto (lagu talinayo)
+priv_blocklist_label = Liiska xannibaadda xayeysiisyada iyo raacayaasha:
+priv_block_known = &Xannib domain-nada xayeysiisyada iyo raacayaasha ee la yaqaan
+priv_update_daily = &Liiska maalin kasta ka cusboonaysii gadaal
+priv_update_now = &Cusboonaysii hadda
+priv_junk_label = Xeerarka boostada spam:
+priv_check_inbox = &Hubi boostada cusub ee Soo-gelitaanka iyadoo la eegayo diraayaasha la xannibay iyo xiriiriyayaasha phishing-ka ee la yaqaan
+priv_move_blocked = &Si otomaatig ah ugu guur boostada diraayaasha la xannibay Spam
+priv_update_phishing = &Hadda cusboonaysii liiska phishing-ka
+priv_blocked_label = Diraayaasha la xannibay:
+priv_blocked_name = Diraayaasha la xannibay
+priv_remove_blocked = &Ka saar diraaha la xannibay
+priv_never_junk_label = Diraayaasha weligood aan loo tixgelin spam:
+priv_never_junk_name = Diraayaasha weligood aan loo tixgelin spam
+priv_remove_never_junk = &Ka saar diraaha aan spam ahayn
+priv_allowed_label = Diraayaasha loo ogolyahay inay soo dhacaan nuxurka fogaanta:
+priv_allowed_name = Diraayaasha la oggol yahay
+priv_remove_selected = &Ka saar diraaha la doortay
+
+# Message Filters.
+filt_rule_name = Magaca xeerka
+filt_enabled = &Hawlgal
+filt_match_label = Ku habboonaan:
+filt_match_all = &Ku habboon dhammaan kuwan soo socda (OO)
+filt_match_any = &Ku habboon mid kasta oo kuwan soo socda ah (AMA)
+filt_conditions_label = Shuruudaha (ka tag qiimaha madhan si aad u dhaafto):
+filt_condition_field = Goobta shuruudda {number}
+filt_condition_contains = Shuruudda {number} waxay ka kooban tahay
+filt_actions_label = Tallaabooyin:
+filt_mark_read = &U calaamadee la akhriyay
+filt_flag = &Xiddigee fariinta
+filt_move_label = U guur galka:
+filt_move_name = U guur galka
+filt_rules_name = Xeerarka shaandhaynta
+filt_new = &Xeer cusub...
+filt_edit = &Tafatir xeerka...
+filt_delete = &Tirtir xeerka
+filt_up = &U kor qaad
+filt_down = &U hoos dhig
+filt_run_label = Hadda ku socodsii galka:
+filt_run_name = Galka socodsiinta hadda
+filt_run_now = &Hadda socodsii
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Ku fur furaha gelitaanka (Windows Hello)
+unl_security_key = &Ku fur furaha amniga
+unl_master_password_label = &Erayga sirta ee ugu weyn:
+unl_master_password_name = Erayga sirta ee ugu weyn
+unl_unlock = &Fur
+unl_exit = &Ka bax ZBox
+unl_methods_label = &Habab la diiwaan geliyay:
+unl_methods_name = Habab furid oo la diiwaan geliyay
+unl_add_passkey = &Ku dar furaha gelitaanka…
+unl_add_key = &Ku dar furaha amniga…
+unl_reassign = &Dib u xil sii furaha gelitaanka kombiyuutarkan…
+unl_test = &Tijaabi…
+unl_remove = &Ka saar
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Laga soo diray
+comp_to = Loogu
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Mawduuc
+comp_attach_button = Ku lifaaq fayl...
+comp_sending = Waa la dirayaa...
+comp_report_label = &Warbixin:
+comp_report_name = Warbixin
+comp_refresh = &Cusboonaysii
+comp_copy = &Koobiyee
+comp_preview_read = Sida qaatuhu u akhriyo
+comp_preview_source = HTML-ka la diri doono
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Jidhka fariinta
+mv_blocked_notice = Ogeysiiska nuxurka la xannibay
+mv_show_remote = &Muuji nuxurka fogaanta
+mv_always_allow = &Had iyo jeer oggolow diraahan
+mv_message_headers = Madaxyada fariinta
+mv_attachments = Lifaaqyo
+mv_attachments_count = Lifaaqyo ({count})
+mv_save_attachment = Kaydi: {filename}
+mv_save_all = Kaydi dhammaan
+mv_html_view = Muuqaalka HTML ee fariinta
+mv_saved_message = Fariin la kaydiyay
+mv_show_remote_tip = Mar kale soo dhac fariintan iyadoo leh sawirradeeda iyo qaabkeeda fogaanta ah. Raacayaasha la yaqaan weli waa la xannibay.
+mv_always_allow_tip = Soo dhac nuxurka fogaanta fariin kasta oo ka timid {sender}.
+
+# The search tab.
+srch_account = Akoon
+srch_folder = Gal
+srch_for = Raadi
+srch_look_in = Ka eeg
+srch_in_all = Dhammaan
+srch_in_subject = Mawduuc
+srch_in_from = Laga soo diray
+srch_in_to = Loogu
+srch_in_body = Jidh
+srch_date = Taariikh
+srch_date_any = Waqti kasta
+srch_date_today = Maanta
+srch_date_yesterday = Shalay
+srch_date_week = 7-dii maalmood ee la soo dhaafay
+srch_date_month = 30-kii maalmood ee la soo dhaafay
+srch_date_year = Sannadkan
+srch_date_custom = Xad gaar ah
+srch_from_date = Laga bilaabo taariikhda (sanad-bil-maalin, waqti ikhtiyaari ah)
+srch_to_date = Ilaa taariikhda (sanad-bil-maalin, waqti ikhtiyaari ah)
+srch_unread = Aan la akhriyin oo keliya
+srch_flagged = Xiddig leh oo keliya
+srch_attachment = Leh lifaaq
+
+# The signature editor.
+sig_editors = Tafatiraha saxiixa
+sig_formatted = Saxiix, la qaabeeyay
+sig_source = Saxiix, isha HTML
+sig_plain_label = Beddel qoraal caadi ah (waxaa lala diraa HTML)
+sig_plain_name = Beddel qoraal caadi ah
+
+# About ZBox.
+about_text_name = Qoraalka ku saabsan ZBox
+about_view_license = &Eeg shatiga...
+about_google = &Erayada sirta ee barnaamijka Google...
+about_support = &Taageer ZBox -- Horumarin iyo dayactir hal qof
+about_repos = &Kaydka barnaamijyada Harith ee GitHub
+about_contact = &La xiriir Harith
+btn_close_plain = Xir
+btn_cancel_plain = Jooji
+
+# The license window.
+eula_heading = Shatiga ZBox
+eula_text_name = Qoraalka shatiga ZBox
+eula_third_party = Bogagga shatiyada qaybaha dhinac saddexaad:
+eula_agree = &Waan oggolahay shuruudaha kor ku xusan
+eula_agree_name = Waan akhriyay oo waan oggolahay shuruudaha shatiga ZBox
+eula_disagree = &Ma oggola
+eula_next = &Xiga
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Qoraalka dukumeentiyada ZBox
+doc_copy = U koobiyee clipboard-ka
+shortcuts_heading = Gaaban-furayaasha kiiboodhka
+shortcuts_text_name = Qoraalka gaaban-furayaasha kiiboodhka
+
+# The main window's own panes.
+mf_toolbar = Bar-qalabka ugu weyn
+mf_tabs = Tabyada ZBox
+tree_heading = Akoonno iyo gallo
+tree_name = Geedka akoonnada iyo gallada
+envlist_heading = Fariimo
+envlist_name = Liiska fariimaha
+rdr_heading = Fariin
+rdr_name = Akhriyaha fariinta
+conv_heading_one = Wada hadal: 1 fariin
+conv_heading_many = Wada hadal: {count} fariin
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} ee {total} waa dhammaaday.
+bulk_cancelling = Waa la joojinayaa -- fariinta hadda waa la dhammaystirayaa...
+cache_clear_now = Hadda nadiifi cache-ka fariimaha aan khadka ahayn... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, la ilaaliyay
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Magaca la muujiyo waa ikhtiyaari -- ka tag madhan si aad ugu dirto magaca akoonka laftiisa.
+acct_note_identity = Cinwaanka iimeylku wuu ka duwanaan karaa iimeylka gelitaanka haddii bixiyahaagu leeyahay domain gaar ah oo ku xiran sanduuqan boostada. Boostada waxaa lagu diri doonaa lagana qaadan doonaa cinwaanka kor ku xusan, halka gelitaanku weli isticmaalayo iimeylka gelitaanka. Ka tag goobta erayga sirta madhan si aad u haysato erayga sirta ee horay loo kaydiyay akoonkan -- tusaale ahaan ka dib marka la beddelo eray sir barnaamij Gmail, halkan ku qor kan cusub; haddii kale ka tag madhan.
+acct_note_identities = Cinwaanno kale oo akoonkan ku dirayo oo ku jawaabi karo. Jawaabta fariin loo diray mid ka mid ah cinwaannadan waxay dejisaa Laga soo diray cinwaankaas halkii kan kor ku xusan.
+acct_note_signature = Waxaa lagu daraa fariin kasta oo cusub, jawaab iyo gudbin ka timid akoonkan, hoosta safka "-- ". Ka tag madhan haddii aadan rabin. Tafatir saxiixa wuxuu furaa tafatiraha la qaabeeyay, halkaas oo qalin, liisas iyo xiriiriyayaal lagu heli karo; sanduuqa kor ku xusani wuxuu markaas haystaa nuqulka qoraalka caadiga ah ee lala diro.
+acct_note_junk = Galka runta ah ee U calaamadee spam fariimaha u guuro. "{automatic}" wuxuu isticmaalaa isla qiyaas bixiyaha-og ee Kaydka iyo Qashinku horay u isticmaalaan; deji oo keliya haddii qiyaastaasi khaldan tahay ama galka spam-kaagu leeyahay magac gaar ah.
+acct_note_disable = Akoon la damiyay marna lama xiriiro -- IDLE ma jiro, cusboonaysiin xilliyeed ma jiro, waxba ma jiraan -- ilaa dib loo hawlgeliyo. Weli waxay ku muuqataa geedka, oo lagu calaamadeeyay (la damiyay), boostadeeda horay loo soo dejiyayna weli waa heli kartaa iyadoo aan khadka ahayn. Isla beddelkii Akoonno > Dami akoonka ama menu-ga macnaha akoonka laftiisa; tani waa meel kale oo la gaaro.
+acct_note_default = Gallada akoonkan waxay ka muuqdaan geedka marka hore, fariin cusubna waxaa lagu diraa caadi ahaan iyada ilaa gacanta lagu beddelo qoraalaha. Ma saameyso cinwaanka jawaab ama gudbintu isticmaasho -- taasi horay ayay u raacdaa fariinta la jawaabayo (eeg Shakhsiyaado dheeraad ah kor ku xusan). Had iyo jeer waxaa jirta hal akoon oo caadi ah oo keliya, sidaa darteed ka saarista calaamadda midka caadiga ah ee hadda adigoon mid kale calaamadayn waa ka tagaysaa isagoo isbeddelin -- halkii sanduuqa akoon kale calaamadee si aad ugu wareejiso caadiga.
+acct_note_mute = &Aamusnaantu waxay xannibtaa codka boostada cusub, ogeysiiska codka iyo ogeysiiska Windows ee akoonkan, si kasta oo kale loo dejiyay. Ma saameyso akoonno kale, weli waxay hoos timaadaa furayaasha ugu waaweyn ee Dejinta > Cod iyo ogeysiisyo (codadka iyo ogeysiisyada miiska guud ahaan).
+wiz_note_app_password = Haddii aad horay u abuurtay eray sir barnaamij oo loogu talagalay ZBox, taabo Xiga si aad u sii wadato.
+wiz_note_login = Aqoonsiga gelitaanka.\nHaddii iimeylkaaga gelitaanku ka duwan yahay cinwaanka kor ku xusan, tusaale ahaan akoonkaaga bixiyuhu waa login@example.net laakiin aad rabto inaad u dirto oo aad ka qaadato sida you@example.org, halkan geli iimeylka gelitaanka. Cinwaanka dirista ee gaarka ah waad dejin kartaa dambe Dejinta akoonnada iyo shakhsiyaadka.
+wiz_note_servers = Dejinta server-ka, la buuxiyay horay meesha domain-ka la aqoonsado. Tafatir wax kasta oo u baahan inay ka duwanaadaan.
+wiz_preset_none = Dejin hore domain-kan lagama helin. Gacanta ku geli dejinta server-ka ee bixiyahaaga; bogagga caawimaadda bixiyahaagu waa kuu qaybin doonaan.
+ab_note_groups = Ku qor magaca kooxda goobta Loogu, Cc ama Bcc ee daaqadda qoraalka si ay xubnaheeda oo dhan hal mar u buuxsamaan.
+cache_note_intro = Kuwani waxay ka saaraan nuqullada maxalliga ah ee ZBox oo keliya. Waxba looma tirtiro server boosto oo kasta, fariin laga saaray mar kale ayaa la soo dejin doonaa marka xigta ee aad furto.
+cache_note_age = Nadiifinta otomaatiga ahi waxay socotaa mar maalintii, marka ZBox aanu lahayn hawl kiiboodh toban daqiiqo oo aan fariin la furin. Waxay raacdaa taariikhda fariin kasta, oo ay ku jiraan fariimaha weli ku jira akoonkaaga.
+filt_note_intro = Xeerarku waxay socdaan si isku xigta, kor ilaa hoos, iyagoo hubinaya Laga soo diray, Loogu iyo Mawduuc. Si otomaatig ah ayaa loo dabbaqaa boostada cusub marka ay soo gasho Soo-gelitaanka akoonkan; isticmaal Hadda socodsii hoose si aad ugu dabbaqdo fariimaha horay galka ugu jiray.
+filt_note_run_now = Waxay dabbaqdaa xeer kasta oo hawlgal ah oo kor ku xusan, si isku xigta, fariin kasta oo horay u jirtay galka la doortay -- marka hore waxay kaydisaa isbeddeladaada, sida OK.
+mp_note_intro = Akoonnadan waxaa lagu dejiyay kombiyuutar kale. Geli erayga sirta ee ugu weyn si aad halkan u furto erayadooda sirta ee la kaydiyay. Waxaa lagu weydiin doonaa hal mar kombiyuutarkan.\n\nLa'aantiis, akoon kastaa waa inuu mar kale ku galo server-ka boostadiisa.
+priv_note_remote = Sawirrada, xaashiyaha qaabka iyo far-qoraallada fariin ka soo dhacdo internetka waxay u sheegaan diraaha mar kasta oo aad furtay, iyo meesha aad ka furtay. Marka tan shidan tahay, midna ma soo dhaco: ogeysiis ayaa ka muuqda fariinta kor oo sheegaya wixii la xannibay, Ctrl+Shift+I-na wuxuu soo dhaca fariintaas keligeed. Sawirrada lagu lifaaqay fariinta laftigeeda had iyo jeer way muuqdaan. Qoraallada iyo xirmooyinka la geliyay labada xaaladood waa la saaraa weligoodna lama soo dhaco.
+priv_note_blocklist = Tani waa lakabka labaad. Waxay muhiim noqotaa marka aad soo dhacdo nuxurka fogaanta fariinta, ama aad oggolaato diraaye: sawirradu way soo dhacaan, laakiin wax kasta oo laga bixiyo domain raac ama xayeysiis oo la yaqaan weli ma soo dhaco. Liiska waxaa laga soo dejiyaa liisaska dadweynaha ee xayeysiisyada iyo raacayaasha waana la isku daraa; cusboonaysiintu waxay qaadataa ilbiriqsi ama laba waxayna ka shaqeysaa gadaal.
+priv_note_junk = Qiyaas ma jirto. U calaamadee spam wuxuu diraaha ku daraa liiska la xannibay hoose, ilaa fariintu ka timid liis boosto. U calaamadee ma aha spam wuxuu diraaha ku daraa liiska weligii aan spam ahayn fariintaasna mar dambe lama hubiyo. Fariin cusub oo ka timid diraaye la xannibay waxaa liiska ku calaamadaysan Diraaye la xannibay; mid xiriiriye u leh goob phishing ama malware oo la yaqaan waxaa lagu calaamadeeyaa Waxaa suurtagal ah phishing. Shaandheynta spam ee bixiyaha boostadaadu weli way shaqeysaa sidii hore.
+priv_status_phishing_updating = Liiska phishing-ka: waxaa laga cusboonaysiinayaa gadaal. Mar kale fur wada hadalkan si aad u aragto natiijada.
+priv_status_updating = Waxaa laga cusboonaysiinayaa gadaal. Mar kale fur wada hadalkan si aad u aragto natiijada.
+rel_note_intro = Fariimo la xiriira "{subject}" iyadoo la raacayo madaxyada Message-ID/References, gal kasta oo akoonkan ku jira.
+srch_note_intro = Ka raadi ereyada akoon kasta iyo gal kasta, ama ku yaree raadinta doorashooyinka hoose. Ka tag ereyada madhan si aad u hesho fariimo taariikh ama sanduuqyada calaamadaynta oo keliya.
+sig_note_plain = Ka tag beddelka qoraalka caadiga ah madhan oo waxaa laga qori doonaa saxiixa la qaabeeyay marka aad taabato Kaydi.
+unified_note_intro = Dooro gallada la isku daro akoonnada oo dhan. Mid kasta oo la calaamadeeyay wuxuu noqdaa hal shay geedka ku jira oo isku daraya galkaas akoonnadaada oo dhan.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Ku saabsan ZBox
+title_account_settings = Dejinta akoonnada iyo shakhsiyaadka: {name}
+title_new_account = Akoon cusub
+title_address_book = Buug-cinwaan
+title_members = Xubno: {name}
+ab_group_name_prompt = Magaca kooxda:
+title_new_group = Koox cusub
+title_cache_cleanup = Habaynta nadiifinta cache-ka
+cache_age_prompt = Si otomaatig ah uga saar fariimaha cache-ka ee ka duug ah:
+title_automatic_cleanup = Nadiifin otomaatig ah
+comp_link_prompt = Cinwaanka xiriiriyaha:
+title_insert_link = Geli xiriiriye
+title_composer_diagnostics = Baaritaanka qoraagaha
+title_formatted_preview = Horudhac la qaabeeyay
+title_license_agreement = Heshiiska shatiga ZBox
+title_message_filters = Shaandheynta fariimaha: {account}
+title_master_password_required = Erayga sirta ee ugu weyn ayaa loo baahan yahay
+title_privacy_dialog = Qarsoodi iyo xannibaadda nuxurka
+title_privacy = Qarsoodi
+title_settings = Dejinta
+set_tab_general = Guud
+set_tab_personalization = Shakhsiyeyn
+set_tab_accessibility = Helitaan iyo furayaal gaaban
+set_tab_maintenance = Dayactir iyo nadiifin
+set_tab_sounds = Codad iyo ogeysiisyo
+set_tab_security = Amni
+title_unified_folders = Gallo midaysan
+title_zbox_locked = ZBox waa xiran yahay
+title_message_view = Muuqaalka fariinta
+title_remote_content = Nuxurka fogaanta
+title_refresh = Cusboonaysii
+title_refresh_all = Cusboonaysii dhammaan
+mv_choose_folder = Dooro gal si aad ugu kaydiso lifaaqa
+title_thread = Silsilad
+title_inbox = Soo-gelitaan
+title_compose = Qor
+title_watch_thread = Eeg silsilad
+title_ignore_thread = Iska indho tir silsilad
+title_edit_signature = Tafatir saxiixa
+title_account = Akoon
+mf_folder_name_prompt = Magaca galka:
+mf_new_name_prompt = Magac cusub:
+title_refresh_all_accounts = Cusboonaysii dhammaan akoonnada
+title_sender = Diraaye
+title_new_mail = Boosto cusub
+mf_export_dialog_title = U dhoofi dhammaan {count} akoon iyo dejinnada
+mf_related_tab = La xiriira: {subject}
+title_hotkeys_diagnostic = Baaritaanka furayaasha degdega ah
+set_choose_attachment_dir = Dooro galka lagu kaydiyo lifaaqyada
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox waa xiran yahay. Isticmaal mid kasta oo ka mid ah hababka hoose si aad u furto. Joojintu waxay xirtaa ZBox iyadoo aan akoon la furin.
+unl_note_foreign_passkey = Furaha gelitaanka ee lagu kaydiyay galkan wuxuu iska leeyahay kombiyuutar kale, sidaa darteed halkan lagu isticmaali karo mayo. Ku fur furahaaga amniga ama erayga sirta ee ugu weyn, ka dibna isticmaal Dejinta, Amniga, Habab furid si aad furaha gelitaanka ugu dejiso kombiyuutarkan.
+unl_note_methods = Mid kasta oo kuwan ka mid ah wuxuu furaa ZBox marka xirmada barnaamijku shidan tahay, iyo erayga sirta ee ugu weyn. Furaha gelitaanku wuxuu isticmaalaa Windows Hello kombiyuutarkan; furaha amniga waa fure FIDO2 oo ku yaal USB ama NFC wuxuuna ka shaqeeyaa kombiyuutar kasta oo aad ku xirto.
+unl_note_not_encryption = Kuwani waxay furaan barnaamijka. Wax sir kuma geliyaan: erayga sirta ee ugu weyn ayaa weli ah kan keliya ee furi kara erayada sirta ee akoonnada la kaydiyay kombiyuutar aan galkan weligiis lagu isticmaalin. Waa in marka hore la dejiyaa, midna lagama dari karo ilaa taas la sameeyo.
+unl_add_passkey_unavailable = &Ku dar furaha gelitaanka (lama heli karo)
+unl_add_key_unavailable = &Ku dar furaha amniga (lama heli karo)
+unl_reassign_unavailable = &Dib u xil sii furaha gelitaanka kombiyuutarkan (lama heli karo)
+unl_status_cancelled_passkey = Furaha gelitaanka waa la joojiyay. ZBox weli waa xiran yahay.
+unl_status_cancelled_key = Furaha amniga waa la joojiyay. ZBox weli waa xiran yahay.
+unl_status_enter_password = Geli erayga sirta ee ugu weyn.
+unl_status_no_master = Eray sir oo weyn lama dejin, sidaa darteed fure gelitaan ama fure amni weli lagama dari karo. Deji mid badhanka Erayga sirta ee ugu weyn ee Dejinta, Amniga, ka dibna halkan ku soo noqo. Erayga sirta ee ugu weyn waa kan furaya erayada sirta ee akoonnadaada la kaydiyay kombiyuutar kale; furaha gelitaanku wuxuu furaa barnaamijka kan keliya, sidaa darteed keligiis istaagi karo mayo.
+unl_status_unsupported = Windows-ka kombiyuutarkan ma taageero furayaasha gelitaanka ama furayaasha amniga, sidaa darteed erayga sirta ee ugu weyn oo keliya ayaa halkan ku furi kara ZBox.
+unl_status_foreign_one = 1 fure gelitaan ayaa iska leh kombiyuutar kale, halkanna ma furi karo ZBox. Dib-u-xil-siintu waxay ku beddeshaa mid kombiyuutarkan lagu sameeyay.
+unl_status_foreign_many = {count} fure gelitaan ayaa iska leh kombiyuutar kale, halkanna ma furi karaan ZBox. Dib-u-xil-siintu waxay ku beddeshaa mid kombiyuutarkan lagu sameeyay.
+unl_status_foreign_one_no_hello = 1 fure gelitaan ayaa iska leh kombiyuutar kale, halkanna ma furi karo ZBox. Windows Hello halkan lama dejin, sidaa darteed kombiyuutarkan lagama beddeli karo; Ka saar wuu hilmaamaa.
+unl_status_foreign_many_no_hello = {count} fure gelitaan ayaa iska leh kombiyuutar kale, halkanna ma furi karaan ZBox. Windows Hello halkan lama dejin, sidaa darteed kombiyuutarkan lagama beddeli karo; Ka saar way hilmaamaa.
+unl_status_no_hello = Windows Hello kombiyuutarkan lama dejin, sidaa darteed fure gelitaan halkan lagama dari karo. Fure amni weli waa la dari karaa.
+unl_status_none_registered = Wali hab furid lama diiwaan gelin.
+unl_status_add_cancelled_passkey = Darista furaha gelitaanka waa la joojiyay.
+unl_status_add_cancelled_key = Darista furaha amniga waa la joojiyay.
+unl_status_added = La daray: {name}.
+unl_status_reassign_cancelled = Dib-u-xil-siinta waa la joojiyay. Waxba lama beddelin.
+unl_status_reassigned = {name} ayaa la daray oo {count} ayaa laga hilmaamay kombiyuutaro kale.
+unl_status_test_cancelled = Tijaabada waa la joojiyay.
+unl_status_removed = La saaray.
+unl_remove_warning_last = Ka saar {name}?\n\nWaa hab furid oo keliya oo la diiwaan geliyay, mana jirto eray sir oo weyn oo la dejiyay, sidaa darteed marka xirmada barnaamijku shidan tahay waxba ma hadhayo oo lagu furo ZBox. Xirmada waa laga boodaa halkii laguu xirin lahaa, laakiin ZBox markaas wuxuu u furmi doonaa isagoo aan xirnayn.
+unl_remove_warning = Ka saar {name}? ZBox mar dambe ma aqbali doono.
+ab_col_email = Iimeyl
+ab_col_name = Magac
+ab_col_phone = Taleefan
+ab_no_contacts = Wali xiriiro ma jiraan.
+acct_auto_check = Si otomaatig ah u hubi fariimo cusub
+acct_note_auto_check = Dansan: ZBox marna isagoo keligiis ah ma la xiriiro akoonkan -- kormeer boosto cusub ma jiro, cusboonaysiin xilliyeed ma jiro, soo dejin gadaal ah ma jirto -- sidaa darteed server aan lagu tiirsanayn ma gaabin karo akoonnada kale. Boostadiisa horay loo soo dejiyay weli way furmaysaa, Cusboonaysii (F5), dirista iyo tirtirka weli waxay gaaraan server-ka. Isla Hakii hubinta otomaatiga ah ee menu-ga Qalabka ama menu-ga macnaha akoonka.
+bl_day_ago = 1 maalin ka hor
+bl_days_ago = {days} maalmood ka hor
+bl_label_blocklists = Liiska xannibaadda
+bl_label_phishing = Liiska phishing-ka
+bl_last_failed = Isku-daygii ugu dambeeyay wuu fashilmay: %s
+bl_not_downloaded = Wali lama soo dejin.
+bl_save_failed = %s waa la soo dejiyay laakiin lama kaydin karin: %s
+bl_seed_only = %s domain oo ka timid liiska la dhisay. Weligiis laga cusboonaysiin internetka.
+bl_some_failed = Ilo qaar way fashilmeen: %s
+bl_some_unreachable = Ilo qaar lama gaari karin: %s
+bl_status_line = %s domain. Cusboonaysiintii ugu dambeysay %s.
+bl_up_to_date = %s horay ayuu u cusboonaa.
+bl_update_failed = %s lama cusboonaysiin karin: %s
+bl_updated = %s waa la cusboonaysiiyay: %s domain.
+cc_age_choice = Cache kasta oo fariimo ah oo ka duug ah %s
+cc_auto_button = Nadiifin otomaatig ah: fariimaha cache-ka ee ka duug ah %s...
+comp_btn_discard = &Tuur
+comp_btn_keep_editing = &Sii wad tafatirka
+comp_btn_save_draft = &Kaydi qabyada
+comp_no_account = Akoon lama habeyn
+comp_saving_draft = Qabyada waa la kaydinayaa…
+comp_this_message = fariintan
+comp_unsent_save_q = U kaydi %s qabyo ahaan ka hor xirista?
+comp_unsent_tray_q = U kaydi %s qabyo ahaan ka hor intaan ZBox aadin aagga ogeysiisyada?
+doc_unreadable = Faylka dukumeentiyada lama akhriyi karin:
+envlist_all_disabled = Akoon kasta waa la damiyay.
+envlist_col_date = Taariikh
+envlist_col_from = Laga soo diray
+envlist_col_status = Xaalad
+envlist_col_subject = Mawduuc
+envlist_collapsed = La isku laabay (%d)
+envlist_empty = Galkan fariimo kuma jiraan.
+envlist_loading = Fariimaha waa la soo dhacayaa...
+envlist_no_accounts = Wali akoon lama habeyn.
+envlist_no_ignored = Galkan silsilado la iska indho tiray kuma jiraan.
+envlist_no_watched = Galkan silsilado la eego kuma jiraan.
+envlist_select_folder = Dooro akoon ama gal si aad fariimo u soo dhacdo.
+eula_link_0 = Browser-kaaga ku fur bogga shatiga Himalaya
+eula_link_1 = Browser-kaaga ku fur bogga shatiga StevenBlack hosts
+eula_link_2 = Browser-kaaga ku fur bogga shatiga EasyList/EasyPrivacy
+eula_link_3 = Browser-kaaga ku fur bogga shatiga Phishing.Database
+eula_read_note = Akhri shatiga hoose, oo ay ku jiraan qaybaha dhinac saddexaad. Waa inaad calaamadaysaa Waan oggolahay ka hor intaan Xiga la heli karin. Ma oggola wuxuu xirayaa ZBox isagoon bilaabin, wuxuuna ka saaraa wixii socodsiintani ilaa hadda abuurtay.
+eula_unreadable = Faylka shatiga lama akhriyi karin:\n%s
+filters_title = Socodsii shaandheynta
+flag_title = Xiddigee fariinta
+folder_type_archive = Kayd
+folder_type_drafts = Qabyo
+folder_type_inbox = Soo-gelitaan
+folder_type_junk = Spam
+folder_type_sent = La diray
+folder_type_trash = Qashin
+mime_application_json = Fayl JSON
+mime_application_msword = Dukumeenti Word
+mime_application_octet_stream = Fayl binary ah
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Xaashi Excel
+mime_application_vnd_ms_powerpoint = Soo bandhigid PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Soo bandhigid PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Xaashi Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Dukumeenti Word
+mime_application_xml = Fayl XML
+mime_application_zip = Kayd ZIP
+mime_audio_mpeg = Cod MP3
+mime_audio_ogg = Cod OGG
+mime_audio_wav = Cod WAV
+mime_image_bmp = Sawir BMP
+mime_image_gif = Sawir GIF
+mime_image_jpeg = Sawir JPEG
+mime_image_png = Sawir PNG
+mime_image_svg_xml = Sawir SVG
+mime_image_webp = Sawir WebP
+mime_text_csv = Fayl CSV
+mime_text_html = Fayl HTML
+mime_text_plain = Fayl qoraal
+mime_video_mp4 = Muuqaal MP4
+mime_video_x_msvideo = Muuqaal AVI
+move_title_junk = U calaamadee spam
+move_title_move_to = U guur
+move_title_not_junk = U calaamadee ma aha spam
+mp_explain_set = Eray sir oo weyn waa la dejiyay. Waa kan u oggolaada galkan ZBox inuu furo erayada sirta ee akoonnadiisa la kaydiyay kombiyuutar kale.\n\nKa tag labada sanduuq ee erayga sirta cusub madhan oo taabo OK si aad u saarto. Ka saaristu ma saameyso kombiyuutarkan, laakiin galku mar dambe ma shaqayn doono mid kale adigoon akoon kasta mar kale gelin.
+mp_explain_unset = Eray sir oo weyn lama dejin, sidaa darteed erayada sirta ee akoonnada la kaydiyay waxaa lagu akhriyi karaa kaliya kombiyuutarkan iyo akoonkan Windows. Haddii aad galka u koobiyeyso meel kale, akoon kastaa waa inuu mar kale ku galo server-ka boostadiisa.\n\nDeji mid, ZBox wuxuu weydiin doonaa hal mar kombiyuutar cusub kasta, ka dibna halkaas si caadi ah ayuu u furi doonaa. Kombiyuutarkan mar dambe ma weydiin doono.\n\nQor oo ku hay meel ammaan ah. Meelna lagu kaydin maayo laguna soo celin karo maayo: haddii aad hilmaanto, akoon kastaa waa inuu mar kale ku galo server-ka boostadiisa.
+mp_label_confirm = &Xaqiiji erayga sirta ee ugu weyn ee cusub:
+mp_label_current = &Erayga sirta ee ugu weyn ee hadda:
+mp_label_master = &Erayga sirta ee ugu weyn:
+mp_label_new = &Erayga sirta ee ugu weyn ee cusub:
+mp_name_confirm = Xaqiiji erayga sirta ee ugu weyn ee cusub
+mp_name_current = Erayga sirta ee ugu weyn ee hadda
+mp_name_master = Erayga sirta ee ugu weyn
+mp_name_new = Erayga sirta ee ugu weyn ee cusub
+mp_prompt_existing = Erayada sirta ee akoonnadaada la kaydiyay waxaa la ilaaliyaa kombiyuutarkan oo keliya. Deji eray sir oo weyn si loo furi karo haddii aad ZBox u guurto mid kale.
+mp_prompt_first_run = ZBox wuxuu kaydin doonaa erayada sirta ee akoonnadaada. Hadda deji eray sir oo weyn si loo furi karo haddii aad ZBox u guurto kombiyuutar kale.
+mp_prompt_new_account = ZBox wuxuu kaydin doonaa erayga sirta ee akoonkan. Marka hore deji eray sir oo weyn si akoonka loo furi karo haddii aad ZBox u guurto kombiyuutar kale.
+mp_removed_done = Erayga sirta ee ugu weyn waa la saaray. Erayada sirta ee la kaydiyay hadda waxay ka shaqeeyaan kombiyuutarkan iyo akoonkan Windows oo keliya.
+mp_set_done = Erayga sirta ee ugu weyn waa la dejiyay. ZBox wuxuu weydiin doonaa hal mar kombiyuutar cusub kasta oo galkan lagu furo, ka dibna halkaas si caadi ah ayuu u furi doonaa.
+mv_body_title = Jidhka fariinta
+mv_col_format = Qaab
+mv_col_name = Magac
+mv_col_size = Cabbir
+mv_format_unknown = Aan la aqoon
+mv_size_unknown = Cabbir aan la aqoon
+na_account_settings = Dejinta akoonnada iyo shakhsiyaadka
+na_disable_account = Dami akoonka
+na_edit_signature = Tafatir saxiixa
+na_message_filters = Shaandheynta fariimaha
+na_mute_account = Aamusii akoonka
+na_pause_auto_check = Hakii hubinta otomaatiga ah
+na_remove_account = Ka saar akoonka
+na_set_default = U deji akoon caadi ah
+no_offline_copy = Nuqul aan khadka ahayn ee %s ma jiro. Fur marka aad khadka joogto, ama isticmaal Fayl, Aan khadka ahayn, Isku-dubaridka hadda.
+perm_delete_confirm = {msg} Tani waxay ka boodaysaa galka Qashinka laguna laaban karo mayo.
+perm_delete_many = Si joogto ah u tirtir {count} fariin?
+perm_delete_one = Si joogto ah u tirtir {count} fariin?
+preset_note_apple = Apple wuxuu u baahan yahay eray sir gaar ah oo barnaamij.
+preset_note_fastmail = Fastmail wuxuu u baahan yahay eray sir barnaamij.
+preset_note_google = Google wuxuu u baahan yahay eray sir barnaamij ama OAuth2, ma aha erayga sirta ee caadiga ah.
+preset_note_proton = ProtonMail wuxuu u baahan yahay barnaamijka ProtonMail Bridge oo maxalli ka shaqeynaya.
+preset_note_yahoo = Yahoo wuxuu u baahan yahay eray sir barnaamij.
+priv_phishing_not_loaded = Liiska phishing-ka: wali lama soo dhicin. Waxaa la soo dejiyaa markii ugu horreysay marka xeerarkan shidan yihiin oo ZBox khadka joogo.
+priv_phishing_prefix = Liiska phishing-ka:
+priv_status_unavailable = Xaaladda liiska xannibaadda lama heli karo.
+rdr_load_failed = Fariinta lama soo dhici karin.\n\n{message}
+rdr_loading = Fariinta waa la soo dhacayaa...
+rdr_select_message = Dooro fariin si aad halkan u akhrido.
+set_autosave_off = Dansan — isticmaal Kaydi qabyada (Ctrl+S) si aad gacanta ugu kaydiso
+set_autosave_seconds = Mar kasta {seconds} ilbiriqsi
+set_no_unlock = Fure gelitaan ama fure amni halkan lagu isticmaali karo ma jiro
+set_purge_days = Ka dib {days} maalmood
+set_purge_off = Dansan — Qashinka iyo Spam weligood si otomaatig ah looma tirtiro
+set_purge_one_day = Ka dib 1 maalin
+set_val_seconds = {seconds} ilbiriqsi
+set_val_one_second = 1 ilbiriqsi
+set_silence_off = Dansan
+set_announce_wait = Sug fure
+set_autosave_minutes = Mar kasta {minutes} daqiiqo
+set_autosave_one_minute = Mar kasta daqiiqad
+set_rt_bundled_installed = Runtime-ka la baakadeeyay: la rakibay.
+set_rt_bundled_many = Runtime-ka la baakadeeyay: %s la rakibay.
+set_rt_bundled_none = Runtime-ka la baakadeeyay: mid la rakibay ma jiro, sidaa darteed ZBox wuxuu isticmaalaa kan nidaamka oo dhan.
+set_rt_bundled_unknown = Runtime-ka la baakadeeyay: lama xaqiijin karin.
+set_rt_bundled_ver = Runtime-ka la baakadeeyay: nooca %s ayaa la rakibay.
+set_rt_system_unknown = Runtime-ka nidaamka oo dhan: nooca lama xaqiijin karin.
+set_rt_system_ver = Runtime-ka nidaamka oo dhan: nooca %s.
+set_unlock_many = %d hab furid ayaa halkan lagu isticmaali karaa
+set_unlock_unreadable = Hababka furista lama akhriyi karin
+sig_tab_formatted = La qaabeeyay
+sig_tab_source = Isha HTML
+srch_all_accounts = Dhammaan akoonnada
+srch_all_folders = Dhammaan gallada
+tab_mail = Boosto
+tab_new_message = Fariin cusub
+tab_saved_message = Fariin la kaydiyay
+title_copy_to_err = U koobiyee
+title_mark_message = Calaamadee fariinta
+title_unsent_message = Fariin aan la dirin
+tree_unified_root = Gallo midaysan
+unlock_kind_passkey = Furaha gelitaanka (Windows Hello)
+unlock_kind_security_key = Furaha amniga
+unlock_prompt_message = Windows wuxuu weydiinayaa xaqiijin. Ka jawaab codsigiisa Windows Hello, PIN-kaaga ama furahaaga amniga. Daaqaddani si toos ah ayay isu xirtaa marka Windows dhammaysto.
+unlock_prompt_title = Amniga Windows
+unlock_registering = Habkan furista waa la diiwaan gelinayaa
+unlock_the_passkey = Furaha gelitaanka
+unlock_the_security_key = Furaha amniga
+wildcard_eml = Faylasha iimeylka (*.eml)|*.eml|Dhammaan faylasha (*.*)|*.*
+wildcard_export = Dhoofinta ZBox (*.json)|*.json
+wiz_not_supported = LAMA TAAGEERO: {name}. {note} Akoonkan lagama dari karo ZBox.
+stock_apply = &Dabbaq
+stock_cancel = Jooji
+stock_close = &Xir
+stock_help = &Caawimaad
+stock_no = &Maya
+stock_ok = OK
+stock_yes = &Haa
+wiz_btn_back = &< Dib
+wiz_btn_finish = &Dhammee
+wiz_btn_next = &Xiga >
+acct_unsaved_q = Kaydi isbeddelada akoonkan?
+btn_save = &Kaydi
+spell_add_to_dictionary = &Ku dar qaamuuska
+spell_no_suggestions = Soo-jeedin ma jiro
+title_signature_for = Saxiix: {account}
+title_mark_folder_read = U calaamadee galka la akhriyay
+title_update_available = Cusboonaysiinta ZBox
+update_available = ZBox {new} waa diyaar. Waxaad haysataa {current}.
+upd_notes_label = &Qoraallada soo-saarista:
+upd_no_notes = Qoraallo soo-saarid ma jiraan.
+upd_notes_name = Qoraallada soo-saarista
+upd_update_now = &Haa, hadda cusboonaysii
+upd_remind_later = &I xasuusi dambe
+title_update_download = Cusboonaysiinta ZBox waa la soo dejinayaa
+upd_downloading = ZBox {version} waa la soo dejinayaa...
+upd_progress_name = Horumarka soo dejinta
+upd_cancel = &Jooji
+upd_cancelling = Waa la joojinayaa...
+set_updates_label = Cusboonaysiinno:
+set_update_auto = &Si otomaatig ah u hubi cusboonaysiinno
+set_update_mode_label = Marka cusboonaysiin la helo:
+set_update_ask = &I weydii
+set_update_silent = &Aamusnaan ku soo deji oo rakib
+set_update_note = ZBox wuxuu GitHub ka hubiyaa soo-saarid cusub ugu badnaan mar maalintii, marka uu shaqo la'aan yahay oo keliya, wax kale oo aan ahayn lambarkiisa nooca ma diro. I weydii wuxuu muujiyaa nooca cusub iyo qoraallada soo-saaristiisa, Haa, hadda cusboonaysii iyo I xasuusi dambe. Aamusnaan ku soo deji oo rakib wuxuu cusboonaysiinta soo dejiyaa wakhtiga shaqo la'aanta wuxuuna rakibaa marka xigta ee aad si buuxda uga baxdo ZBox, weligii intaad shaqeyneysid ma aha. Cusboonaysiintu waxay beddeshaa faylasha barnaamijka ZBox ee ay iyagu leeyihiin oo keliya: akoonnadaada, erayada sirta, dejinnada, boostada, diiwaannada, mawduucyada codadka iyo luqad kasta oo aad ku darteen weligood lama taabto, nooca hore waa la hayaa oo is-celin ayuu u noqdaa haddii kan cusubi aan bilaabmin. Caawimaad, Cusboonaysiinno waxay sidoo kale leedahay Hadda hubi cusboonaysiinno iyo bogga soo-saarista si gacanta loogu cusboonaysiiyo.
+set_update_check_now = &Hadda hubi
+mv_attachment_button = {filename} ({format})
+att_open = Fur
+att_save = Kaydi...
+att_save_all = Kaydi dhammaan lifaaqyada
+title_save_attachment = Kaydi lifaaqa
+title_full_headers = Madaxyada oo dhan
+hdr_copy_all = Koobiyee dhammaan
+acct_identity_own_signature = Isticmaal saxiixiisa
+acct_identity_own_reply_to = Isticmaal cinwaankiisa Jawaab-u
+acct_identity_reply_to = Cinwaanka Jawaab-u
+acct_identity_always_cc = Had iyo jeer u dir Cc cinwaannadan
+acct_identity_cc = Cinwaannada Cc
+acct_identity_always_bcc = Had iyo jeer u dir Bcc cinwaannadan
+acct_identity_bcc = Cinwaannada Bcc
+acct_identity_own_folders = Isticmaal gallada Qabyo iyo La diray ee isaga
+acct_identity_drafts = Galka Qabyo
+acct_identity_sent = Galka La diray
+acct_identity_own_smtp = Isticmaal server-kiisa baxa
+acct_identity_smtp_login = Magaca gelitaanka ee baxa
+acct_identity_smtp_password = Erayga sirta ee baxa
+acct_identity_test_smtp = &Tijaabi server-ka baxa
+acct_identity_note_smtp = Ka tag magaca gelitaanka madhan si aad ugu gasho cinwaanka iimeylka ee shakhsiyaddan. Nuqullada la diray weli waxay aadaan galka La diray ee akoonkan, ama galka La diray ee shakhsiyaddan haddii ay leedahay.
+identity_field_required = Buuxi {field}, ama ka saar calaamadda sanduuqiisa.
+identity_field_invalid = {field} wuxuu leeyahay cinwaan aan sax ahayn.
+identity_folders_required = Dooro gal Qabyo, gal La diray ama labadaba, ama ka saar calaamadda sanduuqooda.
+identity_password_required = Geli erayga sirta ee baxa.
+identity_smtp_testing = Server-ka baxa waa la tijaabinayaa.
+identity_smtp_ok = Server-ka baxa wuu aqbalay gelitaanka.
+identity_smtp_failed = Tijaabada server-ka baxa way fashilantay.\n\n{error}
+set_bare_keys_note_move = M iyo C waxay furaan liisaska U guur iyo U koobiyee ee gallada fariimaha la doortay, Shift+M-na wuxuu furaa sanduuq aad ku qorto qayb ka mid ah magaca galka si aad ugu guurto halkaas. Dansiintiisu waxay u celisaa M iyo C hagitaanka xarafka hore sidoo kale.
+folder_search_filter = Magaca galku wuxuu ka kooban yahay
+folder_search_list = Gallo ku habboon
+folder_search_no_match = Gal magacaas ku habboon ma jiro.
+wiz_signin_method = Habka gelitaanka
+wiz_method_password = Erayga sirta
+wiz_method_microsoft = Akoon Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Gelitaanka Microsoft. Dejinta server-ka ee Outlook.com, Hotmail, Live iyo Microsoft 365 waa la buuxiyay.
+wiz_welcome_notice = Gmail. Erayga sirta ee Google ee caadiga ah waa la diidi doonaa, laakiin eray sir barnaamij ayaa shaqeeya. Xaqiijinta laba-tallaabo waa in marka hore la shido. Badhanka hoose wuxuu furaa tilmaamaha Google.\n\nOutlook.com, Hotmail, Live iyo Microsoft 365. Kuwani waxay ku gelaan akoonkaaga Microsoft. Bogga Gelitaanka, dooro akoon Microsoft, ka dibna ku gal browser-kaaga ama koodh.\n\nBixiyayaal kale. Eray sir caadi ah ama eray sir barnaamij badanaa way shaqeeyaan, bogagga caawimaadda bixiyahaagu waxay liis gareeyaan dejinta server-ka.
+preset_note_outlook = Akoonnada Outlook.com, Hotmail, Live iyo MSN waxay ku gelaan akoon Microsoft. Dooro akoon Microsoft sida habka gelitaanka bogga Gelitaanka.
+ms_status_name = Xaaladda gelitaanka Microsoft
+ms_browser_button = &Ku gal browser
+ms_code_button = &Ku gal koodh
+ms_copy_code = &Koobiyee koodhka
+ms_open_page = &Fur bogga gelitaanka
+ms_stop = &Jooji sugitaanka
+ms_not_configured = Gelitaanka Microsoft nuqulkan ZBox lagama dejin.
+ms_not_signed_in = Wali lama gelin. Ku gal browser-kaaga, ama koodh qalab kasta.
+ms_signed_in = Waxaa la galay sida {address}.
+ms_signed_in_plain = La galay.
+ms_needs_sign_in = Gelitaanka Microsoft ee akoonkan mar kale ayaa loo baahan yahay. Ku gal browser-kaaga, ama koodh qalab kasta.
+ms_reason_cancelled = Gelitaanka waa la joojiyay.
+ms_reason_timeout = Jawaab waqtigeeda ma timaadin.
+ms_reason_denied = Helitaanka lama oggolaan.
+ms_reason_expired = Koodhka wuu dhacay. Weydiiso mid cusub.
+ms_reason_network = Microsoft lama gaari karin. Hubi xidhiidhka oo mar kale isku day.
+ms_reason_server = Microsoft wuxuu yidhi: {detail}
+ms_page_done = La galay. Waad xiri kartaa bogga oo ku noqon kartaa ZBox.
+ms_page_failed = Gelitaanku ma dhammaan. U noqo ZBox si aad u hesho faahfaahin.
+ms_browser_waiting = Browser-kaagu wuxuu muujinayaa bogga gelitaanka Microsoft. Halkaas ka dhammee gelitaanka, ka dibna ku soo noqo ZBox.
+ms_code_asking = Koodh gelitaan ayaa laga weydiinayaa Microsoft...
+ms_code_waiting = Qalab kasta, fur {address} oo geli koodhka {code}. ZBox halkan ayuu ku sugayaa ilaa aad ka dhammayso gelitaanka.
+ms_failed = Gelitaanku ma dhammaan. {reason}
+ms_code_copied = Koodhka waa la koobiyeeyay.
+offline_inbox_only = Soo-gelitaanka iyo Kaydka oo keliya ayaa loo hayaa isticmaal aan khadka ahayn. Khadka gal si aad u furto {folder}.
+block_sender_rule_name = Xannib {sender}
+title_block_sender = Xannib diraahan
+title_unblock_sender = Qaad xannibaadda diraahan
+set_clear_inbox_cache = Nadiifi cache-ka fariimaha marka laga guuro Soo-gelitaanka
+set_clear_inbox_cache_note = Marka la shido, nuqulka aan khadka ahayn ee fariinta iyo jidhkeeda la kaydiyay waa la tirtiraa isla marka ay ka baxdo Soo-gelitaanka, sidoo kale marka la tirtiray ama meel kale loo guuray, sida taleefankaaga, si aysan uga muuqan meel aysan hadda joogin. Soo-gelitaanka oo keliya ayaa haya faylashan; gal kasta oo kale had iyo jeer waxaa laga akhriyaa server-ka.
+empty_trash_all_confirm = Si joogto ah u tirtir dhammaan fariimaha Qashinka ku jira ee akoon kasta?\n\nTan laga noqon mayo.
+envlist_col_recipient = Qaataha
+envlist_col_correspondents = Is-weydaarsada
+envlist_col_received = La helay
+envlist_col_size = Cabbir
+envlist_col_attachments = Lifaaqyo
+envlist_col_priority = Mudnaan
+envlist_col_junk_status = Xaaladda spam
+envlist_attachment = Lifaaqyo
+envlist_priority_highest = Ugu sarreeya
+envlist_priority_high = Sare
+envlist_priority_low = Hoose
+envlist_priority_lowest = Ugu hooseeya
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Muuji madaxyada tiirarka liiska fariimaha
+pgp_title = Maamulaha furayaasha OpenPGP
+smime_title = Maamulaha shahaadooyinka S/MIME
+smime_own = shahaadadaada
+smime_expired = way dhacday
+smime_expires = way dhacaysaa {date}
+smime_issuer = Bixiyaha
+smime_valid = Sax ka bilaabmo {start} ilaa {end}
+smime_fingerprint = Faraha SHA-256
+smime_own_key = Shahaadadaada, iyo furaheeda gaarka ah: boostada loo sir geliyay halkan ayaa lagu akhriyi karaa.
+smime_unavailable = S/MIME nuqulkan ZBox kuma jiro.
+smime_details = Faahfaahinta shahaadada
+smime_no_certs = Wali shahaado ma jirto. Soo geli faylkaaga .p12 ama .pfx, ama shahaadada is-weydaarsade.
+smime_import_failed = Shahaadada lama soo gelin karin: {error}
+smime_import_title = Soo geli faylka shahaadada
+smime_password_prompt = Geli erayga sirta ee {name}.
+smime_password_title = Erayga sirta ee shahaadada
+smime_imported = Shahaadada waa la soo geliyay.
+smime_export_title = U dhoofi shahaadada
+smime_exported = Shahaadada waa la dhoofiyay.
+smime_delete_confirm = Tirtir shahaadada {name}? Haddii ay adiga kuu gaar tahay, boostada loo sir geliyay mar dambe halkan lagu akhriyi karo mayo.
+smime_deleted = Shahaadada waa la tirtiray.
+smime_rs_verified = Fariintan waxay ka kooban tahay saxiix S/MIME oo sax ah oo ka yimid shahaado ay bixisay maamul Windows aamino oo loogu talagalay cinwaanka diraaha.
+smime_rs_unverified = Fariintan waxay ka kooban tahay saxiix S/MIME oo sax ah, laakiin shahaadadeeda ma bixin maamul Windows aamino.
+smime_rs_mismatch = Fariintan waxay ka kooban tahay saxiix S/MIME, laakiin cinwaanka diraaha kuma habboona shahaadada saxiixaha.
+smime_rs_technical = Fariintan waxay ka kooban tahay saxiix S/MIME, laakiin kuma habboona fariinta. Fariinta waxaa laga yaabaa in la beddelay ka dib saxiixa.
+smime_rs_signer = Saxiixay: {name}
+smime_rs_issuer = Shahaadada bixiyay: {issuer}
+smime_rs_import_hint = Si aad u akhrido, soo geli shahaadadaada S/MIME iyo furaheeda gaarka ah, fayl .p12 ama .pfx, Qalabka, Maamulaha shahaadooyinka S/MIME.
+pgp_details = Sifooyinka furaha
+pgp_generate = &Lamaane fure oo cusub
+smime_import = &Soo geli faylka shahaadada
+smime_export = &U dhoofi shahaadada
+smime_delete = &Tirtir shahaadada
+pgp_import_file = &Soo geli faylka furaha OpenPGP
+pgp_import_file_title = Soo geli faylka furaha OpenPGP
+pgp_import_clip = &Ka soo geli furayaal clipboard-ka
+pgp_export = &U dhoofi furaha dadweynaha fayl
+pgp_copy = &Koobiyee furaha dadweynaha
+pgp_backup = &Kaydi furaha sirta ah fayl ahaan
+pgp_props = &Sifooyinka furaha
+pgp_revoke = &Laali furaha
+pgp_delete = &Tirtir furaha
+pgp_expires = way dhacaysaa: {date}
+pgp_never_expires = ma dhacayso weligeed
+pgp_expired = way dhacday
+pgp_revoked = la laalay
+pgp_fingerprint = Faraha
+pgp_key_id = ID-ga furaha
+pgp_created = La abuuray
+pgp_acceptance = Aqbalaaddaada
+pgp_acc_rejected = Maya, diid furahan.
+pgp_acc_undecided = Wali, laga yaabaa dambe.
+pgp_acc_unverified = Haa, laakiin ma xaqiijin inuu yahay furaha saxda ah.
+pgp_acc_verified = Haa, shakhsi ahaan waan xaqiijiyay in furahani leeyahay faraha saxda ah.
+pgp_personal_no = Maya, ha loo isticmaalin furahayga gaarka ah.
+pgp_personal_yes = Haa, furahan u daawo fure gaar ah.
+pgp_verify_hint = Xaqiiji faraha furaha adigoo isticmaalaya kanaal isgaarsiineed oo ammaan ah oo aan ahayn iimeylka si aad u hubiso inuu runtii yahay furaha {addr}.
+pgp_gen_title = Abuur furaha OpenPGP
+pgp_gen_identity = Shakhsiyad
+pgp_gen_type = Nooca furaha:
+pgp_gen_ecc = ECC (Qalooca Elliptic)
+pgp_gen_expiry = Dhicitaanka furaha
+pgp_gen_no_expiry = Furuhu ma dhaco
+pgp_gen_button = Abuur furaha
+pgp_gen_confirm = Abuur fure dadweyne iyo mid sir ah ee {identity}?
+pgp_gen_progress = Furahaaga cusub ee OpenPGP waa la abuurayaa…
+pgp_gen_done = Furaha OpenPGP si guul leh ayaa loo abuuray!
+pgp_gen_failed = Abuurista furaha OpenPGP si lama filaan ah ayay u fashilantay
+pgp_import_none = Fure lama soo gelin.
+pgp_import_done = Furayaasha OpenPGP si guul leh ayaa loo soo geliyay!
+pgp_passphrase_title = Weedh-sir ayaa loo baahan yahay
+pgp_unlock_failed = Furaha, ama qaybihiisa hoose, lama furi karin.
+pgp_backup_title = Dooro eray sir si aad u kaydiso furahaaga OpenPGP
+pgp_backup_message = Erayga sirta ee aad halkan dejiso wuxuu ilaaliyaa faylka kaydka furaha sirta ah ee OpenPGP ee aad abuuri doonto. Waa inaad dejisaa erayga sirtan si aad ugu sii wadato kaydka.
+pgp_backup_pw = Erayga sirta ee kaydka furaha sirta ah:
+pgp_backup_pw2 = Erayga sirta ee kaydka furaha sirta ah (mar kale):
+pgp_backup_done = Furaha sirta ah si guul leh ayaa loo dhoofiyay!
+pgp_export_done = Furaha dadweynaha si guul leh ayaa loo dhoofiyay!
+pgp_copied = Furayaasha waa la koobiyeeyay clipboard-ka
+pgp_revoke_done = Furaha si guul leh ayaa loo laalay.
+pgp_personal = fure gaar ah
+pgp_no_keys = Wali fure ma jiro. Abuur lamaane fure oo cusub ama soo geli fure.
+pgp_unavailable = OpenPGP nuqulkan ZBox kuma jiro.
+pgp_gen_expires_3y = Furuhu wuu dhacayaa 3 sano gudahood
+pgp_gen_no_identity = Marka hore ku dar akoon iimeyl ah.
+pgp_import_confirm = Soo geli furayaashan?\n\n{keys}
+pgp_passphrase_prompt = Geli weedh-sirta furaha sirta ah ee {name}.
+pgp_clip_empty = Clipboard-ku fure OpenPGP ma haysto.
+pgp_pw_mismatch = Labada eray ee sirta ah ma kala mid aha.
+pgp_backup_open = Faylkani waa kayd fure sir ah. Geli erayga sirta ee kaydkiisa.
+pgp_revoke_confirm = Laali furaha {name}? Fure la laalay mar dambe lama isticmaali karo. La wadaag furaha dadweynaha ee la laalay si kuwa kale u joojiyaan isticmaalkiisa.
+pgp_delete_public_confirm = Tirtir furaha dadweynaha ee {name}?
+pgp_delete_secret_confirm = Tirtir furahaaga gaarka ah {name}? Boostada loo sir geliyay mar dambe lama akhriyi karo weligeed. Marka hore kaydi furaha sirta ah haddii aad u baahan kartid.
+pgp_select_key = Marka hore dooro fure.
+pgp_save_failed = Furayaasha lama kaydin karin: {error}
+pgp_publish = &Daabac
+pgp_publish_ok = Furaha dadweynaha waxaa loo diray "{keyserver}".
+pgp_publish_fail = Dirista furahaaga dadweynaha "{keyserver}" way fashilantay.
+pgp_publish_suggest = Daabacaadda furaha dadweynaha server-ka furayaasha waxay u oggolaataa dadka kale inay helaan.
+pgp_publish_question = Hadda ku daabac {keyserver}? Server-ku wuxuu markaas u diri doonaa iimeyl xaqiijin ah {addresses}. Cinwaankaaga waa la heli karaa marka aad furto xiriiriyahiisa.
+pgp_publish_sent = Iimeyl xaqiijin ah ayaa loo diray {addresses}. Fur xiriiriyaha ku jira si furahaaga cinwaankaaga loogu heli karo.
+pgp_publish_already = Horay ayaa lagu heli karaa {addresses}.
+pgp_rs_no_sig = Saxiix dijitaal ah ma jiro
+pgp_rs_no_sig_info = Fariintan kuma jiro saxiixa dijitaalka ee diraaha. La'aanta saxiix dijitaal ahi waxay ka dhigan tahay in fariinta uu dirin karay qof iska dhigaya inuu leeyahay cinwaankan iimeylka. Waxaa sidoo kale suurtagal ah in fariinta la beddelay intii lagu guda jiray gudbinta shabakadda.
+pgp_rs_uncertain = Saxiix dijitaal ah oo aan hubin
+pgp_rs_uncertain_date = Saxiix dijitaal ah oo aan hubin - Waxaa la saxiixay {date}
+pgp_rs_invalid = Saxiix dijitaal ah oo aan sax ahayn
+pgp_rs_invalid_date = Saxiix dijitaal ah oo aan sax ahayn - Waxaa la saxiixay {date}
+pgp_rs_good = Saxiix dijitaal ah oo wanaagsan
+pgp_rs_good_date = Saxiix dijitaal ah oo wanaagsan - Waxaa la saxiixay {date}
+pgp_rs_no_key = Fariintan waxay ka kooban tahay saxiix dijitaal ah, laakiin lama hubo inuu sax yahay. Si aad u xaqiijiso saxiixa, waa inaad hesho nuqul furaha dadweynaha ee diraaha.
+pgp_rs_uid_mismatch = Fariintan waxay ka kooban tahay saxiix dijitaal ah, laakiin is-waafaq la'aan ayaa la ogaaday. Fariinta waxaa laga diray cinwaan iimeyl oo aan ku habboonayn furaha dadweynaha ee saxiixaha.
+pgp_rs_not_accepted = Fariintan waxay ka kooban tahay saxiix dijitaal ah, laakiin weli ma go'aansan in furaha saxiixuhu yahay mid kuu aqbalan.
+pgp_rs_rejected = Fariintan waxay ka kooban tahay saxiix dijitaal ah, laakiin hore ayaad u go'aansatay inaad diido furaha saxiixaha.
+pgp_rs_technical = Fariintan waxay ka kooban tahay saxiix dijitaal ah, laakiin qalad farsamo ayaa la ogaaday. Ama fariinta way kharribantay, ama qof kale ayaa beddelay.
+pgp_rs_unverified = Fariintan waxay ka kooban tahay saxiix dijitaal ah oo sax ah oo ka yimid fure aad horay u aqbashay. Hase yeeshee weli ma xaqiijin in furuhu runtii yahay kan diraaha.
+pgp_rs_verified = Fariintan waxay ka kooban tahay saxiix dijitaal ah oo sax ah oo ka yimid fure la xaqiijiyay.
+pgp_rs_own_key = Fariintan waxay ka kooban tahay saxiix dijitaal ah oo sax ah oo ka yimid furahaaga gaarka ah.
+pgp_rs_signer_id = ID-ga furaha saxiixaha: {keyid}
+pgp_rs_decrypt_id = ID-ga furahaaga furfuridda sirta: {keyid}
+pgp_rs_enc_none = Fariinta sir lagama geliyo
+pgp_rs_enc_none_info = Fariintan sir looma gelin ka hor intaan la dirin. Macluumaadka internetka lagu diro sir la'aan waxaa arki kara dad kale intii lagu jiro gudbinta.
+pgp_rs_enc_invalid = Fariinta sirteeda lama furi karo
+pgp_rs_enc_invalid_info = Fariintan sir ayaa loo geliyay ka hor intaan laguu dirin, laakiin sirteeda lama furi karo.
+pgp_rs_enc_valid = Fariinta sir ayaa loo geliyay
+pgp_rs_enc_valid_info = Fariintan sir ayaa loo geliyay ka hor intaan laguu dirin. Sir-gelintu waxay xaqiijisaa in fariinta akhriyi karaan oo keliya qaatayaasha loogu talagalay.
+pgp_rs_field = Amniga fariinta
+pgp_rs_import = Soo geli furaha OpenPGP
+pgp_rs_open_to_unlock = Fur fariinta si aad u gelisid weedh-sirta.
+pgp_rs_reply_not_quoted = Fariintii asalka ahayd sir ayaa loo geliyay, sidaa darteed qoraalkeeda halkan lagama xigan.
+pgp_cm_encrypt = Sir geli
+pgp_cm_sign = Ku saxiix si dijitaal ah
+pgp_e2e_title = Sir-gelinta dhammaadka-ilaa-dhammaadka
+acct_e2e_button = &Sir-gelinta dhammaadka-ilaa-dhammaadka...
+pgp_e2e_none = U ha isticmaalin OpenPGP shakhsiyaddan.
+pgp_e2e_disable = Dami sir-gelinta fariimaha cusub
+pgp_e2e_enable = Shid sir-gelinta fariimaha cusub
+pgp_e2e_enable_info = Waxaad awoodi doontaa inaad damiso sir-gelinta fariimaha gaarka ah.
+pgp_e2e_sign = Ku saxiix fariimaha aan sir lagu gelin
+pgp_e2e_signing_info = Saxiix dijitaal ahi wuxuu u oggolaadaa qaatayaasha inay xaqiijiyaan in fariinta aad dirtay iyo nuxurkeeda aan la beddelin. Fariimaha sir loo geliyay waxaa la saxiixaa had iyo jeer caadi ahaan.
+pgp_e2e_autocrypt = U dir furayaasha dadweynaha ee OpenPGP madaxyada iimeylka si ay ula jaan qaadaan Autocrypt
+pgp_not_set_up = Lagama dejin inaad ka dirto fariimo sir-gelin dhammaad-ilaa-dhammaad ah {addr}.
+pgp_cannot_encrypt = Sir lama geli karo
+pgp_do_you_accept = Ma aqbashaa furahan si loo xaqiijiyo saxiixyada dijitaalka ah iyo sir-gelinta fariimaha?
+pgp_searching = Waa la raadinayaa…
+pgp_no_key_found = Ma helnay fure la isticmaali karo oo ku habboon shuruudaha raadinta ee la cayimay.
+pgp_source_autocrypt = Madaxa Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = server-ka furayaasha
+pgp_discover = &Ka hel furayaal khadka
+pgp_cm_attach_key = Ku lifaaq furahayga dadweynaha
+pgp_e2e_key_label = Fure gaar ah oo loogu talagalay {address}
+pgp_e2e_auto = Otomaatig: furahaaga gaarka ah ee cinwaankan
+pgp_e2e_no_key = ZBox ma laha fure OpenPGP gaar ah oo loogu talagalay {address}. Mid ka samee Qalabka, Maamulaha furayaasha OpenPGP.
+pgp_e2e_new_messages = Sir-gelinta fariimaha cusub
+pgp_e2e_key_missing = Furaha {keyid}, lama helin
+pgp_missing_keys = Qaatayaashan fure la isticmaali karo oo la aqbalay ma laha:\n\n{addresses}\n\nFariinta sir lagu gelin diri karin.
+pgp_send_unencrypted = &Dir sir la'aan
+pgp_collected_found = Furayaasha qaatayaashan waxaa laga helay boostada ay kuu direen:
+pgp_lookup_q = Ka raadi furayaal khadka qaatayaashan?\n\n{addresses}\n\nTani waxay u dirtaa cinwaannadooda keys.openpgp.org iyo domain-nada boostadooda.
+pgp_found_online = Furayaal khadka laga helay:
+pgp_source = Isha: {source}
+pgp_discover_prompt = Geli cinwaan iimeyl. ZBox wuxuu ka raadiyaa furayaasha OpenPGP ee Web Key Directory ee domain-ka boostadiisa iyo keys.openpgp.org.
+pgp_discover_bad = Geli cinwaan iimeyl oo dhammaystiran, sida name@example.com.
+pgp_keys_unreadable = Furayaasha OpenPGP lama furi karin: {error}
+pgp_rs_why_no_key = Furaha sirta ah ee loo baahan yahay si loo furfuro fariintan ma jiro.
+pgp_rs_why_unknown = Waxaa jira dhibaatooyin aan la aqoon oo ku saabsan fariintan sir lagu geliyay.
+pgp_rs_hidden_subject = Fariin sir lagu geliyay
+pgp_rs_why_passphrase = Weedh-sirta furahaaga lama gelin. Mar kale fur fariinta si aad u gelisid.
+pgp_rs_why_unavailable = OpenPGP nuqulkan ZBox kuma jiro.
+pgp_rs_why_fetch = Fariinta lagama keeni karin server-ka si loo furfuro. Mar kale fur si aad mar kale u tijaabiso.
+pgp_rs_import_hint = Si aad u akhrido, soo geli ZBox furahaaga sirta ah ee fariintan.
+
+[errors]
+language_restart_failed = ZBox naftiisa dib uma bilaabi karin:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Barnaamij boosto loogu talagalay {address} lama furi karin.
+
+wizard_test_failed = Xidhiidhku wuu fashilmay:\n\n{error}
+
+contacts_import_unreadable = Faylkaas lama akhriyi karin.\n\n{error}
+contacts_export_unwritable = Faylkaas lama qori karin.\n\n{error}
+
+attach_unreadable = Lifaaq {path} lama akhriyi karin:\n{error}
+send_failed = Fariinta lama diri karin.\n\n{error}
+draft_attach_unreadable = Lifaaq {path} lama akhriyi karin:\n{error}\n\nQabyada lama kaydin.
+draft_save_failed = Qabyada lama kaydin karin.\n\n{error}
+
+clipboard_unavailable = Clipboard-ka lama furi karin.
+open_link_failed = Browser-kaaga lama furi karin:\n{url}
+
+master_password_mismatch = Labada sanduuq ee erayga sirta ee ugu weyn ee cusub ma kala mid aha.
+master_password_required = Geli eray sir oo weyn, ama taabo Jooji.
+master_password_not_set = Erayga sirta ee ugu weyn lama dejin karin: {error}
+master_password_not_here = Erayga sirta ee ugu weyn halkan lagama beddeli karo.
+
+attachment_save_failed = Lifaaqa lama kaydin karin.\n\n{error}
+attachments_save_failed = Lifaaqyada lama kaydin karin.\n\n{error}
+print_failed = Fariinta lama daabaci karin. Hubi in daabacaad la dejiyay.
+print_preview_failed = Horudhaca daabacaadda lama furi karin. Hubi in daabacaad la dejiyay.
+
+related_search_failed = Fariimaha la xiriira lama raadin karin.\n\n{error}
+search_failed = Raadintu way fashilantay.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox ma helin galkiisa habaynta, sidaa darteed hababka furista halkan lagama maamuli karo.
+shortcut_no_folder = ZBox ma ogaan karin galkiisa, sidaa darteed gaaban-fure halkan lagama abuuri karo.
+shortcut_failed_settings = Gaaban-furaha miiska lama abuuri karin:\n\n{error}
+
+unlock_method_failed = {what} ma shaqayn.\n\n{error}
+unlock_check_failed = Erayga sirta ee ugu weyn lama hubin karin.\n\n{error}
+unlock_password_wrong = Erayga sirta ee ugu weyn ma sax aha.
+unlock_add_failed = {what} lama dari karin.\n\n{error}
+unlock_passkey_setup_failed = Furaha gelitaanka lagama dejin karin kombiyuutarkan, sidaa darteed waxba lama beddelin.\n\n{error}
+unlock_method_test_failed = Habkaas ma shaqayn.\n\n{error}
+
+account_list_unreadable = ZBox ma furi karin liiskaaga akoonnada.\n\n{error}\n\nAkoon lama soo dhicin, faylkana lama beddelin, sidaa darteed waxba ma lumin. Darista, tafatirka iyo ka saaristda akoonnada waa la diiday ilaa la akhriyi karo.
+account_list_no_accounts = ZBox ma furi karin liiskaaga akoonnada fadhigan ({error}), sidaa darteed akoon la doorto ma jiro. Waxba ma lumin waxna lama beddelin. Xir ZBox oo mar kale bilow, oo geli erayga sirta ee ugu weyn marka lagu weydiiyo.
+open_message_failed = Fariinta lama furi karin.\n\n{error}
+filters_list_failed = Fariimaha {folder} lama liis gareyn karin.\n\n{error}
+filters_move_failed = Fariimaha la shaandheeyay lama guuri karin.\n\n{error}
+cache_clear_failed = Cache-ka lama nadiifin karin.\n\n{error}
+folder_create_failed = Galka lama abuuri karin.\n\n{error}
+folder_rename_failed = Galka magaciisa lama bedeli karin.\n\n{error}
+folder_delete_failed = Galka lama tirtiri karin.\n\n{error}
+folder_subscribe_failed = Galka lama diiwaan gelin karin.\n\n{error}
+folder_unsubscribe_failed = Galka laga saari kari waayay diiwaanka.\n\n{error}
+saved_open_failed = Faylka lama furi karin.\n\n{error}
+saved_parse_failed = Faylkan lama falanqeyn karin sida fariin iimeyl ah.\n\n{error}
+save_file_failed = Faylka lama kaydin karin.\n\n{error}
+save_fetch_failed = Fariinta la kaydinayo lama keeni karin.\n\n{error}
+empty_trash_failed = Qashinka lama faaruqin karin.\n\n{error}
+empty_junk_failed = Spam lama faaruqin karin.\n\n{error}
+export_write_failed = Faylka dhoofinta lama qori karin.\n\n{error}
+import_read_failed = Faylkan lama akhriyi karin sida dhoofin ZBox ah.\n\n{error}
+import_not_export = Faylkani ma eego dhoofin ZBox ah.\n\n{error}
+search_open_failed = Fariintan lama furi karin.
+related_load_failed = Fariintan lama soo dhici karin.\n\n{error}
+reply_load_failed = Fariinta la jawaabayo lama soo dhici karin.\n\n{error}
+forward_load_failed = Fariinta la gudbinayo lama soo dhici karin.\n\n{error}
+action_failed = Tallaabadan lama dhammaystiri karin.\n\n{error}
+undo_failed = {label} laga noqon kari waayay.\n\n{error}
+copy_failed = Fariinta lama koobiyeyn karin.\n\n{error}
+delete_failed = Fariinta lama tirtiri karin.\n\n{error}
+archive_failed = Fariinta lama kaydin karin.\n\n{error}
+master_password_not_changed = Erayga sirta ee ugu weyn lama beddeli karin: {error}
+shortcut_failed_startup = Gaaban-furaha miiska lama abuuri karin:\n\n{error}\n\nZBox wuu sii bilaabmi doonaa. Waxaad mar dambe isku dayi kartaa Dejinta.
+account_locked_action = ZBox ma samayn karo %s. Liiska akoonnada lama furi karin fadhigan (%s), waxna lama beddelin. Xir ZBox oo mar kale bilow, oo geli erayga sirta ee ugu weyn haddii lagu weydiiyo.
+send_tls_mismatch = Fariinta lama diri karin. Server-ka baxa wuxuu ku jawaabay sir la'aan, sidaa darteed sir-gelinta baxa kuma habboona dekedda. Qalabka, Dejinta akoonnada iyo shakhsiyaadka, u isticmaal STARTTLS dekedda 587, ama SSL/TLS dekedda 465, ka dibna mar kale dir.\n\n{error}
+mark_folder_read_failed = Galka loogu calaamadeyn kari waayay la akhriyay.\n\n{error}
+update_failed = Cusboonaysiinta lama soo dejin karin, sidaa darteed waxba lama beddelin.\n\n{error}
+update_rolled_back = Cusboonaysiinta ma bilaabmi karin, sidaa darteed nooca hore waa la soo celiyay.
+attachment_open_failed = Lifaaqa lama furi karin.\n\n{error}
+headers_failed = Madaxyada fariinta lama soo dhici karin.\n\n{error}
+wizard_ms_sign_in_first = Ku gal Microsoft ka hor intaadan sii wadin. Isticmaal mid ka mid ah labada badhan ee gelitaanka bogga.
+wizard_provider_unsupported = ZBox ma gali karo bixiyahan. Qoraalka bogga ku jira ayaa sharxaya sababta. U noqo oo isticmaal cinwaan iimeyl oo kale, ama jooji.
+acct_ms_sign_in_first = Ku gal Microsoft ka hor kaydinta, ama dooro Erayga sirta sida habka gelitaanka.
+ms_sign_in_again = Gelitaanka Microsoft ee {account} mar kale ayaa loo baahan yahay. Fur Dejinta akoonnada iyo shakhsiyaadka oo halkaas ku gal.
+graph_pgp_too_large = Fariintan sir lagu geliyay ama la saxiixay way ka weyn tahay inta Microsoft u oggol yahay boosto noocan ah, ilaa 3 MB. Dir lifaaqyo yar yar, ama dami Sir geli iyo Ku saxiix si dijitaal ah fariintan.
+empty_trash_all_failed = Qashinka lama faaruqin karin: {accounts}
+
+[help]

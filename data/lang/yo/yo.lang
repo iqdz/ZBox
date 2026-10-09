@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Yorùbá
+code = yo
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = A ti fi ìfiránṣẹ́ ránṣẹ́.
+draft_saved = A ti fi àwòkọ pamọ́.
+signature_inserted = A ti fi ìbuwọ́lù sí i.
+signature_none = Àkọọ́lẹ̀ yìí kò ní ìbuwọ́lù.
+signature_saved = A ti fi ìbuwọ́lù pamọ́.
+signature_not_saved = A kò fi ìbuwọ́lù pamọ́.
+pasted_as_quotation = A lẹ̀ ẹ́ bí àyọkà.
+clipboard_empty = Kò sí nǹkan lórí pátákó ìdàkọ.
+word_count = Ọ̀rọ̀ {words}, àmì {characters}.
+report_copied = A ti dàkọ ìròyìn náà.
+compose_tab_needed = Àṣẹ yìí nílò táàbù kíkọ.
+attach_file_instead = A kì í fi àwọn fáìlì tí a jù sílẹ̀ sínú ọ̀rọ̀ ìfiránṣẹ́. Lo Fi fáìlì kún un láti fi ọ̀kan ránṣẹ́.
+
+# Formatting in the message body
+formatting_here = Ìṣètò níbí: {formatting}.
+no_formatting_here = Kò sí ìṣètò níbí, ọ̀rọ̀ lásán.
+
+# Spelling
+nothing_to_check = Kò sí nǹkan láti yẹ̀wò.
+no_misspellings = Kò sí àṣìṣe ìkọ̀wé.
+spelling_dictionary_unavailable = Ìwé atúmọ̀ èdè ìkọ̀wé kò sí.
+next_misspelling_first = Lo àṣìṣe tó kàn ná.
+word_added = A ti fi {word} kún ìwé atúmọ̀ èdè.
+word_not_added = A kò lè fi {word} kún ìwé atúmọ̀ èdè.
+corrections_applied_one = A ti lo àtúnṣe 1.
+corrections_applied_many = A ti lo àtúnṣe {count}.
+corrections_applied_partly = A ti lo {applied} nínú àtúnṣe {total}. A kọ àwọn yòókù; wo àkọsílẹ̀.
+occurrences_replaced_one = A ti rọ́pò ọ̀kan.
+occurrences_replaced_many = A ti rọ́pò {count}.
+
+# Reading mail
+message_did_not_open = Ìfiránṣẹ́ kò ṣí. Olùpèsè kò dáhùn. Tẹ Enter láti tún gbìyànjú.
+thread_open = {messages} wà nínú ìtẹ̀léra yìí. Tún tẹ̀ láti pa á.
+no_thread_selected = A kò yan ìtẹ̀léra kankan.
+thread_watched = À ń tọ́jú ìtẹ̀léra náà.
+thread_not_watched = A ò tọ́jú ìtẹ̀léra náà mọ́.
+thread_ignored = A kò kọbi ara sí ìtẹ̀léra náà.
+thread_not_ignored = A tún kọbi ara sí ìtẹ̀léra náà.
+none_found = A kò rí nǹkan kan.
+refreshing_this_folder = À ń ṣàtúnṣe fódà yìí.
+refreshing_all_accounts = À ń ṣàtúnṣe gbogbo àkọọ́lẹ̀.
+message_view_html = Ìwò ìfiránṣẹ́: HTML (tí a fihàn).
+message_view_text = Ìwò ìfiránṣẹ́: Ọ̀rọ̀.
+html_view_still_loading = Ìfiránṣẹ́ ṣì ń gbé wá. Escape ń pa á.
+message_still_opening = À ń ṣí ìfiránṣẹ́. Olùpèsè lọ́ra.
+remote_content_blocked = A dènà àkóónú láti jìnnà.
+remote_content_unblocked = A yọ ìdènà àkóónú láti jìnnà kúrò.
+remote_content_already_showing = Àkóónú láti jìnnà ti ń hàn nínú ìfiránṣẹ́ yìí.
+archived = A ti pamọ́ sí ìpamọ́.
+copied_to_folder = A ti dàkọ sí {to_folder}.
+deleted_one = A ti pa ìfiránṣẹ́ rẹ́ pátápátá.
+deleted_many = A ti pa ìfiránṣẹ́ {count} rẹ́ pátápátá.
+trashed_one = A ti gbé ìfiránṣẹ́ lọ sí Àpótí ìdọ̀tí.
+trashed_many = A ti gbé ìfiránṣẹ́ {count} lọ sí Àpótí ìdọ̀tí.
+
+# Accounts and new mail
+no_account_yet = Kò tíì sí àkọọ́lẹ̀ láti lọ sí.
+inbox_landed = Àpótí gbígbà {name}.
+account_enabled = A ti mú {name} ṣiṣẹ́.
+auto_check_paused = A dá àyẹ̀wò láìfọwọ́yí dúró fún {account}.
+auto_check_resumed = Àyẹ̀wò láìfọwọ́yí ti ṣiṣẹ́ fún {account}.
+account_disabled = A ti dá {name} dúró.
+new_mail_one = Ìfiránṣẹ́ tuntun 1 fún {name}.
+new_mail_many = Ìfiránṣẹ́ tuntun {count} fún {name}.
+refresh_all_done_one = A ti ṣàtúnṣe àkọọ́lẹ̀ 1.
+refresh_all_done_many = A ti ṣàtúnṣe àkọọ́lẹ̀ {count}.
+refresh_all_done_failures = A ti ṣàtúnṣe àkọọ́lẹ̀ {count}, àkọọ́lẹ̀ {failed} kò ṣàtúnṣe.
+refresh_all_done_failures_one = A ti ṣàtúnṣe àkọọ́lẹ̀ {count}, àkọọ́lẹ̀ {failed} kò ṣàtúnṣe.
+
+# The sender of the message in view
+sender_address_copied = {sender}. A ti dàkọ àdírẹ́sì.
+sender_no_address = {sender}. Kò sí àdírẹ́sì láti dàkọ.
+clipboard_not_opened = {sender}. A kò lè ṣí pátákó ìdàkọ.
+
+# The signature editor
+signature_page_formatted = Tí a ṣètò. Èyí ni a ó fi pamọ́.
+signature_page_html = Orísun HTML. Èyí ni a ó fi pamọ́.
+signature_page_html_still_wins = Tí a ṣètò. Orísun HTML ṣì ni a ó fi pamọ́.
+
+# Background work
+phishing_list_updating = À ń ṣe àtúnṣe àtòjọ ìtànjẹ lẹ́yìn.
+cache_cleared = A ti pa fáìlì tí a kó pamọ́ {files} rẹ́, {size} MB.
+hotkeys_diagnostic_on = Àyẹ̀wò bọ́tìnì kíákíá ti ṣiṣẹ́, tí a yàn
+hotkeys_diagnostic_off = Àyẹ̀wò bọ́tìnì kíákíá ti dúró, tí a yọ àmì rẹ̀
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Pamọ́ sí ìpamọ́
+action_delete = Parẹ́
+action_delete_permanently = Parẹ́ pátápátá
+action_mark_as_junk = Sàmì sí àwúrúju
+action_mark_as_not_junk = Sàmì sí kì í ṣe àwúrúju
+action_move_to = Gbé lọ sí
+action_copy_to = Dàkọ sí
+action_mark_message = Sàmì ìfiránṣẹ́
+action_undo = Padà
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = A ti padà: {action}.
+undo_done_many = A ti padà: {action} fún ìfiránṣẹ́ {count}.
+junk_marked_one = A ti sàmì sí àwúrúju.
+junk_marked_many = A ti sàmì ìfiránṣẹ́ {count} sí àwúrúju.
+junk_no_new_sender = A kò dènà olùfiránṣẹ́ tuntun: a ti dènà rẹ̀ tẹ́lẹ̀, tàbí àtòjọ ìfiránṣẹ́ ni, tàbí ọ̀kan nínú àdírẹ́sì rẹ.
+not_junk_marked_one = A ti sàmì sí kì í ṣe àwúrúju.
+not_junk_marked_many = A ti sàmì ìfiránṣẹ́ {count} sí kì í ṣe àwúrúju.
+moved_to_one = A ti gbé lọ sí {to_folder}.
+moved_to_many = A ti gbé ìfiránṣẹ́ {count} lọ sí {to_folder}.
+copied_to_many = A ti dàkọ ìfiránṣẹ́ {count} sí {to_folder}.
+marked_read = A ti sàmì sí tí a ti kà.
+marked_unread = A ti sàmì sí tí a kò tíì kà.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = A fagilé lẹ́yìn {completed} nínú {total}. {succeeded} yọrí, {failed} kùnà.
+bulk_failed_one = {done} {failed} nínú ìfiránṣẹ́ 1 kùnà.
+bulk_failed_many = {done} {failed} nínú ìfiránṣẹ́ {total} kùnà.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Dúdú gbòòrò
+format_word_italic = Tẹ̀ sí ẹ̀gbẹ́
+format_word_strike = Tí a fa ìlà kọjá
+format_word_href = Ìsopọ̀
+format_word_bullet = Àtòjọ onípẹ́ńtì
+format_word_number = Àtòjọ onínọ́ńbà
+format_word_quote = Àyọkà
+format_word_code = Kóòdù
+format_word_heading1 = Àkọlé
+format_applied = A ti lo {formatting}.
+format_inserted = A ti fi {formatting} sí i.
+format_not_available = {formatting} kò sí nínú ọ̀rọ̀ ìfiránṣẹ́ lásán.
+format_on = {formatting} ti ṣiṣẹ́
+format_off = {formatting} ti dúró
+link_applied = A ti lo ìsopọ̀.
+link_applied_to_selection = A ti lo ìsopọ̀ sí ohun tí a yàn.
+plain_body_formatting = Ọ̀rọ̀ ìfiránṣẹ́ lásán ń fi ìṣètò rẹ̀ hàn bí àmì.
+
+# Reaching either end of a thread
+thread_edge_first = Ìfiránṣẹ́ àkọ́kọ́ nínú ìtẹ̀léra yìí. Tún tẹ̀ láti pa á.
+thread_edge_last = Ìfiránṣẹ́ ìkẹyìn nínú ìtẹ̀léra yìí. Tún tẹ̀ láti pa á.
+jump_unified_inbox = Àpótí gbígbà àpapọ̀.
+remote_none = Kò sí àkóónú láti jìnnà nínú ìfiránṣẹ́ yìí.
+sender_none = Kò sí olùfiránṣẹ́ lórí ìfiránṣẹ́ yìí.
+sender_name_no_address = %s, kò sí àdírẹ́sì
+signature_not_switched = A kò yí ìbuwọ́lù padà. Tẹ Ctrl+Shift+S láti fi ìbuwọ́lù àkọọ́lẹ̀ yìí sí i.
+signature_removed_no_signature = A ti yọ ìbuwọ́lù kúrò. Àkọọ́lẹ̀ yìí kò ní ọ̀kan.
+signature_switched = A ti yí ìbuwọ́lù padà sí ti àkọọ́lẹ̀ yìí.
+spell_not_replaced = A kò lè rọ́pò ọ̀rọ̀ náà.
+spell_replaced_with = A ti rọ́pò rẹ̀ pẹ̀lú {word}.
+folder_marked_read = A ti sàmì ìfiránṣẹ́ {count} sí tí a ti kà.
+folder_no_unread = Kò sí ìfiránṣẹ́ tí a kò tíì kà.
+threads_all_collapsed = A ti kó gbogbo ìtẹ̀léra jọ.
+threads_all_expanded = A ti ṣí gbogbo ìtẹ̀léra.
+upd_percent = {percent} nínú ọgọ́rùn-ún
+upd_download_done = Ìgbàsílẹ̀ ti parí. À ń múra àtúnṣe sílẹ̀...
+upd_updated_to = A ti ṣàtúnṣe ZBox sí {version}.
+header_copied = A ti dàkọ.
+headers_copied = A ti dàkọ gbogbo àkọlé.
+identity_copies_updated = A ti ṣàtúnṣe Cc àti Bcc fún ìdánimọ̀ yìí.
+signature_switched_identity = A ti yí ìbuwọ́lù padà sí ti ìdánimọ̀ yìí.
+signature_removed_identity = A ti yọ ìbuwọ́lù kúrò. Ìdánimọ̀ yìí kò ní ọ̀kan.
+signature_not_switched_identity = A kò yí ìbuwọ́lù padà. Tẹ Ctrl+Shift+S láti fi ìbuwọ́lù ìdánimọ̀ yìí sí i.
+signature_none_identity = Ìdánimọ̀ yìí kò ní ìbuwọ́lù.
+move_keys_no_selection = Yan ìfiránṣẹ́ kan ná.
+move_keys_no_folders = Kò tíì sí fódà láti yàn. Tún gbìyànjú láìpẹ́.
+block_sender_done_one = A ti dènà {sender}. Àwọn ìfiránṣẹ́ tuntun rẹ̀ yóò lọ sí Àpótí ìdọ̀tí.
+block_sender_done_many = A ti dènà olùfiránṣẹ́ {count}. Àwọn ìfiránṣẹ́ tuntun wọn yóò lọ sí Àpótí ìdọ̀tí.
+block_sender_already = A ti dènà {sender} tẹ́lẹ̀.
+block_sender_own = A kò dènà: ọ̀kan nínú àdírẹ́sì rẹ ni.
+block_sender_list_unknown = A kò dènà: ìfiránṣẹ́ yìí gba inú àtòjọ ìfiránṣẹ́ wá kò sì sọ ẹni tó fi ránṣẹ́. Dídènà àdírẹ́sì àtòjọ náà yóò dènà gbogbo ènìyàn inú rẹ̀.
+block_sender_moved = A ti dènà olùfiránṣẹ́. A ti gbé ìfiránṣẹ́ {count} lọ sí Àpótí ìdọ̀tí.
+block_senders_moved = A ti dènà olùfiránṣẹ́ {senders}. A ti gbé ìfiránṣẹ́ {count} lọ sí Àpótí ìdọ̀tí.
+unblock_sender_moved = A ti yọ ìdènà olùfiránṣẹ́ kúrò. A ti gbé ìfiránṣẹ́ {count} lọ sí Àpótí gbígbà.
+unblock_senders_moved = A ti yọ ìdènà olùfiránṣẹ́ {senders} kúrò. A ti gbé ìfiránṣẹ́ {count} lọ sí Àpótí gbígbà.
+unblock_sender_done = A ti yọ ìdènà {sender} kúrò.
+unblock_sender_not_blocked = A kò dènà {sender}.
+pgp_cm_on = {name} ti ṣiṣẹ́.
+pgp_cm_off = {name} ti dúró.
+pgp_cm_identity = A ti yí ètò ìpamọ́ àṣírí padà sí ti ìdánimọ̀ yìí.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Tẹ nǹkan kan sí òkè kí o sì tẹ Enter tàbí yan Wá.
+search_no_account = Fi àkọọ́lẹ̀ kan kún un ná.
+search_no_term = Tẹ àwọn ọ̀rọ̀ láti wá, tàbí yan ọjọ́ kan tàbí àpótí àmì.
+search_running = À ń wá...
+search_none = Kò sí ohun tó bá "{term}" mu.
+search_found_one = Ohun 1 bá "{term}" mu.
+search_found_many = Ohun {count} bá "{term}" mu.
+search_bad_date = Tẹ ọjọ́ náà bí ọdún-oṣù-ọjọ́, fún àpẹẹrẹ 2025-12-31, pẹ̀lú àkókò tí kò pọn dandan bíi 14:30.
+search_bad_range = Òpin àyè ọjọ́ ṣáájú ìbẹ̀rẹ̀ rẹ̀.
+search_none_any = Kò sí ìfiránṣẹ́ tó bá mu.
+search_found_one_any = A rí ìfiránṣẹ́ 1.
+search_found_many_any = A rí ìfiránṣẹ́ {count}.
+search_failed = Ìwádìí kùnà.
+
+# The related messages tab
+related_running = À ń wá...
+related_none = A kò rí ìfiránṣẹ́ tó jọmọ.
+related_found_one = A rí ìfiránṣẹ́ 1 tó jọmọ.
+related_found_many = A rí ìfiránṣẹ́ {count} tó jọmọ.
+related_failed = A kò lè wá àwọn ìfiránṣẹ́ tó jọmọ.
+
+# Writing and sending
+sending_via = À ń fi ránṣẹ́ nípasẹ̀ {sender}...
+send_failed = Fífiránṣẹ́ kùnà. Wo àwọn àkọsílẹ̀ fún àlàyé.
+draft_autosaved = A ti fi àwòkọ pamọ́ láìfọwọ́yí.
+draft_autosave_failed = Fífi àwòkọ pamọ́ láìfọwọ́yí kùnà. Wo àwọn àkọsílẹ̀ fún àlàyé.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Àkóónú láti jìnnà yóò gbé wá báyìí fún àwọn ìfiránṣẹ́ láti ọ̀dọ̀ {sender}.
+downloading_attachment = À ń gba {filename}...
+downloading_attachments_one = À ń gba àfikún 1...
+downloading_attachments_many = À ń gba àfikún {count}...
+saved_to = A ti fi pamọ́ sí {folder}
+attachment_download_failed = Gbígba àfikún kùnà.
+
+# Getting mail onto the screen
+loading_folder = À ń gbé {folder} wá fún {account}...
+messages_in_folder = Ìfiránṣẹ́ {count} wà nínú {folder}.
+messages_in_folder_cached = Ìfiránṣẹ́ {count} wà nínú {folder} (ẹ̀dà ìkẹyìn tí a mú bá ara mu, à ń ṣàtúnṣe...)
+no_offline_copy = Kò tíì sí ẹ̀dà aláìsí lórí ayélujára ti {folder}.
+refresh_failed_cached = A kò lè ṣàtúnṣe {folder}: à ń fi ẹ̀dà ìkẹyìn tí a mú bá ara mu hàn.
+no_such_folder = Kò sí fódà {folder} fún àkọọ́lẹ̀ yìí.
+load_failed = Gbígbé àwọn ìfiránṣẹ́ wá kùnà. Wo àwọn àkọsílẹ̀ fún àlàyé.
+no_more_to_load = Kò sí ìfiránṣẹ́ mìíràn láti gbé wá nínú fódà yìí.
+loading_more = À ń gbé ìfiránṣẹ́ mìíràn wá nínú {folder}...
+more_loaded = A ti gbé ìfiránṣẹ́ {count} mìíràn wá.
+no_more_messages = Kò sí ìfiránṣẹ́ mìíràn nínú fódà yìí.
+load_more_failed = A kò lè gbé ìfiránṣẹ́ mìíràn wá: {error}
+loading_unified = À ń gbé {folder} àpapọ̀ wá...
+messages_in_unified = Ìfiránṣẹ́ {count} káàkiri àwọn àkọọ́lẹ̀ nínú {folder} àpapọ̀.
+messages_in_unified_cached = Ìfiránṣẹ́ {count} wà nínú {folder} àpapọ̀ (ẹ̀dà ìkẹyìn tí a mú bá ara mu, à ń ṣàtúnṣe...)
+auto_purge_done = Ìpaarẹ́ láìfọwọ́yí ti yọ ìfiránṣẹ́ àtijọ́ {count} kúrò ní Àpótí ìdọ̀tí/Àwúrúju.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Ó ti ṣetán.
+opening_message = À ń ṣí ìfiránṣẹ́...
+opening_message_already = À ń ṣí ìfiránṣẹ́... (ó ti ń gbé wá tẹ́lẹ̀)
+could_not_open_message = A kò lè ṣí ìfiránṣẹ́.
+could_not_open_that_message = A kò lè ṣí ìfiránṣẹ́ yẹn.
+could_not_load_message = A kò lè gbé ìfiránṣẹ́ yìí wá.
+message_still_loading = Ìfiránṣẹ́ yẹn ṣì ń gbé wá.
+folder_still_loading = Fódà yìí ṣì ń gbé wá -- tún gbìyànjú láìpẹ́.
+not_in_thread = Ìfiránṣẹ́ yìí kì í ṣe apá kan ìtẹ̀léra.
+no_longer_in_thread = Ìfiránṣẹ́ yìí kò sí nínú ìtẹ̀léra mọ́.
+thread_position = Ìfiránṣẹ́ {position} nínú {total} nínú ìtẹ̀léra yìí.
+thread_finished_one = A ti parí ìtẹ̀léra yìí (ìfiránṣẹ́ 1).
+thread_finished_many = A ti parí ìtẹ̀léra yìí (ìfiránṣẹ́ {count}).
+select_message_first = Yan ìfiránṣẹ́ kan ná.
+conversation_failed = A kò lè ṣí ìjíròrò yìí.
+select_message_for_related = Yan ìfiránṣẹ́ kan ná láti wo àwọn tó jọmọ.
+looking_for_related = À ń wá àwọn ìfiránṣẹ́ tó jọmọ...
+no_threading_headers = Ìfiránṣẹ́ yìí kò ní Message-ID tàbí àkọlé ìtẹ̀léra láti wá lé lórí.
+reply_one_at_a_time = Ìdáhùn ń ṣiṣẹ́ lórí ìfiránṣẹ́ kan ní àkókò kan. Jọ̀wọ́ yan ìfiránṣẹ́ kan ṣoṣo.
+select_message_to_reply = Yan ìfiránṣẹ́ láti dáhùn sí ná.
+preparing_reply = À ń múra ìdáhùn sílẹ̀...
+reply_load_failed = A kò lè gbé ìfiránṣẹ́ àkọ́kọ́ wá fún ìdáhùn.
+select_message_to_forward = Yan ìfiránṣẹ́ láti tún fi ránṣẹ́ ná.
+preparing_forward = À ń múra ìfiránṣẹ́ láti tún fi ránṣẹ́ sílẹ̀...
+forward_load_failed = A kò lè gbé ìfiránṣẹ́ láti tún fi ránṣẹ́ wá.
+compose_tab_needed_hint = Àṣẹ yìí nílò táàbù kíkọ. Tẹ Ctrl+N láti kọ ìfiránṣẹ́.
+open_message_first_view = Ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà tẹ Ctrl+B láti yí ìwò rẹ̀ padà.
+open_message_first_remote = Ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà tẹ Ctrl+Shift+I láti gbé àkóónú rẹ̀ láti jìnnà wá.
+
+# Acting on messages
+copying_message = À ń dàkọ ìfiránṣẹ́...
+copy_failed = Ìdàkọ kùnà.
+delete_failed = Ìparẹ́ kùnà.
+already_in_archive = Ó ti wà nínú Ìpamọ́ tẹ́lẹ̀.
+archiving = À ń pamọ́ sí ìpamọ́...
+archive_failed = Ìpamọ́ kùnà.
+action_failed = {action} kùnà.
+nothing_to_undo = Kò sí nǹkan láti padà.
+private_mode_on = Ipò àṣírí ti ṣiṣẹ́. A ti pa àwọn ẹ̀dà ìfiránṣẹ́ rẹ tí ZBox ní lórí kọ̀ǹpútà yìí rẹ́.
+private_mode_off = Ipò àṣírí ti dúró. ZBox tún ń pa ẹ̀dà ìfiránṣẹ́ rẹ mọ́.
+undo_failed = A kò lè padà {action}.
+
+# Views and folders
+folder_pane_all = Pánẹ́ẹ̀lì fódà: Gbogbo fódà.
+folder_pane_unified = Pánẹ́ẹ̀lì fódà: Fódà àpapọ̀.
+sorted_ascending = A ti tò ó nípasẹ̀ {field}, láti kékeré dé ńlá.
+sorted_descending = A ti tò ó nípasẹ̀ {field}, láti ńlá dé kékeré.
+unified_folders_updated = A ti ṣàtúnṣe fódà àpapọ̀.
+zoom_reset = A ti dá ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ padà sí ti àtẹ̀wọ́.
+folder_creating = À ń ṣẹ̀dá fódà "{folder}"...
+folder_created = A ti ṣẹ̀dá fódà "{folder}".
+folder_create_failed = A kò lè ṣẹ̀dá fódà.
+folder_renaming = À ń tún "{folder}" sọ̀rọ̀ "{new_name}"...
+folder_renamed = A ti tún fódà sọ̀rọ̀ "{new_name}".
+folder_rename_failed = A kò lè tún fódà sọ̀rọ̀.
+folder_deleting = À ń pa fódà "{folder}" rẹ́...
+folder_deleted = A ti pa fódà rẹ́.
+folder_delete_failed = A kò lè pa fódà rẹ́.
+folder_subscribing = À ń forúkọ sílẹ̀ fún "{folder}"...
+folder_unsubscribing = À ń yọ orúkọ kúrò nínú "{folder}"...
+folder_subscribed = A ti forúkọ sílẹ̀.
+folder_unsubscribed = A ti yọ orúkọ kúrò.
+folder_subscribe_failed = A kò lè forúkọ sílẹ̀ fún fódà.
+folder_unsubscribe_failed = A kò lè yọ orúkọ kúrò nínú fódà.
+
+# Accounts
+account_not_added = A kò fi àkọọ́lẹ̀ kún un.
+account_added = A ti fi àkọọ́lẹ̀ kún un: {account}
+account_settings_not_saved = A kò fi ètò àkọọ́lẹ̀ pamọ́.
+account_updated = A ti ṣàtúnṣe àkọọ́lẹ̀: {account}
+account_not_removed = A kò yọ àkọọ́lẹ̀ kúrò.
+account_removed = A ti yọ àkọọ́lẹ̀ kúrò.
+account_removed_with_files = A ti yọ àkọọ́lẹ̀ kúrò. A ti pa fáìlì {count} lórí kọ̀ǹpútà rẹ́.
+default_account_failed = A kò lè yan àkọọ́lẹ̀ àtẹ̀wọ́.
+default_account_set = {account} ni àkọọ́lẹ̀ àtẹ̀wọ́ báyìí.
+auto_check_not_saved = A kò fi ètò àyẹ̀wò láìfọwọ́yí pamọ́.
+mute_not_saved = A kò fi ètò ìdákẹ́ pamọ́.
+account_muted = A ti dákẹ́ {account}.
+account_unmuted = A ti mú ohùn {account} padà.
+export_done = A ti kó àkọọ́lẹ̀ {count} àti àwọn ètò jáde sí {path}.
+import_done = A ti kó àkọọ́lẹ̀ {count} wọlé láti {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = A kò fi àwọn àlẹ̀mọ́ pamọ́.
+filters_saved = A ti fi àwọn àlẹ̀mọ́ pamọ́ fún {account}.
+filters_checking = À ń ṣe àyẹ̀wò {folder} lòdì sí àwọn àlẹ̀mọ́ rẹ...
+filters_none_matched = Ṣiṣẹ́ báyìí: kò sí ìfiránṣẹ́ nínú {folder} tó bá òfin tó ṣiṣẹ́ kankan mu.
+filters_run_failed = A kò lè ṣiṣẹ́ àwọn àlẹ̀mọ́.
+filters_moving = À ń gbé ìfiránṣẹ́ tí a ṣàlẹ̀mọ́ {count} lọ...
+filters_move_failures = Àwọn àlẹ̀mọ́: a kò lè gbé ìfiránṣẹ́ {count}.
+filters_moved = Àwọn àlẹ̀mọ́ ti gbé ìfiránṣẹ́ {count} jáde láti {folder}.
+filters_move_failed = A kò lè gbé àwọn ìfiránṣẹ́ tí a ṣàlẹ̀mọ́.
+cache_not_cleared = A kò pa ibi ìkópamọ́ rẹ́.
+auto_cache_cleanup = Ìmọ́tótó ibi ìkópamọ́ láìfọwọ́yí: ìfiránṣẹ́ tó dàgbà ju {age} lọ.
+phishing_update_failed = A kò lè ṣàtúnṣe àtòjọ ìtànjẹ: {error}
+blocklist_update_failed = A kò lè ṣàtúnṣe àtòjọ ìdènà: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà lo Fi pamọ́ bí.
+saving_message = À ń fi ìfiránṣẹ́ pamọ́...
+save_file_failed = A kò lè fi fáìlì pamọ́.
+save_fetch_failed = A kò lè mú ìfiránṣẹ́ wá láti fi pamọ́.
+open_message_first_print = Ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà lo Tẹ̀jáde.
+open_message_first_preview = Ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà lo Àyẹ̀wò ìtẹ̀jáde.
+refreshing_accounts = À ń ṣàtúnṣe àkọọ́lẹ̀ {count}...
+emptying_trash = À ń sọ Àpótí ìdọ̀tí di òfo fún {account}...
+trash_already_empty = Àpótí ìdọ̀tí ti ṣófo tẹ́lẹ̀.
+trash_emptied = A ti sọ Àpótí ìdọ̀tí di òfo: a ti pa ìfiránṣẹ́ {count} rẹ́.
+empty_trash_failed = A kò lè sọ Àpótí ìdọ̀tí di òfo.
+emptying_junk = À ń sọ Àwúrúju di òfo fún {account}...
+junk_already_empty = Àwúrúju ti ṣófo tẹ́lẹ̀.
+junk_emptied = A ti sọ Àwúrúju di òfo: a ti pa ìfiránṣẹ́ {count} rẹ́.
+junk_emptied_prefix = A ti sọ Àwúrúju di òfo:
+junk_part_purged = A ti pa {count} rẹ́
+junk_part_in_trash = A ti gbé {count} lọ sí Àpótí ìdọ̀tí ṣùgbọ́n a kò jẹ́rìí ìyọkúrò, wo Àpótí ìdọ̀tí
+junk_part_not_moved = A kò gbé {count} lọ sí Àpótí ìdọ̀tí, wọ́n ṣì wà nínú Àwúrúju
+empty_junk_failed = A kò lè sọ Àwúrúju di òfo.
+back_online = Ó ti padà sórí ayélujára.
+offline_sync_running = À ń mú {account} bá ara mu fún lílò láìsí ayélujára...
+offline_sync_failed = Ìmúbáramu láìsí ayélujára kùnà: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Yan tàbí ṣí ìfiránṣẹ́ kan ná.
+select_or_open_message_ctrl_u = Yan tàbí ṣí ìfiránṣẹ́ kan ná, lẹ́yìn náà tẹ Ctrl+U.
+no_sender_address = Ìfiránṣẹ́ yìí kò ní àdírẹ́sì olùfiránṣẹ́ láti fi kún un.
+contact_added = A ti fi {contact} kún ìwé àdírẹ́sì rẹ.
+contact_already_there = {contact} ti wà nínú ìwé àdírẹ́sì rẹ tẹ́lẹ̀.
+privacy_saved = A ti fi ètò àṣírí pamọ́. Tún ṣí ìfiránṣẹ́ láti lò wọ́n.
+message_font_size = Ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = À ń pa ìfiránṣẹ́ rẹ́ pátápátá
+deleting_many = À ń pa ìfiránṣẹ́ {count} rẹ́ pátápátá
+trashing_one = À ń gbé ìfiránṣẹ́ lọ sí Àpótí ìdọ̀tí
+trashing_many = À ń gbé ìfiránṣẹ́ {count} lọ sí Àpótí ìdọ̀tí
+undo_partly_restored = A ti padà {action}, ṣùgbọ́n a kò lè dá {count} padà -- ó lè jẹ́ pé a ti gbé wọn lọ, a ti pa wọ́n rẹ́ tàbí wọ́n ti parí láti ìgbà náà.
+moves_report = {action}: a ti gbé ìfiránṣẹ́ {moved} nínú {total} lọ.
+moves_report_failed = A kò gbé lọ, wọ́n ṣì wà nínú fódà àkọ́kọ́: {count}.
+
+tray_tooltip_one = ZBox — ìfiránṣẹ́ 1 tí a kò tíì kà
+tray_tooltip_many = ZBox — ìfiránṣẹ́ {count} tí a kò tíì kà
+account_unreachable = A kò lè dé {account}. Àyẹ̀wò láìfọwọ́yí fún un dúró fún ìṣẹ́jú {minutes}.
+bulk_copy_failed = A kò lè dàkọ ìfiránṣẹ́.
+bulk_copy_failed_status = Ìdàkọ kùnà.
+bulk_loading_archive = Ìfiránṣẹ́ ṣì ń gbé wá -- tún gbìyànjú láti pamọ́ láìpẹ́.
+bulk_loading_delete = Ìfiránṣẹ́ ṣì ń gbé wá -- tún gbìyànjú láti parẹ́ láìpẹ́.
+bulk_loading_flag = Ìfiránṣẹ́ ṣì ń gbé wá -- tún gbìyànjú láti sàmì ìràwọ̀ láìpẹ́.
+bulk_loading_generic = Ìfiránṣẹ́ ṣì ń gbé wá -- tún gbìyànjú láìpẹ́.
+bulk_none = A kò yan ìfiránṣẹ́ kankan.
+bulk_none_archive = A kò yan ìfiránṣẹ́ láti pamọ́.
+bulk_none_delete = A kò yan ìfiránṣẹ́ láti parẹ́.
+bulk_none_junk = A kò yan ìfiránṣẹ́ láti sàmì sí àwúrúju.
+bulk_none_not_junk = A kò yan ìfiránṣẹ́ láti sàmì sí kì í ṣe àwúrúju.
+delete_refused_still = Olùpèsè kọ̀ láti pa á rẹ́; ó ṣì wà nínú {folder}.
+delete_refused_trash = Ó wà nínú Àpótí ìdọ̀tí, ṣùgbọ́n olùpèsè kọ̀ láti pa á rẹ́ pátápátá.
+delete_resume_failed = A kò lè pa ìfiránṣẹ́ {count} láti ìparẹ́ tẹ́lẹ̀ rẹ́.
+done_perm_delete_one = A ti pa ìfiránṣẹ́ rẹ́ pátápátá.
+done_trash_one = A ti gbé ìfiránṣẹ́ lọ sí Àpótí ìdọ̀tí.
+filters_applied = A ti lo àwọn àlẹ̀mọ́ sí ìfiránṣẹ́ {count} nínú {folder}.
+filters_failed = A kò lè ṣiṣẹ́ àwọn àlẹ̀mọ́.
+filters_running = À ń ṣiṣẹ́ àwọn àlẹ̀mọ́ lórí {folder}
+flag_failed = A kò lè ṣàtúnṣe àmì ìràwọ̀.
+flag_updated = A ti ṣàtúnṣe àmì ìràwọ̀.
+folder_verb_subscribing = À ń forúkọ sílẹ̀ fún
+folder_verb_unsubscribing = À ń yọ orúkọ kúrò nínú
+mark_read_failed = A kò lè sàmì ìfiránṣẹ́ sí tí a ti kà.
+mark_unread_failed = A kò lè sàmì ìfiránṣẹ́ sí tí a kò tíì kà.
+notify_new_mail_body = {noun} tuntun {count} fún {name}.
+notify_new_mail_title = Ìfiránṣẹ́ tuntun
+notify_noun_many = ìfiránṣẹ́
+notify_noun_one = ìfiránṣẹ́
+report_done = {verb} {done} nínú ìfiránṣẹ́ {count}.
+report_verb_deleted = A ti parẹ́
+report_verb_permanent = A ti parẹ́ pátápátá
+running_copy_many = À ń dàkọ ìfiránṣẹ́ {count}
+running_copy_one = À ń dàkọ ìfiránṣẹ́
+running_junk_many = À ń sàmì ìfiránṣẹ́ {count} sí àwúrúju
+running_junk_one = À ń sàmì sí àwúrúju
+running_move_many = À ń gbé ìfiránṣẹ́ {count} lọ
+running_move_one = À ń gbé lọ
+running_not_junk_many = À ń sàmì ìfiránṣẹ́ {count} sí kì í ṣe àwúrúju
+running_not_junk_one = À ń sàmì sí kì í ṣe àwúrúju
+running_perm_delete_one = À ń pa ìfiránṣẹ́ rẹ́ pátápátá...
+running_read_many = À ń sàmì ìfiránṣẹ́ {count} sí tí a ti kà
+running_read_one = À ń sàmì sí tí a ti kà
+running_trash_one = À ń gbé ìfiránṣẹ́ lọ sí Àpótí ìdọ̀tí...
+running_unread_many = À ń sàmì ìfiránṣẹ́ {count} sí tí a kò tíì kà
+running_unread_one = À ń sàmì sí tí a kò tíì kà
+settings_saved_no_startup = A ti fi ètò pamọ́. A kò lè ṣàtúnṣe ohun ìbẹ̀rẹ̀ Windows.
+settings_saved_status = A ti fi ètò pamọ́.
+spam_blocked_sender = Olùfiránṣẹ́ tí a dènà
+spam_possible_phishing = Ó lè jẹ́ ìtànjẹ
+undo_running_many = À ń padà {action} (ìfiránṣẹ́ {count})
+undo_running_one = À ń padà {action}
+mark_folder_read_failed = A kò lè sàmì fódà sí tí a ti kà.
+marking_folder_read = À ń sàmì fódà sí tí a ti kà...
+upd_ready_at_exit = A ti gba àtúnṣe tẹ́lẹ̀. A ó fi sí i nígbà tí o bá jáde kúrò nínú ZBox.
+upd_checking = À ń ṣàyẹ̀wò fún àtúnṣe...
+upd_up_to_date = ZBox ti jẹ́ ti òde òní.
+upd_available_source = ZBox {version} wà. Ẹ̀dà yìí ń ṣiṣẹ́ láti orísun, nítorí náà ṣàtúnṣe rẹ̀ pẹ̀lú git.
+upd_check_failed = A kò lè ṣàyẹ̀wò fún àtúnṣe: {error}
+opening_attachment = À ń ṣí {filename}...
+loading_headers = À ń gbé àwọn àkọlé wá...
+offline_inbox_only = Àpótí gbígbà àti Ìpamọ́ nìkan ni a ń pamọ́ fún lílò láìsí ayélujára.
+offline_sync_done_inbox = A ti mú ìfiránṣẹ́ {count} nínú Àpótí gbígbà àti Ìpamọ́ bá ara mu fún lílò láìsí ayélujára.
+working_offline = Iṣẹ́ láìsí ayélujára: à ń fi ẹ̀dà ìkẹyìn tí a mú bá ara mu ti Àpótí gbígbà/Tí a fi ránṣẹ́/Àwòkọ hàn.
+emptying_trash_all = À ń sọ Àpótí ìdọ̀tí di òfo fún gbogbo àkọọ́lẹ̀...
+trash_emptied_all = A ti sọ Àpótí ìdọ̀tí di òfo nínú àkọọ́lẹ̀ {accounts}: a ti pa ìfiránṣẹ́ {count} rẹ́.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fáìlì
+bar_edit = &Àtúnṣe
+bar_view = &Ìwò
+bar_message = &Ìfiránṣẹ́
+bar_compose = &Kíkọ
+bar_tools = &Àwọn irinṣẹ́
+bar_help = &Ìrànlọ́wọ́
+
+# File
+file_new = Tuntun
+file_new_message = Ìfiránṣẹ́
+file_new_account = Àkọọ́lẹ̀ ímeèlì...
+file_open_saved_message = Ṣí ìfiránṣẹ́ tí a fi pamọ́...
+file_close = Pa
+file_save_message_as = Fi ìfiránṣẹ́ pamọ́ bí...
+file_get_new_for = Gba ìfiránṣẹ́ tuntun fún
+file_get_new_all = Gbogbo àkọọ́lẹ̀
+file_get_new_current = Àkọọ́lẹ̀ lọ́wọ́lọ́wọ́
+file_offline = Láìsí ayélujára
+file_work_offline = Ṣiṣẹ́ láìsí ayélujára
+file_sync_now = Mú bá ara mu báyìí
+file_print = Tẹ̀jáde...
+file_print_preview = Àyẹ̀wò ìtẹ̀jáde...
+file_exit = Jáde
+
+# Edit
+edit_undo = Padà
+edit_select_all = Yan gbogbo rẹ̀
+edit_find_messages = Wá àwọn ìfiránṣẹ́...
+
+# Message
+message_reply = Dáhùn
+message_reply_all = Dáhùn sí gbogbo wọn
+message_forward = Tún fi ránṣẹ́
+message_archive = Pamọ́ sí ìpamọ́
+message_delete = Parẹ́
+message_delete_permanently = Parẹ́ pátápátá
+message_mark = Sàmì
+mark_read = Tí a ti kà
+mark_unread = Tí a kò tíì kà
+mark_flagged = Tí a sàmì ìràwọ̀
+mark_junk = Àwúrúju
+mark_not_junk = Kì í ṣe àwúrúju
+message_watch_thread = Tọ́jú ìtẹ̀léra
+message_ignore_thread = Kọbi ara sí ìtẹ̀léra
+message_open_conversation = Ṣí ìfiránṣẹ́ nínú ìjíròrò
+message_show_related = Fi àwọn ìfiránṣẹ́ tó jọmọ hàn
+message_add_sender_to_address_book = Fi olùfiránṣẹ́ kún ìwé àdírẹ́sì
+message_announce_sender = Kéde olùfiránṣẹ́
+message_announce_copy_sender = Kéde olùfiránṣẹ́ kí o sì dàkọ àdírẹ́sì
+
+# View
+view_folders = Àwọn fódà
+folders_all = Gbogbo wọn
+folders_unified = Àpapọ̀
+folders_jump_inbox = Lọ sí àtòjọ ìfiránṣẹ́ Àpótí gbígbà
+folders_configure_unified = Ṣètò àwọn fódà àpapọ̀...
+view_sort_by = Tò nípasẹ̀
+sort_date = Ọjọ́
+sort_subject = Kókó
+sort_from = Láti ọ̀dọ̀
+sort_descending = Láti ńlá dé kékeré (tuntun ni àkọ́kọ́)
+sort_ascending = Láti kékeré dé ńlá (àtijọ́ ni àkọ́kọ́)
+view_threads = Àwọn ìtẹ̀léra
+threads_all = Gbogbo wọn
+threads_watched = Àwọn ìtẹ̀léra tí à ń tọ́jú
+threads_ignored = Àwọn ìtẹ̀léra tí a kò kọbi ara sí
+threads_expand_all = Ṣí gbogbo ìtẹ̀léra
+threads_collapse_all = Kó gbogbo ìtẹ̀léra jọ
+view_load_more = Gbé àwọn ìfiránṣẹ́ mìíràn wá
+view_toggle_message_view = Yí padà láàrín ìwò Ọ̀rọ̀ àti HTML
+view_show_remote_content = Fi àkóónú láti jìnnà hàn nínú ìfiránṣẹ́ yìí
+view_message_zoom = Ìmúgbòòrò ìfiránṣẹ́
+zoom_increase = Mú ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ pọ̀ sí i
+zoom_decrease = Mú ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ dín kù
+zoom_reset = Dá ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ padà
+
+# Compose
+compose_send = &Fi ránṣẹ́
+compose_save_draft = &Fi àwòkọ pamọ́
+compose_attach = &Fi fáìlì kún un...
+compose_fmt_bold = &Dúdú gbòòrò
+compose_fmt_italic = &Tẹ̀ sí ẹ̀gbẹ́
+compose_fmt_strike = &Fa ìlà kọjá
+compose_fmt_bullet = &Àtòjọ onípẹ́ńtì
+compose_fmt_number = &Àtòjọ onínọ́ńbà
+compose_fmt_quote = &Àyọkà
+compose_fmt_code = &Kóòdù
+compose_fmt_heading1 = &Àkọlé
+compose_link = &Fi ìsopọ̀ sí i...
+compose_formatting = &Ìṣètò níbí
+compose_spellcheck = &Yẹ ìkọ̀wé wò...
+compose_spellcheck_next = &Àṣìṣe tó kàn
+compose_spellcheck_add = &Fi ọ̀rọ̀ kún ìwé atúmọ̀ èdè
+compose_insert_signature = &Fi ìbuwọ́lù sí i
+compose_paste_quotation = &Lẹ̀ bí àyọkà
+compose_word_count = &Iye ọ̀rọ̀
+compose_preview = &Àyẹ̀wò...
+compose_diagnostics = &Àyẹ̀wò akọ̀wé...
+compose_edit_signature = &Ṣàtúnṣe ìbuwọ́lù...
+compose_hotkeys_diagnostic = &Àyẹ̀wò bọ́tìnì kíákíá
+
+# Tools
+tools_account_settings = Ètò àkọọ́lẹ̀ àti ìdánimọ̀...
+tools_mute_account = Dákẹ́ àkọọ́lẹ̀
+tools_pause_auto_check = Dá àyẹ̀wò láìfọwọ́yí dúró
+tools_disable_account = Dá àkọọ́lẹ̀ dúró
+tools_remove_account = Yọ àkọọ́lẹ̀ kúrò...
+tools_address_book = Ìwé àdírẹ́sì...
+tools_message_filters = Àwọn àlẹ̀mọ́ ìfiránṣẹ́...
+tools_import = Kó àkọọ́lẹ̀ àti ètò wọlé...
+tools_export = Kó àkọọ́lẹ̀ àti ètò jáde...
+tools_cache_cleanup = Ètò ìmọ́tótó ibi ìkópamọ́...
+tools_privacy = Àṣírí àti ìdènà àkóónú...
+tools_settings = Ètò...
+
+# Help
+help_shortcuts = Àwọn ọ̀nà abuja bọ́tìnì...
+help_about = Nípa ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Àkọọ́lẹ̀ tuntun...
+tree_account_settings = Ètò àkọọ́lẹ̀ àti ìdánimọ̀...
+tree_mute_account = Dákẹ́ àkọọ́lẹ̀
+tree_pause_auto_check = Dá àyẹ̀wò láìfọwọ́yí dúró
+tree_enable_account = Mú àkọọ́lẹ̀ ṣiṣẹ́
+tree_disable_account = Dá àkọọ́lẹ̀ dúró
+tree_set_default_account = Yàn án gẹ́gẹ́ bí àkọọ́lẹ̀ àtẹ̀wọ́
+tree_remove_account = Yọ àkọọ́lẹ̀ kúrò...
+tree_refresh = Ṣàtúnṣe
+tree_new_folder = Fódà tuntun...
+tree_empty_trash = Sọ Àpótí ìdọ̀tí di òfo
+tree_empty_junk = Sọ Àwúrúju di òfo
+tree_rename_folder = Tún fódà sọ̀rọ̀...
+tree_delete_folder = Pa fódà rẹ́...
+tree_subscribe_folder = Forúkọ sílẹ̀ fún fódà
+tree_unsubscribe_folder = Yọ orúkọ kúrò nínú fódà
+
+# The message list menu, opened the same two ways
+list_select_all = Yan gbogbo rẹ̀
+list_reply = Dáhùn
+list_reply_all = Dáhùn sí gbogbo wọn
+list_forward = Tún fi ránṣẹ́
+list_mark = Sàmì
+list_archive = Pamọ́ sí ìpamọ́
+list_delete_to_trash = Parẹ́ (Gbé lọ sí Àpótí ìdọ̀tí)
+list_delete_permanently = Parẹ́ pátápátá
+list_move_to = Gbé lọ sí
+list_copy_to = Dàkọ sí
+
+# The notification area icon
+tray_open = &Ṣí ZBox
+tray_unread_one = Ìfiránṣẹ́ 1 tí a kò tíì kà
+tray_unread_many = Ìfiránṣẹ́ {count} tí a kò tíì kà
+tray_no_unread = Kò sí ìfiránṣẹ́ tí a kò tíì kà
+tray_settings = &Ètò...
+tray_quit = &Jáde kúrò nínú ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Dúdú gbòòrò
+format_italic = &Tẹ̀ sí ẹ̀gbẹ́
+format_strike = &Fa ìlà kọjá
+format_bullet = &Àtòjọ onípẹ́ńtì
+format_number = &Àtòjọ onínọ́ńbà
+format_quote = &Àyọkà
+format_code = &Kóòdù
+format_heading1 = &Àkọlé
+format_insert_link = &Fi ìsopọ̀ sí i...
+format_formatting_here = &Ìṣètò níbí
+tools_enable_account = Mú àkọọ́lẹ̀ ṣiṣẹ́
+edit_undo_action = Padà {action}
+tree_mark_folder_read = Sàmì fódà sí tí a ti kà
+help_updates = &Àwọn àtúnṣe
+help_check_updates = &Ṣàyẹ̀wò fún àtúnṣe báyìí...
+help_update_settings = &Ètò àtúnṣe...
+help_releases_page = &Ṣí ojú ìwé àwọn ìtẹ̀jáde
+message_attachments = Àwọn àfikún
+message_no_attachments = Kò sí àfikún
+message_save_all_attachments = Fi gbogbo àfikún pamọ́
+view_full_headers = Àwọn àkọlé pípé
+folders_go_to_tree = Lọ sí àtòjọ fódà
+list_block_sender = Dènà olùfiránṣẹ́ yìí
+list_unblock_sender = Yọ ìdènà olùfiránṣẹ́ yìí kúrò
+sort_received = Tí a gbà
+sort_star = Ìràwọ̀
+sort_order_received = Ìtòlẹ́sẹẹsẹ ìgbà
+sort_priority = Ìpìlẹ̀ṣẹ̀
+sort_recipient = Olùgbà
+sort_correspondents = Àwọn olùbáṣepọ̀
+sort_size = Ìwọ̀n
+sort_read = Tí a ti kà
+sort_junk_status = Ipò àwúrúju
+sort_attachments = Àwọn àfikún
+sort_threaded = Pẹ̀lú ìtẹ̀léra
+sort_unthreaded = Láìsí ìtẹ̀léra
+view_columns = Àwọn ọ̀wọ̀n
+tools_openpgp_keys = Olùṣàkóso kọ́kọ́rọ́ OpenPGP
+tools_smime_certs = Olùṣàkóso ìwé ẹ̀rí S/MIME
+compose_pgp_encrypt = &Fi àṣírí pa
+compose_pgp_sign = &Buwọ́lù ní díjítà
+compose_pgp_attach_key = &Fi kọ́kọ́rọ́ gbogbogbò mi kún un
+
+[dialogs]
+set_theme_restart_confirm = Tún ZBox bẹ̀rẹ̀ láti lo àyípadà àkọ́lé?
+set_ui_theme_label = &Àkọ́lé ojú ìwé:
+set_ui_theme_note = Àwọn àwọ̀ fún àwọn àtòjọ àṣàyàn, àwọn àtòjọ, àwọn fèrèsé ìbánisọ̀rọ̀ àti ìwò ìfiránṣẹ́ Ọ̀rọ̀. Tẹ̀lé ètò ń lo ipò ìmọ́lẹ̀ tàbí òkùnkùn ti Windows fúnra rẹ̀. Búlúù ọ̀gànjọ́, Òkùnkùn gbígbóná àti Ìyàtọ̀ rírọ̀ jẹ́ àwọn àkọ́lé òkùnkùn pẹ̀lú àwọ̀ tó rọrùn. Àwọn ìfiránṣẹ́ HTML ń pa àwọ̀ wọn mọ́, Windows High Contrast sì máa ń gba iwájú. Ó ń ṣiṣẹ́ nígbà tí ZBox bá bẹ̀rẹ̀ lẹ́ẹ̀kan sí i.
+set_theme_system = Tẹ̀lé ètò
+set_theme_light = Ìmọ́lẹ̀
+set_theme_dark = Òkùnkùn
+set_theme_midnight = Búlúù ọ̀gànjọ́
+set_theme_warm = Òkùnkùn gbígbóná
+set_theme_soft = Ìyàtọ̀ rírọ̀
+set_language_restart_confirm = Tún ZBox bẹ̀rẹ̀ láti lo àyípadà èdè?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Kàn sí Harith
+title_identity = Ìdánimọ̀
+title_show_password = Fi ọ̀rọ̀ìpamọ́ hàn
+title_missing_information = Ìwífún tó sọnù
+title_unsupported_provider = Olùpèsè tí a kò ṣe àtìlẹ́yìn fún
+title_test_connection = Dán ìsopọ̀ wò
+title_new_contact = Olùbáṣepọ̀ tuntun
+title_edit_contact = Ṣàtúnṣe olùbáṣepọ̀
+title_delete_contact = Pa olùbáṣepọ̀ rẹ́
+title_import_contacts = Kó àwọn olùbáṣepọ̀ wọlé
+title_export_contacts = Kó àwọn olùbáṣepọ̀ jáde
+title_rename_group = Tún ẹgbẹ́ sọ̀rọ̀
+title_delete_group = Pa ẹgbẹ́ rẹ́
+title_send = Fi ránṣẹ́
+title_send_failed = Fífiránṣẹ́ kùnà
+title_attach_file = Fi fáìlì kún un
+title_save_draft = Fi àwòkọ pamọ́
+title_documentation = Ìwé àlàyé ZBox
+title_open_link = Ṣí ìsopọ̀
+title_filter_rule = Òfin àlẹ̀mọ́
+title_master_password = Ọ̀rọ̀ìpamọ́ àkọ́kọ́
+title_attachment_saved = A ti fi àfikún pamọ́
+title_attachments_saved = A ti fi àwọn àfikún pamọ́
+title_download_failed = Ìgbàsílẹ̀ kùnà
+title_print = Tẹ̀jáde
+title_print_preview = Àyẹ̀wò ìtẹ̀jáde
+title_related_messages = Àwọn ìfiránṣẹ́ tó jọmọ
+title_search = Wá
+title_unlock = Ṣí
+title_unlock_methods = Àwọn ọ̀nà ìṣísílẹ̀
+title_desktop_shortcut = Ọ̀nà abuja orí tábìlì
+title_spell_check = Àyẹ̀wò ìkọ̀wé
+title_plain_text_password = A rí ọ̀rọ̀ìpamọ́ ọ̀rọ̀ lásán
+title_startup_error = Àṣìṣe ìbẹ̀rẹ̀ ZBox
+
+identity_email_required = Tẹ àdírẹ́sì ímeèlì sí i.
+
+wizard_password_not_shown = A kò lè fi ọ̀rọ̀ìpamọ́ hàn lórí ẹ̀rọ yìí. A ṣì ń tẹ̀ ẹ́ kí a sì fi pamọ́ bí ó ṣe yẹ.
+wizard_email_required = Tẹ àdírẹ́sì ímeèlì tó tọ́ sí i kí o tó tẹ̀síwájú.
+wizard_test_needs_server = Tẹ ímeèlì ìwọlé àti olùpèsè ìgbàwọlé sí i kí o tó dán wò.
+wizard_test_succeeded = Ìsopọ̀ yọrí. A rí ìfiránṣẹ́ {count} nínú Àpótí gbígbà.
+
+contact_email_required = A nílò àdírẹ́sì ímeèlì.
+contact_select_to_edit = Yan olùbáṣepọ̀ láti ṣàtúnṣe.
+contact_select_to_delete = Yan olùbáṣepọ̀ láti parẹ́.
+contact_delete_confirm = Pa {label} rẹ́ kúrò nínú ìwé àdírẹ́sì?
+contacts_import_choose_file = Yan fáìlì .vcf (vCard) tàbí .csv láti kó wọlé.
+contacts_imported = A ti kó olùbáṣepọ̀ {count} wọlé.
+contacts_import_empty = A kò rí olùbáṣepọ̀ kankan nínú fáìlì yẹn.
+contacts_none_to_export = Kò sí olùbáṣepọ̀ láti kó jáde.
+contacts_exported = A ti kó olùbáṣepọ̀ {count} jáde:\n{path}
+group_name_exists = Ẹgbẹ́ kan tí a pè ní "{name}" ti wà tẹ́lẹ̀.
+group_delete_confirm = Pa ẹgbẹ́ "{name}" rẹ́? A kò pa àwọn olùbáṣepọ̀ rẹ̀ rẹ́.
+
+send_no_account = Fi àkọọ́lẹ̀ kún un kí o tó fi ránṣẹ́, tàbí yan ọ̀kan nínú Láti ọ̀dọ̀.
+send_no_recipient = Tẹ olùgbà kan o kere ju sínú Sí.
+draft_no_account = Fi àkọọ́lẹ̀ kún un kí o tó fi àwòkọ pamọ́, tàbí yan ọ̀kan nínú Láti ọ̀dọ̀.
+attached_file = A ti fi kún un: {name}\n\nA ó fi fáìlì {count} kún un nígbà tí o bá fi ránṣẹ́.
+
+documentation_copied = A ti dàkọ ìwé àlàyé ZBox pípé sí pátákó ìdàkọ.
+
+filter_rule_needs_name = Fún òfin yìí lórúkọ.
+filter_rule_needs_condition = Ṣètò àmì ìpín kan o kere ju (Láti ọ̀dọ̀, Sí tàbí Kókó).
+filter_rule_needs_action = Yan ìgbésẹ̀ kan o kere ju: sàmì sí tí a ti kà, sàmì ìràwọ̀, tàbí gbé lọ sí fódà.
+
+master_password_set = A ti ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́. Fi pamọ́ sí ibi tó ní ààbò: ZBox ń bèèrè rẹ̀ lẹ́ẹ̀kan lórí kọ̀ǹpútà tuntun kọ̀ọ̀kan, a kò sì lè rí i padà tí o bá pàdánù rẹ̀.
+master_password_offer = Láìsí ọ̀rọ̀ìpamọ́ àkọ́kọ́, a lè ka àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ lórí kọ̀ǹpútà yìí àti àkọọ́lẹ̀ Windows yìí nìkan. Tí o bá dà ZBox kọ sí ibòmíràn, gbogbo àkọọ́lẹ̀ ni a ó tún wọlé sí.\n\nṢètò ọ̀kan báyìí?
+
+attachment_saved = A ti fi àfikún pamọ́ sí:\n{path}
+attachments_saved = A ti fi àfikún {count} pamọ́ sí:\n{path}
+
+shortcut_created_settings = A ti ṣẹ̀dá ọ̀nà abuja:\n{path}\n\nÓ ń bẹ̀rẹ̀ ZBox láti:\n{base}
+
+spellcheck_no_dictionary = Ìwé atúmọ̀ èdè ìkọ̀wé kò sí, nítorí náà àyẹ̀wò ìkọ̀wé kò sí nínú ẹ̀dà ZBox yìí.
+spellcheck_none_found = A kò rí àṣìṣe ìkọ̀wé.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Ṣètò kọ́kọ́rọ́ ìwọlé lórí kọ̀ǹpútà yìí kí o sì gbàgbé èyí tí a fi pamọ́ láti kọ̀ǹpútà mìíràn?\n\nWindows yóò béèrè pé kí o fìdí rẹ̀ múlẹ̀ pẹ̀lú Hello. A kò fọwọ́ kan kọ́kọ́rọ́ ìwọlé àtijọ́ tó kù lórí kọ̀ǹpútà mìíràn, yóò sì máa ṣiṣẹ́ tí o bá gbé fódà yìí padà síbẹ̀, ṣùgbọ́n a ó ní láti ṣètò rẹ̀ lẹ́ẹ̀kan sí i.
+unlock_replace_passkey_many = Ṣètò kọ́kọ́rọ́ ìwọlé lórí kọ̀ǹpútà yìí kí o sì gbàgbé {count} tí a fi pamọ́ láti àwọn kọ̀ǹpútà mìíràn?\n\nWindows yóò béèrè pé kí o fìdí rẹ̀ múlẹ̀ pẹ̀lú Hello. A kò fọwọ́ kan àwọn kọ́kọ́rọ́ ìwọlé àtijọ́ tó kù lórí kọ̀ǹpútà mìíràn, wọn yóò sì máa ṣiṣẹ́ tí o bá gbé fódà yìí padà síbẹ̀, ṣùgbọ́n a ó ní láti ṣètò wọn lẹ́ẹ̀kan sí i.
+unlock_method_works = Ọ̀nà yẹn ń ṣiṣẹ́.
+
+plain_text_password_found = data\config\himalaya.toml ṣì ní ọ̀rọ̀ìpamọ́ ọ̀rọ̀ lásán (auth.raw) láti ìṣètò àkọọ́lẹ̀ àtijọ́.\n\nYọ àkọọ́lẹ̀ yẹn kúrò kí o tún fi kún un, tàbí pa data\config\himalaya.toml rẹ́, kí ó lè tún ṣẹ̀dá nípa lílo ibi ìtọ́jú ẹ̀rí tó ní ààbò.
+
+# main_frame's titles.
+title_account_list_unavailable = Àtòjọ àkọọ́lẹ̀ kò sí
+title_open_message = Ṣí ìfiránṣẹ́
+title_run_filters = Ṣiṣẹ́ àwọn àlẹ̀mọ́
+title_clear_cache = Pa ibi ìkópamọ́ ìfiránṣẹ́ láìsí ayélujára rẹ́
+title_remove_account = Yọ àkọọ́lẹ̀ kúrò
+title_new_folder = Fódà tuntun
+title_rename_folder = Tún fódà sọ̀rọ̀
+title_delete_folder = Pa fódà rẹ́
+title_subscribe = Forúkọ sílẹ̀
+title_unsubscribe = Yọ orúkọ kúrò
+title_open_saved_message = Ṣí ìfiránṣẹ́ tí a fi pamọ́
+title_save_message_as = Fi ìfiránṣẹ́ pamọ́ bí
+title_empty_trash = Sọ Àpótí ìdọ̀tí di òfo
+title_empty_junk = Sọ Àwúrúju di òfo
+title_synchronize_offline = Mú bá ara mu fún lílò láìsí ayélujára
+title_export_accounts = Kó àkọọ́lẹ̀ àti ètò jáde
+title_import_accounts = Kó àkọọ́lẹ̀ àti ètò wọlé
+title_show_related = Fi àwọn ìfiránṣẹ́ tó jọmọ hàn
+title_reply = Dáhùn
+title_forward = Tún fi ránṣẹ́
+title_undo = Padà
+title_delete_permanently = Parẹ́ pátápátá
+title_delete = Parẹ́
+title_copy_to = Dàkọ sí
+title_archive = Pamọ́ sí ìpamọ́
+title_accounts_locked = A ti ti àwọn àkọọ́lẹ̀
+
+select_account_first = Yan àkọọ́lẹ̀ kan nínú igi ná.
+select_account_or_folder = Yan àkọọ́lẹ̀ tàbí fódà kan ná.
+filters_left_behind = Ìfiránṣẹ́ {count} bá àlẹ̀mọ́ mu ṣùgbọ́n ó ṣì wà nínú {folder}.
+cache_clear_confirm = Pa ibi ìkópamọ́ ìfiránṣẹ́ láìsí ayélujára rẹ́ fún gbogbo àkọọ́lẹ̀?\n\nÈyí ń pa àwọn ẹ̀dà ZBox lórí kọ̀ǹpútà nìkan rẹ́. A kò yọ nǹkan kan kúrò lórí olùpèsè ímeèlì kankan, a ó sì tún gba àwọn ìfiránṣẹ́ padà bí o ṣe nílò wọn.
+account_remove_confirm = Yọ {name} ({address}) kúrò?\n\nA kò pa ímeèlì tó wà lórí olùpèsè rẹ́.\nA ó pa àwọn ẹ̀dà tí a gbà sórí kọ̀ǹpútà yìí rẹ́.\nA ó pa ọ̀rọ̀ìpamọ́ tí a fi pamọ́ rẹ́.
+folder_delete_confirm = Pa fódà "{folder}" àti gbogbo ohun tó wà nínú rẹ̀ fún {address} rẹ́ pátápátá?\n\nA kò lè dá èyí padà.
+empty_trash_confirm = Pa gbogbo ìfiránṣẹ́ nínú Àpótí ìdọ̀tí fún {address} rẹ́ pátápátá?\n\nA kò lè dá èyí padà.
+empty_junk_confirm = Pa gbogbo ìfiránṣẹ́ nínú Àwúrúju fún {address} rẹ́ pátápátá?\n\nA kò lè dá èyí padà.
+sync_select_account = Yan àkọọ́lẹ̀ kan (kì í ṣe fódà Àpapọ̀) láti mú bá ara mu fún lílò láìsí ayélujára.
+accounts_imported = A ti kó àkọọ́lẹ̀ {count} wọlé:\n\n{names}\n\nA kì í kó ọ̀rọ̀ìpamọ́ jáde láéláé, ibi ìtọ́jú ọ̀rọ̀ìpamọ́ tí a fi àṣírí pa sì jẹ́ ti àkọọ́lẹ̀ olùlò Windows yìí, nítorí náà àkọọ́lẹ̀ kọ̀ọ̀kan tí a kó wọlé nílò kí a tẹ ọ̀rọ̀ìpamọ́ rẹ̀ sí i lẹ́ẹ̀kan nípasẹ̀ Àwọn irinṣẹ́ > Ètò àkọọ́lẹ̀ àti ìdánimọ̀ kí ó tó lè sopọ̀.
+accounts_import_none = A kò rí àkọọ́lẹ̀ kankan nínú fáìlì yìí. A ṣì kó àwọn ètò wọlé, tí fáìlì náà bá ní wọn.
+delete_permanently_confirm_one = Pa ìfiránṣẹ́ yìí rẹ́ pátápátá? Èyí fò fódà Àpótí ìdọ̀tí, a kò sì lè dá a padà.
+accounts_locked = A kọ àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ sórí kọ̀ǹpútà mìíràn, nítorí náà a kò lè kà wọ́n níbí.\n\nÀkọọ́lẹ̀ kọ̀ọ̀kan yóò nílò wíwọlé sí olùpèsè ímeèlì rẹ̀ lẹ́ẹ̀kan sí i. Láti yẹra fún èyí nígbà tó ń bọ̀, ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́ láti Ètò, Ààbò ohun èlò àti dátà lórí kọ̀ǹpútà tí àwọn àkọọ́lẹ̀ ti ń ṣiṣẹ́ tẹ́lẹ̀.
+master_password_remove_confirm = Yọ ọ̀rọ̀ìpamọ́ àkọ́kọ́ kúrò? Àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ yóò wá jẹ́ èyí tí a lè kà lórí kọ̀ǹpútà yìí àti àkọọ́lẹ̀ Windows yìí nìkan. Tí o bá dà ZBox kọ sí ibòmíràn lẹ́yìn náà, gbogbo àkọọ́lẹ̀ ni a ó tún wọlé sí.\n\nYọ ọ́ kúrò báyìí?
+shortcut_offer = Fi ọ̀nà abuja ZBox sórí tábìlì?\n\nYóò bẹ̀rẹ̀ fódà ZBox yìí:\n{path}\n\nỌ̀nà abuja máa ń ṣe àkọsílẹ̀ ibi gangan yẹn. Tí o bá gbé fódà ZBox lọ lẹ́yìn náà, ṣí Ètò, Àtẹ ètò àti fèrèsé kí o sì tún yan Ṣẹ̀dá ọ̀nà abuja orí tábìlì láti tọ́ka sí ibi tuntun.
+shortcut_created = A ti ṣẹ̀dá ọ̀nà abuja:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Orúkọ ìfihàn
+form_email_address = Àdírẹ́sì ímeèlì
+form_your_name = Orúkọ rẹ
+form_login_email = Ímeèlì ìwọlé
+form_password = Ọ̀rọ̀ìpamọ́
+srv_imap_host = Olùpèsè ìgbàwọlé (IMAP)
+srv_imap_port = Ibùdó ìgbàwọlé
+srv_imap_encryption = Ìfi àṣírí pa ìgbàwọlé
+srv_smtp_host = Olùpèsè ìjáde (SMTP)
+srv_smtp_port = Ibùdó ìjáde
+srv_smtp_encryption = Ìfi àṣírí pa ìjáde
+
+acct_login_email_label = Ímeèlì ìwọlé (tí a ń lò láti wọlé)
+acct_new_password_label = Ọ̀rọ̀ìpamọ́ tuntun (fi sílẹ̀ ní òfo láti pa ti lọ́wọ́lọ́wọ́ mọ́)
+acct_new_password_name = Ọ̀rọ̀ìpamọ́ tuntun
+acct_identity_email_label = Àdírẹ́sì ímeèlì (tí a ń lò láti fi ránṣẹ́ àti láti gbà)
+acct_identities_label = Àwọn ìdánimọ̀ àfikún (orúkọ àmúlò)
+acct_identities_name = Àwọn ìdánimọ̀ àfikún
+acct_add_identity = &Fi ìdánimọ̀ kún un...
+acct_edit_identity = &Ṣàtúnṣe ìdánimọ̀...
+acct_remove_identity = &Yọ ìdánimọ̀ kúrò
+acct_signature = Ìbuwọ́lù
+acct_edit_signature = &Ṣàtúnṣe ìbuwọ́lù...
+acct_junk_folder = Fódà àwúrúju
+acct_account_status = Ipò àkọọ́lẹ̀
+acct_disable_account = Dá àkọọ́lẹ̀ yìí dúró
+acct_default_account = Àkọọ́lẹ̀ àtẹ̀wọ́
+acct_set_default = Yàn án gẹ́gẹ́ bí àkọọ́lẹ̀ àtẹ̀wọ́
+acct_notifications = Àwọn ìkìlọ̀ ímeèlì tuntun
+acct_mute_notifications = Dákẹ́ àwọn ìkìlọ̀ fún àkọọ́lẹ̀ yìí
+acct_server_settings = Ètò olùpèsè
+
+wiz_before_you_start = Kí o tó bẹ̀rẹ̀
+wiz_notice_name = Ìkìlọ̀ pàtàkì
+wiz_google_instructions = &Ṣí ìtọ́sọ́nà ọ̀rọ̀ìpamọ́ ohun èlò Google
+wiz_intro = Orúkọ rẹ àti àdírẹ́sì ímeèlì rẹ
+wiz_login_same = Ímeèlì ìwọlé jẹ́ kan náà pẹ̀lú àdírẹ́sì ímeèlì òkè
+wiz_show_password = &Fi ọ̀rọ̀ìpamọ́ hàn
+wiz_preset_applied = A ti lo ètò àtẹ̀wọ́ fún {name}.
+wiz_summary_name = Àkópọ̀ àkọọ́lẹ̀
+wiz_review = Yẹ̀ ẹ́ wò, lẹ́yìn náà tẹ Parí láti fi àkọọ́lẹ̀ yìí pamọ́.
+wiz_test_connection = &Dán ìsopọ̀ wò
+wiz_testing = À ń dán ìsopọ̀ wò...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Mú àkọsílẹ̀ àtúnṣe àṣìṣe ṣiṣẹ́, tí a fi pamọ́ sí: data\logs)
+set_language_label = &Èdè ojú ìwé:
+set_language_label_only_english = &Èdè ojú ìwé: (Gẹ̀ẹ́sì nìkan)
+set_headers_checkbox = &Fi àkọlé ìfiránṣẹ́ hàn lókè ìfiránṣẹ́ tí a ṣí
+set_zoom_label = Ọ̀rọ̀ ìfiránṣẹ́ àti ìmúgbòòrò:
+set_font_override = &Rọ́pò ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ àtẹ̀wọ́
+set_font_size_name = Ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ (àwọn pọ́ìntì)
+set_reading_font_name = Ọ̀rọ̀ kíkà
+set_reading_font_label = Ọ̀rọ̀ kíkà (fi sílẹ̀ ní òfo fún àtẹ̀wọ́):
+set_view_label = Ìwò àkóónú ìfiránṣẹ́ nígbà tí a bá ṣí ìfiránṣẹ́:
+set_view_text = Ọ̀rọ̀
+set_view_html = HTML (tí a fihàn)
+set_engine_label = Ẹ̀rọ ìfihàn HTML:
+set_engine_edge = Edge / WebView2 (ìfihàn òde òní)
+set_engine_ie = MSHTML àtijọ́ (àtìlẹ́yìn tó dára jù fún olùkàwé ojú ìwé)
+set_runtime_label = Ẹ̀rọ ìṣiṣẹ́ WebView2:
+set_runtime_auto = Láìfọwọ́yí — lo èyí tó wà nínú rẹ̀ tí ó bá wà (a dámọ̀ràn)
+set_runtime_fixed = Ẹ̀dà tó wà nínú rẹ̀ nìkan
+set_runtime_evergreen = Ẹ̀rọ ìṣiṣẹ́ gbogbo ẹ̀rọ (Windows ń ṣàtúnṣe rẹ̀)
+set_sr_box = Ìṣàkóso ìkéde olùkàwé ojú ìwé
+set_silence_label = Ìdákẹ́jẹ́ olùkàwé ojú ìwé fún HTML:
+set_silence_name = Ìdákẹ́jẹ́ olùkàwé ojú ìwé fún HTML ní ìṣẹ́jú ìkẹrin
+set_focus_delay_label = Ìdádúró ìfọkànsí ìráyè WebView:
+set_focus_delay_name = Ìdádúró ìfọkànsí ìráyè WebView, ìpele 1 sí 10
+set_announce_label = Ìdádúró ìkéde:
+set_announce_name = Ìdádúró ìkéde ní ìṣẹ́jú ìkẹrin
+set_announce_actions = &Sọ àwọn ìkéde fún àwọn ìgbésẹ̀, ímeèlì tuntun àti àwọn ìkìlọ̀
+set_attachment_dir_label = Fódà ìfipamọ́ àwọn àfikún:
+set_attachment_dir_name = Fódà ìfipamọ́ àwọn àfikún
+set_browse = &Wá kiri…
+set_autosave_label = Àlàfo ìfipamọ́ àwòkọ láìfọwọ́yí:
+set_autosave_name = Àlàfo ìfipamọ́ àwòkọ láìfọwọ́yí ní ìṣẹ́jú àáyá
+set_auto_purge_label = Pa Àpótí ìdọ̀tí àti Àwúrúju àtijọ́ rẹ́ láìfọwọ́yí:
+set_auto_purge_name = Pa Àpótí ìdọ̀tí àti Àwúrúju rẹ́ láìfọwọ́yí lẹ́yìn iye ọjọ́ yìí
+set_bare_keys = &Mú àwọn ọ̀nà abuja bọ́tìnì kan S (ìràwọ̀), A (ìpamọ́), J (sàmì sí àwúrúju)/Shift+J (sàmì sí kì í ṣe àwúrúju), W (tọ́jú ìtẹ̀léra), K (kọbi ara sí ìtẹ̀léra), M (gbé lọ)/Shift+M (gbé lọ nípasẹ̀ orúkọ fódà) àti C (dàkọ sí) ṣiṣẹ́ nínú àtòjọ ìfiránṣẹ́
+set_sound_label = Ohùn àti àwọn ìkìlọ̀:
+set_sounds_enabled = &Ṣe àwọn ohùn ìkìlọ̀
+set_desktop_notifications = &Fi àwọn ìkìlọ̀ orí tábìlì hàn fún ímeèlì tuntun
+set_theme_label = Yí àkọ́lé àwọn ohùn padà:
+set_theme_label_only_default = Yí àkọ́lé àwọn ohùn padà: (àkọ́lé àtẹ̀wọ́ nìkan)
+set_security_box = Ààbò ohun èlò àti dátà
+set_lock_on_quit = &Ti ZBox nígbà tí a bá jáde pátápátá
+set_private_mode = &Ipò àṣírí: má ṣe pa ímeèlì mọ́ sórí kọ̀ǹpútà yìí tàbí díìsì
+set_unlock_methods_button = &Àwọn ọ̀nà ìṣísílẹ̀…
+set_master_password_button = &Ọ̀rọ̀ìpamọ́ àkọ́kọ́…
+set_tray_label = Àtẹ ètò àti fèrèsé:
+set_minimize_to_tray = &Dín sí àtẹ ètò
+set_close_to_tray = &Pa sí àtẹ ètò
+set_stay_maximized = &Jẹ́ kí ZBox máa wà ní ìwọ̀n kíkún
+set_run_at_startup = &Ṣiṣẹ́ ZBox nígbà tí Windows bá bẹ̀rẹ̀
+set_desktop_shortcut_button = &Ṣẹ̀dá ọ̀nà abuja orí tábìlì
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Àkọsílẹ̀ àtúnṣe àṣìṣe ń ran lọ́wọ́ láti ṣàwárí ìṣòro tí ohun kan bá ṣẹlẹ̀. Pípa á ń dá kíkọ àwọn àkọsílẹ̀ tuntun dúró; a kò pa àwọn fáìlì àkọsílẹ̀ tó wà rẹ́. Ó ń ṣiṣẹ́ nígbà tí ZBox bá bẹ̀rẹ̀ lẹ́ẹ̀kan sí i.
+set_language_note = Ó ń ṣiṣẹ́ nígbà tí ZBox bá bẹ̀rẹ̀ lẹ́ẹ̀kan sí i. Àwọn fáìlì èdè jẹ́ fáìlì ọ̀rọ̀ lásán nínú fódà lang ti ZBox, lẹ́gbẹ̀ẹ́ fódà sounds. Láti fi ọ̀kan kún un, dàkọ fódà en, tún ẹ̀dà àti fáìlì .lang inú rẹ̀ sọ̀rọ̀ sí kóòdù èdè rẹ, kí o sì túmọ̀ ọ̀rọ̀ tó wà sí ọ̀tún ààmì ìdọ́gba kọ̀ọ̀kan. Ohunkóhun tí a kò tíì túmọ̀ ni a ń sọ ní èdè Gẹ̀ẹ́sì dípò kí a fi sílẹ̀ láìsọ nǹkan, nítorí náà fáìlì tí a kò parí ṣeé lò láìléwu.
+set_headers_note = Láti ọ̀dọ̀, Sí, Cc, Ọjọ́ àti Kókó, tí a fihàn lókè ọ̀rọ̀ ìfiránṣẹ́ nínú ìwò Ọ̀rọ̀ àti HTML. Láìsí rẹ̀ kò sí ọ̀nà láti mọ ẹni tó fi ìfiránṣẹ́ ránṣẹ́ láti inú rẹ̀ láìpa táàbù kí a sì padà sí àtòjọ. Ìfọkànsí ṣì ń balẹ̀ sórí ọ̀rọ̀ ìfiránṣẹ́; ìdènà àkọlé wà ní Shift+Tab kan. Ó ń ṣiṣẹ́ nígbà tí a bá ṣí ìfiránṣẹ́ nígbà tó ń bọ̀.
+set_zoom_note = Ó ń mú ọ̀rọ̀ ìfiránṣẹ́ tí a ṣí tóbi tàbí kékeré, láìsí ìsopọ̀ pẹ̀lú ìyókù ZBox àti ìwọ̀n ìfihàn Windows fúnra rẹ̀. Ó kan ìwò Ọ̀rọ̀ àti HTML. "Ọ̀rọ̀ kíkà" lè fipá mú kí a lo ọ̀rọ̀ kan pàtó (bíi Consolas, OpenDyslexic) fún ọ̀rọ̀ ìfiránṣẹ́; fi sílẹ̀ ní òfo láti pa ọ̀rọ̀ déédé mọ́. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 nínú àtòjọ Ìwò ń gbé ìwọ̀n ọ̀rọ̀ sókè, sísàlẹ̀ tàbí dá a padà láìṣí fèrèsé yìí, wọ́n sì ń kan gbogbo ìfiránṣẹ́ tí a ṣí lẹ́sẹ̀kẹsẹ̀. Àwọn àyípadà tí a ṣe níbí náà ń kan lẹ́sẹ̀kẹsẹ̀ lórí OK.
+set_view_note = HTML ni àtẹ̀wọ́. Ó ń fi ìfiránṣẹ́ hàn bí a ṣe fi ránṣẹ́, NVDA àti JAWS sì ń kà á: nígbà tí ojú ìwé HTML bá ṣí, ZBox ń dákẹ́ ìkéde aṣàwákiri fúnra rẹ̀, ń gbé kọ́sọ̀ kíkà sí ìlà àkọ́kọ́ ti ìfiránṣẹ́, ó sì ń jẹ́ kí àwọn ọ̀nà abuja ZBox ṣiṣẹ́ nínú ojú ìwé, pẹ̀lú F6 láti gbé ìfọkànsí jáde kúrò níbẹ̀. Ọ̀rọ̀ ń fi ìfiránṣẹ́ kan náà hàn bí ọ̀rọ̀ lásán, tí kò ní ìṣètò nínú ìṣàkóso àtúnṣe déédé -- kò sí àwòrán, kò sí ìṣètò, àti kò sí ohun tó gbára lé ẹ̀rọ aṣàwákiri tí a fi sórí rẹ̀. Tẹ Ctrl+B nínú ìfiránṣẹ́ tí a ṣí láti yí padà ní ọ̀nà méjèèjì.
+set_engine_note = Edge ń fi CSS òde òní hàn ṣùgbọ́n ó ń ṣiṣẹ́ ojú ìwé náà nínú ìlànà tó yàtọ̀, yóò sì fi àkóónú rẹ̀ lé olùkàwé ojú ìwé lọ́wọ́ nípasẹ̀ ìsopọ̀ tí wxPython kò lè dé nìkan -- nítorí náà ìfiránṣẹ́ lè ṣí láìsí ohun tí a lè kà nínú rẹ̀. MSHTML àtijọ́ ni ẹ̀rọ tí Outlook Express àti Windows Mail ń lò: ó ń ṣiṣẹ́ nínú ìlànà kan náà ó sì ń tẹ̀ igi ìwé déédé jáde, nítorí náà NVDA àti JAWS ń kà á ní ipò àwòrán bíi ojú ìwé wẹ́ẹ̀bù èyíkéyìí. Ó ń ṣiṣẹ́ nígbà tí a bá ṣí ìfiránṣẹ́ nígbà tó ń bọ̀.
+set_runtime_note = Windows Update ń tọ́jú ẹ̀rọ ìṣiṣẹ́ gbogbo ẹ̀rọ, nítorí náà ẹ̀rọ tó ń ka ímeèlì rẹ lè yí padà láìsí ìkìlọ̀ -- bí ìwò ìfiránṣẹ́ HTML tó ń ṣiṣẹ́ ṣe lè bàjẹ́ lórí ẹ̀rọ tí kò sí ohun tó yí padà nípa ZBox. Ẹ̀dà tó wà nínú fódà deps ń dá ẹ̀dà gangan tí a dán ZBox wò pẹ̀lú dúró. Ṣiṣẹ́ tools\get_webview2.bat láti fi ọ̀kan sórí rẹ̀. Tí kò bá sí ẹ̀dà tó wà nínú rẹ̀, ZBox ń lo ẹ̀rọ ìṣiṣẹ́ gbogbo ẹ̀rọ lọ́nàkọnà, nítorí náà ó máa ń bẹ̀rẹ̀ nígbà gbogbo. Ó ń ṣiṣẹ́ nígbà tí ZBox bá bẹ̀rẹ̀ lẹ́ẹ̀kan sí i.
+set_sr_intro = Báwo ni ZBox ṣe jẹ́ kí olùkàwé ojú ìwé rẹ sọ̀rọ̀ tó nígbà tí ìfiránṣẹ́ ń ṣí, àti báwo ni àwọn ìkéde ohùn ZBox fúnra rẹ̀ ṣe pẹ́ tó.
+set_silence_note = Nígbà tí ìfiránṣẹ́ HTML bá ṣí, ZBox lè di Ctrl àfarawé mú fún tó ìṣẹ́jú àáyá méjì láti dákẹ́ ìkéde aṣàwákiri olùkàwé ojú ìwé. A ti lo kókó ìfiránṣẹ́ gẹ́gẹ́ bí àkọlé ojú ìwé, èyí tó ń dènà kíkà base64 URL sókè, ṣùgbọ́n olùkàwé ṣì ń kéde ìṣàkóso àti irú ìwé lórí ìbẹ̀rẹ̀ ìfiránṣẹ́, nítorí náà èyí wà ní ṣíṣe nípasẹ̀ àtẹ̀wọ́. Yan Pa láti pa á, tàbí àkókò tó gùn jù tí ariwo bá ṣì ń yọ.
+set_focus_delay_note = Nígbà tí ìfiránṣẹ́ HTML bá parí gbígbé wá, ZBox ń dúró fún ìgbà yìí kí ó tó dojúkọ ọ́. WebView2 tó ròyìn pé a ti gbé ojú ìwé wá àti Windows tó parí igi ìráyè ojú ìwé yẹn kì í ṣe àkókò kan náà; dídojúkọ ní kùtùkùtù ni ó ń jẹ́ kí NVDA/JAWS kéde "Web content page" gbogbogbò dípò ìfiránṣẹ́, tàbí kí ó ròyìn pé ìfiránṣẹ́ kò sí fún ìgbà díẹ̀ lẹ́yìn títúṣí. Àwọn àṣàyàn wà láti ìṣẹ́jú àáyá 0,1 sí 1. Yan àkókò tó gùn jù tí o bá ṣì gbọ́ èyí, àti èyí tó kúrú nígbà tí títúṣí bá dàbí ẹni pé ó dúró ṣinṣin, fún ṣíṣí tó yára.
+set_announce_note = Ctrl+U àti Ctrl+Shift+U ń ròyìn olùfiránṣẹ́ nínú fèrèsé kékeré tó ń pa ara rẹ̀, nítorí pé a kì í sọ ìlà ipò àyàfi tí olùkàwé ojú ìwé rẹ bá ti mú ròyìn ìlà ipò ṣiṣẹ́. Èyí ni bí fèrèsé náà ṣe pẹ́ tó. Ṣètò rẹ̀ láti bá ìyára ọ̀rọ̀ rẹ mu: tí ó bá kúrú jù, ó ń tì ní àárín ọ̀rọ̀, èyí tó ń ba ète jẹ́. Bọ́tìnì èyíkéyìí ń pa á ní kùtùkùtù; àwọn bọ́tìnì ọfà ń jẹ́ kí ó ṣí kí o lè tún kà. Dúró de bọ́tìnì ń jẹ́ kí ó ṣí títí tí o fi tẹ ọ̀kan.
+set_attachment_dir_note = Ibi tí "Fi gbogbo rẹ̀ pamọ́" ti ń kọ àwọn àfikún nígbà tí ìfiránṣẹ́ bá ní ju ọ̀kan lọ. A ń ṣẹ̀dá rẹ̀ láìfọwọ́yí tí kò bá sí. Ìfiránṣẹ́ tó ní àfikún kan ṣoṣo ṣì ń béèrè ibi tí a ó fi pamọ́ sí, bíi tẹ́lẹ̀. Fi sílẹ̀ ní òfo fún àtẹ̀wọ́:\n{path}
+set_autosave_note = Báwo ni táàbù kíkọ tí a ṣí ṣe ń fi ara rẹ̀ pamọ́ sí Àwòkọ nígbà tí o bá ń kọ̀wé. Fi àwòkọ pamọ́ (Ctrl+S) ṣì ń fi pamọ́ nígbà tí a bá bèèrè lọ́nà méjèèjì, àti pípa táàbù tó ní ìkọ̀wé tí a kò fi pamọ́ ń fi àǹfààní láti fi pamọ́ hàn nígbà gbogbo. Pa ń pa ìfipamọ́ láìfọwọ́yí. Ohun tí ó kéré sí ìṣẹ́jú àáyá 15 kò sí -- èyí yóò jẹ́ ìrìn àjò olùpèsè tó ń díje pẹ̀lú títẹ̀ rẹ.
+set_auto_purge_note = Ó ń yọ ìfiránṣẹ́ kúrò ní Àpótí ìdọ̀tí àti Àwúrúju pátápátá nígbà tí wọ́n ti wà níbẹ̀ fún iye ọjọ́ yìí -- ìyọkúrò pátápátá kan náà tí Sọ Àpótí ìdọ̀tí di òfo àti Sọ Àwúrúju di òfo ń ṣe nígbà tí a bá bèèrè, tí ó ń ṣiṣẹ́ láìfọwọ́yí lẹ́ẹ̀kan lójúmọ́ nígbà tí ZBox bá ṣí. Ó ti ṣiṣẹ́ nípasẹ̀ àtẹ̀wọ́ ní ọjọ́ 30. Pa ń pa á. A kò lè dá èyí padà nígbà tí a bá ti yọ ìfiránṣẹ́ kúrò.
+set_bare_keys_note = Nígbà tí ó bá ṣiṣẹ́, títẹ S, A, J, W tàbí K nìkan nínú àtòjọ ìfiránṣẹ́ ń yí ìràwọ̀ padà, ń pamọ́ sí ìpamọ́, ń sàmì ìfiránṣẹ́ tí a yàn sí àwúrúju (Shift+J ń sàmì wọn sí kì í ṣe àwúrúju), tàbí ń tọ́jú/kọbi ara sí ìtẹ̀léra tí ohun tí a yàn jẹ́ apá kan, lẹ́sẹ̀kẹsẹ̀ -- Pamọ́ sí ìpamọ́ àti Sàmì sí àwúrúju kò ní ìdánilójú àti àyípadà. Píparí èyí ń dá S, A, J, W àti K padà sí ìrìnkiri àtòjọ lẹ́tà àkọ́kọ́ déédé. Ctrl+S àti Ctrl+Shift+A ń bá a lọ láti ṣiṣẹ́ lọ́nà méjèèjì. Ó ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀.
+set_sounds_note = Àwọn ohùn kúkúrú fún ìtẹ̀síwájú, ìfiránṣẹ́ tuntun, ìfiránṣẹ́, ìdáhùn tàbí àwọn ìgbésẹ̀ ìfiránṣẹ́ padà, ìparẹ́ àti àbájáde ìwá. Pa ń pa gbogbo ohùn nínú ohun èlò; àwọn ìkéde olùkàwé ojú ìwé àti ìlà ipò kò kan lọ́nà méjèèjì.
+set_desktop_notifications_note = Ìkìlọ̀ Windows fún ìdìpọ̀ ímeèlì tuntun kọ̀ọ̀kan, yàtọ̀ sí ohùn òkè. Pa ń pa á fún gbogbo àkọọ́lẹ̀; a tún lè dákẹ́ àkọọ́lẹ̀ kọ̀ọ̀kan fúnra rẹ̀ nínú Ètò àkọọ́lẹ̀ àti ìdánimọ̀.
+set_theme_note = Àwọn àkọ́lé àdáni jẹ́ àwọn fódà tí a gbé sínú fódà sounds ti ZBox, kọ̀ọ̀kan ń pèsè progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav àti none_found.wav tirẹ̀. Fáìlì àkọ́lé tó bá sọnù ń padà sí ohùn àtẹ̀wọ́.
+set_theme_note_only_default = Àwọn àkọ́lé àdáni jẹ́ àwọn fódà tí a gbé sínú fódà sounds ti ZBox, kọ̀ọ̀kan ń pèsè progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav àti none_found.wav tirẹ̀. Fáìlì àkọ́lé tó bá sọnù ń padà sí ohùn àtẹ̀wọ́. "default" nìkan ló wà títí ìwọ yóò fi fi fódà àkọ́lé mìíràn kún un.
+set_lock_note = Bíbẹ̀rẹ̀ ZBox yóò béèrè ọ̀kan nínú àwọn ọ̀nà ìṣísílẹ̀ rẹ kí a tó ṣí àkọọ́lẹ̀ kankan. Èyíkéyìí nínú wọn tó: kọ́kọ́rọ́ ìwọlé, kọ́kọ́rọ́ ààbò, tàbí ọ̀rọ̀ìpamọ́ àkọ́kọ́. Pípa sí àtẹ ètò kì í ṣe jáde, kì í sì ń tún tì; Fáìlì > Jáde àti Jáde ti àmì àtẹ ètò ló ń tì. Tí a kò bá ṣe ìforúkọsílẹ̀ nǹkan kan tí a kò sì ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́, a fò ìtìpa náà dípò kí a tì ọ́ jáde kúrò nínú ímeèlì rẹ.
+set_security_note = Ọ̀rọ̀ìpamọ́ àkọ́kọ́ nìkan ló ń fi àṣírí pa nǹkan nínú mẹ́ta náà: òun ló ń jẹ́ kí fódà yìí ṣí àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ lórí kọ̀ǹpútà mìíràn. Kọ́kọ́rọ́ ìwọlé tàbí kọ́kọ́rọ́ ààbò ń ṣí ohun èlò lórí èyí yìí nìkan. Kò sí èyíkéyìí tó rọ́pò ọ̀rọ̀ìpamọ́ àkọ́kọ́ lórí kọ̀ǹpútà tí a kò tíì lo ZBox lórí rẹ̀ rí.
+set_private_mode_note = A ń ka ìfiránṣẹ́ láti ọ̀dọ̀ olùpèsè a sì ń pa wọ́n mọ́ nínú ìrántí nìkan. A kò pa àwọn ẹ̀dà láìsí ayélujára, àwọn ìfiránṣẹ́ tí a fi pamọ́ tàbí àwọn àkọsílẹ̀ àtúnṣe àṣìṣe mọ́, a sì ń pa àwọn àfikún tí a ṣí àti dátà aṣàwákiri ímeèlì HTML rẹ́ nígbà tí ZBox bá tì. Títì ń parí gbogbo ètò tí ZBox bẹ̀rẹ̀ pẹ̀lú, pẹ̀lú àwọn tó ń fi àfikún hàn, ń sọ pátákó ìdàkọ di òfo, ó sì ń dáwọ́ gbígbẹ́kẹ̀lé kọ̀ǹpútà yìí dúró àyàfi tí a ṣí ipò àṣírí láti ibẹ̀. Windows ṣì ń pa àwọn àkọsílẹ̀ kan mọ́ tí kò sí ètò tó lè yọ kúrò, bíi àtòjọ àwọn díìsì USB rẹ̀, fáìlì ojú ìwé, àti àwọn àkọsílẹ̀ àntífáírọ́ọ̀sì àti nẹ́tíwọ́ọ̀kì.
+title_private_mode = Ipò àṣírí
+private_mode_need_master = Ipò àṣírí nílò ọ̀rọ̀ìpamọ́ àkọ́kọ́, nítorí pé ọ̀rọ̀ìpamọ́ àkọ́kọ́ nìkan ló ń ṣí àwọn àkọọ́lẹ̀ rẹ lórí kọ̀ǹpútà tí kì í ṣe tìrẹ. Ṣètò ọ̀kan pẹ̀lú bọ́tìnì Ọ̀rọ̀ìpamọ́ àkọ́kọ́, lẹ́yìn náà mú ipò àṣírí ṣiṣẹ́.
+private_mode_enter_master = Tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ sí i láti mú ipò àṣírí ṣiṣẹ́.
+private_mode_confirm = Ipò àṣírí kò ní pa ẹ̀dà ímeèlì rẹ mọ́ sórí kọ̀ǹpútà yìí tàbí sórí díìsì tí ZBox ń ṣiṣẹ́ lórí rẹ̀. Mímú un ṣiṣẹ́ ń pa àwọn ẹ̀dà ZBox láìsí ayélujára, àwọn ìfiránṣẹ́ tí a fi pamọ́, àwọn àfikún tí a ṣí, dátà aṣàwákiri ímeèlì HTML àti àwọn àkọsílẹ̀ àtúnṣe àṣìṣe rẹ́. A kò pa nǹkan kan lórí àwọn olùpèsè ímeèlì rẹ rẹ́, a sì pa àwọn àkọọ́lẹ̀, àwọn olùbáṣepọ̀ àti àwọn ètò rẹ mọ́. Mú ipò àṣírí ṣiṣẹ́?
+set_minimize_note = Dídín ZBox ń fi bọ́tìnì pẹpẹ iṣẹ́ rẹ̀ pamọ́, ó sì ń jẹ́ kí ó máa ṣiṣẹ́ lẹ́yìn àmì àtẹ ètò. Tẹ àmì àtẹ ètò ní òsì (tàbí Enter/Space nígbà tó bá ní ìfọkànsí kọ̀ǹpútà) láti mú fèrèsé padà wá.
+set_close_note = Bọ́tìnì Pa ti fèrèsé, Alt+F4, àti Ctrl+W tí a tẹ̀ lórí táàbù Ímeèlì ń fi ZBox pamọ́ sí àtẹ ètò dípò jíjáde. Fáìlì > Jáde (Ctrl+Shift+Q) àti ohun Jáde ti àmì àtẹ ètò fúnra rẹ̀ ń jáde kúrò nínú ZBox ní ti gidi lọ́nà méjèèjì, nítorí náà ọ̀nà kọ̀ǹpútà kan máa ń wà láti jáde láìfọwọ́ kan àtẹ ètò.
+set_stay_maximized_note = ZBox ń bẹ̀rẹ̀ ní ìwọ̀n kíkún, a sì tún dá a padà sí ìwọ̀n kíkún tí o bá dín un kù. Ìlà àtòjọ àṣàyàn, ìlà àkọlé àti ààlà fèrèsé kò kan -- èyí kì í ṣe ipò ojú-ìbòjú kíkún tí kò ní ààlà, nítorí náà gbogbo ọ̀nà abuja àtòjọ àṣàyàn Alt ń ṣiṣẹ́.
+set_run_at_startup_note = Ó ń bẹ̀rẹ̀ ZBox láìfọwọ́yí nígbà tí o bá wọlé sí Windows, ó ń ṣí tààrà sí àtẹ ètò dípò fífi fèrèsé rẹ̀ hàn. Ó ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀, kì í ṣe ní ìbẹ̀rẹ̀ tó kàn nìkan.
+set_desktop_shortcut_note = Ó ń fi ọ̀nà abuja ZBox sórí tábìlì rẹ, ó ń rọ́pò èyí tó ti wà níbẹ̀. Ọ̀nà abuja ń tọ́jú ibi gangan fódà ZBox yìí, nítorí náà tí o bá gbé tàbí dàkọ ZBox sí ibòmíràn, tẹ èyí lẹ́ẹ̀kan sí i lórí ẹ̀dà tuntun láti tọ́ka ọ̀nà abuja orí tábìlì sí i. Ó ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀, kò sì dúró de OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Orúkọ
+ab_phone = Fóònù
+ab_notes = Àkíyèsí
+ab_heading = Ìwé àdírẹ́sì
+ab_contacts = Àwọn olùbáṣepọ̀
+ab_new = &Tuntun...
+ab_edit = &Ṣàtúnṣe...
+ab_delete = &Parẹ́
+ab_import = &Kó wọlé...
+ab_export = &Kó jáde...
+ab_groups_label = Àwọn ẹgbẹ́ (àwọn àtòjọ ímeèlì)
+ab_groups_name = Àwọn ẹgbẹ́
+ab_new_group = &Ẹgbẹ́ tuntun...
+ab_rename_group = &Tún ẹgbẹ́ sọ̀rọ̀...
+ab_delete_group = &Pa ẹgbẹ́ rẹ́
+ab_manage_members = &Ṣàkóso àwọn ọmọ ẹgbẹ́...
+ab_all_contacts = Gbogbo olùbáṣepọ̀
+ab_add_member = Fi kún un >>
+ab_remove_member = << Yọ kúrò
+ab_members_of = Àwọn ọmọ ẹgbẹ́ {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Kò sí nínú ìwé atúmọ̀ èdè:
+sp_not_in_dictionary_name = Kò sí nínú ìwé atúmọ̀ èdè
+sp_in_this_line_label = Nínú ìlà yìí:
+sp_in_this_line_name = Nínú ìlà yìí
+sp_suggestions_label = &Àwọn àbá:
+sp_suggestions_name = Àwọn àbá
+sp_replace_with_label = &Rọ́pò pẹ̀lú:
+sp_replace_with_name = Rọ́pò pẹ̀lú
+sp_replace = &Rọ́pò
+sp_replace_all = &Rọ́pò gbogbo rẹ̀
+sp_ignore = &Kọbi ara sí
+sp_ignore_all = &Kọbi ara sí gbogbo rẹ̀
+sp_add_to_dictionary = &Fi kún ìwé atúmọ̀ èdè
+btn_close = &Pa
+
+# Privacy and Content Blocking.
+priv_remote_label = Àkóónú láti jìnnà nínú àwọn ìfiránṣẹ́:
+priv_block_remote = &Dènà àkóónú láti jìnnà títí tí èmi yóò fi béèrè rẹ̀ (a dámọ̀ràn)
+priv_blocklist_label = Àtòjọ ìdènà ìpolówó àti olùtọpa:
+priv_block_known = &Dènà àwọn àkọsílẹ̀ àgbègbè ìpolówó àti olùtọpa tí a mọ̀
+priv_update_daily = &Ṣàtúnṣe àtòjọ lójoojúmọ́ lẹ́yìn
+priv_update_now = &Ṣàtúnṣe báyìí
+priv_junk_label = Àwọn òfin ímeèlì àwúrúju:
+priv_check_inbox = &Ṣàyẹ̀wò ímeèlì Àpótí gbígbà tuntun lòdì sí àwọn olùfiránṣẹ́ tí a dènà àti àwọn ìsopọ̀ ìtànjẹ tí a mọ̀
+priv_move_blocked = &Gbé ímeèlì láti àwọn olùfiránṣẹ́ tí a dènà lọ sí Àwúrúju láìfọwọ́yí
+priv_update_phishing = &Ṣàtúnṣe àtòjọ ìtànjẹ báyìí
+priv_blocked_label = Àwọn olùfiránṣẹ́ tí a dènà:
+priv_blocked_name = Àwọn olùfiránṣẹ́ tí a dènà
+priv_remove_blocked = &Yọ olùfiránṣẹ́ tí a dènà kúrò
+priv_never_junk_label = Àwọn olùfiránṣẹ́ tí a kì í kà sí àwúrúju láéláé:
+priv_never_junk_name = Àwọn olùfiránṣẹ́ tí a kì í kà sí àwúrúju láéláé
+priv_remove_never_junk = &Yọ olùfiránṣẹ́ tí kì í ṣe àwúrúju kúrò
+priv_allowed_label = Àwọn olùfiránṣẹ́ tí a gbà láàyè láti gbé àkóónú láti jìnnà wá:
+priv_allowed_name = Àwọn olùfiránṣẹ́ tí a gbà láàyè
+priv_remove_selected = &Yọ olùfiránṣẹ́ tí a yàn kúrò
+
+# Message Filters.
+filt_rule_name = Orúkọ òfin
+filt_enabled = &Ó ń ṣiṣẹ́
+filt_match_label = Ìbámu:
+filt_match_all = &Bá gbogbo àwọn tó tẹ̀lé e mu (ÀTI)
+filt_match_any = &Bá èyíkéyìí nínú àwọn tó tẹ̀lé e mu (TÀBÍ)
+filt_conditions_label = Àwọn àmì ìpín (fi iye sílẹ̀ ní òfo láti fò ó):
+filt_condition_field = Pápá àmì ìpín {number}
+filt_condition_contains = Àmì ìpín {number} ní nínú
+filt_actions_label = Àwọn ìgbésẹ̀:
+filt_mark_read = &Sàmì sí tí a ti kà
+filt_flag = &Sàmì ìràwọ̀ sí ìfiránṣẹ́
+filt_move_label = Gbé lọ sí fódà:
+filt_move_name = Gbé lọ sí fódà
+filt_rules_name = Àwọn òfin àlẹ̀mọ́
+filt_new = &Òfin tuntun...
+filt_edit = &Ṣàtúnṣe òfin...
+filt_delete = &Pa òfin rẹ́
+filt_up = &Gbé sókè
+filt_down = &Gbé sísàlẹ̀
+filt_run_label = Ṣiṣẹ́ báyìí lórí fódà:
+filt_run_name = Fódà Ṣiṣẹ́ báyìí
+filt_run_now = &Ṣiṣẹ́ báyìí
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Ṣí pẹ̀lú kọ́kọ́rọ́ ìwọlé (Windows Hello)
+unl_security_key = &Ṣí pẹ̀lú kọ́kọ́rọ́ ààbò
+unl_master_password_label = &Ọ̀rọ̀ìpamọ́ àkọ́kọ́:
+unl_master_password_name = Ọ̀rọ̀ìpamọ́ àkọ́kọ́
+unl_unlock = &Ṣí
+unl_exit = &Jáde kúrò nínú ZBox
+unl_methods_label = &Àwọn ọ̀nà tí a forúkọ sílẹ̀:
+unl_methods_name = Àwọn ọ̀nà ìṣísílẹ̀ tí a forúkọ sílẹ̀
+unl_add_passkey = &Fi kọ́kọ́rọ́ ìwọlé kún un…
+unl_add_key = &Fi kọ́kọ́rọ́ ààbò kún un…
+unl_reassign = &Tún kọ́kọ́rọ́ ìwọlé yàn fún kọ̀ǹpútà yìí…
+unl_test = &Dán wò…
+unl_remove = &Yọ kúrò
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Láti ọ̀dọ̀
+comp_to = Sí
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Kókó
+comp_attach_button = Fi fáìlì kún un...
+comp_sending = À ń fi ránṣẹ́...
+comp_report_label = &Ìròyìn:
+comp_report_name = Ìròyìn
+comp_refresh = &Ṣàtúnṣe
+comp_copy = &Dàkọ
+comp_preview_read = Bí olùgbà ṣe ń kà á
+comp_preview_source = HTML tí a ó fi ránṣẹ́
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Ọ̀rọ̀ ìfiránṣẹ́
+mv_blocked_notice = Ìkìlọ̀ àkóónú tí a dènà
+mv_show_remote = &Fi àkóónú láti jìnnà hàn
+mv_always_allow = &Máa gba olùfiránṣẹ́ yìí láàyè nígbà gbogbo
+mv_message_headers = Àwọn àkọlé ìfiránṣẹ́
+mv_attachments = Àwọn àfikún
+mv_attachments_count = Àwọn àfikún ({count})
+mv_save_attachment = Fi pamọ́: {filename}
+mv_save_all = Fi gbogbo rẹ̀ pamọ́
+mv_html_view = Ìwò HTML ìfiránṣẹ́
+mv_saved_message = Ìfiránṣẹ́ tí a fi pamọ́
+mv_show_remote_tip = Tún ìfiránṣẹ́ yìí gbé wá pẹ̀lú àwọn àwòrán àti ìrísí rẹ̀ láti jìnnà. Àwọn olùtọpa tí a mọ̀ ṣì wà ní dídènà.
+mv_always_allow_tip = Gbé àkóónú láti jìnnà wá nínú gbogbo ìfiránṣẹ́ láti ọ̀dọ̀ {sender}.
+
+# The search tab.
+srch_account = Àkọọ́lẹ̀
+srch_folder = Fódà
+srch_for = Wá
+srch_look_in = Wá nínú
+srch_in_all = Gbogbo rẹ̀
+srch_in_subject = Kókó
+srch_in_from = Láti ọ̀dọ̀
+srch_in_to = Sí
+srch_in_body = Ọ̀rọ̀ ìfiránṣẹ́
+srch_date = Ọjọ́
+srch_date_any = Àkókò èyíkéyìí
+srch_date_today = Òní
+srch_date_yesterday = Àná
+srch_date_week = Ọjọ́ 7 tó kọjá
+srch_date_month = Ọjọ́ 30 tó kọjá
+srch_date_year = Ọdún yìí
+srch_date_custom = Àyè àdáni
+srch_from_date = Láti ọjọ́ (ọdún-oṣù-ọjọ́, àkókò tí kò pọn dandan)
+srch_to_date = Títí dé ọjọ́ (ọdún-oṣù-ọjọ́, àkókò tí kò pọn dandan)
+srch_unread = Èyí tí a kò tíì kà nìkan
+srch_flagged = Èyí tí a sàmì ìràwọ̀ nìkan
+srch_attachment = Ó ní àfikún
+
+# The signature editor.
+sig_editors = Àwọn olùṣàtúnṣe ìbuwọ́lù
+sig_formatted = Ìbuwọ́lù, tí a ṣètò
+sig_source = Ìbuwọ́lù, orísun HTML
+sig_plain_label = Ọ̀rọ̀ lásán yíyàn (a fi ránṣẹ́ pẹ̀lú HTML)
+sig_plain_name = Ọ̀rọ̀ lásán yíyàn
+
+# About ZBox.
+about_text_name = Ọ̀rọ̀ nípa ZBox
+about_view_license = &Wo ìwé àṣẹ...
+about_google = &Àwọn ọ̀rọ̀ìpamọ́ ohun èlò Google...
+about_support = &Ṣe àtìlẹ́yìn fún ZBox -- Ìdàgbàsókè àti ìtọ́jú ẹni kan
+about_repos = &Àwọn ibi ìkópamọ́ ohun èlò Harith lórí GitHub
+about_contact = &Kàn sí Harith
+btn_close_plain = Pa
+btn_cancel_plain = Fagilé
+
+# The license window.
+eula_heading = Ìwé àṣẹ ZBox
+eula_text_name = Ọ̀rọ̀ ìwé àṣẹ ZBox
+eula_third_party = Àwọn ojú ìwé ìwé àṣẹ èròjà ẹgbẹ́ kẹta:
+eula_agree = &Mo gbà pẹ̀lú àwọn òfin òkè
+eula_agree_name = Mo ti ka mo sì gbà pẹ̀lú àwọn òfin ìwé àṣẹ ZBox
+eula_disagree = &Mi ò gbà
+eula_next = &Tó kàn
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Ọ̀rọ̀ ìwé àlàyé ZBox
+doc_copy = Dàkọ sí pátákó ìdàkọ
+shortcuts_heading = Àwọn ọ̀nà abuja bọ́tìnì
+shortcuts_text_name = Ọ̀rọ̀ àwọn ọ̀nà abuja bọ́tìnì
+
+# The main window's own panes.
+mf_toolbar = Pẹpẹ irinṣẹ́ pàtàkì
+mf_tabs = Àwọn táàbù ZBox
+tree_heading = Àwọn àkọọ́lẹ̀ àti fódà
+tree_name = Igi àkọọ́lẹ̀ àti fódà
+envlist_heading = Àwọn ìfiránṣẹ́
+envlist_name = Àtòjọ ìfiránṣẹ́
+rdr_heading = Ìfiránṣẹ́
+rdr_name = Olùkàwé ìfiránṣẹ́
+conv_heading_one = Ìjíròrò: ìfiránṣẹ́ 1
+conv_heading_many = Ìjíròrò: ìfiránṣẹ́ {count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} nínú {total} ti parí.
+bulk_cancelling = À ń fagilé -- à ń parí ìfiránṣẹ́ lọ́wọ́lọ́wọ́...
+cache_clear_now = Pa ibi ìkópamọ́ ìfiránṣẹ́ láìsí ayélujára rẹ́ báyìí... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, tí a dáàbò bò
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Orúkọ ìfihàn kò pọn dandan -- fi sílẹ̀ ní òfo láti fi ránṣẹ́ pẹ̀lú orúkọ àkọọ́lẹ̀ yìí.
+acct_note_identity = Àdírẹ́sì ímeèlì lè yàtọ̀ sí ímeèlì ìwọlé tí olùpèsè rẹ bá ní àgbègbè àdáni tí a so mọ́ àpótí ímeèlì yìí. A ó fi ímeèlì ránṣẹ́ kí a sì gbà á lábẹ́ àdírẹ́sì òkè, nígbà tí ìwọlé ṣì ń lo ímeèlì ìwọlé. Fi pápá ọ̀rọ̀ìpamọ́ sílẹ̀ ní òfo láti pa ọ̀rọ̀ìpamọ́ tí a ti fi pamọ́ fún àkọọ́lẹ̀ yìí mọ́ -- fún àpẹẹrẹ lẹ́yìn yíyí ọ̀rọ̀ìpamọ́ ohun èlò Gmail padà, tẹ tuntun síbí; bí kò bá rí bẹ́ẹ̀, fi sílẹ̀ ní òfo.
+acct_note_identities = Àwọn àdírẹ́sì mìíràn tí àkọọ́lẹ̀ yìí lè fi ránṣẹ́ kí ó sì dáhùn bí. Dídáhùn sí ìfiránṣẹ́ tí a fi ránṣẹ́ sí ọ̀kan nínú wọn ń mú Láti ọ̀dọ̀ lọ sí àdírẹ́sì yẹn dípò èyí tó wà lókè.
+acct_note_signature = A fi kún gbogbo ìfiránṣẹ́ tuntun, ìdáhùn àti ìfiránṣẹ́ padà tí a fi ránṣẹ́ láti àkọọ́lẹ̀ yìí, lábẹ́ ìlà "-- ". Fi sílẹ̀ ní òfo fún kò sí. Ṣàtúnṣe ìbuwọ́lù ń ṣí olùṣàtúnṣe tí a ṣètò níbi tí dúdú gbòòrò, àwọn àtòjọ àti àwọn ìsopọ̀ wà; àpótí òkè ń ní ẹ̀dà ọ̀rọ̀ lásán tó ń jáde pẹ̀lú rẹ̀.
+acct_note_junk = Fódà gidi wo ni Sàmì sí àwúrúju ń gbé ìfiránṣẹ́ lọ sí. "{automatic}" ń lo ìfojúsùn kan náà tí Ìpamọ́ àti Àpótí ìdọ̀tí ti ń lò tẹ́lẹ̀; ṣètò èyí tí ìfojúsùn yẹn bá jẹ́ àṣìṣe tàbí tí fódà àwúrúju rẹ bá ní orúkọ àdáni.
+acct_note_disable = A kì í kàn sí àkọọ́lẹ̀ tí a dá dúró láéláé -- kò sí IDLE, kò sí ìṣàtúnṣe déédéé, kò sí nǹkan kan -- títí tí a ó fi tún mú un ṣiṣẹ́. Ó ṣì ń hàn nínú igi, tí a sàmì (tí a dá dúró), àti ímeèlì tí a ti gbà ṣì wà láìsí ayélujára. Ọ̀nà kan náà bí Àkọọ́lẹ̀ > Dá àkọọ́lẹ̀ dúró tàbí àtòjọ àyíká àkọọ́lẹ̀ fúnra rẹ̀; èyí kàn jẹ́ ibi mìíràn láti dé ọ.
+acct_note_default = Àwọn fódà àkọọ́lẹ̀ yìí ń hàn ní àkọ́kọ́ nínú igi, ìfiránṣẹ́ tuntun sì ń fi ránṣẹ́ láti ọ̀dọ̀ rẹ̀ àyàfi tí a bá yí i padà pẹ̀lú ọwọ́ nínú olùkọ̀wé. Kò kan àdírẹ́sì tí ìdáhùn tàbí ìfiránṣẹ́ padà ń lò -- èyí ti ń tẹ̀lé ìfiránṣẹ́ tí à ń dáhùn (wo Àwọn ìdánimọ̀ àfikún lókè). Àkọọ́lẹ̀ àtẹ̀wọ́ kan ló wà nígbà gbogbo, nítorí náà yíyọ àmì èyí kúrò lórí àtẹ̀wọ́ lọ́wọ́lọ́wọ́ láìsí àmì lórí òmíràn ń fi í sílẹ̀ bí ó ṣe wà -- dípò bẹ́ẹ̀ yan àpótí àkọọ́lẹ̀ mìíràn láti fi àtẹ̀wọ́ lé e lọ́wọ́.
+acct_note_mute = &Dídákẹ́ ń dènà ohùn ímeèlì tuntun, ìkéde ohùn àti ìkìlọ̀ Windows ti àkọọ́lẹ̀ yìí, láìka bí a ṣe ṣètò wọn sí. Kò kan àwọn àkọọ́lẹ̀ mìíràn, ó sì ṣì wà lábẹ́ àwọn bọ́tìnì pàtàkì nínú Ètò > Ohùn àti àwọn ìkìlọ̀ (àwọn ohùn àti àwọn ìkìlọ̀ orí tábìlì lápapọ̀).
+wiz_note_app_password = Tí o bá ti ní ọ̀rọ̀ìpamọ́ ohun èlò tí a ṣẹ̀dá fún ZBox, tẹ Tó kàn láti tẹ̀síwájú.
+wiz_note_login = Ẹ̀rí ìwọlé.\nTí ímeèlì ìwọlé rẹ bá yàtọ̀ sí àdírẹ́sì òkè, fún àpẹẹrẹ àkọọ́lẹ̀ olùpèsè rẹ jẹ́ login@example.net ṣùgbọ́n o fẹ́ fi ránṣẹ́ kí o sì gbà gẹ́gẹ́ bí you@example.org, tẹ ímeèlì ìwọlé síbí. O lè ṣètò àdírẹ́sì ìfiránṣẹ́ àdáni lẹ́yìn náà nínú Ètò àkọọ́lẹ̀ àti ìdánimọ̀.
+wiz_note_servers = Ètò olùpèsè, tí a ti kún tẹ́lẹ̀ níbi tí a ti mọ àgbègbè. Ṣàtúnṣe ohunkóhun tó nílò láti yàtọ̀.
+wiz_preset_none = A kò rí ètò àtẹ̀wọ́ fún àgbègbè yìí. Tẹ ètò olùpèsè rẹ pẹ̀lú ọwọ́; àwọn ojú ìwé ìrànlọ́wọ́ olùpèsè rẹ yóò ṣàkójọ wọn.
+ab_note_groups = Tẹ orúkọ ẹgbẹ́ kan sínú pápá Sí, Cc tàbí Bcc fèrèsé kíkọ láti kún gbogbo àwọn ọmọ ẹgbẹ́ rẹ̀ lẹ́ẹ̀kan náà.
+cache_note_intro = Àwọn wọ̀nyí ń yọ àwọn ẹ̀dà ZBox lórí kọ̀ǹpútà nìkan kúrò. A kò pa nǹkan kan rẹ́ lórí olùpèsè ímeèlì kankan, a ó sì tún gba ìfiránṣẹ́ tí a yọ kúrò nígbà tí o bá tún ṣí i.
+cache_note_age = Ìmọ́tótó láìfọwọ́yí ń ṣiṣẹ́ lẹ́ẹ̀kan lójúmọ́, nígbà tí ZBox kò bá ní ìṣe bọ́tìnì fún ìṣẹ́jú mẹ́wàá tí kò sì sí ìfiránṣẹ́ tí a ṣí. Ó ń tẹ̀lé ọjọ́ ìfiránṣẹ́ kọ̀ọ̀kan, pẹ̀lú àwọn ìfiránṣẹ́ tó ṣì wà nínú àkọọ́lẹ̀ rẹ.
+filt_note_intro = Àwọn òfin ń ṣiṣẹ́ ní ìtẹ̀léra, láti òkè dé ìsàlẹ̀, tí ń dán Láti ọ̀dọ̀, Sí àti Kókó wò. A ń lò wọ́n láìfọwọ́yí sí ímeèlì tuntun bí ó ṣe ń dé Àpótí gbígbà àkọọ́lẹ̀ yìí; lo Ṣiṣẹ́ báyìí nísàlẹ̀ láti lò wọ́n sí àwọn ìfiránṣẹ́ tó ti wà nínú fódà.
+filt_note_run_now = Ó ń lo gbogbo òfin tó ń ṣiṣẹ́ lókè, ní ìtẹ̀léra, sí gbogbo ìfiránṣẹ́ tó ti wà nínú fódà tí a yàn -- ó ń kọ́kọ́ fi àwọn àyípadà rẹ pamọ́, bíi OK.
+mp_note_intro = A ṣètò àwọn àkọọ́lẹ̀ wọ̀nyí lórí kọ̀ǹpútà mìíràn. Tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ sí i láti ṣí àwọn ọ̀rọ̀ìpamọ́ wọn tí a fi pamọ́ níbí. A ó béèrè lọ́wọ́ rẹ lẹ́ẹ̀kan lórí kọ̀ǹpútà yìí.\n\nLáìsí rẹ̀, àkọọ́lẹ̀ kọ̀ọ̀kan ní láti wọlé sí olùpèsè ímeèlì rẹ̀ lẹ́ẹ̀kan sí i.
+priv_note_remote = Àwọn àwòrán, ìrísí àti àwọn ọ̀rọ̀ tí ìfiránṣẹ́ ń gbé wá láti ayélujára ń sọ fún olùfiránṣẹ́ ní àkókò tí o ṣí i, àti láti ibo. Pẹ̀lú èyí ní ṣíṣe, kò sí èyíkéyìí tó ń gbé wá: ìkìlọ̀ kan yóò fara hàn lókè ìfiránṣẹ́ tó sọ ohun tí a dènà, Ctrl+Shift+I sì ń gbé e wá fún ìfiránṣẹ́ yẹn nìkan. Àwọn àwòrán tí a so mọ́ ìfiránṣẹ́ fúnra rẹ̀ máa ń hàn nígbà gbogbo. A ń yọ àwọn àkọsílẹ̀ àti àwọn férémù tí a fi sínú rẹ̀ kúrò lọ́nà méjèèjì, a kì í sì í gbé wọn wá láéláé.
+priv_note_blocklist = Èyí ni ìpele kejì. Ó ṣe pàtàkì nígbà tí o bá gbé àkóónú ìfiránṣẹ́ láti jìnnà wá, tàbí gba olùfiránṣẹ́ láàyè: àwọn àwòrán ń gbé wá, ṣùgbọ́n ohunkóhun tí a pèsè láti àgbègbè olùtọpa tàbí ìpolówó tí a mọ̀ ṣì kò ní gbé wá. A ń gba àtòjọ náà láti inú àwọn àtòjọ ìpolówó àti olùtọpa gbogbogbòò a sì ṣàpapọ̀ wọn; ṣíṣàtúnṣe ń gba ìṣẹ́jú àáyá kan tàbí méjì ó sì ń ṣiṣẹ́ lẹ́yìn.
+priv_note_junk = Kò sí àròsọ. Sàmì sí àwúrúju ń fi olùfiránṣẹ́ kún àtòjọ tí a dènà nísàlẹ̀, àyàfi tí ìfiránṣẹ́ bá gba àtòjọ ímeèlì wá. Sàmì sí kì í ṣe àwúrúju ń fi olùfiránṣẹ́ kún àtòjọ tí kì í ṣe àwúrúju láéláé, a kò sì ní ṣàyẹ̀wò ìfiránṣẹ́ yẹn mọ́. A ń sàmì ìfiránṣẹ́ tuntun láti ọ̀dọ̀ olùfiránṣẹ́ tí a dènà bí Olùfiránṣẹ́ tí a dènà nínú àtòjọ; èyí tó ní ìsopọ̀ sí ojúlé ìtànjẹ tàbí màlíwia tí a mọ̀ ni a ń sàmì bí Ó lè jẹ́ ìtànjẹ. Ìṣàlẹ̀mọ́ àwúrúju olùpèsè ímeèlì rẹ ṣì ń ṣiṣẹ́ bíi tẹ́lẹ̀.
+priv_status_phishing_updating = Àtòjọ ìtànjẹ: ń ṣàtúnṣe lẹ́yìn. Tún ṣí fèrèsé yìí láti rí àbájáde.
+priv_status_updating = Ń ṣàtúnṣe lẹ́yìn. Tún ṣí fèrèsé yìí láti rí àbájáde.
+rel_note_intro = Àwọn ìfiránṣẹ́ tó jọmọ "{subject}" nípasẹ̀ àwọn àkọlé Message-ID/References wọn, káàkiri gbogbo fódà nínú àkọọ́lẹ̀ yìí.
+srch_note_intro = Wá àwọn ọ̀rọ̀ nínú gbogbo àkọọ́lẹ̀ àti fódà, tàbí dín ìwádìí náà kù pẹ̀lú àwọn àṣàyàn nísàlẹ̀. Fi àwọn ọ̀rọ̀ sílẹ̀ ní òfo láti wá àwọn ìfiránṣẹ́ nípasẹ̀ ọjọ́ tàbí àpótí àmì nìkan.
+sig_note_plain = Fi ọ̀rọ̀ lásán yíyàn sílẹ̀ ní òfo a ó sì kọ ọ́ láti inú ìbuwọ́lù tí a ṣètò nígbà tí o bá tẹ Fi pamọ́.
+unified_note_intro = Yan àwọn fódà tí a ó papọ̀ káàkiri gbogbo àkọọ́lẹ̀. Èyí tí a sàmì kọ̀ọ̀kan di ohun kan ṣoṣo nínú igi tó ń papọ̀ fódà yẹn láti gbogbo àwọn àkọọ́lẹ̀ rẹ.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Nípa ZBox
+title_account_settings = Ètò àkọọ́lẹ̀ àti ìdánimọ̀: {name}
+title_new_account = Àkọọ́lẹ̀ tuntun
+title_address_book = Ìwé àdírẹ́sì
+title_members = Àwọn ọmọ ẹgbẹ́: {name}
+ab_group_name_prompt = Orúkọ ẹgbẹ́:
+title_new_group = Ẹgbẹ́ tuntun
+title_cache_cleanup = Ètò ìmọ́tótó ibi ìkópamọ́
+cache_age_prompt = Yọ àwọn ìfiránṣẹ́ tí a kó pamọ́ tó dàgbà ju èyí lọ kúrò láìfọwọ́yí:
+title_automatic_cleanup = Ìmọ́tótó láìfọwọ́yí
+comp_link_prompt = Àdírẹ́sì ìsopọ̀:
+title_insert_link = Fi ìsopọ̀ sí i
+title_composer_diagnostics = Àyẹ̀wò akọ̀wé
+title_formatted_preview = Àyẹ̀wò tí a ṣètò
+title_license_agreement = Àdéhùn ìwé àṣẹ ZBox
+title_message_filters = Àwọn àlẹ̀mọ́ ìfiránṣẹ́: {account}
+title_master_password_required = A nílò ọ̀rọ̀ìpamọ́ àkọ́kọ́
+title_privacy_dialog = Àṣírí àti ìdènà àkóónú
+title_privacy = Àṣírí
+title_settings = Ètò
+set_tab_general = Gbogbogbò
+set_tab_personalization = Ìṣàdánitò
+set_tab_accessibility = Ìráyè àti àwọn bọ́tìnì ọ̀nà abuja
+set_tab_maintenance = Ìtọ́jú àti ìmọ́tótó
+set_tab_sounds = Ohùn àti àwọn ìkìlọ̀
+set_tab_security = Ààbò
+title_unified_folders = Àwọn fódà àpapọ̀
+title_zbox_locked = A ti ti ZBox
+title_message_view = Ìwò ìfiránṣẹ́
+title_remote_content = Àkóónú láti jìnnà
+title_refresh = Ṣàtúnṣe
+title_refresh_all = Ṣàtúnṣe gbogbo rẹ̀
+mv_choose_folder = Yan fódà láti fi àfikún pamọ́ sí
+title_thread = Ìtẹ̀léra
+title_inbox = Àpótí gbígbà
+title_compose = Kíkọ
+title_watch_thread = Tọ́jú ìtẹ̀léra
+title_ignore_thread = Kọbi ara sí ìtẹ̀léra
+title_edit_signature = Ṣàtúnṣe ìbuwọ́lù
+title_account = Àkọọ́lẹ̀
+mf_folder_name_prompt = Orúkọ fódà:
+mf_new_name_prompt = Orúkọ tuntun:
+title_refresh_all_accounts = Ṣàtúnṣe gbogbo àkọọ́lẹ̀
+title_sender = Olùfiránṣẹ́
+title_new_mail = Ímeèlì tuntun
+mf_export_dialog_title = Kó gbogbo àkọọ́lẹ̀ {count} àti àwọn ètò jáde
+mf_related_tab = Tó jọmọ: {subject}
+title_hotkeys_diagnostic = Àyẹ̀wò bọ́tìnì kíákíá
+set_choose_attachment_dir = Yan fódà ìfipamọ́ àfikún
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = A ti ti ZBox. Lo èyíkéyìí nínú àwọn ọ̀nà tó wà nísàlẹ̀ láti ṣí i. Fífagilé ń ti ZBox láìṣí àkọọ́lẹ̀ kankan.
+unl_note_foreign_passkey = Kọ́kọ́rọ́ ìwọlé tí a fi pamọ́ pẹ̀lú fódà yìí jẹ́ ti kọ̀ǹpútà mìíràn, nítorí náà a kò lè lò ó níbí. Ṣí pẹ̀lú kọ́kọ́rọ́ ààbò tàbí ọ̀rọ̀ìpamọ́ àkọ́kọ́ rẹ, lẹ́yìn náà lo Ètò, Ààbò, Àwọn ọ̀nà ìṣísílẹ̀ láti ṣètò kọ́kọ́rọ́ ìwọlé lórí kọ̀ǹpútà yìí.
+unl_note_methods = Èyíkéyìí nínú àwọn wọ̀nyí ń ṣí ZBox nígbà tí ìtìpa ohun èlò bá ṣiṣẹ́, pẹ̀lú ọ̀rọ̀ìpamọ́ àkọ́kọ́. Kọ́kọ́rọ́ ìwọlé ń lo Windows Hello lórí kọ̀ǹpútà yìí; kọ́kọ́rọ́ ààbò jẹ́ kọ́kọ́rọ́ FIDO2 lórí USB tàbí NFC ó sì ń ṣiṣẹ́ lórí kọ̀ǹpútà èyíkéyìí tí o bá so mọ́.
+unl_note_not_encryption = Àwọn wọ̀nyí ń ṣí ohun èlò. Wọn kì í fi àṣírí pa nǹkan kan: ọ̀rọ̀ìpamọ́ àkọ́kọ́ ṣì ni ohun kan ṣoṣo tó lè ṣí àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ lórí kọ̀ǹpútà tí a kò tíì lo fódà yìí lórí rẹ̀. A gbọ́dọ̀ ṣètò rẹ̀ ná, a kò sì lè fi èyíkéyìí nínú wọn kún un títí di ìgbà náà.
+unl_add_passkey_unavailable = &Fi kọ́kọ́rọ́ ìwọlé kún un (kò sí)
+unl_add_key_unavailable = &Fi kọ́kọ́rọ́ ààbò kún un (kò sí)
+unl_reassign_unavailable = &Tún kọ́kọ́rọ́ ìwọlé yàn fún kọ̀ǹpútà yìí (kò sí)
+unl_status_cancelled_passkey = A fagilé kọ́kọ́rọ́ ìwọlé. A ṣì ti ZBox.
+unl_status_cancelled_key = A fagilé kọ́kọ́rọ́ ààbò. A ṣì ti ZBox.
+unl_status_enter_password = Tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ sí i.
+unl_status_no_master = A kò ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́, nítorí náà a kò lè fi kọ́kọ́rọ́ ìwọlé tàbí kọ́kọ́rọ́ ààbò kún un síbẹ̀. Ṣètò ọ̀kan pẹ̀lú bọ́tìnì Ọ̀rọ̀ìpamọ́ àkọ́kọ́ nínú Ètò, Ààbò, lẹ́yìn náà padà síbí. Ọ̀rọ̀ìpamọ́ àkọ́kọ́ ni ohun tó ń ṣí àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ rẹ tí a fi pamọ́ lórí kọ̀ǹpútà mìíràn; kọ́kọ́rọ́ ìwọlé ń ṣí ohun èlò lórí èyí yìí nìkan, nítorí náà kò lè dúró fúnra rẹ̀.
+unl_status_unsupported = Windows kọ̀ǹpútà yìí kò ṣe àtìlẹ́yìn fún àwọn kọ́kọ́rọ́ ìwọlé tàbí kọ́kọ́rọ́ ààbò, nítorí náà ọ̀rọ̀ìpamọ́ àkọ́kọ́ nìkan ló lè ṣí ZBox níbí.
+unl_status_foreign_one = Kọ́kọ́rọ́ ìwọlé 1 jẹ́ ti kọ̀ǹpútà mìíràn kò sì lè ṣí ZBox níbí. Títún yàn ń rọ́pò wọn pẹ̀lú ọ̀kan tí a ṣe lórí kọ̀ǹpútà yìí.
+unl_status_foreign_many = Àwọn kọ́kọ́rọ́ ìwọlé {count} jẹ́ ti kọ̀ǹpútà mìíràn wọn kò sì lè ṣí ZBox níbí. Títún yàn ń rọ́pò wọn pẹ̀lú ọ̀kan tí a ṣe lórí kọ̀ǹpútà yìí.
+unl_status_foreign_one_no_hello = Kọ́kọ́rọ́ ìwọlé 1 jẹ́ ti kọ̀ǹpútà mìíràn kò sì lè ṣí ZBox níbí. A kò ṣètò Windows Hello níbí, nítorí náà a kò lè rọ́pò wọn lórí kọ̀ǹpútà yìí; Yọ kúrò ń gbàgbé wọn.
+unl_status_foreign_many_no_hello = Àwọn kọ́kọ́rọ́ ìwọlé {count} jẹ́ ti kọ̀ǹpútà mìíràn wọn kò sì lè ṣí ZBox níbí. A kò ṣètò Windows Hello níbí, nítorí náà a kò lè rọ́pò wọn lórí kọ̀ǹpútà yìí; Yọ kúrò ń gbàgbé wọn.
+unl_status_no_hello = A kò ṣètò Windows Hello lórí kọ̀ǹpútà yìí, nítorí náà a kò lè fi kọ́kọ́rọ́ ìwọlé kún un níbí. Kọ́kọ́rọ́ ààbò ṣì lè wà.
+unl_status_none_registered = Kò tíì sí ọ̀nà ìṣísílẹ̀ tí a forúkọ sílẹ̀.
+unl_status_add_cancelled_passkey = A fagilé fífi kọ́kọ́rọ́ ìwọlé kún un.
+unl_status_add_cancelled_key = A fagilé fífi kọ́kọ́rọ́ ààbò kún un.
+unl_status_added = A ti fi kún un: {name}.
+unl_status_reassign_cancelled = A fagilé títún yàn. A kò yí nǹkan kan padà.
+unl_status_reassigned = A ti fi {name} kún un a sì ti gbàgbé {count} láti àwọn kọ̀ǹpútà mìíràn.
+unl_status_test_cancelled = A fagilé ìdánwò náà.
+unl_status_removed = A ti yọ kúrò.
+unl_remove_warning_last = Yọ {name} kúrò?\n\nÒun nìkan ni ọ̀nà ìṣísílẹ̀ tí a forúkọ sílẹ̀ a kò sì ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́, nítorí náà pẹ̀lú ìtìpa ohun èlò ní ṣíṣe, kò ní sí nǹkan kan tó kù láti fi ṣí ZBox. A fò ìtìpa náà dípò tí a ó fi tì ọ́ jáde, ṣùgbọ́n ZBox yóò wá ṣí láìsí ìtìpa.
+unl_remove_warning = Yọ {name} kúrò? ZBox kò ní gbà á mọ́.
+ab_col_email = Ímeèlì
+ab_col_name = Orúkọ
+ab_col_phone = Fóònù
+ab_no_contacts = Kò tíì sí olùbáṣepọ̀.
+acct_auto_check = Ṣàyẹ̀wò fún ìfiránṣẹ́ tuntun láìfọwọ́yí
+acct_note_auto_check = Pa: ZBox kì í kàn sí àkọọ́lẹ̀ yìí fúnra rẹ̀ láéláé -- kò sí ìtọ́jú ímeèlì tuntun, kò sí ìṣàtúnṣe àkókò, kò sí ìgbàsílẹ̀ lẹ́yìn -- nítorí náà olùpèsè tí kò ṣeé gbẹ́kẹ̀lé kò lè dín àwọn àkọọ́lẹ̀ mìíràn kù. Ímeèlì rẹ̀ tí a ti gbà ṣì ń ṣí, Ṣàtúnṣe (F5), fífiránṣẹ́ àti pípa rẹ́ sì ṣì ń dé ọ̀dọ̀ olùpèsè. Bákan náà bí Dá àyẹ̀wò láìfọwọ́yí dúró nínú àtòjọ Àwọn irinṣẹ́ tàbí àtòjọ àyíká àkọọ́lẹ̀.
+bl_day_ago = Ọjọ́ 1 sẹ́yìn
+bl_days_ago = Ọjọ́ {days} sẹ́yìn
+bl_label_blocklists = Àtòjọ ìdènà
+bl_label_phishing = Àtòjọ ìtànjẹ
+bl_last_failed = Ìgbìyànjú ìkẹyìn kùnà: %s
+bl_not_downloaded = A kò tíì gbà á.
+bl_save_failed = A gba %s ṣùgbọ́n a kò lè fi pamọ́: %s
+bl_seed_only = Àgbègbè %s láti inú àtòjọ tó wà nínú rẹ̀. A kò tíì ṣàtúnṣe rẹ̀ láti ayélujára rí.
+bl_some_failed = Àwọn orísun kan kùnà: %s
+bl_some_unreachable = A kò lè dé àwọn orísun kan: %s
+bl_status_line = Àgbègbè %s. Ìṣàtúnṣe ìkẹyìn %s.
+bl_up_to_date = %s ti jẹ́ ti òde òní tẹ́lẹ̀.
+bl_update_failed = A kò lè ṣàtúnṣe %s: %s
+bl_updated = A ti ṣàtúnṣe %s: àgbègbè %s.
+cc_age_choice = Gbogbo ibi ìkópamọ́ ìfiránṣẹ́ tó dàgbà %s
+cc_auto_button = Ìmọ́tótó láìfọwọ́yí: ìfiránṣẹ́ tí a kó pamọ́ tó dàgbà ju %s lọ...
+comp_btn_discard = &Sọ nù
+comp_btn_keep_editing = &Máa ṣàtúnṣe lọ
+comp_btn_save_draft = &Fi àwòkọ pamọ́
+comp_no_account = A kò ṣètò àkọọ́lẹ̀
+comp_saving_draft = À ń fi àwòkọ pamọ́…
+comp_this_message = ìfiránṣẹ́ yìí
+comp_unsent_save_q = Fi %s pamọ́ gẹ́gẹ́ bí àwòkọ kí o tó pa á?
+comp_unsent_tray_q = Fi %s pamọ́ gẹ́gẹ́ bí àwòkọ kí ZBox tó lọ sí àtẹ ètò?
+doc_unreadable = A kò lè ka fáìlì ìwé àlàyé:
+envlist_all_disabled = Gbogbo àkọọ́lẹ̀ ni a ti dá dúró.
+envlist_col_date = Ọjọ́
+envlist_col_from = Láti ọ̀dọ̀
+envlist_col_status = Ipò
+envlist_col_subject = Kókó
+envlist_collapsed = A kó jọ (%d)
+envlist_empty = Kò sí ìfiránṣẹ́ nínú fódà yìí.
+envlist_loading = À ń gbé àwọn ìfiránṣẹ́ wá...
+envlist_no_accounts = A kò tíì ṣètò àkọọ́lẹ̀ kankan.
+envlist_no_ignored = Kò sí ìtẹ̀léra tí a kò kọbi ara sí nínú fódà yìí.
+envlist_no_watched = Kò sí ìtẹ̀léra tí à ń tọ́jú nínú fódà yìí.
+envlist_select_folder = Yan àkọọ́lẹ̀ tàbí fódà láti gbé àwọn ìfiránṣẹ́ wá.
+eula_link_0 = Ṣí ojú ìwé ìwé àṣẹ Himalaya nínú aṣàwákiri rẹ
+eula_link_1 = Ṣí ojú ìwé ìwé àṣẹ StevenBlack hosts nínú aṣàwákiri rẹ
+eula_link_2 = Ṣí ojú ìwé ìwé àṣẹ EasyList/EasyPrivacy nínú aṣàwákiri rẹ
+eula_link_3 = Ṣí ojú ìwé ìwé àṣẹ Phishing.Database nínú aṣàwákiri rẹ
+eula_read_note = Ka ìwé àṣẹ tó wà nísàlẹ̀, pẹ̀lú àwọn apá ẹgbẹ́ kẹta. O gbọ́dọ̀ yan Mo gbà pẹ̀lú àwọn òfin òkè kí Tó kàn tó wà. Mi ò gbà ń ti ZBox láìbẹ̀rẹ̀ rẹ̀, ó sì ń yọ ohun tí ìṣiṣẹ́ yìí ti ṣẹ̀dá títí di ìsinsìnyí kúrò.
+eula_unreadable = A kò lè ka fáìlì ìwé àṣẹ:\n%s
+filters_title = Ṣiṣẹ́ àwọn àlẹ̀mọ́
+flag_title = Sàmì ìràwọ̀ sí ìfiránṣẹ́
+folder_type_archive = Ìpamọ́
+folder_type_drafts = Àwòkọ
+folder_type_inbox = Àpótí gbígbà
+folder_type_junk = Àwúrúju
+folder_type_sent = Tí a fi ránṣẹ́
+folder_type_trash = Àpótí ìdọ̀tí
+mime_application_json = Fáìlì JSON
+mime_application_msword = Ìwé Word
+mime_application_octet_stream = Fáìlì alálòpọ̀
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Tábìlì Excel
+mime_application_vnd_ms_powerpoint = Ìgbékalẹ̀ PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Ìgbékalẹ̀ PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Tábìlì Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Ìwé Word
+mime_application_xml = Fáìlì XML
+mime_application_zip = Ìpamọ́ ZIP
+mime_audio_mpeg = Ohùn MP3
+mime_audio_ogg = Ohùn OGG
+mime_audio_wav = Ohùn WAV
+mime_image_bmp = Àwòrán BMP
+mime_image_gif = Àwòrán GIF
+mime_image_jpeg = Àwòrán JPEG
+mime_image_png = Àwòrán PNG
+mime_image_svg_xml = Àwòrán SVG
+mime_image_webp = Àwòrán WebP
+mime_text_csv = Fáìlì CSV
+mime_text_html = Fáìlì HTML
+mime_text_plain = Fáìlì ọ̀rọ̀
+mime_video_mp4 = Fídíò MP4
+mime_video_x_msvideo = Fídíò AVI
+move_title_junk = Sàmì sí àwúrúju
+move_title_move_to = Gbé lọ sí
+move_title_not_junk = Sàmì sí kì í ṣe àwúrúju
+mp_explain_set = A ti ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́. Òun ló ń jẹ́ kí fódà ZBox yìí ṣí àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ rẹ̀ tí a fi pamọ́ lórí kọ̀ǹpútà mìíràn.\n\nFi àwọn àpótí ọ̀rọ̀ìpamọ́ tuntun méjèèjì sílẹ̀ ní òfo kí o sì tẹ OK láti yọ ọ́ kúrò. Yíyọ kúrò kò kan kọ̀ǹpútà yìí, ṣùgbọ́n fódà náà kò ní ṣiṣẹ́ lórí kọ̀ǹpútà mìíràn mọ́ láìsí wíwọlé sí gbogbo àkọọ́lẹ̀ lẹ́ẹ̀kan sí i.
+mp_explain_unset = A kò ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́, nítorí náà a lè ka àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ tí a fi pamọ́ lórí kọ̀ǹpútà yìí àti àkọọ́lẹ̀ Windows yìí nìkan. Tí o bá dà fódà náà kọ sí ibòmíràn, gbogbo àkọọ́lẹ̀ ni a ó tún wọlé sí olùpèsè ímeèlì rẹ̀.\n\nṢètò ọ̀kan ZBox yóò sì béèrè rẹ̀ lẹ́ẹ̀kan lórí kọ̀ǹpútà tuntun kọ̀ọ̀kan, lẹ́yìn náà yóò ṣí déédé níbẹ̀ láti ìgbà náà lọ. Kọ̀ǹpútà yìí kò ní béèrè lẹ́ẹ̀kan sí i.\n\nKọ ọ́ sílẹ̀ kí o sì fi pamọ́ sí ibi tó ní ààbò. A kò fi pamọ́ sí ibikíbi a kò sì lè rí i padà: tí o bá gbàgbé rẹ̀, gbogbo àkọọ́lẹ̀ ni a ó tún wọlé sí olùpèsè ímeèlì rẹ̀.
+mp_label_confirm = &Fìdí ọ̀rọ̀ìpamọ́ àkọ́kọ́ tuntun múlẹ̀:
+mp_label_current = &Ọ̀rọ̀ìpamọ́ àkọ́kọ́ lọ́wọ́lọ́wọ́:
+mp_label_master = &Ọ̀rọ̀ìpamọ́ àkọ́kọ́:
+mp_label_new = &Ọ̀rọ̀ìpamọ́ àkọ́kọ́ tuntun:
+mp_name_confirm = Fìdí ọ̀rọ̀ìpamọ́ àkọ́kọ́ tuntun múlẹ̀
+mp_name_current = Ọ̀rọ̀ìpamọ́ àkọ́kọ́ lọ́wọ́lọ́wọ́
+mp_name_master = Ọ̀rọ̀ìpamọ́ àkọ́kọ́
+mp_name_new = Ọ̀rọ̀ìpamọ́ àkọ́kọ́ tuntun
+mp_prompt_existing = A dáàbò bo àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ rẹ tí a fi pamọ́ lórí kọ̀ǹpútà yìí nìkan. Ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́ kí a lè ṣí wọn tí o bá gbé ZBox lọ sí òmíràn.
+mp_prompt_first_run = ZBox ti fẹ́ fi àwọn ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ rẹ pamọ́. Ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́ báyìí kí a lè ṣí wọn tí o bá gbé ZBox lọ sí kọ̀ǹpútà mìíràn.
+mp_prompt_new_account = ZBox ti fẹ́ fi ọ̀rọ̀ìpamọ́ àkọọ́lẹ̀ yìí pamọ́. Ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́ ná kí a lè ṣí àkọọ́lẹ̀ náà tí o bá gbé ZBox lọ sí kọ̀ǹpútà mìíràn.
+mp_removed_done = A ti yọ ọ̀rọ̀ìpamọ́ àkọ́kọ́ kúrò. Àwọn ọ̀rọ̀ìpamọ́ tí a fi pamọ́ ń ṣiṣẹ́ lórí kọ̀ǹpútà yìí àti àkọọ́lẹ̀ Windows yìí nìkan báyìí.
+mp_set_done = A ti ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́. ZBox yóò béèrè rẹ̀ lẹ́ẹ̀kan lórí kọ̀ǹpútà tuntun kọ̀ọ̀kan tí a ṣí fódà yìí, lẹ́yìn náà yóò ṣí déédé níbẹ̀ láti ìgbà náà lọ.
+mv_body_title = Ọ̀rọ̀ ìfiránṣẹ́
+mv_col_format = Ìṣètò
+mv_col_name = Orúkọ
+mv_col_size = Ìwọ̀n
+mv_format_unknown = Àìmọ̀
+mv_size_unknown = Ìwọ̀n àìmọ̀
+na_account_settings = Ètò àkọọ́lẹ̀ àti ìdánimọ̀
+na_disable_account = Dá àkọọ́lẹ̀ dúró
+na_edit_signature = Ṣàtúnṣe ìbuwọ́lù
+na_message_filters = Àwọn àlẹ̀mọ́ ìfiránṣẹ́
+na_mute_account = Dákẹ́ àkọọ́lẹ̀
+na_pause_auto_check = Dá àyẹ̀wò láìfọwọ́yí dúró
+na_remove_account = Yọ àkọọ́lẹ̀ kúrò
+na_set_default = Yàn án gẹ́gẹ́ bí àkọọ́lẹ̀ àtẹ̀wọ́
+no_offline_copy = Kò sí ẹ̀dà láìsí ayélujára ti %s. Ṣí i nígbà tí o wà lórí ayélujára, tàbí lo Fáìlì, Láìsí ayélujára, Mú bá ara mu báyìí.
+perm_delete_confirm = {msg} Èyí fò fódà Àpótí ìdọ̀tí, a kò sì lè dá a padà.
+perm_delete_many = Pa ìfiránṣẹ́ {count} rẹ́ pátápátá?
+perm_delete_one = Pa ìfiránṣẹ́ {count} rẹ́ pátápátá?
+preset_note_apple = Apple nílò ọ̀rọ̀ìpamọ́ pàtó fún ohun èlò.
+preset_note_fastmail = Fastmail nílò ọ̀rọ̀ìpamọ́ ohun èlò.
+preset_note_google = Google nílò ọ̀rọ̀ìpamọ́ ohun èlò tàbí OAuth2, kì í ṣe ọ̀rọ̀ìpamọ́ déédé rẹ.
+preset_note_proton = ProtonMail nílò ohun èlò ProtonMail Bridge tó ń ṣiṣẹ́ lórí kọ̀ǹpútà.
+preset_note_yahoo = Yahoo nílò ọ̀rọ̀ìpamọ́ ohun èlò.
+priv_phishing_not_loaded = Àtòjọ ìtànjẹ: a kò tíì gbé e wá. Ó ń gbà ní àkókò àkọ́kọ́ tí àwọn òfin wọ̀nyí bá ṣiṣẹ́ tí ZBox sì wà lórí ayélujára.
+priv_phishing_prefix = Àtòjọ ìtànjẹ:
+priv_status_unavailable = Ipò àtòjọ ìdènà kò sí.
+rdr_load_failed = A kò lè gbé ìfiránṣẹ́ wá.\n\n{message}
+rdr_loading = À ń gbé ìfiránṣẹ́ wá...
+rdr_select_message = Yan ìfiránṣẹ́ kan láti kà á níbí.
+set_autosave_off = Pa — lo Fi àwòkọ pamọ́ (Ctrl+S) láti fi pamọ́ pẹ̀lú ọwọ́
+set_autosave_seconds = Ní gbogbo ìṣẹ́jú àáyá {seconds}
+set_no_unlock = Kò sí kọ́kọ́rọ́ ìwọlé tàbí kọ́kọ́rọ́ ààbò tí a lè lò níbí
+set_purge_days = Lẹ́yìn ọjọ́ {days}
+set_purge_off = Pa — a kì í pa Àpótí ìdọ̀tí àti Àwúrúju rẹ́ láìfọwọ́yí láéláé
+set_purge_one_day = Lẹ́yìn ọjọ́ 1
+set_val_seconds = Ìṣẹ́jú àáyá {seconds}
+set_val_one_second = Ìṣẹ́jú àáyá 1
+set_silence_off = Pa
+set_announce_wait = Ó ń dúró de bọ́tìnì
+set_autosave_minutes = Ní gbogbo ìṣẹ́jú {minutes}
+set_autosave_one_minute = Ní gbogbo ìṣẹ́jú
+set_rt_bundled_installed = Ẹ̀rọ ìṣiṣẹ́ tó wà nínú rẹ̀: a ti fi sórí rẹ̀.
+set_rt_bundled_many = Ẹ̀rọ ìṣiṣẹ́ tó wà nínú rẹ̀: a ti fi %s sórí rẹ̀.
+set_rt_bundled_none = Ẹ̀rọ ìṣiṣẹ́ tó wà nínú rẹ̀: kò sí èyí tí a fi sórí rẹ̀, nítorí náà ZBox ń lo ti gbogbo ẹ̀rọ.
+set_rt_bundled_unknown = Ẹ̀rọ ìṣiṣẹ́ tó wà nínú rẹ̀: a kò lè mọ̀.
+set_rt_bundled_ver = Ẹ̀rọ ìṣiṣẹ́ tó wà nínú rẹ̀: a ti fi ẹ̀dà %s sórí rẹ̀.
+set_rt_system_unknown = Ẹ̀rọ ìṣiṣẹ́ gbogbo ẹ̀rọ: a kò lè mọ ẹ̀dà.
+set_rt_system_ver = Ẹ̀rọ ìṣiṣẹ́ gbogbo ẹ̀rọ: ẹ̀dà %s.
+set_unlock_many = Àwọn ọ̀nà ìṣísílẹ̀ %d ni a lè lò níbí
+set_unlock_unreadable = A kò lè ka àwọn ọ̀nà ìṣísílẹ̀
+sig_tab_formatted = Tí a ṣètò
+sig_tab_source = Orísun HTML
+srch_all_accounts = Gbogbo àkọọ́lẹ̀
+srch_all_folders = Gbogbo fódà
+tab_mail = Ímeèlì
+tab_new_message = Ìfiránṣẹ́ tuntun
+tab_saved_message = Ìfiránṣẹ́ tí a fi pamọ́
+title_copy_to_err = Dàkọ sí
+title_mark_message = Sàmì ìfiránṣẹ́
+title_unsent_message = Ìfiránṣẹ́ tí a kò tíì fi ránṣẹ́
+tree_unified_root = Àwọn fódà àpapọ̀
+unlock_kind_passkey = Kọ́kọ́rọ́ ìwọlé (Windows Hello)
+unlock_kind_security_key = Kọ́kọ́rọ́ ààbò
+unlock_prompt_message = Windows ń béèrè pé kí o fìdí rẹ̀ múlẹ̀. Dáhùn sí ìbéèrè rẹ̀ pẹ̀lú Windows Hello, PIN rẹ, tàbí kọ́kọ́rọ́ ààbò rẹ. Fèrèsé yìí ń pa ara rẹ̀ nígbà tí Windows bá parí.
+unlock_prompt_title = Ààbò Windows
+unlock_registering = À ń forúkọ ọ̀nà ìṣísílẹ̀ yìí sílẹ̀
+unlock_the_passkey = Kọ́kọ́rọ́ ìwọlé
+unlock_the_security_key = Kọ́kọ́rọ́ ààbò
+wildcard_eml = Àwọn fáìlì ímeèlì (*.eml)|*.eml|Gbogbo fáìlì (*.*)|*.*
+wildcard_export = Àwọn tí a kó jáde láti ZBox (*.json)|*.json
+wiz_not_supported = A KÒ ṢE ÀTÌLẸ́YÌN: {name}. {note} A kò lè fi àkọọ́lẹ̀ yìí kún ZBox.
+stock_apply = &Lò ó
+stock_cancel = Fagilé
+stock_close = &Pa
+stock_help = &Ìrànlọ́wọ́
+stock_no = &Rárá
+stock_ok = OK
+stock_yes = &Bẹ́ẹ̀ni
+wiz_btn_back = &< Padà
+wiz_btn_finish = &Parí
+wiz_btn_next = &Tó kàn >
+acct_unsaved_q = Fi àwọn àyípadà sí àkọọ́lẹ̀ yìí pamọ́?
+btn_save = &Fi pamọ́
+spell_add_to_dictionary = &Fi kún ìwé atúmọ̀ èdè
+spell_no_suggestions = Kò sí àbá
+title_signature_for = Ìbuwọ́lù: {account}
+title_mark_folder_read = Sàmì fódà sí tí a ti kà
+title_update_available = Àtúnṣe ZBox
+update_available = ZBox {new} wà. O ní {current}.
+upd_notes_label = &Àkíyèsí ìtẹ̀jáde:
+upd_no_notes = Kò sí àkíyèsí ìtẹ̀jáde.
+upd_notes_name = Àkíyèsí ìtẹ̀jáde
+upd_update_now = &Bẹ́ẹ̀ni, ṣàtúnṣe báyìí
+upd_remind_later = &Rán mi létí lẹ́yìn
+title_update_download = À ń gba àtúnṣe ZBox
+upd_downloading = À ń gba ZBox {version}...
+upd_progress_name = Ìtẹ̀síwájú ìgbàsílẹ̀
+upd_cancel = &Fagilé
+upd_cancelling = À ń fagilé...
+set_updates_label = Àwọn àtúnṣe:
+set_update_auto = &Ṣàyẹ̀wò fún àwọn àtúnṣe láìfọwọ́yí
+set_update_mode_label = Nígbà tí a bá rí àtúnṣe:
+set_update_ask = &Béèrè lọ́wọ́ mi
+set_update_silent = &Gba kí o sì fi sórí rẹ̀ láìsọ̀rọ̀
+set_update_note = ZBox ń ṣàyẹ̀wò GitHub fún ìtẹ̀jáde tuntun lẹ́ẹ̀kan lójúmọ́ ní ìpọ̀jù, nígbà tó bá wà láìṣiṣẹ́ nìkan, kò sì fi nǹkan ránṣẹ́ bí kò ṣe nọ́ńbà ẹ̀dà rẹ̀. Béèrè lọ́wọ́ mi ń fi ẹ̀dà tuntun àti àkíyèsí ìtẹ̀jáde rẹ̀ hàn, pẹ̀lú Bẹ́ẹ̀ni, ṣàtúnṣe báyìí àti Rán mi létí lẹ́yìn. Gba kí o sì fi sórí rẹ̀ láìsọ̀rọ̀ ń gba àtúnṣe ní àkókò àìṣiṣẹ́ ó sì ń fi sórí rẹ̀ nígbà tí o bá jáde kúrò nínú ZBox pátápátá lẹ́ẹ̀kan sí i, kì í ṣe nígbà tí o bá ń ṣiṣẹ́. Àtúnṣe ń rọ́pò àwọn fáìlì ètò ZBox fúnra rẹ̀ nìkan: a kì í fọwọ́ kan àwọn àkọọ́lẹ̀, àwọn ọ̀rọ̀ìpamọ́, àwọn ètò, ímeèlì, àwọn àkọsílẹ̀, àwọn àkọ́lé ohùn àti èdè èyíkéyìí tí o fi kún un láéláé, a sì ń pa ẹ̀dà tó ṣáájú mọ́ a sì ń dá a padà fúnra rẹ̀ tí tuntun kò bá bẹ̀rẹ̀. Ìrànlọ́wọ́, Àwọn àtúnṣe tún ní Ṣàyẹ̀wò fún àtúnṣe báyìí àti ojú ìwé ìtẹ̀jáde fún ṣíṣàtúnṣe pẹ̀lú ọwọ́.
+set_update_check_now = &Ṣàyẹ̀wò báyìí
+mv_attachment_button = {filename} ({format})
+att_open = Ṣí
+att_save = Fi pamọ́...
+att_save_all = Fi gbogbo àfikún pamọ́
+title_save_attachment = Fi àfikún pamọ́
+title_full_headers = Àwọn àkọlé pípé
+hdr_copy_all = Dàkọ gbogbo rẹ̀
+acct_identity_own_signature = Lo ìbuwọ́lù tirẹ̀
+acct_identity_own_reply_to = Lo àdírẹ́sì Ìdáhùn-sí tirẹ̀
+acct_identity_reply_to = Àdírẹ́sì Ìdáhùn-sí
+acct_identity_always_cc = Máa fi Cc sí àwọn àdírẹ́sì wọ̀nyí nígbà gbogbo
+acct_identity_cc = Àwọn àdírẹ́sì Cc
+acct_identity_always_bcc = Máa fi Bcc sí àwọn àdírẹ́sì wọ̀nyí nígbà gbogbo
+acct_identity_bcc = Àwọn àdírẹ́sì Bcc
+acct_identity_own_folders = Lo àwọn fódà Àwòkọ àti Tí a fi ránṣẹ́ tirẹ̀
+acct_identity_drafts = Fódà Àwòkọ
+acct_identity_sent = Fódà Tí a fi ránṣẹ́
+acct_identity_own_smtp = Lo olùpèsè ìjáde tirẹ̀
+acct_identity_smtp_login = Orúkọ ìwọlé ìjáde
+acct_identity_smtp_password = Ọ̀rọ̀ìpamọ́ ìjáde
+acct_identity_test_smtp = &Dán olùpèsè ìjáde wò
+acct_identity_note_smtp = Fi orúkọ ìwọlé sílẹ̀ ní òfo láti wọlé pẹ̀lú àdírẹ́sì ímeèlì ìdánimọ̀ yìí. Àwọn ẹ̀dà tí a fi ránṣẹ́ ṣì ń lọ sí fódà Tí a fi ránṣẹ́ ti àkọọ́lẹ̀ yìí, tàbí fódà Tí a fi ránṣẹ́ ti ìdánimọ̀ yìí tí ó bá ní ọ̀kan.
+identity_field_required = Kún {field}, tàbí yọ àmì àpótí rẹ̀ kúrò.
+identity_field_invalid = {field} ní àdírẹ́sì tí kò tọ́.
+identity_folders_required = Yan fódà Àwòkọ, fódà Tí a fi ránṣẹ́ tàbí méjèèjì, tàbí yọ àmì àpótí wọn kúrò.
+identity_password_required = Tẹ ọ̀rọ̀ìpamọ́ ìjáde sí i.
+identity_smtp_testing = À ń dán olùpèsè ìjáde wò.
+identity_smtp_ok = Olùpèsè ìjáde gba ìwọlé.
+identity_smtp_failed = Ìdánwò olùpèsè ìjáde kùnà.\n\n{error}
+set_bare_keys_note_move = M àti C ń ṣí àwọn àtòjọ Gbé lọ sí àti Dàkọ sí ti àwọn fódà fún ìfiránṣẹ́ tí a yàn, Shift+M sì ń ṣí àpótí tí o ti tẹ apá kan orúkọ fódà láti gbé wọn lọ síbẹ̀. Píparí èyí ń dá M àti C padà sí ìrìnkiri lẹ́tà àkọ́kọ́ pẹ̀lú.
+folder_search_filter = Orúkọ fódà ní nínú
+folder_search_list = Àwọn fódà tó bá mu
+folder_search_no_match = Kò sí fódà tó bá orúkọ yẹn mu.
+wiz_signin_method = Ọ̀nà ìwọlé
+wiz_method_password = Ọ̀rọ̀ìpamọ́
+wiz_method_microsoft = Àkọọ́lẹ̀ Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Ìwọlé Microsoft. A ti kún àwọn ètò olùpèsè fún Outlook.com, Hotmail, Live àti Microsoft 365.
+wiz_welcome_notice = Gmail. A ó kọ ọ̀rọ̀ìpamọ́ Google déédé rẹ, ṣùgbọ́n ọ̀rọ̀ìpamọ́ ohun èlò ń ṣiṣẹ́. Ìmúdájú onípele méjì gbọ́dọ̀ ṣiṣẹ́ ná. Bọ́tìnì tó wà nísàlẹ̀ ń ṣí ìtọ́sọ́nà Google.\n\nOutlook.com, Hotmail, Live àti Microsoft 365. Wọ́n ń wọlé pẹ̀lú àkọọ́lẹ̀ Microsoft rẹ. Lórí ojú ìwé Ìwọlé, yan àkọọ́lẹ̀ Microsoft, lẹ́yìn náà wọlé pẹ̀lú aṣàwákiri rẹ tàbí pẹ̀lú kóòdù kan.\n\nÀwọn olùpèsè mìíràn. Ọ̀rọ̀ìpamọ́ déédé tàbí ọ̀rọ̀ìpamọ́ ohun èlò sábà máa ń ṣiṣẹ́, àwọn ojú ìwé ìrànlọ́wọ́ olùpèsè rẹ sì ń ṣàkójọ àwọn ètò olùpèsè.
+preset_note_outlook = Àwọn àkọọ́lẹ̀ Outlook.com, Hotmail, Live àti MSN ń wọlé pẹ̀lú àkọọ́lẹ̀ Microsoft. Yan àkọọ́lẹ̀ Microsoft gẹ́gẹ́ bí ọ̀nà ìwọlé lórí ojú ìwé Ìwọlé.
+ms_status_name = Ipò ìwọlé Microsoft
+ms_browser_button = &Wọlé pẹ̀lú aṣàwákiri
+ms_code_button = &Wọlé pẹ̀lú kóòdù
+ms_copy_code = &Dàkọ kóòdù
+ms_open_page = &Ṣí ojú ìwé ìwọlé
+ms_stop = &Dá dídúró dúró
+ms_not_configured = A kò ṣètò ìwọlé Microsoft nínú ẹ̀dà ZBox yìí.
+ms_not_signed_in = A kò tíì wọlé. Wọlé pẹ̀lú aṣàwákiri rẹ, tàbí pẹ̀lú kóòdù lórí ẹ̀rọ èyíkéyìí.
+ms_signed_in = A ti wọlé bí {address}.
+ms_signed_in_plain = A ti wọlé.
+ms_needs_sign_in = A tún nílò ìwọlé Microsoft fún àkọọ́lẹ̀ yìí. Wọlé pẹ̀lú aṣàwákiri rẹ, tàbí pẹ̀lú kóòdù lórí ẹ̀rọ èyíkéyìí.
+ms_reason_cancelled = A dá wíwọlé dúró.
+ms_reason_timeout = Kò sí ìdáhùn tó dé ní àkókò.
+ms_reason_denied = A kò gba ìráyè láàyè.
+ms_reason_expired = Kóòdù ti parí. Béèrè tuntun.
+ms_reason_network = A kò lè dé Microsoft. Ṣàyẹ̀wò ìsopọ̀ kí o sì tún gbìyànjú.
+ms_reason_server = Microsoft sọ pé: {detail}
+ms_page_done = A ti wọlé. O lè pa ojú ìwé yìí kí o sì padà sí ZBox.
+ms_page_failed = Ìwọlé kò parí. Padà sí ZBox fún àlàyé.
+ms_browser_waiting = Aṣàwákiri rẹ ń fi ojú ìwé ìwọlé Microsoft hàn. Parí wíwọlé níbẹ̀, lẹ́yìn náà padà sí ZBox.
+ms_code_asking = À ń béèrè kóòdù ìwọlé lọ́wọ́ Microsoft...
+ms_code_waiting = Lórí ẹ̀rọ èyíkéyìí, ṣí {address} kí o sì tẹ kóòdù {code}. ZBox ń dúró níbí títí tí o fi parí wíwọlé.
+ms_failed = Ìwọlé kò parí. {reason}
+ms_code_copied = A ti dàkọ kóòdù.
+offline_inbox_only = Àpótí gbígbà àti Ìpamọ́ nìkan ni a ń pamọ́ fún lílò láìsí ayélujára. Lọ sórí ayélujára láti ṣí {folder}.
+block_sender_rule_name = Dènà {sender}
+title_block_sender = Dènà olùfiránṣẹ́ yìí
+title_unblock_sender = Yọ ìdènà olùfiránṣẹ́ yìí kúrò
+set_clear_inbox_cache = Pa ibi ìkópamọ́ ìfiránṣẹ́ rẹ́ nígbà tí a bá kúrò ní Àpótí gbígbà
+set_clear_inbox_cache_note = Nígbà tí ó bá ṣiṣẹ́, a ń pa ẹ̀dà ìfiránṣẹ́ láìsí ayélujára àti ọ̀rọ̀ tí a fi pamọ́ rẹ́ ní kété tí ó bá kúrò ní Àpótí gbígbà, pẹ̀lú nígbà tí a bá pa á rẹ́ tàbí gbé e lọ sí ibòmíràn, bíi lórí fóònù rẹ, kí ó má bàa fara hàn níbi tí kò sí mọ́. Àpótí gbígbà nìkan ló ń pa àwọn fáìlì wọ̀nyí mọ́; a ń ka gbogbo fódà mìíràn láti ọ̀dọ̀ olùpèsè nígbà gbogbo.
+empty_trash_all_confirm = Pa gbogbo ìfiránṣẹ́ nínú Àpótí ìdọ̀tí fún gbogbo àkọọ́lẹ̀ rẹ́ pátápátá?\n\nA kò lè dá èyí padà.
+envlist_col_recipient = Olùgbà
+envlist_col_correspondents = Àwọn olùbáṣepọ̀
+envlist_col_received = Tí a gbà
+envlist_col_size = Ìwọ̀n
+envlist_col_attachments = Àwọn àfikún
+envlist_col_priority = Ìpìlẹ̀ṣẹ̀
+envlist_col_junk_status = Ipò àwúrúju
+envlist_attachment = Àwọn àfikún
+envlist_priority_highest = Gíga jùlọ
+envlist_priority_high = Gíga
+envlist_priority_low = Kékeré
+envlist_priority_lowest = Kékeré jùlọ
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Fi àwọn àkọlé ọ̀wọ̀n hàn nínú àtòjọ ìfiránṣẹ́
+pgp_title = Olùṣàkóso kọ́kọ́rọ́ OpenPGP
+smime_title = Olùṣàkóso ìwé ẹ̀rí S/MIME
+smime_own = ìwé ẹ̀rí rẹ
+smime_expired = ti parí
+smime_expires = yóò parí {date}
+smime_issuer = Tí ó fúnni
+smime_valid = Ó wúlò láti {start} dé {end}
+smime_fingerprint = Ìka ọwọ́ SHA-256
+smime_own_key = Ìwé ẹ̀rí rẹ, pẹ̀lú kọ́kọ́rọ́ àṣírí rẹ̀: a lè ka ímeèlì tí a fi àṣírí pa fún un níbí.
+smime_unavailable = S/MIME kò sí nínú ẹ̀dà ZBox yìí.
+smime_details = Àlàyé ìwé ẹ̀rí
+smime_no_certs = Kò tíì sí ìwé ẹ̀rí. Kó fáìlì .p12 tàbí .pfx tìrẹ wọlé, tàbí ìwé ẹ̀rí olùbáṣepọ̀.
+smime_import_failed = A kò lè kó ìwé ẹ̀rí wọlé: {error}
+smime_import_title = Kó fáìlì ìwé ẹ̀rí wọlé
+smime_password_prompt = Tẹ ọ̀rọ̀ìpamọ́ {name} sí i.
+smime_password_title = Ọ̀rọ̀ìpamọ́ ìwé ẹ̀rí
+smime_imported = A ti kó ìwé ẹ̀rí wọlé.
+smime_export_title = Kó ìwé ẹ̀rí jáde
+smime_exported = A ti kó ìwé ẹ̀rí jáde.
+smime_delete_confirm = Pa ìwé ẹ̀rí {name} rẹ́? Tí ó bá jẹ́ tìrẹ, a kò ní lè ka ímeèlì tí a fi àṣírí pa fún un níbí mọ́.
+smime_deleted = A ti pa ìwé ẹ̀rí rẹ́.
+smime_rs_verified = Ìfiránṣẹ́ yìí ní ìbuwọ́lù S/MIME tó wúlò láti ọ̀dọ̀ ìwé ẹ̀rí tí aláṣẹ tí Windows gbẹ́kẹ̀lé fúnni fún àdírẹ́sì olùfiránṣẹ́.
+smime_rs_unverified = Ìfiránṣẹ́ yìí ní ìbuwọ́lù S/MIME tó wúlò, ṣùgbọ́n aláṣẹ tí Windows gbẹ́kẹ̀lé kò fún ìwé ẹ̀rí rẹ̀.
+smime_rs_mismatch = Ìfiránṣẹ́ yìí ní ìbuwọ́lù S/MIME, ṣùgbọ́n àdírẹ́sì olùfiránṣẹ́ kò bá ìwé ẹ̀rí olùbuwọ́lù mu.
+smime_rs_technical = Ìfiránṣẹ́ yìí ní ìbuwọ́lù S/MIME, ṣùgbọ́n kò bá ìfiránṣẹ́ mu. Ó ṣeé ṣe kí a ti yí ìfiránṣẹ́ padà lẹ́yìn tí a buwọ́lù ú.
+smime_rs_signer = Olùbuwọ́lù: {name}
+smime_rs_issuer = Ẹni tó fún ìwé ẹ̀rí: {issuer}
+smime_rs_import_hint = Láti kà á, kó ìwé ẹ̀rí S/MIME rẹ wọlé pẹ̀lú kọ́kọ́rọ́ àṣírí rẹ̀, fáìlì .p12 tàbí .pfx, nínú Àwọn irinṣẹ́, Olùṣàkóso ìwé ẹ̀rí S/MIME.
+pgp_details = Àwọn ohun-ìní kọ́kọ́rọ́
+pgp_generate = &Àwọn kọ́kọ́rọ́ méjì tuntun
+smime_import = &Kó fáìlì ìwé ẹ̀rí wọlé
+smime_export = &Kó ìwé ẹ̀rí jáde
+smime_delete = &Pa ìwé ẹ̀rí rẹ́
+pgp_import_file = &Kó fáìlì kọ́kọ́rọ́ OpenPGP wọlé
+pgp_import_file_title = Kó fáìlì kọ́kọ́rọ́ OpenPGP wọlé
+pgp_import_clip = &Kó kọ́kọ́rọ́ wọlé láti pátákó ìdàkọ
+pgp_export = &Kó kọ́kọ́rọ́ gbogbogbò jáde sí fáìlì
+pgp_copy = &Dàkọ kọ́kọ́rọ́ gbogbogbò
+pgp_backup = &Ṣe ẹ̀dà ìpamọ́ kọ́kọ́rọ́ àṣírí sí fáìlì
+pgp_props = &Àwọn ohun-ìní kọ́kọ́rọ́
+pgp_revoke = &Fagilé kọ́kọ́rọ́
+pgp_delete = &Pa kọ́kọ́rọ́ rẹ́
+pgp_expires = yóò parí: {date}
+pgp_never_expires = kì í parí láéláé
+pgp_expired = ti parí
+pgp_revoked = a ti fagilé
+pgp_fingerprint = Ìka ọwọ́
+pgp_key_id = ID kọ́kọ́rọ́
+pgp_created = A ṣẹ̀dá
+pgp_acceptance = Ìgbà rẹ
+pgp_acc_rejected = Rárá, kọ kọ́kọ́rọ́ yìí.
+pgp_acc_undecided = Kò tíì, bóyá lẹ́yìn.
+pgp_acc_unverified = Bẹ́ẹ̀ni, ṣùgbọ́n n kò tíì jẹ́rìí pé kọ́kọ́rọ́ tó tọ́ ni.
+pgp_acc_verified = Bẹ́ẹ̀ni, mo ti jẹ́rìí ní ara-ẹni pé kọ́kọ́rọ́ yìí ní ìka ọwọ́ tó tọ́.
+pgp_personal_no = Rárá, má lò ó gẹ́gẹ́ bí kọ́kọ́rọ́ àdáni mi.
+pgp_personal_yes = Bẹ́ẹ̀ni, kà kọ́kọ́rọ́ yìí sí kọ́kọ́rọ́ àdáni.
+pgp_verify_hint = Jẹ́rìí ìka ọwọ́ kọ́kọ́rọ́ náà nípa ọ̀nà ìbánisọ̀rọ̀ tó ní ààbò yàtọ̀ sí ímeèlì láti rí i dájú pé kọ́kọ́rọ́ {addr} ni lóòótọ́.
+pgp_gen_title = Ṣẹ̀dá kọ́kọ́rọ́ OpenPGP
+pgp_gen_identity = Ìdánimọ̀
+pgp_gen_type = Irú kọ́kọ́rọ́:
+pgp_gen_ecc = ECC (Ìlà ẹ̀lípítíkì)
+pgp_gen_expiry = Ìparí kọ́kọ́rọ́
+pgp_gen_no_expiry = Kọ́kọ́rọ́ kì í parí
+pgp_gen_button = Ṣẹ̀dá kọ́kọ́rọ́
+pgp_gen_confirm = Ṣẹ̀dá kọ́kọ́rọ́ gbogbogbò àti kọ́kọ́rọ́ àṣírí fún {identity}?
+pgp_gen_progress = À ń ṣẹ̀dá Kọ́kọ́rọ́ OpenPGP tuntun rẹ…
+pgp_gen_done = A ti ṣẹ̀dá Kọ́kọ́rọ́ OpenPGP ní àṣeyọrí!
+pgp_gen_failed = Ìṣẹ̀dá Kọ́kọ́rọ́ OpenPGP kùnà láìròtẹ́lẹ̀
+pgp_import_none = A kò kó kọ́kọ́rọ́ kankan wọlé.
+pgp_import_done = A ti kó Àwọn Kọ́kọ́rọ́ OpenPGP wọlé ní àṣeyọrí!
+pgp_passphrase_title = A nílò gbólóhùn ìpamọ́
+pgp_unlock_failed = A kò lè ṣí kọ́kọ́rọ́ náà, tàbí àwọn apá abẹ́ rẹ̀.
+pgp_backup_title = Yan ọ̀rọ̀ìpamọ́ láti ṣe ẹ̀dà ìpamọ́ Kọ́kọ́rọ́ OpenPGP rẹ
+pgp_backup_message = Ọ̀rọ̀ìpamọ́ tí o ṣètò níbí ń dáàbò bo fáìlì ẹ̀dà ìpamọ́ kọ́kọ́rọ́ àṣírí OpenPGP tí o fẹ́ ṣẹ̀dá. O gbọ́dọ̀ ṣètò ọ̀rọ̀ìpamọ́ yìí láti tẹ̀síwájú pẹ̀lú ẹ̀dà ìpamọ́.
+pgp_backup_pw = Ọ̀rọ̀ìpamọ́ ẹ̀dà ìpamọ́ Kọ́kọ́rọ́ Àṣírí:
+pgp_backup_pw2 = Ọ̀rọ̀ìpamọ́ ẹ̀dà ìpamọ́ Kọ́kọ́rọ́ Àṣírí (lẹ́ẹ̀kan sí i):
+pgp_backup_done = A ti kó Kọ́kọ́rọ́ Àṣírí jáde ní àṣeyọrí!
+pgp_export_done = A ti kó Kọ́kọ́rọ́ Gbogbogbò jáde ní àṣeyọrí!
+pgp_copied = A ti dàkọ kọ́kọ́rọ́ sí pátákó ìdàkọ
+pgp_revoke_done = A ti fagilé kọ́kọ́rọ́ ní àṣeyọrí.
+pgp_personal = kọ́kọ́rọ́ àdáni
+pgp_no_keys = Kò tíì sí kọ́kọ́rọ́. Ṣẹ̀dá àwọn kọ́kọ́rọ́ méjì tuntun tàbí kó kọ́kọ́rọ́ wọlé.
+pgp_unavailable = OpenPGP kò sí nínú ẹ̀dà ZBox yìí.
+pgp_gen_expires_3y = Kọ́kọ́rọ́ yóò parí ní ọdún mẹ́ta
+pgp_gen_no_identity = Fi àkọọ́lẹ̀ ímeèlì kún un ná.
+pgp_import_confirm = Kó àwọn kọ́kọ́rọ́ wọ̀nyí wọlé?\n\n{keys}
+pgp_passphrase_prompt = Tẹ gbólóhùn ìpamọ́ kọ́kọ́rọ́ àṣírí fún {name} sí i.
+pgp_clip_empty = Kò sí kọ́kọ́rọ́ OpenPGP lórí pátákó ìdàkọ.
+pgp_pw_mismatch = Àwọn ọ̀rọ̀ìpamọ́ méjèèjì kò bára mu.
+pgp_backup_open = Fáìlì yìí jẹ́ ẹ̀dà ìpamọ́ kọ́kọ́rọ́ àṣírí. Tẹ ọ̀rọ̀ìpamọ́ ẹ̀dà ìpamọ́ rẹ̀ sí i.
+pgp_revoke_confirm = Fagilé kọ́kọ́rọ́ {name}? A kò lè lo kọ́kọ́rọ́ tí a ti fagilé mọ́ láéláé. Pín kọ́kọ́rọ́ gbogbogbò tí a fagilé kí àwọn ẹlòmíràn lè dẹ́kun lílò ó.
+pgp_delete_public_confirm = Pa kọ́kọ́rọ́ gbogbogbò {name} rẹ́?
+pgp_delete_secret_confirm = Pa kọ́kọ́rọ́ àdáni rẹ {name} rẹ́? A kò ní lè ka ímeèlì tí a fi àṣírí pa fún un láéláé mọ́. Ṣe ẹ̀dà ìpamọ́ kọ́kọ́rọ́ àṣírí ná tí o bá lè nílò rẹ̀.
+pgp_select_key = Yan kọ́kọ́rọ́ kan ná.
+pgp_save_failed = A kò lè fi àwọn kọ́kọ́rọ́ pamọ́: {error}
+pgp_publish = &Tẹ̀jáde
+pgp_publish_ok = A ti fi kọ́kọ́rọ́ gbogbogbò ránṣẹ́ sí "{keyserver}".
+pgp_publish_fail = A kò lè fi kọ́kọ́rọ́ gbogbogbò rẹ ránṣẹ́ sí "{keyserver}".
+pgp_publish_suggest = Títẹ̀ kọ́kọ́rọ́ gbogbogbò jáde lórí olùpèsè kọ́kọ́rọ́ ń jẹ́ kí àwọn ẹlòmíràn rí i.
+pgp_publish_question = Tẹ̀ ẹ́ jáde lórí {keyserver} báyìí? Olùpèsè náà yóò fi ímeèlì ìjẹ́rìísí ránṣẹ́ sí {addresses}. A ó lè rí àdírẹ́sì rẹ nígbà tí o bá ṣí ìsopọ̀ rẹ̀.
+pgp_publish_sent = A ti fi ímeèlì ìjẹ́rìísí ránṣẹ́ sí {addresses}. Ṣí ìsopọ̀ tó wà nínú rẹ̀ kí a lè rí kọ́kọ́rọ́ rẹ nípasẹ̀ àdírẹ́sì rẹ.
+pgp_publish_already = A ti lè rí i nípasẹ̀ {addresses} tẹ́lẹ̀.
+pgp_rs_no_sig = Kò sí ìbuwọ́lù díjítà
+pgp_rs_no_sig_info = Ìfiránṣẹ́ yìí kò ní ìbuwọ́lù díjítà olùfiránṣẹ́. Àìsí ìbuwọ́lù díjítà túmọ̀ sí pé ẹnìkan tó ń díbọ́n pé òun ní àdírẹ́sì ímeèlì yìí lè ti fi ìfiránṣẹ́ náà ránṣẹ́. Ó tún ṣeé ṣe kí a ti yí ìfiránṣẹ́ náà padà nígbà tó ń gba orí nẹ́tíwọ́ọ̀kì kọjá.
+pgp_rs_uncertain = Ìbuwọ́lù díjítà tí kò dájú
+pgp_rs_uncertain_date = Ìbuwọ́lù díjítà tí kò dájú - A buwọ́lù ní {date}
+pgp_rs_invalid = Ìbuwọ́lù díjítà tí kò wúlò
+pgp_rs_invalid_date = Ìbuwọ́lù díjítà tí kò wúlò - A buwọ́lù ní {date}
+pgp_rs_good = Ìbuwọ́lù díjítà tó dára
+pgp_rs_good_date = Ìbuwọ́lù díjítà tó dára - A buwọ́lù ní {date}
+pgp_rs_no_key = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà, ṣùgbọ́n kò dájú bóyá ó tọ́. Láti jẹ́rìí ìbuwọ́lù náà, o nílò láti gba ẹ̀dà kọ́kọ́rọ́ gbogbogbò olùfiránṣẹ́.
+pgp_rs_uid_mismatch = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà, ṣùgbọ́n a rí àìbáramu. A fi ìfiránṣẹ́ náà ránṣẹ́ láti àdírẹ́sì ímeèlì tí kò bá kọ́kọ́rọ́ gbogbogbò olùbuwọ́lù mu.
+pgp_rs_not_accepted = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà, ṣùgbọ́n o kò tíì pinnu bóyá kọ́kọ́rọ́ olùbuwọ́lù ṣeé gbà fún ọ.
+pgp_rs_rejected = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà, ṣùgbọ́n o ti pinnu tẹ́lẹ̀ láti kọ kọ́kọ́rọ́ olùbuwọ́lù.
+pgp_rs_technical = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà, ṣùgbọ́n a rí àṣìṣe ẹ̀rọ. Ìfiránṣẹ́ náà ti bàjẹ́, tàbí ẹlòmíràn ti yí i padà.
+pgp_rs_unverified = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà tó wúlò láti ọ̀dọ̀ kọ́kọ́rọ́ tí o ti gbà tẹ́lẹ̀. Ṣùgbọ́n o kò tíì jẹ́rìí pé olùfiránṣẹ́ ni olùní kọ́kọ́rọ́ náà lóòótọ́.
+pgp_rs_verified = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà tó wúlò láti ọ̀dọ̀ kọ́kọ́rọ́ tí a jẹ́rìí.
+pgp_rs_own_key = Ìfiránṣẹ́ yìí ní ìbuwọ́lù díjítà tó wúlò láti ọ̀dọ̀ kọ́kọ́rọ́ àdáni rẹ.
+pgp_rs_signer_id = ID kọ́kọ́rọ́ olùbuwọ́lù: {keyid}
+pgp_rs_decrypt_id = ID kọ́kọ́rọ́ ìmúṣí rẹ: {keyid}
+pgp_rs_enc_none = A kò fi àṣírí pa ìfiránṣẹ́
+pgp_rs_enc_none_info = A kò fi àṣírí pa ìfiránṣẹ́ yìí kí a tó fi ránṣẹ́. Àwọn ẹlòmíràn lè rí ìwífún tí a fi ránṣẹ́ lórí Íńtánẹ́ẹ̀tì láìsí àṣírí nígbà tó ń kọjá.
+pgp_rs_enc_invalid = A kò lè ṣí àṣírí ìfiránṣẹ́
+pgp_rs_enc_invalid_info = A fi àṣírí pa ìfiránṣẹ́ yìí kí a tó fi ránṣẹ́ sí ọ, ṣùgbọ́n a kò lè ṣí àṣírí rẹ̀.
+pgp_rs_enc_valid = A ti fi àṣírí pa ìfiránṣẹ́
+pgp_rs_enc_valid_info = A fi àṣírí pa ìfiránṣẹ́ yìí kí a tó fi ránṣẹ́ sí ọ. Ìfi àṣírí pa ń rí i dájú pé àwọn olùgbà tí a ṣètò rẹ̀ fún nìkan ló lè kà á.
+pgp_rs_field = Ààbò ìfiránṣẹ́
+pgp_rs_import = Kó kọ́kọ́rọ́ OpenPGP wọlé
+pgp_rs_open_to_unlock = Ṣí ìfiránṣẹ́ náà láti tẹ gbólóhùn ìpamọ́ sí i.
+pgp_rs_reply_not_quoted = A fi àṣírí pa ìfiránṣẹ́ àkọ́kọ́, nítorí náà a kò fa ọ̀rọ̀ rẹ̀ yọ níbí.
+pgp_cm_encrypt = Fi àṣírí pa
+pgp_cm_sign = Buwọ́lù ní díjítà
+pgp_e2e_title = Ìfi àṣírí pa láti ìbẹ̀rẹ̀ dé òpin
+acct_e2e_button = &Ìfi àṣírí pa láti ìbẹ̀rẹ̀ dé òpin...
+pgp_e2e_none = Má lo OpenPGP fún ìdánimọ̀ yìí.
+pgp_e2e_disable = Pa ìfi àṣírí pa fún àwọn ìfiránṣẹ́ tuntun
+pgp_e2e_enable = Mú ìfi àṣírí pa ṣiṣẹ́ fún àwọn ìfiránṣẹ́ tuntun
+pgp_e2e_enable_info = O ó lè pa ìfi àṣírí pa fún àwọn ìfiránṣẹ́ kọ̀ọ̀kan.
+pgp_e2e_sign = Buwọ́lù àwọn ìfiránṣẹ́ tí a kò fi àṣírí pa
+pgp_e2e_signing_info = Ìbuwọ́lù díjítà ń jẹ́ kí àwọn olùgbà jẹ́rìí pé ìwọ ni o fi ìfiránṣẹ́ ránṣẹ́ àti pé a kò yí àkóónú rẹ̀ padà. A máa ń buwọ́lù àwọn ìfiránṣẹ́ tí a fi àṣírí pa nípasẹ̀ àtẹ̀wọ́ nígbà gbogbo.
+pgp_e2e_autocrypt = Fi kọ́kọ́rọ́ gbogbogbò OpenPGP ránṣẹ́ nínú àwọn àkọlé ímeèlì fún ìbáramu pẹ̀lú Autocrypt
+pgp_not_set_up = A kò ṣètò rẹ láti fi àwọn ìfiránṣẹ́ tí a fi àṣírí pa láti ìbẹ̀rẹ̀ dé òpin ránṣẹ́ láti {addr}.
+pgp_cannot_encrypt = A kò lè fi àṣírí pa
+pgp_do_you_accept = Ṣé o gba kọ́kọ́rọ́ yìí fún jíjẹ́rìí ìbuwọ́lù díjítà àti fún fífi àṣírí pa àwọn ìfiránṣẹ́?
+pgp_searching = À ń wá…
+pgp_no_key_found = A kò rí kọ́kọ́rọ́ tó ṣeé lò tó bá àwọn ìlànà ìwá tí a sọ mu.
+pgp_source_autocrypt = Àkọlé Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = olùpèsè kọ́kọ́rọ́
+pgp_discover = &Ṣàwárí àwọn kọ́kọ́rọ́ lórí ayélujára
+pgp_cm_attach_key = Fi kọ́kọ́rọ́ gbogbogbò mi kún un
+pgp_e2e_key_label = Kọ́kọ́rọ́ àdáni fún {address}
+pgp_e2e_auto = Láìfọwọ́yí: kọ́kọ́rọ́ àdáni rẹ fún àdírẹ́sì yìí
+pgp_e2e_no_key = ZBox kò ní kọ́kọ́rọ́ OpenPGP àdáni fún {address}. Ṣẹ̀dá ọ̀kan nínú Àwọn irinṣẹ́, Olùṣàkóso kọ́kọ́rọ́ OpenPGP.
+pgp_e2e_new_messages = Ìfi àṣírí pa fún àwọn ìfiránṣẹ́ tuntun
+pgp_e2e_key_missing = Kọ́kọ́rọ́ {keyid}, a kò rí i
+pgp_missing_keys = Àwọn olùgbà wọ̀nyí kò ní kọ́kọ́rọ́ tó ṣeé lò, tí a gbà:\n\n{addresses}\n\nA kò lè fi ìfiránṣẹ́ náà ránṣẹ́ pẹ̀lú àṣírí.
+pgp_send_unencrypted = &Fi ránṣẹ́ láìsí àṣírí
+pgp_collected_found = A rí àwọn kọ́kọ́rọ́ fún àwọn olùgbà wọ̀nyí nínú ímeèlì tí wọ́n fi ránṣẹ́ sí ọ:
+pgp_lookup_q = Wá àwọn kọ́kọ́rọ́ lórí ayélujára fún àwọn olùgbà wọ̀nyí?\n\n{addresses}\n\nÈyí ń fi àwọn àdírẹ́sì wọn ránṣẹ́ sí keys.openpgp.org àti sí àwọn àgbègbè ímeèlì wọn.
+pgp_found_online = A rí àwọn kọ́kọ́rọ́ lórí ayélujára:
+pgp_source = Orísun: {source}
+pgp_discover_prompt = Tẹ àdírẹ́sì ímeèlì sí i. ZBox ń wá àwọn kọ́kọ́rọ́ OpenPGP rẹ̀ nínú Web Key Directory ti àgbègbè ímeèlì rẹ̀ àti lórí keys.openpgp.org.
+pgp_discover_bad = Tẹ àdírẹ́sì ímeèlì pípé sí i, bíi name@example.com.
+pgp_keys_unreadable = A kò lè ṣí àwọn kọ́kọ́rọ́ OpenPGP: {error}
+pgp_rs_why_no_key = Kọ́kọ́rọ́ àṣírí tí a nílò láti ṣí àṣírí ìfiránṣẹ́ yìí kò sí.
+pgp_rs_why_unknown = Àwọn ìṣòro tí a kò mọ̀ wà pẹ̀lú ìfiránṣẹ́ tí a fi àṣírí pa yìí.
+pgp_rs_hidden_subject = Ìfiránṣẹ́ tí a fi àṣírí pa
+pgp_rs_why_passphrase = A kò tẹ gbólóhùn ìpamọ́ kọ́kọ́rọ́ rẹ sí i. Tún ṣí ìfiránṣẹ́ náà láti tẹ̀ ẹ́ sí i.
+pgp_rs_why_unavailable = OpenPGP kò sí nínú ẹ̀dà ZBox yìí.
+pgp_rs_why_fetch = A kò lè mú ìfiránṣẹ́ náà wá láti ọ̀dọ̀ olùpèsè láti ṣí àṣírí rẹ̀. Tún ṣí i láti gbìyànjú lẹ́ẹ̀kan sí i.
+pgp_rs_import_hint = Láti kà á, kó kọ́kọ́rọ́ àṣírí rẹ fún ìfiránṣẹ́ yìí wọlé sí ZBox.
+
+[errors]
+language_restart_failed = ZBox kò lè tún ara rẹ̀ bẹ̀rẹ̀:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = A kò lè ṣí ohun èlò ímeèlì fún {address}.
+
+wizard_test_failed = Ìsopọ̀ kùnà:\n\n{error}
+
+contacts_import_unreadable = A kò lè ka fáìlì yẹn.\n\n{error}
+contacts_export_unwritable = A kò lè kọ fáìlì yẹn.\n\n{error}
+
+attach_unreadable = A kò lè ka àfikún {path}:\n{error}
+send_failed = A kò lè fi ìfiránṣẹ́ ránṣẹ́.\n\n{error}
+draft_attach_unreadable = A kò lè ka àfikún {path}:\n{error}\n\nA kò fi àwòkọ pamọ́.
+draft_save_failed = A kò lè fi àwòkọ pamọ́.\n\n{error}
+
+clipboard_unavailable = A kò lè ṣí pátákó ìdàkọ.
+open_link_failed = A kò lè ṣí aṣàwákiri rẹ fún:\n{url}
+
+master_password_mismatch = Àwọn àpótí ọ̀rọ̀ìpamọ́ àkọ́kọ́ tuntun méjèèjì kò bára mu.
+master_password_required = Tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ sí i, tàbí tẹ Fagilé.
+master_password_not_set = A kò lè ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́: {error}
+master_password_not_here = A kò lè yí ọ̀rọ̀ìpamọ́ àkọ́kọ́ padà láti ibí.
+
+attachment_save_failed = A kò lè fi àfikún pamọ́.\n\n{error}
+attachments_save_failed = A kò lè fi àwọn àfikún pamọ́.\n\n{error}
+print_failed = A kò lè tẹ ìfiránṣẹ́ náà jáde. Ṣàyẹ̀wò pé a ti ṣètò ẹ̀rọ atẹ̀wé.
+print_preview_failed = A kò lè ṣí àyẹ̀wò ìtẹ̀jáde. Ṣàyẹ̀wò pé a ti ṣètò ẹ̀rọ atẹ̀wé.
+
+related_search_failed = A kò lè wá àwọn ìfiránṣẹ́ tó jọmọ.\n\n{error}
+search_failed = Ìwádìí kùnà.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox kò rí fódà ìṣètò rẹ̀, nítorí náà a kò lè ṣàkóso àwọn ọ̀nà ìṣísílẹ̀ láti ibí.
+shortcut_no_folder = ZBox kò mọ fódà rẹ̀, nítorí náà a kò lè ṣẹ̀dá ọ̀nà abuja láti ibí.
+shortcut_failed_settings = A kò lè ṣẹ̀dá ọ̀nà abuja orí tábìlì:\n\n{error}
+
+unlock_method_failed = {what} kò ṣiṣẹ́.\n\n{error}
+unlock_check_failed = A kò lè ṣàyẹ̀wò ọ̀rọ̀ìpamọ́ àkọ́kọ́.\n\n{error}
+unlock_password_wrong = Ọ̀rọ̀ìpamọ́ àkọ́kọ́ yẹn kò tọ́.
+unlock_add_failed = A kò lè fi {what} kún un.\n\n{error}
+unlock_passkey_setup_failed = A kò lè ṣètò kọ́kọ́rọ́ ìwọlé lórí kọ̀ǹpútà yìí, nítorí náà a kò yí nǹkan kan padà.\n\n{error}
+unlock_method_test_failed = Ọ̀nà yẹn kò ṣiṣẹ́.\n\n{error}
+
+account_list_unreadable = ZBox kò lè ṣí àtòjọ àkọọ́lẹ̀ rẹ.\n\n{error}\n\nA kò gbé àkọọ́lẹ̀ kankan wá, a kò sì yí fáìlì náà padà, nítorí náà a kò pàdánù nǹkan kan. A kọ fífi kún un, ṣíṣàtúnṣe àti yíyọ àwọn àkọọ́lẹ̀ kúrò títí a ó fi lè kà á.
+account_list_no_accounts = ZBox kò lè ṣí àtòjọ àkọọ́lẹ̀ rẹ nínú ìpàdé yìí ({error}), nítorí náà kò sí àkọọ́lẹ̀ láti yàn. A kò pàdánù nǹkan kan a kò sì yí nǹkan kan padà. Pa ZBox kí o tún bẹ̀rẹ̀ rẹ̀, kí o sì tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ rẹ nígbà tí a bá béèrè rẹ̀.
+open_message_failed = A kò lè ṣí ìfiránṣẹ́.\n\n{error}
+filters_list_failed = A kò lè ṣàkójọ àwọn ìfiránṣẹ́ nínú {folder}.\n\n{error}
+filters_move_failed = A kò lè gbé àwọn ìfiránṣẹ́ tí a ṣàlẹ̀mọ́.\n\n{error}
+cache_clear_failed = A kò lè pa ibi ìkópamọ́ rẹ́.\n\n{error}
+folder_create_failed = A kò lè ṣẹ̀dá fódà.\n\n{error}
+folder_rename_failed = A kò lè tún fódà sọ̀rọ̀.\n\n{error}
+folder_delete_failed = A kò lè pa fódà rẹ́.\n\n{error}
+folder_subscribe_failed = A kò lè forúkọ sílẹ̀ fún fódà.\n\n{error}
+folder_unsubscribe_failed = A kò lè yọ orúkọ kúrò nínú fódà.\n\n{error}
+saved_open_failed = A kò lè ṣí fáìlì náà.\n\n{error}
+saved_parse_failed = A kò lè ṣàyẹ̀wò fáìlì yìí gẹ́gẹ́ bí ìfiránṣẹ́ ímeèlì.\n\n{error}
+save_file_failed = A kò lè fi fáìlì pamọ́.\n\n{error}
+save_fetch_failed = A kò lè mú ìfiránṣẹ́ wá láti fi pamọ́.\n\n{error}
+empty_trash_failed = A kò lè sọ Àpótí ìdọ̀tí di òfo.\n\n{error}
+empty_junk_failed = A kò lè sọ Àwúrúju di òfo.\n\n{error}
+export_write_failed = A kò lè kọ fáìlì ìkójáde.\n\n{error}
+import_read_failed = A kò lè ka fáìlì yìí gẹ́gẹ́ bí ìkójáde ZBox.\n\n{error}
+import_not_export = Fáìlì yìí kò jọ ìkójáde ZBox.\n\n{error}
+search_open_failed = A kò lè ṣí ìfiránṣẹ́ yìí.
+related_load_failed = A kò lè gbé ìfiránṣẹ́ yìí wá.\n\n{error}
+reply_load_failed = A kò lè gbé ìfiránṣẹ́ láti dáhùn sí wá.\n\n{error}
+forward_load_failed = A kò lè gbé ìfiránṣẹ́ láti tún fi ránṣẹ́ wá.\n\n{error}
+action_failed = A kò lè parí ìgbésẹ̀ yìí.\n\n{error}
+undo_failed = A kò lè padà {label}.\n\n{error}
+copy_failed = A kò lè dàkọ ìfiránṣẹ́.\n\n{error}
+delete_failed = A kò lè pa ìfiránṣẹ́ rẹ́.\n\n{error}
+archive_failed = A kò lè pamọ́ ìfiránṣẹ́ sí ìpamọ́.\n\n{error}
+master_password_not_changed = A kò lè yí ọ̀rọ̀ìpamọ́ àkọ́kọ́ padà: {error}
+shortcut_failed_startup = A kò lè ṣẹ̀dá ọ̀nà abuja orí tábìlì:\n\n{error}\n\nZBox yóò tẹ̀síwájú láti bẹ̀rẹ̀. O lè tún gbìyànjú lẹ́yìn náà láti Ètò.
+account_locked_action = ZBox kò lè %s. A kò lè ṣí àtòjọ àkọọ́lẹ̀ nínú ìpàdé yìí (%s), a kò sì yí nǹkan kan padà. Pa ZBox kí o tún bẹ̀rẹ̀ rẹ̀, kí o sì tẹ ọ̀rọ̀ìpamọ́ àkọ́kọ́ rẹ tí a bá béèrè rẹ̀.
+send_tls_mismatch = A kò lè fi ìfiránṣẹ́ ránṣẹ́. Olùpèsè ìjáde dáhùn láìsí ìfi àṣírí pa, nítorí náà ìfi àṣírí pa ìjáde kò bá ibùdó mu. Nínú Àwọn irinṣẹ́, Ètò àkọọ́lẹ̀ àti ìdánimọ̀, lo STARTTLS fún ibùdó 587, tàbí SSL/TLS fún ibùdó 465, lẹ́yìn náà tún fi ránṣẹ́.\n\n{error}
+mark_folder_read_failed = A kò lè sàmì fódà sí tí a ti kà.\n\n{error}
+update_failed = A kò lè gba àtúnṣe náà, nítorí náà a kò yí nǹkan kan padà.\n\n{error}
+update_rolled_back = Àtúnṣe náà kò lè bẹ̀rẹ̀, nítorí náà a dá ẹ̀dà tó ṣáájú padà.
+attachment_open_failed = A kò lè ṣí àfikún.\n\n{error}
+headers_failed = A kò lè gbé àwọn àkọlé ìfiránṣẹ́ wá.\n\n{error}
+wizard_ms_sign_in_first = Wọlé pẹ̀lú Microsoft kí o tó tẹ̀síwájú. Lo ọ̀kan nínú àwọn bọ́tìnì ìwọlé méjì lórí ojú ìwé yìí.
+wizard_provider_unsupported = ZBox kò lè wọlé sí olùpèsè yìí. Àkíyèsí tó wà lórí ojú ìwé yìí ṣàlàyé ìdí. Padà sẹ́yìn kí o lo àdírẹ́sì ímeèlì mìíràn, tàbí fagilé.
+acct_ms_sign_in_first = Wọlé pẹ̀lú Microsoft kí o tó fi pamọ́, tàbí yan Ọ̀rọ̀ìpamọ́ gẹ́gẹ́ bí ọ̀nà ìwọlé.
+ms_sign_in_again = A tún nílò ìwọlé Microsoft fún {account}. Ṣí Ètò àkọọ́lẹ̀ àti ìdánimọ̀ kí o sì wọlé níbẹ̀.
+graph_pgp_too_large = Ìfiránṣẹ́ tí a fi àṣírí pa tàbí tí a buwọ́lù yìí tóbi ju èyí tí Microsoft gbà láàyè fún ímeèlì bẹ́ẹ̀ lọ, tó bí 3 MB. Fi àwọn àfikún kéékèèké ránṣẹ́, tàbí pa Fi àṣírí pa àti Buwọ́lù ní díjítà fún ìfiránṣẹ́ yìí.
+empty_trash_all_failed = A kò lè sọ Àpótí ìdọ̀tí di òfo fún: {accounts}
+
+[help]

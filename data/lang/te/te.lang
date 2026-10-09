@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = తెలుగు
+code = te
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = సందేశం పంపబడింది.
+draft_saved = డ్రాఫ్ట్ సేవ్ చేయబడింది.
+signature_inserted = సంతకం చేర్చబడింది.
+signature_none = ఈ ఖాతాకు సంతకం లేదు.
+signature_saved = సంతకం సేవ్ చేయబడింది.
+signature_not_saved = సంతకం సేవ్ చేయబడలేదు.
+pasted_as_quotation = ఉల్లేఖనంగా అతికించబడింది.
+clipboard_empty = క్లిప్‌బోర్డ్‌లో ఏమీ లేదు.
+word_count = {words} పదాలు, {characters} అక్షరాలు.
+report_copied = నివేదిక కాపీ చేయబడింది.
+compose_tab_needed = ఆ ఆదేశానికి రాసే ట్యాబ్ అవసరం.
+attach_file_instead = వదిలిన ఫైళ్లు సందేశం పాఠ్యంలో చేర్చబడవు. ఒకదాన్ని పంపడానికి ఫైల్ జోడించు ఉపయోగించండి.
+
+# Formatting in the message body
+formatting_here = ఇక్కడ ఫార్మాటింగ్: {formatting}.
+no_formatting_here = ఇక్కడ ఫార్మాటింగ్ లేదు, సాదా పాఠ్యం.
+
+# Spelling
+nothing_to_check = తనిఖీ చేయడానికి ఏమీ లేదు.
+no_misspellings = అక్షర దోషాలు లేవు.
+spelling_dictionary_unavailable = స్పెల్లింగ్ నిఘంటువు అందుబాటులో లేదు.
+next_misspelling_first = ముందుగా తదుపరి అక్షర దోషాన్ని ఉపయోగించండి.
+word_added = {word} నిఘంటువుకు జోడించబడింది.
+word_not_added = {word} జోడించబడలేదు.
+corrections_applied_one = 1 సవరణ వర్తింపజేయబడింది.
+corrections_applied_many = {count} సవరణలు వర్తింపజేయబడ్డాయి.
+corrections_applied_partly = {total}లో {applied} సవరణలు వర్తింపజేయబడ్డాయి. మిగిలినవి తిరస్కరించబడ్డాయి; లాగ్ చూడండి.
+occurrences_replaced_one = 1 సంఘటన మార్చబడింది.
+occurrences_replaced_many = {count} సంఘటనలు మార్చబడ్డాయి.
+
+# Reading mail
+message_did_not_open = సందేశం తెరవబడలేదు. సర్వర్ స్పందించలేదు. మళ్లీ ప్రయత్నించడానికి Enter నొక్కండి.
+thread_open = ఈ థ్రెడ్‌లో {messages}. మూసివేయడానికి మళ్లీ నొక్కండి.
+no_thread_selected = థ్రెడ్ ఎంచుకోబడలేదు.
+thread_watched = థ్రెడ్ గమనించబడుతోంది.
+thread_not_watched = థ్రెడ్ ఇక గమనించబడదు.
+thread_ignored = థ్రెడ్ విస్మరించబడింది.
+thread_not_ignored = థ్రెడ్ ఇక విస్మరించబడదు.
+none_found = ఏమీ కనబడలేదు.
+refreshing_this_folder = ఈ ఫోల్డర్‌ను రిఫ్రెష్ చేస్తోంది.
+refreshing_all_accounts = అన్ని ఖాతాలను రిఫ్రెష్ చేస్తోంది.
+message_view_html = సందేశ వీక్షణ: HTML (రెండర్ చేయబడింది).
+message_view_text = సందేశ వీక్షణ: పాఠ్యం.
+html_view_still_loading = సందేశం ఇంకా లోడ్ అవుతోంది. Escape దాన్ని మూసివేస్తుంది.
+message_still_opening = సందేశాన్ని తెరుస్తోంది. సర్వర్ నెమ్మదిగా ఉంది.
+remote_content_blocked = రిమోట్ కంటెంట్ నిరోధించబడింది.
+remote_content_unblocked = రిమోట్ కంటెంట్ నిరోధం తొలగించబడింది.
+remote_content_already_showing = ఈ సందేశంలో రిమోట్ కంటెంట్ ఇప్పటికే చూపబడుతోంది.
+archived = ఆర్కైవ్ చేయబడింది.
+copied_to_folder = {to_folder}కు కాపీ చేయబడింది.
+deleted_one = సందేశం శాశ్వతంగా తొలగించబడింది.
+deleted_many = {count} సందేశాలు శాశ్వతంగా తొలగించబడ్డాయి.
+trashed_one = సందేశం ట్రాష్‌కు తరలించబడింది.
+trashed_many = {count} సందేశాలు ట్రాష్‌కు తరలించబడ్డాయి.
+
+# Accounts and new mail
+no_account_yet = దూకడానికి ఇంకా ఖాతా లేదు.
+inbox_landed = {name} ఇన్‌బాక్స్.
+account_enabled = {name} ప్రారంభించబడింది.
+auto_check_paused = {account} కోసం స్వయంచాలక తనిఖీ నిలిపివేయబడింది.
+auto_check_resumed = {account} కోసం స్వయంచాలక తనిఖీ ఆన్ చేయబడింది.
+account_disabled = {name} నిలిపివేయబడింది.
+new_mail_one = {name} కోసం 1 కొత్త సందేశం.
+new_mail_many = {name} కోసం {count} కొత్త సందేశాలు.
+refresh_all_done_one = 1 ఖాతా రిఫ్రెష్ చేయబడింది.
+refresh_all_done_many = {count} ఖాతాలు రిఫ్రెష్ చేయబడ్డాయి.
+refresh_all_done_failures = {count} ఖాతాలు రిఫ్రెష్ చేయబడ్డాయి, {failed} రిఫ్రెష్ కాలేదు.
+refresh_all_done_failures_one = {count} ఖాతా రిఫ్రెష్ చేయబడింది, {failed} రిఫ్రెష్ కాలేదు.
+
+# The sender of the message in view
+sender_address_copied = {sender}. చిరునామా కాపీ చేయబడింది.
+sender_no_address = {sender}. కాపీ చేయడానికి చిరునామా లేదు.
+clipboard_not_opened = {sender}. క్లిప్‌బోర్డ్ తెరవబడలేదు.
+
+# The signature editor
+signature_page_formatted = ఫార్మాట్ చేయబడింది. ఇదే సేవ్ చేయబడుతుంది.
+signature_page_html = HTML మూలం. ఇదే సేవ్ చేయబడుతుంది.
+signature_page_html_still_wins = ఫార్మాట్ చేయబడింది. HTML మూలమే ఇప్పటికీ సేవ్ చేయబడుతుంది.
+
+# Background work
+phishing_list_updating = ఫిషింగ్ జాబితా నేపథ్యంలో నవీకరించబడుతోంది.
+cache_cleared = {files} కాష్ ఫైళ్లు తొలగించబడ్డాయి, {size} MB.
+hotkeys_diagnostic_on = హాట్‌కీల డయాగ్నోస్టిక్ ఆన్, ఎంచుకోబడింది
+hotkeys_diagnostic_off = హాట్‌కీల డయాగ్నోస్టిక్ ఆఫ్, ఎంపిక తొలగించబడింది
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = ఆర్కైవ్
+action_delete = తొలగించు
+action_delete_permanently = శాశ్వతంగా తొలగించు
+action_mark_as_junk = జంక్‌గా గుర్తించు
+action_mark_as_not_junk = జంక్ కాదని గుర్తించు
+action_move_to = తరలించు
+action_copy_to = కాపీ చేయి
+action_mark_message = సందేశాన్ని గుర్తించు
+action_undo = రద్దు చేయి
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} రద్దు చేయబడింది.
+undo_done_many = {count} సందేశాలకు {action} రద్దు చేయబడింది.
+junk_marked_one = జంక్‌గా గుర్తించబడింది.
+junk_marked_many = {count} సందేశాలు జంక్‌గా గుర్తించబడ్డాయి.
+junk_no_new_sender = కొత్త పంపినవారు నిరోధించబడలేదు: ఇప్పటికే నిరోధించబడ్డారు, మెయిలింగ్ జాబితా, లేదా మీ స్వంత చిరునామాలలో ఒకటి.
+not_junk_marked_one = జంక్ కాదని గుర్తించబడింది.
+not_junk_marked_many = {count} సందేశాలు జంక్ కాదని గుర్తించబడ్డాయి.
+moved_to_one = {to_folder}కు తరలించబడింది.
+moved_to_many = {count} సందేశాలు {to_folder}కు తరలించబడ్డాయి.
+copied_to_many = {count} సందేశాలు {to_folder}కు కాపీ చేయబడ్డాయి.
+marked_read = చదివినట్లు గుర్తించబడింది.
+marked_unread = చదవనట్లు గుర్తించబడింది.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total}లో {completed} తర్వాత రద్దు చేయబడింది. {succeeded} విజయవంతమయ్యాయి, {failed} విఫలమయ్యాయి.
+bulk_failed_one = {done} 1 సందేశంలో {failed} విఫలమైంది.
+bulk_failed_many = {done} {total} సందేశాలలో {failed} విఫలమయ్యాయి.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = బోల్డ్
+format_word_italic = ఇటాలిక్
+format_word_strike = కొట్టివేత
+format_word_href = లింక్
+format_word_bullet = బుల్లెట్ జాబితా
+format_word_number = సంఖ్యల జాబితా
+format_word_quote = ఉల్లేఖనం
+format_word_code = కోడ్
+format_word_heading1 = శీర్షిక
+format_applied = {formatting} వర్తింపజేయబడింది.
+format_inserted = {formatting} చేర్చబడింది.
+format_not_available = సాదా సందేశ భాగంలో {formatting} అందుబాటులో లేదు.
+format_on = {formatting} ఆన్
+format_off = {formatting} ఆఫ్
+link_applied = లింక్ వర్తింపజేయబడింది.
+link_applied_to_selection = ఎంపికకు లింక్ వర్తింపజేయబడింది.
+plain_body_formatting = సాదా సందేశ భాగం తన ఫార్మాటింగ్‌ను ట్యాగ్‌లుగా చూపుతుంది.
+
+# Reaching either end of a thread
+thread_edge_first = ఈ థ్రెడ్‌లో మొదటి సందేశం. మూసివేయడానికి మళ్లీ నొక్కండి.
+thread_edge_last = ఈ థ్రెడ్‌లో చివరి సందేశం. మూసివేయడానికి మళ్లీ నొక్కండి.
+jump_unified_inbox = ఏకీకృత ఇన్‌బాక్స్.
+remote_none = ఈ సందేశంలో రిమోట్ కంటెంట్ లేదు.
+sender_none = ఈ సందేశంలో పంపినవారు లేరు.
+sender_name_no_address = %s, చిరునామా లేదు
+signature_not_switched = సంతకం మార్చబడలేదు. ఈ ఖాతా సంతకాన్ని చేర్చడానికి Ctrl+Shift+S నొక్కండి.
+signature_removed_no_signature = సంతకం తొలగించబడింది. ఈ ఖాతాకు ఏదీ లేదు.
+signature_switched = సంతకం ఈ ఖాతా సంతకానికి మార్చబడింది.
+spell_not_replaced = పదం మార్చబడలేదు.
+spell_replaced_with = {word}తో మార్చబడింది.
+folder_marked_read = {count} సందేశాలు చదివినట్లు గుర్తించబడ్డాయి.
+folder_no_unread = చదవని సందేశాలు లేవు.
+threads_all_collapsed = అన్ని థ్రెడ్‌లు కుదించబడ్డాయి.
+threads_all_expanded = అన్ని థ్రెడ్‌లు విస్తరించబడ్డాయి.
+upd_percent = {percent} శాతం
+upd_download_done = డౌన్‌లోడ్ పూర్తయింది. నవీకరణను సిద్ధం చేస్తోంది...
+upd_updated_to = ZBox {version}కు నవీకరించబడింది.
+header_copied = కాపీ చేయబడింది.
+headers_copied = అన్ని హెడర్‌లు కాపీ చేయబడ్డాయి.
+identity_copies_updated = ఈ గుర్తింపు కోసం ప్రతి మరియు గోప్య ప్రతి నవీకరించబడ్డాయి.
+signature_switched_identity = సంతకం ఈ గుర్తింపు సంతకానికి మార్చబడింది.
+signature_removed_identity = సంతకం తొలగించబడింది. ఈ గుర్తింపుకు ఏదీ లేదు.
+signature_not_switched_identity = సంతకం మార్చబడలేదు. ఈ గుర్తింపు సంతకాన్ని చేర్చడానికి Ctrl+Shift+S నొక్కండి.
+signature_none_identity = ఈ గుర్తింపుకు సంతకం లేదు.
+move_keys_no_selection = ముందుగా ఒక సందేశాన్ని ఎంచుకోండి.
+move_keys_no_folders = ఎంచుకోవడానికి ఇంకా ఫోల్డర్‌లు లేవు. కొద్దిసేపట్లో మళ్లీ ప్రయత్నించండి.
+block_sender_done_one = {sender} నిరోధించబడ్డారు. వారి కొత్త సందేశాలు ట్రాష్‌కు వెళ్తాయి.
+block_sender_done_many = {count} మంది పంపినవారు నిరోధించబడ్డారు. వారి కొత్త సందేశాలు ట్రాష్‌కు వెళ్తాయి.
+block_sender_already = {sender} ఇప్పటికే నిరోధించబడ్డారు.
+block_sender_own = నిరోధించబడలేదు: అది మీ స్వంత చిరునామాలలో ఒకటి.
+block_sender_list_unknown = నిరోధించబడలేదు: ఈ సందేశం మెయిలింగ్ జాబితా ద్వారా వచ్చింది మరియు ఎవరు పంపారో చెప్పదు. జాబితా చిరునామాను నిరోధిస్తే అందులోని అందరూ నిరోధించబడతారు.
+block_sender_moved = పంపినవారు నిరోధించబడ్డారు. {count} సందేశాలు ట్రాష్‌కు తరలించబడ్డాయి.
+block_senders_moved = {senders} మంది పంపినవారు నిరోధించబడ్డారు. {count} సందేశాలు ట్రాష్‌కు తరలించబడ్డాయి.
+unblock_sender_moved = పంపినవారి నిరోధం తొలగించబడింది. {count} సందేశాలు ఇన్‌బాక్స్‌కు తరలించబడ్డాయి.
+unblock_senders_moved = {senders} మంది పంపినవారి నిరోధం తొలగించబడింది. {count} సందేశాలు ఇన్‌బాక్స్‌కు తరలించబడ్డాయి.
+unblock_sender_done = {sender} నిరోధం తొలగించబడింది.
+unblock_sender_not_blocked = {sender} నిరోధించబడలేదు.
+pgp_cm_on = {name} ఆన్.
+pgp_cm_off = {name} ఆఫ్.
+pgp_cm_identity = ఎన్‌క్రిప్షన్ సెట్టింగ్‌లు ఈ గుర్తింపు సెట్టింగ్‌లకు మార్చబడ్డాయి.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = పైన ఏదైనా టైప్ చేసి Enter నొక్కండి లేదా వెతుకు ఎంచుకోండి.
+search_no_account = ముందుగా ఒక ఖాతాను జోడించండి.
+search_no_term = వెతకడానికి పదాలను టైప్ చేయండి, లేదా తేదీ లేదా చెక్ బాక్స్‌ను ఎంచుకోండి.
+search_running = వెతుకుతోంది...
+search_none = "{term}" కోసం సరిపోలికలు లేవు.
+search_found_one = "{term}" కోసం 1 సరిపోలిక.
+search_found_many = "{term}" కోసం {count} సరిపోలికలు.
+search_bad_date = తేదీని సంవత్సరం-నెల-రోజు రూపంలో టైప్ చేయండి, ఉదాహరణకు 2025-12-31, ఐచ్ఛికంగా 14:30 వంటి సమయంతో.
+search_bad_range = తేదీ పరిధి ముగింపు దాని ప్రారంభానికి ముందు ఉంది.
+search_none_any = సరిపోలే సందేశాలు లేవు.
+search_found_one_any = 1 సందేశం కనబడింది.
+search_found_many_any = {count} సందేశాలు కనబడ్డాయి.
+search_failed = వెతకడం విఫలమైంది.
+
+# The related messages tab
+related_running = వెతుకుతోంది...
+related_none = సంబంధిత సందేశాలు కనబడలేదు.
+related_found_one = 1 సంబంధిత సందేశం కనబడింది.
+related_found_many = {count} సంబంధిత సందేశాలు కనబడ్డాయి.
+related_failed = సంబంధిత సందేశాల కోసం వెతకలేకపోయింది.
+
+# Writing and sending
+sending_via = {sender} ద్వారా పంపుతోంది...
+send_failed = పంపడం విఫలమైంది. వివరాల కోసం లాగ్‌లు చూడండి.
+draft_autosaved = డ్రాఫ్ట్ స్వయంచాలకంగా సేవ్ చేయబడింది.
+draft_autosave_failed = డ్రాఫ్ట్ స్వయంచాలక సేవ్ విఫలమైంది. వివరాల కోసం లాగ్‌లు చూడండి.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = {sender} నుండి వచ్చే సందేశాలకు ఇప్పుడు రిమోట్ కంటెంట్ లోడ్ అవుతుంది.
+downloading_attachment = {filename} డౌన్‌లోడ్ అవుతోంది...
+downloading_attachments_one = 1 జోడింపు డౌన్‌లోడ్ అవుతోంది...
+downloading_attachments_many = {count} జోడింపులు డౌన్‌లోడ్ అవుతున్నాయి...
+saved_to = {folder}లో సేవ్ చేయబడింది
+attachment_download_failed = జోడింపు డౌన్‌లోడ్ విఫలమైంది.
+
+# Getting mail onto the screen
+loading_folder = {account} కోసం {folder} లోడ్ అవుతోంది...
+messages_in_folder = {folder}లో {count} సందేశాలు.
+messages_in_folder_cached = {folder}లో {count} సందేశాలు (చివరిగా సమకాలీకరించిన కాపీ, నవీకరిస్తోంది...)
+no_offline_copy = {folder} యొక్క ఆఫ్‌లైన్ కాపీ ఇంకా లేదు.
+refresh_failed_cached = {folder} రిఫ్రెష్ కాలేదు: చివరిగా సమకాలీకరించిన కాపీ చూపబడుతోంది.
+no_such_folder = ఈ ఖాతాకు {folder} ఫోల్డర్ లేదు.
+load_failed = సందేశాలు లోడ్ కాలేదు. వివరాల కోసం లాగ్‌లు చూడండి.
+no_more_to_load = ఈ ఫోల్డర్‌లో లోడ్ చేయడానికి ఇంకా సందేశాలు లేవు.
+loading_more = {folder}లో మరిన్ని సందేశాలు లోడ్ అవుతున్నాయి...
+more_loaded = మరో {count} సందేశాలు లోడ్ అయ్యాయి.
+no_more_messages = ఈ ఫోల్డర్‌లో ఇంకా సందేశాలు లేవు.
+load_more_failed = మరిన్ని సందేశాలు లోడ్ కాలేదు: {error}
+loading_unified = ఏకీకృత {folder} లోడ్ అవుతోంది...
+messages_in_unified = ఏకీకృత {folder}లో అన్ని ఖాతాలలో {count} సందేశాలు.
+messages_in_unified_cached = ఏకీకృత {folder}లో {count} సందేశాలు (చివరిగా సమకాలీకరించిన కాపీ, నవీకరిస్తోంది...)
+auto_purge_done = స్వయంచాలక శుభ్రపరచడం ట్రాష్/జంక్ నుండి {count} పాత సందేశాలను తొలగించింది.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = సిద్ధంగా ఉంది.
+opening_message = సందేశాన్ని తెరుస్తోంది...
+opening_message_already = సందేశాన్ని తెరుస్తోంది... (ఇప్పటికే లోడ్ అవుతోంది)
+could_not_open_message = సందేశాన్ని తెరవలేకపోయింది.
+could_not_open_that_message = ఆ సందేశాన్ని తెరవలేకపోయింది.
+could_not_load_message = ఈ సందేశాన్ని లోడ్ చేయలేకపోయింది.
+message_still_loading = ఆ సందేశం ఇంకా లోడ్ అవుతోంది.
+folder_still_loading = ఈ ఫోల్డర్ ఇంకా లోడ్ అవుతోంది -- కొద్దిసేపట్లో మళ్లీ ప్రయత్నించండి.
+not_in_thread = ఈ సందేశం ఏ థ్రెడ్‌లోనూ భాగం కాదు.
+no_longer_in_thread = ఈ సందేశం ఇక థ్రెడ్‌లో లేదు.
+thread_position = ఈ థ్రెడ్‌లో {total}లో {position}వ సందేశం.
+thread_finished_one = ఈ థ్రెడ్ ముగిసింది (1 సందేశం).
+thread_finished_many = ఈ థ్రెడ్ ముగిసింది ({count} సందేశాలు).
+select_message_first = ముందుగా ఒక సందేశాన్ని ఎంచుకోండి.
+conversation_failed = ఈ సంభాషణను తెరవలేకపోయింది.
+select_message_for_related = సంబంధిత సందేశాలను చూడటానికి ముందుగా ఒక సందేశాన్ని ఎంచుకోండి.
+looking_for_related = సంబంధిత సందేశాల కోసం వెతుకుతోంది...
+no_threading_headers = ఈ సందేశానికి వెతకడానికి Message-ID లేదా థ్రెడింగ్ హెడర్‌లు లేవు.
+reply_one_at_a_time = ప్రత్యుత్తరం ఒకేసారి ఒక సందేశానికి పని చేస్తుంది. దయచేసి ఒక్క సందేశాన్ని ఎంచుకోండి.
+select_message_to_reply = ప్రత్యుత్తరం ఇవ్వడానికి ముందుగా ఒక సందేశాన్ని ఎంచుకోండి.
+preparing_reply = ప్రత్యుత్తరాన్ని సిద్ధం చేస్తోంది...
+reply_load_failed = ప్రత్యుత్తరం కోసం అసలు సందేశాన్ని లోడ్ చేయలేకపోయింది.
+select_message_to_forward = ఫార్వర్డ్ చేయడానికి ముందుగా ఒక సందేశాన్ని ఎంచుకోండి.
+preparing_forward = ఫార్వర్డ్ చేయడానికి సందేశాన్ని సిద్ధం చేస్తోంది...
+forward_load_failed = ఫార్వర్డ్ చేయవలసిన సందేశాన్ని లోడ్ చేయలేకపోయింది.
+compose_tab_needed_hint = ఆ ఆదేశానికి రాసే ట్యాబ్ అవసరం. సందేశం రాయడానికి Ctrl+N నొక్కండి.
+open_message_first_view = ముందుగా ఒక సందేశాన్ని తెరిచి, దాని వీక్షణను మార్చడానికి Ctrl+B నొక్కండి.
+open_message_first_remote = ముందుగా ఒక సందేశాన్ని తెరిచి, దాని రిమోట్ కంటెంట్‌ను లోడ్ చేయడానికి Ctrl+Shift+I నొక్కండి.
+
+# Acting on messages
+copying_message = సందేశాన్ని కాపీ చేస్తోంది...
+copy_failed = కాపీ విఫలమైంది.
+delete_failed = తొలగింపు విఫలమైంది.
+already_in_archive = ఇప్పటికే ఆర్కైవ్‌లో ఉంది.
+archiving = ఆర్కైవ్ చేస్తోంది...
+archive_failed = ఆర్కైవ్ విఫలమైంది.
+action_failed = {action} విఫలమైంది.
+nothing_to_undo = రద్దు చేయడానికి ఏమీ లేదు.
+private_mode_on = ప్రైవేట్ మోడ్ ఆన్‌లో ఉంది. ఈ కంప్యూటర్‌లో ZBox ఉంచిన మీ మెయిల్ కాపీలు తొలగించబడ్డాయి.
+private_mode_off = ప్రైవేట్ మోడ్ ఆఫ్‌లో ఉంది. ZBox మళ్లీ మీ మెయిల్ కాపీలను ఉంచుతుంది.
+undo_failed = {action} రద్దు చేయలేకపోయింది.
+
+# Views and folders
+folder_pane_all = ఫోల్డర్ పేన్: అన్ని ఫోల్డర్‌లు.
+folder_pane_unified = ఫోల్డర్ పేన్: ఏకీకృత ఫోల్డర్‌లు.
+sorted_ascending = {field} ప్రకారం క్రమబద్ధీకరించబడింది, ఆరోహణ.
+sorted_descending = {field} ప్రకారం క్రమబద్ధీకరించబడింది, అవరోహణ.
+unified_folders_updated = ఏకీకృత ఫోల్డర్‌లు నవీకరించబడ్డాయి.
+zoom_reset = సందేశం ఫాంట్ పరిమాణం డిఫాల్ట్‌కు రీసెట్ చేయబడింది.
+folder_creating = "{folder}" ఫోల్డర్‌ను సృష్టిస్తోంది...
+folder_created = "{folder}" ఫోల్డర్ సృష్టించబడింది.
+folder_create_failed = ఫోల్డర్‌ను సృష్టించలేకపోయింది.
+folder_renaming = "{folder}" పేరును "{new_name}"కు మారుస్తోంది...
+folder_renamed = ఫోల్డర్ పేరు "{new_name}"కు మార్చబడింది.
+folder_rename_failed = ఫోల్డర్ పేరును మార్చలేకపోయింది.
+folder_deleting = "{folder}" ఫోల్డర్‌ను తొలగిస్తోంది...
+folder_deleted = ఫోల్డర్ తొలగించబడింది.
+folder_delete_failed = ఫోల్డర్‌ను తొలగించలేకపోయింది.
+folder_subscribing = "{folder}"కు చందా చేరుతోంది...
+folder_unsubscribing = "{folder}" చందాను రద్దు చేస్తోంది...
+folder_subscribed = చందా చేరారు.
+folder_unsubscribed = చందా రద్దు చేయబడింది.
+folder_subscribe_failed = ఫోల్డర్‌కు చందా చేరలేకపోయింది.
+folder_unsubscribe_failed = ఫోల్డర్ చందాను రద్దు చేయలేకపోయింది.
+
+# Accounts
+account_not_added = ఖాతా జోడించబడలేదు.
+account_added = ఖాతా జోడించబడింది: {account}
+account_settings_not_saved = ఖాతా సెట్టింగ్‌లు సేవ్ చేయబడలేదు.
+account_updated = ఖాతా నవీకరించబడింది: {account}
+account_not_removed = ఖాతా తొలగించబడలేదు.
+account_removed = ఖాతా తొలగించబడింది.
+account_removed_with_files = ఖాతా తొలగించబడింది. {count} స్థానిక ఫైళ్లు తొలగించబడ్డాయి.
+default_account_failed = డిఫాల్ట్ ఖాతాను సెట్ చేయలేకపోయింది.
+default_account_set = {account} ఇప్పుడు డిఫాల్ట్ ఖాతా.
+auto_check_not_saved = స్వయంచాలక తనిఖీ సెట్టింగ్ సేవ్ చేయబడలేదు.
+mute_not_saved = మ్యూట్ సెట్టింగ్ సేవ్ చేయబడలేదు.
+account_muted = {account} మ్యూట్ చేయబడింది.
+account_unmuted = {account} మ్యూట్ తొలగించబడింది.
+export_done = {count} ఖాతాలు మరియు సెట్టింగ్‌లు {path}కు ఎగుమతి చేయబడ్డాయి.
+import_done = {path} నుండి {count} ఖాతాలు దిగుమతి చేయబడ్డాయి.
+
+# Filters, cache and the background lists
+filters_not_saved = ఫిల్టర్‌లు సేవ్ చేయబడలేదు.
+filters_saved = {account} కోసం ఫిల్టర్‌లు సేవ్ చేయబడ్డాయి.
+filters_checking = మీ ఫిల్టర్‌లతో {folder}ను తనిఖీ చేస్తోంది...
+filters_none_matched = ఇప్పుడే అమలు చేయి: {folder}లో ఏ సందేశమూ ప్రారంభించిన ఏ నియమానికీ సరిపోలలేదు.
+filters_run_failed = ఫిల్టర్‌లను అమలు చేయలేకపోయింది.
+filters_moving = ఫిల్టర్ చేసిన {count} సందేశాలను తరలిస్తోంది...
+filters_move_failures = ఫిల్టర్‌లు: {count} సందేశాలను తరలించలేకపోయింది.
+filters_moved = ఫిల్టర్‌లు {folder} నుండి {count} సందేశాలను తరలించాయి.
+filters_move_failed = ఫిల్టర్ చేసిన సందేశాలను తరలించలేకపోయింది.
+cache_not_cleared = కాష్ తొలగించబడలేదు.
+auto_cache_cleanup = స్వయంచాలక కాష్ శుభ్రపరచడం: {age} కంటే పాత సందేశాలు.
+phishing_update_failed = ఫిషింగ్ జాబితాను నవీకరించలేకపోయింది: {error}
+blocklist_update_failed = నిరోధ జాబితాను నవీకరించలేకపోయింది: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = ముందుగా ఒక సందేశాన్ని తెరిచి, ఆపై ఇలా సేవ్ చేయి ఉపయోగించండి.
+saving_message = సందేశాన్ని సేవ్ చేస్తోంది...
+save_file_failed = ఫైల్‌ను సేవ్ చేయలేకపోయింది.
+save_fetch_failed = సేవ్ చేయడానికి సందేశాన్ని తీసుకురాలేకపోయింది.
+open_message_first_print = ముందుగా ఒక సందేశాన్ని తెరిచి, ఆపై ముద్రించు ఉపయోగించండి.
+open_message_first_preview = ముందుగా ఒక సందేశాన్ని తెరిచి, ఆపై ముద్రణ ప్రివ్యూ ఉపయోగించండి.
+refreshing_accounts = {count} ఖాతాలను రిఫ్రెష్ చేస్తోంది...
+emptying_trash = {account} ట్రాష్‌ను ఖాళీ చేస్తోంది...
+trash_already_empty = ట్రాష్ ఇప్పటికే ఖాళీగా ఉంది.
+trash_emptied = ట్రాష్ ఖాళీ చేయబడింది: {count} సందేశాలు తొలగించబడ్డాయి.
+empty_trash_failed = ట్రాష్‌ను ఖాళీ చేయలేకపోయింది.
+emptying_junk = {account} జంక్‌ను ఖాళీ చేస్తోంది...
+junk_already_empty = జంక్ ఇప్పటికే ఖాళీగా ఉంది.
+junk_emptied = జంక్ ఖాళీ చేయబడింది: {count} సందేశాలు తొలగించబడ్డాయి.
+junk_emptied_prefix = జంక్ ఖాళీ చేయబడింది:
+junk_part_purged = {count} తొలగించబడ్డాయి
+junk_part_in_trash = {count} ట్రాష్‌కు తరలించబడ్డాయి కానీ తొలగింపు నిర్ధారించబడలేదు, ట్రాష్‌ను తనిఖీ చేయండి
+junk_part_not_moved = {count} ట్రాష్‌కు తరలించబడలేదు, ఇప్పటికీ జంక్‌లో ఉన్నాయి
+empty_junk_failed = జంక్‌ను ఖాళీ చేయలేకపోయింది.
+back_online = మళ్లీ ఆన్‌లైన్‌లో ఉంది.
+offline_sync_running = ఆఫ్‌లైన్ వినియోగం కోసం {account}ను సమకాలీకరిస్తోంది...
+offline_sync_failed = ఆఫ్‌లైన్ సమకాలీకరణ విఫలమైంది: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = ముందుగా ఒక సందేశాన్ని ఎంచుకోండి లేదా తెరవండి.
+select_or_open_message_ctrl_u = ముందుగా ఒక సందేశాన్ని ఎంచుకోండి లేదా తెరవండి, ఆపై Ctrl+U నొక్కండి.
+no_sender_address = ఈ సందేశంలో జోడించడానికి పంపినవారి చిరునామా లేదు.
+contact_added = {contact} మీ చిరునామా పుస్తకానికి జోడించబడ్డారు.
+contact_already_there = {contact} ఇప్పటికే మీ చిరునామా పుస్తకంలో ఉన్నారు.
+privacy_saved = గోప్యతా సెట్టింగ్‌లు సేవ్ చేయబడ్డాయి. వాటిని వర్తింపజేయడానికి సందేశాన్ని మళ్లీ తెరవండి.
+message_font_size = సందేశం ఫాంట్ పరిమాణం: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = సందేశాన్ని శాశ్వతంగా తొలగిస్తోంది
+deleting_many = {count} సందేశాలను శాశ్వతంగా తొలగిస్తోంది
+trashing_one = సందేశాన్ని ట్రాష్‌కు తరలిస్తోంది
+trashing_many = {count} సందేశాలను ట్రాష్‌కు తరలిస్తోంది
+undo_partly_restored = {action} రద్దు చేయబడింది, కానీ {count} పునరుద్ధరించబడలేదు -- అవి అప్పటి నుండి తరలించబడి, తొలగించబడి లేదా గడువు ముగిసి ఉండవచ్చు.
+moves_report = {action}: {total}లో {moved} సందేశాలు తరలించబడ్డాయి.
+moves_report_failed = తరలించబడలేదు, ఇప్పటికీ అసలు ఫోల్డర్‌లో ఉన్నాయి: {count}.
+
+tray_tooltip_one = ZBox — 1 చదవని సందేశం
+tray_tooltip_many = ZBox — {count} చదవని సందేశాలు
+account_unreachable = {account}ను చేరుకోలేకపోయింది. దాని స్వయంచాలక తనిఖీలు {minutes} నిమిషాలు నిలిపివేయబడతాయి.
+bulk_copy_failed = సందేశాలను కాపీ చేయలేకపోయింది.
+bulk_copy_failed_status = కాపీ విఫలమైంది.
+bulk_loading_archive = సందేశాలు ఇంకా లోడ్ అవుతున్నాయి -- కొద్దిసేపట్లో మళ్లీ ఆర్కైవ్ చేయడానికి ప్రయత్నించండి.
+bulk_loading_delete = సందేశాలు ఇంకా లోడ్ అవుతున్నాయి -- కొద్దిసేపట్లో మళ్లీ తొలగించడానికి ప్రయత్నించండి.
+bulk_loading_flag = సందేశాలు ఇంకా లోడ్ అవుతున్నాయి -- కొద్దిసేపట్లో మళ్లీ నక్షత్రం గుర్తు పెట్టడానికి ప్రయత్నించండి.
+bulk_loading_generic = సందేశాలు ఇంకా లోడ్ అవుతున్నాయి -- కొద్దిసేపట్లో మళ్లీ ప్రయత్నించండి.
+bulk_none = సందేశం ఎంచుకోబడలేదు.
+bulk_none_archive = ఆర్కైవ్ చేయడానికి సందేశం ఎంచుకోబడలేదు.
+bulk_none_delete = తొలగించడానికి సందేశం ఎంచుకోబడలేదు.
+bulk_none_junk = జంక్‌గా గుర్తించడానికి సందేశం ఎంచుకోబడలేదు.
+bulk_none_not_junk = జంక్ కాదని గుర్తించడానికి సందేశం ఎంచుకోబడలేదు.
+delete_refused_still = సర్వర్ దాన్ని తొలగించడానికి నిరాకరించింది; అది ఇప్పటికీ {folder}లో ఉంది.
+delete_refused_trash = అది ట్రాష్‌లో ఉంది, కానీ సర్వర్ దాన్ని శాశ్వతంగా తొలగించడానికి నిరాకరించింది.
+delete_resume_failed = మునుపటి తొలగింపులోని {count} సందేశాలను తొలగించలేకపోయింది.
+done_perm_delete_one = సందేశం శాశ్వతంగా తొలగించబడింది.
+done_trash_one = సందేశం ట్రాష్‌కు తరలించబడింది.
+filters_applied = {folder}లోని {count} సందేశాలకు ఫిల్టర్‌లు వర్తింపజేయబడ్డాయి.
+filters_failed = ఫిల్టర్‌లను అమలు చేయలేకపోయింది.
+filters_running = {folder}పై ఫిల్టర్‌లను అమలు చేస్తోంది
+flag_failed = నక్షత్రం గుర్తును నవీకరించలేకపోయింది.
+flag_updated = నక్షత్రం గుర్తు నవీకరించబడింది.
+folder_verb_subscribing = చందా చేరుతోంది
+folder_verb_unsubscribing = చందాను రద్దు చేస్తోంది
+mark_read_failed = సందేశాలను చదివినట్లు గుర్తించలేకపోయింది.
+mark_unread_failed = సందేశాలను చదవనట్లు గుర్తించలేకపోయింది.
+notify_new_mail_body = {name} కోసం {count} {noun}.
+notify_new_mail_title = కొత్త మెయిల్
+notify_noun_many = కొత్త సందేశాలు
+notify_noun_one = కొత్త సందేశం
+report_done = {count} సందేశాలలో {done} {verb}.
+report_verb_deleted = తొలగించబడ్డాయి
+report_verb_permanent = శాశ్వతంగా తొలగించబడ్డాయి
+running_copy_many = {count} సందేశాలను కాపీ చేస్తోంది
+running_copy_one = సందేశాన్ని కాపీ చేస్తోంది
+running_junk_many = {count} సందేశాలను జంక్‌గా గుర్తిస్తోంది
+running_junk_one = జంక్‌గా గుర్తిస్తోంది
+running_move_many = {count} సందేశాలను తరలిస్తోంది
+running_move_one = తరలిస్తోంది
+running_not_junk_many = {count} సందేశాలను జంక్ కాదని గుర్తిస్తోంది
+running_not_junk_one = జంక్ కాదని గుర్తిస్తోంది
+running_perm_delete_one = సందేశాన్ని శాశ్వతంగా తొలగిస్తోంది...
+running_read_many = {count} సందేశాలను చదివినట్లు గుర్తిస్తోంది
+running_read_one = చదివినట్లు గుర్తిస్తోంది
+running_trash_one = సందేశాన్ని ట్రాష్‌కు తరలిస్తోంది...
+running_unread_many = {count} సందేశాలను చదవనట్లు గుర్తిస్తోంది
+running_unread_one = చదవనట్లు గుర్తిస్తోంది
+settings_saved_no_startup = సెట్టింగ్‌లు సేవ్ చేయబడ్డాయి. Windows స్టార్టప్ ఎంట్రీని నవీకరించలేకపోయింది.
+settings_saved_status = సెట్టింగ్‌లు సేవ్ చేయబడ్డాయి.
+spam_blocked_sender = నిరోధించబడిన పంపినవారు
+spam_possible_phishing = ఫిషింగ్ అయి ఉండవచ్చు
+undo_running_many = {action} రద్దు చేస్తోంది ({count} సందేశాలు)
+undo_running_one = {action} రద్దు చేస్తోంది
+mark_folder_read_failed = ఫోల్డర్‌ను చదివినట్లు గుర్తించలేకపోయింది.
+marking_folder_read = ఫోల్డర్‌ను చదివినట్లు గుర్తిస్తోంది...
+upd_ready_at_exit = నవీకరణ ఇప్పటికే డౌన్‌లోడ్ చేయబడింది. మీరు ZBox నుండి నిష్క్రమించినప్పుడు ఇది ఇన్‌స్టాల్ చేయబడుతుంది.
+upd_checking = నవీకరణల కోసం తనిఖీ చేస్తోంది...
+upd_up_to_date = ZBox తాజాగా ఉంది.
+upd_available_source = ZBox {version} అందుబాటులో ఉంది. ఈ కాపీ సోర్స్ నుండి నడుస్తోంది, కాబట్టి దీన్ని git తో నవీకరించండి.
+upd_check_failed = నవీకరణల కోసం తనిఖీ చేయలేకపోయింది: {error}
+opening_attachment = {filename} తెరుస్తోంది...
+loading_headers = హెడర్‌లు లోడ్ అవుతున్నాయి...
+offline_inbox_only = ఇన్‌బాక్స్ మరియు ఆర్కైవ్ మాత్రమే ఆఫ్‌లైన్ వినియోగం కోసం ఉంచబడతాయి.
+offline_sync_done_inbox = ఆఫ్‌లైన్ వినియోగం కోసం ఇన్‌బాక్స్ మరియు ఆర్కైవ్‌లోని {count} సందేశాలు సమకాలీకరించబడ్డాయి.
+working_offline = ఆఫ్‌లైన్‌లో పని చేస్తోంది: ఇన్‌బాక్స్/పంపినవి/డ్రాఫ్ట్‌లు యొక్క చివరిగా సమకాలీకరించిన కాపీ చూపబడుతోంది.
+emptying_trash_all = అన్ని ఖాతాల ట్రాష్‌ను ఖాళీ చేస్తోంది...
+trash_emptied_all = {accounts} ఖాతాలలో ట్రాష్ ఖాళీ చేయబడింది: {count} సందేశాలు తొలగించబడ్డాయి.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &ఫైల్
+bar_edit = &సవరించు
+bar_view = &వీక్షణ
+bar_message = &సందేశం
+bar_compose = &రాయి
+bar_tools = &సాధనాలు
+bar_help = &సహాయం
+
+# File
+file_new = కొత్త
+file_new_message = సందేశం
+file_new_account = ఇమెయిల్ ఖాతా...
+file_open_saved_message = సేవ్ చేసిన సందేశాన్ని తెరువు...
+file_close = మూసివేయి
+file_save_message_as = సందేశాన్ని ఇలా సేవ్ చేయి...
+file_get_new_for = కొత్త సందేశాలను పొందు
+file_get_new_all = అన్ని ఖాతాలు
+file_get_new_current = ప్రస్తుత ఖాతా
+file_offline = ఆఫ్‌లైన్
+file_work_offline = ఆఫ్‌లైన్‌లో పని చేయి
+file_sync_now = ఇప్పుడే సమకాలీకరించు
+file_print = ముద్రించు...
+file_print_preview = ముద్రణ ప్రివ్యూ...
+file_exit = నిష్క్రమించు
+
+# Edit
+edit_undo = రద్దు చేయి
+edit_select_all = అన్నీ ఎంచుకో
+edit_find_messages = సందేశాలను వెతుకు...
+
+# Message
+message_reply = ప్రత్యుత్తరం
+message_reply_all = అందరికీ ప్రత్యుత్తరం
+message_forward = ఫార్వర్డ్
+message_archive = ఆర్కైవ్
+message_delete = తొలగించు
+message_delete_permanently = శాశ్వతంగా తొలగించు
+message_mark = గుర్తించు
+mark_read = చదివినది
+mark_unread = చదవనిది
+mark_flagged = నక్షత్రం గుర్తు ఉన్నది
+mark_junk = జంక్
+mark_not_junk = జంక్ కాదు
+message_watch_thread = థ్రెడ్‌ను గమనించు
+message_ignore_thread = థ్రెడ్‌ను విస్మరించు
+message_open_conversation = సందేశాన్ని సంభాషణలో తెరువు
+message_show_related = సంబంధిత సందేశాలను చూపు
+message_add_sender_to_address_book = పంపినవారిని చిరునామా పుస్తకానికి జోడించు
+message_announce_sender = పంపినవారిని ప్రకటించు
+message_announce_copy_sender = పంపినవారిని ప్రకటించి చిరునామాను కాపీ చేయి
+
+# View
+view_folders = ఫోల్డర్‌లు
+folders_all = అన్నీ
+folders_unified = ఏకీకృతం
+folders_jump_inbox = ఇన్‌బాక్స్ సందేశాల జాబితాకు వెళ్లు
+folders_configure_unified = ఏకీకృత ఫోల్డర్‌లను కాన్ఫిగర్ చేయి...
+view_sort_by = ఇలా క్రమబద్ధీకరించు
+sort_date = తేదీ
+sort_subject = విషయం
+sort_from = నుండి
+sort_descending = అవరోహణ (కొత్తవి ముందు)
+sort_ascending = ఆరోహణ (పాతవి ముందు)
+view_threads = థ్రెడ్‌లు
+threads_all = అన్నీ
+threads_watched = గమనించిన థ్రెడ్‌లు
+threads_ignored = విస్మరించిన థ్రెడ్‌లు
+threads_expand_all = అన్ని థ్రెడ్‌లను విస్తరించు
+threads_collapse_all = అన్ని థ్రెడ్‌లను కుదించు
+view_load_more = మరిన్ని సందేశాలను లోడ్ చేయి
+view_toggle_message_view = పాఠ్యం మరియు HTML వీక్షణ మధ్య మారు
+view_show_remote_content = ఈ సందేశంలో రిమోట్ కంటెంట్‌ను చూపు
+view_message_zoom = సందేశం జూమ్
+zoom_increase = సందేశం ఫాంట్ పరిమాణాన్ని పెంచు
+zoom_decrease = సందేశం ఫాంట్ పరిమాణాన్ని తగ్గించు
+zoom_reset = సందేశం ఫాంట్ పరిమాణాన్ని రీసెట్ చేయి
+
+# Compose
+compose_send = &పంపు
+compose_save_draft = &డ్రాఫ్ట్ సేవ్ చేయి
+compose_attach = &ఫైల్ జోడించు...
+compose_fmt_bold = &బోల్డ్
+compose_fmt_italic = &ఇటాలిక్
+compose_fmt_strike = &కొట్టివేత
+compose_fmt_bullet = &బుల్లెట్ జాబితా
+compose_fmt_number = &సంఖ్యల జాబితా
+compose_fmt_quote = &ఉల్లేఖనం
+compose_fmt_code = &కోడ్
+compose_fmt_heading1 = &శీర్షిక
+compose_link = &లింక్ చేర్చు...
+compose_formatting = &ఇక్కడ ఫార్మాటింగ్
+compose_spellcheck = &స్పెల్లింగ్ తనిఖీ...
+compose_spellcheck_next = &తదుపరి అక్షర దోషం
+compose_spellcheck_add = &పదాన్ని నిఘంటువుకు జోడించు
+compose_insert_signature = &సంతకం చేర్చు
+compose_paste_quotation = &ఉల్లేఖనంగా అతికించు
+compose_word_count = &పదాల సంఖ్య
+compose_preview = &ప్రివ్యూ...
+compose_diagnostics = &రాసే డయాగ్నోస్టిక్స్...
+compose_edit_signature = &సంతకం సవరించు...
+compose_hotkeys_diagnostic = &హాట్‌కీల డయాగ్నోస్టిక్
+
+# Tools
+tools_account_settings = ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లు...
+tools_mute_account = ఖాతాను మ్యూట్ చేయి
+tools_pause_auto_check = స్వయంచాలక తనిఖీని నిలిపివేయి
+tools_disable_account = ఖాతాను నిలిపివేయి
+tools_remove_account = ఖాతాను తొలగించు...
+tools_address_book = చిరునామా పుస్తకం...
+tools_message_filters = సందేశ ఫిల్టర్‌లు...
+tools_import = ఖాతాలు మరియు సెట్టింగ్‌లను దిగుమతి చేయి...
+tools_export = ఖాతాలు మరియు సెట్టింగ్‌లను ఎగుమతి చేయి...
+tools_cache_cleanup = కాష్ శుభ్రపరిచే కాన్ఫిగరేషన్...
+tools_privacy = గోప్యత మరియు కంటెంట్ నిరోధం...
+tools_settings = సెట్టింగ్‌లు...
+
+# Help
+help_shortcuts = కీబోర్డ్ షార్ట్‌కట్‌లు...
+help_about = ZBox గురించి...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = కొత్త ఖాతా...
+tree_account_settings = ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లు...
+tree_mute_account = ఖాతాను మ్యూట్ చేయి
+tree_pause_auto_check = స్వయంచాలక తనిఖీని నిలిపివేయి
+tree_enable_account = ఖాతాను ప్రారంభించు
+tree_disable_account = ఖాతాను నిలిపివేయి
+tree_set_default_account = డిఫాల్ట్ ఖాతాగా సెట్ చేయి
+tree_remove_account = ఖాతాను తొలగించు...
+tree_refresh = రిఫ్రెష్
+tree_new_folder = కొత్త ఫోల్డర్...
+tree_empty_trash = ట్రాష్ ఖాళీ చేయి
+tree_empty_junk = జంక్ ఖాళీ చేయి
+tree_rename_folder = ఫోల్డర్ పేరు మార్చు...
+tree_delete_folder = ఫోల్డర్‌ను తొలగించు...
+tree_subscribe_folder = ఫోల్డర్‌కు చందా చేరు
+tree_unsubscribe_folder = ఫోల్డర్ చందాను రద్దు చేయి
+
+# The message list menu, opened the same two ways
+list_select_all = అన్నీ ఎంచుకో
+list_reply = ప్రత్యుత్తరం
+list_reply_all = అందరికీ ప్రత్యుత్తరం
+list_forward = ఫార్వర్డ్
+list_mark = గుర్తించు
+list_archive = ఆర్కైవ్
+list_delete_to_trash = తొలగించు (ట్రాష్‌కు తరలించు)
+list_delete_permanently = శాశ్వతంగా తొలగించు
+list_move_to = తరలించు
+list_copy_to = కాపీ చేయి
+
+# The notification area icon
+tray_open = &ZBox తెరువు
+tray_unread_one = 1 చదవని సందేశం
+tray_unread_many = {count} చదవని సందేశాలు
+tray_no_unread = చదవని సందేశాలు లేవు
+tray_settings = &సెట్టింగ్‌లు...
+tray_quit = &ZBox నుండి నిష్క్రమించు
+
+# The formatting menu inside a message you are writing
+format_bold = &బోల్డ్
+format_italic = &ఇటాలిక్
+format_strike = &కొట్టివేత
+format_bullet = &బుల్లెట్ జాబితా
+format_number = &సంఖ్యల జాబితా
+format_quote = &ఉల్లేఖనం
+format_code = &కోడ్
+format_heading1 = &శీర్షిక
+format_insert_link = &లింక్ చేర్చు...
+format_formatting_here = &ఇక్కడ ఫార్మాటింగ్
+tools_enable_account = ఖాతాను ప్రారంభించు
+edit_undo_action = {action} రద్దు చేయి
+tree_mark_folder_read = ఫోల్డర్‌ను చదివినట్లు గుర్తించు
+help_updates = &నవీకరణలు
+help_check_updates = &ఇప్పుడే నవీకరణల కోసం తనిఖీ చేయి...
+help_update_settings = &నవీకరణ సెట్టింగ్‌లు
+help_releases_page = &విడుదలల పేజీని తెరువు
+message_attachments = జోడింపులు
+message_no_attachments = జోడింపులు లేవు
+message_save_all_attachments = అన్ని జోడింపులను సేవ్ చేయి
+view_full_headers = పూర్తి హెడర్‌లు
+folders_go_to_tree = ఫోల్డర్ జాబితాకు వెళ్లు
+list_block_sender = ఈ పంపినవారిని నిరోధించు
+list_unblock_sender = ఈ పంపినవారి నిరోధాన్ని తొలగించు
+sort_received = స్వీకరించినవి
+sort_star = నక్షత్రం
+sort_order_received = స్వీకరించిన క్రమం
+sort_priority = ప్రాధాన్యత
+sort_recipient = స్వీకర్త
+sort_correspondents = సంప్రదింపుదారులు
+sort_size = పరిమాణం
+sort_read = చదివినవి
+sort_junk_status = జంక్ స్థితి
+sort_attachments = జోడింపులు
+sort_threaded = థ్రెడ్‌లుగా
+sort_unthreaded = థ్రెడ్‌లు లేకుండా
+view_columns = నిలువు వరుసలు
+tools_openpgp_keys = OpenPGP కీ మేనేజర్
+tools_smime_certs = S/MIME ప్రమాణపత్ర మేనేజర్
+compose_pgp_encrypt = &ఎన్‌క్రిప్ట్ చేయి
+compose_pgp_sign = &డిజిటల్‌గా సంతకం చేయి
+compose_pgp_attach_key = &నా పబ్లిక్ కీని జోడించు
+
+[dialogs]
+set_theme_restart_confirm = థీమ్ మార్పును వర్తింపజేయడానికి ZBoxను పునఃప్రారంభించాలా?
+set_ui_theme_label = &ఇంటర్‌ఫేస్ థీమ్:
+set_ui_theme_note = మెనూలు, జాబితాలు, డైలాగ్‌లు మరియు సందేశాల పాఠ్య వీక్షణ కోసం రంగులు. సిస్టమ్‌ను అనుసరించు Windows స్వంత లైట్ లేదా డార్క్ యాప్ మోడ్‌ను ఉపయోగిస్తుంది. అర్ధరాత్రి నీలం, వెచ్చని డార్క్ మరియు మృదువైన కాంట్రాస్ట్ మృదువైన రంగులతో కూడిన డార్క్ థీమ్‌లు. HTML సందేశాలు తమ స్వంత రంగులను ఉంచుకుంటాయి, మరియు Windows హై కాంట్రాస్ట్‌కు ఎల్లప్పుడూ ప్రాధాన్యత ఉంటుంది. ZBox తదుపరిసారి ప్రారంభమైనప్పుడు అమలులోకి వస్తుంది.
+set_theme_system = సిస్టమ్‌ను అనుసరించు
+set_theme_light = లైట్
+set_theme_dark = డార్క్
+set_theme_midnight = అర్ధరాత్రి నీలం
+set_theme_warm = వెచ్చని డార్క్
+set_theme_soft = మృదువైన కాంట్రాస్ట్
+set_language_restart_confirm = భాష మార్పును వర్తింపజేయడానికి ZBoxను పునఃప్రారంభించాలా?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = హరిత్‌ను సంప్రదించండి
+title_identity = గుర్తింపు
+title_show_password = పాస్‌వర్డ్ చూపు
+title_missing_information = సమాచారం లేదు
+title_unsupported_provider = మద్దతు లేని ప్రొవైడర్
+title_test_connection = కనెక్షన్‌ను పరీక్షించు
+title_new_contact = కొత్త పరిచయం
+title_edit_contact = పరిచయాన్ని సవరించు
+title_delete_contact = పరిచయాన్ని తొలగించు
+title_import_contacts = పరిచయాలను దిగుమతి చేయి
+title_export_contacts = పరిచయాలను ఎగుమతి చేయి
+title_rename_group = సమూహం పేరు మార్చు
+title_delete_group = సమూహాన్ని తొలగించు
+title_send = పంపు
+title_send_failed = పంపడం విఫలమైంది
+title_attach_file = ఫైల్ జోడించు
+title_save_draft = డ్రాఫ్ట్ సేవ్ చేయి
+title_documentation = ZBox డాక్యుమెంటేషన్
+title_open_link = లింక్‌ను తెరువు
+title_filter_rule = ఫిల్టర్ నియమం
+title_master_password = ప్రధాన పాస్‌వర్డ్
+title_attachment_saved = జోడింపు సేవ్ చేయబడింది
+title_attachments_saved = జోడింపులు సేవ్ చేయబడ్డాయి
+title_download_failed = డౌన్‌లోడ్ విఫలమైంది
+title_print = ముద్రించు
+title_print_preview = ముద్రణ ప్రివ్యూ
+title_related_messages = సంబంధిత సందేశాలు
+title_search = వెతుకు
+title_unlock = అన్‌లాక్ చేయి
+title_unlock_methods = అన్‌లాక్ పద్ధతులు
+title_desktop_shortcut = డెస్క్‌టాప్ షార్ట్‌కట్
+title_spell_check = స్పెల్లింగ్ తనిఖీ
+title_plain_text_password = సాదా పాఠ్య పాస్‌వర్డ్ కనబడింది
+title_startup_error = ZBox ప్రారంభ లోపం
+
+identity_email_required = ఇమెయిల్ చిరునామాను నమోదు చేయండి.
+
+wizard_password_not_shown = ఈ సిస్టమ్‌లో పాస్‌వర్డ్ చూపబడదు. అయినా అది సాధారణంగా టైప్ చేయబడి సేవ్ చేయబడుతుంది.
+wizard_email_required = కొనసాగే ముందు చెల్లుబాటయ్యే ఇమెయిల్ చిరునామాను నమోదు చేయండి.
+wizard_test_needs_server = పరీక్షించే ముందు లాగిన్ ఇమెయిల్ మరియు ఇన్‌కమింగ్ సర్వర్‌ను నమోదు చేయండి.
+wizard_test_succeeded = కనెక్షన్ విజయవంతమైంది. ఇన్‌బాక్స్‌లో {count} సందేశాలు కనబడ్డాయి.
+
+contact_email_required = ఇమెయిల్ చిరునామా అవసరం.
+contact_select_to_edit = సవరించడానికి ఒక పరిచయాన్ని ఎంచుకోండి.
+contact_select_to_delete = తొలగించడానికి ఒక పరిచయాన్ని ఎంచుకోండి.
+contact_delete_confirm = {label}ను చిరునామా పుస్తకం నుండి తొలగించాలా?
+contacts_import_choose_file = దిగుమతి చేయడానికి .vcf (vCard) లేదా .csv ఫైల్‌ను ఎంచుకోండి.
+contacts_imported = {count} పరిచయాలు దిగుమతి చేయబడ్డాయి.
+contacts_import_empty = ఆ ఫైల్‌లో పరిచయాలు కనబడలేదు.
+contacts_none_to_export = ఎగుమతి చేయడానికి పరిచయాలు లేవు.
+contacts_exported = {count} పరిచయాలు ఇక్కడికి ఎగుమతి చేయబడ్డాయి:\n{path}
+group_name_exists = "{name}" అనే సమూహం ఇప్పటికే ఉంది.
+group_delete_confirm = "{name}" సమూహాన్ని తొలగించాలా? దాని పరిచయాలు తొలగించబడవు.
+
+send_no_account = పంపే ముందు ఒక ఖాతాను జోడించండి, లేదా నుండిలో ఒకదాన్ని ఎంచుకోండి.
+send_no_recipient = కు లో కనీసం ఒక స్వీకర్తను నమోదు చేయండి.
+draft_no_account = డ్రాఫ్ట్ సేవ్ చేసే ముందు ఒక ఖాతాను జోడించండి, లేదా నుండిలో ఒకదాన్ని ఎంచుకోండి.
+attached_file = జోడించబడింది: {name}\n\nమీరు పంపినప్పుడు {count} ఫైళ్లు జోడించబడతాయి.
+
+documentation_copied = పూర్తి ZBox డాక్యుమెంటేషన్ క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది.
+
+filter_rule_needs_name = ఈ నియమానికి ఒక పేరు ఇవ్వండి.
+filter_rule_needs_condition = కనీసం ఒక షరతును సెట్ చేయండి (నుండి, కు లేదా విషయం).
+filter_rule_needs_action = కనీసం ఒక చర్యను ఎంచుకోండి: చదివినట్లు గుర్తించు, నక్షత్రం గుర్తు పెట్టు, లేదా ఫోల్డర్‌కు తరలించు.
+
+master_password_set = ప్రధాన పాస్‌వర్డ్ సెట్ చేయబడింది. దాన్ని సురక్షితమైన చోట ఉంచండి: ZBox ప్రతి కొత్త కంప్యూటర్‌లో ఒకసారి దాన్ని అడుగుతుంది, మరియు అది పోతే తిరిగి పొందలేము.
+master_password_offer = ప్రధాన పాస్‌వర్డ్ లేకుండా, సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను ఈ కంప్యూటర్‌లో మరియు ఈ Windows ఖాతాలో మాత్రమే చదవగలరు. ZBoxను మరెక్కడైనా కాపీ చేస్తే ప్రతి ఖాతా మళ్లీ సైన్ ఇన్ చేయాలి.\n\nఇప్పుడు ఒకటి సెట్ చేయాలా?
+
+attachment_saved = జోడింపు ఇక్కడ సేవ్ చేయబడింది:\n{path}
+attachments_saved = {count} జోడింపులు ఇక్కడ సేవ్ చేయబడ్డాయి:\n{path}
+
+shortcut_created_settings = షార్ట్‌కట్ సృష్టించబడింది:\n{path}\n\nఇది ZBoxను ఇక్కడి నుండి ప్రారంభిస్తుంది:\n{base}
+
+spellcheck_no_dictionary = స్పెల్లింగ్ నిఘంటువు లేదు, కాబట్టి ZBox యొక్క ఈ కాపీలో స్పెల్లింగ్ తనిఖీ అందుబాటులో లేదు.
+spellcheck_none_found = అక్షర దోషాలు కనబడలేదు.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = ఈ కంప్యూటర్‌లో పాస్‌కీని సెటప్ చేసి, మరొక కంప్యూటర్ నుండి సేవ్ చేసినదాన్ని మరచిపోవాలా?\n\nHelloతో నిర్ధారించమని Windows అడుగుతుంది. మరొక కంప్యూటర్‌లో మిగిలిన పాత పాస్‌కీ అక్కడ మారదు మరియు మీరు ఈ ఫోల్డర్‌ను అక్కడికి తీసుకెళ్తే పని చేస్తూనే ఉంటుంది, కానీ దాన్ని మళ్లీ సెటప్ చేయాలి.
+unlock_replace_passkey_many = ఈ కంప్యూటర్‌లో పాస్‌కీని సెటప్ చేసి, ఇతర కంప్యూటర్ల నుండి సేవ్ చేసిన {count}ను మరచిపోవాలా?\n\nHelloతో నిర్ధారించమని Windows అడుగుతుంది. మరొక కంప్యూటర్‌లో మిగిలిన పాత పాస్‌కీలు అక్కడ మారవు మరియు మీరు ఈ ఫోల్డర్‌ను అక్కడికి తీసుకెళ్తే పని చేస్తూనే ఉంటాయి, కానీ వాటిని మళ్లీ సెటప్ చేయాలి.
+unlock_method_works = ఆ పద్ధతి పని చేస్తోంది.
+
+plain_text_password_found = data\config\himalaya.toml లో పాత ఖాతా సెటప్ నుండి ఇప్పటికీ సాదా పాఠ్య పాస్‌వర్డ్ (auth.raw) ఉంది.\n\nఆ ఖాతాను తొలగించి మళ్లీ జోడించండి, లేదా data\config\himalaya.toml ను తొలగించండి, తద్వారా అది సురక్షిత క్రెడెన్షియల్ స్టోర్‌ను ఉపయోగించి మళ్లీ ఏర్పడుతుంది.
+
+# main_frame's titles.
+title_account_list_unavailable = ఖాతా జాబితా అందుబాటులో లేదు
+title_open_message = సందేశాన్ని తెరువు
+title_run_filters = ఫిల్టర్‌లను అమలు చేయి
+title_clear_cache = ఆఫ్‌లైన్ సందేశ కాష్‌ను తొలగించు
+title_remove_account = ఖాతాను తొలగించు
+title_new_folder = కొత్త ఫోల్డర్
+title_rename_folder = ఫోల్డర్ పేరు మార్చు
+title_delete_folder = ఫోల్డర్‌ను తొలగించు
+title_subscribe = చందా చేరు
+title_unsubscribe = చందా రద్దు చేయి
+title_open_saved_message = సేవ్ చేసిన సందేశాన్ని తెరువు
+title_save_message_as = సందేశాన్ని ఇలా సేవ్ చేయి
+title_empty_trash = ట్రాష్ ఖాళీ చేయి
+title_empty_junk = జంక్ ఖాళీ చేయి
+title_synchronize_offline = ఆఫ్‌లైన్ కోసం సమకాలీకరించు
+title_export_accounts = ఖాతాలు మరియు సెట్టింగ్‌లను ఎగుమతి చేయి
+title_import_accounts = ఖాతాలు మరియు సెట్టింగ్‌లను దిగుమతి చేయి
+title_show_related = సంబంధిత సందేశాలను చూపు
+title_reply = ప్రత్యుత్తరం
+title_forward = ఫార్వర్డ్
+title_undo = రద్దు చేయి
+title_delete_permanently = శాశ్వతంగా తొలగించు
+title_delete = తొలగించు
+title_copy_to = కాపీ చేయి
+title_archive = ఆర్కైవ్
+title_accounts_locked = ఖాతాలు లాక్ చేయబడ్డాయి
+
+select_account_first = ముందుగా చెట్టులో ఒక ఖాతాను ఎంచుకోండి.
+select_account_or_folder = ముందుగా ఒక ఖాతా లేదా ఫోల్డర్‌ను ఎంచుకోండి.
+filters_left_behind = {count} సందేశాలు ఫిల్టర్‌కు సరిపోలాయి కానీ ఇప్పటికీ {folder}లో ఉన్నాయి.
+cache_clear_confirm = అన్ని ఖాతాల ఆఫ్‌లైన్ సందేశ కాష్‌ను తొలగించాలా?\n\nఇది ZBox స్థానిక కాపీలను మాత్రమే తొలగిస్తుంది. ఏ మెయిల్ సర్వర్ నుండీ ఏమీ తొలగించబడదు, మరియు మీకు అవసరమైనప్పుడు సందేశాలు మళ్లీ డౌన్‌లోడ్ అవుతాయి.
+account_remove_confirm = {name} ({address}) ను తొలగించాలా?\n\nసర్వర్‌లోని మెయిల్ తొలగించబడదు.\nఈ కంప్యూటర్‌కు డౌన్‌లోడ్ చేసిన కాపీలు తొలగించబడతాయి.\nసేవ్ చేసిన పాస్‌వర్డ్ తొలగించబడుతుంది.
+folder_delete_confirm = {address} కోసం "{folder}" ఫోల్డర్‌ను మరియు దానిలోని ప్రతిదాన్ని శాశ్వతంగా తొలగించాలా?\n\nఇది రద్దు చేయలేము.
+empty_trash_confirm = {address} కోసం ట్రాష్‌లోని అన్ని సందేశాలను శాశ్వతంగా తొలగించాలా?\n\nఇది రద్దు చేయలేము.
+empty_junk_confirm = {address} కోసం జంక్‌లోని అన్ని సందేశాలను శాశ్వతంగా తొలగించాలా?\n\nఇది రద్దు చేయలేము.
+sync_select_account = ఆఫ్‌లైన్ వినియోగం కోసం సమకాలీకరించడానికి ఒక ఖాతాను (ఏకీకృత ఫోల్డర్ కాదు) ఎంచుకోండి.
+accounts_imported = {count} ఖాతాలు దిగుమతి చేయబడ్డాయి:\n\n{names}\n\nపాస్‌వర్డ్‌లు ఎప్పటికీ ఎగుమతి చేయబడవు, మరియు ఎన్‌క్రిప్ట్ చేసిన పాస్‌వర్డ్ స్టోర్ ఈ Windows వినియోగదారు ఖాతాకు ప్రత్యేకమైనది, కాబట్టి దిగుమతి చేసిన ప్రతి ఖాతా కనెక్ట్ కావడానికి ముందు సాధనాలు > ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లు ద్వారా దాని పాస్‌వర్డ్‌ను ఒకసారి నమోదు చేయాలి.
+accounts_import_none = ఈ ఫైల్‌లో ఖాతాలు కనబడలేదు. ఫైల్‌లో సెట్టింగ్‌లు ఉంటే అవి ఇప్పటికీ దిగుమతి చేయబడ్డాయి.
+delete_permanently_confirm_one = ఈ సందేశాన్ని శాశ్వతంగా తొలగించాలా? ఇది ట్రాష్ ఫోల్డర్‌ను దాటవేస్తుంది మరియు రద్దు చేయలేము.
+accounts_locked = సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లు మరొక కంప్యూటర్‌లో వ్రాయబడ్డాయి, కాబట్టి వాటిని ఇక్కడ చదవలేము.\n\nప్రతి ఖాతా తన మెయిల్ సర్వర్‌కు మళ్లీ సైన్ ఇన్ చేయాలి. తదుపరిసారి దీన్ని నివారించడానికి, ఖాతాలు ఇప్పటికే పని చేస్తున్న కంప్యూటర్‌లో సెట్టింగ్‌లు, యాప్ మరియు డేటా భద్రత నుండి ప్రధాన పాస్‌వర్డ్‌ను సెట్ చేయండి.
+master_password_remove_confirm = ప్రధాన పాస్‌వర్డ్‌ను తొలగించాలా? సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను అప్పుడు ఈ కంప్యూటర్‌లో మరియు ఈ Windows ఖాతాలో మాత్రమే చదవగలరు. తర్వాత ZBoxను మరెక్కడైనా కాపీ చేస్తే ప్రతి ఖాతా మళ్లీ సైన్ ఇన్ చేయాలి.\n\nఇప్పుడు తొలగించాలా?
+shortcut_offer = డెస్క్‌టాప్‌లో ZBox షార్ట్‌కట్‌ను ఉంచాలా?\n\nఇది ఈ ZBox ఫోల్డర్‌ను ప్రారంభిస్తుంది:\n{path}\n\nషార్ట్‌కట్ ఆ ఖచ్చితమైన స్థానాన్ని గుర్తుంచుకుంటుంది. మీరు తర్వాత ZBox ఫోల్డర్‌ను తరలిస్తే, సెట్టింగ్‌లు, సిస్టమ్ ట్రే మరియు విండో తెరిచి, కొత్త స్థానానికి చూపేలా డెస్క్‌టాప్ షార్ట్‌కట్ సృష్టించు మళ్లీ ఎంచుకోండి.
+shortcut_created = షార్ట్‌కట్ సృష్టించబడింది:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = ప్రదర్శన పేరు
+form_email_address = ఇమెయిల్ చిరునామా
+form_your_name = మీ పేరు
+form_login_email = లాగిన్ ఇమెయిల్
+form_password = పాస్‌వర్డ్
+srv_imap_host = ఇన్‌కమింగ్ (IMAP) సర్వర్
+srv_imap_port = ఇన్‌కమింగ్ పోర్ట్
+srv_imap_encryption = ఇన్‌కమింగ్ ఎన్‌క్రిప్షన్
+srv_smtp_host = అవుట్‌గోయింగ్ (SMTP) సర్వర్
+srv_smtp_port = అవుట్‌గోయింగ్ పోర్ట్
+srv_smtp_encryption = అవుట్‌గోయింగ్ ఎన్‌క్రిప్షన్
+
+acct_login_email_label = లాగిన్ ఇమెయిల్ (సైన్ ఇన్ చేయడానికి ఉపయోగిస్తారు)
+acct_new_password_label = కొత్త పాస్‌వర్డ్ (ప్రస్తుతదాన్ని ఉంచడానికి ఖాళీగా వదలండి)
+acct_new_password_name = కొత్త పాస్‌వర్డ్
+acct_identity_email_label = ఇమెయిల్ చిరునామా (పంపడానికి మరియు స్వీకరించడానికి ఉపయోగిస్తారు)
+acct_identities_label = అదనపు గుర్తింపులు (మారుపేర్లు)
+acct_identities_name = అదనపు గుర్తింపులు
+acct_add_identity = &గుర్తింపును జోడించు...
+acct_edit_identity = &గుర్తింపును సవరించు...
+acct_remove_identity = &గుర్తింపును తొలగించు
+acct_signature = సంతకం
+acct_edit_signature = &సంతకం సవరించు...
+acct_junk_folder = జంక్ ఫోల్డర్
+acct_account_status = ఖాతా స్థితి
+acct_disable_account = ఈ ఖాతాను నిలిపివేయి
+acct_default_account = డిఫాల్ట్ ఖాతా
+acct_set_default = డిఫాల్ట్ ఖాతాగా సెట్ చేయి
+acct_notifications = కొత్త మెయిల్ నోటిఫికేషన్‌లు
+acct_mute_notifications = ఈ ఖాతా నోటిఫికేషన్‌లను మ్యూట్ చేయి
+acct_server_settings = సర్వర్ సెట్టింగ్‌లు
+
+wiz_before_you_start = ప్రారంభించే ముందు
+wiz_notice_name = ముఖ్యమైన గమనిక
+wiz_google_instructions = &Google యాప్ పాస్‌వర్డ్ సూచనలను తెరువు
+wiz_intro = మీ పేరు మరియు ఇమెయిల్ చిరునామా
+wiz_login_same = లాగిన్ ఇమెయిల్ పైన ఉన్న ఇమెయిల్ చిరునామాతో సమానం
+wiz_show_password = &పాస్‌వర్డ్ చూపు
+wiz_preset_applied = {name} కోసం ముందే నిర్ణయించిన సెట్టింగ్ వర్తింపజేయబడింది.
+wiz_summary_name = ఖాతా సారాంశం
+wiz_review = సమీక్షించి, ఈ ఖాతాను సేవ్ చేయడానికి ముగించు క్లిక్ చేయండి.
+wiz_test_connection = &కనెక్షన్‌ను పరీక్షించు
+wiz_testing = కనెక్షన్‌ను పరీక్షిస్తోంది...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (డీబగ్ లాగింగ్‌ను ప్రారంభించు, ఇక్కడ సేవ్ చేయబడుతుంది: data\logs)
+set_language_label = &ఇంటర్‌ఫేస్ భాష:
+set_language_label_only_english = &ఇంటర్‌ఫేస్ భాష: (ఇంగ్లీష్ మాత్రమే)
+set_headers_checkbox = &తెరిచిన సందేశం పైన సందేశ హెడర్‌లను చూపు
+set_zoom_label = సందేశం ఫాంట్ మరియు జూమ్:
+set_font_override = &డిఫాల్ట్ సందేశం ఫాంట్ పరిమాణాన్ని భర్తీ చేయి
+set_font_size_name = సందేశం ఫాంట్ పరిమాణం (పాయింట్లు)
+set_reading_font_name = చదివే ఫాంట్
+set_reading_font_label = చదివే ఫాంట్ (డిఫాల్ట్ కోసం ఖాళీగా వదలండి):
+set_view_label = సందేశాన్ని తెరిచినప్పుడు సందేశ భాగం వీక్షణ:
+set_view_text = పాఠ్యం
+set_view_html = HTML (రెండర్ చేయబడింది)
+set_engine_label = HTML రెండరింగ్ ఇంజిన్:
+set_engine_edge = Edge / WebView2 (ఆధునిక రెండరింగ్)
+set_engine_ie = పాత MSHTML (ఉత్తమ స్క్రీన్ రీడర్ మద్దతు)
+set_runtime_label = WebView2 రన్‌టైమ్:
+set_runtime_auto = స్వయంచాలకం — ఉంటే చేర్చబడిన రన్‌టైమ్‌ను ఉపయోగించు (సిఫార్సు చేయబడింది)
+set_runtime_fixed = చేర్చబడిన స్థిర వెర్షన్ మాత్రమే
+set_runtime_evergreen = సిస్టమ్ మొత్తం రన్‌టైమ్ (Windows ద్వారా నవీకరించబడుతుంది)
+set_sr_box = స్క్రీన్ రీడర్ ప్రకటనల నియంత్రణ
+set_silence_label = HTML స్క్రీన్ రీడర్ నిశ్శబ్ద వ్యవధి:
+set_silence_name = మిల్లీసెకన్లలో HTML స్క్రీన్ రీడర్ నిశ్శబ్ద వ్యవధి
+set_focus_delay_label = WebView సౌలభ్యత ఫోకస్ ఆలస్యం:
+set_focus_delay_name = WebView సౌలభ్యత ఫోకస్ ఆలస్యం, స్థాయి 1 నుండి 10
+set_announce_label = ప్రకటన వ్యవధి:
+set_announce_name = మిల్లీసెకన్లలో ప్రకటన వ్యవధి
+set_announce_actions = &చర్యలు, కొత్త మెయిల్ మరియు గమనికల ప్రకటనలను చదివి వినిపించు
+set_attachment_dir_label = జోడింపుల సేవ్ ఫోల్డర్:
+set_attachment_dir_name = జోడింపుల సేవ్ ఫోల్డర్
+set_browse = &బ్రౌజ్ చేయి…
+set_autosave_label = డ్రాఫ్ట్ స్వయంచాలక సేవ్ వ్యవధి:
+set_autosave_name = సెకన్లలో డ్రాఫ్ట్ స్వయంచాలక సేవ్ వ్యవధి
+set_auto_purge_label = పాత ట్రాష్ మరియు జంక్‌ను స్వయంచాలకంగా తొలగించు:
+set_auto_purge_name = ఇన్ని రోజుల తర్వాత ట్రాష్ మరియు జంక్‌ను స్వయంచాలకంగా తొలగించు
+set_bare_keys = &సందేశ జాబితాలో ఒక్క కీ షార్ట్‌కట్‌లు S (నక్షత్రం గుర్తు), A (ఆర్కైవ్), J (జంక్‌గా గుర్తించు)/Shift+J (జంక్ కాదని గుర్తించు), W (థ్రెడ్‌ను గమనించు), K (థ్రెడ్‌ను విస్మరించు), M (తరలించు)/Shift+M (ఫోల్డర్ పేరుతో తరలించు) మరియు C (కాపీ చేయి) ప్రారంభించు
+set_sound_label = శబ్దాలు మరియు నోటిఫికేషన్‌లు:
+set_sounds_enabled = &నోటిఫికేషన్ శబ్దాలను ప్లే చేయి
+set_desktop_notifications = &కొత్త మెయిల్ కోసం డెస్క్‌టాప్ నోటిఫికేషన్‌లను చూపు
+set_theme_label = శబ్దాల థీమ్‌ను మార్చు:
+set_theme_label_only_default = శబ్దాల థీమ్‌ను మార్చు: (డిఫాల్ట్ థీమ్ మాత్రమే)
+set_security_box = యాప్ మరియు డేటా భద్రత
+set_lock_on_quit = &ZBox పూర్తిగా నిష్క్రమించినప్పుడు లాక్ చేయి
+set_private_mode = &ప్రైవేట్ మోడ్: ఈ కంప్యూటర్ లేదా డ్రైవ్‌లో మెయిల్‌ను ఉంచవద్దు
+set_unlock_methods_button = &అన్‌లాక్ పద్ధతులు…
+set_master_password_button = &ప్రధాన పాస్‌వర్డ్…
+set_tray_label = సిస్టమ్ ట్రే మరియు విండో:
+set_minimize_to_tray = &సిస్టమ్ ట్రేకు కుదించు
+set_close_to_tray = &సిస్టమ్ ట్రేకు మూసివేయి
+set_stay_maximized = &ZBoxను ఎల్లప్పుడూ గరిష్టంగా ఉంచు
+set_run_at_startup = &Windows ప్రారంభమైనప్పుడు ZBoxను నడిపించు
+set_desktop_shortcut_button = &డెస్క్‌టాప్ షార్ట్‌కట్ సృష్టించు
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = ఏదైనా తప్పు జరిగితే సమస్యలను నిర్ధారించడానికి డీబగ్ లాగింగ్ సహాయపడుతుంది. దీన్ని ఆపివేస్తే కొత్త ఎంట్రీలు వ్రాయబడవు; ఉన్న లాగ్ ఫైళ్లు తొలగించబడవు. ZBox తదుపరిసారి ప్రారంభమైనప్పుడు అమలులోకి వస్తుంది.
+set_language_note = ZBox తదుపరిసారి ప్రారంభమైనప్పుడు అమలులోకి వస్తుంది. భాషా ఫైళ్లు sounds ఫోల్డర్ పక్కన ZBox lang ఫోల్డర్‌లో ఉన్న సాదా పాఠ్య ఫైళ్లు. ఒకదాన్ని జోడించడానికి, en ఫోల్డర్‌ను కాపీ చేసి, కాపీ పేరును మరియు దానిలోని .lang ఫైల్ పేరును మీ భాష కోడ్‌కు మార్చి, ప్రతి సమాన గుర్తు కుడివైపు ఉన్న పాఠ్యాన్ని అనువదించండి. ఇంకా అనువదించనిది మౌనంగా ఉండకుండా ఇంగ్లీష్‌లో చదవబడుతుంది, కాబట్టి సగం పూర్తయిన ఫైల్‌ను ఉపయోగించడం సురక్షితం.
+set_headers_note = నుండి, కు, ప్రతి, తేదీ మరియు విషయం, పాఠ్య మరియు HTML వీక్షణ రెండింటిలో సందేశ భాగం పైన చూపబడతాయి. అది లేకపోతే ట్యాబ్‌ను మూసివేసి జాబితాకు తిరిగి వెళ్లకుండా సందేశం లోపల నుండి ఎవరు పంపారో తెలుసుకోవడానికి మార్గం లేదు. ఫోకస్ ఇప్పటికీ సందేశ భాగంలోనే ఉంటుంది; హెడర్ బ్లాక్ ఒక Shift+Tab దూరంలో ఉంది. సందేశం తదుపరిసారి తెరిచినప్పుడు అమలులోకి వస్తుంది.
+set_zoom_note = తెరిచిన సందేశం యొక్క స్వంత పాఠ్యాన్ని, ZBox మిగిలిన భాగం మరియు Windows స్వంత డిస్‌ప్లే స్కేలింగ్‌తో సంబంధం లేకుండా, పెద్దదిగా లేదా చిన్నదిగా చేస్తుంది. పాఠ్య మరియు HTML వీక్షణలు రెండింటికీ వర్తిస్తుంది. "చదివే ఫాంట్" ఐచ్ఛికంగా సందేశ భాగానికి ఒక నిర్దిష్ట ఫాంట్‌ను (ఉదా. Consolas, OpenDyslexic) బలవంతం చేస్తుంది; సాధారణ ఫాంట్‌ను ఉంచడానికి దాన్ని ఖాళీగా వదలండి. వీక్షణ మెనూలో Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 ఈ డైలాగ్‌ను తెరవకుండానే ఫాంట్ పరిమాణాన్ని మాత్రమే పెంచుతాయి, తగ్గిస్తాయి లేదా రీసెట్ చేస్తాయి మరియు తెరిచిన ప్రతి సందేశానికి వెంటనే వర్తిస్తాయి. ఇక్కడ చేసే మార్పులు సరే క్లిక్ చేసిన వెంటనే కూడా వర్తిస్తాయి.
+set_view_note = HTML డిఫాల్ట్. ఇది సందేశాన్ని పంపినట్లుగా చూపుతుంది మరియు NVDA మరియు JAWS చదువుతాయి: HTML పేజీ తెరిచినప్పుడు, ZBox బ్రౌజర్ స్వంత ప్రకటనను నిశ్శబ్దం చేస్తుంది, రీడింగ్ కర్సర్‌ను సందేశం మొదటి పంక్తిపై ఉంచుతుంది మరియు పేజీ లోపల ZBox స్వంత షార్ట్‌కట్‌లు పని చేస్తూనే ఉండేలా చూస్తుంది, ఫోకస్‌ను దాని నుండి బయటకు తరలించే F6 సహా. పాఠ్యం అదే సందేశాన్ని సాధారణ ఎడిట్ నియంత్రణలో సాదా, ఫార్మాట్ చేయని పాఠ్యంగా చూపుతుంది -- చిత్రాలు లేవు, లేఅవుట్ లేదు, మరియు బ్రౌజర్ ఇంజిన్ ఇన్‌స్టాల్ చేయబడి ఉండటంపై ఆధారపడేది ఏదీ లేదు. రెండు వైపులా మారడానికి తెరిచిన సందేశంలో Ctrl+B నొక్కండి.
+set_engine_note = Edge ఆధునిక CSSను రెండర్ చేస్తుంది కానీ పేజీని ప్రత్యేక ప్రక్రియలో నడిపిస్తుంది, మరియు తన కంటెంట్‌ను స్క్రీన్ రీడర్‌కు wxPython చేరుకోలేని ఇంటర్‌ఫేస్ ద్వారా మాత్రమే అందిస్తుంది -- కాబట్టి సందేశం చదవగలిగేది ఏదీ లేకుండా తెరుచుకోవచ్చు. పాత MSHTML అనేది Outlook Express మరియు Windows Mail ఉపయోగించిన ఇంజిన్: ఇది అదే ప్రక్రియలో నడుస్తుంది మరియు సాధారణ డాక్యుమెంట్ ట్రీని ప్రచురిస్తుంది, కాబట్టి NVDA మరియు JAWS దాన్ని ఏ వెబ్ పేజీలాగే బ్రౌజ్ మోడ్‌లో చదువుతాయి. సందేశం తదుపరిసారి తెరిచినప్పుడు అమలులోకి వస్తుంది.
+set_runtime_note = సిస్టమ్ మొత్తం రన్‌టైమ్‌ను Windows Update నిర్వహిస్తుంది, కాబట్టి మీ మెయిల్‌ను చదివే ఇంజిన్ ముందస్తు సూచన లేకుండా మారవచ్చు — ZBox గురించి ఏమీ మారని కంప్యూటర్‌లో బాగా పని చేస్తున్న HTML సందేశ వీక్షణ ఈ విధంగా విఫలం కావచ్చు. deps ఫోల్డర్‌లో చేర్చబడిన కాపీ ZBox పరీక్షించబడిన ఖచ్చితమైన వెర్షన్‌ను స్థిరపరుస్తుంది. ఒకదాన్ని ఇన్‌స్టాల్ చేయడానికి tools\get_webview2.bat నడిపించండి. చేర్చబడిన కాపీ లేకపోతే ZBox ఎలాగైనా సిస్టమ్ మొత్తం రన్‌టైమ్‌ను ఉపయోగిస్తుంది, కాబట్టి అది ఎల్లప్పుడూ ప్రారంభమవుతుంది. ZBox తదుపరిసారి ప్రారంభమైనప్పుడు అమలులోకి వస్తుంది.
+set_sr_intro = సందేశం తెరుచుకుంటున్నప్పుడు ZBox మీ స్క్రీన్ రీడర్‌ను ఎంత చెప్పనిస్తుంది, మరియు దాని స్వంత మాట ప్రకటనలు ఎంతసేపు ఉంటాయి.
+set_silence_note = HTML సందేశం తెరుచుకున్నప్పుడు, స్క్రీన్ రీడర్ బ్రౌజర్ ప్రకటనను నిశ్శబ్దం చేయడానికి ZBox 2 సెకన్ల వరకు కృత్రిమ Ctrl నొక్కును పట్టుకోగలదు. సందేశం యొక్క విషయం ఇప్పటికే పేజీ శీర్షికగా ఉపయోగించబడుతుంది, ఇది base64 URL చదవబడకుండా ఆపుతుంది, కానీ రీడర్ ఇప్పటికీ సందేశం ప్రారంభంపై నియంత్రణ మరియు డాక్యుమెంట్ రకాన్ని ప్రకటిస్తుంది, కాబట్టి ఇది డిఫాల్ట్‌గా ఆన్‌లో ఉంది. దీన్ని ఆపివేయడానికి ఆఫ్ ఎంచుకోండి, లేదా మాటలు ఇంకా జారిపోతే ఎక్కువ సమయం ఎంచుకోండి.
+set_focus_delay_note = HTML సందేశం లోడ్ పూర్తయినప్పుడు, ZBox దానికి నిజంగా ఫోకస్ ఇచ్చే ముందు ఇంత సేపు వేచి ఉంటుంది. WebView2 పేజీ లోడ్ అయిందని నివేదించడం మరియు Windows ఆ పేజీ సౌలభ్యత ట్రీని పూర్తి చేయడం ఒకే క్షణం కాదు; చాలా ముందుగా ఫోకస్ చేస్తే NVDA/JAWS సందేశానికి బదులుగా సాధారణ "వెబ్ కంటెంట్ పేజీ"ని ప్రకటిస్తాయి, లేదా తెరిచిన తర్వాత కొంతసేపు సందేశం అందుబాటులో లేదని నివేదిస్తాయి. ఎంపికలు 0.1 సెకన్ల నుండి 1 సెకను వరకు ఉంటాయి. ఇది ఇంకా వినిపిస్తే ఎక్కువ సమయం ఎంచుకోండి, తెరవడం స్థిరంగా అనిపిస్తే తక్కువ సమయం ఎంచుకోండి, వేగవంతమైన తెరవడం కోసం.
+set_announce_note = స్టేటస్ బార్ మీ స్క్రీన్ రీడర్‌లో స్టేటస్-బార్ నివేదన ఆన్ చేసి ఉంటేనే చదవబడుతుంది కాబట్టి, Ctrl+U మరియు Ctrl+Shift+U పంపినవారిని తనంతట తానే మూసుకునే చిన్న డైలాగ్‌లో నివేదిస్తాయి. ఆ డైలాగ్ ఎంతసేపు ఉంటుందో ఇదే. దీన్ని మీ మాట్లాడే వేగానికి సరిపోయేలా సెట్ చేయండి: చాలా తక్కువైతే వాక్యం మధ్యలో మూసుకుంటుంది, అది ఉద్దేశాన్ని దెబ్బతీస్తుంది. ఏ కీ అయినా దాన్ని ముందుగానే మూసివేస్తుంది; బాణం కీలు మళ్లీ చదవడానికి దాన్ని తెరిచి ఉంచుతాయి. కీ కోసం వేచి ఉంటుంది అనేది మీరు ఒకటి నొక్కే వరకు దాన్ని తెరిచి ఉంచుతుంది.
+set_attachment_dir_note = సందేశంలో ఒకటి కంటే ఎక్కువ ఉన్నప్పుడు "అన్నీ సేవ్ చేయి" జోడింపులను ఎక్కడ వ్రాస్తుంది. లేకపోతే స్వయంచాలకంగా సృష్టించబడుతుంది. ఒక్క జోడింపు ఉన్న సందేశం ఇప్పటికీ ఎక్కడ సేవ్ చేయాలో అడుగుతుంది, ముందులాగే. డిఫాల్ట్ కోసం ఖాళీగా వదలండి:\n{path}
+set_autosave_note = మీరు రాస్తున్నప్పుడు తెరిచిన రాసే ట్యాబ్ ఎంత తరచుగా తనను తాను డ్రాఫ్ట్‌లకు సేవ్ చేసుకుంటుంది. డ్రాఫ్ట్ సేవ్ చేయి (Ctrl+S) ఏ విధంగానైనా అవసరమైనప్పుడు సేవ్ చేస్తుంది, మరియు సేవ్ చేయని రాత ఉన్న ట్యాబ్‌ను మూసివేసేటప్పుడు ఎల్లప్పుడూ దాన్ని సేవ్ చేయమని అడుగుతుంది. ఆఫ్ స్వయంచాలక సేవ్‌ను ఆపివేస్తుంది. 15 సెకన్ల కంటే తక్కువ అందించబడదు -- అది మీ టైపింగ్‌తో పోటీపడే సర్వర్ రౌండ్ ట్రిప్ అవుతుంది.
+set_auto_purge_note = ట్రాష్ మరియు జంక్‌లోని సందేశాలు ఇన్ని రోజులు ఉన్న తర్వాత వాటిని శాశ్వతంగా తొలగిస్తుంది -- ట్రాష్ ఖాళీ చేయి మరియు జంక్ ఖాళీ చేయి అవసరమైనప్పుడు చేసే అదే శాశ్వత తొలగింపు, ZBox తెరిచి ఉన్నప్పుడు రోజుకు ఒకసారి స్వయంచాలకంగా నడుస్తుంది. డిఫాల్ట్‌గా 30 రోజులకు ఆన్‌లో ఉంది. ఆఫ్ దాన్ని ఆపివేస్తుంది. సందేశం తొలగించబడిన తర్వాత దీన్ని రద్దు చేయలేము.
+set_bare_keys_note = ఆన్‌లో ఉన్నప్పుడు, సందేశ జాబితాలో S, A, J, W లేదా K ఒంటరిగా నొక్కితే వెంటనే నక్షత్రం గుర్తును మారుస్తుంది, ఆర్కైవ్ చేస్తుంది, ఎంచుకున్న సందేశాలను జంక్‌గా గుర్తిస్తుంది (Shift+J వాటిని జంక్ కాదని గుర్తిస్తుంది), లేదా ఎంపిక భాగమైన థ్రెడ్‌ను గమనిస్తుంది/విస్మరిస్తుంది -- ఆర్కైవ్ మరియు జంక్‌గా గుర్తించుకు నిర్ధారణ లేదు మరియు రద్దు లేదు. దీన్ని ఆపివేస్తే S, A, J, W మరియు K జాబితాలో సాధారణ మొదటి అక్షర నావిగేషన్‌కు తిరిగి వస్తాయి. Ctrl+S మరియు Ctrl+Shift+A ఏ విధంగానైనా పని చేస్తూనే ఉంటాయి. వెంటనే అమలులోకి వస్తుంది.
+set_sounds_note = పురోగతి, కొత్త సందేశాలు, పంపిన, ప్రత్యుత్తరం ఇచ్చిన లేదా ఫార్వర్డ్ చేసిన చర్యలు, తొలగింపులు మరియు శోధన ఫలితాల కోసం చిన్న ధ్వనులు. ఆఫ్ యాప్‌లోని ప్రతి శబ్దాన్ని నిలిపివేస్తుంది; స్క్రీన్ రీడర్ మరియు స్టేటస్ బార్ ప్రకటనలు ఏ విధంగానూ ప్రభావితం కావు.
+set_desktop_notifications_note = పైన ఉన్న శబ్దానికి వేరుగా, ప్రతి కొత్త మెయిల్ బ్యాచ్‌కు ఒక Windows నోటిఫికేషన్. ఆఫ్ దాన్ని ప్రతి ఖాతాకు నిలిపివేస్తుంది; ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లలో ఒక్కో ఖాతాను విడిగా కూడా మ్యూట్ చేయవచ్చు.
+set_theme_note = అనుకూల థీమ్‌లు ZBox sounds ఫోల్డర్ లోపల ఉంచిన ఫోల్డర్‌లు, ప్రతి ఒక్కటి తన స్వంత progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav మరియు none_found.wav అందిస్తుంది. లేని థీమ్ ఫైల్ డిఫాల్ట్ శబ్దానికి తిరిగి వెళ్తుంది.
+set_theme_note_only_default = అనుకూల థీమ్‌లు ZBox sounds ఫోల్డర్ లోపల ఉంచిన ఫోల్డర్‌లు, ప్రతి ఒక్కటి తన స్వంత progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav మరియు none_found.wav అందిస్తుంది. లేని థీమ్ ఫైల్ డిఫాల్ట్ శబ్దానికి తిరిగి వెళ్తుంది. మీరు మరొక థీమ్ ఫోల్డర్‌ను జోడించే వరకు "default" మాత్రమే అందుబాటులో ఉంటుంది.
+set_lock_note = ZBox ప్రారంభమైనప్పుడు ఏ ఖాతా తెరవడానికి ముందైనా మీ అన్‌లాక్ పద్ధతుల్లో ఒకదాన్ని అడుగుతుంది. వాటిలో ఏదైనా ఒకటి సరిపోతుంది: పాస్‌కీ, భద్రతా కీ, లేదా ప్రధాన పాస్‌వర్డ్. ట్రేకు మూసివేయడం నిష్క్రమణ కాదు మరియు మళ్లీ లాక్ చేయదు; ఫైల్ > నిష్క్రమించు మరియు ట్రే ఐకాన్ నిష్క్రమించు చేస్తాయి. ఏదీ నమోదు చేయకపోతే మరియు ప్రధాన పాస్‌వర్డ్ సెట్ చేయకపోతే, మీ స్వంత మెయిల్ నుండి మిమ్మల్ని బయటకు ఉంచకుండా లాక్ దాటవేయబడుతుంది.
+set_security_note = మూడింటిలో ఏదైనా ఎన్‌క్రిప్ట్ చేసేది ప్రధాన పాస్‌వర్డ్ ఒక్కటే: ఈ ఫోల్డర్ మరొక కంప్యూటర్‌లో సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను తెరవడానికి అదే అనుమతిస్తుంది. పాస్‌కీ లేదా భద్రతా కీ ఈ ఒక్క కంప్యూటర్‌లోనే యాప్‌ను అన్‌లాక్ చేస్తాయి. ZBox ఇంతకు ముందు ఉపయోగించని కంప్యూటర్‌లో వాటిలో ఏదీ ప్రధాన పాస్‌వర్డ్‌కు ప్రత్యామ్నాయం కాదు.
+set_private_mode_note = సందేశాలు సర్వర్ నుండి చదవబడి మెమరీలో మాత్రమే ఉంచబడతాయి. ఆఫ్‌లైన్ కాపీలు, సేవ్ చేసిన సందేశాలు లేదా డీబగ్ లాగ్‌లు ఉంచబడవు, మరియు తెరిచిన జోడింపులు మరియు HTML మెయిల్ బ్రౌజర్ డేటా ZBox మూసివేసినప్పుడు తొలగించబడతాయి. మూసివేయడం ZBox ప్రారంభించిన ప్రతి ప్రోగ్రామ్‌ను కూడా ముగిస్తుంది, జోడింపును చూపుతున్నవి సహా, క్లిప్‌బోర్డ్‌ను ఖాళీ చేస్తుంది, మరియు ప్రైవేట్ మోడ్ ఈ కంప్యూటర్ నుండే ఆన్ చేయబడితే తప్ప దీన్ని నమ్మడం ఆపివేస్తుంది. USB డ్రైవ్‌ల జాబితా, పేజీ ఫైల్ మరియు యాంటీవైరస్ మరియు నెట్‌వర్క్ లాగ్‌ల వంటి కొన్ని రికార్డులను Windows ఇంకా ఉంచుతుంది, వాటిని ఏ ప్రోగ్రామ్ తొలగించలేదు.
+title_private_mode = ప్రైవేట్ మోడ్
+private_mode_need_master = ప్రైవేట్ మోడ్‌కు ప్రధాన పాస్‌వర్డ్ అవసరం, ఎందుకంటే మీది కాని కంప్యూటర్‌లో మీ ఖాతాలను తెరిచేది ప్రధాన పాస్‌వర్డ్ మాత్రమే. ప్రధాన పాస్‌వర్డ్ బటన్‌తో ఒకదాన్ని సెట్ చేసి, ఆపై ప్రైవేట్ మోడ్‌ను ఆన్ చేయండి.
+private_mode_enter_master = ప్రైవేట్ మోడ్‌ను ఆన్ చేయడానికి ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి.
+private_mode_confirm = ప్రైవేట్ మోడ్ ఈ కంప్యూటర్‌లో లేదా ZBox నడుస్తున్న డ్రైవ్‌లో మీ మెయిల్ కాపీలను ఉంచదు. దీన్ని ఆన్ చేస్తే ZBox ఆఫ్‌లైన్ కాపీలు, సేవ్ చేసిన సందేశాలు, తెరిచిన జోడింపులు, HTML మెయిల్ బ్రౌజర్ డేటా మరియు డీబగ్ లాగ్‌లు తొలగించబడతాయి. మీ మెయిల్ సర్వర్‌లలో ఏదీ తొలగించబడదు, మరియు మీ ఖాతాలు, పరిచయాలు మరియు సెట్టింగ్‌లు ఉంచబడతాయి. ప్రైవేట్ మోడ్‌ను ఆన్ చేయాలా?
+set_minimize_note = ZBoxను కుదిస్తే దాని టాస్క్‌బార్ బటన్ దాగి, అది ట్రే ఐకాన్ వెనుక నడుస్తూనే ఉంటుంది. విండోను తిరిగి తీసుకురావడానికి ట్రే ఐకాన్‌పై ఎడమ క్లిక్ చేయండి (లేదా దానికి కీబోర్డ్ ఫోకస్ ఉన్నప్పుడు Enter/Space నొక్కండి).
+set_close_note = విండో మూసివేయి బటన్, Alt+F4, మరియు మెయిల్ ట్యాబ్‌పై నొక్కిన Ctrl+W ZBoxను నిష్క్రమించే బదులు ట్రేలో దాచేస్తాయి. ఫైల్ > నిష్క్రమించు (Ctrl+Shift+Q) మరియు ట్రే ఐకాన్ స్వంత నిష్క్రమించు ఏ విధంగానైనా ZBoxను నిజంగా నిష్క్రమింపజేస్తాయి, కాబట్టి ట్రేను తాకకుండా నిష్క్రమించడానికి ఎల్లప్పుడూ ఒక కీబోర్డ్ మార్గం ఉంటుంది.
+set_stay_maximized_note = ZBox గరిష్టంగా ప్రారంభమవుతుంది మరియు మీరు గరిష్టీకరణ తీసివేస్తే మళ్లీ గరిష్టంగా మార్చబడుతుంది. మెనూ బార్, శీర్షిక బార్ మరియు విండో అంచు ప్రభావితం కావు -- ఇది అంచులేని పూర్తి స్క్రీన్ మోడ్ కాదు, కాబట్టి ప్రతి Alt-కీ మెనూ షార్ట్‌కట్ పని చేస్తూనే ఉంటుంది.
+set_run_at_startup_note = మీరు Windowsలో సైన్ ఇన్ చేసినప్పుడు ZBoxను స్వయంచాలకంగా ప్రారంభిస్తుంది, దాని విండోను చూపకుండా నేరుగా ట్రేలో తెరుస్తుంది. తదుపరి ప్రారంభం వరకు కాకుండా వెంటనే అమలులోకి వస్తుంది.
+set_desktop_shortcut_note = మీ డెస్క్‌టాప్‌లో ZBox షార్ట్‌కట్‌ను ఉంచుతుంది, అక్కడ ఇప్పటికే ఉన్నదాన్ని భర్తీ చేస్తుంది. షార్ట్‌కట్ ఈ ZBox ఫోల్డర్ యొక్క ఖచ్చితమైన స్థానాన్ని నిల్వ చేస్తుంది, కాబట్టి మీరు ZBoxను మరెక్కడైనా తరలిస్తే లేదా కాపీ చేస్తే, డెస్క్‌టాప్ షార్ట్‌కట్‌ను అక్కడికి చూపించడానికి కొత్త కాపీపై దీన్ని మళ్లీ నొక్కండి. వెంటనే అమలులోకి వస్తుంది మరియు సరే కోసం వేచి ఉండదు.
+
+# The Address Book, its contact form and its groups.
+ab_name = పేరు
+ab_phone = ఫోన్
+ab_notes = గమనికలు
+ab_heading = చిరునామా పుస్తకం
+ab_contacts = పరిచయాలు
+ab_new = &కొత్త...
+ab_edit = &సవరించు...
+ab_delete = &తొలగించు
+ab_import = &దిగుమతి చేయి...
+ab_export = &ఎగుమతి చేయి...
+ab_groups_label = సమూహాలు (మెయిలింగ్ జాబితాలు)
+ab_groups_name = సమూహాలు
+ab_new_group = &కొత్త సమూహం...
+ab_rename_group = &సమూహం పేరు మార్చు...
+ab_delete_group = &సమూహాన్ని తొలగించు
+ab_manage_members = &సభ్యులను నిర్వహించు...
+ab_all_contacts = అన్ని పరిచయాలు
+ab_add_member = జోడించు >>
+ab_remove_member = << తొలగించు
+ab_members_of = {name} సభ్యులు
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &నిఘంటువులో లేదు:
+sp_not_in_dictionary_name = నిఘంటువులో లేదు
+sp_in_this_line_label = ఈ పంక్తిలో:
+sp_in_this_line_name = ఈ పంక్తిలో
+sp_suggestions_label = &సూచనలు:
+sp_suggestions_name = సూచనలు
+sp_replace_with_label = &దీనితో మార్చు:
+sp_replace_with_name = దీనితో మార్చు
+sp_replace = &మార్చు
+sp_replace_all = &అన్నీ మార్చు
+sp_ignore = &విస్మరించు
+sp_ignore_all = &అన్నీ విస్మరించు
+sp_add_to_dictionary = &నిఘంటువుకు జోడించు
+btn_close = &మూసివేయి
+
+# Privacy and Content Blocking.
+priv_remote_label = సందేశాలలో రిమోట్ కంటెంట్:
+priv_block_remote = &నేను అడిగే వరకు రిమోట్ కంటెంట్‌ను నిరోధించు (సిఫార్సు చేయబడింది)
+priv_blocklist_label = ప్రకటనలు మరియు ట్రాకర్ల నిరోధ జాబితా:
+priv_block_known = &తెలిసిన ప్రకటన మరియు ట్రాకర్ డొమైన్‌లను నిరోధించు
+priv_update_daily = &జాబితాను నేపథ్యంలో రోజూ నవీకరించు
+priv_update_now = &ఇప్పుడే నవీకరించు
+priv_junk_label = జంక్ మెయిల్ నియమాలు:
+priv_check_inbox = &కొత్త ఇన్‌బాక్స్ మెయిల్‌ను నిరోధించిన పంపినవారు మరియు తెలిసిన ఫిషింగ్ లింక్‌లతో తనిఖీ చేయి
+priv_move_blocked = &నిరోధించిన పంపినవారి మెయిల్‌ను స్వయంచాలకంగా జంక్‌కు తరలించు
+priv_update_phishing = &ఫిషింగ్ జాబితాను ఇప్పుడే నవీకరించు
+priv_blocked_label = నిరోధించిన పంపినవారు:
+priv_blocked_name = నిరోధించిన పంపినవారు
+priv_remove_blocked = &నిరోధించిన పంపినవారిని తొలగించు
+priv_never_junk_label = ఎప్పటికీ జంక్‌గా పరిగణించని పంపినవారు:
+priv_never_junk_name = ఎప్పటికీ జంక్‌గా పరిగణించని పంపినవారు
+priv_remove_never_junk = &ఎప్పటికీ జంక్ కాని పంపినవారిని తొలగించు
+priv_allowed_label = రిమోట్ కంటెంట్ లోడ్ చేయడానికి అనుమతించిన పంపినవారు:
+priv_allowed_name = అనుమతించిన పంపినవారు
+priv_remove_selected = &ఎంచుకున్న పంపినవారిని తొలగించు
+
+# Message Filters.
+filt_rule_name = నియమం పేరు
+filt_enabled = &ప్రారంభించబడింది
+filt_match_label = సరిపోలిక:
+filt_match_all = &కింది వాటన్నింటికీ సరిపోలు (మరియు)
+filt_match_any = &కింది వాటిలో ఏదైనా దానికి సరిపోలు (లేదా)
+filt_conditions_label = షరతులు (దాటవేయడానికి విలువను ఖాళీగా వదలండి):
+filt_condition_field = షరతు {number} ఫీల్డ్
+filt_condition_contains = షరతు {number} కలిగి ఉంది
+filt_actions_label = చర్యలు:
+filt_mark_read = &చదివినట్లు గుర్తించు
+filt_flag = &సందేశానికి నక్షత్రం గుర్తు పెట్టు
+filt_move_label = ఫోల్డర్‌కు తరలించు:
+filt_move_name = ఫోల్డర్‌కు తరలించు
+filt_rules_name = ఫిల్టర్ నియమాలు
+filt_new = &కొత్త నియమం...
+filt_edit = &నియమాన్ని సవరించు...
+filt_delete = &నియమాన్ని తొలగించు
+filt_up = &పైకి తరలించు
+filt_down = &కిందికి తరలించు
+filt_run_label = ఫోల్డర్‌పై ఇప్పుడే అమలు చేయి:
+filt_run_name = ఇప్పుడే అమలు చేసే ఫోల్డర్
+filt_run_now = &ఇప్పుడే అమలు చేయి
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &పాస్‌కీతో అన్‌లాక్ చేయి (Windows Hello)
+unl_security_key = &భద్రతా కీతో అన్‌లాక్ చేయి
+unl_master_password_label = &ప్రధాన పాస్‌వర్డ్:
+unl_master_password_name = ప్రధాన పాస్‌వర్డ్
+unl_unlock = &అన్‌లాక్ చేయి
+unl_exit = &ZBox నుండి నిష్క్రమించు
+unl_methods_label = &నమోదు చేసిన పద్ధతులు:
+unl_methods_name = నమోదు చేసిన అన్‌లాక్ పద్ధతులు
+unl_add_passkey = &పాస్‌కీని జోడించు…
+unl_add_key = &భద్రతా కీని జోడించు…
+unl_reassign = &పాస్‌కీని ఈ కంప్యూటర్‌కు తిరిగి కేటాయించు…
+unl_test = &పరీక్షించు…
+unl_remove = &తొలగించు
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = నుండి
+comp_to = కు
+comp_cc = ప్రతి (Cc)
+comp_bcc = గోప్య ప్రతి (Bcc)
+comp_subject = విషయం
+comp_attach_button = ఫైల్ జోడించు...
+comp_sending = పంపుతోంది...
+comp_report_label = &నివేదిక:
+comp_report_name = నివేదిక
+comp_refresh = &రిఫ్రెష్
+comp_copy = &కాపీ చేయి
+comp_preview_read = స్వీకర్త చదివినట్లుగా
+comp_preview_source = పంపబడే HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = సందేశ భాగం
+mv_blocked_notice = నిరోధించిన కంటెంట్ నోటీసు
+mv_show_remote = &రిమోట్ కంటెంట్ చూపు
+mv_always_allow = &ఈ పంపినవారిని ఎల్లప్పుడూ అనుమతించు
+mv_message_headers = సందేశ హెడర్‌లు
+mv_attachments = జోడింపులు
+mv_attachments_count = జోడింపులు ({count})
+mv_save_attachment = సేవ్ చేయి: {filename}
+mv_save_all = అన్నీ సేవ్ చేయి
+mv_html_view = సందేశం HTML వీక్షణ
+mv_saved_message = సేవ్ చేసిన సందేశం
+mv_show_remote_tip = ఈ సందేశాన్ని దాని రిమోట్ చిత్రాలు మరియు శైలులతో మళ్లీ లోడ్ చేయి. తెలిసిన ట్రాకర్లు నిరోధించబడి ఉంటాయి.
+mv_always_allow_tip = {sender} నుండి వచ్చే ప్రతి సందేశంలో రిమోట్ కంటెంట్‌ను లోడ్ చేయి.
+
+# The search tab.
+srch_account = ఖాతా
+srch_folder = ఫోల్డర్
+srch_for = దీని కోసం వెతుకు
+srch_look_in = ఇందులో వెతుకు
+srch_in_all = అన్నీ
+srch_in_subject = విషయం
+srch_in_from = నుండి
+srch_in_to = కు
+srch_in_body = భాగం
+srch_date = తేదీ
+srch_date_any = ఎప్పుడైనా
+srch_date_today = ఈ రోజు
+srch_date_yesterday = నిన్న
+srch_date_week = గత 7 రోజులు
+srch_date_month = గత 30 రోజులు
+srch_date_year = ఈ సంవత్సరం
+srch_date_custom = అనుకూల పరిధి
+srch_from_date = ఈ తేదీ నుండి (సంవత్సరం-నెల-రోజు, ఐచ్ఛిక సమయం)
+srch_to_date = ఈ తేదీ వరకు (సంవత్సరం-నెల-రోజు, ఐచ్ఛిక సమయం)
+srch_unread = చదవనివి మాత్రమే
+srch_flagged = నక్షత్రం గుర్తు ఉన్నవి మాత్రమే
+srch_attachment = జోడింపు ఉంది
+
+# The signature editor.
+sig_editors = సంతకం ఎడిటర్‌లు
+sig_formatted = సంతకం, ఫార్మాట్ చేసినది
+sig_source = సంతకం, HTML మూలం
+sig_plain_label = సాదా పాఠ్య ప్రత్యామ్నాయం (HTMLతో పాటు పంపబడుతుంది)
+sig_plain_name = సాదా పాఠ్య ప్రత్యామ్నాయం
+
+# About ZBox.
+about_text_name = ZBox గురించిన పాఠ్యం
+about_view_license = &లైసెన్స్ చూడండి...
+about_google = &Google యాప్ పాస్‌వర్డ్‌లు...
+about_support = &ZBoxకు మద్దతు ఇవ్వండి -- ఒక్కరి అభివృద్ధి మరియు నిర్వహణ
+about_repos = &GitHubలో హరిత్ యాప్ రిపాజిటరీలు
+about_contact = &హరిత్‌ను సంప్రదించండి
+btn_close_plain = మూసివేయి
+btn_cancel_plain = రద్దు చేయి
+
+# The license window.
+eula_heading = ZBox లైసెన్స్
+eula_text_name = ZBox లైసెన్స్ పాఠ్యం
+eula_third_party = మూడవ పక్ష భాగాల లైసెన్స్ పేజీలు:
+eula_agree = &పైన ఉన్న నిబంధనలకు నేను అంగీకరిస్తున్నాను
+eula_agree_name = నేను ZBox లైసెన్స్ నిబంధనలను చదివి అంగీకరిస్తున్నాను
+eula_disagree = &నేను అంగీకరించను
+eula_next = &తదుపరి
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox డాక్యుమెంటేషన్ పాఠ్యం
+doc_copy = క్లిప్‌బోర్డ్‌కు కాపీ చేయి
+shortcuts_heading = కీబోర్డ్ షార్ట్‌కట్‌లు
+shortcuts_text_name = కీబోర్డ్ షార్ట్‌కట్‌ల పాఠ్యం
+
+# The main window's own panes.
+mf_toolbar = ప్రధాన టూల్‌బార్
+mf_tabs = ZBox ట్యాబ్‌లు
+tree_heading = ఖాతాలు మరియు ఫోల్డర్‌లు
+tree_name = ఖాతా మరియు ఫోల్డర్ చెట్టు
+envlist_heading = సందేశాలు
+envlist_name = సందేశాల జాబితా
+rdr_heading = సందేశం
+rdr_name = సందేశ రీడర్
+conv_heading_one = సంభాషణ: 1 సందేశం
+conv_heading_many = సంభాషణ: {count} సందేశాలు
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total}లో {completed} పూర్తయ్యాయి.
+bulk_cancelling = రద్దు చేస్తోంది -- ప్రస్తుత సందేశాన్ని పూర్తి చేస్తోంది...
+cache_clear_now = ఆఫ్‌లైన్ సందేశ కాష్‌ను ఇప్పుడే తొలగించు... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, రక్షించబడింది
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = ప్రదర్శన పేరు ఐచ్ఛికం -- ఈ ఖాతా స్వంత పేరుతో పంపడానికి దాన్ని ఖాళీగా వదలండి.
+acct_note_identity = మీ ప్రొవైడర్‌కు ఈ మెయిల్‌బాక్స్‌తో అనుసంధానించిన అనుకూల డొమైన్ ఉంటే ఇమెయిల్ చిరునామా లాగిన్ ఇమెయిల్‌కు భిన్నంగా ఉండవచ్చు. మెయిల్ పైన ఉన్న చిరునామా కింద పంపబడుతుంది మరియు స్వీకరించబడుతుంది, సైన్ ఇన్ మాత్రం ఇప్పటికీ లాగిన్ ఇమెయిల్‌ను ఉపయోగిస్తుంది. ఈ ఖాతా కోసం ఇప్పటికే నిల్వ ఉన్న పాస్‌వర్డ్‌ను ఉంచడానికి పాస్‌వర్డ్ ఫీల్డ్‌ను ఖాళీగా వదలండి -- ఉదాహరణకు Gmail యాప్ పాస్‌వర్డ్‌ను మార్చిన తర్వాత కొత్తదాన్ని ఇక్కడ టైప్ చేయండి; లేకపోతే ఖాళీగా వదలండి.
+acct_note_identities = ఈ ఖాతా పంపడానికి మరియు ప్రత్యుత్తరం ఇవ్వడానికి ఉపయోగించగల ఇతర చిరునామాలు. వీటిలో ఒకదానికి పంపిన సందేశానికి ప్రత్యుత్తరం ఇచ్చినప్పుడు, నుండి పైన ఉన్న చిరునామాకు బదులుగా ఆ చిరునామాకు డిఫాల్ట్ అవుతుంది.
+acct_note_signature = ఈ ఖాతా నుండి పంపిన ప్రతి కొత్త సందేశం, ప్రత్యుత్తరం మరియు ఫార్వర్డ్‌కు "-- " పంక్తి కింద జోడించబడుతుంది. ఏదీ వద్దనుకుంటే ఖాళీగా వదలండి. సంతకం సవరించు ఫార్మాట్ చేసిన ఎడిటర్‌ను తెరుస్తుంది, ఇందులో బోల్డ్, జాబితాలు మరియు లింక్‌లు అందుబాటులో ఉంటాయి; పైన ఉన్న పెట్టె అప్పుడు దానితో పాటు వెళ్లే సాదా పాఠ్య వెర్షన్‌ను కలిగి ఉంటుంది.
+acct_note_junk = జంక్‌గా గుర్తించు సందేశాలను ఏ నిజమైన ఫోల్డర్‌కు తరలిస్తుంది. "{automatic}" ఆర్కైవ్ మరియు ట్రాష్ ఇప్పటికే ఉపయోగించే ప్రొవైడర్‌ను గుర్తించే అదే అంచనాను ఉపయోగిస్తుంది; ఆ అంచనా తప్పు అయితే లేదా మీ జంక్ ఫోల్డర్‌కు అనుకూల పేరు ఉంటే మాత్రమే దీన్ని సెట్ చేయండి.
+acct_note_disable = నిలిపివేసిన ఖాతాను మళ్లీ ప్రారంభించే వరకు ఎప్పుడూ సంప్రదించరు -- IDLE లేదు, కాలానుగుణ రిఫ్రెష్ లేదు, ఏమీ లేదు. అది ఇప్పటికీ చెట్టులో (నిలిపివేయబడింది) అని గుర్తుతో కనిపిస్తుంది, మరియు ఇప్పటికే డౌన్‌లోడ్ చేసిన దాని మెయిల్ ఆఫ్‌లైన్‌లో అందుబాటులో ఉంటుంది. ఖాతాలు > ఖాతాను నిలిపివేయి లేదా ఖాతా స్వంత సందర్భ మెనూతో ఇదే టోగుల్; ఇది దాన్ని చేరుకోవడానికి మరొక చోటు మాత్రమే.
+acct_note_default = ఈ ఖాతా ఫోల్డర్‌లు చెట్టులో మొదట కనిపిస్తాయి, మరియు కంపోజర్‌లో మాన్యువల్‌గా మార్చకపోతే కొత్త సందేశం డిఫాల్ట్‌గా దీని నుండి పంపబడుతుంది. ప్రత్యుత్తరం లేదా ఫార్వర్డ్ ఏ చిరునామాను ఉపయోగిస్తుందో దీనిపై ప్రభావం ఉండదు -- అది ఇప్పటికే సమాధానం ఇస్తున్న సందేశాన్ని అనుసరిస్తుంది (పైన అదనపు గుర్తింపులు చూడండి). ఎల్లప్పుడూ సరిగ్గా ఒక డిఫాల్ట్ ఖాతా ఉంటుంది, కాబట్టి మరొకదానిపై టిక్ పెట్టకుండా ప్రస్తుత డిఫాల్ట్‌పై దీన్ని అన్‌చెక్ చేస్తే అది మారదు -- బదులుగా డిఫాల్ట్‌ను మరొక ఖాతాకు ఇవ్వడానికి ఆ ఖాతా పెట్టెను టిక్ చేయండి.
+acct_note_mute = &మ్యూట్ చేయడం ఈ ఖాతా కొత్త మెయిల్ శబ్దం, మాట ప్రకటన మరియు Windows నోటిఫికేషన్‌ను అవి ఎలా కాన్ఫిగర్ చేయబడినా నిరోధిస్తుంది. ఇది ఇతర ఖాతాలను ప్రభావితం చేయదు, మరియు ఇది ఇంకా సెట్టింగ్‌లు > శబ్దాలు మరియు నోటిఫికేషన్‌లలోని ప్రధాన స్విచ్‌లకు లోబడి ఉంటుంది (మొత్తంగా శబ్దాలు మరియు డెస్క్‌టాప్ నోటిఫికేషన్‌లు).
+wiz_note_app_password = మీరు ఇప్పటికే ZBox కోసం యాప్ పాస్‌వర్డ్‌ను సృష్టించి ఉంటే, కొనసాగడానికి తదుపరి నొక్కండి.
+wiz_note_login = లాగిన్ ఆధారాలు.\nమీ లాగిన్ ఇమెయిల్ పైన ఉన్న చిరునామాకు భిన్నంగా ఉంటే, ఉదాహరణకు మీ ప్రొవైడర్ ఖాతా login@example.net అయినా మీరు you@example.org గా పంపి స్వీకరించాలనుకుంటే, లాగిన్ ఇమెయిల్‌ను ఇక్కడ నమోదు చేయండి. అనుకూల పంపే చిరునామాను తర్వాత ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లలో సెట్ చేయవచ్చు.
+wiz_note_servers = డొమైన్ గుర్తించబడిన చోట ముందుగా నింపబడిన సర్వర్ సెట్టింగ్‌లు. భిన్నంగా ఉండవలసినదాన్ని సవరించండి.
+wiz_preset_none = ఈ డొమైన్ కోసం ముందే నిర్ణయించిన సెట్టింగ్ కనబడలేదు. మీ ప్రొవైడర్ సర్వర్ సెట్టింగ్‌లను మాన్యువల్‌గా నమోదు చేయండి; మీ ప్రొవైడర్ సహాయ పేజీలు వాటిని జాబితా చేస్తాయి.
+ab_note_groups = ఒక సమూహంలోని సభ్యులందరినీ ఒకేసారి నింపడానికి రాసే విండోలోని కు, ప్రతి (Cc) లేదా గోప్య ప్రతి (Bcc) ఫీల్డ్‌లో దాని పేరును టైప్ చేయండి.
+cache_note_intro = ఇవి ZBox స్థానిక కాపీలను మాత్రమే తొలగిస్తాయి. ఏ మెయిల్ సర్వర్ నుండీ ఏమీ తొలగించబడదు, మరియు తొలగించిన సందేశం మీరు తదుపరిసారి తెరిచినప్పుడు మళ్లీ డౌన్‌లోడ్ అవుతుంది.
+cache_note_age = ZBoxకు పది నిమిషాలు కీబోర్డ్ కార్యకలాపం లేనప్పుడు మరియు ఏ సందేశమూ తెరిచి లేనప్పుడు స్వయంచాలక శుభ్రపరచడం రోజుకు ఒకసారి నడుస్తుంది. ఇది మీ ఖాతాలో ఇంకా ఉన్న సందేశాలతో సహా ప్రతి సందేశం స్వంత తేదీ ప్రకారం వెళ్తుంది.
+filt_note_intro = నియమాలు పై నుండి కిందికి వరుసగా నడుస్తాయి, నుండి, కు మరియు విషయాన్ని పరీక్షిస్తాయి. ఈ ఖాతా ఇన్‌బాక్స్‌లో కొత్త మెయిల్ వచ్చినప్పుడు స్వయంచాలకంగా వర్తింపజేయబడతాయి; ఫోల్డర్‌లో ఇప్పటికే ఉన్న సందేశాలకు వర్తింపజేయడానికి కింద ఉన్న ఇప్పుడే అమలు చేయి ఉపయోగించండి.
+filt_note_run_now = పైన ప్రారంభించిన ప్రతి నియమాన్ని, వరుసగా, ఎంచుకున్న ఫోల్డర్‌లో ఇప్పటికే ఉన్న ప్రతి సందేశానికి వర్తింపజేస్తుంది -- సరే లాగే ముందుగా మీ మార్పులను సేవ్ చేస్తుంది.
+mp_note_intro = ఈ ఖాతాలు మరొక కంప్యూటర్‌లో సెటప్ చేయబడ్డాయి. వాటి సేవ్ చేసిన పాస్‌వర్డ్‌లను ఇక్కడ అన్‌లాక్ చేయడానికి ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి. ఈ కంప్యూటర్‌లో మిమ్మల్ని ఒకసారి మాత్రమే అడుగుతారు.\n\nదాని లేకుండా ప్రతి ఖాతా తన మెయిల్ సర్వర్‌కు మళ్లీ సైన్ ఇన్ చేయాలి.
+priv_note_remote = సందేశం ఇంటర్నెట్ నుండి లోడ్ చేసే చిత్రాలు, శైలి పత్రాలు మరియు ఫాంట్‌లు మీరు దాన్ని తెరిచిన క్షణంలోనే, మరియు ఎక్కడి నుండి తెరిచారో, పంపినవారికి తెలియజేస్తాయి. ఇది ఆన్‌లో ఉంటే వాటిలో ఏదీ లోడ్ కాదు: సందేశం పైన ఏమి నిరోధించబడిందో చెప్పే నోటీసు కనిపిస్తుంది, మరియు Ctrl+Shift+I ఆ ఒక్క సందేశం కోసం దాన్ని లోడ్ చేస్తుంది. సందేశానికి జోడించిన చిత్రాలు ఎల్లప్పుడూ చూపబడతాయి. స్క్రిప్ట్‌లు మరియు పొందుపరిచిన ఫ్రేమ్‌లు ఏ విధంగానైనా తొలగించబడతాయి మరియు ఎప్పటికీ లోడ్ కావు.
+priv_note_blocklist = ఇది రెండవ పొర. మీరు సందేశం రిమోట్ కంటెంట్‌ను లోడ్ చేసినప్పుడు లేదా పంపినవారిని అనుమతించినప్పుడు ఇది ముఖ్యం: చిత్రాలు లోడ్ అవుతాయి, కానీ తెలిసిన ట్రాకింగ్ లేదా ప్రకటనల డొమైన్ నుండి వచ్చేది ఏదీ ఇంకా లోడ్ కాదు. జాబితా పబ్లిక్ ప్రకటన మరియు ట్రాకర్ జాబితాల నుండి డౌన్‌లోడ్ చేయబడి విలీనం చేయబడుతుంది; నవీకరణకు ఒకటి లేదా రెండు సెకన్లు పడుతుంది మరియు నేపథ్యంలో నడుస్తుంది.
+priv_note_junk = ఊహించడం లేదు. సందేశం మెయిలింగ్ జాబితా ద్వారా వస్తే తప్ప, జంక్‌గా గుర్తించు పంపినవారిని కింద ఉన్న నిరోధిత జాబితాకు జోడిస్తుంది. జంక్ కాదని గుర్తించు పంపినవారిని ఎప్పటికీ జంక్ కాని జాబితాకు జోడిస్తుంది మరియు ఆ సందేశం మళ్లీ తనిఖీ చేయబడదు. నిరోధించిన పంపినవారి కొత్త సందేశం జాబితాలో నిరోధించబడిన పంపినవారు అని గుర్తించబడుతుంది; తెలిసిన ఫిషింగ్ లేదా మాల్వేర్ సైట్‌కు లింక్ చేసేది ఫిషింగ్ అయి ఉండవచ్చు అని గుర్తించబడుతుంది. మీ మెయిల్ ప్రొవైడర్ స్వంత స్పామ్ ఫిల్టరింగ్ ముందులాగే నడుస్తుంది.
+priv_status_phishing_updating = ఫిషింగ్ జాబితా: నేపథ్యంలో నవీకరించబడుతోంది. ఫలితం చూడటానికి ఈ డైలాగ్‌ను మళ్లీ తెరవండి.
+priv_status_updating = నేపథ్యంలో నవీకరించబడుతోంది. ఫలితం చూడటానికి ఈ డైలాగ్‌ను మళ్లీ తెరవండి.
+rel_note_intro = ఈ ఖాతాలోని అన్ని ఫోల్డర్‌లలో "{subject}"కు వారి Message-ID/References హెడర్‌ల ద్వారా సంబంధించిన సందేశాలు.
+srch_note_intro = అన్ని ఖాతాలు మరియు ఫోల్డర్‌లలో పదాలను వెతకండి, లేదా కింద ఉన్న ఎంపికలతో శోధనను పరిమితం చేయండి. తేదీ లేదా చెక్ బాక్స్‌ల ద్వారా మాత్రమే సందేశాలను కనుగొనడానికి పదాలను ఖాళీగా వదలండి.
+sig_note_plain = సాదా పాఠ్య ప్రత్యామ్నాయాన్ని ఖాళీగా వదిలితే, మీరు సేవ్ చేయి నొక్కినప్పుడు అది ఫార్మాట్ చేసిన సంతకం నుండి వ్రాయబడుతుంది.
+unified_note_intro = అన్ని ఖాతాల అంతటా ఏ ఫోల్డర్‌లను కలపాలో ఎంచుకోండి. టిక్ చేసిన ప్రతి ఒక్కటి చెట్టులో మీ అన్ని ఖాతాల నుండి ఆ ఫోల్డర్‌ను కలిపే ఒకే ఎంట్రీ అవుతుంది.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox గురించి
+title_account_settings = ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లు: {name}
+title_new_account = కొత్త ఖాతా
+title_address_book = చిరునామా పుస్తకం
+title_members = సభ్యులు: {name}
+ab_group_name_prompt = సమూహం పేరు:
+title_new_group = కొత్త సమూహం
+title_cache_cleanup = కాష్ శుభ్రపరిచే కాన్ఫిగరేషన్
+cache_age_prompt = దీని కంటే పాత కాష్ సందేశాలను స్వయంచాలకంగా తొలగించు:
+title_automatic_cleanup = స్వయంచాలక శుభ్రపరచడం
+comp_link_prompt = లింక్ చిరునామా:
+title_insert_link = లింక్ చేర్చు
+title_composer_diagnostics = కంపోజర్ డయాగ్నోస్టిక్స్
+title_formatted_preview = ఫార్మాట్ చేసిన ప్రివ్యూ
+title_license_agreement = ZBox లైసెన్స్ ఒప్పందం
+title_message_filters = సందేశ ఫిల్టర్‌లు: {account}
+title_master_password_required = ప్రధాన పాస్‌వర్డ్ అవసరం
+title_privacy_dialog = గోప్యత మరియు కంటెంట్ నిరోధం
+title_privacy = గోప్యత
+title_settings = సెట్టింగ్‌లు
+set_tab_general = సాధారణం
+set_tab_personalization = వ్యక్తిగతీకరణ
+set_tab_accessibility = సౌలభ్యత మరియు షార్ట్‌కట్ కీలు
+set_tab_maintenance = నిర్వహణ మరియు శుభ్రపరచడం
+set_tab_sounds = శబ్దాలు మరియు నోటిఫికేషన్‌లు
+set_tab_security = భద్రత
+title_unified_folders = ఏకీకృత ఫోల్డర్‌లు
+title_zbox_locked = ZBox లాక్ చేయబడింది
+title_message_view = సందేశ వీక్షణ
+title_remote_content = రిమోట్ కంటెంట్
+title_refresh = రిఫ్రెష్
+title_refresh_all = అన్నీ రిఫ్రెష్ చేయి
+mv_choose_folder = జోడింపును సేవ్ చేయడానికి ఫోల్డర్‌ను ఎంచుకోండి
+title_thread = థ్రెడ్
+title_inbox = ఇన్‌బాక్స్
+title_compose = రాయి
+title_watch_thread = థ్రెడ్‌ను గమనించు
+title_ignore_thread = థ్రెడ్‌ను విస్మరించు
+title_edit_signature = సంతకం సవరించు
+title_account = ఖాతా
+mf_folder_name_prompt = ఫోల్డర్ పేరు:
+mf_new_name_prompt = కొత్త పేరు:
+title_refresh_all_accounts = అన్ని ఖాతాలను రిఫ్రెష్ చేయి
+title_sender = పంపినవారు
+title_new_mail = కొత్త మెయిల్
+mf_export_dialog_title = మొత్తం {count} ఖాతాలు మరియు సెట్టింగ్‌లను ఎగుమతి చేయి
+mf_related_tab = సంబంధిత: {subject}
+title_hotkeys_diagnostic = హాట్‌కీల డయాగ్నోస్టిక్
+set_choose_attachment_dir = జోడింపుల సేవ్ ఫోల్డర్‌ను ఎంచుకోండి
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox లాక్ చేయబడింది. దాన్ని అన్‌లాక్ చేయడానికి కింద ఉన్న పద్ధతుల్లో ఏదైనా ఒకదాన్ని ఉపయోగించండి. రద్దు చేస్తే ఏ ఖాతా తెరవకుండానే ZBox మూసివేయబడుతుంది.
+unl_note_foreign_passkey = ఈ ఫోల్డర్‌తో సేవ్ చేసిన పాస్‌కీ మరొక కంప్యూటర్‌కు చెందినది, కాబట్టి ఇక్కడ ఉపయోగించలేరు. మీ భద్రతా కీ లేదా ప్రధాన పాస్‌వర్డ్‌తో అన్‌లాక్ చేసి, ఈ కంప్యూటర్‌లో పాస్‌కీని సెటప్ చేయడానికి సెట్టింగ్‌లు, గోప్యత మరియు భద్రత, అన్‌లాక్ పద్ధతులు ఉపయోగించండి.
+unl_note_methods = యాప్ లాక్ ఆన్‌లో ఉన్నప్పుడు వీటిలో ఏదైనా ఒకటి, ప్రధాన పాస్‌వర్డ్‌తో పాటు, ZBoxను అన్‌లాక్ చేస్తుంది. పాస్‌కీ ఈ కంప్యూటర్‌లో Windows Helloను ఉపయోగిస్తుంది; భద్రతా కీ USB లేదా NFC పై FIDO2 కీ మరియు మీరు దాన్ని ఏ కంప్యూటర్‌లో పెట్టినా పని చేస్తుంది.
+unl_note_not_encryption = ఇవి యాప్‌ను అన్‌లాక్ చేస్తాయి. ఇవి ఏదీ ఎన్‌క్రిప్ట్ చేయవు: ఈ ఫోల్డర్ ఇంతకు ముందు ఉపయోగించని కంప్యూటర్‌లో సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను తెరవగలిగేది ఇప్పటికీ ప్రధాన పాస్‌వర్డ్ మాత్రమే. అది ముందుగా సెట్ చేయబడాలి, మరియు అది అయ్యే వరకు వీటిలో ఏదీ జోడించలేరు.
+unl_add_passkey_unavailable = &పాస్‌కీని జోడించు (అందుబాటులో లేదు)
+unl_add_key_unavailable = &భద్రతా కీని జోడించు (అందుబాటులో లేదు)
+unl_reassign_unavailable = &పాస్‌కీని ఈ కంప్యూటర్‌కు తిరిగి కేటాయించు (అందుబాటులో లేదు)
+unl_status_cancelled_passkey = పాస్‌కీ రద్దు చేయబడింది. ZBox ఇంకా లాక్ చేయబడి ఉంది.
+unl_status_cancelled_key = భద్రతా కీ రద్దు చేయబడింది. ZBox ఇంకా లాక్ చేయబడి ఉంది.
+unl_status_enter_password = ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి.
+unl_status_no_master = ప్రధాన పాస్‌వర్డ్ సెట్ చేయలేదు, కాబట్టి పాస్‌కీ లేదా భద్రతా కీని ఇంకా జోడించలేరు. సెట్టింగ్‌లు, గోప్యత మరియు భద్రతలోని ప్రధాన పాస్‌వర్డ్ బటన్‌తో ఒకదాన్ని సెట్ చేసి, ఆపై ఇక్కడికి తిరిగి రండి. ప్రధాన పాస్‌వర్డ్ మరొక కంప్యూటర్‌లో మీ సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను తెరుస్తుంది; పాస్‌కీ ఈ ఒక్క కంప్యూటర్‌లోనే యాప్‌ను అన్‌లాక్ చేస్తుంది, కాబట్టి అది ఒంటరిగా నిలబడలేదు.
+unl_status_unsupported = ఈ కంప్యూటర్ యొక్క Windows పాస్‌కీలు లేదా భద్రతా కీలకు మద్దతు ఇవ్వదు, కాబట్టి ఇక్కడ ZBoxను ప్రధాన పాస్‌వర్డ్ మాత్రమే అన్‌లాక్ చేయగలదు.
+unl_status_foreign_one = 1 పాస్‌కీ మరొక కంప్యూటర్‌కు చెందినది మరియు ఇక్కడ ZBoxను అన్‌లాక్ చేయలేదు. తిరిగి కేటాయించడం దాన్ని ఈ కంప్యూటర్‌లో సృష్టించినదానితో భర్తీ చేస్తుంది.
+unl_status_foreign_many = {count} పాస్‌కీలు మరొక కంప్యూటర్‌కు చెందినవి మరియు ఇక్కడ ZBoxను అన్‌లాక్ చేయలేవు. తిరిగి కేటాయించడం వాటిని ఈ కంప్యూటర్‌లో సృష్టించినదానితో భర్తీ చేస్తుంది.
+unl_status_foreign_one_no_hello = 1 పాస్‌కీ మరొక కంప్యూటర్‌కు చెందినది మరియు ఇక్కడ ZBoxను అన్‌లాక్ చేయలేదు. ఇక్కడ Windows Hello సెటప్ చేయలేదు, కాబట్టి దాన్ని ఈ కంప్యూటర్‌లో భర్తీ చేయలేరు; తొలగించు వాటిని మరచిపోతుంది.
+unl_status_foreign_many_no_hello = {count} పాస్‌కీలు మరొక కంప్యూటర్‌కు చెందినవి మరియు ఇక్కడ ZBoxను అన్‌లాక్ చేయలేవు. ఇక్కడ Windows Hello సెటప్ చేయలేదు, కాబట్టి వాటిని ఈ కంప్యూటర్‌లో భర్తీ చేయలేరు; తొలగించు వాటిని మరచిపోతుంది.
+unl_status_no_hello = ఈ కంప్యూటర్‌లో Windows Hello సెటప్ చేయలేదు, కాబట్టి ఇక్కడ పాస్‌కీని జోడించలేరు. భద్రతా కీని ఇంకా జోడించవచ్చు.
+unl_status_none_registered = అన్‌లాక్ పద్ధతులు ఇంకా నమోదు చేయలేదు.
+unl_status_add_cancelled_passkey = పాస్‌కీని జోడించడం రద్దు చేయబడింది.
+unl_status_add_cancelled_key = భద్రతా కీని జోడించడం రద్దు చేయబడింది.
+unl_status_added = జోడించబడింది: {name}.
+unl_status_reassign_cancelled = తిరిగి కేటాయించడం రద్దు చేయబడింది. ఏమీ మార్చబడలేదు.
+unl_status_reassigned = {name} జోడించబడింది మరియు ఇతర కంప్యూటర్ల నుండి {count} మరచిపోబడ్డాయి.
+unl_status_test_cancelled = పరీక్ష రద్దు చేయబడింది.
+unl_status_removed = తొలగించబడింది.
+unl_remove_warning_last = {name}ను తొలగించాలా?\n\nఇది నమోదు చేసిన ఏకైక అన్‌లాక్ పద్ధతి మరియు ప్రధాన పాస్‌వర్డ్ సెట్ చేయలేదు, కాబట్టి యాప్ లాక్ ఆన్‌లో ఉంటే ZBoxను అన్‌లాక్ చేయడానికి ఏమీ మిగలదు. మిమ్మల్ని బయట ఉంచకుండా లాక్ దాటవేయబడుతుంది, కానీ ZBox అప్పుడు అన్‌లాక్ చేసి తెరుచుకుంటుంది.
+unl_remove_warning = {name}ను తొలగించాలా? ZBox ఇక దాన్ని అంగీకరించదు.
+ab_col_email = ఇమెయిల్
+ab_col_name = పేరు
+ab_col_phone = ఫోన్
+ab_no_contacts = ఇంకా పరిచయాలు లేవు.
+acct_auto_check = కొత్త సందేశాల కోసం స్వయంచాలకంగా తనిఖీ చేయి
+acct_note_auto_check = ఆఫ్: ZBox ఈ ఖాతాను తనంతట తానే ఎప్పుడూ సంప్రదించదు -- కొత్త మెయిల్ గమనింపు లేదు, సమయ ఆధారిత రిఫ్రెష్ లేదు, నేపథ్య డౌన్‌లోడ్‌లు లేవు -- కాబట్టి నమ్మదగని సర్వర్ ఇతర ఖాతాలను నెమ్మది చేయలేదు. డౌన్‌లోడ్ చేసిన దాని మెయిల్ ఇప్పటికీ తెరుచుకుంటుంది, మరియు రిఫ్రెష్ (F5), పంపడం మరియు తొలగించడం ఇప్పటికీ సర్వర్‌ను చేరుతాయి. సాధనాల మెనూ లేదా ఖాతా సందర్భ మెనూలోని స్వయంచాలక తనిఖీని నిలిపివేయి లాంటిదే.
+bl_day_ago = 1 రోజు క్రితం
+bl_days_ago = {days} రోజుల క్రితం
+bl_label_blocklists = నిరోధ జాబితా
+bl_label_phishing = ఫిషింగ్ జాబితా
+bl_last_failed = చివరి ప్రయత్నం విఫలమైంది: %s
+bl_not_downloaded = ఇంకా డౌన్‌లోడ్ చేయలేదు.
+bl_save_failed = %s డౌన్‌లోడ్ చేయబడింది కానీ దాన్ని సేవ్ చేయలేకపోయింది: %s
+bl_seed_only = అంతర్నిర్మిత జాబితా నుండి %s డొమైన్‌లు. ఇంటర్నెట్ నుండి ఇంకా ఎప్పుడూ నవీకరించబడలేదు.
+bl_some_failed = కొన్ని మూలాలు విఫలమయ్యాయి: %s
+bl_some_unreachable = కొన్ని మూలాలను చేరుకోలేకపోయింది: %s
+bl_status_line = %s డొమైన్‌లు. చివరిగా నవీకరించింది %s.
+bl_up_to_date = %s ఇప్పటికే తాజాగా ఉంది.
+bl_update_failed = %s నవీకరించలేకపోయింది: %s
+bl_updated = %s నవీకరించబడింది: %s డొమైన్‌లు.
+cc_age_choice = %s కంటే పాత ప్రతి సందేశ కాష్
+cc_auto_button = స్వయంచాలక శుభ్రపరచడం: %s కంటే పాత కాష్ సందేశాలు...
+comp_btn_discard = &వదిలివేయి
+comp_btn_keep_editing = &సవరించడం కొనసాగించు
+comp_btn_save_draft = &డ్రాఫ్ట్ సేవ్ చేయి
+comp_no_account = ఖాతా కాన్ఫిగర్ చేయలేదు
+comp_saving_draft = డ్రాఫ్ట్ సేవ్ చేస్తోంది…
+comp_this_message = ఈ సందేశం
+comp_unsent_save_q = మూసివేసే ముందు %sను డ్రాఫ్ట్‌గా సేవ్ చేయాలా?
+comp_unsent_tray_q = ZBox ట్రేకు వెళ్లే ముందు %sను డ్రాఫ్ట్‌గా సేవ్ చేయాలా?
+doc_unreadable = డాక్యుమెంటేషన్ ఫైల్‌ను చదవలేకపోయింది:
+envlist_all_disabled = ప్రతి ఖాతా నిలిపివేయబడింది.
+envlist_col_date = తేదీ
+envlist_col_from = నుండి
+envlist_col_status = స్థితి
+envlist_col_subject = విషయం
+envlist_collapsed = కుదించబడింది (%d)
+envlist_empty = ఈ ఫోల్డర్‌లో సందేశాలు లేవు.
+envlist_loading = సందేశాలు లోడ్ అవుతున్నాయి...
+envlist_no_accounts = ఇంకా ఖాతాలు కాన్ఫిగర్ చేయలేదు.
+envlist_no_ignored = ఈ ఫోల్డర్‌లో విస్మరించిన థ్రెడ్‌లు లేవు.
+envlist_no_watched = ఈ ఫోల్డర్‌లో గమనించిన థ్రెడ్‌లు లేవు.
+envlist_select_folder = సందేశాలను లోడ్ చేయడానికి ఒక ఖాతా లేదా ఫోల్డర్‌ను ఎంచుకోండి.
+eula_link_0 = మీ బ్రౌజర్‌లో Himalaya లైసెన్స్ పేజీని తెరువు
+eula_link_1 = మీ బ్రౌజర్‌లో StevenBlack hosts లైసెన్స్ పేజీని తెరువు
+eula_link_2 = మీ బ్రౌజర్‌లో EasyList/EasyPrivacy లైసెన్స్ పేజీని తెరువు
+eula_link_3 = మీ బ్రౌజర్‌లో Phishing.Database లైసెన్స్ పేజీని తెరువు
+eula_read_note = మూడవ పక్ష విభాగాలతో సహా కింద ఉన్న లైసెన్స్‌ను చదవండి. తదుపరి అందుబాటులోకి రావడానికి ముందు మీరు నేను అంగీకరిస్తున్నాను టిక్ చేయాలి. నేను అంగీకరించను ZBoxను ప్రారంభించకుండా మూసివేస్తుంది, మరియు ఈ రన్ ఇప్పటివరకు సృష్టించినదాన్ని తొలగిస్తుంది.
+eula_unreadable = లైసెన్స్ ఫైల్‌ను చదవలేకపోయింది:\n%s
+filters_title = ఫిల్టర్‌లను అమలు చేయి
+flag_title = సందేశానికి నక్షత్రం గుర్తు పెట్టు
+folder_type_archive = ఆర్కైవ్
+folder_type_drafts = డ్రాఫ్ట్‌లు
+folder_type_inbox = ఇన్‌బాక్స్
+folder_type_junk = జంక్
+folder_type_sent = పంపినవి
+folder_type_trash = ట్రాష్
+mime_application_json = JSON ఫైల్
+mime_application_msword = Word పత్రం
+mime_application_octet_stream = బైనరీ ఫైల్
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel స్ప్రెడ్‌షీట్
+mime_application_vnd_ms_powerpoint = PowerPoint ప్రెజెంటేషన్
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint ప్రెజెంటేషన్
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel స్ప్రెడ్‌షీట్
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word పత్రం
+mime_application_xml = XML ఫైల్
+mime_application_zip = ZIP ఆర్కైవ్
+mime_audio_mpeg = MP3 ఆడియో
+mime_audio_ogg = OGG ఆడియో
+mime_audio_wav = WAV ఆడియో
+mime_image_bmp = BMP చిత్రం
+mime_image_gif = GIF చిత్రం
+mime_image_jpeg = JPEG చిత్రం
+mime_image_png = PNG చిత్రం
+mime_image_svg_xml = SVG చిత్రం
+mime_image_webp = WebP చిత్రం
+mime_text_csv = CSV ఫైల్
+mime_text_html = HTML ఫైల్
+mime_text_plain = పాఠ్య ఫైల్
+mime_video_mp4 = MP4 వీడియో
+mime_video_x_msvideo = AVI వీడియో
+move_title_junk = జంక్‌గా గుర్తించు
+move_title_move_to = తరలించు
+move_title_not_junk = జంక్ కాదని గుర్తించు
+mp_explain_set = ప్రధాన పాస్‌వర్డ్ సెట్ చేయబడింది. ఈ ZBox ఫోల్డర్ వేరే కంప్యూటర్‌లో తన సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను తెరవడానికి అదే అనుమతిస్తుంది.\n\nదాన్ని తొలగించడానికి రెండు కొత్త పాస్‌వర్డ్ పెట్టెలను ఖాళీగా వదిలి సరే నొక్కండి. దాన్ని తొలగించడం ఈ కంప్యూటర్‌ను ప్రభావితం చేయదు, కానీ ప్రతి ఖాతాను మళ్లీ సైన్ ఇన్ చేయకుండా ఫోల్డర్ ఇతర ఏ కంప్యూటర్‌లోనూ పని చేయదు.
+mp_explain_unset = ప్రధాన పాస్‌వర్డ్ సెట్ చేయలేదు, కాబట్టి సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లను ఈ కంప్యూటర్‌లో మరియు ఈ Windows ఖాతాలో మాత్రమే చదవగలరు. ఫోల్డర్‌ను మరెక్కడైనా కాపీ చేస్తే ప్రతి ఖాతా తన మెయిల్ సర్వర్‌కు మళ్లీ సైన్ ఇన్ చేయాలి.\n\nఒకదాన్ని సెట్ చేస్తే ZBox ప్రతి కొత్త కంప్యూటర్‌లో ఒకసారి దాన్ని అడిగి, ఆ తర్వాత అక్కడ సాధారణంగా అన్‌లాక్ అవుతుంది. ఈ కంప్యూటర్ మళ్లీ అడగదు.\n\nదాన్ని వ్రాసి సురక్షితమైన చోట ఉంచండి. అది ఎక్కడా నిల్వ చేయబడదు మరియు తిరిగి పొందలేము: మీరు మరచిపోతే, ప్రతి ఖాతా తన మెయిల్ సర్వర్‌కు మళ్లీ సైన్ ఇన్ చేయాలి.
+mp_label_confirm = &కొత్త ప్రధాన పాస్‌వర్డ్‌ను నిర్ధారించండి:
+mp_label_current = &ప్రస్తుత ప్రధాన పాస్‌వర్డ్:
+mp_label_master = &ప్రధాన పాస్‌వర్డ్:
+mp_label_new = &కొత్త ప్రధాన పాస్‌వర్డ్:
+mp_name_confirm = కొత్త ప్రధాన పాస్‌వర్డ్‌ను నిర్ధారించండి
+mp_name_current = ప్రస్తుత ప్రధాన పాస్‌వర్డ్
+mp_name_master = ప్రధాన పాస్‌వర్డ్
+mp_name_new = కొత్త ప్రధాన పాస్‌వర్డ్
+mp_prompt_existing = మీ సేవ్ చేసిన ఖాతా పాస్‌వర్డ్‌లు ఈ కంప్యూటర్‌లో మాత్రమే రక్షించబడ్డాయి. మీరు ZBoxను మరొక కంప్యూటర్‌కు తరలిస్తే అవి కూడా తెరవగలిగేలా ప్రధాన పాస్‌వర్డ్‌ను సెట్ చేయండి.
+mp_prompt_first_run = ZBox మీ ఖాతా పాస్‌వర్డ్‌లను సేవ్ చేయబోతోంది. మీరు ZBoxను మరొక కంప్యూటర్‌కు తరలిస్తే అవి ఇంకా తెరవగలిగేలా ఇప్పుడే ప్రధాన పాస్‌వర్డ్‌ను సెట్ చేయండి.
+mp_prompt_new_account = ZBox ఈ ఖాతా పాస్‌వర్డ్‌ను సేవ్ చేయబోతోంది. మీరు ZBoxను మరొక కంప్యూటర్‌కు తరలిస్తే ఖాతా ఇంకా తెరవగలిగేలా ముందుగా ప్రధాన పాస్‌వర్డ్‌ను సెట్ చేయండి.
+mp_removed_done = ప్రధాన పాస్‌వర్డ్ తొలగించబడింది. సేవ్ చేసిన పాస్‌వర్డ్‌లు ఇప్పుడు ఈ కంప్యూటర్‌లో మరియు ఈ Windows ఖాతాలో మాత్రమే పని చేస్తాయి.
+mp_set_done = ప్రధాన పాస్‌వర్డ్ సెట్ చేయబడింది. ఈ ఫోల్డర్ తెరిచే ప్రతి కొత్త కంప్యూటర్‌లో ZBox దాన్ని ఒకసారి అడిగి, ఆ తర్వాత అక్కడ సాధారణంగా అన్‌లాక్ అవుతుంది.
+mv_body_title = సందేశ భాగం
+mv_col_format = ఫార్మాట్
+mv_col_name = పేరు
+mv_col_size = పరిమాణం
+mv_format_unknown = తెలియదు
+mv_size_unknown = పరిమాణం తెలియదు
+na_account_settings = ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లు
+na_disable_account = ఖాతాను నిలిపివేయి
+na_edit_signature = సంతకం సవరించు
+na_message_filters = సందేశ ఫిల్టర్‌లు
+na_mute_account = ఖాతాను మ్యూట్ చేయి
+na_pause_auto_check = స్వయంచాలక తనిఖీని నిలిపివేయి
+na_remove_account = ఖాతాను తొలగించు
+na_set_default = డిఫాల్ట్ ఖాతాగా సెట్ చేయి
+no_offline_copy = %s యొక్క ఆఫ్‌లైన్ కాపీ లేదు. ఆన్‌లైన్‌లో ఉన్నప్పుడు దాన్ని తెరవండి, లేదా ఫైల్, ఆఫ్‌లైన్, ఇప్పుడే సమకాలీకరించు ఉపయోగించండి.
+perm_delete_confirm = {msg} ఇది ట్రాష్ ఫోల్డర్‌ను దాటవేస్తుంది మరియు రద్దు చేయలేము.
+perm_delete_many = {count} సందేశాలను శాశ్వతంగా తొలగించాలా?
+perm_delete_one = {count} సందేశాన్ని శాశ్వతంగా తొలగించాలా?
+preset_note_apple = Appleకు యాప్-నిర్దిష్ట పాస్‌వర్డ్ అవసరం.
+preset_note_fastmail = Fastmailకు యాప్ పాస్‌వర్డ్ అవసరం.
+preset_note_google = Googleకు యాప్ పాస్‌వర్డ్ లేదా OAuth2 అవసరం, మీ సాధారణ పాస్‌వర్డ్ కాదు.
+preset_note_proton = ProtonMailకు ProtonMail Bridge యాప్ స్థానికంగా నడుస్తూ ఉండాలి.
+preset_note_yahoo = Yahooకు యాప్ పాస్‌వర్డ్ అవసరం.
+priv_phishing_not_loaded = ఫిషింగ్ జాబితా: ఇంకా లోడ్ కాలేదు. ఈ నియమాలు ఆన్‌లో ఉండి ZBox ఆన్‌లైన్‌లో ఉన్నప్పుడు మొదటిసారి డౌన్‌లోడ్ అవుతుంది.
+priv_phishing_prefix = ఫిషింగ్ జాబితా:
+priv_status_unavailable = నిరోధ జాబితా స్థితి అందుబాటులో లేదు.
+rdr_load_failed = సందేశాన్ని లోడ్ చేయలేకపోయింది.\n\n{message}
+rdr_loading = సందేశం లోడ్ అవుతోంది...
+rdr_select_message = ఇక్కడ చదవడానికి ఒక సందేశాన్ని ఎంచుకోండి.
+set_autosave_off = ఆఫ్ — మాన్యువల్‌గా సేవ్ చేయడానికి డ్రాఫ్ట్ సేవ్ చేయి (Ctrl+S) ఉపయోగించండి
+set_autosave_seconds = ప్రతి {seconds} సెకన్లకు
+set_no_unlock = ఇక్కడ ఉపయోగించదగిన పాస్‌కీ లేదా భద్రతా కీ లేదు
+set_purge_days = {days} రోజుల తర్వాత
+set_purge_off = ఆఫ్ — ట్రాష్ మరియు జంక్ స్వయంచాలకంగా ఎప్పుడూ తొలగించబడవు
+set_purge_one_day = 1 రోజు తర్వాత
+set_val_seconds = {seconds} సెకన్లు
+set_val_one_second = 1 సెకను
+set_silence_off = ఆఫ్
+set_announce_wait = కీ కోసం వేచి ఉంటుంది
+set_autosave_minutes = ప్రతి {minutes} నిమిషాలకు
+set_autosave_one_minute = ప్రతి నిమిషానికి
+set_rt_bundled_installed = చేర్చబడిన రన్‌టైమ్: ఇన్‌స్టాల్ చేయబడింది.
+set_rt_bundled_many = చేర్చబడిన రన్‌టైమ్: %s ఇన్‌స్టాల్ చేయబడింది.
+set_rt_bundled_none = చేర్చబడిన రన్‌టైమ్: ఏదీ ఇన్‌స్టాల్ చేయలేదు, కాబట్టి ZBox సిస్టమ్ మొత్తం రన్‌టైమ్‌ను ఉపయోగిస్తుంది.
+set_rt_bundled_unknown = చేర్చబడిన రన్‌టైమ్: నిర్ధారించలేకపోయింది.
+set_rt_bundled_ver = చేర్చబడిన రన్‌టైమ్: వెర్షన్ %s ఇన్‌స్టాల్ చేయబడింది.
+set_rt_system_unknown = సిస్టమ్ మొత్తం రన్‌టైమ్: వెర్షన్‌ను నిర్ధారించలేకపోయింది.
+set_rt_system_ver = సిస్టమ్ మొత్తం రన్‌టైమ్: వెర్షన్ %s.
+set_unlock_many = ఇక్కడ %d అన్‌లాక్ పద్ధతులు ఉపయోగించవచ్చు
+set_unlock_unreadable = అన్‌లాక్ పద్ధతులను చదవలేకపోయింది
+sig_tab_formatted = ఫార్మాట్ చేసినది
+sig_tab_source = HTML మూలం
+srch_all_accounts = అన్ని ఖాతాలు
+srch_all_folders = అన్ని ఫోల్డర్‌లు
+tab_mail = మెయిల్
+tab_new_message = కొత్త సందేశం
+tab_saved_message = సేవ్ చేసిన సందేశం
+title_copy_to_err = కాపీ చేయి
+title_mark_message = సందేశాన్ని గుర్తించు
+title_unsent_message = పంపని సందేశం
+tree_unified_root = ఏకీకృత ఫోల్డర్‌లు
+unlock_kind_passkey = పాస్‌కీ (Windows Hello)
+unlock_kind_security_key = భద్రతా కీ
+unlock_prompt_message = నిర్ధారించమని Windows అడుగుతోంది. దాని ప్రాంప్ట్‌కు Windows Hello, మీ PIN లేదా మీ భద్రతా కీతో సమాధానం ఇవ్వండి. Windows పూర్తి చేసినప్పుడు ఈ విండో తనంతట తానే మూసుకుంటుంది.
+unlock_prompt_title = Windows భద్రత
+unlock_registering = ఈ అన్‌లాక్ పద్ధతిని నమోదు చేస్తోంది
+unlock_the_passkey = పాస్‌కీ
+unlock_the_security_key = భద్రతా కీ
+wildcard_eml = ఇమెయిల్ ఫైళ్లు (*.eml)|*.eml|అన్ని ఫైళ్లు (*.*)|*.*
+wildcard_export = ZBox ఎగుమతి (*.json)|*.json
+wiz_not_supported = మద్దతు లేదు: {name}. {note} ఈ ఖాతాను ZBoxలో జోడించలేము.
+stock_apply = &వర్తింపజేయి
+stock_cancel = రద్దు చేయి
+stock_close = &మూసివేయి
+stock_help = &సహాయం
+stock_no = &కాదు
+stock_ok = సరే
+stock_yes = &అవును
+wiz_btn_back = &< వెనుకకు
+wiz_btn_finish = &ముగించు
+wiz_btn_next = &తదుపరి >
+acct_unsaved_q = ఈ ఖాతా మార్పులను సేవ్ చేయాలా?
+btn_save = &సేవ్ చేయి
+spell_add_to_dictionary = &నిఘంటువుకు జోడించు
+spell_no_suggestions = సూచనలు లేవు
+title_signature_for = సంతకం: {account}
+title_mark_folder_read = ఫోల్డర్‌ను చదివినట్లు గుర్తించు
+title_update_available = ZBox నవీకరణ
+update_available = ZBox {new} అందుబాటులో ఉంది. మీ వద్ద {current} ఉంది.
+upd_notes_label = &విడుదల గమనికలు:
+upd_no_notes = విడుదల గమనికలు లేవు.
+upd_notes_name = విడుదల గమనికలు
+upd_update_now = &అవును, ఇప్పుడే నవీకరించు
+upd_remind_later = &తర్వాత గుర్తు చేయి
+title_update_download = ZBox నవీకరణ డౌన్‌లోడ్ అవుతోంది
+upd_downloading = ZBox {version} డౌన్‌లోడ్ అవుతోంది...
+upd_progress_name = డౌన్‌లోడ్ పురోగతి
+upd_cancel = &రద్దు చేయి
+upd_cancelling = రద్దు చేస్తోంది...
+set_updates_label = నవీకరణలు:
+set_update_auto = &నవీకరణల కోసం స్వయంచాలకంగా తనిఖీ చేయి
+set_update_mode_label = నవీకరణ దొరికినప్పుడు:
+set_update_ask = &నన్ను అడుగు
+set_update_silent = &నిశ్శబ్దంగా డౌన్‌లోడ్ చేసి ఇన్‌స్టాల్ చేయి
+set_update_note = ZBox కొత్త విడుదల కోసం GitHubను రోజుకు గరిష్టంగా ఒకసారి, ఖాళీగా ఉన్నప్పుడు మాత్రమే తనిఖీ చేస్తుంది, మరియు తన వెర్షన్ నంబర్ తప్ప మరేదీ పంపదు. నన్ను అడుగు కొత్త వెర్షన్‌ను మరియు దాని విడుదల గమనికలను, అవును, ఇప్పుడే నవీకరించు మరియు తర్వాత గుర్తు చేయితో చూపుతుంది. నిశ్శబ్దంగా డౌన్‌లోడ్ చేసి ఇన్‌స్టాల్ చేయి ఖాళీ సమయంలో నవీకరణను తెచ్చి, మీరు తదుపరిసారి ZBox నుండి పూర్తిగా నిష్క్రమించినప్పుడు, మీరు పని చేస్తున్నప్పుడు ఎప్పుడూ కాకుండా, ఇన్‌స్టాల్ చేస్తుంది. నవీకరణ ZBox స్వంత ప్రోగ్రామ్ ఫైళ్లను మాత్రమే భర్తీ చేస్తుంది: మీ ఖాతాలు, పాస్‌వర్డ్‌లు, సెట్టింగ్‌లు, మెయిల్, లాగ్‌లు, శబ్ద థీమ్‌లు మరియు మీరు జోడించిన ఏ భాషనూ తాకదు, మరియు కొత్తది ప్రారంభం కాకపోతే మునుపటి వెర్షన్ ఉంచబడి తనంతట తానే పునరుద్ధరించబడుతుంది. సహాయం, నవీకరణలలో ఇప్పుడే నవీకరణల కోసం తనిఖీ చేయి మరియు చేతితో నవీకరించడానికి విడుదలల పేజీ కూడా ఉన్నాయి.
+set_update_check_now = &ఇప్పుడే తనిఖీ చేయి
+mv_attachment_button = {filename} ({format})
+att_open = తెరువు
+att_save = సేవ్ చేయి...
+att_save_all = అన్ని జోడింపులను సేవ్ చేయి
+title_save_attachment = జోడింపును సేవ్ చేయి
+title_full_headers = పూర్తి హెడర్‌లు
+hdr_copy_all = అన్నీ కాపీ చేయి
+acct_identity_own_signature = దాని స్వంత సంతకాన్ని ఉపయోగించు
+acct_identity_own_reply_to = దాని స్వంత ప్రత్యుత్తరం చిరునామాను ఉపయోగించు
+acct_identity_reply_to = ప్రత్యుత్తరం చిరునామా
+acct_identity_always_cc = ఈ చిరునామాలకు ఎల్లప్పుడూ ప్రతి పంపు
+acct_identity_cc = ప్రతి చిరునామాలు
+acct_identity_always_bcc = ఈ చిరునామాలకు ఎల్లప్పుడూ గోప్య ప్రతి పంపు
+acct_identity_bcc = గోప్య ప్రతి చిరునామాలు
+acct_identity_own_folders = దాని స్వంత డ్రాఫ్ట్‌లు మరియు పంపినవి ఫోల్డర్‌లను ఉపయోగించు
+acct_identity_drafts = డ్రాఫ్ట్‌ల ఫోల్డర్
+acct_identity_sent = పంపినవి ఫోల్డర్
+acct_identity_own_smtp = దాని స్వంత అవుట్‌గోయింగ్ సర్వర్‌ను ఉపయోగించు
+acct_identity_smtp_login = అవుట్‌గోయింగ్ లాగిన్ పేరు
+acct_identity_smtp_password = అవుట్‌గోయింగ్ పాస్‌వర్డ్
+acct_identity_test_smtp = &అవుట్‌గోయింగ్ సర్వర్‌ను పరీక్షించు
+acct_identity_note_smtp = ఈ గుర్తింపు ఇమెయిల్ చిరునామాతో సైన్ ఇన్ చేయడానికి లాగిన్ పేరును ఖాళీగా వదలండి. పంపిన కాపీలు ఇప్పటికీ ఈ ఖాతా పంపినవి ఫోల్డర్‌కు వెళ్తాయి, లేదా ఈ గుర్తింపుకు దాని స్వంతది ఉంటే అక్కడికి వెళ్తాయి.
+identity_field_required = {field} నింపండి, లేదా దాని పెట్టెలో టిక్ తీసివేయండి.
+identity_field_invalid = {field}లో చెల్లని చిరునామా ఉంది.
+identity_folders_required = డ్రాఫ్ట్‌ల ఫోల్డర్, పంపినవి ఫోల్డర్ లేదా రెండింటినీ ఎంచుకోండి, లేదా వాటి పెట్టెలో టిక్ తీసివేయండి.
+identity_password_required = అవుట్‌గోయింగ్ పాస్‌వర్డ్‌ను నమోదు చేయండి.
+identity_smtp_testing = అవుట్‌గోయింగ్ సర్వర్‌ను పరీక్షిస్తోంది.
+identity_smtp_ok = అవుట్‌గోయింగ్ సర్వర్ సైన్ ఇన్‌ను అంగీకరించింది.
+identity_smtp_failed = అవుట్‌గోయింగ్ సర్వర్ పరీక్ష విఫలమైంది.\n\n{error}
+set_bare_keys_note_move = M మరియు C ఎంచుకున్న సందేశాల కోసం ఫోల్డర్‌ల తరలించు మరియు కాపీ చేయి మెనూలను తెరుస్తాయి, మరియు Shift+M వాటిని అక్కడికి తరలించడానికి ఫోల్డర్ పేరులో కొంత భాగాన్ని టైప్ చేసే పెట్టెను తెరుస్తుంది. దీన్ని ఆపివేస్తే M మరియు C కూడా మొదటి అక్షర నావిగేషన్‌కు తిరిగి వస్తాయి.
+folder_search_filter = ఫోల్డర్ పేరులో ఉన్నది
+folder_search_list = సరిపోలే ఫోల్డర్‌లు
+folder_search_no_match = ఆ పేరుకు సరిపోలే ఫోల్డర్ లేదు.
+wiz_signin_method = సైన్ ఇన్ పద్ధతి
+wiz_method_password = పాస్‌వర్డ్
+wiz_method_microsoft = Microsoft ఖాతా (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft సైన్ ఇన్. Outlook.com, Hotmail, Live మరియు Microsoft 365 కోసం సర్వర్ సెట్టింగ్‌లు నింపబడ్డాయి.
+wiz_welcome_notice = Gmail. మీ సాధారణ Google పాస్‌వర్డ్ తిరస్కరించబడుతుంది, కానీ యాప్ పాస్‌వర్డ్ పని చేస్తుంది. రెండు-దశల ధృవీకరణ ముందుగా ఆన్‌లో ఉండాలి. కింద ఉన్న బటన్ Google సూచనలను తెరుస్తుంది.\n\nOutlook.com, Hotmail, Live మరియు Microsoft 365. ఇవి మీ Microsoft ఖాతాతో సైన్ ఇన్ అవుతాయి. లాగిన్ పేజీలో Microsoft ఖాతాను ఎంచుకుని, మీ బ్రౌజర్‌తో లేదా కోడ్‌తో సైన్ ఇన్ చేయండి.\n\nఇతర ప్రొవైడర్లు. సాధారణ పాస్‌వర్డ్ లేదా యాప్ పాస్‌వర్డ్ సాధారణంగా పని చేస్తుంది, మరియు మీ ప్రొవైడర్ సహాయ పేజీలు సర్వర్ సెట్టింగ్‌లను జాబితా చేస్తాయి.
+preset_note_outlook = Outlook.com, Hotmail, Live మరియు MSN ఖాతాలు Microsoft ఖాతాతో సైన్ ఇన్ అవుతాయి. లాగిన్ పేజీలో సైన్ ఇన్ పద్ధతిగా Microsoft ఖాతాను ఎంచుకోండి.
+ms_status_name = Microsoft సైన్ ఇన్ స్థితి
+ms_browser_button = &బ్రౌజర్‌తో సైన్ ఇన్ చేయి
+ms_code_button = &కోడ్‌తో సైన్ ఇన్ చేయి
+ms_copy_code = &కోడ్ కాపీ చేయి
+ms_open_page = &సైన్ ఇన్ పేజీని తెరువు
+ms_stop = &వేచి ఉండటం ఆపు
+ms_not_configured = ZBox యొక్క ఈ కాపీలో Microsoft సైన్ ఇన్ సెటప్ చేయలేదు.
+ms_not_signed_in = ఇంకా సైన్ ఇన్ కాలేదు. మీ బ్రౌజర్‌తో, లేదా ఏ పరికరంలోనైనా కోడ్‌తో సైన్ ఇన్ చేయండి.
+ms_signed_in = {address}గా సైన్ ఇన్ అయ్యారు.
+ms_signed_in_plain = సైన్ ఇన్ అయ్యారు.
+ms_needs_sign_in = ఈ ఖాతా కోసం Microsoft సైన్ ఇన్ మళ్లీ అవసరం. మీ బ్రౌజర్‌తో, లేదా ఏ పరికరంలోనైనా కోడ్‌తో సైన్ ఇన్ చేయండి.
+ms_reason_cancelled = సైన్ ఇన్ ఆపివేయబడింది.
+ms_reason_timeout = సమయానికి సమాధానం రాలేదు.
+ms_reason_denied = ప్రవేశం అనుమతించబడలేదు.
+ms_reason_expired = కోడ్ గడువు ముగిసింది. కొత్తదాన్ని అడగండి.
+ms_reason_network = Microsoftను చేరుకోలేకపోయింది. కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.
+ms_reason_server = Microsoft ఇలా చెప్పింది: {detail}
+ms_page_done = సైన్ ఇన్ అయ్యారు. మీరు ఈ పేజీని మూసివేసి ZBoxకు తిరిగి రావచ్చు.
+ms_page_failed = సైన్ ఇన్ పూర్తి కాలేదు. వివరాల కోసం ZBoxకు తిరిగి రండి.
+ms_browser_waiting = మీ బ్రౌజర్ Microsoft సైన్ ఇన్ పేజీని చూపుతోంది. అక్కడ సైన్ ఇన్ పూర్తి చేసి, ఆపై ZBoxకు తిరిగి రండి.
+ms_code_asking = Microsoft నుండి సైన్ ఇన్ కోడ్‌ను అడుగుతోంది...
+ms_code_waiting = ఏ పరికరంలోనైనా {address} తెరిచి, {code} కోడ్‌ను నమోదు చేయండి. మీరు సైన్ ఇన్ పూర్తి చేసే వరకు ZBox ఇక్కడ వేచి ఉంటుంది.
+ms_failed = సైన్ ఇన్ పూర్తి కాలేదు. {reason}
+ms_code_copied = కోడ్ కాపీ చేయబడింది.
+offline_inbox_only = ఇన్‌బాక్స్ మరియు ఆర్కైవ్ మాత్రమే ఆఫ్‌లైన్ వినియోగం కోసం ఉంచబడతాయి. {folder} తెరవడానికి ఆన్‌లైన్‌కు వెళ్లండి.
+block_sender_rule_name = {sender}ను నిరోధించు
+title_block_sender = ఈ పంపినవారిని నిరోధించు
+title_unblock_sender = ఈ పంపినవారి నిరోధాన్ని తొలగించు
+set_clear_inbox_cache = ఇన్‌బాక్స్ నుండి వెళ్లేటప్పుడు సందేశ కాష్‌ను తొలగించు
+set_clear_inbox_cache_note = ఆన్‌లో ఉన్నప్పుడు, సందేశం ఇన్‌బాక్స్ నుండి వెళ్లిన వెంటనే దాని ఆఫ్‌లైన్ కాపీ మరియు సేవ్ చేసిన భాగం తొలగించబడతాయి, మీ ఫోన్ వంటి మరెక్కడో తొలగించబడినా లేదా తరలించబడినా కూడా, తద్వారా అది ఇక లేని చోట ఎప్పుడూ కనిపించదు. ఈ ఫైళ్లను ఇన్‌బాక్స్ మాత్రమే ఉంచుతుంది; ప్రతి ఇతర ఫోల్డర్ ఎల్లప్పుడూ సర్వర్ నుండి చదవబడుతుంది.
+empty_trash_all_confirm = ప్రతి ఖాతా ట్రాష్‌లోని అన్ని సందేశాలను శాశ్వతంగా తొలగించాలా?\n\nఇది రద్దు చేయలేము.
+envlist_col_recipient = స్వీకర్త
+envlist_col_correspondents = సంప్రదింపుదారులు
+envlist_col_received = స్వీకరించినవి
+envlist_col_size = పరిమాణం
+envlist_col_attachments = జోడింపులు
+envlist_col_priority = ప్రాధాన్యత
+envlist_col_junk_status = జంక్ స్థితి
+envlist_attachment = జోడింపులు
+envlist_priority_highest = అత్యధిక
+envlist_priority_high = అధిక
+envlist_priority_low = తక్కువ
+envlist_priority_lowest = అత్యల్ప
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = సందేశాల జాబితాలో నిలువు వరుస శీర్షికలను చూపు
+pgp_title = OpenPGP కీ మేనేజర్
+smime_title = S/MIME ప్రమాణపత్ర మేనేజర్
+smime_own = మీ ప్రమాణపత్రం
+smime_expired = గడువు ముగిసింది
+smime_expires = {date}న గడువు ముగుస్తుంది
+smime_issuer = జారీ చేసినది
+smime_valid = {start} నుండి {end} వరకు చెల్లుతుంది
+smime_fingerprint = SHA-256 వేలిముద్ర
+smime_own_key = మీ ప్రమాణపత్రం, దాని ప్రైవేట్ కీతో: దానికి ఎన్‌క్రిప్ట్ చేసిన మెయిల్ ఇక్కడ చదవవచ్చు.
+smime_unavailable = ZBox యొక్క ఈ కాపీలో S/MIME అందుబాటులో లేదు.
+smime_details = ప్రమాణపత్ర వివరాలు
+smime_no_certs = ఇంకా ప్రమాణపత్రాలు లేవు. మీ స్వంత .p12 లేదా .pfx ఫైల్‌ను, లేదా సంప్రదింపుదారు ప్రమాణపత్రాన్ని దిగుమతి చేయండి.
+smime_import_failed = ప్రమాణపత్రం దిగుమతి కాలేదు: {error}
+smime_import_title = ప్రమాణపత్ర ఫైల్‌ను దిగుమతి చేయి
+smime_password_prompt = {name} పాస్‌వర్డ్‌ను నమోదు చేయండి.
+smime_password_title = ప్రమాణపత్రం పాస్‌వర్డ్
+smime_imported = ప్రమాణపత్రం దిగుమతి చేయబడింది.
+smime_export_title = ప్రమాణపత్రాన్ని ఎగుమతి చేయి
+smime_exported = ప్రమాణపత్రం ఎగుమతి చేయబడింది.
+smime_delete_confirm = {name} ప్రమాణపత్రాన్ని తొలగించాలా? అది మీ స్వంతమైతే, దానికి ఎన్‌క్రిప్ట్ చేసిన మెయిల్ ఇక ఇక్కడ చదవలేరు.
+smime_deleted = ప్రమాణపత్రం తొలగించబడింది.
+smime_rs_verified = ఈ సందేశంలో, Windows విశ్వసించే అధికారి పంపినవారి చిరునామా కోసం జారీ చేసిన ప్రమాణపత్రం నుండి చెల్లుబాటయ్యే S/MIME సంతకం ఉంది.
+smime_rs_unverified = ఈ సందేశంలో చెల్లుబాటయ్యే S/MIME సంతకం ఉంది, కానీ దాని ప్రమాణపత్రం Windows విశ్వసించే అధికారి జారీ చేయలేదు.
+smime_rs_mismatch = ఈ సందేశంలో S/MIME సంతకం ఉంది, కానీ పంపినవారి చిరునామా సంతకందారు ప్రమాణపత్రానికి సరిపోలడం లేదు.
+smime_rs_technical = ఈ సందేశంలో S/MIME సంతకం ఉంది, కానీ అది సందేశానికి సరిపోలడం లేదు. సంతకం చేసిన తర్వాత సందేశం మార్చబడి ఉండవచ్చు.
+smime_rs_signer = సంతకం చేసినవారు: {name}
+smime_rs_issuer = ప్రమాణపత్రం జారీ చేసినవారు: {issuer}
+smime_rs_import_hint = దీన్ని చదవడానికి, సాధనాలు, S/MIME ప్రమాణపత్ర మేనేజర్‌లో మీ S/MIME ప్రమాణపత్రాన్ని దాని ప్రైవేట్ కీతో, .p12 లేదా .pfx ఫైల్‌గా, దిగుమతి చేయండి.
+pgp_details = కీ లక్షణాలు
+pgp_generate = &కొత్త కీ జత
+smime_import = &ప్రమాణపత్ర ఫైల్‌ను దిగుమతి చేయి
+smime_export = &ప్రమాణపత్రాన్ని ఎగుమతి చేయి
+smime_delete = &ప్రమాణపత్రాన్ని తొలగించు
+pgp_import_file = &OpenPGP కీ ఫైల్‌ను దిగుమతి చేయి
+pgp_import_file_title = OpenPGP కీ ఫైల్‌ను దిగుమతి చేయి
+pgp_import_clip = &క్లిప్‌బోర్డ్ నుండి కీలను దిగుమతి చేయి
+pgp_export = &పబ్లిక్ కీని ఫైల్‌కు ఎగుమతి చేయి
+pgp_copy = &పబ్లిక్ కీని కాపీ చేయి
+pgp_backup = &సీక్రెట్ కీని ఫైల్‌కు బ్యాకప్ చేయి
+pgp_props = &కీ లక్షణాలు
+pgp_revoke = &కీని రద్దు చేయి
+pgp_delete = &కీని తొలగించు
+pgp_expires = గడువు ముగిసేది: {date}
+pgp_never_expires = గడువు ముగియదు
+pgp_expired = గడువు ముగిసింది
+pgp_revoked = రద్దు చేయబడింది
+pgp_fingerprint = వేలిముద్ర
+pgp_key_id = కీ ID
+pgp_created = సృష్టించబడింది
+pgp_acceptance = మీ అంగీకారం
+pgp_acc_rejected = కాదు, ఈ కీని తిరస్కరించు.
+pgp_acc_undecided = ఇంకా లేదు, బహుశా తర్వాత.
+pgp_acc_unverified = అవును, కానీ అది సరైన కీ అని నేను ధృవీకరించలేదు.
+pgp_acc_verified = అవును, ఈ కీకి సరైన వేలిముద్ర ఉందని నేను స్వయంగా ధృవీకరించాను.
+pgp_personal_no = కాదు, దీన్ని నా వ్యక్తిగత కీగా ఉపయోగించవద్దు.
+pgp_personal_yes = అవును, ఈ కీని వ్యక్తిగత కీగా పరిగణించు.
+pgp_verify_hint = ఇది నిజంగా {addr} కీ అని నిర్ధారించడానికి, ఇమెయిల్ కాకుండా సురక్షితమైన ఇతర సమాచార మార్గం ద్వారా కీ వేలిముద్రను ధృవీకరించండి.
+pgp_gen_title = OpenPGP కీని సృష్టించు
+pgp_gen_identity = గుర్తింపు
+pgp_gen_type = కీ రకం:
+pgp_gen_ecc = ECC (ఎలిప్టిక్ కర్వ్)
+pgp_gen_expiry = కీ గడువు
+pgp_gen_no_expiry = కీ గడువు ముగియదు
+pgp_gen_button = కీని సృష్టించు
+pgp_gen_confirm = {identity} కోసం పబ్లిక్ మరియు సీక్రెట్ కీని సృష్టించాలా?
+pgp_gen_progress = మీ కొత్త OpenPGP కీని సృష్టిస్తోంది…
+pgp_gen_done = OpenPGP కీ విజయవంతంగా సృష్టించబడింది!
+pgp_gen_failed = OpenPGP కీ సృష్టి ఊహించని విధంగా విఫలమైంది
+pgp_import_none = కీలు దిగుమతి కాలేదు.
+pgp_import_done = OpenPGP కీలు విజయవంతంగా దిగుమతి అయ్యాయి!
+pgp_passphrase_title = పాస్‌ఫ్రేజ్ అవసరం
+pgp_unlock_failed = కీ, లేదా కీ యొక్క అనుబంధ భాగాలను అన్‌లాక్ చేయలేకపోయింది.
+pgp_backup_title = మీ OpenPGP కీని బ్యాకప్ చేయడానికి పాస్‌వర్డ్‌ను ఎంచుకోండి
+pgp_backup_message = మీరు ఇక్కడ సెట్ చేసే పాస్‌వర్డ్, మీరు సృష్టించబోయే OpenPGP సీక్రెట్ కీ బ్యాకప్ ఫైల్‌ను రక్షిస్తుంది. బ్యాకప్‌తో కొనసాగడానికి మీరు ఈ పాస్‌వర్డ్‌ను సెట్ చేయాలి.
+pgp_backup_pw = సీక్రెట్ కీ బ్యాకప్ పాస్‌వర్డ్:
+pgp_backup_pw2 = సీక్రెట్ కీ బ్యాకప్ పాస్‌వర్డ్ (మళ్లీ):
+pgp_backup_done = సీక్రెట్ కీ విజయవంతంగా ఎగుమతి చేయబడింది!
+pgp_export_done = పబ్లిక్ కీ విజయవంతంగా ఎగుమతి చేయబడింది!
+pgp_copied = కీ(లు) క్లిప్‌బోర్డ్‌కు కాపీ చేయబడ్డాయి
+pgp_revoke_done = కీ విజయవంతంగా రద్దు చేయబడింది.
+pgp_personal = వ్యక్తిగత కీ
+pgp_no_keys = ఇంకా కీలు లేవు. కొత్త కీ జతను సృష్టించండి లేదా కీని దిగుమతి చేయండి.
+pgp_unavailable = ZBox యొక్క ఈ కాపీలో OpenPGP అందుబాటులో లేదు.
+pgp_gen_expires_3y = కీ 3 సంవత్సరాలలో గడువు ముగుస్తుంది
+pgp_gen_no_identity = ముందుగా ఒక ఇమెయిల్ ఖాతాను జోడించండి.
+pgp_import_confirm = ఈ కీలను దిగుమతి చేయాలా?\n\n{keys}
+pgp_passphrase_prompt = {name} సీక్రెట్ కీ పాస్‌ఫ్రేజ్‌ను నమోదు చేయండి.
+pgp_clip_empty = క్లిప్‌బోర్డ్‌లో OpenPGP కీ లేదు.
+pgp_pw_mismatch = రెండు పాస్‌వర్డ్‌లు సరిపోలడం లేదు.
+pgp_backup_open = ఈ ఫైల్ సీక్రెట్ కీ బ్యాకప్. దాని బ్యాకప్ పాస్‌వర్డ్‌ను నమోదు చేయండి.
+pgp_revoke_confirm = {name} కీని రద్దు చేయాలా? రద్దు చేసిన కీని ఎప్పటికీ మళ్లీ ఉపయోగించలేరు. ఇతరులు దాన్ని ఉపయోగించడం ఆపడానికి రద్దు చేసిన పబ్లిక్ కీని పంచుకోండి.
+pgp_delete_public_confirm = {name} పబ్లిక్ కీని తొలగించాలా?
+pgp_delete_secret_confirm = మీ వ్యక్తిగత కీ {name}ను తొలగించాలా? దానికి ఎన్‌క్రిప్ట్ చేసిన మెయిల్ ఎప్పటికీ మళ్లీ చదవలేరు. మీకు అవసరం కావచ్చనుకుంటే ముందుగా సీక్రెట్ కీని బ్యాకప్ చేయండి.
+pgp_select_key = ముందుగా ఒక కీని ఎంచుకోండి.
+pgp_save_failed = కీలను సేవ్ చేయలేకపోయింది: {error}
+pgp_publish = &ప్రచురించు
+pgp_publish_ok = పబ్లిక్ కీ "{keyserver}"కు పంపబడింది.
+pgp_publish_fail = మీ పబ్లిక్ కీని "{keyserver}"కు పంపలేకపోయింది.
+pgp_publish_suggest = పబ్లిక్ కీని కీ సర్వర్‌లో ప్రచురించడం ఇతరులు దాన్ని కనుగొనడానికి వీలు కల్పిస్తుంది.
+pgp_publish_question = దాన్ని ఇప్పుడు {keyserver}లో ప్రచురించాలా? సర్వర్ తర్వాత {addresses}కు ధృవీకరణ ఇమెయిల్ పంపుతుంది. అందులోని లింక్‌ను మీరు తెరిచిన తర్వాత మీ చిరునామా కనుగొనగలిగేలా అవుతుంది.
+pgp_publish_sent = {addresses}కు ధృవీకరణ ఇమెయిల్ పంపబడింది. మీ చిరునామా ద్వారా మీ కీ కనుగొనగలిగేలా చేయడానికి అందులోని లింక్‌ను తెరవండి.
+pgp_publish_already = ఇప్పటికే {addresses} ద్వారా కనుగొనవచ్చు.
+pgp_rs_no_sig = డిజిటల్ సంతకం లేదు
+pgp_rs_no_sig_info = ఈ సందేశంలో పంపినవారి డిజిటల్ సంతకం లేదు. డిజిటల్ సంతకం లేకపోవడం అంటే ఈ ఇమెయిల్ చిరునామా ఉన్నట్లు నటిస్తున్న ఎవరైనా సందేశాన్ని పంపి ఉండవచ్చు. నెట్‌వర్క్ ద్వారా వెళ్తున్నప్పుడు సందేశం మార్చబడి ఉండే అవకాశం కూడా ఉంది.
+pgp_rs_uncertain = అనిశ్చిత డిజిటల్ సంతకం
+pgp_rs_uncertain_date = అనిశ్చిత డిజిటల్ సంతకం - {date}న సంతకం చేయబడింది
+pgp_rs_invalid = చెల్లని డిజిటల్ సంతకం
+pgp_rs_invalid_date = చెల్లని డిజిటల్ సంతకం - {date}న సంతకం చేయబడింది
+pgp_rs_good = మంచి డిజిటల్ సంతకం
+pgp_rs_good_date = మంచి డిజిటల్ సంతకం - {date}న సంతకం చేయబడింది
+pgp_rs_no_key = ఈ సందేశంలో డిజిటల్ సంతకం ఉంది, కానీ అది సరైనదో కాదో అనిశ్చితం. సంతకాన్ని ధృవీకరించడానికి, మీరు పంపినవారి పబ్లిక్ కీ కాపీని పొందాలి.
+pgp_rs_uid_mismatch = ఈ సందేశంలో డిజిటల్ సంతకం ఉంది, కానీ అసమతుల్యత కనుగొనబడింది. సంతకందారు పబ్లిక్ కీకి సరిపోలని ఇమెయిల్ చిరునామా నుండి సందేశం పంపబడింది.
+pgp_rs_not_accepted = ఈ సందేశంలో డిజిటల్ సంతకం ఉంది, కానీ సంతకందారు కీ మీకు ఆమోదయోగ్యమో కాదో మీరు ఇంకా నిర్ణయించలేదు.
+pgp_rs_rejected = ఈ సందేశంలో డిజిటల్ సంతకం ఉంది, కానీ సంతకందారు కీని తిరస్కరించాలని మీరు ఇంతకు ముందే నిర్ణయించారు.
+pgp_rs_technical = ఈ సందేశంలో డిజిటల్ సంతకం ఉంది, కానీ సాంకేతిక లోపం కనుగొనబడింది. సందేశం పాడైంది, లేదా మరెవరో దాన్ని మార్చారు.
+pgp_rs_unverified = ఈ సందేశంలో మీరు ఇప్పటికే అంగీకరించిన కీ నుండి చెల్లుబాటయ్యే డిజిటల్ సంతకం ఉంది. అయితే, ఆ కీ నిజంగా పంపినవారికి చెందినదని మీరు ఇంకా ధృవీకరించలేదు.
+pgp_rs_verified = ఈ సందేశంలో ధృవీకరించిన కీ నుండి చెల్లుబాటయ్యే డిజిటల్ సంతకం ఉంది.
+pgp_rs_own_key = ఈ సందేశంలో మీ వ్యక్తిగత కీ నుండి చెల్లుబాటయ్యే డిజిటల్ సంతకం ఉంది.
+pgp_rs_signer_id = సంతకందారు కీ ID: {keyid}
+pgp_rs_decrypt_id = మీ డిక్రిప్షన్ కీ ID: {keyid}
+pgp_rs_enc_none = సందేశం ఎన్‌క్రిప్ట్ చేయబడలేదు
+pgp_rs_enc_none_info = ఈ సందేశం పంపబడే ముందు ఎన్‌క్రిప్ట్ చేయబడలేదు. ఎన్‌క్రిప్షన్ లేకుండా ఇంటర్నెట్ ద్వారా పంపిన సమాచారాన్ని మార్గమధ్యంలో ఇతరులు చూడవచ్చు.
+pgp_rs_enc_invalid = సందేశాన్ని డిక్రిప్ట్ చేయలేరు
+pgp_rs_enc_invalid_info = ఈ సందేశం మీకు పంపబడే ముందు ఎన్‌క్రిప్ట్ చేయబడింది, కానీ దాన్ని డిక్రిప్ట్ చేయలేరు.
+pgp_rs_enc_valid = సందేశం ఎన్‌క్రిప్ట్ చేయబడింది
+pgp_rs_enc_valid_info = ఈ సందేశం మీకు పంపబడే ముందు ఎన్‌క్రిప్ట్ చేయబడింది. ఎన్‌క్రిప్షన్ సందేశాన్ని ఉద్దేశించిన స్వీకర్తలు మాత్రమే చదవగలరని నిర్ధారిస్తుంది.
+pgp_rs_field = సందేశ భద్రత
+pgp_rs_import = OpenPGP కీని దిగుమతి చేయి
+pgp_rs_open_to_unlock = పాస్‌ఫ్రేజ్‌ను నమోదు చేయడానికి సందేశాన్ని తెరవండి.
+pgp_rs_reply_not_quoted = అసలు సందేశం ఎన్‌క్రిప్ట్ చేయబడింది, కాబట్టి దాని పాఠ్యం ఇక్కడ ఉల్లేఖించబడలేదు.
+pgp_cm_encrypt = ఎన్‌క్రిప్ట్ చేయి
+pgp_cm_sign = డిజిటల్‌గా సంతకం చేయి
+pgp_e2e_title = ఎండ్-టు-ఎండ్ ఎన్‌క్రిప్షన్
+acct_e2e_button = &ఎండ్-టు-ఎండ్ ఎన్‌క్రిప్షన్...
+pgp_e2e_none = ఈ గుర్తింపు కోసం OpenPGPని ఉపయోగించవద్దు.
+pgp_e2e_disable = కొత్త సందేశాల కోసం ఎన్‌క్రిప్షన్‌ను ఆపివేయి
+pgp_e2e_enable = కొత్త సందేశాల కోసం ఎన్‌క్రిప్షన్‌ను ప్రారంభించు
+pgp_e2e_enable_info = మీరు వ్యక్తిగత సందేశాల కోసం ఎన్‌క్రిప్షన్‌ను ఆపివేయగలరు.
+pgp_e2e_sign = ఎన్‌క్రిప్ట్ చేయని సందేశాలపై సంతకం చేయి
+pgp_e2e_signing_info = డిజిటల్ సంతకం, సందేశం మీరు పంపారని మరియు దాని కంటెంట్ మారలేదని స్వీకర్తలు ధృవీకరించడానికి వీలు కల్పిస్తుంది. ఎన్‌క్రిప్ట్ చేసిన సందేశాలు డిఫాల్ట్‌గా ఎల్లప్పుడూ సంతకం చేయబడతాయి.
+pgp_e2e_autocrypt = Autocryptతో అనుకూలత కోసం ఇమెయిల్ హెడర్‌లలో OpenPGP పబ్లిక్ కీ(లు) పంపు
+pgp_not_set_up = {addr} నుండి ఎండ్-టు-ఎండ్ ఎన్‌క్రిప్ట్ చేసిన సందేశాలను పంపడానికి మీరు సెటప్ చేయబడలేదు.
+pgp_cannot_encrypt = ఎన్‌క్రిప్ట్ చేయలేరు
+pgp_do_you_accept = డిజిటల్ సంతకాలను ధృవీకరించడానికి మరియు సందేశాలను ఎన్‌క్రిప్ట్ చేయడానికి ఈ కీని మీరు అంగీకరిస్తున్నారా?
+pgp_searching = వెతుకుతోంది…
+pgp_no_key_found = పేర్కొన్న శోధన ప్రమాణాలకు సరిపోలే ఉపయోగించదగిన కీ ఏదీ మాకు కనబడలేదు.
+pgp_source_autocrypt = Autocrypt హెడర్
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = కీ సర్వర్
+pgp_discover = &ఆన్‌లైన్‌లో కీలను కనుగొను
+pgp_cm_attach_key = నా పబ్లిక్ కీని జోడించు
+pgp_e2e_key_label = {address} కోసం వ్యక్తిగత కీ
+pgp_e2e_auto = స్వయంచాలకం: ఈ చిరునామా కోసం మీ వ్యక్తిగత కీ
+pgp_e2e_no_key = {address} కోసం ZBoxకు వ్యక్తిగత OpenPGP కీ లేదు. సాధనాలు, OpenPGP కీ మేనేజర్‌లో ఒకదాన్ని సృష్టించండి.
+pgp_e2e_new_messages = కొత్త సందేశాల కోసం ఎన్‌క్రిప్షన్
+pgp_e2e_key_missing = కీ {keyid}, కనబడలేదు
+pgp_missing_keys = ఈ స్వీకర్తలకు ఉపయోగించదగిన, ఆమోదించిన కీ లేదు:\n\n{addresses}\n\nసందేశాన్ని ఎన్‌క్రిప్ట్ చేసి పంపలేరు.
+pgp_send_unencrypted = &ఎన్‌క్రిప్షన్ లేకుండా పంపు
+pgp_collected_found = ఈ స్వీకర్తల కీలు వారు మీకు పంపిన మెయిల్‌లో కనబడ్డాయి:
+pgp_lookup_q = ఈ స్వీకర్తల కీలను ఆన్‌లైన్‌లో వెతకాలా?\n\n{addresses}\n\nఇది వారి చిరునామాలను keys.openpgp.orgకు మరియు వారి స్వంత మెయిల్ డొమైన్‌లకు పంపుతుంది.
+pgp_found_online = ఆన్‌లైన్‌లో కనబడిన కీలు:
+pgp_source = మూలం: {source}
+pgp_discover_prompt = ఇమెయిల్ చిరునామాను నమోదు చేయండి. ZBox దాని మెయిల్ డొమైన్ Web Key Directoryలో మరియు keys.openpgp.orgలో దాని OpenPGP కీల కోసం వెతుకుతుంది.
+pgp_discover_bad = name@example.com వంటి పూర్తి ఇమెయిల్ చిరునామాను నమోదు చేయండి.
+pgp_keys_unreadable = OpenPGP కీలను తెరవలేకపోయింది: {error}
+pgp_rs_why_no_key = ఈ సందేశాన్ని డిక్రిప్ట్ చేయడానికి అవసరమైన సీక్రెట్ కీ అందుబాటులో లేదు.
+pgp_rs_why_unknown = ఈ ఎన్‌క్రిప్ట్ చేసిన సందేశంలో తెలియని సమస్యలు ఉన్నాయి.
+pgp_rs_hidden_subject = ఎన్‌క్రిప్ట్ చేసిన సందేశం
+pgp_rs_why_passphrase = మీ కీ పాస్‌ఫ్రేజ్ నమోదు చేయబడలేదు. దాన్ని నమోదు చేయడానికి సందేశాన్ని మళ్లీ తెరవండి.
+pgp_rs_why_unavailable = ZBox యొక్క ఈ కాపీలో OpenPGP అందుబాటులో లేదు.
+pgp_rs_why_fetch = డిక్రిప్ట్ చేయడానికి సర్వర్ నుండి సందేశాన్ని తీసుకురాలేకపోయింది. మళ్లీ ప్రయత్నించడానికి దాన్ని మళ్లీ తెరవండి.
+pgp_rs_import_hint = దీన్ని చదవడానికి, ఈ సందేశం కోసం మీ సీక్రెట్ కీని ZBoxలోకి దిగుమతి చేయండి.
+
+[errors]
+language_restart_failed = ZBox తనను తాను పునఃప్రారంభించుకోలేకపోయింది:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} కోసం మెయిల్ క్లయింట్‌ను తెరవలేకపోయింది.
+
+wizard_test_failed = కనెక్షన్ విఫలమైంది:\n\n{error}
+
+contacts_import_unreadable = ఆ ఫైల్‌ను చదవలేకపోయింది.\n\n{error}
+contacts_export_unwritable = ఆ ఫైల్‌ను వ్రాయలేకపోయింది.\n\n{error}
+
+attach_unreadable = {path} జోడింపును చదవలేకపోయింది:\n{error}
+send_failed = సందేశాన్ని పంపలేకపోయింది.\n\n{error}
+draft_attach_unreadable = {path} జోడింపును చదవలేకపోయింది:\n{error}\n\nడ్రాఫ్ట్ సేవ్ చేయబడలేదు.
+draft_save_failed = డ్రాఫ్ట్‌ను సేవ్ చేయలేకపోయింది.\n\n{error}
+
+clipboard_unavailable = క్లిప్‌బోర్డ్ తెరవబడలేదు.
+open_link_failed = దీని కోసం మీ బ్రౌజర్‌ను తెరవలేకపోయింది:\n{url}
+
+master_password_mismatch = రెండు కొత్త ప్రధాన పాస్‌వర్డ్ పెట్టెలు సరిపోలడం లేదు.
+master_password_required = ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి, లేదా రద్దు చేయి నొక్కండి.
+master_password_not_set = ప్రధాన పాస్‌వర్డ్‌ను సెట్ చేయలేకపోయింది: {error}
+master_password_not_here = ప్రధాన పాస్‌వర్డ్‌ను ఇక్కడ నుండి మార్చలేరు.
+
+attachment_save_failed = జోడింపును సేవ్ చేయలేకపోయింది.\n\n{error}
+attachments_save_failed = జోడింపులను సేవ్ చేయలేకపోయింది.\n\n{error}
+print_failed = సందేశాన్ని ముద్రించలేకపోయింది. ప్రింటర్ కాన్ఫిగర్ చేయబడిందో తనిఖీ చేయండి.
+print_preview_failed = ముద్రణ ప్రివ్యూను తెరవలేకపోయింది. ప్రింటర్ కాన్ఫిగర్ చేయబడిందో తనిఖీ చేయండి.
+
+related_search_failed = సంబంధిత సందేశాల కోసం వెతకలేకపోయింది.\n\n{error}
+search_failed = వెతకడం విఫలమైంది.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox తన కాన్ఫిగరేషన్ ఫోల్డర్‌ను కనుగొనలేకపోయింది, కాబట్టి అన్‌లాక్ పద్ధతులను ఇక్కడ నిర్వహించలేము.
+shortcut_no_folder = ZBox తన స్వంత ఫోల్డర్‌ను గుర్తించలేకపోయింది, కాబట్టి ఇక్కడ నుండి షార్ట్‌కట్‌ను సృష్టించలేము.
+shortcut_failed_settings = డెస్క్‌టాప్ షార్ట్‌కట్‌ను సృష్టించలేకపోయింది:\n\n{error}
+
+unlock_method_failed = {what} పని చేయలేదు.\n\n{error}
+unlock_check_failed = ప్రధాన పాస్‌వర్డ్‌ను తనిఖీ చేయలేకపోయింది.\n\n{error}
+unlock_password_wrong = ఆ ప్రధాన పాస్‌వర్డ్ సరైనది కాదు.
+unlock_add_failed = {what}ను జోడించలేకపోయింది.\n\n{error}
+unlock_passkey_setup_failed = ఈ కంప్యూటర్‌లో పాస్‌కీని సెటప్ చేయలేకపోయింది, కాబట్టి ఏమీ మార్చబడలేదు.\n\n{error}
+unlock_method_test_failed = ఆ పద్ధతి పని చేయలేదు.\n\n{error}
+
+account_list_unreadable = ZBox మీ ఖాతా జాబితాను తెరవలేకపోయింది.\n\n{error}\n\nఖాతాలు లోడ్ కాలేదు, మరియు ఫైల్ మార్చబడలేదు, కాబట్టి ఏమీ కోల్పోలేదు. అది చదవగలిగే వరకు ఖాతాలను జోడించడం, సవరించడం మరియు తొలగించడం తిరస్కరించబడతాయి.
+account_list_no_accounts = ఈ సెషన్‌లో ZBox మీ ఖాతా జాబితాను తెరవలేకపోయింది ({error}), కాబట్టి ఎంచుకోవడానికి ఖాతాలు లేవు. ఏమీ కోల్పోలేదు మరియు ఏమీ మార్చబడలేదు. ZBoxను మూసివేసి మళ్లీ ప్రారంభించండి, అడిగినప్పుడు మీ ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి.
+open_message_failed = సందేశాన్ని తెరవలేకపోయింది.\n\n{error}
+filters_list_failed = {folder}లో సందేశాలను జాబితా చేయలేకపోయింది.\n\n{error}
+filters_move_failed = ఫిల్టర్ చేసిన సందేశాలను తరలించలేకపోయింది.\n\n{error}
+cache_clear_failed = కాష్‌ను తొలగించలేకపోయింది.\n\n{error}
+folder_create_failed = ఫోల్డర్‌ను సృష్టించలేకపోయింది.\n\n{error}
+folder_rename_failed = ఫోల్డర్ పేరును మార్చలేకపోయింది.\n\n{error}
+folder_delete_failed = ఫోల్డర్‌ను తొలగించలేకపోయింది.\n\n{error}
+folder_subscribe_failed = ఫోల్డర్‌కు చందా చేరలేకపోయింది.\n\n{error}
+folder_unsubscribe_failed = ఫోల్డర్ చందాను రద్దు చేయలేకపోయింది.\n\n{error}
+saved_open_failed = ఫైల్‌ను తెరవలేకపోయింది.\n\n{error}
+saved_parse_failed = ఈ ఫైల్‌ను ఇమెయిల్ సందేశంగా అన్వయించలేకపోయింది.\n\n{error}
+save_file_failed = ఫైల్‌ను సేవ్ చేయలేకపోయింది.\n\n{error}
+save_fetch_failed = సేవ్ చేయడానికి సందేశాన్ని తీసుకురాలేకపోయింది.\n\n{error}
+empty_trash_failed = ట్రాష్‌ను ఖాళీ చేయలేకపోయింది.\n\n{error}
+empty_junk_failed = జంక్‌ను ఖాళీ చేయలేకపోయింది.\n\n{error}
+export_write_failed = ఎగుమతి ఫైల్‌ను వ్రాయలేకపోయింది.\n\n{error}
+import_read_failed = ఈ ఫైల్‌ను ZBox ఎగుమతిగా చదవలేకపోయింది.\n\n{error}
+import_not_export = ఈ ఫైల్ ZBox ఎగుమతిలా కనిపించడం లేదు.\n\n{error}
+search_open_failed = ఈ సందేశాన్ని తెరవలేకపోయింది.
+related_load_failed = ఈ సందేశాన్ని లోడ్ చేయలేకపోయింది.\n\n{error}
+reply_load_failed = ప్రత్యుత్తరం ఇవ్వడానికి సందేశాన్ని లోడ్ చేయలేకపోయింది.\n\n{error}
+forward_load_failed = ఫార్వర్డ్ చేయడానికి సందేశాన్ని లోడ్ చేయలేకపోయింది.\n\n{error}
+action_failed = ఈ చర్యను పూర్తి చేయలేకపోయింది.\n\n{error}
+undo_failed = {label} రద్దు చేయలేకపోయింది.\n\n{error}
+copy_failed = సందేశాన్ని కాపీ చేయలేకపోయింది.\n\n{error}
+delete_failed = సందేశాన్ని తొలగించలేకపోయింది.\n\n{error}
+archive_failed = సందేశాన్ని ఆర్కైవ్ చేయలేకపోయింది.\n\n{error}
+master_password_not_changed = ప్రధాన పాస్‌వర్డ్‌ను మార్చలేకపోయింది: {error}
+shortcut_failed_startup = డెస్క్‌టాప్ షార్ట్‌కట్‌ను సృష్టించలేకపోయింది:\n\n{error}\n\nZBox ప్రారంభమవుతూనే ఉంటుంది. మీరు తర్వాత సెట్టింగ్‌ల నుండి మళ్లీ ప్రయత్నించవచ్చు.
+account_locked_action = ZBox %s చేయలేదు. ఈ సెషన్‌లో ఖాతా జాబితాను తెరవలేకపోయింది (%s), మరియు ఏమీ మార్చబడలేదు. ZBoxను మూసివేసి మళ్లీ ప్రారంభించండి, అడిగితే మీ ప్రధాన పాస్‌వర్డ్‌ను నమోదు చేయండి.
+send_tls_mismatch = సందేశాన్ని పంపలేకపోయింది. అవుట్‌గోయింగ్ సర్వర్ ఎన్‌క్రిప్షన్ లేకుండా స్పందించింది, కాబట్టి అవుట్‌గోయింగ్ ఎన్‌క్రిప్షన్ పోర్ట్‌కు సరిపోలడం లేదు. సాధనాలు, ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లలో పోర్ట్ 587 కోసం STARTTLS, లేదా పోర్ట్ 465 కోసం SSL/TLS ఉపయోగించి, ఆపై మళ్లీ పంపండి.\n\n{error}
+mark_folder_read_failed = ఫోల్డర్‌ను చదివినట్లు గుర్తించలేకపోయింది.\n\n{error}
+update_failed = నవీకరణను డౌన్‌లోడ్ చేయలేకపోయింది, కాబట్టి ఏమీ మార్చబడలేదు.\n\n{error}
+update_rolled_back = నవీకరణ ప్రారంభం కాలేకపోయింది, కాబట్టి మునుపటి వెర్షన్ పునరుద్ధరించబడింది.
+attachment_open_failed = జోడింపును తెరవలేకపోయింది.\n\n{error}
+headers_failed = సందేశ హెడర్‌లను లోడ్ చేయలేకపోయింది.\n\n{error}
+wizard_ms_sign_in_first = కొనసాగే ముందు Microsoftతో సైన్ ఇన్ చేయండి. ఈ పేజీలోని రెండు సైన్ ఇన్ బటన్‌లలో ఒకదాన్ని ఉపయోగించండి.
+wizard_provider_unsupported = ZBox ఈ ప్రొవైడర్‌కు సైన్ ఇన్ చేయలేదు. ఈ పేజీలోని గమనిక కారణం చెబుతుంది. వెనక్కి వెళ్లి వేరే ఇమెయిల్ చిరునామా ఉపయోగించండి, లేదా రద్దు చేయండి.
+acct_ms_sign_in_first = సేవ్ చేసే ముందు Microsoftతో సైన్ ఇన్ చేయండి, లేదా సైన్ ఇన్ పద్ధతిగా పాస్‌వర్డ్‌ను ఎంచుకోండి.
+ms_sign_in_again = {account} కోసం Microsoft సైన్ ఇన్ మళ్లీ అవసరం. ఖాతా మరియు గుర్తింపుల సెట్టింగ్‌లను తెరిచి అక్కడ సైన్ ఇన్ చేయండి.
+graph_pgp_too_large = ఈ ఎన్‌క్రిప్ట్ చేసిన లేదా సంతకం చేసిన సందేశం అలాంటి మెయిల్ కోసం Microsoft అనుమతించే పరిమాణం, సుమారు 3 MB, కంటే పెద్దది. చిన్న జోడింపులను పంపండి, లేదా ఈ సందేశం కోసం ఎన్‌క్రిప్ట్ చేయి మరియు డిజిటల్‌గా సంతకం చేయి ఆపివేయండి.
+empty_trash_all_failed = వీటి కోసం ట్రాష్‌ను ఖాళీ చేయలేకపోయింది: {accounts}
+
+[help]

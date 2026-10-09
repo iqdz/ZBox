@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Azərbaycanca
+code = az
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Mesaj göndərildi.
+draft_saved = Qaralama saxlanıldı.
+signature_inserted = İmza əlavə edildi.
+signature_none = Bu hesabın imzası yoxdur.
+signature_saved = İmza saxlanıldı.
+signature_not_saved = İmza saxlanılmadı.
+pasted_as_quotation = Sitat kimi yapışdırıldı.
+clipboard_empty = Mübadilə buferi boşdur.
+word_count = {words} söz, {characters} simvol.
+report_copied = Hesabat kopyalandı.
+compose_tab_needed = Bu əmr üçün yazı vərəqi lazımdır.
+attach_file_instead = Buraxılan fayllar mesajın mətninə qoyulmur. Fayl göndərmək üçün Fayl əlavə et düyməsindən istifadə edin.
+
+# Formatting in the message body
+formatting_here = Burada format: {formatting}.
+no_formatting_here = Burada format yoxdur, sadə mətn.
+
+# Spelling
+nothing_to_check = Yoxlanacaq heç nə yoxdur.
+no_misspellings = Orfoqrafiya xətası yoxdur.
+spelling_dictionary_unavailable = Orfoqrafiya lüğəti mövcud deyil.
+next_misspelling_first = Əvvəlcə növbəti xətanı istifadə edin.
+word_added = {word} lüğətə əlavə edildi.
+word_not_added = {word} lüğətə əlavə edilə bilmədi.
+corrections_applied_one = 1 düzəliş tətbiq edildi.
+corrections_applied_many = {count} düzəliş tətbiq edildi.
+corrections_applied_partly = {total} düzəlişdən {applied} tətbiq edildi. Qalanları rədd edildi; jurnala baxın.
+occurrences_replaced_one = 1 hal əvəz edildi.
+occurrences_replaced_many = {count} hal əvəz edildi.
+
+# Reading mail
+message_did_not_open = Mesaj açılmadı. Server cavab vermədi. Yenidən cəhd etmək üçün Enter düyməsini basın.
+thread_open = Bu zəncirdə {messages}. Bağlamaq üçün yenidən basın.
+no_thread_selected = Zəncir seçilməyib.
+thread_watched = Zəncir izlənilir.
+thread_not_watched = Zəncir artıq izlənilmir.
+thread_ignored = Zəncir nəzərə alınmır.
+thread_not_ignored = Zəncir artıq nəzərə alınır.
+none_found = Heç nə tapılmadı.
+refreshing_this_folder = Bu qovluq yenilənir.
+refreshing_all_accounts = Bütün hesablar yenilənir.
+message_view_html = Mesaj görünüşü: HTML (göstərilmiş).
+message_view_text = Mesaj görünüşü: Mətn.
+html_view_still_loading = Mesaj hələ yüklənir. Escape onu bağlayır.
+message_still_opening = Mesaj açılır. Server yavaşdır.
+remote_content_blocked = Uzaq məzmun bloklandı.
+remote_content_unblocked = Uzaq məzmunun bloku götürüldü.
+remote_content_already_showing = Uzaq məzmun bu mesajda artıq göstərilir.
+archived = Arxivləşdirildi.
+copied_to_folder = {to_folder} qovluğuna kopyalandı.
+deleted_one = Mesaj həmişəlik silindi.
+deleted_many = {count} mesaj həmişəlik silindi.
+trashed_one = Mesaj Zibil qutusuna köçürüldü.
+trashed_many = {count} mesaj Zibil qutusuna köçürüldü.
+
+# Accounts and new mail
+no_account_yet = Keçid üçün hələ hesab yoxdur.
+inbox_landed = {name} gələnlər qutusu.
+account_enabled = {name} aktiv edildi.
+auto_check_paused = {account} üçün avtomatik yoxlama dayandırıldı.
+auto_check_resumed = {account} üçün avtomatik yoxlama aktivdir.
+account_disabled = {name} söndürüldü.
+new_mail_one = {name} üçün 1 yeni mesaj.
+new_mail_many = {name} üçün {count} yeni mesaj.
+refresh_all_done_one = 1 hesab yeniləndi.
+refresh_all_done_many = {count} hesab yeniləndi.
+refresh_all_done_failures = {count} hesab yeniləndi, {failed} hesab yenilənə bilmədi.
+refresh_all_done_failures_one = {count} hesab yeniləndi, {failed} hesab yenilənə bilmədi.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Ünvan kopyalandı.
+sender_no_address = {sender}. Kopyalanacaq ünvan yoxdur.
+clipboard_not_opened = {sender}. Mübadilə buferi açıla bilmədi.
+
+# The signature editor
+signature_page_formatted = Formatlanmış. Saxlanılacaq olan budur.
+signature_page_html = HTML mənbəyi. Saxlanılacaq olan budur.
+signature_page_html_still_wins = Formatlanmış. Saxlanılacaq olan hələ də HTML mənbəyidir.
+
+# Background work
+phishing_list_updating = Fişinq siyahısı arxa planda yenilənir.
+cache_cleared = {files} keşlənmiş fayl silindi, {size} MB.
+hotkeys_diagnostic_on = Qısayol diaqnostikası aktivdir, seçilib
+hotkeys_diagnostic_off = Qısayol diaqnostikası söndürülüb, seçim götürülüb
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arxivləşdir
+action_delete = Sil
+action_delete_permanently = Həmişəlik sil
+action_mark_as_junk = Spam kimi işarələ
+action_mark_as_not_junk = Spam deyil kimi işarələ
+action_move_to = Köçür
+action_copy_to = Kopyala
+action_mark_message = Mesajı işarələ
+action_undo = Geri al
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Geri alındı: {action}.
+undo_done_many = {count} mesaj üçün geri alındı: {action}.
+junk_marked_one = Spam kimi işarələndi.
+junk_marked_many = {count} mesaj spam kimi işarələndi.
+junk_no_new_sender = Yeni göndərən bloklanmadı: artıq bloklanıb, poçt siyahısıdır və ya öz ünvanlarınızdan biridir.
+not_junk_marked_one = Spam deyil kimi işarələndi.
+not_junk_marked_many = {count} mesaj spam deyil kimi işarələndi.
+moved_to_one = {to_folder} qovluğuna köçürüldü.
+moved_to_many = {count} mesaj {to_folder} qovluğuna köçürüldü.
+copied_to_many = {count} mesaj {to_folder} qovluğuna kopyalandı.
+marked_read = Oxunmuş kimi işarələndi.
+marked_unread = Oxunmamış kimi işarələndi.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} mesajdan {completed} sonra ləğv edildi. {succeeded} uğurlu, {failed} uğursuz.
+bulk_failed_one = {done} 1 mesajdan {failed} uğursuz oldu.
+bulk_failed_many = {done} {total} mesajdan {failed} uğursuz oldu.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Qalın
+format_word_italic = Kursiv
+format_word_strike = Üstündən xətt çəkilmiş
+format_word_href = Keçid
+format_word_bullet = Nişanlı siyahı
+format_word_number = Nömrələnmiş siyahı
+format_word_quote = Sitat
+format_word_code = Kod
+format_word_heading1 = Başlıq
+format_applied = {formatting} tətbiq edildi.
+format_inserted = {formatting} əlavə edildi.
+format_not_available = {formatting} sadə mesaj mətnində mövcud deyil.
+format_on = {formatting} aktiv
+format_off = {formatting} söndürülüb
+link_applied = Keçid tətbiq edildi.
+link_applied_to_selection = Keçid seçilmiş hissəyə tətbiq edildi.
+plain_body_formatting = Sadə mesaj mətni formatını teqlər şəklində göstərir.
+
+# Reaching either end of a thread
+thread_edge_first = Bu zəncirdəki ilk mesaj. Bağlamaq üçün yenidən basın.
+thread_edge_last = Bu zəncirdəki son mesaj. Bağlamaq üçün yenidən basın.
+jump_unified_inbox = Ümumi gələnlər qutusu.
+remote_none = Bu mesajda uzaq məzmun yoxdur.
+sender_none = Bu mesajda göndərən yoxdur.
+sender_name_no_address = %s, ünvan yoxdur
+signature_not_switched = İmza dəyişmədi. Bu hesabın imzasını əlavə etmək üçün Ctrl+Shift+S basın.
+signature_removed_no_signature = İmza silindi. Bu hesabın imzası yoxdur.
+signature_switched = İmza bu hesabın imzasına dəyişdirildi.
+spell_not_replaced = Söz əvəz edilə bilmədi.
+spell_replaced_with = {word} ilə əvəz edildi.
+folder_marked_read = {count} mesaj oxunmuş kimi işarələndi.
+folder_no_unread = Oxunmamış mesaj yoxdur.
+threads_all_collapsed = Bütün zəncirlər yığıldı.
+threads_all_expanded = Bütün zəncirlər açıldı.
+upd_percent = {percent} faiz
+upd_download_done = Yükləmə tamamlandı. Yeniləmə hazırlanır...
+upd_updated_to = ZBox {version} versiyasına yeniləndi.
+header_copied = Kopyalandı.
+headers_copied = Bütün başlıqlar kopyalandı.
+identity_copies_updated = Bu kimlik üçün Cc və Bcc yeniləndi.
+signature_switched_identity = İmza bu kimliyin imzasına dəyişdirildi.
+signature_removed_identity = İmza silindi. Bu kimliyin imzası yoxdur.
+signature_not_switched_identity = İmza dəyişmədi. Bu kimliyin imzasını əlavə etmək üçün Ctrl+Shift+S basın.
+signature_none_identity = Bu kimliyin imzası yoxdur.
+move_keys_no_selection = Əvvəlcə mesaj seçin.
+move_keys_no_folders = Seçmək üçün hələ qovluq yoxdur. Bir azdan yenidən cəhd edin.
+block_sender_done_one = {sender} bloklandı. Onun yeni mesajları Zibil qutusuna gedəcək.
+block_sender_done_many = {count} göndərən bloklandı. Onların yeni mesajları Zibil qutusuna gedəcək.
+block_sender_already = {sender} artıq bloklanıb.
+block_sender_own = Bloklanmadı: bu, öz ünvanlarınızdan biridir.
+block_sender_list_unknown = Bloklanmadı: bu mesaj poçt siyahısı vasitəsilə gəlib və kimin göndərdiyini göstərmir. Siyahının ünvanını bloklamaq siyahıdakı hər kəsi bloklayardı.
+block_sender_moved = Göndərən bloklandı. {count} mesaj Zibil qutusuna köçürüldü.
+block_senders_moved = {senders} göndərən bloklandı. {count} mesaj Zibil qutusuna köçürüldü.
+unblock_sender_moved = Göndərənin bloku götürüldü. {count} mesaj Gələnlər qutusuna köçürüldü.
+unblock_senders_moved = {senders} göndərənin bloku götürüldü. {count} mesaj Gələnlər qutusuna köçürüldü.
+unblock_sender_done = {sender} blokdan çıxarıldı.
+unblock_sender_not_blocked = {sender} bloklanmayıb.
+pgp_cm_on = {name} aktiv.
+pgp_cm_off = {name} söndürülüb.
+pgp_cm_identity = Şifrələmə parametrləri bu kimliyin parametrlərinə dəyişdirildi.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Yuxarıda nəsə yazın və Enter basın və ya Axtar düyməsini seçin.
+search_no_account = Əvvəlcə hesab əlavə edin.
+search_no_term = Axtarmaq üçün söz yazın, tarix və ya işarələmə qutusu seçin.
+search_running = Axtarılır...
+search_none = "{term}" üçün uyğunluq yoxdur.
+search_found_one = "{term}" üçün 1 uyğunluq.
+search_found_many = "{term}" üçün {count} uyğunluq.
+search_bad_date = Tarixi il-ay-gün şəklində yazın, məsələn 2025-12-31, istəyə görə 14:30 kimi vaxtla.
+search_bad_range = Tarix aralığının sonu başlanğıcından əvvəldir.
+search_none_any = Uyğun mesaj yoxdur.
+search_found_one_any = 1 mesaj tapıldı.
+search_found_many_any = {count} mesaj tapıldı.
+search_failed = Axtarış alınmadı.
+
+# The related messages tab
+related_running = Axtarılır...
+related_none = Əlaqəli mesaj tapılmadı.
+related_found_one = 1 əlaqəli mesaj tapıldı.
+related_found_many = {count} əlaqəli mesaj tapıldı.
+related_failed = Əlaqəli mesajlar axtarıla bilmədi.
+
+# Writing and sending
+sending_via = {sender} ilə göndərilir...
+send_failed = Göndərmə alınmadı. Ətraflı məlumat üçün jurnallara baxın.
+draft_autosaved = Qaralama avtomatik saxlanıldı.
+draft_autosave_failed = Qaralamanın avtomatik saxlanması alınmadı. Ətraflı məlumat üçün jurnallara baxın.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Uzaq məzmun indi {sender} göndərənin mesajları üçün yüklənəcək.
+downloading_attachment = {filename} yüklənir...
+downloading_attachments_one = 1 əlavə yüklənir...
+downloading_attachments_many = {count} əlavə yüklənir...
+saved_to = Saxlanıldı: {folder}
+attachment_download_failed = Əlavənin yüklənməsi alınmadı.
+
+# Getting mail onto the screen
+loading_folder = {account} üçün {folder} yüklənir...
+messages_in_folder = {folder} qovluğunda {count} mesaj.
+messages_in_folder_cached = {folder} qovluğunda {count} mesaj (son sinxronlaşdırılmış nüsxə, yenilənir...)
+no_offline_copy = {folder} üçün hələ oflayn nüsxə yoxdur.
+refresh_failed_cached = {folder} yenilənə bilmədi: son sinxronlaşdırılmış nüsxə göstərilir.
+no_such_folder = Bu hesabda {folder} qovluğu yoxdur.
+load_failed = Mesajlar yüklənə bilmədi. Ətraflı məlumat üçün jurnallara baxın.
+no_more_to_load = Bu qovluqda yüklənəcək başqa mesaj yoxdur.
+loading_more = {folder} qovluğunda daha çox mesaj yüklənir...
+more_loaded = Daha {count} mesaj yükləndi.
+no_more_messages = Bu qovluqda başqa mesaj yoxdur.
+load_more_failed = Daha çox mesaj yüklənə bilmədi: {error}
+loading_unified = Ümumi {folder} yüklənir...
+messages_in_unified = Ümumi {folder} qovluğunda hesablar üzrə {count} mesaj.
+messages_in_unified_cached = Ümumi {folder} qovluğunda {count} mesaj (son sinxronlaşdırılmış nüsxə, yenilənir...)
+auto_purge_done = Avtomatik təmizləmə Zibil qutusu/Spam qovluğundan {count} köhnə mesajı sildi.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Hazırdır.
+opening_message = Mesaj açılır...
+opening_message_already = Mesaj açılır... (artıq yüklənir)
+could_not_open_message = Mesaj açıla bilmədi.
+could_not_open_that_message = O mesaj açıla bilmədi.
+could_not_load_message = Bu mesaj yüklənə bilmədi.
+message_still_loading = O mesaj hələ yüklənir.
+folder_still_loading = Bu qovluq hələ yüklənir -- bir azdan yenidən cəhd edin.
+not_in_thread = Bu mesaj zəncirin tərkibində deyil.
+no_longer_in_thread = Bu mesaj artıq zəncirin tərkibində deyil.
+thread_position = Bu zəncirdə {total} mesajdan {position}-ci.
+thread_finished_one = Bu zəncir bitdi (1 mesaj).
+thread_finished_many = Bu zəncir bitdi ({count} mesaj).
+select_message_first = Əvvəlcə mesaj seçin.
+conversation_failed = Bu söhbət açıla bilmədi.
+select_message_for_related = Əvvəlcə əlaqəli mesajlarına baxmaq üçün mesaj seçin.
+looking_for_related = Əlaqəli mesajlar axtarılır...
+no_threading_headers = Bu mesajda axtarış üçün Message-ID və ya zəncir başlıqları yoxdur.
+reply_one_at_a_time = Cavab bir mesaj üzərində işləyir. Yalnız bir mesaj seçin.
+select_message_to_reply = Əvvəlcə cavab veriləcək mesajı seçin.
+preparing_reply = Cavab hazırlanır...
+reply_load_failed = Cavab üçün ilkin mesaj yüklənə bilmədi.
+select_message_to_forward = Əvvəlcə irəli göndəriləcək mesajı seçin.
+preparing_forward = İrəli göndəriləcək mesaj hazırlanır...
+forward_load_failed = İrəli göndəriləcək mesaj yüklənə bilmədi.
+compose_tab_needed_hint = Bu əmr üçün yazı vərəqi lazımdır. Mesaj yazmaq üçün Ctrl+N basın.
+open_message_first_view = Əvvəlcə mesaj açın, sonra görünüşü dəyişmək üçün Ctrl+B basın.
+open_message_first_remote = Əvvəlcə mesaj açın, sonra uzaq məzmunu yükləmək üçün Ctrl+Shift+I basın.
+
+# Acting on messages
+copying_message = Mesaj kopyalanır...
+copy_failed = Kopyalama alınmadı.
+delete_failed = Silmə alınmadı.
+already_in_archive = Artıq Arxivdədir.
+archiving = Arxivləşdirilir...
+archive_failed = Arxivləşdirmə alınmadı.
+action_failed = {action} alınmadı.
+nothing_to_undo = Geri alınacaq heç nə yoxdur.
+private_mode_on = Gizli rejim aktivdir. ZBox-un bu kompüterdəki poçt nüsxələri silindi.
+private_mode_off = Gizli rejim söndürülüb. ZBox yenidən poçtunuzun nüsxələrini saxlayır.
+undo_failed = {action} geri alına bilmədi.
+
+# Views and folders
+folder_pane_all = Qovluq paneli: Bütün qovluqlar.
+folder_pane_unified = Qovluq paneli: Ümumi qovluqlar.
+sorted_ascending = {field} üzrə artan sıra ilə çeşidləndi.
+sorted_descending = {field} üzrə azalan sıra ilə çeşidləndi.
+unified_folders_updated = Ümumi qovluqlar yeniləndi.
+zoom_reset = Mesaj şrifti ölçüsü standarta qaytarıldı.
+folder_creating = "{folder}" qovluğu yaradılır...
+folder_created = "{folder}" qovluğu yaradıldı.
+folder_create_failed = Qovluq yaradıla bilmədi.
+folder_renaming = "{folder}" qovluğunun adı "{new_name}" olaraq dəyişdirilir...
+folder_renamed = Qovluğun adı "{new_name}" olaraq dəyişdirildi.
+folder_rename_failed = Qovluğun adı dəyişdirilə bilmədi.
+folder_deleting = "{folder}" qovluğu silinir...
+folder_deleted = Qovluq silindi.
+folder_delete_failed = Qovluq silinə bilmədi.
+folder_subscribing = "{folder}" qovluğuna abunə olunur...
+folder_unsubscribing = "{folder}" qovluğundan abunəlik ləğv edilir...
+folder_subscribed = Abunə olundu.
+folder_unsubscribed = Abunəlik ləğv edildi.
+folder_subscribe_failed = Qovluğa abunə olmaq alınmadı.
+folder_unsubscribe_failed = Qovluqdan abunəliyi ləğv etmək alınmadı.
+
+# Accounts
+account_not_added = Hesab əlavə edilmədi.
+account_added = Hesab əlavə edildi: {account}
+account_settings_not_saved = Hesab parametrləri saxlanılmadı.
+account_updated = Hesab yeniləndi: {account}
+account_not_removed = Hesab silinmədi.
+account_removed = Hesab silindi.
+account_removed_with_files = Hesab silindi. {count} yerli fayl silindi.
+default_account_failed = Əsas hesab təyin edilə bilmədi.
+default_account_set = {account} indi əsas hesabdır.
+auto_check_not_saved = Avtomatik yoxlama parametri saxlanılmadı.
+mute_not_saved = Səssiz rejim parametri saxlanılmadı.
+account_muted = {account} səssizə alındı.
+account_unmuted = {account} üçün səs bərpa edildi.
+export_done = {count} hesab və parametrlər {path} yoluna ixrac edildi.
+import_done = {path} yolundan {count} hesab idxal edildi.
+
+# Filters, cache and the background lists
+filters_not_saved = Filtrlər saxlanılmadı.
+filters_saved = {account} üçün filtrlər saxlanıldı.
+filters_checking = {folder} qovluğu filtrlərinizə qarşı yoxlanılır...
+filters_none_matched = İndi işlət: {folder} qovluğunda heç bir aktiv qaydaya uyğun mesaj yoxdur.
+filters_run_failed = Filtrlər işlədilə bilmədi.
+filters_moving = {count} süzülmüş mesaj köçürülür...
+filters_move_failures = Filtrlər: {count} mesaj köçürülə bilmədi.
+filters_moved = Filtrlər {folder} qovluğundan {count} mesajı köçürdü.
+filters_move_failed = Süzülmüş mesajlar köçürülə bilmədi.
+cache_not_cleared = Keş təmizlənmədi.
+auto_cache_cleanup = Keşin avtomatik təmizlənməsi: {age} ərzindən köhnə mesajlar.
+phishing_update_failed = Fişinq siyahısı yenilənə bilmədi: {error}
+blocklist_update_failed = Bloklama siyahısı yenilənə bilmədi: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Əvvəlcə mesaj açın, sonra Fərqli saxla əmrindən istifadə edin.
+saving_message = Mesaj saxlanılır...
+save_file_failed = Fayl saxlanıla bilmədi.
+save_fetch_failed = Saxlanılacaq mesaj alına bilmədi.
+open_message_first_print = Əvvəlcə mesaj açın, sonra Çap et əmrindən istifadə edin.
+open_message_first_preview = Əvvəlcə mesaj açın, sonra Çapa önbaxış əmrindən istifadə edin.
+refreshing_accounts = {count} hesab yenilənir...
+emptying_trash = {account} üçün Zibil qutusu boşaldılır...
+trash_already_empty = Zibil qutusu artıq boş idi.
+trash_emptied = Zibil qutusu boşaldıldı: {count} mesaj silindi.
+empty_trash_failed = Zibil qutusu boşaldıla bilmədi.
+emptying_junk = {account} üçün Spam qovluğu boşaldılır...
+junk_already_empty = Spam qovluğu artıq boş idi.
+junk_emptied = Spam qovluğu boşaldıldı: {count} mesaj silindi.
+junk_emptied_prefix = Spam qovluğu boşaldıldı:
+junk_part_purged = {count} silindi
+junk_part_in_trash = {count} Zibil qutusuna köçürüldü, lakin silinməsi təsdiqlənmədi, Zibil qutusuna baxın
+junk_part_not_moved = {count} Zibil qutusuna köçürülmədi, hələ Spam qovluğundadır
+empty_junk_failed = Spam qovluğu boşaldıla bilmədi.
+back_online = Yenidən onlayn.
+offline_sync_running = {account} oflayn istifadə üçün sinxronlaşdırılır...
+offline_sync_failed = Oflayn sinxronlaşdırma alınmadı: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Əvvəlcə mesaj seçin və ya açın.
+select_or_open_message_ctrl_u = Əvvəlcə mesaj seçin və ya açın, sonra Ctrl+U basın.
+no_sender_address = Bu mesajda əlavə ediləcək göndərən ünvanı yoxdur.
+contact_added = {contact} ünvan kitabçanıza əlavə edildi.
+contact_already_there = {contact} artıq ünvan kitabçanızdadır.
+privacy_saved = Məxfilik parametrləri saxlanıldı. Tətbiq etmək üçün mesajı yenidən açın.
+message_font_size = Mesaj şriftinin ölçüsü: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Mesaj həmişəlik silinir
+deleting_many = {count} mesaj həmişəlik silinir
+trashing_one = Mesaj Zibil qutusuna köçürülür
+trashing_many = {count} mesaj Zibil qutusuna köçürülür
+undo_partly_restored = {action} geri alındı, lakin {count} mesajı bərpa etmək mümkün olmadı -- onlar bu arada köçürülmüş, silinmiş və ya müddəti bitmiş ola bilər.
+moves_report = {action}: {total} mesajdan {moved} köçürüldü.
+moves_report_failed = Köçürülmədi, hələ ilkin qovluqdadır: {count}.
+
+tray_tooltip_one = ZBox — 1 oxunmamış mesaj
+tray_tooltip_many = ZBox — {count} oxunmamış mesaj
+account_unreachable = {account} hesabına qoşulmaq mümkün olmadı. Onun avtomatik yoxlamaları {minutes} dəqiqəlik dayandırılır.
+bulk_copy_failed = Mesaj(lar) kopyalana bilmədi.
+bulk_copy_failed_status = Kopyalama alınmadı.
+bulk_loading_archive = Mesaj(lar) hələ yüklənir -- bir azdan yenidən arxivləşdirməyə cəhd edin.
+bulk_loading_delete = Mesaj(lar) hələ yüklənir -- bir azdan yenidən silməyə cəhd edin.
+bulk_loading_flag = Mesaj(lar) hələ yüklənir -- bir azdan yenidən ulduzlamağa cəhd edin.
+bulk_loading_generic = Mesaj(lar) hələ yüklənir -- bir azdan yenidən cəhd edin.
+bulk_none = Mesaj seçilməyib.
+bulk_none_archive = Arxivləşdirmək üçün mesaj seçilməyib.
+bulk_none_delete = Silmək üçün mesaj seçilməyib.
+bulk_none_junk = Spam kimi işarələmək üçün mesaj seçilməyib.
+bulk_none_not_junk = Spam deyil kimi işarələmək üçün mesaj seçilməyib.
+delete_refused_still = Server onu silməkdən imtina etdi; hələ {folder} qovluğundadır.
+delete_refused_trash = O, Zibil qutusundadır, lakin server onu həmişəlik silməkdən imtina etdi.
+delete_resume_failed = Əvvəlki silmədən {count} mesaj silinə bilmədi.
+done_perm_delete_one = Mesaj həmişəlik silindi.
+done_trash_one = Mesaj Zibil qutusuna köçürüldü.
+filters_applied = Filtrlər {folder} qovluğundakı {count} mesaja tətbiq edildi.
+filters_failed = Filtrlər işlədilə bilmədi.
+filters_running = {folder} qovluğunda filtrlər işlədilir
+flag_failed = Ulduz işarəsi yenilənə bilmədi.
+flag_updated = Ulduz işarəsi yeniləndi.
+folder_verb_subscribing = Abunə olunur:
+folder_verb_unsubscribing = Abunəlik ləğv edilir:
+mark_read_failed = Mesaj(lar) oxunmuş kimi işarələnə bilmədi.
+mark_unread_failed = Mesaj(lar) oxunmamış kimi işarələnə bilmədi.
+notify_new_mail_body = {name} üçün {count} yeni {noun}.
+notify_new_mail_title = Yeni poçt
+notify_noun_many = mesaj
+notify_noun_one = mesaj
+report_done = {verb}: {count} mesajdan {done}.
+report_verb_deleted = Silindi
+report_verb_permanent = Həmişəlik silindi
+running_copy_many = {count} mesaj kopyalanır
+running_copy_one = Mesaj kopyalanır
+running_junk_many = {count} mesaj spam kimi işarələnir
+running_junk_one = Spam kimi işarələnir
+running_move_many = {count} mesaj köçürülür
+running_move_one = Köçürülür
+running_not_junk_many = {count} mesaj spam deyil kimi işarələnir
+running_not_junk_one = Spam deyil kimi işarələnir
+running_perm_delete_one = Mesaj həmişəlik silinir...
+running_read_many = {count} mesaj oxunmuş kimi işarələnir
+running_read_one = Oxunmuş kimi işarələnir
+running_trash_one = Mesaj Zibil qutusuna köçürülür...
+running_unread_many = {count} mesaj oxunmamış kimi işarələnir
+running_unread_one = Oxunmamış kimi işarələnir
+settings_saved_no_startup = Parametrlər saxlanıldı. Windows başlanğıc girişi yenilənə bilmədi.
+settings_saved_status = Parametrlər saxlanıldı.
+spam_blocked_sender = Bloklanmış göndərən
+spam_possible_phishing = Ehtimal fişinq
+undo_running_many = {action} geri alınır ({count} mesaj)
+undo_running_one = {action} geri alınır
+mark_folder_read_failed = Qovluq oxunmuş kimi işarələnə bilmədi.
+marking_folder_read = Qovluq oxunmuş kimi işarələnir...
+upd_ready_at_exit = Yeniləmə artıq yüklənib. ZBox-dan çıxdıqda quraşdırılacaq.
+upd_checking = Yeniləmələr yoxlanılır...
+upd_up_to_date = ZBox güncəldir.
+upd_available_source = ZBox {version} mövcuddur. Bu nüsxə mənbədən işləyir, ona görə git ilə yeniləyin.
+upd_check_failed = Yeniləmələr yoxlanıla bilmədi: {error}
+opening_attachment = {filename} açılır...
+loading_headers = Başlıqlar yüklənir...
+offline_inbox_only = Oflayn istifadə üçün yalnız Gələnlər qutusu və Arxiv saxlanılır.
+offline_sync_done_inbox = Oflayn istifadə üçün Gələnlər qutusu və Arxivdəki {count} mesaj sinxronlaşdırıldı.
+working_offline = Oflayn iş: Gələnlər/Göndərilənlər/Qaralamalar qovluqlarının son sinxronlaşdırılmış nüsxəsi göstərilir.
+emptying_trash_all = Bütün hesablar üçün Zibil qutusu boşaldılır...
+trash_emptied_all = {accounts} hesabda Zibil qutusu boşaldıldı: {count} mesaj silindi.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fayl
+bar_edit = &Redaktə
+bar_view = &Görünüş
+bar_message = &Mesaj
+bar_compose = &Yazı
+bar_tools = &Alətlər
+bar_help = &Kömək
+
+# File
+file_new = Yeni
+file_new_message = Mesaj
+file_new_account = E-poçt hesabı...
+file_open_saved_message = Saxlanılmış mesajı aç...
+file_close = Bağla
+file_save_message_as = Mesajı fərqli saxla...
+file_get_new_for = Yeni mesajları al:
+file_get_new_all = Bütün hesablar
+file_get_new_current = Cari hesab
+file_offline = Oflayn
+file_work_offline = Oflayn işlə
+file_sync_now = İndi sinxronlaşdır
+file_print = Çap et...
+file_print_preview = Çapa önbaxış...
+file_exit = Çıxış
+
+# Edit
+edit_undo = Geri al
+edit_select_all = Hamısını seç
+edit_find_messages = Mesajları tap...
+
+# Message
+message_reply = Cavab ver
+message_reply_all = Hamısına cavab ver
+message_forward = İrəli göndər
+message_archive = Arxivləşdir
+message_delete = Sil
+message_delete_permanently = Həmişəlik sil
+message_mark = İşarələ
+mark_read = Oxunmuş
+mark_unread = Oxunmamış
+mark_flagged = Ulduzlu
+mark_junk = Spam
+mark_not_junk = Spam deyil
+message_watch_thread = Zənciri izlə
+message_ignore_thread = Zənciri nəzərə alma
+message_open_conversation = Mesajı söhbətdə aç
+message_show_related = Əlaqəli mesajları göstər
+message_add_sender_to_address_book = Göndərəni ünvan kitabçasına əlavə et
+message_announce_sender = Göndərəni səsləndir
+message_announce_copy_sender = Göndərəni səsləndir və ünvanı kopyala
+
+# View
+view_folders = Qovluqlar
+folders_all = Hamısı
+folders_unified = Ümumi
+folders_jump_inbox = Gələnlər qutusunun mesaj siyahısına keç
+folders_configure_unified = Ümumi qovluqları tənzimlə...
+view_sort_by = Çeşidləmə
+sort_date = Tarix
+sort_subject = Mövzu
+sort_from = Kimdən
+sort_descending = Azalan (ən yeni əvvəl)
+sort_ascending = Artan (ən köhnə əvvəl)
+view_threads = Zəncirlər
+threads_all = Hamısı
+threads_watched = İzlənilən zəncirlər
+threads_ignored = Nəzərə alınmayan zəncirlər
+threads_expand_all = Bütün zəncirləri aç
+threads_collapse_all = Bütün zəncirləri yığ
+view_load_more = Daha çox mesaj yüklə
+view_toggle_message_view = Mətn və HTML görünüşü arasında keç
+view_show_remote_content = Bu mesajda uzaq məzmunu göstər
+view_message_zoom = Mesajın miqyası
+zoom_increase = Mesaj şriftinin ölçüsünü artır
+zoom_decrease = Mesaj şriftinin ölçüsünü azalt
+zoom_reset = Mesaj şriftinin ölçüsünü sıfırla
+
+# Compose
+compose_send = &Göndər
+compose_save_draft = &Qaralamanı saxla
+compose_attach = &Fayl əlavə et...
+compose_fmt_bold = &Qalın
+compose_fmt_italic = &Kursiv
+compose_fmt_strike = &Üstündən xətt çək
+compose_fmt_bullet = &Nişanlı siyahı
+compose_fmt_number = &Nömrələnmiş siyahı
+compose_fmt_quote = &Sitat
+compose_fmt_code = &Kod
+compose_fmt_heading1 = &Başlıq
+compose_link = &Keçid əlavə et...
+compose_formatting = &Buradakı format
+compose_spellcheck = &Orfoqrafiyanı yoxla...
+compose_spellcheck_next = &Növbəti xəta
+compose_spellcheck_add = &Sözü lüğətə əlavə et
+compose_insert_signature = &İmza əlavə et
+compose_paste_quotation = &Sitat kimi yapışdır
+compose_word_count = &Söz sayı
+compose_preview = &Önbaxış...
+compose_diagnostics = &Yazı diaqnostikası...
+compose_edit_signature = &İmzanı redaktə et...
+compose_hotkeys_diagnostic = &Qısayol diaqnostikası
+
+# Tools
+tools_account_settings = Hesab və kimlik parametrləri...
+tools_mute_account = Hesabı səssizə al
+tools_pause_auto_check = Avtomatik yoxlamanı dayandır
+tools_disable_account = Hesabı söndür
+tools_remove_account = Hesabı sil...
+tools_address_book = Ünvan kitabçası...
+tools_message_filters = Mesaj filtrləri...
+tools_import = Hesabları və parametrləri idxal et...
+tools_export = Hesabları və parametrləri ixrac et...
+tools_cache_cleanup = Keşin təmizlənməsi parametrləri...
+tools_privacy = Məxfilik və məzmun bloklama...
+tools_settings = Parametrlər...
+
+# Help
+help_shortcuts = Klaviatura qısayolları...
+help_about = ZBox haqqında...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Yeni hesab...
+tree_account_settings = Hesab və kimlik parametrləri...
+tree_mute_account = Hesabı səssizə al
+tree_pause_auto_check = Avtomatik yoxlamanı dayandır
+tree_enable_account = Hesabı aktiv et
+tree_disable_account = Hesabı söndür
+tree_set_default_account = Əsas hesab et
+tree_remove_account = Hesabı sil...
+tree_refresh = Yenilə
+tree_new_folder = Yeni qovluq...
+tree_empty_trash = Zibil qutusunu boşalt
+tree_empty_junk = Spam qovluğunu boşalt
+tree_rename_folder = Qovluğun adını dəyiş...
+tree_delete_folder = Qovluğu sil...
+tree_subscribe_folder = Qovluğa abunə ol
+tree_unsubscribe_folder = Qovluqdan abunəliyi ləğv et
+
+# The message list menu, opened the same two ways
+list_select_all = Hamısını seç
+list_reply = Cavab ver
+list_reply_all = Hamısına cavab ver
+list_forward = İrəli göndər
+list_mark = İşarələ
+list_archive = Arxivləşdir
+list_delete_to_trash = Sil (Zibil qutusuna köçür)
+list_delete_permanently = Həmişəlik sil
+list_move_to = Köçür
+list_copy_to = Kopyala
+
+# The notification area icon
+tray_open = &ZBox-u aç
+tray_unread_one = 1 oxunmamış mesaj
+tray_unread_many = {count} oxunmamış mesaj
+tray_no_unread = Oxunmamış mesaj yoxdur
+tray_settings = &Parametrlər...
+tray_quit = &ZBox-dan çıx
+
+# The formatting menu inside a message you are writing
+format_bold = &Qalın
+format_italic = &Kursiv
+format_strike = &Üstündən xətt çək
+format_bullet = &Nişanlı siyahı
+format_number = &Nömrələnmiş siyahı
+format_quote = &Sitat
+format_code = &Kod
+format_heading1 = &Başlıq
+format_insert_link = &Keçid əlavə et...
+format_formatting_here = &Buradakı format
+tools_enable_account = Hesabı aktiv et
+edit_undo_action = {action} geri al
+tree_mark_folder_read = Qovluğu oxunmuş kimi işarələ
+help_updates = &Yeniləmələr
+help_check_updates = &Yeniləmələri indi yoxla...
+help_update_settings = &Yeniləmə parametrləri...
+help_releases_page = &Buraxılışlar səhifəsini aç
+message_attachments = Əlavələr
+message_no_attachments = Əlavə yoxdur
+message_save_all_attachments = Bütün əlavələri saxla
+view_full_headers = Tam başlıqlar
+folders_go_to_tree = Qovluq siyahısına keç
+list_block_sender = Bu göndərəni blokla
+list_unblock_sender = Bu göndərənin blokunu götür
+sort_received = Alınma tarixi
+sort_star = Ulduz
+sort_order_received = Alınma sırası
+sort_priority = Prioritet
+sort_recipient = Alan
+sort_correspondents = Yazışanlar
+sort_size = Ölçü
+sort_read = Oxunma
+sort_junk_status = Spam statusu
+sort_attachments = Əlavələr
+sort_threaded = Zəncirlə
+sort_unthreaded = Zəncirsiz
+view_columns = Sütunlar
+tools_openpgp_keys = OpenPGP açar meneceri
+tools_smime_certs = S/MIME sertifikat meneceri
+compose_pgp_encrypt = &Şifrələ
+compose_pgp_sign = &Rəqəmsal imzala
+compose_pgp_attach_key = &İctimai açarımı əlavə et
+
+[dialogs]
+set_theme_restart_confirm = Mövzu dəyişikliyini tətbiq etmək üçün ZBox yenidən başladılsın?
+set_ui_theme_label = &İnterfeys mövzusu:
+set_ui_theme_note = Menyular, siyahılar, dialoqlar və Mətn mesaj görünüşü üçün rənglər. Sistemə uyğun Windows-un öz açıq və ya tünd tətbiq rejimini izləyir. Gecə mavisi, İsti tünd və Yumşaq kontrast daha mülayim rəngli tünd mövzulardır. HTML mesajlar öz rənglərini saxlayır, Windows Yüksək Kontrast isə həmişə üstünlük təşkil edir. ZBox-un növbəti başlamasında qüvvəyə minir.
+set_theme_system = Sistemə uyğun
+set_theme_light = Açıq
+set_theme_dark = Tünd
+set_theme_midnight = Gecə mavisi
+set_theme_warm = İsti tünd
+set_theme_soft = Yumşaq kontrast
+set_language_restart_confirm = Dil dəyişikliyini tətbiq etmək üçün ZBox yenidən başladılsın?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith ilə əlaqə
+title_identity = Kimlik
+title_show_password = Parolu göstər
+title_missing_information = Çatışmayan məlumat
+title_unsupported_provider = Dəstəklənməyən provayder
+title_test_connection = Bağlantını yoxla
+title_new_contact = Yeni kontakt
+title_edit_contact = Kontaktı redaktə et
+title_delete_contact = Kontaktı sil
+title_import_contacts = Kontaktları idxal et
+title_export_contacts = Kontaktları ixrac et
+title_rename_group = Qrupun adını dəyiş
+title_delete_group = Qrupu sil
+title_send = Göndər
+title_send_failed = Göndərmə alınmadı
+title_attach_file = Fayl əlavə et
+title_save_draft = Qaralamanı saxla
+title_documentation = ZBox sənədləri
+title_open_link = Keçidi aç
+title_filter_rule = Filtr qaydası
+title_master_password = Əsas parol
+title_attachment_saved = Əlavə saxlanıldı
+title_attachments_saved = Əlavələr saxlanıldı
+title_download_failed = Yükləmə alınmadı
+title_print = Çap et
+title_print_preview = Çapa önbaxış
+title_related_messages = Əlaqəli mesajlar
+title_search = Axtarış
+title_unlock = Kilidi aç
+title_unlock_methods = Kilid açma üsulları
+title_desktop_shortcut = İş masası qısayolu
+title_spell_check = Orfoqrafiya yoxlaması
+title_plain_text_password = Açıq mətn parolu tapıldı
+title_startup_error = ZBox başlanğıc xətası
+
+identity_email_required = E-poçt ünvanı daxil edin.
+
+wizard_password_not_shown = Parol bu sistemdə göstərilə bilmir. O, yenə də normal şəkildə yazılır və saxlanılır.
+wizard_email_required = Davam etməzdən əvvəl düzgün e-poçt ünvanı daxil edin.
+wizard_test_needs_server = Yoxlamazdan əvvəl giriş e-poçtunu və daxil olan serveri daxil edin.
+wizard_test_succeeded = Bağlantı uğurlu oldu. Gələnlər qutusunda {count} mesaj tapıldı.
+
+contact_email_required = E-poçt ünvanı tələb olunur.
+contact_select_to_edit = Redaktə etmək üçün kontakt seçin.
+contact_select_to_delete = Silmək üçün kontakt seçin.
+contact_delete_confirm = {label} ünvan kitabçasından silinsin?
+contacts_import_choose_file = İdxal etmək üçün .vcf (vCard) və ya .csv faylı seçin.
+contacts_imported = {count} kontakt idxal edildi.
+contacts_import_empty = Həmin faylda kontakt tapılmadı.
+contacts_none_to_export = İxrac ediləcək kontakt yoxdur.
+contacts_exported = {count} kontakt ixrac edildi:\n{path}
+group_name_exists = "{name}" adlı qrup artıq mövcuddur.
+group_delete_confirm = "{name}" qrupu silinsin? Onun kontaktları silinmir.
+
+send_no_account = Göndərməzdən əvvəl hesab əlavə edin və ya Kimdən sahəsində birini seçin.
+send_no_recipient = Kimə sahəsində ən azı bir alıcı daxil edin.
+draft_no_account = Qaralamanı saxlamazdan əvvəl hesab əlavə edin və ya Kimdən sahəsində birini seçin.
+attached_file = Əlavə edildi: {name}\n\nGöndərdiyiniz zaman {count} fayl əlavə olunacaq.
+
+documentation_copied = ZBox sənədlərinin tam mətni mübadilə buferinə kopyalandı.
+
+filter_rule_needs_name = Bu qaydaya ad verin.
+filter_rule_needs_condition = Ən azı bir şərt təyin edin (Kimdən, Kimə və ya Mövzu).
+filter_rule_needs_action = Ən azı bir əməliyyat seçin: oxunmuş kimi işarələ, ulduzla və ya qovluğa köçür.
+
+master_password_set = Əsas parol təyin edildi. Onu təhlükəsiz yerdə saxlayın: ZBox hər yeni kompüterdə bir dəfə onu soruşur və itirilərsə bərpa edilə bilməz.
+master_password_offer = Əsas parol olmadan saxlanılmış hesab parolları yalnız bu kompüterdə və bu Windows hesabında oxuna bilər. ZBox-u başqa yerə köçürsəniz, bütün hesablara yenidən daxil olmaq lazım gələcək.\n\nİndi təyin edilsin?
+
+attachment_saved = Əlavə saxlanıldı:\n{path}
+attachments_saved = {count} əlavə saxlanıldı:\n{path}
+
+shortcut_created_settings = Qısayol yaradıldı:\n{path}\n\nO, ZBox-u buradan başladır:\n{base}
+
+spellcheck_no_dictionary = Orfoqrafiya lüğəti çatışmır, ona görə ZBox-un bu nüsxəsində orfoqrafiya yoxlaması mövcud deyil.
+spellcheck_none_found = Orfoqrafiya xətası tapılmadı.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Bu kompüterdə giriş açarı qurulsun və başqa kompüterdən saxlanılmış açar unudulsun?\n\nWindows sizdən Hello ilə təsdiq etməyi xahiş edəcək. Digər kompüterdə qalan köhnə giriş açarına toxunulmur və bu qovluğu ora qaytarsanız işləməyə davam edəcək, lakin onu yenidən qurmaq lazım olacaq.
+unlock_replace_passkey_many = Bu kompüterdə giriş açarı qurulsun və başqa kompüterlərdən saxlanılmış {count} açar unudulsun?\n\nWindows sizdən Hello ilə təsdiq etməyi xahiş edəcək. Digər kompüterdə qalan köhnə giriş açarlarına toxunulmur və bu qovluğu ora qaytarsanız işləməyə davam edəcək, lakin onları yenidən qurmaq lazım olacaq.
+unlock_method_works = Bu üsul işləyir.
+
+plain_text_password_found = data\config\himalaya.toml faylında hələ də köhnə hesab qurğusundan qalan açıq mətn parolu (auth.raw) var.\n\nHəmin hesabı silib yenidən əlavə edin və ya data\config\himalaya.toml faylını silin ki, o təhlükəsiz etibarnamə anbarından istifadə edərək yenidən yaransın.
+
+# main_frame's titles.
+title_account_list_unavailable = Hesab siyahısı əlçatmazdır
+title_open_message = Mesajı aç
+title_run_filters = Filtrləri işlət
+title_clear_cache = Oflayn mesaj keşini təmizlə
+title_remove_account = Hesabı sil
+title_new_folder = Yeni qovluq
+title_rename_folder = Qovluğun adını dəyiş
+title_delete_folder = Qovluğu sil
+title_subscribe = Abunə ol
+title_unsubscribe = Abunəliyi ləğv et
+title_open_saved_message = Saxlanılmış mesajı aç
+title_save_message_as = Mesajı fərqli saxla
+title_empty_trash = Zibil qutusunu boşalt
+title_empty_junk = Spam qovluğunu boşalt
+title_synchronize_offline = Oflayn üçün sinxronlaşdır
+title_export_accounts = Hesabları və parametrləri ixrac et
+title_import_accounts = Hesabları və parametrləri idxal et
+title_show_related = Əlaqəli mesajları göstər
+title_reply = Cavab ver
+title_forward = İrəli göndər
+title_undo = Geri al
+title_delete_permanently = Həmişəlik sil
+title_delete = Sil
+title_copy_to = Kopyala
+title_archive = Arxivləşdir
+title_accounts_locked = Hesablar kilidlidir
+
+select_account_first = Əvvəlcə ağacdan hesab seçin.
+select_account_or_folder = Əvvəlcə hesab və ya qovluq seçin.
+filters_left_behind = {count} mesaj filtrə uyğun gəldi, lakin hələ {folder} qovluğundadır.
+cache_clear_confirm = Bütün hesablar üçün oflayn mesaj keşi təmizlənsin?\n\nBu, yalnız ZBox-un yerli nüsxələrini silir. Heç bir poçt serverindən heç nə silinmir və mesajlar lazım olduqca yenidən yüklənir.
+account_remove_confirm = {name} ({address}) silinsin?\n\nServerdəki poçt silinmir.\nBu kompüterə yüklənmiş nüsxələr silinir.\nSaxlanılmış parol silinir.
+folder_delete_confirm = {address} üçün "{folder}" qovluğu və içindəki hər şey həmişəlik silinsin?\n\nBu geri qaytarıla bilməz.
+empty_trash_confirm = {address} üçün Zibil qutusundakı bütün mesajlar həmişəlik silinsin?\n\nBu geri qaytarıla bilməz.
+empty_junk_confirm = {address} üçün Spam qovluğundakı bütün mesajlar həmişəlik silinsin?\n\nBu geri qaytarıla bilməz.
+sync_select_account = Oflayn istifadə üçün sinxronlaşdırmaq məqsədilə hesab seçin (Ümumi qovluq deyil).
+accounts_imported = {count} hesab idxal edildi:\n\n{names}\n\nParollar heç vaxt ixrac edilmir və şifrələnmiş parol anbarı bu Windows istifadəçi hesabına xasdır, ona görə hər idxal edilmiş hesab qoşulmazdan əvvəl Alətlər > Hesab və kimlik parametrləri vasitəsilə parolun bir dəfə daxil edilməsini tələb edir.
+accounts_import_none = Bu faylda hesab tapılmadı. Faylda parametrlər varsa, onlar yenə də idxal edildi.
+delete_permanently_confirm_one = Bu mesaj həmişəlik silinsin? Bu, Zibil qutusunu keçir və geri qaytarıla bilməz.
+accounts_locked = Saxlanılmış hesab parolları başqa kompüterdə yazılıb, ona görə burada oxuna bilmir.\n\nHər hesaba poçt serverinə yenidən daxil olmaq lazım olacaq. Növbəti dəfə bundan qaçmaq üçün hesabların artıq işlədiyi kompüterdə Parametrlər, Tətbiq və məlumat təhlükəsizliyi bölməsindən əsas parol təyin edin.
+master_password_remove_confirm = Əsas parol silinsin? Onda saxlanılmış hesab parolları yalnız bu kompüterdə və bu Windows hesabında oxuna biləcək. Bundan sonra ZBox-u başqa yerə köçürsəniz, bütün hesablara yenidən daxil olmaq lazım gələcək.\n\nİndi silinsin?
+shortcut_offer = İş masasına ZBox qısayolu qoyulsun?\n\nO, bu ZBox qovluğunu başladacaq:\n{path}\n\nQısayol məhz bu yeri yadda saxlayır. ZBox qovluğunu sonra köçürsəniz, Parametrlər, Sistem trayı və pəncərə bölməsini açın və onu yeni yerə yönəltmək üçün yenidən İş masası qısayolu yarat seçin.
+shortcut_created = Qısayol yaradıldı:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Göstərilən ad
+form_email_address = E-poçt ünvanı
+form_your_name = Adınız
+form_login_email = Giriş e-poçtu
+form_password = Parol
+srv_imap_host = Daxil olan (IMAP) server
+srv_imap_port = Daxil olan port
+srv_imap_encryption = Daxil olan şifrələmə
+srv_smtp_host = Çıxan (SMTP) server
+srv_smtp_port = Çıxan port
+srv_smtp_encryption = Çıxan şifrələmə
+
+acct_login_email_label = Giriş e-poçtu (daxil olmaq üçün)
+acct_new_password_label = Yeni parol (cariyi saxlamaq üçün boş buraxın)
+acct_new_password_name = Yeni parol
+acct_identity_email_label = E-poçt ünvanı (göndərmək və qəbul etmək üçün)
+acct_identities_label = Əlavə kimliklər (ləqəblər)
+acct_identities_name = Əlavə kimliklər
+acct_add_identity = &Kimlik əlavə et...
+acct_edit_identity = &Kimliyi redaktə et...
+acct_remove_identity = &Kimliyi sil
+acct_signature = İmza
+acct_edit_signature = &İmzanı redaktə et...
+acct_junk_folder = Spam qovluğu
+acct_account_status = Hesabın statusu
+acct_disable_account = Bu hesabı söndür
+acct_default_account = Əsas hesab
+acct_set_default = Əsas hesab et
+acct_notifications = Yeni poçt bildirişləri
+acct_mute_notifications = Bu hesab üçün bildirişləri səssizə al
+acct_server_settings = Server parametrləri
+
+wiz_before_you_start = Başlamazdan əvvəl
+wiz_notice_name = Mühüm xəbərdarlıq
+wiz_google_instructions = &Google tətbiq parolu təlimatlarını aç
+wiz_intro = Adınız və e-poçt ünvanınız
+wiz_login_same = Giriş e-poçtu yuxarıdakı e-poçt ünvanı ilə eynidir
+wiz_show_password = &Parolu göstər
+wiz_preset_applied = {name} üçün hazır parametrlər tətbiq edildi.
+wiz_summary_name = Hesab xülasəsi
+wiz_review = Yoxlayın, sonra bu hesabı saxlamaq üçün Bitir düyməsini basın.
+wiz_test_connection = &Bağlantını yoxla
+wiz_testing = Bağlantı yoxlanılır...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Sazlama jurnalını aktiv et, saxlanılır: data\logs)
+set_language_label = &İnterfeys dili:
+set_language_label_only_english = &İnterfeys dili: (yalnız ingilis dili)
+set_headers_checkbox = &Açıq mesajın yuxarısında mesaj başlıqlarını göstər
+set_zoom_label = Mesaj şrifti və miqyas:
+set_font_override = &Mesajın standart şrift ölçüsünü əvəz et
+set_font_size_name = Mesaj şriftinin ölçüsü (punkt)
+set_reading_font_name = Oxu şrifti
+set_reading_font_label = Oxu şrifti (standart üçün boş):
+set_view_label = Mesaj açılarkən mesaj mətninin görünüşü:
+set_view_text = Mətn
+set_view_html = HTML (göstərilmiş)
+set_engine_label = HTML göstərmə mühərriki:
+set_engine_edge = Edge / WebView2 (müasir göstərmə)
+set_engine_ie = Köhnə MSHTML (ekran oxuyucusu üçün ən yaxşı dəstək)
+set_runtime_label = WebView2 icra mühiti:
+set_runtime_auto = Avtomatik — varsa daxili icra mühitindən istifadə et (tövsiyə olunur)
+set_runtime_fixed = Yalnız daxili sabit versiya
+set_runtime_evergreen = Sistem səviyyəli icra mühiti (Windows tərəfindən yenilənir)
+set_sr_box = Ekran oxuyucusunun elanlarına nəzarət
+set_silence_label = HTML üçün ekran oxuyucusunun susdurma müddəti:
+set_silence_name = HTML üçün ekran oxuyucusunun susdurma müddəti, millisaniyə ilə
+set_focus_delay_label = WebView əlçatanlıq fokusu gecikməsi:
+set_focus_delay_name = WebView əlçatanlıq fokusu gecikməsi, 1-dən 10-a qədər səviyyə
+set_announce_label = Elanın saxlanma müddəti:
+set_announce_name = Elanın saxlanma müddəti, millisaniyə ilə
+set_announce_actions = &Əməliyyatlar, yeni poçt və bildirişlər üçün elanları səsləndir
+set_attachment_dir_label = Əlavələrin saxlanma qovluğu:
+set_attachment_dir_name = Əlavələrin saxlanma qovluğu
+set_browse = &Seç…
+set_autosave_label = Qaralamanın avtomatik saxlanma aralığı:
+set_autosave_name = Qaralamanın avtomatik saxlanma aralığı, saniyə ilə
+set_auto_purge_label = Köhnə Zibil qutusu və Spam mesajlarını avtomatik sil:
+set_auto_purge_name = Zibil qutusu və Spam mesajlarını bu qədər gündən sonra avtomatik sil
+set_bare_keys = &Mesaj siyahısında tək düymə S (ulduz), A (arxiv), J (spam kimi işarələ)/Shift+J (spam deyil kimi işarələ), W (zənciri izlə), K (zənciri nəzərə alma), M (köçür)/Shift+M (qovluq adı ilə köçür) və C (kopyala) qısayollarını aktiv et
+set_sound_label = Səs və bildirişlər:
+set_sounds_enabled = &Bildiriş səslərini çal
+set_desktop_notifications = &Yeni poçt üçün masaüstü bildirişlərini göstər
+set_theme_label = Səs mövzusunu dəyiş:
+set_theme_label_only_default = Səs mövzusunu dəyiş: (yalnız standart mövzu)
+set_security_box = Tətbiq və məlumat təhlükəsizliyi
+set_lock_on_quit = &ZBox tam bağlandıqda onu kilidlə
+set_private_mode = &Gizli rejim: bu kompüterdə və ya diskdə poçt saxlama
+set_unlock_methods_button = &Kilid açma üsulları…
+set_master_password_button = &Əsas parol…
+set_tray_label = Sistem trayı və pəncərə:
+set_minimize_to_tray = &Sistem trayına yığ
+set_close_to_tray = &Sistem trayına bağla
+set_stay_maximized = &ZBox-u həmişə tam ekran saxla
+set_run_at_startup = &Windows başlayanda ZBox-u işə sal
+set_desktop_shortcut_button = &İş masası qısayolu yarat
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Sazlama jurnalı nəsə səhv getdikdə problemləri müəyyən etməyə kömək edir. Onu söndürmək yeni qeydlərin yazılmasını dayandırır; mövcud jurnal faylları silinmir. ZBox-un növbəti başlamasında qüvvəyə minir.
+set_language_note = ZBox-un növbəti başlamasında qüvvəyə minir. Dil faylları ZBox-un lang qovluğunda, sounds qovluğunun yanında yerləşən sadə mətn fayllarıdır. Yenisini əlavə etmək üçün en qovluğunu kopyalayın, kopyanı və içindəki .lang faylını dilinizin koduna dəyişin və hər bərabərlik işarəsindən sağdakı mətni tərcümə edin. Hələ tərcümə edilməyən hər şey səssiz qalmaq əvəzinə ingiliscə səsləndirilir, ona görə yarımçıq fayl təhlükəsiz istifadə edilə bilər.
+set_headers_note = Kimdən, Kimə, Cc, Tarix və Mövzu, həm Mətn, həm də HTML görünüşündə mesajın mətninin yuxarısında göstərilir. Bu olmasa, mesajı kimin göndərdiyini bilmək üçün vərəqi bağlayıb siyahıya qayıtmaq lazım gələr. Fokus yenə mesajın mətninə düşür; başlıq bloku bir Shift+Tab aralıdadır. Mesaj növbəti dəfə açılanda qüvvəyə minir.
+set_zoom_note = Açıq mesajın öz mətnini ZBox-un qalan hissəsindən və Windows-un ekran miqyasından asılı olmayaraq böyüdür və ya kiçildir. Həm Mətn, həm də HTML görünüşünə tətbiq olunur. "Oxu şrifti" istəyə görə mesaj mətni üçün müəyyən şrifti (məsələn, Consolas, OpenDyslexic) məcbur edir; adi şrifti saxlamaq üçün boş buraxın. Görünüş menyusundakı Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 bu dialoqu açmadan yalnız şrift ölçüsünü artırır, azaldır və ya sıfırlayır və dərhal bütün açıq mesajlara tətbiq olunur. Burada edilən dəyişikliklər də OK basıldıqda dərhal tətbiq olunur.
+set_view_note = HTML standartdır. O, mesajı göndərildiyi kimi göstərir və NVDA ilə JAWS onu oxuyur: HTML səhifə açılanda ZBox brauzerin öz elanını susdurur, oxu kursorunu mesajın birinci sətrinə qoyur və ZBox-un öz qısayollarını, o cümlədən fokusu səhifədən geri çıxarmaq üçün F6-nı, səhifənin içində işlək saxlayır. Mətn eyni mesajı adi redaktə nəzarətində sadə, formatsız mətn kimi göstərir -- şəkil yoxdur, düzülüş yoxdur və brauzer mühərrikinin quraşdırılmasından asılı olan heç nə yoxdur. Hər iki istiqamətdə keçmək üçün açıq mesajda Ctrl+B basın.
+set_engine_note = Edge müasir CSS-i göstərir, lakin səhifəni ayrıca prosesdə işlədir və məzmunu ekran oxuyucusuna yalnız wxPython-un çata bilmədiyi interfeys vasitəsilə verir -- ona görə mesaj içində oxunacaq heç nə olmadan açıla bilər. Köhnə MSHTML Outlook Express və Windows Mail-in istifadə etdiyi mühərrikdir: o, proses daxilində işləyir və normal sənəd ağacı dərc edir, ona görə NVDA və JAWS onu hər hansı veb səhifə kimi brauzer rejimində oxuyur. Mesaj növbəti dəfə açılanda qüvvəyə minir.
+set_runtime_note = Sistem səviyyəli icra mühitinə Windows Update xidmət göstərir, ona görə poçtunuzu oxuyan mühərrik xəbərdarlıq olmadan dəyişə bilər -- ZBox ilə bağlı heç nə dəyişməyən maşında işləyən HTML mesaj görünüşünün pozulması belə baş verir. deps qovluğundakı daxili nüsxə ZBox-un sınaqdan keçirildiyi dəqiq versiyanı sabitləyir. Quraşdırmaq üçün tools\get_webview2.bat faylını işlədin. Daxili nüsxə yoxdursa, ZBox hər halda sistem səviyyəli icra mühitindən istifadə edir, ona görə həmişə başlayır. ZBox-un növbəti başlamasında qüvvəyə minir.
+set_sr_intro = Mesaj açılarkən ekran oxuyucunuzun nə qədər danışmasına icazə verilməsi və ZBox-un öz səsli elanlarının nə qədər qalması.
+set_silence_note = HTML mesaj açılanda ZBox ekran oxuyucusunun brauzer elanını susdurmaq üçün 2 saniyəyə qədər süni Ctrl basılı saxlaya bilər. Mesajın mövzusu artıq səhifə başlığı kimi istifadə olunur, bu da base64 URL-nin ucadan oxunmasının qarşısını alır, lakin oxuyucu yenə də mesajın əvvəlində nəzarəti və sənəd növünü elan edir, ona görə bu, standart olaraq aktivdir. Söndürmək üçün Söndürülüb seçin və ya hələ də səs-küy keçirsə, daha uzun vaxt seçin.
+set_focus_delay_note = HTML mesaj yüklənib qurtaranda ZBox onu həqiqətən fokuslamazdan əvvəl bu qədər gözləyir. WebView2-nin səhifənin yükləndiyini bildirməsi ilə Windows-un həmin səhifənin əlçatanlıq ağacını tamamlaması eyni an deyil; çox tez fokuslamaq NVDA/JAWS-ın mesaj əvəzinə ümumi "Web content page" elan etməsinə və ya açıldıqdan sonra bir müddət mesajı əlçatmaz kimi bildirməsinə səbəb olur. Seçimlər 0,1 saniyədən 1 saniyəyə qədərdir. Bunu hələ də eşidirsinizsə, daha uzun vaxt seçin, açılış etibarlı olduqda isə daha cəld açılış üçün daha qısa vaxt seçin.
+set_announce_note = Ctrl+U və Ctrl+Shift+U göndərəni özü bağlanan kiçik dialoqda bildirir, çünki vəziyyət sətri yalnız ekran oxuyucunuzda vəziyyət sətrinin oxunması aktivdirsə səsləndirilir. Dialoqun nə qədər qaldığı budur. Onu danışıq sürətinizə uyğun təyin edin: çox qısa olsa, cümlənin ortasında bağlanır və bu, məqsədi pozur. İstənilən düymə onu vaxtından əvvəl bağlayır; ox düymələri onu açıq saxlayır ki, yenidən oxuya biləsiniz. Düyməni gözlə seçimi onu siz düyməni basana qədər açıq saxlayır.
+set_attachment_dir_note = Mesajda birdən çox əlavə olduqda "Hamısını saxla" əlavələri haradan yazır. Mövcud deyilsə, avtomatik yaradılır. Tək əlavəsi olan mesaj əvvəlki kimi yenə də harada saxlanacağını soruşur. Standart üçün boş buraxın:\n{path}
+set_autosave_note = Açıq yazı vərəqinin siz yazarkən özünü Qaralamalara nə qədər tez-tez saxladığı. Qaralamanı saxla (Ctrl+S) hər iki halda tələb olunduqda yenə saxlayır və saxlanılmamış yazısı olan vərəqi bağlamaq həmişə onu saxlamağı təklif edir. Söndürülüb avtomatik saxlamanı söndürür. 15 saniyədən az təklif edilmir -- bu, yazmağınızla yarışan server sorğusu olardı.
+set_auto_purge_note = Mesajlar Zibil qutusunda və Spam qovluğunda bu qədər gün qaldıqdan sonra onları həmişəlik silir -- Zibil qutusunu boşalt və Spam qovluğunu boşalt əmrlərinin tələb üzrə etdiyi eyni həmişəlik silmə, ZBox açıq olarkən gündə bir dəfə avtomatik işləyir. Standart olaraq 30 gün ilə aktivdir. Söndürülüb onu söndürür. Mesaj silindikdən sonra bu geri qaytarıla bilməz.
+set_bare_keys_note = Aktiv olduqda, mesaj siyahısında S, A, J, W və ya K düyməsini tək basmaq dərhal ulduzu dəyişir, arxivləşdirir, seçilmiş mesajı (mesajları) spam kimi işarələyir (Shift+J onları spam deyil kimi işarələyir) və ya seçimin daxil olduğu zənciri izləyir/nəzərə almır -- Arxivləşdir və Spam kimi işarələ təsdiqsiz və geri alınmadan işləyir. Bunu söndürmək S, A, J, W və K düymələrini adi ilk hərf üzrə siyahı naviqasiyasına qaytarır. Ctrl+S və Ctrl+Shift+A hər iki halda işləməyə davam edir. Dərhal qüvvəyə minir.
+set_sounds_note = İrəliləyiş, yeni mesajlar, göndərmə, cavab vermə və ya irəli göndərmə əməliyyatları, silmələr və axtarış nəticələri üçün qısa tonlar. Söndürülüb tətbiqdəki bütün səsləri söndürür; ekran oxuyucusu və vəziyyət sətri elanlarına hər iki halda təsir etmir.
+set_desktop_notifications_note = Yuxarıdakı səsdən ayrı olaraq, hər yeni poçt dəsti üçün Windows bildirişi. Söndürülüb onu bütün hesablar üçün söndürür; ayrı bir hesab da Hesab və kimlik parametrlərində özbaşına səssizə alına bilər.
+set_theme_note = Fərdi mövzular ZBox-un sounds qovluğunun içinə qoyulan qovluqlardır və hər biri öz progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav və none_found.wav fayllarını təmin edir. Çatışmayan mövzu faylı standart səsə qayıdır.
+set_theme_note_only_default = Fərdi mövzular ZBox-un sounds qovluğunun içinə qoyulan qovluqlardır və hər biri öz progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav və none_found.wav fayllarını təmin edir. Çatışmayan mövzu faylı standart səsə qayıdır. Başqa mövzu qovluğu əlavə edənə qədər yalnız "default" mövcuddur.
+set_lock_note = Bundan sonra ZBox başlayanda heç bir hesab açılmazdan əvvəl kilid açma üsullarınızdan birini soruşur. Onlardan hər hansı biri kifayətdir: giriş açarı, təhlükəsizlik açarı və ya əsas parol. Trayə bağlamaq çıxış deyil və yenidən kilidləmir; Fayl > Çıxış və tray nişanının Çıx əmri kilidləyir. Heç nə qeydiyyatdan keçməyibsə və əsas parol təyin edilməyibsə, kilid sizi öz poçtunuzdan kənarda qoymaq əvəzinə keçilir.
+set_security_note = Üçündən yalnız əsas parol nəyisə şifrələyir: bu qovluğun saxlanılmış hesab parollarını başqa kompüterdə açmasına imkan verən odur. Giriş açarı və ya təhlükəsizlik açarı tətbiqin kilidini yalnız bu kompüterdə açır. Heç biri ZBox-un əvvəllər istifadə edilmədiyi kompüterdə əsas parolu əvəz etmir.
+set_private_mode_note = Mesajlar serverdən oxunur və yalnız yaddaşda saxlanılır. Oflayn nüsxələr, saxlanılmış mesajlar və ya sazlama jurnalları saxlanılmır, açılmış əlavələr və HTML poçtunun brauzer məlumatları ZBox bağlananda silinir. Bağlanma həmçinin ZBox-un işə saldığı bütün proqramları, o cümlədən əlavəni göstərənləri sonlandırır, mübadilə buferini boşaldır və gizli rejim bu kompüterdən aktiv edilməyibsə, onu etibarlı saymağı dayandırır. Windows hələ də heç bir proqramın silə bilmədiyi bəzi qeydləri, məsələn USB sürücülərin siyahısını, səhifə faylını, antivirus və şəbəkə jurnallarını saxlayır.
+title_private_mode = Gizli rejim
+private_mode_need_master = Gizli rejim əsas parol tələb edir, çünki hesablarınızı sizin olmayan kompüterdə yalnız əsas parol açır. Əsas parol düyməsi ilə birini təyin edin, sonra gizli rejimi aktiv edin.
+private_mode_enter_master = Gizli rejimi aktiv etmək üçün əsas parolu daxil edin.
+private_mode_confirm = Gizli rejim bu kompüterdə və ya ZBox-un işlədiyi diskdə poçtunuzun heç bir nüsxəsini saxlamır. Onu aktiv etmək ZBox-un oflayn nüsxələrini, saxlanılmış mesajları, açılmış əlavələri, HTML poçtunun brauzer məlumatlarını və sazlama jurnallarını silir. Poçt serverlərinizdə heç nə silinmir, hesablarınız, kontaktlarınız və parametrləriniz saxlanılır. Gizli rejim aktiv edilsin?
+set_minimize_note = ZBox-u yığmaq onun tapşırıqlar paneli düyməsini gizlədir və əvəzində onu tray nişanının arxasında işləyən saxlayır. Pəncərəni geri gətirmək üçün tray nişanına sol klikləyin (və ya klaviatura fokusu olduqda Enter/Space).
+set_close_note = Pəncərənin Bağla düyməsi, Alt+F4 və Poçt vərəqində basılan Ctrl+W ZBox-dan çıxmaq əvəzinə onu trayə gizlədir. Fayl > Çıxış (Ctrl+Shift+Q) və tray nişanının öz Çıx elementi hər iki halda ZBox-dan həqiqətən çıxır, ona görə trayə toxunmadan çıxmaq üçün həmişə bir klaviatura yolu var.
+set_stay_maximized_note = ZBox tam ekranda başlayır və onu kiçiltsəniz, yenidən tam ekrana qaytarılır. Menyu zolağı, başlıq zolağı və pəncərə haşiyəsi təsirlənmir -- bu, haşiyəsiz tam ekran rejimi deyil, ona görə bütün Alt düyməli menyu qısayolları işləməyə davam edir.
+set_run_at_startup_note = Windows-a daxil olduğunuz zaman ZBox-u avtomatik işə salır və pəncərəsini göstərmək əvəzinə birbaşa traydə açır. Yalnız növbəti işə salınmada deyil, dərhal qüvvəyə minir.
+set_desktop_shortcut_note = İş masanızda ZBox qısayolu yaradır və orada artıq olanı əvəz edir. Qısayol bu ZBox qovluğunun dəqiq yerini saxlayır, ona görə ZBox-u başqa yerə köçürsəniz və ya kopyalasanız, iş masası qısayolunu ona yönəltmək üçün yeni nüsxədə bunu yenidən basın. Dərhal qüvvəyə minir və OK-ni gözləmir.
+
+# The Address Book, its contact form and its groups.
+ab_name = Ad
+ab_phone = Telefon
+ab_notes = Qeydlər
+ab_heading = Ünvan kitabçası
+ab_contacts = Kontaktlar
+ab_new = &Yeni...
+ab_edit = &Redaktə et...
+ab_delete = &Sil
+ab_import = &İdxal et...
+ab_export = &İxrac et...
+ab_groups_label = Qruplar (poçt siyahıları)
+ab_groups_name = Qruplar
+ab_new_group = &Yeni qrup...
+ab_rename_group = &Qrupun adını dəyiş...
+ab_delete_group = &Qrupu sil
+ab_manage_members = &Üzvləri idarə et...
+ab_all_contacts = Bütün kontaktlar
+ab_add_member = Əlavə et >>
+ab_remove_member = << Sil
+ab_members_of = {name} qrupunun üzvləri
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Lüğətdə olmayan:
+sp_not_in_dictionary_name = Lüğətdə olmayan
+sp_in_this_line_label = Bu sətirdə:
+sp_in_this_line_name = Bu sətirdə
+sp_suggestions_label = &Təkliflər:
+sp_suggestions_name = Təkliflər
+sp_replace_with_label = &Bununla əvəz et:
+sp_replace_with_name = Bununla əvəz et
+sp_replace = &Əvəz et
+sp_replace_all = &Hamısını əvəz et
+sp_ignore = &Nəzərə alma
+sp_ignore_all = &Hamısını nəzərə alma
+sp_add_to_dictionary = &Lüğətə əlavə et
+btn_close = &Bağla
+
+# Privacy and Content Blocking.
+priv_remote_label = Mesajlardakı uzaq məzmun:
+priv_block_remote = &Mən istəyənə qədər uzaq məzmunu blokla (tövsiyə olunur)
+priv_blocklist_label = Reklam və izləyici bloklama siyahısı:
+priv_block_known = &Məlum reklam və izləyici domenlərini blokla
+priv_update_daily = &Siyahını arxa planda hər gün yenilə
+priv_update_now = &İndi yenilə
+priv_junk_label = Spam poçt qaydaları:
+priv_check_inbox = &Yeni gələnlər poçtunu bloklanmış göndərənlərə və məlum fişinq keçidlərinə qarşı yoxla
+priv_move_blocked = &Bloklanmış göndərənlərin poçtunu avtomatik Spam qovluğuna köçür
+priv_update_phishing = &Fişinq siyahısını indi yenilə
+priv_blocked_label = Bloklanmış göndərənlər:
+priv_blocked_name = Bloklanmış göndərənlər
+priv_remove_blocked = &Bloklanmış göndərəni sil
+priv_never_junk_label = Heç vaxt spam sayılmayan göndərənlər:
+priv_never_junk_name = Heç vaxt spam sayılmayan göndərənlər
+priv_remove_never_junk = &Heç vaxt spam olmayan göndərəni sil
+priv_allowed_label = Uzaq məzmun yükləməyə icazə verilən göndərənlər:
+priv_allowed_name = İcazə verilən göndərənlər
+priv_remove_selected = &Seçilmiş göndərəni sil
+
+# Message Filters.
+filt_rule_name = Qayda adı
+filt_enabled = &Aktiv
+filt_match_label = Uyğunluq:
+filt_match_all = &Aşağıdakıların hamısına uyğun gəl (VƏ)
+filt_match_any = &Aşağıdakılardan hər hansı birinə uyğun gəl (VƏ YA)
+filt_conditions_label = Şərtlər (keçmək üçün dəyəri boş buraxın):
+filt_condition_field = {number}-ci şərtin sahəsi
+filt_condition_contains = {number}-ci şərt daxil edir
+filt_actions_label = Əməliyyatlar:
+filt_mark_read = &Oxunmuş kimi işarələ
+filt_flag = &Mesajı ulduzla
+filt_move_label = Qovluğa köçür:
+filt_move_name = Qovluğa köçür
+filt_rules_name = Filtr qaydaları
+filt_new = &Yeni qayda...
+filt_edit = &Qaydanı redaktə et...
+filt_delete = &Qaydanı sil
+filt_up = &Yuxarı apar
+filt_down = &Aşağı apar
+filt_run_label = Qovluqda indi işlət:
+filt_run_name = İndi işlət qovluğu
+filt_run_now = &İndi işlət
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Giriş açarı ilə kilidi aç (Windows Hello)
+unl_security_key = &Təhlükəsizlik açarı ilə kilidi aç
+unl_master_password_label = &Əsas parol:
+unl_master_password_name = Əsas parol
+unl_unlock = &Kilidi aç
+unl_exit = &ZBox-dan çıx
+unl_methods_label = &Qeydiyyatdan keçmiş üsullar:
+unl_methods_name = Qeydiyyatdan keçmiş kilid açma üsulları
+unl_add_passkey = &Giriş açarı əlavə et…
+unl_add_key = &Təhlükəsizlik açarı əlavə et…
+unl_reassign = &Giriş açarını bu kompüterə yenidən təyin et…
+unl_test = &Yoxla…
+unl_remove = &Sil
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Kimdən
+comp_to = Kimə
+comp_cc = Cc
+comp_bcc = Bcc
+comp_subject = Mövzu
+comp_attach_button = Fayl əlavə et...
+comp_sending = Göndərilir...
+comp_report_label = &Hesabat:
+comp_report_name = Hesabat
+comp_refresh = &Yenilə
+comp_copy = &Kopyala
+comp_preview_read = Alıcının oxuduğu kimi
+comp_preview_source = Göndəriləcək HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Mesajın mətni
+mv_blocked_notice = Bloklanmış məzmun bildirişi
+mv_show_remote = &Uzaq məzmunu göstər
+mv_always_allow = &Bu göndərənə həmişə icazə ver
+mv_message_headers = Mesaj başlıqları
+mv_attachments = Əlavələr
+mv_attachments_count = Əlavələr ({count})
+mv_save_attachment = Saxla: {filename}
+mv_save_all = Hamısını saxla
+mv_html_view = Mesajın HTML görünüşü
+mv_saved_message = Saxlanılmış mesaj
+mv_show_remote_tip = Bu mesajı uzaq şəkilləri və üslubları ilə yenidən yüklə. Məlum izləyicilər bloklu qalır.
+mv_always_allow_tip = {sender} göndərənin hər mesajında uzaq məzmunu yüklə.
+
+# The search tab.
+srch_account = Hesab
+srch_folder = Qovluq
+srch_for = Axtarılan
+srch_look_in = Axtarış yeri
+srch_in_all = Hamısı
+srch_in_subject = Mövzu
+srch_in_from = Kimdən
+srch_in_to = Kimə
+srch_in_body = Mətn
+srch_date = Tarix
+srch_date_any = İstənilən vaxt
+srch_date_today = Bu gün
+srch_date_yesterday = Dünən
+srch_date_week = Son 7 gün
+srch_date_month = Son 30 gün
+srch_date_year = Bu il
+srch_date_custom = Fərdi aralıq
+srch_from_date = Başlanğıc tarixi (il-ay-gün, istəyə görə vaxt)
+srch_to_date = Son tarix (il-ay-gün, istəyə görə vaxt)
+srch_unread = Yalnız oxunmamışlar
+srch_flagged = Yalnız ulduzlular
+srch_attachment = Əlavəsi var
+
+# The signature editor.
+sig_editors = İmza redaktorları
+sig_formatted = İmza, formatlanmış
+sig_source = İmza, HTML mənbəyi
+sig_plain_label = Sadə mətn alternativi (HTML ilə birlikdə göndərilir)
+sig_plain_name = Sadə mətn alternativi
+
+# About ZBox.
+about_text_name = ZBox haqqında mətn
+about_view_license = &Lisenziyaya bax...
+about_google = &Google tətbiq parolları...
+about_support = &ZBox-u dəstəklə -- Bir nəfərin hazırlığı və dəstəyi
+about_repos = &Harith-in GitHub-dakı tətbiq repozitoriyaları
+about_contact = &Harith ilə əlaqə
+btn_close_plain = Bağla
+btn_cancel_plain = Ləğv et
+
+# The license window.
+eula_heading = ZBox lisenziyası
+eula_text_name = ZBox lisenziya mətni
+eula_third_party = Üçüncü tərəf komponentlərinin lisenziya səhifələri:
+eula_agree = &Yuxarıdakı şərtlərlə razıyam
+eula_agree_name = ZBox lisenziya şərtlərini oxudum və razıyam
+eula_disagree = &Razı deyiləm
+eula_next = &Növbəti
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox sənədlərinin mətni
+doc_copy = Mübadilə buferinə kopyala
+shortcuts_heading = Klaviatura qısayolları
+shortcuts_text_name = Klaviatura qısayollarının mətni
+
+# The main window's own panes.
+mf_toolbar = Əsas alətlər paneli
+mf_tabs = ZBox vərəqləri
+tree_heading = Hesablar və qovluqlar
+tree_name = Hesab və qovluq ağacı
+envlist_heading = Mesajlar
+envlist_name = Mesaj siyahısı
+rdr_heading = Mesaj
+rdr_name = Mesaj oxuyucusu
+conv_heading_one = Söhbət: 1 mesaj
+conv_heading_many = Söhbət: {count} mesaj
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} mesajdan {completed} tamamlandı.
+bulk_cancelling = Ləğv edilir -- cari mesaj bitirilir...
+cache_clear_now = Oflayn mesaj keşini indi təmizlə... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, qorunur
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Göstərilən ad məcburi deyil -- bu hesabın öz adı ilə göndərmək üçün boş buraxın.
+acct_note_identity = E-poçt ünvanı, provayderiniz bu poçt qutusuna bağlı fərdi domen təqdim edirsə, giriş e-poçtundan fərqli ola bilər. Poçt yuxarıdakı ünvan altında göndəriləcək və qəbul ediləcək, daxil olmaq isə yenə giriş e-poçtu ilə olur. Bu hesab üçün artıq saxlanılmış parolu qorumaq üçün parol sahəsini boş buraxın -- məsələn, Gmail tətbiq parolunu dəyişdirdikdən sonra yenisini bura yazın; əks halda boş buraxın.
+acct_note_identities = Bu hesabın göndərə və cavab verə biləcəyi digər ünvanlar. Bunlardan birinə göndərilmiş mesaja cavab verərkən Kimdən sahəsi yuxarıdakı ünvan əvəzinə həmin ünvana təyin olunur.
+acct_note_signature = Bu hesabdan göndərilən hər yeni mesaja, cavaba və irəli göndərməyə "-- " sətrindən aşağıda əlavə olunur. Heç biri üçün boş buraxın. İmzanı redaktə et qalın, siyahı və keçidlərin mövcud olduğu formatlı redaktoru açır; yuxarıdakı qutu onunla birlikdə gedən sadə mətn versiyasını saxlayır.
+acct_note_junk = Spam kimi işarələ əmrinin mesajları hansı real qovluğa köçürdüyü. "{automatic}" Arxiv və Zibil qutusunun artıq istifadə etdiyi eyni provayder nəzərə alan təxmindən istifadə edir; bunu yalnız həmin təxmin səhvdirsə və ya spam qovluğunuzun fərdi adı varsa təyin edin.
+acct_note_disable = Söndürülmüş hesaba heç vaxt qoşulmur -- IDLE yoxdur, dövri yenilənmə yoxdur, heç nə yoxdur -- yenidən aktiv edilənə qədər. O, hələ də ağacda (söndürülüb) qeydi ilə görünür və artıq yüklənmiş poçtu oflayn əlçatan qalır. Hesablar > Hesabı söndür ilə və ya hesabın öz kontekst menyusu ilə eyni açardır; bu, ona çatmağın sadəcə başqa yoludur.
+acct_note_default = Bu hesabın qovluqları ağacda birinci görünür və əl ilə dəyişdirilməyibsə, yeni mesaj yazı pəncərəsində standart olaraq ondan göndərilir. Cavabın və ya irəli göndərmənin hansı ünvandan istifadə etdiyinə təsir etmir -- o, artıq cavab verilən mesaja uyğun gəlir (yuxarıdakı Əlavə kimliklərə baxın). Həmişə dəqiq bir əsas hesab var, ona görə cari əsas hesabda bunu götürüb başqa hesabda işarələməsəniz, o dəyişməz qalır -- əvəzinə əsası ona vermək üçün başqa hesabın qutusunu işarələyin.
+acct_note_mute = &Səssizə almaq bu hesabın yeni poçt səsini, səsli elanını və Windows bildirişini, başqa cür necə tənzimlənməsindən asılı olmayaraq, bloklayır. Başqa hesablara təsir etmir və hələ də Parametrlər > Səs və bildirişlər bölməsindəki əsas açarlara (ümumi olaraq səslər və masaüstü bildirişləri) tabedir.
+wiz_note_app_password = ZBox üçün artıq tətbiq parolu yaratmısınızsa, davam etmək üçün Növbəti düyməsini basın.
+wiz_note_login = Giriş məlumatları.\nGiriş e-poçtunuz yuxarıdakı ünvandan fərqlidirsə, məsələn provayder hesabınız login@example.net olduğu halda siz you@example.org kimi göndərmək və qəbul etmək istəyirsinizsə, giriş e-poçtunu burada daxil edin. Fərdi göndərmə ünvanını sonra Hesab və kimlik parametrlərində təyin edə bilərsiniz.
+wiz_note_servers = Domen tanındıqda əvvəlcədən doldurulmuş server parametrləri. Fərqli olmalı olan hər şeyi redaktə edin.
+wiz_preset_none = Bu domen üçün hazır parametr tapılmadı. Provayderinizin server parametrlərini əl ilə daxil edin; provayderinizin kömək səhifələri onları göstərir.
+ab_note_groups = Qrupun bütün üzvlərini birdən doldurmaq üçün yazı pəncərəsinin Kimə, Cc və ya Bcc sahəsinə qrupun adını yazın.
+cache_note_intro = Bunlar yalnız ZBox-un yerli nüsxələrini silir. Heç bir poçt serverindən heç nə silinmir və silinmiş mesaj onu növbəti dəfə açanda yenidən yüklənir.
+cache_note_age = Avtomatik təmizləmə gündə bir dəfə, ZBox-da on dəqiqə klaviatura fəaliyyəti olmadıqda və heç bir mesaj açıq olmadıqda işləyir. O, hər mesajın öz tarixinə görə gedir, o cümlədən hələ hesabınızda qalan mesajlar.
+filt_note_intro = Qaydalar yuxarıdan aşağıya sıra ilə işləyir, Kimdən, Kimə və Mövzunu yoxlayır. Bu hesabın Gələnlər qutusuna gələn yeni poçta avtomatik tətbiq olunur; artıq qovluqda olan mesajlara tətbiq etmək üçün aşağıdakı İndi işlət düyməsindən istifadə edin.
+filt_note_run_now = Yuxarıdakı hər aktiv qaydanı sıra ilə seçilmiş qovluqdakı hər mesaja tətbiq edir -- əvvəlcə dəyişikliklərinizi saxlayır, OK ilə eyni qaydada.
+mp_note_intro = Bu hesablar başqa kompüterdə qurulub. Saxlanılmış parollarının kilidini burada açmaq üçün əsas parolu daxil edin. Sizdən bu kompüterdə yalnız bir dəfə soruşulacaq.\n\nOnsuz hər hesaba poçt serverinə yenidən daxil olmaq lazım gələcək.
+priv_note_remote = Mesajın internetdən yüklədiyi şəkillər, üslub cədvəlləri və şriftlər göndərənə onu açdığınız anı və haradan açdığınızı bildirir. Bu aktiv olduqda, onların heç biri yüklənmir: mesajın yuxarısında nəyin bloklandığını göstərən bildiriş görünür və Ctrl+Shift+I onu yalnız həmin mesaj üçün yükləyir. Mesajın özünə əlavə edilmiş şəkillər həmişə göstərilir. Skriptlər və daxil edilmiş çərçivələr hər iki halda silinir və heç vaxt yüklənmir.
+priv_note_blocklist = Bu, ikinci qatdır. Mesajın uzaq məzmununu yüklədikdə və ya göndərənə icazə verdikdə əhəmiyyət kəsb edir: şəkillər yüklənir, lakin məlum izləmə və ya reklam domenindən verilən hər şey yenə də yüklənmir. Siyahı ictimai reklam və izləyici siyahılarından yüklənir və birləşdirilir; yeniləmə bir-iki saniyə çəkir və arxa planda işləyir.
+priv_note_junk = Təxmin yoxdur. Spam kimi işarələ poçt siyahısı vasitəsilə gəlməyibsə, göndərəni aşağıdakı bloklanmış siyahıya əlavə edir. Spam deyil kimi işarələ göndərəni heç vaxt spam olmayanlar siyahısına əlavə edir və o mesaj bir daha yoxlanılmır. Bloklanmış göndərəndən gələn yeni mesaj siyahıda Bloklanmış göndərən kimi işarələnir; məlum fişinq və ya zərərli proqram saytına keçidi olan mesaj Ehtimal fişinq kimi işarələnir. Poçt provayderinizin öz spam filtrləməsi əvvəlki kimi işləyir.
+priv_status_phishing_updating = Fişinq siyahısı: arxa planda yenilənir. Nəticəni görmək üçün bu dialoqu yenidən açın.
+priv_status_updating = Arxa planda yenilənir. Nəticəni görmək üçün bu dialoqu yenidən açın.
+rel_note_intro = "{subject}" ilə Message-ID/References başlıqlarına görə əlaqəli mesajlar, bu hesabdakı hər qovluq üzrə.
+srch_note_intro = Hər hesabda və qovluqda sözləri axtarın və ya aşağıdakı seçimlərlə axtarışı daraldın. Mesajları yalnız tarixə və ya işarələmə qutularına görə tapmaq üçün sözləri boş buraxın.
+sig_note_plain = Sadə mətn alternativini boş buraxın, Saxla düyməsini basanda o, formatlı imzadan yazılacaq.
+unified_note_intro = Bütün hesablar üzrə hansı qovluqların birləşdiriləcəyini seçin. İşarələnmiş hər biri ağacda bütün hesablarınızdan həmin qovluğu birləşdirən tək elementə çevrilir.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox haqqında
+title_account_settings = Hesab və kimlik parametrləri: {name}
+title_new_account = Yeni hesab
+title_address_book = Ünvan kitabçası
+title_members = Üzvlər: {name}
+ab_group_name_prompt = Qrupun adı:
+title_new_group = Yeni qrup
+title_cache_cleanup = Keşin təmizlənməsi parametrləri
+cache_age_prompt = Bundan köhnə keşlənmiş mesajları avtomatik sil:
+title_automatic_cleanup = Avtomatik təmizləmə
+comp_link_prompt = Keçid ünvanı:
+title_insert_link = Keçid əlavə et
+title_composer_diagnostics = Yazı diaqnostikası
+title_formatted_preview = Formatlı önbaxış
+title_license_agreement = ZBox lisenziya razılaşması
+title_message_filters = Mesaj filtrləri: {account}
+title_master_password_required = Əsas parol tələb olunur
+title_privacy_dialog = Məxfilik və məzmun bloklama
+title_privacy = Məxfilik
+title_settings = Parametrlər
+set_tab_general = Ümumi
+set_tab_personalization = Fərdiləşdirmə
+set_tab_accessibility = Əlçatanlıq və qısayol düymələri
+set_tab_maintenance = Texniki xidmət və təmizlik
+set_tab_sounds = Səslər və bildirişlər
+set_tab_security = Təhlükəsizlik
+title_unified_folders = Ümumi qovluqlar
+title_zbox_locked = ZBox kilidlidir
+title_message_view = Mesaj görünüşü
+title_remote_content = Uzaq məzmun
+title_refresh = Yenilə
+title_refresh_all = Hamısını yenilə
+mv_choose_folder = Əlavənin saxlanılacağı qovluğu seçin
+title_thread = Zəncir
+title_inbox = Gələnlər
+title_compose = Yazı
+title_watch_thread = Zənciri izlə
+title_ignore_thread = Zənciri nəzərə alma
+title_edit_signature = İmzanı redaktə et
+title_account = Hesab
+mf_folder_name_prompt = Qovluğun adı:
+mf_new_name_prompt = Yeni ad:
+title_refresh_all_accounts = Bütün hesabları yenilə
+title_sender = Göndərən
+title_new_mail = Yeni poçt
+mf_export_dialog_title = Bütün {count} hesabı və parametrləri ixrac et
+mf_related_tab = Əlaqəli: {subject}
+title_hotkeys_diagnostic = Qısayol diaqnostikası
+set_choose_attachment_dir = Əlavələrin saxlanma qovluğunu seçin
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox kilidlidir. Kilidi açmaq üçün aşağıdakı üsullardan hər hansı birindən istifadə edin. Ləğv etmək ZBox-u heç bir hesabı açmadan bağlayır.
+unl_note_foreign_passkey = Bu qovluqla saxlanılmış giriş açarı başqa kompüterə məxsusdur, ona görə burada istifadə edilə bilməz. Təhlükəsizlik açarınız və ya əsas parolunuzla kilidi açın, sonra bu kompüterdə giriş açarı qurmaq üçün Parametrlər, Təhlükəsizlik, Kilid açma üsulları bölməsindən istifadə edin.
+unl_note_methods = Bu üsullardan hər hansı biri, əsas parolla yanaşı, tətbiq kilidi aktiv olduqda ZBox-un kilidini açır. Giriş açarı bu kompüterdə Windows Hello-dan istifadə edir; təhlükəsizlik açarı USB və ya NFC üzərindən FIDO2 açarıdır və qoşduğunuz hər kompüterdə işləyir.
+unl_note_not_encryption = Bunlar tətbiqin kilidini açır. Heç nəyi şifrələmir: bu qovluğun əvvəllər istifadə edilmədiyi kompüterdə saxlanılmış hesab parollarını açıla bilən yenə də yalnız əsas paroldur. O, əvvəlcə təyin edilməlidir və o olmadan bunlardan heç biri əlavə edilə bilməz.
+unl_add_passkey_unavailable = &Giriş açarı əlavə et (əlçatmaz)
+unl_add_key_unavailable = &Təhlükəsizlik açarı əlavə et (əlçatmaz)
+unl_reassign_unavailable = &Giriş açarını bu kompüterə yenidən təyin et (əlçatmaz)
+unl_status_cancelled_passkey = Giriş açarı ləğv edildi. ZBox hələ də kilidlidir.
+unl_status_cancelled_key = Təhlükəsizlik açarı ləğv edildi. ZBox hələ də kilidlidir.
+unl_status_enter_password = Əsas parolu daxil edin.
+unl_status_no_master = Əsas parol təyin edilməyib, ona görə giriş açarı və ya təhlükəsizlik açarı hələ əlavə edilə bilməz. Parametrlər, Təhlükəsizlik bölməsindəki Əsas parol düyməsi ilə birini təyin edin, sonra bura qayıdın. Əsas parol saxlanılmış hesab parollarınızı başqa kompüterdə açan şeydir; giriş açarı tətbiqi yalnız bu kompüterdə açır, ona görə tək işləyə bilməz.
+unl_status_unsupported = Bu kompüterin Windows-u giriş açarlarını və ya təhlükəsizlik açarlarını dəstəkləmir, ona görə burada ZBox-un kilidini yalnız əsas parol aça bilər.
+unl_status_foreign_one = 1 giriş açarı başqa kompüterə məxsusdur və burada ZBox-un kilidini aça bilmir. Yenidən təyin etmək onları bu kompüterdə yaradılmış biri ilə əvəz edir.
+unl_status_foreign_many = {count} giriş açarı başqa kompüterə məxsusdur və burada ZBox-un kilidini aça bilmir. Yenidən təyin etmək onları bu kompüterdə yaradılmış biri ilə əvəz edir.
+unl_status_foreign_one_no_hello = 1 giriş açarı başqa kompüterə məxsusdur və burada ZBox-un kilidini aça bilmir. Windows Hello burada qurulmayıb, ona görə onlar bu kompüterdə əvəz edilə bilməz; Sil onları unudur.
+unl_status_foreign_many_no_hello = {count} giriş açarı başqa kompüterə məxsusdur və burada ZBox-un kilidini aça bilmir. Windows Hello burada qurulmayıb, ona görə onlar bu kompüterdə əvəz edilə bilməz; Sil onları unudur.
+unl_status_no_hello = Windows Hello bu kompüterdə qurulmayıb, ona görə burada giriş açarı əlavə edilə bilməz. Təhlükəsizlik açarı yenə də əlavə edilə bilər.
+unl_status_none_registered = Hələ heç bir kilid açma üsulu qeydiyyatdan keçməyib.
+unl_status_add_cancelled_passkey = Giriş açarının əlavə edilməsi ləğv edildi.
+unl_status_add_cancelled_key = Təhlükəsizlik açarının əlavə edilməsi ləğv edildi.
+unl_status_added = Əlavə edildi: {name}.
+unl_status_reassign_cancelled = Yenidən təyin etmə ləğv edildi. Heç nə dəyişdirilmədi.
+unl_status_reassigned = {name} əlavə edildi və digər kompüterlərdən {count} unuduldu.
+unl_status_test_cancelled = Yoxlama ləğv edildi.
+unl_status_removed = Silindi.
+unl_remove_warning_last = {name} silinsin?\n\nO, qeydiyyatdan keçmiş yeganə kilid açma üsuludur və əsas parol təyin edilməyib, ona görə tətbiq kilidi aktiv olduqda ZBox-un kilidini açmaq üçün heç nə qalmayacaq. Sizi kənarda qoymaq əvəzinə kilid keçilir, lakin ZBox bu halda kilidsiz açılacaq.
+unl_remove_warning = {name} silinsin? ZBox onu artıq qəbul etməyəcək.
+ab_col_email = E-poçt
+ab_col_name = Ad
+ab_col_phone = Telefon
+ab_no_contacts = Hələ kontakt yoxdur.
+acct_auto_check = Yeni mesajları avtomatik yoxla
+acct_note_auto_check = Söndürülüb: ZBox bu hesaba heç vaxt özbaşına qoşulmur -- yeni poçta nəzarət yoxdur, vaxtlı yenilənmə yoxdur, arxa plan yükləmələri yoxdur -- ona görə etibarsız server digər hesabları ləngidə bilməz. Yüklənmiş poçtu hələ də açılır, Yenilə (F5), göndərmə və silmə isə yenə də serverə çatır. Alətlər menyusunda və ya hesabın kontekst menyusunda Avtomatik yoxlamanı dayandır ilə eynidir.
+bl_day_ago = 1 gün əvvəl
+bl_days_ago = {days} gün əvvəl
+bl_label_blocklists = Bloklama siyahısı
+bl_label_phishing = Fişinq siyahısı
+bl_last_failed = Son cəhd alınmadı: %s
+bl_not_downloaded = Hələ yüklənməyib.
+bl_save_failed = %s yükləndi, lakin saxlanıla bilmədi: %s
+bl_seed_only = Daxili siyahıdan %s domen. İnternetdən hələ heç vaxt yenilənməyib.
+bl_some_failed = Bəzi mənbələr alınmadı: %s
+bl_some_unreachable = Bəzi mənbələrə çatmaq mümkün olmadı: %s
+bl_status_line = %s domen. Son yenilənmə: %s.
+bl_up_to_date = %s artıq güncəldir.
+bl_update_failed = %s yenilənə bilmədi: %s
+bl_updated = %s yeniləndi: %s domen.
+cc_age_choice = Hər mesaj keşi %s köhnə
+cc_auto_button = Avtomatik təmizləmə: %s köhnə keşlənmiş mesajlar...
+comp_btn_discard = &Ləğv et
+comp_btn_keep_editing = &Redaktəyə davam et
+comp_btn_save_draft = &Qaralamanı saxla
+comp_no_account = Hesab qurulmayıb
+comp_saving_draft = Qaralama saxlanılır…
+comp_this_message = bu mesaj
+comp_unsent_save_q = Bağlamazdan əvvəl %s qaralama kimi saxlanılsın?
+comp_unsent_tray_q = ZBox trayə getməzdən əvvəl %s qaralama kimi saxlanılsın?
+doc_unreadable = Sənəd faylı oxuna bilmədi:
+envlist_all_disabled = Hər hesab söndürülüb.
+envlist_col_date = Tarix
+envlist_col_from = Kimdən
+envlist_col_status = Status
+envlist_col_subject = Mövzu
+envlist_collapsed = Yığılmış (%d)
+envlist_empty = Bu qovluqda mesaj yoxdur.
+envlist_loading = Mesajlar yüklənir...
+envlist_no_accounts = Hələ heç bir hesab qurulmayıb.
+envlist_no_ignored = Bu qovluqda nəzərə alınmayan zəncir yoxdur.
+envlist_no_watched = Bu qovluqda izlənilən zəncir yoxdur.
+envlist_select_folder = Mesajları yükləmək üçün hesab və ya qovluq seçin.
+eula_link_0 = Himalaya lisenziya səhifəsini brauzerdə aç
+eula_link_1 = StevenBlack hosts lisenziya səhifəsini brauzerdə aç
+eula_link_2 = EasyList/EasyPrivacy lisenziya səhifəsini brauzerdə aç
+eula_link_3 = Phishing.Database lisenziya səhifəsini brauzerdə aç
+eula_read_note = Lisenziyanı, üçüncü tərəf bölmələri də daxil olmaqla, aşağıda oxuyun. Növbəti düyməsi əlçatan olmazdan əvvəl Razıyam seçimini işarələməlisiniz. Razı deyiləm ZBox-u başlatmadan bağlayır və bu işə salınmanın indiyədək yaratdıqlarını silir.
+eula_unreadable = Lisenziya faylı oxuna bilmədi:\n%s
+filters_title = Filtrləri işlət
+flag_title = Mesajı ulduzla
+folder_type_archive = Arxiv
+folder_type_drafts = Qaralamalar
+folder_type_inbox = Gələnlər
+folder_type_junk = Spam
+folder_type_sent = Göndərilənlər
+folder_type_trash = Zibil qutusu
+mime_application_json = JSON faylı
+mime_application_msword = Word sənədi
+mime_application_octet_stream = İkili fayl
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel cədvəli
+mime_application_vnd_ms_powerpoint = PowerPoint təqdimatı
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint təqdimatı
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel cədvəli
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word sənədi
+mime_application_xml = XML faylı
+mime_application_zip = ZIP arxivi
+mime_audio_mpeg = MP3 audio
+mime_audio_ogg = OGG audio
+mime_audio_wav = WAV audio
+mime_image_bmp = BMP şəkli
+mime_image_gif = GIF şəkli
+mime_image_jpeg = JPEG şəkli
+mime_image_png = PNG şəkli
+mime_image_svg_xml = SVG şəkli
+mime_image_webp = WebP şəkli
+mime_text_csv = CSV faylı
+mime_text_html = HTML faylı
+mime_text_plain = Mətn faylı
+mime_video_mp4 = MP4 video
+mime_video_x_msvideo = AVI video
+move_title_junk = Spam kimi işarələ
+move_title_move_to = Köçür
+move_title_not_junk = Spam deyil kimi işarələ
+mp_explain_set = Əsas parol təyin edilib. Bu ZBox qovluğunun saxlanılmış hesab parollarını başqa kompüterdə açmasına imkan verən odur.\n\nOnu silmək üçün hər iki yeni parol qutusunu boş buraxın və OK basın. Silmək bu kompüterə təsir etmir, lakin qovluq hər hesaba yenidən daxil olmadan başqa heç bir kompüterdə işləməyəcək.
+mp_explain_unset = Əsas parol təyin edilməyib, ona görə saxlanılmış hesab parolları yalnız bu kompüterdə və bu Windows hesabında oxuna bilər. Qovluğu başqa yerə kopyalasanız, hər hesaba poçt serverinə yenidən daxil olmaq lazım gələcək.\n\nBirini təyin edin, ZBox hər yeni kompüterdə ondan bir dəfə soruşacaq, sonra orada bundan sonra normal şəkildə kilidi açacaq. Bu kompüter yenidən soruşmayacaq.\n\nOnu yazın və təhlükəsiz yerdə saxlayın. O, heç harada saxlanılmır və bərpa edilə bilməz: unutsanız, hər hesaba poçt serverinə yenidən daxil olmaq lazım gələcək.
+mp_label_confirm = &Yeni əsas parolu təsdiqləyin:
+mp_label_current = &Cari əsas parol:
+mp_label_master = &Əsas parol:
+mp_label_new = &Yeni əsas parol:
+mp_name_confirm = Yeni əsas parolu təsdiqləyin
+mp_name_current = Cari əsas parol
+mp_name_master = Əsas parol
+mp_name_new = Yeni əsas parol
+mp_prompt_existing = Saxlanılmış hesab parollarınız yalnız bu kompüterdə qorunur. ZBox-u başqa kompüterə köçürsəniz, onların da açıla bilməsi üçün əsas parol təyin edin.
+mp_prompt_first_run = ZBox hesab parollarınızı saxlamaq üzrədir. ZBox-u başqa kompüterə köçürsəniz, onların yenə də açıla bilməsi üçün indi əsas parol təyin edin.
+mp_prompt_new_account = ZBox bu hesabın parolunu saxlamaq üzrədir. ZBox-u başqa kompüterə köçürsəniz, hesabın yenə də açıla bilməsi üçün əvvəlcə əsas parol təyin edin.
+mp_removed_done = Əsas parol silindi. Saxlanılmış parollar indi yalnız bu kompüterdə və bu Windows hesabında işləyir.
+mp_set_done = Əsas parol təyin edildi. Bu qovluq açılan hər yeni kompüterdə ZBox ondan bir dəfə soruşacaq, sonra orada bundan sonra normal şəkildə kilidi açacaq.
+mv_body_title = Mesajın mətni
+mv_col_format = Format
+mv_col_name = Ad
+mv_col_size = Ölçü
+mv_format_unknown = Naməlum
+mv_size_unknown = Naməlum ölçü
+na_account_settings = Hesab və kimlik parametrləri
+na_disable_account = Hesabı söndür
+na_edit_signature = İmzanı redaktə et
+na_message_filters = Mesaj filtrləri
+na_mute_account = Hesabı səssizə al
+na_pause_auto_check = Avtomatik yoxlamanı dayandır
+na_remove_account = Hesabı sil
+na_set_default = Əsas hesab et
+no_offline_copy = %s üçün oflayn nüsxə yoxdur. Onu onlayn olarkən açın və ya Fayl, Oflayn, İndi sinxronlaşdır əmrindən istifadə edin.
+perm_delete_confirm = {msg} Bu, Zibil qutusunu keçir və geri qaytarıla bilməz.
+perm_delete_many = {count} mesaj həmişəlik silinsin?
+perm_delete_one = {count} mesaj həmişəlik silinsin?
+preset_note_apple = Apple tətbiqə məxsus parol tələb edir.
+preset_note_fastmail = Fastmail tətbiq parolu tələb edir.
+preset_note_google = Google adi parolunuzu deyil, tətbiq parolu və ya OAuth2 tələb edir.
+preset_note_proton = ProtonMail yerli olaraq işləyən ProtonMail Bridge tətbiqini tələb edir.
+preset_note_yahoo = Yahoo tətbiq parolu tələb edir.
+priv_phishing_not_loaded = Fişinq siyahısı: hələ yüklənməyib. O, bu qaydalar aktiv olanda və ZBox onlayn olanda ilk dəfə yüklənir.
+priv_phishing_prefix = Fişinq siyahısı:
+priv_status_unavailable = Bloklama siyahısının statusu əlçatmazdır.
+rdr_load_failed = Mesaj yüklənə bilmədi.\n\n{message}
+rdr_loading = Mesaj yüklənir...
+rdr_select_message = Burada oxumaq üçün mesaj seçin.
+set_autosave_off = Söndürülüb — əl ilə saxlamaq üçün Qaralamanı saxla (Ctrl+S) istifadə edin
+set_autosave_seconds = Hər {seconds} saniyədən bir
+set_no_unlock = Burada istifadə edilə bilən giriş açarı və ya təhlükəsizlik açarı yoxdur
+set_purge_days = {days} gündən sonra
+set_purge_off = Söndürülüb — Zibil qutusu və Spam heç vaxt avtomatik silinmir
+set_purge_one_day = 1 gündən sonra
+set_val_seconds = {seconds} saniyə
+set_val_one_second = 1 saniyə
+set_silence_off = Söndürülüb
+set_announce_wait = Düyməni gözləyir
+set_autosave_minutes = Hər {minutes} dəqiqədən bir
+set_autosave_one_minute = Hər dəqiqə
+set_rt_bundled_installed = Daxili icra mühiti: quraşdırılıb.
+set_rt_bundled_many = Daxili icra mühiti: %s quraşdırılıb.
+set_rt_bundled_none = Daxili icra mühiti: quraşdırılmayıb, ona görə ZBox sistem səviyyəlisindən istifadə edir.
+set_rt_bundled_unknown = Daxili icra mühiti: müəyyən edilə bilmədi.
+set_rt_bundled_ver = Daxili icra mühiti: %s versiyası quraşdırılıb.
+set_rt_system_unknown = Sistem səviyyəli icra mühiti: versiya müəyyən edilə bilmədi.
+set_rt_system_ver = Sistem səviyyəli icra mühiti: %s versiyası.
+set_unlock_many = Burada %d kilid açma üsulu istifadə edilə bilər
+set_unlock_unreadable = Kilid açma üsulları oxuna bilmədi
+sig_tab_formatted = Formatlanmış
+sig_tab_source = HTML mənbəyi
+srch_all_accounts = Bütün hesablar
+srch_all_folders = Bütün qovluqlar
+tab_mail = Poçt
+tab_new_message = Yeni mesaj
+tab_saved_message = Saxlanılmış mesaj
+title_copy_to_err = Kopyala
+title_mark_message = Mesajı işarələ
+title_unsent_message = Göndərilməmiş mesaj
+tree_unified_root = Ümumi qovluqlar
+unlock_kind_passkey = Giriş açarı (Windows Hello)
+unlock_kind_security_key = Təhlükəsizlik açarı
+unlock_prompt_message = Windows sizdən təsdiq istəyir. Onun sorğusuna Windows Hello, PIN və ya təhlükəsizlik açarınızla cavab verin. Windows bitirəndə bu pəncərə özü bağlanır.
+unlock_prompt_title = Windows təhlükəsizliyi
+unlock_registering = Bu kilid açma üsulu qeydiyyatdan keçirilir
+unlock_the_passkey = Giriş açarı
+unlock_the_security_key = Təhlükəsizlik açarı
+wildcard_eml = E-poçt faylları (*.eml)|*.eml|Bütün fayllar (*.*)|*.*
+wildcard_export = ZBox ixracı (*.json)|*.json
+wiz_not_supported = DƏSTƏKLƏNMİR: {name}. {note} Bu hesab ZBox-da əlavə edilə bilməz.
+stock_apply = &Tətbiq et
+stock_cancel = Ləğv et
+stock_close = &Bağla
+stock_help = &Kömək
+stock_no = &Xeyr
+stock_ok = OK
+stock_yes = &Bəli
+wiz_btn_back = &< Geri
+wiz_btn_finish = &Bitir
+wiz_btn_next = &Növbəti >
+acct_unsaved_q = Bu hesabdakı dəyişikliklər saxlanılsın?
+btn_save = &Saxla
+spell_add_to_dictionary = &Lüğətə əlavə et
+spell_no_suggestions = Təklif yoxdur
+title_signature_for = İmza: {account}
+title_mark_folder_read = Qovluğu oxunmuş kimi işarələ
+title_update_available = ZBox yeniləməsi
+update_available = ZBox {new} mövcuddur. Sizdə {current} var.
+upd_notes_label = &Buraxılış qeydləri:
+upd_no_notes = Buraxılış qeydləri yoxdur.
+upd_notes_name = Buraxılış qeydləri
+upd_update_now = &Bəli, indi yenilə
+upd_remind_later = &Sonra xatırlat
+title_update_download = ZBox yeniləməsi yüklənir
+upd_downloading = ZBox {version} yüklənir...
+upd_progress_name = Yükləmənin gedişi
+upd_cancel = &Ləğv et
+upd_cancelling = Ləğv edilir...
+set_updates_label = Yeniləmələr:
+set_update_auto = &Yeniləmələri avtomatik yoxla
+set_update_mode_label = Yeniləmə tapıldıqda:
+set_update_ask = &Məndən soruş
+set_update_silent = &Səssizcə yüklə və quraşdır
+set_update_note = ZBox GitHub-da daha yeni buraxılışı gündə ən çox bir dəfə, yalnız boşda olarkən yoxlayır və yalnız versiya nömrəsini göndərir. Məndən soruş yeni versiyanı və buraxılış qeydlərini Bəli, indi yenilə və Sonra xatırlat ilə göstərir. Səssizcə yüklə və quraşdır yeniləməni boş vaxtda gətirir və ZBox-dan növbəti dəfə tam çıxdığınız zaman quraşdırır, heç vaxt işlədiyiniz zaman yox. Yeniləmə yalnız ZBox-un öz proqram fayllarını əvəz edir: hesablarınıza, parollarınıza, parametrlərinizə, poçtunuza, jurnallarınıza, səs mövzularınıza və əlavə etdiyiniz hər hansı dilə heç vaxt toxunulmur və yeni versiya başlamasa, əvvəlki versiya saxlanılır və özü bərpa edilir. Kömək, Yeniləmələr bölməsində də əl ilə yeniləmək üçün Yeniləmələri indi yoxla və buraxılışlar səhifəsi var.
+set_update_check_now = &İndi yoxla
+mv_attachment_button = {filename} ({format})
+att_open = Aç
+att_save = Saxla...
+att_save_all = Bütün əlavələri saxla
+title_save_attachment = Əlavəni saxla
+title_full_headers = Tam başlıqlar
+hdr_copy_all = Hamısını kopyala
+acct_identity_own_signature = Öz imzasından istifadə et
+acct_identity_own_reply_to = Öz Cavab ünvanından istifadə et
+acct_identity_reply_to = Cavab ünvanı
+acct_identity_always_cc = Bu ünvanlara həmişə Cc göndər
+acct_identity_cc = Cc ünvanları
+acct_identity_always_bcc = Bu ünvanlara həmişə Bcc göndər
+acct_identity_bcc = Bcc ünvanları
+acct_identity_own_folders = Öz Qaralamalar və Göndərilənlər qovluqlarından istifadə et
+acct_identity_drafts = Qaralamalar qovluğu
+acct_identity_sent = Göndərilənlər qovluğu
+acct_identity_own_smtp = Öz çıxan serverindən istifadə et
+acct_identity_smtp_login = Çıxan giriş adı
+acct_identity_smtp_password = Çıxan parol
+acct_identity_test_smtp = &Çıxan serveri yoxla
+acct_identity_note_smtp = Bu kimliyin e-poçt ünvanı ilə daxil olmaq üçün giriş adını boş buraxın. Göndərilmiş nüsxələr yenə bu hesabın Göndərilənlər qovluğuna, kimliyin öz Göndərilənlər qovluğu varsa ora gedir.
+identity_field_required = {field} sahəsini doldurun və ya onun qutusunun işarəsini götürün.
+identity_field_invalid = {field} sahəsində düzgün olmayan ünvan var.
+identity_folders_required = Qaralamalar qovluğunu, Göndərilənlər qovluğunu və ya hər ikisini seçin və ya onların qutusunun işarəsini götürün.
+identity_password_required = Çıxan parolu daxil edin.
+identity_smtp_testing = Çıxan server yoxlanılır.
+identity_smtp_ok = Çıxan server girişi qəbul etdi.
+identity_smtp_failed = Çıxan serverin yoxlanması alınmadı.\n\n{error}
+set_bare_keys_note_move = M və C seçilmiş mesaj(lar) üçün Köçür və Kopyala qovluq menyularını açır, Shift+M isə qovluq adının bir hissəsini yazıb onları ora köçürmək üçün qutu açır. Bunu söndürmək M və C düymələrini də ilk hərf üzrə naviqasiyaya qaytarır.
+folder_search_filter = Qovluq adında var
+folder_search_list = Uyğun qovluqlar
+folder_search_no_match = Heç bir qovluq bu ada uyğun gəlmir.
+wiz_signin_method = Giriş üsulu
+wiz_method_password = Parol
+wiz_method_microsoft = Microsoft hesabı (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft ilə giriş. Outlook.com, Hotmail, Live və Microsoft 365 üçün server parametrləri doldurulub.
+wiz_welcome_notice = Gmail. Adi Google parolunuz rədd ediləcək, lakin tətbiq parolu işləyir. Əvvəlcə iki mərhələli yoxlama aktiv olmalıdır. Aşağıdakı düymə Google-un təlimatlarını açır.\n\nOutlook.com, Hotmail, Live və Microsoft 365. Bunlar Microsoft hesabınızla daxil olur. Giriş səhifəsində Microsoft hesabı seçin, sonra brauzerlə və ya kodla daxil olun.\n\nDigər provayderlər. Adi parol və ya tətbiq parolu adətən işləyir və provayderinizin kömək səhifələri server parametrlərini göstərir.
+preset_note_outlook = Outlook.com, Hotmail, Live və MSN hesabları Microsoft hesabı ilə daxil olur. Giriş səhifəsində giriş üsulu kimi Microsoft hesabı seçin.
+ms_status_name = Microsoft girişinin statusu
+ms_browser_button = &Brauzerlə daxil ol
+ms_code_button = &Kodla daxil ol
+ms_copy_code = &Kodu kopyala
+ms_open_page = &Giriş səhifəsini aç
+ms_stop = &Gözləməyi dayandır
+ms_not_configured = Microsoft ilə giriş ZBox-un bu nüsxəsində qurulmayıb.
+ms_not_signed_in = Hələ daxil olunmayıb. Brauzerlə və ya istənilən cihazda kodla daxil olun.
+ms_signed_in = {address} kimi daxil olunub.
+ms_signed_in_plain = Daxil olunub.
+ms_needs_sign_in = Bu hesab üçün Microsoft ilə giriş yenidən lazımdır. Brauzerlə və ya istənilən cihazda kodla daxil olun.
+ms_reason_cancelled = Giriş dayandırıldı.
+ms_reason_timeout = Vaxtında cavab gəlmədi.
+ms_reason_denied = Girişə icazə verilmədi.
+ms_reason_expired = Kodun müddəti bitdi. Yenisini istəyin.
+ms_reason_network = Microsoft-a çatmaq mümkün olmadı. Bağlantını yoxlayın və yenidən cəhd edin.
+ms_reason_server = Microsoft bildirdi: {detail}
+ms_page_done = Daxil olundu. Bu səhifəni bağlayıb ZBox-a qayıda bilərsiniz.
+ms_page_failed = Giriş tamamlanmadı. Ətraflı məlumat üçün ZBox-a qayıdın.
+ms_browser_waiting = Brauzeriniz Microsoft-un giriş səhifəsini göstərir. Orada girişi tamamlayın, sonra ZBox-a qayıdın.
+ms_code_asking = Microsoft-dan giriş kodu istənilir...
+ms_code_waiting = İstənilən cihazda {address} ünvanını açın və {code} kodunu daxil edin. ZBox girişi tamamlayana qədər burada gözləyir.
+ms_failed = Giriş tamamlanmadı. {reason}
+ms_code_copied = Kod kopyalandı.
+offline_inbox_only = Oflayn istifadə üçün yalnız Gələnlər qutusu və Arxiv saxlanılır. {folder} qovluğunu açmaq üçün onlayn olun.
+block_sender_rule_name = {sender} göndərəni blokla
+title_block_sender = Bu göndərəni blokla
+title_unblock_sender = Bu göndərənin blokunu götür
+set_clear_inbox_cache = Gələnlər qutusundan uzaqlaşanda mesaj keşini təmizlə
+set_clear_inbox_cache_note = Aktiv olduqda, mesajın oflayn nüsxəsi və saxlanılmış mətni, o, Gələnlər qutusundan çıxan kimi, həmçinin telefonunuzda olduğu kimi silinibsə və ya başqa yerə köçürülübsə, silinir ki, o, artıq olmadığı yerdə görünməsin. Bu faylları yalnız Gələnlər qutusu saxlayır; hər digər qovluq həmişə serverdən oxunur.
+empty_trash_all_confirm = Bütün hesablar üçün Zibil qutusundakı bütün mesajlar həmişəlik silinsin?\n\nBu geri qaytarıla bilməz.
+envlist_col_recipient = Alan
+envlist_col_correspondents = Yazışanlar
+envlist_col_received = Alınma tarixi
+envlist_col_size = Ölçü
+envlist_col_attachments = Əlavələr
+envlist_col_priority = Prioritet
+envlist_col_junk_status = Spam statusu
+envlist_attachment = Əlavələr
+envlist_priority_highest = Ən yüksək
+envlist_priority_high = Yüksək
+envlist_priority_low = Aşağı
+envlist_priority_lowest = Ən aşağı
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Mesaj siyahısında sütun başlıqlarını göstər
+pgp_title = OpenPGP açar meneceri
+smime_title = S/MIME sertifikat meneceri
+smime_own = sizin sertifikatınız
+smime_expired = müddəti bitib
+smime_expires = müddəti bitir: {date}
+smime_issuer = Verən
+smime_valid = {start} tarixindən {end} tarixinə qədər etibarlıdır
+smime_fingerprint = SHA-256 barmaq izi
+smime_own_key = Sizin sertifikatınız, şəxsi açarı ilə: ona şifrələnmiş poçt burada oxuna bilər.
+smime_unavailable = S/MIME ZBox-un bu nüsxəsində mövcud deyil.
+smime_details = Sertifikatın təfərrüatları
+smime_no_certs = Hələ sertifikat yoxdur. Öz .p12 və ya .pfx faylınızı və ya yazışdığınız şəxsin sertifikatını idxal edin.
+smime_import_failed = Sertifikat idxal edilə bilmədi: {error}
+smime_import_title = Sertifikat faylını idxal et
+smime_password_prompt = {name} parolunu daxil edin.
+smime_password_title = Sertifikat parolu
+smime_imported = Sertifikat idxal edildi.
+smime_export_title = Sertifikatı ixrac et
+smime_exported = Sertifikat ixrac edildi.
+smime_delete_confirm = {name} sertifikatı silinsin? O, sizinkidirsə, ona şifrələnmiş poçt burada artıq oxuna bilməyəcək.
+smime_deleted = Sertifikat silindi.
+smime_rs_verified = Bu mesajda Windows-un etibar etdiyi orqanın göndərənin ünvanı üçün verdiyi sertifikatdan etibarlı S/MIME imzası var.
+smime_rs_unverified = Bu mesajda etibarlı S/MIME imzası var, lakin onun sertifikatı Windows-un etibar etdiyi orqan tərəfindən verilməyib.
+smime_rs_mismatch = Bu mesajda S/MIME imzası var, lakin göndərənin ünvanı imzalayanın sertifikatına uyğun gəlmir.
+smime_rs_technical = Bu mesajda S/MIME imzası var, lakin o, mesaja uyğun gəlmir. Mesaj imzalandıqdan sonra dəyişdirilmiş ola bilər.
+smime_rs_signer = İmzalayan: {name}
+smime_rs_issuer = Sertifikatı verən: {issuer}
+smime_rs_import_hint = Onu oxumaq üçün S/MIME sertifikatınızı şəxsi açarı ilə, yəni .p12 və ya .pfx faylını, Alətlər, S/MIME sertifikat meneceri bölməsində idxal edin.
+pgp_details = Açarın xassələri
+pgp_generate = &Yeni açar cütü
+smime_import = &Sertifikat faylını idxal et
+smime_export = &Sertifikatı ixrac et
+smime_delete = &Sertifikatı sil
+pgp_import_file = &OpenPGP açar faylını idxal et
+pgp_import_file_title = OpenPGP açar faylını idxal et
+pgp_import_clip = &Açarları mübadilə buferindən idxal et
+pgp_export = &İctimai açarı fayla ixrac et
+pgp_copy = &İctimai açarı kopyala
+pgp_backup = &Gizli açarın ehtiyat nüsxəsini fayla yaz
+pgp_props = &Açarın xassələri
+pgp_revoke = &Açarı ləğv et
+pgp_delete = &Açarı sil
+pgp_expires = müddəti bitir: {date}
+pgp_never_expires = müddəti bitmir
+pgp_expired = müddəti bitib
+pgp_revoked = ləğv edilib
+pgp_fingerprint = Barmaq izi
+pgp_key_id = Açar ID
+pgp_created = Yaradılıb
+pgp_acceptance = Sizin qəbulunuz
+pgp_acc_rejected = Xeyr, bu açarı rədd et.
+pgp_acc_undecided = Hələ yox, bəlkə sonra.
+pgp_acc_unverified = Bəli, lakin bunun düzgün açar olduğunu yoxlamamışam.
+pgp_acc_verified = Bəli, bu açarın barmaq izinin düzgün olduğunu şəxsən yoxlamışam.
+pgp_personal_no = Xeyr, onu şəxsi açarım kimi istifadə etmə.
+pgp_personal_yes = Bəli, bu açara şəxsi açar kimi bax.
+pgp_verify_hint = Açarın həqiqətən {addr} ünvanına məxsus açar olduğuna əmin olmaq üçün onun barmaq izini e-poçtdan başqa təhlükəsiz ünsiyyət kanalı ilə yoxlayın.
+pgp_gen_title = OpenPGP açarı yarat
+pgp_gen_identity = Kimlik
+pgp_gen_type = Açar növü:
+pgp_gen_ecc = ECC (Elliptik əyri)
+pgp_gen_expiry = Açarın bitmə müddəti
+pgp_gen_no_expiry = Açarın müddəti bitmir
+pgp_gen_button = Açar yarat
+pgp_gen_confirm = {identity} üçün ictimai və gizli açar yaradılsın?
+pgp_gen_progress = Yeni OpenPGP açarınız yaradılır…
+pgp_gen_done = OpenPGP açarı uğurla yaradıldı!
+pgp_gen_failed = OpenPGP açarının yaradılması gözlənilmədən alınmadı
+pgp_import_none = Heç bir açar idxal edilmədi.
+pgp_import_done = OpenPGP açarları uğurla idxal edildi!
+pgp_passphrase_title = Parol ifadəsi tələb olunur
+pgp_unlock_failed = Açarın və ya açarın tabe hissələrinin kilidi açıla bilmədi.
+pgp_backup_title = OpenPGP açarınızın ehtiyat nüsxəsi üçün parol seçin
+pgp_backup_message = Burada təyin etdiyiniz parol yaratmaq üzrə olduğunuz OpenPGP gizli açarının ehtiyat nüsxə faylını qoruyur. Ehtiyat nüsxəni davam etdirmək üçün bu parolu təyin etməlisiniz.
+pgp_backup_pw = Gizli açarın ehtiyat nüsxə parolu:
+pgp_backup_pw2 = Gizli açarın ehtiyat nüsxə parolu (yenidən):
+pgp_backup_done = Gizli açar uğurla ixrac edildi!
+pgp_export_done = İctimai açar uğurla ixrac edildi!
+pgp_copied = Açar(lar) mübadilə buferinə kopyalandı
+pgp_revoke_done = Açar uğurla ləğv edildi.
+pgp_personal = şəxsi açar
+pgp_no_keys = Hələ açar yoxdur. Yeni açar cütü yaradın və ya açar idxal edin.
+pgp_unavailable = OpenPGP ZBox-un bu nüsxəsində mövcud deyil.
+pgp_gen_expires_3y = Açarın müddəti 3 ildən sonra bitir
+pgp_gen_no_identity = Əvvəlcə e-poçt hesabı əlavə edin.
+pgp_import_confirm = Bu açarlar idxal edilsin?\n\n{keys}
+pgp_passphrase_prompt = {name} üçün gizli açarın parol ifadəsini daxil edin.
+pgp_clip_empty = Mübadilə buferində OpenPGP açarı yoxdur.
+pgp_pw_mismatch = İki parol uyğun gəlmir.
+pgp_backup_open = Bu fayl gizli açarın ehtiyat nüsxəsidir. Onun ehtiyat nüsxə parolunu daxil edin.
+pgp_revoke_confirm = {name} açarı ləğv edilsin? Ləğv edilmiş açar bir daha istifadə edilə bilməz. Başqalarının onu istifadə etməyi dayandırması üçün ləğv edilmiş ictimai açarı paylaşın.
+pgp_delete_public_confirm = {name} ictimai açarı silinsin?
+pgp_delete_secret_confirm = {name} şəxsi açarınız silinsin? Ona şifrələnmiş poçt bir daha oxuna bilməyəcək. Lazım ola bilərsə, əvvəlcə gizli açarın ehtiyat nüsxəsini yaradın.
+pgp_select_key = Əvvəlcə açar seçin.
+pgp_save_failed = Açarlar saxlanıla bilmədi: {error}
+pgp_publish = &Dərc et
+pgp_publish_ok = İctimai açar "{keyserver}" serverinə göndərildi.
+pgp_publish_fail = İctimai açarınızı "{keyserver}" serverinə göndərmək alınmadı.
+pgp_publish_suggest = İctimai açarı açar serverində dərc etmək başqalarına onu tapmaq imkanı verir.
+pgp_publish_question = İndi {keyserver} üzərində dərc edilsin? Sonra server {addresses} ünvanına təsdiq e-poçtu göndərir. Ünvanınız onun keçidini açdığınız andan tapıla bilən olur.
+pgp_publish_sent = {addresses} ünvanına təsdiq e-poçtu göndərildi. Açarınızı ünvanınızla tapıla bilən etmək üçün onun içindəki keçidi açın.
+pgp_publish_already = Artıq {addresses} ilə tapıla bilər.
+pgp_rs_no_sig = Rəqəmsal imza yoxdur
+pgp_rs_no_sig_info = Bu mesajda göndərənin rəqəmsal imzası yoxdur. Rəqəmsal imzanın olmaması mesajın bu e-poçt ünvanına sahib olduğunu iddia edən kimsə tərəfindən göndərilmiş ola biləcəyini bildirir. Mesajın şəbəkə üzərindən ötürülərkən dəyişdirilməsi də mümkündür.
+pgp_rs_uncertain = Qeyri-müəyyən rəqəmsal imza
+pgp_rs_uncertain_date = Qeyri-müəyyən rəqəmsal imza - İmzalanma tarixi: {date}
+pgp_rs_invalid = Yararsız rəqəmsal imza
+pgp_rs_invalid_date = Yararsız rəqəmsal imza - İmzalanma tarixi: {date}
+pgp_rs_good = Yaxşı rəqəmsal imza
+pgp_rs_good_date = Yaxşı rəqəmsal imza - İmzalanma tarixi: {date}
+pgp_rs_no_key = Bu mesajda rəqəmsal imza var, lakin onun düzgün olub-olmadığı qeyri-müəyyəndir. İmzanı yoxlamaq üçün göndərənin ictimai açarının nüsxəsini əldə etməlisiniz.
+pgp_rs_uid_mismatch = Bu mesajda rəqəmsal imza var, lakin uyğunsuzluq aşkar edildi. Mesaj imzalayanın ictimai açarına uyğun gəlməyən e-poçt ünvanından göndərilib.
+pgp_rs_not_accepted = Bu mesajda rəqəmsal imza var, lakin imzalayanın açarının sizin üçün məqbul olub-olmadığına hələ qərar verməmisiniz.
+pgp_rs_rejected = Bu mesajda rəqəmsal imza var, lakin siz əvvəllər imzalayanın açarını rədd etməyə qərar vermisiniz.
+pgp_rs_technical = Bu mesajda rəqəmsal imza var, lakin texniki xəta aşkar edildi. Ya mesaj pozulub, ya da başqası tərəfindən dəyişdirilib.
+pgp_rs_unverified = Bu mesajda artıq qəbul etdiyiniz açardan etibarlı rəqəmsal imza var. Lakin açarın həqiqətən göndərənə məxsus olduğunu hələ yoxlamamısınız.
+pgp_rs_verified = Bu mesajda yoxlanılmış açardan etibarlı rəqəmsal imza var.
+pgp_rs_own_key = Bu mesajda şəxsi açarınızdan etibarlı rəqəmsal imza var.
+pgp_rs_signer_id = İmzalayanın açar ID-si: {keyid}
+pgp_rs_decrypt_id = Şifrəni açan açarınızın ID-si: {keyid}
+pgp_rs_enc_none = Mesaj şifrələnməyib
+pgp_rs_enc_none_info = Bu mesaj göndərilməzdən əvvəl şifrələnməyib. İnternet üzərindən şifrələnmədən göndərilən məlumatı ötürülmə zamanı başqaları görə bilər.
+pgp_rs_enc_invalid = Mesajın şifrəsi açıla bilmir
+pgp_rs_enc_invalid_info = Bu mesaj sizə göndərilməzdən əvvəl şifrələnib, lakin onun şifrəsi açıla bilmir.
+pgp_rs_enc_valid = Mesaj şifrələnib
+pgp_rs_enc_valid_info = Bu mesaj sizə göndərilməzdən əvvəl şifrələnib. Şifrələmə mesajın yalnız nəzərdə tutulan alıcılar tərəfindən oxuna bilməsini təmin edir.
+pgp_rs_field = Mesajın təhlükəsizliyi
+pgp_rs_import = OpenPGP açarını idxal et
+pgp_rs_open_to_unlock = Parol ifadəsini daxil etmək üçün mesajı açın.
+pgp_rs_reply_not_quoted = İlkin mesaj şifrələnmişdi, ona görə onun mətni burada sitat gətirilmir.
+pgp_cm_encrypt = Şifrələ
+pgp_cm_sign = Rəqəmsal imzala
+pgp_e2e_title = Başdan-başa şifrələmə
+acct_e2e_button = &Başdan-başa şifrələmə...
+pgp_e2e_none = Bu kimlik üçün OpenPGP istifadə etmə.
+pgp_e2e_disable = Yeni mesajlar üçün şifrələməni söndür
+pgp_e2e_enable = Yeni mesajlar üçün şifrələməni aktiv et
+pgp_e2e_enable_info = Ayrı-ayrı mesajlar üçün şifrələməni söndürə biləcəksiniz.
+pgp_e2e_sign = Şifrələnməmiş mesajları imzala
+pgp_e2e_signing_info = Rəqəmsal imza alıcılara mesajın sizin tərəfinizdən göndərildiyini və məzmununun dəyişdirilmədiyini yoxlamağa imkan verir. Şifrələnmiş mesajlar standart olaraq həmişə imzalanır.
+pgp_e2e_autocrypt = Autocrypt ilə uyğunluq üçün OpenPGP ictimai açar(lar)ını e-poçt başlıqlarında göndər
+pgp_not_set_up = Siz {addr} ünvanından başdan-başa şifrələnmiş mesaj göndərmək üçün qurulmamısınız.
+pgp_cannot_encrypt = Şifrələmək mümkün deyil
+pgp_do_you_accept = Bu açarı rəqəmsal imzaları yoxlamaq və mesajları şifrələmək üçün qəbul edirsiniz?
+pgp_searching = Axtarılır…
+pgp_no_key_found = Göstərilən axtarış meyarlarına uyğun istifadə edilə bilən heç bir açar tapa bilmədik.
+pgp_source_autocrypt = Autocrypt başlığı
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = açar serveri
+pgp_discover = &Açarları onlayn kəşf et
+pgp_cm_attach_key = İctimai açarımı əlavə et
+pgp_e2e_key_label = {address} üçün şəxsi açar
+pgp_e2e_auto = Avtomatik: bu ünvan üçün şəxsi açarınız
+pgp_e2e_no_key = ZBox-da {address} üçün şəxsi OpenPGP açarı yoxdur. Onu Alətlər, OpenPGP açar meneceri bölməsində yaradın.
+pgp_e2e_new_messages = Yeni mesajlar üçün şifrələmə
+pgp_e2e_key_missing = {keyid} açarı tapılmadı
+pgp_missing_keys = Bu alıcıların istifadə edilə bilən, qəbul olunmuş açarı yoxdur:\n\n{addresses}\n\nMesaj şifrələnmiş şəkildə göndərilə bilməz.
+pgp_send_unencrypted = &Şifrələmədən göndər
+pgp_collected_found = Bu alıcılar üçün açarlar onların sizə göndərdiyi poçtda tapıldı:
+pgp_lookup_q = Bu alıcılar üçün açarlar onlayn axtarılsın?\n\n{addresses}\n\nBu, onların ünvanlarını keys.openpgp.org serverinə və öz poçt domenlərinə göndərir.
+pgp_found_online = Onlayn tapılmış açarlar:
+pgp_source = Mənbə: {source}
+pgp_discover_prompt = E-poçt ünvanı daxil edin. ZBox onun OpenPGP açarlarını poçt domeninin Web Key Directory-sində və keys.openpgp.org serverində axtarır.
+pgp_discover_bad = Tam e-poçt ünvanı daxil edin, məsələn name@example.com.
+pgp_keys_unreadable = OpenPGP açarları açıla bilmədi: {error}
+pgp_rs_why_no_key = Bu mesajın şifrəsini açmaq üçün tələb olunan gizli açar mövcud deyil.
+pgp_rs_why_unknown = Bu şifrələnmiş mesajda naməlum problemlər var.
+pgp_rs_hidden_subject = Şifrələnmiş mesaj
+pgp_rs_why_passphrase = Açarınızın parol ifadəsi daxil edilməyib. Onu daxil etmək üçün mesajı yenidən açın.
+pgp_rs_why_unavailable = OpenPGP ZBox-un bu nüsxəsində mövcud deyil.
+pgp_rs_why_fetch = Şifrəsini açmaq üçün mesaj serverdən alına bilmədi. Bir də cəhd etmək üçün onu yenidən açın.
+pgp_rs_import_hint = Onu oxumaq üçün bu mesajın gizli açarını ZBox-a idxal edin.
+
+[errors]
+language_restart_failed = ZBox özünü yenidən başlada bilmədi:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} üçün poçt müştərisi açıla bilmədi.
+
+wizard_test_failed = Bağlantı alınmadı:\n\n{error}
+
+contacts_import_unreadable = Həmin fayl oxuna bilmədi.\n\n{error}
+contacts_export_unwritable = Həmin fayl yazıla bilmədi.\n\n{error}
+
+attach_unreadable = {path} əlavəsi oxuna bilmədi:\n{error}
+send_failed = Mesaj göndərilə bilmədi.\n\n{error}
+draft_attach_unreadable = {path} əlavəsi oxuna bilmədi:\n{error}\n\nQaralama saxlanılmadı.
+draft_save_failed = Qaralama saxlanıla bilmədi.\n\n{error}
+
+clipboard_unavailable = Mübadilə buferi açıla bilmədi.
+open_link_failed = Brauzeriniz bunun üçün açıla bilmədi:\n{url}
+
+master_password_mismatch = İki yeni əsas parol qutusu uyğun gəlmir.
+master_password_required = Əsas parol daxil edin və ya Ləğv et düyməsini basın.
+master_password_not_set = Əsas parol təyin edilə bilmədi: {error}
+master_password_not_here = Əsas parol buradan dəyişdirilə bilməz.
+
+attachment_save_failed = Əlavə saxlanıla bilmədi.\n\n{error}
+attachments_save_failed = Əlavələr saxlanıla bilmədi.\n\n{error}
+print_failed = Mesaj çap edilə bilmədi. Printerin qurulduğunu yoxlayın.
+print_preview_failed = Çapa önbaxış açıla bilmədi. Printerin qurulduğunu yoxlayın.
+
+related_search_failed = Əlaqəli mesajlar axtarıla bilmədi.\n\n{error}
+search_failed = Axtarış alınmadı.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox öz konfiqurasiya qovluğunu tapa bilmədi, ona görə kilid açma üsulları buradan idarə edilə bilməz.
+shortcut_no_folder = ZBox öz qovluğunu müəyyən edə bilmədi, ona görə buradan qısayol yaradıla bilməz.
+shortcut_failed_settings = İş masası qısayolu yaradıla bilmədi:\n\n{error}
+
+unlock_method_failed = {what} işləmədi.\n\n{error}
+unlock_check_failed = Əsas parol yoxlana bilmədi.\n\n{error}
+unlock_password_wrong = Bu əsas parol düzgün deyil.
+unlock_add_failed = {what} əlavə edilə bilmədi.\n\n{error}
+unlock_passkey_setup_failed = Giriş açarı bu kompüterdə qurula bilmədi, ona görə heç nə dəyişdirilmədi.\n\n{error}
+unlock_method_test_failed = Bu üsul işləmədi.\n\n{error}
+
+account_list_unreadable = ZBox hesab siyahınızı aça bilmədi.\n\n{error}\n\nHeç bir hesab yüklənmədi və fayl dəyişdirilmədi, ona görə heç nə itirilməyib. Oxuna bilənə qədər hesabların əlavə edilməsi, redaktə edilməsi və silinməsindən imtina edilir.
+account_list_no_accounts = ZBox hesab siyahınızı bu sessiyada aça bilmədi ({error}), ona görə seçiləcək hesab yoxdur. Heç nə itirilməyib və heç nə dəyişdirilməyib. ZBox-u bağlayıb yenidən başladın və soruşulanda əsas parolunuzu daxil edin.
+open_message_failed = Mesaj açıla bilmədi.\n\n{error}
+filters_list_failed = {folder} qovluğundakı mesajlar siyahıya alına bilmədi.\n\n{error}
+filters_move_failed = Süzülmüş mesajlar köçürülə bilmədi.\n\n{error}
+cache_clear_failed = Keş təmizlənə bilmədi.\n\n{error}
+folder_create_failed = Qovluq yaradıla bilmədi.\n\n{error}
+folder_rename_failed = Qovluğun adı dəyişdirilə bilmədi.\n\n{error}
+folder_delete_failed = Qovluq silinə bilmədi.\n\n{error}
+folder_subscribe_failed = Qovluğa abunə olmaq mümkün olmadı.\n\n{error}
+folder_unsubscribe_failed = Qovluqdan abunəliyi ləğv etmək mümkün olmadı.\n\n{error}
+saved_open_failed = Fayl açıla bilmədi.\n\n{error}
+saved_parse_failed = Bu fayl e-poçt mesajı kimi təhlil edilə bilmədi.\n\n{error}
+save_file_failed = Fayl saxlanıla bilmədi.\n\n{error}
+save_fetch_failed = Saxlanılacaq mesaj alına bilmədi.\n\n{error}
+empty_trash_failed = Zibil qutusu boşaldıla bilmədi.\n\n{error}
+empty_junk_failed = Spam qovluğu boşaldıla bilmədi.\n\n{error}
+export_write_failed = İxrac faylı yazıla bilmədi.\n\n{error}
+import_read_failed = Bu fayl ZBox ixracı kimi oxuna bilmədi.\n\n{error}
+import_not_export = Bu fayl ZBox ixracına oxşamır.\n\n{error}
+search_open_failed = Bu mesaj açıla bilmədi.
+related_load_failed = Bu mesaj yüklənə bilmədi.\n\n{error}
+reply_load_failed = Cavab veriləcək mesaj yüklənə bilmədi.\n\n{error}
+forward_load_failed = İrəli göndəriləcək mesaj yüklənə bilmədi.\n\n{error}
+action_failed = Bu əməliyyat tamamlana bilmədi.\n\n{error}
+undo_failed = {label} geri alına bilmədi.\n\n{error}
+copy_failed = Mesaj kopyalana bilmədi.\n\n{error}
+delete_failed = Mesaj silinə bilmədi.\n\n{error}
+archive_failed = Mesaj arxivləşdirilə bilmədi.\n\n{error}
+master_password_not_changed = Əsas parol dəyişdirilə bilmədi: {error}
+shortcut_failed_startup = İş masası qısayolu yaradıla bilmədi:\n\n{error}\n\nZBox başlamağa davam edəcək. Sonra Parametrlərdən yenidən cəhd edə bilərsiniz.
+account_locked_action = ZBox %s edə bilmir. Hesab siyahısı bu sessiyada açıla bilmədi (%s) və heç nə dəyişdirilməyib. ZBox-u bağlayıb yenidən başladın və soruşularsa, əsas parolunuzu daxil edin.
+send_tls_mismatch = Mesaj göndərilə bilmədi. Çıxan server şifrələmədən cavab verdi, ona görə çıxan şifrələmə portla uyğun gəlmir. Alətlər, Hesab və kimlik parametrləri bölməsində 587 portu üçün STARTTLS və ya 465 portu üçün SSL/TLS istifadə edin, sonra yenidən göndərin.\n\n{error}
+mark_folder_read_failed = Qovluq oxunmuş kimi işarələnə bilmədi.\n\n{error}
+update_failed = Yeniləmə yüklənə bilmədi, ona görə heç nə dəyişdirilmədi.\n\n{error}
+update_rolled_back = Yeniləmə başlaya bilmədi, ona görə əvvəlki versiya bərpa edildi.
+attachment_open_failed = Əlavə açıla bilmədi.\n\n{error}
+headers_failed = Mesaj başlıqları yüklənə bilmədi.\n\n{error}
+wizard_ms_sign_in_first = Davam etməzdən əvvəl Microsoft ilə daxil olun. Bu səhifədəki iki giriş düyməsindən birini istifadə edin.
+wizard_provider_unsupported = ZBox bu provayderə daxil ola bilmir. Bu səhifədəki qeyd səbəbi izah edir. Geri qayıdıb başqa e-poçt ünvanından istifadə edin və ya ləğv edin.
+acct_ms_sign_in_first = Saxlamazdan əvvəl Microsoft ilə daxil olun və ya giriş üsulu kimi Parol seçin.
+ms_sign_in_again = {account} üçün Microsoft ilə giriş yenidən lazımdır. Hesab və kimlik parametrlərini açın və orada daxil olun.
+graph_pgp_too_large = Bu şifrələnmiş və ya imzalanmış mesaj Microsoft-un belə poçta icazə verdiyi həcmdən, təxminən 3 MB-dan böyükdür. Daha kiçik əlavələr göndərin və ya bu mesaj üçün Şifrələ və Rəqəmsal imzala seçimlərini söndürün.
+empty_trash_all_failed = Bunlar üçün Zibil qutusu boşaldıla bilmədi: {accounts}
+
+[help]

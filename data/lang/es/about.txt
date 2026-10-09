@@ -1,7 +1,7 @@
 ZBox
 Por Harith Alhamdani
 
-ZBox es un cliente de correo electrónico portátil, ágil, seguro y totalmente accesible. Gratuito para uso personal y ligero en recursos del sistema. Se creó para ofrecer a las personas ciegas y con baja visión una alternativa real y completa a las opciones pesadas y lentas que suelen estar disponibles. Por dentro, ZBox funciona con el robusto cliente de correo Himalaya CLI.
+ZBox es un cliente de correo electrónico portátil, ágil, seguro y totalmente accesible. Gratuito para uso personal y ligero en recursos del sistema. Se creó para ofrecer a todas las personas que lo usan, incluidas las personas ciegas y con baja visión, una alternativa real y completa a las opciones pesadas y lentas que suelen estar disponibles. Por dentro, ZBox funciona con el robusto cliente de correo Himalaya CLI.
 
 Privacidad y seguridad
 ZBox incluye un bloqueador de rastreadores y anuncios (activado de forma predeterminada), junto con reglas opcionales de correo no deseado y un comprobador de enlaces de phishing. Para una portabilidad segura, usa la protección con contraseña principal: si la carpeta de la aplicación se copia a otro equipo sin esta contraseña, se bloquea el acceso a sus cuentas vinculadas. Si piensa trasladar ZBox a un equipo nuevo, asegúrese de establecer primero aquí una contraseña principal. También admite llaves de acceso de Windows Hello (huella digital, PIN o reconocimiento facial) y llaves de seguridad de hardware modernas.

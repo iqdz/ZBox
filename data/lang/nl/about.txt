@@ -1,7 +1,7 @@
 ZBox
 Door Harith Alhamdani
 
-ZBox is een draagbaar, vlot, veilig en volledig toegankelijk e-mailprogramma. Gratis voor persoonlijk gebruik en zuinig met systeembronnen. Het is gemaakt om blinde en slechtziende mensen een echt, functierijk alternatief te bieden voor de logge en trage programma's die meestal beschikbaar zijn. Onder de motorkap draait ZBox op het robuuste e-mailprogramma Himalaya CLI.
+ZBox is een draagbaar, vlot, veilig en volledig toegankelijk e-mailprogramma. Gratis voor persoonlijk gebruik en zuinig met systeembronnen. Het is gemaakt om iedereen die het gebruikt, ook blinde en slechtziende mensen, een echt, functierijk alternatief te bieden voor de logge en trage programma's die meestal beschikbaar zijn. Onder de motorkap draait ZBox op het robuuste e-mailprogramma Himalaya CLI.
 
 Privacy en beveiliging
 ZBox heeft een ingebouwde blokkering van trackers en advertenties (standaard ingeschakeld), plus optionele regels voor ongewenste e-mail en controle op phishingkoppelingen. Voor veilig draagbaar gebruik werkt het met bescherming door een hoofdwachtwoord: als de app-map zonder dit wachtwoord naar een andere computer wordt gekopieerd, is de toegang tot uw gekoppelde accounts geblokkeerd. Als u ZBox naar een nieuw apparaat wilt verhuizen, stelt u hier eerst een hoofdwachtwoord in. Daarnaast ondersteunt het toegangssleutels van Windows Hello (vingerafdruk, pincode of gezichtsherkenning) en moderne hardwarebeveiligingssleutels.

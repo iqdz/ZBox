@@ -1,0 +1,103 @@
+Gabaɗaya
+F6: Canja hankali tsakanin sassan taga
+Ctrl+Tab: Shafi na gaba
+Ctrl+Shift+Tab: Shafi na baya
+Ctrl+W ko Ctrl+F4: Rufe shafin yanzu
+Escape: Naɗe zaren da aka buɗe idan jerin saƙonni yana da hankali kuma an buɗe ɗaya; in ba haka ba rufe shafin yanzu (saƙo, saƙon da aka adana, ko saƙon da ba a aika ba da ake rubutawa -- yana tambaya tukuna idan akwai canje-canje da ba a adana ba)
+Maɓallin manhaja ko Shift+F10: Buɗe menu na yanayi a kan abin jeri ko itace mai hankali
+F1: Gajerun hanyoyin madannai, wannan shafi
+Ctrl+Shift+Q: Fita -- koyaushe yana fita daga ZBox da gaske, ko da "Rufe zuwa tire na tsarin" yana kunne a Saituna (maɓallin Rufe na taga, Alt+F4 da Ctrl+W a shafin Wasiƙa suna ɓoyewa a tire maimakon fita idan wannan saiti yana kunne; Fita na alamar tire shi ma koyaushe yana fita da gaske)
+Ctrl+Shift+Delete: Share ma'ajiyar saƙonnin rashin intanet -- kwafin ZBox na cikin gida kawai, babu komai a kowace sabar (haka kuma maɓalli ne a Kayan Aiki > Saitin tsabtace ma'ajiyar wucin gadi)
+
+Wasiƙa
+Ctrl+N: Sabon saƙo
+Ctrl+Shift+N: Sabon asusun imel
+F5: Karɓi sabuwar wasiƙa don asusun yanzu
+Shift+F5: Karɓi sabuwar wasiƙa don dukkan asusun
+Ctrl+Shift+J: Tsallaka zuwa jerin saƙonnin Akwatin Saƙo
+Ctrl+Y: Je zuwa jerin manyan fayiloli
+Enter a kan asusu ko babban fayil da aka rufe a jerin manyan fayiloli: buɗe shi, kamar Kibiya ta dama
+Ctrl+Shift+B: Littafin adireshi
+Ctrl+Shift+F: Nemo saƙonni
+Ctrl+Shift+T: Nuna saƙonni masu alaƙa
+
+Jerin saƙonni
+Delete, Shift+Delete, Ajiye a ma'aji, Saka/Cire tauraro, Yi alama a matsayin saƙon banza/ba saƙon banza ba, Mayar zuwa da Kwafa zuwa duk suna shafar kowane saƙo a cikin zare idan aka yi amfani da su a kan layin zare da aka NAƊE -- buɗe zaren tukuna (Kibiya ta dama ko Enter/Space) don yin aiki a kan saƙo ɗaya a cikinsa maimakon haka
+Ctrl+A: Zaɓi dukkan saƙonni
+Ctrl+Shift+L: Loda ƙarin saƙonni
+Delete: Mayar da saƙonnin da aka zaɓa cikin shara
+Shift+Delete: Share saƙonnin da aka zaɓa har abada
+Ctrl+Z: Warware Sharewa, Ajiye a ma'aji, Yi alama a matsayin saƙon banza ko Yi alama a matsayin ba saƙon banza ba na ƙarshe
+S: Saka/cire tauraro a saƙonnin da aka zaɓa
+A: Ajiye saƙonnin da aka zaɓa a ma'aji
+J: Yi wa saƙonnin da aka zaɓa alama a matsayin saƙon banza
+Shift+J: Yi wa saƙonnin da aka zaɓa alama a matsayin ba saƙon banza ba
+W: Sa ido kan zare -- sauya ko ana sa ido kan zaren da zaɓin ke ciki (haka kuma menu na Saƙo da danna dama)
+K: Yi watsi da zare -- sauya ko ana yin watsi da wannan zaren (haka kuma menu na Saƙo da danna dama)
+M: Mayar da saƙonnin da aka zaɓa -- yana buɗe menu na Mayar zuwa na manyan fayiloli
+Shift+M: Mayar da saƙonnin da aka zaɓa ta hanyar rubuta ɓangaren sunan babban fayil
+C: Kwafi saƙonnin da aka zaɓa -- yana buɗe menu na Kwafa zuwa na manyan fayiloli
+S, A, J, W da K da ke sama suna kunne a asali kuma ana iya kashe su a Saituna (in ba haka ba suna da fifiko a kan tsallake-tsallake na harafin farko na jerin saƙonni)
+M, Shift+M da C da ke sama suna bin saiti ɗaya
+Enter ko Space a kan zaren da aka naɗe: yana buɗe sabon saƙon da ba a karanta ba a cikin wannan zaren (sabon saƙo idan an karanta dukkan zaren) a matsayin saƙo ɗaya, a shafi ɗaya -- sannan Ctrl+Shift+Page Down da Ctrl+Shift+Page Up suna zagayawa sauran zaren ba tare da buɗe saƙo na biyu ba. A kan saƙo na yau da kullum, yana buɗe shi kamar yadda aka saba
+Kibiya ta dama a kan zaren da aka naɗe: yana bayyana saƙonninsa a matsayin jeri, ba tare da buɗe ko ɗaya ba -- buɗe ɗaya bayan ɗaya daga can da Enter ko Space nasa
+Ctrl+Shift+O: Buɗe saƙo a cikin tattaunawa -- dukkan zaren a shafi ɗaya, a matsayin jerin saƙonninsa da jikin wanda aka zaɓa a ƙasa. Yi amfani da kibiyoyi a jerin don karanta su ɗaya bayan ɗaya; Enter a kan layi yana buɗe wannan saƙo ɗaya a cikakken shafinsa. Suna da maɓalli iri ɗaya da umarnin Thunderbird da kansa
+Kibiya ta hagu: naɗe zaren da zaɓin ke ciki yanzu
+*: Buɗe dukkan zaren (haka kuma Duba > Zaren saƙo); \: Naɗe dukkan zaren (haka kuma Duba > Zaren saƙo)
+Duba > Zaren saƙo > Duka / Zaren da ake sa ido / Zaren da aka yi watsi da su yana tace waɗanne zaren ake nunawa -- komawa Duka koyaushe yana dawo da kowane saƙo; babu abin da ake cirewa daga babban fayil ta wannan
+
+Saƙon da aka buɗe
+Alt+A: Ajiye wannan saƙon a ma'aji -- kawai idan jikinsa (Rubutu ko HTML) yana da hankalin madannai; a wani wuri Alt+A yana riƙe ma'anarsa ta buɗe menu na Asusun
+Ctrl+R: Amsa
+Ctrl+Shift+R: Amsa ga Kowa
+Ctrl+L: Tura
+Ctrl+Delete ko Ctrl+D: Mayar da wannan saƙon cikin shara. Mai karanta allo yakan ɗauki Delete na yau da kullum idan saƙon HTML yana da hankali; Shift+Delete yana share har abada
+Ctrl+Shift+Page Down: Saƙo na gaba a wannan zaren; Ctrl+Shift+Page Up: na baya. Yana maye gurbin shafin yanzu maimakon buɗe wani, don haka saƙo ɗaya ne kawai ake buɗewa a kowane lokaci. A saƙo na ƙarshe (ko na farko, idan ana hawa sama) yana faɗa kuma yana tambaya; danna wannan maɓallin sake yana rufe saƙon kuma yana kawo ƙarshen zaren, yana komawa jerin saƙonni. (Ana barin Ctrl+Page Up/Down -- waɗannan suna canza shafuka)
+Ctrl+B: Canza yadda ake duba saƙo (Rubutu/HTML)
+Ctrl+P: Buga
+Ctrl+Shift+P: Duba kafin Bugawa
+Ctrl+S: Adana saƙo a matsayin
+Ctrl+U: Sanar da sunan mai aikawa da adireshinsa
+Ctrl+Shift+U: Sanar da mai aikawa kuma kwafi adireshin
+Ctrl+Shift+I: Nuna abun ciki na nesa a wannan saƙon
+Ctrl+Shift+=: Ƙara girman rubutun saƙo
+Ctrl+Shift+-: Rage girman rubutun saƙo
+Ctrl+Shift+0: Mayar da girman rubutun saƙo
+
+Rubuta saƙo
+Ctrl+Enter ko Alt+S: Aika
+Ctrl+S: Adana daftari
+Ctrl+Shift+A: Haɗa fayil
+Ctrl+Shift+S: Saka sa hannun asusun da ke Daga
+Ctrl+Shift+V: Liƙa a matsayin ƙaulin magana
+Ctrl+Shift+W: Yawan kalmomi
+Ctrl+Shift+P: Duba saƙon yadda za a aika shi
+Escape, Ctrl+W ko Ctrl+F4: Rufe shafin rubutu -- yana tambaya tukuna idan akwai abin da ba a adana ba, yana ba da Adana daftari, Jefar ko Ci gaba da gyarawa
+Kowane umarni da ke ƙasa yana kuma a menu na Rubuta, wanda Alt+C ke buɗewa ko da hankali yana cikin jikin saƙo
+
+Tsarin rubutu, yayin rubutu
+Ctrl+B: Kauri
+Ctrl+I: Rubutu mai karkata
+Ctrl+Shift+X: Layi a tsakiya
+Ctrl+Shift+8: Jerin digo-digo
+Ctrl+Shift+7: Jerin lambobi
+Ctrl+Shift+9: Ƙaulin magana
+Ctrl+Shift+6: Lamba
+Ctrl+Alt+1: Kan labari
+Ctrl+K: Saka mahaɗi
+Ctrl+Shift+K: Faɗi wane tsarin rubutu ke aiki a inda sigina take
+Ctrl+Shift+M: Buɗe menu na Tsari a duk inda hankali yake, har da jikin saƙo
+
+Duba rubutu, yayin rubutu
+Ctrl+Shift+F7: Duba rubutu
+Ctrl+Shift+F9: Je zuwa kuskuren rubutu na gaba
+Ctrl+Shift+F8: Ƙara kalmar da ya tsaya a kanta cikin ƙamus
+
+Maɓalli ɗaya a wurare biyu
+Ctrl+S: Adana daftari yayin rubutu, Adana saƙo a matsayin a saƙon da aka buɗe
+Ctrl+B: Kauri yayin rubutu, canza tsakanin Rubutu da HTML a saƙon da aka buɗe
+Ctrl+Shift+P: Duba kafin aikawa yayin rubutu, Duba kafin Bugawa a saƙon da aka buɗe
+Alt+A: Ajiye a ma'aji, amma kawai idan jikin saƙo yana da hankalin madannai; a wani wuri yana buɗe menu na Asusun
+
+Bincike
+Ctrl+Shift+F12: Binciken gajerun maɓallai -- yana rubuta layi a rajistar gyara kurakurai ga kowace haɗin da aka danna a shafin rubutu, don a iya tabbatar da abin da maɓalli ya isa gare shi da gaske. A kashe yake a asali, kuma wannan maɓalli yana sake kashe shi; ana furta matsayin ta kowace hanya

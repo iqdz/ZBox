@@ -1,0 +1,103 @@
+Ümumi
+F6: Panellər arasında fokusu dövr etdir
+Ctrl+Tab: Növbəti vərəq
+Ctrl+Shift+Tab: Əvvəlki vərəq
+Ctrl+W və ya Ctrl+F4: Cari vərəqi bağla
+Escape: Mesaj siyahısında fokus varsa və açılmış zəncir varsa, onu yığ; əks halda cari vərəqi bağla (mesaj, saxlanılmış mesaj və ya göndərilməmiş yazı -- saxlanılmamış dəyişiklik varsa əvvəlcə soruşur)
+Application düyməsi və ya Shift+F10: Fokuslanmış siyahı və ya ağac elementində kontekst menyusunu aç
+F1: Klaviatura qısayolları, bu səhifə
+Ctrl+Shift+Q: Çıxış -- Parametrlərdə "Sistem trayına bağla" aktiv olsa belə, ZBox-dan həmişə həqiqətən çıxır (həmin parametr aktiv olduqda pəncərənin Bağla düyməsi, Alt+F4 və Poçt vərəqində Ctrl+W çıxmaq əvəzinə trayə gizlədir; tray nişanının öz Çıx elementi də həmişə həqiqətən çıxır)
+Ctrl+Shift+Delete: Oflayn mesaj keşini təmizlə -- yalnız ZBox-un yerli nüsxələri, heç bir serverdə heç nə (həmçinin Alətlər > Keşin təmizlənməsi parametrləri bölməsində düymə kimi)
+
+Poçt
+Ctrl+N: Yeni mesaj
+Ctrl+Shift+N: Yeni e-poçt hesabı
+F5: Cari hesab üçün yeni poçtu al
+Shift+F5: Bütün hesablar üçün yeni poçtu al
+Ctrl+Shift+J: Gələnlər qutusunun mesaj siyahısına keç
+Ctrl+Y: Qovluq siyahısına keç
+Qovluq siyahısında bağlı hesab və ya qovluqda Enter: Right arrow kimi onu aç
+Ctrl+Shift+B: Ünvan kitabçası
+Ctrl+Shift+F: Mesajları axtar
+Ctrl+Shift+T: Əlaqəli mesajları göstər
+
+Mesaj siyahısı
+Delete, Shift+Delete, Arxivləşdir, Ulduzla/Ulduzu götür, Spam/Spam deyil kimi işarələ, Köçür və Kopyala yığılmış zəncir sətrində istifadə edildikdə zəncirdəki hər mesaja tətbiq olunur -- onun içindəki tək mesaja təsir etmək üçün əvvəlcə zənciri açın (Right arrow və ya Enter/Space)
+Ctrl+A: Bütün mesajları seç
+Ctrl+Shift+L: Daha çox mesaj yüklə
+Delete: Mesajı (mesajları) Zibil qutusuna köçür
+Shift+Delete: Mesajı (mesajları) həmişəlik sil
+Ctrl+Z: Sonuncu Sil, Arxivləşdir, Spam kimi işarələ və ya Spam deyil kimi işarələ əməliyyatını geri al
+S: Seçilmiş mesajı (mesajları) ulduzla/ulduzu götür
+A: Seçilmiş mesajı (mesajları) arxivləşdir
+J: Seçilmiş mesajı (mesajları) spam kimi işarələ
+Shift+J: Seçilmiş mesajı (mesajları) spam deyil kimi işarələ
+W: Zənciri izlə -- seçimin daxil olduğu zəncirin İzlənilən olub-olmamasını dəyişir (həmçinin Mesaj menyusunda və sağ klikdə)
+K: Zənciri nəzərə alma -- həmin zəncirin Nəzərə alınmayan olub-olmamasını dəyişir (həmçinin Mesaj menyusunda və sağ klikdə)
+M: Seçilmiş mesajı (mesajları) köçür -- qovluqların Köçür menyusunu açır
+Shift+M: Seçilmiş mesajı (mesajları) qovluq adının bir hissəsini yazmaqla köçür
+C: Seçilmiş mesajı (mesajları) kopyala -- qovluqların Kopyala menyusunu açır
+Yuxarıdakı S, A, J, W və K standart olaraq aktivdir və Parametrlərdə söndürülə bilər (əks halda onlar mesaj siyahısının öz ilk hərf üzrə naviqasiyasından üstün tutulur)
+Yuxarıdakı M, Shift+M və C eyni parametrə tabedir
+Yığılmış zəncirdə Enter və ya Space: həmin zəncirdəki ən yeni oxunmamış mesajı (bütün zəncir oxunmuşdursa, ən yeni mesajı) tək mesaj kimi, bir vərəqdə açır -- sonra Ctrl+Shift+Page Down və Ctrl+Shift+Page Up ikinci mesaj açmadan zəncirin qalan hissəsini vərəqləyir. Adi mesajda onu həmişəki kimi açır
+Yığılmış zəncirdə Right arrow: heç birini açmadan mesajlarını siyahı kimi göstərir -- oradan hər birini öz Enter və ya Space düyməsi ilə birbaşa açın
+Ctrl+Shift+O: Mesajı söhbətdə aç -- bütün zəncir bir vərəqdə, mesajlarının siyahısı kimi, seçilmişin mətni isə altda. Onları bir-bir oxumaq üçün siyahı üzrə ox düymələri ilə keçin; sətirdə Enter həmin tək mesajı öz tam vərəqində açır. Thunderbird-in öz əmri ilə eyni ad və düymə
+Left arrow: seçimin hazırda daxilində olduğu zənciri yığ
+*: Bütün zəncirləri aç (həmçinin Görünüş > Zəncirlər); \: Bütün zəncirləri yığ (həmçinin Görünüş > Zəncirlər)
+Görünüş > Zəncirlər > Hamısı / İzlənilən zəncirlər / Nəzərə alınmayan zəncirlər hansı zəncirlərin göstərildiyini süzür -- Hamısına qayıtmaq həmişə hər mesajı geri gətirir; bununla qovluqdan heç nə silinmir
+
+Açıq mesaj
+Alt+A: Bu mesajı arxivləşdir -- yalnız onun mətni (Mətn və ya HTML) həqiqətən klaviatura fokusundadırsa; başqa yerdə Alt+A Hesablar menyusunu açmaq kimi adi mənasını saxlayır
+Ctrl+R: Cavab ver
+Ctrl+Shift+R: Hamısına cavab ver
+Ctrl+L: İrəli göndər
+Ctrl+Delete və ya Ctrl+D: Bu mesajı Zibil qutusuna köçür. HTML mesaj fokusda olarkən sadə Delete çox vaxt ekran oxuyucusu tərəfindən tutulur; Shift+Delete həmişəlik silir
+Ctrl+Shift+Page Down: Bu zəncirdə növbəti mesaj; Ctrl+Shift+Page Up: əvvəlki. Başqa vərəq açmaq əvəzinə cari vərəqi əvəz edir, ona görə həmişə yalnız bir mesaj açıq olur. Sonuncu mesajda (və ya yuxarı gedərkən birincidə) bunu bildirir və soruşur; eyni düyməni yenidən basmaq mesajı bağlayır və zənciri bitirir, mesaj siyahısına qayıdır. (Ctrl+Page Up/Down toxunulmaz saxlanılır -- onlar vərəqləri dəyişir)
+Ctrl+B: Mesaj görünüşünü dəyiş (Mətn/HTML)
+Ctrl+P: Çap et
+Ctrl+Shift+P: Çapa önbaxış
+Ctrl+S: Mesajı fərqli saxla
+Ctrl+U: Göndərənin adını və ünvanını səsləndir
+Ctrl+Shift+U: Göndərəni səsləndir və ünvanı kopyala
+Ctrl+Shift+I: Bu mesajda uzaq məzmunu göstər
+Ctrl+Shift+=: Mesaj şriftinin ölçüsünü artır
+Ctrl+Shift+-: Mesaj şriftinin ölçüsünü azalt
+Ctrl+Shift+0: Mesaj şriftinin ölçüsünü sıfırla
+
+Mesaj yazmaq
+Ctrl+Enter və ya Alt+S: Göndər
+Ctrl+S: Qaralamanı saxla
+Ctrl+Shift+A: Fayl əlavə et
+Ctrl+Shift+S: Kimdən sahəsindəki hesabın imzasını əlavə et
+Ctrl+Shift+V: Sitat kimi yapışdır
+Ctrl+Shift+W: Söz sayı
+Ctrl+Shift+P: Mesajın göndəriləcəyi şəkildə önbaxışı
+Escape, Ctrl+W və ya Ctrl+F4: Yazı vərəqini bağla -- nəsə saxlanılmayıbsa əvvəlcə soruşur, Qaralamanı saxla, Ləğv et və ya Redaktəyə davam et təklif edir
+Aşağıdakı hər əmr Yazı menyusunda da var, onu Alt+C mesajın mətninin içində fokus olduqda belə açır
+
+Yazarkən formatlama
+Ctrl+B: Qalın
+Ctrl+I: Kursiv
+Ctrl+Shift+X: Üstündən xətt çəkilmiş
+Ctrl+Shift+8: Nişanlı siyahı
+Ctrl+Shift+7: Nömrələnmiş siyahı
+Ctrl+Shift+9: Sitat
+Ctrl+Shift+6: Kod
+Ctrl+Alt+1: Başlıq
+Ctrl+K: Keçid əlavə et
+Ctrl+Shift+K: Kursorun olduğu yerdə hansı formatın qüvvədə olduğunu de
+Ctrl+Shift+M: Fokus harada olursa olsun, o cümlədən mesajın mətnində, Format menyusunu aç
+
+Yazarkən orfoqrafiya
+Ctrl+Shift+F7: Orfoqrafiyanı yoxla
+Ctrl+Shift+F9: Növbəti xətaya keç
+Ctrl+Shift+F8: Dayandığı sözü lüğətə əlavə et
+
+Eyni düymə iki yerdə
+Ctrl+S: Yazarkən Qaralamanı saxla, açıq mesajda Mesajı fərqli saxla
+Ctrl+B: Yazarkən Qalın, açıq mesajda Mətn və HTML arasında keçid
+Ctrl+Shift+P: Yazarkən Önbaxış, açıq mesajda Çapa önbaxış
+Alt+A: Arxivləşdir, lakin yalnız mesajın mətni klaviatura fokusundadırsa; başqa yerdə Hesablar menyusunu açır
+
+Diaqnostika
+Ctrl+Shift+F12: Qısayol diaqnostikası -- yazı vərəqində basılan hər birləşmə üçün sazlama jurnalına bir sətir yazır ki, düymənin nəyə çatdığı sübut edilə bilsin. Standart olaraq söndürülüb və eyni düymə onu yenidən söndürür; vəziyyət hər iki halda səsləndirilir

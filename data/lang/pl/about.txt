@@ -1,7 +1,7 @@
 ZBox
 Autor: Harith Alhamdani
 
-ZBox to przenośny, szybko reagujący, bezpieczny i w pełni dostępny program pocztowy. Darmowy do użytku osobistego i oszczędny dla zasobów systemu. Powstał, aby dać osobom niewidomym i słabowidzącym prawdziwą, bogatą w funkcje alternatywę dla ciężkich i powolnych rozwiązań, które zwykle są dostępne. W tle ZBox korzysta z solidnego programu pocztowego Himalaya CLI.
+ZBox to przenośny, szybko reagujący, bezpieczny i w pełni dostępny program pocztowy. Darmowy do użytku osobistego i oszczędny dla zasobów systemu. Powstał, aby dać wszystkim, którzy z niego korzystają, także osobom niewidomym i słabowidzącym, prawdziwą, bogatą w funkcje alternatywę dla ciężkich i powolnych rozwiązań, które zwykle są dostępne. W tle ZBox korzysta z solidnego programu pocztowego Himalaya CLI.
 
 Prywatność i bezpieczeństwo
 ZBox ma blokadę elementów śledzących i reklam (domyślnie włączoną), a także opcjonalne reguły niechcianej poczty i sprawdzanie odnośników phishingowych. Dla bezpiecznej przenośności używa ochrony hasłem głównym: jeśli folder aplikacji zostanie skopiowany na inny komputer bez tego hasła, dostęp do połączonych kont zostanie zablokowany. Jeśli planujesz przenieść ZBox na nowy komputer, najpierw ustaw tutaj hasło główne. Obsługuje też klucze dostępu Windows Hello (odcisk palca, PIN lub rozpoznawanie twarzy) oraz nowoczesne sprzętowe klucze bezpieczeństwa.

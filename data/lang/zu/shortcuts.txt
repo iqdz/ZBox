@@ -1,0 +1,103 @@
+Okujwayelekile
+F6: Zungezisa ifokhasi phakathi kwamaphaneli
+Ctrl+Tab: Ithebhu elandelayo
+Ctrl+Shift+Tab: Ithebhu edlule
+Ctrl+W noma Ctrl+F4: Vala ithebhu yamanje
+Escape: Goqa intambo evuliwe uma uhlu lwemilayezo lunefokhasi futhi eyodwa ivuliwe; ngaphandle kwalokho vala ithebhu yamanje (umlayezo, umlayezo olondoloziwe, noma okubhalwe okungathunyelwanga -- kubuza kuqala uma kunezinguquko ezingalondolozwanga)
+Ukhiye we-Application noma Shift+F10: Vula imenyu yokuqukethwe kuntweni yohlu noma yesihlahla enefokhasi
+F1: Izinqamuleli zekhibhodi, leli khasi
+Ctrl+Shift+Q: Phuma -- njalo ivala i-ZBox ngempela, noma "Vala uye endaweni yezaziso" ivuliwe ku-Amasethingi (inkinobho Yokuvala yewindi, u-Alt+F4, no-Ctrl+W kuthebhu Yeposi bafihla endaweni yezaziso esikhundleni sokuphuma uma leso sethingi sivuliwe; nento ethi Phuma yesithonjana sendawo yezaziso uqobo njalo iphuma ngempela)
+Ctrl+Shift+Delete: Susa i-cache yemilayezo ye-offline -- amakhophi endaweni e-ZBox kuphela, akukho lutho kunoma iyiphi iseva (futhi inkinobho ku-Amathuluzi > Ukumisa ukuhlanza i-cache)
+
+Iposi
+Ctrl+N: Umlayezo omusha
+Ctrl+Shift+N: I-akhawunti entsha ye-imeyili
+F5: Thola iposi elisha le-akhawunti yamanje
+Shift+F5: Thola iposi elisha lawo wonke ama-akhawunti
+Ctrl+Shift+J: Gxumela ohlwini lwemilayezo yokungenayo
+Ctrl+Y: Iya ohlwini lwamafolda
+Enter ku-akhawunti noma ifolda evaliwe ohlwini lwamafolda: yivule, njenge-Right arrow
+Ctrl+Shift+B: Incwadi yamakheli
+Ctrl+Shift+F: Sesha imilayezo
+Ctrl+Shift+T: Khombisa imilayezo ehlobene
+
+Uhlu lwemilayezo
+U-Delete, Shift+Delete, Gcina, Maka ngenkanyezi/Susa inkanyezi, Maka njengokungafuneki/Njengokufunekayo, Hambisa ku- no-Kopisha ku- konke kusebenza emilayezweni yonke ekuntambo uma kusetshenziswa emgqeni wentambo OGOQIWE -- vula intambo kuqala (Right arrow noma Enter/Space) ukuze wenze ngomlayezo owodwa ngaphakathi kwayo
+Ctrl+A: Khetha yonke imilayezo
+Ctrl+Shift+L: Layisha imilayezo eminye
+Delete: Hambisa imilayezo kudoti
+Shift+Delete: Susa imilayezo unomphela
+Ctrl+Z: Hlehlisa u-Susa, Gcina, Maka njengokungafuneki noma Maka njengokufunekayo wokugcina
+S: Maka ngenkanyezi/susa inkanyezi emilayezweni ekhethiwe
+A: Gcina imilayezo ekhethiwe
+J: Maka imilayezo ekhethiwe njengokungafuneki
+Shift+J: Maka imilayezo ekhethiwe njengokufunekayo
+W: Bheka intambo -- shintsha ukuthi intambo okuyingxenye yayo ukukhetha iyabhekwa yini (nakumenyu Yomlayezo nokuchofoza kwesokudla)
+K: Ziba intambo -- shintsha ukuthi leyo ntambo iyazibwa yini (nakumenyu Yomlayezo nokuchofoza kwesokudla)
+M: Hambisa imilayezo ekhethiwe -- ivula imenyu ethi Hambisa ku- yamafolda
+Shift+M: Hambisa imilayezo ekhethiwe ngokuthayipha ingxenye yegama lefolda
+C: Kopisha imilayezo ekhethiwe -- ivula imenyu ethi Kopisha ku- yamafolda
+U-S, A, J, W no-K abangenhla bavuliwe ngokuzenzakalelayo futhi bangavalwa ku-Amasethingi (bathola ukuza kuqala kunokuhamba kohlu lwemilayezo ngohlamvu lokuqala)
+U-M, Shift+M no-C abangenhla balandela isethingi esifanayo
+Enter noma Space entambeni egoqiwe: ivula umlayezo omusha ongafundiwe kule ntambo (umlayezo omusha uma yonke intambo ifundiwe) njengomlayezo owodwa, kuthebhu eyodwa -- bese u-Ctrl+Shift+Page Down no-Ctrl+Shift+Page Up bedlulisa ingxenye esele yentambo ngaphandle kokuvula umlayezo wesibili. Emlayezweni ovamile, uyivula njengokujwayelekile
+Right arrow entambeni egoqiwe: ikhombisa imilayezo yayo njengohlu, ngaphandle kokuvula noma yimuphi -- vula owodwa ngesikhathi kusukela lapho ngo-Enter noma Space wawo
+Ctrl+Shift+O: Vula umlayezo embhulweni -- yonke intambo kuthebhu eyodwa, njengohlu lwemilayezo yayo nomzimba wokhethiwe ngaphansi. Hamba ngemicibisholo ohlwini ukuze uzifunde ngazinye; u-Enter emgqeni uvula lowo mlayezo owodwa kuthebhu yawo egcwele. Igama nokhiye ofanayo nomyalo we-Thunderbird uqobo
+Left arrow: goqa intambo lapho ukukhetha kuseyingxenye yayo
+*: Vula zonke izintambo (nango-Buka > Izintambo); \: Goqa zonke izintambo (nango-Buka > Izintambo)
+U-Buka > Izintambo > Zonke / Izintambo ezibhekiwe / Izintambo ezizibiwe uhlunga ukuthi iziphi izintambo ezikhonjiswayo -- ukubuyela ku-Zonke kuhlala kubuyisa yonke imilayezo; akukho okususwa efolda ngalokhu
+
+Umlayezo ovuliwe
+Alt+A: Gcina lo mlayezo -- kuphela uma umzimba wawo (Umbhalo noma i-HTML) unefokhasi yekhibhodi ngempela; kwenye indawo u-Alt+A ugcina incazelo yawo evamile yokuvula imenyu ethi Ama-akhawunti
+Ctrl+R: Phendula
+Ctrl+Shift+R: Phendula bonke
+Ctrl+L: Dlulisela
+Ctrl+Delete noma Ctrl+D: Hambisa lo mlayezo kudoti. U-Delete ovamile uvame ukuthathwa ngumfundi wesikrini ngenkathi umlayezo we-HTML unefokhasi; u-Shift+Delete usula unomphela
+Ctrl+Shift+Page Down: Umlayezo olandelayo kule ntambo; Ctrl+Shift+Page Up: odlule. Ushintsha ithebhu yamanje esikhundleni sokuvula enye, ngakho umlayezo owodwa kuphela uhlala uvuliwe. Emlayezweni wokugcina (noma wokuqala, uma ukhuphuka) uyasho futhi uyabuza; ukucindezela ukhiye ofanayo futhi kuvala umlayezo futhi kuqede intambo, kubuyela ohlwini lwemilayezo. (U-Ctrl+Page Up/Down uyashiywa -- lawo ashintsha amathebhu)
+Ctrl+B: Shintsha umbono womlayezo (Umbhalo/HTML)
+Ctrl+P: Phrinta
+Ctrl+Shift+P: Ukubuka kuqala kokuphrinta
+Ctrl+S: Londoloza umlayezo njenge
+Ctrl+U: Memezela igama nekheli lomthumeli
+Ctrl+Shift+U: Memezela umthumeli bese ukopisha ikheli
+Ctrl+Shift+I: Khombisa okuqukethwe okukude kulo mlayezo
+Ctrl+Shift+=: Khulisa usayizi wohlamvu lomlayezo
+Ctrl+Shift+-: Nciphisa usayizi wohlamvu lomlayezo
+Ctrl+Shift+0: Setha kabusha usayizi wohlamvu lomlayezo
+
+Ukubhala umlayezo
+Ctrl+Enter noma Alt+S: Thumela
+Ctrl+S: Londoloza idrafti
+Ctrl+Shift+A: Namathisela ifayela
+Ctrl+Shift+S: Faka isiginesha ye-akhawunti ku-Kusuka ku-
+Ctrl+Shift+V: Namathisela njengesicaphuna
+Ctrl+Shift+W: Inani lamagama
+Ctrl+Shift+P: Buka kuqala umlayezo njengoba uzothunyelwa
+Escape, Ctrl+W noma Ctrl+F4: Vala ithebhu yokubhala -- ibuza kuqala uma kukhona okungalondolozwanga, inikeza u-Londoloza idrafti, Lahla noma Qhubeka uhlela
+Umyalo ngamunye ongezansi usemenyu ethi Bhala, evulwa ngu-Alt+C noma ifokhasi ingaphakathi komzimba womlayezo
+
+Ukufomethwa, uma ubhala
+Ctrl+B: Okugqamile
+Ctrl+I: Okuthambamele
+Ctrl+Shift+X: Okudwetshiwe
+Ctrl+Shift+8: Uhlu olunamachashazi
+Ctrl+Shift+7: Uhlu olunamanani
+Ctrl+Shift+9: Isicaphuna
+Ctrl+Shift+6: Ikhodi
+Ctrl+Alt+1: Isihloko
+Ctrl+K: Faka isixhumanisi
+Ctrl+Shift+K: Sho ukuthi iyiphi ifomethi esebenzayo lapho ikhesa lise khona
+Ctrl+Shift+M: Vula imenyu ethi Ifomethi noma yikuphi lapho ifokhasi ikhona, kuhlanganise nomzimba womlayezo
+
+Ukupela, uma ubhala
+Ctrl+Shift+F7: Hlola ukupela
+Ctrl+Shift+F9: Iya kuphutha lokupela elilandelayo
+Ctrl+Shift+F8: Engeza igama elimiswe kulo esichazamazwini
+
+Ukhiye ofanayo ezindaweni ezimbili
+Ctrl+S: Londoloza idrafti uma ubhala, Londoloza umlayezo njenge emlayezweni ovuliwe
+Ctrl+B: Okugqamile uma ubhala, shintsha phakathi kombhalo ne-HTML emlayezweni ovuliwe
+Ctrl+Shift+P: Ukubuka kuqala uma ubhala, Ukubuka kuqala kokuphrinta emlayezweni ovuliwe
+Alt+A: Gcina, kodwa kuphela uma umzimba womlayezo unefokhasi yekhibhodi; kwenye indawo uvula imenyu ethi Ama-akhawunti
+
+Ukuhlolwa
+Ctrl+Shift+F12: Ukuhlolwa kwamakhiye esinqamuleli -- kubhala umugqa kurekhodi lokususa amaphutha ngenhlanganisela ngayinye eshaywe kuthebhu yokubhala, ukuze kufakazelwe ukuthi ukhiye ufinyelele kuphi. Kuvaliwe ngokuzenzakalelayo, futhi ukhiye ofanayo uyakuvala futhi; isimo siyashiwo kuzo zombili izimo

@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = தமிழ்
+code = ta
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = செய்தி அனுப்பப்பட்டது.
+draft_saved = வரைவு சேமிக்கப்பட்டது.
+signature_inserted = கையொப்பம் செருகப்பட்டது.
+signature_none = இந்தக் கணக்கில் கையொப்பம் இல்லை.
+signature_saved = கையொப்பம் சேமிக்கப்பட்டது.
+signature_not_saved = கையொப்பம் சேமிக்கப்படவில்லை.
+pasted_as_quotation = மேற்கோளாக ஒட்டப்பட்டது.
+clipboard_empty = கிளிப்போர்டில் எதுவும் இல்லை.
+word_count = {words} சொற்கள், {characters} எழுத்துகள்.
+report_copied = அறிக்கை நகலெடுக்கப்பட்டது.
+compose_tab_needed = அந்தக் கட்டளைக்கு எழுதும் தாவல் தேவை.
+attach_file_instead = இழுத்து விட்ட கோப்புகள் செய்தி உரையில் சேர்க்கப்படுவதில்லை. ஒன்றை அனுப்ப கோப்பை இணை என்பதைப் பயன்படுத்தவும்.
+
+# Formatting in the message body
+formatting_here = இங்கு வடிவமைப்பு: {formatting}.
+no_formatting_here = இங்கு வடிவமைப்பு இல்லை, எளிய உரை.
+
+# Spelling
+nothing_to_check = சரிபார்க்க எதுவும் இல்லை.
+no_misspellings = எழுத்துப் பிழைகள் இல்லை.
+spelling_dictionary_unavailable = எழுத்துப்பிழை அகராதி கிடைக்கவில்லை.
+next_misspelling_first = முதலில் அடுத்த எழுத்துப் பிழையைப் பயன்படுத்தவும்.
+word_added = {word} அகராதியில் சேர்க்கப்பட்டது.
+word_not_added = {word} சேர்க்க முடியவில்லை.
+corrections_applied_one = 1 திருத்தம் பயன்படுத்தப்பட்டது.
+corrections_applied_many = {count} திருத்தங்கள் பயன்படுத்தப்பட்டன.
+corrections_applied_partly = {total} இல் {applied} திருத்தங்கள் பயன்படுத்தப்பட்டன. மீதமுள்ளவை மறுக்கப்பட்டன; பதிவைப் பார்க்கவும்.
+occurrences_replaced_one = 1 இடம் மாற்றப்பட்டது.
+occurrences_replaced_many = {count} இடங்கள் மாற்றப்பட்டன.
+
+# Reading mail
+message_did_not_open = செய்தி திறக்கவில்லை. சேவையகம் பதிலளிக்கவில்லை. மீண்டும் முயல Enter அழுத்தவும்.
+thread_open = இந்த இழையில் {messages}. மூட மீண்டும் அழுத்தவும்.
+no_thread_selected = இழை எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+thread_watched = இழை கண்காணிக்கப்படுகிறது.
+thread_not_watched = இழை இனி கண்காணிக்கப்படாது.
+thread_ignored = இழை புறக்கணிக்கப்பட்டது.
+thread_not_ignored = இழை இனி புறக்கணிக்கப்படாது.
+none_found = எதுவும் கிடைக்கவில்லை.
+refreshing_this_folder = இந்தக் கோப்புறையைப் புதுப்பிக்கிறது.
+refreshing_all_accounts = அனைத்துக் கணக்குகளையும் புதுப்பிக்கிறது.
+message_view_html = செய்தி காட்சி: HTML (வடிவமைத்துக் காட்டப்பட்டது).
+message_view_text = செய்தி காட்சி: உரை.
+html_view_still_loading = செய்தி இன்னும் ஏற்றப்படுகிறது. Escape அதை மூடும்.
+message_still_opening = செய்தியைத் திறக்கிறது. சேவையகம் மெதுவாக உள்ளது.
+remote_content_blocked = தொலை உள்ளடக்கம் தடுக்கப்பட்டது.
+remote_content_unblocked = தொலை உள்ளடக்கத்தின் தடை நீக்கப்பட்டது.
+remote_content_already_showing = இந்தச் செய்தியில் தொலை உள்ளடக்கம் ஏற்கனவே காட்டப்படுகிறது.
+archived = காப்பகப்படுத்தப்பட்டது.
+copied_to_folder = {to_folder} க்கு நகலெடுக்கப்பட்டது.
+deleted_one = செய்தி நிரந்தரமாக நீக்கப்பட்டது.
+deleted_many = {count} செய்திகள் நிரந்தரமாக நீக்கப்பட்டன.
+trashed_one = செய்தி குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டது.
+trashed_many = {count} செய்திகள் குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டன.
+
+# Accounts and new mail
+no_account_yet = தாவிச் செல்ல இன்னும் கணக்கு இல்லை.
+inbox_landed = {name} இன்பாக்ஸ்.
+account_enabled = {name} இயக்கப்பட்டது.
+auto_check_paused = {account} க்கான தானியங்கி சரிபார்ப்பு இடைநிறுத்தப்பட்டது.
+auto_check_resumed = {account} க்கான தானியங்கி சரிபார்ப்பு இயக்கப்பட்டது.
+account_disabled = {name} முடக்கப்பட்டது.
+new_mail_one = {name} க்கு 1 புதிய செய்தி.
+new_mail_many = {name} க்கு {count} புதிய செய்திகள்.
+refresh_all_done_one = 1 கணக்கு புதுப்பிக்கப்பட்டது.
+refresh_all_done_many = {count} கணக்குகள் புதுப்பிக்கப்பட்டன.
+refresh_all_done_failures = {count} கணக்குகள் புதுப்பிக்கப்பட்டன, {failed} புதுப்பிக்க முடியவில்லை.
+refresh_all_done_failures_one = {count} கணக்கு புதுப்பிக்கப்பட்டது, {failed} புதுப்பிக்க முடியவில்லை.
+
+# The sender of the message in view
+sender_address_copied = {sender}. முகவரி நகலெடுக்கப்பட்டது.
+sender_no_address = {sender}. நகலெடுக்க முகவரி இல்லை.
+clipboard_not_opened = {sender}. கிளிப்போர்டைத் திறக்க முடியவில்லை.
+
+# The signature editor
+signature_page_formatted = வடிவமைக்கப்பட்டது. இதுவே சேமிக்கப்படும்.
+signature_page_html = HTML மூலம். இதுவே சேமிக்கப்படும்.
+signature_page_html_still_wins = வடிவமைக்கப்பட்டது. HTML மூலமே இன்னும் சேமிக்கப்படும்.
+
+# Background work
+phishing_list_updating = ஃபிஷிங் பட்டியல் பின்னணியில் புதுப்பிக்கப்படுகிறது.
+cache_cleared = {files} தற்காலிகச் சேமிப்புக் கோப்புகள் அழிக்கப்பட்டன, {size} MB.
+hotkeys_diagnostic_on = சூடான விசை கண்டறிதல் இயக்கப்பட்டது, தேர்ந்தெடுக்கப்பட்டது
+hotkeys_diagnostic_off = சூடான விசை கண்டறிதல் முடக்கப்பட்டது, தேர்வு நீக்கப்பட்டது
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = காப்பகப்படுத்து
+action_delete = நீக்கு
+action_delete_permanently = நிரந்தரமாக நீக்கு
+action_mark_as_junk = குப்பை அஞ்சலாகக் குறி
+action_mark_as_not_junk = குப்பை அஞ்சல் அல்ல எனக் குறி
+action_move_to = நகர்த்து
+action_copy_to = நகலெடு
+action_mark_message = செய்தியைக் குறி
+action_undo = செயல்தவிர்
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} செயல்தவிர்க்கப்பட்டது.
+undo_done_many = {count} செய்திகளுக்கான {action} செயல்தவிர்க்கப்பட்டது.
+junk_marked_one = குப்பை அஞ்சலாகக் குறிக்கப்பட்டது.
+junk_marked_many = {count} செய்திகள் குப்பை அஞ்சலாகக் குறிக்கப்பட்டன.
+junk_no_new_sender = புதிய அனுப்புநர் எவரும் தடுக்கப்படவில்லை: ஏற்கனவே தடுக்கப்பட்டவர், அஞ்சல் பட்டியல், அல்லது உங்கள் சொந்த முகவரிகளில் ஒன்று.
+not_junk_marked_one = குப்பை அஞ்சல் அல்ல எனக் குறிக்கப்பட்டது.
+not_junk_marked_many = {count} செய்திகள் குப்பை அஞ்சல் அல்ல எனக் குறிக்கப்பட்டன.
+moved_to_one = {to_folder} க்கு நகர்த்தப்பட்டது.
+moved_to_many = {count} செய்திகள் {to_folder} க்கு நகர்த்தப்பட்டன.
+copied_to_many = {count} செய்திகள் {to_folder} க்கு நகலெடுக்கப்பட்டன.
+marked_read = படித்ததாகக் குறிக்கப்பட்டது.
+marked_unread = படிக்காததாகக் குறிக்கப்பட்டது.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = {total} இல் {completed} க்குப் பிறகு ரத்து செய்யப்பட்டது. {succeeded} வெற்றி, {failed} தோல்வி.
+bulk_failed_one = {done} 1 செய்தியில் {failed} தோல்வியடைந்தது.
+bulk_failed_many = {done} {total} செய்திகளில் {failed} தோல்வியடைந்தன.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = தடித்த
+format_word_italic = சாய்வு
+format_word_strike = நடுக்கோடு
+format_word_href = இணைப்பு
+format_word_bullet = புள்ளிப் பட்டியல்
+format_word_number = எண் பட்டியல்
+format_word_quote = மேற்கோள்
+format_word_code = குறியீடு
+format_word_heading1 = தலைப்பு
+format_applied = {formatting} பயன்படுத்தப்பட்டது.
+format_inserted = {formatting} செருகப்பட்டது.
+format_not_available = எளிய செய்தி உடலில் {formatting} கிடைக்காது.
+format_on = {formatting} இயக்கம்
+format_off = {formatting} முடக்கம்
+link_applied = இணைப்பு பயன்படுத்தப்பட்டது.
+link_applied_to_selection = தேர்வுக்கு இணைப்பு பயன்படுத்தப்பட்டது.
+plain_body_formatting = எளிய செய்தி உடல் தனது வடிவமைப்பைக் குறிச்சொற்களாகக் காட்டும்.
+
+# Reaching either end of a thread
+thread_edge_first = இந்த இழையின் முதல் செய்தி. மூட மீண்டும் அழுத்தவும்.
+thread_edge_last = இந்த இழையின் கடைசி செய்தி. மூட மீண்டும் அழுத்தவும்.
+jump_unified_inbox = ஒருங்கிணைந்த இன்பாக்ஸ்.
+remote_none = இந்தச் செய்தியில் தொலை உள்ளடக்கம் இல்லை.
+sender_none = இந்தச் செய்தியில் அனுப்புநர் இல்லை.
+sender_name_no_address = %s, முகவரி இல்லை
+signature_not_switched = கையொப்பம் மாற்றப்படவில்லை. இந்தக் கணக்கின் கையொப்பத்தைச் செருக Ctrl+Shift+S அழுத்தவும்.
+signature_removed_no_signature = கையொப்பம் அகற்றப்பட்டது. இந்தக் கணக்கில் ஒன்றும் இல்லை.
+signature_switched = கையொப்பம் இந்தக் கணக்கினதாக மாற்றப்பட்டது.
+spell_not_replaced = சொல்லை மாற்ற முடியவில்லை.
+spell_replaced_with = {word} ஆக மாற்றப்பட்டது.
+folder_marked_read = {count} செய்திகள் படித்ததாகக் குறிக்கப்பட்டன.
+folder_no_unread = படிக்காத செய்திகள் இல்லை.
+threads_all_collapsed = அனைத்து இழைகளும் சுருக்கப்பட்டன.
+threads_all_expanded = அனைத்து இழைகளும் விரிக்கப்பட்டன.
+upd_percent = {percent} சதவீதம்
+upd_download_done = பதிவிறக்கம் முடிந்தது. புதுப்பிப்பைத் தயார் செய்கிறது...
+upd_updated_to = ZBox {version} க்குப் புதுப்பிக்கப்பட்டது.
+header_copied = நகலெடுக்கப்பட்டது.
+headers_copied = அனைத்துத் தலைப்புகளும் நகலெடுக்கப்பட்டன.
+identity_copies_updated = இந்த அடையாளத்திற்கான நகலும் மறைநகலும் புதுப்பிக்கப்பட்டன.
+signature_switched_identity = கையொப்பம் இந்த அடையாளத்தினதாக மாற்றப்பட்டது.
+signature_removed_identity = கையொப்பம் அகற்றப்பட்டது. இந்த அடையாளத்தில் ஒன்றும் இல்லை.
+signature_not_switched_identity = கையொப்பம் மாற்றப்படவில்லை. இந்த அடையாளத்தின் கையொப்பத்தைச் செருக Ctrl+Shift+S அழுத்தவும்.
+signature_none_identity = இந்த அடையாளத்தில் கையொப்பம் இல்லை.
+move_keys_no_selection = முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+move_keys_no_folders = தேர்வு செய்ய இன்னும் கோப்புறைகள் இல்லை. சிறிது நேரத்தில் மீண்டும் முயலவும்.
+block_sender_done_one = {sender} தடுக்கப்பட்டார். அவரிடமிருந்து வரும் புதிய செய்திகள் குப்பைத் தொட்டிக்குச் செல்லும்.
+block_sender_done_many = {count} அனுப்புநர்கள் தடுக்கப்பட்டனர். அவர்களின் புதிய செய்திகள் குப்பைத் தொட்டிக்குச் செல்லும்.
+block_sender_already = {sender} ஏற்கனவே தடுக்கப்பட்டுள்ளார்.
+block_sender_own = தடுக்கப்படவில்லை: அது உங்கள் சொந்த முகவரிகளில் ஒன்று.
+block_sender_list_unknown = தடுக்கப்படவில்லை: இந்தச் செய்தி அஞ்சல் பட்டியல் வழியாக வந்தது, அனுப்பியவர் யார் என்று கூறவில்லை. பட்டியலின் முகவரியைத் தடுத்தால் அதிலுள்ள அனைவரும் தடுக்கப்படுவர்.
+block_sender_moved = அனுப்புநர் தடுக்கப்பட்டார். {count} செய்திகள் குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டன.
+block_senders_moved = {senders} அனுப்புநர்கள் தடுக்கப்பட்டனர். {count} செய்திகள் குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டன.
+unblock_sender_moved = அனுப்புநரின் தடை நீக்கப்பட்டது. {count} செய்திகள் இன்பாக்ஸுக்கு நகர்த்தப்பட்டன.
+unblock_senders_moved = {senders} அனுப்புநர்களின் தடை நீக்கப்பட்டது. {count} செய்திகள் இன்பாக்ஸுக்கு நகர்த்தப்பட்டன.
+unblock_sender_done = {sender} இன் தடை நீக்கப்பட்டது.
+unblock_sender_not_blocked = {sender} தடுக்கப்படவில்லை.
+pgp_cm_on = {name} இயக்கம்.
+pgp_cm_off = {name} முடக்கம்.
+pgp_cm_identity = குறியாக்க அமைப்புகள் இந்த அடையாளத்தினதாக மாற்றப்பட்டன.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = மேலே ஏதாவது தட்டச்சு செய்து Enter அழுத்தவும் அல்லது தேடு என்பதைத் தேர்ந்தெடுக்கவும்.
+search_no_account = முதலில் ஒரு கணக்கைச் சேர்க்கவும்.
+search_no_term = தேட வார்த்தைகளைத் தட்டச்சு செய்யவும், அல்லது தேதியை அல்லது ஒரு தேர்வுப்பெட்டியைத் தேர்ந்தெடுக்கவும்.
+search_running = தேடுகிறது...
+search_none = "{term}" க்குப் பொருத்தங்கள் இல்லை.
+search_found_one = "{term}" க்கு 1 பொருத்தம்.
+search_found_many = "{term}" க்கு {count} பொருத்தங்கள்.
+search_bad_date = தேதியை ஆண்டு-மாதம்-நாள் என தட்டச்சு செய்யவும், எ.கா. 2025-12-31, விருப்பமாக 14:30 போன்ற நேரத்துடன்.
+search_bad_range = தேதி வரம்பின் முடிவு அதன் தொடக்கத்திற்கு முன் உள்ளது.
+search_none_any = பொருந்தும் செய்திகள் இல்லை.
+search_found_one_any = 1 செய்தி கிடைத்தது.
+search_found_many_any = {count} செய்திகள் கிடைத்தன.
+search_failed = தேடல் தோல்வியடைந்தது.
+
+# The related messages tab
+related_running = தேடுகிறது...
+related_none = தொடர்புடைய செய்திகள் எதுவும் கிடைக்கவில்லை.
+related_found_one = 1 தொடர்புடைய செய்தி கிடைத்தது.
+related_found_many = {count} தொடர்புடைய செய்திகள் கிடைத்தன.
+related_failed = தொடர்புடைய செய்திகளைத் தேட முடியவில்லை.
+
+# Writing and sending
+sending_via = {sender} வழியாக அனுப்புகிறது...
+send_failed = அனுப்புதல் தோல்வியடைந்தது. விவரங்களுக்குப் பதிவுகளைப் பார்க்கவும்.
+draft_autosaved = வரைவு தானாகச் சேமிக்கப்பட்டது.
+draft_autosave_failed = வரைவைத் தானாகச் சேமிப்பது தோல்வியடைந்தது. விவரங்களுக்குப் பதிவுகளைப் பார்க்கவும்.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = {sender} இடமிருந்து வரும் செய்திகளுக்குத் தொலை உள்ளடக்கம் இனி ஏற்றப்படும்.
+downloading_attachment = {filename} பதிவிறக்குகிறது...
+downloading_attachments_one = 1 இணைப்பைப் பதிவிறக்குகிறது...
+downloading_attachments_many = {count} இணைப்புகளைப் பதிவிறக்குகிறது...
+saved_to = {folder} இல் சேமிக்கப்பட்டது
+attachment_download_failed = இணைப்பைப் பதிவிறக்குவது தோல்வியடைந்தது.
+
+# Getting mail onto the screen
+loading_folder = {account} க்கான {folder} ஐ ஏற்றுகிறது...
+messages_in_folder = {folder} இல் {count} செய்திகள்.
+messages_in_folder_cached = {folder} இல் {count} செய்திகள் (கடைசியாக ஒத்திசைத்த நகல், புதுப்பிக்கிறது...)
+no_offline_copy = {folder} இன் இணைப்பில்லா நகல் இன்னும் இல்லை.
+refresh_failed_cached = {folder} ஐப் புதுப்பிக்க முடியவில்லை: கடைசியாக ஒத்திசைத்த நகல் காட்டப்படுகிறது.
+no_such_folder = இந்தக் கணக்கில் {folder} கோப்புறை இல்லை.
+load_failed = செய்திகளை ஏற்ற முடியவில்லை. விவரங்களுக்குப் பதிவுகளைப் பார்க்கவும்.
+no_more_to_load = இந்தக் கோப்புறையில் ஏற்ற மேலும் செய்திகள் இல்லை.
+loading_more = {folder} இல் மேலும் செய்திகளை ஏற்றுகிறது...
+more_loaded = மேலும் {count} செய்திகள் ஏற்றப்பட்டன.
+no_more_messages = இந்தக் கோப்புறையில் மேலும் செய்திகள் இல்லை.
+load_more_failed = மேலும் செய்திகளை ஏற்ற முடியவில்லை: {error}
+loading_unified = ஒருங்கிணைந்த {folder} ஐ ஏற்றுகிறது...
+messages_in_unified = ஒருங்கிணைந்த {folder} இல் அனைத்துக் கணக்குகளிலும் {count} செய்திகள்.
+messages_in_unified_cached = ஒருங்கிணைந்த {folder} இல் {count} செய்திகள் (கடைசியாக ஒத்திசைத்த நகல், புதுப்பிக்கிறது...)
+auto_purge_done = தானியங்கித் துப்புரவு குப்பைத் தொட்டி/குப்பை அஞ்சலிலிருந்து {count} பழைய செய்திகளை நீக்கியது.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = தயார்.
+opening_message = செய்தியைத் திறக்கிறது...
+opening_message_already = செய்தியைத் திறக்கிறது... (ஏற்கனவே ஏற்றப்படுகிறது)
+could_not_open_message = செய்தியைத் திறக்க முடியவில்லை.
+could_not_open_that_message = அந்தச் செய்தியைத் திறக்க முடியவில்லை.
+could_not_load_message = இந்தச் செய்தியை ஏற்ற முடியவில்லை.
+message_still_loading = அந்தச் செய்தி இன்னும் ஏற்றப்படுகிறது.
+folder_still_loading = கோப்புறை இன்னும் ஏற்றப்படுகிறது -- சிறிது நேரத்தில் மீண்டும் முயலவும்.
+not_in_thread = இந்தச் செய்தி எந்த இழையிலும் இல்லை.
+no_longer_in_thread = இந்தச் செய்தி இனி இழையில் இல்லை.
+thread_position = இந்த இழையில் {total} இல் {position} ஆவது செய்தி.
+thread_finished_one = இந்த இழை முடிந்தது (1 செய்தி).
+thread_finished_many = இந்த இழை முடிந்தது ({count} செய்திகள்).
+select_message_first = முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+conversation_failed = இந்த உரையாடலைத் திறக்க முடியவில்லை.
+select_message_for_related = தொடர்புடைய செய்திகளைக் காண முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+looking_for_related = தொடர்புடைய செய்திகளைத் தேடுகிறது...
+no_threading_headers = இந்தச் செய்தியில் தேட Message-ID அல்லது இழைத் தலைப்புகள் இல்லை.
+reply_one_at_a_time = பதிலளிப்பது ஒரு நேரத்தில் ஒரு செய்திக்கே செயல்படும். ஒரே ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+select_message_to_reply = பதிலளிக்க முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+preparing_reply = பதிலைத் தயார் செய்கிறது...
+reply_load_failed = பதிலளிக்க மூலச் செய்தியை ஏற்ற முடியவில்லை.
+select_message_to_forward = முன்னனுப்ப முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+preparing_forward = முன்னனுப்பும் செய்தியைத் தயார் செய்கிறது...
+forward_load_failed = முன்னனுப்ப வேண்டிய செய்தியை ஏற்ற முடியவில்லை.
+compose_tab_needed_hint = அந்தக் கட்டளைக்கு எழுதும் தாவல் தேவை. செய்தி எழுத Ctrl+N அழுத்தவும்.
+open_message_first_view = முதலில் ஒரு செய்தியைத் திறந்து, அதன் காட்சியை மாற்ற Ctrl+B அழுத்தவும்.
+open_message_first_remote = முதலில் ஒரு செய்தியைத் திறந்து, அதன் தொலை உள்ளடக்கத்தை ஏற்ற Ctrl+Shift+I அழுத்தவும்.
+
+# Acting on messages
+copying_message = செய்தியை நகலெடுக்கிறது...
+copy_failed = நகலெடுப்பது தோல்வியடைந்தது.
+delete_failed = நீக்குவது தோல்வியடைந்தது.
+already_in_archive = ஏற்கனவே காப்பகத்தில் உள்ளது.
+archiving = காப்பகப்படுத்துகிறது...
+archive_failed = காப்பகப்படுத்துவது தோல்வியடைந்தது.
+action_failed = {action} தோல்வியடைந்தது.
+nothing_to_undo = செயல்தவிர்க்க எதுவும் இல்லை.
+private_mode_on = தனிப்பட்ட பயன்முறை இயக்கத்தில் உள்ளது. இந்தக் கணினியில் ZBox வைத்திருந்த உங்கள் அஞ்சல் நகல்கள் நீக்கப்பட்டன.
+private_mode_off = தனிப்பட்ட பயன்முறை முடக்கத்தில் உள்ளது. ZBox மீண்டும் உங்கள் அஞ்சல் நகல்களை வைத்திருக்கும்.
+undo_failed = {action} ஐச் செயல்தவிர்க்க முடியவில்லை.
+
+# Views and folders
+folder_pane_all = கோப்புறைப் பலகம்: அனைத்துக் கோப்புறைகள்.
+folder_pane_unified = கோப்புறைப் பலகம்: ஒருங்கிணைந்த கோப்புறைகள்.
+sorted_ascending = {field} படி வரிசைப்படுத்தப்பட்டது, ஏறுவரிசை.
+sorted_descending = {field} படி வரிசைப்படுத்தப்பட்டது, இறங்குவரிசை.
+unified_folders_updated = ஒருங்கிணைந்த கோப்புறைகள் புதுப்பிக்கப்பட்டன.
+zoom_reset = செய்தி எழுத்துரு அளவு இயல்புநிலைக்கு மீட்டமைக்கப்பட்டது.
+folder_creating = "{folder}" கோப்புறையை உருவாக்குகிறது...
+folder_created = "{folder}" கோப்புறை உருவாக்கப்பட்டது.
+folder_create_failed = கோப்புறையை உருவாக்க முடியவில்லை.
+folder_renaming = "{folder}" ஐ "{new_name}" என மறுபெயரிடுகிறது...
+folder_renamed = கோப்புறை "{new_name}" என மறுபெயரிடப்பட்டது.
+folder_rename_failed = கோப்புறையை மறுபெயரிட முடியவில்லை.
+folder_deleting = "{folder}" கோப்புறையை நீக்குகிறது...
+folder_deleted = கோப்புறை நீக்கப்பட்டது.
+folder_delete_failed = கோப்புறையை நீக்க முடியவில்லை.
+folder_subscribing = "{folder}" க்குக் குழுசேர்கிறது...
+folder_unsubscribing = "{folder}" குழுசேர்வை நீக்குகிறது...
+folder_subscribed = குழுசேர்ந்தது.
+folder_unsubscribed = குழுசேர்வு நீக்கப்பட்டது.
+folder_subscribe_failed = கோப்புறைக்குக் குழுசேர முடியவில்லை.
+folder_unsubscribe_failed = கோப்புறையின் குழுசேர்வை நீக்க முடியவில்லை.
+
+# Accounts
+account_not_added = கணக்கு சேர்க்கப்படவில்லை.
+account_added = கணக்கு சேர்க்கப்பட்டது: {account}
+account_settings_not_saved = கணக்கு அமைப்புகள் சேமிக்கப்படவில்லை.
+account_updated = கணக்கு புதுப்பிக்கப்பட்டது: {account}
+account_not_removed = கணக்கு அகற்றப்படவில்லை.
+account_removed = கணக்கு அகற்றப்பட்டது.
+account_removed_with_files = கணக்கு அகற்றப்பட்டது. {count} உள்ளூர்க் கோப்புகள் நீக்கப்பட்டன.
+default_account_failed = இயல்புநிலைக் கணக்கை அமைக்க முடியவில்லை.
+default_account_set = {account} இப்போது இயல்புநிலைக் கணக்கு.
+auto_check_not_saved = தானியங்கி சரிபார்ப்பு அமைப்பு சேமிக்கப்படவில்லை.
+mute_not_saved = ஒலியடக்க அமைப்பு சேமிக்கப்படவில்லை.
+account_muted = {account} ஒலியடக்கப்பட்டது.
+account_unmuted = {account} ஒலியடக்கம் நீக்கப்பட்டது.
+export_done = {count} கணக்குகளும் அமைப்புகளும் {path} க்கு ஏற்றுமதி செய்யப்பட்டன.
+import_done = {path} இலிருந்து {count} கணக்குகள் இறக்குமதி செய்யப்பட்டன.
+
+# Filters, cache and the background lists
+filters_not_saved = வடிகட்டிகள் சேமிக்கப்படவில்லை.
+filters_saved = {account} க்கான வடிகட்டிகள் சேமிக்கப்பட்டன.
+filters_checking = உங்கள் வடிகட்டிகளுக்கு எதிராக {folder} ஐச் சரிபார்க்கிறது...
+filters_none_matched = இப்போது இயக்கு: {folder} இல் இயக்கப்பட்ட எந்த விதிக்கும் எந்தச் செய்தியும் பொருந்தவில்லை.
+filters_run_failed = வடிகட்டிகளை இயக்க முடியவில்லை.
+filters_moving = வடிகட்டப்பட்ட {count} செய்திகளை நகர்த்துகிறது...
+filters_move_failures = வடிகட்டிகள்: {count} செய்திகளை நகர்த்த முடியவில்லை.
+filters_moved = வடிகட்டிகள் {folder} இலிருந்து {count} செய்திகளை நகர்த்தின.
+filters_move_failed = வடிகட்டப்பட்ட செய்திகளை நகர்த்த முடியவில்லை.
+cache_not_cleared = தற்காலிகச் சேமிப்பு அழிக்கப்படவில்லை.
+auto_cache_cleanup = தானியங்கித் தற்காலிகச் சேமிப்புத் துப்புரவு: {age} க்கு முந்தைய செய்திகள்.
+phishing_update_failed = ஃபிஷிங் பட்டியலைப் புதுப்பிக்க முடியவில்லை: {error}
+blocklist_update_failed = தடைப் பட்டியலைப் புதுப்பிக்க முடியவில்லை: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = முதலில் ஒரு செய்தியைத் திறந்து, பின் இவ்வாறு சேமி என்பதைப் பயன்படுத்தவும்.
+saving_message = செய்தியைச் சேமிக்கிறது...
+save_file_failed = கோப்பைச் சேமிக்க முடியவில்லை.
+save_fetch_failed = சேமிக்கச் செய்தியைப் பெற முடியவில்லை.
+open_message_first_print = முதலில் ஒரு செய்தியைத் திறந்து, பின் அச்சிடு என்பதைப் பயன்படுத்தவும்.
+open_message_first_preview = முதலில் ஒரு செய்தியைத் திறந்து, பின் அச்சு முன்னோட்டம் என்பதைப் பயன்படுத்தவும்.
+refreshing_accounts = {count} கணக்குகளைப் புதுப்பிக்கிறது...
+emptying_trash = {account} க்கான குப்பைத் தொட்டியைக் காலி செய்கிறது...
+trash_already_empty = குப்பைத் தொட்டி ஏற்கனவே காலியாக இருந்தது.
+trash_emptied = குப்பைத் தொட்டி காலியாக்கப்பட்டது: {count} செய்திகள் நீக்கப்பட்டன.
+empty_trash_failed = குப்பைத் தொட்டியைக் காலி செய்ய முடியவில்லை.
+emptying_junk = {account} க்கான குப்பை அஞ்சலைக் காலி செய்கிறது...
+junk_already_empty = குப்பை அஞ்சல் ஏற்கனவே காலியாக இருந்தது.
+junk_emptied = குப்பை அஞ்சல் காலியாக்கப்பட்டது: {count} செய்திகள் நீக்கப்பட்டன.
+junk_emptied_prefix = குப்பை அஞ்சல் காலியாக்கப்பட்டது:
+junk_part_purged = {count} நீக்கப்பட்டன
+junk_part_in_trash = {count} குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டன ஆனால் நீக்கம் உறுதிசெய்யப்படவில்லை, குப்பைத் தொட்டியைப் பாருங்கள்
+junk_part_not_moved = {count} குப்பைத் தொட்டிக்கு நகர்த்தப்படவில்லை, இன்னும் குப்பை அஞ்சலில் உள்ளன
+empty_junk_failed = குப்பை அஞ்சலைக் காலி செய்ய முடியவில்லை.
+back_online = மீண்டும் இணைப்பில் உள்ளது.
+offline_sync_running = இணைப்பில்லா பயன்பாட்டிற்காக {account} ஐ ஒத்திசைக்கிறது...
+offline_sync_failed = இணைப்பில்லா ஒத்திசைவு தோல்வியடைந்தது: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும் அல்லது திறக்கவும்.
+select_or_open_message_ctrl_u = முதலில் ஒரு செய்தியைத் தேர்ந்தெடுக்கவும் அல்லது திறக்கவும், பின் Ctrl+U அழுத்தவும்.
+no_sender_address = இந்தச் செய்தியில் சேர்க்க அனுப்புநர் முகவரி இல்லை.
+contact_added = {contact} உங்கள் முகவரிப் புத்தகத்தில் சேர்க்கப்பட்டார்.
+contact_already_there = {contact} ஏற்கனவே உங்கள் முகவரிப் புத்தகத்தில் உள்ளார்.
+privacy_saved = தனியுரிமை அமைப்புகள் சேமிக்கப்பட்டன. அவற்றைப் பயன்படுத்த செய்தியை மீண்டும் திறக்கவும்.
+message_font_size = செய்தி எழுத்துரு அளவு: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = செய்தியை நிரந்தரமாக நீக்குகிறது
+deleting_many = {count} செய்திகளை நிரந்தரமாக நீக்குகிறது
+trashing_one = செய்தியைக் குப்பைத் தொட்டிக்கு நகர்த்துகிறது
+trashing_many = {count} செய்திகளைக் குப்பைத் தொட்டிக்கு நகர்த்துகிறது
+undo_partly_restored = {action} செயல்தவிர்க்கப்பட்டது, ஆனால் {count} மீட்டெடுக்க முடியவில்லை -- அவை அதன் பிறகு நகர்த்தப்பட்டிருக்கலாம், நீக்கப்பட்டிருக்கலாம் அல்லது காலாவதியாகியிருக்கலாம்.
+moves_report = {action}: {total} இல் {moved} செய்திகள் நகர்த்தப்பட்டன.
+moves_report_failed = நகர்த்தப்படவில்லை, இன்னும் மூலக் கோப்புறையில் உள்ளன: {count}.
+
+tray_tooltip_one = ZBox — 1 படிக்காத செய்தி
+tray_tooltip_many = ZBox — {count} படிக்காத செய்திகள்
+account_unreachable = {account} ஐ அடைய முடியவில்லை. அதற்கான தானியங்கிச் சரிபார்ப்புகள் {minutes} நிமிடங்கள் இடைநிறுத்தப்படும்.
+bulk_copy_failed = செய்திகளை நகலெடுக்க முடியவில்லை.
+bulk_copy_failed_status = நகலெடுப்பது தோல்வியடைந்தது.
+bulk_loading_archive = செய்திகள் இன்னும் ஏற்றப்படுகின்றன -- சிறிது நேரத்தில் மீண்டும் காப்பகப்படுத்த முயலவும்.
+bulk_loading_delete = செய்திகள் இன்னும் ஏற்றப்படுகின்றன -- சிறிது நேரத்தில் மீண்டும் நீக்க முயலவும்.
+bulk_loading_flag = செய்திகள் இன்னும் ஏற்றப்படுகின்றன -- சிறிது நேரத்தில் மீண்டும் நட்சத்திரக் குறியிட முயலவும்.
+bulk_loading_generic = செய்திகள் இன்னும் ஏற்றப்படுகின்றன -- சிறிது நேரத்தில் மீண்டும் முயலவும்.
+bulk_none = செய்தி எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+bulk_none_archive = காப்பகப்படுத்த செய்தி எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+bulk_none_delete = நீக்க செய்தி எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+bulk_none_junk = குப்பை அஞ்சலாகக் குறிக்க செய்தி எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+bulk_none_not_junk = குப்பை அஞ்சல் அல்ல எனக் குறிக்க செய்தி எதுவும் தேர்ந்தெடுக்கப்படவில்லை.
+delete_refused_still = சேவையகம் அதை நீக்க மறுத்தது; அது இன்னும் {folder} இல் உள்ளது.
+delete_refused_trash = அது குப்பைத் தொட்டியில் உள்ளது, ஆனால் சேவையகம் அதை நிரந்தரமாக நீக்க மறுத்தது.
+delete_resume_failed = முந்தைய நீக்கத்தின் {count} செய்திகளை நீக்க முடியவில்லை.
+done_perm_delete_one = செய்தி நிரந்தரமாக நீக்கப்பட்டது.
+done_trash_one = செய்தி குப்பைத் தொட்டிக்கு நகர்த்தப்பட்டது.
+filters_applied = {folder} இல் {count} செய்திகளுக்கு வடிகட்டிகள் பயன்படுத்தப்பட்டன.
+filters_failed = வடிகட்டிகளை இயக்க முடியவில்லை.
+filters_running = {folder} இல் வடிகட்டிகளை இயக்குகிறது
+flag_failed = நட்சத்திரக் குறியைப் புதுப்பிக்க முடியவில்லை.
+flag_updated = நட்சத்திரக் குறி புதுப்பிக்கப்பட்டது.
+folder_verb_subscribing = குழுசேர்கிறது
+folder_verb_unsubscribing = குழுசேர்வை நீக்குகிறது
+mark_read_failed = செய்திகளைப் படித்ததாகக் குறிக்க முடியவில்லை.
+mark_unread_failed = செய்திகளைப் படிக்காததாகக் குறிக்க முடியவில்லை.
+notify_new_mail_body = {name} க்கு {count} {noun}.
+notify_new_mail_title = புதிய அஞ்சல்
+notify_noun_many = புதிய செய்திகள்
+notify_noun_one = புதிய செய்தி
+report_done = {count} செய்திகளில் {done} {verb}.
+report_verb_deleted = நீக்கப்பட்டன
+report_verb_permanent = நிரந்தரமாக நீக்கப்பட்டன
+running_copy_many = {count} செய்திகளை நகலெடுக்கிறது
+running_copy_one = செய்தியை நகலெடுக்கிறது
+running_junk_many = {count} செய்திகளைக் குப்பை அஞ்சலாகக் குறிக்கிறது
+running_junk_one = குப்பை அஞ்சலாகக் குறிக்கிறது
+running_move_many = {count} செய்திகளை நகர்த்துகிறது
+running_move_one = நகர்த்துகிறது
+running_not_junk_many = {count} செய்திகளைக் குப்பை அஞ்சல் அல்ல எனக் குறிக்கிறது
+running_not_junk_one = குப்பை அஞ்சல் அல்ல எனக் குறிக்கிறது
+running_perm_delete_one = செய்தியை நிரந்தரமாக நீக்குகிறது...
+running_read_many = {count} செய்திகளைப் படித்ததாகக் குறிக்கிறது
+running_read_one = படித்ததாகக் குறிக்கிறது
+running_trash_one = செய்தியைக் குப்பைத் தொட்டிக்கு நகர்த்துகிறது...
+running_unread_many = {count} செய்திகளைப் படிக்காததாகக் குறிக்கிறது
+running_unread_one = படிக்காததாகக் குறிக்கிறது
+settings_saved_no_startup = அமைப்புகள் சேமிக்கப்பட்டன. Windows தொடக்க உள்ளீட்டைப் புதுப்பிக்க முடியவில்லை.
+settings_saved_status = அமைப்புகள் சேமிக்கப்பட்டன.
+spam_blocked_sender = தடுக்கப்பட்ட அனுப்புநர்
+spam_possible_phishing = ஃபிஷிங்காக இருக்கலாம்
+undo_running_many = {action} ஐச் செயல்தவிர்க்கிறது ({count} செய்திகள்)
+undo_running_one = {action} ஐச் செயல்தவிர்க்கிறது
+mark_folder_read_failed = கோப்புறையைப் படித்ததாகக் குறிக்க முடியவில்லை.
+marking_folder_read = கோப்புறையைப் படித்ததாகக் குறிக்கிறது...
+upd_ready_at_exit = புதுப்பிப்பு ஏற்கனவே பதிவிறக்கப்பட்டது. நீங்கள் ZBox ஐ விட்டு வெளியேறும்போது அது நிறுவப்படும்.
+upd_checking = புதுப்பிப்புகளைச் சரிபார்க்கிறது...
+upd_up_to_date = ZBox புதுப்பித்த நிலையில் உள்ளது.
+upd_available_source = ZBox {version} கிடைக்கிறது. இந்த நகல் மூலத்திலிருந்து இயங்குகிறது, எனவே git மூலம் புதுப்பிக்கவும்.
+upd_check_failed = புதுப்பிப்புகளைச் சரிபார்க்க முடியவில்லை: {error}
+opening_attachment = {filename} ஐத் திறக்கிறது...
+loading_headers = தலைப்புகளை ஏற்றுகிறது...
+offline_inbox_only = இன்பாக்ஸும் காப்பகமும் மட்டுமே இணைப்பில்லா பயன்பாட்டிற்காக வைக்கப்படும்.
+offline_sync_done_inbox = இணைப்பில்லா பயன்பாட்டிற்காக இன்பாக்ஸ் மற்றும் காப்பகத்தில் {count} செய்திகள் ஒத்திசைக்கப்பட்டன.
+working_offline = இணைப்பில்லாமல் செயல்படுகிறது: இன்பாக்ஸ்/அனுப்பியவை/வரைவுகளின் கடைசியாக ஒத்திசைத்த நகல் காட்டப்படுகிறது.
+emptying_trash_all = அனைத்துக் கணக்குகளின் குப்பைத் தொட்டியையும் காலி செய்கிறது...
+trash_emptied_all = {accounts} கணக்குகளில் குப்பைத் தொட்டி காலியாக்கப்பட்டது: {count} செய்திகள் நீக்கப்பட்டன.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &கோப்பு
+bar_edit = &திருத்து
+bar_view = &காண்க
+bar_message = &செய்தி
+bar_compose = &எழுது
+bar_tools = &கருவிகள்
+bar_help = &உதவி
+
+# File
+file_new = புதியது
+file_new_message = செய்தி
+file_new_account = மின்னஞ்சல் கணக்கு...
+file_open_saved_message = சேமித்த செய்தியைத் திற...
+file_close = மூடு
+file_save_message_as = செய்தியை இவ்வாறு சேமி...
+file_get_new_for = புதிய செய்திகளைப் பெறு
+file_get_new_all = அனைத்துக் கணக்குகள்
+file_get_new_current = தற்போதைய கணக்கு
+file_offline = இணைப்பில்லா
+file_work_offline = இணைப்பில்லாமல் வேலை செய்
+file_sync_now = இப்போது ஒத்திசை
+file_print = அச்சிடு...
+file_print_preview = அச்சு முன்னோட்டம்...
+file_exit = வெளியேறு
+
+# Edit
+edit_undo = செயல்தவிர்
+edit_select_all = அனைத்தையும் தேர்ந்தெடு
+edit_find_messages = செய்திகளைத் தேடு...
+
+# Message
+message_reply = பதிலளி
+message_reply_all = அனைவருக்கும் பதிலளி
+message_forward = முன்னனுப்பு
+message_archive = காப்பகப்படுத்து
+message_delete = நீக்கு
+message_delete_permanently = நிரந்தரமாக நீக்கு
+message_mark = குறி
+mark_read = படித்தது
+mark_unread = படிக்காதது
+mark_flagged = நட்சத்திரக் குறியிட்டது
+mark_junk = குப்பை அஞ்சல்
+mark_not_junk = குப்பை அஞ்சல் அல்ல
+message_watch_thread = இழையைக் கண்காணி
+message_ignore_thread = இழையைப் புறக்கணி
+message_open_conversation = செய்தியை உரையாடலில் திற
+message_show_related = தொடர்புடைய செய்திகளைக் காட்டு
+message_add_sender_to_address_book = அனுப்புநரை முகவரிப் புத்தகத்தில் சேர்
+message_announce_sender = அனுப்புநரை அறிவி
+message_announce_copy_sender = அனுப்புநரை அறிவித்து முகவரியை நகலெடு
+
+# View
+view_folders = கோப்புறைகள்
+folders_all = அனைத்தும்
+folders_unified = ஒருங்கிணைந்தவை
+folders_jump_inbox = இன்பாக்ஸ் செய்திப் பட்டியலுக்குத் தாவு
+folders_configure_unified = ஒருங்கிணைந்த கோப்புறைகளை அமை...
+view_sort_by = இதன்படி வரிசைப்படுத்து
+sort_date = தேதி
+sort_subject = பொருள்
+sort_from = அனுப்புநர்
+sort_descending = இறங்குவரிசை (புதியவை முதலில்)
+sort_ascending = ஏறுவரிசை (பழையவை முதலில்)
+view_threads = இழைகள்
+threads_all = அனைத்தும்
+threads_watched = கண்காணிக்கப்படும் இழைகள்
+threads_ignored = புறக்கணிக்கப்பட்ட இழைகள்
+threads_expand_all = அனைத்து இழைகளையும் விரி
+threads_collapse_all = அனைத்து இழைகளையும் சுருக்கு
+view_load_more = மேலும் செய்திகளை ஏற்று
+view_toggle_message_view = உரை மற்றும் HTML காட்சிக்கு இடையே மாறு
+view_show_remote_content = இந்தச் செய்தியில் தொலை உள்ளடக்கத்தைக் காட்டு
+view_message_zoom = செய்தி பெரிதாக்கம்
+zoom_increase = செய்தி எழுத்துரு அளவை அதிகரி
+zoom_decrease = செய்தி எழுத்துரு அளவைக் குறை
+zoom_reset = செய்தி எழுத்துரு அளவை மீட்டமை
+
+# Compose
+compose_send = &அனுப்பு
+compose_save_draft = &வரைவைச் சேமி
+compose_attach = &கோப்பை இணை...
+compose_fmt_bold = &தடித்த
+compose_fmt_italic = &சாய்வு
+compose_fmt_strike = &நடுக்கோடு
+compose_fmt_bullet = &புள்ளிப் பட்டியல்
+compose_fmt_number = &எண் பட்டியல்
+compose_fmt_quote = &மேற்கோள்
+compose_fmt_code = &குறியீடு
+compose_fmt_heading1 = &தலைப்பு
+compose_link = &இணைப்பைச் செருகு...
+compose_formatting = &இங்கு வடிவமைப்பு
+compose_spellcheck = &எழுத்துப்பிழை சரிபார்...
+compose_spellcheck_next = &அடுத்த எழுத்துப் பிழை
+compose_spellcheck_add = &சொல்லை அகராதியில் சேர்
+compose_insert_signature = &கையொப்பத்தைச் செருகு
+compose_paste_quotation = &மேற்கோளாக ஒட்டு
+compose_word_count = &சொல் எண்ணிக்கை
+compose_preview = &முன்னோட்டம்...
+compose_diagnostics = &எழுதும் கண்டறிதல்...
+compose_edit_signature = &கையொப்பத்தைத் திருத்து...
+compose_hotkeys_diagnostic = &சூடான விசை கண்டறிதல்
+
+# Tools
+tools_account_settings = கணக்கு மற்றும் அடையாள அமைப்புகள்...
+tools_mute_account = கணக்கை ஒலியடக்கு
+tools_pause_auto_check = தானியங்கி சரிபார்ப்பை இடைநிறுத்து
+tools_disable_account = கணக்கை முடக்கு
+tools_remove_account = கணக்கை அகற்று...
+tools_address_book = முகவரிப் புத்தகம்...
+tools_message_filters = செய்தி வடிகட்டிகள்...
+tools_import = கணக்குகளையும் அமைப்புகளையும் இறக்குமதி செய்...
+tools_export = கணக்குகளையும் அமைப்புகளையும் ஏற்றுமதி செய்...
+tools_cache_cleanup = தற்காலிகச் சேமிப்புத் துப்புரவு உள்ளமைவு...
+tools_privacy = தனியுரிமை மற்றும் உள்ளடக்கத் தடுப்பு...
+tools_settings = அமைப்புகள்...
+
+# Help
+help_shortcuts = விசைப்பலகைக் குறுக்குவழிகள்...
+help_about = ZBox பற்றி...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = புதிய கணக்கு...
+tree_account_settings = கணக்கு மற்றும் அடையாள அமைப்புகள்...
+tree_mute_account = கணக்கை ஒலியடக்கு
+tree_pause_auto_check = தானியங்கி சரிபார்ப்பை இடைநிறுத்து
+tree_enable_account = கணக்கை இயக்கு
+tree_disable_account = கணக்கை முடக்கு
+tree_set_default_account = இயல்புநிலைக் கணக்காக அமை
+tree_remove_account = கணக்கை அகற்று...
+tree_refresh = புதுப்பி
+tree_new_folder = புதிய கோப்புறை...
+tree_empty_trash = குப்பைத் தொட்டியைக் காலி செய்
+tree_empty_junk = குப்பை அஞ்சலைக் காலி செய்
+tree_rename_folder = கோப்புறையை மறுபெயரிடு...
+tree_delete_folder = கோப்புறையை நீக்கு...
+tree_subscribe_folder = கோப்புறைக்குக் குழுசேர்
+tree_unsubscribe_folder = கோப்புறையின் குழுசேர்வை நீக்கு
+
+# The message list menu, opened the same two ways
+list_select_all = அனைத்தையும் தேர்ந்தெடு
+list_reply = பதிலளி
+list_reply_all = அனைவருக்கும் பதிலளி
+list_forward = முன்னனுப்பு
+list_mark = குறி
+list_archive = காப்பகப்படுத்து
+list_delete_to_trash = நீக்கு (குப்பைத் தொட்டிக்கு நகர்த்து)
+list_delete_permanently = நிரந்தரமாக நீக்கு
+list_move_to = நகர்த்து
+list_copy_to = நகலெடு
+
+# The notification area icon
+tray_open = &ZBox ஐத் திற
+tray_unread_one = 1 படிக்காத செய்தி
+tray_unread_many = {count} படிக்காத செய்திகள்
+tray_no_unread = படிக்காத செய்திகள் இல்லை
+tray_settings = &அமைப்புகள்...
+tray_quit = &ZBox ஐ விட்டு வெளியேறு
+
+# The formatting menu inside a message you are writing
+format_bold = &தடித்த
+format_italic = &சாய்வு
+format_strike = &நடுக்கோடு
+format_bullet = &புள்ளிப் பட்டியல்
+format_number = &எண் பட்டியல்
+format_quote = &மேற்கோள்
+format_code = &குறியீடு
+format_heading1 = &தலைப்பு
+format_insert_link = &இணைப்பைச் செருகு...
+format_formatting_here = &இங்கு வடிவமைப்பு
+tools_enable_account = கணக்கை இயக்கு
+edit_undo_action = {action} ஐச் செயல்தவிர்
+tree_mark_folder_read = கோப்புறையைப் படித்ததாகக் குறி
+help_updates = &புதுப்பிப்புகள்
+help_check_updates = &இப்போது புதுப்பிப்புகளைச் சரிபார்...
+help_update_settings = &புதுப்பிப்பு அமைப்புகள்
+help_releases_page = &வெளியீடுகள் பக்கத்தைத் திற
+message_attachments = இணைப்புகள்
+message_no_attachments = இணைப்புகள் இல்லை
+message_save_all_attachments = அனைத்து இணைப்புகளையும் சேமி
+view_full_headers = முழுத் தலைப்புகள்
+folders_go_to_tree = கோப்புறைப் பட்டியலுக்குச் செல்
+list_block_sender = இந்த அனுப்புநரைத் தடு
+list_unblock_sender = இந்த அனுப்புநரின் தடையை நீக்கு
+sort_received = பெறப்பட்டவை
+sort_star = நட்சத்திரம்
+sort_order_received = பெறப்பட்ட வரிசை
+sort_priority = முன்னுரிமை
+sort_recipient = பெறுநர்
+sort_correspondents = தொடர்பாளர்கள்
+sort_size = அளவு
+sort_read = படித்தவை
+sort_junk_status = குப்பை அஞ்சல் நிலை
+sort_attachments = இணைப்புகள்
+sort_threaded = இழைகளாக
+sort_unthreaded = இழைகள் இல்லாமல்
+view_columns = நெடுவரிசைகள்
+tools_openpgp_keys = OpenPGP சாவி மேலாளர்
+tools_smime_certs = S/MIME சான்றிதழ் மேலாளர்
+compose_pgp_encrypt = &குறியாக்கு
+compose_pgp_sign = &எண்ணிமக் கையொப்பமிடு
+compose_pgp_attach_key = &எனது பொதுச் சாவியை இணை
+
+[dialogs]
+set_theme_restart_confirm = தீம் மாற்றத்தைப் பயன்படுத்த ZBox ஐ மறுதொடக்கம் செய்யலாமா?
+set_ui_theme_label = &இடைமுகத் தீம்:
+set_ui_theme_note = மெனுக்கள், பட்டியல்கள், உரையாடல்கள் மற்றும் செய்தி உரைக் காட்சிக்கான வண்ணங்கள். கணினியைப் பின்பற்று என்பது Windows இன் சொந்த ஒளி அல்லது இருண்ட பயன்பாட்டுப் பயன்முறையைப் பயன்படுத்தும். நள்ளிரவு நீலம், சூடான இருள் மற்றும் மென்மையான வேறுபாடு ஆகியவை மென்மையான வண்ணங்களுடன் கூடிய இருண்ட தீம்கள். HTML செய்திகள் தங்கள் சொந்த வண்ணங்களை வைத்திருக்கும், மேலும் Windows உயர் வேறுபாடு எப்போதும் முன்னுரிமை பெறும். ZBox அடுத்த முறை தொடங்கும்போது நடைமுறைக்கு வரும்.
+set_theme_system = கணினியைப் பின்பற்று
+set_theme_light = ஒளி
+set_theme_dark = இருண்ட
+set_theme_midnight = நள்ளிரவு நீலம்
+set_theme_warm = சூடான இருள்
+set_theme_soft = மென்மையான வேறுபாடு
+set_language_restart_confirm = மொழி மாற்றத்தைப் பயன்படுத்த ZBox ஐ மறுதொடக்கம் செய்யலாமா?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harith ஐத் தொடர்பு கொள்ளுங்கள்
+title_identity = அடையாளம்
+title_show_password = கடவுச்சொல்லைக் காட்டு
+title_missing_information = தகவல் இல்லை
+title_unsupported_provider = ஆதரிக்கப்படாத வழங்குநர்
+title_test_connection = இணைப்பைச் சோதி
+title_new_contact = புதிய தொடர்பு
+title_edit_contact = தொடர்பைத் திருத்து
+title_delete_contact = தொடர்பை நீக்கு
+title_import_contacts = தொடர்புகளை இறக்குமதி செய்
+title_export_contacts = தொடர்புகளை ஏற்றுமதி செய்
+title_rename_group = குழுவை மறுபெயரிடு
+title_delete_group = குழுவை நீக்கு
+title_send = அனுப்பு
+title_send_failed = அனுப்புதல் தோல்வி
+title_attach_file = கோப்பை இணை
+title_save_draft = வரைவைச் சேமி
+title_documentation = ZBox ஆவணமாக்கம்
+title_open_link = இணைப்பைத் திற
+title_filter_rule = வடிகட்டி விதி
+title_master_password = முதன்மைக் கடவுச்சொல்
+title_attachment_saved = இணைப்பு சேமிக்கப்பட்டது
+title_attachments_saved = இணைப்புகள் சேமிக்கப்பட்டன
+title_download_failed = பதிவிறக்கம் தோல்வி
+title_print = அச்சிடு
+title_print_preview = அச்சு முன்னோட்டம்
+title_related_messages = தொடர்புடைய செய்திகள்
+title_search = தேடு
+title_unlock = திற
+title_unlock_methods = திறக்கும் முறைகள்
+title_desktop_shortcut = மேசைக் குறுக்குவழி
+title_spell_check = எழுத்துப்பிழை சரிபார்ப்பு
+title_plain_text_password = எளிய உரைக் கடவுச்சொல் கண்டறியப்பட்டது
+title_startup_error = ZBox தொடக்கப் பிழை
+
+identity_email_required = மின்னஞ்சல் முகவரியை உள்ளிடவும்.
+
+wizard_password_not_shown = இந்தக் கணினியில் கடவுச்சொல்லைக் காட்ட முடியாது. அது இன்னும் வழக்கம்போல் தட்டச்சு செய்யப்பட்டுச் சேமிக்கப்படும்.
+wizard_email_required = தொடர்வதற்கு முன் செல்லுபடியாகும் மின்னஞ்சல் முகவரியை உள்ளிடவும்.
+wizard_test_needs_server = சோதிப்பதற்கு முன் உள்நுழைவு மின்னஞ்சலையும் உள்வரும் சேவையகத்தையும் உள்ளிடவும்.
+wizard_test_succeeded = இணைப்பு வெற்றி. இன்பாக்ஸில் {count} செய்திகள் கிடைத்தன.
+
+contact_email_required = மின்னஞ்சல் முகவரி தேவை.
+contact_select_to_edit = திருத்த ஒரு தொடர்பைத் தேர்ந்தெடுக்கவும்.
+contact_select_to_delete = நீக்க ஒரு தொடர்பைத் தேர்ந்தெடுக்கவும்.
+contact_delete_confirm = {label} ஐ முகவரிப் புத்தகத்திலிருந்து நீக்கலாமா?
+contacts_import_choose_file = இறக்குமதி செய்ய .vcf (vCard) அல்லது .csv கோப்பைத் தேர்ந்தெடுக்கவும்.
+contacts_imported = {count} தொடர்புகள் இறக்குமதி செய்யப்பட்டன.
+contacts_import_empty = அந்தக் கோப்பில் தொடர்புகள் எதுவும் இல்லை.
+contacts_none_to_export = ஏற்றுமதி செய்ய தொடர்புகள் இல்லை.
+contacts_exported = {count} தொடர்புகள் இங்கு ஏற்றுமதி செய்யப்பட்டன:\n{path}
+group_name_exists = "{name}" என்ற பெயரில் ஒரு குழு ஏற்கனவே உள்ளது.
+group_delete_confirm = "{name}" குழுவை நீக்கலாமா? அதன் தொடர்புகள் நீக்கப்படாது.
+
+send_no_account = அனுப்புவதற்கு முன் ஒரு கணக்கைச் சேர்க்கவும், அல்லது அனுப்புநர் என்பதில் ஒன்றைத் தேர்ந்தெடுக்கவும்.
+send_no_recipient = பெறுநர் என்பதில் குறைந்தது ஒரு பெறுநரை உள்ளிடவும்.
+draft_no_account = வரைவைச் சேமிப்பதற்கு முன் ஒரு கணக்கைச் சேர்க்கவும், அல்லது அனுப்புநர் என்பதில் ஒன்றைத் தேர்ந்தெடுக்கவும்.
+attached_file = இணைக்கப்பட்டது: {name}\n\nநீங்கள் அனுப்பும்போது {count} கோப்புகள் இணைக்கப்படும்.
+
+documentation_copied = முழு ZBox ஆவணமாக்கமும் கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது.
+
+filter_rule_needs_name = இந்த விதிக்கு ஒரு பெயர் கொடுக்கவும்.
+filter_rule_needs_condition = குறைந்தது ஒரு நிபந்தனையை அமைக்கவும் (அனுப்புநர், பெறுநர் அல்லது பொருள்).
+filter_rule_needs_action = குறைந்தது ஒரு செயலைத் தேர்ந்தெடுக்கவும்: படித்ததாகக் குறி, நட்சத்திரக் குறியிடு, அல்லது கோப்புறைக்கு நகர்த்து.
+
+master_password_set = முதன்மைக் கடவுச்சொல் அமைக்கப்பட்டது. அதைப் பாதுகாப்பான இடத்தில் வைக்கவும்: ZBox ஒவ்வொரு புதிய கணினியிலும் ஒருமுறை அதைக் கேட்கும், அது தொலைந்தால் மீட்க முடியாது.
+master_password_offer = முதன்மைக் கடவுச்சொல் இல்லாமல், சேமித்த கணக்குக் கடவுச்சொற்களை இந்தக் கணினியிலும் இந்த Windows கணக்கிலும் மட்டுமே படிக்க முடியும். ZBox ஐ வேறு இடத்திற்கு நகலெடுத்தால் ஒவ்வொரு கணக்கும் மீண்டும் உள்நுழைய வேண்டும்.\n\nஇப்போது ஒன்றை அமைக்கலாமா?
+
+attachment_saved = இணைப்பு இங்கு சேமிக்கப்பட்டது:\n{path}
+attachments_saved = {count} இணைப்புகள் இங்கு சேமிக்கப்பட்டன:\n{path}
+
+shortcut_created_settings = குறுக்குவழி உருவாக்கப்பட்டது:\n{path}\n\nஇது ZBox ஐ இங்கிருந்து தொடங்கும்:\n{base}
+
+spellcheck_no_dictionary = எழுத்துப்பிழை அகராதி இல்லை, எனவே இந்த ZBox நகலில் எழுத்துப்பிழை சரிபார்ப்பு கிடைக்காது.
+spellcheck_none_found = எழுத்துப் பிழைகள் எதுவும் இல்லை.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = இந்தக் கணினியில் ஒரு கடவுச்சாவியை அமைத்து, மற்றொரு கணினியிலிருந்து சேமித்ததை மறக்கலாமா?\n\nHello மூலம் உறுதிப்படுத்த Windows கேட்கும். மற்றொரு கணினியில் எஞ்சியுள்ள பழைய கடவுச்சாவி அங்கு மாறாது, இந்தக் கோப்புறையை அங்கு எடுத்துச் சென்றால் தொடர்ந்து செயல்படும், ஆனால் அதை மீண்டும் அமைக்க வேண்டும்.
+unlock_replace_passkey_many = இந்தக் கணினியில் ஒரு கடவுச்சாவியை அமைத்து, பிற கணினிகளிலிருந்து சேமித்த {count} ஐ மறக்கலாமா?\n\nHello மூலம் உறுதிப்படுத்த Windows கேட்கும். மற்றொரு கணினியில் எஞ்சியுள்ள பழைய கடவுச்சாவிகள் அங்கு மாறாது, இந்தக் கோப்புறையை அங்கு எடுத்துச் சென்றால் தொடர்ந்து செயல்படும், ஆனால் அவற்றை மீண்டும் அமைக்க வேண்டும்.
+unlock_method_works = அந்த முறை செயல்படுகிறது.
+
+plain_text_password_found = data\config\himalaya.toml இல் பழைய கணக்கு அமைப்பிலிருந்து எளிய உரைக் கடவுச்சொல் (auth.raw) இன்னும் உள்ளது.\n\nஅந்தக் கணக்கை அகற்றி மீண்டும் சேர்க்கவும், அல்லது data\config\himalaya.toml ஐ நீக்கவும், அப்போது அது பாதுகாப்பான நற்சான்றுக் களஞ்சியத்தைப் பயன்படுத்தி மீண்டும் உருவாகும்.
+
+# main_frame's titles.
+title_account_list_unavailable = கணக்குப் பட்டியல் கிடைக்கவில்லை
+title_open_message = செய்தியைத் திற
+title_run_filters = வடிகட்டிகளை இயக்கு
+title_clear_cache = இணைப்பில்லா செய்தித் தற்காலிகச் சேமிப்பை அழி
+title_remove_account = கணக்கை அகற்று
+title_new_folder = புதிய கோப்புறை
+title_rename_folder = கோப்புறையை மறுபெயரிடு
+title_delete_folder = கோப்புறையை நீக்கு
+title_subscribe = குழுசேர்
+title_unsubscribe = குழுசேர்வை நீக்கு
+title_open_saved_message = சேமித்த செய்தியைத் திற
+title_save_message_as = செய்தியை இவ்வாறு சேமி
+title_empty_trash = குப்பைத் தொட்டியைக் காலி செய்
+title_empty_junk = குப்பை அஞ்சலைக் காலி செய்
+title_synchronize_offline = இணைப்பில்லா பயன்பாட்டிற்கு ஒத்திசை
+title_export_accounts = கணக்குகளையும் அமைப்புகளையும் ஏற்றுமதி செய்
+title_import_accounts = கணக்குகளையும் அமைப்புகளையும் இறக்குமதி செய்
+title_show_related = தொடர்புடைய செய்திகளைக் காட்டு
+title_reply = பதிலளி
+title_forward = முன்னனுப்பு
+title_undo = செயல்தவிர்
+title_delete_permanently = நிரந்தரமாக நீக்கு
+title_delete = நீக்கு
+title_copy_to = நகலெடு
+title_archive = காப்பகப்படுத்து
+title_accounts_locked = கணக்குகள் பூட்டப்பட்டன
+
+select_account_first = முதலில் மரத்தில் ஒரு கணக்கைத் தேர்ந்தெடுக்கவும்.
+select_account_or_folder = முதலில் ஒரு கணக்கை அல்லது கோப்புறையைத் தேர்ந்தெடுக்கவும்.
+filters_left_behind = {count} செய்திகள் வடிகட்டிக்குப் பொருந்தின ஆனால் இன்னும் {folder} இல் உள்ளன.
+cache_clear_confirm = அனைத்துக் கணக்குகளுக்கும் இணைப்பில்லா செய்தித் தற்காலிகச் சேமிப்பை அழிக்கலாமா?\n\nஇது ZBox இன் உள்ளூர் நகல்களை மட்டுமே நீக்கும். எந்த அஞ்சல் சேவையகத்திலிருந்தும் எதுவும் அகற்றப்படாது, உங்களுக்குத் தேவைப்படும்போது செய்திகள் மீண்டும் பதிவிறக்கப்படும்.
+account_remove_confirm = {name} ({address}) ஐ அகற்றலாமா?\n\nசேவையகத்திலுள்ள அஞ்சல் நீக்கப்படாது.\nஇந்தக் கணினிக்குப் பதிவிறக்கிய நகல்கள் நீக்கப்படும்.\nசேமித்த கடவுச்சொல் நீக்கப்படும்.
+folder_delete_confirm = {address} க்கு "{folder}" கோப்புறையையும் அதிலுள்ள அனைத்தையும் நிரந்தரமாக நீக்கலாமா?\n\nஇதைச் செயல்தவிர்க்க முடியாது.
+empty_trash_confirm = {address} க்கான குப்பைத் தொட்டியிலுள்ள அனைத்துச் செய்திகளையும் நிரந்தரமாக நீக்கலாமா?\n\nஇதைச் செயல்தவிர்க்க முடியாது.
+empty_junk_confirm = {address} க்கான குப்பை அஞ்சலிலுள்ள அனைத்துச் செய்திகளையும் நிரந்தரமாக நீக்கலாமா?\n\nஇதைச் செயல்தவிர்க்க முடியாது.
+sync_select_account = இணைப்பில்லா பயன்பாட்டிற்காக ஒத்திசைக்க ஒரு கணக்கைத் (ஒருங்கிணைந்த கோப்புறை அல்ல) தேர்ந்தெடுக்கவும்.
+accounts_imported = {count} கணக்குகள் இறக்குமதி செய்யப்பட்டன:\n\n{names}\n\nகடவுச்சொற்கள் ஒருபோதும் ஏற்றுமதி செய்யப்படுவதில்லை, மறையாக்கப்பட்ட கடவுச்சொல் களஞ்சியம் இந்த Windows பயனர் கணக்கிற்கே உரியது, எனவே இறக்குமதி செய்த ஒவ்வொரு கணக்கும் இணைப்பதற்கு முன் கருவிகள் > கணக்கு மற்றும் அடையாள அமைப்புகள் வழியாகத் தனது கடவுச்சொல்லை ஒருமுறை உள்ளிட வேண்டும்.
+accounts_import_none = இந்தக் கோப்பில் கணக்குகள் எதுவும் இல்லை. கோப்பில் அமைப்புகள் இருந்தால் அவை இன்னும் இறக்குமதி செய்யப்பட்டன.
+delete_permanently_confirm_one = இந்தச் செய்தியை நிரந்தரமாக நீக்கலாமா? இது குப்பைத் தொட்டிக் கோப்புறையைத் தவிர்க்கும், செயல்தவிர்க்க முடியாது.
+accounts_locked = சேமித்த கணக்குக் கடவுச்சொற்கள் மற்றொரு கணினியில் எழுதப்பட்டன, எனவே அவற்றை இங்கு படிக்க முடியாது.\n\nஒவ்வொரு கணக்கும் தனது அஞ்சல் சேவையகத்தில் மீண்டும் உள்நுழைய வேண்டும். அடுத்த முறை இதைத் தவிர்க்க, கணக்குகள் ஏற்கனவே செயல்படும் கணினியில் அமைப்புகள், பயன்பாடு மற்றும் தரவுப் பாதுகாப்பு என்பதில் இருந்து முதன்மைக் கடவுச்சொல்லை அமைக்கவும்.
+master_password_remove_confirm = முதன்மைக் கடவுச்சொல்லை அகற்றலாமா? சேமித்த கணக்குக் கடவுச்சொற்களை அதன்பின் இந்தக் கணினியிலும் இந்த Windows கணக்கிலும் மட்டுமே படிக்க முடியும். பிறகு ZBox ஐ வேறு இடத்திற்கு நகலெடுத்தால் ஒவ்வொரு கணக்கும் மீண்டும் உள்நுழைய வேண்டும்.\n\nஇப்போது அகற்றலாமா?
+shortcut_offer = மேசையில் ZBox குறுக்குவழியை வைக்கலாமா?\n\nஇது இந்த ZBox கோப்புறையைத் தொடங்கும்:\n{path}\n\nகுறுக்குவழி அந்த இடத்தையே நினைவில் வைத்திருக்கும். பிறகு ZBox கோப்புறையை நகர்த்தினால், அமைப்புகள், கணினி தட்டு மற்றும் சாளரம் என்பதைத் திறந்து, புதிய இடத்தைச் சுட்ட மேசைக் குறுக்குவழியை உருவாக்கு என்பதை மீண்டும் தேர்ந்தெடுக்கவும்.
+shortcut_created = குறுக்குவழி உருவாக்கப்பட்டது:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = காட்சிப் பெயர்
+form_email_address = மின்னஞ்சல் முகவரி
+form_your_name = உங்கள் பெயர்
+form_login_email = உள்நுழைவு மின்னஞ்சல்
+form_password = கடவுச்சொல்
+srv_imap_host = உள்வரும் (IMAP) சேவையகம்
+srv_imap_port = உள்வரும் போர்ட்
+srv_imap_encryption = உள்வரும் குறியாக்கம்
+srv_smtp_host = வெளிச்செல்லும் (SMTP) சேவையகம்
+srv_smtp_port = வெளிச்செல்லும் போர்ட்
+srv_smtp_encryption = வெளிச்செல்லும் குறியாக்கம்
+
+acct_login_email_label = உள்நுழைவு மின்னஞ்சல் (உள்நுழையப் பயன்படுகிறது)
+acct_new_password_label = புதிய கடவுச்சொல் (தற்போதையதை வைத்திருக்க வெறுமையாக விடவும்)
+acct_new_password_name = புதிய கடவுச்சொல்
+acct_identity_email_label = மின்னஞ்சல் முகவரி (அனுப்பவும் பெறவும் பயன்படுகிறது)
+acct_identities_label = கூடுதல் அடையாளங்கள் (மாற்றுப் பெயர்கள்)
+acct_identities_name = கூடுதல் அடையாளங்கள்
+acct_add_identity = &அடையாளத்தைச் சேர்...
+acct_edit_identity = &அடையாளத்தைத் திருத்து...
+acct_remove_identity = &அடையாளத்தை அகற்று
+acct_signature = கையொப்பம்
+acct_edit_signature = &கையொப்பத்தைத் திருத்து...
+acct_junk_folder = குப்பை அஞ்சல் கோப்புறை
+acct_account_status = கணக்கு நிலை
+acct_disable_account = இந்தக் கணக்கை முடக்கு
+acct_default_account = இயல்புநிலைக் கணக்கு
+acct_set_default = இயல்புநிலைக் கணக்காக அமை
+acct_notifications = புதிய அஞ்சல் அறிவிப்புகள்
+acct_mute_notifications = இந்தக் கணக்கின் அறிவிப்புகளை ஒலியடக்கு
+acct_server_settings = சேவையக அமைப்புகள்
+
+wiz_before_you_start = தொடங்குவதற்கு முன்
+wiz_notice_name = முக்கிய அறிவிப்பு
+wiz_google_instructions = &Google பயன்பாட்டுக் கடவுச்சொல் வழிமுறைகளைத் திற
+wiz_intro = உங்கள் பெயரும் மின்னஞ்சல் முகவரியும்
+wiz_login_same = உள்நுழைவு மின்னஞ்சல் மேலுள்ள மின்னஞ்சல் முகவரியே
+wiz_show_password = &கடவுச்சொல்லைக் காட்டு
+wiz_preset_applied = {name} க்கு முன்னமைவு பயன்படுத்தப்பட்டது.
+wiz_summary_name = கணக்குச் சுருக்கம்
+wiz_review = மதிப்பாய்வு செய்து, இந்தக் கணக்கைச் சேமிக்க முடி என்பதைக் கிளிக் செய்யவும்.
+wiz_test_connection = &இணைப்பைச் சோதி
+wiz_testing = இணைப்பைச் சோதிக்கிறது...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (பிழைத்திருத்தப் பதிவை இயக்கு, இங்கு சேமிக்கப்படும்: data\logs)
+set_language_label = &இடைமுக மொழி:
+set_language_label_only_english = &இடைமுக மொழி: (ஆங்கிலம் மட்டும்)
+set_headers_checkbox = &திறந்த செய்திக்கு மேலே செய்தித் தலைப்புகளைக் காட்டு
+set_zoom_label = செய்தி எழுத்துருவும் பெரிதாக்கமும்:
+set_font_override = &இயல்புநிலைச் செய்தி எழுத்துரு அளவை மீறு
+set_font_size_name = செய்தி எழுத்துரு அளவு (புள்ளிகள்)
+set_reading_font_name = வாசிப்பு எழுத்துரு
+set_reading_font_label = வாசிப்பு எழுத்துரு (இயல்புநிலைக்கு வெறுமையாக விடவும்):
+set_view_label = செய்தியைத் திறக்கும்போது செய்தி உடல் காட்சி:
+set_view_text = உரை
+set_view_html = HTML (வடிவமைத்துக் காட்டப்பட்டது)
+set_engine_label = HTML காட்சி இயந்திரம்:
+set_engine_edge = Edge / WebView2 (நவீனக் காட்சி)
+set_engine_ie = பழைய MSHTML (சிறந்த திரை வாசிப்பான் ஆதரவு)
+set_runtime_label = WebView2 இயக்க நேரம்:
+set_runtime_auto = தானியங்கி — இருந்தால் தொகுக்கப்பட்ட இயக்க நேரத்தைப் பயன்படுத்து (பரிந்துரைக்கப்படுகிறது)
+set_runtime_fixed = தொகுக்கப்பட்ட நிலையான பதிப்பு மட்டும்
+set_runtime_evergreen = கணினி முழுவதற்குமான இயக்க நேரம் (Windows ஆல் புதுப்பிக்கப்படும்)
+set_sr_box = திரை வாசிப்பான் அறிவிப்புக் கட்டுப்பாடு
+set_silence_label = HTML திரை வாசிப்பான் அமைதிப் பிடிப்பு:
+set_silence_name = மில்லி விநாடிகளில் HTML திரை வாசிப்பான் அமைதிப் பிடிப்பு
+set_focus_delay_label = WebView அணுகல் குவிமைய தாமதம்:
+set_focus_delay_name = WebView அணுகல் குவிமைய தாமதம், நிலை 1 முதல் 10 வரை
+set_announce_label = அறிவிப்புப் பிடிப்பு:
+set_announce_name = மில்லி விநாடிகளில் அறிவிப்புப் பிடிப்பு
+set_announce_actions = &செயல்கள், புதிய அஞ்சல் மற்றும் அறிவிப்புகளுக்கான அறிவிப்புகளைப் பேசு
+set_attachment_dir_label = இணைப்புகள் சேமிக்கும் கோப்புறை:
+set_attachment_dir_name = இணைப்புகள் சேமிக்கும் கோப்புறை
+set_browse = &உலாவு…
+set_autosave_label = வரைவு தானியங்கிச் சேமிப்பு இடைவெளி:
+set_autosave_name = விநாடிகளில் வரைவு தானியங்கிச் சேமிப்பு இடைவெளி
+set_auto_purge_label = பழைய குப்பைத் தொட்டி மற்றும் குப்பை அஞ்சலைத் தானாக நீக்கு:
+set_auto_purge_name = இத்தனை நாட்களுக்குப் பிறகு குப்பைத் தொட்டி மற்றும் குப்பை அஞ்சலைத் தானாக நீக்கு
+set_bare_keys = &செய்திப் பட்டியலில் ஒற்றை விசைக் குறுக்குவழிகளான S (நட்சத்திரக் குறி), A (காப்பகம்), J (குப்பை அஞ்சலாகக் குறி)/Shift+J (குப்பை அஞ்சல் அல்ல எனக் குறி), W (இழையைக் கண்காணி), K (இழையைப் புறக்கணி), M (நகர்த்து)/Shift+M (கோப்புறைப் பெயரால் நகர்த்து) மற்றும் C (நகலெடு) ஆகியவற்றை இயக்கு
+set_sound_label = ஒலிகள் மற்றும் அறிவிப்புகள்:
+set_sounds_enabled = &அறிவிப்பு ஒலிகளை இயக்கு
+set_desktop_notifications = &புதிய அஞ்சலுக்கான மேசை அறிவிப்புகளைக் காட்டு
+set_theme_label = ஒலித் தீமை மாற்று:
+set_theme_label_only_default = ஒலித் தீமை மாற்று: (இயல்புநிலைத் தீம் மட்டும்)
+set_security_box = பயன்பாடு மற்றும் தரவுப் பாதுகாப்பு
+set_lock_on_quit = &ZBox முழுமையாக வெளியேறும்போது பூட்டு
+set_private_mode = &தனிப்பட்ட பயன்முறை: இந்தக் கணினியிலோ இயக்ககத்திலோ அஞ்சலை வைத்திருக்காதே
+set_unlock_methods_button = &திறக்கும் முறைகள்…
+set_master_password_button = &முதன்மைக் கடவுச்சொல்…
+set_tray_label = கணினி தட்டு மற்றும் சாளரம்:
+set_minimize_to_tray = &கணினி தட்டுக்குச் சிறிதாக்கு
+set_close_to_tray = &கணினி தட்டுக்கு மூடு
+set_stay_maximized = &ZBox ஐ எப்போதும் பெரிதாக்கியே வை
+set_run_at_startup = &Windows தொடங்கும்போது ZBox ஐ இயக்கு
+set_desktop_shortcut_button = &மேசைக் குறுக்குவழியை உருவாக்கு
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = ஏதாவது தவறினால் சிக்கல்களைக் கண்டறிய பிழைத்திருத்தப் பதிவு உதவும். அதை முடக்கினால் புதிய உள்ளீடுகள் எழுதப்படாது; இருக்கும் பதிவுக் கோப்புகள் நீக்கப்படாது. ZBox அடுத்த முறை தொடங்கும்போது நடைமுறைக்கு வரும்.
+set_language_note = ZBox அடுத்த முறை தொடங்கும்போது நடைமுறைக்கு வரும். மொழிக் கோப்புகள் sounds கோப்புறைக்கு அருகிலுள்ள ZBox இன் lang கோப்புறையில் உள்ள எளிய உரைக் கோப்புகள். ஒன்றைச் சேர்க்க, en கோப்புறையை நகலெடுத்து, நகலையும் அதனுள் உள்ள .lang கோப்பையும் உங்கள் மொழிக் குறியீட்டுக்கு மறுபெயரிட்டு, ஒவ்வொரு சமக்குறிக்கும் வலப்புறமுள்ள உரையை மொழிபெயர்க்கவும். இன்னும் மொழிபெயர்க்கப்படாதவை அமைதியாக இருக்காமல் ஆங்கிலத்தில் பேசப்படும், எனவே பாதி முடிந்த கோப்பையும் பாதுகாப்பாகப் பயன்படுத்தலாம்.
+set_headers_note = அனுப்புநர், பெறுநர், நகல், தேதி மற்றும் பொருள் ஆகியவை உரை மற்றும் HTML காட்சி இரண்டிலும் செய்தி உடலுக்கு மேலே காட்டப்படும். அது இல்லாவிட்டால் தாவலை மூடிப் பட்டியலுக்குத் திரும்பாமல் செய்தியின் உள்ளிருந்து யார் அனுப்பினார் என்பதை அறிய வழியில்லை. குவிமையம் இன்னும் செய்தி உடலிலேயே இருக்கும்; தலைப்புத் தொகுதி ஒரு Shift+Tab தொலைவில் உள்ளது. செய்தி அடுத்த முறை திறக்கப்படும்போது நடைமுறைக்கு வரும்.
+set_zoom_note = திறந்த செய்தியின் சொந்த உரையை, ZBox இன் மற்ற பகுதிகள் மற்றும் Windows இன் காட்சி அளவீட்டிலிருந்து சுதந்திரமாக, பெரிதாக்கும் அல்லது சிறிதாக்கும். உரை மற்றும் HTML காட்சி இரண்டிற்கும் பொருந்தும். "வாசிப்பு எழுத்துரு" விருப்பமாகச் செய்தி உடலுக்கு ஒரு குறிப்பிட்ட எழுத்துருவை (எ.கா. Consolas, OpenDyslexic) கட்டாயப்படுத்தும்; வழக்கமான எழுத்துருவை வைத்திருக்க அதை வெறுமையாக விடவும். காண்க மெனுவில் Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 இந்த உரையாடலைத் திறக்காமல் எழுத்துரு அளவை மட்டும் உயர்த்தும், குறைக்கும் அல்லது மீட்டமைக்கும், மேலும் திறந்துள்ள ஒவ்வொரு செய்திக்கும் உடனே பொருந்தும். இங்கு செய்யும் மாற்றங்கள் சரி என்பதைக் கிளிக் செய்யும்போதும் உடனே பொருந்தும்.
+set_view_note = HTML இயல்புநிலை. இது செய்தியை அனுப்பியபடியே காட்டும், NVDA மற்றும் JAWS அதைப் படிக்கும்: HTML பக்கம் திறக்கும்போது, ZBox உலாவியின் சொந்த அறிவிப்பை அமைதிப்படுத்தி, வாசிப்புச் சுட்டியைச் செய்தியின் முதல் வரியில் வைத்து, பக்கத்துக்குள் ZBox இன் சொந்தக் குறுக்குவழிகள் தொடர்ந்து செயல்பட வைக்கும், குவிமையத்தை அதிலிருந்து வெளியே நகர்த்தும் F6 உட்பட. உரை அதே செய்தியை எளிய, வடிவமைக்கப்படாத உரையாக ஒரு சாதாரணத் திருத்தக் கட்டுப்பாட்டில் காட்டும் -- படங்கள் இல்லை, தளவமைப்பு இல்லை, உலாவி இயந்திரம் நிறுவப்பட்டிருப்பதைச் சார்ந்த எதுவும் இல்லை. எந்தப் பக்கமும் மாற திறந்த செய்தியில் Ctrl+B அழுத்தவும்.
+set_engine_note = Edge நவீன CSS ஐக் காட்டுகிறது ஆனால் பக்கத்தைத் தனிச் செயலாக்கத்தில் இயக்குகிறது, மேலும் wxPython அடைய முடியாத இடைமுகம் வழியாக மட்டுமே தன் உள்ளடக்கத்தைத் திரை வாசிப்பானுக்கு அளிக்கிறது -- எனவே செய்தி படிக்கக்கூடிய எதுவும் இல்லாமல் திறக்கலாம். பழைய MSHTML என்பது Outlook Express மற்றும் Windows Mail பயன்படுத்திய இயந்திரம்: இது அதே செயலாக்கத்தில் இயங்கி வழக்கமான ஆவண மரத்தை வெளியிடுகிறது, எனவே NVDA மற்றும் JAWS அதை எந்த வலைப்பக்கத்தையும் போல உலாவல் பயன்முறையில் படிக்கும். செய்தி அடுத்த முறை திறக்கப்படும்போது நடைமுறைக்கு வரும்.
+set_runtime_note = கணினி முழுவதற்குமான இயக்க நேரத்தை Windows Update பராமரிக்கிறது, எனவே உங்கள் அஞ்சலைப் படிக்கும் இயந்திரம் முன்னறிவிப்பின்றி மாறலாம் — ZBox பற்றி எதுவும் மாறாத கணினியிலும் நன்றாக வேலை செய்த HTML செய்தி காட்சி உடைவது இப்படித்தான். deps கோப்புறையில் தொகுக்கப்பட்ட நகல் ZBox சோதிக்கப்பட்ட சரியான பதிப்பைப் பிணைக்கிறது. ஒன்றை நிறுவ tools\get_webview2.bat ஐ இயக்கவும். தொகுக்கப்பட்ட நகல் இல்லாவிட்டால் ZBox எப்படியும் கணினி முழுவதற்குமான இயக்க நேரத்தைப் பயன்படுத்தும், எனவே அது எப்போதும் தொடங்கும். ZBox அடுத்த முறை தொடங்கும்போது நடைமுறைக்கு வரும்.
+set_sr_intro = செய்தி திறக்கும்போது ZBox உங்கள் திரை வாசிப்பானை எவ்வளவு பேச அனுமதிக்கிறது, மேலும் அதன் சொந்தப் பேச்சு அறிவிப்புகள் எவ்வளவு நேரம் நீடிக்கின்றன.
+set_silence_note = HTML செய்தி திறக்கும்போது, திரை வாசிப்பானின் உலாவி அறிவிப்பை அமைதிப்படுத்த ZBox ஒரு செயற்கை Ctrl அழுத்தத்தை 2 விநாடிகள் வரை பிடித்திருக்கலாம். செய்தியின் பொருள் ஏற்கனவே பக்கத் தலைப்பாகப் பயன்படுத்தப்படுகிறது, இது base64 URL படிக்கப்படுவதைத் தடுக்கிறது, ஆனால் வாசிப்பான் இன்னும் செய்தியின் தொடக்கத்தின் மீது கட்டுப்பாட்டையும் ஆவண வகையையும் அறிவிக்கிறது, எனவே இது இயல்பாக இயக்கத்தில் உள்ளது. அதை அணைக்க முடக்கு என்பதைத் தேர்ந்தெடுக்கவும், அல்லது பேச்சு இன்னும் நழுவினால் நீண்ட நேரத்தைத் தேர்ந்தெடுக்கவும்.
+set_focus_delay_note = HTML செய்தி ஏற்றி முடிந்ததும், உண்மையில் அதற்குக் குவிமையம் தருவதற்கு முன் ZBox இவ்வளவு நேரம் காத்திருக்கும். WebView2 பக்கம் ஏற்றப்பட்டதாகத் தெரிவிப்பதும் Windows அந்தப் பக்கத்தின் அணுகல் மரத்தை முடிப்பதும் ஒரே தருணம் அல்ல; மிக விரைவாகக் குவிப்பது NVDA/JAWS செய்திக்குப் பதிலாகப் பொதுவான "இணைய உள்ளடக்கப் பக்கம்" என்று அறிவிக்கவோ, திறந்த பின் சிறிது நேரம் செய்தி கிடைக்கவில்லை என்று தெரிவிக்கவோ காரணமாகிறது. தேர்வுகள் 0.1 விநாடி முதல் 1 விநாடி வரை. இதைத் தொடர்ந்து கேட்டால் நீண்ட நேரத்தையும், திறப்பது நிலையாக உணர்ந்தால் குறுகிய நேரத்தையும் தேர்ந்தெடுக்கவும், விரைவான திறப்புக்காக.
+set_announce_note = Ctrl+U மற்றும் Ctrl+Shift+U அனுப்புநரைத் தானே மூடிக்கொள்ளும் சிறிய உரையாடலில் தெரிவிக்கும், ஏனெனில் உங்கள் திரை வாசிப்பானில் நிலைப் பட்டி அறிக்கை இயக்கப்பட்டிருந்தால் மட்டுமே நிலைப் பட்டி படிக்கப்படும். அந்த உரையாடல் எவ்வளவு நேரம் இருக்கும் என்பது இதுவே. உங்கள் பேச்சு வேகத்துக்கு ஏற்ப அமைக்கவும்: மிகக் குறுகினால் வாக்கியத்தின் நடுவே மூடிவிடும், இது நோக்கத்தையே பாழாக்கும். எந்த விசையும் அதை முன்கூட்டியே மூடும்; அம்பு விசைகள் மீண்டும் படிக்க அதைத் திறந்தே வைக்கும். விசைக்காகக் காத்திருக்கும் என்பது நீங்கள் ஒன்றை அழுத்தும் வரை அதைத் திறந்து வைக்கும்.
+set_attachment_dir_note = ஒரு செய்தியில் ஒன்றுக்கு மேற்பட்ட இணைப்புகள் இருக்கும்போது "அனைத்தையும் சேமி" இணைப்புகளை எங்கு எழுதும் என்பது. இல்லையெனில் தானாக உருவாக்கப்படும். ஒரே இணைப்புள்ள செய்தி முன்புபோலவே எங்கு சேமிக்க வேண்டும் என்று கேட்கும். இயல்புநிலைக்கு வெறுமையாக விடவும்:\n{path}
+set_autosave_note = நீங்கள் எழுதும்போது திறந்த எழுதும் தாவல் தன்னை வரைவுகளில் எவ்வளவு அடிக்கடி சேமித்துக்கொள்ளும் என்பது. வரைவைச் சேமி (Ctrl+S) எந்த வகையிலும் தேவைப்படும்போது சேமிக்கும், சேமிக்காத எழுத்துள்ள தாவலை மூடும்போது அதைச் சேமிக்க எப்போதும் கேட்கும். முடக்கு தானியங்கிச் சேமிப்பை அணைக்கும். 15 விநாடிகளுக்குக் குறைவானது வழங்கப்படாது -- அது உங்கள் தட்டச்சுடன் போட்டியிடும் சேவையகச் சுற்றுப்பயணமாகும்.
+set_auto_purge_note = குப்பைத் தொட்டி மற்றும் குப்பை அஞ்சலில் செய்திகள் இத்தனை நாட்கள் இருந்தபின் அவற்றை நிரந்தரமாக நீக்கும் -- குப்பைத் தொட்டியைக் காலி செய் மற்றும் குப்பை அஞ்சலைக் காலி செய் தேவைப்படும்போது செய்யும் அதே நிரந்தர நீக்கம், ZBox திறந்திருக்கும்போது நாளுக்கு ஒருமுறை தானாக இயங்கும். இயல்பாக 30 நாட்களில் இயக்கத்தில் உள்ளது. முடக்கு அதை அணைக்கும். செய்தி அகற்றப்பட்டதும் இதைச் செயல்தவிர்க்க முடியாது.
+set_bare_keys_note = இயக்கத்தில் இருக்கும்போது, செய்திப் பட்டியலில் S, A, J, W அல்லது K ஐத் தனியாக அழுத்தினால் உடனே நட்சத்திரக் குறியை மாற்றும், காப்பகப்படுத்தும், தேர்ந்தெடுத்த செய்திகளைக் குப்பை அஞ்சலாகக் குறிக்கும் (Shift+J அவற்றைக் குப்பை அஞ்சல் அல்ல எனக் குறிக்கும்), அல்லது தேர்வு சார்ந்த இழையைக் கண்காணிக்கும்/புறக்கணிக்கும் -- காப்பகப்படுத்து மற்றும் குப்பை அஞ்சலாகக் குறி ஆகியவற்றுக்கு உறுதிப்படுத்தலும் செயல்தவிர்ப்பும் இல்லை. இதை முடக்கினால் S, A, J, W மற்றும் K பட்டியலில் இயல்பான முதல் எழுத்து வழிசெலுத்தலுக்குத் திரும்பும். Ctrl+S மற்றும் Ctrl+Shift+A எந்த வகையிலும் தொடர்ந்து செயல்படும். உடனே நடைமுறைக்கு வரும்.
+set_sounds_note = முன்னேற்றம், புதிய செய்திகள், அனுப்பிய, பதிலளித்த அல்லது முன்னனுப்பிய செயல்கள், நீக்கங்கள் மற்றும் தேடல் முடிவுகளுக்கான சிறு ஒலிகள். முடக்கு பயன்பாட்டிலுள்ள ஒவ்வொரு ஒலியையும் முடக்கும்; திரை வாசிப்பான் மற்றும் நிலைப் பட்டி அறிவிப்புகள் எந்த வகையிலும் பாதிக்கப்படாது.
+set_desktop_notifications_note = மேலுள்ள ஒலிக்குத் தனியாக, ஒவ்வொரு புதிய அஞ்சல் தொகுதிக்கும் ஒரு Windows அறிவிப்பு. முடக்கு அதை எல்லாக் கணக்குகளுக்கும் முடக்கும்; தனிக் கணக்கையும் கணக்கு மற்றும் அடையாள அமைப்புகளில் தனியாக ஒலியடக்கலாம்.
+set_theme_note = தனிப்பயன் தீம்கள் ZBox இன் sounds கோப்புறைக்குள் வைக்கப்படும் கோப்புறைகள், ஒவ்வொன்றும் தனது சொந்த progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav மற்றும் none_found.wav ஐ வழங்கும். இல்லாத தீம் கோப்பு இயல்புநிலை ஒலிக்குத் திரும்பும்.
+set_theme_note_only_default = தனிப்பயன் தீம்கள் ZBox இன் sounds கோப்புறைக்குள் வைக்கப்படும் கோப்புறைகள், ஒவ்வொன்றும் தனது சொந்த progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav மற்றும் none_found.wav ஐ வழங்கும். இல்லாத தீம் கோப்பு இயல்புநிலை ஒலிக்குத் திரும்பும். நீங்கள் மற்றொரு தீம் கோப்புறையைச் சேர்க்கும் வரை "default" மட்டுமே கிடைக்கும்.
+set_lock_note = ZBox தொடங்கும்போது எந்தக் கணக்கும் திறப்பதற்கு முன் உங்கள் திறக்கும் முறைகளில் ஒன்றைக் கேட்கும். அவற்றில் ஏதேனும் ஒன்று போதும்: கடவுச்சாவி, பாதுகாப்புச் சாவி அல்லது முதன்மைக் கடவுச்சொல். தட்டுக்கு மூடுவது வெளியேறுதல் அல்ல, மீண்டும் பூட்டாது; கோப்பு > வெளியேறு மற்றும் தட்டு ஐகானின் வெளியேறு அவ்வாறு செய்யும். எதுவும் பதிவு செய்யப்படாமலும் முதன்மைக் கடவுச்சொல் அமைக்கப்படாமலும் இருந்தால், உங்கள் சொந்த அஞ்சலிலிருந்து உங்களைப் பூட்டிவிடாமல் பூட்டு தவிர்க்கப்படும்.
+set_security_note = மூன்றில் எதையாவது குறியாக்குவது முதன்மைக் கடவுச்சொல் மட்டுமே: இந்தக் கோப்புறை மற்றொரு கணினியில் சேமித்த கணக்குக் கடவுச்சொற்களைத் திறக்க அதுவே அனுமதிக்கிறது. கடவுச்சாவி அல்லது பாதுகாப்புச் சாவி இந்த ஒரு கணினியில் மட்டுமே பயன்பாட்டைத் திறக்கும். ZBox முன்பு பயன்படுத்தப்படாத கணினியில் அவற்றில் எதுவும் முதன்மைக் கடவுச்சொல்லை மாற்றாது.
+set_private_mode_note = செய்திகள் சேவையகத்திலிருந்து படிக்கப்பட்டு நினைவகத்தில் மட்டுமே வைக்கப்படும். இணைப்பில்லா நகல்கள், சேமித்த செய்திகள் அல்லது பிழைத்திருத்தப் பதிவுகள் வைக்கப்படாது, திறந்த இணைப்புகளும் HTML அஞ்சலின் உலாவித் தரவும் ZBox மூடப்படும்போது நீக்கப்படும். மூடுவது ZBox தொடங்கிய ஒவ்வொரு நிரலையும் முடிக்கும், இணைப்பைக் காட்டுபவை உட்பட, கிளிப்போர்டைக் காலி செய்யும், மேலும் தனிப்பட்ட பயன்முறை இந்தக் கணினியிலிருந்தே இயக்கப்பட்டால் தவிர இந்தக் கணினியை நம்புவதை நிறுத்தும். USB இயக்கிகளின் பட்டியல், பக்கக் கோப்பு, வைரஸ் தடுப்பு மற்றும் பிணையப் பதிவுகள் போன்ற எந்த நிரலாலும் அகற்ற முடியாத சில பதிவுகளை Windows இன்னும் வைத்திருக்கும்.
+title_private_mode = தனிப்பட்ட பயன்முறை
+private_mode_need_master = தனிப்பட்ட பயன்முறைக்கு முதன்மைக் கடவுச்சொல் தேவை, ஏனெனில் உங்களுடையதல்லாத கணினியில் உங்கள் கணக்குகளைத் திறப்பது முதன்மைக் கடவுச்சொல் மட்டுமே. முதன்மைக் கடவுச்சொல் பொத்தானால் ஒன்றை அமைத்து, பின் தனிப்பட்ட பயன்முறையை இயக்கவும்.
+private_mode_enter_master = தனிப்பட்ட பயன்முறையை இயக்க முதன்மைக் கடவுச்சொல்லை உள்ளிடவும்.
+private_mode_confirm = தனிப்பட்ட பயன்முறை இந்தக் கணினியிலோ ZBox இயங்கும் இயக்ககத்திலோ உங்கள் அஞ்சல் நகல்களை வைத்திருக்காது. அதை இயக்குவது ZBox இன் இணைப்பில்லா நகல்கள், சேமித்த செய்திகள், திறந்த இணைப்புகள், HTML அஞ்சலின் உலாவித் தரவு மற்றும் பிழைத்திருத்தப் பதிவுகளை நீக்கும். உங்கள் அஞ்சல் சேவையகங்களில் எதுவும் நீக்கப்படாது, உங்கள் கணக்குகள், தொடர்புகள் மற்றும் அமைப்புகள் வைக்கப்படும். தனிப்பட்ட பயன்முறையை இயக்கலாமா?
+set_minimize_note = ZBox ஐச் சிறிதாக்குவது அதன் பணிப்பட்டிப் பொத்தானை மறைத்து, தட்டு ஐகானின் பின்னால் தொடர்ந்து இயங்க விடும். சாளரத்தைத் திரும்பப் பெற தட்டு ஐகானை இடது கிளிக் செய்யவும் (அல்லது அதற்கு விசைப்பலகைக் குவிமையம் இருக்கும்போது Enter/Space அழுத்தவும்).
+set_close_note = சாளரத்தின் மூடு பொத்தான், Alt+F4, மற்றும் அஞ்சல் தாவலில் அழுத்தும் Ctrl+W ஆகியவை ZBox ஐ வெளியேறாமல் தட்டில் மறைக்கும். கோப்பு > வெளியேறு (Ctrl+Shift+Q) மற்றும் தட்டு ஐகானின் சொந்த வெளியேறு எந்த வகையிலும் ZBox ஐ உண்மையாக வெளியேற்றும், எனவே தட்டைத் தொடாமல் வெளியேற எப்போதும் ஒரு விசைப்பலகை வழி உண்டு.
+set_stay_maximized_note = ZBox பெரிதாக்கப்பட்டுத் தொடங்கும், நீங்கள் பெரிதாக்கத்தை நீக்கினால் மீண்டும் பெரிதாக்கப்படும். மெனுப் பட்டி, தலைப்புப் பட்டி மற்றும் சாளர எல்லை பாதிக்கப்படாது -- இது எல்லையற்ற முழுத்திரைப் பயன்முறை அல்ல, எனவே ஒவ்வொரு Alt-விசை மெனுக் குறுக்குவழியும் தொடர்ந்து செயல்படும்.
+set_run_at_startup_note = நீங்கள் Windows இல் உள்நுழையும்போது ZBox ஐத் தானாகத் தொடங்கும், சாளரத்தைக் காட்டாமல் நேரடியாகத் தட்டில் திறக்கும். அடுத்த தொடக்கத்தில் மட்டும் அல்லாமல் உடனே நடைமுறைக்கு வரும்.
+set_desktop_shortcut_note = உங்கள் மேசையில் ZBox குறுக்குவழியை வைக்கும், ஏற்கனவே அங்குள்ளதை மாற்றும். குறுக்குவழி இந்த ZBox கோப்புறையின் சரியான இடத்தைச் சேமிக்கிறது, எனவே ZBox ஐ வேறிடத்திற்கு நகர்த்தினால் அல்லது நகலெடுத்தால், மேசைக் குறுக்குவழியை அங்கு சுட்ட புதிய நகலில் இதை மீண்டும் அழுத்தவும். உடனே நடைமுறைக்கு வரும், சரி க்காகக் காத்திருக்காது.
+
+# The Address Book, its contact form and its groups.
+ab_name = பெயர்
+ab_phone = தொலைபேசி
+ab_notes = குறிப்புகள்
+ab_heading = முகவரிப் புத்தகம்
+ab_contacts = தொடர்புகள்
+ab_new = &புதியது...
+ab_edit = &திருத்து...
+ab_delete = &நீக்கு
+ab_import = &இறக்குமதி...
+ab_export = &ஏற்றுமதி...
+ab_groups_label = குழுக்கள் (அஞ்சல் பட்டியல்கள்)
+ab_groups_name = குழுக்கள்
+ab_new_group = &புதிய குழு...
+ab_rename_group = &குழுவை மறுபெயரிடு...
+ab_delete_group = &குழுவை நீக்கு
+ab_manage_members = &உறுப்பினர்களை நிர்வகி...
+ab_all_contacts = அனைத்துத் தொடர்புகள்
+ab_add_member = சேர் >>
+ab_remove_member = << அகற்று
+ab_members_of = {name} இன் உறுப்பினர்கள்
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &அகராதியில் இல்லை:
+sp_not_in_dictionary_name = அகராதியில் இல்லை
+sp_in_this_line_label = இந்த வரியில்:
+sp_in_this_line_name = இந்த வரியில்
+sp_suggestions_label = &பரிந்துரைகள்:
+sp_suggestions_name = பரிந்துரைகள்
+sp_replace_with_label = &இதனால் மாற்று:
+sp_replace_with_name = இதனால் மாற்று
+sp_replace = &மாற்று
+sp_replace_all = &அனைத்தையும் மாற்று
+sp_ignore = &புறக்கணி
+sp_ignore_all = &அனைத்தையும் புறக்கணி
+sp_add_to_dictionary = &அகராதியில் சேர்
+btn_close = &மூடு
+
+# Privacy and Content Blocking.
+priv_remote_label = செய்திகளில் தொலை உள்ளடக்கம்:
+priv_block_remote = &நான் கேட்கும் வரை தொலை உள்ளடக்கத்தைத் தடு (பரிந்துரைக்கப்படுகிறது)
+priv_blocklist_label = விளம்பரம் மற்றும் கண்காணிப்பான் தடைப் பட்டியல்:
+priv_block_known = &அறியப்பட்ட விளம்பர மற்றும் கண்காணிப்பான் களங்களைத் தடு
+priv_update_daily = &பட்டியலைப் பின்னணியில் தினமும் புதுப்பி
+priv_update_now = &இப்போது புதுப்பி
+priv_junk_label = குப்பை அஞ்சல் விதிகள்:
+priv_check_inbox = &புதிய இன்பாக்ஸ் அஞ்சலைத் தடுக்கப்பட்ட அனுப்புநர்கள் மற்றும் அறியப்பட்ட ஃபிஷிங் இணைப்புகளுடன் சரிபார்
+priv_move_blocked = &தடுக்கப்பட்ட அனுப்புநர்களின் அஞ்சலைத் தானாகக் குப்பை அஞ்சலுக்கு நகர்த்து
+priv_update_phishing = &ஃபிஷிங் பட்டியலை இப்போது புதுப்பி
+priv_blocked_label = தடுக்கப்பட்ட அனுப்புநர்கள்:
+priv_blocked_name = தடுக்கப்பட்ட அனுப்புநர்கள்
+priv_remove_blocked = &தடுக்கப்பட்ட அனுப்புநரை அகற்று
+priv_never_junk_label = ஒருபோதும் குப்பையாகக் கருதப்படாத அனுப்புநர்கள்:
+priv_never_junk_name = ஒருபோதும் குப்பையாகக் கருதப்படாத அனுப்புநர்கள்
+priv_remove_never_junk = &ஒருபோதும் குப்பை அல்லாத அனுப்புநரை அகற்று
+priv_allowed_label = தொலை உள்ளடக்கத்தை ஏற்ற அனுமதிக்கப்பட்ட அனுப்புநர்கள்:
+priv_allowed_name = அனுமதிக்கப்பட்ட அனுப்புநர்கள்
+priv_remove_selected = &தேர்ந்தெடுத்த அனுப்புநரை அகற்று
+
+# Message Filters.
+filt_rule_name = விதிப் பெயர்
+filt_enabled = &இயக்கப்பட்டது
+filt_match_label = பொருத்து:
+filt_match_all = &பின்வரும் அனைத்துடனும் பொருந்து (மற்றும்)
+filt_match_any = &பின்வருவனவற்றில் ஏதேனும் ஒன்றுடன் பொருந்து (அல்லது)
+filt_conditions_label = நிபந்தனைகள் (தவிர்க்க மதிப்பை வெறுமையாக விடவும்):
+filt_condition_field = நிபந்தனை {number} புலம்
+filt_condition_contains = நிபந்தனை {number} கொண்டுள்ளது
+filt_actions_label = செயல்கள்:
+filt_mark_read = &படித்ததாகக் குறி
+filt_flag = &செய்தியை நட்சத்திரக் குறியிடு
+filt_move_label = கோப்புறைக்கு நகர்த்து:
+filt_move_name = கோப்புறைக்கு நகர்த்து
+filt_rules_name = வடிகட்டி விதிகள்
+filt_new = &புதிய விதி...
+filt_edit = &விதியைத் திருத்து...
+filt_delete = &விதியை நீக்கு
+filt_up = &மேலே நகர்த்து
+filt_down = &கீழே நகர்த்து
+filt_run_label = கோப்புறையில் இப்போது இயக்கு:
+filt_run_name = இப்போது இயக்கும் கோப்புறை
+filt_run_now = &இப்போது இயக்கு
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &கடவுச்சாவியால் திற (Windows Hello)
+unl_security_key = &பாதுகாப்புச் சாவியால் திற
+unl_master_password_label = &முதன்மைக் கடவுச்சொல்:
+unl_master_password_name = முதன்மைக் கடவுச்சொல்
+unl_unlock = &திற
+unl_exit = &ZBox ஐ விட்டு வெளியேறு
+unl_methods_label = &பதிவுசெய்த முறைகள்:
+unl_methods_name = பதிவுசெய்த திறக்கும் முறைகள்
+unl_add_passkey = &கடவுச்சாவியைச் சேர்…
+unl_add_key = &பாதுகாப்புச் சாவியைச் சேர்…
+unl_reassign = &கடவுச்சாவியை இந்தக் கணினிக்கு மீண்டும் ஒதுக்கு…
+unl_test = &சோதி…
+unl_remove = &அகற்று
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = அனுப்புநர்
+comp_to = பெறுநர்
+comp_cc = நகல் (Cc)
+comp_bcc = மறைநகல் (Bcc)
+comp_subject = பொருள்
+comp_attach_button = கோப்பை இணை...
+comp_sending = அனுப்புகிறது...
+comp_report_label = &அறிக்கை:
+comp_report_name = அறிக்கை
+comp_refresh = &புதுப்பி
+comp_copy = &நகலெடு
+comp_preview_read = பெறுநர் படிப்பது போல்
+comp_preview_source = அனுப்பப்படவிருக்கும் HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = செய்தி உடல்
+mv_blocked_notice = தடுக்கப்பட்ட உள்ளடக்க அறிவிப்பு
+mv_show_remote = &தொலை உள்ளடக்கத்தைக் காட்டு
+mv_always_allow = &இந்த அனுப்புநரை எப்போதும் அனுமதி
+mv_message_headers = செய்தித் தலைப்புகள்
+mv_attachments = இணைப்புகள்
+mv_attachments_count = இணைப்புகள் ({count})
+mv_save_attachment = சேமி: {filename}
+mv_save_all = அனைத்தையும் சேமி
+mv_html_view = செய்தி HTML காட்சி
+mv_saved_message = சேமித்த செய்தி
+mv_show_remote_tip = இந்தச் செய்தியை அதன் தொலைப் படங்கள் மற்றும் பாணிகளுடன் மீண்டும் ஏற்று. அறியப்பட்ட கண்காணிப்பான்கள் தடுக்கப்பட்டே இருக்கும்.
+mv_always_allow_tip = {sender} இடமிருந்து வரும் ஒவ்வொரு செய்தியிலும் தொலை உள்ளடக்கத்தை ஏற்று.
+
+# The search tab.
+srch_account = கணக்கு
+srch_folder = கோப்புறை
+srch_for = தேடுவது
+srch_look_in = இதில் தேடு
+srch_in_all = அனைத்தும்
+srch_in_subject = பொருள்
+srch_in_from = அனுப்புநர்
+srch_in_to = பெறுநர்
+srch_in_body = உடல்
+srch_date = தேதி
+srch_date_any = எப்போது வேண்டுமானாலும்
+srch_date_today = இன்று
+srch_date_yesterday = நேற்று
+srch_date_week = கடந்த 7 நாட்கள்
+srch_date_month = கடந்த 30 நாட்கள்
+srch_date_year = இந்த ஆண்டு
+srch_date_custom = தனிப்பயன் வரம்பு
+srch_from_date = தொடக்கத் தேதி (ஆண்டு-மாதம்-நாள், விருப்ப நேரம்)
+srch_to_date = முடிவுத் தேதி (ஆண்டு-மாதம்-நாள், விருப்ப நேரம்)
+srch_unread = படிக்காதவை மட்டும்
+srch_flagged = நட்சத்திரக் குறியிட்டவை மட்டும்
+srch_attachment = இணைப்பு உள்ளது
+
+# The signature editor.
+sig_editors = கையொப்பத் திருத்திகள்
+sig_formatted = கையொப்பம், வடிவமைக்கப்பட்டது
+sig_source = கையொப்பம், HTML மூலம்
+sig_plain_label = எளிய உரை மாற்று (HTML உடன் அனுப்பப்படும்)
+sig_plain_name = எளிய உரை மாற்று
+
+# About ZBox.
+about_text_name = ZBox பற்றிய உரை
+about_view_license = &உரிமத்தைக் காண்க...
+about_google = &Google பயன்பாட்டுக் கடவுச்சொற்கள்...
+about_support = &ZBox ஐ ஆதரியுங்கள் -- ஒருவரின் உருவாக்கமும் பராமரிப்பும்
+about_repos = &GitHub இல் Harith இன் பயன்பாட்டுக் களஞ்சியங்கள்
+about_contact = &Harith ஐத் தொடர்பு கொள்
+btn_close_plain = மூடு
+btn_cancel_plain = ரத்துசெய்
+
+# The license window.
+eula_heading = ZBox உரிமம்
+eula_text_name = ZBox உரிம உரை
+eula_third_party = மூன்றாம் தரப்புக் கூறுகளின் உரிமப் பக்கங்கள்:
+eula_agree = &மேலுள்ள விதிமுறைகளை நான் ஏற்கிறேன்
+eula_agree_name = ZBox உரிம விதிமுறைகளைப் படித்து ஏற்கிறேன்
+eula_disagree = &நான் ஏற்கவில்லை
+eula_next = &அடுத்து
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox ஆவணமாக்க உரை
+doc_copy = கிளிப்போர்டுக்கு நகலெடு
+shortcuts_heading = விசைப்பலகைக் குறுக்குவழிகள்
+shortcuts_text_name = விசைப்பலகைக் குறுக்குவழிகள் உரை
+
+# The main window's own panes.
+mf_toolbar = முதன்மைக் கருவிப்பட்டி
+mf_tabs = ZBox தாவல்கள்
+tree_heading = கணக்குகளும் கோப்புறைகளும்
+tree_name = கணக்கு மற்றும் கோப்புறை மரம்
+envlist_heading = செய்திகள்
+envlist_name = செய்திப் பட்டியல்
+rdr_heading = செய்தி
+rdr_name = செய்தி வாசிப்பான்
+conv_heading_one = உரையாடல்: 1 செய்தி
+conv_heading_many = உரையாடல்: {count} செய்திகள்
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} இல் {completed} முடிந்தது.
+bulk_cancelling = ரத்து செய்கிறது -- தற்போதைய செய்தியை முடிக்கிறது...
+cache_clear_now = இணைப்பில்லா செய்தித் தற்காலிகச் சேமிப்பை இப்போது அழி... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, பாதுகாக்கப்பட்டது
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = காட்சிப் பெயர் விருப்பத்திற்குரியது -- இந்தக் கணக்கின் சொந்தப் பெயரில் அனுப்ப அதை வெறுமையாக விடவும்.
+acct_note_identity = உங்கள் வழங்குநர் இந்த அஞ்சல்பெட்டியுடன் இணைத்த தனிப்பயன் களம் இருந்தால் மின்னஞ்சல் முகவரி உள்நுழைவு மின்னஞ்சலிலிருந்து வேறுபடலாம். அஞ்சல் மேலுள்ள முகவரியின் கீழ் அனுப்பப்படும் மற்றும் பெறப்படும், உள்நுழைவு இன்னும் உள்நுழைவு மின்னஞ்சலையே பயன்படுத்தும். இந்தக் கணக்கிற்கு ஏற்கனவே சேமித்த கடவுச்சொல்லை வைத்திருக்க கடவுச்சொல் புலத்தை வெறுமையாக விடவும் -- எடுத்துக்காட்டாக Gmail பயன்பாட்டுக் கடவுச்சொல்லை மாற்றிய பின் புதியதை இங்கு தட்டச்சு செய்யவும்; இல்லையெனில் வெறுமையாக விடவும்.
+acct_note_identities = இந்தக் கணக்கு அனுப்பவும் பதிலளிக்கவும் பயன்படுத்தக்கூடிய பிற முகவரிகள். இவற்றில் ஒன்றுக்கு அனுப்பப்பட்ட செய்திக்குப் பதிலளிக்கும்போது அனுப்புநர் மேலுள்ள முகவரிக்குப் பதிலாக அந்த முகவரியாக இருக்கும்.
+acct_note_signature = இந்தக் கணக்கிலிருந்து அனுப்பப்படும் ஒவ்வொரு புதிய செய்தி, பதில் மற்றும் முன்னனுப்பலுக்கும் "-- " வரிக்குக் கீழே சேர்க்கப்படும். எதுவும் வேண்டாமெனில் வெறுமையாக விடவும். கையொப்பத்தைத் திருத்து வடிவமைக்கப்பட்ட திருத்தியைத் திறக்கும், அங்கு தடித்த எழுத்து, பட்டியல்கள் மற்றும் இணைப்புகள் கிடைக்கும்; மேலுள்ள பெட்டி அதனுடன் செல்லும் எளிய உரைப் பதிப்பைக் கொண்டிருக்கும்.
+acct_note_junk = குப்பை அஞ்சலாகக் குறி செய்திகளை நகர்த்தும் உண்மையான கோப்புறை. "{automatic}" காப்பகப்படுத்து மற்றும் குப்பைத் தொட்டி ஏற்கனவே பயன்படுத்தும் வழங்குநர் அறிந்த அதே யூகத்தைப் பயன்படுத்தும்; அந்த யூகம் தவறாக இருந்தால் அல்லது உங்கள் குப்பை அஞ்சல் கோப்புறைக்குத் தனிப்பயன் பெயர் இருந்தால் மட்டும் இதை அமைக்கவும்.
+acct_note_disable = முடக்கப்பட்ட கணக்கு மீண்டும் இயக்கப்படும் வரை ஒருபோதும் தொடர்பு கொள்ளப்படாது -- IDLE இல்லை, காலமுறைப் புதுப்பிப்பு இல்லை, எதுவுமில்லை. அது இன்னும் மரத்தில் (முடக்கப்பட்டது) எனக் குறிக்கப்பட்டுத் தோன்றும், ஏற்கனவே பதிவிறக்கிய அதன் அஞ்சல் இணைப்பில்லாமல் கிடைக்கும். கணக்குகள் > கணக்கை முடக்கு அல்லது கணக்கின் சொந்தச் சூழல் மெனுவின் அதே மாற்றி; இது அதை அடைய இன்னொரு இடம் மட்டுமே.
+acct_note_default = இந்தக் கணக்கின் கோப்புறைகள் மரத்தில் முதலில் தோன்றும், எழுதும் பகுதியில் கைமுறையாக மாற்றாவிட்டால் புதிய செய்தி இயல்பாக இதிலிருந்து அனுப்பப்படும். பதில் அல்லது முன்னனுப்பல் எந்த முகவரியைப் பயன்படுத்தும் என்பதைப் பாதிக்காது -- அது ஏற்கனவே பதிலளிக்கப்படும் செய்தியைப் பின்பற்றும் (மேலே கூடுதல் அடையாளங்களைப் பார்க்கவும்). எப்போதும் சரியாக ஒரு இயல்புநிலைக் கணக்கு இருக்கும், எனவே மற்றொன்றில் குறியிடாமல் தற்போதைய இயல்புநிலையில் இதன் தேர்வை நீக்கினால் அது மாறாது -- அதற்குப் பதிலாக இயல்புநிலையை மாற்ற வேறொரு கணக்கின் பெட்டியில் குறியிடவும்.
+acct_note_mute = &ஒலியடக்கம் இந்தக் கணக்கின் புதிய அஞ்சல் ஒலி, பேச்சு அறிவிப்பு மற்றும் Windows அறிவிப்பை, அவை வேறு எப்படி உள்ளமைக்கப்பட்டிருந்தாலும், தடுக்கும். இது மற்ற கணக்குகளைப் பாதிக்காது, மேலும் இது இன்னும் அமைப்புகள் > ஒலிகள் மற்றும் அறிவிப்புகளில் உள்ள முதன்மை மாற்றிகளுக்கு உட்பட்டது (ஒட்டுமொத்த ஒலிகளும் மேசை அறிவிப்புகளும்).
+wiz_note_app_password = ZBox க்காக ஏற்கனவே பயன்பாட்டுக் கடவுச்சொல்லை உருவாக்கியிருந்தால், தொடர அடுத்து என்பதை அழுத்தவும்.
+wiz_note_login = உள்நுழைவு நற்சான்றுகள்.\nஉங்கள் உள்நுழைவு மின்னஞ்சல் மேலுள்ள முகவரியிலிருந்து வேறுபட்டால், எடுத்துக்காட்டாக உங்கள் வழங்குநர் கணக்கு login@example.net ஆனால் you@example.org ஆக அனுப்பவும் பெறவும் விரும்பினால், உள்நுழைவு மின்னஞ்சலை இங்கு உள்ளிடவும். தனிப்பயன் அனுப்பும் முகவரியைப் பின்னர் கணக்கு மற்றும் அடையாள அமைப்புகளில் அமைக்கலாம்.
+wiz_note_servers = களம் அடையாளம் காணப்பட்ட இடங்களில் முன்பே நிரப்பப்பட்ட சேவையக அமைப்புகள். வேறுபட வேண்டியவற்றைத் திருத்தவும்.
+wiz_preset_none = இந்தக் களத்துக்கு முன்னமைவு எதுவும் இல்லை. உங்கள் வழங்குநரின் சேவையக அமைப்புகளைக் கைமுறையாக உள்ளிடவும்; உங்கள் வழங்குநரின் உதவிப் பக்கங்கள் அவற்றைப் பட்டியலிடும்.
+ab_note_groups = ஒரு குழுவின் அனைத்து உறுப்பினர்களையும் ஒரே நேரத்தில் நிரப்ப, எழுதும் சாளரத்தின் பெறுநர், நகல் அல்லது மறைநகல் புலத்தில் அதன் பெயரைத் தட்டச்சு செய்யவும்.
+cache_note_intro = இவை ZBox இன் உள்ளூர் நகல்களை மட்டுமே அகற்றும். எந்த அஞ்சல் சேவையகத்திலிருந்தும் எதுவும் நீக்கப்படாது, அகற்றப்பட்ட செய்தி நீங்கள் அடுத்த முறை திறக்கும்போது மீண்டும் பதிவிறக்கப்படும்.
+cache_note_age = ZBox க்குப் பத்து நிமிடங்கள் விசைப்பலகைச் செயல்பாடு இல்லாதபோதும் எந்தச் செய்தியும் திறக்கப்படாதபோதும் தானியங்கித் துப்புரவு நாளுக்கு ஒருமுறை இயங்கும். இது உங்கள் கணக்கில் இன்னும் உள்ள செய்திகள் உட்பட ஒவ்வொரு செய்தியின் சொந்தத் தேதிப்படி செல்லும்.
+filt_note_intro = விதிகள் மேலிருந்து கீழாக வரிசையாக இயங்கி, அனுப்புநர், பெறுநர் மற்றும் பொருளைச் சோதிக்கும். இந்தக் கணக்கின் இன்பாக்ஸுக்குப் புதிய அஞ்சல் வரும்போது தானாகப் பயன்படுத்தப்படும்; ஏற்கனவே ஒரு கோப்புறையில் உள்ள செய்திகளுக்குப் பயன்படுத்த கீழுள்ள இப்போது இயக்கு என்பதைப் பயன்படுத்தவும்.
+filt_note_run_now = மேலுள்ள இயக்கப்பட்ட ஒவ்வொரு விதியையும், வரிசையாக, தேர்ந்தெடுத்த கோப்புறையில் ஏற்கனவே உள்ள ஒவ்வொரு செய்திக்கும் பயன்படுத்தும் -- சரி போலவே முதலில் உங்கள் மாற்றங்களைச் சேமிக்கும்.
+mp_note_intro = இந்தக் கணக்குகள் மற்றொரு கணினியில் அமைக்கப்பட்டவை. அவற்றின் சேமித்த கடவுச்சொற்களை இங்கு திறக்க முதன்மைக் கடவுச்சொல்லை உள்ளிடவும். இந்தக் கணினியில் ஒருமுறை மட்டுமே கேட்கப்படும்.\n\nஅது இல்லாவிட்டால் ஒவ்வொரு கணக்கும் தனது அஞ்சல் சேவையகத்தில் மீண்டும் உள்நுழைய வேண்டும்.
+priv_note_remote = ஒரு செய்தி இணையத்திலிருந்து ஏற்றும் படங்கள், பாணித் தாள்கள் மற்றும் எழுத்துருக்கள், நீங்கள் அதைத் திறந்த தருணத்தையும் எங்கிருந்து என்பதையும் அனுப்புநருக்குத் தெரிவிக்கும். இது இயக்கத்தில் இருந்தால் அவற்றில் எதுவும் ஏற்றப்படாது: எது தடுக்கப்பட்டது என்று கூறும் அறிவிப்பு செய்திக்கு மேலே தோன்றும், Ctrl+Shift+I அந்த ஒரு செய்திக்காக அதை ஏற்றும். செய்தியுடனேயே இணைக்கப்பட்ட படங்கள் எப்போதும் காட்டப்படும். ஸ்கிரிப்டுகளும் உட்பொதிந்த சட்டங்களும் எப்படியும் அகற்றப்படும், ஒருபோதும் ஏற்றப்படாது.
+priv_note_blocklist = இது இரண்டாவது அடுக்கு. நீங்கள் ஒரு செய்தியின் தொலை உள்ளடக்கத்தை ஏற்றும்போது அல்லது ஒரு அனுப்புநரை அனுமதிக்கும்போது இது முக்கியம்: படங்கள் ஏற்றப்படும், ஆனால் அறியப்பட்ட கண்காணிப்பு அல்லது விளம்பரக் களத்திலிருந்து வழங்கப்படும் எதுவும் இன்னும் ஏற்றப்படாது. பட்டியல் பொது விளம்பரம் மற்றும் கண்காணிப்பான் பட்டியல்களிலிருந்து பதிவிறக்கப்பட்டு இணைக்கப்படும்; புதுப்பிக்க ஓரிரு விநாடிகள் ஆகும், பின்னணியில் இயங்கும்.
+priv_note_junk = யூகம் இல்லை. செய்தி அஞ்சல் பட்டியல் வழியாக வந்தால் தவிர, குப்பை அஞ்சலாகக் குறி அனுப்புநரைக் கீழுள்ள தடுக்கப்பட்டோர் பட்டியலில் சேர்க்கும். குப்பை அஞ்சல் அல்ல எனக் குறி அனுப்புநரை ஒருபோதும் குப்பையல்லாதோர் பட்டியலில் சேர்க்கும், அந்தச் செய்தி மீண்டும் சோதிக்கப்படாது. தடுக்கப்பட்ட அனுப்புநரின் புதிய செய்தி பட்டியலில் தடுக்கப்பட்ட அனுப்புநர் எனக் குறிக்கப்படும்; அறியப்பட்ட ஃபிஷிங் அல்லது தீம்பொருள் தளத்துக்கு இணைப்பு கொண்டது ஃபிஷிங்காக இருக்கலாம் எனக் குறிக்கப்படும். உங்கள் அஞ்சல் வழங்குநரின் சொந்த ஸ்பேம் வடிகட்டல் முன்புபோலவே இயங்கும்.
+priv_status_phishing_updating = ஃபிஷிங் பட்டியல்: பின்னணியில் புதுப்பிக்கப்படுகிறது. முடிவைக் காண இந்த உரையாடலை மீண்டும் திறக்கவும்.
+priv_status_updating = பின்னணியில் புதுப்பிக்கப்படுகிறது. முடிவைக் காண இந்த உரையாடலை மீண்டும் திறக்கவும்.
+rel_note_intro = இந்தக் கணக்கின் அனைத்துக் கோப்புறைகளிலும் Message-ID/References தலைப்புகள் மூலம் "{subject}" உடன் தொடர்புடைய செய்திகள்.
+srch_note_intro = அனைத்துக் கணக்குகளிலும் கோப்புறைகளிலும் சொற்களைத் தேடவும், அல்லது கீழுள்ள தேர்வுகளால் தேடலைக் குறுக்கவும். தேதி அல்லது தேர்வுப்பெட்டிகளால் மட்டுமே செய்திகளைக் கண்டறிய சொற்களை வெறுமையாக விடவும்.
+sig_note_plain = எளிய உரை மாற்றை வெறுமையாக விட்டால், நீங்கள் சேமி என்பதை அழுத்தும்போது அது வடிவமைக்கப்பட்ட கையொப்பத்திலிருந்து எழுதப்படும்.
+unified_note_intro = அனைத்துக் கணக்குகளிலும் எந்தக் கோப்புறைகளை இணைக்க வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும். குறியிடப்பட்ட ஒவ்வொன்றும் உங்கள் எல்லாக் கணக்குகளிலிருந்தும் அந்தக் கோப்புறையை இணைக்கும் மரத்திலுள்ள ஒற்றை உள்ளீடாக மாறும்.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ZBox பற்றி
+title_account_settings = கணக்கு மற்றும் அடையாள அமைப்புகள்: {name}
+title_new_account = புதிய கணக்கு
+title_address_book = முகவரிப் புத்தகம்
+title_members = உறுப்பினர்கள்: {name}
+ab_group_name_prompt = குழுப் பெயர்:
+title_new_group = புதிய குழு
+title_cache_cleanup = தற்காலிகச் சேமிப்புத் துப்புரவு உள்ளமைவு
+cache_age_prompt = இதற்கு முந்தைய தற்காலிகச் சேமிப்புச் செய்திகளைத் தானாக அகற்று:
+title_automatic_cleanup = தானியங்கித் துப்புரவு
+comp_link_prompt = இணைப்பு முகவரி:
+title_insert_link = இணைப்பைச் செருகு
+title_composer_diagnostics = எழுதும் பகுதி கண்டறிதல்
+title_formatted_preview = வடிவமைத்த முன்னோட்டம்
+title_license_agreement = ZBox உரிம ஒப்பந்தம்
+title_message_filters = செய்தி வடிகட்டிகள்: {account}
+title_master_password_required = முதன்மைக் கடவுச்சொல் தேவை
+title_privacy_dialog = தனியுரிமை மற்றும் உள்ளடக்கத் தடுப்பு
+title_privacy = தனியுரிமை
+title_settings = அமைப்புகள்
+set_tab_general = பொது
+set_tab_personalization = தனிப்பயனாக்கம்
+set_tab_accessibility = அணுகல்தன்மையும் குறுக்குவழி விசைகளும்
+set_tab_maintenance = பராமரிப்பும் துப்புரவும்
+set_tab_sounds = ஒலிகள் மற்றும் அறிவிப்புகள்
+set_tab_security = பாதுகாப்பு
+title_unified_folders = ஒருங்கிணைந்த கோப்புறைகள்
+title_zbox_locked = ZBox பூட்டப்பட்டுள்ளது
+title_message_view = செய்தி காட்சி
+title_remote_content = தொலை உள்ளடக்கம்
+title_refresh = புதுப்பி
+title_refresh_all = அனைத்தையும் புதுப்பி
+mv_choose_folder = இணைப்பைச் சேமிக்க ஒரு கோப்புறையைத் தேர்ந்தெடுக்கவும்
+title_thread = இழை
+title_inbox = இன்பாக்ஸ்
+title_compose = எழுது
+title_watch_thread = இழையைக் கண்காணி
+title_ignore_thread = இழையைப் புறக்கணி
+title_edit_signature = கையொப்பத்தைத் திருத்து
+title_account = கணக்கு
+mf_folder_name_prompt = கோப்புறைப் பெயர்:
+mf_new_name_prompt = புதிய பெயர்:
+title_refresh_all_accounts = அனைத்துக் கணக்குகளையும் புதுப்பி
+title_sender = அனுப்புநர்
+title_new_mail = புதிய அஞ்சல்
+mf_export_dialog_title = அனைத்து {count} கணக்குகளையும் அமைப்புகளையும் ஏற்றுமதி செய்
+mf_related_tab = தொடர்புடையவை: {subject}
+title_hotkeys_diagnostic = சூடான விசை கண்டறிதல்
+set_choose_attachment_dir = இணைப்புகள் சேமிக்கும் கோப்புறையைத் தேர்ந்தெடுக்கவும்
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox பூட்டப்பட்டுள்ளது. அதைத் திறக்க கீழுள்ள முறைகளில் ஏதேனும் ஒன்றைப் பயன்படுத்தவும். ரத்துசெய்தால் எந்தக் கணக்கையும் திறக்காமல் ZBox மூடப்படும்.
+unl_note_foreign_passkey = இந்தக் கோப்புறையுடன் சேமித்த கடவுச்சாவி மற்றொரு கணினிக்குரியது, எனவே இங்கு பயன்படுத்த முடியாது. உங்கள் பாதுகாப்புச் சாவி அல்லது முதன்மைக் கடவுச்சொல்லால் திறந்து, இந்தக் கணினியில் ஒரு கடவுச்சாவியை அமைக்க அமைப்புகள், தனியுரிமை மற்றும் பாதுகாப்பு, திறக்கும் முறைகள் என்பதைப் பயன்படுத்தவும்.
+unl_note_methods = பயன்பாட்டுப் பூட்டு இயக்கத்தில் இருக்கும்போது, முதன்மைக் கடவுச்சொல்லுடன் சேர்த்து, இவற்றில் ஏதேனும் ஒன்று ZBox ஐத் திறக்கும். கடவுச்சாவி இந்தக் கணினியில் Windows Hello ஐப் பயன்படுத்தும்; பாதுகாப்புச் சாவி என்பது USB அல்லது NFC இல் உள்ள FIDO2 சாவி, நீங்கள் எந்தக் கணினியில் செருகினாலும் வேலை செய்யும்.
+unl_note_not_encryption = இவை பயன்பாட்டைத் திறக்கும். இவை எதையும் குறியாக்குவதில்லை: இந்தக் கோப்புறை முன்பு பயன்படுத்தப்படாத கணினியில் சேமித்த கணக்குக் கடவுச்சொற்களைத் திறக்கக்கூடியது இன்னும் முதன்மைக் கடவுச்சொல் மட்டுமே. அது முதலில் அமைக்கப்பட வேண்டும், அது அமையும் வரை இவற்றில் எதையும் சேர்க்க முடியாது.
+unl_add_passkey_unavailable = &கடவுச்சாவியைச் சேர் (கிடைக்கவில்லை)
+unl_add_key_unavailable = &பாதுகாப்புச் சாவியைச் சேர் (கிடைக்கவில்லை)
+unl_reassign_unavailable = &கடவுச்சாவியை இந்தக் கணினிக்கு மீண்டும் ஒதுக்கு (கிடைக்கவில்லை)
+unl_status_cancelled_passkey = கடவுச்சாவி ரத்து செய்யப்பட்டது. ZBox இன்னும் பூட்டப்பட்டுள்ளது.
+unl_status_cancelled_key = பாதுகாப்புச் சாவி ரத்து செய்யப்பட்டது. ZBox இன்னும் பூட்டப்பட்டுள்ளது.
+unl_status_enter_password = முதன்மைக் கடவுச்சொல்லை உள்ளிடவும்.
+unl_status_no_master = முதன்மைக் கடவுச்சொல் அமைக்கப்படவில்லை, எனவே கடவுச்சாவி அல்லது பாதுகாப்புச் சாவியை இன்னும் சேர்க்க முடியாது. அமைப்புகள், தனியுரிமை மற்றும் பாதுகாப்பில் உள்ள முதன்மைக் கடவுச்சொல் பொத்தானால் ஒன்றை அமைத்து, பின் இங்கு திரும்பவும். முதன்மைக் கடவுச்சொல் மற்றொரு கணினியில் உங்கள் சேமித்த கணக்குக் கடவுச்சொற்களைத் திறக்கும்; கடவுச்சாவி இந்த ஒரு கணினியில் மட்டுமே பயன்பாட்டைத் திறக்கும், எனவே அது தனித்து நிற்க முடியாது.
+unl_status_unsupported = இந்தக் கணினியின் Windows கடவுச்சாவிகளை அல்லது பாதுகாப்புச் சாவிகளை ஆதரிக்காது, எனவே இங்கு ZBox ஐ முதன்மைக் கடவுச்சொல் மட்டுமே திறக்க முடியும்.
+unl_status_foreign_one = 1 கடவுச்சாவி மற்றொரு கணினிக்குரியது, இங்கு ZBox ஐத் திறக்க முடியாது. மீண்டும் ஒதுக்குவது அதை இந்தக் கணினியில் உருவாக்கியதால் மாற்றும்.
+unl_status_foreign_many = {count} கடவுச்சாவிகள் மற்றொரு கணினிக்குரியவை, இங்கு ZBox ஐத் திறக்க முடியாது. மீண்டும் ஒதுக்குவது அவற்றை இந்தக் கணினியில் உருவாக்கியதால் மாற்றும்.
+unl_status_foreign_one_no_hello = 1 கடவுச்சாவி மற்றொரு கணினிக்குரியது, இங்கு ZBox ஐத் திறக்க முடியாது. இங்கு Windows Hello அமைக்கப்படவில்லை, எனவே இந்தக் கணினியில் அதை மாற்ற முடியாது; அகற்று அவற்றை மறக்கும்.
+unl_status_foreign_many_no_hello = {count} கடவுச்சாவிகள் மற்றொரு கணினிக்குரியவை, இங்கு ZBox ஐத் திறக்க முடியாது. இங்கு Windows Hello அமைக்கப்படவில்லை, எனவே இந்தக் கணினியில் அவற்றை மாற்ற முடியாது; அகற்று அவற்றை மறக்கும்.
+unl_status_no_hello = இந்தக் கணினியில் Windows Hello அமைக்கப்படவில்லை, எனவே இங்கு கடவுச்சாவியைச் சேர்க்க முடியாது. பாதுகாப்புச் சாவியைச் சேர்க்கலாம்.
+unl_status_none_registered = திறக்கும் முறைகள் இன்னும் பதிவுசெய்யப்படவில்லை.
+unl_status_add_cancelled_passkey = கடவுச்சாவியைச் சேர்ப்பது ரத்து செய்யப்பட்டது.
+unl_status_add_cancelled_key = பாதுகாப்புச் சாவியைச் சேர்ப்பது ரத்து செய்யப்பட்டது.
+unl_status_added = சேர்க்கப்பட்டது: {name}.
+unl_status_reassign_cancelled = மீண்டும் ஒதுக்குவது ரத்து செய்யப்பட்டது. எதுவும் மாற்றப்படவில்லை.
+unl_status_reassigned = {name} சேர்க்கப்பட்டது, பிற கணினிகளிலிருந்து {count} மறக்கப்பட்டன.
+unl_status_test_cancelled = சோதனை ரத்து செய்யப்பட்டது.
+unl_status_removed = அகற்றப்பட்டது.
+unl_remove_warning_last = {name} ஐ அகற்றலாமா?\n\nஇதுவே பதிவுசெய்த ஒரே திறக்கும் முறை, முதன்மைக் கடவுச்சொல்லும் அமைக்கப்படவில்லை, எனவே பயன்பாட்டுப் பூட்டு இயக்கத்தில் இருந்தால் ZBox ஐத் திறக்க எதுவும் மிஞ்சாது. உங்களைப் பூட்டிவிடாமல் பூட்டு தவிர்க்கப்படும், ஆனால் ZBox அப்போது பூட்டப்படாமல் திறக்கும்.
+unl_remove_warning = {name} ஐ அகற்றலாமா? ZBox இனி அதை ஏற்காது.
+ab_col_email = மின்னஞ்சல்
+ab_col_name = பெயர்
+ab_col_phone = தொலைபேசி
+ab_no_contacts = இன்னும் தொடர்புகள் இல்லை.
+acct_auto_check = புதிய செய்திகளைத் தானாகச் சரிபார்
+acct_note_auto_check = முடக்கம்: ZBox இந்தக் கணக்கைத் தானாக ஒருபோதும் தொடர்பு கொள்ளாது -- புதிய அஞ்சல் கண்காணிப்பு இல்லை, நேரம்சார் புதுப்பிப்பு இல்லை, பின்னணிப் பதிவிறக்கங்கள் இல்லை -- எனவே நம்பகமற்ற சேவையகம் மற்ற கணக்குகளை மெதுவாக்க முடியாது. பதிவிறக்கிய அதன் அஞ்சல் இன்னும் திறக்கும், புதுப்பி (F5), அனுப்புதல் மற்றும் நீக்குதல் இன்னும் சேவையகத்தை அடையும். கருவிகள் மெனு அல்லது கணக்கின் சூழல் மெனுவிலுள்ள தானியங்கி சரிபார்ப்பை இடைநிறுத்து போன்றதே.
+bl_day_ago = 1 நாளுக்கு முன்
+bl_days_ago = {days} நாட்களுக்கு முன்
+bl_label_blocklists = தடைப் பட்டியல்
+bl_label_phishing = ஃபிஷிங் பட்டியல்
+bl_last_failed = கடைசி முயற்சி தோல்வியடைந்தது: %s
+bl_not_downloaded = இன்னும் பதிவிறக்கப்படவில்லை.
+bl_save_failed = %s பதிவிறக்கப்பட்டது ஆனால் சேமிக்க முடியவில்லை: %s
+bl_seed_only = உள்ளமைந்த பட்டியலிலிருந்து %s களங்கள். இணையத்திலிருந்து இன்னும் புதுப்பிக்கப்படவில்லை.
+bl_some_failed = சில மூலங்கள் தோல்வியடைந்தன: %s
+bl_some_unreachable = சில மூலங்களை அடைய முடியவில்லை: %s
+bl_status_line = %s களங்கள். கடைசியாகப் புதுப்பிக்கப்பட்டது %s.
+bl_up_to_date = %s ஏற்கனவே புதுப்பித்த நிலையில் உள்ளது.
+bl_update_failed = %s ஐப் புதுப்பிக்க முடியவில்லை: %s
+bl_updated = %s புதுப்பிக்கப்பட்டது: %s களங்கள்.
+cc_age_choice = %s ஐ விடப் பழைய ஒவ்வொரு செய்தித் தற்காலிகச் சேமிப்பும்
+cc_auto_button = தானியங்கித் துப்புரவு: %s ஐ விடப் பழைய தற்காலிகச் சேமிப்புச் செய்திகள்...
+comp_btn_discard = &நிராகரி
+comp_btn_keep_editing = &திருத்துவதைத் தொடர்
+comp_btn_save_draft = &வரைவைச் சேமி
+comp_no_account = கணக்கு எதுவும் உள்ளமைக்கப்படவில்லை
+comp_saving_draft = வரைவைச் சேமிக்கிறது…
+comp_this_message = இந்தச் செய்தி
+comp_unsent_save_q = மூடுவதற்கு முன் %s ஐ வரைவாகச் சேமிக்கலாமா?
+comp_unsent_tray_q = ZBox தட்டுக்குச் செல்வதற்கு முன் %s ஐ வரைவாகச் சேமிக்கலாமா?
+doc_unreadable = ஆவணமாக்கக் கோப்பைப் படிக்க முடியவில்லை:
+envlist_all_disabled = ஒவ்வொரு கணக்கும் முடக்கப்பட்டுள்ளது.
+envlist_col_date = தேதி
+envlist_col_from = அனுப்புநர்
+envlist_col_status = நிலை
+envlist_col_subject = பொருள்
+envlist_collapsed = சுருக்கப்பட்டது (%d)
+envlist_empty = இந்தக் கோப்புறையில் செய்திகள் இல்லை.
+envlist_loading = செய்திகளை ஏற்றுகிறது...
+envlist_no_accounts = இன்னும் கணக்குகள் உள்ளமைக்கப்படவில்லை.
+envlist_no_ignored = இந்தக் கோப்புறையில் புறக்கணிக்கப்பட்ட இழைகள் இல்லை.
+envlist_no_watched = இந்தக் கோப்புறையில் கண்காணிக்கப்படும் இழைகள் இல்லை.
+envlist_select_folder = செய்திகளை ஏற்ற ஒரு கணக்கை அல்லது கோப்புறையைத் தேர்ந்தெடுக்கவும்.
+eula_link_0 = உங்கள் உலாவியில் Himalaya உரிமப் பக்கத்தைத் திற
+eula_link_1 = உங்கள் உலாவியில் StevenBlack hosts உரிமப் பக்கத்தைத் திற
+eula_link_2 = உங்கள் உலாவியில் EasyList/EasyPrivacy உரிமப் பக்கத்தைத் திற
+eula_link_3 = உங்கள் உலாவியில் Phishing.Database உரிமப் பக்கத்தைத் திற
+eula_read_note = மூன்றாம் தரப்புப் பிரிவுகள் உட்பட கீழுள்ள உரிமத்தைப் படிக்கவும். அடுத்து கிடைப்பதற்கு முன் நான் ஏற்கிறேன் என்பதைத் தேர்ந்தெடுக்க வேண்டும். நான் ஏற்கவில்லை ZBox ஐத் தொடங்காமல் மூடி, இந்த இயக்கம் இதுவரை உருவாக்கியவற்றை அகற்றும்.
+eula_unreadable = உரிமக் கோப்பைப் படிக்க முடியவில்லை:\n%s
+filters_title = வடிகட்டிகளை இயக்கு
+flag_title = செய்தியை நட்சத்திரக் குறியிடு
+folder_type_archive = காப்பகம்
+folder_type_drafts = வரைவுகள்
+folder_type_inbox = இன்பாக்ஸ்
+folder_type_junk = குப்பை அஞ்சல்
+folder_type_sent = அனுப்பியவை
+folder_type_trash = குப்பைத் தொட்டி
+mime_application_json = JSON கோப்பு
+mime_application_msword = Word ஆவணம்
+mime_application_octet_stream = இருமக் கோப்பு
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel விரிதாள்
+mime_application_vnd_ms_powerpoint = PowerPoint விளக்கக்காட்சி
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint விளக்கக்காட்சி
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel விரிதாள்
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word ஆவணம்
+mime_application_xml = XML கோப்பு
+mime_application_zip = ZIP காப்பகம்
+mime_audio_mpeg = MP3 ஒலி
+mime_audio_ogg = OGG ஒலி
+mime_audio_wav = WAV ஒலி
+mime_image_bmp = BMP படம்
+mime_image_gif = GIF படம்
+mime_image_jpeg = JPEG படம்
+mime_image_png = PNG படம்
+mime_image_svg_xml = SVG படம்
+mime_image_webp = WebP படம்
+mime_text_csv = CSV கோப்பு
+mime_text_html = HTML கோப்பு
+mime_text_plain = உரைக் கோப்பு
+mime_video_mp4 = MP4 காணொளி
+mime_video_x_msvideo = AVI காணொளி
+move_title_junk = குப்பை அஞ்சலாகக் குறி
+move_title_move_to = நகர்த்து
+move_title_not_junk = குப்பை அஞ்சல் அல்ல எனக் குறி
+mp_explain_set = முதன்மைக் கடவுச்சொல் அமைக்கப்பட்டுள்ளது. இந்த ZBox கோப்புறை வேறு கணினியில் தனது சேமித்த கணக்குக் கடவுச்சொற்களைத் திறக்க அதுவே அனுமதிக்கிறது.\n\nஅதை அகற்ற இரண்டு புதிய கடவுச்சொல் பெட்டிகளையும் வெறுமையாக விட்டுச் சரி என்பதை அழுத்தவும். அதை அகற்றுவது இந்தக் கணினியைப் பாதிக்காது, ஆனால் ஒவ்வொரு கணக்கும் மீண்டும் உள்நுழையாமல் இந்தக் கோப்புறை வேறு எந்தக் கணினியிலும் இனி செயல்படாது.
+mp_explain_unset = முதன்மைக் கடவுச்சொல் அமைக்கப்படவில்லை, எனவே சேமித்த கணக்குக் கடவுச்சொற்களை இந்தக் கணினியிலும் இந்த Windows கணக்கிலும் மட்டுமே படிக்க முடியும். கோப்புறையை வேறிடத்திற்கு நகலெடுத்தால் ஒவ்வொரு கணக்கும் தனது அஞ்சல் சேவையகத்தில் மீண்டும் உள்நுழைய வேண்டும்.\n\nஒன்றை அமைத்தால் ZBox ஒவ்வொரு புதிய கணினியிலும் ஒருமுறை அதைக் கேட்டு, அதன்பின் அங்கு வழக்கம்போல் திறக்கும். இந்தக் கணினி மீண்டும் கேட்காது.\n\nஅதை எழுதிப் பாதுகாப்பான இடத்தில் வைக்கவும். அது எங்கும் சேமிக்கப்படுவதில்லை, மீட்க முடியாது: மறந்துவிட்டால் ஒவ்வொரு கணக்கும் தனது அஞ்சல் சேவையகத்தில் மீண்டும் உள்நுழைய வேண்டும்.
+mp_label_confirm = &புதிய முதன்மைக் கடவுச்சொல்லை உறுதிப்படுத்து:
+mp_label_current = &தற்போதைய முதன்மைக் கடவுச்சொல்:
+mp_label_master = &முதன்மைக் கடவுச்சொல்:
+mp_label_new = &புதிய முதன்மைக் கடவுச்சொல்:
+mp_name_confirm = புதிய முதன்மைக் கடவுச்சொல்லை உறுதிப்படுத்து
+mp_name_current = தற்போதைய முதன்மைக் கடவுச்சொல்
+mp_name_master = முதன்மைக் கடவுச்சொல்
+mp_name_new = புதிய முதன்மைக் கடவுச்சொல்
+mp_prompt_existing = உங்கள் சேமித்த கணக்குக் கடவுச்சொற்கள் இந்தக் கணினியில் மட்டுமே பாதுகாக்கப்படுகின்றன. ZBox ஐ வேறொன்றுக்கு நகர்த்தினாலும் அவை திறக்கப்படும்படி முதன்மைக் கடவுச்சொல்லை அமைக்கவும்.
+mp_prompt_first_run = ZBox உங்கள் கணக்குக் கடவுச்சொற்களைச் சேமிக்கப்போகிறது. ZBox ஐ வேறொரு கணினிக்கு நகர்த்தினாலும் அவை திறக்கப்படும்படி இப்போதே முதன்மைக் கடவுச்சொல்லை அமைக்கவும்.
+mp_prompt_new_account = ZBox இந்தக் கணக்கின் கடவுச்சொல்லைச் சேமிக்கப்போகிறது. ZBox ஐ வேறொரு கணினிக்கு நகர்த்தினாலும் கணக்கு திறக்கப்படும்படி முதலில் முதன்மைக் கடவுச்சொல்லை அமைக்கவும்.
+mp_removed_done = முதன்மைக் கடவுச்சொல் அகற்றப்பட்டது. சேமித்த கடவுச்சொற்கள் இப்போது இந்தக் கணினியிலும் இந்த Windows கணக்கிலும் மட்டுமே செயல்படும்.
+mp_set_done = முதன்மைக் கடவுச்சொல் அமைக்கப்பட்டது. இந்தக் கோப்புறை திறக்கப்படும் ஒவ்வொரு புதிய கணினியிலும் ZBox அதை ஒருமுறை கேட்டு, அதன்பின் அங்கு வழக்கம்போல் திறக்கும்.
+mv_body_title = செய்தி உடல்
+mv_col_format = வடிவம்
+mv_col_name = பெயர்
+mv_col_size = அளவு
+mv_format_unknown = தெரியாதது
+mv_size_unknown = அளவு தெரியாது
+na_account_settings = கணக்கு மற்றும் அடையாள அமைப்புகள்
+na_disable_account = கணக்கை முடக்கு
+na_edit_signature = கையொப்பத்தைத் திருத்து
+na_message_filters = செய்தி வடிகட்டிகள்
+na_mute_account = கணக்கை ஒலியடக்கு
+na_pause_auto_check = தானியங்கி சரிபார்ப்பை இடைநிறுத்து
+na_remove_account = கணக்கை அகற்று
+na_set_default = இயல்புநிலைக் கணக்காக அமை
+no_offline_copy = %s இன் இணைப்பில்லா நகல் இல்லை. இணைப்பில் இருக்கும்போது அதைத் திறக்கவும், அல்லது கோப்பு, இணைப்பில்லா, இப்போது ஒத்திசை என்பதைப் பயன்படுத்தவும்.
+perm_delete_confirm = {msg} இது குப்பைத் தொட்டிக் கோப்புறையைத் தவிர்க்கும், செயல்தவிர்க்க முடியாது.
+perm_delete_many = {count} செய்திகளை நிரந்தரமாக நீக்கலாமா?
+perm_delete_one = {count} செய்தியை நிரந்தரமாக நீக்கலாமா?
+preset_note_apple = Apple க்கு ஒரு பயன்பாடு சார்ந்த கடவுச்சொல் தேவை.
+preset_note_fastmail = Fastmail க்குப் பயன்பாட்டுக் கடவுச்சொல் தேவை.
+preset_note_google = Google க்குப் பயன்பாட்டுக் கடவுச்சொல் அல்லது OAuth2 தேவை, உங்கள் வழக்கமான கடவுச்சொல் அல்ல.
+preset_note_proton = ProtonMail க்கு ProtonMail Bridge பயன்பாடு உள்ளூரில் இயங்க வேண்டும்.
+preset_note_yahoo = Yahoo க்குப் பயன்பாட்டுக் கடவுச்சொல் தேவை.
+priv_phishing_not_loaded = ஃபிஷிங் பட்டியல்: இன்னும் ஏற்றப்படவில்லை. இந்த விதிகள் இயக்கத்திலும் ZBox இணைப்பிலும் இருக்கும்போது முதல்முறை பதிவிறக்கப்படும்.
+priv_phishing_prefix = ஃபிஷிங் பட்டியல்:
+priv_status_unavailable = தடைப் பட்டியல் நிலை கிடைக்கவில்லை.
+rdr_load_failed = செய்தியை ஏற்ற முடியவில்லை.\n\n{message}
+rdr_loading = செய்தியை ஏற்றுகிறது...
+rdr_select_message = இங்கு படிக்க ஒரு செய்தியைத் தேர்ந்தெடுக்கவும்.
+set_autosave_off = முடக்கம் — கைமுறையாகச் சேமிக்க வரைவைச் சேமி (Ctrl+S) ஐப் பயன்படுத்தவும்
+set_autosave_seconds = ஒவ்வொரு {seconds} விநாடிகளுக்கும்
+set_no_unlock = இங்கு பயன்படுத்தக்கூடிய கடவுச்சாவி அல்லது பாதுகாப்புச் சாவி இல்லை
+set_purge_days = {days} நாட்களுக்குப் பிறகு
+set_purge_off = முடக்கம் — குப்பைத் தொட்டியும் குப்பை அஞ்சலும் தானாக ஒருபோதும் நீக்கப்படாது
+set_purge_one_day = 1 நாளுக்குப் பிறகு
+set_val_seconds = {seconds} விநாடிகள்
+set_val_one_second = 1 விநாடி
+set_silence_off = முடக்கு
+set_announce_wait = விசைக்காகக் காத்திருக்கும்
+set_autosave_minutes = ஒவ்வொரு {minutes} நிமிடங்களுக்கும்
+set_autosave_one_minute = ஒவ்வொரு நிமிடமும்
+set_rt_bundled_installed = தொகுக்கப்பட்ட இயக்க நேரம்: நிறுவப்பட்டுள்ளது.
+set_rt_bundled_many = தொகுக்கப்பட்ட இயக்க நேரம்: %s நிறுவப்பட்டுள்ளது.
+set_rt_bundled_none = தொகுக்கப்பட்ட இயக்க நேரம்: எதுவும் நிறுவப்படவில்லை, எனவே ZBox கணினி முழுவதற்குமானதைப் பயன்படுத்தும்.
+set_rt_bundled_unknown = தொகுக்கப்பட்ட இயக்க நேரம்: தீர்மானிக்க முடியவில்லை.
+set_rt_bundled_ver = தொகுக்கப்பட்ட இயக்க நேரம்: பதிப்பு %s நிறுவப்பட்டுள்ளது.
+set_rt_system_unknown = கணினி முழுவதற்குமான இயக்க நேரம்: பதிப்பைத் தீர்மானிக்க முடியவில்லை.
+set_rt_system_ver = கணினி முழுவதற்குமான இயக்க நேரம்: பதிப்பு %s.
+set_unlock_many = %d திறக்கும் முறைகளை இங்கு பயன்படுத்தலாம்
+set_unlock_unreadable = திறக்கும் முறைகளைப் படிக்க முடியவில்லை
+sig_tab_formatted = வடிவமைக்கப்பட்டது
+sig_tab_source = HTML மூலம்
+srch_all_accounts = அனைத்துக் கணக்குகள்
+srch_all_folders = அனைத்துக் கோப்புறைகள்
+tab_mail = அஞ்சல்
+tab_new_message = புதிய செய்தி
+tab_saved_message = சேமித்த செய்தி
+title_copy_to_err = நகலெடு
+title_mark_message = செய்தியைக் குறி
+title_unsent_message = அனுப்பாத செய்தி
+tree_unified_root = ஒருங்கிணைந்த கோப்புறைகள்
+unlock_kind_passkey = கடவுச்சாவி (Windows Hello)
+unlock_kind_security_key = பாதுகாப்புச் சாவி
+unlock_prompt_message = உறுதிப்படுத்த Windows கேட்கிறது. அதன் தூண்டுதலுக்கு Windows Hello, உங்கள் PIN அல்லது உங்கள் பாதுகாப்புச் சாவியால் பதிலளிக்கவும். Windows முடிந்ததும் இந்தச் சாளரம் தானாக மூடும்.
+unlock_prompt_title = Windows பாதுகாப்பு
+unlock_registering = இந்தத் திறக்கும் முறையைப் பதிவு செய்கிறது
+unlock_the_passkey = கடவுச்சாவி
+unlock_the_security_key = பாதுகாப்புச் சாவி
+wildcard_eml = மின்னஞ்சல் கோப்புகள் (*.eml)|*.eml|அனைத்துக் கோப்புகள் (*.*)|*.*
+wildcard_export = ZBox ஏற்றுமதி (*.json)|*.json
+wiz_not_supported = ஆதரிக்கப்படவில்லை: {name}. {note} இந்தக் கணக்கை ZBox இல் சேர்க்க முடியாது.
+stock_apply = &பயன்படுத்து
+stock_cancel = ரத்துசெய்
+stock_close = &மூடு
+stock_help = &உதவி
+stock_no = &இல்லை
+stock_ok = சரி
+stock_yes = &ஆம்
+wiz_btn_back = &< பின்
+wiz_btn_finish = &முடி
+wiz_btn_next = &அடுத்து >
+acct_unsaved_q = இந்தக் கணக்கின் மாற்றங்களைச் சேமிக்கலாமா?
+btn_save = &சேமி
+spell_add_to_dictionary = &அகராதியில் சேர்
+spell_no_suggestions = பரிந்துரைகள் இல்லை
+title_signature_for = கையொப்பம்: {account}
+title_mark_folder_read = கோப்புறையைப் படித்ததாகக் குறி
+title_update_available = ZBox புதுப்பிப்பு
+update_available = ZBox {new} கிடைக்கிறது. உங்களிடம் {current} உள்ளது.
+upd_notes_label = &வெளியீட்டுக் குறிப்புகள்:
+upd_no_notes = வெளியீட்டுக் குறிப்புகள் இல்லை.
+upd_notes_name = வெளியீட்டுக் குறிப்புகள்
+upd_update_now = &ஆம், இப்போது புதுப்பி
+upd_remind_later = &பின்னர் நினைவூட்டு
+title_update_download = ZBox புதுப்பிப்பைப் பதிவிறக்குகிறது
+upd_downloading = ZBox {version} ஐப் பதிவிறக்குகிறது...
+upd_progress_name = பதிவிறக்க முன்னேற்றம்
+upd_cancel = &ரத்துசெய்
+upd_cancelling = ரத்து செய்கிறது...
+set_updates_label = புதுப்பிப்புகள்:
+set_update_auto = &புதுப்பிப்புகளைத் தானாகச் சரிபார்
+set_update_mode_label = புதுப்பிப்பு கண்டறியப்பட்டால்:
+set_update_ask = &என்னிடம் கேள்
+set_update_silent = &அமைதியாகப் பதிவிறக்கி நிறுவு
+set_update_note = ZBox புதிய வெளியீட்டிற்காக GitHub ஐ நாளுக்கு அதிகபட்சம் ஒருமுறை, செயலற்று இருக்கும்போது மட்டும் சரிபார்க்கும், தனது பதிப்பு எண்ணைத் தவிர வேறெதையும் அனுப்பாது. என்னிடம் கேள் புதிய பதிப்பையும் அதன் வெளியீட்டுக் குறிப்புகளையும் ஆம், இப்போது புதுப்பி மற்றும் பின்னர் நினைவூட்டு என்பவற்றுடன் காட்டும். அமைதியாகப் பதிவிறக்கி நிறுவு செயலற்ற நேரத்தில் புதுப்பிப்பைப் பெற்று, நீங்கள் அடுத்த முறை ZBox ஐ முழுமையாக விட்டு வெளியேறும்போது, நீங்கள் வேலை செய்யும்போது ஒருபோதும் அல்லாமல், நிறுவும். புதுப்பிப்பு ZBox இன் சொந்த நிரல் கோப்புகளை மட்டுமே மாற்றும்: உங்கள் கணக்குகள், கடவுச்சொற்கள், அமைப்புகள், அஞ்சல், பதிவுகள், ஒலித் தீம்கள் மற்றும் நீங்கள் சேர்த்த எந்த மொழியும் தொடப்படாது, புதியது தொடங்காவிட்டால் முந்தைய பதிப்பு வைக்கப்பட்டுத் தானாக மீட்டமைக்கப்படும். உதவி, புதுப்பிப்புகளில் இப்போது புதுப்பிப்புகளைச் சரிபார் என்பதும் கைமுறையாகப் புதுப்பிக்க வெளியீடுகள் பக்கமும் உள்ளன.
+set_update_check_now = &இப்போது சரிபார்
+mv_attachment_button = {filename} ({format})
+att_open = திற
+att_save = சேமி...
+att_save_all = அனைத்து இணைப்புகளையும் சேமி
+title_save_attachment = இணைப்பைச் சேமி
+title_full_headers = முழுத் தலைப்புகள்
+hdr_copy_all = அனைத்தையும் நகலெடு
+acct_identity_own_signature = தனது சொந்தக் கையொப்பத்தைப் பயன்படுத்து
+acct_identity_own_reply_to = தனது சொந்தப் பதில்-முகவரியைப் பயன்படுத்து
+acct_identity_reply_to = பதில்-முகவரி
+acct_identity_always_cc = இந்த முகவரிகளுக்கு எப்போதும் நகல் அனுப்பு
+acct_identity_cc = நகல் முகவரிகள்
+acct_identity_always_bcc = இந்த முகவரிகளுக்கு எப்போதும் மறைநகல் அனுப்பு
+acct_identity_bcc = மறைநகல் முகவரிகள்
+acct_identity_own_folders = தனது சொந்த வரைவுகள் மற்றும் அனுப்பியவை கோப்புறைகளைப் பயன்படுத்து
+acct_identity_drafts = வரைவுகள் கோப்புறை
+acct_identity_sent = அனுப்பியவை கோப்புறை
+acct_identity_own_smtp = தனது சொந்த வெளிச்செல்லும் சேவையகத்தைப் பயன்படுத்து
+acct_identity_smtp_login = வெளிச்செல்லும் உள்நுழைவுப் பெயர்
+acct_identity_smtp_password = வெளிச்செல்லும் கடவுச்சொல்
+acct_identity_test_smtp = &வெளிச்செல்லும் சேவையகத்தைச் சோதி
+acct_identity_note_smtp = இந்த அடையாளத்தின் மின்னஞ்சல் முகவரியுடன் உள்நுழைய உள்நுழைவுப் பெயரை வெறுமையாக விடவும். அனுப்பிய நகல்கள் இன்னும் இந்தக் கணக்கின் அனுப்பியவை கோப்புறைக்கே செல்லும், அல்லது இந்த அடையாளத்துக்குச் சொந்தமானது இருந்தால் அதற்குச் செல்லும்.
+identity_field_required = {field} ஐ நிரப்பவும், அல்லது அதன் பெட்டியின் தேர்வை நீக்கவும்.
+identity_field_invalid = {field} இல் செல்லாத முகவரி உள்ளது.
+identity_folders_required = வரைவுகள் கோப்புறை, அனுப்பியவை கோப்புறை அல்லது இரண்டையும் தேர்ந்தெடுக்கவும், அல்லது அவற்றின் பெட்டியின் தேர்வை நீக்கவும்.
+identity_password_required = வெளிச்செல்லும் கடவுச்சொல்லை உள்ளிடவும்.
+identity_smtp_testing = வெளிச்செல்லும் சேவையகத்தைச் சோதிக்கிறது.
+identity_smtp_ok = வெளிச்செல்லும் சேவையகம் உள்நுழைவை ஏற்றது.
+identity_smtp_failed = வெளிச்செல்லும் சேவையகச் சோதனை தோல்வியடைந்தது.\n\n{error}
+set_bare_keys_note_move = M மற்றும் C தேர்ந்தெடுத்த செய்திகளுக்கான கோப்புறைகளின் நகர்த்து மற்றும் நகலெடு மெனுக்களைத் திறக்கும், Shift+M அவற்றை அங்கு நகர்த்த கோப்புறைப் பெயரின் ஒரு பகுதியைத் தட்டச்சு செய்யும் பெட்டியைத் திறக்கும். இதை முடக்கினால் M மற்றும் C உம் முதல் எழுத்து வழிசெலுத்தலுக்குத் திரும்பும்.
+folder_search_filter = கோப்புறைப் பெயரில் உள்ளது
+folder_search_list = பொருந்தும் கோப்புறைகள்
+folder_search_no_match = அந்தப் பெயருக்குப் பொருந்தும் கோப்புறை இல்லை.
+wiz_signin_method = உள்நுழைவு முறை
+wiz_method_password = கடவுச்சொல்
+wiz_method_microsoft = Microsoft கணக்கு (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft உள்நுழைவு. Outlook.com, Hotmail, Live மற்றும் Microsoft 365 க்கான சேவையக அமைப்புகள் நிரப்பப்பட்டுள்ளன.
+wiz_welcome_notice = Gmail. உங்கள் வழக்கமான Google கடவுச்சொல் மறுக்கப்படும், ஆனால் பயன்பாட்டுக் கடவுச்சொல் செயல்படும். இரு-படி சரிபார்ப்பு முதலில் இயக்கப்பட்டிருக்க வேண்டும். கீழுள்ள பொத்தான் Google இன் வழிமுறைகளைத் திறக்கும்.\n\nOutlook.com, Hotmail, Live மற்றும் Microsoft 365. இவை உங்கள் Microsoft கணக்குடன் உள்நுழையும். உள்நுழைவுப் பக்கத்தில் Microsoft கணக்கைத் தேர்ந்தெடுத்து, உங்கள் உலாவியில் அல்லது குறியீட்டுடன் உள்நுழையவும்.\n\nமற்ற வழங்குநர்கள். வழக்கமான கடவுச்சொல் அல்லது பயன்பாட்டுக் கடவுச்சொல் பொதுவாகச் செயல்படும், உங்கள் வழங்குநரின் உதவிப் பக்கங்கள் சேவையக அமைப்புகளைப் பட்டியலிடும்.
+preset_note_outlook = Outlook.com, Hotmail, Live மற்றும் MSN கணக்குகள் Microsoft கணக்குடன் உள்நுழையும். உள்நுழைவுப் பக்கத்தில் உள்நுழைவு முறையாக Microsoft கணக்கைத் தேர்ந்தெடுக்கவும்.
+ms_status_name = Microsoft உள்நுழைவு நிலை
+ms_browser_button = &உலாவியுடன் உள்நுழை
+ms_code_button = &குறியீட்டுடன் உள்நுழை
+ms_copy_code = &குறியீட்டை நகலெடு
+ms_open_page = &உள்நுழைவுப் பக்கத்தைத் திற
+ms_stop = &காத்திருப்பதை நிறுத்து
+ms_not_configured = இந்த ZBox நகலில் Microsoft உள்நுழைவு அமைக்கப்படவில்லை.
+ms_not_signed_in = இன்னும் உள்நுழையவில்லை. உங்கள் உலாவியுடன், அல்லது எந்தச் சாதனத்திலும் குறியீட்டுடன் உள்நுழையவும்.
+ms_signed_in = {address} ஆக உள்நுழைந்துள்ளீர்கள்.
+ms_signed_in_plain = உள்நுழைந்துள்ளீர்கள்.
+ms_needs_sign_in = இந்தக் கணக்கிற்கான Microsoft உள்நுழைவு மீண்டும் தேவை. உங்கள் உலாவியுடன், அல்லது எந்தச் சாதனத்திலும் குறியீட்டுடன் உள்நுழையவும்.
+ms_reason_cancelled = உள்நுழைவு நிறுத்தப்பட்டது.
+ms_reason_timeout = நேரத்திற்குள் பதில் வரவில்லை.
+ms_reason_denied = அணுகல் அனுமதிக்கப்படவில்லை.
+ms_reason_expired = குறியீடு காலாவதியானது. புதியதைக் கேளுங்கள்.
+ms_reason_network = Microsoft ஐ அடைய முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.
+ms_reason_server = Microsoft கூறியது: {detail}
+ms_page_done = உள்நுழைந்துவிட்டீர்கள். இந்தப் பக்கத்தை மூடி ZBox க்குத் திரும்பலாம்.
+ms_page_failed = உள்நுழைவு முடியவில்லை. விவரங்களுக்கு ZBox க்குத் திரும்பவும்.
+ms_browser_waiting = உங்கள் உலாவி Microsoft இன் உள்நுழைவுப் பக்கத்தைக் காட்டுகிறது. அங்கு உள்நுழைவை முடித்து, பின் ZBox க்குத் திரும்பவும்.
+ms_code_asking = Microsoft இடம் உள்நுழைவுக் குறியீடு கேட்கிறது...
+ms_code_waiting = எந்தச் சாதனத்திலும் {address} ஐத் திறந்து {code} குறியீட்டை உள்ளிடவும். நீங்கள் உள்நுழைந்து முடிக்கும் வரை ZBox இங்கு காத்திருக்கும்.
+ms_failed = உள்நுழைவு முடியவில்லை. {reason}
+ms_code_copied = குறியீடு நகலெடுக்கப்பட்டது.
+offline_inbox_only = இன்பாக்ஸும் காப்பகமும் மட்டுமே இணைப்பில்லா பயன்பாட்டிற்காக வைக்கப்படும். {folder} ஐத் திறக்க இணைப்பில் வாருங்கள்.
+block_sender_rule_name = {sender} ஐத் தடு
+title_block_sender = இந்த அனுப்புநரைத் தடு
+title_unblock_sender = இந்த அனுப்புநரின் தடையை நீக்கு
+set_clear_inbox_cache = இன்பாக்ஸை விட்டு நகரும்போது செய்தித் தற்காலிகச் சேமிப்பை அழி
+set_clear_inbox_cache_note = இயக்கத்தில் இருக்கும்போது, ஒரு செய்தி இன்பாக்ஸை விட்டு வெளியேறியவுடன் அதன் இணைப்பில்லா நகலும் சேமித்த உடலும் நீக்கப்படும், உங்கள் தொலைபேசி போன்ற வேறிடத்தில் அது நீக்கப்பட்டாலோ நகர்த்தப்பட்டாலோகூட, எனவே அது இனி இல்லாத இடத்தில் ஒருபோதும் தோன்றாது. இன்பாக்ஸ் மட்டுமே இந்தக் கோப்புகளை வைத்திருக்கும்; மற்ற ஒவ்வொரு கோப்புறையும் எப்போதும் சேவையகத்திலிருந்தே படிக்கப்படும்.
+empty_trash_all_confirm = அனைத்துக் கணக்குகளின் குப்பைத் தொட்டியிலுள்ள அனைத்துச் செய்திகளையும் நிரந்தரமாக நீக்கலாமா?\n\nஇதைச் செயல்தவிர்க்க முடியாது.
+envlist_col_recipient = பெறுநர்
+envlist_col_correspondents = தொடர்பாளர்கள்
+envlist_col_received = பெறப்பட்டவை
+envlist_col_size = அளவு
+envlist_col_attachments = இணைப்புகள்
+envlist_col_priority = முன்னுரிமை
+envlist_col_junk_status = குப்பை அஞ்சல் நிலை
+envlist_attachment = இணைப்புகள்
+envlist_priority_highest = மிக உயர்ந்தது
+envlist_priority_high = உயர்ந்தது
+envlist_priority_low = தாழ்ந்தது
+envlist_priority_lowest = மிகத் தாழ்ந்தது
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = செய்திப் பட்டியலில் நெடுவரிசைத் தலைப்புகளைக் காட்டு
+pgp_title = OpenPGP சாவி மேலாளர்
+smime_title = S/MIME சான்றிதழ் மேலாளர்
+smime_own = உங்கள் சான்றிதழ்
+smime_expired = காலாவதியானது
+smime_expires = {date} அன்று காலாவதியாகும்
+smime_issuer = வழங்கியவர்
+smime_valid = {start} முதல் {end} வரை செல்லுபடியாகும்
+smime_fingerprint = SHA-256 கைரேகை
+smime_own_key = உங்கள் சான்றிதழ், அதன் தனிப்பட்ட சாவியுடன்: அதற்குக் குறியாக்கப்பட்ட அஞ்சலை இங்கு படிக்கலாம்.
+smime_unavailable = இந்த ZBox நகலில் S/MIME கிடைக்கவில்லை.
+smime_details = சான்றிதழ் விவரங்கள்
+smime_no_certs = இன்னும் சான்றிதழ்கள் இல்லை. உங்கள் சொந்த .p12 அல்லது .pfx கோப்பை, அல்லது ஒரு தொடர்பாளரின் சான்றிதழை இறக்குமதி செய்யவும்.
+smime_import_failed = சான்றிதழை இறக்குமதி செய்ய முடியவில்லை: {error}
+smime_import_title = சான்றிதழ் கோப்பை இறக்குமதி செய்
+smime_password_prompt = {name} இன் கடவுச்சொல்லை உள்ளிடவும்.
+smime_password_title = சான்றிதழ் கடவுச்சொல்
+smime_imported = சான்றிதழ் இறக்குமதி செய்யப்பட்டது.
+smime_export_title = சான்றிதழை ஏற்றுமதி செய்
+smime_exported = சான்றிதழ் ஏற்றுமதி செய்யப்பட்டது.
+smime_delete_confirm = {name} இன் சான்றிதழை நீக்கலாமா? அது உங்களுடையதாக இருந்தால், அதற்குக் குறியாக்கப்பட்ட அஞ்சலை இனி இங்கு படிக்க முடியாது.
+smime_deleted = சான்றிதழ் நீக்கப்பட்டது.
+smime_rs_verified = இந்தச் செய்தியில், Windows நம்பும் அதிகாரம் அனுப்புநரின் முகவரிக்கு வழங்கிய சான்றிதழிலிருந்து செல்லுபடியாகும் S/MIME கையொப்பம் உள்ளது.
+smime_rs_unverified = இந்தச் செய்தியில் செல்லுபடியாகும் S/MIME கையொப்பம் உள்ளது, ஆனால் அதன் சான்றிதழ் Windows நம்பும் அதிகாரத்தால் வழங்கப்படவில்லை.
+smime_rs_mismatch = இந்தச் செய்தியில் S/MIME கையொப்பம் உள்ளது, ஆனால் அனுப்புநரின் முகவரி கையொப்பமிட்டவரின் சான்றிதழுடன் பொருந்தவில்லை.
+smime_rs_technical = இந்தச் செய்தியில் S/MIME கையொப்பம் உள்ளது, ஆனால் அது செய்தியுடன் பொருந்தவில்லை. கையொப்பமிட்ட பிறகு செய்தி மாற்றப்பட்டிருக்கலாம்.
+smime_rs_signer = கையொப்பமிட்டவர்: {name}
+smime_rs_issuer = சான்றிதழ் வழங்கியவர்: {issuer}
+smime_rs_import_hint = அதைப் படிக்க, கருவிகள், S/MIME சான்றிதழ் மேலாளரில் உங்கள் S/MIME சான்றிதழை அதன் தனிப்பட்ட சாவியுடன், .p12 அல்லது .pfx கோப்பாக, இறக்குமதி செய்யவும்.
+pgp_details = சாவிப் பண்புகள்
+pgp_generate = &புதிய சாவி இணை
+smime_import = &சான்றிதழ் கோப்பை இறக்குமதி செய்
+smime_export = &சான்றிதழை ஏற்றுமதி செய்
+smime_delete = &சான்றிதழை நீக்கு
+pgp_import_file = &OpenPGP சாவிக் கோப்பை இறக்குமதி செய்
+pgp_import_file_title = OpenPGP சாவிக் கோப்பை இறக்குமதி செய்
+pgp_import_clip = &கிளிப்போர்டிலிருந்து சாவிகளை இறக்குமதி செய்
+pgp_export = &பொதுச் சாவியைக் கோப்பிற்கு ஏற்றுமதி செய்
+pgp_copy = &பொதுச் சாவியை நகலெடு
+pgp_backup = &இரகசியச் சாவியைக் கோப்பிற்கு காப்புப்பிரதி எடு
+pgp_props = &சாவிப் பண்புகள்
+pgp_revoke = &சாவியை ரத்து செய்
+pgp_delete = &சாவியை நீக்கு
+pgp_expires = காலாவதி: {date}
+pgp_never_expires = காலாவதியாகாது
+pgp_expired = காலாவதியானது
+pgp_revoked = ரத்து செய்யப்பட்டது
+pgp_fingerprint = கைரேகை
+pgp_key_id = சாவி ID
+pgp_created = உருவாக்கப்பட்டது
+pgp_acceptance = உங்கள் ஏற்பு
+pgp_acc_rejected = இல்லை, இந்தச் சாவியை நிராகரி.
+pgp_acc_undecided = இன்னும் இல்லை, பிறகு பார்க்கலாம்.
+pgp_acc_unverified = ஆம், ஆனால் இது சரியான சாவி என்று நான் சரிபார்க்கவில்லை.
+pgp_acc_verified = ஆம், இந்தச் சாவிக்குச் சரியான கைரேகை உள்ளது என்று நேரில் சரிபார்த்தேன்.
+pgp_personal_no = இல்லை, இதை எனது தனிப்பட்ட சாவியாகப் பயன்படுத்தாதே.
+pgp_personal_yes = ஆம், இந்தச் சாவியைத் தனிப்பட்ட சாவியாகக் கருது.
+pgp_verify_hint = இது உண்மையிலேயே {addr} இன் சாவிதான் என்பதை உறுதிசெய்ய, மின்னஞ்சல் அல்லாத பாதுகாப்பான தொடர்பு வழியில் சாவியின் கைரேகையைச் சரிபார்க்கவும்.
+pgp_gen_title = OpenPGP சாவியை உருவாக்கு
+pgp_gen_identity = அடையாளம்
+pgp_gen_type = சாவி வகை:
+pgp_gen_ecc = ECC (நீள்வட்ட வளைவு)
+pgp_gen_expiry = சாவி காலாவதி
+pgp_gen_no_expiry = சாவி காலாவதியாகாது
+pgp_gen_button = சாவியை உருவாக்கு
+pgp_gen_confirm = {identity} க்குப் பொது மற்றும் இரகசியச் சாவியை உருவாக்கலாமா?
+pgp_gen_progress = உங்கள் புதிய OpenPGP சாவியை உருவாக்குகிறது…
+pgp_gen_done = OpenPGP சாவி வெற்றிகரமாக உருவாக்கப்பட்டது!
+pgp_gen_failed = OpenPGP சாவி உருவாக்கம் எதிர்பாராமல் தோல்வியடைந்தது
+pgp_import_none = சாவிகள் எதுவும் இறக்குமதி செய்யப்படவில்லை.
+pgp_import_done = OpenPGP சாவிகள் வெற்றிகரமாக இறக்குமதி செய்யப்பட்டன!
+pgp_passphrase_title = கடவுச்சொற்றொடர் தேவை
+pgp_unlock_failed = சாவி, அல்லது சாவியின் துணைப் பகுதிகளைத் திறக்க முடியவில்லை.
+pgp_backup_title = உங்கள் OpenPGP சாவியைக் காப்புப்பிரதி எடுக்கக் கடவுச்சொல்லைத் தேர்ந்தெடுக்கவும்
+pgp_backup_message = நீங்கள் இங்கு அமைக்கும் கடவுச்சொல், நீங்கள் உருவாக்கவிருக்கும் OpenPGP இரகசியச் சாவிக் காப்புப்பிரதிக் கோப்பைப் பாதுகாக்கும். காப்புப்பிரதியுடன் தொடர இந்தக் கடவுச்சொல்லை நீங்கள் அமைக்க வேண்டும்.
+pgp_backup_pw = இரகசியச் சாவிக் காப்புப்பிரதிக் கடவுச்சொல்:
+pgp_backup_pw2 = இரகசியச் சாவிக் காப்புப்பிரதிக் கடவுச்சொல் (மீண்டும்):
+pgp_backup_done = இரகசியச் சாவி வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டது!
+pgp_export_done = பொதுச் சாவி வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டது!
+pgp_copied = சாவி(கள்) கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டன
+pgp_revoke_done = சாவி வெற்றிகரமாக ரத்து செய்யப்பட்டது.
+pgp_personal = தனிப்பட்ட சாவி
+pgp_no_keys = இன்னும் சாவிகள் இல்லை. புதிய சாவி இணையை உருவாக்கவும் அல்லது ஒரு சாவியை இறக்குமதி செய்யவும்.
+pgp_unavailable = இந்த ZBox நகலில் OpenPGP கிடைக்கவில்லை.
+pgp_gen_expires_3y = சாவி 3 ஆண்டுகளில் காலாவதியாகும்
+pgp_gen_no_identity = முதலில் ஒரு மின்னஞ்சல் கணக்கைச் சேர்க்கவும்.
+pgp_import_confirm = இந்தச் சாவிகளை இறக்குமதி செய்யலாமா?\n\n{keys}
+pgp_passphrase_prompt = {name} இன் இரகசியச் சாவிக்கான கடவுச்சொற்றொடரை உள்ளிடவும்.
+pgp_clip_empty = கிளிப்போர்டில் OpenPGP சாவி இல்லை.
+pgp_pw_mismatch = இரண்டு கடவுச்சொற்களும் பொருந்தவில்லை.
+pgp_backup_open = இந்தக் கோப்பு ஓர் இரகசியச் சாவிக் காப்புப்பிரதி. அதன் காப்புப்பிரதிக் கடவுச்சொல்லை உள்ளிடவும்.
+pgp_revoke_confirm = {name} இன் சாவியை ரத்து செய்யலாமா? ரத்து செய்த சாவியை ஒருபோதும் மீண்டும் பயன்படுத்த முடியாது. பிறர் அதைப் பயன்படுத்துவதை நிறுத்த, ரத்து செய்த பொதுச் சாவியைப் பகிரவும்.
+pgp_delete_public_confirm = {name} இன் பொதுச் சாவியை நீக்கலாமா?
+pgp_delete_secret_confirm = உங்கள் தனிப்பட்ட சாவி {name} ஐ நீக்கலாமா? அதற்குக் குறியாக்கப்பட்ட அஞ்சலை இனி ஒருபோதும் படிக்க முடியாது. தேவைப்படலாம் எனில் முதலில் இரகசியச் சாவியைக் காப்புப்பிரதி எடுக்கவும்.
+pgp_select_key = முதலில் ஒரு சாவியைத் தேர்ந்தெடுக்கவும்.
+pgp_save_failed = சாவிகளைச் சேமிக்க முடியவில்லை: {error}
+pgp_publish = &வெளியிடு
+pgp_publish_ok = பொதுச் சாவி "{keyserver}" க்கு அனுப்பப்பட்டது.
+pgp_publish_fail = உங்கள் பொதுச் சாவியை "{keyserver}" க்கு அனுப்ப முடியவில்லை.
+pgp_publish_suggest = பொதுச் சாவியைச் சாவிச் சேவையகத்தில் வெளியிடுவது பிறர் அதைக் கண்டறிய உதவும்.
+pgp_publish_question = இப்போது அதை {keyserver} இல் வெளியிடலாமா? சேவையகம் பின் {addresses} க்கு ஒரு சரிபார்ப்பு மின்னஞ்சல் அனுப்பும். அதிலுள்ள இணைப்பைத் திறந்ததும் உங்கள் முகவரி கண்டறியத்தக்கதாகும்.
+pgp_publish_sent = {addresses} க்குச் சரிபார்ப்பு மின்னஞ்சல் அனுப்பப்பட்டது. உங்கள் முகவரி மூலம் உங்கள் சாவி கண்டறியப்பட அதிலுள்ள இணைப்பைத் திறக்கவும்.
+pgp_publish_already = ஏற்கனவே {addresses} மூலம் கண்டறியத்தக்கது.
+pgp_rs_no_sig = எண்ணிமக் கையொப்பம் இல்லை
+pgp_rs_no_sig_info = இந்தச் செய்தியில் அனுப்புநரின் எண்ணிமக் கையொப்பம் இல்லை. எண்ணிமக் கையொப்பம் இல்லாதது, இந்த மின்னஞ்சல் முகவரி தன்னுடையது போல் நடிக்கும் ஒருவர் செய்தியை அனுப்பியிருக்கலாம் என்பதைக் குறிக்கிறது. பிணையம் வழியாகச் செல்லும்போது செய்தி மாற்றப்பட்டிருக்கவும் வாய்ப்புண்டு.
+pgp_rs_uncertain = உறுதியற்ற எண்ணிமக் கையொப்பம்
+pgp_rs_uncertain_date = உறுதியற்ற எண்ணிமக் கையொப்பம் - {date} அன்று கையொப்பமிடப்பட்டது
+pgp_rs_invalid = செல்லாத எண்ணிமக் கையொப்பம்
+pgp_rs_invalid_date = செல்லாத எண்ணிமக் கையொப்பம் - {date} அன்று கையொப்பமிடப்பட்டது
+pgp_rs_good = நல்ல எண்ணிமக் கையொப்பம்
+pgp_rs_good_date = நல்ல எண்ணிமக் கையொப்பம் - {date} அன்று கையொப்பமிடப்பட்டது
+pgp_rs_no_key = இந்தச் செய்தியில் எண்ணிமக் கையொப்பம் உள்ளது, ஆனால் அது சரியானதா என்பது உறுதியில்லை. கையொப்பத்தைச் சரிபார்க்க, அனுப்புநரின் பொதுச் சாவியின் நகலைப் பெற வேண்டும்.
+pgp_rs_uid_mismatch = இந்தச் செய்தியில் எண்ணிமக் கையொப்பம் உள்ளது, ஆனால் பொருத்தமின்மை கண்டறியப்பட்டது. கையொப்பமிட்டவரின் பொதுச் சாவியுடன் பொருந்தாத மின்னஞ்சல் முகவரியிலிருந்து செய்தி அனுப்பப்பட்டது.
+pgp_rs_not_accepted = இந்தச் செய்தியில் எண்ணிமக் கையொப்பம் உள்ளது, ஆனால் கையொப்பமிட்டவரின் சாவி உங்களுக்கு ஏற்புடையதா என்பதை நீங்கள் இன்னும் முடிவு செய்யவில்லை.
+pgp_rs_rejected = இந்தச் செய்தியில் எண்ணிமக் கையொப்பம் உள்ளது, ஆனால் கையொப்பமிட்டவரின் சாவியை நிராகரிக்க நீங்கள் ஏற்கனவே முடிவு செய்துள்ளீர்கள்.
+pgp_rs_technical = இந்தச் செய்தியில் எண்ணிமக் கையொப்பம் உள்ளது, ஆனால் தொழில்நுட்பப் பிழை கண்டறியப்பட்டது. செய்தி சிதைந்திருக்கலாம், அல்லது வேறு யாராவது அதை மாற்றியிருக்கலாம்.
+pgp_rs_unverified = இந்தச் செய்தியில் நீங்கள் ஏற்கனவே ஏற்ற சாவியிலிருந்து செல்லுபடியாகும் எண்ணிமக் கையொப்பம் உள்ளது. எனினும், அந்தச் சாவி உண்மையில் அனுப்புநருக்கே சொந்தமானது என்பதை நீங்கள் இன்னும் சரிபார்க்கவில்லை.
+pgp_rs_verified = இந்தச் செய்தியில் சரிபார்க்கப்பட்ட சாவியிலிருந்து செல்லுபடியாகும் எண்ணிமக் கையொப்பம் உள்ளது.
+pgp_rs_own_key = இந்தச் செய்தியில் உங்கள் தனிப்பட்ட சாவியிலிருந்து செல்லுபடியாகும் எண்ணிமக் கையொப்பம் உள்ளது.
+pgp_rs_signer_id = கையொப்பமிட்டவரின் சாவி ID: {keyid}
+pgp_rs_decrypt_id = உங்கள் மறைவிலக்கல் சாவி ID: {keyid}
+pgp_rs_enc_none = செய்தி குறியாக்கப்படவில்லை
+pgp_rs_enc_none_info = இந்தச் செய்தி அனுப்பப்படுவதற்கு முன் குறியாக்கப்படவில்லை. குறியாக்கம் இல்லாமல் இணையத்தில் அனுப்பப்படும் தகவலை இடையில் பிறர் பார்க்கலாம்.
+pgp_rs_enc_invalid = செய்தியை மறைவிலக்க முடியாது
+pgp_rs_enc_invalid_info = இந்தச் செய்தி உங்களுக்கு அனுப்பப்படுவதற்கு முன் குறியாக்கப்பட்டது, ஆனால் அதை மறைவிலக்க முடியாது.
+pgp_rs_enc_valid = செய்தி குறியாக்கப்பட்டது
+pgp_rs_enc_valid_info = இந்தச் செய்தி உங்களுக்கு அனுப்பப்படுவதற்கு முன் குறியாக்கப்பட்டது. குறியாக்கம், செய்தியை நோக்கம் கொள்ளப்பட்ட பெறுநர்கள் மட்டுமே படிக்க முடியும் என்பதை உறுதி செய்கிறது.
+pgp_rs_field = செய்திப் பாதுகாப்பு
+pgp_rs_import = OpenPGP சாவியை இறக்குமதி செய்
+pgp_rs_open_to_unlock = கடவுச்சொற்றொடரை உள்ளிட செய்தியைத் திறக்கவும்.
+pgp_rs_reply_not_quoted = மூலச் செய்தி குறியாக்கப்பட்டிருந்தது, எனவே அதன் உரை இங்கு மேற்கோள் காட்டப்படவில்லை.
+pgp_cm_encrypt = குறியாக்கு
+pgp_cm_sign = எண்ணிமக் கையொப்பமிடு
+pgp_e2e_title = முனை-முதல்-முனை குறியாக்கம்
+acct_e2e_button = &முனை-முதல்-முனை குறியாக்கம்...
+pgp_e2e_none = இந்த அடையாளத்திற்கு OpenPGP ஐப் பயன்படுத்தாதே.
+pgp_e2e_disable = புதிய செய்திகளுக்குக் குறியாக்கத்தை முடக்கு
+pgp_e2e_enable = புதிய செய்திகளுக்குக் குறியாக்கத்தை இயக்கு
+pgp_e2e_enable_info = தனிப்பட்ட செய்திகளுக்குக் குறியாக்கத்தை முடக்க முடியும்.
+pgp_e2e_sign = குறியாக்கப்படாத செய்திகளுக்குக் கையொப்பமிடு
+pgp_e2e_signing_info = எண்ணிமக் கையொப்பம், செய்தி உங்களால் அனுப்பப்பட்டது என்பதையும் அதன் உள்ளடக்கம் மாற்றப்படவில்லை என்பதையும் பெறுநர்கள் சரிபார்க்க அனுமதிக்கிறது. குறியாக்கப்பட்ட செய்திகள் இயல்பாக எப்போதும் கையொப்பமிடப்படும்.
+pgp_e2e_autocrypt = Autocrypt உடன் இணக்கத்திற்காக மின்னஞ்சல் தலைப்புகளில் OpenPGP பொதுச் சாவி(களை) அனுப்பு
+pgp_not_set_up = {addr} இலிருந்து முனை-முதல்-முனை குறியாக்கப்பட்ட செய்திகளை அனுப்ப நீங்கள் அமைக்கப்படவில்லை.
+pgp_cannot_encrypt = குறியாக்க முடியாது
+pgp_do_you_accept = எண்ணிமக் கையொப்பங்களைச் சரிபார்க்கவும் செய்திகளைக் குறியாக்கவும் இந்தச் சாவியை ஏற்கிறீர்களா?
+pgp_searching = தேடுகிறது…
+pgp_no_key_found = குறிப்பிட்ட தேடல் அளவுகோல்களுக்குப் பொருந்தும் பயன்படுத்தத்தக்க சாவி எதையும் எங்களால் கண்டறிய முடியவில்லை.
+pgp_source_autocrypt = Autocrypt தலைப்பு
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = சாவிச் சேவையகம்
+pgp_discover = &இணையத்தில் சாவிகளைக் கண்டறி
+pgp_cm_attach_key = எனது பொதுச் சாவியை இணை
+pgp_e2e_key_label = {address} க்கான தனிப்பட்ட சாவி
+pgp_e2e_auto = தானியங்கி: இந்த முகவரிக்கான உங்கள் தனிப்பட்ட சாவி
+pgp_e2e_no_key = {address} க்கு ZBox இல் தனிப்பட்ட OpenPGP சாவி இல்லை. கருவிகள், OpenPGP சாவி மேலாளரில் ஒன்றை உருவாக்கவும்.
+pgp_e2e_new_messages = புதிய செய்திகளுக்கான குறியாக்கம்
+pgp_e2e_key_missing = சாவி {keyid}, கிடைக்கவில்லை
+pgp_missing_keys = இந்தப் பெறுநர்களுக்குப் பயன்படுத்தத்தக்க, ஏற்கப்பட்ட சாவி இல்லை:\n\n{addresses}\n\nசெய்தியைக் குறியாக்கி அனுப்ப முடியாது.
+pgp_send_unencrypted = &குறியாக்கம் இல்லாமல் அனுப்பு
+pgp_collected_found = இந்தப் பெறுநர்களுக்கான சாவிகள் அவர்கள் உங்களுக்கு அனுப்பிய அஞ்சலில் கிடைத்தன:
+pgp_lookup_q = இந்தப் பெறுநர்களுக்கான சாவிகளை இணையத்தில் தேடலாமா?\n\n{addresses}\n\nஇது அவர்களின் முகவரிகளை keys.openpgp.org க்கும் அவர்களின் சொந்த அஞ்சல் களங்களுக்கும் அனுப்பும்.
+pgp_found_online = இணையத்தில் கிடைத்த சாவிகள்:
+pgp_source = மூலம்: {source}
+pgp_discover_prompt = ஒரு மின்னஞ்சல் முகவரியை உள்ளிடவும். ZBox அதன் அஞ்சல் களத்தின் Web Key Directory இலும் keys.openpgp.org இலும் அதன் OpenPGP சாவிகளைத் தேடும்.
+pgp_discover_bad = name@example.com போன்ற முழு மின்னஞ்சல் முகவரியை உள்ளிடவும்.
+pgp_keys_unreadable = OpenPGP சாவிகளைத் திறக்க முடியவில்லை: {error}
+pgp_rs_why_no_key = இந்தச் செய்தியை மறைவிலக்கத் தேவையான இரகசியச் சாவி கிடைக்கவில்லை.
+pgp_rs_why_unknown = இந்தக் குறியாக்கப்பட்ட செய்தியில் அறியப்படாத சிக்கல்கள் உள்ளன.
+pgp_rs_hidden_subject = குறியாக்கப்பட்ட செய்தி
+pgp_rs_why_passphrase = உங்கள் சாவியின் கடவுச்சொற்றொடர் உள்ளிடப்படவில்லை. அதை உள்ளிட செய்தியை மீண்டும் திறக்கவும்.
+pgp_rs_why_unavailable = இந்த ZBox நகலில் OpenPGP கிடைக்கவில்லை.
+pgp_rs_why_fetch = மறைவிலக்குவதற்காக சேவையகத்திலிருந்து செய்தியைப் பெற முடியவில்லை. மீண்டும் முயல அதை மீண்டும் திறக்கவும்.
+pgp_rs_import_hint = அதைப் படிக்க, இந்தச் செய்திக்கான உங்கள் இரகசியச் சாவியை ZBox இல் இறக்குமதி செய்யவும்.
+
+[errors]
+language_restart_failed = ZBox தன்னை மறுதொடக்கம் செய்ய முடியவில்லை:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = {address} க்கு அஞ்சல் கிளையண்டைத் திறக்க முடியவில்லை.
+
+wizard_test_failed = இணைப்பு தோல்வியடைந்தது:\n\n{error}
+
+contacts_import_unreadable = அந்தக் கோப்பைப் படிக்க முடியவில்லை.\n\n{error}
+contacts_export_unwritable = அந்தக் கோப்பை எழுத முடியவில்லை.\n\n{error}
+
+attach_unreadable = இணைப்பு {path} ஐப் படிக்க முடியவில்லை:\n{error}
+send_failed = செய்தியை அனுப்ப முடியவில்லை.\n\n{error}
+draft_attach_unreadable = இணைப்பு {path} ஐப் படிக்க முடியவில்லை:\n{error}\n\nவரைவு சேமிக்கப்படவில்லை.
+draft_save_failed = வரைவைச் சேமிக்க முடியவில்லை.\n\n{error}
+
+clipboard_unavailable = கிளிப்போர்டைத் திறக்க முடியவில்லை.
+open_link_failed = இதற்காக உங்கள் உலாவியைத் திறக்க முடியவில்லை:\n{url}
+
+master_password_mismatch = இரண்டு புதிய முதன்மைக் கடவுச்சொல் பெட்டிகளும் பொருந்தவில்லை.
+master_password_required = முதன்மைக் கடவுச்சொல்லை உள்ளிடவும், அல்லது ரத்துசெய் என்பதை அழுத்தவும்.
+master_password_not_set = முதன்மைக் கடவுச்சொல்லை அமைக்க முடியவில்லை: {error}
+master_password_not_here = முதன்மைக் கடவுச்சொல்லை இங்கிருந்து மாற்ற முடியாது.
+
+attachment_save_failed = இணைப்பைச் சேமிக்க முடியவில்லை.\n\n{error}
+attachments_save_failed = இணைப்புகளைச் சேமிக்க முடியவில்லை.\n\n{error}
+print_failed = செய்தியை அச்சிட முடியவில்லை. அச்சுப்பொறி உள்ளமைக்கப்பட்டுள்ளதா எனச் சரிபார்க்கவும்.
+print_preview_failed = அச்சு முன்னோட்டத்தைத் திறக்க முடியவில்லை. அச்சுப்பொறி உள்ளமைக்கப்பட்டுள்ளதா எனச் சரிபார்க்கவும்.
+
+related_search_failed = தொடர்புடைய செய்திகளைத் தேட முடியவில்லை.\n\n{error}
+search_failed = தேடல் தோல்வியடைந்தது.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox தனது உள்ளமைவுக் கோப்புறையைக் கண்டறிய முடியவில்லை, எனவே திறக்கும் முறைகளை இங்கு நிர்வகிக்க முடியாது.
+shortcut_no_folder = ZBox தனது சொந்தக் கோப்புறையைத் தீர்மானிக்க முடியவில்லை, எனவே இங்கிருந்து குறுக்குவழியை உருவாக்க முடியாது.
+shortcut_failed_settings = மேசைக் குறுக்குவழியை உருவாக்க முடியவில்லை:\n\n{error}
+
+unlock_method_failed = {what} செயல்படவில்லை.\n\n{error}
+unlock_check_failed = முதன்மைக் கடவுச்சொல்லைச் சரிபார்க்க முடியவில்லை.\n\n{error}
+unlock_password_wrong = அந்த முதன்மைக் கடவுச்சொல் சரியல்ல.
+unlock_add_failed = {what} ஐச் சேர்க்க முடியவில்லை.\n\n{error}
+unlock_passkey_setup_failed = இந்தக் கணினியில் கடவுச்சாவியை அமைக்க முடியவில்லை, எனவே எதுவும் மாற்றப்படவில்லை.\n\n{error}
+unlock_method_test_failed = அந்த முறை செயல்படவில்லை.\n\n{error}
+
+account_list_unreadable = ZBox உங்கள் கணக்குப் பட்டியலைத் திறக்க முடியவில்லை.\n\n{error}\n\nகணக்குகள் எதுவும் ஏற்றப்படவில்லை, கோப்பும் மாற்றப்படவில்லை, எனவே எதுவும் இழக்கப்படவில்லை. அது படிக்கப்படும் வரை கணக்குகளைச் சேர்ப்பது, திருத்துவது, அகற்றுவது மறுக்கப்படும்.
+account_list_no_accounts = ZBox இந்த அமர்வில் உங்கள் கணக்குப் பட்டியலைத் திறக்க முடியவில்லை ({error}), எனவே தேர்ந்தெடுக்கக் கணக்குகள் இல்லை. எதுவும் இழக்கப்படவில்லை, எதுவும் மாற்றப்படவில்லை. ZBox ஐ மூடி மீண்டும் தொடங்கி, கேட்கப்படும்போது உங்கள் முதன்மைக் கடவுச்சொல்லை உள்ளிடவும்.
+open_message_failed = செய்தியைத் திறக்க முடியவில்லை.\n\n{error}
+filters_list_failed = {folder} இல் செய்திகளைப் பட்டியலிட முடியவில்லை.\n\n{error}
+filters_move_failed = வடிகட்டப்பட்ட செய்திகளை நகர்த்த முடியவில்லை.\n\n{error}
+cache_clear_failed = தற்காலிகச் சேமிப்பை அழிக்க முடியவில்லை.\n\n{error}
+folder_create_failed = கோப்புறையை உருவாக்க முடியவில்லை.\n\n{error}
+folder_rename_failed = கோப்புறையை மறுபெயரிட முடியவில்லை.\n\n{error}
+folder_delete_failed = கோப்புறையை நீக்க முடியவில்லை.\n\n{error}
+folder_subscribe_failed = கோப்புறைக்குக் குழுசேர முடியவில்லை.\n\n{error}
+folder_unsubscribe_failed = கோப்புறையின் குழுசேர்வை நீக்க முடியவில்லை.\n\n{error}
+saved_open_failed = கோப்பைத் திறக்க முடியவில்லை.\n\n{error}
+saved_parse_failed = இந்தக் கோப்பை மின்னஞ்சல் செய்தியாகப் பகுக்க முடியவில்லை.\n\n{error}
+save_file_failed = கோப்பைச் சேமிக்க முடியவில்லை.\n\n{error}
+save_fetch_failed = சேமிக்கச் செய்தியைப் பெற முடியவில்லை.\n\n{error}
+empty_trash_failed = குப்பைத் தொட்டியைக் காலி செய்ய முடியவில்லை.\n\n{error}
+empty_junk_failed = குப்பை அஞ்சலைக் காலி செய்ய முடியவில்லை.\n\n{error}
+export_write_failed = ஏற்றுமதிக் கோப்பை எழுத முடியவில்லை.\n\n{error}
+import_read_failed = இந்தக் கோப்பை ZBox ஏற்றுமதியாகப் படிக்க முடியவில்லை.\n\n{error}
+import_not_export = இந்தக் கோப்பு ZBox ஏற்றுமதி போல் தெரியவில்லை.\n\n{error}
+search_open_failed = இந்தச் செய்தியைத் திறக்க முடியவில்லை.
+related_load_failed = இந்தச் செய்தியை ஏற்ற முடியவில்லை.\n\n{error}
+reply_load_failed = பதிலளிக்க வேண்டிய செய்தியை ஏற்ற முடியவில்லை.\n\n{error}
+forward_load_failed = முன்னனுப்ப வேண்டிய செய்தியை ஏற்ற முடியவில்லை.\n\n{error}
+action_failed = இந்தச் செயலை முடிக்க முடியவில்லை.\n\n{error}
+undo_failed = {label} ஐச் செயல்தவிர்க்க முடியவில்லை.\n\n{error}
+copy_failed = செய்தியை நகலெடுக்க முடியவில்லை.\n\n{error}
+delete_failed = செய்தியை நீக்க முடியவில்லை.\n\n{error}
+archive_failed = செய்தியைக் காப்பகப்படுத்த முடியவில்லை.\n\n{error}
+master_password_not_changed = முதன்மைக் கடவுச்சொல்லை மாற்ற முடியவில்லை: {error}
+shortcut_failed_startup = மேசைக் குறுக்குவழியை உருவாக்க முடியவில்லை:\n\n{error}\n\nZBox தொடர்ந்து தொடங்கும். பின்னர் அமைப்புகளிலிருந்து மீண்டும் முயலலாம்.
+account_locked_action = ZBox ஆல் %s செய்ய முடியாது. இந்த அமர்வில் கணக்குப் பட்டியலைத் திறக்க முடியவில்லை (%s), எதுவும் மாற்றப்படவில்லை. ZBox ஐ மூடி மீண்டும் தொடங்கி, கேட்கப்பட்டால் உங்கள் முதன்மைக் கடவுச்சொல்லை உள்ளிடவும்.
+send_tls_mismatch = செய்தியை அனுப்ப முடியவில்லை. வெளிச்செல்லும் சேவையகம் குறியாக்கம் இல்லாமல் பதிலளித்தது, எனவே வெளிச்செல்லும் குறியாக்கம் போர்ட்டுடன் பொருந்தவில்லை. கருவிகள், கணக்கு மற்றும் அடையாள அமைப்புகளில் போர்ட் 587 க்கு STARTTLS, அல்லது போர்ட் 465 க்கு SSL/TLS ஐப் பயன்படுத்தி, மீண்டும் அனுப்பவும்.\n\n{error}
+mark_folder_read_failed = கோப்புறையைப் படித்ததாகக் குறிக்க முடியவில்லை.\n\n{error}
+update_failed = புதுப்பிப்பைப் பதிவிறக்க முடியவில்லை, எனவே எதுவும் மாற்றப்படவில்லை.\n\n{error}
+update_rolled_back = புதுப்பிப்பு தொடங்க முடியவில்லை, எனவே முந்தைய பதிப்பு மீட்டமைக்கப்பட்டது.
+attachment_open_failed = இணைப்பைத் திறக்க முடியவில்லை.\n\n{error}
+headers_failed = செய்தித் தலைப்புகளை ஏற்ற முடியவில்லை.\n\n{error}
+wizard_ms_sign_in_first = தொடரும் முன் Microsoft மூலம் உள்நுழையவும். இந்தப் பக்கத்திலுள்ள இரண்டு உள்நுழைவுப் பொத்தான்களில் ஒன்றைப் பயன்படுத்தவும்.
+wizard_provider_unsupported = ZBox ஆல் இந்த வழங்குநரிடம் உள்நுழைய முடியாது. இந்தப் பக்கத்திலுள்ள குறிப்பு காரணத்தைக் கூறும். பின் சென்று வேறு மின்னஞ்சல் முகவரியைப் பயன்படுத்தவும், அல்லது ரத்துசெய்யவும்.
+acct_ms_sign_in_first = சேமிப்பதற்கு முன் Microsoft மூலம் உள்நுழையவும், அல்லது உள்நுழைவு முறையாகக் கடவுச்சொல்லைத் தேர்ந்தெடுக்கவும்.
+ms_sign_in_again = {account} க்கான Microsoft உள்நுழைவு மீண்டும் தேவை. கணக்கு மற்றும் அடையாள அமைப்புகளைத் திறந்து அங்கு உள்நுழையவும்.
+graph_pgp_too_large = இந்தக் குறியாக்கப்பட்ட அல்லது கையொப்பமிடப்பட்ட செய்தி, அத்தகைய அஞ்சலுக்கு Microsoft அனுமதிப்பதை விடப் பெரியது, சுமார் 3 MB. சிறிய இணைப்புகளை அனுப்பவும், அல்லது இந்தச் செய்திக்குக் குறியாக்கு மற்றும் எண்ணிமக் கையொப்பமிடு ஆகியவற்றை முடக்கவும்.
+empty_trash_all_failed = இவற்றுக்குக் குப்பைத் தொட்டியைக் காலி செய்ய முடியவில்லை: {accounts}
+
+[help]

@@ -1,0 +1,103 @@
+Algemeen
+F6: Wissel fokus tussen panele
+Ctrl+Tab: Volgende oortjie
+Ctrl+Shift+Tab: Vorige oortjie
+Ctrl+W of Ctrl+F4: Maak huidige oortjie toe
+Escape: Vou 'n uitgevoude draad in as die boodskaplys fokus het en een uitgevou is; andersins maak die huidige oortjie toe (boodskap, gestoorde boodskap, of 'n ongestuurde skryfwerk -- vra eers as dit ongestoorde veranderinge het)
+Application-sleutel of Shift+F10: Maak kontekskieslys oop op die gefokusde lys- of boomitem
+F1: Sleutelbordkortpaaie, hierdie bladsy
+Ctrl+Shift+Q: Sluit af -- sluit ZBox altyd werklik af, selfs wanneer "Sluit na die kennisgewingarea" in Opstelling aan is (die venster se Sluit-knoppie, Alt+F4 en Ctrl+W op die Pos-oortjie versteek na die kennisgewingarea in plaas van om af te sluit wanneer daardie instelling aan is; die kennisgewingarea-ikoon se eie Sluit af-item sluit ook altyd werklik af)
+Ctrl+Shift+Delete: Vee aflyn-boodskapkas uit -- slegs ZBox se plaaslike kopieë, niks op enige bediener nie (ook 'n knoppie in Gereedskap > Kasopruimingopstelling)
+
+Pos
+Ctrl+N: Nuwe boodskap
+Ctrl+Shift+N: Nuwe e-posrekening
+F5: Kry nuwe pos vir die huidige rekening
+Shift+F5: Kry nuwe pos vir alle rekeninge
+Ctrl+Shift+J: Spring na Inkassie-boodskaplys
+Ctrl+Y: Gaan na vouerlys
+Enter op 'n toe rekening of vouer in die vouerlys: maak dit oop, soos Right arrow
+Ctrl+Shift+B: Adresboek
+Ctrl+Shift+F: Deursoek boodskappe
+Ctrl+Shift+T: Wys verwante boodskappe
+
+Die boodskaplys
+Delete, Shift+Delete, Argiveer, Vlag/Ontvlag, Merk as gemors/Nie gemors nie, Skuif na en Kopieer na is almal van toepassing op elke boodskap in 'n draad wanneer dit op 'n INGEVOUDE draadry gebruik word -- vou die draad eers uit (Right arrow of Enter/Space) om op een boodskap daarin op te tree
+Ctrl+A: Merk alle boodskappe
+Ctrl+Shift+L: Laai meer boodskappe
+Delete: Skuif boodskap(pe) na die Snippermandjie
+Shift+Delete: Skrap boodskap(pe) permanent
+Ctrl+Z: Ontdoen die laaste Skrap, Argiveer, Merk as gemors of Merk as nie gemors nie
+S: Vlag/ontvlag die gekose boodskap(pe)
+A: Argiveer die gekose boodskap(pe)
+J: Merk die gekose boodskap(pe) as gemors
+Shift+J: Merk die gekose boodskap(pe) as nie gemors nie
+W: Hou draad dop -- wissel of die draad waarvan die keuse deel is, Dopgehou word (ook Boodskap-kieslys en regterklik)
+K: Ignoreer draad -- wissel of daardie draad Geïgnoreer word (ook Boodskap-kieslys en regterklik)
+M: Skuif die gekose boodskap(pe) -- maak die Skuif na-kieslys van vouers oop
+Shift+M: Skuif die gekose boodskap(pe) deur deel van 'n vouernaam te tik
+C: Kopieer die gekose boodskap(pe) -- maak die Kopieer na-kieslys van vouers oop
+S, A, J, W en K hierbo is by verstek aan en kan in Opstelling afgeskakel word (hulle kry andersins voorrang bo die boodskaplys se eie eerste-letter-tikvooruitnavigasie)
+M, Shift+M en C hierbo volg dieselfde instelling
+Enter of Space op 'n ingevoude draad: maak die nuutste ongelese boodskap in daardie draad oop (die nuutste boodskap as die hele draad gelees is) as 'n enkele boodskap, in een oortjie -- dan blaai Ctrl+Shift+Page Down en Ctrl+Shift+Page Up deur die res van die draad sonder om ooit 'n tweede boodskap oop te maak. Op 'n gewone boodskap maak dit dit soos gewoonlik oop
+Right arrow op 'n ingevoude draad: onthul sy boodskappe as 'n lys, sonder om enige daarvan oop te maak -- maak een op 'n slag van daar af oop met sy eie Enter of Space
+Ctrl+Shift+O: Open boodskap in gesprek -- die hele draad in een oortjie, as 'n lys van sy boodskappe met die gekose een se liggaam daaronder. Blaai met die pyltjies deur die lys om hulle een op 'n slag te lees; Enter op 'n ry maak daardie enkele boodskap in sy eie volle oortjie oop. Dieselfde naam en sleutel as Thunderbird se eie opdrag
+Left arrow: vou die draad in waarin die keuse tans is
+*: Vou alle drade uit (ook Aansig > Drade); \: Vou alle drade in (ook Aansig > Drade)
+Aansig > Drade > Alle / Dopgehoue drade / Geïgnoreerde drade filtreer watter drade gewys word -- om terug na Alle te wissel bring altyd elke boodskap terug; niks word hierdeur ooit uit die vouer verwyder nie
+
+'n Oop boodskap
+Alt+A: Argiveer hierdie boodskap -- slegs terwyl sy liggaam (Teks of HTML) werklik sleutelbordfokus het; elders behou Alt+A sy normale betekenis om die Rekeninge-kieslys oop te maak
+Ctrl+R: Antwoord
+Ctrl+Shift+R: Almalantwoord
+Ctrl+L: Aanstuur
+Ctrl+Delete of Ctrl+D: Skuif hierdie boodskap na die Snippermandjie. Gewone Delete word dikwels deur die skermleser geneem terwyl 'n HTML-boodskap fokus het; Shift+Delete skrap permanent
+Ctrl+Shift+Page Down: Volgende boodskap in hierdie draad; Ctrl+Shift+Page Up: vorige. Vervang die huidige oortjie eerder as om 'n ander oop te maak, sodat net een boodskap ooit oop is. By die laaste boodskap (of die eerste, as jy opwaarts gaan) sê dit so en vra; om dieselfde sleutel weer te druk maak die boodskap toe en beëindig die draad, en land terug in die boodskaplys. (Ctrl+Page Up/Down word met rus gelaat -- dié wissel oortjies)
+Ctrl+B: Wissel boodskapaansig (Teks/HTML)
+Ctrl+P: Druk
+Ctrl+Shift+P: Drukvoorskou
+Ctrl+S: Stoor boodskap as
+Ctrl+U: Kondig sender se naam en adres aan
+Ctrl+Shift+U: Kondig sender aan en kopieer die adres
+Ctrl+Shift+I: Wys afstandinhoud in hierdie boodskap
+Ctrl+Shift+=: Vergroot boodskaplettergrootte
+Ctrl+Shift+-: Verklein boodskaplettergrootte
+Ctrl+Shift+0: Herstel boodskaplettergrootte
+
+'n Boodskap skryf
+Ctrl+Enter of Alt+S: Stuur
+Ctrl+S: Stoor konsep
+Ctrl+Shift+A: Heg lêer aan
+Ctrl+Shift+S: Voeg die handtekening van die rekening in Van in
+Ctrl+Shift+V: Plak as aanhaling
+Ctrl+Shift+W: Woordtelling
+Ctrl+Shift+P: Voorskou die boodskap soos dit gestuur sal word
+Escape, Ctrl+W of Ctrl+F4: Maak die skryfoortjie toe -- vra eers as iets ongestoor is, en bied Stoor konsep, Verwerp of Gaan voort met wysig aan
+Elke opdrag hieronder is ook in die Skryf-kieslys, wat Alt+C oopmaak selfs terwyl fokus binne die boodskapliggaam is
+
+Formatering, terwyl jy skryf
+Ctrl+B: Vet
+Ctrl+I: Kursief
+Ctrl+Shift+X: Deurhaal
+Ctrl+Shift+8: Koeëllys
+Ctrl+Shift+7: Genommerde lys
+Ctrl+Shift+9: Aanhaling
+Ctrl+Shift+6: Kode
+Ctrl+Alt+1: Opskrif
+Ctrl+K: Voeg skakel in
+Ctrl+Shift+K: Sê watter formatering van krag is waar die kursor is
+Ctrl+Shift+M: Maak die Formateer-kieslys oop waar ook al fokus is, die boodskapliggaam ingesluit
+
+Spelling, terwyl jy skryf
+Ctrl+Shift+F7: Speltoets
+Ctrl+Shift+F9: Gaan na die volgende spelfout
+Ctrl+Shift+F8: Voeg die woord waarop dit gestop het by die woordeboek
+
+Dieselfde sleutel op twee plekke
+Ctrl+S: Stoor konsep terwyl jy skryf, Stoor boodskap as in 'n oop boodskap
+Ctrl+B: Vet terwyl jy skryf, wissel tussen Teks en HTML in 'n oop boodskap
+Ctrl+Shift+P: Voorskou terwyl jy skryf, Drukvoorskou in 'n oop boodskap
+Alt+A: Argiveer, maar slegs terwyl 'n boodskapliggaam sleutelbordfokus het; elders maak dit die Rekeninge-kieslys oop
+
+Diagnose
+Ctrl+Shift+F12: Sleutelkombinasie-diagnose -- skryf 'n reël na die ontfoutloglêer vir elke kombinasie wat in 'n skryfoortjie gedruk word, sodat bewys kan word wat 'n sleutel werklik bereik het. By verstek af, en dieselfde sleutel skakel dit weer af; die toestand word in elk geval uitgespreek

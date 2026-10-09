@@ -1,0 +1,103 @@
+Guud
+F6: Ku wareeji fokas-ka guddiyada dhexdooda
+Ctrl+Tab: Tabka xiga
+Ctrl+Shift+Tab: Tabkii hore
+Ctrl+W ama Ctrl+F4: Xir tabka hadda
+Escape: Isku laab silsilad la balaadhiyay haddii liiska fariimuhu leeyahay fokas oo mid la balaadhiyay; haddii kale xir tabka hadda (fariin, fariin la kaydiyay, ama qoraal aan la dirin -- marka hore wuu weydiiyaa haddii isbeddello aan la kaydin leeyahay)
+Furaha Application ama Shift+F10: Fur menu-ga macnaha shayga liiska ama geedka fokas-ka leh
+F1: Gaaban-furayaasha kiiboodhka, bogga
+Ctrl+Shift+Q: Ka bax -- had iyo jeer runtii wuu xiraa ZBox, xitaa marka "Xir aagga ogeysiisyada" uu shidan yahay Dejinta (badhanka Xirista daaqadda, Alt+F4, iyo Ctrl+W ee tabka Boostada waxay ku qariyaan aagga ogeysiisyada halkii ay ka bixi lahaayeen marka dejintaasi shidan tahay; shayga Ka bax ee astaanta aagga ogeysiisyada laftigiisu sidoo kale runtii wuu ka baxaa)
+Ctrl+Shift+Delete: Nadiifi cache-ka fariimaha aan khadka ahayn -- nuqullada maxalliga ah ee ZBox oo keliya, waxba server kasta ma saameynayo (sidoo kale badhan Qalabka > Habaynta nadiifinta cache-ka)
+
+Boosto
+Ctrl+N: Fariin cusub
+Ctrl+Shift+N: Akoon iimeyl cusub
+F5: Hel boosto cusub ee akoonka hadda
+Shift+F5: Hel boosto cusub ee dhammaan akoonnada
+Ctrl+Shift+J: U gudub liiska fariimaha Soo-gelitaanka
+Ctrl+Y: U tag liiska gallada
+Enter akoon ama gal xiran liiska gallada: fur, sida Right arrow
+Ctrl+Shift+B: Buug-cinwaan
+Ctrl+Shift+F: Raadi fariimo
+Ctrl+Shift+T: Muuji fariimaha la xiriira
+
+Liiska fariimaha
+Delete, Shift+Delete, Kaydi, Xiddigee/Ka saar xiddigta, U calaamadee spam/ma aha spam, U guur iyo U koobiyee dhammaantood waxay khusaan fariin kasta silsilad ku jirta marka lagu isticmaalo safka silsilad LA ISKU LAABAY -- marka hore balaadhi silsiladda (Right arrow ama Enter/Space) si aad ugu dhaqmo hal fariin gudaheeda
+Ctrl+A: Dooro dhammaan fariimaha
+Ctrl+Shift+L: Soo dhac fariimo dheeraad ah
+Delete: U guur fariimaha Qashinka
+Shift+Delete: Si joogto ah u tirtir fariimaha
+Ctrl+Z: Ka noqo Tirtirkii ugu dambeeyay, Kaydi, U calaamadee spam ama U calaamadee ma aha spam
+S: Xiddigee/ka saar xiddigta fariimaha la doortay
+A: Kaydi fariimaha la doortay
+J: U calaamadee fariimaha la doortay spam
+Shift+J: U calaamadee fariimaha la doortay ma aha spam
+W: Eeg silsilad -- wuxuu beddelaa in silsiladda doorashadu ka mid tahay la eego (sidoo kale menu-ga Fariinta iyo midig-dhufashada)
+K: Iska indho tir silsilad -- wuxuu beddelaa in silsiladdaas la iska indho tiro (sidoo kale menu-ga Fariinta iyo midig-dhufashada)
+M: U guur fariimaha la doortay -- wuxuu furaa menu-ga U guur ee gallada
+Shift+M: U guur fariimaha la doortay adigoo ku qoraya qayb ka mid ah magaca galka
+C: Koobiyee fariimaha la doortay -- wuxuu furaa menu-ga U koobiyee ee gallada
+S, A, J, W iyo K ee kor ku xusan waa shidan yihiin caadi ahaan oo waxaa lagu dami karaa Dejinta (haddii kale waxay mudnaan ka leeyihiin hagitaanka xarafka hore ee liiska fariimaha laftigiisa)
+M, Shift+M iyo C ee kor ku xusan waxay raacaan isla dejinta
+Enter ama Space silsilad la isku laabay: wuxuu furaa fariinta ugu cusub ee aan la akhriyin ee silsiladdaas (fariinta ugu cusub haddii silsiladda oo dhan la akhriyay) sida hal fariin, hal tab -- ka dibna Ctrl+Shift+Page Down iyo Ctrl+Shift+Page Up waxay dhex marayaan inta kale ee silsiladda iyagoon furin fariin labaad. Fariin caadi ah, sida caadiga ah ayuu u furaa
+Right arrow silsilad la isku laabay: wuxuu muujiyaa fariimaheeda sida liis, isagoon mid furin -- halkaas ka fur mid mar kasta adigoo isticmaalaya Enter ama Space-keeda
+Ctrl+Shift+O: Fur fariinta wada hadal -- silsiladda oo dhan hal tab, sida liis fariimaheeda oo jidhka kuwa la doortay hoostiisa ku yaal. Ku dhex wareeg liiska fallaadhaha si aad iyaga u akhrisato mid mar; Enter safka wuxuu furaa fariintaas keligeed tabkeeda buuxa. Isla magac iyo fure sida amarka Thunderbird laftigiisa
+Left arrow: isku laab silsiladda doorashadu hadda ku jirto
+*: Balaadhi dhammaan silsiladaha (sidoo kale Muuqaal > Silsilado); \: Isku laab dhammaan silsiladaha (sidoo kale Muuqaal > Silsilado)
+Muuqaal > Silsilado > Dhammaan / Silsilado la eego / Silsilado la iska indho tiray wuxuu shaandheeyaa silsiladaha la muujiyo -- ku noqoshada Dhammaan had iyo jeer waxay soo celisaa fariin kasta; tan waxba galka looga saarin
+
+Fariin furan
+Alt+A: Kaydi fariintan -- kaliya marka jidhkeedu (Qoraal ama HTML) runti leeyahay fokas kiiboodh; meel kale Alt+A wuxuu haystaa macnihiisa caadiga ah ee furista menu-ga Akoonnada
+Ctrl+R: Jawaab
+Ctrl+Shift+R: Jawaab dhammaan
+Ctrl+L: Gudbi
+Ctrl+Delete ama Ctrl+D: U guur fariintan Qashinka. Delete caadi ah inta badan waxaa qaata akhriyaha shaashadda marka fariin HTML ah ay leedahay fokas; Shift+Delete wuxuu si joogto ah u tirtiraa
+Ctrl+Shift+Page Down: Fariinta xigta silsiladdan; Ctrl+Shift+Page Up: kii hore. Waxay beddeshaa tabka hadda halkii ay furi lahayd mid kale, sidaa darteed hal fariin oo keliya ayaa had iyo jeer furan. Fariinta u dambeysa (ama tan ugu horreysa, marka kor loo socdo) waxay sheegtaa oo weydiisaa; mar kale taabashada isla fure waxay xirtaa fariinta waxayna dhammaysaa silsiladda, iyadoo ku noqoneysa liiska fariimaha. (Ctrl+Page Up/Down waa la ilaaliyaa -- kuwaas waxay beddelaan tabyada)
+Ctrl+B: Beddel muuqaalka fariinta (Qoraal/HTML)
+Ctrl+P: Daabac
+Ctrl+Shift+P: Horudhac daabacaad
+Ctrl+S: Kaydi fariinta sida
+Ctrl+U: Ku dhawaaq magaca iyo cinwaanka diraaha
+Ctrl+Shift+U: Ku dhawaaq diraaha oo koobiyee cinwaanka
+Ctrl+Shift+I: Muuji nuxurka fogaanta fariintan
+Ctrl+Shift+=: Kordhi cabbirka far-qoraalka fariinta
+Ctrl+Shift+-: Yaree cabbirka far-qoraalka fariinta
+Ctrl+Shift+0: Dib u deji cabbirka far-qoraalka fariinta
+
+Qorista fariin
+Ctrl+Enter ama Alt+S: Dir
+Ctrl+S: Kaydi qabyada
+Ctrl+Shift+A: Ku lifaaq fayl
+Ctrl+Shift+S: Geli saxiixa akoonka ku jira Laga soo diray
+Ctrl+Shift+V: Ku dhejiso xigasho ahaan
+Ctrl+Shift+W: Tirada erayada
+Ctrl+Shift+P: Horudhac fariinta sida loo diri doono
+Escape, Ctrl+W ama Ctrl+F4: Xir tabka qoraalka -- marka hore wuu weydiiyaa haddii wax aan la kaydin, wuxuuna bixiyaa Kaydi qabyada, Tuur ama Sii wad tafatirka
+Amar kasta oo hoose waxaa sidoo kale ku jira menu-ga Qor, oo Alt+C furo xitaa marka fokas-ku ku jiro jidhka fariinta
+
+Qaabaynta, marka la qorayo
+Ctrl+B: Qalin
+Ctrl+I: Dheg
+Ctrl+Shift+X: Sahan
+Ctrl+Shift+8: Liis dhibco leh
+Ctrl+Shift+7: Liis tiro leh
+Ctrl+Shift+9: Xigasho
+Ctrl+Shift+6: Koodh
+Ctrl+Alt+1: Cinwaan
+Ctrl+K: Geli xiriiriye
+Ctrl+Shift+K: Sheeg qaabaynta ka jirta halka kursoorku joogo
+Ctrl+Shift+M: Fur menu-ga Qaabka meel kasta oo fokas-ku joogo, oo ay ku jirto jidhka fariinta
+
+Higaadda, marka la qorayo
+Ctrl+Shift+F7: Hubi higaadda
+Ctrl+Shift+F9: U gudub qaladka higaad ee xiga
+Ctrl+Shift+F8: Ku dar ereyga uu ku istaagay qaamuuska
+
+Isla fure laba meelood
+Ctrl+S: Kaydi qabyada marka la qorayo, Kaydi fariinta sida fariin furan
+Ctrl+B: Qalin marka la qorayo, u beddel Qoraalka iyo HTML fariin furan
+Ctrl+Shift+P: Horudhac marka la qorayo, Horudhac daabacaad fariin furan
+Alt+A: Kaydi, laakiin kaliya marka jidhka fariintu leeyahay fokas kiiboodh; meel kale wuxuu furaa menu-ga Akoonnada
+
+Baaritaan
+Ctrl+Shift+F12: Baaritaanka furayaasha degdega ah -- wuxuu diiwaanka cilad-baaritaanka ku qoraa saf isku-darka kasta ee tabka qoraalka lagu taabto, si loo caddeeyo wixii fure gaaray. Dansan caadi ahaan, isla fure ayaa mar kale damiya; xaaladda waxaa lagu hadlaa labada xaaladood

@@ -1,0 +1,103 @@
+Generelt
+F6: Skift fokus mellem ruderne
+Ctrl+Tab: Næste fane
+Ctrl+Shift+Tab: Forrige fane
+Ctrl+W eller Ctrl+F4: Luk den aktuelle fane
+Escape: Skjul en udvidet tråd, hvis meddelelseslisten har fokus, og en er udvidet; ellers luk den aktuelle fane (meddelelse, gemt meddelelse eller en usendt meddelelse under skrivning -- spørger først, hvis den har ugemte ændringer)
+Programtasten eller Shift+F10: Åbn genvejsmenuen for det valgte element på listen eller i træet
+F1: Tastaturgenveje, denne side
+Ctrl+Shift+Q: Afslut -- afslutter altid ZBox helt, også når "Luk til systembakken" er slået til i Indstillinger (vinduets Luk-knap, Alt+F4 og Ctrl+W på fanen Mail skjuler i stedet til systembakken, når den indstilling er aktiveret; systembakkeikonets eget Afslut afslutter også altid helt)
+Ctrl+Shift+Delete: Ryd cache for offlinemeddelelser -- kun ZBox' lokale kopier, intet på nogen server (også en knap i Funktioner > Indstilling af oprydning i cache)
+
+Mail
+Ctrl+N: Ny meddelelse
+Ctrl+Shift+N: Ny mailkonto
+F5: Hent ny mail for den aktuelle konto
+Shift+F5: Hent ny mail for alle konti
+Ctrl+Shift+J: Hop til meddelelseslisten i Indbakke
+Ctrl+Y: Gå til mappelisten
+Enter på en lukket konto eller mappe i mappelisten: åbn den, som Højrepil
+Ctrl+Shift+B: Adressebog
+Ctrl+Shift+F: Søg i meddelelser
+Ctrl+Shift+T: Vis relaterede meddelelser
+
+Meddelelseslisten
+Delete, Shift+Delete, Arkiver, Stjernemarker/Fjern stjernemarkering, Marker som spam/ikke-spam, Flyt til og Kopier til gælder alle meddelelser i en tråd, når de bruges på en SKJULT trådrække -- udvid tråden først (Højrepil eller Enter/Mellemrum) for i stedet at handle på én meddelelse i den
+Ctrl+A: Marker alle meddelelser
+Ctrl+Shift+L: Indlæs flere meddelelser
+Delete: Flyt meddelelser til papirkurven
+Shift+Delete: Slet meddelelser permanent
+Ctrl+Z: Fortryd den seneste sletning, arkivering, markering som spam eller markering som ikke-spam
+S: Stjernemarker/fjern stjernemarkering på de valgte meddelelser
+A: Arkiver de valgte meddelelser
+J: Marker de valgte meddelelser som spam
+Shift+J: Marker de valgte meddelelser som ikke-spam
+W: Overvåg tråd -- skift, om den tråd, markeringen er en del af, overvåges (også menuen Meddelelse og højreklik)
+K: Ignorer tråd -- skift, om den tråd ignoreres (også menuen Meddelelse og højreklik)
+M: Flyt de valgte meddelelser -- åbner menuen Flyt til med mapper
+Shift+M: Flyt de valgte meddelelser ved at skrive en del af et mappenavn
+C: Kopier de valgte meddelelser -- åbner menuen Kopier til med mapper
+S, A, J, W og K ovenfor er slået til som standard og kan slås fra i Indstillinger (ellers har de forrang over meddelelseslistens egen førstebogstavsnavigation)
+M, Shift+M og C ovenfor følger samme indstilling
+Enter eller Mellemrum på en skjult tråd: åbner den nyeste ulæste meddelelse i den tråd (den nyeste meddelelse, hvis hele tråden er læst) som én enkelt meddelelse i én fane -- derefter bladrer Ctrl+Shift+Page Down og Ctrl+Shift+Page Up gennem resten af tråden uden nogensinde at åbne en anden meddelelse. På en almindelig meddelelse åbnes den som sædvanligt
+Højrepil på en skjult tråd: viser dens meddelelser som en liste uden at åbne nogen af dem -- åbn én ad gangen derfra med deres egen Enter eller Mellemrum
+Ctrl+Shift+O: Åbn meddelelse i samtale -- hele tråden i én fane som en liste over dens meddelelser med den markeredes tekst nedenunder. Brug piletasterne gennem listen for at læse dem én ad gangen; Enter på en række åbner den enkelte meddelelse i sin egen fulde fane. Samme navn og tast som Thunderbirds egen kommando
+Venstrepil: skjul den tråd, markeringen aktuelt er inde i
+*: Udvid alle tråde (også Vis > Tråde); \: Skjul alle tråde (også Vis > Tråde)
+Vis > Tråde > Alle / Overvågede tråde / Ignorerede tråde filtrerer, hvilke tråde der vises -- at skifte tilbage til Alle bringer altid hver meddelelse tilbage; intet fjernes nogensinde fra mappen af dette
+
+En åben meddelelse
+Alt+A: Arkiver denne meddelelse -- kun mens dens tekst (Tekst eller HTML) faktisk har tastaturfokus; andre steder bevarer Alt+A sin normale betydning at åbne menuen Konti
+Ctrl+R: Svar
+Ctrl+Shift+R: Svar til alle
+Ctrl+L: Videresend
+Ctrl+Delete eller Ctrl+D: Flyt denne meddelelse til papirkurven. Almindelig Delete tages ofte af skærmlæseren, mens en HTML-meddelelse har fokus; Shift+Delete sletter permanent
+Ctrl+Shift+Page Down: Næste meddelelse i denne tråd; Ctrl+Shift+Page Up: forrige. Erstatter den aktuelle fane i stedet for at åbne en anden, så der kun nogensinde er én meddelelse åben. Ved den sidste meddelelse (eller den første, når man går opad) siger den det og spørger; at trykke på den samme tast igen lukker meddelelsen og afslutter tråden, og du lander tilbage i meddelelseslisten. (Ctrl+Page Up/Down lades i fred -- de skifter faner)
+Ctrl+B: Skift meddelelsesvisning (Tekst/HTML)
+Ctrl+P: Udskriv
+Ctrl+Shift+P: Vis udskrift
+Ctrl+S: Gem meddelelse som
+Ctrl+U: Læs afsenderens navn og adresse op
+Ctrl+Shift+U: Læs afsenderen op og kopier adressen
+Ctrl+Shift+I: Vis eksternt indhold i denne meddelelse
+Ctrl+Shift+=: Forøg meddelelsens skriftstørrelse
+Ctrl+Shift+-: Formindsk meddelelsens skriftstørrelse
+Ctrl+Shift+0: Nulstil meddelelsens skriftstørrelse
+
+Skrivning af en meddelelse
+Ctrl+Enter eller Alt+S: Send
+Ctrl+S: Gem kladde
+Ctrl+Shift+A: Vedhæft fil
+Ctrl+Shift+S: Indsæt signaturen for kontoen i Fra
+Ctrl+Shift+V: Indsæt som citat
+Ctrl+Shift+W: Ordtælling
+Ctrl+Shift+P: Vis meddelelsen, som den vil blive sendt
+Escape, Ctrl+W eller Ctrl+F4: Luk skrivefanen -- spørger først, hvis noget er ugemt, og tilbyder Gem kladde, Kassér eller Fortsæt med at redigere
+Hver kommando nedenfor findes også i menuen Skriv, som Alt+C åbner, selv når fokus er inde i meddelelsesteksten
+
+Formatering under skrivning
+Ctrl+B: Fed
+Ctrl+I: Kursiv
+Ctrl+Shift+X: Gennemstreget
+Ctrl+Shift+8: Punktopstilling
+Ctrl+Shift+7: Nummereret liste
+Ctrl+Shift+9: Citat
+Ctrl+Shift+6: Kode
+Ctrl+Alt+1: Overskrift
+Ctrl+K: Indsæt link
+Ctrl+Shift+K: Sig, hvilken formatering der gælder, hvor markøren er
+Ctrl+Shift+M: Åbn menuen Format, uanset hvor fokus er, også i meddelelsesteksten
+
+Stavekontrol under skrivning
+Ctrl+Shift+F7: Kontroller stavning
+Ctrl+Shift+F9: Gå til næste stavefejl
+Ctrl+Shift+F8: Føj det ord, den stoppede ved, til ordlisten
+
+Samme tast to steder
+Ctrl+S: Gem kladde under skrivning, Gem meddelelse som i en åben meddelelse
+Ctrl+B: Fed under skrivning, skift mellem Tekst og HTML i en åben meddelelse
+Ctrl+Shift+P: Eksempel under skrivning, Vis udskrift i en åben meddelelse
+Alt+A: Arkiver, men kun mens en meddelelsestekst har tastaturfokus; alle andre steder åbner det menuen Konti
+
+Diagnostik
+Ctrl+Shift+F12: Diagnostik af genvejstaster -- skriver en linje i fejlfindingsloggen for hver kombination, der trykkes i en skrivefane, så det kan bevises, hvad en tast faktisk nåede. Slået fra som standard, og den samme tast slår den fra igen; tilstanden siges højt i begge tilfælde

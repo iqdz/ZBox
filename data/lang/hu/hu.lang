@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Magyar
+code = hu
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Az üzenet elküldve.
+draft_saved = A piszkozat mentve.
+signature_inserted = Az aláírás beszúrva.
+signature_none = Ennek a postafióknak nincs aláírása.
+signature_saved = Az aláírás mentve.
+signature_not_saved = Az aláírás nincs mentve.
+pasted_as_quotation = Beillesztve idézetként.
+clipboard_empty = A vágólap üres.
+word_count = {words} szó, {characters} karakter.
+report_copied = A jelentés átmásolva.
+compose_tab_needed = Ehhez a parancshoz írási lap kell.
+attach_file_instead = A ráejtett fájlok nem kerülnek az üzenet szövegébe. Fájl küldéséhez használja a Fájl csatolása parancsot.
+
+# Formatting in the message body
+formatting_here = Formázás itt: {formatting}.
+no_formatting_here = Itt nincs formázás, egyszerű szöveg.
+
+# Spelling
+nothing_to_check = Nincs mit ellenőrizni.
+no_misspellings = Nincs helyesírási hiba.
+spelling_dictionary_unavailable = A helyesírási szótár nem érhető el.
+next_misspelling_first = Először használja a következő hibát.
+word_added = A(z) {word} hozzáadva a szótárhoz.
+word_not_added = A(z) {word} nem adható hozzá a szótárhoz.
+corrections_applied_one = 1 javítás alkalmazva.
+corrections_applied_many = {count} javítás alkalmazva.
+corrections_applied_partly = {total} javításból {applied} alkalmazva. A többit elutasították; lásd a naplót.
+occurrences_replaced_one = 1 előfordulás lecserélve.
+occurrences_replaced_many = {count} előfordulás lecserélve.
+
+# Reading mail
+message_did_not_open = Az üzenet nem nyílt meg. A kiszolgáló nem válaszolt. Az újrapróbáláshoz nyomja meg az Entert.
+thread_open = {messages} ebben a témacsoportban. A bezáráshoz nyomja meg újra.
+no_thread_selected = Nincs kijelölt témacsoport.
+thread_watched = A témacsoport figyelve.
+thread_not_watched = A témacsoport már nincs figyelve.
+thread_ignored = A témacsoport mellőzve.
+thread_not_ignored = A témacsoport már nincs mellőzve.
+none_found = Nincs találat.
+refreshing_this_folder = A mappa frissítése.
+refreshing_all_accounts = Az összes postafiók frissítése.
+message_view_html = Üzenetnézet: HTML (megjelenítve).
+message_view_text = Üzenetnézet: Szöveg.
+html_view_still_loading = Az üzenet még töltődik. Az Escape bezárja.
+message_still_opening = Az üzenet megnyitása. A kiszolgáló lassú.
+remote_content_blocked = A távoli tartalom letiltva.
+remote_content_unblocked = A távoli tartalom engedélyezve.
+remote_content_already_showing = A távoli tartalom már látszik ebben az üzenetben.
+archived = Archiválva.
+copied_to_folder = Átmásolva ide: {to_folder}.
+deleted_one = Az üzenet véglegesen törölve.
+deleted_many = {count} üzenet véglegesen törölve.
+trashed_one = Az üzenet a Kukába került.
+trashed_many = {count} üzenet a Kukába került.
+
+# Accounts and new mail
+no_account_yet = Még nincs postafiók, ahová át lehetne ugrani.
+inbox_landed = {name} beérkezett üzenetei.
+account_enabled = {name} engedélyezve.
+auto_check_paused = Az automatikus ellenőrzés szünetel ennél: {account}.
+auto_check_resumed = Az automatikus ellenőrzés be van kapcsolva ennél: {account}.
+account_disabled = {name} letiltva.
+new_mail_one = 1 új üzenet ennél: {name}.
+new_mail_many = {count} új üzenet ennél: {name}.
+refresh_all_done_one = 1 postafiók frissítve.
+refresh_all_done_many = {count} postafiók frissítve.
+refresh_all_done_failures = {count} postafiók frissítve, {failed} nem frissíthető.
+refresh_all_done_failures_one = {count} postafiók frissítve, {failed} nem frissíthető.
+
+# The sender of the message in view
+sender_address_copied = {sender}. A cím átmásolva.
+sender_no_address = {sender}. Nincs másolható cím.
+clipboard_not_opened = {sender}. A vágólap nem nyitható meg.
+
+# The signature editor
+signature_page_formatted = Formázott. Ez lesz elmentve.
+signature_page_html = HTML-forrás. Ez lesz elmentve.
+signature_page_html_still_wins = Formázott. Továbbra is a HTML-forrás lesz elmentve.
+
+# Background work
+phishing_list_updating = Az adathalász-lista frissítése a háttérben.
+cache_cleared = {files} gyorsítótárazott fájl törölve, {size} MB.
+hotkeys_diagnostic_on = A gyorsgomb-diagnosztika be van kapcsolva, bejelölve
+hotkeys_diagnostic_off = A gyorsgomb-diagnosztika ki van kapcsolva, nincs bejelölve
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Archiválás
+action_delete = Törlés
+action_delete_permanently = Végleges törlés
+action_mark_as_junk = Megjelölés levélszemétként
+action_mark_as_not_junk = Megjelölés nem levélszemétként
+action_move_to = Áthelyezés
+action_copy_to = Átmásolás
+action_mark_message = Üzenet megjelölése
+action_undo = Visszavonás
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Visszavonva: {action}.
+undo_done_many = Visszavonva: {action}, {count} üzenetnél.
+junk_marked_one = Megjelölve levélszemétként.
+junk_marked_many = {count} üzenet megjelölve levélszemétként.
+junk_no_new_sender = Nem lett új feladó letiltva: már le van tiltva, levelezőlista, vagy az egyik saját címe.
+not_junk_marked_one = Megjelölve nem levélszemétként.
+not_junk_marked_many = {count} üzenet megjelölve nem levélszemétként.
+moved_to_one = Áthelyezve ide: {to_folder}.
+moved_to_many = {count} üzenet áthelyezve ide: {to_folder}.
+copied_to_many = {count} üzenet átmásolva ide: {to_folder}.
+marked_read = Megjelölve olvasottként.
+marked_unread = Megjelölve olvasatlanként.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Megszakítva {total} üzenetből {completed} után. {succeeded} sikerült, {failed} nem.
+bulk_failed_one = {done} 1 üzenetből {failed} nem sikerült.
+bulk_failed_many = {done} {total} üzenetből {failed} nem sikerült.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Félkövér
+format_word_italic = Dőlt
+format_word_strike = Áthúzott
+format_word_href = Hivatkozás
+format_word_bullet = Felsorolás
+format_word_number = Számozott lista
+format_word_quote = Idézet
+format_word_code = Kód
+format_word_heading1 = Címsor
+format_applied = Alkalmazva: {formatting}.
+format_inserted = Beszúrva: {formatting}.
+format_not_available = A(z) {formatting} nem érhető el az egyszerű üzenetszövegben.
+format_on = {formatting} bekapcsolva
+format_off = {formatting} kikapcsolva
+link_applied = A hivatkozás alkalmazva.
+link_applied_to_selection = A hivatkozás a kijelölésre alkalmazva.
+plain_body_formatting = Az egyszerű üzenetszöveg a formázását címkékként mutatja.
+
+# Reaching either end of a thread
+thread_edge_first = Ez a témacsoport első üzenete. A bezáráshoz nyomja meg újra.
+thread_edge_last = Ez a témacsoport utolsó üzenete. A bezáráshoz nyomja meg újra.
+jump_unified_inbox = Egyesített beérkezett üzenetek.
+remote_none = Ebben az üzenetben nincs távoli tartalom.
+sender_none = Ennek az üzenetnek nincs feladója.
+sender_name_no_address = %s, nincs cím
+signature_not_switched = Az aláírás nem változott. A postafiók aláírásának beszúrásához nyomja meg a Ctrl+Shift+S billentyűt.
+signature_removed_no_signature = Az aláírás eltávolítva. Ennek a postafióknak nincs aláírása.
+signature_switched = Az aláírás a postafiók aláírására változott.
+spell_not_replaced = A szó nem cserélhető le.
+spell_replaced_with = Lecserélve erre: {word}.
+folder_marked_read = {count} üzenet megjelölve olvasottként.
+folder_no_unread = Nincs olvasatlan üzenet.
+threads_all_collapsed = Az összes témacsoport összecsukva.
+threads_all_expanded = Az összes témacsoport kibontva.
+upd_percent = {percent} százalék
+upd_download_done = A letöltés kész. A frissítés előkészítése...
+upd_updated_to = A ZBox frissítve erre: {version}.
+header_copied = Átmásolva.
+headers_copied = Az összes fejléc átmásolva.
+identity_copies_updated = A Másolat és a Rejtett másolat frissítve ehhez a személyazonossághoz.
+signature_switched_identity = Az aláírás a személyazonosság aláírására változott.
+signature_removed_identity = Az aláírás eltávolítva. Ennek a személyazonosságnak nincs aláírása.
+signature_not_switched_identity = Az aláírás nem változott. A személyazonosság aláírásának beszúrásához nyomja meg a Ctrl+Shift+S billentyűt.
+signature_none_identity = Ennek a személyazonosságnak nincs aláírása.
+move_keys_no_selection = Először jelöljön ki egy üzenetet.
+move_keys_no_folders = Még nincs kiválasztható mappa. Próbálja újra egy pillanat múlva.
+block_sender_done_one = {sender} letiltva. Az új üzenetei a Kukába kerülnek.
+block_sender_done_many = {count} feladó letiltva. Az új üzeneteik a Kukába kerülnek.
+block_sender_already = {sender} már le van tiltva.
+block_sender_own = Nem lett letiltva: ez az egyik saját címe.
+block_sender_list_unknown = Nem lett letiltva: ez az üzenet levelezőlistán keresztül érkezett, és nem árulja el, ki küldte. A lista címének letiltása mindenkit letiltana, aki a listán van.
+block_sender_moved = A feladó letiltva. {count} üzenet a Kukába került.
+block_senders_moved = {senders} feladó letiltva. {count} üzenet a Kukába került.
+unblock_sender_moved = A feladó letiltása feloldva. {count} üzenet a Beérkezett üzenetek közé került.
+unblock_senders_moved = {senders} feladó letiltása feloldva. {count} üzenet a Beérkezett üzenetek közé került.
+unblock_sender_done = {sender} letiltása feloldva.
+unblock_sender_not_blocked = {sender} nincs letiltva.
+pgp_cm_on = {name} bekapcsolva.
+pgp_cm_off = {name} kikapcsolva.
+pgp_cm_identity = A titkosítási beállítások a személyazonosság beállításaira változtak.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Írjon be valamit fent, és nyomja meg az Entert, vagy válassza a Keresés gombot.
+search_no_account = Először adjon hozzá egy postafiókot.
+search_no_term = Írjon be keresendő szavakat, vagy válasszon dátumot vagy jelölőnégyzetet.
+search_running = Keresés...
+search_none = Nincs találat erre: "{term}".
+search_found_one = 1 találat erre: "{term}".
+search_found_many = {count} találat erre: "{term}".
+search_bad_date = A dátumot év-hónap-nap formában adja meg, például 2025-12-31, igény szerint idővel, például 14:30.
+search_bad_range = A dátumtartomány vége a kezdete előtt van.
+search_none_any = Egy üzenet sem egyezik.
+search_found_one_any = 1 üzenet található.
+search_found_many_any = {count} üzenet található.
+search_failed = A keresés sikertelen.
+
+# The related messages tab
+related_running = Keresés...
+related_none = Nem találhatók kapcsolódó üzenetek.
+related_found_one = 1 kapcsolódó üzenet található.
+related_found_many = {count} kapcsolódó üzenet található.
+related_failed = A kapcsolódó üzenetek keresése nem sikerült.
+
+# Writing and sending
+sending_via = Küldés ezen keresztül: {sender}...
+send_failed = A küldés sikertelen. A részleteket lásd a naplókban.
+draft_autosaved = A piszkozat automatikusan mentve.
+draft_autosave_failed = A piszkozat automatikus mentése sikertelen. A részleteket lásd a naplókban.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = A távoli tartalom mostantól betöltődik {sender} üzeneteinél.
+downloading_attachment = {filename} letöltése...
+downloading_attachments_one = 1 melléklet letöltése...
+downloading_attachments_many = {count} melléklet letöltése...
+saved_to = Mentve ide: {folder}
+attachment_download_failed = A melléklet letöltése sikertelen.
+
+# Getting mail onto the screen
+loading_folder = {folder} betöltése ennél: {account}...
+messages_in_folder = {count} üzenet ebben: {folder}.
+messages_in_folder_cached = {count} üzenet ebben: {folder} (utolsó szinkronizált másolat, frissítés...)
+no_offline_copy = Még nincs kapcsolat nélküli másolat ehhez: {folder}.
+refresh_failed_cached = A(z) {folder} nem frissíthető: az utolsó szinkronizált másolat látható.
+no_such_folder = Ennél a postafióknál nincs {folder} mappa.
+load_failed = Az üzenetek betöltése sikertelen. A részleteket lásd a naplókban.
+no_more_to_load = Ebben a mappában nincs több betölthető üzenet.
+loading_more = További üzenetek betöltése ebben: {folder}...
+more_loaded = Még {count} üzenet betöltve.
+no_more_messages = Ebben a mappában nincs több üzenet.
+load_more_failed = A további üzenetek betöltése nem sikerült: {error}
+loading_unified = Egyesített {folder} betöltése...
+messages_in_unified = {count} üzenet a postafiókokból az egyesített {folder} mappában.
+messages_in_unified_cached = {count} üzenet az egyesített {folder} mappában (utolsó szinkronizált másolat, frissítés...)
+auto_purge_done = Az automatikus tisztítás {count} régi üzenetet távolított el a Kukából/Levélszemétből.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Kész.
+opening_message = Üzenet megnyitása...
+opening_message_already = Üzenet megnyitása... (már töltődik)
+could_not_open_message = Az üzenet nem nyitható meg.
+could_not_open_that_message = Az az üzenet nem nyitható meg.
+could_not_load_message = Ez az üzenet nem tölthető be.
+message_still_loading = Az az üzenet még töltődik.
+folder_still_loading = A mappa még töltődik -- próbálja újra egy pillanat múlva.
+not_in_thread = Ez az üzenet nem része témacsoportnak.
+no_longer_in_thread = Ez az üzenet már nem része a témacsoportnak.
+thread_position = {total} üzenetből a(z) {position}. ebben a témacsoportban.
+thread_finished_one = A témacsoport vége (1 üzenet).
+thread_finished_many = A témacsoport vége ({count} üzenet).
+select_message_first = Először jelöljön ki egy üzenetet.
+conversation_failed = Ez a beszélgetés nem nyitható meg.
+select_message_for_related = Először jelöljön ki egy üzenetet, hogy lássa a kapcsolódó üzeneteket.
+looking_for_related = Kapcsolódó üzenetek keresése...
+no_threading_headers = Ennek az üzenetnek nincs Message-ID vagy témacsoport-fejléce, amelyre kereshetne.
+reply_one_at_a_time = A válasz egyszerre egy üzenettel működik. Jelöljön ki egyetlen üzenetet.
+select_message_to_reply = Először jelölje ki azt az üzenetet, amelyre válaszolni szeretne.
+preparing_reply = Válasz előkészítése...
+reply_load_failed = A válaszhoz az eredeti üzenet nem tölthető be.
+select_message_to_forward = Először jelölje ki a továbbítandó üzenetet.
+preparing_forward = A továbbítandó üzenet előkészítése...
+forward_load_failed = A továbbítandó üzenet nem tölthető be.
+compose_tab_needed_hint = Ehhez a parancshoz írási lap kell. Üzenet írásához nyomja meg a Ctrl+N billentyűt.
+open_message_first_view = Először nyisson meg egy üzenetet, majd a nézet váltásához nyomja meg a Ctrl+B billentyűt.
+open_message_first_remote = Először nyisson meg egy üzenetet, majd a távoli tartalom betöltéséhez nyomja meg a Ctrl+Shift+I billentyűt.
+
+# Acting on messages
+copying_message = Üzenet másolása...
+copy_failed = A másolás sikertelen.
+delete_failed = A törlés sikertelen.
+already_in_archive = Már az Archívumban van.
+archiving = Archiválás...
+archive_failed = Az archiválás sikertelen.
+action_failed = Sikertelen: {action}.
+nothing_to_undo = Nincs mit visszavonni.
+private_mode_on = A privát mód be van kapcsolva. A ZBox ezen a számítógépen tárolt levélmásolatai törölve lettek.
+private_mode_off = A privát mód ki van kapcsolva. A ZBox újra tárolja a levelei másolatait.
+undo_failed = A(z) {action} nem vonható vissza.
+
+# Views and folders
+folder_pane_all = Mappaablak: Összes mappa.
+folder_pane_unified = Mappaablak: Egyesített mappák.
+sorted_ascending = Rendezés: {field}, növekvő.
+sorted_descending = Rendezés: {field}, csökkenő.
+unified_folders_updated = Az egyesített mappák frissítve.
+zoom_reset = Az üzenet betűmérete visszaállítva az alapértelmezettre.
+folder_creating = A(z) "{folder}" mappa létrehozása...
+folder_created = A(z) "{folder}" mappa létrehozva.
+folder_create_failed = A mappa nem hozható létre.
+folder_renaming = A(z) "{folder}" átnevezése erre: "{new_name}"...
+folder_renamed = A mappa átnevezve erre: "{new_name}".
+folder_rename_failed = A mappa nem nevezhető át.
+folder_deleting = A(z) "{folder}" mappa törlése...
+folder_deleted = A mappa törölve.
+folder_delete_failed = A mappa nem törölhető.
+folder_subscribing = Feliratkozás erre: "{folder}"...
+folder_unsubscribing = Leiratkozás erről: "{folder}"...
+folder_subscribed = Feliratkozva.
+folder_unsubscribed = Leiratkozva.
+folder_subscribe_failed = A mappára nem lehet feliratkozni.
+folder_unsubscribe_failed = A mappáról nem lehet leiratkozni.
+
+# Accounts
+account_not_added = A postafiók nincs hozzáadva.
+account_added = Postafiók hozzáadva: {account}
+account_settings_not_saved = A postafiók beállításai nincsenek mentve.
+account_updated = Postafiók frissítve: {account}
+account_not_removed = A postafiók nincs eltávolítva.
+account_removed = A postafiók eltávolítva.
+account_removed_with_files = A postafiók eltávolítva. {count} helyi fájl törölve.
+default_account_failed = Az alapértelmezett postafiók nem állítható be.
+default_account_set = {account} most már az alapértelmezett postafiók.
+auto_check_not_saved = Az automatikus ellenőrzés beállítása nincs mentve.
+mute_not_saved = A némítás beállítása nincs mentve.
+account_muted = {account} némítva.
+account_unmuted = {account} némítása feloldva.
+export_done = {count} postafiók és a beállítások exportálva ide: {path}.
+import_done = {count} postafiók importálva innen: {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = A szűrők nincsenek mentve.
+filters_saved = A szűrők mentve ehhez: {account}.
+filters_checking = A(z) {folder} ellenőrzése a szűrőivel...
+filters_none_matched = Futtatás most: a(z) {folder} egyik üzenete sem egyezett engedélyezett szabállyal.
+filters_run_failed = A szűrők nem futtathatók.
+filters_moving = {count} szűrt üzenet áthelyezése...
+filters_move_failures = Szűrők: {count} üzenet nem helyezhető át.
+filters_moved = A szűrők {count} üzenetet helyeztek át innen: {folder}.
+filters_move_failed = A szűrt üzenetek nem helyezhetők át.
+cache_not_cleared = A gyorsítótár nincs törölve.
+auto_cache_cleanup = Automatikus gyorsítótár-tisztítás: {age} időnél régebbi üzenetek.
+phishing_update_failed = Az adathalász-lista nem frissíthető: {error}
+blocklist_update_failed = A tiltólista nem frissíthető: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Először nyisson meg egy üzenetet, majd használja a Mentés másként parancsot.
+saving_message = Üzenet mentése...
+save_file_failed = A fájl nem menthető.
+save_fetch_failed = A mentendő üzenet nem kérhető le.
+open_message_first_print = Először nyisson meg egy üzenetet, majd használja a Nyomtatás parancsot.
+open_message_first_preview = Először nyisson meg egy üzenetet, majd használja a Nyomtatási kép parancsot.
+refreshing_accounts = {count} postafiók frissítése...
+emptying_trash = A Kuka ürítése ennél: {account}...
+trash_already_empty = A Kuka már üres volt.
+trash_emptied = A Kuka kiürítve: {count} üzenet törölve.
+empty_trash_failed = A Kuka nem üríthető ki.
+emptying_junk = A Levélszemét ürítése ennél: {account}...
+junk_already_empty = A Levélszemét már üres volt.
+junk_emptied = A Levélszemét kiürítve: {count} üzenet törölve.
+junk_emptied_prefix = A Levélszemét kiürítve:
+junk_part_purged = {count} törölve
+junk_part_in_trash = {count} a Kukába került, de az eltávolítás nincs megerősítve, ellenőrizze a Kukát
+junk_part_not_moved = {count} nem került a Kukába, még a Levélszemétben van
+empty_junk_failed = A Levélszemét nem üríthető ki.
+back_online = Újra online.
+offline_sync_running = {account} szinkronizálása kapcsolat nélküli használatra...
+offline_sync_failed = A kapcsolat nélküli szinkronizálás sikertelen: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Először jelöljön ki vagy nyisson meg egy üzenetet.
+select_or_open_message_ctrl_u = Először jelöljön ki vagy nyisson meg egy üzenetet, majd nyomja meg a Ctrl+U billentyűt.
+no_sender_address = Ennek az üzenetnek nincs hozzáadható feladócíme.
+contact_added = {contact} hozzáadva a címjegyzékhez.
+contact_already_there = {contact} már szerepel a címjegyzékben.
+privacy_saved = Az adatvédelmi beállítások mentve. Az alkalmazáshoz nyissa meg újra az üzenetet.
+message_font_size = Az üzenet betűmérete: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Üzenet végleges törlése
+deleting_many = {count} üzenet végleges törlése
+trashing_one = Üzenet áthelyezése a Kukába
+trashing_many = {count} üzenet áthelyezése a Kukába
+undo_partly_restored = Visszavonva: {action}, de {count} nem állítható vissza -- lehet, hogy időközben áthelyezték, törölték vagy lejártak.
+moves_report = {action}: {total} üzenetből {moved} áthelyezve.
+moves_report_failed = Nincs áthelyezve, még az eredeti mappában van: {count}.
+
+tray_tooltip_one = ZBox — 1 olvasatlan üzenet
+tray_tooltip_many = ZBox — {count} olvasatlan üzenet
+account_unreachable = A(z) {account} nem érhető el. Az automatikus ellenőrzések szünetelnek {minutes} percig.
+bulk_copy_failed = Az üzenetek nem másolhatók.
+bulk_copy_failed_status = A másolás sikertelen.
+bulk_loading_archive = Az üzenetek még töltődnek -- próbálja újra az archiválást egy pillanat múlva.
+bulk_loading_delete = Az üzenetek még töltődnek -- próbálja újra a törlést egy pillanat múlva.
+bulk_loading_flag = Az üzenetek még töltődnek -- próbálja újra a csillagozást egy pillanat múlva.
+bulk_loading_generic = Az üzenetek még töltődnek -- próbálja újra egy pillanat múlva.
+bulk_none = Nincs kijelölt üzenet.
+bulk_none_archive = Nincs archiválandó kijelölt üzenet.
+bulk_none_delete = Nincs törlendő kijelölt üzenet.
+bulk_none_junk = Nincs levélszemétként megjelölendő kijelölt üzenet.
+bulk_none_not_junk = Nincs nem levélszemétként megjelölendő kijelölt üzenet.
+delete_refused_still = A kiszolgáló megtagadta a törlést; még ebben van: {folder}.
+delete_refused_trash = A Kukában van, de a kiszolgáló megtagadta a végleges törlést.
+delete_resume_failed = Egy korábbi törlésből {count} üzenet nem törölhető.
+done_perm_delete_one = Az üzenet véglegesen törölve.
+done_trash_one = Az üzenet a Kukába került.
+filters_applied = A szűrők alkalmazva {count} üzenetre ebben: {folder}.
+filters_failed = A szűrők nem futtathatók.
+filters_running = Szűrők futtatása ebben: {folder}
+flag_failed = A csillag nem frissíthető.
+flag_updated = A csillag frissítve.
+folder_verb_subscribing = Feliratkozás:
+folder_verb_unsubscribing = Leiratkozás:
+mark_read_failed = Az üzenetek nem jelölhetők meg olvasottként.
+mark_unread_failed = Az üzenetek nem jelölhetők meg olvasatlanként.
+notify_new_mail_body = {count} új {noun} ennél: {name}.
+notify_new_mail_title = Új levél
+notify_noun_many = üzenet
+notify_noun_one = üzenet
+report_done = {verb}: {done} a(z) {count} üzenetből.
+report_verb_deleted = Törölve
+report_verb_permanent = Véglegesen törölve
+running_copy_many = {count} üzenet másolása
+running_copy_one = Üzenet másolása
+running_junk_many = {count} üzenet megjelölése levélszemétként
+running_junk_one = Megjelölés levélszemétként
+running_move_many = {count} üzenet áthelyezése
+running_move_one = Áthelyezés
+running_not_junk_many = {count} üzenet megjelölése nem levélszemétként
+running_not_junk_one = Megjelölés nem levélszemétként
+running_perm_delete_one = Üzenet végleges törlése...
+running_read_many = {count} üzenet megjelölése olvasottként
+running_read_one = Megjelölés olvasottként
+running_trash_one = Üzenet áthelyezése a Kukába...
+running_unread_many = {count} üzenet megjelölése olvasatlanként
+running_unread_one = Megjelölés olvasatlanként
+settings_saved_no_startup = A beállítások mentve. A Windows indítási bejegyzése nem frissíthető.
+settings_saved_status = A beállítások mentve.
+spam_blocked_sender = Letiltott feladó
+spam_possible_phishing = Lehetséges adathalászat
+undo_running_many = Visszavonás: {action} ({count} üzenet)
+undo_running_one = Visszavonás: {action}
+mark_folder_read_failed = A mappa nem jelölhető meg olvasottként.
+marking_folder_read = A mappa megjelölése olvasottként...
+upd_ready_at_exit = Egy frissítés már le van töltve. A ZBox bezárásakor települ.
+upd_checking = Frissítések keresése...
+upd_up_to_date = A ZBox naprakész.
+upd_available_source = A ZBox {version} elérhető. Ez a példány forrásból fut, ezért frissítse gittel.
+upd_check_failed = A frissítések keresése nem sikerült: {error}
+opening_attachment = {filename} megnyitása...
+loading_headers = Fejlécek betöltése...
+offline_inbox_only = Kapcsolat nélküli használatra csak a Beérkezett üzenetek és az Archívum marad meg.
+offline_sync_done_inbox = {count} üzenet szinkronizálva a Beérkezett üzenetekben és az Archívumban kapcsolat nélküli használatra.
+working_offline = Kapcsolat nélküli munka: a Beérkezett/Elküldött/Piszkozatok utolsó szinkronizált másolata látható.
+emptying_trash_all = A Kuka ürítése minden postafióknál...
+trash_emptied_all = A Kuka kiürítve {accounts} postafiókban: {count} üzenet törölve.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fájl
+bar_edit = &Szerkesztés
+bar_view = &Nézet
+bar_message = &Üzenet
+bar_compose = &Írás
+bar_tools = &Eszközök
+bar_help = &Súgó
+
+# File
+file_new = Új
+file_new_message = Üzenet
+file_new_account = E-mail-fiók...
+file_open_saved_message = Mentett üzenet megnyitása...
+file_close = Bezárás
+file_save_message_as = Üzenet mentése másként...
+file_get_new_for = Új üzenetek letöltése:
+file_get_new_all = Minden postafiók
+file_get_new_current = Aktuális postafiók
+file_offline = Kapcsolat nélkül
+file_work_offline = Kapcsolat nélküli munka
+file_sync_now = Szinkronizálás most
+file_print = Nyomtatás...
+file_print_preview = Nyomtatási kép...
+file_exit = Kilépés
+
+# Edit
+edit_undo = Visszavonás
+edit_select_all = Összes kijelölése
+edit_find_messages = Üzenetek keresése...
+
+# Message
+message_reply = Válasz
+message_reply_all = Válasz mindenkinek
+message_forward = Továbbítás
+message_archive = Archiválás
+message_delete = Törlés
+message_delete_permanently = Végleges törlés
+message_mark = Megjelölés
+mark_read = Olvasott
+mark_unread = Olvasatlan
+mark_flagged = Csillagozott
+mark_junk = Levélszemét
+mark_not_junk = Nem levélszemét
+message_watch_thread = Témacsoport figyelése
+message_ignore_thread = Témacsoport mellőzése
+message_open_conversation = Üzenet megnyitása beszélgetésben
+message_show_related = Kapcsolódó üzenetek megjelenítése
+message_add_sender_to_address_book = Feladó hozzáadása a címjegyzékhez
+message_announce_sender = Feladó felolvasása
+message_announce_copy_sender = Feladó felolvasása és a cím másolása
+
+# View
+view_folders = Mappák
+folders_all = Összes
+folders_unified = Egyesített
+folders_jump_inbox = Ugrás a Beérkezett üzenetek listájára
+folders_configure_unified = Egyesített mappák beállítása...
+view_sort_by = Rendezés
+sort_date = Dátum
+sort_subject = Tárgy
+sort_from = Feladó
+sort_descending = Csökkenő (legújabb elöl)
+sort_ascending = Növekvő (legrégebbi elöl)
+view_threads = Témacsoportok
+threads_all = Összes
+threads_watched = Figyelt témacsoportok
+threads_ignored = Mellőzött témacsoportok
+threads_expand_all = Összes témacsoport kibontása
+threads_collapse_all = Összes témacsoport összecsukása
+view_load_more = További üzenetek betöltése
+view_toggle_message_view = Váltás szöveg- és HTML-nézet között
+view_show_remote_content = Távoli tartalom megjelenítése ebben az üzenetben
+view_message_zoom = Üzenet nagyítása
+zoom_increase = Üzenet betűméretének növelése
+zoom_decrease = Üzenet betűméretének csökkentése
+zoom_reset = Üzenet betűméretének visszaállítása
+
+# Compose
+compose_send = &Küldés
+compose_save_draft = &Piszkozat mentése
+compose_attach = &Fájl csatolása...
+compose_fmt_bold = &Félkövér
+compose_fmt_italic = &Dőlt
+compose_fmt_strike = &Áthúzott
+compose_fmt_bullet = &Felsorolás
+compose_fmt_number = &Számozott lista
+compose_fmt_quote = &Idézet
+compose_fmt_code = &Kód
+compose_fmt_heading1 = &Címsor
+compose_link = &Hivatkozás beszúrása...
+compose_formatting = &Formázás itt
+compose_spellcheck = &Helyesírás-ellenőrzés...
+compose_spellcheck_next = &Következő hiba
+compose_spellcheck_add = &Szó hozzáadása a szótárhoz
+compose_insert_signature = &Aláírás beszúrása
+compose_paste_quotation = &Beillesztés idézetként
+compose_word_count = &Szószámláló
+compose_preview = &Előnézet...
+compose_diagnostics = &Íráseszköz-diagnosztika...
+compose_edit_signature = &Aláírás szerkesztése...
+compose_hotkeys_diagnostic = &Gyorsgomb-diagnosztika
+
+# Tools
+tools_account_settings = Postafiók- és személyazonosság-beállítások...
+tools_mute_account = Postafiók némítása
+tools_pause_auto_check = Automatikus ellenőrzés szüneteltetése
+tools_disable_account = Postafiók letiltása
+tools_remove_account = Postafiók eltávolítása...
+tools_address_book = Címjegyzék...
+tools_message_filters = Üzenetszűrők...
+tools_import = Postafiókok és beállítások importálása...
+tools_export = Postafiókok és beállítások exportálása...
+tools_cache_cleanup = Gyorsítótár-tisztítás beállításai...
+tools_privacy = Adatvédelem és tartalomtiltás...
+tools_settings = Beállítások...
+
+# Help
+help_shortcuts = Billentyűparancsok...
+help_about = A ZBox névjegye...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Új postafiók...
+tree_account_settings = Postafiók- és személyazonosság-beállítások...
+tree_mute_account = Postafiók némítása
+tree_pause_auto_check = Automatikus ellenőrzés szüneteltetése
+tree_enable_account = Postafiók engedélyezése
+tree_disable_account = Postafiók letiltása
+tree_set_default_account = Beállítás alapértelmezett postafiókként
+tree_remove_account = Postafiók eltávolítása...
+tree_refresh = Frissítés
+tree_new_folder = Új mappa...
+tree_empty_trash = Kuka ürítése
+tree_empty_junk = Levélszemét ürítése
+tree_rename_folder = Mappa átnevezése...
+tree_delete_folder = Mappa törlése...
+tree_subscribe_folder = Feliratkozás a mappára
+tree_unsubscribe_folder = Leiratkozás a mappáról
+
+# The message list menu, opened the same two ways
+list_select_all = Összes kijelölése
+list_reply = Válasz
+list_reply_all = Válasz mindenkinek
+list_forward = Továbbítás
+list_mark = Megjelölés
+list_archive = Archiválás
+list_delete_to_trash = Törlés (áthelyezés a Kukába)
+list_delete_permanently = Végleges törlés
+list_move_to = Áthelyezés
+list_copy_to = Átmásolás
+
+# The notification area icon
+tray_open = &A ZBox megnyitása
+tray_unread_one = 1 olvasatlan üzenet
+tray_unread_many = {count} olvasatlan üzenet
+tray_no_unread = Nincs olvasatlan üzenet
+tray_settings = &Beállítások...
+tray_quit = &Kilépés a ZBoxból
+
+# The formatting menu inside a message you are writing
+format_bold = &Félkövér
+format_italic = &Dőlt
+format_strike = &Áthúzott
+format_bullet = &Felsorolás
+format_number = &Számozott lista
+format_quote = &Idézet
+format_code = &Kód
+format_heading1 = &Címsor
+format_insert_link = &Hivatkozás beszúrása...
+format_formatting_here = &Formázás itt
+tools_enable_account = Postafiók engedélyezése
+edit_undo_action = Visszavonás: {action}
+tree_mark_folder_read = Mappa megjelölése olvasottként
+help_updates = &Frissítések
+help_check_updates = &Frissítések keresése most...
+help_update_settings = &Frissítési beállítások...
+help_releases_page = &A kiadások oldalának megnyitása
+message_attachments = Mellékletek
+message_no_attachments = Nincs melléklet
+message_save_all_attachments = Az összes melléklet mentése
+view_full_headers = Teljes fejlécek
+folders_go_to_tree = Ugrás a mappalistára
+list_block_sender = A feladó letiltása
+list_unblock_sender = A feladó letiltásának feloldása
+sort_received = Érkezés
+sort_star = Csillag
+sort_order_received = Érkezési sorrend
+sort_priority = Prioritás
+sort_recipient = Címzett
+sort_correspondents = Levelezőpartnerek
+sort_size = Méret
+sort_read = Olvasott
+sort_junk_status = Levélszemét-állapot
+sort_attachments = Mellékletek
+sort_threaded = Témacsoport szerint
+sort_unthreaded = Témacsoportok nélkül
+view_columns = Oszlopok
+tools_openpgp_keys = OpenPGP-kulcskezelő
+tools_smime_certs = S/MIME-tanúsítványkezelő
+compose_pgp_encrypt = &Titkosítás
+compose_pgp_sign = &Digitális aláírás
+compose_pgp_attach_key = &Saját nyilvános kulcs csatolása
+
+[dialogs]
+set_theme_restart_confirm = Újraindítja a ZBoxot a témaváltás alkalmazásához?
+set_ui_theme_label = &Felület témája:
+set_ui_theme_note = A menük, listák, párbeszédablakok és a Szöveg üzenetnézet színei. A Rendszer követése a Windows saját világos vagy sötét alkalmazásmódját használja. Az Éjkék, a Meleg sötét és a Lágy kontraszt enyhébb színű sötét témák. A HTML-üzenetek megtartják saját színeiket, és a Windows Nagy kontraszt mindig elsőbbséget élvez. A ZBox következő indításakor lép érvénybe.
+set_theme_system = Rendszer követése
+set_theme_light = Világos
+set_theme_dark = Sötét
+set_theme_midnight = Éjkék
+set_theme_warm = Meleg sötét
+set_theme_soft = Lágy kontraszt
+set_language_restart_confirm = Újraindítja a ZBoxot a nyelvváltás alkalmazásához?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Kapcsolatfelvétel Harith-tal
+title_identity = Személyazonosság
+title_show_password = Jelszó megjelenítése
+title_missing_information = Hiányzó adat
+title_unsupported_provider = Nem támogatott szolgáltató
+title_test_connection = Kapcsolat tesztelése
+title_new_contact = Új névjegy
+title_edit_contact = Névjegy szerkesztése
+title_delete_contact = Névjegy törlése
+title_import_contacts = Névjegyek importálása
+title_export_contacts = Névjegyek exportálása
+title_rename_group = Csoport átnevezése
+title_delete_group = Csoport törlése
+title_send = Küldés
+title_send_failed = A küldés sikertelen
+title_attach_file = Fájl csatolása
+title_save_draft = Piszkozat mentése
+title_documentation = ZBox-dokumentáció
+title_open_link = Hivatkozás megnyitása
+title_filter_rule = Szűrőszabály
+title_master_password = Elsődleges jelszó
+title_attachment_saved = Melléklet mentve
+title_attachments_saved = Mellékletek mentve
+title_download_failed = A letöltés sikertelen
+title_print = Nyomtatás
+title_print_preview = Nyomtatási kép
+title_related_messages = Kapcsolódó üzenetek
+title_search = Keresés
+title_unlock = Feloldás
+title_unlock_methods = Feloldási módok
+title_desktop_shortcut = Asztali parancsikon
+title_spell_check = Helyesírás-ellenőrzés
+title_plain_text_password = Egyszerű szöveges jelszó található
+title_startup_error = ZBox indítási hiba
+
+identity_email_required = Adjon meg egy e-mail-címet.
+
+wizard_password_not_shown = A jelszó ezen a rendszeren nem jeleníthető meg. Továbbra is rendesen gépelhető és menthető.
+wizard_email_required = A folytatás előtt adjon meg érvényes e-mail-címet.
+wizard_test_needs_server = A teszt előtt adja meg a bejelentkezési e-mail-címet és a bejövő kiszolgálót.
+wizard_test_succeeded = A kapcsolat sikeres. {count} üzenet található a Beérkezett üzenetek között.
+
+contact_email_required = E-mail-cím megadása kötelező.
+contact_select_to_edit = Jelöljön ki egy szerkesztendő névjegyet.
+contact_select_to_delete = Jelöljön ki egy törlendő névjegyet.
+contact_delete_confirm = Törli a(z) {label} névjegyet a címjegyzékből?
+contacts_import_choose_file = Válasszon egy .vcf (vCard) vagy .csv fájlt az importáláshoz.
+contacts_imported = {count} névjegy importálva.
+contacts_import_empty = Ebben a fájlban nem található névjegy.
+contacts_none_to_export = Nincs exportálható névjegy.
+contacts_exported = {count} névjegy exportálva ide:\n{path}
+group_name_exists = Már létezik "{name}" nevű csoport.
+group_delete_confirm = Törli a(z) "{name}" csoportot? A névjegyei nem törlődnek.
+
+send_no_account = Küldés előtt adjon hozzá postafiókot, vagy válasszon egyet a Feladó mezőben.
+send_no_recipient = Adjon meg legalább egy címzettet a Címzett mezőben.
+draft_no_account = Piszkozat mentése előtt adjon hozzá postafiókot, vagy válasszon egyet a Feladó mezőben.
+attached_file = Csatolva: {name}\n\nKüldéskor {count} fájl lesz csatolva.
+
+documentation_copied = A teljes ZBox-dokumentáció átmásolva a vágólapra.
+
+filter_rule_needs_name = Adjon nevet ennek a szabálynak.
+filter_rule_needs_condition = Állítson be legalább egy feltételt (Feladó, Címzett vagy Tárgy).
+filter_rule_needs_action = Válasszon legalább egy műveletet: megjelölés olvasottként, csillagozás vagy áthelyezés mappába.
+
+master_password_set = Az elsődleges jelszó beállítva. Tartsa biztonságos helyen: a ZBox minden új számítógépen egyszer kéri, és elvesztése esetén nem állítható helyre.
+master_password_offer = Elsődleges jelszó nélkül a mentett postafiókjelszavak csak ezen a számítógépen és ezzel a Windows-fiókkal olvashatók. Ha a ZBoxot máshová másolja, minden postafiókba újra be kell jelentkezni.\n\nBeállít most egyet?
+
+attachment_saved = Melléklet mentve ide:\n{path}
+attachments_saved = {count} melléklet mentve ide:\n{path}
+
+shortcut_created_settings = Parancsikon létrehozva:\n{path}\n\nA ZBoxot innen indítja:\n{base}
+
+spellcheck_no_dictionary = A helyesírási szótár hiányzik, ezért a helyesírás-ellenőrzés nem érhető el a ZBox ezen példányában.
+spellcheck_none_found = Nem található helyesírási hiba.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Beállít egy hozzáférési kulcsot ezen a számítógépen, és elfelejti a másik számítógépről mentettet?\n\nA Windows a Hellóval kéri majd a megerősítést. A másik számítógépen maradt régi hozzáférési kulcshoz ott nem nyúl a rendszer, és tovább működik, ha oda visszaviszi ezt a mappát, de újra be kell majd állítani.
+unlock_replace_passkey_many = Beállít egy hozzáférési kulcsot ezen a számítógépen, és elfelejti a más számítógépekről mentett {count} kulcsot?\n\nA Windows a Hellóval kéri majd a megerősítést. A másik számítógépen maradt régi hozzáférési kulcsokhoz ott nem nyúl a rendszer, és tovább működnek, ha oda visszaviszi ezt a mappát, de újra be kell majd állítani őket.
+unlock_method_works = Ez a mód működik.
+
+plain_text_password_found = A data\config\himalaya.toml még mindig tartalmaz egy egyszerű szöveges jelszót (auth.raw) egy régebbi fiókbeállításból.\n\nTávolítsa el azt a postafiókot és adja hozzá újra, vagy törölje a data\config\himalaya.toml fájlt, hogy a biztonságos hitelesítőadat-tároló használatával újra létrejöjjön.
+
+# main_frame's titles.
+title_account_list_unavailable = A postafiók-lista nem érhető el
+title_open_message = Üzenet megnyitása
+title_run_filters = Szűrők futtatása
+title_clear_cache = Kapcsolat nélküli üzenetek gyorsítótárának törlése
+title_remove_account = Postafiók eltávolítása
+title_new_folder = Új mappa
+title_rename_folder = Mappa átnevezése
+title_delete_folder = Mappa törlése
+title_subscribe = Feliratkozás
+title_unsubscribe = Leiratkozás
+title_open_saved_message = Mentett üzenet megnyitása
+title_save_message_as = Üzenet mentése másként
+title_empty_trash = Kuka ürítése
+title_empty_junk = Levélszemét ürítése
+title_synchronize_offline = Szinkronizálás kapcsolat nélküli használatra
+title_export_accounts = Postafiókok és beállítások exportálása
+title_import_accounts = Postafiókok és beállítások importálása
+title_show_related = Kapcsolódó üzenetek megjelenítése
+title_reply = Válasz
+title_forward = Továbbítás
+title_undo = Visszavonás
+title_delete_permanently = Végleges törlés
+title_delete = Törlés
+title_copy_to = Átmásolás
+title_archive = Archiválás
+title_accounts_locked = A postafiókok zárolva vannak
+
+select_account_first = Először jelöljön ki egy postafiókot a fában.
+select_account_or_folder = Először jelöljön ki egy postafiókot vagy mappát.
+filters_left_behind = {count} üzenet egyezett egy szűrővel, de még a(z) {folder} mappában van.
+cache_clear_confirm = Törli a kapcsolat nélküli üzenetek gyorsítótárát minden postafiókhoz?\n\nEz csak a ZBox helyi másolatait törli. Egyetlen levelezőkiszolgálóról sem törlődik semmi, az üzenetek pedig szükség szerint újra letöltődnek.
+account_remove_confirm = Eltávolítja a(z) {name} ({address}) postafiókot?\n\nA kiszolgálón lévő levelek nem törlődnek.\nAz ezen a számítógépen lévő letöltött másolatok törlődnek.\nA mentett jelszó törlődik.
+folder_delete_confirm = Véglegesen törli a(z) "{folder}" mappát és mindent, ami benne van, ennél: {address}?\n\nEz nem vonható vissza.
+empty_trash_confirm = Véglegesen törli a Kuka összes üzenetét ennél: {address}?\n\nEz nem vonható vissza.
+empty_junk_confirm = Véglegesen törli a Levélszemét összes üzenetét ennél: {address}?\n\nEz nem vonható vissza.
+sync_select_account = Jelöljön ki egy postafiókot (nem egyesített mappát) a kapcsolat nélküli használatra történő szinkronizáláshoz.
+accounts_imported = {count} postafiók importálva:\n\n{names}\n\nA jelszavak soha nem exportálódnak, a titkosított jelszótár pedig ehhez a Windows-felhasználói fiókhoz kötött, ezért minden importált postafiókhoz egyszer meg kell adni a jelszót az Eszközök > Postafiók- és személyazonosság-beállítások menüben, mielőtt kapcsolódni tudna.
+accounts_import_none = Ebben a fájlban nem található postafiók. A beállítások mégis importálva lettek, ha a fájl tartalmazott ilyeneket.
+delete_permanently_confirm_one = Véglegesen törli ezt az üzenetet? Ez kihagyja a Kuka mappát, és nem vonható vissza.
+accounts_locked = A mentett postafiókjelszavakat egy másik számítógépen írták, ezért itt nem olvashatók.\n\nMinden postafiókba újra be kell jelentkezni a levelezőkiszolgálóján. Hogy legközelebb ezt elkerülje, állítson be elsődleges jelszót a Beállítások, Alkalmazás- és adatbiztonság menüben azon a számítógépen, ahol a postafiókok már működnek.
+master_password_remove_confirm = Eltávolítja az elsődleges jelszót? A mentett postafiókjelszavak ezután csak ezen a számítógépen és ezzel a Windows-fiókkal lesznek olvashatók. Ha a ZBoxot később máshová másolja, minden postafiókba újra be kell jelentkezni.\n\nEltávolítja most?
+shortcut_offer = Elhelyez egy ZBox-parancsikont az asztalon?\n\nEz ezt a ZBox-mappát indítja majd:\n{path}\n\nA parancsikon pontosan ezt a helyet rögzíti. Ha később áthelyezi a ZBox mappáját, nyissa meg a Beállítások, Értesítési terület és ablak részt, és válassza újra az Asztali parancsikon létrehozása lehetőséget, hogy az új helyre mutasson.
+shortcut_created = Parancsikon létrehozva:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Megjelenített név
+form_email_address = E-mail-cím
+form_your_name = Az Ön neve
+form_login_email = Bejelentkezési e-mail-cím
+form_password = Jelszó
+srv_imap_host = Bejövő (IMAP) kiszolgáló
+srv_imap_port = Bejövő port
+srv_imap_encryption = Bejövő titkosítás
+srv_smtp_host = Kimenő (SMTP) kiszolgáló
+srv_smtp_port = Kimenő port
+srv_smtp_encryption = Kimenő titkosítás
+
+acct_login_email_label = Bejelentkezési e-mail-cím (a belépéshez)
+acct_new_password_label = Új jelszó (hagyja üresen a jelenlegi megtartásához)
+acct_new_password_name = Új jelszó
+acct_identity_email_label = E-mail-cím (küldéshez és fogadáshoz)
+acct_identities_label = További személyazonosságok (álnevek)
+acct_identities_name = További személyazonosságok
+acct_add_identity = &Személyazonosság hozzáadása...
+acct_edit_identity = &Személyazonosság szerkesztése...
+acct_remove_identity = &Személyazonosság eltávolítása
+acct_signature = Aláírás
+acct_edit_signature = &Aláírás szerkesztése...
+acct_junk_folder = Levélszemét mappa
+acct_account_status = Postafiók állapota
+acct_disable_account = A postafiók letiltása
+acct_default_account = Alapértelmezett postafiók
+acct_set_default = Beállítás alapértelmezett postafiókként
+acct_notifications = Új levél értesítések
+acct_mute_notifications = A postafiók értesítéseinek némítása
+acct_server_settings = Kiszolgáló-beállítások
+
+wiz_before_you_start = Mielőtt elkezdi
+wiz_notice_name = Fontos figyelmeztetés
+wiz_google_instructions = &A Google alkalmazásjelszó-útmutatójának megnyitása
+wiz_intro = Az Ön neve és e-mail-címe
+wiz_login_same = A bejelentkezési e-mail-cím megegyezik a fenti e-mail-címmel
+wiz_show_password = &Jelszó megjelenítése
+wiz_preset_applied = Előbeállítás alkalmazva ehhez: {name}.
+wiz_summary_name = Postafiók-összegzés
+wiz_review = Nézze át, majd kattintson a Befejezés gombra a postafiók mentéséhez.
+wiz_test_connection = &Kapcsolat tesztelése
+wiz_testing = Kapcsolat tesztelése...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Hibakeresési napló engedélyezése, mentés helye: data\logs)
+set_language_label = &Felület nyelve:
+set_language_label_only_english = &Felület nyelve: (csak angol)
+set_headers_checkbox = &Üzenetfejlécek megjelenítése a megnyitott üzenet fölött
+set_zoom_label = Üzenet betűtípusa és nagyítása:
+set_font_override = &Az alapértelmezett üzenet-betűméret felülbírálása
+set_font_size_name = Üzenet betűmérete (pont)
+set_reading_font_name = Olvasási betűtípus
+set_reading_font_label = Olvasási betűtípus (üresen az alapértelmezett):
+set_view_label = Üzenetszöveg nézete üzenet megnyitásakor:
+set_view_text = Szöveg
+set_view_html = HTML (megjelenítve)
+set_engine_label = HTML-megjelenítő motor:
+set_engine_edge = Edge / WebView2 (modern megjelenítés)
+set_engine_ie = Régi MSHTML (a legjobb képernyőolvasó-támogatás)
+set_runtime_label = WebView2 futtatókörnyezet:
+set_runtime_auto = Automatikus — a beépített futtatókörnyezet használata, ha van (ajánlott)
+set_runtime_fixed = Csak a beépített rögzített verzió
+set_runtime_evergreen = Rendszerszintű futtatókörnyezet (a Windows frissíti)
+set_sr_box = Képernyőolvasó-közlések szabályozása
+set_silence_label = HTML képernyőolvasó-némítás időtartama:
+set_silence_name = HTML képernyőolvasó-némítás időtartama ezredmásodpercben
+set_focus_delay_label = WebView akadálymentességi fókusz késleltetése:
+set_focus_delay_name = WebView akadálymentességi fókusz késleltetése, 1-től 10-ig terjedő szint
+set_announce_label = Közlés időtartama:
+set_announce_name = Közlés időtartama ezredmásodpercben
+set_announce_actions = &Műveletek, új levelek és értesítések közlésének felolvasása
+set_attachment_dir_label = Mellékletek mentési mappája:
+set_attachment_dir_name = Mellékletek mentési mappája
+set_browse = &Tallózás…
+set_autosave_label = Piszkozat automatikus mentésének időköze:
+set_autosave_name = Piszkozat automatikus mentésének időköze másodpercben
+set_auto_purge_label = Régi Kuka- és Levélszemét-üzenetek automatikus törlése:
+set_auto_purge_name = Kuka és Levélszemét automatikus törlése ennyi nap után
+set_bare_keys = &Az S (csillag), A (archiválás), J (megjelölés levélszemétként)/Shift+J (megjelölés nem levélszemétként), W (témacsoport figyelése), K (témacsoport mellőzése), M (áthelyezés)/Shift+M (áthelyezés mappanév alapján) és C (átmásolás) egygombos parancsok engedélyezése az üzenetlistában
+set_sound_label = Hang és értesítések:
+set_sounds_enabled = &Értesítési hangok lejátszása
+set_desktop_notifications = &Asztali értesítések megjelenítése új levélnél
+set_theme_label = Hangtéma módosítása:
+set_theme_label_only_default = Hangtéma módosítása: (csak az alapértelmezett téma)
+set_security_box = Alkalmazás- és adatbiztonság
+set_lock_on_quit = &A ZBox zárolása teljes kilépéskor
+set_private_mode = &Privát mód: ne tároljon levelet ezen a számítógépen vagy meghajtón
+set_unlock_methods_button = &Feloldási módok…
+set_master_password_button = &Elsődleges jelszó…
+set_tray_label = Értesítési terület és ablak:
+set_minimize_to_tray = &Kis méretre állítás az értesítési területre
+set_close_to_tray = &Bezárás az értesítési területre
+set_stay_maximized = &A ZBox mindig maradjon teljes méretű
+set_run_at_startup = &A ZBox futtatása a Windows indulásakor
+set_desktop_shortcut_button = &Asztali parancsikon létrehozása
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = A hibakeresési napló segít a problémák diagnosztizálásában, ha valami elromlik. Kikapcsolása leállítja az új bejegyzések írását; a meglévő naplófájlok nem törlődnek. A ZBox következő indításakor lép érvénybe.
+set_language_note = A ZBox következő indításakor lép érvénybe. A nyelvi fájlok egyszerű szövegfájlok a ZBox lang mappájában, a sounds mappa mellett. Újabb hozzáadásához másolja le az en mappát, nevezze át a másolatot és a benne lévő .lang fájlt a nyelve kódjára, és fordítsa le az egyenlőségjelek jobb oldalán álló szöveget. Ami még nincs lefordítva, azt angolul olvassa fel a program, ahelyett hogy néma maradna, így a félkész fájl biztonságosan használható.
+set_headers_note = Feladó, Címzett, Másolat, Dátum és Tárgy, az üzenettörzs fölött jelenik meg a Szöveg és a HTML nézetben is. Enélkül nincs mód arra, hogy az üzenetből megtudja, ki küldte, anélkül hogy bezárná a lapot és visszamenne a listához. A fókusz továbbra is az üzenettörzsre kerül; a fejlécblokk egy Shift+Tab távolságra van. A következő üzenetmegnyitáskor lép érvénybe.
+set_zoom_note = Nagyítja vagy kicsinyíti a megnyitott üzenet saját szövegét, a ZBox többi részétől és a Windows saját képernyőskálázásától függetlenül. A Szöveg és a HTML nézetre is vonatkozik. Az "Olvasási betűtípus" opcionálisan egy adott betűtípust erőltet az üzenettörzsre (például Consolas, OpenDyslexic); hagyja üresen a szokásos betűtípus megtartásához. A Nézet menü Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 parancsa a párbeszédablak megnyitása nélkül növeli, csökkenti vagy visszaállítja a betűméretet, és azonnal minden megnyitott üzenetre érvényes. Az itt végzett módosítások az OK gombra is azonnal érvényesek.
+set_view_note = A HTML az alapértelmezett. Úgy mutatja az üzenetet, ahogy elküldték, és az NVDA és a JAWS olvassa: amikor megnyílik egy HTML-oldal, a ZBox elnémítja a böngésző saját közlését, az olvasókurzort az üzenet első sorára teszi, és a ZBox saját billentyűparancsait az oldalon belül is működésben tartja, az F6-tal együtt, amely visszaviszi a fókuszt az oldalból. A Szöveg ugyanazt az üzenetet egyszerű, formázatlan szövegként mutatja egy szokásos szerkesztőmezőben -- nincsenek képek, nincs elrendezés, és semmi sem függ attól, hogy telepítve van-e böngészőmotor. Megnyitott üzenetben a Ctrl+B megnyomásával bármelyik irányba válthat.
+set_engine_note = Az Edge modern CSS-t jelenít meg, de az oldalt külön folyamatban futtatja, és a tartalmát a képernyőolvasónak csak olyan felületen keresztül adja át, amelyet a wxPython nem ér el -- így az üzenet olvasható tartalom nélkül is megnyílhat. A régi MSHTML az a motor, amelyet az Outlook Express és a Windows Mail használt: a folyamaton belül fut, és normál dokumentumfát tesz közzé, így az NVDA és a JAWS böngészőmódban olvassa, mint bármely weboldalt. A következő üzenetmegnyitáskor lép érvénybe.
+set_runtime_note = A rendszerszintű futtatókörnyezetet a Windows Update szervizeli, így a leveleit olvasó motor figyelmeztetés nélkül változhat -- így romolhat el egy működő HTML-üzenetnézet olyan gépen, ahol a ZBoxon semmi sem változott. A deps mappában lévő beépített másolat rögzíti azt a pontos verziót, amelyen a ZBoxot tesztelték. Egy telepítéséhez futtassa a tools\get_webview2.bat fájlt. Ha nincs beépített másolat, a ZBox így is a rendszerszintű futtatókörnyezetet használja, ezért mindig elindul. A ZBox következő indításakor lép érvénybe.
+set_sr_intro = Mennyit hagy a ZBox beszélni a képernyőolvasónak egy üzenet megnyitása közben, és mennyi ideig maradnak fenn a ZBox saját felolvasott közlései.
+set_silence_note = Egy HTML-üzenet megnyitásakor a ZBox legfeljebb 2 másodpercig tarthat lenyomva egy szintetikus Ctrl billentyűt, hogy elnémítsa a képernyőolvasó böngészőközlését. Az üzenet tárgya már oldalcímként van használva, ami megakadályozza a base64 URL felolvasását, de az olvasó még így is közli a vezérlőt és a dokumentumtípust az üzenet eleje fölött, ezért ez alapértelmezetten be van kapcsolva. A kikapcsoláshoz válassza a Ki értéket, vagy hosszabb időt, ha még mindig átszűrődik a zaj.
+set_focus_delay_note = Amikor egy HTML-üzenet betöltése befejeződik, a ZBox ennyit vár, mielőtt ténylegesen fókuszba helyezi. Az, hogy a WebView2 jelzi az oldal betöltését, és az, hogy a Windows befejezi az oldal akadálymentességi fáját, nem ugyanaz a pillanat; a túl korai fókuszálás miatt az NVDA/JAWS az üzenet helyett általános "Web content page" szöveget közöl, vagy a megnyitás után egy ideig elérhetetlennek jelzi az üzenetet. A választék 0,1 másodperctől 1 másodpercig terjed. Ha még mindig ezt hallja, válasszon hosszabb időt, ha pedig a megnyitás stabilnak érződik, rövidebbet a gyorsabb megnyitásért.
+set_announce_note = A Ctrl+U és a Ctrl+Shift+U egy kis, magától bezáródó párbeszédablakban közli a feladót, mert az állapotsort csak akkor olvassa fel a képernyőolvasó, ha az állapotsor-felolvasás be van kapcsolva. Ennyi ideig marad fenn az ablak. Állítsa a beszédtempójához: ha túl rövid, a mondat közepén bezárul, ami meghiúsítja a célt. Bármely billentyű korábban bezárja; a nyílbillentyűk nyitva tartják, hogy újraolvashassa. A Billentyűre vár addig nyitva tartja, amíg meg nem nyom egyet.
+set_attachment_dir_note = Ide írja a "Mind mentése" a mellékleteket, ha egy üzenetnek több van. Automatikusan létrejön, ha nem létezik. Az egyetlen melléklettel rendelkező üzenet továbbra is megkérdezi, hova mentse, mint korábban. Az alapértelmezéshez hagyja üresen:\n{path}
+set_autosave_note = Milyen gyakran menti magát a Piszkozatok közé egy megnyitott írási lap, miközben ír. A Piszkozat mentése (Ctrl+S) mindkét esetben továbbra is kérésre ment, és egy mentetlen szöveget tartalmazó lap bezárásakor mindig felkínálja a mentést. A Ki kikapcsolja az automatikus mentést. 15 másodpercnél kevesebb nem választható -- az egy gépelésével versengő kiszolgálói oda-vissza út lenne.
+set_auto_purge_note = Véglegesen eltávolítja az üzeneteket a Kukából és a Levélszemétből, ha ennyi napja ott vannak -- ugyanaz a végleges eltávolítás, amelyet a Kuka ürítése és a Levélszemét ürítése kérésre végez, naponta egyszer automatikusan fut, amíg a ZBox nyitva van. Alapértelmezetten be van kapcsolva 30 napra. A Ki kikapcsolja. Ez nem vonható vissza, miután egy üzenet el lett távolítva.
+set_bare_keys_note = Bekapcsolt állapotban az S, A, J, W vagy K önálló megnyomása az üzenetlistában azonnal átkapcsolja a csillagot, archivál, a kijelölt üzeneteket levélszemétként jelöli meg (a Shift+J nem levélszemétként), vagy figyeli/mellőzi a kijelölést tartalmazó témacsoportot -- az Archiválásnak és a Megjelölés levélszemétként parancsnak nincs megerősítése és visszavonása. A kikapcsolás visszaadja az S, A, J, W és K billentyűket a szokásos első betűs listanavigációnak. A Ctrl+S és a Ctrl+Shift+A mindkét esetben tovább működik. Azonnal érvénybe lép.
+set_sounds_note = Rövid hangok a folyamat, az új üzenetek, a küldés, a válasz vagy továbbítás, a törlések és a keresési eredmények jelzésére. A Ki az alkalmazás minden hangját kikapcsolja; a képernyőolvasó és az állapotsor közlései mindkét esetben érintetlenek maradnak.
+set_desktop_notifications_note = Windows-értesítés minden új levélköteghez, a fenti hangtól külön. A Ki minden postafiókra kikapcsolja; egy-egy postafiók a Postafiók- és személyazonosság-beállításokban külön is némítható.
+set_theme_note = Az egyéni témák a ZBox sounds mappájába helyezett mappák, amelyek mindegyike saját progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav és none_found.wav fájlt biztosít. A hiányzó témafájl az alapértelmezett hangra tér vissza.
+set_theme_note_only_default = Az egyéni témák a ZBox sounds mappájába helyezett mappák, amelyek mindegyike saját progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav és none_found.wav fájlt biztosít. A hiányzó témafájl az alapértelmezett hangra tér vissza. Amíg nem ad hozzá másik témamappát, csak a "default" érhető el.
+set_lock_note = A ZBox indításakor ezután a feloldási módok egyikét kéri, mielőtt bármelyik postafiók megnyílna. Bármelyik elég: hozzáférési kulcs, biztonsági kulcs vagy az elsődleges jelszó. Az értesítési területre zárás nem kilépés, és nem zárol újra; a Fájl > Kilépés és az értesítési területi ikon Kilépés parancsa igen. Ha semmi nincs regisztrálva, és nincs elsődleges jelszó beállítva, a zárolás kimarad ahelyett, hogy kizárná a saját leveleiből.
+set_security_note = A három közül csak az elsődleges jelszó titkosít bármit: az teszi lehetővé, hogy ez a mappa egy másik számítógépen is megnyissa a mentett postafiókjelszavakat. A hozzáférési kulcs vagy a biztonsági kulcs csak ezen a számítógépen oldja fel az alkalmazást. Egyik sem helyettesíti az elsődleges jelszót olyan számítógépen, ahol a ZBoxot még nem használták.
+set_private_mode_note = Az üzenetek a kiszolgálóról olvasódnak be, és csak a memóriában maradnak. Nem marad kapcsolat nélküli másolat, mentett üzenet vagy hibakeresési napló, a megnyitott mellékletek és a HTML-levelek böngészőadatai pedig törlődnek, amikor a ZBox bezárul. A bezárás a ZBox által indított minden programot is leállít, beleértve a mellékletet megjelenítőket, kiüríti a vágólapot, és megszünteti a számítógép megbízhatóként kezelését, hacsak a privát módot nem erről kapcsolták be. A Windows továbbra is őriz néhány olyan bejegyzést, amelyet egyetlen program sem tud eltávolítani, például az USB-meghajtók listáját, a lapozófájlt, valamint a víruskereső és a hálózat naplóit.
+title_private_mode = Privát mód
+private_mode_need_master = A privát módhoz elsődleges jelszó kell, mert nem az Ön számítógépén csak az elsődleges jelszó nyitja meg a postafiókjait. Állítson be egyet az Elsődleges jelszó gombbal, majd kapcsolja be a privát módot.
+private_mode_enter_master = A privát mód bekapcsolásához adja meg az elsődleges jelszót.
+private_mode_confirm = A privát mód nem tart meg másolatot a leveleiről ezen a számítógépen vagy azon a meghajtón, amelyről a ZBox fut. Bekapcsolása törli a ZBox kapcsolat nélküli másolatait, a mentett üzeneteket, a megnyitott mellékleteket, a HTML-levelek böngészőadatait és a hibakeresési naplókat. A levelezőkiszolgálókon semmi nem törlődik, a postafiókok, névjegyek és beállítások megmaradnak. Bekapcsolja a privát módot?
+set_minimize_note = A ZBox kis méretre állítása elrejti a tálcagombját, és az értesítési területi ikon mögött futva hagyja. Kattintson az ikonra a bal egérgombbal (vagy nyomjon Enter/Space billentyűt, ha billentyűzetfókusza van), hogy visszahozza az ablakot.
+set_close_note = Az ablak Bezárás gombja, az Alt+F4 és a Levelezés lapon megnyomott Ctrl+W az értesítési területre rejti a ZBoxot a kilépés helyett. A Fájl > Kilépés (Ctrl+Shift+Q) és az értesítési területi ikon saját Kilépés eleme mindkét esetben ténylegesen kilép a ZBoxból, így mindig van egy billentyűzetes útvonal a kilépéshez az értesítési terület érintése nélkül.
+set_stay_maximized_note = A ZBox teljes méretben indul, és visszaáll teljes méretre, ha kisebbre állítja. A menüsor, a címsor és az ablakkeret nem érintett -- ez nem keret nélküli teljes képernyős mód, így minden Alt-billentyűs menüparancs tovább működik.
+set_run_at_startup_note = A Windowsba való bejelentkezéskor automatikusan elindítja a ZBoxot, közvetlenül az értesítési területre nyitva az ablak megjelenítése helyett. Azonnal érvénybe lép, nem csak a következő indításkor.
+set_desktop_shortcut_note = ZBox-parancsikont helyez az asztalra, felváltva a már ott lévőt. A parancsikon a ZBox mappájának pontos helyét tárolja, így ha a ZBoxot máshová helyezi vagy másolja, nyomja meg ezt újra az új példányon, hogy az asztali parancsikon oda mutasson. Azonnal érvénybe lép, és nem várja meg az OK-t.
+
+# The Address Book, its contact form and its groups.
+ab_name = Név
+ab_phone = Telefon
+ab_notes = Jegyzetek
+ab_heading = Címjegyzék
+ab_contacts = Névjegyek
+ab_new = &Új...
+ab_edit = &Szerkesztés...
+ab_delete = &Törlés
+ab_import = &Importálás...
+ab_export = &Exportálás...
+ab_groups_label = Csoportok (levelezőlisták)
+ab_groups_name = Csoportok
+ab_new_group = &Új csoport...
+ab_rename_group = &Csoport átnevezése...
+ab_delete_group = &Csoport törlése
+ab_manage_members = &Tagok kezelése...
+ab_all_contacts = Összes névjegy
+ab_add_member = Hozzáadás >>
+ab_remove_member = << Eltávolítás
+ab_members_of = {name} tagjai
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Nincs a szótárban:
+sp_not_in_dictionary_name = Nincs a szótárban
+sp_in_this_line_label = Ebben a sorban:
+sp_in_this_line_name = Ebben a sorban
+sp_suggestions_label = &Javaslatok:
+sp_suggestions_name = Javaslatok
+sp_replace_with_label = &Csere erre:
+sp_replace_with_name = Csere erre
+sp_replace = &Csere
+sp_replace_all = &Összes cseréje
+sp_ignore = &Kihagyás
+sp_ignore_all = &Összes kihagyása
+sp_add_to_dictionary = &Hozzáadás a szótárhoz
+btn_close = &Bezárás
+
+# Privacy and Content Blocking.
+priv_remote_label = Távoli tartalom az üzenetekben:
+priv_block_remote = &Távoli tartalom tiltása, amíg nem kérem (ajánlott)
+priv_blocklist_label = Hirdetés- és követőtiltó lista:
+priv_block_known = &Ismert hirdetési és követő tartományok tiltása
+priv_update_daily = &A lista napi frissítése a háttérben
+priv_update_now = &Frissítés most
+priv_junk_label = Levélszemét-szabályok:
+priv_check_inbox = &Az új beérkezett levelek ellenőrzése a letiltott feladók és az ismert adathalász-hivatkozások ellen
+priv_move_blocked = &A letiltott feladók leveleinek automatikus áthelyezése a Levélszemétbe
+priv_update_phishing = &Adathalász-lista frissítése most
+priv_blocked_label = Letiltott feladók:
+priv_blocked_name = Letiltott feladók
+priv_remove_blocked = &Letiltott feladó eltávolítása
+priv_never_junk_label = Soha nem levélszemétnek tekintett feladók:
+priv_never_junk_name = Soha nem levélszemétnek tekintett feladók
+priv_remove_never_junk = &Nem levélszemét feladó eltávolítása
+priv_allowed_label = Távoli tartalmat betölthető feladók:
+priv_allowed_name = Engedélyezett feladók
+priv_remove_selected = &Kijelölt feladó eltávolítása
+
+# Message Filters.
+filt_rule_name = Szabály neve
+filt_enabled = &Engedélyezve
+filt_match_label = Egyezés:
+filt_match_all = &Az alábbiak mindegyikének megfelel (ÉS)
+filt_match_any = &Az alábbiak bármelyikének megfelel (VAGY)
+filt_conditions_label = Feltételek (hagyjon üresen egy értéket a kihagyásához):
+filt_condition_field = {number}. feltétel mezője
+filt_condition_contains = {number}. feltétel tartalmazza
+filt_actions_label = Műveletek:
+filt_mark_read = &Megjelölés olvasottként
+filt_flag = &Az üzenet csillagozása
+filt_move_label = Áthelyezés mappába:
+filt_move_name = Áthelyezés mappába
+filt_rules_name = Szűrőszabályok
+filt_new = &Új szabály...
+filt_edit = &Szabály szerkesztése...
+filt_delete = &Szabály törlése
+filt_up = &Feljebb
+filt_down = &Lejjebb
+filt_run_label = Futtatás most a mappán:
+filt_run_name = Futtatás most mappa
+filt_run_now = &Futtatás most
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Feloldás hozzáférési kulccsal (Windows Hello)
+unl_security_key = &Feloldás biztonsági kulccsal
+unl_master_password_label = &Elsődleges jelszó:
+unl_master_password_name = Elsődleges jelszó
+unl_unlock = &Feloldás
+unl_exit = &Kilépés a ZBoxból
+unl_methods_label = &Regisztrált módok:
+unl_methods_name = Regisztrált feloldási módok
+unl_add_passkey = &Hozzáférési kulcs hozzáadása…
+unl_add_key = &Biztonsági kulcs hozzáadása…
+unl_reassign = &Hozzáférési kulcs újrarendelése ehhez a számítógéphez…
+unl_test = &Teszt…
+unl_remove = &Eltávolítás
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Feladó
+comp_to = Címzett
+comp_cc = Másolat
+comp_bcc = Rejtett másolat
+comp_subject = Tárgy
+comp_attach_button = Fájl csatolása...
+comp_sending = Küldés...
+comp_report_label = &Jelentés:
+comp_report_name = Jelentés
+comp_refresh = &Frissítés
+comp_copy = &Másolás
+comp_preview_read = Ahogy a címzett olvassa
+comp_preview_source = Az elküldendő HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Üzenettörzs
+mv_blocked_notice = Letiltott tartalom értesítés
+mv_show_remote = &Távoli tartalom megjelenítése
+mv_always_allow = &Mindig engedélyezze ezt a feladót
+mv_message_headers = Üzenetfejlécek
+mv_attachments = Mellékletek
+mv_attachments_count = Mellékletek ({count})
+mv_save_attachment = Mentés: {filename}
+mv_save_all = Mind mentése
+mv_html_view = Az üzenet HTML-nézete
+mv_saved_message = Mentett üzenet
+mv_show_remote_tip = Az üzenet újratöltése a távoli képekkel és stílusokkal. Az ismert követők továbbra is tiltva maradnak.
+mv_always_allow_tip = Távoli tartalom betöltése {sender} minden üzenetében.
+
+# The search tab.
+srch_account = Postafiók
+srch_folder = Mappa
+srch_for = Keresett szöveg
+srch_look_in = Keresés itt
+srch_in_all = Összes
+srch_in_subject = Tárgy
+srch_in_from = Feladó
+srch_in_to = Címzett
+srch_in_body = Üzenettörzs
+srch_date = Dátum
+srch_date_any = Bármikor
+srch_date_today = Ma
+srch_date_yesterday = Tegnap
+srch_date_week = Az elmúlt 7 nap
+srch_date_month = Az elmúlt 30 nap
+srch_date_year = Idén
+srch_date_custom = Egyéni tartomány
+srch_from_date = Kezdő dátum (év-hónap-nap, igény szerint idővel)
+srch_to_date = Záró dátum (év-hónap-nap, igény szerint idővel)
+srch_unread = Csak olvasatlan
+srch_flagged = Csak csillagozott
+srch_attachment = Van melléklete
+
+# The signature editor.
+sig_editors = Aláírásszerkesztők
+sig_formatted = Aláírás, formázott
+sig_source = Aláírás, HTML-forrás
+sig_plain_label = Egyszerű szöveges változat (a HTML mellett kerül elküldésre)
+sig_plain_name = Egyszerű szöveges változat
+
+# About ZBox.
+about_text_name = A ZBox névjegyének szövege
+about_view_license = &Licenc megtekintése...
+about_google = &Google-alkalmazásjelszavak...
+about_support = &A ZBox támogatása -- Egyszemélyes fejlesztés és karbantartás
+about_repos = &Harith alkalmazástárai a GitHubon
+about_contact = &Kapcsolatfelvétel Harith-tal
+btn_close_plain = Bezárás
+btn_cancel_plain = Mégse
+
+# The license window.
+eula_heading = ZBox-licenc
+eula_text_name = A ZBox-licenc szövege
+eula_third_party = Harmadik felek összetevőinek licencoldalai:
+eula_agree = &Elfogadom a fenti feltételeket
+eula_agree_name = Elolvastam és elfogadom a ZBox licencfeltételeit
+eula_disagree = &Nem fogadom el
+eula_next = &Tovább
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = A ZBox-dokumentáció szövege
+doc_copy = Másolás a vágólapra
+shortcuts_heading = Billentyűparancsok
+shortcuts_text_name = A billentyűparancsok szövege
+
+# The main window's own panes.
+mf_toolbar = Fő eszköztár
+mf_tabs = ZBox-lapok
+tree_heading = Postafiókok és mappák
+tree_name = Postafiók- és mappafa
+envlist_heading = Üzenetek
+envlist_name = Üzenetlista
+rdr_heading = Üzenet
+rdr_name = Üzenetolvasó
+conv_heading_one = Beszélgetés: 1 üzenet
+conv_heading_many = Beszélgetés: {count} üzenet
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {total} közül {completed} kész.
+bulk_cancelling = Megszakítás -- az aktuális üzenet befejezése...
+cache_clear_now = Kapcsolat nélküli üzenetek gyorsítótárának törlése most... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, védett
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = A megjelenített név nem kötelező -- hagyja üresen, hogy a postafiók saját nevén küldjön.
+acct_note_identity = Az e-mail-cím eltérhet a bejelentkezési e-mail-címtől, ha a szolgáltatójának van ehhez a postafiókhoz kapcsolt egyéni tartománya. A levelek a fenti cím alatt lesznek küldve és fogadva, a bejelentkezés viszont a bejelentkezési e-mail-címet használja. Hagyja üresen a jelszómezőt, hogy a postafiókhoz már mentett jelszó megmaradjon -- például egy Gmail-alkalmazásjelszó cseréje után ide írja az újat; egyébként hagyja üresen.
+acct_note_identities = További címek, amelyekről ez a postafiók küldhet és válaszolhat. Az egyikre küldött üzenetre válaszolva a Feladó a fenti cím helyett erre a címre áll be.
+acct_note_signature = Minden, ebből a postafiókból küldött új üzenet, válasz és továbbítás végére kerül, egy "-- " sor alatt. Hagyja üresen, ha nem kell. Az Aláírás szerkesztése megnyitja a formázott szerkesztőt, ahol elérhető a félkövér, a listák és a hivatkozások; a fenti mező ilyenkor az ezzel együtt kimenő egyszerű szöveges változatot tartalmazza.
+acct_note_junk = Melyik valódi mappába helyezi át az üzeneteket a Megjelölés levélszemétként. A "{automatic}" ugyanazt a szolgáltatóra figyelő tippelést használja, mint az Archívum és a Kuka; csak akkor állítsa be, ha ez a tipp téves, vagy a levélszemét mappájának egyéni neve van.
+acct_note_disable = A letiltott postafiókhoz soha nem kapcsolódik a program -- nincs IDLE, nincs időszakos frissítés, semmi --, amíg újra nem engedélyezik. A fában továbbra is látszik, (letiltva) jelöléssel, és a már letöltött levelei kapcsolat nélkül is elérhetők. Ugyanaz a kapcsoló, mint a Postafiókok > Postafiók letiltása vagy a postafiók saját helyi menüje; ez csak egy további hely az eléréséhez.
+acct_note_default = Ennek a postafióknak a mappái jelennek meg elsőként a fában, és az új üzenet alapértelmezetten innen megy, ha az íróban kézzel nem változtatják. Nem befolyásolja, melyik címet használja egy válasz vagy továbbítás -- az már most is a megválaszolt üzenetet követi (lásd fent a További személyazonosságokat). Mindig pontosan egy alapértelmezett postafiók van, ezért ha a jelenlegi alapértelmezettnél törli ezt a jelölést anélkül, hogy egy másiknál bejelölné, az változatlan marad -- inkább egy másik postafiók jelölőnégyzetét jelölje be, hogy átadja neki az alapértelmezést.
+acct_note_mute = &A némítás letiltja a postafiók új levél hangját, felolvasott közlését és Windows-értesítését, függetlenül attól, hogyan vannak egyébként beállítva. Nem érinti a többi postafiókot, és továbbra is függ a Beállítások > Hang és értesítések főkapcsolóitól (összességében a hangok és az asztali értesítések).
+wiz_note_app_password = Ha már létrehozott alkalmazásjelszót a ZBoxhoz, a folytatáshoz nyomja meg a Tovább gombot.
+wiz_note_login = Bejelentkezési adatok.\nHa a bejelentkezési e-mail-cím eltér a fenti címtől, például a szolgáltatói fiókja login@example.net, de Ön you@example.org néven szeretne küldeni és fogadni, itt adja meg a bejelentkezési e-mail-címet. Az egyéni küldési címet később beállíthatja a Postafiók- és személyazonosság-beállításokban.
+wiz_note_servers = Kiszolgáló-beállítások, előre kitöltve, ha a tartomány ismert. Szerkesszen mindent, aminek másnak kell lennie.
+wiz_preset_none = Ehhez a tartományhoz nem található előbeállítás. Adja meg kézzel a szolgáltatója kiszolgáló-beállításait; a szolgáltató súgóoldalai felsorolják őket.
+ab_note_groups = Írja be egy csoport nevét egy írási ablak Címzett, Másolat vagy Rejtett másolat mezőjébe, hogy az összes tagja egyszerre kitöltődjön.
+cache_note_intro = Ezek csak a ZBox helyi másolatait távolítják el. Egyetlen levelezőkiszolgálóról sem törlődik semmi, az eltávolított üzenet pedig a következő megnyitáskor újra letöltődik.
+cache_note_age = Az automatikus tisztítás naponta egyszer fut, ha a ZBoxon tíz percig nem volt billentyűzetes tevékenység, és nincs megnyitott üzenet. Minden üzenet saját dátuma alapján működik, beleértve a postafiókjában még meglévő üzeneteket is.
+filt_note_intro = A szabályok sorrendben, fentről lefelé futnak, a Feladó, Címzett és Tárgy mezőt vizsgálva. Automatikusan érvényesek az új levelekre, amint megérkeznek ennek a postafióknak a Beérkezett üzenetei közé; a lenti Futtatás most gombbal a már mappában lévő üzenetekre is alkalmazhatók.
+filt_note_run_now = A fenti összes engedélyezett szabályt sorrendben alkalmazza a kiválasztott mappa összes üzenetére -- előbb elmenti a módosításait, ugyanúgy, mint az OK.
+mp_note_intro = Ezeket a postafiókokat egy másik számítógépen állították be. Az elmentett jelszavaik itteni feloldásához adja meg az elsődleges jelszót. Ezen a számítógépen csak egyszer kérdezi.\n\nEnélkül minden postafiókba újra be kell jelentkezni a levelezőkiszolgálóján.
+priv_note_remote = Az internetről betöltött képek, stíluslapok és betűtípusok közlik a feladóval, mikor nyitotta meg a levelet, és honnan. Bekapcsolva egyik sem töltődik be: az üzenet fölött értesítés jelenik meg, hogy mi lett letiltva, és a Ctrl+Shift+I csak az adott üzenetnél tölti be. Az üzenethez magához csatolt képek mindig megjelennek. A szkriptek és a beágyazott keretek mindkét esetben el lesznek távolítva, és soha nem töltődnek be.
+priv_note_blocklist = Ez a második réteg. Akkor számít, ha betölti egy üzenet távoli tartalmát, vagy engedélyez egy feladót: a képek betöltődnek, de ami ismert követő- vagy hirdetési tartományról érkezik, az továbbra sem. A lista nyilvános hirdetés- és követőlistákról töltődik le és egyesül; a frissítés egy-két másodpercig tart, és a háttérben fut.
+priv_note_junk = Nincs találgatás. A Megjelölés levélszemétként a feladót a lenti letiltott listára teszi, kivéve ha az üzenet levelezőlistán keresztül érkezett. A Megjelölés nem levélszemétként a feladót a soha nem levélszemét listára teszi, és az az üzenet többé nem lesz ellenőrizve. A letiltott feladó új üzenete a listában Letiltott feladóként lesz megjelölve; az ismert adathalász vagy rosszindulatú szoftveres oldalra mutató hivatkozású üzenet Lehetséges adathalászatként. A levelezési szolgáltatója saját levélszemét-szűrése a korábbiak szerint tovább fut.
+priv_status_phishing_updating = Adathalász-lista: frissítés a háttérben. Az eredmény megtekintéséhez nyissa meg újra ezt a párbeszédablakot.
+priv_status_updating = Frissítés a háttérben. Az eredmény megtekintéséhez nyissa meg újra ezt a párbeszédablakot.
+rel_note_intro = A(z) "{subject}" üzenethez kapcsolódó üzenetek a Message-ID/References fejlécek alapján, a postafiók minden mappájában.
+srch_note_intro = Keressen szavakat minden postafiókban és mappában, vagy szűkítse a keresést az alábbi lehetőségekkel. Hagyja üresen a szavakat, ha az üzeneteket csak dátum vagy a jelölőnégyzetek alapján keresi.
+sig_note_plain = Hagyja üresen az egyszerű szöveges változatot, és a Mentés megnyomásakor a formázott aláírásból készül.
+unified_note_intro = Válassza ki, mely mappák legyenek összevonva az összes postafiókon át. Mindegyik bejelölt egyetlen elemmé válik a fában, amely az összes postafiókja azonos mappáját egyesíti.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = A ZBox névjegye
+title_account_settings = Postafiók- és személyazonosság-beállítások: {name}
+title_new_account = Új postafiók
+title_address_book = Címjegyzék
+title_members = Tagok: {name}
+ab_group_name_prompt = Csoport neve:
+title_new_group = Új csoport
+title_cache_cleanup = Gyorsítótár-tisztítás beállításai
+cache_age_prompt = Az ennél régebbi gyorsítótárazott üzenetek automatikus eltávolítása:
+title_automatic_cleanup = Automatikus tisztítás
+comp_link_prompt = Hivatkozás címe:
+title_insert_link = Hivatkozás beszúrása
+title_composer_diagnostics = Íráseszköz-diagnosztika
+title_formatted_preview = Formázott előnézet
+title_license_agreement = ZBox licencszerződés
+title_message_filters = Üzenetszűrők: {account}
+title_master_password_required = Elsődleges jelszó szükséges
+title_privacy_dialog = Adatvédelem és tartalomtiltás
+title_privacy = Adatvédelem
+title_settings = Beállítások
+set_tab_general = Általános
+set_tab_personalization = Személyre szabás
+set_tab_accessibility = Akadálymentesség és gyorsbillentyűk
+set_tab_maintenance = Karbantartás és tisztítás
+set_tab_sounds = Hangok és értesítések
+set_tab_security = Biztonság
+title_unified_folders = Egyesített mappák
+title_zbox_locked = A ZBox zárolva van
+title_message_view = Üzenetnézet
+title_remote_content = Távoli tartalom
+title_refresh = Frissítés
+title_refresh_all = Összes frissítése
+mv_choose_folder = Válasszon mappát a melléklet mentéséhez
+title_thread = Témacsoport
+title_inbox = Beérkezett üzenetek
+title_compose = Írás
+title_watch_thread = Témacsoport figyelése
+title_ignore_thread = Témacsoport mellőzése
+title_edit_signature = Aláírás szerkesztése
+title_account = Postafiók
+mf_folder_name_prompt = Mappa neve:
+mf_new_name_prompt = Új név:
+title_refresh_all_accounts = Az összes postafiók frissítése
+title_sender = Feladó
+title_new_mail = Új levél
+mf_export_dialog_title = Mind a(z) {count} postafiók és a beállítások exportálása
+mf_related_tab = Kapcsolódó: {subject}
+title_hotkeys_diagnostic = Gyorsgomb-diagnosztika
+set_choose_attachment_dir = Válassza ki a mellékletek mentési mappáját
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = A ZBox zárolva van. A feloldásához használja az alábbi módok bármelyikét. A Mégse bezárja a ZBoxot anélkül, hogy bármelyik postafiókot megnyitná.
+unl_note_foreign_passkey = A mappával mentett hozzáférési kulcs egy másik számítógéphez tartozik, ezért itt nem használható. Oldja fel a biztonsági kulccsal vagy az elsődleges jelszóval, majd a Beállítások, Biztonság, Feloldási módok részben állítson be hozzáférési kulcsot ezen a számítógépen.
+unl_note_methods = Ezek bármelyike feloldja a ZBoxot, ha az alkalmazászár be van kapcsolva, az elsődleges jelszó mellett. A hozzáférési kulcs a Windows Hellót használja ezen a számítógépen; a biztonsági kulcs USB-n vagy NFC-n használt FIDO2-kulcs, és bármely számítógépen működik, amelyhez csatlakoztatja.
+unl_note_not_encryption = Ezek az alkalmazást oldják fel. Nem titkosítanak semmit: az elsődleges jelszó még mindig az egyetlen, amely a mentett postafiókjelszavakat megnyithatja olyan számítógépen, ahol ezt a mappát még nem használták. Először azt kell beállítani, és addig egyik sem adható hozzá.
+unl_add_passkey_unavailable = &Hozzáférési kulcs hozzáadása (nem érhető el)
+unl_add_key_unavailable = &Biztonsági kulcs hozzáadása (nem érhető el)
+unl_reassign_unavailable = &Hozzáférési kulcs újrarendelése ehhez a számítógéphez (nem érhető el)
+unl_status_cancelled_passkey = A hozzáférési kulcsot megszakították. A ZBox továbbra is zárolva van.
+unl_status_cancelled_key = A biztonsági kulcsot megszakították. A ZBox továbbra is zárolva van.
+unl_status_enter_password = Adja meg az elsődleges jelszót.
+unl_status_no_master = Nincs elsődleges jelszó beállítva, ezért hozzáférési kulcs vagy biztonsági kulcs még nem adható hozzá. Állítson be egyet a Beállítások, Biztonság részben az Elsődleges jelszó gombbal, majd térjen vissza ide. Az elsődleges jelszó nyitja meg a mentett postafiókjelszavakat egy másik számítógépen; a hozzáférési kulcs csak ezen a számítógépen oldja fel az alkalmazást, ezért önmagában nem állhat meg.
+unl_status_unsupported = Ennek a számítógépnek a Windowsa nem támogatja a hozzáférési kulcsokat vagy a biztonsági kulcsokat, ezért itt csak az elsődleges jelszó oldhatja fel a ZBoxot.
+unl_status_foreign_one = 1 hozzáférési kulcs másik számítógéphez tartozik, és nem tudja feloldani itt a ZBoxot. Az újrarendelés egy ezen a számítógépen készítettre cseréli.
+unl_status_foreign_many = {count} hozzáférési kulcs másik számítógéphez tartozik, és nem tudja feloldani itt a ZBoxot. Az újrarendelés egy ezen a számítógépen készítettre cseréli őket.
+unl_status_foreign_one_no_hello = 1 hozzáférési kulcs másik számítógéphez tartozik, és nem tudja feloldani itt a ZBoxot. A Windows Hello nincs beállítva itt, ezért ezen a számítógépen nem cserélhető le; az Eltávolítás elfelejti.
+unl_status_foreign_many_no_hello = {count} hozzáférési kulcs másik számítógéphez tartozik, és nem tudja feloldani itt a ZBoxot. A Windows Hello nincs beállítva itt, ezért ezen a számítógépen nem cserélhetők le; az Eltávolítás elfelejti őket.
+unl_status_no_hello = A Windows Hello nincs beállítva ezen a számítógépen, ezért hozzáférési kulcs nem adható hozzá. Biztonsági kulcs viszont még igen.
+unl_status_none_registered = Még nincs regisztrálva feloldási mód.
+unl_status_add_cancelled_passkey = A hozzáférési kulcs hozzáadását megszakították.
+unl_status_add_cancelled_key = A biztonsági kulcs hozzáadását megszakították.
+unl_status_added = Hozzáadva: {name}.
+unl_status_reassign_cancelled = Az újrarendelést megszakították. Semmi sem változott.
+unl_status_reassigned = {name} hozzáadva, és {count} elfelejtve a más számítógépekről.
+unl_status_test_cancelled = A tesztet megszakították.
+unl_status_removed = Eltávolítva.
+unl_remove_warning_last = Eltávolítja ezt: {name}?\n\nEz az egyetlen regisztrált feloldási mód, és nincs elsődleges jelszó beállítva, ezért bekapcsolt alkalmazászárnál nem maradna semmi, amivel a ZBoxot fel lehetne oldani. A zárolás kimarad ahelyett, hogy kizárná, de a ZBox ezután zárolatlanul nyílna meg.
+unl_remove_warning = Eltávolítja ezt: {name}? A ZBox többé nem fogadja el.
+ab_col_email = E-mail
+ab_col_name = Név
+ab_col_phone = Telefon
+ab_no_contacts = Még nincs névjegy.
+acct_auto_check = Új üzenetek automatikus ellenőrzése
+acct_note_auto_check = Ki: a ZBox soha nem veszi fel magától a kapcsolatot ezzel a postafiókkal -- nincs új levél figyelése, nincs időzített frissítés, nincs háttérletöltés --, így egy megbízhatatlan kiszolgáló nem lassíthatja a többi postafiókot. A letöltött levelei továbbra is megnyílnak, a Frissítés (F5), a küldés és a törlés pedig továbbra is eléri a kiszolgálót. Ugyanaz, mint az Automatikus ellenőrzés szüneteltetése az Eszközök menüben vagy a postafiók helyi menüjében.
+bl_day_ago = 1 napja
+bl_days_ago = {days} napja
+bl_label_blocklists = Tiltólista
+bl_label_phishing = Adathalász-lista
+bl_last_failed = Az utolsó kísérlet sikertelen volt: %s
+bl_not_downloaded = Még nincs letöltve.
+bl_save_failed = A(z) %s letöltődött, de nem menthető: %s
+bl_seed_only = %s tartomány a beépített listából. Az internetről még soha nem frissült.
+bl_some_failed = Néhány forrás sikertelen volt: %s
+bl_some_unreachable = Néhány forrás nem érhető el: %s
+bl_status_line = %s tartomány. Utolsó frissítés: %s.
+bl_up_to_date = A(z) %s már naprakész.
+bl_update_failed = A(z) %s nem frissíthető: %s
+bl_updated = A(z) %s frissítve: %s tartomány.
+cc_age_choice = Minden %s időnél régebbi üzenet-gyorsítótár
+cc_auto_button = Automatikus tisztítás: %s időnél régebbi gyorsítótárazott üzenetek...
+comp_btn_discard = &Elvetés
+comp_btn_keep_editing = &Szerkesztés folytatása
+comp_btn_save_draft = &Piszkozat mentése
+comp_no_account = Nincs beállított postafiók
+comp_saving_draft = Piszkozat mentése…
+comp_this_message = ez az üzenet
+comp_unsent_save_q = Elmenti piszkozatként a következőt bezárás előtt: %s?
+comp_unsent_tray_q = Elmenti piszkozatként a következőt, mielőtt a ZBox az értesítési területre kerül: %s?
+doc_unreadable = A dokumentációs fájl nem olvasható:
+envlist_all_disabled = Minden postafiók le van tiltva.
+envlist_col_date = Dátum
+envlist_col_from = Feladó
+envlist_col_status = Állapot
+envlist_col_subject = Tárgy
+envlist_collapsed = Összecsukva (%d)
+envlist_empty = Ebben a mappában nincs üzenet.
+envlist_loading = Üzenetek betöltése...
+envlist_no_accounts = Még nincs beállított postafiók.
+envlist_no_ignored = Ebben a mappában nincs mellőzött témacsoport.
+envlist_no_watched = Ebben a mappában nincs figyelt témacsoport.
+envlist_select_folder = Üzenetek betöltéséhez jelöljön ki egy postafiókot vagy mappát.
+eula_link_0 = A Himalaya licencoldalának megnyitása a böngészőben
+eula_link_1 = A StevenBlack hosts licencoldalának megnyitása a böngészőben
+eula_link_2 = Az EasyList/EasyPrivacy licencoldalának megnyitása a böngészőben
+eula_link_3 = A Phishing.Database licencoldalának megnyitása a böngészőben
+eula_read_note = Olvassa el az alábbi licencet, beleértve a harmadik felek szakaszait is. Jelölje be az Elfogadom lehetőséget, mielőtt a Tovább elérhetővé válik. A Nem fogadom el a ZBox elindítása nélkül bezárja a programot, és eltávolítja mindazt, amit ez a futtatás eddig létrehozott.
+eula_unreadable = A licencfájl nem olvasható:\n%s
+filters_title = Szűrők futtatása
+flag_title = Üzenet csillagozása
+folder_type_archive = Archívum
+folder_type_drafts = Piszkozatok
+folder_type_inbox = Beérkezett üzenetek
+folder_type_junk = Levélszemét
+folder_type_sent = Elküldött elemek
+folder_type_trash = Kuka
+mime_application_json = JSON-fájl
+mime_application_msword = Word-dokumentum
+mime_application_octet_stream = Bináris fájl
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel-munkafüzet
+mime_application_vnd_ms_powerpoint = PowerPoint-bemutató
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint-bemutató
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel-munkafüzet
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word-dokumentum
+mime_application_xml = XML-fájl
+mime_application_zip = ZIP-archívum
+mime_audio_mpeg = MP3-hang
+mime_audio_ogg = OGG-hang
+mime_audio_wav = WAV-hang
+mime_image_bmp = BMP-kép
+mime_image_gif = GIF-kép
+mime_image_jpeg = JPEG-kép
+mime_image_png = PNG-kép
+mime_image_svg_xml = SVG-kép
+mime_image_webp = WebP-kép
+mime_text_csv = CSV-fájl
+mime_text_html = HTML-fájl
+mime_text_plain = Szövegfájl
+mime_video_mp4 = MP4-videó
+mime_video_x_msvideo = AVI-videó
+move_title_junk = Megjelölés levélszemétként
+move_title_move_to = Áthelyezés
+move_title_not_junk = Megjelölés nem levélszemétként
+mp_explain_set = Az elsődleges jelszó be van állítva. Ez teszi lehetővé, hogy ez a ZBox-mappa egy másik számítógépen is megnyissa a mentett postafiókjelszavait.\n\nAz eltávolításhoz hagyja üresen mindkét új jelszó mezőt, és nyomja meg az OK gombot. Az eltávolítás nem érinti ezt a számítógépet, de a mappa nem fog működni egyetlen másikon sem anélkül, hogy minden postafiókba újra be kellene jelentkezni.
+mp_explain_unset = Nincs elsődleges jelszó beállítva, ezért a mentett postafiókjelszavak csak ezen a számítógépen és ezzel a Windows-fiókkal olvashatók. Ha a mappát máshová másolja, minden postafiókba újra be kell jelentkezni a levelezőkiszolgálóján.\n\nÁllítson be egyet, és a ZBox minden új számítógépen egyszer kéri, majd ott ezután normálisan old fel. Ez a számítógép nem kérdez újra.\n\nÍrja fel, és tartsa biztonságos helyen. Sehol nincs eltárolva, és nem állítható helyre: ha elfelejti, minden postafiókba újra be kell jelentkezni a levelezőkiszolgálóján.
+mp_label_confirm = &Új elsődleges jelszó megerősítése:
+mp_label_current = &Jelenlegi elsődleges jelszó:
+mp_label_master = &Elsődleges jelszó:
+mp_label_new = &Új elsődleges jelszó:
+mp_name_confirm = Új elsődleges jelszó megerősítése
+mp_name_current = Jelenlegi elsődleges jelszó
+mp_name_master = Elsődleges jelszó
+mp_name_new = Új elsődleges jelszó
+mp_prompt_existing = A mentett postafiókjelszavai csak ezen a számítógépen védettek. Állítson be elsődleges jelszót, hogy akkor is megnyithatók legyenek, ha a ZBoxot másik számítógépre viszi.
+mp_prompt_first_run = A ZBox hamarosan menti a postafiókjelszavait. Állítson be most elsődleges jelszót, hogy akkor is megnyithatók legyenek, ha a ZBoxot másik számítógépre viszi.
+mp_prompt_new_account = A ZBox hamarosan menti ennek a postafióknak a jelszavát. Először állítson be elsődleges jelszót, hogy a postafiók akkor is megnyitható legyen, ha a ZBoxot másik számítógépre viszi.
+mp_removed_done = Az elsődleges jelszó eltávolítva. A mentett jelszavak mostantól csak ezen a számítógépen és ezzel a Windows-fiókkal működnek.
+mp_set_done = Az elsődleges jelszó beállítva. A ZBox minden új számítógépen, ahol ezt a mappát megnyitják, egyszer kérni fogja, majd ott ezután normálisan old fel.
+mv_body_title = Üzenettörzs
+mv_col_format = Formátum
+mv_col_name = Név
+mv_col_size = Méret
+mv_format_unknown = Ismeretlen
+mv_size_unknown = Ismeretlen méret
+na_account_settings = Postafiók- és személyazonosság-beállítások
+na_disable_account = Postafiók letiltása
+na_edit_signature = Aláírás szerkesztése
+na_message_filters = Üzenetszűrők
+na_mute_account = Postafiók némítása
+na_pause_auto_check = Automatikus ellenőrzés szüneteltetése
+na_remove_account = Postafiók eltávolítása
+na_set_default = Beállítás alapértelmezett postafiókként
+no_offline_copy = Nincs kapcsolat nélküli másolat ehhez: %s. Nyissa meg online állapotban, vagy használja a Fájl, Kapcsolat nélkül, Szinkronizálás most parancsot.
+perm_delete_confirm = {msg} Ez kihagyja a Kuka mappát, és nem vonható vissza.
+perm_delete_many = Véglegesen töröl {count} üzenetet?
+perm_delete_one = Véglegesen töröl {count} üzenetet?
+preset_note_apple = Az Apple alkalmazásspecifikus jelszót igényel.
+preset_note_fastmail = A Fastmail alkalmazásjelszót igényel.
+preset_note_google = A Google alkalmazásjelszót vagy OAuth2-t igényel, nem a szokásos jelszavát.
+preset_note_proton = A ProtonMail helyben futó ProtonMail Bridge alkalmazást igényel.
+preset_note_yahoo = A Yahoo alkalmazásjelszót igényel.
+priv_phishing_not_loaded = Adathalász-lista: még nincs betöltve. Akkor töltődik le először, ha ezek a szabályok be vannak kapcsolva, és a ZBox online van.
+priv_phishing_prefix = Adathalász-lista:
+priv_status_unavailable = A tiltólista állapota nem érhető el.
+rdr_load_failed = Az üzenet nem tölthető be.\n\n{message}
+rdr_loading = Üzenet betöltése...
+rdr_select_message = Jelöljön ki egy üzenetet, hogy itt elolvashassa.
+set_autosave_off = Ki — a kézi mentéshez használja a Piszkozat mentése (Ctrl+S) parancsot
+set_autosave_seconds = {seconds} másodpercenként
+set_no_unlock = Itt nincs használható hozzáférési kulcs vagy biztonsági kulcs
+set_purge_days = {days} nap után
+set_purge_off = Ki — a Kuka és a Levélszemét soha nem törlődik automatikusan
+set_purge_one_day = 1 nap után
+set_val_seconds = {seconds} másodperc
+set_val_one_second = 1 másodperc
+set_silence_off = Ki
+set_announce_wait = Billentyűre vár
+set_autosave_minutes = {minutes} percenként
+set_autosave_one_minute = Percenként
+set_rt_bundled_installed = Beépített futtatókörnyezet: telepítve.
+set_rt_bundled_many = Beépített futtatókörnyezet: %s telepítve.
+set_rt_bundled_none = Beépített futtatókörnyezet: nincs telepítve, ezért a ZBox a rendszerszintűt használja.
+set_rt_bundled_unknown = Beépített futtatókörnyezet: nem állapítható meg.
+set_rt_bundled_ver = Beépített futtatókörnyezet: %s verzió telepítve.
+set_rt_system_unknown = Rendszerszintű futtatókörnyezet: a verzió nem állapítható meg.
+set_rt_system_ver = Rendszerszintű futtatókörnyezet: %s verzió.
+set_unlock_many = %d feloldási mód használható itt
+set_unlock_unreadable = A feloldási módok nem olvashatók
+sig_tab_formatted = Formázott
+sig_tab_source = HTML-forrás
+srch_all_accounts = Minden postafiók
+srch_all_folders = Minden mappa
+tab_mail = Levelezés
+tab_new_message = Új üzenet
+tab_saved_message = Mentett üzenet
+title_copy_to_err = Átmásolás
+title_mark_message = Üzenet megjelölése
+title_unsent_message = El nem küldött üzenet
+tree_unified_root = Egyesített mappák
+unlock_kind_passkey = Hozzáférési kulcs (Windows Hello)
+unlock_kind_security_key = Biztonsági kulcs
+unlock_prompt_message = A Windows megerősítést kér. Válaszoljon a kérdésére a Windows Hellóval, a PIN-kódjával vagy a biztonsági kulcsával. Ez az ablak magától bezárul, amikor a Windows végez.
+unlock_prompt_title = Windows-biztonság
+unlock_registering = A feloldási mód regisztrálása
+unlock_the_passkey = A hozzáférési kulcs
+unlock_the_security_key = A biztonsági kulcs
+wildcard_eml = E-mail-fájlok (*.eml)|*.eml|Minden fájl (*.*)|*.*
+wildcard_export = ZBox-export (*.json)|*.json
+wiz_not_supported = NEM TÁMOGATOTT: {name}. {note} Ez a postafiók nem adható hozzá a ZBoxban.
+stock_apply = &Alkalmaz
+stock_cancel = Mégse
+stock_close = &Bezárás
+stock_help = &Súgó
+stock_no = &Nem
+stock_ok = OK
+stock_yes = &Igen
+wiz_btn_back = &< Vissza
+wiz_btn_finish = &Befejezés
+wiz_btn_next = &Tovább >
+acct_unsaved_q = Menti a postafiók módosításait?
+btn_save = &Mentés
+spell_add_to_dictionary = &Hozzáadás a szótárhoz
+spell_no_suggestions = Nincs javaslat
+title_signature_for = Aláírás: {account}
+title_mark_folder_read = Mappa megjelölése olvasottként
+title_update_available = ZBox-frissítés
+update_available = A ZBox {new} elérhető. Önnek {current} van.
+upd_notes_label = &Kiadási megjegyzések:
+upd_no_notes = Nincsenek kiadási megjegyzések.
+upd_notes_name = Kiadási megjegyzések
+upd_update_now = &Igen, frissítés most
+upd_remind_later = &Emlékeztessen később
+title_update_download = ZBox-frissítés letöltése
+upd_downloading = A ZBox {version} letöltése...
+upd_progress_name = Letöltés előrehaladása
+upd_cancel = &Mégse
+upd_cancelling = Megszakítás...
+set_updates_label = Frissítések:
+set_update_auto = &Frissítések automatikus keresése
+set_update_mode_label = Frissítés találatakor:
+set_update_ask = &Kérdezzen rá
+set_update_silent = &Csendes letöltés és telepítés
+set_update_note = A ZBox naponta legfeljebb egyszer, csak tétlen állapotban keres újabb kiadást a GitHubon, és csak a verziószámát küldi el. A Kérdezzen rá megmutatja az új verziót és a kiadási megjegyzéseit az Igen, frissítés most és az Emlékeztessen később gombokkal. A Csendes letöltés és telepítés tétlen időben tölti le a frissítést, és a ZBox következő teljes bezárásakor telepíti, soha nem munka közben. A frissítés csak a ZBox saját programfájljait cseréli: a postafiókjaihoz, jelszavaihoz, beállításaihoz, leveleihez, naplóihoz, hangtémáihoz és az Ön által hozzáadott nyelvekhez soha nem nyúl, az előző verziót pedig megtartja, és magától visszaállítja, ha az új nem indul el. A Súgó, Frissítések rész tartalmazza a Frissítések keresése most parancsot és a kiadások oldalát is a kézi frissítéshez.
+set_update_check_now = &Keresés most
+mv_attachment_button = {filename} ({format})
+att_open = Megnyitás
+att_save = Mentés...
+att_save_all = Az összes melléklet mentése
+title_save_attachment = Melléklet mentése
+title_full_headers = Teljes fejlécek
+hdr_copy_all = Összes másolása
+acct_identity_own_signature = Saját aláírás használata
+acct_identity_own_reply_to = Saját Válaszcím használata
+acct_identity_reply_to = Válaszcím
+acct_identity_always_cc = Mindig másolat erre a címre
+acct_identity_cc = Másolat címei
+acct_identity_always_bcc = Mindig rejtett másolat erre a címre
+acct_identity_bcc = Rejtett másolat címei
+acct_identity_own_folders = Saját Piszkozatok és Elküldött elemek mappa használata
+acct_identity_drafts = Piszkozatok mappa
+acct_identity_sent = Elküldött elemek mappa
+acct_identity_own_smtp = Saját kimenő kiszolgáló használata
+acct_identity_smtp_login = Kimenő bejelentkezési név
+acct_identity_smtp_password = Kimenő jelszó
+acct_identity_test_smtp = &Kimenő kiszolgáló tesztelése
+acct_identity_note_smtp = Hagyja üresen a bejelentkezési nevet, hogy a személyazonosság e-mail-címével jelentkezzen be. Az elküldött másolatok továbbra is a postafiók Elküldött elemek mappájába kerülnek, vagy a személyazonosság saját Elküldött elemek mappájába, ha van neki.
+identity_field_required = Töltse ki a(z) {field} mezőt, vagy törölje a jelölőnégyzetét.
+identity_field_invalid = A(z) {field} mező érvénytelen címet tartalmaz.
+identity_folders_required = Válasszon Piszkozatok mappát, Elküldött elemek mappát vagy mindkettőt, vagy törölje a jelölőnégyzetüket.
+identity_password_required = Adja meg a kimenő jelszót.
+identity_smtp_testing = A kimenő kiszolgáló tesztelése.
+identity_smtp_ok = A kimenő kiszolgáló elfogadta a bejelentkezést.
+identity_smtp_failed = A kimenő kiszolgáló tesztje sikertelen.\n\n{error}
+set_bare_keys_note_move = Az M és a C megnyitja a mappák Áthelyezés és Átmásolás menüjét a kijelölt üzenetekhez, a Shift+M pedig egy mezőt nyit, ahol egy mappanév egy részét beírva oda helyezheti át őket. A kikapcsolás az M és C billentyűt is visszaadja az első betűs navigációnak.
+folder_search_filter = A mappa neve tartalmazza
+folder_search_list = Egyező mappák
+folder_search_no_match = Nincs a névnek megfelelő mappa.
+wiz_signin_method = Bejelentkezési mód
+wiz_method_password = Jelszó
+wiz_method_microsoft = Microsoft-fiók (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft-bejelentkezés. Az Outlook.com, Hotmail, Live és Microsoft 365 kiszolgáló-beállításai ki vannak töltve.
+wiz_welcome_notice = Gmail. A szokásos Google-jelszavát elutasítja, de az alkalmazásjelszó működik. A kétlépéses ellenőrzésnek előbb be kell lennie kapcsolva. Az alábbi gomb megnyitja a Google útmutatóját.\n\nOutlook.com, Hotmail, Live és Microsoft 365. Ezek a Microsoft-fiókjával jelentkeznek be. A Bejelentkezés oldalon válassza a Microsoft-fiókot, majd jelentkezzen be a böngészővel vagy kóddal.\n\nEgyéb szolgáltatók. Általában a szokásos jelszó vagy egy alkalmazásjelszó működik, a szolgáltatója súgóoldalai pedig felsorolják a kiszolgáló-beállításokat.
+preset_note_outlook = Az Outlook.com, Hotmail, Live és MSN fiókok Microsoft-fiókkal jelentkeznek be. A Bejelentkezés oldalon válassza bejelentkezési módként a Microsoft-fiókot.
+ms_status_name = Microsoft-bejelentkezés állapota
+ms_browser_button = &Bejelentkezés böngészővel
+ms_code_button = &Bejelentkezés kóddal
+ms_copy_code = &Kód másolása
+ms_open_page = &Bejelentkezési oldal megnyitása
+ms_stop = &Várakozás leállítása
+ms_not_configured = A Microsoft-bejelentkezés nincs beállítva a ZBox ezen példányában.
+ms_not_signed_in = Még nincs bejelentkezve. Jelentkezzen be a böngészővel, vagy kóddal bármely eszközön.
+ms_signed_in = Bejelentkezve mint {address}.
+ms_signed_in_plain = Bejelentkezve.
+ms_needs_sign_in = Ehhez a postafiókhoz újra szükség van a Microsoft-bejelentkezésre. Jelentkezzen be a böngészővel, vagy kóddal bármely eszközön.
+ms_reason_cancelled = A bejelentkezést leállították.
+ms_reason_timeout = Időben nem érkezett válasz.
+ms_reason_denied = A hozzáférést nem engedélyezték.
+ms_reason_expired = A kód lejárt. Kérjen újat.
+ms_reason_network = A Microsoft nem érhető el. Ellenőrizze a kapcsolatot, és próbálja újra.
+ms_reason_server = A Microsoft ezt közölte: {detail}
+ms_page_done = Bejelentkezve. Bezárhatja ezt az oldalt, és visszatérhet a ZBoxba.
+ms_page_failed = A bejelentkezés nem fejeződött be. A részletekért térjen vissza a ZBoxba.
+ms_browser_waiting = A böngészője a Microsoft bejelentkezési oldalát mutatja. Ott fejezze be a bejelentkezést, majd térjen vissza a ZBoxba.
+ms_code_asking = Bejelentkezési kód kérése a Microsofttól...
+ms_code_waiting = Bármely eszközön nyissa meg ezt: {address}, és adja meg ezt a kódot: {code}. A ZBox itt vár, amíg be nem fejezi a bejelentkezést.
+ms_failed = A bejelentkezés nem fejeződött be. {reason}
+ms_code_copied = A kód átmásolva.
+offline_inbox_only = Kapcsolat nélküli használatra csak a Beérkezett üzenetek és az Archívum marad meg. A(z) {folder} megnyitásához legyen online.
+block_sender_rule_name = {sender} letiltása
+title_block_sender = A feladó letiltása
+title_unblock_sender = A feladó letiltásának feloldása
+set_clear_inbox_cache = Üzenet-gyorsítótár törlése, ha elhagyja a Beérkezett üzeneteket
+set_clear_inbox_cache_note = Bekapcsolva az üzenet kapcsolat nélküli másolata és mentett törzse azonnal törlődik, amint elhagyja a Beérkezett üzeneteket, akkor is, ha törölték vagy máshová helyezték, például a telefonján, hogy ne jelenjen meg ott, ahol már nincs. Csak a Beérkezett üzenetek tárolják ezeket a fájlokat; minden más mappa mindig a kiszolgálóról olvasódik.
+empty_trash_all_confirm = Véglegesen törli a Kuka összes üzenetét az összes postafiókban?\n\nEz nem vonható vissza.
+envlist_col_recipient = Címzett
+envlist_col_correspondents = Levelezőpartnerek
+envlist_col_received = Érkezés
+envlist_col_size = Méret
+envlist_col_attachments = Mellékletek
+envlist_col_priority = Prioritás
+envlist_col_junk_status = Levélszemét-állapot
+envlist_attachment = Mellékletek
+envlist_priority_highest = Legmagasabb
+envlist_priority_high = Magas
+envlist_priority_low = Alacsony
+envlist_priority_lowest = Legalacsonyabb
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Oszlopfejlécek megjelenítése az üzenetlistában
+pgp_title = OpenPGP-kulcskezelő
+smime_title = S/MIME-tanúsítványkezelő
+smime_own = az Ön tanúsítványa
+smime_expired = lejárt
+smime_expires = lejár: {date}
+smime_issuer = Kiállító
+smime_valid = Érvényes: {start} és {end} között
+smime_fingerprint = SHA-256 ujjlenyomat
+smime_own_key = Az Ön tanúsítványa a privát kulcsával: a rá titkosított levél itt olvasható.
+smime_unavailable = Az S/MIME nem érhető el a ZBox ezen példányában.
+smime_details = Tanúsítvány részletei
+smime_no_certs = Még nincs tanúsítvány. Importálja saját .p12 vagy .pfx fájlját, vagy egy levelezőpartner tanúsítványát.
+smime_import_failed = A tanúsítvány nem importálható: {error}
+smime_import_title = Tanúsítványfájl importálása
+smime_password_prompt = Adja meg a(z) {name} jelszavát.
+smime_password_title = Tanúsítvány jelszava
+smime_imported = A tanúsítvány importálva.
+smime_export_title = Tanúsítvány exportálása
+smime_exported = A tanúsítvány exportálva.
+smime_delete_confirm = Törli a(z) {name} tanúsítványát? Ha az Öné, a rá titkosított levél itt többé nem olvasható.
+smime_deleted = A tanúsítvány törölve.
+smime_rs_verified = Ez az üzenet érvényes S/MIME-aláírást tartalmaz egy olyan tanúsítványtól, amelyet a Windows által megbízhatónak tartott hitelesítésszolgáltató állított ki a feladó címére.
+smime_rs_unverified = Ez az üzenet érvényes S/MIME-aláírást tartalmaz, de a tanúsítványát nem a Windows által megbízhatónak tartott hitelesítésszolgáltató állította ki.
+smime_rs_mismatch = Ez az üzenet S/MIME-aláírást tartalmaz, de a feladó címe nem egyezik az aláíró tanúsítványával.
+smime_rs_technical = Ez az üzenet S/MIME-aláírást tartalmaz, de az nem egyezik az üzenettel. Az üzenetet az aláírás után megváltoztathatták.
+smime_rs_signer = Aláíró: {name}
+smime_rs_issuer = A tanúsítvány kiállítója: {issuer}
+smime_rs_import_hint = Elolvasásához importálja az S/MIME-tanúsítványát a privát kulcsával, egy .p12 vagy .pfx fájlt, az Eszközök, S/MIME-tanúsítványkezelő részben.
+pgp_details = Kulcs tulajdonságai
+pgp_generate = &Új kulcspár
+smime_import = &Tanúsítványfájl importálása
+smime_export = &Tanúsítvány exportálása
+smime_delete = &Tanúsítvány törlése
+pgp_import_file = &OpenPGP-kulcsfájl importálása
+pgp_import_file_title = OpenPGP-kulcsfájl importálása
+pgp_import_clip = &Kulcsok importálása a vágólapról
+pgp_export = &Nyilvános kulcs exportálása fájlba
+pgp_copy = &Nyilvános kulcs másolása
+pgp_backup = &Titkos kulcs mentése fájlba
+pgp_props = &Kulcs tulajdonságai
+pgp_revoke = &Kulcs visszavonása
+pgp_delete = &Kulcs törlése
+pgp_expires = lejár: {date}
+pgp_never_expires = soha nem jár le
+pgp_expired = lejárt
+pgp_revoked = visszavonva
+pgp_fingerprint = Ujjlenyomat
+pgp_key_id = Kulcsazonosító
+pgp_created = Létrehozva
+pgp_acceptance = Az Ön elfogadása
+pgp_acc_rejected = Nem, a kulcs elutasítása.
+pgp_acc_undecided = Még nem, talán később.
+pgp_acc_unverified = Igen, de nem ellenőriztem, hogy ez a megfelelő kulcs.
+pgp_acc_verified = Igen, személyesen ellenőriztem, hogy ennek a kulcsnak helyes az ujjlenyomata.
+pgp_personal_no = Nem, ne használja személyes kulcsként.
+pgp_personal_yes = Igen, kezelje ezt a kulcsot személyes kulcsként.
+pgp_verify_hint = Ellenőrizze a kulcs ujjlenyomatát az e-mailtől eltérő biztonságos kommunikációs csatornán, hogy megbizonyosodjon arról, tényleg {addr} kulcsa.
+pgp_gen_title = OpenPGP-kulcs létrehozása
+pgp_gen_identity = Személyazonosság
+pgp_gen_type = Kulcs típusa:
+pgp_gen_ecc = ECC (elliptikus görbe)
+pgp_gen_expiry = Kulcs lejárata
+pgp_gen_no_expiry = A kulcs nem jár le
+pgp_gen_button = Kulcs létrehozása
+pgp_gen_confirm = Létrehoz nyilvános és titkos kulcsot ehhez: {identity}?
+pgp_gen_progress = Az új OpenPGP-kulcs létrehozása…
+pgp_gen_done = Az OpenPGP-kulcs sikeresen létrejött!
+pgp_gen_failed = Az OpenPGP-kulcs létrehozása váratlanul meghiúsult
+pgp_import_none = Nem importáltak kulcsot.
+pgp_import_done = Az OpenPGP-kulcsok sikeresen importálva!
+pgp_passphrase_title = Jelmondat szükséges
+pgp_unlock_failed = A kulcs vagy az alárendelt részei nem oldhatók fel.
+pgp_backup_title = Válasszon jelszót az OpenPGP-kulcs mentéséhez
+pgp_backup_message = Az itt megadott jelszó védi a létrehozandó OpenPGP titkoskulcs-mentési fájlt. A mentés folytatásához meg kell adnia ezt a jelszót.
+pgp_backup_pw = Titkos kulcs mentésének jelszava:
+pgp_backup_pw2 = Titkos kulcs mentésének jelszava (újra):
+pgp_backup_done = A titkos kulcs sikeresen exportálva!
+pgp_export_done = A nyilvános kulcs sikeresen exportálva!
+pgp_copied = A kulcsok átmásolva a vágólapra
+pgp_revoke_done = A kulcs sikeresen visszavonva.
+pgp_personal = személyes kulcs
+pgp_no_keys = Még nincs kulcs. Hozzon létre új kulcspárt, vagy importáljon kulcsot.
+pgp_unavailable = Az OpenPGP nem érhető el a ZBox ezen példányában.
+pgp_gen_expires_3y = A kulcs 3 év múlva lejár
+pgp_gen_no_identity = Először adjon hozzá egy e-mail-fiókot.
+pgp_import_confirm = Importálja ezeket a kulcsokat?\n\n{keys}
+pgp_passphrase_prompt = Adja meg a(z) {name} titkos kulcsának jelmondatát.
+pgp_clip_empty = A vágólap nem tartalmaz OpenPGP-kulcsot.
+pgp_pw_mismatch = A két jelszó nem egyezik.
+pgp_backup_open = Ez a fájl egy titkoskulcs-mentés. Adja meg a mentés jelszavát.
+pgp_revoke_confirm = Visszavonja a(z) {name} kulcsát? A visszavont kulcs soha többé nem használható. Ossza meg a visszavont nyilvános kulcsot, hogy mások ne használják tovább.
+pgp_delete_public_confirm = Törli a(z) {name} nyilvános kulcsát?
+pgp_delete_secret_confirm = Törli a(z) {name} személyes kulcsát? A rá titkosított levél soha többé nem olvasható. Készítsen előbb mentést a titkos kulcsról, ha szüksége lehet rá.
+pgp_select_key = Először jelöljön ki egy kulcsot.
+pgp_save_failed = A kulcsok nem menthetők: {error}
+pgp_publish = &Közzététel
+pgp_publish_ok = A nyilvános kulcs elküldve ide: "{keyserver}".
+pgp_publish_fail = A nyilvános kulcs elküldése nem sikerült ide: "{keyserver}".
+pgp_publish_suggest = A nyilvános kulcs közzététele egy kulcskiszolgálón lehetővé teszi, hogy mások megtalálják.
+pgp_publish_question = Közzéteszi most ezen: {keyserver}? A kiszolgáló ellenőrző e-mailt küld erre: {addresses}. A címe a hivatkozás megnyitása után válik kereshetővé.
+pgp_publish_sent = Ellenőrző e-mail elküldve erre: {addresses}. Nyissa meg benne a hivatkozást, hogy a kulcsa a címe alapján kereshető legyen.
+pgp_publish_already = Már kereshető ezzel: {addresses}.
+pgp_rs_no_sig = Nincs digitális aláírás
+pgp_rs_no_sig_info = Ez az üzenet nem tartalmazza a feladó digitális aláírását. A digitális aláírás hiánya azt jelenti, hogy az üzenetet olyasvalaki is küldhette, aki úgy tesz, mintha ez lenne az e-mail-címe. Az is lehetséges, hogy az üzenetet módosították a hálózaton való átvitel közben.
+pgp_rs_uncertain = Bizonytalan digitális aláírás
+pgp_rs_uncertain_date = Bizonytalan digitális aláírás - Aláírva: {date}
+pgp_rs_invalid = Érvénytelen digitális aláírás
+pgp_rs_invalid_date = Érvénytelen digitális aláírás - Aláírva: {date}
+pgp_rs_good = Jó digitális aláírás
+pgp_rs_good_date = Jó digitális aláírás - Aláírva: {date}
+pgp_rs_no_key = Ez az üzenet digitális aláírást tartalmaz, de nem biztos, hogy helyes. Az aláírás ellenőrzéséhez be kell szereznie a feladó nyilvános kulcsának másolatát.
+pgp_rs_uid_mismatch = Ez az üzenet digitális aláírást tartalmaz, de eltérést észleltünk. Az üzenetet olyan e-mail-címről küldték, amely nem egyezik az aláíró nyilvános kulcsával.
+pgp_rs_not_accepted = Ez az üzenet digitális aláírást tartalmaz, de még nem döntött arról, hogy az aláíró kulcsa elfogadható-e az Ön számára.
+pgp_rs_rejected = Ez az üzenet digitális aláírást tartalmaz, de Ön korábban úgy döntött, hogy elutasítja az aláíró kulcsát.
+pgp_rs_technical = Ez az üzenet digitális aláírást tartalmaz, de technikai hibát észleltünk. Vagy az üzenet megsérült, vagy valaki más módosította.
+pgp_rs_unverified = Ez az üzenet érvényes digitális aláírást tartalmaz egy olyan kulcstól, amelyet Ön már elfogadott. Azt azonban még nem ellenőrizte, hogy a kulcs valóban a feladóé.
+pgp_rs_verified = Ez az üzenet érvényes digitális aláírást tartalmaz egy ellenőrzött kulcstól.
+pgp_rs_own_key = Ez az üzenet érvényes digitális aláírást tartalmaz az Ön személyes kulcsától.
+pgp_rs_signer_id = Aláíró kulcsazonosítója: {keyid}
+pgp_rs_decrypt_id = Az Ön visszafejtő kulcsának azonosítója: {keyid}
+pgp_rs_enc_none = Az üzenet nincs titkosítva
+pgp_rs_enc_none_info = Ezt az üzenetet nem titkosították a küldés előtt. Az interneten titkosítás nélkül küldött információt mások láthatják az átvitel során.
+pgp_rs_enc_invalid = Az üzenet nem fejthető vissza
+pgp_rs_enc_invalid_info = Ezt az üzenetet titkosították, mielőtt elküldték Önnek, de nem fejthető vissza.
+pgp_rs_enc_valid = Az üzenet titkosított
+pgp_rs_enc_valid_info = Ezt az üzenetet titkosították, mielőtt elküldték Önnek. A titkosítás biztosítja, hogy az üzenetet csak azok a címzettek olvashassák, akiknek szánták.
+pgp_rs_field = Üzenetbiztonság
+pgp_rs_import = OpenPGP-kulcs importálása
+pgp_rs_open_to_unlock = A jelmondat megadásához nyissa meg az üzenetet.
+pgp_rs_reply_not_quoted = Az eredeti üzenet titkosított volt, ezért a szövege itt nincs idézve.
+pgp_cm_encrypt = Titkosítás
+pgp_cm_sign = Digitális aláírás
+pgp_e2e_title = Végpontok közötti titkosítás
+acct_e2e_button = &Végpontok közötti titkosítás...
+pgp_e2e_none = Ne használjon OpenPGP-t ennél a személyazonosságnál.
+pgp_e2e_disable = Titkosítás kikapcsolása az új üzeneteknél
+pgp_e2e_enable = Titkosítás bekapcsolása az új üzeneteknél
+pgp_e2e_enable_info = Az egyes üzeneteknél kikapcsolhatja a titkosítást.
+pgp_e2e_sign = Nem titkosított üzenetek aláírása
+pgp_e2e_signing_info = A digitális aláírás lehetővé teszi a címzettek számára, hogy ellenőrizzék, hogy az üzenetet Ön küldte, és a tartalma nem változott. A titkosított üzenetek alapértelmezetten mindig alá vannak írva.
+pgp_e2e_autocrypt = OpenPGP nyilvános kulcsok küldése az e-mail fejlécében az Autocrypttel való kompatibilitás érdekében
+pgp_not_set_up = Nincs beállítva a végpontok között titkosított üzenetek küldése erről: {addr}.
+pgp_cannot_encrypt = Nem titkosítható
+pgp_do_you_accept = Elfogadja ezt a kulcsot a digitális aláírások ellenőrzéséhez és az üzenetek titkosításához?
+pgp_searching = Keresés…
+pgp_no_key_found = Nem találtunk használható kulcsot a megadott keresési feltételekhez.
+pgp_source_autocrypt = Autocrypt-fejléc
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = kulcskiszolgáló
+pgp_discover = &Kulcsok keresése online
+pgp_cm_attach_key = Saját nyilvános kulcs csatolása
+pgp_e2e_key_label = Személyes kulcs ehhez: {address}
+pgp_e2e_auto = Automatikus: az Ön személyes kulcsa ehhez a címhez
+pgp_e2e_no_key = A ZBoxnak nincs személyes OpenPGP-kulcsa ehhez: {address}. Hozzon létre egyet az Eszközök, OpenPGP-kulcskezelő részben.
+pgp_e2e_new_messages = Titkosítás az új üzeneteknél
+pgp_e2e_key_missing = A(z) {keyid} kulcs nem található
+pgp_missing_keys = Ezeknek a címzetteknek nincs használható, elfogadott kulcsa:\n\n{addresses}\n\nAz üzenet nem küldhető titkosítva.
+pgp_send_unencrypted = &Küldés titkosítás nélkül
+pgp_collected_found = Ezekhez a címzettekhez a tőlük kapott levelekben találtunk kulcsokat:
+pgp_lookup_q = Keres online kulcsokat ezekhez a címzettekhez?\n\n{addresses}\n\nEz elküldi a címeiket a keys.openpgp.org kiszolgálónak és a saját levelezési tartományaiknak.
+pgp_found_online = Online talált kulcsok:
+pgp_source = Forrás: {source}
+pgp_discover_prompt = Adjon meg egy e-mail-címet. A ZBox megkeresi az OpenPGP-kulcsait a levelezési tartománya Web Key Directoryjában és a keys.openpgp.org kiszolgálón.
+pgp_discover_bad = Adjon meg teljes e-mail-címet, például name@example.com.
+pgp_keys_unreadable = Az OpenPGP-kulcsok nem nyithatók meg: {error}
+pgp_rs_why_no_key = Az üzenet visszafejtéséhez szükséges titkos kulcs nem érhető el.
+pgp_rs_why_unknown = Ismeretlen problémák vannak ezzel a titkosított üzenettel.
+pgp_rs_hidden_subject = Titkosított üzenet
+pgp_rs_why_passphrase = A kulcs jelmondata nincs megadva. Nyissa meg újra az üzenetet a megadásához.
+pgp_rs_why_unavailable = Az OpenPGP nem érhető el a ZBox ezen példányában.
+pgp_rs_why_fetch = Az üzenet nem kérhető le a kiszolgálóról a visszafejtéshez. Nyissa meg újra egy újabb próbához.
+pgp_rs_import_hint = Elolvasásához importálja a ZBoxba az ehhez az üzenethez tartozó titkos kulcsát.
+
+[errors]
+language_restart_failed = A ZBox nem tudta újraindítani magát:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Nem nyitható meg levelezőprogram ehhez: {address}.
+
+wizard_test_failed = A kapcsolat sikertelen:\n\n{error}
+
+contacts_import_unreadable = Ez a fájl nem olvasható.\n\n{error}
+contacts_export_unwritable = Ez a fájl nem írható.\n\n{error}
+
+attach_unreadable = A(z) {path} melléklet nem olvasható:\n{error}
+send_failed = Az üzenet nem küldhető el.\n\n{error}
+draft_attach_unreadable = A(z) {path} melléklet nem olvasható:\n{error}\n\nA piszkozat nincs mentve.
+draft_save_failed = A piszkozat nem menthető.\n\n{error}
+
+clipboard_unavailable = A vágólap nem nyitható meg.
+open_link_failed = A böngésző nem nyitható meg ehhez:\n{url}
+
+master_password_mismatch = A két új elsődleges jelszó mező nem egyezik.
+master_password_required = Adjon meg elsődleges jelszót, vagy nyomja meg a Mégse gombot.
+master_password_not_set = Az elsődleges jelszó nem állítható be: {error}
+master_password_not_here = Az elsődleges jelszó innen nem módosítható.
+
+attachment_save_failed = A melléklet nem menthető.\n\n{error}
+attachments_save_failed = A mellékletek nem menthetők.\n\n{error}
+print_failed = Az üzenet nem nyomtatható. Ellenőrizze, hogy van-e beállított nyomtató.
+print_preview_failed = A nyomtatási kép nem nyitható meg. Ellenőrizze, hogy van-e beállított nyomtató.
+
+related_search_failed = A kapcsolódó üzenetek keresése nem sikerült.\n\n{error}
+search_failed = A keresés sikertelen.\n\n{error}
+
+unlock_methods_no_config_folder = A ZBox nem találta a konfigurációs mappáját, ezért a feloldási módok innen nem kezelhetők.
+shortcut_no_folder = A ZBox nem tudta megállapítani a saját mappáját, ezért innen nem hozható létre parancsikon.
+shortcut_failed_settings = Az asztali parancsikon nem hozható létre:\n\n{error}
+
+unlock_method_failed = A(z) {what} nem működött.\n\n{error}
+unlock_check_failed = Az elsődleges jelszó nem ellenőrizhető.\n\n{error}
+unlock_password_wrong = Ez az elsődleges jelszó nem helyes.
+unlock_add_failed = A(z) {what} nem adható hozzá.\n\n{error}
+unlock_passkey_setup_failed = A hozzáférési kulcs nem állítható be ezen a számítógépen, ezért semmi nem változott.\n\n{error}
+unlock_method_test_failed = Ez a mód nem működött.\n\n{error}
+
+account_list_unreadable = A ZBox nem tudta megnyitni a postafiókjainak listáját.\n\n{error}\n\nEgyetlen postafiók sem töltődött be, és a fájl nem változott, így semmi nem veszett el. A postafiókok hozzáadása, szerkesztése és eltávolítása addig megtagadva marad, amíg a lista nem olvasható.
+account_list_no_accounts = A ZBox ebben a munkamenetben nem tudta megnyitni a postafiókjainak listáját ({error}), ezért nincs kijelölhető postafiók. Semmi nem veszett el, és semmi nem változott. Zárja be a ZBoxot, indítsa újra, és adja meg az elsődleges jelszavát, ha kéri.
+open_message_failed = Az üzenet nem nyitható meg.\n\n{error}
+filters_list_failed = A(z) {folder} üzenetei nem listázhatók.\n\n{error}
+filters_move_failed = A szűrt üzenetek nem helyezhetők át.\n\n{error}
+cache_clear_failed = A gyorsítótár nem törölhető.\n\n{error}
+folder_create_failed = A mappa nem hozható létre.\n\n{error}
+folder_rename_failed = A mappa nem nevezhető át.\n\n{error}
+folder_delete_failed = A mappa nem törölhető.\n\n{error}
+folder_subscribe_failed = A mappára nem lehet feliratkozni.\n\n{error}
+folder_unsubscribe_failed = A mappáról nem lehet leiratkozni.\n\n{error}
+saved_open_failed = A fájl nem nyitható meg.\n\n{error}
+saved_parse_failed = Ez a fájl nem értelmezhető e-mail-üzenetként.\n\n{error}
+save_file_failed = A fájl nem menthető.\n\n{error}
+save_fetch_failed = A mentendő üzenet nem kérhető le.\n\n{error}
+empty_trash_failed = A Kuka nem üríthető ki.\n\n{error}
+empty_junk_failed = A Levélszemét nem üríthető ki.\n\n{error}
+export_write_failed = Az exportfájl nem írható.\n\n{error}
+import_read_failed = Ez a fájl nem olvasható ZBox-exportként.\n\n{error}
+import_not_export = Ez a fájl nem úgy néz ki, mint egy ZBox-export.\n\n{error}
+search_open_failed = Ez az üzenet nem nyitható meg.
+related_load_failed = Ez az üzenet nem tölthető be.\n\n{error}
+reply_load_failed = A megválaszolandó üzenet nem tölthető be.\n\n{error}
+forward_load_failed = A továbbítandó üzenet nem tölthető be.\n\n{error}
+action_failed = Ez a művelet nem hajtható végre.\n\n{error}
+undo_failed = A(z) {label} nem vonható vissza.\n\n{error}
+copy_failed = Az üzenet nem másolható.\n\n{error}
+delete_failed = Az üzenet nem törölhető.\n\n{error}
+archive_failed = Az üzenet nem archiválható.\n\n{error}
+master_password_not_changed = Az elsődleges jelszó nem módosítható: {error}
+shortcut_failed_startup = Az asztali parancsikon nem hozható létre:\n\n{error}\n\nA ZBox tovább indul. Később újra megpróbálhatja a Beállításokból.
+account_locked_action = A ZBox nem tudja ezt: %s. A postafiók-lista ebben a munkamenetben nem nyitható meg (%s), és semmi nem változott. Zárja be a ZBoxot, indítsa újra, és adja meg az elsődleges jelszavát, ha kéri.
+send_tls_mismatch = Az üzenet nem küldhető el. A kimenő kiszolgáló titkosítás nélkül válaszolt, ezért a kimenő titkosítás nem egyezik a porttal. Az Eszközök, Postafiók- és személyazonosság-beállítások részben használjon STARTTLS-t a 587-es porthoz vagy SSL/TLS-t a 465-ös porthoz, majd küldje újra.\n\n{error}
+mark_folder_read_failed = A mappa nem jelölhető meg olvasottként.\n\n{error}
+update_failed = A frissítés nem tölthető le, ezért semmi nem változott.\n\n{error}
+update_rolled_back = A frissítés nem tudott elindulni, ezért az előző verzió vissza lett állítva.
+attachment_open_failed = A melléklet nem nyitható meg.\n\n{error}
+headers_failed = Az üzenetfejlécek nem tölthetők be.\n\n{error}
+wizard_ms_sign_in_first = A folytatás előtt jelentkezzen be a Microsofttal. Használja az oldalon lévő két bejelentkezési gomb egyikét.
+wizard_provider_unsupported = A ZBox nem tud bejelentkezni ennél a szolgáltatónál. Az oldalon lévő megjegyzés megmagyarázza, miért. Lépjen vissza, és használjon másik e-mail-címet, vagy szakítsa meg.
+acct_ms_sign_in_first = Mentés előtt jelentkezzen be a Microsofttal, vagy válassza bejelentkezési módként a Jelszót.
+ms_sign_in_again = A(z) {account} postafiókhoz újra szükség van a Microsoft-bejelentkezésre. Nyissa meg a Postafiók- és személyazonosság-beállításokat, és ott jelentkezzen be.
+graph_pgp_too_large = Ez a titkosított vagy aláírt üzenet nagyobb, mint amit a Microsoft az ilyen levelekhez megenged, körülbelül 3 MB. Küldjön kisebb mellékleteket, vagy kapcsolja ki a Titkosítást és a Digitális aláírást ennél az üzenetnél.
+empty_trash_all_failed = A Kuka nem üríthető ki ezeknél: {accounts}
+
+[help]

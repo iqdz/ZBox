@@ -1,0 +1,103 @@
+Gbogbogbò
+F6: Yí ìfọkànsí káàkiri àwọn pánẹ́ẹ̀lì
+Ctrl+Tab: Táàbù tó kàn
+Ctrl+Shift+Tab: Táàbù tó ṣáájú
+Ctrl+W tàbí Ctrl+F4: Pa táàbù lọ́wọ́lọ́wọ́
+Escape: Kó ìtẹ̀léra tí a ṣí jọ tí àtòjọ ìfiránṣẹ́ bá ní ìfọkànsí tí ọ̀kan sì ṣí; bí kò bá rí bẹ́ẹ̀, pa táàbù lọ́wọ́lọ́wọ́ (ìfiránṣẹ́, ìfiránṣẹ́ tí a fi pamọ́, tàbí ìkọ̀wé tí a kò tíì fi ránṣẹ́ -- ó ń béèrè ná tí ó bá ní àwọn àyípadà tí a kò fi pamọ́)
+Bọ́tìnì Application tàbí Shift+F10: Ṣí àtòjọ àyíká lórí ohun àtòjọ tàbí igi tó ní ìfọkànsí
+F1: Àwọn ọ̀nà abuja bọ́tìnì, ojú ìwé yìí
+Ctrl+Shift+Q: Jáde -- máa ń ti ZBox ní ti gidi, kódà nígbà tí "Pa sí àtẹ ètò" bá ṣiṣẹ́ nínú Ètò (bọ́tìnì Pa ti fèrèsé, Alt+F4, àti Ctrl+W lórí táàbù Ímeèlì ń fi pamọ́ sí àtẹ ètò dípò jíjáde nígbà tí ètò yẹn bá ṣiṣẹ́; ohun Jáde ti àmì àtẹ ètò fúnra rẹ̀ náà máa ń jáde ní ti gidi)
+Ctrl+Shift+Delete: Pa ibi ìkópamọ́ ìfiránṣẹ́ láìsí ayélujára rẹ́ -- àwọn ẹ̀dà ZBox lórí kọ̀ǹpútà nìkan, kò sí nǹkan lórí olùpèsè kankan (bákan náà bọ́tìnì kan nínú Àwọn irinṣẹ́ > Ètò ìmọ́tótó ibi ìkópamọ́)
+
+Ímeèlì
+Ctrl+N: Ìfiránṣẹ́ tuntun
+Ctrl+Shift+N: Àkọọ́lẹ̀ ímeèlì tuntun
+F5: Gba ímeèlì tuntun fún àkọọ́lẹ̀ lọ́wọ́lọ́wọ́
+Shift+F5: Gba ímeèlì tuntun fún gbogbo àkọọ́lẹ̀
+Ctrl+Shift+J: Lọ sí àtòjọ ìfiránṣẹ́ Àpótí gbígbà
+Ctrl+Y: Lọ sí àtòjọ fódà
+Enter lórí àkọọ́lẹ̀ tàbí fódà tí a ti pa nínú àtòjọ fódà: ṣí i, bíi Right arrow
+Ctrl+Shift+B: Ìwé àdírẹ́sì
+Ctrl+Shift+F: Wá àwọn ìfiránṣẹ́
+Ctrl+Shift+T: Fi àwọn ìfiránṣẹ́ tó jọmọ hàn
+
+Àtòjọ ìfiránṣẹ́
+Delete, Shift+Delete, Pamọ́ sí ìpamọ́, Sàmì ìràwọ̀/Yọ ìràwọ̀, Sàmì sí àwúrúju/Kì í ṣe àwúrúju, Gbé lọ sí àti Dàkọ sí ń kan gbogbo ìfiránṣẹ́ nínú ìtẹ̀léra nígbà tí a bá lò ó lórí ìlà ìtẹ̀léra tí a KÓ JỌ -- kọ́kọ́ ṣí ìtẹ̀léra náà (Right arrow tàbí Enter/Space) láti ṣe lórí ìfiránṣẹ́ kan nínú rẹ̀ dípò
+Ctrl+A: Yan gbogbo ìfiránṣẹ́
+Ctrl+Shift+L: Gbé àwọn ìfiránṣẹ́ mìíràn wá
+Delete: Gbé ìfiránṣẹ́ lọ sí Àpótí ìdọ̀tí
+Shift+Delete: Pa ìfiránṣẹ́ rẹ́ pátápátá
+Ctrl+Z: Padà Parẹ́, Pamọ́ sí ìpamọ́, Sàmì sí àwúrúju tàbí Sàmì sí kì í ṣe àwúrúju tó kẹ́yìn
+S: Sàmì ìràwọ̀/yọ ìràwọ̀ ìfiránṣẹ́ tí a yàn
+A: Pamọ́ ìfiránṣẹ́ tí a yàn sí ìpamọ́
+J: Sàmì ìfiránṣẹ́ tí a yàn sí àwúrúju
+Shift+J: Sàmì ìfiránṣẹ́ tí a yàn sí kì í ṣe àwúrúju
+W: Tọ́jú ìtẹ̀léra -- yí padà bóyá ìtẹ̀léra tí ohun tí a yàn jẹ́ apá kan ni à ń tọ́jú (bákan náà nínú àtòjọ Ìfiránṣẹ́ àti ìtẹ̀ ọ̀tún)
+K: Kọbi ara sí ìtẹ̀léra -- yí padà bóyá a kọbi ara sí ìtẹ̀léra yẹn (bákan náà nínú àtòjọ Ìfiránṣẹ́ àti ìtẹ̀ ọ̀tún)
+M: Gbé ìfiránṣẹ́ tí a yàn lọ -- ṣí àtòjọ Gbé lọ sí ti àwọn fódà
+Shift+M: Gbé ìfiránṣẹ́ tí a yàn lọ nípa títẹ apá kan orúkọ fódà
+C: Dàkọ ìfiránṣẹ́ tí a yàn -- ṣí àtòjọ Dàkọ sí ti àwọn fódà
+S, A, J, W àti K òkè ń ṣiṣẹ́ nípasẹ̀ àtẹ̀wọ́, a sì lè pa wọ́n nínú Ètò (wọ́n gba iwájú lórí ìrìnkiri lẹ́tà àkọ́kọ́ ti àtòjọ ìfiránṣẹ́)
+M, Shift+M àti C òkè tẹ̀lé ètò kan náà
+Enter tàbí Space lórí ìtẹ̀léra tí a kó jọ: ṣí ìfiránṣẹ́ tuntun tí a kò tíì kà jùlọ nínú ìtẹ̀léra náà (ìfiránṣẹ́ tuntun jùlọ tí gbogbo ìtẹ̀léra bá ti kà) gẹ́gẹ́ bí ìfiránṣẹ́ kan, nínú táàbù kan -- lẹ́yìn náà Ctrl+Shift+Page Down àti Ctrl+Shift+Page Up ń yí ìyókù ìtẹ̀léra láìṣí ìfiránṣẹ́ kejì. Lórí ìfiránṣẹ́ déédé, ó ń ṣí i bíi ti àtẹ̀wọ́
+Right arrow lórí ìtẹ̀léra tí a kó jọ: ń fi àwọn ìfiránṣẹ́ rẹ̀ hàn gẹ́gẹ́ bí àtòjọ, láìṣí èyíkéyìí nínú wọn -- ṣí ọ̀kan lẹ́ẹ̀kan láti ibẹ̀ pẹ̀lú Enter tàbí Space tirẹ̀
+Ctrl+Shift+O: Ṣí ìfiránṣẹ́ nínú ìjíròrò -- gbogbo ìtẹ̀léra nínú táàbù kan, gẹ́gẹ́ bí àtòjọ àwọn ìfiránṣẹ́ rẹ̀ pẹ̀lú ọ̀rọ̀ ti èyí tí a yàn nísàlẹ̀. Yí àtòjọ náà ká pẹ̀lú àwọn ọfà láti kà wọ́n ní ọ̀kọ̀ọ̀kan; Enter lórí ìlà ń ṣí ìfiránṣẹ́ kan ṣoṣo yẹn nínú táàbù kíkún tirẹ̀. Orúkọ àti bọ́tìnì kan náà pẹ̀lú àṣẹ Thunderbird fúnra rẹ̀
+Left arrow: kó ìtẹ̀léra tí ohun tí a yàn wà nínú rẹ̀ lọ́wọ́lọ́wọ́ jọ
+*: Ṣí gbogbo ìtẹ̀léra (bákan náà Ìwò > Àwọn ìtẹ̀léra); \: Kó gbogbo ìtẹ̀léra jọ (bákan náà Ìwò > Àwọn ìtẹ̀léra)
+Ìwò > Àwọn ìtẹ̀léra > Gbogbo wọn / Àwọn ìtẹ̀léra tí à ń tọ́jú / Àwọn ìtẹ̀léra tí a kò kọbi ara sí ń ṣàlẹ̀mọ́ àwọn ìtẹ̀léra tí a fihàn -- yíyí padà sí Gbogbo wọn máa ń mú gbogbo ìfiránṣẹ́ padà; a kì í yọ nǹkan kankan kúrò nínú fódà nípasẹ̀ èyí
+
+Ìfiránṣẹ́ tí a ṣí
+Alt+A: Pamọ́ ìfiránṣẹ́ yìí sí ìpamọ́ -- nígbà tí ọ̀rọ̀ rẹ̀ (Ọ̀rọ̀ tàbí HTML) bá ní ìfọkànsí kọ̀ǹpútà nìkan; níbòmíràn Alt+A ń pa ìtumọ̀ déédé rẹ̀ mọ́ ti ṣíṣí àtòjọ Àwọn àkọọ́lẹ̀
+Ctrl+R: Dáhùn
+Ctrl+Shift+R: Dáhùn sí gbogbo wọn
+Ctrl+L: Tún fi ránṣẹ́
+Ctrl+Delete tàbí Ctrl+D: Gbé ìfiránṣẹ́ yìí lọ sí Àpótí ìdọ̀tí. Olùkàwé ojú ìwé sábà máa ń gba Delete lásán nígbà tí ìfiránṣẹ́ HTML bá ní ìfọkànsí; Shift+Delete ń pa á rẹ́ pátápátá
+Ctrl+Shift+Page Down: Ìfiránṣẹ́ tó kàn nínú ìtẹ̀léra yìí; Ctrl+Shift+Page Up: èyí tó ṣáájú. Ó ń rọ́pò táàbù lọ́wọ́lọ́wọ́ dípò ṣíṣí òmíràn, nítorí náà ìfiránṣẹ́ kan ṣoṣo ni ó máa ń ṣí nígbà gbogbo. Ní ìfiránṣẹ́ ìkẹyìn (tàbí ti àkọ́kọ́, nígbà tí a bá ń gòkè) ó ń sọ bẹ́ẹ̀ ó sì ń béèrè; títún tẹ bọ́tìnì kan náà ń pa ìfiránṣẹ́ náà ó sì ń parí ìtẹ̀léra náà, ó sì ń padà sí àtòjọ ìfiránṣẹ́. (A fi Ctrl+Page Up/Down sílẹ̀ -- àwọn ni wọ́n ń yí àwọn táàbù padà)
+Ctrl+B: Yí ìwò ìfiránṣẹ́ padà (Ọ̀rọ̀/HTML)
+Ctrl+P: Tẹ̀jáde
+Ctrl+Shift+P: Àyẹ̀wò ìtẹ̀jáde
+Ctrl+S: Fi ìfiránṣẹ́ pamọ́ bí
+Ctrl+U: Kéde orúkọ àti àdírẹ́sì olùfiránṣẹ́
+Ctrl+Shift+U: Kéde olùfiránṣẹ́ kí o sì dàkọ àdírẹ́sì
+Ctrl+Shift+I: Fi àkóónú láti jìnnà hàn nínú ìfiránṣẹ́ yìí
+Ctrl+Shift+=: Mú ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ pọ̀ sí i
+Ctrl+Shift+-: Mú ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ dín kù
+Ctrl+Shift+0: Dá ìwọ̀n ọ̀rọ̀ ìfiránṣẹ́ padà
+
+Kíkọ ìfiránṣẹ́
+Ctrl+Enter tàbí Alt+S: Fi ránṣẹ́
+Ctrl+S: Fi àwòkọ pamọ́
+Ctrl+Shift+A: Fi fáìlì kún un
+Ctrl+Shift+S: Fi ìbuwọ́lù àkọọ́lẹ̀ tó wà nínú Láti ọ̀dọ̀ sí i
+Ctrl+Shift+V: Lẹ̀ bí àyọkà
+Ctrl+Shift+W: Iye ọ̀rọ̀
+Ctrl+Shift+P: Àyẹ̀wò ìfiránṣẹ́ bí a ṣe máa fi ránṣẹ́
+Escape, Ctrl+W tàbí Ctrl+F4: Pa táàbù kíkọ -- ó ń béèrè ná tí nǹkan kan bá wà tí a kò fi pamọ́, ó ń fi Fi àwòkọ pamọ́, Sọ nù tàbí Máa ṣàtúnṣe lọ lọ́nà
+Gbogbo àṣẹ tó wà nísàlẹ̀ náà wà nínú àtòjọ Kíkọ, tí Alt+C ń ṣí kódà nígbà tí ìfọkànsí bá wà nínú ọ̀rọ̀ ìfiránṣẹ́
+
+Ìṣètò, nígbà tí a bá ń kọ̀wé
+Ctrl+B: Dúdú gbòòrò
+Ctrl+I: Tẹ̀ sí ẹ̀gbẹ́
+Ctrl+Shift+X: Fa ìlà kọjá
+Ctrl+Shift+8: Àtòjọ onípẹ́ńtì
+Ctrl+Shift+7: Àtòjọ onínọ́ńbà
+Ctrl+Shift+9: Àyọkà
+Ctrl+Shift+6: Kóòdù
+Ctrl+Alt+1: Àkọlé
+Ctrl+K: Fi ìsopọ̀ sí i
+Ctrl+Shift+K: Sọ ìṣètò tó wà ní ipa níbi tí kọ́sọ̀ wà
+Ctrl+Shift+M: Ṣí àtòjọ Ìṣètò níbikíbi tí ìfọkànsí bá wà, pẹ̀lú ọ̀rọ̀ ìfiránṣẹ́
+
+Ìkọ̀wé, nígbà tí a bá ń kọ̀wé
+Ctrl+Shift+F7: Yẹ ìkọ̀wé wò
+Ctrl+Shift+F9: Lọ sí àṣìṣe tó kàn
+Ctrl+Shift+F8: Fi ọ̀rọ̀ tó dúró lé kún ìwé atúmọ̀ èdè
+
+Bọ́tìnì kan náà ní ibi méjì
+Ctrl+S: Fi àwòkọ pamọ́ nígbà kíkọ, Fi ìfiránṣẹ́ pamọ́ bí nínú ìfiránṣẹ́ tí a ṣí
+Ctrl+B: Dúdú gbòòrò nígbà kíkọ, yí padà láàrín Ọ̀rọ̀ àti HTML nínú ìfiránṣẹ́ tí a ṣí
+Ctrl+Shift+P: Àyẹ̀wò nígbà kíkọ, Àyẹ̀wò ìtẹ̀jáde nínú ìfiránṣẹ́ tí a ṣí
+Alt+A: Pamọ́ sí ìpamọ́, ṣùgbọ́n nígbà tí ọ̀rọ̀ ìfiránṣẹ́ bá ní ìfọkànsí kọ̀ǹpútà nìkan; níbikíbi mìíràn ó ń ṣí àtòjọ Àwọn àkọọ́lẹ̀
+
+Àyẹ̀wò
+Ctrl+Shift+F12: Àyẹ̀wò bọ́tìnì kíákíá -- ó ń kọ ìlà kan sí àkọsílẹ̀ àtúnṣe àṣìṣe fún ìdàpọ̀ kọ̀ọ̀kan tí a tẹ̀ nínú táàbù kíkọ, kí a lè fi ẹ̀rí hàn ohun tí bọ́tìnì kan dé. Ó wà ní pípa nípasẹ̀ àtẹ̀wọ́, bọ́tìnì kan náà sì ń pa á padà; a ń sọ ipò náà lọ́nà méjèèjì

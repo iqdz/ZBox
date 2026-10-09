@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Afrikaans
+code = af
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Boodskap gestuur.
+draft_saved = Konsep gestoor.
+signature_inserted = Handtekening ingevoeg.
+signature_none = Hierdie rekening het geen handtekening nie.
+signature_saved = Handtekening gestoor.
+signature_not_saved = Handtekening nie gestoor nie.
+pasted_as_quotation = As aanhaling geplak.
+clipboard_empty = Daar is niks op die knipbord nie.
+word_count = {words} woorde, {characters} karakters.
+report_copied = Verslag gekopieer.
+compose_tab_needed = Daardie opdrag het 'n skryfoortjie nodig.
+attach_file_instead = Gelaat-val-lêers word nie in die boodskapteks geplaas nie. Gebruik Heg lêer aan om een te stuur.
+
+# Formatting in the message body
+formatting_here = Formatering hier: {formatting}.
+no_formatting_here = Geen formatering hier nie, skoonteks.
+
+# Spelling
+nothing_to_check = Daar is niks om na te gaan nie.
+no_misspellings = Geen spelfoute nie.
+spelling_dictionary_unavailable = Die speltoetswoordeboek is nie beskikbaar nie.
+next_misspelling_first = Gebruik eers die volgende spelfout.
+word_added = {word} by die woordeboek gevoeg.
+word_not_added = {word} kon nie by die woordeboek gevoeg word nie.
+corrections_applied_one = 1 regstelling toegepas.
+corrections_applied_many = {count} regstellings toegepas.
+corrections_applied_partly = {applied} van {total} regstellings toegepas. Die res is geweier; sien die loglêer.
+occurrences_replaced_one = 1 voorkoms vervang.
+occurrences_replaced_many = {count} voorkomste vervang.
+
+# Reading mail
+message_did_not_open = Die boodskap het nie oopgegaan nie. Die bediener het nie geantwoord nie. Druk Enter om weer te probeer.
+thread_open = {messages} in hierdie draad. Druk weer om toe te maak.
+no_thread_selected = Geen draad gekies nie.
+thread_watched = Draad word dopgehou.
+thread_not_watched = Draad word nie meer dopgehou nie.
+thread_ignored = Draad word geïgnoreer.
+thread_not_ignored = Draad word nie meer geïgnoreer nie.
+none_found = Niks gevind nie.
+refreshing_this_folder = Hierdie vouer word herlaai.
+refreshing_all_accounts = Alle rekeninge word herlaai.
+message_view_html = Boodskapaansig: HTML (weergegee).
+message_view_text = Boodskapaansig: Teks.
+html_view_still_loading = Die boodskap laai nog. Escape maak dit toe.
+message_still_opening = Boodskap word oopgemaak. Die bediener is stadig.
+remote_content_blocked = Afstandinhoud geblokkeer.
+remote_content_unblocked = Afstandinhoud gedeblokkeer.
+remote_content_already_showing = Afstandinhoud word reeds in hierdie boodskap gewys.
+archived = Geargiveer.
+copied_to_folder = Gekopieer na {to_folder}.
+deleted_one = Boodskap permanent geskrap.
+deleted_many = {count} boodskappe permanent geskrap.
+trashed_one = Boodskap na die Snippermandjie geskuif.
+trashed_many = {count} boodskappe na die Snippermandjie geskuif.
+
+# Accounts and new mail
+no_account_yet = Daar is nog geen rekening om na te spring nie.
+inbox_landed = {name} se inkassie.
+account_enabled = {name} geaktiveer.
+auto_check_paused = Outomatiese kontrole gestaak vir {account}.
+auto_check_resumed = Outomatiese kontrole aan vir {account}.
+account_disabled = {name} gedeaktiveer.
+new_mail_one = 1 nuwe boodskap vir {name}.
+new_mail_many = {count} nuwe boodskappe vir {name}.
+refresh_all_done_one = 1 rekening herlaai.
+refresh_all_done_many = {count} rekeninge herlaai.
+refresh_all_done_failures = {count} rekeninge herlaai, {failed} kon nie herlaai word nie.
+refresh_all_done_failures_one = {count} rekening herlaai, {failed} kon nie herlaai word nie.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adres gekopieer.
+sender_no_address = {sender}. Geen adres om te kopieer nie.
+clipboard_not_opened = {sender}. Die knipbord kon nie oopgemaak word nie.
+
+# The signature editor
+signature_page_formatted = Geformateer. Dit is wat gestoor sal word.
+signature_page_html = HTML-bron. Dit is wat gestoor sal word.
+signature_page_html_still_wins = Geformateer. Die HTML-bron is steeds wat gestoor sal word.
+
+# Background work
+phishing_list_updating = Die uitvissingslys word op die agtergrond opgedateer.
+cache_cleared = {files} gekaste lêer(s) uitgevee, {size} MB.
+hotkeys_diagnostic_on = Sleutelkombinasie-diagnose aan, gemerk
+hotkeys_diagnostic_off = Sleutelkombinasie-diagnose af, ongemerk
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Argiveer
+action_delete = Skrap
+action_delete_permanently = Skrap permanent
+action_mark_as_junk = Merk as gemors
+action_mark_as_not_junk = Merk as nie gemors nie
+action_move_to = Skuif na
+action_copy_to = Kopieer na
+action_mark_message = Merk boodskap
+action_undo = Ontdoen
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Ontdoen: {action}.
+undo_done_many = Ontdoen: {action} vir {count} boodskappe.
+junk_marked_one = As gemors gemerk.
+junk_marked_many = {count} boodskappe as gemors gemerk.
+junk_no_new_sender = Geen nuwe sender geblokkeer nie: reeds geblokkeer, 'n possery, of een van jou eie adresse.
+not_junk_marked_one = As nie gemors nie gemerk.
+not_junk_marked_many = {count} boodskappe as nie gemors nie gemerk.
+moved_to_one = Geskuif na {to_folder}.
+moved_to_many = {count} boodskappe na {to_folder} geskuif.
+copied_to_many = {count} boodskappe na {to_folder} gekopieer.
+marked_read = As gelees gemerk.
+marked_unread = As ongelees gemerk.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Gekanselleer na {completed} van {total}. {succeeded} geslaag, {failed} misluk.
+bulk_failed_one = {done} {failed} van 1 boodskap het misluk.
+bulk_failed_many = {done} {failed} van {total} boodskappe het misluk.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Vet
+format_word_italic = Kursief
+format_word_strike = Deurgehaal
+format_word_href = Skakel
+format_word_bullet = Koeëllys
+format_word_number = Genommerde lys
+format_word_quote = Aanhaling
+format_word_code = Kode
+format_word_heading1 = Opskrif
+format_applied = {formatting} toegepas.
+format_inserted = {formatting} ingevoeg.
+format_not_available = {formatting} is nie in die skoon boodskapliggaam beskikbaar nie.
+format_on = {formatting} aan
+format_off = {formatting} af
+link_applied = Skakel toegepas.
+link_applied_to_selection = Skakel op die keuse toegepas.
+plain_body_formatting = Die skoon boodskapliggaam wys sy formatering as etikette.
+
+# Reaching either end of a thread
+thread_edge_first = Eerste boodskap in hierdie draad. Druk weer om toe te maak.
+thread_edge_last = Laaste boodskap in hierdie draad. Druk weer om toe te maak.
+jump_unified_inbox = Verenigde inkassie.
+remote_none = Geen afstandinhoud in hierdie boodskap nie.
+sender_none = Geen sender op hierdie boodskap nie.
+sender_name_no_address = %s, geen adres nie
+signature_not_switched = Handtekening nie verander nie. Druk Ctrl+Shift+S om hierdie rekening se handtekening in te voeg.
+signature_removed_no_signature = Handtekening verwyder. Hierdie rekening het geen een nie.
+signature_switched = Handtekening verander na hierdie rekening s'n.
+spell_not_replaced = Die woord kon nie vervang word nie.
+spell_replaced_with = Vervang met {word}.
+folder_marked_read = {count} boodskappe as gelees gemerk.
+folder_no_unread = Geen ongelese boodskappe nie.
+threads_all_collapsed = Alle drade ingevou.
+threads_all_expanded = Alle drade uitgevou.
+upd_percent = {percent} persent
+upd_download_done = Aflaai voltooi. Die opdatering word voorberei...
+upd_updated_to = ZBox opgedateer na {version}.
+header_copied = Gekopieer.
+headers_copied = Alle opskrifte gekopieer.
+identity_copies_updated = Kopie en Blinde kopie opgedateer vir hierdie identiteit.
+signature_switched_identity = Handtekening verander na hierdie identiteit s'n.
+signature_removed_identity = Handtekening verwyder. Hierdie identiteit het geen een nie.
+signature_not_switched_identity = Handtekening nie verander nie. Druk Ctrl+Shift+S om hierdie identiteit se handtekening in te voeg.
+signature_none_identity = Hierdie identiteit het geen handtekening nie.
+move_keys_no_selection = Kies eers 'n boodskap.
+move_keys_no_folders = Daar is nog geen vouers om uit te kies nie. Probeer binnekort weer.
+block_sender_done_one = {sender} geblokkeer. Hul nuwe boodskappe sal na die Snippermandjie gaan.
+block_sender_done_many = {count} senders geblokkeer. Hul nuwe boodskappe sal na die Snippermandjie gaan.
+block_sender_already = {sender} is reeds geblokkeer.
+block_sender_own = Nie geblokkeer nie: dit is een van jou eie adresse.
+block_sender_list_unknown = Nie geblokkeer nie: hierdie boodskap het deur 'n possery gekom en sê nie wie dit gestuur het nie. Om die possery se adres te blokkeer, sou almal daarop blokkeer.
+block_sender_moved = Sender geblokkeer. {count} boodskap(pe) na die Snippermandjie geskuif.
+block_senders_moved = {senders} senders geblokkeer. {count} boodskap(pe) na die Snippermandjie geskuif.
+unblock_sender_moved = Sender gedeblokkeer. {count} boodskap(pe) na die Inkassie geskuif.
+unblock_senders_moved = {senders} senders gedeblokkeer. {count} boodskap(pe) na die Inkassie geskuif.
+unblock_sender_done = {sender} gedeblokkeer.
+unblock_sender_not_blocked = {sender} is nie geblokkeer nie.
+pgp_cm_on = {name} aan.
+pgp_cm_off = {name} af.
+pgp_cm_identity = Enkripsie-instellings verander na hierdie identiteit s'n.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Tik iets hierbo en druk Enter of kies Soek.
+search_no_account = Voeg eers 'n rekening by.
+search_no_term = Tik woorde om na te soek, of kies 'n datum of 'n merkblokkie.
+search_running = Soek tans...
+search_none = Geen treffers vir "{term}" nie.
+search_found_one = 1 treffer vir "{term}".
+search_found_many = {count} treffers vir "{term}".
+search_bad_date = Tik die datum as jaar-maand-dag, byvoorbeeld 2025-12-31, met 'n opsionele tyd soos 14:30.
+search_bad_range = Die einde van die datumreeks is voor die begin daarvan.
+search_none_any = Geen boodskappe stem ooreen nie.
+search_found_one_any = 1 boodskap gevind.
+search_found_many_any = {count} boodskappe gevind.
+search_failed = Soektog het misluk.
+
+# The related messages tab
+related_running = Soek tans...
+related_none = Geen verwante boodskappe gevind nie.
+related_found_one = 1 verwante boodskap gevind.
+related_found_many = {count} verwante boodskappe gevind.
+related_failed = Kon nie na verwante boodskappe soek nie.
+
+# Writing and sending
+sending_via = Stuur tans via {sender}...
+send_failed = Stuur het misluk. Sien die loglêers vir besonderhede.
+draft_autosaved = Konsep outomaties gestoor.
+draft_autosave_failed = Outomatiese stoor van konsep het misluk. Sien die loglêers vir besonderhede.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Afstandinhoud sal nou laai vir boodskappe van {sender}.
+downloading_attachment = Laai {filename} af...
+downloading_attachments_one = Laai 1 aanhegsel af...
+downloading_attachments_many = Laai {count} aanhegsels af...
+saved_to = Gestoor in {folder}
+attachment_download_failed = Aanhegsel-aflaai het misluk.
+
+# Getting mail onto the screen
+loading_folder = Laai {folder} vir {account}...
+messages_in_folder = {count} boodskap(pe) in {folder}.
+messages_in_folder_cached = {count} boodskap(pe) in {folder} (laaste gesinkroniseerde kopie, werk tans op...)
+no_offline_copy = Nog geen aflyn-kopie van {folder} nie.
+refresh_failed_cached = Kon nie {folder} herlaai nie: wys laaste gesinkroniseerde kopie.
+no_such_folder = Geen {folder}-vouer vir hierdie rekening nie.
+load_failed = Kon nie boodskappe laai nie. Sien die loglêers vir besonderhede.
+no_more_to_load = Geen verdere boodskappe om in hierdie vouer te laai nie.
+loading_more = Laai meer boodskappe in {folder}...
+more_loaded = {count} meer boodskap(pe) gelaai.
+no_more_messages = Geen verdere boodskappe in hierdie vouer nie.
+load_more_failed = Kon nie meer boodskappe laai nie: {error}
+loading_unified = Laai verenigde {folder}...
+messages_in_unified = {count} boodskap(pe) oor rekeninge in verenigde {folder}.
+messages_in_unified_cached = {count} boodskap(pe) in verenigde {folder} (laaste gesinkroniseerde kopie, werk tans op...)
+auto_purge_done = Outomatiese opruiming het {count} ou boodskap(pe) uit die Snippermandjie/Gemors verwyder.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Gereed.
+opening_message = Maak boodskap oop...
+opening_message_already = Maak boodskap oop... (laai reeds)
+could_not_open_message = Kon nie boodskap oopmaak nie.
+could_not_open_that_message = Kon nie daardie boodskap oopmaak nie.
+could_not_load_message = Kon nie hierdie boodskap laai nie.
+message_still_loading = Daardie boodskap laai nog.
+folder_still_loading = Hierdie vouer laai nog -- probeer binnekort weer.
+not_in_thread = Hierdie boodskap is nie deel van 'n draad nie.
+no_longer_in_thread = Hierdie boodskap is nie meer in die draad nie.
+thread_position = Boodskap {position} van {total} in hierdie draad.
+thread_finished_one = Hierdie draad klaar (1 boodskap).
+thread_finished_many = Hierdie draad klaar ({count} boodskappe).
+select_message_first = Kies eers 'n boodskap.
+conversation_failed = Kon nie hierdie gesprek oopmaak nie.
+select_message_for_related = Kies eers 'n boodskap om verwante boodskappe daarvoor te sien.
+looking_for_related = Soek tans verwante boodskappe...
+no_threading_headers = Hierdie boodskap het geen Message-ID of draadopskrifte om op te soek nie.
+reply_one_at_a_time = Antwoord werk op een boodskap op 'n slag. Kies asseblief 'n enkele boodskap.
+select_message_to_reply = Kies eers 'n boodskap om op te antwoord.
+preparing_reply = Berei tans antwoord voor...
+reply_load_failed = Kon nie die oorspronklike boodskap vir antwoord laai nie.
+select_message_to_forward = Kies eers 'n boodskap om aan te stuur.
+preparing_forward = Berei tans boodskap voor om aan te stuur...
+forward_load_failed = Kon nie die boodskap om aan te stuur laai nie.
+compose_tab_needed_hint = Daardie opdrag het 'n skryfoortjie nodig. Druk Ctrl+N om 'n boodskap te skryf.
+open_message_first_view = Maak eers 'n boodskap oop, druk dan Ctrl+B om sy aansig te wissel.
+open_message_first_remote = Maak eers 'n boodskap oop, druk dan Ctrl+Shift+I om sy afstandinhoud te laai.
+
+# Acting on messages
+copying_message = Kopieer tans boodskap...
+copy_failed = Kopiëring het misluk.
+delete_failed = Skrapping het misluk.
+already_in_archive = Reeds in Argief.
+archiving = Argiveer tans...
+archive_failed = Argivering het misluk.
+action_failed = {action} het misluk.
+nothing_to_undo = Niks om te ontdoen nie.
+private_mode_on = Privaatmodus is aan. ZBox se kopieë van jou pos op hierdie rekenaar is uitgevee.
+private_mode_off = Privaatmodus is af. ZBox hou weer kopieë van jou pos.
+undo_failed = Kon nie {action} ontdoen nie.
+
+# Views and folders
+folder_pane_all = Vouerpaneel: Alle vouers.
+folder_pane_unified = Vouerpaneel: Verenigde vouers.
+sorted_ascending = Gesorteer volgens {field}, stygend.
+sorted_descending = Gesorteer volgens {field}, dalend.
+unified_folders_updated = Verenigde vouers opgedateer.
+zoom_reset = Boodskaplettergrootte teruggestel na verstek.
+folder_creating = Skep tans vouer "{folder}"...
+folder_created = Vouer "{folder}" geskep.
+folder_create_failed = Kon nie vouer skep nie.
+folder_renaming = Hernoem tans "{folder}" na "{new_name}"...
+folder_renamed = Vouer hernoem na "{new_name}".
+folder_rename_failed = Kon nie vouer hernoem nie.
+folder_deleting = Skrap tans vouer "{folder}"...
+folder_deleted = Vouer geskrap.
+folder_delete_failed = Kon nie vouer skrap nie.
+folder_subscribing = Teken tans in op "{folder}"...
+folder_unsubscribing = Teken tans uit by "{folder}"...
+folder_subscribed = Ingeteken.
+folder_unsubscribed = Uitgeteken.
+folder_subscribe_failed = Kon nie op vouer inteken nie.
+folder_unsubscribe_failed = Kon nie by vouer uitteken nie.
+
+# Accounts
+account_not_added = Rekening nie bygevoeg nie.
+account_added = Rekening bygevoeg: {account}
+account_settings_not_saved = Rekeninginstellings nie gestoor nie.
+account_updated = Rekening opgedateer: {account}
+account_not_removed = Rekening nie verwyder nie.
+account_removed = Rekening verwyder.
+account_removed_with_files = Rekening verwyder. {count} plaaslike lêer(s) uitgevee.
+default_account_failed = Kon nie die verstekrekening instel nie.
+default_account_set = {account} is nou die verstekrekening.
+auto_check_not_saved = Instelling vir outomatiese kontrole nie gestoor nie.
+mute_not_saved = Demp-instelling nie gestoor nie.
+account_muted = {account} gedemp.
+account_unmuted = {account} se demping opgehef.
+export_done = {count} rekening(e) en instellings na {path} uitgevoer.
+import_done = {count} rekening(e) van {path} ingevoer.
+
+# Filters, cache and the background lists
+filters_not_saved = Filters nie gestoor nie.
+filters_saved = Filters gestoor vir {account}.
+filters_checking = Gaan tans {folder} teen jou filters na...
+filters_none_matched = Voer nou uit: geen boodskappe in {folder} het by enige geaktiveerde reël gepas nie.
+filters_run_failed = Kon nie filters uitvoer nie.
+filters_moving = Skuif tans {count} gefilterde boodskap(pe)...
+filters_move_failures = Filters: {count} boodskap(pe) kon nie geskuif word nie.
+filters_moved = Filters het {count} boodskap(pe) uit {folder} geskuif.
+filters_move_failed = Kon nie gefilterde boodskappe skuif nie.
+cache_not_cleared = Kas nie uitgevee nie.
+auto_cache_cleanup = Outomatiese kasopruiming: boodskappe ouer as {age}.
+phishing_update_failed = Kon nie die uitvissingslys opdateer nie: {error}
+blocklist_update_failed = Kon nie die blokkeerlys opdateer nie: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Maak eers 'n boodskap oop, gebruik dan Stoor as.
+saving_message = Stoor tans boodskap...
+save_file_failed = Kon nie die lêer stoor nie.
+save_fetch_failed = Kon nie die boodskap om te stoor haal nie.
+open_message_first_print = Maak eers 'n boodskap oop, gebruik dan Druk.
+open_message_first_preview = Maak eers 'n boodskap oop, gebruik dan Drukvoorskou.
+refreshing_accounts = Herlaai tans {count} rekening(e)...
+emptying_trash = Maak tans die Snippermandjie leeg vir {account}...
+trash_already_empty = Die Snippermandjie was reeds leeg.
+trash_emptied = Snippermandjie leeggemaak: {count} boodskap(pe) uitgevee.
+empty_trash_failed = Kon nie die Snippermandjie leegmaak nie.
+emptying_junk = Maak tans Gemors leeg vir {account}...
+junk_already_empty = Gemors was reeds leeg.
+junk_emptied = Gemors leeggemaak: {count} boodskap(pe) uitgevee.
+junk_emptied_prefix = Gemors leeggemaak:
+junk_part_purged = {count} uitgevee
+junk_part_in_trash = {count} na die Snippermandjie geskuif maar nie as verwyder bevestig nie, kyk in die Snippermandjie
+junk_part_not_moved = {count} nie na die Snippermandjie geskuif nie, steeds in Gemors
+empty_junk_failed = Kon nie Gemors leegmaak nie.
+back_online = Weer aanlyn.
+offline_sync_running = Sinkroniseer tans {account} vir aflyn gebruik...
+offline_sync_failed = Aflyn-sinkronisering het misluk: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Kies of maak eers 'n boodskap oop.
+select_or_open_message_ctrl_u = Kies of maak eers 'n boodskap oop, druk dan Ctrl+U.
+no_sender_address = Hierdie boodskap het geen senderadres om by te voeg nie.
+contact_added = {contact} by jou adresboek gevoeg.
+contact_already_there = {contact} is reeds in jou adresboek.
+privacy_saved = Privaatheidsinstellings gestoor. Maak 'n boodskap weer oop om dit toe te pas.
+message_font_size = Boodskaplettergrootte: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Skrap tans boodskap permanent
+deleting_many = Skrap tans {count} boodskappe permanent
+trashing_one = Skuif tans boodskap na die Snippermandjie
+trashing_many = Skuif tans {count} boodskappe na die Snippermandjie
+undo_partly_restored = {action} ontdoen, maar {count} kon nie herstel word nie -- hulle is dalk intussen geskuif, geskrap of het verval.
+moves_report = {action}: {moved} van {total} boodskap(pe) geskuif.
+moves_report_failed = Nie geskuif nie, steeds in die oorspronklike vouer: {count}.
+
+tray_tooltip_one = ZBox — 1 ongelese boodskap
+tray_tooltip_many = ZBox — {count} ongelese boodskappe
+account_unreachable = {account} kon nie bereik word nie. Outomatiese kontroles daarvoor word vir {minutes} minuut/minute gestaak.
+bulk_copy_failed = Kon nie boodskap(pe) kopieer nie.
+bulk_copy_failed_status = Kopiëring het misluk.
+bulk_loading_archive = Boodskap(pe) laai nog -- probeer binnekort weer argiveer.
+bulk_loading_delete = Boodskap(pe) laai nog -- probeer binnekort weer skrap.
+bulk_loading_flag = Boodskap(pe) laai nog -- probeer binnekort weer vlag.
+bulk_loading_generic = Boodskap(pe) laai nog -- probeer binnekort weer.
+bulk_none = Geen boodskap gekies nie.
+bulk_none_archive = Geen boodskap gekies om te argiveer nie.
+bulk_none_delete = Geen boodskap gekies om te skrap nie.
+bulk_none_junk = Geen boodskap gekies om as gemors te merk nie.
+bulk_none_not_junk = Geen boodskap gekies om as nie gemors nie te merk nie.
+delete_refused_still = Die bediener het geweier om dit te skrap; dit is steeds in {folder}.
+delete_refused_trash = Dit is in die Snippermandjie, maar die bediener het geweier om dit permanent te skrap.
+delete_resume_failed = {count} boodskap(pe) van 'n vroeëre skrapping kon nie geskrap word nie.
+done_perm_delete_one = Boodskap permanent geskrap.
+done_trash_one = Boodskap na die Snippermandjie geskuif.
+filters_applied = Filters toegepas op {count} boodskap(pe) in {folder}.
+filters_failed = Kon nie filters uitvoer nie.
+filters_running = Voer tans filters uit op {folder}
+flag_failed = Kon nie vlag(ge) opdateer nie.
+flag_updated = Vlag(ge) opgedateer.
+folder_verb_subscribing = Teken in op
+folder_verb_unsubscribing = Teken uit by
+mark_read_failed = Kon nie boodskap(pe) as gelees merk nie.
+mark_unread_failed = Kon nie boodskap(pe) as ongelees merk nie.
+notify_new_mail_body = {count} nuwe {noun} vir {name}.
+notify_new_mail_title = Nuwe pos
+notify_noun_many = boodskappe
+notify_noun_one = boodskap
+report_done = {verb} {done} van {count} boodskap(pe).
+report_verb_deleted = Geskrap
+report_verb_permanent = Permanent geskrap
+running_copy_many = Kopieer tans {count} boodskappe
+running_copy_one = Kopieer tans boodskap
+running_junk_many = Merk tans {count} boodskappe as gemors
+running_junk_one = Merk tans as gemors
+running_move_many = Skuif tans {count} boodskappe
+running_move_one = Skuif tans
+running_not_junk_many = Merk tans {count} boodskappe as nie gemors nie
+running_not_junk_one = Merk tans as nie gemors nie
+running_perm_delete_one = Skrap tans boodskap permanent...
+running_read_many = Merk tans {count} boodskappe as gelees
+running_read_one = Merk tans as gelees
+running_trash_one = Skuif tans boodskap na die Snippermandjie...
+running_unread_many = Merk tans {count} boodskappe as ongelees
+running_unread_one = Merk tans as ongelees
+settings_saved_no_startup = Instellings gestoor. Kon nie die Windows-opstartinskrywing opdateer nie.
+settings_saved_status = Instellings gestoor.
+spam_blocked_sender = Geblokkeerde sender
+spam_possible_phishing = Moontlike uitvissing
+undo_running_many = Ontdoen tans {action} ({count} boodskappe)
+undo_running_one = Ontdoen tans {action}
+mark_folder_read_failed = Kon nie die vouer as gelees merk nie.
+marking_folder_read = Merk tans vouer as gelees...
+upd_ready_at_exit = 'n Opdatering is reeds afgelaai. Dit sal geïnstalleer word wanneer jy ZBox afsluit.
+upd_checking = Kyk tans vir opdaterings...
+upd_up_to_date = ZBox is op datum.
+upd_available_source = ZBox {version} is beskikbaar. Hierdie kopie loop vanaf bronkode, dus werk dit met git op.
+upd_check_failed = Kon nie vir opdaterings kyk nie: {error}
+opening_attachment = Maak tans {filename} oop...
+loading_headers = Laai tans opskrifte...
+offline_inbox_only = Slegs die Inkassie en die Argief word vir aflyn gebruik gehou.
+offline_sync_done_inbox = {count} boodskap(pe) in Inkassie en Argief vir aflyn gebruik gesinkroniseer.
+working_offline = Werk aflyn: wys die laaste gesinkroniseerde kopie van Inkassie/Gestuur/Konsepte.
+emptying_trash_all = Maak tans die Snippermandjie vir elke rekening leeg...
+trash_emptied_all = Snippermandjie in {accounts} rekening(e) leeggemaak: {count} boodskap(pe) uitgevee.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Lêer
+bar_edit = &Wysig
+bar_view = &Aansig
+bar_message = &Boodskap
+bar_compose = &Skryf
+bar_tools = &Gereedskap
+bar_help = &Hulp
+
+# File
+file_new = Nuut
+file_new_message = Boodskap
+file_new_account = E-posrekening...
+file_open_saved_message = Open gestoorde boodskap...
+file_close = Sluit
+file_save_message_as = Stoor boodskap as...
+file_get_new_for = Kry nuwe boodskappe vir
+file_get_new_all = Alle rekeninge
+file_get_new_current = Huidige rekening
+file_offline = Aflyn
+file_work_offline = Werk aflyn
+file_sync_now = Sinkroniseer nou
+file_print = Druk...
+file_print_preview = Drukvoorskou...
+file_exit = Sluit af
+
+# Edit
+edit_undo = Ontdoen
+edit_select_all = Merk alles
+edit_find_messages = Vind boodskappe...
+
+# Message
+message_reply = Antwoord
+message_reply_all = Almalantwoord
+message_forward = Aanstuur
+message_archive = Argiveer
+message_delete = Skrap
+message_delete_permanently = Skrap permanent
+message_mark = Merk
+mark_read = Gelees
+mark_unread = Ongelees
+mark_flagged = Gevlag
+mark_junk = Gemors
+mark_not_junk = Nie gemors nie
+message_watch_thread = Hou draad dop
+message_ignore_thread = Ignoreer draad
+message_open_conversation = Open boodskap in gesprek
+message_show_related = Wys verwante boodskappe
+message_add_sender_to_address_book = Voeg sender by adresboek
+message_announce_sender = Kondig sender aan
+message_announce_copy_sender = Kondig sender aan en kopieer adres
+
+# View
+view_folders = Vouers
+folders_all = Alle
+folders_unified = Verenigd
+folders_jump_inbox = Spring na Inkassie-boodskaplys
+folders_configure_unified = Stel verenigde vouers op...
+view_sort_by = Sorteer volgens
+sort_date = Datum
+sort_subject = Onderwerp
+sort_from = Van
+sort_descending = Dalend (nuutste eerste)
+sort_ascending = Stygend (oudste eerste)
+view_threads = Drade
+threads_all = Alle
+threads_watched = Dopgehoue drade
+threads_ignored = Geïgnoreerde drade
+threads_expand_all = Vou alle drade uit
+threads_collapse_all = Vou alle drade in
+view_load_more = Laai meer boodskappe
+view_toggle_message_view = Wissel tussen teks- en HTML-aansig
+view_show_remote_content = Wys afstandinhoud in hierdie boodskap
+view_message_zoom = Boodskapvergroting
+zoom_increase = Vergroot boodskaplettergrootte
+zoom_decrease = Verklein boodskaplettergrootte
+zoom_reset = Herstel boodskaplettergrootte
+
+# Compose
+compose_send = &Stuur
+compose_save_draft = &Stoor konsep
+compose_attach = &Heg lêer aan...
+compose_fmt_bold = &Vet
+compose_fmt_italic = &Kursief
+compose_fmt_strike = &Deurhaal
+compose_fmt_bullet = &Koeëllys
+compose_fmt_number = &Genommerde lys
+compose_fmt_quote = &Aanhaling
+compose_fmt_code = &Kode
+compose_fmt_heading1 = &Opskrif
+compose_link = &Voeg skakel in...
+compose_formatting = &Formatering hier
+compose_spellcheck = &Speltoets...
+compose_spellcheck_next = &Volgende spelfout
+compose_spellcheck_add = &Voeg woord by woordeboek
+compose_insert_signature = &Voeg handtekening in
+compose_paste_quotation = &Plak as aanhaling
+compose_word_count = &Woordtelling
+compose_preview = &Voorskou...
+compose_diagnostics = &Skryf-diagnose...
+compose_edit_signature = &Wysig handtekening...
+compose_hotkeys_diagnostic = &Sleutelkombinasie-diagnose
+
+# Tools
+tools_account_settings = Rekening- en identiteitopstelling...
+tools_mute_account = Demp rekening
+tools_pause_auto_check = Staak outomatiese kontrole
+tools_disable_account = Deaktiveer rekening
+tools_remove_account = Verwyder rekening...
+tools_address_book = Adresboek...
+tools_message_filters = Boodskapfilters...
+tools_import = Voer rekeninge en instellings in...
+tools_export = Voer rekeninge en instellings uit...
+tools_cache_cleanup = Kasopruimingopstelling...
+tools_privacy = Privaatheid en inhoudblokkering...
+tools_settings = Opstelling...
+
+# Help
+help_shortcuts = Sleutelbordkortpaaie...
+help_about = Oor ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Nuwe rekening...
+tree_account_settings = Rekening- en identiteitopstelling...
+tree_mute_account = Demp rekening
+tree_pause_auto_check = Staak outomatiese kontrole
+tree_enable_account = Aktiveer rekening
+tree_disable_account = Deaktiveer rekening
+tree_set_default_account = Stel as verstekrekening
+tree_remove_account = Verwyder rekening...
+tree_refresh = Herlaai
+tree_new_folder = Nuwe vouer...
+tree_empty_trash = Maak snippermandjie leeg
+tree_empty_junk = Maak gemors leeg
+tree_rename_folder = Hernoem vouer...
+tree_delete_folder = Skrap vouer...
+tree_subscribe_folder = Teken in op vouer
+tree_unsubscribe_folder = Teken uit by vouer
+
+# The message list menu, opened the same two ways
+list_select_all = Merk alles
+list_reply = Antwoord
+list_reply_all = Almalantwoord
+list_forward = Aanstuur
+list_mark = Merk
+list_archive = Argiveer
+list_delete_to_trash = Skrap (skuif na snippermandjie)
+list_delete_permanently = Skrap permanent
+list_move_to = Skuif na
+list_copy_to = Kopieer na
+
+# The notification area icon
+tray_open = &Maak ZBox oop
+tray_unread_one = 1 ongelese boodskap
+tray_unread_many = {count} ongelese boodskappe
+tray_no_unread = Geen ongelese boodskappe nie
+tray_settings = &Opstelling...
+tray_quit = &Sluit ZBox af
+
+# The formatting menu inside a message you are writing
+format_bold = &Vet
+format_italic = &Kursief
+format_strike = &Deurhaal
+format_bullet = &Koeëllys
+format_number = &Genommerde lys
+format_quote = &Aanhaling
+format_code = &Kode
+format_heading1 = &Opskrif
+format_insert_link = &Voeg skakel in...
+format_formatting_here = &Formatering hier
+tools_enable_account = Aktiveer rekening
+edit_undo_action = Ontdoen: {action}
+tree_mark_folder_read = Merk vouer as gelees
+help_updates = &Opdaterings
+help_check_updates = &Kyk nou vir opdaterings...
+help_update_settings = &Opdateringopstelling...
+help_releases_page = &Maak die vrystellingsbladsy oop
+message_attachments = Aanhegsels
+message_no_attachments = Geen aanhegsels
+message_save_all_attachments = Stoor alle aanhegsels
+view_full_headers = Volledige opskrifte
+folders_go_to_tree = Gaan na vouerlys
+list_block_sender = Blokkeer hierdie sender
+list_unblock_sender = Deblokkeer hierdie sender
+sort_received = Ontvang
+sort_star = Vlag
+sort_order_received = Ontvangsvolgorde
+sort_priority = Prioriteit
+sort_recipient = Ontvanger
+sort_correspondents = Korrespondente
+sort_size = Grootte
+sort_read = Gelees
+sort_junk_status = Gemorsstatus
+sort_attachments = Aanhegsels
+sort_threaded = Gedraad
+sort_unthreaded = Ongedraad
+view_columns = Kolomme
+tools_openpgp_keys = OpenPGP-sleutelbestuurder
+tools_smime_certs = S/MIME-sertifikaatbestuurder
+compose_pgp_encrypt = &Enkripteer
+compose_pgp_sign = &Onderteken digitaal
+compose_pgp_attach_key = &Heg my openbare sleutel aan
+
+[dialogs]
+set_theme_restart_confirm = Herbegin ZBox om die temaverandering toe te pas?
+set_ui_theme_label = &Koppelvlaktema:
+set_ui_theme_note = Kleure vir kieslyste, lyste, dialoë en die Teks-boodskapaansig. Volg stelsel gebruik Windows se eie ligte of donker toepassingsmodus. Middernagblou, Warm donker en Sagte kontras is donker temas met sagter kleure. HTML-boodskappe behou hul eie kleure en Windows Hoë kontras kry altyd voorrang. Tree in werking die volgende keer wat ZBox begin.
+set_theme_system = Volg stelsel
+set_theme_light = Lig
+set_theme_dark = Donker
+set_theme_midnight = Middernagblou
+set_theme_warm = Warm donker
+set_theme_soft = Sagte kontras
+set_language_restart_confirm = Herbegin ZBox om taalverandering toe te pas?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Kontak Harith
+title_identity = Identiteit
+title_show_password = Wys wagwoord
+title_missing_information = Ontbrekende inligting
+title_unsupported_provider = Nie-ondersteunde verskaffer
+title_test_connection = Toets verbinding
+title_new_contact = Nuwe kontak
+title_edit_contact = Wysig kontak
+title_delete_contact = Skrap kontak
+title_import_contacts = Voer kontakte in
+title_export_contacts = Voer kontakte uit
+title_rename_group = Hernoem groep
+title_delete_group = Skrap groep
+title_send = Stuur
+title_send_failed = Stuur het misluk
+title_attach_file = Heg lêer aan
+title_save_draft = Stoor konsep
+title_documentation = ZBox-dokumentasie
+title_open_link = Open skakel
+title_filter_rule = Filterreël
+title_master_password = Hoofwagwoord
+title_attachment_saved = Aanhegsel gestoor
+title_attachments_saved = Aanhegsels gestoor
+title_download_failed = Aflaai het misluk
+title_print = Druk
+title_print_preview = Drukvoorskou
+title_related_messages = Verwante boodskappe
+title_search = Soek
+title_unlock = Ontsluit
+title_unlock_methods = Ontsluitmetodes
+title_desktop_shortcut = Werkskermkortpad
+title_spell_check = Speltoets
+title_plain_text_password = Skoonteks-wagwoord gevind
+title_startup_error = ZBox-opstartfout
+
+identity_email_required = Voer 'n e-posadres in.
+
+wizard_password_not_shown = Die wagwoord kan nie op hierdie stelsel gewys word nie. Dit word steeds normaal getik en gestoor.
+wizard_email_required = Voer 'n geldige e-posadres in voordat jy voortgaan.
+wizard_test_needs_server = Voer 'n aanmeld-e-pos en inkomende bediener in voordat jy toets.
+wizard_test_succeeded = Verbinding geslaag. {count} boodskap(pe) in Inkassie gevind.
+
+contact_email_required = 'n E-posadres word vereis.
+contact_select_to_edit = Kies 'n kontak om te wysig.
+contact_select_to_delete = Kies 'n kontak om te skrap.
+contact_delete_confirm = Skrap {label} uit die adresboek?
+contacts_import_choose_file = Kies 'n .vcf- (vCard) of .csv-lêer om in te voer.
+contacts_imported = {count} kontak(te) ingevoer.
+contacts_import_empty = Geen kontakte is in daardie lêer gevind nie.
+contacts_none_to_export = Daar is geen kontakte om uit te voer nie.
+contacts_exported = {count} kontak(te) uitgevoer na:\n{path}
+group_name_exists = 'n Groep met die naam "{name}" bestaan reeds.
+group_delete_confirm = Skrap die groep "{name}"? Sy kontakte word nie geskrap nie.
+
+send_no_account = Voeg 'n rekening by voordat jy stuur, of kies een in Van.
+send_no_recipient = Voer ten minste een ontvanger in Aan in.
+draft_no_account = Voeg 'n rekening by voordat jy 'n konsep stoor, of kies een in Van.
+attached_file = Aangeheg: {name}\n\n{count} lêer(s) sal aangeheg word wanneer jy stuur.
+
+documentation_copied = Die volledige ZBox-dokumentasie is na die knipbord gekopieer.
+
+filter_rule_needs_name = Gee hierdie reël 'n naam.
+filter_rule_needs_condition = Stel ten minste een voorwaarde (Van, Aan of Onderwerp).
+filter_rule_needs_action = Kies ten minste een aksie: merk as gelees, vlag, of skuif na 'n vouer.
+
+master_password_set = Hoofwagwoord gestel. Hou dit êrens veilig: ZBox vra dit een keer op elke nuwe rekenaar, en dit kan nie herstel word as dit verlore raak nie.
+master_password_offer = Sonder 'n hoofwagwoord kan die gestoorde rekeningwagwoorde slegs op hierdie rekenaar en hierdie Windows-rekening gelees word. Kopieer jy ZBox elders heen, moet elke rekening weer aanmeld.\n\nStel nou een?
+
+attachment_saved = Aanhegsel gestoor in:\n{path}
+attachments_saved = {count} aanhegsels gestoor in:\n{path}
+
+shortcut_created_settings = Kortpad geskep:\n{path}\n\nDit begin ZBox vanaf:\n{base}
+
+spellcheck_no_dictionary = Die speltoetswoordeboek ontbreek, dus is speltoets nie in hierdie kopie van ZBox beskikbaar nie.
+spellcheck_none_found = Geen spelfoute gevind nie.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Stel 'n toegangsleutel op hierdie rekenaar op en vergeet die een wat vanaf 'n ander rekenaar gestoor is?\n\nWindows sal vra dat jy met Hello bevestig. Die ou toegangsleutel wat op die ander rekenaar gelaat is, word daar nie aangeraak nie en sal bly werk as jy hierdie vouer terugneem, maar dit sal weer opgestel moet word.
+unlock_replace_passkey_many = Stel 'n toegangsleutel op hierdie rekenaar op en vergeet die {count} wat vanaf ander rekenaars gestoor is?\n\nWindows sal vra dat jy met Hello bevestig. Die ou toegangsleutels wat op die ander rekenaar gelaat is, word daar nie aangeraak nie en sal bly werk as jy hierdie vouer terugneem, maar hulle sal weer opgestel moet word.
+unlock_method_works = Daardie metode werk.
+
+plain_text_password_found = data\config\himalaya.toml bevat steeds 'n skoonteks-wagwoord (auth.raw) van 'n ouer rekeningopstelling.\n\nVerwyder daardie rekening en voeg dit weer by, of skrap data\config\himalaya.toml sodat dit hergenereer word met die veilige geloofsbriefstoor.
+
+# main_frame's titles.
+title_account_list_unavailable = Rekeninglys nie beskikbaar nie
+title_open_message = Open boodskap
+title_run_filters = Voer filters uit
+title_clear_cache = Vee aflyn-boodskapkas uit
+title_remove_account = Verwyder rekening
+title_new_folder = Nuwe vouer
+title_rename_folder = Hernoem vouer
+title_delete_folder = Skrap vouer
+title_subscribe = Teken in
+title_unsubscribe = Teken uit
+title_open_saved_message = Open gestoorde boodskap
+title_save_message_as = Stoor boodskap as
+title_empty_trash = Maak snippermandjie leeg
+title_empty_junk = Maak gemors leeg
+title_synchronize_offline = Sinkroniseer vir aflyn
+title_export_accounts = Voer rekeninge en instellings uit
+title_import_accounts = Voer rekeninge en instellings in
+title_show_related = Wys verwante boodskappe
+title_reply = Antwoord
+title_forward = Aanstuur
+title_undo = Ontdoen
+title_delete_permanently = Skrap permanent
+title_delete = Skrap
+title_copy_to = Kopieer na
+title_archive = Argiveer
+title_accounts_locked = Rekeninge gesluit
+
+select_account_first = Kies eers 'n rekening in die boom.
+select_account_or_folder = Kies eers 'n rekening of vouer.
+filters_left_behind = {count} boodskap(pe) het by 'n filter gepas maar is steeds in {folder}.
+cache_clear_confirm = Vee die aflyn-boodskapkas vir elke rekening uit?\n\nDit skrap slegs ZBox se plaaslike kopieë. Niks word van enige posbediener verwyder nie, en boodskappe word weer afgelaai soos jy hulle nodig het.
+account_remove_confirm = Verwyder {name} ({address})?\n\nPos op die bediener word nie geskrap nie.\nDie kopieë wat na hierdie rekenaar afgelaai is, word geskrap.\nDie gestoorde wagwoord word geskrap.
+folder_delete_confirm = Skrap die vouer "{folder}" en alles daarin vir {address} permanent?\n\nDit kan nie ontdoen word nie.
+empty_trash_confirm = Skrap alle boodskappe in die Snippermandjie vir {address} permanent?\n\nDit kan nie ontdoen word nie.
+empty_junk_confirm = Skrap alle boodskappe in Gemors vir {address} permanent?\n\nDit kan nie ontdoen word nie.
+sync_select_account = Kies 'n rekening (nie 'n Verenigde vouer nie) om vir aflyn gebruik te sinkroniseer.
+accounts_imported = {count} rekening(e) ingevoer:\n\n{names}\n\nWagwoorde word nooit uitgevoer nie, en die geënkripteerde wagwoordstoor is spesifiek tot hierdie Windows-gebruikerrekening, dus moet elke ingevoerde rekening se wagwoord een keer via Gereedskap > Rekening- en identiteitopstelling ingevoer word voordat dit kan koppel.
+accounts_import_none = Geen rekeninge is in hierdie lêer gevind nie. Instellings is steeds ingevoer, as die lêer enige gehad het.
+delete_permanently_confirm_one = Skrap hierdie boodskap permanent? Dit slaan die Snippermandjie-vouer oor en kan nie ontdoen word nie.
+accounts_locked = Die gestoorde rekeningwagwoorde is op 'n ander rekenaar geskryf, dus kan hulle nie hier gelees word nie.\n\nElke rekening sal weer by sy posbediener moet aanmeld. Om dit volgende keer te vermy, stel 'n hoofwagwoord uit Opstelling, Program- en datasekuriteit op die rekenaar waar die rekeninge reeds werk.
+master_password_remove_confirm = Verwyder die hoofwagwoord? Die gestoorde rekeningwagwoorde sal dan slegs op hierdie rekenaar en hierdie Windows-rekening leesbaar wees. Kopieer jy ZBox daarna elders heen, sal elke rekening weer moet aanmeld.\n\nVerwyder dit nou?
+shortcut_offer = Plaas 'n ZBox-kortpad op die werkskerm?\n\nDit sal hierdie ZBox-vouer begin:\n{path}\n\n'n Kortpad teken presies hierdie plek aan. As jy die ZBox-vouer later skuif, maak Opstelling, Kennisgewingarea en venster oop en kies weer Skep werkskermkortpad om dit na die nuwe plek te laat wys.
+shortcut_created = Kortpad geskep:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Vertoonnaam
+form_email_address = E-posadres
+form_your_name = Jou naam
+form_login_email = Aanmeld-e-pos
+form_password = Wagwoord
+srv_imap_host = Inkomende (IMAP) bediener
+srv_imap_port = Inkomende poort
+srv_imap_encryption = Inkomende enkripsie
+srv_smtp_host = Uitgaande (SMTP) bediener
+srv_smtp_port = Uitgaande poort
+srv_smtp_encryption = Uitgaande enkripsie
+
+acct_login_email_label = Aanmeld-e-pos (word gebruik om aan te meld)
+acct_new_password_label = Nuwe wagwoord (los leeg om die huidige te behou)
+acct_new_password_name = Nuwe wagwoord
+acct_identity_email_label = E-posadres (word gebruik om te stuur en te ontvang)
+acct_identities_label = Bykomende identiteite (aliasse)
+acct_identities_name = Bykomende identiteite
+acct_add_identity = &Voeg identiteit by...
+acct_edit_identity = &Wysig identiteit...
+acct_remove_identity = &Verwyder identiteit
+acct_signature = Handtekening
+acct_edit_signature = &Wysig handtekening...
+acct_junk_folder = Gemorsvouer
+acct_account_status = Rekeningstatus
+acct_disable_account = Deaktiveer hierdie rekening
+acct_default_account = Verstekrekening
+acct_set_default = Stel as verstekrekening
+acct_notifications = Nuwe pos-kennisgewings
+acct_mute_notifications = Demp kennisgewings vir hierdie rekening
+acct_server_settings = Bedienerinstellings
+
+wiz_before_you_start = Voordat jy begin
+wiz_notice_name = Belangrike kennisgewing
+wiz_google_instructions = &Open Google-toepassingwagwoord-instruksies
+wiz_intro = Jou naam en e-posadres
+wiz_login_same = Aanmeld-e-pos is dieselfde as die e-posadres hierbo
+wiz_show_password = &Wys wagwoord
+wiz_preset_applied = Voorafinstelling toegepas vir {name}.
+wiz_summary_name = Rekeningopsomming
+wiz_review = Hersien, klik dan Voltooi om hierdie rekening te stoor.
+wiz_test_connection = &Toets verbinding
+wiz_testing = Toets tans verbinding...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Aktiveer ontfoutlogging, gestoor in: data\logs)
+set_language_label = &Koppelvlaktaal:
+set_language_label_only_english = &Koppelvlaktaal: (slegs Engels)
+set_headers_checkbox = &Wys boodskapopskrifte bo 'n oop boodskap
+set_zoom_label = Boodskaplettertipe en vergroting:
+set_font_override = &Oorheers die verstek-boodskaplettergrootte
+set_font_size_name = Boodskaplettergrootte (punte)
+set_reading_font_name = Leeslettertipe
+set_reading_font_label = Leeslettertipe (leeg vir verstek):
+set_view_label = Boodskapliggaam-aansig wanneer 'n boodskap oopgemaak word:
+set_view_text = Teks
+set_view_html = HTML (weergegee)
+set_engine_label = HTML-weergawe-enjin:
+set_engine_edge = Edge / WebView2 (moderne weergawe)
+set_engine_ie = Ouer MSHTML (beste skermleserondersteuning)
+set_runtime_label = WebView2-looptyd:
+set_runtime_auto = Outomaties — gebruik die saamgebundelde looptyd indien teenwoordig (aanbeveel)
+set_runtime_fixed = Slegs saamgebundelde vaste weergawe
+set_runtime_evergreen = Stelselwye looptyd (deur Windows opgedateer)
+set_sr_box = Skermleser-aankondigingsbeheer
+set_silence_label = HTML-skermleser-stiltehouding:
+set_silence_name = HTML-skermleser-stiltehouding in millisekondes
+set_focus_delay_label = WebView-toeganklikheidsfokusvertraging:
+set_focus_delay_name = WebView-toeganklikheidsfokusvertraging, vlak 1 tot 10
+set_announce_label = Aankondigingsduur:
+set_announce_name = Aankondigingsduur in millisekondes
+set_announce_actions = &Spreek aankondigings uit vir aksies, nuwe pos en kennisgewings
+set_attachment_dir_label = Aanhegselstoorvouer:
+set_attachment_dir_name = Aanhegselstoorvouer
+set_browse = &Blaai…
+set_autosave_label = Konsep-outostoorinterval:
+set_autosave_name = Konsep-outostoorinterval in sekondes
+set_auto_purge_label = Skrap ou Snippermandjie en Gemors outomaties:
+set_auto_purge_name = Skrap Snippermandjie en Gemors outomaties na soveel dae
+set_bare_keys = &Aktiveer enkelsleutel-kortpaaie S (vlag), A (argiveer), J (merk as gemors)/Shift+J (merk as nie gemors nie), W (hou draad dop), K (ignoreer draad), M (skuif)/Shift+M (skuif volgens vouernaam) en C (kopieer na) in die boodskaplys
+set_sound_label = Klank en kennisgewings:
+set_sounds_enabled = &Speel kennisgewingklanke
+set_desktop_notifications = &Wys werkskermkennisgewings vir nuwe pos
+set_theme_label = Verander klanktema:
+set_theme_label_only_default = Verander klanktema: (slegs verstektema)
+set_security_box = Program- en datasekuriteit
+set_lock_on_quit = &Sluit ZBox wanneer dit heeltemal afgesluit word
+set_private_mode = &Privaatmodus: hou geen pos op hierdie rekenaar of skyf nie
+set_unlock_methods_button = &Ontsluitmetodes…
+set_master_password_button = &Hoofwagwoord…
+set_tray_label = Kennisgewingarea en venster:
+set_minimize_to_tray = &Maak klein na die kennisgewingarea
+set_close_to_tray = &Sluit na die kennisgewingarea
+set_stay_maximized = &Hou ZBox altyd gemaksimeer
+set_run_at_startup = &Laat ZBox loop wanneer Windows begin
+set_desktop_shortcut_button = &Skep werkskermkortpad
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Ontfoutlogging help om probleme te diagnoseer as iets verkeerd loop. Om dit af te skakel stop die skryf van nuwe inskrywings; bestaande loglêers word nie geskrap nie. Tree in werking die volgende keer wat ZBox begin.
+set_language_note = Tree in werking die volgende keer wat ZBox begin. Taallêers is gewone tekslêers in ZBox se lang-vouer, langs die sounds-vouer. Om een by te voeg, kopieer die en-vouer, hernoem die kopie en die .lang-lêer daarin na jou taalkode, en vertaal die teks regs van elke gelykteken. Enigiets wat nog nie vertaal is nie, word in Engels uitgespreek in plaas van stil gelaat, dus is 'n halfklaar lêer veilig om te gebruik.
+set_headers_note = Van, Aan, Kopie, Datum en Onderwerp, bo die boodskapliggaam gewys in beide Teks- en HTML-aansig. Daarsonder is daar geen manier om van binne 'n boodskap te sien wie dit gestuur het sonder om die oortjie toe te maak en terug te gaan na die lys nie. Fokus land steeds in die boodskapliggaam; die opskrifblok is een Shift+Tab ver. Tree in werking die volgende keer wat 'n boodskap oopgemaak word.
+set_zoom_note = Maak die oop boodskap se eie teks groter of kleiner, onafhanklik van die res van ZBox en van Windows se eie skermskalering. Geld vir beide die Teks- en HTML-aansigte. "Leeslettertipe" dwing opsioneel 'n spesifieke lettertipe af (bv. Consolas, OpenDyslexic) vir die boodskapliggaam; los dit leeg om die normale lettertipe te behou. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 in die Aansig-kieslys verhoog, verlaag of herstel slegs die lettergrootte sonder om hierdie dialoog oop te maak, en pas onmiddellik toe op elke oop boodskap. Veranderinge wat hier gemaak word, pas ook onmiddellik toe op OK.
+set_view_note = HTML is die verstek. Dit wys die boodskap soos dit gestuur is, en word deur NVDA en JAWS gelees: wanneer 'n HTML-bladsy oopgaan, demp ZBox die blaaier se eie aankondiging, plaas die leeskursor op die eerste reël van die boodskap, en hou ZBox se eie kortpaaie binne die bladsy werkend, insluitend F6 om fokus weer daaruit te skuif. Teks wys dieselfde boodskap as gewone, ongeformateerde teks in 'n gewone wysigbeheer -- geen prente, geen uitleg, en niks wat daarvan afhang dat 'n blaaierenjin geïnstalleer is nie. Druk Ctrl+B binne 'n oop boodskap om in enige rigting te wissel.
+set_engine_note = Edge gee moderne CSS weer maar laat die bladsy in 'n aparte proses loop, en gee sy inhoud slegs deur 'n koppelvlak aan 'n skermleser wat wxPython nie kan bereik nie -- dus kan die boodskap met niks leesbaars daarin oopgaan. Ouer MSHTML is die enjin wat Outlook Express en Windows Mail gebruik het: dit loop in-proses en publiseer 'n normale dokumentboom, so NVDA en JAWS lees dit in blaaimodus soos enige webbladsy. Tree in werking die volgende keer wat 'n boodskap oopgemaak word.
+set_runtime_note = Die stelselwye looptyd word deur Windows Update gediens, dus kan die enjin wat jou pos lees sonder kennisgewing verander -- so kan 'n werkende HTML-boodskapaansig breek op 'n masjien waar niks aan ZBox verander het nie. 'n Saamgebundelde kopie in die deps-vouer pen die presiese weergawe vas waarmee ZBox getoets is. Voer tools\get_webview2.bat uit om een te installeer. As geen saamgebundelde kopie teenwoordig is nie, gebruik ZBox in elk geval die stelselwye looptyd, dus begin dit altyd. Tree in werking die volgende keer wat ZBox begin.
+set_sr_intro = Hoeveel ZBox jou skermleser laat sê terwyl 'n boodskap oopgaan, en hoe lank sy eie uitgesproke aankondigings bly.
+set_silence_note = Wanneer 'n HTML-boodskap oopgaan, kan ZBox 'n sintetiese Ctrl tot 2 sekondes lank vashou om die skermleser se blaaieraankondiging te demp. Die boodskap se onderwerp word reeds as bladsytitel gebruik, wat verhoed dat die base64-URL hardop gelees word, maar die leser kondig steeds die beheer en dokumenttipe oor die begin van die boodskap aan, dus is dit by verstek aan. Kies Af om dit af te skakel, of 'n langer tyd as geklets nog deurglip.
+set_focus_delay_note = Wanneer 'n HTML-boodskap klaar gelaai het, wag ZBox so lank voordat dit dit werklik fokus. WebView2 wat rapporteer dat 'n bladsy gelaai is en Windows wat daardie bladsy se toeganklikheidsboom voltooi, is nie dieselfde oomblik nie; om te vroeg te fokus is wat NVDA/JAWS 'n generiese "Web content page" in plaas van die boodskap laat aankondig, of die boodskap vir 'n tydjie ná oopmaak as onbeskikbaar laat rapporteer. Die keuses wissel van 0,1 sekonde tot 1 sekonde. Kies 'n langer tyd as jy dit steeds hoor, en 'n korter een sodra oopmaak betroubaar voel, vir 'n vinniger oopmaak.
+set_announce_note = Ctrl+U en Ctrl+Shift+U rapporteer die sender in 'n klein dialoog wat homself toemaak, want die statusbalk word slegs gesê as jou skermleser statusbalkrapportering aan het. Dit is hoe lank daardie dialoog bly. Stel dit om by jou spraakspoed te pas: te kort en dit maak in die middel van 'n sin toe, wat die doel verydel. Enige sleutel maak dit vroeër toe; die pyltjiesleutels hou dit oop sodat jy weer kan lees. Wag vir 'n sleutel hou dit oop totdat jy een druk.
+set_attachment_dir_note = Waar "Stoor alles" aanhegsels skryf wanneer 'n boodskap meer as een het. Word outomaties geskep as dit nie bestaan nie. 'n Boodskap met 'n enkele aanhegsel vra steeds waar om dit te stoor, soos voorheen. Los leeg vir die verstek:\n{path}
+set_autosave_note = Hoe gereeld 'n oop skryfoortjie homself in Konsepte stoor terwyl jy skryf. Stoor konsep (Ctrl+S) stoor steeds op aanvraag in elk geval, en om 'n oortjie met ongestoorde skryfwerk toe te maak bied altyd aan om te stoor. Af skakel outostoor af. Minder as 15 sekondes word nie aangebied nie -- dit sou 'n bedienerrondreis wees wat met jou tikwerk meeding.
+set_auto_purge_note = Verwyder boodskappe permanent uit die Snippermandjie en Gemors sodra hulle soveel dae daar gesit het -- dieselfde permanente verwydering wat Maak snippermandjie leeg en Maak gemors leeg op aanvraag uitvoer, outomaties een keer per dag uitgevoer terwyl ZBox oop is. By verstek aan teen 30 dae. Af skakel dit af. Dit kan nie ontdoen word nadat 'n boodskap verwyder is nie.
+set_bare_keys_note = Wanneer aan, wissel die druk van slegs S, A, J, W of K in die boodskaplys die vlag, argiveer, merk die gekose boodskap(pe) as gemors (Shift+J merk hulle as nie gemors nie), of hou die draad waarvan die keuse deel is dop/ignoreer dit, onmiddellik -- Argiveer en Merk as gemors het geen bevestiging en geen ontdoen nie. Om dit af te skakel gee S, A, J, W en K terug aan normale eerste-letter-lysnavigasie. Ctrl+S en Ctrl+Shift+A werk in elk geval voort. Tree onmiddellik in werking.
+set_sounds_note = Kort tone vir vordering, nuwe boodskappe, gestuur, beantwoord of aangestuurde aksies, skrappings en soekresultate. Af deaktiveer elke klank in die toepassing; skermleser- en statusbalkaankondigings word in elk geval nie geraak nie.
+set_desktop_notifications_note = 'n Windows-kennisgewing vir elke nuwe-posbondel, apart van die klank hierbo. Af deaktiveer dit vir elke rekening; 'n individuele rekening kan ook alleen in Rekening- en identiteitopstelling gedemp word.
+set_theme_note = Pasgemaakte temas is vouers wat binne ZBox se sounds-vouer geplaas word, elk met sy eie progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav en none_found.wav. 'n Temalêer wat ontbreek, val terug op die verstekklank.
+set_theme_note_only_default = Pasgemaakte temas is vouers wat binne ZBox se sounds-vouer geplaas word, elk met sy eie progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav en none_found.wav. 'n Temalêer wat ontbreek, val terug op die verstekklank. Slegs "default" is beskikbaar totdat jy nog 'n temavouer byvoeg.
+set_lock_note = ZBox begin dan deur een van jou ontsluitmetodes te vra voordat enige rekening oopgemaak word. Enige een is genoeg: 'n toegangsleutel, 'n sekuriteitsleutel, of die hoofwagwoord. Sluit na die kennisgewingarea is nie afsluit nie en sluit nie weer nie; Lêer > Sluit af en die kennisgewingarea-ikoon se Sluit af doen. As niks geregistreer is nie en geen hoofwagwoord gestel is nie, word die slot oorgeslaan eerder as om jou uit jou eie pos te sluit.
+set_security_note = Die hoofwagwoord is die enigste een van die drie wat enigiets enkripteer: dit is wat hierdie vouer toelaat om sy gestoorde rekeningwagwoorde op 'n ander rekenaar oop te maak. 'n Toegangsleutel of sekuriteitsleutel ontsluit die toepassing slegs op hierdie een. Nie een vervang die hoofwagwoord op 'n rekenaar waarop ZBox nog nie gebruik is nie.
+set_private_mode_note = Boodskappe word van die bediener gelees en slegs in geheue gehou. Geen aflyn-kopieë, gestoorde boodskappe of ontfoutloglêers word gehou nie, en oop aanhegsels en die blaaierdata van HTML-pos word uitgevee wanneer ZBox toemaak. Toemaak beëindig ook elke program wat ZBox begin het, insluitend dié wat 'n aanhegsel wys, maak die knipbord leeg, en hou op om hierdie rekenaar te vertrou tensy privaatmodus daarvandaan aangeskakel is. Windows hou steeds sekere rekords wat geen program kan verwyder nie, soos sy lys van USB-skyfies, die bladsylêer, en antivirus- en netwerklogboeke.
+title_private_mode = Privaatmodus
+private_mode_need_master = Privaatmodus het 'n hoofwagwoord nodig, want slegs die hoofwagwoord maak jou rekeninge oop op 'n rekenaar wat nie joune is nie. Stel een met die Hoofwagwoord-knoppie, skakel dan privaatmodus aan.
+private_mode_enter_master = Voer die hoofwagwoord in om privaatmodus aan te skakel.
+private_mode_confirm = Privaatmodus hou geen kopieë van jou pos op hierdie rekenaar of op die skyf waarvan ZBox loop nie. Om dit aan te skakel skrap ZBox se aflyn-kopieë, gestoorde boodskappe, oop aanhegsels, die blaaierdata van HTML-pos en die ontfoutloglêers. Niks op jou posbedieners word geskrap nie, en jou rekeninge, kontakte en instellings word behou. Skakel privaatmodus aan?
+set_minimize_note = Om ZBox klein te maak versteek sy taakbalkknoppie en laat dit eerder agter die kennisgewingarea-ikoon loop. Linkerklik die ikoon (of Enter/Space wanneer dit sleutelbordfokus het) om die venster terug te bring.
+set_close_note = Die venster se Sluit-knoppie, Alt+F4 en Ctrl+W wat op die Pos-oortjie gedruk word, versteek ZBox na die kennisgewingarea in plaas van om af te sluit. Lêer > Sluit af (Ctrl+Shift+Q) en die kennisgewingarea-ikoon se eie Sluit af-item sluit ZBox in elk geval werklik af, so daar is altyd een sleutelbordroete om af te sluit sonder om die kennisgewingarea aan te raak.
+set_stay_maximized_note = ZBox begin gemaksimeer en word weer gemaksimeer as jy dit ontmaksimeer. Die kieslysbalk, titelbalk en vensterrand word nie geraak nie -- dit is nie 'n randlose volskermmodus nie, so elke Alt-sleutel-kieslyskortpad werk steeds.
+set_run_at_startup_note = Begin ZBox outomaties wanneer jy by Windows aanmeld, direk in die kennisgewingarea oopgemaak eerder as om sy venster te wys. Tree onmiddellik in werking, nie net by die volgende begin nie.
+set_desktop_shortcut_note = Plaas 'n ZBox-kortpad op jou werkskerm en vervang een wat reeds daar is. 'n Kortpad stoor die presiese ligging van hierdie ZBox-vouer, dus as jy ZBox elders heen skuif of kopieer, druk dit weer op die nuwe kopie om die werkskermkortpad daarna te laat wys. Tree onmiddellik in werking en wag nie vir OK nie.
+
+# The Address Book, its contact form and its groups.
+ab_name = Naam
+ab_phone = Foon
+ab_notes = Notas
+ab_heading = Adresboek
+ab_contacts = Kontakte
+ab_new = &Nuut...
+ab_edit = &Wysig...
+ab_delete = &Skrap
+ab_import = &Voer in...
+ab_export = &Voer uit...
+ab_groups_label = Groepe (possery)
+ab_groups_name = Groepe
+ab_new_group = &Nuwe groep...
+ab_rename_group = &Hernoem groep...
+ab_delete_group = &Skrap groep
+ab_manage_members = &Bestuur lede...
+ab_all_contacts = Alle kontakte
+ab_add_member = Voeg by >>
+ab_remove_member = << Verwyder
+ab_members_of = Lede van {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Nie in woordeboek nie:
+sp_not_in_dictionary_name = Nie in woordeboek nie
+sp_in_this_line_label = In hierdie reël:
+sp_in_this_line_name = In hierdie reël
+sp_suggestions_label = &Voorstelle:
+sp_suggestions_name = Voorstelle
+sp_replace_with_label = &Vervang met:
+sp_replace_with_name = Vervang met
+sp_replace = &Vervang
+sp_replace_all = &Vervang alles
+sp_ignore = &Ignoreer
+sp_ignore_all = &Ignoreer alles
+sp_add_to_dictionary = &Voeg by woordeboek
+btn_close = &Sluit
+
+# Privacy and Content Blocking.
+priv_remote_label = Afstandinhoud in boodskappe:
+priv_block_remote = &Blokkeer afstandinhoud totdat ek daarvoor vra (aanbeveel)
+priv_blocklist_label = Advertensie- en spoorderblokkeerlys:
+priv_block_known = &Blokkeer bekende advertensie- en spoorderdomeine
+priv_update_daily = &Dateer die lys daagliks op die agtergrond op
+priv_update_now = &Dateer nou op
+priv_junk_label = Gemorspos-reëls:
+priv_check_inbox = &Gaan nuwe Inkassie-pos na teen geblokkeerde senders en bekende uitvissingskakels
+priv_move_blocked = &Skuif pos van geblokkeerde senders outomaties na Gemors
+priv_update_phishing = &Dateer uitvissingslys nou op
+priv_blocked_label = Geblokkeerde senders:
+priv_blocked_name = Geblokkeerde senders
+priv_remove_blocked = &Verwyder geblokkeerde sender
+priv_never_junk_label = Senders wat nooit as gemors beskou word nie:
+priv_never_junk_name = Senders wat nooit as gemors beskou word nie
+priv_remove_never_junk = &Verwyder nie-gemors-sender
+priv_allowed_label = Senders wat afstandinhoud mag laai:
+priv_allowed_name = Toegelate senders
+priv_remove_selected = &Verwyder gekose sender
+
+# Message Filters.
+filt_rule_name = Reëlnaam
+filt_enabled = &Geaktiveer
+filt_match_label = Pas:
+filt_match_all = &Pas by al die volgende (EN)
+filt_match_any = &Pas by enige van die volgende (OF)
+filt_conditions_label = Voorwaardes (los 'n waarde leeg om dit oor te slaan):
+filt_condition_field = Voorwaarde {number}-veld
+filt_condition_contains = Voorwaarde {number} bevat
+filt_actions_label = Aksies:
+filt_mark_read = &Merk as gelees
+filt_flag = &Vlag die boodskap
+filt_move_label = Skuif na vouer:
+filt_move_name = Skuif na vouer
+filt_rules_name = Filterreëls
+filt_new = &Nuwe reël...
+filt_edit = &Wysig reël...
+filt_delete = &Skrap reël
+filt_up = &Skuif op
+filt_down = &Skuif af
+filt_run_label = Voer nou uit op vouer:
+filt_run_name = Voer nou uit-vouer
+filt_run_now = &Voer nou uit
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Ontsluit met toegangsleutel (Windows Hello)
+unl_security_key = &Ontsluit met sekuriteitsleutel
+unl_master_password_label = &Hoofwagwoord:
+unl_master_password_name = Hoofwagwoord
+unl_unlock = &Ontsluit
+unl_exit = &Sluit ZBox af
+unl_methods_label = &Geregistreerde metodes:
+unl_methods_name = Geregistreerde ontsluitmetodes
+unl_add_passkey = &Voeg toegangsleutel by…
+unl_add_key = &Voeg sekuriteitsleutel by…
+unl_reassign = &Ken toegangsleutel weer aan hierdie rekenaar toe…
+unl_test = &Toets…
+unl_remove = &Verwyder
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Van
+comp_to = Aan
+comp_cc = Kopie
+comp_bcc = Blinde kopie
+comp_subject = Onderwerp
+comp_attach_button = Heg lêer aan...
+comp_sending = Stuur tans...
+comp_report_label = &Verslag:
+comp_report_name = Verslag
+comp_refresh = &Herlaai
+comp_copy = &Kopieer
+comp_preview_read = Soos die ontvanger dit lees
+comp_preview_source = Die HTML wat gestuur sal word
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Boodskapliggaam
+mv_blocked_notice = Kennisgewing van geblokkeerde inhoud
+mv_show_remote = &Wys afstandinhoud
+mv_always_allow = &Laat hierdie sender altyd toe
+mv_message_headers = Boodskapopskrifte
+mv_attachments = Aanhegsels
+mv_attachments_count = Aanhegsels ({count})
+mv_save_attachment = Stoor: {filename}
+mv_save_all = Stoor alles
+mv_html_view = Boodskap-HTML-aansig
+mv_saved_message = Gestoorde boodskap
+mv_show_remote_tip = Laai hierdie boodskap weer met sy afstandprente en -style. Bekende spoorders bly geblokkeer.
+mv_always_allow_tip = Laai afstandinhoud in elke boodskap van {sender}.
+
+# The search tab.
+srch_account = Rekening
+srch_folder = Vouer
+srch_for = Soek na
+srch_look_in = Soek in
+srch_in_all = Alles
+srch_in_subject = Onderwerp
+srch_in_from = Van
+srch_in_to = Aan
+srch_in_body = Liggaam
+srch_date = Datum
+srch_date_any = Enige tyd
+srch_date_today = Vandag
+srch_date_yesterday = Gister
+srch_date_week = Laaste 7 dae
+srch_date_month = Laaste 30 dae
+srch_date_year = Hierdie jaar
+srch_date_custom = Pasgemaakte reeks
+srch_from_date = Vanaf datum (jaar-maand-dag, opsionele tyd)
+srch_to_date = Tot datum (jaar-maand-dag, opsionele tyd)
+srch_unread = Slegs ongelees
+srch_flagged = Slegs gevlag
+srch_attachment = Het aanhegsel
+
+# The signature editor.
+sig_editors = Handtekeningwysigers
+sig_formatted = Handtekening, geformateer
+sig_source = Handtekening, HTML-bron
+sig_plain_label = Skoonteks-alternatief (saam met die HTML gestuur)
+sig_plain_name = Skoonteks-alternatief
+
+# About ZBox.
+about_text_name = Oor ZBox-teks
+about_view_license = &Bekyk lisensie...
+about_google = &Google-toepassingwagwoorde...
+about_support = &Ondersteun ZBox -- Eenpersoon-ontwikkeling en -instandhouding
+about_repos = &Harith se toepassingbewaarplekke op GitHub
+about_contact = &Kontak Harith
+btn_close_plain = Sluit
+btn_cancel_plain = Kanselleer
+
+# The license window.
+eula_heading = ZBox-lisensie
+eula_text_name = ZBox-lisensieteks
+eula_third_party = Lisensiebladsye van derdeparty-komponente:
+eula_agree = &Ek stem in met die bogenoemde bepalings
+eula_agree_name = Ek het die ZBox-lisensiebepalings gelees en stem daarmee in
+eula_disagree = &Ek stem nie in nie
+eula_next = &Volgende
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = ZBox-dokumentasieteks
+doc_copy = Kopieer na knipbord
+shortcuts_heading = Sleutelbordkortpaaie
+shortcuts_text_name = Sleutelbordkortpaaie-teks
+
+# The main window's own panes.
+mf_toolbar = Hoofnutsbalk
+mf_tabs = ZBox-oortjies
+tree_heading = Rekeninge en vouers
+tree_name = Rekening- en vouerboom
+envlist_heading = Boodskappe
+envlist_name = Boodskaplys
+rdr_heading = Boodskap
+rdr_name = Boodskaplêer
+conv_heading_one = Gesprek: 1 boodskap
+conv_heading_many = Gesprek: {count} boodskappe
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} van {total} klaar.
+bulk_cancelling = Kanselleer tans -- voltooi die huidige boodskap...
+cache_clear_now = Vee aflyn-boodskapkas nou uit... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, beskerm
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Vertoonnaam is opsioneel -- los dit leeg om onder hierdie rekening se eie naam te stuur.
+acct_note_identity = Die e-posadres kan van die aanmeld-e-pos verskil as jou verskaffer 'n pasgemaakte domein aan hierdie posbus gekoppel het. Pos sal onder die adres hierbo gestuur en ontvang word, terwyl aanmelding steeds die aanmeld-e-pos gebruik. Los die wagwoordveld leeg om die wagwoord wat reeds vir hierdie rekening gestoor is te behou -- byvoorbeeld ná die verandering van 'n Gmail-toepassingwagwoord, tik die nuwe een hier; andersins los dit leeg.
+acct_note_identities = Ander adresse waaronder hierdie rekening kan stuur en antwoord. As jy antwoord op 'n boodskap wat aan een hiervan gestuur is, word Van by verstek daardie adres in plaas van die een hierbo.
+acct_note_signature = Word aan elke nuwe boodskap, antwoord en aanstuur wat vanaf hierdie rekening gestuur word, geheg, onder 'n "-- "-reël. Los leeg vir geen. Wysig handtekening maak die geformateerde wysiger oop, waar vet, lyste en skakels beskikbaar is; die blokkie hierbo hou dan die skoonteks-weergawe wat saam daarmee uitgaan.
+acct_note_junk = Na watter regte vouer Merk as gemors boodskappe skuif. "{automatic}" gebruik dieselfde verskafferbewuste raaiskoot wat Argief en Snippermandjie reeds gebruik; stel dit slegs as daardie raaiskoot verkeerd is of jou gemorsvouer 'n pasgemaakte naam het.
+acct_note_disable = 'n Gedeaktiveerde rekening word nooit gekontak nie -- geen IDLE, geen periodieke herlaai, niks -- totdat dit weer geaktiveer word. Dit wys steeds in die boom, gemerk (gedeaktiveer), en sy reeds afgelaaide pos bly aflyn beskikbaar. Dieselfde skakelaar as Rekeninge > Deaktiveer rekening of die rekening se eie kontekskieslys; dit is net nog 'n plek om dit te bereik.
+acct_note_default = Hierdie rekening se vouers verskyn eerste in die boom, en 'n nuwe boodskap word by verstek daarvan gestuur tensy dit handmatig in die skrywer verander word. Beïnvloed nie watter adres 'n antwoord of aanstuur gebruik nie -- dit volg reeds die boodskap waarop geantwoord word (sien Bykomende identiteite hierbo). Daar is altyd presies een verstekrekening, so om dit op die huidige verstek af te merk sonder om dit op 'n ander te merk, laat dit onveranderd -- merk eerder 'n ander rekening se blokkie om die verstek aan hom oor te dra.
+acct_note_mute = &Demp blokkeer hierdie rekening se nuwe-posklank, uitgesproke aankondiging en Windows-kennisgewing, ongeag hoe dit andersins opgestel is. Dit beïnvloed nie ander rekeninge nie, en dit is steeds onderhewig aan die hoofskakelaars in Opstelling > Klank en kennisgewings (klanke en werkskermkennisgewings oor die algemeen).
+wiz_note_app_password = As jy reeds 'n toepassingwagwoord vir ZBox geskep het, druk Volgende om voort te gaan.
+wiz_note_login = Aanmeldbewyse.\nAs jou aanmeld-e-pos van die adres hierbo verskil, byvoorbeeld jou verskafferrekening is login@example.net maar jy wil as you@example.org stuur en ontvang, voer die aanmeld-e-pos hier in. Jy kan die pasgemaakte stuuradres later in Rekening- en identiteitopstelling stel.
+wiz_note_servers = Bedienerinstellings, vooraf ingevul waar die domein herken word. Wysig enigiets wat anders moet wees.
+wiz_preset_none = Geen voorafinstelling vir hierdie domein gevind nie. Voer jou verskaffer se bedienerinstellings handmatig in; jou verskaffer se hulpbladsye sal dit lys.
+ab_note_groups = Tik 'n groep se naam in 'n skryfvenster se Aan-, Kopie- of Blinde kopie-veld om al sy lede gelyk in te vul.
+cache_note_intro = Hierdie verwyder slegs ZBox se plaaslike kopieë. Niks word van enige posbediener geskrap nie, en 'n verwyderde boodskap word weer afgelaai die volgende keer wat jy dit oopmaak.
+cache_note_age = Outomatiese opruiming loop een keer per dag, wanneer ZBox tien minute lank geen sleutelbordaktiwiteit gehad het nie en geen boodskap oop is nie. Dit gaan volgens elke boodskap se eie datum, insluitend boodskappe wat steeds in jou rekening is.
+filt_note_intro = Reëls loop in volgorde, bo na onder, en toets Van, Aan en Onderwerp. Outomaties toegepas op nuwe pos soos dit in hierdie rekening se Inkassie aankom; gebruik Voer nou uit hieronder om dit op boodskappe toe te pas wat reeds in 'n vouer sit.
+filt_note_run_now = Pas elke geaktiveerde reël hierbo, in volgorde, toe op elke boodskap wat reeds in die gekose vouer is -- stoor eers jou veranderinge, dieselfde as OK.
+mp_note_intro = Hierdie rekeninge is op 'n ander rekenaar opgestel. Voer die hoofwagwoord in om hul gestoorde wagwoorde hier te ontsluit. Daar sal net een keer op hierdie rekenaar na gevra word.\n\nSonder dit moet elke rekening weer by sy posbediener aanmeld.
+priv_note_remote = Prente, style en lettertipes wat 'n boodskap van die internet laai, vertel die sender die oomblik toe jy dit oopgemaak het, en van waar. Met dit aan laai geen een nie: 'n kennisgewing verskyn bo die boodskap wat sê wat geblokkeer is, en Ctrl+Shift+I laai dit vir daardie een boodskap. Prente wat aan die boodskap self geheg is, wys altyd. Skrifte en ingebedde rame word in elk geval verwyder en word nooit gelaai nie.
+priv_note_blocklist = Dit is die tweede laag. Dit maak saak sodra jy 'n boodskap se afstandinhoud laai, of 'n sender toelaat: die prente laai, maar enigiets wat van 'n bekende spoor- of advertensiedomein bedien word, laai steeds nie. Die lys word van openbare advertensie- en spoorderlyste afgelaai en saamgevoeg; opdatering neem 'n sekonde of twee en loop op die agtergrond.
+priv_note_junk = Geen raaiwerk nie. Merk as gemors voeg die sender by die geblokkeerde lys hieronder, tensy die boodskap deur 'n possery gekom het. Merk as nie gemors nie voeg die sender by die nooit-gemors-lys en daardie boodskap word nooit weer nagegaan nie. 'n Nuwe boodskap van 'n geblokkeerde sender word in die lys as Geblokkeerde sender gemerk; een wat na 'n bekende uitvissings- of wanware-werf skakel, word as Moontlike uitvissing gemerk. Jou posverskaffer se eie gemorsfiltrering loop steeds soos voorheen.
+priv_status_phishing_updating = Uitvissingslys: word op die agtergrond opgedateer. Maak hierdie dialoog weer oop om die resultaat te sien.
+priv_status_updating = Word op die agtergrond opgedateer. Maak hierdie dialoog weer oop om die resultaat te sien.
+rel_note_intro = Boodskappe verwant aan "{subject}" volgens hul Message-ID/References-opskrifte, oor elke vouer in hierdie rekening.
+srch_note_intro = Soek na woorde in elke rekening en vouer, of vernou die soektog met die keuses hieronder. Los die woorde leeg om boodskappe slegs volgens datum of die merkblokkies te vind.
+sig_note_plain = Los die skoonteks-alternatief leeg en dit word uit die geformateerde handtekening geskryf wanneer jy Stoor druk.
+unified_note_intro = Kies watter vouers oor elke rekening gekombineer moet word. Elkeen wat gemerk is, word 'n enkele inskrywing in die boom wat daardie vouer van al jou rekeninge kombineer.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Oor ZBox
+title_account_settings = Rekening- en identiteitopstelling: {name}
+title_new_account = Nuwe rekening
+title_address_book = Adresboek
+title_members = Lede: {name}
+ab_group_name_prompt = Groepnaam:
+title_new_group = Nuwe groep
+title_cache_cleanup = Kasopruimingopstelling
+cache_age_prompt = Verwyder gekaste boodskappe outomaties wat ouer is as:
+title_automatic_cleanup = Outomatiese opruiming
+comp_link_prompt = Skakeladres:
+title_insert_link = Voeg skakel in
+title_composer_diagnostics = Skrywer-diagnose
+title_formatted_preview = Geformateerde voorskou
+title_license_agreement = ZBox-lisensieooreenkoms
+title_message_filters = Boodskapfilters: {account}
+title_master_password_required = Hoofwagwoord vereis
+title_privacy_dialog = Privaatheid en inhoudblokkering
+title_privacy = Privaatheid
+title_settings = Opstelling
+set_tab_general = Algemeen
+set_tab_personalization = Personalisering
+set_tab_accessibility = Toeganklikheid en sleutelbordkortpaaie
+set_tab_maintenance = Instandhouding en opruiming
+set_tab_sounds = Klanke en kennisgewings
+set_tab_security = Sekuriteit
+title_unified_folders = Verenigde vouers
+title_zbox_locked = ZBox is gesluit
+title_message_view = Boodskapaansig
+title_remote_content = Afstandinhoud
+title_refresh = Herlaai
+title_refresh_all = Herlaai alles
+mv_choose_folder = Kies 'n vouer om die aanhegsel in te stoor
+title_thread = Draad
+title_inbox = Inkassie
+title_compose = Skryf
+title_watch_thread = Hou draad dop
+title_ignore_thread = Ignoreer draad
+title_edit_signature = Wysig handtekening
+title_account = Rekening
+mf_folder_name_prompt = Vouernaam:
+mf_new_name_prompt = Nuwe naam:
+title_refresh_all_accounts = Herlaai alle rekeninge
+title_sender = Sender
+title_new_mail = Nuwe pos
+mf_export_dialog_title = Voer al {count} rekening(e) en instellings uit
+mf_related_tab = Verwant: {subject}
+title_hotkeys_diagnostic = Sleutelkombinasie-diagnose
+set_choose_attachment_dir = Kies die aanhegselstoorvouer
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox is gesluit. Gebruik enige een van die metodes hieronder om dit te ontsluit. Kanselleer maak ZBox toe sonder om enige rekening oop te maak.
+unl_note_foreign_passkey = Die toegangsleutel wat saam met hierdie vouer gestoor is, behoort aan 'n ander rekenaar, dus kan dit nie hier gebruik word nie. Ontsluit met jou sekuriteitsleutel of hoofwagwoord, gebruik dan Opstelling, Sekuriteit, Ontsluitmetodes om 'n toegangsleutel op hierdie rekenaar op te stel.
+unl_note_methods = Enige een van hierdie ontsluit ZBox wanneer die toepassingslot aan is, saam met die hoofwagwoord. 'n Toegangsleutel gebruik Windows Hello op hierdie rekenaar; 'n sekuriteitsleutel is 'n FIDO2-sleutel op USB of NFC en werk op enige rekenaar waarin jy dit steek.
+unl_note_not_encryption = Hierdie ontsluit die toepassing. Hulle enkripteer niks nie: die hoofwagwoord is steeds die enigste ding wat die gestoorde rekeningwagwoorde kan oopmaak op 'n rekenaar waarop hierdie vouer nog nie gebruik is nie. Dit moet eers gestel word, en nie een hiervan kan bygevoeg word voordat dit gedoen is nie.
+unl_add_passkey_unavailable = &Voeg toegangsleutel by (nie beskikbaar nie)
+unl_add_key_unavailable = &Voeg sekuriteitsleutel by (nie beskikbaar nie)
+unl_reassign_unavailable = &Ken toegangsleutel weer aan hierdie rekenaar toe (nie beskikbaar nie)
+unl_status_cancelled_passkey = Die toegangsleutel is gekanselleer. ZBox is steeds gesluit.
+unl_status_cancelled_key = Die sekuriteitsleutel is gekanselleer. ZBox is steeds gesluit.
+unl_status_enter_password = Voer die hoofwagwoord in.
+unl_status_no_master = Geen hoofwagwoord is gestel nie, dus kan 'n toegangsleutel of sekuriteitsleutel nog nie bygevoeg word nie. Stel een met die Hoofwagwoord-knoppie in Opstelling, Sekuriteit, kom dan terug hierheen. Die hoofwagwoord is wat jou gestoorde rekeningwagwoorde op 'n ander rekenaar oopmaak; 'n toegangsleutel ontsluit die toepassing slegs op hierdie een, dus kan dit nie alleen staan nie.
+unl_status_unsupported = Hierdie rekenaar se Windows ondersteun nie toegangsleutels of sekuriteitsleutels nie, dus kan slegs die hoofwagwoord ZBox hier ontsluit.
+unl_status_foreign_one = 1 toegangsleutel behoort aan 'n ander rekenaar en kan nie ZBox hier ontsluit nie. Weer toeken vervang dit met een wat op hierdie rekenaar gemaak is.
+unl_status_foreign_many = {count} toegangsleutels behoort aan 'n ander rekenaar en kan nie ZBox hier ontsluit nie. Weer toeken vervang hulle met een wat op hierdie rekenaar gemaak is.
+unl_status_foreign_one_no_hello = 1 toegangsleutel behoort aan 'n ander rekenaar en kan nie ZBox hier ontsluit nie. Windows Hello is nie hier opgestel nie, dus kan dit nie op hierdie rekenaar vervang word nie; Verwyder vergeet dit.
+unl_status_foreign_many_no_hello = {count} toegangsleutels behoort aan 'n ander rekenaar en kan nie ZBox hier ontsluit nie. Windows Hello is nie hier opgestel nie, dus kan hulle nie op hierdie rekenaar vervang word nie; Verwyder vergeet hulle.
+unl_status_no_hello = Windows Hello is nie op hierdie rekenaar opgestel nie, dus kan 'n toegangsleutel nie hier bygevoeg word nie. 'n Sekuriteitsleutel kan steeds.
+unl_status_none_registered = Nog geen ontsluitmetodes is geregistreer nie.
+unl_status_add_cancelled_passkey = Byvoeging van 'n toegangsleutel is gekanselleer.
+unl_status_add_cancelled_key = Byvoeging van 'n sekuriteitsleutel is gekanselleer.
+unl_status_added = Bygevoeg: {name}.
+unl_status_reassign_cancelled = Weer toeken is gekanselleer. Niks is verander nie.
+unl_status_reassigned = {name} bygevoeg en {count} van ander rekenaars vergeet.
+unl_status_test_cancelled = Die toets is gekanselleer.
+unl_status_removed = Verwyder.
+unl_remove_warning_last = Verwyder {name}?\n\nDit is die enigste geregistreerde ontsluitmetode en geen hoofwagwoord is gestel nie, dus sou daar met die toepassingslot aan niks oor wees om ZBox mee te ontsluit nie. Die slot word oorgeslaan eerder as om jou uit te sluit, maar ZBox sou dan onontsluit oopgaan.
+unl_remove_warning = Verwyder {name}? ZBox sal dit nie meer aanvaar nie.
+ab_col_email = E-pos
+ab_col_name = Naam
+ab_col_phone = Foon
+ab_no_contacts = Nog geen kontakte nie.
+acct_auto_check = Kyk outomaties vir nuwe boodskappe
+acct_note_auto_check = Af: ZBox kontak nooit hierdie rekening uit eie beweging nie -- geen nuwe-pos-dophou, geen tydgebonde herlaai, geen agtergrondaflaaie nie -- sodat 'n onbetroubare bediener nie die ander rekeninge kan vertraag nie. Die reeds afgelaaide pos maak steeds oop, en Herlaai (F5), stuur en skrap bereik steeds die bediener. Dieselfde as Staak outomatiese kontrole in die Gereedskap-kieslys of die rekening se kontekskieslys.
+bl_day_ago = 1 dag gelede
+bl_days_ago = {days} dae gelede
+bl_label_blocklists = Blokkeerlys
+bl_label_phishing = Uitvissingslys
+bl_last_failed = Laaste poging het misluk: %s
+bl_not_downloaded = Nog nie afgelaai nie.
+bl_save_failed = Die %s is afgelaai maar kon nie gestoor word nie: %s
+bl_seed_only = %s domeine van die ingeboude lys. Nog nooit van die internet opgedateer nie.
+bl_some_failed = Sommige bronne het misluk: %s
+bl_some_unreachable = Sommige bronne kon nie bereik word nie: %s
+bl_status_line = %s domeine. Laas opgedateer %s.
+bl_up_to_date = Die %s is reeds op datum.
+bl_update_failed = Kon nie die %s opdateer nie: %s
+bl_updated = %s opgedateer: %s domeine.
+cc_age_choice = Elke boodskapkas ouer as %s
+cc_auto_button = Outomatiese opruiming: gekaste boodskappe ouer as %s...
+comp_btn_discard = &Verwerp
+comp_btn_keep_editing = &Gaan voort met wysig
+comp_btn_save_draft = &Stoor konsep
+comp_no_account = Geen rekening opgestel nie
+comp_saving_draft = Stoor tans konsep…
+comp_this_message = hierdie boodskap
+comp_unsent_save_q = Stoor %s as 'n konsep voordat dit toegemaak word?
+comp_unsent_tray_q = Stoor %s as 'n konsep voordat ZBox na die kennisgewingarea gaan?
+doc_unreadable = Die dokumentasielêer kon nie gelees word nie:
+envlist_all_disabled = Elke rekening is gedeaktiveer.
+envlist_col_date = Datum
+envlist_col_from = Van
+envlist_col_status = Status
+envlist_col_subject = Onderwerp
+envlist_collapsed = Ingevou (%d)
+envlist_empty = Geen boodskappe in hierdie vouer nie.
+envlist_loading = Laai tans boodskappe...
+envlist_no_accounts = Nog geen rekeninge opgestel nie.
+envlist_no_ignored = Geen geïgnoreerde drade in hierdie vouer nie.
+envlist_no_watched = Geen dopgehoue drade in hierdie vouer nie.
+envlist_select_folder = Kies 'n rekening of vouer om boodskappe te laai.
+eula_link_0 = Maak Himalaya se lisensiebladsy in jou blaaier oop
+eula_link_1 = Maak StevenBlack hosts se lisensiebladsy in jou blaaier oop
+eula_link_2 = Maak EasyList/EasyPrivacy se lisensiebladsy in jou blaaier oop
+eula_link_3 = Maak Phishing.Database se lisensiebladsy in jou blaaier oop
+eula_read_note = Lees die lisensie hieronder, insluitend die derdeparty-afdelings. Jy moet Ek stem in merk voordat Volgende beskikbaar word. Ek stem nie in nie maak ZBox toe sonder om dit te begin, en verwyder wat hierdie uitvoering tot dusver geskep het.
+eula_unreadable = Die lisensielêer kon nie gelees word nie:\n%s
+filters_title = Voer filters uit
+flag_title = Vlag boodskap
+folder_type_archive = Argief
+folder_type_drafts = Konsepte
+folder_type_inbox = Inkassie
+folder_type_junk = Gemors
+folder_type_sent = Gestuur
+folder_type_trash = Snippermandjie
+mime_application_json = JSON-lêer
+mime_application_msword = Word-dokument
+mime_application_octet_stream = Binêre lêer
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel-sigblad
+mime_application_vnd_ms_powerpoint = PowerPoint-aanbieding
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint-aanbieding
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel-sigblad
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word-dokument
+mime_application_xml = XML-lêer
+mime_application_zip = ZIP-argief
+mime_audio_mpeg = MP3-klank
+mime_audio_ogg = OGG-klank
+mime_audio_wav = WAV-klank
+mime_image_bmp = BMP-beeld
+mime_image_gif = GIF-beeld
+mime_image_jpeg = JPEG-beeld
+mime_image_png = PNG-beeld
+mime_image_svg_xml = SVG-beeld
+mime_image_webp = WebP-beeld
+mime_text_csv = CSV-lêer
+mime_text_html = HTML-lêer
+mime_text_plain = Tekslêer
+mime_video_mp4 = MP4-video
+mime_video_x_msvideo = AVI-video
+move_title_junk = Merk as gemors
+move_title_move_to = Skuif na
+move_title_not_junk = Merk as nie gemors nie
+mp_explain_set = 'n Hoofwagwoord is gestel. Dit is wat hierdie ZBox-vouer toelaat om sy gestoorde rekeningwagwoorde op 'n ander rekenaar oop te maak.\n\nLos albei nuwe wagwoordblokkies leeg en druk OK om dit te verwyder. Verwydering raak nie hierdie rekenaar nie, maar die vouer sal nie meer op enige ander werk sonder dat elke rekening weer aanmeld nie.
+mp_explain_unset = Geen hoofwagwoord is gestel nie, dus kan die gestoorde rekeningwagwoorde slegs op hierdie rekenaar en hierdie Windows-rekening gelees word. Kopieer jy die vouer elders heen, moet elke rekening weer by sy posbediener aanmeld.\n\nStel een en ZBox sal een keer op elke nuwe rekenaar daarvoor vra, en ontsluit dan normaal daar. Hierdie rekenaar sal nie weer vra nie.\n\nSkryf dit neer en hou dit êrens veilig. Dit word nêrens gestoor nie en kan nie herstel word nie: as jy dit vergeet, moet elke rekening weer by sy posbediener aanmeld.
+mp_label_confirm = &Bevestig nuwe hoofwagwoord:
+mp_label_current = &Huidige hoofwagwoord:
+mp_label_master = &Hoofwagwoord:
+mp_label_new = &Nuwe hoofwagwoord:
+mp_name_confirm = Bevestig nuwe hoofwagwoord
+mp_name_current = Huidige hoofwagwoord
+mp_name_master = Hoofwagwoord
+mp_name_new = Nuwe hoofwagwoord
+mp_prompt_existing = Jou gestoorde rekeningwagwoorde word slegs op hierdie rekenaar beskerm. Stel 'n hoofwagwoord sodat hulle ook oopgemaak kan word as jy ZBox na 'n ander een skuif.
+mp_prompt_first_run = ZBox gaan jou rekeningwagwoorde stoor. Stel nou 'n hoofwagwoord sodat hulle steeds oopgemaak kan word as jy ZBox na 'n ander rekenaar skuif.
+mp_prompt_new_account = ZBox gaan hierdie rekening se wagwoord stoor. Stel eers 'n hoofwagwoord sodat die rekening steeds oopgemaak kan word as jy ZBox na 'n ander rekenaar skuif.
+mp_removed_done = Hoofwagwoord verwyder. Die gestoorde wagwoorde werk nou slegs op hierdie rekenaar en hierdie Windows-rekening.
+mp_set_done = Hoofwagwoord gestel. ZBox sal een keer daarvoor vra op elke nuwe rekenaar waarop hierdie vouer oopgemaak word, en ontsluit dan normaal daar.
+mv_body_title = Boodskapliggaam
+mv_col_format = Formaat
+mv_col_name = Naam
+mv_col_size = Grootte
+mv_format_unknown = Onbekend
+mv_size_unknown = Onbekende grootte
+na_account_settings = Rekening- en identiteitopstelling
+na_disable_account = Deaktiveer rekening
+na_edit_signature = Wysig handtekening
+na_message_filters = Boodskapfilters
+na_mute_account = Demp rekening
+na_pause_auto_check = Staak outomatiese kontrole
+na_remove_account = Verwyder rekening
+na_set_default = Stel as verstekrekening
+no_offline_copy = Geen aflyn-kopie van %s nie. Maak dit oop terwyl jy aanlyn is, of gebruik Lêer, Aflyn, Sinkroniseer nou.
+perm_delete_confirm = {msg} Dit slaan die Snippermandjie-vouer oor en kan nie ontdoen word nie.
+perm_delete_many = Skrap {count} boodskappe permanent?
+perm_delete_one = Skrap {count} boodskap permanent?
+preset_note_apple = Apple vereis 'n toepassingspesifieke wagwoord.
+preset_note_fastmail = Fastmail vereis 'n toepassingwagwoord.
+preset_note_google = Google vereis 'n toepassingwagwoord of OAuth2, nie jou normale wagwoord nie.
+preset_note_proton = ProtonMail vereis dat die ProtonMail Bridge-toepassing plaaslik loop.
+preset_note_yahoo = Yahoo vereis 'n toepassingwagwoord.
+priv_phishing_not_loaded = Uitvissingslys: nog nie gelaai nie. Dit word die eerste keer afgelaai wanneer hierdie reëls aan is en ZBox aanlyn is.
+priv_phishing_prefix = Uitvissingslys:
+priv_status_unavailable = Blokkeerlysstatus is nie beskikbaar nie.
+rdr_load_failed = Kon nie boodskap laai nie.\n\n{message}
+rdr_loading = Laai tans boodskap...
+rdr_select_message = Kies 'n boodskap om dit hier te lees.
+set_autosave_off = Af — gebruik Stoor konsep (Ctrl+S) om handmatig te stoor
+set_autosave_seconds = Elke {seconds} sekondes
+set_no_unlock = Geen toegangsleutel of sekuriteitsleutel hier bruikbaar nie
+set_purge_days = Na {days} dae
+set_purge_off = Af — Snippermandjie en Gemors word nooit outomaties geskrap nie
+set_purge_one_day = Na 1 dag
+set_val_seconds = {seconds} sekondes
+set_val_one_second = 1 sekonde
+set_silence_off = Af
+set_announce_wait = Wag vir 'n sleutel
+set_autosave_minutes = Elke {minutes} minute
+set_autosave_one_minute = Elke minuut
+set_rt_bundled_installed = Saamgebundelde looptyd: geïnstalleer.
+set_rt_bundled_many = Saamgebundelde looptyd: %s geïnstalleer.
+set_rt_bundled_none = Saamgebundelde looptyd: geen geïnstalleer nie, dus gebruik ZBox die stelselwye een.
+set_rt_bundled_unknown = Saamgebundelde looptyd: kon nie bepaal word nie.
+set_rt_bundled_ver = Saamgebundelde looptyd: weergawe %s geïnstalleer.
+set_rt_system_unknown = Stelselwye looptyd: weergawe kon nie bepaal word nie.
+set_rt_system_ver = Stelselwye looptyd: weergawe %s.
+set_unlock_many = %d ontsluitmetodes hier bruikbaar
+set_unlock_unreadable = Ontsluitmetodes kon nie gelees word nie
+sig_tab_formatted = Geformateer
+sig_tab_source = HTML-bron
+srch_all_accounts = Alle rekeninge
+srch_all_folders = Alle vouers
+tab_mail = Pos
+tab_new_message = Nuwe boodskap
+tab_saved_message = Gestoorde boodskap
+title_copy_to_err = Kopieer na
+title_mark_message = Merk boodskap
+title_unsent_message = Ongestuurde boodskap
+tree_unified_root = Verenigde vouers
+unlock_kind_passkey = Toegangsleutel (Windows Hello)
+unlock_kind_security_key = Sekuriteitsleutel
+unlock_prompt_message = Windows vra jou om te bevestig. Beantwoord sy versoek met Windows Hello, jou PIN of jou sekuriteitsleutel. Hierdie venster maak homself toe wanneer Windows klaar is.
+unlock_prompt_title = Windows-sekuriteit
+unlock_registering = Registreer tans hierdie ontsluitmetode
+unlock_the_passkey = Die toegangsleutel
+unlock_the_security_key = Die sekuriteitsleutel
+wildcard_eml = E-poslêers (*.eml)|*.eml|Alle lêers (*.*)|*.*
+wildcard_export = ZBox-uitvoer (*.json)|*.json
+wiz_not_supported = NIE ONDERSTEUN NIE: {name}. {note} Hierdie rekening kan nie in ZBox bygevoeg word nie.
+stock_apply = &Pas toe
+stock_cancel = Kanselleer
+stock_close = &Sluit
+stock_help = &Hulp
+stock_no = &Nee
+stock_ok = OK
+stock_yes = &Ja
+wiz_btn_back = &< Terug
+wiz_btn_finish = &Voltooi
+wiz_btn_next = &Volgende >
+acct_unsaved_q = Stoor die veranderinge aan hierdie rekening?
+btn_save = &Stoor
+spell_add_to_dictionary = &Voeg by woordeboek
+spell_no_suggestions = Geen voorstelle nie
+title_signature_for = Handtekening: {account}
+title_mark_folder_read = Merk vouer as gelees
+title_update_available = ZBox-opdatering
+update_available = ZBox {new} is beskikbaar. Jy het {current}.
+upd_notes_label = &Vrystellingsnotas:
+upd_no_notes = Geen vrystellingsnotas nie.
+upd_notes_name = Vrystellingsnotas
+upd_update_now = &Ja, dateer nou op
+upd_remind_later = &Herinner my later
+title_update_download = Laai ZBox-opdatering af
+upd_downloading = Laai ZBox {version} af...
+upd_progress_name = Aflaaivordering
+upd_cancel = &Kanselleer
+upd_cancelling = Kanselleer tans...
+set_updates_label = Opdaterings:
+set_update_auto = &Kyk outomaties vir opdaterings
+set_update_mode_label = Wanneer 'n opdatering gevind word:
+set_update_ask = &Vra my
+set_update_silent = &Laai stilweg af en installeer
+set_update_note = ZBox kyk hoogstens een keer per dag op GitHub vir 'n nuwer vrystelling, slegs wanneer dit ledig is, en stuur niks behalwe sy weergawenommer nie. Vra my wys die nuwe weergawe en sy vrystellingsnotas, met Ja, dateer nou op en Herinner my later. Laai stilweg af en installeer haal die opdatering in ledige tyd en installeer dit die volgende keer wat jy ZBox heeltemal afsluit, nooit terwyl jy werk nie. 'n Opdatering vervang slegs ZBox se eie programlêers: jou rekeninge, wagwoorde, instellings, pos, loglêers, klanktemas en enige taal wat jy bygevoeg het, word nooit aangeraak nie, en die vorige weergawe word gehou en herstel homself as die nuwe een nie begin nie. Hulp, Opdaterings het ook Kyk nou vir opdaterings en die vrystellingsbladsy om met die hand op te dateer.
+set_update_check_now = &Kyk nou
+mv_attachment_button = {filename} ({format})
+att_open = Open
+att_save = Stoor...
+att_save_all = Stoor alle aanhegsels
+title_save_attachment = Stoor aanhegsel
+title_full_headers = Volledige opskrifte
+hdr_copy_all = Kopieer alles
+acct_identity_own_signature = Gebruik sy eie handtekening
+acct_identity_own_reply_to = Gebruik sy eie Antwoord-aan-adres
+acct_identity_reply_to = Antwoord-aan-adres
+acct_identity_always_cc = Stuur altyd 'n kopie na hierdie adresse
+acct_identity_cc = Kopie-adresse
+acct_identity_always_bcc = Stuur altyd 'n blinde kopie na hierdie adresse
+acct_identity_bcc = Blinde kopie-adresse
+acct_identity_own_folders = Gebruik sy eie Konsepte- en Gestuur-vouers
+acct_identity_drafts = Konsepte-vouer
+acct_identity_sent = Gestuur-vouer
+acct_identity_own_smtp = Gebruik sy eie uitgaande bediener
+acct_identity_smtp_login = Uitgaande aanmeldnaam
+acct_identity_smtp_password = Uitgaande wagwoord
+acct_identity_test_smtp = &Toets uitgaande bediener
+acct_identity_note_smtp = Los die aanmeldnaam leeg om met hierdie identiteit se e-posadres aan te meld. Gestuurde kopieë gaan steeds na hierdie rekening se Gestuur-vouer, of na hierdie identiteit se eie Gestuur-vouer as dit een het.
+identity_field_required = Vul {field} in, of ontmerk sy blokkie.
+identity_field_invalid = {field} het 'n adres wat nie geldig is nie.
+identity_folders_required = Kies 'n Konsepte-vouer, 'n Gestuur-vouer of albei, of ontmerk hul blokkie.
+identity_password_required = Voer die uitgaande wagwoord in.
+identity_smtp_testing = Toets tans die uitgaande bediener.
+identity_smtp_ok = Die uitgaande bediener het die aanmelding aanvaar.
+identity_smtp_failed = Die uitgaande bedienertoets het misluk.\n\n{error}
+set_bare_keys_note_move = M en C maak die Skuif na- en Kopieer na-kieslyste van vouers oop vir die gekose boodskap(pe), en Shift+M maak 'n blokkie oop waar jy deel van 'n vouernaam tik om hulle soontoe te skuif. Om dit af te skakel gee M en C ook terug aan eerste-letter-navigasie.
+folder_search_filter = Vouernaam bevat
+folder_search_list = Passende vouers
+folder_search_no_match = Geen vouer pas by daardie naam nie.
+wiz_signin_method = Aanmeldmetode
+wiz_method_password = Wagwoord
+wiz_method_microsoft = Microsoft-rekening (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft-aanmelding. Die bedienerinstellings vir Outlook.com, Hotmail, Live en Microsoft 365 is ingevul.
+wiz_welcome_notice = Gmail. Jou normale Google-wagwoord sal geweier word, maar 'n toepassingwagwoord werk. Tweestapverifikasie moet eers aan wees. Die knoppie hieronder maak Google se instruksies oop.\n\nOutlook.com, Hotmail, Live en Microsoft 365. Hierdie meld aan met jou Microsoft-rekening. Kies op die Aanmeld-bladsy Microsoft-rekening, meld dan aan met jou blaaier of met 'n kode.\n\nAnder verskaffers. 'n Normale wagwoord of 'n toepassingwagwoord werk gewoonlik, en jou verskaffer se hulpbladsye lys die bedienerinstellings.
+preset_note_outlook = Outlook.com-, Hotmail-, Live- en MSN-rekeninge meld aan met 'n Microsoft-rekening. Kies Microsoft-rekening as die aanmeldmetode op die Aanmeld-bladsy.
+ms_status_name = Microsoft-aanmeldstatus
+ms_browser_button = &Meld aan met blaaier
+ms_code_button = &Meld aan met 'n kode
+ms_copy_code = &Kopieer kode
+ms_open_page = &Maak aanmeldbladsy oop
+ms_stop = &Hou op wag
+ms_not_configured = Microsoft-aanmelding is nie in hierdie kopie van ZBox opgestel nie.
+ms_not_signed_in = Nog nie aangemeld nie. Meld aan met jou blaaier, of met 'n kode op enige toestel.
+ms_signed_in = Aangemeld as {address}.
+ms_signed_in_plain = Aangemeld.
+ms_needs_sign_in = Microsoft-aanmelding vir hierdie rekening is weer nodig. Meld aan met jou blaaier, of met 'n kode op enige toestel.
+ms_reason_cancelled = Aanmelding is gestaak.
+ms_reason_timeout = Geen antwoord het betyds aangekom nie.
+ms_reason_denied = Toegang is nie toegelaat nie.
+ms_reason_expired = Die kode het verval. Vra vir 'n nuwe een.
+ms_reason_network = Microsoft kon nie bereik word nie. Kyk die verbinding na en probeer weer.
+ms_reason_server = Microsoft het gesê: {detail}
+ms_page_done = Aangemeld. Jy kan hierdie bladsy toemaak en na ZBox terugkeer.
+ms_page_failed = Aanmelding is nie voltooi nie. Keer terug na ZBox vir besonderhede.
+ms_browser_waiting = Jou blaaier wys Microsoft se aanmeldbladsy. Voltooi die aanmelding daar, kom dan terug na ZBox.
+ms_code_asking = Vra tans Microsoft vir 'n aanmeldkode...
+ms_code_waiting = Maak op enige toestel {address} oop en voer die kode {code} in. ZBox wag hier totdat jy klaar aangemeld het.
+ms_failed = Aanmelding is nie voltooi nie. {reason}
+ms_code_copied = Kode gekopieer.
+offline_inbox_only = Slegs die Inkassie en die Argief word vir aflyn gebruik gehou. Gaan aanlyn om {folder} oop te maak.
+block_sender_rule_name = Blokkeer {sender}
+title_block_sender = Blokkeer hierdie sender
+title_unblock_sender = Deblokkeer hierdie sender
+set_clear_inbox_cache = Vee boodskapkas uit wanneer weg van Inkassie af beweeg word
+set_clear_inbox_cache_note = Wanneer aan, word 'n boodskap se aflyn-kopie en gestoorde liggaam uitgevee sodra dit 'n Inkassie verlaat, ook wanneer dit geskrap of elders heen geskuif is, soos op jou foon, sodat dit nooit opdaag waar dit nie meer is nie. Slegs die Inkassie hou hierdie lêers; elke ander vouer word altyd van die bediener gelees.
+empty_trash_all_confirm = Skrap alle boodskappe in die Snippermandjie vir elke rekening permanent?\n\nDit kan nie ontdoen word nie.
+envlist_col_recipient = Ontvanger
+envlist_col_correspondents = Korrespondente
+envlist_col_received = Ontvang
+envlist_col_size = Grootte
+envlist_col_attachments = Aanhegsels
+envlist_col_priority = Prioriteit
+envlist_col_junk_status = Gemorsstatus
+envlist_attachment = Aanhegsels
+envlist_priority_highest = Hoogste
+envlist_priority_high = Hoog
+envlist_priority_low = Laag
+envlist_priority_lowest = Laagste
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Wys kolomopskrifte in die boodskaplys
+pgp_title = OpenPGP-sleutelbestuurder
+smime_title = S/MIME-sertifikaatbestuurder
+smime_own = jou sertifikaat
+smime_expired = verval
+smime_expires = verval {date}
+smime_issuer = Uitreiker
+smime_valid = Geldig van {start} tot {end}
+smime_fingerprint = SHA-256-vingerafdruk
+smime_own_key = Jou sertifikaat, met sy private sleutel: pos wat daarvoor geënkripteer is, kan hier gelees word.
+smime_unavailable = S/MIME is nie in hierdie kopie van ZBox beskikbaar nie.
+smime_details = Sertifikaatbesonderhede
+smime_no_certs = Nog geen sertifikate nie. Voer jou eie .p12- of .pfx-lêer in, of 'n korrespondent se sertifikaat.
+smime_import_failed = Die sertifikaat kon nie ingevoer word nie: {error}
+smime_import_title = Voer sertifikaatlêer in
+smime_password_prompt = Voer die wagwoord van {name} in.
+smime_password_title = Sertifikaatwagwoord
+smime_imported = Sertifikaat ingevoer.
+smime_export_title = Voer sertifikaat uit
+smime_exported = Sertifikaat uitgevoer.
+smime_delete_confirm = Skrap die sertifikaat van {name}? As dit joune is, kan pos wat daarvoor geënkripteer is nie meer hier gelees word nie.
+smime_deleted = Sertifikaat geskrap.
+smime_rs_verified = Hierdie boodskap bevat 'n geldige S/MIME-handtekening van 'n sertifikaat wat 'n gesag wat Windows vertrou, vir die sender se adres uitgereik het.
+smime_rs_unverified = Hierdie boodskap bevat 'n geldige S/MIME-handtekening, maar sy sertifikaat is nie deur 'n gesag wat Windows vertrou uitgereik nie.
+smime_rs_mismatch = Hierdie boodskap bevat 'n S/MIME-handtekening, maar die sender se adres stem nie met die ondertekenaar se sertifikaat ooreen nie.
+smime_rs_technical = Hierdie boodskap bevat 'n S/MIME-handtekening, maar dit stem nie met die boodskap ooreen nie. Die boodskap is dalk verander nadat dit onderteken is.
+smime_rs_signer = Onderteken deur: {name}
+smime_rs_issuer = Sertifikaat uitgereik deur: {issuer}
+smime_rs_import_hint = Om dit te lees, voer jou S/MIME-sertifikaat met sy private sleutel, 'n .p12- of .pfx-lêer, in by Gereedskap, S/MIME-sertifikaatbestuurder.
+pgp_details = Sleuteleienskappe
+pgp_generate = &Nuwe sleutelpaar
+smime_import = &Voer sertifikaatlêer in
+smime_export = &Voer sertifikaat uit
+smime_delete = &Skrap sertifikaat
+pgp_import_file = &Voer OpenPGP-sleutellêer in
+pgp_import_file_title = Voer OpenPGP-sleutellêer in
+pgp_import_clip = &Voer sleutel(s) vanaf knipbord in
+pgp_export = &Voer openbare sleutel na lêer uit
+pgp_copy = &Kopieer openbare sleutel
+pgp_backup = &Rugsteun geheime sleutel na lêer
+pgp_props = &Sleuteleienskappe
+pgp_revoke = &Herroep sleutel
+pgp_delete = &Skrap sleutel
+pgp_expires = verval: {date}
+pgp_never_expires = verval nooit
+pgp_expired = verval
+pgp_revoked = herroep
+pgp_fingerprint = Vingerafdruk
+pgp_key_id = Sleutel-ID
+pgp_created = Geskep
+pgp_acceptance = Jou aanvaarding
+pgp_acc_rejected = Nee, verwerp hierdie sleutel.
+pgp_acc_undecided = Nog nie, miskien later.
+pgp_acc_unverified = Ja, maar ek het nie geverifieer dat dit die regte sleutel is nie.
+pgp_acc_verified = Ja, ek het in persoon geverifieer dat hierdie sleutel die regte vingerafdruk het.
+pgp_personal_no = Nee, moenie dit as my persoonlike sleutel gebruik nie.
+pgp_personal_yes = Ja, behandel hierdie sleutel as 'n persoonlike sleutel.
+pgp_verify_hint = Verifieer die sleutel se vingerafdruk deur 'n veilige kommunikasiekanaal anders as e-pos om seker te maak dat dit werklik die sleutel van {addr} is.
+pgp_gen_title = Genereer OpenPGP-sleutel
+pgp_gen_identity = Identiteit
+pgp_gen_type = Sleuteltipe:
+pgp_gen_ecc = ECC (Elliptiese kromme)
+pgp_gen_expiry = Sleutelverval
+pgp_gen_no_expiry = Sleutel verval nie
+pgp_gen_button = Genereer sleutel
+pgp_gen_confirm = Genereer openbare en geheime sleutel vir {identity}?
+pgp_gen_progress = Genereer tans jou nuwe OpenPGP-sleutel…
+pgp_gen_done = OpenPGP-sleutel suksesvol geskep!
+pgp_gen_failed = OpenPGP-sleutelgenerering het onverwags misluk
+pgp_import_none = Geen sleutels ingevoer nie.
+pgp_import_done = OpenPGP-sleutels suksesvol ingevoer!
+pgp_passphrase_title = Wagfrase vereis
+pgp_unlock_failed = Die sleutel, of ondergeskikte dele van die sleutel, kon nie ontsluit word nie.
+pgp_backup_title = Kies 'n wagwoord om jou OpenPGP-sleutel te rugsteun
+pgp_backup_message = Die wagwoord wat jy hier stel, beskerm die OpenPGP-geheimesleutel-rugsteunlêer wat jy gaan skep. Jy moet hierdie wagwoord stel om met die rugsteun voort te gaan.
+pgp_backup_pw = Geheime sleutel-rugsteunwagwoord:
+pgp_backup_pw2 = Geheime sleutel-rugsteunwagwoord (weer):
+pgp_backup_done = Geheime sleutel suksesvol uitgevoer!
+pgp_export_done = Openbare sleutel suksesvol uitgevoer!
+pgp_copied = Sleutel(s) na knipbord gekopieer
+pgp_revoke_done = Sleutel suksesvol herroep.
+pgp_personal = persoonlike sleutel
+pgp_no_keys = Nog geen sleutels nie. Genereer 'n nuwe sleutelpaar of voer 'n sleutel in.
+pgp_unavailable = OpenPGP is nie in hierdie kopie van ZBox beskikbaar nie.
+pgp_gen_expires_3y = Sleutel verval oor 3 jaar
+pgp_gen_no_identity = Voeg eers 'n e-posrekening by.
+pgp_import_confirm = Voer hierdie sleutels in?\n\n{keys}
+pgp_passphrase_prompt = Voer die wagfrase van die geheime sleutel vir {name} in.
+pgp_clip_empty = Die knipbord bevat geen OpenPGP-sleutel nie.
+pgp_pw_mismatch = Die twee wagwoorde stem nie ooreen nie.
+pgp_backup_open = Hierdie lêer is 'n geheime sleutel-rugsteun. Voer sy rugsteunwagwoord in.
+pgp_revoke_confirm = Herroep die sleutel van {name}? 'n Herroepte sleutel kan nooit weer gebruik word nie. Deel die herroepte openbare sleutel sodat ander ophou om dit te gebruik.
+pgp_delete_public_confirm = Skrap die openbare sleutel van {name}?
+pgp_delete_secret_confirm = Skrap jou persoonlike sleutel {name}? Pos wat daarvoor geënkripteer is, kan nooit weer gelees word nie. Rugsteun eers die geheime sleutel as jy dit dalk nodig het.
+pgp_select_key = Kies eers 'n sleutel.
+pgp_save_failed = Die sleutels kon nie gestoor word nie: {error}
+pgp_publish = &Publiseer
+pgp_publish_ok = Openbare sleutel na "{keyserver}" gestuur.
+pgp_publish_fail = Kon nie jou openbare sleutel na "{keyserver}" stuur nie.
+pgp_publish_suggest = Om die openbare sleutel op 'n sleutelbediener te publiseer laat ander toe om dit te ontdek.
+pgp_publish_question = Publiseer dit nou op {keyserver}? Die bediener stuur dan 'n verifikasie-e-pos na {addresses}. Jou adres word vindbaar sodra jy sy skakel oopmaak.
+pgp_publish_sent = 'n Verifikasie-e-pos is na {addresses} gestuur. Maak die skakel daarin oop om jou sleutel deur jou adres vindbaar te maak.
+pgp_publish_already = Reeds vindbaar deur {addresses}.
+pgp_rs_no_sig = Geen digitale handtekening
+pgp_rs_no_sig_info = Hierdie boodskap bevat nie die sender se digitale handtekening nie. Die afwesigheid van 'n digitale handtekening beteken dat die boodskap deur iemand gestuur kon gewees het wat voorgee om hierdie e-posadres te hê. Dit is ook moontlik dat die boodskap verander is terwyl dit oor die netwerk gereis het.
+pgp_rs_uncertain = Onseker digitale handtekening
+pgp_rs_uncertain_date = Onseker digitale handtekening - Onderteken op {date}
+pgp_rs_invalid = Ongeldige digitale handtekening
+pgp_rs_invalid_date = Ongeldige digitale handtekening - Onderteken op {date}
+pgp_rs_good = Goeie digitale handtekening
+pgp_rs_good_date = Goeie digitale handtekening - Onderteken op {date}
+pgp_rs_no_key = Hierdie boodskap bevat 'n digitale handtekening, maar dit is onseker of dit korrek is. Om die handtekening te verifieer, moet jy 'n kopie van die sender se openbare sleutel kry.
+pgp_rs_uid_mismatch = Hierdie boodskap bevat 'n digitale handtekening, maar 'n wanpassing is bespeur. Die boodskap is vanaf 'n e-posadres gestuur wat nie met die ondertekenaar se openbare sleutel ooreenstem nie.
+pgp_rs_not_accepted = Hierdie boodskap bevat 'n digitale handtekening, maar jy het nog nie besluit of die ondertekenaar se sleutel vir jou aanvaarbaar is nie.
+pgp_rs_rejected = Hierdie boodskap bevat 'n digitale handtekening, maar jy het voorheen besluit om die ondertekenaar se sleutel te verwerp.
+pgp_rs_technical = Hierdie boodskap bevat 'n digitale handtekening, maar 'n tegniese fout is bespeur. Of die boodskap is beskadig, of dit is deur iemand anders verander.
+pgp_rs_unverified = Hierdie boodskap bevat 'n geldige digitale handtekening van 'n sleutel wat jy reeds aanvaar het. Jy het egter nog nie geverifieer dat die sleutel werklik aan die sender behoort nie.
+pgp_rs_verified = Hierdie boodskap bevat 'n geldige digitale handtekening van 'n geverifieerde sleutel.
+pgp_rs_own_key = Hierdie boodskap bevat 'n geldige digitale handtekening van jou persoonlike sleutel.
+pgp_rs_signer_id = Ondertekenaarsleutel-ID: {keyid}
+pgp_rs_decrypt_id = Jou ontsleutelsleutel-ID: {keyid}
+pgp_rs_enc_none = Boodskap is nie geënkripteer nie
+pgp_rs_enc_none_info = Hierdie boodskap is nie geënkripteer voordat dit gestuur is nie. Inligting wat sonder enkripsie oor die internet gestuur word, kan deur ander mense gesien word terwyl dit onderweg is.
+pgp_rs_enc_invalid = Boodskap kan nie ontsleutel word nie
+pgp_rs_enc_invalid_info = Hierdie boodskap is geënkripteer voordat dit aan jou gestuur is, maar dit kan nie ontsleutel word nie.
+pgp_rs_enc_valid = Boodskap is geënkripteer
+pgp_rs_enc_valid_info = Hierdie boodskap is geënkripteer voordat dit aan jou gestuur is. Enkripsie verseker dat die boodskap slegs deur die ontvangers gelees kan word vir wie dit bedoel was.
+pgp_rs_field = Boodskapsekuriteit
+pgp_rs_import = Voer OpenPGP-sleutel in
+pgp_rs_open_to_unlock = Maak die boodskap oop om die wagfrase in te voer.
+pgp_rs_reply_not_quoted = Die oorspronklike boodskap was geënkripteer, dus word sy teks nie hier aangehaal nie.
+pgp_cm_encrypt = Enkripteer
+pgp_cm_sign = Onderteken digitaal
+pgp_e2e_title = Eind-tot-eind-enkripsie
+acct_e2e_button = &Eind-tot-eind-enkripsie...
+pgp_e2e_none = Moenie OpenPGP vir hierdie identiteit gebruik nie.
+pgp_e2e_disable = Deaktiveer enkripsie vir nuwe boodskappe
+pgp_e2e_enable = Aktiveer enkripsie vir nuwe boodskappe
+pgp_e2e_enable_info = Jy sal enkripsie vir individuele boodskappe kan deaktiveer.
+pgp_e2e_sign = Onderteken ongeënkripteerde boodskappe
+pgp_e2e_signing_info = 'n Digitale handtekening laat ontvangers toe om te verifieer dat die boodskap deur jou gestuur is en dat sy inhoud nie verander is nie. Geënkripteerde boodskappe word by verstek altyd onderteken.
+pgp_e2e_autocrypt = Stuur OpenPGP-openbare sleutel(s) in die e-posopskrifte vir versoenbaarheid met Autocrypt
+pgp_not_set_up = Jy is nie opgestel om eind-tot-eind-geënkripteerde boodskappe vanaf {addr} te stuur nie.
+pgp_cannot_encrypt = Kan nie enkripteer nie
+pgp_do_you_accept = Aanvaar jy hierdie sleutel vir die verifiëring van digitale handtekeninge en vir die enkripsie van boodskappe?
+pgp_searching = Soek tans…
+pgp_no_key_found = Ons kon nie enige bruikbare sleutel vind wat by die gespesifiseerde soekkriteria pas nie.
+pgp_source_autocrypt = Autocrypt-opskrif
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = sleutelbediener
+pgp_discover = &Ontdek sleutels aanlyn
+pgp_cm_attach_key = Heg my openbare sleutel aan
+pgp_e2e_key_label = Persoonlike sleutel vir {address}
+pgp_e2e_auto = Outomaties: jou persoonlike sleutel vir hierdie adres
+pgp_e2e_no_key = ZBox het geen persoonlike OpenPGP-sleutel vir {address} nie. Maak een in Gereedskap, OpenPGP-sleutelbestuurder.
+pgp_e2e_new_messages = Enkripsie vir nuwe boodskappe
+pgp_e2e_key_missing = Sleutel {keyid}, nie gevind nie
+pgp_missing_keys = Hierdie ontvangers het nie 'n bruikbare, aanvaarde sleutel nie:\n\n{addresses}\n\nDie boodskap kan nie geënkripteer gestuur word nie.
+pgp_send_unencrypted = &Stuur sonder enkripsie
+pgp_collected_found = Sleutels vir hierdie ontvangers is gevind in pos wat hulle aan jou gestuur het:
+pgp_lookup_q = Soek sleutels aanlyn vir hierdie ontvangers?\n\n{addresses}\n\nDit stuur hul adresse na keys.openpgp.org en na hul eie posdomeine.
+pgp_found_online = Sleutels aanlyn gevind:
+pgp_source = Bron: {source}
+pgp_discover_prompt = Voer 'n e-posadres in. ZBox soek sy OpenPGP-sleutels in die Web Key Directory van sy posdomein en op keys.openpgp.org.
+pgp_discover_bad = Voer 'n volledige e-posadres in, soos name@example.com.
+pgp_keys_unreadable = Die OpenPGP-sleutels kon nie oopgemaak word nie: {error}
+pgp_rs_why_no_key = Die geheime sleutel wat benodig word om hierdie boodskap te ontsleutel, is nie beskikbaar nie.
+pgp_rs_why_unknown = Daar is onbekende probleme met hierdie geënkripteerde boodskap.
+pgp_rs_hidden_subject = Geënkripteerde boodskap
+pgp_rs_why_passphrase = Die wagfrase van jou sleutel is nie ingevoer nie. Maak die boodskap weer oop om dit in te voer.
+pgp_rs_why_unavailable = OpenPGP is nie in hierdie kopie van ZBox beskikbaar nie.
+pgp_rs_why_fetch = Die boodskap kon nie van die bediener gehaal word om dit te ontsleutel nie. Maak dit weer oop om nog 'n keer te probeer.
+pgp_rs_import_hint = Om dit te lees, voer jou geheime sleutel vir hierdie boodskap in ZBox in.
+
+[errors]
+language_restart_failed = ZBox kon nie homself herbegin nie:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Kon nie 'n e-posprogram vir {address} oopmaak nie.
+
+wizard_test_failed = Verbinding het misluk:\n\n{error}
+
+contacts_import_unreadable = Kon nie daardie lêer lees nie.\n\n{error}
+contacts_export_unwritable = Kon nie daardie lêer skryf nie.\n\n{error}
+
+attach_unreadable = Kon nie aanhegsel {path} lees nie:\n{error}
+send_failed = Kon nie boodskap stuur nie.\n\n{error}
+draft_attach_unreadable = Kon nie aanhegsel {path} lees nie:\n{error}\n\nKonsep nie gestoor nie.
+draft_save_failed = Kon nie konsep stoor nie.\n\n{error}
+
+clipboard_unavailable = Die knipbord kon nie oopgemaak word nie.
+open_link_failed = Kon nie jou blaaier oopmaak vir:\n{url}
+
+master_password_mismatch = Die twee nuwe hoofwagwoordblokkies stem nie ooreen nie.
+master_password_required = Voer 'n hoofwagwoord in, of druk Kanselleer.
+master_password_not_set = Die hoofwagwoord kon nie gestel word nie: {error}
+master_password_not_here = Die hoofwagwoord kan nie van hier af verander word nie.
+
+attachment_save_failed = Kon nie aanhegsel stoor nie.\n\n{error}
+attachments_save_failed = Kon nie aanhegsels stoor nie.\n\n{error}
+print_failed = Kon nie die boodskap druk nie. Kyk dat 'n drukker opgestel is.
+print_preview_failed = Kon nie drukvoorskou oopmaak nie. Kyk dat 'n drukker opgestel is.
+
+related_search_failed = Kon nie na verwante boodskappe soek nie.\n\n{error}
+search_failed = Soektog het misluk.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox kon nie sy opstellingsvouer vind nie, dus kan ontsluitmetodes nie van hier af bestuur word nie.
+shortcut_no_folder = ZBox kon nie sy eie vouer bepaal nie, dus kan 'n kortpad nie van hier af geskep word nie.
+shortcut_failed_settings = Die werkskermkortpad kon nie geskep word nie:\n\n{error}
+
+unlock_method_failed = {what} het nie gewerk nie.\n\n{error}
+unlock_check_failed = Die hoofwagwoord kon nie nagegaan word nie.\n\n{error}
+unlock_password_wrong = Daardie hoofwagwoord is nie korrek nie.
+unlock_add_failed = {what} kon nie bygevoeg word nie.\n\n{error}
+unlock_passkey_setup_failed = Die toegangsleutel kon nie op hierdie rekenaar opgestel word nie, dus is niks verander nie.\n\n{error}
+unlock_method_test_failed = Daardie metode het nie gewerk nie.\n\n{error}
+
+account_list_unreadable = ZBox kon nie jou rekeninglys oopmaak nie.\n\n{error}\n\nGeen rekeninge is gelaai nie, en die lêer is nie verander nie, dus is niks verlore nie. Byvoeging, wysiging en verwydering van rekeninge word geweier totdat dit gelees kan word.
+account_list_no_accounts = ZBox kon nie jou rekeninglys hierdie sessie oopmaak nie ({error}), dus is daar geen rekeninge om te kies nie. Niks is verlore nie en niks is verander nie. Maak ZBox toe en begin dit weer, en voer jou hoofwagwoord in wanneer daarvoor gevra word.
+open_message_failed = Kon nie boodskap oopmaak nie.\n\n{error}
+filters_list_failed = Kon nie boodskappe in {folder} lys nie.\n\n{error}
+filters_move_failed = Kon nie gefilterde boodskappe skuif nie.\n\n{error}
+cache_clear_failed = Kon nie die kas uitvee nie.\n\n{error}
+folder_create_failed = Kon nie vouer skep nie.\n\n{error}
+folder_rename_failed = Kon nie vouer hernoem nie.\n\n{error}
+folder_delete_failed = Kon nie vouer skrap nie.\n\n{error}
+folder_subscribe_failed = Kon nie op vouer inteken nie.\n\n{error}
+folder_unsubscribe_failed = Kon nie by vouer uitteken nie.\n\n{error}
+saved_open_failed = Kon nie die lêer oopmaak nie.\n\n{error}
+saved_parse_failed = Kon nie hierdie lêer as 'n e-posboodskap ontleed nie.\n\n{error}
+save_file_failed = Kon nie die lêer stoor nie.\n\n{error}
+save_fetch_failed = Kon nie die boodskap om te stoor haal nie.\n\n{error}
+empty_trash_failed = Kon nie die Snippermandjie leegmaak nie.\n\n{error}
+empty_junk_failed = Kon nie Gemors leegmaak nie.\n\n{error}
+export_write_failed = Kon nie die uitvoerlêer skryf nie.\n\n{error}
+import_read_failed = Kon nie hierdie lêer as 'n ZBox-uitvoer lees nie.\n\n{error}
+import_not_export = Hierdie lêer lyk nie na 'n ZBox-uitvoer nie.\n\n{error}
+search_open_failed = Kon nie hierdie boodskap oopmaak nie.
+related_load_failed = Kon nie hierdie boodskap laai nie.\n\n{error}
+reply_load_failed = Kon nie die boodskap om op te antwoord laai nie.\n\n{error}
+forward_load_failed = Kon nie die boodskap om aan te stuur laai nie.\n\n{error}
+action_failed = Kon nie hierdie aksie voltooi nie.\n\n{error}
+undo_failed = Kon nie {label} ontdoen nie.\n\n{error}
+copy_failed = Kon nie boodskap kopieer nie.\n\n{error}
+delete_failed = Kon nie boodskap skrap nie.\n\n{error}
+archive_failed = Kon nie boodskap argiveer nie.\n\n{error}
+master_password_not_changed = Die hoofwagwoord kon nie verander word nie: {error}
+shortcut_failed_startup = Die werkskermkortpad kon nie geskep word nie:\n\n{error}\n\nZBox sal voortgaan om te begin. Jy kan later weer probeer vanuit Opstelling.
+account_locked_action = ZBox kan nie %s nie. Die rekeninglys kon nie hierdie sessie oopgemaak word nie (%s), en niks is verander nie. Maak ZBox toe en begin dit weer, en voer jou hoofwagwoord in as daarvoor gevra word.
+send_tls_mismatch = Kon nie die boodskap stuur nie. Die uitgaande bediener het sonder enkripsie geantwoord, dus stem die uitgaande enkripsie nie met die poort ooreen nie. Gebruik in Gereedskap, Rekening- en identiteitopstelling STARTTLS vir poort 587, of SSL/TLS vir poort 465, stuur dan weer.\n\n{error}
+mark_folder_read_failed = Kon nie die vouer as gelees merk nie.\n\n{error}
+update_failed = Die opdatering kon nie afgelaai word nie, dus is niks verander nie.\n\n{error}
+update_rolled_back = Die opdatering kon nie begin nie, dus is die vorige weergawe herstel.
+attachment_open_failed = Kon nie aanhegsel oopmaak nie.\n\n{error}
+headers_failed = Kon nie die boodskapopskrifte laai nie.\n\n{error}
+wizard_ms_sign_in_first = Meld eers by Microsoft aan voordat jy voortgaan. Gebruik een van die twee aanmeldknoppies op hierdie bladsy.
+wizard_provider_unsupported = ZBox kan nie by hierdie verskaffer aanmeld nie. Die nota op hierdie bladsy sê hoekom. Gaan terug en gebruik 'n ander e-posadres, of kanselleer.
+acct_ms_sign_in_first = Meld eers by Microsoft aan voordat jy stoor, of kies Wagwoord as die aanmeldmetode.
+ms_sign_in_again = Microsoft-aanmelding vir {account} is weer nodig. Maak Rekening- en identiteitopstelling oop en meld daar aan.
+graph_pgp_too_large = Hierdie geënkripteerde of onderteken boodskap is groter as wat Microsoft vir sulke pos toelaat, omtrent 3 MB. Stuur kleiner aanhegsels, of skakel Enkripteer en Onderteken digitaal vir hierdie boodskap af.
+empty_trash_all_failed = Kon nie die Snippermandjie leegmaak vir: {accounts}
+
+[help]

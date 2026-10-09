@@ -1,7 +1,7 @@
 ZBox
 Muallif: Harith Alhamdani
 
-ZBox — ko‘chma, tez javob beradigan, xavfsiz va to‘liq qulay pochta dasturi. Shaxsiy foydalanish uchun bepul va tizim resurslariga tejamkor. Ko‘r va zaif ko‘ruvchi odamlarga odatda mavjud bo‘lgan og‘ir va sekin yechimlarga haqiqiy, boy funksiyali muqobil berish uchun yaratilgan. Orqa fonda ZBox ishonchli Himalaya CLI pochta dasturidan foydalanadi.
+ZBox — ko‘chma, tez javob beradigan, xavfsiz va to‘liq qulay pochta dasturi. Shaxsiy foydalanish uchun bepul va tizim resurslariga tejamkor. Uni ishlatadigan har bir kishiga, jumladan ko‘r va zaif ko‘ruvchi odamlarga, odatda mavjud bo‘lgan og‘ir va sekin yechimlarga haqiqiy, boy funksiyali muqobil berish uchun yaratilgan. Orqa fonda ZBox ishonchli Himalaya CLI pochta dasturidan foydalanadi.
 
 Maxfiylik va xavfsizlik
 ZBox kuzatuvchi va reklamalarni bloklovchiga ega (standart holatda yoqilgan), shuningdek ixtiyoriy spam qoidalari va firibgarlik havolalarini tekshirishga ega. Xavfsiz ko‘chirilishi uchun bosh parol himoyasidan foydalanadi: ilova jildi bosh parolsiz boshqa kompyuterga nusxalansa, ulangan hisoblarga kirish bloklanadi. ZBoxni yangi kompyuterga ko‘chirishni rejalashtirsangiz, avval bu yerda bosh parol belgilang. U Windows Hello passkeylari (barmoq izi, PIN yoki yuzni tanish) va zamonaviy apparat xavfsizlik kalitlarini ham qo‘llab-quvvatlaydi.

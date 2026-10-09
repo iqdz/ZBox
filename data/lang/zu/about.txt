@@ -1,0 +1,16 @@
+ZBox
+Ngu-Harith Alhamdani
+
+I-ZBox iyisiphathi se-imeyili esithwalekayo, esisheshayo, esiphephile futhi esifinyeleleka ngokuphelele. Ayibizi ukuyisebenzisa ngokuzenzela futhi ilula kuzinsiza zesistimu. Yenzelwe ukunikeza wonke umuntu ayisebenzisayo, kuhlanganise nabasebenzisi abayizimpumputhe nabanokubona okuncane, enye indlela yangempela, egcwele izici, esikhundleni sezinketho ezisindayo nezihamba kancane ezitholakala ngokujwayelekile. Ngaphansi kwekhava, i-ZBox iqhutshwa isiphathi se-imeyili esiqinile i-Himalaya CLI.
+
+Ubumfihlo nokuphepha
+I-ZBox ifika nesivimbi sabalandeli nezikhangiso (esivuliwe ngokuzenzakalelayo), kanye nemithetho yeposi elingafuneki ongayikhetha nesihloli sezixhumanisi ze-phishing. Ukuze ithwaleke ngokuphepha, isebenzisa ukuvikela Ngephasiwedi enkulu: uma ifolda yohlelo ikopishelwa kwelinye ikhompyutha ngaphandle kwale phasiwedi, ukufinyelela kuma-akhawunti akho axhumene kuyavinjwa. Uma uhlela ukuthutha i-ZBox uyiyisa emshinini omusha, qiniseka ukuthi uqala ngokusetha iphasiwedi enkulu lapha. Iphinde isekele okhiye bokungena be-Windows Hello (isigxivizo somunwe, i-PIN, noma ukubonwa kobuso) nokhiye bokuphepha bamahadiwe besimanje.
+
+Ukusebenziseka okujwayelekile
+Ukwenza ukushintsha kusuka kwezinye izisebenzisi ze-imeyili kube lula, i-ZBox inezinqamuleli zekhibhodi ezinobungane, ezinwebekayo. Izinqamuleli eziningi zivame ukwenza isenzo esifanayo; isibonelo, bobabili u-Alt+S no-Ctrl+Enter bathumela umlayezo. Ungabona uhlu oluphelele ngaphansi kuka-Usizo, Izinqamuleli zekhibhodi.
+
+Ukusetha i-akhawunti
+Ama-akhawunti e-Outlook.com, Hotmail, Live ne-Microsoft 365 angena nge-akhawunti yakho ye-Microsoft, esiphequluleni sakho noma ngekhodi. Ungaxhuma i-akhawunti yakho ye-Gmail ngokudala Iphasiwedi Yohlelo esikhundleni sokusebenzisa iphasiwedi yakho evamile (bheka inkinobho engezansi ukuthola iziqondiso).
+
+Amalayisense nokwazisa
+Cindezela u-Buka ilayisense ngezansi ukufunda ilayisense ye-ZBox nokubona izingxenye zabantu besithathu eziyenza ibe nokwenzeka. Lokhu kuhlanganisa i-Himalaya, izinhlu zokuvimba ze-StevenBlack hosts ne-EasyPrivacy, uhlu lwe-Phishing.Database, kanye (kukhophi eyakhiwe) ne-Python, i-wxPython, i-imapclient, i-pywin32, i-keyring, ne-accessible_output2 nezinqolobane zayo zeklayenti yomfundi wesikrini.

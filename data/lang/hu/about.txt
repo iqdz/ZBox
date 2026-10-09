@@ -1,0 +1,16 @@
+ZBox
+Készítette: Harith Alhamdani
+
+A ZBox egy hordozható, gyors, biztonságos és teljesen akadálymentes e-mail-kliens. Személyes használatra ingyenes, és kíméli a rendszererőforrásokat. Azért készült, hogy mindenkinek, aki használja, a vak és gyengénlátó felhasználókat is beleértve, valódi, funkciókban gazdag alternatívát nyújtson a rendszerint elérhető, felfújt és lassú megoldások helyett. A motorháztető alatt a ZBoxot a robusztus Himalaya CLI e-mail-kliens hajtja.
+
+Adatvédelem és biztonság
+A ZBox követő- és hirdetésblokkolóval érkezik (alapértelmezetten bekapcsolva), valamint opcionális levélszemét-szabályokkal és adathalász-hivatkozás-ellenőrzővel. A biztonságos hordozhatóságért Elsődleges jelszavas védelmet használ: ha az alkalmazás mappáját ezen jelszó nélkül másolják egy másik számítógépre, a csatolt postafiókokhoz való hozzáférés le van tiltva. Ha azt tervezi, hogy a ZBoxot új gépre viszi, először állítson be itt elsődleges jelszót. Támogatja a Windows Hello hozzáférési kulcsait (ujjlenyomat, PIN-kód vagy arcfelismerés) és a modern hardveres biztonsági kulcsokat is.
+
+Megszokott használhatóság
+Hogy a más e-mail-kliensekről való átállás zökkenőmentes legyen, a ZBox barátságos, rugalmas gyorsbillentyűkkel rendelkezik. Több billentyűparancs gyakran ugyanazt a műveletet hajtja végre; például az Alt+S és a Ctrl+Enter is elküldi az üzenetet. A teljes listát a Súgó, Billentyűparancsok alatt tekintheti meg.
+
+Postafiók beállítása
+Az Outlook.com, Hotmail, Live és Microsoft 365 postafiókok a Microsoft-fiókjával jelentkeznek be, a böngészőben vagy kóddal. A Gmail-fiókját úgy kapcsolhatja be, hogy a szokásos jelszava helyett Alkalmazásjelszót hoz létre (az útmutatóért lásd az alábbi gombot).
+
+Licencek és köszönetnyilvánítás
+Nyomja meg az alábbi Licenc megtekintése gombot a ZBox licencének elolvasásához és a lehetővé tevő harmadik felek összetevőinek megtekintéséhez. Ezek közé tartozik a Himalaya, a StevenBlack hosts és az EasyPrivacy tiltólisták, a Phishing.Database lista, valamint (lefordított példányban) a Python, a wxPython, az imapclient, a pywin32, a keyring és az accessible_output2 a képernyőolvasó ügyfélkönyvtáraival.

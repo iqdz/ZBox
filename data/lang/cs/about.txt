@@ -1,0 +1,16 @@
+ZBox
+Autor: Harith Alhamdani
+
+ZBox je přenosný, svižný, bezpečný a plně přístupný e-mailový klient. Je zdarma pro osobní použití a šetří systémové prostředky. Vznikl proto, aby každému, kdo ho používá, včetně nevidomých a slabozrakých uživatelů, nabídl skutečnou alternativu plnou funkcí k těžkopádným a pomalým možnostem, které bývají obvykle k dispozici. Pod kapotou ZBox pohání robustní e-mailový klient Himalaya CLI.
+
+Soukromí a zabezpečení
+ZBox je dodáván s blokováním sledovačů a reklam (ve výchozím nastavení zapnuto), spolu s volitelnými pravidly nevyžádané pošty a kontrolou phishingových odkazů. Pro bezpečnou přenositelnost používá ochranu Hlavním heslem: pokud se složka aplikace zkopíruje na jiný počítač bez tohoto hesla, přístup k vašim propojeným účtům je zablokován. Pokud plánujete ZBox přenést na nový počítač, nejprve zde nastavte hlavní heslo. Podporuje také přístupové klíče Windows Hello (otisk prstu, PIN nebo rozpoznání obličeje) a moderní hardwarové bezpečnostní klíče.
+
+Známá použitelnost
+Aby byl přechod z jiných e-mailových klientů bezproblémový, nabízí ZBox přátelské a flexibilní klávesové zkratky. Více zkratek často provádí stejnou akci; například Alt+S i Ctrl+Enter odešlou zprávu. Úplný seznam najdete v Nápověda, Klávesové zkratky.
+
+Nastavení účtu
+Účty Outlook.com, Hotmail, Live a Microsoft 365 se přihlašují účtem Microsoft, v prohlížeči nebo pomocí kódu. Svůj účet Gmail můžete propojit vytvořením Hesla aplikace místo použití standardního hesla (pokyny najdete u tlačítka níže).
+
+Licence a poděkování
+Stisknutím Zobrazit licenci níže si přečtete licenci ZBoxu a zobrazíte součásti třetích stran, které ho umožňují. Patří mezi ně Himalaya, seznamy blokování StevenBlack hosts a EasyPrivacy, seznam Phishing.Database a (v sestavené kopii) Python, wxPython, imapclient, pywin32, keyring a accessible_output2 s klientskými knihovnami čteček obrazovky.

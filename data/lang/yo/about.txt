@@ -1,0 +1,16 @@
+ZBox
+Láti ọwọ́ Harith Alhamdani
+
+ZBox jẹ́ ohun èlò ímeèlì tí a lè gbé kiri, tó yára, tó ní ààbò, tó sì ṣeé lò ní kíkún. Ó ṣe ọ̀fẹ́ fún lílò ti ara ẹni, kò sì wúwo lórí àwọn ohun èlò ẹ̀rọ. A ṣẹ̀dá rẹ̀ láti fún gbogbo ẹni tó ń lò ó, pẹ̀lú àwọn olùlò afọ́jú àti àwọn tí ìríran wọn kéré, ní àfidípò gidi, tó kún fún àwọn ẹ̀yà, dípò àwọn àṣàyàn tó wúwo tí ó sì lọ́ra tí a sábà máa ń rí. Lábẹ́ rẹ̀, Himalaya CLI olùgbéṣẹ́ ímeèlì tó lágbára ni ó ń mú ZBox ṣiṣẹ́.
+
+Àṣírí àti ààbò
+ZBox wá pẹ̀lú ohun tí ń dènà olùtọpa àti ìpolówó (tí ó ṣiṣẹ́ nípasẹ̀ àtẹ̀wọ́), pẹ̀lú àwọn òfin ímeèlì àwúrúju tí kò pọn dandan àti olùyẹ̀wò ìsopọ̀ ìtànjẹ. Fún gbígbé kiri tó ní ààbò, ó ń lo ààbò Ọ̀rọ̀ìpamọ́ Àkọ́kọ́: tí a bá dà fódà ohun èlò sórí kọ̀ǹpútà mìíràn láìsí ọ̀rọ̀ìpamọ́ yìí, a ó dènà ìráyè sí àwọn àkọọ́lẹ̀ rẹ tí a so mọ́. Tí o bá ń gbèrò láti gbé ZBox lọ sórí ẹ̀rọ tuntun, rí i dájú pé o ṣètò ọ̀rọ̀ìpamọ́ àkọ́kọ́ níbí ná. Ó tún ṣe àtìlẹ́yìn fún àwọn kọ́kọ́rọ́ ìwọlé Windows Hello (ìka ọwọ́, PIN, tàbí ìdámọ̀ ojú) àti àwọn kọ́kọ́rọ́ ààbò ohun èlò òde òní.
+
+Ìrọ̀rùn tó mọ́ni
+Láti jẹ́ kí ìyípadà láti àwọn ohun èlò ímeèlì mìíràn rọrùn, ZBox ní àwọn ọ̀nà abuja bọ́tìnì tó bá ni lọ́rẹ̀ẹ́, tó sì rọ̀ mọ́ni. Àwọn ọ̀nà abuja púpọ̀ máa ń ṣe ìgbésẹ̀ kan náà; fún àpẹẹrẹ, Alt+S àti Ctrl+Enter méjèèjì ń fi ìfiránṣẹ́ ránṣẹ́. O lè wo àtòjọ pípé lábẹ́ Ìrànlọ́wọ́, Àwọn ọ̀nà abuja bọ́tìnì.
+
+Ìṣètò àkọọ́lẹ̀
+Àwọn àkọọ́lẹ̀ Outlook.com, Hotmail, Live àti Microsoft 365 ń wọlé pẹ̀lú àkọọ́lẹ̀ Microsoft rẹ, nínú aṣàwákiri rẹ tàbí pẹ̀lú kóòdù. O lè so àkọọ́lẹ̀ Gmail rẹ pọ̀ nípa ṣíṣẹ̀dá Ọ̀rọ̀ìpamọ́ Ohun Èlò dípò lílo ọ̀rọ̀ìpamọ́ déédé rẹ (wo bọ́tìnì tó wà nísàlẹ̀ fún ìtọ́sọ́nà).
+
+Àwọn ìwé àṣẹ àti ìdúpẹ́
+Tẹ Wo ìwé àṣẹ nísàlẹ̀ láti ka ìwé àṣẹ ZBox àti láti wo àwọn èròjà ẹgbẹ́ kẹta tó jẹ́ kí ó ṣeé ṣe. Àwọn wọ̀nyí pẹ̀lú Himalaya, àwọn àtòjọ ìdènà StevenBlack hosts àti EasyPrivacy, àtòjọ Phishing.Database, àti (nínú ẹ̀dà tí a kọ́) Python, wxPython, imapclient, pywin32, keyring, àti accessible_output2 pẹ̀lú àwọn ilé ìkàwé oníbàárà olùkàwé ojú ìwé rẹ̀.

@@ -1,7 +1,7 @@
 ZBox
 De Harith Alhamdani
 
-ZBox este un client de e-mail portabil, rapid, sigur și complet accesibil. Gratuit pentru uz personal și econom cu resursele sistemului. A fost creat pentru a le oferi persoanelor nevăzătoare și celor cu vedere slabă o alternativă reală, bogată în funcții, la programele greoaie și lente disponibile de obicei. Sub capotă, ZBox funcționează cu robustul client de e-mail Himalaya CLI.
+ZBox este un client de e-mail portabil, rapid, sigur și complet accesibil. Gratuit pentru uz personal și econom cu resursele sistemului. A fost creat pentru a le oferi tuturor celor care îl folosesc, inclusiv persoanelor nevăzătoare și celor cu vedere slabă, o alternativă reală, bogată în funcții, la programele greoaie și lente disponibile de obicei. Sub capotă, ZBox funcționează cu robustul client de e-mail Himalaya CLI.
 
 Confidențialitate și securitate
 ZBox are încorporat un blocant de urmăritori și reclame (activat implicit), plus reguli opționale pentru mesaje nesolicitate și verificarea linkurilor de phishing. Pentru portabilitate sigură, folosește protecția printr-o parolă primară: dacă dosarul aplicației este copiat pe un alt computer fără această parolă, accesul la conturile dvs. conectate este blocat. Dacă doriți să mutați ZBox pe un dispozitiv nou, setați mai întâi aici o parolă primară. De asemenea, acceptă cheile de acces Windows Hello (amprentă, PIN sau recunoaștere facială) și cheile de securitate hardware moderne.

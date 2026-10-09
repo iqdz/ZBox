@@ -1,7 +1,7 @@
 ZBox
 Geliştiren: Harith Alhamdani
 
-ZBox taşınabilir, hızlı, güvenli ve tamamen erişilebilir bir e-posta istemcisidir. Kişisel kullanım için ücretsizdir ve sistem kaynaklarını az kullanır. Görme engelli ve az gören kullanıcılara, genellikle sunulan hantal ve yavaş seçeneklerin yerine gerçek ve özellik dolu bir alternatif sunmak için geliştirildi. Arka planda ZBox, güçlü Himalaya CLI e-posta istemcisiyle çalışır.
+ZBox taşınabilir, hızlı, güvenli ve tamamen erişilebilir bir e-posta istemcisidir. Kişisel kullanım için ücretsizdir ve sistem kaynaklarını az kullanır. Görme engelli ve az gören kullanıcılar dahil onu kullanan herkese, genellikle sunulan hantal ve yavaş seçeneklerin yerine gerçek ve özellik dolu bir alternatif sunmak için geliştirildi. Arka planda ZBox, güçlü Himalaya CLI e-posta istemcisiyle çalışır.
 
 Gizlilik ve güvenlik
 ZBox, izleyici ve reklam engelleyiciyle birlikte gelir (varsayılan olarak açık); ayrıca isteğe bağlı gereksiz posta kuralları ve bir kimlik avı bağlantısı denetleyicisi sunar. Güvenli taşınabilirlik için ana parola koruması kullanır: Uygulama klasörü bu parola olmadan başka bir bilgisayara kopyalanırsa bağlı hesaplarınıza erişim engellenir. ZBox'ı yeni bir bilgisayara taşımayı düşünüyorsanız önce burada bir ana parola belirleyin. Windows Hello geçiş anahtarlarını (parmak izi, PIN veya yüz tanıma) ve modern donanım güvenlik anahtarlarını da destekler.

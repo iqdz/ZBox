@@ -1,7 +1,7 @@
 ZBox
 Tác giả: Harith Alhamdani
 
-ZBox là trình gửi thư di động, phản hồi nhanh, an toàn và hoàn toàn dễ tiếp cận. Miễn phí cho mục đích cá nhân và nhẹ với tài nguyên hệ thống. ZBox được tạo ra để mang đến cho người mù và người thị lực kém một lựa chọn thực sự, giàu tính năng, thay cho những lựa chọn nặng nề và chậm chạp thường thấy. Phía sau, ZBox dựa trên trình gửi thư Himalaya CLI ổn định.
+ZBox là trình gửi thư di động, phản hồi nhanh, an toàn và hoàn toàn dễ tiếp cận. Miễn phí cho mục đích cá nhân và nhẹ với tài nguyên hệ thống. ZBox được tạo ra để mang đến cho tất cả những ai sử dụng nó, kể cả người mù và người thị lực kém, một lựa chọn thực sự, giàu tính năng, thay cho những lựa chọn nặng nề và chậm chạp thường thấy. Phía sau, ZBox dựa trên trình gửi thư Himalaya CLI ổn định.
 
 Riêng tư và bảo mật
 ZBox có trình chặn theo dõi và quảng cáo (bật theo mặc định), cùng các quy tắc thư rác tùy chọn và tính năng kiểm tra liên kết lừa đảo. Để mang theo an toàn, ZBox dùng mật khẩu chính: nếu thư mục ứng dụng bị sao chép sang máy tính khác mà không có mật khẩu này, quyền truy cập vào các tài khoản đã kết nối sẽ bị chặn. Nếu bạn định chuyển ZBox sang máy tính mới, hãy đặt mật khẩu chính ở đây trước. ZBox cũng hỗ trợ khóa truy cập Windows Hello (vân tay, mã PIN hoặc nhận diện khuôn mặt) và khóa bảo mật phần cứng hiện đại.

@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = አማርኛ
+code = am
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = መልዕክቱ ተልኳል።
+draft_saved = ረቂቁ ተቀምጧል።
+signature_inserted = ፊርማው ገብቷል።
+signature_none = ይህ መለያ ፊርማ የለውም።
+signature_saved = ፊርማው ተቀምጧል።
+signature_not_saved = ፊርማው አልተቀመጠም።
+pasted_as_quotation = እንደ ጥቅስ ተለጥፏል።
+clipboard_empty = ቅንጥብ ሰሌዳው ባዶ ነው።
+word_count = {words} ቃላት፣ {characters} ፊደላት።
+report_copied = ሪፖርቱ ተቀድቷል።
+compose_tab_needed = ያ ትዕዛዝ የመጻፊያ ትር ያስፈልገዋል።
+attach_file_instead = የተጣሉ ፋይሎች ወደ መልዕክቱ ጽሑፍ አይገቡም። አንዱን ለመላክ ፋይል አያይዝ ይጠቀሙ።
+
+# Formatting in the message body
+formatting_here = እዚህ ቅርጸት: {formatting}።
+no_formatting_here = እዚህ ቅርጸት የለም፣ ተራ ጽሑፍ።
+
+# Spelling
+nothing_to_check = የሚመረመር ነገር የለም።
+no_misspellings = የፊደል ስህተቶች የሉም።
+spelling_dictionary_unavailable = የፊደል ማረሚያ መዝገበ ቃላት አይገኝም።
+next_misspelling_first = መጀመሪያ ቀጣዩን የፊደል ስህተት ይጠቀሙ።
+word_added = {word} ወደ መዝገበ ቃላት ተጨምሯል።
+word_not_added = {word} መጨመር አልተቻለም።
+corrections_applied_one = 1 እርማት ተተግብሯል።
+corrections_applied_many = {count} እርማቶች ተተግብረዋል።
+corrections_applied_partly = ከ{total} {applied} እርማቶች ተተግብረዋል። የተቀሩት ተቀባይነት አላገኙም፤ መዝገቡን ይመልከቱ።
+occurrences_replaced_one = 1 ቦታ ተተክቷል።
+occurrences_replaced_many = {count} ቦታዎች ተተክተዋል።
+
+# Reading mail
+message_did_not_open = መልዕክቱ አልተከፈተም። አገልጋዩ አልመለሰም። እንደገና ለመሞከር Enter ይጫኑ።
+thread_open = በዚህ ክር ውስጥ {messages}። ለመዝጋት እንደገና ይጫኑ።
+no_thread_selected = ምንም ክር አልተመረጠም።
+thread_watched = ክሩ እየተከታተለ ነው።
+thread_not_watched = ክሩ ከእንግዲህ አይከታተልም።
+thread_ignored = ክሩ ችላ ተብሏል።
+thread_not_ignored = ክሩ ከእንግዲህ ችላ አይባልም።
+none_found = ምንም አልተገኘም።
+refreshing_this_folder = ይህን አቃፊ በማደስ ላይ።
+refreshing_all_accounts = ሁሉንም መለያዎች በማደስ ላይ።
+message_view_html = የመልዕክት እይታ: HTML (የተሰራ)።
+message_view_text = የመልዕክት እይታ: ጽሑፍ።
+html_view_still_loading = መልዕክቱ አሁንም በመጫን ላይ ነው። Escape ይዘጋዋል።
+message_still_opening = መልዕክቱን በመክፈት ላይ። አገልጋዩ ቀርፋፋ ነው።
+remote_content_blocked = የርቀት ይዘት ታግዷል።
+remote_content_unblocked = የርቀት ይዘት ዕገዳ ተነስቷል።
+remote_content_already_showing = በዚህ መልዕክት የርቀት ይዘት ቀድሞውኑ ይታያል።
+archived = ወደ ማህደር ተልኳል።
+copied_to_folder = ወደ {to_folder} ተቀድቷል።
+deleted_one = መልዕክቱ እስከመጨረሻው ተሰርዟል።
+deleted_many = {count} መልዕክቶች እስከመጨረሻው ተሰርዘዋል።
+trashed_one = መልዕክቱ ወደ ቆሻሻ መጣያ ተወስዷል።
+trashed_many = {count} መልዕክቶች ወደ ቆሻሻ መጣያ ተወስደዋል።
+
+# Accounts and new mail
+no_account_yet = ለመዝለል ገና መለያ የለም።
+inbox_landed = የ{name} የገቢ መልዕክት ሳጥን።
+account_enabled = {name} ነቅቷል።
+auto_check_paused = ለ{account} ራስ-ሰር ፍተሻ ቆሟል።
+auto_check_resumed = ለ{account} ራስ-ሰር ፍተሻ በርቷል።
+account_disabled = {name} ተሰናክሏል።
+new_mail_one = ለ{name} 1 አዲስ መልዕክት።
+new_mail_many = ለ{name} {count} አዲስ መልዕክቶች።
+refresh_all_done_one = 1 መለያ ታድሷል።
+refresh_all_done_many = {count} መለያዎች ታድሰዋል።
+refresh_all_done_failures = {count} መለያዎች ታድሰዋል፣ {failed} ማደስ አልተሳካም።
+refresh_all_done_failures_one = {count} መለያ ታድሷል፣ {failed} ማደስ አልተሳካም።
+
+# The sender of the message in view
+sender_address_copied = {sender}። አድራሻው ተቀድቷል።
+sender_no_address = {sender}። ለመቅዳት አድራሻ የለም።
+clipboard_not_opened = {sender}። ቅንጥብ ሰሌዳው አልተከፈተም።
+
+# The signature editor
+signature_page_formatted = ተቀርጿል። የሚቀመጠው ይህ ነው።
+signature_page_html = HTML ምንጭ። የሚቀመጠው ይህ ነው።
+signature_page_html_still_wins = ተቀርጿል። አሁንም የሚቀመጠው የHTML ምንጭ ነው።
+
+# Background work
+phishing_list_updating = የማጭበርበር ዝርዝር ከጀርባ በመዘመን ላይ ነው።
+cache_cleared = {files} የመሸጎጫ ፋይሎች ጸድተዋል፣ {size} MB።
+hotkeys_diagnostic_on = የአቋራጭ ቁልፍ ምርመራ በርቷል፣ ምልክት ተደርጎበታል
+hotkeys_diagnostic_off = የአቋራጭ ቁልፍ ምርመራ ጠፍቷል፣ ምልክት ተነስቷል
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = ወደ ማህደር ላክ
+action_delete = ሰርዝ
+action_delete_permanently = እስከመጨረሻው ሰርዝ
+action_mark_as_junk = እንደ አይፈለጌ ምልክት አድርግ
+action_mark_as_not_junk = አይፈለጌ አይደለም ብለህ ምልክት አድርግ
+action_move_to = ውሰድ
+action_copy_to = ቅዳ
+action_mark_message = መልዕክቱን ምልክት አድርግ
+action_undo = ቀልብስ
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = {action} ተቀልብሷል።
+undo_done_many = ለ{count} መልዕክቶች {action} ተቀልብሷል።
+junk_marked_one = እንደ አይፈለጌ ምልክት ተደርጓል።
+junk_marked_many = {count} መልዕክቶች እንደ አይፈለጌ ምልክት ተደርጓል።
+junk_no_new_sender = ምንም አዲስ ላኪ አልታገደም፦ አስቀድሞ ታግዷል፣ የመልዕክት ዝርዝር ነው፣ ወይም ከራስዎ አድራሻዎች አንዱ ነው።
+not_junk_marked_one = አይፈለጌ አይደለም ተብሎ ምልክት ተደርጓል።
+not_junk_marked_many = {count} መልዕክቶች አይፈለጌ አይደሉም ተብለው ምልክት ተደርጓል።
+moved_to_one = ወደ {to_folder} ተወስዷል።
+moved_to_many = {count} መልዕክቶች ወደ {to_folder} ተወስደዋል።
+copied_to_many = {count} መልዕክቶች ወደ {to_folder} ተቀድተዋል።
+marked_read = እንደተነበበ ምልክት ተደርጓል።
+marked_unread = እንዳልተነበበ ምልክት ተደርጓል።
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = ከ{total} {completed} በኋላ ተሰርዟል። {succeeded} ተሳክተዋል፣ {failed} አልተሳኩም።
+bulk_failed_one = ከ1 መልዕክት {failed} {done} አልተሳካም።
+bulk_failed_many = ከ{total} መልዕክቶች {failed} {done} አልተሳኩም።
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = ደማቅ
+format_word_italic = ሰያፍ
+format_word_strike = የተሰመረበት
+format_word_href = አገናኝ
+format_word_bullet = ነጥብ ዝርዝር
+format_word_number = ቁጥር ዝርዝር
+format_word_quote = ጥቅስ
+format_word_code = ኮድ
+format_word_heading1 = ርዕስ
+format_applied = {formatting} ተተግብሯል።
+format_inserted = {formatting} ገብቷል።
+format_not_available = በተራ የመልዕክት አካል ውስጥ {formatting} አይገኝም።
+format_on = {formatting} በርቷል
+format_off = {formatting} ጠፍቷል
+link_applied = አገናኙ ተተግብሯል።
+link_applied_to_selection = አገናኙ ለተመረጠው ተተግብሯል።
+plain_body_formatting = ተራ የመልዕክት አካል ቅርጸቱን እንደ መለያዎች ያሳያል።
+
+# Reaching either end of a thread
+thread_edge_first = በዚህ ክር ውስጥ የመጀመሪያው መልዕክት። ለመዝጋት እንደገና ይጫኑ።
+thread_edge_last = በዚህ ክር ውስጥ የመጨረሻው መልዕክት። ለመዝጋት እንደገና ይጫኑ።
+jump_unified_inbox = የተዋሃደ የገቢ መልዕክት ሳጥን።
+remote_none = በዚህ መልዕክት ውስጥ የርቀት ይዘት የለም።
+sender_none = በዚህ መልዕክት ውስጥ ላኪ የለም።
+sender_name_no_address = %s፣ አድራሻ የለም
+signature_not_switched = ፊርማው አልተቀየረም። የዚህን መለያ ፊርማ ለማስገባት Ctrl+Shift+S ይጫኑ።
+signature_removed_no_signature = ፊርማው ተወግዷል። ይህ መለያ ፊርማ የለውም።
+signature_switched = ፊርማው ወደዚህ መለያ ፊርማ ተቀይሯል።
+spell_not_replaced = ቃሉ አልተተካም።
+spell_replaced_with = በ{word} ተተክቷል።
+folder_marked_read = {count} መልዕክቶች እንደተነበቡ ምልክት ተደርጓል።
+folder_no_unread = ያልተነበቡ መልዕክቶች የሉም።
+threads_all_collapsed = ሁሉም ክሮች ተጠቅልለዋል።
+threads_all_expanded = ሁሉም ክሮች ተዘርግተዋል።
+upd_percent = {percent} በመቶ
+upd_download_done = ማውረዱ ተጠናቋል። ዝመናውን በማዘጋጀት ላይ...
+upd_updated_to = ZBox ወደ {version} ተዘምኗል።
+header_copied = ተቀድቷል።
+headers_copied = ሁሉም ራስጌዎች ተቀድተዋል።
+identity_copies_updated = ለዚህ ማንነት ግልባጭ እና የተደበቀ ግልባጭ ተዘምኗል።
+signature_switched_identity = ፊርማው ወደዚህ ማንነት ፊርማ ተቀይሯል።
+signature_removed_identity = ፊርማው ተወግዷል። ይህ ማንነት ፊርማ የለውም።
+signature_not_switched_identity = ፊርማው አልተቀየረም። የዚህን ማንነት ፊርማ ለማስገባት Ctrl+Shift+S ይጫኑ።
+signature_none_identity = ይህ ማንነት ፊርማ የለውም።
+move_keys_no_selection = መጀመሪያ መልዕክት ይምረጡ።
+move_keys_no_folders = የሚመረጡ አቃፊዎች ገና የሉም። ከትንሽ ጊዜ በኋላ እንደገና ይሞክሩ።
+block_sender_done_one = {sender} ታግዷል። አዲስ መልዕክቶቹ ወደ ቆሻሻ መጣያ ይሄዳሉ።
+block_sender_done_many = {count} ላኪዎች ታግደዋል። አዲስ መልዕክቶቻቸው ወደ ቆሻሻ መጣያ ይሄዳሉ።
+block_sender_already = {sender} አስቀድሞ ታግዷል።
+block_sender_own = አልታገደም፦ ይህ ከራስዎ አድራሻዎች አንዱ ነው።
+block_sender_list_unknown = አልታገደም፦ ይህ መልዕክት በመልዕክት ዝርዝር በኩል የመጣ ሲሆን ማን እንደላከው አይናገርም። የዝርዝሩን አድራሻ ማገድ በውስጡ ያለውን ሁሉ ያግዳል።
+block_sender_moved = ላኪው ታግዷል። {count} መልዕክቶች ወደ ቆሻሻ መጣያ ተወስደዋል።
+block_senders_moved = {senders} ላኪዎች ታግደዋል። {count} መልዕክቶች ወደ ቆሻሻ መጣያ ተወስደዋል።
+unblock_sender_moved = የላኪው ዕገዳ ተነስቷል። {count} መልዕክቶች ወደ የገቢ መልዕክት ሳጥን ተወስደዋል።
+unblock_senders_moved = የ{senders} ላኪዎች ዕገዳ ተነስቷል። {count} መልዕክቶች ወደ የገቢ መልዕክት ሳጥን ተወስደዋል።
+unblock_sender_done = የ{sender} ዕገዳ ተነስቷል።
+unblock_sender_not_blocked = {sender} አልታገደም።
+pgp_cm_on = {name} በርቷል።
+pgp_cm_off = {name} ጠፍቷል።
+pgp_cm_identity = የምስጠራ ቅንብሮች ወደዚህ ማንነት ቅንብሮች ተቀይረዋል።
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = ከላይ አንድ ነገር ይጻፉና Enter ይጫኑ ወይም ፈልግ ይምረጡ።
+search_no_account = መጀመሪያ መለያ ያክሉ።
+search_no_term = የሚፈለጉ ቃላትን ይጻፉ፣ ወይም ቀን ወይም ምልክት ማድረጊያ ሳጥን ይምረጡ።
+search_running = በመፈለግ ላይ...
+search_none = ለ"{term}" ተዛማጅ የለም።
+search_found_one = ለ"{term}" 1 ተዛማጅ።
+search_found_many = ለ"{term}" {count} ተዛማጆች።
+search_bad_date = ቀኑን እንደ ዓመት-ወር-ቀን ይጻፉ፣ ለምሳሌ 2025-12-31፣ ከተፈለገ እንደ 14:30 ያለ ሰዓት ጋር።
+search_bad_range = የቀን ክልሉ መጨረሻ ከመጀመሪያው በፊት ነው።
+search_none_any = የሚዛመዱ መልዕክቶች የሉም።
+search_found_one_any = 1 መልዕክት ተገኝቷል።
+search_found_many_any = {count} መልዕክቶች ተገኝተዋል።
+search_failed = ፍለጋው አልተሳካም።
+
+# The related messages tab
+related_running = በመፈለግ ላይ...
+related_none = ተዛማጅ መልዕክቶች አልተገኙም።
+related_found_one = 1 ተዛማጅ መልዕክት ተገኝቷል።
+related_found_many = {count} ተዛማጅ መልዕክቶች ተገኝተዋል።
+related_failed = ተዛማጅ መልዕክቶችን መፈለግ አልተቻለም።
+
+# Writing and sending
+sending_via = በ{sender} በኩል በመላክ ላይ...
+send_failed = መላኩ አልተሳካም። ለዝርዝር መዝገቦቹን ይመልከቱ።
+draft_autosaved = ረቂቁ በራስ-ሰር ተቀምጧል።
+draft_autosave_failed = ረቂቁን በራስ-ሰር ማስቀመጥ አልተሳካም። ለዝርዝር መዝገቦቹን ይመልከቱ።
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = ከ{sender} ለሚመጡ መልዕክቶች የርቀት ይዘት አሁን ይጫናል።
+downloading_attachment = {filename} በማውረድ ላይ...
+downloading_attachments_one = 1 አባሪ በማውረድ ላይ...
+downloading_attachments_many = {count} አባሪዎች በማውረድ ላይ...
+saved_to = በ{folder} ውስጥ ተቀምጧል
+attachment_download_failed = አባሪውን ማውረድ አልተሳካም።
+
+# Getting mail onto the screen
+loading_folder = የ{account} {folder} በመጫን ላይ...
+messages_in_folder = በ{folder} ውስጥ {count} መልዕክቶች።
+messages_in_folder_cached = በ{folder} ውስጥ {count} መልዕክቶች (መጨረሻ የተመሳሰለ ቅጂ፣ በማዘመን ላይ...)
+no_offline_copy = የ{folder} ከመስመር ውጭ ቅጂ ገና የለም።
+refresh_failed_cached = {folder} ማደስ አልተቻለም፦ መጨረሻ የተመሳሰለው ቅጂ እየታየ ነው።
+no_such_folder = ይህ መለያ {folder} አቃፊ የለውም።
+load_failed = መልዕክቶችን መጫን አልተቻለም። ለዝርዝር መዝገቦቹን ይመልከቱ።
+no_more_to_load = በዚህ አቃፊ ውስጥ ለመጫን ተጨማሪ መልዕክቶች የሉም።
+loading_more = በ{folder} ውስጥ ተጨማሪ መልዕክቶችን በመጫን ላይ...
+more_loaded = ተጨማሪ {count} መልዕክቶች ተጭነዋል።
+no_more_messages = በዚህ አቃፊ ውስጥ ተጨማሪ መልዕክቶች የሉም።
+load_more_failed = ተጨማሪ መልዕክቶችን መጫን አልተቻለም፦ {error}
+loading_unified = የተዋሃደ {folder} በመጫን ላይ...
+messages_in_unified = በተዋሃደ {folder} ውስጥ በሁሉም መለያዎች {count} መልዕክቶች።
+messages_in_unified_cached = በተዋሃደ {folder} ውስጥ {count} መልዕክቶች (መጨረሻ የተመሳሰለ ቅጂ፣ በማዘመን ላይ...)
+auto_purge_done = ራስ-ሰር ጽዳት ከቆሻሻ መጣያ/አይፈለጌ {count} የቆዩ መልዕክቶችን አስወግዷል።
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = ዝግጁ።
+opening_message = መልዕክቱን በመክፈት ላይ...
+opening_message_already = መልዕክቱን በመክፈት ላይ... (አስቀድሞ በመጫን ላይ)
+could_not_open_message = መልዕክቱን መክፈት አልተቻለም።
+could_not_open_that_message = ያንን መልዕክት መክፈት አልተቻለም።
+could_not_load_message = ይህን መልዕክት መጫን አልተቻለም።
+message_still_loading = ያ መልዕክት አሁንም በመጫን ላይ ነው።
+folder_still_loading = አቃፊው አሁንም በመጫን ላይ ነው -- ከትንሽ ጊዜ በኋላ እንደገና ይሞክሩ።
+not_in_thread = ይህ መልዕክት የማንኛውም ክር አካል አይደለም።
+no_longer_in_thread = ይህ መልዕክት ከእንግዲህ በክር ውስጥ የለም።
+thread_position = በዚህ ክር ውስጥ ከ{total} {position}ኛ መልዕክት።
+thread_finished_one = ክሩ አልቋል (1 መልዕክት)።
+thread_finished_many = ክሩ አልቋል ({count} መልዕክቶች)።
+select_message_first = መጀመሪያ መልዕክት ይምረጡ።
+conversation_failed = ይህን ውይይት መክፈት አልተቻለም።
+select_message_for_related = ተዛማጅ መልዕክቶችን ለማየት መጀመሪያ መልዕክት ይምረጡ።
+looking_for_related = ተዛማጅ መልዕክቶችን በመፈለግ ላይ...
+no_threading_headers = ይህ መልዕክት ለመፈለግ Message-ID ወይም የክር ራስጌዎች የሉትም።
+reply_one_at_a_time = ምላሽ በአንድ ጊዜ ለአንድ መልዕክት ይሰራል። እባክዎ አንድ መልዕክት ብቻ ይምረጡ።
+select_message_to_reply = ምላሽ ለመስጠት መጀመሪያ መልዕክት ይምረጡ።
+preparing_reply = ምላሹን በማዘጋጀት ላይ...
+reply_load_failed = ለምላሽ ዋናውን መልዕክት መጫን አልተቻለም።
+select_message_to_forward = ለማስተላለፍ መጀመሪያ መልዕክት ይምረጡ።
+preparing_forward = መልዕክቱን ለማስተላለፍ በማዘጋጀት ላይ...
+forward_load_failed = የሚተላለፈውን መልዕክት መጫን አልተቻለም።
+compose_tab_needed_hint = ያ ትዕዛዝ የመጻፊያ ትር ያስፈልገዋል። መልዕክት ለመጻፍ Ctrl+N ይጫኑ።
+open_message_first_view = መጀመሪያ መልዕክት ይክፈቱ፣ ከዚያ እይታውን ለመቀየር Ctrl+B ይጫኑ።
+open_message_first_remote = መጀመሪያ መልዕክት ይክፈቱ፣ ከዚያ የርቀት ይዘቱን ለመጫን Ctrl+Shift+I ይጫኑ።
+
+# Acting on messages
+copying_message = መልዕክቱን በመቅዳት ላይ...
+copy_failed = መቅዳት አልተሳካም።
+delete_failed = መሰረዝ አልተሳካም።
+already_in_archive = አስቀድሞ በማህደር ውስጥ ነው።
+archiving = ወደ ማህደር በመላክ ላይ...
+archive_failed = ወደ ማህደር መላክ አልተሳካም።
+action_failed = {action} አልተሳካም።
+nothing_to_undo = ለመቀልበስ ምንም የለም።
+private_mode_on = የግል ሁነታ በርቷል። ZBox በዚህ ኮምፒዩተር ላይ የያዛቸው የደብዳቤዎ ቅጂዎች ተሰርዘዋል።
+private_mode_off = የግል ሁነታ ጠፍቷል። ZBox የደብዳቤዎን ቅጂዎች እንደገና ይይዛል።
+undo_failed = {action} መቀልበስ አልተቻለም።
+
+# Views and folders
+folder_pane_all = የአቃፊ መቃን፦ ሁሉም አቃፊዎች።
+folder_pane_unified = የአቃፊ መቃን፦ የተዋሃዱ አቃፊዎች።
+sorted_ascending = በ{field} ተደርድሯል፣ ከትንሽ ወደ ትልቅ።
+sorted_descending = በ{field} ተደርድሯል፣ ከትልቅ ወደ ትንሽ።
+unified_folders_updated = የተዋሃዱ አቃፊዎች ተዘምነዋል።
+zoom_reset = የመልዕክት የፊደል መጠን ወደ ነባሪ ተመልሷል።
+folder_creating = "{folder}" አቃፊ በመፍጠር ላይ...
+folder_created = "{folder}" አቃፊ ተፈጥሯል።
+folder_create_failed = አቃፊውን መፍጠር አልተቻለም።
+folder_renaming = "{folder}" ወደ "{new_name}" በመሰየም ላይ...
+folder_renamed = አቃፊው ወደ "{new_name}" ተሰይሟል።
+folder_rename_failed = አቃፊውን እንደገና መሰየም አልተቻለም።
+folder_deleting = "{folder}" አቃፊ በመሰረዝ ላይ...
+folder_deleted = አቃፊው ተሰርዟል።
+folder_delete_failed = አቃፊውን መሰረዝ አልተቻለም።
+folder_subscribing = ለ"{folder}" በመመዝገብ ላይ...
+folder_unsubscribing = ከ"{folder}" ምዝገባ በመውጣት ላይ...
+folder_subscribed = ተመዝግቧል።
+folder_unsubscribed = ምዝገባ ተሰርዟል።
+folder_subscribe_failed = ለአቃፊው መመዝገብ አልተቻለም።
+folder_unsubscribe_failed = ከአቃፊው ምዝገባ መውጣት አልተቻለም።
+
+# Accounts
+account_not_added = መለያው አልተጨመረም።
+account_added = መለያ ተጨምሯል፦ {account}
+account_settings_not_saved = የመለያ ቅንብሮች አልተቀመጡም።
+account_updated = መለያ ተዘምኗል፦ {account}
+account_not_removed = መለያው አልተወገደም።
+account_removed = መለያው ተወግዷል።
+account_removed_with_files = መለያው ተወግዷል። {count} የአካባቢ ፋይሎች ተሰርዘዋል።
+default_account_failed = ነባሪ መለያውን ማዘጋጀት አልተቻለም።
+default_account_set = {account} አሁን ነባሪ መለያ ነው።
+auto_check_not_saved = የራስ-ሰር ፍተሻ ቅንብር አልተቀመጠም።
+mute_not_saved = የድምጸ-ከል ቅንብር አልተቀመጠም።
+account_muted = {account} ድምጸ-ከል ተደርጓል።
+account_unmuted = {account} ድምጸ-ከል ተነስቷል።
+export_done = {count} መለያዎች እና ቅንብሮች ወደ {path} ተልከዋል።
+import_done = {count} መለያዎች ከ{path} ገብተዋል።
+
+# Filters, cache and the background lists
+filters_not_saved = ማጣሪያዎቹ አልተቀመጡም።
+filters_saved = ለ{account} ማጣሪያዎች ተቀምጠዋል።
+filters_checking = {folder} በማጣሪያዎችዎ በመፈተሽ ላይ...
+filters_none_matched = አሁን አሂድ፦ በ{folder} ውስጥ ምንም መልዕክት ከማንኛውም የነቃ ደንብ ጋር አልተዛመደም።
+filters_run_failed = ማጣሪያዎቹን ማሄድ አልተቻለም።
+filters_moving = የተጣሩ {count} መልዕክቶችን በማንቀሳቀስ ላይ...
+filters_move_failures = ማጣሪያዎች፦ {count} መልዕክቶችን ማንቀሳቀስ አልተቻለም።
+filters_moved = ማጣሪያዎች ከ{folder} {count} መልዕክቶችን አንቀሳቅሰዋል።
+filters_move_failed = የተጣሩ መልዕክቶችን ማንቀሳቀስ አልተቻለም።
+cache_not_cleared = መሸጎጫው አልጸዳም።
+auto_cache_cleanup = ራስ-ሰር የመሸጎጫ ጽዳት፦ ከ{age} የቆዩ መልዕክቶች።
+phishing_update_failed = የማጭበርበር ዝርዝርን ማዘመን አልተቻለም፦ {error}
+blocklist_update_failed = የዕገዳ ዝርዝርን ማዘመን አልተቻለም፦ {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = መጀመሪያ መልዕክት ይክፈቱ፣ ከዚያ እንደ አስቀምጥ ይጠቀሙ።
+saving_message = መልዕክቱን በማስቀመጥ ላይ...
+save_file_failed = ፋይሉን ማስቀመጥ አልተቻለም።
+save_fetch_failed = ለማስቀመጥ መልዕክቱን ማምጣት አልተቻለም።
+open_message_first_print = መጀመሪያ መልዕክት ይክፈቱ፣ ከዚያ አትም ይጠቀሙ።
+open_message_first_preview = መጀመሪያ መልዕክት ይክፈቱ፣ ከዚያ የህትመት ቅድመ እይታ ይጠቀሙ።
+refreshing_accounts = {count} መለያዎችን በማደስ ላይ...
+emptying_trash = የ{account} ቆሻሻ መጣያ በማጽዳት ላይ...
+trash_already_empty = ቆሻሻ መጣያው አስቀድሞ ባዶ ነበር።
+trash_emptied = ቆሻሻ መጣያ ባዶ ሆኗል፦ {count} መልዕክቶች ተሰርዘዋል።
+empty_trash_failed = ቆሻሻ መጣያውን ባዶ ማድረግ አልተቻለም።
+emptying_junk = የ{account} አይፈለጌ መልዕክት በማጽዳት ላይ...
+junk_already_empty = አይፈለጌ መልዕክት አስቀድሞ ባዶ ነበር።
+junk_emptied = አይፈለጌ መልዕክት ባዶ ሆኗል፦ {count} መልዕክቶች ተሰርዘዋል።
+junk_emptied_prefix = አይፈለጌ መልዕክት ባዶ ሆኗል፦
+junk_part_purged = {count} ተሰርዘዋል
+junk_part_in_trash = {count} ወደ ቆሻሻ መጣያ ተወስደዋል ነገር ግን መወገዳቸው አልተረጋገጠም፣ ቆሻሻ መጣያውን ይመልከቱ
+junk_part_not_moved = {count} ወደ ቆሻሻ መጣያ አልተወሰዱም፣ አሁንም በአይፈለጌ መልዕክት ውስጥ ናቸው
+empty_junk_failed = አይፈለጌ መልዕክትን ባዶ ማድረግ አልተቻለም።
+back_online = እንደገና በመስመር ላይ ነው።
+offline_sync_running = ለከመስመር ውጭ አጠቃቀም {account} በማመሳሰል ላይ...
+offline_sync_failed = ከመስመር ውጭ ማመሳሰል አልተሳካም፦ {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = መጀመሪያ መልዕክት ይምረጡ ወይም ይክፈቱ።
+select_or_open_message_ctrl_u = መጀመሪያ መልዕክት ይምረጡ ወይም ይክፈቱ፣ ከዚያ Ctrl+U ይጫኑ።
+no_sender_address = ይህ መልዕክት ለመጨመር የላኪ አድራሻ የለውም።
+contact_added = {contact} ወደ የአድራሻ መጽሐፍዎ ተጨምሯል።
+contact_already_there = {contact} አስቀድሞ በአድራሻ መጽሐፍዎ ውስጥ አለ።
+privacy_saved = የግላዊነት ቅንብሮች ተቀምጠዋል። ለመተግበር መልዕክቱን እንደገና ይክፈቱ።
+message_font_size = የመልዕክት የፊደል መጠን፦ {size} pt።
+
+# Deleting and moving several messages
+deleting_one = መልዕክቱን እስከመጨረሻው በመሰረዝ ላይ
+deleting_many = {count} መልዕክቶችን እስከመጨረሻው በመሰረዝ ላይ
+trashing_one = መልዕክቱን ወደ ቆሻሻ መጣያ በማንቀሳቀስ ላይ
+trashing_many = {count} መልዕክቶችን ወደ ቆሻሻ መጣያ በማንቀሳቀስ ላይ
+undo_partly_restored = {action} ተቀልብሷል፣ ነገር ግን {count} መመለስ አልተቻለም -- ከዚያ በኋላ ተንቀሳቅሰው፣ ተሰርዘው ወይም ጊዜያቸው አልፎ ሊሆን ይችላል።
+moves_report = {action}፦ ከ{total} {moved} መልዕክቶች ተንቀሳቅሰዋል።
+moves_report_failed = አልተንቀሳቀሱም፣ አሁንም በዋናው አቃፊ ውስጥ ናቸው፦ {count}።
+
+tray_tooltip_one = ZBox — 1 ያልተነበበ መልዕክት
+tray_tooltip_many = ZBox — {count} ያልተነበቡ መልዕክቶች
+account_unreachable = {account} ላይ መድረስ አልተቻለም። ራስ-ሰር ፍተሻዎቹ ለ{minutes} ደቂቃዎች ይቆማሉ።
+bulk_copy_failed = መልዕክቶችን መቅዳት አልተቻለም።
+bulk_copy_failed_status = መቅዳት አልተሳካም።
+bulk_loading_archive = መልዕክቶች አሁንም በመጫን ላይ ናቸው -- ከትንሽ ጊዜ በኋላ እንደገና ወደ ማህደር ለመላክ ይሞክሩ።
+bulk_loading_delete = መልዕክቶች አሁንም በመጫን ላይ ናቸው -- ከትንሽ ጊዜ በኋላ እንደገና ለመሰረዝ ይሞክሩ።
+bulk_loading_flag = መልዕክቶች አሁንም በመጫን ላይ ናቸው -- ከትንሽ ጊዜ በኋላ እንደገና ኮከብ ለማድረግ ይሞክሩ።
+bulk_loading_generic = መልዕክቶች አሁንም በመጫን ላይ ናቸው -- ከትንሽ ጊዜ በኋላ እንደገና ይሞክሩ።
+bulk_none = ምንም መልዕክት አልተመረጠም።
+bulk_none_archive = ወደ ማህደር ለመላክ ምንም መልዕክት አልተመረጠም።
+bulk_none_delete = ለመሰረዝ ምንም መልዕክት አልተመረጠም።
+bulk_none_junk = እንደ አይፈለጌ ምልክት ለማድረግ ምንም መልዕክት አልተመረጠም።
+bulk_none_not_junk = አይፈለጌ አይደለም ብሎ ምልክት ለማድረግ ምንም መልዕክት አልተመረጠም።
+delete_refused_still = አገልጋዩ ለመሰረዝ ፈቃደኛ አልሆነም፤ አሁንም በ{folder} ውስጥ ነው።
+delete_refused_trash = በቆሻሻ መጣያ ውስጥ ነው፣ ነገር ግን አገልጋዩ እስከመጨረሻው ለመሰረዝ ፈቃደኛ አልሆነም።
+delete_resume_failed = ከቀዳሚው ስረዛ {count} መልዕክቶችን መሰረዝ አልተቻለም።
+done_perm_delete_one = መልዕክቱ እስከመጨረሻው ተሰርዟል።
+done_trash_one = መልዕክቱ ወደ ቆሻሻ መጣያ ተወስዷል።
+filters_applied = በ{folder} ውስጥ ባሉ {count} መልዕክቶች ላይ ማጣሪያዎች ተተግብረዋል።
+filters_failed = ማጣሪያዎቹን ማሄድ አልተቻለም።
+filters_running = በ{folder} ላይ ማጣሪያዎችን በማሄድ ላይ
+flag_failed = ኮከቡን ማዘመን አልተቻለም።
+flag_updated = ኮከቡ ተዘምኗል።
+folder_verb_subscribing = በመመዝገብ ላይ
+folder_verb_unsubscribing = ምዝገባን በመሰረዝ ላይ
+mark_read_failed = መልዕክቶችን እንደተነበቡ ምልክት ማድረግ አልተቻለም።
+mark_unread_failed = መልዕክቶችን እንዳልተነበቡ ምልክት ማድረግ አልተቻለም።
+notify_new_mail_body = ለ{name} {count} {noun}።
+notify_new_mail_title = አዲስ ደብዳቤ
+notify_noun_many = አዲስ መልዕክቶች
+notify_noun_one = አዲስ መልዕክት
+report_done = ከ{count} መልዕክቶች {done} {verb}።
+report_verb_deleted = ተሰርዘዋል
+report_verb_permanent = እስከመጨረሻው ተሰርዘዋል
+running_copy_many = {count} መልዕክቶችን በመቅዳት ላይ
+running_copy_one = መልዕክቱን በመቅዳት ላይ
+running_junk_many = {count} መልዕክቶችን እንደ አይፈለጌ ምልክት በማድረግ ላይ
+running_junk_one = እንደ አይፈለጌ ምልክት በማድረግ ላይ
+running_move_many = {count} መልዕክቶችን በማንቀሳቀስ ላይ
+running_move_one = በማንቀሳቀስ ላይ
+running_not_junk_many = {count} መልዕክቶችን አይፈለጌ አይደሉም ብሎ ምልክት በማድረግ ላይ
+running_not_junk_one = አይፈለጌ አይደለም ብሎ ምልክት በማድረግ ላይ
+running_perm_delete_one = መልዕክቱን እስከመጨረሻው በመሰረዝ ላይ...
+running_read_many = {count} መልዕክቶችን እንደተነበቡ ምልክት በማድረግ ላይ
+running_read_one = እንደተነበበ ምልክት በማድረግ ላይ
+running_trash_one = መልዕክቱን ወደ ቆሻሻ መጣያ በማንቀሳቀስ ላይ...
+running_unread_many = {count} መልዕክቶችን እንዳልተነበቡ ምልክት በማድረግ ላይ
+running_unread_one = እንዳልተነበበ ምልክት በማድረግ ላይ
+settings_saved_no_startup = ቅንብሮች ተቀምጠዋል። የWindows ማስጀመሪያ ግቤትን ማዘመን አልተቻለም።
+settings_saved_status = ቅንብሮች ተቀምጠዋል።
+spam_blocked_sender = የታገደ ላኪ
+spam_possible_phishing = ሊሆን የሚችል ማጭበርበር
+undo_running_many = {action} በመቀልበስ ላይ ({count} መልዕክቶች)
+undo_running_one = {action} በመቀልበስ ላይ
+mark_folder_read_failed = አቃፊውን እንደተነበበ ምልክት ማድረግ አልተቻለም።
+marking_folder_read = አቃፊውን እንደተነበበ ምልክት በማድረግ ላይ...
+upd_ready_at_exit = ዝመናው አስቀድሞ ወርዷል። ከZBox ሲወጡ ይጫናል።
+upd_checking = ዝመናዎችን በመፈተሽ ላይ...
+upd_up_to_date = ZBox የተዘመነ ነው።
+upd_available_source = ZBox {version} ይገኛል። ይህ ቅጂ ከምንጭ እየሄደ ነው፣ ስለዚህ በgit ያዘምኑት።
+upd_check_failed = ዝመናዎችን መፈተሽ አልተቻለም፦ {error}
+opening_attachment = {filename} በመክፈት ላይ...
+loading_headers = ራስጌዎችን በመጫን ላይ...
+offline_inbox_only = ለከመስመር ውጭ አጠቃቀም የገቢ መልዕክት ሳጥን እና ማህደር ብቻ ይቀመጣሉ።
+offline_sync_done_inbox = ለከመስመር ውጭ አጠቃቀም በገቢ መልዕክት ሳጥን እና ማህደር ውስጥ {count} መልዕክቶች ተመሳስለዋል።
+working_offline = ከመስመር ውጭ በመስራት ላይ፦ የገቢ መልዕክት ሳጥን/የተላኩ/ረቂቆች መጨረሻ የተመሳሰለ ቅጂ እየታየ ነው።
+emptying_trash_all = የሁሉንም መለያዎች ቆሻሻ መጣያ በማጽዳት ላይ...
+trash_emptied_all = በ{accounts} መለያዎች ቆሻሻ መጣያ ባዶ ሆኗል፦ {count} መልዕክቶች ተሰርዘዋል።
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &ፋይል
+bar_edit = &አርትዕ
+bar_view = &እይታ
+bar_message = &መልዕክት
+bar_compose = &ጻፍ
+bar_tools = &መሣሪያዎች
+bar_help = &እገዛ
+
+# File
+file_new = አዲስ
+file_new_message = መልዕክት
+file_new_account = የኢሜይል መለያ...
+file_open_saved_message = የተቀመጠ መልዕክት ክፈት...
+file_close = ዝጋ
+file_save_message_as = መልዕክቱን እንደ አስቀምጥ...
+file_get_new_for = አዲስ መልዕክቶችን አግኝ
+file_get_new_all = ሁሉም መለያዎች
+file_get_new_current = የአሁኑ መለያ
+file_offline = ከመስመር ውጭ
+file_work_offline = ከመስመር ውጭ ሥራ
+file_sync_now = አሁን አመሳስል
+file_print = አትም...
+file_print_preview = የህትመት ቅድመ እይታ...
+file_exit = ውጣ
+
+# Edit
+edit_undo = ቀልብስ
+edit_select_all = ሁሉንም ምረጥ
+edit_find_messages = መልዕክቶችን ፈልግ...
+
+# Message
+message_reply = ምላሽ ስጥ
+message_reply_all = ለሁሉም ምላሽ ስጥ
+message_forward = አስተላልፍ
+message_archive = ወደ ማህደር ላክ
+message_delete = ሰርዝ
+message_delete_permanently = እስከመጨረሻው ሰርዝ
+message_mark = ምልክት አድርግ
+mark_read = የተነበበ
+mark_unread = ያልተነበበ
+mark_flagged = ኮከብ የተደረገበት
+mark_junk = አይፈለጌ
+mark_not_junk = አይፈለጌ አይደለም
+message_watch_thread = ክሩን ተከታተል
+message_ignore_thread = ክሩን ችላ በል
+message_open_conversation = መልዕክቱን በውይይት ክፈት
+message_show_related = ተዛማጅ መልዕክቶችን አሳይ
+message_add_sender_to_address_book = ላኪውን ወደ የአድራሻ መጽሐፍ ጨምር
+message_announce_sender = ላኪውን አውጅ
+message_announce_copy_sender = ላኪውን አውጅና አድራሻውን ቅዳ
+
+# View
+view_folders = አቃፊዎች
+folders_all = ሁሉም
+folders_unified = የተዋሃዱ
+folders_jump_inbox = ወደ የገቢ መልዕክት ሳጥን የመልዕክት ዝርዝር ዝለል
+folders_configure_unified = የተዋሃዱ አቃፊዎችን አዋቅር...
+view_sort_by = ደርድር በ
+sort_date = ቀን
+sort_subject = ርዕስ
+sort_from = ላኪ
+sort_descending = ከትልቅ ወደ ትንሽ (አዲስ መጀመሪያ)
+sort_ascending = ከትንሽ ወደ ትልቅ (አሮጌ መጀመሪያ)
+view_threads = ክሮች
+threads_all = ሁሉም
+threads_watched = የሚከታተሉ ክሮች
+threads_ignored = ችላ የተባሉ ክሮች
+threads_expand_all = ሁሉንም ክሮች ዘርጋ
+threads_collapse_all = ሁሉንም ክሮች ጠቅልል
+view_load_more = ተጨማሪ መልዕክቶችን ጫን
+view_toggle_message_view = በጽሑፍ እና HTML እይታ መካከል ቀይር
+view_show_remote_content = በዚህ መልዕክት የርቀት ይዘትን አሳይ
+view_message_zoom = የመልዕክት ማጉላት
+zoom_increase = የመልዕክት የፊደል መጠን ጨምር
+zoom_decrease = የመልዕክት የፊደል መጠን ቀንስ
+zoom_reset = የመልዕክት የፊደል መጠን መልስ
+
+# Compose
+compose_send = &ላክ
+compose_save_draft = &ረቂቅ አስቀምጥ
+compose_attach = &ፋይል አያይዝ...
+compose_fmt_bold = &ደማቅ
+compose_fmt_italic = &ሰያፍ
+compose_fmt_strike = &የተሰመረበት
+compose_fmt_bullet = &ነጥብ ዝርዝር
+compose_fmt_number = &ቁጥር ዝርዝር
+compose_fmt_quote = &ጥቅስ
+compose_fmt_code = &ኮድ
+compose_fmt_heading1 = &ርዕስ
+compose_link = &አገናኝ አስገባ...
+compose_formatting = &እዚህ ቅርጸት
+compose_spellcheck = &ፊደል አረጋግጥ...
+compose_spellcheck_next = &ቀጣይ የፊደል ስህተት
+compose_spellcheck_add = &ቃሉን ወደ መዝገበ ቃላት ጨምር
+compose_insert_signature = &ፊርማ አስገባ
+compose_paste_quotation = &እንደ ጥቅስ ለጥፍ
+compose_word_count = &የቃላት ቆጠራ
+compose_preview = &ቅድመ እይታ...
+compose_diagnostics = &የመጻፊያ ምርመራ...
+compose_edit_signature = &ፊርማ አርትዕ...
+compose_hotkeys_diagnostic = &የአቋራጭ ቁልፍ ምርመራ
+
+# Tools
+tools_account_settings = የመለያ እና ማንነት ቅንብሮች...
+tools_mute_account = መለያውን ድምጸ-ከል አድርግ
+tools_pause_auto_check = ራስ-ሰር ፍተሻን አቁም
+tools_disable_account = መለያውን አሰናክል
+tools_remove_account = መለያውን አስወግድ...
+tools_address_book = የአድራሻ መጽሐፍ...
+tools_message_filters = የመልዕክት ማጣሪያዎች...
+tools_import = መለያዎችን እና ቅንብሮችን አስገባ...
+tools_export = መለያዎችን እና ቅንብሮችን ላክ...
+tools_cache_cleanup = የመሸጎጫ ጽዳት ውቅር...
+tools_privacy = ግላዊነት እና የይዘት ዕገዳ...
+tools_settings = ቅንብሮች...
+
+# Help
+help_shortcuts = የቁልፍ ሰሌዳ አቋራጮች...
+help_about = ስለ ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = አዲስ መለያ...
+tree_account_settings = የመለያ እና ማንነት ቅንብሮች...
+tree_mute_account = መለያውን ድምጸ-ከል አድርግ
+tree_pause_auto_check = ራስ-ሰር ፍተሻን አቁም
+tree_enable_account = መለያውን አንቃ
+tree_disable_account = መለያውን አሰናክል
+tree_set_default_account = እንደ ነባሪ መለያ አዘጋጅ
+tree_remove_account = መለያውን አስወግድ...
+tree_refresh = አድስ
+tree_new_folder = አዲስ አቃፊ...
+tree_empty_trash = ቆሻሻ መጣያ አጽዳ
+tree_empty_junk = አይፈለጌ መልዕክት አጽዳ
+tree_rename_folder = አቃፊ እንደገና ሰይም...
+tree_delete_folder = አቃፊ ሰርዝ...
+tree_subscribe_folder = ለአቃፊ ተመዝገብ
+tree_unsubscribe_folder = ከአቃፊ ምዝገባ ውጣ
+
+# The message list menu, opened the same two ways
+list_select_all = ሁሉንም ምረጥ
+list_reply = ምላሽ ስጥ
+list_reply_all = ለሁሉም ምላሽ ስጥ
+list_forward = አስተላልፍ
+list_mark = ምልክት አድርግ
+list_archive = ወደ ማህደር ላክ
+list_delete_to_trash = ሰርዝ (ወደ ቆሻሻ መጣያ ውሰድ)
+list_delete_permanently = እስከመጨረሻው ሰርዝ
+list_move_to = ውሰድ
+list_copy_to = ቅዳ
+
+# The notification area icon
+tray_open = &ZBox ክፈት
+tray_unread_one = 1 ያልተነበበ መልዕክት
+tray_unread_many = {count} ያልተነበቡ መልዕክቶች
+tray_no_unread = ያልተነበቡ መልዕክቶች የሉም
+tray_settings = &ቅንብሮች...
+tray_quit = &ከZBox ውጣ
+
+# The formatting menu inside a message you are writing
+format_bold = &ደማቅ
+format_italic = &ሰያፍ
+format_strike = &የተሰመረበት
+format_bullet = &ነጥብ ዝርዝር
+format_number = &ቁጥር ዝርዝር
+format_quote = &ጥቅስ
+format_code = &ኮድ
+format_heading1 = &ርዕስ
+format_insert_link = &አገናኝ አስገባ...
+format_formatting_here = &እዚህ ቅርጸት
+tools_enable_account = መለያውን አንቃ
+edit_undo_action = {action} ቀልብስ
+tree_mark_folder_read = አቃፊውን እንደተነበበ ምልክት አድርግ
+help_updates = &ዝመናዎች
+help_check_updates = &አሁን ዝመናዎችን ፈትሽ...
+help_update_settings = &የዝመና ቅንብሮች
+help_releases_page = &የልቀቶች ገጽ ክፈት
+message_attachments = አባሪዎች
+message_no_attachments = አባሪዎች የሉም
+message_save_all_attachments = ሁሉንም አባሪዎች አስቀምጥ
+view_full_headers = ሙሉ ራስጌዎች
+folders_go_to_tree = ወደ የአቃፊ ዝርዝር ሂድ
+list_block_sender = ይህን ላኪ አግድ
+list_unblock_sender = የዚህን ላኪ ዕገዳ አንሳ
+sort_received = የተቀበሉት
+sort_star = ኮከብ
+sort_order_received = የተቀበሉበት ቅደም ተከተል
+sort_priority = ቅድሚያ
+sort_recipient = ተቀባይ
+sort_correspondents = ተጻጻፊዎች
+sort_size = መጠን
+sort_read = የተነበበ
+sort_junk_status = የአይፈለጌ ሁኔታ
+sort_attachments = አባሪዎች
+sort_threaded = በክር
+sort_unthreaded = ያለ ክር
+view_columns = ዓምዶች
+tools_openpgp_keys = የOpenPGP ቁልፍ አስተዳዳሪ
+tools_smime_certs = የS/MIME የምስክር ወረቀት አስተዳዳሪ
+compose_pgp_encrypt = &አመስጥር
+compose_pgp_sign = &በዲጂታል ፈርም
+compose_pgp_attach_key = &የእኔን ይፋዊ ቁልፍ አያይዝ
+
+[dialogs]
+set_theme_restart_confirm = የገጽታ ለውጡን ለመተግበር ZBox እንደገና ይጀመር?
+set_ui_theme_label = &የበይነገጽ ገጽታ፦
+set_ui_theme_note = ለምናሌዎች፣ ዝርዝሮች፣ ንግግሮች እና የመልዕክት ጽሑፍ እይታ ቀለሞች። ስርዓቱን ተከተል የWindows የራሱን ብሩህ ወይም ጨለማ የመተግበሪያ ሁነታ ይጠቀማል። እኩለ ሌሊት ሰማያዊ፣ ሞቃት ጨለማ እና ለስላሳ ንፅፅር ለስላሳ ቀለሞች ያሏቸው ጨለማ ገጽታዎች ናቸው። የHTML መልዕክቶች የራሳቸውን ቀለሞች ይይዛሉ፣ እና የWindows ከፍተኛ ንፅፅር ሁልጊዜ ቅድሚያ አለው። ZBox በሚቀጥለው ጊዜ ሲጀምር ተግባራዊ ይሆናል።
+set_theme_system = ስርዓቱን ተከተል
+set_theme_light = ብሩህ
+set_theme_dark = ጨለማ
+set_theme_midnight = እኩለ ሌሊት ሰማያዊ
+set_theme_warm = ሞቃት ጨለማ
+set_theme_soft = ለስላሳ ንፅፅር
+set_language_restart_confirm = የቋንቋ ለውጡን ለመተግበር ZBox እንደገና ይጀመር?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Harithን ያነጋግሩ
+title_identity = ማንነት
+title_show_password = የይለፍ ቃል አሳይ
+title_missing_information = መረጃ ጎድሏል
+title_unsupported_provider = ያልተደገፈ አቅራቢ
+title_test_connection = ግንኙነት ሞክር
+title_new_contact = አዲስ እውቂያ
+title_edit_contact = እውቂያ አርትዕ
+title_delete_contact = እውቂያ ሰርዝ
+title_import_contacts = እውቂያዎችን አስገባ
+title_export_contacts = እውቂያዎችን ላክ
+title_rename_group = ቡድን እንደገና ሰይም
+title_delete_group = ቡድን ሰርዝ
+title_send = ላክ
+title_send_failed = መላክ አልተሳካም
+title_attach_file = ፋይል አያይዝ
+title_save_draft = ረቂቅ አስቀምጥ
+title_documentation = የZBox ሰነድ
+title_open_link = አገናኝ ክፈት
+title_filter_rule = የማጣሪያ ደንብ
+title_master_password = ዋና የይለፍ ቃል
+title_attachment_saved = አባሪ ተቀምጧል
+title_attachments_saved = አባሪዎች ተቀምጠዋል
+title_download_failed = ማውረድ አልተሳካም
+title_print = አትም
+title_print_preview = የህትመት ቅድመ እይታ
+title_related_messages = ተዛማጅ መልዕክቶች
+title_search = ፈልግ
+title_unlock = ክፈት
+title_unlock_methods = የመክፈቻ ዘዴዎች
+title_desktop_shortcut = የዴስክቶፕ አቋራጭ
+title_spell_check = የፊደል ማረሚያ
+title_plain_text_password = ተራ ጽሑፍ የይለፍ ቃል ተገኝቷል
+title_startup_error = የZBox ማስጀመሪያ ስህተት
+
+identity_email_required = የኢሜይል አድራሻ ያስገቡ።
+
+wizard_password_not_shown = በዚህ ስርዓት ላይ የይለፍ ቃል ማሳየት አይቻልም። አሁንም እንደተለመደው ይጻፋል እና ይቀመጣል።
+wizard_email_required = ከመቀጠልዎ በፊት ትክክለኛ የኢሜይል አድራሻ ያስገቡ።
+wizard_test_needs_server = ከመሞከርዎ በፊት የመግቢያ ኢሜይል እና የገቢ አገልጋይ ያስገቡ።
+wizard_test_succeeded = ግንኙነቱ ተሳክቷል። በገቢ መልዕክት ሳጥን ውስጥ {count} መልዕክቶች ተገኝተዋል።
+
+contact_email_required = የኢሜይል አድራሻ ያስፈልጋል።
+contact_select_to_edit = ለማርትዕ እውቂያ ይምረጡ።
+contact_select_to_delete = ለመሰረዝ እውቂያ ይምረጡ።
+contact_delete_confirm = {label} ከአድራሻ መጽሐፍ ይሰረዝ?
+contacts_import_choose_file = ለማስገባት .vcf (vCard) ወይም .csv ፋይል ይምረጡ።
+contacts_imported = {count} እውቂያዎች ገብተዋል።
+contacts_import_empty = በዚያ ፋይል ውስጥ ምንም እውቂያ አልተገኘም።
+contacts_none_to_export = ለመላክ እውቂያዎች የሉም።
+contacts_exported = {count} እውቂያዎች ወደዚህ ተልከዋል፦\n{path}
+group_name_exists = "{name}" የሚባል ቡድን አስቀድሞ አለ።
+group_delete_confirm = ቡድን "{name}" ይሰረዝ? እውቂያዎቹ አይሰረዙም።
+
+send_no_account = ከመላክዎ በፊት መለያ ያክሉ፣ ወይም በላኪ ውስጥ አንዱን ይምረጡ።
+send_no_recipient = በተቀባይ ውስጥ ቢያንስ አንድ ተቀባይ ያስገቡ።
+draft_no_account = ረቂቅ ከማስቀመጥዎ በፊት መለያ ያክሉ፣ ወይም በላኪ ውስጥ አንዱን ይምረጡ።
+attached_file = ተያይዟል፦ {name}\n\nሲልኩ {count} ፋይሎች ይያያዛሉ።
+
+documentation_copied = ሙሉው የZBox ሰነድ ወደ ቅንጥብ ሰሌዳ ተቀድቷል።
+
+filter_rule_needs_name = ለዚህ ደንብ ስም ይስጡ።
+filter_rule_needs_condition = ቢያንስ አንድ ሁኔታ ያዘጋጁ (ላኪ፣ ተቀባይ ወይም ርዕስ)።
+filter_rule_needs_action = ቢያንስ አንድ ድርጊት ይምረጡ፦ እንደተነበበ ምልክት አድርግ፣ ኮከብ አድርግ፣ ወይም ወደ አቃፊ ውሰድ።
+
+master_password_set = ዋና የይለፍ ቃል ተዘጋጅቷል። በደህና ቦታ ያስቀምጡት፦ ZBox በእያንዳንዱ አዲስ ኮምፒዩተር ላይ አንድ ጊዜ ይጠይቀዋል፣ ከጠፋም መመለስ አይቻልም።
+master_password_offer = ያለ ዋና የይለፍ ቃል፣ የተቀመጡ የመለያ የይለፍ ቃላት በዚህ ኮምፒዩተር እና በዚህ የWindows መለያ ላይ ብቻ ሊነበቡ ይችላሉ። ZBoxን ሌላ ቦታ ከገለበጡ እያንዳንዱ መለያ እንደገና መግባት አለበት።\n\nአሁን አንድ ይዘጋጅ?
+
+attachment_saved = አባሪው እዚህ ተቀምጧል፦\n{path}
+attachments_saved = {count} አባሪዎች እዚህ ተቀምጠዋል፦\n{path}
+
+shortcut_created_settings = አቋራጭ ተፈጥሯል፦\n{path}\n\nZBoxን ከዚህ ይጀምራል፦\n{base}
+
+spellcheck_no_dictionary = የፊደል መዝገበ ቃላት ጎድሏል፣ ስለዚህ በዚህ የZBox ቅጂ ውስጥ የፊደል ማረሚያ አይገኝም።
+spellcheck_none_found = የፊደል ስህተቶች አልተገኙም።
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = በዚህ ኮምፒዩተር ላይ የይለፍ ቁልፍ ይዘጋጅና ከሌላ ኮምፒዩተር የተቀመጠው ይረሳ?\n\nWindows በHello እንዲያረጋግጡ ይጠይቃል። በሌላኛው ኮምፒዩተር ላይ የቀረው አሮጌ የይለፍ ቁልፍ እዚያ አይነካም፣ ይህን አቃፊ ወደዚያ ከወሰዱ መስራቱን ይቀጥላል፣ ግን እንደገና መዘጋጀት አለበት።
+unlock_replace_passkey_many = በዚህ ኮምፒዩተር ላይ የይለፍ ቁልፍ ይዘጋጅና ከሌሎች ኮምፒዩተሮች የተቀመጡት {count} ይረሱ?\n\nWindows በHello እንዲያረጋግጡ ይጠይቃል። በሌላኛው ኮምፒዩተር ላይ የቀሩ አሮጌ የይለፍ ቁልፎች እዚያ አይነኩም፣ ይህን አቃፊ ወደዚያ ከወሰዱ መስራታቸውን ይቀጥላሉ፣ ግን እንደገና መዘጋጀት አለባቸው።
+unlock_method_works = ያ ዘዴ ይሰራል።
+
+plain_text_password_found = data\config\himalaya.toml ከድሮ የመለያ ማዋቀር ተራ ጽሑፍ የይለፍ ቃል (auth.raw) አሁንም ይዟል።\n\nያንን መለያ አስወግደው እንደገና ያክሉት፣ ወይም data\config\himalaya.toml ን ይሰርዙ፣ ስለዚህ ደህንነቱ በተጠበቀ የምስክርነት ማከማቻ ተጠቅሞ እንደገና ይፈጠራል።
+
+# main_frame's titles.
+title_account_list_unavailable = የመለያ ዝርዝር አይገኝም
+title_open_message = መልዕክት ክፈት
+title_run_filters = ማጣሪያዎችን አሂድ
+title_clear_cache = ከመስመር ውጭ የመልዕክት መሸጎጫ አጽዳ
+title_remove_account = መለያ አስወግድ
+title_new_folder = አዲስ አቃፊ
+title_rename_folder = አቃፊ እንደገና ሰይም
+title_delete_folder = አቃፊ ሰርዝ
+title_subscribe = ተመዝገብ
+title_unsubscribe = ምዝገባ ሰርዝ
+title_open_saved_message = የተቀመጠ መልዕክት ክፈት
+title_save_message_as = መልዕክቱን እንደ አስቀምጥ
+title_empty_trash = ቆሻሻ መጣያ አጽዳ
+title_empty_junk = አይፈለጌ መልዕክት አጽዳ
+title_synchronize_offline = ለከመስመር ውጭ አመሳስል
+title_export_accounts = መለያዎችን እና ቅንብሮችን ላክ
+title_import_accounts = መለያዎችን እና ቅንብሮችን አስገባ
+title_show_related = ተዛማጅ መልዕክቶችን አሳይ
+title_reply = ምላሽ ስጥ
+title_forward = አስተላልፍ
+title_undo = ቀልብስ
+title_delete_permanently = እስከመጨረሻው ሰርዝ
+title_delete = ሰርዝ
+title_copy_to = ቅዳ
+title_archive = ወደ ማህደር ላክ
+title_accounts_locked = መለያዎች ተቆልፈዋል
+
+select_account_first = መጀመሪያ በዛፉ ውስጥ መለያ ይምረጡ።
+select_account_or_folder = መጀመሪያ መለያ ወይም አቃፊ ይምረጡ።
+filters_left_behind = {count} መልዕክቶች ከማጣሪያ ጋር ተዛመዱ ነገር ግን አሁንም በ{folder} ውስጥ ናቸው።
+cache_clear_confirm = ለሁሉም መለያዎች ከመስመር ውጭ የመልዕክት መሸጎጫ ይጽዳ?\n\nይህ የZBoxን የአካባቢ ቅጂዎች ብቻ ያስወግዳል። ከማንኛውም የመልዕክት አገልጋይ ምንም አይወገድም፣ እና ሲፈልጉ መልዕክቶች እንደገና ይወርዳሉ።
+account_remove_confirm = {name} ({address}) ይወገድ?\n\nበአገልጋዩ ላይ ያለ ደብዳቤ አይሰረዝም።\nወደዚህ ኮምፒዩተር የወረዱ ቅጂዎች ይሰረዛሉ።\nየተቀመጠው የይለፍ ቃል ይሰረዛል።
+folder_delete_confirm = ለ{address} "{folder}" አቃፊ እና በውስጡ ያለው ሁሉ እስከመጨረሻው ይሰረዝ?\n\nይህ ሊቀለበስ አይችልም።
+empty_trash_confirm = ለ{address} በቆሻሻ መጣያ ውስጥ ያሉ ሁሉም መልዕክቶች እስከመጨረሻው ይሰረዙ?\n\nይህ ሊቀለበስ አይችልም።
+empty_junk_confirm = ለ{address} በአይፈለጌ መልዕክት ውስጥ ያሉ ሁሉም መልዕክቶች እስከመጨረሻው ይሰረዙ?\n\nይህ ሊቀለበስ አይችልም።
+sync_select_account = ለከመስመር ውጭ አጠቃቀም ለማመሳሰል መለያ (የተዋሃደ አቃፊ አይደለም) ይምረጡ።
+accounts_imported = {count} መለያዎች ገብተዋል፦\n\n{names}\n\nየይለፍ ቃላት ፈጽሞ አይላኩም፣ እና የተመሰጠረው የይለፍ ቃል ማከማቻ ለዚህ የWindows ተጠቃሚ መለያ ብቻ የተወሰነ ነው፣ ስለዚህ እያንዳንዱ የገባ መለያ ከመገናኘቱ በፊት በመሣሪያዎች > የመለያ እና ማንነት ቅንብሮች በኩል የይለፍ ቃሉን አንድ ጊዜ ማስገባት አለበት።
+accounts_import_none = በዚህ ፋይል ውስጥ ምንም መለያ አልተገኘም። ፋይሉ ቅንብሮች ከያዘ እነሱ አሁንም ገብተዋል።
+delete_permanently_confirm_one = ይህ መልዕክት እስከመጨረሻው ይሰረዝ? ይህ የቆሻሻ መጣያ አቃፊውን ይዘልላል እና ሊቀለበስ አይችልም።
+accounts_locked = የተቀመጡ የመለያ የይለፍ ቃላት በሌላ ኮምፒዩተር ላይ ተጽፈዋል፣ ስለዚህ እዚህ ሊነበቡ አይችሉም።\n\nእያንዳንዱ መለያ ወደ የመልዕክት አገልጋዩ እንደገና መግባት አለበት። ይህን በሚቀጥለው ጊዜ ለማስቀረት፣ መለያዎቹ አስቀድመው በሚሰሩበት ኮምፒዩተር ላይ ከቅንብሮች፣ የመተግበሪያ እና የውሂብ ደህንነት ዋና የይለፍ ቃል ያዘጋጁ።
+master_password_remove_confirm = ዋና የይለፍ ቃል ይወገድ? የተቀመጡ የመለያ የይለፍ ቃላት ከዚያ በኋላ በዚህ ኮምፒዩተር እና በዚህ የWindows መለያ ላይ ብቻ ሊነበቡ ይችላሉ። በኋላ ZBoxን ሌላ ቦታ ከገለበጡ እያንዳንዱ መለያ እንደገና መግባት አለበት።\n\nአሁን ይወገድ?
+shortcut_offer = የZBox አቋራጭ በዴስክቶፕ ላይ ይቀመጥ?\n\nይህን የZBox አቃፊ ይጀምራል፦\n{path}\n\nአቋራጩ ይህን ትክክለኛ ቦታ ያስታውሳል። በኋላ የZBox አቃፊን ከወሰዱ፣ ቅንብሮችን፣ የስርዓት መሣቢያ እና መስኮትን ይክፈቱና ወደ አዲሱ ቦታ እንዲያመለክት የዴስክቶፕ አቋራጭ ፍጠር እንደገና ይምረጡ።
+shortcut_created = አቋራጭ ተፈጥሯል፦\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = የሚታይ ስም
+form_email_address = የኢሜይል አድራሻ
+form_your_name = የእርስዎ ስም
+form_login_email = የመግቢያ ኢሜይል
+form_password = የይለፍ ቃል
+srv_imap_host = የገቢ (IMAP) አገልጋይ
+srv_imap_port = የገቢ ወደብ
+srv_imap_encryption = የገቢ ምስጠራ
+srv_smtp_host = የወጪ (SMTP) አገልጋይ
+srv_smtp_port = የወጪ ወደብ
+srv_smtp_encryption = የወጪ ምስጠራ
+
+acct_login_email_label = የመግቢያ ኢሜይል (ለመግባት ጥቅም ላይ ይውላል)
+acct_new_password_label = አዲስ የይለፍ ቃል (የአሁኑን ለማቆየት ባዶ ይተዉ)
+acct_new_password_name = አዲስ የይለፍ ቃል
+acct_identity_email_label = የኢሜይል አድራሻ (ለመላክ እና ለመቀበል ጥቅም ላይ ይውላል)
+acct_identities_label = ተጨማሪ ማንነቶች (ተለዋጭ ስሞች)
+acct_identities_name = ተጨማሪ ማንነቶች
+acct_add_identity = &ማንነት ጨምር...
+acct_edit_identity = &ማንነት አርትዕ...
+acct_remove_identity = &ማንነት አስወግድ
+acct_signature = ፊርማ
+acct_edit_signature = &ፊርማ አርትዕ...
+acct_junk_folder = የአይፈለጌ መልዕክት አቃፊ
+acct_account_status = የመለያ ሁኔታ
+acct_disable_account = ይህን መለያ አሰናክል
+acct_default_account = ነባሪ መለያ
+acct_set_default = እንደ ነባሪ መለያ አዘጋጅ
+acct_notifications = የአዲስ ደብዳቤ ማሳወቂያዎች
+acct_mute_notifications = የዚህን መለያ ማሳወቂያዎች ድምጸ-ከል አድርግ
+acct_server_settings = የአገልጋይ ቅንብሮች
+
+wiz_before_you_start = ከመጀመርዎ በፊት
+wiz_notice_name = ጠቃሚ ማስታወቂያ
+wiz_google_instructions = &የGoogle የመተግበሪያ የይለፍ ቃል መመሪያዎችን ክፈት
+wiz_intro = ስምዎ እና የኢሜይል አድራሻዎ
+wiz_login_same = የመግቢያ ኢሜይሉ ከላይ ካለው የኢሜይል አድራሻ ጋር አንድ ነው
+wiz_show_password = &የይለፍ ቃል አሳይ
+wiz_preset_applied = ለ{name} ቅድመ ዝግጅት ተተግብሯል።
+wiz_summary_name = የመለያ ማጠቃለያ
+wiz_review = ይገምግሙ፣ ከዚያ ይህን መለያ ለማስቀመጥ ጨርስ የሚለውን ይጫኑ።
+wiz_test_connection = &ግንኙነት ሞክር
+wiz_testing = ግንኙነቱን በመሞከር ላይ...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (የማረም መዝገብን አንቃ፣ እዚህ ይቀመጣል፦ data\logs)
+set_language_label = &የበይነገጽ ቋንቋ፦
+set_language_label_only_english = &የበይነገጽ ቋንቋ፦ (እንግሊዝኛ ብቻ)
+set_headers_checkbox = &ከተከፈተው መልዕክት በላይ የመልዕክት ራስጌዎችን አሳይ
+set_zoom_label = የመልዕክት ፊደል እና ማጉላት፦
+set_font_override = &የነባሪ መልዕክት የፊደል መጠንን ተካ
+set_font_size_name = የመልዕክት የፊደል መጠን (ነጥቦች)
+set_reading_font_name = የንባብ ፊደል
+set_reading_font_label = የንባብ ፊደል (ለነባሪ ባዶ ይተዉ)፦
+set_view_label = መልዕክት ሲከፈት የመልዕክት አካል እይታ፦
+set_view_text = ጽሑፍ
+set_view_html = HTML (የተሰራ)
+set_engine_label = የHTML ማቅረቢያ ሞተር፦
+set_engine_edge = Edge / WebView2 (ዘመናዊ ማቅረቢያ)
+set_engine_ie = የቆየ MSHTML (ምርጥ የስክሪን አንባቢ ድጋፍ)
+set_runtime_label = የWebView2 የሩጫ ጊዜ፦
+set_runtime_auto = ራስ-ሰር — ካለ የተካተተውን የሩጫ ጊዜ ተጠቀም (የሚመከር)
+set_runtime_fixed = የተካተተው ቋሚ ስሪት ብቻ
+set_runtime_evergreen = ስርዓት-አቀፍ የሩጫ ጊዜ (በWindows የሚዘምን)
+set_sr_box = የስክሪን አንባቢ ማስታወቂያ ቁጥጥር
+set_silence_label = የHTML ስክሪን አንባቢ ዝምታ ይዞታ፦
+set_silence_name = የHTML ስክሪን አንባቢ ዝምታ ይዞታ በሚሊሰከንድ
+set_focus_delay_label = የWebView ተደራሽነት ትኩረት መዘግየት፦
+set_focus_delay_name = የWebView ተደራሽነት ትኩረት መዘግየት፣ ደረጃ 1 እስከ 10
+set_announce_label = የማስታወቂያ ይዞታ፦
+set_announce_name = የማስታወቂያ ይዞታ በሚሊሰከንድ
+set_announce_actions = &የድርጊቶች፣ የአዲስ ደብዳቤ እና የማስታወሻዎች ማስታወቂያዎችን ተናገር
+set_attachment_dir_label = የተቀመጡ አባሪዎች አቃፊ፦
+set_attachment_dir_name = የተቀመጡ አባሪዎች አቃፊ
+set_browse = &አስስ…
+set_autosave_label = የረቂቅ ራስ-ሰር ማስቀመጫ ክፍተት፦
+set_autosave_name = የረቂቅ ራስ-ሰር ማስቀመጫ ክፍተት በሰከንድ
+set_auto_purge_label = የቆየ ቆሻሻ መጣያ እና አይፈለጌ መልዕክትን በራስ-ሰር ሰርዝ፦
+set_auto_purge_name = ከዚህ ቀናት በኋላ ቆሻሻ መጣያ እና አይፈለጌ መልዕክትን በራስ-ሰር ሰርዝ
+set_bare_keys = &በመልዕክት ዝርዝር ውስጥ ነጠላ ቁልፍ አቋራጮችን S (ኮከብ)፣ A (ወደ ማህደር)፣ J (እንደ አይፈለጌ ምልክት)/Shift+J (አይፈለጌ አይደለም ብሎ ምልክት)፣ W (ክር ተከታተል)፣ K (ክር ችላ በል)፣ M (ውሰድ)/Shift+M (በአቃፊ ስም ውሰድ) እና C (ቅዳ) አንቃ
+set_sound_label = ድምጾች እና ማሳወቂያዎች፦
+set_sounds_enabled = &የማሳወቂያ ድምጾችን አጫውት
+set_desktop_notifications = &ለአዲስ ደብዳቤ የዴስክቶፕ ማሳወቂያዎችን አሳይ
+set_theme_label = የድምጽ ገጽታ ቀይር፦
+set_theme_label_only_default = የድምጽ ገጽታ ቀይር፦ (ነባሪ ገጽታ ብቻ)
+set_security_box = የመተግበሪያ እና የውሂብ ደህንነት
+set_lock_on_quit = &ZBox ሙሉ በሙሉ ሲወጣ ቆልፍ
+set_private_mode = &የግል ሁነታ፦ ደብዳቤን በዚህ ኮምፒዩተር ወይም ድራይቭ ላይ አታስቀምጥ
+set_unlock_methods_button = &የመክፈቻ ዘዴዎች…
+set_master_password_button = &ዋና የይለፍ ቃል…
+set_tray_label = የስርዓት መሣቢያ እና መስኮት፦
+set_minimize_to_tray = &ወደ ስርዓት መሣቢያ አሳንስ
+set_close_to_tray = &ወደ ስርዓት መሣቢያ ዝጋ
+set_stay_maximized = &ZBoxን ሁልጊዜ ተጉሎ አቆይ
+set_run_at_startup = &Windows ሲጀምር ZBoxን አሂድ
+set_desktop_shortcut_button = &የዴስክቶፕ አቋራጭ ፍጠር
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = የሆነ ነገር ከተበላሸ ችግሮችን ለመመርመር የማረም መዝገብ ይረዳል። ማጥፋት አዲስ ግቤቶችን መጻፍ ያቆማል፤ ያሉ የመዝገብ ፋይሎች አይሰረዙም። ZBox በሚቀጥለው ጊዜ ሲጀምር ተግባራዊ ይሆናል።
+set_language_note = ZBox በሚቀጥለው ጊዜ ሲጀምር ተግባራዊ ይሆናል። የቋንቋ ፋይሎች ከsounds አቃፊ ቀጥሎ ባለው የZBox lang አቃፊ ውስጥ ያሉ ተራ ጽሑፍ ፋይሎች ናቸው። አንዱን ለመጨመር፣ የen አቃፊን ገልብጠው፣ የቅጂውን እና በውስጡ ያለውን .lang ፋይል ስም ወደ የቋንቋ ኮድዎ ይቀይሩና ከእያንዳንዱ የእኩልነት ምልክት በስተቀኝ ያለውን ጽሑፍ ይተርጉሙ። ገና ያልተተረጎመው ዝም ከማለት ይልቅ በእንግሊዝኛ ይነገራል፣ ስለዚህ ግማሽ የተጠናቀቀ ፋይል መጠቀም ደህንነቱ የተጠበቀ ነው።
+set_headers_note = ላኪ፣ ተቀባይ፣ ግልባጭ፣ ቀን እና ርዕስ በጽሑፍም በHTMLም እይታ ከመልዕክቱ አካል በላይ ይታያሉ። ያለዚህ ትሩን ዘግቶ ወደ ዝርዝሩ ሳይመለሱ ከመልዕክቱ ውስጥ ሆነው ማን እንደላከ የሚያውቁበት መንገድ የለም። ትኩረቱ አሁንም በመልዕክቱ አካል ላይ ያርፋል፤ የራስጌው ክፍል በአንድ Shift+Tab ርቀት ላይ ነው። መልዕክቱ በሚቀጥለው ጊዜ ሲከፈት ተግባራዊ ይሆናል።
+set_zoom_note = የተከፈተውን መልዕክት የራሱን ጽሑፍ ከተቀረው የZBox ክፍል እና ከWindows የራሱ የማሳያ ማስፋፊያ ነፃ ሆኖ ያሳድጋል ወይም ያሳንሳል። ለጽሑፍም ለHTMLም እይታ ይሠራል። "የንባብ ፊደል" ከተፈለገ ለመልዕክቱ አካል የተወሰነ ፊደል (ለምሳሌ Consolas፣ OpenDyslexic) ያስገድዳል፤ የተለመደውን ፊደል ለማቆየት ባዶ ይተዉት። በእይታ ምናሌ ውስጥ Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 ይህን ንግግር ሳይከፍቱ የፊደል መጠንን ብቻ ይጨምራሉ፣ ይቀንሳሉ ወይም ይመልሳሉ፣ እና ለእያንዳንዱ የተከፈተ መልዕክት ወዲያውኑ ይተገበራሉ። እዚህ የሚደረጉ ለውጦች እሺ ሲጫኑም ወዲያውኑ ይተገበራሉ።
+set_view_note = HTML ነባሪ ነው። መልዕክቱን እንደተላከ ያሳያል፣ እና NVDA እና JAWS ያነቡታል፦ የHTML ገጽ ሲከፈት ZBox የአሳሹን የራሱን ማስታወቂያ ዝም ያሰኛል፣ የንባብ ጠቋሚውን በመልዕክቱ የመጀመሪያ መስመር ላይ ያስቀምጣል፣ እና በገጹ ውስጥ የZBox የራሱ አቋራጮች መስራታቸውን እንዲቀጥሉ ያደርጋል፣ ትኩረትን ከእሱ የሚያወጣውን F6 ጨምሮ። ጽሑፍ ያንኑ መልዕክት በተለመደ የአርትዖት መቆጣጠሪያ ውስጥ ተራ፣ ያልተቀረጸ ጽሑፍ አድርጎ ያሳያል -- ምስሎች የሉም፣ አቀማመጥ የለም፣ እና በአሳሽ ሞተር መጫን ላይ የሚመሰረት ምንም የለም። በሁለቱም አቅጣጫ ለመቀየር በተከፈተ መልዕክት ውስጥ Ctrl+B ይጫኑ።
+set_engine_note = Edge ዘመናዊ CSSን ያቀርባል ነገር ግን ገጹን በተለየ ሂደት ያስኬዳል፣ እና ይዘቱን ለስክሪን አንባቢ የሚያቀርበው wxPython መድረስ በማይችልበት በይነገጽ ብቻ ነው -- ስለዚህ መልዕክት የሚነበብ ምንም ነገር ሳይኖረው ሊከፈት ይችላል። የቆየው MSHTML Outlook Express እና Windows Mail የተጠቀሙበት ሞተር ነው፦ በተመሳሳይ ሂደት ውስጥ ይሰራል እና መደበኛ የሰነድ ዛፍ ያትማል፣ ስለዚህ NVDA እና JAWS እንደ ማንኛውም ድረ-ገጽ በአሰሳ ሁነታ ያነቡታል። መልዕክቱ በሚቀጥለው ጊዜ ሲከፈት ተግባራዊ ይሆናል።
+set_runtime_note = ስርዓት-አቀፉ የሩጫ ጊዜ በWindows Update ይጠበቃል፣ ስለዚህ ደብዳቤዎን የሚያነበው ሞተር ያለ ማስጠንቀቂያ ሊቀየር ይችላል — ስለ ZBox ምንም ባልተቀየረበት ኮምፒዩተር ላይ ይሰራ የነበረ የHTML መልዕክት እይታ እንዲህ ሊበላሽ የሚችለው። በdeps አቃፊ ውስጥ ያለው የተካተተ ቅጂ ZBox የተፈተነበትን ትክክለኛ ስሪት ይቆልፋል። አንዱን ለመጫን tools\get_webview2.bat ን ያሂዱ። የተካተተ ቅጂ ከሌለ ZBox በማንኛውም መንገድ ስርዓት-አቀፉን የሩጫ ጊዜ ይጠቀማል፣ ስለዚህ ሁልጊዜ ይጀምራል። ZBox በሚቀጥለው ጊዜ ሲጀምር ተግባራዊ ይሆናል።
+set_sr_intro = መልዕክት በሚከፈትበት ጊዜ ZBox የስክሪን አንባቢዎ ምን ያህል እንዲናገር እንደሚፈቅድ፣ እና የራሱ የንግግር ማስታወቂያዎች ምን ያህል እንደሚቆዩ።
+set_silence_note = የHTML መልዕክት ሲከፈት፣ የስክሪን አንባቢውን የአሳሽ ማስታወቂያ ዝም ለማሰኘት ZBox ሰው ሰራሽ የCtrl ግፊትን እስከ 2 ሰከንድ ሊይዝ ይችላል። የመልዕክቱ ርዕስ አስቀድሞ እንደ ገጽ ርዕስ ጥቅም ላይ ይውላል፣ ይህም የbase64 URL እንዳይነበብ ይከላከላል፣ ነገር ግን አንባቢው አሁንም በመልዕክቱ መጀመሪያ ላይ መቆጣጠሪያ እና የሰነድ አይነት ያውጃል፣ ስለዚህ ይህ በነባሪ በርቷል። ለማጥፋት አጥፋ ይምረጡ፣ ወይም ንግግር አሁንም ከገባ ረዘም ያለ ጊዜ ይምረጡ።
+set_focus_delay_note = የHTML መልዕክት መጫኑን ሲጨርስ፣ ትኩረት ከመስጠቱ በፊት ZBox ይህን ያህል ይጠብቃል። WebView2 ገጹ ተጭኗል ብሎ ሪፖርት ማድረጉ እና Windows የገጹን የተደራሽነት ዛፍ መጨረሱ አንድ ቅጽበት አይደሉም፤ በጣም ቀድሞ ማተኮር NVDA/JAWS ከመልዕክቱ ይልቅ አጠቃላይ "የድር ይዘት ገጽ" እንዲያውጁ፣ ወይም ከተከፈተ በኋላ ለጥቂት ጊዜ መልዕክቱ አይገኝም ብለው ሪፖርት እንዲያደርጉ ያደርጋል። አማራጮቹ ከ0.1 ሰከንድ እስከ 1 ሰከንድ ናቸው። አሁንም ይህን ከሰሙ ረዘም ያለ ጊዜ ይምረጡ፣ መክፈቱ የተረጋጋ ከተሰማ ደግሞ ለፈጣን መክፈት አጭር ጊዜ ይምረጡ።
+set_announce_note = የሁኔታ አሞሌ የሚነበበው በስክሪን አንባቢዎ የሁኔታ አሞሌ ሪፖርት ከበራ ብቻ ስለሆነ Ctrl+U እና Ctrl+Shift+U ላኪውን በራሱ በሚዘጋ ትንሽ ንግግር ሪፖርት ያደርጋሉ። ያ ንግግር ምን ያህል እንደሚቆይ ይህ ነው። ከንግግር ፍጥነትዎ ጋር እንዲስማማ ያዘጋጁት፦ በጣም አጭር ከሆነ በዓረፍተ ነገር መሃል ይዘጋል፣ ይህም ዓላማውን ያበላሻል። ማንኛውም ቁልፍ ቀድሞ ይዘጋዋል፤ የቀስት ቁልፎች እንደገና ለማንበብ ክፍት ያደርጉታል። ቁልፍ ይጠብቃል አንዱን እስኪጫኑ ድረስ ክፍት ያደርገዋል።
+set_attachment_dir_note = መልዕክት ከአንድ በላይ አባሪ ሲኖረው "ሁሉንም አስቀምጥ" አባሪዎቹን የት እንደሚጽፍ። ከሌለ በራስ-ሰር ይፈጠራል። አንድ አባሪ ያለው መልዕክት እንደ ቀድሞው የት እንደሚቀመጥ አሁንም ይጠይቃል። ለነባሪ ባዶ ይተዉ፦\n{path}
+set_autosave_note = የሚጽፉበት ክፍት የመጻፊያ ትር ራሱን በረቂቆች ውስጥ ምን ያህል ጊዜ እንደሚያስቀምጥ። ረቂቅ አስቀምጥ (Ctrl+S) በማንኛውም መንገድ ሲጠየቅ ያስቀምጣል፣ እና ያልተቀመጠ ጽሑፍ ያለው ትር ሲዘጋ ሁልጊዜ ለማስቀመጥ እድል ይሰጣል። አጥፋ ራስ-ሰር ማስቀመጥን ያጠፋል። ከ15 ሰከንድ ያነሰ አይሰጥም -- ይህ ከትየባዎ ጋር የሚወዳደር የአገልጋይ ጉዞ ይሆናል።
+set_auto_purge_note = በቆሻሻ መጣያ እና አይፈለጌ መልዕክት ውስጥ ያሉ መልዕክቶች ይህን ያህል ቀናት እዚያ ከቆዩ በኋላ እስከመጨረሻው ያስወግዳል -- ቆሻሻ መጣያ አጽዳ እና አይፈለጌ መልዕክት አጽዳ ሲጠየቁ የሚያደርጉት ተመሳሳይ ዘላቂ ስረዛ ነው፣ ZBox ክፍት ሲሆን በቀን አንድ ጊዜ በራስ-ሰር ይሰራል። በነባሪ በ30 ቀናት በርቷል። አጥፋ ያጠፋዋል። መልዕክቱ አንዴ ከተወገደ ይህ ሊቀለበስ አይችልም።
+set_bare_keys_note = ሲበራ፣ በመልዕክት ዝርዝር ውስጥ S፣ A፣ J፣ W ወይም K ብቻቸውን መጫን ወዲያውኑ ኮከቡን ይቀያይራል፣ ወደ ማህደር ይልካል፣ የተመረጡ መልዕክቶችን እንደ አይፈለጌ ምልክት ያደርጋል (Shift+J አይፈለጌ አይደሉም ብሎ ምልክት ያደርጋል)፣ ወይም ምርጫው አካል የሆነበትን ክር ይከታተላል/ችላ ይላል -- ወደ ማህደር ላክ እና እንደ አይፈለጌ ምልክት አድርግ ማረጋገጫም ሆነ መቀልበስ የላቸውም። ማጥፋት S፣ A፣ J፣ W እና K በዝርዝሩ ውስጥ ወደ መደበኛው የመጀመሪያ ፊደል አሰሳ ይመልሳል። Ctrl+S እና Ctrl+Shift+A በማንኛውም መንገድ መስራታቸውን ይቀጥላሉ። ወዲያውኑ ተግባራዊ ይሆናል።
+set_sounds_note = ለሂደት፣ ለአዲስ መልዕክቶች፣ ለተላኩ፣ ምላሽ ለተሰጡ ወይም ለተላለፉ ድርጊቶች፣ ለስረዛዎች እና ለፍለጋ ውጤቶች አጫጭር ድምጾች። አጥፋ በመተግበሪያው ውስጥ ያለውን እያንዳንዱን ድምጽ ያሰናክላል፤ የስክሪን አንባቢ እና የሁኔታ አሞሌ ማስታወቂያዎች በምንም መንገድ አይነኩም።
+set_desktop_notifications_note = ከላይ ካለው ድምጽ ተለይቶ ለእያንዳንዱ የአዲስ ደብዳቤ ስብስብ አንድ የWindows ማሳወቂያ። አጥፋ ለሁሉም መለያዎች ያሰናክለዋል፤ አንድ መለያ በመለያ እና ማንነት ቅንብሮች ውስጥ በተናጠል ድምጸ-ከል ሊደረግ ይችላል።
+set_theme_note = ብጁ ገጽታዎች በZBox sounds አቃፊ ውስጥ የሚቀመጡ አቃፊዎች ናቸው፣ እያንዳንዳቸው የራሳቸውን progress-tick.wav፣ incoming-message.wav፣ action-done.wav፣ delete.wav፣ searching.wav፣ searching_done.wav እና none_found.wav ይሰጣሉ። የጎደለ የገጽታ ፋይል ወደ ነባሪው ድምጽ ይመለሳል።
+set_theme_note_only_default = ብጁ ገጽታዎች በZBox sounds አቃፊ ውስጥ የሚቀመጡ አቃፊዎች ናቸው፣ እያንዳንዳቸው የራሳቸውን progress-tick.wav፣ incoming-message.wav፣ action-done.wav፣ delete.wav፣ searching.wav፣ searching_done.wav እና none_found.wav ይሰጣሉ። የጎደለ የገጽታ ፋይል ወደ ነባሪው ድምጽ ይመለሳል። ሌላ የገጽታ አቃፊ እስኪያክሉ ድረስ "default" ብቻ ይገኛል።
+set_lock_note = ZBox ሲጀምር ማንኛውም መለያ ከመከፈቱ በፊት ከመክፈቻ ዘዴዎችዎ አንዱን ይጠይቃል። ከእነሱ ማንኛውም አንድ በቂ ነው፦ የይለፍ ቁልፍ፣ የደህንነት ቁልፍ ወይም ዋና የይለፍ ቃል። ወደ መሣቢያ መዝጋት መውጣት አይደለም እና እንደገና አይቆልፍም፤ ፋይል > ውጣ እና የመሣቢያ አዶው ውጣ ይወጣሉ። ምንም ካልተመዘገበ እና ዋና የይለፍ ቃል ካልተዘጋጀ፣ ከራስዎ ደብዳቤ ውጭ ከመቆለፍ ይልቅ መቆለፊያው ይዘለላል።
+set_security_note = ከሦስቱ ማንኛውንም ነገር የሚያመስጥረው ዋና የይለፍ ቃል ብቻ ነው፦ ይህ አቃፊ በሌላ ኮምፒዩተር ላይ የተቀመጡ የመለያ የይለፍ ቃላትን እንዲከፍት የሚያስችለው እሱ ብቻ ነው። የይለፍ ቁልፍ ወይም የደህንነት ቁልፍ መተግበሪያውን በዚህ አንድ ኮምፒዩተር ላይ ብቻ ይከፍታሉ። ZBox ከዚህ በፊት ባልተጠቀመበት ኮምፒዩተር ላይ ከእነሱ ውስጥ ምንም ዋና የይለፍ ቃልን አይተካም።
+set_private_mode_note = መልዕክቶች ከአገልጋዩ ይነበባሉ እና በማህደረ ትውስታ ውስጥ ብቻ ይቀመጣሉ። ከመስመር ውጭ ቅጂዎች፣ የተቀመጡ መልዕክቶች ወይም የማረም መዝገቦች አይቀመጡም፣ እና የተከፈቱ አባሪዎች እና የHTML ደብዳቤ የአሳሽ ውሂብ ZBox ሲዘጋ ይሰረዛሉ። መዝጋት ZBox የጀመረውን ማንኛውንም ፕሮግራም፣ አባሪ የሚያሳዩትንም ጨምሮ፣ ያበቃል፣ ቅንጥብ ሰሌዳውን ያጸዳል፣ እና የግል ሁነታ ከዚሁ ኮምፒዩተር ካልበራ በስተቀር ይህን ኮምፒዩተር ማመን ያቆማል። Windows አሁንም ማንኛውም ፕሮግራም ሊያስወግዳቸው የማይችላቸውን አንዳንድ መዝገቦች ይይዛል፣ ለምሳሌ የUSB ድራይቮች ዝርዝር፣ የገጽ ፋይል እና የጸረ-ቫይረስ እና የአውታረ መረብ መዝገቦች።
+title_private_mode = የግል ሁነታ
+private_mode_need_master = የግል ሁነታ ዋና የይለፍ ቃል ያስፈልገዋል፣ ምክንያቱም የእርስዎ ባልሆነ ኮምፒዩተር ላይ መለያዎችዎን የሚከፍተው ዋና የይለፍ ቃል ብቻ ነው። በዋና የይለፍ ቃል አዝራር አንዱን ያዘጋጁ፣ ከዚያ የግል ሁነታን ያብሩ።
+private_mode_enter_master = የግል ሁነታን ለማብራት ዋና የይለፍ ቃል ያስገቡ።
+private_mode_confirm = የግል ሁነታ የደብዳቤዎን ቅጂዎች በዚህ ኮምፒዩተር ወይም ZBox በሚሰራበት ድራይቭ ላይ አያስቀምጥም። ማብራቱ የZBox ከመስመር ውጭ ቅጂዎችን፣ የተቀመጡ መልዕክቶችን፣ የተከፈቱ አባሪዎችን፣ የHTML ደብዳቤ የአሳሽ ውሂብን እና የማረም መዝገቦችን ይሰርዛል። በመልዕክት አገልጋዮችዎ ላይ ምንም አይሰረዝም፣ እና መለያዎችዎ፣ እውቂያዎችዎ እና ቅንብሮችዎ ይቀመጣሉ። የግል ሁነታ ይብራ?
+set_minimize_note = ZBoxን ማሳነስ የተግባር አሞሌ አዝራሩን ይደብቃል እና ከመሣቢያ አዶው ጀርባ መስራቱን ይቀጥላል። መስኮቱን ለመመለስ የመሣቢያ አዶውን በግራ ጠቅ ያድርጉ (ወይም የቁልፍ ሰሌዳ ትኩረት ሲኖረው Enter/Space ይጫኑ)።
+set_close_note = የመስኮቱ ዝጋ አዝራር፣ Alt+F4 እና በደብዳቤ ትር ላይ Ctrl+W ZBoxን ከመውጣት ይልቅ በመሣቢያ ውስጥ ይደብቁታል። ፋይል > ውጣ (Ctrl+Shift+Q) እና የመሣቢያ አዶው የራሱ ውጣ በማንኛውም መንገድ ZBoxን በእውነት ያስወጡታል፣ ስለዚህ መሣቢያውን ሳይነኩ ለመውጣት ሁልጊዜ የቁልፍ ሰሌዳ መንገድ አለ።
+set_stay_maximized_note = ZBox ተጉሎ ይጀምራል እና ከተጉላት ካወጡት እንደገና ይጉላል። የምናሌ አሞሌ፣ የርዕስ አሞሌ እና የመስኮት ድንበር አይነኩም -- ይህ ድንበር የለሽ ሙሉ ማያ ሁነታ አይደለም፣ ስለዚህ እያንዳንዱ የAlt-ቁልፍ ምናሌ አቋራጭ መስራቱን ይቀጥላል።
+set_run_at_startup_note = Windows ላይ ሲገቡ ZBoxን በራስ-ሰር ይጀምራል፣ መስኮቱን ከማሳየት ይልቅ በቀጥታ በመሣቢያ ውስጥ ይከፈታል። እስከሚቀጥለው ጅምር ሳይጠብቅ ወዲያውኑ ተግባራዊ ይሆናል።
+set_desktop_shortcut_note = በዴስክቶፕዎ ላይ የZBox አቋራጭ ያስቀምጣል፣ እዚያ ያለውን ይተካል። አቋራጩ የዚህን የZBox አቃፊ ትክክለኛ ቦታ ያከማቻል፣ ስለዚህ ZBoxን ሌላ ቦታ ካንቀሳቀሱ ወይም ከገለበጡ፣ የዴስክቶፕ አቋራጩን ወደዚያ ለማመልከት በአዲሱ ቅጂ ላይ ይህን እንደገና ይጫኑ። ወዲያውኑ ተግባራዊ ይሆናል እና እሺን አይጠብቅም።
+
+# The Address Book, its contact form and its groups.
+ab_name = ስም
+ab_phone = ስልክ
+ab_notes = ማስታወሻዎች
+ab_heading = የአድራሻ መጽሐፍ
+ab_contacts = እውቂያዎች
+ab_new = &አዲስ...
+ab_edit = &አርትዕ...
+ab_delete = &ሰርዝ
+ab_import = &አስገባ...
+ab_export = &ላክ...
+ab_groups_label = ቡድኖች (የመልዕክት ዝርዝሮች)
+ab_groups_name = ቡድኖች
+ab_new_group = &አዲስ ቡድን...
+ab_rename_group = &ቡድን እንደገና ሰይም...
+ab_delete_group = &ቡድን ሰርዝ
+ab_manage_members = &አባላትን አስተዳድር...
+ab_all_contacts = ሁሉም እውቂያዎች
+ab_add_member = ጨምር >>
+ab_remove_member = << አስወግድ
+ab_members_of = የ{name} አባላት
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &በመዝገበ ቃላት ውስጥ የለም፦
+sp_not_in_dictionary_name = በመዝገበ ቃላት ውስጥ የለም
+sp_in_this_line_label = በዚህ መስመር ውስጥ፦
+sp_in_this_line_name = በዚህ መስመር ውስጥ
+sp_suggestions_label = &ጥቆማዎች፦
+sp_suggestions_name = ጥቆማዎች
+sp_replace_with_label = &በዚህ ተካ፦
+sp_replace_with_name = በዚህ ተካ
+sp_replace = &ተካ
+sp_replace_all = &ሁሉንም ተካ
+sp_ignore = &ችላ በል
+sp_ignore_all = &ሁሉንም ችላ በል
+sp_add_to_dictionary = &ወደ መዝገበ ቃላት ጨምር
+btn_close = &ዝጋ
+
+# Privacy and Content Blocking.
+priv_remote_label = በመልዕክቶች ውስጥ የርቀት ይዘት፦
+priv_block_remote = &እስክጠይቅ ድረስ የርቀት ይዘትን አግድ (የሚመከር)
+priv_blocklist_label = የማስታወቂያ እና መከታተያ ዕገዳ ዝርዝር፦
+priv_block_known = &የታወቁ የማስታወቂያ እና መከታተያ ጎራዎችን አግድ
+priv_update_daily = &ዝርዝሩን በየቀኑ ከጀርባ አዘምን
+priv_update_now = &አሁን አዘምን
+priv_junk_label = የአይፈለጌ ደብዳቤ ደንቦች፦
+priv_check_inbox = &አዲስ የገቢ መልዕክት ሳጥን ደብዳቤን ከታገዱ ላኪዎች እና ከታወቁ የማጭበርበር አገናኞች ጋር ፈትሽ
+priv_move_blocked = &ከታገዱ ላኪዎች የመጣ ደብዳቤን በራስ-ሰር ወደ አይፈለጌ መልዕክት ውሰድ
+priv_update_phishing = &የማጭበርበር ዝርዝርን አሁን አዘምን
+priv_blocked_label = የታገዱ ላኪዎች፦
+priv_blocked_name = የታገዱ ላኪዎች
+priv_remove_blocked = &የታገደውን ላኪ አስወግድ
+priv_never_junk_label = ፈጽሞ እንደ አይፈለጌ የማይቆጠሩ ላኪዎች፦
+priv_never_junk_name = ፈጽሞ እንደ አይፈለጌ የማይቆጠሩ ላኪዎች
+priv_remove_never_junk = &ፈጽሞ አይፈለጌ ያልሆነውን ላኪ አስወግድ
+priv_allowed_label = የርቀት ይዘት እንዲጭኑ የተፈቀደላቸው ላኪዎች፦
+priv_allowed_name = የተፈቀደላቸው ላኪዎች
+priv_remove_selected = &የተመረጠውን ላኪ አስወግድ
+
+# Message Filters.
+filt_rule_name = የደንብ ስም
+filt_enabled = &ነቅቷል
+filt_match_label = ማዛመድ፦
+filt_match_all = &ከሚከተሉት ሁሉ ጋር ተዛመድ (እና)
+filt_match_any = &ከሚከተሉት ከማንኛውም ጋር ተዛመድ (ወይም)
+filt_conditions_label = ሁኔታዎች (ለመዝለል እሴቱን ባዶ ይተዉ)፦
+filt_condition_field = የሁኔታ {number} መስክ
+filt_condition_contains = ሁኔታ {number} ይዟል
+filt_actions_label = ድርጊቶች፦
+filt_mark_read = &እንደተነበበ ምልክት አድርግ
+filt_flag = &መልዕክቱን ኮከብ አድርግ
+filt_move_label = ወደ አቃፊ ውሰድ፦
+filt_move_name = ወደ አቃፊ ውሰድ
+filt_rules_name = የማጣሪያ ደንቦች
+filt_new = &አዲስ ደንብ...
+filt_edit = &ደንብ አርትዕ...
+filt_delete = &ደንብ ሰርዝ
+filt_up = &ወደ ላይ ውሰድ
+filt_down = &ወደ ታች ውሰድ
+filt_run_label = በአቃፊ ላይ አሁን አሂድ፦
+filt_run_name = አሁን የሚሄድበት አቃፊ
+filt_run_now = &አሁን አሂድ
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &በይለፍ ቁልፍ ክፈት (Windows Hello)
+unl_security_key = &በደህንነት ቁልፍ ክፈት
+unl_master_password_label = &ዋና የይለፍ ቃል፦
+unl_master_password_name = ዋና የይለፍ ቃል
+unl_unlock = &ክፈት
+unl_exit = &ከZBox ውጣ
+unl_methods_label = &የተመዘገቡ ዘዴዎች፦
+unl_methods_name = የተመዘገቡ የመክፈቻ ዘዴዎች
+unl_add_passkey = &የይለፍ ቁልፍ ጨምር…
+unl_add_key = &የደህንነት ቁልፍ ጨምር…
+unl_reassign = &የይለፍ ቁልፍን ለዚህ ኮምፒዩተር እንደገና መድብ…
+unl_test = &ሞክር…
+unl_remove = &አስወግድ
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = ላኪ
+comp_to = ተቀባይ
+comp_cc = ግልባጭ (Cc)
+comp_bcc = የተደበቀ ግልባጭ (Bcc)
+comp_subject = ርዕስ
+comp_attach_button = ፋይል አያይዝ...
+comp_sending = በመላክ ላይ...
+comp_report_label = &ሪፖርት፦
+comp_report_name = ሪፖርት
+comp_refresh = &አድስ
+comp_copy = &ቅዳ
+comp_preview_read = ተቀባዩ እንደሚያነበው
+comp_preview_source = የሚላከው HTML
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = የመልዕክት አካል
+mv_blocked_notice = የታገደ ይዘት ማስታወቂያ
+mv_show_remote = &የርቀት ይዘት አሳይ
+mv_always_allow = &ይህን ላኪ ሁልጊዜ ፍቀድ
+mv_message_headers = የመልዕክት ራስጌዎች
+mv_attachments = አባሪዎች
+mv_attachments_count = አባሪዎች ({count})
+mv_save_attachment = አስቀምጥ፦ {filename}
+mv_save_all = ሁሉንም አስቀምጥ
+mv_html_view = የመልዕክት HTML እይታ
+mv_saved_message = የተቀመጠ መልዕክት
+mv_show_remote_tip = ይህን መልዕክት ከርቀት ምስሎቹ እና ቅጦቹ ጋር እንደገና ጫን። የታወቁ መከታተያዎች እንደታገዱ ይቆያሉ።
+mv_always_allow_tip = ከ{sender} በሚመጣ እያንዳንዱ መልዕክት የርቀት ይዘትን ጫን።
+
+# The search tab.
+srch_account = መለያ
+srch_folder = አቃፊ
+srch_for = የሚፈለገው
+srch_look_in = የት ፈልግ
+srch_in_all = ሁሉም
+srch_in_subject = ርዕስ
+srch_in_from = ላኪ
+srch_in_to = ተቀባይ
+srch_in_body = አካል
+srch_date = ቀን
+srch_date_any = በማንኛውም ጊዜ
+srch_date_today = ዛሬ
+srch_date_yesterday = ትናንት
+srch_date_week = ያለፉት 7 ቀናት
+srch_date_month = ያለፉት 30 ቀናት
+srch_date_year = በዚህ ዓመት
+srch_date_custom = ብጁ ክልል
+srch_from_date = ከዚህ ቀን (ዓመት-ወር-ቀን፣ ከተፈለገ ሰዓት)
+srch_to_date = እስከዚህ ቀን (ዓመት-ወር-ቀን፣ ከተፈለገ ሰዓት)
+srch_unread = ያልተነበቡ ብቻ
+srch_flagged = ኮከብ የተደረገባቸው ብቻ
+srch_attachment = አባሪ አለው
+
+# The signature editor.
+sig_editors = የፊርማ አርታዒዎች
+sig_formatted = ፊርማ፣ የተቀረጸ
+sig_source = ፊርማ፣ HTML ምንጭ
+sig_plain_label = ተራ ጽሑፍ አማራጭ (ከHTML ጋር ይላካል)
+sig_plain_name = ተራ ጽሑፍ አማራጭ
+
+# About ZBox.
+about_text_name = ስለ ZBox ጽሑፍ
+about_view_license = &ፈቃድ ይመልከቱ...
+about_google = &የGoogle የመተግበሪያ የይለፍ ቃላት...
+about_support = &ZBoxን ይደግፉ -- የአንድ ሰው ልማት እና ጥገና
+about_repos = &የHarith የመተግበሪያ ማከማቻዎች በGitHub ላይ
+about_contact = &Harithን አነጋግር
+btn_close_plain = ዝጋ
+btn_cancel_plain = ሰርዝ
+
+# The license window.
+eula_heading = የZBox ፈቃድ
+eula_text_name = የZBox ፈቃድ ጽሑፍ
+eula_third_party = የሶስተኛ ወገን አካላት የፈቃድ ገጾች፦
+eula_agree = &ከላይ ባሉት ውሎች ተስማምቻለሁ
+eula_agree_name = የZBox ፈቃድ ውሎችን አንብቤ ተስማምቻለሁ
+eula_disagree = &አልስማማም
+eula_next = &ቀጣይ
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = የZBox ሰነድ ጽሑፍ
+doc_copy = ወደ ቅንጥብ ሰሌዳ ቅዳ
+shortcuts_heading = የቁልፍ ሰሌዳ አቋራጮች
+shortcuts_text_name = የቁልፍ ሰሌዳ አቋራጮች ጽሑፍ
+
+# The main window's own panes.
+mf_toolbar = ዋና የመሣሪያ አሞሌ
+mf_tabs = የZBox ትሮች
+tree_heading = መለያዎች እና አቃፊዎች
+tree_name = የመለያ እና አቃፊ ዛፍ
+envlist_heading = መልዕክቶች
+envlist_name = የመልዕክቶች ዝርዝር
+rdr_heading = መልዕክት
+rdr_name = የመልዕክት አንባቢ
+conv_heading_one = ውይይት፦ 1 መልዕክት
+conv_heading_many = ውይይት፦ {count} መልዕክቶች
+
+# A run of several messages, and the cache dialog.
+bulk_progress = ከ{total} {completed} ተጠናቋል።
+bulk_cancelling = በመሰረዝ ላይ -- የአሁኑን መልዕክት በማጠናቀቅ ላይ...
+cache_clear_now = ከመስመር ውጭ የመልዕክት መሸጎጫን አሁን አጽዳ... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}፣ የተጠበቀ
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = የሚታየው ስም አማራጭ ነው -- በዚህ መለያ የራሱ ስም ለመላክ ባዶ ይተዉት።
+acct_note_identity = አቅራቢዎ ከዚህ የመልዕክት ሳጥን ጋር ያገናኘው ብጁ ጎራ ካለው የኢሜይል አድራሻው ከመግቢያ ኢሜይሉ ሊለይ ይችላል። ደብዳቤ ከላይ ባለው አድራሻ ስር ይላካል እና ይቀበላል፣ መግባት ግን አሁንም የመግቢያ ኢሜይሉን ይጠቀማል። ለዚህ መለያ አስቀድሞ የተከማቸውን የይለፍ ቃል ለማቆየት የይለፍ ቃል መስኩን ባዶ ይተዉ -- ለምሳሌ የGmail የመተግበሪያ የይለፍ ቃልን ከቀየሩ በኋላ አዲሱን እዚህ ይጻፉ፤ ካልሆነ ባዶ ይተዉት።
+acct_note_identities = ይህ መለያ ለመላክ እና ምላሽ ለመስጠት ሊጠቀምባቸው የሚችሉ ሌሎች አድራሻዎች። ከእነዚህ ወደ አንዱ ለተላከ መልዕክት ምላሽ መስጠት ላኪውን ከላይ ካለው አድራሻ ይልቅ ወደዚያ አድራሻ ያደርገዋል።
+acct_note_signature = ከዚህ መለያ በሚላክ እያንዳንዱ አዲስ መልዕክት፣ ምላሽ እና ማስተላለፍ ላይ ከ"-- " መስመር በታች ይጨመራል። ምንም ካልፈለጉ ባዶ ይተዉ። ፊርማ አርትዕ የተቀረጸ አርታዒ ይከፍታል፣ ደማቅ፣ ዝርዝሮች እና አገናኞች የሚገኙበት፤ ከላይ ያለው ሳጥን ከዚያ ጋር የሚሄደውን ተራ ጽሑፍ ስሪት ይይዛል።
+acct_note_junk = እንደ አይፈለጌ ምልክት አድርግ መልዕክቶችን የሚያንቀሳቅሰው ወደ የትኛው እውነተኛ አቃፊ እንደሆነ። "{automatic}" ወደ ማህደር ላክ እና ቆሻሻ መጣያ አስቀድመው የሚጠቀሙትን ተመሳሳይ አቅራቢ-አወቅ ግምት ይጠቀማል፤ ያ ግምት ትክክል ካልሆነ ወይም የአይፈለጌ መልዕክት አቃፊዎ ብጁ ስም ካለው ብቻ ይህን ያዘጋጁ።
+acct_note_disable = የተሰናከለ መለያ እስኪነቃ ድረስ በጭራሽ አይገናኝም -- IDLE የለም፣ ወቅታዊ ማደስ የለም፣ ምንም የለም። አሁንም በዛፉ ውስጥ (ተሰናክሏል) ተብሎ ምልክት ተደርጎበት ይታያል፣ እና አስቀድሞ የወረደው ደብዳቤው ከመስመር ውጭ ይገኛል። ከመለያዎች > መለያውን አሰናክል ወይም ከመለያው የራሱ የአውድ ምናሌ ጋር ተመሳሳይ መቀየሪያ ነው፤ ይህ እሱን ለመድረስ ሌላ ቦታ ብቻ ነው።
+acct_note_default = የዚህ መለያ አቃፊዎች በዛፉ ውስጥ መጀመሪያ ይታያሉ፣ እና በመጻፊያው ውስጥ በእጅ ካልተቀየረ አዲስ መልዕክት በነባሪ ከዚህ ይላካል። ምላሽ ወይም ማስተላለፍ የትኛውን አድራሻ እንደሚጠቀም አይነካም -- ያ አስቀድሞ ምላሽ የሚሰጥበትን መልዕክት ይከተላል (ከላይ ተጨማሪ ማንነቶችን ይመልከቱ)። ሁልጊዜ በትክክል አንድ ነባሪ መለያ አለ፣ ስለዚህ በሌላ ላይ ምልክት ሳያደርጉ በአሁኑ ነባሪ ላይ ይህን ምልክት ማንሳት እንዳለ ያቆየዋል -- በምትኩ ነባሪውን ለማስተላለፍ የሌላ መለያን ሳጥን ምልክት ያድርጉ።
+acct_note_mute = &ድምጸ-ከል የዚህን መለያ የአዲስ ደብዳቤ ድምጽ፣ የንግግር ማስታወቂያ እና የWindows ማሳወቂያ፣ በሌላ መንገድ ቢዋቀሩም፣ ያግዳል። ሌሎች መለያዎችን አይነካም፣ እና አሁንም በቅንብሮች > ድምጾች እና ማሳወቂያዎች ውስጥ ላሉ ዋና ማብሪያዎች ተገዢ ነው (በጥቅሉ ድምጾች እና የዴስክቶፕ ማሳወቂያዎች)።
+wiz_note_app_password = ለZBox የመተግበሪያ የይለፍ ቃል አስቀድመው ከፈጠሩ፣ ለመቀጠል ቀጣይን ይጫኑ።
+wiz_note_login = የመግቢያ ምስክርነቶች።\nየመግቢያ ኢሜይልዎ ከላይ ካለው አድራሻ የተለየ ከሆነ፣ ለምሳሌ የአቅራቢዎ መለያ login@example.net ሆኖ እንደ you@example.org መላክ እና መቀበል ከፈለጉ፣ የመግቢያ ኢሜይሉን እዚህ ያስገቡ። ብጁ የመላኪያ አድራሻ በኋላ በመለያ እና ማንነት ቅንብሮች ውስጥ ሊዘጋጅ ይችላል።
+wiz_note_servers = ጎራው በታወቀበት አስቀድመው የተሞሉ የአገልጋይ ቅንብሮች። የተለየ መሆን ያለበትን ያርትዑ።
+wiz_preset_none = ለዚህ ጎራ ቅድመ ዝግጅት አልተገኘም። የአቅራቢዎን የአገልጋይ ቅንብሮች በእጅ ያስገቡ፤ የአቅራቢዎ የእገዛ ገጾች ይዘረዝሯቸዋል።
+ab_note_groups = የቡድን አባላትን ሁሉ በአንድ ጊዜ ለመሙላት በመጻፊያ መስኮቱ የተቀባይ፣ ግልባጭ ወይም የተደበቀ ግልባጭ መስክ ውስጥ ስሙን ይጻፉ።
+cache_note_intro = እነዚህ የZBoxን የአካባቢ ቅጂዎች ብቻ ያስወግዳሉ። ከማንኛውም የመልዕክት አገልጋይ ምንም አይሰረዝም፣ እና የተወገደ መልዕክት በሚቀጥለው ጊዜ ሲከፍቱት እንደገና ይወርዳል።
+cache_note_age = ራስ-ሰር ጽዳት ZBox ለአስር ደቂቃ የቁልፍ ሰሌዳ እንቅስቃሴ ሳይኖረው እና ምንም መልዕክት ሳይከፈት በቀን አንድ ጊዜ ይሰራል። አሁንም በመለያዎ ውስጥ ያሉ መልዕክቶችን ጨምሮ በእያንዳንዱ መልዕክት የራሱ ቀን ይሄዳል።
+filt_note_intro = ደንቦች ከላይ ወደ ታች በቅደም ተከተል ይሰራሉ፣ ላኪ፣ ተቀባይ እና ርዕስን ይፈትናሉ። በዚህ መለያ የገቢ መልዕክት ሳጥን ውስጥ አዲስ ደብዳቤ ሲደርስ በራስ-ሰር ይተገበራሉ፤ አስቀድሞ በአቃፊ ውስጥ ባሉ መልዕክቶች ላይ ለመተግበር ከታች አሁን አሂድን ይጠቀሙ።
+filt_note_run_now = ከላይ ያለውን እያንዳንዱን የነቃ ደንብ፣ በቅደም ተከተል፣ በተመረጠው አቃፊ ውስጥ አስቀድሞ ባለ እያንዳንዱ መልዕክት ላይ ይተገብራል -- እንደ እሺ መጀመሪያ ለውጦችዎን ያስቀምጣል።
+mp_note_intro = እነዚህ መለያዎች በሌላ ኮምፒዩተር ላይ ተዘጋጅተዋል። የተቀመጡ የይለፍ ቃሎቻቸውን እዚህ ለመክፈት ዋና የይለፍ ቃል ያስገቡ። በዚህ ኮምፒዩተር ላይ አንድ ጊዜ ብቻ ይጠየቃሉ።\n\nያለዚህ እያንዳንዱ መለያ ወደ የመልዕክት አገልጋዩ እንደገና መግባት አለበት።
+priv_note_remote = መልዕክት ከበይነመረብ የሚጭናቸው ምስሎች፣ የቅጥ ሉሆች እና ፊደላት ላኪውን በከፈቱት ቅጽበት፣ እና ከየት እንደሆነ ያሳውቁታል። ይህ ሲበራ ከእነሱ ምንም አይጫንም፦ ምን እንደታገደ የሚናገር ማስታወቂያ ከመልዕክቱ በላይ ይታያል፣ እና Ctrl+Shift+I ለዚያ አንድ መልዕክት ይጭነዋል። ከመልዕክቱ ጋር በራሱ የተያያዙ ምስሎች ሁልጊዜ ይታያሉ። ስክሪፕቶች እና የተካተቱ ክፈፎች በማንኛውም መንገድ ይወገዳሉ እና በጭራሽ አይጫኑም።
+priv_note_blocklist = ይህ ሁለተኛው ንብርብር ነው። የመልዕክት የርቀት ይዘት ሲጭኑ ወይም ላኪን ሲፈቅዱ አስፈላጊ ነው፦ ምስሎች ይጫናሉ፣ ነገር ግን ከታወቀ የመከታተያ ወይም የማስታወቂያ ጎራ የሚመጣ ማንኛውም ነገር አሁንም አይጫንም። ዝርዝሩ ከህዝብ የማስታወቂያ እና መከታተያ ዝርዝሮች ወርዶ ይዋሃዳል፤ ማዘመን አንድ ወይም ሁለት ሰከንድ ይወስዳል እና ከጀርባ ይሰራል።
+priv_note_junk = ግምት የለም። እንደ አይፈለጌ ምልክት አድርግ መልዕክቱ በመልዕክት ዝርዝር በኩል ካልመጣ በስተቀር ላኪውን ከታች ወዳለው የታገዱ ዝርዝር ይጨምራል። አይፈለጌ አይደለም ብሎ ምልክት አድርግ ላኪውን ፈጽሞ አይፈለጌ ያልሆኑ ዝርዝር ይጨምራል እና ያ መልዕክት እንደገና አይፈተሽም። የታገደ ላኪ አዲስ መልዕክት በዝርዝሩ ውስጥ የታገደ ላኪ ተብሎ ምልክት ይደረግበታል፤ ወደ ታወቀ የማጭበርበር ወይም ማልዌር ጣቢያ የሚያገናኝ ደግሞ ሊሆን የሚችል ማጭበርበር ተብሎ ምልክት ይደረግበታል። የደብዳቤ አቅራቢዎ የራሱ የስፓም ማጣሪያ እንደቀድሞው ይሰራል።
+priv_status_phishing_updating = የማጭበርበር ዝርዝር፦ ከጀርባ በመዘመን ላይ። ውጤቱን ለማየት ይህን ንግግር እንደገና ይክፈቱ።
+priv_status_updating = ከጀርባ በመዘመን ላይ። ውጤቱን ለማየት ይህን ንግግር እንደገና ይክፈቱ።
+rel_note_intro = በዚህ መለያ ሁሉም አቃፊዎች ውስጥ በMessage-ID/References ራስጌዎቻቸው አማካኝነት ከ"{subject}" ጋር የተዛመዱ መልዕክቶች።
+srch_note_intro = በሁሉም መለያዎች እና አቃፊዎች ውስጥ ቃላትን ይፈልጉ፣ ወይም ፍለጋውን ከታች ባሉት አማራጮች ይገድቡ። መልዕክቶችን በቀን ወይም በምልክት ማድረጊያ ሳጥኖች ብቻ ለማግኘት ቃላቱን ባዶ ይተዉ።
+sig_note_plain = ተራ ጽሑፍ አማራጩን ባዶ ይተዉት እና አስቀምጥን ሲጫኑ ከተቀረጸው ፊርማ ይጻፋል።
+unified_note_intro = በሁሉም መለያዎች ላይ የትኞቹን አቃፊዎች ማዋሃድ እንደሚፈልጉ ይምረጡ። ምልክት የተደረገበት እያንዳንዱ ከሁሉም መለያዎችዎ ያንን አቃፊ የሚያዋህድ አንድ ግቤት በዛፉ ውስጥ ይሆናል።
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = ስለ ZBox
+title_account_settings = የመለያ እና ማንነት ቅንብሮች፦ {name}
+title_new_account = አዲስ መለያ
+title_address_book = የአድራሻ መጽሐፍ
+title_members = አባላት፦ {name}
+ab_group_name_prompt = የቡድን ስም፦
+title_new_group = አዲስ ቡድን
+title_cache_cleanup = የመሸጎጫ ጽዳት ውቅር
+cache_age_prompt = ከዚህ የቆዩ የተሸጎጡ መልዕክቶችን በራስ-ሰር አስወግድ፦
+title_automatic_cleanup = ራስ-ሰር ጽዳት
+comp_link_prompt = የአገናኝ አድራሻ፦
+title_insert_link = አገናኝ አስገባ
+title_composer_diagnostics = የመጻፊያ ምርመራ
+title_formatted_preview = የተቀረጸ ቅድመ እይታ
+title_license_agreement = የZBox የፈቃድ ስምምነት
+title_message_filters = የመልዕክት ማጣሪያዎች፦ {account}
+title_master_password_required = ዋና የይለፍ ቃል ያስፈልጋል
+title_privacy_dialog = ግላዊነት እና የይዘት ዕገዳ
+title_privacy = ግላዊነት
+title_settings = ቅንብሮች
+set_tab_general = አጠቃላይ
+set_tab_personalization = ግላዊነት ማላበስ
+set_tab_accessibility = ተደራሽነት እና አቋራጭ ቁልፎች
+set_tab_maintenance = ጥገና እና ጽዳት
+set_tab_sounds = ድምጾች እና ማሳወቂያዎች
+set_tab_security = ደህንነት
+title_unified_folders = የተዋሃዱ አቃፊዎች
+title_zbox_locked = ZBox ተቆልፏል
+title_message_view = የመልዕክት እይታ
+title_remote_content = የርቀት ይዘት
+title_refresh = አድስ
+title_refresh_all = ሁሉንም አድስ
+mv_choose_folder = አባሪውን የሚያስቀምጡበትን አቃፊ ይምረጡ
+title_thread = ክር
+title_inbox = የገቢ መልዕክት ሳጥን
+title_compose = ጻፍ
+title_watch_thread = ክሩን ተከታተል
+title_ignore_thread = ክሩን ችላ በል
+title_edit_signature = ፊርማ አርትዕ
+title_account = መለያ
+mf_folder_name_prompt = የአቃፊ ስም፦
+mf_new_name_prompt = አዲስ ስም፦
+title_refresh_all_accounts = ሁሉንም መለያዎች አድስ
+title_sender = ላኪ
+title_new_mail = አዲስ ደብዳቤ
+mf_export_dialog_title = ሁሉንም {count} መለያዎች እና ቅንብሮች ላክ
+mf_related_tab = ተዛማጅ፦ {subject}
+title_hotkeys_diagnostic = የአቋራጭ ቁልፍ ምርመራ
+set_choose_attachment_dir = የተቀመጡ አባሪዎች አቃፊ ይምረጡ
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox ተቆልፏል። ለመክፈት ከታች ካሉት ዘዴዎች ማንኛውንም ይጠቀሙ። መሰረዝ ምንም መለያ ሳይከፍት ZBoxን ይዘጋዋል።
+unl_note_foreign_passkey = ከዚህ አቃፊ ጋር የተቀመጠው የይለፍ ቁልፍ የሌላ ኮምፒዩተር ነው፣ ስለዚህ እዚህ ጥቅም ላይ ሊውል አይችልም። በደህንነት ቁልፍዎ ወይም በዋና የይለፍ ቃልዎ ይክፈቱ፣ ከዚያ በዚህ ኮምፒዩተር ላይ የይለፍ ቁልፍ ለማዘጋጀት ቅንብሮች፣ ግላዊነት እና ደህንነት፣ የመክፈቻ ዘዴዎችን ይጠቀሙ።
+unl_note_methods = የመተግበሪያ መቆለፊያ ሲበራ ከዋና የይለፍ ቃል ጋር እነዚህ ማንኛውም አንዱ ZBoxን ይከፍታል። የይለፍ ቁልፍ በዚህ ኮምፒዩተር ላይ Windows Helloን ይጠቀማል፤ የደህንነት ቁልፍ በUSB ወይም NFC ላይ የFIDO2 ቁልፍ ነው እና በሚሰኩበት በማንኛውም ኮምፒዩተር ላይ ይሰራል።
+unl_note_not_encryption = እነዚህ መተግበሪያውን ይከፍታሉ። ምንም አያመሰጥሩም፦ ይህ አቃፊ ከዚህ በፊት ባልተጠቀመበት ኮምፒዩተር ላይ የተቀመጡ የመለያ የይለፍ ቃላትን ሊከፍት የሚችለው አሁንም ዋና የይለፍ ቃል ብቻ ነው። መጀመሪያ መዘጋጀት አለበት፣ እና እስከዚያ ድረስ ከእነዚህ ማንኛውንም መጨመር አይቻልም።
+unl_add_passkey_unavailable = &የይለፍ ቁልፍ ጨምር (አይገኝም)
+unl_add_key_unavailable = &የደህንነት ቁልፍ ጨምር (አይገኝም)
+unl_reassign_unavailable = &የይለፍ ቁልፍን ለዚህ ኮምፒዩተር እንደገና መድብ (አይገኝም)
+unl_status_cancelled_passkey = የይለፍ ቁልፉ ተሰርዟል። ZBox አሁንም ተቆልፏል።
+unl_status_cancelled_key = የደህንነት ቁልፉ ተሰርዟል። ZBox አሁንም ተቆልፏል።
+unl_status_enter_password = ዋና የይለፍ ቃል ያስገቡ።
+unl_status_no_master = ዋና የይለፍ ቃል አልተዘጋጀም፣ ስለዚህ የይለፍ ቁልፍ ወይም የደህንነት ቁልፍ ገና መጨመር አይቻልም። ከቅንብሮች፣ ግላዊነት እና ደህንነት በዋና የይለፍ ቃል አዝራር አንዱን ያዘጋጁ፣ ከዚያ ወደዚህ ይመለሱ። ዋና የይለፍ ቃል በሌላ ኮምፒዩተር ላይ የተቀመጡ የመለያ የይለፍ ቃሎችዎን ይከፍታል፤ የይለፍ ቁልፍ መተግበሪያውን በዚህ አንድ ኮምፒዩተር ላይ ብቻ ይከፍታል፣ ስለዚህ ብቻውን መቆም አይችልም።
+unl_status_unsupported = የዚህ ኮምፒዩተር Windows የይለፍ ቁልፎችን ወይም የደህንነት ቁልፎችን አይደግፍም፣ ስለዚህ እዚህ ZBoxን መክፈት የሚችለው ዋና የይለፍ ቃል ብቻ ነው።
+unl_status_foreign_one = 1 የይለፍ ቁልፍ የሌላ ኮምፒዩተር ነው እና እዚህ ZBoxን መክፈት አይችልም። እንደገና መመደብ በዚህ ኮምፒዩተር ላይ በተፈጠረው ይተካዋል።
+unl_status_foreign_many = {count} የይለፍ ቁልፎች የሌላ ኮምፒዩተር ናቸው እና እዚህ ZBoxን መክፈት አይችሉም። እንደገና መመደብ በዚህ ኮምፒዩተር ላይ በተፈጠረው ይተካቸዋል።
+unl_status_foreign_one_no_hello = 1 የይለፍ ቁልፍ የሌላ ኮምፒዩተር ነው እና እዚህ ZBoxን መክፈት አይችልም። እዚህ Windows Hello አልተዘጋጀም፣ ስለዚህ በዚህ ኮምፒዩተር ላይ መተካት አይቻልም፤ አስወግድ ይረሳዋል።
+unl_status_foreign_many_no_hello = {count} የይለፍ ቁልፎች የሌላ ኮምፒዩተር ናቸው እና እዚህ ZBoxን መክፈት አይችሉም። እዚህ Windows Hello አልተዘጋጀም፣ ስለዚህ በዚህ ኮምፒዩተር ላይ መተካት አይቻልም፤ አስወግድ ይረሳቸዋል።
+unl_status_no_hello = በዚህ ኮምፒዩተር ላይ Windows Hello አልተዘጋጀም፣ ስለዚህ እዚህ የይለፍ ቁልፍ መጨመር አይቻልም። የደህንነት ቁልፍ አሁንም መጨመር ይቻላል።
+unl_status_none_registered = ገና ምንም የመክፈቻ ዘዴ አልተመዘገበም።
+unl_status_add_cancelled_passkey = የይለፍ ቁልፍ መጨመር ተሰርዟል።
+unl_status_add_cancelled_key = የደህንነት ቁልፍ መጨመር ተሰርዟል።
+unl_status_added = ተጨምሯል፦ {name}።
+unl_status_reassign_cancelled = እንደገና መመደብ ተሰርዟል። ምንም አልተቀየረም።
+unl_status_reassigned = {name} ተጨምሯል እና ከሌሎች ኮምፒዩተሮች {count} ተረስተዋል።
+unl_status_test_cancelled = ሙከራው ተሰርዟል።
+unl_status_removed = ተወግዷል።
+unl_remove_warning_last = {name} ይወገድ?\n\nይህ የተመዘገበው ብቸኛው የመክፈቻ ዘዴ ነው እና ዋና የይለፍ ቃል አልተዘጋጀም፣ ስለዚህ የመተግበሪያ መቆለፊያ ከበራ ZBoxን የሚከፍት ምንም አይቀርም። ከመቆለፍ ይልቅ መቆለፊያው ይዘለላል፣ ነገር ግን ZBox ከዚያ ያልተቆለፈ ሆኖ ይከፈታል።
+unl_remove_warning = {name} ይወገድ? ZBox ከእንግዲህ አይቀበለውም።
+ab_col_email = ኢሜይል
+ab_col_name = ስም
+ab_col_phone = ስልክ
+ab_no_contacts = ገና እውቂያዎች የሉም።
+acct_auto_check = አዲስ መልዕክቶችን በራስ-ሰር ፈትሽ
+acct_note_auto_check = ጠፍቷል፦ ZBox ይህን መለያ በራሱ ፈጽሞ አያገናኝም -- አዲስ ደብዳቤ መከታተል የለም፣ በጊዜ ላይ የተመሰረተ ማደስ የለም፣ የጀርባ ማውረዶች የሉም -- ስለዚህ የማይታመን አገልጋይ ሌሎች መለያዎችን ማዘግየት አይችልም። የወረደው ደብዳቤው አሁንም ይከፈታል፣ እና አድስ (F5)፣ መላክ እና መሰረዝ አሁንም አገልጋዩን ይደርሳሉ። ከመሣሪያዎች ምናሌ ወይም ከመለያው የአውድ ምናሌ ራስ-ሰር ፍተሻን አቁም ጋር ተመሳሳይ ነው።
+bl_day_ago = ከ1 ቀን በፊት
+bl_days_ago = ከ{days} ቀናት በፊት
+bl_label_blocklists = የዕገዳ ዝርዝር
+bl_label_phishing = የማጭበርበር ዝርዝር
+bl_last_failed = የመጨረሻው ሙከራ አልተሳካም፦ %s
+bl_not_downloaded = ገና አልወረደም።
+bl_save_failed = %s ወርዷል ነገር ግን ማስቀመጥ አልተቻለም፦ %s
+bl_seed_only = ከተካተተው ዝርዝር %s ጎራዎች። ከበይነመረብ ገና አልተዘመነም።
+bl_some_failed = አንዳንድ ምንጮች አልተሳኩም፦ %s
+bl_some_unreachable = አንዳንድ ምንጮችን መድረስ አልተቻለም፦ %s
+bl_status_line = %s ጎራዎች። መጨረሻ የተዘመነው %s።
+bl_up_to_date = %s አስቀድሞ የተዘመነ ነው።
+bl_update_failed = %s ማዘመን አልተቻለም፦ %s
+bl_updated = %s ተዘምኗል፦ %s ጎራዎች።
+cc_age_choice = ከ%s የቆየ እያንዳንዱ የመልዕክት መሸጎጫ
+cc_auto_button = ራስ-ሰር ጽዳት፦ ከ%s የቆዩ የተሸጎጡ መልዕክቶች...
+comp_btn_discard = &ጣል
+comp_btn_keep_editing = &ማርትዕ ቀጥል
+comp_btn_save_draft = &ረቂቅ አስቀምጥ
+comp_no_account = ምንም መለያ አልተዋቀረም
+comp_saving_draft = ረቂቅ በማስቀመጥ ላይ…
+comp_this_message = ይህ መልዕክት
+comp_unsent_save_q = ከመዝጋትዎ በፊት %s እንደ ረቂቅ ይቀመጥ?
+comp_unsent_tray_q = ZBox ወደ መሣቢያ ከመሄዱ በፊት %s እንደ ረቂቅ ይቀመጥ?
+doc_unreadable = የሰነዱን ፋይል ማንበብ አልተቻለም፦
+envlist_all_disabled = እያንዳንዱ መለያ ተሰናክሏል።
+envlist_col_date = ቀን
+envlist_col_from = ላኪ
+envlist_col_status = ሁኔታ
+envlist_col_subject = ርዕስ
+envlist_collapsed = የተጠቀለለ (%d)
+envlist_empty = በዚህ አቃፊ ውስጥ መልዕክቶች የሉም።
+envlist_loading = መልዕክቶችን በመጫን ላይ...
+envlist_no_accounts = ገና ምንም መለያ አልተዋቀረም።
+envlist_no_ignored = በዚህ አቃፊ ውስጥ ችላ የተባሉ ክሮች የሉም።
+envlist_no_watched = በዚህ አቃፊ ውስጥ የሚከታተሉ ክሮች የሉም።
+envlist_select_folder = መልዕክቶችን ለመጫን መለያ ወይም አቃፊ ይምረጡ።
+eula_link_0 = የHimalaya የፈቃድ ገጽን በአሳሽዎ ክፈት
+eula_link_1 = የStevenBlack hosts የፈቃድ ገጽን በአሳሽዎ ክፈት
+eula_link_2 = የEasyList/EasyPrivacy የፈቃድ ገጽን በአሳሽዎ ክፈት
+eula_link_3 = የPhishing.Database የፈቃድ ገጽን በአሳሽዎ ክፈት
+eula_read_note = ከታች ያለውን ፈቃድ፣ የሶስተኛ ወገን ክፍሎችን ጨምሮ፣ ያንብቡ። ቀጣይ ከመገኘቱ በፊት ተስማምቻለሁን ምልክት ማድረግ አለብዎት። አልስማማም ZBoxን ሳይጀምር ይዘጋዋል፣ እና ይህ ሩጫ እስካሁን የፈጠረውን ያስወግዳል።
+eula_unreadable = የፈቃድ ፋይሉን ማንበብ አልተቻለም፦\n%s
+filters_title = ማጣሪያዎችን አሂድ
+flag_title = መልዕክቱን ኮከብ አድርግ
+folder_type_archive = ማህደር
+folder_type_drafts = ረቂቆች
+folder_type_inbox = የገቢ መልዕክት ሳጥን
+folder_type_junk = አይፈለጌ መልዕክት
+folder_type_sent = የተላኩ
+folder_type_trash = ቆሻሻ መጣያ
+mime_application_json = የJSON ፋይል
+mime_application_msword = የWord ሰነድ
+mime_application_octet_stream = የሁለትዮሽ ፋይል
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = የExcel የተመን ሉህ
+mime_application_vnd_ms_powerpoint = የPowerPoint አቀራረብ
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = የPowerPoint አቀራረብ
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = የExcel የተመን ሉህ
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = የWord ሰነድ
+mime_application_xml = የXML ፋይል
+mime_application_zip = የZIP ማህደር
+mime_audio_mpeg = MP3 ድምጽ
+mime_audio_ogg = OGG ድምጽ
+mime_audio_wav = WAV ድምጽ
+mime_image_bmp = BMP ምስል
+mime_image_gif = GIF ምስል
+mime_image_jpeg = JPEG ምስል
+mime_image_png = PNG ምስል
+mime_image_svg_xml = SVG ምስል
+mime_image_webp = WebP ምስል
+mime_text_csv = የCSV ፋይል
+mime_text_html = የHTML ፋይል
+mime_text_plain = የጽሑፍ ፋይል
+mime_video_mp4 = MP4 ቪዲዮ
+mime_video_x_msvideo = AVI ቪዲዮ
+move_title_junk = እንደ አይፈለጌ ምልክት አድርግ
+move_title_move_to = ውሰድ
+move_title_not_junk = አይፈለጌ አይደለም ብለህ ምልክት አድርግ
+mp_explain_set = ዋና የይለፍ ቃል ተዘጋጅቷል። ይህ የZBox አቃፊ በተለየ ኮምፒዩተር ላይ የተቀመጡ የመለያ የይለፍ ቃሎቹን እንዲከፍት የሚያስችለው እሱ ነው።\n\nለማስወገድ ሁለቱንም አዲስ የይለፍ ቃል ሳጥኖች ባዶ ትተው እሺን ይጫኑ። ማስወገዱ ይህን ኮምፒዩተር አይነካም፣ ነገር ግን እያንዳንዱ መለያ እንደገና ሳይገባ አቃፊው በሌላ በማንኛውም ላይ አይሰራም።
+mp_explain_unset = ዋና የይለፍ ቃል አልተዘጋጀም፣ ስለዚህ የተቀመጡ የመለያ የይለፍ ቃላት በዚህ ኮምፒዩተር እና በዚህ የWindows መለያ ላይ ብቻ ሊነበቡ ይችላሉ። አቃፊውን ሌላ ቦታ ከገለበጡ እያንዳንዱ መለያ ወደ የመልዕክት አገልጋዩ እንደገና መግባት አለበት።\n\nአንዱን ያዘጋጁና ZBox በእያንዳንዱ አዲስ ኮምፒዩተር ላይ አንድ ጊዜ ይጠይቀዋል፣ ከዚያ በኋላ እዚያ በመደበኛ ይከፈታል። ይህ ኮምፒዩተር እንደገና አይጠይቅም።\n\nይጻፉትና በደህና ቦታ ያስቀምጡት። የትም አይከማችም እና መመለስ አይቻልም፦ ከረሱት እያንዳንዱ መለያ ወደ የመልዕክት አገልጋዩ እንደገና መግባት አለበት።
+mp_label_confirm = &አዲሱን ዋና የይለፍ ቃል አረጋግጥ፦
+mp_label_current = &የአሁኑ ዋና የይለፍ ቃል፦
+mp_label_master = &ዋና የይለፍ ቃል፦
+mp_label_new = &አዲስ ዋና የይለፍ ቃል፦
+mp_name_confirm = አዲሱን ዋና የይለፍ ቃል አረጋግጥ
+mp_name_current = የአሁኑ ዋና የይለፍ ቃል
+mp_name_master = ዋና የይለፍ ቃል
+mp_name_new = አዲስ ዋና የይለፍ ቃል
+mp_prompt_existing = የተቀመጡ የመለያ የይለፍ ቃሎችዎ በዚህ ኮምፒዩተር ላይ ብቻ የተጠበቁ ናቸው። ZBoxን ወደ ሌላ ቢያንቀሳቅሱም እንዲከፈቱ ዋና የይለፍ ቃል ያዘጋጁ።
+mp_prompt_first_run = ZBox የመለያ የይለፍ ቃሎችዎን ሊያስቀምጥ ነው። ZBoxን ወደ ሌላ ኮምፒዩተር ቢያንቀሳቅሱም አሁንም እንዲከፈቱ አሁን ዋና የይለፍ ቃል ያዘጋጁ።
+mp_prompt_new_account = ZBox የዚህን መለያ የይለፍ ቃል ሊያስቀምጥ ነው። ZBoxን ወደ ሌላ ኮምፒዩተር ቢያንቀሳቅሱም መለያው አሁንም እንዲከፈት መጀመሪያ ዋና የይለፍ ቃል ያዘጋጁ።
+mp_removed_done = ዋና የይለፍ ቃል ተወግዷል። የተቀመጡ የይለፍ ቃላት አሁን በዚህ ኮምፒዩተር እና በዚህ የWindows መለያ ላይ ብቻ ይሰራሉ።
+mp_set_done = ዋና የይለፍ ቃል ተዘጋጅቷል። ይህ አቃፊ በሚከፈትበት እያንዳንዱ አዲስ ኮምፒዩተር ላይ ZBox አንድ ጊዜ ይጠይቀዋል፣ ከዚያ በኋላ እዚያ በመደበኛ ይከፈታል።
+mv_body_title = የመልዕክት አካል
+mv_col_format = ቅርጸት
+mv_col_name = ስም
+mv_col_size = መጠን
+mv_format_unknown = ያልታወቀ
+mv_size_unknown = መጠኑ ያልታወቀ
+na_account_settings = የመለያ እና ማንነት ቅንብሮች
+na_disable_account = መለያውን አሰናክል
+na_edit_signature = ፊርማ አርትዕ
+na_message_filters = የመልዕክት ማጣሪያዎች
+na_mute_account = መለያውን ድምጸ-ከል አድርግ
+na_pause_auto_check = ራስ-ሰር ፍተሻን አቁም
+na_remove_account = መለያውን አስወግድ
+na_set_default = እንደ ነባሪ መለያ አዘጋጅ
+no_offline_copy = የ%s ከመስመር ውጭ ቅጂ የለም። በመስመር ላይ ሲሆኑ ይክፈቱት፣ ወይም ፋይል፣ ከመስመር ውጭ፣ አሁን አመሳስልን ይጠቀሙ።
+perm_delete_confirm = {msg} ይህ የቆሻሻ መጣያ አቃፊውን ይዘልላል እና ሊቀለበስ አይችልም።
+perm_delete_many = {count} መልዕክቶች እስከመጨረሻው ይሰረዙ?
+perm_delete_one = {count} መልዕክት እስከመጨረሻው ይሰረዝ?
+preset_note_apple = Apple መተግበሪያ-ተኮር የይለፍ ቃል ያስፈልገዋል።
+preset_note_fastmail = Fastmail የመተግበሪያ የይለፍ ቃል ያስፈልገዋል።
+preset_note_google = Google የመተግበሪያ የይለፍ ቃል ወይም OAuth2 ያስፈልገዋል፣ መደበኛ የይለፍ ቃልዎን አይደለም።
+preset_note_proton = ProtonMail የProtonMail Bridge መተግበሪያ በአካባቢው እንዲሰራ ይፈልጋል።
+preset_note_yahoo = Yahoo የመተግበሪያ የይለፍ ቃል ያስፈልገዋል።
+priv_phishing_not_loaded = የማጭበርበር ዝርዝር፦ ገና አልተጫነም። እነዚህ ደንቦች ሲበሩ እና ZBox በመስመር ላይ ሲሆን ለመጀመሪያ ጊዜ ይወርዳል።
+priv_phishing_prefix = የማጭበርበር ዝርዝር፦
+priv_status_unavailable = የዕገዳ ዝርዝር ሁኔታ አይገኝም።
+rdr_load_failed = መልዕክቱን መጫን አልተቻለም።\n\n{message}
+rdr_loading = መልዕክት በመጫን ላይ...
+rdr_select_message = እዚህ ለማንበብ መልዕክት ይምረጡ።
+set_autosave_off = ጠፍቷል — በእጅ ለማስቀመጥ ረቂቅ አስቀምጥ (Ctrl+S) ይጠቀሙ
+set_autosave_seconds = በየ{seconds} ሰከንዱ
+set_no_unlock = እዚህ ጥቅም ላይ የሚውል የይለፍ ቁልፍ ወይም የደህንነት ቁልፍ የለም
+set_purge_days = ከ{days} ቀናት በኋላ
+set_purge_off = ጠፍቷል — ቆሻሻ መጣያ እና አይፈለጌ መልዕክት በጭራሽ በራስ-ሰር አይጸዱም
+set_purge_one_day = ከ1 ቀን በኋላ
+set_val_seconds = {seconds} ሰከንዶች
+set_val_one_second = 1 ሰከንድ
+set_silence_off = አጥፋ
+set_announce_wait = ቁልፍ ይጠብቃል
+set_autosave_minutes = በየ{minutes} ደቂቃው
+set_autosave_one_minute = በየደቂቃው
+set_rt_bundled_installed = የተካተተ የሩጫ ጊዜ፦ ተጭኗል።
+set_rt_bundled_many = የተካተተ የሩጫ ጊዜ፦ %s ተጭኗል።
+set_rt_bundled_none = የተካተተ የሩጫ ጊዜ፦ ምንም አልተጫነም፣ ስለዚህ ZBox ስርዓት-አቀፉን ይጠቀማል።
+set_rt_bundled_unknown = የተካተተ የሩጫ ጊዜ፦ መወሰን አልተቻለም።
+set_rt_bundled_ver = የተካተተ የሩጫ ጊዜ፦ ስሪት %s ተጭኗል።
+set_rt_system_unknown = ስርዓት-አቀፍ የሩጫ ጊዜ፦ ስሪቱን መወሰን አልተቻለም።
+set_rt_system_ver = ስርዓት-አቀፍ የሩጫ ጊዜ፦ ስሪት %s።
+set_unlock_many = እዚህ %d የመክፈቻ ዘዴዎች መጠቀም ይቻላል
+set_unlock_unreadable = የመክፈቻ ዘዴዎችን ማንበብ አልተቻለም
+sig_tab_formatted = የተቀረጸ
+sig_tab_source = HTML ምንጭ
+srch_all_accounts = ሁሉም መለያዎች
+srch_all_folders = ሁሉም አቃፊዎች
+tab_mail = ደብዳቤ
+tab_new_message = አዲስ መልዕክት
+tab_saved_message = የተቀመጠ መልዕክት
+title_copy_to_err = ቅዳ
+title_mark_message = መልዕክቱን ምልክት አድርግ
+title_unsent_message = ያልተላከ መልዕክት
+tree_unified_root = የተዋሃዱ አቃፊዎች
+unlock_kind_passkey = የይለፍ ቁልፍ (Windows Hello)
+unlock_kind_security_key = የደህንነት ቁልፍ
+unlock_prompt_message = Windows እንዲያረጋግጡ እየጠየቀ ነው። ለጥያቄው በWindows Hello፣ በPINዎ ወይም በደህንነት ቁልፍዎ ይመልሱ። Windows ሲጨርስ ይህ መስኮት በራሱ ይዘጋል።
+unlock_prompt_title = የWindows ደህንነት
+unlock_registering = ይህን የመክፈቻ ዘዴ በመመዝገብ ላይ
+unlock_the_passkey = የይለፍ ቁልፍ
+unlock_the_security_key = የደህንነት ቁልፍ
+wildcard_eml = የኢሜይል ፋይሎች (*.eml)|*.eml|ሁሉም ፋይሎች (*.*)|*.*
+wildcard_export = የZBox ወደ ውጭ መላክ (*.json)|*.json
+wiz_not_supported = አይደገፍም፦ {name}። {note} ይህ መለያ በZBox ውስጥ ሊጨመር አይችልም።
+stock_apply = &ተግብር
+stock_cancel = ሰርዝ
+stock_close = &ዝጋ
+stock_help = &እገዛ
+stock_no = &አይ
+stock_ok = እሺ
+stock_yes = &አዎ
+wiz_btn_back = &< ተመለስ
+wiz_btn_finish = &ጨርስ
+wiz_btn_next = &ቀጣይ >
+acct_unsaved_q = የዚህ መለያ ለውጦች ይቀመጡ?
+btn_save = &አስቀምጥ
+spell_add_to_dictionary = &ወደ መዝገበ ቃላት ጨምር
+spell_no_suggestions = ጥቆማዎች የሉም
+title_signature_for = ፊርማ፦ {account}
+title_mark_folder_read = አቃፊውን እንደተነበበ ምልክት አድርግ
+title_update_available = የZBox ዝመና
+update_available = ZBox {new} ይገኛል። እርስዎ {current} አለዎት።
+upd_notes_label = &የልቀት ማስታወሻዎች፦
+upd_no_notes = የልቀት ማስታወሻዎች የሉም።
+upd_notes_name = የልቀት ማስታወሻዎች
+upd_update_now = &አዎ፣ አሁን አዘምን
+upd_remind_later = &በኋላ አስታውሰኝ
+title_update_download = የZBox ዝመና በማውረድ ላይ
+upd_downloading = ZBox {version} በማውረድ ላይ...
+upd_progress_name = የማውረድ ሂደት
+upd_cancel = &ሰርዝ
+upd_cancelling = በመሰረዝ ላይ...
+set_updates_label = ዝመናዎች፦
+set_update_auto = &ዝመናዎችን በራስ-ሰር ፈትሽ
+set_update_mode_label = ዝመና ሲገኝ፦
+set_update_ask = &ጠይቀኝ
+set_update_silent = &በጸጥታ አውርደህ ጫን
+set_update_note = ZBox አዲስ ልቀት ለማግኘት GitHubን በቀን ቢበዛ አንድ ጊዜ፣ ስራ ሲፈታ ብቻ ይፈትሻል፣ እና ከስሪት ቁጥሩ በስተቀር ምንም አይልክም። ጠይቀኝ አዲሱን ስሪት እና የልቀት ማስታወሻዎቹን ከአዎ፣ አሁን አዘምን እና በኋላ አስታውሰኝ ጋር ያሳያል። በጸጥታ አውርደህ ጫን ዝመናውን ስራ ሲፈታ ያመጣና በሚቀጥለው ጊዜ ከZBox ሙሉ በሙሉ ሲወጡ፣ በሚሰሩበት ጊዜ በጭራሽ ሳይሆን፣ ይጭነዋል። ዝመናው የZBoxን የራሱን የፕሮግራም ፋይሎች ብቻ ይተካል፦ መለያዎችዎ፣ የይለፍ ቃላትዎ፣ ቅንብሮችዎ፣ ደብዳቤዎ፣ መዝገቦችዎ፣ የድምጽ ገጽታዎችዎ እና ያከሉት ማንኛውም ቋንቋ አይነኩም፣ እና አዲሱ ካልጀመረ የቀደመው ስሪት ተጠብቆ በራሱ ይመለሳል። እገዛ፣ ዝመናዎች አሁን ዝመናዎችን ፈትሽ እና በእጅ ለማዘመን የልቀቶች ገጽ አላቸው።
+set_update_check_now = &አሁን ፈትሽ
+mv_attachment_button = {filename} ({format})
+att_open = ክፈት
+att_save = አስቀምጥ...
+att_save_all = ሁሉንም አባሪዎች አስቀምጥ
+title_save_attachment = አባሪ አስቀምጥ
+title_full_headers = ሙሉ ራስጌዎች
+hdr_copy_all = ሁሉንም ቅዳ
+acct_identity_own_signature = የራሱን ፊርማ ተጠቀም
+acct_identity_own_reply_to = የራሱን የምላሽ አድራሻ ተጠቀም
+acct_identity_reply_to = የምላሽ አድራሻ
+acct_identity_always_cc = ለእነዚህ አድራሻዎች ሁልጊዜ ግልባጭ ላክ
+acct_identity_cc = የግልባጭ አድራሻዎች
+acct_identity_always_bcc = ለእነዚህ አድራሻዎች ሁልጊዜ የተደበቀ ግልባጭ ላክ
+acct_identity_bcc = የተደበቀ ግልባጭ አድራሻዎች
+acct_identity_own_folders = የራሱን ረቂቆች እና የተላኩ አቃፊዎች ተጠቀም
+acct_identity_drafts = የረቂቆች አቃፊ
+acct_identity_sent = የተላኩ አቃፊ
+acct_identity_own_smtp = የራሱን የወጪ አገልጋይ ተጠቀም
+acct_identity_smtp_login = የወጪ መግቢያ ስም
+acct_identity_smtp_password = የወጪ የይለፍ ቃል
+acct_identity_test_smtp = &የወጪ አገልጋይን ሞክር
+acct_identity_note_smtp = በዚህ ማንነት የኢሜይል አድራሻ ለመግባት የመግቢያ ስሙን ባዶ ይተዉት። የተላኩ ቅጂዎች አሁንም ወደዚህ መለያ የተላኩ አቃፊ ይሄዳሉ፣ ወይም ይህ ማንነት የራሱ ካለው ወደዚያ።
+identity_field_required = {field} ይሙሉ፣ ወይም የሳጥኑን ምልክት ያንሱ።
+identity_field_invalid = {field} ልክ ያልሆነ አድራሻ ይዟል።
+identity_folders_required = የረቂቆች አቃፊ፣ የተላኩ አቃፊ ወይም ሁለቱንም ይምረጡ፣ ወይም የሳጥናቸውን ምልክት ያንሱ።
+identity_password_required = የወጪ የይለፍ ቃል ያስገቡ።
+identity_smtp_testing = የወጪ አገልጋይን በመሞከር ላይ።
+identity_smtp_ok = የወጪ አገልጋዩ መግባትን ተቀብሏል።
+identity_smtp_failed = የወጪ አገልጋይ ሙከራ አልተሳካም።\n\n{error}
+set_bare_keys_note_move = M እና C ለተመረጡ መልዕክቶች የአቃፊዎችን ውሰድ እና ቅዳ ምናሌዎች ይከፍታሉ፣ እና Shift+M ወደዚያ ለማንቀሳቀስ የአቃፊ ስም ከፊሉን የሚጽፉበት ሳጥን ይከፍታል። ይህን ማጥፋት M እና Cንም ወደ መጀመሪያ ፊደል አሰሳ ይመልሳል።
+folder_search_filter = የአቃፊ ስም ይዟል
+folder_search_list = የሚዛመዱ አቃፊዎች
+folder_search_no_match = ከዚያ ስም ጋር የሚዛመድ አቃፊ የለም።
+wiz_signin_method = የመግቢያ ዘዴ
+wiz_method_password = የይለፍ ቃል
+wiz_method_microsoft = የMicrosoft መለያ (Outlook.com፣ Hotmail፣ Live፣ Microsoft 365)
+wiz_ms_servers = የMicrosoft መግቢያ። ለOutlook.com፣ Hotmail፣ Live እና Microsoft 365 የአገልጋይ ቅንብሮች ተሞልተዋል።
+wiz_welcome_notice = Gmail። መደበኛው የGoogle የይለፍ ቃልዎ ውድቅ ይደረጋል፣ ነገር ግን የመተግበሪያ የይለፍ ቃል ይሰራል። ባለ ሁለት ደረጃ ማረጋገጫ መጀመሪያ መብራት አለበት። ከታች ያለው አዝራር የGoogleን መመሪያዎች ይከፍታል።\n\nOutlook.com፣ Hotmail፣ Live እና Microsoft 365። እነዚህ በMicrosoft መለያዎ ይገባሉ። በመግቢያ ገጹ ላይ የMicrosoft መለያን ይምረጡና በአሳሽዎ ወይም በኮድ ይግቡ።\n\nሌሎች አቅራቢዎች። መደበኛ የይለፍ ቃል ወይም የመተግበሪያ የይለፍ ቃል ብዙውን ጊዜ ይሰራል፣ እና የአቅራቢዎ የእገዛ ገጾች የአገልጋይ ቅንብሮችን ይዘረዝራሉ።
+preset_note_outlook = የOutlook.com፣ Hotmail፣ Live እና MSN መለያዎች በMicrosoft መለያ ይገባሉ። በመግቢያ ገጹ ላይ እንደ የመግቢያ ዘዴ የMicrosoft መለያን ይምረጡ።
+ms_status_name = የMicrosoft መግቢያ ሁኔታ
+ms_browser_button = &በአሳሽ ግባ
+ms_code_button = &በኮድ ግባ
+ms_copy_code = &ኮድ ቅዳ
+ms_open_page = &የመግቢያ ገጽ ክፈት
+ms_stop = &መጠበቅ አቁም
+ms_not_configured = በዚህ የZBox ቅጂ ውስጥ የMicrosoft መግቢያ አልተዘጋጀም።
+ms_not_signed_in = ገና አልገቡም። በአሳሽዎ፣ ወይም በማንኛውም መሣሪያ ላይ በኮድ ይግቡ።
+ms_signed_in = እንደ {address} ገብተዋል።
+ms_signed_in_plain = ገብተዋል።
+ms_needs_sign_in = ለዚህ መለያ የMicrosoft መግቢያ እንደገና ያስፈልጋል። በአሳሽዎ፣ ወይም በማንኛውም መሣሪያ ላይ በኮድ ይግቡ።
+ms_reason_cancelled = መግባቱ ቆሟል።
+ms_reason_timeout = በጊዜው ምንም ምላሽ አልመጣም።
+ms_reason_denied = መዳረሻ አልተፈቀደም።
+ms_reason_expired = ኮዱ ጊዜው አልፎበታል። አዲስ ይጠይቁ።
+ms_reason_network = Microsoftን መድረስ አልተቻለም። ግንኙነቱን ፈትሸው እንደገና ይሞክሩ።
+ms_reason_server = Microsoft እንዲህ አለ፦ {detail}
+ms_page_done = ገብተዋል። ይህን ገጽ ዘግተው ወደ ZBox መመለስ ይችላሉ።
+ms_page_failed = መግባቱ አልተጠናቀቀም። ለዝርዝር ወደ ZBox ይመለሱ።
+ms_browser_waiting = አሳሽዎ የMicrosoft መግቢያ ገጽን እያሳየ ነው። እዚያ መግባቱን ጨርሰው ከዚያ ወደ ZBox ይመለሱ።
+ms_code_asking = ከMicrosoft የመግቢያ ኮድ በመጠየቅ ላይ...
+ms_code_waiting = በማንኛውም መሣሪያ ላይ {address} ን ከፍተው ኮድ {code} ን ያስገቡ። መግባቱን እስኪጨርሱ ድረስ ZBox እዚህ ይጠብቃል።
+ms_failed = መግባቱ አልተጠናቀቀም። {reason}
+ms_code_copied = ኮዱ ተቀድቷል።
+offline_inbox_only = ለከመስመር ውጭ አጠቃቀም የገቢ መልዕክት ሳጥን እና ማህደር ብቻ ይቀመጣሉ። {folder} ለመክፈት በመስመር ላይ ይሁኑ።
+block_sender_rule_name = {sender}ን አግድ
+title_block_sender = ይህን ላኪ አግድ
+title_unblock_sender = የዚህን ላኪ ዕገዳ አንሳ
+set_clear_inbox_cache = ከገቢ መልዕክት ሳጥን ሲወጣ የመልዕክት መሸጎጫን አጽዳ
+set_clear_inbox_cache_note = ሲበራ፣ መልዕክት የገቢ መልዕክት ሳጥኑን እንደለቀቀ የከመስመር ውጭ ቅጂው እና የተቀመጠው አካሉ ይሰረዛሉ፣ ሌላ ቦታ ለምሳሌ በስልክዎ ቢሰረዝም ወይም ቢንቀሳቀስም፣ ስለዚህ ከእንግዲህ በሌለበት ቦታ በጭራሽ አይታይም። እነዚህን ፋይሎች የሚይዘው የገቢ መልዕክት ሳጥን ብቻ ነው፤ ሁሉም ሌሎች አቃፊዎች ሁልጊዜ ከአገልጋዩ ይነበባሉ።
+empty_trash_all_confirm = በእያንዳንዱ መለያ ቆሻሻ መጣያ ውስጥ ያሉ ሁሉም መልዕክቶች እስከመጨረሻው ይሰረዙ?\n\nይህ ሊቀለበስ አይችልም።
+envlist_col_recipient = ተቀባይ
+envlist_col_correspondents = ተጻጻፊዎች
+envlist_col_received = የተቀበሉት
+envlist_col_size = መጠን
+envlist_col_attachments = አባሪዎች
+envlist_col_priority = ቅድሚያ
+envlist_col_junk_status = የአይፈለጌ ሁኔታ
+envlist_attachment = አባሪዎች
+envlist_priority_highest = ከፍተኛ
+envlist_priority_high = ከፍ ያለ
+envlist_priority_low = ዝቅ ያለ
+envlist_priority_lowest = ዝቅተኛ
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = በመልዕክት ዝርዝር ውስጥ የዓምድ ራስጌዎችን አሳይ
+pgp_title = የOpenPGP ቁልፍ አስተዳዳሪ
+smime_title = የS/MIME የምስክር ወረቀት አስተዳዳሪ
+smime_own = የእርስዎ የምስክር ወረቀት
+smime_expired = ጊዜው አልፎበታል
+smime_expires = በ{date} ጊዜው ያበቃል
+smime_issuer = ሰጪ
+smime_valid = ከ{start} እስከ {end} የሚሰራ
+smime_fingerprint = የSHA-256 አሻራ
+smime_own_key = የእርስዎ የምስክር ወረቀት፣ ከግል ቁልፉ ጋር፦ ለእሱ የተመሰጠረ ደብዳቤ እዚህ ሊነበብ ይችላል።
+smime_unavailable = በዚህ የZBox ቅጂ ውስጥ S/MIME አይገኝም።
+smime_details = የምስክር ወረቀት ዝርዝሮች
+smime_no_certs = ገና የምስክር ወረቀቶች የሉም። የራስዎን .p12 ወይም .pfx ፋይል፣ ወይም የተጻጻፊ የምስክር ወረቀት ያስገቡ።
+smime_import_failed = የምስክር ወረቀቱን ማስገባት አልተቻለም፦ {error}
+smime_import_title = የምስክር ወረቀት ፋይል አስገባ
+smime_password_prompt = የ{name} የይለፍ ቃል ያስገቡ።
+smime_password_title = የምስክር ወረቀት የይለፍ ቃል
+smime_imported = የምስክር ወረቀቱ ገብቷል።
+smime_export_title = የምስክር ወረቀት ላክ
+smime_exported = የምስክር ወረቀቱ ተልኳል።
+smime_delete_confirm = የ{name} የምስክር ወረቀት ይሰረዝ? የእርስዎ ከሆነ፣ ለእሱ የተመሰጠረ ደብዳቤ ከእንግዲህ እዚህ ሊነበብ አይችልም።
+smime_deleted = የምስክር ወረቀቱ ተሰርዟል።
+smime_rs_verified = ይህ መልዕክት Windows በሚያምነው ባለስልጣን ለላኪው አድራሻ ከተሰጠ የምስክር ወረቀት የሚሰራ የS/MIME ፊርማ አለው።
+smime_rs_unverified = ይህ መልዕክት የሚሰራ የS/MIME ፊርማ አለው፣ ነገር ግን የምስክር ወረቀቱ Windows በሚያምነው ባለስልጣን አልተሰጠም።
+smime_rs_mismatch = ይህ መልዕክት የS/MIME ፊርማ አለው፣ ነገር ግን የላኪው አድራሻ ከፈራሚው የምስክር ወረቀት ጋር አይዛመድም።
+smime_rs_technical = ይህ መልዕክት የS/MIME ፊርማ አለው፣ ነገር ግን ከመልዕክቱ ጋር አይዛመድም። መልዕክቱ ከተፈረመ በኋላ ተቀይሮ ሊሆን ይችላል።
+smime_rs_signer = ፈራሚ፦ {name}
+smime_rs_issuer = የምስክር ወረቀት ሰጪ፦ {issuer}
+smime_rs_import_hint = ለማንበብ፣ የS/MIME የምስክር ወረቀትዎን ከግል ቁልፉ ጋር፣ እንደ .p12 ወይም .pfx ፋይል፣ በመሣሪያዎች፣ የS/MIME የምስክር ወረቀት አስተዳዳሪ ውስጥ ያስገቡ።
+pgp_details = የቁልፍ ባህሪያት
+pgp_generate = &አዲስ የቁልፍ ጥንድ
+smime_import = &የምስክር ወረቀት ፋይል አስገባ
+smime_export = &የምስክር ወረቀት ላክ
+smime_delete = &የምስክር ወረቀት ሰርዝ
+pgp_import_file = &የOpenPGP ቁልፍ ፋይል አስገባ
+pgp_import_file_title = የOpenPGP ቁልፍ ፋይል አስገባ
+pgp_import_clip = &ከቅንጥብ ሰሌዳ ቁልፎችን አስገባ
+pgp_export = &ይፋዊ ቁልፍን ወደ ፋይል ላክ
+pgp_copy = &ይፋዊ ቁልፍ ቅዳ
+pgp_backup = &ሚስጥራዊ ቁልፍን ወደ ፋይል ምትኬ አድርግ
+pgp_props = &የቁልፍ ባህሪያት
+pgp_revoke = &ቁልፍ ሻር
+pgp_delete = &ቁልፍ ሰርዝ
+pgp_expires = ጊዜው ያበቃል፦ {date}
+pgp_never_expires = ጊዜው አያበቃም
+pgp_expired = ጊዜው አልፎበታል
+pgp_revoked = ተሽሯል
+pgp_fingerprint = አሻራ
+pgp_key_id = የቁልፍ መታወቂያ
+pgp_created = የተፈጠረው
+pgp_acceptance = የእርስዎ ተቀባይነት
+pgp_acc_rejected = አይ፣ ይህን ቁልፍ ውድቅ አድርግ።
+pgp_acc_undecided = ገና አይደለም፣ ምናልባት በኋላ።
+pgp_acc_unverified = አዎ፣ ግን ትክክለኛ ቁልፍ መሆኑን አላረጋገጥኩም።
+pgp_acc_verified = አዎ፣ ይህ ቁልፍ ትክክለኛ አሻራ እንዳለው በግሌ አረጋግጫለሁ።
+pgp_personal_no = አይ፣ እንደ የግል ቁልፌ አትጠቀም።
+pgp_personal_yes = አዎ፣ ይህን ቁልፍ እንደ የግል ቁልፍ ቁጠር።
+pgp_verify_hint = ይህ በእርግጥ የ{addr} ቁልፍ መሆኑን ለማረጋገጥ፣ የቁልፉን አሻራ ከኢሜይል ውጭ በሆነ ደህንነቱ የተጠበቀ የመገናኛ መንገድ ያረጋግጡ።
+pgp_gen_title = የOpenPGP ቁልፍ ፍጠር
+pgp_gen_identity = ማንነት
+pgp_gen_type = የቁልፍ አይነት፦
+pgp_gen_ecc = ECC (ኤሊፕቲክ ከርቭ)
+pgp_gen_expiry = የቁልፍ ጊዜ ማብቂያ
+pgp_gen_no_expiry = ቁልፉ ጊዜው አያበቃም
+pgp_gen_button = ቁልፍ ፍጠር
+pgp_gen_confirm = ለ{identity} ይፋዊ እና ሚስጥራዊ ቁልፍ ይፈጠር?
+pgp_gen_progress = አዲሱን የOpenPGP ቁልፍዎን በመፍጠር ላይ…
+pgp_gen_done = የOpenPGP ቁልፍ በተሳካ ሁኔታ ተፈጥሯል!
+pgp_gen_failed = የOpenPGP ቁልፍ መፍጠር ሳይታሰብ አልተሳካም
+pgp_import_none = ምንም ቁልፍ አልገባም።
+pgp_import_done = የOpenPGP ቁልፎች በተሳካ ሁኔታ ገብተዋል!
+pgp_passphrase_title = የይለፍ ሐረግ ያስፈልጋል
+pgp_unlock_failed = ቁልፉን፣ ወይም የቁልፉን ንዑስ ክፍሎች መክፈት አልተቻለም።
+pgp_backup_title = የOpenPGP ቁልፍዎን ምትኬ ለማድረግ የይለፍ ቃል ይምረጡ
+pgp_backup_message = እዚህ የሚያዘጋጁት የይለፍ ቃል ሊፈጥሩት ያለውን የOpenPGP ሚስጥራዊ ቁልፍ ምትኬ ፋይል ይጠብቃል። ከምትኬው ለመቀጠል ይህን የይለፍ ቃል ማዘጋጀት አለብዎት።
+pgp_backup_pw = የሚስጥራዊ ቁልፍ ምትኬ የይለፍ ቃል፦
+pgp_backup_pw2 = የሚስጥራዊ ቁልፍ ምትኬ የይለፍ ቃል (እንደገና)፦
+pgp_backup_done = ሚስጥራዊ ቁልፉ በተሳካ ሁኔታ ተልኳል!
+pgp_export_done = ይፋዊ ቁልፉ በተሳካ ሁኔታ ተልኳል!
+pgp_copied = ቁልፍ(ቁልፎች) ወደ ቅንጥብ ሰሌዳ ተቀድተዋል
+pgp_revoke_done = ቁልፉ በተሳካ ሁኔታ ተሽሯል።
+pgp_personal = የግል ቁልፍ
+pgp_no_keys = ገና ቁልፎች የሉም። አዲስ የቁልፍ ጥንድ ይፍጠሩ ወይም ቁልፍ ያስገቡ።
+pgp_unavailable = በዚህ የZBox ቅጂ ውስጥ OpenPGP አይገኝም።
+pgp_gen_expires_3y = ቁልፉ በ3 ዓመት ውስጥ ጊዜው ያበቃል
+pgp_gen_no_identity = መጀመሪያ የኢሜይል መለያ ያክሉ።
+pgp_import_confirm = እነዚህ ቁልፎች ይግቡ?\n\n{keys}
+pgp_passphrase_prompt = ለ{name} ሚስጥራዊ ቁልፍ የይለፍ ሐረግ ያስገቡ።
+pgp_clip_empty = ቅንጥብ ሰሌዳው የOpenPGP ቁልፍ አልያዘም።
+pgp_pw_mismatch = ሁለቱ የይለፍ ቃላት አይዛመዱም።
+pgp_backup_open = ይህ ፋይል የሚስጥራዊ ቁልፍ ምትኬ ነው። የምትኬ የይለፍ ቃሉን ያስገቡ።
+pgp_revoke_confirm = የ{name} ቁልፍ ይሻር? የተሻረ ቁልፍ ፈጽሞ እንደገና ጥቅም ላይ ሊውል አይችልም። ሌሎች መጠቀም እንዲያቆሙ የተሻረውን ይፋዊ ቁልፍ ያጋሩ።
+pgp_delete_public_confirm = የ{name} ይፋዊ ቁልፍ ይሰረዝ?
+pgp_delete_secret_confirm = የእርስዎ የግል ቁልፍ {name} ይሰረዝ? ለእሱ የተመሰጠረ ደብዳቤ ፈጽሞ እንደገና ሊነበብ አይችልም። ሊያስፈልግዎት ይችላል ብለው ካሰቡ መጀመሪያ ሚስጥራዊ ቁልፉን ምትኬ ያድርጉ።
+pgp_select_key = መጀመሪያ ቁልፍ ይምረጡ።
+pgp_save_failed = ቁልፎቹን ማስቀመጥ አልተቻለም፦ {error}
+pgp_publish = &አትም
+pgp_publish_ok = ይፋዊ ቁልፉ ወደ "{keyserver}" ተልኳል።
+pgp_publish_fail = ይፋዊ ቁልፍዎን ወደ "{keyserver}" መላክ አልተቻለም።
+pgp_publish_suggest = ይፋዊ ቁልፍን በቁልፍ አገልጋይ ላይ ማተም ሌሎች እንዲያገኙት ያስችላል።
+pgp_publish_question = አሁን በ{keyserver} ላይ ይታተም? አገልጋዩ ከዚያ ወደ {addresses} የማረጋገጫ ኢሜይል ይልካል። በውስጡ ያለውን አገናኝ ከከፈቱ በኋላ አድራሻዎ ሊገኝ ይችላል።
+pgp_publish_sent = የማረጋገጫ ኢሜይል ወደ {addresses} ተልኳል። ቁልፍዎ በአድራሻዎ እንዲገኝ ለማድረግ በውስጡ ያለውን አገናኝ ይክፈቱ።
+pgp_publish_already = በ{addresses} አስቀድሞ ሊገኝ ይችላል።
+pgp_rs_no_sig = ዲጂታል ፊርማ የለም
+pgp_rs_no_sig_info = ይህ መልዕክት የላኪው ዲጂታል ፊርማ የለውም። ዲጂታል ፊርማ አለመኖር ይህ የኢሜይል አድራሻ ያለው በማስመሰል አንድ ሰው መልዕክቱን ሊልክ ይችላል ማለት ነው። መልዕክቱ በአውታረ መረብ ሲያልፍ ተቀይሮ ሊሆን የሚችልበት ዕድልም አለ።
+pgp_rs_uncertain = እርግጠኛ ያልሆነ ዲጂታል ፊርማ
+pgp_rs_uncertain_date = እርግጠኛ ያልሆነ ዲጂታል ፊርማ - በ{date} ተፈርሟል
+pgp_rs_invalid = ልክ ያልሆነ ዲጂታል ፊርማ
+pgp_rs_invalid_date = ልክ ያልሆነ ዲጂታል ፊርማ - በ{date} ተፈርሟል
+pgp_rs_good = ጥሩ ዲጂታል ፊርማ
+pgp_rs_good_date = ጥሩ ዲጂታል ፊርማ - በ{date} ተፈርሟል
+pgp_rs_no_key = ይህ መልዕክት ዲጂታል ፊርማ አለው፣ ነገር ግን ትክክል መሆኑ እርግጠኛ አይደለም። ፊርማውን ለማረጋገጥ የላኪውን ይፋዊ ቁልፍ ቅጂ ማግኘት አለብዎት።
+pgp_rs_uid_mismatch = ይህ መልዕክት ዲጂታል ፊርማ አለው፣ ነገር ግን አለመመጣጠን ተገኝቷል። መልዕክቱ ከፈራሚው ይፋዊ ቁልፍ ጋር በማይዛመድ የኢሜይል አድራሻ ተልኳል።
+pgp_rs_not_accepted = ይህ መልዕክት ዲጂታል ፊርማ አለው፣ ነገር ግን የፈራሚው ቁልፍ ለእርስዎ ተቀባይነት ያለው መሆኑን ገና አልወሰኑም።
+pgp_rs_rejected = ይህ መልዕክት ዲጂታል ፊርማ አለው፣ ነገር ግን የፈራሚውን ቁልፍ ውድቅ ለማድረግ አስቀድመው ወስነዋል።
+pgp_rs_technical = ይህ መልዕክት ዲጂታል ፊርማ አለው፣ ነገር ግን ቴክኒካዊ ስህተት ተገኝቷል። መልዕክቱ ተበላሽቷል፣ ወይም ሌላ ሰው ቀይሮታል።
+pgp_rs_unverified = ይህ መልዕክት አስቀድመው ከተቀበሉት ቁልፍ የሚሰራ ዲጂታል ፊርማ አለው። ሆኖም ያ ቁልፍ በእርግጥ የላኪው መሆኑን ገና አላረጋገጡም።
+pgp_rs_verified = ይህ መልዕክት ከተረጋገጠ ቁልፍ የሚሰራ ዲጂታል ፊርማ አለው።
+pgp_rs_own_key = ይህ መልዕክት ከግል ቁልፍዎ የሚሰራ ዲጂታል ፊርማ አለው።
+pgp_rs_signer_id = የፈራሚው የቁልፍ መታወቂያ፦ {keyid}
+pgp_rs_decrypt_id = የእርስዎ የመፍቻ ቁልፍ መታወቂያ፦ {keyid}
+pgp_rs_enc_none = መልዕክቱ አልተመሰጠረም
+pgp_rs_enc_none_info = ይህ መልዕክት ከመላኩ በፊት አልተመሰጠረም። ያለ ምስጠራ በበይነመረብ የሚላክ መረጃ በመንገድ ላይ ሌሎች ሊያዩት ይችላሉ።
+pgp_rs_enc_invalid = መልዕክቱን መፍታት አይቻልም
+pgp_rs_enc_invalid_info = ይህ መልዕክት ለእርስዎ ከመላኩ በፊት ተመስጥሯል፣ ነገር ግን መፍታት አይቻልም።
+pgp_rs_enc_valid = መልዕክቱ ተመስጥሯል
+pgp_rs_enc_valid_info = ይህ መልዕክት ለእርስዎ ከመላኩ በፊት ተመስጥሯል። ምስጠራ መልዕክቱን የታሰቡት ተቀባዮች ብቻ ማንበብ እንደሚችሉ ያረጋግጣል።
+pgp_rs_field = የመልዕክት ደህንነት
+pgp_rs_import = የOpenPGP ቁልፍ አስገባ
+pgp_rs_open_to_unlock = የይለፍ ሐረግ ለማስገባት መልዕክቱን ይክፈቱ።
+pgp_rs_reply_not_quoted = ዋናው መልዕክት ተመስጥሮ ነበር፣ ስለዚህ ጽሑፉ እዚህ አልተጠቀሰም።
+pgp_cm_encrypt = አመስጥር
+pgp_cm_sign = በዲጂታል ፈርም
+pgp_e2e_title = ከጫፍ እስከ ጫፍ ምስጠራ
+acct_e2e_button = &ከጫፍ እስከ ጫፍ ምስጠራ...
+pgp_e2e_none = ለዚህ ማንነት OpenPGP አትጠቀም።
+pgp_e2e_disable = ለአዲስ መልዕክቶች ምስጠራን አሰናክል
+pgp_e2e_enable = ለአዲስ መልዕክቶች ምስጠራን አንቃ
+pgp_e2e_enable_info = ለግለሰብ መልዕክቶች ምስጠራን ማሰናከል ይችላሉ።
+pgp_e2e_sign = ያልተመሰጠሩ መልዕክቶችን ፈርም
+pgp_e2e_signing_info = ዲጂታል ፊርማ ተቀባዮች መልዕክቱን እርስዎ እንደላኩት እና ይዘቱ እንዳልተቀየረ እንዲያረጋግጡ ያስችላቸዋል። የተመሰጠሩ መልዕክቶች በነባሪ ሁልጊዜ ይፈረማሉ።
+pgp_e2e_autocrypt = ከAutocrypt ጋር ለመጣጣም የOpenPGP ይፋዊ ቁልፍ(ቁልፎች)ን በኢሜይል ራስጌዎች ላክ
+pgp_not_set_up = ከ{addr} ከጫፍ እስከ ጫፍ የተመሰጠሩ መልዕክቶችን ለመላክ አልተዘጋጁም።
+pgp_cannot_encrypt = ማመስጠር አይቻልም
+pgp_do_you_accept = ዲጂታል ፊርማዎችን ለማረጋገጥ እና መልዕክቶችን ለማመስጠር ይህን ቁልፍ ተቀብለዋል?
+pgp_searching = በመፈለግ ላይ…
+pgp_no_key_found = ከተገለጹት የፍለጋ መስፈርቶች ጋር የሚዛመድ ጥቅም ላይ የሚውል ቁልፍ ማግኘት አልቻልንም።
+pgp_source_autocrypt = የAutocrypt ራስጌ
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = የቁልፍ አገልጋይ
+pgp_discover = &ቁልፎችን በመስመር ላይ አግኝ
+pgp_cm_attach_key = የእኔን ይፋዊ ቁልፍ አያይዝ
+pgp_e2e_key_label = ለ{address} የግል ቁልፍ
+pgp_e2e_auto = ራስ-ሰር፦ ለዚህ አድራሻ የእርስዎ የግል ቁልፍ
+pgp_e2e_no_key = ZBox ለ{address} የግል OpenPGP ቁልፍ የለውም። በመሣሪያዎች፣ የOpenPGP ቁልፍ አስተዳዳሪ ውስጥ አንዱን ይፍጠሩ።
+pgp_e2e_new_messages = ለአዲስ መልዕክቶች ምስጠራ
+pgp_e2e_key_missing = ቁልፍ {keyid}፣ አልተገኘም
+pgp_missing_keys = እነዚህ ተቀባዮች ጥቅም ላይ የሚውል፣ የተቀበሉት ቁልፍ የላቸውም፦\n\n{addresses}\n\nመልዕክቱ ተመስጥሮ ሊላክ አይችልም።
+pgp_send_unencrypted = &ያለ ምስጠራ ላክ
+pgp_collected_found = የእነዚህ ተቀባዮች ቁልፎች እነሱ በላኩልዎ ደብዳቤ ውስጥ ተገኝተዋል፦
+pgp_lookup_q = የእነዚህ ተቀባዮች ቁልፎች በመስመር ላይ ይፈለጉ?\n\n{addresses}\n\nይህ አድራሻዎቻቸውን ወደ keys.openpgp.org እና ወደ የራሳቸው የደብዳቤ ጎራዎች ይልካል።
+pgp_found_online = በመስመር ላይ የተገኙ ቁልፎች፦
+pgp_source = ምንጭ፦ {source}
+pgp_discover_prompt = የኢሜይል አድራሻ ያስገቡ። ZBox የOpenPGP ቁልፎቹን በደብዳቤ ጎራው Web Key Directory እና በkeys.openpgp.org ላይ ይፈልጋል።
+pgp_discover_bad = እንደ name@example.com ያለ ሙሉ የኢሜይል አድራሻ ያስገቡ።
+pgp_keys_unreadable = የOpenPGP ቁልፎችን መክፈት አልተቻለም፦ {error}
+pgp_rs_why_no_key = ይህን መልዕክት ለመፍታት የሚያስፈልገው ሚስጥራዊ ቁልፍ አይገኝም።
+pgp_rs_why_unknown = በዚህ የተመሰጠረ መልዕክት ላይ ያልታወቁ ችግሮች አሉ።
+pgp_rs_hidden_subject = የተመሰጠረ መልዕክት
+pgp_rs_why_passphrase = የቁልፍዎ የይለፍ ሐረግ አልገባም። ለማስገባት መልዕክቱን እንደገና ይክፈቱ።
+pgp_rs_why_unavailable = በዚህ የZBox ቅጂ ውስጥ OpenPGP አይገኝም።
+pgp_rs_why_fetch = ለመፍታት መልዕክቱን ከአገልጋዩ ማምጣት አልተቻለም። እንደገና ለመሞከር እንደገና ይክፈቱት።
+pgp_rs_import_hint = ለማንበብ፣ ለዚህ መልዕክት ሚስጥራዊ ቁልፍዎን ወደ ZBox ያስገቡ።
+
+[errors]
+language_restart_failed = ZBox ራሱን እንደገና ማስጀመር አልቻለም፦\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = ለ{address} የኢሜይል ደንበኛን መክፈት አልተቻለም።
+
+wizard_test_failed = ግንኙነቱ አልተሳካም፦\n\n{error}
+
+contacts_import_unreadable = ያንን ፋይል ማንበብ አልተቻለም።\n\n{error}
+contacts_export_unwritable = ያንን ፋይል መጻፍ አልተቻለም።\n\n{error}
+
+attach_unreadable = አባሪውን {path} ማንበብ አልተቻለም፦\n{error}
+send_failed = መልዕክቱን መላክ አልተቻለም።\n\n{error}
+draft_attach_unreadable = አባሪውን {path} ማንበብ አልተቻለም፦\n{error}\n\nረቂቁ አልተቀመጠም።
+draft_save_failed = ረቂቁን ማስቀመጥ አልተቻለም።\n\n{error}
+
+clipboard_unavailable = ቅንጥብ ሰሌዳውን መክፈት አልተቻለም።
+open_link_failed = ለዚህ አሳሽዎን መክፈት አልተቻለም፦\n{url}
+
+master_password_mismatch = ሁለቱ አዲስ ዋና የይለፍ ቃል ሳጥኖች አይዛመዱም።
+master_password_required = ዋና የይለፍ ቃል ያስገቡ፣ ወይም ሰርዝን ይጫኑ።
+master_password_not_set = ዋና የይለፍ ቃሉን ማዘጋጀት አልተቻለም፦ {error}
+master_password_not_here = ዋና የይለፍ ቃል ከዚህ ሊቀየር አይችልም።
+
+attachment_save_failed = አባሪውን ማስቀመጥ አልተቻለም።\n\n{error}
+attachments_save_failed = አባሪዎቹን ማስቀመጥ አልተቻለም።\n\n{error}
+print_failed = መልዕክቱን ማተም አልተቻለም። አታሚ መዋቀሩን ያረጋግጡ።
+print_preview_failed = የህትመት ቅድመ እይታን መክፈት አልተቻለም። አታሚ መዋቀሩን ያረጋግጡ።
+
+related_search_failed = ተዛማጅ መልዕክቶችን መፈለግ አልተቻለም።\n\n{error}
+search_failed = ፍለጋው አልተሳካም።\n\n{error}
+
+unlock_methods_no_config_folder = ZBox የውቅር አቃፊውን ማግኘት አልቻለም፣ ስለዚህ የመክፈቻ ዘዴዎች እዚህ ሊተዳደሩ አይችሉም።
+shortcut_no_folder = ZBox የራሱን አቃፊ መለየት አልቻለም፣ ስለዚህ ከዚህ አቋራጭ መፍጠር አይቻልም።
+shortcut_failed_settings = የዴስክቶፕ አቋራጭ መፍጠር አልተቻለም፦\n\n{error}
+
+unlock_method_failed = {what} አልሰራም።\n\n{error}
+unlock_check_failed = ዋና የይለፍ ቃሉን መፈተሽ አልተቻለም።\n\n{error}
+unlock_password_wrong = ያ ዋና የይለፍ ቃል ትክክል አይደለም።
+unlock_add_failed = {what} መጨመር አልተቻለም።\n\n{error}
+unlock_passkey_setup_failed = በዚህ ኮምፒዩተር ላይ የይለፍ ቁልፍ ማዘጋጀት አልተቻለም፣ ስለዚህ ምንም አልተቀየረም።\n\n{error}
+unlock_method_test_failed = ያ ዘዴ አልሰራም።\n\n{error}
+
+account_list_unreadable = ZBox የመለያ ዝርዝርዎን መክፈት አልቻለም።\n\n{error}\n\nምንም መለያ አልተጫነም፣ እና ፋይሉ አልተቀየረም፣ ስለዚህ ምንም አልጠፋም። እስኪነበብ ድረስ መለያዎችን መጨመር፣ ማርትዕ እና ማስወገድ ውድቅ ይደረጋሉ።
+account_list_no_accounts = ZBox በዚህ ክፍለ ጊዜ የመለያ ዝርዝርዎን መክፈት አልቻለም ({error})፣ ስለዚህ የሚመረጡ መለያዎች የሉም። ምንም አልጠፋም እና ምንም አልተቀየረም። ZBoxን ዘግተው እንደገና ይጀምሩ፣ ሲጠየቁም ዋና የይለፍ ቃልዎን ያስገቡ።
+open_message_failed = መልዕክቱን መክፈት አልተቻለም።\n\n{error}
+filters_list_failed = በ{folder} ውስጥ መልዕክቶችን መዘርዘር አልተቻለም።\n\n{error}
+filters_move_failed = የተጣሩ መልዕክቶችን ማንቀሳቀስ አልተቻለም።\n\n{error}
+cache_clear_failed = መሸጎጫውን ማጽዳት አልተቻለም።\n\n{error}
+folder_create_failed = አቃፊውን መፍጠር አልተቻለም።\n\n{error}
+folder_rename_failed = አቃፊውን እንደገና መሰየም አልተቻለም።\n\n{error}
+folder_delete_failed = አቃፊውን መሰረዝ አልተቻለም።\n\n{error}
+folder_subscribe_failed = ለአቃፊው መመዝገብ አልተቻለም።\n\n{error}
+folder_unsubscribe_failed = ከአቃፊው ምዝገባ መውጣት አልተቻለም።\n\n{error}
+saved_open_failed = ፋይሉን መክፈት አልተቻለም።\n\n{error}
+saved_parse_failed = ይህን ፋይል እንደ ኢሜይል መልዕክት መተንተን አልተቻለም።\n\n{error}
+save_file_failed = ፋይሉን ማስቀመጥ አልተቻለም።\n\n{error}
+save_fetch_failed = ለማስቀመጥ መልዕክቱን ማምጣት አልተቻለም።\n\n{error}
+empty_trash_failed = ቆሻሻ መጣያውን ባዶ ማድረግ አልተቻለም።\n\n{error}
+empty_junk_failed = አይፈለጌ መልዕክትን ባዶ ማድረግ አልተቻለም።\n\n{error}
+export_write_failed = የመላኪያ ፋይሉን መጻፍ አልተቻለም።\n\n{error}
+import_read_failed = ይህን ፋይል እንደ ZBox ወደ ውጭ የተላከ ማንበብ አልተቻለም።\n\n{error}
+import_not_export = ይህ ፋይል ወደ ውጭ የተላከ የZBox ፋይል አይመስልም።\n\n{error}
+search_open_failed = ይህን መልዕክት መክፈት አልተቻለም።
+related_load_failed = ይህን መልዕክት መጫን አልተቻለም።\n\n{error}
+reply_load_failed = ምላሽ ለመስጠት መልዕክቱን መጫን አልተቻለም።\n\n{error}
+forward_load_failed = ለማስተላለፍ መልዕክቱን መጫን አልተቻለም።\n\n{error}
+action_failed = ይህን ድርጊት ማጠናቀቅ አልተቻለም።\n\n{error}
+undo_failed = {label} መቀልበስ አልተቻለም።\n\n{error}
+copy_failed = መልዕክቱን መቅዳት አልተቻለም።\n\n{error}
+delete_failed = መልዕክቱን መሰረዝ አልተቻለም።\n\n{error}
+archive_failed = መልዕክቱን ወደ ማህደር መላክ አልተቻለም።\n\n{error}
+master_password_not_changed = ዋና የይለፍ ቃሉን መቀየር አልተቻለም፦ {error}
+shortcut_failed_startup = የዴስክቶፕ አቋራጭ መፍጠር አልተቻለም፦\n\n{error}\n\nZBox መጀመሩን ይቀጥላል። በኋላ ከቅንብሮች እንደገና መሞከር ይችላሉ።
+account_locked_action = ZBox %s ማድረግ አልቻለም። በዚህ ክፍለ ጊዜ የመለያ ዝርዝሩን መክፈት አልተቻለም (%s)፣ እና ምንም አልተቀየረም። ZBoxን ዘግተው እንደገና ይጀምሩ፣ ከተጠየቁ ዋና የይለፍ ቃልዎን ያስገቡ።
+send_tls_mismatch = መልዕክቱን መላክ አልተቻለም። የወጪ አገልጋዩ ያለ ምስጠራ ምላሽ ሰጥቷል፣ ስለዚህ የወጪ ምስጠራው ከወደቡ ጋር አይዛመድም። በመሣሪያዎች፣ የመለያ እና ማንነት ቅንብሮች ውስጥ ለወደብ 587 STARTTLS፣ ወይም ለወደብ 465 SSL/TLS ይጠቀሙና እንደገና ይላኩ።\n\n{error}
+mark_folder_read_failed = አቃፊውን እንደተነበበ ምልክት ማድረግ አልተቻለም።\n\n{error}
+update_failed = ዝመናውን ማውረድ አልተቻለም፣ ስለዚህ ምንም አልተቀየረም።\n\n{error}
+update_rolled_back = ዝመናው መጀመር አልቻለም፣ ስለዚህ ቀዳሚው ስሪት ተመልሷል።
+attachment_open_failed = አባሪውን መክፈት አልተቻለም።\n\n{error}
+headers_failed = የመልዕክት ራስጌዎችን መጫን አልተቻለም።\n\n{error}
+wizard_ms_sign_in_first = ከመቀጠልዎ በፊት በMicrosoft ይግቡ። በዚህ ገጽ ላይ ካሉት ሁለት የመግቢያ አዝራሮች አንዱን ይጠቀሙ።
+wizard_provider_unsupported = ZBox በዚህ አቅራቢ መግባት አይችልም። በዚህ ገጽ ላይ ያለው ማስታወሻ ምክንያቱን ይናገራል። ተመልሰው ሌላ የኢሜይል አድራሻ ይጠቀሙ፣ ወይም ይሰርዙ።
+acct_ms_sign_in_first = ከማስቀመጥዎ በፊት በMicrosoft ይግቡ፣ ወይም የመግቢያ ዘዴ የይለፍ ቃልን ይምረጡ።
+ms_sign_in_again = ለ{account} የMicrosoft መግቢያ እንደገና ያስፈልጋል። የመለያ እና ማንነት ቅንብሮችን ከፍተው እዚያ ይግቡ።
+graph_pgp_too_large = ይህ የተመሰጠረ ወይም የተፈረመ መልዕክት Microsoft ለእንዲህ ያለ ደብዳቤ ከሚፈቅደው፣ ወደ 3 MB፣ ይበልጣል። ትናንሽ አባሪዎችን ይላኩ፣ ወይም ለዚህ መልዕክት አመስጥር እና በዲጂታል ፈርምን ያጥፉ።
+empty_trash_all_failed = ለእነዚህ ቆሻሻ መጣያውን ባዶ ማድረግ አልተቻለም፦ {accounts}
+
+[help]

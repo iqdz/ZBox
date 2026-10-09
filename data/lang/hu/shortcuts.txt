@@ -1,0 +1,103 @@
+Általános
+F6: A fókusz körbeléptetése a panelek között
+Ctrl+Tab: Következő lap
+Ctrl+Shift+Tab: Előző lap
+Ctrl+W vagy Ctrl+F4: Aktuális lap bezárása
+Escape: Kibontott témacsoport összecsukása, ha az üzenetlistának van fókusza és van kibontott; egyébként az aktuális lap bezárása (üzenet, mentett üzenet vagy el nem küldött írás -- mentetlen módosítások esetén előbb rákérdez)
+Application billentyű vagy Shift+F10: Helyi menü megnyitása a fókuszban lévő lista- vagy faelemen
+F1: Billentyűparancsok, ez az oldal
+Ctrl+Shift+Q: Kilépés -- mindig ténylegesen kilép a ZBoxból, akkor is, ha a Beállításokban be van kapcsolva a "Bezárás az értesítési területre" (az ablak Bezárás gombja, az Alt+F4 és a Ctrl+W a Levelezés lapon a kilépés helyett az értesítési területre rejt, ha ez a beállítás be van kapcsolva; az értesítési területi ikon saját Kilépés eleme is mindig ténylegesen kilép)
+Ctrl+Shift+Delete: Kapcsolat nélküli üzenetek gyorsítótárának törlése -- csak a ZBox helyi másolatai, semmi egyetlen kiszolgálón sem (az Eszközök > Gyorsítótár-tisztítás beállításai részben is van rá gomb)
+
+Levelezés
+Ctrl+N: Új üzenet
+Ctrl+Shift+N: Új e-mail-fiók
+F5: Új levelek letöltése az aktuális postafiókhoz
+Shift+F5: Új levelek letöltése az összes postafiókhoz
+Ctrl+Shift+J: Ugrás a Beérkezett üzenetek listájára
+Ctrl+Y: Ugrás a mappalistára
+Enter egy zárt postafiókon vagy mappán a mappalistában: megnyitja, mint a Right arrow
+Ctrl+Shift+B: Címjegyzék
+Ctrl+Shift+F: Üzenetek keresése
+Ctrl+Shift+T: Kapcsolódó üzenetek megjelenítése
+
+Az üzenetlista
+A Delete, a Shift+Delete, az Archiválás, a Csillagozás/Csillag eltávolítása, a Megjelölés levélszemétként/nem levélszemétként, az Áthelyezés és az Átmásolás mind a témacsoport összes üzenetére vonatkozik, ha ÖSSZECSUKOTT témacsoportsoron használja -- előbb bontsa ki a témacsoportot (Right arrow vagy Enter/Space), hogy egy benne lévő üzenetre hasson
+Ctrl+A: Az összes üzenet kijelölése
+Ctrl+Shift+L: További üzenetek betöltése
+Delete: Üzenetek áthelyezése a Kukába
+Shift+Delete: Üzenetek végleges törlése
+Ctrl+Z: Az utolsó Törlés, Archiválás, Megjelölés levélszemétként vagy Megjelölés nem levélszemétként visszavonása
+S: A kijelölt üzenetek csillagozása/csillagának eltávolítása
+A: A kijelölt üzenetek archiválása
+J: A kijelölt üzenetek megjelölése levélszemétként
+Shift+J: A kijelölt üzenetek megjelölése nem levélszemétként
+W: Témacsoport figyelése -- átkapcsolja, hogy a kijelölést tartalmazó témacsoport Figyelt-e (az Üzenet menüben és jobb gombbal is)
+K: Témacsoport mellőzése -- átkapcsolja, hogy az a témacsoport Mellőzött-e (az Üzenet menüben és jobb gombbal is)
+M: A kijelölt üzenetek áthelyezése -- megnyitja a mappák Áthelyezés menüjét
+Shift+M: A kijelölt üzenetek áthelyezése egy mappanév egy részének beírásával
+C: A kijelölt üzenetek átmásolása -- megnyitja a mappák Átmásolás menüjét
+A fenti S, A, J, W és K alapértelmezetten be van kapcsolva, és a Beállításokban kikapcsolható (egyébként elsőbbséget élveznek az üzenetlista saját első betűs navigációjával szemben)
+A fenti M, Shift+M és C ugyanazt a beállítást követi
+Enter vagy Space egy összecsukott témacsoporton: megnyitja a témacsoport legújabb olvasatlan üzenetét (a legújabb üzenetet, ha az egész témacsoport olvasott) egyetlen üzenetként, egy lapon -- majd a Ctrl+Shift+Page Down és a Ctrl+Shift+Page Up lapozza a témacsoport többi részét anélkül, hogy második üzenetet nyitna. Egyszerű üzenetnél a szokásos módon megnyitja
+Right arrow egy összecsukott témacsoporton: listaként megmutatja az üzeneteit, egyiket sem nyitva meg -- onnan egyenként nyissa meg a saját Enterével vagy Space-ével
+Ctrl+Shift+O: Üzenet megnyitása beszélgetésben -- az egész témacsoport egy lapon, az üzeneteinek listájaként, alatta a kijelölt törzsével. Nyilakkal lépkedve olvashatja őket egyenként; az Enter egy soron azt az egyetlen üzenetet nyitja meg saját teljes lapon. Ugyanaz a név és billentyű, mint a Thunderbird saját parancsáé
+Left arrow: összecsukja azt a témacsoportot, amelyben a kijelölés jelenleg van
+*: Összes témacsoport kibontása (a Nézet > Témacsoportok menüben is); \: Összes témacsoport összecsukása (a Nézet > Témacsoportok menüben is)
+A Nézet > Témacsoportok > Összes / Figyelt témacsoportok / Mellőzött témacsoportok szűri, mely témacsoportok látszanak -- az Összesre való visszaváltás mindig visszahoz minden üzenetet; ezzel soha nem törlődik semmi a mappából
+
+Megnyitott üzenet
+Alt+A: Az üzenet archiválása -- csak akkor, ha a törzse (Szöveg vagy HTML) ténylegesen billentyűzetfókuszban van; máshol az Alt+A megtartja szokásos jelentését, a Postafiókok menü megnyitását
+Ctrl+R: Válasz
+Ctrl+Shift+R: Válasz mindenkinek
+Ctrl+L: Továbbítás
+Ctrl+Delete vagy Ctrl+D: Az üzenet áthelyezése a Kukába. A sima Delete-et gyakran elveszi a képernyőolvasó, amikor egy HTML-üzenet van fókuszban; a Shift+Delete véglegesen töröl
+Ctrl+Shift+Page Down: A témacsoport következő üzenete; Ctrl+Shift+Page Up: az előző. Az aktuális lapot cseréli ahelyett, hogy másikat nyitna, így mindig csak egy üzenet van megnyitva. Az utolsó üzenetnél (vagy felfelé haladva az elsőnél) ezt közli és rákérdez; ugyanennek a billentyűnek az újbóli megnyomása bezárja az üzenetet és befejezi a témacsoportot, visszatérve az üzenetlistába. (A Ctrl+Page Up/Down érintetlen marad -- azok a lapokat váltják)
+Ctrl+B: Üzenetnézet váltása (Szöveg/HTML)
+Ctrl+P: Nyomtatás
+Ctrl+Shift+P: Nyomtatási kép
+Ctrl+S: Üzenet mentése másként
+Ctrl+U: A feladó nevének és címének felolvasása
+Ctrl+Shift+U: A feladó felolvasása és a cím másolása
+Ctrl+Shift+I: Távoli tartalom megjelenítése ebben az üzenetben
+Ctrl+Shift+=: Üzenet betűméretének növelése
+Ctrl+Shift+-: Üzenet betűméretének csökkentése
+Ctrl+Shift+0: Üzenet betűméretének visszaállítása
+
+Üzenet írása
+Ctrl+Enter vagy Alt+S: Küldés
+Ctrl+S: Piszkozat mentése
+Ctrl+Shift+A: Fájl csatolása
+Ctrl+Shift+S: A Feladó mezőben lévő postafiók aláírásának beszúrása
+Ctrl+Shift+V: Beillesztés idézetként
+Ctrl+Shift+W: Szószámláló
+Ctrl+Shift+P: Az üzenet előnézete úgy, ahogy elküldésre kerül
+Escape, Ctrl+W vagy Ctrl+F4: Az írási lap bezárása -- előbb rákérdez, ha valami mentetlen, és felajánlja a Piszkozat mentése, az Elvetés vagy a Szerkesztés folytatása lehetőséget
+Az alábbi minden parancs az Írás menüben is megtalálható, amelyet az Alt+C még akkor is megnyit, ha a fókusz az üzenettörzsben van
+
+Formázás írás közben
+Ctrl+B: Félkövér
+Ctrl+I: Dőlt
+Ctrl+Shift+X: Áthúzott
+Ctrl+Shift+8: Felsorolás
+Ctrl+Shift+7: Számozott lista
+Ctrl+Shift+9: Idézet
+Ctrl+Shift+6: Kód
+Ctrl+Alt+1: Címsor
+Ctrl+K: Hivatkozás beszúrása
+Ctrl+Shift+K: A kurzor helyén érvényes formázás kimondása
+Ctrl+Shift+M: A Formázás menü megnyitása bárhol a fókusz van, az üzenettörzset is beleértve
+
+Helyesírás írás közben
+Ctrl+Shift+F7: Helyesírás-ellenőrzés
+Ctrl+Shift+F9: Ugrás a következő hibára
+Ctrl+Shift+F8: A szó, amelynél megállt, hozzáadása a szótárhoz
+
+Ugyanaz a billentyű két helyen
+Ctrl+S: Piszkozat mentése íráskor, Üzenet mentése másként megnyitott üzenetben
+Ctrl+B: Félkövér íráskor, váltás Szöveg és HTML között megnyitott üzenetben
+Ctrl+Shift+P: Előnézet íráskor, Nyomtatási kép megnyitott üzenetben
+Alt+A: Archiválás, de csak ha az üzenettörzs billentyűzetfókuszban van; máshol megnyitja a Postafiókok menüt
+
+Diagnosztika
+Ctrl+Shift+F12: Gyorsgomb-diagnosztika -- minden, írási lapon lenyomott kombinációhoz egy sort ír a hibakeresési naplóba, hogy bizonyítható legyen, mit ért el egy billentyű. Alapértelmezetten ki van kapcsolva, és ugyanaz a billentyű kikapcsolja újra; az állapotot mindkét esetben kimondja

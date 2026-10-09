@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Kiswahili
+code = sw
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Ujumbe umetumwa.
+draft_saved = Rasimu imehifadhiwa.
+signature_inserted = Sahihi imeingizwa.
+signature_none = Akaunti hii haina sahihi.
+signature_saved = Sahihi imehifadhiwa.
+signature_not_saved = Sahihi haikuhifadhiwa.
+pasted_as_quotation = Imebandikwa kama nukuu.
+clipboard_empty = Hakuna kitu kwenye ubao wa kunakili.
+word_count = Maneno {words}, herufi {characters}.
+report_copied = Ripoti imenakiliwa.
+compose_tab_needed = Amri hiyo inahitaji kichupo cha kuandika ujumbe.
+attach_file_instead = Faili zilizoangushwa hapa haziwekwi kwenye maandishi ya ujumbe. Tumia Ambatisha faili ili kutuma moja.
+
+# Formatting in the message body
+formatting_here = Uumbizaji hapa: {formatting}.
+no_formatting_here = Hakuna uumbizaji hapa, maandishi matupu.
+
+# Spelling
+nothing_to_check = Hakuna cha kukagua.
+no_misspellings = Hakuna makosa ya tahajia.
+spelling_dictionary_unavailable = Kamusi ya tahajia haipatikani.
+next_misspelling_first = Tumia kosa linalofuata la tahajia kwanza.
+word_added = {word} imeongezwa kwenye kamusi.
+word_not_added = {word} haikuweza kuongezwa.
+corrections_applied_one = Marekebisho 1 yametekelezwa.
+corrections_applied_many = Marekebisho {count} yametekelezwa.
+corrections_applied_partly = Marekebisho {applied} kati ya {total} yametekelezwa. Mengine yalikataliwa; tazama kumbukumbu.
+occurrences_replaced_one = Tukio 1 limebadilishwa.
+occurrences_replaced_many = Matukio {count} yamebadilishwa.
+
+# Reading mail
+message_did_not_open = Ujumbe haukufunguka. Seva haikujibu. Bonyeza Enter ili ujaribu tena.
+thread_open = {messages} katika mjadala huu. Bonyeza tena ili kufunga.
+no_thread_selected = Hakuna mjadala uliochaguliwa.
+thread_watched = Mjadala unafuatiliwa.
+thread_not_watched = Mjadala hauendelei kufuatiliwa.
+thread_ignored = Mjadala umepuuzwa.
+thread_not_ignored = Mjadala hauendelei kupuuzwa.
+none_found = Hakuna kilichopatikana.
+refreshing_this_folder = Inasasisha folda hii.
+refreshing_all_accounts = Inasasisha akaunti zote.
+message_view_html = Mwonekano wa ujumbe: HTML (iliyoonyeshwa).
+message_view_text = Mwonekano wa ujumbe: Maandishi.
+html_view_still_loading = Ujumbe bado unapakiwa. Escape huufunga.
+message_still_opening = Inafungua ujumbe. Seva ni polepole.
+remote_content_blocked = Maudhui ya mbali yamezuiwa.
+remote_content_unblocked = Maudhui ya mbali hayazuiwi tena.
+remote_content_already_showing = Maudhui ya mbali tayari yanaonyeshwa kwenye ujumbe huu.
+archived = Imewekwa kwenye kumbukumbu.
+copied_to_folder = Imenakiliwa hadi {to_folder}.
+deleted_one = Ujumbe umefutwa kabisa.
+deleted_many = Jumbe {count} zimefutwa kabisa.
+trashed_one = Ujumbe umehamishiwa kwenye tupio.
+trashed_many = Jumbe {count} zimehamishiwa kwenye tupio.
+
+# Accounts and new mail
+no_account_yet = Bado hakuna akaunti ya kuruka kwayo.
+inbox_landed = Kikasha cha {name}.
+account_enabled = {name} imewashwa.
+auto_check_paused = Ukaguzi wa kiotomatiki umesitishwa kwa {account}.
+auto_check_resumed = Ukaguzi wa kiotomatiki umewashwa kwa {account}.
+account_disabled = {name} imezimwa.
+new_mail_one = Ujumbe mpya 1 kwa {name}.
+new_mail_many = Jumbe mpya {count} kwa {name}.
+refresh_all_done_one = Akaunti 1 imesasishwa.
+refresh_all_done_many = Akaunti {count} zimesasishwa.
+refresh_all_done_failures = Akaunti {count} zimesasishwa, {failed} hazikuweza kusasishwa.
+refresh_all_done_failures_one = Akaunti {count} imesasishwa, {failed} haikuweza kusasishwa.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Anwani imenakiliwa.
+sender_no_address = {sender}. Hakuna anwani ya kunakili.
+clipboard_not_opened = {sender}. Ubao wa kunakili haukuweza kufunguliwa.
+
+# The signature editor
+signature_page_formatted = Imeumbizwa. Hiki ndicho kitakachohifadhiwa.
+signature_page_html = Chanzo cha HTML. Hiki ndicho kitakachohifadhiwa.
+signature_page_html_still_wins = Imeumbizwa. Chanzo cha HTML bado ndicho kitakachohifadhiwa.
+
+# Background work
+phishing_list_updating = Orodha ya ulaghai wa mtandaoni inasasishwa chinichini.
+cache_cleared = Imefuta faili {files} za akiba, MB {size}.
+hotkeys_diagnostic_on = Uchunguzi wa vitufe vya mkato umewashwa, umetiwa alama
+hotkeys_diagnostic_off = Uchunguzi wa vitufe vya mkato umezimwa, haujatiwa alama
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Weka kwenye kumbukumbu
+action_delete = Futa
+action_delete_permanently = Futa kabisa
+action_mark_as_junk = Weka alama kuwa barua taka
+action_mark_as_not_junk = Weka alama kuwa si barua taka
+action_move_to = Hamishia
+action_copy_to = Nakili hadi
+action_mark_message = Weka alama kwenye ujumbe
+action_undo = Tendua
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Imetendua {action}.
+undo_done_many = Imetendua {action} kwa jumbe {count}.
+junk_marked_one = Imewekwa alama kuwa barua taka.
+junk_marked_many = Jumbe {count} zimewekwa alama kuwa barua taka.
+junk_no_new_sender = Hakuna mtumaji mpya aliyezuiwa: tayari amezuiwa, orodha ya barua pepe, au mojawapo ya anwani zako mwenyewe.
+not_junk_marked_one = Imewekwa alama kuwa si barua taka.
+not_junk_marked_many = Jumbe {count} zimewekwa alama kuwa si barua taka.
+moved_to_one = Imehamishiwa {to_folder}.
+moved_to_many = Jumbe {count} zimehamishiwa {to_folder}.
+copied_to_many = Jumbe {count} zimenakiliwa hadi {to_folder}.
+marked_read = Imewekwa alama kuwa imesomwa.
+marked_unread = Imewekwa alama kuwa haijasomwa.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Imesitishwa baada ya {completed} kati ya {total}. {succeeded} zimefanikiwa, {failed} zimeshindwa.
+bulk_failed_one = {done} {failed} kati ya ujumbe 1 imeshindwa.
+bulk_failed_many = {done} {failed} kati ya jumbe {total} zimeshindwa.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Herufi nzito
+format_word_italic = Herufi italiki
+format_word_strike = Mstari katikati
+format_word_href = Kiungo
+format_word_bullet = Orodha ya vitone
+format_word_number = Orodha ya namba
+format_word_quote = Nukuu
+format_word_code = Msimbo
+format_word_heading1 = Kichwa
+format_applied = {formatting} imetumika.
+format_inserted = {formatting} imeingizwa.
+format_not_available = {formatting} haipatikani kwenye mwili wa ujumbe wa maandishi matupu.
+format_on = {formatting} imewashwa
+format_off = {formatting} imezimwa
+link_applied = Kiungo kimetumika.
+link_applied_to_selection = Kiungo kimetumika kwenye uteuzi.
+plain_body_formatting = Mwili wa ujumbe wa maandishi matupu unaonyesha uumbizaji wake kama lebo.
+
+# Reaching either end of a thread
+thread_edge_first = Ujumbe wa kwanza katika mjadala huu. Bonyeza tena ili kufunga.
+thread_edge_last = Ujumbe wa mwisho katika mjadala huu. Bonyeza tena ili kufunga.
+jump_unified_inbox = Kikasha kilichounganishwa.
+remote_none = Hakuna maudhui ya mbali kwenye ujumbe huu.
+sender_none = Hakuna mtumaji kwenye ujumbe huu.
+sender_name_no_address = %s, hakuna anwani
+signature_not_switched = Sahihi haikubadilishwa. Bonyeza Ctrl+Shift+S ili kuingiza sahihi ya akaunti hii.
+signature_removed_no_signature = Sahihi imeondolewa. Akaunti hii haina.
+signature_switched = Sahihi imebadilishwa kuwa ya akaunti hii.
+spell_not_replaced = Neno halikuweza kubadilishwa.
+spell_replaced_with = Imebadilishwa kuwa {word}.
+folder_marked_read = Jumbe {count} zimewekwa alama kuwa zimesomwa.
+folder_no_unread = Hakuna jumbe ambazo hazijasomwa.
+threads_all_collapsed = Mijadala yote imekunjwa.
+threads_all_expanded = Mijadala yote imepanuliwa.
+upd_percent = asilimia {percent}
+upd_download_done = Upakuaji umekamilika. Inaandaa sasisho...
+upd_updated_to = ZBox imesasishwa hadi {version}.
+header_copied = Imenakiliwa.
+headers_copied = Vichwa vyote vimenakiliwa.
+identity_copies_updated = Nakala na nakala fiche zimesasishwa kwa utambulisho huu.
+signature_switched_identity = Sahihi imebadilishwa kuwa ya utambulisho huu.
+signature_removed_identity = Sahihi imeondolewa. Utambulisho huu hauna.
+signature_not_switched_identity = Sahihi haikubadilishwa. Bonyeza Ctrl+Shift+S ili kuingiza sahihi ya utambulisho huu.
+signature_none_identity = Utambulisho huu hauna sahihi.
+move_keys_no_selection = Chagua ujumbe kwanza.
+move_keys_no_folders = Bado hakuna folda za kuchagua. Jaribu tena baada ya muda mfupi.
+block_sender_done_one = {sender} amezuiwa. Jumbe mpya kutoka kwake zitaenda kwenye tupio.
+block_sender_done_many = Watumaji {count} wamezuiwa. Jumbe zao mpya zitaenda kwenye tupio.
+block_sender_already = {sender} tayari amezuiwa.
+block_sender_own = Hajazuiwa: hiyo ni mojawapo ya anwani zako mwenyewe.
+block_sender_list_unknown = Hajazuiwa: ujumbe huu ulipitia orodha ya barua pepe na hautaji aliyeutuma. Kuzuia anwani ya orodha kungewazuia wote walio ndani yake.
+block_sender_moved = Mtumaji amezuiwa. Jumbe {count} zimehamishiwa kwenye tupio.
+block_senders_moved = Watumaji {senders} wamezuiwa. Jumbe {count} zimehamishiwa kwenye tupio.
+unblock_sender_moved = Mtumaji amefunguliwa. Jumbe {count} zimehamishiwa kwenye kikasha.
+unblock_senders_moved = Watumaji {senders} wamefunguliwa. Jumbe {count} zimehamishiwa kwenye kikasha.
+unblock_sender_done = {sender} amefunguliwa.
+unblock_sender_not_blocked = {sender} hajazuiwa.
+pgp_cm_on = {name} imewashwa.
+pgp_cm_off = {name} imezimwa.
+pgp_cm_identity = Mipangilio ya usimbaji fiche imebadilishwa kuwa ya utambulisho huu.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Andika kitu hapo juu kisha bonyeza Enter au chagua Tafuta.
+search_no_account = Ongeza akaunti kwanza.
+search_no_term = Andika maneno ya kutafuta, au chagua tarehe au kisanduku cha kuteua.
+search_running = Inatafuta...
+search_none = Hakuna matokeo ya "{term}".
+search_found_one = Tokeo 1 la "{term}".
+search_found_many = Matokeo {count} ya "{term}".
+search_bad_date = Andika tarehe kama mwaka-mwezi-siku, kwa mfano 2025-12-31, pamoja na saa hiari kama 14:30.
+search_bad_range = Mwisho wa kipindi cha tarehe uko kabla ya mwanzo wake.
+search_none_any = Hakuna jumbe zinazolingana.
+search_found_one_any = Ujumbe 1 umepatikana.
+search_found_many_any = Jumbe {count} zimepatikana.
+search_failed = Utafutaji umeshindwa.
+
+# The related messages tab
+related_running = Inatafuta...
+related_none = Hakuna jumbe zinazohusiana zilizopatikana.
+related_found_one = Ujumbe 1 unaohusiana umepatikana.
+related_found_many = Jumbe {count} zinazohusiana zimepatikana.
+related_failed = Haikuweza kutafuta jumbe zinazohusiana.
+
+# Writing and sending
+sending_via = Inatuma kupitia {sender}...
+send_failed = Kutuma kumeshindwa. Tazama kumbukumbu kwa maelezo.
+draft_autosaved = Rasimu imehifadhiwa kiotomatiki.
+draft_autosave_failed = Kuhifadhi rasimu kiotomatiki kumeshindwa. Tazama kumbukumbu kwa maelezo.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Maudhui ya mbali sasa yatapakiwa kwa jumbe kutoka {sender}.
+downloading_attachment = Inapakua {filename}...
+downloading_attachments_one = Inapakua kiambatisho 1...
+downloading_attachments_many = Inapakua viambatisho {count}...
+saved_to = Imehifadhiwa kwenye {folder}
+attachment_download_failed = Kupakua kiambatisho kumeshindwa.
+
+# Getting mail onto the screen
+loading_folder = Inapakia {folder} kwa {account}...
+messages_in_folder = Jumbe {count} kwenye {folder}.
+messages_in_folder_cached = Jumbe {count} kwenye {folder} (nakala ya mwisho iliyosawazishwa, inasasisha...)
+no_offline_copy = Bado hakuna nakala ya nje ya mtandao ya {folder}.
+refresh_failed_cached = Haikuweza kusasisha {folder}: inaonyesha nakala ya mwisho iliyosawazishwa.
+no_such_folder = Hakuna folda ya {folder} kwa akaunti hii.
+load_failed = Imeshindwa kupakia jumbe. Tazama kumbukumbu kwa maelezo.
+no_more_to_load = Hakuna jumbe zaidi za kupakia kwenye folda hii.
+loading_more = Inapakia jumbe zaidi kwenye {folder}...
+more_loaded = Jumbe {count} zaidi zimepakiwa.
+no_more_messages = Hakuna jumbe zaidi kwenye folda hii.
+load_more_failed = Haikuweza kupakia jumbe zaidi: {error}
+loading_unified = Inapakia {folder} iliyounganishwa...
+messages_in_unified = Jumbe {count} kwenye akaunti zote katika {folder} iliyounganishwa.
+messages_in_unified_cached = Jumbe {count} kwenye {folder} iliyounganishwa (nakala ya mwisho iliyosawazishwa, inasasisha...)
+auto_purge_done = Usafishaji wa kiotomatiki uliondoa jumbe {count} za zamani kutoka tupio na barua taka.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Tayari.
+opening_message = Inafungua ujumbe...
+opening_message_already = Inafungua ujumbe... (tayari unapakiwa)
+could_not_open_message = Haikuweza kufungua ujumbe.
+could_not_open_that_message = Haikuweza kufungua ujumbe huo.
+could_not_load_message = Haikuweza kupakia ujumbe huu.
+message_still_loading = Ujumbe huo bado unapakiwa.
+folder_still_loading = Folda bado inapakiwa -- jaribu tena baada ya muda mfupi.
+not_in_thread = Ujumbe huu si sehemu ya mjadala.
+no_longer_in_thread = Ujumbe huu hauko tena kwenye mjadala.
+thread_position = Ujumbe {position} kati ya {total} kwenye mjadala huu.
+thread_finished_one = Mjadala umeisha (ujumbe 1).
+thread_finished_many = Mjadala umeisha (jumbe {count}).
+select_message_first = Chagua ujumbe kwanza.
+conversation_failed = Haikuweza kufungua mazungumzo haya.
+select_message_for_related = Chagua kwanza ujumbe wa kuona jumbe zinazohusiana nao.
+looking_for_related = Inatafuta jumbe zinazohusiana...
+no_threading_headers = Ujumbe huu hauna Message-ID wala vichwa vya mjadala vya kutafutia.
+reply_one_at_a_time = Kujibu kunafanya kazi kwa ujumbe mmoja kwa wakati. Tafadhali chagua ujumbe mmoja.
+select_message_to_reply = Chagua kwanza ujumbe wa kujibu.
+preparing_reply = Inaandaa jibu...
+reply_load_failed = Haikuweza kupakia ujumbe wa asili wa kujibu.
+select_message_to_forward = Chagua kwanza ujumbe wa kusambaza.
+preparing_forward = Inaandaa ujumbe wa kusambaza...
+forward_load_failed = Haikuweza kupakia ujumbe wa kusambaza.
+compose_tab_needed_hint = Amri hiyo inahitaji kichupo cha kuandika ujumbe. Bonyeza Ctrl+N ili kuandika ujumbe.
+open_message_first_view = Fungua ujumbe kwanza, kisha bonyeza Ctrl+B ili kubadilisha mwonekano wake.
+open_message_first_remote = Fungua ujumbe kwanza, kisha bonyeza Ctrl+Shift+I ili kupakia maudhui yake ya mbali.
+
+# Acting on messages
+copying_message = Inanakili ujumbe...
+copy_failed = Kunakili kumeshindwa.
+delete_failed = Kufuta kumeshindwa.
+already_in_archive = Tayari iko kwenye Kumbukumbu.
+archiving = Inaweka kwenye kumbukumbu...
+archive_failed = Kuweka kwenye kumbukumbu kumeshindwa.
+action_failed = {action} imeshindwa.
+nothing_to_undo = Hakuna cha kutendua.
+private_mode_on = Hali ya faragha imewashwa. Nakala za ZBox za barua pepe zako kwenye kompyuta hii zimefutwa.
+private_mode_off = Hali ya faragha imezimwa. ZBox inahifadhi tena nakala za barua pepe zako.
+undo_failed = Haikuweza kutendua {action}.
+
+# Views and folders
+folder_pane_all = Kidirisha cha folda: Folda zote.
+folder_pane_unified = Kidirisha cha folda: Folda zilizounganishwa.
+sorted_ascending = Imepangwa kwa {field}, kupanda.
+sorted_descending = Imepangwa kwa {field}, kushuka.
+unified_folders_updated = Folda zilizounganishwa zimesasishwa.
+zoom_reset = Ukubwa wa herufi za ujumbe umerudishwa kuwa chaguo-msingi.
+folder_creating = Inaunda folda "{folder}"...
+folder_created = Folda "{folder}" imeundwa.
+folder_create_failed = Haikuweza kuunda folda.
+folder_renaming = Inabadilisha jina la "{folder}" kuwa "{new_name}"...
+folder_renamed = Folda imepewa jina "{new_name}".
+folder_rename_failed = Haikuweza kubadilisha jina la folda.
+folder_deleting = Inafuta folda "{folder}"...
+folder_deleted = Folda imefutwa.
+folder_delete_failed = Haikuweza kufuta folda.
+folder_subscribing = Inajiandikisha kwa "{folder}"...
+folder_unsubscribing = Inaondoa usajili wa "{folder}"...
+folder_subscribed = Imejiandikisha.
+folder_unsubscribed = Usajili umeondolewa.
+folder_subscribe_failed = Haikuweza kujiandikisha kwa folda.
+folder_unsubscribe_failed = Haikuweza kuondoa usajili wa folda.
+
+# Accounts
+account_not_added = Akaunti haikuongezwa.
+account_added = Akaunti imeongezwa: {account}
+account_settings_not_saved = Mipangilio ya akaunti haikuhifadhiwa.
+account_updated = Akaunti imesasishwa: {account}
+account_not_removed = Akaunti haikuondolewa.
+account_removed = Akaunti imeondolewa.
+account_removed_with_files = Akaunti imeondolewa. Faili {count} za ndani zimefutwa.
+default_account_failed = Haikuweza kuweka akaunti chaguo-msingi.
+default_account_set = {account} sasa ni akaunti chaguo-msingi.
+auto_check_not_saved = Mpangilio wa ukaguzi wa kiotomatiki haukuhifadhiwa.
+mute_not_saved = Mpangilio wa kunyamazisha haukuhifadhiwa.
+account_muted = {account} imenyamazishwa.
+account_unmuted = {account} haijanyamazishwa tena.
+export_done = Akaunti {count} na mipangilio zimehamishwa hadi {path}.
+import_done = Akaunti {count} zimeingizwa kutoka {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Vichujio havikuhifadhiwa.
+filters_saved = Vichujio vimehifadhiwa kwa {account}.
+filters_checking = Inakagua {folder} dhidi ya vichujio vyako...
+filters_none_matched = Endesha sasa: hakuna jumbe kwenye {folder} zilizolingana na kanuni yoyote iliyowashwa.
+filters_run_failed = Haikuweza kuendesha vichujio.
+filters_moving = Inahamisha jumbe {count} zilizochujwa...
+filters_move_failures = Vichujio: jumbe {count} hazikuweza kuhamishwa.
+filters_moved = Vichujio vilihamisha jumbe {count} kutoka {folder}.
+filters_move_failed = Haikuweza kuhamisha jumbe zilizochujwa.
+cache_not_cleared = Akiba haikufutwa.
+auto_cache_cleanup = Usafishaji wa kiotomatiki wa akiba: jumbe za zamani kuliko {age}.
+phishing_update_failed = Haikuweza kusasisha orodha ya ulaghai wa mtandaoni: {error}
+blocklist_update_failed = Haikuweza kusasisha orodha ya kuzuia: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Fungua ujumbe kwanza, kisha tumia Hifadhi kama.
+saving_message = Inahifadhi ujumbe...
+save_file_failed = Haikuweza kuhifadhi faili.
+save_fetch_failed = Haikuweza kuleta ujumbe wa kuhifadhi.
+open_message_first_print = Fungua ujumbe kwanza, kisha tumia Chapisha.
+open_message_first_preview = Fungua ujumbe kwanza, kisha tumia Hakiki kabla ya kuchapisha.
+refreshing_accounts = Inasasisha akaunti {count}...
+emptying_trash = Inamwaga tupio la {account}...
+trash_already_empty = Tupio lilikuwa tayari tupu.
+trash_emptied = Tupio limemwagwa: jumbe {count} zimefutwa kabisa.
+empty_trash_failed = Haikuweza kumwaga tupio.
+emptying_junk = Inamwaga barua taka za {account}...
+junk_already_empty = Barua taka zilikuwa tayari tupu.
+junk_emptied = Barua taka zimemwagwa: jumbe {count} zimefutwa kabisa.
+junk_emptied_prefix = Barua taka zimemwagwa:
+junk_part_purged = {count} zimefutwa kabisa
+junk_part_in_trash = {count} zimehamishiwa kwenye tupio lakini hazijathibitishwa kuondolewa, angalia tupio
+junk_part_not_moved = {count} hazijahamishiwa kwenye tupio, bado ziko kwenye barua taka
+empty_junk_failed = Haikuweza kumwaga barua taka.
+back_online = Umerudi mtandaoni.
+offline_sync_running = Inasawazisha {account} kwa matumizi ya nje ya mtandao...
+offline_sync_failed = Usawazishaji wa nje ya mtandao umeshindwa: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Chagua au fungua ujumbe kwanza.
+select_or_open_message_ctrl_u = Chagua au fungua ujumbe kwanza, kisha bonyeza Ctrl+U.
+no_sender_address = Ujumbe huu hauna anwani ya mtumaji ya kuongeza.
+contact_added = {contact} ameongezwa kwenye kitabu chako cha anwani.
+contact_already_there = {contact} tayari yuko kwenye kitabu chako cha anwani.
+privacy_saved = Mipangilio ya faragha imehifadhiwa. Fungua ujumbe tena ili kuitumia.
+message_font_size = Ukubwa wa herufi za ujumbe: pt {size}.
+
+# Deleting and moving several messages
+deleting_one = Inafuta ujumbe kabisa
+deleting_many = Inafuta jumbe {count} kabisa
+trashing_one = Inahamisha ujumbe kwenye tupio
+trashing_many = Inahamisha jumbe {count} kwenye tupio
+undo_partly_restored = Imetendua {action}, lakini {count} hazikuweza kurejeshwa -- huenda zimehamishwa, zimefutwa au zimeisha muda tangu hapo.
+moves_report = {action}: imehamisha jumbe {moved} kati ya {total}.
+moves_report_failed = Hazikuhamishwa, bado ziko kwenye folda asili: {count}.
+
+tray_tooltip_one = ZBox — ujumbe 1 ambao haujasomwa
+tray_tooltip_many = ZBox — jumbe {count} ambazo hazijasomwa
+account_unreachable = {account} haikuweza kufikiwa. Ukaguzi wa kiotomatiki wake umesitishwa kwa dakika {minutes}.
+bulk_copy_failed = Haikuweza kunakili jumbe.
+bulk_copy_failed_status = Kunakili kumeshindwa.
+bulk_loading_archive = Jumbe bado zinapakiwa -- jaribu kuweka kwenye kumbukumbu tena baada ya muda mfupi.
+bulk_loading_delete = Jumbe bado zinapakiwa -- jaribu kufuta tena baada ya muda mfupi.
+bulk_loading_flag = Jumbe bado zinapakiwa -- jaribu kuweka nyota tena baada ya muda mfupi.
+bulk_loading_generic = Jumbe bado zinapakiwa -- jaribu tena baada ya muda mfupi.
+bulk_none = Hakuna ujumbe uliochaguliwa.
+bulk_none_archive = Hakuna ujumbe uliochaguliwa wa kuweka kwenye kumbukumbu.
+bulk_none_delete = Hakuna ujumbe uliochaguliwa wa kufuta.
+bulk_none_junk = Hakuna ujumbe uliochaguliwa wa kuweka alama kuwa barua taka.
+bulk_none_not_junk = Hakuna ujumbe uliochaguliwa wa kuweka alama kuwa si barua taka.
+delete_refused_still = Seva ilikataa kuufuta; bado uko kwenye {folder}.
+delete_refused_trash = Uko kwenye tupio, lakini seva ilikataa kuufuta kabisa.
+delete_resume_failed = Jumbe {count} za ufutaji wa awali hazikuweza kufutwa.
+done_perm_delete_one = Ujumbe umefutwa kabisa.
+done_trash_one = Ujumbe umehamishiwa kwenye tupio.
+filters_applied = Vichujio vimetumika kwa jumbe {count} kwenye {folder}.
+filters_failed = Haikuweza kuendesha vichujio.
+filters_running = Inaendesha vichujio kwenye {folder}
+flag_failed = Haikuweza kusasisha nyota.
+flag_updated = Nyota imesasishwa.
+folder_verb_subscribing = Inajiandikisha kwa
+folder_verb_unsubscribing = Inaondoa usajili wa
+mark_read_failed = Haikuweza kuweka alama kuwa jumbe zimesomwa.
+mark_unread_failed = Haikuweza kuweka alama kuwa jumbe hazijasomwa.
+notify_new_mail_body = {noun} {count} kwa {name}.
+notify_new_mail_title = Barua mpya
+notify_noun_many = jumbe mpya
+notify_noun_one = ujumbe mpya
+report_done = {verb} {done} kati ya jumbe {count}.
+report_verb_deleted = Zilizofutwa
+report_verb_permanent = Zilizofutwa kabisa
+running_copy_many = Inanakili jumbe {count}
+running_copy_one = Inanakili ujumbe
+running_junk_many = Inaweka alama kuwa barua taka kwa jumbe {count}
+running_junk_one = Inaweka alama kuwa barua taka
+running_move_many = Inahamisha jumbe {count}
+running_move_one = Inahamisha
+running_not_junk_many = Inaweka alama kuwa si barua taka kwa jumbe {count}
+running_not_junk_one = Inaweka alama kuwa si barua taka
+running_perm_delete_one = Inafuta ujumbe kabisa...
+running_read_many = Inaweka alama kuwa zimesomwa kwa jumbe {count}
+running_read_one = Inaweka alama kuwa imesomwa
+running_trash_one = Inahamisha ujumbe kwenye tupio...
+running_unread_many = Inaweka alama kuwa hazijasomwa kwa jumbe {count}
+running_unread_one = Inaweka alama kuwa haijasomwa
+settings_saved_no_startup = Mipangilio imehifadhiwa. Haikuweza kusasisha kipengee cha kuanza cha Windows.
+settings_saved_status = Mipangilio imehifadhiwa.
+spam_blocked_sender = Mtumaji aliyezuiwa
+spam_possible_phishing = Huenda ni ulaghai wa mtandaoni
+undo_running_many = Inatendua {action} (jumbe {count})
+undo_running_one = Inatendua {action}
+mark_folder_read_failed = Haikuweza kuweka alama kuwa folda imesomwa.
+marking_folder_read = Inaweka alama kuwa folda imesomwa...
+upd_ready_at_exit = Sasisho tayari limepakuliwa. Litasakinishwa utakapotoka kwenye ZBox.
+upd_checking = Inakagua masasisho...
+upd_up_to_date = ZBox imesasishwa.
+upd_available_source = ZBox {version} inapatikana. Nakala hii inaendeshwa kutoka chanzo, kwa hivyo isasishe kwa git.
+upd_check_failed = Haikuweza kukagua masasisho: {error}
+opening_attachment = Inafungua {filename}...
+loading_headers = Inapakia vichwa...
+offline_inbox_only = Kikasha na Kumbukumbu pekee ndivyo vinavyohifadhiwa kwa matumizi ya nje ya mtandao.
+offline_sync_done_inbox = Jumbe {count} kwenye Kikasha na Kumbukumbu zimesawazishwa kwa matumizi ya nje ya mtandao.
+working_offline = Inafanya kazi nje ya mtandao: inaonyesha nakala ya mwisho iliyosawazishwa ya Kikasha/Zilizotumwa/Rasimu.
+emptying_trash_all = Inamwaga tupio la akaunti zote...
+trash_emptied_all = Tupio limemwagwa kwenye akaunti {accounts}: jumbe {count} zimefutwa kabisa.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Faili
+bar_edit = &Hariri
+bar_view = &Mwonekano
+bar_message = &Ujumbe
+bar_compose = &Andika
+bar_tools = &Zana
+bar_help = &Msaada
+
+# File
+file_new = Mpya
+file_new_message = Ujumbe
+file_new_account = Akaunti ya barua pepe...
+file_open_saved_message = Fungua ujumbe uliohifadhiwa...
+file_close = Funga
+file_save_message_as = Hifadhi ujumbe kama...
+file_get_new_for = Pokea jumbe mpya za
+file_get_new_all = Akaunti zote
+file_get_new_current = Akaunti ya sasa
+file_offline = Nje ya mtandao
+file_work_offline = Fanya kazi nje ya mtandao
+file_sync_now = Sawazisha sasa
+file_print = Chapisha...
+file_print_preview = Hakiki kabla ya kuchapisha...
+file_exit = Toka
+
+# Edit
+edit_undo = Tendua
+edit_select_all = Chagua vyote
+edit_find_messages = Tafuta jumbe...
+
+# Message
+message_reply = Jibu
+message_reply_all = Jibu wote
+message_forward = Sambaza
+message_archive = Weka kwenye kumbukumbu
+message_delete = Futa
+message_delete_permanently = Futa kabisa
+message_mark = Weka alama
+mark_read = Imesomwa
+mark_unread = Haijasomwa
+mark_flagged = Yenye nyota
+mark_junk = Barua taka
+mark_not_junk = Si barua taka
+message_watch_thread = Fuatilia mjadala
+message_ignore_thread = Puuza mjadala
+message_open_conversation = Fungua ujumbe kwenye mazungumzo
+message_show_related = Onyesha jumbe zinazohusiana
+message_add_sender_to_address_book = Ongeza mtumaji kwenye kitabu cha anwani
+message_announce_sender = Tangaza mtumaji
+message_announce_copy_sender = Tangaza mtumaji na unakili anwani
+
+# View
+view_folders = Folda
+folders_all = Zote
+folders_unified = Zilizounganishwa
+folders_jump_inbox = Ruka hadi orodha ya jumbe za kikasha
+folders_configure_unified = Sanidi folda zilizounganishwa...
+view_sort_by = Panga kwa
+sort_date = Tarehe
+sort_subject = Mada
+sort_from = Kutoka
+sort_descending = Kushuka (mpya kwanza)
+sort_ascending = Kupanda (za zamani kwanza)
+view_threads = Mijadala
+threads_all = Yote
+threads_watched = Mijadala inayofuatiliwa
+threads_ignored = Mijadala iliyopuuzwa
+threads_expand_all = Panua mijadala yote
+threads_collapse_all = Kunja mijadala yote
+view_load_more = Pakia jumbe zaidi
+view_toggle_message_view = Badilisha kati ya mwonekano wa maandishi na HTML
+view_show_remote_content = Onyesha maudhui ya mbali kwenye ujumbe huu
+view_message_zoom = Kukuza ujumbe
+zoom_increase = Ongeza ukubwa wa herufi za ujumbe
+zoom_decrease = Punguza ukubwa wa herufi za ujumbe
+zoom_reset = Rudisha ukubwa wa herufi za ujumbe
+
+# Compose
+compose_send = &Tuma
+compose_save_draft = &Hifadhi rasimu
+compose_attach = &Ambatisha faili...
+compose_fmt_bold = &Herufi nzito
+compose_fmt_italic = &Herufi italiki
+compose_fmt_strike = &Mstari katikati
+compose_fmt_bullet = &Orodha ya vitone
+compose_fmt_number = &Orodha ya namba
+compose_fmt_quote = &Nukuu
+compose_fmt_code = &Msimbo
+compose_fmt_heading1 = &Kichwa
+compose_link = &Ingiza kiungo...
+compose_formatting = &Uumbizaji hapa
+compose_spellcheck = &Kagua tahajia...
+compose_spellcheck_next = &Kosa linalofuata la tahajia
+compose_spellcheck_add = &Ongeza neno kwenye kamusi
+compose_insert_signature = &Ingiza sahihi
+compose_paste_quotation = &Bandika kama nukuu
+compose_word_count = &Idadi ya maneno
+compose_preview = &Hakiki...
+compose_diagnostics = &Uchunguzi wa uandishi...
+compose_edit_signature = &Hariri sahihi...
+compose_hotkeys_diagnostic = &Uchunguzi wa vitufe vya mkato
+
+# Tools
+tools_account_settings = Mipangilio ya akaunti na utambulisho...
+tools_mute_account = Nyamazisha akaunti
+tools_pause_auto_check = Sitisha ukaguzi wa kiotomatiki
+tools_disable_account = Zima akaunti
+tools_remove_account = Ondoa akaunti...
+tools_address_book = Kitabu cha anwani...
+tools_message_filters = Vichujio vya jumbe...
+tools_import = Ingiza akaunti na mipangilio...
+tools_export = Hamisha akaunti na mipangilio...
+tools_cache_cleanup = Usanidi wa kusafisha akiba...
+tools_privacy = Faragha na kuzuia maudhui...
+tools_settings = Mipangilio...
+
+# Help
+help_shortcuts = Njia za mkato za kibodi...
+help_about = Kuhusu ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Akaunti mpya...
+tree_account_settings = Mipangilio ya akaunti na utambulisho...
+tree_mute_account = Nyamazisha akaunti
+tree_pause_auto_check = Sitisha ukaguzi wa kiotomatiki
+tree_enable_account = Washa akaunti
+tree_disable_account = Zima akaunti
+tree_set_default_account = Weka kuwa akaunti chaguo-msingi
+tree_remove_account = Ondoa akaunti...
+tree_refresh = Sasisha
+tree_new_folder = Folda mpya...
+tree_empty_trash = Mwaga tupio
+tree_empty_junk = Mwaga barua taka
+tree_rename_folder = Badilisha jina la folda...
+tree_delete_folder = Futa folda...
+tree_subscribe_folder = Jiandikishe kwa folda
+tree_unsubscribe_folder = Ondoa usajili wa folda
+
+# The message list menu, opened the same two ways
+list_select_all = Chagua vyote
+list_reply = Jibu
+list_reply_all = Jibu wote
+list_forward = Sambaza
+list_mark = Weka alama
+list_archive = Weka kwenye kumbukumbu
+list_delete_to_trash = Futa (hamishia kwenye tupio)
+list_delete_permanently = Futa kabisa
+list_move_to = Hamishia
+list_copy_to = Nakili hadi
+
+# The notification area icon
+tray_open = &Fungua ZBox
+tray_unread_one = Ujumbe 1 ambao haujasomwa
+tray_unread_many = Jumbe {count} ambazo hazijasomwa
+tray_no_unread = Hakuna jumbe ambazo hazijasomwa
+tray_settings = &Mipangilio...
+tray_quit = &Toka kwenye ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Herufi nzito
+format_italic = &Herufi italiki
+format_strike = &Mstari katikati
+format_bullet = &Orodha ya vitone
+format_number = &Orodha ya namba
+format_quote = &Nukuu
+format_code = &Msimbo
+format_heading1 = &Kichwa
+format_insert_link = &Ingiza kiungo...
+format_formatting_here = &Uumbizaji hapa
+tools_enable_account = Washa akaunti
+edit_undo_action = Tendua {action}
+tree_mark_folder_read = Weka alama kuwa folda imesomwa
+help_updates = &Masasisho
+help_check_updates = &Kagua masasisho sasa...
+help_update_settings = &Mipangilio ya masasisho
+help_releases_page = &Fungua ukurasa wa matoleo
+message_attachments = Viambatisho
+message_no_attachments = Hakuna viambatisho
+message_save_all_attachments = Hifadhi viambatisho vyote
+view_full_headers = Vichwa kamili
+folders_go_to_tree = Nenda kwenye orodha ya folda
+list_block_sender = Zuia mtumaji huyu
+list_unblock_sender = Fungulia mtumaji huyu
+sort_received = Zilizopokelewa
+sort_star = Nyota
+sort_order_received = Mpangilio wa kupokelewa
+sort_priority = Kipaumbele
+sort_recipient = Mpokeaji
+sort_correspondents = Wanaowasiliana
+sort_size = Ukubwa
+sort_read = Imesomwa
+sort_junk_status = Hali ya barua taka
+sort_attachments = Viambatisho
+sort_threaded = Kwa mijadala
+sort_unthreaded = Bila mijadala
+view_columns = Safu wima
+tools_openpgp_keys = Kidhibiti cha funguo za OpenPGP
+tools_smime_certs = Kidhibiti cha vyeti vya S/MIME
+compose_pgp_encrypt = &Simba
+compose_pgp_sign = &Saini kidijitali
+compose_pgp_attach_key = &Ambatisha ufunguo wangu wa umma
+
+[dialogs]
+set_theme_restart_confirm = Anzisha upya ZBox ili kutumia mabadiliko ya mandhari?
+set_ui_theme_label = &Mandhari ya kiolesura:
+set_ui_theme_note = Rangi za menyu, orodha, madirisha ya mazungumzo na mwonekano wa maandishi wa ujumbe. Fuata mfumo hutumia hali ya programu ya Windows ya mwanga au giza. Samawati ya usiku, Giza joto na Utofautishaji laini ni mandhari ya giza yenye rangi laini zaidi. Jumbe za HTML hubaki na rangi zake, na Utofautishaji wa juu wa Windows daima hupewa kipaumbele. Itaanza kutumika ZBox itakapoanza tena.
+set_theme_system = Fuata mfumo
+set_theme_light = Mwanga
+set_theme_dark = Giza
+set_theme_midnight = Samawati ya usiku
+set_theme_warm = Giza joto
+set_theme_soft = Utofautishaji laini
+set_language_restart_confirm = Anzisha upya ZBox ili kutumia mabadiliko ya lugha?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Wasiliana na Harith
+title_identity = Utambulisho
+title_show_password = Onyesha nenosiri
+title_missing_information = Taarifa haipo
+title_unsupported_provider = Mtoa huduma hatumiki
+title_test_connection = Jaribu muunganisho
+title_new_contact = Mwasiliani mpya
+title_edit_contact = Hariri mwasiliani
+title_delete_contact = Futa mwasiliani
+title_import_contacts = Ingiza waasiliani
+title_export_contacts = Hamisha waasiliani
+title_rename_group = Badilisha jina la kikundi
+title_delete_group = Futa kikundi
+title_send = Tuma
+title_send_failed = Kutuma kumeshindwa
+title_attach_file = Ambatisha faili
+title_save_draft = Hifadhi rasimu
+title_documentation = Nyaraka za ZBox
+title_open_link = Fungua kiungo
+title_filter_rule = Kanuni ya kichujio
+title_master_password = Nenosiri kuu
+title_attachment_saved = Kiambatisho kimehifadhiwa
+title_attachments_saved = Viambatisho vimehifadhiwa
+title_download_failed = Kupakua kumeshindwa
+title_print = Chapisha
+title_print_preview = Hakiki kabla ya kuchapisha
+title_related_messages = Jumbe zinazohusiana
+title_search = Tafuta
+title_unlock = Fungua
+title_unlock_methods = Njia za kufungua
+title_desktop_shortcut = Njia ya mkato ya eneo-kazi
+title_spell_check = Ukaguzi wa tahajia
+title_plain_text_password = Nenosiri la maandishi matupu limepatikana
+title_startup_error = Hitilafu ya kuanza kwa ZBox
+
+identity_email_required = Weka anwani ya barua pepe.
+
+wizard_password_not_shown = Nenosiri haliwezi kuonyeshwa kwenye mfumo huu. Bado linaandikwa na kuhifadhiwa kawaida.
+wizard_email_required = Weka anwani halali ya barua pepe kabla ya kuendelea.
+wizard_test_needs_server = Weka barua pepe ya kuingia na seva ya kuingiza kabla ya kujaribu.
+wizard_test_succeeded = Muunganisho umefanikiwa. Jumbe {count} zimepatikana kwenye Kikasha.
+
+contact_email_required = Anwani ya barua pepe inahitajika.
+contact_select_to_edit = Chagua mwasiliani wa kuhariri.
+contact_select_to_delete = Chagua mwasiliani wa kufuta.
+contact_delete_confirm = Futa {label} kutoka kitabu cha anwani?
+contacts_import_choose_file = Chagua faili ya .vcf (vCard) au .csv ya kuingiza.
+contacts_imported = Waasiliani {count} wameingizwa.
+contacts_import_empty = Hakuna waasiliani waliopatikana kwenye faili hiyo.
+contacts_none_to_export = Hakuna waasiliani wa kuhamisha.
+contacts_exported = Waasiliani {count} wamehamishwa hadi:\n{path}
+group_name_exists = Kikundi chenye jina "{name}" tayari kipo.
+group_delete_confirm = Futa kikundi "{name}"? Waasiliani wake hawafutwi.
+
+send_no_account = Ongeza akaunti kabla ya kutuma, au chagua moja kwenye Kutoka.
+send_no_recipient = Weka angalau mpokeaji mmoja kwenye Kwa.
+draft_no_account = Ongeza akaunti kabla ya kuhifadhi rasimu, au chagua moja kwenye Kutoka.
+attached_file = Imeambatishwa: {name}\n\nFaili {count} zitaambatishwa utakapotuma.
+
+documentation_copied = Nyaraka kamili za ZBox zimenakiliwa kwenye ubao wa kunakili.
+
+filter_rule_needs_name = Ipe kanuni hii jina.
+filter_rule_needs_condition = Weka angalau sharti moja (Kutoka, Kwa au Mada).
+filter_rule_needs_action = Chagua angalau kitendo kimoja: weka alama kuwa imesomwa, weka nyota, au hamishia kwenye folda.
+
+master_password_set = Nenosiri kuu limewekwa. Lihifadhi mahali salama: ZBox litaliomba mara moja kwenye kila kompyuta mpya, na haliwezi kurejeshwa likipotea.
+master_password_offer = Bila nenosiri kuu, nywila za akaunti zilizohifadhiwa zinaweza kusomwa tu kwenye kompyuta hii na akaunti hii ya Windows. Ukinakili ZBox mahali pengine, kila akaunti italazimika kuingia tena.\n\nLiweke sasa?
+
+attachment_saved = Kiambatisho kimehifadhiwa kwenye:\n{path}
+attachments_saved = Viambatisho {count} vimehifadhiwa kwenye:\n{path}
+
+shortcut_created_settings = Njia ya mkato imeundwa:\n{path}\n\nInaanzisha ZBox kutoka:\n{base}
+
+spellcheck_no_dictionary = Kamusi ya tahajia haipo, kwa hivyo ukaguzi wa tahajia haupatikani kwenye nakala hii ya ZBox.
+spellcheck_none_found = Hakuna makosa ya tahajia yaliyopatikana.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Weka ufunguo wa kufikia kwenye kompyuta hii na usahau ule uliohifadhiwa kutoka kompyuta nyingine?\n\nWindows itakuomba uthibitishe kwa Hello. Ufunguo wa zamani ulioachwa kwenye kompyuta nyingine haubadilishwi huko na utaendelea kufanya kazi ukirudisha folda hii huko, lakini utalazimika kuwekwa upya.
+unlock_replace_passkey_many = Weka ufunguo wa kufikia kwenye kompyuta hii na usahau {count} zilizohifadhiwa kutoka kompyuta nyingine?\n\nWindows itakuomba uthibitishe kwa Hello. Funguo za zamani zilizoachwa kwenye kompyuta nyingine hazibadilishwi huko na zitaendelea kufanya kazi ukirudisha folda hii huko, lakini zitalazimika kuwekwa upya.
+unlock_method_works = Njia hiyo inafanya kazi.
+
+plain_text_password_found = data\config\himalaya.toml bado ina nenosiri la maandishi matupu (auth.raw) kutoka usanidi wa zamani wa akaunti.\n\nOndoa akaunti hiyo na uiongeze tena, au futa data\config\himalaya.toml, ili iundwe upya kwa kutumia hifadhi salama ya vitambulisho.
+
+# main_frame's titles.
+title_account_list_unavailable = Orodha ya akaunti haipatikani
+title_open_message = Fungua ujumbe
+title_run_filters = Endesha vichujio
+title_clear_cache = Futa akiba ya jumbe za nje ya mtandao
+title_remove_account = Ondoa akaunti
+title_new_folder = Folda mpya
+title_rename_folder = Badilisha jina la folda
+title_delete_folder = Futa folda
+title_subscribe = Jiandikishe
+title_unsubscribe = Ondoa usajili
+title_open_saved_message = Fungua ujumbe uliohifadhiwa
+title_save_message_as = Hifadhi ujumbe kama
+title_empty_trash = Mwaga tupio
+title_empty_junk = Mwaga barua taka
+title_synchronize_offline = Sawazisha kwa nje ya mtandao
+title_export_accounts = Hamisha akaunti na mipangilio
+title_import_accounts = Ingiza akaunti na mipangilio
+title_show_related = Onyesha jumbe zinazohusiana
+title_reply = Jibu
+title_forward = Sambaza
+title_undo = Tendua
+title_delete_permanently = Futa kabisa
+title_delete = Futa
+title_copy_to = Nakili hadi
+title_archive = Weka kwenye kumbukumbu
+title_accounts_locked = Akaunti zimefungwa
+
+select_account_first = Chagua akaunti kwenye mti kwanza.
+select_account_or_folder = Chagua akaunti au folda kwanza.
+filters_left_behind = Jumbe {count} zililingana na kichujio lakini bado ziko kwenye {folder}.
+cache_clear_confirm = Futa akiba ya jumbe za nje ya mtandao kwa akaunti zote?\n\nHii inafuta nakala za ndani za ZBox pekee. Hakuna kinachoondolewa kutoka seva yoyote ya barua pepe, na jumbe hupakuliwa tena unapozihitaji.
+account_remove_confirm = Ondoa {name} ({address})?\n\nBarua pepe kwenye seva haifutwi.\nNakala zilizopakuliwa kwenye kompyuta hii zinafutwa.\nNenosiri lililohifadhiwa linafutwa.
+folder_delete_confirm = Futa kabisa folda "{folder}" na kila kitu ndani yake kwa {address}?\n\nHii haiwezi kutenduliwa.
+empty_trash_confirm = Futa kabisa jumbe zote kwenye tupio la {address}?\n\nHii haiwezi kutenduliwa.
+empty_junk_confirm = Futa kabisa jumbe zote kwenye barua taka za {address}?\n\nHii haiwezi kutenduliwa.
+sync_select_account = Chagua akaunti (si folda iliyounganishwa) ya kusawazisha kwa matumizi ya nje ya mtandao.
+accounts_imported = Akaunti {count} zimeingizwa:\n\n{names}\n\nNywila hazihamishwi kamwe, na hifadhi iliyosimbwa ya nywila ni mahususi kwa akaunti hii ya mtumiaji wa Windows, kwa hivyo kila akaunti iliyoingizwa inahitaji nenosiri lake liwekwe mara moja kupitia Zana > Mipangilio ya akaunti na utambulisho kabla ya kuunganisha.
+accounts_import_none = Hakuna akaunti zilizopatikana kwenye faili hii. Mipangilio bado iliingizwa, ikiwa faili ilikuwa nayo.
+delete_permanently_confirm_one = Futa ujumbe huu kabisa? Hii inaruka tupio na haiwezi kutenduliwa.
+accounts_locked = Nywila za akaunti zilizohifadhiwa ziliandikwa kwenye kompyuta nyingine, kwa hivyo haziwezi kusomwa hapa.\n\nKila akaunti italazimika kuingia tena kwenye seva yake ya barua pepe. Ili kuepuka hilo wakati ujao, weka nenosiri kuu kutoka Mipangilio, Usalama wa programu na data kwenye kompyuta ambapo akaunti tayari zinafanya kazi.
+master_password_remove_confirm = Ondoa nenosiri kuu? Nywila za akaunti zilizohifadhiwa zitaweza kusomwa tu kwenye kompyuta hii na akaunti hii ya Windows. Ukinakili ZBox mahali pengine baadaye, kila akaunti italazimika kuingia tena.\n\nLiondoe sasa?
+shortcut_offer = Weka njia ya mkato ya ZBox kwenye eneo-kazi?\n\nItaanzisha folda hii ya ZBox:\n{path}\n\nNjia ya mkato inakumbuka eneo hilo hasa. Ukihamisha folda ya ZBox baadaye, fungua Mipangilio, Trei ya mfumo na dirisha, kisha uchague Unda njia ya mkato ya eneo-kazi tena ili kuielekeza mahali papya.
+shortcut_created = Njia ya mkato imeundwa:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Jina la kuonyesha
+form_email_address = Anwani ya barua pepe
+form_your_name = Jina lako
+form_login_email = Barua pepe ya kuingia
+form_password = Nenosiri
+srv_imap_host = Seva ya kuingiza (IMAP)
+srv_imap_port = Mlango wa kuingiza
+srv_imap_encryption = Usimbaji fiche wa kuingiza
+srv_smtp_host = Seva ya kutuma (SMTP)
+srv_smtp_port = Mlango wa kutuma
+srv_smtp_encryption = Usimbaji fiche wa kutuma
+
+acct_login_email_label = Barua pepe ya kuingia (hutumika kuingia)
+acct_new_password_label = Nenosiri jipya (acha wazi ili kubaki na la sasa)
+acct_new_password_name = Nenosiri jipya
+acct_identity_email_label = Anwani ya barua pepe (hutumika kutuma na kupokea)
+acct_identities_label = Utambulisho wa ziada (majina mbadala)
+acct_identities_name = Utambulisho wa ziada
+acct_add_identity = &Ongeza utambulisho...
+acct_edit_identity = &Hariri utambulisho...
+acct_remove_identity = &Ondoa utambulisho
+acct_signature = Sahihi
+acct_edit_signature = &Hariri sahihi...
+acct_junk_folder = Folda ya barua taka
+acct_account_status = Hali ya akaunti
+acct_disable_account = Zima akaunti hii
+acct_default_account = Akaunti chaguo-msingi
+acct_set_default = Weka kuwa akaunti chaguo-msingi
+acct_notifications = Arifa za barua mpya
+acct_mute_notifications = Nyamazisha arifa za akaunti hii
+acct_server_settings = Mipangilio ya seva
+
+wiz_before_you_start = Kabla ya kuanza
+wiz_notice_name = Ilani muhimu
+wiz_google_instructions = &Fungua maelekezo ya nenosiri la programu la Google
+wiz_intro = Jina lako na anwani ya barua pepe
+wiz_login_same = Barua pepe ya kuingia ni sawa na anwani ya barua pepe iliyo hapo juu
+wiz_show_password = &Onyesha nenosiri
+wiz_preset_applied = Mpangilio awali umetumika kwa {name}.
+wiz_summary_name = Muhtasari wa akaunti
+wiz_review = Kagua, kisha bofya Maliza ili kuhifadhi akaunti hii.
+wiz_test_connection = &Jaribu muunganisho
+wiz_testing = Inajaribu muunganisho...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Washa kumbukumbu za utatuzi zilizohifadhiwa kwenye: data\logs)
+set_language_label = &Lugha ya kiolesura:
+set_language_label_only_english = &Lugha ya kiolesura: (Kiingereza pekee)
+set_headers_checkbox = &Onyesha vichwa vya ujumbe juu ya ujumbe uliofunguliwa
+set_zoom_label = Herufi na ukuzaji wa ujumbe:
+set_font_override = &Badilisha ukubwa chaguo-msingi wa herufi za ujumbe
+set_font_size_name = Ukubwa wa herufi za ujumbe (pointi)
+set_reading_font_name = Herufi za kusomea
+set_reading_font_label = Herufi za kusomea (acha wazi kwa chaguo-msingi):
+set_view_label = Mwonekano wa mwili wa ujumbe unapofungua ujumbe:
+set_view_text = Maandishi
+set_view_html = HTML (iliyoonyeshwa)
+set_engine_label = Injini ya kuonyesha HTML:
+set_engine_edge = Edge / WebView2 (uonyeshaji wa kisasa)
+set_engine_ie = MSHTML ya zamani (usaidizi bora wa visoma skrini)
+set_runtime_label = Mazingira ya uendeshaji ya WebView2:
+set_runtime_auto = Kiotomatiki — tumia mazingira yaliyojumuishwa ikiwa yapo (inapendekezwa)
+set_runtime_fixed = Toleo lililojumuishwa lisilobadilika pekee
+set_runtime_evergreen = Mazingira ya mfumo mzima (husasishwa na Windows)
+set_sr_box = Udhibiti wa matangazo ya kisoma skrini
+set_silence_label = Kushikilia ukimya wa kisoma skrini kwenye HTML:
+set_silence_name = Kushikilia ukimya wa kisoma skrini kwenye HTML kwa milisekunde
+set_focus_delay_label = Kuchelewesha lengo la ufikivu wa WebView:
+set_focus_delay_name = Kuchelewesha lengo la ufikivu wa WebView, kiwango cha 1 hadi 10
+set_announce_label = Muda wa kushikilia tangazo:
+set_announce_name = Muda wa kushikilia tangazo kwa milisekunde
+set_announce_actions = &Tamka matangazo ya vitendo, barua mpya na ilani
+set_attachment_dir_label = Folda ya kuhifadhi viambatisho:
+set_attachment_dir_name = Folda ya kuhifadhi viambatisho
+set_browse = &Vinjari…
+set_autosave_label = Muda wa kuhifadhi rasimu kiotomatiki:
+set_autosave_name = Muda wa kuhifadhi rasimu kiotomatiki kwa sekunde
+set_auto_purge_label = Futa kiotomatiki tupio na barua taka za zamani:
+set_auto_purge_name = Futa kiotomatiki tupio na barua taka baada ya siku hizi
+set_bare_keys = &Washa njia za mkato za kitufe kimoja S (weka nyota), A (weka kwenye kumbukumbu), J (weka alama kuwa barua taka)/Shift+J (weka alama kuwa si barua taka), W (fuatilia mjadala), K (puuza mjadala), M (hamishia)/Shift+M (hamishia kwa jina la folda) na C (nakili hadi) kwenye orodha ya jumbe
+set_sound_label = Sauti na arifa:
+set_sounds_enabled = &Cheza sauti za arifa
+set_desktop_notifications = &Onyesha arifa za eneo-kazi kwa barua mpya
+set_theme_label = Badilisha mandhari ya sauti:
+set_theme_label_only_default = Badilisha mandhari ya sauti: (mandhari chaguo-msingi pekee)
+set_security_box = Usalama wa programu na data
+set_lock_on_quit = &Funga ZBox inapotoka kabisa
+set_private_mode = &Hali ya faragha: usihifadhi barua pepe kwenye kompyuta au diski hii
+set_unlock_methods_button = &Njia za kufungua…
+set_master_password_button = &Nenosiri kuu…
+set_tray_label = Trei ya mfumo na dirisha:
+set_minimize_to_tray = &Punguza hadi trei ya mfumo
+set_close_to_tray = &Funga hadi trei ya mfumo
+set_stay_maximized = &Weka ZBox ikiwa imekuzwa kila wakati
+set_run_at_startup = &Endesha ZBox Windows inapoanza
+set_desktop_shortcut_button = &Unda njia ya mkato ya eneo-kazi
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Kumbukumbu za utatuzi husaidia kutambua matatizo kitu kikienda vibaya. Kuzizima kunasimamisha uandishi wa maingizo mapya; faili za kumbukumbu zilizopo hazifutwi. Itaanza kutumika ZBox itakapoanza tena.
+set_language_note = Itaanza kutumika ZBox itakapoanza tena. Faili za lugha ni faili za maandishi matupu kwenye folda ya lang ya ZBox, kando ya folda ya sounds. Ili kuongeza moja, nakili folda ya en, badilisha jina la nakala na la faili ya .lang ndani yake kuwa msimbo wa lugha yako, kisha tafsiri maandishi yaliyo kulia ya kila alama ya sawa. Chochote ambacho hakijatafsiriwa hutamkwa kwa Kiingereza badala ya kuwa kimya, kwa hivyo faili iliyokamilika kiasi ni salama kutumia.
+set_headers_note = Kutoka, Kwa, Nakala, Tarehe na Mada, vinaonyeshwa juu ya mwili wa ujumbe katika mwonekano wa maandishi na HTML. Bila hivyo hakuna njia ya kujua aliyetuma ujumbe ukiwa ndani yake bila kufunga kichupo na kurudi kwenye orodha. Lengo bado linatua kwenye mwili wa ujumbe; kizuizi cha vichwa kiko Shift+Tab moja mbali. Itaanza kutumika ujumbe utakapofunguliwa tena.
+set_zoom_note = Hufanya maandishi ya ujumbe uliofunguliwa kuwa makubwa au madogo, bila kuathiri sehemu nyingine ya ZBox wala ukubwa wa Windows wenyewe. Hutumika kwa mwonekano wa maandishi na HTML. "Herufi za kusomea" hulazimisha hiari aina fulani ya herufi (mf. Consolas, OpenDyslexic) kwa mwili wa ujumbe; iache wazi ili kubaki na herufi za kawaida. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 kwenye menyu ya Mwonekano huongeza, hupunguza au hurudisha ukubwa wa herufi tu bila kufungua kidirisha hiki, na hutumika mara moja kwa jumbe zote zilizofunguliwa. Mabadiliko yanayofanywa hapa pia hutumika mara moja ukibofya Sawa.
+set_view_note = HTML ndiyo chaguo-msingi. Inaonyesha ujumbe kama ulivyotumwa, na inasomwa na NVDA na JAWS: ukurasa wa HTML unapofunguka, ZBox hunyamazisha tangazo la kivinjari chenyewe, huweka kielekezi cha kusoma kwenye mstari wa kwanza wa ujumbe, na huhakikisha njia za mkato za ZBox zinaendelea kufanya kazi ndani ya ukurasa, ikiwemo F6 ya kuhamisha lengo nje yake. Maandishi huonyesha ujumbe huo huo kama maandishi matupu yasiyoumbizwa kwenye kisanduku cha kawaida cha kuhariri -- hakuna picha, hakuna mpangilio, wala kitu chochote kinachotegemea injini ya kivinjari kusakinishwa. Bonyeza Ctrl+B ndani ya ujumbe uliofunguliwa ili kubadilisha pande zote mbili.
+set_engine_note = Edge huonyesha CSS ya kisasa lakini huendesha ukurasa kwenye mchakato tofauti, na hukabidhi maudhui yake kwa kisoma skrini kupitia kiolesura ambacho wxPython haiwezi kukifikia -- kwa hivyo ujumbe unaweza kufunguka bila kitu cha kusomeka ndani yake. MSHTML ya zamani ni injini iliyotumiwa na Outlook Express na Windows Mail: inaendeshwa kwenye mchakato huo huo na kuchapisha mti wa kawaida wa hati, kwa hivyo NVDA na JAWS huisoma kwa hali ya kuvinjari kama ukurasa wowote wa wavuti. Itaanza kutumika ujumbe utakapofunguliwa tena.
+set_runtime_note = Mazingira ya mfumo mzima yanahudumiwa na Windows Update, kwa hivyo injini inayosoma barua pepe yako inaweza kubadilika bila taarifa — ndivyo mwonekano wa ujumbe wa HTML unaofanya kazi unavyoweza kuharibika kwenye kompyuta ambapo hakuna kilichobadilika kuhusu ZBox. Nakala iliyojumuishwa kwenye folda ya deps inabana toleo kamili ambalo ZBox ilijaribiwa nalo. Endesha tools\get_webview2.bat ili kusakinisha moja. Ikiwa hakuna nakala iliyojumuishwa, ZBox hutumia mazingira ya mfumo mzima vyovyote vile, kwa hivyo huanza kila mara. Itaanza kutumika ZBox itakapoanza tena.
+set_sr_intro = Kiasi ambacho ZBox inaruhusu kisoma skrini chako kitamke ujumbe unapofunguka, na muda ambao matangazo yake ya sauti yanakaa.
+set_silence_note = Ujumbe wa HTML unapofunguka, ZBox inaweza kushikilia kubonyeza Ctrl bandia kwa hadi sekunde 2 ili kunyamazisha tangazo la kivinjari la kisoma skrini. Mada ya ujumbe tayari inatumika kama kichwa cha ukurasa, jambo linalozuia anwani ya base64 isisomwe kwa sauti, lakini kisomaji bado hutangaza kidhibiti na aina ya hati juu ya mwanzo wa ujumbe, kwa hivyo hii imewashwa kwa chaguo-msingi. Chagua Zima ili kuizima, au muda mrefu zaidi ikiwa maneno bado yanapenya.
+set_focus_delay_note = Ujumbe wa HTML unapomaliza kupakiwa, ZBox husubiri muda huu kabla ya kuupa lengo. WebView2 kuripoti ukurasa umepakiwa na Windows kumaliza mti wa ufikivu wa ukurasa si wakati mmoja; kuupa lengo mapema sana ndiko kunakofanya NVDA/JAWS watangaze "Ukurasa wa maudhui ya wavuti" wa jumla badala ya ujumbe, au waripoti ujumbe haupatikani kwa muda baada ya kufunguka. Chaguo zinaanzia sekunde 0.1 hadi sekunde 1. Chagua muda mrefu zaidi ukiendelea kusikia hili, na mfupi zaidi ufunguzi ukihisi imara, kwa ufunguzi wa haraka zaidi.
+set_announce_note = Ctrl+U na Ctrl+Shift+U huripoti mtumaji kwenye kidirisha kidogo kinachojifunga chenyewe, kwa sababu upau wa hali husomwa tu ikiwa kisoma skrini chako kimewasha kuripoti upau wa hali. Huu ndio muda ambao kidirisha hicho hukaa. Weka kulingana na kasi yako ya usemi: kifupi mno na kinafungwa katikati ya sentensi, jambo linaloharibu lengo. Kitufe chochote hukifunga mapema; vitufe vya mshale hukiweka wazi ili usome tena. Husubiri kitufe hukiweka wazi hadi ubonyeze kitufe.
+set_attachment_dir_note = Mahali ambapo "Hifadhi vyote" huandika viambatisho ujumbe unapokuwa na zaidi ya kimoja. Huundwa kiotomatiki ikiwa haipo. Ujumbe wenye kiambatisho kimoja bado huuliza mahali pa kuhifadhi, kama awali. Acha wazi kwa chaguo-msingi:\n{path}
+set_autosave_note = Mara ngapi kichupo cha kuandika kilichofunguliwa hujihifadhi kwenye Rasimu ukiandika. Hifadhi rasimu (Ctrl+S) bado huhifadhi ukihitaji kwa njia yoyote, na kufunga kichupo chenye maandishi yasiyohifadhiwa daima hutoa kuyahifadhi. Zima huzima uhifadhi wa kiotomatiki. Chini ya sekunde 15 haitolewi -- hiyo ingekuwa safari ya seva inayoshindana na uandishi wako.
+set_auto_purge_note = Huondoa jumbe kabisa kutoka tupio na barua taka zinapokaa huko kwa siku hizi -- ufutaji kabisa ule ule ambao Mwaga tupio na Mwaga barua taka hufanya ukihitaji, unaoendeshwa kiotomatiki mara moja kwa siku ZBox ikiwa wazi. Imewashwa kwa chaguo-msingi kwa siku 30. Zima huizima. Hili haliwezi kutenduliwa ujumbe ukishaondolewa.
+set_bare_keys_note = Ikiwa imewashwa, kubonyeza S, A, J, W au K peke yake kwenye orodha ya jumbe hubadilisha nyota, huweka kwenye kumbukumbu, huweka alama kuwa barua taka kwa jumbe zilizochaguliwa (Shift+J huziweka alama kuwa si barua taka), au hufuatilia/hupuuza mjadala ambao uteuzi ni sehemu yake, mara moja -- Weka kwenye kumbukumbu na Weka alama kuwa barua taka havina uthibitisho wala kutendua. Kuizima hurudisha S, A, J, W na K kwenye urambazaji wa kawaida wa herufi ya kwanza kwenye orodha. Ctrl+S na Ctrl+Shift+A zinaendelea kufanya kazi kwa vyovyote. Itaanza kutumika mara moja.
+set_sounds_note = Milio mifupi ya maendeleo, jumbe mpya, vitendo vya kutuma, kujibu au kusambaza, ufutaji, na matokeo ya utafutaji. Zima huzima kila sauti kwenye programu; matangazo ya kisoma skrini na upau wa hali hayaathiriwi kwa vyovyote.
+set_desktop_notifications_note = Arifa ya Windows kwa kila kundi la barua mpya, tofauti na sauti iliyo hapo juu. Zima huizima kwa kila akaunti; akaunti moja pia inaweza kunyamazishwa yenyewe kwenye Mipangilio ya akaunti na utambulisho.
+set_theme_note = Mandhari maalum ni folda zinazowekwa ndani ya folda ya sounds ya ZBox, kila moja ikitoa progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav na none_found.wav zake. Faili ya mandhari inayokosekana hurudi kwenye sauti chaguo-msingi.
+set_theme_note_only_default = Mandhari maalum ni folda zinazowekwa ndani ya folda ya sounds ya ZBox, kila moja ikitoa progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav na none_found.wav zake. Faili ya mandhari inayokosekana hurudi kwenye sauti chaguo-msingi. Ni "default" pekee inayopatikana hadi uongeze folda nyingine ya mandhari.
+set_lock_note = ZBox inapoanza huomba mojawapo ya njia zako za kufungua kabla akaunti yoyote haijafunguliwa. Moja yoyote inatosha: ufunguo wa kufikia, ufunguo wa usalama, au nenosiri kuu. Kufunga hadi trei si kutoka na hakufungi tena; Faili > Toka na Toka ya ikoni ya trei hufanya hivyo. Ikiwa hakuna kilichosajiliwa na hakuna nenosiri kuu lililowekwa, kufuli huruka badala ya kukufungia nje ya barua pepe yako mwenyewe.
+set_security_note = Nenosiri kuu ndilo pekee kati ya matatu linalosimba chochote: ndilo linaloruhusu folda hii kufungua nywila za akaunti zilizohifadhiwa kwenye kompyuta nyingine. Ufunguo wa kufikia au wa usalama hufungua programu kwenye hii moja. Hakuna kati yake kinachochukua nafasi ya nenosiri kuu kwenye kompyuta ambayo ZBox haijawahi kutumika.
+set_private_mode_note = Jumbe husomwa kutoka seva na kuwekwa kwenye kumbukumbu pekee. Hakuna nakala za nje ya mtandao, jumbe zilizohifadhiwa wala kumbukumbu za utatuzi zinazohifadhiwa, na viambatisho vilivyofunguliwa na data ya kivinjari ya barua za HTML hufutwa ZBox inapofungwa. Kufunga pia kunamaliza kila programu iliyoanzishwa na ZBox, ikiwemo zile zinazoonyesha kiambatisho, kunamwaga ubao wa kunakili, na kunaacha kuiamini kompyuta hii isipokuwa hali ya faragha iliwashwa kutoka kwake. Windows bado huhifadhi rekodi fulani ambazo hakuna programu inayoweza kuziondoa, kama orodha yake ya diski za USB, faili ya ukurasa, na kumbukumbu za antivirusi na mtandao.
+title_private_mode = Hali ya faragha
+private_mode_need_master = Hali ya faragha inahitaji nenosiri kuu, kwa sababu ni nenosiri kuu pekee linalofungua akaunti zako kwenye kompyuta isiyo yako. Liweke kwa kitufe cha Nenosiri kuu, kisha uwashe hali ya faragha.
+private_mode_enter_master = Weka nenosiri kuu ili kuwasha hali ya faragha.
+private_mode_confirm = Hali ya faragha haihifadhi nakala za barua pepe yako kwenye kompyuta hii wala kwenye diski ambayo ZBox inaendeshwa kutoka. Kuiwasha kunafuta nakala za nje ya mtandao za ZBox, jumbe zilizohifadhiwa, viambatisho vilivyofunguliwa, data ya kivinjari ya barua za HTML na kumbukumbu za utatuzi. Hakuna kinachofutwa kwenye seva zako za barua pepe, na akaunti, waasiliani na mipangilio yako vinabaki. Washa hali ya faragha?
+set_minimize_note = Kupunguza ZBox hufichua kitufe chake cha upau wa kazi na kuiacha ikiendelea nyuma ya ikoni ya trei. Bofya kushoto ikoni ya trei (au Enter/Nafasi inapokuwa na lengo la kibodi) ili kurudisha dirisha.
+set_close_note = Kitufe cha Funga cha dirisha, Alt+F4, na Ctrl+W kwenye kichupo cha Barua huficha ZBox hadi trei badala ya kutoka. Faili > Toka (Ctrl+Shift+Q) na Toka ya ikoni ya trei daima hutoa ZBox kabisa kwa vyovyote, kwa hivyo daima kuna njia ya kibodi ya kutoka bila kugusa trei.
+set_stay_maximized_note = ZBox huanza ikiwa imekuzwa na hurudishwa kwenye hali iliyokuzwa ukiipunguza. Upau wa menyu, upau wa kichwa na mpaka wa dirisha haviathiriwi -- hii si hali ya skrini nzima isiyo na mpaka, kwa hivyo kila njia ya mkato ya menyu ya kitufe cha Alt inaendelea kufanya kazi.
+set_run_at_startup_note = Huanzisha ZBox kiotomatiki unapoingia kwenye Windows, ikifunguliwa moja kwa moja kwenye trei badala ya kuonyesha dirisha lake. Huanza kutumika mara moja, si tu kwenye uzinduzi unaofuata.
+set_desktop_shortcut_note = Huweka njia ya mkato ya ZBox kwenye eneo-kazi lako, ikibadilisha iliyopo tayari. Njia ya mkato huhifadhi eneo kamili la folda hii ya ZBox, kwa hivyo ukihamisha au kunakili ZBox mahali pengine, bonyeza hii tena kwenye nakala mpya ili kuelekeza njia ya mkato ya eneo-kazi huko. Huanza kutumika mara moja na haisubiri Sawa.
+
+# The Address Book, its contact form and its groups.
+ab_name = Jina
+ab_phone = Simu
+ab_notes = Maelezo
+ab_heading = Kitabu cha anwani
+ab_contacts = Waasiliani
+ab_new = &Mpya...
+ab_edit = &Hariri...
+ab_delete = &Futa
+ab_import = &Ingiza...
+ab_export = &Hamisha...
+ab_groups_label = Vikundi (orodha za barua pepe)
+ab_groups_name = Vikundi
+ab_new_group = &Kikundi kipya...
+ab_rename_group = &Badilisha jina la kikundi...
+ab_delete_group = &Futa kikundi
+ab_manage_members = &Simamia wanachama...
+ab_all_contacts = Waasiliani wote
+ab_add_member = Ongeza >>
+ab_remove_member = << Ondoa
+ab_members_of = Wanachama wa {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Haipo kwenye kamusi:
+sp_not_in_dictionary_name = Haipo kwenye kamusi
+sp_in_this_line_label = Kwenye mstari huu:
+sp_in_this_line_name = Kwenye mstari huu
+sp_suggestions_label = &Mapendekezo:
+sp_suggestions_name = Mapendekezo
+sp_replace_with_label = &Badilisha kuwa:
+sp_replace_with_name = Badilisha kuwa
+sp_replace = &Badilisha
+sp_replace_all = &Badilisha yote
+sp_ignore = &Puuza
+sp_ignore_all = &Puuza yote
+sp_add_to_dictionary = &Ongeza kwenye kamusi
+btn_close = &Funga
+
+# Privacy and Content Blocking.
+priv_remote_label = Maudhui ya mbali kwenye jumbe:
+priv_block_remote = &Zuia maudhui ya mbali hadi niyaombe (inapendekezwa)
+priv_blocklist_label = Orodha ya kuzuia matangazo na vifuatiliaji:
+priv_block_known = &Zuia vikoa vinavyojulikana vya matangazo na vifuatiliaji
+priv_update_daily = &Sasisha orodha kila siku chinichini
+priv_update_now = &Sasisha sasa
+priv_junk_label = Kanuni za barua taka:
+priv_check_inbox = &Kagua barua mpya za Kikasha dhidi ya watumaji waliozuiwa na viungo vinavyojulikana vya ulaghai wa mtandaoni
+priv_move_blocked = &Hamishia kiotomatiki barua za watumaji waliozuiwa kwenye barua taka
+priv_update_phishing = &Sasisha orodha ya ulaghai wa mtandaoni sasa
+priv_blocked_label = Watumaji waliozuiwa:
+priv_blocked_name = Watumaji waliozuiwa
+priv_remove_blocked = &Ondoa mtumaji aliyezuiwa
+priv_never_junk_label = Watumaji ambao hawachukuliwi kamwe kuwa barua taka:
+priv_never_junk_name = Watumaji ambao hawachukuliwi kamwe kuwa barua taka
+priv_remove_never_junk = &Ondoa mtumaji asiye barua taka kamwe
+priv_allowed_label = Watumaji walioruhusiwa kupakia maudhui ya mbali:
+priv_allowed_name = Watumaji walioruhusiwa
+priv_remove_selected = &Ondoa mtumaji aliyechaguliwa
+
+# Message Filters.
+filt_rule_name = Jina la kanuni
+filt_enabled = &Imewashwa
+filt_match_label = Linganisha:
+filt_match_all = &Linganisha yote kati ya yafuatayo (NA)
+filt_match_any = &Linganisha lolote kati ya yafuatayo (AU)
+filt_conditions_label = Masharti (acha thamani wazi ili kuiruka):
+filt_condition_field = Sehemu ya sharti {number}
+filt_condition_contains = Sharti {number} lina
+filt_actions_label = Vitendo:
+filt_mark_read = &Weka alama kuwa imesomwa
+filt_flag = &Weka nyota kwenye ujumbe
+filt_move_label = Hamishia kwenye folda:
+filt_move_name = Hamishia kwenye folda
+filt_rules_name = Kanuni za vichujio
+filt_new = &Kanuni mpya...
+filt_edit = &Hariri kanuni...
+filt_delete = &Futa kanuni
+filt_up = &Hamisha juu
+filt_down = &Hamisha chini
+filt_run_label = Endesha sasa kwenye folda:
+filt_run_name = Folda ya Endesha sasa
+filt_run_now = &Endesha sasa
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Fungua kwa ufunguo wa kufikia (Windows Hello)
+unl_security_key = &Fungua kwa ufunguo wa usalama
+unl_master_password_label = &Nenosiri kuu:
+unl_master_password_name = Nenosiri kuu
+unl_unlock = &Fungua
+unl_exit = &Toka kwenye ZBox
+unl_methods_label = &Njia zilizosajiliwa:
+unl_methods_name = Njia za kufungua zilizosajiliwa
+unl_add_passkey = &Ongeza ufunguo wa kufikia…
+unl_add_key = &Ongeza ufunguo wa usalama…
+unl_reassign = &Kabidhi upya ufunguo wa kufikia kwenye kompyuta hii…
+unl_test = &Jaribu…
+unl_remove = &Ondoa
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Kutoka
+comp_to = Kwa
+comp_cc = Nakala
+comp_bcc = Nakala fiche
+comp_subject = Mada
+comp_attach_button = Ambatisha faili...
+comp_sending = Inatuma...
+comp_report_label = &Ripoti:
+comp_report_name = Ripoti
+comp_refresh = &Sasisha
+comp_copy = &Nakili
+comp_preview_read = Kama mpokeaji anavyoisoma
+comp_preview_source = HTML itakayotumwa
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Mwili wa ujumbe
+mv_blocked_notice = Ilani ya maudhui yaliyozuiwa
+mv_show_remote = &Onyesha maudhui ya mbali
+mv_always_allow = &Ruhusu mtumaji huyu kila mara
+mv_message_headers = Vichwa vya ujumbe
+mv_attachments = Viambatisho
+mv_attachments_count = Viambatisho ({count})
+mv_save_attachment = Hifadhi: {filename}
+mv_save_all = Hifadhi vyote
+mv_html_view = Mwonekano wa HTML wa ujumbe
+mv_saved_message = Ujumbe uliohifadhiwa
+mv_show_remote_tip = Pakia upya ujumbe huu pamoja na picha na mitindo yake ya mbali. Vifuatiliaji vinavyojulikana vinaendelea kuzuiwa.
+mv_always_allow_tip = Pakia maudhui ya mbali kwenye kila ujumbe kutoka {sender}.
+
+# The search tab.
+srch_account = Akaunti
+srch_folder = Folda
+srch_for = Tafuta
+srch_look_in = Tafuta ndani ya
+srch_in_all = Vyote
+srch_in_subject = Mada
+srch_in_from = Kutoka
+srch_in_to = Kwa
+srch_in_body = Mwili
+srch_date = Tarehe
+srch_date_any = Wakati wowote
+srch_date_today = Leo
+srch_date_yesterday = Jana
+srch_date_week = Siku 7 zilizopita
+srch_date_month = Siku 30 zilizopita
+srch_date_year = Mwaka huu
+srch_date_custom = Kipindi maalum
+srch_from_date = Kuanzia tarehe (mwaka-mwezi-siku, saa hiari)
+srch_to_date = Hadi tarehe (mwaka-mwezi-siku, saa hiari)
+srch_unread = Ambazo hazijasomwa pekee
+srch_flagged = Zenye nyota pekee
+srch_attachment = Ina kiambatisho
+
+# The signature editor.
+sig_editors = Vihariri vya sahihi
+sig_formatted = Sahihi, iliyoumbizwa
+sig_source = Sahihi, chanzo cha HTML
+sig_plain_label = Mbadala wa maandishi matupu (hutumwa pamoja na HTML)
+sig_plain_name = Mbadala wa maandishi matupu
+
+# About ZBox.
+about_text_name = Maandishi kuhusu ZBox
+about_view_license = &Tazama leseni...
+about_google = &Manenosiri ya programu ya Google...
+about_support = &Unga mkono ZBox -- uundaji na utunzaji wa mtu mmoja
+about_repos = &Hazina za programu za Harith kwenye GitHub
+about_contact = &Wasiliana na Harith
+btn_close_plain = Funga
+btn_cancel_plain = Ghairi
+
+# The license window.
+eula_heading = Leseni ya ZBox
+eula_text_name = Maandishi ya leseni ya ZBox
+eula_third_party = Kurasa za leseni za vipengele vya wengine:
+eula_agree = &Nakubali masharti yaliyo hapo juu
+eula_agree_name = Nimesoma na kukubali masharti ya leseni ya ZBox
+eula_disagree = &Sikubali
+eula_next = &Endelea
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Maandishi ya nyaraka za ZBox
+doc_copy = Nakili kwenye ubao wa kunakili
+shortcuts_heading = Njia za mkato za kibodi
+shortcuts_text_name = Maandishi ya njia za mkato za kibodi
+
+# The main window's own panes.
+mf_toolbar = Upau mkuu wa zana
+mf_tabs = Vichupo vya ZBox
+tree_heading = Akaunti na folda
+tree_name = Mti wa akaunti na folda
+envlist_heading = Jumbe
+envlist_name = Orodha ya jumbe
+rdr_heading = Ujumbe
+rdr_name = Kisomaji cha ujumbe
+conv_heading_one = Mazungumzo: ujumbe 1
+conv_heading_many = Mazungumzo: jumbe {count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} kati ya {total} zimekamilika.
+bulk_cancelling = Inaghairi -- inamalizia ujumbe wa sasa...
+cache_clear_now = Futa akiba ya jumbe za nje ya mtandao sasa... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, imelindwa
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Jina la kuonyesha ni hiari -- liache wazi ili kutuma kwa jina la akaunti hii yenyewe.
+acct_note_identity = Anwani ya barua pepe inaweza kutofautiana na barua pepe ya kuingia ikiwa mtoa huduma wako ana kikoa maalum kilichounganishwa na sanduku hili la barua. Barua pepe itatumwa na kupokelewa chini ya anwani iliyo hapo juu, wakati kuingia bado kunatumia barua pepe ya kuingia. Acha sehemu ya nenosiri wazi ili kubaki na nenosiri lililohifadhiwa tayari kwa akaunti hii -- kwa mfano baada ya kubadilisha nenosiri la programu la Gmail, liandike jipya hapa; vinginevyo liache wazi.
+acct_note_identities = Anwani nyingine ambazo akaunti hii inaweza kutuma na kujibu kama. Kujibu ujumbe uliotumwa kwa mojawapo ya hizi huweka Kutoka iwe anwani hiyo badala ya ile ya juu.
+acct_note_signature = Huongezwa kwenye kila ujumbe mpya, jibu na usambazaji unaotumwa kutoka akaunti hii, chini ya mstari wa "-- ". Acha wazi kwa kutokuwa na sahihi. Hariri sahihi hufungua kihariri kilichoumbizwa, ambapo herufi nzito, orodha na viungo vinapatikana; kisanduku kilicho juu kisha kinashikilia toleo la maandishi matupu linalotoka pamoja nalo.
+acct_note_junk = Folda halisi ambayo Weka alama kuwa barua taka huhamishia jumbe. "{automatic}" hutumia dhana ile ile inayofahamu mtoa huduma ambayo Weka kwenye kumbukumbu na tupio tayari hutumia; weka hii tu ikiwa dhana hiyo si sahihi au folda yako ya barua taka ina jina maalum.
+acct_note_disable = Akaunti iliyozimwa haiwasiliwi kamwe -- hakuna IDLE, hakuna usasishaji wa mara kwa mara, hakuna chochote -- hadi iwashwe tena. Bado inaonekana kwenye mti, ikiwa na alama (imezimwa), na barua zake zilizopakuliwa tayari zinabaki zinapatikana nje ya mtandao. Ni swichi ile ile kama Akaunti > Zima akaunti au menyu ya muktadha ya akaunti yenyewe; hapa ni mahali pengine tu pa kuifikia.
+acct_note_default = Folda za akaunti hii zinaonekana kwanza kwenye mti, na ujumbe mpya hutumwa kutoka kwake kwa chaguo-msingi isipokuwa ubadilishwe kwa mkono kwenye kiandikaji. Haiathiri anwani ambayo jibu au usambazaji hutumia -- hilo tayari linafuata ujumbe unaojibiwa (tazama Utambulisho wa ziada hapo juu). Daima kuna akaunti chaguo-msingi moja hasa, kwa hivyo kuondoa alama hii kwenye akaunti chaguo-msingi ya sasa bila kuiweka kwenye nyingine kunaiacha bila kubadilika -- weka alama kwenye kisanduku cha akaunti nyingine badala yake ili kuipa chaguo-msingi.
+acct_note_mute = &Kunyamazisha huzuia sauti ya barua mpya ya akaunti hii, tangazo la sauti na arifa ya Windows, bila kujali jinsi vingine vimesanidiwa. Haiathiri akaunti nyingine, na bado iko chini ya swichi kuu kwenye Mipangilio > Sauti na arifa (sauti na arifa za eneo-kazi kwa ujumla).
+wiz_note_app_password = Ikiwa tayari una nenosiri la programu lililoundwa kwa ZBox, bonyeza Endelea ili kuendelea.
+wiz_note_login = Vitambulisho vya kuingia.\nIkiwa barua pepe yako ya kuingia ni tofauti na anwani iliyo hapo juu, kwa mfano akaunti ya mtoa huduma wako ni login@example.net lakini unataka kutuma na kupokea kama you@example.org, weka barua pepe ya kuingia hapa. Unaweza kuweka anwani maalum ya kutuma baadaye kwenye Mipangilio ya akaunti na utambulisho.
+wiz_note_servers = Mipangilio ya seva, iliyojazwa awali pale kikoa kinapotambuliwa. Hariri chochote kinachohitaji kuwa tofauti.
+wiz_preset_none = Hakuna mpangilio awali uliopatikana kwa kikoa hiki. Weka mipangilio ya seva ya mtoa huduma wako kwa mkono; kurasa za msaada za mtoa huduma wako huiorodhesha.
+ab_note_groups = Andika jina la kikundi kwenye sehemu ya Kwa, Nakala au Nakala fiche ya dirisha la kuandika ili kujaza wanachama wake wote mara moja.
+cache_note_intro = Hizi huondoa nakala za ndani za ZBox pekee. Hakuna kinachofutwa kutoka seva yoyote ya barua pepe, na ujumbe ulioondolewa hupakuliwa tena utakapoufungua wakati ujao.
+cache_note_age = Usafishaji wa kiotomatiki huendeshwa mara moja kwa siku, wakati ZBox haijakuwa na shughuli ya kibodi kwa dakika kumi na hakuna ujumbe uliofunguliwa. Unafuata tarehe ya kila ujumbe yenyewe, ikiwemo jumbe ambazo bado ziko kwenye akaunti yako.
+filt_note_intro = Kanuni huendeshwa kwa mpangilio, kutoka juu hadi chini, zikijaribu Kutoka, Kwa na Mada. Hutumika kiotomatiki kwa barua mpya zinapofika kwenye Kikasha cha akaunti hii; tumia Endesha sasa hapa chini kuzitumia kwa jumbe ambazo tayari ziko kwenye folda.
+filt_note_run_now = Hutumia kila kanuni iliyowashwa hapo juu, kwa mpangilio, kwa kila ujumbe ulio tayari kwenye folda iliyochaguliwa -- huhifadhi mabadiliko yako kwanza, kama Sawa.
+mp_note_intro = Akaunti hizi ziliwekwa kwenye kompyuta nyingine. Weka nenosiri kuu ili kufungua nywila zake zilizohifadhiwa hapa. Utaulizwa mara moja tu kwenye kompyuta hii.\n\nBila hilo, kila akaunti italazimika kuingia tena kwenye seva yake ya barua pepe.
+priv_note_remote = Picha, laha za mitindo na herufi ambazo ujumbe hupakia kutoka mtandaoni humwambia mtumaji wakati ulipoufungua, na kutoka wapi. Hii ikiwa imewashwa, hakuna kati ya hizo kinachopakiwa: ilani huonekana juu ya ujumbe ikisema kilichozuiwa, na Ctrl+Shift+I huipakia kwa ujumbe huo mmoja. Picha zilizoambatishwa kwenye ujumbe wenyewe huonyeshwa kila mara. Hati na fremu zilizopachikwa huondolewa kwa vyovyote na hazipakiwi kamwe.
+priv_note_blocklist = Hili ni tabaka la pili. Lina umuhimu unapopakia maudhui ya mbali ya ujumbe, au kumruhusu mtumaji: picha hupakiwa, lakini chochote kinachotolewa kutoka kikoa kinachojulikana cha ufuatiliaji au matangazo bado hakipakiwi. Orodha hupakuliwa kutoka orodha za umma za matangazo na vifuatiliaji na kuunganishwa; usasishaji huchukua sekunde moja au mbili na huendeshwa chinichini.
+priv_note_junk = Hakuna kubahatisha. Weka alama kuwa barua taka huongeza mtumaji kwenye orodha ya waliozuiwa hapa chini, isipokuwa ujumbe ulipitia orodha ya barua pepe. Weka alama kuwa si barua taka huongeza mtumaji kwenye orodha ya wasio barua taka kamwe na ujumbe huo haukaguliwi tena. Ujumbe mpya kutoka kwa mtumaji aliyezuiwa huwekwa alama Mtumaji aliyezuiwa kwenye orodha; ule unaounganisha kwenye tovuti inayojulikana ya ulaghai wa mtandaoni au programu hasidi huwekwa alama Huenda ni ulaghai wa mtandaoni. Uchujaji wa barua taka wa mtoa huduma wako wa barua pepe bado unaendelea kama awali.
+priv_status_phishing_updating = Orodha ya ulaghai wa mtandaoni: inasasishwa chinichini. Fungua dirisha hili tena kuona matokeo.
+priv_status_updating = Inasasishwa chinichini. Fungua dirisha hili tena kuona matokeo.
+rel_note_intro = Jumbe zinazohusiana na "{subject}" kupitia vichwa vyao vya Message-ID/References, kwenye kila folda katika akaunti hii.
+srch_note_intro = Tafuta maneno kwenye kila akaunti na folda, au punguza utafutaji kwa chaguo zilizo hapa chini. Acha maneno wazi ili kupata jumbe kwa tarehe au visanduku vya kuteua pekee.
+sig_note_plain = Acha mbadala wa maandishi matupu wazi na utaandikwa kutoka sahihi iliyoumbizwa unapobonyeza Hifadhi.
+unified_note_intro = Chagua folda za kuunganisha kwenye akaunti zote. Kila iliyoteuliwa inakuwa kipengee kimoja kwenye mti kinachounganisha folda hiyo kutoka akaunti zako zote.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Kuhusu ZBox
+title_account_settings = Mipangilio ya akaunti na utambulisho: {name}
+title_new_account = Akaunti mpya
+title_address_book = Kitabu cha anwani
+title_members = Wanachama: {name}
+ab_group_name_prompt = Jina la kikundi:
+title_new_group = Kikundi kipya
+title_cache_cleanup = Usanidi wa kusafisha akiba
+cache_age_prompt = Ondoa kiotomatiki jumbe za akiba za zamani kuliko:
+title_automatic_cleanup = Usafishaji wa kiotomatiki
+comp_link_prompt = Anwani ya kiungo:
+title_insert_link = Ingiza kiungo
+title_composer_diagnostics = Uchunguzi wa uandishi
+title_formatted_preview = Hakiki iliyoumbizwa
+title_license_agreement = Makubaliano ya leseni ya ZBox
+title_message_filters = Vichujio vya jumbe: {account}
+title_master_password_required = Nenosiri kuu linahitajika
+title_privacy_dialog = Faragha na kuzuia maudhui
+title_privacy = Faragha
+title_settings = Mipangilio
+set_tab_general = Jumla
+set_tab_personalization = Ubinafsishaji
+set_tab_accessibility = Ufikivu na vitufe vya mkato
+set_tab_maintenance = Utunzaji na usafishaji
+set_tab_sounds = Sauti na arifa
+set_tab_security = Usalama
+title_unified_folders = Folda zilizounganishwa
+title_zbox_locked = ZBox imefungwa
+title_message_view = Mwonekano wa ujumbe
+title_remote_content = Maudhui ya mbali
+title_refresh = Sasisha
+title_refresh_all = Sasisha zote
+mv_choose_folder = Chagua folda ya kuhifadhi kiambatisho
+title_thread = Mjadala
+title_inbox = Kikasha
+title_compose = Andika
+title_watch_thread = Fuatilia mjadala
+title_ignore_thread = Puuza mjadala
+title_edit_signature = Hariri sahihi
+title_account = Akaunti
+mf_folder_name_prompt = Jina la folda:
+mf_new_name_prompt = Jina jipya:
+title_refresh_all_accounts = Sasisha akaunti zote
+title_sender = Mtumaji
+title_new_mail = Barua mpya
+mf_export_dialog_title = Hamisha akaunti zote {count} na mipangilio
+mf_related_tab = Zinazohusiana: {subject}
+title_hotkeys_diagnostic = Uchunguzi wa vitufe vya mkato
+set_choose_attachment_dir = Chagua folda ya kuhifadhi viambatisho
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox imefungwa. Tumia njia yoyote kati ya zilizo hapa chini kuifungua. Kughairi kunafunga ZBox bila kufungua akaunti yoyote.
+unl_note_foreign_passkey = Ufunguo wa kufikia uliohifadhiwa na folda hii ni wa kompyuta nyingine, kwa hivyo hauwezi kutumika hapa. Fungua kwa ufunguo wako wa usalama au nenosiri kuu, kisha tumia Mipangilio, Faragha na usalama, Njia za kufungua ili kuweka ufunguo wa kufikia kwenye kompyuta hii.
+unl_note_methods = Moja yoyote ya hizi hufungua ZBox wakati kufuli ya programu imewashwa, pamoja na nenosiri kuu. Ufunguo wa kufikia hutumia Windows Hello kwenye kompyuta hii; ufunguo wa usalama ni ufunguo wa FIDO2 wa USB au NFC na hufanya kazi kwenye kompyuta yoyote unayoichomeka.
+unl_note_not_encryption = Hizi hufungua programu. Hazisimbi chochote: nenosiri kuu bado ndilo pekee linaloweza kufungua nywila za akaunti zilizohifadhiwa kwenye kompyuta ambayo folda hii haijawahi kutumika. Lazima liwekwe kwanza, na hakuna kati ya hizi kinachoweza kuongezwa hadi hapo.
+unl_add_passkey_unavailable = &Ongeza ufunguo wa kufikia (haupatikani)
+unl_add_key_unavailable = &Ongeza ufunguo wa usalama (haupatikani)
+unl_reassign_unavailable = &Kabidhi upya ufunguo wa kufikia kwenye kompyuta hii (haupatikani)
+unl_status_cancelled_passkey = Ufunguo wa kufikia umeghairiwa. ZBox bado imefungwa.
+unl_status_cancelled_key = Ufunguo wa usalama umeghairiwa. ZBox bado imefungwa.
+unl_status_enter_password = Weka nenosiri kuu.
+unl_status_no_master = Hakuna nenosiri kuu lililowekwa, kwa hivyo ufunguo wa kufikia au wa usalama hauwezi kuongezwa bado. Liweke kwa kitufe cha Nenosiri kuu kwenye Mipangilio, Faragha na usalama, kisha urudi hapa. Nenosiri kuu ndilo linalofungua nywila zako za akaunti zilizohifadhiwa kwenye kompyuta nyingine; ufunguo wa kufikia hufungua programu tu kwenye hii moja, kwa hivyo hauwezi kusimama peke yake.
+unl_status_unsupported = Windows ya kompyuta hii haitumii funguo za kufikia wala funguo za usalama, kwa hivyo ni nenosiri kuu pekee linaloweza kufungua ZBox hapa.
+unl_status_foreign_one = Ufunguo 1 wa kufikia ni wa kompyuta nyingine na hauwezi kufungua ZBox hapa. Kukabidhi upya kunauchukua nafasi kwa ule uliotengenezwa kwenye kompyuta hii.
+unl_status_foreign_many = Funguo {count} za kufikia ni za kompyuta nyingine na haziwezi kufungua ZBox hapa. Kukabidhi upya kunazichukua nafasi kwa ule uliotengenezwa kwenye kompyuta hii.
+unl_status_foreign_one_no_hello = Ufunguo 1 wa kufikia ni wa kompyuta nyingine na hauwezi kufungua ZBox hapa. Windows Hello haijawekwa hapa, kwa hivyo hauwezi kubadilishwa kwenye kompyuta hii; Ondoa huusahau.
+unl_status_foreign_many_no_hello = Funguo {count} za kufikia ni za kompyuta nyingine na haziwezi kufungua ZBox hapa. Windows Hello haijawekwa hapa, kwa hivyo haziwezi kubadilishwa kwenye kompyuta hii; Ondoa huzisahau.
+unl_status_no_hello = Windows Hello haijawekwa kwenye kompyuta hii, kwa hivyo ufunguo wa kufikia hauwezi kuongezwa hapa. Ufunguo wa usalama bado unaweza.
+unl_status_none_registered = Hakuna njia za kufungua zilizosajiliwa bado.
+unl_status_add_cancelled_passkey = Kuongeza ufunguo wa kufikia kumeghairiwa.
+unl_status_add_cancelled_key = Kuongeza ufunguo wa usalama kumeghairiwa.
+unl_status_added = Imeongezwa: {name}.
+unl_status_reassign_cancelled = Kukabidhi upya kumeghairiwa. Hakuna kilichobadilishwa.
+unl_status_reassigned = Imeongeza {name} na kusahau {count} kutoka kompyuta nyingine.
+unl_status_test_cancelled = Jaribio limeghairiwa.
+unl_status_removed = Imeondolewa.
+unl_remove_warning_last = Ondoa {name}?\n\nHii ndiyo njia pekee ya kufungua iliyosajiliwa na hakuna nenosiri kuu lililowekwa, kwa hivyo kufuli ya programu ikiwa imewashwa hakungekuwa na kitu cha kufungulia ZBox. Kufuli huruka badala ya kukufungia nje, lakini ZBox ingefunguka bila kufuli.
+unl_remove_warning = Ondoa {name}? ZBox haitaikubali tena.
+ab_col_email = Barua pepe
+ab_col_name = Jina
+ab_col_phone = Simu
+ab_no_contacts = Bado hakuna waasiliani.
+acct_auto_check = Kagua jumbe mpya kiotomatiki
+acct_note_auto_check = Imezimwa: ZBox haiwasiliani kamwe na akaunti hii yenyewe -- hakuna ufuatiliaji wa barua mpya, hakuna usasishaji wa muda, hakuna upakuaji wa chinichini -- ili seva isiyoaminika isipunguze kasi ya akaunti nyingine. Barua zake zilizopakuliwa bado zinafunguka, na Sasisha (F5), kutuma na kufuta bado vinafikia seva. Ni sawa na Sitisha ukaguzi wa kiotomatiki kwenye menyu ya Zana au menyu ya muktadha ya akaunti.
+bl_day_ago = siku 1 iliyopita
+bl_days_ago = siku {days} zilizopita
+bl_label_blocklists = Orodha ya kuzuia
+bl_label_phishing = Orodha ya ulaghai wa mtandaoni
+bl_last_failed = Jaribio la mwisho limeshindwa: %s
+bl_not_downloaded = Haijapakuliwa bado.
+bl_save_failed = Imepakua %s lakini haikuweza kuihifadhi: %s
+bl_seed_only = Vikoa %s kutoka orodha iliyojengwa ndani. Haijawahi kusasishwa kutoka mtandaoni.
+bl_some_failed = Baadhi ya vyanzo vimeshindwa: %s
+bl_some_unreachable = Baadhi ya vyanzo haviwezi kufikiwa: %s
+bl_status_line = Vikoa %s. Ilisasishwa mwisho %s.
+bl_up_to_date = %s tayari imesasishwa.
+bl_update_failed = Haikuweza kusasisha %s: %s
+bl_updated = %s imesasishwa: vikoa %s.
+cc_age_choice = Kila akiba ya jumbe ya zamani kuliko %s
+cc_auto_button = Usafishaji wa kiotomatiki: jumbe za akiba za zamani kuliko %s...
+comp_btn_discard = &Tupa
+comp_btn_keep_editing = &Endelea kuhariri
+comp_btn_save_draft = &Hifadhi rasimu
+comp_no_account = Hakuna akaunti iliyosanidiwa
+comp_saving_draft = Inahifadhi rasimu…
+comp_this_message = ujumbe huu
+comp_unsent_save_q = Hifadhi %s kama rasimu kabla ya kufunga?
+comp_unsent_tray_q = Hifadhi %s kama rasimu kabla ZBox haijaenda kwenye trei?
+doc_unreadable = Faili ya nyaraka haikuweza kusomwa:
+envlist_all_disabled = Kila akaunti imezimwa.
+envlist_col_date = Tarehe
+envlist_col_from = Kutoka
+envlist_col_status = Hali
+envlist_col_subject = Mada
+envlist_collapsed = Imekunjwa (%d)
+envlist_empty = Hakuna jumbe kwenye folda hii.
+envlist_loading = Inapakia jumbe...
+envlist_no_accounts = Bado hakuna akaunti zilizosanidiwa.
+envlist_no_ignored = Hakuna mijadala iliyopuuzwa kwenye folda hii.
+envlist_no_watched = Hakuna mijadala inayofuatiliwa kwenye folda hii.
+envlist_select_folder = Chagua akaunti au folda ili kupakia jumbe.
+eula_link_0 = Fungua ukurasa wa leseni ya Himalaya kwenye kivinjari chako
+eula_link_1 = Fungua ukurasa wa leseni ya StevenBlack hosts kwenye kivinjari chako
+eula_link_2 = Fungua ukurasa wa leseni ya EasyList/EasyPrivacy kwenye kivinjari chako
+eula_link_3 = Fungua ukurasa wa leseni ya Phishing.Database kwenye kivinjari chako
+eula_read_note = Soma leseni iliyo hapa chini, ikiwemo sehemu za wengine. Lazima uteue Nakubali kabla Endelea haijapatikana. Sikubali hufunga ZBox bila kuianzisha, na huondoa kilichoundwa na uendeshaji huu hadi sasa.
+eula_unreadable = Faili ya leseni haikuweza kusomwa:\n%s
+filters_title = Endesha vichujio
+flag_title = Weka nyota kwenye ujumbe
+folder_type_archive = Kumbukumbu
+folder_type_drafts = Rasimu
+folder_type_inbox = Kikasha
+folder_type_junk = Barua taka
+folder_type_sent = Zilizotumwa
+folder_type_trash = Tupio
+mime_application_json = Faili ya JSON
+mime_application_msword = Hati ya Word
+mime_application_octet_stream = Faili ya binary
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Lahajedwali ya Excel
+mime_application_vnd_ms_powerpoint = Wasilisho la PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Wasilisho la PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Lahajedwali ya Excel
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Hati ya Word
+mime_application_xml = Faili ya XML
+mime_application_zip = Kumbukumbu ya ZIP
+mime_audio_mpeg = Sauti ya MP3
+mime_audio_ogg = Sauti ya OGG
+mime_audio_wav = Sauti ya WAV
+mime_image_bmp = Picha ya BMP
+mime_image_gif = Picha ya GIF
+mime_image_jpeg = Picha ya JPEG
+mime_image_png = Picha ya PNG
+mime_image_svg_xml = Picha ya SVG
+mime_image_webp = Picha ya WebP
+mime_text_csv = Faili ya CSV
+mime_text_html = Faili ya HTML
+mime_text_plain = Faili ya maandishi
+mime_video_mp4 = Video ya MP4
+mime_video_x_msvideo = Video ya AVI
+move_title_junk = Weka alama kuwa barua taka
+move_title_move_to = Hamishia
+move_title_not_junk = Weka alama kuwa si barua taka
+mp_explain_set = Nenosiri kuu limewekwa. Ndilo linaloruhusu folda hii ya ZBox kufungua nywila zake za akaunti zilizohifadhiwa kwenye kompyuta tofauti.\n\nAcha visanduku vyote viwili vya nenosiri jipya wazi na ubonyeze Sawa ili kuliondoa. Kuliondoa hakuathiri kompyuta hii, lakini folda haitafanya kazi tena kwenye nyingine yoyote bila kuingia tena kwenye kila akaunti.
+mp_explain_unset = Hakuna nenosiri kuu lililowekwa, kwa hivyo nywila za akaunti zilizohifadhiwa zinaweza kusomwa tu kwenye kompyuta hii na akaunti hii ya Windows. Ukinakili folda mahali pengine, kila akaunti italazimika kuingia tena kwenye seva yake ya barua pepe.\n\nWeka moja na ZBox itaiomba mara moja kwenye kila kompyuta mpya, kisha ifungue kawaida huko tangu hapo. Kompyuta hii haitauliza tena.\n\nLiandike na ulihifadhi mahali salama. Halihifadhiwi popote na haliwezi kurejeshwa: ukilisahau, kila akaunti italazimika kuingia tena kwenye seva yake ya barua pepe.
+mp_label_confirm = &Thibitisha nenosiri kuu jipya:
+mp_label_current = &Nenosiri kuu la sasa:
+mp_label_master = &Nenosiri kuu:
+mp_label_new = &Nenosiri kuu jipya:
+mp_name_confirm = Thibitisha nenosiri kuu jipya
+mp_name_current = Nenosiri kuu la sasa
+mp_name_master = Nenosiri kuu
+mp_name_new = Nenosiri kuu jipya
+mp_prompt_existing = Nywila zako za akaunti zilizohifadhiwa zimelindwa kwenye kompyuta hii pekee. Weka nenosiri kuu ili ziweze kufunguliwa pia ukihamishia ZBox kwenye nyingine.
+mp_prompt_first_run = ZBox inakaribia kuhifadhi nywila za akaunti zako. Weka nenosiri kuu sasa ili ziweze kufunguliwa bado ukihamishia ZBox kwenye kompyuta nyingine.
+mp_prompt_new_account = ZBox inakaribia kuhifadhi nenosiri la akaunti hii. Weka nenosiri kuu kwanza ili akaunti iweze kufunguliwa bado ukihamishia ZBox kwenye kompyuta nyingine.
+mp_removed_done = Nenosiri kuu limeondolewa. Nywila zilizohifadhiwa sasa zinafanya kazi kwenye kompyuta hii na akaunti hii ya Windows pekee.
+mp_set_done = Nenosiri kuu limewekwa. ZBox itaiomba mara moja kwenye kila kompyuta mpya ambapo folda hii inafunguliwa, kisha ifungue kawaida huko baadaye.
+mv_body_title = Mwili wa ujumbe
+mv_col_format = Umbizo
+mv_col_name = Jina
+mv_col_size = Ukubwa
+mv_format_unknown = Haijulikani
+mv_size_unknown = Ukubwa haujulikani
+na_account_settings = Mipangilio ya akaunti na utambulisho
+na_disable_account = Zima akaunti
+na_edit_signature = Hariri sahihi
+na_message_filters = Vichujio vya jumbe
+na_mute_account = Nyamazisha akaunti
+na_pause_auto_check = Sitisha ukaguzi wa kiotomatiki
+na_remove_account = Ondoa akaunti
+na_set_default = Weka kuwa akaunti chaguo-msingi
+no_offline_copy = Hakuna nakala ya nje ya mtandao ya %s. Ifungue ukiwa mtandaoni, au tumia Faili, Nje ya mtandao, Sawazisha sasa.
+perm_delete_confirm = {msg} Hii inaruka folda ya tupio na haiwezi kutenduliwa.
+perm_delete_many = Futa jumbe {count} kabisa?
+perm_delete_one = Futa ujumbe {count} kabisa?
+preset_note_apple = Apple inahitaji nenosiri mahususi la programu.
+preset_note_fastmail = Fastmail inahitaji nenosiri la programu.
+preset_note_google = Google inahitaji nenosiri la programu au OAuth2, si nenosiri lako la kawaida.
+preset_note_proton = ProtonMail inahitaji programu ya ProtonMail Bridge iendeshwe ndani ya kompyuta.
+preset_note_yahoo = Yahoo inahitaji nenosiri la programu.
+priv_phishing_not_loaded = Orodha ya ulaghai wa mtandaoni: haijapakiwa bado. Hupakuliwa mara ya kwanza kanuni hizi zikiwa zimewashwa na ZBox ikiwa mtandaoni.
+priv_phishing_prefix = Orodha ya ulaghai wa mtandaoni:
+priv_status_unavailable = Hali ya orodha ya kuzuia haipatikani.
+rdr_load_failed = Haikuweza kupakia ujumbe.\n\n{message}
+rdr_loading = Inapakia ujumbe...
+rdr_select_message = Chagua ujumbe ili kuusoma hapa.
+set_autosave_off = Imezimwa — tumia Hifadhi rasimu (Ctrl+S) kuhifadhi kwa mkono
+set_autosave_seconds = Kila sekunde {seconds}
+set_no_unlock = Hakuna ufunguo wa kufikia au wa usalama unaoweza kutumika hapa
+set_purge_days = Baada ya siku {days}
+set_purge_off = Imezimwa — tupio na barua taka hazisafishwi kiotomatiki kamwe
+set_purge_one_day = Baada ya siku 1
+set_val_seconds = sekunde {seconds}
+set_val_one_second = sekunde 1
+set_silence_off = Zima
+set_announce_wait = Husubiri kitufe
+set_autosave_minutes = Kila dakika {minutes}
+set_autosave_one_minute = Kila dakika
+set_rt_bundled_installed = Mazingira yaliyojumuishwa: yamesakinishwa.
+set_rt_bundled_many = Mazingira yaliyojumuishwa: %s yamesakinishwa.
+set_rt_bundled_none = Mazingira yaliyojumuishwa: hakuna yaliyosakinishwa, kwa hivyo ZBox hutumia ya mfumo mzima.
+set_rt_bundled_unknown = Mazingira yaliyojumuishwa: hayakuweza kubainishwa.
+set_rt_bundled_ver = Mazingira yaliyojumuishwa: toleo %s limesakinishwa.
+set_rt_system_unknown = Mazingira ya mfumo mzima: toleo halikuweza kubainishwa.
+set_rt_system_ver = Mazingira ya mfumo mzima: toleo %s.
+set_unlock_many = Njia %d za kufungua zinaweza kutumika hapa
+set_unlock_unreadable = Njia za kufungua hazikuweza kusomwa
+sig_tab_formatted = Iliyoumbizwa
+sig_tab_source = Chanzo cha HTML
+srch_all_accounts = Akaunti zote
+srch_all_folders = Folda zote
+tab_mail = Barua
+tab_new_message = Ujumbe mpya
+tab_saved_message = Ujumbe uliohifadhiwa
+title_copy_to_err = Nakili hadi
+title_mark_message = Weka alama kwenye ujumbe
+title_unsent_message = Ujumbe ambao haujatumwa
+tree_unified_root = Folda zilizounganishwa
+unlock_kind_passkey = Ufunguo wa kufikia (Windows Hello)
+unlock_kind_security_key = Ufunguo wa usalama
+unlock_prompt_message = Windows inakuomba uthibitishe. Jibu ombi lake kwa Windows Hello, PIN yako, au ufunguo wako wa usalama. Dirisha hili hujifunga lenyewe Windows inapomaliza.
+unlock_prompt_title = Usalama wa Windows
+unlock_registering = Inasajili njia hii ya kufungua
+unlock_the_passkey = Ufunguo wa kufikia
+unlock_the_security_key = Ufunguo wa usalama
+wildcard_eml = Faili za barua pepe (*.eml)|*.eml|Faili zote (*.*)|*.*
+wildcard_export = Uhamishaji wa ZBox (*.json)|*.json
+wiz_not_supported = HAIUNGWI MKONO: {name}. {note} Akaunti hii haiwezi kuongezwa kwenye ZBox.
+stock_apply = &Tekeleza
+stock_cancel = Ghairi
+stock_close = &Funga
+stock_help = &Msaada
+stock_no = &Hapana
+stock_ok = Sawa
+stock_yes = &Ndiyo
+wiz_btn_back = &< Nyuma
+wiz_btn_finish = &Maliza
+wiz_btn_next = &Endelea >
+acct_unsaved_q = Hifadhi mabadiliko ya akaunti hii?
+btn_save = &Hifadhi
+spell_add_to_dictionary = &Ongeza kwenye kamusi
+spell_no_suggestions = Hakuna mapendekezo
+title_signature_for = Sahihi: {account}
+title_mark_folder_read = Weka alama kuwa folda imesomwa
+title_update_available = Sasisho la ZBox
+update_available = ZBox {new} inapatikana. Una {current}.
+upd_notes_label = &Maelezo ya toleo:
+upd_no_notes = Hakuna maelezo ya toleo.
+upd_notes_name = Maelezo ya toleo
+upd_update_now = &Ndiyo, sasisha sasa
+upd_remind_later = &Nikumbushe baadaye
+title_update_download = Inapakua sasisho la ZBox
+upd_downloading = Inapakua ZBox {version}...
+upd_progress_name = Maendeleo ya upakuaji
+upd_cancel = &Ghairi
+upd_cancelling = Inaghairi...
+set_updates_label = Masasisho:
+set_update_auto = &Kagua masasisho kiotomatiki
+set_update_mode_label = Sasisho likipatikana:
+set_update_ask = &Niulize
+set_update_silent = &Pakua na usakinishe kimya kimya
+set_update_note = ZBox hukagua GitHub kwa toleo jipya mara moja kwa siku kiwango cha juu, ikiwa tu haina shughuli, na haitumi chochote isipokuwa nambari ya toleo lake. Niulize huonyesha toleo jipya na maelezo yake, pamoja na Ndiyo, sasisha sasa na Nikumbushe baadaye. Pakua na usakinishe kimya kimya huleta sasisho wakati haina shughuli na kulisakinisha utakapotoka kabisa kwenye ZBox wakati ujao, kamwe si ukiwa unafanya kazi. Sasisho hubadilisha faili za programu za ZBox pekee: akaunti, nywila, mipangilio, barua pepe, kumbukumbu, mandhari za sauti na lugha yoyote uliyoongeza haziguswi kamwe, na toleo la awali huhifadhiwa na hurudishwa lenyewe ikiwa jipya halianzi. Msaada, Masasisho pia ina Kagua masasisho sasa na ukurasa wa matoleo wa kusasisha kwa mkono.
+set_update_check_now = &Kagua sasa
+mv_attachment_button = {filename} ({format})
+att_open = Fungua
+att_save = Hifadhi...
+att_save_all = Hifadhi viambatisho vyote
+title_save_attachment = Hifadhi kiambatisho
+title_full_headers = Vichwa kamili
+hdr_copy_all = Nakili vyote
+acct_identity_own_signature = Tumia sahihi yake yenyewe
+acct_identity_own_reply_to = Tumia anwani yake yenyewe ya Jibu-kwa
+acct_identity_reply_to = Anwani ya Jibu-kwa
+acct_identity_always_cc = Tuma nakala kila mara kwa anwani hizi
+acct_identity_cc = Anwani za nakala
+acct_identity_always_bcc = Tuma nakala fiche kila mara kwa anwani hizi
+acct_identity_bcc = Anwani za nakala fiche
+acct_identity_own_folders = Tumia folda zake zenyewe za Rasimu na Zilizotumwa
+acct_identity_drafts = Folda ya Rasimu
+acct_identity_sent = Folda ya Zilizotumwa
+acct_identity_own_smtp = Tumia seva yake yenyewe ya kutuma
+acct_identity_smtp_login = Jina la kuingia la kutuma
+acct_identity_smtp_password = Nenosiri la kutuma
+acct_identity_test_smtp = &Jaribu seva ya kutuma
+acct_identity_note_smtp = Acha jina la kuingia wazi ili kuingia kwa anwani ya barua pepe ya utambulisho huu. Nakala zilizotumwa bado huenda kwenye folda ya Zilizotumwa ya akaunti hii, au kwenye folda ya Zilizotumwa ya utambulisho huu ikiwa ina yake.
+identity_field_required = Jaza {field}, au ondoa alama kwenye kisanduku chake.
+identity_field_invalid = {field} ina anwani isiyo halali.
+identity_folders_required = Chagua folda ya Rasimu, folda ya Zilizotumwa au zote mbili, au ondoa alama kwenye kisanduku chake.
+identity_password_required = Weka nenosiri la kutuma.
+identity_smtp_testing = Inajaribu seva ya kutuma.
+identity_smtp_ok = Seva ya kutuma ilikubali kuingia.
+identity_smtp_failed = Jaribio la seva ya kutuma limeshindwa.\n\n{error}
+set_bare_keys_note_move = M na C hufungua menyu za Hamishia na Nakili hadi za folda kwa jumbe zilizochaguliwa, na Shift+M hufungua kisanduku ambacho unaandika sehemu ya jina la folda ili kuzihamishia huko. Kuizima hurudisha M na C kwenye urambazaji wa herufi ya kwanza pia.
+folder_search_filter = Jina la folda lina
+folder_search_list = Folda zinazolingana
+folder_search_no_match = Hakuna folda inayolingana na jina hilo.
+wiz_signin_method = Njia ya kuingia
+wiz_method_password = Nenosiri
+wiz_method_microsoft = Akaunti ya Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Kuingia kwa Microsoft. Mipangilio ya seva ya Outlook.com, Hotmail, Live na Microsoft 365 imejazwa.
+wiz_welcome_notice = Gmail. Nenosiri lako la kawaida la Google litakataliwa, lakini nenosiri la programu hufanya kazi. Uthibitishaji wa hatua mbili lazima uwe umewashwa kwanza. Kitufe kilicho hapa chini kinafungua maelekezo ya Google.\n\nOutlook.com, Hotmail, Live na Microsoft 365. Hizi huingia kwa akaunti yako ya Microsoft. Kwenye ukurasa wa Kuingia, chagua Akaunti ya Microsoft, kisha uingie kwa kivinjari chako au kwa msimbo.\n\nWatoa huduma wengine. Nenosiri la kawaida au la programu mara nyingi hufanya kazi, na kurasa za msaada za mtoa huduma wako huorodhesha mipangilio ya seva.
+preset_note_outlook = Akaunti za Outlook.com, Hotmail, Live na MSN huingia kwa akaunti ya Microsoft. Chagua Akaunti ya Microsoft kama njia ya kuingia kwenye ukurasa wa Kuingia.
+ms_status_name = Hali ya kuingia kwa Microsoft
+ms_browser_button = &Ingia kwa kivinjari
+ms_code_button = &Ingia kwa msimbo
+ms_copy_code = &Nakili msimbo
+ms_open_page = &Fungua ukurasa wa kuingia
+ms_stop = &Acha kusubiri
+ms_not_configured = Kuingia kwa Microsoft hakujawekwa kwenye nakala hii ya ZBox.
+ms_not_signed_in = Hujaingia bado. Ingia kwa kivinjari chako, au kwa msimbo kwenye kifaa chochote.
+ms_signed_in = Umeingia kama {address}.
+ms_signed_in_plain = Umeingia.
+ms_needs_sign_in = Kuingia kwa Microsoft kwa akaunti hii kunahitajika tena. Ingia kwa kivinjari chako, au kwa msimbo kwenye kifaa chochote.
+ms_reason_cancelled = Kuingia kulisimamishwa.
+ms_reason_timeout = Hakuna jibu lililofika kwa wakati.
+ms_reason_denied = Ufikiaji haukuruhusiwa.
+ms_reason_expired = Msimbo umeisha muda. Omba mpya.
+ms_reason_network = Microsoft haikuweza kufikiwa. Angalia muunganisho kisha ujaribu tena.
+ms_reason_server = Microsoft ilisema: {detail}
+ms_page_done = Umeingia. Unaweza kufunga ukurasa huu na kurudi kwenye ZBox.
+ms_page_failed = Kuingia hakukukamilika. Rudi kwenye ZBox kwa maelezo.
+ms_browser_waiting = Kivinjari chako kinaonyesha ukurasa wa kuingia wa Microsoft. Maliza kuingia huko, kisha urudi kwenye ZBox.
+ms_code_asking = Inaomba msimbo wa kuingia kutoka Microsoft...
+ms_code_waiting = Kwenye kifaa chochote, fungua {address} na uweke msimbo {code}. ZBox inasubiri hapa hadi umalize kuingia.
+ms_failed = Kuingia hakukukamilika. {reason}
+ms_code_copied = Msimbo umenakiliwa.
+offline_inbox_only = Kikasha na Kumbukumbu pekee ndivyo vinavyohifadhiwa kwa matumizi ya nje ya mtandao. Nenda mtandaoni ili kufungua {folder}.
+block_sender_rule_name = Zuia {sender}
+title_block_sender = Zuia mtumaji huyu
+title_unblock_sender = Fungulia mtumaji huyu
+set_clear_inbox_cache = Futa akiba ya jumbe kwa kuondoka kwenye Kikasha
+set_clear_inbox_cache_note = Ikiwa imewashwa, nakala ya nje ya mtandao ya ujumbe na mwili wake uliohifadhiwa hufutwa mara tu unapoondoka kwenye Kikasha, hata ulipofutwa au kuhamishwa mahali pengine, kama kwenye simu yako, ili usionekane kamwe mahali ambapo haupo tena. Kikasha pekee ndicho kinachohifadhi faili hizi; kila folda nyingine husomwa kila mara kutoka seva.
+empty_trash_all_confirm = Futa kabisa jumbe zote kwenye tupio la kila akaunti?\n\nHii haiwezi kutenduliwa.
+envlist_col_recipient = Mpokeaji
+envlist_col_correspondents = Wanaowasiliana
+envlist_col_received = Zilizopokelewa
+envlist_col_size = Ukubwa
+envlist_col_attachments = Viambatisho
+envlist_col_priority = Kipaumbele
+envlist_col_junk_status = Hali ya barua taka
+envlist_attachment = Viambatisho
+envlist_priority_highest = Cha juu kabisa
+envlist_priority_high = Cha juu
+envlist_priority_low = Cha chini
+envlist_priority_lowest = Cha chini kabisa
+envlist_size_kb = KB {size}
+envlist_size_mb = MB {size}
+set_list_headers = Onyesha vichwa vya safu wima kwenye orodha ya jumbe
+pgp_title = Kidhibiti cha funguo za OpenPGP
+smime_title = Kidhibiti cha vyeti vya S/MIME
+smime_own = cheti chako
+smime_expired = kimeisha muda
+smime_expires = kinaisha muda {date}
+smime_issuer = Kimetolewa na
+smime_valid = Halali kuanzia {start} hadi {end}
+smime_fingerprint = Alama ya kidole ya SHA-256
+smime_own_key = Cheti chako, pamoja na ufunguo wake wa faragha: barua pepe zilizosimbwa kwake zinaweza kusomwa hapa.
+smime_unavailable = S/MIME haipatikani kwenye nakala hii ya ZBox.
+smime_details = Maelezo ya cheti
+smime_no_certs = Bado hakuna vyeti. Ingiza faili yako ya .p12 au .pfx, au cheti cha mwasiliani.
+smime_import_failed = Cheti hakikuweza kuingizwa: {error}
+smime_import_title = Ingiza faili ya cheti
+smime_password_prompt = Weka nenosiri la {name}.
+smime_password_title = Nenosiri la cheti
+smime_imported = Cheti kimeingizwa.
+smime_export_title = Hamisha cheti
+smime_exported = Cheti kimehamishwa.
+smime_delete_confirm = Futa cheti cha {name}? Ikiwa ni chako mwenyewe, barua pepe zilizosimbwa kwake haziwezi kusomwa tena hapa.
+smime_deleted = Cheti kimefutwa.
+smime_rs_verified = Ujumbe huu una sahihi halali ya S/MIME kutoka kwa cheti kilichotolewa kwa anwani ya mtumaji na mamlaka inayoaminiwa na Windows.
+smime_rs_unverified = Ujumbe huu una sahihi halali ya S/MIME, lakini cheti chake hakikutolewa na mamlaka inayoaminiwa na Windows.
+smime_rs_mismatch = Ujumbe huu una sahihi ya S/MIME, lakini anwani ya mtumaji haiendani na cheti cha mwenye sahihi.
+smime_rs_technical = Ujumbe huu una sahihi ya S/MIME, lakini haiendani na ujumbe. Ujumbe unaweza kuwa umebadilishwa baada ya kusainiwa.
+smime_rs_signer = Umesainiwa na: {name}
+smime_rs_issuer = Cheti kimetolewa na: {issuer}
+smime_rs_import_hint = Ili kuusoma, ingiza cheti chako cha S/MIME pamoja na ufunguo wake wa faragha, faili ya .p12 au .pfx, kwenye Zana, Kidhibiti cha vyeti vya S/MIME.
+pgp_details = Sifa za ufunguo
+pgp_generate = &Jozi mpya ya funguo
+smime_import = &Ingiza faili ya cheti
+smime_export = &Hamisha cheti
+smime_delete = &Futa cheti
+pgp_import_file = &Ingiza faili ya ufunguo wa OpenPGP
+pgp_import_file_title = Ingiza faili ya ufunguo wa OpenPGP
+pgp_import_clip = &Ingiza funguo kutoka ubao wa kunakili
+pgp_export = &Hamisha ufunguo wa umma hadi faili
+pgp_copy = &Nakili ufunguo wa umma
+pgp_backup = &Hifadhi nakala ya ufunguo wa siri hadi faili
+pgp_props = &Sifa za ufunguo
+pgp_revoke = &Batilisha ufunguo
+pgp_delete = &Futa ufunguo
+pgp_expires = unaisha muda: {date}
+pgp_never_expires = hauishi muda kamwe
+pgp_expired = umeisha muda
+pgp_revoked = umebatilishwa
+pgp_fingerprint = Alama ya kidole
+pgp_key_id = Kitambulisho cha ufunguo
+pgp_created = Uliundwa
+pgp_acceptance = Kukubali kwako
+pgp_acc_rejected = Hapana, kataa ufunguo huu.
+pgp_acc_undecided = Bado, labda baadaye.
+pgp_acc_unverified = Ndiyo, lakini sijathibitisha kuwa ni ufunguo sahihi.
+pgp_acc_verified = Ndiyo, nimethibitisha binafsi kuwa ufunguo huu una alama sahihi ya kidole.
+pgp_personal_no = Hapana, usiutumie kama ufunguo wangu binafsi.
+pgp_personal_yes = Ndiyo, uchukulie ufunguo huu kama ufunguo binafsi.
+pgp_verify_hint = Thibitisha alama ya kidole ya ufunguo kupitia njia salama ya mawasiliano isiyo barua pepe ili kuhakikisha kweli ni ufunguo wa {addr}.
+pgp_gen_title = Tengeneza ufunguo wa OpenPGP
+pgp_gen_identity = Utambulisho
+pgp_gen_type = Aina ya ufunguo:
+pgp_gen_ecc = ECC (Mviringo wa Elliptic)
+pgp_gen_expiry = Kuisha muda kwa ufunguo
+pgp_gen_no_expiry = Ufunguo hauishi muda
+pgp_gen_button = Tengeneza ufunguo
+pgp_gen_confirm = Tengeneza ufunguo wa umma na wa siri kwa {identity}?
+pgp_gen_progress = Inatengeneza ufunguo wako mpya wa OpenPGP…
+pgp_gen_done = Ufunguo wa OpenPGP umeundwa kwa mafanikio!
+pgp_gen_failed = Kutengeneza ufunguo wa OpenPGP kumeshindwa bila kutarajiwa
+pgp_import_none = Hakuna funguo zilizoingizwa.
+pgp_import_done = Funguo za OpenPGP zimeingizwa kwa mafanikio!
+pgp_passphrase_title = Kaulisiri inahitajika
+pgp_unlock_failed = Ufunguo, au sehemu ndogo za ufunguo, hazikuweza kufunguliwa.
+pgp_backup_title = Chagua nenosiri la kuhifadhi nakala ya ufunguo wako wa OpenPGP
+pgp_backup_message = Nenosiri unaloweka hapa hulinda faili ya nakala ya ufunguo wa siri wa OpenPGP unayokaribia kuunda. Lazima uweke nenosiri hili ili kuendelea na kuhifadhi nakala.
+pgp_backup_pw = Nenosiri la nakala ya ufunguo wa siri:
+pgp_backup_pw2 = Nenosiri la nakala ya ufunguo wa siri (tena):
+pgp_backup_done = Ufunguo wa siri umehamishwa kwa mafanikio!
+pgp_export_done = Ufunguo wa umma umehamishwa kwa mafanikio!
+pgp_copied = Ufunguo/funguo zimenakiliwa kwenye ubao wa kunakili
+pgp_revoke_done = Ufunguo umebatilishwa kwa mafanikio.
+pgp_personal = ufunguo binafsi
+pgp_no_keys = Bado hakuna funguo. Tengeneza jozi mpya ya funguo au ingiza ufunguo.
+pgp_unavailable = OpenPGP haipatikani kwenye nakala hii ya ZBox.
+pgp_gen_expires_3y = Ufunguo unaisha muda baada ya miaka 3
+pgp_gen_no_identity = Ongeza akaunti ya barua pepe kwanza.
+pgp_import_confirm = Ingiza funguo hizi?\n\n{keys}
+pgp_passphrase_prompt = Weka kaulisiri ya ufunguo wa siri wa {name}.
+pgp_clip_empty = Ubao wa kunakili hauna ufunguo wa OpenPGP.
+pgp_pw_mismatch = Manenosiri mawili hayalingani.
+pgp_backup_open = Faili hii ni nakala ya ufunguo wa siri. Weka nenosiri lake la nakala.
+pgp_revoke_confirm = Batilisha ufunguo wa {name}? Ufunguo uliobatilishwa hauwezi kutumika tena kamwe. Shiriki ufunguo wa umma uliobatilishwa ili wengine waache kuutumia.
+pgp_delete_public_confirm = Futa ufunguo wa umma wa {name}?
+pgp_delete_secret_confirm = Futa ufunguo wako binafsi {name}? Barua pepe zilizosimbwa kwake haziwezi kusomwa tena kamwe. Hifadhi nakala ya ufunguo wa siri kwanza ikiwa unaweza kuuhitaji.
+pgp_select_key = Chagua ufunguo kwanza.
+pgp_save_failed = Funguo hazikuweza kuhifadhiwa: {error}
+pgp_publish = &Chapisha
+pgp_publish_ok = Ufunguo wa umma umetumwa kwa "{keyserver}".
+pgp_publish_fail = Imeshindwa kutuma ufunguo wako wa umma kwa "{keyserver}".
+pgp_publish_suggest = Kuchapisha ufunguo wa umma kwenye seva ya funguo huruhusu wengine kuupata.
+pgp_publish_question = Uchapishe kwenye {keyserver} sasa? Seva kisha itatuma barua pepe ya uthibitisho kwa {addresses}. Anwani yako itaweza kupatikana ukifungua kiungo kilichomo.
+pgp_publish_sent = Barua pepe ya uthibitisho imetumwa kwa {addresses}. Fungua kiungo kilichomo ili ufunguo wako upatikane kwa anwani yako.
+pgp_publish_already = Tayari unapatikana kwa {addresses}.
+pgp_rs_no_sig = Hakuna sahihi ya kidijitali
+pgp_rs_no_sig_info = Ujumbe huu hauna sahihi ya kidijitali ya mtumaji. Kutokuwepo kwa sahihi ya kidijitali kunamaanisha ujumbe unaweza kuwa umetumwa na mtu anayejifanya ana anwani hii ya barua pepe. Pia inawezekana ujumbe umebadilishwa wakati ukipitia mtandao.
+pgp_rs_uncertain = Sahihi ya kidijitali isiyo na uhakika
+pgp_rs_uncertain_date = Sahihi ya kidijitali isiyo na uhakika - Imesainiwa tarehe {date}
+pgp_rs_invalid = Sahihi ya kidijitali isiyo halali
+pgp_rs_invalid_date = Sahihi ya kidijitali isiyo halali - Imesainiwa tarehe {date}
+pgp_rs_good = Sahihi ya kidijitali nzuri
+pgp_rs_good_date = Sahihi ya kidijitali nzuri - Imesainiwa tarehe {date}
+pgp_rs_no_key = Ujumbe huu una sahihi ya kidijitali, lakini haijulikani kama ni sahihi. Ili kuthibitisha sahihi hiyo, unahitaji kupata nakala ya ufunguo wa umma wa mtumaji.
+pgp_rs_uid_mismatch = Ujumbe huu una sahihi ya kidijitali, lakini kutolingana kumegunduliwa. Ujumbe ulitumwa kutoka anwani ya barua pepe isiyolingana na ufunguo wa umma wa mwenye sahihi.
+pgp_rs_not_accepted = Ujumbe huu una sahihi ya kidijitali, lakini bado hujaamua kama ufunguo wa mwenye sahihi unakubalika kwako.
+pgp_rs_rejected = Ujumbe huu una sahihi ya kidijitali, lakini ulishaamua kukataa ufunguo wa mwenye sahihi.
+pgp_rs_technical = Ujumbe huu una sahihi ya kidijitali, lakini hitilafu ya kiufundi imegunduliwa. Ama ujumbe umeharibika, au umebadilishwa na mtu mwingine.
+pgp_rs_unverified = Ujumbe huu una sahihi halali ya kidijitali kutoka kwa ufunguo ambao tayari umeukubali. Hata hivyo, bado hujathibitisha kuwa ufunguo huo kweli unamilikiwa na mtumaji.
+pgp_rs_verified = Ujumbe huu una sahihi halali ya kidijitali kutoka kwa ufunguo uliothibitishwa.
+pgp_rs_own_key = Ujumbe huu una sahihi halali ya kidijitali kutoka kwa ufunguo wako binafsi.
+pgp_rs_signer_id = Kitambulisho cha ufunguo wa mwenye sahihi: {keyid}
+pgp_rs_decrypt_id = Kitambulisho cha ufunguo wako wa kusimbua: {keyid}
+pgp_rs_enc_none = Ujumbe haujasimbwa
+pgp_rs_enc_none_info = Ujumbe huu haukusimbwa kabla ya kutumwa. Taarifa zinazotumwa kwenye mtandao bila usimbaji fiche zinaweza kuonekana na watu wengine wakati zikipita.
+pgp_rs_enc_invalid = Ujumbe hauwezi kusimbuliwa
+pgp_rs_enc_invalid_info = Ujumbe huu ulisimbwa kabla ya kutumwa kwako, lakini hauwezi kusimbuliwa.
+pgp_rs_enc_valid = Ujumbe umesimbwa
+pgp_rs_enc_valid_info = Ujumbe huu ulisimbwa kabla ya kutumwa kwako. Usimbaji fiche huhakikisha ujumbe unaweza kusomwa tu na wapokeaji uliokusudiwa.
+pgp_rs_field = Usalama wa ujumbe
+pgp_rs_import = Ingiza ufunguo wa OpenPGP
+pgp_rs_open_to_unlock = Fungua ujumbe ili uweke kaulisiri.
+pgp_rs_reply_not_quoted = Ujumbe wa asili ulisimbwa, kwa hivyo maandishi yake hayanukuliwi hapa.
+pgp_cm_encrypt = Simba
+pgp_cm_sign = Saini kidijitali
+pgp_e2e_title = Usimbaji fiche wa mwisho hadi mwisho
+acct_e2e_button = &Usimbaji fiche wa mwisho hadi mwisho...
+pgp_e2e_none = Usitumie OpenPGP kwa utambulisho huu.
+pgp_e2e_disable = Zima usimbaji fiche kwa jumbe mpya
+pgp_e2e_enable = Washa usimbaji fiche kwa jumbe mpya
+pgp_e2e_enable_info = Utaweza kuzima usimbaji fiche kwa jumbe mmoja mmoja.
+pgp_e2e_sign = Saini jumbe ambazo hazijasimbwa
+pgp_e2e_signing_info = Sahihi ya kidijitali huruhusu wapokeaji kuthibitisha kuwa ujumbe ulitumwa na wewe na maudhui yake hayakubadilishwa. Jumbe zilizosimbwa husainiwa kila mara kwa chaguo-msingi.
+pgp_e2e_autocrypt = Tuma funguo za umma za OpenPGP kwenye vichwa vya barua pepe ili kuendana na Autocrypt
+pgp_not_set_up = Hujasanidiwa kutuma jumbe zilizosimbwa mwisho hadi mwisho kutoka {addr}.
+pgp_cannot_encrypt = Haiwezi kusimba
+pgp_do_you_accept = Je, unakubali ufunguo huu kwa kuthibitisha sahihi za kidijitali na kusimba jumbe?
+pgp_searching = Inatafuta…
+pgp_no_key_found = Hatukuweza kupata ufunguo wowote unaofaa unaolingana na vigezo vya utafutaji vilivyobainishwa.
+pgp_source_autocrypt = Kichwa cha Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = seva ya funguo
+pgp_discover = &Gundua funguo mtandaoni
+pgp_cm_attach_key = Ambatisha ufunguo wangu wa umma
+pgp_e2e_key_label = Ufunguo binafsi wa {address}
+pgp_e2e_auto = Kiotomatiki: ufunguo wako binafsi wa anwani hii
+pgp_e2e_no_key = ZBox haina ufunguo binafsi wa OpenPGP wa {address}. Tengeneza mmoja kwenye Zana, Kidhibiti cha funguo za OpenPGP.
+pgp_e2e_new_messages = Usimbaji fiche kwa jumbe mpya
+pgp_e2e_key_missing = Ufunguo {keyid}, haujapatikana
+pgp_missing_keys = Wapokeaji hawa hawana ufunguo unaofaa na uliokubaliwa:\n\n{addresses}\n\nUjumbe hauwezi kutumwa ukiwa umesimbwa.
+pgp_send_unencrypted = &Tuma bila usimbaji fiche
+pgp_collected_found = Funguo za wapokeaji hawa zilipatikana kwenye barua pepe walizokutumia:
+pgp_lookup_q = Tafuta funguo mtandaoni kwa wapokeaji hawa?\n\n{addresses}\n\nHii hutuma anwani zao kwa keys.openpgp.org na kwa vikoa vyao vya barua pepe.
+pgp_found_online = Funguo zilizopatikana mtandaoni:
+pgp_source = Chanzo: {source}
+pgp_discover_prompt = Weka anwani ya barua pepe. ZBox hutafuta funguo zake za OpenPGP kwenye Web Key Directory ya kikoa chake cha barua pepe na kwenye keys.openpgp.org.
+pgp_discover_bad = Weka anwani kamili ya barua pepe, kama name@example.com.
+pgp_keys_unreadable = Funguo za OpenPGP hazikuweza kufunguliwa: {error}
+pgp_rs_why_no_key = Ufunguo wa siri unaohitajika kusimbua ujumbe huu haupatikani.
+pgp_rs_why_unknown = Kuna matatizo yasiyojulikana na ujumbe huu uliosimbwa.
+pgp_rs_hidden_subject = Ujumbe uliosimbwa
+pgp_rs_why_passphrase = Kaulisiri ya ufunguo wako haikuwekwa. Fungua ujumbe tena ili kuiweka.
+pgp_rs_why_unavailable = OpenPGP haipatikani kwenye nakala hii ya ZBox.
+pgp_rs_why_fetch = Ujumbe haukuweza kuletwa kutoka seva ili kusimbuliwa. Ufungue tena ili ujaribu mara nyingine.
+pgp_rs_import_hint = Ili kuusoma, ingiza ufunguo wako wa siri wa ujumbe huu kwenye ZBox.
+
+[errors]
+language_restart_failed = ZBox haikuweza kujianzisha upya:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Haikuweza kufungua programu ya barua pepe ya {address}.
+
+wizard_test_failed = Muunganisho umeshindwa:\n\n{error}
+
+contacts_import_unreadable = Haikuweza kusoma faili hiyo.\n\n{error}
+contacts_export_unwritable = Haikuweza kuandika faili hiyo.\n\n{error}
+
+attach_unreadable = Haikuweza kusoma kiambatisho {path}:\n{error}
+send_failed = Haikuweza kutuma ujumbe.\n\n{error}
+draft_attach_unreadable = Haikuweza kusoma kiambatisho {path}:\n{error}\n\nRasimu haikuhifadhiwa.
+draft_save_failed = Haikuweza kuhifadhi rasimu.\n\n{error}
+
+clipboard_unavailable = Ubao wa kunakili haukuweza kufunguliwa.
+open_link_failed = Haikuweza kufungua kivinjari chako kwa:\n{url}
+
+master_password_mismatch = Visanduku viwili vya nenosiri kuu jipya havilingani.
+master_password_required = Weka nenosiri kuu, au bonyeza Ghairi.
+master_password_not_set = Nenosiri kuu halikuweza kuwekwa: {error}
+master_password_not_here = Nenosiri kuu haliwezi kubadilishwa kutoka hapa.
+
+attachment_save_failed = Haikuweza kuhifadhi kiambatisho.\n\n{error}
+attachments_save_failed = Haikuweza kuhifadhi viambatisho.\n\n{error}
+print_failed = Haikuweza kuchapisha ujumbe. Hakikisha kichapishi kimesanidiwa.
+print_preview_failed = Haikuweza kufungua hakiki ya uchapishaji. Hakikisha kichapishi kimesanidiwa.
+
+related_search_failed = Haikuweza kutafuta jumbe zinazohusiana.\n\n{error}
+search_failed = Utafutaji umeshindwa.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox haikuweza kupata folda yake ya usanidi, kwa hivyo njia za kufungua haziwezi kusimamiwa hapa.
+shortcut_no_folder = ZBox haikuweza kubaini folda yake yenyewe, kwa hivyo njia ya mkato haiwezi kuundwa kutoka hapa.
+shortcut_failed_settings = Njia ya mkato ya eneo-kazi haikuweza kuundwa:\n\n{error}
+
+unlock_method_failed = {what} haikufanya kazi.\n\n{error}
+unlock_check_failed = Nenosiri kuu halikuweza kukaguliwa.\n\n{error}
+unlock_password_wrong = Nenosiri kuu hilo si sahihi.
+unlock_add_failed = {what} haikuweza kuongezwa.\n\n{error}
+unlock_passkey_setup_failed = Ufunguo wa kufikia haukuweza kuwekwa kwenye kompyuta hii, kwa hivyo hakuna kilichobadilishwa.\n\n{error}
+unlock_method_test_failed = Njia hiyo haikufanya kazi.\n\n{error}
+
+account_list_unreadable = ZBox haikuweza kufungua orodha yako ya akaunti.\n\n{error}\n\nHakuna akaunti zilizopakiwa, na faili haijabadilishwa, kwa hivyo hakuna kilichopotea. Kuongeza, kuhariri na kuondoa akaunti kumekataliwa hadi iweze kusomwa.
+account_list_no_accounts = ZBox haikuweza kufungua orodha yako ya akaunti kwenye kipindi hiki ({error}), kwa hivyo hakuna akaunti za kuchagua. Hakuna kilichopotea na hakuna kilichobadilishwa. Funga ZBox na uianzishe tena, kisha uweke nenosiri kuu ukiulizwa.
+open_message_failed = Haikuweza kufungua ujumbe.\n\n{error}
+filters_list_failed = Haikuweza kuorodhesha jumbe kwenye {folder}.\n\n{error}
+filters_move_failed = Haikuweza kuhamisha jumbe zilizochujwa.\n\n{error}
+cache_clear_failed = Haikuweza kufuta akiba.\n\n{error}
+folder_create_failed = Haikuweza kuunda folda.\n\n{error}
+folder_rename_failed = Haikuweza kubadilisha jina la folda.\n\n{error}
+folder_delete_failed = Haikuweza kufuta folda.\n\n{error}
+folder_subscribe_failed = Haikuweza kujiandikisha kwa folda.\n\n{error}
+folder_unsubscribe_failed = Haikuweza kuondoa usajili wa folda.\n\n{error}
+saved_open_failed = Haikuweza kufungua faili.\n\n{error}
+saved_parse_failed = Haikuweza kuchanganua faili hii kama ujumbe wa barua pepe.\n\n{error}
+save_file_failed = Haikuweza kuhifadhi faili.\n\n{error}
+save_fetch_failed = Haikuweza kuleta ujumbe wa kuhifadhi.\n\n{error}
+empty_trash_failed = Haikuweza kumwaga tupio.\n\n{error}
+empty_junk_failed = Haikuweza kumwaga barua taka.\n\n{error}
+export_write_failed = Haikuweza kuandika faili ya uhamishaji.\n\n{error}
+import_read_failed = Haikuweza kusoma faili hii kama uhamishaji wa ZBox.\n\n{error}
+import_not_export = Faili hii haionekani kuwa uhamishaji wa ZBox.\n\n{error}
+search_open_failed = Haikuweza kufungua ujumbe huu.
+related_load_failed = Haikuweza kupakia ujumbe huu.\n\n{error}
+reply_load_failed = Haikuweza kupakia ujumbe wa kujibu.\n\n{error}
+forward_load_failed = Haikuweza kupakia ujumbe wa kusambaza.\n\n{error}
+action_failed = Haikuweza kukamilisha kitendo hiki.\n\n{error}
+undo_failed = Haikuweza kutendua {label}.\n\n{error}
+copy_failed = Haikuweza kunakili ujumbe.\n\n{error}
+delete_failed = Haikuweza kufuta ujumbe.\n\n{error}
+archive_failed = Haikuweza kuweka ujumbe kwenye kumbukumbu.\n\n{error}
+master_password_not_changed = Nenosiri kuu halikuweza kubadilishwa: {error}
+shortcut_failed_startup = Njia ya mkato ya eneo-kazi haikuweza kuundwa:\n\n{error}\n\nZBox itaendelea kuanza. Unaweza kujaribu tena baadaye kutoka Mipangilio.
+account_locked_action = ZBox haiwezi %s. Orodha ya akaunti haikuweza kufunguliwa kwenye kipindi hiki (%s), na hakuna kilichobadilishwa. Funga ZBox na uianzishe tena, kisha uweke nenosiri kuu ukiulizwa.
+send_tls_mismatch = Haikuweza kutuma ujumbe. Seva ya kutuma ilijibu bila usimbaji fiche, kwa hivyo usimbaji fiche wa kutuma haulingani na mlango. Kwenye Zana, Mipangilio ya akaunti na utambulisho, tumia STARTTLS kwa mlango 587, au SSL/TLS kwa mlango 465, kisha utume tena.\n\n{error}
+mark_folder_read_failed = Haikuweza kuweka alama kuwa folda imesomwa.\n\n{error}
+update_failed = Sasisho halikuweza kupakuliwa, kwa hivyo hakuna kilichobadilishwa.\n\n{error}
+update_rolled_back = Sasisho halikuweza kuanza, kwa hivyo toleo la awali limerejeshwa.
+attachment_open_failed = Haikuweza kufungua kiambatisho.\n\n{error}
+headers_failed = Haikuweza kupakia vichwa vya ujumbe.\n\n{error}
+wizard_ms_sign_in_first = Ingia kwa Microsoft kabla ya kuendelea. Tumia mojawapo ya vitufe viwili vya kuingia kwenye ukurasa huu.
+wizard_provider_unsupported = ZBox haiwezi kuingia kwa mtoa huduma huyu. Ilani kwenye ukurasa huu inaeleza sababu. Rudi nyuma na utumie anwani nyingine ya barua pepe, au ughairi.
+acct_ms_sign_in_first = Ingia kwa Microsoft kabla ya kuhifadhi, au chagua Nenosiri kama njia ya kuingia.
+ms_sign_in_again = Kuingia kwa Microsoft kwa {account} kunahitajika tena. Fungua Mipangilio ya akaunti na utambulisho na uingie hapo.
+graph_pgp_too_large = Ujumbe huu uliosimbwa au kusainiwa ni mkubwa kuliko Microsoft inavyoruhusu kwa barua kama hizo, takriban MB 3. Tuma viambatisho vidogo zaidi, au zima Simba na Saini kidijitali kwa ujumbe huu.
+empty_trash_all_failed = Haikuweza kumwaga tupio la: {accounts}
+
+[help]

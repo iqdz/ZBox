@@ -76,6 +76,66 @@ _IDLE_SAFEGUARD_SECONDS = 120
 # to the list is not immediately followed by it moving.
 _TAB_CLOSE_REFRESH_DELAY_SECONDS = 2.0
 
+# Opening a folder lists its newest page at once; the rest of the folder
+# then follows in the background in pages of this size, added below what
+# is showing (_start_loading_rest), so a folder is listed whole.
+_REST_PAGE_SIZE = 1000
+
+
+def _numeric_id(envelope):
+    """The envelope's id as a whole number (an IMAP UID), or None."""
+    try:
+        return int(str(envelope.get("id")).strip())
+    except (TypeError, ValueError, AttributeError):
+        return None
+
+
+def _arrival_floor(envelopes):
+    """
+    The lowest server number and the oldest date of one listing, as
+    (number or None, date or None). A listing is the newest page of a
+    folder, so a message below both was in the folder already, under the
+    page, and only slid up into it when other messages left.
+    """
+    numbers = [_numeric_id(e) for e in envelopes]
+    lowest = None
+    if numbers and all(n is not None for n in numbers):
+        lowest = min(numbers)
+    oldest = None
+    try:
+        dates = [_parse_envelope_date(e) for e in envelopes]
+        if dates:
+            oldest = min(dates)
+    except Exception:  # noqa: BLE001 - no date floor then
+        oldest = None
+    return (lowest, oldest)
+
+
+def _not_slid_in(candidates, floor):
+    """
+    Of the ids not seen on the previous listing, only those that really
+    arrived: a server number above that listing's lowest, and a date not
+    older than its oldest. A move to Trash, a delete from another client,
+    or any folder longer than one page brought older messages up into the
+    page, and each was greeted as new mail with the sound.
+    """
+    if not floor:
+        return candidates
+    lowest, oldest = floor
+    kept = []
+    for envelope in candidates:
+        number = _numeric_id(envelope)
+        if lowest is not None and number is not None and number <= lowest:
+            continue
+        if oldest is not None:
+            try:
+                if _parse_envelope_date(envelope) < oldest:
+                    continue
+            except Exception:  # noqa: BLE001 - kept when dates do not compare
+                pass
+        kept.append(envelope)
+    return kept
+
 
 class MailFetchMixin:
     """Mixed into ZBoxMainFrame. Every method here runs with the
@@ -199,6 +259,10 @@ class MailFetchMixin:
             elif offline_kept and startup_done:
                 showed_cache = self._show_cached_envelopes_first(account, folder, request_id)
 
+        if not silent and not same_target:
+            # Another folder: the background listing of the rest of the
+            # previous one stops here (_rest_wanted).
+            self._rest_load = None
         if not silent and not showed_cache and not same_target:
             self.mail_panel.envelope_panel.show_placeholder("Loading...")
         if not silent:
@@ -253,7 +317,9 @@ class MailFetchMixin:
                 def repaint():
                     if request_id != self._envelope_request_id:
                         return
-                    changed = self.mail_panel.envelope_panel.populate_if_changed(envelopes)
+                    changed = self.mail_panel.envelope_panel.populate_if_changed(
+                        self._with_loaded_rest(target, envelopes)
+                    )
                     if changed:
                         # No status line: this is a background check,
                         # and a screen reader that reads status bar
@@ -288,7 +354,7 @@ class MailFetchMixin:
                     # reading position. Rows from an offline copy are
                     # always replaced by the live ones, though: they
                     # open through the offline files.
-                    self._replace_preview_rows(envelopes)
+                    self._replace_preview_rows(self._with_loaded_rest(target, envelopes))
                 else:
                     self.mail_panel.envelope_panel.populate(envelopes)
                 self._displayed_target = target
@@ -310,6 +376,8 @@ class MailFetchMixin:
                 self._note_startup_list_arrived()
 
             self._prefetch_message_bodies(account, folder, envelopes, backend, request_id)
+            if not silent:
+                self._start_loading_rest(account, folder, target, backend, envelopes)
 
         def on_error(exc):
             if isinstance(exc, himalaya_client.HimalayaBackgroundSkipped):
@@ -355,6 +423,120 @@ class MailFetchMixin:
 
         self.lanes.for_read(account.account_id, backend).submit(work, on_success, on_error)
 
+    def _start_loading_rest(self, account, folder, target, backend, envelopes):
+        """
+        After a folder opens with a full first page, lists the rest of it
+        in the background, page by page, and adds each page below what is
+        showing, until the whole folder is listed. A Gmail All Mail of many
+        years used to show only its newest page. Silent, like all
+        background work; stops when another folder is opened.
+        """
+        if backend != "imap" or len(envelopes or []) < self._ENVELOPE_PAGE_SIZE:
+            self._rest_load = None
+            return
+        token = object()
+        self._rest_load = {"target": target, "token": token, "done": False, "failures": 0}
+        self._load_rest_page(account, folder, target, token, 1)
+
+    def _rest_wanted(self, target, token):
+        """True while the background listing started with token is still
+        for the folder on screen."""
+        rest = getattr(self, "_rest_load", None)
+        if rest is None or rest.get("token") is not token:
+            return False
+        if self._displayed_target != target:
+            return False
+        if getattr(self, "_shutting_down", False) or self.work_offline:
+            return False
+        selected = self.mail_panel.account_panel.selected_fetch_target() or {}
+        if "unified" in selected:
+            return False
+        return (selected.get("account_id"), selected.get("folder")) == target
+
+    def _load_rest_page(self, account, folder, target, token, page):
+        """One page of _start_loading_rest, on the low-priority worker."""
+        if not self._rest_wanted(target, token):
+            return
+        if self._navigating_recently():
+            wx.CallLater(2000, self._load_rest_page, account, folder, target, token, page)
+            return
+
+        def work():
+            # Background lane: stands down (HimalayaBackgroundSkipped) if
+            # interactive work for this account is active or waiting.
+            with himalaya_client.background_priority():
+                return himalaya_client.list_envelopes(
+                    self.paths, account, folder=folder,
+                    page_size=_REST_PAGE_SIZE, page=page, backend="imap",
+                )
+
+        def on_success(envelopes):
+            envelopes = list(envelopes or [])
+            for envelope in envelopes:
+                envelope["_zbox_backend"] = "imap"
+
+            def add():
+                if not self._rest_wanted(target, token):
+                    return
+                panel = self.mail_panel.envelope_panel
+                shown = {str(row.get("id")) for row in (getattr(panel, "_all_envelopes", None) or [])}
+                fresh = [e for e in envelopes if str(e.get("id")) not in shown]
+                if fresh:
+                    panel.append(fresh)
+                if len(envelopes) < _REST_PAGE_SIZE:
+                    self._rest_load["done"] = True
+                    self._envelope_has_more = False
+                    logging.getLogger("zbox.main").info(
+                        "Whole folder listed for %s/%s: %d row(s).",
+                        account.account_id, folder,
+                        len(getattr(panel, "_all_envelopes", None) or []),
+                    )
+                    return
+                wx.CallLater(1000, self._load_rest_page, account, folder, target, token, page + 1)
+
+            self._when_list_quiet(add)
+
+        def on_error(exc):
+            if not self._rest_wanted(target, token):
+                return
+            if isinstance(exc, himalaya_client.HimalayaBackgroundSkipped):
+                wx.CallLater(5000, self._load_rest_page, account, folder, target, token, page)
+                return
+            logging.getLogger("zbox.main").debug(
+                "Background listing of %s/%s, page %d, failed: %s",
+                account.account_id, folder, page, exc,
+            )
+            self._rest_load["failures"] = self._rest_load.get("failures", 0) + 1
+            if self._rest_load["failures"] > 5:
+                self._rest_load = None  # Load More works as before
+                return
+            wx.CallLater(30000, self._load_rest_page, account, folder, target, token, page)
+
+        self.sync_worker.submit(work, on_success, on_error)
+
+    def _with_loaded_rest(self, target, envelopes):
+        """
+        A fresh first page plus the older rows the background listing
+        added below it, so a refresh of the top of the folder never drops
+        them. Rows are older when their server number is below the page's
+        lowest; without server numbers the page comes back alone.
+        """
+        rest = getattr(self, "_rest_load", None)
+        if rest is None or rest.get("target") != target or not envelopes:
+            return envelopes
+        numbers = [_numeric_id(e) for e in envelopes]
+        if any(n is None for n in numbers):
+            return envelopes
+        lowest = min(numbers)
+        panel = self.mail_panel.envelope_panel
+        top = {str(e.get("id")) for e in envelopes}
+        older = []
+        for row in getattr(panel, "_all_envelopes", None) or []:
+            number = _numeric_id(row)
+            if number is not None and number < lowest and str(row.get("id")) not in top:
+                older.append(dict(row))
+        return list(envelopes) + older
+
     def _on_load_more_messages(self, event=None):
         """
         Audit finding 11: fetches the next page_size block of the
@@ -371,6 +553,22 @@ class MailFetchMixin:
         """
         target = self._displayed_target
         if target is None:
+            return
+        rest = getattr(self, "_rest_load", None)
+        if rest is not None and rest.get("target") == target:
+            # The rest of this folder is listed in the background already
+            # (_start_loading_rest); a page of its own would come twice.
+            if rest.get("done"):
+                self.GetStatusBar().SetStatusText(lang.t(
+                    "main_ui", "no_more_to_load",
+                    default="No more messages to load in this folder.",
+                ))
+            else:
+                folder = target[1]
+                self.GetStatusBar().SetStatusText(lang.t(
+                    "main_ui", "loading_more",
+                    default=f"Loading more messages in {folder}...", folder=folder,
+                ))
             return
         if not self._envelope_has_more:
             self.GetStatusBar().SetStatusText(lang.t(
@@ -1243,10 +1441,16 @@ class MailFetchMixin:
         current_ids = {e.get("id") for e in envelopes if e.get("id") is not None}
         previously_known = self._known_envelope_ids.get(key)
         self._known_envelope_ids[key] = current_ids
+        floors = self.__dict__.setdefault("_known_envelope_floors", {})
+        previous_floor = floors.get(key)
+        floors[key] = _arrival_floor(envelopes)
 
         if previously_known is not None:
             new_ids = current_ids - previously_known
             new_envelopes = [e for e in envelopes if e.get("id") in new_ids]
+            # Only real arrivals, not older messages that slid up into the
+            # newest page when others left the folder.
+            new_envelopes = _not_slid_in(new_envelopes, previous_floor)
             # A message ZBox itself just moved here -- rescued from
             # Junk, undone, archived -- is not new mail. Greeting it
             # as new set off the sound and toast and ran the filters

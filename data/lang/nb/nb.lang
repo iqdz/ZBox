@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Norsk bokmål
+code = nb
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Meldingen er sendt.
+draft_saved = Utkastet er lagret.
+signature_inserted = Signaturen er satt inn.
+signature_none = Denne kontoen har ingen signatur.
+signature_saved = Signaturen er lagret.
+signature_not_saved = Signaturen ble ikke lagret.
+pasted_as_quotation = Limt inn som sitat.
+clipboard_empty = Det er ingenting på utklippstavlen.
+word_count = {words} ord, {characters} tegn.
+report_copied = Rapporten er kopiert.
+compose_tab_needed = Den kommandoen krever en fane for å skrive melding.
+attach_file_instead = Filer som slippes her, settes ikke inn i meldingsteksten. Bruk Legg ved fil for å sende en.
+
+# Formatting in the message body
+formatting_here = Formatering her: {formatting}.
+no_formatting_here = Ingen formatering her, ren tekst.
+
+# Spelling
+nothing_to_check = Det er ingenting å kontrollere.
+no_misspellings = Ingen stavefeil.
+spelling_dictionary_unavailable = Stavelisten er ikke tilgjengelig.
+next_misspelling_first = Bruk neste stavefeil først.
+word_added = {word} er lagt til i ordlisten.
+word_not_added = {word} kunne ikke legges til.
+corrections_applied_one = 1 retting utført.
+corrections_applied_many = {count} rettinger utført.
+corrections_applied_partly = {applied} av {total} rettinger utført. Resten ble avvist, se loggen.
+occurrences_replaced_one = 1 forekomst erstattet.
+occurrences_replaced_many = {count} forekomster erstattet.
+
+# Reading mail
+message_did_not_open = Meldingen ble ikke åpnet. Serveren svarte ikke. Trykk Enter for å prøve igjen.
+thread_open = {messages} i denne tråden. Trykk igjen for å lukke.
+no_thread_selected = Ingen tråd er valgt.
+thread_watched = Tråden overvåkes.
+thread_not_watched = Tråden overvåkes ikke lenger.
+thread_ignored = Tråden ignoreres.
+thread_not_ignored = Tråden ignoreres ikke lenger.
+none_found = Ingen funnet.
+refreshing_this_folder = Oppdaterer denne mappen.
+refreshing_all_accounts = Oppdaterer alle kontoer.
+message_view_html = Meldingsvisning: HTML (gjengitt).
+message_view_text = Meldingsvisning: Tekst.
+html_view_still_loading = Meldingen lastes fortsatt. Escape lukker den.
+message_still_opening = Åpner meldingen. Serveren er treg.
+remote_content_blocked = Eksternt innhold blokkert.
+remote_content_unblocked = Eksternt innhold ikke lenger blokkert.
+remote_content_already_showing = Eksternt innhold vises allerede i denne meldingen.
+archived = Arkivert.
+copied_to_folder = Kopiert til {to_folder}.
+deleted_one = Meldingen er slettet permanent.
+deleted_many = {count} meldinger er slettet permanent.
+trashed_one = Meldingen er flyttet til søppelkassen.
+trashed_many = {count} meldinger er flyttet til søppelkassen.
+
+# Accounts and new mail
+no_account_yet = Det er ingen konto å hoppe til ennå.
+inbox_landed = Innboksen for {name}.
+account_enabled = {name} er aktivert.
+auto_check_paused = Automatisk kontroll satt på pause for {account}.
+auto_check_resumed = Automatisk kontroll slått på for {account}.
+account_disabled = {name} er deaktivert.
+new_mail_one = 1 ny melding for {name}.
+new_mail_many = {count} nye meldinger for {name}.
+refresh_all_done_one = 1 konto oppdatert.
+refresh_all_done_many = {count} kontoer oppdatert.
+refresh_all_done_failures = {count} kontoer oppdatert, {failed} kunne ikke oppdateres.
+refresh_all_done_failures_one = {count} konto oppdatert, {failed} kunne ikke oppdateres.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adressen er kopiert.
+sender_no_address = {sender}. Ingen adresse å kopiere.
+clipboard_not_opened = {sender}. Utklippstavlen kunne ikke åpnes.
+
+# The signature editor
+signature_page_formatted = Formatert. Dette er det som lagres.
+signature_page_html = HTML-kilde. Dette er det som lagres.
+signature_page_html_still_wins = Formatert. HTML-kilden er fortsatt det som lagres.
+
+# Background work
+phishing_list_updating = Phishing-listen oppdateres i bakgrunnen.
+cache_cleared = Tømte {files} filer i hurtigbufferen, {size} MB.
+hotkeys_diagnostic_on = Diagnostikk av hurtigtaster slått på, avkrysset
+hotkeys_diagnostic_off = Diagnostikk av hurtigtaster slått av, ikke avkrysset
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Arkiver
+action_delete = Slett
+action_delete_permanently = Slett permanent
+action_mark_as_junk = Merk som søppelpost
+action_mark_as_not_junk = Merk som ikke søppelpost
+action_move_to = Flytt til
+action_copy_to = Kopier til
+action_mark_message = Merk melding
+action_undo = Angre
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Angret {action}.
+undo_done_many = Angret {action} for {count} meldinger.
+junk_marked_one = Merket som søppelpost.
+junk_marked_many = {count} meldinger merket som søppelpost.
+junk_no_new_sender = Ingen ny avsender ble blokkert: allerede blokkert, en e-postliste eller en av dine egne adresser.
+not_junk_marked_one = Merket som ikke søppelpost.
+not_junk_marked_many = {count} meldinger merket som ikke søppelpost.
+moved_to_one = Flyttet til {to_folder}.
+moved_to_many = {count} meldinger flyttet til {to_folder}.
+copied_to_many = {count} meldinger kopiert til {to_folder}.
+marked_read = Merket som lest.
+marked_unread = Merket som ulest.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Avbrutt etter {completed} av {total}. {succeeded} lyktes, {failed} mislyktes.
+bulk_failed_one = {done} {failed} av 1 melding mislyktes.
+bulk_failed_many = {done} {failed} av {total} meldinger mislyktes.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Fet
+format_word_italic = Kursiv
+format_word_strike = Gjennomstreket
+format_word_href = Lenke
+format_word_bullet = Punktliste
+format_word_number = Nummerert liste
+format_word_quote = Sitat
+format_word_code = Kode
+format_word_heading1 = Overskrift
+format_applied = {formatting} brukt.
+format_inserted = {formatting} satt inn.
+format_not_available = {formatting} er ikke tilgjengelig i den vanlige meldingsteksten.
+format_on = {formatting} på
+format_off = {formatting} av
+link_applied = Lenken er brukt.
+link_applied_to_selection = Lenken er brukt på markeringen.
+plain_body_formatting = Den vanlige meldingsteksten viser formateringen sin som koder.
+
+# Reaching either end of a thread
+thread_edge_first = Første melding i denne tråden. Trykk igjen for å lukke.
+thread_edge_last = Siste melding i denne tråden. Trykk igjen for å lukke.
+jump_unified_inbox = Samlet innboks.
+remote_none = Intet eksternt innhold i denne meldingen.
+sender_none = Ingen avsender på denne meldingen.
+sender_name_no_address = %s, ingen adresse
+signature_not_switched = Signaturen ble ikke endret. Trykk Ctrl+Shift+S for å sette inn denne kontoens signatur.
+signature_removed_no_signature = Signaturen er fjernet. Denne kontoen har ingen.
+signature_switched = Signaturen er endret til denne kontoens.
+spell_not_replaced = Ordet kunne ikke erstattes.
+spell_replaced_with = Erstattet med {word}.
+folder_marked_read = {count} meldinger merket som lest.
+folder_no_unread = Ingen uleste meldinger.
+threads_all_collapsed = Alle tråder er skjult.
+threads_all_expanded = Alle tråder er utvidet.
+upd_percent = {percent} prosent
+upd_download_done = Nedlastingen er ferdig. Forbereder oppdateringen...
+upd_updated_to = ZBox er oppdatert til {version}.
+header_copied = Kopiert.
+headers_copied = Alle hoder er kopiert.
+identity_copies_updated = Kopi og blindkopi er oppdatert for denne identiteten.
+signature_switched_identity = Signaturen er endret til denne identitetens.
+signature_removed_identity = Signaturen er fjernet. Denne identiteten har ingen.
+signature_not_switched_identity = Signaturen ble ikke endret. Trykk Ctrl+Shift+S for å sette inn denne identitetens signatur.
+signature_none_identity = Denne identiteten har ingen signatur.
+move_keys_no_selection = Velg en melding først.
+move_keys_no_folders = Ingen mapper å velge mellom ennå. Prøv igjen om et øyeblikk.
+block_sender_done_one = {sender} er blokkert. Nye meldinger fra avsenderen havner i søppelkassen.
+block_sender_done_many = {count} avsendere er blokkert. Nye meldinger fra dem havner i søppelkassen.
+block_sender_already = {sender} er allerede blokkert.
+block_sender_own = Ikke blokkert: det er en av dine egne adresser.
+block_sender_list_unknown = Ikke blokkert: denne meldingen kom via en e-postliste og oppgir ikke hvem som sendte den. Å blokkere listens adresse ville blokkert alle på den.
+block_sender_moved = Avsenderen er blokkert. {count} meldinger er flyttet til søppelkassen.
+block_senders_moved = {senders} avsendere er blokkert. {count} meldinger er flyttet til søppelkassen.
+unblock_sender_moved = Avsenderen er ikke lenger blokkert. {count} meldinger er flyttet til innboksen.
+unblock_senders_moved = {senders} avsendere er ikke lenger blokkert. {count} meldinger er flyttet til innboksen.
+unblock_sender_done = {sender} er ikke lenger blokkert.
+unblock_sender_not_blocked = {sender} er ikke blokkert.
+pgp_cm_on = {name} på.
+pgp_cm_off = {name} av.
+pgp_cm_identity = Krypteringsinnstillingene er endret til denne identitetens.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Skriv noe ovenfor og trykk Enter eller velg Søk.
+search_no_account = Legg til en konto først.
+search_no_term = Skriv ord å søke etter, eller velg en dato eller en avmerkingsboks.
+search_running = Søker...
+search_none = Ingen treff for "{term}".
+search_found_one = 1 treff for "{term}".
+search_found_many = {count} treff for "{term}".
+search_bad_date = Skriv datoen som år-måned-dag, for eksempel 2025-12-31, med et valgfritt klokkeslett som 14:30.
+search_bad_range = Slutten på datoområdet ligger før starten.
+search_none_any = Ingen meldinger samsvarer.
+search_found_one_any = 1 melding funnet.
+search_found_many_any = {count} meldinger funnet.
+search_failed = Søket mislyktes.
+
+# The related messages tab
+related_running = Søker...
+related_none = Ingen relaterte meldinger funnet.
+related_found_one = 1 relatert melding funnet.
+related_found_many = {count} relaterte meldinger funnet.
+related_failed = Kunne ikke søke etter relaterte meldinger.
+
+# Writing and sending
+sending_via = Sender via {sender}...
+send_failed = Sendingen mislyktes. Se loggene for detaljer.
+draft_autosaved = Utkastet er lagret automatisk.
+draft_autosave_failed = Automatisk lagring av utkastet mislyktes. Se loggene for detaljer.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Eksternt innhold lastes nå for meldinger fra {sender}.
+downloading_attachment = Laster ned {filename}...
+downloading_attachments_one = Laster ned 1 vedlegg...
+downloading_attachments_many = Laster ned {count} vedlegg...
+saved_to = Lagret i {folder}
+attachment_download_failed = Nedlasting av vedlegget mislyktes.
+
+# Getting mail onto the screen
+loading_folder = Laster {folder} for {account}...
+messages_in_folder = {count} meldinger i {folder}.
+messages_in_folder_cached = {count} meldinger i {folder} (sist synkroniserte kopi, oppdaterer...)
+no_offline_copy = Ingen frakoblet kopi av {folder} ennå.
+refresh_failed_cached = Kunne ikke oppdatere {folder}: viser sist synkroniserte kopi.
+no_such_folder = Ingen mappe {folder} for denne kontoen.
+load_failed = Kunne ikke laste meldinger. Se loggene for detaljer.
+no_more_to_load = Ingen flere meldinger å laste i denne mappen.
+loading_more = Laster flere meldinger i {folder}...
+more_loaded = {count} flere meldinger lastet.
+no_more_messages = Ingen flere meldinger i denne mappen.
+load_more_failed = Kunne ikke laste flere meldinger: {error}
+loading_unified = Laster samlet {folder}...
+messages_in_unified = {count} meldinger på tvers av kontoer i samlet {folder}.
+messages_in_unified_cached = {count} meldinger i samlet {folder} (sist synkroniserte kopi, oppdaterer...)
+auto_purge_done = Automatisk opprydding fjernet {count} gamle meldinger fra søppelkassen og søppelpost.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Klar.
+opening_message = Åpner meldingen...
+opening_message_already = Åpner meldingen... (lastes allerede)
+could_not_open_message = Kunne ikke åpne meldingen.
+could_not_open_that_message = Kunne ikke åpne den meldingen.
+could_not_load_message = Kunne ikke laste denne meldingen.
+message_still_loading = Den meldingen lastes fortsatt.
+folder_still_loading = Mappen lastes fortsatt -- prøv igjen om et øyeblikk.
+not_in_thread = Denne meldingen er ikke en del av en tråd.
+no_longer_in_thread = Denne meldingen er ikke lenger i tråden.
+thread_position = Melding {position} av {total} i denne tråden.
+thread_finished_one = Tråden er ferdig (1 melding).
+thread_finished_many = Tråden er ferdig ({count} meldinger).
+select_message_first = Velg en melding først.
+conversation_failed = Kunne ikke åpne denne samtalen.
+select_message_for_related = Velg først en melding å se relaterte meldinger for.
+looking_for_related = Leter etter relaterte meldinger...
+no_threading_headers = Denne meldingen har ingen Message-ID eller trådhoder å søke på.
+reply_one_at_a_time = Svar fungerer på én melding om gangen. Velg en enkelt melding.
+select_message_to_reply = Velg først en melding å svare på.
+preparing_reply = Forbereder svar...
+reply_load_failed = Kunne ikke laste den opprinnelige meldingen for svar.
+select_message_to_forward = Velg først en melding å videresende.
+preparing_forward = Forbereder melding for videresending...
+forward_load_failed = Kunne ikke laste meldingen som skal videresendes.
+compose_tab_needed_hint = Den kommandoen krever en fane for å skrive melding. Trykk Ctrl+N for å skrive en melding.
+open_message_first_view = Åpne først en melding, og trykk deretter Ctrl+B for å bytte visning.
+open_message_first_remote = Åpne først en melding, og trykk deretter Ctrl+Shift+I for å laste det eksterne innholdet.
+
+# Acting on messages
+copying_message = Kopierer meldingen...
+copy_failed = Kopieringen mislyktes.
+delete_failed = Slettingen mislyktes.
+already_in_archive = Allerede i Arkiv.
+archiving = Arkiverer...
+archive_failed = Arkiveringen mislyktes.
+action_failed = {action} mislyktes.
+nothing_to_undo = Ingenting å angre.
+private_mode_on = Privat modus er på. ZBox sine kopier av e-posten din på denne datamaskinen er slettet.
+private_mode_off = Privat modus er av. ZBox lagrer igjen kopier av e-posten din.
+undo_failed = Kunne ikke angre {action}.
+
+# Views and folders
+folder_pane_all = Mappepanel: Alle mapper.
+folder_pane_unified = Mappepanel: Samlemapper.
+sorted_ascending = Sortert etter {field}, stigende.
+sorted_descending = Sortert etter {field}, synkende.
+unified_folders_updated = Samlemapper er oppdatert.
+zoom_reset = Skriftstørrelsen for meldinger er tilbakestilt til standard.
+folder_creating = Oppretter mappen "{folder}"...
+folder_created = Mappen "{folder}" er opprettet.
+folder_create_failed = Kunne ikke opprette mappen.
+folder_renaming = Endrer navn på "{folder}" til "{new_name}"...
+folder_renamed = Mappen har fått navnet "{new_name}".
+folder_rename_failed = Kunne ikke endre navn på mappen.
+folder_deleting = Sletter mappen "{folder}"...
+folder_deleted = Mappen er slettet.
+folder_delete_failed = Kunne ikke slette mappen.
+folder_subscribing = Abonnerer på "{folder}"...
+folder_unsubscribing = Avslutter abonnement på "{folder}"...
+folder_subscribed = Abonnement startet.
+folder_unsubscribed = Abonnement avsluttet.
+folder_subscribe_failed = Kunne ikke abonnere på mappen.
+folder_unsubscribe_failed = Kunne ikke avslutte abonnementet på mappen.
+
+# Accounts
+account_not_added = Kontoen ble ikke lagt til.
+account_added = Konto lagt til: {account}
+account_settings_not_saved = Kontoinnstillingene ble ikke lagret.
+account_updated = Konto oppdatert: {account}
+account_not_removed = Kontoen ble ikke fjernet.
+account_removed = Kontoen er fjernet.
+account_removed_with_files = Kontoen er fjernet. {count} lokale filer er slettet.
+default_account_failed = Kunne ikke angi standardkontoen.
+default_account_set = {account} er nå standardkontoen.
+auto_check_not_saved = Innstillingen for automatisk kontroll ble ikke lagret.
+mute_not_saved = Innstillingen for lyd av ble ikke lagret.
+account_muted = Lyden for {account} er slått av.
+account_unmuted = Lyden for {account} er slått på.
+export_done = {count} kontoer og innstillinger ble eksportert til {path}.
+import_done = {count} kontoer ble importert fra {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filtrene ble ikke lagret.
+filters_saved = Filtre lagret for {account}.
+filters_checking = Kontrollerer {folder} mot filtrene dine...
+filters_none_matched = Kjør nå: ingen meldinger i {folder} samsvarte med noen aktivert regel.
+filters_run_failed = Kunne ikke kjøre filtrene.
+filters_moving = Flytter {count} filtrerte meldinger...
+filters_move_failures = Filtre: {count} meldinger kunne ikke flyttes.
+filters_moved = Filtrene flyttet {count} meldinger fra {folder}.
+filters_move_failed = Kunne ikke flytte filtrerte meldinger.
+cache_not_cleared = Hurtigbufferen ble ikke tømt.
+auto_cache_cleanup = Automatisk opprydding av hurtigbuffer: meldinger eldre enn {age}.
+phishing_update_failed = Kunne ikke oppdatere phishing-listen: {error}
+blocklist_update_failed = Kunne ikke oppdatere blokkeringslisten: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Åpne først en melding, og bruk deretter Lagre som.
+saving_message = Lagrer meldingen...
+save_file_failed = Kunne ikke lagre filen.
+save_fetch_failed = Kunne ikke hente meldingen som skulle lagres.
+open_message_first_print = Åpne først en melding, og bruk deretter Skriv ut.
+open_message_first_preview = Åpne først en melding, og bruk deretter Forhåndsvis utskrift.
+refreshing_accounts = Oppdaterer {count} kontoer...
+emptying_trash = Tømmer søppelkassen for {account}...
+trash_already_empty = Søppelkassen var allerede tom.
+trash_emptied = Søppelkassen er tømt: {count} meldinger slettet.
+empty_trash_failed = Kunne ikke tømme søppelkassen.
+emptying_junk = Tømmer søppelpost for {account}...
+junk_already_empty = Søppelpost var allerede tom.
+junk_emptied = Søppelpost er tømt: {count} meldinger slettet.
+junk_emptied_prefix = Søppelpost tømt:
+junk_part_purged = {count} slettet
+junk_part_in_trash = {count} flyttet til søppelkassen, men ikke bekreftet fjernet, sjekk søppelkassen
+junk_part_not_moved = {count} ikke flyttet til søppelkassen, ligger fortsatt i søppelpost
+empty_junk_failed = Kunne ikke tømme søppelpost.
+back_online = Tilkoblet igjen.
+offline_sync_running = Synkroniserer {account} for frakoblet bruk...
+offline_sync_failed = Synkroniseringen for frakoblet bruk mislyktes: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Velg eller åpne en melding først.
+select_or_open_message_ctrl_u = Velg eller åpne først en melding, og trykk deretter Ctrl+U.
+no_sender_address = Denne meldingen har ingen avsenderadresse å legge til.
+contact_added = {contact} er lagt til i adresseboken din.
+contact_already_there = {contact} finnes allerede i adresseboken din.
+privacy_saved = Personverninnstillingene er lagret. Åpne en melding på nytt for å bruke dem.
+message_font_size = Skriftstørrelse for meldinger: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Sletter meldingen permanent
+deleting_many = Sletter {count} meldinger permanent
+trashing_one = Flytter meldingen til søppelkassen
+trashing_many = Flytter {count} meldinger til søppelkassen
+undo_partly_restored = Angret {action}, men {count} kunne ikke gjenopprettes -- de kan ha blitt flyttet, slettet eller utløpt igjen siden.
+moves_report = {action}: flyttet {moved} av {total} meldinger.
+moves_report_failed = Ikke flyttet, ligger fortsatt i den opprinnelige mappen: {count}.
+
+tray_tooltip_one = ZBox — 1 ulest melding
+tray_tooltip_many = ZBox — {count} uleste meldinger
+account_unreachable = {account} kunne ikke nås. Automatiske kontroller for den settes på pause i {minutes} minutter.
+bulk_copy_failed = Kunne ikke kopiere meldinger.
+bulk_copy_failed_status = Kopieringen mislyktes.
+bulk_loading_archive = Meldinger lastes fortsatt -- prøv å arkivere igjen om et øyeblikk.
+bulk_loading_delete = Meldinger lastes fortsatt -- prøv å slette igjen om et øyeblikk.
+bulk_loading_flag = Meldinger lastes fortsatt -- prøv å stjernemerke igjen om et øyeblikk.
+bulk_loading_generic = Meldinger lastes fortsatt -- prøv igjen om et øyeblikk.
+bulk_none = Ingen melding er valgt.
+bulk_none_archive = Ingen melding er valgt for arkivering.
+bulk_none_delete = Ingen melding er valgt for sletting.
+bulk_none_junk = Ingen melding er valgt for merking som søppelpost.
+bulk_none_not_junk = Ingen melding er valgt for merking som ikke søppelpost.
+delete_refused_still = Serveren nektet å slette den; den ligger fortsatt i {folder}.
+delete_refused_trash = Den ligger i søppelkassen, men serveren nektet å slette den permanent.
+delete_resume_failed = {count} meldinger fra en tidligere sletting kunne ikke slettes.
+done_perm_delete_one = Meldingen er slettet permanent.
+done_trash_one = Meldingen er flyttet til søppelkassen.
+filters_applied = Filtre brukt på {count} meldinger i {folder}.
+filters_failed = Kunne ikke kjøre filtrene.
+filters_running = Kjører filtre på {folder}
+flag_failed = Kunne ikke oppdatere stjernemerkingen.
+flag_updated = Stjernemerkingen er oppdatert.
+folder_verb_subscribing = Abonnerer på
+folder_verb_unsubscribing = Avslutter abonnement på
+mark_read_failed = Kunne ikke merke meldinger som lest.
+mark_unread_failed = Kunne ikke merke meldinger som ulest.
+notify_new_mail_body = {count} {noun} for {name}.
+notify_new_mail_title = Ny e-post
+notify_noun_many = nye meldinger
+notify_noun_one = ny melding
+report_done = {verb} {done} av {count} meldinger.
+report_verb_deleted = Slettet
+report_verb_permanent = Permanent slettet
+running_copy_many = Kopierer {count} meldinger
+running_copy_one = Kopierer meldingen
+running_junk_many = Merker {count} meldinger som søppelpost
+running_junk_one = Merker som søppelpost
+running_move_many = Flytter {count} meldinger
+running_move_one = Flytter
+running_not_junk_many = Merker {count} meldinger som ikke søppelpost
+running_not_junk_one = Merker som ikke søppelpost
+running_perm_delete_one = Sletter meldingen permanent...
+running_read_many = Merker {count} meldinger som lest
+running_read_one = Merker som lest
+running_trash_one = Flytter meldingen til søppelkassen...
+running_unread_many = Merker {count} meldinger som ulest
+running_unread_one = Merker som ulest
+settings_saved_no_startup = Innstillingene er lagret. Kunne ikke oppdatere oppstartsoppføringen i Windows.
+settings_saved_status = Innstillingene er lagret.
+spam_blocked_sender = Blokkert avsender
+spam_possible_phishing = Mulig phishing
+undo_running_many = Angrer {action} ({count} meldinger)
+undo_running_one = Angrer {action}
+mark_folder_read_failed = Kunne ikke merke mappen som lest.
+marking_folder_read = Merker mappen som lest...
+upd_ready_at_exit = En oppdatering er allerede lastet ned. Den installeres når du avslutter ZBox.
+upd_checking = Ser etter oppdateringer...
+upd_up_to_date = ZBox er oppdatert.
+upd_available_source = ZBox {version} er tilgjengelig. Denne kopien kjører fra kildekode, så oppdater den med git.
+upd_check_failed = Kunne ikke se etter oppdateringer: {error}
+opening_attachment = Åpner {filename}...
+loading_headers = Laster hoder...
+offline_inbox_only = Bare Innboks og Arkiv lagres for frakoblet bruk.
+offline_sync_done_inbox = {count} meldinger i Innboks og Arkiv er synkronisert for frakoblet bruk.
+working_offline = Arbeider frakoblet: viser sist synkroniserte kopi av Innboks/Sendt/Utkast.
+emptying_trash_all = Tømmer søppelkassen for alle kontoer...
+trash_emptied_all = Søppelkassen tømt i {accounts} kontoer: {count} meldinger slettet.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Fil
+bar_edit = &Rediger
+bar_view = &Visning
+bar_message = &Melding
+bar_compose = &Skriv
+bar_tools = &Verktøy
+bar_help = &Hjelp
+
+# File
+file_new = Ny
+file_new_message = Melding
+file_new_account = E-postkonto...
+file_open_saved_message = Åpne lagret melding...
+file_close = Lukk
+file_save_message_as = Lagre melding som...
+file_get_new_for = Hent nye meldinger for
+file_get_new_all = Alle kontoer
+file_get_new_current = Gjeldende konto
+file_offline = Frakoblet
+file_work_offline = Arbeid frakoblet
+file_sync_now = Synkroniser nå
+file_print = Skriv ut...
+file_print_preview = Forhåndsvis utskrift...
+file_exit = Avslutt
+
+# Edit
+edit_undo = Angre
+edit_select_all = Merk alt
+edit_find_messages = Søk i meldinger...
+
+# Message
+message_reply = Svar
+message_reply_all = Svar alle
+message_forward = Videresend
+message_archive = Arkiver
+message_delete = Slett
+message_delete_permanently = Slett permanent
+message_mark = Merk
+mark_read = Lest
+mark_unread = Ulest
+mark_flagged = Stjernemerket
+mark_junk = Søppelpost
+mark_not_junk = Ikke søppelpost
+message_watch_thread = Overvåk tråd
+message_ignore_thread = Ignorer tråd
+message_open_conversation = Åpne melding i samtale
+message_show_related = Vis relaterte meldinger
+message_add_sender_to_address_book = Legg avsender til i adresseboken
+message_announce_sender = Les opp avsender
+message_announce_copy_sender = Les opp avsender og kopier adresse
+
+# View
+view_folders = Mapper
+folders_all = Alle
+folders_unified = Samlede
+folders_jump_inbox = Hopp til meldingslisten i Innboks
+folders_configure_unified = Konfigurer samlemapper...
+view_sort_by = Sorter etter
+sort_date = Dato
+sort_subject = Emne
+sort_from = Fra
+sort_descending = Synkende (nyeste først)
+sort_ascending = Stigende (eldste først)
+view_threads = Tråder
+threads_all = Alle
+threads_watched = Overvåkede tråder
+threads_ignored = Ignorerte tråder
+threads_expand_all = Utvid alle tråder
+threads_collapse_all = Skjul alle tråder
+view_load_more = Last flere meldinger
+view_toggle_message_view = Bytt mellom tekst- og HTML-visning
+view_show_remote_content = Vis eksternt innhold i denne meldingen
+view_message_zoom = Zoom for melding
+zoom_increase = Øk skriftstørrelsen for meldinger
+zoom_decrease = Reduser skriftstørrelsen for meldinger
+zoom_reset = Tilbakestill skriftstørrelsen for meldinger
+
+# Compose
+compose_send = &Send
+compose_save_draft = &Lagre utkast
+compose_attach = &Legg ved fil...
+compose_fmt_bold = &Fet
+compose_fmt_italic = &Kursiv
+compose_fmt_strike = &Gjennomstreket
+compose_fmt_bullet = &Punktliste
+compose_fmt_number = &Nummerert liste
+compose_fmt_quote = &Sitat
+compose_fmt_code = &Kode
+compose_fmt_heading1 = &Overskrift
+compose_link = &Sett inn lenke...
+compose_formatting = &Formatering her
+compose_spellcheck = &Stavekontroll...
+compose_spellcheck_next = &Neste stavefeil
+compose_spellcheck_add = &Legg ord til i ordlisten
+compose_insert_signature = &Sett inn signatur
+compose_paste_quotation = &Lim inn som sitat
+compose_word_count = &Ordtelling
+compose_preview = &Forhåndsvis...
+compose_diagnostics = &Diagnostikk for skriving...
+compose_edit_signature = &Rediger signatur...
+compose_hotkeys_diagnostic = &Diagnostikk av hurtigtaster
+
+# Tools
+tools_account_settings = Konto- og identitetsinnstillinger...
+tools_mute_account = Slå av lyd for konto
+tools_pause_auto_check = Sett automatisk kontroll på pause
+tools_disable_account = Deaktiver konto
+tools_remove_account = Fjern konto...
+tools_address_book = Adressebok...
+tools_message_filters = Meldingsfiltre...
+tools_import = Importer kontoer og innstillinger...
+tools_export = Eksporter kontoer og innstillinger...
+tools_cache_cleanup = Konfigurasjon av opprydding i hurtigbuffer...
+tools_privacy = Personvern og innholdsblokkering...
+tools_settings = Innstillinger...
+
+# Help
+help_shortcuts = Tastatursnarveier...
+help_about = Om ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Ny konto...
+tree_account_settings = Konto- og identitetsinnstillinger...
+tree_mute_account = Slå av lyd for konto
+tree_pause_auto_check = Sett automatisk kontroll på pause
+tree_enable_account = Aktiver konto
+tree_disable_account = Deaktiver konto
+tree_set_default_account = Angi som standardkonto
+tree_remove_account = Fjern konto...
+tree_refresh = Oppdater
+tree_new_folder = Ny mappe...
+tree_empty_trash = Tøm søppelkasse
+tree_empty_junk = Tøm søppelpost
+tree_rename_folder = Endre mappenavn...
+tree_delete_folder = Slett mappe...
+tree_subscribe_folder = Abonner på mappe
+tree_unsubscribe_folder = Avslutt abonnement på mappe
+
+# The message list menu, opened the same two ways
+list_select_all = Merk alt
+list_reply = Svar
+list_reply_all = Svar alle
+list_forward = Videresend
+list_mark = Merk
+list_archive = Arkiver
+list_delete_to_trash = Slett (flytt til søppelkassen)
+list_delete_permanently = Slett permanent
+list_move_to = Flytt til
+list_copy_to = Kopier til
+
+# The notification area icon
+tray_open = &Åpne ZBox
+tray_unread_one = 1 ulest melding
+tray_unread_many = {count} uleste meldinger
+tray_no_unread = Ingen uleste meldinger
+tray_settings = &Innstillinger...
+tray_quit = &Avslutt ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Fet
+format_italic = &Kursiv
+format_strike = &Gjennomstreket
+format_bullet = &Punktliste
+format_number = &Nummerert liste
+format_quote = &Sitat
+format_code = &Kode
+format_heading1 = &Overskrift
+format_insert_link = &Sett inn lenke...
+format_formatting_here = &Formatering her
+tools_enable_account = Aktiver konto
+edit_undo_action = Angre {action}
+tree_mark_folder_read = Merk mappen som lest
+help_updates = &Oppdateringer
+help_check_updates = &Se etter oppdateringer nå...
+help_update_settings = &Innstillinger for oppdatering
+help_releases_page = &Åpne siden med utgivelser
+message_attachments = Vedlegg
+message_no_attachments = Ingen vedlegg
+message_save_all_attachments = Lagre alle vedlegg
+view_full_headers = Fullstendige hoder
+folders_go_to_tree = Gå til mappelisten
+list_block_sender = Blokker denne avsenderen
+list_unblock_sender = Opphev blokkeringen av denne avsenderen
+sort_received = Mottatt
+sort_star = Stjerne
+sort_order_received = Mottaksrekkefølge
+sort_priority = Prioritet
+sort_recipient = Mottaker
+sort_correspondents = Korrespondenter
+sort_size = Størrelse
+sort_read = Lest
+sort_junk_status = Søppelpost-status
+sort_attachments = Vedlegg
+sort_threaded = Tråd
+sort_unthreaded = Uten tråd
+view_columns = Kolonner
+tools_openpgp_keys = OpenPGP-nøkkelbehandler
+tools_smime_certs = S/MIME-sertifikatbehandler
+compose_pgp_encrypt = &Krypter
+compose_pgp_sign = &Signer digitalt
+compose_pgp_attach_key = &Legg ved min offentlige nøkkel
+
+[dialogs]
+set_theme_restart_confirm = Starte ZBox på nytt for å bruke temaendringen?
+set_ui_theme_label = &Grensesnitttema:
+set_ui_theme_note = Farger for menyer, lister, dialoger og tekstvisningen av meldinger. Følg systemet bruker Windows sin egen lyse eller mørke apptilstand. Midnattsblå, Varm mørk og Myk kontrast er mørke temaer med mildere farger. HTML-meldinger beholder sine egne farger, og Windows Høy kontrast har alltid forrang. Trer i kraft neste gang ZBox starter.
+set_theme_system = Følg systemet
+set_theme_light = Lyst
+set_theme_dark = Mørkt
+set_theme_midnight = Midnattsblå
+set_theme_warm = Varm mørk
+set_theme_soft = Myk kontrast
+set_language_restart_confirm = Starte ZBox på nytt for å bruke språkendringen?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Kontakt Harith
+title_identity = Identitet
+title_show_password = Vis passord
+title_missing_information = Mangler informasjon
+title_unsupported_provider = Leverandøren støttes ikke
+title_test_connection = Test tilkobling
+title_new_contact = Ny kontakt
+title_edit_contact = Rediger kontakt
+title_delete_contact = Slett kontakt
+title_import_contacts = Importer kontakter
+title_export_contacts = Eksporter kontakter
+title_rename_group = Endre navn på gruppe
+title_delete_group = Slett gruppe
+title_send = Send
+title_send_failed = Sendingen mislyktes
+title_attach_file = Legg ved fil
+title_save_draft = Lagre utkast
+title_documentation = ZBox-dokumentasjon
+title_open_link = Åpne lenke
+title_filter_rule = Filterregel
+title_master_password = Hovedpassord
+title_attachment_saved = Vedlegg lagret
+title_attachments_saved = Vedlegg lagret
+title_download_failed = Nedlastingen mislyktes
+title_print = Skriv ut
+title_print_preview = Forhåndsvis utskrift
+title_related_messages = Relaterte meldinger
+title_search = Søk
+title_unlock = Lås opp
+title_unlock_methods = Opplåsingsmetoder
+title_desktop_shortcut = Snarvei på skrivebordet
+title_spell_check = Stavekontroll
+title_plain_text_password = Passord i klartekst funnet
+title_startup_error = Oppstartsfeil i ZBox
+
+identity_email_required = Skriv inn en e-postadresse.
+
+wizard_password_not_shown = Passordet kan ikke vises på dette systemet. Det skrives og lagres fortsatt som vanlig.
+wizard_email_required = Skriv inn en gyldig e-postadresse før du fortsetter.
+wizard_test_needs_server = Skriv inn en innloggings-e-postadresse og en innkommende server før du tester.
+wizard_test_succeeded = Tilkoblingen lyktes. {count} meldinger funnet i Innboks.
+
+contact_email_required = En e-postadresse er påkrevd.
+contact_select_to_edit = Velg en kontakt å redigere.
+contact_select_to_delete = Velg en kontakt å slette.
+contact_delete_confirm = Slette {label} fra adresseboken?
+contacts_import_choose_file = Velg en .vcf- (vCard) eller .csv-fil å importere.
+contacts_imported = {count} kontakter importert.
+contacts_import_empty = Ingen kontakter ble funnet i den filen.
+contacts_none_to_export = Det er ingen kontakter å eksportere.
+contacts_exported = {count} kontakter eksportert til:\n{path}
+group_name_exists = En gruppe med navnet "{name}" finnes allerede.
+group_delete_confirm = Slette gruppen "{name}"? Kontaktene i den slettes ikke.
+
+send_no_account = Legg til en konto før sending, eller velg en i Fra.
+send_no_recipient = Skriv inn minst én mottaker i Til.
+draft_no_account = Legg til en konto før du lagrer et utkast, eller velg en i Fra.
+attached_file = Lagt ved: {name}\n\n{count} filer legges ved når du sender.
+
+documentation_copied = Hele ZBox-dokumentasjonen er kopiert til utklippstavlen.
+
+filter_rule_needs_name = Gi denne regelen et navn.
+filter_rule_needs_condition = Angi minst én betingelse (Fra, Til eller Emne).
+filter_rule_needs_action = Velg minst én handling: merk som lest, stjernemerk eller flytt til en mappe.
+
+master_password_set = Hovedpassordet er angitt. Oppbevar det på et trygt sted: ZBox ber om det én gang på hver nye datamaskin, og det kan ikke gjenopprettes hvis det går tapt.
+master_password_offer = Uten et hovedpassord kan de lagrede kontopassordene bare leses på denne datamaskinen og denne Windows-kontoen. Kopierer du ZBox andre steder, må hver konto logges inn på nytt.\n\nAngi ett nå?
+
+attachment_saved = Vedlegget er lagret i:\n{path}
+attachments_saved = {count} vedlegg er lagret i:\n{path}
+
+shortcut_created_settings = Snarveien er opprettet:\n{path}\n\nDen starter ZBox fra:\n{base}
+
+spellcheck_no_dictionary = Stavelisten mangler, så stavekontroll er ikke tilgjengelig i denne kopien av ZBox.
+spellcheck_none_found = Ingen stavefeil funnet.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Sette opp en passnøkkel på denne datamaskinen og glemme den som er lagret fra en annen datamaskin?\n\nWindows ber deg bekrefte med Hello. Den gamle passnøkkelen som er igjen på den andre datamaskinen, berøres ikke der og fortsetter å fungere hvis du tar denne mappen tilbake dit, men den må settes opp på nytt.
+unlock_replace_passkey_many = Sette opp en passnøkkel på denne datamaskinen og glemme de {count} som er lagret fra andre datamaskiner?\n\nWindows ber deg bekrefte med Hello. De gamle passnøklene som er igjen på den andre datamaskinen, berøres ikke der og fortsetter å fungere hvis du tar denne mappen tilbake dit, men de må settes opp på nytt.
+unlock_method_works = Den metoden fungerer.
+
+plain_text_password_found = data\config\himalaya.toml inneholder fortsatt et passord i klartekst (auth.raw) fra et eldre kontooppsett.\n\nFjern den kontoen og legg den til igjen, eller slett data\config\himalaya.toml, slik at den opprettes på nytt med det sikre lageret for legitimasjon.
+
+# main_frame's titles.
+title_account_list_unavailable = Kontolisten er ikke tilgjengelig
+title_open_message = Åpne melding
+title_run_filters = Kjør filtre
+title_clear_cache = Tøm hurtigbufferen for frakoblede meldinger
+title_remove_account = Fjern konto
+title_new_folder = Ny mappe
+title_rename_folder = Endre mappenavn
+title_delete_folder = Slett mappe
+title_subscribe = Abonner
+title_unsubscribe = Avslutt abonnement
+title_open_saved_message = Åpne lagret melding
+title_save_message_as = Lagre melding som
+title_empty_trash = Tøm søppelkasse
+title_empty_junk = Tøm søppelpost
+title_synchronize_offline = Synkroniser for frakoblet bruk
+title_export_accounts = Eksporter kontoer og innstillinger
+title_import_accounts = Importer kontoer og innstillinger
+title_show_related = Vis relaterte meldinger
+title_reply = Svar
+title_forward = Videresend
+title_undo = Angre
+title_delete_permanently = Slett permanent
+title_delete = Slett
+title_copy_to = Kopier til
+title_archive = Arkiver
+title_accounts_locked = Kontoer låst
+
+select_account_first = Velg først en konto i treet.
+select_account_or_folder = Velg først en konto eller mappe.
+filters_left_behind = {count} meldinger samsvarte med et filter, men ligger fortsatt i {folder}.
+cache_clear_confirm = Tømme hurtigbufferen for frakoblede meldinger for alle kontoer?\n\nDette sletter bare ZBox sine lokale kopier. Ingenting fjernes fra noen e-postserver, og meldinger lastes ned igjen etter hvert som du trenger dem.
+account_remove_confirm = Fjerne {name} ({address})?\n\nE-post på serveren slettes ikke.\nKopiene som er lastet ned til denne datamaskinen, slettes.\nDet lagrede passordet slettes.
+folder_delete_confirm = Slette mappen "{folder}" og alt i den for {address} permanent?\n\nDette kan ikke angres.
+empty_trash_confirm = Slette alle meldinger i søppelkassen for {address} permanent?\n\nDette kan ikke angres.
+empty_junk_confirm = Slette alle meldinger i søppelpost for {address} permanent?\n\nDette kan ikke angres.
+sync_select_account = Velg en konto (ikke en samlemappe) som skal synkroniseres for frakoblet bruk.
+accounts_imported = {count} kontoer importert:\n\n{names}\n\nPassord eksporteres aldri, og det krypterte passordlageret er spesifikt for denne Windows-brukerkontoen, så hver importerte konto må få passordet sitt angitt én gang via Verktøy > Konto- og identitetsinnstillinger før den kan koble til.
+accounts_import_none = Ingen kontoer ble funnet i denne filen. Innstillinger ble likevel importert, hvis filen hadde noen.
+delete_permanently_confirm_one = Slette denne meldingen permanent? Dette hopper over søppelkassen og kan ikke angres.
+accounts_locked = De lagrede kontopassordene ble skrevet på en annen datamaskin, så de kan ikke leses her.\n\nHver konto må logges inn på e-postserveren sin på nytt. For å unngå det neste gang kan du angi et hovedpassord under Innstillinger, App- og datasikkerhet på datamaskinen der kontoene allerede fungerer.
+master_password_remove_confirm = Fjerne hovedpassordet? De lagrede kontopassordene kan da bare leses på denne datamaskinen og denne Windows-kontoen. Kopierer du ZBox andre steder etterpå, må hver konto logges inn på nytt.\n\nFjerne det nå?
+shortcut_offer = Legge en ZBox-snarvei på skrivebordet?\n\nDen starter denne ZBox-mappen:\n{path}\n\nEn snarvei husker nøyaktig den plasseringen. Hvis du flytter ZBox-mappen senere, åpner du Innstillinger, Systemfelt og vindu og velger Opprett snarvei på skrivebordet på nytt for å peke den til det nye stedet.
+shortcut_created = Snarveien er opprettet:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Visningsnavn
+form_email_address = E-postadresse
+form_your_name = Navnet ditt
+form_login_email = Innloggings-e-postadresse
+form_password = Passord
+srv_imap_host = Innkommende server (IMAP)
+srv_imap_port = Innkommende port
+srv_imap_encryption = Innkommende kryptering
+srv_smtp_host = Utgående server (SMTP)
+srv_smtp_port = Utgående port
+srv_smtp_encryption = Utgående kryptering
+
+acct_login_email_label = Innloggings-e-postadresse (brukes til å logge inn)
+acct_new_password_label = Nytt passord (la stå tomt for å beholde det nåværende)
+acct_new_password_name = Nytt passord
+acct_identity_email_label = E-postadresse (brukes til å sende og motta)
+acct_identities_label = Flere identiteter (aliaser)
+acct_identities_name = Flere identiteter
+acct_add_identity = &Legg til identitet...
+acct_edit_identity = &Rediger identitet...
+acct_remove_identity = &Fjern identitet
+acct_signature = Signatur
+acct_edit_signature = &Rediger signatur...
+acct_junk_folder = Søppelpostmappe
+acct_account_status = Kontostatus
+acct_disable_account = Deaktiver denne kontoen
+acct_default_account = Standardkonto
+acct_set_default = Angi som standardkonto
+acct_notifications = Varsler om ny e-post
+acct_mute_notifications = Slå av lyd for varsler for denne kontoen
+acct_server_settings = Serverinnstillinger
+
+wiz_before_you_start = Før du begynner
+wiz_notice_name = Viktig merknad
+wiz_google_instructions = &Åpne veiledning for Google-apppassord
+wiz_intro = Navnet og e-postadressen din
+wiz_login_same = Innloggings-e-postadressen er den samme som e-postadressen ovenfor
+wiz_show_password = &Vis passord
+wiz_preset_applied = Forhåndsinnstilling brukt for {name}.
+wiz_summary_name = Kontosammendrag
+wiz_review = Se gjennom, og klikk deretter Fullfør for å lagre denne kontoen.
+wiz_test_connection = &Test tilkobling
+wiz_testing = Tester tilkoblingen...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Slå på feilsøkingslogging lagret i: data\logs)
+set_language_label = &Grensesnittspråk:
+set_language_label_only_english = &Grensesnittspråk: (kun engelsk)
+set_headers_checkbox = &Vis meldingshoder over en åpen melding
+set_zoom_label = Skrifttype og zoom for meldinger:
+set_font_override = &Overstyr standard skriftstørrelse for meldinger
+set_font_size_name = Skriftstørrelse for meldinger (punkter)
+set_reading_font_name = Leseskrifttype
+set_reading_font_label = Leseskrifttype (tom for standard):
+set_view_label = Visning av meldingstekst når en melding åpnes:
+set_view_text = Tekst
+set_view_html = HTML (gjengitt)
+set_engine_label = Gjengivelsesmotor for HTML:
+set_engine_edge = Edge / WebView2 (moderne gjengivelse)
+set_engine_ie = Eldre MSHTML (best støtte for skjermlesere)
+set_runtime_label = WebView2-kjøretid:
+set_runtime_auto = Automatisk — bruk den medfølgende kjøretiden hvis den finnes (anbefalt)
+set_runtime_fixed = Kun medfølgende fast versjon
+set_runtime_evergreen = Systemomfattende kjøretid (oppdateres av Windows)
+set_sr_box = Styring av skjermleservarsler
+set_silence_label = Stillhetsperiode for skjermleser i HTML:
+set_silence_name = Stillhetsperiode for skjermleser i HTML i millisekunder
+set_focus_delay_label = Fokusforsinkelse for WebView-tilgjengelighet:
+set_focus_delay_name = Fokusforsinkelse for WebView-tilgjengelighet, nivå 1 til 10
+set_announce_label = Varighet for opplesing av varsler:
+set_announce_name = Varighet for opplesing av varsler i millisekunder
+set_announce_actions = &Les opp varsler om handlinger, ny e-post og merknader
+set_attachment_dir_label = Mappe for lagrede vedlegg:
+set_attachment_dir_name = Mappe for lagrede vedlegg
+set_browse = &Bla gjennom…
+set_autosave_label = Intervall for automatisk lagring av utkast:
+set_autosave_name = Intervall for automatisk lagring av utkast i sekunder
+set_auto_purge_label = Slett automatisk gammel søppelkasse og søppelpost:
+set_auto_purge_name = Slett automatisk søppelkasse og søppelpost etter så mange dager
+set_bare_keys = &Slå på enkelttastsnarveiene S (stjernemerk), A (arkiver), J (merk som søppelpost)/Shift+J (merk som ikke søppelpost), W (overvåk tråd), K (ignorer tråd), M (flytt til)/Shift+M (flytt etter mappenavn) og C (kopier til) i meldingslisten
+set_sound_label = Lyd og varsler:
+set_sounds_enabled = &Spill av varsellyder
+set_desktop_notifications = &Vis skrivebordsvarsler for ny e-post
+set_theme_label = Endre lydtema:
+set_theme_label_only_default = Endre lydtema: (kun standardtema)
+set_security_box = App- og datasikkerhet
+set_lock_on_quit = &Lås ZBox når det avsluttes helt
+set_private_mode = &Privat modus: ikke lagre e-post på denne datamaskinen eller stasjonen
+set_unlock_methods_button = &Opplåsingsmetoder…
+set_master_password_button = &Hovedpassord…
+set_tray_label = Systemfelt og vindu:
+set_minimize_to_tray = &Minimer til systemfeltet
+set_close_to_tray = &Lukk til systemfeltet
+set_stay_maximized = &Hold alltid ZBox maksimert
+set_run_at_startup = &Kjør ZBox når Windows starter
+set_desktop_shortcut_button = &Opprett snarvei på skrivebordet
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Feilsøkingslogging hjelper med å diagnostisere problemer hvis noe går galt. Når den slås av, skrives det ikke nye oppføringer, men eksisterende loggfiler slettes ikke. Trer i kraft neste gang ZBox starter.
+set_language_note = Trer i kraft neste gang ZBox starter. Språkfiler er vanlige tekstfiler i ZBox sin lang-mappe ved siden av mappen sounds. For å legge til ett kopierer du mappen en, endrer navn på kopien og .lang-filen i den til språkkoden din og oversetter teksten til høyre for hvert likhetstegn. Alt som ikke er oversatt ennå, leses opp på engelsk i stedet for å være stille, så en delvis ferdig fil er trygg å bruke.
+set_headers_note = Fra, Til, Kopi, Dato og Emne, vist over meldingsteksten i både tekst- og HTML-visning. Uten dem er det ingen måte å se hvem som har sendt en melding inne fra den uten å lukke fanen og gå tilbake til listen. Fokus havner fortsatt i meldingsteksten; hodeblokken er ett trykk på Shift+Tab unna. Trer i kraft neste gang en melding åpnes.
+set_zoom_note = Gjør den åpne meldingens egen tekst større eller mindre, uavhengig av resten av ZBox og av Windows sin egen skjermskalering. Gjelder for både tekst- og HTML-visningen. "Leseskrifttype" tvinger om ønskelig en bestemt skrifttype (f.eks. Consolas, OpenDyslexic) for meldingsteksten; la den stå tom for å beholde den vanlige skrifttypen. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 i Visning-menyen øker, reduserer eller tilbakestiller bare skriftstørrelsen uten å åpne denne dialogen, og gjelder umiddelbart for alle åpne meldinger. Endringer som gjøres her, gjelder også umiddelbart når du klikker OK.
+set_view_note = HTML er standard. Det viser meldingen slik den ble sendt, og leses av NVDA og JAWS: når en HTML-side åpnes, demper ZBox nettleserens egen opplesing, plasserer lesemarkøren på første linje i meldingen og lar ZBox sine egne snarveier fortsette å virke inne på siden, inkludert F6 for å flytte fokus ut av den. Tekst viser den samme meldingen som vanlig, uformatert tekst i et vanlig redigeringsfelt -- ingen bilder, ingen layout og ingenting som avhenger av at en nettlesermotor er installert. Trykk Ctrl+B i en åpen melding for å bytte begge veier.
+set_engine_note = Edge gjengir moderne CSS, men kjører siden i en egen prosess og gir bare innholdet sitt til en skjermleser gjennom et grensesnitt som wxPython ikke kan nå -- så meldingen kan åpnes uten noe lesbart i. Eldre MSHTML er motoren som Outlook Express og Windows Mail brukte: den kjører i samme prosess og publiserer et vanlig dokumenttre, så NVDA og JAWS leser den i lesemodus som en hvilken som helst nettside. Trer i kraft neste gang en melding åpnes.
+set_runtime_note = Den systemomfattende kjøretiden vedlikeholdes av Windows Update, så motoren som leser e-posten din, kan endre seg uten varsel — og slik kan en velfungerende HTML-meldingsvisning slutte å virke på en datamaskin der ingenting ved ZBox er endret. En kopi som følger med i mappen deps, låser den nøyaktige versjonen ZBox ble testet mot. Kjør tools\get_webview2.bat for å installere en. Hvis ingen medfølgende kopi finnes, bruker ZBox den systemomfattende kjøretiden uansett, så det starter alltid. Trer i kraft neste gang ZBox starter.
+set_sr_intro = Hvor mye ZBox lar skjermleseren din si mens en melding åpnes, og hvor lenge ZBox sine egne opplesninger av varsler blir stående.
+set_silence_note = Når en HTML-melding åpnes, kan ZBox holde et syntetisk Ctrl-trykk i opptil 2 sekunder for å dempe skjermleserens nettleseropplesing. Meldingens emne brukes allerede som sidetittel, noe som hindrer at base64-adressen leses opp, men leseren opplyser fortsatt kontrollen og dokumenttypen over starten av meldingen, så dette er på som standard. Velg Av for å slå det av, eller en lengre tid hvis det fortsatt slipper gjennom prat.
+set_focus_delay_note = Når en HTML-melding er ferdig lastet, venter ZBox så lenge før den faktisk får fokus. At WebView2 melder at en side er lastet og at Windows er ferdig med sidens tilgjengelighetstre, er ikke samme øyeblikk; å fokusere for tidlig gjør at NVDA/JAWS opplyser en generell "Webinnholdsside" i stedet for meldingen, eller melder meldingen utilgjengelig en stund etter åpning. Valgene går fra 0,1 sekunder til 1 sekund. Velg en lengre tid hvis du fortsatt hører dette, og en kortere når åpningen føles stabil, for raskere åpning.
+set_announce_note = Ctrl+U og Ctrl+Shift+U rapporterer avsenderen i en liten dialog som lukker seg selv, fordi statuslinjen bare leses opp hvis skjermleseren din har statuslinjerapportering slått på. Dette er hvor lenge den dialogen blir stående. Still den inn etter talehastigheten din: for kort, og den lukkes midt i en setning, noe som ødelegger poenget. Hvilken som helst tast lukker den tidlig; piltastene holder den åpen slik at du kan lese på nytt. Venter på en tast holder den åpen til du trykker på en.
+set_attachment_dir_note = Hvor "Lagre alle" skriver vedlegg når en melding har mer enn ett. Opprettes automatisk hvis den ikke finnes. En melding med ett enkelt vedlegg spør fortsatt hvor det skal lagres, som før. La stå tom for standard:\n{path}
+set_autosave_note = Hvor ofte en åpen fane for å skrive melding lagrer seg selv i Utkast mens du skriver. Lagre utkast (Ctrl+S) lagrer fortsatt på forespørsel i begge tilfeller, og når du lukker en fane med ulagret tekst, tilbys det alltid å lagre den. Av slår av automatisk lagring. Under 15 sekunder tilbys ikke -- det ville vært en serverrunde som konkurrerer med skrivingen din.
+set_auto_purge_note = Fjerner meldinger permanent fra søppelkassen og søppelpost når de har ligget der så mange dager -- den samme permanente slettingen som Tøm søppelkasse og Tøm søppelpost utfører på forespørsel, kjørt automatisk én gang om dagen mens ZBox er åpen. På som standard ved 30 dager. Av slår det av. Dette kan ikke angres når en melding er fjernet.
+set_bare_keys_note = Når det er på, bytter et trykk på S, A, J, W eller K alene i meldingslisten stjernemerkingen, arkiverer, merker de valgte meldingene som søppelpost (Shift+J merker dem som ikke søppelpost) eller overvåker/ignorerer tråden markeringen er en del av, umiddelbart -- Arkiver og Merk som søppelpost har ingen bekreftelse og ingen angre. Hvis du slår det av, går S, A, J, W og K tilbake til vanlig førstebokstavsnavigasjon i listen. Ctrl+S og Ctrl+Shift+A fungerer i begge tilfeller. Trer i kraft umiddelbart.
+set_sounds_note = Korte toner for fremdrift, nye meldinger, sendte, besvarte eller videresendte handlinger, slettinger og søkeresultater. Av slår av alle lyder i appen; skjermleser- og statuslinjevarsler påvirkes ikke i noen av tilfellene.
+set_desktop_notifications_note = Et Windows-varsel for hver runde med ny e-post, atskilt fra lyden ovenfor. Av slår det av for alle kontoer; en enkelt konto kan også få lyden slått av for seg i Konto- og identitetsinnstillinger.
+set_theme_note = Egendefinerte temaer er mapper som plasseres i ZBox sin sounds-mappe, hver med sine egne progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav og none_found.wav. En temafil som mangler, erstattes av standardlyden.
+set_theme_note_only_default = Egendefinerte temaer er mapper som plasseres i ZBox sin sounds-mappe, hver med sine egne progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav og none_found.wav. En temafil som mangler, erstattes av standardlyden. Bare "default" er tilgjengelig til du legger til en annen temamappe.
+set_lock_note = Når ZBox starter, ber det deretter om en av opplåsingsmetodene dine før noen konto åpnes. Hvilken som helst av dem er nok: en passnøkkel, en sikkerhetsnøkkel eller hovedpassordet. Å lukke til systemfeltet er ikke en avslutning og låser ikke på nytt; Fil > Avslutt og systemfeltikonets Avslutt gjør det. Hvis ingenting er registrert og ingen hovedpassord er angitt, hoppes låsen over i stedet for å låse deg ute fra din egen e-post.
+set_security_note = Hovedpassordet er det eneste av de tre som krypterer noe: det er det som lar denne mappen åpne de lagrede kontopassordene på en annen datamaskin. En passnøkkel eller sikkerhetsnøkkel låser opp appen på akkurat denne. Ingen av dem erstatter hovedpassordet på en datamaskin der ZBox ikke har vært brukt før.
+set_private_mode_note = Meldinger leses fra serveren og holdes bare i minnet. Ingen frakoblede kopier, lagrede meldinger eller feilsøkingslogger lagres, og åpnede vedlegg og nettleserdata fra HTML-e-post slettes når ZBox lukkes. Lukking avslutter også alle programmer ZBox har startet, inkludert de som viser et vedlegg, tømmer utklippstavlen og slutter å stole på denne datamaskinen med mindre privat modus ble slått på fra den. Windows lagrer fortsatt noen oppføringer som ingen program kan fjerne, for eksempel listen over USB-stasjoner, vekselfilen samt antivirus- og nettverkslogger.
+title_private_mode = Privat modus
+private_mode_need_master = Privat modus krever et hovedpassord, fordi bare hovedpassordet åpner kontoene dine på en datamaskin som ikke er din. Angi ett med knappen Hovedpassord, og slå deretter på privat modus.
+private_mode_enter_master = Skriv inn hovedpassordet for å slå på privat modus.
+private_mode_confirm = Privat modus lagrer ingen kopier av e-posten din på denne datamaskinen eller på stasjonen ZBox kjører fra. Når det slås på, slettes ZBox sine frakoblede kopier, lagrede meldinger, åpnede vedlegg, nettleserdata fra HTML-e-post og feilsøkingsloggene. Ingenting på e-postserverne dine slettes, og kontoene, kontaktene og innstillingene dine beholdes. Slå på privat modus?
+set_minimize_note = Når ZBox minimeres, skjules oppgavelinjeknappen, og det fortsetter å kjøre bak ikonet i systemfeltet. Venstreklikk på systemfeltikonet (eller trykk Enter/Mellomrom når det har tastaturfokus) for å få vinduet tilbake.
+set_close_note = Vinduets Lukk-knapp, Alt+F4 og Ctrl+W på fanen E-post skjuler ZBox i systemfeltet i stedet for å avslutte. Fil > Avslutt (Ctrl+Shift+Q) og systemfeltikonets eget Avslutt avslutter alltid ZBox helt i begge tilfeller, så det alltid finnes en tastaturvei for å avslutte uten å røre systemfeltet.
+set_stay_maximized_note = ZBox starter maksimert og settes tilbake til maksimert hvis du opphever maksimeringen. Menylinjen, tittellinjen og vindusrammen er upåvirket -- dette er ikke en kantløs fullskjermmodus, så alle menysnarveier med Alt-tasten fortsetter å virke.
+set_run_at_startup_note = Starter ZBox automatisk når du logger på Windows, åpnet rett i systemfeltet i stedet for å vise vinduet sitt. Trer i kraft umiddelbart, ikke først ved neste oppstart.
+set_desktop_shortcut_note = Legger en ZBox-snarvei på skrivebordet og erstatter en som allerede ligger der. En snarvei lagrer den nøyaktige plasseringen til denne ZBox-mappen, så hvis du flytter eller kopierer ZBox et annet sted, trykker du på dette igjen på den nye kopien for å peke skrivebordssnarveien dit. Trer i kraft umiddelbart og venter ikke på OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Navn
+ab_phone = Telefon
+ab_notes = Notater
+ab_heading = Adressebok
+ab_contacts = Kontakter
+ab_new = &Ny...
+ab_edit = &Rediger...
+ab_delete = &Slett
+ab_import = &Importer...
+ab_export = &Eksporter...
+ab_groups_label = Grupper (e-postlister)
+ab_groups_name = Grupper
+ab_new_group = &Ny gruppe...
+ab_rename_group = &Endre navn på gruppe...
+ab_delete_group = &Slett gruppe
+ab_manage_members = &Administrer medlemmer...
+ab_all_contacts = Alle kontakter
+ab_add_member = Legg til >>
+ab_remove_member = << Fjern
+ab_members_of = Medlemmer av {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Ikke i ordlisten:
+sp_not_in_dictionary_name = Ikke i ordlisten
+sp_in_this_line_label = På denne linjen:
+sp_in_this_line_name = På denne linjen
+sp_suggestions_label = &Forslag:
+sp_suggestions_name = Forslag
+sp_replace_with_label = &Erstatt med:
+sp_replace_with_name = Erstatt med
+sp_replace = &Erstatt
+sp_replace_all = &Erstatt alle
+sp_ignore = &Ignorer
+sp_ignore_all = &Ignorer alle
+sp_add_to_dictionary = &Legg til i ordlisten
+btn_close = &Lukk
+
+# Privacy and Content Blocking.
+priv_remote_label = Eksternt innhold i meldinger:
+priv_block_remote = &Blokker eksternt innhold til jeg ber om det (anbefalt)
+priv_blocklist_label = Blokkeringsliste for annonser og sporere:
+priv_block_known = &Blokker kjente annonse- og sporerdomener
+priv_update_daily = &Oppdater listen daglig i bakgrunnen
+priv_update_now = &Oppdater nå
+priv_junk_label = Regler for søppelpost:
+priv_check_inbox = &Kontroller ny e-post i Innboks mot blokkerte avsendere og kjente phishing-lenker
+priv_move_blocked = &Flytt automatisk e-post fra blokkerte avsendere til søppelpost
+priv_update_phishing = &Oppdater phishing-listen nå
+priv_blocked_label = Blokkerte avsendere:
+priv_blocked_name = Blokkerte avsendere
+priv_remove_blocked = &Fjern blokkert avsender
+priv_never_junk_label = Avsendere som aldri behandles som søppelpost:
+priv_never_junk_name = Avsendere som aldri behandles som søppelpost
+priv_remove_never_junk = &Fjern avsender som aldri er søppelpost
+priv_allowed_label = Avsendere som får laste eksternt innhold:
+priv_allowed_name = Tillatte avsendere
+priv_remove_selected = &Fjern valgt avsender
+
+# Message Filters.
+filt_rule_name = Regelnavn
+filt_enabled = &Aktivert
+filt_match_label = Samsvar:
+filt_match_all = &Samsvar med alle av følgende (OG)
+filt_match_any = &Samsvar med en av følgende (ELLER)
+filt_conditions_label = Betingelser (la en verdi stå tom for å hoppe over den):
+filt_condition_field = Felt for betingelse {number}
+filt_condition_contains = Betingelse {number} inneholder
+filt_actions_label = Handlinger:
+filt_mark_read = &Merk som lest
+filt_flag = &Stjernemerk meldingen
+filt_move_label = Flytt til mappe:
+filt_move_name = Flytt til mappe
+filt_rules_name = Filterregler
+filt_new = &Ny regel...
+filt_edit = &Rediger regel...
+filt_delete = &Slett regel
+filt_up = &Flytt opp
+filt_down = &Flytt ned
+filt_run_label = Kjør nå på mappe:
+filt_run_name = Kjør nå-mappe
+filt_run_now = &Kjør nå
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Lås opp med passnøkkel (Windows Hello)
+unl_security_key = &Lås opp med sikkerhetsnøkkel
+unl_master_password_label = &Hovedpassord:
+unl_master_password_name = Hovedpassord
+unl_unlock = &Lås opp
+unl_exit = &Avslutt ZBox
+unl_methods_label = &Registrerte metoder:
+unl_methods_name = Registrerte opplåsingsmetoder
+unl_add_passkey = &Legg til passnøkkel…
+unl_add_key = &Legg til sikkerhetsnøkkel…
+unl_reassign = &Tilordne passnøkkelen til denne datamaskinen på nytt…
+unl_test = &Test…
+unl_remove = &Fjern
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Fra
+comp_to = Til
+comp_cc = Kopi
+comp_bcc = Blindkopi
+comp_subject = Emne
+comp_attach_button = Legg ved fil...
+comp_sending = Sender...
+comp_report_label = &Rapport:
+comp_report_name = Rapport
+comp_refresh = &Oppdater
+comp_copy = &Kopier
+comp_preview_read = Slik mottakeren leser den
+comp_preview_source = HTML-koden som sendes
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Meldingstekst
+mv_blocked_notice = Merknad om blokkert innhold
+mv_show_remote = &Vis eksternt innhold
+mv_always_allow = &Tillat alltid denne avsenderen
+mv_message_headers = Meldingshoder
+mv_attachments = Vedlegg
+mv_attachments_count = Vedlegg ({count})
+mv_save_attachment = Lagre: {filename}
+mv_save_all = Lagre alle
+mv_html_view = HTML-visning av melding
+mv_saved_message = Lagret melding
+mv_show_remote_tip = Last denne meldingen på nytt med eksterne bilder og stiler. Kjente sporere forblir blokkert.
+mv_always_allow_tip = Last eksternt innhold i alle meldinger fra {sender}.
+
+# The search tab.
+srch_account = Konto
+srch_folder = Mappe
+srch_for = Søk etter
+srch_look_in = Søk i
+srch_in_all = Alle
+srch_in_subject = Emne
+srch_in_from = Fra
+srch_in_to = Til
+srch_in_body = Meldingstekst
+srch_date = Dato
+srch_date_any = Når som helst
+srch_date_today = I dag
+srch_date_yesterday = I går
+srch_date_week = Siste 7 dager
+srch_date_month = Siste 30 dager
+srch_date_year = I år
+srch_date_custom = Egendefinert område
+srch_from_date = Fra dato (år-måned-dag, valgfritt klokkeslett)
+srch_to_date = Til dato (år-måned-dag, valgfritt klokkeslett)
+srch_unread = Bare uleste
+srch_flagged = Bare stjernemerkede
+srch_attachment = Har vedlegg
+
+# The signature editor.
+sig_editors = Signaturredigeringer
+sig_formatted = Signatur, formatert
+sig_source = Signatur, HTML-kilde
+sig_plain_label = Alternativ i ren tekst (sendes sammen med HTML)
+sig_plain_name = Alternativ i ren tekst
+
+# About ZBox.
+about_text_name = Tekst om ZBox
+about_view_license = &Vis lisens...
+about_google = &Google-apppassord...
+about_support = &Støtt ZBox -- utvikling og vedlikehold av én person
+about_repos = &Harith sine app-repositorier på GitHub
+about_contact = &Kontakt Harith
+btn_close_plain = Lukk
+btn_cancel_plain = Avbryt
+
+# The license window.
+eula_heading = ZBox-lisens
+eula_text_name = Tekst for ZBox-lisensen
+eula_third_party = Lisenssider for tredjepartskomponenter:
+eula_agree = &Jeg godtar vilkårene ovenfor
+eula_agree_name = Jeg har lest og godtar vilkårene i ZBox-lisensen
+eula_disagree = &Jeg godtar ikke
+eula_next = &Neste
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Tekst for ZBox-dokumentasjonen
+doc_copy = Kopier til utklippstavlen
+shortcuts_heading = Tastatursnarveier
+shortcuts_text_name = Tekst om tastatursnarveier
+
+# The main window's own panes.
+mf_toolbar = Hovedverktøylinje
+mf_tabs = ZBox-faner
+tree_heading = Kontoer og mapper
+tree_name = Konto- og mappetre
+envlist_heading = Meldinger
+envlist_name = Meldingsliste
+rdr_heading = Melding
+rdr_name = Meldingsleser
+conv_heading_one = Samtale: 1 melding
+conv_heading_many = Samtale: {count} meldinger
+
+# A run of several messages, and the cache dialog.
+bulk_progress = {completed} av {total} ferdig.
+bulk_cancelling = Avbryter -- fullfører gjeldende melding...
+cache_clear_now = Tøm hurtigbufferen for frakoblede meldinger nå... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, beskyttet
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Visningsnavn er valgfritt -- la det stå tomt for å sende under kontoens eget navn.
+acct_note_identity = E-postadressen kan avvike fra innloggings-e-postadressen hvis leverandøren din har et eget domene knyttet til denne postboksen. E-post sendes og mottas under adressen ovenfor, mens innloggingen fortsatt bruker innloggings-e-postadressen. La passordfeltet stå tomt for å beholde passordet som allerede er lagret for denne kontoen -- skriv for eksempel inn det nye her etter å ha byttet et Gmail-apppassord; ellers la det stå tomt.
+acct_note_identities = Andre adresser denne kontoen kan sende og svare som. Når du svarer på en melding som er sendt til en av disse, blir Fra den adressen i stedet for den ovenfor.
+acct_note_signature = Legges til i hver nye melding, svar og videresending som sendes fra denne kontoen, under en "-- "-linje. La stå tom for ingen. Rediger signatur åpner den formaterte redigeringen, der fet skrift, lister og lenker er tilgjengelige; boksen ovenfor inneholder da ren-tekst-versjonen som sendes sammen med den.
+acct_note_junk = Hvilken ekte mappe Merk som søppelpost flytter meldinger til. "{automatic}" bruker den samme leverandørbevisste gjetningen som Arkiver og søppelkasse allerede bruker; angi dette bare hvis den gjetningen er feil eller søppelpostmappen din har et egendefinert navn.
+acct_note_disable = En deaktivert konto kontaktes aldri -- ingen IDLE, ingen periodisk oppdatering, ingenting -- før den aktiveres igjen. Den vises fortsatt i treet, merket (deaktivert), og den allerede nedlastede e-posten forblir tilgjengelig frakoblet. Samme bryter som Kontoer > Deaktiver konto eller kontoens egen hurtigmeny; dette er bare et annet sted å nå den.
+acct_note_default = Denne kontoens mapper vises først i treet, og en ny melding sendes som standard fra den med mindre det endres manuelt i skrivevinduet. Påvirker ikke hvilken adresse et svar eller en videresending bruker -- det følger allerede meldingen som besvares (se Flere identiteter ovenfor). Det er alltid nøyaktig én standardkonto, så hvis du fjerner avmerkingen på gjeldende standardkonto uten å merke en annen, forblir den uendret -- merk i stedet av i boksen til en annen konto for å gi standarden videre til den.
+acct_note_mute = &Lyd av blokkerer denne kontoens lyd for ny e-post, opplest varsel og Windows-varsel, uansett hvordan de ellers er satt opp. Det påvirker ikke andre kontoer, og det er fortsatt underlagt hovedbryterne i Innstillinger > Lyd og varsler (lyder og skrivebordsvarsler generelt).
+wiz_note_app_password = Hvis du allerede har opprettet et apppassord for ZBox, trykker du Neste for å fortsette.
+wiz_note_login = Påloggingsinformasjon.\nHvis innloggings-e-postadressen din er en annen enn adressen ovenfor, for eksempel hvis leverandørkontoen din er login@example.net, men du vil sende og motta som you@example.org, skriver du inn innloggings-e-postadressen her. Du kan angi den egendefinerte avsenderadressen etterpå i Konto- og identitetsinnstillinger.
+wiz_note_servers = Serverinnstillinger, forhåndsutfylt der domenet gjenkjennes. Rediger alt som må være annerledes.
+wiz_preset_none = Ingen forhåndsinnstilling funnet for dette domenet. Skriv inn leverandørens serverinnstillinger manuelt; leverandørens hjelpesider viser dem.
+ab_note_groups = Skriv navnet på en gruppe i feltet Til, Kopi eller Blindkopi i et skrivevindu for å fylle ut alle medlemmene på én gang.
+cache_note_intro = Disse fjerner bare ZBox sine lokale kopier. Ingenting slettes fra noen e-postserver, og en fjernet melding lastes ned igjen neste gang du åpner den.
+cache_note_age = Automatisk opprydding kjører én gang om dagen, når ZBox ikke har hatt tastaturaktivitet på ti minutter og ingen melding er åpen. Den går etter hver melding sin egen dato, også for meldinger som fortsatt ligger i kontoen din.
+filt_note_intro = Regler kjøres i rekkefølge, fra topp til bunn, og tester Fra, Til og Emne. Brukes automatisk på ny e-post når den kommer til denne kontoens Innboks; bruk Kjør nå nedenfor for å bruke dem på meldinger som allerede ligger i en mappe.
+filt_note_run_now = Bruker hver aktiverte regel ovenfor, i rekkefølge, på hver melding som allerede er i den valgte mappen -- lagrer endringene dine først, på samme måte som OK.
+mp_note_intro = Disse kontoene ble satt opp på en annen datamaskin. Skriv inn hovedpassordet for å låse opp de lagrede passordene deres her. Du blir bare spurt én gang på denne datamaskinen.\n\nUten det må hver konto logges inn på e-postserveren sin på nytt.
+priv_note_remote = Bilder, stilark og skrifttyper som en melding laster fra internett, forteller avsenderen i det øyeblikket du åpnet den, og hvorfra. Med dette på lastes ingenting av det: en merknad vises over meldingen og sier hva som ble blokkert, og Ctrl+Shift+I laster det for akkurat den meldingen. Bilder som er lagt ved selve meldingen, vises alltid. Skript og innebygde rammer fjernes i begge tilfeller og lastes aldri.
+priv_note_blocklist = Dette er det andre laget. Det har betydning når du laster en meldings eksterne innhold eller tillater en avsender: bildene lastes, men alt som leveres fra et kjent sporings- eller annonsedomene, lastes fortsatt ikke. Listen lastes ned fra offentlige lister over annonser og sporere og slås sammen; oppdateringen tar et sekund eller to og kjører i bakgrunnen.
+priv_note_junk = Ingen gjetting. Merk som søppelpost legger avsenderen til i listen over blokkerte nedenfor, med mindre meldingen kom via en e-postliste. Merk som ikke søppelpost legger avsenderen til i listen over aldri søppelpost, og den meldingen kontrolleres aldri igjen. En ny melding fra en blokkert avsender merkes Blokkert avsender i listen; en som lenker til et kjent phishing- eller skadevarenettsted, merkes Mulig phishing. E-postleverandørens egen søppelpostfiltrering kjører som før.
+priv_status_phishing_updating = Phishing-liste: oppdateres i bakgrunnen. Åpne denne dialogen på nytt for å se resultatet.
+priv_status_updating = Oppdateres i bakgrunnen. Åpne denne dialogen på nytt for å se resultatet.
+rel_note_intro = Meldinger relatert til "{subject}" via Message-ID/References-hodene, på tvers av alle mapper i denne kontoen.
+srch_note_intro = Søk etter ord i alle kontoer og mapper, eller avgrens søket med valgene nedenfor. La ordene stå tomme for å finne meldinger bare etter dato eller avmerkingsbokser.
+sig_note_plain = La ren-tekst-alternativet stå tomt, så skrives det ut fra den formaterte signaturen når du trykker Lagre.
+unified_note_intro = Velg hvilke mapper som skal kombineres på tvers av alle kontoer. Hver avmerkede blir én oppføring i treet som kombinerer den mappen fra alle kontoene dine.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = Om ZBox
+title_account_settings = Konto- og identitetsinnstillinger: {name}
+title_new_account = Ny konto
+title_address_book = Adressebok
+title_members = Medlemmer: {name}
+ab_group_name_prompt = Gruppenavn:
+title_new_group = Ny gruppe
+title_cache_cleanup = Konfigurasjon av opprydding i hurtigbuffer
+cache_age_prompt = Fjern automatisk meldinger i hurtigbufferen som er eldre enn:
+title_automatic_cleanup = Automatisk opprydding
+comp_link_prompt = Lenkeadresse:
+title_insert_link = Sett inn lenke
+title_composer_diagnostics = Diagnostikk for skriving
+title_formatted_preview = Formatert forhåndsvisning
+title_license_agreement = ZBox-lisensavtale
+title_message_filters = Meldingsfiltre: {account}
+title_master_password_required = Hovedpassord kreves
+title_privacy_dialog = Personvern og innholdsblokkering
+title_privacy = Personvern
+title_settings = Innstillinger
+set_tab_general = Generelt
+set_tab_personalization = Tilpasning
+set_tab_accessibility = Tilgjengelighet og hurtigtaster
+set_tab_maintenance = Vedlikehold og opprydding
+set_tab_sounds = Lyd og varsler
+set_tab_security = Sikkerhet
+title_unified_folders = Samlemapper
+title_zbox_locked = ZBox er låst
+title_message_view = Meldingsvisning
+title_remote_content = Eksternt innhold
+title_refresh = Oppdater
+title_refresh_all = Oppdater alle
+mv_choose_folder = Velg en mappe å lagre vedlegget i
+title_thread = Tråd
+title_inbox = Innboks
+title_compose = Skriv
+title_watch_thread = Overvåk tråd
+title_ignore_thread = Ignorer tråd
+title_edit_signature = Rediger signatur
+title_account = Konto
+mf_folder_name_prompt = Mappenavn:
+mf_new_name_prompt = Nytt navn:
+title_refresh_all_accounts = Oppdater alle kontoer
+title_sender = Avsender
+title_new_mail = Ny e-post
+mf_export_dialog_title = Eksporter alle {count} kontoer og innstillinger
+mf_related_tab = Relatert: {subject}
+title_hotkeys_diagnostic = Diagnostikk av hurtigtaster
+set_choose_attachment_dir = Velg mappen for lagrede vedlegg
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox er låst. Bruk en av metodene nedenfor for å låse det opp. Hvis du avbryter, lukkes ZBox uten å åpne noen konto.
+unl_note_foreign_passkey = Passnøkkelen som er lagret sammen med denne mappen, tilhører en annen datamaskin, så den kan ikke brukes her. Lås opp med sikkerhetsnøkkelen eller hovedpassordet ditt, og bruk deretter Innstillinger, Personvern og sikkerhet, Opplåsingsmetoder for å sette opp en passnøkkel på denne datamaskinen.
+unl_note_methods = Hver av disse låser opp ZBox når applåsen er på, ved siden av hovedpassordet. En passnøkkel bruker Windows Hello på denne datamaskinen; en sikkerhetsnøkkel er en FIDO2-nøkkel på USB eller NFC og fungerer på hvilken som helst datamaskin du kobler den til.
+unl_note_not_encryption = Disse låser opp appen. De krypterer ingenting: hovedpassordet er fortsatt det eneste som kan åpne de lagrede kontopassordene på en datamaskin der denne mappen ikke har vært brukt før. Det må angis først, og ingen av disse kan legges til før det er gjort.
+unl_add_passkey_unavailable = &Legg til passnøkkel (ikke tilgjengelig)
+unl_add_key_unavailable = &Legg til sikkerhetsnøkkel (ikke tilgjengelig)
+unl_reassign_unavailable = &Tilordne passnøkkelen til denne datamaskinen på nytt (ikke tilgjengelig)
+unl_status_cancelled_passkey = Passnøkkelen ble avbrutt. ZBox er fortsatt låst.
+unl_status_cancelled_key = Sikkerhetsnøkkelen ble avbrutt. ZBox er fortsatt låst.
+unl_status_enter_password = Skriv inn hovedpassordet.
+unl_status_no_master = Ingen hovedpassord er angitt, så en passnøkkel eller sikkerhetsnøkkel kan ikke legges til ennå. Angi ett med knappen Hovedpassord i Innstillinger, Personvern og sikkerhet, og kom så tilbake hit. Hovedpassordet er det som åpner de lagrede kontopassordene dine på en annen datamaskin; en passnøkkel låser bare opp appen på akkurat denne, så den kan ikke stå alene.
+unl_status_unsupported = Denne datamaskinens Windows støtter ikke passnøkler eller sikkerhetsnøkler, så bare hovedpassordet kan låse opp ZBox her.
+unl_status_foreign_one = 1 passnøkkel tilhører en annen datamaskin og kan ikke låse opp ZBox her. Tilordne på nytt erstatter dem med en som er laget på denne datamaskinen.
+unl_status_foreign_many = {count} passnøkler tilhører en annen datamaskin og kan ikke låse opp ZBox her. Tilordne på nytt erstatter dem med en som er laget på denne datamaskinen.
+unl_status_foreign_one_no_hello = 1 passnøkkel tilhører en annen datamaskin og kan ikke låse opp ZBox her. Windows Hello er ikke satt opp her, så de kan ikke erstattes på denne datamaskinen; Fjern glemmer dem.
+unl_status_foreign_many_no_hello = {count} passnøkler tilhører en annen datamaskin og kan ikke låse opp ZBox her. Windows Hello er ikke satt opp her, så de kan ikke erstattes på denne datamaskinen; Fjern glemmer dem.
+unl_status_no_hello = Windows Hello er ikke satt opp på denne datamaskinen, så en passnøkkel kan ikke legges til her. En sikkerhetsnøkkel kan fortsatt legges til.
+unl_status_none_registered = Ingen opplåsingsmetoder er registrert ennå.
+unl_status_add_cancelled_passkey = Å legge til en passnøkkel ble avbrutt.
+unl_status_add_cancelled_key = Å legge til en sikkerhetsnøkkel ble avbrutt.
+unl_status_added = Lagt til: {name}.
+unl_status_reassign_cancelled = Ny tilordning ble avbrutt. Ingenting ble endret.
+unl_status_reassigned = La til {name} og glemte {count} fra andre datamaskiner.
+unl_status_test_cancelled = Testen ble avbrutt.
+unl_status_removed = Fjernet.
+unl_remove_warning_last = Fjerne {name}?\n\nDet er den eneste registrerte opplåsingsmetoden, og ingen hovedpassord er angitt, så med applåsen på ville det ikke være noe igjen å låse opp ZBox med. Låsen hoppes over i stedet for å låse deg ute, men ZBox ville da åpnes ulåst.
+unl_remove_warning = Fjerne {name}? ZBox godtar den ikke lenger.
+ab_col_email = E-post
+ab_col_name = Navn
+ab_col_phone = Telefon
+ab_no_contacts = Ingen kontakter ennå.
+acct_auto_check = Se automatisk etter nye meldinger
+acct_note_auto_check = Av: ZBox kontakter aldri denne kontoen på egen hånd -- ingen overvåking av ny e-post, ingen tidsstyrt oppdatering, ingen nedlastinger i bakgrunnen -- slik at en upålitelig server ikke kan gjøre de andre kontoene trege. Den nedlastede e-posten kan fortsatt åpnes, og Oppdater (F5), sending og sletting når fortsatt serveren. Det samme som Sett automatisk kontroll på pause i Verktøy-menyen eller kontoens hurtigmeny.
+bl_day_ago = for 1 dag siden
+bl_days_ago = for {days} dager siden
+bl_label_blocklists = Blokkeringsliste
+bl_label_phishing = Phishing-liste
+bl_last_failed = Siste forsøk mislyktes: %s
+bl_not_downloaded = Ikke lastet ned ennå.
+bl_save_failed = Lastet ned %s, men kunne ikke lagre den: %s
+bl_seed_only = %s domener fra den innebygde listen. Har aldri blitt oppdatert fra internett ennå.
+bl_some_failed = Noen kilder mislyktes: %s
+bl_some_unreachable = Noen kilder kunne ikke nås: %s
+bl_status_line = %s domener. Sist oppdatert %s.
+bl_up_to_date = %s er allerede oppdatert.
+bl_update_failed = Kunne ikke oppdatere %s: %s
+bl_updated = %s oppdatert: %s domener.
+cc_age_choice = Hver meldingsbuffer eldre enn %s
+cc_auto_button = Automatisk opprydding: meldinger i hurtigbufferen eldre enn %s...
+comp_btn_discard = &Forkast
+comp_btn_keep_editing = &Fortsett å redigere
+comp_btn_save_draft = &Lagre utkast
+comp_no_account = Ingen konto er satt opp
+comp_saving_draft = Lagrer utkast…
+comp_this_message = denne meldingen
+comp_unsent_save_q = Lagre %s som et utkast før den lukkes?
+comp_unsent_tray_q = Lagre %s som et utkast før ZBox går til systemfeltet?
+doc_unreadable = Dokumentasjonsfilen kunne ikke leses:
+envlist_all_disabled = Alle kontoer er deaktivert.
+envlist_col_date = Dato
+envlist_col_from = Fra
+envlist_col_status = Status
+envlist_col_subject = Emne
+envlist_collapsed = Skjult (%d)
+envlist_empty = Ingen meldinger i denne mappen.
+envlist_loading = Laster meldinger...
+envlist_no_accounts = Ingen kontoer er satt opp ennå.
+envlist_no_ignored = Ingen ignorerte tråder i denne mappen.
+envlist_no_watched = Ingen overvåkede tråder i denne mappen.
+envlist_select_folder = Velg en konto eller mappe for å laste meldinger.
+eula_link_0 = Åpne lisenssiden for Himalaya i nettleseren din
+eula_link_1 = Åpne lisenssiden for StevenBlack hosts i nettleseren din
+eula_link_2 = Åpne lisenssiden for EasyList/EasyPrivacy i nettleseren din
+eula_link_3 = Åpne lisenssiden for Phishing.Database i nettleseren din
+eula_read_note = Les lisensen nedenfor, inkludert delene om tredjepart. Du må krysse av for Jeg godtar før Neste blir tilgjengelig. Jeg godtar ikke lukker ZBox uten å starte det og fjerner det denne kjøringen hittil har opprettet.
+eula_unreadable = Lisensfilen kunne ikke leses:\n%s
+filters_title = Kjør filtre
+flag_title = Stjernemerk melding
+folder_type_archive = Arkiv
+folder_type_drafts = Utkast
+folder_type_inbox = Innboks
+folder_type_junk = Søppelpost
+folder_type_sent = Sendt
+folder_type_trash = Søppelkasse
+mime_application_json = JSON-fil
+mime_application_msword = Word-dokument
+mime_application_octet_stream = Binærfil
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excel-regneark
+mime_application_vnd_ms_powerpoint = PowerPoint-presentasjon
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = PowerPoint-presentasjon
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excel-regneark
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Word-dokument
+mime_application_xml = XML-fil
+mime_application_zip = ZIP-arkiv
+mime_audio_mpeg = MP3-lyd
+mime_audio_ogg = OGG-lyd
+mime_audio_wav = WAV-lyd
+mime_image_bmp = BMP-bilde
+mime_image_gif = GIF-bilde
+mime_image_jpeg = JPEG-bilde
+mime_image_png = PNG-bilde
+mime_image_svg_xml = SVG-bilde
+mime_image_webp = WebP-bilde
+mime_text_csv = CSV-fil
+mime_text_html = HTML-fil
+mime_text_plain = Tekstfil
+mime_video_mp4 = MP4-video
+mime_video_x_msvideo = AVI-video
+move_title_junk = Merk som søppelpost
+move_title_move_to = Flytt til
+move_title_not_junk = Merk som ikke søppelpost
+mp_explain_set = Et hovedpassord er angitt. Det er det som lar denne ZBox-mappen åpne de lagrede kontopassordene sine på en annen datamaskin.\n\nLa begge feltene for nytt passord stå tomme, og trykk OK for å fjerne det. Å fjerne det påvirker ikke denne datamaskinen, men mappen vil ikke lenger fungere på noen annen uten å logge inn alle kontoer på nytt.
+mp_explain_unset = Ingen hovedpassord er angitt, så de lagrede kontopassordene bare kan leses på denne datamaskinen og denne Windows-kontoen. Kopierer du mappen andre steder, må hver konto logges inn på e-postserveren sin på nytt.\n\nAngi ett, så ber ZBox om det én gang på hver nye datamaskin og låser deretter opp som vanlig der fra da av. Denne datamaskinen spør ikke igjen.\n\nSkriv det ned og oppbevar det på et trygt sted. Det lagres ingen steder og kan ikke gjenopprettes: hvis du glemmer det, må hver konto logges inn på e-postserveren sin på nytt.
+mp_label_confirm = &Bekreft nytt hovedpassord:
+mp_label_current = &Nåværende hovedpassord:
+mp_label_master = &Hovedpassord:
+mp_label_new = &Nytt hovedpassord:
+mp_name_confirm = Bekreft nytt hovedpassord
+mp_name_current = Nåværende hovedpassord
+mp_name_master = Hovedpassord
+mp_name_new = Nytt hovedpassord
+mp_prompt_existing = De lagrede kontopassordene dine er bare beskyttet på denne datamaskinen. Angi et hovedpassord slik at de også kan åpnes hvis du flytter ZBox til en annen.
+mp_prompt_first_run = ZBox er i ferd med å lagre kontopassordene dine. Angi et hovedpassord nå slik at de fortsatt kan åpnes hvis du flytter ZBox til en annen datamaskin.
+mp_prompt_new_account = ZBox er i ferd med å lagre passordet til denne kontoen. Angi først et hovedpassord slik at kontoen fortsatt kan åpnes hvis du flytter ZBox til en annen datamaskin.
+mp_removed_done = Hovedpassordet er fjernet. De lagrede passordene fungerer nå bare på denne datamaskinen og denne Windows-kontoen.
+mp_set_done = Hovedpassordet er angitt. ZBox ber om det én gang på hver nye datamaskin denne mappen åpnes på, og låser deretter opp som vanlig der etterpå.
+mv_body_title = Meldingstekst
+mv_col_format = Format
+mv_col_name = Navn
+mv_col_size = Størrelse
+mv_format_unknown = Ukjent
+mv_size_unknown = Ukjent størrelse
+na_account_settings = Konto- og identitetsinnstillinger
+na_disable_account = Deaktiver konto
+na_edit_signature = Rediger signatur
+na_message_filters = Meldingsfiltre
+na_mute_account = Slå av lyd for konto
+na_pause_auto_check = Sett automatisk kontroll på pause
+na_remove_account = Fjern konto
+na_set_default = Angi som standardkonto
+no_offline_copy = Ingen frakoblet kopi av %s. Åpne den mens du er tilkoblet, eller bruk Fil, Frakoblet, Synkroniser nå.
+perm_delete_confirm = {msg} Dette hopper over søppelkassen og kan ikke angres.
+perm_delete_many = Slette {count} meldinger permanent?
+perm_delete_one = Slette {count} melding permanent?
+preset_note_apple = Apple krever et appspesifikt passord.
+preset_note_fastmail = Fastmail krever et apppassord.
+preset_note_google = Google krever et apppassord eller OAuth2, ikke det vanlige passordet ditt.
+preset_note_proton = ProtonMail krever at appen ProtonMail Bridge kjører lokalt.
+preset_note_yahoo = Yahoo krever et apppassord.
+priv_phishing_not_loaded = Phishing-liste: ikke lastet ennå. Den lastes ned første gang disse reglene er på og ZBox er tilkoblet.
+priv_phishing_prefix = Phishing-liste:
+priv_status_unavailable = Status for blokkeringslisten er ikke tilgjengelig.
+rdr_load_failed = Kunne ikke laste meldingen.\n\n{message}
+rdr_loading = Laster meldingen...
+rdr_select_message = Velg en melding for å lese den her.
+set_autosave_off = Av — bruk Lagre utkast (Ctrl+S) for å lagre manuelt
+set_autosave_seconds = Hvert {seconds}. sekund
+set_no_unlock = Ingen passnøkkel eller sikkerhetsnøkkel kan brukes her
+set_purge_days = Etter {days} dager
+set_purge_off = Av — søppelkasse og søppelpost ryddes aldri automatisk
+set_purge_one_day = Etter 1 dag
+set_val_seconds = {seconds} sekunder
+set_val_one_second = 1 sekund
+set_silence_off = Av
+set_announce_wait = Venter på en tast
+set_autosave_minutes = Hvert {minutes}. minutt
+set_autosave_one_minute = Hvert minutt
+set_rt_bundled_installed = Medfølgende kjøretid: installert.
+set_rt_bundled_many = Medfølgende kjøretid: %s installert.
+set_rt_bundled_none = Medfølgende kjøretid: ingen installert, så ZBox bruker den systemomfattende.
+set_rt_bundled_unknown = Medfølgende kjøretid: kunne ikke fastslås.
+set_rt_bundled_ver = Medfølgende kjøretid: versjon %s installert.
+set_rt_system_unknown = Systemomfattende kjøretid: versjonen kunne ikke fastslås.
+set_rt_system_ver = Systemomfattende kjøretid: versjon %s.
+set_unlock_many = %d opplåsingsmetoder kan brukes her
+set_unlock_unreadable = Opplåsingsmetoder kunne ikke leses
+sig_tab_formatted = Formatert
+sig_tab_source = HTML-kilde
+srch_all_accounts = Alle kontoer
+srch_all_folders = Alle mapper
+tab_mail = E-post
+tab_new_message = Ny melding
+tab_saved_message = Lagret melding
+title_copy_to_err = Kopier til
+title_mark_message = Merk melding
+title_unsent_message = Usendt melding
+tree_unified_root = Samlemapper
+unlock_kind_passkey = Passnøkkel (Windows Hello)
+unlock_kind_security_key = Sikkerhetsnøkkel
+unlock_prompt_message = Windows ber deg bekrefte. Svar på forespørselen med Windows Hello, PIN-koden eller sikkerhetsnøkkelen din. Dette vinduet lukkes av seg selv når Windows er ferdig.
+unlock_prompt_title = Windows-sikkerhet
+unlock_registering = Registrerer denne opplåsingsmetoden
+unlock_the_passkey = Passnøkkelen
+unlock_the_security_key = Sikkerhetsnøkkelen
+wildcard_eml = E-postfiler (*.eml)|*.eml|Alle filer (*.*)|*.*
+wildcard_export = ZBox-eksport (*.json)|*.json
+wiz_not_supported = STØTTES IKKE: {name}. {note} Denne kontoen kan ikke legges til i ZBox.
+stock_apply = &Bruk
+stock_cancel = Avbryt
+stock_close = &Lukk
+stock_help = &Hjelp
+stock_no = &Nei
+stock_ok = OK
+stock_yes = &Ja
+wiz_btn_back = &< Tilbake
+wiz_btn_finish = &Fullfør
+wiz_btn_next = &Neste >
+acct_unsaved_q = Lagre endringene i denne kontoen?
+btn_save = &Lagre
+spell_add_to_dictionary = &Legg til i ordlisten
+spell_no_suggestions = Ingen forslag
+title_signature_for = Signatur: {account}
+title_mark_folder_read = Merk mappen som lest
+title_update_available = ZBox-oppdatering
+update_available = ZBox {new} er tilgjengelig. Du har {current}.
+upd_notes_label = &Utgivelsesnotater:
+upd_no_notes = Ingen utgivelsesnotater.
+upd_notes_name = Utgivelsesnotater
+upd_update_now = &Ja, oppdater nå
+upd_remind_later = &Minn meg på det senere
+title_update_download = Laster ned ZBox-oppdatering
+upd_downloading = Laster ned ZBox {version}...
+upd_progress_name = Fremdrift for nedlasting
+upd_cancel = &Avbryt
+upd_cancelling = Avbryter...
+set_updates_label = Oppdateringer:
+set_update_auto = &Se automatisk etter oppdateringer
+set_update_mode_label = Når en oppdatering blir funnet:
+set_update_ask = &Spør meg
+set_update_silent = &Last ned og installer stille
+set_update_note = ZBox ser på GitHub etter en nyere utgivelse høyst én gang om dagen, bare når det er inaktivt, og sender ikke noe annet enn versjonsnummeret sitt. Spør meg viser den nye versjonen og utgivelsesnotatene med Ja, oppdater nå og Minn meg på det senere. Last ned og installer stille henter oppdateringen i inaktiv tid og installerer den neste gang du avslutter ZBox helt, aldri mens du jobber. En oppdatering erstatter bare ZBox sine egne programfiler: kontoene, passordene, innstillingene, e-posten, loggene, lydtemaene og alle språk du har lagt til berøres aldri, og den forrige versjonen beholdes og gjenopprettes av seg selv hvis den nye ikke starter. Hjelp, Oppdateringer har også Se etter oppdateringer nå og siden med utgivelser for å oppdatere for hånd.
+set_update_check_now = &Se etter nå
+mv_attachment_button = {filename} ({format})
+att_open = Åpne
+att_save = Lagre...
+att_save_all = Lagre alle vedlegg
+title_save_attachment = Lagre vedlegg
+title_full_headers = Fullstendige hoder
+hdr_copy_all = Kopier alle
+acct_identity_own_signature = Bruk egen signatur
+acct_identity_own_reply_to = Bruk egen Svar-til-adresse
+acct_identity_reply_to = Svar-til-adresse
+acct_identity_always_cc = Send alltid kopi til disse adressene
+acct_identity_cc = Adresser for kopi
+acct_identity_always_bcc = Send alltid blindkopi til disse adressene
+acct_identity_bcc = Adresser for blindkopi
+acct_identity_own_folders = Bruk egne mapper for Utkast og Sendt
+acct_identity_drafts = Mappe for Utkast
+acct_identity_sent = Mappe for Sendt
+acct_identity_own_smtp = Bruk egen utgående server
+acct_identity_smtp_login = Brukernavn for utgående
+acct_identity_smtp_password = Passord for utgående
+acct_identity_test_smtp = &Test utgående server
+acct_identity_note_smtp = La brukernavnet stå tomt for å logge inn med e-postadressen til denne identiteten. Sendte kopier havner fortsatt i denne kontoens Sendt-mappe, eller i denne identitetens egen Sendt-mappe hvis den har en.
+identity_field_required = Fyll ut {field}, eller fjern avmerkingen i boksen.
+identity_field_invalid = {field} har en adresse som ikke er gyldig.
+identity_folders_required = Velg en mappe for Utkast, en mappe for Sendt eller begge, eller fjern avmerkingen i boksen.
+identity_password_required = Skriv inn passordet for utgående.
+identity_smtp_testing = Tester den utgående serveren.
+identity_smtp_ok = Den utgående serveren godtok innloggingen.
+identity_smtp_failed = Testen av den utgående serveren mislyktes.\n\n{error}
+set_bare_keys_note_move = M og C åpner menyene Flytt til og Kopier til med mapper for de valgte meldingene, og Shift+M åpner en boks der du skriver en del av et mappenavn for å flytte dem dit. Hvis du slår dette av, går M og C også tilbake til førstebokstavnavigasjon.
+folder_search_filter = Mappenavn inneholder
+folder_search_list = Samsvarende mapper
+folder_search_no_match = Ingen mappe samsvarer med det navnet.
+wiz_signin_method = Innloggingsmetode
+wiz_method_password = Passord
+wiz_method_microsoft = Microsoft-konto (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Microsoft-innlogging. Serverinnstillingene for Outlook.com, Hotmail, Live og Microsoft 365 er fylt ut.
+wiz_welcome_notice = Gmail. Det vanlige Google-passordet ditt blir avvist, men et apppassord fungerer. Tostegsverifisering må være på først. Knappen nedenfor åpner Googles veiledning.\n\nOutlook.com, Hotmail, Live og Microsoft 365. Disse logger inn med Microsoft-kontoen din. På siden Innlogging velger du Microsoft-konto og logger deretter inn med nettleseren eller med en kode.\n\nAndre leverandører. Et vanlig passord eller et apppassord fungerer som regel, og leverandørens hjelpesider viser serverinnstillingene.
+preset_note_outlook = Kontoer på Outlook.com, Hotmail, Live og MSN logger inn med en Microsoft-konto. Velg Microsoft-konto som innloggingsmetode på siden Innlogging.
+ms_status_name = Status for Microsoft-innlogging
+ms_browser_button = &Logg inn med nettleser
+ms_code_button = &Logg inn med en kode
+ms_copy_code = &Kopier kode
+ms_open_page = &Åpne innloggingssiden
+ms_stop = &Slutt å vente
+ms_not_configured = Microsoft-innlogging er ikke satt opp i denne kopien av ZBox.
+ms_not_signed_in = Ikke logget inn ennå. Logg inn med nettleseren din, eller med en kode på en hvilken som helst enhet.
+ms_signed_in = Logget inn som {address}.
+ms_signed_in_plain = Logget inn.
+ms_needs_sign_in = Microsoft-innlogging for denne kontoen trengs igjen. Logg inn med nettleseren din, eller med en kode på en hvilken som helst enhet.
+ms_reason_cancelled = Innloggingen ble stoppet.
+ms_reason_timeout = Ingen respons kom i tide.
+ms_reason_denied = Tilgang ble ikke tillatt.
+ms_reason_expired = Koden er utløpt. Be om en ny.
+ms_reason_network = Microsoft kunne ikke nås. Sjekk tilkoblingen og prøv igjen.
+ms_reason_server = Microsoft sa: {detail}
+ms_page_done = Logget inn. Du kan lukke denne siden og gå tilbake til ZBox.
+ms_page_failed = Innloggingen ble ikke fullført. Gå tilbake til ZBox for detaljer.
+ms_browser_waiting = Nettleseren din viser Microsofts innloggingsside. Fullfør innloggingen der, og kom deretter tilbake til ZBox.
+ms_code_asking = Ber Microsoft om en innloggingskode...
+ms_code_waiting = Åpne {address} på en hvilken som helst enhet og skriv inn koden {code}. ZBox venter her til du er ferdig med å logge inn.
+ms_failed = Innloggingen ble ikke fullført. {reason}
+ms_code_copied = Koden er kopiert.
+offline_inbox_only = Bare Innboks og Arkiv lagres for frakoblet bruk. Koble til for å åpne {folder}.
+block_sender_rule_name = Blokker {sender}
+title_block_sender = Blokker denne avsenderen
+title_unblock_sender = Opphev blokkeringen av denne avsenderen
+set_clear_inbox_cache = Tøm meldingsbufferen når man forlater Innboks
+set_clear_inbox_cache_note = Når det er på, slettes en meldings frakoblede kopi og lagrede tekst så snart den forlater en Innboks, også når den ble slettet eller flyttet et annet sted, for eksempel på telefonen din, slik at den aldri vises der den ikke lenger er. Bare Innboks beholder disse filene; alle andre mapper leses alltid fra serveren.
+empty_trash_all_confirm = Slette alle meldinger i søppelkassen for alle kontoer permanent?\n\nDette kan ikke angres.
+envlist_col_recipient = Mottaker
+envlist_col_correspondents = Korrespondenter
+envlist_col_received = Mottatt
+envlist_col_size = Størrelse
+envlist_col_attachments = Vedlegg
+envlist_col_priority = Prioritet
+envlist_col_junk_status = Søppelpost-status
+envlist_attachment = Vedlegg
+envlist_priority_highest = Høyeste
+envlist_priority_high = Høy
+envlist_priority_low = Lav
+envlist_priority_lowest = Laveste
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Vis kolonneoverskrifter i meldingslisten
+pgp_title = OpenPGP-nøkkelbehandler
+smime_title = S/MIME-sertifikatbehandler
+smime_own = ditt sertifikat
+smime_expired = utløpt
+smime_expires = utløper {date}
+smime_issuer = Utstedt av
+smime_valid = Gyldig fra {start} til {end}
+smime_fingerprint = SHA-256-fingeravtrykk
+smime_own_key = Sertifikatet ditt, med den private nøkkelen: e-post som er kryptert til det, kan leses her.
+smime_unavailable = S/MIME er ikke tilgjengelig i denne kopien av ZBox.
+smime_details = Sertifikatdetaljer
+smime_no_certs = Ingen sertifikater ennå. Importer din egen .p12- eller .pfx-fil, eller sertifikatet til en korrespondent.
+smime_import_failed = Sertifikatet kunne ikke importeres: {error}
+smime_import_title = Importer sertifikatfil
+smime_password_prompt = Skriv inn passordet for {name}.
+smime_password_title = Sertifikatpassord
+smime_imported = Sertifikatet er importert.
+smime_export_title = Eksporter sertifikat
+smime_exported = Sertifikatet er eksportert.
+smime_delete_confirm = Slette sertifikatet til {name}? Hvis det er ditt eget, kan e-post som er kryptert til det, ikke lenger leses her.
+smime_deleted = Sertifikatet er slettet.
+smime_rs_verified = Denne meldingen inneholder en gyldig S/MIME-signatur fra et sertifikat som en utsteder Windows stoler på, har utstedt for avsenderens adresse.
+smime_rs_unverified = Denne meldingen inneholder en gyldig S/MIME-signatur, men sertifikatet ble ikke utstedt av en utsteder Windows stoler på.
+smime_rs_mismatch = Denne meldingen inneholder en S/MIME-signatur, men avsenderens adresse samsvarer ikke med underskriverens sertifikat.
+smime_rs_technical = Denne meldingen inneholder en S/MIME-signatur, men den samsvarer ikke med meldingen. Meldingen kan ha blitt endret etter at den ble signert.
+smime_rs_signer = Signert av: {name}
+smime_rs_issuer = Sertifikat utstedt av: {issuer}
+smime_rs_import_hint = For å lese den importerer du S/MIME-sertifikatet ditt med den private nøkkelen, en .p12- eller .pfx-fil, i Verktøy, S/MIME-sertifikatbehandler.
+pgp_details = Nøkkelegenskaper
+pgp_generate = &Nytt nøkkelpar
+smime_import = &Importer sertifikatfil
+smime_export = &Eksporter sertifikat
+smime_delete = &Slett sertifikat
+pgp_import_file = &Importer OpenPGP-nøkkelfil
+pgp_import_file_title = Importer OpenPGP-nøkkelfil
+pgp_import_clip = &Importer nøkler fra utklippstavlen
+pgp_export = &Eksporter offentlig nøkkel til fil
+pgp_copy = &Kopier offentlig nøkkel
+pgp_backup = &Sikkerhetskopier hemmelig nøkkel til fil
+pgp_props = &Nøkkelegenskaper
+pgp_revoke = &Tilbakekall nøkkel
+pgp_delete = &Slett nøkkel
+pgp_expires = utløper: {date}
+pgp_never_expires = utløper aldri
+pgp_expired = utløpt
+pgp_revoked = tilbakekalt
+pgp_fingerprint = Fingeravtrykk
+pgp_key_id = Nøkkel-ID
+pgp_created = Opprettet
+pgp_acceptance = Din godkjenning
+pgp_acc_rejected = Nei, avvis denne nøkkelen.
+pgp_acc_undecided = Ikke ennå, kanskje senere.
+pgp_acc_unverified = Ja, men jeg har ikke bekreftet at det er riktig nøkkel.
+pgp_acc_verified = Ja, jeg har personlig bekreftet at denne nøkkelen har riktig fingeravtrykk.
+pgp_personal_no = Nei, ikke bruk den som min personlige nøkkel.
+pgp_personal_yes = Ja, behandle denne nøkkelen som en personlig nøkkel.
+pgp_verify_hint = Bekreft fingeravtrykket til nøkkelen via en sikker kommunikasjonskanal som ikke er e-post, for å sikre at det virkelig er nøkkelen til {addr}.
+pgp_gen_title = Opprett OpenPGP-nøkkel
+pgp_gen_identity = Identitet
+pgp_gen_type = Nøkkeltype:
+pgp_gen_ecc = ECC (elliptisk kurve)
+pgp_gen_expiry = Utløp for nøkkelen
+pgp_gen_no_expiry = Nøkkelen utløper ikke
+pgp_gen_button = Opprett nøkkel
+pgp_gen_confirm = Opprette offentlig og hemmelig nøkkel for {identity}?
+pgp_gen_progress = Oppretter din nye OpenPGP-nøkkel…
+pgp_gen_done = OpenPGP-nøkkelen er opprettet!
+pgp_gen_failed = Opprettelsen av OpenPGP-nøkkelen mislyktes uventet
+pgp_import_none = Ingen nøkler importert.
+pgp_import_done = OpenPGP-nøklene er importert!
+pgp_passphrase_title = Passfrase kreves
+pgp_unlock_failed = Nøkkelen, eller underordnede deler av nøkkelen, kunne ikke låses opp.
+pgp_backup_title = Velg et passord for å sikkerhetskopiere OpenPGP-nøkkelen din
+pgp_backup_message = Passordet du angir her, beskytter sikkerhetskopien av den hemmelige OpenPGP-nøkkelen som du er i ferd med å opprette. Du må angi dette passordet for å gå videre med sikkerhetskopieringen.
+pgp_backup_pw = Passord for sikkerhetskopi av hemmelig nøkkel:
+pgp_backup_pw2 = Passord for sikkerhetskopi av hemmelig nøkkel (igjen):
+pgp_backup_done = Den hemmelige nøkkelen er eksportert!
+pgp_export_done = Den offentlige nøkkelen er eksportert!
+pgp_copied = Nøkkelen/nøklene er kopiert til utklippstavlen
+pgp_revoke_done = Nøkkelen er tilbakekalt.
+pgp_personal = personlig nøkkel
+pgp_no_keys = Ingen nøkler ennå. Opprett et nytt nøkkelpar eller importer en nøkkel.
+pgp_unavailable = OpenPGP er ikke tilgjengelig i denne kopien av ZBox.
+pgp_gen_expires_3y = Nøkkelen utløper om 3 år
+pgp_gen_no_identity = Legg til en e-postkonto først.
+pgp_import_confirm = Importere disse nøklene?\n\n{keys}
+pgp_passphrase_prompt = Skriv inn passfrasen til den hemmelige nøkkelen for {name}.
+pgp_clip_empty = Utklippstavlen inneholder ingen OpenPGP-nøkkel.
+pgp_pw_mismatch = De to passordene samsvarer ikke.
+pgp_backup_open = Denne filen er en sikkerhetskopi av en hemmelig nøkkel. Skriv inn passordet for sikkerhetskopien.
+pgp_revoke_confirm = Tilbakekalle nøkkelen til {name}? En tilbakekalt nøkkel kan aldri brukes igjen. Del den tilbakekalte offentlige nøkkelen slik at andre slutter å bruke den.
+pgp_delete_public_confirm = Slette den offentlige nøkkelen til {name}?
+pgp_delete_secret_confirm = Slette din personlige nøkkel {name}? E-post som er kryptert til den, kan aldri leses igjen. Ta først en sikkerhetskopi av den hemmelige nøkkelen hvis du kan trenge den.
+pgp_select_key = Velg en nøkkel først.
+pgp_save_failed = Nøklene kunne ikke lagres: {error}
+pgp_publish = &Publiser
+pgp_publish_ok = Den offentlige nøkkelen er sendt til "{keyserver}".
+pgp_publish_fail = Kunne ikke sende den offentlige nøkkelen din til "{keyserver}".
+pgp_publish_suggest = Å publisere den offentlige nøkkelen på en nøkkelserver gjør at andre kan finne den.
+pgp_publish_question = Publisere den på {keyserver} nå? Serveren sender deretter en bekreftelses-e-post til {addresses}. Adressen din blir søkbar når du åpner lenken i den.
+pgp_publish_sent = En bekreftelses-e-post er sendt til {addresses}. Åpne lenken i den for å gjøre nøkkelen din søkbar via adressen din.
+pgp_publish_already = Kan allerede søkes opp via {addresses}.
+pgp_rs_no_sig = Ingen digital signatur
+pgp_rs_no_sig_info = Denne meldingen inneholder ikke avsenderens digitale signatur. Fraværet av en digital signatur betyr at meldingen kan være sendt av noen som later som de har denne e-postadressen. Det er også mulig at meldingen er endret under overføringen over nettverket.
+pgp_rs_uncertain = Usikker digital signatur
+pgp_rs_uncertain_date = Usikker digital signatur - signert {date}
+pgp_rs_invalid = Ugyldig digital signatur
+pgp_rs_invalid_date = Ugyldig digital signatur - signert {date}
+pgp_rs_good = Gyldig digital signatur
+pgp_rs_good_date = Gyldig digital signatur - signert {date}
+pgp_rs_no_key = Denne meldingen inneholder en digital signatur, men det er usikkert om den er riktig. For å bekrefte signaturen må du skaffe en kopi av avsenderens offentlige nøkkel.
+pgp_rs_uid_mismatch = Denne meldingen inneholder en digital signatur, men det ble oppdaget et avvik. Meldingen ble sendt fra en e-postadresse som ikke samsvarer med underskriverens offentlige nøkkel.
+pgp_rs_not_accepted = Denne meldingen inneholder en digital signatur, men du har ennå ikke bestemt om underskriverens nøkkel er akseptabel for deg.
+pgp_rs_rejected = Denne meldingen inneholder en digital signatur, men du har tidligere bestemt deg for å avvise underskriverens nøkkel.
+pgp_rs_technical = Denne meldingen inneholder en digital signatur, men det ble oppdaget en teknisk feil. Enten er meldingen blitt ødelagt, eller så er den blitt endret av noen andre.
+pgp_rs_unverified = Denne meldingen inneholder en gyldig digital signatur fra en nøkkel du allerede har godtatt. Du har imidlertid ennå ikke bekreftet at nøkkelen virkelig eies av avsenderen.
+pgp_rs_verified = Denne meldingen inneholder en gyldig digital signatur fra en bekreftet nøkkel.
+pgp_rs_own_key = Denne meldingen inneholder en gyldig digital signatur fra din personlige nøkkel.
+pgp_rs_signer_id = Underskriverens nøkkel-ID: {keyid}
+pgp_rs_decrypt_id = Din nøkkel-ID for dekryptering: {keyid}
+pgp_rs_enc_none = Meldingen er ikke kryptert
+pgp_rs_enc_none_info = Denne meldingen ble ikke kryptert før den ble sendt. Informasjon som sendes over internett uten kryptering, kan sees av andre under overføringen.
+pgp_rs_enc_invalid = Meldingen kan ikke dekrypteres
+pgp_rs_enc_invalid_info = Denne meldingen ble kryptert før den ble sendt til deg, men den kan ikke dekrypteres.
+pgp_rs_enc_valid = Meldingen er kryptert
+pgp_rs_enc_valid_info = Denne meldingen ble kryptert før den ble sendt til deg. Krypteringen sikrer at meldingen bare kan leses av mottakerne den var ment for.
+pgp_rs_field = Meldingssikkerhet
+pgp_rs_import = Importer OpenPGP-nøkkel
+pgp_rs_open_to_unlock = Åpne meldingen for å skrive inn passfrasen.
+pgp_rs_reply_not_quoted = Den opprinnelige meldingen var kryptert, så teksten siteres ikke her.
+pgp_cm_encrypt = Krypter
+pgp_cm_sign = Signer digitalt
+pgp_e2e_title = Ende-til-ende-kryptering
+acct_e2e_button = &Ende-til-ende-kryptering...
+pgp_e2e_none = Ikke bruk OpenPGP for denne identiteten.
+pgp_e2e_disable = Slå av kryptering for nye meldinger
+pgp_e2e_enable = Slå på kryptering for nye meldinger
+pgp_e2e_enable_info = Du vil kunne slå av kryptering for enkeltmeldinger.
+pgp_e2e_sign = Signer ukrypterte meldinger
+pgp_e2e_signing_info = En digital signatur lar mottakere bekrefte at meldingen ble sendt av deg og at innholdet ikke ble endret. Krypterte meldinger signeres alltid som standard.
+pgp_e2e_autocrypt = Send offentlige OpenPGP-nøkler i e-posthodene for kompatibilitet med Autocrypt
+pgp_not_set_up = Du er ikke satt opp til å sende ende-til-ende-krypterte meldinger fra {addr}.
+pgp_cannot_encrypt = Kan ikke kryptere
+pgp_do_you_accept = Godtar du denne nøkkelen for å bekrefte digitale signaturer og for å kryptere meldinger?
+pgp_searching = Søker…
+pgp_no_key_found = Vi fant ingen brukbar nøkkel som samsvarer med de oppgitte søkekriteriene.
+pgp_source_autocrypt = Autocrypt-hode
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = nøkkelserver
+pgp_discover = &Finn nøkler på nett
+pgp_cm_attach_key = Legg ved min offentlige nøkkel
+pgp_e2e_key_label = Personlig nøkkel for {address}
+pgp_e2e_auto = Automatisk: din personlige nøkkel for denne adressen
+pgp_e2e_no_key = ZBox har ingen personlig OpenPGP-nøkkel for {address}. Lag en i Verktøy, OpenPGP-nøkkelbehandler.
+pgp_e2e_new_messages = Kryptering for nye meldinger
+pgp_e2e_key_missing = Nøkkel {keyid}, ikke funnet
+pgp_missing_keys = Disse mottakerne har ingen brukbar, godkjent nøkkel:\n\n{addresses}\n\nMeldingen kan ikke sendes kryptert.
+pgp_send_unencrypted = &Send uten kryptering
+pgp_collected_found = Nøkler for disse mottakerne ble funnet i e-post de har sendt deg:
+pgp_lookup_q = Slå opp nøkler på nett for disse mottakerne?\n\n{addresses}\n\nDette sender adressene deres til keys.openpgp.org og til deres egne e-postdomener.
+pgp_found_online = Nøkler funnet på nett:
+pgp_source = Kilde: {source}
+pgp_discover_prompt = Skriv inn en e-postadresse. ZBox leter etter OpenPGP-nøklene i Web Key Directory for e-postdomenet og på keys.openpgp.org.
+pgp_discover_bad = Skriv inn en hel e-postadresse, for eksempel name@example.com.
+pgp_keys_unreadable = OpenPGP-nøklene kunne ikke åpnes: {error}
+pgp_rs_why_no_key = Den hemmelige nøkkelen som kreves for å dekryptere denne meldingen, er ikke tilgjengelig.
+pgp_rs_why_unknown = Det er ukjente problemer med denne krypterte meldingen.
+pgp_rs_hidden_subject = Kryptert melding
+pgp_rs_why_passphrase = Passfrasen til nøkkelen din ble ikke skrevet inn. Åpne meldingen på nytt for å skrive den inn.
+pgp_rs_why_unavailable = OpenPGP er ikke tilgjengelig i denne kopien av ZBox.
+pgp_rs_why_fetch = Meldingen kunne ikke hentes fra serveren for å dekrypteres. Åpne den på nytt for å prøve en gang til.
+pgp_rs_import_hint = For å lese den importerer du den hemmelige nøkkelen for denne meldingen til ZBox.
+
+[errors]
+language_restart_failed = ZBox kunne ikke starte seg selv på nytt:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Kunne ikke åpne en e-postklient for {address}.
+
+wizard_test_failed = Tilkoblingen mislyktes:\n\n{error}
+
+contacts_import_unreadable = Kunne ikke lese den filen.\n\n{error}
+contacts_export_unwritable = Kunne ikke skrive den filen.\n\n{error}
+
+attach_unreadable = Kunne ikke lese vedlegget {path}:\n{error}
+send_failed = Kunne ikke sende meldingen.\n\n{error}
+draft_attach_unreadable = Kunne ikke lese vedlegget {path}:\n{error}\n\nUtkastet ble ikke lagret.
+draft_save_failed = Kunne ikke lagre utkastet.\n\n{error}
+
+clipboard_unavailable = Utklippstavlen kunne ikke åpnes.
+open_link_failed = Kunne ikke åpne nettleseren din for:\n{url}
+
+master_password_mismatch = De to boksene for nytt hovedpassord samsvarer ikke.
+master_password_required = Skriv inn et hovedpassord, eller trykk Avbryt.
+master_password_not_set = Hovedpassordet kunne ikke angis: {error}
+master_password_not_here = Hovedpassordet kan ikke endres herfra.
+
+attachment_save_failed = Kunne ikke lagre vedlegget.\n\n{error}
+attachments_save_failed = Kunne ikke lagre vedleggene.\n\n{error}
+print_failed = Kunne ikke skrive ut meldingen. Kontroller at en skriver er satt opp.
+print_preview_failed = Kunne ikke åpne forhåndsvisning av utskrift. Kontroller at en skriver er satt opp.
+
+related_search_failed = Kunne ikke søke etter relaterte meldinger.\n\n{error}
+search_failed = Søket mislyktes.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox kunne ikke finne konfigurasjonsmappen sin, så opplåsingsmetoder kan ikke administreres her.
+shortcut_no_folder = ZBox kunne ikke finne ut av sin egen mappe, så en snarvei kan ikke opprettes herfra.
+shortcut_failed_settings = Snarveien på skrivebordet kunne ikke opprettes:\n\n{error}
+
+unlock_method_failed = {what} fungerte ikke.\n\n{error}
+unlock_check_failed = Hovedpassordet kunne ikke kontrolleres.\n\n{error}
+unlock_password_wrong = Det hovedpassordet er ikke riktig.
+unlock_add_failed = {what} kunne ikke legges til.\n\n{error}
+unlock_passkey_setup_failed = Passnøkkelen kunne ikke settes opp på denne datamaskinen, så ingenting ble endret.\n\n{error}
+unlock_method_test_failed = Den metoden fungerte ikke.\n\n{error}
+
+account_list_unreadable = ZBox kunne ikke åpne kontolisten din.\n\n{error}\n\nIngen kontoer er lastet, og filen er ikke endret, så ingenting er gått tapt. Å legge til, redigere og fjerne kontoer avvises til den kan leses.
+account_list_no_accounts = ZBox kunne ikke åpne kontolisten din i denne økten ({error}), så det er ingen kontoer å velge. Ingenting er gått tapt, og ingenting er endret. Lukk ZBox og start det på nytt, og skriv inn hovedpassordet når du blir bedt om det.
+open_message_failed = Kunne ikke åpne meldingen.\n\n{error}
+filters_list_failed = Kunne ikke liste meldinger i {folder}.\n\n{error}
+filters_move_failed = Kunne ikke flytte filtrerte meldinger.\n\n{error}
+cache_clear_failed = Kunne ikke tømme hurtigbufferen.\n\n{error}
+folder_create_failed = Kunne ikke opprette mappen.\n\n{error}
+folder_rename_failed = Kunne ikke endre navn på mappen.\n\n{error}
+folder_delete_failed = Kunne ikke slette mappen.\n\n{error}
+folder_subscribe_failed = Kunne ikke abonnere på mappen.\n\n{error}
+folder_unsubscribe_failed = Kunne ikke avslutte abonnementet på mappen.\n\n{error}
+saved_open_failed = Kunne ikke åpne filen.\n\n{error}
+saved_parse_failed = Kunne ikke tolke denne filen som en e-postmelding.\n\n{error}
+save_file_failed = Kunne ikke lagre filen.\n\n{error}
+save_fetch_failed = Kunne ikke hente meldingen som skulle lagres.\n\n{error}
+empty_trash_failed = Kunne ikke tømme søppelkassen.\n\n{error}
+empty_junk_failed = Kunne ikke tømme søppelpost.\n\n{error}
+export_write_failed = Kunne ikke skrive eksportfilen.\n\n{error}
+import_read_failed = Kunne ikke lese denne filen som en ZBox-eksport.\n\n{error}
+import_not_export = Denne filen ser ikke ut som en ZBox-eksport.\n\n{error}
+search_open_failed = Kunne ikke åpne denne meldingen.
+related_load_failed = Kunne ikke laste denne meldingen.\n\n{error}
+reply_load_failed = Kunne ikke laste meldingen som skulle besvares.\n\n{error}
+forward_load_failed = Kunne ikke laste meldingen som skulle videresendes.\n\n{error}
+action_failed = Kunne ikke fullføre denne handlingen.\n\n{error}
+undo_failed = Kunne ikke angre {label}.\n\n{error}
+copy_failed = Kunne ikke kopiere meldingen.\n\n{error}
+delete_failed = Kunne ikke slette meldingen.\n\n{error}
+archive_failed = Kunne ikke arkivere meldingen.\n\n{error}
+master_password_not_changed = Hovedpassordet kunne ikke endres: {error}
+shortcut_failed_startup = Snarveien på skrivebordet kunne ikke opprettes:\n\n{error}\n\nZBox fortsetter å starte. Du kan prøve igjen senere fra Innstillinger.
+account_locked_action = ZBox kan ikke %s. Kontolisten kunne ikke åpnes i denne økten (%s), og ingenting er endret. Lukk ZBox og start det på nytt, og skriv inn hovedpassordet hvis du blir bedt om det.
+send_tls_mismatch = Kunne ikke sende meldingen. Den utgående serveren svarte uten kryptering, så den utgående krypteringen samsvarer ikke med porten. Bruk STARTTLS for port 587, eller SSL/TLS for port 465, i Verktøy, Konto- og identitetsinnstillinger, og send deretter igjen.\n\n{error}
+mark_folder_read_failed = Kunne ikke merke mappen som lest.\n\n{error}
+update_failed = Oppdateringen kunne ikke lastes ned, så ingenting ble endret.\n\n{error}
+update_rolled_back = Oppdateringen kunne ikke starte, så den forrige versjonen ble gjenopprettet.
+attachment_open_failed = Kunne ikke åpne vedlegget.\n\n{error}
+headers_failed = Kunne ikke laste meldingshodene.\n\n{error}
+wizard_ms_sign_in_first = Logg inn med Microsoft før du fortsetter. Bruk en av de to innloggingsknappene på denne siden.
+wizard_provider_unsupported = ZBox kan ikke logge inn hos denne leverandøren. Merknaden på denne siden forklarer hvorfor. Gå tilbake og bruk en annen e-postadresse, eller avbryt.
+acct_ms_sign_in_first = Logg inn med Microsoft før du lagrer, eller velg Passord som innloggingsmetode.
+ms_sign_in_again = Microsoft-innlogging for {account} trengs igjen. Åpne Konto- og identitetsinnstillinger og logg inn der.
+graph_pgp_too_large = Denne krypterte eller signerte meldingen er større enn det Microsoft tillater for slik e-post, omtrent 3 MB. Send mindre vedlegg, eller slå av Krypter og Signer digitalt for denne meldingen.
+empty_trash_all_failed = Kunne ikke tømme søppelkassen for: {accounts}
+
+[help]

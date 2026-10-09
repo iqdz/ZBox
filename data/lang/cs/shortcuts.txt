@@ -1,0 +1,103 @@
+Obecné
+F6: Cyklické přepínání fokusu mezi podokny
+Ctrl+Tab: Další karta
+Ctrl+Shift+Tab: Předchozí karta
+Ctrl+W nebo Ctrl+F4: Zavřít aktuální kartu
+Escape: Sbalit rozbalené vlákno, pokud má fokus seznam zpráv a nějaké je rozbaleno; jinak zavřít aktuální kartu (zpráva, uložená zpráva nebo neodeslaná zpráva -- při neuložených změnách se nejprve zeptá)
+Klávesa Application nebo Shift+F10: Otevřít místní nabídku na položce seznamu nebo stromu, která má fokus
+F1: Klávesové zkratky, tato stránka
+Ctrl+Shift+Q: Konec -- vždy skutečně ukončí ZBox, i když je v Nastavení zapnuto "Zavřít do oznamovací oblasti" (tlačítko Zavřít okna, Alt+F4 a Ctrl+W na kartě Pošta se při zapnutí tohoto nastavení schovají do oznamovací oblasti místo ukončení; také vlastní položka Ukončit ikony oznamovací oblasti vždy skutečně ukončí)
+Ctrl+Shift+Delete: Vymazat mezipaměť zpráv pro offline použití -- jen místní kopie ZBoxu, nic na žádném serveru (také tlačítko v Nástroje > Nastavení čištění mezipaměti)
+
+Pošta
+Ctrl+N: Nová zpráva
+Ctrl+Shift+N: Nový e-mailový účet
+F5: Přijmout novou poštu pro aktuální účet
+Shift+F5: Přijmout novou poštu pro všechny účty
+Ctrl+Shift+J: Přejít na seznam zpráv Doručené pošty
+Ctrl+Y: Přejít na seznam složek
+Enter na zavřeném účtu nebo složce v seznamu složek: otevřít ji, jako Right arrow
+Ctrl+Shift+B: Adresář
+Ctrl+Shift+F: Hledat zprávy
+Ctrl+Shift+T: Zobrazit související zprávy
+
+Seznam zpráv
+Delete, Shift+Delete, Archivovat, Hvězdička/Zrušit hvězdičku, Označit jako nevyžádanou/není nevyžádaná, Přesunout do a Kopírovat do se všechny vztahují na každou zprávu ve vlákně, když se použijí na SBALENÉM řádku vlákna -- nejprve vlákno rozbalte (Right arrow nebo Enter/Space), abyste působili na jednu zprávu v něm
+Ctrl+A: Vybrat všechny zprávy
+Ctrl+Shift+L: Načíst další zprávy
+Delete: Přesunout zprávy do Koše
+Shift+Delete: Trvale smazat zprávy
+Ctrl+Z: Vrátit zpět poslední Smazat, Archivovat, Označit jako nevyžádanou nebo Označit jako není nevyžádaná
+S: Hvězdička/zrušit hvězdičku u vybraných zpráv
+A: Archivovat vybrané zprávy
+J: Označit vybrané zprávy jako nevyžádané
+Shift+J: Označit vybrané zprávy jako není nevyžádaná
+W: Sledovat vlákno -- přepíná, zda je vlákno, jehož je výběr součástí, Sledované (také v nabídce Zpráva a po kliknutí pravým tlačítkem)
+K: Ignorovat vlákno -- přepíná, zda je toto vlákno Ignorované (také v nabídce Zpráva a po kliknutí pravým tlačítkem)
+M: Přesunout vybrané zprávy -- otevře nabídku Přesunout do se složkami
+Shift+M: Přesunout vybrané zprávy zadáním části názvu složky
+C: Kopírovat vybrané zprávy -- otevře nabídku Kopírovat do se složkami
+Výše uvedené S, A, J, W a K jsou ve výchozím nastavení zapnuty a lze je vypnout v Nastavení (jinak mají přednost před vlastní navigací seznamu zpráv podle prvního písmene)
+Výše uvedené M, Shift+M a C se řídí stejným nastavením
+Enter nebo Space na sbaleném vlákně: otevře nejnovější nepřečtenou zprávu v tomto vlákně (nejnovější zprávu, pokud je celé vlákno přečtené) jako jedinou zprávu na jedné kartě -- pak Ctrl+Shift+Page Down a Ctrl+Shift+Page Up listují zbytkem vlákna, aniž by otevřely druhou zprávu. Na běžné zprávě ji otevře jako obvykle
+Right arrow na sbaleném vlákně: zobrazí jeho zprávy jako seznam, aniž by kteroukoli otevřel -- odtud otevírejte jednu po druhé vlastním Enter nebo Space
+Ctrl+Shift+O: Otevřít zprávu v konverzaci -- celé vlákno na jedné kartě jako seznam jeho zpráv s tělem vybrané zpráva pod ním. Šipkami procházejte seznam a čtěte je jednu po druhé; Enter na řádku otevře tuto jedinou zprávu na její vlastní plné kartě. Stejný název a klávesa jako vlastní příkaz Thunderbirdu
+Left arrow: sbalit vlákno, ve kterém se výběr právě nachází
+*: Rozbalit všechna vlákna (také Zobrazení > Vlákna); \: Sbalit všechna vlákna (také Zobrazení > Vlákna)
+Zobrazení > Vlákna > Všechna / Sledovaná vlákna / Ignorovaná vlákna filtruje, která vlákna se zobrazují -- přepnutí zpět na Všechna vždy vrátí všechny zprávy; tímto se nikdy nic ze složky neodstraní
+
+Otevřená zpráva
+Alt+A: Archivovat tuto zprávu -- jen když její tělo (Text nebo HTML) skutečně má fokus klávesnice; jinde si Alt+A zachovává svůj obvyklý význam otevření nabídky Účty
+Ctrl+R: Odpovědět
+Ctrl+Shift+R: Odpovědět všem
+Ctrl+L: Přeposlat
+Ctrl+Delete nebo Ctrl+D: Přesunout tuto zprávu do Koše. Prosté Delete často zachytí čtečka obrazovky, když má fokus zpráva HTML; Shift+Delete maže trvale
+Ctrl+Shift+Page Down: Další zpráva v tomto vlákně; Ctrl+Shift+Page Up: předchozí. Nahrazuje aktuální kartu místo otevření další, takže je vždy otevřená jen jedna zpráva. U poslední zprávy (nebo první, při pohybu nahoru) to oznámí a zeptá se; opětovné stisknutí téže klávesy zprávu zavře a ukončí vlákno, čímž se vrátíte do seznamu zpráv. (Ctrl+Page Up/Down zůstávají nedotčeny -- ty přepínají karty)
+Ctrl+B: Přepnout zobrazení zprávy (Text/HTML)
+Ctrl+P: Tisk
+Ctrl+Shift+P: Náhled tisku
+Ctrl+S: Uložit zprávu jako
+Ctrl+U: Oznámit jméno a adresu odesílatele
+Ctrl+Shift+U: Oznámit odesílatele a zkopírovat adresu
+Ctrl+Shift+I: Zobrazit vzdálený obsah v této zprávě
+Ctrl+Shift+=: Zvětšit písmo zprávy
+Ctrl+Shift+-: Zmenšit písmo zprávy
+Ctrl+Shift+0: Obnovit velikost písma zprávy
+
+Psaní zprávy
+Ctrl+Enter nebo Alt+S: Odeslat
+Ctrl+S: Uložit koncept
+Ctrl+Shift+A: Připojit soubor
+Ctrl+Shift+S: Vložit podpis účtu v poli Od
+Ctrl+Shift+V: Vložit jako citaci
+Ctrl+Shift+W: Počet slov
+Ctrl+Shift+P: Náhled zprávy tak, jak bude odeslána
+Escape, Ctrl+W nebo Ctrl+F4: Zavřít kartu psaní -- nejprve se zeptá, je-li něco neuloženo, a nabídne Uložit koncept, Zahodit nebo Pokračovat v úpravách
+Každý příkaz níže je také v nabídce Psaní, kterou Alt+C otevře i tehdy, když je fokus uvnitř těla zprávy
+
+Formátování při psaní
+Ctrl+B: Tučné
+Ctrl+I: Kurzíva
+Ctrl+Shift+X: Přeškrtnuté
+Ctrl+Shift+8: Odrážkový seznam
+Ctrl+Shift+7: Číslovaný seznam
+Ctrl+Shift+9: Citace
+Ctrl+Shift+6: Kód
+Ctrl+Alt+1: Nadpis
+Ctrl+K: Vložit odkaz
+Ctrl+Shift+K: Říct, jaké formátování platí v místě kurzoru
+Ctrl+Shift+M: Otevřít nabídku Formát, ať je fokus kdekoli, včetně těla zprávy
+
+Pravopis při psaní
+Ctrl+Shift+F7: Zkontrolovat pravopis
+Ctrl+Shift+F9: Přejít na další pravopisnou chybu
+Ctrl+Shift+F8: Přidat slovo, u kterého se zastavil, do slovníku
+
+Stejná klávesa na dvou místech
+Ctrl+S: Uložit koncept při psaní, Uložit zprávu jako v otevřené zprávě
+Ctrl+B: Tučné při psaní, přepnutí mezi Textem a HTML v otevřené zprávě
+Ctrl+Shift+P: Náhled při psaní, Náhled tisku v otevřené zprávě
+Alt+A: Archivovat, ale jen když má tělo zprávy fokus klávesnice; jinde otevře nabídku Účty
+
+Diagnostika
+Ctrl+Shift+F12: Diagnostika klávesových zkratek -- zapíše do ladicího protokolu řádek pro každou kombinaci stisknutou na kartě psaní, aby šlo prokázat, k čemu se klávesa dostala. Ve výchozím nastavení vypnuto a stejná klávesa ji znovu vypne; stav se vysloví v obou případech

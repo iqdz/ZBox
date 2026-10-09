@@ -1,0 +1,1852 @@
+# ZBox interface language file.
+#
+# To translate ZBox, copy this file, rename it to your language code
+# with the same .lang ending -- fr.lang, ar.lang, es.lang -- and put
+# it in this same folder. Then change only the text on the right of
+# each equals sign. Leave the section names in square brackets and
+# the key names on the left exactly as they are: they are what ZBox
+# looks the text up by, and translating them makes the line do
+# nothing.
+#
+# Anything in curly braces is filled in by ZBox, so {count} becomes a
+# number and {word} becomes a word. Keep every one that appears on a
+# line, spelled the same way. You may move them wherever your own
+# grammar needs them.
+#
+# Where a line ends in _one and another ends in _many, they are the
+# singular and the plural of the same message. If your language needs
+# a different split, write whatever is correct in each: ZBox picks
+# _one when the number is exactly one and _many otherwise.
+#
+# A key you have not translated yet is heard in English rather than
+# being silent, so a part-finished file is safe to use and safe to
+# share.
+#
+# Save the file as UTF-8. Lines beginning with a hash are notes and
+# are ignored.
+
+[meta]
+name = Čeština
+code = cs
+direction = ltr
+translator = ZBox
+app_version = 2026.09
+
+# Everything ZBox says out loud when an action finishes.
+[actions_announcements]
+
+# Writing a message
+message_sent = Zpráva odeslána.
+draft_saved = Koncept uložen.
+signature_inserted = Podpis vložen.
+signature_none = Tento účet nemá podpis.
+signature_saved = Podpis uložen.
+signature_not_saved = Podpis nebyl uložen.
+pasted_as_quotation = Vloženo jako citace.
+clipboard_empty = Ve schránce nic není.
+word_count = Slov: {words}, znaků: {characters}.
+report_copied = Zpráva zkopírována.
+compose_tab_needed = Tento příkaz vyžaduje kartu psaní zprávy.
+attach_file_instead = Přetažené soubory se nevkládají do textu zprávy. Soubor odešlete pomocí Připojit soubor.
+
+# Formatting in the message body
+formatting_here = Formátování zde: {formatting}.
+no_formatting_here = Zde žádné formátování, prostý text.
+
+# Spelling
+nothing_to_check = Není co kontrolovat.
+no_misspellings = Žádné pravopisné chyby.
+spelling_dictionary_unavailable = Pravopisný slovník není k dispozici.
+next_misspelling_first = Nejdřív použijte další pravopisnou chybu.
+word_added = Slovo {word} bylo přidáno do slovníku.
+word_not_added = Slovo {word} nelze přidat do slovníku.
+corrections_applied_one = Použita 1 oprava.
+corrections_applied_many = Použito oprav: {count}.
+corrections_applied_partly = Použito {applied} z {total} oprav. Zbytek byl odmítnut; viz protokol.
+occurrences_replaced_one = Nahrazen 1 výskyt.
+occurrences_replaced_many = Nahrazeno výskytů: {count}.
+
+# Reading mail
+message_did_not_open = Zpráva se neotevřela. Server neodpověděl. Pro opakování stiskněte Enter.
+thread_open = V tomto vlákně: {messages}. Dalším stisknutím zavřete.
+no_thread_selected = Není vybráno žádné vlákno.
+thread_watched = Vlákno je sledováno.
+thread_not_watched = Vlákno již není sledováno.
+thread_ignored = Vlákno je ignorováno.
+thread_not_ignored = Vlákno již není ignorováno.
+none_found = Nic nenalezeno.
+refreshing_this_folder = Obnovuje se tato složka.
+refreshing_all_accounts = Obnovují se všechny účty.
+message_view_html = Zobrazení zprávy: HTML (vykreslené).
+message_view_text = Zobrazení zprávy: Text.
+html_view_still_loading = Zpráva se stále načítá. Escape ji zavře.
+message_still_opening = Otevírá se zpráva. Server je pomalý.
+remote_content_blocked = Vzdálený obsah zablokován.
+remote_content_unblocked = Vzdálený obsah povolen.
+remote_content_already_showing = Vzdálený obsah se v této zprávě již zobrazuje.
+archived = Archivováno.
+copied_to_folder = Zkopírováno do složky {to_folder}.
+deleted_one = Zpráva trvale smazána.
+deleted_many = Trvale smazáno zpráv: {count}.
+trashed_one = Zpráva přesunuta do Koše.
+trashed_many = Do Koše přesunuto zpráv: {count}.
+
+# Accounts and new mail
+no_account_yet = Zatím není žádný účet, na který by se dalo přejít.
+inbox_landed = Doručená pošta účtu {name}.
+account_enabled = Účet {name} povolen.
+auto_check_paused = Automatická kontrola pozastavena pro účet {account}.
+auto_check_resumed = Automatická kontrola zapnuta pro účet {account}.
+account_disabled = Účet {name} zakázán.
+new_mail_one = 1 nová zpráva pro účet {name}.
+new_mail_many = Nových zpráv pro účet {name}: {count}.
+refresh_all_done_one = Obnoven 1 účet.
+refresh_all_done_many = Obnoveno účtů: {count}.
+refresh_all_done_failures = Obnoveno účtů: {count}, neobnoveno: {failed}.
+refresh_all_done_failures_one = Obnoven {count} účet, neobnoveno: {failed}.
+
+# The sender of the message in view
+sender_address_copied = {sender}. Adresa zkopírována.
+sender_no_address = {sender}. Žádná adresa ke zkopírování.
+clipboard_not_opened = {sender}. Schránku nelze otevřít.
+
+# The signature editor
+signature_page_formatted = Formátovaný. Toto se uloží.
+signature_page_html = Zdroj HTML. Toto se uloží.
+signature_page_html_still_wins = Formátovaný. Uloží se stále zdroj HTML.
+
+# Background work
+phishing_list_updating = Seznam phishingu se aktualizuje na pozadí.
+cache_cleared = Vymazáno souborů mezipaměti: {files}, {size} MB.
+hotkeys_diagnostic_on = Diagnostika klávesových zkratek zapnuta, zaškrtnuto
+hotkeys_diagnostic_off = Diagnostika klávesových zkratek vypnuta, nezaškrtnuto
+
+# What a bulk action is called, when ZBox says which one just
+# finished. These are names, not sentences.
+action_archive = Archivovat
+action_delete = Smazat
+action_delete_permanently = Smazat trvale
+action_mark_as_junk = Označit jako nevyžádanou
+action_mark_as_not_junk = Označit jako není nevyžádaná
+action_move_to = Přesunout do
+action_copy_to = Kopírovat do
+action_mark_message = Označit zprávu
+action_undo = Zpět
+
+# Finishing an action on one or more messages. {action} is one of the
+# names just above and {to_folder} is one of your own folders.
+undo_done_one = Vráceno zpět: {action}.
+undo_done_many = Vráceno zpět: {action}, zpráv: {count}.
+junk_marked_one = Označeno jako nevyžádaná.
+junk_marked_many = Označeno jako nevyžádaná zpráv: {count}.
+junk_no_new_sender = Žádný nový odesílatel nebyl zablokován: už je blokován, jde o konferenci nebo o jednu z vašich vlastních adres.
+not_junk_marked_one = Označeno jako není nevyžádaná.
+not_junk_marked_many = Označeno jako není nevyžádaná zpráv: {count}.
+moved_to_one = Přesunuto do složky {to_folder}.
+moved_to_many = Do složky {to_folder} přesunuto zpráv: {count}.
+copied_to_many = Do složky {to_folder} zkopírováno zpráv: {count}.
+marked_read = Označeno jako přečtené.
+marked_unread = Označeno jako nepřečtené.
+
+# When a run of several messages is stopped or partly fails. {done}
+# is the ordinary finished message above, spoken first.
+bulk_cancelled = Zrušeno po {completed} z {total}. Úspěšných: {succeeded}, neúspěšných: {failed}.
+bulk_failed_one = {done} Neúspěšných: {failed} z 1 zprávy.
+bulk_failed_many = {done} Neúspěšných: {failed} ze zpráv: {total}.
+
+# Formatting, as it is spoken while writing. The word on the left of
+# each format_word line is ZBox's own name for that formatting and is
+# never translated; the text on the right is what is said.
+format_word_bold = Tučné
+format_word_italic = Kurzíva
+format_word_strike = Přeškrtnuté
+format_word_href = Odkaz
+format_word_bullet = Odrážkový seznam
+format_word_number = Číslovaný seznam
+format_word_quote = Citace
+format_word_code = Kód
+format_word_heading1 = Nadpis
+format_applied = Použito: {formatting}.
+format_inserted = Vloženo: {formatting}.
+format_not_available = Formátování {formatting} není v prostém textu zprávy dostupné.
+format_on = {formatting} zapnuto
+format_off = {formatting} vypnuto
+link_applied = Odkaz použit.
+link_applied_to_selection = Odkaz použit na výběr.
+plain_body_formatting = Prostý text zprávy zobrazuje své formátování jako značky.
+
+# Reaching either end of a thread
+thread_edge_first = První zpráva v tomto vlákně. Dalším stisknutím zavřete.
+thread_edge_last = Poslední zpráva v tomto vlákně. Dalším stisknutím zavřete.
+jump_unified_inbox = Jednotná doručená pošta.
+remote_none = V této zprávě není žádný vzdálený obsah.
+sender_none = Tato zpráva nemá odesílatele.
+sender_name_no_address = %s, bez adresy
+signature_not_switched = Podpis se nezměnil. Stisknutím Ctrl+Shift+S vložíte podpis tohoto účtu.
+signature_removed_no_signature = Podpis odstraněn. Tento účet žádný nemá.
+signature_switched = Podpis změněn na podpis tohoto účtu.
+spell_not_replaced = Slovo nelze nahradit.
+spell_replaced_with = Nahrazeno slovem {word}.
+folder_marked_read = Označeno jako přečtené zpráv: {count}.
+folder_no_unread = Žádné nepřečtené zprávy.
+threads_all_collapsed = Všechna vlákna sbalena.
+threads_all_expanded = Všechna vlákna rozbalena.
+upd_percent = {percent} procent
+upd_download_done = Stahování dokončeno. Připravuje se aktualizace...
+upd_updated_to = ZBox aktualizován na verzi {version}.
+header_copied = Zkopírováno.
+headers_copied = Všechny hlavičky zkopírovány.
+identity_copies_updated = Kopie a Skrytá kopie aktualizovány pro tuto identitu.
+signature_switched_identity = Podpis změněn na podpis této identity.
+signature_removed_identity = Podpis odstraněn. Tato identita žádný nemá.
+signature_not_switched_identity = Podpis se nezměnil. Stisknutím Ctrl+Shift+S vložíte podpis této identity.
+signature_none_identity = Tato identita nemá podpis.
+move_keys_no_selection = Nejdřív vyberte zprávu.
+move_keys_no_folders = Zatím není z čeho vybírat. Zkuste to za chvíli znovu.
+block_sender_done_one = Odesílatel {sender} zablokován. Jeho nové zprávy půjdou do Koše.
+block_sender_done_many = Zablokováno odesílatelů: {count}. Jejich nové zprávy půjdou do Koše.
+block_sender_already = Odesílatel {sender} je již zablokován.
+block_sender_own = Nezablokováno: je to jedna z vašich vlastních adres.
+block_sender_list_unknown = Nezablokováno: tato zpráva přišla přes konferenci a neuvádí, kdo ji poslal. Zablokování adresy konference by zablokovalo všechny její členy.
+block_sender_moved = Odesílatel zablokován. Do Koše přesunuto zpráv: {count}.
+block_senders_moved = Zablokováno odesílatelů: {senders}. Do Koše přesunuto zpráv: {count}.
+unblock_sender_moved = Odesílatel odblokován. Do Doručené pošty přesunuto zpráv: {count}.
+unblock_senders_moved = Odblokováno odesílatelů: {senders}. Do Doručené pošty přesunuto zpráv: {count}.
+unblock_sender_done = Odesílatel {sender} odblokován.
+unblock_sender_not_blocked = Odesílatel {sender} není zablokován.
+pgp_cm_on = {name} zapnuto.
+pgp_cm_off = {name} vypnuto.
+pgp_cm_identity = Nastavení šifrování změněno na nastavení této identity.
+
+[main_ui]
+
+# The search tab. {term} is what was typed in.
+search_placeholder = Výše něco napište a stiskněte Enter nebo zvolte Hledat.
+search_no_account = Nejprve přidejte účet.
+search_no_term = Zadejte hledaná slova nebo zvolte datum či zaškrtávací políčko.
+search_running = Hledání...
+search_none = Žádné shody pro "{term}".
+search_found_one = 1 shoda pro "{term}".
+search_found_many = Shod pro "{term}": {count}.
+search_bad_date = Zadejte datum jako rok-měsíc-den, například 2025-12-31, volitelně s časem, například 14:30.
+search_bad_range = Konec rozsahu dat je před jeho začátkem.
+search_none_any = Žádné zprávy nevyhovují.
+search_found_one_any = Nalezena 1 zpráva.
+search_found_many_any = Nalezeno zpráv: {count}.
+search_failed = Hledání selhalo.
+
+# The related messages tab
+related_running = Hledání...
+related_none = Nenalezeny žádné související zprávy.
+related_found_one = Nalezena 1 související zpráva.
+related_found_many = Nalezeno souvisejících zpráv: {count}.
+related_failed = Související zprávy nelze vyhledat.
+
+# Writing and sending
+sending_via = Odesílání přes {sender}...
+send_failed = Odeslání selhalo. Podrobnosti najdete v protokolech.
+draft_autosaved = Koncept automaticky uložen.
+draft_autosave_failed = Automatické uložení konceptu selhalo. Podrobnosti najdete v protokolech.
+
+# Reading a message, and its attachments. {folder} here is a folder on
+# your own computer.
+remote_allowed_for_sender = Vzdálený obsah se nyní bude načítat ve zprávách od odesílatele {sender}.
+downloading_attachment = Stahuje se {filename}...
+downloading_attachments_one = Stahuje se 1 příloha...
+downloading_attachments_many = Stahování příloh: {count}...
+saved_to = Uloženo do {folder}
+attachment_download_failed = Stažení přílohy selhalo.
+
+# Getting mail onto the screen
+loading_folder = Načítá se složka {folder} pro účet {account}...
+messages_in_folder = Zpráv ve složce {folder}: {count}.
+messages_in_folder_cached = Zpráv ve složce {folder}: {count} (poslední synchronizovaná kopie, aktualizuje se...)
+no_offline_copy = Složka {folder} zatím nemá kopii pro offline použití.
+refresh_failed_cached = Složku {folder} nelze obnovit: zobrazuje se poslední synchronizovaná kopie.
+no_such_folder = Tento účet nemá složku {folder}.
+load_failed = Načtení zpráv selhalo. Podrobnosti najdete v protokolech.
+no_more_to_load = V této složce nejsou další zprávy k načtení.
+loading_more = Načítají se další zprávy ve složce {folder}...
+more_loaded = Načteno dalších zpráv: {count}.
+no_more_messages = V této složce nejsou další zprávy.
+load_more_failed = Další zprávy nelze načíst: {error}
+loading_unified = Načítá se jednotná složka {folder}...
+messages_in_unified = Zpráv napříč účty v jednotné složce {folder}: {count}.
+messages_in_unified_cached = Zpráv v jednotné složce {folder}: {count} (poslední synchronizovaná kopie, aktualizuje se...)
+auto_purge_done = Automatické čištění odstranilo starých zpráv z Koše a Nevyžádané: {count}.
+
+# The main window's own status line. {folder} and {account} are your
+# own folder and account names and are never translated.
+ready = Připraveno.
+opening_message = Otevírá se zpráva...
+opening_message_already = Otevírá se zpráva... (již se načítá)
+could_not_open_message = Zprávu nelze otevřít.
+could_not_open_that_message = Tu zprávu nelze otevřít.
+could_not_load_message = Tuto zprávu nelze načíst.
+message_still_loading = Ta zpráva se stále načítá.
+folder_still_loading = Složka se stále načítá -- zkuste to za chvíli znovu.
+not_in_thread = Tato zpráva není součástí vlákna.
+no_longer_in_thread = Tato zpráva již není součástí vlákna.
+thread_position = Zpráva {position} z {total} v tomto vlákně.
+thread_finished_one = Konec tohoto vlákna (1 zpráva).
+thread_finished_many = Konec tohoto vlákna (zpráv: {count}).
+select_message_first = Nejdřív vyberte zprávu.
+conversation_failed = Tuto konverzaci nelze otevřít.
+select_message_for_related = Nejdřív vyberte zprávu, jejíž související zprávy chcete zobrazit.
+looking_for_related = Hledají se související zprávy...
+no_threading_headers = Tato zpráva nemá Message-ID ani hlavičky vláken, podle kterých by šlo hledat.
+reply_one_at_a_time = Odpověď funguje vždy jen pro jednu zprávu. Vyberte prosím jedinou zprávu.
+select_message_to_reply = Nejdřív vyberte zprávu, na kterou chcete odpovědět.
+preparing_reply = Připravuje se odpověď...
+reply_load_failed = Původní zprávu pro odpověď nelze načíst.
+select_message_to_forward = Nejdřív vyberte zprávu k přeposlání.
+preparing_forward = Připravuje se zpráva k přeposlání...
+forward_load_failed = Zprávu k přeposlání nelze načíst.
+compose_tab_needed_hint = Tento příkaz vyžaduje kartu psaní zprávy. Zprávu napíšete stisknutím Ctrl+N.
+open_message_first_view = Nejdřív otevřete zprávu a pak stisknutím Ctrl+B přepněte její zobrazení.
+open_message_first_remote = Nejdřív otevřete zprávu a pak stisknutím Ctrl+Shift+I načtěte její vzdálený obsah.
+
+# Acting on messages
+copying_message = Kopíruje se zpráva...
+copy_failed = Kopírování selhalo.
+delete_failed = Smazání selhalo.
+already_in_archive = Již je v Archivu.
+archiving = Archivuje se...
+archive_failed = Archivace selhala.
+action_failed = Akce se nezdařila: {action}.
+nothing_to_undo = Není co vrátit zpět.
+private_mode_on = Soukromý režim je zapnut. Kopie vaší pošty, které ZBox měl na tomto počítači, byly smazány.
+private_mode_off = Soukromý režim je vypnut. ZBox opět uchovává kopie vaší pošty.
+undo_failed = Akci nelze vrátit zpět: {action}.
+
+# Views and folders
+folder_pane_all = Podokno složek: Všechny složky.
+folder_pane_unified = Podokno složek: Jednotné složky.
+sorted_ascending = Seřazeno podle pole {field}, vzestupně.
+sorted_descending = Seřazeno podle pole {field}, sestupně.
+unified_folders_updated = Jednotné složky aktualizovány.
+zoom_reset = Velikost písma zprávy obnovena na výchozí.
+folder_creating = Vytváří se složka "{folder}"...
+folder_created = Složka "{folder}" vytvořena.
+folder_create_failed = Složku nelze vytvořit.
+folder_renaming = Přejmenovává se "{folder}" na "{new_name}"...
+folder_renamed = Složka přejmenována na "{new_name}".
+folder_rename_failed = Složku nelze přejmenovat.
+folder_deleting = Maže se složka "{folder}"...
+folder_deleted = Složka smazána.
+folder_delete_failed = Složku nelze smazat.
+folder_subscribing = Zahajuje se odebírání složky "{folder}"...
+folder_unsubscribing = Ukončuje se odebírání složky "{folder}"...
+folder_subscribed = Odebírání zahájeno.
+folder_unsubscribed = Odebírání ukončeno.
+folder_subscribe_failed = Odebírání složky nelze zahájit.
+folder_unsubscribe_failed = Odebírání složky nelze ukončit.
+
+# Accounts
+account_not_added = Účet nebyl přidán.
+account_added = Účet přidán: {account}
+account_settings_not_saved = Nastavení účtu nebylo uloženo.
+account_updated = Účet aktualizován: {account}
+account_not_removed = Účet nebyl odebrán.
+account_removed = Účet odebrán.
+account_removed_with_files = Účet odebrán. Smazáno místních souborů: {count}.
+default_account_failed = Výchozí účet nelze nastavit.
+default_account_set = Účet {account} je nyní výchozí.
+auto_check_not_saved = Nastavení automatické kontroly nebylo uloženo.
+mute_not_saved = Nastavení ztlumení nebylo uloženo.
+account_muted = Účet {account} ztlumen.
+account_unmuted = Účet {account} již není ztlumen.
+export_done = Exportováno účtů: {count} a nastavení do {path}.
+import_done = Importováno účtů: {count} z {path}.
+
+# Filters, cache and the background lists
+filters_not_saved = Filtry nebyly uloženy.
+filters_saved = Filtry uloženy pro účet {account}.
+filters_checking = Složka {folder} se kontroluje podle vašich filtrů...
+filters_none_matched = Spustit nyní: žádná zpráva ve složce {folder} nevyhověla žádnému povolenému pravidlu.
+filters_run_failed = Filtry nelze spustit.
+filters_moving = Přesouvá se filtrovaných zpráv: {count}...
+filters_move_failures = Filtry: nelze přesunout zpráv: {count}.
+filters_moved = Filtry přesunuly zpráv ze složky {folder}: {count}.
+filters_move_failed = Filtrované zprávy nelze přesunout.
+cache_not_cleared = Mezipaměť nebyla vymazána.
+auto_cache_cleanup = Automatické čištění mezipaměti: zprávy starší než {age}.
+phishing_update_failed = Seznam phishingu nelze aktualizovat: {error}
+blocklist_update_failed = Seznam blokovaných nelze aktualizovat: {error}
+
+# Saving, printing, emptying and syncing
+open_message_first_save = Nejdřív otevřete zprávu a pak použijte Uložit jako.
+saving_message = Ukládá se zpráva...
+save_file_failed = Soubor nelze uložit.
+save_fetch_failed = Zprávu k uložení nelze získat.
+open_message_first_print = Nejdřív otevřete zprávu a pak použijte Tisk.
+open_message_first_preview = Nejdřív otevřete zprávu a pak použijte Náhled tisku.
+refreshing_accounts = Obnovuje se účtů: {count}...
+emptying_trash = Vysypává se Koš pro účet {account}...
+trash_already_empty = Koš již byl prázdný.
+trash_emptied = Koš vysypán: trvale odstraněno zpráv: {count}.
+empty_trash_failed = Koš nelze vysypat.
+emptying_junk = Vysypává se Nevyžádaná pro účet {account}...
+junk_already_empty = Nevyžádaná již byla prázdná.
+junk_emptied = Nevyžádaná vysypána: trvale odstraněno zpráv: {count}.
+junk_emptied_prefix = Nevyžádaná vysypána:
+junk_part_purged = trvale odstraněno: {count}
+junk_part_in_trash = přesunuto do Koše, ale odstranění nebylo potvrzeno, zkontrolujte Koš: {count}
+junk_part_not_moved = nepřesunuto do Koše, stále v Nevyžádané: {count}
+empty_junk_failed = Nevyžádanou nelze vysypat.
+back_online = Opět online.
+offline_sync_running = Synchronizuje se účet {account} pro offline použití...
+offline_sync_failed = Synchronizace pro offline použití selhala: {error}
+
+# Senders, contacts, privacy and zoom
+select_or_open_message = Nejdřív vyberte nebo otevřete zprávu.
+select_or_open_message_ctrl_u = Nejdřív vyberte nebo otevřete zprávu a pak stiskněte Ctrl+U.
+no_sender_address = Tato zpráva nemá adresu odesílatele, kterou by šlo přidat.
+contact_added = Kontakt {contact} přidán do adresáře.
+contact_already_there = Kontakt {contact} již v adresáři je.
+privacy_saved = Nastavení soukromí uloženo. Zprávu znovu otevřete, aby se použilo.
+message_font_size = Velikost písma zprávy: {size} pt.
+
+# Deleting and moving several messages
+deleting_one = Trvale se maže zpráva
+deleting_many = Trvale se maže zpráv: {count}
+trashing_one = Zpráva se přesouvá do Koše
+trashing_many = Do Koše se přesouvá zpráv: {count}
+undo_partly_restored = Vráceno zpět: {action}, ale nelze obnovit zpráv: {count} -- mohly být mezitím přesunuty, smazány nebo vypršet.
+moves_report = {action}: přesunuto zpráv {moved} z {total}.
+moves_report_failed = Nepřesunuto, stále v původní složce: {count}.
+
+tray_tooltip_one = ZBox — 1 nepřečtená zpráva
+tray_tooltip_many = ZBox — nepřečtených zpráv: {count}
+account_unreachable = Účet {account} je nedostupný. Jeho automatické kontroly se pozastavují na minut: {minutes}.
+bulk_copy_failed = Zprávy nelze zkopírovat.
+bulk_copy_failed_status = Kopírování selhalo.
+bulk_loading_archive = Zprávy se stále načítají -- zkuste archivaci za chvíli znovu.
+bulk_loading_delete = Zprávy se stále načítají -- zkuste smazání za chvíli znovu.
+bulk_loading_flag = Zprávy se stále načítají -- zkuste označení hvězdičkou za chvíli znovu.
+bulk_loading_generic = Zprávy se stále načítají -- zkuste to za chvíli znovu.
+bulk_none = Není vybrána žádná zpráva.
+bulk_none_archive = Není vybrána žádná zpráva k archivaci.
+bulk_none_delete = Není vybrána žádná zpráva ke smazání.
+bulk_none_junk = Není vybrána žádná zpráva k označení jako nevyžádaná.
+bulk_none_not_junk = Není vybrána žádná zpráva k označení jako není nevyžádaná.
+delete_refused_still = Server odmítl zprávu smazat; stále je ve složce {folder}.
+delete_refused_trash = Je v Koši, ale server odmítl zprávu trvale smazat.
+delete_resume_failed = Nelze smazat zpráv z dřívějšího mazání: {count}.
+done_perm_delete_one = Zpráva trvale smazána.
+done_trash_one = Zpráva přesunuta do Koše.
+filters_applied = Filtry použity na zprávy ve složce {folder}: {count}.
+filters_failed = Filtry nelze spustit.
+filters_running = Spouštějí se filtry na složce {folder}
+flag_failed = Hvězdičku nelze aktualizovat.
+flag_updated = Hvězdička aktualizována.
+folder_verb_subscribing = Zahajuje se odebírání:
+folder_verb_unsubscribing = Ukončuje se odebírání:
+mark_read_failed = Zprávy nelze označit jako přečtené.
+mark_unread_failed = Zprávy nelze označit jako nepřečtené.
+notify_new_mail_body = Nová pošta pro účet {name}: {count} ({noun}).
+notify_new_mail_title = Nová pošta
+notify_noun_many = zpráv
+notify_noun_one = zpráva
+report_done = {verb}: {done} z {count} zpráv.
+report_verb_deleted = Smazáno
+report_verb_permanent = Trvale smazáno
+running_copy_many = Kopíruje se zpráv: {count}
+running_copy_one = Kopíruje se zpráva
+running_junk_many = Označuje se jako nevyžádaná zpráv: {count}
+running_junk_one = Označuje se jako nevyžádaná
+running_move_many = Přesouvá se zpráv: {count}
+running_move_one = Přesouvá se
+running_not_junk_many = Označuje se jako není nevyžádaná zpráv: {count}
+running_not_junk_one = Označuje se jako není nevyžádaná
+running_perm_delete_one = Trvale se maže zpráva...
+running_read_many = Označuje se jako přečtené zpráv: {count}
+running_read_one = Označuje se jako přečtené
+running_trash_one = Zpráva se přesouvá do Koše...
+running_unread_many = Označuje se jako nepřečtené zpráv: {count}
+running_unread_one = Označuje se jako nepřečtené
+settings_saved_no_startup = Nastavení uloženo. Položku spuštění Windows nelze aktualizovat.
+settings_saved_status = Nastavení uloženo.
+spam_blocked_sender = Blokovaný odesílatel
+spam_possible_phishing = Možný phishing
+undo_running_many = Vrací se zpět: {action} (zpráv: {count})
+undo_running_one = Vrací se zpět: {action}
+mark_folder_read_failed = Složku nelze označit jako přečtenou.
+marking_folder_read = Složka se označuje jako přečtená...
+upd_ready_at_exit = Aktualizace je již stažena. Nainstaluje se při ukončení ZBoxu.
+upd_checking = Kontrola aktualizací...
+upd_up_to_date = ZBox je aktuální.
+upd_available_source = Je dostupný ZBox {version}. Tato kopie běží ze zdrojového kódu, takže ji aktualizujte pomocí gitu.
+upd_check_failed = Aktualizace nelze zkontrolovat: {error}
+opening_attachment = Otevírá se {filename}...
+loading_headers = Načítají se hlavičky...
+offline_inbox_only = Pro offline použití se uchovává jen Doručená pošta a Archiv.
+offline_sync_done_inbox = Synchronizováno zpráv v Doručené poště a Archivu pro offline použití: {count}.
+working_offline = Práce offline: zobrazuje se poslední synchronizovaná kopie Doručené pošty/Odeslané pošty/Konceptů.
+emptying_trash_all = Vysypává se Koš pro všechny účty...
+trash_emptied_all = Koš vysypán v účtech: {accounts}, trvale odstraněno zpráv: {count}.
+
+[menus]
+
+# The words on the menus.
+#
+# Not the keys beside them. A shortcut like Ctrl+R is written in
+# ZBox's own code and is never read from this file, so nothing here
+# can change a shortcut. The ampersand marks the Alt letter; put it
+# where you like or leave it out, because ZBox removes it and puts
+# the original Alt letter back in brackets after your words. Your own
+# folder names are never translated.
+
+# The menu bar
+bar_file = &Soubor
+bar_edit = &Úpravy
+bar_view = &Zobrazení
+bar_message = &Zpráva
+bar_compose = &Psaní
+bar_tools = &Nástroje
+bar_help = &Nápověda
+
+# File
+file_new = Nový
+file_new_message = Zpráva
+file_new_account = E-mailový účet...
+file_open_saved_message = Otevřít uloženou zprávu...
+file_close = Zavřít
+file_save_message_as = Uložit zprávu jako...
+file_get_new_for = Přijmout nové zprávy pro
+file_get_new_all = Všechny účty
+file_get_new_current = Aktuální účet
+file_offline = Offline
+file_work_offline = Pracovat offline
+file_sync_now = Synchronizovat nyní
+file_print = Tisk...
+file_print_preview = Náhled tisku...
+file_exit = Konec
+
+# Edit
+edit_undo = Zpět
+edit_select_all = Vybrat vše
+edit_find_messages = Najít zprávy...
+
+# Message
+message_reply = Odpovědět
+message_reply_all = Odpovědět všem
+message_forward = Přeposlat
+message_archive = Archivovat
+message_delete = Smazat
+message_delete_permanently = Smazat trvale
+message_mark = Označit
+mark_read = Přečtené
+mark_unread = Nepřečtené
+mark_flagged = S hvězdičkou
+mark_junk = Nevyžádaná
+mark_not_junk = Není nevyžádaná
+message_watch_thread = Sledovat vlákno
+message_ignore_thread = Ignorovat vlákno
+message_open_conversation = Otevřít zprávu v konverzaci
+message_show_related = Zobrazit související zprávy
+message_add_sender_to_address_book = Přidat odesílatele do adresáře
+message_announce_sender = Oznámit odesílatele
+message_announce_copy_sender = Oznámit odesílatele a zkopírovat adresu
+
+# View
+view_folders = Složky
+folders_all = Všechny
+folders_unified = Jednotné
+folders_jump_inbox = Přejít na seznam zpráv Doručené pošty
+folders_configure_unified = Nastavit jednotné složky...
+view_sort_by = Řadit podle
+sort_date = Datum
+sort_subject = Předmět
+sort_from = Od
+sort_descending = Sestupně (nejnovější první)
+sort_ascending = Vzestupně (nejstarší první)
+view_threads = Vlákna
+threads_all = Všechna
+threads_watched = Sledovaná vlákna
+threads_ignored = Ignorovaná vlákna
+threads_expand_all = Rozbalit všechna vlákna
+threads_collapse_all = Sbalit všechna vlákna
+view_load_more = Načíst další zprávy
+view_toggle_message_view = Přepnout mezi zobrazením textu a HTML
+view_show_remote_content = Zobrazit vzdálený obsah v této zprávě
+view_message_zoom = Zvětšení zprávy
+zoom_increase = Zvětšit písmo zprávy
+zoom_decrease = Zmenšit písmo zprávy
+zoom_reset = Obnovit velikost písma zprávy
+
+# Compose
+compose_send = &Odeslat
+compose_save_draft = &Uložit koncept
+compose_attach = &Připojit soubor...
+compose_fmt_bold = &Tučné
+compose_fmt_italic = &Kurzíva
+compose_fmt_strike = &Přeškrtnuté
+compose_fmt_bullet = &Odrážkový seznam
+compose_fmt_number = &Číslovaný seznam
+compose_fmt_quote = &Citace
+compose_fmt_code = &Kód
+compose_fmt_heading1 = &Nadpis
+compose_link = &Vložit odkaz...
+compose_formatting = &Formátování zde
+compose_spellcheck = &Zkontrolovat pravopis...
+compose_spellcheck_next = &Další pravopisná chyba
+compose_spellcheck_add = &Přidat slovo do slovníku
+compose_insert_signature = &Vložit podpis
+compose_paste_quotation = &Vložit jako citaci
+compose_word_count = &Počet slov
+compose_preview = &Náhled...
+compose_diagnostics = &Diagnostika psaní...
+compose_edit_signature = &Upravit podpis...
+compose_hotkeys_diagnostic = &Diagnostika klávesových zkratek
+
+# Tools
+tools_account_settings = Nastavení účtů a identit...
+tools_mute_account = Ztlumit účet
+tools_pause_auto_check = Pozastavit automatickou kontrolu
+tools_disable_account = Zakázat účet
+tools_remove_account = Odebrat účet...
+tools_address_book = Adresář...
+tools_message_filters = Filtry zpráv...
+tools_import = Importovat účty a nastavení...
+tools_export = Exportovat účty a nastavení...
+tools_cache_cleanup = Nastavení čištění mezipaměti...
+tools_privacy = Soukromí a blokování obsahu...
+tools_settings = Nastavení...
+
+# Help
+help_shortcuts = Klávesové zkratky...
+help_about = O programu ZBox...
+
+# The account and folder menu, opened with the Menu key or a right
+# click in the account tree
+tree_new_account = Nový účet...
+tree_account_settings = Nastavení účtů a identit...
+tree_mute_account = Ztlumit účet
+tree_pause_auto_check = Pozastavit automatickou kontrolu
+tree_enable_account = Povolit účet
+tree_disable_account = Zakázat účet
+tree_set_default_account = Nastavit jako výchozí účet
+tree_remove_account = Odebrat účet...
+tree_refresh = Obnovit
+tree_new_folder = Nová složka...
+tree_empty_trash = Vysypat koš
+tree_empty_junk = Vysypat nevyžádanou
+tree_rename_folder = Přejmenovat složku...
+tree_delete_folder = Smazat složku...
+tree_subscribe_folder = Odebírat složku
+tree_unsubscribe_folder = Přestat odebírat složku
+
+# The message list menu, opened the same two ways
+list_select_all = Vybrat vše
+list_reply = Odpovědět
+list_reply_all = Odpovědět všem
+list_forward = Přeposlat
+list_mark = Označit
+list_archive = Archivovat
+list_delete_to_trash = Smazat (přesunout do Koše)
+list_delete_permanently = Smazat trvale
+list_move_to = Přesunout do
+list_copy_to = Kopírovat do
+
+# The notification area icon
+tray_open = &Otevřít ZBox
+tray_unread_one = 1 nepřečtená zpráva
+tray_unread_many = Nepřečtených zpráv: {count}
+tray_no_unread = Žádné nepřečtené zprávy
+tray_settings = &Nastavení...
+tray_quit = &Ukončit ZBox
+
+# The formatting menu inside a message you are writing
+format_bold = &Tučné
+format_italic = &Kurzíva
+format_strike = &Přeškrtnuté
+format_bullet = &Odrážkový seznam
+format_number = &Číslovaný seznam
+format_quote = &Citace
+format_code = &Kód
+format_heading1 = &Nadpis
+format_insert_link = &Vložit odkaz...
+format_formatting_here = &Formátování zde
+tools_enable_account = Povolit účet
+edit_undo_action = Zpět: {action}
+tree_mark_folder_read = Označit složku jako přečtenou
+help_updates = &Aktualizace
+help_check_updates = &Zkontrolovat aktualizace nyní...
+help_update_settings = &Nastavení aktualizací...
+help_releases_page = &Otevřít stránku vydání
+message_attachments = Přílohy
+message_no_attachments = Bez příloh
+message_save_all_attachments = Uložit všechny přílohy
+view_full_headers = Úplné hlavičky
+folders_go_to_tree = Přejít na seznam složek
+list_block_sender = Zablokovat tohoto odesílatele
+list_unblock_sender = Odblokovat tohoto odesílatele
+sort_received = Přijato
+sort_star = Hvězdička
+sort_order_received = Pořadí přijetí
+sort_priority = Priorita
+sort_recipient = Příjemce
+sort_correspondents = Korespondenti
+sort_size = Velikost
+sort_read = Přečteno
+sort_junk_status = Stav nevyžádané
+sort_attachments = Přílohy
+sort_threaded = Podle vláken
+sort_unthreaded = Bez vláken
+view_columns = Sloupce
+tools_openpgp_keys = Správce klíčů OpenPGP
+tools_smime_certs = Správce certifikátů S/MIME
+compose_pgp_encrypt = &Šifrovat
+compose_pgp_sign = &Elektronicky podepsat
+compose_pgp_attach_key = &Připojit můj veřejný klíč
+
+[dialogs]
+set_theme_restart_confirm = Restartovat ZBox, aby se použila změna motivu?
+set_ui_theme_label = &Motiv rozhraní:
+set_ui_theme_note = Barvy menu, seznamů, dialogů a textového zobrazení zprávy. Podle systému používá vlastní světlý nebo tmavý režim aplikací Windows. Půlnoční modrá, Teplá tmavá a Měkký kontrast jsou tmavé motivy s jemnějšími barvami. Zprávy HTML si ponechávají vlastní barvy a Vysoký kontrast Windows má vždy přednost. Projeví se při příštím spuštění ZBoxu.
+set_theme_system = Podle systému
+set_theme_light = Světlý
+set_theme_dark = Tmavý
+set_theme_midnight = Půlnoční modrá
+set_theme_warm = Teplá tmavá
+set_theme_soft = Měkký kontrast
+set_language_restart_confirm = Restartovat ZBox, aby se použila změna jazyka?
+# Message box titles and bodies that are not errors. A title is read
+# first by a screen reader, so it is a key like any sentence. Titles are
+# shared: one key each, used everywhere that title appears.
+# Write a paragraph break as backslash n. A real line break cannot live
+# in one of these lines.
+
+title_contact_harith = Kontakt na Harithe
+title_identity = Identita
+title_show_password = Zobrazit heslo
+title_missing_information = Chybějící údaje
+title_unsupported_provider = Nepodporovaný poskytovatel
+title_test_connection = Vyzkoušet připojení
+title_new_contact = Nový kontakt
+title_edit_contact = Upravit kontakt
+title_delete_contact = Smazat kontakt
+title_import_contacts = Importovat kontakty
+title_export_contacts = Exportovat kontakty
+title_rename_group = Přejmenovat skupinu
+title_delete_group = Smazat skupinu
+title_send = Odeslat
+title_send_failed = Odeslání selhalo
+title_attach_file = Připojit soubor
+title_save_draft = Uložit koncept
+title_documentation = Dokumentace ZBoxu
+title_open_link = Otevřít odkaz
+title_filter_rule = Pravidlo filtru
+title_master_password = Hlavní heslo
+title_attachment_saved = Příloha uložena
+title_attachments_saved = Přílohy uloženy
+title_download_failed = Stažení selhalo
+title_print = Tisk
+title_print_preview = Náhled tisku
+title_related_messages = Související zprávy
+title_search = Hledání
+title_unlock = Odemknout
+title_unlock_methods = Způsoby odemknutí
+title_desktop_shortcut = Zástupce na ploše
+title_spell_check = Kontrola pravopisu
+title_plain_text_password = Nalezeno heslo v prostém textu
+title_startup_error = Chyba spuštění ZBoxu
+
+identity_email_required = Zadejte e-mailovou adresu.
+
+wizard_password_not_shown = Heslo nelze v tomto systému zobrazit. Stále se normálně zadává a ukládá.
+wizard_email_required = Před pokračováním zadejte platnou e-mailovou adresu.
+wizard_test_needs_server = Před vyzkoušením zadejte přihlašovací e-mail a server příchozí pošty.
+wizard_test_succeeded = Připojení se podařilo. V Doručené poště nalezeno zpráv: {count}.
+
+contact_email_required = E-mailová adresa je povinná.
+contact_select_to_edit = Vyberte kontakt k úpravě.
+contact_select_to_delete = Vyberte kontakt ke smazání.
+contact_delete_confirm = Smazat kontakt {label} z adresáře?
+contacts_import_choose_file = Vyberte soubor .vcf (vCard) nebo .csv k importu.
+contacts_imported = Importováno kontaktů: {count}.
+contacts_import_empty = V tomto souboru nebyly nalezeny žádné kontakty.
+contacts_none_to_export = Nejsou žádné kontakty k exportu.
+contacts_exported = Exportováno kontaktů: {count} do:\n{path}
+group_name_exists = Skupina s názvem "{name}" již existuje.
+group_delete_confirm = Smazat skupinu "{name}"? Její kontakty se nesmažou.
+
+send_no_account = Před odesláním přidejte účet nebo jeden vyberte v poli Od.
+send_no_recipient = Zadejte alespoň jednoho příjemce v poli Komu.
+draft_no_account = Před uložením konceptu přidejte účet nebo jeden vyberte v poli Od.
+attached_file = Připojeno: {name}\n\nPři odeslání bude připojeno souborů: {count}.
+
+documentation_copied = Úplná dokumentace ZBoxu byla zkopírována do schránky.
+
+filter_rule_needs_name = Pojmenujte toto pravidlo.
+filter_rule_needs_condition = Nastavte alespoň jednu podmínku (Od, Komu nebo Předmět).
+filter_rule_needs_action = Vyberte alespoň jednu akci: označit jako přečtené, hvězdička nebo přesunout do složky.
+
+master_password_set = Hlavní heslo nastaveno. Uložte si ho na bezpečné místo: ZBox se na něj zeptá jednou na každém novém počítači a při ztrátě ho nelze obnovit.
+master_password_offer = Bez hlavního hesla lze uložená hesla účtů přečíst jen na tomto počítači a v tomto účtu Windows. Pokud ZBox zkopírujete jinam, bude se muset každý účet přihlásit znovu.\n\nNastavit nyní?
+
+attachment_saved = Příloha uložena do:\n{path}
+attachments_saved = Příloh uloženo: {count} do:\n{path}
+
+shortcut_created_settings = Zástupce vytvořen:\n{path}\n\nSpouští ZBox z:\n{base}
+
+spellcheck_no_dictionary = Chybí pravopisný slovník, takže kontrola pravopisu není v této kopii ZBoxu dostupná.
+spellcheck_none_found = Nenalezeny žádné pravopisné chyby.
+
+# One whole sentence for each count, never a word slotted in.
+unlock_replace_passkey_one = Nastavit na tomto počítači přístupový klíč a zapomenout ten uložený z jiného počítače?\n\nWindows vás požádají o potvrzení pomocí Hello. Starý přístupový klíč zůstávající na druhém počítači tam zůstane nedotčen a bude dál fungovat, pokud tuto složku vrátíte, ale bude se muset nastavit znovu.
+unlock_replace_passkey_many = Nastavit na tomto počítači přístupový klíč a zapomenout uložené z jiných počítačů (počet: {count})?\n\nWindows vás požádají o potvrzení pomocí Hello. Staré přístupové klíče zůstávající na druhém počítači tam zůstanou nedotčeny a budou dál fungovat, pokud tuto složku vrátíte, ale budou se muset nastavit znovu.
+unlock_method_works = Tento způsob funguje.
+
+plain_text_password_found = Soubor data\config\himalaya.toml stále obsahuje heslo v prostém textu (auth.raw) ze starší konfigurace účtu.\n\nOdeberte tento účet a přidejte ho znovu, nebo smažte data\config\himalaya.toml, aby se vytvořil znovu s použitím zabezpečeného úložiště přihlašovacích údajů.
+
+# main_frame's titles.
+title_account_list_unavailable = Seznam účtů není dostupný
+title_open_message = Otevřít zprávu
+title_run_filters = Spustit filtry
+title_clear_cache = Vymazat mezipaměť zpráv pro offline použití
+title_remove_account = Odebrat účet
+title_new_folder = Nová složka
+title_rename_folder = Přejmenovat složku
+title_delete_folder = Smazat složku
+title_subscribe = Odebírat
+title_unsubscribe = Přestat odebírat
+title_open_saved_message = Otevřít uloženou zprávu
+title_save_message_as = Uložit zprávu jako
+title_empty_trash = Vysypat koš
+title_empty_junk = Vysypat nevyžádanou
+title_synchronize_offline = Synchronizovat pro offline použití
+title_export_accounts = Exportovat účty a nastavení
+title_import_accounts = Importovat účty a nastavení
+title_show_related = Zobrazit související zprávy
+title_reply = Odpovědět
+title_forward = Přeposlat
+title_undo = Zpět
+title_delete_permanently = Smazat trvale
+title_delete = Smazat
+title_copy_to = Kopírovat do
+title_archive = Archivovat
+title_accounts_locked = Účty jsou uzamčeny
+
+select_account_first = Nejdřív vyberte účet ve stromu.
+select_account_or_folder = Nejdřív vyberte účet nebo složku.
+filters_left_behind = Zpráv, které vyhověly filtru, ale stále jsou ve složce {folder}: {count}.
+cache_clear_confirm = Vymazat mezipaměť zpráv pro offline použití u všech účtů?\n\nTím se smažou jen místní kopie ZBoxu. Nic se neodstraní z žádného poštovního serveru a zprávy se budou stahovat znovu, až je budete potřebovat.
+account_remove_confirm = Odebrat účet {name} ({address})?\n\nPošta na serveru se nesmaže.\nKopie stažené do tohoto počítače se smažou.\nUložené heslo se smaže.
+folder_delete_confirm = Trvale smazat složku "{folder}" a vše v ní pro účet {address}?\n\nTo nelze vrátit zpět.
+empty_trash_confirm = Trvale smazat všechny zprávy v Koši pro účet {address}?\n\nTo nelze vrátit zpět.
+empty_junk_confirm = Trvale smazat všechny zprávy v Nevyžádané pro účet {address}?\n\nTo nelze vrátit zpět.
+sync_select_account = Vyberte účet (ne jednotnou složku), který se má synchronizovat pro offline použití.
+accounts_imported = Importováno účtů: {count}:\n\n{names}\n\nHesla se nikdy neexportují a šifrované úložiště hesel je vázáno na tento uživatelský účet Windows, takže u každého importovaného účtu je nutné jednou zadat heslo přes Nástroje > Nastavení účtů a identit, než se bude moci připojit.
+accounts_import_none = V tomto souboru nebyly nalezeny žádné účty. Nastavení se přesto importovalo, pokud je soubor obsahoval.
+delete_permanently_confirm_one = Trvale smazat tuto zprávu? Tím se obejde složka Koš a nelze to vrátit zpět.
+accounts_locked = Uložená hesla účtů byla zapsána na jiném počítači, takže je tu nelze přečíst.\n\nKaždý účet se bude muset znovu přihlásit k poštovnímu serveru. Abyste tomu příště předešli, nastavte hlavní heslo v Nastavení, Zabezpečení aplikace a dat na počítači, kde účty již fungují.
+master_password_remove_confirm = Odebrat hlavní heslo? Uložená hesla účtů pak půjdou přečíst jen na tomto počítači a v tomto účtu Windows. Pokud ZBox později zkopírujete jinam, bude se muset každý účet přihlásit znovu.\n\nOdebrat nyní?
+shortcut_offer = Umístit zástupce ZBoxu na plochu?\n\nBude spouštět tuto složku ZBoxu:\n{path}\n\nZástupce si zaznamená přesně toto umístění. Pokud složku ZBoxu později přesunete, otevřete Nastavení, Oznamovací oblast a okno a znovu zvolte Vytvořit zástupce na ploše, aby ukazoval na nové místo.
+shortcut_created = Zástupce vytvořen:\n{path}
+
+# Labels and control names. A label written with an ampersand carries
+# an Alt key: translate the words, leave the ampersand out, and ZBox
+# puts the same letter back on the end in brackets.
+form_display_name = Zobrazované jméno
+form_email_address = E-mailová adresa
+form_your_name = Vaše jméno
+form_login_email = Přihlašovací e-mail
+form_password = Heslo
+srv_imap_host = Server příchozí pošty (IMAP)
+srv_imap_port = Port příchozí pošty
+srv_imap_encryption = Šifrování příchozí pošty
+srv_smtp_host = Server odchozí pošty (SMTP)
+srv_smtp_port = Port odchozí pošty
+srv_smtp_encryption = Šifrování odchozí pošty
+
+acct_login_email_label = Přihlašovací e-mail (slouží k přihlášení)
+acct_new_password_label = Nové heslo (nechte prázdné pro zachování současného)
+acct_new_password_name = Nové heslo
+acct_identity_email_label = E-mailová adresa (slouží k odesílání a přijímání)
+acct_identities_label = Další identity (aliasy)
+acct_identities_name = Další identity
+acct_add_identity = &Přidat identitu...
+acct_edit_identity = &Upravit identitu...
+acct_remove_identity = &Odebrat identitu
+acct_signature = Podpis
+acct_edit_signature = &Upravit podpis...
+acct_junk_folder = Složka nevyžádané pošty
+acct_account_status = Stav účtu
+acct_disable_account = Zakázat tento účet
+acct_default_account = Výchozí účet
+acct_set_default = Nastavit jako výchozí účet
+acct_notifications = Oznámení o nové poště
+acct_mute_notifications = Ztlumit oznámení pro tento účet
+acct_server_settings = Nastavení serveru
+
+wiz_before_you_start = Než začnete
+wiz_notice_name = Důležité upozornění
+wiz_google_instructions = &Otevřít pokyny k heslu aplikace Google
+wiz_intro = Vaše jméno a e-mailová adresa
+wiz_login_same = Přihlašovací e-mail je stejný jako e-mailová adresa výše
+wiz_show_password = &Zobrazit heslo
+wiz_preset_applied = Použito přednastavení pro {name}.
+wiz_summary_name = Souhrn účtu
+wiz_review = Zkontrolujte a pak kliknutím na Dokončit tento účet uložte.
+wiz_test_connection = &Vyzkoušet připojení
+wiz_testing = Zkouší se připojení...
+
+# Settings. The long explanatory notes under each setting are a
+# separate batch; these are the labels and the control names.
+set_debug_logging = (Povolit ladicí protokolování, ukládá se do: data\logs)
+set_language_label = &Jazyk rozhraní:
+set_language_label_only_english = &Jazyk rozhraní: (pouze angličtina)
+set_headers_checkbox = &Zobrazovat hlavičky zprávy nad otevřenou zprávou
+set_zoom_label = Písmo a zvětšení zprávy:
+set_font_override = &Přepsat výchozí velikost písma zprávy
+set_font_size_name = Velikost písma zprávy (body)
+set_reading_font_name = Písmo pro čtení
+set_reading_font_label = Písmo pro čtení (prázdné = výchozí):
+set_view_label = Zobrazení těla zprávy při otevření zprávy:
+set_view_text = Text
+set_view_html = HTML (vykreslené)
+set_engine_label = Vykreslovací modul HTML:
+set_engine_edge = Edge / WebView2 (moderní vykreslování)
+set_engine_ie = Starší MSHTML (nejlepší podpora čtečky obrazovky)
+set_runtime_label = Běhové prostředí WebView2:
+set_runtime_auto = Automaticky — použít přibalené prostředí, pokud existuje (doporučeno)
+set_runtime_fixed = Pouze přibalená pevná verze
+set_runtime_evergreen = Systémové běhové prostředí (aktualizuje ho Windows)
+set_sr_box = Ovládání oznámení čtečky obrazovky
+set_silence_label = Doba ztišení čtečky obrazovky pro HTML:
+set_silence_name = Doba ztišení čtečky obrazovky pro HTML v milisekundách
+set_focus_delay_label = Zpoždění fokusu přístupnosti WebView:
+set_focus_delay_name = Zpoždění fokusu přístupnosti WebView, úroveň 1 až 10
+set_announce_label = Doba zobrazení oznámení:
+set_announce_name = Doba zobrazení oznámení v milisekundách
+set_announce_actions = &Vyslovovat oznámení o akcích, nové poště a upozorněních
+set_attachment_dir_label = Složka pro ukládání příloh:
+set_attachment_dir_name = Složka pro ukládání příloh
+set_browse = &Procházet…
+set_autosave_label = Interval automatického ukládání konceptu:
+set_autosave_name = Interval automatického ukládání konceptu v sekundách
+set_auto_purge_label = Automaticky mazat staré zprávy z Koše a Nevyžádané:
+set_auto_purge_name = Automaticky mazat Koš a Nevyžádanou po tomto počtu dní
+set_bare_keys = &Povolit jednoklávesové zkratky S (hvězdička), A (archivovat), J (označit jako nevyžádanou)/Shift+J (označit jako není nevyžádaná), W (sledovat vlákno), K (ignorovat vlákno), M (přesunout)/Shift+M (přesunout podle názvu složky) a C (kopírovat do) v seznamu zpráv
+set_sound_label = Zvuk a oznámení:
+set_sounds_enabled = &Přehrávat zvuky oznámení
+set_desktop_notifications = &Zobrazovat oznámení na ploše o nové poště
+set_theme_label = Změnit motiv zvuků:
+set_theme_label_only_default = Změnit motiv zvuků: (pouze výchozí motiv)
+set_security_box = Zabezpečení aplikace a dat
+set_lock_on_quit = &Zamknout ZBox po úplném ukončení
+set_private_mode = &Soukromý režim: neukládat žádnou poštu v tomto počítači ani na disku
+set_unlock_methods_button = &Způsoby odemknutí…
+set_master_password_button = &Hlavní heslo…
+set_tray_label = Oznamovací oblast a okno:
+set_minimize_to_tray = &Minimalizovat do oznamovací oblasti
+set_close_to_tray = &Zavřít do oznamovací oblasti
+set_stay_maximized = &Mít ZBox vždy maximalizovaný
+set_run_at_startup = &Spouštět ZBox při startu Windows
+set_desktop_shortcut_button = &Vytvořit zástupce na ploše
+
+# The explanatory note under each setting. One paragraph, one key.
+set_debug_note = Ladicí protokolování pomáhá diagnostikovat potíže, když se něco pokazí. Vypnutím se přestanou zapisovat nové záznamy; stávající soubory protokolů se nemažou. Projeví se při příštím spuštění ZBoxu.
+set_language_note = Projeví se při příštím spuštění ZBoxu. Jazykové soubory jsou prosté textové soubory ve složce lang ZBoxu, vedle složky sounds. Chcete-li přidat nový, zkopírujte složku en, přejmenujte kopii a soubor .lang v ní na kód svého jazyka a přeložte text vpravo od každého znaku rovná se. Vše, co dosud není přeloženo, se vyslovuje anglicky místo mlčení, takže rozpracovaný soubor lze bezpečně používat.
+set_headers_note = Od, Komu, Kopie, Datum a Předmět, zobrazené nad tělem zprávy v textovém i HTML zobrazení. Bez toho nelze zjistit, kdo zprávu poslal, aniž byste zavřeli kartu a vrátili se do seznamu. Fokus stále přistane v těle zprávy; blok hlaviček je o jedno Shift+Tab dál. Projeví se při příštím otevření zprávy.
+set_zoom_note = Zvětšuje nebo zmenšuje text otevřené zprávy nezávisle na zbytku ZBoxu a na vlastním škálování displeje ve Windows. Platí pro textové i HTML zobrazení. "Písmo pro čtení" volitelně vynutí konkrétní písmo (např. Consolas, OpenDyslexic) pro tělo zprávy; nechte prázdné, aby zůstalo běžné písmo. Ctrl+Shift+= / Ctrl+Shift+- / Ctrl+Shift+0 v nabídce Zobrazení zvětší, zmenší nebo obnoví jen velikost písma bez otevření tohoto dialogu a uplatní se okamžitě na všechny otevřené zprávy. Změny provedené zde se také uplatní okamžitě po OK.
+set_view_note = HTML je výchozí. Zobrazuje zprávu tak, jak byla odeslána, a čtou ho NVDA i JAWS: při otevření stránky HTML ZBox ztiší vlastní oznámení prohlížeče, umístí čtecí kurzor na první řádek zprávy a udržuje vlastní zkratky ZBoxu funkční i uvnitř stránky, včetně F6 pro vyvedení fokusu zpět ven. Text zobrazuje tutéž zprávu jako prostý neformátovaný text v běžném editačním poli -- bez obrázků, bez rozvržení a bez čehokoli, co závisí na nainstalovaném modulu prohlížeče. Stisknutím Ctrl+B v otevřené zprávě přepnete oběma směry.
+set_engine_note = Edge vykresluje moderní CSS, ale spouští stránku v samostatném procesu a svůj obsah čtečce obrazovky předává jen přes rozhraní, ke kterému se wxPython nedostane -- takže se zpráva může otevřít bez čehokoli čitelného. Starší MSHTML je modul, který používaly Outlook Express a Windows Mail: běží ve stejném procesu a zveřejňuje běžný strom dokumentu, takže ho NVDA a JAWS čtou v režimu procházení jako každou webovou stránku. Projeví se při příštím otevření zprávy.
+set_runtime_note = Systémové běhové prostředí je udržováno přes Windows Update, takže modul čtoucí vaši poštu se může změnit bez upozornění -- tak se může pokazit funkční zobrazení HTML zprávy na počítači, kde se se ZBoxem nic nezměnilo. Přibalená kopie ve složce deps ukotví přesnou verzi, se kterou byl ZBox testován. Spusťte tools\get_webview2.bat a nainstalujte ji. Pokud přibalená kopie není, ZBox stejně použije systémové běhové prostředí, takže se vždy spustí. Projeví se při příštím spuštění ZBoxu.
+set_sr_intro = Kolik toho ZBox nechá čtečku obrazovky říkat při otevírání zprávy a jak dlouho zůstávají vlastní mluvená oznámení ZBoxu.
+set_silence_note = Při otevření zprávy HTML může ZBox podržet syntetický Ctrl až 2 sekundy, aby ztišil oznámení prohlížeče čtečkou obrazovky. Předmět zprávy se již používá jako název stránky, což zabraňuje čtení URL v base64 nahlas, ale čtečka stále ohlašuje ovládací prvek a typ dokumentu přes začátek zprávy, proto je to ve výchozím nastavení zapnuto. Zvolte Vypnuto pro vypnutí, nebo delší dobu, pokud hluk stále proniká.
+set_focus_delay_note = Když se zpráva HTML dokončí načítat, ZBox tak dlouho čeká, než ji skutečně zaměří. To, že WebView2 ohlásí načtení stránky, a to, že Windows dokončí strom přístupnosti té stránky, není tentýž okamžik; příliš brzké zaměření způsobí, že NVDA/JAWS ohlásí obecné "Web content page" místo zprávy nebo po otevření chvíli hlásí zprávu jako nedostupnou. Volby jsou od 0,1 sekundy do 1 sekundy. Zvolte delší dobu, pokud to stále slyšíte, a kratší, až bude otevírání spolehlivé, pro svižnější otevření.
+set_announce_note = Ctrl+U a Ctrl+Shift+U oznamují odesílatele v malém dialogu, který se sám zavře, protože stavový řádek se vyslovuje jen tehdy, pokud má vaše čtečka obrazovky zapnuté hlášení stavového řádku. Toto je doba, po kterou dialog zůstává. Nastavte ji podle rychlosti své řeči: příliš krátká a zavře se uprostřed věty, což maří účel. Jakákoli klávesa jej zavře dříve; šipky jej nechají otevřený, abyste si mohli znovu přečíst. Čeká na klávesu jej drží otevřený, dokud nějakou nestisknete.
+set_attachment_dir_note = Kam "Uložit vše" zapisuje přílohy, když má zpráva více než jednu. Vytvoří se automaticky, pokud neexistuje. Zpráva s jedinou přílohou se stále ptá, kam ji uložit, jako dříve. Nechte prázdné pro výchozí:\n{path}
+set_autosave_note = Jak často se otevřená karta psaní sama ukládá do Konceptů, zatímco píšete. Uložit koncept (Ctrl+S) stále ukládá na požádání v obou případech a zavření karty s neuloženým textem vždy nabídne uložení. Vypnuto automatické ukládání vypíná. Méně než 15 sekund se nenabízí -- to by byla cesta na server soupeřící s vaším psaním.
+set_auto_purge_note = Trvale odstraňuje zprávy z Koše a Nevyžádané, jakmile tam leží tento počet dní -- totéž trvalé odstranění, které na požádání provádí Vysypat koš a Vysypat nevyžádanou, spouští se automaticky jednou denně, dokud je ZBox otevřený. Ve výchozím nastavení zapnuto na 30 dní. Vypnuto to vypíná. Po odstranění zprávy to nelze vrátit zpět.
+set_bare_keys_note = Je-li zapnuto, stisknutí samotného S, A, J, W nebo K v seznamu zpráv okamžitě přepne hvězdičku, archivuje, označí vybrané zprávy jako nevyžádané (Shift+J je označí jako není nevyžádaná) nebo sleduje/ignoruje vlákno, jehož je výběr součástí -- Archivovat a Označit jako nevyžádanou nemají potvrzení ani vrácení zpět. Vypnutím se S, A, J, W a K vrátí k běžné navigaci seznamem podle prvního písmene. Ctrl+S a Ctrl+Shift+A fungují v obou případech dál. Projeví se okamžitě.
+set_sounds_note = Krátké tóny pro průběh, nové zprávy, odeslání, odpověď nebo přeposlání, mazání a výsledky hledání. Vypnuto vypíná všechny zvuky v aplikaci; oznámení čtečky obrazovky a stavového řádku zůstávají v obou případech nedotčena.
+set_desktop_notifications_note = Oznámení Windows pro každou dávku nové pošty, oddělené od zvuku výše. Vypnuto je vypíná pro všechny účty; jednotlivý účet lze také ztlumit zvlášť v Nastavení účtů a identit.
+set_theme_note = Vlastní motivy jsou složky umístěné do složky sounds ZBoxu, každá s vlastními soubory progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav a none_found.wav. Chybějící soubor motivu se vrátí k výchozímu zvuku.
+set_theme_note_only_default = Vlastní motivy jsou složky umístěné do složky sounds ZBoxu, každá s vlastními soubory progress-tick.wav, incoming-message.wav, action-done.wav, delete.wav, searching.wav, searching_done.wav a none_found.wav. Chybějící soubor motivu se vrátí k výchozímu zvuku. Dokud nepřidáte další složku motivu, je k dispozici jen "default".
+set_lock_note = ZBox se pak při spuštění zeptá na jeden ze způsobů odemknutí, než se otevře jakýkoli účet. Stačí kterýkoli z nich: přístupový klíč, bezpečnostní klíč nebo hlavní heslo. Zavření do oznamovací oblasti není ukončení a znovu nezamyká; Soubor > Konec a Ukončit z ikony oznamovací oblasti ano. Pokud není nic zaregistrováno a není nastaveno hlavní heslo, zámek se přeskočí, aby vás nevyčlenil z vaší vlastní pošty.
+set_security_note = Hlavní heslo je jediné ze tří, které cokoli šifruje: díky němu může tato složka otevřít uložená hesla účtů na jiném počítači. Přístupový klíč nebo bezpečnostní klíč odemyká aplikaci jen na tomto. Žádný z nich nenahrazuje hlavní heslo na počítači, kde se ZBox dosud nepoužíval.
+set_private_mode_note = Zprávy se čtou ze serveru a uchovávají se jen v paměti. Neuchovávají se žádné kopie pro offline použití, uložené zprávy ani ladicí protokoly a otevřené přílohy a data prohlížeče z HTML pošty se při zavření ZBoxu smažou. Zavření také ukončí všechny programy, které ZBox spustil, včetně těch, které zobrazují přílohu, vyprázdní schránku a přestane tomuto počítači důvěřovat, pokud nebyl soukromý režim zapnut z něj. Windows stále uchovávají některé záznamy, které žádný program nemůže odstranit, například seznam jednotek USB, stránkovací soubor a protokoly antiviru a sítě.
+title_private_mode = Soukromý režim
+private_mode_need_master = Soukromý režim potřebuje hlavní heslo, protože na počítači, který není váš, otevře vaše účty jen hlavní heslo. Nastavte ho tlačítkem Hlavní heslo a pak zapněte soukromý režim.
+private_mode_enter_master = Zadejte hlavní heslo pro zapnutí soukromého režimu.
+private_mode_confirm = Soukromý režim neuchovává žádné kopie vaší pošty na tomto počítači ani na disku, ze kterého ZBox běží. Jeho zapnutím se smažou kopie ZBoxu pro offline použití, uložené zprávy, otevřené přílohy, data prohlížeče z HTML pošty a ladicí protokoly. Na vašich poštovních serverech se nic nesmaže a vaše účty, kontakty a nastavení zůstanou. Zapnout soukromý režim?
+set_minimize_note = Minimalizace ZBoxu skryje jeho tlačítko na hlavním panelu a nechá ho běžet za ikonou v oznamovací oblasti. Levým kliknutím na ikonu (nebo Enter/Space, když má fokus klávesnice) okno vrátíte.
+set_close_note = Tlačítko Zavřít okna, Alt+F4 a Ctrl+W stisknuté na kartě Pošta schovají ZBox do oznamovací oblasti místo ukončení. Soubor > Konec (Ctrl+Shift+Q) a vlastní položka Ukončit ikony oznamovací oblasti ZBox skutečně ukončí v obou případech, takže vždy existuje cesta z klávesnice, jak skončit bez doteku oznamovací oblasti.
+set_stay_maximized_note = ZBox se spouští maximalizovaný a vrátí se na maximalizovaný, pokud ho obnovíte. Řádek nabídek, záhlaví a okraj okna nejsou dotčeny -- není to celoobrazovkový režim bez okrajů, takže všechny zkratky nabídek s Alt stále fungují.
+set_run_at_startup_note = Spouští ZBox automaticky po přihlášení do Windows, rovnou do oznamovací oblasti místo zobrazení okna. Projeví se okamžitě, nejen při příštím spuštění.
+set_desktop_shortcut_note = Umístí zástupce ZBoxu na plochu a nahradí případného stávajícího. Zástupce si ukládá přesné umístění této složky ZBoxu, takže pokud ZBox přesunete nebo zkopírujete jinam, stiskněte toto znovu na nové kopii, aby na ni zástupce na ploše ukazoval. Projeví se okamžitě a nečeká na OK.
+
+# The Address Book, its contact form and its groups.
+ab_name = Jméno
+ab_phone = Telefon
+ab_notes = Poznámky
+ab_heading = Adresář
+ab_contacts = Kontakty
+ab_new = &Nový...
+ab_edit = &Upravit...
+ab_delete = &Smazat
+ab_import = &Importovat...
+ab_export = &Exportovat...
+ab_groups_label = Skupiny (konference)
+ab_groups_name = Skupiny
+ab_new_group = &Nová skupina...
+ab_rename_group = &Přejmenovat skupinu...
+ab_delete_group = &Smazat skupinu
+ab_manage_members = &Spravovat členy...
+ab_all_contacts = Všechny kontakty
+ab_add_member = Přidat >>
+ab_remove_member = << Odebrat
+ab_members_of = Členové skupiny {name}
+
+# The spell check dialog.
+sp_not_in_dictionary_label = &Není ve slovníku:
+sp_not_in_dictionary_name = Není ve slovníku
+sp_in_this_line_label = V tomto řádku:
+sp_in_this_line_name = V tomto řádku
+sp_suggestions_label = &Návrhy:
+sp_suggestions_name = Návrhy
+sp_replace_with_label = &Nahradit za:
+sp_replace_with_name = Nahradit za
+sp_replace = &Nahradit
+sp_replace_all = &Nahradit vše
+sp_ignore = &Ignorovat
+sp_ignore_all = &Ignorovat vše
+sp_add_to_dictionary = &Přidat do slovníku
+btn_close = &Zavřít
+
+# Privacy and Content Blocking.
+priv_remote_label = Vzdálený obsah ve zprávách:
+priv_block_remote = &Blokovat vzdálený obsah, dokud o něj nepožádám (doporučeno)
+priv_blocklist_label = Seznam blokování reklam a sledovačů:
+priv_block_known = &Blokovat známé domény reklam a sledovačů
+priv_update_daily = &Aktualizovat seznam denně na pozadí
+priv_update_now = &Aktualizovat nyní
+priv_junk_label = Pravidla nevyžádané pošty:
+priv_check_inbox = &Kontrolovat novou poštu v Doručené poště podle blokovaných odesílatelů a známých phishingových odkazů
+priv_move_blocked = &Automaticky přesouvat poštu od blokovaných odesílatelů do Nevyžádané
+priv_update_phishing = &Aktualizovat seznam phishingu nyní
+priv_blocked_label = Blokovaní odesílatelé:
+priv_blocked_name = Blokovaní odesílatelé
+priv_remove_blocked = &Odebrat blokovaného odesílatele
+priv_never_junk_label = Odesílatelé, kteří nikdy nejsou považováni za nevyžádané:
+priv_never_junk_name = Odesílatelé, kteří nikdy nejsou považováni za nevyžádané
+priv_remove_never_junk = &Odebrat odesílatele, který není nevyžádaný
+priv_allowed_label = Odesílatelé, kterým je povoleno načítat vzdálený obsah:
+priv_allowed_name = Povolení odesílatelé
+priv_remove_selected = &Odebrat vybraného odesílatele
+
+# Message Filters.
+filt_rule_name = Název pravidla
+filt_enabled = &Povoleno
+filt_match_label = Shoda:
+filt_match_all = &Shoda se všemi z následujících (A)
+filt_match_any = &Shoda s kteroukoli z následujících (NEBO)
+filt_conditions_label = Podmínky (nechte hodnotu prázdnou pro přeskočení):
+filt_condition_field = Pole podmínky {number}
+filt_condition_contains = Podmínka {number} obsahuje
+filt_actions_label = Akce:
+filt_mark_read = &Označit jako přečtené
+filt_flag = &Označit zprávu hvězdičkou
+filt_move_label = Přesunout do složky:
+filt_move_name = Přesunout do složky
+filt_rules_name = Pravidla filtrů
+filt_new = &Nové pravidlo...
+filt_edit = &Upravit pravidlo...
+filt_delete = &Smazat pravidlo
+filt_up = &Posunout nahoru
+filt_down = &Posunout dolů
+filt_run_label = Spustit nyní na složce:
+filt_run_name = Složka pro Spustit nyní
+filt_run_now = &Spustit nyní
+
+# The unlock window and the Unlock Methods dialog.
+unl_passkey = &Odemknout přístupovým klíčem (Windows Hello)
+unl_security_key = &Odemknout bezpečnostním klíčem
+unl_master_password_label = &Hlavní heslo:
+unl_master_password_name = Hlavní heslo
+unl_unlock = &Odemknout
+unl_exit = &Ukončit ZBox
+unl_methods_label = &Registrované způsoby:
+unl_methods_name = Registrované způsoby odemknutí
+unl_add_passkey = &Přidat přístupový klíč…
+unl_add_key = &Přidat bezpečnostní klíč…
+unl_reassign = &Znovu přiřadit přístupový klíč tomuto počítači…
+unl_test = &Vyzkoušet…
+unl_remove = &Odebrat
+
+# Writing a message: the header fields, the buttons under the body,
+# and the Preview and Composer Diagnostics dialogs.
+comp_from = Od
+comp_to = Komu
+comp_cc = Kopie
+comp_bcc = Skrytá kopie
+comp_subject = Předmět
+comp_attach_button = Připojit soubor...
+comp_sending = Odesílání...
+comp_report_label = &Zpráva:
+comp_report_name = Zpráva
+comp_refresh = &Obnovit
+comp_copy = &Kopírovat
+comp_preview_read = Tak, jak ji čte příjemce
+comp_preview_source = HTML, které bude odesláno
+
+# An open message, its blocked-content bar and its attachments.
+name_message_body = Tělo zprávy
+mv_blocked_notice = Oznámení o blokovaném obsahu
+mv_show_remote = &Zobrazit vzdálený obsah
+mv_always_allow = &Vždy povolit tohoto odesílatele
+mv_message_headers = Hlavičky zprávy
+mv_attachments = Přílohy
+mv_attachments_count = Přílohy ({count})
+mv_save_attachment = Uložit: {filename}
+mv_save_all = Uložit vše
+mv_html_view = Zobrazení HTML zprávy
+mv_saved_message = Uložená zpráva
+mv_show_remote_tip = Znovu načíst tuto zprávu se vzdálenými obrázky a styly. Známé sledovače zůstávají blokovány.
+mv_always_allow_tip = Načítat vzdálený obsah v každé zprávě od odesílatele {sender}.
+
+# The search tab.
+srch_account = Účet
+srch_folder = Složka
+srch_for = Hledat
+srch_look_in = Hledat v
+srch_in_all = Vše
+srch_in_subject = Předmět
+srch_in_from = Od
+srch_in_to = Komu
+srch_in_body = Tělo
+srch_date = Datum
+srch_date_any = Kdykoli
+srch_date_today = Dnes
+srch_date_yesterday = Včera
+srch_date_week = Posledních 7 dní
+srch_date_month = Posledních 30 dní
+srch_date_year = Tento rok
+srch_date_custom = Vlastní rozsah
+srch_from_date = Od data (rok-měsíc-den, volitelně s časem)
+srch_to_date = Do data (rok-měsíc-den, volitelně s časem)
+srch_unread = Pouze nepřečtené
+srch_flagged = Pouze s hvězdičkou
+srch_attachment = Má přílohu
+
+# The signature editor.
+sig_editors = Editory podpisu
+sig_formatted = Podpis, formátovaný
+sig_source = Podpis, zdroj HTML
+sig_plain_label = Alternativa v prostém textu (odesílá se spolu s HTML)
+sig_plain_name = Alternativa v prostém textu
+
+# About ZBox.
+about_text_name = Text o programu ZBox
+about_view_license = &Zobrazit licenci...
+about_google = &Hesla aplikací Google...
+about_support = &Podpořit ZBox -- vývoj a údržba jednou osobou
+about_repos = &Repozitáře aplikací Harithe na GitHubu
+about_contact = &Kontakt na Harithe
+btn_close_plain = Zavřít
+btn_cancel_plain = Zrušit
+
+# The license window.
+eula_heading = Licence ZBoxu
+eula_text_name = Text licence ZBoxu
+eula_third_party = Stránky licencí součástí třetích stran:
+eula_agree = &Souhlasím s výše uvedenými podmínkami
+eula_agree_name = Přečetl(a) jsem si licenční podmínky ZBoxu a souhlasím s nimi
+eula_disagree = &Nesouhlasím
+eula_next = &Další
+
+# Documentation and Keyboard Shortcuts.
+doc_text_name = Text dokumentace ZBoxu
+doc_copy = Kopírovat do schránky
+shortcuts_heading = Klávesové zkratky
+shortcuts_text_name = Text klávesových zkratek
+
+# The main window's own panes.
+mf_toolbar = Hlavní panel nástrojů
+mf_tabs = Karty ZBoxu
+tree_heading = Účty a složky
+tree_name = Strom účtů a složek
+envlist_heading = Zprávy
+envlist_name = Seznam zpráv
+rdr_heading = Zpráva
+rdr_name = Čtečka zpráv
+conv_heading_one = Konverzace: 1 zpráva
+conv_heading_many = Konverzace: zpráv: {count}
+
+# A run of several messages, and the cache dialog.
+bulk_progress = Hotovo: {completed} z {total}.
+bulk_cancelling = Ruší se -- dokončuje se aktuální zpráva...
+cache_clear_now = Vymazat mezipaměť zpráv pro offline použití nyní... (Ctrl+Shift+Delete)
+
+# What a screen reader says on a password field while it is masked.
+acc_protected = {label}, chráněno
+
+# The explanatory note under a control, one paragraph per key.
+acct_note_display_name = Zobrazované jméno je volitelné -- nechte prázdné, aby se odesílalo pod vlastním jménem účtu.
+acct_note_identity = E-mailová adresa se může lišit od přihlašovacího e-mailu, pokud má váš poskytovatel k této schránce připojenou vlastní doménu. Pošta se bude odesílat a přijímat pod výše uvedenou adresou, zatímco přihlášení stále používá přihlašovací e-mail. Nechte pole hesla prázdné, aby se zachovalo heslo již uložené pro tento účet -- například po změně hesla aplikace Gmail sem zadejte nové; jinak ho nechte prázdné.
+acct_note_identities = Další adresy, ze kterých může tento účet odesílat a odpovídat. Při odpovědi na zprávu odeslanou na jednu z nich se pole Od nastaví na tuto adresu místo té výše.
+acct_note_signature = Připojuje se ke každé nové zprávě, odpovědi a přeposlání odeslané z tohoto účtu, pod řádek "-- ". Nechte prázdné pro žádný. Upravit podpis otevře formátovaný editor, kde jsou k dispozici tučné písmo, seznamy a odkazy; pole výše pak obsahuje verzi v prostém textu, která odchází spolu s ním.
+acct_note_junk = Do které skutečné složky přesouvá zprávy Označit jako nevyžádanou. "{automatic}" používá tentýž odhad podle poskytovatele, který již používají Archiv a Koš; nastavte to jen tehdy, je-li ten odhad špatný nebo má vaše složka nevyžádané pošty vlastní název.
+acct_note_disable = Zakázaný účet se nikdy nekontaktuje -- žádné IDLE, žádné pravidelné obnovování, nic -- dokud se znovu nepovolí. Ve stromu se stále zobrazuje s označením (zakázáno) a jeho již stažená pošta zůstává dostupná offline. Je to stejné přepínání jako Účty > Zakázat účet nebo místní nabídka účtu; toto je jen další místo, kudy se k němu dostat.
+acct_note_default = Složky tohoto účtu se ve stromu zobrazují jako první a nová zpráva se ve výchozím nastavení odesílá z něj, pokud se ručně nezmění v okně psaní. Neovlivňuje, jakou adresu použije odpověď nebo přeposlání -- to již sleduje zprávu, na kterou se odpovídá (viz Další identity výše). Vždy existuje právě jeden výchozí účet, takže odškrtnutí u současného výchozího bez zaškrtnutí u jiného ho nechá beze změny -- zaškrtněte místo toho políčko jiného účtu, abyste mu výchozí postavení předali.
+acct_note_mute = &Ztlumení blokuje zvuk nové pošty, mluvené oznámení a oznámení Windows tohoto účtu bez ohledu na to, jak jsou jinak nastaveny. Neovlivňuje ostatní účty a stále podléhá hlavním přepínačům v Nastavení > Zvuk a oznámení (celkově zvuky a oznámení na ploše).
+wiz_note_app_password = Pokud již máte pro ZBox vytvořené heslo aplikace, pokračujte stisknutím Další.
+wiz_note_login = Přihlašovací údaje.\nPokud se váš přihlašovací e-mail liší od adresy výše, například váš účet u poskytovatele je login@example.net, ale chcete odesílat a přijímat jako you@example.org, zadejte zde přihlašovací e-mail. Vlastní adresu odesílatele můžete nastavit později v Nastavení účtů a identit.
+wiz_note_servers = Nastavení serveru, předvyplněné tam, kde je doména rozpoznána. Upravte vše, co má být jiné.
+wiz_preset_none = Pro tuto doménu nebylo nalezeno přednastavení. Zadejte nastavení serveru svého poskytovatele ručně; stránky nápovědy vašeho poskytovatele je uvádějí.
+ab_note_groups = Napište název skupiny do pole Komu, Kopie nebo Skrytá kopie okna psaní, aby se najednou vyplnili všichni její členové.
+cache_note_intro = Tyto volby odstraňují jen místní kopie ZBoxu. Nic se nemaže z žádného poštovního serveru a odstraněná zpráva se při příštím otevření stáhne znovu.
+cache_note_age = Automatické čištění běží jednou denně, když ZBox deset minut nezaznamenal žádnou aktivitu klávesnice a není otevřená žádná zpráva. Řídí se vlastním datem každé zprávy, včetně zpráv, které jsou stále ve vašem účtu.
+filt_note_intro = Pravidla se spouštějí postupně shora dolů a testují Od, Komu a Předmět. Použijí se automaticky na novou poštu, jakmile dorazí do Doručené pošty tohoto účtu; pomocí Spustit nyní níže je použijete na zprávy, které již ve složce jsou.
+filt_note_run_now = Použije každé povolené pravidlo výše postupně na každou zprávu, která již je ve vybrané složce -- nejprve uloží vaše změny, stejně jako OK.
+mp_note_intro = Tyto účty byly nastaveny na jiném počítači. Zadejte hlavní heslo, abyste zde odemkli jejich uložená hesla. Na tomto počítači se na něj zeptáme jen jednou.\n\nBez něj se každý účet bude muset znovu přihlásit k poštovnímu serveru.
+priv_note_remote = Obrázky, šablony stylů a písma, které zpráva načítá z internetu, sdělují odesílateli, kdy jste ji otevřeli a odkud. Při zapnutí se žádné nenačtou: nad zprávou se zobrazí oznámení, co bylo zablokováno, a Ctrl+Shift+I je načte jen pro tuto jednu zprávu. Obrázky připojené přímo ke zprávě se zobrazují vždy. Skripty a vložené rámce se odstraňují v obou případech a nikdy se nenačítají.
+priv_note_blocklist = Toto je druhá vrstva. Záleží na ní, když načtete vzdálený obsah zprávy nebo povolíte odesílatele: obrázky se načtou, ale vše, co pochází ze známé domény sledování nebo reklam, se stále nenačte. Seznam se stahuje z veřejných seznamů reklam a sledovačů a slučuje se; aktualizace trvá vteřinu či dvě a běží na pozadí.
+priv_note_junk = Žádné hádání. Označit jako nevyžádanou přidá odesílatele do seznamu blokovaných níže, pokud zpráva nepřišla přes konferenci. Označit jako není nevyžádaná přidá odesílatele do seznamu nikdy nevyžádaných a ta zpráva se již nikdy nekontroluje. Nová zpráva od blokovaného odesílatele je v seznamu označena jako Blokovaný odesílatel; ta, která odkazuje na známý phishingový nebo škodlivý web, je označena jako Možný phishing. Vlastní filtrování nevyžádané pošty vašeho poskytovatele běží jako dříve.
+priv_status_phishing_updating = Seznam phishingu: aktualizuje se na pozadí. Výsledek zobrazíte znovu otevřením tohoto dialogu.
+priv_status_updating = Aktualizuje se na pozadí. Výsledek zobrazíte znovu otevřením tohoto dialogu.
+rel_note_intro = Zprávy související se zprávou "{subject}" podle hlaviček Message-ID/References napříč všemi složkami tohoto účtu.
+srch_note_intro = Hledejte slova ve všech účtech a složkách, nebo hledání zúžte volbami níže. Nechte slova prázdná, abyste zprávy našli jen podle data nebo zaškrtávacích políček.
+sig_note_plain = Nechte alternativu v prostém textu prázdnou a při stisknutí Uložit se vytvoří z formátovaného podpisu.
+unified_note_intro = Vyberte, které složky se mají napříč všemi účty sloučit. Každá zaškrtnutá se stane jedinou položkou ve stromu, která spojuje tuto složku ze všech vašich účtů.
+
+# Window titles, the caption on a spoken announcement, and the prompt
+# inside a small system dialog.
+title_about = O programu ZBox
+title_account_settings = Nastavení účtů a identit: {name}
+title_new_account = Nový účet
+title_address_book = Adresář
+title_members = Členové: {name}
+ab_group_name_prompt = Název skupiny:
+title_new_group = Nová skupina
+title_cache_cleanup = Nastavení čištění mezipaměti
+cache_age_prompt = Automaticky odebírat zprávy z mezipaměti starší než:
+title_automatic_cleanup = Automatické čištění
+comp_link_prompt = Adresa odkazu:
+title_insert_link = Vložit odkaz
+title_composer_diagnostics = Diagnostika psaní
+title_formatted_preview = Formátovaný náhled
+title_license_agreement = Licenční smlouva ZBoxu
+title_message_filters = Filtry zpráv: {account}
+title_master_password_required = Vyžadováno hlavní heslo
+title_privacy_dialog = Soukromí a blokování obsahu
+title_privacy = Soukromí
+title_settings = Nastavení
+set_tab_general = Obecné
+set_tab_personalization = Přizpůsobení
+set_tab_accessibility = Přístupnost a klávesové zkratky
+set_tab_maintenance = Údržba a čištění
+set_tab_sounds = Zvuky a oznámení
+set_tab_security = Zabezpečení
+title_unified_folders = Jednotné složky
+title_zbox_locked = ZBox je zamknutý
+title_message_view = Zobrazení zprávy
+title_remote_content = Vzdálený obsah
+title_refresh = Obnovit
+title_refresh_all = Obnovit vše
+mv_choose_folder = Vyberte složku pro uložení přílohy
+title_thread = Vlákno
+title_inbox = Doručená pošta
+title_compose = Psaní
+title_watch_thread = Sledovat vlákno
+title_ignore_thread = Ignorovat vlákno
+title_edit_signature = Upravit podpis
+title_account = Účet
+mf_folder_name_prompt = Název složky:
+mf_new_name_prompt = Nový název:
+title_refresh_all_accounts = Obnovit všechny účty
+title_sender = Odesílatel
+title_new_mail = Nová pošta
+mf_export_dialog_title = Exportovat všech účtů: {count} a nastavení
+mf_related_tab = Související: {subject}
+title_hotkeys_diagnostic = Diagnostika klávesových zkratek
+set_choose_attachment_dir = Vyberte složku pro ukládání příloh
+
+# The lock screen and the Unlock Methods dialog: its notes, the name
+# a button takes when it is unavailable, and every status line.
+unl_note_locked = ZBox je zamknutý. K odemknutí použijte kterýkoli ze způsobů níže. Zrušení zavře ZBox bez otevření jakéhokoli účtu.
+unl_note_foreign_passkey = Přístupový klíč uložený s touto složkou patří jinému počítači, takže ho nelze zde použít. Odemkněte bezpečnostním klíčem nebo hlavním heslem a pak pomocí Nastavení, Zabezpečení, Způsoby odemknutí nastavte přístupový klíč na tomto počítači.
+unl_note_methods = Kterýkoli z těchto způsobů odemkne ZBox, když je zapnut zámek aplikace, spolu s hlavním heslem. Přístupový klíč používá Windows Hello na tomto počítači; bezpečnostní klíč je klíč FIDO2 přes USB nebo NFC a funguje na jakémkoli počítači, do kterého ho zapojíte.
+unl_note_not_encryption = Tyto způsoby odemykají aplikaci. Nic nešifrují: hlavní heslo je stále jediné, co může otevřít uložená hesla účtů na počítači, kde se tato složka dosud nepoužívala. Musí se nastavit jako první a bez něj nelze přidat žádný z nich.
+unl_add_passkey_unavailable = &Přidat přístupový klíč (nedostupné)
+unl_add_key_unavailable = &Přidat bezpečnostní klíč (nedostupné)
+unl_reassign_unavailable = &Znovu přiřadit přístupový klíč tomuto počítači (nedostupné)
+unl_status_cancelled_passkey = Přístupový klíč byl zrušen. ZBox je stále zamknutý.
+unl_status_cancelled_key = Bezpečnostní klíč byl zrušen. ZBox je stále zamknutý.
+unl_status_enter_password = Zadejte hlavní heslo.
+unl_status_no_master = Hlavní heslo není nastaveno, takže zatím nelze přidat přístupový klíč ani bezpečnostní klíč. Nastavte ho tlačítkem Hlavní heslo v Nastavení, Zabezpečení a pak se sem vraťte. Hlavní heslo je to, co otevírá uložená hesla účtů na jiném počítači; přístupový klíč odemyká aplikaci jen na tomto, takže nemůže stát sám.
+unl_status_unsupported = Windows tohoto počítače nepodporují přístupové klíče ani bezpečnostní klíče, takže zde ZBox může odemknout jen hlavní heslo.
+unl_status_foreign_one = 1 přístupový klíč patří jinému počítači a nemůže zde odemknout ZBox. Opětovné přiřazení jej nahradí klíčem vytvořeným na tomto počítači.
+unl_status_foreign_many = Přístupových klíčů patřících jinému počítači: {count}. Nemohou zde odemknout ZBox. Opětovné přiřazení je nahradí klíčem vytvořeným na tomto počítači.
+unl_status_foreign_one_no_hello = 1 přístupový klíč patří jinému počítači a nemůže zde odemknout ZBox. Windows Hello zde není nastaveno, takže ho nelze na tomto počítači nahradit; Odebrat ho zapomene.
+unl_status_foreign_many_no_hello = Přístupových klíčů patřících jinému počítači: {count}. Nemohou zde odemknout ZBox. Windows Hello zde není nastaveno, takže je nelze na tomto počítači nahradit; Odebrat je zapomene.
+unl_status_no_hello = Windows Hello není na tomto počítači nastaveno, takže zde nelze přidat přístupový klíč. Bezpečnostní klíč stále ano.
+unl_status_none_registered = Zatím není zaregistrován žádný způsob odemknutí.
+unl_status_add_cancelled_passkey = Přidání přístupového klíče bylo zrušeno.
+unl_status_add_cancelled_key = Přidání bezpečnostního klíče bylo zrušeno.
+unl_status_added = Přidáno: {name}.
+unl_status_reassign_cancelled = Opětovné přiřazení bylo zrušeno. Nic se nezměnilo.
+unl_status_reassigned = Přidáno {name} a zapomenuto z jiných počítačů: {count}.
+unl_status_test_cancelled = Zkouška byla zrušena.
+unl_status_removed = Odebráno.
+unl_remove_warning_last = Odebrat {name}?\n\nJe to jediný zaregistrovaný způsob odemknutí a není nastaveno hlavní heslo, takže při zapnutém zámku aplikace by nezbylo nic, čím by se ZBox dal odemknout. Zámek se přeskočí, aby vás nevyčlenil, ale ZBox se pak otevře odemknutý.
+unl_remove_warning = Odebrat {name}? ZBox ho již nebude přijímat.
+ab_col_email = E-mail
+ab_col_name = Jméno
+ab_col_phone = Telefon
+ab_no_contacts = Zatím žádné kontakty.
+acct_auto_check = Automaticky kontrolovat nové zprávy
+acct_note_auto_check = Vypnuto: ZBox tento účet nikdy sám nekontaktuje -- žádné sledování nové pošty, žádné časované obnovování, žádná stahování na pozadí -- takže nespolehlivý server nezpomalí ostatní účty. Jeho již stažená pošta se stále otevírá a Obnovit (F5), odesílání a mazání stále dosáhnou na server. Totéž jako Pozastavit automatickou kontrolu v nabídce Nástroje nebo v místní nabídce účtu.
+bl_day_ago = před 1 dnem
+bl_days_ago = před {days} dny
+bl_label_blocklists = Seznam blokování
+bl_label_phishing = Seznam phishingu
+bl_last_failed = Poslední pokus selhal: %s
+bl_not_downloaded = Zatím nestaženo.
+bl_save_failed = Seznam %s byl stažen, ale nelze ho uložit: %s
+bl_seed_only = Domén z vestavěného seznamu: %s. Z internetu zatím nikdy neaktualizováno.
+bl_some_failed = Některé zdroje selhaly: %s
+bl_some_unreachable = Některé zdroje nejsou dostupné: %s
+bl_status_line = Domén: %s. Naposledy aktualizováno: %s.
+bl_up_to_date = Seznam %s je již aktuální.
+bl_update_failed = Seznam %s nelze aktualizovat: %s
+bl_updated = Seznam %s aktualizován: domén: %s.
+cc_age_choice = Každá mezipaměť zpráv starší než %s
+cc_auto_button = Automatické čištění: zprávy v mezipaměti starší než %s...
+comp_btn_discard = &Zahodit
+comp_btn_keep_editing = &Pokračovat v úpravách
+comp_btn_save_draft = &Uložit koncept
+comp_no_account = Není nastaven žádný účet
+comp_saving_draft = Ukládá se koncept…
+comp_this_message = tato zpráva
+comp_unsent_save_q = Uložit před zavřením jako koncept: %s?
+comp_unsent_tray_q = Uložit jako koncept před přesunem ZBoxu do oznamovací oblasti: %s?
+doc_unreadable = Soubor dokumentace nelze přečíst:
+envlist_all_disabled = Všechny účty jsou zakázány.
+envlist_col_date = Datum
+envlist_col_from = Od
+envlist_col_status = Stav
+envlist_col_subject = Předmět
+envlist_collapsed = Sbaleno (%d)
+envlist_empty = V této složce nejsou žádné zprávy.
+envlist_loading = Načítají se zprávy...
+envlist_no_accounts = Zatím není nastaven žádný účet.
+envlist_no_ignored = V této složce nejsou žádná ignorovaná vlákna.
+envlist_no_watched = V této složce nejsou žádná sledovaná vlákna.
+envlist_select_folder = Pro načtení zpráv vyberte účet nebo složku.
+eula_link_0 = Otevřít stránku licence Himalaya v prohlížeči
+eula_link_1 = Otevřít stránku licence StevenBlack hosts v prohlížeči
+eula_link_2 = Otevřít stránku licence EasyList/EasyPrivacy v prohlížeči
+eula_link_3 = Otevřít stránku licence Phishing.Database v prohlížeči
+eula_read_note = Přečtěte si licenci níže, včetně částí třetích stran. Než bude dostupné Další, musíte zaškrtnout Souhlasím. Nesouhlasím zavře ZBox bez jeho spuštění a odstraní vše, co toto spuštění dosud vytvořilo.
+eula_unreadable = Soubor licence nelze přečíst:\n%s
+filters_title = Spustit filtry
+flag_title = Označit zprávu hvězdičkou
+folder_type_archive = Archiv
+folder_type_drafts = Koncepty
+folder_type_inbox = Doručená pošta
+folder_type_junk = Nevyžádaná
+folder_type_sent = Odeslaná pošta
+folder_type_trash = Koš
+mime_application_json = Soubor JSON
+mime_application_msword = Dokument Word
+mime_application_octet_stream = Binární soubor
+mime_application_pdf = PDF
+mime_application_vnd_ms_excel = Excelový sešit
+mime_application_vnd_ms_powerpoint = Prezentace PowerPoint
+mime_application_vnd_openxmlformats_officedocument_presentationml_presentation = Prezentace PowerPoint
+mime_application_vnd_openxmlformats_officedocument_spreadsheetml_sheet = Excelový sešit
+mime_application_vnd_openxmlformats_officedocument_wordprocessingml_document = Dokument Word
+mime_application_xml = Soubor XML
+mime_application_zip = Archiv ZIP
+mime_audio_mpeg = Zvuk MP3
+mime_audio_ogg = Zvuk OGG
+mime_audio_wav = Zvuk WAV
+mime_image_bmp = Obrázek BMP
+mime_image_gif = Obrázek GIF
+mime_image_jpeg = Obrázek JPEG
+mime_image_png = Obrázek PNG
+mime_image_svg_xml = Obrázek SVG
+mime_image_webp = Obrázek WebP
+mime_text_csv = Soubor CSV
+mime_text_html = Soubor HTML
+mime_text_plain = Textový soubor
+mime_video_mp4 = Video MP4
+mime_video_x_msvideo = Video AVI
+move_title_junk = Označit jako nevyžádanou
+move_title_move_to = Přesunout do
+move_title_not_junk = Označit jako není nevyžádaná
+mp_explain_set = Hlavní heslo je nastaveno. Díky němu může tato složka ZBoxu otevřít uložená hesla svých účtů na jiném počítači.\n\nChcete-li jej odebrat, nechte obě pole nového hesla prázdná a stiskněte OK. Odebrání se netýká tohoto počítače, ale složka už nebude fungovat na žádném jiném, aniž by se každý účet přihlásil znovu.
+mp_explain_unset = Hlavní heslo není nastaveno, takže uložená hesla účtů lze přečíst jen na tomto počítači a v tomto účtu Windows. Pokud složku zkopírujete jinam, bude se muset každý účet znovu přihlásit k poštovnímu serveru.\n\nNastavte ho a ZBox se na něj zeptá jednou na každém novém počítači a pak tam bude odemykat normálně. Tento počítač se znovu ptát nebude.\n\nZapište si ho a uložte na bezpečné místo. Nikde se neukládá a nelze ho obnovit: pokud ho zapomenete, bude se muset každý účet znovu přihlásit k poštovnímu serveru.
+mp_label_confirm = &Potvrďte nové hlavní heslo:
+mp_label_current = &Současné hlavní heslo:
+mp_label_master = &Hlavní heslo:
+mp_label_new = &Nové hlavní heslo:
+mp_name_confirm = Potvrďte nové hlavní heslo
+mp_name_current = Současné hlavní heslo
+mp_name_master = Hlavní heslo
+mp_name_new = Nové hlavní heslo
+mp_prompt_existing = Uložená hesla vašich účtů jsou chráněna jen na tomto počítači. Nastavte hlavní heslo, aby je šlo otevřít i tehdy, pokud ZBox přenesete na jiný.
+mp_prompt_first_run = ZBox se chystá uložit hesla vašich účtů. Nastavte nyní hlavní heslo, aby je šlo otevřít i tehdy, pokud ZBox přenesete na jiný počítač.
+mp_prompt_new_account = ZBox se chystá uložit heslo tohoto účtu. Nejprve nastavte hlavní heslo, aby se účet dal otevřít i tehdy, pokud ZBox přenesete na jiný počítač.
+mp_removed_done = Hlavní heslo odebráno. Uložená hesla nyní fungují jen na tomto počítači a v tomto účtu Windows.
+mp_set_done = Hlavní heslo nastaveno. ZBox se na ně zeptá jednou na každém novém počítači, kde se tato složka otevře, a pak tam bude odemykat normálně.
+mv_body_title = Tělo zprávy
+mv_col_format = Formát
+mv_col_name = Název
+mv_col_size = Velikost
+mv_format_unknown = Neznámý
+mv_size_unknown = Neznámá velikost
+na_account_settings = Nastavení účtů a identit
+na_disable_account = Zakázat účet
+na_edit_signature = Upravit podpis
+na_message_filters = Filtry zpráv
+na_mute_account = Ztlumit účet
+na_pause_auto_check = Pozastavit automatickou kontrolu
+na_remove_account = Odebrat účet
+na_set_default = Nastavit jako výchozí účet
+no_offline_copy = Pro složku %s není offline kopie. Otevřete ji, když jste online, nebo použijte Soubor, Offline, Synchronizovat nyní.
+perm_delete_confirm = {msg} Tím se obejde složka Koš a nelze to vrátit zpět.
+perm_delete_many = Trvale smazat zprávy: {count}?
+perm_delete_one = Trvale smazat zprávu: {count}?
+preset_note_apple = Apple vyžaduje heslo pro konkrétní aplikaci.
+preset_note_fastmail = Fastmail vyžaduje heslo aplikace.
+preset_note_google = Google vyžaduje heslo aplikace nebo OAuth2, ne vaše běžné heslo.
+preset_note_proton = ProtonMail vyžaduje místně spuštěnou aplikaci ProtonMail Bridge.
+preset_note_yahoo = Yahoo vyžaduje heslo aplikace.
+priv_phishing_not_loaded = Seznam phishingu: zatím nenačten. Stáhne se poprvé, když jsou tato pravidla zapnutá a ZBox je online.
+priv_phishing_prefix = Seznam phishingu:
+priv_status_unavailable = Stav seznamu blokování není dostupný.
+rdr_load_failed = Zprávu nelze načíst.\n\n{message}
+rdr_loading = Načítá se zpráva...
+rdr_select_message = Vyberte zprávu, kterou si zde přečtete.
+set_autosave_off = Vypnuto — ukládejte ručně pomocí Uložit koncept (Ctrl+S)
+set_autosave_seconds = Každých {seconds} sekund
+set_no_unlock = Zde není použitelný žádný přístupový klíč ani bezpečnostní klíč
+set_purge_days = Po {days} dnech
+set_purge_off = Vypnuto — Koš a Nevyžádaná se nikdy automaticky nemažou
+set_purge_one_day = Po 1 dni
+set_val_seconds = {seconds} sekund
+set_val_one_second = 1 sekunda
+set_silence_off = Vypnuto
+set_announce_wait = Čeká na klávesu
+set_autosave_minutes = Každých {minutes} minut
+set_autosave_one_minute = Každou minutu
+set_rt_bundled_installed = Přibalené běhové prostředí: nainstalováno.
+set_rt_bundled_many = Přibalené běhové prostředí: nainstalováno %s.
+set_rt_bundled_none = Přibalené běhové prostředí: žádné není nainstalováno, takže ZBox používá systémové.
+set_rt_bundled_unknown = Přibalené běhové prostředí: nelze určit.
+set_rt_bundled_ver = Přibalené běhové prostředí: nainstalována verze %s.
+set_rt_system_unknown = Systémové běhové prostředí: verzi nelze určit.
+set_rt_system_ver = Systémové běhové prostředí: verze %s.
+set_unlock_many = Zde lze použít způsobů odemknutí: %d
+set_unlock_unreadable = Způsoby odemknutí nelze přečíst
+sig_tab_formatted = Formátovaný
+sig_tab_source = Zdroj HTML
+srch_all_accounts = Všechny účty
+srch_all_folders = Všechny složky
+tab_mail = Pošta
+tab_new_message = Nová zpráva
+tab_saved_message = Uložená zpráva
+title_copy_to_err = Kopírovat do
+title_mark_message = Označit zprávu
+title_unsent_message = Neodeslaná zpráva
+tree_unified_root = Jednotné složky
+unlock_kind_passkey = Přístupový klíč (Windows Hello)
+unlock_kind_security_key = Bezpečnostní klíč
+unlock_prompt_message = Windows žádají o potvrzení. Odpovězte na jejich výzvu pomocí Windows Hello, PINu nebo bezpečnostního klíče. Toto okno se samo zavře, až Windows skončí.
+unlock_prompt_title = Zabezpečení Windows
+unlock_registering = Registruje se tento způsob odemknutí
+unlock_the_passkey = Přístupový klíč
+unlock_the_security_key = Bezpečnostní klíč
+wildcard_eml = E-mailové soubory (*.eml)|*.eml|Všechny soubory (*.*)|*.*
+wildcard_export = Export ZBoxu (*.json)|*.json
+wiz_not_supported = NEPODPOROVÁNO: {name}. {note} Tento účet nelze do ZBoxu přidat.
+stock_apply = &Použít
+stock_cancel = Zrušit
+stock_close = &Zavřít
+stock_help = &Nápověda
+stock_no = &Ne
+stock_ok = OK
+stock_yes = &Ano
+wiz_btn_back = &< Zpět
+wiz_btn_finish = &Dokončit
+wiz_btn_next = &Další >
+acct_unsaved_q = Uložit změny tohoto účtu?
+btn_save = &Uložit
+spell_add_to_dictionary = &Přidat do slovníku
+spell_no_suggestions = Žádné návrhy
+title_signature_for = Podpis: {account}
+title_mark_folder_read = Označit složku jako přečtenou
+title_update_available = Aktualizace ZBoxu
+update_available = ZBox {new} je dostupný. Máte {current}.
+upd_notes_label = &Poznámky k vydání:
+upd_no_notes = Žádné poznámky k vydání.
+upd_notes_name = Poznámky k vydání
+upd_update_now = &Ano, aktualizovat nyní
+upd_remind_later = &Připomenout později
+title_update_download = Stahuje se aktualizace ZBoxu
+upd_downloading = Stahuje se ZBox {version}...
+upd_progress_name = Průběh stahování
+upd_cancel = &Zrušit
+upd_cancelling = Ruší se...
+set_updates_label = Aktualizace:
+set_update_auto = &Automaticky kontrolovat aktualizace
+set_update_mode_label = Když je nalezena aktualizace:
+set_update_ask = &Zeptat se
+set_update_silent = &Stáhnout a nainstalovat tiše
+set_update_note = ZBox kontroluje na GitHubu novější vydání nejvýše jednou denně, jen když je nečinný, a neposílá nic kromě svého čísla verze. Zeptat se zobrazí novou verzi a její poznámky k vydání s tlačítky Ano, aktualizovat nyní a Připomenout později. Stáhnout a nainstalovat tiše stáhne aktualizaci v době nečinnosti a nainstaluje ji při příštím úplném ukončení ZBoxu, nikdy během vaší práce. Aktualizace nahrazuje jen vlastní programové soubory ZBoxu: vaše účty, hesla, nastavení, pošta, protokoly, zvukové motivy a jakýkoli přidaný jazyk se nikdy nedotknou a předchozí verze se uchová a sama obnoví, pokud se nová nespustí. Nápověda, Aktualizace obsahuje také Zkontrolovat aktualizace nyní a stránku vydání pro ruční aktualizaci.
+set_update_check_now = &Zkontrolovat nyní
+mv_attachment_button = {filename} ({format})
+att_open = Otevřít
+att_save = Uložit...
+att_save_all = Uložit všechny přílohy
+title_save_attachment = Uložit přílohu
+title_full_headers = Úplné hlavičky
+hdr_copy_all = Kopírovat vše
+acct_identity_own_signature = Použít vlastní podpis
+acct_identity_own_reply_to = Použít vlastní adresu pro odpověď
+acct_identity_reply_to = Adresa pro odpověď
+acct_identity_always_cc = Vždy posílat kopii na tyto adresy
+acct_identity_cc = Adresy pro kopii
+acct_identity_always_bcc = Vždy posílat skrytou kopii na tyto adresy
+acct_identity_bcc = Adresy pro skrytou kopii
+acct_identity_own_folders = Použít vlastní složky Koncepty a Odeslaná pošta
+acct_identity_drafts = Složka Koncepty
+acct_identity_sent = Složka Odeslaná pošta
+acct_identity_own_smtp = Použít vlastní server odchozí pošty
+acct_identity_smtp_login = Přihlašovací jméno odchozí pošty
+acct_identity_smtp_password = Heslo odchozí pošty
+acct_identity_test_smtp = &Vyzkoušet server odchozí pošty
+acct_identity_note_smtp = Nechte přihlašovací jméno prázdné, aby se přihlašovalo e-mailovou adresou této identity. Odeslané kopie stále jdou do složky Odeslaná pošta tohoto účtu, nebo do vlastní složky Odeslaná pošta této identity, pokud ji má.
+identity_field_required = Vyplňte pole {field} nebo odškrtněte jeho políčko.
+identity_field_invalid = Pole {field} obsahuje neplatnou adresu.
+identity_folders_required = Vyberte složku Koncepty, složku Odeslaná pošta nebo obě, nebo odškrtněte jejich políčko.
+identity_password_required = Zadejte heslo odchozí pošty.
+identity_smtp_testing = Zkouší se server odchozí pošty.
+identity_smtp_ok = Server odchozí pošty přijal přihlášení.
+identity_smtp_failed = Zkouška serveru odchozí pošty selhala.\n\n{error}
+set_bare_keys_note_move = M a C otevřou nabídky Přesunout do a Kopírovat do se složkami pro vybrané zprávy a Shift+M otevře pole, do kterého napíšete část názvu složky, aby se tam zprávy přesunuly. Vypnutím se M a C také vrátí k navigaci podle prvního písmene.
+folder_search_filter = Název složky obsahuje
+folder_search_list = Odpovídající složky
+folder_search_no_match = Žádná složka tomuto názvu neodpovídá.
+wiz_signin_method = Způsob přihlášení
+wiz_method_password = Heslo
+wiz_method_microsoft = Účet Microsoft (Outlook.com, Hotmail, Live, Microsoft 365)
+wiz_ms_servers = Přihlášení Microsoft. Nastavení serverů pro Outlook.com, Hotmail, Live a Microsoft 365 je vyplněno.
+wiz_welcome_notice = Gmail. Vaše běžné heslo Google bude odmítnuto, ale heslo aplikace funguje. Nejprve musí být zapnuto dvoufázové ověření. Tlačítko níže otevře pokyny Google.\n\nOutlook.com, Hotmail, Live a Microsoft 365. Ty se přihlašují účtem Microsoft. Na stránce Přihlášení zvolte Účet Microsoft a pak se přihlaste prohlížečem nebo kódem.\n\nOstatní poskytovatelé. Běžné heslo nebo heslo aplikace obvykle funguje a stránky nápovědy vašeho poskytovatele uvádějí nastavení serverů.
+preset_note_outlook = Účty Outlook.com, Hotmail, Live a MSN se přihlašují účtem Microsoft. Na stránce Přihlášení zvolte jako způsob přihlášení Účet Microsoft.
+ms_status_name = Stav přihlášení Microsoft
+ms_browser_button = &Přihlásit se prohlížečem
+ms_code_button = &Přihlásit se kódem
+ms_copy_code = &Kopírovat kód
+ms_open_page = &Otevřít přihlašovací stránku
+ms_stop = &Přestat čekat
+ms_not_configured = Přihlášení Microsoft není v této kopii ZBoxu nastaveno.
+ms_not_signed_in = Zatím nepřihlášeno. Přihlaste se prohlížečem nebo kódem na libovolném zařízení.
+ms_signed_in = Přihlášeno jako {address}.
+ms_signed_in_plain = Přihlášeno.
+ms_needs_sign_in = Pro tento účet je znovu potřeba přihlášení Microsoft. Přihlaste se prohlížečem nebo kódem na libovolném zařízení.
+ms_reason_cancelled = Přihlášení bylo zastaveno.
+ms_reason_timeout = Odpověď nedorazila včas.
+ms_reason_denied = Přístup nebyl povolen.
+ms_reason_expired = Kód vypršel. Požádejte o nový.
+ms_reason_network = Microsoft není dostupný. Zkontrolujte připojení a zkuste to znovu.
+ms_reason_server = Microsoft uvedl: {detail}
+ms_page_done = Přihlášeno. Tuto stránku můžete zavřít a vrátit se do ZBoxu.
+ms_page_failed = Přihlášení se nedokončilo. Podrobnosti najdete po návratu do ZBoxu.
+ms_browser_waiting = Váš prohlížeč zobrazuje přihlašovací stránku Microsoftu. Dokončete tam přihlášení a pak se vraťte do ZBoxu.
+ms_code_asking = Žádá se Microsoft o přihlašovací kód...
+ms_code_waiting = Na libovolném zařízení otevřete {address} a zadejte kód {code}. ZBox zde čeká, dokud přihlášení nedokončíte.
+ms_failed = Přihlášení se nedokončilo. {reason}
+ms_code_copied = Kód zkopírován.
+offline_inbox_only = Pro offline použití se uchovává jen Doručená pošta a Archiv. Pro otevření složky {folder} se připojte online.
+block_sender_rule_name = Zablokovat {sender}
+title_block_sender = Zablokovat tohoto odesílatele
+title_unblock_sender = Odblokovat tohoto odesílatele
+set_clear_inbox_cache = Mazat mezipaměť zpráv při odchodu z Doručené pošty
+set_clear_inbox_cache_note = Je-li zapnuto, offline kopie zprávy a její uložené tělo se smažou, jakmile zpráva opustí Doručenou poštu, i když byla smazána nebo přesunuta jinam, například na telefonu, aby se nezobrazovala tam, kde už není. Tyto soubory uchovává jen Doručená pošta; každá jiná složka se vždy čte ze serveru.
+empty_trash_all_confirm = Trvale smazat všechny zprávy v Koši pro všechny účty?\n\nTo nelze vrátit zpět.
+envlist_col_recipient = Příjemce
+envlist_col_correspondents = Korespondenti
+envlist_col_received = Přijato
+envlist_col_size = Velikost
+envlist_col_attachments = Přílohy
+envlist_col_priority = Priorita
+envlist_col_junk_status = Stav nevyžádané
+envlist_attachment = Přílohy
+envlist_priority_highest = Nejvyšší
+envlist_priority_high = Vysoká
+envlist_priority_low = Nízká
+envlist_priority_lowest = Nejnižší
+envlist_size_kb = {size} KB
+envlist_size_mb = {size} MB
+set_list_headers = Zobrazovat záhlaví sloupců v seznamu zpráv
+pgp_title = Správce klíčů OpenPGP
+smime_title = Správce certifikátů S/MIME
+smime_own = váš certifikát
+smime_expired = vypršel
+smime_expires = vyprší {date}
+smime_issuer = Vydavatel
+smime_valid = Platný od {start} do {end}
+smime_fingerprint = Otisk SHA-256
+smime_own_key = Váš certifikát se soukromým klíčem: pošta šifrovaná pro něj se zde dá přečíst.
+smime_unavailable = S/MIME není v této kopii ZBoxu dostupné.
+smime_details = Podrobnosti certifikátu
+smime_no_certs = Zatím žádné certifikáty. Importujte vlastní soubor .p12 nebo .pfx nebo certifikát korespondenta.
+smime_import_failed = Certifikát nelze importovat: {error}
+smime_import_title = Importovat soubor certifikátu
+smime_password_prompt = Zadejte heslo pro {name}.
+smime_password_title = Heslo certifikátu
+smime_imported = Certifikát importován.
+smime_export_title = Exportovat certifikát
+smime_exported = Certifikát exportován.
+smime_delete_confirm = Smazat certifikát {name}? Pokud je váš, pošta šifrovaná pro něj se zde již nedá přečíst.
+smime_deleted = Certifikát smazán.
+smime_rs_verified = Tato zpráva obsahuje platný podpis S/MIME z certifikátu, který pro adresu odesílatele vydala autorita, které Windows důvěřují.
+smime_rs_unverified = Tato zpráva obsahuje platný podpis S/MIME, ale jeho certifikát nevydala autorita, které Windows důvěřují.
+smime_rs_mismatch = Tato zpráva obsahuje podpis S/MIME, ale adresa odesílatele neodpovídá certifikátu podepisujícího.
+smime_rs_technical = Tato zpráva obsahuje podpis S/MIME, ale neodpovídá zprávě. Zpráva mohla být po podpisu změněna.
+smime_rs_signer = Podepsal: {name}
+smime_rs_issuer = Certifikát vydal: {issuer}
+smime_rs_import_hint = Abyste ji přečetli, importujte svůj certifikát S/MIME se soukromým klíčem, soubor .p12 nebo .pfx, v Nástroje, Správce certifikátů S/MIME.
+pgp_details = Vlastnosti klíče
+pgp_generate = &Nový pár klíčů
+smime_import = &Importovat soubor certifikátu
+smime_export = &Exportovat certifikát
+smime_delete = &Smazat certifikát
+pgp_import_file = &Importovat soubor klíče OpenPGP
+pgp_import_file_title = Importovat soubor klíče OpenPGP
+pgp_import_clip = &Importovat klíče ze schránky
+pgp_export = &Exportovat veřejný klíč do souboru
+pgp_copy = &Kopírovat veřejný klíč
+pgp_backup = &Zálohovat tajný klíč do souboru
+pgp_props = &Vlastnosti klíče
+pgp_revoke = &Zneplatnit klíč
+pgp_delete = &Smazat klíč
+pgp_expires = vyprší: {date}
+pgp_never_expires = nikdy nevyprší
+pgp_expired = vypršel
+pgp_revoked = zneplatněn
+pgp_fingerprint = Otisk
+pgp_key_id = ID klíče
+pgp_created = Vytvořen
+pgp_acceptance = Vaše přijetí
+pgp_acc_rejected = Ne, tento klíč odmítnout.
+pgp_acc_undecided = Zatím ne, možná později.
+pgp_acc_unverified = Ano, ale neověřil(a) jsem, že je to správný klíč.
+pgp_acc_verified = Ano, osobně jsem ověřil(a), že tento klíč má správný otisk.
+pgp_personal_no = Ne, nepoužívat jako můj osobní klíč.
+pgp_personal_yes = Ano, považovat tento klíč za osobní klíč.
+pgp_verify_hint = Ověřte otisk klíče jiným zabezpečeným komunikačním kanálem než e-mailem, abyste se ujistili, že je to skutečně klíč uživatele {addr}.
+pgp_gen_title = Vytvořit klíč OpenPGP
+pgp_gen_identity = Identita
+pgp_gen_type = Typ klíče:
+pgp_gen_ecc = ECC (eliptická křivka)
+pgp_gen_expiry = Platnost klíče
+pgp_gen_no_expiry = Klíč nevyprší
+pgp_gen_button = Vytvořit klíč
+pgp_gen_confirm = Vytvořit veřejný a tajný klíč pro {identity}?
+pgp_gen_progress = Vytváří se váš nový klíč OpenPGP…
+pgp_gen_done = Klíč OpenPGP byl úspěšně vytvořen!
+pgp_gen_failed = Vytvoření klíče OpenPGP neočekávaně selhalo
+pgp_import_none = Nebyly importovány žádné klíče.
+pgp_import_done = Klíče OpenPGP byly úspěšně importovány!
+pgp_passphrase_title = Vyžadována přístupová fráze
+pgp_unlock_failed = Klíč nebo jeho podřízené části nelze odemknout.
+pgp_backup_title = Vyberte heslo pro zálohu svého klíče OpenPGP
+pgp_backup_message = Heslo, které zde nastavíte, chrání soubor zálohy tajného klíče OpenPGP, který se chystáte vytvořit. Abyste mohli v záloze pokračovat, musíte toto heslo nastavit.
+pgp_backup_pw = Heslo zálohy tajného klíče:
+pgp_backup_pw2 = Heslo zálohy tajného klíče (znovu):
+pgp_backup_done = Tajný klíč byl úspěšně exportován!
+pgp_export_done = Veřejný klíč byl úspěšně exportován!
+pgp_copied = Klíče zkopírovány do schránky
+pgp_revoke_done = Klíč byl úspěšně zneplatněn.
+pgp_personal = osobní klíč
+pgp_no_keys = Zatím žádné klíče. Vytvořte nový pár klíčů nebo importujte klíč.
+pgp_unavailable = OpenPGP není v této kopii ZBoxu dostupné.
+pgp_gen_expires_3y = Klíč vyprší za 3 roky
+pgp_gen_no_identity = Nejprve přidejte e-mailový účet.
+pgp_import_confirm = Importovat tyto klíče?\n\n{keys}
+pgp_passphrase_prompt = Zadejte přístupovou frázi tajného klíče pro {name}.
+pgp_clip_empty = Schránka neobsahuje žádný klíč OpenPGP.
+pgp_pw_mismatch = Obě hesla se neshodují.
+pgp_backup_open = Tento soubor je záloha tajného klíče. Zadejte její heslo.
+pgp_revoke_confirm = Zneplatnit klíč uživatele {name}? Zneplatněný klíč už nikdy nelze použít. Sdílejte zneplatněný veřejný klíč, aby ho ostatní přestali používat.
+pgp_delete_public_confirm = Smazat veřejný klíč uživatele {name}?
+pgp_delete_secret_confirm = Smazat váš osobní klíč {name}? Pošta šifrovaná pro něj se už nikdy nedá přečíst. Pokud ho můžete potřebovat, nejprve zálohujte tajný klíč.
+pgp_select_key = Nejprve vyberte klíč.
+pgp_save_failed = Klíče nelze uložit: {error}
+pgp_publish = &Zveřejnit
+pgp_publish_ok = Veřejný klíč odeslán na "{keyserver}".
+pgp_publish_fail = Odeslání vašeho veřejného klíče na "{keyserver}" selhalo.
+pgp_publish_suggest = Zveřejnění veřejného klíče na serveru klíčů umožní ostatním ho najít.
+pgp_publish_question = Zveřejnit ho nyní na {keyserver}? Server pak pošle ověřovací e-mail na {addresses}. Vaše adresa bude dohledatelná po otevření jeho odkazu.
+pgp_publish_sent = Ověřovací e-mail byl odeslán na {addresses}. Otevřete v něm odkaz, aby byl váš klíč dohledatelný podle adresy.
+pgp_publish_already = Již dohledatelné podle {addresses}.
+pgp_rs_no_sig = Žádný elektronický podpis
+pgp_rs_no_sig_info = Tato zpráva neobsahuje elektronický podpis odesílatele. Nepřítomnost elektronického podpisu znamená, že zprávu mohl odeslat někdo, kdo předstírá, že má tuto e-mailovou adresu. Je také možné, že zpráva byla při přenosu po síti změněna.
+pgp_rs_uncertain = Nejistý elektronický podpis
+pgp_rs_uncertain_date = Nejistý elektronický podpis - Podepsáno {date}
+pgp_rs_invalid = Neplatný elektronický podpis
+pgp_rs_invalid_date = Neplatný elektronický podpis - Podepsáno {date}
+pgp_rs_good = Dobrý elektronický podpis
+pgp_rs_good_date = Dobrý elektronický podpis - Podepsáno {date}
+pgp_rs_no_key = Tato zpráva obsahuje elektronický podpis, ale není jisté, zda je správný. K ověření podpisu potřebujete získat kopii veřejného klíče odesílatele.
+pgp_rs_uid_mismatch = Tato zpráva obsahuje elektronický podpis, ale byla zjištěna neshoda. Zpráva byla odeslána z e-mailové adresy, která neodpovídá veřejnému klíči podepisujícího.
+pgp_rs_not_accepted = Tato zpráva obsahuje elektronický podpis, ale dosud jste se nerozhodli, zda je klíč podepisujícího pro vás přijatelný.
+pgp_rs_rejected = Tato zpráva obsahuje elektronický podpis, ale dříve jste se rozhodli klíč podepisujícího odmítnout.
+pgp_rs_technical = Tato zpráva obsahuje elektronický podpis, ale byla zjištěna technická chyba. Buď byla zpráva poškozena, nebo ji změnil někdo jiný.
+pgp_rs_unverified = Tato zpráva obsahuje platný elektronický podpis z klíče, který jste již přijali. Dosud jste však neověřili, že klíč skutečně patří odesílateli.
+pgp_rs_verified = Tato zpráva obsahuje platný elektronický podpis z ověřeného klíče.
+pgp_rs_own_key = Tato zpráva obsahuje platný elektronický podpis z vašeho osobního klíče.
+pgp_rs_signer_id = ID klíče podepisujícího: {keyid}
+pgp_rs_decrypt_id = ID vašeho dešifrovacího klíče: {keyid}
+pgp_rs_enc_none = Zpráva není šifrovaná
+pgp_rs_enc_none_info = Tato zpráva nebyla před odesláním zašifrována. Informace odeslané přes internet bez šifrování mohou jiní lidé při přenosu vidět.
+pgp_rs_enc_invalid = Zprávu nelze dešifrovat
+pgp_rs_enc_invalid_info = Tato zpráva byla před odesláním vám zašifrována, ale nelze ji dešifrovat.
+pgp_rs_enc_valid = Zpráva je šifrovaná
+pgp_rs_enc_valid_info = Tato zpráva byla před odesláním vám zašifrována. Šifrování zajišťuje, že zprávu mohou číst jen příjemci, kterým byla určena.
+pgp_rs_field = Zabezpečení zprávy
+pgp_rs_import = Importovat klíč OpenPGP
+pgp_rs_open_to_unlock = Otevřete zprávu a zadejte přístupovou frázi.
+pgp_rs_reply_not_quoted = Původní zpráva byla šifrovaná, takže její text zde není citován.
+pgp_cm_encrypt = Šifrovat
+pgp_cm_sign = Elektronicky podepsat
+pgp_e2e_title = Koncové šifrování
+acct_e2e_button = &Koncové šifrování...
+pgp_e2e_none = Nepoužívat OpenPGP pro tuto identitu.
+pgp_e2e_disable = Vypnout šifrování pro nové zprávy
+pgp_e2e_enable = Zapnout šifrování pro nové zprávy
+pgp_e2e_enable_info = Šifrování budete moci vypnout pro jednotlivé zprávy.
+pgp_e2e_sign = Podepisovat nešifrované zprávy
+pgp_e2e_signing_info = Elektronický podpis umožňuje příjemcům ověřit, že zprávu poslali vy a její obsah nebyl změněn. Šifrované zprávy se ve výchozím nastavení podepisují vždy.
+pgp_e2e_autocrypt = Posílat veřejné klíče OpenPGP v hlavičkách e-mailu kvůli kompatibilitě s Autocrypt
+pgp_not_set_up = Nemáte nastaveno odesílání koncově šifrovaných zpráv z adresy {addr}.
+pgp_cannot_encrypt = Nelze šifrovat
+pgp_do_you_accept = Přijímáte tento klíč pro ověřování elektronických podpisů a šifrování zpráv?
+pgp_searching = Hledání…
+pgp_no_key_found = Nenašli jsme žádný použitelný klíč odpovídající zadaným kritériím hledání.
+pgp_source_autocrypt = Hlavička Autocrypt
+pgp_source_wkd = Web Key Directory
+pgp_source_keyserver = server klíčů
+pgp_discover = &Najít klíče online
+pgp_cm_attach_key = Připojit můj veřejný klíč
+pgp_e2e_key_label = Osobní klíč pro {address}
+pgp_e2e_auto = Automaticky: váš osobní klíč pro tuto adresu
+pgp_e2e_no_key = ZBox nemá osobní klíč OpenPGP pro {address}. Vytvořte si ho v Nástroje, Správce klíčů OpenPGP.
+pgp_e2e_new_messages = Šifrování pro nové zprávy
+pgp_e2e_key_missing = Klíč {keyid} nenalezen
+pgp_missing_keys = Tito příjemci nemají použitelný, přijatý klíč:\n\n{addresses}\n\nZprávu nelze odeslat šifrovaně.
+pgp_send_unencrypted = &Odeslat bez šifrování
+pgp_collected_found = Klíče pro tyto příjemce byly nalezeny v poště, kterou vám poslali:
+pgp_lookup_q = Vyhledat online klíče pro tyto příjemce?\n\n{addresses}\n\nTím se jejich adresy odešlou na keys.openpgp.org a do jejich vlastních poštovních domén.
+pgp_found_online = Klíče nalezené online:
+pgp_source = Zdroj: {source}
+pgp_discover_prompt = Zadejte e-mailovou adresu. ZBox hledá její klíče OpenPGP ve Web Key Directory její poštovní domény a na keys.openpgp.org.
+pgp_discover_bad = Zadejte celou e-mailovou adresu, například name@example.com.
+pgp_keys_unreadable = Klíče OpenPGP nelze otevřít: {error}
+pgp_rs_why_no_key = Tajný klíč potřebný k dešifrování této zprávy není dostupný.
+pgp_rs_why_unknown = S touto šifrovanou zprávou jsou neznámé potíže.
+pgp_rs_hidden_subject = Šifrovaná zpráva
+pgp_rs_why_passphrase = Přístupová fráze vašeho klíče nebyla zadána. Znovu otevřete zprávu a zadejte ji.
+pgp_rs_why_unavailable = OpenPGP není v této kopii ZBoxu dostupné.
+pgp_rs_why_fetch = Zprávu se nepodařilo získat ze serveru k dešifrování. Znovu ji otevřete a zkuste to ještě jednou.
+pgp_rs_import_hint = Abyste ji přečetli, importujte do ZBoxu svůj tajný klíč pro tuto zprávu.
+
+[errors]
+language_restart_failed = ZBox se nemohl sám restartovat:\n\n{error}
+# Message box bodies that report a failure. Titles for these live in
+# [dialogs] with the other titles.
+# Write a paragraph break as backslash n.
+
+contact_no_mail_client = Nelze otevřít poštovního klienta pro adresu {address}.
+
+wizard_test_failed = Připojení selhalo:\n\n{error}
+
+contacts_import_unreadable = Tento soubor nelze přečíst.\n\n{error}
+contacts_export_unwritable = Tento soubor nelze zapsat.\n\n{error}
+
+attach_unreadable = Přílohu {path} nelze přečíst:\n{error}
+send_failed = Zprávu nelze odeslat.\n\n{error}
+draft_attach_unreadable = Přílohu {path} nelze přečíst:\n{error}\n\nKoncept nebyl uložen.
+draft_save_failed = Koncept nelze uložit.\n\n{error}
+
+clipboard_unavailable = Schránku nelze otevřít.
+open_link_failed = Nelze otevřít váš prohlížeč pro:\n{url}
+
+master_password_mismatch = Obě pole nového hlavního hesla se neshodují.
+master_password_required = Zadejte hlavní heslo nebo stiskněte Zrušit.
+master_password_not_set = Hlavní heslo nelze nastavit: {error}
+master_password_not_here = Hlavní heslo nelze odsud změnit.
+
+attachment_save_failed = Přílohu nelze uložit.\n\n{error}
+attachments_save_failed = Přílohy nelze uložit.\n\n{error}
+print_failed = Zprávu nelze vytisknout. Zkontrolujte, zda je nastavena tiskárna.
+print_preview_failed = Náhled tisku nelze otevřít. Zkontrolujte, zda je nastavena tiskárna.
+
+related_search_failed = Související zprávy nelze vyhledat.\n\n{error}
+search_failed = Hledání selhalo.\n\n{error}
+
+unlock_methods_no_config_folder = ZBox nenašel svou konfigurační složku, takže způsoby odemknutí nelze odsud spravovat.
+shortcut_no_folder = ZBox nezjistil svou vlastní složku, takže odsud nelze vytvořit zástupce.
+shortcut_failed_settings = Zástupce na ploše nelze vytvořit:\n\n{error}
+
+unlock_method_failed = Nepodařilo se: {what}.\n\n{error}
+unlock_check_failed = Hlavní heslo nelze ověřit.\n\n{error}
+unlock_password_wrong = Toto hlavní heslo není správné.
+unlock_add_failed = Nelze přidat: {what}.\n\n{error}
+unlock_passkey_setup_failed = Přístupový klíč nelze na tomto počítači nastavit, takže se nic nezměnilo.\n\n{error}
+unlock_method_test_failed = Tento způsob nefungoval.\n\n{error}
+
+account_list_unreadable = ZBox nemohl otevřít váš seznam účtů.\n\n{error}\n\nNebyly načteny žádné účty a soubor nebyl změněn, takže se nic neztratilo. Přidávání, úpravy a odebírání účtů je odmítnuto, dokud nepůjde seznam přečíst.
+account_list_no_accounts = ZBox nemohl v této relaci otevřít váš seznam účtů ({error}), takže není co vybrat. Nic se neztratilo a nic se nezměnilo. Zavřete ZBox, spusťte ho znovu a na požádání zadejte hlavní heslo.
+open_message_failed = Zprávu nelze otevřít.\n\n{error}
+filters_list_failed = Zprávy ve složce {folder} nelze vypsat.\n\n{error}
+filters_move_failed = Filtrované zprávy nelze přesunout.\n\n{error}
+cache_clear_failed = Mezipaměť nelze vymazat.\n\n{error}
+folder_create_failed = Složku nelze vytvořit.\n\n{error}
+folder_rename_failed = Složku nelze přejmenovat.\n\n{error}
+folder_delete_failed = Složku nelze smazat.\n\n{error}
+folder_subscribe_failed = Odebírání složky nelze zahájit.\n\n{error}
+folder_unsubscribe_failed = Odebírání složky nelze ukončit.\n\n{error}
+saved_open_failed = Soubor nelze otevřít.\n\n{error}
+saved_parse_failed = Tento soubor nelze zpracovat jako e-mailovou zprávu.\n\n{error}
+save_file_failed = Soubor nelze uložit.\n\n{error}
+save_fetch_failed = Zprávu k uložení nelze získat.\n\n{error}
+empty_trash_failed = Koš nelze vysypat.\n\n{error}
+empty_junk_failed = Nevyžádanou nelze vysypat.\n\n{error}
+export_write_failed = Soubor exportu nelze zapsat.\n\n{error}
+import_read_failed = Tento soubor nelze přečíst jako export ZBoxu.\n\n{error}
+import_not_export = Tento soubor nevypadá jako export ZBoxu.\n\n{error}
+search_open_failed = Tuto zprávu nelze otevřít.
+related_load_failed = Tuto zprávu nelze načíst.\n\n{error}
+reply_load_failed = Zprávu, na kterou chcete odpovědět, nelze načíst.\n\n{error}
+forward_load_failed = Zprávu k přeposlání nelze načíst.\n\n{error}
+action_failed = Tuto akci nelze dokončit.\n\n{error}
+undo_failed = Nelze vrátit zpět: {label}.\n\n{error}
+copy_failed = Zprávu nelze zkopírovat.\n\n{error}
+delete_failed = Zprávu nelze smazat.\n\n{error}
+archive_failed = Zprávu nelze archivovat.\n\n{error}
+master_password_not_changed = Hlavní heslo nelze změnit: {error}
+shortcut_failed_startup = Zástupce na ploše nelze vytvořit:\n\n{error}\n\nZBox se bude dál spouštět. Můžete to zkusit později v Nastavení.
+account_locked_action = ZBox nemůže provést: %s. Seznam účtů nelze v této relaci otevřít (%s) a nic se nezměnilo. Zavřete ZBox, spusťte ho znovu a pokud budete požádáni, zadejte hlavní heslo.
+send_tls_mismatch = Zprávu nelze odeslat. Server odchozí pošty odpověděl bez šifrování, takže šifrování odchozí pošty neodpovídá portu. V Nástroje, Nastavení účtů a identit použijte STARTTLS pro port 587 nebo SSL/TLS pro port 465 a pak odešlete znovu.\n\n{error}
+mark_folder_read_failed = Složku nelze označit jako přečtenou.\n\n{error}
+update_failed = Aktualizaci nelze stáhnout, takže se nic nezměnilo.\n\n{error}
+update_rolled_back = Aktualizace se nemohla spustit, takže byla obnovena předchozí verze.
+attachment_open_failed = Přílohu nelze otevřít.\n\n{error}
+headers_failed = Hlavičky zprávy nelze načíst.\n\n{error}
+wizard_ms_sign_in_first = Před pokračováním se přihlaste k Microsoftu. Použijte jedno ze dvou přihlašovacích tlačítek na této stránce.
+wizard_provider_unsupported = ZBox se k tomuto poskytovateli nemůže přihlásit. Poznámka na této stránce vysvětluje proč. Vraťte se a použijte jinou e-mailovou adresu, nebo zrušte.
+acct_ms_sign_in_first = Před uložením se přihlaste k Microsoftu, nebo jako způsob přihlášení zvolte Heslo.
+ms_sign_in_again = Pro účet {account} je znovu potřeba přihlášení Microsoft. Otevřete Nastavení účtů a identit a přihlaste se tam.
+graph_pgp_too_large = Tato šifrovaná nebo podepsaná zpráva je větší, než Microsoft pro takovou poštu povoluje, asi 3 MB. Posílejte menší přílohy nebo pro tuto zprávu vypněte Šifrovat a Elektronicky podepsat.
+empty_trash_all_failed = Koš nelze vysypat pro: {accounts}
+
+[help]

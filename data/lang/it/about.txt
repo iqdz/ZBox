@@ -1,7 +1,7 @@
 ZBox
 Di Harith Alhamdani
 
-ZBox è un client di posta portatile, reattivo, sicuro e completamente accessibile. Gratuito per uso personale e leggero sulle risorse di sistema. È stato creato per offrire agli utenti ciechi e ipovedenti un’alternativa reale e ricca di funzioni alle opzioni pesanti e lente di solito disponibili. Dietro le quinte, ZBox si appoggia al solido client di posta Himalaya CLI.
+ZBox è un client di posta portatile, reattivo, sicuro e completamente accessibile. Gratuito per uso personale e leggero sulle risorse di sistema. È stato creato per offrire a tutti coloro che lo usano, compresi gli utenti ciechi e ipovedenti, un’alternativa reale e ricca di funzioni alle opzioni pesanti e lente di solito disponibili. Dietro le quinte, ZBox si appoggia al solido client di posta Himalaya CLI.
 
 Privacy e sicurezza
 ZBox include un blocco di tracciamento e pubblicità (attivo per impostazione predefinita), oltre a regole facoltative contro la posta indesiderata e a un controllo dei collegamenti di phishing. Per una portabilità sicura usa la protezione con password principale: se la cartella dell’app viene copiata su un altro computer senza questa password, l’accesso agli account collegati è bloccato. Se si prevede di spostare ZBox su un nuovo computer, impostare prima qui una password principale. Supporta anche le passkey di Windows Hello (impronta digitale, PIN o riconoscimento del volto) e le moderne chiavi di sicurezza hardware.

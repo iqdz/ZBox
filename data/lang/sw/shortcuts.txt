@@ -1,0 +1,103 @@
+Jumla
+F6: Badilisha lengo kati ya vidirisha
+Ctrl+Tab: Kichupo kinachofuata
+Ctrl+Shift+Tab: Kichupo kilichotangulia
+Ctrl+W au Ctrl+F4: Funga kichupo cha sasa
+Escape: Kunja mjadala uliopanuliwa ikiwa orodha ya jumbe ina lengo na mmoja umepanuliwa; vinginevyo funga kichupo cha sasa (ujumbe, ujumbe uliohifadhiwa, au ujumbe usiotumwa unaoandikwa -- huuliza kwanza ikiwa kuna mabadiliko yasiyohifadhiwa)
+Kitufe cha programu au Shift+F10: Fungua menyu ya muktadha kwenye kipengee cha orodha au mti chenye lengo
+F1: Njia za mkato za kibodi, ukurasa huu
+Ctrl+Shift+Q: Toka -- daima hutoka kabisa kwenye ZBox, hata "Funga hadi trei ya mfumo" ikiwa imewashwa kwenye Mipangilio (kitufe cha Funga cha dirisha, Alt+F4, na Ctrl+W kwenye kichupo cha Barua huficha hadi trei badala ya kutoka mpangilio huo ukiwa umewashwa; Toka ya ikoni ya trei yenyewe pia daima hutoka kabisa)
+Ctrl+Shift+Delete: Futa akiba ya jumbe za nje ya mtandao -- nakala za ndani za ZBox pekee, hakuna chochote kwenye seva yoyote (pia ni kitufe kwenye Zana > Usanidi wa kusafisha akiba)
+
+Barua
+Ctrl+N: Ujumbe mpya
+Ctrl+Shift+N: Akaunti mpya ya barua pepe
+F5: Pokea barua mpya kwa akaunti ya sasa
+Shift+F5: Pokea barua mpya kwa akaunti zote
+Ctrl+Shift+J: Ruka hadi orodha ya jumbe za kikasha
+Ctrl+Y: Nenda kwenye orodha ya folda
+Enter kwenye akaunti au folda iliyofungwa kwenye orodha ya folda: ifungue, kama Mshale wa kulia
+Ctrl+Shift+B: Kitabu cha anwani
+Ctrl+Shift+F: Tafuta jumbe
+Ctrl+Shift+T: Onyesha jumbe zinazohusiana
+
+Orodha ya jumbe
+Delete, Shift+Delete, Weka kwenye kumbukumbu, Weka/Ondoa nyota, Weka alama kuwa barua taka/si barua taka, Hamishia na Nakili hadi zote hutumika kwa kila ujumbe katika mjadala vinapotumiwa kwenye safu ya mjadala ILIYOKUNJWA -- panua mjadala kwanza (Mshale wa kulia au Enter/Nafasi) ili kutenda kwenye ujumbe mmoja ndani yake badala yake
+Ctrl+A: Chagua jumbe zote
+Ctrl+Shift+L: Pakia jumbe zaidi
+Delete: Hamishia ujumbe uliochaguliwa kwenye tupio
+Shift+Delete: Futa ujumbe uliochaguliwa kabisa
+Ctrl+Z: Tendua Kufuta, Kuweka kwenye kumbukumbu, Kuweka alama kuwa barua taka au Kuweka alama kuwa si barua taka kwa mwisho
+S: Weka/ondoa nyota kwenye ujumbe uliochaguliwa
+A: Weka kwenye kumbukumbu ujumbe uliochaguliwa
+J: Weka alama kuwa barua taka kwa ujumbe uliochaguliwa
+Shift+J: Weka alama kuwa si barua taka kwa ujumbe uliochaguliwa
+W: Fuatilia mjadala -- badilisha kama mjadala ambao uteuzi ni sehemu yake unafuatiliwa (pia menyu ya Ujumbe na kubofya kulia)
+K: Puuza mjadala -- badilisha kama mjadala huo unapuuzwa (pia menyu ya Ujumbe na kubofya kulia)
+M: Hamisha ujumbe uliochaguliwa -- hufungua menyu ya Hamishia ya folda
+Shift+M: Hamisha ujumbe uliochaguliwa kwa kuandika sehemu ya jina la folda
+C: Nakili ujumbe uliochaguliwa -- hufungua menyu ya Nakili hadi ya folda
+S, A, J, W na K hapo juu zimewashwa kwa chaguo-msingi na zinaweza kuzimwa kwenye Mipangilio (vinginevyo zinapewa kipaumbele juu ya urambazaji wa herufi ya kwanza wa orodha ya jumbe)
+M, Shift+M na C hapo juu hufuata mpangilio huo huo
+Enter au Nafasi kwenye mjadala uliokunjwa: hufungua ujumbe mpya zaidi ambao haujasomwa kwenye mjadala huo (ujumbe mpya zaidi ikiwa mjadala wote umesomwa) kama ujumbe mmoja, kwenye kichupo kimoja -- kisha Ctrl+Shift+Page Down na Ctrl+Shift+Page Up hupitia sehemu iliyobaki ya mjadala bila kufungua ujumbe wa pili kamwe. Kwenye ujumbe wa kawaida, huufungua kama kawaida
+Mshale wa kulia kwenye mjadala uliokunjwa: hufichua jumbe zake kama orodha, bila kufungua yoyote -- fungua moja baada ya nyingine kutoka hapo kwa Enter au Nafasi yake mwenyewe
+Ctrl+Shift+O: Fungua ujumbe kwenye mazungumzo -- mjadala wote kwenye kichupo kimoja, kama orodha ya jumbe zake pamoja na mwili wa ule uliochaguliwa chini yake. Pitia orodha kwa vishale ili kuzisoma moja baada ya nyingine; Enter kwenye safu hufungua ujumbe huo mmoja kwenye kichupo chake kamili. Jina na kitufe sawa na amri ya Thunderbird yenyewe
+Mshale wa kushoto: kunja mjadala ambao uteuzi uko ndani yake kwa sasa
+*: Panua mijadala yote (pia Mwonekano > Mijadala); \: Kunja mijadala yote (pia Mwonekano > Mijadala)
+Mwonekano > Mijadala > Yote / Mijadala inayofuatiliwa / Mijadala iliyopuuzwa huchuja mijadala inayoonyeshwa -- kurudi kwenye Yote daima hurudisha kila ujumbe; hakuna kinachoondolewa kwenye folda kwa hili kamwe
+
+Ujumbe uliofunguliwa
+Alt+A: Weka ujumbe huu kwenye kumbukumbu -- tu wakati mwili wake (Maandishi au HTML) una lengo la kibodi kweli; mahali pengine Alt+A inabaki na maana yake ya kawaida ya kufungua menyu ya Akaunti
+Ctrl+R: Jibu
+Ctrl+Shift+R: Jibu wote
+Ctrl+L: Sambaza
+Ctrl+Delete au Ctrl+D: Hamishia ujumbe huu kwenye tupio. Delete ya kawaida mara nyingi huchukuliwa na kisoma skrini wakati ujumbe wa HTML una lengo; Shift+Delete hufuta kabisa
+Ctrl+Shift+Page Down: Ujumbe unaofuata katika mjadala huu; Ctrl+Shift+Page Up: uliotangulia. Hubadilisha kichupo cha sasa badala ya kufungua kingine, kwa hivyo ujumbe mmoja tu hufunguliwa kila wakati. Kwenye ujumbe wa mwisho (au wa kwanza, ukienda juu) husema hivyo na huuliza; kubonyeza kitufe hicho hicho tena hufunga ujumbe na kumaliza mjadala, ukirudi kwenye orodha ya jumbe. (Ctrl+Page Up/Down huachwa -- hizo hubadilisha vichupo)
+Ctrl+B: Badilisha mwonekano wa ujumbe (Maandishi/HTML)
+Ctrl+P: Chapisha
+Ctrl+Shift+P: Hakiki kabla ya kuchapisha
+Ctrl+S: Hifadhi ujumbe kama
+Ctrl+U: Tangaza jina na anwani ya mtumaji
+Ctrl+Shift+U: Tangaza mtumaji na unakili anwani
+Ctrl+Shift+I: Onyesha maudhui ya mbali kwenye ujumbe huu
+Ctrl+Shift+=: Ongeza ukubwa wa herufi za ujumbe
+Ctrl+Shift+-: Punguza ukubwa wa herufi za ujumbe
+Ctrl+Shift+0: Rudisha ukubwa wa herufi za ujumbe
+
+Kuandika ujumbe
+Ctrl+Enter au Alt+S: Tuma
+Ctrl+S: Hifadhi rasimu
+Ctrl+Shift+A: Ambatisha faili
+Ctrl+Shift+S: Ingiza sahihi ya akaunti iliyo kwenye Kutoka
+Ctrl+Shift+V: Bandika kama nukuu
+Ctrl+Shift+W: Idadi ya maneno
+Ctrl+Shift+P: Hakiki ujumbe jinsi utakavyotumwa
+Escape, Ctrl+W au Ctrl+F4: Funga kichupo cha kuandika -- huuliza kwanza ikiwa kuna kitu kisichohifadhiwa, ikitoa Hifadhi rasimu, Tupa au Endelea kuhariri
+Kila amri iliyo hapa chini pia iko kwenye menyu ya Andika, ambayo Alt+C hufungua hata lengo likiwa ndani ya mwili wa ujumbe
+
+Uumbizaji, wakati wa kuandika
+Ctrl+B: Herufi nzito
+Ctrl+I: Herufi italiki
+Ctrl+Shift+X: Mstari katikati
+Ctrl+Shift+8: Orodha ya vitone
+Ctrl+Shift+7: Orodha ya namba
+Ctrl+Shift+9: Nukuu
+Ctrl+Shift+6: Msimbo
+Ctrl+Alt+1: Kichwa
+Ctrl+K: Ingiza kiungo
+Ctrl+Shift+K: Sema ni uumbizaji gani unatumika mahali kielekezi kilipo
+Ctrl+Shift+M: Fungua menyu ya Umbizo popote lengo lilipo, ikiwemo mwili wa ujumbe
+
+Tahajia, wakati wa kuandika
+Ctrl+Shift+F7: Kagua tahajia
+Ctrl+Shift+F9: Nenda kwenye kosa linalofuata la tahajia
+Ctrl+Shift+F8: Ongeza neno ambalo ilisimama kwenye kamusi
+
+Kitufe kimoja katika sehemu mbili
+Ctrl+S: Hifadhi rasimu wakati wa kuandika, Hifadhi ujumbe kama kwenye ujumbe uliofunguliwa
+Ctrl+B: Herufi nzito wakati wa kuandika, badilisha kati ya Maandishi na HTML kwenye ujumbe uliofunguliwa
+Ctrl+Shift+P: Hakiki wakati wa kuandika, Hakiki kabla ya kuchapisha kwenye ujumbe uliofunguliwa
+Alt+A: Weka kwenye kumbukumbu, lakini tu wakati mwili wa ujumbe una lengo la kibodi; mahali pengine hufungua menyu ya Akaunti
+
+Uchunguzi
+Ctrl+Shift+F12: Uchunguzi wa vitufe vya mkato -- huandika mstari kwenye kumbukumbu ya utatuzi kwa kila mchanganyiko unaobonyezwa kwenye kichupo cha kuandika, ili iweze kuthibitishwa kitufe kilifika wapi hasa. Imezimwa kwa chaguo-msingi, na kitufe hicho hicho huizima tena; hali hutamkwa kwa vyovyote
