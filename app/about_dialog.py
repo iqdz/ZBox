@@ -52,8 +52,7 @@ ABOUT_TEXT = (
     "Keyboard Shortcuts.\n\n"
     "Account Setup\n"
     "Outlook.com, Hotmail, Live and Microsoft 365 accounts sign in with "
-    "your Microsoft account, in your browser or with a code. Native "
-    "You can "
+    "your Microsoft account, in your browser or with a code. You can "
     "link your Gmail account by generating an App Password instead of "
     "using your standard password (see the button below for "
     "instructions).\n\n"
@@ -62,7 +61,9 @@ ABOUT_TEXT = (
     "third-party components that make it possible. These include "
     "Himalaya, the StevenBlack hosts and EasyPrivacy blocklists, the "
     "Phishing.Database list, and (in a built copy) Python, wxPython, "
-    "imapclient, pywin32, keyring, and accessible_output2 with its "
+    "imapclient, pywin32, keyring, PySequoia with Sequoia PGP, "
+    "cryptography with OpenSSL, Trix, the SCOWL word list, and "
+    "accessible_output2 with its "
     "screen reader client libraries."
 )
 

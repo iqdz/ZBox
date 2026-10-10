@@ -90,6 +90,50 @@ def _numeric_id(envelope):
         return None
 
 
+def _window_hidden(frame):
+    """
+    True while ZBox's main window is hidden in the tray or minimized.
+    Only real answers count: anything but a plain bool from the window
+    (a test stand-in, a window not built yet) is read as shown.
+    """
+    try:
+        shown = frame.IsShown()
+        iconized = frame.IsIconized()
+    except Exception:  # noqa: BLE001 - no window
+        return False
+    return shown is False or iconized is True
+
+
+def _tray_inbox_check(frame):
+    """
+    One 20-second tick while ZBox is hidden in the tray or minimized.
+    Every enabled account's Inbox is listed through _on_idle_activity,
+    the path a server push takes, so the new-mail sound, notice and
+    announcement come as soon as the server shows a message, even when
+    its push comes late or never (Gmail's often does). Muted accounts,
+    accounts whose checking is paused or backing off, blocked senders
+    and mail ZBox moved itself stay silent there, as for a push. A
+    folder on screen that is not an Inbox gets its usual silent refresh.
+    """
+    try:
+        target = frame.mail_panel.account_panel.selected_fetch_target() or {}
+    except Exception:  # noqa: BLE001 - no folder tree yet
+        target = {}
+    accounts = list(frame.account_manager.enabled_accounts())
+    shows_inbox = False
+    if "unified" in target:
+        shows_inbox = str(target.get("unified") or "").casefold() == "inbox"
+    elif target:
+        for account in accounts:
+            if account.account_id == target.get("account_id"):
+                inbox = _folder_display_to_himalaya("Inbox", account)
+                shows_inbox = str(target.get("folder") or "").casefold() in ("inbox", inbox.casefold())
+    if target and not shows_inbox:
+        frame._request_auto_refresh()
+    for account in accounts:
+        frame._on_idle_activity(account, _folder_display_to_himalaya("Inbox", account))
+
+
 def _arrival_floor(envelopes):
     """
     The lowest server number and the oldest date of one listing, as
@@ -1768,7 +1812,9 @@ class MailFetchMixin:
             for envelope in envelopes:
                 envelope["_zbox_backend"] = "imap"
             self._remember_list(account.account_id, folder, envelopes)
-            if self._current_message_tab() is not None:
+            # Hidden in the tray or minimized, new mail is greeted at
+            # once even with a message open (_tray_inbox_check).
+            if self._current_message_tab() is not None and not _window_hidden(self):
                 # A message is open and its reads own the account:
                 # wait, but never drop it -- there may be no further
                 # IDLE push for a long time, which is how new mail used
@@ -1859,7 +1905,7 @@ class MailFetchMixin:
             pending.discard(key)
             if self._find_account(account.account_id) is None:
                 return  # removed in the meantime
-            if self._background_work_should_stand_down():
+            if self._background_work_should_stand_down() and not _window_hidden(self):
                 # Still busy: wait again without touching the network.
                 self._defer_idle_activity(account, folder)
                 return
@@ -1916,6 +1962,13 @@ class MailFetchMixin:
         self.new_mail_worker.submit(work, lambda _result: None, on_error)
 
     def _on_auto_refresh_timer(self, event):
+        # Hidden in the tray or minimized: every enabled account's Inbox
+        # is listed on every tick, whatever IDLE says, so new mail is
+        # heard within one tick of the server showing it
+        # (_tray_inbox_check).
+        if _window_hidden(self):
+            _tray_inbox_check(self)
+            return
         # A live IDLE connection reports new mail in the Inbox it watches
         # the moment it arrives, so a tick for that Inbox is skipped, unless
         # the last refresh is _IDLE_SAFEGUARD_SECONDS old: that one still

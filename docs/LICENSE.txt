@@ -75,20 +75,23 @@ terms in Sections 1-3 above apply ONLY to the original ZBox source code
 and do NOT apply to the following third-party components, which are
 governed by their own licenses.
 
-How they reach you depends on what you have. A source checkout bundles
-none of them: each is fetched by your own copy of ZBox, from the original
-project's own servers, at the time it is used. A published build is
-different -- it contains the Python runtime and libraries listed in
-Section D, which are redistributed under their own licenses, named below.
-The data sources in Sections B and C are always downloaded at runtime and
-are never bundled in either case.
+How they reach you depends on what you have. A source checkout carries
+only Trix and the spelling dictionary (Section D, in app/vendor); the
+rest is installed by the user, fetched with tools/get_himalaya.bat, or
+downloaded by ZBox from the original project's own servers when it is
+used. A published build also contains Himalaya (Section A) and the Python
+runtime and libraries listed in Section D, all unmodified and
+redistributed under their own licenses, named below. The data sources in
+Sections B and C are always downloaded at runtime and are never bundled
+in either case.
 
 A. HIMALAYA CLI EMAIL CLIENT
-ZBox drives the pre-built Himalaya binary as a separate external process;
-no Himalaya source or binary is bundled with or modified by ZBox.
+ZBox drives the pre-built Himalaya binary as a separate external process
+and never modifies it. A source checkout fetches it with
+tools/get_himalaya.bat; a published build carries it, unmodified, as
+himalaya/himalaya.exe.
   Copyright (c) Clement Douin and Himalaya contributors.
-  License: dual-licensed, at the user's choice, under either the MIT
-  License or the Apache License, Version 2.0.
+  License: MIT License.
   Repository: https://github.com/pimalaya/himalaya
 
 B. TRACKER AND AD BLOCKLISTS
@@ -119,8 +122,9 @@ ZBox.
 
 D. RUNTIME AND LIBRARIES IN A PUBLISHED BUILD
 A build published by the copyright holder is produced with PyInstaller and
-contains the following, each redistributed under its own license. A source
-checkout contains none of them; they are installed by the user with pip.
+contains the following, each redistributed under its own license. In a
+source checkout they are installed by the user with pip, except Trix and
+the dictionary, which are carried in app/vendor.
   Python -- the language runtime. Copyright (c) Python Software Foundation.
   License: PSF License Agreement. https://www.python.org
 
@@ -151,6 +155,34 @@ checkout contains none of them; they are installed by the user with pip.
   The client libraries for JAWS, Dolphin, System Access and other
   commercial readers remain the property of their respective vendors and
   are governed by those vendors' own terms.
+
+  PySequoia -- OpenPGP encryption, decryption and signing. Copyright (c)
+  Wiktor Kwapisiewicz. License: Apache License, Version 2.0.
+  https://github.com/wiktor-k/pysequoia
+
+  Sequoia PGP (sequoia-openpgp) -- the OpenPGP library compiled into
+  PySequoia's native module, with its pure Rust cryptography backend,
+  used unmodified. Copyright (c) the Sequoia PGP authors. License: GNU
+  Library General Public License version 2.0 or any later version.
+  Source code: https://gitlab.com/sequoia-pgp/sequoia
+  Further Rust libraries compiled into PySequoia, such as PyO3 and the
+  RustCrypto crates, keep their own licenses.
+
+  cryptography -- OpenPGP in the classic format, and S/MIME. Copyright (c)
+  Individual contributors. License: dual-licensed, at the user's choice,
+  under either the Apache License, Version 2.0 or the BSD 3-Clause
+  License. https://github.com/pyca/cryptography
+  Its Windows package includes OpenSSL. Copyright (c) The OpenSSL
+  Project Authors. License: Apache License, Version 2.0.
+  https://www.openssl.org
+
+  Trix -- the editor behind the message body. Copyright (c) 37signals,
+  LLC. License: MIT. Its license text travels with it as
+  vendor/trix/LICENSE.txt. https://github.com/basecamp/trix
+
+  SCOWL and the en_US-large Hunspell dictionary -- the word list behind
+  spell check. Its copyright notices and license travel with it as
+  vendor/dictionary/README_en_US-large.txt. https://wordlist.aspell.net
 
   Microsoft Edge WebView2 Runtime -- renders HTML messages. Not part of
   the build: it is either already present on the system or fetched
