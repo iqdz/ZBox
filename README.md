@@ -42,7 +42,9 @@ voice, rate and settings.
 Download the zip from the [Releases](../../releases) page, unzip it
 anywhere you like, and run `ZBox.exe`.
 
-Source code and releases: https://github.com/iqdz/ZBox
+ZBox is closed-source freeware, free for personal use.
+
+Downloads and updates: https://github.com/iqdz/ZBox/releases
 
 There is no installer. The whole folder is the app: put it on a USB
 stick, an external drive or your desktop, and it writes nothing
@@ -604,40 +606,40 @@ Software: ZBox
 
 ### 1. Grant of personal license
 
-Permission is hereby granted to individuals to download, view, compile, and
-modify the original source code of this software ("ZBox") solely for
-personal, private, non-commercial use on local devices owned or controlled
-by the user.
+Permission is hereby granted to individuals to download, install, and use
+official builds of this software ("ZBox") published by the copyright
+holder, including beta and pre-release builds published on the ZBox
+releases page, free of charge, solely for personal, private,
+non-commercial use on devices owned or controlled by the user. This free
+grant covers the features that work without a license key (the Free
+Edition); see Section 7 for Pro features. An individual may also take
+part in beta testing and report problems.
 
-This grant also covers official builds published by the copyright holder,
-including beta and pre-release builds published on the ZBox GitHub
-repository: an individual may download, install, and run such a build for
-personal, private, non-commercial use, and may take part in beta testing
-and report problems. This is a grant to USE an official build, and nothing
-more. It does not permit republishing or passing on that build to anyone
-else -- see Section 2, which applies to official builds exactly as it
-applies to source code. A beta build is unfinished software offered for
-testing; see Section 4.
+This is a grant to USE an official build, and nothing more. It does not
+permit republishing or passing on that build to anyone else -- see
+Section 2. ZBox is closed-source software: its source code is not
+published, and no license to it is granted (see Sections 8 and 9). A beta
+build is unfinished software offered for testing; see Section 4.
 
 ### 2. Public distribution and forking prohibition
 
 You are expressly prohibited from:
 
 1. Publishing, hosting, or distributing ZBox -- modified or unmodified,
-   as source code or as a compiled binary -- publicly or privately, to
-   any third party.
+   in whole or in part, in any form -- publicly or privately, to any
+   third party.
 2. Uploading ZBox, modified or unmodified, to public code repositories,
    forums, websites, or file-sharing services.
-3. Distributing compiled binaries or executables built from ZBox source
-   code, modified or unmodified.
+3. Making or distributing modified versions of ZBox, or works derived
+   from it.
 4. Using this software for any commercial, business, or enterprise
    purpose.
 
 ### 3. Reservation of rights
 
 All rights not explicitly granted herein -- including the exclusive right
-to publish, distribute, and license this software publicly -- are reserved
-by the copyright holder.
+to publish, distribute, and license this software and its source code --
+are reserved by the copyright holder.
 
 ### 4. No warranty
 
@@ -674,11 +676,49 @@ from third-party projects. Those services are not operated by the
 copyright holder, are governed by their own terms, and may change or stop
 without notice.
 
+### 7. Free Edition and Pro features
+
+ZBox is offered free of charge for personal, non-commercial use, limited
+to the features available without a license key (the Free Edition). Some
+features, now or in future versions, may require a paid license key (Pro
+features); their use is governed by this license together with the terms
+shown at the time of purchase. A license key is personal to the person
+who bought it and may not be shared, sold, or published. The copyright
+holder may change which features are free and which are Pro in future
+versions. A version you have already obtained keeps the features it was
+released with.
+
+### 8. No decompiling, reverse engineering, or circumvention
+
+You may not decompile, disassemble, or reverse engineer ZBox, extract or
+reconstruct its source code, modify it, or remove, disable, or get around
+any license key check or feature limit, except to the extent that
+applicable law expressly permits it despite this restriction.
+
+Exception for the LGPL components: ZBox includes the NVDA Controller
+Client (GNU Lesser General Public License 2.1) and Sequoia PGP inside
+PySequoia (GNU Library General Public License 2.0 or later), listed under
+Credits and third-party components below. You may modify those components, or replace them with
+your own versions, for your own use, and you may reverse engineer ZBox
+only as far as is needed to debug such modifications. Their source code is
+available at the addresses given there. Nothing in this license
+limits the rights that any third-party component's own license gives you
+in that component.
+
+### 9. Earlier, source-published versions
+
+Versions of ZBox up to and including testing beta 26.10.11 were published
+together with their source code under the earlier terms of this license.
+Copies of those versions already obtained remain governed by those earlier
+terms, which never permitted redistribution or forks. Starting with the
+version that carries this text, ZBox is closed source: new versions are
+published as official builds only, and this license applies to them.
+
 ## Credits and third-party components
 
 ZBox stands on the work of these projects, with thanks. The terms in
-Sections 1 to 3 of the licence above apply only to ZBox's own code,
-never to these components, which keep their own licences.
+Sections 1 to 3 and 7 to 9 of the licence above apply only to ZBox's
+own code, never to these components, which keep their own licences.
 
 ### Bundled in every published build, used unmodified
 

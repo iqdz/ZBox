@@ -3,37 +3,37 @@ Copyright (c) 2026 Harith Alhamdani. All Rights Reserved.
 Software: ZBox
 
 1. GRANT OF PERSONAL LICENSE
-Permission is hereby granted to individuals to download, view, compile, and
-modify the original source code of this software ("ZBox") solely for
-personal, private, non-commercial use on local devices owned or controlled
-by the user.
+Permission is hereby granted to individuals to download, install, and use
+official builds of this software ("ZBox") published by the copyright
+holder, including beta and pre-release builds published on the ZBox
+releases page, free of charge, solely for personal, private,
+non-commercial use on devices owned or controlled by the user. This free
+grant covers the features that work without a license key (the Free
+Edition); see Section 7 for Pro features. An individual may also take
+part in beta testing and report problems.
 
-This grant also covers official builds published by the copyright holder,
-including beta and pre-release builds published on the ZBox GitHub
-repository: an individual may download, install, and run such a build for
-personal, private, non-commercial use, and may take part in beta testing
-and report problems. This is a grant to USE an official build, and nothing
-more. It does not permit republishing or passing on that build to anyone
-else -- see Section 2, which applies to official builds exactly as it
-applies to source code. A beta build is unfinished software offered for
-testing; see Section 4.
+This is a grant to USE an official build, and nothing more. It does not
+permit republishing or passing on that build to anyone else -- see
+Section 2. ZBox is closed-source software: its source code is not
+published, and no license to it is granted (see Sections 8 and 9). A beta
+build is unfinished software offered for testing; see Section 4.
 
 2. PUBLIC DISTRIBUTION & FORKING PROHIBITION
 You are expressly prohibited from:
   a) Publishing, hosting, or distributing ZBox -- modified or unmodified,
-     as source code or as a compiled binary -- publicly or privately, to
-     any third party.
+     in whole or in part, in any form -- publicly or privately, to any
+     third party.
   b) Uploading ZBox, modified or unmodified, to public code repositories,
      forums, websites, or file-sharing services.
-  c) Distributing compiled binaries or executables built from ZBox source
-     code, modified or unmodified.
+  c) Making or distributing modified versions of ZBox, or works derived
+     from it.
   d) Using this software for any commercial, business, or enterprise
      purpose.
 
 3. RESERVATION OF RIGHTS
 All rights not explicitly granted herein -- including the exclusive right
-to publish, distribute, and license this software publicly -- are reserved
-by the copyright holder.
+to publish, distribute, and license this software and its source code --
+are reserved by the copyright holder.
 
 4. NO WARRANTY
 ZBox is provided "AS IS" and "AS AVAILABLE", without warranty of any kind,
@@ -67,28 +67,58 @@ from third-party projects. Those services are not operated by the
 copyright holder, are governed by their own terms, and may change or stop
 without notice.
 
+7. FREE EDITION AND PRO FEATURES
+ZBox is offered free of charge for personal, non-commercial use, limited
+to the features available without a license key (the Free Edition). Some
+features, now or in future versions, may require a paid license key (Pro
+features); their use is governed by this license together with the terms
+shown at the time of purchase. A license key is personal to the person
+who bought it and may not be shared, sold, or published. The copyright
+holder may change which features are free and which are Pro in future
+versions. A version you have already obtained keeps the features it was
+released with.
+
+8. NO DECOMPILING, REVERSE ENGINEERING, OR CIRCUMVENTION
+You may not decompile, disassemble, or reverse engineer ZBox, extract or
+reconstruct its source code, modify it, or remove, disable, or get around
+any license key check or feature limit, except to the extent that
+applicable law expressly permits it despite this restriction.
+
+Exception for the LGPL components: ZBox includes the NVDA Controller
+Client (GNU Lesser General Public License 2.1) and Sequoia PGP inside
+PySequoia (GNU Library General Public License 2.0 or later), described in
+Section D below. You may modify those components, or replace them with
+your own versions, for your own use, and you may reverse engineer ZBox
+only as far as is needed to debug such modifications. Their source code is
+available at the addresses given in Section D. Nothing in this license
+limits the rights that any third-party component's own license gives you
+in that component.
+
+9. EARLIER, SOURCE-PUBLISHED VERSIONS
+Versions of ZBox up to and including testing beta 26.10.11 were published
+together with their source code under the earlier terms of this license.
+Copies of those versions already obtained remain governed by those earlier
+terms, which never permitted redistribution or forks. Starting with the
+version that carries this text, ZBox is closed source: new versions are
+published as official builds only, and this license applies to them.
+
 ---------------------------------------------------------------------------
 THIRD-PARTY COMPONENTS AND LICENSES
 ---------------------------------------------------------------------------
 ZBox uses external third-party software and data sources. The restrictive
-terms in Sections 1-3 above apply ONLY to the original ZBox source code
-and do NOT apply to the following third-party components, which are
-governed by their own licenses.
+terms in Sections 1-3 and 7-9 above apply ONLY to ZBox itself and do NOT
+apply to the following third-party components, which are governed by
+their own licenses.
 
-How they reach you depends on what you have. A source checkout carries
-only Trix and the spelling dictionary (Section D, in app/vendor); the
-rest is installed by the user, fetched with tools/get_himalaya.bat, or
-downloaded by ZBox from the original project's own servers when it is
-used. A published build also contains Himalaya (Section A) and the Python
-runtime and libraries listed in Section D, all unmodified and
+How they reach you: a published build contains Himalaya (Section A) and
+the Python runtime and libraries listed in Section D, all unmodified and
 redistributed under their own licenses, named below. The data sources in
-Sections B and C are always downloaded at runtime and are never bundled
-in either case.
+Sections B and C are downloaded by ZBox at runtime from each project's own
+servers and are never bundled.
 
 A. HIMALAYA CLI EMAIL CLIENT
 ZBox drives the pre-built Himalaya binary as a separate external process
-and never modifies it. A source checkout fetches it with
-tools/get_himalaya.bat; a published build carries it, unmodified, as
+and never modifies it. A published build carries it, unmodified, as
 himalaya/himalaya.exe.
   Copyright (c) Clement Douin and Himalaya contributors.
   License: MIT License.
@@ -106,15 +136,15 @@ blocklist is refreshed; never bundled or redistributed by ZBox itself.
   under either the GNU General Public License v3 or Creative Commons
   Attribution-ShareAlike 3.0 Unported. Attribution: "The EasyList authors
   (https://easylist.to/)".
-  https://easylist.to/pages/licence.html
+  https://easylist.to/pages/license.html
 
 C. PHISHING DOMAIN LIST
 Downloaded by ZBox directly from the project's own repository, once a
 day and only while the junk mail rules are on; never bundled or
 redistributed by ZBox itself. The junk rules' own code -- blocked and
 never-junk senders, and checking links against this list -- is ZBox's
-original code and is covered by Sections 1-3 above, like the rest of
-ZBox.
+original code and is covered by Sections 1-3 and 7-9 above, like the
+rest of ZBox.
   Phishing.Database -- a list of known active phishing domains.
   Copyright (c) 2018-2025 Mitchell Krog, Nissar Chababy and
   Phishing.Database Contributors. License: MIT.
@@ -122,14 +152,12 @@ ZBox.
 
 D. RUNTIME AND LIBRARIES IN A PUBLISHED BUILD
 A build published by the copyright holder is produced with PyInstaller and
-contains the following, each redistributed under its own license. In a
-source checkout they are installed by the user with pip, except Trix and
-the dictionary, which are carried in app/vendor.
+contains the following, each redistributed under its own license.
   Python -- the language runtime. Copyright (c) Python Software Foundation.
   License: PSF License Agreement. https://www.python.org
 
   wxPython and the wxWidgets library it wraps -- the user interface
-  toolkit. License: the wxWindows Library Licence, an LGPL-based licence
+  toolkit. License: the wxWindows Library Licence, an LGPL-based license
   with an exception permitting distribution of binaries under the terms of
   the distributor's own choice. https://wxpython.org
 
@@ -185,6 +213,6 @@ the dictionary, which are carried in app/vendor.
   vendor/dictionary/README_en_US-large.txt. https://wordlist.aspell.net
 
   Microsoft Edge WebView2 Runtime -- renders HTML messages. Not part of
-  the build: it is either already present on the system or fetched
-  separately by the user (see docs/webview2_fixed_runtime.md), and is
-  governed by the Microsoft Software License Terms that accompany it.
+  ZBox's own code: it is either already present in Windows or included
+  unmodified as a fixed-version runtime, and is governed by the Microsoft
+  Software License Terms that accompany it.
