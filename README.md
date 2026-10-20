@@ -615,6 +615,16 @@ grant covers the features that work without a license key (the Free
 Edition); see Section 7 for Pro features. An individual may also take
 part in beta testing and report problems.
 
+Personal use includes an individual reading and sending mail from their
+own accounts -- including a work account that an employer or a business
+gave them -- on a device they own or control, for their own convenience.
+It does not include business use: use by or on behalf of a business or
+other organization, such as installing ZBox on devices an organization
+owns or manages, deploying it to or requiring it of staff, or using it to
+run shared or company mailboxes as part of an organization's work.
+Business use requires a business license from the copyright holder (see
+Section 7).
+
 This is a grant to USE an official build, and nothing more. It does not
 permit republishing or passing on that build to anyone else -- see
 Section 2. ZBox is closed-source software: its source code is not
@@ -633,7 +643,8 @@ You are expressly prohibited from:
 3. Making or distributing modified versions of ZBox, or works derived
    from it.
 4. Using this software for any commercial, business, or enterprise
-   purpose.
+   purpose beyond the personal use Section 1 allows, without a
+   business license from the copyright holder.
 
 ### 3. Reservation of rights
 
@@ -643,31 +654,31 @@ are reserved by the copyright holder.
 
 ### 4. No warranty
 
-ZBox is provided "AS IS" and "AS AVAILABLE", without warranty of any kind,
-express or implied, including but not limited to the implied warranties of
-merchantability, fitness for a particular purpose, title, and
-non-infringement. The copyright holder does not warrant that ZBox will be
-uninterrupted, timely, secure, or error-free, that any defect will be
-corrected, or that it will send, receive, store, or delete any message
-correctly or at all.
+ZBOX IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+NON-INFRINGEMENT. THE COPYRIGHT HOLDER DOES NOT WARRANT THAT ZBOX WILL BE
+UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, THAT ANY DEFECT WILL BE
+CORRECTED, OR THAT IT WILL SEND, RECEIVE, STORE, OR DELETE ANY MESSAGE
+CORRECTLY OR AT ALL.
 
-This applies with particular force to beta and pre-release builds, which
-are offered for testing, are expected to contain defects, and must not be
-relied upon for any message, account, or data you cannot afford to lose.
-You are responsible for your own backups.
+THIS APPLIES WITH PARTICULAR FORCE TO BETA AND PRE-RELEASE BUILDS, WHICH
+ARE OFFERED FOR TESTING, ARE EXPECTED TO CONTAIN DEFECTS, AND MUST NOT BE
+RELIED UPON FOR ANY MESSAGE, ACCOUNT, OR DATA YOU CANNOT AFFORD TO LOSE.
+YOU ARE RESPONSIBLE FOR YOUR OWN BACKUPS.
 
 ### 5. Limitation of liability
 
-To the maximum extent permitted by applicable law, the copyright holder
-shall not be liable for any claim, damages, or other liability -- whether
-in contract, tort, or otherwise -- arising from or connected with ZBox or
-its use, including without limitation lost, corrupted, unsent, or
-misdelivered messages, loss of access to any mail account, loss of data,
-loss of profits, or business interruption, even if advised of the
-possibility of such damage.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER
+SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY -- WHETHER
+IN CONTRACT, TORT, OR OTHERWISE -- ARISING FROM OR CONNECTED WITH ZBOX OR
+ITS USE, INCLUDING WITHOUT LIMITATION LOST, CORRUPTED, UNSENT, OR
+MISDELIVERED MESSAGES, LOSS OF ACCESS TO ANY MAIL ACCOUNT, LOSS OF DATA,
+LOSS OF PROFITS, OR BUSINESS INTERRUPTION, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
 
-Nothing in Sections 4 and 5 excludes or limits any liability that cannot
-lawfully be excluded or limited.
+NOTHING IN SECTIONS 4 AND 5 EXCLUDES OR LIMITS ANY LIABILITY THAT CANNOT
+LAWFULLY BE EXCLUDED OR LIMITED.
 
 ### 6. Third-party services
 
@@ -676,7 +687,7 @@ from third-party projects. Those services are not operated by the
 copyright holder, are governed by their own terms, and may change or stop
 without notice.
 
-### 7. Free Edition and Pro features
+### 7. Free Edition, Pro features, and business use
 
 ZBox is offered free of charge for personal, non-commercial use, limited
 to the features available without a license key (the Free Edition). Some
@@ -687,6 +698,10 @@ who bought it and may not be shared, sold, or published. The copyright
 holder may change which features are free and which are Pro in future
 versions. A version you have already obtained keeps the features it was
 released with.
+
+Business use, as Section 1 defines it, is not covered by the Free Edition
+or by a personal Pro license key, and requires a business license from
+the copyright holder, on the terms agreed at the time of purchase.
 
 ### 8. No decompiling, reverse engineering, or circumvention
 
